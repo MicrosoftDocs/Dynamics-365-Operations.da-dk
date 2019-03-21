@@ -1,9 +1,9 @@
 ---
-title: Ændre rækkedefinitionsceller
-description: Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger.
+title: Redigere rækkedefinitionsceller
+description: I dette emne beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323634"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379658"
 ---
-# <a name="modify-row-definition-cells"></a>Ændre rækkedefinitionsceller
+# <a name="modify-row-definition-cells"></a>Redigere rækkedefinitionsceller
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger.
+I dette emne beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Angiv en rækkekode i en rækkedefinition
 
@@ -386,7 +386,7 @@ Du kan begrænse en række til en eksisterende kode. Kolonnedefinitionen skal in
 Nogle regnskabssystemer understøtter kontoattributter og transaktionsattributter i regnskaberne. Disse attributter fungerer som virtuelle kontosegmenter og kan indeholde yderligere oplysninger om kontoen eller transaktionen. Disse ekstra oplysninger kan være konto-id'er, batch-id'er, postnumre eller andre attributter. Hvis regnskabssystemet understøtter attributter, kan du bruge kontoattributter eller transaktionsattributter som rækkemodifikatorer i rækkedefinitionen. Du kan finde oplysninger om, hvordan du tilsidesætter rækkeoplysninger, i afsnittet "Tilsidesætte en kolonnedefinition" tidligere i denne artikel.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angive et hyperlink til cellen Økonomiske dimensioner
-Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier, men du kan angive celler i et Microsoft Excel-regneark i stedet eller som tillæg til segmentværdier eller dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**.
+Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**.
 
 > [!NOTE]
 > Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Hvis du vil angive oplysninger for en række, der allerede findes i rækkedefinitionen, skal du tilføje oplysningerne i cellen **Link til økonomiske dimensioner**. Hvis du vil tilføje nye rækker, der indeholder hyperlinks til de økonomiske data, skal du bruge dialogboksen **Indsæt rækker fra** for at oprette nye rækker i rapportdefinitionen. Kolonnens titel ændres, afhængigt af hvordan kolonnen er konfigureret, som vist i følgende tabel.
@@ -394,13 +394,11 @@ Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske 
 | Linktype, der er valgt       | Beskrivelsen af kolonnen Link ændres til dette |
 |----------------------------------|----------------------------------------------------|
 | Økonomiske dimensioner             | Link til økonomiske dimensioner                       |
-| Eksternt regneark               | Link til regneark                                  |
-| Økonomisk dimensioner + regneark | Link til økonomiske dimensioner + regneark           |
-| Management Reporter-rapport       | Management Reporter-rapport                         |
+| Regneark til rapport                 | Økonomirapporteringsrapport                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Angiv en dimension eller et interval
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Rapportdesigner.
 2. Dobbeltklik på en celle i kolonnen **Link til økonomiske dimensioner**.
 3. Dobbeltklik på en celle under dimensionsnavnet i dialogboksen **Dimensioner**.
 4. Vælg **Person eller interval** i dialogboksen for dimensionen.

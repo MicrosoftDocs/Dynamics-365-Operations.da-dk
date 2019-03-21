@@ -3,7 +3,7 @@ title: Produkt- og kundesøgning i POS
 description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313583"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789863"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -69,7 +69,7 @@ Oplevelsen af lokale produktsøgninger er nu blevet mere brugervenlig. Der er bl
 
 ## <a name="customer-search"></a>Kundesøgning
 
-Kundesøgning bruges til at finde kunder til forskellige formål. F.eks. ønsker kasserere eventuelt at få vist en kundes ønskeliste eller købshistorik eller at føje kunden til en transaktion. I forbindelse med søgninger med flere nøgleord returnerer kundesøgningsalgoritmen alle kunder, der svarer til et hvilket som helst af de søgte nøgleord. Men de kunder, der matcher de fleste nøgleord vises øverst i resultaterne. Denne funktionsmåde svarer til den måde, andre søgeprogrammer vsier resultater på. Først vises de resultater, der matcher de fleste søgte termer, og derefter vises de resultater, der delvist matcher søgeordene. Denne funktionsmåde gør det lettere for kasserere i situationer, hvor de anvender flere nøgleord til deres søgning, men et af nøgleordene har en forkert stavemåde.
+Kundesøgning bruges til at finde kunder til forskellige formål. F.eks. ønsker kasserere eventuelt at få vist en kundes ønskeliste eller købshistorik eller at føje kunden til en transaktion. Søgealgoritmen sammenholder søgeordene med værdierne i følgende kundeegenskaber: navn, e-mail, telefon, fordelskundekortnummer, adresse og kontonummer. Blandt disse giver egenskaben Navn størst fleksibilitet, når det drejer sig om søgninger på flere nøgleord, fordi algoritmen returnerer alle kunder, der stemmer med ethvert af de nøgleord, der er gennemsøgt, og de kunder, der svarer til de fleste søgeord, vises øverst i resultaterne. Denne funktionsmåde hjælper kasserere i situationer, hvor de søger ved at skrive det fulde navn, men hvor efternavn og fornavn blev byttet om under den oprindelige indtastning af værdier. For at forbedre ydeevnen bevarer alle andre egenskaber rækkefølgen af søgeord, så hvis søgeordene ikke stemmer overens med den rækkefølge, dataene er gemt i, returneres ingen resultater.
 
 Som standard udføres en kundesøgning på de kundeadressekartoteker, der er knyttet til butikken. Denne type søgning kaldes en *søgning efter lokal kunde*. Men medarbejdere kan også søge efter kunder globalt. De kan med andre ord søge på tværs af virksomhedens butikker og andre juridiske enheder. Denne type søgning kaldes en *ekstern kundesøgning*.
 

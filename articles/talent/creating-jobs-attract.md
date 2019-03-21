@@ -3,7 +3,7 @@ title: Oprette, godkende og bogføre job i Attract
 description: I dette emne beskrives elementerne i et job i Attract. Det beskrives også, hvordan du opretter et job.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303759"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772805"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Oprette, godkende og bogføre job i Attract
 
@@ -76,8 +76,23 @@ Du kan finde flere oplysninger om aktiviteter, der kan føjes til ansættelsespr
 
 Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og administratorer kan oprette jobopslag. Jobbet kan opslås på enten Talent Careers (et Microsoft Dynamics 365 for Talent-karrierewebsted) eller LinkedIn. 
 
+Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Denne liste udvides over tid.
+
+Du kan finde flere oplysninger om jobopslag i [Funktioner for karrierewebsteder i Attract](career-site.md).
+
 > [!NOTE]
-> Der er tre ting, der er vigtige at bemærke om, hvordan job opslås på LinkedIn.
+> Jobopslagsfunktionerne er kun tilgængelige i tilføjelsesprogrammet til omfattende ansættelser til Attract.
+
+### <a name="posting-jobs-to-linkedin"></a>Opslå job på LinkedIn 
+
+Før du laver et jobopslag fra Attract til LinkedIn, skal administratoren tilføje LinkedIn firma-id og LinkedIn-firmanavn i **Administratorindstillinger**. LinkedIn firma-id'et skal bruges til at sikre, at dine job, der opslås fra Attract, bliver knyttet til den korrekte firmaside.
+
+Dit LinkedIn firma-id er en række tegn, der entydigt identificerer dit firma i LinkedIn. Yderligere oplysninger om, hvordan du finder dit LinkedIn firma-id, finder du på [LinkedIn-webstedet](https://aka.ms/findID).
+
+Hvis du vil opdatere LinkedIn-firmaet, skal du vælge **Administration** i menuen **Indstillinger** (tandhjulssymbolet) og derefter vælge fanen **LinkedIn-integration** . Under sektionen **Opret forbindelse til LinkedIn** skal du indtaste dit LinkedIn-firmanavn og firma-id og derefter gemme indstillingerne.
+
+> [!NOTE]
+> Der er fire ting, der er vigtige at bemærke om, hvordan job opslås på LinkedIn.
 > 1. Job, der opslås på LinkedIn, opslås som "Begrænsede lister"-job. Begrænsede listejob kan ikke opgraderes på tværs af LinkedIn-webstedet. Hvis du vil opgradere begrænsede listejob, der er slået op på LinkedIn, fra Attract, skal du arbejde med LinkedIn for at aktivere "Job-wrapping". Se nedenstående links, og kontakt LinkedIn support for at få yderligere oplysninger.
 >
 >    [Begrænsede lister kontra Premium-jobmuligheder til job-wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,14 +105,10 @@ Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og adm
 >
 >    Hvis du har problemer efter dette trin, skal du kontakte LinkedIn support. 
 > 
+> 1. Job, der opslås på LinkedIn, vises på live LinkedIn-webstedet. Der er ikke noget testmiljø til jobopslag til LinkedIn. 
+>
 > 1. Det kan tage op til 24 timer, før job, der er slået op på LinkedIn, bliver synlige for ansøgerne på LinkedIn, på grund af LinkedIns aktuelle proces for jobopslag.
 
-Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Denne liste udvides over tid.
-
-Du kan finde flere oplysninger om jobopslag i [Funktioner for karrierewebsteder i Attract](./career-site.md).
-
-> [!NOTE]
-> Jobopslagsfunktionerne er kun tilgængelige i tilføjelsesprogrammet til omfattende ansættelser til Attract.
 
 ## <a name="activate"></a>Aktivér
 

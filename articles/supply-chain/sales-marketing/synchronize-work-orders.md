@@ -3,7 +3,7 @@ title: Synkronisere arbejdsordrer med et projektnummer fra Field Service til Fin
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer med et projektnummer fra Microsoft Dynamics 365 for Field Service til Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329844"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836436"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Synkronisere arbejdsordrer med et projektnummer fra Field Service til Finance and Operations
 
@@ -34,9 +34,11 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 
 [![Synkronisering af forretningsprocesser mellem Finance and Operations og Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-Den anvendte skabelon **Field Service-produkter (Finance and Operations til Field Service)** er baseret på skabelonen **Produkter (Finance and Operations til Sales) – Direkte** fra Kundeemne til kontanter. Yderligere oplysninger finder du i [Produkter (Finance and Operations til Sales) – Direkte](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Den anvendte skabelon **Arbejdsordrer med projekt (Field Service til Finance and Operations)** er baseret på skabelonen **Arbejdsordrer (Field Service til Finance and Operations)**. Du kan finde flere oplysninger i [Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
-Dette emne omhandler kun forskellene mellem skabelonerne **Field Service-produkter (Finance and Operations til Field Service)** og **Produkter (Finance and Operations til Field Service)**.
+I dette emne beskrives kun forskellene mellem de to skabeloner:
+- **Arbejdsordrer med projekt (Field Service til Finance and Operations)**
+- **Arbejdsordrer (Field Service til Finance and Operations)**
 
 Den væsentligste forskel er, at denne skabelon indeholder tilknytning af det projektnummer, der er tildelt til arbejdsordren i Field Service. Det sikrer, at salgsordren, der er oprettet i Finance and Operations, omfatter projektnummeret, og at fakturering kan udføres i det relaterede projekt. Derudover bruger skabelonen Avanceret forespørgsel og filtrering.
 
@@ -60,18 +62,18 @@ Feltet **Eksternt projekt** er føjet til enheden Arbejdsordre. Dette er et find
 
 Følgende illustration viser skabelontilknytningen i Dataintegration.
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheader"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderHeader
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheader"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderHeader
 
 [![Skabelontilknytning i dataintegration](./media/FSWOP1.png)](./media/FSWOP1.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheaderproject"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderHeaderProject
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheaderproject"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderHeaderProject
 
 [![Skabelontilknytning i dataintegration](./media/FSWOP2.png)](./media/FSWOP2.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderproduct"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderProduct
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderproduct"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderProduct
 
 [![Skabelontilknytning i dataintegration](./media/FSWOP3.png)](./media/FSWOP3.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderService
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderservice"></a>Arbejdsordrer med projekt (Field Service til Finance and Operations): WorkOrderService
 
 [![Skabelontilknytning i dataintegration](./media/FSWOP4.png)](./media/FSWOP4.png)

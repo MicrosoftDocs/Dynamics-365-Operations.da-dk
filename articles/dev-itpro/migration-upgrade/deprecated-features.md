@@ -3,7 +3,7 @@ title: Fjernede eller frarådede funktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329246"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836342"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller forældede funktioner
 
@@ -35,13 +35,79 @@ I dette emne beskrives funktioner, der er blevet fjernet eller frarådes for Dyn
 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
-> [!Note]
-> Fra og med Dynamics 365 for Finance and Operations-versionen fra juli 2017 med platformsopdatering 8 er installationstyperne angivet for hver fjernet eller forældet funktion. Alle de tidligere versioner, der er nævnt i dette emne, understøtter kun installationer i skyen.
+> [!NOTE]
+> Fra og med Dynamics 365 for Finance and Operations-versionen fra juli 2017 med Platform update 8 er installationstyperne angivet for hver fjernet eller forældet funktion. Alle de tidligere versioner, der er nævnt i dette emne, understøtter kun installationer i skyen.
 
-> [!Note]
+> [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 med Platform update 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 med Platform update 25 er tilgængelig for brugere i målgruppen som en del af en eksempelversion. Indholdet og funktionaliteten kan ændres. Du kan finde flere oplysninger om eksempelversioner i [Serviceopdateringer til standard- og først versionsudgivelser](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Forældede API'er og ændringer, der potentielt kan give beskadigelser
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Afledning af interne klasser er udfaset
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | I versioner før Platform update 25 var muligt at oprette en klasse eller en tabel, der stammer fra en intern klasse/tabel, der er defineret i en anden pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompileren en advarsel, hvis du forsøger at gøre dette.|
+| **Erstattet af en anden funktion?**   | Advarsel fra kompileren erstattes af en fejlmeddelelse i en kommende platformsopdatering. Denne ændring er bagudkompatibel på kørselstidspunktet, hvilket betyder, at hvis du kører Platform update 25 eller nyere, kan dette installeres i et sandkasse- eller produktionsmiljø, uden at du skal ændre brugerdefineret kode. Denne ændring påvirker kun udviklings- og kompileringstiden. |
+| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer. |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet - Advarslen bliver en kompileringsfejlmeddelelse i en kommende platformsopdatering. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Tilsidesættelse af interne metoder udfases
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | I versioner før Platform update 25 var muligt at tilsidesætte en intern metode i en afledt klasse, der stammer fra en intern klasse/tabel, der er defineret i en anden pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompileren en advarsel, hvis du forsøger at gøre dette.|
+| **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejlmeddelelse i en kommende platformsopdatering. Denne ændring er bagudkompatibel på kørselstidspunktet, hvilket betyder, at hvis du kører Platform update 25 eller nyere, kan dette installeres i et sandkasse- eller produktionsmiljø, uden at du skal ændre brugerdefineret kode. Denne ændring påvirker kun udviklings- og kompileringstiden. |
+| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer. |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet - Advarslen bliver en kompileringsfejlmeddelelse i en kommende platformsopdatering. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med Platform update 23
+
+### <a name="print-to-screen-functionality"></a>Funktionen Udskriv til skærm
+Kunderne kan bruge **Import** handlingen i Report Viewer-kontrolelementet til at hente dokumenter, der er oprettes i Finance and Operations-programmer. Med denne HTML-baserede præsentation af rapporten får brugerne vist et ikke-sideinddelt eksempel på dokumentet.
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | HTML-baserede eksempler er ikke-sideinddelte og gengiver derfor **ikke** de fysiske dokumenter, der i sidste ende produceres af Finance and Operations, nøjagtigt. Ved at udnytte PDF som standardformatet til forretningsaktiviteter kan vi drastisk forenkle brugerindstillinger til interaktion med programrapporter og strømline dokumentgengivelsesprocessen. |
+| **Erstattet af en anden funktion?**   | Fremadrettet bliver PDF-dokumenter standardformatet for rapporter, der gengives af Finance and Operations.   |
+| **Produktområder, der er berørt**         | Denne ændring påvirker **ikke** kundescenarier, hvor rapporter distribueres elektronisk eller sendes direkte til printere.    |
+| **Installationsindstilling**              | Alt  |
+| **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. Funktionen til automatisk hentning af programrapporter til browseren som PDF-dokumenter er planlagt til platformsopdateringen i maj 2019. <br><br>**Vigtigt!** Eksisterende kunder, der har brug for Udskriv til skærm-funktionen, anbefales at give [Support](../lifecycle-services/lcs-support.md) besked forud for opgraderingen til Platform update 26. |
+
+### <a name="client-kpi-controls"></a>Klient-KPI-kontrolelementer
+Integrerede nøgletal (KPI'er) kan modelleres i Visual Studio af en udvikler og yderligere tilpasses af slutbrugeren.
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | De indbyggede klientkontrolelementer, der bruges til at definere KPI'er, har lav kundeinddragelse og kræver, at en udvikler kan tilføje sporbare målepunkter. |
+| **Erstattet af en anden funktion?**   | PowerBI.com-tjenesten leverer førsteklasses værktøjer til at definere og administrere KPI'er, der er baseret på data fra eksterne kilder.  Vi planlægger i en kommende version at gøre det muligt for dig at integrere løsninger, som PowerBI.com er vært for, i programmets arbejdsområder.   |
+| **Produktområder, der er berørt**         | Denne opdatering forhindrer, at udviklere kan introducere nye KPI-kontrolelementer i Visual Studio-designeren.    |
+| **Installationsindstilling**              | Alt  |
+| **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Forældede API'er og ændringer, der kan give fremtidige beskadigelser
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Feltgrupper, der indeholder ugyldige feltreferencer
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Det er muligt for definitioner af tabelmetadata at have feltgrupper, der indeholder ugyldige referencer. Dette problem kategoriseres i øjeblikket som en *kompileradvarsel* i stedet for en *fejl*, hvilket betyder, at oprettelsen af den installerbare pakke og installationen kan fortsætte, uden at problemet rettes. Hvis pakken installeres, kan det medføre kørselsfejl i Økonomirapportering og SQL Server Reporting Services (SSRS). Sådan løser du problemet:<br><br>1. Fjern den ugyldige feltreference fra definitionen af tabelfeltgruppen.<br><br>2. Kompiler igen.<br><br>3. Kontroller, at eventuelle advarsler eller fejl er rettet. |
+| **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejlmeddelelse fremover.  |
+| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer. |
+| **Installationsindstilling**              | Alle. |
+| **Status**                         | Forældet - Advarslen ændres til en fejlmeddelelse om kompileringstid i fremtiden. Vi satser i øjeblikket på Platform update 30. |
+
+#### <a name="complete-list"></a>Komplet liste
+For at få adgang til den komplette liste over API'er, der udfases, skal du se [Udfasning af metoder og metadataelementer](deprecation-deletion-apis.md).
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med Platform update 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Regler for batchoverførsel for kontoposter for reskontrokladde
 Synkron overførselstilstand frarådes i finansparametrene.  Denne tilstand erstattes af asynkron og planlagt batch, der allerede findes som indstillinger for overførsel. 
@@ -63,7 +129,7 @@ Funktion til at konfigurere filformaterne .txt- og .xml for erklæringer.
 | **Erstattet af en anden funktion?**   | Ja. |
 | **Produktområder, der er berørt**         | Finans |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 med Platform update 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generator til økonomiske rapporter for Rusland
 Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapporter og eksportere data til XLS- og DOC-rapportskabeloner. Funktionelle dele: eksportere data til XLS- og DOC-rapportskabeloner, forespørgsler, faste forudsætninger fjernes. 
@@ -74,7 +140,7 @@ Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapport
 | **Erstattet af en anden funktion?**   | Ja. Økonomirapporters brugergrænseflade for opsætning skal bruges til at opstille dataindsamlingsregler efter GL-konti eller momsregistre. Eksportere data til forskellige filtyper, faste forudsætninger og regler for forespørgselslignende indsamling bør være konfigureret i elektronisk rapportering. |
 | **Produktområder, der er berørt**         | Finans. |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 med Platform update 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med eksterne udbydere for at sende elektronisk rapportering via kommunikationskanaler for Rusland
 Funktion til eksport af genererede elektroniske filer med erklæringer til mappe for at sende dem til officielle udbydere af elektronisk rapportering samt tilbageimport af tilstand.
@@ -85,7 +151,7 @@ Funktion til eksport af genererede elektroniske filer med erklæringer til mappe
 | **Erstattet af en anden funktion?**   | Ja.  |
 | **Produktområder, der er berørt**         | Finans, moms |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 med Platform update 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Guiden Registre over skat af overskud
@@ -97,13 +163,13 @@ Funktion til oprettelse af skabeloner for nye registre over skat af overskud. De
 | **Erstattet af en anden funktion?**   | Nr. |
 | **Produktområder, der er berørt**         | Moms |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 med Platform update 20. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med platformsopdatering 15
-Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platformsopdatering 15 er kumulativ og indeholder nye eller ændrede funktioner fra platformsopdatering 13, platformsopdatering 14 og platformsopdatering 15.
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med Platform update 15
+Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platform update 15 er kumulativ og indeholder nye eller ændrede funktioner fra Platform update 13, Platform update 14 og Platform update 15.
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 med platformsopdatering 12
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 med Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger 
 Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise personlige produktanbefalinger på en POS-enhed. Du kan finde flere oplysninger under [Tilpassede produktanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
@@ -222,7 +288,7 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 | **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Retail 7.2 og nyere. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med platformsopdatering 8
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med Platform update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Omregning af valuta for regnskabs- og rapporteringsvalutaer
 
@@ -260,7 +326,7 @@ Den sammenholdningsregel, der blev brugt til at vælge og markere et bankdokumen
 | **Installationsindstilling**              | Alt                                                                                    |
 | **Status**                         | Fjernet fra og med juli 2017.                                                               |
 
-## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 med platformsopdatering 3
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 med Platform update 3
 
 ### <a name="aeb-payment-formats-for-spain"></a>AEB-betalingsformater for Spanien
 
@@ -1093,7 +1159,7 @@ Funktionen til virtuelle regnskaber understøttes ikke længere i Dynamics AX. F
 
 |   |  | 
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | - Virtuelle regnskaber skal konfigureres, før data gemmes i tabellerne. Baglæns tilpasning af virtuelle regnskaber til en eksisterende installation er meget vanskeligt.<br><br>- Da der har været meget datanormalisering i den aktuelle version af Microsoft Dynamics AX, er det blevet meget vanskeligt at vide, hvad der skal tilføjes i tabelsamlingen. For eksempel er det svært at vide, hvilke tabeller der skal deles. Alle de tabeller, der refereres til fra tabeller, der er i et virtuelt regnskab, skal også tilføjes. Grundet tabelnormalisering skal selv simple stamdata, der er spredt over flere tabeller, være en del af det virtuelle regnskab. Eventuelle fejl, der er foretaget her, vil medføre funktionelle problemer.<br><br>- Når en tabel er en del af et virtuelt regnskab, mister den oplysninger om oprindelsen af dataene, og kun det virtuelle regnskab registreres.   |
+| **Årsagen til forældelsen/fjernelsen** | - Virtuelle regnskaber skal konfigureres, før data gemmes i tabellerne. Baglæns tilpasning af virtuelle regnskaber til en eksisterende installation er meget vanskeligt.<br><br>- Da der har været meget datanormalisering i den aktuelle version af Dynamics AX, er det blevet meget vanskeligt at vide, hvad der skal tilføjes i tabelsamlingen. For eksempel er det svært at vide, hvilke tabeller der skal deles. Alle de tabeller, der refereres til fra tabeller, der er i et virtuelt regnskab, skal også tilføjes. Grundet tabelnormalisering skal selv simple stamdata, der er spredt over flere tabeller, være en del af det virtuelle regnskab. Eventuelle fejl, der er foretaget her, vil medføre funktionelle problemer.<br><br>- Når en tabel er en del af et virtuelt regnskab, mister den oplysninger om oprindelsen af dataene, og kun det virtuelle regnskab registreres.   |
 | **Erstattet af en anden funktion?** | Globale tabeller kan bruges til at gøre tabeller tilgængelige fra alle regnskaber. Der er i øjeblikket ingen erstatning. |   
 | **Produktområder, der er berørt**       | Alle moduler |   
 | **Status**                       | Fjernet fra og med Dynamics AX 7.0   |   

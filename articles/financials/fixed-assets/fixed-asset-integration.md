@@ -3,7 +3,7 @@ title: Integration af anlægsaktiver
 description: Anlægsaktiver kan integreres med Finans, Lagerstyring, Debitor, Kreditor og Debitor. Du kan også oprette anlægsaktiver, der kan integreres med indkøbsordrer.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336974"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778149"
 ---
 # <a name="fixed-assets-integration"></a>Integration af anlægsaktiver
 
@@ -41,7 +41,7 @@ Du definerer de hovedkonti, som posteringer i bogen for anlægsaktiver bogføres
 ## <a name="inventory-management"></a>Lagerstyring
 Du kan angive anskaffelsen af anlægsaktiver, som den juridiske enhed har produceret eller fremstillet til sig selv, i lagerkladden til anlægsaktiver. Du kan derefter overføre lagervarer til anlægsaktiver, som en anskaffelse eller som del af en anskaffelse. 
 
-Du kan også anskaffe aktiver ved hjælp af indkøbsordrer. Når indkøbsordrer indeholder lagervarer, der er angivet som anlægsaktiver, bestemmer indstillingen i feltet **Tillad aktivanskaffelse fra Indkøb** på siden **Anlægsaktivparametre**, om anskaffelsen bogføres for anlægsaktivet, når fakturaen bogføres. Hvilken effekt anskaffelsen af anlægsaktiver har på lageret afhænger af opsætningen af en juridisk enhed. 
+Du kan også anskaffe aktiver ved hjælp af indkøbsordrer. Når indkøbsordrer indeholder lagervarer, der er angivet som anlægsaktiver, bestemmer indstillingen i feltet **Tillad aktivanskaffelse fra Indkøb** på siden **Anlægsaktivparametre**, om anskaffelsen bogføres for anlægsaktivet, når fakturaen bogføres. En indkøbslinje opretter ét anlægsaktiv uanset antallet. Hvilken effekt anskaffelsen af anlægsaktiver har på lageret afhænger af opsætningen af en juridisk enhed. 
 
 Når en lagervare ændres til en anlægsaktivanskaffelse, enten via lagerkladden, en indkøbsordre eller et anskaffelsesforslag, oprettes der en anlægsaktivpostering for bogen. Hvis en boganskaffelse inkluderer en afledt bog, oprettes der også en anskaffelsespostering for den afledte bog. 
 

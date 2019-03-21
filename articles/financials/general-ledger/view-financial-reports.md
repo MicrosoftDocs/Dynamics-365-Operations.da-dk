@@ -1,9 +1,9 @@
 ---
-title: Vis økonomiske rapporter
-description: I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
+title: Vise økonomirapporter
+description: I dette emne beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312939"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791435"
 ---
-# <a name="view-financial-reports"></a>Vis økonomiske rapporter
+# <a name="view-financial-reports"></a>Vise økonomirapporter
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
+I dette emne beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 
 <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 ----------------------------
@@ -67,18 +67,15 @@ En økonomisk rapport kan vises når som helst vises i enhver valuta. For at få
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Få vist en opsummeret oversigt over den økonomiske rapport
 En økonomisk rapport kan indeholde detaljelinjerne og oversigtslinjer. Detaljelinjer er linjer, der indeholder hovedkontiene eller dimensionerne. Oversigts linjer er linjer til beskrivelse, total og beregning. For at få vist oversigtslinjerne i en rapport skal du klikke på **Vis** og derefter klikke på **Kun oversigtslinjer**. Rapporten er skjult og viser kun oversigtslinjerne. Klik for at se detaljelinjerne sammen med oversigtslinjerne, Klik på **Vis**, og klik derefter på **Kun oversigtslinjer** igen.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Åbne en økonomisk rapport fra forrige måned
-Du kan få vist rapporter for den aktuelle måned eller foregående måneder uden at generere rapporten. Hvis du vil åbne rapporten for den foregående måned, skal du klikke på **Vis** og derefter klikke på **Forrige rapporter**. Der vises en liste over de tidligere måneder, som rapporten er genereret for. Udvid måneden, som rapporten skal vises for, vælg datoen, og klik derefter på **OK**. Rapportgen for den forrige måned vises. Hvis du vil vende tilbage til den aktuelle måneds rapport, skal du klikke på **Annuller**.
-
 ## <a name="print-a-financial-report"></a>Udskrive en økonomisk rapport
-Hvis du vil udskrive en økonomisk rapport i handlingsruden, skal du klikke på **Udskriv**, og derefter følge en eller flere af disse trin for at angive udskriftsindstillingerne:
+Ved udskrivning af en økonomisk rapport oprettes en PDF-fil, som du kan derefter udskrive manuelt. Hvis du vil oprette en økonomisk rapport, der kan udskrives, i handlingsruden, skal du klikke på **Udskriv**, og derefter følge en eller flere af disse trin for at angive udskriftsindstillingerne:
 
 -   Når du vil medtage forskellige detaljeniveauer i den udskrevne rapport, skal du indstille skyderen til **Ja** eller **Nej**. Hvis en rapport bruger et rapporteringstræ, kan du vælge at medtage alle rapporteringsenheder eller blot den aktuelle rapporteringsenhed.
 -   Vælg en sidestørrelse på listen for at angive sidestørrelsen.
 -   Hvis du vil ændre sidelayout, skal du vælge et layout på listen. Hvis du vil have rapportens indhold til at passe til den bredde, du har valgt, kan du indstille skyderen til **Ja**.
 -   Vil du indstille sidemargener, skal du skrive størrelsen på top, bund, venstre og højre margener i tommer.
 
-Når du er færdig med at angive udskriftsindstillingerne, skal du klikke på **Udskriv** for at udskrive rapporten. Hvis du beslutter, at du ikke vil udskrive rapporten, skal du i stedet klikke på **Annuller**. Der vises et eksempel på den udskrevne rapport. Du kan vælge den printer, som rapporten skal sendes til, og du kan også justere udskriftsindstillingerne.
+Når du er færdig med at angive udskriftsindstillingerne, skal du klikke på **Udskriv** for at fortsætte. Du bliver spurgt, om du vil hente filen eller gemme filen til OneDrive eller SharePoint. Hvis du beslutter, at du ikke vil fortsætte, skal du i stedet klikke på **Annuller**. Når du fortsætter, begynder gengivelse af rapporten på serveren, og du bliver bedt om at hente rapporten i PDF-format. Du kan nu få vist rapporten i PDF-fremviseren, og herfra kan du vælge printeren, som rapporten skal sendes til, og foretage eventuelle yderligere reguleringer af udskriftsindstillingerne.
 
 ## <a name="export-a-financial-report"></a>Eksportere en økonomisk rapport
 Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke på **Publicer**. Rapporten eksporteres til Microsoft Excel, og browseren beder dig om at åbne eller gemme den eksporterede fil. De eksportindstillinger, der er defineret i rapportdesignet, anvendes til den eksporterede rapport.    
@@ -86,7 +83,7 @@ Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke p�
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Økonomirapportering for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Økonomirapportering](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -3,7 +3,7 @@ title: Dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360204"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834654"
 ---
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjob
 
@@ -128,6 +128,9 @@ Et job kan sikres efter roller, brugere og juridisk enhed på samme tid.
 
 ## <a name="run-the-import-or-export-job"></a>Kør import- eller eksportjob
 Du kan køre et job én gang ved at vælge knappen **Import** eller **Eksport**, når du har defineret jobbet. Du kan konfigurere et tilbagevendende job ved at vælge **Opret tilbagevendende datajob**.
+
+[!NOTE]
+Et import- eller eksportjob kan køres asynkront ved at vælge knappen **Importer** eller **Eksporter**. Asynkron kørsel bruger den asynkron struktur i Finance and Operations, som er forskellig fra batchstrukturen. Dog kan den asynkrone struktur ligesom batchstrukturen underkastes begrænsning, og derfor bliver jobbet muligvis ikke udført straks. Job kan også køres synkront ved at vælge **Importer nu** eller **Eksporter nu**. Dette starter jobbet med det samme og er nyttigt, hvis asynkron kørsel eller et batch ikke starter på grund af begrænsning. Jobbene kan også udføres i et batch ved at vælge **Kør i batch**-indstillingen. Batchressourcer er omfattet af begrænsning, så batchjobbet starter muligvis ikke med det samme. Den asynkrone indstilling er nyttig, når brugere interagerer direkte med brugergrænsefladen og ikke er superbrugere, som kan forstå batchplanlægning. Brug af et batch er en anden mulighed, hvis store mængder skal eksporteres eller importeres. Batchjob kan planlægges til at køre på en bestemt batchgruppe, hvilket giver mulighed for større kontrol set fra et belastningsjusteringsperspektiv. Hvis asynkrone kørsler og batchkørsler begge underlægges begrænsning på grund af høj ressourceudnyttelse i systemet, kan den synkrone version af import/eksport bruges som en øjeblikkelig løsning. Den synkrone mulighed starter med det samme og blokerer brugergrænsefladen, fordi den kører synkront. Browservinduet skal forblive åbent, når der udføres synkrone handlinger.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Kontroller, at jobbet kørte som forventet
 Jobhistorikken er tilgængelig i forbindelse med fejlfinding og undersøgelse på både import- og eksportjob. Kørsler af historiske job er organiseret efter tidsintervaller.

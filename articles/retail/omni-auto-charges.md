@@ -3,7 +3,7 @@ title: Avancerede automatiske gebyrer for omni-kanal
 description: I dette emne beskrives funktioner til styring af ekstra ordregebyrer for detailkanalordrer ved hjælp af funktioner til avancerede automatiske gebyrer.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345553"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789765"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om konfiguration og implementering af den avancerede automatiske gebyrfunktion, der er tilgængelig i Dynamics 365 for Retail version 10.0.
@@ -67,6 +66,8 @@ Der findes følgende nye handlinger.
 - **143 - Genberegn gebyrer** - Brug denne handling til at udføre en komplet genberegning af gebyrerne for salgstransaktionen. Eventuelle tidligere automatiske gebyrer, der er tilsidesat af en bruger, genberegnes baseret på den aktuelle konfiguration af indkøbsvognen.  
 
 Som med alle POS-handlinger kan sikkerhedskonfigurationer udføres, så det kræver godkendelse fra lederen at udføre handlingen.
+
+Det er vigtigt at bemærke, at de ovenfor angivne POS operationer også kan føjes til POS layout, selvom **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. I dette scenario får organisationer stadig fordelene ved at kunne få vist gebyrer, der er tilføjet manuelt, og redigere dem ved hjælp af handlingen **Administrer gebyrer**. Brugere kan også bruge handlingerne **Tilføj hovedgebyrer** og **Tilføj linjegebyrer** for POS-transaktioner, selv når **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. Handlingen **Genberegn gebyrer** har mindre funktionalitet, hvis den bruges, når **Brug avancerede automatiske gebyrer** er deaktiveret. I dette scenario skal intet genberegnes, og eventuelle gebyrer, der er føjet til transaktionen manuelt, ville blot nulstille til $0,00.
 
 ## <a name="use-case-examples"></a>Eksempler på brugsmønstre
 I dette afsnit beskrives brugsmønstre, som kan hjælpe dig med at forstå konfiguration og brug af automatiske gebyrer og andre gebyrer inden for rammerne af detailkanalordrer. Disse eksempler illustrerer funktionsmåden af programmet, når parameteren **Brug avancerede automatiske gebyrer** er aktiveret.
@@ -207,3 +208,7 @@ Det anbefales, at organisationen også føjer fritekstfelter i kvitteringens sid
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Forhindre, at gebyrer beregnes, før POS-ordren er fuldført
 
 Visse organisationer kan foretrække at vente på, at brugeren er færdig med at tilføje alle salgslinjerne til POS transaktionen før beregning af gebyrer. For at forhindre beregning af gebyrer i takt med at varer føjes til POS-transaktionen, skal du slå parameteren **Beregning af manuelt gebyr** i den **Funktionalitetsprofil**, der bruges i butikken. Aktivering af denne parameter forudsætter, at POS-brugeren bruger handlingen **Beregn totaler** efter at have føjet produkterne til POS-transaktionen. Handlingen **Beregn totaler** udløser derefter beregningen af de automatiske gebyrer for det/de relevante ordrehoved eller -linjer.
+
+### <a name="charges-override-reports"></a>Rapporter over gebyrtilsidesættelser
+
+Hvis brugere tilsidesætter de beregnede gebyrer manuelt eller føjer et manuelle gebyr til transaktionen, er disse data tilgængelige til revidering i rapporten **Tilsidesættelseshistorik for gebyr**. Der er adgang til rapporten fra **Retail \> Forespørgsler og rapporter \> Tilsidesættelseshistorik for gebyr**.  Det er vigtigt at bemærke, at de data, der skal bruges til denne rapport, importeres fra kanaldatabasen til Headquarters via "P"-distributionsplanlægningsopgaver. Derfor er oplysninger om tilsidesættelser, der netop er udført i POS, muligvis ikke umiddelbart tilgængelige i denne rapport, før dette job har overført butikkens transaktionsdata til Headquarters. 

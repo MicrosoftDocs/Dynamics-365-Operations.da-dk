@@ -3,7 +3,7 @@ title: Importér remburs
 description: Denne procedure fører dig gennem processen med at importere en remburs.
 author: kweekley
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3d5539fbd17c880d8bbadd47444c9cc53fce039c
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313560"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771225"
 ---
 # <a name="import-letter-of-credit"></a>Importér remburs
 
@@ -111,8 +111,7 @@ Denne procedure bruger demofirmaet USMF.
 1. Gå til Likviditets- og bankstyring > Remburser > Importremburs og importinkasso.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
-    * Bekræft status for importrembursen.    
-    *   
+    * Bekræft status for importrembursen.     
 4. Luk siden.
 5. Luk siden.
 

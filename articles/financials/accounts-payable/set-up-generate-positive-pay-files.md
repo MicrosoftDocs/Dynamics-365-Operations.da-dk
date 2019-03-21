@@ -1,9 +1,9 @@
 ---
 title: Konfigurere og generere filer til positive betalinger
-description: I denne artikel beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger.
+description: I dette emne beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346082"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778172"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurere og generere filer til positive betalinger
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger. 
+I dette emne beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger. 
 
 Konfigurer en positiv betaling til at generere en elektronisk liste over checks, der er leveret til banken. Når checken derefter skal indløses hos banken, sammenligner banken den med listen over checks. Hvis checken svarer til en check på listen, indløser banken den. Hvis checken ikke stemmer overens med en check på listen, beholder banken den til gennemsyn.
 
@@ -94,7 +94,7 @@ Filer til positiv betaling oprettes ved hjælp af dataenheder. Før du kan gener
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5326642553c7efcebc6c6af953e2dafe9e62e9ec
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357927"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832189"
 ---
 # <a name="electronic-messaging"></a>Elektroniske meddelelser
 
@@ -69,6 +69,7 @@ Hvis du ikke importerer en dataenhedspakke, kan du manuelt konfigurere den elekt
 - [Ekstra felter](#additional-fields)
 - [Indstillinger for eksekverbar klasse](#executable-class-settings)
 - [Handlingerne Udfyld poster](#populate-records-actions)
+- [Webapplikationer](#web-applications)
 - [Indstillinger for webtjeneste](#web-service-settings)
 - [Handlinger ved meddelelsesbehandling](#message-processing-actions)
 - [Behandling af elektronisk meddelelse](#electronic-message-processing)
@@ -85,27 +86,49 @@ Meddelelseselementtyper identificerer typerne af poster, der skal bruges i elekt
 
 Meddelelseselementstatusser identificere de statusser, der gælder for meddelelseselementer i behandlingen, som du konfigurerer. Du kan konfigurere meddelelseselementtyper på siden **Statusser for meddelelseselement** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Statusser for meddelelseselement**).
 
+**Tillad sletning**-parameteren i en meddelelseselements status definerer, om brugeren kan slette et meddelelseselement i denne status via formularen **Elektroniske meddelelser** eller formularen **Elementer i elektronisk meddelelse**. 
+
 ### <a name="message-statuses"></a>Meddelelsesstatusser
 
 Konfigurer de meddelelsesstatusser, der skal være tilgængelige i behandling af meddelelser. Du kan konfigurere meddelelsesstatusser på siden **Meddelelsesstatusser** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Meddelelsesstatusser**).
+
+Beskrivelse af felter:
+
+| Feltnavn           | Beskrivelse |
+|----------------------|-------------|
+|Meddelelsesstatus        | Entydigt navn på status for en elektronisk meddelelse, som angiver tilstanden for en meddelelse på alle mulige tidspunkter. Dette navn vises i formularen Elektroniske meddelelser og i en logfil, der er relateret til den elektroniske meddelelse. |
+|Beskrivelse           | Beskrivelse, der er relateret til status for elektronisk meddelelse      |
+|Svartype         | Visse handlinger i en behandling kan medføre mere end én svartype. F.eks. kan en handling af typen **Webtjeneste** resultere i enten **Udført korrekt**- eller **Teknisk fejl**-svartypen afhængigt af resultatet af kørslen. I dette tilfælde skal meddelelsesstatus for begge svartyper være defineret. Se [Typer af handlinger til behandling af meddelelser](#message-processing-action-types) for at få flere oplysninger om handlingstyper og svartyper relateret til dem. |
+|Status for meddelelseselement   |Der er tilfælde, hvor status for den elektroniske meddelelse skal påvirke status for de respektive relaterede meddelelser. Tilknyt denne meddelelseselementstatus i dette felt ved at vælge den i opslag. |
+|Tillad sletning          | **Tillad sletning**-parameteren i status for en elektronisk meddelelse definerer, om brugeren kan slette en elektronisk meddelelse i denne status via formularen **Elektroniske meddelelser**.            |
 
 ### <a name="additional-fields"></a>Ekstra felter
 
 Med den elektroniske meddelelsesfunktion kan du udfylde poster fra en posteringstabel. På denne måde kan du opstille posterne til rapportering og derefter rapportere dem. Nogle gange er der ikke tilstrækkelige oplysninger i posteringstabellen til at rapportere en post i overensstemmelse med rapporteringskravene. Du kan angive alle de oplysninger, der skal rapporteres for en post, ved at oprette flere felter. Der kan knyttes flere felter til både meddelelser og meddelelser. Du kan oprette flere felter på siden **Ekstra felter** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Ekstra felter**).
 
-I følgende tabel beskrives felterne på siden **Ekstra felter**.
+I følgende tabel beskrives de generelle felter på siden **Ekstra felter**:
 
-| Felt                | Betegnelse |
+| Felt                | Beskrivelse |
 |----------------------|-------------|
 | Feltnavn           | Angiv navnet på en ekstra attribut for meddelelseselementer, der vedrører processen. Dette navn vises i brugergrænsefladen, mens du arbejder med processen. Det kan også bruges i ER-konfigurationer, der er knyttet til processen. |
 | Betegnelse          | Angiv en beskrivelse på den ekstra attribut for meddelelseselementer, der vedrører processen. |
-| Feltværdi          | Angiv den værdi i feltet, der skal bruges i forhold til et meddelelseselement under rapportering. |
-| Beskrivelse af felt    | Angiv en beskrivelse af feltet, der skal bruges i forhold til et meddelelseselement under rapportering. |
+| Brugerredigering            | I tilfælde, hvor en bruger skal være i stand til at ændre værdien af det ekstra felt fra brugergrænsefladen, skal du vælge **Ja** i dette afkrydsningsfelt, og ellers **Nej**. |
+| Tæller              | Når det ekstra felt skal indeholde et løbenummer i en elektronisk meddelelse, kan du markere dette afkrydsningsfelt. Værdierne i det ekstra felt udfyldes automatisk under kørsel af en handling af typen "Eksport af elektronisk rapportering".  |
+| Skjulte               | Når ekstra felt skal være skjult fra brugergrænsefladen, kan du markere dette afkrydsningsfelt.  |
+
+Hvert af de ekstra felter kan have forskellige værdier til behandling. Du kan definere disse værdier i oversigtspanelet Værdier:
+
+| Felt                | Beskrivelse |
+|----------------------|-------------|
+| Feltværdi          | Angiv den værdi i feltet, der skal bruges i forhold til et eller flere meddelelseselementer under rapportering. |
+| Beskrivelse af felt    | Angiv en beskrivelse af feltet, der skal bruges i forhold til et eller flere meddelelseselementer under rapportering. |
 | Kontotype         | Nogle ekstra feltværdier kan være begrænset til bestemte kontotyper. Vælg en eller flere af følgende værdier: **Alle**, **Debitor** eller **Kreditor**. |
 | Kontokode         | Hvis du har valgt **Debitor** eller **Kreditor** i feltet **Kontotype**, kan du yderligere begrænse brugen af feltværdier til en bestemt gruppe eller tabel. |
 | Konto/gruppenummer | Hvis du har valgt **Debitor** eller **Kreditor** i feltet **Kontotype**, og hvis du har angivet en gruppe eller en tabel i feltet **Kontokode**, kan du angive en bestemt gruppe eller modpostering i dette felt. |
 | Gyldig            | Angiv den dato, hvor værdien skal begynde at blive taget i betragtning. |
 | Udløb           | Angiv den dato, hvor værdien ikke længere skal tages i betragtning. |
+
+Kombinationer af kriterier, der er defineret i **Konto/gruppenummer**, **Kontokode**, **Gyldig**, **Udløb**, påvirker ikke som standard valg af værdier for ekstra felter, men kan bruges i eksekverbare klasser til at implementere bestemt beregningslogik for en værdi i et ekstra felt.
 
 ### <a name="executable-class-settings"></a>Indstillinger for eksekverbar klasse
 
@@ -120,6 +143,8 @@ Du kan manuelt oprette en eksekverbar klasse på siden **Indstillinger for eksek
 | Navn på eksekverbar klasse | Vælg en X ++ eksekverbar klasse. |
 | Udførelsesniveau       | Dette felt angives automatisk, fordi værdien skal være foruddefineret for den valgte eksekverbare klasse. Dette felt begrænser det niveau, som den relaterede evaluering kører på. |
 | Beskrivelse af klasse     | Dette felt angives automatisk, fordi værdien skal være foruddefineret for den valgte eksekverbare klasse. |
+
+Visse eksekverbare klasser kan have obligatoriske parametre, som skal defineres, før den eksekverbare klasse køres første gang. Du kan definere disse parametre ved at klikke på **Parametre** knappen i handlingsruden, angive tilsvarende værdier og felter i dialogboksen og klikke på knappen **OK**. Det er vigtigt at klikke på **OK** her, fordi parametrene ellers ikke gemmes sammen med basisklassen, og den eksekverbare klasse ikke bliver kaldt korrekt.
 
 ### <a name="populate-records-actions"></a>Handlingerne Udfyld poster
 
@@ -143,6 +168,37 @@ I oversigtspanelet **Opsætning af datakilder** skal du tilføje en linje for hv
 | Feltet Dokumentkonto | Vælg det felt, som dokumentkontoen skal tages fra i den valgte tabel. |
 | Brugerforespørgsel             | Hvis dette afkrydsningsfelt er markeret, kan du oprette en forespørgsel ved at vælge **Rediger forespørgsel** over gitteret. Ellers udfyldes alle posterne fra datakilden. |
 
+### <a name="web-applications"></a>Webapplikationer
+
+Du skal bruge webprogramsiden til at konfigurere parametre for et webprogram, så de understøtter åben standard OAuth 2.0, og så brugerne dermed kan tildele "sikker delegeret adgang" til programmet på deres vegne uden at dele deres legitimationsoplysninger. Fra denne side kan du også gennemgå godkendelsesprocessen ved at få en godkendelseskode og et adgangstoken. Du kan konfigurere indstillinger for webprogrammer på siden **Webprogrammer** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Webprogrammer**).
+
+I følgende tabel beskrives felterne på siden **Webprogrammer**.
+
+| Felt                         | Beskrivelse |
+|-------------------------------|-------------|
+| Applikationsnavn              | Angiv et navn til webprogrammet. |
+| Beskrivelse                   | Angiv en beskrivelse af webprogrammet. |
+| URL-basisadresse                      | Angiv basisinternetadressen til webprogrammet. |
+| URL-sti til godkendelse        | Angiv den sti, hvor URL-adressen til godkendelsen skal oprettes.  |
+| URL-sti til token                | Angiv den sti, hvor URL-adressen til tokenet skal oprettes.  |
+| URL-adresse til omdirigering                  | Angiv URL-adresse til omdirigering.  |
+| Klient-id                     | Angiv klient-id'et for webprogrammet.  |
+| Klienthemmelighed                 | Angiv klienthemmeligheden for webprogrammet.  |
+| Servertoken                  | Angiv servertokenet til webprogrammet.  |
+| Formattilknytning for godkendelse  | Vælg et elektronisk rapporteringsformat (ER), der skal bruges til at oprette anmodningen om godkendelse.   |
+| Importér tokenmodeltilknytning    | Vælg en ER-importmodeltilknytning, der skal bruges til at gemme adgangstokenet.  |
+| Adgangstokenet for tildelt omfang udløber om  | Dette felt opdateres automatisk. Dets værdi viser det tildelte omfang af anmodninger til webprogrammet.  |
+| Godkend                        | Angiv egenskab for godkendelse af webanmodning. Eksempelvis "application/vnd.hmrc.1.0+json".  |
+| Indholdstype           | Angiv indholdstype. For eksempel "application/json".  |
+
+Følgende funktioner er tilgængelige fra **Webprogrammer**, hvor de understøtter godkendelsesprocessen:
+-   **Få godkendelseskode** – for at initialisere godkendelse af webprogrammet.
+-   **Få adgangstoken** – for at initialisere hentning af et adgangstoken.
+-   **Opdater adgangstoken** – for at opdatere et adgangstoken.
+
+Når et adgangstoken til et webprogram er gemt i databasen i systemet i krypteret format, kan det bruges til anmodninger til en webtjeneste. For sikkerhedsmæssige årsager skal adgang til adgangstokenet begrænses til disse sikkerhedsroller, der skal være tilladt for at behandle de pågældende anmodninger. Når en bruger uden for sikkerhedsgruppen forsøger at behandle en anmodning, underretter en undtagelse brugeren om, at han eller hun ikke kan arbejde med anmodningen via det valgte webprogram.
+Brug oversigtspanelet **Sikkerhedsroller** på siden Moms > Opsætning > Elektroniske meddelelser > Webprogrammer til at oprette de roller, der skal have adgang til adgangstokenet. Når sikkerhedsroller ikke er defineret for et webprogram, kan en systemadministrator kun arbejde via dette webprogram.
+
 ### <a name="web-service-settings"></a>Indstillinger for webtjeneste
 
 Du kan bruge indstillingerne for webtjeneste til at konfigurere overførsel af direkte data til en webtjeneste. Du kan konfigurere indstillinger for webtjenesten på siden **Indstillinger for webtjeneste** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Indstillinger for webtjeneste**) .
@@ -153,13 +209,17 @@ I følgende tabel beskrives felterne på siden **Indstillinger for webtjeneste**
 |-------------------------|-------------|
 | Webtjeneste             | Angiv et navn til webtjenesten. |
 | Betegnelse             | Angiv en beskrivelse af webtjenesten. |
-| Internetadresse        | Angiv internetadressen på webtjenesten. |
+| Internetadresse        | Angiv internetadressen på webtjenesten. Hvis et webprogram er angivet for en webtjeneste, og internetadressen skal være den samme som den, der er defineret for det valgte webprogram, skal du klikke på **Kopier URL-basisadresse** for at kopiere **URL-basisadresse** fra webprogram til webtjenestens **Internetadresse**.  |
 | Certifikat             | Vælg et Key Vault-certifikat, der tidligere er konfigureret. |
+| Webapplikation         | Vælg et Key Vault-certifikat, der tidligere er konfigureret. |
 | Svartypen – XML | Vælg **Ja** i denne indstilling, hvis svartypen er XML. |
 | Anmodningsmetode          | Angiv metoden for anmodningen. HTTP definerer et sæt anmodningsmetoder, der angiver den handling, der skal udføres for en bestemt ressource. Metoden kan være **GET**, **POST** eller en anden HTTP-metode. |
 | Headers til anmodninger         | Angiv headers til anmodninger. En anmodningsheader er en HTTP-header, der kan bruges i en HTTP-anmodning, og som ikke er relateret til indholdet af meddelelsen. |
+| Godkend                  | Angiv egenskab for godkendelse af webanmodning. |
 | Kodning af accept         | Angiv kodning af accept. HTTP-headeren til acceptkodningsanmodningen annoncerer den indholdskodning, som klienten kan forstå. Denne kodning af indhold er normalt en komprimeringsalgoritme. |
 | Indholdstype            | Angiv indholdstypen. Headeren til Content-Type-enheden angiver medietypen for ressourcen. |
+| Fuldført svarkode   | Angiv HTTP-statuskode, der angiver, at anmodningen blev udført. |
+| Formattilknytning for anmodingsheader  | Vælg ER-formatet til generering af overskrifter til webanmodninger. |
 
 ### <a name="message-processing-actions"></a>Handlinger ved meddelelsesbehandling
 
@@ -172,17 +232,21 @@ I følgende tabel beskrives felterne på siden **Handlinger ved meddelelsesbehan
 | Felt                   | Betegnelse |
 |-------------------------|-------------|
 | Aktionstype             | Vælg handlingstypen. Du kan finde oplysninger om de tilgængelige indstillinger i sektionen [Typer af handlinger til behandling af meddelelser](#message-processing-action-types). |
-| Formattilknytning          | Vælg det ER-format, der skal kaldes for handlingen. Dette felt er kun tilgængeligt for handlinger af typerne **Eksport af elektronisk rapportering**, **Import af elektronisk rapportering** og **Meddelelse om eksport af elektronisk rapportering**. |
-| Typen af meddelelseselement       | Vælg den type poster, som handlingen skal evalueres for. Dette felt er tilgængeligt for handlinger af typerne **Udførelsesniveau for meddelelseselement**, **Eksport af elektronisk rapportering** og **Import af elektronisk rapportering** og også visse andre typer. Hvis du lader feltet stå tomt, evalueres alle de meddelelseselementtyper, som er defineret for behandlingen af meddelelser. |
+| Formattilknytning          | Vælg det ER-format, der skal kaldes for handlingen. Dette felt er kun tilgængeligt for handlinger af typerne **Eksport af elektronisk rapportering**, **Import af elektronisk rapportering** **Meddelelse om eksport af elektronisk rapportering**. |
+| Formattilknytning for URL-sti | Vælg det ER-format, der skal kaldes for handlingen. Dette felt er kun tilgængelig for handlinger af **Webtjeneste**-typerne og bruges til at skrive stien til den URL-adresse, som bliver føjet til den basisinternetadresse, der er angivet for den valgte webserver. |
+| Typen af meddelelseselement       | Vælg den type poster, som handlingen skal evalueres for. Dette felt er tilgængeligt for handlinger af typerne **Udførelsesniveau for meddelelseselement**, **Eksport af elektronisk rapportering** og **Import af elektronisk rapportering**, **Webtjeneste** og også visse andre typer. Hvis du lader feltet stå tomt, evalueres alle de meddelelseselementtyper, som er defineret for behandlingen af meddelelser. |
 | Eksekverbar klasse        | Vælg de eksekverbare klasseindstillinger, der tidligere blev oprettet. Dette felt er kun tilgængeligt for handlinger af typen **Udførelsesniveau for meddelelseselement** og **Udførelsesniveau for meddelelseselement**. |
 | Handlingen Udfyld poster | Vælg en Udfyld poster-handling, der tidligere blev oprettet. Dette felt er kun tilgængeligt for handlinger af typen **Udfyld poster**. |
+| Webtjeneste  | Vælg en webtjeneste, der tidligere blev oprettet. Dette felt er kun tilgængeligt for handlinger af typen **Webtjeneste**.  |
+| Filnavn  | Angiv navnet på den filen, der fører til handlingen som et svar fra webserveren eller oprettelse af en rapport. Dette felt er kun tilgængeligt for handlinger af typen **Webtjenesten** og **Meddelelse om eksport af elektronisk rapportering**.   |
+| Vis dialogboks  | Marker dette afkrydsningsfelt, hvis der skal vises en dialogboks til en bruger før oprettelse af rapporter. Dette felt er kun tilgængeligt for handlinger af typen **Meddelelse om eksport af elektronisk rapportering**.   |
 
 ##### <a name="message-processing-action-types"></a>Typer af handlinger til behandling af meddelelser
 
 Følgende indstillinger er tilgængelige i feltet **Handlingstype**:
 
-- **Udfyld poster** – En **Udfyld posterne**-handling skal være konfigureret tidligere. Knyt den til en handling af typen **Udfyld poster**, så den kan indgå i behandlingen. Det forudsættes, at denne handlingstype bruges til den første handling i behandling af meddelelser. Derfor er det kun en resultatstatus, der kan konfigureres for en handling af denne type. Der kan ikke oprettes en førstestatus.
 - **Opret meddelelse** – Brug denne type, hvis brugerne manuelt skal kunne oprette meddelelser på siden **Elektronisk meddelelse**. Der kan ikke konfigureres en førstestatus for en handling af denne type.
+- **Udfyld poster** – En **Udfyld posterne**-handling skal være konfigureret tidligere. Knyt den til en handling af typen **Udfyld poster**, så den kan indgå i behandlingen. Det antages, at denne handlingstype bruges til den første handling i meddelelsesbehandlingen (når der ikke oprettes nogen elektronisk meddelelse på forhånd) eller som en handling, der føjer meddelelseselementer til en tidligere oprettet meddelelse (ved en handling af typen **Opret meddelelse**). Derfor er det kun resultatstatus for meddelelseselementer, der kan konfigureres for en handling af denne type. Der kan ikke oprettes en førstestatus for meddelelser alene.
 - **Udførelsesniveau for meddelelse** – Brug denne type til at konfigurere en eksekverbar klasse, der skal evalueres på niveauet for meddelelsen.
 - **Udførelsesniveau for meddelelseselement** – Brug denne type til at konfigurere en eksekverbar klasse, der skal evalueres på niveauet for meddelelseselementet.
 - **Eksport af elektronisk rapportering** – Brug denne type til handlinger, der skal generere en rapport, som er baseret på en ER-konfiguration til eksport, på niveauet for meddelelseselementet.
@@ -190,15 +254,15 @@ Følgende indstillinger er tilgængelige i feltet **Handlingstype**:
 - **Import af elektronisk rapportering** – Brug denne type til handlinger, der skal generere en rapport, som er baseret på en ER-konfiguration til import.
 - **Behandling af bruger på meddelelsesniveau** – Brug denne type til handlinger, der forudsætter visse handlinger, der udføres manuelt af brugeren. For eksempel kan brugeren opdatere status for meddelelser.
 - **Brugerbehandling** – Brug denne type til handlinger, der forudsætter handling, der udføres manuelt af brugeren. For eksempel kan brugeren opdatere status for meddelelseselementer.
-- **Webtjeneste** – Brug denne type til handlinger, der skal overføre en rapport, der er genereret, til en webtjeneste. Denne handlingstype bruges ikke til rapportering af kommunikation vedr. italienske købs- og salgsfakturaer.
+- **Webtjeneste** – Brug denne type til handlinger, der skal overføre en rapport, der er genereret, til en webtjeneste. Denne handlingstype bruges ikke til rapportering af kommunikation vedr. italienske købs- og salgsfakturaer. For handlinger af typen **Webtjeneste** kan du angive en **Bekræftelsestekst** i oversigtspanelet **Diverse detaljer** i **Handlinger ved meddelelsesbehandling**. Denne bekræftelsestekst bliver vist for brugeren, før anmodningen til den valgte webtjeneste bliver behandlet.
 - **Anmodningsbekræftelse** – Brug denne type til at anmode om bekræftelse fra en server.
 
 #### <a name="initial-statuses-fasttab"></a>Oversigtspanelet Førstestatusser
 
 > [!NOTE]
-> Oversigtspanelet **Første statusser** er ikke tilgængeligt for handlinger, der har første-typen **Udfyld poster** eller **Opret meddelelse**.
+> Oversigtspanelet **Første statusser** er ikke tilgængeligt for handlinger, der har første-typen **Opret meddelelse**.
 
-| Felt               | Betegnelse                                                                                         |
+| Felt               | Beskrivelse                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | Status for meddelelseselement | Vælg den meddelelseselementsstatus, som skal den valgte handling til behandling af meddelelsen, skal evalueres for. |
 | Betegnelse         | Beskrivelse af det valgte meddelelseselements status.                                                  |
@@ -212,11 +276,29 @@ Følgende indstillinger er tilgængelige i feltet **Handlingstype**:
 | Svartype       | Svartypen for den valgte meddelelses status. |
 | Status for meddelelseselement | Vælg den resultatstatus, som skal være tilgængelig, efter at den valgte handling til behandling af meddelelsen er evalueret. Dette felt er kun tilgængeligt for handlinger til behandling af meddelelser, der evalueres på niveauet for meddelelseselementet. Det er f.eks. ikke tilgængeligt for handlinger af typen **Brugerbehandling** og **Udførelsesniveau for meddelelseselement**. I forbindelse med handlinger til behandling af meddelelser, der evalueres på niveauet for meddelelsen, viser dette felt den meddelelseselementstatus, der er angivet for den valgte meddelelsesstatus. |
 
+Tabellen nedenfor viser, hvilke resultatstatusser der skal være konfigureret for de typer handlinger:
+
+| Handlingstype for elektronisk meddelelse\Svartype  | Udført korrekt  | Business-fejl  | Teknisk fejl  | Brugerdefineret   | Annullering  |
+|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
+| Opret meddelelse                                  | X            |         |       |     |                 |
+| Eksport af elektronisk rapportering                     | X            |         |       |     |                 |
+| Import af elektronisk rapportering                     |              |         |       |     |                 |
+| Webtjeneste                                     | X            |         | X     |     |                 |
+| Brugerbehandling                                 |              |         |       |     |                 |
+| Udførelsesniveau for meddelelse                         |              |         |       |     |                 |
+| Udfyld poster                                |              |         |       |     |                 |
+| Udførelsesniveau for meddelelseselement                    |              |         |       |     |                 |
+| Anmodningsbekræftelse                            | X            |  X      | X     |     |                 |
+| Meddelelse om eksport af elektronisk rapportering             | X            |         |       |     |                 |
+| Behandling af bruger på meddelelsesniveau                   |              |         |       |     |                 |
+
 ### <a name="electronic-message-processing"></a>Behandling af elektronisk meddelelse
 
-Elektronisk meddelelsesbehandling er et grundlæggende begreb i forbindelse med den elektroniske meddelelsesfunktion. Det samler handlinger, der skal evalueres for den elektroniske meddelelse. Handlingerne kan tilknyttes via førstestatus og resultatstatus. Du kan også starte handlinger af typen **Brugerbehandling** særskilt. På siden **Behandling af elektronisk meddelelse** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Behandling af elektronisk meddelelse**), kan du også vælge flere felter, der skal understøttes under behandlingen.
+Elektronisk meddelelsesbehandling er et grundlæggende begreb i forbindelse med den elektroniske meddelelsesfunktion. Det samler handlinger, der skal evalueres for den elektroniske meddelelse. Handlingerne kan tilknyttes via førstestatus og resultatstatus. Du kan også starte handlinger af typen **Brugerbehandling** særskilt. På siden **Behandling af elektronisk meddelelse** (**Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Behandling af elektronisk meddelelse**), kan du også vælge flere felter, der skal understøttes under behandlingen, enten på meddelelsesniveau eller meddelelseselementniveau.
 
-I oversigtspanelet **Handling** kan du føje foruddefinerede handlinger til behandling. Du kan angive, om en handling skal foretages separat, eller om den kan påbegyndes af behandlingen. (Brugerhandlinger skal køres separat).
+I oversigtspanelet **Handling** kan du føje foruddefinerede handlinger til behandling. Du kan angive, om en handling skal foretages separat, eller om den kan påbegyndes af behandlingen. Du kan definere, om handlingen kun kan initialiseres af en bruger, ved at markere **Kør separat**-afkrydsningsfeltet for handlingen i behandlingen. Fjern markeringen af **Kør separat**-parameteren, hvis du ønsker, at handlingen skal startes af behandlingen, når meddelelser eller meddelelseselementer i statussen er defineret som den første status for denne handling. Handlinger af typen **Brugerhandling** må kun køres separat. 
+
+Det kan nogle gange være nødvendigt at samle flere handlinger til en sekvens, selvom først af dem er defineret til at blive kørt separat. F.eks. hvis det er nødvendigt, at oprettelse af rapporter initialiseres af en bruger, men når rapporten er genererede, skal den straks sendes til en webtjeneste, og svaret fra webtjenesten skal afspejles i systemet. Du kan til dette formål bruge **Uadskillelig sekvens**. Det gør du ved at klikke på knappen **Uadskillelig sekvens** i handlingsruden på **Handling**-oversigtspanelet på siden **Behandling af elektronisk meddelelse**, oprette en sekvens og vælge den i kolonnen **Uadskillelig sekvens** for de handlinger, der skal køres altid sammen. Den første handling i dette tilfælde kan konfigureres som **Kør separat**, men ikke alle andre.
 
 I oversigtspanelet **Ekstra felter i meddelelseselement** kan du tilføje flere foruddefinerede felter, der vedrører meddelelseselementer. Du skal tilføje flere felter for hver type meddelelseselement, der vedrører felterne.
 
@@ -238,16 +320,22 @@ I oversigtspanelet **Meddelelser** vises elektroniske meddelelser for den valgte
 
 - **Ny** – Denne knap er knyttet til handlinger af typen **Opret meddelelse**.
 - **Slet** – Denne knap er tilgængelig, hvis afkrydsningsfeltet **Tillad sletning** er markeret for den aktuelle status for den valgte meddelelse.
+- **Indsamle data** - Denne knap er knyttet til handlingen af typen **Udfyld poster**.
 - **Generér rapport** – Denne knap er knyttet til handlinger af typen **Meddelelse om eksport af elektronisk rapportering**.
 - **Send rapport** – Denne knap er knyttet til handlinger af typen **Webtjeneste**.
+- **Importer svar** – Denne knap er knyttet til handlinger af typen **Import af elektronisk rapportering**.
 - **Opdater status** – Denne knap er knyttet til handlinger af typen **Behandling af bruger på meddelelsesniveau**.
 - **Meddelelseselementer** – Åbn siden **Elementer i elektronisk meddelelse**.
 
-I oversigtspanelet **Handlingslog** vises oplysninger om de handlinger, der er udført for den valgte meddelelse.
+I oversigtspanelet **Handlingslog** vises oplysninger om de handlinger, der er udført for den valgte meddelelse. Hvis en handling har resulteret i en fejl, vedhæftes oplysninger om fejlen i den tilknyttede handlingsloglinje. Marker linjen, og klik på **klip**-knappen i øverste højre hjørne på siden for at gennemse oplysninger om fejlen.
 
 I oversigtspanelet **Yderligere meddelelsesfelter** vises de ekstra felter, der er defineret for meddelelser i opsætningen af behandlingen. Værdierne i disse ekstra felter vises også.
 
-I oversigtspanelet **Meddelelseselementer** vises alle de meddelelseselementer, der vedrører den valgte meddelelse.
+I oversigtspanelet **Meddelelseselementer** vises alle de meddelelseselementer, der vedrører den valgte meddelelse. For hver af meddelelseselementet kan følgende funktioner bruges afhængigt af statussen for dette meddelelseselement:
+
+- **Slet** – Denne knap er tilgængelig, hvis afkrydsningsfeltet **Tillad sletning** er markeret for den aktuelle status for det valgte meddelelseselement.
+- **Opdater status** – Denne knap er knyttet til handlinger af typen **Brugerbehandling**.
+- **Originaldokumentet** - Med denne knap kan brugeren åbne en side med det oprindelige dokument for den markerede meddelelse.
 
 Du kan gennemse alle vedhæftede filer for den valgte meddelelse. Disse vedhæftede filer er rapporter, der allerede er oprettet og modtaget. Vælg den meddelelse, du vil gennemse vedhæftede filer i, og vælg derefter knappen **Vedhæftet fil** i handlingsruden.
 
