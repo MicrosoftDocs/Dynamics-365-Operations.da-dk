@@ -3,7 +3,7 @@ title: Sikkerheds- og rollestyring i Attract
 description: Dette emne indeholder oplysninger om rollesikkerhed i Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374774"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789691"
 ---
 # <a name="security-and-role-management-in-attract"></a>SIkkerheds- og rollestyring i Attract
 
@@ -100,14 +100,16 @@ Følgende rettigheder gælder for de jobspecifikke data for ansøgninger og de h
 | Data eller handling          | Rekrutteringsmedarbejder | Ansvarlig for ansættelse | Interviewer |
 |-------------------------|-----------|----------------|-------------|
 | Ansøgningsdokumenter   | Oprette, læse, opdatere og slette for job, som brugeren er i ansættelsesteamet for | Oprette, læse, opdatere og slette for job, som brugeren er i ansættelsesteamet for | Skrivebeskyttet |
-| Bemærkninger til ansøgninger       | Oprette, læse, opdatere og slette for job, som brugeren er i ansættelsesteamet for | Oprette, læse, opdatere og slette for job, som brugeren er i ansættelsesteamet for | Oprettelse |
+| Bemærkninger til ansøgninger       | Oprette, læse, opdatere og slette for job, som brugeren er i ansættelsesteamet for | Oprette, læse, opdatere og slette for job, som brugeren er i ansættelsesteamet for | Skrivebeskyttet|
 | Ansøgningsaktivitet    | Se, hvis brugeren er i ansættelsesteamet | Se, hvis brugeren er i ansættelsesteamet | Skrivebeskyttet |
 | Tilbagemelding på ansøgning    | Tilføje og få vist al feedback, hvis brugeren er i ansættelsesteamet | Tilføje og få vist al feedback, hvis brugeren er i ansættelsesteamet | Kan tilføje tilbagemeldinger\*\* |
 | Afvise ansøgning      | Kan afvise, hvis brugeren er i ansættelsesteamet | Ikke tilladt | Ikke tilladt |
 | Flyt til næste trin           | Kan afvise, hvis brugeren er i ansættelsesteamet | Kan rykke frem, hvis brugeren er i ansættelsesteamet | Ikke tilladt |
 | Starte tilbudsstyring | Kan starte tilbudsstyring | Der er en konfigurationsindstilling for tilbudsaktiviteten. | Ikke tilladt |
 
-\*\* En konfigurationsindstilling i [opsætningen af tilbagemeldingsaktiviteten](activities-attract.md#feedback-activity) styrer, om interviewere kan se hinandens tilbagemeldinger.
+
+\*\* En konfigurationsindstilling i [opsætningen af tilbagemeldingsaktiviteten](./activities-attract.md) styrer, om interviewere kan se hinandens tilbagemeldinger.
+
 
 ## <a name="process-templates"></a>Processkabeloner
 

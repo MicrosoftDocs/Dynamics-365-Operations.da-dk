@@ -3,7 +3,7 @@ title: Centraliserede debitorbetalinger
 description: Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal den samme transaktion ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eb935d32e61b2cf0ec8710f6c2cfb18ecfe034
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f6b8b1548bf70363431ad58482ba82cf11017332
+ms.sourcegitcommit: ca1a472a670393f7aa208189dc8964c9691e2cdc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330741"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "390137"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserede debitorbetalinger
 
@@ -33,7 +33,7 @@ Organisationer, der omfatter flere juridiske enheder, kan oprette og administrer
 
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derfor skal den samme transaktion ikke angives i flere juridiske enheder. Desuden sparer organisationen tid, fordi processer for betalingsforslag, udligninger og redigering af åbne og lukkede transaktioner for centraliserede betalinger er strømlinet. 
 
-I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne oplysninger om fakturaer, der skal betales. Betalinger for alle juridiske driftsenheder modtages af én juridisk enhed, der omtales som betalingens juridiske enhed. Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer. Du kan angive, hvilken juridisk enhed i organisationen der modtager transaktionerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabattransaktioner, der vedrører en centraliseret betaling, håndteres. 
+I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne oplysninger om fakturaer, der skal betales. Betalinger for alle juridiske driftsenheder modtages af én juridisk enhed, der omtales som betalingens juridiske enhed. Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer. Du kan angive, hvilken juridisk enhed i organisationen der modtager transaktionerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabattransaktioner, der vedrører en centraliseret betaling, håndteres. På kladdelinjen for centraliserede betalinger skal **Kontotype** indstilles til Debitor. **Modkontotype** skal indstilles til Bank eller Finans. Bankkontoen skal være i det aktuelle firma. 
 
 I følgende eksempler vises, hvordan bogføring håndteres i forskellige scenarier. Følgende konfiguration antages for alle disse eksempler:
 
@@ -296,8 +296,3 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam West)    |              | 75,00         |
 | Forfalden fra Fabrikam East (Fabrikam West) | 25,00        |               |
 | Debitor (Fabrikam West)    |              | 25,00         |
-
-
-
-
-

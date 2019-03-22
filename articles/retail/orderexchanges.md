@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 45b628376a483d3d639e5c018dd93570ed8ce7af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302059"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379918"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en udveksling på en returordre
 
@@ -44,7 +44,7 @@ Følg disse trin for at konfigurere systemet til at understøtte udvekslinger p�
 
 Når systemet er konfigureret som beskrevet i den forrige sektion, vælger POS-brugeren stadig en salgsordre eller salgsfaktura for at behandle en returnering, som i tidligere versioner af Retail. Men når returvarerne er føjet til indkøbsvognen, kan brugeren tilføje nye salgslinjer til indkøbsvognen.
 
-For disse nye salgslinjer skal brugeren angive alle de attributter, der er nødvendige for at behandle en kundeordrelinje. Disse attributter omfatter leveringsmetode og opfyldelseslokation. Den betaling, der er forfalden for transaktionen, bliver en nettoværdi af returordrelinjer og salgsordrelinjer. Når betalingen udføres for transaktionen, bogføres returordren som et salgsordredokument i Retail headquarters og systemet fakturerer med det samme returneringslinjerne.
+For disse nye salgslinjer skal brugeren angive alle de attributter, der er nødvendige for at behandle en kundeordrelinje. Disse attributter omfatter leveringsmetode og opfyldelseslokation. Den betaling, der er forfalden for transaktionen, bliver en nettoværdi af returordrelinjer og salgsordrelinjer. Når betalingen udføres for transaktionen, bogføres returordren som et salgsordredokument i Retail Headquarters, og systemet fakturerer med det samme returneringslinjerne.
 
 For at give bedre indsigt i de forskellige beløb for indkøbsvognen er der blevet tilføjet tre nye beløbsfelter til indkøbsvognen. Du kan bruge skærmdesigneren for at gøre disse nye felter tilgængelige i POS-brugergrænsefladen (UI).
 

@@ -3,7 +3,7 @@ title: Strategi for problemløser for produktkonfiguration
 description: Dette emne beskriver, hvordan du kan bruge strategien for problemløser til at forbedre ydeevnen for produktkonfiguration.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351142"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403910"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategi for problemløser for produktkonfiguration
 
@@ -62,8 +62,8 @@ Følgende tabel indeholder anbefalinger om, hvilken strategi for problemløser, 
 | Strategi for problemløser      | Du kan bruge strategien i dette scenario |
 |----------------------|-----------------------------------|
 | Standard              | Strategien **Standard** er blevet optimeret for at løse modeller, der er baseret på tabelbegrænsninger. Undersøgelser af kundeimplementeringer har vist, at denne strategi er den mest effektive strategi i scenarier, hvor brugen af tabelbegrænsninger er udbredt. |
-| Først minimalt domæne | Strategierne **Først minimal domæne** og **Oppefra og ned** er tæt forbundne. Undersøgelser af kundeimplementeringer har vist, at strategien **Oppefra og ned**, der blev introduceret i CU8, overgår strategien **Først minimalt domæne**. Men strategien **Først minimalt domæne** bevares af hensyn til bagudkompatibilitet. Begge disse strategier for problemløser har vist at være mere effektive til løsning af modeller, der indeholder flere matematiske udtryk, hvor der ikke bruges tabelbegrænsninger. Men i nogle tilfælde strategien **Standard** overgå disse to strategier. Du skal derfor huske at prøve hver strategi. |
-| Oppefra og ned             | Strategierne **Først minimal domæne** og **Oppefra og ned** er tæt forbundne. Undersøgelser af kundeimplementeringer har vist, at strategien **Oppefra og ned**, der blev introduceret i CU8, overgår strategien **Først minimalt domæne**. Men strategien **Først minimalt domæne** bevares af hensyn til bagudkompatibilitet. Begge disse strategier for problemløser har vist at være mere effektive til løsning af modeller, der indeholder flere matematiske udtryk, hvor der ikke bruges tabelbegrænsninger. Men i nogle tilfælde strategien **Standard** overgå disse to strategier. Du skal derfor huske at prøve hver strategi. |
+| Først minimale domæner | Strategierne **Først minimale domæner** og **Oppefra og ned** er tæt forbundne. Undersøgelser af kundeimplementeringer har vist, at strategien **Oppefra og ned** overgår strategien **Først minimale domæner**. Men strategien **Først minimale domæner** bevares af hensyn til bagudkompatibilitet. Begge disse strategier for problemløser har vist at være mere effektive til løsning af modeller, der indeholder flere matematiske udtryk, hvor der ikke bruges tabelbegrænsninger. Men i nogle tilfælde strategien **Standard** overgå disse to strategier. Du skal derfor huske at prøve hver strategi. |
+| Oppefra og ned             | Strategierne **Først minimale domæner** og **Oppefra og ned** er tæt forbundne. Undersøgelser af kundeimplementeringer har vist, at strategien **Oppefra og ned** overgår strategien **Først minimale domæner**. Men strategien **Først minimale domæner** bevares af hensyn til bagudkompatibilitet. Begge disse strategier for problemløser har vist at være mere effektive til løsning af modeller, der indeholder flere matematiske udtryk, hvor der ikke bruges tabelbegrænsninger. Men i nogle tilfælde strategien **Standard** overgå disse to strategier. Du skal derfor huske at prøve hver strategi. |
 | Z3                   | Det anbefales, at du strategien **Z3**, som standardstrategien for problemløser. Hvis du er bekymret for ydeevne og skalerbarhed, kan du evaluere de andre strategier. |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377129"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773271"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversigt over regnskabsintegration for detailkanaler
 
@@ -30,7 +30,7 @@ ms.locfileid: "377129"
 
 ## <a name="introduction"></a>Introduktion
 
-Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Microsoft Dynamics 365 for Retail. Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af detailsalg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen: 
+Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Microsoft Dynamics 365 for Retail. Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af detailsalg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen:
 
 - Registrere et detailsalg på en regnskabsenhed, der er knyttet til Retail POS, f.eks. en bonprinter, og udskrive en regnskabskvittering til kunden.
 - Sende oplysninger, der er relateret til salg og returvarer, som er behandlet i Retail POS, sikkert til en ekstern webtjeneste, der styres af skattemyndighederne.
@@ -87,6 +87,7 @@ Når regnskabsregistrering af en transaktion eller en hændelse er foretaget, op
 
 Regnskabstransaktionerne overføres til Retail Headquarters efter *P-job* sammen med detailtransaktioner. I oversigtspanelet **Regnskabstransaktioner** på siden **Transaktioner i detailbutik** kan du se de regnskabstransaktioner, der er knyttet til detailtransaktioner.
 
+
 En regnskabstransaktion indeholder følgende oplysninger:
 
 - Detaljer om regnskabsregistreringsprocessen (proces, connectorgruppe, connector osv.). Serienummeret for regnskabsenheden gemmes også i feltet **Kassenummer**, hvis disse oplysninger er inkluderet i regnskabssvaret.
@@ -115,4 +116,5 @@ Følgende regnskabsintegrationsfunktioner er også tilgængelige i Retail SDK, m
 
 - [Digital signatur for Frankrig](emea-fra-cash-registers.md)
 - [Digital signatur for Norge](emea-nor-cash-registers.md)
-- [Eksempel på integration med kontrolenhed for Sverige](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Eksempel på integration med kontrolenhed for Sverige](./retail-sdk-control-unit-sample.md)
+

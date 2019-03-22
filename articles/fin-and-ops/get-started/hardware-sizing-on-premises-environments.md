@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340723"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768408"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til tilpasning af hardware til lokale miljøer
 
@@ -86,7 +86,7 @@ For at kende kravene til størrelsestilpasning skal du kende det maksimale antal
     - Brug af flere funktioner, f.eks. databaselog og påmindelser. Ekstremt omfang af databaselogning reducerer yderligere gennemløbet pr. time pr. processorkerne under 3K linjer.
     - Kompleksiteten af datasammensætningen – En simpel kontoplan kontra en detaljeret kontoplan f.eks. har konsekvenser for gennemløbet.
     - Transaktionsbeskrivelse.
-    - 2 GB til 4 GB hukommelse for hver kerne.
+    - 2 GB til 16 GB hukommelse for hver kerne.
     - Ekstra databaser på DB-server som f.eks. Management Reporter og SSRS-databaser.
     - Temp DB = 15 % af DB størrelse, med lige så mange filer som fysiske processorer.
     - SAN-størrelse og -gennemløb baseret på det samlede antal/brug af samtidige transaktioner.

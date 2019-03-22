@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376501"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768876"
 ---
 # <a name="set-up-offer-management"></a>Konfigurere tilbudsstyring 
 
@@ -199,11 +199,11 @@ Der er flere dele af tilbudsoprettelsesprocessen, som kan konfigureres af en Att
 - **Kandidatens tilbudsoplevelse** - Som administrator kan du vælge at angive, om alle tilbud skal have en udløbsdato, og i så fald hvad udløbsdatoens forskydning skal være som standard. Du kan også konfigurere, om kandidater kan vælge at afvise et tilbud.
 
 - **e-signaturer** - Som administrator kan du også vælge den metode, som ansøgerne kan bruge til at signere tilbud.
-    - Adobe Sign - Alle tilbudspakker sendes og signeres via Adobe Sign. For den, der opretter tilbuddet, skal have Adobe Sign-licensen være tilknyttet Attract. 
+    - Adobe Sign - Alle tilbudspakker sendes og signeres via Adobe Sign. For den, der opretter tilbuddet, skal Adobe Sign-kontoen være tilknyttet Attract. For Adobe Sign-licenser og en gratis prøveversion skal du på dette [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign - Alle tilbudspakker sendes og signeres via DocuSign. For den, der opretter tilbuddet, skal DocuSign-kontoen være tilknyttet Attract. 
+    
     - ESign - Dette er standardindstillingen, der leveres som standard, hvor brugeren kan signere et tilbud ved at skrive sit navn og sine initialer.
 
->[!NOTE]
-> For Adobe Sign-licenser og en gratis prøveversion skal du på dette [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Hvis du vil vide mere om oprettelsen af tilbuddet, kan du se under [Oprettelse, godkendelse og signering af tilbud](./creating-offers.md).

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Velkommen til Dynamics 365 for Talent
-description: Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
+description: 'Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302049"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Velkommen til Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Du kan oprette planer for effektivt og retfærdigt at administrere kompensation 
 
 ## <a name="develop-and-train-employees"></a>Udvikle og undervise medarbejdere
 
-For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde vigtige forretningsbehov kan du definere mål, oprette performanceevalueringer og spore feedback. For at hjælpe medarbejderne med at udvikle de nødvendige færdigheder kan du også oprette instruktører, kursustyper, kurser, kursusbeskrivelser, agendaer, spor og sessioner, før du tildeler et kursus en instruktør eller tilmelder nogen til et kursus. Instruktører skal allerede eksistere som arbejdere, ansøgere eller kontakter.
+For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde vigtige forretningsbehov, kan du sætte mål, oprette evalueringer af performance og spore feedback. For at hjælpe medarbejderne med at udvikle de nødvendige færdigheder, kan du også oprette instruktører, kursustyper, kurser, kursusbeskrivelser, agendaer, spor og sessioner, før du tildeler en instruktør til et kursus eller registrere nogen til et kursus. Instruktører skal allerede eksistere som arbejdere, ansøgere eller kontakter.
 
 -   [Performancestyring](performance-management-overview.md)
 -   [Justere arbejdsstyrkens færdigheder og forretningsbehov](skills.md)

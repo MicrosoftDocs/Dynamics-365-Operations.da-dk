@@ -3,7 +3,7 @@ title: Udvidelsesmuligheder i Attract
 description: I dette emne beskrives, hvordan du kan udvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjælp af Microsoft Power Platform.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303713"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789645"
 ---
 # <a name="extensibility-in-attract"></a>Udvidelsesmuligheder i Attract
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent er bygget oven på Common Data Service (CDS) for Apps-platformen og kan udvides på forskellige måder ved hjælp af Microsoft Power Platform og de funktioner, som Common Data Service for Apps. Derfor kan du konfigurere og tilpasse systemet ved hjælp af Microsoft PowerApps og Microsoft Flow. Du kan også få yderligere analyser om personer ved hjælp af Microsoft Power BI. Desuden gør nye, brugerdefinerede aktiviteter, f.eks. PowerApps og webindholdsaktiviteter (iframe), ansættelsesprocessen mere fleksibel end nogensinde før. Ved hjælp af disse aktiviteter kan du skræddersy ansættelsesprocessen til dine forretningsbehov og -processer og kan sikre dig, at både ansættelsesteam og kandidater får en problemfri tilpasset brugeroplevelse.
+
+## <a name="extending-option-sets-in-attract"></a>Udvide grupperede indstillinger i Attract
+
+En **Grupperet indstilling** (valgliste) er en type felt, der kan indgå i en enhed. Den definerer en gruppering af indstillinger. Når en grupperet indstilling vises i en formular, bruger den et kontrolelement på rullelisten.  I Attract er der flere felter, som er grupperede indstillinger.  Vi er ved at indføre mulighed for at udvide grupperede indstillinger, startende med felterne Årsag til afvisning, Medarbejdertype og Anciennitetstype.   Desuden kan du tilføje oversatte visningsetiketter for de indstillinger, du tilføjer.  Se følgende link for at få mere at vide: [Tilpasse etiketter for grupperede indstillinger](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Funktionen til jobopslag på LinkedIn kræver brug af **Medarbejdertype** og **Anciennitetstype** på siden **Jobdetaljer**. Standardværdierne i disse felter understøttes af LinkedIn og vises, når jobbet er opslået. Derfor, hvis du laver jobopslag på LinkedIn, og du ændrer de eksisterende værdier for disse felter med grupperede indstillinger, bliver jobbet opslået, men LinkedIn viser ikke de brugerdefinerede værdier i **Medarbejdertype** og **Anciennitetstype**.  
+
+Nedenfor vises trinnene til opdatering af **Årsag til afvisning** med værdier, der er specifikke for din virksomhed.  
+
+1. Hvis du vil udvide den grupperede indstilling **Årsag til afvisning**, skal du gå til [Webstedet PowerApps Administration.](Https://admin.powerapps.microsoft.com)
+2. Du kan blive bedt om at logge på din konto. Angiv det bruger-id og den adgangskode, du bruger til at logge på Dynamics 365 og/eller Office 365, og klik derefter på **Næste**.
+3. Under fanen **Miljøer** skal du vælge det miljø, som du vil administrere, og dobbeltklikke for at få adgang til fanen **Oplysninger**.
+4. Under fanen **Oplysninger** skal du vælge **Dynamics 365 Administration**.
+5. Vælg den forekomst, du vil redigere, og vælg **Åbn**.
+6. Gå til **Indstillinger** og derefter **Tilpasninger**, og vælg **Tilpas systemet**.
+7. Find den enhed, du vil udvide den grupperede indstilling for, ved at vælge **Enheder** og udvide gruppen. I dette eksempel er det enheden **Jobansøgning**.
+8. Gå til det felt, du vil udvide den grupperede indstilling for, ved at vælge indstillingen **Felter**. I dette eksempel er det **msdyn_rejectionreason**. Dobbeltklik på feltet.
+9. I feltet **Grupperet indstilling** skal du vælge **Rediger**.
+10. Vælg ikonet **+**.
+11. Angiv en **Etiket**.  (Det skal være en entydig værdi – ingen dubletter).
+12. Vælg **Gem**.
+13. Vælg **Udgiv** øverst på siden.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Udnytte Microsoft Power Platform 
 

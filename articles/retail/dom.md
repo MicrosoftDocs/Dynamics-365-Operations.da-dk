@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302073"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380010"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -63,8 +63,8 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
 
         1. I Microsoft Dynamics Lifecycle Services skal du åbne det delte aktivbibliotek, vælge **Model** som aktivtype og downloade filen **DOM-licens**.
         2. Start Microsoft Internet Information Services (IIS) Manager, højreklik på **AOS Service website**, og vælg derefter **Undersøg**. Et Windows Stifinder-vindue åbnes på **\<AOS-tjenestens rod\>\\webroot**. Noter stien til \<AOS-tjenestens rod\>, da du skal bruge den i næste trin.
-        3. Kopier konfigurationsfilen i mappen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
-        4. Gå til Retail headquarters-klienten, og åbn siden **DOM-parametre**. På fanen **Problemløser** i feltet **Type af problemløser** skal du vælge **Problemløser for produktion** og bekræfte, at der ikke vises nogen fejlmeddelelser.
+        3. Kopier konfigurationsfilen i mappen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Gå til Retail Headquarters-klienten, og åbn siden **DOM-parametre**. På fanen **Problemløser** i feltet **Type af problemløser** skal du vælge **Problemløser for produktion** og bekræfte, at der ikke vises nogen fejlmeddelelser.
 
         > [!NOTE]
         > Forenklet problemløser leveres, så detailhandlere kan afprøve DOM-funktionen uden at skulle installere den særlige licens. Organisationer bør ikke anvende Forenklet problemløser i produktionsmiljøer.

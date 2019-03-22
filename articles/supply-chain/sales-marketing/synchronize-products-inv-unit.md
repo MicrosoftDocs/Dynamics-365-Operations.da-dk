@@ -3,7 +3,7 @@ title: Synkronisere produkter med lagerenhed fra Finance and Operations til Fiel
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere produkter med lagerenhed fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359238"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836296"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synkronisere produkter med lagerenhed fra Finance and Operations til Field Service
 
@@ -34,9 +34,11 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 
 [![Synkronisering af forretningsprocesser mellem Finance and Operations og Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Den anvendte skabelon **Field Service-produkter (Finance and Operations til Field Service)** er baseret på skabelonen **Produkter (Finance and Operations til Sales) – Direkte** fra Kundeemne til kontanter. Yderligere oplysninger finder du i [Produkter (Finance and Operations til Sales) – Direkte](products-template-mapping-direct.md).
+Den anvendte **Field Service-produkter med lagerenhed (Finance and Operations til Field Service)**-skabelon er baseret på skabelonen **Field Service-produkter (Finance and Operations til Field Service)**. Yderligere oplysninger finder du i [Field Service-produkter (Finance and Operations til Field Service)](field-service-product.md).
 
-Dette emne omhandler kun forskellene mellem skabelonerne **Field Service-produkter (Finance and Operations til Field Service)** og **Produkter (Finance and Operations til Field Service)**.
+I dette emne beskrives kun forskellene mellem de to skabeloner: 
+- **Field Service-produkter med lagerenhed (Finance and Operations til Sales)**
+- **Field Service-produkter (Finance and Operations til Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 

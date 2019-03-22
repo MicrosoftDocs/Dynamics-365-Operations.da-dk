@@ -3,7 +3,7 @@ title: Oprettelse, godkendelse og signering af tilbud
 description: Dette emne indeholder oplysninger om, hvordan du kan oprette, godkende og underskrive et kandidattilbud ved hjælp af Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303781"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768899"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Oprettelse, godkendelse og signering af tilbud
 
@@ -104,15 +104,20 @@ Der er flere handlinger, som du kan udføre, før du sender tilbuddet til kandid
 
 -  Der kan være flere dokumenter, du vil medtage i processen til accept af tilbuddet. Du har mulighed for at angive den dokumenttype, der kræves.
 
-- Indstilling for e-signatur: Hvis Adobe Sign er valgt som den foretrukne e-signaturmetode, skal den, der opretter et tilbud, oprette forbindelse til sin Adobe Sign-licens. Der er to måder at gøre dette på. Gå til **Brugerindstillinger** i **Tilbud**. Under **Forbindelser** skal du oprette forbindelse til **Adobe Sign**. Du kan også blive bedt om at oprette forbindelse fra Send tilbud til kandidatens skærm, hvis forbindelsen ikke allerede blev oprettet ud fra brugerindstillingerne. 
+- e-signatur-indstilling: Der er to måder at oprette forbindelse til din foretrukne e-signaturudbyder. Gå til **Brugerindstillinger** i **Tilbud**. Under **Forbindelser** skal du oprette forbindelse til **Adobe Sign** eller **DocuSign**. Du kan også blive bedt om at oprette forbindelse fra siden **Send tilbud til kandidaten**, hvis forbindelsen ikke allerede blev oprettet ud fra brugerindstillingerne. Der skal kun oprettes forbindelse til e-signatur-kontoen én gang. Den samme brugerlicens bruges til alle fremtidige tilbudspakker, der skal sendes ud af den samme bruger. 
 
-> [!NOTE]
-> Brugerne skal blot forbinde deres Adobe Sign-konti én gang. Den samme brugerlicens bruges til alle fremtidige tilbudspakker, der skal sendes ud af den samme bruger. 
+### <a name="adobe-sign"></a>Adobe Sign
+Hvis Adobe Sign er valgt som den foretrukne e-signaturmetode, skal den, der opretter et tilbud, oprette forbindelse til sin Adobe Sign-licens i dette trin. 
+
+### <a name="docusign"></a>DocuSign
+Hvis DocuSign er valgt som den foretrukne e-signaturmetode, skal den, der opretter et tilbud, oprette forbindelse til sin DocuSign-licens. Når du er logget på, er der forbindelse fra den standardkonto og de tilladelser, der er knyttet til brugerens DocuSign-profil, til Talent Attract. 
 
 -  Du kan få vist og rediger e-mailskabelonen efter behov.
 
 Når tilbuddet er klar, og du klikker på **Send til kandidat**, modtager kandidaten en e-mail om, at et tilbud afventer gennemsyn.
 
+>[!NOTE]
+> Hvis du bruger Adobe Sign eller DocuSign, og der opstår en fejl under afsendelse af tilbuddet til kandidaten, kan du prøve at afbryde forbindelsen til e-signatur-brugerkontoen og oprette den igen fra **Brugerindstillinger**. Hvis problemet fortsætter, skal du kontakte vores support ved hjælp af linket **Rapportér et problem**.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Kandidatens handlinger efter modtagelse af et tilbud
 

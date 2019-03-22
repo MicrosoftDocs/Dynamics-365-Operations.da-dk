@@ -3,7 +3,7 @@ title: Regnskabskalendere, regnskabsår og perioder
 description: I denne artikel beskrives regnskabskalendere, regnskabsår og -perioder, og hvordan du kan udnytte dem til juridiske enheder, anlægsaktiver og budgettering.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361653"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778195"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskabskalendere, regnskabsår og perioder
 
@@ -43,7 +43,7 @@ Formålet med en ultimoperiode er at adskille finansposteringer, der genereres, 
 Når du opretter en ultimoperiode, skal du vælge en periode med statusangivelsen Åben, som har de datoer, du vil bruge. Den nye ultimoperiode kopierer start- og slutdatoerne fra den eksisterende periode. Den oprindelige periode findes fortsat. Du kan f.eks. vælge Periode 12, som er sidste periode i regnskabsåret, og som har datoer fra 1. august til og med 31. august. Derefter angiver du et navn til ultimoperioden, f.eks. Ultimo. Når du har oprettet ultimoperioden, har du nu den oprindelige periode og ultimoperioden. Begge har datoer, der starter d. 1. august og slutter d. 31. august.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Vælge regnskabskalendere til finanskonti, anlægsaktiver og budgetcyklusser
-Regnskabskalendere bruges sammen med afskrivning af anlægsaktiver, økonomiske bevægelser og budgetcyklusser. Når du opretter en regnskabskalender, kan du bruge den til flere formål. Du kan vælge en regnskabskalender til en værdimodel eller afskrivningsmodel for at gøre den til en kalender for anlægsaktiver. Du kan vælge en regnskabskalender til en finanskonto for at gøre den til en finanskalender. Og du kan vælge en regnskabskalender til en budgetcyklus for at gøre den til en budgetkalender. Du kan bruge samme regnskabskalender til alle disse.
+Regnskabskalendere bruges sammen med afskrivning af anlægsaktiver, økonomiske bevægelser og budgetcyklusser. Når du opretter en regnskabskalender, kan du bruge den til flere formål. Du kan vælge en regnskabskalender til et anlægsaktivkartotek for at gøre det til en kalender for anlægsaktiver. Du kan vælge en regnskabskalender til en finanskonto for at gøre den til en finanskalender. Og du kan vælge en regnskabskalender til en budgetcyklus for at gøre den til en budgetkalender. Du kan bruge samme regnskabskalender til alle disse.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Vælg en regnskabskalender til din juridiske enhed
 
@@ -51,7 +51,7 @@ Vælg den regnskabskalender, du vil bruge til finanskontoen til din juridiske en
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Vælge en regnskabskalender til anlægsaktiver
 
-Du kan vælge en regnskabskalender til en værdimodel eller afskrivningsmodel, og denne regnskabskalender bruges af de anlægsaktiver, der bruger den valgte værdimodel eller afskrivningsmodel. Du kan vælge blandt de regnskabskalendere, der er defineret på siden Regnskabskalendere.
+Du kan vælge en regnskabskalender til et anlægsaktivkartotek, og denne regnskabskalender bruges af de anlægsaktiver, der bruger det valgte kartotek. Du kan vælge blandt de regnskabskalendere, der er defineret på siden Regnskabskalendere.
 
 ### <a name="define-budget-cycle-time-spans"></a>Definere tidsperioder for budgetcyklus
 

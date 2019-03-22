@@ -5,11 +5,15 @@ items:
   items:
   - name: Nyheder eller ændringer
     href: get-started/whats-new.md
+  - name: Funktioner i prøveversion i Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: Nyheder og ændringer i Dynamics 365 for Retail (april 2019)
+    href: get-started/april-whats-new.md
   - name: Før du køber Retail
     href: get-started/before-you-buy.md
-  - name: Tilmelde dig et prøveabonnement
+  - name: Tilmeld dig et prøveabonnement
     href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-  - name: Installere et demomiljø
+  - name: Installer et demomiljø
     href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
   - name: Installationsindstillinger
     href: dev-itpro/choose-deployment.md
@@ -108,8 +112,12 @@ items:
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Indstillinger for beregning af hele beløbet og intervaller for momskoder
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Avanceret automatiske gebyrer for omni-kanal
-  href: omni-auto-charges.md
+- name: Avancerede automatiske gebyrer for omni-kanal
+  items:
+  - name: Konfigurere og bruge avancerede automatiske gebyrer
+    href: omni-auto-charges.md
+  - name: Forholdsmæssig fordeling og gruppering af automatiske hovedgebyrer
+    href: pro-rate-charges-matching-lines.md
 - name: Callcenter
   items:
   - name: Funktionalitet til callcenter-salg
@@ -387,7 +395,7 @@ items:
     - name: Kasseapparatfunktionalitet
       href: localizations/emea-swe-cash-registers.md
     - name: Eksempel på Retail POS-integration med kontrolenheder
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Opgaver i Retail
   items:
   - name: Oprette et produkt
@@ -553,6 +561,8 @@ items:
       href: dev-itpro/hybridApp.md
     - name: Tilsidesætte POS-anmodningshandler
       href: dev-itpro/pos-handler.md
+    - name: Få vist oplysninger om POS-udvidelsespakke
+      href: view-pos-extension-package-details.md
   - name: Hardware Station og udvidelse
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server-udvidelse
@@ -659,9 +669,9 @@ items:
     items:
     - name: Loyalitetsudvidelse
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 1f86096b0572f0309afa04e086d53294a7a8f4fa
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377245"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791632"

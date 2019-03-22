@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a35184a48eff9e320087cb9390a0f1eed1e7ba19
+ms.sourcegitcommit: 9a723737565ac78c884e40f7129d0f5aad747524
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308638"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773082"
 ---
 # <a name="workflow-system"></a>Arbejdsgangsystem
 
@@ -70,4 +70,5 @@ Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
 + [Konfigurere en betinget beslutning i en arbejdsgang](configure-conditional-decision-workflow.md)
 + [Konfigurere en parallel aktivitet i en arbejdsgang](configure-parallel-activity-workflow.md)
 + [Konfigurere en parallel gren i en arbejdsgang](configure-parallel-branch-workflow.md)
-+ [Konfigurere en arbejdsgang for linjeelement](configure-line-item-workflow.md)
++ [Konfigurere en arbejdsgang for linjeelementer](configure-line-item-workflow.md)
++ [Ofte stillede spørgsmål om arbejdsgang](workflow-FAQ.md)
