@@ -278,7 +278,7 @@ items:
         href: extensibility/class-extensions.md
       - name: Klasseudvidelse via metodeombrydning og kommandovej
         href: extensibility/method-wrapping-coc.md
-      - name: Retningslinjer for navngivning ved modeludvidelser
+      - name: Retningslinjer for navngivning af udvidelser
         href: extensibility/naming-guidelines-extensions.md
       - name: Begrænsninger for Relax-model ved omstrukturering af overlejring til udvidelser
         href: extensibility/refactoring-over-layering.md
@@ -374,11 +374,33 @@ items:
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest-filtrering ved hjælp af klasse og metodeattributter
       href: perf-test/systest-filtering.md
+    - name: Bibliotek til godkendelsestest
+      href: perf-test/acceptance-test-library.md
+    - name: Begreber i navigation
+      href: perf-test/concepts-navigation.md
+    - name: Testdatametoder
+      href: perf-test/test-data-methods.md
+    - name: Enheder i biblioteket til godkendelsestest
+      href: perf-test/concepts-entities.md
+    - name: Kommandoer i bibliotek til godkendelsestest
+      href: perf-test/concepts-commands.md
+    - name: Oprettere i biblioteket til godkendelsestest
+      href: perf-test/concepts-creators.md
+    - name: Forespørgsler i biblioteket til godkendelsestest
+      href: perf-test/concepts-queries.md
+    - name: Specifikationsklasser
+      href: perf-test/concepts-specifications.md
+    - name: Guide til oprettelse af kode i bibliotek til godkendelsestest
+      href: perf-test/code-generation-wizard.md
+    - name: Bedste praksis for bibliotek til godkendelsestest
+      href: perf-test/atl-best-practices.md
+    - name: Ofte stillede spørgsmål
+      href: perf-test/atl-faq.md
   - name: Gyldig fra
     href: dev-tools/date-effectivity.md
   - name: ISV-licensering
     href: dev-tools/isv-licensing.md
-  - name: ISV-licenser lokalt
+  - name: ISV-licensering lokalt
     href: dev-tools/isv-licensing-on-prem.md
 - name: Udvikling af brugergrænseflade
   href: user-interface/user-interface-development-home-page.md
@@ -449,9 +471,11 @@ items:
       href: user-interface/public-javascript-apis.md
     - name: Tjekliste for kontrolelement
       href: user-interface/control-checklist.md
-  - name: Meddelelser
+  - name: Beskeder
     items:
-    - name: Skyder og MessageBox-dialogbokse
+    - name: Billedforklaringer til funktioner
+      href: user-interface/feature-callouts.md
+    - name: Skyder- og MessageBox-dialogbokse
       href: user-interface/slider-messagebox.md
     - name: API for meddelelsescenter, meddelelseslinje og meddelelsesdetaljer
       href: user-interface/messaging-api-center-bar-details.md
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: Anvende opdateringer og udvidelser på skybaserede Retail-kanalkomponenter
       href: deployment/Update-retail-channel.md
-    - name: Initialisere skybaserede Retail-kanalkomponenter
+    - name: Initialisere Retail Cloud Scale Unit
       href: deployment/Initialize-Retail-Channels.md
   - name: Lokal installation
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: Proces for flytning til den seneste opdatering
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Opdatere miljøer fra version 8.0 til 8.1
+    - name: Opdatere miljøer fra version 8.0 til 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Livscykluspolitik for software og skyversioner
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: Batchjob til håndtering af defragmentering af SQL-indeks
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Konfigurere påmindelser om batch
+      href: sysadmin/alerts.md
+    - name: Forbedrede batchformularer
+      href: sysadmin/enhanced-forms.md
+    - name: Ryd batchhistorik
+      href: sysadmin/batch-history-cleanup.md
   - name: Optimeringsrådgiver
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1229,8 +1259,10 @@ items:
     items:
     - name: Opdatering i uddannelsesøjemed
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Fejlfinding og diagnose
+    - name: Fejlfinding i en kopi af produktionsdatabasen
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Eksportere en kopi af databasen for godkendelsestest for standardbruger (UAT)
+      href: database/dbmovement-scenario-exportuat.md
     - name: Gylden konfigurationskampagne
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destruktiv test
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Administrere supportoplevelser for Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773796"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976006"
