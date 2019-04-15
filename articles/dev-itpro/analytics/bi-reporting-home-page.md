@@ -3,7 +3,7 @@ title: Startside for Business Intelligence (BI) og rapportering
 description: Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence og de rapporteringsværktøjer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302051"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902836"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Startside for Business Intelligence (BI) og rapportering
 
@@ -33,7 +33,7 @@ Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om 
 ## <a name="get-started"></a>Introduktion
 - [Adgang til oplysninger og rapportering](information-access-reporting.md)
 - [Tech Talk: Rapporteringsindstillinger](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
+- [Finance and Operations: Blog om Power BI-analyser og Reporting Services](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analytiske arbejdsområder
 Finance and Operations leverer interaktive rapporter, der kan integreres problemfrit i programmets arbejdsområder. Arbejdsområderne kan bruge avancerede infographics og visuelle elementer, der understøttes af Microsoft Power BI. Disse infographics og visuelle elementer omfatter mange funktioner, som leveres af tredjeparter. Derfor giver arbejdsområderne en effektiv visuel og interaktiv oplevelse for brugerne.
