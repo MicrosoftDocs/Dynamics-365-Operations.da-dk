@@ -1,7 +1,7 @@
 ---
 title: Konfigurere kompensationsgitre
 description: Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -10,87 +10,87 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 139c4e2adbf5029f8084c7c934a05def04cd31ca
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f0caebb2dfbff12545610aa6438dccbec84db3f9
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340401"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856755"
 ---
-# <a name="set-up-compensation-grids"></a><span data-ttu-id="2e475-103">Konfigurere kompensationsgitre</span><span class="sxs-lookup"><span data-stu-id="2e475-103">Set up compensation grids</span></span>
+# <a name="set-up-compensation-grids"></a><span data-ttu-id="18777-103">Konfigurere kompensationsgitre</span><span class="sxs-lookup"><span data-stu-id="18777-103">Set up compensation grids</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2e475-104">Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.</span><span class="sxs-lookup"><span data-stu-id="2e475-104">Compensation grids are used to define and maintain the pay structures for fixed compensation plans.</span></span> <span data-ttu-id="2e475-105">Kompensationsgitre kan deles mellem flere planer eller kopieres, når du opretter en ny lønstruktur.</span><span class="sxs-lookup"><span data-stu-id="2e475-105">Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.</span></span>  <span data-ttu-id="2e475-106">Før du opretter et kompensationsgitteret, skal niveauer og referencepunkter konfigureres.</span><span class="sxs-lookup"><span data-stu-id="2e475-106">Before creating a compensation grid, Levels and Reference points must be set up.</span></span> <span data-ttu-id="2e475-107">I dette eksempel oprettes der en ny klassetype for kompensationsgitteret ved hjælp af demodata for niveauerne og referencepunkter.</span><span class="sxs-lookup"><span data-stu-id="2e475-107">This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points.</span></span> <span data-ttu-id="2e475-108">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="2e475-108">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="18777-104">Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.</span><span class="sxs-lookup"><span data-stu-id="18777-104">Compensation grids are used to define and maintain the pay structures for fixed compensation plans.</span></span> <span data-ttu-id="18777-105">Kompensationsgitre kan deles mellem flere planer eller kopieres, når du opretter en ny lønstruktur.</span><span class="sxs-lookup"><span data-stu-id="18777-105">Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.</span></span>  <span data-ttu-id="18777-106">Før du opretter et kompensationsgitteret, skal niveauer og referencepunkter konfigureres.</span><span class="sxs-lookup"><span data-stu-id="18777-106">Before creating a compensation grid, Levels and Reference points must be set up.</span></span> <span data-ttu-id="18777-107">I dette eksempel oprettes der en ny klassetype for kompensationsgitteret ved hjælp af demodata for niveauerne og referencepunkter.</span><span class="sxs-lookup"><span data-stu-id="18777-107">This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points.</span></span> <span data-ttu-id="18777-108">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="18777-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="set-up-information-about-the-compensation-grid"></a><span data-ttu-id="2e475-109">Konfigurer oplysninger om kompensationsgitteret</span><span class="sxs-lookup"><span data-stu-id="2e475-109">Set up information about the compensation grid</span></span>
-1. <span data-ttu-id="2e475-110">Gå til Personale > Kompensation > Fast løn > Kompensationsgitre.</span><span class="sxs-lookup"><span data-stu-id="2e475-110">Go to Human resources > Compensation > Fixed compensation > Compensation grids.</span></span>
-2. <span data-ttu-id="2e475-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2e475-111">Click New.</span></span>
-3. <span data-ttu-id="2e475-112">Skriv en værdi i feltet Gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-112">In the Grid field, type a value.</span></span>
-4. <span data-ttu-id="2e475-113">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="2e475-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="2e475-114">Vælg en indstilling i feltet Type.</span><span class="sxs-lookup"><span data-stu-id="2e475-114">In the Type field, select an option.</span></span>
-6. <span data-ttu-id="2e475-115">Indtast eller vælg en værdi i feltet Opsætning af reference.</span><span class="sxs-lookup"><span data-stu-id="2e475-115">In the Reference setup field, enter or select a value.</span></span>
-7. <span data-ttu-id="2e475-116">Indtast eller vælg en værdi i feltet Valuta.</span><span class="sxs-lookup"><span data-stu-id="2e475-116">In the Currency field, enter or select a value.</span></span>
-8. <span data-ttu-id="2e475-117">Skriv en værdi i feltet Valuta.</span><span class="sxs-lookup"><span data-stu-id="2e475-117">In the Currency field, type a value.</span></span>
-9. <span data-ttu-id="2e475-118">Angiv en dato i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="2e475-118">In the Effective date field, enter a date.</span></span>
+## <a name="set-up-information-about-the-compensation-grid"></a><span data-ttu-id="18777-109">Konfigurer oplysninger om kompensationsgitteret</span><span class="sxs-lookup"><span data-stu-id="18777-109">Set up information about the compensation grid</span></span>
+1. <span data-ttu-id="18777-110">Gå til Personale > Kompensation > Fast løn > Kompensationsgitre.</span><span class="sxs-lookup"><span data-stu-id="18777-110">Go to Human resources > Compensation > Fixed compensation > Compensation grids.</span></span>
+2. <span data-ttu-id="18777-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="18777-111">Click New.</span></span>
+3. <span data-ttu-id="18777-112">Skriv en værdi i feltet Gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-112">In the Grid field, type a value.</span></span>
+4. <span data-ttu-id="18777-113">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="18777-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="18777-114">Vælg en indstilling i feltet Type.</span><span class="sxs-lookup"><span data-stu-id="18777-114">In the Type field, select an option.</span></span>
+6. <span data-ttu-id="18777-115">Indtast eller vælg en værdi i feltet Opsætning af reference.</span><span class="sxs-lookup"><span data-stu-id="18777-115">In the Reference setup field, enter or select a value.</span></span>
+7. <span data-ttu-id="18777-116">Indtast eller vælg en værdi i feltet Valuta.</span><span class="sxs-lookup"><span data-stu-id="18777-116">In the Currency field, enter or select a value.</span></span>
+8. <span data-ttu-id="18777-117">Skriv en værdi i feltet Valuta.</span><span class="sxs-lookup"><span data-stu-id="18777-117">In the Currency field, type a value.</span></span>
+9. <span data-ttu-id="18777-118">Angiv en dato i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="18777-118">In the Effective date field, enter a date.</span></span>
 
-## <a name="add-levels-to-the-compensation-structure"></a><span data-ttu-id="2e475-119">Føje niveauer til kompensationsstrukturen</span><span class="sxs-lookup"><span data-stu-id="2e475-119">Add levels to the compensation structure</span></span>
-1. <span data-ttu-id="2e475-120">Klik på Kompensationsstruktur.</span><span class="sxs-lookup"><span data-stu-id="2e475-120">Click Compensation structure.</span></span>
-2. <span data-ttu-id="2e475-121">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-121">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="2e475-122">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="2e475-122">In the Level field, enter or select a value.</span></span>
-4. <span data-ttu-id="2e475-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2e475-123">Click New.</span></span>
-5. <span data-ttu-id="2e475-124">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-124">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="2e475-125">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="2e475-125">In the Level field, enter or select a value.</span></span>
-7. <span data-ttu-id="2e475-126">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2e475-126">Click New.</span></span>
-8. <span data-ttu-id="2e475-127">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-127">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="2e475-128">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="2e475-128">In the Level field, enter or select a value.</span></span>
-10. <span data-ttu-id="2e475-129">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2e475-129">Click New.</span></span>
-11. <span data-ttu-id="2e475-130">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-130">In the list, mark the selected row.</span></span>
-12. <span data-ttu-id="2e475-131">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="2e475-131">In the Level field, enter or select a value.</span></span>
-13. <span data-ttu-id="2e475-132">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2e475-132">Click New.</span></span>
-14. <span data-ttu-id="2e475-133">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-133">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="2e475-134">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="2e475-134">In the Level field, enter or select a value.</span></span>
+## <a name="add-levels-to-the-compensation-structure"></a><span data-ttu-id="18777-119">Føje niveauer til kompensationsstrukturen</span><span class="sxs-lookup"><span data-stu-id="18777-119">Add levels to the compensation structure</span></span>
+1. <span data-ttu-id="18777-120">Klik på Kompensationsstruktur.</span><span class="sxs-lookup"><span data-stu-id="18777-120">Click Compensation structure.</span></span>
+2. <span data-ttu-id="18777-121">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-121">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="18777-122">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="18777-122">In the Level field, enter or select a value.</span></span>
+4. <span data-ttu-id="18777-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="18777-123">Click New.</span></span>
+5. <span data-ttu-id="18777-124">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-124">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="18777-125">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="18777-125">In the Level field, enter or select a value.</span></span>
+7. <span data-ttu-id="18777-126">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="18777-126">Click New.</span></span>
+8. <span data-ttu-id="18777-127">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-127">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="18777-128">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="18777-128">In the Level field, enter or select a value.</span></span>
+10. <span data-ttu-id="18777-129">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="18777-129">Click New.</span></span>
+11. <span data-ttu-id="18777-130">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-130">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="18777-131">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="18777-131">In the Level field, enter or select a value.</span></span>
+13. <span data-ttu-id="18777-132">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="18777-132">Click New.</span></span>
+14. <span data-ttu-id="18777-133">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-133">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="18777-134">Indtast eller vælg en værdi i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="18777-134">In the Level field, enter or select a value.</span></span>
 
-## <a name="fill-in-the-compensation-structure-with-values"></a><span data-ttu-id="2e475-135">Udfyld kompensationsstrukturen med værdier</span><span class="sxs-lookup"><span data-stu-id="2e475-135">Fill in the compensation structure with values</span></span>
-1. <span data-ttu-id="2e475-136">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-136">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="2e475-137">På dette tidspunkt kan kompensationsværdier manuelt indtastes i hvert felt i tabellen, eller masseændringsfunktionen kan bruges til nemt at udfylde flere felter og udføre grundlæggende beregninger.</span><span class="sxs-lookup"><span data-stu-id="2e475-137">At this point, compensation values can manually be entered into each field in the table, or the Mass change functionality can be used to easily fill in multiple fields and perform basic calculations.</span></span>  
-2. <span data-ttu-id="2e475-138">Klik på Masseændring.</span><span class="sxs-lookup"><span data-stu-id="2e475-138">Click Mass change.</span></span>
-    * <span data-ttu-id="2e475-139">For dette gitter vil vi først anvende værdien af midtpunktet på første niveau på alle felter i tabellen.</span><span class="sxs-lookup"><span data-stu-id="2e475-139">For this grid, we'll first apply the value for the midpoint of the first level's to all the fields in the table.</span></span> <span data-ttu-id="2e475-140">Dette er grundlaget for kompensationsmatrixen.</span><span class="sxs-lookup"><span data-stu-id="2e475-140">This will be the basis for the compensation matrix.</span></span>  
-3. <span data-ttu-id="2e475-141">Vælg en indstilling i feltet Reguleringstype.</span><span class="sxs-lookup"><span data-stu-id="2e475-141">In the Adjustment type field, select an option.</span></span>
-4. <span data-ttu-id="2e475-142">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="2e475-142">In the Adjustment amount field, enter a number.</span></span>
-5. <span data-ttu-id="2e475-143">Markér eller fjern markeringen af alle rækker på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-143">In the list, mark or unmark all rows.</span></span>
-6. <span data-ttu-id="2e475-144">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-144">Click Apply to grid.</span></span>
-    * <span data-ttu-id="2e475-145">Nu bruger vi masseændringsfunktionen til at forøge beløbene i hvert efterfølgende niveau med en bestemt procentdel eller et beløb.</span><span class="sxs-lookup"><span data-stu-id="2e475-145">Now we'll use the mass change function to increment the amounts in each subsequent level by a certain percentage or amount.</span></span> <span data-ttu-id="2e475-146">I dette eksempel har hver lønklasse et 12,5% opslag mellem sine midtpunkter.</span><span class="sxs-lookup"><span data-stu-id="2e475-146">In this example, each grade will have a 12.5% spread between their midpoints.</span></span>  
-7. <span data-ttu-id="2e475-147">Vælg en indstilling i feltet Reguleringstype.</span><span class="sxs-lookup"><span data-stu-id="2e475-147">In the Adjustment type field, select an option.</span></span>
-8. <span data-ttu-id="2e475-148">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="2e475-148">In the Adjustment amount field, enter a number.</span></span>
-9. <span data-ttu-id="2e475-149">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-149">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="2e475-150">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-150">In the list, find and select the desired record.</span></span>
-11. <span data-ttu-id="2e475-151">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-151">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="2e475-152">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-152">In the list, find and select the desired record.</span></span>
-13. <span data-ttu-id="2e475-153">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-153">Click Apply to grid.</span></span>
-14. <span data-ttu-id="2e475-154">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-154">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="2e475-155">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-155">In the list, find and select the desired record.</span></span>
-16. <span data-ttu-id="2e475-156">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-156">In the list, find and select the desired record.</span></span>
-17. <span data-ttu-id="2e475-157">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-157">Click Apply to grid.</span></span>
-18. <span data-ttu-id="2e475-158">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-158">In the list, find and select the desired record.</span></span>
-19. <span data-ttu-id="2e475-159">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-159">In the list, find and select the desired record.</span></span>
-20. <span data-ttu-id="2e475-160">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-160">Click Apply to grid.</span></span>
-21. <span data-ttu-id="2e475-161">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-161">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="2e475-162">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-162">Click Apply to grid.</span></span>
-    * <span data-ttu-id="2e475-163">Nu skal vi bruge masseændringsfunktionen til at justere minimum og maksimumreferencepunkter for hvert niveau.</span><span class="sxs-lookup"><span data-stu-id="2e475-163">Now we'll use the mass change function to adjust the Minimum and Maximum reference points for each level.</span></span> <span data-ttu-id="2e475-164">I dette eksempel bruger vi et opslag med 50%, så minimumreferencepunktet reguleres -20% og maksimumopslaget bliver reguleret +20%.</span><span class="sxs-lookup"><span data-stu-id="2e475-164">This example will use a 50% spread so the Minimum reference point will be adjusted -20% and the Maximum will be adjusted +20%.</span></span>  
-23. <span data-ttu-id="2e475-165">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="2e475-165">In the Adjustment amount field, enter a number.</span></span>
-24. <span data-ttu-id="2e475-166">Indtast eller vælg en værdi i feltet Referencepunkt.</span><span class="sxs-lookup"><span data-stu-id="2e475-166">In the Reference point field, enter or select a value.</span></span>
-25. <span data-ttu-id="2e475-167">Markér eller fjern markeringen af alle rækker på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-167">In the list, mark or unmark all rows.</span></span>
-26. <span data-ttu-id="2e475-168">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-168">Click Apply to grid.</span></span>
-27. <span data-ttu-id="2e475-169">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="2e475-169">In the Adjustment amount field, enter a number.</span></span>
-28. <span data-ttu-id="2e475-170">Indtast eller vælg en værdi i feltet Referencepunkt.</span><span class="sxs-lookup"><span data-stu-id="2e475-170">In the Reference point field, enter or select a value.</span></span>
-29. <span data-ttu-id="2e475-171">Markér eller fjern markeringen af alle rækker på listen.</span><span class="sxs-lookup"><span data-stu-id="2e475-171">In the list, mark or unmark all rows.</span></span>
-30. <span data-ttu-id="2e475-172">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="2e475-172">Click Apply to grid.</span></span>
+## <a name="fill-in-the-compensation-structure-with-values"></a><span data-ttu-id="18777-135">Udfyld kompensationsstrukturen med værdier</span><span class="sxs-lookup"><span data-stu-id="18777-135">Fill in the compensation structure with values</span></span>
+1. <span data-ttu-id="18777-136">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-136">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="18777-137">På dette tidspunkt kan kompensationsværdier manuelt indtastes i hvert felt i tabellen, eller masseændringsfunktionen kan bruges til nemt at udfylde flere felter og udføre grundlæggende beregninger.</span><span class="sxs-lookup"><span data-stu-id="18777-137">At this point, compensation values can manually be entered into each field in the table, or the Mass change functionality can be used to easily fill in multiple fields and perform basic calculations.</span></span>  
+2. <span data-ttu-id="18777-138">Klik på Masseændring.</span><span class="sxs-lookup"><span data-stu-id="18777-138">Click Mass change.</span></span>
+    * <span data-ttu-id="18777-139">For dette gitter vil vi først anvende værdien af midtpunktet på første niveau på alle felter i tabellen.</span><span class="sxs-lookup"><span data-stu-id="18777-139">For this grid, we'll first apply the value for the midpoint of the first level's to all the fields in the table.</span></span> <span data-ttu-id="18777-140">Dette er grundlaget for kompensationsmatrixen.</span><span class="sxs-lookup"><span data-stu-id="18777-140">This will be the basis for the compensation matrix.</span></span>  
+3. <span data-ttu-id="18777-141">Vælg en indstilling i feltet Reguleringstype.</span><span class="sxs-lookup"><span data-stu-id="18777-141">In the Adjustment type field, select an option.</span></span>
+4. <span data-ttu-id="18777-142">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="18777-142">In the Adjustment amount field, enter a number.</span></span>
+5. <span data-ttu-id="18777-143">Markér eller fjern markeringen af alle rækker på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-143">In the list, mark or unmark all rows.</span></span>
+6. <span data-ttu-id="18777-144">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-144">Click Apply to grid.</span></span>
+    * <span data-ttu-id="18777-145">Nu bruger vi masseændringsfunktionen til at forøge beløbene i hvert efterfølgende niveau med en bestemt procentdel eller et beløb.</span><span class="sxs-lookup"><span data-stu-id="18777-145">Now we'll use the mass change function to increment the amounts in each subsequent level by a certain percentage or amount.</span></span> <span data-ttu-id="18777-146">I dette eksempel har hver lønklasse et 12,5% opslag mellem sine midtpunkter.</span><span class="sxs-lookup"><span data-stu-id="18777-146">In this example, each grade will have a 12.5% spread between their midpoints.</span></span>  
+7. <span data-ttu-id="18777-147">Vælg en indstilling i feltet Reguleringstype.</span><span class="sxs-lookup"><span data-stu-id="18777-147">In the Adjustment type field, select an option.</span></span>
+8. <span data-ttu-id="18777-148">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="18777-148">In the Adjustment amount field, enter a number.</span></span>
+9. <span data-ttu-id="18777-149">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-149">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="18777-150">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-150">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="18777-151">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-151">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="18777-152">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-152">In the list, find and select the desired record.</span></span>
+13. <span data-ttu-id="18777-153">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-153">Click Apply to grid.</span></span>
+14. <span data-ttu-id="18777-154">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-154">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="18777-155">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-155">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="18777-156">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-156">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="18777-157">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-157">Click Apply to grid.</span></span>
+18. <span data-ttu-id="18777-158">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-158">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="18777-159">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-159">In the list, find and select the desired record.</span></span>
+20. <span data-ttu-id="18777-160">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-160">Click Apply to grid.</span></span>
+21. <span data-ttu-id="18777-161">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-161">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="18777-162">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-162">Click Apply to grid.</span></span>
+    * <span data-ttu-id="18777-163">Nu skal vi bruge masseændringsfunktionen til at justere minimum og maksimumreferencepunkter for hvert niveau.</span><span class="sxs-lookup"><span data-stu-id="18777-163">Now we'll use the mass change function to adjust the Minimum and Maximum reference points for each level.</span></span> <span data-ttu-id="18777-164">I dette eksempel bruger vi et opslag med 50%, så minimumreferencepunktet reguleres -20% og maksimumopslaget bliver reguleret +20%.</span><span class="sxs-lookup"><span data-stu-id="18777-164">This example will use a 50% spread so the Minimum reference point will be adjusted -20% and the Maximum will be adjusted +20%.</span></span>  
+23. <span data-ttu-id="18777-165">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="18777-165">In the Adjustment amount field, enter a number.</span></span>
+24. <span data-ttu-id="18777-166">Indtast eller vælg en værdi i feltet Referencepunkt.</span><span class="sxs-lookup"><span data-stu-id="18777-166">In the Reference point field, enter or select a value.</span></span>
+25. <span data-ttu-id="18777-167">Markér eller fjern markeringen af alle rækker på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-167">In the list, mark or unmark all rows.</span></span>
+26. <span data-ttu-id="18777-168">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-168">Click Apply to grid.</span></span>
+27. <span data-ttu-id="18777-169">Indtast et tal i feltet Justeringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="18777-169">In the Adjustment amount field, enter a number.</span></span>
+28. <span data-ttu-id="18777-170">Indtast eller vælg en værdi i feltet Referencepunkt.</span><span class="sxs-lookup"><span data-stu-id="18777-170">In the Reference point field, enter or select a value.</span></span>
+29. <span data-ttu-id="18777-171">Markér eller fjern markeringen af alle rækker på listen.</span><span class="sxs-lookup"><span data-stu-id="18777-171">In the list, mark or unmark all rows.</span></span>
+30. <span data-ttu-id="18777-172">Klik på Anvend på gitter.</span><span class="sxs-lookup"><span data-stu-id="18777-172">Click Apply to grid.</span></span>
 

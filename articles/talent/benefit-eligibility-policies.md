@@ -1,7 +1,7 @@
 ---
 title: Politikker for frynsegodeberettigelse
 description: Denne artikel indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,48 +10,48 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: ae4be70058e61cdbc1d2b063b346b45b023eb9e9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ad179e505d045dc40898105e1cfd090daafa09a8
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303688"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "855956"
 ---
-# <a name="benefit-eligibility-policies"></a><span data-ttu-id="4a791-103">Politikker for frynsegodeberettigelse</span><span class="sxs-lookup"><span data-stu-id="4a791-103">Benefit eligibility policies</span></span>
+# <a name="benefit-eligibility-policies"></a><span data-ttu-id="3b1b3-103">Politikker for frynsegodeberettigelse</span><span class="sxs-lookup"><span data-stu-id="3b1b3-103">Benefit eligibility policies</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="4a791-104">Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.</span><span class="sxs-lookup"><span data-stu-id="4a791-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
+<span data-ttu-id="3b1b3-104">Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 
-<span data-ttu-id="4a791-105">Når du opretter fordele, kan du beslutte, hvilke fordele der er tilgængelige for hvilke medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="4a791-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="4a791-106">I følgende tabel vises eksempler på fordele, som du kan gøre tilgængelige for bestemte medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="4a791-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
+<span data-ttu-id="3b1b3-105">Når du opretter fordele, kan du beslutte, hvilke fordele der er tilgængelige for hvilke medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="3b1b3-106">I følgende tabel vises eksempler på fordele, som du kan gøre tilgængelige for bestemte medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
 
-| <span data-ttu-id="4a791-107">Frynsegode</span><span class="sxs-lookup"><span data-stu-id="4a791-107">Benefit</span></span>          | <span data-ttu-id="4a791-108">Hvem frynsegodet er tilgængeligt for</span><span class="sxs-lookup"><span data-stu-id="4a791-108">Who the benefit is available to</span></span> |
+| <span data-ttu-id="3b1b3-107">Frynsegode</span><span class="sxs-lookup"><span data-stu-id="3b1b3-107">Benefit</span></span>          | <span data-ttu-id="3b1b3-108">Hvem frynsegodet er tilgængeligt for</span><span class="sxs-lookup"><span data-stu-id="3b1b3-108">Who the benefit is available to</span></span> |
 |------------------|---------------------------------|
-| <span data-ttu-id="4a791-109">Sygesikring</span><span class="sxs-lookup"><span data-stu-id="4a791-109">Health insurance</span></span> | <span data-ttu-id="4a791-110">Alle medarbejdere</span><span class="sxs-lookup"><span data-stu-id="4a791-110">All employees</span></span>                   |
-| <span data-ttu-id="4a791-111">Mobiltelefon</span><span class="sxs-lookup"><span data-stu-id="4a791-111">Mobile phone</span></span>     | <span data-ttu-id="4a791-112">Salgsmedarbejdere, ledere</span><span class="sxs-lookup"><span data-stu-id="4a791-112">Sales staff, executives</span></span>         |
-| <span data-ttu-id="4a791-113">Parkeringskort</span><span class="sxs-lookup"><span data-stu-id="4a791-113">Parking passes</span></span>   | <span data-ttu-id="4a791-114">Ledere</span><span class="sxs-lookup"><span data-stu-id="4a791-114">Executives</span></span>                      |
+| <span data-ttu-id="3b1b3-109">Sygesikring</span><span class="sxs-lookup"><span data-stu-id="3b1b3-109">Health insurance</span></span> | <span data-ttu-id="3b1b3-110">Alle medarbejdere</span><span class="sxs-lookup"><span data-stu-id="3b1b3-110">All employees</span></span>                   |
+| <span data-ttu-id="3b1b3-111">Mobiltelefon</span><span class="sxs-lookup"><span data-stu-id="3b1b3-111">Mobile phone</span></span>     | <span data-ttu-id="3b1b3-112">Salgsmedarbejdere, ledere</span><span class="sxs-lookup"><span data-stu-id="3b1b3-112">Sales staff, executives</span></span>         |
+| <span data-ttu-id="3b1b3-113">Parkeringskort</span><span class="sxs-lookup"><span data-stu-id="3b1b3-113">Parking passes</span></span>   | <span data-ttu-id="3b1b3-114">Ledere</span><span class="sxs-lookup"><span data-stu-id="3b1b3-114">Executives</span></span>                      |
 
-<span data-ttu-id="4a791-115">Følgende komponenter bruges til at oprette politikker for frynsegodeberettigelse:</span><span class="sxs-lookup"><span data-stu-id="4a791-115">The following components in are used to create eligibility policies:</span></span>
+<span data-ttu-id="3b1b3-115">Følgende komponenter bruges til at oprette politikker for frynsegodeberettigelse:</span><span class="sxs-lookup"><span data-stu-id="3b1b3-115">The following components in are used to create eligibility policies:</span></span>
 
--   <span data-ttu-id="4a791-116">Typer politikregler</span><span class="sxs-lookup"><span data-stu-id="4a791-116">Policy rule types</span></span>
--   <span data-ttu-id="4a791-117">Politikker for frynsegodeberettigelse</span><span class="sxs-lookup"><span data-stu-id="4a791-117">Benefit eligibility policies</span></span>
+-   <span data-ttu-id="3b1b3-116">Typer politikregler</span><span class="sxs-lookup"><span data-stu-id="3b1b3-116">Policy rule types</span></span>
+-   <span data-ttu-id="3b1b3-117">Politikker for frynsegodeberettigelse</span><span class="sxs-lookup"><span data-stu-id="3b1b3-117">Benefit eligibility policies</span></span>
 
-<span data-ttu-id="4a791-118">Politikregeltyper definerer de forespørgselsparametre, der bruges til udvikling af specifikke politikregler.</span><span class="sxs-lookup"><span data-stu-id="4a791-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="4a791-119">Når du opretter politikregeltyper, kan du oprette politikker for frynsegodeberettigelse.</span><span class="sxs-lookup"><span data-stu-id="4a791-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="4a791-120">Ved hjælp af politikkerne kan du oprette en samling regler, der gælder for en eller flere juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="4a791-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="4a791-121">Inden for hver politik kan du se nogle af de politikregeltyper for frynsegodeberettigelse, som du oprettede tidligere.</span><span class="sxs-lookup"><span data-stu-id="4a791-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
+<span data-ttu-id="3b1b3-118">Politikregeltyper definerer de forespørgselsparametre, der bruges til udvikling af specifikke politikregler.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="3b1b3-119">Når du opretter politikregeltyper, kan du oprette politikker for frynsegodeberettigelse.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="3b1b3-120">Ved hjælp af politikkerne kan du oprette en samling regler, der gælder for en eller flere juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="3b1b3-121">Inden for hver politik kan du se nogle af de politikregeltyper for frynsegodeberettigelse, som du oprettede tidligere.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
 
-<span data-ttu-id="4a791-122">Du kan definere omfanget af reglen i politikken.</span><span class="sxs-lookup"><span data-stu-id="4a791-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="4a791-123">For eksempel, hvis du opretter en politikregeltype for frynsegodeberettigelse, som hedder **Leder**, kan du angive, hvad reglen er inden for denne politik.</span><span class="sxs-lookup"><span data-stu-id="4a791-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="4a791-124">I dette eksempel kan reglen angive, at enhver stilling, der indeholder ordet "leder", skal være omfattet af reglen.</span><span class="sxs-lookup"><span data-stu-id="4a791-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="4a791-125">Når du har defineret parametrene for reglen eller regler, der er inkluderet i politikken, kan du tildele en bestemt regel for frynsegodet.</span><span class="sxs-lookup"><span data-stu-id="4a791-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
+<span data-ttu-id="3b1b3-122">Du kan definere omfanget af reglen i politikken.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="3b1b3-123">For eksempel, hvis du opretter en politikregeltype for frynsegodeberettigelse, som hedder **Leder**, kan du angive, hvad reglen er inden for denne politik.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="3b1b3-124">I dette eksempel kan reglen angive, at enhver stilling, der indeholder ordet "leder", skal være omfattet af reglen.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="3b1b3-125">Når du har defineret parametrene for reglen eller regler, der er inkluderet i politikken, kan du tildele en bestemt regel for frynsegodet.</span><span class="sxs-lookup"><span data-stu-id="3b1b3-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="4a791-126">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="4a791-126">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="3b1b3-126">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="3b1b3-126">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="4a791-127">Definition og administration af et frynsegodeprogram</span><span class="sxs-lookup"><span data-stu-id="4a791-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
+[<span data-ttu-id="3b1b3-127">Definition og administration af et frynsegodeprogram</span><span class="sxs-lookup"><span data-stu-id="3b1b3-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
 
 
 
