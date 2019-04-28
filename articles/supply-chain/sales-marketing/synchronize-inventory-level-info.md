@@ -3,7 +3,7 @@ title: Synkronisere lagerniveauoplysninger fra Finance and Operations til Field 
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356777"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842550"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synkronisere lagerniveauoplysninger fra Finance and Operations til Field Service 
 
@@ -38,14 +38,14 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 Følgende skabelon og underliggende opgaver bruges til at synkronisere disponible lagerbeholdningsniveauer fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 
 **Skabelon i dataintegration**
-- Produktlager (Finance and Operations til Field Service)
+- Produktlager (Fin and Ops til Field Service)
   
 **Opgave i dataintegrationsprojekt**
 - Produktlager
 
 Følgende synkroniseringsopgaver kræves, før lagerniveauer kan synkroniseres:
-- Lagersteder (Finance and Operations til Field Service) 
-- Field Service-produkter med lagerenhed (Finance and Operations til Sales) 
+- Lagersteder (Fin and Ops til Field Service) 
+- Field Service-produkter med lagerenhed (Fin and Ops til salg) 
 
 ## <a name="entity-set"></a>Enhedssæt
 
@@ -80,6 +80,6 @@ Du kan anvende filtre i Avanceret forespørgsel og filtrering, så kun bestemte 
 
 ## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Produktlager (Finance and Operations til Field Service): Produktlager
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Produktlager (Fin and Ops til Field Service): produktlager
 
 [![Skabelontilknytning i dataintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

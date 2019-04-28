@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353810"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842716"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -93,7 +93,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 614 | Rediger kundeordre | Tilbagekald den valgte ordre, så den kan redigeres i POS. | Nej | Nej | Nej | Nej | Nej |
 | 615 | Rediger tilbud | Tilbagekald det valgte tilbud, så det kan redigeres i POS. | Nej | Nej | Nej | Nej | Nej |
 | 518 | Udgiftskonti | Registrer penge, der er fjernet fra pengeskuffen til lejlighedsvise udgifter. | Ja | Ja | Ja | Ja | Nej |
-| 919 | Udvidet logon | Tildele eller fjerne tilladelse til at logge på ved at scanne en stregkode eller føre et kort gennem en kortlæser. | Ja | Ja | Ja | Nej | Nej |
+| 919 | Udvidet logon | Tildele eller fjerne tilladelse til at logge på ved at scanne en stregkode eller føre et kort gennem en kortlæser. | Ja | Ja | Ja | Ja | Nr. |
 | 1201 | Kassebeholdning | Med denne handling kan brugeren føje flere penge til den aktuelle kasseskuffe eller det aktuelle skift. | Ja | Ja | Ja | Ja | Nej |
 | 1218 | Gennemtving oplåsning af ekstern enhed | Denne handling bruges internt af systemet til at låse op for eksterne POS-enheder. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 520 | Gavekortsaldo | Vis saldoen for et gavekort. | Ja | Ja | Nej | Nej | Nej |

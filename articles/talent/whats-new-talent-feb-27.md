@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b622276000c56a5af1bb258dbc3c6c4a56af4d20
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782822"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949891"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (27. februar 2019)
 
@@ -87,7 +87,7 @@ Det er almindeligt, at personer, der får ansættelse i en organisation, har en 
 
 ## <a name="known-issues"></a>Kendte problemer
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-for-apps-to-finance-and-operations"></a>Ændringer af Core HR-integrationsskabelonen (Talent Common Data Service for Apps til Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Ændringer af Core HR-integrationsskabelonen (Talent Common Data Service til Finance and Operations)
 Core HR-skabelonen er blevet opdateret til en "avanceret forespørgselsskabelon". Derfor er den avancerede forespørgsel som standard tilgængelig for projekter, der er oprettet ved hjælp af denne skabelon. Desuden bliver enhver standardtilknytningsfunktion kun vist i den avancerede forespørgselseditor. (Standardtilknytningsfunktioner vises som "FN" i tilknytningerne).
 
 Du kan finde flere oplysninger om tilknytningsfejl i [Nyheder eller ændringer i Dynamics 365 for Talent Core HR (14. december 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
@@ -100,19 +100,19 @@ Du kan opdatere den eksisterende skabelon ved at følge disse trin.
 
     - **Jobstillinger til stillinger:** Fjern denne tilknytning.
     - **Den overordnede tildelingsopgave Jobstillinger til stillinger:** Fjern denne tilknytning.
-    - **Jobstillinger til grundlæggende stilling:** Tilføj en ny tilknytning fra Common Data Service for Apps-enheden **Jobstillinger** til Finance and Operations-enheden **Grundlæggende stilling**. Flyt den til position 7 i rækkefølgen.
+    - **Jobstillinger til basisstilling:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Basisstilling**. Flyt den til position 7 i rækkefølgen.
 
         [![Tilknytningen Jobstillinger til grundlæggende stilling](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Jobstillinger til Stillingsoplysninger:** Tilføj en ny tilknytning fra Common Data Service for Apps-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingsoplysninger**. Flyt den til position 8 i rækkefølgen.
+    - **Jobstillinger til stillingens detaljer:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingens detaljer**. Flyt den til position 8 i rækkefølgen.
 
         [![Tilknytningen Jobstillinger til stillingsoplysninger](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Jobstillinger til Stillingsvarighed:** Tilføj en ny tilknytning fra Common Data Service for Apps-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingsvarighed**.
+    - **Jobstillinger til stillingens varighed:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingens varighed**.
 
         [![Tilknytningen Jobstillinger til Stillingsvarighed](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Jobstillinger til Stillingshierarkier:** Tilføj en ny tilknytning fra Common Data Service for Apps-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingshierarkier**. Vælg **Avanceret forespørgsel** at gøre din avancerede forespørgsel tilgængelig for projektet.
+    - **Jobstillinger til stillingshierarkier:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingshierarkier**. Vælg **Avanceret forespørgsel** at gøre din avancerede forespørgsel tilgængelig for projektet.
 
        [![Knappen Avanceret forespørgsel](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

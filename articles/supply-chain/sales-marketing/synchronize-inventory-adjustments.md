@@ -3,7 +3,7 @@ title: Synkronisere lageroverførsler og reguleringer fra Field Service til Fina
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere lagerreguleringer og overførsler fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 75181661c41d238cdc06ffbb6969a2efd7d88d46
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308362"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842409"
 ---
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Synkronisere lagerreguleringer fra Field Service til Finance and Operations
 
@@ -38,8 +38,8 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 Følgende skabelon og underliggende opgaver bruges til at synkronisere lagerreguleringer og overførsler fra Microsoft Dynamics 365 for Field Service til Microsoft Dynamics 365 for Finance and Operations.
 
 **Skabeloner i dataintegration**
-- Lagerregulering (Field Service til Finance and Operations)
-- Lageroverførsler (Field Service til Finance and Operations)
+- Lagerregulering (Field Service til Fin and Ops)
+- Lageroverførelser (Field Service til Fin and Ops)
 
 **Opgaver i dataintegrationsprojekterne**
 - Lagerreguleringer
@@ -71,11 +71,11 @@ De integrationslagerkladder, der genereres af integrationen, kan automatisk bogf
 
 Følgende illustration viser skabelontilknytningen i Dataintegration.
 
-### <a name="inventory-adjustment-field-service-to-finance-and-operations-inventory-adjustment"></a>Lagerregulering (Field Service til Finance and Operations): Lagerregulering
+### <a name="inventory-adjustment-field-service-to-fin-and-ops-inventory-adjustment"></a>Lagerregulering (Field Service til Fin and Ops): lagerregulering
 
 [![Skabelontilknytning i dataintegration](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>Lageroverførsel (Field Service til Finance and Operations): Lageroverførsel
+### <a name="inventory-transfer-field-service-to-fin-and-ops-inventory-transfer"></a>Lageroverførelse (Field Service til Fin and Ops): lageroverførelse
 
 [![Skabelontilknytning i dataintegration](./media/FSTrans1.png)](./media/FSTrans1.png)

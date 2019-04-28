@@ -3,7 +3,7 @@ title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363470"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975845"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 I dette emne beskrives, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 
@@ -47,6 +48,8 @@ Siden **Brugerindstillinger** indeholder flere systemindstillinger for den aktue
 - **Præferencer** – Vælg de standardværdier, der bruges, hver gang du åbner Finance and Operations. Disse værdier omfatter firmaet, den første side og standardvisnings- eller redigeringstilstanden. (Visnings-/redigeringstilstanden bestemmer, om en side er låst for visning eller åben for redigering, hver gang du åbner den). Denne fane indeholder også indstillinger for sproget, tidszonen samt dato-, klokkeslæts- og talformat. Endelig indeholder denne fane flere forskellige indstillinger, som varierer fra version til version.
 - **Firma** – Juster dit brugernavn og andre kontorelaterede indstillinger.
 - **Arbejdsgang** – Vælg indstillinger, der er relateret til arbejdsgangen.
+
+I tillæg til at modificere dine brugerindstillinger kan du også gennemse og slette dine brugerdata og personlige tilpasninger ved at klikke på knappen **Brugerdata**. Når du benytter programmet, lagres mange af de valg, du foretager dig, for at gøre det lettere for dig at bruge systemet fremadrettet. Fanen **Personlig tilpasning** giver dig i særlig grad mulighed for at gennemse og styre de personlige ændringer, du har foretaget på siderne i systemet. Billedforklaringerne til funktioner, pop op-vinduerne, der præsenterer dig for nye funktioner i produktet (tilgængelig i platformsopdatering 26), kan ligeledes nulstilles fra denne fane, således at du igen bliver notificeret om funktioner, du tidligere er stødt på.  
 
 ## <a name="implicit-personalizations"></a>Implicitte tilpasninger
 
@@ -160,7 +163,7 @@ Brugere, der har administratorrettigheder, kan også administrere tilpasninger f
 
 - **Anvend** – Du kan importere eller vælge en tilpasning for en eller flere brugere. For at anvende en tilpasning på en eller flere brugere skal du først vælge en rolle og brugere, der har denne rolle. Vælg derefter en eksisterende tilpasning, der skal anvendes på de brugere, du har valgt, eller importér en tilpasningsfil. Tilpasningen valideres og anvendes på alle de markerede brugere, næste gang de åbner den valgte side.
 - **Slet** – Du kan slette alle tilpasninger for en side eller et arbejdsområde for en eller flere brugere. Vælg først en side eller et arbejdsområde for at se en liste over de brugere, der har tilpasset siden eller området. Vælg de brugere, der skal have ryddet tilpasninger for siden eller arbejdsområdet, og vælg derefter **Ryd**. Alle tilpasninger, som de valgte brugere har anvendt på den valgte side eller det valgte arbejdsområde, slettes. Denne handling kan ikke fortrydes. Hvis der er gemt en tilpasning for siden eller arbejdsområdet, kan denne tilpasning dog importeres igen.
-- **Administration pr. bruger** – Marker en bruger for at få vist listen over sider, som han eller hun har tilpasset. Du kan derefter aktivere eller deaktivere den valgte brugers evne til at bruge personlige indstillinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for den valgte bruger.
+- **Administration pr. bruger** – Marker en bruger for at få vist listen over sider, som brugeren har tilpasset. Du kan derefter aktivere eller deaktivere den valgte brugers evne til at bruge personlige indstillinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for den valgte bruger. Du kan derudover nulstille billedforklaringer til funktioner for den valgte bruger, hvilket vil resultere i, at alle de pop op-vinduer, som introducerer nye funktioner, og som tidligere er blevet afvist, vises på ny næste gang brugeren støder på de pågældende funktioner.   
 - **System** - Du kan midlertidigt deaktivere alle tilpasninger for alle brugere i systemet. Når du gør det, slettes tilpasningerne. Alle sider nulstilles blot til deres standardtilstand for alle brugere. Hvis du senere aktiverer tilpasningen igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Tilpasning af lagerdimensioner

@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 80d62492d58a436c15fac82df0d000ab9efa6ea5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303806"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949937"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (6. december 2018)
 
@@ -135,7 +135,7 @@ I opgaven Arbejdere til arbejde skal følgende tilknytninger opdateres.
 
 Transformeringen af feltet Køn skal også opdateres. Vælg tilknytningstypen **fn** (funktion) for Køn, og opdater følgende værditilknytninger.
 
-| CDS-værdien | Finance and Operations-værdi | | ------------|------------------ -----------| | 75440000    | Mand                         | | 75440001    | Kvinde                       | | 75440002    | Ingen                         | | 75440003    | Ikke-specifik                  |
+| Common Data Service-værdi | Finance and Operations-værdi | | ------------|------------------ -----------| | 75440000    | Mand                         | | 75440001    | Kvinde                       | | 75440002    | Ingen                         | | 75440003    | Ikke-specifik                  |
 
 De opdaterede tilknytninger skal se ud som dette.
 

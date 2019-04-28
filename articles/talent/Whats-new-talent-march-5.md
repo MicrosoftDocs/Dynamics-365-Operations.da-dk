@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782821"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949799"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (5. marts 2019)
 
@@ -35,7 +35,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Talent
 
 ### <a name="extending-option-sets-in-attract"></a>Udvide grupperede indstillinger i Attract
 
-I Attract er der flere felter, som er grupperede indstillinger, i Common Data Service (CDS). Der er indført nye funktioner til udvidelse af grupperede indstillinger, startende med felterne **Årsag til afvisning**, **Medarbejdertype** og **Anciennitetstype**.
+I Attract er der adskillige felter, som er grupperede indstillinger, i Common Data Service. Der er indført nye funktioner til udvidelse af grupperede indstillinger, startende med felterne **Årsag til afvisning**, **Medarbejdertype** og **Anciennitetstype**.
 
 > [!IMPORTANT]
 > Funktionen til jobopslag på LinkedIn kræver brug af felterne **Medarbejdertype** og **Anciennitetstype** på siden **Jobdetaljer**. Standardværdierne i disse felter understøttes af LinkedIn og vises, når jobbet er opslået. Hvis du laver jobopslag på LinkedIn, og du ændrer de eksisterende værdier for disse felter med grupperede indstillinger, bliver jobbet opslået, men LinkedIn viser ikke de brugerdefinerede værdier i **Medarbejdertype** og **Anciennitetstype**.
@@ -70,8 +70,8 @@ Med denne ændring får lønfelterne nu de aktuelle standardværdier, når der a
 ### <a name="other-miscellaneous-bug-fixes"></a>Diverse andre fejlrettelser
 Andre mindre fejlrettelser er medtaget i denne version.
 
-### <a name="upgrade-to-cds-for-apps"></a>Opgradere til CDS for Apps
-Frister for at opgradere til CDS for Apps nærmer sig hurtigt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige forudsætninger for at opgradere i [Opgradere til Common Data Service for Apps](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Opgrader til Common Data Service
+Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 

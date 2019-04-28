@@ -3,7 +3,7 @@ title: Behandling af fastvægtprodukter med lokationsstyring
 description: I dette emne beskrives, hvordan du kan bruge arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor arbejde skal udføres på lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777266"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946427"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -97,7 +97,9 @@ Når der bruges sporing af fangstvægtkode, skal der altid oprettes en kode for 
 
 Når sporing af fastvægtkode ikke bruges, kan vægten registreres for hver dimensionsopsætning (f.eks. for hvert id og sporingsdimension). Vægten kan også registreres på basis af et samlet niveau, f.eks. fem id-numre (paller).
 
-For metoder til registrering af udgående vægt kan du angive, om vejningen udføres for de enkelte fastvægtenheder (dvs. pr. kasse), eller om vægten registreres ud fra det antal, der bliver plukket (for eksempel tre kasser). Bemærk, at for produktionslinjeplukprocessen bruges den gennemsnitlige vægt, hvis indstillingen **Ikke registreret** bruges.
+For metoder til registrering af udgående vægt kan du angive, om vejningen udføres for de enkelte fastvægtenheder (dvs. pr. kasse), eller om vægten registreres ud fra det antal, der bliver plukket (for eksempel tre kasser). Bemærk, at hvis indstillingen **Ikke registreret** anvendes, vil den gennemsnitlige vægt for produktionslinjeplukprocesserne og processerne for de interne bevægelse finde anvendelse.
+
+For at afholde lokationsstyringsplukprocesserne fra at registrere vægte, der resulterer i reguleringer af overskud/underskud for fastvægt, kan metoden for afvigelser i udgående vægt anvendes.
 
 ## <a name="supported-scenarios"></a>Understøttede scenarier
 
@@ -121,14 +123,12 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
  
 ### <a name="order-processing"></a>Ordrebehandling
 
-- Intern ordrebehandling understøttes ikke.
 - Oprettelse af Advance Shipping Notice (ASN/pakkestrukturer) understøtter ikke vægtoplysninger.
 - Ordreantallet skal vedligeholdes ud fra fangstvægtenheden.
  
 ### <a name="inbound-warehouse-processing"></a>Indgående lagerstedsbehandling
 
 - Modtagelse af id'er kræver, at der tildeles vægte ved registreringen, fordi vægtoplysninger ikke understøttes som en del af Advance Shipping Notice. Når der bruges fastvægtkodeprocesser, skal kodenummeret tildeles manuelt pr. fastvægtenhed.
-- Modtagelse af blandede id'er understøttes ikke for fastvægtprodukter.
  
 ### <a name="inventory-and-warehouse-operations"></a>Lager- og lokationshandlinger
 
@@ -169,7 +169,6 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andre begrænsninger og funktionsmåder for fastvægtproduktbehandling med lokationsstyring
 
-- Når fastvægtkoder registreres som en del af behandlingen af lagerstedsapps, kan brugeren ikke annullere arbejdsgangen.
 - Under plukprocesser, hvor brugeren ikke bliver bedt om at identificere sporingsdimensioner, udføres vægttildelingen ud fra den gennemsnitlige vægt. Dette sker, når f.eks. en kombination af sporingsdimensioner bruges på samme sted, og når der kun er en sporingsdimensionsværdi tilbage på stedet, efter at en bruger har behandlet pluk.
 - Når lageret er reserveret et fastvægtprodukt, der er konfigureret til lokationsstyringsprocesser, foretages reservationen ud fra den mindste vægt, der er defineret, selvom dette antal er det sidste antal til håndtering af beholdningen. Denne funktionsmåde adskiller sig fra funktionsmåden for varer, der ikke er konfigureret til lokationsstyringsprocesser.
 - Processer, der bruger vægten som en del af kapacitetsberegninger (bølgegrænser, maksimale arbejdspauser, containermaksimumværdier, lokalitetsbelastningskapaciteter osv.), bruger ikke den faktiske vægt af lageret. I stedet er processerne baseret på den fysiske håndteringsvægt, der er defineret for produktet.
@@ -193,3 +192,5 @@ Denne funktion for fastvægtkoder understøttes i øjeblikket kun som en del af 
 - Når containere genåbnes.
 - Når formularprodukter er færdigmeldt ved hjælp af lagerstedsappen.
 - Når transportlaster behandles ved hjælp af lagerstedsappen.
+
+En kode for fastvægt kan oprettes ved at anvende en proces i lagerstedsappen, en proces, der manuelt oprettes i formularen, eller ved at anvende en dataenhedsproces. Såfremt en kode for fastvægt tilknyttes en linje i et indgående kildedokument, såsom en linje i en indkøbsordre, registreres koden. Hvis linjen anvendes til udgående behandling. Bliver koden opdateret som værende afsendt.

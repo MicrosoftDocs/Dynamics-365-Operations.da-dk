@@ -1,9 +1,9 @@
 ---
 title: Oversigt over kreditorfakturaer
 description: Denne artikel indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329752"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975796"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikel indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester. 
 
-<a name="vendor-invoices"></a>Kreditorfakturaer
----------------
+## <a name="vendor-invoices"></a>Kreditorfakturaer
 
 En kreditorfaktura fra en indkøbsordre er en faktura, der er produceret, når produkter eller tjenesteydelser modtages i henhold til en indkøbsordre, der blev afgivet med en leverandør. Kreditorfakturaen indeholder et hoved og en eller flere linjer til varer eller tjenester. En kreditorfaktura afslutter cyklussen fra indkøbsordre til produktkvittering til kreditorfaktura. 
 
@@ -79,8 +79,15 @@ Du kan finde flere oplysninger under [Registrere kreditorfaktura og sammenligne 
 
 Du kan arbejde med flere fakturaer samtidig og bogføre dem alle på én gang. Hvis du skal oprette flere fakturaer, skal du bruge siden **Afventende kreditorfakturaer**. Hvis du skal bogføre og udskrive flere kreditorfakturaer, skal du bruge siden fakturagodkendelseskladde. Hvis du bruger fakturagodkendelseskladden, skal mindst én produktkvittering bogføres for indkøbsordren, og der skal bogføres en faktura for indkøbsordren i en indgangsbog. De økonomiske oplysninger for fakturaen stammer fra den faktura, der blev bogført i indgangsbogen.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Gendan kreditorfakturaer, der er i brug
 
-Du kan få flere oplysninger på:
+Når en kreditorfaktura anvendes, kan den ikke redigeres af en anden bruger. Fakturaens tilstand kan dog til tider indikere, at fakturaen er i brug, selv om den ikke redigeres på daværende tidspunkt. Programmet er f.eks. stoppet med at svare, mens en faktura blev redigeret, eller en bruger har måske utilsigtet ladet fakturaen stå åben i programmet.
+
+Du kan anvende siden **Gendan kreditorfakturaer** til at gendanne eller frigive kreditorfakturaer, der er blevet benyttet i mere end fire timer, så de kan redigeres. Du kan åbne denne side fra navigationen **Periodiske opgaver** eller en flise i arbejdsområdet **Indtastning af kreditorfaktura**. Når en faktura er blevet gendannet, vil det være muligt at redigere den fra siden **Kreditorfakturaer**.
+
+Du kan alene tilgå siden **Gendan kreditorfakturaer**, hvis du har fået tildelt sikkerhedsadgangspligterne og -rettighederne for **Gendan kreditorfakturaer i brug**. Derudover skal parametret **Tillad gendannelse af kreditorfaktura** på siden **Kreditorparametre** være slået til.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
 
  - [Konfigurere politikker for kreditorfakturaer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

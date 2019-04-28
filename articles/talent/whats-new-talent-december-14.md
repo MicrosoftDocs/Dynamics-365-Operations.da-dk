@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303662"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949845"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (14. december 2018)
 
@@ -65,7 +65,7 @@ Med denne ændring understøttes skuddage nu i Power BI.
 
 ### <a name="integration-between-core-hr-and-attract"></a>Integration mellem Core HR og Attract
 
-Der er foretaget en ændring, så den integration mellem Core HR og Attract, der er relateret til ansøgere, der skal ansættes, opdateres. For at gøre kandidater, der skal ansættes, synlige i **Personalestyring**-arbejdsområdet bruges følgende CDS for Apps-enheder (CDS 2.0):
+Der er foretaget en ændring, så den integration mellem Core HR og Attract, der er relateret til ansøgere, der skal ansættes, opdateres. For at gøre de kandidater, der skal ansættes, synlige i arbejdsområdet **Personalestyring** anvendes følgende Common Data Service-enheder:
 
 Jobansøgning
 - Statusårsag skal være indstillet til Tilbud accepteret
@@ -139,7 +139,7 @@ I opgaven Arbejdere til arbejde skal følgende tilknytninger opdateres.
 
 Transformeringen af feltet Køn skal også opdateres. Vælg tilknytningstypen **fn** (funktion) for Køn, og opdater følgende værditilknytninger.
 
-| CDS-værdi                   | Finance and Operations-værdi                     |
+| Common Data Service-værdi                   | Finance and Operations-værdi                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Mand                                             |
 | 75440001                    | Kvinde                                           |

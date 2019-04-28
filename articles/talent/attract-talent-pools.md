@@ -1,29 +1,29 @@
 ---
 title: Få fat i kandidater ved hjælp af talentpuljer
 description: I dette emne forklares, hvordan du kan oprette og konfigurere talentpuljer i Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303727"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949338"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Få fat i kandidater ved hjælp af talentpuljer
 
@@ -34,7 +34,7 @@ Rekrutteringsmedarbejdere og ansættelsesansvarlige kan organisere deres kandida
 
 ## <a name="create-and-share-a-talent-pool"></a>Oprette og dele en talentpulje
 
-Alle brugere, der har rollen som rekrutteringsmedarbejder, ansættelsesansvarlig eller Attract-administrator, kan oprette talentpuljer. Ejeren af en talentpulje kan også dele denne pulje med andre brugere, så brugergrupper, især rekrutteringsmedarbejdere, kan se på en delt pulje af kandidater.
+Alle brugere i rollen som rekrutteringsmedarbejder, ansættelsesansvarlig eller Attract-administrator kan oprette talentpuljer. Ejeren af en talentpulje kan også dele denne pulje med andre brugere, så brugergrupper, især rekrutteringsmedarbejdere, kan se på en delt pulje af kandidater.
 
 Bidragydere til en talentpulje kan få vist listen over kandidater i denne pulje. De kan også tilføje kandidater til puljen eller fjerne kandidater fra den.
 
@@ -44,7 +44,7 @@ Følg nedenstående trin for at oprette og dele en talentpulje.
 
     Fanen **Mine talentpuljer** viser alle de talentpuljer, du har adgang til, med oplysninger om hver. Oplysningerne omfatter ejer af puljen og antallet af kandidater i den.
 
-1. Vælg øverst til højre **+ Ny** for at åbne dialogboksen **Opret talentpuljer**.
+1. Vælg **Ny** øverst til højre på siden for at åbne dialogboksen **Opret talentpuljer**.
 1. Angiv et entydigt navn til talentpuljen.
 1. Du kan tilføje personer som bidragydere til puljen ved at finde deres navne ved hjælp af personvælgeren og derefter føje dem til listen. Du kan kun dele en talentpulje med brugere, der har en rolle som rekrutteringsmedarbejder, ansættelsesansvarlig eller Attract-administrator.
 1. Vælg **Tilføj** for at oprette talentpuljen.
@@ -78,26 +78,35 @@ Ejeren og bidragyderne til talentpuljer kan føje kandidater til talentpuljen, f
 
 ## <a name="search-and-view-candidate-profiles"></a>Søge efter og få vist kandidatprofiler
 
-Brugere af en talentpulje kan få vist en kandidats profil, vedkommendes LinkedIn-oplysninger, relaterede dokumenter eller hele kandidatens ansøgningshistorik. Du kan også søge i hele kandidatdatabasen efter en kandidat, der på et tidspunkt har ansøgt om et job i organisationen eller er føjet til en talentpulje.
+> [!NOTE] 
+> Denne funktion findes på nuværende tidspunkt i prøveversionen. Hvis du ønsker at prøve funktionen, skal du [slå den til i administratorindstillingerne i Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. Brug søgefeltet øverst under fanen **Mine talentpuljer** til at søge i hele kandidatdatabasen.
-1. Søg blandt forskellige profilattributter. Vælg søgeattributkategorien, opret en søgeforespørgsel, og vælg derefter højre pileknap (**-\>**) for at starte søgningen.
+Talentpuljer giver dig mulighed for at se en kandidats profil, vedkommendes oplysninger på LinkedIn, relaterede dokumenter og ansøgningshistorikken. Du kan søge i hele kandidatdatabasen blandt alle de kandidater, der er blevet tilføjet til en hvilken som helst talentpulje, herunder lukkede og aktive ansøgere.
 
-    Du kan søge efter kandidater efter deres navn, den organisation, de arbejder for, de færdigheder, de er mærket med, deres uddannelsesforløb, deres aktuelle stilling eller den grad, de har, hvis disse oplysninger er inkluderet i deres profil.
+>[!NOTE]
+> Når du tilføjer nye kandidater eller ansøgere, kan det tage op til 15 minutter, før de nye tilføjelser er blevet indekseret og fremgår af søgningen.
 
-    Du kan også oprette en forespørgsel, der bruger to eller flere af disse attributter som kriterier. Kombiner kriterierne ved hjælp af en **og**-operator.
+Med den forbedrede søgningsoplevelse kan du søge blandt alle kandidaters dokumenter og filtrere efter modtagere af sølvmedaljer, kilder, færdigheder, uddannelse og andet. I de forrige versioner var du nødt til at præcisere den enhed, du ønskede at anvende til din søgning. Attract kan nu søge på alle filer, der er relateret til kandidaterne, og rangere resultaterne.
 
-    Hvis nogen kandidater svarer til søgeforespørgslen, vises de i søgeresultaterne.
+1. For at starte en ny søgning i kandidatdatabasen skal du indtaste den tekst, du ønsker at søge efter, i søgefeltet under fanen **Talentpuljer**. 
 
-1. Hvis du vil indsnævre søgeresultaterne, kan du opdatere søgeforespørgslen ved hjælp af søgefeltet øverst.
+Du kan indtaste kandidatens navn eller andre egenskaber, du leder efter. Du kan adskille egenskaberne ved hjælp af mellemrum.
 
-    Du kan også bruge listen over Smart-filtre til højre. Disse Smart-filtre trækkes ind dynamisk, baseret på søgeresultaterne.
+Du kan begrænse dine resultater ved enten at ændre din søgeforespørgsel eller ved at anvende smartfiltrene i venstre side.
 
-    Søgeresultaterne viser de 20 bedste færdigheder, skoler, organisation og osv., der oftest findes på listen over kandidater. Du kan tilføje flere filtre for disse attributter for at indsnævre søgeresultaterne endnu mere.
+De forskellige egenskaber, der passer til din søgeforespørgsel, fremhæves i søgningsresultaterne. Vælg alle de kandidater, som du er interesseret i, for at få vist deres profil.
 
-1. Når du har identificeret en kandidat, skal du vælge rækken for vedkommende for at få vist hans eller hendes profil.
+### <a name="syntax-highlights"></a>Fremhævning af syntaks 
 
-Alle brugere har en fælles oversigt over kandidatprofiler. Vælg rækken for en kandidat i et sæt søgeresultater eller en talentpulje for at få vist vedkommendes profil. Fanen **Profil** viser oplysninger om færdigheder, arbejdserfaring og uddannelse, som kandidaten har opdateret fra karriereportalen.
+| Operatør | Brug                                                      | Eksempel              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Ved at søge på delstrenge kan du få vist alle poster | Input: Mi\* <br></br> Resultat: alle poster, der indeholder felter, som starter med "Mi" såsom Microsoft, Micro systems, Midtown Enterprises eller Middleton <br></br>Input: \* <br></br> Resultat: alle poster i databasen |
+| “”       | Søger efter et præcist match                                | Input: “Microsoft” <br></br> Resultat: alle poster, der indeholder "Microsoft"                    |
+
+>[!WARNING]
+> Undlad at deaktivere relevanssøgning for din Common Data Service-forekomst. Dette vil deaktivere søgeoplevelsen i Attract.
+
+Alle brugere har en fælles oversigt over kandidatprofiler. Fanen **Profil** viser alle oplysninger om færdigheder, arbejdserfaring og uddannelse, som kandidaten har oplyst via karriereportalen i dennes ansøgninger.
 
 - Du kan få vist kontaktoplysninger for kandidaten. Du kan også redigere eller opdatere de oplysninger, som du har brug for, ved hjælp af knappen **Rediger detaljer**.
 
@@ -109,7 +118,7 @@ Alle brugere har en fælles oversigt over kandidatprofiler. Vælg rækken for en
 
     For at få vist et dokument skal du vælge dokumentnavnet på listen over dokumenter. Du kan få vist Microsoft Word-dokumenter i ansøgningen ved hjælp af Microsoft Office 365. Du kan også hente dokumenterne til din lokale computer ved hjælp af indstillingen **Hent** for hvert dokument.
 
-- Fanen **LinkedIn** viser kandidatens LinkedIn-oplysninger. For at kunne bruge denne fane skal du oprette forbindelse til din LinkedIn-konto i brugerindstillingerne, og der skal oprettes forbindelse til dit miljøs LinkedIn Recruiter. Du kan finde flere oplysninger i [Angive kilde ved hjælp af LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Fanen **LinkedIn** viser kandidatens LinkedIn-oplysninger. For at kunne bruge denne fane skal du oprette forbindelse til din LinkedIn-konto i brugerindstillingerne, og der skal oprettes forbindelse til dit miljøs LinkedIn Recruiter. Du kan finde flere oplysninger under [Rekruttering med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Føje kandidater fra en talentpulje til et job
 
@@ -117,7 +126,7 @@ Fra søgeresultaterne eller talentpuljen kan du skubbe en kandidat til et aktivt
 
 1. Find kandidaten ved hjælp af søgefunktionen, og åbn derefter vedkommendes profil. Du kan også åbne talentpuljen fra fanen **Mine talentpuljer**, søge efter kandidaten i din talentpulje og derefter åbne vedkommendes profil.
 
-1. På kandidatens profilsiden skal du vælge **+ Føj til job** øverst til højre. 
+1. På kandidatens profilsiden skal du vælge **Tilføj til job** øverst til højre. 
      
      Der vises en liste over job, som du tilhører ansættelsesteamet for som enten rekrutteringsmedarbejder eller ansættelsesansvarlig.
 

@@ -3,7 +3,7 @@ title: Ruter og operationer
 description: Dette emne indeholder en beskrivelse af ruter og operationer.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333340"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850662"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -59,11 +59,10 @@ Hvis du aktiverer de mere komplekse rutenetværk i produktionsstyringsparametren
 
 [![Rutenetværk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Bemærkninger:**
-
--   Hver operation kan kun have en efterfølgende operation, og hele ruten skal afsluttes med en enkelt operation.
--   Der er ingen garanti for, at flere operationer, der har samme efterfølgende operation (f.eks. operationerne 30 og 40 i den foregående illustration), faktisk køres parallelt. Tilgængeligheden og kapaciteten af ressourcerne kan lægge begrænsninger på den måde, operationerne planlægges.
--   Du kan ikke bruge 0 (nul) som operationsnummeret. Dette nummer er reserveret og bruges til at angive, at den sidste operation i ruten ikke har nogen efterfølgende operation.
+> [!NOTE]
+> -   Hver operation kan kun have en efterfølgende operation, og hele ruten skal afsluttes med en fælles operation.
+> -   Dette er ingen sikkerhed for, at flere operationer, der har samme efterfølgende operation (f.eks. operationerne 30 og 40 i den foregående illustration), faktisk køres parallelt. Tilgængeligheden og kapaciteten af ressourcerne kan lægge begrænsninger på den måde, operationerne planlægges.
+> -   Du kan ikke bruge 0 (nul) som operationsnummeret. Dette nummer er reserveret og bruges til at angive, at den sidste operation i ruten ikke har nogen efterfølgende operation.
 
 ### <a name="parallel-operations"></a>Parallelle operationer
 
@@ -122,7 +121,8 @@ Du kan også angive, at en operationsrelation er specifik for et sted. På denne
 
 Operationsrelationer giver dig masser af fleksibilitet, når du definerer dine ruter. Desuden hjælper muligheden for at definere standardegenskaber med til at reducere mængden af stamdata, som du skal vedligeholde. Men denne fleksibilitet betyder også, at du skal være opmærksom på den kontekst, du ændrer en operationsrelation i.  
 
-**Bemærk:** Da de operationelle egenskaber gemmes i operationsrelationer pr. operation pr. rute, har alle forekomster af den samme operation (f.eks. samling) samme opstillingstid, operationstid, ressourcekrav osv. Hvis to forekomster af en operation derfor skal udføres i den samme rute, men har forskellige operationstider, skal du oprette to forskellige operationer, f.eks. Samling1 og Samling2.
+> [!NOTE]
+> Da de operationelle egenskaber gemmes i operationsrelationer pr. operation for den enkelte rute, har alle forekomster af den samme operation (f.eks. samling) samme opstillingstid, operationstid og ressourcekrav. Hvis to forekomster af en operation derfor skal udføres i den samme rute, men har forskellige operationstider, skal du oprette to separate operationer, f.eks. Samling1 og Samling2.
 
 ### <a name="modifying-product-specific-routes"></a>Ændring af produktspecifikke ruter
 
@@ -132,7 +132,8 @@ På siden **Rute** side, kan du kan ændre operationsegenskaberne for operatione
 
 Du kan også manuelt oprette en operation, der er specifik for en rute og et frigivet produkt ved hjælp af funktionen **Kopiér og rediger relation**.  
 
-**Bemærk:** Hvis du tilføjer en ny operation til en rute på siden **Rute** side, oprettes der kun en operationsrelation for det aktuelt frigivne produkt. Hvis ruten derfor også bruges til at fremstille andre frigivne produkter, findes der ingen gældende operationsrelationen for disse frigivne produkter, og ruten kan ikke længere bruges til disse frigivne produkter.
+> [!NOTE]
+> Hvis du tilføjer en ny operation til en rute på siden **Rute**, oprettes der kun en operationsrelation for det aktuelt frigivne produkt. Hvis ruten derfor også bruges til at fremstille andre frigivne produkter, findes der ingen gældende operationsrelationen for disse frigivne produkter, og ruten kan ikke længere bruges til disse frigivne produkter.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Vedligehold operationsrelationer pr. rute
 
@@ -228,17 +229,32 @@ Hvis du ikke angiver en operationsressource eller ressourcegruppe som en del af 
 -   **Batch** – En batchkapacitet beregnes ved hjælp af oplysninger fra operationsrelationen. Antallet af batches, og derfor procestiden, kan beregnes baseret på ordreantallet.
 -   **Ressourcebatch** – Denne indstilling er grundlæggende den samme som indstillingen **Batch**. Men beregningen omfatter feltet **Batchkapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig.
 
+### <a name="set-up-route-groups"></a>Konfigurer rutegrupper
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+Du kan definere rutegrupper og opsætningen for den hertil hørende rute eller jobtyperne under **Produktionskontrol > Opsætning > Ruter > Rutegrupper**. For hver rute/jobtype i rutegruppen kan du vælge eller nulstille følgende indstillinger:
 
-[Styklister og formler](bill-of-material-bom.md)
+- **Aktivering** - Vælg denne indstilling for at aktivere beregninger for og planlægning af den valgte jobtype og for at modtage jobtilbagemelding, når du kører jobplanlægning. Du er nødt til at vælge denne indstilling for at aktivere jobtypen og dernæst vælge resten af indstillingerne for den pågældende jobtype. Hvis du ikke vælger at aktivere, vil den pågældende jobtype ikke blive slået til, uanset om du vælger de øvrige indstillinger. 
+- **Jobstyring** - Vælg denne indstilling for at medtage jobtypen i jobstyring, når du kører jobplanlægning. 
+- **Arbejdstid** - Vælg denne indstilling for at planlægge jobtypen i henhold til arbejdstidskalenderen, der er defineret for operationsressourcen, ellers anvendes den gregorianske kalender. Arbejdstiden kan enten planlægges i henhold til den gregorianske kalender eller den angivne arbejdskalender. Hvis du markerer denne indstilling, bliver planlægningen baseret den angivne arbejdstidskalender. Derudover planlægges job af jobtypen fra midnat på den dato, der er angivet som jobbets startdato.
+- **Kapacitet** - Vælg denne indstilling for at reservere kapacitet til jobtypen, når du kører jobplanlægning. Hvis du vælger denne indstilling, reserveres der kapacitet, når der køres finplanlægning for den valgte jobtype. Det giver dig en oversigt over, hvilke jobtyper i hver rutegruppe der bruger operationsressourcer. Disse ressourcer skal eksempelvis være angivet som flaskehalse, såfremt der er tale om en situation, hvor tørreressourcer er flaskehalsressourcer. Tørreoperationer, der er tilknyttet jobtyper i køtid, vil reservere tørreressourcer. 
 
-[Omkostningsarter, der bruges i produktionsrute](../cost-management/cost-categories-used-production-routings.md)
+Du skal aktivere eller deaktivere det for hver jobtype. Når du deaktivere det, vil ingen andre elementer i opsætningen (jobstyring, arbejdstid og kapacitet) blive taget i betragtning, da jobtypen ikke er aktiv. 
 
-[Ressourceegenskaber](resource-capabilities.md)
+Blandt jobtyperne finder du "Overlap". Overlap gør det muligt at udføre forskellige jobs på samme tid. Når jobs overlapper, kan ressourcerne anvendes, men de kan ikke reserveres til det pågældende job.
+Derfor påvirker de øvrige indstillinger (jobstyring, arbejdstid og kapacitet) ikke rutegruppen, når der vælges "Aktivering" for "Overlap. 
 
-[Oversigt over elektroniske signaturer](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> I forbindelse med opgraderingen af versioner støder du muligvis på følgende fejl **Der opstod en CLR-fejl ved start af planlægningsprogrammet**. Hvis du får denne fejl, skal du gå til siden **Rutegrupper** og nulstille indstillingerne **Jobstyring**, **Arbejdstid** og **Kapacitet** for alle de ruter, hvor du har aktiveret **Overlap**. 
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Styklister og formler](bill-of-material-bom.md)
+
+- [Omkostningsarter, der bruges i produktionsrute](../cost-management/cost-categories-used-production-routings.md)
+
+- [Ressourceegenskaber](resource-capabilities.md)
+
+- [Oversigt over elektroniske signaturer](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

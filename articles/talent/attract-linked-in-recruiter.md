@@ -1,7 +1,7 @@
 ---
-title: Forsyning med LinkedIn Recruiter
+title: Rekruttering med LinkedIn Recruiter
 description: Dette emne indeholder oplysninger om brug af maskinel indlæring til at få anbefalinger om job og jobkandidater.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,39 +10,39 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ac7a302e5bf589beb2b560b0ff5818e90c67139
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303685"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859568"
 ---
-# <a name="sourcing-with-linkedin-recruiter"></a>Forsyning med LinkedIn Recruiter
+# <a name="sourcing-with-linkedin-recruiter"></a>Rekruttering med LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
-LinkedIn er verdens største talentdatabase og ofte det primære system, som rekrutteringsmedarbejdere bruger til at finde og kommunikere med kandidater og til kandidatkilde til de stillinger, som rekrutteringsmedarbejdere ønsker at besætte. LinkedIn Recruiter-integration med Dynamics 365 for Talent: Attract gør det lettere for brugerne at ansætte og holde dataene synkroniseret mellem de to systemer.
+LinkedIn er verdens største talentdatabase og ofte det primære system, som rekrutteringsmedarbejdere bruger til at finde og kommunikere med kandidater og til kandidatkilde til de stillinger, som rekrutteringsmedarbejdere ønsker at besætte. Integrationen af LinkedIn Recruiter med Dynamics 365 for Talent: Attract gør det nemmere for brugerne at ansætte nye medarbejdere og sørge for, at dataene mellem de to systemer er synkroniserede.
 
 > [!NOTE]
-> Du skal bruge tilføjelsesprogrammet til omfattende ansættelser og LinkedIn Recruiter-poster for at kunne bruge LinkedIn Recruiter-integration med Attract.
+> Du skal bruge tilføjelsesprogrammet Omfattende ansættelser og LinkedIn Recruiter-pladser for at kunne anvende LinkedIn Recruiter-integration med Attract.
 
-## <a name="set-up-linkedin-recruiter-with-attract"></a>Konfigurere LinkedIn Recruiter med Attract 
+## <a name="set-up-linkedin-recruiter-with-attract"></a>Konfigurer LinkedIn Recruiter med Attract 
 
-Før du kan bruge funktionerne i LinkedIn Recruiter, skal du konfigurere adgang på kontrakt- eller firmaniveau i din Attract-forekomst. For at gennemføre konfigurationen skal du samarbejde med den bruger, der er administrator på din LinkedIn Recruiter-kontrakt. Udfør følgende trin for at konfigurere LinkedIn Recruiter med Attract.
+Før du kan bruge egenskaberne i LinkedIn Recruiter, skal du konfigurere adgangen på kontrakts- eller virksomhedsniveau i din Attract-forekomst. For at gennemføre konfigurationsprocessen skal du arbejde sammen med den bruger, der er administrator på din LinkedIn Recruiter-kontrakt. Fuldfør følgende fremgangsmåde for at konfigurere LinkedIn Recruiter med Attract.
 
 1.  Log på Attract som administrator, og gå til **Administratorindstillinger**.
 
 2.  Klik i venstre rude på fanen **Integration af LinkedIn**.
 
-[![Attract-administratorvisning til start af LinkedIn Recruiter-integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+[![Attract-administratorvisning for at starte integrationen af LinkedIn Recruiter](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
 3.  Klik på **Opret forbindelse** for at starte opsætningen og blive hjulpet gennem LinkedIn-logonprocessen.
 
@@ -50,13 +50,13 @@ Før du kan bruge funktionerne i LinkedIn Recruiter, skal du konfigurere adgang 
 
 5.  LinkedIn-widgetten indlæses nu i dine administratorindstillinger med listen over integrationer vist. Under **Recruiter System Connect** skal du klikke på **Request** (Anmod om).
 
-[![Attract-administratorvisning til anmodning om LinkedIn Recruiter-integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+[![Attract-administratorvisning for at anmode om integration af LinkedIn Recruiter](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
-6.  Når Attract har anmodet om integration, vises meddelelsen som **Partner ready** (Partnerklar), og integrationen kan aktiveres fra **Recruiter Admin settings** (Recruiter-administratorindstillinger). Hvis du kan se **Notify partner** (Informer partner) på denne side, skal du vente et øjeblik, klikke på **Notify partner** og derefter opdatere siden. Der bør nu stå **Partner ready** (Partnerklar).
+6.  Når Attract har anmodet om integration, vises meddelelsen som **Partner ready** (Partnerklar), og integrationen kan aktiveres fra **Recruiter Admin settings** (Recruiter-administratorindstillinger). Hvis du kan se **Notify partner** (Informer partner) på denne side, skal du vente et øjeblik, klikke på **Notify partner** (Informer partner) og derefter opdatere siden. Der bør nu stå **Partner ready** (Partnerklar).
 
 [![Attract-administratorvisning til angivelse af Attract-siden af anmodninger, der er fuldført](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
 
-For at fuldføre det næste trin skal du have administratorrettigheder på din LinkedIn Recruiter-kontrakt.
+For at fuldføre det næste trin skal du have administratorrettigheder til din LinkedIn Recruiter-kontrakt.
 
 7.  Log på LinkedIn ved hjælp af administratorkontoen, og gå til LinkedIn Recruiter øverst til højre. 
 
@@ -68,15 +68,15 @@ Attract-systemet vises med et par indstillinger, der kan aktiveres.
 
 10. Slå det ønskede adgangsniveau til fra dine **Admin-ATS**-indstillinger i LinkedIn Recruiter.
 
-[![Aktiver Attract-integration fra LinkedIn Recruiter-administratorvisning](./media/EnableRSC.png)](./media/EnableRSC.png)
+[![Slå integration af Attract til fra administratorvisning i LinkedIn Recruiter](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 12. Gå tilbage til Attract-administratorindstillingerne, og vælg fanen **LinkedIn Integration**. Du kan nu se LinkedIn-widgetindlæsningen, som viser **Enabled** (Aktiveret) og det valgte adgangsniveau aktiveret.
 
-[![LinkedIn Recruiter integration fuldført](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+[![LinkedIn Recruiter-integration er fuldført](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
-## <a name="using-linkedin-recruiter-capabilities"></a>Bruge LinkedIn Recruiter-funktioner
+## <a name="using-linkedin-recruiter-capabilities"></a>Anvendelse af egenskaberne i LinkedIn Recruiter
 
-Når LinkedIn Recruiter-funktionerne er aktiveret af Attract-administratoren, er de tilgængelige for ansættelsesansvarlige og rekrutteringsmedarbejdere. Du kan bruge disse funktioner ved at oprette forbindelse til din LinkedIn-konto under **Brugerindstillinger**. Flere funktioner bliver tilgængelige, når der er forbindelse til både administrator- og brugerindstillinger.
+Når egenskaberne i LinkedIn Recruiter er aktiveret af Attract-administratoren, er de tilgængelige for de ansættelsesansvarlige og rekrutteringsmedarbejderne. Du kan bruge disse funktioner ved at oprette forbindelse til din LinkedIn-konto under **Brugerindstillinger**. Flere funktioner bliver tilgængelige, når der er forbindelse til både administrator- og brugerindstillinger.
 
 ### <a name="in-ats-profile-widget"></a>In-ATS-profilwidget
 
@@ -95,7 +95,7 @@ Mens kandidatforsyningen pågår i LinkedIn, kan du eksportere kandidaten med 1 
 
 1.  Opret jobbet, tildel de relevante roller, og aktivér jobbet.
 
-2.  Når jobbet er aktiveret, kan du gå til LinkedIn Recruiter.
+2.  Gå til LinkedIn Recruiter, når jobbet er aktiveret.
 
 3.  Find den kandidat, du søger efter, og gå til vedkommendes profil.
 
@@ -107,13 +107,13 @@ Mens kandidatforsyningen pågår i LinkedIn, kan du eksportere kandidaten med 1 
 
 ### <a name="in-ats-indicator"></a>In-ATS indicator 
 
-Når du bruger LinkedIn Recruiter, kan du spore, om en kandidat har ansøgt om andre job i organisationen, se på, hvor de er i forskellige faser af jobansøgninger, og se feedback og kommentarer fra Attract i LinkedIn Recruiter.
+Når du bruger LinkedIn Recruiter, kan du følge med i, om en kandidat har søgt andre jobs i organisationen, se, hvor de befinder sig i jobansøgningernes forskellige faser, samt gennemse tilbagemeldinger og kommentarer fra Attract i LinkedIn Recruiter.
 
 1.  Åbn LinkedIn Recruiter, og find den kandidatprofil, du leder efter.
 
 2.  Rul ned for at få vist sektionen **In-ATS** i kandidatens profil.
 
-3.  Du kan bruge denne widget til at få vist alle de oplysninger om kandidaten, der findes i Attract, i LinkedIn Recruiter-visningen.
+3.  Du kan bruge denne widget til at få vist alle de oplysninger om kandidaten, der findes i Attract, fra LinkedIn Recruiter-visningen.
 
 4.  Vælg fanen **Jobs & Statuses** for at få vist job, som de er en del af, den seneste status, og hvordan de har rykket i forhold til hvert job.
 
@@ -122,22 +122,22 @@ Når du bruger LinkedIn Recruiter, kan du spore, om en kandidat har ansøgt om a
 6.  Vælg fanen **Notes** for at få vist noter, der er hentet for denne ansøger i Attract.
 
 > [!NOTE]
-> Kandidat- og programdata synkroniseres ikke med LinkedIn Recruiter, hvis kandidaten ikke har passeret kandidatstadiet.
+> Kandidat- og ansøgningsdata synkroniseres ikke med LinkedIn Recruiter, hvis kandidaten ikke har passeret kandidatemnestadiet.
 
 ### <a name="inmail-history"></a>InMail-historik
 
-LinkedIn InMail-historikken er tilgængelig på kontraktniveau i LinkedIn Recruiter. Når den er aktiveret, kan du få vist hele InMail-historikken for kandidaten. Du kan også se, hvem fra din organisation der har udvekslet InMail med kandidaten, men du ikke kan få vist meddelelserne mellem dem.
+LinkedIn InMail-historikken er tilgængelig i LinkedIn Recruiter med adgang på kontraktniveau. Når den er aktiveret, kan du få vist hele InMail-historikken for kandidaten. Du kan også se, hvem fra din organisation der har udvekslet InMail med kandidaten, men du ikke kan få vist meddelelserne mellem dem.
 
 Hvis du vil se InMail-historik, skal du gå til en kandidats profil, gå til fanen **LinkedIn** og rulle til bunden af siden for at få vist historikken. Du kan få vist historik for InMail, hvis du har haft en diskussion med kandidaten. Meddelelserne fra InMail synkroniseres med Attract med få timers mellemrum.
 
 ### <a name="notes-history"></a>Oversigt over noter 
 
-LinkedIn Notes-historikken er tilgængelig på kontraktniveau i LinkedIn Recruiter. Når den er aktiveret, kan du få vist de noter, der er hentet om kandidaten fra forskellige rekrutteringsmedarbejdere fra din organisation.
+LinkedIn-noterne er tilgængelige i LinkedIn Recruiter med adgang på kontraktniveau. Når den er aktiveret, kan du få vist de noter, der er hentet om kandidaten fra forskellige rekrutteringsmedarbejdere fra din organisation.
 
-Hvis du vil se Notes-historikken, skal du gå til en kandidats profil, gå til fanen **LinkedIn** og rulle til bunden af siden for at få vist historikken. Du kan få vist alle noter om kandidaten fra LinkedIn Recruiter.
+Hvis du vil se Notes-historikken, skal du gå til en kandidats profil, gå til fanen **LinkedIn** og rulle til bunden af siden for at få vist historikken. Du kan se alle noterne om kandidaten i LinkedIn Recruiter.
 
 ### <a name="inmail-stub-profile"></a>InMail-stubprofil
 
-InMail-stubprofilen er tilgængelig på kontraktniveau i LinkedIn Recruiter. Hvis kandidaterne accepterer at dele deres LinkedIn-profiler med enhver bruger i din organisation, kan du spore kandidaterne i Attract, og der bliver oprettet en ny kandidatpost for hver kandidat. Du kan få vist kandidatens e-mailadresse, hvis kandidaten allerede findes i systemet med en e-mailadresse eller har valgt at dele sin adresse med rekrutteringsmedarbejderen.
+InMail-stubprofilen er tilgængelig i LinkedIn Recruiter med adgang på kontraktniveau. Hvis kandidaterne accepterer at dele deres LinkedIn-profiler med enhver bruger i din organisation, kan du spore kandidaterne i Attract, og der bliver oprettet en ny kandidatpost for hver kandidat. Du kan få vist kandidatens e-mailadresse, hvis kandidaten allerede findes i systemet med en e-mailadresse eller har valgt at dele sin adresse med rekrutteringsmedarbejderen.
 
 For at få vist listen over kandidater skal du gå til **Talentpuljer** for at få vist en systemoprettet LinkedIn-talentpulje. Denne talentpulje indeholder listen over kandidater og deres stubprofiler som modtaget fra LinkedIn med kandidatens fornavn og efternavn. Kandidatens e-mail-id vises, hvis kandidaten har valgt at dele sin e-mailadresse.

@@ -1,26 +1,26 @@
 ---
 title: Konfigurere lønintegration mellem Talent og Dayforce
 description: Dette emne forklarer, hvordan du kan konfigurere integration mellem Microsoft Dynamics 365 for Talent og Ceridian Dayforce, så du kan behandle en lønkørsel.
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
+ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303709"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898438"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønintegrationen mellem Talent og Dayforce
 
@@ -357,6 +357,9 @@ Hvis du genererer løn for medarbejdere i USA og Canada, skal følgende elemente
 
 - Der kræves afdelinger til stillinger.
 - Bærere skal angives som økonomiske dimensioner og skal være det første element i standardstrengen for økonomisk dimension.
+
+> [!NOTE] 
+> Du kan konfigurere Talent til at kræve, at der angives en afdeling for stillinger. For at gøre dette skal du gå til **Personalets delte stillinger > Stillinger > Kræv afdelinger for stillinger**. Det anbefales, at denne indstilling gennemtvinges i forbindelse med integrationen.
 
 ### <a name="job-types"></a>Jobtyper
 

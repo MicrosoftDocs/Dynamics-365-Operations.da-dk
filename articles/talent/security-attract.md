@@ -1,7 +1,7 @@
 ---
 title: Sikkerheds- og rollestyring i Attract
 description: Dette emne indeholder oplysninger om rollesikkerhed i Microsoft Dynamics 365 for Talent - Attract.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 9c0f9d3304b1b15aa84fd1a296267d606bf9c59d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789691"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993685"
 ---
 # <a name="security-and-role-management-in-attract"></a>SIkkerheds- og rollestyring i Attract
 
@@ -70,6 +70,16 @@ Alle brugere, der har en Microsoft Azure Active Directory (Azure AD) konto i org
 
 Brugere, der er tildelt rollen Skrivebeskyttet have skrivebeskyttet adgang til alle data i Attract-miljøet. De kan dog ikke oprette eller redigere data.
 
+## <a name="find-out-which-roles-you-have"></a>Find ud af, hvilke roller du har
+
+1.  I Attract skal du klikke på spørgsmålstegnet (**?**) i øverste højre hjørne af siden.
+
+2.  Klik på **Om**.
+
+    Det vil fremgå af det vindue, der vises, hvilke roller du har i Attract:
+
+    ![Se din licenstype til Attract](media/attract-license-types.png)
+    
 ## <a name="delegated-roles"></a>Delegerede roller
 
 For hvert job, de er i ansættelsesteamet for, kan rekrutteringsmedarbejdere og ansættelsesansvarlige udpege en eller flere delegerede for sig selv. De kan dog ikke udpege delegerede for andre personer i ansættelsesteamet.

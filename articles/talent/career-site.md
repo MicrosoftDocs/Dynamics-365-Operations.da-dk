@@ -1,29 +1,29 @@
 ---
 title: Funktioner for karrierewebsteder i Attract
 description: Denne artikel indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Attract.
-author: josaw1
+author: hasrivas
 manager: AnnBe
-ms.date: 02/12/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 087ab4034a1e601e7f3514c77d56ef54b0c5c52d
-ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
+ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "389954"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898925"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funktioner for karrierewebsteder i Attract
 
@@ -43,15 +43,15 @@ For at angive værdierne for følgende elementer skal brugeren logge på Attract
 
 -   **Organisationslogo** - Et billede af organisationens logo vises øverst til venstre på karrierewebstedet. Hvis kandidaterne vælger logobilledet, kommer de til en side over alle ledige job.
 
-    >   [!NOTE] 
-    >   Logobilledet, der vises på karrierewebstedet, har en fast højde på 20 pixel (px). Det billede, du føjer til Administration, skaleres, så det passer i størrelsen. Afhængigt af billedet kan bredden evt. blive ændret.
+    > [!NOTE] 
+    > Logobilledet, der vises på karrierewebstedet, har en fast højde på 20 pixel (px). Billedet, du tilføjer under administration, skaleres, så det passer i størrelsen. Afhængigt af billedet kan bredden evt. blive ændret.
  
 For at angive værdierne for følgende elementer skal brugeren logge på Attract som administrator, vælge **Administration** i menuen **Indstillinger** og derefter vælge fanen **Administration af karrierewebsted**.
 
 -   **Optimering af søgemaskine** – Når denne indstilling er aktiveret, kan der søges i alle offentlige job, der opslås på Attract-karrierewebstedet, ved hjælp af søgemaskiner som Bing og Google.
 
-    >   [!NOTE] 
-    >   Der kan være en forsinkelse fra denne indstilling aktiveres, til søgeresultater vises, afhængigt af hvilken søgemaskine du bruger.
+    > [!NOTE] 
+    > Der kan være en forsinkelse fra denne indstilling aktiveres, til søgeresultater vises, afhængigt af hvilken søgemaskine du bruger.
          
 ## <a name="career-site-urls"></a>URL-adresser til karrierewebsteder
 
@@ -81,15 +81,17 @@ Kandidaterne har følgende logonmuligheder for et Attract-karrierewebsted:
 
     -   Microsoft Azure Active Directory (Azure AD)
 
-Azure AD-logon er kun beregnet til interne kandidater. Derfor fungerer det kun for interne kandidater, der bruger deres firmas Azure AD-legitimationsoplysninger. F.eks. ønsker en kandidat, der aktuelt er medarbejder hos Contoso, Ltd, at ansøge om et job i en ikke-relateret virksomhed, Alpine Ski House. I dette tilfælde kan medarbejderen ikke logge på, hvis han eller hun forsøger at bruge sine Azure AD-legitimationsoplysninger fra Contoso Ltd.
+Azure AD-logon er kun beregnet til interne kandidater. Derfor fungerer det kun for interne kandidater, der bruger deres firmas Azure AD-legitimationsoplysninger. F.eks. ønsker en kandidat, der aktuelt er medarbejder hos Contoso, Ltd, at ansøge om et job i en ikke-relateret virksomhed, Alpine Ski House. I dette tilfælde kan medarbejderen ikke logge på, hvis han eller hun forsøger at bruge sine Azure AD-legitimationsoplysninger fra Contoso Ltd. 
+
+Kandidater skal logge på ved hjælp af Azure AD, hvis det job de kigger på eller ansøger om, er angivet som værende udelukkende internt.
 
 ## <a name="create-and-maintain-a-profile"></a>Oprette og vedligeholde en profil
 
 Når kandidater har logget på karrierewebstedet, kan de vælge **Min profil** på navigationslinjen øverst på siden for at oprette og vedligeholde deres profil.
 Profilen indeholder personlige oplysninger, oplysninger om arbejdserfaring og uddannelse, dokumenter, links og oplysninger om færdigheder. Når en profil er oprettet, kan den bruges til at ansøge om job, som kandidaten er interesseret i. Profiler hjælper også Attract med at anbefale de rigtige job til kandidater.
 
->   [!NOTE]
->   Hvis en kandidat bruger et e-mail-id til at logge på ved hjælp af en af godkendelsesudbyder, der er angivet ovenfor, anvendes standardkontaktens e-mail-id, der er knyttet til profilen. Id'et kan dog ændres når som helst og er helt uafhængigt af det første id. Attract bruger altid det kontakt-e-mail-id'et, der skal knyttes til din profil, til al e-mailkommunikation.
+> [!NOTE]
+> Hvis en kandidat bruger et e-mail-id til at logge på ved hjælp af en af godkendelsesudbyder, der er angivet ovenfor, anvendes standardkontaktens e-mail-id, der er knyttet til profilen. Id'et kan dog ændres når som helst og er helt uafhængigt af det første id. Attract bruger altid det kontakt-e-mail-id'et, der skal knyttes til din profil, til al e-mailkommunikation.
 
 ## <a name="find-the-right-job"></a>Finde det rette job
 
@@ -97,13 +99,38 @@ På joblistesiden kan kandidaterne søge efter et bestemt job ved at indtaste s�
 
 Kandidaterne kan også se en række anbefalede job på karrierewebstedet. Hvilke job der anbefales til en kandidat, afhænger af kandidatens tidligere ansøgninger, profil og CV'er.
 
->   [!NOTE] 
->   Jobanbefalinger vises kun, hvis der er opslået mindst 10 job på karrierewebstedet, og hvis kandidaten har fuldført en profil.
+> [!NOTE] 
+> Jobanbefalinger vises kun, hvis der er opslået mindst 10 job på karrierewebstedet, og hvis kandidaten har fuldført en profil.
+
+Interne kandidater kan også se, hvem den ansættelsesansvarlige og/eller rekrutteringsmedarbejderen for et job er, i tilfælde af at de ønsker at kontakte de pågældende medlemmer af ansættelsesteamet. Eksterne kandidater kan derimod ikke se medlemmerne af ansættelsesteamet ved nogen som helst jobs.
+
+## <a name="contact-the-hiring-team"></a>Kontakt ansættelsesteamet
+Alene interne kandidater kan kontakte ansættelsesteamet. Denne begrænsning gælder for alle jobs, uanset om de kun er til interne ansøgere, eller de er blevet slået op offentligt.
+
+Kandidaterne ønsker muligvis at kontakte ansættelsesteamet for at udtrykke deres interesse i et opslået job eller lære mere om det. De kan kontakte alle de oplyste medlemmer af ansættelsesteamet (den ansættelsesansvarlige eller rekrutteringsmedarbejdere). De kan endvidere vælge at vedhæfte et CV til beskeden, eller de kan vælge et eksisterende CV, som de tidligere har uploadet som en del af deres profil.
+
+Når den interne kandidat har valgt, hvilke medlemmer af ansættelsesteamet denne ønsker at kontakte, sender Attract en e-mail til de pågældende personer på kandidatens vegne. Samtidig hermed tilføjes kandidatens profil til stadiet **Kandidatemne**, såfremt dette stadie er tilgængeligt for det pågældende job. På **Kandidatemne**-stadiet kan rekrutteringsmedarbejdere eller de ansættelsesansvarlige se de kandidater, der har kontaktet dem. De kan også se kandidaternes profiler og opfordre potentielle kandidater til at ansøge.
+
+Kandidaterne kan søge et job, som de allerede har kontaktet medlemmer af ansættelsesteamet omkring. Når kandidaterne har ansøgt, kan de ikke længere kontakte ansættelsesteamet via karrierewebstedet.
 
 ## <a name="apply-for-jobs"></a>Ansøge om job
 
-Når kandidaterne har fundet det rigtige job, kan de ansøge ved hjælp af knappen **Ansøg** på siden med **Jobdetaljer**. På dette tidspunkt kan ansøgerne enten oprette en ny profil eller gennemse oplysningerne i deres eksisterende profil.
+Når kandidaterne har fundet det rigtige job, kan de ansøge ved hjælp af knappen **Ansøg** på siden med **Jobdetaljer**. På dette tidspunkt kan ansøgerne enten oprette en ny profil eller gennemse oplysningerne i deres eksisterende profil.
 De kan også overføre et CV efter behov og derefter sende jobansøgningen.
+
+### <a name="enable-applying-for-jobs-with-linkedin-profiles"></a>Gør det muligt at søge jobs med LinkedIn-profiler
+
+Du kan gøre det nemt for kandidaterne at søge dine stillinger ved at konfigurere Attract til at give dem mulighed for at søge via LinkedIn.
+
+> [!NOTE] 
+> Du skal have en eller flere rekrutteringslicenser fra LinkedIn, før du kan give kandidaterne mulighed for at ansøge via LinkedIn.
+
+1. Log på Attract som administrator.
+2. Vælg knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne af siden, og vælg dernæst **Administration**.
+3. Vælg fanen **LinkedIn-integration**, og opret forbindelse til en LinkedIn Recruiter-konto.
+4. I afsnittet **LinkedIn Recruiter System Connect -integration** skal du under indstillingen **Ansøg via LinkedIn** vælge **Aktiver**.
+
+Når du har aktiveret indstillingen, kan kandidater ansøge ved at anvende deres eksisterende LinkedIn-profildata. Når kandidaterne ansøger ved at vælge knappen **Ansøg via LinkedIn**, anmodes de om at godkende med LinkedIn, såfremt de ikke allerede er logget ind. Efter de har godkendt, erstatter deres LinkedIn-profil alle de eksisterende profildata, der fremgår af ansøgningssiden. Kandidaterne kan redigere deres oplysninger efter behov og derefter indsende ansøgningen. Såfremt en kandidat navigerer væk fra siden uden at søge jobbet, opdateres deres profildata ikke i Attract.
 
 ## <a name="check-application-status"></a>Kontrollere ansøgningsstatus
 
