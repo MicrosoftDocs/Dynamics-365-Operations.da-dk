@@ -1,7 +1,7 @@
 ---
-title: Talent vises ikke sammen med Microsoft Dynamics 365-apps (CDS1.0)
+title: Talent vises ikke sammen med Microsoft Dynamics 365-apps (Common Data Service 1.0)
 description: I dette emne beskrives, hvad du skal gøre, hvis kunden ikke kan se Microsoft Dynamics 365 for Talent-appen mellem Microsoft Dynamics 365-apps.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
@@ -9,26 +9,26 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32ae0ab807e953bd811a557e6878b9bee79d293c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ad5add2b572ccb6bff175806b965f63b53986152
+ms.sourcegitcommit: 45b79d1e587e03f5cde2766cdec4eaa7a2a897a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303769"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "949776"
 ---
-# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-cds10"></a>Talent vises ikke sammen med Microsoft Dynamics 365-apps (CDS1.0)
+# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Talent vises ikke sammen med Microsoft Dynamics 365-apps (Common Data Service 1.0)
 
 [!include [banner](includes/banner.md)]
 
-**Afgang**
+**Udsted**
 
 Kunden ikke kan finde Microsoft Dynamics 365 for Talent-appen mellem Microsoft Dynamics 365-appsene.
 

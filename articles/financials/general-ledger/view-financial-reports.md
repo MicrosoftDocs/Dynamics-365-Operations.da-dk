@@ -3,7 +3,7 @@ title: Vise økonomirapporter
 description: I dette emne beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791435"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894582"
 ---
 # <a name="view-financial-reports"></a>Vise økonomirapporter
 
@@ -46,12 +46,11 @@ Hvis du vil åbne en rapport, skal du vælge rapportnavnet. Første gang en rapp
 Hvis dataene er budgetdata, kan du vælge at åbne budgetkontoposter. For at lukke et af niveauerne i rapporten og vende tilbage til det sted, hvor du startede, kan du enten trykke på Esc-tasten eller klikke på knappen **Luk** (**X**) i øverste højre hjørne.
 
 ## <a name="change-report-options"></a>Ændre rapportindstillinger
-Du kan ændre rapportdato, anvende attribut- og dimensionsfiltre eller ændre budgetscenariet for en rapport af typen **Faktisk vs. budget**. Klik i handlingsruden på **Rapportindstillinger**, og følg derefter et eller flere af disse trin:
+Du kan anvende attribut- og dimensionsfiltre eller ændre budgetscenariet for en rapport af typen **Faktisk vs. budget**. Klik i handlingsruden på **Rapportindstillinger**, og følg derefter et eller flere af disse trin:
 
--   Hvis du vil ændre basisperioden og basisår i en rapport, skal du vælge basisperiode og et basisår og derefter klikke på **OK**.
 -   Du kan anvende attributfiltre til en rapport ved at vælge **Tilføj et attributfilter**. Vælg attributten, skriv attributværdien, og klik derefter på **OK**. Hvis du f.eks. vælger attributten **Kontokategori**, skal du angive **SALG** som attributværdi. Hvis du vil fjerne et attributfilter, skal du klikke på **Ryd**.
 -   Du kan anvende dimensionsfiltre på en rapport ved at vælge **Tilføj et attributfilter**. Vælg dimensionen, og derefter enten skriv dimension-ID'et, eller vælg dimensionen på listen. Hvis du vil fjerne et dimensionsfilter, skal du klikke på **Ryd**.
--   Hvis du vil ændre scenariet i en rapport af typen **Faktisk vs. budget**, Vælg et nyt scenario, og klik derefter på **OK**. Hvis det valgte scenarie er for et andet år, skal du sørge for at basisåret. Hvis det aktuelle scenario f.eks. er for FY2015, og du vælger et nyt scenario, der er for FY2016, skal du ændre basisåret til **2016**.
+-   Hvis du vil ændre scenariet i en rapport af typen **Faktisk vs. budget**, Vælg et nyt scenario, og klik derefter på **OK**. Hvis det valgte scenarie er for et andet regnskabsår, fremkommer der ingen resultater. Hvis eksempelvis en rapport genereres for regnskabsåret 2015, og det aktuelle scenarie ligeledes er for regnskabsåret 2015, men det nye scenarie der vælges, er for regnskabsåret 2016, fremkommer der ingen resultater. Hvis der er behov for et nyt scenarie for et andet regnskabsår, skal du generere en ny version af rapporten for det regnskabsår, der er relateret til det pågældende scenarie.
 
 Når du klikker på **OK**, anvendes alle de indstillinger, du har valgt til rapporten. Hvis du beslutter, at du ikke vil anvende de valgte indstillinger, skal du klikke på **Annuller**.
 

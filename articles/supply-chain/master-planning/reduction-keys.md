@@ -1,6 +1,6 @@
 ---
-title: Reduktionsnøgler
-description: Denne artikel indeholder eksempler på, hvordan du konfigurerer en reduktionsnøgle. Den indeholder oplysninger om de forskellige indstillinger for reduktionsnøglen og resultaterne af hver. Du kan bruge en reduktionsnøgle til at definere, hvordan du kan reducere budgetbehov.
+title: Prognosereduktionsnøgler
+description: Dette emne indeholder eksempler på, hvordan du konfigurerer en reduktionsnøgle. Den indeholder oplysninger om de forskellige indstillinger for reduktionsnøglen og resultaterne af hver. Du kan bruge en reduktionsnøgle til at definere, hvordan du kan reducere budgetbehov.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/28/2019
@@ -19,52 +19,83 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
-ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
+ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
+ms.sourcegitcommit: a95ccf4cee8757c5fb2442a2aaeb45b1e33b6492
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "770910"
+ms.lasthandoff: 04/14/2019
+ms.locfileid: "993038"
 ---
-# <a name="reduction-keys"></a>Reduktionsnøgler
+# <a name="method-used-to-reduce-forecast-requirements"></a>Metode, der er brugt til at reducere prognosebehovet
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder eksempler på, hvordan du konfigurerer en reduktionsnøgle. Den indeholder oplysninger om de forskellige indstillinger for reduktionsnøglen og resultaterne af hver. Du kan bruge en reduktionsnøgle til at definere, hvordan du kan reducere budgetbehov.
+Dette emne indeholder oplysninger om de forskellige metoder, der anvendes til at reducere prognosekrav. Det omfatter eksempler på de enkelte metoders resultater. Det beskriver endvidere, hvor du opretter, konfigurerer og anvender en prognosereduktionsnøgle. Visse metoder anvender en prognosereduktionsnøgle til at reducere prognosekrav.
 
-<a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Eksempel 1: Budgetreduktionsprincip for Procent - reduktionsnøgle
----------------------------------------------------------------
+## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metoder, der anvendes til at reducere prognosekrav.
+
+Når du inkluderer en prognose i en masterplan, kan du vælge, hvordan prognosekravene skal reduceres, når den faktiske efterspørgsel inddrages.
+
+For at inkludere en prognose i en masterplan og vælge den metode, der skal anvendes til at reducere prognosekravene, skal du gå til **Varedisponering \> Opsætning \> Planer \> Masterplaner**. Vælg en prognosemodel i feltet **Prognosemodel**. I feltet **Metode, der anvendes til at reducere prognosekrav** skal du vælge en metode. Følgende indstillinger er tilgængelige:
+
+- Ingen
+- Procent – reduktionsnøgle
+- Transaktioner – reduktionsnøgle
+- Transaktioner – dynamisk periode
+
+I de følgende afsnit finder du flere oplysninger om hver indstilling.
+
+### <a name="none"></a>Ingen
+
+Hvis du vælger **Ingen**, reduceres prognosekravene ikke i forbindelse med behovsplanlægningen. I dette tilfælde opretter varedisponeringen de planlagte ordrer for at opfylde det forventede behov (prognosekrav). Disse planlagte ordrer indeholder det foreslåede antal uafhængigt af andre behovstyper. Hvis der eksempelvis indløber salgsordrer, opretter varedisponeringen yderligere planlagte ordrer for at opfylde salgsordrene. Antallet af prognosekrav reduceres ikke.
+
+### <a name="percent--reduction-key"></a>Procent – reduktionsnøgle
+
+Hvis du vælger **Procent - reduktionsnøgle** reduceres prognosekravene i henhold til de procentandele og perioder, som er defineret af reduktionsnøglen. I dette fælde opretter varedisponeringen de planlagte ordrer, såfremt antallet beregnes i henhold til forventet antal × reduktionsnøgle for hver periode. Hvis der er andre behovstyper, opretter varedisponeringen ligeledes planlagte ordrer for at opfylde disse.
+
+#### <a name="example-percent--reduction-key"></a>Eksempel: procent – reduktionsnøgle
 
 Dette eksempel viser, hvordan en reduktionsnøgle reducerer efterspørgselsprognosebehovet i henhold til de procenter og tidsperioder, der er defineret i reduktionsnøglen.
 
-1. På siden **Reduktionsnøgler** skal du angive følgende linjer.
+I dette eksempel skal du medtage følgende behovsprognose i en masterplan.
 
-   | Byttepenge | Enhed  | Procent |
-   |--------|-------|---------|
-   |   1    | Måned |   100   |
-   |   2    | Måned |   75    |
-   |   3    | Måned |   50    |
-   |   4    | Måned |   25    |
+| Måned    | Behovsprognose |
+|----------|-----------------|
+| Januar  | 1.000           |
+| Februar | 1.000           |
+| Marts    | 1.000           |
+| April    | 1.000           |
 
+På siden **Reduktionsnøgler** skal du konfigurere følgende linjer.
 
-2. Knyt reduktionsnøglen til varedisponeringsgruppen.
-3. Vælg **Procent - reduktionsnøgle** i feltet **Reduktionsprincip** på siden **Behovsplaner**.
-4. Opret en efterspørgselsprognose på 1000 enheder pr. måned.
+| Forskydning | Enhed  | Procent |
+|--------|-------|---------|
+| 1      | Måned | 100     |
+| 2      | Måned | 75      |
+| 3      | Måned | 50      |
+| 4      | Måned | 25      |
 
-Hvis du kører hovedplanlægning pr. 1. januar, forbruges efterspørgselsprognosebehovet i overensstemmelse med den procentdel, som du konfigurerer på siden **Reduktionsnøgler**. Følgende behovsantal overføres til behovsplanen.
+Du tildeler reduktionsnøglen til varens dækningsgruppe. Dernæst vælger du **Procent - reduktionsnøgle** på siden **Masterplaner** i feltet **Metode, der anvendes til at reducere prognosekrav**.
 
-| Måned                | Antal krævede enheder |
-|----------------------|---------------------------|
-| Januar              | 0                         |
-| Februar             | 250                       |
-| Marts                | 500                       |
-| April                | 750                       |
-| Maj-december | 1.000                     |
+Hvis du i dette tilfælde kører prognoseplanlægningen den 1. januar, forbruges kravene til behovsprognosen i overensstemmelse med den procentdel, du har konfigureret på siden **Reduktionsnøgler**. Følgende behovsantal overføres til behovsplanen.
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Eksempel 2: Posteringer – reduktionsnøgle for budgetreduktionsprincip
+| Måned                | Planlagt ordreantal | Udregning    |
+|----------------------|------------------------|----------------|
+| Januar              | 0                      | = 0 % × 1.000   |
+| Februar             | 250                    | = 25 % × 1.000  |
+| Marts                | 500                    | = 50 % × 1.000  |
+| April                | 750                    | = 75 % × 1.000  |
+| Maj-december | 1.000                  | = 100 % × 1.000 |
+
+### <a name="transactions--reduction-key"></a>Transaktioner – reduktionsnøgle
+
+Hvis du vælger **Transaktioner - reduktionsnøgle** reduceres prognosekravene af de transaktioner, som finder sted i løbet af de perioder, der er defineret af reduktionsnøglen.
+
+#### <a name="example-transactions--reduction-key"></a>Eksempel: transaktioner – reduktionsnøgle
+
 Dette eksempel viser, hvordan de faktiske ordrer, der forekommer i de perioder, der er defineret i reduktionsnøglen, reducerer efterspørgselsprognosebehovet.
 
--   Vælg **Posteringer - reduktionsnøgle** i feltet **Reduktionsprincip** på siden **Behovsplaner**.
+I dette eksempels skal du vælge **Transaktioner - reduktionsnøgle** i feltet **Metode, der anvendes til at reducere prognosekrav** på siden **Masterplaner**.
 
 Der findes følgende salgsordrer pr. 1. januar.
 
@@ -75,7 +106,7 @@ Der findes følgende salgsordrer pr. 1. januar.
 | Marts    | 451                      |
 | April    | 119                      |
 
-Hvis du bruger samme efterspørgselsprognose på 1.000 enheder pr. måned anvendes, overføres følgende behovsantal til behovsplanen.
+Såfremt du anvender den samme behovsprognose på 1.000 enheder pr. måned, som blev benyttet i det forrige eksempel, overføres følgende krævede antal til masterplanen.
 
 | Måned                | Antal krævede enheder |
 |----------------------|---------------------------|
@@ -85,56 +116,114 @@ Hvis du bruger samme efterspørgselsprognose på 1.000 enheder pr. måned anvend
 | April                | 881                       |
 | Maj-december | 1.000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Posteringer – reduktionsprincip for dynamisk budgetperiode
-I de fleste tilfælde konfigureres systemer, så posteringer reducerer efterspørgselsprognose inden for specifikke budgetperioder: uger, måneder og så videre. Disse perioder er defineret i reduktionsnøglen. Men tiden mellem to linjer i behovsprognosen kan også *omfatte* en periode.
+### <a name="transactions--dynamic-period"></a>Transaktioner – dynamisk periode
 
-1. Opret en behovsprognose for følgende datoer og antal.
+Hvis du vælger **Transaktioner - dynamisk periode**, reduceres prognosekravene med de faktiske ordretransaktioner, der finder sted i løbet af den dynamiske periode. Den dynamiske periode dækker de aktuelle budgetdatoer og slutter ved starten af det næste budget. I dette tilfælde opretter varedisponeringen de planlagte ordrer for at opfylde det forventede behov (prognosekrav). Når de faktiske ordretransaktioner indløber, reduceres prognosekravene dog. De faktiske transaktioner forbruger dele af prognosekravene.
 
-   | Dato       | Behovsprognose |
-   |------------|-----------------|
-   | 1. januar  | 1.000           |
-   | 5. januar  | 500             |
-   | 12. januar | 1.000           |
+Når denne indstilling bruges, forekommer følgende funktionsmåde:
 
-   I dette budget er der ikke en klar periode mellem budgetdatoerne: mellem første og anden dato er der et interval på fire dage, og mellem den anden og tredje dato er det et interval på syv dage. Disse forskellige intervaller er dynamiske perioder.
-2. Opret salgsordrelinjer på følgende måde.
+- Der stilles ikke krav om reduktionsnøgler, og de finder ej heller anvendelse. 
+- Hvis prognosen reduceres helt, bliver prognosekravene for den aktuelle prognose 0 (nul).
+- Hvis der ikke er noget fremtidigt budget, bliver budgetbehovet fra det sidst angivne budget reduceret.
+- Tidshorisonter medtages i beregningen af budgetreduktionen.
+- Positive dage medtages i beregningen af budgetreduktionen.
+- Hvis de faktiske ordreposteringer overstiger budgetbehovet, overføres de resterende posteringer ikke til den næste budgetperiode.
 
-   | Dato                             | Salgsordremængde |
-   |----------------------------------|----------------------|
-   | 15. december forrige år | 500                  |
-   | 3. januar                        | 100                  |
-   | 10. januar                       | 200                  |
+#### <a name="example-1-transactions--dynamic-period"></a>Eksempel 1: transaktioner – dynamisk periode
 
-Budgettet reduceres på følgende måde:
+Her er et enkelt eksempel, som viser, hvordan metoden **Transaktioner - dynamisk periode** fungerer.
 
--   Den første salgsordre er ikke inden for en periode, så det reducerer ikke et budget.
--   Den anden salgsordre ligger mellem d. 1-5. januar, så det vil reducere budgettet for den 1. januar med 100.
--   Den tredje salgsordre ligger mellem d. 5-12. januar, så det vil reducere budgettet for den 5. januar med 200.
+I dette eksempel skal du medtage følgende behovsprognose i en masterplan.
 
-Der oprettes følgende ordreforslaget for at imødekomme budgettet.
+| Dato       | Behovsprognose |
+|------------|-----------------|
+| 1. januar  | 1.000           |
+| 1. februar | 500             |
 
-| Dato for behovsprognose | Reduceret antal |
-|----------------------|------------------|
-| 1. januar            | 900              |
-| 5. januar            | 300              |
-| 12. januar           | 1.000            |
+Du kan ligeledes oprette følgende salgsordrer.
 
-Her er en oversigt over reduktionen **Posteringer - dynamisk periode**:
+| Dato        | Salgsordremængde |
+|-------------|----------------------|
+| 15. januar  | 500                  |
+| 15. februar | 100                  |
 
--   Budgetbehovet reduceres via de faktiske ordreposteringer, der forekommer i den dynamiske periode. Den dynamiske periode dækker de aktuelle budgetdatoer og slutter ved starten af det næste budget.
--   Til denne metode hverken bruges eller kræves en reduktionsnøgle.
--   Når denne indstilling bruges, forekommer følgende funktionsmåde:
-    -   Hvis budgettet reduceres helt, bliver budgetbehovet for det aktuelle budget 0 (nul).
-    -   Hvis der ikke er noget fremtidigt budget, bliver budgetbehovet fra det sidst angivne budget reduceret.
-    -   Tidshorisonter medtages i beregningen af budgetreduktionen.
-    -   Positive dage medtages i beregningen af budgetreduktionen.
-    -   Hvis de faktiske ordreposteringer overstiger budgetbehovet, overføres de resterende posteringer ikke til den næste budgetperiode.
+I så fald oprettes følgende planlagte ordrer.
 
+| Dato for behovsprognose | Mængde | Forklaring                           |
+|--------------------- |----------|---------------------------------------|
+| 1. januar            | 800      | Prognosekrav (=1.000 – 200) |
+| 15. januar           | 200      | Krav til salgsordrer             |
+| 1. februar           | 600      | Prognosekrav (=1.000 – 400) |
+| 15. februar          | 400      | Krav til salgsordrer             |
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+#### <a name="example-2-transactions--dynamic-period"></a>Eksempel 2: transaktioner – dynamisk periode
+
+I de fleste tilfælde konfigureres systemerne, således at transaktionerne reducerer behovsprognosen i specifikke prognoseperioder: uger, måneder osv. Disse perioder er defineret i reduktionsnøglen. Men tiden mellem to linjer i behovsprognosen kan også *omfatte* en periode.
+
+I dette eksempel skal du oprette en behovsprognose for følgende datoer og antal.
+
+| Dato       | Behovsprognose |
+|------------|-----------------|
+| 1. januar  | 1.000           |
+| 5. januar  | 500             |
+| 12. januar | 1.000           |
+
+Bemærk, at der i denne prognose ikke er en tydelig periode mellem prognosedatoerne. Mellem første og anden dato er der et interval på fire dage, og mellem den anden og tredje dato er der et interval på syv dage. Disse intervaller er dynamiske perioder.
+
+Du kan ligeledes oprette følgende salgsordrelinjer.
+
+| Dato                             | Salgsordremængde |
+|----------------------------------|----------------------|
+| 15. december forrige år | 500                  |
+| 3. januar                        | 100                  |
+| 10. januar                       | 200                  |
+
+I så fald reduceres prognosen på følgende måde:
+
+- Da den første salgsordre ikke indgår i nogen periode, reducerer den ikke prognoserne.
+- Da den anden salgsordre ligger mellem den 1. og 5. januar, vil den reducere prognosen for den 1. januar med 100.
+- Da den tredje salgsordre ligger mellem den 5. og 12. januar, vil den reducere prognosen for den 5. januar med 200.
+
+Derfor oprettes følgende planlagte ordrer.
+
+| Dato for behovsprognose             | Mængde | Forklaring                                                         |
+|----------------------------------|----------|---------------------------------------------------------------------|
+| 15. december forrige år | 500      | Krav til salgsordrer                                            |
+| 1. januar                        | 900      | Prognosekrav for perioden 1. til 5. januar (= 1.000 – 100) |
+| 3. januar                        | 100      | Krav til salgsordrer                                            |
+| 5. januar                        | 300      | Prognosekrav for perioden 5. til 10. januar (= 500 – 200)  |
+| 12. januar                       | 1.000    | Prognosekrav for perioden 12. januar til slut                      |
+
+## <a name="create-and-set-up-a-forecast-reduction-key"></a>Opret og konfigurer en prognosereduktionsnøgle
+
+En prognosereduktionsnøgle anvendes af metoderne **Transaktioner - reduktionsnøgle** og **Procent - reduktionsnøgle** til at reducere prognosekrav. Følg følgende fremgangsmåde for at oprette og konfigurere en reduktionsnøgle:
+
+1. Gå til **Varedisponering \> Opsætning \> Dækning \> Reduktionsnøgler**.
+2. Vælg **Ny** eller tryk på **Ctrl+N** for at oprette en reduktionsnøgle.
+3. I feltet **Reduktionsnøgle** indtastes en unik identifikator for prognosereduktionsnøglen. Dernæst indtastes et navn i feltet **Navn**. 
+4. Fastsæt perioderne og reduktionsnøgleprocenterne for hver periode:
+
+    - Feltet **Ikrafttrædelsesdato** angiver datoen for, hvornår periodens start blev oprettet. Når indstillingen **Anvend ikrafttrædelsesdatoen** er angivet til **Ja**, starter perioderne på den pågældende dato. Når indstillingen er angivet til **Nej**, starter perioderne, når varedisponeringen køres.
+    - Angiv de perioder, hvor prognosereduktionen skal finde sted.
+    - Angiv for en bestemt periode de procentandel, som prognosekravene bør reduceres med. Du kan angive positive værdier for at reducere behovet eller negative værdier for at øge behovet.
+
+## <a name="use-a-reduction-key"></a>Anvend en reduktionsnøgle
+
+Der skal tildeles en prognosereduktionsnøgle til elementets dækningsgruppe. Følg disse trin for at tildele en reduktionsnøgle til et elements dækningsgruppe.
+
+1. Gå til **Varedisponering \> Opsætning \> Dækning \> Dækningsgrupper**.
+2. I feltet **Reduktionsnøgle** i oversigtspanelet **Andre** vælges den reduktionsnøgle, der skal tildeles dækningsgruppen. Reduktionsnøglen gælder derefter for alle elementer, der tilhører den pågældende dækningsgruppe.
+3. Hvis du vil bruge en reduktionsnøgle til at beregne prognosereduktionen i løbet af behovsplanlægningen, skal du definere denne indstilling under opsætningen af prognoseplanen eller masterplanen. Gå til en af følgende placeringer:
+
+    - Varedisponering \> Opsætning \> Planer \> Prognoseplaner
+    - Varedisponering \> Opsætning \> Planer \> Masterplaner
+
+4. I feltet **Metode, der anvendes til at reducere prognosekrav** i oversigtspanelet **Generelt** på siden **Prognoseplaner** eller **Varedisponering** vælges enten **Procent - reduktionsnøgle** eller **Transaktioner - reduktionsnøgle**.
+
+## <a name="reduce-a-forecast-by-transactions"></a>Reducer en prognose med transaktioner
+
+Når du vælger **Transaktioner - reduktionsnøgle** eller **Transaktioner - dynamisk periode** som en metode til at reducere prognosekrav, kan du præcisere de transaktioner, der skal reducere prognosen. I feltet **Reducer prognose med** i oversigtspanelet **Andre** på siden **Frigivne produkter** vælges **Alle transaktioner**, hvis alle transaktioner skal reducere prognosen, eller **Ordrer**, hvis alene salgsordrer skal reducere prognosen.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Behovsplaner](master-plans.md)
-
-
-

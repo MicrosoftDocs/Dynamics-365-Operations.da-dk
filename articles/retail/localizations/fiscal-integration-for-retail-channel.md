@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773271"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950398"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversigt over regnskabsintegration for detailkanaler
 
@@ -81,12 +81,37 @@ Regnskabsintegrationen struktur indeholder følgende indstillinger til håndteri
 
 Indstillingerne **Spring over** og **Markér som registreret** gør det muligt for infokoder at hente nogle specifikke oplysninger om fejlen, f.eks. årsagen til fejlen eller en begrundelse for at springe regnskabsregistreringen over eller markere transaktionen som registreret. Du kan finde flere oplysninger om, hvordan du konfigurerer fejlhåndteringsparametre, i [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Valgfri regnskabsregistrering
+
+Regnskabsregistrering kan være obligatorisk for visse operationer, men valgfri for andre. Regnskabsregistreringen af almindelige salg og returneringer kan eksempelvis være obligatorisk, mens regnskabsregistreringen af operationer, der er relateret til kunders indbetalinger, kan være valgfri. I dette tilfælde bør manglende regnskabsregistrering af et salg blokere for fremtidige salg, mens manglende regnskabsregistrering af en kundeindbetaling ikke bør blokere fremtidige salg. For at kunne skelne mellem obligatoriske og valgfrie operationer anbefaler vi, at du behandler dem via forskellige dokumentudbydere, og at du i processen for regnskabsregistrering fastsætter separate fremgangsmåder for de pågældende udbydere. Parametret **Fortsæt ved fejl** bør være aktiveret for enhver fremgangsmåde, der er relateret til valgfri regnskabsregistrering. Du kan finde flere oplysninger om, hvordan du konfigurerer fejlhåndteringsparametre, i [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Manuel kørsel af regnskabsregistrering
+
+Såfremt regnskabsregistreringen af en transaktion eller hændelse er blevet udsat som følge af en fejl (eksempelvis hvis operatøren har valgt **Annuller** i dialogboksen til fejlhåndtering), kan du manuelt køre regnskabsregistreringen igen ved at anvende en tilsvarende operation. Du kan finde flere oplysninger under [Aktiver manuel udførelse af udsatte regnskabsregistreringer](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Sundhedskontrol af regnskabsregistreringen
+
+Proceduren for sundhedskontrol af regnskabsregistreringer verificerer regnskabsenhedens eller -tjenestens tilgængelighed, når visse hændelser finder sted. Såfremt regnskabsregistreringen ikke kan fuldførelse på nuværende tidspunkt, bliver operatøren adviseret herom på forhånd.
+
+POS kører sundhedskontrollen, når følgende hændelser finder sted:
+
+- Der åbnes en ny transaktion.
+- En suspenderet transaktion kaldes tilbage.
+- En salgs- eller returtransaktion færdiggøres.
+
+Hvis sundhedskontrollen er mangelfuld, viser POS dialogboksen for sundhedskontrollen. Den pågældende dialogboks indeholder følgende knapper:
+
+- **OK** – Denne knap tillader operatøren at se bort fra en fejl i sundhedskontrollen og fortsætte med at behandle operationen. Operatører kan alene vælge denne knap, såfremt rettigheden **Tillad, at springe sundhedskontrolfejl over** er aktiveret for dem.
+- **Annuller** – Hvis operatøren vælger denne knap, annullerer POS den seneste handling (der tilføjes eksempelvis ikke et element til en ny transaktion).
+
+> [!NOTE]
+> Sundhedskontrollen køres udelukkende, hvis den nuværende operation kræver regnskabsregistrering, og parametret **Fortsæt ved fejl** er deaktiveret for det aktuelle trin i regnskabsregistreringsprocessen. Du kan finde flere oplysninger under [Angiv indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagring af regnskabssvar i regnskabstransaktion
 
 Når regnskabsregistrering af en transaktion eller en hændelse er foretaget, oprettes en regnskabstransaktion i kanaldatabasen og knyttes til den oprindelige transaktion eller hændelse. På samme måde, hvis indstillingen **Spring over** eller **Markér som registreret** er valgt for en mislykket regnskabsregistrering, gemmes disse oplysninger i en regnskabstransaktion. En regnskabstransaktion indeholder regnskabssvaret fra regnskabsenheden eller -tjenesten. Hvis regnskabsregistreringsprocessen består af flere trin, oprettes der en regnskabstransaktion for hvert trin i processen, der resulterede i en fuldført eller mislykket regnskabsregistrering.
 
-Regnskabstransaktionerne overføres til Retail Headquarters efter *P-job* sammen med detailtransaktioner. I oversigtspanelet **Regnskabstransaktioner** på siden **Transaktioner i detailbutik** kan du se de regnskabstransaktioner, der er knyttet til detailtransaktioner.
-
+*P-job* overfører regnskabstransaktionerne til Retail Headquarters sammen med detailtransaktioner. I oversigtspanelet **Regnskabstransaktioner** på siden **Transaktioner i detailbutik** kan du se de regnskabstransaktioner, der er knyttet til detailtransaktioner.
 
 En regnskabstransaktion indeholder følgende oplysninger:
 
@@ -111,10 +136,11 @@ Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i det Retail S
 
 - [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md)
 - [Eksempel på integration af bonprinter for Polen](emea-pol-fpi-sample.md)
+- [Eksempel på integration af regnskabsregistreringstjeneste for Østrig](emea-aut-fi-sample.md)
+- [Eksempel på integration af regnskabsregistreringstjeneste for Tjekkiet](emea-cze-fi-sample.md)
 
 Følgende regnskabsintegrationsfunktioner er også tilgængelige i Retail SDK, men kan i øjeblikket ikke udnytte regnskabsintegrationsstrukturen. Overførsel af denne funktion til regnskabsintegrationsstrukturen er planlagt til senere opdateringer.
 
 - [Digital signatur for Frankrig](emea-fra-cash-registers.md)
 - [Digital signatur for Norge](emea-nor-cash-registers.md)
 - [Eksempel på integration med kontrolenhed for Sverige](./retail-sdk-control-unit-sample.md)
-

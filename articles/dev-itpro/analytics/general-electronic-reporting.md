@@ -3,14 +3,14 @@ title: Elektronisk rapportering (ER)
 description: Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310800"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902954"
 ---
 # <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
@@ -163,21 +163,33 @@ Du kan få oplysninger om, hvordan du registrerer en ny ER-udbyder, ved at afspi
 
 #### <a name="repository"></a>Lager
 
-Et ER-lager indeholder ER-konfigurationer. Fire typer ER-lagre understøttes i øjeblikket: **Operationsressourcer**, **LCS-projekt (LCS)**, **Filsystem** og **Regulatory Configuration Services (RCS)**.
+Et ER-lager indeholder ER-konfigurationer. Følgende typer af ER-lagre understøttes i øjeblikket: 
 
-Et **Operations-ressourcer**-lager giver adgang til listen over de konfigurationer, som Microsoft som ER-konfigurationsudbyder frigiver som en del af Finance and Operations-løsningen. Disse konfigurationer kan importeres til den aktuelle forekomst af Finance and Operations og bruges til elektronisk indberetning. De kan også bruges til flere sprogversioner og tilpasninger.
+- Delt LCS-bibliotek
+- LCS-projekt
+- Filsystem
+- Regulatory Configuration Services (RCS)
+- Operationsressourcer
+
+
+Et **Delt LCS-bibliotek**-lager giver adgang til listen med konfigurationer i biblioteket for delte aktiver i Lifecycle Services (LCS). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Du kan importere de seneste versioner af ER-konfigurationer fra LCS-biblioteket for delte aktiver til den aktuelle Finance and Operations-forekomst.
 
 Et **LCS-projektlager** giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle Finance and Operations-forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle Finance and Operations-forekomst.
 
-Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle Finance and Operations-forekomst. Bemærk, at denne lagertype er tilgængelig i følgende Dynamics 365 for Finance and Operations-miljøer:
-- skybaserede miljøer, der er installeret til udviklingsformål (og som indeholder testmodeller af lukkede pakker)
-- installerede lokale miljøer (installation i det lokale miljø eller lokale forretningsdata (LBD))
+Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle Finance and Operations-forekomst. 
 
-Besøg siden [Importere elektroniske rapporteringskonfigurationer (ER)](./electronic-reporting-import-ger-configurations.md) for at få yderligere oplysninger om dette.
+Bemærk, at denne lagertype er tilgængelig i følgende Dynamics 365 for Finance and Operations-miljøer:
 
-Et **RCS-forekomst** giver adgang til listen over konfigurationer af en bestemt RCS-forekomst, der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RC-forekomst til den aktuelle forekomst af Finance and Operations og bruge den til elektronisk indberetning.
+- Skybaserede miljøer, der er installeret til udviklingsformål (og som indeholder testmodeller af lukkede pakker)
+- Lokalt installerede miljøer (på lokaliteten)
 
-Besøg siden [Importere elektroniske rapporteringskonfigurationer (ER) fra Regulatory Configuration Services (RCS)](./rcs-download-configurations.md) for at få yderligere oplysninger om dette.
+Du kan finde flere oplysninger under [Importer konfigurationer for elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md).
+
+Et **RCS-forekomst** giver adgang til listen over konfigurationer af en bestemt RCS-forekomst, der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RCS-forekomst til den aktuelle forekomst af Finance and Operations, hvor du kan anvende dem til elektronisk rapportering.
+
+Du kan finde flere oplysninger under [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+
+Et lager med **Operationsressourcer** giver adgang til listen over de konfigurationer, som Microsoft, qua sin rolle som ER-konfigurationsudbyder, indledningsvist frigiver som en del af Finance and Operations-løsningen. Disse konfigurationer kan importeres til den aktuelle Finance and Operations-forekomst og anvendes til elektronisk rapportering eller afspilning af opgaveguider for stikprøver. De kan også bruges til flere sprogversioner og tilpasninger. Bemærk, at de nyeste versioner fra Microsoft ER-konfigurationer skal importeres fra LCS-biblioteket med delte aktiver ved hjælp af det tilsvarende ER-lager.
 
 Påkrævede **LCS-projekt**-, **Filsystem**- og **Regulatory Configuration Services (RCS)**-lagre kan registreres individuelt for hver konfigurationsudbyder for den aktuelle forekomst af Finance and Operations. Hvert lager kan dedikeres til en bestemt konfigurationsudbyder.
 
@@ -377,6 +389,5 @@ Med ER kan du automatisk implementere ændringer af den nyeste version af basisk
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Lokaliseringskrav – oprette en elektronisk rapporteringskonfiguration](electronic-reporting-configuration.md)
-
-[Administrere livscyklus for elektroniske indberetningskonfigurationer](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Lokaliseringskrav – oprette en elektronisk rapporteringskonfiguration](electronic-reporting-configuration.md)
+- [Administrere livscyklus for elektroniske indberetningskonfigurationer](general-electronic-reporting-manage-configuration-lifecycle.md)

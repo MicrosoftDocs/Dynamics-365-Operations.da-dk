@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c53a38eb6afdf8d3cc1a316c8da5e84549ab60d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e3e8ffa6cee7742de1cd98c9c83d134b6d5e4a89
+ms.sourcegitcommit: 529763612e8af315d588e85ba807a5c849df57bf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361423"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894672"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>Registrer varer til en grundlæggende lagerstedsaktiveret vare ved hjælp af en varemodtagelseskladde
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger "grundlæggende lagerstedsfunktioner" i Lagerstyringsmodulet. Dette vil normalt blive udført af en modtagende medarbejder. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne, der vises.  Hvis du ikke bruger USMF, skal du have en bekræftet indkøbsordre med en åben indkøbsordrelinje, før du starter denne guide. Varen på linjen skal på lager, og den skal ikke bruge produktvarianter og ikke have sporingsdimensioner. Og varen skal tilknyttes en lagringsdimensionsgruppe, hvor sted og lagersted er aktive.
+Denne fremgangsmåde viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger "grundlæggende lagerstedsfunktioner" i Lagerstyringsmodulet. Dette vil normalt blive udført af en modtagende medarbejder. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne, der vises.  Hvis du ikke bruger USMF, skal du have en bekræftet indkøbsordre med en åben indkøbsordrelinje, før du starter denne guide. Varen på linjen skal være på lager. Og varen skal tilknyttes en lagringsdimensionsgruppe, hvor sted og lagersted er aktive.
 
 
 ## <a name="create-item-arrival-journal-header"></a>Opret en overskrift til varemodtagelseskladden

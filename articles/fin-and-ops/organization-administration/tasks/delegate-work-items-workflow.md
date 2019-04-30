@@ -3,7 +3,7 @@ title: Delegere workflowopgaver i en arbejdsgang
 description: Hvis du planlægger at være væk fra kontoret eller af anden årsag ikke kan udføre workflowopgaver, kan du delegere eller tildele dine workflowopgaver til andre brugere.
 author: jasongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 04/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,25 +16,26 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: feace647d7acef6abf86b13fcb8019c622c55ff6
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346243"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976775"
 ---
-# <a name="delegate-work-items-in-a-workflow"></a>Delegere workflowopgaver i en arbejdsgang
+# <a name="delegate-work-items-in-a-workflow"></a>Delegere arbejdselementer i en arbejdsgang
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Hvis du planlægger at være væk fra kontoret eller af anden årsag ikke kan udføre workflowopgaver, kan du delegere eller tildele dine workflowopgaver til andre brugere. Denne procedure hjælper dig med at konfigurere systemet til automatisk at delegere dine arbejdselementer til en anden bruger.
+## <a name="manually-delegate-a-work-item"></a>Manuel delegering af et arbejdselement
 
+For at delegere et individuelt arbejdselement skal du vælge indstillingen **Deleger** i menuen **Arbejdsgang** og derefter indtaste den bruger, som elementet skal delegeres til, samt en bemærkning hertil. Dette vil omfordele arbejdselementet til den pågældende bruger, således at denne kan udføre opgaven.
 
+## <a name="automatically-delegate-work-items"></a>Automatisk delegering af arbejdselementer
 
-Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Hvis du har planer om at være væk fra kontoret eller på anden vis ikke er til rådighed i en periode, kan du automatisk delegere nye arbejdselementer til andre brugere ved hjælp af siden **Brugerindstillinger**.
 
-
-## <a name="set-up-automatic-delegation"></a>Konfigurere automatisk delegering
+### <a name="set-up-automatic-delegation"></a>Konfigurere automatisk delegering
 1. Gå til Generelt > Opsætning > Brugerindstillinger.
 2. Klik på fanen Arbejdsgang.
     * Sørg for, at sektionen Delegering er udvidet.    Hvis du vil konfigurere systemet til automatisk at delegere dine workflowopgaver til andre brugere, skal du oprette delegeringsregler, som angiver, hvornår bestemte workflowopgaver skal uddelegeres. Udfør følgende trin for at oprette en delegeringsregel:  

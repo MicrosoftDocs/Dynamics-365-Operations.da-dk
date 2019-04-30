@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773321"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898971"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurere regnskabsintegration for detailkanaler
 
@@ -60,7 +60,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
 2. Overfør konfigurationer for regnskabsforbindelser og regnskabsdokumentudbydere.
 
     En regnskabsdokumentudbyder er ansvarlig for at generere regnskabsdokumenter, der repræsenterer detailtransaktioner og -hændelser, der er registreret på POS i et format, der også bruges til interaktion med en regnskabsenhed eller -tjeneste. F.eks. kan en udbyder af regnskabsdokumenter generere en repræsentation af en regnskabskvittering i et XML-format.
-    
+
     En regnskabsconnector er ansvarlig for kommunikationen med en regnskabsenhed eller -tjeneste. En regnskabsconnector kan for eksempel sende en regnskabskvittering, som en regnskabsdokumentudbyder har oprettet i et XML-format, til en bonprinter. Du kan finde flere oplysninger om regnskabsintegrationskomponenter i [Regnskabsregistreringsprocessen og eksempler på regnskabsintegration for regnskabsenheder](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. På siden **Regnskabsconnectorer** (**Retail \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsconnectorer**) skal du overføre en XML-konfiguration for hver enhed eller tjeneste, du planlægger at bruge til regnskabsintegration.
@@ -150,7 +150,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
     - Når du har ændret en regnskabsregistreringsproces, og ændringerne kan medføre, at en anden regnskabsconnector bliver valgt på kørselstidspunktet (f.eks. hvis du ændrer connectorgruppen for et trin i regnskabsregistreringsprocessen, aktiverer en funktionel connectorprofil i en connectorgruppe eller føjer en ny funktionel connectorprofil til en connectorgruppe).
     - Når du har foretaget ændringer i tildelingen af tekniske connectorprofiler til hardwareprofiler.
 
-8. På siden **Distributionsplanlægger** skal du køre jobbene **1070** og **1090** for at overføre data til kanaldatabasen.
+8. På siden **Distributionstidsplan** skal du køre jobbene **1070** og **1090** for at overføre data til kanaldatabasen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Oprette regnskabstekster for rabatter
 
@@ -185,8 +185,12 @@ De fejlhåndteringsindstillinger, der er tilgængelige i regnskabsintegrationen,
 
     - **Tillad overspring** – Denne parameter aktiverer indstillingen **Spring over** i dialogboksen til fejlhåndtering.
     - **Tillad markering som registreret** – Denne parameter aktiverer indstillingen **Markér som registreret** i dialogboksen til fejlhåndtering.
+    - **Fortsæt ved fejl** – Hvis dette parameter er aktiveret, kan regnskabsregistreringsprocessen fortsætte i POS-registreret, hvis regnskabsregistreringen af en transaktion eller hændelse slår fejl. I modsat fald skal operatøren, for at køre regnskabsregistreringen af den næste transaktion eller hændelse, prøve den fejlslagne regnskabsregistrering igen, springe den over eller markere transaktionen eller hændelsen som registreret. Du kan finde yderligere oplysninger under [Valgfri regnskabsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Indstillingerne **Spring over** og **Markér som registreret** i dialogboksen til fejlhåndtering kræver rettigheden **Tillad overspringelse eller markering som registreret**. Derfor skal du på siden **Rettighedsgrupper** (**Retail \> Medarbejdere \> Rettighedsgrupper**) aktivere rettigheden **Tillad overspringelse eller markering som registreret**.
+    > [!NOTE]
+    > Såfremt parametret **Fortsæt ved fejl** er slået til, deaktiveres parametrene **Tillad overspring** og **Tillad at markere som registreret** automatisk.
+
+2. Indstillingerne **Spring over** og **Marker som registreret** i dialogboksen til fejlhåndtering kræver rettigheden **Tillad, at registrering springes over, eller marker som registreret**. Derfor skal du på siden **Rettighedsgrupper** (**Detail \> Medarbejdere \> Rettighedsgrupper**) aktivere rettigheden **Tillad, at registrering springes over, eller marker som registreret**.
 3. Med indstillingerne **Spring over** og **Markér som registreret** kan operatører angive yderligere oplysninger, hvis regnskabsregistreringen mislykkes. For at gøre denne funktionalitet tilgængelig skal du angive årsagskoderne **Spring over** og **Markér som registreret** i en regnskabsconnectorgruppe. De oplysninger, som operatører angiver, gemmes derefter som en årsagskodetransaktion, der er knyttet til regnskabstransaktionen. Du kan finde flere oplysninger om årsagskoder i [Årsagskoder og årsagskodegrupper](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ De fejlhåndteringsindstillinger, der er tilgængelige i regnskabsintegrationen,
     > - **Regnskabsdokument** – Et obligatorisk dokument, der skal registreres korrekt (f.eks. en regnskabskvittering).
     > - **Ikke-regnskabsdokument** – Et supplerende dokument for posteringen eller hændelsen (f.eks. et gavekort).
 
+4. Hvis operatøren skal kunne fortsætte med at behandle den aktuelle operation (f.eks. oprettelse elle afslutning af en transaktion) efter, at der er opstået en sundhedskontrolfejl, skal du aktivere rettigheden **Tillad, at sundhedskontrolfejl springes over** på siden for **Rettighedsgrupper** (**Detail \> Medarbejdere \> Rettighedsgrupper**). Du kan finde flere oplysninger om proceduren for sundhedskontrol under [Sundhedskontrol af regnskabsregistreringen](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Oprette X/Z-regnskabsrapporter fra POS
 
 Hvis du vil køre X/Z-regnskabsrapporter fra POS, skal du føje nye knapper til et POS-layout.
@@ -211,3 +217,12 @@ Hvis du vil køre X/Z-regnskabsrapporter fra POS, skal du føje nye knapper til 
     3. Tilføj en ny knap, og indstil **Udskriv regnskab Z**-knapegenskaben.
     4. På siden **Distributionsplan** skal du køre jobbet **1090** for at overføre ændringer til kanaldatabasen.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktiver manuel udførelse af udsatte regnskabsregistreringer
+
+For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du tilføje en ny knap til POS-layoutet.
+
+- På siden **Knapmatricer** skal du følge vejledningen i [Føj en brugerdefineret handlingsknap til POS-layoutet i Retail Headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
+
+    1. Vælg det layout, der skal opdateres.
+    2. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.
+    3. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.

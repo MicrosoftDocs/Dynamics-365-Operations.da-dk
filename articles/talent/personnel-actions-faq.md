@@ -1,7 +1,7 @@
 ---
 title: Ofte stillede spørgsmål om personalehandlinger
 description: Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale.
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 0e68154ec70fdf26d1d783de29a386a336fff92f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 91b154a2379d6f0bdf8bea322c99be9e1c1925c9
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303734"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859845"
 ---
 # <a name="personnel-actions-faq"></a>Ofte stillede spørgsmål om personalehandlinger
 
