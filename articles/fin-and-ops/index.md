@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Dokumentation til Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentation til Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 04/11/2019
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4547a0c8d43584e4cb8981e0a055c514c184f6dd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507583"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation til Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
@@ -60,6 +64,11 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Få besked om serviceopdateringer</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatisering af dataopgave</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
+
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrationer</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Forretningshændelser</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Dataenheder</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration ved hjælp af Microsoft Flow</a></p>
 
 <h3><a href="../financials/index.md">Økonomistyring</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditor</a></p>
@@ -105,10 +114,6 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Udvikling</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Udvidelsesmuligheder</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Dataintegration</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Datastyring</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Fortløbende levering</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobilplatform</a></p>
@@ -119,7 +124,6 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Lokal installation</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Opgradering</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicering</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data Management Framework</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organisationsadministration</a></p>
 </td>
