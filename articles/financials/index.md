@@ -17,56 +17,56 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 437c9ba7142dadcb49c9255b119586598511453d
-ms.sourcegitcommit: cbc5a4f0d752d4f147fe269e4d7a2460f772c95b
+ms.openlocfilehash: d57d3bdc5354823888d695ed6bf734584bff95d1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "307934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513259"
 ---
-# <a name="financial-management-home-page"></a><span data-ttu-id="819eb-103">Startside for økonomistyring</span><span class="sxs-lookup"><span data-stu-id="819eb-103">Financial management home page</span></span>
+# <a name="financial-management-home-page"></a><span data-ttu-id="d9af0-103">Startside for økonomistyring</span><span class="sxs-lookup"><span data-stu-id="d9af0-103">Financial management home page</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="819eb-104">Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til økonomistyring i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="819eb-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+<span data-ttu-id="d9af0-104">Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til økonomistyring i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d9af0-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-<span data-ttu-id="819eb-105">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="819eb-105">Select a feature area to learn more about it.</span></span>
+<span data-ttu-id="d9af0-105">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="d9af0-105">Select a feature area to learn more about it.</span></span>
 
 :::row:::
     :::column:::
-        - [<span data-ttu-id="819eb-106">Kreditor</span><span class="sxs-lookup"><span data-stu-id="819eb-106">Accounts payable</span></span>](accounts-payable/accounts-payable.md) 
-        - [<span data-ttu-id="819eb-107">Debitor</span><span class="sxs-lookup"><span data-stu-id="819eb-107">Accounts receivable</span></span>](accounts-receivable/accounts-receivable.md)
-        - [<span data-ttu-id="819eb-108">Budgettering</span><span class="sxs-lookup"><span data-stu-id="819eb-108">Budgeting</span></span>](budgeting/budgeting-overview.md) 
-        - [<span data-ttu-id="819eb-109">Kontant- og bankstyring</span><span class="sxs-lookup"><span data-stu-id="819eb-109">Cash and bank management</span></span>](cash-bank-management/cash-bank-management.md)
-        - [<span data-ttu-id="819eb-110">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="819eb-110">Cost accounting</span></span>](cost-accounting/cost-accounting-home-page.md)
+        - [<span data-ttu-id="d9af0-106">Kreditor</span><span class="sxs-lookup"><span data-stu-id="d9af0-106">Accounts payable</span></span>](accounts-payable/accounts-payable.md) 
+        - [<span data-ttu-id="d9af0-107">Debitor</span><span class="sxs-lookup"><span data-stu-id="d9af0-107">Accounts receivable</span></span>](accounts-receivable/accounts-receivable.md)
+        - [<span data-ttu-id="d9af0-108">Budgettering</span><span class="sxs-lookup"><span data-stu-id="d9af0-108">Budgeting</span></span>](budgeting/budgeting-overview.md) 
+        - [<span data-ttu-id="d9af0-109">Kontant- og bankstyring</span><span class="sxs-lookup"><span data-stu-id="d9af0-109">Cash and bank management</span></span>](cash-bank-management/cash-bank-management.md)
+        - [<span data-ttu-id="d9af0-110">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="d9af0-110">Cost accounting</span></span>](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [<span data-ttu-id="819eb-111">Udgiftsstyring</span><span class="sxs-lookup"><span data-stu-id="819eb-111">Expense management</span></span>](expense-management/expense-management.md)
-        - [<span data-ttu-id="819eb-112">Økonomirapportering</span><span class="sxs-lookup"><span data-stu-id="819eb-112">Financial reporting</span></span>](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
-        - [<span data-ttu-id="819eb-113">Anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="819eb-113">Fixed assets</span></span>](fixed-assets/fixed-assets.md)
-        - [<span data-ttu-id="819eb-114">Finans</span><span class="sxs-lookup"><span data-stu-id="819eb-114">General ledger</span></span>](general-ledger/general-ledger.md) 
-        - [<span data-ttu-id="819eb-115">Projektstyring</span><span class="sxs-lookup"><span data-stu-id="819eb-115">Project management</span></span>](project-management/overview-project-management-accounting.md)
-        - [<span data-ttu-id="819eb-116">Offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="819eb-116">Public sector</span></span>](public-sector/public-sector-functionality.md) 
+        - [<span data-ttu-id="d9af0-111">Udgiftsstyring</span><span class="sxs-lookup"><span data-stu-id="d9af0-111">Expense management</span></span>](expense-management/expense-management.md)
+        - [<span data-ttu-id="d9af0-112">Økonomirapportering</span><span class="sxs-lookup"><span data-stu-id="d9af0-112">Financial reporting</span></span>](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [<span data-ttu-id="d9af0-113">Anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="d9af0-113">Fixed assets</span></span>](fixed-assets/fixed-assets.md)
+        - [<span data-ttu-id="d9af0-114">Finans</span><span class="sxs-lookup"><span data-stu-id="d9af0-114">General ledger</span></span>](general-ledger/general-ledger.md) 
+        - [<span data-ttu-id="d9af0-115">Projektstyring</span><span class="sxs-lookup"><span data-stu-id="d9af0-115">Project management</span></span>](project-management/overview-project-management-accounting.md)
+        - [<span data-ttu-id="d9af0-116">Offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="d9af0-116">Public sector</span></span>](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
 
 
-## <a name="additional-resources"></a><span data-ttu-id="819eb-117">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="819eb-117">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="d9af0-117">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="d9af0-117">Additional resources</span></span>
 
-### <a name="blogs"></a><span data-ttu-id="819eb-118">Blogs</span><span class="sxs-lookup"><span data-stu-id="819eb-118">Blogs</span></span>
+### <a name="blogs"></a><span data-ttu-id="d9af0-118">Blogs</span><span class="sxs-lookup"><span data-stu-id="d9af0-118">Blogs</span></span>
 
-- [<span data-ttu-id="819eb-119">Microsoft Dynamics 365-blog</span><span class="sxs-lookup"><span data-stu-id="819eb-119">Microsoft Dynamics 365 blog</span></span>](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
-- [<span data-ttu-id="819eb-120">Financials-blog</span><span class="sxs-lookup"><span data-stu-id="819eb-120">Financials blog</span></span>](https://community.dynamics.com/365/financeandoperations/b/financials) 
-- [<span data-ttu-id="819eb-121">Microsoft Dynamics Operations Partner Community-blog</span><span class="sxs-lookup"><span data-stu-id="819eb-121">Microsoft Dynamics Operations Partner Community Blog</span></span>](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
+- [<span data-ttu-id="d9af0-119">Microsoft Dynamics 365-blog</span><span class="sxs-lookup"><span data-stu-id="d9af0-119">Microsoft Dynamics 365 blog</span></span>](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
+- [<span data-ttu-id="d9af0-120">Financials-blog</span><span class="sxs-lookup"><span data-stu-id="d9af0-120">Financials blog</span></span>](https://community.dynamics.com/365/financeandoperations/b/financials) 
+- [<span data-ttu-id="d9af0-121">Microsoft Dynamics Operations Partner Community-blog</span><span class="sxs-lookup"><span data-stu-id="d9af0-121">Microsoft Dynamics Operations Partner Community Blog</span></span>](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
-### <a name="task-guides"></a><span data-ttu-id="819eb-122">Opgaveguider</span><span class="sxs-lookup"><span data-stu-id="819eb-122">Task guides</span></span>
-<span data-ttu-id="819eb-123">Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="819eb-123">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="819eb-124">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</span><span class="sxs-lookup"><span data-stu-id="819eb-124">To access task guides, click the Help button on any page.</span></span>
+### <a name="task-guides"></a><span data-ttu-id="d9af0-122">Opgaveguider</span><span class="sxs-lookup"><span data-stu-id="d9af0-122">Task guides</span></span>
+<span data-ttu-id="d9af0-123">Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d9af0-123">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="d9af0-124">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</span><span class="sxs-lookup"><span data-stu-id="d9af0-124">To access task guides, click the Help button on any page.</span></span>
 
-### <a name="videos"></a><span data-ttu-id="819eb-125">Videoer</span><span class="sxs-lookup"><span data-stu-id="819eb-125">Videos</span></span>
+### <a name="videos"></a><span data-ttu-id="d9af0-125">Videoer</span><span class="sxs-lookup"><span data-stu-id="d9af0-125">Videos</span></span>
 
-<span data-ttu-id="819eb-126">Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="819eb-126">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="d9af0-126">Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="d9af0-126">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
-### <a name="countryregion-functionality"></a><span data-ttu-id="819eb-127">Lande-/områdefunktionalitet</span><span class="sxs-lookup"><span data-stu-id="819eb-127">Country/region functionality</span></span>
+### <a name="countryregion-functionality"></a><span data-ttu-id="d9af0-127">Lande-/områdefunktionalitet</span><span class="sxs-lookup"><span data-stu-id="d9af0-127">Country/region functionality</span></span>
 
-<span data-ttu-id="819eb-128">Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring.</span><span class="sxs-lookup"><span data-stu-id="819eb-128">Country/region regulations affect tax setup and other areas of financial management.</span></span> <span data-ttu-id="819eb-129">Se afsnittet [Lokalisering og lovpligtige funktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i vores Hjælp-indhold for at få mere at vide om lande-/områdespecifikke funktioner.</span><span class="sxs-lookup"><span data-stu-id="819eb-129">Refer to the [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) section of our help content to learn about country/region-specific functionality.</span></span>
+<span data-ttu-id="d9af0-128">Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring.</span><span class="sxs-lookup"><span data-stu-id="d9af0-128">Country/region regulations affect tax setup and other areas of financial management.</span></span> <span data-ttu-id="d9af0-129">Se afsnittet [Lokalisering og lovpligtige funktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i vores Hjælp-indhold for at få mere at vide om lande-/områdespecifikke funktioner.</span><span class="sxs-lookup"><span data-stu-id="d9af0-129">Refer to the [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) section of our help content to learn about country/region-specific functionality.</span></span>
 

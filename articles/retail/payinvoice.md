@@ -18,31 +18,31 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 158d8ca8a97c473e940f76dd3f35cecc4e9dd7f4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517026"
 ---
-# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="f6ce0-103">Konfigurere scenarier for betaling af fakturaer</span><span class="sxs-lookup"><span data-stu-id="f6ce0-103">Set up pay invoice scenarios</span></span>
+# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="9f041-103">Konfigurere scenarier for betaling af fakturaer</span><span class="sxs-lookup"><span data-stu-id="9f041-103">Set up pay invoice scenarios</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="f6ce0-104">Funktionen Betal faktura i Dynamics 365 for Retail er blevet udvidet for at understøtte:</span><span class="sxs-lookup"><span data-stu-id="f6ce0-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
+<span data-ttu-id="9f041-104">Funktionen Betal faktura i Dynamics 365 for Retail er blevet udvidet for at understøtte:</span><span class="sxs-lookup"><span data-stu-id="9f041-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
 
-- <span data-ttu-id="f6ce0-105">Betaling af flere salgsordrefakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
-- <span data-ttu-id="f6ce0-106">Betaling af forskellige debitorfakturatyper, herunder fritekstfakturaer, projektbaserede fakturaer og kreditnotaer.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
+- <span data-ttu-id="9f041-105">Betaling af flere salgsordrefakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="9f041-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
+- <span data-ttu-id="9f041-106">Betaling af forskellige debitorfakturatyper, herunder fritekstfakturaer, projektbaserede fakturaer og kreditnotaer.</span><span class="sxs-lookup"><span data-stu-id="9f041-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
 
-<span data-ttu-id="f6ce0-107">Hvis du vil aktivere disse scenarier, skal funktionalitetsprofilen for butikker være konfigureret som beskrevet nedenfor.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
+<span data-ttu-id="9f041-107">Hvis du vil aktivere disse scenarier, skal funktionalitetsprofilen for butikker være konfigureret som beskrevet nedenfor.</span><span class="sxs-lookup"><span data-stu-id="9f041-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
 
-1. <span data-ttu-id="f6ce0-108">Gå til **Detail \> Konfiguration af kanal \> POS setup \> POS-profiler \> Funktionalitetsprofiler**, og vælg en profil, der er knyttet til de butikker, som du vil foretage ændringerne for.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
-2. <span data-ttu-id="f6ce0-109">På fanen **Funktioner** kan du konfigurere følgende parametre efter behov.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
+1. <span data-ttu-id="9f041-108">Gå til **Detail \> Konfiguration af kanal \> POS setup \> POS-profiler \> Funktionalitetsprofiler**, og vælg en profil, der er knyttet til de butikker, som du vil foretage ændringerne for.</span><span class="sxs-lookup"><span data-stu-id="9f041-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
+2. <span data-ttu-id="9f041-109">På fanen **Funktioner** kan du konfigurere følgende parametre efter behov.</span><span class="sxs-lookup"><span data-stu-id="9f041-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
 
-    - <span data-ttu-id="f6ce0-110">**Salgsordrefaktura** – Vælg **Ja** for at give brugere mulighed for at betale en eller flere salgsordrebaserede fakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="f6ce0-111">**Fritekstfaktura** – Vælg **Ja** for at give brugere mulighed for at betale en eller flere fritekstbaserede fakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="f6ce0-112">**Projektfaktura** – Vælg **Ja** for at give brugerne mulighed for at betale en eller flere projektbaserede fakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="f6ce0-113">**Salgsordre kreditnota** – Vælg **Ja** for at tillade brugere at udligne flere salgsordrebaserede kreditnotaer i forhold til åbne fakturaer eller behandle en refusion til kunden for en åben kreditnota.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
+    - <span data-ttu-id="9f041-110">**Salgsordrefaktura** – Vælg **Ja** for at give brugere mulighed for at betale en eller flere salgsordrebaserede fakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="9f041-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="9f041-111">**Fritekstfaktura** – Vælg **Ja** for at give brugere mulighed for at betale en eller flere fritekstbaserede fakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="9f041-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="9f041-112">**Projektfaktura** – Vælg **Ja** for at give brugerne mulighed for at betale en eller flere projektbaserede fakturaer i en enkelt POS-transaktion.</span><span class="sxs-lookup"><span data-stu-id="9f041-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="9f041-113">**Salgsordre kreditnota** – Vælg **Ja** for at tillade brugere at udligne flere salgsordrebaserede kreditnotaer i forhold til åbne fakturaer eller behandle en refusion til kunden for en åben kreditnota.</span><span class="sxs-lookup"><span data-stu-id="9f041-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f6ce0-114">Betaling eller udligning af delbeløb understøttes ikke endnu.</span><span class="sxs-lookup"><span data-stu-id="f6ce0-114">Payment or settlement of partial amounts is not yet supported.</span></span>
+> <span data-ttu-id="9f041-114">Betaling eller udligning af delbeløb understøttes ikke endnu.</span><span class="sxs-lookup"><span data-stu-id="9f041-114">Payment or settlement of partial amounts is not yet supported.</span></span>
