@@ -18,44 +18,44 @@ ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517608"
 ---
-# <a name="azure-active-directory-users-not-found-in-people-picker"></a><span data-ttu-id="ada25-103">Azure Active Directory-brugere, der blev ikke fundet i personvælgeren</span><span class="sxs-lookup"><span data-stu-id="ada25-103">Azure Active Directory users not found in People Picker</span></span>
+# <a name="azure-active-directory-users-not-found-in-people-picker"></a><span data-ttu-id="60e2a-103">Azure Active Directory-brugere, der blev ikke fundet i personvælgeren</span><span class="sxs-lookup"><span data-stu-id="60e2a-103">Azure Active Directory users not found in People Picker</span></span>
 
 [!include [banner](includes/banner.md)]
 
-## <a name="issue"></a><span data-ttu-id="ada25-104">Udsted</span><span class="sxs-lookup"><span data-stu-id="ada25-104">Issue</span></span>
+## <a name="issue"></a><span data-ttu-id="60e2a-104">Udsted</span><span class="sxs-lookup"><span data-stu-id="60e2a-104">Issue</span></span>
 
-<span data-ttu-id="ada25-105">Visse gyldige brugere i Microsoft Azure Active Directory (Azure AD) for lejeren vises ikke, når du søger efter navnet i personvælgeren i programmerne Dynamics 365 for Talent Attract og Onboard.</span><span class="sxs-lookup"><span data-stu-id="ada25-105">Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenant do not appear when searching for the name in the People Picker in the Dynamics 365 for Talent Attract or Onboard applications.</span></span>
+<span data-ttu-id="60e2a-105">Visse gyldige brugere i Microsoft Azure Active Directory (Azure AD) for lejeren vises ikke, når du søger efter navnet i personvælgeren i programmerne Dynamics 365 for Talent Attract og Onboard.</span><span class="sxs-lookup"><span data-stu-id="60e2a-105">Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenant do not appear when searching for the name in the People Picker in the Dynamics 365 for Talent Attract or Onboard applications.</span></span>
 
-## <a name="cause"></a><span data-ttu-id="ada25-106">Årsag</span><span class="sxs-lookup"><span data-stu-id="ada25-106">Cause</span></span>
+## <a name="cause"></a><span data-ttu-id="60e2a-106">Årsag</span><span class="sxs-lookup"><span data-stu-id="60e2a-106">Cause</span></span>
 
-<span data-ttu-id="ada25-107">Visse brugertyper understøttes ikke i øjeblikket i Attract- og Onboard-programmerne.</span><span class="sxs-lookup"><span data-stu-id="ada25-107">Certain user types are not currently supported in the Attract and Onboard applications.</span></span> <span data-ttu-id="ada25-108">Kontroller, at brugeren ikke en Azure AD Business to Business (B2B)-gæstebruger.</span><span class="sxs-lookup"><span data-stu-id="ada25-108">Verify that the user is not an Azure AD Business to Business (B2B) guest user.</span></span> <span data-ttu-id="ada25-109">"Brugertype"-oplysninger findes i Azure Active Directory bladet i Azure-portalen.</span><span class="sxs-lookup"><span data-stu-id="ada25-109">"User Type" information can be found in the Azure Active Directory blade on the Azure portal.</span></span>
+<span data-ttu-id="60e2a-107">Visse brugertyper understøttes ikke i øjeblikket i Attract- og Onboard-programmerne.</span><span class="sxs-lookup"><span data-stu-id="60e2a-107">Certain user types are not currently supported in the Attract and Onboard applications.</span></span> <span data-ttu-id="60e2a-108">Kontroller, at brugeren ikke en Azure AD Business to Business (B2B)-gæstebruger.</span><span class="sxs-lookup"><span data-stu-id="60e2a-108">Verify that the user is not an Azure AD Business to Business (B2B) guest user.</span></span> <span data-ttu-id="60e2a-109">"Brugertype"-oplysninger findes i Azure Active Directory bladet i Azure-portalen.</span><span class="sxs-lookup"><span data-stu-id="60e2a-109">"User Type" information can be found in the Azure Active Directory blade on the Azure portal.</span></span>
 
-<span data-ttu-id="ada25-110">Du kan finde flere oplysninger om Azure B2B i [Hvad er gæstebrugeradgang til Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).</span><span class="sxs-lookup"><span data-stu-id="ada25-110">For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).</span></span>
+<span data-ttu-id="60e2a-110">Du kan finde flere oplysninger om Azure B2B i [Hvad er gæstebrugeradgang til Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).</span><span class="sxs-lookup"><span data-stu-id="60e2a-110">For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).</span></span>
 
-<span data-ttu-id="ada25-111">For ikke-B2B-brugere kan der være bestemte brugere, som ikke har en fuldstændig "Brugertype"-egenskab i objektet **Bruger**.</span><span class="sxs-lookup"><span data-stu-id="ada25-111">For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object.</span></span> <span data-ttu-id="ada25-112">Dette kan kontrolleres og rettes ved hjælp af Azure AD Powershell-modulet.</span><span class="sxs-lookup"><span data-stu-id="ada25-112">This can be verified and fixed using the Azure AD Powershell module.</span></span> <span data-ttu-id="ada25-113">Yderligere oplysninger finder du i [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).</span><span class="sxs-lookup"><span data-stu-id="ada25-113">For more information, see [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).</span></span>
+<span data-ttu-id="60e2a-111">For ikke-B2B-brugere kan der være bestemte brugere, som ikke har en fuldstændig "Brugertype"-egenskab i objektet **Bruger**.</span><span class="sxs-lookup"><span data-stu-id="60e2a-111">For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object.</span></span> <span data-ttu-id="60e2a-112">Dette kan kontrolleres og rettes ved hjælp af Azure AD Powershell-modulet.</span><span class="sxs-lookup"><span data-stu-id="60e2a-112">This can be verified and fixed using the Azure AD Powershell module.</span></span> <span data-ttu-id="60e2a-113">Yderligere oplysninger finder du i [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).</span><span class="sxs-lookup"><span data-stu-id="60e2a-113">For more information, see [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="ada25-114">Løsning</span><span class="sxs-lookup"><span data-stu-id="ada25-114">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="60e2a-114">Løsning</span><span class="sxs-lookup"><span data-stu-id="60e2a-114">Resolution</span></span>
 
-<span data-ttu-id="ada25-115">Hvis du vil løse problemet ved hjælp af følgende trin, skal du have "Global Administrator"-rettigheder i Azure Active Directory-lejeren eller rettigheder til **User.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="ada25-115">To complete the following steps to resolve the issue, you will need to have "Global Administrator" permissions on the Azure Active Directory tenant or permissions for **User.ReadWrite.All**.</span></span>
+<span data-ttu-id="60e2a-115">Hvis du vil løse problemet ved hjælp af følgende trin, skal du have "Global Administrator"-rettigheder i Azure Active Directory-lejeren eller rettigheder til **User.ReadWrite.All**.</span><span class="sxs-lookup"><span data-stu-id="60e2a-115">To complete the following steps to resolve the issue, you will need to have "Global Administrator" permissions on the Azure Active Directory tenant or permissions for **User.ReadWrite.All**.</span></span>
 
-<span data-ttu-id="ada25-116">Sådan kontrollerer du "Brugertype" for den pågældende bruger:</span><span class="sxs-lookup"><span data-stu-id="ada25-116">To verify the "User Type" for the affected user.</span></span>
+<span data-ttu-id="60e2a-116">Sådan kontrollerer du "Brugertype" for den pågældende bruger:</span><span class="sxs-lookup"><span data-stu-id="60e2a-116">To verify the "User Type" for the affected user.</span></span>
 
 ```
 PS C:\>Get-AzureADUser -ObjectId "testUpn@tenant.com"
 ```
-<span data-ttu-id="ada25-117">Kommandoen returnerer følgende oplysninger:</span><span class="sxs-lookup"><span data-stu-id="ada25-117">The command returns the following information.</span></span>
+<span data-ttu-id="60e2a-117">Kommandoen returnerer følgende oplysninger:</span><span class="sxs-lookup"><span data-stu-id="60e2a-117">The command returns the following information.</span></span>
 ```
 ObjectId                             DisplayName UserPrincipalName      UserType
 --------                             ----------- -----------------      --------
 5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    testUpn@tenant.com     
 ```
-<span data-ttu-id="ada25-118">Bemærk **UserType**-egenskaben for brugeren.</span><span class="sxs-lookup"><span data-stu-id="ada25-118">Note the **UserType** property on the user.</span></span> <span data-ttu-id="ada25-119">Hvis **UserType** er tom, for eksempel ikke "Medlem" eller "Gæst", skal du opdatere **UserType** ved hjælp af følgende kommando.</span><span class="sxs-lookup"><span data-stu-id="ada25-119">If the **UserType** is blank, for example not "Member" or "Guest", update the **UserType** using the following command.</span></span>
+<span data-ttu-id="60e2a-118">Bemærk **UserType**-egenskaben for brugeren.</span><span class="sxs-lookup"><span data-stu-id="60e2a-118">Note the **UserType** property on the user.</span></span> <span data-ttu-id="60e2a-119">Hvis **UserType** er tom, for eksempel ikke "Medlem" eller "Gæst", skal du opdatere **UserType** ved hjælp af følgende kommando.</span><span class="sxs-lookup"><span data-stu-id="60e2a-119">If the **UserType** is blank, for example not "Member" or "Guest", update the **UserType** using the following command.</span></span>
 
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member

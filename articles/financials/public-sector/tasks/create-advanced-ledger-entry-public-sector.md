@@ -17,36 +17,36 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: efb0fa85c5c34cf058bf9c48a6d6928c9b2d7acd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 17b26b1cf9018671d31e3e1860e0c282b038f5ce
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370264"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537682"
 ---
-# <a name="create-an-advanced-ledger-entry-in-the-public-sector"></a><span data-ttu-id="dd4b5-103">Oprette en avanceret finanspost i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="dd4b5-103">Create an advanced ledger entry in the public sector</span></span>
+# <a name="create-an-advanced-ledger-entry-in-the-public-sector"></a><span data-ttu-id="08c33-103">Oprette en avanceret finanspost i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="08c33-103">Create an advanced ledger entry in the public sector</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="dd4b5-104">Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-104">Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries.</span></span> <span data-ttu-id="dd4b5-105">For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-105">For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.</span></span> <span data-ttu-id="dd4b5-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="08c33-104">Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter.</span><span class="sxs-lookup"><span data-stu-id="08c33-104">Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries.</span></span> <span data-ttu-id="08c33-105">For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt.</span><span class="sxs-lookup"><span data-stu-id="08c33-105">For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.</span></span> <span data-ttu-id="08c33-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="08c33-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. <span data-ttu-id="dd4b5-107">Gå til Finans > Kladdeposteringer > Avancerede finansposter.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-107">Go to General ledger > Journal entries > Advanced ledger entries.</span></span>
-2. <span data-ttu-id="dd4b5-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-108">Click New.</span></span>
-3. <span data-ttu-id="dd4b5-109">Angiv en dato i datofeltet Regnskab.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-109">In the Accounting date field, enter a date.</span></span>
-4. <span data-ttu-id="dd4b5-110">Klik på rullelisten i feltet Posteringstekst for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-110">In the Transaction text field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="dd4b5-111">På listen skal du klikke på posteringsteksten for denne avancerede finanspost.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-111">In the list, click the transaction text for this advanced ledger entry.</span></span>
-6. <span data-ttu-id="dd4b5-112">Klik på rullelisten i feltet Bogføringsdefinition for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-112">In the Posting definition field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="dd4b5-113">På listen skal du klikke på Bogføringsdefinition for denne avancerede finanspost.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-113">In the list, click the Posting definition for this advanced ledger entry.</span></span>
-8. <span data-ttu-id="dd4b5-114">Klik på rullelisten i feltet Årsagskode for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-114">In the Reason code field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="dd4b5-115">På listen skal du klikke på Årsagskode for denne avancerede finanspost.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-115">In the list, click the Reason code for this advanced ledger entry.</span></span>
-10. <span data-ttu-id="dd4b5-116">Skriv en værdi i feltet Årsagskommentar.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-116">In the Reason comment field, type a value.</span></span>
-11. <span data-ttu-id="dd4b5-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-117">Click OK.</span></span>
-12. <span data-ttu-id="dd4b5-118">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-118">Click Add line.</span></span>
-13. <span data-ttu-id="dd4b5-119">Klik på rullelisten i feltet Projekt-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-119">In the Project ID field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="dd4b5-120">Klik på et projekt-id på listen.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-120">In the list, click a project ID.</span></span>
-15. <span data-ttu-id="dd4b5-121">Klik på rullelisten i feltet Projektkategori for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-121">In the Project category field, click the drop-down button to open the lookup.</span></span>
-16. <span data-ttu-id="dd4b5-122">Klik på en projektkategori på listen.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-122">In the list, click a project category.</span></span>
-    * <span data-ttu-id="dd4b5-123">Hvis du vælger projektkategorien, angives finanskontoen automatisk.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-123">If you select the project category, the ledger account is entered automatically.</span></span>  
-    * <span data-ttu-id="dd4b5-124">Føj et debetbeløb eller kreditbeløb til linjen.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-124">Add a debit or a credit amount to this line.</span></span> <span data-ttu-id="dd4b5-125">Hvis det er nødvendigt, skal du klikke på Tilføj linje for at tilføje flere linjer.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-125">If needed, click Add line to add more lines.</span></span>  
-17. <span data-ttu-id="dd4b5-126">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dd4b5-126">Click Save.</span></span>
+1. <span data-ttu-id="08c33-107">Gå til Finans > Kladdeposteringer > Avancerede finansposter.</span><span class="sxs-lookup"><span data-stu-id="08c33-107">Go to General ledger > Journal entries > Advanced ledger entries.</span></span>
+2. <span data-ttu-id="08c33-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="08c33-108">Click New.</span></span>
+3. <span data-ttu-id="08c33-109">Angiv en dato i datofeltet Regnskab.</span><span class="sxs-lookup"><span data-stu-id="08c33-109">In the Accounting date field, enter a date.</span></span>
+4. <span data-ttu-id="08c33-110">Klik på rullelisten i feltet Posteringstekst for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="08c33-110">In the Transaction text field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="08c33-111">På listen skal du klikke på posteringsteksten for denne avancerede finanspost.</span><span class="sxs-lookup"><span data-stu-id="08c33-111">In the list, click the transaction text for this advanced ledger entry.</span></span>
+6. <span data-ttu-id="08c33-112">Klik på rullelisten i feltet Bogføringsdefinition for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="08c33-112">In the Posting definition field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="08c33-113">På listen skal du klikke på Bogføringsdefinition for denne avancerede finanspost.</span><span class="sxs-lookup"><span data-stu-id="08c33-113">In the list, click the Posting definition for this advanced ledger entry.</span></span>
+8. <span data-ttu-id="08c33-114">Klik på rullelisten i feltet Årsagskode for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="08c33-114">In the Reason code field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="08c33-115">På listen skal du klikke på Årsagskode for denne avancerede finanspost.</span><span class="sxs-lookup"><span data-stu-id="08c33-115">In the list, click the Reason code for this advanced ledger entry.</span></span>
+10. <span data-ttu-id="08c33-116">Skriv en værdi i feltet Årsagskommentar.</span><span class="sxs-lookup"><span data-stu-id="08c33-116">In the Reason comment field, type a value.</span></span>
+11. <span data-ttu-id="08c33-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="08c33-117">Click OK.</span></span>
+12. <span data-ttu-id="08c33-118">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="08c33-118">Click Add line.</span></span>
+13. <span data-ttu-id="08c33-119">Klik på rullelisten i feltet Projekt-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="08c33-119">In the Project ID field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="08c33-120">Klik på et projekt-id på listen.</span><span class="sxs-lookup"><span data-stu-id="08c33-120">In the list, click a project ID.</span></span>
+15. <span data-ttu-id="08c33-121">Klik på rullelisten i feltet Projektkategori for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="08c33-121">In the Project category field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="08c33-122">Klik på en projektkategori på listen.</span><span class="sxs-lookup"><span data-stu-id="08c33-122">In the list, click a project category.</span></span>
+    * <span data-ttu-id="08c33-123">Hvis du vælger projektkategorien, angives finanskontoen automatisk.</span><span class="sxs-lookup"><span data-stu-id="08c33-123">If you select the project category, the ledger account is entered automatically.</span></span>  
+    * <span data-ttu-id="08c33-124">Føj et debetbeløb eller kreditbeløb til linjen.</span><span class="sxs-lookup"><span data-stu-id="08c33-124">Add a debit or a credit amount to this line.</span></span> <span data-ttu-id="08c33-125">Hvis det er nødvendigt, skal du klikke på Tilføj linje for at tilføje flere linjer.</span><span class="sxs-lookup"><span data-stu-id="08c33-125">If needed, click Add line to add more lines.</span></span>  
+17. <span data-ttu-id="08c33-126">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="08c33-126">Click Save.</span></span>
 
