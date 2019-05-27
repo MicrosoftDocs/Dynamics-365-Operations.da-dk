@@ -1,12 +1,12 @@
 ---
 title: Få adgang til funktioner til forhåndsvisning i Talent
 description: Dette emne beskriver, hvordan administratorer kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner.
-author: andreabichsel
+author: tracykeya
 manager: AnnBe
-ms.date: 04/17/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,15 +15,15 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: trkeya
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 060a36185641d5bb7912631b7c857c5c4331c8b7
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
+ms.openlocfilehash: 72e2a3c62c7aab0f5cf8900c540a22d91be00609
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517654"
 ---
 # <a name="access-preview-features-in-talent"></a>Få adgang til funktioner til forhåndsvisning i Talent
 
@@ -72,6 +72,7 @@ Du kan bruge indstillingen **Prøveversioner** i Microsoft Dynamics 365 for Tale
 
 - **Kandidatansøgning** – Både interne og eksterne kandidater kan nu ansøge direkte fra jobsiden på karrierewebstedet.
 - **Offer Management** – Brugerne kan nu oprette tilbudsbreve fra skabeloner, der indeholder pladsholdere. Efterhånden som kandidaterne avancerer til jobtilbudsstadiet, kan rekrutteringsmedarbejder eller ansættelsesansvarlige bruge tilbudsværktøjet til at forberede en ansøgers formelle tilbud via skabeloner, sende tilbuddet til intern godkendelse og endelig sende tilbuddet til kandidaten til underskrivning. Der vil blive tilføjet mange nye funktioner til tilbudsværktøjet med tiden, og eksempelversionen vil blive opdateret med disse funktioner, når vi er klar til at frigive dem som eksempelfunktioner.
+- **[Analytiske rapporter](analytic-reports.md)** – Ansættelsesteam kan bruge nøglemålepunkter for ansættelsesprocesser til et enkelt job med Jobanalyser eller samlet metrik på tværs af alle job i Analysehubben.
 
 ### <a name="core-hr"></a>Grundlæggende personalefunktioner
 
