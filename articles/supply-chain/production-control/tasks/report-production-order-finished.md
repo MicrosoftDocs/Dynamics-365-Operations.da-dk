@@ -18,37 +18,37 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 97e67ff51e4bc4533aeb2485c34cd5ec8a882bb6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "320483"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558428"
 ---
-# <a name="report-a-production-order-as-finished"></a><span data-ttu-id="ac3d9-103">Rapportere en produktionsordre som færdig</span><span class="sxs-lookup"><span data-stu-id="ac3d9-103">Report a production order as finished</span></span>
+# <a name="report-a-production-order-as-finished"></a><span data-ttu-id="ae5ea-103">Rapportere en produktionsordre som færdig</span><span class="sxs-lookup"><span data-stu-id="ae5ea-103">Report a production order as finished</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ac3d9-104">Denne procedure viser, hvordan du færdigmelder en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-104">This procedure shows how to report a production order as finished.</span></span> <span data-ttu-id="ac3d9-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ac3d9-106">Dette er den sjette procedure ud af syv, der beskriver produktionsordrelivscyklussen.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-106">This is the sixth procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="ae5ea-104">Denne procedure viser, hvordan du færdigmelder en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-104">This procedure shows how to report a production order as finished.</span></span> <span data-ttu-id="ae5ea-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ae5ea-106">Dette er den sjette procedure ud af syv, der beskriver produktionsordrelivscyklussen.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-106">This is the sixth procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="report-a-production-order-as-finished"></a><span data-ttu-id="ac3d9-107">Rapportere en produktionsordre som færdig</span><span class="sxs-lookup"><span data-stu-id="ac3d9-107">Report a production order as finished</span></span>
-1. <span data-ttu-id="ac3d9-108">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="ac3d9-109">Vælg en produktionsordre, som har statussen Påbegyndt.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-109">Select a production order that has the Started status.</span></span>  
-2. <span data-ttu-id="ac3d9-110">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-110">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="ac3d9-111">Klik på Færdigmelding.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-111">Click Report as finished.</span></span>
-    * <span data-ttu-id="ac3d9-112">På denne side kan du bekræfte mængden af det færdige produkt, der skal færdigmeldes.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-112">On this page, you can confirm the quantity of the finished product to be reported as finished.</span></span>  
-4. <span data-ttu-id="ac3d9-113">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-113">Click the General tab.</span></span>
-5. <span data-ttu-id="ac3d9-114">Indstil Antal gode til '18'.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-114">Set Good quantity to '18'.</span></span>
-6. <span data-ttu-id="ac3d9-115">Indstil Antal fejl til '2'.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-115">Set Error quantity to '2'.</span></span>
-7. <span data-ttu-id="ac3d9-116">Vælg 'Materiale' i feltet Fejlårsag.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-116">In the Error cause field, select 'Material'.</span></span>
-8. <span data-ttu-id="ac3d9-117">Markér eller fjern markering af afkrydsningsfeltet Slutkørsel.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-117">Select or clear the End job check box.</span></span>
-9. <span data-ttu-id="ac3d9-118">Markér eller fjern markeringen i afkrydsningsfeltet Accepter fejl.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-118">Select or clear the Accept error check box.</span></span>
-10. <span data-ttu-id="ac3d9-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-119">Click OK.</span></span>
+## <a name="report-a-production-order-as-finished"></a><span data-ttu-id="ae5ea-107">Rapportere en produktionsordre som færdig</span><span class="sxs-lookup"><span data-stu-id="ae5ea-107">Report a production order as finished</span></span>
+1. <span data-ttu-id="ae5ea-108">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="ae5ea-109">Vælg en produktionsordre, som har statussen Påbegyndt.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-109">Select a production order that has the Started status.</span></span>  
+2. <span data-ttu-id="ae5ea-110">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="ae5ea-111">Klik på Færdigmelding.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-111">Click Report as finished.</span></span>
+    * <span data-ttu-id="ae5ea-112">På denne side kan du bekræfte mængden af det færdige produkt, der skal færdigmeldes.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-112">On this page, you can confirm the quantity of the finished product to be reported as finished.</span></span>  
+4. <span data-ttu-id="ae5ea-113">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-113">Click the General tab.</span></span>
+5. <span data-ttu-id="ae5ea-114">Indstil Antal gode til '18'.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-114">Set Good quantity to '18'.</span></span>
+6. <span data-ttu-id="ae5ea-115">Indstil Antal fejl til '2'.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-115">Set Error quantity to '2'.</span></span>
+7. <span data-ttu-id="ae5ea-116">Vælg 'Materiale' i feltet Fejlårsag.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-116">In the Error cause field, select 'Material'.</span></span>
+8. <span data-ttu-id="ae5ea-117">Markér eller fjern markering af afkrydsningsfeltet Slutkørsel.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-117">Select or clear the End job check box.</span></span>
+9. <span data-ttu-id="ae5ea-118">Markér eller fjern markeringen i afkrydsningsfeltet Accepter fejl.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-118">Select or clear the Accept error check box.</span></span>
+10. <span data-ttu-id="ae5ea-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-119">Click OK.</span></span>
 
-## <a name="verify-the-report-as-finished-journal"></a><span data-ttu-id="ac3d9-120">Bekræft færdigmeldingskladden</span><span class="sxs-lookup"><span data-stu-id="ac3d9-120">Verify the Report as finished journal</span></span>
-1. <span data-ttu-id="ac3d9-121">Klik på Vis i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-121">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="ac3d9-122">Klik på Færdigmeldt.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-122">Click Reported as finished.</span></span>
-3. <span data-ttu-id="ac3d9-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-123">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="ac3d9-124">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-124">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="ac3d9-125">Færdigmeldingskladden bogføres.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="ac3d9-126">Hvis du vil foretage ændringer i kladden, kan du oprette en ny kladde, hvor du kan foretage ændringer manuelt.</span><span class="sxs-lookup"><span data-stu-id="ac3d9-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
+## <a name="verify-the-report-as-finished-journal"></a><span data-ttu-id="ae5ea-120">Bekræft færdigmeldingskladden</span><span class="sxs-lookup"><span data-stu-id="ae5ea-120">Verify the Report as finished journal</span></span>
+1. <span data-ttu-id="ae5ea-121">Klik på Vis i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-121">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="ae5ea-122">Klik på Færdigmeldt.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-122">Click Reported as finished.</span></span>
+3. <span data-ttu-id="ae5ea-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-123">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="ae5ea-124">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-124">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="ae5ea-125">Færdigmeldingskladden bogføres.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="ae5ea-126">Hvis du vil foretage ændringer i kladden, kan du oprette en ny kladde, hvor du kan foretage ændringer manuelt.</span><span class="sxs-lookup"><span data-stu-id="ae5ea-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
 

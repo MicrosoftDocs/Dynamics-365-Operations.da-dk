@@ -17,33 +17,33 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 7a603d89749242a4c6039ab83da286ec6ab727d8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "328533"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548410"
 ---
-# <a name="create-a-new-product"></a><span data-ttu-id="f972b-103">Opret et nyt produkt</span><span class="sxs-lookup"><span data-stu-id="f972b-103">Create a new product</span></span>
+# <a name="create-a-new-product"></a><span data-ttu-id="11683-103">Opret et nyt produkt</span><span class="sxs-lookup"><span data-stu-id="11683-103">Create a new product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f972b-104">Denne opgave viser, hvordan du opretter et nyt delt produkt.</span><span class="sxs-lookup"><span data-stu-id="f972b-104">This task shows how to create a new shared product.</span></span> <span data-ttu-id="f972b-105">Den udføres normalt af en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="f972b-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="f972b-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="f972b-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="11683-104">Denne opgave viser, hvordan du opretter et nyt delt produkt.</span><span class="sxs-lookup"><span data-stu-id="11683-104">This task shows how to create a new shared product.</span></span> <span data-ttu-id="11683-105">Den udføres normalt af en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="11683-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="11683-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="11683-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="f972b-107">Gå til Administration af produktoplysninger > Produkter > Produkter.</span><span class="sxs-lookup"><span data-stu-id="f972b-107">Go to Product information management > Products > Products.</span></span>
+1. <span data-ttu-id="11683-107">Gå til Administration af produktoplysninger > Produkter > Produkter.</span><span class="sxs-lookup"><span data-stu-id="11683-107">Go to Product information management > Products > Products.</span></span>
 
-## <a name="create-a-product"></a><span data-ttu-id="f972b-108">Oprette et produkt</span><span class="sxs-lookup"><span data-stu-id="f972b-108">Create a product</span></span>
-1. <span data-ttu-id="f972b-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="f972b-109">Click New.</span></span>
-2. <span data-ttu-id="f972b-110">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="f972b-110">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="f972b-111">Hvis der ikke er konfigureret en nummerserie for produktnummeret, skal det angives manuelt.</span><span class="sxs-lookup"><span data-stu-id="f972b-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
-3. <span data-ttu-id="f972b-112">Angiv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="f972b-112">In the Product name field, type a value.</span></span>
-    * <span data-ttu-id="f972b-113">Produktnavnet angives som standard til søgenavnet.</span><span class="sxs-lookup"><span data-stu-id="f972b-113">The product name defaults to the search name.</span></span> <span data-ttu-id="f972b-114">Du kan ændre dette efter behov.</span><span class="sxs-lookup"><span data-stu-id="f972b-114">You can change this if needed.</span></span>  
-4. <span data-ttu-id="f972b-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f972b-115">Click OK.</span></span>
+## <a name="create-a-product"></a><span data-ttu-id="11683-108">Oprette et produkt</span><span class="sxs-lookup"><span data-stu-id="11683-108">Create a product</span></span>
+1. <span data-ttu-id="11683-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="11683-109">Click New.</span></span>
+2. <span data-ttu-id="11683-110">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="11683-110">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="11683-111">Hvis der ikke er konfigureret en nummerserie for produktnummeret, skal det angives manuelt.</span><span class="sxs-lookup"><span data-stu-id="11683-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
+3. <span data-ttu-id="11683-112">Angiv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="11683-112">In the Product name field, type a value.</span></span>
+    * <span data-ttu-id="11683-113">Produktnavnet angives som standard til søgenavnet.</span><span class="sxs-lookup"><span data-stu-id="11683-113">The product name defaults to the search name.</span></span> <span data-ttu-id="11683-114">Du kan ændre dette efter behov.</span><span class="sxs-lookup"><span data-stu-id="11683-114">You can change this if needed.</span></span>  
+4. <span data-ttu-id="11683-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11683-115">Click OK.</span></span>
 
-## <a name="set-up-dimension-groups"></a><span data-ttu-id="f972b-116">Konfigurere dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="f972b-116">Set up dimension groups</span></span>
-1. <span data-ttu-id="f972b-117">Klik på Dimensionsgrupper for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="f972b-117">Click Dimension groups to open the drop dialog.</span></span>
-2. <span data-ttu-id="f972b-118">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="f972b-118">In the Storage dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="f972b-119">Lagringsdimensionsgruppen bestemmer, hvilke lagringsdimensioner du skal angive for hver transaktion for produktet, og hvordan den spores på lageret.</span><span class="sxs-lookup"><span data-stu-id="f972b-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
-3. <span data-ttu-id="f972b-120">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="f972b-120">In the Tracking dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="f972b-121">Lagringsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du skal angive for hver transaktion for produktet, og hvordan den håndteres på lageret.</span><span class="sxs-lookup"><span data-stu-id="f972b-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
-4. <span data-ttu-id="f972b-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f972b-122">Click OK.</span></span>
+## <a name="set-up-dimension-groups"></a><span data-ttu-id="11683-116">Konfigurere dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="11683-116">Set up dimension groups</span></span>
+1. <span data-ttu-id="11683-117">Klik på Dimensionsgrupper for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="11683-117">Click Dimension groups to open the drop dialog.</span></span>
+2. <span data-ttu-id="11683-118">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="11683-118">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="11683-119">Lagringsdimensionsgruppen bestemmer, hvilke lagringsdimensioner du skal angive for hver transaktion for produktet, og hvordan den spores på lageret.</span><span class="sxs-lookup"><span data-stu-id="11683-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
+3. <span data-ttu-id="11683-120">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="11683-120">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="11683-121">Lagringsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du skal angive for hver transaktion for produktet, og hvordan den håndteres på lageret.</span><span class="sxs-lookup"><span data-stu-id="11683-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
+4. <span data-ttu-id="11683-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11683-122">Click OK.</span></span>
 
