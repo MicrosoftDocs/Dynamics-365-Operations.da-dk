@@ -18,29 +18,29 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 07e4b9f32a3a74b273272bd0b759d35c2a963e2e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360641"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548295"
 ---
-# <a name="create-and-associate-registers"></a><span data-ttu-id="6a887-103"> Oprette og tilknytte registre</span><span class="sxs-lookup"><span data-stu-id="6a887-103">Create and associate registers</span></span>
+# <a name="create-and-associate-registers"></a><span data-ttu-id="78b0b-103"> Oprette og tilknytte registre</span><span class="sxs-lookup"><span data-stu-id="78b0b-103">Create and associate registers</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6a887-104">Denne fremgangsmåde viser, hvordan du kan oprette en POS-kasse.</span><span class="sxs-lookup"><span data-stu-id="6a887-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="6a887-105">Denne procedure bruger demodatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="6a887-105">This procedure uses the demo data company USRT.</span></span>
+<span data-ttu-id="78b0b-104">Denne fremgangsmåde viser, hvordan du kan oprette en POS-kasse.</span><span class="sxs-lookup"><span data-stu-id="78b0b-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="78b0b-105">Denne procedure bruger demodatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="78b0b-105">This procedure uses the demo data company USRT.</span></span>
 
-1. <span data-ttu-id="6a887-106">Gå til Detail og handel > Konfiguration af kanal > POS-opsætning > Kasseapparater.</span><span class="sxs-lookup"><span data-stu-id="6a887-106">Go to Retail and commerce > Channel setup > POS setup > Registers.</span></span>
-2. <span data-ttu-id="6a887-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6a887-107">Click New.</span></span>
-3. <span data-ttu-id="6a887-108">Indtast et id til den nye kasse i feltet Kassenummer.</span><span class="sxs-lookup"><span data-stu-id="6a887-108">In the Register number field, type an ID for the new register.</span></span>
-    * <span data-ttu-id="6a887-109">Kasse-id'et indeholder typisk koder, der kan hjælpe med at knytte kassen til den butik, som den tilhører, og placeringen i butikken.</span><span class="sxs-lookup"><span data-stu-id="6a887-109">The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.</span></span>  
-4. <span data-ttu-id="6a887-110">Skriv et beskrivende navn til kassen i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="6a887-110">In the Name field, type a descriptive name for the register..</span></span>
-5. <span data-ttu-id="6a887-111">Indtast eller vælg en værdi i feltet Butiksnummer.</span><span class="sxs-lookup"><span data-stu-id="6a887-111">In the Store number field, enter or select a value.</span></span>
-6. <span data-ttu-id="6a887-112">Indtast eller vælg en værdi i feltet Hardwareprofil.</span><span class="sxs-lookup"><span data-stu-id="6a887-112">In the Hardware profile field, enter or select a value.</span></span>
-    * <span data-ttu-id="6a887-113">Hardwareprofiler bruges til at angive detailenheder, der skal knyttes til kassen, f.eks. pengeskuffen og bonprinteren.</span><span class="sxs-lookup"><span data-stu-id="6a887-113">Hardware profiles are used to specify the retail peripherals that will be connected to the register, such as cash drawer and receipt printer.</span></span>  
-7. <span data-ttu-id="6a887-114">Indtast eller vælg en værdi i feltet Visuel profil.</span><span class="sxs-lookup"><span data-stu-id="6a887-114">In the Visual profile field, enter or select a value.</span></span>
-    * <span data-ttu-id="6a887-115">Visuelle profiler bruges til at angive de billeder, der bruges i POS-baggrunden og på logonside samt temaer for POS.</span><span class="sxs-lookup"><span data-stu-id="6a887-115">Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.</span></span>  
-8. <span data-ttu-id="6a887-116">Skriv en værdi i feltet Autorisationskode - POS-kasseapparatnummer.</span><span class="sxs-lookup"><span data-stu-id="6a887-116">In the EFT POS register number field, type a value.</span></span>
-    * <span data-ttu-id="6a887-117">Autorisationskode – POS-kasseapparatnummer bruges til at informere betalingsprocessor om, hvilken betalingsterminal der sender anmodninger om godkendelse.</span><span class="sxs-lookup"><span data-stu-id="6a887-117">The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests.</span></span> <span data-ttu-id="6a887-118">Denne værdi kaldes ofte "Terminal-id" eller "TID".</span><span class="sxs-lookup"><span data-stu-id="6a887-118">This value is often called the "Terminal ID" or “TID”.</span></span> <span data-ttu-id="6a887-119">TID findes normalt på en mærkat på betalingsenheden.</span><span class="sxs-lookup"><span data-stu-id="6a887-119">The TID can generally be found on a sticker on the payment device.</span></span>  
-9. <span data-ttu-id="6a887-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6a887-120">Click Save.</span></span>
+1. <span data-ttu-id="78b0b-106">Gå til Detail og handel > Konfiguration af kanal > POS-opsætning > Kasseapparater.</span><span class="sxs-lookup"><span data-stu-id="78b0b-106">Go to Retail and commerce > Channel setup > POS setup > Registers.</span></span>
+2. <span data-ttu-id="78b0b-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="78b0b-107">Click New.</span></span>
+3. <span data-ttu-id="78b0b-108">Indtast et id til den nye kasse i feltet Kassenummer.</span><span class="sxs-lookup"><span data-stu-id="78b0b-108">In the Register number field, type an ID for the new register.</span></span>
+    * <span data-ttu-id="78b0b-109">Kasse-id'et indeholder typisk koder, der kan hjælpe med at knytte kassen til den butik, som den tilhører, og placeringen i butikken.</span><span class="sxs-lookup"><span data-stu-id="78b0b-109">The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.</span></span>  
+4. <span data-ttu-id="78b0b-110">Skriv et beskrivende navn til kassen i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="78b0b-110">In the Name field, type a descriptive name for the register..</span></span>
+5. <span data-ttu-id="78b0b-111">Indtast eller vælg en værdi i feltet Butiksnummer.</span><span class="sxs-lookup"><span data-stu-id="78b0b-111">In the Store number field, enter or select a value.</span></span>
+6. <span data-ttu-id="78b0b-112">Indtast eller vælg en værdi i feltet Hardwareprofil.</span><span class="sxs-lookup"><span data-stu-id="78b0b-112">In the Hardware profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="78b0b-113">Hardwareprofiler bruges til at angive detailenheder, der skal knyttes til kassen, f.eks. pengeskuffen og bonprinteren.</span><span class="sxs-lookup"><span data-stu-id="78b0b-113">Hardware profiles are used to specify the retail peripherals that will be connected to the register, such as cash drawer and receipt printer.</span></span>  
+7. <span data-ttu-id="78b0b-114">Indtast eller vælg en værdi i feltet Visuel profil.</span><span class="sxs-lookup"><span data-stu-id="78b0b-114">In the Visual profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="78b0b-115">Visuelle profiler bruges til at angive de billeder, der bruges i POS-baggrunden og på logonside samt temaer for POS.</span><span class="sxs-lookup"><span data-stu-id="78b0b-115">Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.</span></span>  
+8. <span data-ttu-id="78b0b-116">Skriv en værdi i feltet Autorisationskode - POS-kasseapparatnummer.</span><span class="sxs-lookup"><span data-stu-id="78b0b-116">In the EFT POS register number field, type a value.</span></span>
+    * <span data-ttu-id="78b0b-117">Autorisationskode – POS-kasseapparatnummer bruges til at informere betalingsprocessor om, hvilken betalingsterminal der sender anmodninger om godkendelse.</span><span class="sxs-lookup"><span data-stu-id="78b0b-117">The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests.</span></span> <span data-ttu-id="78b0b-118">Denne værdi kaldes ofte "Terminal-id" eller "TID".</span><span class="sxs-lookup"><span data-stu-id="78b0b-118">This value is often called the "Terminal ID" or “TID”.</span></span> <span data-ttu-id="78b0b-119">TID findes normalt på en mærkat på betalingsenheden.</span><span class="sxs-lookup"><span data-stu-id="78b0b-119">The TID can generally be found on a sticker on the payment device.</span></span>  
+9. <span data-ttu-id="78b0b-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="78b0b-120">Click Save.</span></span>
 

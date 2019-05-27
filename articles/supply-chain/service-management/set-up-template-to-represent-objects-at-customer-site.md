@@ -19,38 +19,38 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ef587b9fcb4f14715a4c830e8a3de8ebe21a71ed
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347186"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572992"
 ---
-# <a name="set-up-template-to-represent-objects-at-customer-site"></a><span data-ttu-id="8259a-103">Konfigurere en skabelon til visning af objekter på et kundewebsted</span><span class="sxs-lookup"><span data-stu-id="8259a-103">Set up template to represent objects at customer site</span></span> 
+# <a name="set-up-template-to-represent-objects-at-customer-site"></a><span data-ttu-id="4cf44-103">Konfigurere en skabelon til visning af objekter på et kundewebsted</span><span class="sxs-lookup"><span data-stu-id="4cf44-103">Set up template to represent objects at customer site</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8259a-104">Brug denne procedure til at oprette en skabelon, der repræsenterer objekter på et kundewebsted.</span><span class="sxs-lookup"><span data-stu-id="8259a-104">Use this procedure to set up a template that represents objects at a customer site.</span></span>
+<span data-ttu-id="4cf44-104">Brug denne procedure til at oprette en skabelon, der repræsenterer objekter på et kundewebsted.</span><span class="sxs-lookup"><span data-stu-id="4cf44-104">Use this procedure to set up a template that represents objects at a customer site.</span></span>
 
-1.  <span data-ttu-id="8259a-105">Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.</span><span class="sxs-lookup"><span data-stu-id="8259a-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="4cf44-105">Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.</span><span class="sxs-lookup"><span data-stu-id="4cf44-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="8259a-106">Dobbeltklik på en serviceaftale, eller klik på **Serviceaftale** for at oprette en ny serviceaftale.</span><span class="sxs-lookup"><span data-stu-id="8259a-106">Double-click a service agreement, or click **Service agreement** to create a new service agreement.</span></span>
+2.  <span data-ttu-id="4cf44-106">Dobbeltklik på en serviceaftale, eller klik på **Serviceaftale** for at oprette en ny serviceaftale.</span><span class="sxs-lookup"><span data-stu-id="4cf44-106">Double-click a service agreement, or click **Service agreement** to create a new service agreement.</span></span>
 
-3.  <span data-ttu-id="8259a-107">Klik på fanen **Opsætning**.</span><span class="sxs-lookup"><span data-stu-id="8259a-107">Click the **Setup** tab.</span></span>
+3.  <span data-ttu-id="4cf44-107">Klik på fanen **Opsætning**.</span><span class="sxs-lookup"><span data-stu-id="4cf44-107">Click the **Setup** tab.</span></span>
 
-4.  <span data-ttu-id="8259a-108">Klik på **Serviceobjekter**, hvis du vil knytte en styklisteskabelon til serviceaftalen.</span><span class="sxs-lookup"><span data-stu-id="8259a-108">Click **Service objects** to attach a template bill of materials (BOM) to the service agreement.</span></span>
+4.  <span data-ttu-id="4cf44-108">Klik på **Serviceobjekter**, hvis du vil knytte en styklisteskabelon til serviceaftalen.</span><span class="sxs-lookup"><span data-stu-id="4cf44-108">Click **Service objects** to attach a template bill of materials (BOM) to the service agreement.</span></span>
 
-5.  <span data-ttu-id="8259a-109">I formularen **Serviceobjekter** skal du vælge et serviceobjekt og derefter klikke på **Funktioner** \> **Vedhæft styklisteskabelon**.</span><span class="sxs-lookup"><span data-stu-id="8259a-109">In the **Service objects** form, select a service object, and then click **Functions** \> **Attach template BOM**.</span></span>
+5.  <span data-ttu-id="4cf44-109">I formularen **Serviceobjekter** skal du vælge et serviceobjekt og derefter klikke på **Funktioner** \> **Vedhæft styklisteskabelon**.</span><span class="sxs-lookup"><span data-stu-id="4cf44-109">In the **Service objects** form, select a service object, and then click **Functions** \> **Attach template BOM**.</span></span>
 
-6.  <span data-ttu-id="8259a-110">I formularen **Vælg styklisteskabelon** skal du vælge en styklisteskabelon i feltet **Styklisteskabelon** og derefter klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="8259a-110">In the **Select template BOM** form, select a template BOM in the **Template BOM** field, and then click **OK**.</span></span>
+6.  <span data-ttu-id="4cf44-110">I formularen **Vælg styklisteskabelon** skal du vælge en styklisteskabelon i feltet **Styklisteskabelon** og derefter klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="4cf44-110">In the **Select template BOM** form, select a template BOM in the **Template BOM** field, and then click **OK**.</span></span>
 
-7.  <span data-ttu-id="8259a-111">Klik på **Designer** i formularen **Serviceobjekter** for at redigere styklisteskabelonen, så styklisten repræsenterer de objekter, du ønsker.</span><span class="sxs-lookup"><span data-stu-id="8259a-111">In the **Service objects** form, click **Designer** to modify the template BOM so that the BOM represents the objects that you want.</span></span>
+7.  <span data-ttu-id="4cf44-111">Klik på **Designer** i formularen **Serviceobjekter** for at redigere styklisteskabelonen, så styklisten repræsenterer de objekter, du ønsker.</span><span class="sxs-lookup"><span data-stu-id="4cf44-111">In the **Service objects** form, click **Designer** to modify the template BOM so that the BOM represents the objects that you want.</span></span>
 
-8.  <span data-ttu-id="8259a-112">Luk de forskellige forms for at gemme ændringerne.</span><span class="sxs-lookup"><span data-stu-id="8259a-112">Close the forms to save your changes.</span></span>
+8.  <span data-ttu-id="4cf44-112">Luk de forskellige forms for at gemme ændringerne.</span><span class="sxs-lookup"><span data-stu-id="4cf44-112">Close the forms to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8259a-113">Se også</span><span class="sxs-lookup"><span data-stu-id="8259a-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4cf44-113">Se også</span><span class="sxs-lookup"><span data-stu-id="4cf44-113">See also</span></span>
 
-[<span data-ttu-id="8259a-114">Administrere styklisteskabeloner på objektrelationer</span><span class="sxs-lookup"><span data-stu-id="8259a-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
+[<span data-ttu-id="4cf44-114">Administrere styklisteskabeloner på objektrelationer</span><span class="sxs-lookup"><span data-stu-id="4cf44-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
 
   
 

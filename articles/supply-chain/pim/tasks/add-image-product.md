@@ -17,23 +17,23 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c663c9f6b4f74ea20f0481632af9eef303ba27ed
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359468"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570128"
 ---
-# <a name="add-an-image-to-a-product"></a><span data-ttu-id="8ef85-103">Tilføje et billede til et produkt</span><span class="sxs-lookup"><span data-stu-id="8ef85-103">Add an image to a product</span></span>
+# <a name="add-an-image-to-a-product"></a><span data-ttu-id="007d8-103">Tilføje et billede til et produkt</span><span class="sxs-lookup"><span data-stu-id="007d8-103">Add an image to a product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8ef85-104">Denne fremgangsmåde viser, hvordan du føjer et billede til et produkt. Det demodatafirma, der er brugt til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="8ef85-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="007d8-104">Denne fremgangsmåde viser, hvordan du føjer et billede til et produkt. Det demodatafirma, der er brugt til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="007d8-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="8ef85-105">Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="8ef85-105">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="8ef85-106">Udvid faktaboksen Produktbillede.</span><span class="sxs-lookup"><span data-stu-id="8ef85-106">Expand the Product image FactBox.</span></span>
-3. <span data-ttu-id="8ef85-107">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8ef85-107">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="8ef85-108">I dette eksempel skal du vælge varenummer C0002.</span><span class="sxs-lookup"><span data-stu-id="8ef85-108">For example, select the item number C0002.</span></span>  
-4. <span data-ttu-id="8ef85-109">Klik på Skift billede.</span><span class="sxs-lookup"><span data-stu-id="8ef85-109">Click Change image.</span></span>
-5. <span data-ttu-id="8ef85-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8ef85-110">Click New.</span></span>
-    * <span data-ttu-id="8ef85-111">Klik på Gennemse.</span><span class="sxs-lookup"><span data-stu-id="8ef85-111">Click Browse.</span></span> <span data-ttu-id="8ef85-112">Find det billede, du vil bruge, markér det, og luk derefter dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="8ef85-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
+1. <span data-ttu-id="007d8-105">Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="007d8-105">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="007d8-106">Udvid faktaboksen Produktbillede.</span><span class="sxs-lookup"><span data-stu-id="007d8-106">Expand the Product image FactBox.</span></span>
+3. <span data-ttu-id="007d8-107">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="007d8-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="007d8-108">I dette eksempel skal du vælge varenummer C0002.</span><span class="sxs-lookup"><span data-stu-id="007d8-108">For example, select the item number C0002.</span></span>  
+4. <span data-ttu-id="007d8-109">Klik på Skift billede.</span><span class="sxs-lookup"><span data-stu-id="007d8-109">Click Change image.</span></span>
+5. <span data-ttu-id="007d8-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="007d8-110">Click New.</span></span>
+    * <span data-ttu-id="007d8-111">Klik på Gennemse.</span><span class="sxs-lookup"><span data-stu-id="007d8-111">Click Browse.</span></span> <span data-ttu-id="007d8-112">Find det billede, du vil bruge, markér det, og luk derefter dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="007d8-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
 

@@ -17,28 +17,28 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4543cf7eaa0b1ef8e32d3fdafa2c354cd3739256
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554205"
 ---
-# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="9cb9a-103">Konfigurer momsrapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="9cb9a-103">Set up sales tax reporting codes</span></span>
+# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="51ba8-103">Konfigurer momsrapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="51ba8-103">Set up sales tax reporting codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="9cb9a-104">Momsrapporteringskoderne refererer til et feltnummer i en momsrapport.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-104">The Sales tax reporting codes refer to a field number on a sales tax report.</span></span> <span data-ttu-id="9cb9a-105">De bruges i landespecifikke rapportlayout og i rapporten Momsafregning pr. kode til at udskrive momsbeløb for en afregningsperiode, der er opsummeret pr. rapporteringskode.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-105">They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code.</span></span> <span data-ttu-id="9cb9a-106">Når du har oprettet momsrapporteringskoderne, kan du referere til dem i oversigtspanelet Rapportopsætning på siden Momskode.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-106">After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page.</span></span> 
+<span data-ttu-id="51ba8-104">Momsrapporteringskoderne refererer til et feltnummer i en momsrapport.</span><span class="sxs-lookup"><span data-stu-id="51ba8-104">The Sales tax reporting codes refer to a field number on a sales tax report.</span></span> <span data-ttu-id="51ba8-105">De bruges i landespecifikke rapportlayout og i rapporten Momsafregning pr. kode til at udskrive momsbeløb for en afregningsperiode, der er opsummeret pr. rapporteringskode.</span><span class="sxs-lookup"><span data-stu-id="51ba8-105">They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code.</span></span> <span data-ttu-id="51ba8-106">Når du har oprettet momsrapporteringskoderne, kan du referere til dem i oversigtspanelet Rapportopsætning på siden Momskode.</span><span class="sxs-lookup"><span data-stu-id="51ba8-106">After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page.</span></span> 
 
-<span data-ttu-id="9cb9a-107">Denne registrering anvender demofirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-107">This recording uses the DEMF demo company.</span></span>
+<span data-ttu-id="51ba8-107">Denne registrering anvender demofirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="51ba8-107">This recording uses the DEMF demo company.</span></span>
 
 
 
-1. <span data-ttu-id="9cb9a-108">Gå til Moms > Opsætning > Moms > Momsrapporteringskoder.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-108">Go to Tax > Setup > Sales tax > Sales tax reporting codes.</span></span>
-2. <span data-ttu-id="9cb9a-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-109">Click New.</span></span>
-3. <span data-ttu-id="9cb9a-110">Vælg det rapportlayout, som rapporteringskoden hører til.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-110">Select the report layout that the reporting code belongs to.</span></span>
-    * <span data-ttu-id="9cb9a-111">Dette layout bruges til at filtrere de tilgængelige rapporteringskoder til en momskode.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-111">This layout is used to filter the available reporting codes for a Sales tax code.</span></span> <span data-ttu-id="9cb9a-112">Hver momskode tilhører en afregningsperiode, der tilhører en momsmyndighed som bruger et rapportlayout.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-112">Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.</span></span>  
-4. <span data-ttu-id="9cb9a-113">Angiv et feltnummer, som henviser til et felt i en momsrapport.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-113">Enter a number that refers to a field on a sales tax report.</span></span>
-5. <span data-ttu-id="9cb9a-114">Angiv en beskrivelse, der skal vises i rapporter, i feltet Rapport.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-114">In the Report text field, enter a description to display on reports.</span></span>
-6. <span data-ttu-id="9cb9a-115">Angiv en beskrivelse til interne formål i feltet Kort beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-115">In the Brief description field, enter a description for internal purposes.</span></span>
-7. <span data-ttu-id="9cb9a-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9cb9a-116">Click Save.</span></span>
+1. <span data-ttu-id="51ba8-108">Gå til Moms > Opsætning > Moms > Momsrapporteringskoder.</span><span class="sxs-lookup"><span data-stu-id="51ba8-108">Go to Tax > Setup > Sales tax > Sales tax reporting codes.</span></span>
+2. <span data-ttu-id="51ba8-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="51ba8-109">Click New.</span></span>
+3. <span data-ttu-id="51ba8-110">Vælg det rapportlayout, som rapporteringskoden hører til.</span><span class="sxs-lookup"><span data-stu-id="51ba8-110">Select the report layout that the reporting code belongs to.</span></span>
+    * <span data-ttu-id="51ba8-111">Dette layout bruges til at filtrere de tilgængelige rapporteringskoder til en momskode.</span><span class="sxs-lookup"><span data-stu-id="51ba8-111">This layout is used to filter the available reporting codes for a Sales tax code.</span></span> <span data-ttu-id="51ba8-112">Hver momskode tilhører en afregningsperiode, der tilhører en momsmyndighed som bruger et rapportlayout.</span><span class="sxs-lookup"><span data-stu-id="51ba8-112">Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.</span></span>  
+4. <span data-ttu-id="51ba8-113">Angiv et feltnummer, som henviser til et felt i en momsrapport.</span><span class="sxs-lookup"><span data-stu-id="51ba8-113">Enter a number that refers to a field on a sales tax report.</span></span>
+5. <span data-ttu-id="51ba8-114">Angiv en beskrivelse, der skal vises i rapporter, i feltet Rapport.</span><span class="sxs-lookup"><span data-stu-id="51ba8-114">In the Report text field, enter a description to display on reports.</span></span>
+6. <span data-ttu-id="51ba8-115">Angiv en beskrivelse til interne formål i feltet Kort beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="51ba8-115">In the Brief description field, enter a description for internal purposes.</span></span>
+7. <span data-ttu-id="51ba8-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="51ba8-116">Click Save.</span></span>
 

@@ -17,23 +17,23 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: b0d72c88d6ba851e96ca07b896630549690e9396
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563687"
 ---
-# <a name="create-a-sales-tax-payment"></a><span data-ttu-id="8db30-103">Oprette en momsbetaling</span><span class="sxs-lookup"><span data-stu-id="8db30-103">Create a sales tax payment</span></span>
+# <a name="create-a-sales-tax-payment"></a><span data-ttu-id="7fc55-103">Oprette en momsbetaling</span><span class="sxs-lookup"><span data-stu-id="7fc55-103">Create a sales tax payment</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8db30-104">Jobbet Afregn og bogfør moms afregner momssaldi i momskonti og udligner dem til momsafregningskontoen for en given periode.</span><span class="sxs-lookup"><span data-stu-id="8db30-104">The settle and post sales tax job settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period.</span></span>
+<span data-ttu-id="7fc55-104">Jobbet Afregn og bogfør moms afregner momssaldi i momskonti og udligner dem til momsafregningskontoen for en given periode.</span><span class="sxs-lookup"><span data-stu-id="7fc55-104">The settle and post sales tax job settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period.</span></span>
 
-1. <span data-ttu-id="8db30-105">Gå til Moms > Opgørelser > Moms > Afregn og bogfør moms.</span><span class="sxs-lookup"><span data-stu-id="8db30-105">Go to Tax > Declarations > Sales tax > Settle and post sales tax.</span></span>
-2. <span data-ttu-id="8db30-106">Klik på rullelisten i feltet Afregningsperiode for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8db30-106">In the Settlement period field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="8db30-107">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8db30-107">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="8db30-108">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="8db30-108">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="8db30-109">Hvis indstillingen Medtag korrektioner ikke er markeret på siden Finansparametre, kan afregningen behandles for forskellige versioner.</span><span class="sxs-lookup"><span data-stu-id="8db30-109">If the Include corrections option is not selected on the General ledger parameters page, the settlement can be processed for different versions.</span></span> <span data-ttu-id="8db30-110">Oprindelig er den første afregning for et periodeinterval og kan kun behandles én gang for et periodeinterval.</span><span class="sxs-lookup"><span data-stu-id="8db30-110">Original is the first settlement for a period interval and can only processed once for a period interval.</span></span> <span data-ttu-id="8db30-111">Seneste rettelser udligner momsposteringer, der er bogført efter den oprindelige version er blevet oprettet.</span><span class="sxs-lookup"><span data-stu-id="8db30-111">Latest corrections will settle sales tax transactions which have been posted after the original version has been created.</span></span>   
-5. <span data-ttu-id="8db30-112">Angiv en dato i feltet Transaktionsdato.</span><span class="sxs-lookup"><span data-stu-id="8db30-112">In the Transaction date field, enter a date.</span></span>
-6. <span data-ttu-id="8db30-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8db30-113">Click OK.</span></span>
+1. <span data-ttu-id="7fc55-105">Gå til Moms > Opgørelser > Moms > Afregn og bogfør moms.</span><span class="sxs-lookup"><span data-stu-id="7fc55-105">Go to Tax > Declarations > Sales tax > Settle and post sales tax.</span></span>
+2. <span data-ttu-id="7fc55-106">Klik på rullelisten i feltet Afregningsperiode for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="7fc55-106">In the Settlement period field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="7fc55-107">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="7fc55-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="7fc55-108">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="7fc55-108">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="7fc55-109">Hvis indstillingen Medtag korrektioner ikke er markeret på siden Finansparametre, kan afregningen behandles for forskellige versioner.</span><span class="sxs-lookup"><span data-stu-id="7fc55-109">If the Include corrections option is not selected on the General ledger parameters page, the settlement can be processed for different versions.</span></span> <span data-ttu-id="7fc55-110">Oprindelig er den første afregning for et periodeinterval og kan kun behandles én gang for et periodeinterval.</span><span class="sxs-lookup"><span data-stu-id="7fc55-110">Original is the first settlement for a period interval and can only processed once for a period interval.</span></span> <span data-ttu-id="7fc55-111">Seneste rettelser udligner momsposteringer, der er bogført efter den oprindelige version er blevet oprettet.</span><span class="sxs-lookup"><span data-stu-id="7fc55-111">Latest corrections will settle sales tax transactions which have been posted after the original version has been created.</span></span>   
+5. <span data-ttu-id="7fc55-112">Angiv en dato i feltet Transaktionsdato.</span><span class="sxs-lookup"><span data-stu-id="7fc55-112">In the Transaction date field, enter a date.</span></span>
+6. <span data-ttu-id="7fc55-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7fc55-113">Click OK.</span></span>
 

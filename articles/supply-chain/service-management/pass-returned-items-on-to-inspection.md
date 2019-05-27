@@ -19,40 +19,40 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 70aafb752b2c847d5d48236fd5d201a73e088c24
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556777"
 ---
-# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="d70de-103">Sende returvarer videre til inspektion</span><span class="sxs-lookup"><span data-stu-id="d70de-103">Pass returned items on to inspection</span></span> 
+# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="bf744-103">Sende returvarer videre til inspektion</span><span class="sxs-lookup"><span data-stu-id="bf744-103">Pass returned items on to inspection</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="d70de-104">Når du registrerer en returvare, kan du bestemme, at en vare skal sendes til inspektion, før den returneres til lageret eller bortskaffes på anden vis.</span><span class="sxs-lookup"><span data-stu-id="d70de-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
+<span data-ttu-id="bf744-104">Når du registrerer en returvare, kan du bestemme, at en vare skal sendes til inspektion, før den returneres til lageret eller bortskaffes på anden vis.</span><span class="sxs-lookup"><span data-stu-id="bf744-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
 
-1.  <span data-ttu-id="d70de-105">Klik på **Lagerstyring** \> **Kladder** \> **Varemodtagelse** \> **Varemodtagelse**.</span><span class="sxs-lookup"><span data-stu-id="d70de-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
+1.  <span data-ttu-id="bf744-105">Klik på **Lagerstyring** \> **Kladder** \> **Varemodtagelse** \> **Varemodtagelse**.</span><span class="sxs-lookup"><span data-stu-id="bf744-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
     
-    <span data-ttu-id="d70de-106">\-eller-</span><span class="sxs-lookup"><span data-stu-id="d70de-106">\-or-</span></span>
+    <span data-ttu-id="bf744-106">\-eller-</span><span class="sxs-lookup"><span data-stu-id="bf744-106">\-or-</span></span>
     
-    <span data-ttu-id="d70de-107">Klik på **Lagerstyring** \> **Kladder** \> **Varemodtagelse** \> **Produktionsindlagring**.</span><span class="sxs-lookup"><span data-stu-id="d70de-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
+    <span data-ttu-id="bf744-107">Klik på **Lagerstyring** \> **Kladder** \> **Varemodtagelse** \> **Produktionsindlagring**.</span><span class="sxs-lookup"><span data-stu-id="bf744-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
 
-2.  <span data-ttu-id="d70de-108">Registrer modtagelsen af en vare som sædvanligt i formularen **Lokationskladde**.</span><span class="sxs-lookup"><span data-stu-id="d70de-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
+2.  <span data-ttu-id="bf744-108">Registrer modtagelsen af en vare som sædvanligt i formularen **Lokationskladde**.</span><span class="sxs-lookup"><span data-stu-id="bf744-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="d70de-109">Du kan finde oplysninger om registrering af modtagelsen af returnerede varer under <A href="register-the-receipt-of-returned-items.md">Registrere modtagelsen af returvarer</A></span><span class="sxs-lookup"><span data-stu-id="d70de-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
+    > <P><span data-ttu-id="bf744-109">Du kan finde oplysninger om registrering af modtagelsen af returnerede varer under <A href="register-the-receipt-of-returned-items.md">Registrere modtagelsen af returvarer</A></span><span class="sxs-lookup"><span data-stu-id="bf744-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
 
 
 
-3.  <span data-ttu-id="d70de-110">Under fanen **Standardværdier** i området **Håndteringsmåde** skal du markere feltet **Karantænestyring**.</span><span class="sxs-lookup"><span data-stu-id="d70de-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
+3.  <span data-ttu-id="bf744-110">Under fanen **Standardværdier** i området **Håndteringsmåde** skal du markere feltet **Karantænestyring**.</span><span class="sxs-lookup"><span data-stu-id="bf744-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
 
-<span data-ttu-id="d70de-111">Dette betyder, at systemet vil oprette en karantæneordre, og den person eller afdeling, der udfører inspektionerne, vil svare på denne ordre ved hjælp af formularen **Karantæneordre**.</span><span class="sxs-lookup"><span data-stu-id="d70de-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
+<span data-ttu-id="bf744-111">Dette betyder, at systemet vil oprette en karantæneordre, og den person eller afdeling, der udfører inspektionerne, vil svare på denne ordre ved hjælp af formularen **Karantæneordre**.</span><span class="sxs-lookup"><span data-stu-id="bf744-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d70de-112">Se også</span><span class="sxs-lookup"><span data-stu-id="d70de-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf744-112">Se også</span><span class="sxs-lookup"><span data-stu-id="bf744-112">See also</span></span>
 
-[<span data-ttu-id="d70de-113">Føre returvarer gennem inspektion</span><span class="sxs-lookup"><span data-stu-id="d70de-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="bf744-113">Føre returvarer gennem inspektion</span><span class="sxs-lookup"><span data-stu-id="bf744-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
-[<span data-ttu-id="d70de-114">Angive, hvordan returvarer skal kasseres</span><span class="sxs-lookup"><span data-stu-id="d70de-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
+[<span data-ttu-id="bf744-114">Angive, hvordan returvarer skal kasseres</span><span class="sxs-lookup"><span data-stu-id="bf744-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
 

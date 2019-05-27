@@ -19,34 +19,34 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc55c1ab0a9ad7af3b55e49079185062fd119cc7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "344817"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546150"
 ---
-# <a name="reverse-changes-in-a-dispatch-board"></a><span data-ttu-id="cf7e4-103">Tilbageføre ændringer på en planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="cf7e4-103">Reverse changes in a dispatch board</span></span> 
+# <a name="reverse-changes-in-a-dispatch-board"></a><span data-ttu-id="f5e9e-103">Tilbageføre ændringer på en planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="f5e9e-103">Reverse changes in a dispatch board</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="cf7e4-104">Dette emne beskriver, hvordan du tilbagefører ugemte ændringer, du foretager i en planlægningstavle.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-104">This topic describes how to reverse unsaved modifications that you make in a dispatch board.</span></span> <span data-ttu-id="cf7e4-105">Du tildeler for eksempel en arbejder til en serviceaktivitet, gemmer oplysningerne, og senere beslutter du at tildele en anden arbejder til serviceaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-105">For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity.</span></span> <span data-ttu-id="cf7e4-106">Du ændrer arbejderen på planlægningstavlen og inden du gemmer ændringen, får du at vide, at arbejderen, der lige er tildelt, ikke er tilgængelig.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-106">You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available.</span></span> <span data-ttu-id="cf7e4-107">Du kan tilbageføre de ugemte ændringer, så den oprindelige arbejder tildeles til serviceordren igen.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-107">You can reverse the unsaved modification so that the original worker is reassigned to the service order.</span></span>
+<span data-ttu-id="f5e9e-104">Dette emne beskriver, hvordan du tilbagefører ugemte ændringer, du foretager i en planlægningstavle.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-104">This topic describes how to reverse unsaved modifications that you make in a dispatch board.</span></span> <span data-ttu-id="f5e9e-105">Du tildeler for eksempel en arbejder til en serviceaktivitet, gemmer oplysningerne, og senere beslutter du at tildele en anden arbejder til serviceaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-105">For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity.</span></span> <span data-ttu-id="f5e9e-106">Du ændrer arbejderen på planlægningstavlen og inden du gemmer ændringen, får du at vide, at arbejderen, der lige er tildelt, ikke er tilgængelig.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-106">You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available.</span></span> <span data-ttu-id="f5e9e-107">Du kan tilbageføre de ugemte ændringer, så den oprindelige arbejder tildeles til serviceordren igen.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-107">You can reverse the unsaved modification so that the original worker is reassigned to the service order.</span></span>
 
-<span data-ttu-id="cf7e4-108">Brug følgende trin til at tilbageføre ugemte ændringer i en planlægningstavle:</span><span class="sxs-lookup"><span data-stu-id="cf7e4-108">Use the following steps to reverse unsaved changes in a dispatch board:</span></span>
+<span data-ttu-id="f5e9e-108">Brug følgende trin til at tilbageføre ugemte ændringer i en planlægningstavle:</span><span class="sxs-lookup"><span data-stu-id="f5e9e-108">Use the following steps to reverse unsaved changes in a dispatch board:</span></span>
 
-1.  <span data-ttu-id="cf7e4-109">Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-109">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="f5e9e-109">Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-109">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="cf7e4-110">I formularen **Planlægningstavle** skal du angive de relevante oplysninger i felterne og derefter klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-110">In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**.</span></span> 
+2.  <span data-ttu-id="f5e9e-110">I formularen **Planlægningstavle** skal du angive de relevante oplysninger i felterne og derefter klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-110">In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**.</span></span> 
 
-3.  <span data-ttu-id="cf7e4-111">Hvis du vil tilbageføre den seneste ændring, der ikke er gemt, skal du klikke på **Fortryd**.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-111">To reverse the most recent change that is not saved, click **Undo**.</span></span>
+3.  <span data-ttu-id="f5e9e-111">Hvis du vil tilbageføre den seneste ændring, der ikke er gemt, skal du klikke på **Fortryd**.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-111">To reverse the most recent change that is not saved, click **Undo**.</span></span>
 
-4.  <span data-ttu-id="cf7e4-112">Hvis du vil tilbageføre en række ændringer, der ikke er gemt, skal du fortsætte med at klikke på **Fortryd**, indtil hver ændring, du vil annullere, er blevet tilbageført.</span><span class="sxs-lookup"><span data-stu-id="cf7e4-112">To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.</span></span>
+4.  <span data-ttu-id="f5e9e-112">Hvis du vil tilbageføre en række ændringer, der ikke er gemt, skal du fortsætte med at klikke på **Fortryd**, indtil hver ændring, du vil annullere, er blevet tilbageført.</span><span class="sxs-lookup"><span data-stu-id="f5e9e-112">To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="cf7e4-113">Se også</span><span class="sxs-lookup"><span data-stu-id="cf7e4-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f5e9e-113">Se også</span><span class="sxs-lookup"><span data-stu-id="f5e9e-113">See also</span></span>
 
-[<span data-ttu-id="cf7e4-114">Planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="cf7e4-114">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="f5e9e-114">Planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="f5e9e-114">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="cf7e4-115">Serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="cf7e4-115">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="f5e9e-115">Serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="f5e9e-115">Service activities</span></span>](service-activities.md)
 
  
 
