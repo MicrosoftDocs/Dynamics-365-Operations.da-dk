@@ -3,7 +3,7 @@ title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emne beskriver, hvordan du bruger formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331270"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541262"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -440,12 +440,17 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>Returner den angivne liste, når forespørgslen er blevet ændret til at filtrere i henhold til den angivne tilstand. Denne funktion adskiller sig fra funktionen <strong>WHERE</strong>, fordi den angivne betingelse anvendes på enhver ER-datakilde af typen <strong>Tabelposter</strong> på databaseniveau. Listen og betingelse kan defineres ved hjælp af tabeller og relationer.</td>
 <td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returnere en liste over blot de kreditorer, der tilhører kreditorgruppe 40. Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til VendTable-tabellen, og hvis <strong>parmVendorBankGroup</strong> er konfigureret som en ER-datakilde, der returnerer en værdi af datatypen <strong>Streng</strong>, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over kun de kreditorkonti, der tilhører en bestemt bankgruppe.</td>
 </tr>
+<tr>
+<td>INDEKS (liste, indeks)</td>
+<td>Denne funktion returnerer en post, der vælges af et bestemt numerisk indeks på listen. Der udløses en undtagelse, hvis indekset er uden for området for posterne på listen.</td>
+<td>Hvis du angiver datakildens <strong>DS</strong> for typen <strong>Beregnet felt</strong>, og den indeholder udtrykket <strong>SPLIT ("A|B|C", “|”), 2)</strong>, returnerer udtrykket <strong>DS.Value</strong> tekstværdien “B”. Udtrykket <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> returnerer også tekstværdien “B”.</td>
+</tr>
 </tbody>
 </table>
 
 ### <a name="logical-functions"></a>Logiske funktioner
 
-| Funktion | Betegnelse | Eksempel |
+| Funktion | Beskrivelse | Eksempel |
 |----------|-------------|---------|
 | CASE (udtryk, valgmulighed 1, resultat 1 \[, valgmulighed 2, resultat 2\] ... \[, standardresultat\]) | Evaluer den angivne udtryksværdi mod de angivne alternative valgmuligheder. Returner resultatet af den valgmulighed, der svarer til værdien af udtrykket. Ellers returneres det valgfri standardresultat, hvis der er angivet et standardresultat. (Standardresultatet er den sidste parameter, der ikke indledes med en valgmulighed). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returnerer strengen **"VINTER"**, når den aktuelle Finance and Operations-sessionsdato er mellem oktober og december. Ellers returneres en tom streng. |
 | IF (betingelse, værdi 1, værdi 2) | Returner den først angivne værdi, når den angivne betingelse er opfyldt. Ellers returneres den anden angivne værdi. Hvis værdi 1 og 2 er poster eller postlister, har resultatet kun de felter, der findes på begge lister. | **IF (1 = 2, "betingelse er opfyldt", "betingelse er ikke opfyldt")** returnerer strengen **"betingelse er ikke opfyldt"**. |

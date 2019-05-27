@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334881"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561803"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
@@ -549,7 +549,7 @@ Der er ikke blevet tilføjet nye funktioner.
 | Advare brugeren, hvis en salgsordre eller produktionsordre ikke klar til levering på den planlagte dato. | Advarsler, der oprettes ved varedisponering, kaldes *terminssætninger*. *Termin* er en kontrakt mellem to parter om køb eller salg af et aktiv til en pris, der er aftalt i dag (*terminsprisen*), selvom levering og betaling foregår på et fremtidigt tidspunkt (*leveringsdatoen*). | *Terminssætninger* og *terminsdatoer* er blevet omdøbt til henholdsvis *beregnede forsinkelser* og *forsinkelsesdatoer*. | Den terminologi, der blev brugt i AX 2012, var unøjagtig og har ført til forkerte oversættelser. |
 | Få hurtig indsigt i status for en varedisponeringskørsel, hastende planlagte ordrer og ordreforslag, der medfører forsinkelser. | Oplysningerne er tilgængelige, men de er spredt over flere formularer. | Arbejdsområdet **Varedisponering** byder på hurtige oplysninger om, hvor den sidste varedisponeringskørsel blev fuldført, om der opstod fejl, hvad de vigtigste ordreforslag er og hvilke ordreforslag medføre forsinkelser. | Du får fordelen af den oversigt, arbejdsområdet viser. Relevante oplysninger er sammensat i en vejledning for varedisponering, som forbedrer produktiviteten. |
 | Bruge Excel til at opdatere behovsprognoser. | Ikke ledig | Du kan drage fordel af problemfri integration med Microsoft Excel, når du skriver behovsprognoser, opdatere og slette behovsprognoser. | Det hjælper med at øge effektiviteten og produktiviteten. |
-| Beregne fremtidigt behov og oprette behovsprognoser baseret på historiske transaktionsdata. | I Microsoft DynamicsAX 2012 R3 bruges budgetmodeller i Microsoft SQL Server Analysis Service til at oprette behov behovsprognoser. | Vurdere fremtidige behov ved hjælp af funktionerne og udvidelsesmulighederne i en Microsoft Azure Machine Learning skytjeneste. Det er let at bruge og udvide prognosemodellerne i Machine Learning til at opfylde kundekrav. Tjenesten udfører valg på grundlag af bedste match-modellen og tilbyder nøgletal (KPI'er), der kan bruges til at beregne prognosenøjagtigheden. | Genererer mere nøjagtige prognoser ved hjælp af Machine Learning-teknikker. |
+| Beregne fremtidigt behov og oprette behovsprognoser baseret på historiske transaktionsdata. | I Microsoft Dynamics AX 2012 R3 bruges budgetmodeller i Microsoft SQL Server Analysis Service til at oprette behov behovsprognoser. | Vurdere fremtidige behov ved hjælp af funktionerne og udvidelsesmulighederne i en Microsoft Azure Machine Learning skytjeneste. Det er let at bruge og udvide prognosemodellerne i Machine Learning til at opfylde kundekrav. Tjenesten udfører valg på grundlag af bedste match-modellen og tilbyder nøgletal (KPI'er), der kan bruges til at beregne prognosenøjagtigheden. | Genererer mere nøjagtige prognoser ved hjælp af Machine Learning-teknikker. |
 | Optimere ordredato og antal baseret på en visuel oversigt over relaterede handlinger fra kørsel af behovsplanlægning. | Diagrammet med oversigt over handlinger er tilgængeligt, men viser alle relaterede handlinger. Når der anvendes handlinger, forsvinder de straks fra visningen. | Handlingsdiagrammet giver et bedre overblik. Det omfatter indstillinger, der gør det muligt kun at vise anvendte handlinger og direkte relaterede handlinger. Når handlinger udføres, vises de nedtonet, men vises stadig. Derfor bevares oversigten. Yderligere oplysninger er føjet til handlingsdiagrammet for at vise dataene på én side. | Du kan drage fordel af forbedringen af produktiviteten, fordi du kun fokuserer på de relevante handlinger. |
 
 ## <a name="procurement-and-sourcing"></a>Indkøb og forsyning
