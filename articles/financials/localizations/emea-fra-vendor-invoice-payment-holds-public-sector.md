@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cea944d84f90bf96dc5c8630224c07a770bd0c81
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f9c05bc9988355580e149ee70b8bb6c32806d1bf
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370192"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513085"
 ---
 # <a name="vendor-invoice-payment-holds-in-the-public-sector-in-france"></a>Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig
 

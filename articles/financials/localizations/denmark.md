@@ -16,12 +16,12 @@ ms.search.region: Denmark
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e5df11c36e3ada247eb214c3fc75d8f6b6640c5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b6182ac13b59a8fd4fbe1894c63475543524234b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370200"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537733"
 ---
 # <a name="denmark"></a>Danmark 
 

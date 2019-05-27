@@ -3,7 +3,7 @@ title: Forbedringer til funktioner til bogføring af opgørelse
 description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321426"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541285"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
@@ -43,7 +43,7 @@ Finance and Operations der indeholder følgende valideringer, der vedrører diss
 - De samme konfigurationsnøgler skal bruges til alle de operationer, der udføres på en given opgørelse i dens livscyklus (oprette, beregne, fjerne, bogføre osv). Du kan f.eks. ikke oprette og beregne en opgørelse, mens konfigurationsnøglen **Detailopgørelser (ældre)** er aktiveret, og derefter prøve at bogføre den samme opgørelse, mens konfigurationsnøglen **Detailopgørelse** er aktiveret.
 
 > [!NOTE]
-> Det anbefales, at du bruger konfigurationsnøglen **Detailopgørelser** til den forbedrede funktion til bogføring af opgørelsen, medmindre der er tvingende årsager til at bruge konfigurationsnøglen **Detailopgørelser (ældre)** i stedet. Microsoft fortsætter med at investere i den nye og forbedrede bogføringsfunktion, og det er vigtigt, at du hurtigst muligt skifter til den for at få fordel af den. Den ældre opgørelsesbogføringsfunktion vil blive udfaset i en fremtidig version.
+> Det anbefales, at du bruger konfigurationsnøglen **Detailopgørelser** til den forbedrede funktion til bogføring af opgørelsen, medmindre der er tvingende årsager til at bruge konfigurationsnøglen **Detailopgørelser (ældre)** i stedet. Microsoft fortsætter med at investere i den nye og forbedrede bogføringsfunktion, og det er vigtigt, at du hurtigst muligt skifter til den for at få fordel af den. Den ældre opgørelsesbogføringsfunktion er blevet udfaset fra og med version 8.0.
 
 ## <a name="setup"></a>Konfiguration
 
@@ -56,11 +56,15 @@ Som en del af forbedringerne af funktionen til bogføring af opgørelser er der 
 
 - **Deaktivering af optælling er påkrævet** – Når denne indstilling er sat til **Ja**, fortsætter bogføringsprocessen for en opgørelse, selvom forskellen mellem det optalte beløb og posteringsbeløbet i opgørelsen er uden for grænsen, der er defineret i oversigtspanelet **Opgørelse** for detailbutikker.
 
-Desuden er feltet **Det maksimale antal parallelle opgørelsesbogføringer** indført i oversigtspanelet **Batchafvikling**. Dette felt definerer antallet af batchopgaver, der skal køres ad gangen. I øjeblikket skal du angive værdien i dette felt manuelt.
+Derudover er følgende parametre introduceret i oversigtspanelet **Batchbehandling** under fanen **Bogføring** på siden **Detailparametre**: 
 
-Desuden er det med den nye bogføringsproces påkrævet, at du definerer et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Dette gælder, selvom organisationen ikke bruger nogen gavekort.
+- **Det maksimale antal parallelle opgørelsesbogføringer** - Dette felt definerer antallet af batchopgaver, der skal bruges til at bogføre flere opgørelser. 
+- **Maks. antal tråde til ordrebehandling pr. opgørelse** - Dette felt repræsenterer det maksimale antal tråde, der bruges af batchjobbet for opgørelsesbogføringen til at oprette og fakturere salgsordrer for en enkelt opgørelse. Det samlede antal tråde, der bruges af bogføringsprocessen for opgørelser, beregnes på basis af værdien i denne parameter ganget med værdien i parameteren **Det maksimale antal parallelle opgørelsesbogføringer**. Hvis værdien af denne parameter er for høj, kan det have en negativ indvirkning på ydeevnen for opgørelsesprocessen.
+- **Maks. antal posteringslinjer, der er inkluderet i aggregeringen** - Dette felt definerer antallet af posteringslinjer, som skal medtages i en enkelt aggregeret transaktion, før der oprettes en ny. Aggregerede posteringer oprettes på basis af forskellige aggregeringskriterier, f.eks. debitor, forretningsdato eller økonomiske dimensioner. Det er vigtigt at bemærke, at linjerne fra en enkelt detailtransaktion ikke bliver opdelt på tværs af forskellige aggregerede transaktioner. Det betyder, at der er mulighed for, at antallet af linjer i en aggregeret transaktion er lidt højere eller lavere baseret på faktorer som antallet af specifikke produkter.
+- **Maksimale antal tråde til at validere butikstransaktioner** - Dette felt definerer antallet af tråde, der skal bruges til validering af detailtransaktioner. Validering af detailtransaktioner er et påkrævet trin, der skal udføres, før transaktionerne kan trækkes ind i opgørelserne. Desuden skal du også definere et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Det skal defineres, selvom gavekort ikke bruges af organisationen.
 
-Bemærk, at alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i Detailbutikker og på siden **Detailparametre**, gælder for funktionen til forbedret bogføring af opgørelser.
+> [!NOTE]
+> Alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i Detailbutikker og på siden **Detailparametre**, gælder for funktionen til forbedret bogføring af opgørelser.
 
 ## <a name="processing"></a>Afvikling
 

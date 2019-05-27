@@ -1,6 +1,6 @@
 ---
 title: Disponeringsindstillinger
-description: Ved behovsplanlægning anvendes disponeringsindstillinger til at beregne varebehov.
+description: Dette emne indeholder oplysninger om de indstillinger for disponering, som behovsplanlægningen bruger til at beregne varebehov.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,39 +19,37 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50f47394a4d4e95b4e158ea42a630d9e6e91f05b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
+ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "322553"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538888"
 ---
 # <a name="coverage-settings"></a>Disponeringsindstillinger
 
 [!include [banner](../includes/banner.md)]
 
-Ved behovsplanlægning anvendes disponeringsindstillinger til at beregne varebehov. 
+Ved behovsplanlægning anvendes disponeringsindstillinger til at beregne varebehov.
 
 Du kan angive disponeringsindstillinger på flere måder:
 
--   Angiv disponeringsindstillinger for en disponeringsgruppe. Du kan oprette en disponeringsgruppe, der indeholder alle produkter, der er knyttet til disponeringsgruppen. Klik på **Varedisponering &gt; Konfiguration &gt; Disponering &gt; Disponeringsgrupper** for at oprette en disponeringsgruppe. Du kan sammenkæde en disponeringsgruppe til et produkt. Hvis sammenkædningen er specifik for et websted, et lagersted eller en produktdimension, skal du bruge feltet **Disponeringsgruppe** på siden **Varedisponering**. Hvis sammenkædningen er generisk, uanset produktdimensionerne, skal du bruge **Disponeringsgruppe** på oversigtspanelet **Plan** på siden **Produktdetaljer**. Hvis du ikke knytter en disponeringsgruppe til et produkt, bruger den overordnede planlægning som standard den **standarddisponeringsgruppe**, der er angivet på siden **Varedisponeringsparametre**.
+- Angiv disponeringsindstillinger for en disponeringsgruppe.
 
--   Angiv disponeringsindstillinger for et produkt. Du kan oprette disponeringsindstillinger for et bestemt produkt. Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg produktet, og klik på **Varedisponering** i gruppen **Disponering** under fanen **Plan** i **handlingsruden** for at åbne siden **Varedisponering**. Hvis produktet allerede er knyttet til en dispositionsgruppe, kan du tilsidesætte indstillingerne for dispositionsgruppen ved hjælp af feltet **Tilsidesæt**. Disponeringsindstillinger på siden **Varedisponering** har fortrinsret over indstillingerne på siden **Dækningsgruppe**.
+    Du kan oprette en disponeringsgruppe, der indeholder alle produkter, der er knyttet til disponeringsgruppen. Du kan oprette en disponeringsgruppe ved at gå til **Varedisponering &gt; Konfiguration &gt; Disponering &gt; Disponeringsgrupper**. Du kan sammenkæde en disponeringsgruppe til et produkt. Hvis sammenkædningen er specifik for et websted, et lagersted eller en produktdimension, skal du bruge feltet **Disponeringsgruppe** på siden **Varedisponering**. Hvis sammenkædningen er generisk, uanset produktdimensionerne, skal du bruge feltet **Disponeringsgruppe** på oversigtspanelet **Plan** på siden **Produktdetaljer**. Hvis du som standard ikke knytter en disponeringsgruppe til et produkt, bruger den overordnede planlægning den standarddisponeringsgruppe, der er angivet på siden **Varedisponeringsparametre**.
 
-<!-- -->
+- Angiv disponeringsindstillinger for et produkt.
 
--   Angiv disponeringsindstillinger for et produkt ved hjælp af en guide. Guiden giver dig en trinvis vejledning i at konfigurere de primære dispositionsparametre for varer. På siden **Varedisponering** skal du klikke på **Guide** at åbne **Varedisponeringsguide**.
+    Du kan oprette disponeringsindstillinger for et bestemt produkt. Gå til **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg produktet, og vælg derefter **Varedisponering** i gruppen **Disponering** under fanen **Plan** i handlingsruden for at åbne siden **Varedisponering**. Hvis produktet allerede er knyttet til en dispositionsgruppe, kan du tilsidesætte indstillingerne for dispositionsgruppen ved hjælp af feltet **Tilsidesæt**. Disponeringsindstillinger på siden **Varedisponering** har fortrinsret over indstillingerne på siden **Dækningsgruppe**.
 
-<!-- -->
+- Angiv disponeringsindstillinger for et produkt ved hjælp af en guide.
 
-- Angiv disponeringsindstillinger for en dimensionsgruppe. Klik på **Administration af produktoplysninger &gt; Almindelige &gt; Frigivne produkter**. Klik på linket **Lagringsdimensionsgruppe** i gruppen **Administration** under fanen **Generelt** på siden **Frigivne produktdetaljer**. Vælg **Lagringsdimensionsgruppe** i feltet **Disponer pr. dimension** for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen. Alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi, skal have feltet **Disponer pr. dimension** markeret.
+    Guiden hjælper dig trin for trin gennem opsætningen af de primære varedisponeringsparametre. På siden **Varedisponering** skal du i handlingsruden klikke på **Guide** for at åbne **Varedisponeringsguide**.
 
+- Angiv disponeringsindstillinger for en dimensionsgruppe.
 
+    Gå til **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg linket feltet **Lagringsdimensionsgruppe** i sektionen **Administration** i oversigtspanelet **Generelt** på siden **Frigivne produktdetaljer**. På siden **Lagringsdimensionsgrupper** skal du markere afkrydsningsfeltet **Disponer pr. dimension** for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen. Feltet **Disponer pr. dimension** skal være markeret for alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Behovsplaner](master-plans.md)
-
-
-

@@ -1,16 +1,16 @@
 ---
 title: Avancerede formateringsindstillinger i økonomirapportering
 description: Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502559"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
@@ -41,6 +41,7 @@ I følgende tabel beskrives de avancerede formateringsfunktioner, der er tilgæn
 | Kolonnebegrænsning         | Kolonnebegrænsning i rækkedefinitionen kan bruges til at skjule værdier, der kun er relevante på nogle rækker i rapporten. Når der udføres beregninger af procentdele på en række, forhindrer kolonnebegrænsningen, at total-kolonner eller andre kolonner bliver udskrevet, når disse tal ikke gælder. |
 | Kolonneskift               | Du kan tilføje kolonneskift i en rækkedefinition for at vise rapportoplysninger ved siden af hinanden. Du kan tilføje flere kolonneskift i en enkelt rækkedefinition, og kolonneoverskrifter gentages øverst i hver kolonne efter kolonneskiftet. Bemærkninger til en rapport vises mellem kolonneskiftene. |
 | IF/THEN/ELSE-sætning     | Du kan ændre beregninger i en rækkedefinition eller en kolonnedefinition. |
+| Bruge enkelte anførselstegn (' ') og et og-tegn (&) til dimensionsværdier | Du kan bruge dimensionsværdier, herunder &-tegnet til rapportdesign. |
 
 ## <a name="advanced-cell-placement"></a>Avanceret celleplacering
 Avanceret celleplacering eller *tvang* omfatter placering af bestemte værdier i bestemte celler. Tvang anvendes for eksempel ofte til at flytte den korrekte saldo i en likviditetsopgørelse. Du kan bruge tvang til følgende formål:
@@ -297,3 +298,9 @@ En **IF/THEN/ELSE**-sætning gør det muligt for enhver beregning at afhænge af
 
 > [!NOTE]
 > Du kan ikke placere resultaterne af en beregning i en anden kolonne. Resultaterne skal være i den kolonne, der indeholder formlen.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Bruge enkelte anførselstegn og et og-tegn til dimensionsværdier i en række, en kolonne eller et træ
+
+Du kan designe rapporter ved hjælp af dimensionsværdier, der indeholder et og-tegn (&). 
+
+I et hvilket som helst felt af typen **Link til økonomiske dimensioner** kan du angive en værdi som f.eks. **'P&L'**. Hvis du medtager enkelte anførselstegn (' ') på begge sider af dimensionsværdien, angiver det, at du bruger konstantværdien, f.eks. også tegnet (&). 

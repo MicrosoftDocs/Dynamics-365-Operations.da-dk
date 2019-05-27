@@ -3,7 +3,7 @@ title: Power BI-indhold til købsforbrugsanalyse
 description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313836"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527711"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Power BI-indhold til købsforbrugsanalyse
 
@@ -33,7 +33,7 @@ I dette emne beskrives, hvad der skal medtages i **Microsoft Power BI-indhold ti
 
 ## <a name="overview"></a>Overblik
 
-**Power BI-indholdet til Købsforbrugsanalyse** er udviklet til at hjælpe indkøbschefer og ledere, der er ansvarlige for budgetter, med at holde øje med udgifter til køb. Chefer kan analysere indkøbsudgifter på følgende måder:
+Power BI-indholdet til **Købsforbrugsanalyse** er udviklet til at hjælpe indkøbschefer og ledere, der er ansvarlige for budgetter, med at holde styr på udgifter til køb. Chefer kan analysere indkøbsudgifter på følgende måder:
 
 - Køb år til dato (efter kreditorgruppe og individuelle kreditorer, indkøbskategori og individuelle produkter og leverandørlokalitet)
 - Ændring af køb år for-år (efter leverandørgruppe og indkøbskategori)
@@ -44,88 +44,88 @@ Indholdet bruger købstransaktionsdata og indeholder både en samlet oversigt ov
 **Power BI-indholdet til Købsforbrugsanalyse** vises på siden **Købs- og forbrugsanalyse** (**Indkøb og forsyning** \> **Forespørgsler og rapporter** \> **Performanceanalyse for indkøb** \> **Købs- og forbrugsanalyse**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indholdet
-**Power BI-indholdet til købsforbrugsanalyse** indeholder en rapport, der består af et sæt metrikker. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne.
+**Power BI-indholdet til købsforbrugsanalyse** indeholder en rapport, der består af et sæt metrikker. Disse metrikker visualiseres som diagrammer, felter og tabeller. 
 
-<table>
-<thead>
-<tr>
-<th>Rapportside</th>
-<th>Diagrammer</th>
-<th>Felter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Indkøb efter leverandør</td>
-<td><ul>
-<li>Top 10 leverandører efter indkøb (stablet liggende søjlediagram)</li>
-<li>Samlet indkøb pr. leverandørgruppe/land/navn (cirkeldiagram)</li>
-<li>Indkøb pr. leverandørgruppe/land/navn (søjlediagram)</li>
-<li>Gennemsnitsindkøb pr. leverandørgruppe/land/navn (søjlediagram)</li>
-</ul></td>
-<td><ul>
-<li>Indkøb i alt</li>
-<li>Indkøbsvækst år for år</li>
-<li>Antal leverandører i alt</li>
-<li>Antal aktive leverandører i alt</li>
-</ul></td>
-</tr>
-<tr>
-<td>Køb pr. produkt</td>
-<td><ul>
-<li>Køb efter indkøbskategori/produktnavn (søjlediagram)</li>
-<li>Indkøb i alt efter indkøbskategori/produktnavn (cirkeldiagram)</li>
-<li>Top 10 produkter efter indkøb (stablet liggende søjlediagram)</li>
-</ul></td>
-<td><ul>
-<li>Antal produkter i alt</li>
-<li>Antal aktive produkter i alt i procentdel af antal produkter i alt</li>
-<li>Antal produkter, der udgør for 80 % af indkøbet</li>
-</ul></td>
-</tr>
-<tr>
-<td>Indkøb efter periode*</td>
-<td><ul>
-<li>Indkøb pr. måned/dag (søjlediagram)</li>
-<li>Afvigelse i akkumuleret indkøb år for år (vandfaldsdiagram)</li>
-<li>Vækst i indkøb i alt år for år (søjlediagram)</li>
-<li>Indkøbsopgørelse (matrix)</li>
-</ul></td>
-<td><ul>
-<li>Indkøbsvækst år for år</li>
-<li>Indkøbsvækst år for år i %</li>
-</ul></td>
-</tr>
-<tr>
-<td>Indkøb efter leverandørlokalitet</td>
-<td><ul>
-<li>Indkøb efter by</li>
-<li>Indkøbsvækst år for år i %</li>
-<li>Indkøb efter land</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Købsforbrugsanalyse efter tidspunkt</td>
-<td><ul>
-<li>Indkøb indeværende år efter måned/dag (kurvediagram)</li>
-<li>Køb indeværende og sidste år (linje- og søjlediagram)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Købsforbrugsanalyse efter leverandør</td>
-<td><ul>
-<li>Indkøb hos top 10 kreditorer i % af indkøb (tragtformet)</li>
-<li>Top 10 leverandører med forøget forbrug år for år</li>
-<li>Top 10 leverandører med faldende forbrug år for år</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+I nedenstående sektioner vises en oversigt over visualiseringerne.
 
-\* Køb dette og sidste år, og vækst efter indkøbskategori
+### <a name="purchase-by-vendor-report-page"></a>Rapportsiden Indkøb efter leverandør
+**Diagrammer**
+- Top 10 leverandører efter indkøb (stablet liggende søjlediagram)
+- Samlet indkøb pr. leverandørgruppe/land/navn (cirkeldiagram)
+- Indkøb pr. leverandørgruppe/land/navn (søjlediagram)
+- Gennemsnitsindkøb pr. leverandørgruppe/land/navn (søjlediagram)
+
+**Felter**
+- Indkøb i alt
+- Indkøbsvækst år for år
+- Antal leverandører i alt
+- Antal aktive leverandører i alt
+
+**Eksempel**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Rapportsiden Køb pr. produkt
+
+**Diagrammer**
+- Køb efter indkøbskategori/produktnavn (søjlediagram)
+- Indkøb i alt efter indkøbskategori/produktnavn (cirkeldiagram)
+- Top 10 produkter efter indkøb (stablet liggende søjlediagram)
+
+**Felter**
+- Antal produkter i alt</li>
+- Antal aktive produkter i alt i procentdel af antal produkter i alt
+- Antal produkter, der udgør for 80 % af indkøbet
+
+**Eksempel**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Rapportsiden Indkøb efter periode
+Denne side viser køb dette og sidste år, og vækst efter indkøbskategori.
+
+**Diagrammer** 
+- Indkøb pr. måned/dag (søjlediagram)
+- Afvigelse i akkumuleret indkøb år for år (vandfaldsdiagram)
+- Vækst i indkøb i alt år for år (søjlediagram)
+- Indkøbsopgørelse (matrix)
+
+**Felter**
+- Indkøbsvækst år for år
+- Indkøbsvækst år for år i %
+
+**Eksempel**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Rapportsiden Indkøb efter leverandørlokalitet
+
+**Diagrammer**
+- Indkøb efter by
+- Indkøbsvækst år for år i %
+- Indkøb efter land
+
+**Eksempel**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Rapportsiden Købsforbrugsanalyse efter tidspunkt
+
+**Diagrammer** 
+- Indkøb indeværende år efter måned/dag (kurvediagram)
+- Køb indeværende og sidste år (linje- og søjlediagram)
+
+**Eksempel**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Rapportsiden Købsforbrugsanalyse efter leverandør
+
+**Diagrammer** 
+- Indkøb hos top 10 kreditorer i % af indkøb (tragtformet)
+- Top 10 leverandører med forøget forbrug år for år
+- Top 10 leverandører med faldende forbrug år for år
+
+**Eksempel:** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Datamodel og enheder
 Følgende data bruges til at udfylde rapportsiderne i **Power BI-indholdet til Købsforbrugsanalyse**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).

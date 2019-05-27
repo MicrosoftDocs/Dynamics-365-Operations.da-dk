@@ -3,7 +3,7 @@ title: Værdiregulering af udenlandsk valuta i bank
 description: Dette emne giver et overblik over processen med værdiregulering af udenlandsk valuta i banker. Det omfatter oplysninger om opsætning og kørsel af samt beregningerne til processen og tilbageføring af værdireguleringstransaktioner.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976641"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538626"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Værdiregulering af udenlandsk valuta i bank
 
@@ -52,7 +52,7 @@ Du skal aktivere funktionen til værdireguleringer af udenlandsk valuta i banker
 3. Tilføj en nummerserie for værdiregulering af udenlandsk valuta under fanen **Nummerserier**.
 4. Genindlæs browseren for at få vist **Værdiregulering af udenlandsk valuta** under afsnittet med **Periodiske opgaver** på områdesiden.
 
-Du skal aktivere funktionen for alle de juridiske enhed, der skal anvende værdiregulering af udenlandsk valuta.
+Du skal aktivere funktionen for alle de juridiske enhed, der skal anvende værdiregulering af udenlandsk valuta. Hvis du er tildelt rollen som systemadministrator eller funktionsleder, kan du eliminere dette trin ved at aktivere funktionen **Aktiver værdiregulering i bank uden en parameter** i arbejdsområdet **Administration af funktioner**.
 
 > [!NOTE]
 > Såfremt jeres juridiske enhed anvender en russisk, polsk eller ungarsk lande-/områdekode, kan du allerede foretage værdiregulering af udenlandsk valuta i banker. Du kan ikke anvende den værdiregulering af udenlandsk valuta, der anvendes af andre lande eller områder.
