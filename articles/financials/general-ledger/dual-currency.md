@@ -3,7 +3,7 @@ title: Dobbelt valuta
 description: Dette emne indeholder oplysninger om såkaldt dobbelt valuta, hvor rapporteringsvalutaen bruges som en ekstra regnskabsvaluta i Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330304"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532242"
 ---
 # <a name="dual-currency"></a>Dobbelt valuta
 
@@ -61,6 +61,9 @@ Der er også tilføjet logik til forskellige rapporter og forespørgsler for at 
 ## <a name="financial-journals"></a>Økonomikladder
 
 Økonomikladder, f.eks. finanskladden og kreditorfakturakladden, er blevet opdateret, så de indeholder yderligere oplysninger om rapporteringsvalutaen. Totaler for bilag og kladde vises nu i rapporteringsvalutaen. Derudover vises oplysninger om rapporteringsvalutaens valutakurs nu under fanen **Generelt** i kladdelinjerne. Derfor kan du tilsidesætte rapporteringsvalutaens valutakurs, når du angiver posteringer.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Kreditorfakturaer, salgsordrer og salgsaftaler
+Kreditorfakturaer, salgsordrer og salgsaftaler er blevet opdateret, så de indeholder en fast valutakurs for rapporteringsvalutaen. Der kan defineres en fast valutakurs for både regnskabsvalutaen og rapporteringsvalutaen, når transaktionsvalutaen er forskellig fra dem. Når regnskabsvalutaen og rapporteringsvalutaen er den samme, synkroniseres den faste valutakurs ved at bruge regnskabsvalutaens faste kurs som rapporteringsvalutaens faste kurs. Den faste valutakurs for rapporteringsvalutaen kan ikke ændres for denne konfiguration. Når regnskabsvalutaen og rapporteringsvalutaen er forskellige, kan der defineres en fast valutakurs for både regnskabsvalutaen og rapporteringsvalutaen under transaktionen. Hvis rapporteringsvalutaen ikke er defineret i finansmodulet, er feltet **Fast valutakurs for rapporteringsvaluta** ikke aktiveret, og der beregnes ikke et beløb for rapporteringsvalutaen.
 
 ## <a name="module-changes"></a>Ændringer af moduler
 

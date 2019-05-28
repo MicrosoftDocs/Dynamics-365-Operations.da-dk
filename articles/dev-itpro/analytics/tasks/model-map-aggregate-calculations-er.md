@@ -16,11 +16,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313629"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544351"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Bruge modeltilknytningskonfiguration til samlede beregninger på databaseniveau
 
@@ -51,7 +51,7 @@ Denne procedure er til brugere, der er tildelt rollen som Systemadministrator el
 13. Skriv 'TransactionsGroups' i feltet Navn.
     * TransactionsGroups  
 14. Klik på Rediger gruppe efter.
-15. Vælg "Transaktioner}" i træet.
+15. Vælg "Transaktioner" i træet.
     * Vælg den tilføjede datakilde af typen 'Liste over poster', der repræsenterer de poster, du vil gruppere.  
 16. Klik på Tilføj et felt til.
 17. Klik på Hvad skal grupperes.

@@ -16,12 +16,12 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c782adac5274db8455f4474e998857ca70a3b13
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ef3de19cddaadddc738658236e6bf726f2c5e134
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370252"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537721"
 ---
 # <a name="create-and-post-a-free-text-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor
 

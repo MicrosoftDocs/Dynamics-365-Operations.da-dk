@@ -3,7 +3,7 @@ title: Konfigurationsnøgler og dataenheder
 description: I dette emne beskrives relationen mellem konfigurationsnøgler og dataenheder i Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/01/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bf2bdd2eaf406750c885a151aa09468df8a5f4b7
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336468"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539938"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnøgler og dataenheder
 
@@ -42,7 +42,7 @@ Konfigurationsnøgler kan tildeles til en eller flere af følgende genstande.
 
 Tabellen nedenfor viser, hvordan konfigurationsnøgleværdier i de forskellige genstande, der ligger til grund for et objekt, ændrer den forventede funktionsmåde for objektet.
 
-| Konfiguationsnøgleindstilling på dataenhed | Konfigurationsnøgleindstilling på tabel | Konfigurationsnøgleindstilling på tabelfelt | Konfiguationsnøgle på dataenhedsfelt | Forventet funktionsmåde |
+| Konfigurationsnøgleindstilling på dataenhed | Konfigurationsnøgleindstilling på tabel | Konfigurationsnøgleindstilling på tabelfelt | Konfiguationsnøgle på dataenhedsfelt | Forventet funktionsmåde |
 |-----------------------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------|
 | Deaktiveret                                | Ikke evalueret                      | Ikke evalueret                            | Ikke evalueret                          | Hvis konfigurationsnøglen til dataenheden er deaktiveret, kan dataenheden ikke fungere. Det er ligegyldigt, om konfigurationsnøgler i de underliggende tabeller og felter er aktiveret eller deaktiveret. |
 | Slået til                                 | Deaktiveret                           | Ikke evalueret                            | Ikke evalueret                          | Hvis konfigurationsnøglen til en dataenhed er aktiveret, kontrollerer datastyringen konfigurationsnøglen for hver af de underliggende tabeller. Hvis konfigurationsnøglen til tabellen er deaktiveret, er den pågældende tabel ikke tilgængelig til funktionel brug i dataenheden. Hvis en tabels konfigurationsnøgle er deaktiveret, evalueres konfigurationsnøgleindstillingerne for tabellen og dataenheden ikke. Hvis den primære tabel i enheden har konfigurationsnøglen deaktiveret, vil systemet fungere som om enhedens konfigurationsnøgle er deaktiveret. |
@@ -86,7 +86,7 @@ Ved hjælp af metadataene for konfigurationsnøglen, der er opbygget under opdat
 - Når brugeren indlæser en skabelon i et dataprojekt
 - Når et eksisterende dataprojekt indlæses
 - Når en skabelon indlæses i et dataprojekt
-- Inden jobbet til eksport/import køres (batch, ikke-batch, tilbagevendende, Odata)
+- Inden jobbet til eksport/import køres (batch, ikke-batch, tilbagevendende, OData)
 - Når brugeren opretter en tilknytning
 - Når brugeren tilknytter felterne i brugergrænsefladen for tilknytning
 - Når brugeren kun tilføjer 'felter, der kan importeres'

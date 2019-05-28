@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
+ms.openlocfilehash: 5a0a6a060a1b4a4d5a80c797f61b212a828d2f04
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "379918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517029"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en udveksling på en returordre
 
 [!include [banner](includes/banner.md)]
 
-I tidligere versioner af Microsoft Dynamics 365 for Retail, blev returneringer ud fra kundeordrer behandlet ved hjælp af returordredokumentet i Retail Headquarters. Returordredokumentet kan dog kun bruges til at behandle produkter, der returneres. De returnerede produkter er angivet med et negativt antal på returordrelinjer. Salg er derimod angivet med et positivt antal. Returordredokumentet understøtter dog ikke positive antal. På grund af denne begrænsning understøttede tidligere versioner af Retail ikke scenarier, hvor produktudvekslinger udføres ved hjælp af returordredokumentet.
+I tidligere versioner af Microsoft Dynamics 365 for Retail blev returneringer i forhold til kundeordrer behandlet ved hjælp af returordredokumentet i Retail Headquarters. Returordredokumentet kan dog kun bruges til at behandle produkter, der returneres. De returnerede produkter er angivet med et negativt antal på returordrelinjer. Salg er derimod angivet med et positivt antal. Returordredokumentet understøtter dog ikke positive antal. På grund af denne begrænsning understøttede tidligere versioner af Retail ikke scenarier, hvor produktudvekslinger udføres ved hjælp af returordredokumentet.
 
 Der er imidlertid blevet tilføjet funktionalitet til understøttelse af scenarier, hvor udveksling udføres på returordrer. Retail anvender nu salgsordredokumentet i stedet for returordredokumentet til behandling af disse typer transaktioner.
 

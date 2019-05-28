@@ -1,9 +1,9 @@
 ---
 title: Vis ordrebeskeder på POS
-description: I dette emne beskrives, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og i beskedstrukturen. Til slut kan udviklere udvide disse beskeder til operationer ud over ordreopfyldningsoperationer.
+description: I dette emne beskrives, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og i beskedstrukturen.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530264"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
@@ -67,6 +67,10 @@ POS-knapper kan nu vise en optælling, så arbejderne nemmere kan bestemme, hvil
 I følgende illustration vises indstillingerne for dynamisk indhold i knapgitterdesigneren.
 
 ![Indstillinger for dynamisk indhold i knapgitterdesigneren](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
+
+Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Edge-browseren, og gå til siden **Skærmlayout** i Dynamics 365 for Finance and Operations, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og marker afkrydsningsfeltet **Aktiver dynamisk indhold**. Gå til **Detail > Detail-it > Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet. 
+
+![Finde det skærmlayout, der bruges af POS](./media/Choose_screen_layout.png "Finde skærmlayoutet")
 
 I følgende illustration viser effekten af at vælge **Øverst til højre** og **Centreret** i feltet **Justering af indhold** for knapper i forskellige størrelser.
 

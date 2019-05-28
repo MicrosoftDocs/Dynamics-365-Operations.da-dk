@@ -1,9 +1,9 @@
 ---
 title: Få support til Talent
-description: I dette emne beskrives, hvordan du kan få hjælp til Dynamics 365 for Talent.
+description: I dette emne beskrives, hvordan du kan få hjælp til Microsoft Dynamics 365 for Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/18/2018
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,32 +15,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 39aadda6e4c221e243d55e2fd60bbc8484d3b21d
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 9895ae8bdc6326b3863585d77b93576fe5fddcb4
+ms.sourcegitcommit: ab88de98a1958734213eb9d9b1988508b055f748
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992806"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538767"
 ---
 # <a name="get-support-for-talent"></a>Få support til Talent
 
 [!include [banner](includes/banner.md)]
 
-Dette emne forklarer, hvordan du får hjælp til Talent: Core HR, Attract og Onboard.
+I dette emne beskrives, hvordan du får hjælp til Microsoft Dynamics 365 for Talent Core HR, Dynamics 365 Talent: Attract og Dynamics 365 Talent: Onboard.
 
-<a name="contact-support"></a>Kontakt support
----------------
-
-Du kan bruge oplysningerne i dette emne til at kontakte Microsoft, hvis du har tekniske spørgsmål til Talent.
-
-### <a name="talent-support"></a>Talentunderstøttelse 
+## <a name="support-for-talent"></a>Support til Talent
 
 Du kan få support på Talent ved at bruge ressourcerne i følgende tabel. Disse ressourcer er angivet i den rækkefølge, vi anbefaler, at du følger, når du foretager fejlfinding.
 
-| **Opgave**                                                | **Flere oplysninger**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Spørg fællesskabet                                      | Gå til siden [Spørg fællesskabet](https://community.dynamics.com/365/talent) for at få hjælp til dine spørgsmål og bruge indstillingen "Hjælp" til at søge efter emner i Core HR.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Brug værktøjet Support fra skyen                     | I [Lifecycle Services (LCS)](https://lcs.dynamics.com/) er feltet **Support** et værktøj, der hjælper dig med at administrere supporthændelser. For at sende problemer direkte til Microsoft skal du gå til feltet **Support** i projektet LCS eller bruge **afsnittet for supportanmodninger** i LCS og klikke på **Support fra skyen**. Derfra kan du indsende problemer på to måder. 1: Under fanen **Aktivt problem** ved afsendelse fra LCS. Vælg dit problem, og klik derefter på **Send til Microsoft**. 2: Under fanen **Sendt til Microsoft** skal du klikke på **Send en ny hændelse** for at sende nye problemer.  |
-| I ansøgningsunderstøttelse                                 | Vælg ikonet **?** i menuen, og vælg dernæst **Understøttelse (Core HR) rapportér et problem (Attract, Onboard)**. Problemer rapporteres via fanen **Aktuelle problemer** i LCS. Bemærk, at såfremt du har købt den selvstændige version af Onboard, vil rapporteringen af problemer blive fremsendt til Microsoft.  |
-| Få hjælp til spørgsmål om Talent-licenser         | Kontakt din partner eller Microsoft-sælger.     |
-| Anmod om nye funktioner og funktionsmåder i Talent | Vælg **?** på hovedsiden i programmet Talent, og vælg dernæst **Ideer**, eller anvend linket [Ideer](https://experience.dynamics.com/ideas/) til at se, søge efter, stemme på eller tilføje nye ideer.          |                                                                                                                                                                                                                                                                                           
+| Opgave | Flere oplysninger |
+|------|------------------|
+| Spørg fællesskabet. | Gå til [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) for at få hjælp til dine spørgsmål. Du kan finde svarene ved at skrive et spørgsmål i søgefeltet ud for **Har du et spørgsmål**. Hvis du vil stille et spørgsmål, skal du vælge **Stil et spørgsmål**. |
+| Brug værktøjet Support fra skyen. | Gå i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) til projektet, og vælg feltet **Support**. Derfra kan du sende problemer på to måder:<ul><li>Vælg det problem, du vil sende, under fanen **Aktive problemer**, og vælg derefter **Send til Microsoft**.</li><li>Under fanen **Sendt til Microsoft** skal du vælge **Send en ny hændelse** for at sende et nyt problem.</li></ul> |
+| Få support via app. | Vælg knappen **Hjælp** (**?**) i øverste højre hjørne af siden. Hvis du er i Core HR, skal du vælge **Support**. Hvis du er i Attract eller Onboard, skal du vælge **Rapporter et problem**. Problemer rapporteres under fanen **Aktive problemer** i LCS, hvor en administrator kan afgøre, om der skal tilbydes intern support, eller om problemerne skal videresendes til Microsoft. Hvis du har den enkeltstående version af Onboard, sendes problemer direkte til Microsoft. |
+| Få hjælp til spørgsmål om Talent-licenser. | Kontakt din partner eller Microsoft-sælger. |
+| Anmod om nye funktioner og funktionsmåder i Talent. | Vælg knappen **Hjælp** (**?**) på Talent-hovedsiden i programmet, og vælg derefter **Idéer**. Du kan også besøge [Dynamics 365-programideer](https://experience.dynamics.com/ideas/) for at få vist, søge i eller stemme på eksisterende ideer eller for at tilføje nye ideer. |
+
+## <a name="support-for-the-onboard-stand-alone-app"></a>Understøttelse af den separate Onboard-app
+
+Du kan få support til den separate Onboard-app ved at bruge ressourcerne i følgende tabel. Disse ressourcer er angivet i den rækkefølge, vi anbefaler, at du følger, når du foretager fejlfinding. Du kan finde alle disse supportmuligheder ved at vælge knappen **Hjælp** (**?**) i øverste højre hjørne af siden.
+
+| Opgave | Flere oplysninger |
+|------|------------------|
+| Spørg fællesskabet. | Gå til [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) for at få hjælp. Du kan finde svarene ved at skrive et spørgsmål i søgefeltet ud for **Har du et spørgsmål**. Hvis du vil stille et spørgsmål, skal du vælge **Stil et spørgsmål**. |
+| Rapportér et problem. | Vælg knappen **Hjælp** (**?**) i øverste højre hjørne af siden, og vælg derefter **Rapportér et problem**. Angiv en beskrivelse af problemet, og medtag en e-mailadresse, hvis du vil følge op på det problemet. |
+| Få hjælp til spørgsmål om Talent-licenser. | Kontakt din partner eller Microsoft-sælger. |
+| Anmod om nye funktioner og funktionsmåder i Onboard. | Vælg knappen **Hjælp** (**?**), og vælg derefter **Idéer**. Du kan også besøge [Dynamics 365 for Talent: Onboard-ideer](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) for at få vist, søge i eller stemme på eksisterende ideer eller for at tilføje nye ideer. |

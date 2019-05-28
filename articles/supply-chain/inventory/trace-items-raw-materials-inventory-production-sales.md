@@ -19,11 +19,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562524"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing af varer og råvarer i lager, produktion og salg
 
@@ -130,7 +130,7 @@ Hvis du vil bruge indstillingen **Ny bagud** eller **Ny fremad**, skal du bruge 
 Du kan gemme oplysningerne under fanen <strong>Detaljer</strong> som en XML-fil ved at klikke på <strong>Eksportér</strong> under handlingen *<strong><em>Sporing</em></strong>* i handlingsruden. Ud over sporingsdetaljerne indeholder XML-filen sporingskriterierne, den overordnede node og den disponible beholdning. Muligheden for at gemme oplysningerne om en sporing, for eksempel hvis du vil vedhæfte oplysningerne på en kvalitetsordre eller anden dokumentation for overholdelse. Du kan angive, hvor filen er gemt. Vælg indstillingen <strong>Vis dokument</strong> for at få vist filen med det samme. <strong>Bemærk!</strong> Filen gemmes altid – selv hvis du kun vil vise den. Som standard åbnes XML-filen i et browservindue. Du kan dog højreklikke på filen, vælge <strong>Åbn med</strong> og derefter vælge det program, du vil bruge til at få vist indholdet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jeg beregne en saldo for en bestemt vare eller ingrediens?
-Du kan eksportere oplysninger fra oversigtssider til Microsoft Excel. Åbn den relevante side, klik på ikonet **Åbn i Microsoft OfficeMicrosoft Office**, og vælg derefter **Eksporter til Microsoft Excel**. Denne funktionalitet er især nyttig, når du vil beregne en massebalance for en vare eller en ingrediens i oversigtssiden **Transaktioner**. På oversigtssiden **Transaktioner** kan du filtrere på varen eller ingrediensen samt evt. batchen og derefter eksportere oplysningerne til Excel. I Excel kan du for eksempel isolere den disponible mængde, den solgte mængde og den mængde, der blev brugt i produktionen.
+Du kan eksportere oplysninger fra oversigtssider til Microsoft Excel. Åbn den relevante side, klik på ikonet **Åbn i Microsoft Office**, og vælg derefter **Eksporter til Microsoft Excel**. Denne funktionalitet er især nyttig, når du vil beregne en massebalance for en vare eller en ingrediens i oversigtssiden **Transaktioner**. På oversigtssiden **Transaktioner** kan du filtrere på varen eller ingrediensen samt evt. batchen og derefter eksportere oplysningerne til Excel. I Excel kan du for eksempel isolere den disponible mængde, den solgte mængde og den mængde, der blev brugt i produktionen.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Kan jeg undersøge, om der findes en oversigt over problemer med varer eller råvarer?
 Sporingsdetaljerne indeholder oplysninger om kvalitetsordrer og manglende overensstemmelse, der vedrører varen eller råvaren. For at få vist en oversigt over kvalitetsordrer og uoverensstemmelser skal du klikke på **Kvalitetsordrer** eller **Uoverensstemmelser** i handlingsruden. **Bemærk!** Destruktive kvalitetsordrer kan forekomme mere end én gang i sporingsdetaljerne. Når der oprettes en destruktiv kvalitetsordre for et dokument såsom en købsordre, vises den i hver transaktion for det pågældende dokument.

@@ -17,11 +17,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 249bf3f3806ed43eccf39086bdf9697a3e879c27
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551224"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>Tilknyt ER-datamodel til markerede datakilder
 
@@ -52,7 +52,7 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 7. Vælg "Transaktioner\Journalbatchnummer(JournalNum)" i træet.
 8. Klik på Bind.
 9. Vælg "Betalinger" i træet.
-10. Vælg "Transaktioner}" i træet.
+10. Vælg "Transaktioner" i træet.
 11. Klik på Bind.
 12. Udvid "Betalinger= Transaktioner" i træet.
 13. Udvid "Betalinger= Transaktioner\Kreditor" i træet.

@@ -3,14 +3,14 @@ title: Udvide Talent ved hjælp af PowerApps og Microsoft Flow - eksempelscenari
 description: Dette emne beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 for Talent ved hjælp af Microsoft PowerApps og Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517596"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Udvide Talent ved hjælp af PowerApps og Microsoft Flow - eksempelscenarier
 
@@ -101,7 +101,21 @@ Denne skabelon kan udvides, så den kan anvendes i alle scenarier, der omfatter 
 
 Du kan downloade skabelonen **Proces – SharePoint-integration** i Microsoft Download Center ved hjælp af følgende link: [Proces – SharePoint-integration](https://go.microsoft.com/fwlink/?linkid=2082109).
 
+## <a name="admin-console-to-manage-talent-pools"></a>Administrationskonsol til styring af talentpuljer
 
+Når du aktiverer integration med LinkedIn, opretter Attract automatisk en LinkedIn-talentgruppe. Når en rekrutteringsmedarbejder udveksler InMail med en rekrutteret via LinkedIn, opretter Attract en profil til den rekrutterede person, og vedkommende bliver medlem af LinkedIn-talentpuljen. Denne PowerApps-app er nyttig til reorganisering af kandidater i talentpuljer baseret på færdigheder.
+
+Kør denne PowerApps-app som en administratorkonsol for at udføre følgende opgaver:
+
+- Angive kandidater i en talentpulje
+- Føje kandidater til og fjerne kandidater fra en talentpulje
+- Flytte kandidater fra én talentpulje til en anden
+- Afklare, om kandidater allerede er en del af en talentpulje, før de flyttes
+- Kontrollere kandidaternes færdigheder, før du flytter dem til andre talentpuljer
+
+Denne PowerApps-app bruger mange-til-mange-relationer, så du kan bruge den som skabelon for andre scenarier, hvor du skal uddrage poster, der har mange-til-mange-relationer.
+
+Du kan hente skabelonen **Administrationskonsol til styring af talentpuljer** ved at gå til [Administrationskonsol til styring af talentpuljer](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) i Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

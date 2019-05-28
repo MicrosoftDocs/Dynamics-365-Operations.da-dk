@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992877"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527665"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller forældede funktioner
 
@@ -66,26 +66,6 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Produktområder, der er berørt**         | Webklient |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfasning: fra april 2020 vil den forbedrede "er en af"-oplevelse være standardopførelsen, såfremt der ikke forefindes en mekanisme, som kan gå tilbage til den ældre opførelse. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Afledning af interne klasser er udfaset
-
-|   |  |
-|------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Før platformsopdatering 25 var det muligt at oprette en klasse eller en tabel, som stammer fra en intern klasse/tabel, der er defineret i en anden pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med platformsopdateringen 25 viser kompileren en advarsel. |
-| **Erstattet af en anden funktion?**   | Advarslen fra kompileren erstattes af en fejlmeddelelse i platformsopdatering 26. Denne ændring er bagudkompatibel på kørselstidspunktet, hvilket betyder, at platformsopdatering 25 eller nyere kan installeres i et sandkasse- eller produktionsmiljø, uden at den brugerdefineret kode skal ændres. Denne ændring påvirker kun udviklings- og kompileringstiden.|
-| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
-| **Installationsindstilling**              | Alt |
-| **Status**                         | Udfasning: advarslen ændres til en kompileringsfejl i platformsopdatering 26. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Tilsidesættelse af interne metoder udfases
-
-|   |  |
-|------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Forud for platformsopdatering 25 var det muligt at tilsidesætte en intern metode i en afledt klasse, som er defineret i en anden pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med platformsopdateringen 25 viser kompileren en advarsel. |
-| **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejl i platformsopdatering 26. Denne ændring er bagudkompatibel på kørselstidspunktet, hvilket betyder, at platformsopdatering 25 eller nyere kan installeres i et sandkasse- eller produktionsmiljø, uden at den brugerdefineret kode skal ændres. Denne ændring påvirker kun udviklings- og kompileringstiden. |
-| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
-| **Installationsindstilling**              | Alt |
-| **Status**                         | Udfasning: advarslen ændres til en kompileringsfejl i platformsopdatering 26. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parameter til at aktivere salgsordre for projektkontrakter med flere finansieringskilder
 Understøttelse til at oprette projektbaserede salgsordre i de tilfælde, hvor projektkontrakten har flere finansieringskilder, er gjort mulig ved hjælp af indstillingen **Projektstyringsparametre** og **Tillad salgsordre for projekter med flere finansieringskilder**. Dette parameter er ikke aktiveret som standard. 

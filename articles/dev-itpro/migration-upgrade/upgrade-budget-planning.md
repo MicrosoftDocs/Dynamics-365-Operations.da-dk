@@ -18,11 +18,11 @@ ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554490"
 ---
 # <a name="upgrade-budget-planning"></a>Opgradere budgetplanlægning
 
@@ -30,7 +30,7 @@ ms.locfileid: "342954"
 
 Der er betydelige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.  
 
-Budgetplanlægning i Microsoft Dynamics 365 for Finance and Operations har mange forbedringer, der ikke var tilgængelige i Microsoft DynamicsAX 2012. I dette emne beskrives de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i dette emne, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
+Budgetplanlægning i Microsoft Dynamics 365 for Finance and Operations har mange forbedringer, der ikke var tilgængelige i Microsoft Dynamics AX 2012. I dette emne beskrives de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i dette emne, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
 
 ## <a name="overview-of-changes"></a>Oversigt over ændringer
 Der er foretaget mange væsentlige ændringer i Budgettering til Finance and Operations. Disse ændringer er beregnet til at gøre budgetplanlægningen nemmere at konfigurere og mere genanvendelig og til at reducere opsætning og vedligeholdelse år for år. Følgende områder i AX 2012 findes ikke længere i Finance and Operations:
@@ -54,7 +54,7 @@ Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de ko
 
 ### <a name="budget-planning-processes"></a>Budgetplanlægningsprocesser
 
-Budgetplanlægningsprocesser er næsten som i AX 2012. Den væsentligste ændring er en erstatning af skabeloner med layout. Hvis nogen processer tidligere blev afsluttet i AX 2012, opdateres processerne til status igangværende, så der kan udføres ændringer. Du skal tildele layout og for hver stadieregel bestemme, hvilke scenarier og tidsperioder der skal vises, når planen åbnes i klienten. De forskellige layout bestemmer også, hvilken Excel-skabelon der skal åbnes uden for Dynamics 365 for Finance and Operations, så du kan få vist budgettet. **Standardkontostruktur** er et nyt obligatorisk felt til budgetplanlægningsprocessen. For hver budgetplanlægningsproces skal du tildele den primære kontostruktur, der skal bruges til budgettering.
+Budgetplanlægningsprocesser er næsten som i AX 2012. Den væsentligste ændring er en erstatning af skabeloner med layout. Hvis nogen processer tidligere blev afsluttet i AX 2012, opdateres processerne til status igangværende, så der kan udføres ændringer. Du skal tildele layout og for hver stadieregel bestemme, hvilke scenarier og tidsperioder der skal vises, når planen åbnes i klienten. De forskellige layout bestemmer også, hvilken Excel-skabelon der skal åbnes uden for Dynamic 365 for Finance and Operations, så du kan få vist budgettet. **Standardkontostruktur** er et nyt obligatorisk felt til budgetplanlægningsprocessen. For hver budgetplanlægningsproces skal du tildele den primære kontostruktur, der skal bruges til budgettering.
 
 ### <a name="attachments"></a>Vedhæftede filer
 

@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d36867016f6bfeb149e417c1d86b585e01d59b2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4b7f6cd5f2de1c514b05da487fa99013c91ad373
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537726"
 ---
 # <a name="commitments-in-the-public-sector-in-france"></a>Forpligtelser i den offentlige sektor i Frankrig
 

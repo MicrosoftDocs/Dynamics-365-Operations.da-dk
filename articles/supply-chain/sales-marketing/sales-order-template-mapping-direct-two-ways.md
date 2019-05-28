@@ -3,7 +3,7 @@ title: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operati
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at køre synkronisering af salgsordrer direkte mellem Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339113"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539108"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
 
@@ -146,6 +146,16 @@ Før du synkroniserer salgsordrer, er det vigtigt, at du opdaterer følgende ind
 ### <a name="setup-in-finance-and-operations"></a>Konfiguration i Finance and Operations
 
 - Gå til **Salg og marketing** &gt; **Periodiske opgaver** &gt; **Beregn salgstotaler**, og Indstil jobbet til at køre som et batchjob. Angiv indstillingen **Beregn totaler for salgsordrer** til **Ja**. Dette trin er vigtigt, fordi kun salgsordrer, hvor salgstotaler er beregnet, synkroniseres med Sales. Frekvensen for batchjobbet skal være afstemt med frekvensen for salgsordresynkroniseringen.
+
+Hvis du også bruger arbejdsordreintegration, skal du konfigurere salgets oprindelse. Salgsoprindelsen bruges til at skelne salgsordrer i Finance and Operations, der er oprettet ud fra arbejdsordrer i Field Service. Når en salgsordre har en salgsoprindelse af typen **Arbejdsordreintegration**, vises feltet **Status for ordre på eksternt arbejde** i salgsordrehovedet. Desuden sikrer salgsoprindelsen, at salgsordrer, der er oprettet ud fra arbejdsordrer i Field Service, filtreres fra under synkronisering af salgsordrer fra Finance and Operations til Field Service.
+
+1. Gå til **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Salgsoprindelse**.
+2. Vælg **Ny** for at oprette en ny salgsoprindelse.
+3. I feltet **Salgsoprindelse** skal du angive et navn til salgsoprindelsen, f.eks. **Salgsordre**.
+4. Angiv en beskrivelse i feltet **Beskrivelse** som f.eks. **Salgsordre fra Sales**.
+5. Markér afkrydsningsfeltet **Tildeling af oprindelsestype**.
+6. Angiv feltet **Salgsoprindelsestype** til **Salgsordreintegration**.
+7. Vælg **Gem**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Opsætning i salgsordrer (Sales til Fin and Ops) – Direkte dataintegrationsprojekt
 
