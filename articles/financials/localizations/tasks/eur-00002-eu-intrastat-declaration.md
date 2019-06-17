@@ -1,116 +1,267 @@
----
-title: EUR-00002 Generere en EU Intrastat-opgørelse
-description: Denne procedure fører dig gennem de trin, der kræves for at eksportere Intrastat-opgørelsen i det elektroniske filformat og gennemse opgørelsens data i et Excel-format.
-author: Anasyash
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: anasyash
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 170c73d2ace75f990df9d57c658e859dcd30dd36
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537718"
----
-# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="a8d0a-103">EUR-00002 Generere en EU Intrastat-opgørelse</span><span class="sxs-lookup"><span data-stu-id="a8d0a-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="a8d0a-104">Denne procedure fører dig gennem de trin, der kræves for at eksportere Intrastat-opgørelsen i det elektroniske filformat og gennemse opgørelsens data i et Excel-format.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
-
-<span data-ttu-id="a8d0a-105">Før du kan udføre denne procedure, skal du overføre transaktioner til Intrastat.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
-
-<span data-ttu-id="a8d0a-106">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-106">This procedure was created using the demo data company DEMF.</span></span>
-
-
-## <a name="import-configurations-with-settings"></a><span data-ttu-id="a8d0a-107">Importere konfigurationer med indstillinger</span><span class="sxs-lookup"><span data-stu-id="a8d0a-107">Import configurations with settings</span></span>
-1. <span data-ttu-id="a8d0a-108">Gå til Arbejdsområder > Elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="a8d0a-108">Go to Workspaces > Electronic reporting</span></span>
-2. <span data-ttu-id="a8d0a-109">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-109">Click Set active.</span></span>
-3. <span data-ttu-id="a8d0a-110">Klik på Lagre.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-110">Click Repositories.</span></span>
-4. <span data-ttu-id="a8d0a-111">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-111">Click Open.</span></span>
-5. <span data-ttu-id="a8d0a-112">Åbn kolonnefilteret Konfigurationsnavn.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-112">Open Configuration name column filter.</span></span>
-6. <span data-ttu-id="a8d0a-113">Anvend et filter til feltet "Konfigurationsnavn" med værdien "Intrastat (DE)" ved hjælp af filteroperatøren "begynder med".</span><span class="sxs-lookup"><span data-stu-id="a8d0a-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="a8d0a-114">Du bør vælge det konfigurationsnavn, der gælder for landets/områdets juridiske enhed.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="a8d0a-115">Denne procedure bruger den tyske juridiske enhed (DEMF) som et eksempel, og derfor bør "Intrastat (DE)" vælges.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
-    * <span data-ttu-id="a8d0a-116">Klik på Importér, og klik derefter på Ja.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-116">Click Import and then click Yes.</span></span>  
-7. <span data-ttu-id="a8d0a-117">Åbn kolonnefilteret Konfigurationsnavn.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-117">Open Configuration name column filter.</span></span>
-8. <span data-ttu-id="a8d0a-118">Anvend et filter til feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatøren "begynder med".</span><span class="sxs-lookup"><span data-stu-id="a8d0a-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="a8d0a-119">Klik på Importér, og klik derefter på Ja.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-119">Click Import and then click Yes.</span></span>  
-
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="a8d0a-120">Konfigurere udenrigshandelsparametre</span><span class="sxs-lookup"><span data-stu-id="a8d0a-120">Set up Foreign trade parameters</span></span>
-1. <span data-ttu-id="a8d0a-121">Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre</span><span class="sxs-lookup"><span data-stu-id="a8d0a-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-2. <span data-ttu-id="a8d0a-122">Udvid sektionen Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-122">Expand the Electronic reporting section.</span></span>
-3. <span data-ttu-id="a8d0a-123">Indtast eller vælg værdien Intrastat (DE) i feltet Filformattilknytning.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
-4. <span data-ttu-id="a8d0a-124">Indtast eller vælg værdien Intrastat-rapport i feltet Rapportformattilknytning.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
-5. <span data-ttu-id="a8d0a-125">Udvid sektionen Afrundingsregler.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-125">Expand the Rounding rules section.</span></span>
-    * <span data-ttu-id="a8d0a-126">Du skal oprette afrundingsregler, der anvendes i dit land/område til Intrastat-rapportering.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
-6. <span data-ttu-id="a8d0a-127">Indtast et tal i feltet Afrundingsregel.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-127">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="a8d0a-128">Indtast for eksempel afrundingspræcisionen '0,01'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
-7. <span data-ttu-id="a8d0a-129">Indtast et tal i feltet Antal decimaler for beløb.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-129">In the Number of decimals for amount field, enter a number.</span></span>
-    * <span data-ttu-id="a8d0a-130">Indtast for eksempel '2'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-130">For example, enter '2'.</span></span>  
-8. <span data-ttu-id="a8d0a-131">Vælg en indstilling i feltet Afrunding under 1 kg.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-131">In the Rounding below 1 kg field, select an option.</span></span>
-    * <span data-ttu-id="a8d0a-132">Vælg for eksempel 'Afrunding op til 1 kg'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-132">For example, select 'Rounding up to 1 kg'.</span></span>  
-9. <span data-ttu-id="a8d0a-133">Indtast et tal i feltet Afrundingsregel.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-133">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="a8d0a-134">Indtast for eksempel '1' for at afrunde vægten til heltallet.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-134">For example, enter '1' for rounding weight to the integer.</span></span>  
-10. <span data-ttu-id="a8d0a-135">Udvid sektionen Minimumsgrænse.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-135">Expand the Minimum limit section.</span></span>
-11. <span data-ttu-id="a8d0a-136">Angiv et tal i feltet Vægt.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-136">In the Weight field, enter a number.</span></span>
-    * <span data-ttu-id="a8d0a-137">Indtast for eksempel '10' som minimal vægt.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-137">For example, enter '10' as the minimum weight.</span></span>  
-12. <span data-ttu-id="a8d0a-138">Angiv et tal i feltet Beløb.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-138">In the Amount field, enter a number.</span></span>
-    * <span data-ttu-id="a8d0a-139">Indtast for eksempel '200' som minimalt beløb.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-139">For example, enter '200' as the minimum amount.</span></span>  
-13. <span data-ttu-id="a8d0a-140">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-140">In the Commodity field, enter or select a value.</span></span>
-
-## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="a8d0a-141">Konfigurere komprimering af Intrastat</span><span class="sxs-lookup"><span data-stu-id="a8d0a-141">Set up Compression of Intrastat</span></span>
-1. <span data-ttu-id="a8d0a-142">Gå til Skat > Konfiguration > Udenrigshandel > Komprimering af Intrastat.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
-2. <span data-ttu-id="a8d0a-143">Klik på Fjern.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-143">Click Remove.</span></span>
-3. <span data-ttu-id="a8d0a-144">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-144">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="a8d0a-145">Vælg for eksempel Vare i sektionen Tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-145">For example, select Commodity in the Available section.</span></span>  
-4. <span data-ttu-id="a8d0a-146">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-146">Click Add.</span></span>
-
-## <a name="generate-intrastat-declaration"></a><span data-ttu-id="a8d0a-147">Generere Intrastat-opgørelse</span><span class="sxs-lookup"><span data-stu-id="a8d0a-147">Generate Intrastat declaration</span></span>
-1. <span data-ttu-id="a8d0a-148">Gå til Skat > Erklæringer > Udenrigshandel > Intrastat</span><span class="sxs-lookup"><span data-stu-id="a8d0a-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
-2. <span data-ttu-id="a8d0a-149">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-149">Click Validate.</span></span>
-    * <span data-ttu-id="a8d0a-150">Valideringen udføres i henhold til feltet Checkkonfiguration på siden Udenrigshandelsparametre.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
-3. <span data-ttu-id="a8d0a-151">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-151">Click OK.</span></span>
-4. <span data-ttu-id="a8d0a-152">Klik på Opdater.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-152">Click Update.</span></span>
-5. <span data-ttu-id="a8d0a-153">Klik på Minimumsgrænse</span><span class="sxs-lookup"><span data-stu-id="a8d0a-153">Click Minimum limit.</span></span>
-6. <span data-ttu-id="a8d0a-154">Angiv en dato i feltet Startdato.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-154">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="a8d0a-155">Indtast for eksempel '1. januar 2015'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-155">For example, enter January 1, 2015.</span></span>  
-7. <span data-ttu-id="a8d0a-156">Vælg Ja i feltet Komprimer.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-156">Select Yes in the Compress field.</span></span>
-8. <span data-ttu-id="a8d0a-157">Indtast en dato i feltet Slutdato.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-157">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="a8d0a-158">Indtast for eksempel '31. januar 2015'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-158">For example, enter January 31, 2015.</span></span>  
-9. <span data-ttu-id="a8d0a-159">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-159">Click OK.</span></span>
-10. <span data-ttu-id="a8d0a-160">Klik på Opdater.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-160">Click Update.</span></span>
-11. <span data-ttu-id="a8d0a-161">Klik på Komprimer.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-161">Click Compress.</span></span>
-    * <span data-ttu-id="a8d0a-162">Denne komprimering sker i overensstemmelse med konfigurationen af Komprimering af Intrastat.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
-12. <span data-ttu-id="a8d0a-163">Angiv en dato i feltet Startdato.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-163">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="a8d0a-164">Indtast for eksempel '1. januar 2015'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-164">For example, enter January 1, 2015.</span></span>  
-13. <span data-ttu-id="a8d0a-165">Indtast en dato i feltet Slutdato.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-165">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="a8d0a-166">Indtast for eksempel '31. januar 2015'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-166">For example, enter 31st January 2015.</span></span>  
-14. <span data-ttu-id="a8d0a-167">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-167">Click OK.</span></span>
-15. <span data-ttu-id="a8d0a-168">Klik på Opdater.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-168">Click Update.</span></span>
-16. <span data-ttu-id="a8d0a-169">Klik på Regenerer sekvensnumre.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-169">Click Regenerate sequence numbers.</span></span>
-17. <span data-ttu-id="a8d0a-170">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-170">Click OK.</span></span>
-18. <span data-ttu-id="a8d0a-171">Klik på Output.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-171">Click Output.</span></span>
-19. <span data-ttu-id="a8d0a-172">Klik på Rapport.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-172">Click Report.</span></span>
-20. <span data-ttu-id="a8d0a-173">Indtast den første dato i rapporteringsperioden i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-173">In the From date field, enter the first date of the reporting period.</span></span>
-    * <span data-ttu-id="a8d0a-174">Indstil for eksempel datoen til 1. januar 2015.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-174">For example, set the date to January 1, 2015.</span></span>  
-21. <span data-ttu-id="a8d0a-175">Indtast en dato i feltet Til dato.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-175">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="a8d0a-176">Indtast for eksempel '31. januar 2015'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-176">For example, enter January 31, 2015.</span></span>  
-22. <span data-ttu-id="a8d0a-177">Vælg Ja i feltet Generer fil.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-177">Select Yes in the Generate file field.</span></span>
-23. <span data-ttu-id="a8d0a-178">Skriv en værdi i feltet Filnavn.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-178">In the File name field, type a value.</span></span>
-24. <span data-ttu-id="a8d0a-179">Vælg Ja i feltet Generer rapport.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-179">Select Yes in the Generate report field.</span></span>
-25. <span data-ttu-id="a8d0a-180">Skriv en værdi i feltet Raportfilnavn.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-180">In the Report file name field, type a value.</span></span>
-26. <span data-ttu-id="a8d0a-181">Vælg en indstilling i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-181">In the Direction field, select an option.</span></span>
-    * <span data-ttu-id="a8d0a-182">Vælg for eksempel 'Udførsel'.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-182">For example, select 'Dispatches'.</span></span>  
-27. <span data-ttu-id="a8d0a-183">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a8d0a-183">Click OK.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="eur-00002-eu-intrastat-declaration.md" target-language="da-DK">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>eur-00002-eu-intrastat-declaration.f3e0e2.1236f27a3a5c208ffec41374a6593d1f0e7c4433.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>1236f27a3a5c208ffec41374a6593d1f0e7c4433</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00002-eu-intrastat-declaration.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EUR-00002 Generate an EU Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 Generere en EU Intrastat-opgørelse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure fører dig gennem de trin, der kræves for at eksportere Intrastat-opgørelsen i det elektroniske filformat og gennemse opgørelsens data i et Excel-format.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EUR-00002 Generate an EU Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 Generere en EU Intrastat-opgørelse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure fører dig gennem de trin, der kræves for at eksportere Intrastat-opgørelsen i det elektroniske filformat og gennemse opgørelsens data i et Excel-format.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Before you can complete this procedure, you must transfer transactions to the Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Før du kan udføre denne procedure, skal du overføre transaktioner til Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This procedure was created using the demo data company DEMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Import configurations with settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importere konfigurationer med indstillinger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Go to Workspaces &gt; Electronic reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Arbejdsområder &gt; Elektronisk rapportering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Angiv som aktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Click Repositories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Lagre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Click Open.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Åbn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Open Configuration name column filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Åbn kolonnefilteret Konfigurationsnavn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anvend et filter til feltet "Konfigurationsnavn" med værdien "Intrastat (DE)" ved hjælp af filteroperatøren "begynder med".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>You should select the configuration name applicable for the country of your legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du bør vælge det konfigurationsnavn, der gælder for landets/områdets juridiske enhed.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure bruger den tyske juridiske enhed (DEMF) som et eksempel, og derfor bør "Intrastat (DE)" vælges.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Click Import and then click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Importér, og klik derefter på Ja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Open Configuration name column filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Åbn kolonnefilteret Konfigurationsnavn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anvend et filter til feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatøren "begynder med".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click Import and then click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Importér, og klik derefter på Ja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Set up Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere udenrigshandelsparametre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Opsætning &gt; Udenrigshandel &gt; Udenrigshandelsparametre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Expand the Electronic reporting section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Elektronisk rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the File format mapping field, enter or select a value Intrastat (DE)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg værdien Intrastat (DE) i feltet Filformattilknytning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>In the Report format mapping field, enter or select a value Intrastat report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg værdien Intrastat-rapport i feltet Rapportformattilknytning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Expand the Rounding rules section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Afrundingsregler.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal oprette afrundingsregler, der anvendes i dit land/område til Intrastat-rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>In the Rounding rule field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast et tal i feltet Afrundingsregel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Enter rounding precision, for example, enter '0.01'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel afrundingspræcisionen '0,01'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>In the Number of decimals for amount field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast et tal i feltet Antal decimaler for beløb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>For example, enter '2'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '2'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the Rounding below 1 kg field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Afrunding under 1 kg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, select 'Rounding up to 1 kg'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg for eksempel 'Afrunding op til 1 kg'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the Rounding rule field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast et tal i feltet Afrundingsregel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For example, enter '1' for rounding weight to the integer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '1' for at afrunde vægten til heltallet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Expand the Minimum limit section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Minimumsgrænse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the Weight field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv et tal i feltet Vægt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>For example, enter '10' as the minimum weight.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '10' som minimal vægt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the Amount field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv et tal i feltet Beløb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For example, enter '200' as the minimum amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '200' som minimalt beløb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the Commodity field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Vare.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Set up Compression of Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere komprimering af Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Compression of Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Konfiguration &gt; Udenrigshandel &gt; Komprimering af Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Click Remove.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Fjern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For example, select Commodity in the Available section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg for eksempel Vare i sektionen Tilgængelige.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Generate Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generere Intrastat-opgørelse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Erklæringer &gt; Udenrigshandel &gt; Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Valider.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The validation is done according to the Check setup field on the Foreign trade parameters page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valideringen udføres i henhold til feltet Checkkonfiguration på siden Udenrigshandelsparametre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opdater.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Click Minimum limit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Minimumsgrænse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the Start date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv en dato i feltet Startdato.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>For example, enter January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '1. januar 2015'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Select Yes in the Compress field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Komprimer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>In the End date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast en dato i feltet Slutdato.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>For example, enter January 31, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '31. januar 2015'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opdater.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Click Compress.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Komprimer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>This compression happens according to how you set the Compression of intrastate settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne komprimering sker i overensstemmelse med konfigurationen af Komprimering af Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>In the Start date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv en dato i feltet Startdato.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>For example, enter January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '1. januar 2015'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>In the End date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast en dato i feltet Slutdato.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>For example, enter 31st January 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '31. januar 2015'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opdater.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Click Regenerate sequence numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Regenerer sekvensnumre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Click Output.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Output.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Click Report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rapport.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>In the From date field, enter the first date of the reporting period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast den første dato i rapporteringsperioden i feltet Fra dato.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>For example, set the date to January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indstil for eksempel datoen til 1. januar 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>In the To date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast en dato i feltet Til dato.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>For example, enter January 31, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast for eksempel '31. januar 2015'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Select Yes in the Generate file field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Generer fil.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>In the File name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Filnavn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Select Yes in the Generate report field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Generer rapport.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>In the Report file name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Raportfilnavn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>In the Direction field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Retning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>For example, select 'Dispatches'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg for eksempel 'Udførsel'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

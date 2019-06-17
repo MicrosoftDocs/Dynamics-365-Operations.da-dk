@@ -1,131 +1,306 @@
----
-title: EUR-00011 Konfigurere rapportering for EU-listesystemet
-description: Denne opgave gennemgår en oversigt over de forudsætninger, der er nødvendige for EU-listesystem-rapportering.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, SysQueryForm, SysQueryFieldLookUp,  TaxTable, TaxGroup, TaxItemGroup, TaxCountryRegionParameters, TaxVATNumTable, IntrastatParameters, CustTable, DirPartyQuickCreateForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: epopov
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee87abdc276d80123bbbe44a67c667bb0df9acb6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537717"
----
-# <a name="eur-00011-set-up-eu-sales-list-reporting"></a><span data-ttu-id="7b48f-103">EUR-00011 Konfigurere rapportering for EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-103">EUR-00011 Set up EU sales list reporting</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="7b48f-104">Denne opgave gennemgår en oversigt over de forudsætninger, der er nødvendige for EU-listesystem-rapportering.</span><span class="sxs-lookup"><span data-stu-id="7b48f-104">This task walks you through an overview of the prerequisites required for EU sales list reporting.</span></span> <span data-ttu-id="7b48f-105">Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Dynamics 365 for Finance and Operations Hjælp.</span><span class="sxs-lookup"><span data-stu-id="7b48f-105">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
-
-<span data-ttu-id="7b48f-106">Denne opgave gælder for alle europæiske lande/områder.</span><span class="sxs-lookup"><span data-stu-id="7b48f-106">This task applies to all European countries/regions.</span></span> <span data-ttu-id="7b48f-107">Guiden er oprettet ved hjælp af demodatafirmaet DEMF og bruger derfor Tyskland som et EU-land/områdeeksempel.</span><span class="sxs-lookup"><span data-stu-id="7b48f-107">The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="7b48f-108">Guiden bruger også Portugal som et EU-land/områdeeksempel.</span><span class="sxs-lookup"><span data-stu-id="7b48f-108">The guide also uses Portugal as an exemplar EU country/region.</span></span>
-
-<span data-ttu-id="7b48f-109">Disse opgaver er beregnet til systemadministratorer.</span><span class="sxs-lookup"><span data-stu-id="7b48f-109">These tasks are intended for system administrators.</span></span>
-
-
-## <a name="import-electronic-reporting-configurations-for-eu-sales-list-reporting"></a><span data-ttu-id="7b48f-110">Importer konfiguration for elektronisk rapportering for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-110">Import electronic reporting configurations for EU sales list reporting</span></span>
-1. <span data-ttu-id="7b48f-111">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="7b48f-111">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="7b48f-112">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="7b48f-112">Click Set active.</span></span>
-3. <span data-ttu-id="7b48f-113">Klik på Lagre.</span><span class="sxs-lookup"><span data-stu-id="7b48f-113">Click Repositories.</span></span>
-4. <span data-ttu-id="7b48f-114">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="7b48f-114">Click Open.</span></span>
-5. <span data-ttu-id="7b48f-115">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="7b48f-115">On the Action Pane, click Options.</span></span>
-6. <span data-ttu-id="7b48f-116">Klik på Avanceret filtrering/sortering.</span><span class="sxs-lookup"><span data-stu-id="7b48f-116">Click Advanced Filter/Sort.</span></span>
-7. <span data-ttu-id="7b48f-117">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7b48f-117">Click Add.</span></span>
-8. <span data-ttu-id="7b48f-118">Vælg "Konfigurationsnavn" i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="7b48f-118">In the Field field, select 'Configuration name'.</span></span>
-9. <span data-ttu-id="7b48f-119">Skriv '"EU-listesystem (DE)" i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="7b48f-119">In the Criteria field, type 'EU Sales list (DE)'.</span></span>
-10. <span data-ttu-id="7b48f-120">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7b48f-120">Click OK.</span></span>
-11. <span data-ttu-id="7b48f-121">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="7b48f-121">Click Import.</span></span>
-12. <span data-ttu-id="7b48f-122">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="7b48f-122">Click Yes.</span></span>
-13. <span data-ttu-id="7b48f-123">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="7b48f-123">On the Action Pane, click Options.</span></span>
-14. <span data-ttu-id="7b48f-124">Klik på Avanceret filtrering/sortering.</span><span class="sxs-lookup"><span data-stu-id="7b48f-124">Click Advanced Filter/Sort.</span></span>
-15. <span data-ttu-id="7b48f-125">Klik på Nulstil.</span><span class="sxs-lookup"><span data-stu-id="7b48f-125">Click Reset.</span></span>
-16. <span data-ttu-id="7b48f-126">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7b48f-126">Click Add.</span></span>
-17. <span data-ttu-id="7b48f-127">Vælg "Konfigurationsnavn" i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="7b48f-127">In the Field field, select 'Configuration name'.</span></span>
-18. <span data-ttu-id="7b48f-128">Skriv "EU-listesystemrapport efter rækker'" i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="7b48f-128">In the Criteria field, type 'EU Sales list by rows report'.</span></span>
-19. <span data-ttu-id="7b48f-129">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7b48f-129">Click OK.</span></span>
-20. <span data-ttu-id="7b48f-130">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="7b48f-130">Click Import.</span></span>
-21. <span data-ttu-id="7b48f-131">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="7b48f-131">Click Yes.</span></span>
-
-## <a name="set-up-sales-tax-codes-for-eu-sales-list-reporting"></a><span data-ttu-id="7b48f-132">Opsætning af momskoder for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-132">Set up sales tax codes for EU sales list reporting</span></span>
-1. <span data-ttu-id="7b48f-133">Gå til Moms > Indirekte skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="7b48f-133">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-2. <span data-ttu-id="7b48f-134">Brug Quick Filter til at filtrere på feltet Momskode med værdien ''VAT19".</span><span class="sxs-lookup"><span data-stu-id="7b48f-134">Use the Quick Filter to filter on the Sales tax code field with a value of 'VAT19'.</span></span>
-3. <span data-ttu-id="7b48f-135">Udvid sektionen Rapportopsætning.</span><span class="sxs-lookup"><span data-stu-id="7b48f-135">Expand the Report setup section.</span></span>
-    * <span data-ttu-id="7b48f-136">Kontroller, at sektionen Udelukket er angivet til Nej.</span><span class="sxs-lookup"><span data-stu-id="7b48f-136">Verify that the Excluded selection is set to No.</span></span>  
-    * <span data-ttu-id="7b48f-137">Du skal muligvis oplåse opgaveguiden for at ændre denne indstilling.</span><span class="sxs-lookup"><span data-stu-id="7b48f-137">You may need to unlock the task guide to change this setting.</span></span>  
-
-## <a name="set-up-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="7b48f-138">Opsætning af momsgrupper for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-138">Set up sales tax groups for EU sales list reporting</span></span>
-1. <span data-ttu-id="7b48f-139">Gå til Moms > Indirekte skatter > Moms > Momsgrupper.</span><span class="sxs-lookup"><span data-stu-id="7b48f-139">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
-2. <span data-ttu-id="7b48f-140">Brug Quick Filter til at filtrere på feltet Momsgruppe med værdien ''AR-DOM".</span><span class="sxs-lookup"><span data-stu-id="7b48f-140">Use the Quick Filter to filter on the Sales tax group field with a value of 'AR-DOM'.</span></span>
-3. <span data-ttu-id="7b48f-141">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="7b48f-141">Click Edit.</span></span>
-4. <span data-ttu-id="7b48f-142">Udvid sektionen Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="7b48f-142">Expand the Setup section.</span></span>
-5. <span data-ttu-id="7b48f-143">Marker den første række på listen.</span><span class="sxs-lookup"><span data-stu-id="7b48f-143">In the list, select the first row.</span></span>
-6. <span data-ttu-id="7b48f-144">Marker afkrydsningsfeltet Momsfri.</span><span class="sxs-lookup"><span data-stu-id="7b48f-144">Select the Exempt check box.</span></span>
-7. <span data-ttu-id="7b48f-145">Marker den anden række på listen.</span><span class="sxs-lookup"><span data-stu-id="7b48f-145">In the list, select the second row.</span></span>
-8. <span data-ttu-id="7b48f-146">Marker afkrydsningsfeltet Momsfri.</span><span class="sxs-lookup"><span data-stu-id="7b48f-146">Select the Exempt check box.</span></span>
-9. <span data-ttu-id="7b48f-147">Marker den tredje række på listen.</span><span class="sxs-lookup"><span data-stu-id="7b48f-147">In the list, select the third row.</span></span>
-10. <span data-ttu-id="7b48f-148">Marker afkrydsningsfeltet Momsfri.</span><span class="sxs-lookup"><span data-stu-id="7b48f-148">Select the Exempt check box.</span></span>
-
-## <a name="set-up-item-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="7b48f-149">Opsætning af varemomsgrupper for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-149">Set up item sales tax groups for EU sales list reporting</span></span>
-1. <span data-ttu-id="7b48f-150">Gå til Moms > Indirekte skatter > Moms > Momsgrupper.</span><span class="sxs-lookup"><span data-stu-id="7b48f-150">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
-2. <span data-ttu-id="7b48f-151">Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''FULL".</span><span class="sxs-lookup"><span data-stu-id="7b48f-151">Use the Quick Filter to filter on the Item sales tax group field with a value of 'FULL '.</span></span>
-    * <span data-ttu-id="7b48f-152">Kontroller, at Rapporteringstype er indstillet til "Vare".</span><span class="sxs-lookup"><span data-stu-id="7b48f-152">Verify that the Reporting type selection is set to 'Item'.</span></span>  
-    * <span data-ttu-id="7b48f-153">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</span><span class="sxs-lookup"><span data-stu-id="7b48f-153">You may need to unlock the task guide to change the value in this field.</span></span>  
-3. <span data-ttu-id="7b48f-154">Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''RED".</span><span class="sxs-lookup"><span data-stu-id="7b48f-154">Use the Quick Filter to filter on the Item sales tax group field with a value of 'RED '.</span></span>
-    * <span data-ttu-id="7b48f-155">Kontroller, at Rapporteringstype er indstillet til "Service".</span><span class="sxs-lookup"><span data-stu-id="7b48f-155">Verify that the Reporting type selection is set to 'Service'.</span></span>  
-    * <span data-ttu-id="7b48f-156">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</span><span class="sxs-lookup"><span data-stu-id="7b48f-156">You may need to unlock the task guide to change the value in this field.</span></span>  
-
-## <a name="set-up-countryregion-parameters-for-eu-sales-list-reporting"></a><span data-ttu-id="7b48f-157">Konfigurere parametre for land/område for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-157">Set up country/region parameters for EU sales list reporting</span></span>
-1. <span data-ttu-id="7b48f-158">Gå til Skat > Opsætning > Moms > Land/områdeparametre.</span><span class="sxs-lookup"><span data-stu-id="7b48f-158">Go to Tax > Setup > Sales tax > Country/region parameters.</span></span>
-2. <span data-ttu-id="7b48f-159">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="7b48f-159">Click New.</span></span>
-3. <span data-ttu-id="7b48f-160">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="7b48f-160">In the Country/region field, type 'PRT'.</span></span>
-4. <span data-ttu-id="7b48f-161">Skriv 'PT' i feltet Moms.</span><span class="sxs-lookup"><span data-stu-id="7b48f-161">In the Sales tax field, type 'PT'.</span></span>
-
-## <a name="create-tax-exempt-numbers"></a><span data-ttu-id="7b48f-162">Oprette SE-numre</span><span class="sxs-lookup"><span data-stu-id="7b48f-162">Create tax exempt numbers</span></span>
-1. <span data-ttu-id="7b48f-163">Gå til Skat > Opsætning > Moms > SE-numre.</span><span class="sxs-lookup"><span data-stu-id="7b48f-163">Go to Tax > Setup > Sales tax > Tax exempt numbers.</span></span>
-2. <span data-ttu-id="7b48f-164">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="7b48f-164">Click New.</span></span>
-3. <span data-ttu-id="7b48f-165">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="7b48f-165">In the Country/region field, type 'PRT'.</span></span>
-4. <span data-ttu-id="7b48f-166">Skriv "PT12345" i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="7b48f-166">In the Tax exempt number field, type 'PT12345'.</span></span>
-
-## <a name="set-up-eu-sales-list-reporting-parameters"></a><span data-ttu-id="7b48f-167">Konfigurere parametre for rapportering for EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-167">Set up EU sales list reporting parameters</span></span>
-1. <span data-ttu-id="7b48f-168">Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre.</span><span class="sxs-lookup"><span data-stu-id="7b48f-168">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
-2. <span data-ttu-id="7b48f-169">Klik på fanen EU-listesystem.</span><span class="sxs-lookup"><span data-stu-id="7b48f-169">Click the EU sales list tab.</span></span>
-3. <span data-ttu-id="7b48f-170">Vælg Ja i feltet Overfør køb.</span><span class="sxs-lookup"><span data-stu-id="7b48f-170">Select Yes in the Transfer purchases field.</span></span>
-4. <span data-ttu-id="7b48f-171">Udvid sektionen Afrundingsregler.</span><span class="sxs-lookup"><span data-stu-id="7b48f-171">Expand the Rounding rules section.</span></span>
-5. <span data-ttu-id="7b48f-172">Indstil Afrundingsregel til "0.1".</span><span class="sxs-lookup"><span data-stu-id="7b48f-172">Set Rounding rule to '0.1'.</span></span>
-6. <span data-ttu-id="7b48f-173">Vælg Ja i feltet Brug minimumværdi.</span><span class="sxs-lookup"><span data-stu-id="7b48f-173">Select Yes in the Use minimum value field.</span></span>
-7. <span data-ttu-id="7b48f-174">Skriv "2" i feltet Antal decimaler.</span><span class="sxs-lookup"><span data-stu-id="7b48f-174">In the Number of decimals field, enter '2'.</span></span>
-8. <span data-ttu-id="7b48f-175">Udvid sektionen Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="7b48f-175">Expand the Electronic reporting section.</span></span>
-9. <span data-ttu-id="7b48f-176">Vælg "EU-listesystem (DE)" i feltet Filformattilknytning.</span><span class="sxs-lookup"><span data-stu-id="7b48f-176">In the File format mapping field, select 'EU Sales list (DE)'.</span></span>
-10. <span data-ttu-id="7b48f-177">Vælg "EU-listesystemrapport efter rækker" i feltet Filformattilknytning.</span><span class="sxs-lookup"><span data-stu-id="7b48f-177">In the Report format mapping field, select 'EU Sales list by rows report'.</span></span>
-11. <span data-ttu-id="7b48f-178">Klik på fanen Egenskaber for land/område.</span><span class="sxs-lookup"><span data-stu-id="7b48f-178">Click the Country/region properties tab.</span></span>
-    * <span data-ttu-id="7b48f-179">Kontroller, at feltet Lande-/områdetype er angivet til "Indland" for landet/området DEU.</span><span class="sxs-lookup"><span data-stu-id="7b48f-179">Verify that the Country/region type field is set to 'Domestic' for Country/region DEU.</span></span>  
-    * <span data-ttu-id="7b48f-180">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</span><span class="sxs-lookup"><span data-stu-id="7b48f-180">You may need to unlock the task guide to change the value in this field.</span></span>  
-12. <span data-ttu-id="7b48f-181">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="7b48f-181">Click New.</span></span>
-13. <span data-ttu-id="7b48f-182">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="7b48f-182">In the Country/region field, type 'PRT'.</span></span>
-14. <span data-ttu-id="7b48f-183">Skriv 'PT' i feltet Intrastat-kode.</span><span class="sxs-lookup"><span data-stu-id="7b48f-183">In the Intrastat code field, type 'PT'.</span></span>
-15. <span data-ttu-id="7b48f-184">Vælg "EU" i feltet Lande-/områdetype.</span><span class="sxs-lookup"><span data-stu-id="7b48f-184">In the Country/region type field, select 'EU'.</span></span>
-16. <span data-ttu-id="7b48f-185">Klik på fanen Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="7b48f-185">Click the Number sequences tab.</span></span>
-    * <span data-ttu-id="7b48f-186">Kontroller, at der er angivet en nummerseriekode for referencen "EU-listesystem".</span><span class="sxs-lookup"><span data-stu-id="7b48f-186">Verify that a Number sequence code is specified for the Reference 'EU sales list'.</span></span>  
-
-## <a name="create-a-customer-for-eu-sales-list-reporting-demo-purposes"></a><span data-ttu-id="7b48f-187">Oprette en kunde med henblik på demonstration af EU-rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="7b48f-187">Create a customer for EU sales list reporting demo purposes</span></span>
-1. <span data-ttu-id="7b48f-188">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="7b48f-188">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="7b48f-189">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="7b48f-189">Click New.</span></span>
-3. <span data-ttu-id="7b48f-190">Skriv "PRT-001" i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="7b48f-190">In the Customer account field, type 'PRT-001'.</span></span>
-4. <span data-ttu-id="7b48f-191">Skriv 'En kunde fra Portugal' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7b48f-191">In the Name field, type 'A customer from Portugal'.</span></span>
-5. <span data-ttu-id="7b48f-192">Vælg "10" i feltet Kundegruppe.</span><span class="sxs-lookup"><span data-stu-id="7b48f-192">In the Customer group field, select '10'.</span></span>
-6. <span data-ttu-id="7b48f-193">Vælg "AR-DOM" i feltet Momsgruppe.</span><span class="sxs-lookup"><span data-stu-id="7b48f-193">In the Sales tax group field, select 'AR-DOM'.</span></span>
-7. <span data-ttu-id="7b48f-194">Vælg "PT12345" i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="7b48f-194">In the Tax exempt number field, select 'PT12345'.</span></span>
-8. <span data-ttu-id="7b48f-195">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="7b48f-195">In the Country/region field, type 'PRT'.</span></span>
-9. <span data-ttu-id="7b48f-196">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="7b48f-196">Click Save.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="eur-00011-eu-sales-list-reporting.md" target-language="da-DK">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>eur-00011-eu-sales-list-reporting.e82505.aef1d19aabb7937fcd961a9657b8ca65c064b0b1.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>aef1d19aabb7937fcd961a9657b8ca65c064b0b1</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00011-eu-sales-list-reporting.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EUR-00011 Set up EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00011 Konfigurere rapportering for EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This task walks you through an overview of the prerequisites required for EU sales list reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne opgave gennemgår en oversigt over de forudsætninger, der er nødvendige for EU-listesystem-rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EUR-00011 Set up EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00011 Konfigurere rapportering for EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This task walks you through an overview of the prerequisites required for EU sales list reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne opgave gennemgår en oversigt over de forudsætninger, der er nødvendige for EU-listesystem-rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Dynamics 365 for Finance and Operations Hjælp.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This task applies to all European countries/regions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne opgave gælder for alle europæiske lande/områder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Guiden er oprettet ved hjælp af demodatafirmaet DEMF og bruger derfor Tyskland som et EU-land/områdeeksempel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The guide also uses Portugal as an exemplar EU country/region.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Guiden bruger også Portugal som et EU-land/områdeeksempel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>These tasks are intended for system administrators.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse opgaver er beregnet til systemadministratorer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Import electronic reporting configurations for EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importer konfiguration for elektronisk rapportering for rapportering til EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Virksomhedsadministration &gt; Arbejdsområder &gt; Elektronisk rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Angiv som aktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Click Repositories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Lagre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Click Open.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Åbn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>On the Action Pane, click Options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Indstillinger i handlingsruden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Click Advanced Filter/Sort.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Avanceret filtrering/sortering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>In the Field field, select 'Configuration name'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Konfigurationsnavn" i feltet Felt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In the Criteria field, type 'EU Sales list (DE)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv '"EU-listesystem (DE)" i feltet Kriterier.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Click Import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Importer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>On the Action Pane, click Options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Indstillinger i handlingsruden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Click Advanced Filter/Sort.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Avanceret filtrering/sortering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Click Reset.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Nulstil.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>In the Field field, select 'Configuration name'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Konfigurationsnavn" i feltet Felt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>In the Criteria field, type 'EU Sales list by rows report'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "EU-listesystemrapport efter rækker'" i feltet Kriterier.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click Import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Importer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Set up sales tax codes for EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opsætning af momskoder for rapportering til EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Go to Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Moms &gt; Indirekte skatter &gt; Moms &gt; Momskoder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Use the Quick Filter to filter on the Sales tax code field with a value of 'VAT19'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug Quick Filter til at filtrere på feltet Momskode med værdien ''VAT19".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Expand the Report setup section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Rapportopsætning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Verify that the Excluded selection is set to No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at sektionen Udelukket er angivet til Nej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>You may need to unlock the task guide to change this setting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal muligvis oplåse opgaveguiden for at ændre denne indstilling.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Set up sales tax groups for EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opsætning af momsgrupper for rapportering til EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Go to Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Moms &gt; Indirekte skatter &gt; Moms &gt; Momsgrupper.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Use the Quick Filter to filter on the Sales tax group field with a value of 'AR-DOM'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug Quick Filter til at filtrere på feltet Momsgruppe med værdien ''AR-DOM".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rediger.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Expand the Setup section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Konfiguration.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In the list, select the first row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker den første række på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Select the Exempt check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker afkrydsningsfeltet Momsfri.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>In the list, select the second row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker den anden række på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Select the Exempt check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker afkrydsningsfeltet Momsfri.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>In the list, select the third row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker den tredje række på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Select the Exempt check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker afkrydsningsfeltet Momsfri.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Set up item sales tax groups for EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opsætning af varemomsgrupper for rapportering til EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Go to Tax &gt; Indirect taxes &gt; Sales tax &gt; Item sales tax groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Moms &gt; Indirekte skatter &gt; Moms &gt; Momsgrupper.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Use the Quick Filter to filter on the Item sales tax group field with a value of 'FULL '.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''FULL".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Verify that the Reporting type selection is set to 'Item'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at Rapporteringstype er indstillet til "Vare".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>You may need to unlock the task guide to change the value in this field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Use the Quick Filter to filter on the Item sales tax group field with a value of 'RED '.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''RED".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Verify that the Reporting type selection is set to 'Service'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at Rapporteringstype er indstillet til "Service".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>You may need to unlock the task guide to change the value in this field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Set up country/region parameters for EU sales list reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere parametre for land/område for rapportering til EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Go to Tax &gt; Setup &gt; Sales tax &gt; Country/region parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Opsætning &gt; Moms &gt; Land/områdeparametre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the Country/region field, type 'PRT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "PRT" i feltet Land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>In the Sales tax field, type 'PT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv 'PT' i feltet Moms.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Create tax exempt numbers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette SE-numre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Go to Tax &gt; Setup &gt; Sales tax &gt; Tax exempt numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Opsætning &gt; Moms &gt; SE-numre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>In the Country/region field, type 'PRT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "PRT" i feltet Land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>In the Tax exempt number field, type 'PT12345'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "PT12345" i feltet SE-nummer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Set up EU sales list reporting parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere parametre for rapportering for EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Opsætning &gt; Udenrigshandel &gt; Udenrigshandelsparametre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Click the EU sales list tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen EU-listesystem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Select Yes in the Transfer purchases field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Overfør køb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Expand the Rounding rules section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Afrundingsregler.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Set Rounding rule to '0.1'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indstil Afrundingsregel til "0.1".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Select Yes in the Use minimum value field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Brug minimumværdi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>In the Number of decimals field, enter '2'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "2" i feltet Antal decimaler.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Expand the Electronic reporting section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Elektronisk rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>In the File format mapping field, select 'EU Sales list (DE)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "EU-listesystem (DE)" i feltet Filformattilknytning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>In the Report format mapping field, select 'EU Sales list by rows report'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "EU-listesystemrapport efter rækker" i feltet Filformattilknytning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Click the Country/region properties tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Egenskaber for land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Verify that the Country/region type field is set to 'Domestic' for Country/region DEU.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at feltet Lande-/områdetype er angivet til "Indland" for landet/området DEU.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>You may need to unlock the task guide to change the value in this field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>In the Country/region field, type 'PRT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "PRT" i feltet Land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>In the Intrastat code field, type 'PT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv 'PT' i feltet Intrastat-kode.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>In the Country/region type field, select 'EU'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "EU" i feltet Lande-/områdetype.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Click the Number sequences tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Nummerserier.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Verify that a Number sequence code is specified for the Reference 'EU sales list'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at der er angivet en nummerseriekode for referencen "EU-listesystem".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Create a customer for EU sales list reporting demo purposes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette en kunde med henblik på demonstration af EU-rapportering til EU-listesystemet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Go to Accounts receivable &gt; Customers &gt; All customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Kunder &gt; Alle kunder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>In the Customer account field, type 'PRT-001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "PRT-001" i feltet Kundekonto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>In the Name field, type 'A customer from Portugal'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv 'En kunde fra Portugal' i feltet Navn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>In the Customer group field, select '10'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "10" i feltet Kundegruppe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>In the Sales tax group field, select 'AR-DOM'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "AR-DOM" i feltet Momsgruppe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>In the Tax exempt number field, select 'PT12345'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "PT12345" i feltet SE-nummer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>In the Country/region field, type 'PRT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "PRT" i feltet Land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

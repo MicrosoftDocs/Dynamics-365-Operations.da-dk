@@ -1,202 +1,576 @@
----
-title: ER Opgradere dit format ved at bruge en ny basisversion af formatet
-description: Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER).
-author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
-audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.search.region: Global
-ms.author: nselin
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544443"
----
-# <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a><span data-ttu-id="a374c-103">ER Opgradere dit format ved at bruge en ny basisversion af formatet</span><span class="sxs-lookup"><span data-stu-id="a374c-103">ER Upgrade your format by adopting a new, base version of that format</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="a374c-104">Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="a374c-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="a374c-105">Denne fremgangsmåde forklarer, hvordan en brugerdefineret version af et format kan oprettes ud fra det format, der er modtaget fra konfigurationsudbyderen (CP).</span><span class="sxs-lookup"><span data-stu-id="a374c-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="a374c-106">Det forklares også, hvordan en ny basisversion af det pågældende format skal implementeres.</span><span class="sxs-lookup"><span data-stu-id="a374c-106">It also explains how to adopt a new, base version of that format.</span></span>
-
-
-
-<span data-ttu-id="a374c-107">For at fuldføre denne fremgangsmåde, skal du først udføre trinnene i procedurerne "Oprette en konfigurationsudbyder og markere den som aktiv" og "Bruge oprettet format for at generere elektroniske dokumenter til betalinger".</span><span class="sxs-lookup"><span data-stu-id="a374c-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</span></span> <span data-ttu-id="a374c-108">Disse trin kan udføres i GBSI-virksomheden.</span><span class="sxs-lookup"><span data-stu-id="a374c-108">These steps can be performed in the GBSI company.</span></span>
-
-
-## <a name="select-format-configuration-for-customization"></a><span data-ttu-id="a374c-109">Vælge formatkonfiguration, der skal tilpasses</span><span class="sxs-lookup"><span data-stu-id="a374c-109">Select format configuration for customization</span></span>
-1. <span data-ttu-id="a374c-110">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="a374c-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-    * <span data-ttu-id="a374c-111">I dette eksempel fungerer eksempelfirmaet Litware, Inc. (http://www.litware.com) som en konfigurationsudbyder, der understøtter formatkonfigurationer af elektroniske betalinger for et bestemt land/område.</span><span class="sxs-lookup"><span data-stu-id="a374c-111">In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.</span></span>    <span data-ttu-id="a374c-112">Eksempelfirmaet Proseware, Inc. (http://www.proseware.com) vil fungere som en forbruger af den formatkonfiguration, som Litware, Inc har leveret.</span><span class="sxs-lookup"><span data-stu-id="a374c-112">Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided.</span></span> <span data-ttu-id="a374c-113">Proseware, Inc. bruger formater i bestemte dele af det pågældende land/område.</span><span class="sxs-lookup"><span data-stu-id="a374c-113">Proseware, Inc. uses formats in certain regions of that country.</span></span>  
-2. <span data-ttu-id="a374c-114">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="a374c-114">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="a374c-115">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="a374c-115">Click Show filters.</span></span>
-4. <span data-ttu-id="a374c-116">Anvend følgende filtre: Angiv filterværdien "BACS (UK-fiktiv)" i feltet "Navn" ved hjælp af filteroperatøren "begynder med".</span><span class="sxs-lookup"><span data-stu-id="a374c-116">Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</span></span>
-    * <span data-ttu-id="a374c-117">BACS (UK-fiktiv)</span><span class="sxs-lookup"><span data-stu-id="a374c-117">BACS (UK fictitious)</span></span>  
-    * <span data-ttu-id="a374c-118">Den valgte BACS-formatkonfiguration (UK fiktivt brugerdefineret), som ejes af udbyderen Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="a374c-118">The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</span></span>  
-5. <span data-ttu-id="a374c-119">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="a374c-119">Click Show filters.</span></span>
-6. <span data-ttu-id="a374c-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="a374c-120">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="a374c-121">Versionen af formatet med statussen Fuldført vil blive brugt af Proseware, Inc. til tilpasning.</span><span class="sxs-lookup"><span data-stu-id="a374c-121">The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</span></span>  
-
-## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a><span data-ttu-id="a374c-122">Oprette en ny konfiguration af det brugerdefinerede format for elektronisk dokument</span><span class="sxs-lookup"><span data-stu-id="a374c-122">Create a new configuration for your custom format of electronic document</span></span>
-    * <span data-ttu-id="a374c-123">Proseware, Inc. modtog version 1.1 af BACS-konfigurationen (UK fiktiv), der indeholder det oprindelige format til oprettelse af elektroniske betalingsdokumenter fra Litware, Inc. i overensstemmelse med deres serviceabonnement.</span><span class="sxs-lookup"><span data-stu-id="a374c-123">Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</span></span> <span data-ttu-id="a374c-124">Proseware, Inc. ønsker at begynde at bruge det som en standard for deres land/område, men nogle tilpasninger er påkrævet for at understøtte specifikke regionale krav.</span><span class="sxs-lookup"><span data-stu-id="a374c-124">Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</span></span> <span data-ttu-id="a374c-125">Proseware, Inc. ønsker også at bevare muligheden for at opgradere et brugerdefineret format, så snart der kommer en ny version af det (med ændringer for at understøtte nye lande-/områdespecifikke krav) fra Litware, Inc., og de ønsker at udføre denne opgradering med de laveste omkostninger.</span><span class="sxs-lookup"><span data-stu-id="a374c-125">Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</span></span>  <span data-ttu-id="a374c-126">For at kunne gøre dette skal Proseware, Inc. oprette en konfiguration og bruge BACS-konfigurationen af Litware, Inc. (UK fiktiv) som udgangspunkt.</span><span class="sxs-lookup"><span data-stu-id="a374c-126">To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</span></span>  
-1. <span data-ttu-id="a374c-127">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a374c-127">Close the page.</span></span>
-2. <span data-ttu-id="a374c-128">Vælg Proseware, Inc., for at gøre den til en aktiv udbyder.</span><span class="sxs-lookup"><span data-stu-id="a374c-128">Select Proseware, Inc. to make it an active provider.</span></span>
-3. <span data-ttu-id="a374c-129">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="a374c-129">Click Set active.</span></span>
-4. <span data-ttu-id="a374c-130">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="a374c-130">Click Reporting configurations.</span></span>
-5. <span data-ttu-id="a374c-131">Udvid 'Betalinger (forenklet model)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-131">In the tree, expand 'Payments (simplified model)'.</span></span>
-6. <span data-ttu-id="a374c-132">Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-132">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
-    * <span data-ttu-id="a374c-133">Vælg BACS-konfigurationen (UK fiktiv) fra Litware, Inc. Proseware, Inc. bruger version 1.1 som udgangspunkt for den brugerdefinerede version.</span><span class="sxs-lookup"><span data-stu-id="a374c-133">Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</span></span>  
-7. <span data-ttu-id="a374c-134">Klik på Opret konfiguration for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="a374c-134">Click Create configuration to open the drop dialog.</span></span>
-    * <span data-ttu-id="a374c-135">Dette gør det muligt at oprette en ny konfiguration for et brugerdefineret betalingsformat.</span><span class="sxs-lookup"><span data-stu-id="a374c-135">This lets you create a new configuration for a custom payment format.</span></span>  
-8. <span data-ttu-id="a374c-136">Angiv 'Afled af navn: BACS (UK fiktivt), Litware, Inc.' i feltet Ny.</span><span class="sxs-lookup"><span data-stu-id="a374c-136">In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</span></span>
-    * <span data-ttu-id="a374c-137">Vælg indstillingen Afled for at bekræfte brugen af BACS (UK fiktivt) som basis for at oprette den brugerdefinerede version.</span><span class="sxs-lookup"><span data-stu-id="a374c-137">Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</span></span>  
-9. <span data-ttu-id="a374c-138">Skriv 'BACS (UK-fiktivt brugerdefineret) i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="a374c-138">In the Name field, type 'BACS (UK fictitious custom)'.</span></span>
-    * <span data-ttu-id="a374c-139">BACS (UK fiktivt brugerdefineret)</span><span class="sxs-lookup"><span data-stu-id="a374c-139">BACS (UK fictitious custom)</span></span>  
-10. <span data-ttu-id="a374c-140">Skriv "BACS kreditorbetalingsformat (UK fiktivt brugerdefineret)" i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a374c-140">In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</span></span>
-    * <span data-ttu-id="a374c-141">BACS-kreditorbetaling (UK fiktivt brugerdefineret)</span><span class="sxs-lookup"><span data-stu-id="a374c-141">BACS vendor payment (UK fictitious custom)</span></span>  
-    * <span data-ttu-id="a374c-142">Den aktive konfigurationsudbyder (Proseware, Inc.) indsættes automatisk her.</span><span class="sxs-lookup"><span data-stu-id="a374c-142">The active configuration provider (Proseware, Inc.) is automatically entered here.</span></span> <span data-ttu-id="a374c-143">Denne udbyder vil kunne vedligeholde denne konfiguration.</span><span class="sxs-lookup"><span data-stu-id="a374c-143">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="a374c-144">Andre udbydere kan bruge denne konfiguration, men vil ikke kunne vedligeholde den.</span><span class="sxs-lookup"><span data-stu-id="a374c-144">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
-11. <span data-ttu-id="a374c-145">Klik på Opret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="a374c-145">Click Create configuration.</span></span>
-
-## <a name="customize-your-format-for-the-electronic-document"></a><span data-ttu-id="a374c-146">Tilpasse format for det elektroniske dokument</span><span class="sxs-lookup"><span data-stu-id="a374c-146">Customize your format for the electronic document</span></span>
-1. <span data-ttu-id="a374c-147">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="a374c-147">Click Designer.</span></span>
-2. <span data-ttu-id="a374c-148">Klik på Udvid/skjul.</span><span class="sxs-lookup"><span data-stu-id="a374c-148">Click Expand/collapse.</span></span>
-3. <span data-ttu-id="a374c-149">Klik på Udvid/skjul.</span><span class="sxs-lookup"><span data-stu-id="a374c-149">Click Expand/collapse.</span></span>
-4. <span data-ttu-id="a374c-150">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-150">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
-5. <span data-ttu-id="a374c-151">Klik på Tilføj for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="a374c-151">Click Add to open the drop dialog.</span></span>
-6. <span data-ttu-id="a374c-152">Vælg "XML\Element'' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-152">In the tree, select 'XML\Element'.</span></span>
-7. <span data-ttu-id="a374c-153">Skriv "IBAN" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="a374c-153">In the Name field, type 'IBAN'.</span></span>
-    * <span data-ttu-id="a374c-154">IBAN</span><span class="sxs-lookup"><span data-stu-id="a374c-154">IBAN</span></span>  
-8. <span data-ttu-id="a374c-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-155">Click OK.</span></span>
-9. <span data-ttu-id="a374c-156">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank\IBAN" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-156">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</span></span>
-10. <span data-ttu-id="a374c-157">Klik på Tilføj for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="a374c-157">Click Add to open the drop dialog.</span></span>
-11. <span data-ttu-id="a374c-158">Vælg "Tekst\Streng" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-158">In the tree, select 'Text\String'.</span></span>
-12. <span data-ttu-id="a374c-159">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-159">Click OK.</span></span>
-13. <span data-ttu-id="a374c-160">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Navn\Streng" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-160">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
-14. <span data-ttu-id="a374c-161">Angiv '60' i feltet Maksimumlængde.</span><span class="sxs-lookup"><span data-stu-id="a374c-161">In the Maximum length field, enter '60'.</span></span>
-15. <span data-ttu-id="a374c-162">Klik på fanen Tilknytning.</span><span class="sxs-lookup"><span data-stu-id="a374c-162">Click the Mapping tab.</span></span>
-16. <span data-ttu-id="a374c-163">Udvid 'model' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-163">In the tree, expand 'model'.</span></span>
-17. <span data-ttu-id="a374c-164">Udvid 'model\Betalinger' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-164">In the tree, expand 'model\Payments'.</span></span>
-18. <span data-ttu-id="a374c-165">Udvid "model\Betalinger\Kreditor" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-165">In the tree, expand 'model\Payments\Creditor'.</span></span>
-19. <span data-ttu-id="a374c-166">Udvid 'model\Betalinger\Kreditor\Konto' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-166">In the tree, expand 'model\Payments\Creditor\Account'.</span></span>
-20. <span data-ttu-id="a374c-167">Vælg "model\Betalinger\Kreditor\Konto\IBAN" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-167">In the tree, select 'model\Payments\Creditor\Account\IBAN'.</span></span>
-21. <span data-ttu-id="a374c-168">Vælg "Xml\Meddelelse\Betalinger\Vare = model.Betalinger\Kreditor\Bank\IBAN\Streng" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-168">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</span></span>
-22. <span data-ttu-id="a374c-169">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="a374c-169">Click Bind.</span></span>
-23. <span data-ttu-id="a374c-170">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="a374c-170">Click Save.</span></span>
-
-## <a name="validate-the-customized-format"></a><span data-ttu-id="a374c-171">Validere det tilpassede format</span><span class="sxs-lookup"><span data-stu-id="a374c-171">Validate the customized format</span></span>
-1. <span data-ttu-id="a374c-172">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="a374c-172">Click Validate.</span></span>
-    * <span data-ttu-id="a374c-173">Validér det tilpassede formatlayout og ændringer af datatilknytningen til at sikre, at alle bindinger er i orden.</span><span class="sxs-lookup"><span data-stu-id="a374c-173">Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</span></span>  
-2. <span data-ttu-id="a374c-174">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a374c-174">Close the page.</span></span>
-
-## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a><span data-ttu-id="a374c-175">Ændre statussen for den aktuelle version af den brugerdefinerede formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="a374c-175">Change the status of the current version of the custom format configuration</span></span>
-    * <span data-ttu-id="a374c-176">Skift status for den designede formatkonfiguration fra Kladde til Fuldført for at gøre den tilgængelig for oprettelse af betalingsdokumenter.</span><span class="sxs-lookup"><span data-stu-id="a374c-176">Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</span></span>  
-1. <span data-ttu-id="a374c-177">Klik på Skift status.</span><span class="sxs-lookup"><span data-stu-id="a374c-177">Click Change status.</span></span>
-    * <span data-ttu-id="a374c-178">Bemærk, at den aktuelle version af den valgte konfiguration har statussen Kladde.</span><span class="sxs-lookup"><span data-stu-id="a374c-178">Note that the current version of the selected configuration is in Draft status.</span></span>  
-2. <span data-ttu-id="a374c-179">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="a374c-179">Click Complete.</span></span>
-3. <span data-ttu-id="a374c-180">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a374c-180">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="a374c-181">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-181">Click OK.</span></span>
-5. <span data-ttu-id="a374c-182">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="a374c-182">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="a374c-183">Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.1.1.</span><span class="sxs-lookup"><span data-stu-id="a374c-183">Note that the created configuration is saved as completed version 1.1.1.</span></span> <span data-ttu-id="a374c-184">Det betyder, at det er version 1 af det brugerdefinerede BACS-format (UK fiktivt brugerdefineret), der er baseret på version 1 af BACS-formatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).</span><span class="sxs-lookup"><span data-stu-id="a374c-184">This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</span></span>  
-
-## <a name="test-the-customized-format-to-generate-payment-files"></a><span data-ttu-id="a374c-185">Teste det tilpassede format for at generere betalingsfiler</span><span class="sxs-lookup"><span data-stu-id="a374c-185">Test the customized format to generate payment files</span></span>
-    * <span data-ttu-id="a374c-186">Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations Enterprise edition-session.</span><span class="sxs-lookup"><span data-stu-id="a374c-186">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="a374c-187">Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde.</span><span class="sxs-lookup"><span data-stu-id="a374c-187">Select the BACS (UK fictitious custom) format in electronic payment method parameters.</span></span> <span data-ttu-id="a374c-188">Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.</span><span class="sxs-lookup"><span data-stu-id="a374c-188">Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</span></span>  
-
-## <a name="update-the-existing-country-specific-configuration"></a><span data-ttu-id="a374c-189">Opdatere den eksisterende landespecifikke konfiguration</span><span class="sxs-lookup"><span data-stu-id="a374c-189">Update the existing country-specific configuration</span></span>
-    * <span data-ttu-id="a374c-190">Litware, Inc. skal opdatere konfigurationen af BACS (UK fiktivt) og benytte nye lande/områdespecifikke krav til håndtering af formatet på det elektroniske dokument.</span><span class="sxs-lookup"><span data-stu-id="a374c-190">Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</span></span> <span data-ttu-id="a374c-191">Senere bliver det inkluderet i en ny version af denne konfiguration, som vil blive tilbudt til serviceabonnenter, herunder Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="a374c-191">Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</span></span>  
-    * <span data-ttu-id="a374c-192">I processer, der er relateret til reelle tjenesteydelser, kan hver ny version af BACS (UK fiktivt) importeres af Proseware, Inc. fra Litware, Inc.-konfigurationers LCS-lager.</span><span class="sxs-lookup"><span data-stu-id="a374c-192">In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</span></span> <span data-ttu-id="a374c-193">I denne procedure vil vi simulere dette ved at opdatere BACS (UK fiktivt) på vegne af en serviceudbyder.</span><span class="sxs-lookup"><span data-stu-id="a374c-193">In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</span></span>  
-1. <span data-ttu-id="a374c-194">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a374c-194">Close the page.</span></span>
-2. <span data-ttu-id="a374c-195">Vælg Litware, Inc. .</span><span class="sxs-lookup"><span data-stu-id="a374c-195">Select Litware, inc. provider.</span></span>
-3. <span data-ttu-id="a374c-196">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="a374c-196">Click Set active.</span></span>
-4. <span data-ttu-id="a374c-197">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="a374c-197">Click Reporting configurations.</span></span>
-5. <span data-ttu-id="a374c-198">Udvid 'Betalinger (forenklet model)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-198">In the tree, expand 'Payments (simplified model)'.</span></span>
-6. <span data-ttu-id="a374c-199">Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-199">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
-    * <span data-ttu-id="a374c-200">Kladdeversionen, som ejes af BACS-udbyderen Litware, Inc. (UK fiktivt), er valgt til at sikre, at ændringer understøtter de nye lande/områdespecifikke krav.</span><span class="sxs-lookup"><span data-stu-id="a374c-200">The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</span></span>  
-
-## <a name="localize-the-base-format-of-the-electronic-document"></a><span data-ttu-id="a374c-201">Lokalisere basisformatet for det elektroniske dokument</span><span class="sxs-lookup"><span data-stu-id="a374c-201">Localize the base format of the electronic document</span></span>
-    * <span data-ttu-id="a374c-202">Antag, at nogle nye lande/områdespecifikke krav skal understøttes af Litware, Inc.: - En værdi for kreditorbankens SWIFT-kode i hver betalingstransaktion.</span><span class="sxs-lookup"><span data-stu-id="a374c-202">Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</span></span>  <span data-ttu-id="a374c-203">- En grænse på 100 tegn for tekstlængden på kreditorens navn i en fil, der oprettes.</span><span class="sxs-lookup"><span data-stu-id="a374c-203">- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</span></span>  
-    * <span data-ttu-id="a374c-204">Nye lande-/områdespecifikke krav</span><span class="sxs-lookup"><span data-stu-id="a374c-204">New country-specific requirements</span></span>  
-    * <span data-ttu-id="a374c-205">Vælg kladdeversionen af den ønskede konfiguration for at indføre de nødvendige ændringer.</span><span class="sxs-lookup"><span data-stu-id="a374c-205">Select the draft version of the desired configuration to introduce required changes.</span></span>  
-1. <span data-ttu-id="a374c-206">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="a374c-206">Click Designer.</span></span>
-2. <span data-ttu-id="a374c-207">Klik på Udvid/skjul.</span><span class="sxs-lookup"><span data-stu-id="a374c-207">Click Expand/collapse.</span></span>
-3. <span data-ttu-id="a374c-208">Klik på Udvid/skjul.</span><span class="sxs-lookup"><span data-stu-id="a374c-208">Click Expand/collapse.</span></span>
-4. <span data-ttu-id="a374c-209">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-209">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
-5. <span data-ttu-id="a374c-210">Klik på Tilføj for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="a374c-210">Click Add to open the drop dialog.</span></span>
-6. <span data-ttu-id="a374c-211">Vælg "XML\Element'' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-211">In the tree, select 'XML\Element'.</span></span>
-7. <span data-ttu-id="a374c-212">Skriv "SWIFT" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="a374c-212">In the Name field, type 'SWIFT'.</span></span>
-    * <span data-ttu-id="a374c-213">SWIFT</span><span class="sxs-lookup"><span data-stu-id="a374c-213">SWIFT</span></span>  
-8. <span data-ttu-id="a374c-214">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-214">Click OK.</span></span>
-9. <span data-ttu-id="a374c-215">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank\SWIFT" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-215">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</span></span>
-10. <span data-ttu-id="a374c-216">Klik på Tilføj for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="a374c-216">Click Add to open the drop dialog.</span></span>
-11. <span data-ttu-id="a374c-217">Vælg "Tekst\Streng" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-217">In the tree, select 'Text\String'.</span></span>
-12. <span data-ttu-id="a374c-218">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-218">Click OK.</span></span>
-13. <span data-ttu-id="a374c-219">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Navn\Streng" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-219">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
-14. <span data-ttu-id="a374c-220">Angiv '100' i feltet Maksimumlængde.</span><span class="sxs-lookup"><span data-stu-id="a374c-220">In the Maximum length field, enter '100'.</span></span>
-15. <span data-ttu-id="a374c-221">Klik på fanen Tilknytning.</span><span class="sxs-lookup"><span data-stu-id="a374c-221">Click the Mapping tab.</span></span>
-16. <span data-ttu-id="a374c-222">Udvid 'model' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-222">In the tree, expand 'model'.</span></span>
-17. <span data-ttu-id="a374c-223">Udvid 'model\Betalinger' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-223">In the tree, expand 'model\Payments'.</span></span>
-18. <span data-ttu-id="a374c-224">Udvid "model\Betalinger\Kreditor" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-224">In the tree, expand 'model\Payments\Creditor'.</span></span>
-19. <span data-ttu-id="a374c-225">Udvid "model\Betalinger\Kreditor\Speditør" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-225">In the tree, expand 'model\Payments\Creditor\Agent'.</span></span>
-20. <span data-ttu-id="a374c-226">Vælg "model\Betalinger\Kreditor\Speditør\SWIFT" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-226">In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</span></span>
-21. <span data-ttu-id="a374c-227">Vælg "Xml\Meddelelse\Betalinger\Vare = model.Betalinger\Kreditor\Bank\SWIFT\Streng" i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-227">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</span></span>
-22. <span data-ttu-id="a374c-228">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="a374c-228">Click Bind.</span></span>
-23. <span data-ttu-id="a374c-229">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="a374c-229">Click Save.</span></span>
-
-## <a name="validate-the-localized-format"></a><span data-ttu-id="a374c-230">Validere det lokaliserede format</span><span class="sxs-lookup"><span data-stu-id="a374c-230">Validate the localized format</span></span>
-1. <span data-ttu-id="a374c-231">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="a374c-231">Click Validate.</span></span>
-2. <span data-ttu-id="a374c-232">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a374c-232">Close the page.</span></span>
-
-## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a><span data-ttu-id="a374c-233">Ændre statussen for den aktuelle version af basisformatkonfigurationen</span><span class="sxs-lookup"><span data-stu-id="a374c-233">Change the status of the current version of the base format configuration</span></span>
-    * <span data-ttu-id="a374c-234">Skift status for den opdaterede basisformatkonfiguration fra Kladde til Fuldført for at gøre den tilgængelig for oprettelse af betalingsdokumenter og opdateringer af de formatkonfigurationer, der er afledt af den.</span><span class="sxs-lookup"><span data-stu-id="a374c-234">Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</span></span>  
-1. <span data-ttu-id="a374c-235">Klik på Skift status.</span><span class="sxs-lookup"><span data-stu-id="a374c-235">Click Change status.</span></span>
-    * <span data-ttu-id="a374c-236">Bemærk, at den aktuelle version af den valgte konfiguration har statussen Kladde.</span><span class="sxs-lookup"><span data-stu-id="a374c-236">Note that the current version of the selected configuration is in Draft status.</span></span>  
-2. <span data-ttu-id="a374c-237">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="a374c-237">Click Complete.</span></span>
-3. <span data-ttu-id="a374c-238">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a374c-238">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="a374c-239">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-239">Click OK.</span></span>
-5. <span data-ttu-id="a374c-240">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="a374c-240">In the list, find and select the desired record.</span></span>
-
-## <a name="change-the-base-version-for-the-custom-format-configuration"></a><span data-ttu-id="a374c-241">Ændre basisversionen af den brugerdefinerede formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="a374c-241">Change the base version for the custom format configuration</span></span>
-    * <span data-ttu-id="a374c-242">Proseware, Inc. får besked om, at en ny version 1.2 af BACS-konfigurationen (UK fiktivt) er tilgængelig for oprettelse af elektroniske betalingsdokumenter i henhold til de nyligt annoncerede lande/områdespecifikke krav.</span><span class="sxs-lookup"><span data-stu-id="a374c-242">Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</span></span> <span data-ttu-id="a374c-243">Proseware, Inc. ønsker at begynde at bruge den som en standard for landet/området.</span><span class="sxs-lookup"><span data-stu-id="a374c-243">Proseware, Inc. wants to start using it as a standard for the country.</span></span>  <span data-ttu-id="a374c-244">For at kunne gøre dette skal Proseware, Inc. ændre basiskonfigurationsversionen af den brugerdefinerede BACS-konfigurationen (UK fiktivt brugerdefineret).</span><span class="sxs-lookup"><span data-stu-id="a374c-244">To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</span></span> <span data-ttu-id="a374c-245">Brug den nye version 1.2, i stedet for version 1.1 af BACS (UK fiktivt).</span><span class="sxs-lookup"><span data-stu-id="a374c-245">Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</span></span>  
-1. <span data-ttu-id="a374c-246">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="a374c-246">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="a374c-247">Vælg udbyderen Proseware, Inc., for at markere den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="a374c-247">Select the Proseware, Inc. provider to mark it as active.</span></span>
-3. <span data-ttu-id="a374c-248">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="a374c-248">Click Set active.</span></span>
-4. <span data-ttu-id="a374c-249">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="a374c-249">Click Reporting configurations.</span></span>
-5. <span data-ttu-id="a374c-250">Udvid 'Betalinger (forenklet model)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-250">In the tree, expand 'Payments (simplified model)'.</span></span>
-6. <span data-ttu-id="a374c-251">Udvid 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-251">In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
-7. <span data-ttu-id="a374c-252">Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)\BACS (UK fiktivt brugerdefineret)' i træet.</span><span class="sxs-lookup"><span data-stu-id="a374c-252">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</span></span>
-    * <span data-ttu-id="a374c-253">Vælg BACS-konfigurationen (UK fiktivt brugerdefineret), som ejes af Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="a374c-253">Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</span></span>  
-    * <span data-ttu-id="a374c-254">Brug kladdeversionen af den valgte konfiguration for at indføre de nødvendige ændringer.</span><span class="sxs-lookup"><span data-stu-id="a374c-254">Use the draft version of the selected configuration to introduce required changes.</span></span>  
-8. <span data-ttu-id="a374c-255">Klik på Rebasér.</span><span class="sxs-lookup"><span data-stu-id="a374c-255">Click Rebase.</span></span>
-    * <span data-ttu-id="a374c-256">Vælg den nye version 1.2 af den basiskonfiguration, der skal anvendes som ny basis for opdatering af konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="a374c-256">Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</span></span>  
-9. <span data-ttu-id="a374c-257">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-257">Click OK.</span></span>
-    * <span data-ttu-id="a374c-258">Bemærk, at der er fundet nogle konflikter mellem fletning af den brugerdefinerede version og en ny basisversion, der repræsenterer nogle formatændringer, der ikke kan flettes automatisk.</span><span class="sxs-lookup"><span data-stu-id="a374c-258">Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</span></span>  
-
-## <a name="resolve-rebase-conflicts"></a><span data-ttu-id="a374c-259">Løse rebaseringskonflikter</span><span class="sxs-lookup"><span data-stu-id="a374c-259">Resolve rebase conflicts</span></span>
-1. <span data-ttu-id="a374c-260">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="a374c-260">Click Designer.</span></span>
-    * <span data-ttu-id="a374c-261">Bemærk, at ændringer af grænsen for tekstlængen på kreditorens navn ikke kunne løses automatisk.</span><span class="sxs-lookup"><span data-stu-id="a374c-261">Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</span></span> <span data-ttu-id="a374c-262">Dette vises derfor på en liste over konflikter.</span><span class="sxs-lookup"><span data-stu-id="a374c-262">Therefore, this is presented in a conflicts list.</span></span> <span data-ttu-id="a374c-263">For hver konflikt af typen Opdatering er følgende indstillinger tilgængelige: - Anvend en tidligere basisværdi (knap oven på gitteret) for at overføre den tidligere basisversions værdi (0 i vores tilfælde).</span><span class="sxs-lookup"><span data-stu-id="a374c-263">For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</span></span>  <span data-ttu-id="a374c-264">- Anvend en basisværdi (knap oven på gitteret) for at overføre den nye basisversions værdi (100 i vores tilfælde).</span><span class="sxs-lookup"><span data-stu-id="a374c-264">- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</span></span>  <span data-ttu-id="a374c-265">- Bevar din egen (brugerdefineret) værdi (60 i dette tilfælde).</span><span class="sxs-lookup"><span data-stu-id="a374c-265">- Keep your own (custom) value (60 in our case).</span></span>  <span data-ttu-id="a374c-266">Klik på Anvend basisværdi for at anvende en lande/områdespecifik grænse på 100 tegn for tekstlængden på kreditorens navn.</span><span class="sxs-lookup"><span data-stu-id="a374c-266">Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</span></span>  
-    * <span data-ttu-id="a374c-267">Bemærk, at Proseware, Inc. og Litware, Inc. har brugerdefinerede og lokale versioner af dette format, som benytter IBAN- og SWIFT-koder med relaterede komponenter, der flettes automatisk i håndteringen af formatet.</span><span class="sxs-lookup"><span data-stu-id="a374c-267">Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</span></span>  
-2. <span data-ttu-id="a374c-268">Klik på Anvend basisværdi.</span><span class="sxs-lookup"><span data-stu-id="a374c-268">Click Apply base value.</span></span>
-    * <span data-ttu-id="a374c-269">Klik på Anvend basisværdi for at anvende den landespecifikke grænse på 100 tegn for kreditornavne.</span><span class="sxs-lookup"><span data-stu-id="a374c-269">Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</span></span>  
-3. <span data-ttu-id="a374c-270">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="a374c-270">Click Save.</span></span>
-    * <span data-ttu-id="a374c-271">Hvis du gemmer formatet, fjernes løste konflikter fra listen over konflikter.</span><span class="sxs-lookup"><span data-stu-id="a374c-271">Saving the format will remove resolved conflicts from the conflicts list.</span></span>  
-4. <span data-ttu-id="a374c-272">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a374c-272">Close the page.</span></span>
-
-## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a><span data-ttu-id="a374c-273">Ændre statussen for den nye version af den brugerdefinerede formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="a374c-273">Change the status of the new version of the custom format configuration</span></span>
-1. <span data-ttu-id="a374c-274">Klik på Skift status.</span><span class="sxs-lookup"><span data-stu-id="a374c-274">Click Change status.</span></span>
-    * <span data-ttu-id="a374c-275">Skift status for den opdaterede, brugerdefinerede formatkonfiguration fra Kladde til Fuldført.</span><span class="sxs-lookup"><span data-stu-id="a374c-275">Change the status of the updated, custom format configuration from Draft to Completed.</span></span> <span data-ttu-id="a374c-276">Dette vil gøre formatkonfigurationen tilgængelig for oprettelse af betalingsdokumenter.</span><span class="sxs-lookup"><span data-stu-id="a374c-276">This will make the format configuration available for generating payment documents.</span></span> <span data-ttu-id="a374c-277">Bemærk, at den aktuelle version af den valgte konfiguration har statussen Kladde.</span><span class="sxs-lookup"><span data-stu-id="a374c-277">Note that the current version of the selected configuration is in Draft status.</span></span>  
-2. <span data-ttu-id="a374c-278">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="a374c-278">Click Complete.</span></span>
-3. <span data-ttu-id="a374c-279">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a374c-279">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="a374c-280">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a374c-280">Click OK.</span></span>
-    * <span data-ttu-id="a374c-281">Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.2.2: version 2 af BACS-basisformatet (UK fiktivt brugerdefineret), der er baseret på version 2 af BACS-basisformatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).</span><span class="sxs-lookup"><span data-stu-id="a374c-281">Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</span></span>  
-
-## <a name="test-the-customized-format-for-payment-files-generation"></a><span data-ttu-id="a374c-282">Teste det tilpassede format for generering af betalingsfiler</span><span class="sxs-lookup"><span data-stu-id="a374c-282">Test the customized format for payment files generation</span></span>
-    * <span data-ttu-id="a374c-283">Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations Enterprise Edition-session.</span><span class="sxs-lookup"><span data-stu-id="a374c-283">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="a374c-284">Vælg det oprettede BACS-format (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde.</span><span class="sxs-lookup"><span data-stu-id="a374c-284">Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</span></span> <span data-ttu-id="a374c-285">Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav.</span><span class="sxs-lookup"><span data-stu-id="a374c-285">Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</span></span> <span data-ttu-id="a374c-286">Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.</span><span class="sxs-lookup"><span data-stu-id="a374c-286">The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</span></span>  
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="er-upgrade-format.md" target-language="da-DK">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>er-upgrade-format.32ec25.151b8936a46a1945e98bfe0ed040ca50c93db4b0.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>151b8936a46a1945e98bfe0ed040ca50c93db4b0</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\tasks\er-upgrade-format.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>ER Upgrade your format by adopting a new, base version of that format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER Opgradere dit format ved at bruge en ny basisversion af formatet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>ER Upgrade your format by adopting a new, base version of that format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER Opgradere dit format ved at bruge en ny basisversion af formatet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne fremgangsmåde forklarer, hvordan en brugerdefineret version af et format kan oprettes ud fra det format, der er modtaget fra konfigurationsudbyderen (CP).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It also explains how to adopt a new, base version of that format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det forklares også, hvordan en ny basisversion af det pågældende format skal implementeres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at fuldføre denne fremgangsmåde, skal du først udføre trinnene i procedurerne "Oprette en konfigurationsudbyder og markere den som aktiv" og "Bruge oprettet format for at generere elektroniske dokumenter til betalinger".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>These steps can be performed in the GBSI company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse trin kan udføres i GBSI-virksomheden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Select format configuration for customization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælge formatkonfiguration, der skal tilpasses</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Virksomhedsadministration &gt; Arbejdsområder &gt; Elektronisk rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>In this example, sample company Litware, Inc. (<ph id="ph1">https://www.litware.com)</ph> will act as a configuration provider that supports format configurations for electronic payments for a particular country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dette eksempel fungerer eksempelfirmaet Litware, Inc. (<ph id="ph1">https://www.litware.com)</ph> som en konfigurationsudbyder, der understøtter formatkonfigurationer af elektroniske betalinger for et bestemt land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Sample company Proseware, Inc. (<ph id="ph1">http://www.proseware.com)</ph> will act as a consumer of the format configuration that Litware, Inc. provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempelfirmaet Proseware, Inc. (<ph id="ph1">http://www.proseware.com)</ph> vil fungere som en forbruger af den formatkonfiguration, som Litware, Inc har leveret.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Proseware, Inc. uses formats in certain regions of that country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. bruger formater i bestemte dele af det pågældende land/område.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rapporteringskonfigurationer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Click Show filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Vis filtre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anvend følgende filtre: Angiv filterværdien "BACS (UK-fiktiv)" i feltet "Navn" ved hjælp af filteroperatøren "begynder med".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>BACS (UK fictitious)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BACS (UK-fiktiv)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den valgte BACS-formatkonfiguration (UK fiktivt brugerdefineret), som ejes af udbyderen Litware, Inc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click Show filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Vis filtre.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Versionen af formatet med statussen Fuldført vil blive brugt af Proseware, Inc. til tilpasning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Create a new configuration for your custom format of electronic document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette en ny konfiguration af det brugerdefinerede format for elektronisk dokument</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. modtog version 1.1 af BACS-konfigurationen (UK fiktiv), der indeholder det oprindelige format til oprettelse af elektroniske betalingsdokumenter fra Litware, Inc. i overensstemmelse med deres serviceabonnement.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. ønsker at begynde at bruge det som en standard for deres land/område, men nogle tilpasninger er påkrævet for at understøtte specifikke regionale krav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. ønsker også at bevare muligheden for at opgradere et brugerdefineret format, så snart der kommer en ny version af det (med ændringer for at understøtte nye lande-/områdespecifikke krav) fra Litware, Inc., og de ønsker at udføre denne opgradering med de laveste omkostninger.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at kunne gøre dette skal Proseware, Inc. oprette en konfiguration og bruge BACS-konfigurationen af Litware, Inc. (UK fiktiv) som udgangspunkt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Select Proseware, Inc. to make it an active provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Proseware, Inc., for at gøre den til en aktiv udbyder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Angiv som aktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rapporteringskonfigurationer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the tree, expand 'Payments (simplified model)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'Betalinger (forenklet model)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg BACS-konfigurationen (UK fiktiv) fra Litware, Inc. Proseware, Inc. bruger version 1.1 som udgangspunkt for den brugerdefinerede version.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Click Create configuration to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opret konfiguration for at åbne dialogboksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>This lets you create a new configuration for a custom payment format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette gør det muligt at oprette en ny konfiguration for et brugerdefineret betalingsformat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv 'Afled af navn: BACS (UK fiktivt), Litware, Inc.' i feltet Ny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg indstillingen Afled for at bekræfte brugen af BACS (UK fiktivt) som basis for at oprette den brugerdefinerede version.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the Name field, type 'BACS (UK fictitious custom)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv 'BACS (UK-fiktivt brugerdefineret) i feltet Navn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>BACS (UK fictitious custom)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BACS (UK fiktivt brugerdefineret)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "BACS kreditorbetalingsformat (UK fiktivt brugerdefineret)" i feltet Beskrivelse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>BACS vendor payment (UK fictitious custom)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BACS-kreditorbetaling (UK fiktivt brugerdefineret)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>The active configuration provider (Proseware, Inc.) is automatically entered here.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den aktive konfigurationsudbyder (Proseware, Inc.) indsættes automatisk her.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>This provider will be able to maintain this configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne udbyder vil kunne vedligeholde denne konfiguration.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Other providers can use this configuration, but will not be able to maintain it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Andre udbydere kan bruge denne konfiguration, men vil ikke kunne vedligeholde den.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Click Create configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opret konfiguration.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Customize your format for the electronic document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilpasse format for det elektroniske dokument</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Click Designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Designer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Udvid/skjul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Udvid/skjul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj for at åbne dialogboksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In the tree, select 'XML\Element'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "XML\Element'' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>In the Name field, type 'IBAN'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "IBAN" i feltet Navn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>IBAN</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IBAN</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank\IBAN" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj for at åbne dialogboksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>In the tree, select 'Text\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Tekst\Streng" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Navn\Streng" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>In the Maximum length field, enter '60'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv '60' i feltet Maksimumlængde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Click the Mapping tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Tilknytning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>In the tree, expand 'model'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'model' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>In the tree, expand 'model\Payments'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'model\Betalinger' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>In the tree, expand 'model\Payments\Creditor'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid "model\Betalinger\Kreditor" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>In the tree, expand 'model\Payments\Creditor\Account'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'model\Betalinger\Kreditor\Konto' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>In the tree, select 'model\Payments\Creditor\Account\IBAN'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "model\Betalinger\Kreditor\Konto\IBAN" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare = model.Betalinger\Kreditor\Bank\IBAN\Streng" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Click Bind.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Bind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Validate the customized format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Validere det tilpassede format</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Valider.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Validér det tilpassede formatlayout og ændringer af datatilknytningen til at sikre, at alle bindinger er i orden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Change the status of the current version of the custom format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ændre statussen for den aktuelle version af den brugerdefinerede formatkonfiguration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skift status for den designede formatkonfiguration fra Kladde til Fuldført for at gøre den tilgængelig for oprettelse af betalingsdokumenter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Click Change status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Skift status.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Note that the current version of the selected configuration is in Draft status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at den aktuelle version af den valgte konfiguration har statussen Kladde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Click Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Fuldført.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>In the Description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Beskrivelse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Note that the created configuration is saved as completed version 1.1.1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.1.1.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det betyder, at det er version 1 af det brugerdefinerede BACS-format (UK fiktivt brugerdefineret), der er baseret på version 1 af BACS-formatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Test the customized format to generate payment files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teste det tilpassede format for at generere betalingsfiler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations Enterprise edition-session.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Select the BACS (UK fictitious custom) format in electronic payment method parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Update the existing country-specific configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opdatere den eksisterende landespecifikke konfiguration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Litware, Inc. skal opdatere konfigurationen af BACS (UK fiktivt) og benytte nye lande/områdespecifikke krav til håndtering af formatet på det elektroniske dokument.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Senere bliver det inkluderet i en ny version af denne konfiguration, som vil blive tilbudt til serviceabonnenter, herunder Proseware, Inc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I processer, der er relateret til reelle tjenesteydelser, kan hver ny version af BACS (UK fiktivt) importeres af Proseware, Inc. fra Litware, Inc.-konfigurationers LCS-lager.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I denne procedure vil vi simulere dette ved at opdatere BACS (UK fiktivt) på vegne af en serviceudbyder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Select Litware, inc. provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Litware, Inc. .</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Angiv som aktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rapporteringskonfigurationer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>In the tree, expand 'Payments (simplified model)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'Betalinger (forenklet model)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kladdeversionen, som ejes af BACS-udbyderen Litware, Inc. (UK fiktivt), er valgt til at sikre, at ændringer understøtter de nye lande/områdespecifikke krav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Localize the base format of the electronic document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokalisere basisformatet for det elektroniske dokument</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Antag, at nogle nye lande/områdespecifikke krav skal understøttes af Litware, Inc.: - En værdi for kreditorbankens SWIFT-kode i hver betalingstransaktion.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- En grænse på 100 tegn for tekstlængden på kreditorens navn i en fil, der oprettes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>New country-specific requirements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nye lande-/områdespecifikke krav</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Select the draft version of the desired configuration to introduce required changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg kladdeversionen af den ønskede konfiguration for at indføre de nødvendige ændringer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Click Designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Designer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Udvid/skjul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Udvid/skjul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj for at åbne dialogboksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>In the tree, select 'XML\Element'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "XML\Element'' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>In the Name field, type 'SWIFT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv "SWIFT" i feltet Navn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>SWIFT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SWIFT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Bank\SWIFT" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj for at åbne dialogboksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>In the tree, select 'Text\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Tekst\Streng" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare\Kreditor\Navn\Streng" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>In the Maximum length field, enter '100'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv '100' i feltet Maksimumlængde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Click the Mapping tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Tilknytning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>In the tree, expand 'model'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'model' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>In the tree, expand 'model\Payments'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'model\Betalinger' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>In the tree, expand 'model\Payments\Creditor'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid "model\Betalinger\Kreditor" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>In the tree, expand 'model\Payments\Creditor\Agent'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid "model\Betalinger\Kreditor\Speditør" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "model\Betalinger\Kreditor\Speditør\SWIFT" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Xml\Meddelelse\Betalinger\Vare = model.Betalinger\Kreditor\Bank\SWIFT\Streng" i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Click Bind.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Bind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Validate the localized format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Validere det lokaliserede format</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Valider.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Change the status of the current version of the base format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ændre statussen for den aktuelle version af basisformatkonfigurationen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skift status for den opdaterede basisformatkonfiguration fra Kladde til Fuldført for at gøre den tilgængelig for oprettelse af betalingsdokumenter og opdateringer af de formatkonfigurationer, der er afledt af den.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Click Change status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Skift status.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Note that the current version of the selected configuration is in Draft status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at den aktuelle version af den valgte konfiguration har statussen Kladde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Click Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Fuldført.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>In the Description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Beskrivelse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Change the base version for the custom format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ændre basisversionen af den brugerdefinerede formatkonfiguration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. får besked om, at en ny version 1.2 af BACS-konfigurationen (UK fiktivt) er tilgængelig for oprettelse af elektroniske betalingsdokumenter i henhold til de nyligt annoncerede lande/områdespecifikke krav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Proseware, Inc. wants to start using it as a standard for the country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. ønsker at begynde at bruge den som en standard for landet/området.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at kunne gøre dette skal Proseware, Inc. ændre basiskonfigurationsversionen af den brugerdefinerede BACS-konfigurationen (UK fiktivt brugerdefineret).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug den nye version 1.2, i stedet for version 1.1 af BACS (UK fiktivt).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Virksomhedsadministration &gt; Arbejdsområder &gt; Elektronisk rapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Select the Proseware, Inc. provider to mark it as active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg udbyderen Proseware, Inc., for at markere den som aktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Angiv som aktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rapporteringskonfigurationer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>In the tree, expand 'Payments (simplified model)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'Betalinger (forenklet model)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)\BACS (UK fiktivt brugerdefineret)' i træet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg BACS-konfigurationen (UK fiktivt brugerdefineret), som ejes af Proseware, Inc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Use the draft version of the selected configuration to introduce required changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug kladdeversionen af den valgte konfiguration for at indføre de nødvendige ændringer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Click Rebase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rebasér.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg den nye version 1.2 af den basiskonfiguration, der skal anvendes som ny basis for opdatering af konfigurationen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at der er fundet nogle konflikter mellem fletning af den brugerdefinerede version og en ny basisversion, der repræsenterer nogle formatændringer, der ikke kan flettes automatisk.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Resolve rebase conflicts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Løse rebaseringskonflikter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Click Designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Designer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at ændringer af grænsen for tekstlængen på kreditorens navn ikke kunne løses automatisk.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Therefore, this is presented in a conflicts list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette vises derfor på en liste over konflikter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For hver konflikt af typen Opdatering er følgende indstillinger tilgængelige: - Anvend en tidligere basisværdi (knap oven på gitteret) for at overføre den tidligere basisversions værdi (0 i vores tilfælde).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Anvend en basisværdi (knap oven på gitteret) for at overføre den nye basisversions værdi (100 i vores tilfælde).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>- Keep your own (custom) value (60 in our case).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Bevar din egen (brugerdefineret) værdi (60 i dette tilfælde).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Anvend basisværdi for at anvende en lande/områdespecifik grænse på 100 tegn for tekstlængden på kreditorens navn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at Proseware, Inc. og Litware, Inc. har brugerdefinerede og lokale versioner af dette format, som benytter IBAN- og SWIFT-koder med relaterede komponenter, der flettes automatisk i håndteringen af formatet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Click Apply base value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Anvend basisværdi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Anvend basisværdi for at anvende den landespecifikke grænse på 100 tegn for kreditornavne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Saving the format will remove resolved conflicts from the conflicts list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du gemmer formatet, fjernes løste konflikter fra listen over konflikter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Change the status of the new version of the custom format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ændre statussen for den nye version af den brugerdefinerede formatkonfiguration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Click Change status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Skift status.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Change the status of the updated, custom format configuration from Draft to Completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skift status for den opdaterede, brugerdefinerede formatkonfiguration fra Kladde til Fuldført.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>This will make the format configuration available for generating payment documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette vil gøre formatkonfigurationen tilgængelig for oprettelse af betalingsdokumenter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Note that the current version of the selected configuration is in Draft status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at den aktuelle version af den valgte konfiguration har statussen Kladde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Click Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Fuldført.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>In the Description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Beskrivelse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.2.2: version 2 af BACS-basisformatet (UK fiktivt brugerdefineret), der er baseret på version 2 af BACS-basisformatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Test the customized format for payment files generation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teste det tilpassede format for generering af betalingsfiler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations Enterprise Edition-session.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg det oprettede BACS-format (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

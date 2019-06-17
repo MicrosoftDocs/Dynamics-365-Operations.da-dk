@@ -1,76 +1,123 @@
----
-title: Startside for offentlig sektor
-description: Microsoft Dynamics 365 for Finance and Operations gør det muligt at bruge forretningsprocesser, der er fælles for både den offentlige og private sektor, f.eks. opgaver med budgettering, indkøb, kreditor og debitor.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: SysConfiguration
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 20691
-ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
-ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c53d48324273c64fe284fb7dd318fcb06542413
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517033"
----
-# <a name="public-sector-home-page"></a><span data-ttu-id="98e46-103">Startside for offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-103">Public sector home page</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="98e46-104">Finance and Operations gør det muligt at bruge forretningsprocesser, der er fælles for både den offentlige og private sektor, f.eks. opgaver med budgettering, indkøb, kreditor og debitor.</span><span class="sxs-lookup"><span data-stu-id="98e46-104">Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks.</span></span> 
-
-<span data-ttu-id="98e46-105">Brug funktionerne til den offentlige sektor til at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentligheden.</span><span class="sxs-lookup"><span data-stu-id="98e46-105">Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public.</span></span> <span data-ttu-id="98e46-106">De berørte forretningsprocesser omfatter:</span><span class="sxs-lookup"><span data-stu-id="98e46-106">The business processes affected include:</span></span> 
-
-- <span data-ttu-id="98e46-107">Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.</span><span class="sxs-lookup"><span data-stu-id="98e46-107">Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.</span></span>
-- <span data-ttu-id="98e46-108">Foreløbige budgetter, fordelinger og forpligtelser.</span><span class="sxs-lookup"><span data-stu-id="98e46-108">Preliminary budgets, apportionments, and commitments.</span></span>
-- <span data-ttu-id="98e46-109">Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="98e46-109">Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.</span></span>
-- <span data-ttu-id="98e46-110">Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.</span><span class="sxs-lookup"><span data-stu-id="98e46-110">General ledger year-end processing, which includes encumbrances and commitments on purchase orders.</span></span>
-- <span data-ttu-id="98e46-111">Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.</span><span class="sxs-lookup"><span data-stu-id="98e46-111">Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.</span></span>
-
-  <span data-ttu-id="98e46-112">Du kan finde flere oplysninger under følgende emner:</span><span class="sxs-lookup"><span data-stu-id="98e46-112">For more information, see the following topics:</span></span>
-
-- [<span data-ttu-id="98e46-113">Planlægning af funktioner til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-113">Planning for Public sector functionality</span></span>](plan-public-sector-functionality.md)
-- [<span data-ttu-id="98e46-114">Kreditor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-114">Accounts payable in the Public sector</span></span>](accounts-payable-public-sector.md)
-- [<span data-ttu-id="98e46-115">Debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-115">Accounts receivable in the Public sector</span></span>](accounts-receivable-public-sector.md)
-- [<span data-ttu-id="98e46-116">Budgettering i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-116">Budgeting in the Public sector</span></span>](budgeting-public-sector.md)
-- [<span data-ttu-id="98e46-117">Anlægsaktiver i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-117">Fixed assets in the Public sector</span></span>](fixed-asset-public-sector.md)
-- [<span data-ttu-id="98e46-118">Franske lovmæssige funktioner</span><span class="sxs-lookup"><span data-stu-id="98e46-118">French regulatory features</span></span>](../localizations/emea-fra-public-sector-accounting.md)
-- [<span data-ttu-id="98e46-119">Finans i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-119">General ledger in the Public sector</span></span>](general-ledger-public-sector.md)
-- [<span data-ttu-id="98e46-120">Indkøb og forsyning i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-120">Procurement and sourcing in the Public sector</span></span>](procurement-sourcing-public-sector.md)
-- [<span data-ttu-id="98e46-121">Sikkerhedsroller i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-121">Security roles in the Public sector</span></span>](security-roles-public-sector.md)
-
-<span data-ttu-id="98e46-122">\* Gælder kun, hvis organisationen er i Frankrig.</span><span class="sxs-lookup"><span data-stu-id="98e46-122">\* Applicable only if your organization is in France.</span></span>
-
-## <a name="why-do-i-need-the-public-sector-configuration-key"></a><span data-ttu-id="98e46-123">Hvorfor skal jeg bruge konfigurationsnøglen for offentlig sektor?</span><span class="sxs-lookup"><span data-stu-id="98e46-123">Why do I need the Public sector configuration key?</span></span>
-<span data-ttu-id="98e46-124">Konfigurationsnøglen til **den offentlige sektor** aktiverer sider og kontrolelementer, som supplerer kerneapps.</span><span class="sxs-lookup"><span data-stu-id="98e46-124">The **Public sector** configuration key enables pages and controls that supplement the core apps .</span></span> <span data-ttu-id="98e46-125">Du kan aktivere eller deaktivere denne nøgle på siden **Licenskonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="98e46-125">You can enable or disable this key on the **License configuration** page.</span></span>
-
-## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a><span data-ttu-id="98e46-126">Hvordan er konfigurationsnøglen til den offentlige sektor relateret til andre konfigurationsnøgler?</span><span class="sxs-lookup"><span data-stu-id="98e46-126">How does the Public sector configuration key relate to other configuration keys?</span></span>
-<span data-ttu-id="98e46-127">Nedenstående tabel indeholder oplysninger om, hvordan denne konfigurationsnøgle er relateret til andre konfigurationsnøgler og licenskoder.</span><span class="sxs-lookup"><span data-stu-id="98e46-127">The following table provides information about how this configuration key relates to other configuration keys.</span></span>
-
-|            |                                                                                                                                                                                                                     |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="98e46-128">**Detaljeret**</span><span class="sxs-lookup"><span data-stu-id="98e46-128">**Detail**</span></span> | <span data-ttu-id="98e46-129">**Beskrivelse**</span><span class="sxs-lookup"><span data-stu-id="98e46-129">**Description**</span></span>                                                                                                                                                                                                     |
-| <span data-ttu-id="98e46-130">Overordnet nøgle</span><span class="sxs-lookup"><span data-stu-id="98e46-130">Parent key</span></span> | <span data-ttu-id="98e46-131">Ingen</span><span class="sxs-lookup"><span data-stu-id="98e46-131">None</span></span>                                                                                                                                                                                                                |
-| <span data-ttu-id="98e46-132">Underordnede nøgler</span><span class="sxs-lookup"><span data-stu-id="98e46-132">Child keys</span></span> | <span data-ttu-id="98e46-133">**Avanceret finanspost**-konfigurationsnøgle (AdvancedLedgerEntry) **Offentlig sektor 1099G**-konfigurationsnøgle (Tax1099G) **Offentlig sektor 1099S**-konfigurationsnøgle (Tax1099S) **Franske myndighedskrav**-konfigurationsnøgle</span><span class="sxs-lookup"><span data-stu-id="98e46-133">**Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key</span></span> |
-
-
-<a name="additional-resources"></a><span data-ttu-id="98e46-134">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="98e46-134">Additional resources</span></span>
---------
-
-[<span data-ttu-id="98e46-135">Planlægning af funktioner til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="98e46-135">Planning for public sector functionality</span></span>](plan-public-sector-functionality.md)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="public-sector-functionality.md" target-language="da-DK">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>public-sector-functionality.df9d27.1b77e9289bd360631ea646951809705d58c9e189.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>1b77e9289bd360631ea646951809705d58c9e189</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\public-sector\public-sector-functionality.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Public sector home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for offentlig sektor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Microsoft Dynamics 365 for Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations gør det muligt at bruge forretningsprocesser, der er fælles for både den offentlige og private sektor, f.eks. opgaver med budgettering, indkøb, kreditor og debitor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Public sector home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for offentlig sektor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations gør det muligt at bruge forretningsprocesser, der er fælles for både den offentlige og private sektor, f.eks. opgaver med budgettering, indkøb, kreditor og debitor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug funktionerne til den offentlige sektor til at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentligheden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The business processes affected include:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De berørte forretningsprocesser omfatter:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Preliminary budgets, apportionments, and commitments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Foreløbige budgetter, fordelinger og forpligtelser.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>General ledger year-end processing, which includes encumbrances and commitments on purchase orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For more information, see the following topics:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finde flere oplysninger under følgende emner:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>Planning for Public sector functionality<ept id="p1">](plan-public-sector-functionality.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Planlægning af funktioner til den offentlige sektor<ept id="p1">](plan-public-sector-functionality.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt>Accounts payable in the Public sector<ept id="p1">](accounts-payable-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kreditor i den offentlige sektor<ept id="p1">](accounts-payable-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">[</bpt>Accounts receivable in the Public sector<ept id="p1">](accounts-receivable-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Debitor i den offentlige sektor<ept id="p1">](accounts-receivable-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">[</bpt>Budgeting in the Public sector<ept id="p1">](budgeting-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Budgettering i den offentlige sektor<ept id="p1">](budgeting-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>Fixed assets in the Public sector<ept id="p1">](fixed-asset-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Anlægsaktiver i den offentlige sektor<ept id="p1">](fixed-asset-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">[</bpt>French regulatory features<ept id="p1">](../localizations/emea-fra-public-sector-accounting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Franske lovmæssige funktioner<ept id="p1">](../localizations/emea-fra-public-sector-accounting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>General ledger in the Public sector<ept id="p1">](general-ledger-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Finans i den offentlige sektor<ept id="p1">](general-ledger-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt>Procurement and sourcing in the Public sector<ept id="p1">](procurement-sourcing-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Indkøb og forsyning i den offentlige sektor<ept id="p1">](procurement-sourcing-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>Security roles in the Public sector<ept id="p1">](security-roles-public-sector.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Sikkerhedsroller i den offentlige sektor<ept id="p1">](security-roles-public-sector.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><ph id="ph1">\*</ph> Applicable only if your organization is in France.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph> Gælder kun, hvis organisationen er i Frankrig.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Why do I need the Public sector configuration key?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvorfor skal jeg bruge konfigurationsnøglen for offentlig sektor?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The <bpt id="p1">**</bpt>Public sector<ept id="p1">**</ept> configuration key enables pages and controls that supplement the core apps .</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurationsnøglen til <bpt id="p1">**</bpt>den offentlige sektor<ept id="p1">**</ept> aktiverer sider og kontrolelementer, som supplerer kerneapps.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>You can enable or disable this key on the <bpt id="p1">**</bpt>License configuration<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan aktivere eller deaktivere denne nøgle på siden <bpt id="p1">**</bpt>Licenskonfiguration<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>How does the Public sector configuration key relate to other configuration keys?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvordan er konfigurationsnøglen til den offentlige sektor relateret til andre konfigurationsnøgler?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>The following table provides information about how this configuration key relates to other configuration keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nedenstående tabel indeholder oplysninger om, hvordan denne konfigurationsnøgle er relateret til andre konfigurationsnøgler og licenskoder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">**</bpt>Detail<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Detaljeret<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Beskrivelse<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Parent key</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overordnet nøgle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>None</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Child keys</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Underordnede nøgler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">**</bpt>Advanced ledger entry<ept id="p1">**</ept> configuration key (AdvancedLedgerEntry) <bpt id="p2">**</bpt>Public sector 1099G<ept id="p2">**</ept> configuration key (Tax1099G) <bpt id="p3">**</bpt>Public sector 1099S<ept id="p3">**</ept> configuration key (Tax1099S) <bpt id="p4">**</bpt>French regulatory<ept id="p4">**</ept> configuration key</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Avanceret finanspost<ept id="p1">**</ept>-konfigurationsnøgle (AdvancedLedgerEntry) <bpt id="p2">**</bpt>Offentlig sektor 1099G<ept id="p2">**</ept>-konfigurationsnøgle (Tax1099G) <bpt id="p3">**</bpt>Offentlig sektor 1099S<ept id="p3">**</ept>-konfigurationsnøgle (Tax1099S) <bpt id="p4">**</bpt>Franske myndighedskrav<ept id="p4">**</ept>-konfigurationsnøgle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere ressourcer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">[</bpt>Planning for public sector functionality<ept id="p1">](plan-public-sector-functionality.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Planlægning af funktioner til den offentlige sektor<ept id="p1">](plan-public-sector-functionality.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
