@@ -1,48 +1,75 @@
----
-title: Oversigt over Project-mobilprogrammer
-description: Dette emne indeholder generelle oplysninger om programmer relateret til projekttid til Microsoft Dynamics 365, som er tilgængelige på en mobilenhed.
-author: KimANelson
-manager: AnnBe
-ms.date: 04/08/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: Global
-ms.search.industry: Service industries
-ms.author: knelson
-ms.dyn365.ops.version: 10
-ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 5b0560a8be32962f94b24754458fb2cf714a15c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1529965"
----
-# <a name="project-mobile-applications-overview"></a>Oversigt over Project-mobilprogrammer
-
-[!include [banner](../includes/banner.md)]
-
-Der er tre mobilapps relateret til projekttid tilgængelige til Microsoft Dynamics 365: Microsoft Dynamics 365 Project Timesheet, Tidsregistrering for et projekt og Mine timesedler/Timesedler, som jeg skal gennemse (optimeret til mobilenheder).
-
-## <a name="project-timesheet-mobile-app"></a>Mobilapp til projekttimesedler
-
-Dynamics 365's mobilapp til projekttimesedler gør det muligt for brugerne at indlevere og godkende timesedler for projekter på deres mobilenheder. Denne mobilapp berører timeseddelfunktionaliteterne i området Projektstyring og regnskab i Microsoft Dynamics 365 for Finance and Operations. Den bidrager til at forbedre brugernes produktivitet og effektivitet og hjælper endvidere med tidsregistrering og godkendelse af projekttimesedler.
-
-## <a name="project-time-entry-workspace"></a>Arbejdsområde til projekttidsregistrering
-
-Arbejdsområdet for projekttidsregistrering gør det muligt for brugerne at indtaste og gemme tider på et projekt. Det tillader dog ikke brugerne at indsende eller godkende projekttimesedler. Det kan alene anvendes til tidsregistrering. Dette arbejdsområde til mobilenheder er tiltænkt at skulle anvendes sammen med mobilappen Microsoft Dynamics 365 for Unified Operations.
-
-## <a name="my-timesheetstimesheets-for-my-review"></a>Mine timesedler/Timesedler, som jeg skal gennemse
-
-Mine timesedler (optimeret til mobilenheder) og Timesedler, som jeg skal gennemse (optimeret til mobilenheder) udgør tilsammen en løsning, der gør det muligt for medarbejderne at oprette, indsende og godkende projekttimesedler på en mobilenhed. Arbejderne kan tilgå funktionen Finance and Operations via programmets URL-adresse. Denne løsning kræver ikke mobilappen Dynamics 365 for Unified Operations.
-
-## <a name="for-more-information"></a>Hvis du vil have flere oplysninger
-
-Du kan finde flere oplysninger under [Microsoft Dynamics 365 Project Timesheet mobilapp](project-timesheet.md), [Tidsregistrering for et projekt]( project-time-entry-mobile-workspace.md) og [Projekttimesedler på en mobilenhed](Mobile-timesheets.md).
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="project-mobile-application-overview.md" target-language="da-DK">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>project-mobile-application-overview.f7e2e3.22ccc70e242ffc9a487720c6a25fa6c5b8d78073.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>22ccc70e242ffc9a487720c6a25fa6c5b8d78073</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/28/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\project-management\project-mobile-application-overview.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Project mobile applications overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversigt over Project-mobilprogrammer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides general information about the project time-related applications for Microsoft Dynamics 365 that are available on a mobile device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emne indeholder generelle oplysninger om programmer relateret til projekttid til Microsoft Dynamics 365, som er tilgængelige på en mobilenhed.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Project mobile applications overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversigt over Project-mobilprogrammer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Three mobile applications that are related to project time are available for Microsoft Dynamics 365: Microsoft Dynamics 365 Project Timesheet, Project Time Entry, and My timesheets/Timesheets for my review (Optimized for mobile).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der er tre mobilapps relateret til projekttid tilgængelige til Microsoft Dynamics 365: Microsoft Dynamics 365 Project Timesheet, Tidsregistrering for et projekt og Mine timesedler/Timesedler, som jeg skal gennemse (optimeret til mobilenheder).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Project Timesheet mobile app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mobilapp til projekttimesedler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The Dynamics 365 Project Timesheet mobile app lets users submit and approve timesheets for projects on their mobile device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365's mobilapp til projekttimesedler gør det muligt for brugerne at indlevere og godkende timesedler for projekter på deres mobilenheder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>This mobile app surfaces the timesheet functionality in the Project management and accounting area of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne mobilapp berører timeseddelfunktionaliteterne i området Projektstyring og regnskab i Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>It helps improve user productivity and efficiency, and also helps with the timely entry and approval of project timesheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den bidrager til at forbedre brugernes produktivitet og effektivitet og hjælper endvidere med tidsregistrering og godkendelse af projekttimesedler.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Project Time Entry workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbejdsområde til projekttidsregistrering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The Project Time Entry workspace lets users enter and save time against a project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbejdsområdet for projekttidsregistrering gør det muligt for brugerne at indtaste og gemme tider på et projekt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>However, it doesn't let users submit or approve project timesheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det tillader dog ikke brugerne at indsende eller godkende projekttimesedler.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>It can be used only for time entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det kan alene anvendes til tidsregistrering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>This mobile workspace is intended to be used together with the Microsoft Dynamics 365 for Unified Operations mobile application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette arbejdsområde til mobilenheder er tiltænkt at skulle anvendes sammen med mobilappen Microsoft Dynamics 365 for Unified Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>My timesheets/Timesheets for my review</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mine timesedler/Timesedler, som jeg skal gennemse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>My timesheets (Optimized for mobile) and Timesheets for my review (Optimized for mobile) make up a solution that lets employees create, submit, and approve project timesheets on a mobile device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mine timesedler (optimeret til mobilenheder) og Timesedler, som jeg skal gennemse (optimeret til mobilenheder) udgør tilsammen en løsning, der gør det muligt for medarbejderne at oprette, indsende og godkende projekttimesedler på en mobilenhed.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Workers can access the Finance and Operations functionality through the URL for the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbejderne kan tilgå funktionen Finance and Operations via programmets URL-adresse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>This solution doesn't require the Dynamics 365 for Unified Operations mobile application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne løsning kræver ikke mobilappen Dynamics 365 for Unified Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>For more information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil have flere oplysninger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>For more details, see <bpt id="p1">[</bpt>Microsoft Dynamics 365 Project timesheet mobile application<ept id="p1">](project-timesheet.md)</ept>, <bpt id="p2">[</bpt>Project time entry<ept id="p2">]( project-time-entry-mobile-workspace.md)</ept>, <bpt id="p3">[</bpt>Project timesheets on a mobile device<ept id="p3">](Mobile-timesheets.md)</ept>, and <bpt id="p4">[</bpt>Implement custom fields for the Project timesheet mobile app<ept id="p4">](custom-fields-mobile.md)</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Yderligere oplysninger finder du i <bpt id="p1">[</bpt>Microsoft Dynamics 365 Project Timesheet-mobilapp<ept id="p1">](project-timesheet.md)</ept>, <bpt id="p2">[</bpt>Tidsregistrering for projekt<ept id="p2">]( project-time-entry-mobile-workspace.md)</ept>, <bpt id="p3">[</bpt>Projekttimesedler på en mobilenhed<ept id="p3">](Mobile-timesheets.md)</ept> og <bpt id="p4">[</bpt>Implementere brugerdefinerede felter for Project Timesheet-mobilappen<ept id="p4">](custom-fields-mobile.md)</ept>.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

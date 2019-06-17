@@ -1,84 +1,159 @@
----
-title: Balance - økonomiske rapporter
-description: I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter.
-author: jcart1106
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: FinanicalReports
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 12274
-ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
-ms.search.region: Global
-ms.author: jcart
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ff778af1bb3af3a10132ab3193ad1cd5daa24e1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567323"
----
-# <a name="balance-sheet-financial-reports"></a>Balance - økonomiske rapporter
-
-[!include [banner](../includes/banner.md)]
-
-I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter. 
-
-<a name="default-balance-sheet-reports"></a>Standardbalancerapporter
------------------------------
-
-Der er to standardbalancerapporter. I den ene rapport er afsnittene stablet. I den anden er de placeret side om side.
-
-| Standardrapport                       | Hvad den gør                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Balance – standard              | Giver en oversigt over organisationens økonomiske situation for året.                                                                 |
-| Parallel balance – standard | Giver en oversigt over organisationens økonomiske situation for året. Aktiver og passiver og egenkapital ved siden af hinanden. |
-
-## <a name="building-blocks"></a>Komponenter
-Balanceregnskabsrapporter bruger følgende komponenter.
-
-| Standardrapport                       | Definition af række                       | Kolonnedefinition             |
-|--------------------------------------|--------------------------------------|-------------------------------|
-| Balance – standard              | Balance – standard              | ÅTD og afvigelse - standard    |
-| Parallel balance – standard | Parallel balance – standard | År til dato-kolonne - standard |
-
-### <a name="row-definition"></a>Definition af række
-
-Rækkedefinitioner for begge balancerapporter indeholder sektioner for hver del af en traditionel balance. Side om side-rapporten indeholder et kolonneskift, så passiver og egenkapital vises ved siden af aktiver. Dimensionen Hovedkontokategori bruges til at oprette begge rækkedefinitioner. Derfor kan alle oprette rapporterne uden at skulle foretage ændringer.
-
-### <a name="column-definition"></a>Kolonnedefinition
-
-Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskellige niveauer af detaljer og økonomiske data.
-
--   **ÅTD og afvigelse – standardkolonnetyper:**
-    -   **DESC** – En beskrivelse af rækkedefinitionen
-    -   **FD** – År til dato-økonomiske data for indeværende år
-    -   **FD** – År til dato-økonomiske data for sidste år
-    -   **BEREGN** – Afvigelsen ved at fratrække sidste år fra indeværende år
-
-<!-- -->
-
--   **År til dato-kolonne - standard:**
-    -   **DESC** – En beskrivelse af rækkedefinitionen
-    -   **FD** – År til dato-økonomiske data for indeværende år
-
-
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
-
-[Økonomirapportering](financial-reporting-getting-started.md)
-
-[Se økonomiske rapporter](view-financial-reports.md)
-
-[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="balance-sheet-financial-reports.md" target-language="da-DK">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>balance-sheet-financial-reports.efb624.2d54748daa27011e0222123ee2b9a19b9288734c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>2d54748daa27011e0222123ee2b9a19b9288734c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\balance-sheet-financial-reports.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Balance sheet financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balance - økonomiske rapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This article describes the default reports for balance sheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I denne artikel beskrives standardrapporterne til balancer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It also describes the building blocks that are associated with these reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Her beskrives også de komponenter, der er knyttet til disse rapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Balance sheet financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balance - økonomiske rapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This article describes the default reports for balance sheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I denne artikel beskrives standardrapporterne til balancer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It also describes the building blocks that are associated with these reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Her beskrives også de komponenter, der er knyttet til disse rapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Default balance sheet reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardbalancerapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>There are two default balance sheet reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der er to standardbalancerapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>On one report, the sections are stacked.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den ene rapport er afsnittene stablet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>On the other report, the sections are side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den anden er de placeret side om side.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardrapport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>What it does</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvad den gør</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balance – standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Provides a view of the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Giver en oversigt over organisationens økonomiske situation for året.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parallel balance – standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Provides a view of the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Giver en oversigt over organisationens økonomiske situation for året.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Assets and liability and shareholder’s equity are side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktiver og passiver og egenkapital ved siden af hinanden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Building blocks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komponenter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The balance sheet financial reports use the following building blocks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balanceregnskabsrapporter bruger følgende komponenter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardrapport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definition af række</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolonnedefinition</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Balance Sheet - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balance – standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Balance Sheet - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balance – standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>YTD and Variance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ÅTD og afvigelse - standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parallel balance – standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parallel balance – standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Year to Date Column - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">År til dato-kolonne - standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definition af række</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rækkedefinitioner for begge balancerapporter indeholder sektioner for hver del af en traditionel balance.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Side om side-rapporten indeholder et kolonneskift, så passiver og egenkapital vises ved siden af aktiver.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The Main Account Category dimension is used to build both row definitions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimensionen Hovedkontokategori bruges til at oprette begge rækkedefinitioner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Therefore, anyone can generate the reports without having to make any modifications.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Derfor kan alle oprette rapporterne uden at skulle foretage ændringer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolonnedefinition</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The column definitions contain different types of columns to provide different levels of detail and financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskellige niveauer af detaljer og økonomiske data.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>YTD and Variance – Default column types:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ÅTD og afvigelse – standardkolonnetyper:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – En beskrivelse af rækkedefinitionen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Year-to-date financial data for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – År til dato-økonomiske data for indeværende år</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Year-to-date financial data for the last year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – År til dato-økonomiske data for sidste år</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The variance from subtracting last year from this year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>BEREGN<ept id="p1">**</ept> – Afvigelsen ved at fratrække sidste år fra indeværende år</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">**</bpt>Year to Date Column – Default:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>År til dato-kolonne - standard:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – En beskrivelse af rækkedefinitionen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Year-to-date financial data for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – År til dato-økonomiske data for indeværende år</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere ressourcer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">[</bpt>Financial reporting<ept id="p1">](financial-reporting-getting-started.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Økonomirapportering<ept id="p1">](financial-reporting-getting-started.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Se økonomiske rapporter<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">[</bpt>Dynamics Financial Reporting Blog<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Dynamics Financial Reporting-blog<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
