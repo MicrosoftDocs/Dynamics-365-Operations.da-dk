@@ -1,204 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="index.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>index.fa071c.391f63fba2916b613f66bfd36cfbd3a052cbc8fe.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>391f63fba2916b613f66bfd36cfbd3a052cbc8fe</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\supply-chain\index.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Supply chain management home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for styring af forsyningskæder</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Supply chain management home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for styring af forsyningskæder</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>What's new and in development</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyheder og funktioner under udvikling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Go to the <bpt id="p1">&lt;a href="https://roadmap.dynamics.com/"&gt;</bpt>Dynamics 365 Roadmap<ept id="p1">&lt;/a&gt;</ept> to see what new features are released and what new features are in development.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til <bpt id="p1">&lt;a href="https://roadmap.dynamics.com/"&gt;</bpt>Dynamics 365-oversigten<ept id="p1">&lt;/a&gt;</ept> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Core concepts and tasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundlæggende begreber og opgaver</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Select a feature area to learn more about it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg et funktionsområde, du vil vide mere om.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt>Cost accounting<ept id="p1">](../financials/cost-accounting/cost-accounting-home-page.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Omkostningsregnskab<ept id="p1">](../financials/cost-accounting/cost-accounting-home-page.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">[</bpt>Cost management<ept id="p1">](cost-management/cost-management-home-page.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Omkostningsstyring<ept id="p1">](cost-management/cost-management-home-page.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt>Inventory management<ept id="p1">](inventory/inventory-home-page.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lagerstyring<ept id="p1">](inventory/inventory-home-page.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>Master planning<ept id="p1">](master-planning/master-planning-home-page.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Varedisponering<ept id="p1">](master-planning/master-planning-home-page.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt>Procurement and sourcing<ept id="p1">](procurement/procurement-sourcing-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Indkøb og forsyning<ept id="p1">](procurement/procurement-sourcing-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>Product information management<ept id="p1">](pim/product-information.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Administration af produktoplysninger<ept id="p1">](pim/product-information.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>Production control<ept id="p1">](production-control/production-process-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Produktionsstyring<ept id="p1">](production-control/production-process-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt>Sales and marketing<ept id="p1">](sales-marketing/overview-sales-marketing.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Salg og marketing<ept id="p1">](sales-marketing/overview-sales-marketing.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">[</bpt>Service management<ept id="p1">](service-management/service-management-home-page.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Servicestyring<ept id="p1">](service-management/service-management-home-page.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>Transportation management<ept id="p1">](transportation/transportation-management-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Transportstyring<ept id="p1">](transportation/transportation-management-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>Warehouse management<ept id="p1">](warehousing/warehouse-configuration.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lokationsstyring<ept id="p1">](warehousing/warehouse-configuration.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Videos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Videoer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">[</bpt>Synchronize a work order between Field Service and Finance and Operations<ept id="p1">](https://youtu.be/hAB4TDVMjxU)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Synkronisere en arbejdsordre mellem Field Service og Finance and Operations<ept id="p1">](https://youtu.be/hAB4TDVMjxU)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>Prospect to cash integration<ept id="p1">](https://youtu.be/AVV9x5x-XCg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kundeemne til kontant-integration<ept id="p1">](https://youtu.be/AVV9x5x-XCg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>Optimization advisor<ept id="p1">](https://www.youtube.com/watch?v=MRsAzgFCUSQ&amp;t=4s)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Optimeringsrådgiver<ept id="p1">](https://www.youtube.com/watch?v=MRsAzgFCUSQ&amp;t=4s)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">[</bpt>Use warehouse template to copy configuration<ept id="p1">](https://www.youtube.com/watch?v=K2WIfFlqJYs&amp;feature=youtu.be)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Bruge lagerstedsskabelon til at kopiere konfiguration<ept id="p1">](https://www.youtube.com/watch?v=K2WIfFlqJYs&amp;feature=youtu.be)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, (juli 2017).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">[</bpt>Get started with Cost accounting<ept id="p1">](https://youtu.be/1pUDtJQZ8FU)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Introduktion til driftsregnskab<ept id="p1">](https://youtu.be/1pUDtJQZ8FU)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">[</bpt>Cost control mobile workspace<ept id="p1">](https://youtu.be/imsuTg8rUVk)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Mobilarbejdsområde for omkostningsstyring<ept id="p1">](https://youtu.be/imsuTg8rUVk)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">[</bpt>Use Excel for cost analysis<ept id="p1">](https://youtu.be/-HKHYdClvx8)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Bruge Excel til omkostningsanalyse<ept id="p1">](https://youtu.be/-HKHYdClvx8)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">[</bpt>Approve purchase orders on a mobile device<ept id="p1">](https://youtu.be/gZ-gOlJe7H8)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Godkende indkøbsordrer på en mobilenhed<ept id="p1">](https://youtu.be/gZ-gOlJe7H8)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">[</bpt>Visual scheduling with Gantt chart for production and batch orders<ept id="p1">](https://youtu.be/BtbuShkGj4I)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Visuel planlægning med Gantt-diagram til produktions- og batchordrer<ept id="p1">](https://youtu.be/BtbuShkGj4I)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version er også stort set identiske.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Omkostningsstyring<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">[</bpt>Overview of Cost management<ept id="p1">](https://www.youtube.com/watch?v=vXzlC-mOBcg&amp;feature=youtu.be)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oversigt over omkostningsstyring<ept id="p1">](https://www.youtube.com/watch?v=vXzlC-mOBcg&amp;feature=youtu.be)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Master planning<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Varedisponering<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">[</bpt>Extend the demand forecasting functionality<ept id="p1">](https://www.youtube.com/watch?v=4OIKIXLiNjI&amp;feature=youtu.be)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Udvide behovsprognosefunktionen<ept id="p1">](https://www.youtube.com/watch?v=4OIKIXLiNjI&amp;feature=youtu.be)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt>Master planning - tips and tricks for troubleshooting performance<ept id="p1">](https://youtu.be/7v8BPmEs9Dg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Varedisponering - tips og tricks til forbedring af ydeevnen<ept id="p1">](https://youtu.be/7v8BPmEs9Dg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">[</bpt>Help! MRP is slow!<ept id="p1">](https://youtu.be/RLXybx20B5o)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Hjælp! MRP er langsom!<ept id="p1">](https://youtu.be/RLXybx20B5o)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Administration af produktoplysninger<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">[</bpt>Product configurator in Microsoft Dynamics AX<ept id="p1">](https://youtu.be/zotrj3SbCl4)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Produktkonfigurator i Microsoft Dynamics AX<ept id="p1">](https://youtu.be/zotrj3SbCl4)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Lokationsstyring<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">[</bpt>Get the best out of your warehouse management system<ept id="p1">](https://www.youtube.com/watch?v=--_didmZKHo&amp;t=10s)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Få mest muligt ud af dit lokationsstyringssystem<ept id="p1">](https://www.youtube.com/watch?v=--_didmZKHo&amp;t=10s)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">[</bpt>Advanced R3 Warehouse management - Inbound processing and min/max replenishment<ept id="p1">](https://www.youtube.com/watch?v=z5_V5Eqlf5M&amp;t=48s)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning<ept id="p1">](https://www.youtube.com/watch?v=z5_V5Eqlf5M&amp;t=48s)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt>Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment<ept id="p1">](https://youtu.be/Og0gLlVp7jA)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning<ept id="p1">](https://youtu.be/Og0gLlVp7jA)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source><bpt id="p1">[</bpt>Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management<ept id="p1">](https://youtu.be/5w1MngVchBA)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Labels i den nye Microsoft Dynamics AX 2012 R3-lokationsstyring<ept id="p1">](https://youtu.be/5w1MngVchBA)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">[</bpt>Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing<ept id="p1">](https://www.youtube.com/embed/QUxXUrN-7n4)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion<ept id="p1">](https://www.youtube.com/embed/QUxXUrN-7n4)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">**</bpt>Production control<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Produktionsstyring<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">[</bpt>Subcontracting operations and activities in manufacturing<ept id="p1">](https://youtu.be/y1jrd3A_k70)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Underleverandørhandlinger og -aktiviteter i produktion<ept id="p1">](https://youtu.be/y1jrd3A_k70)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">**</bpt>Transportation management<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Transportstyring<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">[</bpt>Transportation management (TMS) in the new Microsoft Dynamics AX<ept id="p1">](https://youtu.be/jgmTgJIgEFQ)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Transportstyring (TMS) i den nye Microsoft Dynamics AX<ept id="p1">](https://youtu.be/jgmTgJIgEFQ)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Blogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blogs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>There are many topics about manufacturing and supply chain management on the <bpt id="p1">&lt;a href="https://blogs.msdn.microsoft.com/axmfg/"&gt;</bpt>Dynamics AX Manufacturing R&amp;D Team Blog<ept id="p1">&lt;/a&gt;</ept> and <bpt id="p2">&lt;a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/"&gt;</bpt>Supply Chain Management in Dynamics AX R&amp;D Team Blog <ept id="p2">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der er mange emner om styring af produktionen og forsyningskæden i <bpt id="p1">&lt;a href="https://blogs.msdn.microsoft.com/axmfg/"&gt;</bpt>Dynamics AX Manufacturing R&amp;D-teamets blog<ept id="p1">&lt;/a&gt;</ept> og <bpt id="p2">&lt;a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/"&gt;</bpt>Supply Chain Management i Dynamics AX R&amp;D-teamets blog<ept id="p2">&lt;/a&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>White papers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvidbøger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/"&gt;</bpt>Cost accounting hands-on labs<ept id="p1">&lt;/a&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/"&gt;</bpt>Praktiske øvelser i driftsregnskab<ept id="p1">&lt;/a&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/"&gt;</bpt>Lean manufacturing: Capable to promise and kanban job scheduling<ept id="p1">&lt;/a&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/"&gt;</bpt>Lean Manufacturing: Leveringsevne og kanban-finplanlægning<ept id="p1">&lt;/a&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/"&gt;</bpt>BOM calculation by using a costing sheet<ept id="p1">&lt;/a&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/"&gt;</bpt>Styklistekalkulation ved hjælp af efterkalkulationsark<ept id="p1">&lt;/a&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/"&gt;</bpt>Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations<ept id="p1">&lt;/a&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/"&gt;</bpt>Mobilitet i lagerstedet ved hjælp af Microsoft Dynamics 365 for Finance and Operations<ept id="p1">&lt;/a&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>eLearning courses</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eLearning-kurser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>For information about Microsoft Dynamics 365 for Finance and Operations training, see <bpt id="p1">&lt;a href="https://mbspartner.microsoft.com/AX/LearningPlans/"&gt;</bpt> Microsoft Dynamics Learning Portal<ept id="p1">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finde flere oplysninger om Microsoft Dynamics 365 for Finance and Operations-uddannelse i <bpt id="p1">&lt;a href="https://mbspartner.microsoft.com/AX/LearningPlans/"&gt;</bpt> Microsoft Dynamics-uddannelsesportalen<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>(requires CustomerSource account)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(kræver CustomerSource-konto)</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Startside for styring af forsyningskæder
+description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 05/09/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
+ms.search.region: global
+ms.search.industry: ''
+ms.author: shylaw
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557586"
+---
+# <a name="supply-chain-management-home-page"></a><span data-ttu-id="36551-103">Startside for styring af forsyningskæder</span><span class="sxs-lookup"><span data-stu-id="36551-103">Supply chain management home page</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="36551-104">Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="36551-104">This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+
+## <a name="whats-new-and-in-development"></a><span data-ttu-id="36551-105">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="36551-105">What's new and in development</span></span>
+<span data-ttu-id="36551-106">Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365-oversigten</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.</span><span class="sxs-lookup"><span data-stu-id="36551-106">Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development.</span></span> 
+
+## <a name="core-concepts-and-tasks"></a><span data-ttu-id="36551-107">Grundlæggende begreber og opgaver</span><span class="sxs-lookup"><span data-stu-id="36551-107">Core concepts and tasks</span></span>
+
+<span data-ttu-id="36551-108">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="36551-108">Select a feature area to learn more about it.</span></span>
+
+- [<span data-ttu-id="36551-109">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="36551-109">Cost accounting</span></span>](../financials/cost-accounting/cost-accounting-home-page.md)
+- [<span data-ttu-id="36551-110">Omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="36551-110">Cost management</span></span>](cost-management/cost-management-home-page.md)  
+- [<span data-ttu-id="36551-111">Lagerstyring</span><span class="sxs-lookup"><span data-stu-id="36551-111">Inventory management</span></span>](inventory/inventory-home-page.md)
+- [<span data-ttu-id="36551-112">Varedisponering</span><span class="sxs-lookup"><span data-stu-id="36551-112">Master planning</span></span>](master-planning/master-planning-home-page.md)
+- [<span data-ttu-id="36551-113">Indkøb og forsyning</span><span class="sxs-lookup"><span data-stu-id="36551-113">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
+- [<span data-ttu-id="36551-114">Administration af produktoplysninger</span><span class="sxs-lookup"><span data-stu-id="36551-114">Product information management</span></span>](pim/product-information.md)
+- [<span data-ttu-id="36551-115">Produktionsstyring</span><span class="sxs-lookup"><span data-stu-id="36551-115">Production control</span></span>](production-control/production-process-overview.md)
+- [<span data-ttu-id="36551-116">Salg og marketing</span><span class="sxs-lookup"><span data-stu-id="36551-116">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
+- [<span data-ttu-id="36551-117">Servicestyring</span><span class="sxs-lookup"><span data-stu-id="36551-117">Service management</span></span>](service-management/service-management-home-page.md)
+- [<span data-ttu-id="36551-118">Transportstyring</span><span class="sxs-lookup"><span data-stu-id="36551-118">Transportation management</span></span>](transportation/transportation-management-overview.md)
+- [<span data-ttu-id="36551-119">Lokationsstyring</span><span class="sxs-lookup"><span data-stu-id="36551-119">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
+
+## <a name="videos"></a><span data-ttu-id="36551-120">Videoer</span><span class="sxs-lookup"><span data-stu-id="36551-120">Videos</span></span>
+
+<span data-ttu-id="36551-121">Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).</span><span class="sxs-lookup"><span data-stu-id="36551-121">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</span></span>
+
+- [<span data-ttu-id="36551-122">Synkronisere en arbejdsordre mellem Field Service og Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="36551-122">Synchronize a work order between Field Service and Finance and Operations</span></span>](https://youtu.be/hAB4TDVMjxU)
+
+<span data-ttu-id="36551-123">Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017).</span><span class="sxs-lookup"><span data-stu-id="36551-123">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
+
+-  [<span data-ttu-id="36551-124">Kundeemne til kontant-integration</span><span class="sxs-lookup"><span data-stu-id="36551-124">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
+-  [<span data-ttu-id="36551-125">Optimeringsrådgiver</span><span class="sxs-lookup"><span data-stu-id="36551-125">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [<span data-ttu-id="36551-126">Bruge lagerstedsskabelon til at kopiere konfiguration</span><span class="sxs-lookup"><span data-stu-id="36551-126">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+
+<span data-ttu-id="36551-127">Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, (juli 2017).</span><span class="sxs-lookup"><span data-stu-id="36551-127">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
+
+-  [<span data-ttu-id="36551-128">Introduktion til driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="36551-128">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
+-  [<span data-ttu-id="36551-129">Mobilarbejdsområde for omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="36551-129">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
+-  [<span data-ttu-id="36551-130">Bruge Excel til omkostningsanalyse</span><span class="sxs-lookup"><span data-stu-id="36551-130">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
+-  [<span data-ttu-id="36551-131">Godkende indkøbsordrer på en mobilenhed</span><span class="sxs-lookup"><span data-stu-id="36551-131">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
+-  [<span data-ttu-id="36551-132">Visuel planlægning med Gantt-diagram til produktions- og batchordrer</span><span class="sxs-lookup"><span data-stu-id="36551-132">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
+
+<span data-ttu-id="36551-133">Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version er også stort set identiske.</span><span class="sxs-lookup"><span data-stu-id="36551-133">These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+
+<span data-ttu-id="36551-134">**Omkostningsstyring**</span><span class="sxs-lookup"><span data-stu-id="36551-134">**Cost management**</span></span>
+
+-  [<span data-ttu-id="36551-135">Oversigt over omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="36551-135">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+<span data-ttu-id="36551-136">**Varedisponering**</span><span class="sxs-lookup"><span data-stu-id="36551-136">**Master planning**</span></span>
+
+-  [<span data-ttu-id="36551-137">Udvide behovsprognosefunktionen</span><span class="sxs-lookup"><span data-stu-id="36551-137">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [<span data-ttu-id="36551-138">Varedisponering - tips og tricks til forbedring af ydeevnen</span><span class="sxs-lookup"><span data-stu-id="36551-138">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
+-  [<span data-ttu-id="36551-139">Hjælp! MRP er langsom!</span><span class="sxs-lookup"><span data-stu-id="36551-139">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
+
+<span data-ttu-id="36551-140">**Administration af produktoplysninger**</span><span class="sxs-lookup"><span data-stu-id="36551-140">**Product information management**</span></span>
+
+-  [<span data-ttu-id="36551-141">Produktkonfigurator i Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="36551-141">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
+
+<span data-ttu-id="36551-142">**Lokationsstyring**</span><span class="sxs-lookup"><span data-stu-id="36551-142">**Warehouse management**</span></span> 
+
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
+-  [<span data-ttu-id="36551-143">Få mest muligt ud af dit lokationsstyringssystem</span><span class="sxs-lookup"><span data-stu-id="36551-143">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [<span data-ttu-id="36551-144">Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning</span><span class="sxs-lookup"><span data-stu-id="36551-144">Advanced R3 Warehouse management - Inbound processing and min/max replenishment</span></span>](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [<span data-ttu-id="36551-145">Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning</span><span class="sxs-lookup"><span data-stu-id="36551-145">Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment</span></span>](https://youtu.be/Og0gLlVp7jA)
+-  [<span data-ttu-id="36551-146">Labels i den nye Microsoft Dynamics AX 2012 R3-lokationsstyring</span><span class="sxs-lookup"><span data-stu-id="36551-146">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
+-  [<span data-ttu-id="36551-147">Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion</span><span class="sxs-lookup"><span data-stu-id="36551-147">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+<span data-ttu-id="36551-148">**Produktionsstyring**</span><span class="sxs-lookup"><span data-stu-id="36551-148">**Production control**</span></span>
+
+-  [<span data-ttu-id="36551-149">Underleverandørhandlinger og -aktiviteter i produktion</span><span class="sxs-lookup"><span data-stu-id="36551-149">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
+
+<span data-ttu-id="36551-150">**Transportstyring**</span><span class="sxs-lookup"><span data-stu-id="36551-150">**Transportation management**</span></span>
+
+-  [<span data-ttu-id="36551-151">Transportstyring (TMS) i den nye Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="36551-151">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
+
+## <a name="blogs"></a><span data-ttu-id="36551-152">Blogs</span><span class="sxs-lookup"><span data-stu-id="36551-152">Blogs</span></span>
+<span data-ttu-id="36551-153">Der er mange emner om styring af produktionen og forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>.</span><span class="sxs-lookup"><span data-stu-id="36551-153">There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>.</span></span> <span data-ttu-id="36551-154">De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.</span><span class="sxs-lookup"><span data-stu-id="36551-154">Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+
+## <a name="white-papers"></a><span data-ttu-id="36551-155">Hvidbøger</span><span class="sxs-lookup"><span data-stu-id="36551-155">White papers</span></span>
+-  <span data-ttu-id="36551-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser i driftsregnskab</a></span><span class="sxs-lookup"><span data-stu-id="36551-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a></span></span> 
+-  <span data-ttu-id="36551-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringsevne og kanban-finplanlægning</a></span><span class="sxs-lookup"><span data-stu-id="36551-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a></span></span> 
+-  <span data-ttu-id="36551-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Styklistekalkulation ved hjælp af efterkalkulationsark</a></span><span class="sxs-lookup"><span data-stu-id="36551-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a></span></span>
+-  <span data-ttu-id="36551-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet i lagerstedet ved hjælp af Microsoft Dynamics 365 for Finance and Operations</a></span><span class="sxs-lookup"><span data-stu-id="36551-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a></span></span>
+
+## <a name="elearning-courses"></a><span data-ttu-id="36551-160">eLearning-kurser</span><span class="sxs-lookup"><span data-stu-id="36551-160">eLearning courses</span></span>
+<span data-ttu-id="36551-161">Du kan finde flere oplysninger om Microsoft Dynamics 365 for Finance and Operations-uddannelse i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics-uddannelsesportalen</a>.</span><span class="sxs-lookup"><span data-stu-id="36551-161">For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>.</span></span> <span data-ttu-id="36551-162">(kræver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="36551-162">(requires CustomerSource account)</span></span> 
+
+

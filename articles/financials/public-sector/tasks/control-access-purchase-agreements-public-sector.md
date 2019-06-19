@@ -1,69 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="control-access-purchase-agreements-public-sector.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>control-access-purchase-agreements-public-sector.9e8182.d6e3d335b021c366accdca50ed7ce496cefaa47e.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d6e3d335b021c366accdca50ed7ce496cefaa47e</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\public-sector\tasks\control-access-purchase-agreements-public-sector.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Control access to purchase agreements in the public sector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrollere adgang til købsaftaler i den offentlige sektor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>You can make sure that only approved departments can access a purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan sikre dig, at kun godkendte afdelinger kan få adgang til en købsaftale.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Control access to purchase agreements in the public sector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrollere adgang til købsaftaler i den offentlige sektor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can make sure that only approved departments can access a purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan sikre dig, at kun godkendte afdelinger kan få adgang til en købsaftale.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>You can also limit the amount that each department can spend against the purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også begrænse det beløb, som hver afdeling kan bruge forhold til købsaftalen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>In order to do this, the account structure and financial dimensions for department access must be set on the Accounts payable parameters form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at kunne gøre det skal kontostrukturen og de økonomiske dimensioner for afdelingsadgang indstilles i formularen Kreditorparametre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This procedure was created for French public sector organizations using the PSUS demo company data in the public sector partition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure er oprettet for franske offentlige organisationer med data fra PSUS-demofirmaet i den offentlige sektor partition.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Go to Accounts payable &gt; Purchase orders &gt; Purchase agreements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Kreditor &gt; Indkøbsordrer &gt; Købsaftaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In the list, select the purchase agreement that you want to control access to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg den indkøbsordre, du vil styre adgangen til, på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>On the Action Pane, click Purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Købsaftale i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Click Department access.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Afdelingsadgang.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the Department field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Afdeling for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the list, select the financial dimension for a department that has access to this purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg den økonomiske dimension for en afdeling, der har adgang til denne købsaftale, på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>In the Authorized amount field, enter the total amount that this department is authorized to release from this purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv det samlede beløb, som denne afdeling er autoriseret til at frigive fra denne købsaftale, i feltet Godkendt beløb.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Add additional departments until all authorized departments have been added to the purchase agreement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilføj flere afdelinger, indtil alle autoriserede afdelinger er føjet til købsaftalen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Kontrollere adgang til købsaftaler i den offentlige sektor
+description: Du kan sikre dig, at kun godkendte afdelinger kan få adgang til en købsaftale.
+author: twheeloc
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PurchAgreement, PurchAgreementFinDimensionAccess_PSN
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.search.industry: Public sector
+ms.author: twheeloc
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d6e3d335b021c366accdca50ed7ce496cefaa47e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557238"
+---
+# <a name="control-access-to-purchase-agreements-in-the-public-sector"></a><span data-ttu-id="99cb4-103">Kontrollere adgang til købsaftaler i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="99cb4-103">Control access to purchase agreements in the public sector</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="99cb4-104">Du kan sikre dig, at kun godkendte afdelinger kan få adgang til en købsaftale.</span><span class="sxs-lookup"><span data-stu-id="99cb4-104">You can make sure that only approved departments can access a purchase agreement.</span></span> <span data-ttu-id="99cb4-105">Du kan også begrænse det beløb, som hver afdeling kan bruge forhold til købsaftalen.</span><span class="sxs-lookup"><span data-stu-id="99cb4-105">You can also limit the amount that each department can spend against the purchase agreement.</span></span> <span data-ttu-id="99cb4-106">For at kunne gøre det skal kontostrukturen og de økonomiske dimensioner for afdelingsadgang indstilles i formularen Kreditorparametre.</span><span class="sxs-lookup"><span data-stu-id="99cb4-106">In order to do this, the account structure and financial dimensions for department access must be set on the Accounts payable parameters form.</span></span> <span data-ttu-id="99cb4-107">Denne procedure er oprettet for franske offentlige organisationer med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="99cb4-107">This procedure was created for French public sector organizations using the PSUS demo company data in the public sector partition.</span></span>
+
+1. <span data-ttu-id="99cb4-108">Gå til Kreditor > Indkøbsordrer > Købsaftaler.</span><span class="sxs-lookup"><span data-stu-id="99cb4-108">Go to Accounts payable > Purchase orders > Purchase agreements.</span></span>
+2. <span data-ttu-id="99cb4-109">Vælg den indkøbsordre, du vil styre adgangen til, på listen.</span><span class="sxs-lookup"><span data-stu-id="99cb4-109">In the list, select the purchase agreement that you want to control access to.</span></span>
+3. <span data-ttu-id="99cb4-110">Klik på Købsaftale i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="99cb4-110">On the Action Pane, click Purchase agreement.</span></span>
+4. <span data-ttu-id="99cb4-111">Klik på Afdelingsadgang.</span><span class="sxs-lookup"><span data-stu-id="99cb4-111">Click Department access.</span></span>
+5. <span data-ttu-id="99cb4-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="99cb4-112">Click New.</span></span>
+6. <span data-ttu-id="99cb4-113">Klik på rullelisten i feltet Afdeling for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="99cb4-113">In the Department field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="99cb4-114">Vælg den økonomiske dimension for en afdeling, der har adgang til denne købsaftale, på listen.</span><span class="sxs-lookup"><span data-stu-id="99cb4-114">In the list, select the financial dimension for a department that has access to this purchase agreement.</span></span>
+8. <span data-ttu-id="99cb4-115">Angiv det samlede beløb, som denne afdeling er autoriseret til at frigive fra denne købsaftale, i feltet Godkendt beløb.</span><span class="sxs-lookup"><span data-stu-id="99cb4-115">In the Authorized amount field, enter the total amount that this department is authorized to release from this purchase agreement.</span></span>
+    * <span data-ttu-id="99cb4-116">Tilføj flere afdelinger, indtil alle autoriserede afdelinger er føjet til købsaftalen.</span><span class="sxs-lookup"><span data-stu-id="99cb4-116">Add additional departments until all authorized departments have been added to the purchase agreement.</span></span>  
+9. <span data-ttu-id="99cb4-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="99cb4-117">Click Save.</span></span>
+

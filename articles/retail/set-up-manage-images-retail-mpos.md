@@ -1,588 +1,215 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="set-up-manage-images-retail-mpos.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>set-up-manage-images-retail-mpos.3cc4ad.c256569135a00ea98a5c059b9dd12a07a000ee6a.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>c256569135a00ea98a5c059b9dd12a07a000ee6a</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\set-up-manage-images-retail-mpos.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Set up and manage images for Retail Modern POS (MPOS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og administrere billeder til Retail Modern POS (MPOS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Set up and manage images for Retail Modern POS (MPOS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og administrere billeder til Retail Modern POS (MPOS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Setting up the media base URL and defining media templates to configure the format for image URLs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere URL-adresse til mediebase og definere medieskabeloner for at konfigurere formatet for billed-URL-adresser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The images that appear in Retail Modern POS (MPOS) must be hosted externally, outside Microsoft Dynamics 365 for Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De billeder, der vises i Retail Modern POS (MPOS) skal være placeret eksternt, uden for Microsoft Dynamics 365 for Retail.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Typically, they are hosted in a content management system, content delivery network (CDN), or media server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De er typisk placeret i et CRM (content management system), CDN (content delivery network) eller på en medieserver.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>MPOS then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS henter og viser derefter billeder til de relevante enheder som f.eks. produkter og kataloger ved at få adgang til destinations-URL-adressen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>To fetch these externally hosted images, MPOS requires the correct URL format for the images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil hente disse billeder, der er placeret et eksternt sted, kræver MPOS, at billederne har det rigtige URL-adresseformat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>You can configure the required URL format for the images by setting up the <bpt id="p1">**</bpt>Media base URL<ept id="p1">**</ept> value in the channel profile and using the <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept> functionality for each entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan konfigurere det påkrævede URL-formatet for billederne ved at oprette en værdi for <bpt id="p1">**</bpt>URL-adresse til mediebase<ept id="p1">**</ept> i kanalprofilen og bruge funktionen <bpt id="p2">**</bpt>Definer medieskabelon<ept id="p2">**</ept> for hver enhed.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can also overwrite the standard URL format for a subset of entities by using the <bpt id="p1">**</bpt>Edit in Excel<ept id="p1">**</ept> functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også overskrive standard-URL-formatet for en delmængde af enheder ved hjælp af funktionen <bpt id="p1">**</bpt>Rediger i Excel<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>In the current version of Dynamics 365 for Retail, you can no longer set up the URL format by using the <bpt id="p1">**</bpt>Image<ept id="p1">**</ept> attribute XML for MPOS in the <bpt id="p2">**</bpt>Default<ept id="p2">**</ept> attribute group for entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den aktuelle version af Dynamics 365 for Retail kan du ikke længere oprette URL-formatet ved hjælp af <bpt id="p1">**</bpt>Billede<ept id="p1">**</ept>-attribut-XML til MPOS i attributgruppen <bpt id="p2">**</bpt>Standard<ept id="p2">**</ept> for enheder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>If you're familiar with Microsoft Dynamics AX 2012 R3 and are now using the current version of Dynamics 365 for Retail, make sure that you always use the new <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> functionality to set up images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du er fortrolig med Microsoft Dynamics AX 2012 R3 og nu bruger den aktuelle version af Dynamics 365 for Retail, skal du kontrollere, at du altid bruge den nye funktion <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> til at konfigurere billeder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Don't use or modify the <bpt id="p1">**</bpt>Image<ept id="p1">**</ept> attribute in the <bpt id="p2">**</bpt>Default<ept id="p2">**</ept> attribute group for any entities, including products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Undlad at bruge eller ændre attributten <bpt id="p1">**</bpt>Billed<ept id="p1">**</ept> i attributgruppen <bpt id="p2">**</bpt>Standard<ept id="p2">**</ept> for enheder, herunder produkter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Changes that you make directly in the <bpt id="p1">**</bpt>Default<ept id="p1">**</ept> attribute group for images won't be reflected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ændringer, du foretager direkte i attributgruppen <bpt id="p1">**</bpt>Standard<ept id="p1">**</ept> for billeder, afspejles ikke.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>This option will be disabled in a future release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne indstilling deaktiveres i en fremtidig version.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>In the following procedures, images are set up for the Catalog entity as an example.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I følgende procedurer er billeder angivet for enheden Katalog som et eksempel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>These procedures will help guarantee that the correct image destination path is set implicitly for all catalog images that use a common path.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse procedurer garanterer, at den korrekte billeddestinationssti er angivet implicit for alle katalogbilleder, der bruger en fælles sti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>For example, if you've set up a media server or CDN externally, and want the images to appear in MPOS for a given store, the <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> functionality helps you the set the path where MPOS can look up and retrieve the images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du f.eks. har konfigureret en medieserver eller CDN eksternt, og billederne skal vises i MPOS for et givet lager, hjælper funktionen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> dig med at indstille den sti, hvor MPOS kan søge efter og hente billederne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>For this demo data example, the media server is deployed on the Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dette eksempel med demodata er medieserveren installeret på Retail Server.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>However, you can have it anywhere outside Dynamics 365 for Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan imidlertid have dem hvor som helst uden for Dynamics 365 for Retail.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Set up the media base URL for a channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere URL-adresse til mediebase til en kanal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Open the Dynamics 365 for Retail HQ portal.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Åbn Dynamics 365 for Retail HQ-portalen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Channel profiles<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Detail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Konfiguration af kanal<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kanalprofiler<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Navigation<ept id="p1">](./media/channel-profile1.png)](./media/channel-profile1.png)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Navigation<ept id="p1">](./media/channel-profile1.png)](./media/channel-profile1.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>In the channel profile that your store uses for MPOS, update the <bpt id="p1">**</bpt>Media base URL<ept id="p1">**</ept> field with the base URL of your media server or CDN.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">I den kanalprofil, din butik bruger til MPOS, skal du opdatere feltet <bpt id="p1">**</bpt>URL-adresse til mediebase<ept id="p1">**</ept> med basis-URL-adressen til din medieserver eller CDN.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The base URL is the first part of the URL that is shared by all image folders of different entities.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Basis-URL-adressen er den første del af URL-adressen, der er fælles for billedmapper for forskellige enheder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Channel profiles page<ept id="p1">](./media/channel-profile2.png)](./media/channel-profile2.png)</ept></source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Kanalprofilside<ept id="p1">](./media/channel-profile2.png)](./media/channel-profile2.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Define the media template for an entity</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Definere medieskabelonen for en enhed</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Catalog management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Catalog images<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Detail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Administration af kataloger<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Katalogbilleder<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>On the <bpt id="p1">**</bpt>Catalog images<ept id="p1">**</ept> page, on the Action Pane, click <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> på siden <bpt id="p2">**</bpt>Katalogbilleder<ept id="p2">**</ept> i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>In the <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Entity<ept id="p2">**</ept> field, <bpt id="p3">**</bpt>Catalog<ept id="p3">**</ept> should be selected by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dialogboksen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> skal du i feltet <bpt id="p2">**</bpt>Enhed<ept id="p2">**</ept> vælge <bpt id="p3">**</bpt>Katalog<ept id="p3">**</ept> som standard.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>On the <bpt id="p1">**</bpt>Media path<ept id="p1">**</ept> FastTab, enter the remaining path of the image location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv den resterende sti for billedplaceringen i oversigtspanelet <bpt id="p1">**</bpt>Mediesti<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The media path supports <bpt id="p1">**</bpt>LanguageID<ept id="p1">**</ept> as a variable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mediestien understøtter <bpt id="p1">**</bpt>LanguageID<ept id="p1">**</ept> som en variabel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>For example, for the demo data, you can create a <bpt id="p1">**</bpt>Catalogs<ept id="p1">**</ept> folder for all catalog images under the media base URL for your media server (<ph id="ph1">`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`</ph>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For demodataene kan du for eksempel oprette en mappe <bpt id="p1">**</bpt>Kataloger<ept id="p1">**</ept> til alle katalogbilleder under URL-adressen til mediebasen til din medieserver (<ph id="ph1">`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`</ph>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>You can then have a folder for each language, such as en-US or fr-FR, and copy the appropriate images under each folder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan have en mappe til hvert sprog, f.eks. da-DK eller fr-FR, og kopiere de relevante billeder i hver mappe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>If you don't have different images for the various languages, you can omit the <bpt id="p1">**</bpt>LanguageID<ept id="p1">**</ept> variable from your folder structure and point directly to the Catalogs folder that contains the catalog images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du ikke har forskellige billeder til de forskellige sprog, kan du udelade variablen <bpt id="p1">**</bpt>LanguageID<ept id="p1">**</ept> fra din mappestruktur og pege direkte på mappen Kataloger, der indeholder katalogbillederne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>The current version of Dynamics 365 for Retail supports the <bpt id="p1">**</bpt>{LanguageId}<ept id="p1">**</ept> token for Catalog, Product, and Category entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den aktuelle version af Dynamics 365 for Retail understøtter <bpt id="p1">**</bpt>{LanguageId}<ept id="p1">**</ept>-tokenet for enhederne Katalog, Produkt og Kategori.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>(The <bpt id="p1">**</bpt>{LanguageID}<ept id="p1">**</ept> token isn't supported for Customer and Worker entities, according to the existing standard that has been effective since Microsoft Dynamics AX 6.x.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>{LanguageID}<ept id="p1">**</ept>-tokenet understøttes ikke for enhederne Debitor og Arbejder i henhold til den eksisterende standard, der har været gældende siden Microsoft Dynamics AX 6.x.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>For images, the file name format is hard-coded to the catalog name and can't be changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For billeder gælder det, at filnavnformatet er hard-coded til katalognavnet og ikke kan ændres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Therefore, rename your images so that they have appropriate catalog names, to help guarantee that MPOS handles them correctly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omdøb derfor dine billeder, så de har det relevante katalognavn, så du kan sikre, at MPOS håndterer dem korrekt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>In the <bpt id="p1">**</bpt>File Extension<ept id="p1">**</ept> field, select the expected file name extension, depending on the type of images that you have.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I feltet <bpt id="p1">**</bpt>Filtypenavn<ept id="p1">**</ept> skal du vælge det forventede filtypenavn, afhængigt af hvilken type billeder du har.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>For example, for the demo data, the catalog images are set to the .jpg extension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For demodataene er katalogbillederne for eksempel indstillet til .jpg-filtypenavnet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>(The image files are also renamed so that they have catalog names.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Billedfilerne omdøbes også, så de får katalognavne).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>To validate that the media template for images has been saved correctly, on the <bpt id="p1">**</bpt>Catalog images<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept> again.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at kontrollere, at medieskabelon til billeder er blevet gemt korrekt, skal du klikke på <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> på siden <bpt id="p2">**</bpt>Katalogbilleder<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>To validate the template without closing the <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> dialog box, you can use the <bpt id="p2">**</bpt>Generate Image URLs for Excel<ept id="p2">**</ept> FastTab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at validere skabelonen uden at lukke dialogboksen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> skal du bruge oversigtspanelet <bpt id="p2">**</bpt>Generér billed-URL-adresser til Excel<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Check the appearance of the image URL, and verify that the URL complies with the template standard that was mentioned earlier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrollere udseendet af billed-URL-adressen, og kontrollér, at URL-adressen er i overensstemmelse med standardskabelonen, der blev nævnt tidligere.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>The <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> dialog box has now set the image path implicitly for all catalog images that use this common URL path.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dialogboksen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> har implicit angivet billedstien for alle katalogbilleder, der bruger denne fælles URL-adressesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>This URL path applies to all catalog images unless they are overwritten.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne URL-sti gælder for alle katalogbilleder, medmindre de overskrives.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The first part of the image path is taken from the media base URL that you defined in the channel profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den første del af billedstien er taget fra den URL-adresse til mediebase, du har angivet i kanalprofilen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The remaining part of the path is taken from the path that you defined in the media template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den resterende del af stien er taget fra den sti, du har defineret i medieskabelonen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>The two parts are concatenated to provide the full URL of the image location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De to dele er sammenføjet for at give den fulde URL-adressen til billedets placering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>For example, a catalog in the demo data is named Fabrikam Base Catalog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et katalog i demodataene hedder f.eks. Fabrikam Base Catalog.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Therefore, the image name must be Fabrikam Base Catalog.jpg so that it uses the catalog name and the .jpg file name extension that is configured in the template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Procesnavnet skal derfor være Fabrikam Base Catalog.jpg, så den bruger det katalognavn og .jpg-filtypenavn, der er konfigureret i skabelonen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>In this case, after concatenation, the URL will be <ph id="ph1">`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg`</ph>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dette tilfælde vil URL-adressen efter sammenkædning <ph id="ph1">`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg`</ph>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Run the synchronization jobs to push the new template to the channel database, so that MPOS can use the template to access the images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kør synkroniseringsjobbene for at skubbe den nye skabelon til kanaldatabasen, så MPOS kan bruge skabelonen til at få adgang til billederne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>To update the media template for catalog images on the channel side, be sure to run <bpt id="p1">**</bpt>Catalog Job 1150<ept id="p1">**</ept> from <bpt id="p2">**</bpt>Retail IT<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Distribution schedule<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Hvis du vil opdatere medieskabelonen for katalogbilleder på kanalsiden, skal du sørge for at køre <bpt id="p1">**</bpt>Katalogjob 1150<ept id="p1">**</ept> fra <bpt id="p2">**</bpt>Detail IT<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Distributionsplan<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Define media template dialog box<ept id="p1">](./media/catalog1.png)](./media/catalog1.png)</ept></source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Dialogboksen Definer medieskabelon<ept id="p1">](./media/catalog1.png)](./media/catalog1.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Previewing an image from the entity level</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Vise eksempel af et billede fra enhedsniveau</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>From the page for the entity item in HQ, you can preview the image that uses the image URL that is derived from the media template.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du kan få vist det billede, der bruger billedets URL-adresse, der er afledt fra medieskabelonen, fra siden for enhedselementet i HQ.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>For this example, go to the appropriate catalog, and then, on the Action Pane, click <bpt id="p1">**</bpt>Media<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Images<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dette eksempel skal du gå til det relevante katalog og derefter klikke på <bpt id="p1">**</bpt>Medie<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Billeder<ept id="p2">**</ept> i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Use the drop-down list to select different stores that might have different channel profiles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug rullelisten til at vælge forskellige butikker, der kan have forskellige kanalprofiler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>To edit or remove the implicit media template, you must return to the <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> dialog box for the <bpt id="p2">**</bpt>Catalog images<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil redigere eller fjerne den implicitte medieskabelon, skal du vende tilbage til dialogboksen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> på siden <bpt id="p2">**</bpt>Katalogbilleder<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>You can use the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Remove<ept id="p2">**</ept> buttons to manually change the path that is based on the implicit template and used for a specific image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruge knapperne <bpt id="p1">**</bpt>Tilføj<ept id="p1">**</ept> og <bpt id="p2">**</bpt>Fjern<ept id="p2">**</ept> til manuelt at ændre den sti, der er baseret på den implicitte skabelon og anvendt til et bestemt billede.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>For more information, see the <bpt id="p1">[</bpt>Overwriting the media template for entity items<ept id="p1">](#overwriting-the-media-template-for-entity-items)</ept> section later in this article.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finde flere oplysninger i afsnittet <bpt id="p1">[</bpt>Overskrivning af medier skabelonen for enhed varer<ept id="p1">](#overwriting-the-media-template-for-entity-items)</ept> senere i denne artikel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>After you've finished previewing an image and making any changes that you require, start the MPOS instance for the appropriate store, and see whether the catalog images are shown.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Når du er færdig med at vise et billede og foretage ændringer, du kræver, skal du starte MPOS-forekomsten for den relevante butik og se, om katalogbillederne vises.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Images dialog box<ept id="p1">](./media/catalog4.png)](./media/catalog4.png)</ept></source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Dialogboksen Billeder<ept id="p1">](./media/catalog4.png)](./media/catalog4.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>You can use the same procedure for all the five entities that are supported: Worker, Customer, Catalog, Category, and Products.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du kan bruge samme procedure for de fem enheder, der understøttes: arbejder, kunde, katalog, kategori og produkter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>"Catalog Products" (products that are set at the catalog level) and "Channel Products" (products that are set at the channel level) use the media template that is set for the Products entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"Katalogprodukter" (produkter, der er angivet på katalogniveauet) og "Kanalprodukter" (produkter, der er angivet på kanalniveauet) bruger den medieskabelon, der er angivet for produktenheden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>For the Products media template, you can select the number of product images to show per product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan vælge antallet af produktbilleder, der skal vises pr. produkt, for medieskabelonen Produkter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>You can also set the default image for a given product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også angive standardbilledet for et bestemt produkt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>In this way, you can prevent blank images in MPOS and help to control which image is used as the default image for a product item.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På denne måde kan du forhindre tomme billeder i MPOS og styre, hvilket billede der bruges som standardbilledet for en produktvare.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>In the following example, each product has five images, and the first image is set as the default image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvert produkt har fem billeder i eksemplet nedenfor, og det første billede er angivet som standardbilledet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Variant products are treated the same way as master products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Variantprodukter behandles på samme måde som masterprodukter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>The file name of the image file should be based on the product number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filnavnet på billedfilen skal være baseret på produktnummeret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Some characters are also escaped while the file name is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nogle tegn er også escaped, mens filnavnet genereres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Therefore, it's a good to verify the file name by using the <bpt id="p1">**</bpt>Generate Image URLs for Excel<ept id="p1">**</ept> section.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Det er derfor en god ide at kontrollere filnavnet ved at bruge afsnittet <bpt id="p1">**</bpt>Generér billed-URL-adresser til Excel<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Define media template dialog box<ept id="p1">](./media/prods.png)](./media/prods.png)</ept></source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Dialogboksen Definer medieskabelon<ept id="p1">](./media/prods.png)](./media/prods.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Synchronization jobs to send a media template to the channel side</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Synkroniseringsjob, der skal sendes til en medieskabelon til kanalsiden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>For all the five supported entities (Worker, Customer, Catalog, Category, and Products), whenever you update the <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> dialog to set up an image, make sure that you run the Catalog job (1150) from <bpt id="p2">**</bpt>Retail IT<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Distribution schedule<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For alle fem understøttede enheder (arbejder, kunder, katalog, kategori og produkter) gælder det, at hver gang du opdaterer dialogboksen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> for at oprette et billede, skal du sørge for, at du kører katalogjobbet (1150) fra <bpt id="p2">**</bpt>Retail IT<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Distributionsplan<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>This job will enable the updated media template to be synced to the channel and used by MPOS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette job give den opdaterede medieskabelon mulighed for at blive synkroniseret med kanalen og anvendt af MPOS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Run the Catalog job (1150) after you make any of the following changes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kør katalogjobbet (1150), når du foretager en af følgende ændringer:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>You update the Catalog image media template from <bpt id="p1">**</bpt>Catalog images<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du opdaterer medieskabelonen til katalogbilledet <bpt id="p1">**</bpt>Katalogbilleder<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Definer medieskabelon<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>You update the Employee image media template from <bpt id="p1">**</bpt>Employee images<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du opdaterer medieskabelonen til medarbejderbilledet <bpt id="p1">**</bpt>Medarbejderbilleder<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Definer medieskabelon<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>You update the Customer image media template from <bpt id="p1">**</bpt>Customer image<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du opdaterer medieskabelonen til kundebilledet <bpt id="p1">**</bpt>Kundebilleder<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Definer medieskabelon<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>You update the Product image media template from <bpt id="p1">**</bpt>Product images<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du opdaterer medieskabelonen til produktbilledet <bpt id="p1">**</bpt>Produktbilleder<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Definer medieskabelon<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>You update the Category image media template from <bpt id="p1">**</bpt>Category images<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du opdaterer medieskabelonen til kategoribilledet <bpt id="p1">**</bpt>Kategoribilleder<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Definer medieskabelon<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>You must also publish the channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal også publicere kanalen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Overwriting the media template for entity items</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overskrive medieskabelonen for enhedselementer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>As you learned in the previous section, the media template for a given entity supports only one common path.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Som du har lært i forrige afsnit, understøtter medieskabelonen for en bestemt enhed kun én fælles sti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>This path is based on the media base URL that is configured and the media path that is defined.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne sti er baseret på den URL-adresse til mediebase, der er konfigureret, og mediestien, der er defineret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>However, in many cases, a retailer wants to be able to use images from different sources for a subset of items in an entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Men i mange tilfælde ønsker en forhandler at kunne bruge billeder fra forskellige kilder for en delmængde af elementer i en enhed.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>For example, a store uses the self-hosted media server for one set of catalog images but uses CDN URLs for another set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En butik bruger for eksempel en selvhostet medieserver til ét sæt katalogbilleder, men bruger CDN URL-adresser til et andet sæt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>To overwrite image URLs that are based on a media template for entity images at the entity level, you can use the Edit in Excel and Manual edit functionality from the <bpt id="p1">**</bpt>Preview<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil overskrive billed-URL-adresser, der er baseret på en medieskabelon til enhedsbilleder på enhedsniveau, kan du bruge Rediger i Excel og funktionen Manuel redigering på siden <bpt id="p1">**</bpt>Eksempel<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Overwrite by using Edit in Excel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overskrive ved hjælp af Rediger i Excel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Catalog management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Catalog images<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Detail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Administration af kataloger<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Katalogbilleder<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>On the <bpt id="p1">**</bpt>Catalog images<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Define media template<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> på siden <bpt id="p2">**</bpt>Katalogbilleder<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>In the <bpt id="p1">**</bpt>Define media template<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Entity<ept id="p2">**</ept> field, <bpt id="p3">**</bpt>Catalog<ept id="p3">**</ept> should be selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dialogboksen <bpt id="p1">**</bpt>Definer medieskabelon<ept id="p1">**</ept> skal du i feltet <bpt id="p2">**</bpt>Enhed<ept id="p2">**</ept> vælge <bpt id="p3">**</bpt>Katalog<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>On the <bpt id="p1">**</bpt>Media path<ept id="p1">**</ept> FastTab, notice the image location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk billedplaceringen i oversigtspanelet <bpt id="p1">**</bpt>Mediesti<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>On the <bpt id="p1">**</bpt>Generate Image URLs for Excel<ept id="p1">**</ept> FastTab, click <bpt id="p2">**</bpt>Generate<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Generer<ept id="p1">**</ept> i oversigtspanelet <bpt id="p2">**</bpt>Generér billed-URL-adresser til Excel<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Whenever the media template is changed, you must click <bpt id="p1">**</bpt>Generate<ept id="p1">**</ept> before you can use the Edit in Excel functionality.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Når medieskabelonen ændres, skal du klikke på <bpt id="p1">**</bpt>Generer<ept id="p1">**</ept>, før du kan bruge funktionen Rediger i Excel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Generate Image URLs for Excel FastTab<ept id="p1">](./media/excel1.jpg)](./media/excel1.jpg)</ept></source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Generere billed-URL-adresser til Excel-oversigtspanel<ept id="p1">](./media/excel1.jpg)](./media/excel1.jpg)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>You now see a preview of the image URLs that were generated based on the last saved media template.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du ser nu et eksempel på billed-URL-adresser, der blev genereret ud fra den senest gemte medieskabelon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Generate Image URLs for Excel FastTab after Generate is selected<ept id="p1">](./media/excel2.png)](./media/excel2.png)</ept></source><target logoport:matchpercent="71" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Generere billed-URL-adresser til Excel-oversigtspanel, efter at Generer er valgt<ept id="p1">](./media/excel2.png)](./media/excel2.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>The URLs that are generated for Excel use the path and conventions of the media template that is defined.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">De URL-adresser, der er genereret for Excel, bruger stien og konventionerne fra den medieskabelon, der er defineret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>These conventions include the conventions for file names.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse konventioner omfatter konventioner for filnavne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>The expectation is that you've set up the physical images outside Dynamics 365 for Retail, and the images can be retrieved from the URLs that are derived from the media template that you defined earlier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det forventes, at du har konfigureret de fysiske billeder uden for Dynamics 365 for Retail, og billederne kan hentes fra de URL-adresser, der er afledt fra den medieskabelon, du definerede tidligere.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>You can overwrite these derived URLs by using the Edit in Excel functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan overskrive disse afledte URL-adresser ved hjælp af funktionen Rediger i Excel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Click <bpt id="p1">**</bpt>Edit in Excel<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Rediger i Excel<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>After the Microsoft Excel worksheet is opened, click <bpt id="p1">**</bpt>Enable edit<ept id="p1">**</ept> when you're prompted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når Microsoft Excel-regnearket er åbnet, skal du klikke på <bpt id="p1">**</bpt>Aktivér redigering<ept id="p1">**</ept>, når du bliver bedt om det.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>When you're prompted, click <bpt id="p1">**</bpt>Trust this add-in<ept id="p1">**</ept> in the right pane, and wait for the add-in to complete the installation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du bliver bedt om det, skal du klikke på <bpt id="p1">**</bpt>Har tillid til dette tilføjelsesprogram<ept id="p1">**</ept> i højre rude og vente på, at installationen af tilføjelsesprogrammet er fuldført.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Trust this add-in<ept id="p1">](./media/excel4.jpg)](./media/excel4.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Har tillid til dette tilføjelsesprogram<ept id="p1">](./media/excel4.jpg)](./media/excel4.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>If you're prompted to sign in, enter the credentials that you used to sign in to HQ.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du bliver bedt om at logge på, kan du angive de legitimationsoplysninger, du brugte til at logge på HQ.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Sign-in prompt<ept id="p1">](./media/excel5.png)](./media/excel5.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Logonprompt<ept id="p1">](./media/excel5.png)](./media/excel5.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>After you sign in, you should be able to see the list of image URLs for the various catalog entries.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du er logget på, bør du kunne se en liste over billed-URL-adresser til de forskellige katalogposter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>You edit, add, and remove the image URLs for various entity items.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du redigerer, tilføjer og fjerner billed-URL-adresserne for forskellige elementer på enhed.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>For all entities except Products, you can overwrite the image URLs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan overskrive billed-URL-adresser for alle enheder undtagen produkter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Modify the existing image URL, so that it uses the new destination URL of the image, and update the file name with the new file name for the image file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rediger den eksisterende billed-URL-adresse, så den bruger den nye URL-adresse til billedet, og opdater filnavnet med det nye filnavn for billedfilen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>The file name must be unique to help guarantee that the record is unique.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filnavnet skal være entydigt for at sikre, at posten er entydig.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Overwrite the image URLs in Excel<ept id="p1">](./media/excel6.jpg)](./media/excel6.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Overskrive billede-URL-adresser i Excel<ept id="p1">](./media/excel6.jpg)](./media/excel6.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>When you overwrite image URLs for Products entities by using the Edit in Excel functionality or the entity item page, MPOS always shows all the media template image URLs together with the overwritten image URLs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du overskriver billed-URL-adresser for Produkter-enheder ved hjælp af funktionen Rediger i Excel-funktioner eller enhedselementsiden, viser MPOS altid alle medieskabelonernes billed-URL-adresser med de overskrevne billed-URL-adresser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>After you've finished making your changes, click <bpt id="p1">**</bpt>Publish in Excel<ept id="p1">**</ept> to create a new explicit association entry.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du har foretaget dine ændringer, skal du klikke på <bpt id="p1">**</bpt>Udgiv i Excel<ept id="p1">**</ept> for at oprette en ny eksplicit tilknytningspost.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Return to HQ, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå tilbage til HQ, og klik på <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Run the appropriate synchronization jobs for the entity, and check the preview on the entity page or in MPOS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kør de relevante synkroniseringsjobbet for enheden, og se eksemplet på enhedssiden eller i MPOS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Creating new records</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette nye poster</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>You can create new records in Excel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opretter nye poster i Excel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>However, make sure that you provide the correct information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sørg imidlertid for, at du angiver de rigtige oplysninger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>For example, to create a new entry for a catalog, make sure that the catalog ID and catalog name are correct, and also provide a unique file name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du for eksempel vil oprette en ny post til et katalog, skal du sørge for, at katalog-id'et og katalognavnet er korrekt og også angive et entydigt filnavn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>The unique file name is very important, because the uniqueness of records in Excel is validated during publishing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det entydige filnavn er meget vigtigt, fordi entydigheden af poster i Excel valideres ved udgivelsen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>First copy the details from the catalog that you want to create a new record for, and copy the record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopier først oplysningerne fra det katalog, du vil oprette en ny post for, og kopier posten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>You just have to update the file name and URL, because the rest of the information will be same.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal blot opdatere filnavnet og URL-adressen, da resten af oplysningerne forbliver de samme.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>To create new records for Product entity items, you use the same basic procedure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil oprette nye poster for Produkt-enhedselementer, skal du bruge den samme grundlæggende fremgangsmåde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>From the Excel worksheet, copy an existing record for the product that you to create a new record for, and then replace the image URL and filename.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopiér en eksisterende post for produktet, du vil oprette en ny post for, fra Excel-regnet , og udskrift derefter billed-URL-adressen og -filnavnet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Make sure that the file name is unique.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sørg for, at filnavnet er entydigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Deleting an existing record</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Slette en eksisterende post</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Only the overwritten image URL records can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det er kun overskrevne billed-URL-poster, der kan slettes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>After an image is deleted and synchronization is completed, the image will no longer appear on the <bpt id="p1">**</bpt>Preview<ept id="p1">**</ept> page or in MPOS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når et billede er slettet, og synkroniseringen er fuldført, vises billedet ikke længere på siden <bpt id="p1">**</bpt>Eksempel<ept id="p1">**</ept> eller i MPOS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Image URL records that are derived from the media template can't be deleted, because these records are always derived from the media template every time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Billed-URL-poster, der er afledt fra medieskabelonen, kan ikke slettes, fordi disse poster altid hver gang er afledt fra medieskabelonen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Overwrite from the entity-level Preview page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overskrive fra eksempelsiden på enhedsniveau</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>For all entities except Products, you can overwrite the image URL for a given entity item at the entity item level from the <bpt id="p1">**</bpt>Preview<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For alle enheder med undtagelse af produkter gælder det, at du kan overskrive billed-URL-adressen for et givet enhedselement på enhedselementniveauet på siden <bpt id="p1">**</bpt>Eksempel<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>For Products, you can use the "Catalog Products" entity page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug enhedssiden "Katalogprodukter" til Produkter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>This example shows how to overwrite a catalog image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette eksempel viser, hvordan du overskriver et katalogbillede.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Click <bpt id="p1">**</bpt>Catalogs<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Media<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Images<ept id="p3">**</ept>, and select the catalog image to update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Kataloger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Medie<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Billeder<ept id="p3">**</ept>, og vælg det katalogbillede, der skal opdateres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and enter the image URL to overwrite the media template URL.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Tilføj<ept id="p1">**</ept>, og angiv billedets URL-adresse for at overskrive URL-adressen til medieskabelonen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>If you want this image to be shown in MPOS for the catalog, you can set it as the default image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis dette billede skal vises i MPOS for kataloget, kan du angive det som standardbilledet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>The image URL is updated for this catalog image, and a preview is shown.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Billedets URL-adresse er opdateret for dette katalogbillede, og der vises et eksempel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>URL updated in the New image dialog box<ept id="p1">](./media/preview3.png)](./media/preview3.png)</ept></source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">[</bpt><ph id="ph1">![</ph>URL-adresse opdateret i dialogboksen Nyt billede<ept id="p1">](./media/preview3.png)](./media/preview3.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>You can also see the image preview for all overwritten image URLs on the <bpt id="p1">**</bpt>Catalog images<ept id="p1">**</ept> gallery page.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du kan også se billedeksemplet for alle overskrevne billed-URL-adresser på gallerisiden <bpt id="p1">**</bpt>Katalogbilleder<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Catalog images gallery page<ept id="p1">](./media/preview-4.png)](./media/preview-4.png)</ept></source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Galleriside med katalogbilleder<ept id="p1">](./media/preview-4.png)](./media/preview-4.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Currently, the gallery doesn't show image previews for media template image URLs.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Galleriet viser i øjeblikket ikke billedeksempler for billed-URL-adresser til medieskabeloner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>For Catalog, Worker, Customer, and Category entities, if the user explicitly provides a URL through this page, we recommend that you indicate which image is the default image, because Retail Server clients show only one image per Catalog, Customer, Worker, and Category.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For enhederne Katalog, Arbejder, Debitor og Kategori og gælder det, at hvis brugeren eksplicit angiver en URL-adresse via denne side, anbefaler vi, at du angiver, hvilket billede der er standardbilledet, da Retail Server-klienter kun ét billede pr. katalog, debitor, arbejder og kategori.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>If the user doesn't specify a default image, the system determines the default image and send it to the Retail service caller (MPOS or Ecommerce).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis brugeren ikke angiver et standardbillede, bestemmer systemet standardbilledet og sender den til detailtjenestekaldefunktionen (MPOS eller Ecommerce).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Overwrite the image URL for catalog product images from the Preview page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overskrive billedets URL-adresse for katalogbilleder fra eksempelsiden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>To overwrite image URLs for catalog product images, you must use the <bpt id="p1">**</bpt>Preview<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil overskrive URL-adresse for katalogproduktbilleder, skal du bruge siden <bpt id="p1">**</bpt>Eksempel<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>You can't use the Edit in Excel functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan ikke bruge funktionen Rediger i Excel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>To overwrite product images at a catalog level, select a catalog, and then select the product to overwrite the image for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil overskrive produktbilleder på et katalogniveau, skal du vælge et katalog og derefter vælge det produkt, billedet skal overskrives for.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Click <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Attributter<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>On the next page, select <bpt id="p1">**</bpt>Image<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg <bpt id="p1">**</bpt>billede<ept id="p1">**</ept> på den næste side, og klik derefter på <bpt id="p2">**</bpt>Rediger<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>The <bpt id="p1">**</bpt>Preview<ept id="p1">**</ept> page opens as a slider dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siden <bpt id="p1">**</bpt>Eksempel<ept id="p1">**</ept> åbnes som en skyderdialogboks.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and overwrite the image URL with a new URL.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Tilføj<ept id="p1">**</ept>, og Overskriv billedets URL-adresse med en ny URL-adresse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>You now see the preview of the new image and can set it as the default image.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du kan nu se eksemplet på det nye billede og kan angive det som standardbilledet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Image preview in the New image dialog box<ept id="p1">](./media/cat3.png)](./media/cat3.png)</ept></source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Billedeksempel i dialogboksen Nyt billede<ept id="p1">](./media/cat3.png)](./media/cat3.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>After category image association, you must publish the channel and run the Channel job to help guarantee that the changes are published to the channel database.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Når kategoribilledet er blevet tilknyttet, skal du udgive kanalen og køre kanaljobbet for at sikre, at ændringerne udgives i kanaldatabasen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Setting up images to appear in Offline mode for MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere billeder, der skal vises i offlinetilstand for MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>MPOS can run in Online mode (when MPOS connected to Retail Server) or Offline mode (when there is no Retail Server or network connectivity, and transactions are stored in a local offline database).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS kan køre i onlinetilstand (når MPOS har oprettet forbindelse til Retail Server) eller i offlinetilstand (når der er ingen Retail Server eller netværksforbindelse, og transaktioner er gemt i en lokal offlinedatabase).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>When MPOS runs in Offline mode, it can't get images from the external image server to display from Retail Server, because Retail Server connectivity has been lost.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når MPOS kører i offlinetilstand, kan den ikke hente billeder fra den eksterne billedserveren for at vise Retail-Server, fordi Retail Server-forbindelsen blev afbrudt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>However, you can still set up images so that they are shown when MPOS runs in Offline mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan imidlertid stadig oprette billeder, så de vises, når MPOS køres i offlinetilstand.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Set up product images to appear in Offline mode for MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere produktbilleder, der skal vises i offlinetilstand for MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>The product images that must be used in Offline mode can be set up by uploading the required physical image into the base product image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De produktbilleder, der skal bruges i offlinetilstand, kan konfigureres ved at overføre det nødvendige fysiske billede til det grundlæggende produktbillede.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Click <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Products<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Products<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Administration af produktoplysninger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Produkter<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Produkter<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Select the product to set the offline image for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg det produkt, offlinebilledet skal indstilles for.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and then click the arrow in the right corner to show the right pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på <bpt id="p1">**</bpt>Rediger<ept id="p1">**</ept>, og klik derefter på pilen i højre hjørne for at få vist den højre rude.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>On the <bpt id="p1">**</bpt>Product image<ept id="p1">**</ept> FastTab, click <bpt id="p2">**</bpt>Change image<ept id="p2">**</ept>, and upload the physical image to use for the selected product in Offline mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I oversigtspanelet <bpt id="p1">**</bpt>Produktbillede<ept id="p1">**</ept> skal du klikke på <bpt id="p2">**</bpt>Skift billede<ept id="p2">**</ept> og overføre det fysiske billede, der skal bruges til det valgte produkt i offlinetilstand.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Save and close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gem og luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mens MPOS er i onlinetilstand, skal katalogjobbet køres i HQ for at sikre, at dataene sendes mindst én gang til offlinedatabasen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Put MPOS into Offline mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sæt MPOS i offlinetilstand.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>You should see the image that you uploaded for the specific product in HQ.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du skulle nu kunne se det billede, du overførte for det specifikke produkt i HQ.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Product image in Offline mode<ept id="p1">](./media/offline1.png)](./media/offline1.png)</ept></source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Produktbillede i offlinetilstand<ept id="p1">](./media/offline1.png)](./media/offline1.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Konfigurere katalog-, kategori-, medarbejder- og debitorbilleder, der skal vises i offlinetilstand for MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>The catalog, category, employee, and customer images that must be used in Offline mode can be set up by adding the required image's destination link to the gallery and setting the image as the default image for the selected entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Katalog-, kategori-, arbejder og debitorbilleder, der skal bruges i offlinetilstand, kan konfigureres ved at tilføje det krævede billedes destinationslink til galleriet og indstille billedet som standardbilledet for den valgte enhed.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Go to the catalog, and then, on the Action Pane, click <bpt id="p1">**</bpt>Media<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Images<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til kataloget, og klik derefter på <bpt id="p1">**</bpt>Medie<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Billeder<ept id="p2">**</ept> i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Follow the steps in the <bpt id="p1">[</bpt>Overwrite from the entity-level Preview page<ept id="p1">](#overwrite-from-the-entity-level-preview-page)</ept> section to add the external image URL.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følg trinnene i afsnittet <bpt id="p1">[</bpt>Overskriv fra eksempelsiden på enhedsniveau<ept id="p1">](#overwrite-from-the-entity-level-preview-page)</ept> for at tilføje URL-adressen til det eksterne billede.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Mark this image as the default image for the catalog by selecting the check box against the Image listed in the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marker billedet som standardbilledet for kataloget ved at markere afkrydsningsfeltet i forhold til det billede, der vises i gitteret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Run the Catalog job.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kør katalogjobbet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>This image will now be used as the Offline image for that catalog in MPOS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette billede bruges nu som et offlinebillede for det katalog i MPOS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Follow a similar process for other entities, such as Category, Employee, and Customer.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Følg en lignende proces for andre enheder som f.eks. kategori, medarbejder og debitor.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Offline image<ept id="p1">](./media/offline2.png)](./media/offline2.png)</ept></source><target logoport:matchpercent="70" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Offlinebillede<ept id="p1">](./media/offline2.png)](./media/offline2.png)</ept></target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Konfigurere og administrere billeder til Retail Modern POS (MPOS)
+description: I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS).
+author: athinesh99
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: 52851
+ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: athinesh
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: c256569135a00ea98a5c059b9dd12a07a000ee6a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606935"
+---
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a><span data-ttu-id="b289b-103">Konfigurere og administrere billeder til Retail Modern POS (MPOS)</span><span class="sxs-lookup"><span data-stu-id="b289b-103">Set up and manage images for Retail Modern POS (MPOS)</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="b289b-104">I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS).</span><span class="sxs-lookup"><span data-stu-id="b289b-104">This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).</span></span>
+
+## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a><span data-ttu-id="b289b-105">Konfigurere URL-adresse til mediebase og definere medieskabeloner for at konfigurere formatet for billed-URL-adresser</span><span class="sxs-lookup"><span data-stu-id="b289b-105">Setting up the media base URL and defining media templates to configure the format for image URLs</span></span>
+
+<span data-ttu-id="b289b-106">De billeder, der vises i Retail Modern POS (MPOS) skal være placeret eksternt, uden for Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="b289b-106">The images that appear in Retail Modern POS (MPOS) must be hosted externally, outside Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="b289b-107">De er typisk placeret i et CRM (content management system), CDN (content delivery network) eller på en medieserver.</span><span class="sxs-lookup"><span data-stu-id="b289b-107">Typically, they are hosted in a content management system, content delivery network (CDN), or media server.</span></span> <span data-ttu-id="b289b-108">MPOS henter og viser derefter billeder til de relevante enheder som f.eks. produkter og kataloger ved at få adgang til destinations-URL-adressen.</span><span class="sxs-lookup"><span data-stu-id="b289b-108">MPOS then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL.</span></span> <span data-ttu-id="b289b-109">Hvis du vil hente disse billeder, der er placeret et eksternt sted, kræver MPOS, at billederne har det rigtige URL-adresseformat.</span><span class="sxs-lookup"><span data-stu-id="b289b-109">To fetch these externally hosted images, MPOS requires the correct URL format for the images.</span></span> <span data-ttu-id="b289b-110">Du kan konfigurere det påkrævede URL-formatet for billederne ved at oprette en værdi for **URL-adresse til mediebase** i kanalprofilen og bruge funktionen **Definer medieskabelon** for hver enhed.</span><span class="sxs-lookup"><span data-stu-id="b289b-110">You can configure the required URL format for the images by setting up the **Media base URL** value in the channel profile and using the **Define media template** functionality for each entity.</span></span> <span data-ttu-id="b289b-111">Du kan også overskrive standard-URL-formatet for en delmængde af enheder ved hjælp af funktionen **Rediger i Excel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-111">You can also overwrite the standard URL format for a subset of entities by using the **Edit in Excel** functionality.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="b289b-112">I den aktuelle version af Dynamics 365 for Retail kan du ikke længere oprette URL-formatet ved hjælp af **Billede**-attribut-XML til MPOS i attributgruppen **Standard** for enheder.</span><span class="sxs-lookup"><span data-stu-id="b289b-112">In the current version of Dynamics 365 for Retail, you can no longer set up the URL format by using the **Image** attribute XML for MPOS in the **Default** attribute group for entities.</span></span> <span data-ttu-id="b289b-113">Hvis du er fortrolig med Microsoft Dynamics AX 2012 R3 og nu bruger den aktuelle version af Dynamics 365 for Retail, skal du kontrollere, at du altid bruge den nye funktion **Definer medieskabelon** til at konfigurere billeder.</span><span class="sxs-lookup"><span data-stu-id="b289b-113">If you're familiar with Microsoft Dynamics AX 2012 R3 and are now using the current version of Dynamics 365 for Retail, make sure that you always use the new **Define media template** functionality to set up images.</span></span> <span data-ttu-id="b289b-114">Undlad at bruge eller ændre attributten **Billed** i attributgruppen **Standard** for enheder, herunder produkter.</span><span class="sxs-lookup"><span data-stu-id="b289b-114">Don't use or modify the **Image** attribute in the **Default** attribute group for any entities, including products.</span></span> <span data-ttu-id="b289b-115">Ændringer, du foretager direkte i attributgruppen **Standard** for billeder, afspejles ikke.</span><span class="sxs-lookup"><span data-stu-id="b289b-115">Changes that you make directly in the **Default** attribute group for images won't be reflected.</span></span> <span data-ttu-id="b289b-116">Denne indstilling deaktiveres i en fremtidig version.</span><span class="sxs-lookup"><span data-stu-id="b289b-116">This option will be disabled in a future release.</span></span>
+
+<span data-ttu-id="b289b-117">I følgende procedurer er billeder angivet for enheden Katalog som et eksempel.</span><span class="sxs-lookup"><span data-stu-id="b289b-117">In the following procedures, images are set up for the Catalog entity as an example.</span></span> <span data-ttu-id="b289b-118">Disse procedurer garanterer, at den korrekte billeddestinationssti er angivet implicit for alle katalogbilleder, der bruger en fælles sti.</span><span class="sxs-lookup"><span data-stu-id="b289b-118">These procedures will help guarantee that the correct image destination path is set implicitly for all catalog images that use a common path.</span></span> <span data-ttu-id="b289b-119">Hvis du f.eks. har konfigureret en medieserver eller CDN eksternt, og billederne skal vises i MPOS for et givet lager, hjælper funktionen **Definer medieskabelon** dig med at indstille den sti, hvor MPOS kan søge efter og hente billederne.</span><span class="sxs-lookup"><span data-stu-id="b289b-119">For example, if you've set up a media server or CDN externally, and want the images to appear in MPOS for a given store, the **Define media template** functionality helps you the set the path where MPOS can look up and retrieve the images.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b289b-120">I dette eksempel med demodata er medieserveren installeret på Retail Server.</span><span class="sxs-lookup"><span data-stu-id="b289b-120">For this demo data example, the media server is deployed on the Retail Server.</span></span> <span data-ttu-id="b289b-121">Du kan imidlertid have dem hvor som helst uden for Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="b289b-121">However, you can have it anywhere outside Dynamics 365 for Retail.</span></span>
+
+### <a name="set-up-the-media-base-url-for-a-channel"></a><span data-ttu-id="b289b-122">Konfigurere URL-adresse til mediebase til en kanal</span><span class="sxs-lookup"><span data-stu-id="b289b-122">Set up the media base URL for a channel</span></span>
+
+1. <span data-ttu-id="b289b-123">Åbn Dynamics 365 for Retail HQ-portalen.</span><span class="sxs-lookup"><span data-stu-id="b289b-123">Open the Dynamics 365 for Retail HQ portal.</span></span>
+2. <span data-ttu-id="b289b-124">Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **Kanalprofiler**.</span><span class="sxs-lookup"><span data-stu-id="b289b-124">Click **Retail** &gt; **Channel setup** &gt; **Channel profiles**.</span></span>
+
+    <span data-ttu-id="b289b-125">[![Navigation](./media/channel-profile1.png)](./media/channel-profile1.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-125">[![Navigation](./media/channel-profile1.png)](./media/channel-profile1.png)</span></span>
+
+3. <span data-ttu-id="b289b-126">I den kanalprofil, din butik bruger til MPOS, skal du opdatere feltet **URL-adresse til mediebase** med basis-URL-adressen til din medieserver eller CDN.</span><span class="sxs-lookup"><span data-stu-id="b289b-126">In the channel profile that your store uses for MPOS, update the **Media base URL** field with the base URL of your media server or CDN.</span></span> <span data-ttu-id="b289b-127">Basis-URL-adressen er den første del af URL-adressen, der er fælles for billedmapper for forskellige enheder.</span><span class="sxs-lookup"><span data-stu-id="b289b-127">The base URL is the first part of the URL that is shared by all image folders of different entities.</span></span>
+
+    <span data-ttu-id="b289b-128">[![Kanalprofilside](./media/channel-profile2.png)](./media/channel-profile2.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-128">[![Channel profiles page](./media/channel-profile2.png)](./media/channel-profile2.png)</span></span>
+
+### <a name="define-the-media-template-for-an-entity"></a><span data-ttu-id="b289b-129">Definere medieskabelonen for en enhed</span><span class="sxs-lookup"><span data-stu-id="b289b-129">Define the media template for an entity</span></span>
+
+1. <span data-ttu-id="b289b-130">Klik på **Detail** &gt; **Administration af kataloger** &gt; **Katalogbilleder**.</span><span class="sxs-lookup"><span data-stu-id="b289b-130">Click **Retail** &gt; **Catalog management** &gt; **Catalog images**.</span></span>
+2. <span data-ttu-id="b289b-131">Klik på **Definer medieskabelon** på siden **Katalogbilleder** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b289b-131">On the **Catalog images** page, on the Action Pane, click **Define media template**.</span></span> <span data-ttu-id="b289b-132">I dialogboksen **Definer medieskabelon** skal du i feltet **Enhed** vælge **Katalog** som standard.</span><span class="sxs-lookup"><span data-stu-id="b289b-132">In the **Define media template** dialog box, in the **Entity** field, **Catalog** should be selected by default.</span></span>
+3. <span data-ttu-id="b289b-133">Angiv den resterende sti for billedplaceringen i oversigtspanelet **Mediesti**.</span><span class="sxs-lookup"><span data-stu-id="b289b-133">On the **Media path** FastTab, enter the remaining path of the image location.</span></span> <span data-ttu-id="b289b-134">Mediestien understøtter **LanguageID** som en variabel.</span><span class="sxs-lookup"><span data-stu-id="b289b-134">The media path supports **LanguageID** as a variable.</span></span> <span data-ttu-id="b289b-135">For demodataene kan du for eksempel oprette en mappe **Kataloger** til alle katalogbilleder under URL-adressen til mediebasen til din medieserver (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`).</span><span class="sxs-lookup"><span data-stu-id="b289b-135">For example, for the demo data, you can create a **Catalogs** folder for all catalog images under the media base URL for your media server (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`).</span></span> <span data-ttu-id="b289b-136">Du kan have en mappe til hvert sprog, f.eks. da-DK eller fr-FR, og kopiere de relevante billeder i hver mappe.</span><span class="sxs-lookup"><span data-stu-id="b289b-136">You can then have a folder for each language, such as en-US or fr-FR, and copy the appropriate images under each folder.</span></span> <span data-ttu-id="b289b-137">Hvis du ikke har forskellige billeder til de forskellige sprog, kan du udelade variablen **LanguageID** fra din mappestruktur og pege direkte på mappen Kataloger, der indeholder katalogbillederne.</span><span class="sxs-lookup"><span data-stu-id="b289b-137">If you don't have different images for the various languages, you can omit the **LanguageID** variable from your folder structure and point directly to the Catalogs folder that contains the catalog images.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b289b-138">Den aktuelle version af Dynamics 365 for Retail understøtter **{LanguageId}**-tokenet for enhederne Katalog, Produkt og Kategori.</span><span class="sxs-lookup"><span data-stu-id="b289b-138">The current version of Dynamics 365 for Retail supports the **{LanguageId}** token for Catalog, Product, and Category entities.</span></span> <span data-ttu-id="b289b-139">(**{LanguageID}**-tokenet understøttes ikke for enhederne Debitor og Arbejder i henhold til den eksisterende standard, der har været gældende siden Microsoft Dynamics AX 6.x.)</span><span class="sxs-lookup"><span data-stu-id="b289b-139">(The **{LanguageID}** token isn't supported for Customer and Worker entities, according to the existing standard that has been effective since Microsoft Dynamics AX 6.x.)</span></span>
+
+4. <span data-ttu-id="b289b-140">For billeder gælder det, at filnavnformatet er hard-coded til katalognavnet og ikke kan ændres.</span><span class="sxs-lookup"><span data-stu-id="b289b-140">For images, the file name format is hard-coded to the catalog name and can't be changed.</span></span> <span data-ttu-id="b289b-141">Omdøb derfor dine billeder, så de har det relevante katalognavn, så du kan sikre, at MPOS håndterer dem korrekt.</span><span class="sxs-lookup"><span data-stu-id="b289b-141">Therefore, rename your images so that they have appropriate catalog names, to help guarantee that MPOS handles them correctly.</span></span>
+5. <span data-ttu-id="b289b-142">I feltet **Filtypenavn** skal du vælge det forventede filtypenavn, afhængigt af hvilken type billeder du har.</span><span class="sxs-lookup"><span data-stu-id="b289b-142">In the **File Extension** field, select the expected file name extension, depending on the type of images that you have.</span></span> <span data-ttu-id="b289b-143">For demodataene er katalogbillederne for eksempel indstillet til .jpg-filtypenavnet.</span><span class="sxs-lookup"><span data-stu-id="b289b-143">For example, for the demo data, the catalog images are set to the .jpg extension.</span></span> <span data-ttu-id="b289b-144">(Billedfilerne omdøbes også, så de får katalognavne).</span><span class="sxs-lookup"><span data-stu-id="b289b-144">(The image files are also renamed so that they have catalog names.)</span></span>
+6. <span data-ttu-id="b289b-145">Klik på **OK**.</span><span class="sxs-lookup"><span data-stu-id="b289b-145">Click **OK**.</span></span>
+7. <span data-ttu-id="b289b-146">For at kontrollere, at medieskabelon til billeder er blevet gemt korrekt, skal du klikke på **Definer medieskabelon** på siden **Katalogbilleder**.</span><span class="sxs-lookup"><span data-stu-id="b289b-146">To validate that the media template for images has been saved correctly, on the **Catalog images** page, click **Define media template** again.</span></span> <span data-ttu-id="b289b-147">For at validere skabelonen uden at lukke dialogboksen **Definer medieskabelon** skal du bruge oversigtspanelet **Generér billed-URL-adresser til Excel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-147">To validate the template without closing the **Define media template** dialog box, you can use the **Generate Image URLs for Excel** FastTab.</span></span> <span data-ttu-id="b289b-148">Kontrollere udseendet af billed-URL-adressen, og kontrollér, at URL-adressen er i overensstemmelse med standardskabelonen, der blev nævnt tidligere.</span><span class="sxs-lookup"><span data-stu-id="b289b-148">Check the appearance of the image URL, and verify that the URL complies with the template standard that was mentioned earlier.</span></span> <span data-ttu-id="b289b-149">Dialogboksen **Definer medieskabelon** har implicit angivet billedstien for alle katalogbilleder, der bruger denne fælles URL-adressesti.</span><span class="sxs-lookup"><span data-stu-id="b289b-149">The **Define media template** dialog box has now set the image path implicitly for all catalog images that use this common URL path.</span></span> <span data-ttu-id="b289b-150">Denne URL-sti gælder for alle katalogbilleder, medmindre de overskrives.</span><span class="sxs-lookup"><span data-stu-id="b289b-150">This URL path applies to all catalog images unless they are overwritten.</span></span> <span data-ttu-id="b289b-151">Den første del af billedstien er taget fra den URL-adresse til mediebase, du har angivet i kanalprofilen.</span><span class="sxs-lookup"><span data-stu-id="b289b-151">The first part of the image path is taken from the media base URL that you defined in the channel profile.</span></span> <span data-ttu-id="b289b-152">Den resterende del af stien er taget fra den sti, du har defineret i medieskabelonen.</span><span class="sxs-lookup"><span data-stu-id="b289b-152">The remaining part of the path is taken from the path that you defined in the media template.</span></span> <span data-ttu-id="b289b-153">De to dele er sammenføjet for at give den fulde URL-adressen til billedets placering.</span><span class="sxs-lookup"><span data-stu-id="b289b-153">The two parts are concatenated to provide the full URL of the image location.</span></span> <span data-ttu-id="b289b-154">Et katalog i demodataene hedder f.eks. Fabrikam Base Catalog.</span><span class="sxs-lookup"><span data-stu-id="b289b-154">For example, a catalog in the demo data is named Fabrikam Base Catalog.</span></span> <span data-ttu-id="b289b-155">Procesnavnet skal derfor være Fabrikam Base Catalog.jpg, så den bruger det katalognavn og .jpg-filtypenavn, der er konfigureret i skabelonen.</span><span class="sxs-lookup"><span data-stu-id="b289b-155">Therefore, the image name must be Fabrikam Base Catalog.jpg so that it uses the catalog name and the .jpg file name extension that is configured in the template.</span></span> <span data-ttu-id="b289b-156">I dette tilfælde vil URL-adressen efter sammenkædning `https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg`.</span><span class="sxs-lookup"><span data-stu-id="b289b-156">In this case, after concatenation, the URL will be `https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg`.</span></span>
+8. <span data-ttu-id="b289b-157">Kør synkroniseringsjobbene for at skubbe den nye skabelon til kanaldatabasen, så MPOS kan bruge skabelonen til at få adgang til billederne.</span><span class="sxs-lookup"><span data-stu-id="b289b-157">Run the synchronization jobs to push the new template to the channel database, so that MPOS can use the template to access the images.</span></span>
+9. <span data-ttu-id="b289b-158">Hvis du vil opdatere medieskabelonen for katalogbilleder på kanalsiden, skal du sørge for at køre **Katalogjob 1150** fra **Detail IT** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="b289b-158">To update the media template for catalog images on the channel side, be sure to run **Catalog Job 1150** from **Retail IT** &gt; **Distribution schedule**.</span></span>
+
+    <span data-ttu-id="b289b-159">[![Dialogboksen Definer medieskabelon](./media/catalog1.png)](./media/catalog1.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-159">[![Define media template dialog box](./media/catalog1.png)](./media/catalog1.png)</span></span>
+
+## <a name="previewing-an-image-from-the-entity-level"></a><span data-ttu-id="b289b-160">Vise eksempel af et billede fra enhedsniveau</span><span class="sxs-lookup"><span data-stu-id="b289b-160">Previewing an image from the entity level</span></span>
+
+1. <span data-ttu-id="b289b-161">Du kan få vist det billede, der bruger billedets URL-adresse, der er afledt fra medieskabelonen, fra siden for enhedselementet i HQ.</span><span class="sxs-lookup"><span data-stu-id="b289b-161">From the page for the entity item in HQ, you can preview the image that uses the image URL that is derived from the media template.</span></span> <span data-ttu-id="b289b-162">I dette eksempel skal du gå til det relevante katalog og derefter klikke på **Medie** &gt; **Billeder** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b289b-162">For this example, go to the appropriate catalog, and then, on the Action Pane, click **Media** &gt; **Images**.</span></span> <span data-ttu-id="b289b-163">Brug rullelisten til at vælge forskellige butikker, der kan have forskellige kanalprofiler.</span><span class="sxs-lookup"><span data-stu-id="b289b-163">Use the drop-down list to select different stores that might have different channel profiles.</span></span>
+2. <span data-ttu-id="b289b-164">Hvis du vil redigere eller fjerne den implicitte medieskabelon, skal du vende tilbage til dialogboksen **Definer medieskabelon** på siden **Katalogbilleder**.</span><span class="sxs-lookup"><span data-stu-id="b289b-164">To edit or remove the implicit media template, you must return to the **Define media template** dialog box for the **Catalog images** page.</span></span>
+3. <span data-ttu-id="b289b-165">Du kan bruge knapperne **Tilføj** og **Fjern** til manuelt at ændre den sti, der er baseret på den implicitte skabelon og anvendt til et bestemt billede.</span><span class="sxs-lookup"><span data-stu-id="b289b-165">You can use the **Add** and **Remove** buttons to manually change the path that is based on the implicit template and used for a specific image.</span></span> <span data-ttu-id="b289b-166">Du kan finde flere oplysninger i afsnittet [Overskrivning af medier skabelonen for enhed varer](#overwriting-the-media-template-for-entity-items) senere i denne artikel.</span><span class="sxs-lookup"><span data-stu-id="b289b-166">For more information, see the [Overwriting the media template for entity items](#overwriting-the-media-template-for-entity-items) section later in this article.</span></span>
+4. <span data-ttu-id="b289b-167">Når du er færdig med at vise et billede og foretage ændringer, du kræver, skal du starte MPOS-forekomsten for den relevante butik og se, om katalogbillederne vises.</span><span class="sxs-lookup"><span data-stu-id="b289b-167">After you've finished previewing an image and making any changes that you require, start the MPOS instance for the appropriate store, and see whether the catalog images are shown.</span></span>
+
+    <span data-ttu-id="b289b-168">[![Dialogboksen Billeder](./media/catalog4.png)](./media/catalog4.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-168">[![Images dialog box](./media/catalog4.png)](./media/catalog4.png)</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b289b-169">Du kan bruge samme procedure for de fem enheder, der understøttes: arbejder, kunde, katalog, kategori og produkter.</span><span class="sxs-lookup"><span data-stu-id="b289b-169">You can use the same procedure for all the five entities that are supported: Worker, Customer, Catalog, Category, and Products.</span></span> <span data-ttu-id="b289b-170">"Katalogprodukter" (produkter, der er angivet på katalogniveauet) og "Kanalprodukter" (produkter, der er angivet på kanalniveauet) bruger den medieskabelon, der er angivet for produktenheden.</span><span class="sxs-lookup"><span data-stu-id="b289b-170">"Catalog Products" (products that are set at the catalog level) and "Channel Products" (products that are set at the channel level) use the media template that is set for the Products entity.</span></span> <span data-ttu-id="b289b-171">Du kan vælge antallet af produktbilleder, der skal vises pr. produkt, for medieskabelonen Produkter.</span><span class="sxs-lookup"><span data-stu-id="b289b-171">For the Products media template, you can select the number of product images to show per product.</span></span> <span data-ttu-id="b289b-172">Du kan også angive standardbilledet for et bestemt produkt.</span><span class="sxs-lookup"><span data-stu-id="b289b-172">You can also set the default image for a given product.</span></span> <span data-ttu-id="b289b-173">På denne måde kan du forhindre tomme billeder i MPOS og styre, hvilket billede der bruges som standardbilledet for en produktvare.</span><span class="sxs-lookup"><span data-stu-id="b289b-173">In this way, you can prevent blank images in MPOS and help to control which image is used as the default image for a product item.</span></span> <span data-ttu-id="b289b-174">Hvert produkt har fem billeder i eksemplet nedenfor, og det første billede er angivet som standardbilledet.</span><span class="sxs-lookup"><span data-stu-id="b289b-174">In the following example, each product has five images, and the first image is set as the default image.</span></span> <span data-ttu-id="b289b-175">Variantprodukter behandles på samme måde som masterprodukter.</span><span class="sxs-lookup"><span data-stu-id="b289b-175">Variant products are treated the same way as master products.</span></span> <span data-ttu-id="b289b-176">Filnavnet på billedfilen skal være baseret på produktnummeret.</span><span class="sxs-lookup"><span data-stu-id="b289b-176">The file name of the image file should be based on the product number.</span></span> <span data-ttu-id="b289b-177">Nogle tegn er også escaped, mens filnavnet genereres.</span><span class="sxs-lookup"><span data-stu-id="b289b-177">Some characters are also escaped while the file name is generated.</span></span> <span data-ttu-id="b289b-178">Det er derfor en god ide at kontrollere filnavnet ved at bruge afsnittet **Generér billed-URL-adresser til Excel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-178">Therefore, it's a good to verify the file name by using the **Generate Image URLs for Excel** section.</span></span>
+>
+> <span data-ttu-id="b289b-179">[![Dialogboksen Definer medieskabelon](./media/prods.png)](./media/prods.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-179">[![Define media template dialog box](./media/prods.png)](./media/prods.png)</span></span>
+
+## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a><span data-ttu-id="b289b-180">Synkroniseringsjob, der skal sendes til en medieskabelon til kanalsiden</span><span class="sxs-lookup"><span data-stu-id="b289b-180">Synchronization jobs to send a media template to the channel side</span></span>
+
+<span data-ttu-id="b289b-181">For alle fem understøttede enheder (arbejder, kunder, katalog, kategori og produkter) gælder det, at hver gang du opdaterer dialogboksen **Definer medieskabelon** for at oprette et billede, skal du sørge for, at du kører katalogjobbet (1150) fra **Retail IT** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="b289b-181">For all the five supported entities (Worker, Customer, Catalog, Category, and Products), whenever you update the **Define media template** dialog to set up an image, make sure that you run the Catalog job (1150) from **Retail IT** &gt; **Distribution schedule**.</span></span> <span data-ttu-id="b289b-182">Dette job give den opdaterede medieskabelon mulighed for at blive synkroniseret med kanalen og anvendt af MPOS.</span><span class="sxs-lookup"><span data-stu-id="b289b-182">This job will enable the updated media template to be synced to the channel and used by MPOS.</span></span> <span data-ttu-id="b289b-183">Kør katalogjobbet (1150), når du foretager en af følgende ændringer:</span><span class="sxs-lookup"><span data-stu-id="b289b-183">Run the Catalog job (1150) after you make any of the following changes:</span></span>
+
+- <span data-ttu-id="b289b-184">Du opdaterer medieskabelonen til katalogbilledet **Katalogbilleder** &gt; **Definer medieskabelon**.</span><span class="sxs-lookup"><span data-stu-id="b289b-184">You update the Catalog image media template from **Catalog images** &gt; **Define media template**.</span></span>
+- <span data-ttu-id="b289b-185">Du opdaterer medieskabelonen til medarbejderbilledet **Medarbejderbilleder** &gt; **Definer medieskabelon**.</span><span class="sxs-lookup"><span data-stu-id="b289b-185">You update the Employee image media template from **Employee images** &gt; **Define media template**.</span></span>
+- <span data-ttu-id="b289b-186">Du opdaterer medieskabelonen til kundebilledet **Kundebilleder** &gt; **Definer medieskabelon**.</span><span class="sxs-lookup"><span data-stu-id="b289b-186">You update the Customer image media template from **Customer image** &gt; **Define media template**.</span></span>
+- <span data-ttu-id="b289b-187">Du opdaterer medieskabelonen til produktbilledet **Produktbilleder** &gt; **Definer medieskabelon**.</span><span class="sxs-lookup"><span data-stu-id="b289b-187">You update the Product image media template from **Product images** &gt; **Define media template**.</span></span>
+- <span data-ttu-id="b289b-188">Du opdaterer medieskabelonen til kategoribilledet **Kategoribilleder** &gt; **Definer medieskabelon**.</span><span class="sxs-lookup"><span data-stu-id="b289b-188">You update the Category image media template from **Category images** &gt; **Define media template**.</span></span> <span data-ttu-id="b289b-189">Du skal også publicere kanalen.</span><span class="sxs-lookup"><span data-stu-id="b289b-189">You must also publish the channel.</span></span>
+
+## <a name="overwriting-the-media-template-for-entity-items"></a><span data-ttu-id="b289b-190">Overskrive medieskabelonen for enhedselementer</span><span class="sxs-lookup"><span data-stu-id="b289b-190">Overwriting the media template for entity items</span></span>
+
+<span data-ttu-id="b289b-191">Som du har lært i forrige afsnit, understøtter medieskabelonen for en bestemt enhed kun én fælles sti.</span><span class="sxs-lookup"><span data-stu-id="b289b-191">As you learned in the previous section, the media template for a given entity supports only one common path.</span></span> <span data-ttu-id="b289b-192">Denne sti er baseret på den URL-adresse til mediebase, der er konfigureret, og mediestien, der er defineret.</span><span class="sxs-lookup"><span data-stu-id="b289b-192">This path is based on the media base URL that is configured and the media path that is defined.</span></span> <span data-ttu-id="b289b-193">Men i mange tilfælde ønsker en forhandler at kunne bruge billeder fra forskellige kilder for en delmængde af elementer i en enhed.</span><span class="sxs-lookup"><span data-stu-id="b289b-193">However, in many cases, a retailer wants to be able to use images from different sources for a subset of items in an entity.</span></span> <span data-ttu-id="b289b-194">En butik bruger for eksempel en selvhostet medieserver til ét sæt katalogbilleder, men bruger CDN URL-adresser til et andet sæt.</span><span class="sxs-lookup"><span data-stu-id="b289b-194">For example, a store uses the self-hosted media server for one set of catalog images but uses CDN URLs for another set.</span></span> <span data-ttu-id="b289b-195">Hvis du vil overskrive billed-URL-adresser, der er baseret på en medieskabelon til enhedsbilleder på enhedsniveau, kan du bruge Rediger i Excel og funktionen Manuel redigering på siden **Eksempel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-195">To overwrite image URLs that are based on a media template for entity images at the entity level, you can use the Edit in Excel and Manual edit functionality from the **Preview** page.</span></span>
+
+### <a name="overwrite-by-using-edit-in-excel"></a><span data-ttu-id="b289b-196">Overskrive ved hjælp af Rediger i Excel</span><span class="sxs-lookup"><span data-stu-id="b289b-196">Overwrite by using Edit in Excel</span></span>
+
+1. <span data-ttu-id="b289b-197">Klik på **Detail** &gt; **Administration af kataloger** &gt; **Katalogbilleder**.</span><span class="sxs-lookup"><span data-stu-id="b289b-197">Click **Retail** &gt; **Catalog management** &gt; **Catalog images**.</span></span>
+2. <span data-ttu-id="b289b-198">Klik på **Definer medieskabelon** på siden **Katalogbilleder**.</span><span class="sxs-lookup"><span data-stu-id="b289b-198">On the **Catalog images** page, click **Define media template**.</span></span> <span data-ttu-id="b289b-199">I dialogboksen **Definer medieskabelon** skal du i feltet **Enhed** vælge **Katalog**.</span><span class="sxs-lookup"><span data-stu-id="b289b-199">In the **Define media template** dialog box, in the **Entity** field, **Catalog** should be selected.</span></span>
+3. <span data-ttu-id="b289b-200">Bemærk billedplaceringen i oversigtspanelet **Mediesti**.</span><span class="sxs-lookup"><span data-stu-id="b289b-200">On the **Media path** FastTab, notice the image location.</span></span>
+4. <span data-ttu-id="b289b-201">Klik på **Generer** i oversigtspanelet **Generér billed-URL-adresser til Excel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-201">On the **Generate Image URLs for Excel** FastTab, click **Generate**.</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="b289b-202">Når medieskabelonen ændres, skal du klikke på **Generer**, før du kan bruge funktionen Rediger i Excel.</span><span class="sxs-lookup"><span data-stu-id="b289b-202">Whenever the media template is changed, you must click **Generate** before you can use the Edit in Excel functionality.</span></span>
+
+    <span data-ttu-id="b289b-203">[![Generere billed-URL-adresser til Excel-oversigtspanel](./media/excel1.jpg)](./media/excel1.jpg)</span><span class="sxs-lookup"><span data-stu-id="b289b-203">[![Generate Image URLs for Excel FastTab](./media/excel1.jpg)](./media/excel1.jpg)</span></span>
+
+    <span data-ttu-id="b289b-204">Du ser nu et eksempel på billed-URL-adresser, der blev genereret ud fra den senest gemte medieskabelon.</span><span class="sxs-lookup"><span data-stu-id="b289b-204">You now see a preview of the image URLs that were generated based on the last saved media template.</span></span>
+
+    <span data-ttu-id="b289b-205">[![Generere billed-URL-adresser til Excel-oversigtspanel, efter at Generer er valgt](./media/excel2.png)](./media/excel2.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-205">[![Generate Image URLs for Excel FastTab after Generate is selected](./media/excel2.png)](./media/excel2.png)</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b289b-206">De URL-adresser, der er genereret for Excel, bruger stien og konventionerne fra den medieskabelon, der er defineret.</span><span class="sxs-lookup"><span data-stu-id="b289b-206">The URLs that are generated for Excel use the path and conventions of the media template that is defined.</span></span> <span data-ttu-id="b289b-207">Disse konventioner omfatter konventioner for filnavne.</span><span class="sxs-lookup"><span data-stu-id="b289b-207">These conventions include the conventions for file names.</span></span> <span data-ttu-id="b289b-208">Det forventes, at du har konfigureret de fysiske billeder uden for Dynamics 365 for Retail, og billederne kan hentes fra de URL-adresser, der er afledt fra den medieskabelon, du definerede tidligere.</span><span class="sxs-lookup"><span data-stu-id="b289b-208">The expectation is that you've set up the physical images outside Dynamics 365 for Retail, and the images can be retrieved from the URLs that are derived from the media template that you defined earlier.</span></span> <span data-ttu-id="b289b-209">Du kan overskrive disse afledte URL-adresser ved hjælp af funktionen Rediger i Excel.</span><span class="sxs-lookup"><span data-stu-id="b289b-209">You can overwrite these derived URLs by using the Edit in Excel functionality.</span></span>
+
+5. <span data-ttu-id="b289b-210">Klik på **Rediger i Excel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-210">Click **Edit in Excel**.</span></span>
+6. <span data-ttu-id="b289b-211">Når Microsoft Excel-regnearket er åbnet, skal du klikke på **Aktivér redigering**, når du bliver bedt om det.</span><span class="sxs-lookup"><span data-stu-id="b289b-211">After the Microsoft Excel worksheet is opened, click **Enable edit** when you're prompted.</span></span>
+7. <span data-ttu-id="b289b-212">Når du bliver bedt om det, skal du klikke på **Har tillid til dette tilføjelsesprogram** i højre rude og vente på, at installationen af tilføjelsesprogrammet er fuldført.</span><span class="sxs-lookup"><span data-stu-id="b289b-212">When you're prompted, click **Trust this add-in** in the right pane, and wait for the add-in to complete the installation.</span></span>
+
+    <span data-ttu-id="b289b-213">[![Har tillid til dette tilføjelsesprogram](./media/excel4.jpg)](./media/excel4.jpg)</span><span class="sxs-lookup"><span data-stu-id="b289b-213">[![Trust this add-in](./media/excel4.jpg)](./media/excel4.jpg)</span></span>
+
+8. <span data-ttu-id="b289b-214">Hvis du bliver bedt om at logge på, kan du angive de legitimationsoplysninger, du brugte til at logge på HQ.</span><span class="sxs-lookup"><span data-stu-id="b289b-214">If you're prompted to sign in, enter the credentials that you used to sign in to HQ.</span></span>
+
+    <span data-ttu-id="b289b-215">[![Logonprompt](./media/excel5.png)](./media/excel5.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-215">[![Sign-in prompt](./media/excel5.png)](./media/excel5.png)</span></span>
+
+9. <span data-ttu-id="b289b-216">Når du er logget på, bør du kunne se en liste over billed-URL-adresser til de forskellige katalogposter.</span><span class="sxs-lookup"><span data-stu-id="b289b-216">After you sign in, you should be able to see the list of image URLs for the various catalog entries.</span></span>
+10. <span data-ttu-id="b289b-217">Du redigerer, tilføjer og fjerner billed-URL-adresserne for forskellige elementer på enhed.</span><span class="sxs-lookup"><span data-stu-id="b289b-217">You edit, add, and remove the image URLs for various entity items.</span></span>
+11. <span data-ttu-id="b289b-218">Du kan overskrive billed-URL-adresser for alle enheder undtagen produkter.</span><span class="sxs-lookup"><span data-stu-id="b289b-218">For all entities except Products, you can overwrite the image URLs.</span></span> <span data-ttu-id="b289b-219">Rediger den eksisterende billed-URL-adresse, så den bruger den nye URL-adresse til billedet, og opdater filnavnet med det nye filnavn for billedfilen.</span><span class="sxs-lookup"><span data-stu-id="b289b-219">Modify the existing image URL, so that it uses the new destination URL of the image, and update the file name with the new file name for the image file.</span></span> <span data-ttu-id="b289b-220">Filnavnet skal være entydigt for at sikre, at posten er entydig.</span><span class="sxs-lookup"><span data-stu-id="b289b-220">The file name must be unique to help guarantee that the record is unique.</span></span>
+
+    <span data-ttu-id="b289b-221">[![Overskrive billede-URL-adresser i Excel](./media/excel6.jpg)](./media/excel6.jpg)</span><span class="sxs-lookup"><span data-stu-id="b289b-221">[![Overwrite the image URLs in Excel](./media/excel6.jpg)](./media/excel6.jpg)</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b289b-222">Når du overskriver billed-URL-adresser for Produkter-enheder ved hjælp af funktionen Rediger i Excel-funktioner eller enhedselementsiden, viser MPOS altid alle medieskabelonernes billed-URL-adresser med de overskrevne billed-URL-adresser.</span><span class="sxs-lookup"><span data-stu-id="b289b-222">When you overwrite image URLs for Products entities by using the Edit in Excel functionality or the entity item page, MPOS always shows all the media template image URLs together with the overwritten image URLs.</span></span>
+
+12. <span data-ttu-id="b289b-223">Når du har foretaget dine ændringer, skal du klikke på **Udgiv i Excel** for at oprette en ny eksplicit tilknytningspost.</span><span class="sxs-lookup"><span data-stu-id="b289b-223">After you've finished making your changes, click **Publish in Excel** to create a new explicit association entry.</span></span>
+13. <span data-ttu-id="b289b-224">Gå tilbage til HQ, og klik på **OK**.</span><span class="sxs-lookup"><span data-stu-id="b289b-224">Return to HQ, and click **OK**.</span></span>
+14. <span data-ttu-id="b289b-225">Kør de relevante synkroniseringsjobbet for enheden, og se eksemplet på enhedssiden eller i MPOS.</span><span class="sxs-lookup"><span data-stu-id="b289b-225">Run the appropriate synchronization jobs for the entity, and check the preview on the entity page or in MPOS.</span></span>
+
+#### <a name="creating-new-records"></a><span data-ttu-id="b289b-226">Oprette nye poster</span><span class="sxs-lookup"><span data-stu-id="b289b-226">Creating new records</span></span>
+
+<span data-ttu-id="b289b-227">Du kan opretter nye poster i Excel.</span><span class="sxs-lookup"><span data-stu-id="b289b-227">You can create new records in Excel.</span></span> <span data-ttu-id="b289b-228">Sørg imidlertid for, at du angiver de rigtige oplysninger.</span><span class="sxs-lookup"><span data-stu-id="b289b-228">However, make sure that you provide the correct information.</span></span> <span data-ttu-id="b289b-229">Hvis du for eksempel vil oprette en ny post til et katalog, skal du sørge for, at katalog-id'et og katalognavnet er korrekt og også angive et entydigt filnavn.</span><span class="sxs-lookup"><span data-stu-id="b289b-229">For example, to create a new entry for a catalog, make sure that the catalog ID and catalog name are correct, and also provide a unique file name.</span></span> <span data-ttu-id="b289b-230">Det entydige filnavn er meget vigtigt, fordi entydigheden af poster i Excel valideres ved udgivelsen.</span><span class="sxs-lookup"><span data-stu-id="b289b-230">The unique file name is very important, because the uniqueness of records in Excel is validated during publishing.</span></span> <span data-ttu-id="b289b-231">Kopier først oplysningerne fra det katalog, du vil oprette en ny post for, og kopier posten.</span><span class="sxs-lookup"><span data-stu-id="b289b-231">First copy the details from the catalog that you want to create a new record for, and copy the record.</span></span> <span data-ttu-id="b289b-232">Du skal blot opdatere filnavnet og URL-adressen, da resten af oplysningerne forbliver de samme.</span><span class="sxs-lookup"><span data-stu-id="b289b-232">You just have to update the file name and URL, because the rest of the information will be same.</span></span> <span data-ttu-id="b289b-233">Hvis du vil oprette nye poster for Produkt-enhedselementer, skal du bruge den samme grundlæggende fremgangsmåde.</span><span class="sxs-lookup"><span data-stu-id="b289b-233">To create new records for Product entity items, you use the same basic procedure.</span></span> <span data-ttu-id="b289b-234">Kopiér en eksisterende post for produktet, du vil oprette en ny post for, fra Excel-regnet , og udskrift derefter billed-URL-adressen og -filnavnet.</span><span class="sxs-lookup"><span data-stu-id="b289b-234">From the Excel worksheet, copy an existing record for the product that you to create a new record for, and then replace the image URL and filename.</span></span> <span data-ttu-id="b289b-235">Sørg for, at filnavnet er entydigt.</span><span class="sxs-lookup"><span data-stu-id="b289b-235">Make sure that the file name is unique.</span></span>
+
+#### <a name="deleting-an-existing-record"></a><span data-ttu-id="b289b-236">Slette en eksisterende post</span><span class="sxs-lookup"><span data-stu-id="b289b-236">Deleting an existing record</span></span>
+
+<span data-ttu-id="b289b-237">Det er kun overskrevne billed-URL-poster, der kan slettes.</span><span class="sxs-lookup"><span data-stu-id="b289b-237">Only the overwritten image URL records can be deleted.</span></span> <span data-ttu-id="b289b-238">Når et billede er slettet, og synkroniseringen er fuldført, vises billedet ikke længere på siden **Eksempel** eller i MPOS.</span><span class="sxs-lookup"><span data-stu-id="b289b-238">After an image is deleted and synchronization is completed, the image will no longer appear on the **Preview** page or in MPOS.</span></span> <span data-ttu-id="b289b-239">Billed-URL-poster, der er afledt fra medieskabelonen, kan ikke slettes, fordi disse poster altid hver gang er afledt fra medieskabelonen.</span><span class="sxs-lookup"><span data-stu-id="b289b-239">Image URL records that are derived from the media template can't be deleted, because these records are always derived from the media template every time.</span></span>
+
+### <a name="overwrite-from-the-entity-level-preview-page"></a><span data-ttu-id="b289b-240">Overskrive fra eksempelsiden på enhedsniveau</span><span class="sxs-lookup"><span data-stu-id="b289b-240">Overwrite from the entity-level Preview page</span></span>
+
+<span data-ttu-id="b289b-241">For alle enheder med undtagelse af produkter gælder det, at du kan overskrive billed-URL-adressen for et givet enhedselement på enhedselementniveauet på siden **Eksempel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-241">For all entities except Products, you can overwrite the image URL for a given entity item at the entity item level from the **Preview** page.</span></span> <span data-ttu-id="b289b-242">Brug enhedssiden "Katalogprodukter" til Produkter.</span><span class="sxs-lookup"><span data-stu-id="b289b-242">For Products, you can use the "Catalog Products" entity page.</span></span> <span data-ttu-id="b289b-243">Dette eksempel viser, hvordan du overskriver et katalogbillede.</span><span class="sxs-lookup"><span data-stu-id="b289b-243">This example shows how to overwrite a catalog image.</span></span>
+
+1. <span data-ttu-id="b289b-244">Klik på **Kataloger** &gt; **Medie** &gt; **Billeder**, og vælg det katalogbillede, der skal opdateres.</span><span class="sxs-lookup"><span data-stu-id="b289b-244">Click **Catalogs** &gt; **Media** &gt; **Images**, and select the catalog image to update.</span></span>
+2. <span data-ttu-id="b289b-245">Klik på **Tilføj**, og angiv billedets URL-adresse for at overskrive URL-adressen til medieskabelonen.</span><span class="sxs-lookup"><span data-stu-id="b289b-245">Click **Add**, and enter the image URL to overwrite the media template URL.</span></span>
+3. <span data-ttu-id="b289b-246">Hvis dette billede skal vises i MPOS for kataloget, kan du angive det som standardbilledet.</span><span class="sxs-lookup"><span data-stu-id="b289b-246">If you want this image to be shown in MPOS for the catalog, you can set it as the default image.</span></span>
+4. <span data-ttu-id="b289b-247">Klik på **OK**.</span><span class="sxs-lookup"><span data-stu-id="b289b-247">Click **OK**.</span></span> <span data-ttu-id="b289b-248">Billedets URL-adresse er opdateret for dette katalogbillede, og der vises et eksempel.</span><span class="sxs-lookup"><span data-stu-id="b289b-248">The image URL is updated for this catalog image, and a preview is shown.</span></span>
+
+    <span data-ttu-id="b289b-249">[![URL-adresse opdateret i dialogboksen Nyt billede](./media/preview3.png)](./media/preview3.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-249">[![URL updated in the New image dialog box](./media/preview3.png)](./media/preview3.png)</span></span>
+
+5. <span data-ttu-id="b289b-250">Du kan også se billedeksemplet for alle overskrevne billed-URL-adresser på gallerisiden **Katalogbilleder**.</span><span class="sxs-lookup"><span data-stu-id="b289b-250">You can also see the image preview for all overwritten image URLs on the **Catalog images** gallery page.</span></span>
+
+    <span data-ttu-id="b289b-251">[![Galleriside med katalogbilleder](./media/preview-4.png)](./media/preview-4.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-251">[![Catalog images gallery page](./media/preview-4.png)](./media/preview-4.png)</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b289b-252">Galleriet viser i øjeblikket ikke billedeksempler for billed-URL-adresser til medieskabeloner.</span><span class="sxs-lookup"><span data-stu-id="b289b-252">Currently, the gallery doesn't show image previews for media template image URLs.</span></span> <span data-ttu-id="b289b-253">For enhederne Katalog, Arbejder, Debitor og Kategori og gælder det, at hvis brugeren eksplicit angiver en URL-adresse via denne side, anbefaler vi, at du angiver, hvilket billede der er standardbilledet, da Retail Server-klienter kun ét billede pr. katalog, debitor, arbejder og kategori.</span><span class="sxs-lookup"><span data-stu-id="b289b-253">For Catalog, Worker, Customer, and Category entities, if the user explicitly provides a URL through this page, we recommend that you indicate which image is the default image, because Retail Server clients show only one image per Catalog, Customer, Worker, and Category.</span></span> <span data-ttu-id="b289b-254">Hvis brugeren ikke angiver et standardbillede, bestemmer systemet standardbilledet og sender den til detailtjenestekaldefunktionen (MPOS eller Ecommerce).</span><span class="sxs-lookup"><span data-stu-id="b289b-254">If the user doesn't specify a default image, the system determines the default image and send it to the Retail service caller (MPOS or Ecommerce).</span></span>
+
+### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a><span data-ttu-id="b289b-255">Overskrive billedets URL-adresse for katalogbilleder fra eksempelsiden</span><span class="sxs-lookup"><span data-stu-id="b289b-255">Overwrite the image URL for catalog product images from the Preview page</span></span>
+
+<span data-ttu-id="b289b-256">Hvis du vil overskrive URL-adresse for katalogproduktbilleder, skal du bruge siden **Eksempel**.</span><span class="sxs-lookup"><span data-stu-id="b289b-256">To overwrite image URLs for catalog product images, you must use the **Preview** page.</span></span> <span data-ttu-id="b289b-257">Du kan ikke bruge funktionen Rediger i Excel.</span><span class="sxs-lookup"><span data-stu-id="b289b-257">You can't use the Edit in Excel functionality.</span></span>
+
+1. <span data-ttu-id="b289b-258">Hvis du vil overskrive produktbilleder på et katalogniveau, skal du vælge et katalog og derefter vælge det produkt, billedet skal overskrives for.</span><span class="sxs-lookup"><span data-stu-id="b289b-258">To overwrite product images at a catalog level, select a catalog, and then select the product to overwrite the image for.</span></span>
+2. <span data-ttu-id="b289b-259">Klik på **Attributter**.</span><span class="sxs-lookup"><span data-stu-id="b289b-259">Click **Attributes**.</span></span>
+3. <span data-ttu-id="b289b-260">Vælg **billede** på den næste side, og klik derefter på **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="b289b-260">On the next page, select **Image**, and then click **Edit**.</span></span> <span data-ttu-id="b289b-261">Siden **Eksempel** åbnes som en skyderdialogboks.</span><span class="sxs-lookup"><span data-stu-id="b289b-261">The **Preview** page opens as a slider dialog box.</span></span>
+4. <span data-ttu-id="b289b-262">Klik på **Tilføj**, og Overskriv billedets URL-adresse med en ny URL-adresse.</span><span class="sxs-lookup"><span data-stu-id="b289b-262">Click **Add**, and overwrite the image URL with a new URL.</span></span>
+5. <span data-ttu-id="b289b-263">Klik på **OK**.</span><span class="sxs-lookup"><span data-stu-id="b289b-263">Click **OK**.</span></span> <span data-ttu-id="b289b-264">Du kan nu se eksemplet på det nye billede og kan angive det som standardbilledet.</span><span class="sxs-lookup"><span data-stu-id="b289b-264">You now see the preview of the new image and can set it as the default image.</span></span>
+
+    <span data-ttu-id="b289b-265">[![Billedeksempel i dialogboksen Nyt billede](./media/cat3.png)](./media/cat3.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-265">[![Image preview in the New image dialog box](./media/cat3.png)](./media/cat3.png)</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b289b-266">Når kategoribilledet er blevet tilknyttet, skal du udgive kanalen og køre kanaljobbet for at sikre, at ændringerne udgives i kanaldatabasen.</span><span class="sxs-lookup"><span data-stu-id="b289b-266">After category image association, you must publish the channel and run the Channel job to help guarantee that the changes are published to the channel database.</span></span>
+
+## <a name="setting-up-images-to-appear-in-offline-mode-for-mpos"></a><span data-ttu-id="b289b-267">Konfigurere billeder, der skal vises i offlinetilstand for MPOS</span><span class="sxs-lookup"><span data-stu-id="b289b-267">Setting up images to appear in Offline mode for MPOS</span></span>
+
+<span data-ttu-id="b289b-268">MPOS kan køre i onlinetilstand (når MPOS har oprettet forbindelse til Retail Server) eller i offlinetilstand (når der er ingen Retail Server eller netværksforbindelse, og transaktioner er gemt i en lokal offlinedatabase).</span><span class="sxs-lookup"><span data-stu-id="b289b-268">MPOS can run in Online mode (when MPOS connected to Retail Server) or Offline mode (when there is no Retail Server or network connectivity, and transactions are stored in a local offline database).</span></span> <span data-ttu-id="b289b-269">Når MPOS kører i offlinetilstand, kan den ikke hente billeder fra den eksterne billedserveren for at vise Retail-Server, fordi Retail Server-forbindelsen blev afbrudt.</span><span class="sxs-lookup"><span data-stu-id="b289b-269">When MPOS runs in Offline mode, it can't get images from the external image server to display from Retail Server, because Retail Server connectivity has been lost.</span></span> <span data-ttu-id="b289b-270">Du kan imidlertid stadig oprette billeder, så de vises, når MPOS køres i offlinetilstand.</span><span class="sxs-lookup"><span data-stu-id="b289b-270">However, you can still set up images so that they are shown when MPOS runs in Offline mode.</span></span>
+
+### <a name="set-up-product-images-to-appear-in-offline-mode-for-mpos"></a><span data-ttu-id="b289b-271">Konfigurere produktbilleder, der skal vises i offlinetilstand for MPOS</span><span class="sxs-lookup"><span data-stu-id="b289b-271">Set up product images to appear in Offline mode for MPOS</span></span>
+
+<span data-ttu-id="b289b-272">De produktbilleder, der skal bruges i offlinetilstand, kan konfigureres ved at overføre det nødvendige fysiske billede til det grundlæggende produktbillede.</span><span class="sxs-lookup"><span data-stu-id="b289b-272">The product images that must be used in Offline mode can be set up by uploading the required physical image into the base product image.</span></span>
+
+1. <span data-ttu-id="b289b-273">Klik på **Administration af produktoplysninger** &gt; **Produkter** &gt; **Produkter**.</span><span class="sxs-lookup"><span data-stu-id="b289b-273">Click **Product information management** &gt; **Products** &gt; **Products**.</span></span>
+2. <span data-ttu-id="b289b-274">Vælg det produkt, offlinebilledet skal indstilles for.</span><span class="sxs-lookup"><span data-stu-id="b289b-274">Select the product to set the offline image for.</span></span>
+3. <span data-ttu-id="b289b-275">Klik på **Rediger**, og klik derefter på pilen i højre hjørne for at få vist den højre rude.</span><span class="sxs-lookup"><span data-stu-id="b289b-275">Click **Edit**, and then click the arrow in the right corner to show the right pane.</span></span>
+4. <span data-ttu-id="b289b-276">I oversigtspanelet **Produktbillede** skal du klikke på **Skift billede** og overføre det fysiske billede, der skal bruges til det valgte produkt i offlinetilstand.</span><span class="sxs-lookup"><span data-stu-id="b289b-276">On the **Product image** FastTab, click **Change image**, and upload the physical image to use for the selected product in Offline mode.</span></span>
+5. <span data-ttu-id="b289b-277">Gem og luk siden.</span><span class="sxs-lookup"><span data-stu-id="b289b-277">Save and close the page.</span></span>
+6. <span data-ttu-id="b289b-278">Mens MPOS er i onlinetilstand, skal katalogjobbet køres i HQ for at sikre, at dataene sendes mindst én gang til offlinedatabasen.</span><span class="sxs-lookup"><span data-stu-id="b289b-278">While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.</span></span>
+7. <span data-ttu-id="b289b-279">Sæt MPOS i offlinetilstand.</span><span class="sxs-lookup"><span data-stu-id="b289b-279">Put MPOS into Offline mode.</span></span> <span data-ttu-id="b289b-280">Du skulle nu kunne se det billede, du overførte for det specifikke produkt i HQ.</span><span class="sxs-lookup"><span data-stu-id="b289b-280">You should see the image that you uploaded for the specific product in HQ.</span></span>
+
+    <span data-ttu-id="b289b-281">[![Produktbillede i offlinetilstand](./media/offline1.png)](./media/offline1.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-281">[![Product image in Offline mode](./media/offline1.png)](./media/offline1.png)</span></span>
+
+### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a><span data-ttu-id="b289b-282">Konfigurere katalog-, kategori-, medarbejder- og debitorbilleder, der skal vises i offlinetilstand for MPOS</span><span class="sxs-lookup"><span data-stu-id="b289b-282">Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS</span></span>
+
+<span data-ttu-id="b289b-283">Katalog-, kategori-, arbejder og debitorbilleder, der skal bruges i offlinetilstand, kan konfigureres ved at tilføje det krævede billedes destinationslink til galleriet og indstille billedet som standardbilledet for den valgte enhed.</span><span class="sxs-lookup"><span data-stu-id="b289b-283">The catalog, category, employee, and customer images that must be used in Offline mode can be set up by adding the required image's destination link to the gallery and setting the image as the default image for the selected entity.</span></span>
+
+1. <span data-ttu-id="b289b-284">Gå til kataloget, og klik derefter på **Medie** &gt; **Billeder** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b289b-284">Go to the catalog, and then, on the Action Pane, click **Media** &gt; **Images**.</span></span>
+2. <span data-ttu-id="b289b-285">Følg trinnene i afsnittet [Overskriv fra eksempelsiden på enhedsniveau](#overwrite-from-the-entity-level-preview-page) for at tilføje URL-adressen til det eksterne billede.</span><span class="sxs-lookup"><span data-stu-id="b289b-285">Follow the steps in the [Overwrite from the entity-level Preview page](#overwrite-from-the-entity-level-preview-page) section to add the external image URL.</span></span>
+3. <span data-ttu-id="b289b-286">Marker billedet som standardbilledet for kataloget ved at markere afkrydsningsfeltet i forhold til det billede, der vises i gitteret.</span><span class="sxs-lookup"><span data-stu-id="b289b-286">Mark this image as the default image for the catalog by selecting the check box against the Image listed in the grid.</span></span>
+4. <span data-ttu-id="b289b-287">Kør katalogjobbet.</span><span class="sxs-lookup"><span data-stu-id="b289b-287">Run the Catalog job.</span></span> <span data-ttu-id="b289b-288">Dette billede bruges nu som et offlinebillede for det katalog i MPOS.</span><span class="sxs-lookup"><span data-stu-id="b289b-288">This image will now be used as the Offline image for that catalog in MPOS.</span></span>
+5. <span data-ttu-id="b289b-289">Følg en lignende proces for andre enheder som f.eks. kategori, medarbejder og debitor.</span><span class="sxs-lookup"><span data-stu-id="b289b-289">Follow a similar process for other entities, such as Category, Employee, and Customer.</span></span>
+
+    <span data-ttu-id="b289b-290">[![Offlinebillede](./media/offline2.png)](./media/offline2.png)</span><span class="sxs-lookup"><span data-stu-id="b289b-290">[![Offline image](./media/offline2.png)](./media/offline2.png)</span></span>

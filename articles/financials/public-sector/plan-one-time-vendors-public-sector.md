@@ -1,288 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="plan-one-time-vendors-public-sector.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>plan-one-time-vendors-public-sector.42f39c.29468ab0dc20ff0c9c15ad242cfd5900c321ec0d.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>29468ab0dc20ff0c9c15ad242cfd5900c321ec0d</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\public-sector\plan-one-time-vendors-public-sector.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Plan for one-time vendors in the public sector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Planlægning af engangsleverandører i den offentlige sektor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article explains how to prepare to import and create multiple one-time vendors and invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Plan for one-time vendors in the public sector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Planlægning af engangsleverandører i den offentlige sektor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This article explains how to prepare to import and create multiple one-time vendors and invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Typically, if you plan to mass-import vendor and invoice information, you first create a data file in spreadsheet format and save it in CSV (comma-separated values) format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du planlægger at masseimportere leverandør- og importoplysninger, skal du typisk først oprette en datafil i regnearksformat og gemme den i CSV-format (kommaseparerede værdier).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Because commas are used to separate the fields in a CSV file, don't use commas in the text of an entry.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Da der bruges komma til at adskille felterne i en CSV-fil, må du ikke bruge kommaer i teksten i en post.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>For example, to specify a company name of “Smith, Smith, and Jones,” enter it as <bpt id="p1">**</bpt>Smith Smith and Jones<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du f.eks. vil angive firmanavnet "Smith, Jensen og Jensen", skal du indtaste det som <bpt id="p1">**</bpt>Smith Jensen og Jensen<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>If you don't set values for fields on this page, the newly created vendor accounts use values from the one-time vendor profile that is referenced on the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du ikke angiver værdier for felter på denne side, bruger de nyoprettede kreditorkonti værdier fra den engangskreditorprofil, der er henvist til på siden <bpt id="p1">**</bpt>Kreditorparametre<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>For example, if the method of payment is set to <bpt id="p1">**</bpt>Check<ept id="p1">**</ept> for the one-time vendor profile on the <bpt id="p2">**</bpt>Accounts payable parameters<ept id="p2">**</ept> page, that method of payment will also be set for the one-time vendors that you're adding.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis betalingsmetoden f.eks. er angivet til <bpt id="p1">**</bpt>Bankcheck<ept id="p1">**</ept> for engangskreditorprofilen på siden <bpt id="p2">**</bpt>Kreditorparametre<ept id="p2">**</ept>, så angives denne betalingsmetode også for de engangskreditorer, som du tilføjer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The <bpt id="p1">**</bpt>One-time supplier<ept id="p1">**</ept> Accounts payable number sequence is used to assign the one-time vendor accounts and must not be set to <bpt id="p2">**</bpt>Continuous<ept id="p2">**</ept> for this service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditornummerserien <bpt id="p1">**</bpt>Engangsleverandør<ept id="p1">**</ept> bruges til at tildele engangskreditorkontiene og må ikke være angivet til <bpt id="p2">**</bpt>Fortløbende<ept id="p2">**</ept> for denne tjeneste.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Invoices are generated in a draft state.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fakturaer genereres i kladdetilstand.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Before you create payment proposals for payment, you must post the invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Før du opretter betalingsforslag til betaling, skal du bogføre fakturaerne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The following table show the fields that the import file must contain.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følgende tabel viser de felter, som den importerede fil skal indeholde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Each field label is equivalent to a column heading in a spreadsheet, and each spreadsheet row contains the data for each applicable column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hver enkelt feltetiket svarer til en kolonneoverskrift i et regneark, og hver række i regnearket indeholder dataene for hver relevant kolonne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">**</bpt>Vendor section<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kreditorsektion<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Felt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oplysninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Record type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Posttype</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">**</bpt>Person<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Organization<ept id="p2">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Person<ept id="p1">**</ept> eller <bpt id="p2">**</bpt>Organisation<ept id="p2">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>First name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fornavn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>(If the record type value is <bpt id="p1">**</bpt>Person<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Hvis posttypeværdien er <bpt id="p1">**</bpt>Person<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Middle name (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mellemnavn (valgfrit).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>(If the record type is <bpt id="p1">**</bpt>Person<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Hvis posttypen er <bpt id="p1">**</bpt>Person<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Last name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Efternavn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>(If the record type is <bpt id="p1">**</bpt>Person<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Hvis posttypen er <bpt id="p1">**</bpt>Person<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Vendor name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Navn på kreditor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>(If the record type is <bpt id="p1">**</bpt>Organization<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Hvis posttypen er <bpt id="p1">**</bpt>Organisation<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gruppe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Ten-character limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grænse på 10 tegn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Country/region</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Land/område</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Ten-character limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grænse på 10 tegn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>ZIP/postal code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Postnummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Street</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gade</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">By</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">By</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Federal tax ID (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Federal Tax ID (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>(U.S. only) 1099 number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Kun USA) 1099-nummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Tax ID type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1099-nummertype</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>(U.S. only) Values can be <bpt id="p1">**</bpt>Unknown<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Employer Identification Number<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Social Security Number<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Individual Taxpayer Identification Number<ept id="p4">**</ept>, or <bpt id="p5">**</bpt>Adopted Tax Payer Identification Number<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Kun USA) Værdierne kan være <bpt id="p1">**</bpt>Ukendt<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Employer Identification Number (EIN - US)<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Social Security Number (SSN - US)<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Individuelt Taxpayer Identification Number (TIN - US)<ept id="p4">**</ept>, eller <bpt id="p5">**</bpt>Anvendt Taxpayer Identification Number (TIN - US)<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If no federal tax ID is provided, this field should be set to <bpt id="p2">**</bpt>Unknown<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Bemærk:<ept id="p1">**</ept> Hvis der ikke er angivet noget Federal Tax ID, indstilles feltet til <bpt id="p2">**</bpt>ukendt<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Bank account (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankkonto (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Bank account name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankkontonavn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Bank account number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankkontonummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Routing number (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registreringsnummer (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>SWIFT code (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SWIFT-kode (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Also known as BIC (Bank identifier code)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Også kaldet BIC-kode (Bank Identifier Code).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>IBAN (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IBAN (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>International bank account number, 34-character limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IBAN (International Bank Account Number). Maks. 34 tegn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">**</bpt>Invoice section<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Fakturasektion<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Felt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oplysninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Invoice number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fakturanummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Invoice number, 20-character limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fakturanummer. Maks. 20 tegn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Invoice description (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fakturabeskrivelse (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Posting date (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bogføringsdato (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Date format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datoformat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Invoice date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fakturadato</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Date format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datoformat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Due date (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forfaldsdato (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Date format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datoformat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Line number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Linjenummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Item number (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varenummer (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>20-character limit   <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If no item number is provided, you must provide values in the <bpt id="p2">**</bpt>Procurement category<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Procurement category hierarchy<ept id="p3">**</ept> fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grænse på 20 tegn   <bpt id="p1">**</bpt>Bemærk!<ept id="p1">**</ept> Hvis der ikke er angivet noget varenummer, skal du angive værdier i felterne <bpt id="p2">**</bpt>Indkøbskategori<ept id="p2">**</ept> og <bpt id="p3">**</bpt>Indkøbskategorihierarki<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>If no procurement category and procurement category hierarchy are provided, you must provide a value in the <bpt id="p1">**</bpt>Item number<ept id="p1">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis ingen indkøbskategori og intet indkøbskategorihierarki er angivet, skal du angive en værdi i feltet <bpt id="p1">**</bpt>Varenummer<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Item name (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varenavn (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>60-character limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maks. 60 tegn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Procurement category hierarchy (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indkøbskategorihierarki (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you provide a value for this field, the <bpt id="p2">**</bpt>Procurement category<ept id="p2">**</ept> field is also required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Bemærk!<ept id="p1">**</ept> Hvis du angiver en værdi for dette felt, skal feltet <bpt id="p2">**</bpt>Indkøbskategori<ept id="p2">**</ept> også udfyldes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Procurement category (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indkøbskategori (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you provide a value for this field, the <bpt id="p2">**</bpt>Procurement category hierarchy<ept id="p2">**</ept> field is also required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Bemærk!<ept id="p1">**</ept> Hvis du angiver en værdi for dette felt, skal feltet <bpt id="p2">**</bpt>Indkøbskategorihierarki<ept id="p2">**</ept> også udfyldes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Quantity (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Antal (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Unit (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Enhed (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Ten-character limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grænse på 10 tegn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Line net amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Linjenettobeløb</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Decimal values are allowed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Decimalværdier er tilladt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Unit price (Optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Enhedspris (valgfrit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Decimal values are allowed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Decimalværdier er tilladt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source><bpt id="p1">**</bpt>Distributions section<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Distributionssektion<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Felt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oplysninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Antal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Accounting distribution line number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Regnskabsfordelingslinjenummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Ledger account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanskonto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Percent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Procent</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Decimal values are allowed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Decimalværdier er tilladt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>What do I do next?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvad skal jeg gøre nu?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>After you’ve set up the prerequisites that you require, see <bpt id="p1">[</bpt>One time vendors in the public sector<ept id="p1">](one-time-vendors-public-sector.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du har konfigureret forudsætninger, du skal bruge, kan du se <bpt id="p1">[</bpt>Engangsleverandører i den offentlige sektor<ept id="p1">](one-time-vendors-public-sector.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere ressourcer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">[</bpt>One-time vendors in the public sector<ept id="p1">](one-time-vendors-public-sector.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Engangsleverandører i den offentlige sektor<ept id="p1">](one-time-vendors-public-sector.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">[</bpt>Accounts payable in the public sector<ept id="p1">](accounts-payable-public-sector.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kreditor i den offentlige sektor<ept id="p1">](accounts-payable-public-sector.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Planlægning af engangsleverandører i den offentlige sektor
+description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 27251
+ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
+ms.search.region: Global
+ms.search.industry: Public sector
+ms.author: brpotter
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 29468ab0dc20ff0c9c15ad242cfd5900c321ec0d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550255"
+---
+# <a name="plan-for-one-time-vendors-in-the-public-sector"></a><span data-ttu-id="a8156-103">Planlægning af engangsleverandører i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a8156-103">Plan for one-time vendors in the public sector</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a8156-104">Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.</span><span class="sxs-lookup"><span data-stu-id="a8156-104">This article explains how to prepare to import and create multiple one-time vendors and invoices.</span></span> 
+
+<span data-ttu-id="a8156-105">Hvis du planlægger at masseimportere leverandør- og importoplysninger, skal du typisk først oprette en datafil i regnearksformat og gemme den i CSV-format (kommaseparerede værdier).</span><span class="sxs-lookup"><span data-stu-id="a8156-105">Typically, if you plan to mass-import vendor and invoice information, you first create a data file in spreadsheet format and save it in CSV (comma-separated values) format.</span></span>
+
+-   <span data-ttu-id="a8156-106">Da der bruges komma til at adskille felterne i en CSV-fil, må du ikke bruge kommaer i teksten i en post.</span><span class="sxs-lookup"><span data-stu-id="a8156-106">Because commas are used to separate the fields in a CSV file, don't use commas in the text of an entry.</span></span> <span data-ttu-id="a8156-107">Hvis du f.eks. vil angive firmanavnet "Smith, Jensen og Jensen", skal du indtaste det som **Smith Jensen og Jensen**.</span><span class="sxs-lookup"><span data-stu-id="a8156-107">For example, to specify a company name of “Smith, Smith, and Jones,” enter it as **Smith Smith and Jones**.</span></span>
+-   <span data-ttu-id="a8156-108">Hvis du ikke angiver værdier for felter på denne side, bruger de nyoprettede kreditorkonti værdier fra den engangskreditorprofil, der er henvist til på siden **Kreditorparametre**.</span><span class="sxs-lookup"><span data-stu-id="a8156-108">If you don't set values for fields on this page, the newly created vendor accounts use values from the one-time vendor profile that is referenced on the **Accounts payable parameters** page.</span></span> <span data-ttu-id="a8156-109">Hvis betalingsmetoden f.eks. er angivet til **Bankcheck** for engangskreditorprofilen på siden **Kreditorparametre**, så angives denne betalingsmetode også for de engangskreditorer, som du tilføjer.</span><span class="sxs-lookup"><span data-stu-id="a8156-109">For example, if the method of payment is set to **Check** for the one-time vendor profile on the **Accounts payable parameters** page, that method of payment will also be set for the one-time vendors that you're adding.</span></span>
+-   <span data-ttu-id="a8156-110">Kreditornummerserien **Engangsleverandør** bruges til at tildele engangskreditorkontiene og må ikke være angivet til **Fortløbende** for denne tjeneste.</span><span class="sxs-lookup"><span data-stu-id="a8156-110">The **One-time supplier** Accounts payable number sequence is used to assign the one-time vendor accounts and must not be set to **Continuous** for this service.</span></span> <span data-ttu-id="a8156-111">Fakturaer genereres i kladdetilstand.</span><span class="sxs-lookup"><span data-stu-id="a8156-111">Invoices are generated in a draft state.</span></span> <span data-ttu-id="a8156-112">Før du opretter betalingsforslag til betaling, skal du bogføre fakturaerne.</span><span class="sxs-lookup"><span data-stu-id="a8156-112">Before you create payment proposals for payment, you must post the invoices.</span></span>
+
+<span data-ttu-id="a8156-113">Følgende tabel viser de felter, som den importerede fil skal indeholde.</span><span class="sxs-lookup"><span data-stu-id="a8156-113">The following table show the fields that the import file must contain.</span></span> <span data-ttu-id="a8156-114">Hver enkelt feltetiket svarer til en kolonneoverskrift i et regneark, og hver række i regnearket indeholder dataene for hver relevant kolonne.</span><span class="sxs-lookup"><span data-stu-id="a8156-114">Each field label is equivalent to a column heading in a spreadsheet, and each spreadsheet row contains the data for each applicable column.</span></span>
+
+<span data-ttu-id="a8156-115">**Kreditorsektion**</span><span class="sxs-lookup"><span data-stu-id="a8156-115">**Vendor section**</span></span>
+
+| <span data-ttu-id="a8156-116">Felt</span><span class="sxs-lookup"><span data-stu-id="a8156-116">Field</span></span>                                          | <span data-ttu-id="a8156-117">Oplysninger</span><span class="sxs-lookup"><span data-stu-id="a8156-117">Details</span></span>                                                 |
+|------------------------------------------------|---------------------------------------------------------|
+|<span data-ttu-id="a8156-118">Posttype</span><span class="sxs-lookup"><span data-stu-id="a8156-118">Record type</span></span>                                     | <span data-ttu-id="a8156-119">**Person** eller **Organisation**</span><span class="sxs-lookup"><span data-stu-id="a8156-119">**Person** or **Organization**</span></span>                          |
+| <span data-ttu-id="a8156-120">Fornavn</span><span class="sxs-lookup"><span data-stu-id="a8156-120">First name</span></span>                                     | <span data-ttu-id="a8156-121">(Hvis posttypeværdien er **Person**)</span><span class="sxs-lookup"><span data-stu-id="a8156-121">(If the record type value is **Person**)</span></span>                |
+| <span data-ttu-id="a8156-122">Mellemnavn (valgfrit).</span><span class="sxs-lookup"><span data-stu-id="a8156-122">Middle name (Optional)</span></span>                         | <span data-ttu-id="a8156-123">(Hvis posttypen er **Person**)</span><span class="sxs-lookup"><span data-stu-id="a8156-123">(If the record type is **Person**)</span></span>                      |
+| <span data-ttu-id="a8156-124">Efternavn</span><span class="sxs-lookup"><span data-stu-id="a8156-124">Last name</span></span>                                      | <span data-ttu-id="a8156-125">(Hvis posttypen er **Person**)</span><span class="sxs-lookup"><span data-stu-id="a8156-125">(If the record type is **Person**)</span></span>                      |
+| <span data-ttu-id="a8156-126">Navn på kreditor</span><span class="sxs-lookup"><span data-stu-id="a8156-126">Vendor name</span></span>                                    | <span data-ttu-id="a8156-127">(Hvis posttypen er **Organisation**)</span><span class="sxs-lookup"><span data-stu-id="a8156-127">(If the record type is **Organization**)</span></span>                |
+| <span data-ttu-id="a8156-128">Gruppe</span><span class="sxs-lookup"><span data-stu-id="a8156-128">Group</span></span>                                          | <span data-ttu-id="a8156-129">Grænse på 10 tegn</span><span class="sxs-lookup"><span data-stu-id="a8156-129">Ten-character limit</span></span>                                     |
+| <span data-ttu-id="a8156-130">Land/område</span><span class="sxs-lookup"><span data-stu-id="a8156-130">Country/region</span></span>                                 | <span data-ttu-id="a8156-131">Grænse på 10 tegn</span><span class="sxs-lookup"><span data-stu-id="a8156-131">Ten-character limit</span></span>                                     |
+| <span data-ttu-id="a8156-132">Postnummer</span><span class="sxs-lookup"><span data-stu-id="a8156-132">ZIP/postal code</span></span>                                |                                                         |
+| <span data-ttu-id="a8156-133">Gade</span><span class="sxs-lookup"><span data-stu-id="a8156-133">Street</span></span>                                         |                                                         |
+| <span data-ttu-id="a8156-134">By</span><span class="sxs-lookup"><span data-stu-id="a8156-134">City</span></span>                                           |                                                         |
+| <span data-ttu-id="a8156-135">By</span><span class="sxs-lookup"><span data-stu-id="a8156-135">City</span></span>                                           |                                                         |
+|<span data-ttu-id="a8156-136">Federal Tax ID (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-136">Federal tax ID (Optional)</span></span>                       | <span data-ttu-id="a8156-137">(Kun USA) 1099-nummer</span><span class="sxs-lookup"><span data-stu-id="a8156-137">(U.S. only) 1099 number</span></span>                                 |
+| <span data-ttu-id="a8156-138">1099-nummertype</span><span class="sxs-lookup"><span data-stu-id="a8156-138">Tax ID type</span></span>                                    | <span data-ttu-id="a8156-139">(Kun USA) Værdierne kan være **Ukendt**, **Employer Identification Number (EIN - US)**, **Social Security Number (SSN - US)**, **Individuelt Taxpayer Identification Number (TIN - US)**, eller **Anvendt Taxpayer Identification Number (TIN - US)**.</span><span class="sxs-lookup"><span data-stu-id="a8156-139">(U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**.</span></span>  <span data-ttu-id="a8156-140">**Bemærk:** Hvis der ikke er angivet noget Federal Tax ID, indstilles feltet til **ukendt**.</span><span class="sxs-lookup"><span data-stu-id="a8156-140">**Note:** If no federal tax ID is provided, this field should be set to **Unknown**.</span></span>                                               |
+| <span data-ttu-id="a8156-141">Bankkonto (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-141">Bank account (Optional)</span></span>                        | <span data-ttu-id="a8156-142">Bankkontonavn</span><span class="sxs-lookup"><span data-stu-id="a8156-142">Bank account name</span></span>                                       |
+| <span data-ttu-id="a8156-143">Bankkontonummer</span><span class="sxs-lookup"><span data-stu-id="a8156-143">Bank account number</span></span>                            |                                                         |
+| <span data-ttu-id="a8156-144">Registreringsnummer (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-144">Routing number (Optional)</span></span>                      |                                                         |
+| <span data-ttu-id="a8156-145">SWIFT-kode (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-145">SWIFT code (Optional)</span></span>                          | <span data-ttu-id="a8156-146">Også kaldet BIC-kode (Bank Identifier Code).</span><span class="sxs-lookup"><span data-stu-id="a8156-146">Also known as BIC (Bank identifier code)</span></span>                |
+|<span data-ttu-id="a8156-147">IBAN (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-147">IBAN (Optional)</span></span>                                 | <span data-ttu-id="a8156-148">IBAN (International Bank Account Number). Maks. 34 tegn</span><span class="sxs-lookup"><span data-stu-id="a8156-148">International bank account number, 34-character limit</span></span>   |
+
+
+
+<span data-ttu-id="a8156-149">**Fakturasektion**</span><span class="sxs-lookup"><span data-stu-id="a8156-149">**Invoice section**</span></span>
+
+| <span data-ttu-id="a8156-150">Felt</span><span class="sxs-lookup"><span data-stu-id="a8156-150">Field</span></span>                                                | <span data-ttu-id="a8156-151">Oplysninger</span><span class="sxs-lookup"><span data-stu-id="a8156-151">Details</span></span>                                           |
+|------------------------------------------------------|---------------------------------------------------|
+| <span data-ttu-id="a8156-152">Fakturanummer</span><span class="sxs-lookup"><span data-stu-id="a8156-152">Invoice number</span></span>                                       | <span data-ttu-id="a8156-153">Fakturanummer. Maks. 20 tegn</span><span class="sxs-lookup"><span data-stu-id="a8156-153">Invoice number, 20-character limit</span></span>                |
+| <span data-ttu-id="a8156-154">Fakturabeskrivelse (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-154">Invoice description (Optional)</span></span>                       |                                                   |
+| <span data-ttu-id="a8156-155">Bogføringsdato (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-155">Posting date (Optional)</span></span>                              | <span data-ttu-id="a8156-156">Datoformat</span><span class="sxs-lookup"><span data-stu-id="a8156-156">Date format</span></span>                                       |
+| <span data-ttu-id="a8156-157">Fakturadato</span><span class="sxs-lookup"><span data-stu-id="a8156-157">Invoice date</span></span>                                         | <span data-ttu-id="a8156-158">Datoformat</span><span class="sxs-lookup"><span data-stu-id="a8156-158">Date format</span></span>                                       |
+| <span data-ttu-id="a8156-159">Forfaldsdato (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-159">Due date (Optional)</span></span>                                  | <span data-ttu-id="a8156-160">Datoformat</span><span class="sxs-lookup"><span data-stu-id="a8156-160">Date format</span></span>                                       |
+| <span data-ttu-id="a8156-161">Linjenummer</span><span class="sxs-lookup"><span data-stu-id="a8156-161">Line number</span></span>                                          |                                                   |
+|<span data-ttu-id="a8156-162">Varenummer (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-162">Item number (Optional)</span></span>                                | <span data-ttu-id="a8156-163">Grænse på 20 tegn   **Bemærk!** Hvis der ikke er angivet noget varenummer, skal du angive værdier i felterne **Indkøbskategori** og **Indkøbskategorihierarki**.</span><span class="sxs-lookup"><span data-stu-id="a8156-163">20-character limit   **Note:** If no item number is provided, you must provide values in the **Procurement category** and **Procurement category hierarchy** fields.</span></span> <span data-ttu-id="a8156-164">Hvis ingen indkøbskategori og intet indkøbskategorihierarki er angivet, skal du angive en værdi i feltet **Varenummer**.</span><span class="sxs-lookup"><span data-stu-id="a8156-164">If no procurement category and procurement category hierarchy are provided, you must provide a value in the **Item number** field.</span></span>                    |
+| <span data-ttu-id="a8156-165">Varenavn (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-165">Item name (Optional)</span></span>                                 |  <span data-ttu-id="a8156-166">Maks. 60 tegn</span><span class="sxs-lookup"><span data-stu-id="a8156-166">60-character limit</span></span>                               |
+| <span data-ttu-id="a8156-167">Indkøbskategorihierarki (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-167">Procurement category hierarchy (Optional)</span></span>            |    <span data-ttu-id="a8156-168">**Bemærk!** Hvis du angiver en værdi for dette felt, skal feltet **Indkøbskategori** også udfyldes.</span><span class="sxs-lookup"><span data-stu-id="a8156-168">**Note:** If you provide a value for this field, the **Procurement category** field is also required.</span></span>                                                                         |
+| <span data-ttu-id="a8156-169">Indkøbskategori (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-169">Procurement category (Optional)</span></span>                      | <span data-ttu-id="a8156-170">**Bemærk!** Hvis du angiver en værdi for dette felt, skal feltet **Indkøbskategorihierarki** også udfyldes.</span><span class="sxs-lookup"><span data-stu-id="a8156-170">**Note:** If you provide a value for this field, the **Procurement category hierarchy** field is also required.</span></span>                                                                        |
+| <span data-ttu-id="a8156-171">Antal (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-171">Quantity (Optional)</span></span>                                  |                                                   |
+| <span data-ttu-id="a8156-172">Enhed (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-172">Unit (Optional)</span></span>                                      | <span data-ttu-id="a8156-173">Grænse på 10 tegn</span><span class="sxs-lookup"><span data-stu-id="a8156-173">Ten-character limit</span></span>                               |
+|<span data-ttu-id="a8156-174">Linjenettobeløb</span><span class="sxs-lookup"><span data-stu-id="a8156-174">Line net amount</span></span>                                       | <span data-ttu-id="a8156-175">Decimalværdier er tilladt.</span><span class="sxs-lookup"><span data-stu-id="a8156-175">Decimal values are allowed.</span></span>                       |
+| <span data-ttu-id="a8156-176">Enhedspris (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="a8156-176">Unit price (Optional)</span></span>                                | <span data-ttu-id="a8156-177">Decimalværdier er tilladt.</span><span class="sxs-lookup"><span data-stu-id="a8156-177">Decimal values are allowed.</span></span>                       |
+
+
+<span data-ttu-id="a8156-178">**Distributionssektion**</span><span class="sxs-lookup"><span data-stu-id="a8156-178">**Distributions section**</span></span>
+
+| <span data-ttu-id="a8156-179">Felt</span><span class="sxs-lookup"><span data-stu-id="a8156-179">Field</span></span>                                                | <span data-ttu-id="a8156-180">Oplysninger</span><span class="sxs-lookup"><span data-stu-id="a8156-180">Details</span></span>                                  |
+|------------------------------------------------------|------------------------------------------|
+| <span data-ttu-id="a8156-181">Antal</span><span class="sxs-lookup"><span data-stu-id="a8156-181">Number</span></span>                                               | <span data-ttu-id="a8156-182">Regnskabsfordelingslinjenummer</span><span class="sxs-lookup"><span data-stu-id="a8156-182">Accounting distribution line number</span></span>      |
+| <span data-ttu-id="a8156-183">Finanskonto</span><span class="sxs-lookup"><span data-stu-id="a8156-183">Ledger account</span></span>                                       |                                          |
+| <span data-ttu-id="a8156-184">Procent</span><span class="sxs-lookup"><span data-stu-id="a8156-184">Percent</span></span>                                              | <span data-ttu-id="a8156-185">Decimalværdier er tilladt.</span><span class="sxs-lookup"><span data-stu-id="a8156-185">Decimal values are allowed.</span></span>              |
+
+
+
+
+## <a name="what-do-i-do-next"></a><span data-ttu-id="a8156-186">Hvad skal jeg gøre nu?</span><span class="sxs-lookup"><span data-stu-id="a8156-186">What do I do next?</span></span>
+<span data-ttu-id="a8156-187">Når du har konfigureret forudsætninger, du skal bruge, kan du se [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md).</span><span class="sxs-lookup"><span data-stu-id="a8156-187">After you’ve set up the prerequisites that you require, see [One time vendors in the public sector](one-time-vendors-public-sector.md).</span></span>
+
+<a name="additional-resources"></a><span data-ttu-id="a8156-188">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a8156-188">Additional resources</span></span>
+--------
+
+[<span data-ttu-id="a8156-189">Engangsleverandører i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a8156-189">One-time vendors in the public sector</span></span>](one-time-vendors-public-sector.md)
+
+[<span data-ttu-id="a8156-190">Kreditor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a8156-190">Accounts payable in the public sector</span></span>](accounts-payable-public-sector.md)
+
+
+

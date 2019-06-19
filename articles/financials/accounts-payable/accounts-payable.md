@@ -1,210 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="accounts-payable.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>accounts-payable.199fb9.f1acf2bade2bb279a35fdf4689bbbcc49e64101f.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>f1acf2bade2bb279a35fdf4689bbbcc49e64101f</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\accounts-payable\accounts-payable.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Accounts payable home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for kreditor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides an overview of Accounts payable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emne giver en oversigt over kreditor.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Accounts payable home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for kreditor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides an overview of Accounts payable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emne giver en oversigt over kreditor.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>You can enter vendor invoices manually or receive them electronically through a data entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the <bpt id="p1">**</bpt>Vendor invoice<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når fakturaerne er blevet indtastet eller modtaget, kan du gennemse og godkende dem vha. en fakturagodkendelseskladde eller siden <bpt id="p1">**</bpt>Kreditorfaktura<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsgange til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav, automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">**</bpt>Business processes<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Forretningsprocesser<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Business process<ept id="p1">](./media/AP-process.PNG)](./media/AP-process.PNG)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Forretningsproces<ept id="p1">](./media/AP-process.PNG)](./media/AP-process.PNG)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Set up Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere Kreditorer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurer kreditorgrupper, kreditorer, posteringsprofiler, forskellige betalingsindstillinger og parametre for kreditorer og indkøbsordrer, priser og rabatter, tillæg, supplerende varer, leveringer og destinationer, egenveksler og andre typer kreditoroplysninger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>Configure Accounts payable<ept id="p1">](accounts-payable-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Konfigurere Kreditorer<ept id="p1">](accounts-payable-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt>Accounting distributions and subledger journal entries for vendor invoices<ept id="p1">](accounting-distributions-subledger-journal-entries-vendor-invoices.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Regnskabsfordelinger og kladdeposter for reskontro til kreditorfakturaer<ept id="p1">](accounting-distributions-subledger-journal-entries-vendor-invoices.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>Foreign currency revaluation for Accounts payable and Accounts receivable<ept id="p1">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Værdiregulering af udenlandsk valuta for kreditor og debitor<ept id="p1">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Configure vendor invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere kreditorfakturaer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Use Accounts payable to track invoices and outgoing expenditures to vendors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I Kreditorer kan du spore fakturaer og udgående betalinger til kreditorer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">[</bpt>Accounts payable invoice matching<ept id="p1">](accounts-payable-invoice-matching.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Fakturasammenholdelse for kreditorer<ept id="p1">](accounts-payable-invoice-matching.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>Vendor posting profiles<ept id="p1">](vendor-posting-profiles.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kreditorposteringsprofiler<ept id="p1">](vendor-posting-profiles.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>Set up accounts payable invoice matching validation<ept id="p1">](tasks/set-up-accounts-payable-invoice-matching-validation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Konfigurere validering af sammenholdelse af kreditorfakturaer<ept id="p1">](tasks/set-up-accounts-payable-invoice-matching-validation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt>Three-way matching policies<ept id="p1">](three-way-matching-policies.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Trevejs-sammenholdelsespolitikker<ept id="p1">](three-way-matching-policies.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt>Invoice matching and intercompany purchase orders<ept id="p1">](invoice-matching-intercompany-purchase-orders.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Fakturasammenholdelse og interne indkøbsordrer<ept id="p1">](invoice-matching-intercompany-purchase-orders.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">[</bpt>Resolve discrepancies during invoice totals matching<ept id="p1">](resolve-invoice-totals-invoice-matching-discrepancies.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Løse afvigelser under sammenholdelse af fakturatotaler<ept id="p1">](resolve-invoice-totals-invoice-matching-discrepancies.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">[</bpt>Default offset accounts for vendor invoice journals and invoice approval journals<ept id="p1">](default-offset-accounts-vendor-invoice-journals.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Standardmodkonti for kreditorfakturakladder og fakturagodkendelseskladder<ept id="p1">](default-offset-accounts-vendor-invoice-journals.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>Mobile invoice approvals<ept id="p1">](mobile-invoice-approvals.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Mobilfakturagodkendelser<ept id="p1">](mobile-invoice-approvals.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>Vendor collaboration invoicing workspace<ept id="p1">](vendor-portal-invoicing-workspace.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Arbejdsområde for kreditorsamarbejdsfakturering<ept id="p1">](vendor-portal-invoicing-workspace.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">[</bpt>Vendor invoice automation<ept id="p1">](vendor-invoice-automation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Automatisering af kreditorfaktura<ept id="p1">](vendor-invoice-automation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Configure vendor payments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere kreditorbetalinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Assign a system-defined payment type, such as check, electronic payment, or promissory note, to any user-defined method of payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tildel en systemdefineret betalingstype, f.eks check, elektronisk betaling eller egenveksel, til alle brugerdefinerede betalingsmåder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Payment types are optional, but they are useful when you validate electronic payments and want to be able to quickly determine which payment type a payment uses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betalingstyper er valgfrie, men de er nyttige, når du validerer elektroniske betalinger og vil være i stand til hurtigt at bestemme, hvilken betalingstype der benyttes i en betaling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">[</bpt>Vendor payments workspace<ept id="p1">](vendor-payments-workspace.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Arbejdsområde for kreditorbetalinger<ept id="p1">](vendor-payments-workspace.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">[</bpt>Define vendor payment fees<ept id="p1">](tasks/define-vendor-payment-fees.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definere kreditorbetalingsgebyrer<ept id="p1">](tasks/define-vendor-payment-fees.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">[</bpt>Define vendor payment terms<ept id="p1">](tasks/define-vendor-payment-terms.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definere kreditorbetalingsbetingelser<ept id="p1">](tasks/define-vendor-payment-terms.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">[</bpt>Positive pay overview<ept id="p1">](positive-pay-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oversigt over positive betalinger<ept id="p1">](positive-pay-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">[</bpt>Set up and generate positive pay files<ept id="p1">](set-up-generate-positive-pay-files.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Konfigurere og generere filer til positive betalinger<ept id="p1">](set-up-generate-positive-pay-files.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">[</bpt>Create vendor payments by using a payment proposal<ept id="p1">](create-vendor-payments-payment-proposal.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oprette kreditorbetalinger ved hjælp af et betalingsforslag<ept id="p1">](create-vendor-payments-payment-proposal.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">[</bpt>Vendor payments for a partial amount<ept id="p1">](vendor-payments-partial-amount.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kreditorbetalinger af et delvist beløb<ept id="p1">](vendor-payments-partial-amount.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">[</bpt>Take a discount that is more than the calculated discount for a vendor payment<ept id="p1">](take-discount-more-calculated-discount-vendor-payment.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Bruge en rabat, der er større end den beregnede rabat, til en kreditorbetaling<ept id="p1">](take-discount-more-calculated-discount-vendor-payment.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt>Take a cash discount outside the cash discount period<ept id="p1">](take-cash-discount-outside-cash-discount-timeframe.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Bruge en kasserabat uden for kasserabatperioden<ept id="p1">](take-cash-discount-outside-cash-discount-timeframe.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">[</bpt>Electronic reporting for vendor checks<ept id="p1">](electronic-reporting-sample-vendor-checks.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Elektronisk rapportering for kreditorchecks<ept id="p1">](electronic-reporting-sample-vendor-checks.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">[</bpt>Reverse a vendor payment<ept id="p1">](reverse-vendor-payment.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Tilbageføre en kreditorbetaling<ept id="p1">](reverse-vendor-payment.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">[</bpt>Prepayment invoices and prepayments overview<ept id="p1">](prepayments-invoices-vs-prepayments.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oversigt over forudbetalinger og forudbetalingsfakturaer<ept id="p1">](prepayments-invoices-vs-prepayments.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>Centralized payments for Accounts payable<ept id="p1">](centralized-payments-accounts-payable.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Centraliserede kreditorbetalinger<ept id="p1">](centralized-payments-accounts-payable.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Settlements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udligninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>The following topics provide information about settlements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Under følgende emner finder du oplysninger om udligninger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Settlement is the process of settling payments with invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udligningsprocessen omfatter udligning af betalinger med fakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source><bpt id="p1">[</bpt>Configure settlement<ept id="p1">](../cash-bank-management/configure-settlement.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Konfigurere udligning<ept id="p1">](../cash-bank-management/configure-settlement.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">[</bpt>Settle a partial vendor payment before the discount date<ept id="p1">](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Udligne en delvis kreditorbetaling før rabatdatoen<ept id="p1">](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">[</bpt>Settle a partial vendor payment that has discounts on vendor credit notes<ept id="p1">](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Udligne en delvis kreditorbetaling med rabatter på kreditorkreditnotaer<ept id="p1">](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">[</bpt>Settle a partial vendor payment that has multiple discount periods<ept id="p1">](settle-partial-vendor-payment-multiple-discount-periods.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Udligne en delvis kreditorbetaling, der omfatter flere rabatperioder<ept id="p1">](settle-partial-vendor-payment-multiple-discount-periods.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">[</bpt>Settle a partial vendor payment or final payment before discount<ept id="p1">](settle-partial-vendor-payment-or-final-payment-before-discount.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Udligne en delvis kreditorbetaling eller endelig betaling før rabat<ept id="p1">](settle-partial-vendor-payment-or-final-payment-before-discount.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">[</bpt>Single voucher with multiple customer or vendor records<ept id="p1">](single-voucher-multiple-customer-vendor-records.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Enkelt bilag med flere debitor- eller kreditorposter<ept id="p1">](single-voucher-multiple-customer-vendor-records.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere ressourcer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>What's new and in development</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyheder og funktioner under udvikling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Go to the <bpt id="p1">[</bpt>Microsoft Dynamics 365 Release Notes<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> to see what new features are planned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til <bpt id="p1">[</bpt>Microsoft Dynamics 365-produktbemærkninger<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> for at se, hvilke nye funktioner der er planlagt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Blogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blogs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>You can find opinions, news, and other information about Accounts payable and other solutions on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 blog<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept>and the <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Financials blog<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finde meninger, nyheder og andre oplysninger om Kreditor og andre løsninger på <bpt id="p1">[</bpt>Microsoft Dynamics 365-bloggen<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> og <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Finans-bloggen<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The <bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community-bloggen<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Community blogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fællesskabsblogge</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">[</bpt>How to manage payables in Dynamics 365 for Finance and Operations<ept id="p1">](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Sådan administreres kreditorer i Dynamics 365 for Finance and Operations<ept id="p1">](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Task guides</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opgaveguider</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Additional help is available as task guides inside Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere hjælp er tilgængelig som opgaveguider i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>To access task guides, click the Help button on any page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Videos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Videoer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Check out the how-to videos that are now available on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube Channel<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se de Sådan-videoer, der er nu tilgængelige på <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube-kanalen<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Startside for kreditor
+description: Dette emne giver en oversigt over kreditor.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 02/15/2019
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: VendInvoiceWorkspace
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 21901
+ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
+ms.search.region: Global
+ms.author: shylaw
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559451"
+---
+# <a name="accounts-payable-home-page"></a><span data-ttu-id="a26ff-103">Startside for kreditor</span><span class="sxs-lookup"><span data-stu-id="a26ff-103">Accounts payable home page</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a26ff-104">Dette emne giver en oversigt over kreditor.</span><span class="sxs-lookup"><span data-stu-id="a26ff-104">This topic provides an overview of Accounts payable.</span></span> 
+
+<span data-ttu-id="a26ff-105">Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed.</span><span class="sxs-lookup"><span data-stu-id="a26ff-105">You can enter vendor invoices manually or receive them electronically through a data entity.</span></span> <span data-ttu-id="a26ff-106">Når fakturaerne er blevet indtastet eller modtaget, kan du gennemse og godkende dem vha. en fakturagodkendelseskladde eller siden **Kreditorfaktura**.</span><span class="sxs-lookup"><span data-stu-id="a26ff-106">After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page.</span></span> <span data-ttu-id="a26ff-107">Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsgange til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav, automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.</span><span class="sxs-lookup"><span data-stu-id="a26ff-107">You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</span></span>
+
+<span data-ttu-id="a26ff-108">**Forretningsprocesser**</span><span class="sxs-lookup"><span data-stu-id="a26ff-108">**Business processes**</span></span>
+
+<span data-ttu-id="a26ff-109">[![Forretningsproces](./media/AP-process.PNG)](./media/AP-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="a26ff-109">[![Business process](./media/AP-process.PNG)](./media/AP-process.PNG)</span></span>
+
+## <a name="set-up-accounts-payable"></a><span data-ttu-id="a26ff-110">Konfigurere Kreditorer</span><span class="sxs-lookup"><span data-stu-id="a26ff-110">Set up Accounts payable</span></span>
+
+<span data-ttu-id="a26ff-111">Konfigurer kreditorgrupper, kreditorer, posteringsprofiler, forskellige betalingsindstillinger og parametre for kreditorer og indkøbsordrer, priser og rabatter, tillæg, supplerende varer, leveringer og destinationer, egenveksler og andre typer kreditoroplysninger.</span><span class="sxs-lookup"><span data-stu-id="a26ff-111">Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information.</span></span> 
+
+[<span data-ttu-id="a26ff-112">Konfigurere Kreditorer</span><span class="sxs-lookup"><span data-stu-id="a26ff-112">Configure Accounts payable</span></span>](accounts-payable-overview.md)
+
+[<span data-ttu-id="a26ff-113">Regnskabsfordelinger og kladdeposter for reskontro til kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="a26ff-113">Accounting distributions and subledger journal entries for vendor invoices</span></span>](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
+
+[<span data-ttu-id="a26ff-114">Værdiregulering af udenlandsk valuta for kreditor og debitor</span><span class="sxs-lookup"><span data-stu-id="a26ff-114">Foreign currency revaluation for Accounts payable and Accounts receivable</span></span>](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
+
+## <a name="configure-vendor-invoices"></a><span data-ttu-id="a26ff-115">Konfigurere kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="a26ff-115">Configure vendor invoices</span></span>
+
+<span data-ttu-id="a26ff-116">I Kreditorer kan du spore fakturaer og udgående betalinger til kreditorer.</span><span class="sxs-lookup"><span data-stu-id="a26ff-116">Use Accounts payable to track invoices and outgoing expenditures to vendors.</span></span>
+
+[<span data-ttu-id="a26ff-117">Fakturasammenholdelse for kreditorer</span><span class="sxs-lookup"><span data-stu-id="a26ff-117">Accounts payable invoice matching</span></span>](accounts-payable-invoice-matching.md)
+
+[<span data-ttu-id="a26ff-118">Kreditorposteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="a26ff-118">Vendor posting profiles</span></span>](vendor-posting-profiles.md)
+
+[<span data-ttu-id="a26ff-119">Konfigurere validering af sammenholdelse af kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="a26ff-119">Set up accounts payable invoice matching validation</span></span>](tasks/set-up-accounts-payable-invoice-matching-validation.md)
+
+[<span data-ttu-id="a26ff-120">Trevejs-sammenholdelsespolitikker</span><span class="sxs-lookup"><span data-stu-id="a26ff-120">Three-way matching policies</span></span>](three-way-matching-policies.md)
+
+[<span data-ttu-id="a26ff-121">Fakturasammenholdelse og interne indkøbsordrer</span><span class="sxs-lookup"><span data-stu-id="a26ff-121">Invoice matching and intercompany purchase orders</span></span>](invoice-matching-intercompany-purchase-orders.md)
+
+[<span data-ttu-id="a26ff-122">Løse afvigelser under sammenholdelse af fakturatotaler</span><span class="sxs-lookup"><span data-stu-id="a26ff-122">Resolve discrepancies during invoice totals matching</span></span>](resolve-invoice-totals-invoice-matching-discrepancies.md)
+
+[<span data-ttu-id="a26ff-123">Standardmodkonti for kreditorfakturakladder og fakturagodkendelseskladder</span><span class="sxs-lookup"><span data-stu-id="a26ff-123">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>](default-offset-accounts-vendor-invoice-journals.md)
+
+[<span data-ttu-id="a26ff-124">Mobilfakturagodkendelser</span><span class="sxs-lookup"><span data-stu-id="a26ff-124">Mobile invoice approvals</span></span>](mobile-invoice-approvals.md)
+
+[<span data-ttu-id="a26ff-125">Arbejdsområde for kreditorsamarbejdsfakturering</span><span class="sxs-lookup"><span data-stu-id="a26ff-125">Vendor collaboration invoicing workspace</span></span>](vendor-portal-invoicing-workspace.md)
+
+[<span data-ttu-id="a26ff-126">Automatisering af kreditorfaktura</span><span class="sxs-lookup"><span data-stu-id="a26ff-126">Vendor invoice automation</span></span>](vendor-invoice-automation.md)
+
+## <a name="configure-vendor-payments"></a><span data-ttu-id="a26ff-127">Konfigurere kreditorbetalinger</span><span class="sxs-lookup"><span data-stu-id="a26ff-127">Configure vendor payments</span></span> 
+
+<span data-ttu-id="a26ff-128">Tildel en systemdefineret betalingstype, f.eks check, elektronisk betaling eller egenveksel, til alle brugerdefinerede betalingsmåder.</span><span class="sxs-lookup"><span data-stu-id="a26ff-128">Assign a system-defined payment type, such as check, electronic payment, or promissory note, to any user-defined method of payment.</span></span> <span data-ttu-id="a26ff-129">Betalingstyper er valgfrie, men de er nyttige, når du validerer elektroniske betalinger og vil være i stand til hurtigt at bestemme, hvilken betalingstype der benyttes i en betaling.</span><span class="sxs-lookup"><span data-stu-id="a26ff-129">Payment types are optional, but they are useful when you validate electronic payments and want to be able to quickly determine which payment type a payment uses.</span></span> 
+
+[<span data-ttu-id="a26ff-130">Arbejdsområde for kreditorbetalinger</span><span class="sxs-lookup"><span data-stu-id="a26ff-130">Vendor payments workspace</span></span>](vendor-payments-workspace.md)
+
+[<span data-ttu-id="a26ff-131">Definere kreditorbetalingsgebyrer</span><span class="sxs-lookup"><span data-stu-id="a26ff-131">Define vendor payment fees</span></span>](tasks/define-vendor-payment-fees.md)
+
+[<span data-ttu-id="a26ff-132">Definere kreditorbetalingsbetingelser</span><span class="sxs-lookup"><span data-stu-id="a26ff-132">Define vendor payment terms</span></span>](tasks/define-vendor-payment-terms.md)
+
+[<span data-ttu-id="a26ff-133">Oversigt over positive betalinger</span><span class="sxs-lookup"><span data-stu-id="a26ff-133">Positive pay overview</span></span>](positive-pay-overview.md)
+
+[<span data-ttu-id="a26ff-134">Konfigurere og generere filer til positive betalinger</span><span class="sxs-lookup"><span data-stu-id="a26ff-134">Set up and generate positive pay files</span></span>](set-up-generate-positive-pay-files.md)
+
+[<span data-ttu-id="a26ff-135">Oprette kreditorbetalinger ved hjælp af et betalingsforslag</span><span class="sxs-lookup"><span data-stu-id="a26ff-135">Create vendor payments by using a payment proposal</span></span>](create-vendor-payments-payment-proposal.md)
+
+[<span data-ttu-id="a26ff-136">Kreditorbetalinger af et delvist beløb</span><span class="sxs-lookup"><span data-stu-id="a26ff-136">Vendor payments for a partial amount</span></span>](vendor-payments-partial-amount.md)
+
+[<span data-ttu-id="a26ff-137">Bruge en rabat, der er større end den beregnede rabat, til en kreditorbetaling</span><span class="sxs-lookup"><span data-stu-id="a26ff-137">Take a discount that is more than the calculated discount for a vendor payment</span></span>](take-discount-more-calculated-discount-vendor-payment.md)
+
+[<span data-ttu-id="a26ff-138">Bruge en kasserabat uden for kasserabatperioden</span><span class="sxs-lookup"><span data-stu-id="a26ff-138">Take a cash discount outside the cash discount period</span></span>](take-cash-discount-outside-cash-discount-timeframe.md)
+
+[<span data-ttu-id="a26ff-139">Elektronisk rapportering for kreditorchecks</span><span class="sxs-lookup"><span data-stu-id="a26ff-139">Electronic reporting for vendor checks</span></span>](electronic-reporting-sample-vendor-checks.md)
+
+[<span data-ttu-id="a26ff-140">Tilbageføre en kreditorbetaling</span><span class="sxs-lookup"><span data-stu-id="a26ff-140">Reverse a vendor payment</span></span>](reverse-vendor-payment.md)
+
+[<span data-ttu-id="a26ff-141">Oversigt over forudbetalinger og forudbetalingsfakturaer</span><span class="sxs-lookup"><span data-stu-id="a26ff-141">Prepayment invoices and prepayments overview</span></span>](prepayments-invoices-vs-prepayments.md)
+
+[<span data-ttu-id="a26ff-142">Centraliserede kreditorbetalinger</span><span class="sxs-lookup"><span data-stu-id="a26ff-142">Centralized payments for Accounts payable</span></span>](centralized-payments-accounts-payable.md)
+
+## <a name="settlements"></a><span data-ttu-id="a26ff-143">Udligninger</span><span class="sxs-lookup"><span data-stu-id="a26ff-143">Settlements</span></span>
+
+<span data-ttu-id="a26ff-144">Under følgende emner finder du oplysninger om udligninger.</span><span class="sxs-lookup"><span data-stu-id="a26ff-144">The following topics provide information about settlements.</span></span> <span data-ttu-id="a26ff-145">Udligningsprocessen omfatter udligning af betalinger med fakturaer.</span><span class="sxs-lookup"><span data-stu-id="a26ff-145">Settlement is the process of settling payments with invoices.</span></span> 
+
+[<span data-ttu-id="a26ff-146">Konfigurere udligning</span><span class="sxs-lookup"><span data-stu-id="a26ff-146">Configure settlement</span></span>](../cash-bank-management/configure-settlement.md)
+
+[<span data-ttu-id="a26ff-147">Udligne en delvis kreditorbetaling før rabatdatoen</span><span class="sxs-lookup"><span data-stu-id="a26ff-147">Settle a partial vendor payment before the discount date</span></span>](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+
+[<span data-ttu-id="a26ff-148">Udligne en delvis kreditorbetaling med rabatter på kreditorkreditnotaer</span><span class="sxs-lookup"><span data-stu-id="a26ff-148">Settle a partial vendor payment that has discounts on vendor credit notes</span></span>](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+
+[<span data-ttu-id="a26ff-149">Udligne en delvis kreditorbetaling, der omfatter flere rabatperioder</span><span class="sxs-lookup"><span data-stu-id="a26ff-149">Settle a partial vendor payment that has multiple discount periods</span></span>](settle-partial-vendor-payment-multiple-discount-periods.md)
+
+[<span data-ttu-id="a26ff-150">Udligne en delvis kreditorbetaling eller endelig betaling før rabat</span><span class="sxs-lookup"><span data-stu-id="a26ff-150">Settle a partial vendor payment or final payment before discount</span></span>](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+
+[<span data-ttu-id="a26ff-151">Enkelt bilag med flere debitor- eller kreditorposter</span><span class="sxs-lookup"><span data-stu-id="a26ff-151">Single voucher with multiple customer or vendor records</span></span>](single-voucher-multiple-customer-vendor-records.md)
+
+
+
+### <a name="additional-resources"></a><span data-ttu-id="a26ff-152">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a26ff-152">Additional resources</span></span>
+
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="a26ff-153">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="a26ff-153">What's new and in development</span></span>
+
+<span data-ttu-id="a26ff-154">Gå til [Microsoft Dynamics 365-produktbemærkninger](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt.</span><span class="sxs-lookup"><span data-stu-id="a26ff-154">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
+
+#### <a name="blogs"></a><span data-ttu-id="a26ff-155">Blogs</span><span class="sxs-lookup"><span data-stu-id="a26ff-155">Blogs</span></span>
+
+<span data-ttu-id="a26ff-156">Du kan finde meninger, nyheder og andre oplysninger om Kreditor og andre løsninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="a26ff-156">You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+
+<span data-ttu-id="a26ff-157">[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="a26ff-157">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+
+#### <a name="community-blogs"></a><span data-ttu-id="a26ff-158">Fællesskabsblogge</span><span class="sxs-lookup"><span data-stu-id="a26ff-158">Community blogs</span></span>
+
+[<span data-ttu-id="a26ff-159">Sådan administreres kreditorer i Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="a26ff-159">How to manage payables in Dynamics 365 for Finance and Operations</span></span>](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+
+#### <a name="task-guides"></a><span data-ttu-id="a26ff-160">Opgaveguider</span><span class="sxs-lookup"><span data-stu-id="a26ff-160">Task guides</span></span>
+<span data-ttu-id="a26ff-161">Yderligere hjælp er tilgængelig som opgaveguider i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a26ff-161">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="a26ff-162">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</span><span class="sxs-lookup"><span data-stu-id="a26ff-162">To access task guides, click the Help button on any page.</span></span>
+
+#### <a name="videos"></a><span data-ttu-id="a26ff-163">Videoer</span><span class="sxs-lookup"><span data-stu-id="a26ff-163">Videos</span></span>
+
+<span data-ttu-id="a26ff-164">Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="a26ff-164">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+
+
+
+

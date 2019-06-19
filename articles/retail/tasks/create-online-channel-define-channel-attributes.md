@@ -1,132 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="create-online-channel-define-channel-attributes.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>create-online-channel-define-channel-attributes.74288c.4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\tasks\create-online-channel-define-channel-attributes.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Create online channel and define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opret onlinekanal og definer kanalattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks through creating a new online channel and adding it to the organization hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Create online channel and define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opret onlinekanal og definer kanalattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks through creating a new online channel and adding it to the organization hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>You must create the organization hierarchy before you can create a new online channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du skal oprette organisationshierarkiet, før du kan oprette en ny onlinekanal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This procedure uses the USRT demo data company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proceduren bruger USRT-demodatafirmaet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Create a new online channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opret en ny onlinekanal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Go to Retail and commerce &gt; Channels &gt; Online stores.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Detail og handel &gt; Kanaler &gt; Onlinebutikker.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>In the Name field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Navn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>In the Warehouse field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Lagersted.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>In the Store time zone field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Lagertidszone.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the Default customer field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Standardkunde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the Customer address book field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Kundeadressekartotek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>In the Terms of payment field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Betalingsbetingelse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>In the Method of payment field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Betalingsmåde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>In the Email notification profile field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Profil til e-mailbesked.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Expand the Financial dimensions section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Økonomiske dimensioner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>In the BusinessUnit field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet BusinessUnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Similarly set the value for all the other default dimensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På samme måde kan du angive værdien for alle andre standarddimensioner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Add the online channel to organization hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Føj onlinekanalen til organisationshierarkiet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Go to Organization administration &gt; Organizations &gt; Organization hierarchies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Virksomhedsadministration &gt; Organisationer &gt; Organisationshierarkier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>In the list, find and select the desired record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Click View.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Vis.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rediger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>You can select any hierarchy node under which you want to insert the new channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan vælge en hvilket som helst hierarkinode, hvor du vil indsætte den nye kanal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Click Insert.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Indsæt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Click Retail channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Detailkanal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Click Publish to open the drop dialog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Publicer for at åbne dialogboksen Fjern.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>In the Effective date field, enter a date and time.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click Publish.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Klik på Publicer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Configure orders for near realtime notification</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Konfigurere ordrer for næsten i realtids-påmindelse</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Go to Retail  &gt; Headquarters setup &gt; Parameters &gt; Retail parameters.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Gå til Detail &gt; Opsætning af Headquarters &gt; Parametre &gt; Detailparametre.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Set Use realtime service for eCommerce order creation to "Yes".</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Vælg "Ja" i Brug realtidstjeneste til oprettelse af eCommerce-ordre.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Run the 1070 distribution schedule to sync changes to the channel database.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Kør distributionsplanen 1070 for at synkronisere ændringerne til kanaldatabasen.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Opret onlinekanal og definer kanalattributter
+description: Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet.
+author: jashanno
+manager: AnnBe
+ms.date: 06/04/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: jashanno
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618290"
+---
+# <a name="create-online-channel-and-define-channel-attributes"></a><span data-ttu-id="30617-103">Opret onlinekanal og definer kanalattributter</span><span class="sxs-lookup"><span data-stu-id="30617-103">Create online channel and define channel attributes</span></span>
+
+[!include[task guide banner](../includes/task-guide-banner.md)]
+
+<span data-ttu-id="30617-104">Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet.</span><span class="sxs-lookup"><span data-stu-id="30617-104">This procedure walks through creating a new online channel and adding it to the organization hierarchy.</span></span> <span data-ttu-id="30617-105">Du skal oprette organisationshierarkiet, før du kan oprette en ny onlinekanal.</span><span class="sxs-lookup"><span data-stu-id="30617-105">You must create the organization hierarchy before you can create a new online channel.</span></span> <span data-ttu-id="30617-106">Proceduren bruger USRT-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="30617-106">This procedure uses the USRT demo data company.</span></span>
+
+
+## <a name="create-a-new-online-channel"></a><span data-ttu-id="30617-107">Opret en ny onlinekanal</span><span class="sxs-lookup"><span data-stu-id="30617-107">Create a new online channel</span></span>
+1. <span data-ttu-id="30617-108">Gå til Detail og handel > Kanaler > Onlinebutikker.</span><span class="sxs-lookup"><span data-stu-id="30617-108">Go to Retail and commerce > Channels > Online stores.</span></span>
+2. <span data-ttu-id="30617-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="30617-109">Click New.</span></span>
+3. <span data-ttu-id="30617-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="30617-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="30617-111">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="30617-111">In the Warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="30617-112">Vælg en indstilling i feltet Lagertidszone.</span><span class="sxs-lookup"><span data-stu-id="30617-112">In the Store time zone field, select an option.</span></span>
+6. <span data-ttu-id="30617-113">Indtast eller vælg en værdi i feltet Standardkunde.</span><span class="sxs-lookup"><span data-stu-id="30617-113">In the Default customer field, enter or select a value.</span></span>
+7. <span data-ttu-id="30617-114">Indtast eller vælg en værdi i feltet Kundeadressekartotek.</span><span class="sxs-lookup"><span data-stu-id="30617-114">In the Customer address book field, enter or select a value.</span></span>
+8. <span data-ttu-id="30617-115">Indtast eller vælg en værdi i feltet Betalingsbetingelse.</span><span class="sxs-lookup"><span data-stu-id="30617-115">In the Terms of payment field, enter or select a value.</span></span>
+9. <span data-ttu-id="30617-116">Indtast eller vælg en værdi i feltet Betalingsmåde.</span><span class="sxs-lookup"><span data-stu-id="30617-116">In the Method of payment field, enter or select a value.</span></span>
+10. <span data-ttu-id="30617-117">Indtast eller vælg en værdi i feltet Profil til e-mailbesked.</span><span class="sxs-lookup"><span data-stu-id="30617-117">In the Email notification profile field, enter or select a value.</span></span>
+11. <span data-ttu-id="30617-118">Udvid sektionen Økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="30617-118">Expand the Financial dimensions section.</span></span>
+12. <span data-ttu-id="30617-119">Indtast eller vælg en værdi i feltet BusinessUnit.</span><span class="sxs-lookup"><span data-stu-id="30617-119">In the BusinessUnit field, enter or select a value.</span></span>
+    * <span data-ttu-id="30617-120">På samme måde kan du angive værdien for alle andre standarddimensioner.</span><span class="sxs-lookup"><span data-stu-id="30617-120">Similarly set the value for all the other default dimensions.</span></span>  
+13. <span data-ttu-id="30617-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="30617-121">Click Save.</span></span>
+
+## <a name="add-the-online-channel-to-organization-hierarchy"></a><span data-ttu-id="30617-122">Føj onlinekanalen til organisationshierarkiet</span><span class="sxs-lookup"><span data-stu-id="30617-122">Add the online channel to organization hierarchy</span></span>
+1. <span data-ttu-id="30617-123">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="30617-123">Close the page.</span></span>
+2. <span data-ttu-id="30617-124">Gå til Virksomhedsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="30617-124">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+3. <span data-ttu-id="30617-125">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="30617-125">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="30617-126">Klik på Vis.</span><span class="sxs-lookup"><span data-stu-id="30617-126">Click View.</span></span>
+5. <span data-ttu-id="30617-127">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="30617-127">Click Edit.</span></span>
+    * <span data-ttu-id="30617-128">Du kan vælge en hvilket som helst hierarkinode, hvor du vil indsætte den nye kanal.</span><span class="sxs-lookup"><span data-stu-id="30617-128">You can select any hierarchy node under which you want to insert the new channel.</span></span>  
+6. <span data-ttu-id="30617-129">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="30617-129">Click Insert.</span></span>
+7. <span data-ttu-id="30617-130">Klik på Detailkanal.</span><span class="sxs-lookup"><span data-stu-id="30617-130">Click Retail channel.</span></span>
+8. <span data-ttu-id="30617-131">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="30617-131">Click OK.</span></span>
+9. <span data-ttu-id="30617-132">Klik på Publicer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="30617-132">Click Publish to open the drop dialog.</span></span>
+10. <span data-ttu-id="30617-133">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="30617-133">In the Effective date field, enter a date and time.</span></span>
+11. <span data-ttu-id="30617-134">Klik på Publicer.</span><span class="sxs-lookup"><span data-stu-id="30617-134">Click Publish.</span></span>
+
+## <a name="configure-orders-for-near-realtime-notification"></a><span data-ttu-id="30617-135">Konfigurere ordrer for næsten i realtids-påmindelse</span><span class="sxs-lookup"><span data-stu-id="30617-135">Configure orders for near realtime notification</span></span>
+1. <span data-ttu-id="30617-136">Gå til Detail > Opsætning af Headquarters > Parametre > Detailparametre.</span><span class="sxs-lookup"><span data-stu-id="30617-136">Go to Retail  > Headquarters setup > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="30617-137">Vælg "Ja" i Brug realtidstjeneste til oprettelse af eCommerce-ordre.</span><span class="sxs-lookup"><span data-stu-id="30617-137">Set Use realtime service for eCommerce order creation to "Yes".</span></span>
+3. <span data-ttu-id="30617-138">Kør distributionsplanen 1070 for at synkronisere ændringerne til kanaldatabasen.</span><span class="sxs-lookup"><span data-stu-id="30617-138">Run the 1070 distribution schedule to sync changes to the channel database.</span></span> 
+
+

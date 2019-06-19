@@ -1,228 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="post-project-invoice-payment-slip.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>post-project-invoice-payment-slip.91d8fb.641aa65e2d2b8bbb8e94cb25868a8dfa6e811bab.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>641aa65e2d2b8bbb8e94cb25868a8dfa6e811bab</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\post-project-invoice-payment-slip.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Post a project invoice with a payment slip</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bogføre en projektfaktura med et indbetalingskort</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>You can post a free text invoice with a payment slip attachment in a specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Post a project invoice with a payment slip</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bogføre en projektfaktura med et indbetalingskort</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can post a free text invoice with a payment slip attachment in a specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The payment slip is printed with the creditor identification number and invoice number to identify the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Før du kan udføre denne procedure, skal du først oprette et indbetalingskortformat og oprette indbetalingskort til kundefakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This functionality is available for legal entities whose primary address is in Denmark.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This procedure was created using the demo data company DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Go to Accounts receivable &gt; Customers &gt; All customers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Kunder &gt; Alle kunder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>In the list, find and select the desired record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Expand or collapse the Invoice and delivery section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis eller skjul sektionen Faktura og levering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rediger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the On a project invoice field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I feltet På en projektfaktura skal du vælge en indstilling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>o None – Do not print a payment slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">o Ingen – Udskriv ikke et indbetalingskort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>o   FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">o FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>o    FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">o FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Click the TabPageGrid tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen TabPageGrid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Go to Project management and accounting &gt; Projects &gt; Project contracts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Projektstyring og regnskab &gt; Projekter &gt; Projektkontrakter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>In the Name field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Navn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>In the Funding source field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Finansieringskilde for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>In the Sales currency field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In the list, find and select the desired record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>In the Sales currency field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>In the list, find and select the desired record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>The payment slip can be printed only for a project invoice with the currency Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indbetalingskortet kan kun udskrives for en projektfaktura med valutaen danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Go to Project management and accounting &gt; Projects &gt; All projects.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Projektstyring og regnskab &gt; Projekter &gt; Alle projekter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>In the Project type field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Projekttype.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>In the Project name field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Projektnavn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>In the Project group field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Projektgruppe for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>In the Project contract ID field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Projektkontrakt-id for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>In the list, find and select the desired record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click Create project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opret projekt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>On the Action Pane, click Project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Projekt i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Click Project stage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Projektstadie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Click In process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Under behandling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>On the Action Pane, click Manage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Administrer i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Click On-account transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Acontotransaktioner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In the list, mark the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markér den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>In the Sales price field, enter a number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv et tal i feltet Salgspris.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>On the Action Pane, click Manage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Administrer i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Click Project invoice proposals.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Projektfakturaforslag.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Click Invoice proposal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Fakturaforslag.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>In the Project field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Projekt for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>In the Project contract field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Projektkontrakt for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>In the list, find and select the desired record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg den ønskede post på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Click Post.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Bogfør.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Bogføre en projektfaktura med et indbetalingskort
+description: Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
+author: EvgenyPopovMBS
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate, ProjInvoiceTable, ProjProjectsListPage, ProjTableCreate, ProjGroupLookUp, ProjTable,  ProjTransOnAcc, ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Denmark
+ms.author: epopov
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 641aa65e2d2b8bbb8e94cb25868a8dfa6e811bab
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552468"
+---
+# <a name="post-a-project-invoice-with-a-payment-slip"></a><span data-ttu-id="ebf2c-103">Bogføre en projektfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="ebf2c-103">Post a project invoice with a payment slip</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="ebf2c-104">Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-104">You can post a free text invoice with a payment slip attachment in a specified format.</span></span> <span data-ttu-id="ebf2c-105">Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-105">The payment slip is printed with the creditor identification number and invoice number to identify the payment.</span></span>
+
+<span data-ttu-id="ebf2c-106">Før du kan udføre denne procedure, skal du først oprette et indbetalingskortformat og oprette indbetalingskort til kundefakturaer.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-106">Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices.</span></span> 
+
+
+
+<span data-ttu-id="ebf2c-107">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-107">This functionality is available for legal entities whose primary address is in Denmark.</span></span> 
+
+<span data-ttu-id="ebf2c-108">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-108">This procedure was created using the demo data company DEMF.</span></span>
+
+1. <span data-ttu-id="ebf2c-109">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-109">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="ebf2c-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="ebf2c-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="ebf2c-112">Vis eller skjul sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-112">Expand or collapse the Invoice and delivery section.</span></span>
+5. <span data-ttu-id="ebf2c-113">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-113">Click Edit.</span></span>
+6. <span data-ttu-id="ebf2c-114">I feltet På en projektfaktura skal du vælge en indstilling.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-114">In the On a project invoice field, select an option.</span></span>
+    * <span data-ttu-id="ebf2c-115">o Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-115">o None – Do not print a payment slip.</span></span> <span data-ttu-id="ebf2c-116">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="ebf2c-116">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="ebf2c-117">o FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-117">o   FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="ebf2c-118">o FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-118">o    FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>     
+7. <span data-ttu-id="ebf2c-119">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-119">Click Save.</span></span>
+8. <span data-ttu-id="ebf2c-120">Klik på fanen TabPageGrid.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-120">Click the TabPageGrid tab.</span></span>
+9. <span data-ttu-id="ebf2c-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-121">Close the page.</span></span>
+10. <span data-ttu-id="ebf2c-122">Gå til Projektstyring og regnskab > Projekter > Projektkontrakter.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-122">Go to Project management and accounting > Projects > Project contracts.</span></span>
+11. <span data-ttu-id="ebf2c-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-123">Click New.</span></span>
+12. <span data-ttu-id="ebf2c-124">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-124">In the Name field, type a value.</span></span>
+13. <span data-ttu-id="ebf2c-125">Klik på rullelisten i feltet Finansieringskilde for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-125">In the Funding source field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="ebf2c-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-126">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="ebf2c-127">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-127">In the Sales currency field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="ebf2c-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-128">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="ebf2c-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-129">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="ebf2c-130">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-130">In the Sales currency field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="ebf2c-131">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-131">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="ebf2c-132">Indbetalingskortet kan kun udskrives for en projektfaktura med valutaen danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="ebf2c-132">The payment slip can be printed only for a project invoice with the currency Danish kroner (DKK).</span></span>  
+20. <span data-ttu-id="ebf2c-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-133">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="ebf2c-134">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-134">Click OK.</span></span>
+22. <span data-ttu-id="ebf2c-135">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-135">Click Save.</span></span>
+23. <span data-ttu-id="ebf2c-136">Gå til Projektstyring og regnskab > Projekter > Alle projekter.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-136">Go to Project management and accounting > Projects > All projects.</span></span>
+24. <span data-ttu-id="ebf2c-137">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-137">Click New.</span></span>
+25. <span data-ttu-id="ebf2c-138">Vælg en indstilling i feltet Projekttype.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-138">In the Project type field, select an option.</span></span>
+26. <span data-ttu-id="ebf2c-139">Skriv en værdi i feltet Projektnavn.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-139">In the Project name field, type a value.</span></span>
+27. <span data-ttu-id="ebf2c-140">Klik på rullelisten i feltet Projektgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-140">In the Project group field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="ebf2c-141">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-141">In the list, click the link in the selected row.</span></span>
+29. <span data-ttu-id="ebf2c-142">Klik på rullelisten i feltet Projektkontrakt-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-142">In the Project contract ID field, click the drop-down button to open the lookup.</span></span>
+30. <span data-ttu-id="ebf2c-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-143">In the list, find and select the desired record.</span></span>
+31. <span data-ttu-id="ebf2c-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-144">In the list, click the link in the selected row.</span></span>
+32. <span data-ttu-id="ebf2c-145">Klik på Opret projekt.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-145">Click Create project.</span></span>
+33. <span data-ttu-id="ebf2c-146">Klik på Projekt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-146">On the Action Pane, click Project.</span></span>
+34. <span data-ttu-id="ebf2c-147">Klik på Projektstadie.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-147">Click Project stage.</span></span>
+35. <span data-ttu-id="ebf2c-148">Klik på Under behandling.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-148">Click In process.</span></span>
+36. <span data-ttu-id="ebf2c-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-149">Click OK.</span></span>
+37. <span data-ttu-id="ebf2c-150">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-150">Click Save.</span></span>
+38. <span data-ttu-id="ebf2c-151">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-151">On the Action Pane, click Manage.</span></span>
+39. <span data-ttu-id="ebf2c-152">Klik på Acontotransaktioner.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-152">Click On-account transactions.</span></span>
+40. <span data-ttu-id="ebf2c-153">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-153">Click New.</span></span>
+41. <span data-ttu-id="ebf2c-154">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-154">In the list, mark the selected row.</span></span>
+42. <span data-ttu-id="ebf2c-155">Angiv et tal i feltet Salgspris.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-155">In the Sales price field, enter a number.</span></span>
+43. <span data-ttu-id="ebf2c-156">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-156">Click Save.</span></span>
+44. <span data-ttu-id="ebf2c-157">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-157">Close the page.</span></span>
+45. <span data-ttu-id="ebf2c-158">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-158">On the Action Pane, click Manage.</span></span>
+46. <span data-ttu-id="ebf2c-159">Klik på Projektfakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-159">Click Project invoice proposals.</span></span>
+47. <span data-ttu-id="ebf2c-160">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-160">Click New.</span></span>
+48. <span data-ttu-id="ebf2c-161">Klik på Fakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-161">Click Invoice proposal.</span></span>
+49. <span data-ttu-id="ebf2c-162">Klik på rullelisten i feltet Projekt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-162">In the Project field, click the drop-down button to open the lookup.</span></span>
+50. <span data-ttu-id="ebf2c-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-163">Close the page.</span></span>
+51. <span data-ttu-id="ebf2c-164">Klik på rullelisten i feltet Projektkontrakt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-164">In the Project contract field, click the drop-down button to open the lookup.</span></span>
+52. <span data-ttu-id="ebf2c-165">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-165">In the list, find and select the desired record.</span></span>
+53. <span data-ttu-id="ebf2c-166">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-166">In the list, click the link in the selected row.</span></span>
+54. <span data-ttu-id="ebf2c-167">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-167">Click OK.</span></span>
+55. <span data-ttu-id="ebf2c-168">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-168">Click Post.</span></span>
+56. <span data-ttu-id="ebf2c-169">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-169">Click OK.</span></span>
+57. <span data-ttu-id="ebf2c-170">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebf2c-170">Click OK.</span></span>
+

@@ -1,144 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="set-up-derived-financial-hierarchy-public-sector.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>set-up-derived-financial-hierarchy-public-sector.f9ae31.d4a48a7df85a653d9feb3e336d39f0950ed13dbd.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d4a48a7df85a653d9feb3e336d39f0950ed13dbd</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\public-sector\tasks\set-up-derived-financial-hierarchy-public-sector.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Set up a derived financial hierarchy in the public sector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere et afledt finansielt hierarki i den offentlige sektor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>To meet Common Government-wide Accounting Classification (CGAC) requirements, public sector organizations can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Set up a derived financial hierarchy in the public sector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere et afledt finansielt hierarki i den offentlige sektor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>To meet Common Government-wide Accounting Classification (CGAC) requirements, public sector organizations can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This procedure was created using the PSUS demo company data in the public sector partition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Create a category hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opret et kategorihierarki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Go to Product information management &gt; Setup &gt; Categories and attributes &gt; Category hierarchies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til administration af produktoplysninger &gt; Opsætning af &gt; Kategorier og attributter &gt; Kategorihierarkier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In the Name field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Navn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>In the Description field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Beskrivelse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Click Create.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click New category node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny kategorinode.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the Name field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Navn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the Code field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Kode.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Click New category node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny kategorinode.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>In the Name field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Navn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>In the Code field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Kode.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>(Optional) Add additional child nodes, or set additional options for the nodes that you have created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Valgfrit) Tilføj yderligere underordnede noder, eller angiv yderligere indstillinger for de noder, du har oprettet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Assign the Derived financial hierarchy category type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tildele det afledte økonomiske hierarkis kategoritype</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Go to Product information management &gt; Setup &gt; Categories and attributes &gt; Category hierarchy role associations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til administration af produktoplysninger &gt; Opsætning &gt; Kategorier og attributter &gt; Tilknytninger af kategorihierarkiroller.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>In the Category hierarchy type field, select 'Derived financial hierarchy'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Afledt økonomisk hierarki" i feltet Kategori for hierarkitype.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>In the Category hierarchy field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Kategorihierarki for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>In the list, click the Category hierarchy to associate with the Derived financial hierarchy type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på kategorihierarkiet, der skal knyttes til typen af afledt økonomisk hierarki, på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Associate the derived financial hierarchy with a legal entity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilknytte det afledte økonomiske hierarki med en juridisk enhed</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Go to General ledger &gt; Chart of accounts &gt; Dimensions &gt; Associate financial hierarchies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Finans &gt; Diagram over konti &gt; Dimensioner &gt; Tilknyt økonomiske hierarkier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>In the Legal entity field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Juridisk enhed for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>In the list, select the legal entity to associate with the derived financial hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg den juridiske enhed, som skal tilknyttes det afledte økonomiske hierarki, på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>In the Derived financial hierarchy field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Afledt økonomisk hierarki for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>In the list, select the derived financial hierarchy to associate with the legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg det afledte økonomiske hierarki, som skal tilknyttes den juridiske enhed, på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Create filter rules for the derived financial hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette filterregler for det afledte økonomiske hierarki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Go to General ledger &gt; Chart of accounts &gt; Dimensions &gt; Derived financial hierarchies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Finans &gt; Diagram over konti &gt; Dimensioner &gt; Afledte økonomiske hierarkier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>In the Derived financial hierarchy field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Afledt økonomisk hierarki for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>In the list, click the hierarchy to create filter rules for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på det hierarki, du vil oprette filterregler for, på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>In the tree, select 'In the tree, select a child node.'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Vælg en underordnet node i træet" i træet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Click Edit filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rediger filter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Click Add new criteria to begin adding rules to the filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj nye kriterier for at begynde at tilføje regler til filteret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>After you've added all of the criteria, click Activate filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du har tilføjet alle kriterierne, skal du klikke på Aktivér filter.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Konfigurere et afledt finansielt hierarki i den offentlige sektor
+description: For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier.
+author: twheeloc
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchyLegalEntities, LedgerDerivedFinHierarchies
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.search.industry: Public sector
+ms.author: twheeloc
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d4a48a7df85a653d9feb3e336d39f0950ed13dbd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557172"
+---
+# <a name="set-up-a-derived-financial-hierarchy-in-the-public-sector"></a><span data-ttu-id="74e99-103">Konfigurere et afledt finansielt hierarki i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="74e99-103">Set up a derived financial hierarchy in the public sector</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="74e99-104">For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier.</span><span class="sxs-lookup"><span data-stu-id="74e99-104">To meet Common Government-wide Accounting Classification (CGAC) requirements, public sector organizations can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values.</span></span> <span data-ttu-id="74e99-105">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="74e99-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
+
+
+## <a name="create-a-category-hierarchy"></a><span data-ttu-id="74e99-106">Opret et kategorihierarki</span><span class="sxs-lookup"><span data-stu-id="74e99-106">Create a category hierarchy</span></span>
+1. <span data-ttu-id="74e99-107">Gå til administration af produktoplysninger > Opsætning af > Kategorier og attributter > Kategorihierarkier.</span><span class="sxs-lookup"><span data-stu-id="74e99-107">Go to Product information management > Setup > Categories and attributes > Category hierarchies.</span></span>
+2. <span data-ttu-id="74e99-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="74e99-108">Click New.</span></span>
+3. <span data-ttu-id="74e99-109">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="74e99-109">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="74e99-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="74e99-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="74e99-111">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="74e99-111">Click Create.</span></span>
+6. <span data-ttu-id="74e99-112">Klik på Ny kategorinode.</span><span class="sxs-lookup"><span data-stu-id="74e99-112">Click New category node.</span></span>
+7. <span data-ttu-id="74e99-113">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="74e99-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="74e99-114">Skriv en værdi i feltet Kode.</span><span class="sxs-lookup"><span data-stu-id="74e99-114">In the Code field, type a value.</span></span>
+9. <span data-ttu-id="74e99-115">Klik på Ny kategorinode.</span><span class="sxs-lookup"><span data-stu-id="74e99-115">Click New category node.</span></span>
+10. <span data-ttu-id="74e99-116">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="74e99-116">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="74e99-117">Skriv en værdi i feltet Kode.</span><span class="sxs-lookup"><span data-stu-id="74e99-117">In the Code field, type a value.</span></span>
+    * <span data-ttu-id="74e99-118">(Valgfrit) Tilføj yderligere underordnede noder, eller angiv yderligere indstillinger for de noder, du har oprettet.</span><span class="sxs-lookup"><span data-stu-id="74e99-118">(Optional) Add additional child nodes, or set additional options for the nodes that you have created.</span></span>  
+12. <span data-ttu-id="74e99-119">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="74e99-119">Click Save.</span></span>
+
+## <a name="assign-the-derived-financial-hierarchy-category-type"></a><span data-ttu-id="74e99-120">Tildele det afledte økonomiske hierarkis kategoritype</span><span class="sxs-lookup"><span data-stu-id="74e99-120">Assign the Derived financial hierarchy category type</span></span>
+1. <span data-ttu-id="74e99-121">Gå til administration af produktoplysninger > Opsætning > Kategorier og attributter > Tilknytninger af kategorihierarkiroller.</span><span class="sxs-lookup"><span data-stu-id="74e99-121">Go to Product information management > Setup > Categories and attributes > Category hierarchy role associations.</span></span>
+2. <span data-ttu-id="74e99-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="74e99-122">Click New.</span></span>
+3. <span data-ttu-id="74e99-123">Vælg "Afledt økonomisk hierarki" i feltet Kategori for hierarkitype.</span><span class="sxs-lookup"><span data-stu-id="74e99-123">In the Category hierarchy type field, select 'Derived financial hierarchy'.</span></span>
+4. <span data-ttu-id="74e99-124">Klik på rullelisten i feltet Kategorihierarki for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="74e99-124">In the Category hierarchy field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="74e99-125">Klik på kategorihierarkiet, der skal knyttes til typen af afledt økonomisk hierarki, på listen.</span><span class="sxs-lookup"><span data-stu-id="74e99-125">In the list, click the Category hierarchy to associate with the Derived financial hierarchy type.</span></span>
+6. <span data-ttu-id="74e99-126">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="74e99-126">Click Save.</span></span>
+
+## <a name="associate-the-derived-financial-hierarchy-with-a-legal-entity"></a><span data-ttu-id="74e99-127">Tilknytte det afledte økonomiske hierarki med en juridisk enhed</span><span class="sxs-lookup"><span data-stu-id="74e99-127">Associate the derived financial hierarchy with a legal entity</span></span>
+1. <span data-ttu-id="74e99-128">Gå til Finans > Diagram over konti > Dimensioner > Tilknyt økonomiske hierarkier.</span><span class="sxs-lookup"><span data-stu-id="74e99-128">Go to General ledger > Chart of accounts > Dimensions > Associate financial hierarchies.</span></span>
+2. <span data-ttu-id="74e99-129">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="74e99-129">Click New.</span></span>
+3. <span data-ttu-id="74e99-130">Klik på rullelisten i feltet Juridisk enhed for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="74e99-130">In the Legal entity field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="74e99-131">Vælg den juridiske enhed, som skal tilknyttes det afledte økonomiske hierarki, på listen.</span><span class="sxs-lookup"><span data-stu-id="74e99-131">In the list, select the legal entity to associate with the derived financial hierarchy.</span></span>
+5. <span data-ttu-id="74e99-132">Klik på rullelisten i feltet Afledt økonomisk hierarki for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="74e99-132">In the Derived financial hierarchy field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="74e99-133">Vælg det afledte økonomiske hierarki, som skal tilknyttes den juridiske enhed, på listen.</span><span class="sxs-lookup"><span data-stu-id="74e99-133">In the list, select the derived financial hierarchy to associate with the legal entity.</span></span>
+7. <span data-ttu-id="74e99-134">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="74e99-134">Click Save.</span></span>
+
+## <a name="create-filter-rules-for-the-derived-financial-hierarchy"></a><span data-ttu-id="74e99-135">Oprette filterregler for det afledte økonomiske hierarki</span><span class="sxs-lookup"><span data-stu-id="74e99-135">Create filter rules for the derived financial hierarchy</span></span>
+1. <span data-ttu-id="74e99-136">Gå til Finans > Diagram over konti > Dimensioner > Afledte økonomiske hierarkier.</span><span class="sxs-lookup"><span data-stu-id="74e99-136">Go to General ledger > Chart of accounts > Dimensions > Derived financial hierarchies.</span></span>
+2. <span data-ttu-id="74e99-137">Klik på rullelisten i feltet Afledt økonomisk hierarki for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="74e99-137">In the Derived financial hierarchy field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="74e99-138">Klik på det hierarki, du vil oprette filterregler for, på listen.</span><span class="sxs-lookup"><span data-stu-id="74e99-138">In the list, click the hierarchy to create filter rules for.</span></span>
+4. <span data-ttu-id="74e99-139">Vælg "Vælg en underordnet node i træet" i træet.</span><span class="sxs-lookup"><span data-stu-id="74e99-139">In the tree, select 'In the tree, select a child node.'.</span></span>
+5. <span data-ttu-id="74e99-140">Klik på Rediger filter.</span><span class="sxs-lookup"><span data-stu-id="74e99-140">Click Edit filter.</span></span>
+    * <span data-ttu-id="74e99-141">Klik på Tilføj nye kriterier for at begynde at tilføje regler til filteret.</span><span class="sxs-lookup"><span data-stu-id="74e99-141">Click Add new criteria to begin adding rules to the filter.</span></span> <span data-ttu-id="74e99-142">Når du har tilføjet alle kriterierne, skal du klikke på Aktivér filter.</span><span class="sxs-lookup"><span data-stu-id="74e99-142">After you've added all of the criteria, click Activate filter.</span></span>  
+
