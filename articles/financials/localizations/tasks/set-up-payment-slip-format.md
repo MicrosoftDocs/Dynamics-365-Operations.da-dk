@@ -1,177 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="set-up-payment-slip-format.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>set-up-payment-slip-format.9a6817.d548fbb1cb1c52d657e055d972a673c78f5a89f0.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d548fbb1cb1c52d657e055d972a673c78f5a89f0</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\set-up-payment-slip-format.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Set up payment slip format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere indbetalingskortformat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Set up payment slip format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere indbetalingskortformat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indbetalingskortet kan bruges til projekt- eller servicefakturaer, rykkere, rentenotaer og kontoopgørelser samt til salgsfakturaer og fritekstfakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>To process payment slips, first set up your creditor identification number and payment slip attachment formats.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For at generere indbetalingskort skal du først oprette et kreditor-id-nummer og formater for vedhæftningen af indbetalingskortet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This recording uses the DEMF demo company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne registrering anvender demofirmaet DEMF.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This functionality is available for legal entities whose primary address is in Denmark.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Set up a creditor ID number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette et kreditor-id-nummer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Go to Organization administration &gt; Organizations &gt; Legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Virksomhedsadministration &gt; Organisationer &gt; Juridiske enheder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Expand or collapse the Bank account information section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid eller skjul sektionen Bankkontooplysninger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rediger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the FI-Creditor ID field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet FI-kreditor-id.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Set up a payment slip format for invoices, notes, letters, and statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette et indbetalingskortformat for debitorer, notaer, rykkere og opgørelser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Go to Accounts receivable &gt; Setup &gt; Forms &gt; Form setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Opsætning &gt; Formularer &gt; Formularopsætning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Click the Invoice tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Faktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>In the Associated payment attachment on customer invoice field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Tilknyttet betalingsbilag på debitorfaktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>None – Do not print a payment slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen – Udskriv ikke et indbetalingskort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Click the Free text invoice tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Fritekstfaktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>In the Associated payment attachment on free text invoice field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Tilknyttet betalingsbilag på fritekstfaktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>None – Do not print a payment slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen – Udskriv ikke et indbetalingskort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Click the Interest note tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Rentenota.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>In the Associated payment attachment on interest note field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Tilknyttet betalingsbilag på rentenota.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>None – Do not print a payment slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen – Udskriv ikke et indbetalingskort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Click the Collection letter tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Rykker.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>In the Associated payment attachment on collection letter field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Tilknyttet betalingsbilag på rykker.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>None – Do not print a payment slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen – Udskriv ikke et indbetalingskort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Click the Account statement tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Kontoudtog.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>In the Associated payment attachment on account statement field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Tilknyttet betalingsbilag på kontoudtog.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>None – Do not print a payment slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen – Udskriv ikke et indbetalingskort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Konfigurere indbetalingskortformat
+description: Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.
+author: EvgenyPopovMBS
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: OMLegalEntity, CustFormletterParameters
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Denmark
+ms.author: epopov
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d548fbb1cb1c52d657e055d972a673c78f5a89f0
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549036"
+---
+# <a name="set-up-payment-slip-format"></a><span data-ttu-id="27816-103">Konfigurere indbetalingskortformat</span><span class="sxs-lookup"><span data-stu-id="27816-103">Set up payment slip format</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="27816-104">Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.</span><span class="sxs-lookup"><span data-stu-id="27816-104">Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</span></span> <span data-ttu-id="27816-105">Indbetalingskortet kan bruges til projekt- eller servicefakturaer, rykkere, rentenotaer og kontoopgørelser samt til salgsfakturaer og fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="27816-105">The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.</span></span> <span data-ttu-id="27816-106">For at generere indbetalingskort skal du først oprette et kreditor-id-nummer og formater for vedhæftningen af indbetalingskortet.</span><span class="sxs-lookup"><span data-stu-id="27816-106">To process payment slips, first set up your creditor identification number and payment slip attachment formats.</span></span>
+
+<span data-ttu-id="27816-107">Denne registrering anvender demofirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="27816-107">This recording uses the DEMF demo company.</span></span> 
+
+<span data-ttu-id="27816-108">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</span><span class="sxs-lookup"><span data-stu-id="27816-108">This functionality is available for legal entities whose primary address is in Denmark.</span></span>
+
+
+## <a name="set-up-a-creditor-id-number"></a><span data-ttu-id="27816-109">Oprette et kreditor-id-nummer</span><span class="sxs-lookup"><span data-stu-id="27816-109">Set up a creditor ID number</span></span>
+1. <span data-ttu-id="27816-110">Gå til Virksomhedsadministration > Organisationer > Juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="27816-110">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="27816-111">Udvid eller skjul sektionen Bankkontooplysninger.</span><span class="sxs-lookup"><span data-stu-id="27816-111">Expand or collapse the Bank account information section.</span></span>
+3. <span data-ttu-id="27816-112">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="27816-112">Click Edit.</span></span>
+4. <span data-ttu-id="27816-113">Skriv en værdi i feltet FI-kreditor-id.</span><span class="sxs-lookup"><span data-stu-id="27816-113">In the FI-Creditor ID field, type a value.</span></span>
+5. <span data-ttu-id="27816-114">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="27816-114">Click Save.</span></span>
+6. <span data-ttu-id="27816-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="27816-115">Close the page.</span></span>
+
+## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a><span data-ttu-id="27816-116">Oprette et indbetalingskortformat for debitorer, notaer, rykkere og opgørelser</span><span class="sxs-lookup"><span data-stu-id="27816-116">Set up a payment slip format for invoices, notes, letters, and statements</span></span>
+1. <span data-ttu-id="27816-117">Gå til Debitor > Opsætning > Formularer > Formularopsætning.</span><span class="sxs-lookup"><span data-stu-id="27816-117">Go to Accounts receivable > Setup > Forms > Form setup.</span></span>
+2. <span data-ttu-id="27816-118">Klik på fanen Faktura.</span><span class="sxs-lookup"><span data-stu-id="27816-118">Click the Invoice tab.</span></span>
+3. <span data-ttu-id="27816-119">Vælg en indstilling i feltet Tilknyttet betalingsbilag på debitorfaktura.</span><span class="sxs-lookup"><span data-stu-id="27816-119">In the Associated payment attachment on customer invoice field, select an option.</span></span>
+    * <span data-ttu-id="27816-120">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="27816-120">None – Do not print a payment slip.</span></span> <span data-ttu-id="27816-121">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="27816-121">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="27816-122">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="27816-122">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="27816-123">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="27816-123">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+4. <span data-ttu-id="27816-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="27816-124">Click Save.</span></span>
+5. <span data-ttu-id="27816-125">Klik på fanen Fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="27816-125">Click the Free text invoice tab.</span></span>
+6. <span data-ttu-id="27816-126">Vælg en indstilling i feltet Tilknyttet betalingsbilag på fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="27816-126">In the Associated payment attachment on free text invoice field, select an option.</span></span>
+    * <span data-ttu-id="27816-127">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="27816-127">None – Do not print a payment slip.</span></span> <span data-ttu-id="27816-128">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="27816-128">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="27816-129">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="27816-129">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="27816-130">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="27816-130">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+7. <span data-ttu-id="27816-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="27816-131">Click Save.</span></span>
+8. <span data-ttu-id="27816-132">Klik på fanen Rentenota.</span><span class="sxs-lookup"><span data-stu-id="27816-132">Click the Interest note tab.</span></span>
+9. <span data-ttu-id="27816-133">Vælg en indstilling i feltet Tilknyttet betalingsbilag på rentenota.</span><span class="sxs-lookup"><span data-stu-id="27816-133">In the Associated payment attachment on interest note field, select an option.</span></span>
+    * <span data-ttu-id="27816-134">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="27816-134">None – Do not print a payment slip.</span></span> <span data-ttu-id="27816-135">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="27816-135">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="27816-136">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="27816-136">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="27816-137">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="27816-137">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+10. <span data-ttu-id="27816-138">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="27816-138">Click Save.</span></span>
+11. <span data-ttu-id="27816-139">Klik på fanen Rykker.</span><span class="sxs-lookup"><span data-stu-id="27816-139">Click the Collection letter tab.</span></span>
+12. <span data-ttu-id="27816-140">Vælg en indstilling i feltet Tilknyttet betalingsbilag på rykker.</span><span class="sxs-lookup"><span data-stu-id="27816-140">In the Associated payment attachment on collection letter field, select an option.</span></span>
+    * <span data-ttu-id="27816-141">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="27816-141">None – Do not print a payment slip.</span></span> <span data-ttu-id="27816-142">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="27816-142">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="27816-143">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="27816-143">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="27816-144">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="27816-144">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+13. <span data-ttu-id="27816-145">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="27816-145">Click Save.</span></span>
+14. <span data-ttu-id="27816-146">Klik på fanen Kontoudtog.</span><span class="sxs-lookup"><span data-stu-id="27816-146">Click the Account statement tab.</span></span>
+15. <span data-ttu-id="27816-147">Vælg en indstilling i feltet Tilknyttet betalingsbilag på kontoudtog.</span><span class="sxs-lookup"><span data-stu-id="27816-147">In the Associated payment attachment on account statement field, select an option.</span></span>
+    * <span data-ttu-id="27816-148">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="27816-148">None – Do not print a payment slip.</span></span> <span data-ttu-id="27816-149">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="27816-149">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="27816-150">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="27816-150">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="27816-151">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="27816-151">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+16. <span data-ttu-id="27816-152">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="27816-152">Click Save.</span></span>
+17. <span data-ttu-id="27816-153">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="27816-153">Close the page.</span></span>
+

@@ -1,204 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00012-issue-eu-entry-certificate.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00012-issue-eu-entry-certificate.2f67ef.5a566b1d25064e3fccc8953dc883aa63bd16a301.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>5a566b1d25064e3fccc8953dc883aa63bd16a301</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00012-issue-eu-entry-certificate.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00012 Issue an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Udstede et EU-posteringscertifikat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure fører dig gennem aktivering af et EU-posteringscertifikat og konfiguration af en debitorkonto for at bruge indførselscertifikater og udstede et certifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00012 Issue an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Udstede et EU-posteringscertifikat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure fører dig gennem aktivering af et EU-posteringscertifikat og konfiguration af en debitorkonto for at bruge indførselscertifikater og udstede et certifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This procedure was created using the demo data company DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Enable entry certificate management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivér administration af indførselscertifikater</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Go to Accounts receivable &gt; Setup &gt; Accounts receivable parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Opsætning &gt; Debitorparametre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Click the Shipments tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Forsendelser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Expand the Entry certificate section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Postcertifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select Yes in the Enable entry certificate management field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Aktivér administration af indførselscertifikater.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Select Yes in the Enable entry certificate issuing field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Aktivér udstedelse af indførselscertifikater.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click the Number sequences tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Nummerserier.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the list, find and select Entry certificate row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find og vælg rækken Postcertifikat på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the Number sequence code field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv eller vælg en værdi i feltet Nummerseriekode.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Set up a customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette en kunde</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Go to Accounts receivable &gt; Customers &gt; All customers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Kunder &gt; Alle kunder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Use the Quick Filter to find records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brug Quick Filter til at finde poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>For example, filter on the Account field with a value of 'DE-015'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtrer f.eks. efter feltet Konto med værdien "DE-015".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Open customer account details.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Åbn kundens kontooplysninger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Rediger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Expand the Invoice and delivery section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Faktura og levering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Select Yes in the Entry certificate required field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Postcertifikat er påkrævet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Select Yes in the Issue entry certificate field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Udsted indførselscertifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Create an EU entry certificate automatically</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette et EU-posteringscertifikat automatisk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Go to Accounts receivable &gt; Orders &gt; All sales orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Ordrer &gt; Alle salgsordrer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In the Customer account field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Kundekonto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>In the Item number field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi i feltet Varenummer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>On the Action Pane, click Pick and pack.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Pluk og pak i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Click Post packing slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Bogfør følgeseddel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Expand the Parameters section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udvid sektionen Parametre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In the Quantity field, select 'All'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg "Alle" i feltet Antal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Clear the Issue entry certificate check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fjern markeringen i feltet Udsted indførselscertifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>An entry certificate can be issued during packing slip posting or during order invoicing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et postcertifikat kan udstedes, når følgesedlen bogføres eller under fakturering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Leave the Issue entry certificate checkbox unchecked to issue it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lad afkrydsningsfeltet Udsted indførselscertifikat være umarkeret for at udstede det senere.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at afkrydsningsfelterne Postcertifikat er påkrævet og Udsted indførselscertifikat i afsnittet Oversigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>You can also select the Print entry certificate check box to allow printing of the certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også markere afkrydsningsfeltet Udskriv indførselscertifikat for at tillade udskrivning af certifikatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Click View issued entry certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Vis udstedte indførselscertifikater.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Click Print.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Udskriv.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Click Change status.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Skift status.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In the New status field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg en indstilling i feltet Ny status.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Create an EU entry certificate manually</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprette et EU-posteringscertifikat manuelt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Click Create entry certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Opret indførselscertifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Click View issued entry certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Vis udstedte indførselscertifikater.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00012 Udstede et EU-posteringscertifikat
+description: Denne procedure fører dig gennem aktivering af et EU-posteringscertifikat og konfiguration af en debitorkonto for at bruge indførselscertifikater og udstede et certifikat.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5a566b1d25064e3fccc8953dc883aa63bd16a301
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566770"
+---
+# <a name="eur-00012-issue-an-eu-entry-certificate"></a><span data-ttu-id="cc441-103">EUR-00012 Udstede et EU-posteringscertifikat</span><span class="sxs-lookup"><span data-stu-id="cc441-103">EUR-00012 Issue an EU entry certificate</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="cc441-104">Denne procedure fører dig gennem aktivering af et EU-posteringscertifikat og konfiguration af en debitorkonto for at bruge indførselscertifikater og udstede et certifikat.</span><span class="sxs-lookup"><span data-stu-id="cc441-104">This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</span></span> <span data-ttu-id="cc441-105">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="cc441-105">This procedure was created using the demo data company DEMF.</span></span>
+
+
+## <a name="enable-entry-certificate-management"></a><span data-ttu-id="cc441-106">Aktivér administration af indførselscertifikater</span><span class="sxs-lookup"><span data-stu-id="cc441-106">Enable entry certificate management</span></span>
+1. <span data-ttu-id="cc441-107">Gå til Debitor > Opsætning > Debitorparametre.</span><span class="sxs-lookup"><span data-stu-id="cc441-107">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="cc441-108">Klik på fanen Forsendelser.</span><span class="sxs-lookup"><span data-stu-id="cc441-108">Click the Shipments tab.</span></span>
+3. <span data-ttu-id="cc441-109">Udvid sektionen Postcertifikat.</span><span class="sxs-lookup"><span data-stu-id="cc441-109">Expand the Entry certificate section.</span></span>
+4. <span data-ttu-id="cc441-110">Vælg Ja i feltet Aktivér administration af indførselscertifikater.</span><span class="sxs-lookup"><span data-stu-id="cc441-110">Select Yes in the Enable entry certificate management field.</span></span>
+5. <span data-ttu-id="cc441-111">Vælg Ja i feltet Aktivér udstedelse af indførselscertifikater.</span><span class="sxs-lookup"><span data-stu-id="cc441-111">Select Yes in the Enable entry certificate issuing field.</span></span>
+6. <span data-ttu-id="cc441-112">Klik på fanen Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="cc441-112">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="cc441-113">Find og vælg rækken Postcertifikat på listen.</span><span class="sxs-lookup"><span data-stu-id="cc441-113">In the list, find and select Entry certificate row.</span></span>
+8. <span data-ttu-id="cc441-114">Skriv eller vælg en værdi i feltet Nummerseriekode.</span><span class="sxs-lookup"><span data-stu-id="cc441-114">In the Number sequence code field, enter or select a value.</span></span>
+
+## <a name="set-up-a-customer"></a><span data-ttu-id="cc441-115">Oprette en kunde</span><span class="sxs-lookup"><span data-stu-id="cc441-115">Set up a customer</span></span>
+1. <span data-ttu-id="cc441-116">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="cc441-116">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="cc441-117">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="cc441-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="cc441-118">Filtrer f.eks. efter feltet Konto med værdien "DE-015".</span><span class="sxs-lookup"><span data-stu-id="cc441-118">For example, filter on the Account field with a value of 'DE-015'.</span></span>
+3. <span data-ttu-id="cc441-119">Åbn kundens kontooplysninger.</span><span class="sxs-lookup"><span data-stu-id="cc441-119">Open customer account details.</span></span>
+4. <span data-ttu-id="cc441-120">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="cc441-120">Click Edit.</span></span>
+5. <span data-ttu-id="cc441-121">Udvid sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="cc441-121">Expand the Invoice and delivery section.</span></span>
+6. <span data-ttu-id="cc441-122">Vælg Ja i feltet Postcertifikat er påkrævet.</span><span class="sxs-lookup"><span data-stu-id="cc441-122">Select Yes in the Entry certificate required field.</span></span>
+7. <span data-ttu-id="cc441-123">Vælg Ja i feltet Udsted indførselscertifikat.</span><span class="sxs-lookup"><span data-stu-id="cc441-123">Select Yes in the Issue entry certificate field.</span></span>
+8. <span data-ttu-id="cc441-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="cc441-124">Click Save.</span></span>
+
+## <a name="create-an-eu-entry-certificate-automatically"></a><span data-ttu-id="cc441-125">Oprette et EU-posteringscertifikat automatisk</span><span class="sxs-lookup"><span data-stu-id="cc441-125">Create an EU entry certificate automatically</span></span>
+1. <span data-ttu-id="cc441-126">Gå til Debitor > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="cc441-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="cc441-127">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="cc441-127">Click New.</span></span>
+3. <span data-ttu-id="cc441-128">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="cc441-128">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="cc441-129">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-129">Click OK.</span></span>
+5. <span data-ttu-id="cc441-130">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="cc441-130">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="cc441-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="cc441-131">Click Save.</span></span>
+7. <span data-ttu-id="cc441-132">Klik på fanen Pluk og pak i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cc441-132">On the Action Pane, click Pick and pack.</span></span>
+8. <span data-ttu-id="cc441-133">Klik på Bogfør følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="cc441-133">Click Post packing slip.</span></span>
+9. <span data-ttu-id="cc441-134">Udvid sektionen Parametre.</span><span class="sxs-lookup"><span data-stu-id="cc441-134">Expand the Parameters section.</span></span>
+10. <span data-ttu-id="cc441-135">Vælg "Alle" i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="cc441-135">In the Quantity field, select 'All'.</span></span>
+11. <span data-ttu-id="cc441-136">Fjern markeringen i feltet Udsted indførselscertifikat.</span><span class="sxs-lookup"><span data-stu-id="cc441-136">Clear the Issue entry certificate check box.</span></span>
+    * <span data-ttu-id="cc441-137">Et postcertifikat kan udstedes, når følgesedlen bogføres eller under fakturering.</span><span class="sxs-lookup"><span data-stu-id="cc441-137">An entry certificate can be issued during packing slip posting or during order invoicing.</span></span> <span data-ttu-id="cc441-138">Lad afkrydsningsfeltet Udsted indførselscertifikat være umarkeret for at udstede det senere.</span><span class="sxs-lookup"><span data-stu-id="cc441-138">Leave the Issue entry certificate checkbox unchecked to issue it later.</span></span>  
+12. <span data-ttu-id="cc441-139">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-139">Click OK.</span></span>
+13. <span data-ttu-id="cc441-140">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-140">Click OK.</span></span>
+14. <span data-ttu-id="cc441-141">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cc441-141">On the Action Pane, click Invoice.</span></span>
+15. <span data-ttu-id="cc441-142">Klik på Faktura.</span><span class="sxs-lookup"><span data-stu-id="cc441-142">Click Invoice.</span></span>
+    * <span data-ttu-id="cc441-143">Kontroller, at afkrydsningsfelterne Postcertifikat er påkrævet og Udsted indførselscertifikat i afsnittet Oversigt.</span><span class="sxs-lookup"><span data-stu-id="cc441-143">Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</span></span>  <span data-ttu-id="cc441-144">Du kan også markere afkrydsningsfeltet Udskriv indførselscertifikat for at tillade udskrivning af certifikatet.</span><span class="sxs-lookup"><span data-stu-id="cc441-144">You can also select the Print entry certificate check box to allow printing of the certificate.</span></span>  
+16. <span data-ttu-id="cc441-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-145">Click OK.</span></span>
+17. <span data-ttu-id="cc441-146">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-146">Click OK.</span></span>
+18. <span data-ttu-id="cc441-147">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cc441-147">On the Action Pane, click Invoice.</span></span>
+19. <span data-ttu-id="cc441-148">Klik på Faktura.</span><span class="sxs-lookup"><span data-stu-id="cc441-148">Click Invoice.</span></span>
+20. <span data-ttu-id="cc441-149">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cc441-149">On the Action Pane, click Invoice.</span></span>
+21. <span data-ttu-id="cc441-150">Klik på Vis udstedte indførselscertifikater.</span><span class="sxs-lookup"><span data-stu-id="cc441-150">Click View issued entry certificates.</span></span>
+22. <span data-ttu-id="cc441-151">Klik på Udskriv.</span><span class="sxs-lookup"><span data-stu-id="cc441-151">Click Print.</span></span>
+23. <span data-ttu-id="cc441-152">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="cc441-152">Close the page.</span></span>
+24. <span data-ttu-id="cc441-153">Klik på Skift status.</span><span class="sxs-lookup"><span data-stu-id="cc441-153">Click Change status.</span></span>
+25. <span data-ttu-id="cc441-154">Vælg en indstilling i feltet Ny status.</span><span class="sxs-lookup"><span data-stu-id="cc441-154">In the New status field, select an option.</span></span>
+26. <span data-ttu-id="cc441-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-155">Click OK.</span></span>
+27. <span data-ttu-id="cc441-156">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="cc441-156">Close the page.</span></span>
+
+## <a name="create-an-eu-entry-certificate-manually"></a><span data-ttu-id="cc441-157">Oprette et EU-posteringscertifikat manuelt</span><span class="sxs-lookup"><span data-stu-id="cc441-157">Create an EU entry certificate manually</span></span>
+1. <span data-ttu-id="cc441-158">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cc441-158">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="cc441-159">Klik på Opret indførselscertifikat.</span><span class="sxs-lookup"><span data-stu-id="cc441-159">Click Create entry certificate.</span></span>
+3. <span data-ttu-id="cc441-160">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cc441-160">Click OK.</span></span>
+4. <span data-ttu-id="cc441-161">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cc441-161">On the Action Pane, click Invoice.</span></span>
+5. <span data-ttu-id="cc441-162">Klik på Vis udstedte indførselscertifikater.</span><span class="sxs-lookup"><span data-stu-id="cc441-162">Click View issued entry certificates.</span></span>
+

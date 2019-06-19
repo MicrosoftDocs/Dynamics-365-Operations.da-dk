@@ -1,189 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00002-specify-lading-address-intra-community.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00002-specify-lading-address-intra-community.11a8c5.4db22444bee1590770a47ca5946941b530ae85ce.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4db22444bee1590770a47ca5946941b530ae85ce</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00002-specify-lading-address-intra-community.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00002 Specifying a lading address for an intra-community transaction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 Angive en fragtadresse for en transaktion inden for fællesskabet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure shows how to specify a lading address for an intra-community trade transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne fremgangsmåde viser, hvordan du angiver en læsningsadresse for en transaktion handel i EU.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00002 Specifying a lading address for an intra-community transaction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 Angive en fragtadresse for en transaktion inden for fællesskabet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure shows how to specify a lading address for an intra-community trade transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne fremgangsmåde viser, hvordan du angiver en læsningsadresse for en transaktion handel i EU.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>For example, a Germany company orders items from a vendor with a German business address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempelvis bestiller en virksomhed i Tyskland varer fra en leverandør med en tysk firmaadresse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This vendor has a warehouse in Italy and ships the items from there.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne leverandør har et lagersted i Italien og leverer varerne derfra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This delivery must be reported in the Intrastat.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne levering skal rapporteres i Intrastat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The same behavior is valid for customer returns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samme funktionsmåde gælder for returvarer fra kunder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>This procedure applies to all European countries/regions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure gælder for alle europæiske lande.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The task was created using the demo data company DEMF with a primary address in Germany.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne opgave blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Before you can complete this procedure, you must configure Intrastat reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Før du kan fuldføre denne procedure, skal du konfigurere Intrastat-rapportering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>This procedure is intended for accountants.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure er kun beregnet til bogholdere.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Go to Accounts payable &gt; Purchase orders &gt; All purchase orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Kreditor &gt; Indkøbsordrer &gt; Alle indkøbsordrer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Enter or select a value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg en værdi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>For example, select DE-001.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg f.eks. DE-001.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>This vendor has a German business address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne kreditor har en tysk firmaadresse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>In the list, mark the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markér den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>In the Item number field, enter or select a value D0001.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg værdien D0001 i feltet Varenummer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>On the Action Pane, click Receive.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Modtag i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click Transportation details.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Transportdetaljer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>In the Loading date and time field, enter a date and time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angiv en dato og et klokkeslæt i feltet Dato og klokkeslæt for læsning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Click Add address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Tilføj adresse,</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Click New and create new address with purpose Lading.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny, og opret en ny adresse med formålet Læsning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In the Name or description field, type 'Italian'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv Italien i feltet Navn eller beskrivelse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Select Lading as the value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg værdien Læsning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Note that that address purpose must be Lading.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bemærk, at adressens formål for være Læsning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>In the Country/region field, enter or select a value ITA.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast eller vælg værdien ITA i feltet Land/område.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Verify that the lading address is correct.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at læsningsadressen er korrekt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>On the Action Pane, click Purchase.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Køb i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Click Confirm.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Bekræft.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura i handlingsruden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Faktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>In the Number field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Nummer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>In the Invoice date field, enter a date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtast en dato i feltet Fakturadato.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Click Default from: Product receipt quantity to open the drop dialog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Modtag fra: Antal produktkvitteringer for at åbne dialogboksen Fjern.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>In the Default quantity for lines field, select 'Ordered quantity'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg 'Bestilt antal' i feltet Standardmængde for linjer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Click Transportation details.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Transportdetaljer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Verify that goods were shipped from Italy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller, at varerne er afsendt fra Italien.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>If necessary, you can edit the lading details.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis det er nødvendigt, kan du redigere læsningsoplysningerne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Click Post.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Bogfør.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luk siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Skat &gt; Erklæringer &gt; Udenrigshandel &gt; Intrastat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Click Transfer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Overførsel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Select Yes in the Vendor invoice field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vælg Ja i feltet Kreditorfaktura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på OK.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Click the General tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på fanen Generelt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Find a newly created line and verify that the sender shipped the goods from Italy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Find en nyoprettet linje, og kontroller, at afsenderen har leveret varerne fra Italien.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00002 Angive en fragtadresse for en transaktion inden for fællesskabet
+description: Denne fremgangsmåde viser, hvordan du angiver en læsningsadresse for en transaktion handel i EU.
+author: v-oloski
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: v-oloski
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4db22444bee1590770a47ca5946941b530ae85ce
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564410"
+---
+# <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="24fa0-103">EUR-00002 Angive en fragtadresse for en transaktion inden for fællesskabet</span><span class="sxs-lookup"><span data-stu-id="24fa0-103">EUR-00002 Specifying a lading address for an intra-community transaction</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="24fa0-104">Denne fremgangsmåde viser, hvordan du angiver en læsningsadresse for en transaktion handel i EU.</span><span class="sxs-lookup"><span data-stu-id="24fa0-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="24fa0-105">Eksempelvis bestiller en virksomhed i Tyskland varer fra en leverandør med en tysk firmaadresse.</span><span class="sxs-lookup"><span data-stu-id="24fa0-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="24fa0-106">Denne leverandør har et lagersted i Italien og leverer varerne derfra.</span><span class="sxs-lookup"><span data-stu-id="24fa0-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="24fa0-107">Denne levering skal rapporteres i Intrastat.</span><span class="sxs-lookup"><span data-stu-id="24fa0-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="24fa0-108">Samme funktionsmåde gælder for returvarer fra kunder.</span><span class="sxs-lookup"><span data-stu-id="24fa0-108">The same behavior is valid for customer returns.</span></span>
+<span data-ttu-id="24fa0-109">Denne procedure gælder for alle europæiske lande.</span><span class="sxs-lookup"><span data-stu-id="24fa0-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="24fa0-110">Denne opgave blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland.</span><span class="sxs-lookup"><span data-stu-id="24fa0-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="24fa0-111">Før du kan fuldføre denne procedure, skal du konfigurere Intrastat-rapportering.</span><span class="sxs-lookup"><span data-stu-id="24fa0-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="24fa0-112">Denne procedure er kun beregnet til bogholdere.</span><span class="sxs-lookup"><span data-stu-id="24fa0-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="24fa0-113">Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="24fa0-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+
+1. <span data-ttu-id="24fa0-114">Gå til Kreditor > Indkøbsordrer > Alle indkøbsordrer.</span><span class="sxs-lookup"><span data-stu-id="24fa0-114">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="24fa0-115">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="24fa0-115">Click New.</span></span>
+3. <span data-ttu-id="24fa0-116">Indtast eller vælg en værdi</span><span class="sxs-lookup"><span data-stu-id="24fa0-116">Enter or select a value</span></span>
+    * <span data-ttu-id="24fa0-117">Vælg f.eks. DE-001.</span><span class="sxs-lookup"><span data-stu-id="24fa0-117">For example, select DE-001.</span></span> <span data-ttu-id="24fa0-118">Denne kreditor har en tysk firmaadresse.</span><span class="sxs-lookup"><span data-stu-id="24fa0-118">This vendor has a German business address.</span></span>  
+4. <span data-ttu-id="24fa0-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="24fa0-119">Click OK.</span></span>
+5. <span data-ttu-id="24fa0-120">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="24fa0-120">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="24fa0-121">Indtast eller vælg værdien D0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="24fa0-121">In the Item number field, enter or select a value D0001.</span></span>
+7. <span data-ttu-id="24fa0-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="24fa0-122">Click Save.</span></span>
+8. <span data-ttu-id="24fa0-123">Klik på Modtag i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-123">On the Action Pane, click Receive.</span></span>
+9. <span data-ttu-id="24fa0-124">Klik på Transportdetaljer.</span><span class="sxs-lookup"><span data-stu-id="24fa0-124">Click Transportation details.</span></span>
+10. <span data-ttu-id="24fa0-125">Angiv en dato og et klokkeslæt i feltet Dato og klokkeslæt for læsning.</span><span class="sxs-lookup"><span data-stu-id="24fa0-125">In the Loading date and time field, enter a date and time.</span></span>
+11. <span data-ttu-id="24fa0-126">Klik på Tilføj adresse,</span><span class="sxs-lookup"><span data-stu-id="24fa0-126">Click Add address.</span></span>
+12. <span data-ttu-id="24fa0-127">Klik på Ny, og opret en ny adresse med formålet Læsning.</span><span class="sxs-lookup"><span data-stu-id="24fa0-127">Click New and create new address with purpose Lading.</span></span>
+13. <span data-ttu-id="24fa0-128">Skriv Italien i feltet Navn eller beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="24fa0-128">In the Name or description field, type 'Italian'.</span></span>
+14. <span data-ttu-id="24fa0-129">Vælg værdien Læsning.</span><span class="sxs-lookup"><span data-stu-id="24fa0-129">Select Lading as the value.</span></span>
+    * <span data-ttu-id="24fa0-130">Bemærk, at adressens formål for være Læsning.</span><span class="sxs-lookup"><span data-stu-id="24fa0-130">Note that that address purpose must be Lading.</span></span>  
+15. <span data-ttu-id="24fa0-131">Indtast eller vælg værdien ITA i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="24fa0-131">In the Country/region field, enter or select a value ITA.</span></span>
+16. <span data-ttu-id="24fa0-132">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="24fa0-132">Click Save.</span></span>
+17. <span data-ttu-id="24fa0-133">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-133">Close the page.</span></span>
+18. <span data-ttu-id="24fa0-134">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="24fa0-134">Click Save.</span></span>
+    * <span data-ttu-id="24fa0-135">Kontroller, at læsningsadressen er korrekt.</span><span class="sxs-lookup"><span data-stu-id="24fa0-135">Verify that the lading address is correct.</span></span>  
+19. <span data-ttu-id="24fa0-136">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-136">Close the page.</span></span>
+20. <span data-ttu-id="24fa0-137">Klik på Køb i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-137">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="24fa0-138">Klik på Bekræft.</span><span class="sxs-lookup"><span data-stu-id="24fa0-138">Click Confirm.</span></span>
+22. <span data-ttu-id="24fa0-139">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-139">On the Action Pane, click Invoice.</span></span>
+23. <span data-ttu-id="24fa0-140">Klik på Faktura.</span><span class="sxs-lookup"><span data-stu-id="24fa0-140">Click Invoice.</span></span>
+24. <span data-ttu-id="24fa0-141">Skriv en værdi i feltet Nummer.</span><span class="sxs-lookup"><span data-stu-id="24fa0-141">In the Number field, type a value.</span></span>
+25. <span data-ttu-id="24fa0-142">Indtast en dato i feltet Fakturadato.</span><span class="sxs-lookup"><span data-stu-id="24fa0-142">In the Invoice date field, enter a date.</span></span>
+26. <span data-ttu-id="24fa0-143">Klik på Modtag fra: Antal produktkvitteringer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="24fa0-143">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
+27. <span data-ttu-id="24fa0-144">Vælg 'Bestilt antal' i feltet Standardmængde for linjer.</span><span class="sxs-lookup"><span data-stu-id="24fa0-144">In the Default quantity for lines field, select 'Ordered quantity'.</span></span>
+28. <span data-ttu-id="24fa0-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="24fa0-145">Click OK.</span></span>
+29. <span data-ttu-id="24fa0-146">Klik på Transportdetaljer.</span><span class="sxs-lookup"><span data-stu-id="24fa0-146">Click Transportation details.</span></span>
+    * <span data-ttu-id="24fa0-147">Kontroller, at varerne er afsendt fra Italien.</span><span class="sxs-lookup"><span data-stu-id="24fa0-147">Verify that goods were shipped from Italy.</span></span> <span data-ttu-id="24fa0-148">Hvis det er nødvendigt, kan du redigere læsningsoplysningerne.</span><span class="sxs-lookup"><span data-stu-id="24fa0-148">If necessary, you can edit the lading details.</span></span>  
+30. <span data-ttu-id="24fa0-149">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-149">Close the page.</span></span>
+31. <span data-ttu-id="24fa0-150">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="24fa0-150">Click Post.</span></span>
+32. <span data-ttu-id="24fa0-151">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="24fa0-151">Close the page.</span></span>
+33. <span data-ttu-id="24fa0-152">Gå til Skat > Erklæringer > Udenrigshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="24fa0-152">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+34. <span data-ttu-id="24fa0-153">Klik på Overførsel.</span><span class="sxs-lookup"><span data-stu-id="24fa0-153">Click Transfer.</span></span>
+35. <span data-ttu-id="24fa0-154">Vælg Ja i feltet Kreditorfaktura.</span><span class="sxs-lookup"><span data-stu-id="24fa0-154">Select Yes in the Vendor invoice field.</span></span>
+36. <span data-ttu-id="24fa0-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="24fa0-155">Click OK.</span></span>
+37. <span data-ttu-id="24fa0-156">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="24fa0-156">Click the General tab.</span></span>
+    * <span data-ttu-id="24fa0-157">Find en nyoprettet linje, og kontroller, at afsenderen har leveret varerne fra Italien.</span><span class="sxs-lookup"><span data-stu-id="24fa0-157">Find a newly created line and verify that the sender shipped the goods from Italy.</span></span>  
+

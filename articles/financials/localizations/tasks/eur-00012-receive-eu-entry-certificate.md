@@ -1,57 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00012-receive-eu-entry-certificate.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00012-receive-eu-entry-certificate.b0206c.cbcf6d8dc71b833b3d90e72e7ef6c9d438241640.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>cbcf6d8dc71b833b3d90e72e7ef6c9d438241640</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00012-receive-eu-entry-certificate.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00012 Receive an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Modtage et EU-indførselscertifikat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure fører dig gennem registrering af et EU-posteringscertifikat udstedt af en tredjepart og modtaget fra kunden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00012 Receive an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Modtage et EU-indførselscertifikat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne procedure fører dig gennem registrering af et EU-posteringscertifikat udstedt af en tredjepart og modtaget fra kunden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The demo data company used to create this procedure is DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Go to Accounts receivable &gt; Inquiries and reports &gt; Entry certificate journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til Debitor &gt; Forespørgsler og rapporter &gt; Postcertifikatkladde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Ny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>In the Entry certificate field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv en værdi i feltet Postcertifikat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In the Customer account field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på rullelisten i feltet Kundekonto for at åbne opslaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik op linket i den valgte række på listen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klik på Gem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Attach additional information to the journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedhæfte yderligere oplysninger til kladden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>For example, attach a scanned image of the EU Entry certificate to the journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan f.eks. vedhæfte et scannet billede af EU-posteringscertifikatet til kladden.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00012 Modtage et EU-indførselscertifikat
+description: Denne procedure fører dig gennem registrering af et EU-posteringscertifikat udstedt af en tredjepart og modtaget fra kunden.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustEntryCertificateJour_W
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: cbcf6d8dc71b833b3d90e72e7ef6c9d438241640
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566700"
+---
+# <a name="eur-00012-receive-an-eu-entry-certificate"></a><span data-ttu-id="0cb55-103">EUR-00012 Modtage et EU-indførselscertifikat</span><span class="sxs-lookup"><span data-stu-id="0cb55-103">EUR-00012 Receive an EU entry certificate</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="0cb55-104">Denne procedure fører dig gennem registrering af et EU-posteringscertifikat udstedt af en tredjepart og modtaget fra kunden.</span><span class="sxs-lookup"><span data-stu-id="0cb55-104">This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</span></span>
+
+
+
+<span data-ttu-id="0cb55-105">Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.</span><span class="sxs-lookup"><span data-stu-id="0cb55-105">The demo data company used to create this procedure is DEMF.</span></span>
+
+1. <span data-ttu-id="0cb55-106">Gå til Debitor > Forespørgsler og rapporter > Postcertifikatkladde.</span><span class="sxs-lookup"><span data-stu-id="0cb55-106">Go to Accounts receivable > Inquiries and reports > Entry certificate journal.</span></span>
+2. <span data-ttu-id="0cb55-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="0cb55-107">Click New.</span></span>
+3. <span data-ttu-id="0cb55-108">Skriv en værdi i feltet Postcertifikat.</span><span class="sxs-lookup"><span data-stu-id="0cb55-108">In the Entry certificate field, type a value.</span></span>
+4. <span data-ttu-id="0cb55-109">Klik på rullelisten i feltet Kundekonto for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="0cb55-109">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="0cb55-110">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0cb55-110">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="0cb55-111">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="0cb55-111">Click Save.</span></span>
+    * <span data-ttu-id="0cb55-112">Vedhæfte yderligere oplysninger til kladden.</span><span class="sxs-lookup"><span data-stu-id="0cb55-112">Attach additional information to the journal.</span></span>  
+    * <span data-ttu-id="0cb55-113">Du kan f.eks. vedhæfte et scannet billede af EU-posteringscertifikatet til kladden.</span><span class="sxs-lookup"><span data-stu-id="0cb55-113">For example, attach a scanned image of the EU Entry certificate to the journal.</span></span>  
+

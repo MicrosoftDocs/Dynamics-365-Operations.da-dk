@@ -1,84 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="fixed-assets.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>fixed-assets.9b56a8.a925d16239ec78b09403a0c0db1346e35b7eee20.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>a925d16239ec78b09403a0c0db1346e35b7eee20</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\fixed-assets\fixed-assets.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Fixed assets home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for anlægsaktiver</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Fixed assets home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for anlægsaktiver</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere dem ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>You can calculate adjustments to the fixed assets, and also dispose of them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>When you use General ledger together with Fixed assets, you can view the current value of all fixed assets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The Fixed assets functionality incorporates many of these standards and rules.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Business process<ept id="p1">](./media/FA-process.PNG)](./media/FA-process.PNG)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Forretningsproces<ept id="p1">](./media/FA-process.PNG)](./media/FA-process.PNG)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere ressourcer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>What's new and in development</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyheder og funktioner under udvikling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Go to the <bpt id="p1">[</bpt>Microsoft Dynamics 365 Release Notes<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> to see what new features have been planned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til <bpt id="p1">[</bpt>Microsoft Dynamics 365-produktbemærkninger<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> for at se, hvilke nye funktioner der er planlagt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Blogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blogs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>You can find opinions, news, and other information on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 blog<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> and the <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Financials blog<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finde meninger, nyheder og andre oplysninger på <bpt id="p1">[</bpt>Microsoft Dynamics 365-bloggen<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> og <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Finans-bloggen<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>The <bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community-bloggen<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Task guides</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opgaveguider</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Additional help is available as task guides inside Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yderligere hjælp er tilgængelig som opgaveguider i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>To access task guides, click the Help button on any page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Videos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Videoer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Check out the how-to videos that are now available on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube Channel<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se de Sådan-videoer, der er nu tilgængelige på <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube-kanalen<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Startside for anlægsaktiver
+description: Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 08/31/2017
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: AssetWorkspace
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 21481
+ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
+ms.search.region: Global
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a925d16239ec78b09403a0c0db1346e35b7eee20
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1543835"
+---
+# <a name="fixed-assets-home-page"></a><span data-ttu-id="11ec4-103">Startside for anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="11ec4-103">Fixed assets home page</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="11ec4-104">Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation.</span><span class="sxs-lookup"><span data-stu-id="11ec4-104">Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.</span></span> 
+
+<span data-ttu-id="11ec4-105">Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere dem ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen.</span><span class="sxs-lookup"><span data-stu-id="11ec4-105">You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation.</span></span> <span data-ttu-id="11ec4-106">Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem.</span><span class="sxs-lookup"><span data-stu-id="11ec4-106">You can calculate adjustments to the fixed assets, and also dispose of them.</span></span> <span data-ttu-id="11ec4-107">Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="11ec4-107">When you use General ledger together with Fixed assets, you can view the current value of all fixed assets.</span></span> <span data-ttu-id="11ec4-108">Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område.</span><span class="sxs-lookup"><span data-stu-id="11ec4-108">The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region.</span></span> <span data-ttu-id="11ec4-109">Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="11ec4-109">Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets.</span></span> <span data-ttu-id="11ec4-110">Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.</span><span class="sxs-lookup"><span data-stu-id="11ec4-110">The Fixed assets functionality incorporates many of these standards and rules.</span></span>
+
+<span data-ttu-id="11ec4-111">[![Forretningsproces](./media/FA-process.PNG)](./media/FA-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="11ec4-111">[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)</span></span>
+
+
+
+### <a name="additional-resources"></a><span data-ttu-id="11ec4-112">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="11ec4-112">Additional resources</span></span>
+
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="11ec4-113">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="11ec4-113">What's new and in development</span></span>
+
+<span data-ttu-id="11ec4-114">Gå til [Microsoft Dynamics 365-produktbemærkninger](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt.</span><span class="sxs-lookup"><span data-stu-id="11ec4-114">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned.</span></span> 
+
+#### <a name="blogs"></a><span data-ttu-id="11ec4-115">Blogs</span><span class="sxs-lookup"><span data-stu-id="11ec4-115">Blogs</span></span>
+
+<span data-ttu-id="11ec4-116">Du kan finde meninger, nyheder og andre oplysninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="11ec4-116">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+
+<span data-ttu-id="11ec4-117">[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="11ec4-117">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+
+#### <a name="task-guides"></a><span data-ttu-id="11ec4-118">Opgaveguider</span><span class="sxs-lookup"><span data-stu-id="11ec4-118">Task guides</span></span>
+<span data-ttu-id="11ec4-119">Yderligere hjælp er tilgængelig som opgaveguider i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="11ec4-119">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="11ec4-120">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</span><span class="sxs-lookup"><span data-stu-id="11ec4-120">To access task guides, click the Help button on any page.</span></span>
+
+#### <a name="videos"></a><span data-ttu-id="11ec4-121">Videoer</span><span class="sxs-lookup"><span data-stu-id="11ec4-121">Videos</span></span>
+
+<span data-ttu-id="11ec4-122">Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="11ec4-122">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+
+
+
+
+
+
