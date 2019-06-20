@@ -1,219 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="ExpenseWorkspaceNew.md" target-language="da-DK">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>ExpenseWorkspaceNew.43d6f6.c7a2b95456e812970b135d83f0f7e503310ce185.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>c7a2b95456e812970b135d83f0f7e503310ce185</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>97ed74889a09ef385f6ecbab69e84a05ff42ee41</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/20/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\expense-management\ExpenseWorkspaceNew.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Expense reports reimagined</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udgiftsrapporter i nyfortolkning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides information about the redesigned and reimagined experience for expense report entry in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emne indeholder oplysninger om den nyudviklede og nyfortolkede oplevelse for indtastning i udgiftsrapporter i Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>The new experience simplifies the process of completing expense reports and decreases the time that is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den nye oplevelse forenkler processen med at fuldføre udgiftsrapporter og reducerer den tid, der kræves.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Expense reports reimagined</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udgiftsrapporter i nyfortolkning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Expense report entry has been redesigned to simplify the process of completing expense reports and decrease the time that is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indtastning i udgiftsrapporter er blevet ændret for at forenkle processen med at fuldføre udgiftsrapporter og reducere den tid, der kræves.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Here are the major components of the new expense experience:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Her er de vigtigste komponenter i den nye udgiftsangivelsesoplevelse:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>A new expense management workspace that lets you access your delegate's expenses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et nyt arbejdsområde til udgiftsstyring, hvor du kan få adgang til den delegeredes udgifter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>A new receipt matching experience to better show header-level receipts and simplify the process of attaching receipts to expense lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En ny kvitteringssammenholdelsesoplevelse med en forbedret visning af kvitteringer på hovedniveau og en forenklet proces med tilknytning af kvitteringer til udgiftslinjer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>A new read-only grid that lets you view many more expense lines and additional columns of data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et nyt skrivebeskyttet gitter, hvor du kan få vist mange flere udgiftslinjer og yderligere datakolonner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>You can now see all itemized and split lines, together with their parent expenses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan nu se alle specificerede og opdelte linjer sammen med deres overordnede udgifter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>A simplified pane for editing expenses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En forenklet rude til redigering af udgifter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Redesigned error, warning, and policy messages to help guarantee that you have the correct context to understand what the issue is and how to resolve it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nydesignede fejl-, advarsels- og politikmeddelelser er med til at sikre, at du har den rigtige kontekst til at forstå, hvad problemet er, og hvordan du løser det.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Microsoft has removed many messages that appeared before users had an opportunity to complete their tasks and address the issues, such as the incomplete itemization message.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft har fjernet mange meddelelser, der blev vist, før brugerne havde mulighed for at udføre deres opgaver og løse problemerne, f.eks. meddelelsen om ufuldstændig specifikation.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>A new page for specifying which fields are required by your organization, which fields are optional, and which fields should not be captured.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En ny side til angivelse af, hvilke felter der kræves af din organisation, hvilke felter der er valgfrie, og hvilke felter der ikke skal registreres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>This page will help reduce the number of fields that users must to set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne side hjælper med at reducere det antal felter, som brugerne skal angive.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>A new look and feel for expense reports, so that the reports no longer seem as though they were designed for accounting personas.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et nyt udseende for udgiftsrapporter, så rapporterne ikke længere ser ud, som om de er designet til regnskabsmedarbejdere.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>To turn on the new experience, use the <bpt id="p1">**</bpt>Feature management<ept id="p1">**</ept> workspace to turn on the <bpt id="p2">**</bpt>Expense reports re-imagined<ept id="p2">**</ept> feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du vil aktivere den nye oplevelse, skal du bruge arbejdsområdet <bpt id="p1">**</bpt>Administration af funktioner<ept id="p1">**</ept> til at aktivere funktionen <bpt id="p2">**</bpt>Udgiftsrapporter nyfortolkede<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>When you turn on this feature, the following actions occur:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du aktiverer denne funktion, udføres følgende handlinger:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The existing expense workspace is replaced with the new workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det eksisterende udgiftsarbejdsområde erstattes med det nye arbejdsområde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>A new menu item for expense field visibility is added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der tilføjes et nyt menupunkt for synlighed af udgiftsfelter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>No existing menu items for expense reports (the existing page) or expense report fields are removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der fjernes ingen eksisterende menupunkter for udgiftsrapporter (den eksisterende side) eller udgiftsrapportfelter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Workflows and any approvals still take you to the existing expense reports page.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Arbejdsgange og eventuelle godkendelser fører stadig til den eksisterende side med udgiftsrapporter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Getting started video for new users</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Introduktionsvideo for nye brugere</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The <bpt id="p1">[</bpt>Expense experience in Dynamics 365 for Finance and Operations<ept id="p1">](https://youtu.be/Ocy-MsTvEE0)</ept> video (shown above) is included in the <bpt id="p2">[</bpt>Finance and Operations playlist<ept id="p2">](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)</ept> available on YouTube.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Videoen <bpt id="p1">[</bpt>Udgiftsoplevelse i Dynamics 365 for Finance and Operations<ept id="p1">](https://youtu.be/Ocy-MsTvEE0)</ept> (vist ovenfor) er inkluderet i den <bpt id="p2">[</bpt>Finance and Operations-afspilningsliste<ept id="p2">](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)</ept>, der er tilgængelig på YouTube.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>New features</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Nye funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>New feature</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ny funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Description</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Beskrivelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Expense field visibility</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Synlighed af udgiftsfelt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>A new setup page lets you specify which fields should be disabled for an organization, which fields should be required, and which fields are recommended.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På en konfigurationsside kan du angive, hvilke felter der skal deaktiveres for en organisation, hvilke felter der skal bruges, og hvilke felter der anbefales.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Required fields</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obligatoriske felter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>New simple configuration lets you make some fields required without having to use the policy framework.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ved hjælp af den nye simple konfiguration kan du gøre nogle felter obligatoriske uden at skulle bruge politikstrukturen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Optional fields</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valgfrie felter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>A second page for optional fields is added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der tilføjes endnu en side med valgfrie felter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>In this way, employees won't feel as if they must set the fields, but the fields are still easily accessible.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På denne måde vil medarbejderne ikke opfatte det, som om de skal angive felterne, men felterne er stadig lettilgængelige.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Add unattached receipts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilføje ikke-tilknyttede kvitteringer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>The ability to add unattached receipts to expense report is more visible from the workspace and on the expense report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muligheden for at tilføje ikke-tilknyttede kvitteringer i udgiftsrapporter er mere synlig i arbejdsområdet og i udgiftsrapporten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Improved messaging</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forbedrede meddelelser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>There is better visibility into expense lines that have warnings or errors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der er bedre synlighed i udgiftslinjer, der har advarsler eller fejl.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Reduction in messages in the message bar</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reduktion af meddelelser på meddelelseslinjen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>The number of Infolog messages was decreased, and an effort was made to prevent duplicate messages from appearing in many cases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Antallet af infolog-meddelelser er blevet reduceret, og der gjort en indsats for at forhindre, at der i mange tilfælde vises dublerede meddelelser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Grouped together common actions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupperede almindelige handlinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The interface was cleaned up with the addition of a new actions button for most of the common line-level actions and the addition of an ellipsis button (...) for header and other less frequent actions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grænsefladen er blevet ryddet og har fået tilføjet en ny handlingsknap til de fleste almindelige handlinger på linjeniveau og en ellipseknap (...) til overskrifter og andre mindre hyppige handlinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>New workspace to increase visibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyt arbejdsområde til øget synlighed</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>A new workspace unifies features and links that let users move to different areas.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et nyt arbejdsområde samler funktioner og links, der giver brugerne mulighed for at flytte til forskellige områder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Add existing expenses and receipts during expense creation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilføje eksisterende udgifter og kvitteringer under oprettelse af udgifter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>When you create expense reports, you can add all or selected expenses and receipts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du opretter udgiftsrapporter, kan du tilføje alle eller udvalgte udgifter og kvitteringer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Exchange rate calculator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valutakursberegner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>An exchange rate calculator is added that lets you calculate the exchange rate for out-of-pocket multicurrency transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der er tilføjet en valutakursberegner, hvor du kan beregne valutakursen for udlæg til transaktioner med flere valutaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Save and add new expense lines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gemme og tilføje nye udgiftslinjer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept> and <bpt id="p2">**</bpt>New<ept id="p2">**</ept> buttons are available when new expenses are entered, to help you quickly enter expense lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Knapperne <bpt id="p1">**</bpt>Gem<ept id="p1">**</ept> og <bpt id="p2">**</bpt>Ny<ept id="p2">**</ept> er tilgængelige, når der angives nye udgifter, så du hurtigt kan angive udgiftslinjer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Better visibility into split and itemized lines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bedre synlighed på opdelte og specificerede linjer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Itemized and split lines are added directly to the list of expenses, to increase visibility and help you easily determine whether there are policy errors or other errors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Specificerede og opdelte linjer føjes direkte til listen over udgifter for at øge synligheden og gøre det nemt at afgøre, om der er fejl relateret til politik eller andre fejl.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Show receipts during itemization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vise kvitteringer under specifikation</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Receipts can be shown during itemization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kvitteringer kan vises under specifikation.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>The initial release is focused on expense entry scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den første version fokuserer på scenarier med udgiftsregistrering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Any expense report review or approval scenario will continue to use the existing expense entry page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I et eventuelt scenario til gennemgang eller godkendelse af udgiftsrapporter vil den eksisterende udgiftspostside fortsat blive anvendt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The following features are present on the existing page but aren't yet present on the new page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følgende funktioner findes på den eksisterende side, men endnu ikke på den nye side.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>These features will be reintroduced over the next several releases:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse funktioner bliver introduceret igen i en række kommende versioner:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Approvals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Godkendelser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Accounts payable approvals and the ability to edit the accounting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Godkendelser af kreditorer og muligheden for at redigere regnskabet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Multiple entry points</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Flere indgangspunkter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Travel requisition integration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integration af rejserekvisition</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Data entity for expense field visibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataenhed for synlighed af udgiftsfelt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Entry for per-diem expenses</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Post for diætudgifter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Line-level workflow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbejdsgang på linjeniveau</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Interim approver support</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Understøttelse af foreløbige godkendere</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Advanced itemization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avanceret specifikation</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Udgiftsrapporter i nyfortolkning
+description: Dette emne indeholder oplysninger om den nyudviklede og nyfortolkede oplevelse for indtastning i udgiftsrapporter i Microsoft Dynamics 365 for Finance and Operations. Den nye oplevelse forenkler processen med at fuldføre udgiftsrapporter og reducerer den tid, der kræves.
+author: ryansandness
+manager: AnnBe
+ms.date: 05/20/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Operations, Core
+ms.search.region: Global
+ms.author: ryansand
+ms.search.validFrom: 2019-6-30
+ms.dyn365.ops.version: 10.0.3
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592631"
+---
+# <a name="expense-reports-reimagined"></a><span data-ttu-id="39f93-104">Udgiftsrapporter i nyfortolkning</span><span class="sxs-lookup"><span data-stu-id="39f93-104">Expense reports reimagined</span></span>
+
+[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+<span data-ttu-id="39f93-105">Indtastning i udgiftsrapporter er blevet ændret for at forenkle processen med at fuldføre udgiftsrapporter og reducere den tid, der kræves.</span><span class="sxs-lookup"><span data-stu-id="39f93-105">Expense report entry has been redesigned to simplify the process of completing expense reports and decrease the time that is required.</span></span> <span data-ttu-id="39f93-106">Her er de vigtigste komponenter i den nye udgiftsangivelsesoplevelse:</span><span class="sxs-lookup"><span data-stu-id="39f93-106">Here are the major components of the new expense experience:</span></span>
+
+- <span data-ttu-id="39f93-107">Et nyt arbejdsområde til udgiftsstyring, hvor du kan få adgang til den delegeredes udgifter.</span><span class="sxs-lookup"><span data-stu-id="39f93-107">A new expense management workspace that lets you access your delegate's expenses.</span></span>
+- <span data-ttu-id="39f93-108">En ny kvitteringssammenholdelsesoplevelse med en forbedret visning af kvitteringer på hovedniveau og en forenklet proces med tilknytning af kvitteringer til udgiftslinjer.</span><span class="sxs-lookup"><span data-stu-id="39f93-108">A new receipt matching experience to better show header-level receipts and simplify the process of attaching receipts to expense lines.</span></span>
+- <span data-ttu-id="39f93-109">Et nyt skrivebeskyttet gitter, hvor du kan få vist mange flere udgiftslinjer og yderligere datakolonner.</span><span class="sxs-lookup"><span data-stu-id="39f93-109">A new read-only grid that lets you view many more expense lines and additional columns of data.</span></span> <span data-ttu-id="39f93-110">Du kan nu se alle specificerede og opdelte linjer sammen med deres overordnede udgifter.</span><span class="sxs-lookup"><span data-stu-id="39f93-110">You can now see all itemized and split lines, together with their parent expenses.</span></span>
+- <span data-ttu-id="39f93-111">En forenklet rude til redigering af udgifter.</span><span class="sxs-lookup"><span data-stu-id="39f93-111">A simplified pane for editing expenses.</span></span>
+- <span data-ttu-id="39f93-112">Nydesignede fejl-, advarsels- og politikmeddelelser er med til at sikre, at du har den rigtige kontekst til at forstå, hvad problemet er, og hvordan du løser det.</span><span class="sxs-lookup"><span data-stu-id="39f93-112">Redesigned error, warning, and policy messages to help guarantee that you have the correct context to understand what the issue is and how to resolve it.</span></span> <span data-ttu-id="39f93-113">Microsoft har fjernet mange meddelelser, der blev vist, før brugerne havde mulighed for at udføre deres opgaver og løse problemerne, f.eks. meddelelsen om ufuldstændig specifikation.</span><span class="sxs-lookup"><span data-stu-id="39f93-113">Microsoft has removed many messages that appeared before users had an opportunity to complete their tasks and address the issues, such as the incomplete itemization message.</span></span>
+- <span data-ttu-id="39f93-114">En ny side til angivelse af, hvilke felter der kræves af din organisation, hvilke felter der er valgfrie, og hvilke felter der ikke skal registreres.</span><span class="sxs-lookup"><span data-stu-id="39f93-114">A new page for specifying which fields are required by your organization, which fields are optional, and which fields should not be captured.</span></span> <span data-ttu-id="39f93-115">Denne side hjælper med at reducere det antal felter, som brugerne skal angive.</span><span class="sxs-lookup"><span data-stu-id="39f93-115">This page will help reduce the number of fields that users must to set.</span></span>
+- <span data-ttu-id="39f93-116">Et nyt udseende for udgiftsrapporter, så rapporterne ikke længere ser ud, som om de er designet til regnskabsmedarbejdere.</span><span class="sxs-lookup"><span data-stu-id="39f93-116">A new look and feel for expense reports, so that the reports no longer seem as though they were designed for accounting personas.</span></span>
+
+<span data-ttu-id="39f93-117">Når du vil aktivere den nye oplevelse, skal du bruge arbejdsområdet **Administration af funktioner** til at aktivere funktionen **Udgiftsrapporter nyfortolkede**.</span><span class="sxs-lookup"><span data-stu-id="39f93-117">To turn on the new experience, use the **Feature management** workspace to turn on the **Expense reports re-imagined** feature.</span></span> <span data-ttu-id="39f93-118">Når du aktiverer denne funktion, udføres følgende handlinger:</span><span class="sxs-lookup"><span data-stu-id="39f93-118">When you turn on this feature, the following actions occur:</span></span>
+
+- <span data-ttu-id="39f93-119">Det eksisterende udgiftsarbejdsområde erstattes med det nye arbejdsområde.</span><span class="sxs-lookup"><span data-stu-id="39f93-119">The existing expense workspace is replaced with the new workspace.</span></span>
+- <span data-ttu-id="39f93-120">Der tilføjes et nyt menupunkt for synlighed af udgiftsfelter.</span><span class="sxs-lookup"><span data-stu-id="39f93-120">A new menu item for expense field visibility is added.</span></span>
+- <span data-ttu-id="39f93-121">Der fjernes ingen eksisterende menupunkter for udgiftsrapporter (den eksisterende side) eller udgiftsrapportfelter.</span><span class="sxs-lookup"><span data-stu-id="39f93-121">No existing menu items for expense reports (the existing page) or expense report fields are removed.</span></span>
+- <span data-ttu-id="39f93-122">Arbejdsgange og eventuelle godkendelser fører stadig til den eksisterende side med udgiftsrapporter.</span><span class="sxs-lookup"><span data-stu-id="39f93-122">Workflows and any approvals still take you to the existing expense reports page.</span></span>
+
+## <a name="getting-started-video-for-new-users"></a><span data-ttu-id="39f93-123">Introduktionsvideo for nye brugere</span><span class="sxs-lookup"><span data-stu-id="39f93-123">Getting started video for new users</span></span>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
+
+<span data-ttu-id="39f93-124">Videoen [Udgiftsoplevelse i Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.</span><span class="sxs-lookup"><span data-stu-id="39f93-124">The [Expense experience in Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.</span></span>
+
+## <a name="new-features"></a><span data-ttu-id="39f93-125">Nye funktioner</span><span class="sxs-lookup"><span data-stu-id="39f93-125">New features</span></span>
+
+| <span data-ttu-id="39f93-126">Ny funktion</span><span class="sxs-lookup"><span data-stu-id="39f93-126">New feature</span></span> | <span data-ttu-id="39f93-127">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="39f93-127">Description</span></span> |
+|---|----|
+| <span data-ttu-id="39f93-128">Synlighed af udgiftsfelt</span><span class="sxs-lookup"><span data-stu-id="39f93-128">Expense field visibility</span></span> | <span data-ttu-id="39f93-129">På en konfigurationsside kan du angive, hvilke felter der skal deaktiveres for en organisation, hvilke felter der skal bruges, og hvilke felter der anbefales.</span><span class="sxs-lookup"><span data-stu-id="39f93-129">A new setup page lets you specify which fields should be disabled for an organization, which fields should be required, and which fields are recommended.</span></span> |
+| <span data-ttu-id="39f93-130">Obligatoriske felter</span><span class="sxs-lookup"><span data-stu-id="39f93-130">Required fields</span></span> | <span data-ttu-id="39f93-131">Ved hjælp af den nye simple konfiguration kan du gøre nogle felter obligatoriske uden at skulle bruge politikstrukturen.</span><span class="sxs-lookup"><span data-stu-id="39f93-131">New simple configuration lets you make some fields required without having to use the policy framework.</span></span> |
+| <span data-ttu-id="39f93-132">Valgfrie felter</span><span class="sxs-lookup"><span data-stu-id="39f93-132">Optional fields</span></span> | <span data-ttu-id="39f93-133">Der tilføjes endnu en side med valgfrie felter.</span><span class="sxs-lookup"><span data-stu-id="39f93-133">A second page for optional fields is added.</span></span> <span data-ttu-id="39f93-134">På denne måde vil medarbejderne ikke opfatte det, som om de skal angive felterne, men felterne er stadig lettilgængelige.</span><span class="sxs-lookup"><span data-stu-id="39f93-134">In this way, employees won't feel as if they must set the fields, but the fields are still easily accessible.</span></span> |
+| <span data-ttu-id="39f93-135">Tilføje ikke-tilknyttede kvitteringer</span><span class="sxs-lookup"><span data-stu-id="39f93-135">Add unattached receipts</span></span> | <span data-ttu-id="39f93-136">Muligheden for at tilføje ikke-tilknyttede kvitteringer i udgiftsrapporter er mere synlig i arbejdsområdet og i udgiftsrapporten.</span><span class="sxs-lookup"><span data-stu-id="39f93-136">The ability to add unattached receipts to expense report is more visible from the workspace and on the expense report.</span></span> |
+| <span data-ttu-id="39f93-137">Forbedrede meddelelser</span><span class="sxs-lookup"><span data-stu-id="39f93-137">Improved messaging</span></span> | <span data-ttu-id="39f93-138">Der er bedre synlighed i udgiftslinjer, der har advarsler eller fejl.</span><span class="sxs-lookup"><span data-stu-id="39f93-138">There is better visibility into expense lines that have warnings or errors.</span></span> |
+| <span data-ttu-id="39f93-139">Reduktion af meddelelser på meddelelseslinjen</span><span class="sxs-lookup"><span data-stu-id="39f93-139">Reduction in messages in the message bar</span></span>| <span data-ttu-id="39f93-140">Antallet af infolog-meddelelser er blevet reduceret, og der gjort en indsats for at forhindre, at der i mange tilfælde vises dublerede meddelelser.</span><span class="sxs-lookup"><span data-stu-id="39f93-140">The number of Infolog messages was decreased, and an effort was made to prevent duplicate messages from appearing in many cases.</span></span> |
+| <span data-ttu-id="39f93-141">Grupperede almindelige handlinger</span><span class="sxs-lookup"><span data-stu-id="39f93-141">Grouped together common actions</span></span> | <span data-ttu-id="39f93-142">Grænsefladen er blevet ryddet og har fået tilføjet en ny handlingsknap til de fleste almindelige handlinger på linjeniveau og en ellipseknap (...) til overskrifter og andre mindre hyppige handlinger.</span><span class="sxs-lookup"><span data-stu-id="39f93-142">The interface was cleaned up with the addition of a new actions button for most of the common line-level actions and the addition of an ellipsis button (...) for header and other less frequent actions.</span></span> |
+| <span data-ttu-id="39f93-143">Nyt arbejdsområde til øget synlighed</span><span class="sxs-lookup"><span data-stu-id="39f93-143">New workspace to increase visibility</span></span> | <span data-ttu-id="39f93-144">Et nyt arbejdsområde samler funktioner og links, der giver brugerne mulighed for at flytte til forskellige områder.</span><span class="sxs-lookup"><span data-stu-id="39f93-144">A new workspace unifies features and links that let users move to different areas.</span></span> |
+| <span data-ttu-id="39f93-145">Tilføje eksisterende udgifter og kvitteringer under oprettelse af udgifter</span><span class="sxs-lookup"><span data-stu-id="39f93-145">Add existing expenses and receipts during expense creation</span></span> | <span data-ttu-id="39f93-146">Når du opretter udgiftsrapporter, kan du tilføje alle eller udvalgte udgifter og kvitteringer.</span><span class="sxs-lookup"><span data-stu-id="39f93-146">When you create expense reports, you can add all or selected expenses and receipts.</span></span> |
+| <span data-ttu-id="39f93-147">Valutakursberegner</span><span class="sxs-lookup"><span data-stu-id="39f93-147">Exchange rate calculator</span></span> | <span data-ttu-id="39f93-148">Der er tilføjet en valutakursberegner, hvor du kan beregne valutakursen for udlæg til transaktioner med flere valutaer.</span><span class="sxs-lookup"><span data-stu-id="39f93-148">An exchange rate calculator is added that lets you calculate the exchange rate for out-of-pocket multicurrency transactions.</span></span> |
+| <span data-ttu-id="39f93-149">Gemme og tilføje nye udgiftslinjer</span><span class="sxs-lookup"><span data-stu-id="39f93-149">Save and add new expense lines</span></span> | <span data-ttu-id="39f93-150">Knapperne **Gem** og **Ny** er tilgængelige, når der angives nye udgifter, så du hurtigt kan angive udgiftslinjer.</span><span class="sxs-lookup"><span data-stu-id="39f93-150">**Save** and **New** buttons are available when new expenses are entered, to help you quickly enter expense lines.</span></span> |
+| <span data-ttu-id="39f93-151">Bedre synlighed på opdelte og specificerede linjer</span><span class="sxs-lookup"><span data-stu-id="39f93-151">Better visibility into split and itemized lines</span></span> | <span data-ttu-id="39f93-152">Specificerede og opdelte linjer føjes direkte til listen over udgifter for at øge synligheden og gøre det nemt at afgøre, om der er fejl relateret til politik eller andre fejl.</span><span class="sxs-lookup"><span data-stu-id="39f93-152">Itemized and split lines are added directly to the list of expenses, to increase visibility and help you easily determine whether there are policy errors or other errors.</span></span> |
+| <span data-ttu-id="39f93-153">Vise kvitteringer under specifikation</span><span class="sxs-lookup"><span data-stu-id="39f93-153">Show receipts during itemization</span></span> | <span data-ttu-id="39f93-154">Kvitteringer kan vises under specifikation.</span><span class="sxs-lookup"><span data-stu-id="39f93-154">Receipts can be shown during itemization.</span></span> |
+
+<span data-ttu-id="39f93-155">Den første version fokuserer på scenarier med udgiftsregistrering.</span><span class="sxs-lookup"><span data-stu-id="39f93-155">The initial release is focused on expense entry scenarios.</span></span> <span data-ttu-id="39f93-156">I et eventuelt scenario til gennemgang eller godkendelse af udgiftsrapporter vil den eksisterende udgiftspostside fortsat blive anvendt.</span><span class="sxs-lookup"><span data-stu-id="39f93-156">Any expense report review or approval scenario will continue to use the existing expense entry page.</span></span>
+
+<span data-ttu-id="39f93-157">Følgende funktioner findes på den eksisterende side, men endnu ikke på den nye side.</span><span class="sxs-lookup"><span data-stu-id="39f93-157">The following features are present on the existing page but aren't yet present on the new page.</span></span> <span data-ttu-id="39f93-158">Disse funktioner bliver introduceret igen i en række kommende versioner:</span><span class="sxs-lookup"><span data-stu-id="39f93-158">These features will be reintroduced over the next several releases:</span></span>
+
+- <span data-ttu-id="39f93-159">Godkendelser</span><span class="sxs-lookup"><span data-stu-id="39f93-159">Approvals</span></span>
+- <span data-ttu-id="39f93-160">Godkendelser af kreditorer og muligheden for at redigere regnskabet</span><span class="sxs-lookup"><span data-stu-id="39f93-160">Accounts payable approvals and the ability to edit the accounting</span></span>
+- <span data-ttu-id="39f93-161">Flere indgangspunkter</span><span class="sxs-lookup"><span data-stu-id="39f93-161">Multiple entry points</span></span>
+- <span data-ttu-id="39f93-162">Integration af rejserekvisition</span><span class="sxs-lookup"><span data-stu-id="39f93-162">Travel requisition integration</span></span>
+- <span data-ttu-id="39f93-163">Dataenhed for synlighed af udgiftsfelt</span><span class="sxs-lookup"><span data-stu-id="39f93-163">Data entity for expense field visibility</span></span>
+- <span data-ttu-id="39f93-164">Post for diætudgifter</span><span class="sxs-lookup"><span data-stu-id="39f93-164">Entry for per-diem expenses</span></span>
+- <span data-ttu-id="39f93-165">Arbejdsgang på linjeniveau</span><span class="sxs-lookup"><span data-stu-id="39f93-165">Line-level workflow</span></span>
+- <span data-ttu-id="39f93-166">Understøttelse af foreløbige godkendere</span><span class="sxs-lookup"><span data-stu-id="39f93-166">Interim approver support</span></span>
+- <span data-ttu-id="39f93-167">Avanceret specifikation</span><span class="sxs-lookup"><span data-stu-id="39f93-167">Advanced itemization</span></span>
