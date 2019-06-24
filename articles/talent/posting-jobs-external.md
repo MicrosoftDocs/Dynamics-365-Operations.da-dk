@@ -3,7 +3,7 @@ title: Slå jobs op på eksterne karrierewebsteder via Attract
 description: Dette emne beskriver, hvordan du anvender Dynamics 365 for Talent - Attract til at slå jobs op på eksterne rekrutteringswebsteder
 author: pganapmsft
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: eca599ad189edae29ef2de496196b08799a5e745
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517623"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590476"
 ---
 # <a name="post-jobs-to-external-career-sites-from-attract"></a>Slå jobs op på eksterne karrierewebsteder via Attract
 
@@ -36,6 +36,7 @@ Du skal konfigurere integrationen af Broadbean, før du kan slå jobs op på Bro
 
 > [!NOTE]
 > - For at slå jobs op på eksterne websteder skal du have [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Hvis du vil opslå job til Broadbean via Attract, skal du have et Broadbean-abonnement.
 > - Denne funktion findes på nuværende tidspunkt i prøveversionen. Hvis du ønsker at prøve det, skal du [slå det til i administratorindstillingerne i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### <a name="configure-broadbean-integration"></a>Konfigurer integrationen af Broadbean

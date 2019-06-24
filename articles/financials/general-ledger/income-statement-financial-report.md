@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9105e1de86ed2834b04f75c7d08c4021402bcfda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 232f6b6156d845f75abc0c052704e3a59bb33720
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549144"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595581"
 ---
 # <a name="income-statement-financial-report"></a>Regnskabsrapport over resultatopgørelse
 
@@ -67,7 +67,7 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
 
 [Se økonomiske rapporter](view-financial-reports.md)
 
-[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

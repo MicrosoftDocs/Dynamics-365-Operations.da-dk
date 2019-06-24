@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517596"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577789"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Udvide Talent ved hjælp af PowerApps og Microsoft Flow - eksempelscenarier
 
@@ -115,7 +115,7 @@ Kør denne PowerApps-app som en administratorkonsol for at udføre følgende opg
 
 Denne PowerApps-app bruger mange-til-mange-relationer, så du kan bruge den som skabelon for andre scenarier, hvor du skal uddrage poster, der har mange-til-mange-relationer.
 
-Du kan hente skabelonen **Administrationskonsol til styring af talentpuljer** ved at gå til [Administrationskonsol til styring af talentpuljer](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) i Microsoft Download Center.
+Du kan hente skabelonen **Administrationskonsol til styring af talentpuljer** ved at gå til [Administrationskonsol til styring af talentpuljer](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) i Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

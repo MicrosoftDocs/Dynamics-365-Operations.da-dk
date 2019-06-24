@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567970"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577838"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Få support til Dynamics 365 for Retail
 
@@ -61,7 +61,7 @@ Du kan få support på Retail ved at bruge ressourcerne i følgende tabel. Disse
 <li>Under fanen <strong>Aktivt problem</strong> skal du vælge dit problem og derefter klikke på <strong>Send til Microsoft</strong>.</li>
 <li>Under fanen <strong>Sendt til Microsoft</strong> skal du klikke på <strong>Send en ny hændelse</strong> for at rapportere problemet.</li>
 </ul>
-<blockquote>[!NOTE] Microsoft Premier-kunder og -partnere kan også sende premier support-anmodninger ved hjælp af ovenstående trin.</blockquote>
+<p><strong>Bemærk:</strong> Microsoft Premier-kunder og -partnere kan også sende premier support-anmodninger ved hjælp af ovenstående trin.</p>
 </td>
 </tr>
 <tr>
@@ -84,4 +84,4 @@ Ved tekniske spørgsmål, der er relateret til at logge på og få adgang til Cu
 </tbody>
 </table>
 
-Yderligere oplysninger om Microsoft Dynamics-supporttilbud finder du i [Microsoft Dynamics Online-support](https://dynamics.microsoft.com/en-us/support/).
+Yderligere oplysninger om Microsoft Dynamics-supporttilbud finder du i [Microsoft Dynamics Online-support](https://dynamics.microsoft.com/support/).

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561803"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595656"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
@@ -670,7 +670,7 @@ Arbejdsområdet <strong>Administration af kataloger</strong> giver følgende fun
 <td>Dataenheder giver kunder mulighed for at foretage metadatabaseret import og eksport af data. Med OData-enheder kan kunder også integrere Dynamics AX med tredjepartsprogrammer.</td>
 </tr>
 <tr>
-<td>Udføre intelligent analyse ved hjælp af BI-rapporter fra Microsoft Dynamics AX og POS-klienten.</td>
+<td>Udføre intelligent analyse ved hjælp af BI-rapporter fra Dynamics Microsoft AX og POS-klienten.</td>
 <td>Mere end 25 administrationsrapporter og fem rapporter på kanalsiden er tilgængelige.</td>
 <td>Mere end 30 administrationsrapporter og 10 rapporter på kanalsiden er tilgængelige.</td>
 <td>Med disse rapporter giver kunder mere BI til at forudsige tendenser, afdække indsigt og løbende få optimal drift.</td>
@@ -721,7 +721,7 @@ Retail Server og administration af data gør det muligt for forbrugere og virkso
 </thead>
 <tbody>
 <tr>
-<td>Oprette forbindelse til en CRT-database (commerce runtime), der indeholder forretningsdata til kanalen, ved hjælp af CRT-tjenester.</td>
+<td>Oprette forbindelse til en CRT-database (Commerce Runtime), der indeholder forretningsdata til kanalen, ved hjælp af CRT-tjenester.</td>
 <td>OData V3 understøttes.</td>
 <td>OData V4 understøttes.</td>
 <td>Det hjælper kunden med at holde sig ajour med OData standarder. Det opretter også en robust omni-kanaloplevelse ved at integrere salg på tværs af kanaler i butikken, mobil- og onlinekanaler.</td>
@@ -971,7 +971,7 @@ Der er en forbedret "low-touch"-klientkomponentinstallation via selvbetjeningsin
 </tr>
 <tr>
 <td>Overvåge systemets tilstand og diagnosticere problemer og fejl.</td>
-<td>Denne funktion kræver <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack til Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Denne funktion kræver <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack til Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Overvågning og diagnosticering for Retail-komponenter er nu tilgængelig via den <strong>Driftsindsigt</strong> dashboardet i LCS.</td>
 <td>Dashboardet <strong>Driftsindsigt</strong> er en skybaseret overvågningsportal, som erstatter behovet for at installere SCOM-infrastruktur (System Center Operations Manager).</td>
 </tr>

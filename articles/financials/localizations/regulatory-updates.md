@@ -3,7 +3,7 @@ title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530701"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593337"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -52,9 +52,20 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 |      2019. april          |   10.0.1      |   Tyskland     |E-fakturering - Debitorfakturaer eksporteres i xRechnung 1.1-format         |
 |      2019. april          |   10.0.1      |    Storbritannien     |[Ændringer af momsangivelse (momsdigitalisering)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. april          |   10.0.1      |    Brasilien     |NF-e ny NT 2018.005         |
-|      2019. april          |   10.0.1      |    Rusland     |Ændringer af format for angivelse af moms fra 2019         |
-|      2019. april          |   10.0.1      |    Rusland     |Format for angivelse af moms ændres fra 2019 (salgs- og indkøbsbøger) 
+|      2019. april          |   10.0.1      |    Rusland     |[Ændringer af format for angivelse af moms fra 2019](rus-VAT-declaration.md) |
+|      2019. april          |   10.0.1      |    Rusland     |Format for angivelse af moms ændres fra 2019 (salgs- og indkøbsbøger) |
+|      2019. april          |   10.0.1      |    Rusland     |Ændringer i grundskyldsopgørelse fra 2018 |
+|      2019. april          |   10.0.1      |    Rusland     |[Ændringer i ejendomsskatteopgørelse fra 2019](rus-assessed-tax-declaration.md)|
+|      2019. april          |   10.0.1      |    Rusland     |Ændringer i transportmomsopgørelse fra 2019  |
+|      2019. april            |   10.0.1      | Ungarn      |  Ungarn: onlinefakturering v. 1.1 2019 i Microsoft Dynamics 365 for Finance and Operations  |
 |      Maj 2019            |   10.0.2      | Brasilien      |   SPED ECD-layout 7   |
+|      Afventer            |   10.0.3      | Brasilien      |   NF-e nye NT 2018.005 - v. 1.20   |
+|      Afventer            |   10.0.3      | Brasilien      |   SPED ECD-layout 7   |
+|      Afventer            |   10.0.3      | Brasilien      |   SPED ECF - Layout 5 for 2019   |
+|      Afventer            |   10.0.3      | Litauen    |   I i.SAF-rapport kan brugeren definere systemmomskoder i tilknytning til juridiske momskoder    |
+|      Afventer            |   10.0.3      | Polen     |   SAF-fakturaer (JPK_FA) v. 2 fra 1. juli 2019  |
+|      Afventer            |   10.0.3      | Brasilien   |   ICMS for justeringer i regnskabsdokumenter aktiverer tabel 5.2   |
+|      Afventer            |   10.0.3      | Brasilien    |   NF-e dekret 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

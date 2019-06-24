@@ -3,7 +3,7 @@ title: Opret onlinekanal og definer kanalattributter
 description: Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/04/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569515"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618290"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Opret onlinekanal og definer kanalattributter
 
@@ -60,4 +60,10 @@ Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den
 9. Klik på Publicer for at åbne dialogboksen Fjern.
 10. Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.
 11. Klik på Publicer.
+
+## <a name="configure-orders-for-near-realtime-notification"></a>Konfigurere ordrer for næsten i realtids-påmindelse
+1. Gå til Detail > Opsætning af Headquarters > Parametre > Detailparametre.
+2. Vælg "Ja" i Brug realtidstjeneste til oprettelse af eCommerce-ordre.
+3. Kør distributionsplanen 1070 for at synkronisere ændringerne til kanaldatabasen. 
+
 

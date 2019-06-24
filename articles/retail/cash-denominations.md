@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a34ae8084c0ad55221f4ab93eb8c6481fa8c4771
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558567"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606750"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurere kontantbeløbsangivelser for POS
 
@@ -34,9 +34,9 @@ Kontantbeløbsangivelser for sedler og mønter kan defineres i administrationen 
 
 ## <a name="define-denominations"></a>Angive værdienheder
 
-Værdienhederne angives pr. butik på siden **Konfigurer** \> **Indstillingen Kontantopgørelse fra butiksegenskaben**.
+Værdienhederne angives pr. butik på siden **Konfigurer** \> indstillingen **Kontantopgørelse** fra butiksegenskaben.
 
-![kontantbeløbsangivelser](./media/image1-denomination.png)
+![Indstillingen Kontantopgørelse](./media/image1-denomination.png)
 
 Sådan defineres en værdienhed:
 
@@ -44,7 +44,7 @@ Sådan defineres en værdienhed:
 1. Angiv typen (mønter eller seddel).
 1. Angiv beløbet (værdi).
 
-![kontantbeløbsangivelser](./media/image2-denomination.png)
+![Siden Kontantbeløbsangivelser](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurere funktionalitetsprofilen
 

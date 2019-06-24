@@ -227,8 +227,9 @@
             - name: X-klasser
               href: dev-ref/x-classes.md
     - name: Udvidelsesmuligheder
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Startside for udvidelsesmuligheder
+          href: extensibility/extensibility-home-page.md
         - name: Introduktion og kom godt i gang
           items:
             - name: Plan for programs udvidelse
@@ -245,36 +246,38 @@
               href: extensibility/customization-overlayering-extensions.md
         - name: Nyheder
           items:
-            - name: Ændringer af udvidelsesmuligheder juli 2017
-              href: extensibility/changes-july-2017.md
-            - name: Ændringer af udvidelsesmuligheder i version 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Ændringer af udvidelsesmuligheder i version 8.0
-              href: extensibility/changes-80.md
-            - name: Ændringer af udvidelsesmuligheder version 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Ændringer af udvidelsesmuligheder version 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Ændringer af udvidelsesmuligheder version 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: Ændringer af udvidelsesmuligheder version 8.0.4
-              href: extensibility/extensibility-changes-804.md
-            - name: Ændringer af udvidelsesmuligheder version 8.1
-              href: extensibility/extensibility-changes-81.md
-            - name: Ændringer af udvidelsesmuligheder version 8.1.1
-              href: extensibility/extensibility-changes-811.md
-            - name: Ændringer af udvidelsesmuligheder version 8.1.2
-              href: extensibility/extensibility-changes-812.md
-            - name: Ændringer af udvidelsesmuligheder version 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Ændringer af udvidelsesmuligheder version 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Ændringer af udvidelsesmuligheder version 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Ændringer af udvidelsesmuligheder version 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
+            - name: Nyheder eller ændringer for udvidelsesmuligheder
+              href: extensibility/extensibility-new.md
             - name: Ændringer af udvidelsesmuligheder version 10.0.3
               href: extensibility/extensibility-changes-10-3.md
+            - name: Ændringer af udvidelsesmuligheder version 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Ændringer af udvidelsesmuligheder version 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Ændringer af udvidelsesmuligheder version 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1.2
+              href: extensibility/extensibility-changes-812.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1
+              href: extensibility/extensibility-changes-81.md
+            - name: Ændringer af udvidelsesmuligheder version 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Ændringer af udvidelsesmuligheder version 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Ændringer af udvidelsesmuligheder version 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Ændringer af udvidelsesmuligheder version 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Ændringer af udvidelsesmuligheder i version 8.0
+              href: extensibility/changes-80.md
+            - name: Ændringer af udvidelsesmuligheder i version 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Ændringer af udvidelsesmuligheder juli 2017
+              href: extensibility/changes-july-2017.md
         - name: Grundlæggende
           items:
             - name: Forstyrrende tilpasninger
@@ -359,10 +362,16 @@
               href: extensibility/breaking-changes.md
     - name: Ydeevne
       items:
-        - name: Udføre sporinger ved hjælp af Trace parser
+        - name: Udføre sporinger ved hjælp af sporingsparser
           href: perf-test/trace-trace-tutorial.md
-        - name: Performance SDK og flerbrugertest via Visual Studio Online
-          href: perf-test/perfsdk-tutorial.md
+        - name: Enkeltbrugertest med Arbejdsrutineoptager og Performance SDK
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Flerbrugertest med Performance SDK og en lokal testcontroller
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Flerbrugertest med Performance SDK og Azure DevOps
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Fejlfindingsvejledning til enkeltbruger- eller flerbrugertest med Performance SDK
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Performance SDK og flerbrugertest i lokale miljøer
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Diagnosticere problemer og analysere ydeevne ved hjælp af Trace parser
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Oprette valutakursudbydere i Finance and Operations version 8.0
           href: financial/create-exchange-rate-8.md
+    - name: 'Udligne transaktioner ved hjælp af CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Udvikling af forsyningskæde
   items:
     - name: Udviklingsvejledning til Gantt-kontrolelementer
@@ -1076,7 +1087,7 @@
       items:
         - name: Forberede overflytning af kode
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurer tilknytning af Azure DevOps
+        - name: Konfigurere Azure DevOps-tilknytningen
           href: migration-upgrade/configure-vso-solution.md
         - name: Modelopdeling
           href: dev-tools/model-split.md

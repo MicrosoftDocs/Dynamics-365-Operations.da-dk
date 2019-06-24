@@ -16,16 +16,16 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541285"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606958"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I dette emne beskrives det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -58,10 +58,10 @@ Som en del af forbedringerne af funktionen til bogføring af opgørelser er der 
 
 Derudover er følgende parametre introduceret i oversigtspanelet **Batchbehandling** under fanen **Bogføring** på siden **Detailparametre**: 
 
-- **Det maksimale antal parallelle opgørelsesbogføringer** - Dette felt definerer antallet af batchopgaver, der skal bruges til at bogføre flere opgørelser. 
-- **Maks. antal tråde til ordrebehandling pr. opgørelse** - Dette felt repræsenterer det maksimale antal tråde, der bruges af batchjobbet for opgørelsesbogføringen til at oprette og fakturere salgsordrer for en enkelt opgørelse. Det samlede antal tråde, der bruges af bogføringsprocessen for opgørelser, beregnes på basis af værdien i denne parameter ganget med værdien i parameteren **Det maksimale antal parallelle opgørelsesbogføringer**. Hvis værdien af denne parameter er for høj, kan det have en negativ indvirkning på ydeevnen for opgørelsesprocessen.
-- **Maks. antal posteringslinjer, der er inkluderet i aggregeringen** - Dette felt definerer antallet af posteringslinjer, som skal medtages i en enkelt aggregeret transaktion, før der oprettes en ny. Aggregerede posteringer oprettes på basis af forskellige aggregeringskriterier, f.eks. debitor, forretningsdato eller økonomiske dimensioner. Det er vigtigt at bemærke, at linjerne fra en enkelt detailtransaktion ikke bliver opdelt på tværs af forskellige aggregerede transaktioner. Det betyder, at der er mulighed for, at antallet af linjer i en aggregeret transaktion er lidt højere eller lavere baseret på faktorer som antallet af specifikke produkter.
-- **Maksimale antal tråde til at validere butikstransaktioner** - Dette felt definerer antallet af tråde, der skal bruges til validering af detailtransaktioner. Validering af detailtransaktioner er et påkrævet trin, der skal udføres, før transaktionerne kan trækkes ind i opgørelserne. Desuden skal du også definere et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Det skal defineres, selvom gavekort ikke bruges af organisationen.
+- **Det maksimale antal parallelle opgørelsesbogføringer** – Dette felt definerer antallet af batchopgaver, der skal bruges til at bogføre flere opgørelser. 
+- **Maks. antal tråde til ordrebehandling pr. opgørelse** – Dette felt repræsenterer det maksimale antal tråde, der bruges af batchjobbet for opgørelsesbogføringen til at oprette og fakturere salgsordrer for en enkelt opgørelse. Det samlede antal tråde, der bruges af bogføringsprocessen for opgørelser, beregnes på basis af værdien i denne parameter ganget med værdien i parameteren **Det maksimale antal parallelle opgørelsesbogføringer**. Hvis værdien af denne parameter er for høj, kan det have en negativ indvirkning på ydeevnen for opgørelsesprocessen.
+- **Maks. antal posteringslinjer, der er inkluderet i aggregeringen** – Dette felt definerer antallet af posteringslinjer, som skal medtages i en enkelt aggregeret transaktion, før der oprettes en ny. Aggregerede posteringer oprettes på basis af forskellige aggregeringskriterier, f.eks. debitor, forretningsdato eller økonomiske dimensioner. Det er vigtigt at bemærke, at linjerne fra en enkelt detailtransaktion ikke bliver opdelt på tværs af forskellige aggregerede transaktioner. Det betyder, at der er mulighed for, at antallet af linjer i en aggregeret transaktion er lidt højere eller lavere baseret på faktorer som antallet af specifikke produkter.
+- **Maksimale antal tråde til at validere butikstransaktioner** – Dette felt definerer antallet af tråde, der skal bruges til validering af detailtransaktioner. Validering af detailtransaktioner er et påkrævet trin, der skal udføres, før transaktionerne kan trækkes ind i opgørelserne. Desuden skal du også definere et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Det skal defineres, selvom gavekort ikke bruges af organisationen.
 
 > [!NOTE]
 > Alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i Detailbutikker og på siden **Detailparametre**, gælder for funktionen til forbedret bogføring af opgørelser.

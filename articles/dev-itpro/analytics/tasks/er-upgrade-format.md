@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544443"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595434"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Opgradere dit format ved at bruge en ny basisversion af formatet
 
@@ -36,7 +36,7 @@ For at fuldføre denne fremgangsmåde, skal du først udføre trinnene i procedu
 
 ## <a name="select-format-configuration-for-customization"></a>Vælge formatkonfiguration, der skal tilpasses
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-    * I dette eksempel fungerer eksempelfirmaet Litware, Inc. (http://www.litware.com) som en konfigurationsudbyder, der understøtter formatkonfigurationer af elektroniske betalinger for et bestemt land/område.    Eksempelfirmaet Proseware, Inc. (http://www.proseware.com) vil fungere som en forbruger af den formatkonfiguration, som Litware, Inc har leveret. Proseware, Inc. bruger formater i bestemte dele af det pågældende land/område.  
+    * I dette eksempel fungerer eksempelfirmaet Litware, Inc. (https://www.litware.com) som en konfigurationsudbyder, der understøtter formatkonfigurationer af elektroniske betalinger for et bestemt land/område.    Eksempelfirmaet Proseware, Inc. (http://www.proseware.com) vil fungere som en forbruger af den formatkonfiguration, som Litware, Inc har leveret. Proseware, Inc. bruger formater i bestemte dele af det pågældende land/område.  
 2. Klik på Rapporteringskonfigurationer.
 3. Klik på Vis filtre.
 4. Anvend følgende filtre: Angiv filterværdien "BACS (UK-fiktiv)" i feltet "Navn" ved hjælp af filteroperatøren "begynder med".

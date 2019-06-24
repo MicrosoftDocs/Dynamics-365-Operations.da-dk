@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525319"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577894"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurere regnskabsintegration for detailkanaler
 
@@ -88,7 +88,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
         Du kan ændre parametrene for datatilknytning i en funktionel connectorprofil. Hvis du vil gendanne de standardparametre, der er defineret i konfigurationen af regnskabsdokumentudbyderen, skal du vælge **Opdater**.
 
         **Eksempler**
-    
+
         |   | Formater | Eksempel |
         |---|--------|---------|
         | **Indstillinger for momssats** | værdi : VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
 4. Opret regnskabsconnectorgrupper.
 
     En regnskabsconnectorgruppe kombinerer funktionelle profiler for regnskabsconncetorer, der udfører samme funktioner og bruges på samme trin i en regnskabsregistreringsproces. Hvis der eksempelvis kan bruges forskellige bonprintermodeller i en detailbutik, kan regnskabsconnectorer for disse bonprintere kombineres i en regnskabsconnectorgruppe.
-    
+
     1. På siden **Regnskabsconnectorgruppe** (**Retail \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsconnectorgrupper**) skal du oprette en ny regnskabsconnectorgruppe.
     2. Tilføj funktionelle profiler til connectorgruppen. Vælg **Tilføj** under fanen **Funktionsprofiler**, og vælg et profilnummer. I en connectorgruppe kan hver regnskabsconnector kun have én funktionel profil.
     3. Hvis du vil afbryde brugen af den funktionelle profil, kan du indstille **Deaktiver** til **Ja**. Denne ændring påvirker kun den aktuelle connectorgruppe. Du kan fortsætte med at bruge den samme funktionelle profil i andre connectorgrupper.
@@ -119,7 +119,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
 5. Opret en regnskabsregistreringsproces.
 
     En regnskabsregistreringsproces defineres af rækkefølgen af trinnene i registreringen og den connectorgruppe, der bruges i hvert trin.
-    
+
     1. På siden **Proces for regnskabsregistrering** (**Retail \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**) skal du oprette en ny post for hver entydige regnskabsregistreringsproces.
     2. Føj registreringstrin til processen:
 
@@ -145,7 +145,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
 7. På siden **Proces for regnskabsregistrering** (**Retail \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**) skal du vælge **Kontroller** for at validere regnskabsregistreringsprocessen.
 
     Det anbefales, at du kører denne type validering i følgende tilfælde:
-    
+
     - Når du har angivet alle indstillinger for en ny registreringsproces, herunder når du tildeler registreringsprocesser til POS-funktionalitetsprofiler og hardwareprofiler.
     - Når du har ændret en regnskabsregistreringsproces, og ændringerne kan medføre, at en anden regnskabsconnector bliver valgt på kørselstidspunktet (f.eks. hvis du ændrer connectorgruppen for et trin i regnskabsregistreringsprocessen, aktiverer en funktionel connectorprofil i en connectorgruppe eller føjer en ny funktionel connectorprofil til en connectorgruppe).
     - Når du har foretaget ændringer i tildelingen af tekniske connectorprofiler til hardwareprofiler.

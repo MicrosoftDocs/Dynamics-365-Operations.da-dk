@@ -6,11 +6,11 @@
       href: get-started/whats-new.md
     - name: Funktioner i prøveversion i Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
-    - name: Funktioner i prøveversion i Dynamics 365 for Retail 10.0.2
+    - name: Nyheder eller ændringer i Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
     - name: Nyheder eller ændringer i Dynamics 365 for Retail 10.0.1
       href: get-started/whats-new-10-0-1.md
-    - name: Nyheder og ændringer i Dynamics 365 for Retail (april 2019)
+    - name: Nyheder eller ændringer i Dynamics 365 for Retail (april 2019)
       href: get-started/april-whats-new.md
     - name: Før du køber Retail
       href: get-started/before-you-buy.md
@@ -56,7 +56,11 @@
     - name: Problemer med test og ydeevne
       href: dev-itpro/retail-implementation-testing-performance.md
 - name: Fordelt ordrestyring (DOM)
-  href: dom.md
+  items:
+    - name: DOM-oversigt
+      href: dom.md
+    - name: Omkostningskonfiguration
+      href: cost.md
 - name: Betalinger
   items:
     - name: Betalingsmetoder
@@ -67,11 +71,13 @@
       href: cash-denominations.md
     - name: Dynamics 365-betalingsconnector til Adyen
       href: dev-itpro/adyen-connector.md
+    - name: Gemme onlinebetalingsmetoder med Adyen-connector
+      href: dev-itpro/adyen-connector-listPI.md
     - name: Konfigurere scenarier for betaling af fakturaer
       href: payinvoice.md
     - name: Ofte stillede spørgsmål om betalinger
       href: dev-itpro/payments-retail.md
-    - name: Forhindring af duplikerede betalinger
+    - name: Forhindring af dublerede betalinger
       href: duplicate-payment-protection.md
 - name: Indkøbsordrer
   items:
@@ -95,7 +101,9 @@
       href: tasks/create-calculate-post-statement-retail-store.md
     - name: Funktionalitet til forbedring af bogføring af opgørelsen
       href: statement-posting-EOD.md
-    - name: 'Konfigurere parametre for Retail, som påvirker detailopgørelser'
+    - name: Forbedret håndtering af batchsporede varer
+      href: batch.md
+    - name: 'Konfigurere Detailparametre, som påvirker detailopgørelser'
       href: tasks/parameter-configurations-retail-statements.md
     - name: 'Konfigurere indstillinger for betalingsmetode, som påvirker detailopgørelser'
       href: tasks/payment-configurations-retail-statements.md
@@ -115,6 +123,8 @@
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: Indstillinger for beregning af hele beløbet og intervaller for momskoder
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Oversigt over omni-kanal-betalinger
+  href: omni-channel-payments.md
 - name: Avancerede automatiske gebyrer for omni-kanal
   items:
     - name: Konfigurere og bruge avancerede automatiske gebyrer
@@ -159,12 +169,14 @@
       href: MPOS-or-CPOS.md
     - name: Online og offline POS-handlinger
       href: pos-operations.md
-    - name: Enhedsaktivering af en brugerdefineret Retail Modern POS
+    - name: Enhedsaktivering af en brugerdefineret Retail MPOS
       href: dev-itpro/retail-POS-activation-changes.md
     - name: Skærmlayouts til demodata i MPOS og Cloud POS
       href: demo-data.md
-    - name: Produkt- og kundeservicesøgning i POS
+    - name: Produkt- og kundesøgning i POS
       href: POS-search-improvements.md
+    - name: Forbedringer af likviditetsstyring
+      href: cash-mgmt.md
     - name: Lagersøgning i POS
       href: product-variants-POS.md
     - name: Afbryde og genoptage transaktioner i POS
@@ -349,7 +361,7 @@
       href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Personale
   items:
-    - name: 'Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger'
+    - name: 'Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger'
       href: ../talent/departments-jobs-positions.md
     - name: Konfigurere komponenterne i et job
       href: ../talent/create-job.md
@@ -590,7 +602,7 @@
           href: dev-itpro/extend-metadata.md
         - name: Kalde CRT-tjenesten i offlinetilstand
           href: dev-itpro/call-crt-service-offline.md
-    - name: Udvidelse for CRT (Commerce runtime)
+    - name: Udvidelse for CRT (Commerce Runtime)
       items:
         - name: CRT-arkitektur og -konfiguration
           href: dev-itpro/commerce-runtime-overview.md
@@ -598,7 +610,7 @@
           href: dev-itpro/crt-services.md
         - name: Udvidelse for CRT og Retail Server
           href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Tilføje kundepræferencedata til kanaldatabaser
+        - name: Føje kundepræferencedata til kanaldatabaser
           href: dev-itpro/add-customer-preference-channel.md
         - name: Føje egenskaber til salgsordrer
           href: dev-itpro/add-properties-sales-order.md
@@ -678,7 +690,7 @@
           href: dev-itpro/pos-control-non-screen.md
         - name: Udvikling i skybaserede udviklingsmiljøer uden administratoradgang
           href: dev-itpro/cloud-dev-box.md
-    - name: Commerce runtime
+    - name: Commerce Runtime
       items:
         - name: Loyalitetsudvidelse
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md

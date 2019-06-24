@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e327f652855f898e50f1dd853ae20f3a0ff41d9e
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564989"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606982"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Fastslå den optimale kombination af overlappende rabatter
 
@@ -42,11 +42,11 @@ Du kan oprette et ubegrænset antal detailrabatter på et fælles sæt produkter
 
 I dette eksempel er to produkter nødvendige for at kunne opnå hver rabat, og rabatter kan ikke kombineres. Rabatterne i dette eksempel er rabatter af typen **bedste pris**. Begge produkter opfylder betingelserne for begge rabatter. Her er de to rabatter.
 
-![Overlappende rabatkombination 01](./media/overlapping-discount-combo-01.jpg)
+![Eksempel på to bedste prisrabatter](./media/overlapping-discount-combo-01.jpg)
 
 For to tilfældige produkter afhænger den bedste af disse to rabatter af priserne på de to produkter. Når prisen på begge produkter er ens eller næsten ens, er rabat 1 den bedste. Når prisen på én vare er betydeligt mindre end prisen på det andet produkt, er rabatten 2 bedre. Her er den matematiske regel for evaluering af disse to rabatter mod hinanden.
 
-![Overlappende rabatkombination 02](./media/overlapping-discount-combo-02.jpg)
+![Regel for evaluering af rabatterne](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > Når prisen på produkt 1 er lig med to tredjedele af prisen på produkt 2, er de to rabatter lig hinanden. I dette eksempel varierer effektive rabatprocent for rabat 1 f.eks. fra et par procent (når priserne på de to produkter er langt fra hinanden) til maksimalt 25 procent (når de to produkter har den samme pris). Effektiv rabatprocent for rabat 2 er fast. Den er altid 20 procent. Da den effektive rabatprocent for rabat 1 har et interval, der kan være større eller mindre end rabat 2, afhænger den bedste rabat af priserne på de to produkter, der skal gives rabat på. I dette eksempel udføres beregningen hurtigt, fordi der kun anvendes to rabatter på kun to produkter. Der er kun to mulige kombinationer: én anvendelse af rabat 1 eller én anvendelse af rabat 2. Der er ingen kombinationsmuligheder, der skal beregnes. Værdien af hver rabat beregnes ved hjælp af begge produkter, og den bedste rabat bruges.
@@ -60,11 +60,11 @@ Derefter skal bruge vi fire produkter og de samme to rabatter. Alle fire produkt
 
 For at læse tabellerne, skal du bruge et produkt fra en række og ét produkt fra en kolonne. I tabellen til rabat 1 får du f.eks. $10 i rabat, når du kombinerer de to produkter til $20. I tabellen til rabat 2 får du $4 i rabat, når du kombinerer produktet til $15 og produktet til $5.
 
-![Overlappende rabatkombination 03](./media/overlapping-discount-combo-03.jpg)
+![Eksempel, hvor fire produkter bruges til de samme to rabatter](./media/overlapping-discount-combo-03.jpg)
 
 Først skal vi finde den største rabat, der er tilgængelig for to vilkårlige produkter ved hjælp af begge rabatter. De to tabeller vises rabatbeløbet for alle kombinationer af de to produkter. De nedtonede dele af tabellerne repræsenterer enten tilfælde, hvor et produkt er parret med sig selv, hvilket vi ikke kan gøre, eller omvendt parring af to produkter, der giver det samme rabatbeløb og kan ignoreres. Ved at kigge på tabellerne, kan du se, at rabat 1 for de to $20 varer er den største rabat, der er tilgængelig for begge rabatter på alle fire produkter. (Denne rabat er fremhævet med grønt i den første tabel.) Det efterlader kun $15 produktet og $5 produktet. Ved at kigge på de to tabeller igen, kan du se, at for disse to produkter giver rabat 1 en rabat på $2,50, hvorimod rabat 2 giver en rabat på $4. Derfor vælger vi rabat 2. Den totale rabat er $14. For at gøre det nemmere at visualisere denne diskussion, er her to yderligere tabeller, der vises den effektive rabatprocent for alle mulige kombinationer af to produkter for både rabat 1 og rabat 2. Kun halvdelen oversigten over kombinationer er inkluderet, fordi den rækkefølge, hvori de to produkter er anbragt, ikke har nogen betydning. Den højeste effektive rabat (25 procent) er fremhævet med grønt og den laveste effektive rabat (10 procent) er fremhævet med rødt.
 
-![Overlappende rabatkombination 04](./media/overlapping-discount-combo-04.jpg)
+![Effektiv rabatprocent for alle kombinationer af to produkter for begge rabatter](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > Når priser varierer, og to eller flere rabatter konkurrerer, er den eneste måde til at sikre den bedste kombination af rabatter at evaluere begge rabatter og sammenligne dem.
@@ -73,7 +73,7 @@ Først skal vi finde den største rabat, der er tilgængelig for to vilkårlige 
 
 Dette afsnit fortsætter med eksemplet fra den forrige sektion. Vi vil tilføje flere produkter og en anden rabat og se, hvor mange kombinationer der skal beregnes og sammenlignes. Nedenstående tabel viser antallet af mulige rabatkombinationer, når produktantallet øges. I tabel vises, hvad der sker, både når der er to overlappende rabatter, som i forrige eksempel, og når der er tre overlappende rabatter. Antallet af mulige rabatkombinationer, der skal evalueres, overstiger hurtigt, hvad selv en hurtig computer kan beregne og sammenligne hurtigt nok, til at det er acceptabelt for detailtransaktioner.
 
-![Overlappende rabatkombination 05](./media/overlapping-discount-combo-05.jpg)
+![Antallet af mulige rabatkombinationer, når produktantallet øges.](./media/overlapping-discount-combo-05.jpg)
 
 Når der anvendes større mængder eller flere overlappende rabatter, når det samlede antal mulige rabatkombinationer hurtigt op i millioner, og den tid, der kræves for at vurdere og vælge den bedste mulige kombination, bliver hurtigt mærkbar. Der skal foretages nogle optimeringer i detailprisprogrammet for at reducere det samlede antal kombinationer, der skal evalueres. Men fordi antallet af overlappende rabatter og mængderne i en transaktion ikke er begrænset, skal et stort antal kombinationer altid evalueres, når der er overlappende rabatter. Det er dette problem, som metoden rangordning af marginal værdi løser.
 
@@ -81,6 +81,6 @@ Når der anvendes større mængder eller flere overlappende rabatter, når det s
 
 Til at løse problemet med et eksponentielt stigende antal kombinationer, der skal evalueres, findes der en optimering, der beregner værdien pr. delt produkt for hver rabat på det sæt af produkter, hvor der kan anvendes to eller flere rabatter. Vi kalder denne værdi den **marginale værdi** af rabatten for de delte produkter. Den marginale værdi er den gennemsnitlige stigning pr. produkt stigning i det samlede rabatbeløb, når de delte produkter er inkluderet i hver rabat. Den marginale værdi beregnes ved at tage det samlede rabatbeløb (DTotal) og fratrække rabatbeløbet uden delte produkter (DMinus\\ Shared), og dividere forskellen med antallet af delte produkter (ProductsShared).
 
-![Overlappende rabatkombination 06](./media/overlapping-discount-combo-06.jpg)
+![Formel til beregning af marginal værdi](./media/overlapping-discount-combo-06.jpg)
 
 Når den marginale værdi af hver rabat på et delt sæt produkter er beregnet, anvendes rabatterne på de delte produkter i rækkefølge, udtømmende, fra højeste marginale værdi til laveste marginale værdi. I denne metode sammenlignes alle resterende rabatmuligheder ikke hver gang, når der anvendes en enkelt forekomst af en rabat. I stedet sammenlignes de overlappende rabatter én gang og anvendes derefter i rækkefølge. Der foretages ingen yderligere sammenligninger. Du kan konfigurere tærsklen for at skifte til metoden for marginal værdi under fanen **Rabat** på siden **Detailparametre**. Den acceptable tid til at beregne den samlede rabat varierer på tværs af detailbrancher. Men generelt ligger denne tid dog i intervallet fra nogle tiendedele af millisekunder til et sekund.

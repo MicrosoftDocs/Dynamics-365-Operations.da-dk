@@ -3,7 +3,7 @@ title: Konsistenskontrol af detailtransaktion
 description: Dette emne beskriver funktionen konsistenskontrol af detailtransaktion i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 05/30/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 972c4d6b244eebc85cc801353ce8fb25ecbc0655
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517027"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617314"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenskontrol af detailtransaktion
 
@@ -31,29 +31,40 @@ ms.locfileid: "1517027"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-Dette emne beskriver funktionen konsistenskontrol af detailtransaktion, der blev introduceret i Microsoft Dynamics 365 for Finance and Operations, version 8.1.3. Konsistenskontrollen identificerer og isolerer inkonsistente posteringer, før de hentes af processen til bogføring af opgørelsen.
+Dette emne beskriver funktionen konsistenskontrol af detailtransaktion, der blev introduceret i Microsoft Dynamics 365 for Finance and Operations, version 8.1.3. Konsistenskontrollen identificerer og isolerer inkonsistente transaktioner, før de hentes af processen til bogføring af opgørelsen.
 
-Når en opgørelse bogføres i Retail, kan bogføringen mislykkes på grund af inkonsistente data i detailtransaktionstabellerne. Dataproblemet kan skyldes uforudsete problemer med i POS-programmet, eller at transaktioner blev importeret forkert fra tredjeparts-POS-systemer. Eksempler på, hvordan denne inkonsistens kan vise sig, omfatter: 
+Når en opgørelse bogføres i Microsoft Dynamics 365 for Retail, kan bogføringen mislykkes på grund af inkonsistente data i detailtransaktionstabellerne. Dataproblemet kan skyldes uforudsete problemer i POS-programmet, eller at transaktioner blev importeret forkert fra tredjeparts-POS-systemer. Eksempler på, hvordan denne inkonsistens kan vise sig, omfatter: 
 
-  - Totalen for transaktionen i hovedtabellen stemmer ikke overens med transaktionstotalen på linjerne.
-  - Linjeantallet i hovedtabellen stemmer ikke overens med antallet af linjer i transaktionstabellen.
-  - Moms i hovedtabellen stemmer ikke overens med momsbeløb på linjerne. 
-  
+- Totalen for transaktionen i hovedtabellen stemmer ikke overens med transaktionstotalen på linjerne.
+- Linjeantallet i hovedtabellen stemmer ikke overens med antallet af linjer i transaktionstabellen.
+- Moms i hovedtabellen stemmer ikke overens med momsbeløb på linjerne. 
+
 Når inkonsistente transaktioner hentes af processen til bogføring af opgørelsen, oprettes der inkonsekvente salgsfakturaer og betalingskladder, og hele bogføringsprocessen for opgørelsen mislykkes derfor. Gendannelsen af opgørelserne fra en sådan tilstand omfatter komplekse rettelser af data på tværs af flere transaktionstabeller. Konsistenskontrollen af detailtransaktioner forhindrer sådanne problemer.
 
 I følgende diagram illustreres bogføringsprocessen med konsistenskontrollen af transaktioner.
 
 ![Processen til bogføring af opgørelse med konsistenskontrol af detailtransaktioner](./media/validchecker.png "Processen til bogføring af opgørelse med konsistenskontrol af detailtransaktioner")
 
-Batchprocessen **Valider butikstransaktioner** kontrollerer konsistensen af detailtransaktionstabellerne i følgende scenarier.
+Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af detailtransaktionstabellerne i følgende scenarier.
 
-- Debitorkonto - validerer, at debitorkontoen i detailtransaktionstabellerne findes i debitormasteren i hovedkontoret.
-- Linjetæller - validerer, at antallet af linjer, som er angivet i transaktionshovedtabellen, svarer til antallet af linjer i salgstransaktionstabellerne.
+- **Debitorkonto** – validerer, at debitorkontoen i detailtransaktionstabellerne findes i debitormasteren i hovedkontoret.
+- **Linjetæller** – validerer, at antallet af linjer, som er angivet i transaktionshovedtabellen, svarer til antallet af linjer i salgstransaktionstabellerne.
+- **Pris inkl. moms** – validerer, at parameteren **Pris inkl. moms** er konsistent på tværs af transaktionslinjer.
+- **Bruttobeløb** – validerer, at bruttobeløbet i hovedet er summen af nettobeløbene på linjerne plus momsbeløbet.
+- **Nettobeløb** – validerer, at nettobeløbet i hovedet er summen af nettobeløbene på linjerne.
+- **Under-/overbetaling** – validerer, at differencen mellem bruttobeløbet i hovedet og betalingsbeløbet ikke overskrider konfigurationen af den maksimalt tilladte underbetaling/overbetaling.
+- **Rabatbeløb** – validerer, at rabatbeløbet på rabattabellerne og rabatbeløbet i tabellerne for detailtransaktionslinjer er konsistente, og at rabatbeløbet i hovedet er summen af rabatbeløbene på linjerne.
+- **Linjerabat** – validerer, at linjerabatten på transaktionslinjen er summen af alle linjer i rabattabellen, der svarer til transaktionslinjen.
+- **Gavekortvare** – Retail understøtter ikke returnering af gavekortvarer. Saldoen på et gavekort kan dog udbetales kontant. Alle gavekortvarer, der behandles som en returlinje i stedet for en udbetalingslinje, mislykkes i bogføringsprocessen for opgørelsen. Valideringsprocessen for gavekortvarer er garanti for, at de eneste returneringslinjer for gavekortvarer i detailtransaktionstabellerne er udbetalingslinjer for gavekort.
+- **Negativ pris** – validerer, at der ikke er nogen negative pristransaktionslinjer.
+- **Vare og variant** – validerer, at varer og varianter på transaktionslinjerne findes i masterfilen for vare og variant.
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurere konsistenskontrollen
-Konfigurer batchprocessen "Valider butiksposteringer" på **Detail \> Detail-it \> POS- bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
+
+Konfigurer batchprocessen "Valider butiksposteringer" på **Retail \> Retail IT \> POS-bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
 
 ## <a name="results-of-validation-process"></a>Resultater af valideringsprocessen
+
 Resultaterne af valideringskontrollen af batchprocessen markeres på den relevante detailtransaktion. Feltet **Valideringsstatus** på detailtransaktionsposten er enten angivet til **Fuldført** eller **Fejl**, og datoen for den seneste valideringskørsel vises i feltet **Sidste valideringstidspunkt**.
 
 For at få vist mere beskrivende fejltekst, der vedrører en valideringsfejl, skal du vælge den relevante detailbutikstransaktionspost og klikke på knappen **Valideringsfejl**.

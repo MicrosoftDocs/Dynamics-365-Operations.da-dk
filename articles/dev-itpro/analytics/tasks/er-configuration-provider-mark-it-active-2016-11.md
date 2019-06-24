@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544903"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595389"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Oprette konfigurationsudbydere og markere dem som aktive
 
@@ -34,11 +34,11 @@ Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator ell
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
 2. Klik på Konfigurationsudbydere.
 3. Klik på Ny.
-    * En udbyderpost har et entydigt ved navn og URL-adresse. Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (http://www.litware.com).  
+    * En udbyderpost har et entydigt ved navn og URL-adresse. Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (https://www.litware.com).  
 4. Skriv "Litware, Inc." i feltet Navn.
     * Litware, Inc.  
-5. Indtast 'http://www.litware.com' i feltet Internetadresse.
-    * http://www.litware.com  
+5. Indtast 'https://www.litware.com' i feltet Internetadresse.
+    * https://www.litware.com  
 6. Klik på Gem.
 7. Luk siden.
 

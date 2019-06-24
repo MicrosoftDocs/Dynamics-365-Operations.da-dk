@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502724"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595333"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
 
@@ -120,7 +120,7 @@ I nedenstående tabel beskrives koderne for kolonnebegrænsning.
 | ADJ                     | Begræns beløbene i kolonnen til periodens reguleringsbeløb, hvis disse beløb er tilgængelige. |
 | XAD                     | Begræns beløbene i kolonnen, så periodens reguleringsbeløb udelades. |
 | PT                      | Begræns beløbene i kolonnen, så kun bogførte transaktioner medtages, hvis disse transaktioner er tilgængelige. |
-| UPT                     | Begræns beløbene i kolonnen, så kun transaktioner, der ikke er bogført, medtages, hvis disse transaktioner er tilgængelige.<blockquote>[!NOTE] Ikke alle dataprovidere understøtter ikke-bogførte transaktioner. Du kan finde flere oplysninger i <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsvejledningen</a> til dit Microsoft Dynamics ERP-system.</blockquote> |
+| UPT                     | Begræns beløbene i kolonnen, så kun transaktioner, der ikke er bogført, medtages, hvis disse transaktioner er tilgængelige.<p><strong>Bemærk:</strong> ikke alle dataudbydere understøtter ikke-bogførte transaktioner. Du kan finde flere oplysninger i <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsvejledningen</a> til dit Microsoft Dynamics ERP-system.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begrænse en kolonne til en rapporteringsenhed
 
@@ -310,7 +310,7 @@ Cellen **Udskriftsstyring** kan indeholde koder, der justerer visnings- eller ud
 | Kode til udskriftstyring | Oversættelse                                     | Beskrivelse |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Ingen udskrivning                                     | Beløbene i denne kolonne medtages ikke i beregninger og i rapporter, der udskrives. Hvis du vil medtage en kolonne, der ikke udskrives, i en beregning, skal du henvise direkte til kolonnen i formlen til beregning. Kolonnen C, der ikke udskrives, er for eksempel medtaget i følgende beregning: **B + C + D**. Derimod er kolonnen C, der ikke udskrives, ikke medtaget i følgende beregning: **B:D**. |
-| XCR                | Skift fortegn, hvis den typiske saldo for en række er et kreditbeløb | Opret et budget eller en sammenlignende rapport, hvor alle negative afvigelser (f.eks. en manko i omsætningen eller en overskridelse af en udgift) altid er negative. Anvend denne kode til en **CALC**-kolonne for at vende fortegnet på Kolonnebeløbet, hvis den normale saldo for en given række er et kreditbeløb (som angivet ved hjælp af et **C** i kolonnen **Normal saldo** i rækkedefinitionen).<blockquote>[!NOTE] For <strong>TOT</strong>-rækker og </strong>CAL</strong>-rækker, der typisk har en kreditsaldo, skal du sørge for at angive et <strong>C</strong> i kolonnen <strong>Normal saldo</strong> i rækkedefinitionen.</blockquote> |
+| XCR                | Skift fortegn, hvis den typiske saldo for en række er et kreditbeløb | Opret et budget eller en sammenlignende rapport, hvor alle negative afvigelser (f.eks. en manko i omsætningen eller en overskridelse af en udgift) altid er negative. Anvend denne kode til en **CALC**-kolonne for at vende fortegnet på Kolonnebeløbet, hvis den normale saldo for en given række er et kreditbeløb (som angivet ved hjælp af et **C** i kolonnen **Normal saldo** i rækkedefinitionen).<p><strong>Bemærk:</strong> For <strong>TOT</strong>-rækker og </strong>CAL</strong>-rækker, der typisk har en kreditsaldo, skal du sørge for at angive et <strong>C</strong> i kolonnen <strong>Normal saldo</strong> i rækkedefinitionen.</p> |
 | X0                 | Skjul kolonne, hvis den kun indeholder nulværdier eller tomme værdier          | Medtag ikke en **FD**-kolonne i rapporten, hvis alle cellerne i denne kolonne enten er tomme eller indeholder nulværdiler. |
 | SR                 | Undertryk afrunding                               | Undgå, at beløbene i denne kolonne bliver afrundet. |
 | XR                 | Undertryk akkumulering                                 | Undertryk en akkumulering. Hvis rapporten bruger et rapporteringstræ, akkumuleres beløbene i denne kolonne ikke til efterfølgende overordnede noder. |
@@ -546,8 +546,8 @@ Følgende tabel viser de rapportresultater, der kan forekomme ved forskellige ko
 | Cellen Visning af valuta                        | Cellen Valutafilter | Rapportresultat |
 |----------------------------------------------|----------------------|---------------|
 | Transaktionsvaluta                 | **YEN**              | **Y6.000** – resultatet viser kun de transaktioner, der er angivet i JPY. |
-| Regnskabsvaluta fra Finans | **YEN**              |**$60** – resultatet viser kun de transaktioner, der er angivet i JPY og viser disse transaktioner i USD.<blockquote>[!NOTE] Omregningskursen er ca. 100 JPY pr. USD.</blockquote> |
-| Regnskabsvaluta fra Finans | Tom                | **$2.310** – Resultatet viser alle data i den regnskabsvaluta, der er angivet i Finans.<blockquote>[!NOTE] Dette beløb er summen af alle transaktioner i regnskabsvalutaen.</blockquote> |
+| Regnskabsvaluta fra Finans | **YEN**              |**$60** – resultatet viser kun de transaktioner, der er angivet i JPY og viser disse transaktioner i USD.<p><strong>Bemærk:</strong> Omregningskursen er ca. 100 JPY pr. USD.</p> |
+| Regnskabsvaluta fra Finans | Tom                | **$2.310** – Resultatet viser alle data i den regnskabsvaluta, der er angivet i Finans.<p><strong>Bemærk:</strong> Dette beløb er summen af alle transaktioner i regnskabsvalutaen.</p> |
 | Transaktionsvaluta                 | Tom                | **$2.250** – resultatet viser alle beløb i den valuta, som transaktionen blev udført i. Det betyder, at totalen sammenlægger beløb i forskellige valutaer. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beregningskolonne i en kolonnedefinition
@@ -565,7 +565,7 @@ Hvis du vil tilføje, fratrække, gange eller dividere kolonner, skal du angive 
 |----------|---------------------|-------------|
 | +        | A+C                 | Beløbet i kolonne A lægges sammen med beløbet i kolonne C. |
 | :        | A:C A:C-D           | Tilføj et interval af på hinanden følgende kolonner. For eksempel lægger formlen **A:C** summen af kolonnerne A til og med C sammen, og formlen **A:C-D** lægger summen af kolonnerne A til og med C sammen og fratrækker derefter beløbet i kolonne D. |
-| -        | A-C                 | Træk beløbet i kolonne A fra beløbet i kolonne C.<blockquote>[!NOTE] Du kan også bruge minustegnet (-) til at ændre fortegnet i en kolonne. Du kan for eksempel bruge <strong>-A+B</strong> til at lægge det negative beløb i kolonne A sammen med beløbet i kolonne B.</blockquote> |
+| -        | A-C                 | Træk beløbet i kolonne A fra beløbet i kolonne C.<p><strong>Bemærk!</strong> Du kan også bruge minustegnet (-) til at tilbageføre tegnene i en kolonne. Du kan for eksempel bruge <strong>-A+B</strong> til at lægge det negative beløb i kolonne A sammen med beløbet i kolonne B.</p> |
 | \*       | A\*C                | Beløbet i kolonne A ganges med beløbet i kolonne C. |
 | /        | A/C                 | Beløbet i kolonne A divideres med beløbet i kolonne C. |
 

@@ -3,7 +3,7 @@ title: Konfigurer kontostrukturer
 description: Dette emne indeholder oplysninger om kontostrukturer og økonomiske dimensioner.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551994"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617290"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -70,6 +70,16 @@ Sektionen **Oplysninger om tilladt værdi** fører dig gennem oprettelsen af kri
 
 [![Tillad værdier](./media/account.png)](./media/account.png) 
 
+Tilladte værdier sættes som standard til en postside for en kladde eller en regnskabsfordeling, når der ikke er andre mulige værdier, der kan vælges i henhold til opsætningen af kontostrukturen.
+
+Her er et eksempel på **Driftskontostruktur**.
+
+|Hovedkonto          | Virksomhedsenhed    |Afdeling          | Bærer    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+Når du angiver en kladde og vælger en konto i driftsområdet og afdeling '002', medfører det, at værdierne 022 og 014 er standard ved kontokontrol. Dette sker også med regnskabsfordelingssiden. 
+
 ## <a name="more-than-7-criteria-needed"></a>Der skal bruges mere end 7 kriterier
 
 Hvis du skal bruge mere end 7 kriterier, kan du fortsætte med at tilføje dem på den næste linje. Du kan se, når du arbejder i sektionen **Oplysninger om tilladt værdi**, at kriteriet **+ Tilføj ny** ikke længere er aktivt, når det syvende kriterium er angivet. Det skyldes blandt andet: 
@@ -79,8 +89,6 @@ Hvis du skal bruge mere end 7 kriterier, kan du fortsætte med at tilføje dem p
  - Anvendelighed  
  
 Hvis du vil fortsætte med at tilføje yderligere kriterier, skal du klikke på **Gentag i segmentet** og **Sektionen Tilladte værdier**. Kriterierne kopieres til en ny linje. Du kan derefter overskrive eller undlade at ændre sektionen **Oplysninger om tilladt værdi**.
-
-(LINK TIL VIDEO, DER OPRETTES)
 
 ## <a name="best-practices"></a>Bedste fremgangsmåder
 Når du konfigurerer dine kontostrukturer, der er nogle bedste fremgangsmåder, som du kan følge. Dette er dog kun en vejledning, så en holistisk diskussion om din virksomhed, vækstplan og vedligeholdelsesplan bør indgå som en del af diskussionen.

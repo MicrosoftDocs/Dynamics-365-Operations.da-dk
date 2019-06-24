@@ -1,9 +1,9 @@
 ---
-title: Få adgang til funktioner til forhåndsvisning i Talent
-description: Dette emne beskriver, hvordan administratorer kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner.
+title: Få adgang til funktioner til forhåndsvisning i Microsoft Dynamics 365 for Talent
+description: Dette emne beskriver, hvordan administratorer kan aktivere funktioner til forhåndsvisning i Microsoft Dynamics 365 for Talent, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner.
 author: tracykeya
 manager: AnnBe
-ms.date: 04/29/2019
+ms.date: 05/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,77 +18,105 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 72e2a3c62c7aab0f5cf8900c540a22d91be00609
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2858451435c358380503c8edc5cb162e6834894a
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517654"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620590"
 ---
 # <a name="access-preview-features-in-talent"></a>Få adgang til funktioner til forhåndsvisning i Talent
 
 [!include[banner](../includes/banner.md)]
 
-Som en del af vores fortløbende implementering af produktegenskaber vil vi give kunderne mulighed for at udnytte nye funktioner, så hurtigt som muligt. Administratorer kan se og bruge funktioner til visning i deres miljøer. Disse funktioner bliver snart almindeligt tilgængelige og har gennemgået omfattende test. Vi mangler kun en sidste runde af kundefeedback og validering, før vi generelt frigiver dem.
+Som en del af vores fortløbende implementering af HCM-funktioner til styring af menneskelig kapital for Microsoft Dynamics 365 for Talent, vil vi give kunderne mulighed for at udnytte nye funktioner, så hurtigt som muligt. Administratorer kan se og bruge funktioner til visning i deres miljøer. Disse funktioner bliver snart almindeligt tilgængelige og har gennemgået omfattende test. Vi mangler kun en sidste runde af kundefeedback og validering, før vi gør dem almindeligt tilgængelige.
 
-Dette emne beskriver, hvordan administratorer kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner. Denne liste opdateres, efterhånden som funktioner bliver gjort almindeligt tilgængelige og nye visningsfunktioner frigives. Der gives ikke besked, når der frigives nye funktioner til visning. Funktionerne bliver bare synlige for brugerne.
+Dette emne beskriver, hvordan du kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner. Denne liste opdateres, efterhånden som funktioner bliver gjort almindeligt tilgængelige og nye visningsfunktioner frigives. Der gives ikke besked, når der frigives nye funktioner til visning. Funktionerne bliver bare synlige for brugerne. Yderligere oplysninger om de nye funktioner i Talent finder du i [Nyheder eller ændringer i Dynamics 365 for Talent](./whats-new.md) og [Dynamics 365 samt Power Platform-produktbemærkninger](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Aktivere eller deaktivere funktioner til visning
 
-Du kan bruge indstillingen **Prøveversioner** i Microsoft Dynamics 365 for Talent Administration til at aktivere eller deaktivere funktioner til visning. Indstillingen er som standard slået fra. Handlingen med at aktivere eller deaktivere funktioner til visning er specifik for miljøet.
+Hvis du vil have adgang til visningsfunktionerne, skal du først aktivere dem i dit miljø. Aktivering eller deaktivering af funktioner til visning er specifik for miljøet.
 
 > [!IMPORTANT]
-> Ved at slå indstillingen **Prøveversioner** til aktiverer du visningsfunktioner for alle brugere i organisationen, der arbejder i det pågældende miljø. Ved at deaktivere indstillingen deaktiverer du funktioner til visning og gør dem utilgængelige for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Talent. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og visningsfunktionerne medtages ikke i Talent-serviceaftalen. Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
+> Når du slår indstillingen **Prøveversioner** til, aktiverer du visningsfunktioner for alle brugere i organisationen, der arbejder i det pågældende miljø. Når du deaktiverer indstillingen, slår du funktioner til forhåndsvisning fra og gør dem utilgængelige for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Talent. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og visningsfunktionerne medtages ikke i Talent-serviceaftalen (SLA). Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
 
-### <a name="enable-or-disable-preview-features-for-your-organization"></a>Aktivere eller deaktivere funktioner til visning for organisationen
-
-#### <a name="attract"></a>Tiltræk
+### <a name="attract"></a>Tiltræk
 
 1. Log på Microsoft Dynamics 365 for Talent: Attract.
-2. I menuen **Opsætning** (tandhjulsymbolet) i øverste højre hjørne skal du vælge **Administratorindstillinger**.
-3. Under fanen **Administration af funktioner** skal du vælge indstillingen ud for **Funktioner i prøveversioner**, så den bliver blå.
-4. Du kan vælge at styre individuelle funktioner ved at aktivere/deaktivere bestemte funktioner på denne side.
-5. Opdater browseren for at begynde at se de nye funktioner. (Alle brugere, der allerede er logget på, kan se funktionerne, næste gang de logger på, eller de kan opdatere deres webbrowser for at få vist funktionerne med det samme).
+2. I menuen **Opsætning** (tandhjulsymbolet) i øverste højre hjørne skal du vælge **Administration**.
+3. Under fanen **Administration af funktioner** skal du vælge indstillingen ud for **Funktioner i prøveversion**, så den bliver blå, og der står **Til**.
 
-#### <a name="core-hr"></a>Grundlæggende personalefunktioner
+    ![Aktivér funktioner i Attract](./media/attract-enable-preview-features.png)
 
-1. Log på Talent. Det grundlæggende arbejdsområde for personale, hvor du skal udføre de resterende trin, åbnes. 
-2. Vælg **Systemadministration \> Links til systemparametre**.
-3. På siden **Systemparametre** under fanen **Funktioner i prøveversioner** skal du vælge **Ja** i indstillingen **Aktivér eksempelvisning for alle brugere** for at gøre eksempelfunktioner tilgængelige.
+4. Vælg eller annuller markeringen af individuelle forhåndsvisningsfunktioner. Hvis du ikke gør noget, er alle tilgængelige forhåndsvisningsfunktioner aktiverede.
+5. Opdater browseren for at begynde at se de nye funktioner. Alle brugere, der allerede er logget på, kan se funktionerne, næste gang de logger på, eller de kan opdatere deres webbrowser for at få vist funktionerne med det samme.
 
 > [!NOTE]
-> For at deaktivere eksempelfunktioner skal du bruge den samme grundlæggende fremgangsmåde. Når du deaktiverer eksempelfunktioner, de bliver utilgængelige for brugerne, og der kan opstå fejl i processer, der er knyttet til funktionerne.
+> Nogle visningsfunktioner kræver muligvis yderligere konfiguration. Følg linkene ud for visningsfunktionen for at fuldføre opsætningen af det.
+
+### <a name="core-hr"></a>Grundlæggende personalefunktioner
+
+1. Log på Talent.
+2. Vælg **Systemadministration**, og klik derefter på fanen **Links**.
+3. Vælg **Systemparametre** under **Opsætning** på siden **Systemadministration**.
+4. Vælg fanen **Funktioner i prøveversion** på siden **Systemparametre**.
+5. Vælg indstillingen **Ja** for **Aktivér eksempelvisning for alle brugere**, hvis du gøre visningsfunktionerne tilgængelige.
+
+    ![Aktivere funktioner i Core HR](./media/corehr-enable-preview-features.png)
+
+> [!NOTE]
+> For at deaktivere eksempelfunktioner skal du bruge den samme fremgangsmåde, men vælge indstillingen **Nej** for **Aktivér eksempelvisning for alle brugere**. Når du deaktiverer eksempelfunktioner, de bliver utilgængelige for brugerne, og der kan opstå fejl i processer, der er knyttet til funktionerne.
+
+### <a name="onboard"></a>Introducer
+
+Der er i øjeblikket ingen tilgængelige visningsfunktioner for Microsoft Dynamics 365 for Talent: Onboard.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktioner, der i øjeblikket findes som eksempelfunktioner
 
 ### <a name="attract"></a>Tiltræk
 
-- **Relevante kandidater i et Job** – Rekrutteringsmedarbejdere og ansættelsesansvarlige kan nemt se, hvilke ansøgere der kan være de mest relevante til jobbet på tværs af alle ansøgere. De 5 højst prioriterede ansøgere vises ud fra relevansen af deres CV/profil i forhold til jobbeskrivelsen.
-- **Relevante job** – Kandidaterne kan nu se en liste over andre job, der er relevante for dem, baseret på deres CV/profil og jobbeskrivelserne.  I øjeblikket vises dette til kandidaterne, når de ansøger, som forslag til andre muligheder.
-- **Understøttelse af EEO/OFCCP** – Nye aktivitetstyper muliggør brugen af en foruddefineret formular til indsamling af data for lige ansættelsesmuligheder (EEO) og OFCCP-data (Office of Federal Contract Compliance Program) fra kandidaten.  Dette er en foruddefineret formular, som ikke kan redigeres.
-
-    > [!NOTE]
-    > Job, der er slået op, kan kun ses af kunder, der abonnerer på en eller flere LinkedIn-joboversigtsprodukter. Ellers kan kunderne kun se et job, hvis de eksplicit søger efter det. Der er en forsinkelse, når job slås op på LinkedIn. Det kan tage et par timer, før et job vises, når det er opslået fra Attract.
-
-- **Kandidatansøgning** – Både interne og eksterne kandidater kan nu ansøge direkte fra jobsiden på karrierewebstedet.
-- **Offer Management** – Brugerne kan nu oprette tilbudsbreve fra skabeloner, der indeholder pladsholdere. Efterhånden som kandidaterne avancerer til jobtilbudsstadiet, kan rekrutteringsmedarbejder eller ansættelsesansvarlige bruge tilbudsværktøjet til at forberede en ansøgers formelle tilbud via skabeloner, sende tilbuddet til intern godkendelse og endelig sende tilbuddet til kandidaten til underskrivning. Der vil blive tilføjet mange nye funktioner til tilbudsværktøjet med tiden, og eksempelversionen vil blive opdateret med disse funktioner, når vi er klar til at frigive dem som eksempelfunktioner.
-- **[Analytiske rapporter](analytic-reports.md)** – Ansættelsesteam kan bruge nøglemålepunkter for ansættelsesprocesser til et enkelt job med Jobanalyser eller samlet metrik på tværs af alle job i Analysehubben.
+- [Kandidatanbefaling](./intelligent-recommendations.md#candidate-recommendations) – Hvis der til et job er mere end ti ansøgere, der har CV'er eller fuldstændige profiler, vises de ansøgere, der bedst opfylder kravene til et job, i sektionen **Ansøgere, der skal tages i betragtning** på den pågældende jobside.
+- [Jobanbefaling](./intelligent-recommendations.md#job-recommendations) – Hvis der er opslået mere end ti job på dit karrierewebsted, leverer Attract jobanbefalinger til jobkandidater.
+- [Integration af Broadbean](./posting-jobs-external.md#post-jobs-to-broadbean) – Du kan opslå job fra Attract til Broadbean, et eksternt websted til opslag af job. Når du har aktiveret denne visningsfunktion, skal du fuldføre opsætningen ved at angive dit Broadbean-brugernavn, klient-ID og krypteringstoken.
+- [Analyser](./analytic-reports.md) – I analysehubben kan ansættelsesteam bruge nøglemålepunkter til et enkelt job plus samlet metrik på tværs af alle job.
+- [EEO](./activities-attract.md) – Med nye aktivitetstyper kan du bruge en foruddefineret formular til at indsamle data for lige ansættelsesmuligheder (EEO) og OFCCP-data (Office of Federal Contract Compliance Program) fra en kandidat. Den foruddefinerede formular kan ikke redigeres.
+- [Anbefaling af kundeemne](./intelligent-recommendations.md#prospect-recommendations) – Attract vurderer tidligere ansøgere og aktuelle kandidater og leverer en liste over kundeemner, der er et godt match til dit job.
+- [Relevanssøgning](./attract-talent-pools.md#search-and-view-candidate-profiles) – Du kan søge i hele kandidatdatabasen efter specifikke færdigheder, navne eller uddannelsesmæssige baggrunde. Attract søger i hele profilen og fremhæver alle de resultater, der bliver fundet. Attract søger ligeledes i alle de dokumenter, der er tilgængelige for en kandidat, og rangerer søgeresultaterne på en intelligent måde.
+- [Aktivitetsmålgruppe](./whats-new-talent-march-20.md#setting-the-audience-on-activities) – Du kan indstille målgruppen for aktiviteter (f.eks. samtale, tidsplan eller tilbagemelding) til **Alle kandidater**, **Interne kandidater** eller **Eksterne kandidater**. Du kan levere brugertilpassede aktiviteter som f.eks. YouTube-videoer, webstedsindhold og Microsoft Forms, til alle kandidater, kun interne kandidater, kun eksterne kandidater eller til ansættelsesteamet.
+- [Ansøg med LinkedIn](./career-site.md#enable-applying-for-jobs-with-linkedin-profiles) – Du kan konfigurere en indstilling på dit Attract-karrierewebsted, så kandidater kan ansøge ved hjælp af LinkedIn. Denne funktion effektiviserer ansøgningsprocessen for dine kandidater ved at lade dem bruge deres LinkedIn-profil til automatisk at udfylde deres ansøgninger på dit karrierewebsted.
+- [Kildesporing](./source-tracking.md) – Attract sporer kilden til kandidaternes ansøgninger og giver værdifulde oplysninger, der kan hjælpe dig med at målrette dine rekrutteringstiltag. Du kan også vælge en ansøgningskilde, når du føjer en kandidat til et job eller en talentpulje.
+- [Sølvmedaljetager](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – Hvis nogle kandidater matcher din organisation særlig godt, uden at du har tilbudt dem den aktuelle stilling, kan du udpege dem som sølvmedaljetagere. Denne funktion hjælper med at reducere din ansættelsestid, næste gang du har en tilsvarende ledig stilling.
 
 ### <a name="core-hr"></a>Grundlæggende personalefunktioner
 
-- **Åben tilmelding** – Med Åben tilmelding som frynsegode får medarbejderne en enkel selvbetjeningsoplevelse, når de skal vælge deres frynsegoder. Personaleadministratorer kan konfigurere processen for frynsegodet åben tilmelding for organisationen og tilmeldingsoplevelsen for medarbejdere ved hjælp af en automatiseret løsning, der er nem at følge.
+- [Validering af data i stillingshierarki](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) – Du kan validere ledelseshierarkiet for alle cirkulære referencer, der utilsigtet er importeret.
+- [Angiv årsagskoder for orlovstyper](./whats-new-talent-may-13-2019.md#specify-reason-codes-on-leave-types) – Du kan angive årsagskoder for orlovstyper.
+- [Kræve årsagskoder ved anmodninger om fritid](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) – Ud over at angive årsagskoder for orlovstyper kan du kræve årsagskoder for fritidsanmodninger.
+- [Udarbejdelse af en transaktionsliste over orlov og fravær til Personale](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) – Du kan få vist en liste over orlovs-og fraværsposter, der hjælper med at give indsigt i fritidssaldi .
+
+### <a name="onboard"></a>Introducer
+
+Der er i øjeblikket ingen tilgængelige visningsfunktioner for Onboard.
 
 ## <a name="feedback"></a>Tilbagemelding
 
-Uanset om din feedback er positiv eller negativ, vil vi gerne høre fra dig om din brug af eksempelfunktionerne. Vi opfordrer dig til jævnligt at opslå din feedback på følgende websteder, når du bruger disse eller andre funktioner.
+Vi vil gerne høre fra dig om din oplevelse med disse visningsfunktioner. Vi opfordrer dig til jævnligt at opslå din feedback på følgende websteder, når du bruger disse eller andre funktioner:
 
 - [Community](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – Dette websted er en nyttig ressource, hvor brugere kan diskutere eksempler på brug, stille spørgsmål og få hjælp fra community'et.
-- Du kan bruge følgende websteder til at komme med produktideer. Fortæl os om de funktioner, som du gerne vil have i produktet, og også eventuelle ændringer, du synes, skal foretages af eksisterende funktioner.
+- Fortæl os om de funktioner, som du gerne vil have i produktet, eller gør os opmærksom på eventuelle ændringer, som du synes, vi skal foretage af eksisterende funktioner. Du kan komme med ideer til produkter på følgende websteder:
 
     - [Attract-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
-    - [Grundlæggende personalefunktioner](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+    - [Core HR-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+    - [Onboard-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
 
-Medtag ikke personlige oplysninger (oplysninger, der kan identificere dig) i din feedback eller indsendelser af produktanmeldelser. Oplysninger, der indsamles, kan blive analyseret yderligere, og de bruges ikke til at besvare spørgsmål i henhold til gældende love om beskyttelse af personlige oplysninger. Personlige data, der indsamles særskilt i henhold til disse programmer, er underlagt [Microsofts erklæring om beskyttelse af personlige oplysninger](https://privacy.microsoft.com/privacystatement).
+Undgå at medtage personlige oplysninger (oplysninger, der kan identificere dig) i din feedback eller indsendelser af produktanmeldelser. Indsamlede oplysninger kan blive analyseret yderligere, men de bruges ikke til at besvare spørgsmål i henhold til gældende love om beskyttelse af personlige oplysninger. Personlige data, der indsamles særskilt i henhold til disse programmer, er underlagt [Microsofts erklæring om beskyttelse af personlige oplysninger](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Sæt et bogmærke ved dette emne, og kom tilbage ofte for at holde dig opdateret om nye eksempelfunktioner, efterhånden som vi frigiver dem.
+
+## <a name="see-also"></a>Se også
+
+- [Prøv eller køb Talent-apps](https://dynamics.microsoft.com/talent/overview/)
+- [Nyheder](./whats-new.md)
+- [Frigivelsesnoter](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support til Talent](./talent-support.md)

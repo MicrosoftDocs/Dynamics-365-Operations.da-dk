@@ -3,7 +3,7 @@ title: Fjernede eller frarådede funktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527665"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620639"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller forældede funktioner
 
@@ -38,8 +38,35 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 > [!NOTE]
 > Fra og med Dynamics 365 for Finance and Operations-versionen fra juli 2017 med Platform update 8 er installationstyperne angivet for hver fjernet eller forældet funktion. Alle de tidligere versioner, der er nævnt i dette emne, understøtter kun installationer i skyen.
 
-> [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a>Frankrig: Eksport af FEC-regnskabsdata i XML-format
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Den **Franske FEC-revisionsfil**, som er erstattet af txt-format, er tilgængelig via **Finans** \> **Periodiske opgaver** \> **Dataeksport**.
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Finans |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. Måltidsrammen for funktioner, der skal fjernes, er juli 2020. |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 med platformsopdatering 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 med platformsopdatering 28 er tilgængelig for brugere i målgruppen som en del af en eksempelversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om frigivelser af eksempelversioner her: [Tilgængelighed af tjenesteopdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-navigation-bar"></a>Gammel navigationslinje
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Overskriftsjustering med andre Dynamics- og Office-produkter. Yderligere oplysninger finder du i [Opdateret navigationslinje er nu tilpasset overskriften i Office](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Erstattet af en anden funktion?**   | I platformsopdatering 24 blev der introduceret en navigationslinje med søgefunktionen. |
+| **Produktområder, der er berørt**         | Webklient |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forælder: Fra og med april 2020 er den ældre navigationslinje ikke længere tilgængelig. Indtil dette tidspunkt kan kunder vende tilbage til den ældre navigationslinje via siden **Indstillinger for klientydelse**. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 med platformsopdatering 26

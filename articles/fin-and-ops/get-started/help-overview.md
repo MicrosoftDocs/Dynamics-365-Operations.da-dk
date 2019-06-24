@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538950"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595633"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjælp-system til Finance and Operations
 
@@ -192,7 +192,7 @@ Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for
 | [Docs.microsoft.com](/dynamics365/)                                                            | Er vært for eller indeholder hyperlinks til al produktdokumentation til Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsofts gratis eLearning-websted. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Indeholder et skybaseret arbejdsområde til samarbejde, som kunder og partnere kan bruge til at administrere Dynamics 365 for Finance and Operations-projekter, lige fra førsalg til implementering og drift. Dette websted er nyttigt i alle faserne i en installation. |
-| [Supportblog](http://aka.ms/AXSupportBlog)                                                    | Indeholder tip og trick, der er oprettet af Dynamics 365 for Finance and Operations-supportteamet. |
+| [Supportblog](https://aka.ms/AXSupportBlog)                                                    | Indeholder tip og trick, der er oprettet af Dynamics 365 for Finance and Operations-supportteamet. |
 | [Docs.microsoft.com/tidligere versioner](https://docs.microsoft.com/previous-versions/dynamics/) | Vært for indhold fra tidligere versioner. |
 | [Dynamics Community](https://community.dynamics.com/)                                          | Er vært for blogs, fora og videoer. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Indeholder oplysninger om evaluering og salg. |

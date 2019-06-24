@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517665"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617337"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Ofte stillede spørgsmål om integration af Dynamics 365 for Talent med Dynamics 365 for Finance and Operations
 
@@ -46,7 +46,7 @@ Skabeloner bruges som udgangspunkt. Du kan oprette din egen skabelon, men der sk
 
 For data i Finance and Operations, som ikke findes i Talent, kan du sammenkæde de to systemer ved hjælp af **Konfigurer links** i Talent. Du kan finde flere oplysninger om, hvordan du konfigurerer links mellem Talent og Finance and Operations, i [Nyheder eller ændringer i Dynamics 365 for Talent Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Tilknyt økonomiske dimensioner](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Når jeg importerer medarbejdere, bliver de sommetider placeret blandt inaktive arbejdere i Finance and Operations. Hvorfor?
 
@@ -60,14 +60,14 @@ Synkronisering af data følger tidsplanen for udførelse. Integrationen henter e
 
 Ved hjælp af "Avanceret forespørgsel" kan du filtrere og omforme kildedata, før du overfører dem til destinationen.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Avanceret forespørgsel for aktive arbejdere](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kan jeg angive, hvilke felter der skal sendes til Finance and Operations for en bestemt enhed?
 
 Felter kan tilføjes eller fjernes fra integrationsopgaven. Ikke alle datafelter, der findes på Common Data Service-enheden, udfyldes fra Core HR.
 Yderligere data kan udfyldes via PowerApps.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Tilføje eller fjerne felter i en integrationsopgave](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jeg konfigurerede integration som et batchjob, men så mistede Talent forbindelsen til destinationssystemet. Hvordan kan jeg sende det samme sæt ændringer til destinationssystemet?
 

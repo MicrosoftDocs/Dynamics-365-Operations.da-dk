@@ -3,7 +3,7 @@ title: Oversigt over Project-mobilprogrammer
 description: Dette emne indeholder generelle oplysninger om programmer relateret til projekttid til Microsoft Dynamics 365, som er tilgængelige på en mobilenhed.
 author: KimANelson
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 5b0560a8be32962f94b24754458fb2cf714a15c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 22ccc70e242ffc9a487720c6a25fa6c5b8d78073
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1529965"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608132"
 ---
 # <a name="project-mobile-applications-overview"></a>Oversigt over Project-mobilprogrammer
 
@@ -45,4 +45,4 @@ Mine timesedler (optimeret til mobilenheder) og Timesedler, som jeg skal gennems
 
 ## <a name="for-more-information"></a>Hvis du vil have flere oplysninger
 
-Du kan finde flere oplysninger under [Microsoft Dynamics 365 Project Timesheet mobilapp](project-timesheet.md), [Tidsregistrering for et projekt]( project-time-entry-mobile-workspace.md) og [Projekttimesedler på en mobilenhed](Mobile-timesheets.md).
+Yderligere oplysninger finder du i [Microsoft Dynamics 365 Project Timesheet-mobilapp](project-timesheet.md), [Tidsregistrering for projekt]( project-time-entry-mobile-workspace.md), [Projekttimesedler på en mobilenhed](Mobile-timesheets.md) og [Implementere brugerdefinerede felter for Project Timesheet-mobilappen](custom-fields-mobile.md).

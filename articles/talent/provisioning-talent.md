@@ -3,7 +3,7 @@ title: Klargøre Talent
 description: Dette emne fører dig gennem processen med at klargøre et nyt miljø til Microsoft Dynamics 365 for Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 00/05/2019
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 98f60e466b8b97215fdba0f48ca53ca57157283b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
+ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576915"
 ---
 # <a name="provision-talent"></a>Klargøre Talent
 
@@ -47,13 +47,14 @@ Du kan finde oplysninger om, hvordan du kommer i gang med Talent, i den **Talent
 Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
 
 1. I LCS-projektet skal du vælge feltet **Administration af Talent-app**.
-2. Talent klargøres altid i et Microsoft PowerApps-miljø for at aktivere PowerApps-integration og -udvidelse. Læs afsnittet "Valg af et PowerApps miljø" i dette emne, før du fortsætter. Hvis du ikke allerede har et PowerApps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til administrationscentret for PowerApps. Følg derefter trinnene for at [Oprette et PowerApps-miljø](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+2. Angiv, om dette er en sandkasse- eller produktionsforekomst af Talent. De tidlige visningsfunktioner kan være tilgængelige i sandkasseforekomster med henblik på hurtig feedback og test. 
+3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Talent-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
+4. Talent klargøres altid i et Microsoft PowerApps-miljø for at aktivere PowerApps-integration og -udvidelse. Læs afsnittet "Valg af et PowerApps miljø" i dette emne, før du fortsætter. Hvis du ikke allerede har et PowerApps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til administrationscentret for PowerApps. Følg derefter trinnene for at [Oprette et PowerApps-miljø](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Talent, være tildelt til PowerApps P2-licensen. Hvis organisationen ikke har en PowerApps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [PowerApps-prissætningssiden](https://powerapps.microsoft.com/en-us/pricing/).
 
-4. Vælg **Tilføj**, og vælg derefter det miljø, Talent skal klargøres i.
-5. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Talent-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
+5. Vælg det miljø, du vil klargøre Talent til.
 6. Vælg **Ja** for at acceptere vilkårene og begynde installationen.
 
     Det nye miljø vises på listen over miljøer i navigationsruden til venstre. Men du kan ikke begynde at bruge miljøet, før installationsstatus er opdateret til **Installeret**. Denne proces tager typisk få minutter. Hvis klargøringsprocessen mislykkes, skal du kontakte Support.

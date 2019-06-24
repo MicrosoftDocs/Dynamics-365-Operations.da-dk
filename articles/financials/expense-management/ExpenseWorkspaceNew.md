@@ -3,7 +3,7 @@ title: Udgiftsrapporter i nyfortolkning
 description: Dette emne indeholder oplysninger om den nyudviklede og nyfortolkede oplevelse for indtastning i udgiftsrapporter i Microsoft Dynamics 365 for Finance and Operations. Den nye oplevelse forenkler processen med at fuldføre udgiftsrapporter og reducerer den tid, der kræves.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538678"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592631"
 ---
 # <a name="expense-reports-reimagined"></a>Udgiftsrapporter i nyfortolkning
 
@@ -46,10 +46,9 @@ Når du vil aktivere den nye oplevelse, skal du bruge arbejdsområdet **Administ
 
 ## <a name="getting-started-video-for-new-users"></a>Introduktionsvideo for nye brugere
 
-Du kan se en kort video, der viser de vigtigste funktioner i udgiftsregistrering.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> Videoen er ikke tilgængelig endnu. Dette emne opdateres, når videoen er tilgængelig.
+Videoen [Udgiftsoplevelse i Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 ## <a name="new-features"></a>Nye funktioner
 
