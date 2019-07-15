@@ -44,9 +44,9 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
               href: get-started/features-not-implemented-on-prem.md
-            - name: Funktioner i prøveversion i Finance and Operations version 10.0.4 (juli 2019)
+            - name: Finance and Operations version 10.0.4 (juli 2019)
               href: get-started/whats-new-changed-10-0-4.md
-            - name: Funktioner i prøveversion i Finance and Operations version 10.0.3 (juni 2019)
+            - name: Finance and Operations version 10.0.3 (juni 2019)
               href: get-started/whats-new-changed-10-0-3.md
             - name: Finance and Operations version 10.0.2 (maj 2019)
               href: get-started/whats-new-changed-10-0-2.md
@@ -56,9 +56,9 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations version 8.1.3 (januar 2019)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Funktioner i prøveversion i Finance and Operations Platform Update 28 (juli 2019)
+            - name: Platform update 28 (juli 2019)
               href: get-started/whats-new-platform-update-28.md
-            - name: Funktioner i prøveversion i Finance and Operations Platform Update 27 (juni 2019)
+            - name: Platform update 27 (juni 2019)
               href: get-started/whats-new-platform-update-27.md
             - name: Platform Update 26 (maj 2019)
               href: get-started/whats-new-platform-update-26.md
@@ -238,8 +238,14 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Levering af ISV-løsninger ved brug af One Version
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Regression Suite Automation Tool
-          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Automatisering af test
+          items:
+            - name: Oprette og automatisere test af brugeraccept
+              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: Konfigurere Regression Suite Automation Tool
+              href: get-started/hol-set-up-regression-suite-automation-tool.md
+            - name: Bruge Regression Suite Automation Tool
+              href: get-started/hol-use-regression-suite-automation-tool.md
     - name: Forretningshændelser
       href: ../dev-itpro/business-events/home-page.md
       items:
@@ -257,6 +263,10 @@
           href: ../dev-itpro/business-events/troubleshooting.md
         - name: Bruge sager til forretningshændelser
           href: ../dev-itpro/business-events/potential-use-cases.md
+        - name: Selvstudier
+          items:
+            - name: Forbruge forretningshændelser med Microsoft Flow
+              href: ../dev-itpro/business-events/how-to/how-to-flow.md
     - name: Overholdelse
       items:
         - name: Overvåge politikregler
@@ -849,7 +859,7 @@
               href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
             - name: Økonomiske dimensioner
               href: ../financials/general-ledger/financial-dimensions.md
-            - name: Kontostrukturer
+            - name: Økonomiske dimensioner og bogføring
               href: ../financials/general-ledger/Default-dimensions.md
             - name: Føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør
               href: ../financials/general-ledger/CFO-workspace.md
@@ -1080,6 +1090,8 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: Oprette kontostrukturer
                   href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Økonomiske dimensioner og bogføring
+                  href: ../financials/general-ledger/default-dimensions.md
                 - name: Oprette periodiseringsskemaer
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
                 - name: Økonomiske konsolideringer og valutaomregning
@@ -1936,10 +1948,144 @@
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: GST-integration for kasseapparater
                   href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: 'Købe en vare, der er pålagt moms, fra en ikke-registrerede leverandør'
-                  href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
-            - name: Retningslinjer for installation af kasseapparater
-              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+                - name: Opsætning af masterdata
+                  items:
+                    - name: Oprette en forretningssektor
+                      href: ../financials/localizations/apac-ind-GST-create-business-vertical.md
+                    - name: Opdatere områdekoden og fagforeningsdistriktet
+                      href: ../financials/localizations/apac-ind-GST-update-state-code-union-territory.md
+                    - name: Oprette en GSTIN-master
+                      href: ../financials/localizations/apac-ind-GST-create-gstin-master.md
+                    - name: Definere GSTIN'er og referencenummerserier
+                      href: ../financials/localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                    - name: Definere HSN-koder og serviceregnskabskoder
+                      href: ../financials/localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                    - name: Oprette hovedkonti til GST-bogføringstypen
+                      href: ../financials/localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                    - name: Oprette momsafregningsperiode
+                      href: ../financials/localizations/apac-ind-GST-create-tax-settlement-period.md
+                    - name: Knytte GSTIN til en momsregistreringsgruppe
+                      href: ../financials/localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                - name: Konfiguration af moms
+                  items:
+                    - name: Definere en momskonfiguration og implementere den til juridiske enheder
+                      href: ../financials/localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                    - name: Tilknytte konfigurationsmomstyper - told
+                      href: ../financials/localizations/apac-ind-GST-map-configuration-tax-types.md
+                    - name: Konfigurere sats- og procenttabeller
+                      href: ../financials/localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                    - name: Konfigurere et momshierarki og momsposteringsregler
+                      href: ../financials/localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                - name: Indkøbstransaktion
+                  items:
+                    - name: Køb fra ikke-registrerede leverandører
+                      href: ../financials/localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                    - name: 'Købe en vare, der er pålagt moms, fra en ikke-registrerede leverandør'
+                      href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                    - name: Køb fra registrerede leverandører
+                      href: ../financials/localizations/apac-ind-GST-purchases-registered-vendor.md
+                    - name: Køb af rabatvarer
+                      href: ../financials/localizations/apac-ind-GST-purchase-discounted-goods.md
+                    - name: 'Køb af varer, der er fritaget for moms'
+                      href: ../financials/localizations/apac-ind-GST-purchase-exempted-goods.md
+                    - name: Køb af momsfrie varer
+                      href: ../financials/localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                    - name: Køb af ikke-GST-varer
+                      href: ../financials/localizations/apac-ind-GST-purchase-non-gst-goods.md
+                    - name: Køb fra sammensatte forhandlere
+                      href: ../financials/localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                    - name: 'Køb af momspligtige varer, der har forsendelsesgebyrer'
+                      href: ../financials/localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                    - name: Revidere en indkøbsfaktura med momspligtige varer
+                      href: ../financials/localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                    - name: Køb af anlægsaktiver
+                      href: ../financials/localizations/apac-ind-GST-purchase-fixed-asset.md
+                    - name: Oprette en kreditnota på baggrund af en indkøbsfaktura
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                    - name: Oprette en debetnota på baggrund af en indkøbsfaktura
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                    - name: 'Kvalitetsordrer, der involverer destruktion af prøveudtagningsvaren'
+                      href: ../financials/localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                    - name: Returindkøbsordrer
+                      href: ../financials/localizations/apac-ind-GST-purchase-return-order.md
+                    - name: 'Kreditorforudbetalinger, hvor der er tilbageførte gebyrer'
+                      href: ../financials/localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: Salgstransaktion
+                  items:
+                    - name: Salg af momspligtige varer til forbrugere
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                    - name: Salg til registrerede kunder
+                      href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
+                    - name: Fritekstfakturaer
+                      href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
+                    - name: 'Salg af momspligtige varer, hvor der er et tilbageført gebyr'
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                    - name: Salg af momsfritagne varer
+                      href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
+                    - name: Salg af momsfrie varer
+                      href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
+                    - name: Salg af ikke-GST-varer
+                      href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
+                    - name: 'Salg af momspligtige varer, der har en rabat og en foreløbig vurdering'
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                    - name: 'Salg af momspligtige varer, der har moms på forsendelsesgebyrer'
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                    - name: 'Salg, hvor priserne er inklusive og eksklusive moms'
+                      href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                    - name: Oprette en debetnota på baggrund af en salgsfaktura
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                    - name: Oprette en kreditnota på baggrund af en salgsfaktura
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                    - name: 'Salgsfakturaer, der er opdelt på basis af leveringsadresser'
+                      href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                    - name: Returordrer
+                      href: ../financials/localizations/apac-ind-GST-return-order-form.md
+                - name: Udenlandske transaktioner
+                  items:
+                    - name: 'Importvarer, der har GST'
+                      href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
+                    - name: 'Importtjenester, der har GST'
+                      href: ../financials/localizations/apac-ind-import-services-gst.md
+                    - name: 'Eksportere varer, der er momsfrie'
+                      href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                    - name: 'Eksportere tjenester, der er momsfrie'
+                      href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                - name: Lagertransaktion
+                  items:
+                    - name: 'Lagerflytteordrer, der har moms på flytteprisen'
+                      href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
+                - name: Debitorbetalingstransaktion
+                  items:
+                    - name: 'Forskudsbetalinger, der omfatter moms'
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
+                    - name: 'Forudbetalinger, der er udlignet under fakturabogføring'
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                    - name: 'Manuel udligning af en forskudsbetaling og faktura, der omfatter moms.'
+                      href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                    - name: 'Betaling af fakturaer, der omfatter moms'
+                      href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                    - name: 'Revider forskudsbetalinger, der omfatter moms'
+                      href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                    - name: Debitorbetalingsrefusioner
+                      href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
+                - name: Transaktion med direkte moms
+                  items:
+                    - name: Medtag GST ved beregning af momsfradrag
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                    - name: Medtag GST ved beregning af momsopkrævninger
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                - name: Regulering af momsbeløb
+                  href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+                - name: Regelbaseret momsafregning
+                  href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+                - name: Oprette en momskladde
+                  href: ../financials/localizations/apac-ind-GST-tax-journal.md
+                - name: Generere GSTR-rapportdata til angivelse af moms
+                  href: ../financials/localizations/apac-ind-GST-tax-returns.md
+                - name: Momsundersøgelse
+                  href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+                - name: Retningslinjer for installation af kasseapparater
+                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Oversigt over momsprogram
               href: ../financials/general-ledger/tax-engine.md
               items:
@@ -2377,6 +2523,10 @@
                   href: ../financials/localizations/rus-accounting-reporting.md
                 - name: Opgjorte momsopgørelse
                   href: ../financials/localizations/rus-assessed-tax-declaration.md
+                - name: Angivelse af transportmoms
+                  href: ../financials/localizations/rus-transport-tax-declaration.md
+                - name: Grundskyldsopgørelse
+                  href: ../financials/localizations/rus-land-tax-declaration.md
             - name: Organisationsadministration
               items:
                 - name: Momsregistreringsoplysninger vedrørende adresse
@@ -2793,164 +2943,226 @@
               href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
             - name: Udvide rapportdatasæt for programpakke
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-            - name: Udvide rapportmenupunkter for at omdirigere brugernavigationer
+            - name: Udvide rapportmenupunkter for at omdirigere brugernavigation
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
             - name: Oprette brugerdefinerede design i forretningsdokumenter
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
-        - name: Elektronisk rapportering
+            - name: Få vist PDF-dokumenter med en integreret fremviser
+              href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
+    - name: Elektronisk rapportering
+      items:
+        - name: Oversigt over elektronisk rapportering
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+        - name: Konfigurationer
           items:
-            - name: Konfigurere den elektroniske rapporteringsstruktur
-              href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
             - name: Oprette konfigurationer
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+            - name: Forberede komponenter i den elektroniske rapporteringsløsning
               items:
-                - name: Oprette konfigurationsudbydere og markere dem som aktive
-                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Designe domænespecifikke datamodeller
+                - name: Designe domænespecifik datamodel
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Forberede programspecifikke metadata
+                  items:
+                    - name: '(ER) Klargøre programmetadata, der skal bruges i RCS'
+                      href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Få adgang til programmetadata ved hjælp af ER-konfiguration
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Få adgang til programmetadata ved hjælp af tilsluttede programmer
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
                 - name: Definere modeltilknytninger og vælge datakilder
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Knytte datamodeller til valgte datakilder
+                - name: Knytte datamodel til valgte datakilder
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Oprette formatkonfigurationer
+                - name: Oprette en formatkonfiguration
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Knytte komponenterne i formater til datamodelelementer
+                - name: Knytte komponenter i det oprettede format til datamodelelementer
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Generere elektroniske dokumenter til betalinger ved hjælp af formatkonfigurationer
+            - name: Teste den forberedte ER-løsning i destinationsprogrammet
+              items:
+                - name: (ER) Importere konfigurationer fra RCS
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
+                - name: Generere elektroniske dokumenter til betalinger ved hjælp af en formatkonfiguration
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: Opgradere formater ved at bruge nye basisversioner
-                  href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-                - name: Designe konfigurationer til elektronisk rapportering til at udfylde PDF-skabeloner
-                  href: ../dev-itpro/analytics/er-fillable-pdf.md
-            - name: Formeldesigner i elektronisk rapportering
-              href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurere elektronisk rapportering for at trække data ind i Power BI
-              href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
-            - name: Destinationer
-              href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Konfigurere destinationer
-                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Designkonfigurationer til generering af rapporter i Word-format
-              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Designkonfigurationer til generering af rapporter i OpenXML-format
+            - name: Opgradere dit format ved at bruge en ny basisversion af det pågældende format
+              href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: Formeldesigner i elektronisk rapportering
+          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+        - name: Administrere ER-modeltilknytning i separate ER-konfigurationer
+          href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: 'Vælge datamodeldefinitioner, når du opretter formater'
+          href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
+          href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+        - name: (ER) Datakilder på tværs af firma i elektronisk rapportering
+          href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
+        - name: Designe ER-formater til generering af udgående elektroniske dokumenter i forskellige formater
+          items:
+            - name: (ER) Designe en konfiguration til generering af rapporter i OPENXML-format
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
-              href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Vælge definition af datamodel under oprettelse af formater
-              href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: Definere afhængigheden af konfigurationer på andre komponenter
-              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: (ER) Designe konfigurationer til generering af rapporter i Word-format
+              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Designe konfigurationer til udfyldelse af PDF-skabeloner
+              href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
+        - name: Integrere billeder og figurer
+          items:
+            - name: '(ER) Integrere billeder og figurer i de dokumenter, du opretter'
+              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
+            - name: Eksempel på integrering af billeder og figurer
               items:
-                - name: Designe datamodelker til at bruge økonomiske dimensioner som datakilder
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Tilknytte modeller for at bruge økonomiske dimensioner som datakilder
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Designe rapporter til at bruge økonomiske dimensioner som datakilder
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: 'Køre rapporter, som bruger økonomiske dimensioner som datakilder'
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Oprette formater for at foretage optælling og opsummering
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurere beregninger for at foretage optælling og opsummering
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Bruge beregninger til at generere output til optælling og opsummering
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Køre formater for at foretage optælling og opsummering
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: 'Designe formater for at tilføje kolonner dynamisk som vandrette områder, der kan udfoldes'
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: 'Køre formater for at tilføje kolonner dynamisk som vandrette områder, der kan udfoldes'
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Forberede datamodeller til at bruge dokumentstyringsfiler i output
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: Udvide datamodeller til at bruge dokumentstyringsfiler i output
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: Oprette formater for at bruge dokumentstyringsfiler i output
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: Køre formater for at bruge dokumentstyringsfiler i output
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: Redigere og køre formater for at bruge dokumentstyringsfiler i output
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: Designe konfigurationer til at generere rapporter i Office-formater med integrerede billeder
+                - name: 'Designe konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: Gennemgå konfigurationer for at generere rapporter i Office-formater med integrerede billeder
+                - name: 'Revidere konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Generere rapporter i Office-formater med integrerede billeder
+                - name: 'Generere rapporter i Office-formater, der har integrerede billeder'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
+        - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
+          href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
+        - name: Designe Finance and Operations-versionsafhængige ER-konfigurationer
+          items:
+            - name: Definere afhængigheden af ER-konfigurationer af andre komponenter
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Designe en ER-løsning til at bruge økonomiske dimensioner
+          items:
+            - name: Designe datamodeller til at bruge økonomiske dimensioner som datakilder
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
+            - name: Tilknytte modeller for at bruge økonomiske dimensioner som datakilder
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
+            - name: Designe rapporter til at bruge økonomiske dimensioner som datakilder
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
+            - name: 'Køre rapporter, som bruger økonomiske dimensioner som datakilder'
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
+        - name: Designe ER-formater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
+          items:
+            - name: Oprette formater til at udføre optælling og opsummering
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurere format til at udføre optælling og opsummering
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
+            - name: Bruge beregninger til at generere output til optælling og opsummering
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
+            - name: Køre formater for at udføre optælling og opsummering
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
+        - name: 'Tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
+          items:
+            - name: 'Designe formater for at tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
+              href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
+            - name: 'Køre formater for at tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
+              href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
+        - name: Bruge dokumentstyringsfiler i formatoutput
+          items:
+            - name: Forberede datamodeller til at bruge dokumentstyringsfiler i ER-output
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+            - name: Udvide datamodeller til at bruge dokumentstyringsfiler i ER-output
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+            - name: Oprette formater for at bruge dokumentstyringsfiler i ER-output
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+            - name: Køre formater for at bruge dokumentstyringsfiler i ER-output
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+            - name: Redigere og køre formater for at bruge dokumentstyringsfiler i ER-output
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+        - name: Opdatere applikationsdata ved hjælp af elektronisk rapportering
+          items:
             - name: Generere elektroniske dokumenter og opdatere programdata
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
+            - name: Importere konfigurationer for at generere dokumenter med programdata
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Designe konfigurationer til at generere dokumenter med programdata
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
+            - name: Redigere modeller og tilknytninger for at generere dokumenter med programdata
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
+            - name: Redigere formater for at generere dokumenter med programdata
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
+            - name: 'Generere dokumenter, der har programdata'
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+        - name: Importere data fra indgående filer ved hjælp af ER-løsninger
+          items:
+            - name: Analysere indgående dokumenter i forskellige formater
+              href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurere dataimport fra manuelt valgte filer
               items:
-                - name: Importere konfigurationer for at generere dokumenter med programdata
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Designe konfigurationer til at generere dokumenter med programdata
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Redigere modeller og tilknytninger for at generere dokumenter med programdata
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: Redigere formater for at generere dokumenter med programdata
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
-                - name: Generere dokumenter med programdata
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-            - name: 'Generere FTI-formularer, der kan udskrives'
-              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-            - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
-              href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-            - name: Spore genererede rapportresultater og sammenligne med basisværdier
-              href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-            - name: Datakilder på tværs af firma i elektronisk rapportering
-              href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: 'Integrere billeder og figurer i de dokumenter, du opretter'
-              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
-            - name: Administrere konfigurationslivscyklus
-              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Overføre konfigurationer til Lifecycle Services
-                  href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Importere konfigurationer fra Lifecycle Services
-                  href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Importere konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)
-                  href: ../dev-itpro/analytics/rcs-download-configurations.md
-                - name: Hente konfigurationer fra Lifecycle Services
-                  href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Importere konfigurationer
-                  href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Administrere konfigurationer af modeltilknytning
-              href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Oprette konfigurationer for at importere data fra eksterne filer
+                - name: Oprette konfigurationer for at importere data fra en ekstern XML-fil
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurere dataimport fra SharePoint
-                  href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Analysere indgående dokumenter i Excel-format
-              href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
-            - name: Analysere indgående dokumenter for at opdatere programdata
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
-            - name: Analysere indgående dokumenter i CSV-format
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen
-              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
+            - name: 'Konfigurere dataimport i batchtilstand fra filer, der findes i SharePoint'
+              href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+            - name: Importere filer i XML-format
+              items:
+                - name: Importere filer i XML-format med valgfrie attributter
+                  href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurere ER-formater til at importere XML-formatfiler med valgfrie attributter
+                  href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+        - name: Livscyklus for konfiguration
+          items:
+            - name: Administrere konfigurationslivscyklus
+              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
+            - name: Overføre konfigurationer til Lifecycle Services
+              href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: Importere konfigurationer fra Lifecycle Services
+              href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: Hente konfigurationer fra Lifecycle Services
+              href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
+            - name: Importere konfigurationer
+              href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Hente ER-konfigurationer fra RCS-lageret
               items:
-                - name: Udvide listen over elektroniske rapporteringsfunktioner
-                  href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
-                - name: Ændringer af API-struktur til elektronisk rapportering for programopdatering 7.3
-                  href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-                - name: Angive et brugerdefineret lager for oprettede dokumenter
-                  href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
+                - name: Hente konfigurationer fra ER-lageret til RCS-typen
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
+                - name: Importere konfigurationer fra RCS
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
+          items:
+            - name: Konfigurere strukturen
+              items:
+                - name: Konfigurere den elektroniske rapporteringsstruktur
+                  href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+                - name: Oprette konfigurationsudbydere og markere dem som aktive
+                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Destinationer
+              items:
+                - name: Destinationsoversigt
+                  href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurere destinationer
+                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Validere genererede rapporter automatisk
+              items:
+                - name: Spore genererede rapportresultater og sammenligne dem med basisværdier
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+                - name: Forbedringer i sporingsresultaterne fra genererede ER-rapporter og sammenligninger med basisværdier
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
+                - name: Automatisere test med elektronisk rapportering
+                  href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
+            - name: Automatisere forretningsprocesser ved hjælp af konfigurationer af elektroniske rapporter
+              items:
+                - name: Konfigurere elektronisk rapportering for at trække data ind i Power BI
+                  href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
+                - name: 'Oprette formularer med fritekstfakturaer (FTI), der kan udskrives'
+                  href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+            - name: Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: API-struktur til ER
+          items:
+            - name: Udvide listen over elektroniske rapporteringsfunktioner
+              href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
+            - name: Ændringer af API-struktur til elektronisk rapportering for programopdatering 7.3
+              href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+            - name: Angive et brugerdefineret lagersted til oprettede dokumenter
+              href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
         - name: Integrerede analyseløsninger
           items:
             - name: Integreret Power BI i arbejdsområder
               href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
             - name: Power BI Embedded-integration
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+            - name: Vælge analytiske arbejdsområder fra PowerBI.com
+              href: ../dev-itpro/analytics/select-analytical-workspace.md
         - name: Muligheder for tilpasning med PowerBI.com
           items:
             - name: 'Funktioner og tjenester, der er tilgængelige via Power BI-integration'
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
             - name: Fastgøre Power BI-rapporter til arbejdsområder
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+            - name: Tilpasse integrerede rapporter i analytiske arbejdsområder
+              href: ../dev-itpro/analytics/customize-analytical-workspace.md
         - name: Værktøjer til oprettelse og udvidelse af løsninger
           items:
             - name: 'Analyser, samlede målinger og KPI-modellering'
@@ -3067,12 +3279,16 @@
               href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
             - name: Sporing af løbende gennemsnitskostpris pr. lagerdimension
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: Forsyningskæde
+      href: ../supply-chain/index.md
     - name: Varedisponering
       href: ../supply-chain/master-planning/master-planning-home-page.md
       items:
         - name: Behovsplaner
           href: ../supply-chain/master-planning/master-plans.md
           items:
+            - name: Definere behovsplaner
+              href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Disponeringsindstillinger
               href: ../supply-chain/master-planning/coverage-settings.md
             - name: Definere dækningsregler for varer
@@ -3099,6 +3315,8 @@
               href: ../supply-chain/master-planning/tasks/create-plan-site.md
             - name: Kalendere og varedisponering
               href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+            - name: Forbedre ydeevne af varedisponering
+              href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Behovsplaner og funktionen til flere lokationer
               href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
@@ -3110,10 +3328,12 @@
                   href: ../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
                 - name: 'Varedisponering for lokalitets- og lagerdisponering, lagersted ikke obligatorisk'
                   href: ../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-                - name: Bestemme styklisteversionen version
+                - name: Bestemme styklisteversionen
                   href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
                 - name: Udfoldning af en styklisteversion
                   href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+            - name: Negative dage og dynamiske negative dage
+              href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
             - name: Oprette en intern plan
               href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
             - name: Vise udgående planlagt intern efterspørgsel
