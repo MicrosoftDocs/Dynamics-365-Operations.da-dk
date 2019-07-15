@@ -995,8 +995,10 @@
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
             - name: Installationstrin for Detail-kanalkomponenter i et on-premises-miljø.
               href: deployment/deploy-retail-onprem.md
-        - name: Udvikle og installere brugerdefinerede modeller i on-premises-miljøer
+        - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
           href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: PowerBI.com-integration med lokale miljøer
+          href: analytics/entity-store-on-prem.md
         - name: Konfigurere omvendte proxyer til dine lokale miljøer
           href: deployment/onprem-reverseproxy.md
         - name: Anvende opdateringer til en lokal installation
@@ -1013,6 +1015,8 @@
           href: user-interface/client-disconnected.md
         - name: Fejlfinding af lokale installationer
           href: deployment/troubleshoot-on-prem.md
+        - name: Certifikatrotation
+          href: deployment/certificate-rotation-on-prem.md
     - name: Installere brugerdefineret kode
       items:
         - name: Oprette installerbare modelpakker

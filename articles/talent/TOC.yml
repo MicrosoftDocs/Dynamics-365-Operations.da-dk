@@ -8,6 +8,16 @@
         - name: Nyheder eller ændringer i Talent
           href: whats-new.md
           items:
+            - name: 2. juli 2019
+              href: whats-new-talent-july-2-2019.md
+            - name: 25. juni 2019
+              href: whats-new-talent-june-25-2019.md
+            - name: 18. juni 2019
+              href: whats-new-talent-june-18-2019.md
+            - name: 11. juni 2019
+              href: whats-new-talent-june-11-2019.md
+            - name: 4. juni 2019
+              href: whats-new-talent-june-4-2019.md
             - name: 28. maj 2019
               href: whats-new-talent-may-28-2019.md
             - name: 21. maj 2019
@@ -16,26 +26,26 @@
               href: whats-new-talent-may-13-2019.md
             - name: 6. maj 2019
               href: whats-new-talent-may-6-2019.md
-            - name: 30. april 2019
-              href: whats-new-talent-april-30-2019.md
-            - name: 25. april 2019
-              href: whats-new-talent-april-25-2019.md
-            - name: 16. april 2019
-              href: whats-new-talent-april-16-2019.md
-            - name: 9. april 2019
-              href: whats-new-talent-april-9-2019.md
-            - name: 2. april 2019
-              href: whats-new-talent-april-2-2019.md
-            - name: 26. marts 2019
-              href: whats-new-talent-march-26-2019.md
-            - name: 20. marts 2019
-              href: whats-new-talent-march-20.md
-            - name: 14. marts 2019
-              href: whats-new-talent-march-14.md
-            - name: 5. marts 2019
-              href: whats-new-talent-march-5.md
             - name: Arkiver med nyheder 2019
               items:
+                - name: 30. april 2019
+                  href: whats-new-talent-april-30-2019.md
+                - name: 25. april 2019
+                  href: whats-new-talent-april-25-2019.md
+                - name: 16. april 2019
+                  href: whats-new-talent-april-16-2019.md
+                - name: 9. april 2019
+                  href: whats-new-talent-april-9-2019.md
+                - name: 2. april 2019
+                  href: whats-new-talent-april-2-2019.md
+                - name: 26. marts 2019
+                  href: whats-new-talent-march-26-2019.md
+                - name: 20. marts 2019
+                  href: whats-new-talent-march-20.md
+                - name: 14. marts 2019
+                  href: whats-new-talent-march-14.md
+                - name: 5. marts 2019
+                  href: whats-new-talent-march-5.md
                 - name: 27. februar 2019
                   href: whats-new-talent-feb-27.md
                 - name: 14. februar 2019
@@ -102,16 +112,24 @@
           href: attract-comprehensive-hiring.md
         - name: Attract-funktioner og -egenskaber
           href: attract-overview.md
+        - name: Ofte stillede spørgsmål om FAQ
+          href: attract-linkedin-faq.md
+        - name: Konfigurere mailindstillinger
+          href: attract-configure-email-settings.md
         - name: Oprette en processkabelon i Attract
           href: Process-templates-Attract.md
-        - name: 'Oprette, godkende og bogføre job i Attract'
+        - name: Oprette og slå job op
           href: Creating-jobs-Attract.md
-        - name: Slå job op på eksterne karrierewebsteder fra Attract
+        - name: Konfigurer integration med LinkedIn
+          href: attract-admin-linkedin.md
+        - name: Slå job op på LinkedIn fra Attract
+          href: attract-post-jobs-to-linkedin.md
+        - name: Slå job op på Broadbean fra Attract
           href: posting-jobs-external.md
         - name: Få fat i kandidater ved hjælp af talentpuljer
           href: attract-talent-pools.md
-        - name: Rekruttering med LinkedIn Recruiter
-          href: attract-linked-in-recruiter.md
+        - name: Rekruttere kandidater med LinkedIn Recruiter
+          href: attract-linkedin-recruiter.md
         - name: Aktiviteter i ansættelsesprocesserne
           href: activities-attract.md
         - name: Samtaleplanlægning og tilbagemelding
@@ -132,13 +150,29 @@
           href: Admin-Settings-Attract.md
         - name: Intelligente anbefalinger
           href: Intelligent-Recommendations.md
-        - name: Skabe en spændende onboardingoplevelse
-          href: create-onboarding-experience.md
         - name: Spore kilder til kandidatprofiler og -ansøgninger
           href: source-tracking.md
         - name: Bruge analytiske rapporter til indsigt i ansættelsesprocessen
           href: analytic-reports.md
-    - name: Administrere arbejdsstyrken med Core HR
+    - name: Byde nyansatte velkommen med Onboard
+      items:
+        - name: Komme i gang med Onboard
+          href: create-onboarding-experience.md
+        - name: Hente Onboard-appen
+          href: onboard-get-app.md
+        - name: Oprette og sende en onboardingguide
+          href: onboard-create-guide.md
+        - name: Oprette en onboardingskabelon
+          href: onboard-create-template.md
+        - name: Redigere guider og skabeloner
+          href: onboard-edit-guides-templates.md
+        - name: Dele indhold
+          href: onboard-share-template.md
+        - name: Få vist status
+          href: onboard-view-status.md
+        - name: Oprette et ansættelsesteam
+          href: onboard-create-team.md
+    - name: Administrere dine medarbejdere med Core HR
       items:
         - name: Organisere dine medarbejdere
           items:
@@ -357,6 +391,8 @@
           href: corehr-custom-fields.md
     - name: Fejlfinding af Talent
       items:
+        - name: Fejlfinding af opslag af job på LinkedIn
+          href: attract-troubleshoot-linkedin.md
         - name: Analytiske rapporter opdateres ikke
           href: analytic-reports-not-updated.md
         - name: Kan ikke oprette et miljø i PowerApps Administration
