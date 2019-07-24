@@ -3,7 +3,7 @@ title: Produkt- og kundesøgning i POS
 description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530770"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625636"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -40,7 +40,7 @@ Som standard udføres produktsøgninger i butikkens udvalg. Denne type søgning 
 På siden **Skift katalog** kan medarbejdere nemt vælge alle butikker, eller de kan søge efter produkter på tværs af alle butikker.
 
 ![Ændre kataloget](./media/Changecatalog.png "Ændre kataloget")
- 
+
 En lokal produktsøgning søger i følgende produktegenskaber:
 
 - Produktnummer
@@ -55,7 +55,7 @@ En lokal produktsøgning søger i følgende produktegenskaber:
 Oplevelsen af lokale produktsøgninger er nu blevet mere brugervenlig. Der er blevet foretaget følgende forbedringen:
 
 - Rullemenuer for produkt og kunde er føjet til søgelinjen, så medarbejderne kan vælge enten **Produkt** eller **Kunde**, før de søger. Som standard er **Produkt** markeret, som vist i nedenstående illustration.
-- Til søgninger med flere nøgleord (dvs. til søgninger, der bruger søgeord), kan detailforretninger konfigurere, om søgeresultaterne skal omfatte resultater, der opfylder *ethvert* søgeord, eller kun de resultater, der opfylder *alle* søgeord. Denne indstilling findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Standardindstillingen er **Match et hvilket som helst søgeord**. Denne indstilling er også den anbefalede indstilling. Når indstillingen **Match et hvilket som helst søgeord** bruges, returneres alle produkter, der svarer helt eller delvist til et eller flere søgeord. Resultaterne sorteres automatisk i stigende rækkefølge, så de produkter, der har fleste forekomster af nøgleord (fuld eller delvis), placeres først.
+- Til søgninger med flere nøgleord (dvs. til søgninger, der bruger søgeord), kan detailforretninger konfigurere, om søgeresultaterne skal omfatte resultater, der opfylder *ethvert* søgeord, eller kun de resultater, der opfylder *alle* søgeord. Indstillingen for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Standardindstillingen er **Match et hvilket som helst søgeord**. Denne indstilling er også den anbefalede indstilling. Når indstillingen **Match et hvilket som helst søgeord** bruges, returneres alle produkter, der svarer helt eller delvist til et eller flere søgeord. Resultaterne sorteres automatisk i stigende rækkefølge, så de produkter, der har fleste forekomster af nøgleord (fuld eller delvis), placeres først.
 
     Indstillingen **Match alle søgeord** returnerer kun produkter, der matcher alle søgeordene (helt eller delvist). Denne indstilling er nyttig, når produktnavnene er lange, og medarbejdere kun vil se begrænsede produkter i søgeresultaterne. Denne type søgning har dog to begrænsninger:
 
@@ -65,11 +65,20 @@ Oplevelsen af lokale produktsøgninger er nu blevet mere brugervenlig. Der er bl
 - Detailhandlere kan nu konfigurere produktsøgning til at vise søgeforslag, mens brugerne skriver produktnavne. En ny indstilling for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Indstillingen hedder **Vis søgeforslag, mens du skriver**. Denne funktion kan hjælpe medarbejderne med hurtigt at finde det produkt, de søger efter, da de ikke behøver at skrive hele navnet manuelt.
 - Produktsøgningsalgoritmen søger nu også efter de søgte udtryk i egenskaben **Søgenavn** for produktet.
 
-    ![Produktforslag](./media/Productsuggestions.png "Produktforslag")
+![Produktforslag](./media/Productsuggestions.png "Produktforslag")
 
 ## <a name="customer-search"></a>Kundesøgning
 
-Kundesøgning bruges til at finde kunder til forskellige formål. F.eks. ønsker kasserere eventuelt at få vist en kundes ønskeliste eller købshistorik eller at føje kunden til en transaktion. Søgealgoritmen sammenholder søgeordene med værdierne i følgende kundeegenskaber: navn, e-mail, telefon, fordelskundekortnummer, adresse og kontonummer. Blandt disse giver egenskaben Navn størst fleksibilitet, når det drejer sig om søgninger på flere nøgleord, fordi algoritmen returnerer alle kunder, der stemmer med ethvert af de nøgleord, der er gennemsøgt, og de kunder, der svarer til de fleste søgeord, vises øverst i resultaterne. Denne funktionsmåde hjælper kasserere i situationer, hvor de søger ved at skrive det fulde navn, men hvor efternavn og fornavn blev byttet om under den oprindelige indtastning af værdier. For at forbedre ydeevnen bevarer alle andre egenskaber rækkefølgen af søgeord, så hvis søgeordene ikke stemmer overens med den rækkefølge, dataene er gemt i, returneres ingen resultater.
+Kundesøgning bruges til at finde kunder til forskellige formål. F.eks. ønsker kasserere eventuelt at få vist en kundes ønskeliste eller købshistorik eller at føje kunden til en transaktion. Søgealgoritmen matcher søgeordene i forhold til de værdier, der findes i følgende kundeegenskaber:
+
+- Navn
+- E-mailadresse
+- Telefonnummer
+- Fordelskundekortnummer
+- Adressering
+- Kontonummer
+
+Af disse egenskaber giver navnet den største fleksibilitet ved søgninger med flere nøgleord, da algoritmen returnerer alle de kunder, der svarer til et hvilket som helst af de nøgleord, der søges efter. De kunder, der matcher de fleste nøgleord vises øverst i resultaterne. Denne funktionsmåde hjælper kasserere i situationer, hvor de søger ved at skrive det fulde navn, men hvor efternavn og fornavn blev byttet om under den oprindelige indtastning af værdier. Af hensyn til resultaterne bevarer alle andre egenskaber dog rækkefølgen af søgenøgleord. Hvis rækkefølgen af søgenøgleord derfor ikke stemmer overens med den rækkefølge, som dataene er gemt i, vil der ikke blive returneret nogen resultater.
 
 Som standard udføres en kundesøgning på de kundeadressekartoteker, der er knyttet til butikken. Denne type søgning kaldes en *søgning efter lokal kunde*. Men medarbejdere kan også søge efter kunder globalt. De kan med andre ord søge på tværs af virksomhedens butikker og andre juridiske enheder. Denne type søgning kaldes en *ekstern kundesøgning*.
 
@@ -86,7 +95,7 @@ I en ekstern kundesøgning vises kunde-id ikke for debitorer fra de andre juridi
 
 Søgninger, der er baseret på telefonnummeret, er blevet mere enkle. Disse søgninger ignorerer nu specialtegn som f.eks. mellemrum, bindestreger og parenteser, der kan være blevet tilføjet, da debitoren blev oprettet. Derfor behøver kasserere ikke spekulere på telefonnummerets format, når de søger. De kan også søge efter kunder ved at skrive et telefonnummer, der er delvis. Hvis et telefonnummer indeholder specialtegn, skal finder det også du ved at søge efter de tal, der vises efter de særlige tegn. Hvis en kundes telefonnummer f.eks. blev angivet som **123-456-7890**, kan en kasserer søge efter debitoren ved at skrive **123**, **456**, **7890** eller **1234567890** eller ved at angive de første par tal af telefonnummeret.
 
-Den traditionelle kundesøgning kan være tidskrævende, da den søger på tværs af flere felter. I stedet kan kasserere nu søge i en enkelt brugerdefineret egenskab, f.eks. navn, mailadresse eller telefonnummer. De egenskaber, som kundesøgningsalgoritmen bruger, kaldes samlet *kundesøgningskriteriet*. Systemadministratoren kan nemt konfigurere et eller flere kriterier som genveje, der skal vises i POS. Da søgningen er begrænset til et enkelt kriterium, vises kun de relevante søgeresultater, og ydeevnen er meget bedre end ydeevnen ved en standardkundesøgning. I følgende illustration vises kundesøgningsgenvejene i POS.
+Den traditionelle kundesøgning kan være tidskrævende, da den søger på tværs af flere felter. I stedet kan kasserere nu søge i en enkelt kundeegenskab, f.eks. navn, mailadresse eller telefonnummer. De egenskaber, som kundesøgningsalgoritmen bruger, kaldes samlet *kundesøgningskriteriet*. Systemadministratoren kan nemt konfigurere et eller flere kriterier som genveje, der skal vises i POS. Da søgningen er begrænset til et enkelt kriterium, vises kun de relevante søgeresultater, og ydeevnen er meget bedre end ydeevnen ved en standardkundesøgning. I følgende illustration vises kundesøgningsgenvejene i POS.
 
 ![Kundesøgningsgenveje](./media/SearchShortcutsPOS.png "Kundesøgningsgenveje")
 
@@ -101,3 +110,7 @@ Feltet **Visningsrækkefølge** bestemmer den rækkefølge, hvori genveje vises 
 
 > [!NOTE]
 > En brugerdefineret egenskab, der er føjet til fastteksten, påvirker ikke standardalgoritmen til kundesøgning. Med andre ord søger kundesøgningsalgoritmen ikke i den brugerdefinerede egenskab. Brugere kan kun bruge en brugerdefineret egenskab til søgninger, hvis den brugerdefinerede egenskab tilføjes som en genvej, eller hvis standardalgoritmen til søgning tilsidesættes.
+
+I en kommende udgave af Microsoft Dynamics 365 for Retail vil detailhandlere kunne angive standardtilstanden for kundesøgning i POS til **Søg i alle butikker**. Denne konfiguration kan være nyttig i situationer, hvor kunder, der er oprettet uden for POS, skal søges efter med det samme (f.eks. selv før distributionsjobbet køres). En ny indstilling **Standardindstilling for kundesøgning** vil være tilgængelig i POS-funktionalitetsprofilen. Angiv den til **Til** for at indstille standardsøgetilstanden til **Søg i alle butikker**. Alle forsøg på kundesøgninger vil derefter foretage et realtidsopkald til hovedkontoret.
+
+Denne konfiguration er skjult bag et flighting-flag, der kaldes **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** for at hjælpe med at forhindre uventede problemer med ydeevnen. For at få vist indstillingen **Standardtilstand for kundesøgning** i brugergrænsefladen, skal detailhandleren oprette en supportbillet for dennes brugeraccepttest (UAT) og produktionsmiljøer. Når billetten er modtaget, arbejder den tekniske gruppe sammen med detailhandleren for at sikre, at detailhandleren tester i miljøer, der ikke er et produktionsmiljø, for at vurdere ydeevnen og implementere eventuelle nødvendige optimeringer.

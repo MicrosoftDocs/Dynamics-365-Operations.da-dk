@@ -3,7 +3,7 @@ title: Arbejdsområde for kreditorbetalinger
 description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorbetalinger. Arbejdsområdet Kreditorbetalinger viser oplysninger, der vedrører behandling af kreditorbetalinger.
 author: abruer
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 789acd3f403e322ec00388ca8184ccd30c3ea436
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f5ffe65b2f9be7423f1fe420594c936e15550fb
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509216"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702929"
 ---
 # <a name="vendor-payments-workspace"></a>Arbejdsområde for kreditorbetalinger
 
 [!include [banner](../includes/banner.md)]
 
 Arbejdsområdet **Kreditorbetalinger** viser oplysninger, der vedrører behandling af kreditorbetalinger. Arbejdsområdet indeholder en **Mit arbejde**-visning og siden **Analyser**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. **Analyser**-siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører kreditorbetalinger.
+
+## <a name="setup-needed-to-view-power-bi-content"></a>Opsætning, der kræves for at se Power BI-indhold
+
+Følgende konfiguration skal være fuldført for de data, der skal vises i visuelle elementer for **Kreditorbetalinger** Power BI.
+1. Gå til **Systemadministration > Konfiguration > systemparametre** for at angive **Systemvaluta** og **Systemvalutakurs**.
+2. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**. 
+2. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
+3. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **VendPaymentBIMeasure**. 
 
 ## <a name="my-work-view"></a>Visningen Mit arbejde
 

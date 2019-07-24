@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557323"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624878"
 ---
 # <a name="project-timesheets-on-a-mobile-device"></a>Projekttimesedler på en mobilenhed
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Overblik
 
 **Mine timesedler (optimeret til mobilenheder)** giver medarbejdere mulighed for at oprette og sende projekttimesedler for at registrere deres timer for et bestemt projekt på en mobilenhed. Medarbejdere kan oprette en ny timeseddel eller kopiere data fra en eksisterende timeseddel for at sikre hurtig og præcis tidsregistrering. Hvis du er udpeget som stedfortræder, kan du også indtaste en timeseddel for en anden medarbejder. Programmet giver medarbejderne mulighed for at filtrere efter projekt, ressource eller godkendelsesstatus for hurtigt at finde og vælge en timeseddel. Det giver også medarbejderne mulighed for at gemme foretrukne, så oplysninger om projektet og aktiviteten på timesedlen bliver gemt. Gemte favoritter kan bruges til at oprette fremtidige timesedler og gør tidsregistreringen mere effektiv. Redigering eller visning af økonomiske dimensionsoplysninger understøttes ikke på mobilappen. **Mine timesedler (optimeret til mobilenheder)** kan åbnes via webbrowseren på din mobilenhed.
 
@@ -35,8 +33,7 @@ ms.locfileid: "1557323"
 Dette mobilprogram er kompatibelt med iPhone med Dynamics 365 for Finance and Operations-platformsopdatering 15.
 Android er kompatibelt med platformsopdatering 16, når den bliver tilgængelig.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Oprette en projekttimeseddel på din mobilenhed
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Oprette en projekttimeseddel på din mobilenhed
 
 1.  Bemærk Dynamics 365 URL-adressen for siden **Projektstyring og regnskab** \> **Timesedler** \> **Mine timesedler (optimeret til mobilenheder)**.
 

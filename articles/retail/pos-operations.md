@@ -3,7 +3,7 @@ title: POS-handlinger, online og offline
 description: Dette emne indeholder oplysninger om POS-handlinger i Microsoft Dynamics 365 for Retail. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505090"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625659"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -159,9 +159,9 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 114 | Returtransaktion | Tilbagekald en tidligere transaktion ved hjælp af den kvitteringsnummer for at returnere nogle af eller alle produkterne. | Ja | Ja | Ja | Ja§ | Nej |
 | 1211 | Deponering til pengeskab | Udfør en deponering til et pengeskab for at flytte penge fra kasseapparatet til et pengeskab. | Ja | Ja | Ja | Ja | Nej |
 | 516 | Salgsfaktura | Med denne handling kan kunden foretage betalinger for den valgte salgsfaktura. | Ja | Ja | Nej | Nej | Nej |
-| 502 | Sælger | Med denne handling kan brugeren angive værdien **Salgsregistrering** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nej | Ja\* | Nej |
-| 2000 | Administration af tidsplaner | Med denne handling kan brugere oprette, redigere eller få vist medarbejdertidsplaner. | Ja | Ja | Ja | Nej | Nej |
-| 2001 | Planlægning af anmodninger | Med denne handling kan brugeren anmode om fridage, bytte skift eller tilbyde skift til andre medarbejdere. | Ja | Ja | Ja | Nej | Nej |
+| 502 | Sælger | Med denne handling kan brugeren angive værdien **Salgsregistrering** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nr. | Ja\* | Nr. |
+| 2000 | Administration af tidsplaner | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nr. | Nr. |
+| 2001 | Planlægning af anmodninger | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nr. | Nr. |
 | 622 | Søg i ordrer | Med denne handling kan brugere forudkonfigurere POS-knapperne for at udføre søgninger efter vare, kunde eller kategori. | Ja | Ja | Ja | Ja | Nej |
 | 1213 | Søg efter leveringsadresse | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 709 | Vælg hardwarestation | Med denne handling kan brugeren vælge en hardwarestation på en liste over tilgængelige hardwarestationer. | Ja | Ja | Ja | Ja | Nej |

@@ -3,7 +3,7 @@ title: Få fat i kandidater ved hjælp af talentpuljer
 description: I dette emne forklares, hvordan du kan oprette og konfigurere talentpuljer i Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517579"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711288"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Få fat i kandidater ved hjælp af talentpuljer
 
@@ -110,15 +110,16 @@ Alle brugere har en fælles oversigt over kandidatprofiler. Fanen **Profil** vis
 
 - Du kan få vist kontaktoplysninger for kandidaten. Du kan også redigere eller opdatere de oplysninger, som du har brug for, ved hjælp af knappen **Rediger detaljer**.
 
-- Du kan tilføje flere færdighedsmærker for bedre at identificere en kandidats færdigheder.
-
 - Du kan få vist kandidatens samlede ansøgerhistorik. Du kan se alle job, kandidaten har ansøgt om i organisationen, og status for disse ansøgninger. Hvis du er en del af ansættelsesteamet for et job, kan du vælge **Vis** for se ansøgningen i detaljer.
 
-- Fanen **Dokumenter** viser eventuelle dokumenter, som kandidaten har tilføjet fra sin profil eller under jobansøgninger. Denne fane kan bruges til at administrere kandidatens cv, følgebreve, porteføljearbejde og osv. Du kan også bruge denne fane til at tilføje dokumenter.
+- Fanen **Dokumenter** viser eventuelle dokumenter, som kandidaten har tilføjet fra sin profil eller under jobansøgninger. Denne fane kan bruges til at administrere kandidatens cv, følgebreve, porteføljearbejde osv. Du kan også bruge denne fane til at tilføje dokumenter.
 
     For at få vist et dokument skal du vælge dokumentnavnet på listen over dokumenter. Du kan få vist Microsoft Word-dokumenter i ansøgningen ved hjælp af Microsoft Office 365. Du kan også hente dokumenterne til din lokale computer ved hjælp af indstillingen **Hent** for hvert dokument.
 
 - Fanen **LinkedIn** viser kandidatens LinkedIn-oplysninger. For at kunne bruge denne fane skal du oprette forbindelse til din LinkedIn-konto i brugerindstillingerne, og der skal oprettes forbindelse til dit miljøs LinkedIn Recruiter. Du kan finde flere oplysninger under [Rekruttering med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Det er kun kandidater, der kan opdatere deres færdigheder, uddannelseshistorik og arbejdserfaringer.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Føje kandidater fra en talentpulje til et job
 

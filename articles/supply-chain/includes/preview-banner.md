@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Funktioner, der er angivet i dette emne, er tilgængelige for brugere, der er en del af målgruppen for en eksempelversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om frigivelser af eksempelversioner her: [Tilgængelighed af tjenesteopdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).

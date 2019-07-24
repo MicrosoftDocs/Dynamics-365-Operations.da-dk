@@ -3,7 +3,7 @@ title: Grovplanlægning
 description: Dette emne indeholder en beskrivelse af grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560249"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691456"
 ---
 # <a name="operations-scheduling"></a>Grovplanlægning
 
@@ -67,6 +67,9 @@ Grovplanlægning styrer også varedisponering og bestemmer beregninger af materi
 -   **Produktioner i ordrebeholdning** – Produkter, der er planlagt, frigivet eller igangsat
 -   **Tilgængelighed af materiale** – Lager, underproduktion og leverandører
 -   **Kapacitetstilgængelighed** – Ressourcer, der kræves til produktion
+
+> [!NOTE]
+> Hvis du bruger flertrådet varedisponering og grovplanlægning, tages der ikke hensyn til kapacitetsbegrænsningen. 
 
 ## <a name="cancellations"></a>Annulleringer
 Når du kører grovplanlægning, kan du annullere visse dele af ruteplanlægningen. Disse omfatter køtid, opstillingstid, procestid, overlapstid og transporttider.

@@ -3,7 +3,7 @@ title: Styring af detailsalgspriser
 description: I dette emne beskrives begreberne for oprettelse og styring af salgspriser i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
-ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
+ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1594064"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624783"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -234,6 +234,6 @@ Programmet til prissætning i detailhandel understøtter desuden **kun** følgen
 
 ## <a name="pricing-api-enhancements"></a>Forbedringer af pris-API
 
-Prisen er en af de vigtigste faktorer, der gælder for mange kunders indkøbsbeslutninger, og mange kunder sammenligner priserne på forskellige websteder, før de foretager et køb. For at hjælpe med at sikre, at de har konkurrencedygtige priser, holder detailhandlerne nøje øje med konkurrenterne og kører ofte kampagner. For at hjælpe disse forhandlere med at tiltrække kunder er det derfor vigtigt at produktsøgning, gennemsynsfunktion, lister og siden med produktdetaljer viser de mest nøjagtige priser.
+Prisen er en af de vigtigste faktorer, der styrer mange kunders indkøbsbeslutninger, og mange kunder sammenligner priserne på forskellige websteder, før de foretager et køb. For at hjælpe med at sikre, at de har konkurrencedygtige priser, holder detailhandlerne nøje øje med konkurrenterne og kører ofte kampagner. For at hjælpe disse forhandlere med at tiltrække kunder er det vigtigt at produktsøgning, gennemsynsfunktion, lister og siden med produktdetaljer viser de mest nøjagtige priser.
 
 I en kommende udgivelse af Retail returnerer **GetActivePrices**-API'en (Application Programming Interface) priser, der omfatter simple rabatter (f.eks. en enkeltlinjerabatter, der ikke er baseret på andre varer i indkøbsvognen). På denne måde er de priser, der vises, tæt på det faktiske beløb, som kunderne skal betale for varerne. Denne API indeholder alle typer simple rabatter: tilknytningsbaserede, loyalitetsbaserede, katalogbaserede og kanalbaserede rabatter. Derudover returnerer API'en navnene og gyldighedsoplysningerne for de anvendte rabatter, så detailhandlerne kan give en mere detaljeret beskrivelse af prisen og skabe en oplevelse af, at det haster, hvis rabatten udløber snart.
