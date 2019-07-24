@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577922"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624806"
 ---
 # <a name="retail-peripherals"></a>Eksterne detailenheder
 
@@ -156,13 +156,13 @@ Enhedstypen **Windows** bruges kun til printere. Når en Windows-printer er konf
 
 ### <a name="network"></a>Netværk
 
-Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruges via et netværk, enten direkte via IPC-hardwarestationen (Interprocess Communications), der er indbygget i Modern POS til Windows-programmet eller via IIS-hardwarestationen til andre Modern POS-klienter.
+Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruges via et netværk, enten direkte via IPC-hardwarestationen (Interprocess Communications), der er indbygget i Modern POS til Windows-programmer og Modern POS til Android-programmer eller via IIS-hardwarestationen til andre Modern POS-klienter.
 
 ## <a name="hardware-station-deployment-options"></a>Installationsindstillinger for hardwarestation
 
 ### <a name="ipc-built-in"></a>IPC (indbygget)
 
-IPC-hardwarestationen er indbygget i Modern POS til Windows-programmet. Hvis du vil bruge IPC hardwarestationen, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows-programmet. Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges. Når du starter Modern POS, vil IPC-hardwarestationen være aktiv, og de eksterne POS-enheder, der er konfigureret, vil være klar til brug. Hvis du midlertidigt ikke har brug for den lokale hardware af en eller anden grund, kan du bruge handlingen **Administrer hardwarestationer** til at deaktivere hardwarestationens funktioner. Modern POS kan også bruge IPC-hardwarestationen til at kommunikere direkte med eksterne enheder på netværket.
+IPC-hardwarestationen er indbygget i Modern POS til Windows-programmet og Modern POS til Android-programmet. Hvis du vil bruge IPC hardwarestationen, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows-programmet. Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges. Når du starter Modern POS, vil IPC-hardwarestationen være aktiv, og de eksterne POS-enheder, der er konfigureret, vil være klar til brug. Hvis du midlertidigt ikke har brug for den lokale hardware af en eller anden grund, kan du bruge handlingen **Administrer hardwarestationer** til at deaktivere hardwarestationens funktioner. Modern POS kan også bruge IPC-hardwarestationen til at kommunikere direkte med eksterne enheder på netværket.
 
 ### <a name="iis"></a>IIS
 
@@ -190,7 +190,11 @@ Netværksangivelsen for enheder i hardwareprofilen, giver pengeskuffer, bonprint
 
 Du kan angive IP-adresser til eksterne netværksenheder to steder. Hvis Windows-klienten til Modern POS bruger et enkelt sæt af eksterne netværksenheder, skal du angive IP-adresserne for disse enheder ved hjælp af indstillingen **IP-konfiguration** i handlingsruden for selve kasseapparatet. Hvis netværksenheder skal deles mellem POS-kasseapparater, kan en hardwareprofil, der har netværksenheder tilknyttet, afbildes direkte til en delt hardwarestation. For at tildele IP-adresser, skal du vælge den pågældende hardwarestation på siden **Detailbutikker** side og derefter bruge indstillingen **IP-konfiguration** i afsnittet **Hardwarestationer** til at angive de netværksenheder, der er knyttet til denne hardwarestation. For hardwarestationer, der kun har netværksenheder, behøver du ikke at installere selve hardwarestationen. I det tilfælde kræves hardwarestationen kun for begrebsmæssigt at gruppere netværksadresserbare enheder ud fra deres placering i detailbutikken.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS til iOS og Modern POS til Android
+#### <a name="modern-pos-for-android"></a>Modern POS til Android
+
+Fra og med Dynamics 365 for Retail med version 8.1.3 omfatter Modern POS til Android-programmet en indbygget pc-hardwarestation. Hardwarestationen understøtter kommunikation med netværksprintere og betalingsconnectorer. Du kan finde flere oplysninger i artiklen [Hybrid-app til Android-dokumenter](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS og Modern POS til iOS
 
 Den logik, der styrer fysisk tilsluttede og netværksadresserbare eksterne enheder, findes i hardwarestationen. Til alle POS-klienter med undtagelse af Modern POS til Windows skal IIS-hardwarestationen være installeret og aktiv for at aktivere POS-enheden til at kommunikere med eksterne enheder, uanset om disse enheder er fysisk forbundet til en hardwarestation eller adresseres via netværket.
 
@@ -223,7 +227,7 @@ Følgende tabel viser de topologier og installationsscenarier, der understøttes
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
 | Cloud POS   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
+| Android     | Ja                  | Ja                  |
 | iOS         | Nr.                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Eksterne netværksenheder
@@ -234,7 +238,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
 | Cloud POS   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
+| Android     | Ja                  | Ja                  |
 | iOS         | Nr.                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Understøttede enhedstyper efter hardwarestationstype
@@ -661,14 +665,15 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 
 #### <a name="printer"></a>Printer
 
-| Producent | Model    | Interface | Bemærkninger                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket   |
-| Star         | mPOP     | OPOS      | Tilsluttet via Bluetooth |
-| HP           | F7M67AA  | OPOS      | Drevet via USB             |
+| Producent | Model      | Interface | Bemærkninger                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Print | Brugerdefineret    | Forbundet via netværket   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Brugerdefineret    | Forbundet via netværket   |
+| Star         | mPOP       | OPOS      | Tilsluttet via Bluetooth |
+| HP           | F7M67AA    | OPOS      | Drevet via USB             |
 
 #### <a name="bar-code-scanner"></a>Stregkodescanner
 
@@ -688,11 +693,12 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 
 #### <a name="payment-terminal"></a>Betalingsterminal
 
-| Producent | Model | Interface | Bemærkninger                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Brugerdefineret    | Kræver tilpasning af betalingsconnector                                |
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+| Producent | Model        | Interface | Bemærkninger                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Brugerdefineret    | Kræver tilpasning af betalingsconnector                                |
+| VeriFone     | MX925        | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+| VeriFone     | MX915        | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+| Verifone     | Se kommentarer | Adyen     | Adyen-connectoren understøtter alle enheder, der vises [her](https://www.adyen.com/pos-payments/terminals) |
 
 #### <a name="cash-drawer"></a>Pengeskuffe
 

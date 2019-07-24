@@ -3,7 +3,7 @@ title: Oversigt over kreditorfakturaer
 description: Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618267"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625073"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
@@ -91,13 +91,6 @@ Du kan anvende siden **Gendan kreditorfakturaer** til at gendanne eller frigive 
 
 Du kan alene tilgå siden **Gendan kreditorfakturaer**, hvis du har fået tildelt sikkerhedsadgangspligterne og -rettighederne for **Gendan kreditorfakturaer i brug**. Derudover skal parametret **Tillad gendannelse af kreditorfaktura** på siden **Kreditorparametre** være slået til.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Nulstille arbejdsgangsstatus for kreditorfakturaer fra Uoprettelig til Kladder
-
-En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsgang for en kreditorfaktura er **Uoprettelig**, kan du nulstille den til **Kladde**. Du kan derefter redigere kreditorfakturaen. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for arbejdsgang for kreditorfakturaer** på siden **Administration af funktioner** er aktiveret.
-
-Du kan bruge siden **Nulstil status for arbejdsgang for kreditorfakturaer** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra navigationen **Periodisk opgave**. På siden vises alle kreditorfakturaer, der har arbejdsgangsstatus **Uoprettelig** i den aktuelle juridiske enhed. Siden viser også den bruger, der har sendt hver enkelt faktura til arbejdsgangen og faktura-id'et, og indeholder et link til arbejdsgangshistorikken. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du markere en eller flere fakturaer og derefter vælge **Opdater til kladde**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
-
-Du kan kun få adgang til siden **Nulstil status for arbejdsgang for kreditorfakturaer**, hvis sikkerhedsprogramadgangsrettigheden **Vedligehold arbejdsgang for kreditorfaktura** og rettigheden **Nulstil status for arbejdsgang for kreditorfaktura** er tildelt til dig.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

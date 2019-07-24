@@ -3,7 +3,7 @@ title: Kreditorposteringsprofil
 description: Kreditorbogføringsprofiler styrer bogføringen af kreditortransaktioner til Finans.
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e81f8b472e7ac7578c184716dcb4e5f3d7aeb65d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c3f62df7ec5627556561db950d54ff4347d2b4d6
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512162"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625889"
 ---
 # <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 
@@ -34,22 +34,22 @@ Kreditorbogføringsprofiler styrer bogføringen af kreditortransaktioner til Fin
 <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 -----------------------
 
-Kreditorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle kreditorer, en gruppe kreditorer eller en enkelt kreditor. Disse indstillinger bruges, når du opretter indkøbsordrer, kreditorfakturaer og kontantbetalinger. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. Standardposteringsprofilen defineres i oversigtspanelet Finans og Moms på siden Kreditorparametre. Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.
+Kreditorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle kreditorer, en gruppe kreditorer eller en enkelt kreditor. Disse indstillinger bruges, når du opretter indkøbsordrer, kreditorfakturaer og kontantbetalinger. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. Standardposteringsprofilen defineres i oversigtspanelet **Finans og Moms** på siden **Kreditorparametre**. Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.
 
-Du kan også knytte bogføringsdefinitioner til posteringsbogføringstyper på siden Definitioner af posteringsbogføring. I stedet for posteringsprofiler er det bogføringsdefinitioner, der styrer, hvordan kreditorposter bogføres i finansmodulet.
+Du kan også knytte bogføringsdefinitioner til posteringsbogføringstyper på siden **Definitioner af posteringsbogføring**. I stedet for posteringsprofiler er det bogføringsdefinitioner, der styrer, hvordan kreditorposter bogføres i finansmodulet.
 
 ## <a name="creating-a-posting-profile"></a>Oprette en posteringsprofil
 ### <a name="setup"></a>**Opsætning**
 
-Angiv de finanskonti, der skal bruges til bogføring af poster med den valgte posteringsprofil. Vælg en kontokode og – når det er muligt – en konto eller et gruppenummer til den valgte posteringsprofil. Under bogføringsprocessen finder programmet den posteringsprofil, der passer bedst til hver enkelt post, ved at søge efter den mest specifikke kombination af kontokode, kontonummer eller gruppe og nummer i følgende prioritetsrækkefølge:
+Angiv de finanskonti, der skal bruges til bogføring af poster med den valgte posteringsprofil. Vælg en kontokode og – når det er muligt – en konto eller et gruppenummer til den valgte posteringsprofil. Under bogføringsprocessen finder programmet den posteringsprofil, der passer bedst til hver enkelt post, ved at søge efter den mest specifikke kombination af kontokode, kontonummer eller gruppe og nummer i følgende prioritetsrækkefølge.
 
 | Feltværdien **Kontokode** | Feltværdien **Konto/gruppenummer**        | Søgeprioritet |
 |------------------------------|---------------------------------------------|-----------------|
-| **Tabel**                    | Specifik kreditorkonto                     | 1               |
-| **Gruppe**                    | kreditorgruppe, som kreditoren er tildelt | 2               |
-| **Alle**                      | Tom                                       | 3               |
+| **Tabellen**                    | Specifik kreditorkonto                     | 1               |
+| **Multi**                    | Kreditorgruppe, som kreditoren er tildelt | 2               |
+| **Alt**                      | Tom                                       | 3               |
 
-Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun definere én posteringsprofil med Alle i feltet Kontokode. Angiv følgende værdier for at definere en posteringsprofil:
+Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun definere én posteringsprofil med **Alle** i feltet **Kontokode**. Angiv følgende værdier for at definere en posteringsprofil.
 
 <table>
 <thead>
@@ -71,32 +71,20 @@ Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun defi
 <td><strong>Kontokode</strong></td>
 <td>Angiv, om posteringsprofilen skal gælde for en bestemt kreditor, en gruppe kreditorer eller alle kreditorer:
 <ul>
-<li><strong>Tabel</strong> – Posteringsprofilen anvendes til en enkelt kreditor. Vælg kreditorkontoen i feltet Konto/gruppenummer.</li>
-<li><strong>Gruppe</strong> – Posteringsprofilen anvendes til en kreditorgruppe. Vælg kreditorgruppen i feltet Konto/gruppenummer.</li>
-<li><strong>Alle</strong> – Posteringsprofilen anvendes til alle kreditorer. Lad feltet Konto/gruppenummer være tomt.</li>
+<li><strong>Tabel</strong> – Posteringsprofilen anvendes til en enkelt kreditor. Vælg kreditorkontoen i feltet <strong>Konto/gruppenummer</strong>.</li>
+<li><strong>Gruppe</strong> – Posteringsprofilen anvendes til en kreditorgruppe. Vælg kreditorgruppen i feltet <strong>Konto/gruppenummer</strong>.</li>
+<li><strong>Alle</strong> – Posteringsprofilen anvendes til alle kreditorer. Lad feltet <strong>Konto/gruppenummer</strong> være tomt.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Konto/gruppenummer</strong></td>
-<td>Hvis du vælger Tabel i feltet Kontokode, skal du vælge kontonummeret på den kreditor, der er knyttet til posteringsprofilen. Hvis Gruppe vælges, skal du vælge en kreditorgruppe. Hvis du vælger Alle, skal feltet stå tomt.</td>
+<td>Hvis du vælger <strong>Tabel</strong> i feltet <strong>Kontokode</strong>, skal du vælge kontonummeret på den kreditor, der er knyttet til posteringsprofilen. Hvis <strong>Gruppe</strong> vælges, skal du vælge en kreditorgruppe. Hvis du vælger <strong>Alle</strong>, skal feltet stå tomt.</td>
 </tr>
 <tr class="odd">
 <td><strong>Samlekonto</strong></td>
-<td>Vælg den finanskonto, der skal bruges som samlekonto for de kreditorer, som posteringsprofilerne er tilknyttet.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Note" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Bemærk!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Hvis Brug bogføringsdefinitioner er valgt på siden Finans, bruges postbogføringsdefinitionen for kreditorfakturaer i stedet for samlekontoen.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<td>Vælg den finanskonto, der skal bruges som samlekonto for de kreditorer, som posteringsprofilerne er tilknyttet. Parameteren <strong>Tillad ikke manuel angivelse</strong> for denne hovedkonto markeres. Hvis du efterfølgende fjerner kontoen fra posteringsprofilen, skal du validere indstillingen <strong>Tillad ikke manuel angivelse</strong> på <strong>Hovedkonti</strong>. 
+<p><strong>Bemærk:</strong> Hvis indstillingen <strong>Brug bogføringsdefinitioner</strong> er valgt på siden <strong>Finansparametre</strong>, bruges postbogføringsdefinitionen for kreditorfakturaer i stedet for samlekontoen.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Afregn konto</strong></td>
@@ -105,24 +93,12 @@ Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun defi
 <tr class="odd">
 <td><strong>Momsforudbetalinger</strong></td>
 <td>Vælg kontoen for momsbetaling, der er modtaget forud.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Note" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Bemærk!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Den posteringsprofil, der bruges, når betalingen er markeret som forudbetaling er markeret i posteringsprofilen med feltet kladdebilag for forudbetaling i området Finans og Moms på siden Kreditorparametre.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<p><strong>Bemærk!</strong> Den posteringsprofil, der bruges, når betalingen er markeret som forudbetaling er markeret i <strong>posteringsprofilen</strong> med feltet <strong>Kladdebilag for forudbetaling</strong> i området <strong>Finans og Moms</strong> på siden <strong>Kreditorparametre</strong>.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Indlevering</strong></td>
-<td>Vælg den finanskonto, som oplysninger om ikke-godkendte kreditorfakturaer skal bogføres på. Oplysningerne angives i indgangsbogskladden. En bruger angiver f.eks. meget grundlæggende oplysninger om kreditorfakturaer, når de modtages i indgangsbogen. Når indgangsbogen bogføres, bogføres posterne på den konto, der er angivet her og i feltet Modkonto. Når fakturaerne er godkendt, overføres gælden fra ankomstkontoen til den samlekonto, der bruges til kreditoren.</td>
+<td>Vælg den finanskonto, som oplysninger om ikke-godkendte kreditorfakturaer skal bogføres på. Oplysningerne angives i indgangsbogskladden. En bruger angiver f.eks. meget grundlæggende oplysninger om kreditorfakturaer, når de modtages i indgangsbogen. Når indgangsbogen bogføres, bogføres posterne på den konto, der er angivet her og i feltet <strong>Modkonto</strong>. Når fakturaerne er godkendt, overføres gælden fra ankomstkontoen til den samlekonto, der bruges til kreditoren.</td>
 </tr>
 <tr class="odd">
 <td><strong>Modkonto</strong></td>
@@ -136,15 +112,10 @@ Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun defi
 
 For de posteringer, der har den valgte posteringsprofil, skal du angive, om posterne skal udlignes automatisk, om der skal beregnes rente og udsendes rykkere. Du kan også vælge den konto, der skal bruges, når poster med den valgte posteringsprofil lukkes.
 
-Angiv følgende værdier for at definere en posteringsprofil:
+Angiv følgende værdier for at definere en posteringsprofil
 
 | Felt          | Beskrivelse                                                                                                                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Udligning** | Vælg denne indstilling for at kunne foretage automatisk udligning af poster med denne posteringsprofil. Hvis ikke denne indstilling vælges, skal posteringerne udlignes manuelt på siden Udlign åbne posteringer. |
+| **Udligning** | Vælg denne indstilling for at kunne foretage automatisk udligning af poster med denne posteringsprofil. Hvis ikke denne indstilling vælges, skal posteringerne udlignes manuelt på siden **Udlign åbne posteringer**. |
 | **Annuller**     | Vælg denne indstilling, hvis du vil kunne annullere poster med denne posteringsprofil.                                                                                                               |
 | **Luk**      | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                       |
-
-
-
-
-

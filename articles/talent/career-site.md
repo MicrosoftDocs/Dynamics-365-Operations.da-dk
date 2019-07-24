@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517657"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729697"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funktioner for karrierewebsteder i Attract
 
@@ -48,11 +48,14 @@ For at angive værdierne for følgende elementer skal brugeren logge på Attract
  
 For at angive værdierne for følgende elementer skal brugeren logge på Attract som administrator, vælge **Administration** i menuen **Indstillinger** og derefter vælge fanen **Administration af karrierewebsted**.
 
--   **Optimering af søgemaskine** – Når denne indstilling er aktiveret, kan der søges i alle offentlige job, der opslås på Attract-karrierewebstedet, ved hjælp af søgemaskiner som Bing og Google.
+-   **Optimering af søgemaskine** – Når denne indstilling er aktiveret, kan der søges i alle offentlige job, der opslås på Attract-karrierewebstedet, ved hjælp af søgemaskiner som Bing og Google. 
 
     > [!NOTE] 
     > Der kan være en forsinkelse fra denne indstilling aktiveres, til søgeresultater vises, afhængigt af hvilken søgemaskine du bruger.
-         
+    
+-   **Vilkår og betingelser** – Når den er aktiveret, skal alle kandidater godkende organisationens vilkår og betingelser, når de ansøger om et job. Attract-administratoren kan både konfigurere sin egen samtykketekst og linket til sine vilkår og betingelser. 
+
+        
 ## <a name="career-site-urls"></a>URL-adresser til karrierewebsteder
 
 Følgende liste indeholder de almindeligt anvendte karrierewebsteders URL-adresser, og hvordan du får adgang til dem.

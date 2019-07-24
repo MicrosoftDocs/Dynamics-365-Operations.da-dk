@@ -3,7 +3,7 @@ title: Konfigurere uddannelseskurser
 description: Personaleadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 83f88d17c744bb53dad975b77d169a09375d20d1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 26e76d68c6d5c8bd965e65e65d57f239fb8a2918
+ms.sourcegitcommit: 87e8b811680b1f87a973ce1680f07d657fa23046
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517573"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "1701384"
 ---
 # <a name="set-up-training-courses"></a>Konfigurere uddannelseskurser
 
@@ -128,12 +128,12 @@ I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan 
 </table>
 
 ## <a name="course-participants"></a>Kursusdeltagere
-Kursusdeltagere er arbejdere, jobansøgere eller kontaktpersoner, der deltager i et kursus eller anden undervisning. Du kan kun melde deltagere til åbne kurser. Det laveste og højeste antal deltagere, du kan tilmelde et kursus, er angivet i oversigtspanelet **Generelt** på siden **Kurser**.
+Kursusdeltagere er arbejdere, der deltager i et kursus eller anden undervisning. Du kan kun melde deltagere til åbne kurser. Det laveste og højeste antal deltagere, du kan tilmelde et kursus, er angivet i oversigtspanelet **Generelt** på siden **Kurser**.
 
 <a name="workflow"></a>Arbejdsgang
 --------
 
-Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen.  En arbejdsgang kan tildeles til et kursus i oversigtspanelet **Generelt** på siden **Kurser**.
+Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen. Du kan tildele en arbejdsgang et kursus i oversigtspanelet **Generelt** på siden **Kurser**.
 
 
 

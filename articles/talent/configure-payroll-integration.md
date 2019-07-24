@@ -3,7 +3,7 @@ title: Konfigurere lønintegration mellem Talent og Dayforce
 description: Dette emne forklarer, hvordan du kan konfigurere integration mellem Microsoft Dynamics 365 for Talent og Ceridian Dayforce, så du kan behandle en lønkørsel.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517574"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702812"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønintegrationen mellem Talent og Dayforce
 
@@ -54,6 +54,16 @@ Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge fin
 
 - [Om Azure-lagerkonti](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Konfigurere forbindelsesstrenge for Azure-datalager](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+
+### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske oplysninger ved aktivering af lønintegration
+
+Aktivering af lønintegration har to primære effekter:
+
+- Der oprettes et dataeksport projekt ved navn "Lønintegrationseksport". Dette projekt indeholder de objekter og felter, der kræves til lønintegration. Hvis du vil undersøge projektet, skal du gå til **Systemadministration**, vælge feltet **Datastyring** og derefter åbne dataprojektet på listen over projekter.
+- Dette batchjob udfører dataeksportprojektet, krypterer den resulterende datapakke og overfører datapakkefilen til det SFTP-slutpunkt, der er konfigureret på skærmen **Integrationskonfiguration**.
+
+> [!NOTE]
+> Den datapakke, der overføres til SFTP-slutpunktet, krypteres ved hjælp af en nøgle, der er entydig for pakken. Nøglen er i en Azure Key Vault, der kun kan åbnes af Ceridian. Det er ikke muligt at dekryptere og undersøge datapakkens indhold. Hvis du har brug for at undersøge indholdet af datapakken, skal du eksportere dataprojektet "Lønintegrationseksport" manuelt, download det og derefter åbne det. Manuel eksport anvender ikke kryptering eller overførsel af pakken.
 
 ## <a name="configure-your-data"></a>Konfigurere dine data 
 

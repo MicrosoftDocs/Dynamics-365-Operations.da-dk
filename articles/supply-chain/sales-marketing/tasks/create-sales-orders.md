@@ -3,7 +3,7 @@ title: Opret salgsordrer
 description: Denne procedure viser, hvordan du opretter en salgsordre.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8af0333d979ba3a4e12d4f22b1225f3b72d66a7a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e0c27126e688b5b8972dae3542973ed73c5e9153
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563965"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711172"
 ---
 # <a name="create-sales-orders"></a>Opret salgsordrer
 
@@ -29,43 +29,42 @@ ms.locfileid: "1563965"
 
 Denne procedure viser, hvordan du opretter en salgsordre. Du kan bruge denne procedure i demodatafirmaet USMF. Salgsordrer oprettes typisk af en salgsordreprocessor. 
 
-
-
-
 ## <a name="enter-sales-order-header-details"></a>Angiv oplysninger om salgsordrehovedet
-1. Gå til Salg og marketing > Salgsordrer > Alle salgsordrer.
-2. Klik på Ny.
-3. Klik på rullelisten i feltet Kundekonto for at åbne opslaget.
+1. Gå til **Navigationsrude > Moduler > Salg og marketing > Salgsordrer > Alle salgsordrer**.
+2. Vælg **Ny**.
+3. Vælg rullelisten i feltet **Kundekonto** for at åbne opslaget.
 4. Find og vælg kundeposten på listen.
-    * I dette eksempel skal du vælge kundenummer "US 004"  
-5. Klik op linket i den valgte række på listen.
-6. Klik på OK.
+    - I dette eksempel skal du vælge kundenummer "US 004"  
+5. Vælg **OK**.
 
 ## <a name="enter-sales-order-line-details"></a>Angiv oplysninger om salgsordrelinjen
-    * De produkter, der sælges af organisationen, kan findes i varianter, der er differentieret efter dimensioner, f.eks. konfiguration, farve, størrelse og type. Produkter kan også konfigureres til at bruge lagringsdimensioner som sted, lagersted, og palle og sporingsdimensioner som batch- og serienumre. Når disse dimensioner er tildelt, skal du vælge værdier for dimensionerne på ordrelinjen. For at forbedre effektiviteten af ordreindtastning kan du føje de respektive dimensionsfelter til ordregitteret.  
-1. Klik på Salgsordrelinje.
-2. Klik på Dimensioner.
-    * I dette eksempel skal du vælge dimensionerne farve, lokation og lagersted. De dimensioner, du vælger her, vises i salgsordregitteret. Hvis dine valg skal bevares, skal du angive indstillingen Gem opsætningen til Ja.   
-3. Klik på OK.
-4. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
+    
+De produkter, der sælges af organisationen, kan findes i varianter, der er differentieret efter dimensioner, f.eks. konfiguration, farve, størrelse og type. Produkter kan også konfigureres til at bruge lagringsdimensioner som sted, lagersted, og palle og sporingsdimensioner som batch- og serienumre. Når disse dimensioner er tildelt, skal du vælge værdier for dimensionerne på ordrelinjen. For at forbedre effektiviteten af ordreindtastning kan du føje de respektive dimensionsfelter til ordregitteret.
+    
+1. I afsnittet **Salgsordrelinjer** skal du vælge **Salgsordrelinjen**.
+2. Vælg **Dimensioner**.
+    
+    I dette eksempel skal du vælge dimensionerne farve, lokation og lagersted. De dimensioner, du vælger her, vises i salgsordregitteret. Hvis dine valg skal bevares, skal du angive indstillingen **Gem opsætningen** til Ja.
+    
+3. Vælg **OK**.
+4. Klik på rullelisten i feltet **Varenummer** for at åbne opslaget.
 5. I dette eksempel skal du vælge varenummer T0004.
-6. Klik op linket i den valgte række på listen.
-    * Hvis varen er en del af en salgskategori, vises varenavnet automatisk i feltet Salgskategori.  
-    * Hvis produktdimensionsfelterne allerede indeholder en værdi, er det fordi, værdien blev kopieret fra produktposten, hvor den er defineret som standardproduktdimension. Du kan når som helst ændre standardværdien.   
-7. Klik på rullelisten i feltet Farve for at åbne opslaget.
-8. Find og vælg den ønskede post på listen.
-9. Klik op linket i den valgte række på listen.
-10. Angiv et tal i feltet Antal.
-    * Hvis varen sælges i andre enheder end dem, de er købt, produceret og gemt i, og der er angivet en måleenhed for salgsenheden i produktposten, vises denne værdi i feltet Enhed. Du kan til enhver tid ændre værdien.   
-    * Hvis dette felt allerede indeholder en værdi, kopieres værdien fra ordrehovedet eller fra ordreindstillinger, der er knyttet til produktet. Du kan til enhver tid ændre værdien. Vælg en værdi, hvis feltet er tomt.   
-    * Hvis feltet Enhedspris allerede indeholder en værdi, kopieres værdien fra en gyldig samhandelsaftale eller fra produktposten. (Enhedsprisen kan også stamme fra en salgsaftale, men processen til oprettelse af salgsordrer fra salgsaftaler afviger fra den, der vises her). Angiv en værdi, hvis feltet er tomt.   
-    * Feltet Rabat indeholder et rabatbeløb pr. produktenhed. For at beregne det samlede linjerabatbeløbet ganges rabatværdien med linjeantallet.    Hvis feltet Rabat allerede indeholder en værdi, kopieres værdien fra en gyldig samhandelsaftale. Hvis feltet er tomt, og du vil give kunden en linjerabat, kan du angive en værdi.  
-    * Feltet Rabatprocent indeholder en værdi i procent, som det samlede bruttobeløb på linjen skal reduceres med.  Hvis feltet Rabatprocent allerede indeholder en værdi, er den kopieret fra en gyldig samhandelsaftale. Hvis feltet er tomt, og du vil give kunden en linjerabat, kan du angive en værdi.  
-    * Feltet Nettobeløb indeholder en værdi, der beregnes ud fra linjes antal og enhedspris reguleret af rabatter.  Du kan tilsidesætte den beregnede værdi for en anden.  
+    - Hvis varen er en del af en salgskategori, vises varenavnet automatisk i feltet Salgskategori.  
+    - Hvis produktdimensionsfelterne allerede indeholder en værdi, er det fordi, værdien blev kopieret fra produktposten, hvor den er defineret som standardproduktdimension. Du kan når som helst ændre standardværdien.   
+6. Klik på rullelisten i feltet **Farve** for at åbne opslaget.
+7. Find og vælg den ønskede post på listen.
+8. Angiv et tal i feltet **Antal**.
+    - Hvis varen sælges i andre enheder end dem, de er købt, produceret og gemt i, og der er angivet en måleenhed for salg i produktposten, vises denne værdi i feltet **Enhed**. Du kan til enhver tid ændre værdien.   
+    - Hvis feltet **Sted** allerede indeholder en værdi, kopieres værdien fra ordrehovedet eller fra ordreindstillinger, der er knyttet til produktet. Du kan til enhver tid ændre værdien. Vælg en værdi, hvis feltet er tomt.   
+    - Hvis feltet **Enhedspris** allerede indeholder en værdi, kopieres værdien fra en gyldig samhandelsaftale eller fra produktposten. (Enhedsprisen kan også stamme fra en salgsaftale, men processen til oprettelse af salgsordrer fra salgsaftaler afviger fra den, der vises her). Angiv en værdi, hvis feltet er tomt.   
+    - Feltet **Rabat** indeholder et rabatbeløb pr. produktenhed. For at beregne det samlede linjerabatbeløbet ganges rabatværdien med linjeantallet. Hvis feltet **Rabat** allerede indeholder en værdi, kopieres værdien fra en gyldig samhandelsaftale. Hvis feltet er tomt, og du vil give kunden en linjerabat, kan du angive en værdi.  
+    - Feltet **Rabatprocent** indeholder en værdi i procent, som det samlede bruttobeløb på linjen skal reduceres med.  Hvis feltet **Rabatprocent** allerede indeholder en værdi, er den kopieret fra en gyldig samhandelsaftale. Hvis feltet er tomt, og du vil give kunden en linjerabat, kan du angive en værdi. 
+    - Feltet **Nettobeløb** indeholder en værdi, der beregnes ud fra linjens antal og enhedspris reguleret af rabatter.  Du kan tilsidesætte den beregnede værdi for en anden.  
 
 ## <a name="review-the-order-totals"></a>Gennemse ordretotalerne
-1. Klik på Salgsordre i handlingsruden.
-2. Klik på Totaler.
-    * Siden Totaler vise oplysninger om hele ordren. Dette omfatter subtotalbeløb, som er summen af alle linjenettobeløb justeret for eventuelle linjerabatter, det samlede fakturabeløb, som er et subtotalbeløb justeret for eventuel rabat på ordreniveau, afgifter og moms, kundens kreditmaksimum og andet.  Fakturabeløbet er det beløb, der skal vises på kundens fakturadokument.  
-3. Klik på OK.
-
+1. Vælg **Salgsordre** i **handlingsruden**.
+2. Vælg **Totaler**.
+    
+    Siden **Totaler** viser oplysninger om hele ordren. Dette omfatter subtotalbeløb, som er summen af alle linjenettobeløb justeret for eventuelle linjerabatter, det samlede fakturabeløb, som er et subtotalbeløb justeret for eventuel rabat på ordreniveau, afgifter og moms, kundens kreditmaksimum og andet. Fakturabeløbet er det beløb, der skal vises på kundens fakturadokument.  
+    
+3. Vælg **OK**.
