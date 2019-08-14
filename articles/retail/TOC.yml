@@ -4,6 +4,8 @@
   items:
     - name: Nyheder eller ændringer
       href: get-started/whats-new.md
+    - name: Funktioner i prøveversion i Dynamics 365 for Retail 10.0.5
+      href: get-started/whats-new-10-0-5.md
     - name: Nyheder eller ændringer i Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
     - name: Nyheder eller ændringer i Dynamics 365 for Retail 10.0.2
@@ -257,6 +259,8 @@
       href: Notifications-POS.md
 - name: Returneringer
   items:
+    - name: Sammenkædede refusioner
+      href: dev-itpro/linked-refunds.md
     - name: 'Sælge og returnere produkter, der ikke er medtaget i en butiks udvalg'
       href: sell-return-outside-assortments.md
     - name: Konfigurere og behandle en udveksling på en returordre
