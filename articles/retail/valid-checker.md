@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617314"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790415"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenskontrol af detailtransaktion
 
@@ -50,6 +50,7 @@ Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af detail
 - **Debitorkonto** – validerer, at debitorkontoen i detailtransaktionstabellerne findes i debitormasteren i hovedkontoret.
 - **Linjetæller** – validerer, at antallet af linjer, som er angivet i transaktionshovedtabellen, svarer til antallet af linjer i salgstransaktionstabellerne.
 - **Pris inkl. moms** – validerer, at parameteren **Pris inkl. moms** er konsistent på tværs af transaktionslinjer.
+- **Betalingsbeløb** - validerer, at betalingsposterne svarer til betalingsbeløbet i hovedet.
 - **Bruttobeløb** – validerer, at bruttobeløbet i hovedet er summen af nettobeløbene på linjerne plus momsbeløbet.
 - **Nettobeløb** – validerer, at nettobeløbet i hovedet er summen af nettobeløbene på linjerne.
 - **Under-/overbetaling** – validerer, at differencen mellem bruttobeløbet i hovedet og betalingsbeløbet ikke overskrider konfigurationen af den maksimalt tilladte underbetaling/overbetaling.
@@ -58,10 +59,11 @@ Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af detail
 - **Gavekortvare** – Retail understøtter ikke returnering af gavekortvarer. Saldoen på et gavekort kan dog udbetales kontant. Alle gavekortvarer, der behandles som en returlinje i stedet for en udbetalingslinje, mislykkes i bogføringsprocessen for opgørelsen. Valideringsprocessen for gavekortvarer er garanti for, at de eneste returneringslinjer for gavekortvarer i detailtransaktionstabellerne er udbetalingslinjer for gavekort.
 - **Negativ pris** – validerer, at der ikke er nogen negative pristransaktionslinjer.
 - **Vare og variant** – validerer, at varer og varianter på transaktionslinjerne findes i masterfilen for vare og variant.
+- **Momsbeløb** - validerer, at momsposter svarer til momsbeløbene på linjerne. 
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurere konsistenskontrollen
 
-Konfigurer batchprocessen "Valider butiksposteringer" på **Retail \> Retail IT \> POS-bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
+Konfigurere batchprocessen "Valider butiksposteringer" på **Retail \> Retail IT \> POS-bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
 
 ## <a name="results-of-validation-process"></a>Resultater af valideringsprocessen
 

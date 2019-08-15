@@ -106,10 +106,28 @@
           items:
             - name: X++-sprogreference
               href: dev-ref/xpp-language-reference.md
-            - name: X++-variabler og datatyper
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'Sætninger, løkker og undtagelseshåndtering i X++'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Variabler og datatyper
+              items:
+                - name: Variabler
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Basisdatatyper
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Sammensatte datatyper
+                  href: dev-ref/xpp-data-composite.md
+                - name: Samlingsklasser
+                  href: dev-ref/xpp-data-collection.md
+                - name: Udvidede datatyper
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Sætninger, løkker og undtagelseshåndtering'
+              items:
+                - name: 'Kommentarer, brug og udskrivning'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Betingelsessætninger
+                  href: dev-ref/xpp-conditional.md
+                - name: Løkkesætninger
+                  href: dev-ref/xpp-loops.md
+                - name: Undtagelseshåndtering
+                  href: dev-ref/xpp-exceptions.md
             - name: SQL-forbindelsesfejl X++-undtagelse
               href: dev-ref/sql-connection-error.md
             - name: X++-operatorer
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: Dataudvælgelse og -manipulation i X++
               href: dev-ref/xpp-data-query.md
+            - name: Data adgang ved hjælp af SysDa-API'et
+              href: dev-ref/sysda.md
             - name: X++-makroer
               href: dev-ref/xpp-macros.md
             - name: X++-attributklasser
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Dynamics-symbolskrifttypen
           href: user-interface/symbol-font.md
+        - name: Gemte visninger
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: 'Opbygge formularer, der fuldt ud anvender gemte visninger'
+          href: user-interface/understanding-saved-views.md
         - name: 'Testformularer, der bruger brugerdefinerede mønstre'
           href: user-interface/testing-forms-custom-patterns.md
         - name: 'Oprette delbare, sikrede URL-adresser (dybe links)'
@@ -496,7 +520,7 @@
           href: user-interface/messaging-api-center-bar-details.md
         - name: 'Ofte stillede spørgsmål for meddelelsescenter, meddelelseslinje og meddelelsesdetaljer'
           href: user-interface/messaging-user.md
-    - name: Retningslinjer for primær formular-mønster
+    - name: Retningslinjer for formularmønster
       items:
         - name: Formularmønstre for overførte formularer
           href: user-interface/select-form-pattern.md
@@ -1129,7 +1153,7 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: Hotfixes
       items:
-        - name: Hente hotfixes fra Lifecycle Services
+        - name: Hente opdateringer fra Lifecycle Services
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Anvende opdateringer i skybaserede miljøer
           href: deployment/apply-deployable-package-system.md
@@ -1160,8 +1184,10 @@
       href: sysadmin/maintenance-mode.md
     - name: Forudkonfigurerede systemkonti
       href: sysadmin/pre-configured-system-accounts.md
-    - name: Eksportere B2B-brugere Azure AD
+    - name: Eksportere B2B-brugere til Azure AD
       href: sysadmin/implement-b2b.md
+    - name: Angive timeout for sessionsinaktivitet
+      href: sysadmin/session-idle-timeout.md
     - name: Rollebaseret sikkerhed
       href: sysadmin/role-based-security.md
       items:
@@ -1310,6 +1336,8 @@
   items:
     - name: Få support til Finance and Operations og Lifecycle Services
       href: lifecycle-services/lcs-support.md
+    - name: Supportoversigt for Dynamics 365
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: Få support til Finance and Operations drevet af 21Vianet i Kina
       href: lifecycle-services/21vianet-support.md
     - name: Log en premier-supportbillet
