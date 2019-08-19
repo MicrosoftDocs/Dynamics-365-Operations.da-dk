@@ -3,7 +3,7 @@ title: Tastaturgenveje
 description: Følgende tastaturgenveje gælder for hele Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561827"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780052"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -138,9 +138,13 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Tilføje et interval af rækker til det valgte sæt<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>         | Skift+klik                     |
 | Gå til næste/forrige side med data                                                                                   | Page up/Page down             |
 | Opret en ny række nederst i gitteret                                                                             | Pil ned (fra den sidste række)  |
-| Markér eller fjern alle rækker                                                                                               | Ctrl+Skift+M                    |
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
 | Flyt til den sidste post                                                                                                | Ctrl+End                        |
+| Markér eller fjern alle rækker                                                                                               | Ctrl+Skift+M                    |
+| Flyt til den første markerede række                                                                                           | Alt+Shift+M, F                    |
+| Flyt til den næste markerede række                                                                                            | Alt+Shift+M, L                    |
+| Flyt til den forrige markerede række                                                                                        | Alt+Shift+M, P                    |
+| Flyttet til den sidst markerede række                                                                                           | Alt+Shift+M, N                    |
 | Udføre standardhandlingen i et gitter<blockquote>[!NOTE] Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.</blockquote> | Enter                           |
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |

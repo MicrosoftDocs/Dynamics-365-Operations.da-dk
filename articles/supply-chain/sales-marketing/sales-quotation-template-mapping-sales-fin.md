@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: efe943f5c874ed041ce7984272ebc19f57cca6ef
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572575"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743365"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
 
@@ -33,7 +33,7 @@ ms.locfileid: "1572575"
 I emnet beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgstilbudshoveder og linjer direkte fra Microsoft Dynamics 365 for Sales til Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
-> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 

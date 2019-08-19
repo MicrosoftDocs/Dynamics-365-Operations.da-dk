@@ -3,7 +3,7 @@ title: Konfigurer og kør jobbet for at bogføre opgørelser
 description: Denne procedure hjælper med at konfigurere og køre et tilbagevendende batchjob for at bogføre opgørelser for en valgt butik eller butiksgruppe.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 676216d90c50c0d3fa1a839cab7a734e624708ba
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a24014f7e1b925e0fdb20b91bcc9594feb8f4c5c
+ms.sourcegitcommit: fc40279d0e56f8a43c601bca6265fdde4c8c4c7e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550110"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1792242"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Konfigurer og kør jobbet for at bogføre opgørelser
 
@@ -31,11 +31,12 @@ ms.locfileid: "1550110"
 Denne procedure hjælper med at konfigurere og køre et tilbagevendende batchjob for at bogføre opgørelser for en valgt butik eller butiksgruppe. Denne procedure bruger USRT-firmaets demodata.
 
 1. Gå til Alle arbejdsområder > .. > Detailbutiksregnskab.
-2. Klik på Bogfør opgørelser.
+2. Klik på Bogfør opgørelse i batch.
     * Vælg et organisationshierarki, og vælg derefter enten en enkelt butik eller en node i organisationens nodetræ. Vælg en node, hvis du vil oprette batchjobbet for en gruppe butikker.  
     * Klik på pilen for at føje dit valg.  
-3. Klik på fanen Kør i baggrunden.
+3. Klik på fanen Kør i baggrunden. ![Kør i baggrunden](../dev-itpro/media/runbackground.png "Kør i baggrunden") 
 4. Markér eller fjern markeringen af afkrydsningsfeltet Batchbehandling.
+![Batchbehandling](../dev-itpro/media/batchprocessing.png "Batchbehandling og gentagelser") 
 5. Klik på Gentagelse.
 6. Angiv en dato i feltet Startdato.
 7. Angiv et tidspunkt i feltet Starttidspunkt.

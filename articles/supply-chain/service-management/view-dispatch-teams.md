@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: feddc690e597bbf20da1aa7b2e69ebc231bdecc2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f729847932fd1e528b1facca4ea90558b556f29e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553294"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742187"
 ---
 # <a name="view-dispatch-teams"></a>Vis planlægningteams   
 
@@ -48,7 +48,7 @@ Du kan finde oplysninger om tildeling af en arbejder til et team under [Konfigur
 
 [Overvåge serviceaktiviteter](monitor-service-activities.md)
 
-[Planlægningstavle (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))
+[Planlægningstavle (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 

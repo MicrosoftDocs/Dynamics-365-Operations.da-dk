@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffac83622dcbf7e38b2cb4e1120bc7e93a2cdc9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 73d1fc194ae11c8da28e3478d0441f8babc6f9ad
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548831"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743197"
 ---
 # <a name="set-up-dispatch-teams"></a>Konfigurer planlægningsteams 
 
@@ -50,7 +50,7 @@ Dette emne beskriver, hvordan et planlægningsteam oprettes. Når du har oprette
 
 
 > [!NOTE]
-> <P>Du kan tildele en arbejder til dette planlægningsteam i formularen <STRONG>Arbejder</STRONG>. Du kan finde oplysninger om tildeling af en arbejder til et planlægningsteam under <A href="https://technet.microsoft.com/en-us/library/dn776288(v=ax.60)">Planlæg medarbejdere (formular)</A>.</P>
+> <P>Du kan tildele en arbejder til dette planlægningsteam i formularen <STRONG>Arbejder</STRONG>. Du kan finde oplysninger om tildeling af en arbejder til et planlægningsteam under <A href="https://technet.microsoft.com/library/dn776288(v=ax.60)">Planlæg medarbejdere (formular)</A>.</P>
 
 
 

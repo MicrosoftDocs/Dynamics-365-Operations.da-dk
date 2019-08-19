@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6a904529dccbe392793d0d108335b623bb1ed8b2
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571996"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742533"
 ---
 # <a name="requests-for-quotation-rfqs"></a>Tilbudsanmodning
 
@@ -48,7 +48,7 @@ Du kan oprette en sag for en tilbudsanmodning ud fra planlagte ordrer, en indkø
 
 Når du forbereder tilbudsanmodningssagen og tilføjer kreditorer, skal du vælge **Send** (**Sende og udgiv** for offentlig sektor) for tilbudsanmodningssagen. Der oprettes en tilbudsanmodningskladde for hver leverandør, som du sendte tilbudsanmodningen til. Du kan konfigurere indstillingerne for Udskrivning for handlingen Send, så der enten udskrives en rapport for hver kreditor til et arkiv eller sendes en rapport til hver kreditors mailadresse. Du kan desuden bruge tilbudsanmodningskladden til hver leverandør til at generere en rapport, som du kan sende eller gensende til leverandøren senere. Du kan også konfigurere handlingen Send, så den opretter et svarark, som leverandøren kan udfylde.
 
-Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Microsoft Dynamics 365 for Finance and Operations. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
+Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Microsoft Dynamics 365 for Finance and Operations. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
 
 Hvis du skal ændre en tilbudsanmodning, når du har sendt den, kan du sende tilbudsanmodningen til kreditoren igen, når du er færdig, ved hjælp af to ændringshandlinger: Opret og Færdiggør.+
 
@@ -179,7 +179,7 @@ Hvis du har konfigureret ændringsprocessen, så den er mere restriktiv, skal du
 
 Hvis du har konfigureret ændringsprocessen, så den er mindre restriktiv, behøver du ikke at vælge **Opret**, før du kan redigere felterne i en tilbudsanmodningssag, der allerede er sendt. Du skal dog manuelt føje en ændringsnote til tilbudsanmodningen og sende sagen igen. Vær opmærksom på, at denne fremgangsmåde kun kan bruges, hvis ingen af svarene (buddene) er blevet redigeret. Hvis du har angivet et svar, og det er i **Modtaget**-tilstand, er knappen **Send** ikke tilgængelig. I så fald skal du vælge **Opret** og derefter **Færdiggør**, som du skal gøre i den mere restriktive proces. Svaret nulstilles derefter for at afspejle ændringerne af tilbudsanmodningssagen.
 
-Hvis kreditorer bruger grænsefladen til kreditorsamarbejde til at afgive bud, skal du altid bruge ændringsprocessen for at oplyse kreditorerne om ændringerne af tilbudsanmodningssagen. Denne proces hjælper med at forhindre en situation, hvor kreditorer byder på en forældet tilbudsanmodningssag, mens de har et igangværende bud. Du kan finde flere oplysninger om kreditorsamarbejde under [Kreditorsamarbejde med eksterne kreditorer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Hvis kreditorer bruger grænsefladen til kreditorsamarbejde til at afgive bud, skal du altid bruge ændringsprocessen for at oplyse kreditorerne om ændringerne af tilbudsanmodningssagen. Denne proces hjælper med at forhindre en situation, hvor kreditorer byder på en forældet tilbudsanmodningssag, mens de har et igangværende bud. Du kan finde flere oplysninger om kreditorsamarbejde under [Kreditorsamarbejde med eksterne kreditorer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Hvis du vil invitere flere leverandører til at byde, og der ikke er foretaget nogen ændringer af tilbudsanmodningssagen, kan du bruge knappen **Send**. De leverandører, du har tilføjet, vises på siden **Send** og modtager e-mailinvitationen.
 

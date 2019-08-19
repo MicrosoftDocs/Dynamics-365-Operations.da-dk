@@ -3,25 +3,25 @@ title: Opsætte og generere aldersfordelte oplysninger om debitorer
 description: Denne guide hjælper dig med at oprette en definition af forældelsesperiode, aldersfordele kundesaldi og få vist saldi på listen Aldersfordelt saldo og siden Rykkere.
 author: mikefalkner
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fd8738cfd3466464c9fec1760e9a369ff3a4a67
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 77b5dd5feb16cc3bd6d64b6520cc47087c5b5224
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568229"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834361"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Opsætte og generere aldersfordelte oplysninger om debitorer
 
@@ -31,34 +31,31 @@ Denne guide hjælper dig med at oprette en definition af forældelsesperiode, al
 
 
 ## <a name="create-an-aging-period-definition"></a>Opret en definition af forældelsesperioder
-1. Gå til Kredit > Opsætning > Definitioner af forældelsesperioder.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Definition på forældelsesperiode.
-4. Indtast en værdi i feltet Beskrivelse.
-5. Klik på Tilføj under for at indsætte en ny forældelsesperiode.
-6. Indtast en beskrivelse, der skal vises i rapporter over forældelse, i feltet Periode.
-7. Indtast et tal i feltet Enhed.
-8. Vælg en indstilling i feltet Interval.
-    * Finansperiode svarer til perioden til finanskalenderen. Dag, uge, måned, kvartal og år definerer størrelsen på intervallet efter datotype.. Ubegrænset vælger alle transaktioner før eller efter den forrige periode, alt efter om det er den første eller sidste periode.  
-9. Vælg en indstilling i feltet Aldersindikator.
+1. Gå til **Navigationsruden > Moduler > Kredit og inkasso > Opsætning > Definitioner af forældelsesperioder**.
+2. Klik på **Ny**.
+3. Indtast en værdi i feltet **Definition af forældelsesperiode**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Klik på **Tilføj nedenfor** for at indsætte en ny forældelsesperiode.
+6. Indtast en beskrivelse, der skal vises i rapporter over forældelse, i feltet **Periode**.
+7. Indtast et tal i feltet **Enhed**.
+8. Vælg en indstilling i feltet **Interval**. Finansperiode svarer til perioden til finanskalenderen. Dag, uge, måned, kvartal og år definerer størrelsen på intervallet efter datotype.. Ubegrænset vælger alle transaktioner før eller efter den forrige periode, alt efter om det er den første eller sidste periode.  
+9. Vælg en indstilling i feltet **Aldersindikator**.
 10. Vælg perioden øverst i gitteret. Opdater beskrivelsen for at beskrive den ældste periode i definitionen af forældelsesperioder
-11. Angiv den nye beskrivelse af forældelsesperioden i feltet Periode.
+11. Angiv den nye beskrivelse af forældelsesperioden i feltet **Periode**.
 12. Luk siden.
 
 ## <a name="age-the-balances"></a>Aldersfordel saldiene
-1. Gå til Kredit > Periodiske opgaver > Æld debitorsaldi.
-2. I feltet Definition på forældelsesperiode skal du vælge den definition på forældelsesperiode, du har oprettet.
-    * Du kan have ét aktivt øjebliksbillede for hver definition af forældelsesperioder.  
-    * Alle kunder behandles som standard. Du kan bruge denne udvælgelse til at beregne en enkelt samlings kundepulje.  
-    * Vælg datoen fra den transaktion, du vil bruge til aldersfordelingen.  
-    * Vælg en "pr."-dato for aldersfordeling. I dag er standard, men hvis du ændrer feltet til Valgt dato, kan du vælge den dato, du vil. Du kan bruge Dags dato til batchbehandling.  
-3. Udvid området Firma. Du kan vælge de firmaer, der skal medtages i øjebliksbilledet. Det aktuelle firma er valgt som standard.
-4. Klik på OK for at behandle øjebliksbilledet. Det vil tage et stykke tid, så vent på, at skyderen forsvinder, og kontrollér, om der er en meddelelse i Meddelelsescenter.
+1. Gå til **Kredit > Periodiske opgaver > Æld debitorsaldi**.
+2. I feltet **Definition af forældelsesperiode** skal du vælge den definition på forældelsesperiode, du har oprettet.
+    + Du kan have ét aktivt øjebliksbillede for hver definition af forældelsesperioder.  
+    + Alle kunder behandles som standard. Du kan bruge denne udvælgelse til at beregne en enkelt samlings kundepulje.  
+    + Vælg datoen fra den transaktion, du vil bruge til aldersfordelingen.  
+    + Vælg en "pr."-dato for aldersfordeling. I dag er standard, men hvis du ændrer feltet til Valgt dato, kan du vælge den dato, du vil. Du kan bruge Dags dato til batchbehandling.  
+3. Udvid området **Virksomhed**. Du kan vælge de firmaer, der skal medtages i øjebliksbilledet. Det aktuelle firma er valgt som standard.
+4. Klik på **OK** for at behandle øjebliksbilledet. Det vil tage et stykke tid, så vent på, at skyderen forsvinder, og kontrollér, om der er en meddelelse i Meddelelsescenter.
 
 ## <a name="view-the-balances-on-the-aged-balances-list-and-on-the-collection-page"></a>Få vist saldi på listen aldersfordelte saldi og på siden Rykker
-1. Gå til Kredit > Rykkere > Aldersfordelte saldi.
-    * Listesiden viser saldi for kunden. Ikonet for aldersfordeling viser forældelsesperioden for den ældste transaktion.  
+1. Gå til **Kredit > Rykkere > Aldersfordelte saldi**. Listesiden viser saldi for kunden. Ikonet for aldersfordeling viser forældelsesperioden for den ældste transaktion.  
 2. Vælg en kunde med en saldo.
-3. Udvid faktaboksen Aldersfordeling for at få vist de aldersfordelte saldi.
-    * Definitionen af forældelsesperioden for faktaboksen hentes fra den definition af standardforældelsesperiode, som er angivet i parametrene. Du kan ændre den ved hjælp af menuen Indsaml.  
+3. Udvid faktaboksen **Aldersfordeling** for at få vist de aldersfordelte saldi. Definitionen af forældelsesperioden for faktaboksen hentes fra den definition af standardforældelsesperiode, som er angivet i parametrene. Du kan ændre den ved hjælp af menuen Indsaml.  
 
