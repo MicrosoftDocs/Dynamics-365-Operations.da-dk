@@ -1,118 +1,83 @@
 ---
-title: Konfigurere containerlogik
-description: Denne procedure beskriver, hvordan du automatiserer containeriseringen af laster i Lagerstedsstyring.
+title: Konfigurere containerisering
+description: Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lokationsstyring.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/19
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 56fc6adc2a0eeb5b824089ff4b1b781f3a99a34c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ba435ee145a8516391d7864bdfe338b0f3862f49
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558050"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1847201"
 ---
-# <a name="set-up-containerization"></a>Konfigurere containerlogik
+# <a name="set-up-containerization"></a>Konfigurere containerisering
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure beskriver, hvordan du automatiserer containeriseringen af laster i Lagerstedsstyring. Automatiseret containerisering opretter containere og plukker arbejde for leverancer, når en bølge behandles og arbejdslinjer kan opdeles i mængder, der passer til containerne. Det gør det lettere for lagermedarbejdere at plukke varer direkte i den valgte container. Sammenlignet med den manuelle pakningsproces, udføres opgaver såsom oprettelse af containere, tildeleling af varer og lukning af containere automatisk af systemet. Denne procedure bruger USMF-demofirmaet og udføres af en lagerchef.
+Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lokationsstyring. Automatiseret containerisering opretter containere og plukker arbejde for leverancer, når en bølge behandles og arbejdslinjer kan opdeles i mængder, der passer til containerne. Det gør det lettere for lagermedarbejdere at plukke varer direkte i den valgte container. Sammenlignet med den manuelle pakningsproces, udføres opgaver såsom oprettelse af containere, tildeleling af varer og lukning af containere automatisk af systemet. Denne procedure bruger USMF-demofirmaet og udføres af en lagerchef.
 
 
 ## <a name="set-up-a-wave-template"></a>Konfigurere en bølgeskabelon
-1. Gå til Lagerstedsstyring > Konfiguration > Bølger > Bølgeskabeloner.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Bølgeskabelonnavn.
-4. Skriv en værdi i feltet Beskrivelse af bølgeskabelon.
-5. Indtast eller vælg en værdi i feltet Lokation.
-6. Indtast eller vælg en værdi i feltet Lagersted.
-7. Udvid sektionen Metoder.
-    * I vinduet Valgte metoder vises metoderne for den valgte bølgeskabelontype. Bølgeskabelonen skal indeholde containeriseringsmetoden.  
-8. Find og vælg den ønskede post på listen.
-9. Skriv en værdi i feltet Kode for bølgetrin.
-    * Angiv en bølgetrinkode for den tilføjede metode, som kan være en hvilken som helst kode. Det er muligt at tilføje metoden mere end én gang og tildele forskellige bølgetrinkoder. Til dette formål skal du vælge Kan gentages for denne metode på siden Metoder til bølgeproces.  
-10. Klik på Gem.
-11. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Bølger > Bølgeskabeloner**.
+2. Vælg **Ny**.
+3. Indtast en værdi i feltet **Bølgeskabelonnavn**.
+4. Indtast en værdi i feltet **Beskrivelse af bølgeskabelon**.
+5. Indtast eller vælg en værdi i feltet **Sted**.
+6. Indtast eller vælg en værdi i feltet **Lokation**.
+7. Udvid sektionen **Metoder**. I vinduet **Valgte metoder** vises metoderne for den valgte bølgeskabelontype. Bølgeskabelonen skal indeholde containeriseringsmetoden.  
+8. Skriv en værdi i feltet **Kode for bølgetrin**. Angiv en bølgetrinkode for den tilføjede metode, som kan være en hvilken som helst kode. Det er muligt at tilføje metoden mere end én gang og tildele forskellige bølgetrinkoder. Til dette formål skal du vælge **Kan gentages for denne metode** på siden **Metoder til bølgeproces**.  
+9. Vælg **Gem**.
+10. Luk siden.
 
 ## <a name="set-up-a-container-type"></a>Konfigurere en containertype
-1. Gå til Lagerstedsstyring > Konfiguration > Containere > Containertyper.
-    * Du kan definere dine containere på siden Containertyper. Du kan konfiguree containeres fysiske dimensioner, herunder taravægt, maksimal vægt, maksimal volumen, længde, bredde, vægt og højde. I dette eksempel har vi tre forskellige størrelser af bokse.  
-2. Klik på Ny.
-3. Indtast en værdi i feltet Containertypekode.
-4. Angiv et tal i feltet Taravægt.
-5. Angiv et tal i feltet Maksimal vægt.
-6. Angiv et tal i feltet Volumen.
-7. Angiv et tal i feltet Længde.
-8. Indtast et tal i feltet Bredde.
-9. Indtast et tal i feltet Højde.
-10. Skriv en værdi i feltet Beskrivelse.
-11. Klik på Gem.
-12. Klik på Ny.
-13. Indtast en værdi i feltet Containertypekode.
-14. Skriv en værdi i feltet Beskrivelse.
-15. Angiv et tal i feltet Taravægt.
-16. Angiv et tal i feltet Maksimal vægt.
-17. Angiv et tal i feltet Volumen.
-18. Angiv et tal i feltet Længde.
-19. Indtast et tal i feltet Bredde.
-20. Indtast et tal i feltet Højde.
-21. Klik på Gem.
-22. Klik på Ny.
-23. Indtast en værdi i feltet Containertypekode.
-24. Skriv en værdi i feltet Beskrivelse.
-25. Angiv et tal i feltet Taravægt.
-26. Angiv et tal i feltet Maksimal vægt.
-27. Angiv et tal i feltet Volumen.
-28. Angiv et tal i feltet Længde.
-29. Indtast et tal i feltet Bredde.
-30. Indtast et tal i feltet Højde.
-31. Klik på Gem.
-32. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Bølger > Container > Containertyper**. Du kan definere dine containere på siden **Containertyper**. Du kan konfiguree containeres fysiske dimensioner, herunder taravægt, maksimal vægt, maksimal volumen, længde, bredde, vægt og højde. I dette eksempel har vi tre forskellige størrelser af bokse.  
+2. Vælg **Ny**.
+3. Indtast en værdi i feltet **Containertypekode**.
+4. Angiv et tal i feltet **Taravægt**.
+5. Angiv et tal i feltet **Maksimal vægt**.
+6. Angiv et tal i feltet **Volumen**.
+7. Angiv et tal i feltet **Længde**.
+8. Indtast et tal i feltet **Bredde**.
+9. Indtast et tal i feltet **Højde**.
+10. Indtast en værdi i feltet **Beskrivelse**.
+11. Vælg **Gem**.
+13. Gentag trin 2-11 to gange mere for at oprette tre containertyper i alt.
+14. Luk siden.
 
 ## <a name="set-up-a-container-group"></a>Konfigurere en containergruppe
-1. Gå til Lagerstedsstyring > Konfiguration > Containere > Containergrupper.
-2. Klik på Ny.
-    * Du kan konfigurere logiske grupper af containertyper. For hver gruppe kan du angive den rækkefølge, i hvilken du skal pakke containerne, og hvor meget containerne skal fyldes op i procent. Varens størrelsesdimensioner bruges til at bestemme, om den kan være i en container. Den container, der er tættest på varens størrelsesdimension, bruges. Hvis du har flere containertyper i en gruppe, anbefaler vi, at du arrangerer rækkefølgen efter størrelse, så den største container er først, nummer 1 i rækkefølgen, og den mindste container er sidst.    
-3. Skriv en værdi i feltet Containergruppe-id.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Klik på Ny.
-6. Markér den valgte række på listen.
-7. Indtast eller vælg en værdi i feltet Containertype.
-8. Klik på Ny.
-9. Markér den valgte række på listen.
-10. Indtast eller vælg en værdi i feltet Containertype.
-11. Klik på Ny.
-12. Markér den valgte række på listen.
-13. Indtast eller vælg en værdi i feltet Containertype.
-14. Klik på Gem.
-15. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Bølger > Container > Containergrupper**.
+2. I handlingsruden skal du vælge **Ny**. Du kan konfigurere logiske grupper af containertyper. For hver gruppe kan du angive den rækkefølge, i hvilken du skal pakke containerne, og hvor meget containerne skal fyldes op i procent. Varens størrelsesdimensioner bruges til at bestemme, om den kan være i en container. Den container, der er tættest på varens størrelsesdimension, bruges. Hvis du har flere containertyper i en gruppe, anbefaler vi, at du arrangerer rækkefølgen efter størrelse, så den største container er først, nummer 1 i rækkefølgen, og den mindste container er sidst.    
+3. Skriv en værdi, du tidligere har oprettet, i feltet **Containergruppe-ID**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Gentag trin 2-4 for alle tre containertyper, du oprettede tidligere.
+6. Vælg **Gem**.
+7. Luk siden.
 
 ## <a name="set-up-a-container-build-template"></a>Konfigurere en containerbuildskabelon
-1. Gå til Lagerstedsstyring > Konfiguration > Containere > Skabeloner til container-build.
-2. Klik på Ny.
-    * Skabelonen til container-build er baseret på, hvilke af containeriseringsprocesserne der udføres. Hver skabelon til container-build definerer en containeriseringsproces, der vil blive brugt af en bølgeskabelon. Indstillingen Rediger forespørgsel giver dig mulighed at definere de betingelser, som den valgte skabelon vil blive behandlet under. For eksempel kan du kun køre containerisering for bestemte kunder, produkter eller lagersteder, eller du kan tilføje de tilsvarende forespørgselsområder til skabelonen. Feltet Bølgetrinkode viser, hvordan en skabelon til container-build er knyttet til trinnene i en bølgeskabelon. Når der udføres en bølge, bestemmer den, hvilke skabeloner til container-build der bruges til at starte containeriseringen. Feltet Basisforespørgselstype bestemmer, hvad der skal pakkes, og hvad filterforespørgslen skal baseres på.  
-3. Markér den valgte række på listen.
-4. Skriv en værdi i feltet Containerskabelon-id.
-5. Indtast eller vælg en værdi i feltet Containergruppe-id.
-6. Skriv en værdi i feltet Kode for bølgetrin.
-7. Markér afkrydsningsfeltet Tillad opdeling af plukninger.
-8. Klik på Gem.
-9. Klik på Begrænsninger i containerblanding.
-    * Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer feltet Varenummer, når varer tildeles containere, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
-10. Klik på Ny.
-11. Vælg en indstilling i feltet Tabel.
-12. Indtast eller vælg en værdi i feltet Valg af felt.
-13. Klik på OK.
+1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Bølger > Container > Skabeloner til containerbygning**.
+2. Vælg **Ny**. Skabelonen til container-build er baseret på, hvilke af containeriseringsprocesserne der udføres. Hver skabelon til container-build definerer en containeriseringsproces, der vil blive brugt af en bølgeskabelon. Indstillingen **Rediger forespørgsel** giver dig mulighed at definere de betingelser, som den valgte skabelon vil blive behandlet under. For eksempel kan du kun køre containerisering for bestemte kunder, produkter eller lagersteder, eller du kan tilføje de tilsvarende forespørgselsområder til skabelonen. Feltet **Bølgetrinkode** viser, hvordan en skabelon til containerbygning er knyttet til trinnene i en bølgeskabelon. Når der udføres en bølge, bestemmer den, hvilke skabeloner til container-build der bruges til at starte containeriseringen. Feltet Basisforespørgselstype bestemmer, hvad der skal pakkes, og hvad filterforespørgslen skal baseres på. 
+3. Skriv en værdi i feltet **Containerskabelon-ID**.
+4. Indtast eller vælg en værdi i feltet **Containergruppe-ID**.
+5. Skriv en værdi i feltet **Kode for bølgetrin**.
+6. Markér afkrydsningsfeltet **Tillad opdeling af plukninger**.
+7. Vælg **Gem**.
+8. Klik på **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt**, når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
+9. Vælg **Ny**.
+10. Vælg en indstilling i feltet **Tabel**.
+11. Indtast eller vælg en værdi i feltet **Valg af felt**.
+12. Vælg **OK**.
 

@@ -3,7 +3,7 @@ title: Fjernede eller frarådede funktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624901"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863377"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller forældede funktioner
 
@@ -40,10 +40,32 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 med platformsopdatering 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 med platformsopdatering 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 med platformsopdatering 28 er tilgængelig for brugere i målgruppen som en del af en eksempelversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om frigivelser af eksempelversioner her: [Tilgængelighed af tjenesteopdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 med platformsopdatering 29 er tilgængelig for brugere i målgruppen som en del af en eksempelversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om frigivelser af eksempelversioner her: [Tilgængelighed af tjenesteopdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="us-payroll-tax-updates"></a>Opdateringer til amerikansk lønskat
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Opdateringer til funktionen Løn i USA udgår på grund af lav brug og forbedrede funktioner, der nu tilbydes via strategiske integrationer.  |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Løn |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Senest 1. oktober 2021 har vi planer om ikke længere at levere skatteopdateringer til kunder med amerikansk løn. Funktionaliteten forbliver i produktet, men forbedringer vil ikke længere holde funktionaliteten opdateret, og eventuelle produktfejl vil blive evalueret fra sag til sag. Du finder flere oplysninger under [Skatteopdateringer udgår for funktionen Løn i USA i Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### <a name="data-management-staging-clean-up"></a>Gradvis oprydning af datastyring
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Opfylder ikke de kernekrav, der er nødvendige for at planlægge periodisk oprydning. |
+| **Erstattet af en anden funktion?**   | Ja, funktionen Oprydning i jobhistorik bliver tilføjet for at opfylde scenarierne holistisk. |
+| **Produktområder, der er berørt**         | Datastyring |
+| **Installationsindstilling**              | Alt  |
+| **Status**                         | Udfasning: den fastsatte tidsramme for funktioner, der skal fjernes, er december 2020. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 med platformsopdatering 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Frankrig: Eksport af FEC-regnskabsdata i XML-format
 
@@ -1235,7 +1257,7 @@ Med webstedstjenester kan du opbygge websteder, der udvider dine forretningsproc
 
 ### <a name="virtual-company-accounts"></a>Virtuelle regnskaber
 
-Funktionen til virtuelle regnskaber understøttes ikke længere i Dynamics AX. Funktionen til virtuelle regnskaber gør det muligt for brugere at oprette tabeller, der skulle deles med en række regnskaber. Du kan finde en beskrivelse af funktionen her: [Regnskaber og virtuelle regnskaber](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Funktionen fungerer ved at gruppere tabeller i samlinger, der er tildelt til virtuelle regnskaber, som er grupper af eksisterende "reelle" regnskaber. Forespørgsler oprettes, så alle regnskaber i det virtuelle regnskab kan få adgang til dataene i tabellerne i de tilknyttede tabelsamlinger.
+Funktionen til virtuelle regnskaber understøttes ikke længere i Dynamics AX. Funktionen til virtuelle regnskaber gør det muligt for brugere at oprette tabeller, der skulle deles med en række regnskaber. Du kan finde en beskrivelse af funktionen her: [Regnskaber og virtuelle regnskaber](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funktionen fungerer ved at gruppere tabeller i samlinger, der er tildelt til virtuelle regnskaber, som er grupper af eksisterende "reelle" regnskaber. Forespørgsler oprettes, så alle regnskaber i det virtuelle regnskab kan få adgang til dataene i tabellerne i de tilknyttede tabelsamlinger.
 
 |   |  | 
 |------------|--------------------|

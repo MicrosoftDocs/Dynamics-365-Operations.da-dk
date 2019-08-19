@@ -3,7 +3,7 @@ title: Oversigt over funktionsstyring
 description: Dette emne beskriver funktionen Administration af funktioner, og hvordan du kan bruge den.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632047"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862932"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Funktioner tilføjes og opdateres i alle versioner af Microsoft Dynamics 365 for Finance and Operations. Administration af funktioner indeholder et arbejdsområde, hvor du kan få vist en liste over de funktioner, der er leveret i hver version. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem.
 
@@ -38,7 +39,7 @@ Du kan åbne arbejdsområdet **Administration af funktioner** ved at vælge det 
 Funktionslisten indeholder følgende oplysninger:
 
 - **Funktionsnavn** – En beskrivelse af den funktion, der blev tilføjet.
-- **Aktiveret status** – Et symbol angiver, om en funktion er slået til (markeret), ikke er slået til (ikke markeret), er planlagt til at blive slået til (ur) eller bliver slået til obligatorisk (lås). Den indstilling, der vises her, bruges til alle juridiske enheder. Bemærk, at selv når en funktion er slået til, styres den stadig af sikkerhed. Derfor er funktionen kun tilgængelig for brugere, der har adgang til den, baseret på brugernes sikkerhedsrolle. Den vil også kun være tilgængelig i juridiske enheder, som brugeren har adgang til.
+- **Aktiveret status** – Et symbol angiver, om en funktion er slået til (markeret), ikke er slået til (tom), er planlagt til at blive slået til (ur), er slået til obligatorisk (lås), kræver handling, før du slår den til (advarsel), eller ikke kan aktiveres (X). Den indstilling, der vises, bruges til alle juridiske enheder. Bemærk, at selv når en funktion er slået til, styres den stadig af sikkerhed. Derfor er funktionen kun tilgængelig for brugere, der har adgang til den, baseret på brugernes sikkerhedsrolle. Den vil også kun være tilgængelig i juridiske enheder, som brugeren har adgang til.
 - **Aktiveringsdato** – Den dato, hvor funktionen blev slået til eller er planlagt til at blive slået til.
 - **Tilføjelse af funktion** – Den dato, hvor funktionen blev føjet til dit miljø. Denne dato angives automatisk, når du opdaterer dit miljø under de månedlige frigivelsescyklusser.
 - **Modul** – Det modul, der påvirkes af den nye funktion.
@@ -59,6 +60,10 @@ Hvis en funktion ikke er slået til, vises knappen **Aktiver nu** i detaljeruden
 - Vælg den funktion, du vil slå til, og vælg derefter **Aktiver nu** i detaljeruden. Funktionen slås til.
 
 Nogle funktioner kan ikke slås fra, når du har slået dem til. Hvis den funktion, du forsøger at slå til, ikke kan slås fra, får du vist en advarsel. På dette tidspunkt kan du vælge **Annuller** for at annullere handlingen og lade funktionen være slået fra. Hvis du vælger **Aktiver** for at slå funktionen til, kan du dog ikke slå den fra senere.
+
+Nogle funktioner viser en meddelelse, der indeholder yderligere oplysninger, før du aktiverer dem. Disse funktioner er angivet med et gult advarselssymbol. Du bør læse de yderligere oplysninger omhyggeligt for bedre at forstå, hvad der vil ske, når funktionen er aktiveret. Du kan dog stadig vælge **Aktivér** for at aktivere funktionen.
+
+Nogle funktioner viser en meddelelse om, at funktionen ikke kan aktiveres, før der er foretaget en handling. Disse funktioner er angivet med et rødt X-symbol. Du skal foretage de handlinger, der er anført i beskrivelsen, før funktionen aktiveres. Hvis du for eksempel ikke kan bruge en funktion, før en konfigurationsnøgle er deaktiveret, skal du først deaktivere konfigurationsnøglen og derefter vende tilbage til funktionsstyring for at aktivere funktionen.
 
 Når en funktion er slået til, vises der en meddelelse under linket **Få mere at vide** i detaljeruden. Denne meddelelse angiver enten, at funktionen er slået til, eller angiver den fremtidige dato, hvor funktionen er planlagt til at blive slået til. Meddelelsen vises, hver gang du vælger funktionen på funktionslisten.
 
@@ -84,12 +89,28 @@ Når en funktion er slået fra, vises der en meddelelse under linket **Få mere 
 
 Sommetider findes der en vigtig funktion, som skal slås til automatisk, når du foretager en opdatering. Disse funktioner aktiveres automatisk på den dato, der er angivet i feltet **Aktiveringsdato**. For disse funktioner vises der en meddelelse under linket **Få mere at vide** i detaljeruden. Denne meddelelse angiver enten, at funktionen er slået til, eller angiver den fremtidige dato, hvor funktionen bliver slået til. Meddelelsen vises, hver gang du vælger funktionen på funktionslisten.
 
+## <a name="enable-all-features"></a>Aktivere alle funktioner
+
+Alle de funktioner, der føjes til dit miljø, er som standard slået fra. Du kan aktivere alle funktioner ved at vælge knappen **Aktivér alle**. 
+
+Når du vælger **Aktivér alle**, vises en indstilling, hvor du skal angive følgende oplysninger:
+- En liste over alle funktioner, der kræver bekræftelse, før de kan aktiveres. Hvis du vil aktivere funktionerne på listen, skal du vælge **Ja** for knappen **Aktivér funktioner, der kræver bekræftelse**.
+- Der vises en liste over alle funktioner, der ikke kan aktiveres. Disse funktioner vil ikke blive aktiveret.
+
+Alle funktioner, der kan aktiveres, vil blive aktiveret. Hvis en funktion allerede er planlagt til at blive aktiveret i fremtiden, vil tidsplanen ikke blive ændret. 
+
 ## <a name="turn-on-all-features-automatically"></a>Aktivere alle funktioner automatisk
 
 Alle de funktioner, der føjes til dit miljø, er som standard slået fra, medmindre de er obligatoriske funktioner. Men hvis du automatisk vil aktivere alle nye funktioner, kan du bruge rullelisten under titlen på arbejdsområdet til at ændre, hvad der sker, når der tilføjes nye funktioner.
 
 - Vælg **Alle nye funktioner aktiveres som standard**, så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
 - Vælg **Alle nye funktioner deaktiveres som standard**, så alle nye funktioner automatisk deaktiveres, når de føjes til miljøet.
+
+Når du aktiverer alle funktionerne automatisk, aktiveres alle de funktioner, der vil blive aktiveret, når du klikker på knappen **Aktivér alle**. Det vil ikke aktivere de funktioner, der kræver bekræftelse, eller de funktioner, der ikke kan aktiveres, før en handling er udført.
+
+## <a name="check-for-updates"></a>Søg efter opdateringer
+
+Funktioner føjes til dit miljø efter hver opdatering. Du kan dog manuelt søge efter opdateringer ved at klikke på knappen **Søg efter opdateringer**. Enhver funktion, der blev føjet til systemet efter opdateringen, vil blive føjet til listen over funktioner. Hvis en tilgængelig funktion er aktiveret efter en udgivelse, kan du søge efter opdateringer, så funktionen vil blive føjet til din liste.
 
 ## <a name="assigning-roles"></a>Tildeling af roller
 

@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e704c27d7cea658be6fa06cc078488b0d5a3b0dc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548760"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848489"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-indhold til Frynsegoder
 
@@ -43,7 +43,7 @@ De rapporter, der er inkluderet i Power BI-indholdet til **Frynsegoder**, har b�
 | Oversigt over tilmelding til frynsegoder | De fleste og færreste tilmeldte planer, tilmelding efter medarbejdergruppe og bestemte frynsegodeplanindstillinger |
 | Medarbejderfrynsegoder           | Medarbejdertilmeldning efter valgt frynsegode                                                        |
 
-Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Følgende data bruges til at udfylde rapporterne i Power BI-indhold til **Frynsegoder**. Denne tabel viser de enheder, som indholdet er baseret på.

@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702766"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835136"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-indhold til styring af kredit og inkasso
 
@@ -72,4 +72,4 @@ Power BI-indholdet **CustCollectionsBICrossCompany** omfatter en rapport, der be
 | Rykkerstatus          | <ul><li>Bestridt</li><li>Brudt betalingsløfte</li><li>Lover at betale</li><li>Oplysninger om rykkerstatus</li><li>Rykkerstatusbeløb</li><li>Åbne sager</li><li>Åbne aktiviteter</li></ul> |
 | Rykkere         | <ul><li>Rykkerkodebeløb</li><li>Oplysninger om rykkerkodebeløb</li><li>Rykkerbeløb pr. firma</li><li>Rykkerbeløb pr. kundegruppe</li><li>Rykkerbeløb pr. område</li></ul> |
 
-Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruge funktionen til eksport af underliggende data til at eksportere underliggende data, der opsummeres i en visuel effekt.
+Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruge funktionen til eksport af underliggende data til at eksportere underliggende data, der opsummeres i en visuel effekt.

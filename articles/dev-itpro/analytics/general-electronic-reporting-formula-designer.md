@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625866"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849503"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -215,12 +215,12 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 | TODAY () | Returner aktuel Finance and Operations-dato og -klokkeslæt på programserver som en datoværdi. | |
 | NULLDATE () | Returner en **null**-datoværdi. | |
 | NULLDATETIME () | Returner en **null**-værdi for dato/klokkeslæt. | |
-| DATETIMEFORMAT (datetime, format) | Konverter den angivne dato-/klokkeslætværdi til en streng i det angivne format. (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerer den aktuelle Finance and Operations-programserverdato, 24. december 2015, som **"24-12-2015"**, baseret på det angivne brugerdefinerede format. |
-| DATETIMEFORMAT (datetime, format, kultur) | Konverter den angivne dato-/klokkeslætværdi til en streng i det angivne format og den angivne [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returnerer den aktuelle Finance and Operations-programserverdato, 24. december 2015, som **"24.12.2015"**, i henhold til den valgte tyske kultur. |
+| DATETIMEFORMAT (datetime, format) | Konverter den angivne dato-/klokkeslætværdi til en streng i det angivne format. (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerer den aktuelle Finance and Operations-programserverdato, 24. december 2015, som **"24-12-2015"**, baseret på det angivne brugerdefinerede format. |
+| DATETIMEFORMAT (datetime, format, kultur) | Konverter den angivne dato-/klokkeslætværdi til en streng i det angivne format og den angivne [kultur](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returnerer den aktuelle Finance and Operations-programserverdato, 24. december 2015, som **"24.12.2015"**, i henhold til den valgte tyske kultur. |
 | SESSIONTODAY () | Returner den aktuelle Finance and Operations-sessionsdato som en datoværdi. | |
 | SESSIONNOW () | Returner dato og klokkeslæt for den aktuelle Finance and Operations-session som en dato-/klokkeslætsværdi. | |
 | DATEFORMAT (dato, format) | Returner en strenggengivelse af den angivne dato i det angivne format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returnerer den aktuelle Finance and Operations-sessionsdato, 24. december 2015, som **"24-12-2015"**, baseret på det angivne brugerdefinerede format. |
-| DATEFORMAT (dato, format, kultur) | Konverter den angivne datoværdi til en streng i det angivne format og den angivne [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerer den aktuelle Finance and Operations-sessionsdato, 24. december 2015, som **"24.12.2015"**, i henhold til den valgte tyske kultur. |
+| DATEFORMAT (dato, format, kultur) | Konverter den angivne datoværdi til en streng i det angivne format og den angivne [kultur](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerer den aktuelle Finance and Operations-sessionsdato, 24. december 2015, som **"24.12.2015"**, i henhold til den valgte tyske kultur. |
 | DAYOFYEAR (dato) | Returnerer en heltalsrepræsentation af antallet af dage mellem 1. januar og den angivne dato. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returnerer **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returnerer **1**. |
 | DAYS (dato 1, dato 2) | Returnere antallet af dage mellem den første angivne dato og den anden angivne dato. Returnerer en positiv værdi, når den første dato er senere end den anden dato, returnerer **0** (nul), når den første dato er lig med den anden dato eller returnerer en negativ værdi, når den første date er før den anden dato. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returnerer **-1**. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (tal, format)</td>
-<td>Returner en strenggengivelse af det angivne tal i det angivne format. (Oplysninger om understøttede formater finder du under <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> og <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">brugerdefinerede</a>.) Konteksten, som denne funktion køres i, bestemmer den kultur, der bruges til at formatere tal.</td>
+<td>Returner en strenggengivelse af det angivne tal i det angivne format. (Oplysninger om understøttede formater finder du under <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">standard</a> og <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">brugerdefinerede</a>.) Konteksten, som denne funktion køres i, bestemmer den kultur, der bruges til at formatere tal.</td>
 <td>For den amerikanske kultur vil <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returnere <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returnerer <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (tal, format, kultur)</td>
-<td>Returner en strengrepræsentation af det angivne tal i det angivne format og den angivne kultur. (Oplysninger om understøttede formater finder du under <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">standard</a> og <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">brugerdefineret</a>.)</td>
+<td>Returner en strengrepræsentation af det angivne tal i det angivne format og den angivne kultur. (Oplysninger om understøttede formater finder du under <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">standard</a> og <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">brugerdefineret</a>.)</td>
 <td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> returnerer <strong>3,33</strong>, mens <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> returnerer <strong>3.33</strong>.</td>
 </tr>
 <tr>

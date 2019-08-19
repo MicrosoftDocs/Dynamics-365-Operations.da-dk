@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 19891
 ms.search.region: France
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf70c9dace0a1e8239ae9964eed853244c7c38e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9394d0678f9a88995b53e80337d5832ddcb7a2ba
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547163"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852243"
 ---
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a>Indkøb og forsyning i den offentlige sektor i Frankrig
 

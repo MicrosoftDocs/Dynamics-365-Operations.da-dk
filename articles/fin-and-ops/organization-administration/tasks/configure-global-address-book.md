@@ -3,25 +3,25 @@ title: Konfiguration af den globale adressebog
 description: Brug denne procedure til at angive standardværdier og sikkerhedspolitikker for det globale adressekartotek.
 author: kfend
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/23/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirParameters
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 230d3c089189ddb6186bc2ca4b647b8ad5b003ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3994c7bb77e9821a880dc009681e113013129850
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545679"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851863"
 ---
 # <a name="configure-the-global-address-book"></a>Konfiguration af den globale adressebog
 
@@ -31,19 +31,18 @@ Brug denne procedure til at angive standardværdier og sikkerhedspolitikker for 
 
 Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave er beregnet til planlægnings- og konfigurationsteamet.
 
-1. Gå til Virksomhedsadministration > Globalt adressekartotek > Parametre for globalt adressekartotek.
-2. Vælg, hvordan navne skal vises, i feltet Navnerækkefølge.
-3. Vælg, om du vil slette de parter, der ikke har fået tildelt en rolle.
-4. Vælg, om der skal søges efter dublerede poster.
-5. Vælg, om DUNS-nummeret skal vises på adresser.
-6. Vælg, om der skal søges efter entydige DUNS-numre.
-7. Vælg en indstilling i feltet Part.
-8. Vælg en indstilling i feltet Kunde.
-9. Vælg en indstilling i feltet Kreditor.
-10. Vælg en indstilling i feltet Kundeemne.
-11. Vælg en indstilling i feltet Konkurrent.
-12. Klik på fanen Sikkerhed for privat lokation.
-13. Find og vælg den ønskede post på listen.
-    * Tryk på tasten Skift for at vælge flere roller, der skal føjes til ruden Valgte roller, og klik derefter på pilen for at føje til de valgte roller.  
-14. Klik på Gem.
+1. Gå i navigationsruden til **Moduler > Organisationsadministration > Globalt adressekartotek > Parametre for globalt adressekartotek**.
+2. Vælg, hvordan navne skal vises, i feltet **Navnerækkefølge**.
+3. I **Slet parter uden roller**skal du vælge, om du vil slette parter, der ikke har fået tildelt en rolle.
+4. I **Anvend dobbeltkontrol** skal du vælge, om du vil kontrollere for dublerede poster.
+5. I **Vis DUNS-nummer på adresser** skal du vælge, om DUNS-nummeret skal vises på adresser.
+6. I **Kontrollér for entydigt DUNS-nummer** skal du vælge, om du vil kontrollere for entydige DUNS-numre.
+7. Vælg en indstilling i feltet **Part**.
+8. Vælg en indstilling i feltet **Kunde**.
+9. Vælg en indstilling i feltet **Leverandør**.
+10. Vælg en indstilling i feltet **Kundeemne**.
+11. Vælg en indstilling i feltet **Konkurrent**.
+12. Klik på fanen **Sikkerhed for privat lokation**.
+13. Find og vælg den ønskede post på listen. Tryk på tasten Skift for at vælge flere roller, der skal føjes til ruden **Valgte roller**, og klik derefter på pilen for at tilføje de valgte roller.  
+14. Klik på **Gem**.
 

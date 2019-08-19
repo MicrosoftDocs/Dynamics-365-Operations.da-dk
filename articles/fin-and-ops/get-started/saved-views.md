@@ -3,13 +3,12 @@ title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,17 +16,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: ea2f2dbd615480bb76e1d04a106ae69bf6f45f4b
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620772"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863054"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Introduktion
 Personlig tilpasning spiller en vigtig rolle, når brugere og organisationer skal have mulighed for at optimere brugeroplevelsen i Microsoft Dynamics 365 for Finance and Operations, så den opfylder deres behov. Du kan finde oplysninger om brugertilpasning i [Tilpasse brugeroplevelsen](personalize-user-experience.md).
@@ -49,13 +48,13 @@ Visningsvælgeren har to størrelsesvariationer:
 
 -   **Store visningsvælgere**: Sider, der har en tydelig liste, har en større visningsvælger af forskellige årsager. Den vigtigste er, at den store visningsvælger angiver de sider, hvor visningen kan indeholde brugerdefinerede filtre. Der indgår filtre i visningerne, og derfor er den største vælger også påkrævet, fordi visningsnavnene ofte er den bedste beskrivelse af de data, der vises på skærmen, og forventningen er, at brugerne skifter mellem visninger ofte på disse sidetyper.  
  
--   **Små visningsvælgere**: Alle andre formularer med fuld sidevisning har en mindre visningsvælger, der vises ved siden af sideteksten. Visningerne på disse sider indeholder kun tilpasninger (og ikke brugerdefinerede filtre). På disse sider er formularteksten eller posttitlen ofte de vigtigste oplysninger øverst i formularen. Den mindre størrelse afspejler også en lavere forventet frekvens for skift af visninger på disse sider. 
+-   **Små visningsvælgere**: alle andre formularer i fuld størrelse (med undtagelse af arbejdsområder og dashboardet) har en mindre visningsvælger, der vises ud for sidens billedtekst. Visningerne på disse sider indeholder kun tilpasninger (og ikke brugerdefinerede filtre). På disse sider er formularteksten eller posttitlen ofte de vigtigste oplysninger øverst i formularen. Den mindre størrelse afspejler også en lavere forventet frekvens for skift af visninger på disse sider. 
  
 Hvis du klikker på visningsnavnet, åbnes visningsvælgeren med listen over tilgængelige visninger for denne side.
 
 -    **Klassisk visning**: Den klassiske visning er out-of-the-box-visningen af siden, hvor der ikke er anvendt eksplicitte brugertilpasninger.  
 -    **Personlige visninger**: Visningerne uden hængelåse repræsenterer dine personlige visninger. Dette er visninger, som enten du har oprettet, eller som er tildelt af en administrator.  
--    **Låste visninger**: Nogle visninger (som f.eks. klassisk visning og visninger, der måtte være udgivet til din rolle) har en hængelås i visningsvælgeren som tegn på, at de ikke kan redigeres. Implicitte tilpasninger i forbindelse med brug af siden gemmes dog automatisk, f.eks. når bredden af en gitterkolonne ændres, eller et oversigtspanel udvides eller skjules. Du kan dog oprette en personlig visning, der er baseret på en låst visning, ved hjælp af handlingen **Gem en kopi**, hvis du har rettigheder til personlige indstillinger.
+-    **Låste visninger**: Nogle visninger (som f.eks. klassisk visning og visninger, der måtte være udgivet til din rolle) har en hængelås i visningsvælgeren som tegn på, at de ikke kan redigeres. Implicitte tilpasninger, som afspejler sidens anvendelse, gemmes dog automatisk, f.eks. når bredden af en gitterkolonne ændres, eller et oversigtspanel udvides eller skjules. Du kan dog oprette en personlig visning, der er baseret på en låst visning, ved hjælp af handlingen **Gem en kopi**, hvis du har rettigheder til personlige indstillinger.
 -    **Nye visninger**: Publicerede visninger, der endnu ikke er åbnet, er afgrænset med et spark til venstre for visningsnavnet.  
 
 Hvis du vil skifte til en anden visning, skal du først åbne visningsvælgeren og derefter vælge den visning, du vil indlæse. 
@@ -75,7 +74,7 @@ Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
      3.    Vælg **Gem**.
 
 ## <a name="changing-the-default-view"></a>Ændre standardvisningen
-Standardvisningen er den visning, som systemet vil forsøge at åbne, første gang du navigerer til siden. Du skal indstille dette til den visning, du forventer at bruge ofte.  
+Standardvisningen er den visning, som systemet vil forsøge at åbne, første gang du navigerer til siden. Du skal indstille dette til den visning, du forventer at bruge oftest.  
 
 For at ændre standardvisningen for en side skal du følge disse trin: 
 1.  Skift til den visning, du bruger som standard. 
@@ -100,14 +99,14 @@ De ændringer, der er foretaget i denne dialogboks, træder i kraft, når du væ
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige indstillinger på organisationsniveau med visninger
 For at forstå forbedringerne af administrationen af personlige indstillinger på et organisationsniveau skal du først se på, hvordan administration af personlige indstillinger fungerede før visninger.  
 
-Uden visninger skulle administratorer anvende et sæt tilpasninger for en side på en bruger, en gruppe af brugere eller brugere, der bruger formularen Brugertilpasning. Hvis disse brugere havde rettigheder til at tilpasse personlige indstillinger, blev tilpasningerne anvendt på den pågældende side. Men der var ikke nogen mulighed for at forhindre brugerne i at tilpasse siden yderligere, hvilket betød, at organisationen ikke kunne sikre, at brugerne havde en ensartet brugergrænseflade. Hvis nogen af disse brugere ikke havde rettigheder til personlig tilpasning, blev de tilpasninger, som de fik af en administrator, ikke indlæst. Hvis der desuden blev ansat nye brugere i en organisation, skulle administratorer manuelt indlæse et sæt tilpasninger for brugeren. Der var ikke nogen automatisk mekanisme til angivelse af et bestemt sæt tilpasninger, der skulle være tilgængeligt for den pågældende bruger.
+Uden visninger skulle administratorer anvende et sæt tilpasninger på en side for en bruger, en gruppe af brugere via siden Tilpasning. Hvis disse brugere havde rettigheder til at tilpasse personlige indstillinger, blev tilpasningerne anvendt på den pågældende side. Men der var ikke nogen mulighed for at forhindre brugerne i at tilpasse siden yderligere, hvilket betød, at organisationen ikke kunne sikre, at brugerne havde en ensartet brugergrænseflade. Hvis nogen af disse brugere ikke havde rettigheder til personlig tilpasning, blev de tilpasninger, som de fik af en administrator, ikke indlæst. Hvis der desuden blev ansat nye brugere i en organisation, skulle administratorer manuelt indlæse et sæt tilpasninger for brugeren. Der var ikke nogen automatisk mekanisme til angivelse af, at et bestemt sæt tilpasninger skulle være tilgængeligt for brugere i den pågældende rolle.
 
 Med funktionen Gemte visninger er det væsentligt lettere at administrere tilpasninger, primært på grund af muligheden for at publicere visninger til sikkerhedsroller. Når en visning er publiceret, kan alle brugere med den pågældende rolle kan få adgang til visningen og bruge den, uanset brugerens øvrige tilpasningsmuligheder. Hver bruger har en kopi af den publicerede visning, hvor brug af siden (implicitte tilpasninger) automatisk anvendes, og ingen bruger kan gemme eksplicitte tilpasninger eller opdateringer af forespørgslen i den publiceret visning (dvs. at publicerede visninger er låst). Hvis nye brugere derudover får tildelt en rolle, som visningen er publiceret til, får de automatisk vist de visninger, der er knyttet til deres rolle, uden administratorhandlinger. Hvis en bruger ændrer roller i en organisation, vil de visninger, der er knyttet til vedkommendes gamle rolle, ikke længere være tilgængelige for dem. Også dette sker uden administratorhandlinger. Opdateringer til en publiceret visning kan let distribueres til brugere ved igen at publicere visningen til de relevante sikkerhedsroller.
 
 Publiceringsfunktionen giver organisationer mulighed for at definere de standardvisninger i firmaet, der er optimeret til deres virksomhed, målrettet brugere i bestemte sikkerhedsroller.  
 
 ## <a name="publishing-views"></a>Publicere visninger
-Under publiceringsprocessen kan visninger tildeles til en eller flere sikkerhedsroller, hvilket betyder, at alle brugere med den pågældende rolle kan få adgang til og bruge denne visning, men de kan ikke redigere visningen. I øjeblikket er det kun systemadministratorer, der har rettigheder til handlingen **Publicer** i rullemenuen til visningsvælgeren.  
+Under publiceringsprocessen kan visninger tildeles til en eller flere sikkerhedsroller, hvilket betyder, at alle brugere med den pågældende rolle kan få adgang til og bruge denne visning, men de kan ikke redigere visningen. I øjeblikket er det kun systemadministratorer, der har rettigheder til handlingen **Udgiv** i rullemenuen for visningsvælger, men en ny sikkerhedsrolle vil være tilgængelig i en fremtidig opdatering for at give publiceringsrettigheder til andre betroede brugere.  
 
 Følg disse trin for at publicere en visning: 
 1.  Opret og gem en personlig kopi af den visning, du vil publicere. 
@@ -150,14 +149,19 @@ De ændringer, der er foretaget i denne dialogboks, træder i kraft, når knappe
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø? 
-En systemadministrator skal gøre følgende for at aktivere gemte visninger: 
-1.  Gå til siden **Brugertilpasning** ved hjælp af navigationssøgning. 
-2.  Vælg fanen **Indstillinger**.
-3.  Vælg **Ja** i indstillingen **Aktivér gemte visninger**.
+Hvis du vil aktivere gemte visninger, mens funktionen er i eksempelvisning, skal du følge trinnene nedenfor: 
 
-Når denne funktion er aktiveret, starter alle efterfølgende brugersessioner med visninger aktiveret.  
+1.  **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
 
-Bemærk, at hvis brugertilpasning er slået fra for miljøet, aktiveres visningerne, også selvom du følger ovenstående trin. Det skyldes, at visningsfunktionen er bygget oven på tilpasningsundersystemet.
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+
+2.  **Find funktionen**: Naviger til arbejdsområdet **Funktionsstyring**. Hvis **Gemte visninger** ikke fremgår af listen, skal du vælge knappen **Søg efter opdateringer**.   
+
+3.  **Aktivér funktionen**: Find funktionen **Gemte visninger** på listen over funktioner, og klik på knappen **Aktivér nu** i detaljeruden.
+
+Alle efterfølgende brugersessioner vil starte med gemte visninger aktiveret.  
+
+Bemærk, at hvis brugertilpasning er slået fra for miljøet, deaktiveres visningerne, også selvom du følger ovenstående trin. Det skyldes, at visningsfunktionen er bygget oven på tilpasningsundersystemet.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Hvad sker der med eksisterende tilpasninger, når visninger er aktiveret? 
 Når visninger er aktiveret, gemmes eventuelle eksisterende tilpasninger af en bruger og en formular i en ny visning kaldet **Min visning**, der automatisk indstilles som standardvisningen. Formålet med dette er, at der er en ensartet brugeroplevelse, før og efter at visninger aktiveres, bortset fra visningsvælgerkontrolelementet, der vises i formularer.  
@@ -166,7 +170,7 @@ Når visninger er aktiveret, gemmes eventuelle eksisterende tilpasninger af en b
 Visninger er tilgængelige på de fleste men ikke på alle sider i Finance and Operations. Visninger er især aktuelt tilgængelige på alle fuldskærmssider bortset fra dashboards og arbejdsområder. Sider, der ikke vises som fuldskærmssider, og som omfatter dialogbokse, rullelister, opslag, udvidede eksempler, understøtter i øjeblikket heller ikke visninger. Understøttelse af visninger for yderligere sidetyper, f.eks. arbejdsområder og dialogbokse, kan komme i betragtning ved en senere opdatering.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem har tilladelse til at publicere visninger?
-Aktuelt er systemadministratorer de eneste brugere, der har rettigheder til at publicere visninger.  Der planlægges en ny sikkerhedsrolle, som giver kunderne større fleksibilitet mht., hvem der kan publicere.  
+Aktuelt er systemadministratorer de eneste brugere, der har rettigheder til at publicere visninger.  Der planlægges en ny sikkerhedsrolle i en kommende opdatering, som giver kunderne større fleksibilitet mht., hvem der kan publicere.  
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Hvorfor kan jeg ikke gemme filtre i denne visning? 
 Der er flere grunde til, at et filter muligvis ikke kan gemmes med en visning: 
@@ -179,4 +183,4 @@ Der er flere grunde til, at et filter muligvis ikke kan gemmes med en visning:
      
   Du skulle få besked, når visningen indlæses, i sådanne situationer. Du kan også bekræfte ved at skifte til denne visning, når siden er indlæst, fordi visningsforespørgslen skulle kunne udføres under alle omstændigheder.  
 
-- Den pågældende side understøtter muligvis ikke visninger korrekt, da visningsforespørgslen muligvis ignoreres helt. Rapporter alle sådanne forekomster via **Tilbagemelding**-mekanismen. Du kan gå til tilbagemeldingssiden ved at klikke på **Hjælp og support** og derefter **Tilbagemelding**.  
+- Den pågældende side understøtter muligvis ikke visninger korrekt, da den kan ignorere visningsforespørgslen helt eller bruger en midlertidig tabel, hvis data ikke er vedholdende. 

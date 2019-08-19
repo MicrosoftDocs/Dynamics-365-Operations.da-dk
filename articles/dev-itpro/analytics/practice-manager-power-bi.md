@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551665"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850091"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
@@ -54,7 +54,7 @@ Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelt
 | EVM               | Indeks for overholdelse af omkostninger og tidsplaner efter projekt |
 | Timer             | <ul><li>Faktiske fakturerbare udnyttede timer vs faktiske fakturerbare byrdetimer vs budgetterede timer</li><li>Faktiske fakturerbare udnyttede timer vs faktiske fakturerbare byrdetimer efter projekt</li><li>Faktiske fakturerbare udnyttede timer vs faktiske fakturerbare byrdetimer efter ressource</li><li>Faktisk udnyttelsesgrad af fakturerbare timer efter projekt</li><li>Faktisk udnyttelsesgrad af fakturerbare timer efter ressource</li></ul> |
 
-Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruge funktionen Eksporter underliggende data til at eksportere de underliggende data, der opsummeres i en visuel effekt.
+Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruge funktionen Eksporter underliggende data til at eksportere de underliggende data, der opsummeres i en visuel effekt.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 
@@ -62,7 +62,7 @@ Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **P
 
 I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte enheder.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Enhed: ProjectAccountingCube\_ActualHourUtilization
+### <a name="entity-projectaccountingcube_actualhourutilization"></a>Enhed: ProjectAccountingCube\_ActualHourUtilization
 **Datakilde:** ProjEmplTrans
 
 | Samlede nøglemålinger      | Felt                              | Betegnelse |
@@ -70,7 +70,7 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Faktiske fakturerbare udnyttede timer | Sum(ActualUtilizationBillableRate) | Summen af faktiske fakturerbare udnyttede timer. |
 | Faktiske fakturerbare byrdetimer   | Sum(ActualBurdenBillableRate)      | Summen af den faktiske byrdeudnyttelsesgrad. |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Enhed: ProjectAccountingCube\_Actuals
+### <a name="entity-projectaccountingcube_actuals"></a>Enhed: ProjectAccountingCube\_Actuals
 **Datakilde:** ProjTransPosting
 
 | Samlede nøglemålinger | Felt              | Betegnelse |
@@ -78,14 +78,14 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Faktisk omsætning            | Sum(ActualRevenue) | Summen af bogført omsætning for alle posteringer. |
 | Faktisk omkostning               | Sum(ActualCost)    | Summen af posterede omkostninger for alle posteringstyper. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Enhed: ProjectAccountingCube\_Customer
+### <a name="entity-projectaccountingcube_customer"></a>Enhed: ProjectAccountingCube\_Customer
 **Datakilde:** CustTable
 
 | Samlede nøglemålinger | Felt                                             | Betegnelse |
 |---------------------------|---------------------------------------------------|-------------|
 | Antal projekter        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Antal tilgængelige projekter. |
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Enhed: ProjectAccountingCube\_Forecasts
+### <a name="entity-projectaccountingcube_forecasts"></a>Enhed: ProjectAccountingCube\_Forecasts
 **Datakilde:** ProjTransBudget
 
 | Samlede nøglemålinger | Felt                  | Betegnelse |
@@ -94,14 +94,14 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Budgetteret omsætning            | Sum(BudgetRevenue)     | Summen af budgetteret periodiseret/faktureret omsætning. |
 | Budgetteret bruttomargen       | Sum(BudgetGrossMargin) | Forskellen mellem summen af den samlede budgetterede omsætning og summen af de samlede budgetterede omkostninger. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Enhed: ProjectAccountingCube\_ProjectPlanCostsView
+### <a name="entity-projectaccountingcube_projectplancostsview"></a>Enhed: ProjectAccountingCube\_ProjectPlanCostsView
 **Datakilde:** Projekt
 
 | Samlede nøglemålinger | Felt                    | Betegnelse |
 |---------------------------|--------------------------|-------------|
 | Planlagt omkostning              | Sum(SumOfTotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har planlagte opgaver. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Enhed: ProjectAccountingCube\_Projects
+### <a name="entity-projectaccountingcube_projects"></a>Enhed: ProjectAccountingCube\_Projects
 **Datakilde:** Projekt
 
 | Samlede nøglemålinger    | Felt | Betegnelse |
@@ -112,7 +112,7 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Faktisk udnyttelsesgrad af fakturerbare timer  | ProjectAccountingCube\_Projects\[projektets samlede faktiske fakturerbare udnyttede timer\] ÷ (ProjectAccountingCube\_Projects\[projektets samlede faktiske fakturerbare udnyttede timer\] + ProjectAccountingCube\_Projects\[projektets samlede faktiske fakturerbare byrdetimer\]) | Det samlede antal faktiske fakturerbare timer baseret på de udnyttede timer og byrdetimerne. |
 | Optjent værdi                 | ProjectAccountingCube\_Projects\[projektets totale planlagte omkostning\] × ProjectAccountingCube\_Projects\[procentdelen af fuldført arbejde\] | De samlede planlagte omkostninger ganget med procentdelen af fuldført arbejde. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhed: ProjectAccountingCube\_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcube_totalestimatedcosts"></a>Enhed: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakilde:** ProjTable
 
 | Samlede nøglemålinger       | Felt               | Betegnelse |

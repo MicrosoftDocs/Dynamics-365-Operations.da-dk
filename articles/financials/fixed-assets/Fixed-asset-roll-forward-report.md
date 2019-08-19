@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d0f7d63fa0566cfc2a23b3228d687d7f85d848c9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549577"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1840739"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapporten Rul anlægsaktiver fremad
 
@@ -31,7 +31,7 @@ ms.locfileid: "1549577"
 
 Rapporten **Rul anlægsaktiver fremad** indeholder, i et letlæseligt Microsoft Excel-format, de detaljerede data om anlægsaktiver, du har brug for til lukning af periode, regnskaber og skatterapportering. Rapporten omfatter start- og slutsaldi for anlægsaktiver, sammen med værdibevægelser for perioden, og eventuelle nye anskaffelser og salg, der er opstået i løbet af perioden. Data rapporteres for de enkelte anlægsaktiver, og der opsummeres også værdierne for anlægsaktivgrupper og den juridiske enhed.
 
-Rapporten **Rul anlægsaktiver fremad** bruger strukturen til elektronisk rapportering (ER). Før du kan køre rapporten, skal modellen for anlægsaktiver og konfigurationer for fremadrulning af anlægsaktiver importeres fra Microsoft Dynamics Lifecycle Services (LCS). Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+Rapporten **Rul anlægsaktiver fremad** bruger strukturen til elektronisk rapportering (ER). Før du kan køre rapporten, skal modellen for anlægsaktiver og konfigurationer for fremadrulning af anlægsaktiver importeres fra Microsoft Dynamics Lifecycle Services (LCS). Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 Denne rapport er tilgængelig i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, eller som et hotfix til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017). Tre hotfixes, der skal anvendes på miljøer, der har versionen fra juli 2017:
 

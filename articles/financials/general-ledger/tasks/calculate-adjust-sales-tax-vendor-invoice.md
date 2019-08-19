@@ -1,52 +1,46 @@
 ---
 title: Beregne og justere moms på en kreditorfaktura
-description: Hvis det oprindelige kildedokument viser forskellige momsbeløb som beregnet, kan du justere beløbene, før der bogføres.
+description: Dette emne forklarer, hvordan du justerer moms på en kreditorfaktura i Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 803c038d907b68a3c72a83a3e035c4e08b8a8661
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 684529087d5348c9e02310f812f8aa6f64c6655f
+ms.sourcegitcommit: 016832198c306e8329ad21b5254e7d1cdff74c2f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545165"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862608"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Beregne og justere moms på en kreditorfaktura
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Hvis det oprindelige kildedokument viser forskellige momsbeløb som beregnet, kan du justere beløbene, før der bogføres. Denne opgave bruger demofirmaet DEMF.
+Dette emne forklarer, hvordan du justerer moms på en kreditorfaktura i Dynamics 365 for Finance and Operations. Hvis det oprindelige kildedokument viser forskellige momsbeløb som beregnet, kan du justere beløbene, før der bogføres. Denne opgave bruger demofirmaet DEMF.
 
-1. Gå til Kreditor > Fakturaer > Fakturajournal.
-2. Klik på Ny.
-3. Markér den valgte række på listen.
-4. Klik på rullelisten i feltet Navn for at åbne opslaget.
-5. Klik op linket i den valgte række på listen.
-6. Klik på Linjer.
-7. Markér den valgte række på listen.
-8. I feltet Konto skal du specificere de ønskede værdier.
-9. Skriv en værdi i feltet Faktura.
-10. Angiv et tal i feltet Kredit.
-11. I feltet Modkonto skal du specificere de ønskede værdier.
-12. Klik på Moms.
-13. Indtast et tal i feltet Samlede faktiske momsbeløb.
-14. Klik på OK.
-15. Klik på Gem.
-16. Klik på Moms.
-17. Under fanen Regulering kan momsbeløbene justeres pr. momskode
-18. Klik på Nulstil faktiske beløb fra beregnede beløb.
-19. Klik på OK.
-20. Klik på Gem.
+1. Gå til **Moduler > Kreditorer > Fakturaer > Fakturajournal** i navigationsruden.
+2. Vælg **Ny**.
+3. Vælg en indstilling i rullemenuen i feltet **Navn** i den nye række.
+4. Gå til handlingsruden, og vælg **Linjer**.
+5. I feltet **Konto** skal du angive de ønskede værdier.
+6. Skriv en værdi i feltet **Faktura**.
+7. Angiv et tal i feltet **Kredit**.
+8. I feltet **Modkonto** skal du specificere de ønskede værdier.
+9. Vælg **Moms**.
+10. Indtast et tal i feltet **Samlede faktiske momsbeløb**.
+11. Under fanen **Regulering** kan momsbeløbene justeres pr. momskode
+12. Vælg **Nulstil faktiske beløb fra til beregnede beløb**.
+13. Vælg **OK**.
+14. Vælg **Gem**.
 

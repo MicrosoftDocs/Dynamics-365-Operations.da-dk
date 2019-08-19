@@ -1,49 +1,46 @@
 ---
 title: Foreslå anskaffelser af anlægsaktiver
-description: Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden.
+description: I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1891206bb266b126eccfa789b8c8062c9bfa688b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4b35b13dc266fd5bccde437526400832d394b9aa
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570874"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839899"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anskaffelser af anlægsaktiver
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
+I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
 
-1. Gå til Anlægsaktiver > Kladdepostering > Anlægsaktivkladde.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Navn.
-4. Klik på Linjer.
-5. Klik på Forslag.
-6. Klik på Anskaffelsesforslag.
-7. Klik på Filtrér.
-8. Klik på Nulstil for at rydde tidligere værdier.
-9. Vælg rækken med anlægsaktivnummeret.
-10. Indtast eller vælg en værdi i feltet Kriterier.
-    * Angiv de resterende kriterier for anlægsaktiverne, du vil hente med dette forslag.  
-11. Klik på OK.
-12. Klik på OK.
-    * Bekræft de oprettede transaktionslinjer.  
-    * Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
-13. Klik på fanen Bøger.
-14. Klik på Bogfør.
+1. I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Anlægsaktivkladde**.
+2. Vælg **Ny**.
+3. Indtast eller vælg en værdi i feltet **Navn**.
+4. Gå til handlingsruden, og vælg **Linjer**.
+5. Vælg **Forslag**.
+6. Vælg **Anskaffelsesforslag**.
+7. Vælg **Filter**. Vælg **Nulstil** for at rydde tidligere værdier.
+8. Vælg rækken **Anlægsaktivnummer**.
+9. Indtast eller vælg en værdi i feltet **Kriterier**. Angiv de resterende kriterier for anlægsaktiverne, du vil hente med dette forslag.  
+10. Vælg **OK** to gange for at forlade ruden.
+- Bekræft de oprettede transaktionslinjer.  
+- Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
+11. Vælg fanen **Bøger** på siden.
+12. Vælg **Bogfør**.
 

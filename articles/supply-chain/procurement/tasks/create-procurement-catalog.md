@@ -1,79 +1,68 @@
 ---
 title: Oprette et indkøbskatalog
-description: Denne vejledning viser, hvordan du opretter et indkøbskatalog.
+description: Dette emner beskriver, hvordan du opretter et indkøbskatalog.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f2a010e21f16b3908a6ee5f18d8f144c5130be7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55bc7479ca9ba3ca86e23b5bee106ef169c40077
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547646"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836371"
 ---
 # <a name="create-a-procurement-catalog"></a>Oprette et indkøbskatalog
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne vejledning viser, hvordan du opretter et indkøbskatalog. Denne opgave vil normalt udføres af en professionel indkøber. Du lærer også, hvordan medarbejdere kan bruge kataloget, når de opretter en indkøbsrekvisition. Før du kan oprette et katalog, skal der være et indkøbskategorihierarki i systemet. Hierarkiet arves af det nye katalog sammen med alle de produkter, der er i hierarkiet. Du kan bruge denne vejledning i demodatafirmaet USMF, hvor indkøbskategorihierarkiet er tilgængeligt, såvel som de eksempler, der bruges i trinnene i proceduren.
+Dette emner beskriver, hvordan du opretter et indkøbskatalog. Denne opgave vil normalt udføres af en professionel indkøber. Du lærer også, hvordan medarbejdere kan bruge kataloget, når de opretter en indkøbsrekvisition. Før du kan oprette et katalog, skal der være et indkøbskategorihierarki i systemet. Hierarkiet arves af det nye katalog sammen med alle de produkter, der er i hierarkiet. Du kan bruge denne vejledning i demodatafirmaet USMF, hvor indkøbskategorihierarkiet er tilgængeligt, såvel som de eksempler, der bruges i trinnene i proceduren.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Kontroller, at der findes et indkøbskategorihierarki
-1. Gå til Indkøb og forsyning > Indkøbskategorier.
-    * Et indkøbskategorihierarki er tilgængeligt i USMF-demodatafirmaet, og produkter er føjet til kategorien Kontormaskiner/computere. Hvis du kører denne procedure som en opgaveguide, skal du låse opgaveguiden op, hvis du vil søge i kategorien. Hvis et hierarki ikke var tilgængeligt, skal du oprette det ved at klikke på Ny. Det kan du kun gøre én gang.  
+1. Gå til **Navigationsrude > Moduler > Indkøb og forsyning > Kreditorer > Indkøbskategorier**. Et indkøbskategorihierarki er tilgængeligt i USMF-demodatafirmaet, og produkter er føjet til kategorien **Kontormaskiner/computere**. Hvis du kører denne procedure som en opgaveguide, skal du låse opgaveguiden op, hvis du vil søge i kategorien. Hvis et hierarki ikke var tilgængeligt, skal du oprette det ved at klikke på **Nyt**. Det kan du kun gøre én gang.  
 2. Luk siden.
 
 ## <a name="create-a-catalog"></a>Oprette et katalog
-1. Gå til Indkøb og forsyning > Kataloger > Indkøbskataloger.
-2. Klik på Nyt indkøbskatalog for at åbne dialogboksen, hvor du kan slippe den.
-3. Skriv en værdi i feltet Navn.
-4. Klik på OK.
-5. Udvid 'FIRMAS INDKØBSKATEGORIER' i træet.
-6. Udvid 'KONTORMASKINER' i træet.
-7. Vælg 'Computere' i træet.
-    * Produkterne fra indkøbskategorien vises på listen. Hvis du vil føje et produkt til kategorien, skal du gøre det på siden Indkøbskategorihierarki eller på siden Vareoplysninger.  
-    * Standardopdateringstypen bestemmer, om nye produkter, der er føjet til indkøbskategorihierarkiet, er synlige i kataloget med det samme. Hvis opdateringstypen er indstillet til Dynamisk, kan ændringer ses øjeblikkeligt. Hvis opdateringstypen er Statisk, er nye produkter kun synlige for brugere af kataloget, når kataloget er blevet udgivet igen. Publiceringshandling er tilgængelig i handlingsruden øverst på siden. Hvis produkter fjernes fra indkøbskategorihierarkiet, er ændringen straks synlig, uanset hvilken værdi der er i feltet Standardopdateringstype.  
-8. Find og vælg den ønskede post på listen.
-9. klik på Skjul.
-10. Klik på Katalognavigation i handlingsruden.
-11. Klik på Deaktiver.
-12. Klik på Katalognavigation i handlingsruden.
-13. Klik på Enable.
-14. Klik på Aktivér katalog.
-15. Luk siden.
+1. Gå til **Navigationsrude > Moduler > Indkøb og forsyning > Kataloger > Indkøbskataloger**.
+2. Vælg **Nyt indkøbskatalog** for at åbne dialogboksen.
+3. Skriv en værdi i feltet **Navn**.
+4. Vælg **OK**.
+5. Udvid **FIRMAS INDKØBSKATEGORIER** i træet.
+6. Udvid **KONTORMASKINER** i træet.
+7. Vælg **Computere** i træet.
+
+  - Produkterne fra indkøbskategorien vises på listen. Hvis du vil føje et produkt til kategorien, skal du gøre det på siden **Indkøbskategorihierarki** eller på siden **Vareoplysninger**.  
+  - Opdateringstypen **Standard** bestemmer, om nye produkter, der er føjet til indkøbskategorihierarkiet, er synlige i kataloget med det samme. Hvis opdateringstypen er indstillet til **Dynamisk**, kan ændringer ses øjeblikkeligt. Hvis opdateringstypen er **Statisk**, er nye produkter kun synlige for brugere af kataloget, når kataloget er blevet udgivet igen. Handlingen **Publicer** er tilgængelig i handlingsruden øverst på siden. Hvis produkter fjernes fra indkøbskategorihierarkiet, er ændringen straks synlig, uanset hvilken værdi der er i feltet **Standard** for opdateringstype.  
+
+8. I handlingsruden skal du vælge **Kategorinavigation** og sikre, at **Aktivér** er valgt.
+9. Vælg **Aktivér katalog**.
+10. Luk siden.
 
 ## <a name="make-the-catalog-visible"></a>Gør kataloget synligt
-1. Gå til Indkøb og forsyning > Konfiguration > Politikker > Indkøbspolitikker.
-2. Vælg indkøbspolitikken USMF.
-    * Du skal vælge indkøbspolitik, så den juridiske enhed, som arbejderen har knyttet til din brugerprofil, kan bestille produkter. I USMF-demodataene er administratorbrugeren knyttet til den arbejder, der hedder Julia Funderburk, og hun bestiller som standard produkter i USMF.  
-3. Klik op linket i den valgte række på listen.
-4. Vælg det katalog, du netop har oprettet.
-5. Klik på OK.
-6. Luk siden.
-7. Luk siden.
+1. Gå til **Navigationsrude > Moduler > Indkøb og forsyning > Opsætning > Politikker > Indkøbspolitikker**.
+2. Vælg **Indkøbspolitikken USMF**. Du skal vælge indkøbspolitik, så den juridiske enhed, som arbejderen har knyttet til din brugerprofil, kan bestille produkter. I USMF-demodataene er administratorbrugeren knyttet til den arbejder, der hedder **Julia Funderburk**, og hun bestiller som standard produkter i USMF.  
+3. Vælg det katalog, du netop har oprettet.
+4. Vælg **OK**.
 
 ## <a name="use-the-catalog"></a>Brug kataloget
-1. Gå til Indkøb og Forsyning > Indkøbsrekvisitioner > Alle indkøbsrekvisitioner.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Klik på OK.
-5. Klik på Tilføj produkter.
-6. Find og vælg den ønskede post på listen.
-    * Du kan bruge kategorihierarkiet til venstre eller filteret øverst på listen til at filtrere produkterne.  
-7. Klik på Føj til linjer
-8. Find og vælg den ønskede post på listen.
-9. Klik på Føj til linjer
-10. Klik på OK.
+1. Gå til **Navigationsrude > Moduler > Indkøb og forsyning > Indkøbsrekvisitioner > Alle indkøbsrekvisitioner**.
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Navn**.
+4. Vælg **OK**.
+5. Vælg **Tilføj produkter**.
+6. Find og vælg den ønskede post på listen. Du kan bruge kategorihierarkiet til venstre eller filteret øverst på listen til at filtrere produkterne.  
+7. Vælg **Tilføj til linjer**.
+8. Vælg **OK**.
 

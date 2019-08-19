@@ -1,6 +1,6 @@
 ---
-title: Konfigurer momskoder
-description: Momskoder oprettes til enhver indirekte moms eller afgift, som den juridiske enhed er forpligtet til at beregne, opkræve og betale til momsmyndighederne.
+title: Konfigurere momskoder
+description: Dette emne beskriver, hvordan du konfigurerer koder for moms i Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -10,46 +10,39 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3419c6b569093d717158e80bd9bc01054d82bff9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571577"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834824"
 ---
-# <a name="set-up-sales-tax-codes"></a>Konfigurer momskoder
+# <a name="set-up-sales-tax-codes"></a>Konfigurere momskoder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Momskoder oprettes til enhver indirekte moms eller afgift, som den juridiske enhed er forpligtet til at beregne, opkræve og betale til momsmyndighederne.
+Dette emne beskriver, hvordan du konfigurerer koder for moms i Dynamics 365 for Finance and Operations. Momskoder oprettes til enhver indirekte moms eller afgift, som den juridiske enhed er forpligtet til at beregne, opkræve og betale til momsmyndighederne.
 
 Denne opgave bruger demofirmaet USMF.
 
-
-
-1. Gå til Moms > Indirekte skatter > Moms > Momskoder.
-2. Klik på Ny.
-3. Skrive en værdi i feltet Momskode.
-4. Skriv en værdi i feltet Navn.
-5. Vælg en afregningsperiode for at angive, hvilken momsmyndighed og i hvilke intervaller denne moms skal rapporteres og betales.
-6. Klik op linket i den valgte række på listen.
-7. Vælg en finanskonteringsgruppe for at angive de hovedkonti, der skal bogføres moms til Finans på.
-8. Find og vælg den ønskede post på listen.
-9. Klik op linket i den valgte række på listen.
-10. Udvid oversigtspanelet Beregning.
-    * Oversigtspanelet Beregning har flere felter, der styrer, hvordan momsbeløb beregnes.  
-11. Klik på Momskode i handlingsruden.
-12. Klik på Værdier.
-13. Markér den valgte række på listen.
-14. Angiv værdien for denne momskode.
-    * I oversigtspanelet beregning i feltet grundlag, hvis beløb pr. enhed er markeret, skal værdien ganges med antallet på transaktionen, der skal beregnes sales tax-beløbet.  Hvis momskoden ikke er en enhed baseret skat, er værdien en procentdel, der er anvendt på oprindelsen for denne momskode til beregning af sales tax-beløbet.     
-15. Klik på Gem.
-16. Luk siden.
-17. Klik på Gem.
+1. Gå til **Navigationsrude > Skat > Indirekte skatter > Moms > Momskoder**.
+2. Vælg **Ny**.
+3. Skrive en værdi i feltet **Momskode**.
+4. Skriv en værdi i feltet **Navn**.
+5. Vælg en **Afregningsperiode** ved at åbne rullelisten for at angive, hvilken momsmyndighed og i hvilke intervaller denne moms skal rapporteres og betales.
+6. Vælg en **Finanskonteringsgruppe** for at angive de hovedkonti, der skal bogføres moms til finans på.
+7. Udvid oversigtspanelet **Beregning**. Dette omfatter flere felter, der styrer, hvordan momsbeløb beregnes. Udfyld disse felter efter behov.  
+8. I **Handlingsruden** øverst på grænsefladen skal du vælge **Momskode**.
+9. Vælg **Værdier**.
+10. Angiv værdien for denne momskode i kolonnen **værdi**.
+    - Hvis beløb pr. enhed er markeret, bliver værdien i oversigtspanelet **Beregning** i feltet Grundlag ganget med antallet på transaktionen, der skal beregnes momsbeløbet.  Hvis momskoden ikke er en enhed baseret skat, er værdien en procentdel, der er anvendt på oprindelsen for denne momskode til beregning af sales tax-beløbet.     
+11. Vælg **Gem**.
+12. Luk siden.
+13. Vælg **Gem**.
 
