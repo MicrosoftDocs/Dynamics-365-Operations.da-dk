@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e904db7312563b8b7dc584c9fa4d40b947db4db5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3175d7e604671901674975ee6fd1debd5955e8b1
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561126"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743135"
 ---
-# <a name="set-up-a-preferred-technician"></a><span data-ttu-id="193fe-103">Konfigurere en foretrukket tekniker</span><span class="sxs-lookup"><span data-stu-id="193fe-103">Set up a preferred technician</span></span> 
+# <a name="set-up-a-preferred-technician"></a><span data-ttu-id="b4182-103">Konfigurere en foretrukket tekniker</span><span class="sxs-lookup"><span data-stu-id="b4182-103">Set up a preferred technician</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="193fe-104">Du kan vælge enhver arbejder som en foretrukket tekniker til en serviceaftale eller serviceordre.</span><span class="sxs-lookup"><span data-stu-id="193fe-104">You can select any worker as a preferred technician for a service agreement or service order.</span></span> <span data-ttu-id="193fe-105">Det er dog en god idé at føje arbejderen til et relevant planlægningsteam, så arbejderen er medtaget på **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="193fe-105">However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.</span></span>
+<span data-ttu-id="b4182-104">Du kan vælge enhver arbejder som en foretrukket tekniker til en serviceaftale eller serviceordre.</span><span class="sxs-lookup"><span data-stu-id="b4182-104">You can select any worker as a preferred technician for a service agreement or service order.</span></span> <span data-ttu-id="b4182-105">Det er dog en god idé at føje arbejderen til et relevant planlægningsteam, så arbejderen er medtaget på **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="b4182-105">However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.</span></span>
 
-## <a name="assign-employee-to-a-dispatch-team"></a><span data-ttu-id="193fe-106">Knytte en medarbejder til et planlægningsteam</span><span class="sxs-lookup"><span data-stu-id="193fe-106">Assign employee to a dispatch team</span></span>
+## <a name="assign-employee-to-a-dispatch-team"></a><span data-ttu-id="b4182-106">Knytte en medarbejder til et planlægningsteam</span><span class="sxs-lookup"><span data-stu-id="b4182-106">Assign employee to a dispatch team</span></span>
 
-1.  <span data-ttu-id="193fe-107">Klik på **Personale** \> **Generelt** \> **Arbejdere** \> **Arbejdere**.</span><span class="sxs-lookup"><span data-stu-id="193fe-107">Click **Human resources** \> **Common** \> **Workers** \> **Workers**.</span></span> <span data-ttu-id="193fe-108">Dobbeltklik på en arbejder for at åbne arbejderens side med detaljer.</span><span class="sxs-lookup"><span data-stu-id="193fe-108">Double-click a worker to open the worker details page.</span></span> <span data-ttu-id="193fe-109">I **handlingsruden** skal du klikke på **Opsætning** \> **Planlægningsteam** for at åbne formularen **Planlæg medarbejdere**.</span><span class="sxs-lookup"><span data-stu-id="193fe-109">On the **Action Pane**, click **Setup** \>**Dispatch team** to open the **Dispatch workers** form.</span></span>
+1.  <span data-ttu-id="b4182-107">Klik på **Personale** \> **Generelt** \> **Arbejdere** \> **Arbejdere**.</span><span class="sxs-lookup"><span data-stu-id="b4182-107">Click **Human resources** \> **Common** \> **Workers** \> **Workers**.</span></span> <span data-ttu-id="b4182-108">Dobbeltklik på en arbejder for at åbne arbejderens side med detaljer.</span><span class="sxs-lookup"><span data-stu-id="b4182-108">Double-click a worker to open the worker details page.</span></span> <span data-ttu-id="b4182-109">I **handlingsruden** skal du klikke på **Opsætning** \> **Planlægningsteam** for at åbne formularen **Planlæg medarbejdere**.</span><span class="sxs-lookup"><span data-stu-id="b4182-109">On the **Action Pane**, click **Setup** \>**Dispatch team** to open the **Dispatch workers** form.</span></span>
 
-2.  <span data-ttu-id="193fe-110">Vælg det team, der skal tilknyttes arbejderen, i feltet **Planlægningsteam**.</span><span class="sxs-lookup"><span data-stu-id="193fe-110">In the **Dispatch team** field, select the team to assign the worker to.</span></span>
+2.  <span data-ttu-id="b4182-110">Vælg det team, der skal tilknyttes arbejderen, i feltet **Planlægningsteam**.</span><span class="sxs-lookup"><span data-stu-id="b4182-110">In the **Dispatch team** field, select the team to assign the worker to.</span></span>
 
-## <a name="assign-a-preferred-technician-to-a-service-agreement"></a><span data-ttu-id="193fe-111">Knytte en foretrukken tekniker til en serviceaftale</span><span class="sxs-lookup"><span data-stu-id="193fe-111">Assign a preferred technician to a service agreement</span></span>
+## <a name="assign-a-preferred-technician-to-a-service-agreement"></a><span data-ttu-id="b4182-111">Knytte en foretrukken tekniker til en serviceaftale</span><span class="sxs-lookup"><span data-stu-id="b4182-111">Assign a preferred technician to a service agreement</span></span>
 
-1.  <span data-ttu-id="193fe-112">Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.</span><span class="sxs-lookup"><span data-stu-id="193fe-112">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="193fe-113">Dobbeltklik på en serviceaftale for at åbne formen med detaljer.</span><span class="sxs-lookup"><span data-stu-id="193fe-113">Double-click a service agreement to open the details form.</span></span>
+1.  <span data-ttu-id="b4182-112">Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.</span><span class="sxs-lookup"><span data-stu-id="b4182-112">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="b4182-113">Dobbeltklik på en serviceaftale for at åbne formen med detaljer.</span><span class="sxs-lookup"><span data-stu-id="b4182-113">Double-click a service agreement to open the details form.</span></span>
 
-2.  <span data-ttu-id="193fe-114">Under fanen **Generelt** skal du vælge feltet **Foretrukken tekniker** for at knytte et medlem af det relevante planlægningsteam til serviceaftalen som den foretrukne tekniker.</span><span class="sxs-lookup"><span data-stu-id="193fe-114">On the **General** tab, select the **Preferred technician** field, and then select a member of the appropriate dispatch team as the preferred technician for the service agreement.</span></span>
+2.  <span data-ttu-id="b4182-114">Under fanen **Generelt** skal du vælge feltet **Foretrukken tekniker** for at knytte et medlem af det relevante planlægningsteam til serviceaftalen som den foretrukne tekniker.</span><span class="sxs-lookup"><span data-stu-id="b4182-114">On the **General** tab, select the **Preferred technician** field, and then select a member of the appropriate dispatch team as the preferred technician for the service agreement.</span></span>
 
-## <a name="assign-a-preferred-technician-to-a-service-order"></a><span data-ttu-id="193fe-115">Knytte en foretrukken tekniker til en serviceordre</span><span class="sxs-lookup"><span data-stu-id="193fe-115">Assign a preferred technician to a service order</span></span>
+## <a name="assign-a-preferred-technician-to-a-service-order"></a><span data-ttu-id="b4182-115">Knytte en foretrukken tekniker til en serviceordre</span><span class="sxs-lookup"><span data-stu-id="b4182-115">Assign a preferred technician to a service order</span></span>
 
-1.  <span data-ttu-id="193fe-116">Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="193fe-116">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="b4182-116">Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="b4182-116">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="193fe-117">I formularen <STRONG>Planlægningstavle</STRONG> skal du angive et datointerval til de planlægningsaktiviteter, du vil have vist.</span><span class="sxs-lookup"><span data-stu-id="193fe-117">In the <STRONG>Dispatch board</STRONG> form, specify a date range for dispatch activities to view.</span></span> <span data-ttu-id="193fe-118">Angiv også, om lukkede aktiviteter skal vises, og om planlægningsaktivitetslisten skal begrænses til teams, som du tilhører, eller som du er bemyndiget til at overvåge.</span><span class="sxs-lookup"><span data-stu-id="193fe-118">Also, specify whether to display closed activities and whether to limit the dispatch activity list to teams that you belong to or are authorized to monitor.</span></span> <span data-ttu-id="193fe-119">Klik på <STRONG>OK</STRONG> for at åbne formularen <STRONG>Planlægningstavle</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="193fe-119">Click <STRONG>OK</STRONG> to open the <STRONG>Dispatch board</STRONG>.</span></span></P>
+    > <P><span data-ttu-id="b4182-117">I formularen <STRONG>Planlægningstavle</STRONG> skal du angive et datointerval til de planlægningsaktiviteter, du vil have vist.</span><span class="sxs-lookup"><span data-stu-id="b4182-117">In the <STRONG>Dispatch board</STRONG> form, specify a date range for dispatch activities to view.</span></span> <span data-ttu-id="b4182-118">Angiv også, om lukkede aktiviteter skal vises, og om planlægningsaktivitetslisten skal begrænses til teams, som du tilhører, eller som du er bemyndiget til at overvåge.</span><span class="sxs-lookup"><span data-stu-id="b4182-118">Also, specify whether to display closed activities and whether to limit the dispatch activity list to teams that you belong to or are authorized to monitor.</span></span> <span data-ttu-id="b4182-119">Klik på <STRONG>OK</STRONG> for at åbne formularen <STRONG>Planlægningstavle</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="b4182-119">Click <STRONG>OK</STRONG> to open the <STRONG>Dispatch board</STRONG>.</span></span></P>
 
 
 
-2.  <span data-ttu-id="193fe-120">Markér linjen for den serviceaktivitet, du vil redigere.</span><span class="sxs-lookup"><span data-stu-id="193fe-120">Select the line of the service activity to modify.</span></span>
+2.  <span data-ttu-id="b4182-120">Markér linjen for den serviceaktivitet, du vil redigere.</span><span class="sxs-lookup"><span data-stu-id="b4182-120">Select the line of the service activity to modify.</span></span>
 
-3.  <span data-ttu-id="193fe-121">Vælg fanen **Relateret**, og brug listen **Arbejder** til at tilknytte et medlem af det relevante planlægningsteam som den foretrukne tekniker til servicebesøget.</span><span class="sxs-lookup"><span data-stu-id="193fe-121">On the **Related** tab, use the **Worker** list to assign a member of the appropriate dispatch team as the preferred technician for the service call.</span></span>
+3.  <span data-ttu-id="b4182-121">Vælg fanen **Relateret**, og brug listen **Arbejder** til at tilknytte et medlem af det relevante planlægningsteam som den foretrukne tekniker til servicebesøget.</span><span class="sxs-lookup"><span data-stu-id="b4182-121">On the **Related** tab, use the **Worker** list to assign a member of the appropriate dispatch team as the preferred technician for the service call.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="193fe-122">Se også</span><span class="sxs-lookup"><span data-stu-id="193fe-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4182-122">Se også</span><span class="sxs-lookup"><span data-stu-id="b4182-122">See also</span></span>
 
-[<span data-ttu-id="193fe-123">Serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="193fe-123">Service agreements</span></span>](service-agreements.md)
+[<span data-ttu-id="b4182-123">Serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="b4182-123">Service agreements</span></span>](service-agreements.md)
 
-[<span data-ttu-id="193fe-124">Oprette serviceordrer manuelt</span><span class="sxs-lookup"><span data-stu-id="193fe-124">Create service orders manually</span></span>](create-service-orders-manually.md)
+[<span data-ttu-id="b4182-124">Oprette serviceordrer manuelt</span><span class="sxs-lookup"><span data-stu-id="b4182-124">Create service orders manually</span></span>](create-service-orders-manually.md)
 
-<span data-ttu-id="193fe-125">[Serviceaftaler (form)](https://technet.microsoft.com/en-us/library/aa617823\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="193fe-125">[Service agreements (form)](https://technet.microsoft.com/en-us/library/aa617823\(v=ax.60\))</span></span>
+<span data-ttu-id="b4182-125">[Serviceaftaler (form)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b4182-125">[Service agreements (form)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))</span></span>
   
 
 
