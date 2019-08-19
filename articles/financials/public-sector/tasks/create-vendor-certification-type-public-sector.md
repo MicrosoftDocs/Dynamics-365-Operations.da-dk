@@ -10,29 +10,29 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendCertificationType
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c0b609af963c0732ad61585816c5a9d3d4d117f3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 16591af03484e1dcd61a5b5e9cf1c40ffd9307aa
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557176"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845726"
 ---
-# <a name="create-a-vendor-certification-type-in-the-public-sector"></a><span data-ttu-id="29f47-103">Oprette en kreditorcertificeringstype i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="29f47-103">Create a vendor certification type in the public sector</span></span>
+# <a name="create-a-vendor-certification-type-in-the-public-sector"></a><span data-ttu-id="dc37b-103">Oprette en kreditorcertificeringstype i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="dc37b-103">Create a vendor certification type in the public sector</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="29f47-104">Du kan oprette enhver form for certificering, som kreditorerne har, og tildele dem til leverandørorganisationer som f.eks. professionelle legitimationsoplysninger, ansvarsforsikring, mindretalsstatus eller overholdelse af forskellige miljømæssige eller forbrugerrelaterede sikkerhedsstandarder.</span><span class="sxs-lookup"><span data-stu-id="29f47-104">You can create and assign vendor organizations any type of certification that the vendors hold, such as professional credentials, liability insurance, minority status, or compliance with various environmental or consumer safety standards.</span></span> <span data-ttu-id="29f47-105">Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="29f47-105">This task guide was created using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="dc37b-104">Du kan oprette enhver form for certificering, som kreditorerne har, og tildele dem til leverandørorganisationer som f.eks. professionelle legitimationsoplysninger, ansvarsforsikring, mindretalsstatus eller overholdelse af forskellige miljømæssige eller forbrugerrelaterede sikkerhedsstandarder.</span><span class="sxs-lookup"><span data-stu-id="dc37b-104">You can create and assign vendor organizations any type of certification that the vendors hold, such as professional credentials, liability insurance, minority status, or compliance with various environmental or consumer safety standards.</span></span> <span data-ttu-id="dc37b-105">Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="dc37b-105">This task guide was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. <span data-ttu-id="29f47-106">Gå til Indkøb og forsyning > Opsætning > Kreditorer > Certificeringstype.</span><span class="sxs-lookup"><span data-stu-id="29f47-106">Go to Procurement and sourcing > Setup > Vendors > Certification type.</span></span>
-2. <span data-ttu-id="29f47-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="29f47-107">Click New.</span></span>
-3. <span data-ttu-id="29f47-108">Skriv en værdi i feltet Certificeringstype.</span><span class="sxs-lookup"><span data-stu-id="29f47-108">In the Certification type field, type a value.</span></span>
-4. <span data-ttu-id="29f47-109">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="29f47-109">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="29f47-110">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="29f47-110">Click Save.</span></span>
+1. <span data-ttu-id="dc37b-106">Gå til Indkøb og forsyning > Opsætning > Kreditorer > Certificeringstype.</span><span class="sxs-lookup"><span data-stu-id="dc37b-106">Go to Procurement and sourcing > Setup > Vendors > Certification type.</span></span>
+2. <span data-ttu-id="dc37b-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dc37b-107">Click New.</span></span>
+3. <span data-ttu-id="dc37b-108">Skriv en værdi i feltet Certificeringstype.</span><span class="sxs-lookup"><span data-stu-id="dc37b-108">In the Certification type field, type a value.</span></span>
+4. <span data-ttu-id="dc37b-109">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="dc37b-109">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="dc37b-110">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dc37b-110">Click Save.</span></span>
 

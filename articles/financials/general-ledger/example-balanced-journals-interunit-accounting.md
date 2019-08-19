@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 15791
 ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
@@ -18,38 +18,38 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b596a2332a9ada01df7b4e718a79eb624ee52fc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e84d96b5467b38e07a9ed31f142c27b638289284
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549098"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839347"
 ---
-# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="06af2-103">Afstemte kladder for regnskab mellem enheder</span><span class="sxs-lookup"><span data-stu-id="06af2-103">Balanced journals for interunit accounting</span></span>
+# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="146f0-103">Afstemte kladder for regnskab mellem enheder</span><span class="sxs-lookup"><span data-stu-id="146f0-103">Balanced journals for interunit accounting</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="06af2-104">Denne artikel viser, hvordan en kladde automatisk afstemmes, når en udlignende økonomisk dimension er valgt på siden Finans.</span><span class="sxs-lookup"><span data-stu-id="06af2-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
+<span data-ttu-id="146f0-104">Denne artikel viser, hvordan en kladde automatisk afstemmes, når en udlignende økonomisk dimension er valgt på siden Finans.</span><span class="sxs-lookup"><span data-stu-id="146f0-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
 
-<span data-ttu-id="06af2-105">Hvis kontoposter ikke afstemmes på samme niveau som de økonomiske dimensionsværdier, oprettes der automatisk flere poster for at afstemme kladden.</span><span class="sxs-lookup"><span data-stu-id="06af2-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="06af2-106">Disse kontoposter bruger bogføringstyperne **Internt mellem enheder - debet** og **Internt mellem enheder - kredit** på siden **Konti til automatisk posteringer** til at bestemme hovedkontoen.</span><span class="sxs-lookup"><span data-stu-id="06af2-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="06af2-107">Virksomhedsenhed, som er det andet segment på finanskontoen, vælges f.eks. som den afstemmende økonomiske dimension, og følgende regnskabsposter er ved at blive oprettet.</span><span class="sxs-lookup"><span data-stu-id="06af2-107">For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
+<span data-ttu-id="146f0-105">Hvis kontoposter ikke afstemmes på samme niveau som de økonomiske dimensionsværdier, oprettes der automatisk flere poster for at afstemme kladden.</span><span class="sxs-lookup"><span data-stu-id="146f0-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="146f0-106">Disse kontoposter bruger bogføringstyperne **Internt mellem enheder - debet** og **Internt mellem enheder - kredit** på siden **Konti til automatisk posteringer** til at bestemme hovedkontoen.</span><span class="sxs-lookup"><span data-stu-id="146f0-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="146f0-107">Virksomhedsenhed, som er det andet segment på finanskontoen, vælges f.eks. som den afstemmende økonomiske dimension, og følgende regnskabsposter er ved at blive oprettet.</span><span class="sxs-lookup"><span data-stu-id="146f0-107">For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
 
 |                      |           |
 |----------------------|-----------|
-| <span data-ttu-id="06af2-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="06af2-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="06af2-109">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="06af2-109">100.00 DR</span></span> |
-| <span data-ttu-id="06af2-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="06af2-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="06af2-111">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="06af2-111">100.00 DR</span></span> |
-| <span data-ttu-id="06af2-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="06af2-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="06af2-113">200,00 CR</span><span class="sxs-lookup"><span data-stu-id="06af2-113">200.00 CR</span></span> |
+| <span data-ttu-id="146f0-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="146f0-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="146f0-109">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="146f0-109">100.00 DR</span></span> |
+| <span data-ttu-id="146f0-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="146f0-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="146f0-111">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="146f0-111">100.00 DR</span></span> |
+| <span data-ttu-id="146f0-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="146f0-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="146f0-113">200,00 CR</span><span class="sxs-lookup"><span data-stu-id="146f0-113">200.00 CR</span></span> |
 
-<span data-ttu-id="06af2-114">I så fald bestemmes følgende saldi:</span><span class="sxs-lookup"><span data-stu-id="06af2-114">In this case, the following balances are determined:</span></span>
+<span data-ttu-id="146f0-114">I så fald bestemmes følgende saldi:</span><span class="sxs-lookup"><span data-stu-id="146f0-114">In this case, the following balances are determined:</span></span>
 
--   <span data-ttu-id="06af2-115">Til forretningsenhed MSP = 100,00 CR</span><span class="sxs-lookup"><span data-stu-id="06af2-115">For Business Unit MSP = 100.00 CR</span></span>
--   <span data-ttu-id="06af2-116">Til forretningsenhed NY = 100,00 DR</span><span class="sxs-lookup"><span data-stu-id="06af2-116">For Business Unit NY = 100.00 DR</span></span>
+-   <span data-ttu-id="146f0-115">Til forretningsenhed MSP = 100,00 CR</span><span class="sxs-lookup"><span data-stu-id="146f0-115">For Business Unit MSP = 100.00 CR</span></span>
+-   <span data-ttu-id="146f0-116">Til forretningsenhed NY = 100,00 DR</span><span class="sxs-lookup"><span data-stu-id="146f0-116">For Business Unit NY = 100.00 DR</span></span>
 
-<span data-ttu-id="06af2-117">Følgende regnskabsposter oprettes derfor automatisk, så denne kladde afstemmes på niveauet for de økonomiske dimensionsværdier.</span><span class="sxs-lookup"><span data-stu-id="06af2-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
+<span data-ttu-id="146f0-117">Følgende regnskabsposter oprettes derfor automatisk, så denne kladde afstemmes på niveauet for de økonomiske dimensionsværdier.</span><span class="sxs-lookup"><span data-stu-id="146f0-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
 
 |                                   |           |
 |-----------------------------------|-----------|
-| <span data-ttu-id="06af2-118">(Internt mellem enheder - debet) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="06af2-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="06af2-119">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="06af2-119">100.00 DR</span></span> |
-| <span data-ttu-id="06af2-120">(Internt mellem enheder - kredit) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="06af2-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="06af2-121">100,00 CR</span><span class="sxs-lookup"><span data-stu-id="06af2-121">100.00 CR</span></span> |
+| <span data-ttu-id="146f0-118">(Internt mellem enheder - debet) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="146f0-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="146f0-119">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="146f0-119">100.00 DR</span></span> |
+| <span data-ttu-id="146f0-120">(Internt mellem enheder - kredit) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="146f0-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="146f0-121">100,00 CR</span><span class="sxs-lookup"><span data-stu-id="146f0-121">100.00 CR</span></span> |
 
 
 

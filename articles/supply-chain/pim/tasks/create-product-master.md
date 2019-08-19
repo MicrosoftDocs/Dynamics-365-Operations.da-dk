@@ -10,60 +10,60 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e34f7c630e872468d888938e0f1aa57f3f0d4c4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 21cfc2699fdcd6024286ee16bb60c3cd6dda5b67
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570000"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844700"
 ---
-# <a name="create-a-product-master"></a><span data-ttu-id="678fe-103">Oprette en produktmaster</span><span class="sxs-lookup"><span data-stu-id="678fe-103">Create a product master</span></span>
+# <a name="create-a-product-master"></a><span data-ttu-id="da94d-103">Oprette en produktmaster</span><span class="sxs-lookup"><span data-stu-id="da94d-103">Create a product master</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="678fe-104">Opret en produktmaster for de foruddefinerede varianter.</span><span class="sxs-lookup"><span data-stu-id="678fe-104">Create a product master for the predefined variants.</span></span> <span data-ttu-id="678fe-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="678fe-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="678fe-106">Denne procedure er beregnet til produktdesigneren.</span><span class="sxs-lookup"><span data-stu-id="678fe-106">This procedure is intended for the product designer.</span></span>
+<span data-ttu-id="da94d-104">Opret en produktmaster for de foruddefinerede varianter.</span><span class="sxs-lookup"><span data-stu-id="da94d-104">Create a product master for the predefined variants.</span></span> <span data-ttu-id="da94d-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="da94d-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="da94d-106">Denne procedure er beregnet til produktdesigneren.</span><span class="sxs-lookup"><span data-stu-id="da94d-106">This procedure is intended for the product designer.</span></span>
 
 
-## <a name="create-a-new-product-master"></a><span data-ttu-id="678fe-107">Opret en ny produktmaster</span><span class="sxs-lookup"><span data-stu-id="678fe-107">Create a new product master</span></span>
-1. <span data-ttu-id="678fe-108">Gå til Administration af produktoplysninger > Produkter > Produktmastere.</span><span class="sxs-lookup"><span data-stu-id="678fe-108">Go to Product information management > Products > Product masters.</span></span>
-2. <span data-ttu-id="678fe-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="678fe-109">Click New.</span></span>
-3. <span data-ttu-id="678fe-110">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="678fe-110">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="678fe-111">Tallet skal være entydigt.</span><span class="sxs-lookup"><span data-stu-id="678fe-111">The number must be unique.</span></span> <span data-ttu-id="678fe-112">En nummerserie kan konfigureres for feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="678fe-112">A number sequence can be set for the Product number field.</span></span> <span data-ttu-id="678fe-113">I dette tilfælde skal brugeren ikke at angive en værdi.</span><span class="sxs-lookup"><span data-stu-id="678fe-113">In this case, the user doesn't have to enter a value.</span></span>  
-4. <span data-ttu-id="678fe-114">Angiv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="678fe-114">In the Product name field, type a value.</span></span>
-    * <span data-ttu-id="678fe-115">Indtast et beskrivende produktnavn.</span><span class="sxs-lookup"><span data-stu-id="678fe-115">Enter a descriptive product name.</span></span> <span data-ttu-id="678fe-116">Værdien angives som standard til søgenavnet, men dette kan ændres af brugeren.</span><span class="sxs-lookup"><span data-stu-id="678fe-116">The value defaults to the search name, but this can be changed by the user.</span></span>  
-5. <span data-ttu-id="678fe-117">Klik på rullelisten i feltet Produktdimensionsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="678fe-117">In the Product dimension group field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="678fe-118">Produktdimensionsgruppen styrer, hvilke af de 4 produktdimensioner der kan bruges til at oprette produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="678fe-118">The product dimension group determines which of the 4 product dimensions that can be used to create product variants.</span></span> <span data-ttu-id="678fe-119">I dette eksempel bruges en gruppe med farve og størrelse.</span><span class="sxs-lookup"><span data-stu-id="678fe-119">This example uses a group with color and size.</span></span>  
-6. <span data-ttu-id="678fe-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-120">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="678fe-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-121">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="678fe-122">Standardkonfigurationsteknologien er en foruddefineret variant.</span><span class="sxs-lookup"><span data-stu-id="678fe-122">The default configuration technology is Predefined variant.</span></span> <span data-ttu-id="678fe-123">Den vil blive brugt i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="678fe-123">This will be used for this example.</span></span>  
-8. <span data-ttu-id="678fe-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="678fe-124">Click OK.</span></span>
+## <a name="create-a-new-product-master"></a><span data-ttu-id="da94d-107">Opret en ny produktmaster</span><span class="sxs-lookup"><span data-stu-id="da94d-107">Create a new product master</span></span>
+1. <span data-ttu-id="da94d-108">Gå til Administration af produktoplysninger > Produkter > Produktmastere.</span><span class="sxs-lookup"><span data-stu-id="da94d-108">Go to Product information management > Products > Product masters.</span></span>
+2. <span data-ttu-id="da94d-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="da94d-109">Click New.</span></span>
+3. <span data-ttu-id="da94d-110">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="da94d-110">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="da94d-111">Tallet skal være entydigt.</span><span class="sxs-lookup"><span data-stu-id="da94d-111">The number must be unique.</span></span> <span data-ttu-id="da94d-112">En nummerserie kan konfigureres for feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="da94d-112">A number sequence can be set for the Product number field.</span></span> <span data-ttu-id="da94d-113">I dette tilfælde skal brugeren ikke at angive en værdi.</span><span class="sxs-lookup"><span data-stu-id="da94d-113">In this case, the user doesn't have to enter a value.</span></span>  
+4. <span data-ttu-id="da94d-114">Angiv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="da94d-114">In the Product name field, type a value.</span></span>
+    * <span data-ttu-id="da94d-115">Indtast et beskrivende produktnavn.</span><span class="sxs-lookup"><span data-stu-id="da94d-115">Enter a descriptive product name.</span></span> <span data-ttu-id="da94d-116">Værdien angives som standard til søgenavnet, men dette kan ændres af brugeren.</span><span class="sxs-lookup"><span data-stu-id="da94d-116">The value defaults to the search name, but this can be changed by the user.</span></span>  
+5. <span data-ttu-id="da94d-117">Klik på rullelisten i feltet Produktdimensionsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="da94d-117">In the Product dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="da94d-118">Produktdimensionsgruppen styrer, hvilke af de 4 produktdimensioner der kan bruges til at oprette produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="da94d-118">The product dimension group determines which of the 4 product dimensions that can be used to create product variants.</span></span> <span data-ttu-id="da94d-119">I dette eksempel bruges en gruppe med farve og størrelse.</span><span class="sxs-lookup"><span data-stu-id="da94d-119">This example uses a group with color and size.</span></span>  
+6. <span data-ttu-id="da94d-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-120">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="da94d-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-121">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="da94d-122">Standardkonfigurationsteknologien er en foruddefineret variant.</span><span class="sxs-lookup"><span data-stu-id="da94d-122">The default configuration technology is Predefined variant.</span></span> <span data-ttu-id="da94d-123">Den vil blive brugt i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="da94d-123">This will be used for this example.</span></span>  
+8. <span data-ttu-id="da94d-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="da94d-124">Click OK.</span></span>
 
-## <a name="select-product-dimension-groups"></a><span data-ttu-id="678fe-125">Vælg produktdimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="678fe-125">Select product dimension groups</span></span>
-1. <span data-ttu-id="678fe-126">Klik på rullelisten i feltet Farvegruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="678fe-126">In the Color group field, click the drop-down button to open the lookup.</span></span>
-2. <span data-ttu-id="678fe-127">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-127">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="678fe-128">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-128">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="678fe-129">Klik på rullelisten i feltet Størrelsesgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="678fe-129">In the Size group field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="678fe-130">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-130">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="678fe-131">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-131">In the list, click the link in the selected row.</span></span>
+## <a name="select-product-dimension-groups"></a><span data-ttu-id="da94d-125">Vælg produktdimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="da94d-125">Select product dimension groups</span></span>
+1. <span data-ttu-id="da94d-126">Klik på rullelisten i feltet Farvegruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="da94d-126">In the Color group field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="da94d-127">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-127">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="da94d-128">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-128">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="da94d-129">Klik på rullelisten i feltet Størrelsesgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="da94d-129">In the Size group field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="da94d-130">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-130">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="da94d-131">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-131">In the list, click the link in the selected row.</span></span>
 
-## <a name="add-dimension-groups"></a><span data-ttu-id="678fe-132">Tilføj dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="678fe-132">Add dimension groups</span></span>
-1. <span data-ttu-id="678fe-133">Klik på Produkt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="678fe-133">On the Action Pane, click Product.</span></span>
-2. <span data-ttu-id="678fe-134">Klik på Dimensionsgrupper for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="678fe-134">Click Dimension groups to open the drop dialog.</span></span>
-3. <span data-ttu-id="678fe-135">Klik på rullelisten i feltet Lagringsdimensionsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="678fe-135">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="678fe-136">Lagringsdimensionerne gør det lettere at styre, hvordan varer opbevares og plukkes på lageret.</span><span class="sxs-lookup"><span data-stu-id="678fe-136">The storage dimensions help you control how items are stored and taken from inventory.</span></span> <span data-ttu-id="678fe-137">For eksempel kan en lagringsdimension omfatte lokation og lagersted.</span><span class="sxs-lookup"><span data-stu-id="678fe-137">For example, a storage dimension can include Site and Warehouse.</span></span>  
-4. <span data-ttu-id="678fe-138">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-138">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="678fe-139">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-139">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="678fe-140">Klik på rullelisten i feltet Sporingsdimensionsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="678fe-140">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="678fe-141">Sporingsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du kan føje til et produkt.</span><span class="sxs-lookup"><span data-stu-id="678fe-141">The tracking dimension group determines which tracking dimensions you can add to a product.</span></span> <span data-ttu-id="678fe-142">For eksempel bruges batchnummeret og serienummeret til at spore lagervarer.</span><span class="sxs-lookup"><span data-stu-id="678fe-142">For example, the batch number and serial number are used to track inventory items.</span></span>  
-7. <span data-ttu-id="678fe-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-143">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="678fe-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="678fe-144">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="678fe-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="678fe-145">Click OK.</span></span>
-10. <span data-ttu-id="678fe-146">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="678fe-146">Click Save.</span></span>
-11. <span data-ttu-id="678fe-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="678fe-147">Close the page.</span></span>
+## <a name="add-dimension-groups"></a><span data-ttu-id="da94d-132">Tilføj dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="da94d-132">Add dimension groups</span></span>
+1. <span data-ttu-id="da94d-133">Klik på Produkt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="da94d-133">On the Action Pane, click Product.</span></span>
+2. <span data-ttu-id="da94d-134">Klik på Dimensionsgrupper for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="da94d-134">Click Dimension groups to open the drop dialog.</span></span>
+3. <span data-ttu-id="da94d-135">Klik på rullelisten i feltet Lagringsdimensionsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="da94d-135">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="da94d-136">Lagringsdimensionerne gør det lettere at styre, hvordan varer opbevares og plukkes på lageret.</span><span class="sxs-lookup"><span data-stu-id="da94d-136">The storage dimensions help you control how items are stored and taken from inventory.</span></span> <span data-ttu-id="da94d-137">For eksempel kan en lagringsdimension omfatte lokation og lagersted.</span><span class="sxs-lookup"><span data-stu-id="da94d-137">For example, a storage dimension can include Site and Warehouse.</span></span>  
+4. <span data-ttu-id="da94d-138">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-138">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="da94d-139">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-139">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="da94d-140">Klik på rullelisten i feltet Sporingsdimensionsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="da94d-140">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="da94d-141">Sporingsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du kan føje til et produkt.</span><span class="sxs-lookup"><span data-stu-id="da94d-141">The tracking dimension group determines which tracking dimensions you can add to a product.</span></span> <span data-ttu-id="da94d-142">For eksempel bruges batchnummeret og serienummeret til at spore lagervarer.</span><span class="sxs-lookup"><span data-stu-id="da94d-142">For example, the batch number and serial number are used to track inventory items.</span></span>  
+7. <span data-ttu-id="da94d-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-143">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="da94d-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="da94d-144">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="da94d-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="da94d-145">Click OK.</span></span>
+10. <span data-ttu-id="da94d-146">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="da94d-146">Click Save.</span></span>
+11. <span data-ttu-id="da94d-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="da94d-147">Close the page.</span></span>
 

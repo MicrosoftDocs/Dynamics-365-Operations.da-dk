@@ -10,80 +10,80 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cd576458bab1e4654d21773b581a5b0f726c928
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 44f36a12195a57e1b4cea524d2e4881f1fa7d0e9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545505"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842923"
 ---
-# <a name="create-a-write-off-journal-for-a-customer"></a><span data-ttu-id="8e67b-103">Oprette en afskrivningskladde for en debitor</span><span class="sxs-lookup"><span data-stu-id="8e67b-103">Create a write-off journal for a customer</span></span>
+# <a name="create-a-write-off-journal-for-a-customer"></a><span data-ttu-id="a09c9-103">Oprette en afskrivningskladde for en debitor</span><span class="sxs-lookup"><span data-stu-id="a09c9-103">Create a write-off journal for a customer</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8e67b-104">Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger og derefter afskrive transaktioner fra siden Rykkere, siden Åbne debitorfakturaer og siden Kunde.</span><span class="sxs-lookup"><span data-stu-id="8e67b-104">This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page.</span></span> <span data-ttu-id="8e67b-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="8e67b-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="a09c9-104">Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger og derefter afskrive transaktioner fra siden Rykkere, siden Åbne debitorfakturaer og siden Kunde.</span><span class="sxs-lookup"><span data-stu-id="a09c9-104">This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page.</span></span> <span data-ttu-id="a09c9-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="a09c9-105">This task uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-the-write-off-parameters"></a><span data-ttu-id="8e67b-106">Konfigurer afskrivningsparametre</span><span class="sxs-lookup"><span data-stu-id="8e67b-106">Set up the write off parameters</span></span>
-1. <span data-ttu-id="8e67b-107">Gå til Kredit og inkasso > Opsætning > Debitorparametre.</span><span class="sxs-lookup"><span data-stu-id="8e67b-107">Go to Credit and collections > Setup > Accounts receivable parameters.</span></span>
-2. <span data-ttu-id="8e67b-108">Klik på fanen Rykkere.</span><span class="sxs-lookup"><span data-stu-id="8e67b-108">Click the Collections tab.</span></span>
-3. <span data-ttu-id="8e67b-109">Udvid eller skjul sektionen Afskrivning.</span><span class="sxs-lookup"><span data-stu-id="8e67b-109">Expand or collapse the Write-off section.</span></span>
-    * <span data-ttu-id="8e67b-110">Afskrivningskladden er den finanskladde, der indeholder afskrivningstransaktioner, du opretter.</span><span class="sxs-lookup"><span data-stu-id="8e67b-110">The Write-off journal is the general journal that will hold the write-off transactions that you create.</span></span>  
-    * <span data-ttu-id="8e67b-111">Du kan knytte en årsagskode til alle afskrivninger.</span><span class="sxs-lookup"><span data-stu-id="8e67b-111">You can attach a reason code to every write-off.</span></span> <span data-ttu-id="8e67b-112">Du kan overskrive denne standard, når afskrivningen lavet.</span><span class="sxs-lookup"><span data-stu-id="8e67b-112">You can override this default at the time of the write-off.</span></span>  
-    * <span data-ttu-id="8e67b-113">Angiv dette til Ja, hvis du vil adskille momsen fra den oprindelige transaktion i afskrivningen.</span><span class="sxs-lookup"><span data-stu-id="8e67b-113">Set this to Yes if you want to separate the sales tax from the original transaction in the write-off.</span></span>  
-4. <span data-ttu-id="8e67b-114">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-114">Close the page.</span></span>
-5. <span data-ttu-id="8e67b-115">Gå til Kredit og inkasso > Opsætning > Debitorposteringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="8e67b-115">Go to Credit and collections > Setup > Customer posting profiles.</span></span>
-    * <span data-ttu-id="8e67b-116">Afskrivningskontoen vil blive brugt som udgiftskontoen eller tilbageføringsregulering i finanskladden</span><span class="sxs-lookup"><span data-stu-id="8e67b-116">The write-off account will be used as the expense account or reserve adjustment in the general journal</span></span>   
-6. <span data-ttu-id="8e67b-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-117">Close the page.</span></span>
+## <a name="set-up-the-write-off-parameters"></a><span data-ttu-id="a09c9-106">Konfigurer afskrivningsparametre</span><span class="sxs-lookup"><span data-stu-id="a09c9-106">Set up the write off parameters</span></span>
+1. <span data-ttu-id="a09c9-107">Gå til Kredit og inkasso > Opsætning > Debitorparametre.</span><span class="sxs-lookup"><span data-stu-id="a09c9-107">Go to Credit and collections > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="a09c9-108">Klik på fanen Rykkere.</span><span class="sxs-lookup"><span data-stu-id="a09c9-108">Click the Collections tab.</span></span>
+3. <span data-ttu-id="a09c9-109">Udvid eller skjul sektionen Afskrivning.</span><span class="sxs-lookup"><span data-stu-id="a09c9-109">Expand or collapse the Write-off section.</span></span>
+    * <span data-ttu-id="a09c9-110">Afskrivningskladden er den finanskladde, der indeholder afskrivningstransaktioner, du opretter.</span><span class="sxs-lookup"><span data-stu-id="a09c9-110">The Write-off journal is the general journal that will hold the write-off transactions that you create.</span></span>  
+    * <span data-ttu-id="a09c9-111">Du kan knytte en årsagskode til alle afskrivninger.</span><span class="sxs-lookup"><span data-stu-id="a09c9-111">You can attach a reason code to every write-off.</span></span> <span data-ttu-id="a09c9-112">Du kan overskrive denne standard, når afskrivningen lavet.</span><span class="sxs-lookup"><span data-stu-id="a09c9-112">You can override this default at the time of the write-off.</span></span>  
+    * <span data-ttu-id="a09c9-113">Angiv dette til Ja, hvis du vil adskille momsen fra den oprindelige transaktion i afskrivningen.</span><span class="sxs-lookup"><span data-stu-id="a09c9-113">Set this to Yes if you want to separate the sales tax from the original transaction in the write-off.</span></span>  
+4. <span data-ttu-id="a09c9-114">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-114">Close the page.</span></span>
+5. <span data-ttu-id="a09c9-115">Gå til Kredit og inkasso > Opsætning > Debitorposteringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="a09c9-115">Go to Credit and collections > Setup > Customer posting profiles.</span></span>
+    * <span data-ttu-id="a09c9-116">Afskrivningskontoen vil blive brugt som udgiftskontoen eller tilbageføringsregulering i finanskladden</span><span class="sxs-lookup"><span data-stu-id="a09c9-116">The write-off account will be used as the expense account or reserve adjustment in the general journal</span></span>   
+6. <span data-ttu-id="a09c9-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-117">Close the page.</span></span>
 
-## <a name="write-off-a-customer-balance-from-the-aged-balances-page"></a><span data-ttu-id="8e67b-118">Afskriv hele debitorsaldoen fra siden Aldersfordelte saldi.</span><span class="sxs-lookup"><span data-stu-id="8e67b-118">Write off a customer balance from the aged balances page</span></span>
-1. <span data-ttu-id="8e67b-119">Gå til Kredit > Rykkere > Aldersfordelte saldi.</span><span class="sxs-lookup"><span data-stu-id="8e67b-119">Go to Credit and collections > Collections > Aged balances.</span></span>
-2. <span data-ttu-id="8e67b-120">Marker rækken for den debitor, du vil afskrive.</span><span class="sxs-lookup"><span data-stu-id="8e67b-120">Mark the row for the customer that you want to write off.</span></span> <span data-ttu-id="8e67b-121">Du kan for eksempel markere linjen med Birch Company på den.</span><span class="sxs-lookup"><span data-stu-id="8e67b-121">For example, mark the line with Birch Company on it.</span></span>
-3. <span data-ttu-id="8e67b-122">Klik på Indsaml i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-122">On the Action Pane, click Collect.</span></span>
-4. <span data-ttu-id="8e67b-123">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="8e67b-123">Click Write off.</span></span>
-5. <span data-ttu-id="8e67b-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8e67b-124">Click OK.</span></span>
-6. <span data-ttu-id="8e67b-125">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-125">Close the page.</span></span>
-7. <span data-ttu-id="8e67b-126">Gå til Finans > Kladdeposteringer > Finanskladder.</span><span class="sxs-lookup"><span data-stu-id="8e67b-126">Go to General ledger > Journal entries > General journals.</span></span>
-8. <span data-ttu-id="8e67b-127">Vælg kladdebatchnummeret for den kladde, der indeholder din afskrivning.</span><span class="sxs-lookup"><span data-stu-id="8e67b-127">Select the journal batch number for the journal that contains your write-off.</span></span>
-    * <span data-ttu-id="8e67b-128">Der oprettes én linje for at tilbageføre debitorens saldo.</span><span class="sxs-lookup"><span data-stu-id="8e67b-128">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="8e67b-129">En eller flere linjer oprettes for at bogføre afskrivningen på afskrivningskontoen.</span><span class="sxs-lookup"><span data-stu-id="8e67b-129">One or more lines are created to post the write-off to the write-off account.</span></span>  
-9. <span data-ttu-id="8e67b-130">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-130">Close the page.</span></span>
-10. <span data-ttu-id="8e67b-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-131">Close the page.</span></span>
+## <a name="write-off-a-customer-balance-from-the-aged-balances-page"></a><span data-ttu-id="a09c9-118">Afskriv hele debitorsaldoen fra siden Aldersfordelte saldi.</span><span class="sxs-lookup"><span data-stu-id="a09c9-118">Write off a customer balance from the aged balances page</span></span>
+1. <span data-ttu-id="a09c9-119">Gå til Kredit > Rykkere > Aldersfordelte saldi.</span><span class="sxs-lookup"><span data-stu-id="a09c9-119">Go to Credit and collections > Collections > Aged balances.</span></span>
+2. <span data-ttu-id="a09c9-120">Marker rækken for den debitor, du vil afskrive.</span><span class="sxs-lookup"><span data-stu-id="a09c9-120">Mark the row for the customer that you want to write off.</span></span> <span data-ttu-id="a09c9-121">Du kan for eksempel markere linjen med Birch Company på den.</span><span class="sxs-lookup"><span data-stu-id="a09c9-121">For example, mark the line with Birch Company on it.</span></span>
+3. <span data-ttu-id="a09c9-122">Klik på Indsaml i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-122">On the Action Pane, click Collect.</span></span>
+4. <span data-ttu-id="a09c9-123">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="a09c9-123">Click Write off.</span></span>
+5. <span data-ttu-id="a09c9-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a09c9-124">Click OK.</span></span>
+6. <span data-ttu-id="a09c9-125">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-125">Close the page.</span></span>
+7. <span data-ttu-id="a09c9-126">Gå til Finans > Kladdeposteringer > Finanskladder.</span><span class="sxs-lookup"><span data-stu-id="a09c9-126">Go to General ledger > Journal entries > General journals.</span></span>
+8. <span data-ttu-id="a09c9-127">Vælg kladdebatchnummeret for den kladde, der indeholder din afskrivning.</span><span class="sxs-lookup"><span data-stu-id="a09c9-127">Select the journal batch number for the journal that contains your write-off.</span></span>
+    * <span data-ttu-id="a09c9-128">Der oprettes én linje for at tilbageføre debitorens saldo.</span><span class="sxs-lookup"><span data-stu-id="a09c9-128">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="a09c9-129">En eller flere linjer oprettes for at bogføre afskrivningen på afskrivningskontoen.</span><span class="sxs-lookup"><span data-stu-id="a09c9-129">One or more lines are created to post the write-off to the write-off account.</span></span>  
+9. <span data-ttu-id="a09c9-130">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-130">Close the page.</span></span>
+10. <span data-ttu-id="a09c9-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-131">Close the page.</span></span>
 
-## <a name="write-off-transactions-from-the-collections-form"></a><span data-ttu-id="8e67b-132">Afskriv transaktioner fra formen Rykkere.</span><span class="sxs-lookup"><span data-stu-id="8e67b-132">Write off transactions from the collections form.</span></span>
-1. <span data-ttu-id="8e67b-133">Gå til Kredit > Rykkere > Aldersfordelte saldi.</span><span class="sxs-lookup"><span data-stu-id="8e67b-133">Go to Credit and collections > Collections > Aged balances.</span></span>
-2. <span data-ttu-id="8e67b-134">Vælg navnet på den kunde, som har de posteringer, du vil afskrive.</span><span class="sxs-lookup"><span data-stu-id="8e67b-134">Select the name of the customer that has the transactions that you want to write off.</span></span> <span data-ttu-id="8e67b-135">Vælg for eksempel Cave Wholesales (US-004).</span><span class="sxs-lookup"><span data-stu-id="8e67b-135">For example, select Cave Wholesales (US-004).</span></span>
-3. <span data-ttu-id="8e67b-136">Markér rækken for den første transaktion.</span><span class="sxs-lookup"><span data-stu-id="8e67b-136">Mark the row for the first transaction.</span></span>
-4. <span data-ttu-id="8e67b-137">Markér rækken for den anden transaktion.</span><span class="sxs-lookup"><span data-stu-id="8e67b-137">Mark the row for the second transaction.</span></span>
-5. <span data-ttu-id="8e67b-138">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="8e67b-138">Click Write off.</span></span>
-6. <span data-ttu-id="8e67b-139">Skriv "Tab" feltet Årsagskommentar.</span><span class="sxs-lookup"><span data-stu-id="8e67b-139">In the Reason comment field, type 'Bad debts'.</span></span>
-7. <span data-ttu-id="8e67b-140">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8e67b-140">Click OK.</span></span>
-8. <span data-ttu-id="8e67b-141">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-141">Close the page.</span></span>
-9. <span data-ttu-id="8e67b-142">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-142">Close the page.</span></span>
-10. <span data-ttu-id="8e67b-143">Gå til Finans > Kladdeposteringer > Finanskladder.</span><span class="sxs-lookup"><span data-stu-id="8e67b-143">Go to General ledger > Journal entries > General journals.</span></span>
-11. <span data-ttu-id="8e67b-144">Vælg kladdebatchnummeret for den kladde, der indeholder din afskrivning.</span><span class="sxs-lookup"><span data-stu-id="8e67b-144">Select the journal batch number for the journal that contains your write-off.</span></span>
-    * <span data-ttu-id="8e67b-145">Der oprettes én linje for at tilbageføre debitorens saldo.</span><span class="sxs-lookup"><span data-stu-id="8e67b-145">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="8e67b-146">En eller flere linjer oprettes for at bogføre afskrivningen på afskrivningskontoen.</span><span class="sxs-lookup"><span data-stu-id="8e67b-146">One or more lines are created to post the write-off to the write-off account.</span></span>  
-12. <span data-ttu-id="8e67b-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-147">Close the page.</span></span>
-13. <span data-ttu-id="8e67b-148">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-148">Close the page.</span></span>
+## <a name="write-off-transactions-from-the-collections-form"></a><span data-ttu-id="a09c9-132">Afskriv transaktioner fra formen Rykkere.</span><span class="sxs-lookup"><span data-stu-id="a09c9-132">Write off transactions from the collections form.</span></span>
+1. <span data-ttu-id="a09c9-133">Gå til Kredit > Rykkere > Aldersfordelte saldi.</span><span class="sxs-lookup"><span data-stu-id="a09c9-133">Go to Credit and collections > Collections > Aged balances.</span></span>
+2. <span data-ttu-id="a09c9-134">Vælg navnet på den kunde, som har de posteringer, du vil afskrive.</span><span class="sxs-lookup"><span data-stu-id="a09c9-134">Select the name of the customer that has the transactions that you want to write off.</span></span> <span data-ttu-id="a09c9-135">Vælg for eksempel Cave Wholesales (US-004).</span><span class="sxs-lookup"><span data-stu-id="a09c9-135">For example, select Cave Wholesales (US-004).</span></span>
+3. <span data-ttu-id="a09c9-136">Markér rækken for den første transaktion.</span><span class="sxs-lookup"><span data-stu-id="a09c9-136">Mark the row for the first transaction.</span></span>
+4. <span data-ttu-id="a09c9-137">Markér rækken for den anden transaktion.</span><span class="sxs-lookup"><span data-stu-id="a09c9-137">Mark the row for the second transaction.</span></span>
+5. <span data-ttu-id="a09c9-138">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="a09c9-138">Click Write off.</span></span>
+6. <span data-ttu-id="a09c9-139">Skriv "Tab" feltet Årsagskommentar.</span><span class="sxs-lookup"><span data-stu-id="a09c9-139">In the Reason comment field, type 'Bad debts'.</span></span>
+7. <span data-ttu-id="a09c9-140">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a09c9-140">Click OK.</span></span>
+8. <span data-ttu-id="a09c9-141">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-141">Close the page.</span></span>
+9. <span data-ttu-id="a09c9-142">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-142">Close the page.</span></span>
+10. <span data-ttu-id="a09c9-143">Gå til Finans > Kladdeposteringer > Finanskladder.</span><span class="sxs-lookup"><span data-stu-id="a09c9-143">Go to General ledger > Journal entries > General journals.</span></span>
+11. <span data-ttu-id="a09c9-144">Vælg kladdebatchnummeret for den kladde, der indeholder din afskrivning.</span><span class="sxs-lookup"><span data-stu-id="a09c9-144">Select the journal batch number for the journal that contains your write-off.</span></span>
+    * <span data-ttu-id="a09c9-145">Der oprettes én linje for at tilbageføre debitorens saldo.</span><span class="sxs-lookup"><span data-stu-id="a09c9-145">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="a09c9-146">En eller flere linjer oprettes for at bogføre afskrivningen på afskrivningskontoen.</span><span class="sxs-lookup"><span data-stu-id="a09c9-146">One or more lines are created to post the write-off to the write-off account.</span></span>  
+12. <span data-ttu-id="a09c9-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-147">Close the page.</span></span>
+13. <span data-ttu-id="a09c9-148">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-148">Close the page.</span></span>
 
-## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a><span data-ttu-id="8e67b-149">Afskriv en faktura fra siden Åbne debitorfakturaer</span><span class="sxs-lookup"><span data-stu-id="8e67b-149">Write off an invoice from the Open customers invoices page</span></span>
-1. <span data-ttu-id="8e67b-150">Gå til Debitor > Fakturaer > Åbne debitorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="8e67b-150">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
-2. <span data-ttu-id="8e67b-151">Markér linjen for en faktura.</span><span class="sxs-lookup"><span data-stu-id="8e67b-151">Mark the line for an invoice.</span></span> <span data-ttu-id="8e67b-152">Du kan for eksempel markere linjen for CIV-000667.</span><span class="sxs-lookup"><span data-stu-id="8e67b-152">For example, mark the line for CIV-000667.</span></span>
-3. <span data-ttu-id="8e67b-153">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-153">On the Action Pane, click Invoice.</span></span>
-4. <span data-ttu-id="8e67b-154">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="8e67b-154">Click Write off.</span></span>
-5. <span data-ttu-id="8e67b-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8e67b-155">Click OK.</span></span>
-6. <span data-ttu-id="8e67b-156">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-156">Close the page.</span></span>
+## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a><span data-ttu-id="a09c9-149">Afskriv en faktura fra siden Åbne debitorfakturaer</span><span class="sxs-lookup"><span data-stu-id="a09c9-149">Write off an invoice from the Open customers invoices page</span></span>
+1. <span data-ttu-id="a09c9-150">Gå til Debitor > Fakturaer > Åbne debitorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="a09c9-150">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
+2. <span data-ttu-id="a09c9-151">Markér linjen for en faktura.</span><span class="sxs-lookup"><span data-stu-id="a09c9-151">Mark the line for an invoice.</span></span> <span data-ttu-id="a09c9-152">Du kan for eksempel markere linjen for CIV-000667.</span><span class="sxs-lookup"><span data-stu-id="a09c9-152">For example, mark the line for CIV-000667.</span></span>
+3. <span data-ttu-id="a09c9-153">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-153">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="a09c9-154">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="a09c9-154">Click Write off.</span></span>
+5. <span data-ttu-id="a09c9-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a09c9-155">Click OK.</span></span>
+6. <span data-ttu-id="a09c9-156">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-156">Close the page.</span></span>
 
-## <a name="write-off-a-customer-balance-from-the-customer-page"></a><span data-ttu-id="8e67b-157">Afskriv en debitorsaldo fra siden Kunde.</span><span class="sxs-lookup"><span data-stu-id="8e67b-157">Write off a customer balance from the customer page</span></span>
-1. <span data-ttu-id="8e67b-158">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="8e67b-158">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="8e67b-159">Vælg en debitorkonto.</span><span class="sxs-lookup"><span data-stu-id="8e67b-159">Select a customer account.</span></span> <span data-ttu-id="8e67b-160">Vælg for eksempel US-001 (Contoso Retail San Diego).</span><span class="sxs-lookup"><span data-stu-id="8e67b-160">For example, select US-001 (Contoso Retail San Diego).</span></span>
-3. <span data-ttu-id="8e67b-161">Klik på Indsaml i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-161">On the Action Pane, click Collect.</span></span>
-4. <span data-ttu-id="8e67b-162">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="8e67b-162">Click Write off.</span></span>
-5. <span data-ttu-id="8e67b-163">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8e67b-163">Click OK.</span></span>
-6. <span data-ttu-id="8e67b-164">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8e67b-164">Close the page.</span></span>
+## <a name="write-off-a-customer-balance-from-the-customer-page"></a><span data-ttu-id="a09c9-157">Afskriv en debitorsaldo fra siden Kunde.</span><span class="sxs-lookup"><span data-stu-id="a09c9-157">Write off a customer balance from the customer page</span></span>
+1. <span data-ttu-id="a09c9-158">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="a09c9-158">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="a09c9-159">Vælg en debitorkonto.</span><span class="sxs-lookup"><span data-stu-id="a09c9-159">Select a customer account.</span></span> <span data-ttu-id="a09c9-160">Vælg for eksempel US-001 (Contoso Retail San Diego).</span><span class="sxs-lookup"><span data-stu-id="a09c9-160">For example, select US-001 (Contoso Retail San Diego).</span></span>
+3. <span data-ttu-id="a09c9-161">Klik på Indsaml i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-161">On the Action Pane, click Collect.</span></span>
+4. <span data-ttu-id="a09c9-162">Klik på Afskriv.</span><span class="sxs-lookup"><span data-stu-id="a09c9-162">Click Write off.</span></span>
+5. <span data-ttu-id="a09c9-163">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a09c9-163">Click OK.</span></span>
+6. <span data-ttu-id="a09c9-164">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a09c9-164">Close the page.</span></span>
 

@@ -10,37 +10,37 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c7c36f348df39e9b91ddbc02237b3072c20e8ed
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f425058939bab48ce6ec89988804c05d53b2350f
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557168"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845723"
 ---
-# <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a><span data-ttu-id="71daa-103">Konfigurere klassifikationer for købsaftaler i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="71daa-103">Set up purchase agreement classifications in the public sector</span></span>
+# <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a><span data-ttu-id="dd3fe-103">Konfigurere klassifikationer for købsaftaler i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="dd3fe-103">Set up purchase agreement classifications in the public sector</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="71daa-104">Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler.</span><span class="sxs-lookup"><span data-stu-id="71daa-104">The purchase agreement classification allows you to control the administrative information that is available on purchase agreements.</span></span> 
+<span data-ttu-id="dd3fe-104">Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-104">The purchase agreement classification allows you to control the administrative information that is available on purchase agreements.</span></span> 
 
-<span data-ttu-id="71daa-105">Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="71daa-105">This procedure was created for the French public sector using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="dd3fe-105">Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-105">This procedure was created for the French public sector using the PSUS demo company data in the public sector partition.</span></span>
 
-1. <span data-ttu-id="71daa-106">Gå til Indkøb og forsyning > Opsætning > ..</span><span class="sxs-lookup"><span data-stu-id="71daa-106">Go to Procurement and sourcing > Setup > ..</span></span> <span data-ttu-id="71daa-107">> Købsaftaleklassifikation.</span><span class="sxs-lookup"><span data-stu-id="71daa-107">> Purchase agreement classification.</span></span>
-2. <span data-ttu-id="71daa-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="71daa-108">Click New.</span></span>
-3. <span data-ttu-id="71daa-109">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="71daa-109">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="71daa-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="71daa-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="71daa-111">Valgfrit: Vælg indstillingen Underleverandører for at medtage oplysninger om underleverandører.</span><span class="sxs-lookup"><span data-stu-id="71daa-111">Optional: Select the Subcontractors option to include information about subcontractors.</span></span>
-    * <span data-ttu-id="71daa-112">En købsaftale kan have en primære kontrahent, medkontrahenter og underleverandører.</span><span class="sxs-lookup"><span data-stu-id="71daa-112">A purchase agreement can have a prime contractor, co-contractors, and subcontractors.</span></span> <span data-ttu-id="71daa-113">Du kan tildele den primære kontrahent til den overordnede købsaftale og en medkontrahent eller underleverandør til specifikke underordnede aftaler.</span><span class="sxs-lookup"><span data-stu-id="71daa-113">You can assign the prime contractor to the parent purchase agreement and a co-contractor or subcontractor to specific child agreements.</span></span>  
-6. <span data-ttu-id="71daa-114">Valgfrit: Vælg indstillingen Certificeringer for at medtage oplysninger om certificeringer for kreditorer.</span><span class="sxs-lookup"><span data-stu-id="71daa-114">Optional: Select the Certifications option to include information about certifications for vendors.</span></span>
-    * <span data-ttu-id="71daa-115">Certificeringsoplysninger kan bruges til at oprette en rapport, som du kan bruge til at overvåge kreditorens overholdelse af bestemte krav.</span><span class="sxs-lookup"><span data-stu-id="71daa-115">Certification information can be used to generate a report that lets you monitor vendor compliance with certification requirements.</span></span>  
-7. <span data-ttu-id="71daa-116">Valgfrit: Vælg indstillingen Kræv direkte fakturering for at forhindre brug af aftræksordrer.</span><span class="sxs-lookup"><span data-stu-id="71daa-116">Optional: Select the Require direct invoicing option to prevent the use of release orders.</span></span>
-8. <span data-ttu-id="71daa-117">Valgfrit: Vælg indstillingen Aktiviteter for at medtage oplysninger om opgaver og milepæle.</span><span class="sxs-lookup"><span data-stu-id="71daa-117">Optional: Select the Activities option to include information about tasks and milestones.</span></span>
-9. <span data-ttu-id="71daa-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="71daa-118">Click Save.</span></span>
+1. <span data-ttu-id="dd3fe-106">Gå til Indkøb og forsyning > Opsætning > ..</span><span class="sxs-lookup"><span data-stu-id="dd3fe-106">Go to Procurement and sourcing > Setup > ..</span></span> <span data-ttu-id="dd3fe-107">> Købsaftaleklassifikation.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-107">> Purchase agreement classification.</span></span>
+2. <span data-ttu-id="dd3fe-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-108">Click New.</span></span>
+3. <span data-ttu-id="dd3fe-109">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-109">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="dd3fe-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="dd3fe-111">Valgfrit: Vælg indstillingen Underleverandører for at medtage oplysninger om underleverandører.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-111">Optional: Select the Subcontractors option to include information about subcontractors.</span></span>
+    * <span data-ttu-id="dd3fe-112">En købsaftale kan have en primære kontrahent, medkontrahenter og underleverandører.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-112">A purchase agreement can have a prime contractor, co-contractors, and subcontractors.</span></span> <span data-ttu-id="dd3fe-113">Du kan tildele den primære kontrahent til den overordnede købsaftale og en medkontrahent eller underleverandør til specifikke underordnede aftaler.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-113">You can assign the prime contractor to the parent purchase agreement and a co-contractor or subcontractor to specific child agreements.</span></span>  
+6. <span data-ttu-id="dd3fe-114">Valgfrit: Vælg indstillingen Certificeringer for at medtage oplysninger om certificeringer for kreditorer.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-114">Optional: Select the Certifications option to include information about certifications for vendors.</span></span>
+    * <span data-ttu-id="dd3fe-115">Certificeringsoplysninger kan bruges til at oprette en rapport, som du kan bruge til at overvåge kreditorens overholdelse af bestemte krav.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-115">Certification information can be used to generate a report that lets you monitor vendor compliance with certification requirements.</span></span>  
+7. <span data-ttu-id="dd3fe-116">Valgfrit: Vælg indstillingen Kræv direkte fakturering for at forhindre brug af aftræksordrer.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-116">Optional: Select the Require direct invoicing option to prevent the use of release orders.</span></span>
+8. <span data-ttu-id="dd3fe-117">Valgfrit: Vælg indstillingen Aktiviteter for at medtage oplysninger om opgaver og milepæle.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-117">Optional: Select the Activities option to include information about tasks and milestones.</span></span>
+9. <span data-ttu-id="dd3fe-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dd3fe-118">Click Save.</span></span>
 

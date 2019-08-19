@@ -1,71 +1,61 @@
 ---
 title: Oprette og tildele avancerede regelstrukturer
-description: Denne opgaveguide gennemgår oprettelse og tildeling af en avanceret regelstruktur til en kontostruktur.
+description: I dette emne forklares, hvordan du opretter og tildeler en avanceret regelstruktur i en kontostruktur.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd62254c20cf5d77677d03c7d7335fb793d7f5f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cff07c13553ea140f537160da7f93820d5e3f77a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558900"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834880"
 ---
-# <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="e2e53-103">Oprette og tildele avancerede regelstrukturer</span><span class="sxs-lookup"><span data-stu-id="e2e53-103">Create and assign advanced rule structures</span></span>
+# <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="d7790-103">Oprette og tildele avancerede regelstrukturer</span><span class="sxs-lookup"><span data-stu-id="d7790-103">Create and assign advanced rule structures</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e2e53-104">Denne opgaveguide gennemgår oprettelse og tildeling af en avanceret regelstruktur til en kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="e2e53-104">This task guide steps through creating and assigning an advanced rule structure to an account structure.</span></span> <span data-ttu-id="e2e53-105">Denne guide anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="e2e53-105">This guide uses the USMF demo company.</span></span>
+<span data-ttu-id="d7790-104">I dette emne forklares, hvordan du opretter og tildeler en avanceret regelstruktur i en kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="d7790-104">This topic explains how to create and assign an advanced rule structure to an account structure.</span></span> <span data-ttu-id="d7790-105">Denne guide anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="d7790-105">This guide uses the USMF demo company.</span></span>
 
+## <a name="create-an-advanced-rule-structure"></a><span data-ttu-id="d7790-106">Opret en avanceret regelstruktur</span><span class="sxs-lookup"><span data-stu-id="d7790-106">Create an advanced rule structure</span></span>
+1. <span data-ttu-id="d7790-107">Gå til Finans **Navigationsrude > Moduler > Finans > Kontoplan > Strukturer > Avancerede regelstrukturer**.</span><span class="sxs-lookup"><span data-stu-id="d7790-107">Go to **Navigation pane > Modules > General ledger > Chart of accounts > Structures > Advanced rule structures**.</span></span>
+2. <span data-ttu-id="d7790-108">Vælg **Ny** for at åbne dialogboksen Slip.</span><span class="sxs-lookup"><span data-stu-id="d7790-108">Select **New** to open the drop dialog.</span></span>
+3. <span data-ttu-id="d7790-109">I feltet **Avanceret regelstruktur** skal du skrive et navn, som beskriver regelstrukturen.</span><span class="sxs-lookup"><span data-stu-id="d7790-109">In the **Advanced rule structure** field, type a name to describe the rule structure.</span></span>
+4. <span data-ttu-id="d7790-110">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d7790-110">Select **OK**.</span></span>
+5. <span data-ttu-id="d7790-111">Vælg **Tilføj segment**.</span><span class="sxs-lookup"><span data-stu-id="d7790-111">Select **Add segment**.</span></span>
+6. <span data-ttu-id="d7790-112">Listen over segmenter, skal du vælge en økonomisk dimension.</span><span class="sxs-lookup"><span data-stu-id="d7790-112">In the list of segments, select a financial dimension.</span></span> <span data-ttu-id="d7790-113">For eksempel **Butik**.</span><span class="sxs-lookup"><span data-stu-id="d7790-113">For example, **Store**.</span></span>  
+7. <span data-ttu-id="d7790-114">Vælg **Tilføj segment**.</span><span class="sxs-lookup"><span data-stu-id="d7790-114">Select **Add segment**.</span></span>
+8. <span data-ttu-id="d7790-115">Vælg **Aktivér**.</span><span class="sxs-lookup"><span data-stu-id="d7790-115">Select **Activate**.</span></span>
 
-## <a name="create-an-advanced-rule-structure"></a><span data-ttu-id="e2e53-106">Opret en avanceret regelstruktur</span><span class="sxs-lookup"><span data-stu-id="e2e53-106">Create an advanced rule structure</span></span>
-1. <span data-ttu-id="e2e53-107">Gå til Finans > Kontoplan > Strukturer > Avancerede regelstrukturer.</span><span class="sxs-lookup"><span data-stu-id="e2e53-107">Go to General ledger > Chart of accounts > Structures > Advanced rule structures.</span></span>
-2. <span data-ttu-id="e2e53-108">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="e2e53-108">Click New to open the drop dialog.</span></span>
-3. <span data-ttu-id="e2e53-109">I feltet Avanceret regelstruktur skal du skrive et navn, som beskriver regelstrukturen.</span><span class="sxs-lookup"><span data-stu-id="e2e53-109">In the Advanced rule structure field, type a name to descritbe the rule structure.</span></span>
-4. <span data-ttu-id="e2e53-110">I feltet Beskrivelse skal du skrive en værdi for at beskrive strukturen.</span><span class="sxs-lookup"><span data-stu-id="e2e53-110">In the Description field, type a value to describe the structure.</span></span>
-5. <span data-ttu-id="e2e53-111">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="e2e53-111">Click OK.</span></span>
-6. <span data-ttu-id="e2e53-112">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="e2e53-112">Click Add segment.</span></span>
-7. <span data-ttu-id="e2e53-113">Listen over segmenter, skal du vælge en økonomisk dimension.</span><span class="sxs-lookup"><span data-stu-id="e2e53-113">In the list of segments, select a financial dimension.</span></span>
-    * <span data-ttu-id="e2e53-114">For eksempel Butik.</span><span class="sxs-lookup"><span data-stu-id="e2e53-114">For example, Store.</span></span>  
-8. <span data-ttu-id="e2e53-115">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="e2e53-115">Click Add segment.</span></span>
-9. <span data-ttu-id="e2e53-116">Klik på linket til den avancerede regelstruktur for at få den vist.</span><span class="sxs-lookup"><span data-stu-id="e2e53-116">In the list, click the link of the advanced rule structure to view it.</span></span>
-10. <span data-ttu-id="e2e53-117">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="e2e53-117">Click Activate.</span></span>
-11. <span data-ttu-id="e2e53-118">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="e2e53-118">Click Activate.</span></span>
-
-## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a><span data-ttu-id="e2e53-119">Anvende en avanceret regelstruktur for en kontostruktur</span><span class="sxs-lookup"><span data-stu-id="e2e53-119">Apply an advanced rule structure to an account structure</span></span>
-1. <span data-ttu-id="e2e53-120">Luk formularen.</span><span class="sxs-lookup"><span data-stu-id="e2e53-120">Close the form.</span></span>
-2. <span data-ttu-id="e2e53-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e2e53-121">Close the page.</span></span>
-3. <span data-ttu-id="e2e53-122">Gå til Finans > Diagram over konti > Strukturer > Konfigurere kontostrukturer.</span><span class="sxs-lookup"><span data-stu-id="e2e53-122">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
-4. <span data-ttu-id="e2e53-123">Søg på listen, og vælg den kontostruktur, som du vil anvende den avancerede regel for.</span><span class="sxs-lookup"><span data-stu-id="e2e53-123">In the list, find and select the account structure you want to apply the advanced rule to.</span></span>
-5. <span data-ttu-id="e2e53-124">Klik på navnet på kontostrukturen for at åbne den.</span><span class="sxs-lookup"><span data-stu-id="e2e53-124">Click the name of the account structure to open it.</span></span>
-6. <span data-ttu-id="e2e53-125">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="e2e53-125">Click Edit.</span></span>
-    * <span data-ttu-id="e2e53-126">Du kan også klikke på Avancerede regler, hvorefter du bliver bedt om at sætte kontostrukturen i udkasttilstand.</span><span class="sxs-lookup"><span data-stu-id="e2e53-126">You can also click Advanced rules and you will be prompted to put the account structure in Draft mode.</span></span>  
-7. <span data-ttu-id="e2e53-127">Klik på Avancerede regler.</span><span class="sxs-lookup"><span data-stu-id="e2e53-127">Click Advanced rules.</span></span>
-8. <span data-ttu-id="e2e53-128">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="e2e53-128">Click New to open the drop dialog.</span></span>
-9. <span data-ttu-id="e2e53-129">Skriv en værdi i feltet Avanceret regel.</span><span class="sxs-lookup"><span data-stu-id="e2e53-129">In the Advanced rule field, type a value.</span></span>
-10. <span data-ttu-id="e2e53-130">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="e2e53-130">In the Name field, type a value.</span></span>
-11. <span data-ttu-id="e2e53-131">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="e2e53-131">Click Create.</span></span>
-12. <span data-ttu-id="e2e53-132">Klik på Tilføj nyt kriterie.</span><span class="sxs-lookup"><span data-stu-id="e2e53-132">Click Add new criteria.</span></span>
-13. <span data-ttu-id="e2e53-133">Vælg hovedkontoen eller en økonomisk dimension i feltet Hvor.</span><span class="sxs-lookup"><span data-stu-id="e2e53-133">In the Where field, select main account or a financial dimension.</span></span>
-14. <span data-ttu-id="e2e53-134">Vælg en indstilling i feltet Operatør, f.eks. er mellem og inkluderer.</span><span class="sxs-lookup"><span data-stu-id="e2e53-134">In the Operator field, select an option, such as is between and includes.</span></span>
-15. <span data-ttu-id="e2e53-135">Skriv en værdi i feltet Værdi.</span><span class="sxs-lookup"><span data-stu-id="e2e53-135">In the Value field, type a value.</span></span>
-16. <span data-ttu-id="e2e53-136">Skriv en værdi i feltet via.</span><span class="sxs-lookup"><span data-stu-id="e2e53-136">In the through field, type a value.</span></span>
-17. <span data-ttu-id="e2e53-137">Klik på Tilføj for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="e2e53-137">Click Add to open the drop dialog.</span></span>
-18. <span data-ttu-id="e2e53-138">På listen, kan du finde den avancerede regelstruktur, som du vil bruge, når de kriterier, du har angivet, er opfyldt.</span><span class="sxs-lookup"><span data-stu-id="e2e53-138">In the list, find the advanced rule structure you want to use when the criteria you entered is met.</span></span>
-19. <span data-ttu-id="e2e53-139">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="e2e53-139">Click Add.</span></span>
-20. <span data-ttu-id="e2e53-140">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e2e53-140">Close the page.</span></span>
-21. <span data-ttu-id="e2e53-141">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="e2e53-141">Click Activate.</span></span>
-22. <span data-ttu-id="e2e53-142">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="e2e53-142">Click Activate.</span></span>
+## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a><span data-ttu-id="d7790-116">Anvende en avanceret regelstruktur for en kontostruktur</span><span class="sxs-lookup"><span data-stu-id="d7790-116">Apply an advanced rule structure to an account structure</span></span>
+1. <span data-ttu-id="d7790-117">Gå til **Navigationsrude > Moduler > Finans > Kontoplan > Strukturer > Konfigurer kontostrukturer**.</span><span class="sxs-lookup"><span data-stu-id="d7790-117">Go to **navigation pane > Modules > General ledger > Chart of accounts > Structures > Configure account structures**.</span></span>
+2. <span data-ttu-id="d7790-118">Søg på listen, og vælg den kontostruktur, som du vil anvende den avancerede regel for.</span><span class="sxs-lookup"><span data-stu-id="d7790-118">In the list, find and select the account structure you want to apply the advanced rule to.</span></span>
+3. <span data-ttu-id="d7790-119">Vælg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="d7790-119">Select **Edit**.</span></span> <span data-ttu-id="d7790-120">Du kan også vælge **Avancerede regler**, hvorefter du bliver bedt om at sætte kontostrukturen i **Kladdetilstand**.</span><span class="sxs-lookup"><span data-stu-id="d7790-120">You can also select **Advanced rules** and you will be prompted to put the account structure in **Draft mode**.</span></span>  
+4. <span data-ttu-id="d7790-121">Vælg **Avancerede regler**.</span><span class="sxs-lookup"><span data-stu-id="d7790-121">Select **Advanced rules**.</span></span>
+5. <span data-ttu-id="d7790-122">Vælg **Ny** for at åbne dialogboksen Slip.</span><span class="sxs-lookup"><span data-stu-id="d7790-122">Select **New** to open the drop dialog.</span></span>
+6. <span data-ttu-id="d7790-123">Skriv en værdi i feltet **Avanceret regel**.</span><span class="sxs-lookup"><span data-stu-id="d7790-123">In the **Advanced rule** field, type a value.</span></span>
+7. <span data-ttu-id="d7790-124">Skriv en værdi i feltet **Navn**.</span><span class="sxs-lookup"><span data-stu-id="d7790-124">In the **Name** field, type a value.</span></span>
+8. <span data-ttu-id="d7790-125">Vælg **Opret**.</span><span class="sxs-lookup"><span data-stu-id="d7790-125">Select **Create**.</span></span>
+9. <span data-ttu-id="d7790-126">Klik på **Tilføj nyt kriterie**.</span><span class="sxs-lookup"><span data-stu-id="d7790-126">Select **Add new criteria**.</span></span>
+10. <span data-ttu-id="d7790-127">Vælg hovedkontoen eller en økonomisk dimension i feltet **Hvor**.</span><span class="sxs-lookup"><span data-stu-id="d7790-127">In the **Where** field, select main account or a financial dimension.</span></span>
+11. <span data-ttu-id="d7790-128">Vælg en indstilling i feltet **Operatør**, f.eks. er **mellem** eller **inkluderer**.</span><span class="sxs-lookup"><span data-stu-id="d7790-128">In the **Operator** field, select an option, such as **is between** and **includes**.</span></span>
+12. <span data-ttu-id="d7790-129">Skriv en værdi i feltet **Værdi**.</span><span class="sxs-lookup"><span data-stu-id="d7790-129">In the **Value** field, type a value.</span></span>
+13. <span data-ttu-id="d7790-130">Skriv en værdi i feltet **værdi**.</span><span class="sxs-lookup"><span data-stu-id="d7790-130">In the **through** field, type a value.</span></span>
+14. <span data-ttu-id="d7790-131">Vælg **Tilføj** for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="d7790-131">Select **Add** to open the drop dialog.</span></span>
+15. <span data-ttu-id="d7790-132">På listen, kan du finde den avancerede regelstruktur, som du vil bruge, når de kriterier, du har angivet, er opfyldt.</span><span class="sxs-lookup"><span data-stu-id="d7790-132">In the list, find the advanced rule structure you want to use when the criteria you entered is met.</span></span>
+16. <span data-ttu-id="d7790-133">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="d7790-133">Select **Add**.</span></span>
+17. <span data-ttu-id="d7790-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d7790-134">Close the page.</span></span>
+18. <span data-ttu-id="d7790-135">Vælg **Aktivér**.</span><span class="sxs-lookup"><span data-stu-id="d7790-135">Select **Activate**.</span></span>
 

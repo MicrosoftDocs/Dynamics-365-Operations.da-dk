@@ -10,57 +10,57 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfe0f6995598757dcea824e1bb4f7ef8ab54a67b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8269e5119e45522373eca6cb8fb06bfb94a37566
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549915"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845564"
 ---
-# <a name="correct-inventory-tracking-information"></a><span data-ttu-id="073c2-103">Rette oplysninger om lagersproing</span><span class="sxs-lookup"><span data-stu-id="073c2-103">Correct inventory tracking information</span></span>
+# <a name="correct-inventory-tracking-information"></a><span data-ttu-id="91d02-103">Rette oplysninger om lagersproing</span><span class="sxs-lookup"><span data-stu-id="91d02-103">Correct inventory tracking information</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="073c2-104">Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde for at korrigere lagersporingsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="073c2-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="073c2-105">I dette eksempel vil vi opdatere oplysningerne for en batchstyret vare ved at ændre en forkert registreret batch til en anden batch.</span><span class="sxs-lookup"><span data-stu-id="073c2-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="073c2-106">Du kan gennemgå denne procedure i demodatafirmaet USPI eller bruge dine egne data.</span><span class="sxs-lookup"><span data-stu-id="073c2-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="073c2-107">Hvis du bruger dine egne data, skal du have en vare, der er batchaktiveret, og den må ikke være placeringsstyret.</span><span class="sxs-lookup"><span data-stu-id="073c2-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="073c2-108">Du skal også have oprettet et lagerkladdenavn for lageroverførsler.</span><span class="sxs-lookup"><span data-stu-id="073c2-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="073c2-109">Disse opgaver udføres normalt af en lagermedarbejder.</span><span class="sxs-lookup"><span data-stu-id="073c2-109">These tasks would normally be carried out by a warehouse employee.</span></span>
+<span data-ttu-id="91d02-104">Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde for at korrigere lagersporingsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="91d02-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="91d02-105">I dette eksempel vil vi opdatere oplysningerne for en batchstyret vare ved at ændre en forkert registreret batch til en anden batch.</span><span class="sxs-lookup"><span data-stu-id="91d02-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="91d02-106">Du kan gennemgå denne procedure i demodatafirmaet USPI eller bruge dine egne data.</span><span class="sxs-lookup"><span data-stu-id="91d02-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="91d02-107">Hvis du bruger dine egne data, skal du have en vare, der er batchaktiveret, og den må ikke være placeringsstyret.</span><span class="sxs-lookup"><span data-stu-id="91d02-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="91d02-108">Du skal også have oprettet et lagerkladdenavn for lageroverførsler.</span><span class="sxs-lookup"><span data-stu-id="91d02-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="91d02-109">Disse opgaver udføres normalt af en lagermedarbejder.</span><span class="sxs-lookup"><span data-stu-id="91d02-109">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="073c2-110">Oprette en lageroverførselskladde</span><span class="sxs-lookup"><span data-stu-id="073c2-110">Create an inventory transfer journal</span></span>
-1. <span data-ttu-id="073c2-111">Gå til Overfør.</span><span class="sxs-lookup"><span data-stu-id="073c2-111">Go to Transfer.</span></span>
-2. <span data-ttu-id="073c2-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="073c2-112">Click New.</span></span>
-3. <span data-ttu-id="073c2-113">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="073c2-113">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="073c2-114">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="073c2-114">Click OK.</span></span>
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="91d02-110">Oprette en lageroverførselskladde</span><span class="sxs-lookup"><span data-stu-id="91d02-110">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="91d02-111">Gå til Overfør.</span><span class="sxs-lookup"><span data-stu-id="91d02-111">Go to Transfer.</span></span>
+2. <span data-ttu-id="91d02-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="91d02-112">Click New.</span></span>
+3. <span data-ttu-id="91d02-113">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="91d02-113">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="91d02-114">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="91d02-114">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a><span data-ttu-id="073c2-115">Oprette journallinjer</span><span class="sxs-lookup"><span data-stu-id="073c2-115">Create journal lines</span></span>
-1. <span data-ttu-id="073c2-116">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="073c2-116">Click New.</span></span>
-2. <span data-ttu-id="073c2-117">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="073c2-117">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="073c2-118">Hvis du bruger USPI, skal du vælge vare M5003.</span><span class="sxs-lookup"><span data-stu-id="073c2-118">If you are using USPI, select item M5003.</span></span>  
-3. <span data-ttu-id="073c2-119">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="073c2-119">In the Quantity field, enter a number.</span></span>
-4. <span data-ttu-id="073c2-120">Klik på fanen Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="073c2-120">Click the Inventory dimensions tab.</span></span>
-5. <span data-ttu-id="073c2-121">Indtast eller vælg en værdi i feltet Batchnummer.</span><span class="sxs-lookup"><span data-stu-id="073c2-121">In the Batch number field, enter or select a value.</span></span>
-6. <span data-ttu-id="073c2-122">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="073c2-122">In the Site field, enter or select a value.</span></span>
-7. <span data-ttu-id="073c2-123">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="073c2-123">In the Warehouse field, enter or select a value.</span></span>
-8. <span data-ttu-id="073c2-124">Indtast eller vælg en værdi i feltet Batchnummer.</span><span class="sxs-lookup"><span data-stu-id="073c2-124">In the Batch number field, enter or select a value.</span></span>
+## <a name="create-journal-lines"></a><span data-ttu-id="91d02-115">Oprette journallinjer</span><span class="sxs-lookup"><span data-stu-id="91d02-115">Create journal lines</span></span>
+1. <span data-ttu-id="91d02-116">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="91d02-116">Click New.</span></span>
+2. <span data-ttu-id="91d02-117">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="91d02-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="91d02-118">Hvis du bruger USPI, skal du vælge vare M5003.</span><span class="sxs-lookup"><span data-stu-id="91d02-118">If you are using USPI, select item M5003.</span></span>  
+3. <span data-ttu-id="91d02-119">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="91d02-119">In the Quantity field, enter a number.</span></span>
+4. <span data-ttu-id="91d02-120">Klik på fanen Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="91d02-120">Click the Inventory dimensions tab.</span></span>
+5. <span data-ttu-id="91d02-121">Indtast eller vælg en værdi i feltet Batchnummer.</span><span class="sxs-lookup"><span data-stu-id="91d02-121">In the Batch number field, enter or select a value.</span></span>
+6. <span data-ttu-id="91d02-122">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="91d02-122">In the Site field, enter or select a value.</span></span>
+7. <span data-ttu-id="91d02-123">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="91d02-123">In the Warehouse field, enter or select a value.</span></span>
+8. <span data-ttu-id="91d02-124">Indtast eller vælg en værdi i feltet Batchnummer.</span><span class="sxs-lookup"><span data-stu-id="91d02-124">In the Batch number field, enter or select a value.</span></span>
 
-## <a name="post-the-journal"></a><span data-ttu-id="073c2-125">Bogfør kladden</span><span class="sxs-lookup"><span data-stu-id="073c2-125">Post the journal</span></span>
-1. <span data-ttu-id="073c2-126">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="073c2-126">Click Post.</span></span>
-2. <span data-ttu-id="073c2-127">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="073c2-127">Click OK.</span></span>
+## <a name="post-the-journal"></a><span data-ttu-id="91d02-125">Bogfør kladden</span><span class="sxs-lookup"><span data-stu-id="91d02-125">Post the journal</span></span>
+1. <span data-ttu-id="91d02-126">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="91d02-126">Click Post.</span></span>
+2. <span data-ttu-id="91d02-127">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="91d02-127">Click OK.</span></span>
 
-## <a name="check-tracing-information"></a><span data-ttu-id="073c2-128">Kontrollere sporingsoplysninger</span><span class="sxs-lookup"><span data-stu-id="073c2-128">Check tracing information</span></span>
-1. <span data-ttu-id="073c2-129">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="073c2-129">Click Inventory.</span></span>
-2. <span data-ttu-id="073c2-130">Klik på Spor.</span><span class="sxs-lookup"><span data-stu-id="073c2-130">Click Trace.</span></span>
-3. <span data-ttu-id="073c2-131">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="073c2-131">Click OK.</span></span>
-    * <span data-ttu-id="073c2-132">Ved hjælp af disse sporingsoplysninger kan du spore, hvilken batch du rettede lageret fra.</span><span class="sxs-lookup"><span data-stu-id="073c2-132">Using this tracing information you can back trace which batch you corrected inventory from.</span></span>  <span data-ttu-id="073c2-133">Du kan også bruge siden Varesporing til at se disse oplysninger.</span><span class="sxs-lookup"><span data-stu-id="073c2-133">You can also use the Item tracing page to see this information.</span></span>  
-4. <span data-ttu-id="073c2-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="073c2-134">Close the page.</span></span>
+## <a name="check-tracing-information"></a><span data-ttu-id="91d02-128">Kontrollere sporingsoplysninger</span><span class="sxs-lookup"><span data-stu-id="91d02-128">Check tracing information</span></span>
+1. <span data-ttu-id="91d02-129">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="91d02-129">Click Inventory.</span></span>
+2. <span data-ttu-id="91d02-130">Klik på Spor.</span><span class="sxs-lookup"><span data-stu-id="91d02-130">Click Trace.</span></span>
+3. <span data-ttu-id="91d02-131">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="91d02-131">Click OK.</span></span>
+    * <span data-ttu-id="91d02-132">Ved hjælp af disse sporingsoplysninger kan du spore, hvilken batch du rettede lageret fra.</span><span class="sxs-lookup"><span data-stu-id="91d02-132">Using this tracing information you can back trace which batch you corrected inventory from.</span></span>  <span data-ttu-id="91d02-133">Du kan også bruge siden Varesporing til at se disse oplysninger.</span><span class="sxs-lookup"><span data-stu-id="91d02-133">You can also use the Item tracing page to see this information.</span></span>  
+4. <span data-ttu-id="91d02-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="91d02-134">Close the page.</span></span>
 
-## <a name="check-inventory-transactions"></a><span data-ttu-id="073c2-135">Kontrollere lagerposteringer</span><span class="sxs-lookup"><span data-stu-id="073c2-135">Check inventory transactions</span></span>
-1. <span data-ttu-id="073c2-136">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="073c2-136">Click Inventory.</span></span>
-2. <span data-ttu-id="073c2-137">Klik på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="073c2-137">Click Transactions.</span></span>
-    * <span data-ttu-id="073c2-138">Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.</span><span class="sxs-lookup"><span data-stu-id="073c2-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
+## <a name="check-inventory-transactions"></a><span data-ttu-id="91d02-135">Kontrollere lagerposteringer</span><span class="sxs-lookup"><span data-stu-id="91d02-135">Check inventory transactions</span></span>
+1. <span data-ttu-id="91d02-136">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="91d02-136">Click Inventory.</span></span>
+2. <span data-ttu-id="91d02-137">Klik på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="91d02-137">Click Transactions.</span></span>
+    * <span data-ttu-id="91d02-138">Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.</span><span class="sxs-lookup"><span data-stu-id="91d02-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
 

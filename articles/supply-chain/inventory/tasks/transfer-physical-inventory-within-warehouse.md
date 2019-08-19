@@ -10,62 +10,62 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 79b3e91be8aeab10188b6d3925d44a9ec1106406
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554178"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845251"
 ---
-# <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="368a5-103">Overføre fysisk lager på lagersted</span><span class="sxs-lookup"><span data-stu-id="368a5-103">Transfer physical inventory within the warehouse</span></span>
+# <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="0d77f-103">Overføre fysisk lager på lagersted</span><span class="sxs-lookup"><span data-stu-id="0d77f-103">Transfer physical inventory within the warehouse</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="368a5-104">Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde med henblik på at registrere flytning af en vare fra én lokalitet på et lagersted til en anden.</span><span class="sxs-lookup"><span data-stu-id="368a5-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another.</span></span> <span data-ttu-id="368a5-105">Du skal have oprettet et lagerkladdenavn for lageroverførsler, før du begynder på dette.</span><span class="sxs-lookup"><span data-stu-id="368a5-105">You need to have an inventory journal name set up for inventory transfers before you start this.</span></span> <span data-ttu-id="368a5-106">Du kan gennemgå denne procedure i demodatafirmaet USMF ved hjælp af eksempel-værdierne, der vises, eller du kan bruge dine egne data, hvis du har konfigurerede produkter og lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="368a5-106">You can walk through this procedure in demo data company USMF using the example values that are shown, or using you can use your own data if you have products and locations set up.</span></span> <span data-ttu-id="368a5-107">Disse opgaver udføres normalt af en lagermedarbejder.</span><span class="sxs-lookup"><span data-stu-id="368a5-107">These tasks would normally be carried out by a warehouse employee.</span></span>
+<span data-ttu-id="0d77f-104">Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde med henblik på at registrere flytning af en vare fra én lokalitet på et lagersted til en anden.</span><span class="sxs-lookup"><span data-stu-id="0d77f-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another.</span></span> <span data-ttu-id="0d77f-105">Du skal have oprettet et lagerkladdenavn for lageroverførsler, før du begynder på dette.</span><span class="sxs-lookup"><span data-stu-id="0d77f-105">You need to have an inventory journal name set up for inventory transfers before you start this.</span></span> <span data-ttu-id="0d77f-106">Du kan gennemgå denne procedure i demodatafirmaet USMF ved hjælp af eksempel-værdierne, der vises, eller du kan bruge dine egne data, hvis du har konfigurerede produkter og lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="0d77f-106">You can walk through this procedure in demo data company USMF using the example values that are shown, or using you can use your own data if you have products and locations set up.</span></span> <span data-ttu-id="0d77f-107">Disse opgaver udføres normalt af en lagermedarbejder.</span><span class="sxs-lookup"><span data-stu-id="0d77f-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="368a5-108">Oprette en lageroverførselskladde</span><span class="sxs-lookup"><span data-stu-id="368a5-108">Create an inventory transfer journal</span></span>
-1. <span data-ttu-id="368a5-109">Gå til Overfør.</span><span class="sxs-lookup"><span data-stu-id="368a5-109">Go to Transfer.</span></span>
-2. <span data-ttu-id="368a5-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="368a5-110">Click New.</span></span>
-3. <span data-ttu-id="368a5-111">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="368a5-111">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="368a5-112">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="368a5-112">Click OK.</span></span>
-    * <span data-ttu-id="368a5-113">Der er mulighed for at angive 'Fra' og 'Til'-dimensioner for hver kladdelinje.</span><span class="sxs-lookup"><span data-stu-id="368a5-113">There is the option to specify 'From' and 'To' dimensions for each journal line.</span></span> <span data-ttu-id="368a5-114">Disse er væsentlige for denne kladdetype.</span><span class="sxs-lookup"><span data-stu-id="368a5-114">These are essential for this journal type.</span></span> <span data-ttu-id="368a5-115">Du kan overflytte varer til lokalitet ved hjælp af forskellige regler.</span><span class="sxs-lookup"><span data-stu-id="368a5-115">You can transfer items to locations using different rules.</span></span> <span data-ttu-id="368a5-116">I dette eksempel vil vi overføre en vare inden for det samme lager fra en nummerpladestyret lokalitet til en lokalitet, der ikke er nummerpladestyret.</span><span class="sxs-lookup"><span data-stu-id="368a5-116">In this example we’ll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.</span></span>   
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="0d77f-108">Oprette en lageroverførselskladde</span><span class="sxs-lookup"><span data-stu-id="0d77f-108">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="0d77f-109">Gå til Overfør.</span><span class="sxs-lookup"><span data-stu-id="0d77f-109">Go to Transfer.</span></span>
+2. <span data-ttu-id="0d77f-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="0d77f-110">Click New.</span></span>
+3. <span data-ttu-id="0d77f-111">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="0d77f-111">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="0d77f-112">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="0d77f-112">Click OK.</span></span>
+    * <span data-ttu-id="0d77f-113">Der er mulighed for at angive 'Fra' og 'Til'-dimensioner for hver kladdelinje.</span><span class="sxs-lookup"><span data-stu-id="0d77f-113">There is the option to specify 'From' and 'To' dimensions for each journal line.</span></span> <span data-ttu-id="0d77f-114">Disse er væsentlige for denne kladdetype.</span><span class="sxs-lookup"><span data-stu-id="0d77f-114">These are essential for this journal type.</span></span> <span data-ttu-id="0d77f-115">Du kan overflytte varer til lokalitet ved hjælp af forskellige regler.</span><span class="sxs-lookup"><span data-stu-id="0d77f-115">You can transfer items to locations using different rules.</span></span> <span data-ttu-id="0d77f-116">I dette eksempel vil vi overføre en vare inden for det samme lager fra en nummerpladestyret lokalitet til en lokalitet, der ikke er nummerpladestyret.</span><span class="sxs-lookup"><span data-stu-id="0d77f-116">In this example we’ll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.</span></span>   
 
-## <a name="create-journal-lines"></a><span data-ttu-id="368a5-117">Oprette journallinjer</span><span class="sxs-lookup"><span data-stu-id="368a5-117">Create journal lines</span></span>
-1. <span data-ttu-id="368a5-118">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="368a5-118">Click New.</span></span>
-2. <span data-ttu-id="368a5-119">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="368a5-119">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-120">Hvis du bruger USMF, kan du vælge 'A0001'.</span><span class="sxs-lookup"><span data-stu-id="368a5-120">If you are using USMF, you can select 'A0001'.</span></span>  
-3. <span data-ttu-id="368a5-121">Indtast eller vælg en værdi i feltet Fra sted.</span><span class="sxs-lookup"><span data-stu-id="368a5-121">In the From site field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-122">Hvis du bruger USMF, kan du vælge '2'.</span><span class="sxs-lookup"><span data-stu-id="368a5-122">If you are using USMF, you can select '2'.</span></span>  
-4. <span data-ttu-id="368a5-123">Indtast eller vælg en værdi i feltet Til sted.</span><span class="sxs-lookup"><span data-stu-id="368a5-123">In the To site field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-124">Hvis du bruger USMF, kan du vælge '2'.</span><span class="sxs-lookup"><span data-stu-id="368a5-124">If you are using USMF, you can select '2'.</span></span>  
-5. <span data-ttu-id="368a5-125">Indtast eller vælg en værdi i feltet Fra lagersted.</span><span class="sxs-lookup"><span data-stu-id="368a5-125">In the From warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-126">Hvis du bruger USMF, kan du vælge '24'.</span><span class="sxs-lookup"><span data-stu-id="368a5-126">If you are using USMF, you can select '24'.</span></span>  
-6. <span data-ttu-id="368a5-127">Indtast eller vælg en værdi i feltet Til lagersted.</span><span class="sxs-lookup"><span data-stu-id="368a5-127">In the To warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-128">Hvis du bruger USMF, kan du vælge '24'.</span><span class="sxs-lookup"><span data-stu-id="368a5-128">If you are using USMF, you can select '24'.</span></span>  
-7. <span data-ttu-id="368a5-129">Indtast eller vælg en værdi i feltet Fra lokalitet.</span><span class="sxs-lookup"><span data-stu-id="368a5-129">In the From location field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-130">Hvis du bruger USMF, kan du vælge 'FL-001'.</span><span class="sxs-lookup"><span data-stu-id="368a5-130">If you are using USMF, you can select 'FL-001'.</span></span>  
-8. <span data-ttu-id="368a5-131">Indtast eller vælg en værdi i feltet Til lokalitet.</span><span class="sxs-lookup"><span data-stu-id="368a5-131">In the To location field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-132">Hvis du bruger USMF, kan du vælge 'BULK-001'.</span><span class="sxs-lookup"><span data-stu-id="368a5-132">If you are using USMF, you can select 'BULK-001'.</span></span>  
-9. <span data-ttu-id="368a5-133">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="368a5-133">In the Quantity field, enter a number.</span></span>
-10. <span data-ttu-id="368a5-134">Klik på fanen Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="368a5-134">Click the Inventory dimensions tab.</span></span>
-11. <span data-ttu-id="368a5-135">Indtast eller vælg en værdi i feltet Nummerplade.</span><span class="sxs-lookup"><span data-stu-id="368a5-135">In the License plate field, enter or select a value.</span></span>
-    * <span data-ttu-id="368a5-136">Hvis du bruger USMF, kan du vælge '24'.</span><span class="sxs-lookup"><span data-stu-id="368a5-136">If you are using USMF, you can select '24'.</span></span>  
-12. <span data-ttu-id="368a5-137">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="368a5-137">Click Save.</span></span>
+## <a name="create-journal-lines"></a><span data-ttu-id="0d77f-117">Oprette journallinjer</span><span class="sxs-lookup"><span data-stu-id="0d77f-117">Create journal lines</span></span>
+1. <span data-ttu-id="0d77f-118">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="0d77f-118">Click New.</span></span>
+2. <span data-ttu-id="0d77f-119">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="0d77f-119">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-120">Hvis du bruger USMF, kan du vælge 'A0001'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-120">If you are using USMF, you can select 'A0001'.</span></span>  
+3. <span data-ttu-id="0d77f-121">Indtast eller vælg en værdi i feltet Fra sted.</span><span class="sxs-lookup"><span data-stu-id="0d77f-121">In the From site field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-122">Hvis du bruger USMF, kan du vælge '2'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-122">If you are using USMF, you can select '2'.</span></span>  
+4. <span data-ttu-id="0d77f-123">Indtast eller vælg en værdi i feltet Til sted.</span><span class="sxs-lookup"><span data-stu-id="0d77f-123">In the To site field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-124">Hvis du bruger USMF, kan du vælge '2'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-124">If you are using USMF, you can select '2'.</span></span>  
+5. <span data-ttu-id="0d77f-125">Indtast eller vælg en værdi i feltet Fra lagersted.</span><span class="sxs-lookup"><span data-stu-id="0d77f-125">In the From warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-126">Hvis du bruger USMF, kan du vælge '24'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-126">If you are using USMF, you can select '24'.</span></span>  
+6. <span data-ttu-id="0d77f-127">Indtast eller vælg en værdi i feltet Til lagersted.</span><span class="sxs-lookup"><span data-stu-id="0d77f-127">In the To warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-128">Hvis du bruger USMF, kan du vælge '24'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-128">If you are using USMF, you can select '24'.</span></span>  
+7. <span data-ttu-id="0d77f-129">Indtast eller vælg en værdi i feltet Fra lokalitet.</span><span class="sxs-lookup"><span data-stu-id="0d77f-129">In the From location field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-130">Hvis du bruger USMF, kan du vælge 'FL-001'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-130">If you are using USMF, you can select 'FL-001'.</span></span>  
+8. <span data-ttu-id="0d77f-131">Indtast eller vælg en værdi i feltet Til lokalitet.</span><span class="sxs-lookup"><span data-stu-id="0d77f-131">In the To location field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-132">Hvis du bruger USMF, kan du vælge 'BULK-001'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-132">If you are using USMF, you can select 'BULK-001'.</span></span>  
+9. <span data-ttu-id="0d77f-133">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="0d77f-133">In the Quantity field, enter a number.</span></span>
+10. <span data-ttu-id="0d77f-134">Klik på fanen Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="0d77f-134">Click the Inventory dimensions tab.</span></span>
+11. <span data-ttu-id="0d77f-135">Indtast eller vælg en værdi i feltet Nummerplade.</span><span class="sxs-lookup"><span data-stu-id="0d77f-135">In the License plate field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d77f-136">Hvis du bruger USMF, kan du vælge '24'.</span><span class="sxs-lookup"><span data-stu-id="0d77f-136">If you are using USMF, you can select '24'.</span></span>  
+12. <span data-ttu-id="0d77f-137">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="0d77f-137">Click Save.</span></span>
 
-## <a name="post-the-inventory-transfer-journal"></a><span data-ttu-id="368a5-138">Bogfør lageroverførselskladden</span><span class="sxs-lookup"><span data-stu-id="368a5-138">Post the inventory transfer journal</span></span>
-1. <span data-ttu-id="368a5-139">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="368a5-139">Click Post.</span></span>
-2. <span data-ttu-id="368a5-140">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="368a5-140">Click OK.</span></span>
+## <a name="post-the-inventory-transfer-journal"></a><span data-ttu-id="0d77f-138">Bogfør lageroverførselskladden</span><span class="sxs-lookup"><span data-stu-id="0d77f-138">Post the inventory transfer journal</span></span>
+1. <span data-ttu-id="0d77f-139">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="0d77f-139">Click Post.</span></span>
+2. <span data-ttu-id="0d77f-140">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="0d77f-140">Click OK.</span></span>
 
-## <a name="view-inventory-transactions"></a><span data-ttu-id="368a5-141">Få vist lagertransaktioner</span><span class="sxs-lookup"><span data-stu-id="368a5-141">View inventory transactions</span></span>
-1. <span data-ttu-id="368a5-142">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="368a5-142">Click Inventory.</span></span>
-2. <span data-ttu-id="368a5-143">Klik på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="368a5-143">Click Transactions.</span></span>
-    * <span data-ttu-id="368a5-144">Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.</span><span class="sxs-lookup"><span data-stu-id="368a5-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
+## <a name="view-inventory-transactions"></a><span data-ttu-id="0d77f-141">Få vist lagertransaktioner</span><span class="sxs-lookup"><span data-stu-id="0d77f-141">View inventory transactions</span></span>
+1. <span data-ttu-id="0d77f-142">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="0d77f-142">Click Inventory.</span></span>
+2. <span data-ttu-id="0d77f-143">Klik på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="0d77f-143">Click Transactions.</span></span>
+    * <span data-ttu-id="0d77f-144">Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.</span><span class="sxs-lookup"><span data-stu-id="0d77f-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
 

@@ -10,56 +10,56 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fffd623104dc403e230128c9234521ad1e39c7bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 401b01a6128babd6ed345342a65705a0262540e8
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568322"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837944"
 ---
-# <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="931b6-103">Føje en beregningspolitik for kanban-mængder til en kanban-regel</span><span class="sxs-lookup"><span data-stu-id="931b6-103">Add a kanban quantity calculation policy to a kanban rule</span></span>
+# <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="8937b-103">Føje en beregningspolitik for kanban-mængder til en kanban-regel</span><span class="sxs-lookup"><span data-stu-id="8937b-103">Add a kanban quantity calculation policy to a kanban rule</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="931b6-104">Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kanban-mængde og føje den til en kanban-regel til optimering af kanban-størrelse og mængde.</span><span class="sxs-lookup"><span data-stu-id="931b6-104">This procedure focuses on creating a kanban quantity calculation policy and adding it to a kanban rule to optimize the kanban size and quantities.</span></span> <span data-ttu-id="931b6-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="931b6-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="931b6-106">Denne procedure er beregnet til værdistrømlederen.</span><span class="sxs-lookup"><span data-stu-id="931b6-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="931b6-107">Denne procedure er en forudsætning for oprettelse af proceduren Beregn kanban-mængdeforslag.</span><span class="sxs-lookup"><span data-stu-id="931b6-107">This procedure is a prerequisite for creating the procedure Calculate kanban quantity suggestions.</span></span> 
+<span data-ttu-id="8937b-104">Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kanban-mængde og føje den til en kanban-regel til optimering af kanban-størrelse og mængde.</span><span class="sxs-lookup"><span data-stu-id="8937b-104">This procedure focuses on creating a kanban quantity calculation policy and adding it to a kanban rule to optimize the kanban size and quantities.</span></span> <span data-ttu-id="8937b-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="8937b-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8937b-106">Denne procedure er beregnet til værdistrømlederen.</span><span class="sxs-lookup"><span data-stu-id="8937b-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="8937b-107">Denne procedure er en forudsætning for oprettelse af proceduren Beregn kanban-mængdeforslag.</span><span class="sxs-lookup"><span data-stu-id="8937b-107">This procedure is a prerequisite for creating the procedure Calculate kanban quantity suggestions.</span></span> 
 
 
-## <a name="create-a-kanban-quantity-calculation-policy"></a><span data-ttu-id="931b6-108">Opret en politik til beregning af kanban-mængde</span><span class="sxs-lookup"><span data-stu-id="931b6-108">Create a kanban quantity calculation policy</span></span>
-1. <span data-ttu-id="931b6-109">Gå til Produktionsstyring > Periodiske opgaver > Beregning af kanban-mængde > Politikker for beregning af kanban-mængder.</span><span class="sxs-lookup"><span data-stu-id="931b6-109">Go to Production control > Periodic tasks > Kanban quantity calculation > Kanban quantity calculation policies.</span></span>
-2. <span data-ttu-id="931b6-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="931b6-110">Click New.</span></span>
-3. <span data-ttu-id="931b6-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="931b6-111">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="931b6-112">Skriv f.eks. Speaker2016.</span><span class="sxs-lookup"><span data-stu-id="931b6-112">For example, type Speaker2016.</span></span>  
-4. <span data-ttu-id="931b6-113">Klik på rullelisten i feltet Behovsplan for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="931b6-113">In the Master plan field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="931b6-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="931b6-114">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="931b6-115">Vælg StaticPlan for at beregne behov.</span><span class="sxs-lookup"><span data-stu-id="931b6-115">Select StaticPlan to calculate demand.</span></span>  
-6. <span data-ttu-id="931b6-116">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="931b6-116">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="931b6-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="931b6-117">Click Save.</span></span>
-8. <span data-ttu-id="931b6-118">Indtast "1" i feltet Mindste kanban-mængde.</span><span class="sxs-lookup"><span data-stu-id="931b6-118">In the Minimum kanban quantity field, enter '1'.</span></span>
-    * <span data-ttu-id="931b6-119">Dette er det ekstra antal kanbans, der er medtaget i beregningen af kanban-mængder.</span><span class="sxs-lookup"><span data-stu-id="931b6-119">This is the additional number of kanbans that is included in the kanban quantity calculation.</span></span>  
-9. <span data-ttu-id="931b6-120">Indstil Sikkerhedsfaktor til "1".</span><span class="sxs-lookup"><span data-stu-id="931b6-120">Set Safety factor to '1'.</span></span>
-    * <span data-ttu-id="931b6-121">Dette er den faktor, der bruges til at beregne den ekstra mængde sikkerhedslager.</span><span class="sxs-lookup"><span data-stu-id="931b6-121">This is the factor that is used to calculate additional quantity of safety stock.</span></span>  
-10. <span data-ttu-id="931b6-122">Angiv "30" i feltet Dage forud.</span><span class="sxs-lookup"><span data-stu-id="931b6-122">In the Days ahead field, enter '30'.</span></span>
-    * <span data-ttu-id="931b6-123">Dette er det antal dage før beregningsdatoen af kanban-mængde, der er medtager i behovsberegningen.</span><span class="sxs-lookup"><span data-stu-id="931b6-123">This is the number of days prior to the kanban quantity calculation date that is included in the demand calculation.</span></span>  
-11. <span data-ttu-id="931b6-124">Angiv "30" i feltet Dage bagud.</span><span class="sxs-lookup"><span data-stu-id="931b6-124">In the Days behind field, enter '30'.</span></span>
-    * <span data-ttu-id="931b6-125">Dette er antallet af dage regnet fra den kanban-mængdeberegningsdato, der er medtaget i efterspørgselsberegningen.</span><span class="sxs-lookup"><span data-stu-id="931b6-125">This is the number of days forward from the kanban quantity calculation date that is included in the demand calculation.</span></span>  <span data-ttu-id="931b6-126">Formlen bruges til beregningen vises med de faktiske værdier.</span><span class="sxs-lookup"><span data-stu-id="931b6-126">The formula used for the calculation is shown with the actual values.</span></span> <span data-ttu-id="931b6-127">For eksempel, Kanban-mængde = ((gennemsnitlig daglig efterspørgsel x 2.00) + sikkerhedslager)/produktmængde pr. håndteringsenhed + 1</span><span class="sxs-lookup"><span data-stu-id="931b6-127">For example,  Kanban quantity = ((Average daily demand x lead time x 2.00) / Product quantity per handling unit) + 1</span></span>  
-12. <span data-ttu-id="931b6-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="931b6-128">Close the page.</span></span>
+## <a name="create-a-kanban-quantity-calculation-policy"></a><span data-ttu-id="8937b-108">Opret en politik til beregning af kanban-mængde</span><span class="sxs-lookup"><span data-stu-id="8937b-108">Create a kanban quantity calculation policy</span></span>
+1. <span data-ttu-id="8937b-109">Gå til Produktionsstyring > Periodiske opgaver > Beregning af kanban-mængde > Politikker for beregning af kanban-mængder.</span><span class="sxs-lookup"><span data-stu-id="8937b-109">Go to Production control > Periodic tasks > Kanban quantity calculation > Kanban quantity calculation policies.</span></span>
+2. <span data-ttu-id="8937b-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8937b-110">Click New.</span></span>
+3. <span data-ttu-id="8937b-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="8937b-111">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="8937b-112">Skriv f.eks. Speaker2016.</span><span class="sxs-lookup"><span data-stu-id="8937b-112">For example, type Speaker2016.</span></span>  
+4. <span data-ttu-id="8937b-113">Klik på rullelisten i feltet Behovsplan for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8937b-113">In the Master plan field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="8937b-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8937b-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="8937b-115">Vælg StaticPlan for at beregne behov.</span><span class="sxs-lookup"><span data-stu-id="8937b-115">Select StaticPlan to calculate demand.</span></span>  
+6. <span data-ttu-id="8937b-116">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8937b-116">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="8937b-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8937b-117">Click Save.</span></span>
+8. <span data-ttu-id="8937b-118">Indtast "1" i feltet Mindste kanban-mængde.</span><span class="sxs-lookup"><span data-stu-id="8937b-118">In the Minimum kanban quantity field, enter '1'.</span></span>
+    * <span data-ttu-id="8937b-119">Dette er det ekstra antal kanbans, der er medtaget i beregningen af kanban-mængder.</span><span class="sxs-lookup"><span data-stu-id="8937b-119">This is the additional number of kanbans that is included in the kanban quantity calculation.</span></span>  
+9. <span data-ttu-id="8937b-120">Indstil Sikkerhedsfaktor til "1".</span><span class="sxs-lookup"><span data-stu-id="8937b-120">Set Safety factor to '1'.</span></span>
+    * <span data-ttu-id="8937b-121">Dette er den faktor, der bruges til at beregne den ekstra mængde sikkerhedslager.</span><span class="sxs-lookup"><span data-stu-id="8937b-121">This is the factor that is used to calculate additional quantity of safety stock.</span></span>  
+10. <span data-ttu-id="8937b-122">Angiv "30" i feltet Dage forud.</span><span class="sxs-lookup"><span data-stu-id="8937b-122">In the Days ahead field, enter '30'.</span></span>
+    * <span data-ttu-id="8937b-123">Dette er det antal dage før beregningsdatoen af kanban-mængde, der er medtager i behovsberegningen.</span><span class="sxs-lookup"><span data-stu-id="8937b-123">This is the number of days prior to the kanban quantity calculation date that is included in the demand calculation.</span></span>  
+11. <span data-ttu-id="8937b-124">Angiv "30" i feltet Dage bagud.</span><span class="sxs-lookup"><span data-stu-id="8937b-124">In the Days behind field, enter '30'.</span></span>
+    * <span data-ttu-id="8937b-125">Dette er antallet af dage regnet fra den kanban-mængdeberegningsdato, der er medtaget i efterspørgselsberegningen.</span><span class="sxs-lookup"><span data-stu-id="8937b-125">This is the number of days forward from the kanban quantity calculation date that is included in the demand calculation.</span></span>  <span data-ttu-id="8937b-126">Formlen bruges til beregningen vises med de faktiske værdier.</span><span class="sxs-lookup"><span data-stu-id="8937b-126">The formula used for the calculation is shown with the actual values.</span></span> <span data-ttu-id="8937b-127">For eksempel, Kanban-mængde = ((gennemsnitlig daglig efterspørgsel x 2.00) + sikkerhedslager)/produktmængde pr. håndteringsenhed + 1</span><span class="sxs-lookup"><span data-stu-id="8937b-127">For example,  Kanban quantity = ((Average daily demand x lead time x 2.00) / Product quantity per handling unit) + 1</span></span>  
+12. <span data-ttu-id="8937b-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8937b-128">Close the page.</span></span>
 
-## <a name="add-the-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="931b6-129">Føj politikken til beregning af kanban-mængde til en kanban-regel</span><span class="sxs-lookup"><span data-stu-id="931b6-129">Add the kanban quantity calculation policy to a kanban rule</span></span>
-1. <span data-ttu-id="931b6-130">Gå til Administration af produktoplysninger > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="931b6-130">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-2. <span data-ttu-id="931b6-131">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="931b6-131">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="931b6-132">Vælg kanban-regel 000020 for denne procedure.</span><span class="sxs-lookup"><span data-stu-id="931b6-132">Select kanban rule 000020 for this procedure.</span></span>  
-3. <span data-ttu-id="931b6-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="931b6-133">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="931b6-134">Slå udvidelse af sektionen Politikker for beregning af kanban-mængder til/fra.</span><span class="sxs-lookup"><span data-stu-id="931b6-134">Toggle the expansion of the Kanban quantity calculation policies section.</span></span>
-5. <span data-ttu-id="931b6-135">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="931b6-135">Click Add.</span></span>
-    * <span data-ttu-id="931b6-136">Tilføj politik for beregning af den kanban-mængde, du lige har oprettet i forrige underopgave.</span><span class="sxs-lookup"><span data-stu-id="931b6-136">Add the kanban quantity calculation policy that you have just created in the previous sub-task.</span></span>  
-6. <span data-ttu-id="931b6-137">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="931b6-137">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="931b6-138">Klik på rullelisten i feltet Navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="931b6-138">In the Name field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="931b6-139">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="931b6-139">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="931b6-140">Vælg politikken, Speaker2016, du lige har oprettet i forrige underopgave.</span><span class="sxs-lookup"><span data-stu-id="931b6-140">Select the policy Speaker2016 that you have just created in the previous sub-task.</span></span>  
+## <a name="add-the-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="8937b-129">Føj politikken til beregning af kanban-mængde til en kanban-regel</span><span class="sxs-lookup"><span data-stu-id="8937b-129">Add the kanban quantity calculation policy to a kanban rule</span></span>
+1. <span data-ttu-id="8937b-130">Gå til Administration af produktoplysninger > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="8937b-130">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="8937b-131">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8937b-131">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="8937b-132">Vælg kanban-regel 000020 for denne procedure.</span><span class="sxs-lookup"><span data-stu-id="8937b-132">Select kanban rule 000020 for this procedure.</span></span>  
+3. <span data-ttu-id="8937b-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8937b-133">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="8937b-134">Slå udvidelse af sektionen Politikker for beregning af kanban-mængder til/fra.</span><span class="sxs-lookup"><span data-stu-id="8937b-134">Toggle the expansion of the Kanban quantity calculation policies section.</span></span>
+5. <span data-ttu-id="8937b-135">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="8937b-135">Click Add.</span></span>
+    * <span data-ttu-id="8937b-136">Tilføj politik for beregning af den kanban-mængde, du lige har oprettet i forrige underopgave.</span><span class="sxs-lookup"><span data-stu-id="8937b-136">Add the kanban quantity calculation policy that you have just created in the previous sub-task.</span></span>  
+6. <span data-ttu-id="8937b-137">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8937b-137">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="8937b-138">Klik på rullelisten i feltet Navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8937b-138">In the Name field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="8937b-139">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8937b-139">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="8937b-140">Vælg politikken, Speaker2016, du lige har oprettet i forrige underopgave.</span><span class="sxs-lookup"><span data-stu-id="8937b-140">Select the policy Speaker2016 that you have just created in the previous sub-task.</span></span>  
 

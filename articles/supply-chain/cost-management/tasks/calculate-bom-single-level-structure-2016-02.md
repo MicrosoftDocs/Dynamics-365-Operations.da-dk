@@ -10,37 +10,37 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f74f8e4efc4474693f0a5b543c1300c3b64ecda0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1968703c7e9662b5cccdb71d049010bb4bd4534
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563221"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836498"
 ---
-# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="f4e15-103">Beregne en stykliste ved hjælp af en enkelt struktur (februar 2016)</span><span class="sxs-lookup"><span data-stu-id="f4e15-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
+# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="67447-103">Beregne en stykliste ved hjælp af en enkelt struktur (februar 2016)</span><span class="sxs-lookup"><span data-stu-id="67447-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f4e15-104">Denne procedure viser, hvordan omkostningerne for et færdigt produkt beregnes ved hjælp af udfoldning på enkeltniveau, der er baseret på efterkalkulationsarket.</span><span class="sxs-lookup"><span data-stu-id="f4e15-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="f4e15-105">Det er den sjette opgave i styklisteberegningsserien.</span><span class="sxs-lookup"><span data-stu-id="f4e15-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="f4e15-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="f4e15-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="67447-104">Denne procedure viser, hvordan omkostningerne for et færdigt produkt beregnes ved hjælp af udfoldning på enkeltniveau, der er baseret på efterkalkulationsarket.</span><span class="sxs-lookup"><span data-stu-id="67447-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="67447-105">Det er den sjette opgave i styklisteberegningsserien.</span><span class="sxs-lookup"><span data-stu-id="67447-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="67447-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="67447-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="f4e15-107">Gå til Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="f4e15-107">Go to Released products.</span></span>
-2. <span data-ttu-id="f4e15-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="f4e15-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="f4e15-109">Vælg produktet BOM_1.</span><span class="sxs-lookup"><span data-stu-id="f4e15-109">Select product BOM_1.</span></span>  
-3. <span data-ttu-id="f4e15-110">Klik på Administrer omkostninger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="f4e15-110">On the Action Pane, click Manage costs.</span></span>
-4. <span data-ttu-id="f4e15-111">Klik på Varepris.</span><span class="sxs-lookup"><span data-stu-id="f4e15-111">Click Item price.</span></span>
-5. <span data-ttu-id="f4e15-112">Klik på Beregn varens kostpris.</span><span class="sxs-lookup"><span data-stu-id="f4e15-112">Click Calculate item cost.</span></span>
-    * <span data-ttu-id="f4e15-113">Du skal måske klikke på ellipseknappen (...) for at se denne indstilling i den øverste menu.</span><span class="sxs-lookup"><span data-stu-id="f4e15-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
-6. <span data-ttu-id="f4e15-114">Klik på rullelisten i feltet Efterkalkulationsversion for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="f4e15-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="f4e15-115">I dette eksempel skal du vælge 10.</span><span class="sxs-lookup"><span data-stu-id="f4e15-115">For this demo, select 10.</span></span> <span data-ttu-id="f4e15-116">Dette er den samme efterkalkulationsversion, som bruges til at føje kostprisen til komponenterne.</span><span class="sxs-lookup"><span data-stu-id="f4e15-116">This is the same costing version used for adding the cost price to the components.</span></span>  
-7. <span data-ttu-id="f4e15-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f4e15-117">Click OK.</span></span>
-8. <span data-ttu-id="f4e15-118">Klik på Vis beregningsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="f4e15-118">Click View calculation details.</span></span>
-    * <span data-ttu-id="f4e15-119">Du skal måske klikke på ellipseknappen (...) for at se denne indstilling i den øverste menu.</span><span class="sxs-lookup"><span data-stu-id="f4e15-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="f4e15-120">Her er kompositionen af omkostningerne: • 10 er afledt af ITEM_A, 10 fra ITEM_B, 10 fra BOM_2.</span><span class="sxs-lookup"><span data-stu-id="f4e15-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="f4e15-121">Der er i dette tilfælde ingen oplysninger om BOM_2, fordi den blev angivet som en standardomkostning på 10, men ikke blev angivet gennem beregning.</span><span class="sxs-lookup"><span data-stu-id="f4e15-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="f4e15-122">• 7 afledes fra opstillingstiden, der er en konstant omkostning, og yderligere 7 afledes fra procestidshandlingen (proces).</span><span class="sxs-lookup"><span data-stu-id="f4e15-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="f4e15-123">• Der findes også andre beløb, der svarer til indirekte omkostninger.</span><span class="sxs-lookup"><span data-stu-id="f4e15-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
-9. <span data-ttu-id="f4e15-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="f4e15-124">@SysTaskRecorder:_RequestClose</span></span>
+1. <span data-ttu-id="67447-107">Gå til Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="67447-107">Go to Released products.</span></span>
+2. <span data-ttu-id="67447-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="67447-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="67447-109">Vælg produktet BOM_1.</span><span class="sxs-lookup"><span data-stu-id="67447-109">Select product BOM_1.</span></span>  
+3. <span data-ttu-id="67447-110">Klik på Administrer omkostninger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="67447-110">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="67447-111">Klik på Varepris.</span><span class="sxs-lookup"><span data-stu-id="67447-111">Click Item price.</span></span>
+5. <span data-ttu-id="67447-112">Klik på Beregn varens kostpris.</span><span class="sxs-lookup"><span data-stu-id="67447-112">Click Calculate item cost.</span></span>
+    * <span data-ttu-id="67447-113">Du skal måske klikke på ellipseknappen (...) for at se denne indstilling i den øverste menu.</span><span class="sxs-lookup"><span data-stu-id="67447-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
+6. <span data-ttu-id="67447-114">Klik på rullelisten i feltet Efterkalkulationsversion for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="67447-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="67447-115">I dette eksempel skal du vælge 10.</span><span class="sxs-lookup"><span data-stu-id="67447-115">For this demo, select 10.</span></span> <span data-ttu-id="67447-116">Dette er den samme efterkalkulationsversion, som bruges til at føje kostprisen til komponenterne.</span><span class="sxs-lookup"><span data-stu-id="67447-116">This is the same costing version used for adding the cost price to the components.</span></span>  
+7. <span data-ttu-id="67447-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="67447-117">Click OK.</span></span>
+8. <span data-ttu-id="67447-118">Klik på Vis beregningsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="67447-118">Click View calculation details.</span></span>
+    * <span data-ttu-id="67447-119">Du skal måske klikke på ellipseknappen (...) for at se denne indstilling i den øverste menu.</span><span class="sxs-lookup"><span data-stu-id="67447-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="67447-120">Her er kompositionen af omkostningerne: • 10 er afledt af ITEM_A, 10 fra ITEM_B, 10 fra BOM_2.</span><span class="sxs-lookup"><span data-stu-id="67447-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="67447-121">Der er i dette tilfælde ingen oplysninger om BOM_2, fordi den blev angivet som en standardomkostning på 10, men ikke blev angivet gennem beregning.</span><span class="sxs-lookup"><span data-stu-id="67447-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="67447-122">• 7 afledes fra opstillingstiden, der er en konstant omkostning, og yderligere 7 afledes fra procestidshandlingen (proces).</span><span class="sxs-lookup"><span data-stu-id="67447-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="67447-123">• Der findes også andre beløb, der svarer til indirekte omkostninger.</span><span class="sxs-lookup"><span data-stu-id="67447-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
+9. <span data-ttu-id="67447-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="67447-124">@SysTaskRecorder:_RequestClose</span></span>
 
