@@ -3,28 +3,29 @@ title: Dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505788"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862898"
 ---
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjob
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Når du vil oprette og administrere dataimport- og -eksportjob i Microsoft Dynamics 365 for Finance and Operations, skal du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
 
@@ -129,8 +130,8 @@ Et job kan sikres efter roller, brugere og juridisk enhed på samme tid.
 ## <a name="run-the-import-or-export-job"></a>Kør import- eller eksportjob
 Du kan køre et job én gang ved at vælge knappen **Import** eller **Eksport**, når du har defineret jobbet. Du kan konfigurere et tilbagevendende job ved at vælge **Opret tilbagevendende datajob**.
 
-[!NOTE]
-Et import- eller eksportjob kan køres asynkront ved at vælge knappen **Importer** eller **Eksporter**. Asynkron kørsel bruger den asynkron struktur i Finance and Operations, som er forskellig fra batchstrukturen. Dog kan den asynkrone struktur ligesom batchstrukturen underkastes begrænsning, og derfor bliver jobbet muligvis ikke udført straks. Job kan også køres synkront ved at vælge **Importer nu** eller **Eksporter nu**. Dette starter jobbet med det samme og er nyttigt, hvis asynkron kørsel eller et batch ikke starter på grund af begrænsning. Jobbene kan også udføres i et batch ved at vælge **Kør i batch**-indstillingen. Batchressourcer er omfattet af begrænsning, så batchjobbet starter muligvis ikke med det samme. Den asynkrone indstilling er nyttig, når brugere interagerer direkte med brugergrænsefladen og ikke er superbrugere, som kan forstå batchplanlægning. Brug af et batch er en anden mulighed, hvis store mængder skal eksporteres eller importeres. Batchjob kan planlægges til at køre på en bestemt batchgruppe, hvilket giver mulighed for større kontrol set fra et belastningsjusteringsperspektiv. Hvis asynkrone kørsler og batchkørsler begge underlægges begrænsning på grund af høj ressourceudnyttelse i systemet, kan den synkrone version af import/eksport bruges som en øjeblikkelig løsning. Den synkrone mulighed starter med det samme og blokerer brugergrænsefladen, fordi den kører synkront. Browservinduet skal forblive åbent, når der udføres synkrone handlinger.
+> [!NOTE]
+> Et import- eller eksportjob kan køres asynkront ved at vælge knappen **Importer** eller **Eksporter**. Asynkron kørsel bruger den asynkron struktur i Finance and Operations, som er forskellig fra batchstrukturen. Dog kan den asynkrone struktur ligesom batchstrukturen underkastes begrænsning, og derfor bliver jobbet muligvis ikke udført straks. Job kan også køres synkront ved at vælge **Importer nu** eller **Eksporter nu**. Dette starter jobbet med det samme og er nyttigt, hvis asynkron kørsel eller et batch ikke starter på grund af begrænsning. Jobbene kan også udføres i et batch ved at vælge **Kør i batch**-indstillingen. Batchressourcer er omfattet af begrænsning, så batchjobbet starter muligvis ikke med det samme. Den asynkrone indstilling er nyttig, når brugere interagerer direkte med brugergrænsefladen og ikke er superbrugere, som kan forstå batchplanlægning. Brug af et batch er en anden mulighed, hvis store mængder skal eksporteres eller importeres. Batchjob kan planlægges til at køre på en bestemt batchgruppe, hvilket giver mulighed for større kontrol set fra et belastningsjusteringsperspektiv. Hvis asynkrone kørsler og batchkørsler begge underlægges begrænsning på grund af høj ressourceudnyttelse i systemet, kan den synkrone version af import/eksport bruges som en øjeblikkelig løsning. Den synkrone mulighed starter med det samme og blokerer brugergrænsefladen, fordi den kører synkront. Browservinduet skal forblive åbent, når der udføres synkrone handlinger.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Kontroller, at jobbet kørte som forventet
 Jobhistorikken er tilgængelig i forbindelse med fejlfinding og undersøgelse på både import- og eksportjob. Kørsler af historiske job er organiseret efter tidsintervaller.
@@ -145,14 +146,16 @@ Hver jobkørsel indeholder følgende oplysninger:
 Oplysningerne om kørslen viser tilstanden for hver dataenhed, som jobbet behandlede. Derfor kan du hurtigt finde følgende oplysninger:
 
 - Hvilke enheder blev behandlet.
-- For en enhed, hvor mange poster blev behandlet korrekt, og hvor mange mislykkedes
-- De midlertidige poster for hver enhed
+- For en enhed, hvor mange poster der blev behandlet korrekt, og hvor mange der mislykkedes.
+- De midlertidige poster for hver enhed.
 
 Du kan hente de midlertidige data i en fil til eksportjob, eller du kan hente dem som en pakke til import- og eksportjob.
 
 På grundlag af oplysningerne i kørslen, kan du også åbne kørselslogfilen.
 
 ## <a name="clean-up-the-staging-tables"></a>Ryd op i de midlertidige tabeller
+Med start i Platform update 29 er denne funktionalitet blevet udfaset. Den er erstattet af en ny version af oprydningsfunktionalitet af jobhistorik, der er forklaret nedenfor.
+
 Du kan rydde op i midlertidige tabeller ved hjælp af funktionen **Oprydning i midlertidige filer** i arbejdsområdet **Datastyring**. Du kan bruge følgende indstillinger til at vælge, hvilke poster der skal slettes fra de midlertidige tabeller:
 
 - **Enhed** – Hvis der kun angives en enhed, slettes alle poster fra den pågældende enheds midlertidig tabel. Vælg denne indstilling for at rydde op i alle dataene for enheden på tværs af alle dataprojekter og alle job.
@@ -160,3 +163,37 @@ Du kan rydde op i midlertidige tabeller ved hjælp af funktionen **Oprydning i m
 - **Dataprojekter** – Hvis der kun er markeret et dataprojekt, slettes alle poster for alle enheder og på tværs af alle job for det valgte dataprojekt.
 
 Du kan også kombinere indstillingerne for yderligere at begrænse det postsæt, der slettes.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Oprydning af jobhistorik (tilgængelig i Platform update 29 og nyere)
+
+Funktionen til oprydning i jobhistorik i datastyring skal bruges til at planlægge en regelmæssig oprydning af udførelseshistorikken. Denne funktionalitet erstatter den tidligere oprydningsfunktion til midlertidig tabel, som nu udfases. Følgende tabeller vil blive ryddet op af oprydningsprocessen.
+
+-   Alle midlertidige tabeller
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+Funktionaliteten kan tilgås fra **Datastyring \> Oprydning i jobhistorik**.
+
+### <a name="scheduling-parameters"></a>Planlægningsparametre
+
+Når oprydningsprocessen planlægges, skal følgende parametre angives for at definere oprydningskriterierne.
+
+-   **Antal dage, historikken skal bevares** – Denne indstilling bruges til at kontrollere den mængde udførelseshistorik, der skal bibeholdes. Det er angivet i antal dage. Når oprydningsjobbet er planlagt som et tilbagevendende batchjob, fungerer denne indstilling som en tidsramme, der bevæger sig kontinuerligt, og som altid efterlader historikken intakt i det angivne antal dage, mens resten slettes. Standarden er 7 dage.
+
+-   **Antal timer til at udføre jobbet** – Afhængigt af den mængde historik, der skal ryddes op, kan den samlede udførelsestid for oprydningsjobbet variere fra et par minutter til et par timer. Da oprydning af de nævnte tabeller skal foretages, når der ikke er nogen anden datahåndteringsaktivitet i systemet, bliver det vigtigt at sikre, at oprydningsjobbet udføres og afsluttes, før forretningsaktiviteten påbegyndes.
+
+    Der kan angives en maksimal gennemførelsestid ved at angive en maksimumgrænse for det antal timer, jobbet skal køre, ved hjælp af denne indstilling. Oprydningslogikken går gennem ét jobudførelses-id ad gangen i en kronologisk arrangeret sekvens, med det ældste først for oprydning af relateret udførelseshistorik. Det vil stoppe plukning af nye udførelses-id'er til oprydning, når den resterende udførelsesvarighed er inden for de sidste 10 % af den angivne varighed. I nogle tilfælde forventes det, at oprydningsjobbet fortsætter ud over den angivne maksimale tid. Dette afhænger i høj grad af antallet af poster, der skal slettes for det aktuelle udførelses-id, som blev startet, før tærsklen på 10 % blev nået. Den oprydning, der blev startet, skal være fuldført for at sikre dataintegriteten, hvilket betyder, at oprydning vil fortsætte på trods af overskridelse af den angivne grænse. Når dette er gennemført, bliver nye udførelses-id'er ikke opsamlet, og oprydningsjobbet er fuldført. Den resterende udførelseshistorik, der ikke blev ryddet op på grund af manglende gennemførelsestid, vil blive medtaget, næste gang oprydningsjobbet er planlagt. Standard- og minimumværdien for denne indstilling er angivet til 2 timer.
+
+-   **Tilbagevendende batch** – Oprydningsjobbet kan køres som en manuel engangsudførelse, eller det kan også planlægges til tilbagevendende udførelse i batch. Batchen kan planlægges ved hjælp af indstillingerne **Kør i baggrunden**, som er standardbatchopsætning.

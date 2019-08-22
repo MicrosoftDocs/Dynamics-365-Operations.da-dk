@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3c3873991c33347c1358dc98381c6b5f4c6ce2aa
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553194"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846889"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -51,7 +51,7 @@ Den eksisterende funktion til økonomikladder (finanskladde, anlægsaktivkladde,
 
 ## <a name="issues-with-one-voucher"></a>Problemer med ét bilag
 
-Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilbageførsel af postering, afstemning af en reskontrokladde til Finans, regnskabsaflæggelse og meget mere. (Du kan finde flere oplysninger om problemer, der kan opstå under udligning, f.eks. i [Enkelt bilag med flere debitor- eller kreditorposter](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) For at kunne fungere og rapportere korrekt kræver disse processer og rapporter transaktionsdetaljer. Selvom nogle scenarier stadig kan fungere korrekt, afhængigt af organisationens opsætning, er der ofte problemer, når flere posteringer angives i ét bilag.
+Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilbageførsel af postering, afstemning af en reskontrokladde til Finans, regnskabsaflæggelse og meget mere. (Du kan finde flere oplysninger om problemer, der kan opstå under udligning, f.eks. i [Enkelt bilag med flere debitor- eller kreditorposter](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) For at kunne fungere og rapportere korrekt kræver disse processer og rapporter transaktionsdetaljer. Selvom nogle scenarier stadig kan fungere korrekt, afhængigt af organisationens opsætning, er der ofte problemer, når flere posteringer angives i ét bilag.
 
 Du bogfører f.eks. følgende bilag med flere linjer.
 

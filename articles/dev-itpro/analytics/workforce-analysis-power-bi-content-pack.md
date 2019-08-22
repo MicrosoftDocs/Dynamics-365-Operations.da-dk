@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 75d323c5d3adf4a880f8b464e03ee35cd6335e14
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544281"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850175"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
@@ -56,7 +56,7 @@ I følgende tabel vises de metrikker, som vises på hver enkelt rapport.
 | Medarbejdernes fødselsdage                               | Fødselsdage denne måned, fødselsdage næste måned, medarbejderfødselsdage og fødselsdage efter måned og afdeling |
 | Masseansættelsesprojekter                               | Samlede masseansættelsesprojekter, masseansættelsesprojekter efter status, masseansættelsesprojekter efter afdeling og ejer, masseansættelsesprojekter efter job og masseansættelsesprojekter |
 
-Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Sørg for at downloade Power BI-indhold til **Nøgletal for arbejdsstyrke**, der gælder for den version af Microsoft Dynamics 365, du bruger.
 

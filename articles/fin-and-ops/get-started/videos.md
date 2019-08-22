@@ -3,13 +3,13 @@ title: Videoer til Finance and Operations
 description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Dynamics 365 for Finance and Operations, som er tilgængelige på YouTube og andre websteder.
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
-ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
+ms.openlocfilehash: d2bf2c45f6298205dbed67f6921234757a2b736a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625391"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852074"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videoer til Finance and Operations
 
@@ -71,6 +71,8 @@ Videoerne er angivet efter funktion, så rul ned for at se hele listen med video
 
 #### <a name="intelligence"></a>Intelligence
 
+- [Sådan redigerer du en integreret rapport i et analytisk arbejdsområde](https://youtu.be/_8WlwmSggcQ)
+- [Sådan integrerer du PowerBI.com-rapporter i Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
 - [Brug din egen database (BYOD) i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Sådan bruges Power BI-indhold til omkostningsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 

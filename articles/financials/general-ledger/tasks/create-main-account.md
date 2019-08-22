@@ -3,25 +3,25 @@ title: Oprette en hovedkonto
 description: Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende kontoplan.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5fd332121bae2be55ada39b33e5f381096c9b74d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58418291d3732c1acbccd097205fa7e64a967038
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563710"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846577"
 ---
 # <a name="create-a-main-account"></a>Oprette en hovedkonto
 
@@ -29,28 +29,26 @@ ms.locfileid: "1563710"
 
 Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende kontoplan. Denne registrering anvender demofirmaet USMF.  
 
-1. Gå til Finans > Diagram over konti > Konti > Hovedkonti.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Hovedkonto.
-4. Skriv en værdi i feltet Navn.
-5. I feltet Hovedkonto skal du vælge den type, der bedst repræsenterer saldo og placering i regnskaber.
-6. På listen skal du vælge den kontokategori, som hovedkontoen tilhører.
-    * Kontokategorien bruges til økonomiske standardrapporter og Power BI dashboardindhold.  
-7. Klik op linket i den valgte række på listen.
-    * Ændre standard debet- eller kreditsaldo.  
-8. I feltet Standardvaluta skal du vælge en værdi fra listen over valutaer.
+1. Gå til **Navigationsrude > Moduler > Finans > Kontoplan > Konti > Hovedkonti**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Hovedkonto**.
+4. Skriv en værdi i feltet **Navn**.
+5. I feltet **Hovedkonto** skal du vælge den type, der bedst repræsenterer saldo og placering i regnskaber.
+6. På listen skal du vælge den kontokategori, som hovedkontoen tilhører. Kontokategorien bruges til økonomiske standardrapporter og Power BI dashboardindhold.  
+7. Klik op linket i den valgte række på listen. Ændre standard debet- eller kreditsaldo.  
+8. I feltet **Standardvaluta** skal du vælge en værdi fra listen over valutaer.
 9. Find og vælg den ønskede post på listen.
 10. Klik op linket i den valgte række på listen.
-11. Slå udvidelse af sektionen Tilsidesættelser af juridisk enhed til eller fra.
-12. Klik på Tilføj for at vælge en juridisk enhed.
+11. Slå udvidelse af sektionen **Tilsidesættelser af juridisk enhed** til eller fra.
+12. Klik på **Tilføj** for at vælge en juridisk enhed.
 13. Vælg den juridiske enhed på listen.
-14. Klik på Tilføj.
+14. Klik på **Tilføj**.
 15. Markér den valgte række på listen.
-16. Markér eller fjern markeringen af afkrydsningsfeltet Suspenderet.
-17. Udvid hurtigfanen Økonomirapportering.
-18. Klik på rullelisten i feltet Valutakurstype for at åbne opslaget.
-19. Vælg valutakurstypen for kontoen på listen.
+16. Markér eller fjern markeringen af afkrydsningsfeltet **Suspenderet**.
+17. Udvid sektionen **Økonomirapportering**.
+18. Klik på rullelisten i feltet **Valutakurstype** for at åbne opslaget.
+19. Vælg **Valutakurstypen for kontoen**på listen.
 20. Klik op linket i den valgte række på listen.
-21. Vælg metoden til beregning af valutakurser for kontoen i feltet Valutaomregningstype.
+21. Vælg metoden til beregning af valutakurser for kontoen i feltet **Valutaomregningstype**.
 22. Luk siden.
 

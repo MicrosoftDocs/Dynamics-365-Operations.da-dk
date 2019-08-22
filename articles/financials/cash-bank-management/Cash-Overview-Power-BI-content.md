@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702789"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842683"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-indhold til Oversigt over kontanter
 
@@ -40,7 +40,7 @@ Følgende opsætning skal være fuldført, før der kan vises data i de visuelle
 1. Gå til **Systemadministration > Konfiguration > systemparametre** for at angive **Systemvaluta** og **Systemvalutakurs**.
 2. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**.
 2. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta samt regnskabsvaluta og bankvalutaer. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
-3. Konfigurer og kør likviditetsbudgettering. Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgettering, i <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+3. Konfigurer og kør likviditetsbudgettering. Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgettering, i <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
 ">Likviditetsbudget</a>. 
 4. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **LedgerCovLiquidityMeasurement**.
 

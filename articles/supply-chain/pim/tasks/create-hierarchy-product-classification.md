@@ -3,25 +3,25 @@ title: Oprette et hierarki eller en produktklassifikation
 description: Denne fremgangsmåde viser, hvordan du opretter et nyt kategorihierarki og tildeler en varekodehierarkitype.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb49f5f3f8a5a788cb4c6d1be69534ba808e3675
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: faf43eb15283ffd7e36ad38728f166884dddcd85
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568414"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844819"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Oprette et hierarki eller en produktklassifikation
 
@@ -31,39 +31,38 @@ Denne fremgangsmåde viser, hvordan du opretter et nyt kategorihierarki og tilde
 
 
 ## <a name="create-the-new-category-hierarchy"></a>Opret det nye kategorihierarki
-1. Gå til administration af produktoplysninger > Opsætning af > Kategorier og attributter > Kategorihierarkier.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Klik på Opret.
+1. Gå til **Navigationsrude > Moduler > Administration af produktoplysninger > Konfiguration > Kategorier og attributter > Kategorihierarkier**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Navn**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Klik på **Opret**.
 
 ## <a name="build-the-hierarchy"></a>Opbyg hierarkiet
-1. Klik på Ny kategorinode.
-2. Skriv en værdi i feltet Navn.
-3. Skriv en værdi i feltet Kode.
-4. Indtast en værdi i feltet Brugervenligt navn.
-5. Klik på Ny kategorinode.
-6. Skriv en værdi i feltet Navn.
-7. Skriv en værdi i feltet Kode.
-8. Indtast en værdi i feltet Brugervenligt navn.
-9. Klik på Ny kategorinode.
-10. Skriv en værdi i feltet Navn.
-11. Skriv en værdi i feltet Kode.
-12. Indtast en værdi i feltet Brugervenligt navn.
-13. Klik på Ny kategorinode.
-14. Skriv en værdi i feltet Navn.
-15. Skriv en værdi i feltet Kode.
-16. Indtast en værdi i feltet Brugervenligt navn.
+1. Klik på kategorinoden **Ny**.
+2. Skriv en værdi i feltet **Navn**.
+3. Skriv en værdi i feltet **Kode**.
+4. Indtast en værdi i feltet **Brugervenligt navn**.
+5. Klik på kategorinoden **Ny**.
+6. Skriv en værdi i feltet **Navn**.
+7. Skriv en værdi i feltet **Kode**.
+8. Indtast en værdi i feltet **Brugervenligt navn**.
+9. Klik på kategorinoden **Ny**.
+10. Skriv en værdi i feltet **Navn**.
+11. Skriv en værdi i feltet **Kode**.
+12. Indtast en værdi i feltet **Brugervenligt navn**.
+13. Klik på kategorinoden **Ny**.
+14. Skriv en værdi i feltet **Navn**.
+15. Skriv en værdi i feltet **Kode**.
+16. Indtast en værdi i feltet **Brugervenligt navn**.
 17. Luk siden.
 
 ## <a name="classify-the-hierarchy"></a>Klassificer hierarkiet
 1. Find og vælg den ønskede post på listen.
-2. Klik på Kategorihierarki i handlingsruden.
-3. Vælg en indstilling i feltet Kategorihierarkitype.
-4. Klik på Ny.
-5. Vælg en indstilling i feltet Projekttype.
-    * Vælg kategorihierarkitype for varekode til klassificering af produktet.  
-6. Klik på rullelisten i feltet Kategorihierarki for at åbne opslaget.
+2. Klik på **Kategorihierarki** i **handlingsruden**.
+3. Klik på **Tilknyt hierarkitype**.
+4. Klik på **Ny**.
+5. Vælg en indstilling i feltet **Kategori for hierarkitype**. Vælg **kategorihierarkitype for varekode til klassificering af produktet**.  
+6. Klik på rullelisten i feltet **Kategorihierarki** for at åbne opslaget.
 7. Find og vælg den ønskede post på listen.
 8. Klik op linket i den valgte række på listen.
 9. Luk siden.

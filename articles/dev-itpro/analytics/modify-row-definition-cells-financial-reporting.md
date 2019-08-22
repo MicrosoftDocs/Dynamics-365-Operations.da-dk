@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551831"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863718"
 ---
 # <a name="modify-row-definition-cells"></a>Redigere rækkedefinitionsceller
 
@@ -402,7 +402,7 @@ Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske 
 2. Dobbeltklik på en celle i kolonnen **Link til økonomiske dimensioner**.
 3. Dobbeltklik på en celle under dimensionsnavnet i dialogboksen **Dimensioner**.
 4. Vælg **Person eller interval** i dialogboksen for dimensionen.
-5. I feltet **Fra** skal du angive den første dimension eller klikke på ![Gennemse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Gennemse") for at søge efter tilgængelige dimensioner. Du kan angive en række dimensioner ved at angive den sidste dimension i feltet **Til**.
+5. I feltet **Fra** skal du angive den første dimension eller klikke på ![Gennemse](media/browse.gif "Gennemse") for at søge efter tilgængelige dimensioner. Du kan angive en række dimensioner ved at angive den sidste dimension i feltet **Til**.
 6. Klik på **OK** for at lukke dialogboksen for dimensionen. Dialogboksen **Dimensioner** viser den opdaterede dimension eller det opdaterede interval.
 7. Klik på **OK** for at lukke dialogboksen **Dimensioner**.
 
@@ -479,7 +479,7 @@ I følgende tabel beskrives felterne i dialogboksen **Dimensioner**.
 
 | Vare                | Beskrivelse |
 |---------------------|-------------|
-| Enkelt dimension eller interval | I feltet **Fra** skal du angive navnet på en konto eller klikke på knappen **Gennemse** ![Gennemse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Gennemse") for at søge efter kontoen. Hvis du vil vælge et interval, skal du søge efter en værdi i feltet **Til**. |
+| Enkelt dimension eller interval | I feltet **Fra** skal du angive navnet på en konto eller klikke på knappen **Gennemse** ![Gennemse](media/browse.gif "Gennemse") for at søge efter kontoen. Hvis du vil vælge et interval, skal du søge efter en værdi i feltet **Til**. |
 | Dimensionsværdisæt | Angiv navnet på dimensionsværdisættet i feltet **Navn**. Hvis du vil oprette, redigere, kopiere eller slette e sæt, skal du klikke på **Administrer dimensionsværdisæt**. Feltet **Formel** udfyldes med formlen fra cellen **Link til økonomiske dimensioner** for dette dimensionsværdisæt i rækkedefinitionen. |
 | Samlekonti   | I feltet **Navn** skal du indtaste eller søge efter en dimension af samlekonti. Feltet **Formel** udfyldes med formlen i cellen **Link til økonomiske dimensioner** for denne samlekonto i rapportdefinitionen. |
 

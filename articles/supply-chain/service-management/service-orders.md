@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555347"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743238"
 ---
 # <a name="service-orders"></a>Serviceordrer   
 
@@ -76,7 +76,7 @@ En af de andre serviceordrer, der blev oprettet for januar måned, bliver foræl
 
 ## <a name="post-from-projects"></a>Bogføre fra projekter
 
-I slutningen af ugen ønsker afsenderen at bogføre alle serviceordrer, der er knyttet til et bestemt projekt. Afsenderen finder derfor det relevante projekt i formularen **Projekter** og bogfører de fuldførte serviceordrer. Du kan finde flere oplysninger under [Bogføre serviceordrer (klasseformular)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+I slutningen af ugen ønsker afsenderen at bogføre alle serviceordrer, der er knyttet til et bestemt projekt. Afsenderen finder derfor det relevante projekt i formularen **Projekter** og bogfører de fuldførte serviceordrer. Du kan finde flere oplysninger under [Bogføre serviceordrer (klasseformular)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Slet serviceordrer
 
@@ -84,7 +84,7 @@ I løbet af anden halvdel af året beslutter kunden sig for, at servicebesøgene
 
 ## <a name="see-also"></a>Se også
 
-[Serviceordrer (form)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Serviceordrer (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

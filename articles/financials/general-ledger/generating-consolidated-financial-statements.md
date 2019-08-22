@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557725"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863694"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 
@@ -49,11 +49,11 @@ Som den konsoliderede rapport i følgende illustration viser, kan du se hvert fi
 
 Du kan også oprette et trædiagram med flere niveauer. Diagrammet kan indeholde så mange niveauer, som du har brug for. I følgende illustration vises en trædiagramdefinition med flere niveauer, der indeholder akkumuleringer fra områder verden over.
 
-![Trædefinition i flere niveauer med akkumuleringer efter område](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Trædefinition i flere niveauer med akkumuleringer efter område")
+![Trædefinition i flere niveauer med akkumuleringer efter område](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Trædefinition i flere niveauer med akkumuleringer efter område")
 
 I følgende illustration vises en trædiagramdefinition med flere niveauer, der indeholder akkumuleringer efter funktion.
 
-![Trædefinition i flere niveauer med akkumuleringer efter funktion](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Trædefinition i flere niveauer med akkumuleringer efter funktion")
+![Trædefinition i flere niveauer med akkumuleringer efter funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Trædefinition i flere niveauer med akkumuleringer efter funktion")
 
 ### <a name="viewing-companies-side-by-side"></a>Regnskaber vist ved siden af hinanden
 Mange kunder foretrækker rapporter, hvor regnskaberne vises ved siden af hinanden, og hvor en kolonne viser den konsoliderede total. Dette format er let at opnå, når du har oprettet trædiagrammet. Her er de overordnede trin, du skal bruge for at få vist regnskaber side om side i konsoliderede regnskaber.
@@ -98,7 +98,7 @@ I trædiagramdefinitionen skal du angive procentdelen af ejerskab i kolonnen **A
 > [!NOTE]
 > Du kan anvende denne procentdel af ejerskabet på alle rapporteringsenheder, ikke kun på firmaniveau. 
 
-![Bruge procentdel i trædiagramdefinition](./media/Using-reporting%20tree-definition-percentage.png "Bruge procentdel i trædiagramdefinition")
+![Bruge procentdel i trædiagramdefinition](./media/Using-reporting-tree-definition-percentage.png "Bruge procentdel i trædiagramdefinition")
 
 Når rapporten oprettes, viser rapporten Contoso Germany 100 procent af salgsbeløbet, og 80 procent af beløbet bliver fordelt og aggregeret til det konsoliderede niveau for salg.
 

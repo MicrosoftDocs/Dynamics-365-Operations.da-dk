@@ -3,14 +3,14 @@ title: Oversigt over kreditorfakturaer
 description: Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625073"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863317"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 
@@ -90,6 +90,13 @@ Når en kreditorfaktura anvendes, kan den ikke redigeres af en anden bruger. Fak
 Du kan anvende siden **Gendan kreditorfakturaer** til at gendanne eller frigive kreditorfakturaer, der er blevet benyttet i mere end fire timer, så de kan redigeres. Du kan åbne denne side fra navigationen **Periodiske opgaver** eller en flise i arbejdsområdet **Indtastning af kreditorfaktura**. Når en faktura er blevet gendannet, vil det være muligt at redigere den fra siden **Kreditorfakturaer**.
 
 Du kan alene tilgå siden **Gendan kreditorfakturaer**, hvis du har fået tildelt sikkerhedsadgangspligterne og -rettighederne for **Gendan kreditorfakturaer i brug**. Derudover skal parametret **Tillad gendannelse af kreditorfaktura** på siden **Kreditorparametre** være slået til.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Nulstille arbejdsgangsstatus for kreditorfakturaer fra Uoprettelig til Kladder
+
+En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsgang for en kreditorfaktura er **Uoprettelig**, kan du nulstille den til **Kladde** ved at vælge **Tilbagekald**. Du kan derefter redigere kreditorfakturaen. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for arbejdsgang for kreditorfakturaer** på siden **Administration af funktioner** er aktiveret.
+
+Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Kreditorfaktura**  eller fra navigationen **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til kladde ved at vælge handlingen **Tilbagekald** på siden **Kreditorfaktura** eller **Afventende kreditorfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
+
 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

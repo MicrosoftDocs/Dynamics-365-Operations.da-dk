@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606866"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863766"
 ---
 # <a name="loyalty-overview"></a>Oversigt over fordelskundeprogrammer
 
@@ -83,15 +83,15 @@ Retail indeholder nye fordelskundefunktioner som en del af udgivelsen fra oktobe
     > [!NOTE]
     > Der er yderligere optjeningsregler i et fordelskundeprogram. F.eks. hvis du opretter en regel, der belønner et medlem på gold-niveau med 10 point for hver amerikanske dollar, og du også opretter en regel for en kunde med "veteran" tilknytning, der belønner med 5 point for hver amerikanske dollar, vil en veteran, der er også medlem på gold-niveau, få 15 point for 1 dollar, fordi kunden opfylder betingelserne for begge linjer. Men hvis veterankunden ikke er medlem på gold-niveau, får han 5 point for hver dollar. For at afspejle ændringerne i kanalerne skal du køre jobbene **Udfør behandling af fordelskundeprogrammer** og **1050** (med oplysninger om fordelskundekort).
     
-    ![Tilknytningsbaseret optjening](./media/Affiliation%20based%20earning.png "Tilknytningsbaseret optjening")
+    ![Tilknytningsbaseret optjening](./media/Affiliation-based-earning.png "Tilknytningsbaseret optjening")
 
 - Detailhandlere har ofte særpriser for en bestemt gruppe af kunder, som de ikke ønsker, at fordelskundeprogrammer skal gælde for. Det kan f.eks. dreje sig om grossister eller medarbejdere, der får særpriser og ingen fordelskundepoint. "Tilknytninger" bruges ofte til at give særpriser til sådanne kundegrupper. For at begrænse visse grupper af kunders mulighed for at opnå fordelskundepoint kan forhandleren angive en eller flere tilknytninger under sektionen **Udeladte tilknytninger** i fordelskundeprogrammet. Så når eksisterende kunder, der tilhører udeladte tilknytninger, er fordelskundemedlemmer, kan de ikke optjene kundefordelspoint for deres indkøb. For at afspejle ændringerne i kanalerne skal du køre jobbene **Udfør behandling af fordelskundeprogrammer** og **1050** (med oplysninger om fordelskundekort).
 
-    ![Udeladte tilknytninger](./media/Excluded%20affiliations.png "Udeladte tilknytninger, som ikke kan optjene fordelskundepoint")
+    ![Udeladte tilknytninger](./media/Excluded-affiliations.png "Udeladte tilknytninger, som ikke kan optjene fordelskundepoint")
     
 - Detailhandlere kan generere fordelskundekortnumre i kanalerne. Før opdateringen fra oktober 2018 kunne detailhandlere bruge fysiske fordelskundekort eller oprette et fordelskundekort ved hjælp af nogle bestemte kundeoplysninger, f.eks. et telefonnummer. Hvis du vil aktivere den automatiske generering af fordelskundekort i detailbutikken, skal du slå **Generer nummer til fordelskundekort** til i funktionalitetsprofilen, der er knyttet til butikken. Ved onlinekanaler kan detailhandlere bruge IssueLoyaltyCard-API'en til at udstede fordelskundekort til kunder. Detailhandlere kan enten angive et fordelskundekortnummer til denne API, som skal bruges til at generere fordelskundekortet, eller systemet bruger nummerserien for fordelskundekort i Dynamics 365 for Retail. Men hvis nummerserien findes ikke, og forhandleren ikke angiver et fordelskundekortnummer under kald af API'en, opstår der en fejl.
 
-    ![Generer fordelskundekort](./media/Generate%20loyalty%20card.png "Automatisk generering af fordelskundekortnummer")
+    ![Generer fordelskundekort](./media/Generate-loyalty-card.png "Automatisk generering af fordelskundekortnummer")
 
 - Fordelskundepoint, der er optjent og indløst, gemmes nu for hver transaktion og salgsordre i forhold til salgslinjen, så det samme beløb, der kan refunderes eller tilbageføres ved hele eller delvise returneringer. Desuden kan callcenterbrugere, der kan se point på salgslinjeniveau, besvare spørgsmål fra kunder om, hvor mange point der er optjent eller indløst for hver linje. Før denne ændring blev optjente point altid genberegnet under returneringer, hvilket resulterede i et andet beløb end det oprindelige, hvis optjenings- eller indløsningsreglerne blev ændret, og desuden havde callcenterbrugerne ikke indsigt i pointopdelingen. Antal point kan ses under formularen **Korttransaktioner** for hvert fordelskundekort. For at aktivere denne funktion skal du aktivere konfigurationen **Bogfør fordelskundepoint pr. salgslinje** under **Delte parametre for detail** \> fanen **Generelt**.
 
@@ -100,26 +100,26 @@ Retail indeholder nye fordelskundefunktioner som en del af udgivelsen fra oktobe
 
 - Detailhandlere kan nu definere fordelingsperioden for hvert optjente point. Konfiguration af en fordelingsperiode kan definere varighed fra optjeningsdatoen, efter hvilken de optjente point bliver tilgængelige for kunderne. Ikke-optjente point kan ses i kolonnen **Ikke-optjente point** på siden **Fordelskundekort**. Detailhandlere kan desuden definere grænsen for maksimalt antal kundefordelspoint pr. fordelskundekort. Dette felt kan bruges til at reducere effekten af svindel med fordelskundeprogrammet. Når brugeren har nået det maksimale antal belønningspoint, kan vedkommende ikke få flere point. Forhandleren kan vælge at blokere sådanne kort, indtil de er undersøgt for potentiel svindel. Hvis forhandleren opdager svindel, kan han eller hun ikke alene spærre kundens fordelskundekort, men kan også angive en spærre for kunden. Det kan du gøre ved at indstille egenskaben **Spær for tilmelding til fordelskundeprogram for kunden** til **Ja** under **Alle kunder** i **Retail**-oversigtspanelet. Der kan ikke udstedes et fordelskundekort til spærrede kunder i nogen af kanalerne.
 
-    ![Fordelingspoint og maksimale belønningspoint](./media/Vesting%20and%20maximum%20reward%20points.png "Definere fordelingspoint og maksimale belønningspoint")
+    ![Fordelingspoint og maksimale belønningspoint](./media/Vesting-and-maximum-reward-points.png "Definere fordelingspoint og maksimale belønningspoint")
 
 - Tilknytninger bruges til at give særpriser og rabatter, men der kan være nogle tilknytninger, som detailhandlerne ikke ønsker, at kunderne skal se. F.eks. vil en tilknytning med titlen "Kunde med stort købspotentiale" muligvis ikke falde i god jord hos nogle kunder. Der er desuden nogle tilknytninger, der ikke skal administreres i butikken, f.eks. medarbejdere, fordi du sikkert ikke vil have, at kassereren skal bestemme, hvem der er medarbejder og dermed give medarbejderbaserede rabatter. Detailhandlere kan nu vælge, hvilke tilknytninger der skal være skjult i detailkanalerne. Tilknytninger, der er markeret som **Skjul i kanaler**, kan ikke vises, tilføjes eller fjernes i POS. Dog vil priser og rabatter, der gælder for tilknytningen, stadig blive anvendt på produkterne.
 
-    ![Skjule tilknytninger](./media/Hide%20affiliations.png "Skjule tilknytninger i kanaler")
+    ![Skjule tilknytninger](./media/Hide-affiliations.png "Skjule tilknytninger i kanaler")
     
 - Callcenterbrugere kan nu nemmere søge efter en kunde ved hjælp af kundens fordelskundekortoplysninger og navigere til kundens fordelskundekort og siden over transaktioner udført med fordelskundekortet fra siden **Kundeservice**.
 
-    ![Kundeservice](./media/Customer%20service.png "Finde kundens fordelskundeoplysninger")
+    ![Kundeservice](./media/Customer-service.png "Finde kundens fordelskundeoplysninger")
     
 - Hvis en kunde mister et fordelskundekort, skal der oprettes et erstatningskort, og de eksisterende point skal overføres til det nye kort. Processen til udstedelse af erstatningskort er forenklet i denne version. Desuden kan kunder kan forære nogle eller alle deres fordelskundepoint til venner og familie. Ved overførsel af point oprettes der reguleringsposter for hvert fordelskundekort. Du kan få adgang til erstatningskortfunktioner og overførsel af saldo fra siden **Fordelskundekort**.
 
-    ![Erstatte og overføre point](./media/Replace%20and%20transfer%20points.png "Erstatte fordelskundekort eller overføre saldo")
+    ![Erstatte og overføre point](./media/Replace-and-transfer-points.png "Erstatte fordelskundekort eller overføre saldo")
     
 - Detailhandlere ønsker muligvis at udnytte effektiviteten ved en bestemt kanal til at tilmelde kunder til et fordelskundeprogram. Tilmeldingskilden til fordelskundekortene bliver nu gemt, så detailhandlere kan køre rapporter på disse data. Tilmeldingskilderne registreres automatisk for alle udstedte fordelskundekort fra MPOS/CPOS- eller e-handelskanaler. For de fordelskundekort, der er udstedt fra administrationsprogrammet, kan callcenterbrugeren vælge den ønskede kanal.
 - I tidligere udgaver kunne detailhandlerne bruge MPOS/CPOS til at indløse fordelskundepoint for kunder i en butik. Men da kundefordelssaldoen i disse udgaver vises i fordelskundepoint, kan kassereren ikke se den valutabeløbsværdi, der kan anvendes på den aktuelle transaktion. Kassereren skal omregne pointene til valuta, før der kan betales med fordelskundepoint. I den aktuelle version, kan kassereren, når linjerne er føjet til transaktionen, se det beløb, som fordelskundepointene kan dække for den aktuelle transaktion, hvilket gør det lettere at anvende alle eller nogle af fordelskundepointene på transaktionen. Kassereren kan desuden se de point, der udløber inden for næste 30 dage, så han eller hun kan anbefale mersalg eller krydssalg for at motivere kunden til at bruge de point, der udløber, på den pågældende transaktion.
 
-    ![Point, der er omfattet af fordelskundesaldoen](./media/Points%20covered%20by%20loyalty%20balance.png "Vis saldo, der er omfattet af fordelskundepoint")
+    ![Point, der er omfattet af fordelskundesaldoen](./media/Points-covered-by-loyalty-balance.png "Vis saldo, der er omfattet af fordelskundepoint")
 
-    ![Point, der udløber](./media/Expiring%20points.png "Få vist point, der udløber")
+    ![Point, der udløber](./media/Expiring-points.png "Få vist point, der udløber")
 
 - Med version 8.1.3 har vi aktiveret indstillingen "Betal med fordelskundekort" i callcenterkanalen. For at aktivere denne indstilling skal du oprette en betalingsmiddeltype og knytte den til callcenteret. 
 

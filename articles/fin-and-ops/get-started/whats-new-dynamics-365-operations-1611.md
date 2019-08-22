@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b200f6b8a636a5e7c4ee2625226510f538ff023c
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548026"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863487"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -757,7 +757,7 @@ Problemfri handel via alle kanaler er administration og ordrebehandling på tvæ
 
 | Hvad du kan gøre | Hvorfor dette er vigtigt |
 |-----------------|-----------------------|
-| CRT/Detailserver: Detailhandlere eller softwareproducenter kan udvide CRT gennem udvidelseskroge. Indbyggede kodeændringer understøttes ikke længere. | For at aktivere løbende integration og implementering bør indbyggede kodeændringer helt undgås. Desuden for at understøtte nem optagelse af hotfix uden kodefletning og installation af CRT-komponenter. |
+| CRT/Detailserver: Detailhandlere eller ISV'er kan udvide CRT gennem udvidelseskroge. Indbyggede kodeændringer understøttes ikke længere. | For at aktivere løbende integration og implementering bør indbyggede kodeændringer helt undgås. Det samme gør sig gældende i relation til at understøtte nem optagelse af hotfix uden kodefletning og installation af CRT-komponenter. |
 
 ### <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger
 
@@ -769,7 +769,7 @@ Problemfri handel via alle kanaler er administration og ordrebehandling på tvæ
 
 | Hvad du kan gøre | Hvorfor dette er vigtigt |
 |-----------------|-----------------------|
-| Forhandlere kan bruge POS-arbejdsrutineoptager til at producere undervisningsmateriale, BPM-diagrammer (Forretningsmodeldesigner), og generere indhold i Hjælp for at forbedre produktiviteten og opnå bedre analyse og design af programmer. | For at aktivere løbende integration og implementering bør indbyggede ændringer helt undgås. Desuden for at understøtte nem optagelse af hotfix uden kodefletning og installation af CRT-komponenter. |
+| Forhandlere kan bruge POS-arbejdsrutineoptager til at producere undervisningsmateriale, BPM-diagrammer (Forretningsmodeldesigner), og generere indhold i Hjælp for at forbedre produktiviteten og opnå bedre analyse og design af programmer. | For at aktivere løbende integration og implementering bør indbyggede ændringer helt undgås. Det samme gør sig gældende i relation til at understøtte nem optagelse af hotfix uden kodefletning og installation af CRT-komponenter. |
 | POS-hjælp i realtid. | Kasseassistent/chef kan få hjælp i realtid fra POS på forretningsproces uden at skifte kontekst. |
 
 ### <a name="store-system-providing-a-seamless-on-premises-store-experience"></a>Butikssystem: give en problemfri lokal butikoplevelse

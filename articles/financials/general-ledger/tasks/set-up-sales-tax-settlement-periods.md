@@ -3,25 +3,25 @@ title: Konfigurer momsafregningsperioder
 description: Momsafregningsperioder indeholder oplysninger om de periodeintervaller, der skal indrapporteres og betales moms for.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569580"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862982"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Konfigurer momsafregningsperioder
 
@@ -50,6 +50,8 @@ Denne opgave bruger demofirmaet USMF.
 12. Angiv antallet af enheder i periodeintervallet pr. periode. For eksempel har en kvart 3 måneder.
 13. Markér eller fjern markeringen af afkrydsningsfeltet Brug batchbehandling til afregning af moms.
     * Udligningsprocessen for afregningsperioden kan behandles som batchjob i baggrunden. Dette anbefales ved et stort antal momstransaktioner inden for et periodeinterval.  
+    > [!NOTE]
+    > I øjeblikket er understøttes dette ikke i Østrig, Belgien, Spanien, Italien, Japan og Nederlandene.
 14. Marker eller fjern markeringen i afkrydsningsfeltet Undgå at generere modregning af momsposteringer.
     * Som standard genererer systemet modregning af momsposteringer under udligningsprocessen, hvilket kan give problemer med ydeevnen, hvis der er et stort antal momsposteringer inden for et periodeinterval. Marker dette afkrydsningsfeltet for at undgå, at der genereres modregning af momsposteringer.
 15. Udvid fanen Periodeintervaller.
