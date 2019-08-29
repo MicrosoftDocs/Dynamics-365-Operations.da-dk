@@ -18,7 +18,7 @@
       href: get-started/before-you-buy.md
     - name: Tilmeld dig et prøveabonnement
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Installer et demomiljø
+    - name: Installere et demomiljø
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Installationsindstillinger
       href: dev-itpro/choose-deployment.md
@@ -26,9 +26,10 @@
       href: retail-support.md
     - name: Ofte stillede spørgsmål om One Version-tjenesteopdateringer
       href: ../fin-and-ops/get-started/one-version.md
-- name: Forstå implementeringens livscyklus
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Implementering af livscyklusstyring
   items:
+    - name: Startside for implementering af livscyklusstyring
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
     - name: Onboarding
@@ -165,6 +166,8 @@
       href: retail-hardware-station-configuration-installation.md
     - name: Tid og fremmøde i Retail
       href: retail-time-attendance.md
+    - name: Oprette og ændre åbningstider
+      href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) og Cloud POS
   items:
     - name: Vælge mellem MPOS og Cloud POS
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: Konfigurere detailprodukter
       href: set-up-retail-products.md
-    - name: Administrere produktkategorier og produkter i Retail
+    - name: Administrere detailproduktkategorier og -produkter
       href: category-management-product-creation.md
+    - name: Ændre sorteringsrækkefølgen for merchandisingenheder
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Produktdimensioner
       href: ../supply-chain/pim/product-dimensions.md
     - name: Konfigurere stregkoder
@@ -499,9 +504,10 @@
       href: tasks/use-continuity-program.md
     - name: Konfigurere detailarbejdere
       href: tasks/worker.md
-- name: Detailudvikling og -administration
-  href: dev-itpro/dev-retail-home-page.md
+- name: Udvikling og administration af Retail
   items:
+    - name: Retail til it-medarbejdere og -udviklere
+      href: dev-itpro/dev-retail-home-page.md
     - name: Arkitektur
       items:
         - name: Retail-komponenter
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Hardware Station og udvidelse
       href: dev-itpro/hardware-station-extensibility.md
+    - name: Integrere POS med en ny hardwareenhed
+      href: dev-itpro/hardware-device-extension.md
     - name: Retail Server-udvidelse
       items:
         - name: Udvide en Retail Server OData-controller
@@ -655,8 +663,9 @@
         - name: Aktivér beskyttelse mod dubleret betaling for betalingsconnector
           href: dev-itpro/duplicate-payment-protection.md
     - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Retail SDK-arkitektur
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Kommende ændringer i Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Flette build-systemer for Retail og Finance and Operations
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Retail SDK-eksempler
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Udvidelsespunkter for følgesedler
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Udvidelsespunkter for følgesedler
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Udvidelser til kanaldatabase
           href: dev-itpro/channel-db-extensions.md
         - name: Aktivere brugerdefineret CDX-synkronisering via filtypenavn
