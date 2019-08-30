@@ -1,9 +1,9 @@
 ---
-title: Globalisering
+title: Globaliseringsressourcer
 description: Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande-/områdespecifikke funktioner og tilbud.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2fe0b357edf3594aa7d795eb2a15f03a886d79
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 668a24c54ded798658a136b8482823b595962306
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850609"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864960"
 ---
-# <a name="globalization"></a>Globalisering
+# <a name="globalization-resources"></a>Globaliseringsressourcer
 
 ## <a name="local-and-regional-deployments"></a>Lokale og regionale installationer
 Hvis de regler, der er påbudt af myndighederne, kræver, at data lagres eller serviceres på anden måde end det, der kræves for andre lande/områder, kan der være krav, som er knyttet til land/område, som du skal overveje, når du installerer Finance and Operations. Overvej følgende ressourcer, der kan være relevante for dig:
@@ -112,7 +112,7 @@ Du kan finde flere oplysninger i [Opgaveguider](../../fin-and-ops/get-started/he
         - [Litauen](../../financials/localizations/lithuania.md)
         - [Mexico](../../financials/localizations/mexico.md)
         - [Malaysia](../../financials/localizations/malaysia.md)
-        - [Nederlandene](../../financials/localizations/netherlands.md)
+        - [Holland](../../financials/localizations/netherlands.md)
         - [Norge](../../financials/localizations/norway.md)
     :::column-end:::
     :::column:::

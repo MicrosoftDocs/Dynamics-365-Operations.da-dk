@@ -3,7 +3,7 @@ title: Velkommen til Dynamics 365 for Retail
 description: Startside for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572157"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874921"
 ---
 # <a name="welcome-to-dynamics-365-for-retail"></a>Velkommen til Dynamics 365 for Retail
 
@@ -38,7 +38,7 @@ Vælg et funktionsområde, du vil vide mere om, i venstre rude.
 
 ## <a name="channel-management"></a>Kanalstyring
 
-Når du konfigurerer oplevelsen i Retail, skal du beslutte, hvordan du vil definere og konfigurere dine butikker. De kan være hos fysiske butikker, onlinebutikker eller callcentre.
+Når du konfigurerer oplevelsen i Retail, skal du beslutte, hvordan du vil definere og konfigurere dine butikker, som kan være fysiske butikker, onlinebutikker eller callcentre.
 
 Hver enkelt detailbutik kan have sine egne betalingsmetoder, leveringsmetoder, prisgrupper, indtægts- og udgiftskonti, kasseapparater og medarbejdere. Når du har oprettet din detailbutik, kan du oprette et udvalg af produkter, som skal føres i butikken. Du kan også definere butiksspecifikke priser og rabatter, der gælder for produkter, der sælges i butikken.
 
