@@ -3,7 +3,7 @@ title: Oprette nye brugere
 description: Brugerne er interne medarbejdere i din organisation, eller eksterne debitorer og kreditorer, der kræver adgang til systemet for at udføre deres job.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 89e492ef5030dd28020094152259b615010aa676
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: a542ece226750330262e0c44427e5654fa4f6369
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851305"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916478"
 ---
 # <a name="create-new-users"></a>Oprette nye brugere
 
@@ -31,28 +31,22 @@ Brugerne er interne medarbejdere i din organisation, eller eksterne debitorer og
 
 
 ## <a name="add-a-new-user"></a>Tilføje en ny bruger
-1. Gå til Systemadministration > Brugere > Brugere.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Bruger-id.
-    * Angiv entydig identifikation for brugeren. Du skal angive et bruger-id.  
-4. Indtast en værdi i feltet Brugernavn.
-    * Angiv brugerens navn.  
-5. Indtast en værdi i feltet Domæne.
-    * Angiv brugerens domæne.  
-6. Indtast en værdi i feltet Alias.
-    * Angiv brugerens alias.  
-7. Klik på rullelisten i feltet Firma for at åbne opslaget.
-8. Find og vælg den ønskede post på listen.
-9. Klik op linket i den valgte række på listen.
-    * Vælg brugerens firma.  
-10. Klik på Tildel roller.
-11. Find og vælg den ønskede post på listen.
-12. Klik på OK.
-13. Klik på Gem.
+1. Gå til **Navigationsrude > Moduler > Systemadministration > Brugere > Brugere**.
+2. Klik på **Ny** i **handlingsruden**.
+3. Indtast en værdi i feltet **Bruger-id**. Angiv entydig identifikation for brugeren. Du skal angive et bruger-id.  
+4. Indtast en værdi i feltet **Brugernavn**. Angiv brugerens navn.  
+5. Indtast en værdi i feltet **Domæne**. Angiv brugerens domæne.  
+6. Indtast en værdi i feltet **Alias**. Angiv brugerens alias.  
+7. Klik på rullelisten i feltet **Firma** for at åbne opslaget.
+8. Find og vælg den ønskede post på listen. 
+9. Klik på **Tildel roller** i sektionen **Brugers roller**.
+10. Find og vælg den ønskede post på listen.
+11. Klik på **OK**.
+12. Klik på **Gem**.
 
 ## <a name="import-users"></a>Importér brugere
-1. Klik på Importér brugere.
+1. Klik på **Importér brugere** i **handlingsruden**.
 2. Markér den valgte række på listen.
-3. Klik på Importér brugere.
-4. Klik på Luk.
+3. Klik på **Importér brugere**.
+4. Klik på **Luk**.
 

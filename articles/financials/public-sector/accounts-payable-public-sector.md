@@ -1,9 +1,9 @@
 ---
-title: Kreditorbetalinger i den offentlige sektor
+title: Oversigt over Kreditor i den offentlige sektor
 description: I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 for Finance and Operations. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4fafd8d4795bf0f52d8225e570e26753e10a27f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7d1e8afc1e4356bb918558db77b83a5a6a8f0d43
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845846"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865567"
 ---
-# <a name="accounts-payable-in-the-public-sector"></a>Kreditorbetalinger i den offentlige sektor
+# <a name="accounts-payable-in-the-public-sector-overview"></a>Oversigt over Kreditor i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 

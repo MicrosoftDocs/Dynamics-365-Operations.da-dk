@@ -19,50 +19,55 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b74bc2d3133af7e87663a4e6bafb8780e0a6a66f
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 1473c3bad55734d5f83ee3e4c1654921b872f3bb
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797292"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873122"
 ---
-# <a name="execution-order-for-initial-sychronization-of-finance-and-operations-and-common-data-service"></a>Udførelsesrækkefølge for indledende synkronisering af Finance and Operations og Common Data Service
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-and-common-data-service"></a>Udførelsesrækkefølge for indledende synkronisering af Finance and Operations og Common Data Service
 
-Før du bruger dataintegration, skal du oprette de oprindelige data, der kræves til debitorer, kreditorer og kontakter. Hvis du for eksempel vil oprette et nyt **Leverandørgruppe**-element og angive **Betalingsbetingelser** som **Net30**, skal du, før du forsøger at oprette **Leverandørgruppe**-elementet, sikre dig, at **Net30** findes i både Finance and Operations og Common Data Service. (I fremtiden vil vi frigive en dobbeltskrivningsplatform med en funktionalitet kaldet **Første synkronisering**. Den vil udføre en engangsdatasynkronisering mellem Finance and Operations og Common Data Service som en del af dobbeltskrivningsopsætningen).
+[!include [banner](../includes/banner.md)]
 
-Tips: Vi udgiver et kort med dobbeltskrivning for alle referencedata, herunder **Betalingsbetingelser** (betalingsvilkår). Hvis du allerede har de første data i ét system, kan en lille opdateringshandling på en post udløse dobbeltskrivning på den pågældende post. 
+[!include [preview](../includes/preview-banner.md)]
 
-Du skal følge følgende prioriteringsrækkefølge og sørge for, at de første data er tilgængelige på både Finance and Operations og Common Data Service.   
+Før du bruger dataintegration, skal du oprette de første data, der kræves til debitorer, kreditorer og kontakter. Du kan f.eks. oprette en ny **Leverandørgruppe** og angive dens **Betalingsbetingelser** til **Net30**. I dette tilfælde skal du sikre dig, at **Net30** findes i både Microsoft Dynamics 365 for Finance and Operations og Common Data Service, inden du forsøger at oprette elementet **Leverandørgruppe**. (I fremtiden vil Microsoft frigive en dobbeltskrivningsplatform med en funktionalitet kaldet Første synkronisering. Den vil udføre en engangsdatasynkronisering mellem Finance and Operations og Common Data Service som en del af dobbeltskrivningsopsætningen).
+
+> [!TIP]
+> Microsoft frigiver et kort med dobbeltskrivning for alle referencedata, herunder **Betalingsbetingelser** (betalingsvilkår). Hvis du allerede har de første data i ét system, kan en lille opdateringshandling på en post udløse dobbeltskrivning på den pågældende post.
+
+Du skal følge nedenstående prioriteringsrækkefølge og sørge for, at de første data er tilgængelige i både Finance and Operations og Common Data Service.
 
 ## <a name="vendor"></a>Leverandør
 
-Udførelsesrækkefølgen for leverandøren er:
+Her er afviklingsrækkefølgen for objektet **Leverandør**:
 
-```
-Vendor Group
-    Terms of payment
-        Payment day & lines
-        Payment schedule
-Vendor payment method
-```
+1. Leverandørgruppe
+
+    1. Betalingsbetingelse
+
+        1. Betalingsdag og -linjer
+        2. Betalingsplan
+
+2. Kreditorbetalingsmetode
 
 ## <a name="customer-organization"></a>Kunde (organisation)
 
-Udførelsesrækkefølgen for kunden er:
+Her er afviklingsrækkefølgen for objektet **Kunde**:
 
-```
-Customer Group
-    Terms of payment
-        Payment day & lines
-        Payment 
-Customer payment method
-```
+1. Kundegruppe
+
+    1. Betalingsbetingelse
+
+        1. Betalingsdag og -linjer
+        2. Betaling 
+
+2. Debitorbetalingsmetode
 
 ## <a name="contact-person"></a>Kontakt (person)
 
-Udførelsesrækkefølgen for kontakten er:
+Her er afviklingsrækkefølgen for objektet **Kontakt**:
 
-```
-Customer
-Vendor               
-```
+1. Debitor 
+2. Leverandør

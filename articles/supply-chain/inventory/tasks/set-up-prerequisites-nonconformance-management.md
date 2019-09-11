@@ -1,9 +1,9 @@
 ---
 title: Konfigurere forudsætninger for uoverensstemmelsesstyring
-description: Brug denne procedure til at aktivere processer for styring af uoverensstemmelser.
+description: Brug dette emne til at aktivere processer for styring af uoverensstemmelser.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,89 +17,66 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9094be37e44b978db224b16c255d04a36c5cefff
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 78d38b00d8039612aa236b3aa9593693983407dc
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845307"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914716"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>Konfigurere forudsætninger for uoverensstemmelsesstyring
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Brug denne procedure til at aktivere processer for styring af uoverensstemmelser. En uoverensstemmelse er en procedure eller vare, der har et kvalitetsproblem, hvor de beskrivende oplysninger omfatter årsagen til og typen af problemet. Proceduren bruger USMF-demodatafirmaet. Denne procedure udføres typisk af en kvalitetschef.
+Brug dette emne til at aktivere processer for styring af uoverensstemmelser. En uoverensstemmelse er en procedure eller vare, der har et kvalitetsproblem, hvor de beskrivende oplysninger omfatter årsagen til og typen af problemet. Proceduren bruger USMF-demodatafirmaet. Denne procedure udføres typisk af en kvalitetschef.
 
 
 ## <a name="enable-quality-management-processes-within-the-company"></a>Aktivere kvalitetsstyringsprocesser i virksomheden
-1. Gå til lagerstyring > Opsætning > Parametre til lager- og lagerstedsstyring.
-2. Klik på fanen Kvalitetsstyring.
-3. Vælg Ja i feltet Brug kvalitetsstyring.
-    * Vælg denne parameter for at aktivere kvalitetsstyringsprocesser for virksomheden.  
-4. Angiv et tal i feltet Timepris.
-    * Brug feltet Timepris til at angive en timepris for arbejdet i den lokale valuta. Timeprisen bruges til beregning af omkostningerne for operationer, der vedrører en uoverensstemmelse. Timeprisen og de beregnede omkostninger er referenceoplysninger for en uoverensstemmelse, og de påvirker ikke andre funktioner.  
-5. Klik på Rapportopsætning.
-    * På denne siden kan du definere notetyper for kvalitetsrapporter, der skal bruges til forskellige typer rapporter over kvalitetsstyring.  
-6. Luk siden.
-7. Luk siden.
+1. Gå i navigationsruden til **Moduler > Lagerstyring > Opsætning > Parametre til lager- og lokationsstyring**.
+2. Vælg fanen **Kvalitetsstyring**.
+3. Vælg **Ja** i feltet **Brug kvalitetsstyring** for at aktivere processer for kvalitetsstyring for firmaet.
+4. Angiv et tal i den lokale valuta i feltet **Timepris**. Timeprisen bruges til beregning af omkostningerne for operationer, der vedrører en uoverensstemmelse. Timeprisen og de beregnede omkostninger er referenceoplysninger for en uoverensstemmelse, og de påvirker ikke andre funktioner.  
+5. Vælg **Rapportopsætning** for at definere notetyper for kvalitetsrapporter, der skal bruges til forskellige typer rapporter over kvalitetsstyring.
 
 ## <a name="enable-user-for-nonconformance-processing"></a>Aktivere bruger til håndtering af uoverensstemmelser
-1. Gå til Systemadministration > Brugere > Brugere.
-    * For at behandle godkendelsen af en uoverensstemmelse skal den bruger, der godkender eller afviser uoverensstemmelser, have en "Navn"-værdi tildelt på siden Brugere. For at kunne bruge dokumentnoter skal brugeren også have Dokumenthåndtering aktiveret i brugerindstillingerne.  
-2. Brug Quick Filter til at finde poster. For eksempel kan du filtrere på feltet Navn med værdien 'Ricardo'.
-    * Du kan bruge filteret til at finde den bruger, der skal godkende eller afvise uoverensstemmelsesposter.  
-3. Klik op linket i den valgte række på listen.
-    * For at behandle godkendelsen af en uoverensstemmelse skal du sørge for, at den bruger, der godkender eller afviser uoverensstemmelser, har en "Navn"-værdi tildelt på siden Brugere.  
-4. Klik på Brugerindstillinger.
-5. Klik på fanen Præferencer.
-6. Vælg Ja i feltet Aktivér dokumenthåndtering.
-    * For at kunne bruge dokumentnoter skal brugeren også have Dokumenthåndtering aktiveret i brugerindstillingerne.  
-7. Luk siden.
-8. Luk siden.
-9. Luk siden.
+1. Gå i navigationsruden til **Moduler > Systemadministration > Brugere > Brugere**. 
+2. Du kan bruge Quick Filter til at finde den bruger, der skal godkende eller afvise uoverensstemmelsesposter. For eksempel kan du filtrere på feltet **Navn** med værdien `Ricardo`. For at behandle godkendelsen af en uoverensstemmelse skal den bruger, der godkender eller afviser uoverensstemmelser, have en "Navn"-værdi tildelt på siden **Brugere**. For at kunne bruge dokumentnoter skal brugeren også have Dokumenthåndtering aktiveret i brugerindstillingerne.  
+3. Marker rækken for den ønskede post.
+4. Vælg **Brugerindstillinger**.
+5. Vælg fanen **Præferencer**.
+6. Vælg **Ja** i feltet **Aktivér dokumenthåndtering**.
 
 ## <a name="define-diagnostic-types-for-nonconformance-processing"></a>Definere diagnosticeringstyper for håndtering af uoverensstemmelser
-1. Gå til Lagerstyring > Konfiguration > Kvalitetsstyring > Diagnosticeringstyper.
-    * Brug siden Diagnosticeringstyper til definere en klassifikation af diagnosticeringshandlinger. En rettelse angiver, hvilken type diagnosticeringshandling, der skal udføres for en godkendt uoverensstemmelse, hvem der skal udføre den og den ønskede og planlagte fuldførelsesdato.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Diagnosticering.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Kvalitetsstyring > Diagnosticeringstyper**. Brug siden **Diagnosticeringstyper** til definere en klassifikation af diagnosticeringshandlinger. En rettelse angiver, hvilken type diagnosticeringshandling, der skal udføres for en godkendt uoverensstemmelse, hvem der skal udføre den og den ønskede og planlagte fuldførelsesdato.  
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Diagnosticering**.
+4. Indtast en værdi i feltet **Beskrivelse**.
 
 ## <a name="define-quality-charges-for-nonconformance-processing"></a>Definere kvalitetsgebyrer for håndtering af uoverensstemmelser
-1. Gå til Lagerstyring > Konfiguration > Kvalitetsstyring > Kvalitetsgebyrer.
-    * Brug siden Kvalitetsgebyrer til at definere en klassifikation af gebyrer, der skal bruges i handlinger, der vedrører uoverensstemmelser.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Gebyrkode.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Kvalitetsstyring > Kvalitetsgebyrer**. Brug siden **Kvalitetsgebyrer** til at definere en klassifikation af gebyrer, der skal bruges i handlinger, der vedrører uoverensstemmelser.  
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Gebyrkode**.
+4. Indtast en værdi i feltet **Beskrivelse**.
 
 ## <a name="define-the-operations-for-nonconformance-processing"></a>Definere handlinger for håndtering af uoverensstemmelser
-1. Gå til Lagerstyring > Konfiguration > Kvalitetsstyring > Handlinger.
-    * Brug siden Handlinger til at definere en klassifikation af det arbejde, der kan blive udført for en godkendt uoverensstemmelse. Når du relaterer en handling til en uoverensstemmelse, kan du også definere detaljerede oplysninger om det tilknyttede materiale, arbejdstimer og tillæg, der kræves for at udføre handlingen. Disse oplysninger danner grundlaget for beregning af en forkalkuleret omkostning for udførelsen af handlingen.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Handling.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Kvalitetsstyring > Handlinger**. Brug siden **Handlinger** til at definere en klassifikation af det arbejde, der kan blive udført for en godkendt uoverensstemmelse. Når du relaterer en handling til en uoverensstemmelse, kan du også definere detaljerede oplysninger om det tilknyttede materiale, arbejdstimer og tillæg, der kræves for at udføre handlingen. Disse oplysninger danner grundlaget for beregning af en forkalkuleret omkostning for udførelsen af handlingen.  
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Handling**.
+4. Indtast en værdi i feltet **Beskrivelse**.
 
 ## <a name="define-problem-types-for-nonconformance-processing"></a>Definere problemtyper for håndtering af uoverensstemmelser
-1. Gå til Lagerstyring > Konfiguration > Kvalitetsstyring > Problemtyper.
-    * Brug siden Problemtyper til at definere en klassifikation for de kvalitetsproblemer, der kan forekomme for de forskellige uoverensstemmelsestyper. Uoverensstemmelsestyperne omfatter Intern, Debitor, Kreditor, Serviceanmodning, Produktion og Produktion af samprodukter. En enkelt problemtype kan tilknyttes flere uoverensstemmelsestyper.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Problem.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Klik på Uoverensstemmelsestyper.
-    * Brug siden Uoverensstemmelsestyper til at autorisere brugen af en problemtype til en eller flere uoverensstemmelsestyper. En problemtype vedrørende en defektkode kunne f.eks. gælde for alle uoverensstemmelsestyper, mens en problemtype for kundeklager måske kun gælder for uoverensstemmelsestyperne Debitor eller Serviceanmodning.  
-6. Klik på Ny.
-7. Markér den valgte række på listen.
-8. Vælg en indstilling i feltet Uoverensstemmelse.
-9. Luk siden.
-10. Luk siden.
+1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Kvalitetsstyring > Problemtyper**. Brug siden **Problemtyper** til at definere en klassifikation for de kvalitetsproblemer, der kan forekomme for de forskellige uoverensstemmelsestyper. Uoverensstemmelsestyperne omfatter **Intern**, **Debitor**, **Kreditor**, **Serviceanmodning**, **Produktion** og **Produktion af samprodukter**. En enkelt problemtype kan tilknyttes flere uoverensstemmelsestyper.  
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Problemtype**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Vælg **Uoverensstemmelsestyper**. Brug siden **Uoverensstemmelsestyper** til at autorisere brugen af en problemtype til en eller flere uoverensstemmelsestyper. En problemtype vedrørende en defektkode kunne f.eks. gælde for alle uoverensstemmelsestyper, mens en problemtype for kundeklager måske kun gælder for uoverensstemmelsestyperne Debitor eller Serviceanmodning.  
+6. Vælg **Ny**.
+7. Vælg en indstilling i feltet for rækken **Uoverensstemmelsestype**.
 
 ## <a name="define-quarantine-zones-for-nonconformance-processing"></a>Definere karantænezoner for håndtering af uoverensstemmelser
-1. Gå til Lagerstyring > Konfiguration > Kvalitetsstyring > Karantænezoner.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Karantænezone.
-4. Skriv en værdi i feltet Beskrivelse.
+1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Kvalitetsstyring > Karantænezoner**.
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Karantænezone**.
+4. Indtast en værdi i feltet **Beskrivelse**.
 5. Luk siden.
 

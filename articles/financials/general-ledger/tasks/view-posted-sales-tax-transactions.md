@@ -1,9 +1,9 @@
 ---
-title: Vis bogførte momstransaktioner
-description: Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist.
+title: Vise bogførte momstransaktioner
+description: I dette emne beskrives forskellige måder, du kan få vist bogførte momstransaktioner på.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,36 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c5668c1cd4325f557d83a2291c8139f65c4d170e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
+ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846193"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870862"
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Vis bogførte momstransaktioner
+# <a name="view-posted-sales-tax-transactions"></a>Vise bogførte momstransaktioner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist. Denne opgave bruger demofirmaet USMF.
+I dette emne beskrives forskellige måder, du kan få vist bogførte momstransaktioner på. Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist. Denne opgave bruger demofirmaet USMF.
 
-1. Gå til Moms > Forespørgsler og rapporter > Momsforespørgsler > Bogført moms.
-2. Klik på Vis filtre.
+# <a name="posted-sales-tax-page"></a>Siden Bogført moms
+
+1. I navigationsruden skal du gå til **Moduler > Moms > Forespørgsler og rapporter > Momsforespørgsler > Bogført moms**.
+2. Vælg **Vis filtre** for at indsnævre visningen til bestemte posteringer.
 3. Luk siden.
-4. Gå til Moms > Indirekte skatter > Moms > Momsafregningsperioder.
-5. Udvid sektionen Periodeintervaller.
-6. Vælg det interval du er interesseret i.
-7. Få vist bogførte momstransaktioner for det valgte afregningsperiodeinterval.
-8. Du kan filtrere listen over bogførte momsposteringer yderligere.
-9. Luk siden.
-10. Gå til Moms > Indirekte skatter > Moms > Momskoder.
-11. Klik på Momskode i handlingsruden.
-12. Klik på Bogført moms.
+
+# <a name="sales-tax-settlement-periods-page"></a>Siden Momsafregningsperioder
+
+1. I navigationsruden skal du gå til **Moduler > Moms > Indirekte skatter > Moms > Momsafregningsperioder**.
+2. Udvid sektionen **Periodeintervaller**.
+3. Vælg det interval du er interesseret i.
+4. Du kan filtrere listen over bogførte momsposteringer yderligere.
+5. Luk siden.
+
+# <a name="sales-tax-codes-page"></a>Siden Momskoder
+
+1. Gå i navigationsruden til **Moduler > Moms > Indirekte skatter > Moms > Momskoder**.
+2. Klik på **Momskode** i handlingsruden.
+3. Vælg **Bogført moms**.
 

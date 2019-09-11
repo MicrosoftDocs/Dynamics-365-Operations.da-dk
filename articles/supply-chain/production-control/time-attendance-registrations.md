@@ -1,9 +1,9 @@
 ---
-title: Registrering af tid og fremmøde
+title: Oversigt over registrering af tid og fremmøde
 description: Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. I dette emne beskrives registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fac917362fe4aa2be675133528a7108647ecc00
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0e88d64340a7f4963956d1dce3c31f3542cc30f8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838409"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865226"
 ---
-# <a name="time-and-attendance-registration"></a>Registrering af tid og fremmøde
+# <a name="time-and-attendance-registration-overview"></a>Oversigt over registrering af tid og fremmøde
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ Arbejdere skal registrere den tid, de bruger på arbejdet, samt deres fremmøde,
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis du kører Tid og fremmøde sammen med Produktionsudførelse, registreres alle registreringer for projekter, projektaktiviteter, indirekte aktiviteter, fraværskoder, overtid og flekstid, og de bruges til at beregne løn i begge moduler. |
 
-## <a name="time-registrations-workers"></a> Tidsregistrering for arbejdere
+## <a name="time-registrations-workers"></a>Tidsregistrering for arbejdere
 Arbejdere skal oprettes som arbejdere, der registrerer tid, i det firma, hvor de er ansat, for at kunne registrere tid og fravær.
 
 Efter konfigurationen kan arbejderne angive forskellige former for registreringer.
@@ -85,7 +85,7 @@ På samme måde som du tildeler en beregningsgruppe til en tidsregistreringsarbe
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis der er beregnet overtid for bestemte arbejdere, kan overtiden tildeles bestemte job i løbet af dagen. Det er relevant, hvis jobomkostningerne er beregnet på basis af arbejderløn. |
 
-## <a name="approving-registrations-using-workflow"></a> Godkende registreringer ved hjælp af arbejdsgang
+## <a name="approving-registrations-using-workflow"></a>Godkende registreringer ved hjælp af arbejdsgang
 Du kan oprette en godkendelsesproces som en arbejdsgang, der automatisk godkender registreringer, som overholder arbejdsgangsregler, så det kun er afvigelser, der skal håndteres manuelt. Hvis godkendelse via arbejdsgang er aktiveret, sender teamlederen eller den tilsynsførende de beregnede registreringer til godkendelse. I arbejdsgangens proces oprettes de relevante godkendelser og opgaver, og de tildeles de rette brugere og roller, som er identificeret i arbejdsgangen. Der er to arbejdsgangsgodkendelser for tid og fremmøde.
 
 | Arbejdsgang                                  | Formål                                                                                                   | Registreringstype                                                                                                                                                                                                                                     |

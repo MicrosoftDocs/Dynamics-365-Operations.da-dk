@@ -3,7 +3,7 @@ title: Oprette avancerede regler for kladder
 description: Denne procedure indeholder en trinvis gennemgang, hvordan du opretter avancerede regler for kladder.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ec0db1bc5018649acaca05c71a510880b415777
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3eb34ac419aeab3663a8931d022abf7bcbfddd37
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846673"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916133"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Oprette avancerede regler for kladder
 
@@ -31,30 +31,30 @@ Denne procedure indeholder en trinvis gennemgang, hvordan du opretter avancerede
 
 
 ## <a name="set-up-journal-control"></a>Opsæt kladdekontrol.
-1. Gå til Finans > Kladdeopsætning > Kladdenavne.
+1. Gå i **Navigationsrude** til **Moduler > Finans > Konfiguration af kladde > Kladdenavne**.
 2. Find og vælg den ønskede post på listen.
-3. Klik på Kladdekontrol.
-4. Klik på Tilføj.
-5. Klik på rullelisten i feltet Regnskaber for at åbne opslaget.
+3. I **Handlingsruden** skal du klikke på **Kladdekontrol**.
+4. Klik på **Tilføj** i oversigtspanelet **Hvilke kontotyper kan posteres?**.
+5. Klik på rullelisten i feltet **Regnskaber** for at åbne opslaget.
 6. Find og vælg den ønskede post på listen.
 7. Klik op linket i den valgte række på listen.
-8. Klik på Tilføj.
-9. Klik på rullelisten i feltet Kontostruktur for at åbne opslaget.
+8. Klik på **Tilføj** i oversigtspanelet **Hvilke segmentværdier er gyldige denne kladde?**.
+9. Klik på rullelisten i feltet **Kontostruktur** for at åbne opslaget.
 10. Find og vælg den ønskede post på listen.
 11. Klik op linket i den valgte række på listen.
-12. Klik på rullelisten i feltet Segment for at åbne opslaget.
+12. Klik på rullelisten i feltet **Segment** for at åbne opslaget.
 13. Klik op linket i den valgte række på listen.
-14. Klik på rullelisten i feltet Fra-værdi for at åbne opslaget.
+14. Klik på rullelisten i feltet **Fra-værdi** for at åbne opslaget.
 15. Find og vælg den ønskede post på listen.
 16. Klik op linket i den valgte række på listen.
-17. Klik på rullelisten i feltet Til-værdi for at åbne opslaget.
+17. Klik på rullelisten i feltet **Til-værdi** for at åbne opslaget.
 18. Find og vælg den ønskede post på listen.
 19. Klik op linket i den valgte række på listen.
 
 ## <a name="set-up-posting-restrictions"></a>Angive bogføringsbegrænsninger
 1. Luk siden.
-2. Klik på Bogføringsbegrænsninger.
-3. Vælg Pr. brugergruppe i Hvordan vil du indstille bogføringsbegrænsninger?.
+2. Klik på **Bogføringsbegrænsninger**.
+3. Vælg 'Pr. brugergruppe' i **Hvordan vil du indstille bogføringsbegrænsninger?**.
 4. Markér 'den gruppe, du vil tillade bogføring af dette kladdenavn' i træet.
-5. Klik på OK.
+5. Klik på **OK**.
 

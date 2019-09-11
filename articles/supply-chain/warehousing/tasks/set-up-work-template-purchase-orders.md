@@ -1,9 +1,9 @@
 ---
 title: Konfigurere en arbejdsskabelon for indkøbsordrer
-description: Denne procedure fokuserer på konfiguration af en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager.
+description: I dette emne beskrives, hvordan du konfigurerer en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,57 +17,47 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16a8b2d80e6d5445d57c171ddb4456dd8db5ecde
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 227a6865df826caf8ce154f9c44ebe082acd76a5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847033"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916731"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Konfigurere en arbejdsskabelon for indkøbsordrer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure fokuserer på konfiguration af en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager. Arbejdsskabeloner bestemmer det sæt instruktioner, der vises for lagermedarbejderen på en mobilenhed, når varer flyttes fra modtagelsesområdet. Du kan bruge denne procedure med de nævnte data i demodatafirmaet USMF. Før du starter denne vejledning, skal du oprette et arbejdspulje-id. I dette eksempel bruges arbejdspulje-id'et Indgående. Denne procedure er beregnet til lagerchefen.
+I dette emne beskrives, hvordan du konfigurerer en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager. Arbejdsskabeloner bestemmer det sæt instruktioner, der vises for lagermedarbejderen på en mobilenhed, når varer flyttes fra modtagelsesområdet. Du kan bruge denne procedure med de nævnte data i demodatafirmaet USMF. Før du starter denne vejledning, skal du oprette et arbejdspulje-id. I dette eksempel bruges arbejdspulje-id'et Indgående. Denne procedure er beregnet til lagerchefen.
 
-1. Gå til Lagerstedsstyring > Opsætning > Arbejde > Arbejdsskabeloner.
-2. I feltet Arbejdsordretype skal du vælge "Indkøbsordrer".
+1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Arbejde > Arbejdsskabeloner**.
+2. I feltet **Arbejdsordretype** skal du vælge **Indkøbsordrer**.
 
 ## <a name="create-a-work-template-header"></a>Oprette et arbejdsskabelonhoved
-1. Klik på Ny.
-2. Indtast et tal i feltet Sekvensnummer.
-    * Dette er den rækkefølge, som arbejdsskabelonerne skal evalueres i. Du kan om nødvendigt ændre rækkefølgen.  
-3. Indtast en værdi i feltet Arbejdsskabelon.
-    * Dette er det entydige id for denne skabelon.  
-4. Skriv en værdi i feltet Beskrivelse af arbejdsskabelon.
-    * Indstillingen Gyldig markeres ikke, før du har fuldført alle de oplysninger, der er nødvendige for skabelonen, og derefter har klikket på Gem.  
-    * En arbejdsordre af typen Indkøbsordre kan ikke behandles automatisk, så lad indstillingen Udfør automatisk behandling være indstillet til Nej.  
-5. Indtast en værdi i feltet Arbejdspulje-id.
-    * Med arbejdspulje-id'er kan du organisere arbejde i grupper. Den værdi, du angiver her, bliver standardværdien for arbejde, der oprettes ved hjælp af denne skabelon.  
-6. Skriv 1 i feltet Arbejdsprioritet.
-    * Dette angiver vigtigheden af arbejdet, og den værdi, du angiver her, bliver brugt som standard for alt arbejde, der oprettes ved hjælp af denne skabelon.  
-7. Klik på Gem.
-    * Du skal gemme arbejdsskabelonhovedet, før knappen Rediger forespørgsel bliver tilgængelig.  
+1. Vælg **Ny**.
+2. Indtast et tal i feltet **Serienummer**. Dette er den rækkefølge, som arbejdsskabelonerne skal evalueres i. Du kan om nødvendigt ændre rækkefølgen.  
+3. Indtast en værdi i feltet **Arbejdsskabelon**. Dette er det entydige id for denne skabelon.  
+4. Skriv en værdi i feltet **Beskrivelse af arbejdsskabelon**.
+    - Indstillingen **Gyldig** markeres ikke, før du har fuldført alle de oplysninger, der er nødvendige for skabelonen, og derefter har valgt **Gem**.  
+    - En arbejdsordre af typen **Indkøbsordre** kan ikke behandles automatisk, så lad indstillingen **Udfør automatisk behandling** være indstillet til **Nej**.  
+5. Indtast en værdi i feltet **Arbejdspulje-id**. Med arbejdspulje-id'er kan du organisere arbejde i grupper. Den værdi, du angiver her, bliver standardværdien for arbejde, der oprettes ved hjælp af denne skabelon.  
+6. Skriv `1` i feltet **Arbejdsprioritet**. Dette angiver vigtigheden af arbejdet, og den værdi, du angiver her, bliver brugt som standard for alt arbejde, der oprettes ved hjælp af denne skabelon.  
+7. Vælg **Gem**. Du skal gemme arbejdsskabelonhovedet, før knappen **Rediger forespørgsel** bliver tilgængelig.  
 
 ## <a name="set-up-the-query-for-the-work-template"></a>Konfigurer forespørgslen til arbejdsskabelonen
-1. Klik på Rediger forespørgsel.
-    * Vi skal angive en begrænsning, så skabelonen kun kan bruges på et bestemt lagersted.  
-2. Klik på Tilføj.
-3. Markér den valgte række på listen.
-4. I feltet Felt skal du skrive "lagersted".
-5. Skriv en værdi i feltet Kriterier.
-6. Klik på OK.
-7. Klik på Ja.
+1. Vælg **Rediger forespørgsel**. Vi skal angive en begrænsning, så skabelonen kun kan bruges på et bestemt lagersted.  
+2. Vælg **Tilføj**.
+3. I feltet **Felt** for den nye række skal du skrive `warehouse`.
+4. Skriv en værdi i feltet **Kriterier**.
+5. Vælg **OK**.
+6. Vælg **Ja**.
 
 ## <a name="set-work-template-details"></a>Angiv arbejdsskabelondetaljer
-1. Klik på Ny.
-2. Vælg "Pluk" i feltet Arbejdstype.
-3. Skriv "køb" i feltet Arbejdsklasse-id.
-    * Den arbejdsklassen, som du angiver her, bliver standard på alle arbejdslinjer af typen Pluk, som oprettes ved hjælp af denne skabelon. Arbejdsklassen kan ikke tilsidesættes i arbejdsordrelinjerne. Arbejdsklasser bruges til at dirigere og/eller begrænse typen af arbejdsordrelinjer, som en lagermedarbejder kan behandle på en mobilenhed.  
-4. Klik på Ny.
-5. Vælg 'Læg på lager' i feltet Arbejdstype.
-6. Skriv en værdi i feltet Arbejdsklasse-id.
-    * Pluk og læg-instruktionerne er et sæt. Hvert pluk/lægsæt skal have samme arbejdsklasse. Brug samme arbejdsklasse, som du angav for plukinstruktionen.  
-7. Klik på Gem.
-    * Bemærk, at afkrydsningsfeltet Gyldig nu er markeret.  
+1. Vælg **Ny**.
+2. Vælg **Pluk** i feltet **Arbejdstype**.
+3. Skriv `purchase` i feltet **Arbejdsklasse-id**. Den arbejdsklassen, som du angiver her, bliver standard på alle arbejdslinjer af typen Pluk, som oprettes ved hjælp af denne skabelon. Arbejdsklassen kan ikke tilsidesættes i arbejdsordrelinjerne. Arbejdsklasser bruges til at dirigere og/eller begrænse typen af arbejdsordrelinjer, som en lagermedarbejder kan behandle på en mobilenhed.  
+4. Vælg **Ny**.
+5. Vælg **Læg på lager** i feltet **Arbejdstype**.
+6. Skriv en værdi i feltet **Arbejdsklasse-id**. Pluk og læg-instruktionerne er et sæt. Hvert pluk/lægsæt skal have samme arbejdsklasse. Brug samme arbejdsklasse, som du angav for plukinstruktionen.  
+7. Vælg **Gem**. Bemærk, at afkrydsningsfeltet **Gyldig** nu er markeret.  
 

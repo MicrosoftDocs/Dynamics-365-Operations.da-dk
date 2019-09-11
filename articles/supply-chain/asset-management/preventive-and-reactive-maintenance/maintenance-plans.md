@@ -1,0 +1,196 @@
+---
+title: Vedligeholdelsesplaner
+description: I dette emne beskrives vedligeholdelsesplaner i Styring af aktiver.
+author: josaw1
+manager: AnnBe
+ms.date: 08/15/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2019-08-15
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 5a89e85dc92d57b0a5d2fc7e7a5910c7be09387c
+ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1875559"
+---
+# <a name="maintenance-plans"></a>Vedligeholdelsesplaner
+
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
+
+En vedligeholdelsesplan definerer, hvornår et forud planlagt præventivt vedligeholdelsesjob skal udføres på et aktiv. Vedligeholdelsesplaner kan knyttes til aktiver, aktivtyper, arbejdssteder eller arbejdsstedstyper, men du skal først oprette de vedligeholdelsesplaner, der skal bruges i firmaet.
+
+En vedligeholdelsesplan kan have flere vedligeholdelsesplanlinjer. Vedligeholdelsesjobtype og -interval er angivet på vedligeholdelsesplanlinjen. Der findes to typer vedligeholdelsesplanlinjer:
+
+- Tid  
+- Tæller  
+
+Vedligeholdelsesplanlinjer af typen "Tid" bruges til tilbagevendende planlagt vedligeholdelse baseret på et fast tidsinterval. Vedligeholdelsesplanlinjer af typen "Tæller" bruges til planlagt vedligeholdelse eller reaktiv vedligeholdelse baseret på aktivtællerens registreringer. En vedligeholdelsesplan kan omfatte flere vedligeholdelsesplanlinjer af begge typer.
+
+>[!NOTE]
+>Hvis der ikke er registreret nogen tællerværdier for en tællertype på et aktiv, udelades vedligeholdelsesplanlinjerne.
+
+Først skal du oprette de vedligeholdelsesplaner, du har brug for til dine præventive vedligeholdelsesjob, og vælge aktivtyper, aktiver, arbejdsstedstyper og arbejdssteder, der skal knyttes til hver vedligeholdelsesplan. Efterfølgende, hvis det er nødvendigt, kan du også føje vedligeholdelsesplaner til et aktiv eller et arbejdssted. Vælg **Alle aktiver** > vælg oversigtspanelet **Vedligeholdelsesplaner for aktiver**, eller **Alle arbejdssteder** > vælg arbejdssted > oversigtspanelet **Vedligeholdelsesplaner**.
+
+Hvis du føjer en vedligeholdelsesplan til aktivtyper eller arbejdsstedstyper, betyder det, at når du opretter nye aktiver eller arbejdssteder med disse aktivtyper eller arbejdsstedstyper, føjes aktivet eller arbejdsstedet automatisk til vedligeholdelsesplanen. Startdatoen for tilknytningen til en vedligeholdelsesplan vil være den aktuelle dato, der evt. skal tilpasses.
+
+## <a name="set-up-maintenance-plans"></a>Konfigurer vedligeholdelsesplaner
+
+I dette afsnit beskrives, hvordan du opretter vedligeholdelsesplanlinjer, og afsnittet indeholder eksempler på, hvordan de kan bruges.
+
+1. Klik på **Styring af aktiver** > **Opsætning** > **Forebyggende vedligeholdelse** > **Vedligeholdelsesplaner**.
+
+2. Klik på **Ny** for at oprette en ny sekvens.
+
+3. Indsæt et id i feltet **Vedligeholdelsessekvens** og et navn i feltet **Navn**.
+
+4. Indsæt den startdato, hvorfra planlægningen kan udføres på vedligeholdelsesplanen, i feltet **Plandato**. Bemærk, at tidsbaserede vedligeholdelsesplanlinjer kan have andre plandatoer.
+
+5. Vælg "Ja" under til/fra-knappen **Aktiv** for at aktivere vedligeholdelsesplanen.
+
+>[!NOTE]
+>Hvis du deaktiverer en vedligeholdelsesplan, vil der ikke blive oprettet nogen planlægningsposter i vedligeholdelsestidsplanen, når du kører et vedligeholdelsesplanlægningsjob.
+
+6. Felterne **Tolerancedage før** og **Tolerancedage efter** er tilknyttet de vedligeholdelsesplanlinjer, hvor afkrydsningsfeltet **Undertryk overlappende vedligeholdelsesjob** er markeret (se trin 17). Hvis flere vedligeholdelsesplaner overlapper, bruges felterne "Tolerance" til at forlænge det interval i dage, hvor det mest omfattende eller største job oprettes som en vedligeholdelsestidsplanslinje under planlægningen af vedligeholdelsesplanen, mens hyppigere, overlappende job udelades under vedligeholdelsesplanlægningen. Indsæt antallet af dage i feltet **Tolerancedage før**, f.eks. "2".
+
+7. Hvis du har indsat en værdi i **Tolerancedage før**, skal du også indsætte et antal dage i feltet **Tolerancedage efter**, f.eks. "2".
+
+>[!NOTE]
+>Det eksempel, der beskrives i dette og det foregående trin, betyder, at hvis flere vedligeholdelsesplanlinjer overlapper hinanden, og **Undertryk overlappende vedligeholdelsesjob** er markeret for en eller flere linjer, udvides perioden for udeladelse af vedligeholdelsestidsplanslinjer til i alt fem dage (den forventede startdato på vedligeholdelsesplanlinjen *og* to dage før *og* to dage efter denne dato).
+
+8. Felterne i gruppen **Detaljer** i oversigtspanelet **Detaljer** viser antallet af vedligeholdelsesplanlinjer, der er oprettet i vedligeholdelsesplanen, og antallet af aktiver og arbejdssteder, der er knyttet til vedligeholdelsesplanen.
+
+9. Klik på **Tilføj tidslinje** eller **Tilføj aktivtællerlinje** i oversigtspanelet **Linjer** for at oprette en ny vedligeholdelsesplanlinje.
+
+10. Indsæt en beskrivelse for linjen i feltet **Beskrivelse af arbejdsordre**. Beskrivelsen overføres til de tilknyttede arbejdsordrer.
+
+11. Vælg den jobtype, som vedligeholdelsesplanlinjen er knyttet til, i feltet **Vedligeholdelsesjobtype**.
+
+12. I felterne **Vedligeholdelsesjobtypevariant** og **Fag** skal du vælge den variant og det fag, der er relateret til vedligeholdelsesjobtypen.
+
+13. I felterne **Afslut inden for dage** og **Afslut inden for timer** kan du indsætte den forventede slutdato i dage eller timer. Den forventede slutdato indsættes i forhold til den forventede startdato, som beregnes, når der oprettes vedligeholdelsestidsplanlinjer. Du kan f.eks. indsætte "7" i feltet **Afslut inden for dage** for at angive, at det relaterede job skal fuldføres inden for en uge fra den forventede startdato.
+
+14. I feltet **Intervaltype** skal du vælge den type interval, der skal bruges på vedligeholdelsesplanlinjen, f.eks. "Gentagne gange..." eller "Én gang...". Du kan se en beskrivelse af relationen mellem intervaltyper og linjetyper i tabellen [Oversigt over intervaltyper](## Interval types overview) nedenfor.
+
+15. Feltet **Periode** er kun knyttet til tidsbaserede linjetyper. Vælg den periodetype, der er knyttet til periodefrekvensen.
+
+16. Indsæt det antal gange, linjen skal bruges til planlægning af præventive vedligeholdelsesjob, i feltet **Periodefrekvens**. Eksempel: Hvis du har oprettet en linje af typen "Tæller", og tælleren er produktionsantallet, og du indsætter tallet "20000" i dette felt, oprettes der nye vedligeholdelsessekvenslinjer under planlægning af præventiv vedligeholdelse, hver gang du forventes at producere 20.000 flere varer.
+
+17. Afkrydsningsfeltet **Undertryk overlappende vedligeholdelsesjob** er relateret til både tidsbaserede og tællerbaserede linjetyper. Marker afkrydsningsfeltet for at slette poster i vedligeholdelsestidsplanen, der er oprettet på samme dato. Dette er relevant, hvis du f.eks. har oprettet en 1-måneds inspektionslinje, en 6-måneders inspektionslinje og en 1-års inspektionslinje. For 1-års inspektion ønsker du kun, at denne inspektion skal udføres, ikke de to andre inspektioner, der også ville passe ind i tidsrammen. For at oprette dette eksempel korrekt skal du oprette 1-års inspektionslinjen som første linje, 6-måneders linjen som den anden linje og 1-måneds linjen som den tredje linje, og du skal markere afkrydsningsfeltet **Undertryk overlappende vedligeholdelsesjob** for 1-måneds og 6-måneders linjerne. På denne måde kan du sikre, at, når du kommer til 1-årsmærket, udelades inspektionerne for 1-måned og 6-måneder, og der oprettes kun en vedligeholdelsestidsplanslinje for 1-års inspektionslinjen.
+
+>[!NOTE]
+>Det eksempel, der beskrives i dette trin, viser, at det mest omfattende job, som indeholder det største antal opgaver, og som ikke udføres så ofte, altid skal indsættes som første linje. De hyppigere job indsættes derefter som separate linjer i frekvensrækkefølgen, så det mest almindelige job placeres nederst på listen.
+
+18. Feltet **Tæller** er kun knyttet til tællerbaserede linjetyper. Vælg den tællertype, der skal bruges på linjen. Hvis en tællertype ikke er aktiv på et relateret aktiv, udelades vedligeholdelsesplanlinjen.
+
+19. Feltet **Aktivtællerens tidshorisont i dage** er kun relateret til tællerbaserede linjetyper. Indsæt et tal, der definerer, hvor mange dage tilbage tællerregistreringer kontrolleres, når der foretages planlægning af vedligeholdelsesplanen. Det betyder, hvor langt tilbage der er data (eksisterende tællerregistreringer), der bruges som grundlag for beregning af den tendens, der bestemmer, hvor mange vedligeholdelsestidsplanslinjer der oprettes.
+
+>*Eksempel:* Hvis registreringen af tællere forventes at blive foretaget en gang om måneden, kan du indsætte tallet '365' i dette felt, da planlægning af vedligeholdelsesplanen altid er baseret på de seneste 12 måneder, og dermed oprette vedligeholdelsestidsplanslinjer på baggrund af tendensen for det sidste år. Hvis du derimod indsætter tallet '10' i dette felt, forventer du, at tællerregistreringer skal foretages hyppigere, f.eks. dagligt. Det betyder, at når du planlægger en vedligeholdelsesplan, bruges tællerregistreringerne for de seneste 10 dage som udgangspunkt for planlægningen af vedligeholdelsestidsplanslinjer.
+
+20. Feltet **Plandato** er kun knyttet til tidsbaserede linjetyper. Hvis vedligeholdelsesplanlinjen har en anden planlægningsdato end hele vedligeholdelsesplanen, skal du vælge en dato i feltet **Plandato** på linjen.
+
+21. I feltet **Serviceniveau** kan du vælge et serviceniveau for en arbejdsordre som en yderligere afgrænsning på linjen for vedligeholdelsesplanen – til brug som serviceniveau i en arbejdsordre.
+
+22. Marker afkrydsningsfeltet **Automatisk oprettelse**, hvis der automatisk skal oprettes en arbejdsordre i henhold til den valgte vedligeholdelsesplanlinje, når du planlægger vedligeholdelsesplaner.
+
+23. Hvis du har markeret afkrydsningsfeltet **Automatisk oprettelse**, kan du vælge en arbejdsordretype for den automatisk oprettede arbejdsordre i feltet **Arbejdsordretype**. Hvis du har markeret afkrydsningsfeltet **Automatisk oprettelse**, og du ikke vælger en arbejdsordretype i dette felt, vælges den arbejdsordretype, der er valgt i **Aktivadministration** > **Opsætning** > **Parametre til aktivstyring** > **Arbejdsordrer**-linket > feltet **Forebyggende arbejdsordretype**.
+
+24. Brug felterne **Sæson fra** og **Sæson til** til at oprette en gentaget tidsbaseret vedligeholdelsesplanlinje i en periode på 12 måneder. *Eksempel:* Udstyr, der bruges til vedligeholdelse af grønne områder, kræver service hvert forår i en foruddefineret periode. Indsæt startdatoen for den periode, der skal gentages, i feltet **Sæson fra**.
+
+25. Indsæt slutdatoen for den periode, der skal gentages, i feltet **Sæson til**.
+
+26. I feltet **Resultatperiode** vises den aktuelle periode, der skal gentages. Når den aktuelle periode er overskredet, og du starter et nyt år, bliver den periode, der vises i dette felt, opdateret, så den afspejler den næste periode i gentagelsessekvensen.
+
+27. I oversigtspanelet **Aktiver** skal du vælge de aktiver, der skal relateres til vedligeholdelsesplan.
+
+28. I oversigtspanelet **Aktivtyper** skal du vælge de aktivtyper, der skal relateres til vedligeholdelsesplanen.
+
+29. I oversigtspanelet **Arbejdssteder** skal du vælge de arbejdssteder, der skal tilknyttes vedligeholdelsesplanen. Hvis det er nødvendigt, kan du gøre opsætningen mere specifik ved at vælge en tilknyttet aktivtype, producent og model.
+
+30. I oversigtspanelet **Arbejdsstedstyper** skal du vælge de arbejdsstedstyper, der skal tilknyttes vedligeholdelsesplanen.
+
+>[!NOTE]
+>Når der oprettes arbejdsordrer manuelt for aktiver, der er dækket af en leverandørgaranti, vises der en dialogboks for at gøre brugeren opmærksom på garantien. Oprettelsen af arbejdsordren kan derefter annulleres. Kontrollen af en garantirelation udelades for arbejdsordrer, der oprettes automatisk.
+
+## <a name="interval-types-overview"></a>Oversigt over intervaltyper
+
+| Intervaltype og beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                       | Linjetype: Tid                                                                                                                                                                                                                                                                                                                                                           | Linjetype: Tæller                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Intervaltype: gentaget fra plandato** Optællingen starter fra den anvendte plandato, og når du planlægger vedligeholdelsesplaner, oprettes der vedligeholdelsestidsplanslinjer for, hvornår intervallet forventes nået.                                                                                                                                                                                                                | **Plandato** på vedligeholdelsesplanlinjen bruges. Hvis der ikke er valgt en plandato på linjen, bruges **Plandato** for vedligeholdelsesplanen. Eksempel: Hvis tallet "3" indsættes i feltet **Periodefrekvens**, og "År" er valgt i feltet **Periode**, oprettes der en ny vedligeholdelsestidsplanslinje én gang hvert tredje år.                             | **Plandato** for vedligeholdelsesplanen bruges. Hvis tælleren er udskiftet, bruges den seneste udskiftningsdato som plandatoen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Intervaltype: Gentaget fra startdato** Optællingen starter fra startdatoen i aktivrelationen. Datoen vælges i detaljevisningen **Alle aktiver** > oversigtspanelet **Vedligeholdelsesplaner for aktiver** > feltet **Startdato** eller i detaljevisningen **Alle arbejdssteder** > oversigtspanelet **Vedligeholdelsesplaner** > feltet **Startdato**. Når du planlægger vedligeholdelsesplaner, oprettes der en vedligeholdelsestidsplanslinje, når intervallet er nået. | Startdatoen for vedligeholdelsesplanlinjen for aktiv eller arbejdssted bruges. Hvis dette felt er tomt, bruges **Plandato** for vedligeholdelsesplanen.                                                                                                                                                                                                 | Startdatoen for vedligeholdelsesplanlinjen for aktiv eller arbejdssted bruges. Hvis dette felt er tomt, bruges **Plandato** for vedligeholdelsesplanen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Intervaltype: Gentaget fra sidste arbejdsordre** Optællingen starter fra den faktiske slutdato og -tidspunkt for den seneste arbejdsordre, der blev fuldført på aktivet, *og* varianten af vedligeholdelsesjobtypen og fagkombinationen. Datoen og klokkeslættet vises i feltet **Faktisk slutning** i detaljevisningen **Alle arbejdsordrer**.                                                                                                                                 | Den faktiske slutdato og -tidspunkt for den arbejdsordre, der er fuldført på aktivet *og* vedligeholdelsesjobtypen/varianten af vedligeholdelsesjobtypen/fagkombinationen bruges. Hvis der ikke findes nogen fuldført arbejdsordre, bruges en af de datoer, der bruges i intervaltypen "Gentaget fra startdato", der er beskrevet ovenfor, i stedet.                                                                                             | Den faktiske slutdato og -tidspunkt for den arbejdsordre, der er fuldført på aktivet *og* vedligeholdelsesjobtypen/varianten af vedligeholdelsesjobtypen/fagkombinationen bruges. Hvis der ikke er angivet en slutdato og et sluttidspunkt på arbejdsordren, bruges en af de datoer, der bruges i intervaltypen "Gentaget fra startdato", der er beskrevet ovenfor, i stedet.                                                                                                                                                                                                                                                                                                                                                                           |
+| **Intervaltype: én gang fra plandato** Se beskrivelse til intervaltypen "gentaget fra plandato" ovenfor. Den eneste forskel er, at denne intervaltype kun skal bruges én gang.                                                                                                                                                                                                                                                   | Se beskrivelsen af intervaltypen "gentaget fra plandato" ovenfor. Dette interval bruges typisk til et engangsvedligeholdelses- eller servicejob.                                                                                                                                                                                                                             | Se beskrivelsen af intervaltypen "gentaget fra plandato" ovenfor. Dette interval bruges typisk til et engangsvedligeholdelses- eller servicejob. **Note 1:** Denne intervaltype er kun relevant, hvis tælleren erstattes, hver gang du udfører et vedligeholdelses- eller service job. Hvis en tæller af en eller anden grund er blevet udskiftet før afslutningen af det planlagte interval, beregnes der en ny tid for jobbet fra tidspunktet for udskiftningen af tælleren. **Note 2:** Hvis tælleren erstattes, når vedligeholdelses- eller servicejobbet er fuldført, fungerer denne intervaltype som intervaltypen "gentaget fra plandato" ovenfor.                                             |
+| **Intervaltype: én gang fra startdato** Se beskrivelse til intervaltypen "gentaget fra startdato" ovenfor. Den eneste forskel er, at denne intervaltype kun skal bruges én gang.                                                                                                                                                                                                                                                 | Se beskrivelsen af intervaltypen "gentaget fra startdato" ovenfor. Dette interval bruges typisk til et engangsvedligeholdelses- eller servicejob.                                                                                                                                                                                                                            | Se beskrivelsen af intervaltypen "gentaget fra startdato" ovenfor. Dette interval bruges typisk til et engangsvedligeholdelses- eller servicejob. **Note 1** ovenfor gælder også for denne intervaltype. **Note 3:** Hvis tælleren erstattes, når vedligeholdelses- eller servicejobbet er fuldført, fungerer denne intervaltype som intervaltypen "gentaget fra startdato" ovenfor.                                                                                                                                                                                                                                                                                                |
+| **Interval type: Når nået over** Denne intervaltype er kun knyttet til tællere og bruges til at angive en øvre grænse, der er konfigureret på vedligeholdelsesplanlinjen. Poster i vedligeholdelsestidsplanen har den forventede startdato og -klokkeslæt for tællerregistreringen, hvilket betyder, at disse poster oprettes med en forventet startdato, der er lig med eller tidligere end systemdatoen.                                                | I/T                                                                                                                                                                                                                                                                                                                                                                       | Tællerintervallet angiver en øvre grænse. Hvis denne grænse overskrides, når du opretter en tællerregistrering, oprettes der en vedligeholdelsestidsplanslinje, når du planlægger forebyggende vedligeholdelse.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Interval type: når nået under** Denne intervaltype er kun knyttet til tællere og bruges til at angive en nedre grænse, der er konfigureret på vedligeholdelsesplanlinjen. Poster i vedligeholdelsestidsplanen har den forventede startdato og -klokkeslæt for tællerregistreringen, hvilket betyder, at disse poster oprettes med en forventet startdato, der er lig med eller tidligere end systemdatoen.                                                 | I/T                                                                                                                                                                                                                                                                                                                                                                       | Tællerintervallet angiver en nedre grænse. Hvis denne grænse er passeret, når du opretter en tællerregistrering, oprettes der en vedligeholdelsestidsplanslinje, når du planlægger forebyggende vedligeholdelse.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Interval type: sammenkædet fra startdato** (kun én gang) En vedligeholdelsesplan kan indeholde flere linjer, der bruger denne intervaltype, og disse linjer er indbyrdes sammenkædet. Du vil typisk oprette en vedligeholdelsesplan, der kun indeholder linjer med denne intervaltype. Vedligeholdelsestidsplanslinjer oprettes ved at identificere den vedligeholdelsesplanslinje, der har den første forventede startdato og -tidspunkt.                                                                                                                                                                                                                                                                                                                                                                                           | Se beskrivelsen af "én gang fra startdato" ovenfor. Eksempel: Du opretter to linjer i en vedligeholdelsesplan for et service job på en bil: én tidsbaseret linje med en 1-års periode og én tællerbaseret linje med en grænse på 25.000 km. Der oprettes en vedligeholdelsestidsplanslinje for den grænse, der nås først. For denne linjetype opretter du linjen med 1 års-perioden.                                                                                                                                                                                   | Se beskrivelsen af "én gang fra startdato" ovenfor. Eksempel: Du opretter to linjer i en vedligeholdelsesplan for et service job på en bil: én tidsbaseret linje med en 1-års periode og én tællerbaseret linje med en grænse på 25.000 km. Der oprettes en vedligeholdelsestidsplanslinje for den grænse, der nås først. For denne linjetype opretter du linjen med 25.000 km-grænsen. Eksempel på oprettelse af to tællerlinjer: Du kan også oprette en vedligeholdelsesplan med to tilknyttede tællerbaserede linjer, hvor den første linje har en grænse på 10.000 stk. af de varer, der produceres, og den anden linje er relateret til den maskine eller ressource, der kræver service efter 3.000 timers kørsel.                                                                                                                                                           |
+| **Interval type: sammenkædet fra sidste arbejdsordre** (gentages efter hver fuldførte arbejdsordre) En vedligeholdelsesplan kan indeholde flere linjer, der bruger denne intervaltype, og disse linjer er indbyrdes sammenkædet. Du vil typisk oprette en vedligeholdelsesplan, der kun indeholder linjer med denne intervaltype. Vedligeholdelsestidsplanslinjer oprettes ved at identificere den vedligeholdelsesplanslinje, der har den første forventede startdato og -tidspunkt.                                                                                                                                                                                                                                                                                                                                                             | Denne intervaltype fungerer grundlæggende som "sammenkædet fra startdato" som beskrevet ovenfor. Den eneste forskel er den dato, som intervaltypen er baseret på. Den dato, der bruges, er den faktiske dato og -tidspunkt i den seneste arbejdsordre, der er fuldført på aktivet *og* vedligeholdelsesjobtypen/varianten af vedligeholdelsesjobtypen/fagkombinationen,                                                                                                                                                                                                                                                           | Denne intervaltype fungerer grundlæggende som "sammenkædet fra startdato" som beskrevet ovenfor. Den eneste forskel er den dato, som intervaltypen er baseret på. Den dato, der bruges, er den faktiske dato og -tidspunkt i den seneste arbejdsordre, der er fuldført på aktivet *og* vedligeholdelsesjobtypen/varianten af vedligeholdelsesjobtypen/fagkombinationen,                                                                                                                   |
+
+
+>[!NOTE]
+>Når der oprettes vedligeholdelsestidsplanslinjer for tidsbaserede vedligeholdelsesplanlinjer, er den forventede tid altid dagens starttidspunkt. For tællerbaserede vedligeholdelsesplanlinjer kan den forventede tid blive når som helst i løbet af dagen.
+
+Nedenfor finder du eksempler på opsætningen af tidsbaserede og tællerbaserede vedligeholdelsesplanlinjer:
+
+**Eksempel 1 - tidsbaseret vedligeholdelsesplanlinje:** Et smøreapparatjob kan konfigureres med et fast interval, der forekommer én gang om ugen. Til dette formål skal du vælge "gentaget fra plandato" i feltet **Intervaltype** som vist i nedenstående figur.
+
+![Figur 2](media/02-preventive-maintenance.png)
+
+**Eksempel 2 - tidsbaseret vedligeholdelsesplanlinje** Der kan oprettes et inspektionsjob, som skal udføres ca. en gang om ugen. Til dette formål skal du vælge "gentaget fra sidste arbejdsordre" i feltet **Intervaltype** som vist i nedenstående figur.
+
+![Figur 3](media/03-preventive-maintenance.png)
+
+**Eksempel 3 - tællerbaseret vedligeholdelsesplanlinje:** En grafisk illustration af en timetæller, for hvilken der oprettes en ny vedligeholdelsestidsplanslinje, hver gang der er gået 250 timer. Intervaltypen for denne tællerbaserede linje er "gentaget fra startdato". Startdatoen er startdatoen for de tilknyttede aktiver i detaljevisningen **Alle aktiver** > oversigtspanelet **Vedligeholdelsesplaner for aktiver** > feltet **Startdato** eller i detaljevisningen **Arbejdssted** > oversigtspanelet **Vedligeholdelsesplaner** > feltet **Startdato**. Dette er et eksempel på en *forebyggende* vedligeholdelsesplan, fordi vedligeholdelsestidsplanslinjen automatisk oprettes, hver gang tærsklen (+ 250) nås. I figuren nedenfor vises et grafisk eksempel.
+
+![Figur 4](media/04-preventive-maintenance.png)
+
+
+**Eksempel 4 - tællerbaseret vedligeholdelsesplan:** En grafisk illustration af et fald i tællerværdi ved måling af slitage på bremseklods. Der oprettes en vedligeholdelsestidsplanslinje, når der oprettes en tællerregistrering på under 20 mm på bremseklodsen. Intervaltypen for denne tællerbaserede linje er "når nået under" eller "én gang fra den sidste startdato". Dette er et eksempel på en *reaktiv* vedligeholdelsesplan, fordi vedligeholdelsestidsplanslinjen ikke automatisk oprettes, før der er registreret en måling på under 20 mm. I figuren nedenfor vises et grafisk eksempel.
+
+![Figur 5](media/05-preventive-maintenance.png)
+
+
+**Eksempel 5 - tællerbaseret vedligeholdelsesplan:** En grafisk illustration af en tæller med en tærskel på -18 ° Celsius. Der oprettes en vedligeholdelsestidsplanslinje, når der foretages en tællerregistrering over -18 ° Celsius. Intervaltypen for denne tællerbaserede linje er "Når nået over". Dette er et eksempel på en *reaktiv* vedligeholdelsesplan, fordi vedligeholdelsestidsplanslinjen ikke automatisk oprettes, før der er registreret en måling på over -18 ° Celsius. I figuren nedenfor vises et grafisk eksempel.
+
+![Figur 6](media/06-preventive-maintenance.png)
+
+- Når du opretter et nyt aktiv, og det pågældende aktiv bruger en aktivtype, der er knyttet til en vedligeholdelsesplan, indsættes vedligeholdelsesplanen automatisk i oversigtspanelet **Alle objekter** > **Vedligeholdelsesplaner for aktiver**. I **Standarder for aktivtype** i oversigtspanelet **Vedligeholdelsesplaner** bliver de relaterede vedligeholdelsesplaner også indsat automatisk.  
+- Hvis du tilføjer eller fjerner aktivtyper eller arbejdsstedtyper i **Vedligeholdelsesplaner**, vil ændringen kun afspejles på nye aktiver, der er oprettet, efter at du har foretaget ændringen.  
+- Hvis du tilføjer eller fjerner aktiver eller arbejdssteder i **Vedligeholdelsesplaner**, opdateres den pågældende ændring automatisk i **Alle aktiver** > **Vedligeholdelsesplaner for aktiver**-oversigtspanelet eller i **Alle arbejdssteder** > **Vedligeholdelsesplaner**-oversigtspanelet.  
+
+
+![Figur 7](media/07-preventive-maintenance.png)
+
+
+## <a name="add-a-maintenance-plan-to-an-asset"></a>Føje en vedligeholdelsesplan til et aktiv
+
+1. Klik på **Styring af aktiver** > **Almindeligt** > **Aktiver** > **Alle aktiver** eller **Aktive aktiver**.
+
+2. Vælg det aktiv, som du vil oprette en vedligeholdelsesplan for, og klik på **Rediger**.
+
+3. I oversigtspanelet **Vedligeholdelsesplaner for aktiver** skal du klikke på **Tilføj linje** for at føje en vedligeholdelsesplan til aktivet.
+
+4. Vælg den relevante vedligeholdelsesplan i feltet **Vedligeholdelsesplan**.
+
+5. Vælg den startdato, hvorfra planlægningen af det præventive vedligeholdelsesjob kan udføres, i feltet **Startdato**. 
+
+6. Klik på **Gem**. Feltet **Aktiv** opdateres automatisk.
+
+
+![Figur 8](media/08-preventive-maintenance.png)
+

@@ -3,7 +3,7 @@ title: Konfigurere individuelle nummerserier
 description: Dette emne beskriver, hvordan du konfigurerer nummerserier på individuel basis.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738875"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886594"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere individuelle nummerserier
 
@@ -33,7 +33,7 @@ Dette emne beskriver, hvordan du konfigurerer nummerserier på individuel basis.
 2. Vælge **Nummerserier**.
 3. Skriv en værdi i feltet **Nummerseriekode**.
 4. Skriv en værdi i feltet **Navn**.
-5. Vælg et område til nummerserien i oversigtspanelet **Områdeparametre**, og vælg områdeværdier fra rullelisten. Området definerer, hvilke organisationer der bruger nummerserien. Nummerserier med et andet område end **Delt** kan desuden have segmenter, der passer til deres område. En nummerserie med området **Juridisk enhed** kan f.eks. have et segment, der udgøres af en juridisk enhed. Du kan finde flere oplysninger om områder i [Oversigt over nummerserier](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+5. Vælg et område til nummerserien i oversigtspanelet **Områdeparametre**, og vælg områdeværdier fra rullelisten. Området definerer, hvilke organisationer der bruger nummerserien. Nummerserier med et andet område end **Delt** kan desuden have segmenter, der passer til deres område. En nummerserie med området **Juridisk enhed** kan f.eks. have et segment, der udgøres af en juridisk enhed. Du kan finde flere oplysninger om områder i [Oversigt over nummerserier](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Udvid sektionen **Segmenter**.
     - Definer formatet til nummerserien ved at tilføje, fjerne eller flytte rundt på segmenter.  
     - Nummerserier for alle områder kan indeholde *Konstante segmenter* og *Alfanumeriske segmenter*. Konstante segmenter indeholder et sæt alfanumeriske tegn, der ikke kan ændres. Brug denne segmenttype til at tilføje en bindestreg eller andre separatorer mellem nummerseriesegmenter. Alfanumeriske segmenter indeholder en kombination af nummertegn (#) og &-tegn (&). Disse tegn repræsenterer bogstaver og tal, der øges trinvist, hver gang der bruges et nummer fra serien. Brug et nummertegn (#) for at angive stigende tal, og &-tegnet til stigende bogstaver. Formatet `#####_2014` opretter eksempelvis serien `00001_2014`, `00002_2014` osv. Der skal være mindst ét alfanumerisk segment. Områdesegmenter som f.eks. firma eller juridisk enhed er ikke påkrævede. Hvis du ikke medtager områdesegmenter i formatet, genereres der stadig numre pr. område for den valgte reference.  
