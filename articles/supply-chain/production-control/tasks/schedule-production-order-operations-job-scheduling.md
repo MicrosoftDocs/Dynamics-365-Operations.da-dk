@@ -1,9 +1,9 @@
 ---
 title: Planlægge en produktionsordre med grov- og finplanlægning
-description: Denne procedure drejer sig om planlægning af en produktionsordre med grovplanlægning og finplanlægning.
+description: Dette emne drejer sig om planlægning af en produktionsordre med grovplanlægning og finplanlægning.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,51 +16,43 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4932cfa472c34a16249b226aa4a07b8e5f528053
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3023d6a6fe09c84b47839a2c4b78c37907754ded
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838481"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914878"
 ---
-# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a><span data-ttu-id="b0369-103">Planlægge en produktionsordre med grov- og finplanlægning</span><span class="sxs-lookup"><span data-stu-id="b0369-103">Schedule a production order with operations and job scheduling</span></span>
+# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a><span data-ttu-id="29786-103">Planlægge en produktionsordre med grov- og finplanlægning</span><span class="sxs-lookup"><span data-stu-id="29786-103">Schedule a production order with operations and job scheduling</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b0369-104">Denne procedure drejer sig om planlægning af en produktionsordre med grovplanlægning og finplanlægning.</span><span class="sxs-lookup"><span data-stu-id="b0369-104">This procedure focuses on scheduling a production order with operations scheduling and job scheduling.</span></span> <span data-ttu-id="b0369-105">Der oprettes ingen job med grovplanlægning, kun job med finplanlægning.</span><span class="sxs-lookup"><span data-stu-id="b0369-105">No jobs are created with operations scheduling whereas jobs are created with job scheduling.</span></span> <span data-ttu-id="b0369-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="b0369-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="b0369-107">Denne procedure er beregnet til produktionslederen, produktionsplanlæggeren eller den produktionstilsynsførende, der arbejder i et dedikeret produktionsmiljø.</span><span class="sxs-lookup"><span data-stu-id="b0369-107">This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.</span></span>
+<span data-ttu-id="29786-104">Dette emne drejer sig om planlægning af en produktionsordre med grovplanlægning og finplanlægning.</span><span class="sxs-lookup"><span data-stu-id="29786-104">This topic focuses on scheduling a production order with operations scheduling and job scheduling.</span></span> <span data-ttu-id="29786-105">Der oprettes ingen job med grovplanlægning, kun job med finplanlægning.</span><span class="sxs-lookup"><span data-stu-id="29786-105">No jobs are created with operations scheduling whereas jobs are created with job scheduling.</span></span> <span data-ttu-id="29786-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="29786-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="29786-107">Denne procedure er beregnet til produktionslederen, produktionsplanlæggeren eller den produktionstilsynsførende, der arbejder i et dedikeret produktionsmiljø.</span><span class="sxs-lookup"><span data-stu-id="29786-107">This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.</span></span>
 
 
-## <a name="create-a-production-order"></a><span data-ttu-id="b0369-108">Oprette en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="b0369-108">Create a production order</span></span>
-1. <span data-ttu-id="b0369-109">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="b0369-109">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="b0369-110">Klik på Ny produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="b0369-110">Click New production order.</span></span>
-3. <span data-ttu-id="b0369-111">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="b0369-111">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="b0369-112">Vælg varenummer D0001.</span><span class="sxs-lookup"><span data-stu-id="b0369-112">Select Item number D0001.</span></span>  
-4. <span data-ttu-id="b0369-113">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="b0369-113">Click Create.</span></span>
+## <a name="create-a-production-order"></a><span data-ttu-id="29786-108">Oprette en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="29786-108">Create a production order</span></span>
+1. <span data-ttu-id="29786-109">Gå i navigationsruden til **Moduler > Produktionsstyring > Produktionsordrer > Alle produktionsordrer**.</span><span class="sxs-lookup"><span data-stu-id="29786-109">In the navigation pane, go to **Modules > Production control > Production orders > All production orders**.</span></span>
+2. <span data-ttu-id="29786-110">Vælg **Ny produktionsordre**.</span><span class="sxs-lookup"><span data-stu-id="29786-110">Select **New production order**.</span></span>
+3. <span data-ttu-id="29786-111">Indtast eller vælg en værdi i feltet **Varenummer**.</span><span class="sxs-lookup"><span data-stu-id="29786-111">In the **Item number** field, enter or select a value.</span></span> <span data-ttu-id="29786-112">Vælg varenummer **D0001**.</span><span class="sxs-lookup"><span data-stu-id="29786-112">Select Item number **D0001**.</span></span>  
+4. <span data-ttu-id="29786-113">Vælg **Opret**.</span><span class="sxs-lookup"><span data-stu-id="29786-113">Select **Create**.</span></span>
 
-## <a name="schedule-operations-for-the-production-order"></a><span data-ttu-id="b0369-114">Grovplanlægge for en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="b0369-114">Schedule operations for the production order</span></span>
-1. <span data-ttu-id="b0369-115">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b0369-115">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="b0369-116">Vælg den produktionsordre, du lige har oprettet.</span><span class="sxs-lookup"><span data-stu-id="b0369-116">Select the production order that you have just created.</span></span> <span data-ttu-id="b0369-117">Det skal være øverst på listen.</span><span class="sxs-lookup"><span data-stu-id="b0369-117">It should be at the top of the list.</span></span>      
-2. <span data-ttu-id="b0369-118">Klik på Planlæg i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b0369-118">On the Action Pane, click Schedule.</span></span>
-3. <span data-ttu-id="b0369-119">Klik på Grovplanlægge.</span><span class="sxs-lookup"><span data-stu-id="b0369-119">Click Schedule operations.</span></span>
-4. <span data-ttu-id="b0369-120">Vælg 'Fremad fra planlægningsdato' i feltet Planlægningsvej.</span><span class="sxs-lookup"><span data-stu-id="b0369-120">In the Scheduling direction field, select 'Forward from scheduling date'.</span></span>
-5. <span data-ttu-id="b0369-121">Angiv en dato i feltet Planlægningsdato.</span><span class="sxs-lookup"><span data-stu-id="b0369-121">In the Scheduling date field, enter a date.</span></span>
-    * <span data-ttu-id="b0369-122">Vælg en dato i fremtiden, for eksempel i dag plus en uge.</span><span class="sxs-lookup"><span data-stu-id="b0369-122">Select a future date, for example, today plus one week.</span></span> <span data-ttu-id="b0369-123">Med den valgte planlægningsvej planlægges produktionsordren fremad fra denne dato.</span><span class="sxs-lookup"><span data-stu-id="b0369-123">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
-6. <span data-ttu-id="b0369-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b0369-124">Click OK.</span></span>
-7. <span data-ttu-id="b0369-125">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b0369-125">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="b0369-126">Bemærk, at status ændres til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="b0369-126">Note that the status is changed to Scheduled.</span></span>  
-8. <span data-ttu-id="b0369-127">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b0369-127">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="b0369-128">Klik på Alle job.</span><span class="sxs-lookup"><span data-stu-id="b0369-128">Click All jobs.</span></span>
-    * <span data-ttu-id="b0369-129">Bemærk, at der ikke oprettes nogen job til grovplanlægning.</span><span class="sxs-lookup"><span data-stu-id="b0369-129">Note that no jobs are created with operations scheduling.</span></span>  
-10. <span data-ttu-id="b0369-130">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="b0369-130">Close the page.</span></span>
+## <a name="schedule-operations-for-the-production-order"></a><span data-ttu-id="29786-114">Grovplanlægge for en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="29786-114">Schedule operations for the production order</span></span>
+1. <span data-ttu-id="29786-115">Marker den række, der netop er oprettet.</span><span class="sxs-lookup"><span data-stu-id="29786-115">Mark the newly created row.</span></span>      
+2. <span data-ttu-id="29786-116">Vælg **Planlæg** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="29786-116">On the Action Pane, select **Schedule**.</span></span>
+3. <span data-ttu-id="29786-117">Vælg **Grovplanlægge**.</span><span class="sxs-lookup"><span data-stu-id="29786-117">Select **Schedule operations**.</span></span>
+4. <span data-ttu-id="29786-118">Vælg **Fremad fra planlægningsdato** i feltet **Planlægningsvej**.</span><span class="sxs-lookup"><span data-stu-id="29786-118">In the **Scheduling direction** field, select **Forward from scheduling date**.</span></span>
+5. <span data-ttu-id="29786-119">Angiv en dato i feltet **Planlægningsdato**.</span><span class="sxs-lookup"><span data-stu-id="29786-119">In the **Scheduling date** field, enter a date.</span></span> <span data-ttu-id="29786-120">Vælg en dato i fremtiden, for eksempel i dag plus en uge.</span><span class="sxs-lookup"><span data-stu-id="29786-120">Select a future date, for example, today plus one week.</span></span> <span data-ttu-id="29786-121">Med den valgte planlægningsvej planlægges produktionsordren fremad fra denne dato.</span><span class="sxs-lookup"><span data-stu-id="29786-121">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
+6. <span data-ttu-id="29786-122">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="29786-122">Select **OK**.</span></span>
+7. <span data-ttu-id="29786-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="29786-123">In the list, mark the selected row.</span></span> <span data-ttu-id="29786-124">Bemærk, at status ændres til **Planlagt**.</span><span class="sxs-lookup"><span data-stu-id="29786-124">Note that the status is changed to **Scheduled**.</span></span> 
+8. <span data-ttu-id="29786-125">Vælg **Alle job**.</span><span class="sxs-lookup"><span data-stu-id="29786-125">Select **All jobs**.</span></span> <span data-ttu-id="29786-126">Bemærk, at der ikke oprettes nogen job til grovplanlægning.</span><span class="sxs-lookup"><span data-stu-id="29786-126">Note that no jobs are created with operations scheduling.</span></span>  
+9. <span data-ttu-id="29786-127">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="29786-127">Close the page.</span></span>
 
-## <a name="schedule-jobs-for-the-production-order"></a><span data-ttu-id="b0369-131">Finplanlægge for en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="b0369-131">Schedule jobs for the production order</span></span>
-1. <span data-ttu-id="b0369-132">Klik på Planlæg i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b0369-132">On the Action Pane, click Schedule.</span></span>
-2. <span data-ttu-id="b0369-133">Klik på Finplanlægge.</span><span class="sxs-lookup"><span data-stu-id="b0369-133">Click Schedule jobs.</span></span>
-3. <span data-ttu-id="b0369-134">Vælg 'Fremad fra planlægningsdato' i feltet Planlægningsvej.</span><span class="sxs-lookup"><span data-stu-id="b0369-134">In the Scheduling direction field, select 'Forward from scheduling date'.</span></span>
-4. <span data-ttu-id="b0369-135">Angiv en dato i feltet Planlægningsdato.</span><span class="sxs-lookup"><span data-stu-id="b0369-135">In the Scheduling date field, enter a date.</span></span>
-    * <span data-ttu-id="b0369-136">Vælg en dato i fremtiden, for eksempel i dag plus en uge.</span><span class="sxs-lookup"><span data-stu-id="b0369-136">Select a date in the future, for example, today plus one week.</span></span> <span data-ttu-id="b0369-137">Med den valgte planlægningsvej planlægges produktionsordren fremad fra denne dato.</span><span class="sxs-lookup"><span data-stu-id="b0369-137">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
-5. <span data-ttu-id="b0369-138">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b0369-138">Click OK.</span></span>
-6. <span data-ttu-id="b0369-139">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b0369-139">On the Action Pane, click Production order.</span></span>
-7. <span data-ttu-id="b0369-140">Klik på Alle job.</span><span class="sxs-lookup"><span data-stu-id="b0369-140">Click All jobs.</span></span>
-    * <span data-ttu-id="b0369-141">Bemærk, at der baseret på den aktive rute oprettes fem jo med finplanlægning.</span><span class="sxs-lookup"><span data-stu-id="b0369-141">Note that based on the active route, 5 jobs are created with job scheduling.</span></span>  
+## <a name="schedule-jobs-for-the-production-order"></a><span data-ttu-id="29786-128">Finplanlægge for en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="29786-128">Schedule jobs for the production order</span></span>
+1. <span data-ttu-id="29786-129">Vælg **Planlæg** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="29786-129">On the Action Pane, select **Schedule**.</span></span>
+2. <span data-ttu-id="29786-130">Vælg **Finplanlægge**.</span><span class="sxs-lookup"><span data-stu-id="29786-130">Select **Schedule jobs**.</span></span>
+3. <span data-ttu-id="29786-131">Vælg **Fremad fra planlægningsdato** i feltet **Planlægningsvej**.</span><span class="sxs-lookup"><span data-stu-id="29786-131">In the **Scheduling direction** field, select **Forward from scheduling date**.</span></span>
+4. <span data-ttu-id="29786-132">Angiv en dato i feltet **Planlægningsdato**.</span><span class="sxs-lookup"><span data-stu-id="29786-132">In the **Scheduling date** field, enter a date.</span></span> <span data-ttu-id="29786-133">Vælg en dato i fremtiden, for eksempel i dag plus en uge.</span><span class="sxs-lookup"><span data-stu-id="29786-133">Select a date in the future, for example, today plus one week.</span></span> <span data-ttu-id="29786-134">Med den valgte planlægningsvej planlægges produktionsordren fremad fra denne dato.</span><span class="sxs-lookup"><span data-stu-id="29786-134">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
+5. <span data-ttu-id="29786-135">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="29786-135">Select **OK**.</span></span>
+6. <span data-ttu-id="29786-136">Vælg **Produktionsordre** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="29786-136">On the Action Pane, select **Production order**.</span></span>
+7. <span data-ttu-id="29786-137">Vælg **Alle job**.</span><span class="sxs-lookup"><span data-stu-id="29786-137">Select **All jobs**.</span></span> <span data-ttu-id="29786-138">Bemærk, at der baseret på den aktive rute oprettes fem jo med finplanlægning.</span><span class="sxs-lookup"><span data-stu-id="29786-138">Note that based on the active route, 5 jobs are created with job scheduling.</span></span>  
 

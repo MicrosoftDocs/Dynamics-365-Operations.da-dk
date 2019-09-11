@@ -1,9 +1,9 @@
 ---
-title: Servicestyring
+title: Oversigt over servicestyring
 description: Du kan bruge Servicestyring til at udarbejde serviceaftaler og serviceabonnementer, håndtere serviceordrer og kundeforespørgsler samt administrere og analysere leveringen af tjenester til kunder.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,56 +18,56 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2fc5361b1b30db29789ff67b56a15eb66a919f5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 20751acfc012e2ac1eef99c778c5b0353baf1827
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843283"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865843"
 ---
-# <a name="service-management"></a><span data-ttu-id="f5591-103">Servicestyring</span><span class="sxs-lookup"><span data-stu-id="f5591-103">Service management</span></span> 
+# <a name="service-management-overview"></a><span data-ttu-id="0831c-103">Oversigt over servicestyring</span><span class="sxs-lookup"><span data-stu-id="0831c-103">Service management overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="f5591-104">Du kan bruge **Servicestyring** til at udarbejde serviceaftaler og serviceabonnementer, håndtere serviceordrer og kundeforespørgsler samt administrere og analysere leveringen af tjenester til kunder.</span><span class="sxs-lookup"><span data-stu-id="f5591-104">Use **Service management** to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers.</span></span> <span data-ttu-id="f5591-105">Du kan bruge serviceaftaler til at definere de ressourcer, der bruges under et typisk servicebesøg.</span><span class="sxs-lookup"><span data-stu-id="f5591-105">You can use service agreements to define the resources that are used in a typical service visit.</span></span> <span data-ttu-id="f5591-106">Du kan også bruges serviceaftaler til at få vist, hvordan disse ressourcer faktureres til kunden.</span><span class="sxs-lookup"><span data-stu-id="f5591-106">You can also use service agreements to view how those resources are invoiced to the customer.</span></span> <span data-ttu-id="f5591-107">En serviceaftale kan også inkludere en serviceniveauaftale, der angiver standardsvartider og inkluderer værktøjer til registrering af den faktiske tid.</span><span class="sxs-lookup"><span data-stu-id="f5591-107">A service agreement can also include a service level agreement that specifies standard response times, and offers tools to record the actual time.</span></span>
+<span data-ttu-id="0831c-104">Du kan bruge **Servicestyring** til at udarbejde serviceaftaler og serviceabonnementer, håndtere serviceordrer og kundeforespørgsler samt administrere og analysere leveringen af tjenester til kunder.</span><span class="sxs-lookup"><span data-stu-id="0831c-104">Use **Service management** to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers.</span></span> <span data-ttu-id="0831c-105">Du kan bruge serviceaftaler til at definere de ressourcer, der bruges under et typisk servicebesøg.</span><span class="sxs-lookup"><span data-stu-id="0831c-105">You can use service agreements to define the resources that are used in a typical service visit.</span></span> <span data-ttu-id="0831c-106">Du kan også bruges serviceaftaler til at få vist, hvordan disse ressourcer faktureres til kunden.</span><span class="sxs-lookup"><span data-stu-id="0831c-106">You can also use service agreements to view how those resources are invoiced to the customer.</span></span> <span data-ttu-id="0831c-107">En serviceaftale kan også inkludere en serviceniveauaftale, der angiver standardsvartider og inkluderer værktøjer til registrering af den faktiske tid.</span><span class="sxs-lookup"><span data-stu-id="0831c-107">A service agreement can also include a service level agreement that specifies standard response times, and offers tools to record the actual time.</span></span>
 
-<span data-ttu-id="f5591-108">Du kan oprette serviceordrer til administrering af oplysninger om planlagte og ikke-planlagte besøg af en servicetekniker hos en kunde.</span><span class="sxs-lookup"><span data-stu-id="f5591-108">You can create service orders to manage information about scheduled and unscheduled visits by a service technician to a customer site.</span></span> <span data-ttu-id="f5591-109">Serviceordrer inkluderer oplysninger, som f.eks.:</span><span class="sxs-lookup"><span data-stu-id="f5591-109">Service orders include information such as:</span></span>
+<span data-ttu-id="0831c-108">Du kan oprette serviceordrer til administrering af oplysninger om planlagte og ikke-planlagte besøg af en servicetekniker hos en kunde.</span><span class="sxs-lookup"><span data-stu-id="0831c-108">You can create service orders to manage information about scheduled and unscheduled visits by a service technician to a customer site.</span></span> <span data-ttu-id="0831c-109">Serviceordrer inkluderer oplysninger, som f.eks.:</span><span class="sxs-lookup"><span data-stu-id="0831c-109">Service orders include information such as:</span></span>
 
-1.  <span data-ttu-id="f5591-110">De arbejdstimer, som servicetekniker skal bruge</span><span class="sxs-lookup"><span data-stu-id="f5591-110">The hours of work that the service technician will perform</span></span>
+1.  <span data-ttu-id="0831c-110">De arbejdstimer, som servicetekniker skal bruge</span><span class="sxs-lookup"><span data-stu-id="0831c-110">The hours of work that the service technician will perform</span></span>
 
-2.  <span data-ttu-id="f5591-111">Service- eller reparationstypen</span><span class="sxs-lookup"><span data-stu-id="f5591-111">The type of service or repair</span></span>
+2.  <span data-ttu-id="0831c-111">Service- eller reparationstypen</span><span class="sxs-lookup"><span data-stu-id="0831c-111">The type of service or repair</span></span>
 
-3.  <span data-ttu-id="f5591-112">Det objekt, der skal repareres, inklusive oplysninger om symptomer og diagnose</span><span class="sxs-lookup"><span data-stu-id="f5591-112">The item to repair, including details about the symptoms and diagnosis</span></span>
+3.  <span data-ttu-id="0831c-112">Det objekt, der skal repareres, inklusive oplysninger om symptomer og diagnose</span><span class="sxs-lookup"><span data-stu-id="0831c-112">The item to repair, including details about the symptoms and diagnosis</span></span>
 
-4.  <span data-ttu-id="f5591-113">Eventuelle udgifter og gebyrer, der er relateret til servicen eller reparationen</span><span class="sxs-lookup"><span data-stu-id="f5591-113">Any expenses and fees related to the service or repair</span></span>
+4.  <span data-ttu-id="0831c-113">Eventuelle udgifter og gebyrer, der er relateret til servicen eller reparationen</span><span class="sxs-lookup"><span data-stu-id="0831c-113">Any expenses and fees related to the service or repair</span></span>
 
-<span data-ttu-id="f5591-114">Du kan modtage, behandle og ekspedere serviceanmodninger.</span><span class="sxs-lookup"><span data-stu-id="f5591-114">You can receive, process, and dispatch service requests.</span></span> <span data-ttu-id="f5591-115">Når du har oprettet en serviceordre, kan du bruge servicestadier til at overvåge status og angive regler, der bestemmer, hvilke handlinger der er aktiveret i hvert af stadierne.</span><span class="sxs-lookup"><span data-stu-id="f5591-115">After you have created a service order, you can use service stages to monitor progress and specify rules that control what actions are enabled in each stage.</span></span> <span data-ttu-id="f5591-116">Når en serviceordre er færdig, kan du afslutte ordren for at bekræfte, at den er færdig, og derefter bogføre ordren for at starte fakturaprocessen.</span><span class="sxs-lookup"><span data-stu-id="f5591-116">When a service order is complete, you can sign off on the order to confirm that it is complete, and then post the order to start the invoice process.</span></span>
+<span data-ttu-id="0831c-114">Du kan modtage, behandle og ekspedere serviceanmodninger.</span><span class="sxs-lookup"><span data-stu-id="0831c-114">You can receive, process, and dispatch service requests.</span></span> <span data-ttu-id="0831c-115">Når du har oprettet en serviceordre, kan du bruge servicestadier til at overvåge status og angive regler, der bestemmer, hvilke handlinger der er aktiveret i hvert af stadierne.</span><span class="sxs-lookup"><span data-stu-id="0831c-115">After you have created a service order, you can use service stages to monitor progress and specify rules that control what actions are enabled in each stage.</span></span> <span data-ttu-id="0831c-116">Når en serviceordre er færdig, kan du afslutte ordren for at bekræfte, at den er færdig, og derefter bogføre ordren for at starte fakturaprocessen.</span><span class="sxs-lookup"><span data-stu-id="0831c-116">When a service order is complete, you can sign off on the order to confirm that it is complete, and then post the order to start the invoice process.</span></span>
 
-<span data-ttu-id="f5591-117">Brug rapporteringsværktøjerne til at overvåge serviceordremargener og abonnementstransaktioner samt udskrive arbejdsbeskrivelser og arbejdskvitteringer.</span><span class="sxs-lookup"><span data-stu-id="f5591-117">Use the reporting tools to monitor service order margins and subscription transactions, and print work descriptions and work receipts.</span></span>
+<span data-ttu-id="0831c-117">Brug rapporteringsværktøjerne til at overvåge serviceordremargener og abonnementstransaktioner samt udskrive arbejdsbeskrivelser og arbejdskvitteringer.</span><span class="sxs-lookup"><span data-stu-id="0831c-117">Use the reporting tools to monitor service order margins and subscription transactions, and print work descriptions and work receipts.</span></span>
 
-## <a name="business-processes"></a><span data-ttu-id="f5591-118">Forretningsprocesser</span><span class="sxs-lookup"><span data-stu-id="f5591-118">Business processes</span></span>
+## <a name="business-processes"></a><span data-ttu-id="0831c-118">Forretningsprocesser</span><span class="sxs-lookup"><span data-stu-id="0831c-118">Business processes</span></span>
 
-<span data-ttu-id="f5591-119">I følgende diagram illustreres forretningsprocesserne på højt niveau for **Servicestyring** og viser, hvor serviceprocesserne integreres med andre moduler i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f5591-119">The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules in Microsoft Dynamics 365 for Finance and Operations.</span></span>
+<span data-ttu-id="0831c-119">I følgende diagram illustreres forretningsprocesserne på højt niveau for **Servicestyring** og viser, hvor serviceprocesserne integreres med andre moduler i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="0831c-119">The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-<span data-ttu-id="f5591-120">[![Forretningsprocesdiagram for Servicestyring](./media/sm_home_page.gif)](./media/sm_home_page.gif)</span><span class="sxs-lookup"><span data-stu-id="f5591-120">[![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)</span></span>
+<span data-ttu-id="0831c-120">[![Forretningsprocesdiagram for Servicestyring](./media/sm_home_page.gif)](./media/sm_home_page.gif)</span><span class="sxs-lookup"><span data-stu-id="0831c-120">[![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)</span></span>
 
-## <a name="service-management-at-a-glance"></a><span data-ttu-id="f5591-121">Hurtigt overblik over servicestyring</span><span class="sxs-lookup"><span data-stu-id="f5591-121">Service management at a glance</span></span>
+## <a name="service-management-at-a-glance"></a><span data-ttu-id="0831c-121">Hurtigt overblik over servicestyring</span><span class="sxs-lookup"><span data-stu-id="0831c-121">Service management at a glance</span></span>
 
-|<span data-ttu-id="f5591-122">Vigtige opgaver</span><span class="sxs-lookup"><span data-stu-id="f5591-122">Important tasks</span></span>           | <span data-ttu-id="f5591-123">Primære sider</span><span class="sxs-lookup"><span data-stu-id="f5591-123">Primary pages</span></span>                         |<span data-ttu-id="f5591-124">Populære rapporter</span><span class="sxs-lookup"><span data-stu-id="f5591-124">Popular reports</span></span>              |
+|<span data-ttu-id="0831c-122">Vigtige opgaver</span><span class="sxs-lookup"><span data-stu-id="0831c-122">Important tasks</span></span>           | <span data-ttu-id="0831c-123">Primære sider</span><span class="sxs-lookup"><span data-stu-id="0831c-123">Primary pages</span></span>                         |<span data-ttu-id="0831c-124">Populære rapporter</span><span class="sxs-lookup"><span data-stu-id="0831c-124">Popular reports</span></span>              |
 |--------------------------|---------------------------------------|-----------------------------|
-|<span data-ttu-id="f5591-125">Opfyld serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="f5591-125">Fulfill service agreements</span></span>|<span data-ttu-id="f5591-126">Serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="f5591-126">Service agreements</span></span>                     |<span data-ttu-id="f5591-127">Serviceordremargen</span><span class="sxs-lookup"><span data-stu-id="f5591-127">Service order margin</span></span>         |
-|<span data-ttu-id="f5591-128">Håndter kundeforespørgsler</span><span class="sxs-lookup"><span data-stu-id="f5591-128">Handle customer inquiries</span></span> |<span data-ttu-id="f5591-129">Serviceordrer</span><span class="sxs-lookup"><span data-stu-id="f5591-129">Service orders</span></span>                         |<span data-ttu-id="f5591-130">Arbejdsbeskrivelse</span><span class="sxs-lookup"><span data-stu-id="f5591-130">Work description</span></span>             |
-|                          |<span data-ttu-id="f5591-131">Planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="f5591-131">Dispatch board</span></span>                         |<span data-ttu-id="f5591-132">Postering - Abonnement</span><span class="sxs-lookup"><span data-stu-id="f5591-132">Transaction - subscription</span></span>   |
-|                          |                                       |<span data-ttu-id="f5591-133">Abonnementsgebyrtransaktioner</span><span class="sxs-lookup"><span data-stu-id="f5591-133">Subscription fee transactions</span></span>|
+|<span data-ttu-id="0831c-125">Opfyld serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="0831c-125">Fulfill service agreements</span></span>|<span data-ttu-id="0831c-126">Serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="0831c-126">Service agreements</span></span>                     |<span data-ttu-id="0831c-127">Serviceordremargen</span><span class="sxs-lookup"><span data-stu-id="0831c-127">Service order margin</span></span>         |
+|<span data-ttu-id="0831c-128">Håndter kundeforespørgsler</span><span class="sxs-lookup"><span data-stu-id="0831c-128">Handle customer inquiries</span></span> |<span data-ttu-id="0831c-129">Serviceordrer</span><span class="sxs-lookup"><span data-stu-id="0831c-129">Service orders</span></span>                         |<span data-ttu-id="0831c-130">Arbejdsbeskrivelse</span><span class="sxs-lookup"><span data-stu-id="0831c-130">Work description</span></span>             |
+|                          |<span data-ttu-id="0831c-131">Planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="0831c-131">Dispatch board</span></span>                         |<span data-ttu-id="0831c-132">Postering - Abonnement</span><span class="sxs-lookup"><span data-stu-id="0831c-132">Transaction - subscription</span></span>   |
+|                          |                                       |<span data-ttu-id="0831c-133">Abonnementsgebyrtransaktioner</span><span class="sxs-lookup"><span data-stu-id="0831c-133">Subscription fee transactions</span></span>|
 
 
-## <a name="integration-of-service-management"></a><span data-ttu-id="f5591-134">Integration af servicestyring</span><span class="sxs-lookup"><span data-stu-id="f5591-134">Integration of Service management</span></span>
+## <a name="integration-of-service-management"></a><span data-ttu-id="0831c-134">Integration af servicestyring</span><span class="sxs-lookup"><span data-stu-id="0831c-134">Integration of Service management</span></span>
 
-<span data-ttu-id="f5591-135">Servicestyring kan integreres med følgende moduler:</span><span class="sxs-lookup"><span data-stu-id="f5591-135">Service management can be integrated with the following modules:</span></span>
+<span data-ttu-id="0831c-135">Servicestyring kan integreres med følgende moduler:</span><span class="sxs-lookup"><span data-stu-id="0831c-135">Service management can be integrated with the following modules:</span></span>
 
-  - [<span data-ttu-id="f5591-136">Salg og marketing</span><span class="sxs-lookup"><span data-stu-id="f5591-136">Sales and marketing</span></span>](../sales-marketing/overview-sales-marketing.md)
-  - [<span data-ttu-id="f5591-137">Personale</span><span class="sxs-lookup"><span data-stu-id="f5591-137">Human resources</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [<span data-ttu-id="0831c-136">Salg og marketing</span><span class="sxs-lookup"><span data-stu-id="0831c-136">Sales and marketing</span></span>](../sales-marketing/overview-sales-marketing.md)
+  - [<span data-ttu-id="0831c-137">Personale</span><span class="sxs-lookup"><span data-stu-id="0831c-137">Human resources</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
 
   
 

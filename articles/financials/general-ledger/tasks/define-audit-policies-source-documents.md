@@ -1,9 +1,9 @@
 ---
 title: Definere revisionspolitikker for kildedokumenter
-description: Denne procedure viser, hvordan du kan konfigurere og køre regler for overvågningspolitik.
+description: Dette emne viser, hvordan du kan konfigurere og køre regler for overvågningspolitik.
 author: ryansandness
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,80 +16,75 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17b712f07a0ffe6874eb6d98b47ced96f5a54483
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a6b0fa28d778a4d9fa1f718b1d50bf1dce00be00
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846481"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914809"
 ---
-# <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="6f862-103">Definere revisionspolitikker for kildedokumenter</span><span class="sxs-lookup"><span data-stu-id="6f862-103">Define audit policies for source documents</span></span>
+# <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="8df6b-103">Definere revisionspolitikker for kildedokumenter</span><span class="sxs-lookup"><span data-stu-id="8df6b-103">Define audit policies for source documents</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6f862-104">Denne procedure viser, hvordan du kan konfigurere og køre regler for overvågningspolitik.</span><span class="sxs-lookup"><span data-stu-id="6f862-104">This procedure shows how to set up and run audit policy rules.</span></span> <span data-ttu-id="6f862-105">I eksemplet bruges udgiftsrapporter med udgiftstypen hotel.</span><span class="sxs-lookup"><span data-stu-id="6f862-105">The example uses expense reports with the hotel expense type.</span></span> <span data-ttu-id="6f862-106">Denne procedure bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="6f862-106">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="6f862-107">Rollen revisor indeholder de korrekte tilladelser til at kunne udføre disse opgaver.</span><span class="sxs-lookup"><span data-stu-id="6f862-107">The auditor role contains the correct permissions in order to perform these tasks.</span></span>
+<span data-ttu-id="8df6b-104">Dette emne viser, hvordan du kan konfigurere og køre regler for overvågningspolitik.</span><span class="sxs-lookup"><span data-stu-id="8df6b-104">This topic explains how to set up and run audit policy rules.</span></span> <span data-ttu-id="8df6b-105">I eksemplet bruges udgiftsrapporter med udgiftstypen hotel.</span><span class="sxs-lookup"><span data-stu-id="8df6b-105">The example uses expense reports with the hotel expense type.</span></span> <span data-ttu-id="8df6b-106">Denne procedure bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="8df6b-106">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="8df6b-107">Rollen revisor indeholder de korrekte tilladelser til at kunne udføre disse opgaver.</span><span class="sxs-lookup"><span data-stu-id="8df6b-107">The auditor role contains the correct permissions in order to perform these tasks.</span></span>
 
-1. <span data-ttu-id="6f862-108">Gå til Revisionspanel > Opsætning > Politikregeltype.</span><span class="sxs-lookup"><span data-stu-id="6f862-108">Go to Audit workbench > Setup > Policy rule type.</span></span>
-2. <span data-ttu-id="6f862-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6f862-109">Click New.</span></span>
-3. <span data-ttu-id="6f862-110">Skriv en værdi i feltet Regelnavn.</span><span class="sxs-lookup"><span data-stu-id="6f862-110">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="6f862-111">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="6f862-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="6f862-112">Vælg Udgiftsrapportlinje i feltet Forespørgselsnavn.</span><span class="sxs-lookup"><span data-stu-id="6f862-112">In the Query name field, select Expense report line</span></span>
-6. <span data-ttu-id="6f862-113">Vælg Aggregér i forespørgselstypefeltet</span><span class="sxs-lookup"><span data-stu-id="6f862-113">In the query type field, select Aggregate</span></span>
-7. <span data-ttu-id="6f862-114">Vælg Juridisk enhed i feltet Juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="6f862-114">In the Legal entity field, select Legal entity</span></span>
-8. <span data-ttu-id="6f862-115">Vælg Dato og klokkeslæt for ændring i feltet Dokumentdatohenvisning</span><span class="sxs-lookup"><span data-stu-id="6f862-115">In the Document date reference field, select Modified date and time</span></span>
-9. <span data-ttu-id="6f862-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6f862-116">Click Save.</span></span>
-10. <span data-ttu-id="6f862-117">Gå til Revisionspanel > Opsætning > Overvågningspolitikker.</span><span class="sxs-lookup"><span data-stu-id="6f862-117">Go to Audit workbench > Setup > Audit policies.</span></span>
-11. <span data-ttu-id="6f862-118">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6f862-118">Click New.</span></span>
-12. <span data-ttu-id="6f862-119">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="6f862-119">In the Name field, type a value.</span></span>
-13. <span data-ttu-id="6f862-120">Udvid sektionen Politikorganisationer.</span><span class="sxs-lookup"><span data-stu-id="6f862-120">Expand the Policy organizations section.</span></span>
-14. <span data-ttu-id="6f862-121">Vælg "Contoso Entertainment System USA" i træet.</span><span class="sxs-lookup"><span data-stu-id="6f862-121">In the tree, select 'Contoso Entertainment System USA'.</span></span>
-15. <span data-ttu-id="6f862-122">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-122">Click Add.</span></span>
-16. <span data-ttu-id="6f862-123">Vælg "Contoso Consulting USA" i træet'.</span><span class="sxs-lookup"><span data-stu-id="6f862-123">In the tree, select 'Contoso Consulting USA'.</span></span>
-17. <span data-ttu-id="6f862-124">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-124">Click Add.</span></span>
-18. <span data-ttu-id="6f862-125">Vælg "Contoso Retail USA" i træet'.</span><span class="sxs-lookup"><span data-stu-id="6f862-125">In the tree, select 'Contoso Retail USA'.</span></span>
-19. <span data-ttu-id="6f862-126">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-126">Click Add.</span></span>
-20. <span data-ttu-id="6f862-127">Skjul sektionen Politikorganisationer.</span><span class="sxs-lookup"><span data-stu-id="6f862-127">Collapse the Policy organizations section.</span></span>
-21. <span data-ttu-id="6f862-128">Udvid sektionen Politikregler.</span><span class="sxs-lookup"><span data-stu-id="6f862-128">Expand the Policy rules section.</span></span>
-22. <span data-ttu-id="6f862-129">Find og vælg den Politikregel, som blev oprettet tidligere, på listen.</span><span class="sxs-lookup"><span data-stu-id="6f862-129">In the list, find and select the Policy Rule that was created previously.</span></span>
-23. <span data-ttu-id="6f862-130">Klik på Opret politikregel.</span><span class="sxs-lookup"><span data-stu-id="6f862-130">Click Create policy rule.</span></span>
-24. <span data-ttu-id="6f862-131">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="6f862-131">In the Effective date field, enter a date and time.</span></span>
-25. <span data-ttu-id="6f862-132">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="6f862-132">Click Filter.</span></span>
-26. <span data-ttu-id="6f862-133">Vælg rækken for Udgiftsart på listen, og angiv detaljerne til Hotel</span><span class="sxs-lookup"><span data-stu-id="6f862-133">In the list, select the row for Expense category, and set the details to Hotel</span></span>
-27. <span data-ttu-id="6f862-134">Indtast eller vælg en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="6f862-134">In the Criteria field, enter or select a value.</span></span>
-28. <span data-ttu-id="6f862-135">Klik på fanen Aggregér.</span><span class="sxs-lookup"><span data-stu-id="6f862-135">Click the Aggregate tab.</span></span>
-29. <span data-ttu-id="6f862-136">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-136">Click Add.</span></span>
-30. <span data-ttu-id="6f862-137">Vælg feltværdien Transaktionsbeløb på listen</span><span class="sxs-lookup"><span data-stu-id="6f862-137">In the list, select a field value of Transaction amount</span></span>
-31. <span data-ttu-id="6f862-138">Indtast eller vælg en værdi i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="6f862-138">In the Field field, enter or select a value.</span></span>
-32. <span data-ttu-id="6f862-139">Vælg "Sum"i feltet Aggregeringsfunktion.</span><span class="sxs-lookup"><span data-stu-id="6f862-139">In the AggregateFunction field, select 'Sum'.</span></span>
-33. <span data-ttu-id="6f862-140">Klik på fanen Gruppér efter.</span><span class="sxs-lookup"><span data-stu-id="6f862-140">Click the Group by tab.</span></span>
-34. <span data-ttu-id="6f862-141">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-141">Click Add.</span></span>
-35. <span data-ttu-id="6f862-142">Vælg værdien Medarbejder på listen </span><span class="sxs-lookup"><span data-stu-id="6f862-142">In the list, select a value of Employee</span></span> 
-36. <span data-ttu-id="6f862-143">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-143">Click Add.</span></span>
-37. <span data-ttu-id="6f862-144">Vælg værdien Udgiftsart på listen</span><span class="sxs-lookup"><span data-stu-id="6f862-144">In the list, select a value of Expense category</span></span>
-38. <span data-ttu-id="6f862-145">Indtast eller vælg en værdi i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="6f862-145">In the Field field, enter or select a value.</span></span>
-39. <span data-ttu-id="6f862-146">Klik på fanen Har.</span><span class="sxs-lookup"><span data-stu-id="6f862-146">Click the Having tab.</span></span>
-40. <span data-ttu-id="6f862-147">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6f862-147">Click Add.</span></span>
-41. <span data-ttu-id="6f862-148">Vælg Transaktionsbeløb</span><span class="sxs-lookup"><span data-stu-id="6f862-148">Select Transaction amount</span></span>
-42. <span data-ttu-id="6f862-149">Indtast eller vælg en værdi i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="6f862-149">In the Field field, enter or select a value.</span></span>
-43. <span data-ttu-id="6f862-150">Vælg "Sum"i feltet Aggregeringsfunktion.</span><span class="sxs-lookup"><span data-stu-id="6f862-150">In the AggregateFunction field, select 'Sum'.</span></span>
-44. <span data-ttu-id="6f862-151">Skriv ">2000" i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="6f862-151">In the Criteria field, type '>2000'.</span></span>
-45. <span data-ttu-id="6f862-152">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6f862-152">Click OK.</span></span>
-46. <span data-ttu-id="6f862-153">Klik på Test.</span><span class="sxs-lookup"><span data-stu-id="6f862-153">Click Test.</span></span>
-47. <span data-ttu-id="6f862-154">Angiv en dato og klokkeslæt i feltet Startdato for dokumentudvælgelse.</span><span class="sxs-lookup"><span data-stu-id="6f862-154">In the Document selection starting date field, enter a date and time.</span></span>
-48. <span data-ttu-id="6f862-155">Angiv en dato og klokkeslæt i feltet Slutdato for dokumentudvælgelse.</span><span class="sxs-lookup"><span data-stu-id="6f862-155">In the Document selection ending date field, enter a date and time.</span></span>
-49. <span data-ttu-id="6f862-156">Klik på Kør test.</span><span class="sxs-lookup"><span data-stu-id="6f862-156">Click Run test.</span></span>
-50. <span data-ttu-id="6f862-157">Klik på Overvågningspolitik i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="6f862-157">On the Action Pane, click Audit policy.</span></span>
-51. <span data-ttu-id="6f862-158">Klik på Flere indstillinger.</span><span class="sxs-lookup"><span data-stu-id="6f862-158">Click Additional options.</span></span>
-52. <span data-ttu-id="6f862-159">Angiv en dato og et klokkeslæt i feltet Startdato.</span><span class="sxs-lookup"><span data-stu-id="6f862-159">In the Starting date field, enter a date and time.</span></span>
-53. <span data-ttu-id="6f862-160">Angiv en dato og et klokkeslæt i feltet Slutdato.</span><span class="sxs-lookup"><span data-stu-id="6f862-160">In the Ending date field, enter a date and time.</span></span>
-54. <span data-ttu-id="6f862-161">Klik på Batch.</span><span class="sxs-lookup"><span data-stu-id="6f862-161">Click Batch.</span></span>
-55. <span data-ttu-id="6f862-162">Udvid sektionen Kør i baggrunden.</span><span class="sxs-lookup"><span data-stu-id="6f862-162">Expand the Run in the background section.</span></span>
-56. <span data-ttu-id="6f862-163">Vælg Ja i feltet Batchbehandling.</span><span class="sxs-lookup"><span data-stu-id="6f862-163">Select Yes in the Batch processing field.</span></span>
-57. <span data-ttu-id="6f862-164">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6f862-164">Click OK.</span></span>
-58. <span data-ttu-id="6f862-165">Gå til Revisionspanel > Overvåg sager.</span><span class="sxs-lookup"><span data-stu-id="6f862-165">Go to Audit workbench > Audit cases.</span></span>
-59. <span data-ttu-id="6f862-166">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6f862-166">In the list, find and select the desired record.</span></span>
-60. <span data-ttu-id="6f862-167">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6f862-167">In the list, click the link in the selected row.</span></span>
-61. <span data-ttu-id="6f862-168">Udvid sektionen Tilknytninger.</span><span class="sxs-lookup"><span data-stu-id="6f862-168">Expand the Associations section.</span></span>
-62. <span data-ttu-id="6f862-169">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6f862-169">In the list, find and select the desired record.</span></span>
-63. <span data-ttu-id="6f862-170">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6f862-170">In the list, click the link in the selected row.</span></span>
+1. <span data-ttu-id="8df6b-108">Gå i navigationsruden til **Moduler > Revisionspanel > Opsætning > Regeltype**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-108">In the navigation pane, go to **Modules > Audit workbench > Setup > Policy rule type**.</span></span>
+2. <span data-ttu-id="8df6b-109">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-109">Select **New**.</span></span>
+3. <span data-ttu-id="8df6b-110">Skriv en værdi i feltet **Regelnavn**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-110">In the **Rule name** field, type a value.</span></span>
+4. <span data-ttu-id="8df6b-111">Indtast en værdi i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-111">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="8df6b-112">Vælg **Udgiftsrapportlinje** i feltet **Forespørgselsnavn**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-112">In the **Query name** field, select **Expense report line**</span></span>
+6. <span data-ttu-id="8df6b-113">Vælg **Aggreger** i Feltet **Forespørgselstype**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-113">In the **query type** field, select **Aggregate**</span></span>
+7. <span data-ttu-id="8df6b-114">Vælg **Juridisk enhed** i feltet **Juridisk enhed**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-114">In the **Legal entity** field, select **Legal entity**</span></span>
+8. <span data-ttu-id="8df6b-115">Vælg **Dato og klokkeslæt for ændring** i feltet **Dokumentdatohenvisning**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-115">In the **Document date reference** field, select **Modified date and time**</span></span>
+9. <span data-ttu-id="8df6b-116">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-116">Select **Save**.</span></span>
+10. <span data-ttu-id="8df6b-117">Gå i navigationsruden til **Moduler > Revisionspanel > Opsætning > Overvågningspolitikker**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-117">In the navigation pane, go to **Modules > Audit workbench > Setup > Audit policies**.</span></span>
+11. <span data-ttu-id="8df6b-118">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-118">Select **New**.</span></span>
+12. <span data-ttu-id="8df6b-119">Skriv en værdi i feltet **Navn**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-119">In the **Name** field, type a value.</span></span>
+13. <span data-ttu-id="8df6b-120">Udvid sektionen **Regelstyrede organisationer**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-120">Expand the **Policy organizations** section.</span></span>
+14. <span data-ttu-id="8df6b-121">Vælg **Contoso Entertainment System USA** i træet, og vælg derefter **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-121">In the tree, select **Contoso Entertainment System USA**, then select **Add**.</span></span>
+15. <span data-ttu-id="8df6b-122">Vælg **Contoso Consulting USA** i træet, og vælg derefter **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-122">In the tree, select **Contoso Consulting USA**, then select **Add**.</span></span>
+16. <span data-ttu-id="8df6b-123">Vælg **Contoso Retail USA** i træet, og vælg derefter **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-123">In the tree, select **Contoso Retail USA**, then select **Add**.</span></span>
+17. <span data-ttu-id="8df6b-124">Skjul sektionen **Regelstyrede organisationer**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-124">Collapse the **Policy organizations** section.</span></span>
+18. <span data-ttu-id="8df6b-125">Udvid sektionen **Regler**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-125">Expand the **Policy rules** section.</span></span>
+19. <span data-ttu-id="8df6b-126">Find og vælg den Politikregel, som blev oprettet tidligere, på listen.</span><span class="sxs-lookup"><span data-stu-id="8df6b-126">In the list, find and select the Policy Rule that was created previously.</span></span>
+20. <span data-ttu-id="8df6b-127">Vælg **Opret politikregel**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-127">Select **Create policy rule**.</span></span>
+21. <span data-ttu-id="8df6b-128">Angiv en dato og et klokkeslæt i feltet **Ikrafttrædelsesdato**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-128">In the **Effective date** field, enter a date and time.</span></span>
+22. <span data-ttu-id="8df6b-129">Vælg **Filter**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-129">Select **Filter**.</span></span>
+23. <span data-ttu-id="8df6b-130">Vælg rækken for **Udgiftsart** på listen, og angiv detaljerne til **Hotel**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-130">In the list, select the row for **Expense category**, and set the details to **Hotel**.</span></span>
+24. <span data-ttu-id="8df6b-131">Indtast eller vælg en værdi i feltet **Kriterier**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-131">In the **Criteria** field, enter or select a value.</span></span>
+25. <span data-ttu-id="8df6b-132">Vælg fanen **Aggregering**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-132">Select the **Aggregate** tab.</span></span>
+26. <span data-ttu-id="8df6b-133">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-133">Select **Add**.</span></span>
+27. <span data-ttu-id="8df6b-134">Vælg feltværdien **Transaktionsbeløb** på listen.</span><span class="sxs-lookup"><span data-stu-id="8df6b-134">In the list, select a field value of **Transaction amount**.</span></span>
+28. <span data-ttu-id="8df6b-135">Indtast eller vælg en værdi i feltet **Felt**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-135">In the **Field** field, enter or select a value.</span></span>
+29. <span data-ttu-id="8df6b-136">Vælg **Sum** i feltet **Aggregeringsfunktion**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-136">In the **AggregateFunction** field, select **Sum**.</span></span>
+30. <span data-ttu-id="8df6b-137">Vælg fanen **Sammenlæg pr.**</span><span class="sxs-lookup"><span data-stu-id="8df6b-137">Select the **Group by** tab.</span></span>
+31. <span data-ttu-id="8df6b-138">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-138">Select **Add**.</span></span>
+32. <span data-ttu-id="8df6b-139">Vælg værdien af **Medarbejder** på listen.</span><span class="sxs-lookup"><span data-stu-id="8df6b-139">In the list, select a value of **Employee** .</span></span>
+33. <span data-ttu-id="8df6b-140">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-140">Select **Add**.</span></span>
+34. <span data-ttu-id="8df6b-141">Vælg værdien af **Udgiftsart** på listen.</span><span class="sxs-lookup"><span data-stu-id="8df6b-141">In the list, select a value of **Expense category**.</span></span>
+35. <span data-ttu-id="8df6b-142">Indtast eller vælg en værdi i feltet **Felt**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-142">In the **Field** field, enter or select a value.</span></span>
+36. <span data-ttu-id="8df6b-143">Vælg fanen **Har**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-143">Select the **Having** tab.</span></span>
+37. <span data-ttu-id="8df6b-144">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-144">Select **Add**.</span></span>
+38. <span data-ttu-id="8df6b-145">Vælg **Transaktionsbeløb**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-145">Select **Transaction amount**.</span></span>
+39. <span data-ttu-id="8df6b-146">Indtast eller vælg en værdi i feltet **Felt**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-146">In the **Field** field, enter or select a value.</span></span>
+40. <span data-ttu-id="8df6b-147">Vælg **Sum** i feltet **Aggregeringsfunktion**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-147">In the **AggregateFunction** field, select **Sum**.</span></span>
+41. <span data-ttu-id="8df6b-148">Skriv `>2000` i feltet **Kriterier**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-148">In the **Criteria** field, type `>2000`.</span></span>
+42. <span data-ttu-id="8df6b-149">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-149">Select **OK**.</span></span>
+43. <span data-ttu-id="8df6b-150">Vælg **Test**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-150">Select **Test**.</span></span>
+44. <span data-ttu-id="8df6b-151">Angiv en dato og klokkeslæt i feltet **Startdato for dokumentudvælgelse**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-151">In the **Document selection starting date** field, enter a date and time.</span></span>
+45. <span data-ttu-id="8df6b-152">Angiv en dato og klokkeslæt i feltet **Slutdato for dokumentudvælgelse**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-152">In the **Document selection ending date** field, enter a date and time.</span></span>
+46. <span data-ttu-id="8df6b-153">Vælg **Kør test**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-153">Select **Run test**.</span></span>
+47. <span data-ttu-id="8df6b-154">Vælg **Overvågningspolitik** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="8df6b-154">On the Action Pane, select **Audit policy**.</span></span>
+48. <span data-ttu-id="8df6b-155">Vælge **Flere indstillinger**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-155">Select **Additional options**.</span></span>
+49. <span data-ttu-id="8df6b-156">Angiv en dato og et klokkeslæt i feltet **Startdato**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-156">In the **Starting date** field, enter a date and time.</span></span>
+50. <span data-ttu-id="8df6b-157">Angiv en dato og et klokkeslæt i feltet **Slutdato**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-157">In the **Ending date** field, enter a date and time.</span></span>
+51. <span data-ttu-id="8df6b-158">Vælg **Batch**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-158">Select **Batch**.</span></span>
+52. <span data-ttu-id="8df6b-159">Udvid sektionen **Kør i baggrunden**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-159">Expand the **Run in the background** section.</span></span>
+53. <span data-ttu-id="8df6b-160">Vælg **Ja** i feltet **Batchbehandling**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-160">Select **Yes** in the **Batch processing** field.</span></span>
+54. <span data-ttu-id="8df6b-161">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-161">Select **OK**.</span></span>
+55. <span data-ttu-id="8df6b-162">Gå i navigationsruden til **Moduler > Revisionspanel > Overvåg sager**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-162">In the navigation pane, go to **Modules > Audit workbench > Audit cases**.</span></span>
+56. <span data-ttu-id="8df6b-163">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8df6b-163">In the list, find and select the desired record.</span></span>
+57. <span data-ttu-id="8df6b-164">Udvid sektionen **Tilknytninger**.</span><span class="sxs-lookup"><span data-stu-id="8df6b-164">Expand the **Associations** section.</span></span>
+58. <span data-ttu-id="8df6b-165">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8df6b-165">In the list, find and select the desired record.</span></span>
 
