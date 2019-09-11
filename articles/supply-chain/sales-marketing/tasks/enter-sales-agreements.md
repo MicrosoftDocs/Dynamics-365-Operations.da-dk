@@ -1,9 +1,9 @@
 ---
 title: Indgå salgsaftaler
-description: Denne procedure viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter.
+description: Dette emne viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,53 +17,43 @@ ms.search.industry: Service industries
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c415faaf68fda677f08305dce0ed3f2ed32ee050
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7699f426c102b4ae2610db0851ddd127e514b652
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834094"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871023"
 ---
 # <a name="enter-sales-agreements"></a>Indgå salgsaftaler
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data.
+Dette emne viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data.
 
 
 ## <a name="set-up-sales-agreement-header"></a>Konfigurere salgsaftaleoverskrift
-1. Gå til salg og marketing > Salgsaftaler > Salgsaftaler.
-2. Klik på Ny.
-3. Klik på rullelisten i feltet Kundekonto for at åbne opslaget.
-4. Find og vælg den ønskede post på listen.
-5. Klik op linket i den valgte række på listen.
-6. Klik på rullelisten i feltet Salgsaftaleklassifikation for at åbne opslaget.
-7. Klik op linket i den valgte række på listen.
-8. Udvid afsnittet Generelt.
-9. Vælg "Bundet produktværdi" i feltet Standardtilsagn.
-    * En tilsagnstype er et obligatorisk kriterium, som du skal tildele til aftalen for at definere, hvordan aftalekontrakten skal opfyldes. Med de fire foruddefinerede typer kan du angive kundens tilsagnsmål udtrykt som en mængde eller værdi. Mængdetilsagnstypen kan kun anvendes på et bestemt produkt, men de værdibaserede typerne gælder for salget af specifikke og ikke-specifikke produkter.  
-10. Indstil datoen i feltet Udløbsdato til en fremtidig dato, hvor du vil have, at aftalen udløber.
-11. Klik på OK.
+1. Gå i navigationsruden til **Moduler > Salg og marketing > Salgsaftaler > Salgsaftaler**.
+2. Vælg **Ny**.
+3. Vælg den ønskede post på rullemenuen i feltet **Debitorkonto**.
+4. Vælg den ønskede post på rullemenuen i feltet **Salgsaftaleklassifikation**.
+5. Udvid sektionen **Generelt**.
+6. Vælg **Bundet produktværdi** i feltet **Standardtilsagn**. En tilsagnstype er et obligatorisk kriterium, som du skal tildele til aftalen for at definere, hvordan aftalekontrakten skal opfyldes. Med de fire foruddefinerede typer kan du angive kundens tilsagnsmål udtrykt som en mængde eller værdi. Mængdetilsagnstypen kan kun anvendes på et bestemt produkt, men de værdibaserede typerne gælder for salget af specifikke og ikke-specifikke produkter.  
+7. Indstil datoen i feltet **Udløbsdato** til en fremtidig dato, hvor du vil have, at aftalen udløber.
+8. Vælg **OK**.
 
 ## <a name="set-up-product-value-commitment-lines"></a>Konfigurere bundede produktværdilinjer
-1. Klik på Tilføj linje.
-2. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
-3. Find og vælg den ønskede post på listen.
-4. Klik op linket i den valgte række på listen.
-    * Tilsagnstypen, som du har valgt til denne aftale, påvirker, hvilken type oplysninger du kan angive for aftalelinjerne. For en værdibaseret aftale skal du for eksempel angive det samlede nettobeløb (i den aftalte valuta), som kunden giver tilsagn om at købe varer fra dig for. I dette eksempel er felterne Antal og Enhed på linjen ikke tilgængelige, fordi du opretter en aftale for kunden om at købe en bestemt værdi af et produkt.   
-5. Angiv det pengebeløb, som kunden har forpligtet sig til at købe for, i feltet Nettobeløb.
-6. Angiv en værdi i procent, som skal gælde for kundens salgsordrelinjer, der er knyttet til denne aftale, i feltet Rabatprocent.
-7. Vis eller skjul sektionen Linjedetaljer.
-8. Vælg Ja i feltet Maks. gennemtvinges.
-    * Hvis du vælger Maks. gennemtvinges betyder det, at det samlede beløb for alle de salgsordrelinjer, der bruger tilsagnets specielle priser, rabatter og/eller betalingsbetingelser, ikke må overstige det beløb, der er angivet i tilsagnet.  
-    * Minimum- og maksimumfrigivelsesbeløbet angiver et interval af værdier, der skal sælges på hver salgsordre, der bruger den valgte aftale.   
-9. Udvid sektionen Salgsaftaleoverskrift.
-    * Medmindre aftalens status er indstillet til Gældende, kan salgsordrer ikke knyttes til aftalen og kan derfor ikke bidrage til opfyldelsen af denne aftale. Du kan ændre statussen manuelt på dette trin. Status vil dog normalt ændres, når du bekræfter aftalen for kunden.  
-10. Klik på Salgsaftale i handlingsruden.
-11. Klik på Bekræftelse.
-    * Kontrollér, at indstillingen Markér aftale som gældende er sat til Ja.  
-12. Vælg Ja i feltet Udskriv rapport.
-13. Klik på OK.
-14. Luk siden.
-    * Aftalen er nu gældende, og du kan begynde at tilknytte kundens ordrer til aftalen for at modpostere mod tilsagnsmålet.  
+1. Vælg **Tilføj linje**.
+2. Vælg den ønskede post på rullemenuen i feltet **Varenummer**. Tilsagnstypen, som du har valgt til denne aftale, påvirker, hvilken type oplysninger du kan angive for aftalelinjerne. For en værdibaseret aftale skal du for eksempel angive det samlede nettobeløb (i den aftalte valuta), som kunden giver tilsagn om at købe varer fra dig for. I dette eksempel er felterne **Antal** og **Enhed** på linjen ikke tilgængelige, fordi du opretter en aftale for kunden om at købe en bestemt værdi af et produkt.   
+3. Angiv det pengebeløb, som kunden har forpligtet sig til at købe for, i feltet **Nettobeløb**.
+4. Angiv en værdi i procent, som skal gælde for kundens salgsordrelinjer, der er knyttet til denne aftale, i feltet **Rabatprocent**.
+5. Vis eller skjul sektionen **Linjedetaljer**.
+6. Vælg **Ja** i feltet **Maks. gennemtvinges**.
+    - Hvis du vælger **Maks. gennemtvinges** betyder det, at det samlede beløb for alle de salgsordrelinjer, der bruger tilsagnets specielle priser, rabatter og/eller betalingsbetingelser, ikke må overstige det beløb, der er angivet i tilsagnet.  
+    - Minimum- og maksimumfrigivelsesbeløbet angiver et interval af værdier, der skal sælges på hver salgsordre, der bruger den valgte aftale.   
+7. Udvid sektionen **Salgsaftaleoverskrift**. Medmindre aftalens status er indstillet til **Gældende**, kan salgsordrer ikke knyttes til aftalen og kan derfor ikke bidrage til opfyldelsen af denne aftale. Du kan ændre statussen manuelt på dette trin. Status vil dog normalt ændres, når du bekræfter aftalen for kunden.  
+8. Klik på **Salgsaftale** i handlingsruden.
+9. Vælg **Bekræftelse**. Kontrollér, at indstillingen **Markér aftale som gældende** er sat til **Ja**.  
+10. Vælg **Ja** i feltet **Udskriv rapport**.
+11. Vælg **OK**.
+12. Luk siden. Aftalen er nu gældende. Du kan begynde at knytte kundens ordrer til aftalen for at modpostere mod tilsagnsmålet.  
 

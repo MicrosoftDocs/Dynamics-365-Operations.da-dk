@@ -3,7 +3,7 @@ title: Behandling af fastvægtprodukter med lokationsstyring
 description: I dette emne beskrives, hvordan du kan bruge arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor arbejde skal udføres på lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836098"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887129"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -136,7 +136,6 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
 
 - Manuel oprettelse af karantæneordrer understøttes ikke for fastvægtprodukter.
 - Manuel flytning af lager, der er relateret til arbejde, understøttes ikke for fastvægtprodukter.
-- Konsolidering af id'er understøttes ikke for fastvægtprodukter.
 - Indlæsning af id for at initialisere lagerstedets lagerbeholdning understøttes ikke for fastvægtprodukter.
 - Batchtilpasningsprocesser understøttes ikke for fastvægtprodukter.
 - Håndtering af negativt fysisk lager understøttes ikke for fastvægtprodukter.
@@ -147,7 +146,6 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
 - Funktionen til pluk af klynger understøttes ikke for fastvægtprodukter.
 - Pluk og pak-lagerstedsbehandling understøttes ikke for fastvægtprodukter.
 - For fastvægtprodukter kan arbejde, der er defineret i en arbejdsskabelon, køres automatisk.
-- Funktionen til tilbageførsel af arbejde understøttes ikke for fastvægtprodukter.
 - For fastvægtprodukter understøttes manuel pakkestationsbehandling, hvor arbejde oprettes, efter at containere er lukket, ikke.
 - Funktionen til stykvis scanning understøttes ikke for fastvægtprodukter.
  

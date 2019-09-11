@@ -1,9 +1,9 @@
 ---
 title: Sende salgsordrer uden lagerstyring
-description: Denne vejledning viser, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden.
+description: I dette emne beskrives, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,47 +16,43 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62bbd65e2d80dca5a07b761e1aa76f1894b667c1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f9e311d3e033168ed577094e94477e7fe47d185d
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843307"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914924"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Sende salgsordrer uden lagerstyring
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne vejledning viser, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden. Vejledningen gælder for den opfyldelsesstrøm, der ikke er konfigureret for lagerstedsstyring (hverken grundlæggende eller avancerede lagerfunktioner) og derfor ikke kræver, at produktplukning registreres før afsendelse. Du kan køre procedure på dine egne data eller i demofirmaet USMF. I begge tilfælde skal du, før du starter denne opgave, oprette en salgsordre for et lagerført produkt med et antal større end 1. For at undgå en bogføringsfejl skal du kontrollere, at produktets disponible antal i lokationen og på lagerstedet, som du har valgt i ordren, dækker ordreantallet.
-
+I dette emne beskrives, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden. Vejledningen gælder for den opfyldelsesstrøm, der ikke er konfigureret for lagerstedsstyring (hverken grundlæggende eller avancerede lagerfunktioner) og derfor ikke kræver, at produktplukning registreres før afsendelse. Du kan køre procedure på dine egne data eller i demofirmaet USMF. I begge tilfælde skal du, før du starter denne opgave, oprette en salgsordre for et lagerført produkt med et antal større end 1. For at undgå en bogføringsfejl skal du kontrollere, at produktets disponible antal i lokationen og på lagerstedet, som du har valgt i ordren, dækker ordreantallet.
 
 ## <a name="post-packing-slip-for-an-order"></a>Bogføre følgeseddel for en ordre
-1. Gå til Salg og marketing > Salgsordrer > Alle salgsordrer.
+1. Gå til **Moduler > Salg og marketing > Salgsordrer > Alle salgsordrer** i navigationsruden.
 2. Find og vælg den ordre på listen, du har oprettet til denne opgave.
-3. Klik op linket i den valgte række på listen.
-4. Klik på fanen Pluk og pak i handlingsruden.
-5. Klik på Bogfør følgeseddel.
-6. Udvid eller skjul sektionen Parametre.
-7. Vælg "Alle" i feltet Antal.
-    * Andre muligheder omfatter Levér nu og Plukket. Hvis ordrelinjen er delvist leveret og feltet Levér nu på ordrelinjen indeholder en mængde, skal du vælge Levér nu. Hvis din organisations opfyldelsesstrøm indeholder pluk som en separat proces, der styres af og registreres i en plukliste, skal du vælge Plukket.  
-    * Kontroller, at indstillingen Bogføring er indstillet til Ja.  
-8. Sæt indstillingen Udskriv følgeseddel til Ja.
-    * Fanen Oversigt indeholder en liste over følgesedler, der skal genereres i denne postering. Hvis du leverer en enkelt ordre, vil der typisk være én følgeseddel. Men hvis denne ordres linjer skal leveres fra forskellige steder, opdeles bogføringen automatisk i det rette antal dokumenter. Dette er en obligatorisk betingelse, der ikke kan ændres. På samme måde opdeles bogføringen også i flere dokumenter, hvis ordrelinjerne skal leveres til forskellige leveringsadresser, og politikken for levering er indstillet til at kræve en opdeling.  
-9. Vælg rækken for ordrelinjen, der skal sendes, under fanen Linjer.
-10. Skriv et tal, der er lavere end den oprindelige mængde, i feltet Opdater.
-11. Klik på OK.
-12. Klik på Ja.
-13. Luk siden.
-14. Klik på Indstillinger i handlingsruden.
-15. Klik på Skift visning.
-16. Klik på Overskriftsvisning.
-    * Hvis alle linjer i ordren er fuldt leveret, ændres ordrestatus fra åben til leveret.  
-    * I dette eksempel er ordrelinjen leveret delvist. Det er grunden til, at ordrestatus forbliver åben.     
-    * Feltet Dokumentstatus er indstillet til Følgeseddel, fordi mindst én af ordrelinjerne er blevet leveret.  
-17. Klik på Generelt i handlingsruden.
-18. Klik på Linjeantal.
-19. Luk siden.
-20. Klik på fanen Pluk og pak i handlingsruden.
-21. Klik på følgeseddel.
-    * Siden Følgeseddelkladde indeholder alle følgeseddeldokumenter, der oprettes for din ordre. Du kan gennemse detaljerne for hvert dokument og udskrive dem, hvis du ønsker.  
+3. Vælg **Pluk og pak** i handlingsruden.
+4. Vælg **Bogfør følgeseddel**.
+5. Udvid eller skjul sektionen **Parametre**.
+6. Vælg **Alle**" i feltet **Antal**.
+    - Andre muligheder omfatter **Levér nu** og **Plukket**. Hvis ordrelinjen er delvist leveret og feltet **Levér nu** på ordrelinjen indeholder en mængde, skal du vælge **Levér nu**. Hvis din organisations opfyldelsesstrøm indeholder pluk som en separat proces, der styres af og registreres i en plukliste, skal du vælge **Plukket**.  
+    - Kontroller, at indstillingen **Bogføring** er indstillet til **Ja**.  
+7. Sæt indstillingen **Udskriv følgeseddel** til **Ja**. Fanen **Oversigt** indeholder en liste over følgesedler, der skal genereres i denne postering. Hvis du leverer en enkelt ordre, vil der typisk være én følgeseddel. Men hvis denne ordres linjer skal leveres fra forskellige steder, opdeles bogføringen automatisk i det rette antal dokumenter. Dette er en obligatorisk betingelse, der ikke kan ændres. På samme måde opdeles bogføringen også i flere dokumenter, hvis ordrelinjerne skal leveres til forskellige leveringsadresser, og politikken for levering er indstillet til at kræve en opdeling.  
+8. Vælg rækken for ordrelinjen, der skal sendes, under fanen **Linjer**.
+9. Skriv et tal, der er lavere end den oprindelige mængde, i feltet **Opdater**.
+10. Vælg **OK**.
+11. Vælg **Ja**.
+12. Luk siden.
+13. Vælg **Indstillinger** i handlingsruden.
+14. Vælg **Skift visning**.
+15. Vælg **Overskriftsvisning**.
+    - Hvis alle linjer i ordren er fuldt leveret, ændres ordrestatus fra åben til leveret.  
+    - I dette eksempel er ordrelinjen leveret delvist. Det er grunden til, at ordrestatus forbliver åben.     
+    - Feltet **Dokumentstatus** er indstillet til Følgeseddel, fordi mindst én af ordrelinjerne er blevet leveret.  
+16. Vælg **Generelt** i handlingsruden.
+17. Vælg **Linjeantal**.
+18. Luk siden.
+19. Vælg **Pluk og pak** i handlingsruden.
+20. Vælg **Følgeseddel**. Siden **Følgeseddelkladde** indeholder alle følgeseddeldokumenter, der oprettes for din ordre. Du kan gennemse detaljerne for hvert dokument og udskrive dem, hvis du ønsker.  
 

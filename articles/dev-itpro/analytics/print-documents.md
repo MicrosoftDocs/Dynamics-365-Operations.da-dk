@@ -1,9 +1,9 @@
 ---
-title: Dokumentudskrivning
+title: Oversigt over udskrivning af dokumenter
 description: I Microsoft Dynamics 365 for Finance and Operations kan du udskrive dokumenter ved hjælp af enten en lokal printer eller en netværkstilsluttet enhed. Denne artikel indeholder en oversigt over, hvordan dokumenter udskrives.
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc45865b55b4794202408ca19a0776440382fdd
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 779931a779cdb8fcbc8e85c3d6c2a4e123d8ec47
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850065"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864658"
 ---
-# <a name="document-printing"></a>Dokumentudskrivning
+# <a name="document-printing-overview"></a>Oversigt over udskrivning af dokumenter
 
 [!include [banner](../includes/banner.md)]
 

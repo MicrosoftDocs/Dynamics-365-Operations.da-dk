@@ -1,9 +1,9 @@
 ---
 title: Modtage varer på indkøbsordre ud fra varebehov
-description: Denne procedure viser, hvordan du modtager varer på en købsordre fra et varebehov.
+description: I dette emne beskrives, hvordan du modtager varer i en indkøbsordre fra et varebehov.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,45 +16,43 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fee2c965b0c065f00564b849ec93504336fb3f60
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7afdae65c5ae7e3196c6b9f142dd87aec39b5ea3
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838241"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867289"
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Modtage varer på indkøbsordre ud fra varebehov
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du modtager varer på en købsordre fra et varebehov.
+I dette emne beskrives, hvordan du modtager varer i en indkøbsordre fra et varebehov.
 
 Når du bruger et varebehov i stedet for en varepostering, kan du planlægge leveringen, så den finder sted, umiddelbart før varen faktisk skal bruges. Du kan oprette en indkøbsordre, lade varen indgå i samhandelsaftaler og lade varebehovet indgå i produktionsplanlægningen. 
 
 Denne opgave bruger USSI-datasættet.
 
-1. Gå til Projektstyring og regnskab > Projekter > Alle projekter.
-2. Klik op linket i den valgte række på listen.
-3. Klik på Plan i handlingsruden.
-4. Klik på Varebehov.
-5. Klik på Ny.
-6. Markér den valgte række på listen.
-7. Indtast eller vælg en værdi i feltet Varenummer.
-8. Angiv et tal i feltet Antal.
-9. Klik på Gem.
-10. Klik på Administrer i handlingsruden.
-11. Klik på Funktioner.
-12. Klik på Opret indkøbsordre automatisk.
-13. Marker afkrydsningsfeltet Medtag.
-14. Indtast eller vælg en værdi i feltet Kreditorkonto.
-15. Klik på OK.
-16. Gå til Kreditor > Indkøbsordrer > Alle indkøbsordrer.
-17. Klik op linket i den valgte række på listen.
-18. Klik på Køb i handlingsruden.
-19. Klik på Bekræft.
-20. Klik på Modtag i handlingsruden.
-21. Klik på Produktkvittering.
-22. Markér den valgte række på listen.
-23. Skriv en værdi i feltet Produktkvittering.
-24. Klik på OK.
+1. Gå i navigationsruden til **Moduler > Projektstyring og regnskab > Projekter > Alle projekter**.
+2. Vælg linket i den ønskede række på listen.
+3. Vælg **Plan** i handlingsruden.
+4. Vælg **Varebehov**.
+5. Vælg **Ny**.
+6. Indtast eller vælg en værdi i feltet **Varenummer** i den nye række.
+7. Angiv et tal i feltet **Antal**.
+8. Vælg **Gem**.
+9. Vælg **Administrer** i handlingsruden.
+10. Vælg **Funktioner**.
+11. Vælg **Opret indkøbsordre**.
+12. Marker afkrydsningsfeltet **Medtag alle**.
+13. Indtast eller vælg en værdi i feltet **Kreditorkonto**.
+14. Vælg **OK**.
+15. I navigationsruden skal du gå til **Moduler > Kreditor > Indkøbsordrer > Alle indkøbsordrer**.
+16. Vælg linket i den ønskede række på listen.
+17. Klik på **Køb** i handlingsruden.
+18. Vælg **Bekræft**.
+19. Vælg **Modtag** i handlingsruden.
+20. Vælg **Produktkvittering**.
+21. Skriv en værdi i feltet **Produktkvittering**.
+22. Vælg **OK**.
 

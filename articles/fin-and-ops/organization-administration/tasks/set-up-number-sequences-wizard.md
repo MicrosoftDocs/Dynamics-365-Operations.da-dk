@@ -1,9 +1,9 @@
 ---
-title: Opret nummerserier vha. en guide
-description: Nummerserier bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er.
+title: Oprette nummerserier ved hjælp af en guide
+description: I dette emne beskrives, hvordan du konfigurerer alle krævede nummerserier på samme tid ved hjælp af en guide.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,24 +16,26 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1808ab9240ab291f9d203893a634bd390f16e2e7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f97c4cd6cdb117ebdd67a155478bb6f8d1703541
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560538"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867382"
 ---
-# <a name="set-up-number-sequences-by-using-a-wizard"></a>Opret nummerserier vha. en guide
+# <a name="set-up-number-sequences-using-a-wizard"></a>Oprette nummerserier ved hjælp af en guide
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Nummerserier bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er. En masterdata- eller transaktionspost, der kræver et id, kaldes en reference. Før du kan oprette nye poster for en reference, skal du konfigurere en nummerserie og knytte den til referencen. Denne fremgangsmåde forklarer, hvordan du konfigurerer alle krævede nummerserier på samme tid ved hjælp af en guide. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Nummerserier bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er. En masterdata- eller transaktionspost, der kræver et id, kaldes en reference. Før du kan oprette nye poster til en reference, skal du konfigurere en nummerserie og knytte den til referencen. I dette emne beskrives, hvordan du konfigurerer alle krævede nummerserier på samme tid ved hjælp af en guide. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-1. Gå til Virksomhedsadministration > Nummerserier > Nummerserier.
-2. Klik på Generer.
-3. Klik på Næste.
-    * På denne side kan du redigere identifikationskoden, den laveste værdi og den højeste værdi. Du kan også angive, om nummerserien skal være fortløbende.   
-    * Du skal ikke markere indstillingen Fortløbende, hvis du skal forudallokere numre til nummerserien.     Hvis du vil føje et områdesegment til en nummerseries format, skal du vælge formatet på listen og derefter klikke på Medtager område i format.     Hvis du vil fjerne et områdesegment fra en nummerseries format, skal du vælge formatet på listen og derefter klikke på Fjerner område fra format.     Hvis du vil udelukke en nummerserie fra automatisk generering, skal du vælge nummerserien på listen og derefter klikke på Slet.  
-4. Klik på Næste.
-5. Klik på Finish.
+1. Gå til **Navigation > Moduler > Organisationsadministration > Nummerserier > Nummerserier**.
+2. Vælg **Generer**.
+3. Vælg **Næste**.
+
+   - På denne side kan du redigere identifikationskoden, den laveste værdi og den højeste værdi. Du kan også angive, om nummerserien skal være fortløbende.   
+   - Du skal ikke markere indstillingen **Fortløbende**, hvis du skal forudallokere numre til nummerserien. Hvis du vil føje et områdesegment til en nummerseries format, skal du vælge formatet på listen og derefter vælge **Medtager område i format**. Hvis du vil fjerne et områdesegment fra en nummerseries format, skal du vælge formatet på listen og derefter vælge **Fjerner område fra format**. Hvis du vil udelukke en nummerserie fra automatisk generering, skal du vælge nummerserien på listen og derefter vælge **Slet**.  
+
+4. Vælg **Næste**.
+5. Vælg **Udfør**.
 
