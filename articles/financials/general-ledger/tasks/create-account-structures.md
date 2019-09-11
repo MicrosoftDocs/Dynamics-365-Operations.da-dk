@@ -3,7 +3,7 @@ title: Oprette kontostrukturer
 description: Denne opgaveguide gennemgår oprettelse af en kontostruktur.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,69 +16,48 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2183f88356fc8094781af147bf079c4e53ffb2b4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b100d5da6ec26dc386c0c6cb0793245531eb0d8
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846697"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916224"
 ---
-# <a name="create-account-structures"></a><span data-ttu-id="da062-103">Oprette kontostrukturer</span><span class="sxs-lookup"><span data-stu-id="da062-103">Create account structures</span></span>
+# <a name="create-account-structures"></a><span data-ttu-id="62766-103">Oprette kontostrukturer</span><span class="sxs-lookup"><span data-stu-id="62766-103">Create account structures</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="da062-104">Denne opgaveguide gennemgår oprettelse af en kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="da062-104">This task guide steps through creating an account structure.</span></span> <span data-ttu-id="da062-105">Der er brugt demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="da062-105">The steps use demo data company USMF.</span></span>
+<span data-ttu-id="62766-104">Denne opgaveguide gennemgår oprettelse af en kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="62766-104">This task guide steps through creating an account structure.</span></span> <span data-ttu-id="62766-105">Der er brugt demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="62766-105">The steps use demo data company USMF.</span></span>
 
-1. <span data-ttu-id="da062-106">Gå til Finans > Diagram over konti > Strukturer > Konfigurere kontostrukturer.</span><span class="sxs-lookup"><span data-stu-id="da062-106">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
-2. <span data-ttu-id="da062-107">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="da062-107">Click New to open the drop dialog.</span></span>
-3. <span data-ttu-id="da062-108">I feltet Kontostruktur skal du skrive et navn, som beskriver formålet med kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="da062-108">In the Account structure field, type a name to describe the purpose of the account structure.</span></span>
-4. <span data-ttu-id="da062-109">I feltet Beskrivelse skal du skrive et beskrivelse, som angiver formålet med kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="da062-109">In the Description field, type a description to specify the purpose of the account structure.</span></span>
-5. <span data-ttu-id="da062-110">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="da062-110">Click Create.</span></span>
-6. <span data-ttu-id="da062-111">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="da062-111">Click Add segment.</span></span>
-7. <span data-ttu-id="da062-112">På listen Dimensioner skal du vælge den dimension, der skal føjes til kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="da062-112">In the Dimensions list, select the dimension to add to the account structure.</span></span>
-8. <span data-ttu-id="da062-113">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="da062-113">Click Add segment.</span></span>
-9. <span data-ttu-id="da062-114">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="da062-114">Click Add segment.</span></span>
-10. <span data-ttu-id="da062-115">På listen Dimensioner skal du vælge den dimension, der skal føjes til kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="da062-115">In the Dimensions list, select the dimension to add to the account structure.</span></span>
-11. <span data-ttu-id="da062-116">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="da062-116">Click Add segment.</span></span>
-12. <span data-ttu-id="da062-117">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="da062-117">Click Add segment.</span></span>
-13. <span data-ttu-id="da062-118">På listen Dimensioner skal du vælge den dimension, der skal føjes til kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="da062-118">In the Dimensions list, select the dimension to add to the account structure.</span></span>
-14. <span data-ttu-id="da062-119">Klik på Tilføj segment.</span><span class="sxs-lookup"><span data-stu-id="da062-119">Click Add segment.</span></span>
-15. <span data-ttu-id="da062-120">Vælg segmentet i gitteret for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="da062-120">In the grid, select the segment to edit the allowed values.</span></span>
-    * <span data-ttu-id="da062-121">Klik f.eks. i Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="da062-121">For example, click in Main Account.</span></span>  
-16. <span data-ttu-id="da062-122">Vælg en indstilling i feltet Operatør, f.eks. er mellem og inkluderer.</span><span class="sxs-lookup"><span data-stu-id="da062-122">In the Operator field, select an option, such as is between and includes.</span></span>
-17. <span data-ttu-id="da062-123">Skriv en værdi i feltet Værdi.</span><span class="sxs-lookup"><span data-stu-id="da062-123">In the Value field, type a value.</span></span>
-    * <span data-ttu-id="da062-124">For eksempel 600000.</span><span class="sxs-lookup"><span data-stu-id="da062-124">For example, 600000.</span></span>  
-18. <span data-ttu-id="da062-125">Skriv en værdi i feltet via.</span><span class="sxs-lookup"><span data-stu-id="da062-125">In the through field, type a value.</span></span>
-    * <span data-ttu-id="da062-126">For eksempel 699999.</span><span class="sxs-lookup"><span data-stu-id="da062-126">For example, 699999.</span></span>  
-19. <span data-ttu-id="da062-127">Klik på Anvend.</span><span class="sxs-lookup"><span data-stu-id="da062-127">Click Apply.</span></span>
-20. <span data-ttu-id="da062-128">Vælg segmentet i gitteret for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="da062-128">In the grid, select the segment to edit the allowed values.</span></span>
-    * <span data-ttu-id="da062-129">For eksempel Afdeling.</span><span class="sxs-lookup"><span data-stu-id="da062-129">For example, Department.</span></span>  
-21. <span data-ttu-id="da062-130">Vælg en indstilling i feltet Operatør, f.eks. er mellem og inkluderer.</span><span class="sxs-lookup"><span data-stu-id="da062-130">In the Operator field, select an option, such as is between and includes.</span></span>
-22. <span data-ttu-id="da062-131">Skriv en værdi i feltet Værdi.</span><span class="sxs-lookup"><span data-stu-id="da062-131">In the Value field, type a value.</span></span>
-    * <span data-ttu-id="da062-132">For eksempel 022.</span><span class="sxs-lookup"><span data-stu-id="da062-132">For example, 022.</span></span>  
-23. <span data-ttu-id="da062-133">Skriv en værdi i feltet via.</span><span class="sxs-lookup"><span data-stu-id="da062-133">In the through field, type a value.</span></span>
-    * <span data-ttu-id="da062-134">For eksempel 031.</span><span class="sxs-lookup"><span data-stu-id="da062-134">For example, 031.</span></span>  
-24. <span data-ttu-id="da062-135">Klik på Tilføj nyt kriterie.</span><span class="sxs-lookup"><span data-stu-id="da062-135">Click Add new criteria.</span></span>
-25. <span data-ttu-id="da062-136">Vælg en indstilling i feltet Operatør, f.eks. er mellem og inkluderer.</span><span class="sxs-lookup"><span data-stu-id="da062-136">In the Operator field, select an option, such as is between and includes.</span></span>
-26. <span data-ttu-id="da062-137">Skriv en værdi i feltet Værdi.</span><span class="sxs-lookup"><span data-stu-id="da062-137">In the Value field, type a value.</span></span>
-    * <span data-ttu-id="da062-138">For eksempel 033.</span><span class="sxs-lookup"><span data-stu-id="da062-138">For example, 033.</span></span>  
-27. <span data-ttu-id="da062-139">Skriv en værdi i feltet via.</span><span class="sxs-lookup"><span data-stu-id="da062-139">In the through field, type a value.</span></span>
-    * <span data-ttu-id="da062-140">For eksempel 034.</span><span class="sxs-lookup"><span data-stu-id="da062-140">For example, 034.</span></span>  
-28. <span data-ttu-id="da062-141">Klik på Anvend.</span><span class="sxs-lookup"><span data-stu-id="da062-141">Click Apply.</span></span>
-29. <span data-ttu-id="da062-142">Vælg segmentet i gitteret for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="da062-142">In the grid, select the segment to edit the allowed values.</span></span>
-    * <span data-ttu-id="da062-143">For eksempel Bærer.</span><span class="sxs-lookup"><span data-stu-id="da062-143">For example, Cost Center.</span></span>  
-30. <span data-ttu-id="da062-144">Skriv en værdi i feltet CostCenter.</span><span class="sxs-lookup"><span data-stu-id="da062-144">In the CostCenter field, type a value.</span></span>
-    * <span data-ttu-id="da062-145">For eksempel 007..021.</span><span class="sxs-lookup"><span data-stu-id="da062-145">For example, 007..021.</span></span>  
-31. <span data-ttu-id="da062-146">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="da062-146">Click Add.</span></span>
-32. <span data-ttu-id="da062-147">Skriv en værdi i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="da062-147">In the MainAccount field, type a value.</span></span>
-    * <span data-ttu-id="da062-148">For eksempel, 600000..699999</span><span class="sxs-lookup"><span data-stu-id="da062-148">For example, 600000..699999</span></span>  
-33. <span data-ttu-id="da062-149">Vælg segmentet i gitteret for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="da062-149">In the grid, select the segment to edit the allowed values.</span></span>
-    * <span data-ttu-id="da062-150">For eksempel Afdeling.</span><span class="sxs-lookup"><span data-stu-id="da062-150">For example, Department.</span></span>  
-34. <span data-ttu-id="da062-151">Skriv en værdi i feltet Afdeling.</span><span class="sxs-lookup"><span data-stu-id="da062-151">In the Department field, type a value.</span></span>
-    * <span data-ttu-id="da062-152">For eksempel 032.</span><span class="sxs-lookup"><span data-stu-id="da062-152">For example, 032.</span></span>  
-35. <span data-ttu-id="da062-153">Skriv en værdi i feltet CostCenter.</span><span class="sxs-lookup"><span data-stu-id="da062-153">In the CostCenter field, type a value.</span></span>
-    * <span data-ttu-id="da062-154">For eksempel 086.</span><span class="sxs-lookup"><span data-stu-id="da062-154">For example, 086.</span></span>  
-36. <span data-ttu-id="da062-155">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="da062-155">Click Validate.</span></span>
-37. <span data-ttu-id="da062-156">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="da062-156">Click Activate.</span></span>
-38. <span data-ttu-id="da062-157">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="da062-157">Click Activate.</span></span>
+1. <span data-ttu-id="62766-106">Gå til **Navigationsrude > Moduler > Finans > Kontoplan > Strukturer > Konfigurer kontostrukturer**.</span><span class="sxs-lookup"><span data-stu-id="62766-106">Go to **Navigation pane > Modules > General ledger > Chart of accounts > Structures > Configure account structures**.</span></span>
+2. <span data-ttu-id="62766-107">Klik på **Ny** i **handlingsruden** for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="62766-107">On the **Action pane**, click **New** to open the drop dialog.</span></span>
+3. <span data-ttu-id="62766-108">I feltet **Kontostruktur** skal du skrive et navn, som beskriver formålet med kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="62766-108">In the **Account structure** field, type a name to describe the purpose of the account structure.</span></span>
+4. <span data-ttu-id="62766-109">I feltet **Beskrivelse** skal du indtaste et beskrivelse, som angiver formålet med kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="62766-109">In the **Description** field, type a description to specify the purpose of the account structure.</span></span>
+5. <span data-ttu-id="62766-110">Klik på **Opret**.</span><span class="sxs-lookup"><span data-stu-id="62766-110">Click **Create**.</span></span>
+6. <span data-ttu-id="62766-111">Klik på **Tilføj segment** i **Segmenter og tilladte værdier**.</span><span class="sxs-lookup"><span data-stu-id="62766-111">In the **Segments and allowed values**, click **Add segment**.</span></span>
+7. <span data-ttu-id="62766-112">På listen over dimensioner skal du vælge den dimension, der skal føjes til kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="62766-112">In the dimensions list, select the dimension to add to the account structure.</span></span>
+8. <span data-ttu-id="62766-113">Klik på **Tilføj segment** nederst på listen.</span><span class="sxs-lookup"><span data-stu-id="62766-113">At the end of the list, click **Add segment**.</span></span>
+9. <span data-ttu-id="62766-114">Gentag trin 6 til 9 efter behov.</span><span class="sxs-lookup"><span data-stu-id="62766-114">Repeat step 6 to 9 as needed.</span></span>
+10. <span data-ttu-id="62766-115">Vælg segmentet i sektionen i **Oplysninger om tilladt værdi** for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="62766-115">In the **Allowed value details** section, select the segment to edit the allowed values.</span></span>
+    <span data-ttu-id="62766-116">Klik f.eks. på feltet **Hovedkonto**.</span><span class="sxs-lookup"><span data-stu-id="62766-116">For example, click the **Main Account** field.</span></span>  
+11. <span data-ttu-id="62766-117">Vælg en indstilling i feltet **Operatør**, f.eks. er mellem og inkluderer.</span><span class="sxs-lookup"><span data-stu-id="62766-117">In the **Operator** field, select an option, such as is between and includes.</span></span>
+12. <span data-ttu-id="62766-118">Skriv en værdi i feltet **Værdi**.</span><span class="sxs-lookup"><span data-stu-id="62766-118">In the **Value** field, type a value.</span></span> <span data-ttu-id="62766-119">For eksempel 600000.</span><span class="sxs-lookup"><span data-stu-id="62766-119">For example, 600000.</span></span>  
+13. <span data-ttu-id="62766-120">Skriv en værdi i feltet **værdi**.</span><span class="sxs-lookup"><span data-stu-id="62766-120">In the **through** field, type a value.</span></span> <span data-ttu-id="62766-121">For eksempel 699999.</span><span class="sxs-lookup"><span data-stu-id="62766-121">For example, 699999.</span></span>  
+14. <span data-ttu-id="62766-122">Klik på **Anvend** i sektionen **Oplysninger om tilladt værdi**.</span><span class="sxs-lookup"><span data-stu-id="62766-122">In the **Allowed value details** section, click **Apply**.</span></span>
+15. <span data-ttu-id="62766-123">Gentag trin 10 til 15 efter behov.</span><span class="sxs-lookup"><span data-stu-id="62766-123">Repeat step 10 to 15 as needed.</span></span>  
+16. <span data-ttu-id="62766-124">Klik på **Tilføj nye kriterier** i sektionen **Oplysninger om tilladt værdi**.</span><span class="sxs-lookup"><span data-stu-id="62766-124">In the **Allowed value details** section, click **Add new criteria**.</span></span>
+17. <span data-ttu-id="62766-125">Vælg en indstilling i feltet Operatør, f.eks. er mellem og inkluderer.</span><span class="sxs-lookup"><span data-stu-id="62766-125">In the Operator field, select an option, such as is between and includes.</span></span>
+18. <span data-ttu-id="62766-126">Skriv en værdi i feltet **Værdi**.</span><span class="sxs-lookup"><span data-stu-id="62766-126">In the **Value** field, type a value.</span></span> <span data-ttu-id="62766-127">For eksempel 033.</span><span class="sxs-lookup"><span data-stu-id="62766-127">For example, 033.</span></span>  
+19. <span data-ttu-id="62766-128">Skriv en værdi i feltet **værdi**.</span><span class="sxs-lookup"><span data-stu-id="62766-128">In the **through** field, type a value.</span></span> <span data-ttu-id="62766-129">For eksempel 034.</span><span class="sxs-lookup"><span data-stu-id="62766-129">For example, 034.</span></span>  
+20. <span data-ttu-id="62766-130">Klik på **Anvend**.</span><span class="sxs-lookup"><span data-stu-id="62766-130">Click **Apply**.</span></span>
+21. <span data-ttu-id="62766-131">Vælg segmentet i gitteret for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="62766-131">In the grid, select the segment to edit the allowed values.</span></span> <span data-ttu-id="62766-132">For eksempel Bærer.</span><span class="sxs-lookup"><span data-stu-id="62766-132">For example, Cost Center.</span></span>  
+22. <span data-ttu-id="62766-133">Skriv en værdi i feltet **CostCenter**.</span><span class="sxs-lookup"><span data-stu-id="62766-133">In the **CostCenter field**, type a value.</span></span> <span data-ttu-id="62766-134">For eksempel 007..021.</span><span class="sxs-lookup"><span data-stu-id="62766-134">For example, 007..021.</span></span>  
+23. <span data-ttu-id="62766-135">Klik på **Tilføj** i **Segmenter og tilladte værdier**.</span><span class="sxs-lookup"><span data-stu-id="62766-135">In the **Segments and allowed values**, click **Add**.</span></span>
+24. <span data-ttu-id="62766-136">Skriv en værdi i feltet **MainAccount**.</span><span class="sxs-lookup"><span data-stu-id="62766-136">In the **MainAccount** field, type a value.</span></span> <span data-ttu-id="62766-137">For eksempel, 600000..699999</span><span class="sxs-lookup"><span data-stu-id="62766-137">For example, 600000..699999</span></span>  
+25. <span data-ttu-id="62766-138">Vælg segmentet i gitteret for at redigere de tilladte værdier.</span><span class="sxs-lookup"><span data-stu-id="62766-138">In the grid, select the segment to edit the allowed values.</span></span> <span data-ttu-id="62766-139">For eksempel Afdeling.</span><span class="sxs-lookup"><span data-stu-id="62766-139">For example, Department.</span></span>  
+26. <span data-ttu-id="62766-140">Skriv en værdi i feltet Afdeling.</span><span class="sxs-lookup"><span data-stu-id="62766-140">In the Department field, type a value.</span></span> <span data-ttu-id="62766-141">For eksempel 032.</span><span class="sxs-lookup"><span data-stu-id="62766-141">For example, 032.</span></span>  
+27. <span data-ttu-id="62766-142">Skriv en værdi i feltet CostCenter.</span><span class="sxs-lookup"><span data-stu-id="62766-142">In the CostCenter field, type a value.</span></span> <span data-ttu-id="62766-143">For eksempel 086.</span><span class="sxs-lookup"><span data-stu-id="62766-143">For example, 086.</span></span>  
+28. <span data-ttu-id="62766-144">Klik på **Valider** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="62766-144">On the **Action pane**, click **Validate**.</span></span>
+29. <span data-ttu-id="62766-145">Klik på **Aktivér** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="62766-145">On the **Action pane**, click **Activate**.</span></span>
+30. <span data-ttu-id="62766-146">Klik på **Aktiver**.</span><span class="sxs-lookup"><span data-stu-id="62766-146">Click **Activate**.</span></span>
 

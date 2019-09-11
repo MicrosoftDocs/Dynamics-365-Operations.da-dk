@@ -1,9 +1,9 @@
 ---
 title: Oprette en ny lageropbygning
-description: Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted.
+description: Dette emne beskriver, hvordan du konfigurerer oplysninger om lokationer på et lagersted.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,62 +17,49 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0a52c5d68816a81a94db019387b9ea3ec3efc5a
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 302c028a93dfdb57972e4759abbbc4fdedabbd17
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845516"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867223"
 ---
-# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="028bb-103">Oprette en ny lageropbygning</span><span class="sxs-lookup"><span data-stu-id="028bb-103">Create a new warehouse layout</span></span>
+# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="0c2bb-103">Oprette en ny lageropbygning</span><span class="sxs-lookup"><span data-stu-id="0c2bb-103">Create a new warehouse layout</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="028bb-104">Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted.</span><span class="sxs-lookup"><span data-stu-id="028bb-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="028bb-105">Dette gælder for kun for lagersteder, der er oprettet ved hjælp af "grundlæggende lagerfunktioner" i modulet Lagerstyring, ikke for lagersteder, der er oprettet i modulet Lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="028bb-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="028bb-106">Du kan bruge denne procedure på demofirmaet USMF eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="028bb-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
+<span data-ttu-id="0c2bb-104">Dette emne beskriver, hvordan du konfigurerer oplysninger om lokationer på et lagersted.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-104">This topic describes how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="0c2bb-105">Dette gælder for kun for lagersteder, der er oprettet ved hjælp af "grundlæggende lagerfunktioner" i modulet Lagerstyring, ikke for lagersteder, der er oprettet i modulet Lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="0c2bb-106">Du kan bruge denne procedure på demofirmaet USMF eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 
 
-## <a name="set-the-default-location-capacity"></a><span data-ttu-id="028bb-107">Angiv lokalitetens standardkapacitet</span><span class="sxs-lookup"><span data-stu-id="028bb-107">Set the default location capacity</span></span>
-1. <span data-ttu-id="028bb-108">Gå til lagerstyring > Opsætning > Parametre til lager- og lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="028bb-108">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
-2. <span data-ttu-id="028bb-109">Klik på fanen Lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="028bb-109">Click the Locations tab.</span></span>
-3. <span data-ttu-id="028bb-110">Angiv et tal i feltet Standardbredde.</span><span class="sxs-lookup"><span data-stu-id="028bb-110">In the Standard width field, enter a number.</span></span>
-4. <span data-ttu-id="028bb-111">Angiv et tal i feltet Standarddybde.</span><span class="sxs-lookup"><span data-stu-id="028bb-111">In the Standard depth field, enter a number.</span></span>
-5. <span data-ttu-id="028bb-112">Angiv et tal i feltet Standardhøjde.</span><span class="sxs-lookup"><span data-stu-id="028bb-112">In the Standard height field, enter a number.</span></span>
-6. <span data-ttu-id="028bb-113">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="028bb-113">Click Save.</span></span>
-7. <span data-ttu-id="028bb-114">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="028bb-114">Close the page.</span></span>
+## <a name="set-the-default-location-capacity"></a><span data-ttu-id="0c2bb-107">Angiv lokalitetens standardkapacitet</span><span class="sxs-lookup"><span data-stu-id="0c2bb-107">Set the default location capacity</span></span>
+1. <span data-ttu-id="0c2bb-108">Gå i navigationsruden til **Moduler > Lagerstyring > Opsætning > Parametre til lager- og lokationsstyring**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-108">In the navigation pane, go to **Modules > Inventory management > Setup > Inventory and warehouse management parameters**.</span></span>
+2. <span data-ttu-id="0c2bb-109">Vælg fanen **Lokationer**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-109">Select the **Locations** tab.</span></span>
+3. <span data-ttu-id="0c2bb-110">Angiv et tal i feltet **Standardbredde**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-110">In the **Standard width** field, enter a number.</span></span>
+4. <span data-ttu-id="0c2bb-111">Angiv et tal i feltet **Standarddybde**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-111">In the **Standard depth** field, enter a number.</span></span>
+5. <span data-ttu-id="0c2bb-112">Angiv et tal i feltet **Standardhøjde**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-112">In the **Standard height** field, enter a number.</span></span>
+6. <span data-ttu-id="0c2bb-113">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-113">Select **Save**.</span></span>
+7. <span data-ttu-id="0c2bb-114">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-114">Close the page.</span></span>
 
-## <a name="define-the-location-name-format"></a><span data-ttu-id="028bb-115">Definer formatet for navnet på lokaliteten</span><span class="sxs-lookup"><span data-stu-id="028bb-115">Define the location name format</span></span>
-1. <span data-ttu-id="028bb-116">Gå til Lagerstyring > Opsætning > Lageropdeling > Lagersteder.</span><span class="sxs-lookup"><span data-stu-id="028bb-116">Go to Inventory management > Setup > Inventory breakdown > Warehouses.</span></span>
-2. <span data-ttu-id="028bb-117">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="028bb-117">Click New.</span></span>
-3. <span data-ttu-id="028bb-118">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="028bb-118">In the Warehouse field, type a value.</span></span>
-4. <span data-ttu-id="028bb-119">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="028bb-119">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="028bb-120">Klik på rullelisten i feltet Sted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="028bb-120">In the Site field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="028bb-121">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="028bb-121">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="028bb-122">Slå udvidelsen af sektionen Lokationsnavne til/fra.</span><span class="sxs-lookup"><span data-stu-id="028bb-122">Toggle the expansion of the Location names section.</span></span>
-    * <span data-ttu-id="028bb-123">Indstillingerne i denne sektion definerer standardformatet for navne på lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="028bb-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="028bb-124">I vores eksempel medtager vi gangnummer, reolnummer og hyldenummer.</span><span class="sxs-lookup"><span data-stu-id="028bb-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
-8. <span data-ttu-id="028bb-125">Du kan angive indstillingen Medtag gang til Ja.</span><span class="sxs-lookup"><span data-stu-id="028bb-125">Set the Include aisle option to Yes.</span></span>
-9. <span data-ttu-id="028bb-126">Du kan angive indstillingen Medtag reol til Ja.</span><span class="sxs-lookup"><span data-stu-id="028bb-126">Set the Include rack option to Yes.</span></span> 
-10. <span data-ttu-id="028bb-127">Angiv en værdi for reolen i feltet Format.</span><span class="sxs-lookup"><span data-stu-id="028bb-127">In the Format field, for the rack, type a value.</span></span>
-    * <span data-ttu-id="028bb-128">For eksempel: -##</span><span class="sxs-lookup"><span data-stu-id="028bb-128">For example: -##</span></span>  
-11. <span data-ttu-id="028bb-129">Du kan angive indstillingen Medtag hylde til Ja.</span><span class="sxs-lookup"><span data-stu-id="028bb-129">Set the Include shelf option to Yes.</span></span>
-12. <span data-ttu-id="028bb-130">Angiv en værdi for hylden i feltet Format.</span><span class="sxs-lookup"><span data-stu-id="028bb-130">In the Format field, for the shelf, type a value.</span></span>
-    * <span data-ttu-id="028bb-131">For eksempel: -##</span><span class="sxs-lookup"><span data-stu-id="028bb-131">For example: -##</span></span>  
+## <a name="define-the-location-name-format"></a><span data-ttu-id="0c2bb-115">Definer formatet for navnet på lokaliteten</span><span class="sxs-lookup"><span data-stu-id="0c2bb-115">Define the location name format</span></span>
+1. <span data-ttu-id="0c2bb-116">I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Lageropdeling > Lagersteder**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-116">In the navigation pane, go to **Modules > Inventory management > Setup > Inventory breakdown > Warehouses**.</span></span>
+2. <span data-ttu-id="0c2bb-117">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-117">Select **New**.</span></span>
+3. <span data-ttu-id="0c2bb-118">Skriv en værdi i feltet **Lagersted**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-118">In the **Warehouse** field, type a value.</span></span>
+4. <span data-ttu-id="0c2bb-119">Skriv en værdi i feltet **Navn**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-119">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="0c2bb-120">Vælg den ønskede post i opslaget til feltet **Sted**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-120">In the **Site** field, select the desired record in the lookup.</span></span>
+6. <span data-ttu-id="0c2bb-121">Slå udvidelsen af sektionen **Lokationsnavne** til/fra.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-121">Toggle the expansion of the **Location names** section.</span></span> <span data-ttu-id="0c2bb-122">Indstillingerne i denne sektion definerer standardformatet for navne på lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-122">The options in this section define the default format for location names.</span></span> <span data-ttu-id="0c2bb-123">I vores eksempel medtager vi gangnummer, reolnummer og hyldenummer.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-123">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
+7. <span data-ttu-id="0c2bb-124">Angiv indstillingen **Medtag gang** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-124">Set the **Include aisle** option to **Yes**.</span></span>
+8. <span data-ttu-id="0c2bb-125">Angiv indstillingen **Medtag reol** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-125">Set the **Include rack** option to **Yes**.</span></span> 
+9. <span data-ttu-id="0c2bb-126">Angiv en værdi for reolen i feltet **Format**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-126">In the **Format** field, for the rack, type a value.</span></span>
+10. <span data-ttu-id="0c2bb-127">Angiv indstillingen **Medtag hylde** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-127">Set the **Include shelf** option to **Yes**.</span></span>
+11. <span data-ttu-id="0c2bb-128">Angiv en værdi for hylden i feltet **Format**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-128">In the **Format** field, for the shelf, type a value.</span></span>
 
-## <a name="define-warehouse-locations"></a><span data-ttu-id="028bb-132">Definer lagerstedslokationer</span><span class="sxs-lookup"><span data-stu-id="028bb-132">Define warehouse locations</span></span>
-1. <span data-ttu-id="028bb-133">Klik på Lagersted i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="028bb-133">On the Action Pane, click Warehouse.</span></span>
-2. <span data-ttu-id="028bb-134">Klik på Guiden Lokation.</span><span class="sxs-lookup"><span data-stu-id="028bb-134">Click Location Wizard.</span></span>
-3. <span data-ttu-id="028bb-135">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-135">Click Next.</span></span>
-4. <span data-ttu-id="028bb-136">Fjern markeringen af indstillingen Forsendelsesområder</span><span class="sxs-lookup"><span data-stu-id="028bb-136">De-select the Outbound docks option</span></span>
-5. <span data-ttu-id="028bb-137">Fjern markeringen af indstillingen Bulkvarelokationer</span><span class="sxs-lookup"><span data-stu-id="028bb-137">De-select the Bulk locations option</span></span>
-6. <span data-ttu-id="028bb-138">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-138">Click Next.</span></span>
-7. <span data-ttu-id="028bb-139">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-139">Click Next.</span></span>
-8. <span data-ttu-id="028bb-140">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-140">Click Next.</span></span>
-9. <span data-ttu-id="028bb-141">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-141">Click Next.</span></span>
-10. <span data-ttu-id="028bb-142">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-142">Click Next.</span></span>
-11. <span data-ttu-id="028bb-143">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-143">Click Next.</span></span>
-12. <span data-ttu-id="028bb-144">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-144">Click Next.</span></span>
-    * <span data-ttu-id="028bb-145">Bemærk, at de fysiske dimensioner, der vises på denne side, er dem, du har angivet i starten af denne procedure.</span><span class="sxs-lookup"><span data-stu-id="028bb-145">Note that the physical dimensions shown on this page are the ones that you set at the start of this procedure.</span></span>  
-13. <span data-ttu-id="028bb-146">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="028bb-146">Click Next.</span></span>
-14. <span data-ttu-id="028bb-147">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="028bb-147">Click Finish.</span></span>
-15. <span data-ttu-id="028bb-148">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="028bb-148">Close the page.</span></span>
-16. <span data-ttu-id="028bb-149">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="028bb-149">Refresh the page.</span></span>
+## <a name="define-warehouse-locations"></a><span data-ttu-id="0c2bb-129">Definer lagerstedslokationer</span><span class="sxs-lookup"><span data-stu-id="0c2bb-129">Define warehouse locations</span></span>
+1. <span data-ttu-id="0c2bb-130">Vælg **Lagersted** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-130">On the Action Pane, select **Warehouse**.</span></span>
+2. <span data-ttu-id="0c2bb-131">Vælg **Guiden Lokation**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-131">Select **Location Wizard**.</span></span>
+3. <span data-ttu-id="0c2bb-132">Vælg **Næste**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-132">Select **Next**.</span></span>
+4. <span data-ttu-id="0c2bb-133">Fjern markeringen af indstillingen **Forsendelsesområder**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-133">De-select the **Outbound docks** option</span></span>
+5. <span data-ttu-id="0c2bb-134">Fjern markeringen af indstillingen **Bulkvarelokationer**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-134">De-select the **Bulk locations** option</span></span>
+6. <span data-ttu-id="0c2bb-135">Vælg **Næste**, indtil du kan vælge **Udfør**.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-135">Select **Next** until you come to the option to select **Finish**.</span></span>
+7. <span data-ttu-id="0c2bb-136">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-136">Close the page.</span></span>
+8. <span data-ttu-id="0c2bb-137">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="0c2bb-137">Refresh the page.</span></span>
 

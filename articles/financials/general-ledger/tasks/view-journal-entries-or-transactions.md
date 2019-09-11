@@ -3,7 +3,7 @@ title: Se kladdeposter eller -posteringer
 description: Denne procedure viser, hvordan du kan bruge forespørgsler på bilagstransaktioner til at søge efter kladdeposteringer eller transaktioner.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,32 +16,30 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c93b581e22665b27c1b99503cc91c20ead14ac81
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8c72ea9b7b706e1dbd8e4261534f098589535886
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834678"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916178"
 ---
-# <a name="view-journal-entries-or-transactions"></a><span data-ttu-id="8fbae-103">Se kladdeposter eller -posteringer</span><span class="sxs-lookup"><span data-stu-id="8fbae-103">View journal entries or transactions</span></span>
+# <a name="view-journal-entries-or-transactions"></a><span data-ttu-id="f4eff-103">Se kladdeposter eller -posteringer</span><span class="sxs-lookup"><span data-stu-id="f4eff-103">View journal entries or transactions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8fbae-104">Denne procedure viser, hvordan du kan bruge forespørgsler på bilagstransaktioner til at søge efter kladdeposteringer eller transaktioner.</span><span class="sxs-lookup"><span data-stu-id="8fbae-104">This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions.</span></span>
+<span data-ttu-id="f4eff-104">Denne procedure viser, hvordan du kan bruge forespørgsler på bilagstransaktioner til at søge efter kladdeposteringer eller transaktioner.</span><span class="sxs-lookup"><span data-stu-id="f4eff-104">This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions.</span></span>
 
-1. <span data-ttu-id="8fbae-105">Gå til Finans > Forespørgsler og rapporter > Bilagstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="8fbae-105">Go to General ledger > Inquiries and reports > Voucher transactions.</span></span>
-2. <span data-ttu-id="8fbae-106">Vælg det felt, som du vil definere filtreringskriterier for.</span><span class="sxs-lookup"><span data-stu-id="8fbae-106">Select the field for which you want to define a filter criteria.</span></span>
-3. <span data-ttu-id="8fbae-107">Angiv dine filtreringskriterier for det markerede felt.</span><span class="sxs-lookup"><span data-stu-id="8fbae-107">Enter your filter critieria for the selected field.</span></span>
-    * <span data-ttu-id="8fbae-108">Du kan filtrere på en enkelt værdi eller et område.</span><span class="sxs-lookup"><span data-stu-id="8fbae-108">You could filter on a single value or a range.</span></span> <span data-ttu-id="8fbae-109">Kontrollér, at den korrekte syntaks bruges, når du definerer et område.</span><span class="sxs-lookup"><span data-stu-id="8fbae-109">When defining a range, make sure the correct syntax is used.</span></span> <span data-ttu-id="8fbae-110">Værdierne skal adskilles af en dobbelt punktum (..).</span><span class="sxs-lookup"><span data-stu-id="8fbae-110">The values should be separated by a double period (..).</span></span>  
-4. <span data-ttu-id="8fbae-111">Klik på fanen Joinforbindelser for at tilføje flere tabeller, som skal filtreres.</span><span class="sxs-lookup"><span data-stu-id="8fbae-111">Click the Joins tab to add additional tables from which to filter.</span></span>
-5. <span data-ttu-id="8fbae-112">Vælg 'Tabeller\Finanskladdepostering' i træet.</span><span class="sxs-lookup"><span data-stu-id="8fbae-112">In the tree, select 'Tables\General journal entry'.</span></span>
-6. <span data-ttu-id="8fbae-113">Klik på Tilføj tabeljoin.</span><span class="sxs-lookup"><span data-stu-id="8fbae-113">Click Add table join.</span></span>
-7. <span data-ttu-id="8fbae-114">Klik på Annuller, hvis du beslutter, at du ikke vil tilføje en ekstra tabel.</span><span class="sxs-lookup"><span data-stu-id="8fbae-114">Click Cancel if you decide not to add an additional table.</span></span>
-8. <span data-ttu-id="8fbae-115">Klik på fanen Område.</span><span class="sxs-lookup"><span data-stu-id="8fbae-115">Click the Range tab.</span></span>
-9. <span data-ttu-id="8fbae-116">Kør forespørgslen ved at klikke på OK.</span><span class="sxs-lookup"><span data-stu-id="8fbae-116">Click OK to run the query.</span></span>
-10. <span data-ttu-id="8fbae-117">Klik på Transaktionsoprindelse.</span><span class="sxs-lookup"><span data-stu-id="8fbae-117">Click Transaction origin.</span></span>
-    * <span data-ttu-id="8fbae-118">Forskellige knapper om gitteret kan bruges til at undersøge flere oplysninger om den valgte post i bilaget.</span><span class="sxs-lookup"><span data-stu-id="8fbae-118">Various buttons about the grid can be used to research additional information about the selected record of the voucher.</span></span> <span data-ttu-id="8fbae-119">Nogle af knapperne er muligvis ikke tilgængelige, afhængigt af posteringstypen og posteringens egenskaber.</span><span class="sxs-lookup"><span data-stu-id="8fbae-119">Some buttons may not be available, depending on the type of transaction and characteristics of the transaction.</span></span>  
-11. <span data-ttu-id="8fbae-120">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8fbae-120">Close the page.</span></span>
-12. <span data-ttu-id="8fbae-121">Klik på Originaldokument.</span><span class="sxs-lookup"><span data-stu-id="8fbae-121">Click Original document.</span></span>
-13. <span data-ttu-id="8fbae-122">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8fbae-122">Close the page.</span></span>
+1. <span data-ttu-id="f4eff-105">Gå til **Navigationsrude > Moduler > Finans > Forespørgsler og rapporter > Bilagstransaktioner**.</span><span class="sxs-lookup"><span data-stu-id="f4eff-105">Go to **Navigation pane > Modules > General ledger > Inquiries and reports > Voucher transactions**.</span></span>
+2. <span data-ttu-id="f4eff-106">Vælg det felt, som du vil definere filtreringskriterier for.</span><span class="sxs-lookup"><span data-stu-id="f4eff-106">Select the field for which you want to define a filter criteria.</span></span>
+3. <span data-ttu-id="f4eff-107">Angiv dine filtreringskriterier for det markerede felt.</span><span class="sxs-lookup"><span data-stu-id="f4eff-107">Enter your filter critieria for the selected field.</span></span> <span data-ttu-id="f4eff-108">Du kan filtrere på en enkelt værdi eller et område.</span><span class="sxs-lookup"><span data-stu-id="f4eff-108">You could filter on a single value or a range.</span></span> <span data-ttu-id="f4eff-109">Kontrollér, at den korrekte syntaks bruges, når du definerer et område.</span><span class="sxs-lookup"><span data-stu-id="f4eff-109">When defining a range, make sure the correct syntax is used.</span></span> <span data-ttu-id="f4eff-110">Værdierne skal adskilles af en dobbelt punktum (..).</span><span class="sxs-lookup"><span data-stu-id="f4eff-110">The values should be separated by a double period (..).</span></span>  
+4. <span data-ttu-id="f4eff-111">Klik på fanen **Joinforbindelser** for at tilføje flere tabeller, som skal filtreres.</span><span class="sxs-lookup"><span data-stu-id="f4eff-111">Click the **Joins** tab to add additional tables from which to filter.</span></span>
+5. <span data-ttu-id="f4eff-112">Vælg **Tabeller/Finanskladdepostering** i træet.</span><span class="sxs-lookup"><span data-stu-id="f4eff-112">In the tree, select **Tables/General journal entry**.</span></span>
+6. <span data-ttu-id="f4eff-113">Klik på **Tilføj tabeljoin**.</span><span class="sxs-lookup"><span data-stu-id="f4eff-113">Click **Add table join**.</span></span>
+7. <span data-ttu-id="f4eff-114">Klik på **Annuller**, hvis du beslutter, at du ikke vil tilføje en ekstra tabel.</span><span class="sxs-lookup"><span data-stu-id="f4eff-114">Click **Cancel** if you decide not to add an additional table.</span></span>
+8. <span data-ttu-id="f4eff-115">Klik på fanen **Område**.</span><span class="sxs-lookup"><span data-stu-id="f4eff-115">Click the **Range** tab.</span></span>
+9. <span data-ttu-id="f4eff-116">Kør forespørgslen ved at klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="f4eff-116">Click **OK** to run the query.</span></span>
+10. <span data-ttu-id="f4eff-117">Klik på **Posteringsgrundlag** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="f4eff-117">On the Action pane, click **Transaction origin**.</span></span> <span data-ttu-id="f4eff-118">Forskellige knapper om gitteret kan bruges til at undersøge flere oplysninger om den valgte post i bilaget.</span><span class="sxs-lookup"><span data-stu-id="f4eff-118">Various buttons about the grid can be used to research additional information about the selected record of the voucher.</span></span> <span data-ttu-id="f4eff-119">Nogle af knapperne er muligvis ikke tilgængelige, afhængigt af posteringstypen og posteringens egenskaber.</span><span class="sxs-lookup"><span data-stu-id="f4eff-119">Some buttons may not be available, depending on the type of transaction and characteristics of the transaction.</span></span>
+11. <span data-ttu-id="f4eff-120">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f4eff-120">Close the page.</span></span>
+12. <span data-ttu-id="f4eff-121">Klik på **Originaldokument** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="f4eff-121">On the Action pane, Click **Original document**.</span></span>
+13. <span data-ttu-id="f4eff-122">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f4eff-122">Close the page.</span></span>
 
