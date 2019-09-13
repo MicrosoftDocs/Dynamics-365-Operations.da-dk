@@ -3,7 +3,7 @@ title: Opret en driftsenhed
 description: En driftsenhed er en organisation, der bruges til at opdele administrationen af økonomiske ressourcer og driftsprocesser i et firma.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef03329cfe477256cfbe1dde1dc18df52137286f
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755563"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874897"
 ---
 # <a name="create-an-operating-unit"></a>Opret en driftsenhed
 
@@ -40,5 +40,5 @@ En driftsenhed er en organisation, der bruges til at opdele administrationen af 
     + Angiv adresseoplysninger, som f.eks. gadenavn og husnummer, postnummer og by. Klik på **Tilføj** for at angive en ny adressepost, eller klik på Rediger for at ændre en eksisterende adressepost.   
     + Udvid sektionen **Kontaktoplysninger**, hvis det er nødvendigt.  
     + Angiv oplysninger om kommunikationsmåder, som f.eks. e-mail-adresser, URL-adresser og telefonnumre. Klik på Ny for at angive en ny kommunikationspost. Klik på **Flere indstillinger > Avanceret** for at ændre en eksisterende kommunikationspost.   
-6. Klik på **Gem**.
-
+6. Du kan evt. ændre **Driftsenhedsnummer**, hvis det er nødvendigt. Bemærk, at dette tal er en entydig idenitifikator for den tilsvarende **Part**-post og må ikke være det samme som en anden driftsenhed.
+7. Vælg **Gem**.

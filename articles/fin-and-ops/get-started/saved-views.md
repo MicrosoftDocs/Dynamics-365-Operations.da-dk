@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 43f25796e6271f14acfc72f931398ab63338a307
+ms.sourcegitcommit: b068b17ef708a0b349db8df1542e4244bb983d13
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863054"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870827"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -153,11 +153,13 @@ Hvis du vil aktivere gemte visninger, mens funktionen er i eksempelvisning, skal
 
 1.  **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
 
-2.  **Find funktionen**: Naviger til arbejdsområdet **Funktionsstyring**. Hvis **Gemte visninger** ikke fremgår af listen, skal du vælge knappen **Søg efter opdateringer**.   
+2. **Nulstil IIS** for at rydde den statiske flighting-cache. 
 
-3.  **Aktivér funktionen**: Find funktionen **Gemte visninger** på listen over funktioner, og klik på knappen **Aktivér nu** i detaljeruden.
+3.  **Find funktionen**: Gå til arbejdsområdet **Funktionsstyring**. Hvis **Gemte visninger** ikke fremgår af listen, skal du vælge **Søg efter opdateringer**.   
+
+4.  **Aktivér funktionen**: Find funktionen **Gemte visninger** på listen over funktioner, og vælg **Aktivér nu** i detaljeruden.
 
 Alle efterfølgende brugersessioner vil starte med gemte visninger aktiveret.  
 

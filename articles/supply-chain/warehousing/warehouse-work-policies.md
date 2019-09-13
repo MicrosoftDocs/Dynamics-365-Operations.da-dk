@@ -1,9 +1,9 @@
 ---
-title: Politikker for lagerstedsarbejde
+title: Oversigt over politikker for lagerstedsarbejde
 description: Lagerstedets arbejdspolitikker kontrollerer, om lagerstedsarbejde er oprettet af lagerprocesser i produktion, ud fra arbejdsordretype, lagerlokation og produkt.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567026"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865106"
 ---
-# <a name="warehouse-work-policies"></a>Politikker for lagerstedsarbejde
+# <a name="warehouse-work-policies-overview"></a>Oversigt over politikker for lagerstedsarbejde
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ Lagerstedets arbejdspolitikker i Microsoft Dynamics 365 for Finance and Operatio
 
 Denne arbejdspolitik kontrollerer, om lagerstedets arbejde er oprettet for lagerprocesser i produktion. Du kan angive arbejdspolitikken ved hjælp af en kombination af **arbejdsordretyper**, en **lagerlokation** og et **produkt**. Produkt L0101 rapporteres f.eks. som afsluttet til outputlokalitet 001. Den færdige vare forbruges senere i en anden produktionsordre på outputlokalitet 001. I dette tilfælde kan du oprette en arbejdspolitik for at forhindre, at der oprettes arbejde for færdige varer, når du rapporterer produkt L0101 færdig til outputlokalitet 001. Arbejdspolitikken er en enkelt enhed, der kan beskrives med følgende oplysninger:
 
--   **Navn på arbejdspolitik**(den entydige identifikator for arbejdspolitikken)
+-   **Navn på arbejdspolitik** (den entydige identifikator for arbejdspolitikken)
 -   **Arbejdsordretyper** og **Metode til oprettelse af arbejde**
 -   **Lagerlokationer**
 -   **Produkter**

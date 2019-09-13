@@ -1,6 +1,6 @@
 ---
 title: Oprette en rekvisition, der bruger en tilbudsanmodning
-description: Denne vejledning viser, hvordan du føjer pris- og leverandøroplysninger til en indkøbsrekvisition fra en tilbudsanmodningsproces.
+description: Dette emne forklarer, hvordan du føjer pris- og leverandøroplysninger til en indkøbsrekvisition fra en tilbudsanmodningsproces.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,91 +16,86 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9d80f84c148ff26bf008a97b06098bfd18c9062d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4429bda6efddbb4f1fa7da06e91e51d885919c05
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844147"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914948"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Oprette en rekvisition, der bruger en tilbudsanmodning
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne vejledning viser, hvordan du føjer pris- og leverandøroplysninger til en indkøbsrekvisition fra en tilbudsanmodningsproces. Eksemplet i denne vejledning kan bruges i USMF-demodatafirmaet, og du skal være logget på som administrator for at fuldføre alle trin. Opgaverne i denne vejledning udføres normalt af indkøbsmedarbejderne.
+Dette emne forklarer, hvordan du føjer pris- og leverandøroplysninger til en indkøbsrekvisition fra en tilbudsanmodningsproces. Eksemplet i denne vejledning kan bruges i USMF-demodatafirmaet, og du skal være logget på som administrator for at fuldføre alle trin. Opgaverne i denne vejledning udføres normalt af indkøbsmedarbejderne.
 
 
 ## <a name="create-a-requisition"></a>Opret en rekvisition
-1. Gå til Indkøb og Forsyning > Indkøbsrekvisitioner > Indkøbsrekvisitioner, der er udarbejdet af mig.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Angiv en dato i feltet Ønsket dato.
-5. Angiv en dato i datofeltet Regnskab.
-6. Klik på OK.
-7. Indtast eller vælg en værdi i feltet Årsag.
-8. Klik på Tilføj linje.
-9. Vælg en kategori i træet i feltet Indkøbskategori, og klik derefter på OK.
-10. Skriv en værdi i feltet Produktnavn.
-11. Angiv et tal i feltet Antal.
-12. Indtast eller vælg en værdi i feltet Enhed.
-13. Klik på Gem.
-14. Klik på Arbejdsgang for at åbne dialogboksen.
-15. Klik på Send.
+1. Gå i navigationsruden til **Moduler > Indkøb og forsyning > Indkøbsrekvisitioner > Indkøbsrekvisitioner, der er udarbejdet af mig**.
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Navn**.
+4. Angiv en dato i feltet **Ønsket dato**.
+5. Angiv en dato i feltet **Regnskabsdato**.
+6. Vælg **OK**.
+7. Indtast eller vælg en værdi i feltet **Årsag**.
+8. Vælg **Tilføj linje**.
+9. Vælg en kategori i træet i feltet **Indkøbskategori**, og vælg derefter **OK**.
+10. Skriv en værdi i feltet **Produktnavn**.
+11. Angiv et tal i feltet **Antal**.
+12. Indtast eller vælg en værdi i feltet **Enhed**.
+13. Vælg **Gem**.
+14. Vælg **Arbejdsgang** for at åbne dialogboksen.
+15. Vælg **Send**.
 16. Luk siden.
-17. Klik på Send.
+17. Vælg **Send**.
 
 ## <a name="reassign-a-workflow-task"></a>Tildel en opgave i en arbejdsgang til en anden
-    * Den næste opgave er at oprette en tilbudsanmodning for at få tilbud på produktet fra leverandører. I demodataene for USMF er arbejdsgangen for indkøbsrekvisitionen konfigureret med en regel, at hvis en leverandør ikke er markeret, eller hvis prisen er 0 for en linje, tildeles der en opgave til en bestemt arbejder om at oprette en tilbudsanmodning. For at fortsætte med denne vejledning skal du gentildele opgaven til en anden bruger (dig selv). Det kan du kun gøre, hvis du er logget på som administrator.  
-1. Klik på Arbejdsgang for at åbne dialogboksen.
-2. Klik på Vis historik.
+Den næste opgave er at oprette en tilbudsanmodning for at få tilbud på produktet fra leverandører. I demodataene for USMF er arbejdsgangen for indkøbsrekvisitionen konfigureret med en regel, at hvis en leverandør ikke er markeret, eller hvis prisen er 0 for en linje, tildeles der en opgave til en bestemt arbejder om at oprette en tilbudsanmodning. For at fortsætte med denne vejledning skal du gentildele opgaven til en anden bruger (dig selv). Det kan du kun gøre, hvis du er logget på som administrator.  
+
+1. Vælg **Arbejdsgang** for at åbne dialogboksen.
+2. Vælg **Vis historik**.
 3. Opdater siden.
-4. Udvid sektionen Sporingsdetaljer.
-5. Vælg 'den linje, der starter med "Arbejdsgang for linjeelement aktiveret den"' i træet.
-6. Klik på Vis detaljer for arbejdsgang.
-7. Udvid sektionen Workflowopgaver.
-8. Klik på Tildel igen.
-9. Vælg Administrator i feltet Bruger.
-10. Klik på Tildel igen.
-11. Luk siden.
-12. Luk siden.
+4. Udvid sektionen **Sporingsdetaljer**.
+5. Vælg den linje, der starter med "Arbejdsgang for linjeelement aktiveret den" i træet.
+6. Vælg **Vis detaljer for arbejdsgang**.
+7. Udvid sektionen **Workflowopgaver**.
+8. Vælg **Tildel igen**.
+9. Vælg **Administrator** i feltet **Bruger**.
+10. Vælg **Tildel igen**.
+11. Luk de to sider.
 
 ## <a name="create-an-rfq"></a>Opret en tilbudsanmodning
+
 1. Opdater siden.
-2. Klik på Tilbudsanmodning.
-3. Derefter skal du vælge USMF i feltet Juridisk indkøbsenhed.
-    * Du skal vælge den samme juridiske enhed som den, der er på rekvisitionslinjen.  
-4. Markér den valgte række på listen.
-    * Hvis du havde flere linjer på indkøbsrekvisitionen, kan du vælge alle de linjer, du vil føje til tilbudsanmodningen.  
-5. Klik på OK.
+2. Vælg **Tilbudsanmodning**.
+3. Vælg **USMF** i feltet **Juridisk indkøbsenhed**. Du skal vælge den samme juridiske enhed som den, der er på rekvisitionslinjen.  
+4. Markér den valgte række på listen. Hvis du havde flere linjer på indkøbsrekvisitionen, kan du vælge alle de linjer, du vil føje til tilbudsanmodningen.  
+5. Vælg **OK**.
 6. Opdater siden.
-7. Åbn faktaboksen, og udvid derefter sektionen Relaterede dokumenter.
-    * Du har måske allerede åbnet faktaboksen. Se efter ikonet med en pil, til højre for til/fra-knapperne Linjer/Sidehoved. Hvis pilen peger mod højre, er faktaboksen allerede åben. Hvis pilen peger mod venstre, skal du klikke på den for at åbne faktaboksen.  
-8. Klik på linket i feltet Tilbudsanmodning for at åbne den tilbudsanmodning, der netop er blevet oprettet.
-9. Klik på Overskrift.
-10. Klik på Tilføj.
-11. Indtast eller vælg en værdi i feltet Kreditorkonto.
-12. Klik på Tilføj.
-13. Indtast eller vælg en værdi i feltet Kreditorkonto.
-14. Klik på Send.
-15. Klik på OK.
-16. Klik på Indtast svar.
-17. Klik på Svar i handlingsruden.
-18. Klik på Kopiér data til svar.
-    * Derved kopieres data, f.eks. antal og datoer, fra tilbudsanmodningen til svaret.  
-19. Angiv et tal i feltet Enhedspris.
-    * Det er den pris, du har modtaget fra leverandøren. Du kan også angive yderligere oplysninger fra leverandøren.  
-20. Klik på Acceptér.
-21. Klik på OK.
+7. Åbn faktaboksen, og udvid derefter sektionen **Relaterede dokumenter**.
+8. Vælg linket i feltet **Tilbudsanmodning** for at åbne den tilbudsanmodning, der netop er blevet oprettet.
+9. Vælg **Hoved**.
+10. Vælg **Tilføj**.
+11. Indtast eller vælg en værdi i feltet **Kreditorkonto**.
+12. Vælg **Tilføj**.
+13. Indtast eller vælg en værdi i feltet **Kreditorkonto**.
+14. Vælg **Send**.
+15. Vælg **OK**.
+16. Vælg **Indtast svar**.
+17. Vælg **Svar** i handlingsruden.
+18. Vælg **Kopiér data til svar**. Derved kopieres data, f.eks. antal og datoer, fra tilbudsanmodningen til svaret.  
+19. Angiv et tal i feltet **Enhedspris**. Det er den pris, du har modtaget fra leverandøren. Du kan også angive yderligere oplysninger fra leverandøren.  
+20. Vælg **Accepter**.
+21. Vælg **OK**.
 
 ## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a>Kontrollér, at leverandøren og prisen er blevet overført til rekvisitionen
 1. Luk siden.
-2. Klik på Linjer.
-3. Klik på Relaterede oplysninger.
-4. Klik på Indkøbsrekvisitionslinjer.
-5. Vælg den linje, der blev overført til tilbudsanmodningen.
-    * Kontrollér, at prisen og leverandøren er blevet kopieret til rekvisitionen.  
-6. Klik på Arbejdsgang for at åbne dialogboksen.
-7. Klik på Fuldført.
-8. Luk siden.
-9. Klik på Fuldført.
+2. Vælg **Linjer**.
+3. Vælg **Relaterede oplysninger**.
+4. Vælg **Indkøbsrekvisition**.
+5. Vælg den linje, der blev overført til tilbudsanmodningen. Kontrollér, at prisen og leverandøren er blevet kopieret til rekvisitionen.  
+6. Vælg **Arbejdsgang** for at åbne dialogboksen.
+7. Vælg Fuldfør.
+8. Vælg siden.
+9. Vælg Fuldfør.
 

@@ -3,7 +3,7 @@ title: Oversigt over funktionsstyring
 description: Dette emne beskriver funktionen Administration af funktioner, og hvordan du kan bruge den.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862932"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887105"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -103,8 +103,9 @@ Alle funktioner, der kan aktiveres, vil blive aktiveret. Hvis en funktion allere
 
 Alle de funktioner, der føjes til dit miljø, er som standard slået fra, medmindre de er obligatoriske funktioner. Men hvis du automatisk vil aktivere alle nye funktioner, kan du bruge rullelisten under titlen på arbejdsområdet til at ændre, hvad der sker, når der tilføjes nye funktioner.
 
-- Vælg **Alle nye funktioner aktiveres som standard**, så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
-- Vælg **Alle nye funktioner deaktiveres som standard**, så alle nye funktioner automatisk deaktiveres, når de føjes til miljøet.
+- Vælg **Aktivér nye funktioner automatisk**, så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
+- Vælg **Aktivér ikke nye funktioner automatisk**, så alle nye funktioner som standard er slået fra, når de føjes til miljøet.
+
 
 Når du aktiverer alle funktionerne automatisk, aktiveres alle de funktioner, der vil blive aktiveret, når du klikker på knappen **Aktivér alle**. Det vil ikke aktivere de funktioner, der kræver bekræftelse, eller de funktioner, der ikke kan aktiveres, før en handling er udført.
 

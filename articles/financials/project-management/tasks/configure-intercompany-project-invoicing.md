@@ -1,9 +1,9 @@
 ---
 title: Konfigurere intern projektfakturering
-description: Denne procedure viser, hvordan du opsætter projektfakturering mellem to firmaer i organisationen.
+description: Dette emne viser, hvordan du opsætter projektfakturering mellem to firmaer i organisationen.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,54 +17,50 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 53871db9223eef6ba78f2e327e60f45110891478
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c89b17c09a4f145b5a4ca9cdd127b4e635447d4b
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838265"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867313"
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konfigurere intern projektfakturering
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opsætter projektfakturering mellem to firmaer i organisationen. Denne opgave bruger USSI-datasættet.
+Dette emne viser, hvordan du opsætter projektfakturering mellem to firmaer i organisationen. Denne opgave bruger USSI-datasættet.
 
-1. Gå til Kreditor > Kreditorer > Alle kreditorer.
-2. Find og vælg den ønskede post på listen.
-3. Klik på Generelt i handlingsruden.
-4. Klik på Intern.
-5. Indstil Aktiv til Ja for at aktivere intern handel.
-6. Indtast eller vælg en værdi i feltet Kundens firma.
-7. Indtast eller vælg en værdi i feltet Min konto.
-8. Klik på Gem.
-9. Luk siden.
-10. Luk siden.
-11. Gå til Projektstyring og regnskab > Opsætning > Parametre for projektstyring og regnskab.
-12. Klik på fanen Intern.
-13. Flyt glideren til Ja for at aktivere intern ressourceplanlægning og timesedler.
-14. Markér den valgte række på listen.
-15. Klik på Ny.
-16. Markér den valgte række på listen.
-17. Indtast eller vælg en værdi i feltet Udlånt til (juridisk enhed).
-18. Marker afkrydsningsfeltet Periodiser omsætning.
-19. Indtast eller vælg en værdi i feltet Standardtimeseddelkategori.
-20. Indtast eller vælg en værdi i feltet Standardudgiftskategori.
-21. Klik på Gem.
-22. Luk siden.
-23. Gå til Projektstyring og regnskab > Opsætning > Bogføring > Opsætning af finanskontering.
-24. Vælg en indstilling i feltet Finanskontotyper.
-25. Klik på Ny.
-26. Markér den valgte række på listen.
-27. Markér den valgte række på listen.
-28. Angive de ønskede værdier i feltet Hovedkonto.
-29. Klik på Gem.
-30. Luk siden.
-31. Gå til Projektstyring og regnskab > Opsætning > Priser > Overfør pris.
-32. Klik på Ny.
-33. Angiv en dato i feltet Ikrafttrædelsesdato.
-34. Indtast eller vælg en værdi i feltet Udlånt til (juridisk enhed).
-35. Vælg en indstilling i feltet Overfør prismodel.
-36. Angiv et tal i feltet Prissætning.
-37. Klik på Gem.
+1. Gå i navigationsruden til **Moduler > Kreditor > Kreditorer > Alle kreditorer**.
+2. Find og vælg den ønskede post på listen **Alle kreditorer**.
+3. Vælg **Generelt** i handlingsruden.
+4. Vælg **Intern handel**.
+5. Indstil **Aktiv** til **Ja** for at aktivere intern handel.
+6. Indtast eller vælg en værdi i feltet **Kundens firma**.
+7. Indtast eller vælg en værdi i feltet **Min konto**.
+8. Vælg **Gem**.
+9. Luk siderne for at vende tilbage til startsiden.
+10. Gå i navigationsruden til **Moduler > Projektstyring og regnskab > Opsætning > Parametre for projektstyring og regnskab**.
+11. Vælg fanen **Intern handel**.
+12. Flyt skyderen til **Ja** for at aktivere intern ressourceplanlægning og timesedler.
+13. Markér den valgte række på listen.
+14. Vælg **Ny**.
+15. Indtast eller vælg en værdi i feltet **Udlånt til (juridisk enhed)**.
+16. Markér afkrydsningsfeltet **Periodiser omsætning**.
+17. Indtast eller vælg en værdi i feltet **Standardtimeseddelkategori**.
+18. Indtast eller vælg en værdi i feltet **Standardudgiftskategori**.
+19. Vælg **Gem**.
+20. Luk siden.
+21. Gå i navigationsruden til **Moduler > Projektstyring og regnskab > Opsætning > Postering > Opsætning af finanskontering**.
+22. Vælg en indstilling i feltet **Finanskontotyper**.
+23. Vælg **Ny**.
+24. Angiv de ønskede værdier i feltet **Hovedkonto** for den nye række.
+25. Vælg **Gem**.
+26. Luk siden.
+27. Gå i navigationsruden til **Moduler > Projektstyring og regnskab > Opsætning > Priser > Overfør pris**.
+28. Vælg **Ny**.
+29. Angiv en dato i feltet **Ikrafttrædelsesdato**.
+30. Indtast eller vælg en værdi i feltet **Udlånt til (juridisk enhed)**.
+31. Vælg en indstilling i feltet **Overfør prismodel**.
+32. Angiv et tal i feltet **Prissætning**.
+33. Vælg **Gem**.
 

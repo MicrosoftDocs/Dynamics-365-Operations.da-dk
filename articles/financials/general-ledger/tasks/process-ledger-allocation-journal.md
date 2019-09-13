@@ -1,9 +1,9 @@
 ---
 title: Behandle finansfordelingskladde
-description: Brug siden Udfør fordelingsanmodning til at oprette en fordelingskladde, der kan gennemses og godkendes før postering i Finans, eller bogføres direkte i Finans.
+description: I dette emne beskrives, hvordan du behandler en fordelingsanmodning i Dynamics 365 for Finance and Operations.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,31 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 087bd4f203e8762447e823b19076b79296a390d6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0798d9f1c09e827bf64635cf67102f77244948c5
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846361"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867433"
 ---
 # <a name="process-ledger-allocation-journal"></a>Behandle finansfordelingskladde
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Brug siden Udfør fordelingsanmodning til at oprette en fordelingskladde, der kan gennemses og godkendes før postering i Finans, eller bogføres direkte i Finans. Før du kan oprette en fordelingskladde, skal der være mindst én aktiv finansfordelingsregel. Denne opgave bruger demofirmaet USMF.
+I dette emne beskrives, hvordan du behandler en fordelingsanmodning i Dynamics 365 for Finance and Operations. Brug siden Udfør fordelingsanmodning til at oprette en fordelingskladde, der kan gennemses og godkendes før postering i Finans, eller bogføres direkte i Finans. Før du kan oprette en fordelingskladde, skal der være mindst én aktiv finansfordelingsregel. Denne opgave bruger demofirmaet USMF.
 
-1. Gå til Finans > Fordelinger > Udfør fordelingsanmodning.
-2. Klik på rullelisten i feltet Regel for at åbne opslaget.
-3. Find og vælg den ønskede post på listen.
-4. Klik op linket i den valgte række på listen.
-5. Angiv en dato i feltet Pr. dato.
-    * Fra-datoen er meget vigtig, hvis Finans er datakilden for reglen. Denne dato bestemmer, hvilke finanssaldi der skal medtages til fordeling.     Vælg Stop i Nul-kildefeltet. Derved standses fordelingsprocessen, og der vises en meddelelse, der angiver, at der er valgt et nul-kildebeløb.  
-6. Vælg "Kun forslag" i feltet Forslagsmuligheder.
-    * Vælg Kun forslag for at gennemgå og eventuelt godkende resultatet i Fordelingskladder før bogføring af fordelingen til Finans.  
-7. Angiv en dato i feltet Finansposteringsdato.
-8. Klik på OK.
-9. Gå til Finans > Fordelinger > Fordelingskladder.
-10. Klik på Linjer.
-11. Klik på Bogfør.
-12. Klik på Bogfør.
+1. Gå til **Moduler > Finans > Fordelinger > Udfør fordelingsanmodning** i navigationsruden.
+2. I feltet **Regel** skal du vælge den ønskede post i rullemenuen.
+3. Angiv en dato i feltet **Pr. dato**.
+
+    - **Pr. dato** er meget vigtig, når Finans er datakilden for reglen. Denne dato bestemmer, hvilke finanssaldi der skal medtages til fordeling.  
+    - Vælg **Stop** i **Nul-kilde**-feltet. Derved standses fordelingsprocessen, og der vises en meddelelse, der angiver, at der er valgt et nul-kildebeløb.  
+
+4. Vælg **Kun forslag** i feltet **Forslagsmuligheder**. Vælg **Kun forslag** for at gennemgå og eventuelt godkende resultatet i Fordelingskladder før bogføring af fordelingen til Finans.  
+5. Angiv en dato i feltet Finansposteringsdato.
+6. Vælg **OK**.
+7. Gå til **Moduler > Finans > Fordelinger > Fordelingskladder** i navigationsruden.
+8. Vælg **Linjer**.
+9. Vælg **Bogfør**.
+10. Vælg **Bogfør**.
 

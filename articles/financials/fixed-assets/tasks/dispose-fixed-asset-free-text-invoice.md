@@ -1,9 +1,9 @@
 ---
 title: Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
-description: Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden.
+description: I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,28 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26446df21a3b55abcdd5f163ae84f8e35d853965
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 179a6e45d57baf810068cb5c14aed670ebb94706
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846985"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914647"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakturaen.
+Dette emne viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakturaen.
 
-1. Gå til Debitor > Fakturaer > Alle fritekstfakturaer.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Kundekonto.
-4. Kontrollér standardfakturadatoen, og rediger den evt.
-5. Kontrollér resterende standardoverskriftsfelter som f.eks. Valuta, og rediger evt.
-6. Indtast en beskrivelse på fakturalinjen.
-7. Indtast eller vælg hovedkontoen til fakturalinjen.
-8. Kontrollér standardmomsgruppen og varemomsgruppen.
-9. Angiv enhedsprisen eller beløbet for salg af anlægsaktivet.
-10. Klik på Linjedetaljer.  
-11. Vælg anlægsaktivnummeret, der skal sælges.
-12. Klik på Bogfør.
+1. I navigationsruden skal du gå til **Moduler > Debitor > Fakturaer > Alle fritekstfakturaer**.
+2. Vælg **Ny**.
+3. Indtast eller vælg en værdi i feltet **Debitorkonto**.
+4. Kontrollér standarddatoen for **Faktura**, og rediger den efter behov.
+5. Kontrollér resterende standardoverskriftsfelter som f.eks. **Valuta**, og rediger efter behov.
+6. Kontrollér felterne **Beskrivelse** og **Hovedkonto** i afsnittet **Fakturalinjer**.
+7. Kontrollér standardværdien i felterne **Momsgruppe** og **Varemomsgruppe**.
+8. Angiv **Enhedspris** eller **Beløb** for salg af anlægsaktivet.
+9. Vælg sektionen **Linjedetaljer**.  
+10. Skriv eller vælg en værdi i feltet **Anlægsaktiv**.
+11. Vælg **Bogfør**. 
 

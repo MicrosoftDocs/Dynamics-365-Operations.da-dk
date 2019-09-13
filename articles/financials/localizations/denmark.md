@@ -1,9 +1,9 @@
 ---
-title: Danmark
+title: Oversigt for Danmark
 description: Dette emne indeholder links til Microsoft Dynamics 365 for Finance and Operations-dokumentationsressourcer for Danmark.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Denmark
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 57937a632145db8e28f9f5e7d4fd24a3718aae89
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 7fb30e11846a0de20fe6a649240185164ccc4bb1
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850711"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865711"
 ---
-# <a name="denmark"></a>Danmark 
+# <a name="denmark-overview"></a>Oversigt for Danmark
 
 [!include [banner](../includes/banner.md)]
 

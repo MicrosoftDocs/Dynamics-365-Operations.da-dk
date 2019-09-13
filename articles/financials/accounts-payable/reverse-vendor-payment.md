@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6587505fc5a729ffd82ab65aca7d5aa6ca4a265
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837246"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867744"
 ---
 # <a name="reverse-a-vendor-payment"></a>Tilbageføre en kreditorbetaling
 
@@ -48,7 +48,7 @@ Hvis du vil have mere at vide om, hvilken metode der bruges i din organisation, 
 Hvis din virksomhed ønsker at bogføre tilbageførsler af checks med det samme, når du klikker på **Annullering af checks** på siden **Checks**, skal du følge disse trin: På siden **Kontant- og bankstyringsparametre** skal du angive indstillingen **Brug evalueringsprocessen til annullering af checks** til **Nej**. På siden **Checks** kan du vælge den check, der skal tilbageføres, og vælge **Annullering af checks**. Du kan derefter angive datoen og vælge en årsag til tilbageførslen.
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>Tilbageføre bogførte checks, efter at de er blevet gennemgået i kladden til tilbageførsel af check
-Hvis din virksomhed ønsker at gennemgå tilbageførsel af checks, før de bogføres, kan du oprette en checktilbageførselskladde til gennemsyn og på siden **Kontant- og bankstyringsparametre** skal du angive indstillingen den **Brug evalueringsprocessen til annullering af checks** til **Ja**. På siden **Checks** kan du vælge den check, der skal tilbageføres, og vælge **Annullering af checks**. Du kan derefter angive datoen og vælge en årsag til tilbageførslen. Du skal også vælge et kladdenavn for at oprette en kladde i checktilbageførselskladden.
+Hvis din virksomhed ønsker at gennemgå tilbageførsel af checks, før de bogføres, kan du oprette en checktilbageførselskladde til gennemsyn og på siden **Kontant- og bankstyringsparametre** skal du angive indstillingen den **Brug evalueringsprocessen til annullering af checks** til **Ja**. På siden **Checks** kan du vælge den check, der skal tilbageføres, og vælge **Annullering af checks**. Du kan derefter angive datoen og vælge en årsag til tilbageførslen. Der skal oprettes en økonomisk årsag for både bank- og kreditortyper. Du skal også vælge et kladdenavn for at oprette en kladde i checktilbageførselskladden.
 
 ### <a name="review-a-reversal"></a>Evaluere en tilbageførsel
 

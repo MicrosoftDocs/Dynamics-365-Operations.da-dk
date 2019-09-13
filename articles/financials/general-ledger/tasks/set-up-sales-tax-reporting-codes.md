@@ -3,7 +3,7 @@ title: Konfigurer momsrapporteringskoder
 description: Momsrapporteringskoderne refererer til et feltnummer i en momsrapport.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 830a3465944b32cc17feee60e3cbc5ad0a4dc9d7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4751256858da417ec9bb1b7d9ccd16fb6bef1cac
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834767"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916085"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Konfigurer momsrapporteringskoder
 
@@ -31,14 +31,11 @@ Momsrapporteringskoderne refererer til et feltnummer i en momsrapport. De bruges
 
 Denne registrering anvender demofirmaet DEMF.
 
-
-
-1. Gå til Moms > Opsætning > Moms > Momsrapporteringskoder.
-2. Klik på Ny.
-3. Vælg det rapportlayout, som rapporteringskoden hører til.
-    * Dette layout bruges til at filtrere de tilgængelige rapporteringskoder til en momskode. Hver momskode tilhører en afregningsperiode, der tilhører en momsmyndighed som bruger et rapportlayout.  
-4. Angiv et feltnummer, som henviser til et felt i en momsrapport.
-5. Angiv en beskrivelse, der skal vises i rapporter, i feltet Rapport.
-6. Angiv en beskrivelse til interne formål i feltet Kort beskrivelse.
-7. Klik på Gem.
+1. Gå i **Navigationsrude** til **Moms > Opsætning > Moms > Momsrapporteringskoder**.
+2. Klik på **Ny**.
+3. Vælg det rapportlayout, som rapporteringskoden hører til. Dette layout bruges til at filtrere de tilgængelige rapporteringskoder til en momskode. Hver momskode tilhører en afregningsperiode, der tilhører en momsmyndighed som bruger et rapportlayout.  
+4. Angiv et tal i feltet **Rapporteringskode**.
+5. Angiv en beskrivelse, der skal vises i rapporter, i feltet **Rapporttekst**.
+6. Angiv en beskrivelse til interne formål i feltet **Kort beskrivelse**.
+7. Klik på **Gem**.
 

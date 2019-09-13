@@ -1,9 +1,9 @@
 ---
 title: Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje
-description: Denne opgaveguide viser, hvordan du kan bruge indgangsbogen til at oprette fakturaer.
+description: Dette emne beskriver, hvordan du kan bruge indgangsbogen til at oprette fakturaer.
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,66 +15,56 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b870613512a8f4a5c19a0a05cd72b35ea32861b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7d72c1d98100d1313109e8b5e55df02e2163174
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843208"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867696"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgaveguide viser, hvordan du kan bruge indgangsbogen til at oprette fakturaer.  Brug derefter fakturapuljen til at afstemme fakturaen med en indkøbsordre, og færdiggør udgiften på siden med kreditorfakturaer.
+Dette emne beskriver, hvordan du kan bruge indgangsbogen til at oprette fakturaer. Brug derefter fakturapuljen til at afstemme fakturaen med en indkøbsordre, og færdiggør udgiften på siden med kreditorfakturaer.
 
 
 ## <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
-1. Gå til Kreditor > Indkøbsordrer > Indkøbsordrer.
-2. Klik på Ny for at oprette en indkøbsordre.
-3. Klik på rullelisten i feltet Kreditorkonto for at åbne opslaget.
-4. Vælg kreditoren på listen. For eksempel kreditor 1001.
-5. Klik på OK.
-6. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
-7. Markér varenummeret for tjenester på listen. Vælg for eksempel S0001.
-8. Klik på varenummeret, og vælg det.
-    * Nettobeløbet er 75,00.  Det er det beløb, som vi forventer på fakturaen.  
-9. Klik på Køb i handlingsruden.
-10. Klik på Bekræft.
+1. I navigationsruden skal du gå til **Moduler > Kreditor > Indkøbsordrer > Indkøbsordrer**.
+2. Vælg **Ny** for at oprette en ny indkøbsordre.
+3. I feltet **Kreditorkonto** skal du vælge en kreditor på rullelisten. Vælg for eksempel kreditor **1001**.
+4. Vælg **OK**.
+5. Vælg servicevarenummeret på rullelisten i feltet **Varenummer**. Vælg for eksempel **S0001**. Nettobeløbet er 75,00.  Det er det beløb, som vi forventer på fakturaen.  
+6. Vælg **Køb** i handlingsruden.
+7. Vælg **Bekræft**.
 
 ## <a name="create-and-post-and-invoice"></a>Oprette og bogføre fakturaen
-1. Gå til Kreditor > Fakturaer > Indgangsbog.
-2. Klik på Ny.
+1. Gå i navigationsruden til **Moduler > Kreditorer > Fakturaer > Indgangsbog**.
+2. Vælg **Ny**.
 3. Åbn opslaget for at vælge navnet på den indgangsbog, du vil bruge.
 4. Vælg navnet på den indgangsbog, du vil bruge.
-5. Klik på Linjer for at åbne bogen og angive udgiftslinjer.
-6. Vælg en kreditor i opslaget. Klik for eksempel på kreditor 1001.
-7. Angiv fakturanummeret i feltet Faktura.
-8. Indtast en værdi i feltet Beskrivelse.
-9. Angiv et tal i feltet Kredit.
-10. Klik på rullelisten i feltet Indkøbsordre for at åbne opslaget.
-11. Vælg den indkøbsordre, du oprettede tidligere.
-12. Klik på rullelisten i feltet Godkendt af for at åbne opslaget.
-13. Fremhæv en godkender, og klik på Vælg for at vælge den pågældende godkender.
-14. Klik på Bogfør.
-15. Luk formularen.
-16. Luk formularen.
+5. Vælg **Linjer** for at åbne bogen og angive udgiftslinjer.
+6. Vælg en kreditor i opslaget. Vælg for eksempel kreditor **1001**.
+7. Angiv fakturanummeret i feltet **Faktura**.
+8. Indtast en værdi i feltet **Beskrivelse**.
+9. Angiv et tal i feltet **Kredit**.
+10. Åbn rullelisten i feltet **Indkøbsordre** for at vælge den indkøbsordre, du oprettede tidligere.
+11. Fremhæv en godkender på rullelisten i feltet **Godkendt af**, og klik på **Vælg** for at vælge den pågældende godkender.
+12. Vælg **Bogfør**.
 
 ## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a>Åbne en faktura fra puljen og tilpasse den til en indkøbsordre for at fuldføre fakturaprocessen
-1. Gå til Kreditor > Fakturaer > Fakturapulje.
-2. Klik på Indkøbsordre for at oprette en kreditorfaktura ud fra fakturaen i puljen.
+1. Gå i navigationsruden til **Moduler > Kreditorer > Fakturaer > Fakturapulje**.
+2. Vælg **Indkøbsordre** for at oprette en kreditorfaktura ud fra fakturaen i puljen.
 3. Vælg den faktura, du vil gennemse.
-4. Klik på Opdater status for sammenholdelse for at fuldføre sammenholdelsen.
-5. Klik på Indstillinger i handlingsruden.
-6. Klik på Skift visning.
-7. Klik på Gittervisning.
-8. Klik på Bogfør.
+4. Vælg **Opdater status for sammenholdelse** for at fuldføre sammenholdelsen.
+5. Vælg **Indstillinger** i handlingsruden.
+6. Vælg **Skift visning**.
+7. Vælg **Gittervisning**.
+8. Vælg **Bogfør**.
 9. Luk formularen.
-10. Gå til Kreditor > Kreditorer > Kreditorer.
-11. Vælg den kreditor, der stod i indkøbsordren. Vælg for eksempel kreditor 1001.
-12. Klik op linket i den valgte række på listen.
-13. Klik på Kreditor i handlingsruden.
-14. Klik på Transaktioner.
-15. Vælg den faktura, du oprettede.
-    * Periodiseringen af indgangsbogen blev tilbageført og bogført på den relevante udgiftskonto.  
+10. Gå i navigationsruden til **Moduler > Kreditor > Kreditorer > Kreditorer**.
+11. Vælg den kreditor, der stod i indkøbsordren. Vælg for eksempel kreditor **1001**.
+12. Vælg **Kreditor** i handlingsruden.
+13. Vælg **Transaktioner**.
+14. Vælg den faktura, du oprettede. Periodiseringen af indgangsbogen blev tilbageført og bogført på den relevante udgiftskonto.  
 

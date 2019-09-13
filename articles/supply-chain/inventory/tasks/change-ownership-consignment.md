@@ -3,7 +3,7 @@ title: Ændre ejerskabet til konsignationslager ud fra produktionsbehov
 description: Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fra leverandøren til din juridiske enhed, når der er behov for lageret i produktionen.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9587d39801ad39649aa5fa3ff682cdeab411516e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1cf45e838afcb55e15175811f4d38be07d7a484d
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838793"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874871"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Ændre ejerskabet til konsignationslager ud fra produktionsbehov
 
@@ -30,6 +30,8 @@ ms.locfileid: "1838793"
 
 Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fra leverandøren til din juridiske enhed, når der er behov for lageret i produktionen. Denne ændring af ejerskabet sker ved at oprette og bogføre en ændringskladde for lagerejerskab. Ændringskladdelinjer for ejerskab kan oprettes manuelt, eller som vist i denne registrering, baseret på eksisterende produktionsbehov. Typisk udfører en tilsynsførende denne opgave. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data. Hvis du bruger dine egne data, skal du kontrollere, at du har følgende forudsætninger: navnet på en lagerbeholdning, der er blevet oprettet til ændring af lagerejerskab, fysisk registrerede kreditorejede disponible varer og en eller flere produktionsordrelinjer for materialet. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
+> [!NOTE]
+> Udgående konsignationsprocesser understøttes ikke som standard, og automatisk behandling af ejerskabskladde understøttes ikke.
 
 ## <a name="create-an-inventory-ownership-journal"></a>Opret en lagerejerskabskladde
 1. Gå til Lagerstyring > Kladdeposteringer > Elementer > Ændring af lagerejerskab.

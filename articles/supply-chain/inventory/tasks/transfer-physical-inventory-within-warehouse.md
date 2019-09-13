@@ -3,7 +3,7 @@ title: Overføre fysisk lager på lagersted
 description: Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde med henblik på at registrere flytning af en vare fra én lokalitet på et lagersted til en anden.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845251"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916570"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Overføre fysisk lager på lagersted
 
@@ -32,40 +32,30 @@ Denne procedure fører dig gennem processen med at oprette og bogføre en lagero
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Oprette en lageroverførselskladde
-1. Gå til Overfør.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Navn.
-4. Klik på OK.
-    * Der er mulighed for at angive 'Fra' og 'Til'-dimensioner for hver kladdelinje. Disse er væsentlige for denne kladdetype. Du kan overflytte varer til lokalitet ved hjælp af forskellige regler. I dette eksempel vil vi overføre en vare inden for det samme lager fra en nummerpladestyret lokalitet til en lokalitet, der ikke er nummerpladestyret.   
+1. Gå i **Navigationsrude** til **Lagerstyring > Kladdeposter > Varer > Overfør**.
+2. Klik på **Ny**.
+3. Indtast eller vælg en værdi i feltet **Navn**.
+4. Klik på **OK**. Der er mulighed for at angive 'Fra' og 'Til'-dimensioner for hver kladdelinje. Disse er væsentlige for denne kladdetype. Du kan overflytte varer til lokalitet ved hjælp af forskellige regler. I dette eksempel vil vi overføre en vare inden for det samme lager fra en nummerpladestyret lokalitet til en lokalitet, der ikke er nummerpladestyret.   
 
-## <a name="create-journal-lines"></a>Oprette journallinjer
-1. Klik på Ny.
-2. Indtast eller vælg en værdi i feltet Varenummer.
-    * Hvis du bruger USMF, kan du vælge 'A0001'.  
-3. Indtast eller vælg en værdi i feltet Fra sted.
-    * Hvis du bruger USMF, kan du vælge '2'.  
-4. Indtast eller vælg en værdi i feltet Til sted.
-    * Hvis du bruger USMF, kan du vælge '2'.  
-5. Indtast eller vælg en værdi i feltet Fra lagersted.
-    * Hvis du bruger USMF, kan du vælge '24'.  
-6. Indtast eller vælg en værdi i feltet Til lagersted.
-    * Hvis du bruger USMF, kan du vælge '24'.  
-7. Indtast eller vælg en værdi i feltet Fra lokalitet.
-    * Hvis du bruger USMF, kan du vælge 'FL-001'.  
-8. Indtast eller vælg en værdi i feltet Til lokalitet.
-    * Hvis du bruger USMF, kan du vælge 'BULK-001'.  
-9. Angiv et tal i feltet Antal.
-10. Klik på fanen Lagerdimensioner.
-11. Indtast eller vælg en værdi i feltet Nummerplade.
-    * Hvis du bruger USMF, kan du vælge '24'.  
-12. Klik på Gem.
+## <a name="create-journal-lines"></a>Opret kladdelinjer
+1. I **oversigtspanelet Kladdelinjer** skal du klikke på **Ny**.
+2. Indtast eller vælg en værdi i feltet **Varenummer**. Hvis du bruger USMF, kan du vælge 'A0001'.  
+3. Indtast eller vælg en værdi i feltet **Fra sted**. Hvis du bruger USMF, kan du vælge '2'.  
+4. Indtast eller vælg en værdi i feltet **Til sted**. Hvis du bruger USMF, kan du vælge '2'.  
+5. Indtast eller vælg en værdi i feltet **Fra lagersted**. Hvis du bruger USMF, kan du vælge '24'.  
+6. Indtast eller vælg en værdi i feltet **Til lagersted**. Hvis du bruger USMF, kan du vælge '24'.  
+7. Indtast eller vælg en værdi i feltet **Fra lokalitet**. Hvis du bruger USMF, kan du vælge 'FL-001'.  
+8. Indtast eller vælg en værdi i feltet **Til lokalitet**. Hvis du bruger USMF, kan du vælge 'BULK-001'.  
+9. Angiv et tal i feltet **Antal**.
+10. Klik på fanen **Lagerdimensioner** i oversigtspanelet **Linjedetaljer**.
+11. I **Fra lagerdimensioner**skal du angive eller vælge en værdi i feltet **Id-nummer**. Hvis du bruger USMF, kan du vælge '24'.  
+12. Klik på **Gem**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Bogfør lageroverførselskladden
-1. Klik på Bogfør.
-2. Klik på OK.
+1. Klik på **Bogfør** i **handlingsruden**.
+2. Klik på **OK**.
 
 ## <a name="view-inventory-transactions"></a>Få vist lagertransaktioner
-1. Klik på lager.
-2. Klik på Transaktioner.
-    * Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.  
+1. Klik på **Lager**.
+2. Klik på **Transaktioner**. Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.  
 

@@ -1,9 +1,9 @@
 ---
-title: Økonomiske konsolideringer og valutaomregning
+title: Oversigt over økonomiske konsolideringer og valutaomregning
 description: I dette emne beskrives økonomisk konsolideringer og valutaomregning i Finans.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8ec6268daa7c7b6c455aad571ef22c083283b5d9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f72aaf3056ec1966352e010f2a723f1a2a93c300
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839273"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865783"
 ---
-# <a name="financial-consolidations-and-currency-translation"></a>Økonomiske konsolideringer og valutaomregning
+# <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
 [!include [banner](../includes/banner.md)]
 

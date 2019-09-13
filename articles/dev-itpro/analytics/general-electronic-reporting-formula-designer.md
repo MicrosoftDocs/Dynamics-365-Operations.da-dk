@@ -2,8 +2,8 @@
 title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emne beskriver, hvordan du bruger formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849503"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864288"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -113,6 +113,33 @@ ER-formeldesigneren bruges også til at generere et filnavn til et genererende e
 - Et udtryk aktiverer (returnerer **TRUE**) processen med en filoprettelse for de eneste batches, der indeholder mindst én post.
 
 [![Filstyring](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Kontrol af dokumentindhold
+
+Er-formeldesigneren kan bruges til at konfigurere udtryk, der styrer, hvilke data der placeres i genererede elektroniske dokumenter på kørselstidspunktet. Udtrykkene kan aktivere eller deaktivere outputtet af bestemte elementer i formatet, afhængigt af behandlingen af data og den konfigurerede logik. Disse udtryk kan angives for et enkelt formatelement i feltet **Aktiveret** under fanen **Tilknytning** på siden **Operationsdesigner** som en logisk betingelse, der returnerer den **booleske værdi**:
+
+-   Når **Sand** returneres, udføres det aktuelle formatelement.
+-   Når **Falsk** returneres, udføres det aktuelle formatelement ikke.
+
+I følgende illustration vises udtryk af denne type (version **11.12.11** for den **ISO20022-kreditoverførsel (nr.)**-formatkonfiguration, der er leveret af Microsoft, er et eksempel). Formatkomponenten **XMLHeader** er konfigureret til at beskrive strukturen i en kreditoverførselsmeddelelse, der følger ISO 20022 XML-meddelelsesstandarderne. Formatkomponenten **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** er konfigureret til at føje til den genererede meddelelse, **Ustrd**-XML-elementet, og placere remitteringsoplysningerne i et ustruktureret format som tekst i følgende XML-elementer:
+
+-   **PaymentNotes**-komponenten bruges til at udskrive tekst på betalingsnoter.
+-   **DelimitedSequence**-komponenten udskriver kommaseparerede fakturanumre, der bruges til at afstemme den aktuelle kreditoverførsel.
+
+[![Operationsdesigner](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> **PaymentNotes**- og **DelimitedSequence**-komponenterne er mærket ved hjælp af et spørgsmålstegn. Det betyder, at brugen af begge komponenter er betinget, baseret på følgende kriterier:
+
+-   Defineret for komponenten **PaymentNote** muliggør udtrykket **@.PaymentsNotes < >""** (ved at returnere **TRUE**) udfyldningen af **Ustrd**-XML-elementet med teksten for betalingsnoter, når denne tekst til den aktuelle kreditoverførsel ikke er tom.
+
+[![Operationsdesigner](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   Defineret for komponenten **DelimitedSequence** muliggør udtrykket **@.PaymentsNotes=""** (ved at returnere **TRUE**) udfyldningen af **Ustrd**-XML-elementet, adskilt af komma, med fakturanumre, der bruges til at afstemme den aktuelle kreditoverførsel, når teksten i betalingsnoter til denne kreditoverførsel er tom.
+
+[![Operationsdesigner](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Baseret på denne indstilling indeholder den genererede meddelelse for hver debitorbetaling, **Ustrd**-XML-elementet, enten tekst med betalingsnoter eller, når denne tekst er tom, tekst, der er adskilt af komma, fakturanumre, som bruges til at afstemme denne betaling.
 
 ### <a name="basic-syntax"></a>Grundlæggende syntaks
 

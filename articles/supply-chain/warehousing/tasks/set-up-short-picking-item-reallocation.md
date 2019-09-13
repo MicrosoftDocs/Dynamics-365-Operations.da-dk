@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a3c635c32a53226da6ce72db86ee7d9d0c17bdb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 964302cb7e7835b6e619602ac7165c9e7adbcefb
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847081"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916747"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Konfigurere vareomfordeling for kort plukning
 
@@ -32,25 +32,20 @@ Denne fremgangsmåde viser, hvordan du giver lagermedarbejderne mulighed for hur
 
 
 ## <a name="set-up-work-exceptions"></a>Konfigurer arbejdsundtagelser
-1. Gå til Lagerstedsstyring > Opsætning > Arbejde > Arbejdsundtagelser.
-2. Klik på Ny.
-    * Det er muligt at definere flere undtagelser for arbejde med forskellige politikker for omfordeling af varer for at give lagermedarbejderen mulighed for at vælge én baseret på behov i den leverance, som de behandler.  
-3. Indtast en værdi i feltet Kode for arbejdsundtagelse.
-    * Giv undtagelsen for arbejde en titel for at angive, hvad den skal bruges til. Det kan f.eks. være Vejledning til korte pluk.  
-4. Skriv en værdi i feltet Beskrivelse.
-5. Vælg "Kort pluk" i feltet Undtagelsestype.
-6. Marker afkrydsningsfeltet Reguler lager.
-    * Denne indstilling betyder, at lageret automatisk reguleres til 0 på den placering, hvor der er udført korte pluk.  
-7. Indtast eller vælg en værdi i feltet Standardkode for reguleringstype.
-    * I USMF kan du for eksempel vælge 'Fjern Res Adj Out'.  
-8. Vælg 'Manuelt' i feltet Vareomfordeling.
-    * Hvis du vælger Manuel eller Automatisk og manuel, skal lagermedarbejderen have mulighed for at bruge manuel omfordeling.  
+1. I **Navigationsrude** skal du gå til **Lokationsstyring > Opsætning > Arbejde > Arbejdsundtagelser**.
+2. Klik på **Ny**. Det er muligt at definere flere undtagelser for arbejde med forskellige politikker for omfordeling af varer for at give lagermedarbejderen mulighed for at vælge én baseret på behov i den leverance, som de behandler.  
+3. Indtast en værdi i feltet **Kode for arbejdsundtagelse**. Giv undtagelsen for arbejde en titel for at angive, hvad den skal bruges til. Det kan f.eks. være Vejledning til korte pluk.  
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Vælg 'Kort pluk' i typefeltet **Undtagelse**.
+6. Marker afkrydsningsfeltet **Reguler lager**. Denne indstilling betyder, at lageret automatisk reguleres til 0 på den placering, hvor der er udført korte pluk.  
+7. Indtast eller vælg en værdi i feltet **Standardkode for reguleringstype**. I USMF kan du for eksempel vælge 'Fjern Res Adj Out'.  
+8. Vælg 'Manuelt' i feltet **Vareomfordeling**. Hvis du vælger Manuel eller Automatisk og manuel, skal lagermedarbejderen have mulighed for at bruge manuel omfordeling.  
 
 ## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a>Konfigurer en arbejder til at bruge manuel vareomfordeling
 1. Luk siden.
-2. Gå til Lokationsstyring > Konfiguration > Arbejder.
-3. Klik på Rediger.
+2. I **Navigationsrude** skal du gå til **Lokationsstyring > Opsætning > Arbejder**.
+3. Klik på **Rediger**.
 4. Vælg arbejder 24 på listen.
-5. Udvid afsnittet Arbejde.
-6. Vælg Ja i feltet Tillad manuel vareomfordeling.
+5. Udvid oversigtspanelet **Arbejde**.
+6. Vælg 'Ja' i feltet **Tillad manuel vareomfordeling**.
 
