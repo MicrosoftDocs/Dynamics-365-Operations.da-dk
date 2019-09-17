@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702812"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742904"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønintegrationen mellem Talent og Dayforce
 
@@ -52,8 +52,8 @@ Når integrationen er aktiveret, oprettes dataeksportpakken og -filerne, og hypp
 
 Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge finder du i følgende Azure-emner:
 
-- [Om Azure-lagerkonti](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurere forbindelsesstrenge for Azure-datalager](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Om Azure-lagerkonti](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurere forbindelsesstrenge for Azure-datalager](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske oplysninger ved aktivering af lønintegration
 
@@ -123,10 +123,10 @@ Dayforce opretter følgende fradrag, der er baseret på den løneffekt, der er d
 
 Du kan finde flere oplysninger om, hvordan du definerer og administrerer et frynsegodeprogram under følgende emner:
 
-- [Levere et frynsegodeprogram for medarbejdere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Oprette et nyt frynsegode](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definere regler og politikker for frynsegodeberettigelse](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Tilmelde og fjerne frynsegoder fra arbejdere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Levere et frynsegodeprogram for medarbejdere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Oprette et nyt frynsegode](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definere regler og politikker for frynsegodeberettigelse](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Tilmelde og fjerne frynsegoder fra arbejdere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensation 
 
@@ -136,20 +136,20 @@ Dayforce anvendes kompensationsoplysninger til at beregne en medarbejders timesa
 
 Du kan finde flere oplysninger om kompensationsplaner under følgende emner:
 
-- [Oprette faste kompensationsordninger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Oprette planer for variabel kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Udarbejde løn-/kompensationsstruktur og -planer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Proceskompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Definere kompensationsproces og beregne resultater](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Melde en medarbejder til en fast lønplan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Melde en medarbejder til en variabel lønplan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Oprette faste kompensationsordninger](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Oprette planer for variabel kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Udarbejde løn-/kompensationsstruktur og -planer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Proceskompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Definere kompensationsproces og beregne resultater](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Melde en medarbejder til en fast lønplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Melde en medarbejder til en variabel lønplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Job 
 
 Et job er en samling af de opgaver og ansvarsområder, der kræves af en person, der udfører et job. Du kan finde flere oplysninger under følgende emner:
 
-- [Konfiguration af komponenter i et job](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Definere nye job](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Konfiguration af komponenter i et job](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Definere nye job](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Stillinger
 
@@ -173,8 +173,8 @@ Hvis flere stillinger i den samme afdeling er knyttet til samme job, konsolidere
 
 Du kan finde flere oplysninger under følgende emner:
 
-- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Konfigurere stillinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Konfigurere stillinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Afdelinger
 
@@ -182,8 +182,8 @@ En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktions
 
 Du kan finde flere oplysninger under følgende emner:
 
-- [Oprette en afdeling og knytte den til afdelingshierarkiet](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definere nye afdelinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Oprette en afdeling og knytte den til afdelingshierarkiet](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definere nye afdelinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Betalingscyklusser og lønperioder
 

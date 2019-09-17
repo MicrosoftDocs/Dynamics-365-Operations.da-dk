@@ -3,7 +3,7 @@ title: Oprette, godkende og bogføre job i Attract
 description: I dette emne beskrives elementerne i et job i Attract. Det beskrives også, hvordan du opretter et job.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517602"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773244"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Oprette, godkende og bogføre job i Attract
+# <a name="create-a-job"></a>Oprette et job
 
 [!include [banner](includes/banner.md)]
 
@@ -81,33 +81,6 @@ Du kan finde flere oplysninger om jobopslag i [Funktioner for karrierewebsteder 
 > [!NOTE]
 > Jobopslagsfunktionerne er kun tilgængelige i tilføjelsesprogrammet til omfattende ansættelser til Attract.
 
-### <a name="posting-jobs-to-linkedin"></a>Opslå job på LinkedIn 
-
-Før du laver et jobopslag fra Attract til LinkedIn, skal administratoren tilføje LinkedIn firma-id og LinkedIn-firmanavn i **Administratorindstillinger**. LinkedIn firma-id'et skal bruges til at sikre, at dine job, der opslås fra Attract, bliver knyttet til den korrekte firmaside.
-
-Dit LinkedIn firma-id er en række tegn, der entydigt identificerer dit firma i LinkedIn. Yderligere oplysninger om, hvordan du finder dit LinkedIn firma-id, finder du på [LinkedIn-webstedet](https://aka.ms/findID).
-
-Hvis du vil opdatere LinkedIn-firmaet, skal du vælge **Administration** i menuen **Indstillinger** (tandhjulssymbolet) og derefter vælge fanen **LinkedIn-integration** . Under sektionen **Opret forbindelse til LinkedIn** skal du indtaste dit LinkedIn-firmanavn og firma-id og derefter gemme indstillingerne.
-
-> [!NOTE]
-> Der er fire ting, der er vigtige at bemærke om, hvordan job opslås på LinkedIn.
-> 1. Job, der opslås på LinkedIn, opslås som "Begrænsede lister"-job. Begrænsede listejob kan ikke opgraderes på tværs af LinkedIn-webstedet. Hvis du vil opgradere begrænsede listejob, der er slået op på LinkedIn, fra Attract, skal du arbejde med LinkedIn for at aktivere "Job-wrapping". Se nedenstående links, og kontakt LinkedIn support for at få yderligere oplysninger.
->
->    [Begrænsede lister kontra Premium-jobmuligheder til job-wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Ofte stillede spørgsmål om job-wrapping](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. Når du slår job op på LinkedIn, overfører Attract Microsoft 365 organisationens navn til jobbet. LinkedIn sammenkæder jobbene med en virksomhed på LinkedIn-siden baseret på navnet på den organisation, der overføres. Hvis jobbet står ved den forkerte virksomhed på LinkedIn, kan du kontrollere, at Microsoft 365-organisationens navn svarer til virksomhedsnavnet på LinkedIn.  
->
->    [Rediger adresse, kontakt og meget mere](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Hvis du har problemer efter dette trin, skal du kontakte LinkedIn support. 
-> 
-> 1. Job, der opslås på LinkedIn, vises på live LinkedIn-webstedet. Der er ikke noget testmiljø til jobopslag til LinkedIn. 
->
-> 1. Det kan tage op til 24 timer, før job, der er slået op på LinkedIn, bliver synlige for ansøgerne på LinkedIn, på grund af LinkedIns aktuelle proces for jobopslag.
-
-
 ## <a name="activate"></a>Aktivér
 
 Når et job er aktiveret, kan det slås op, og jobkandidater og ansøgere kan føjes til det. Muligheden for at tilføje kandidater til et job angives i Jobkandidat-aktiviteten i ansættelsesprocessen.
@@ -142,7 +115,7 @@ Såfremt en bruger redigerer jobbet, efter det er blevet godkendt, men ikke akti
 De personer, der er angivet som godkendere, modtager en besked i Attract og en e-mail for at oplyse dem om, at et element kræver deres godkendelse.  I e-mailen kan godkenderne klikke på linket for at åbne jobbet, gennemse alle detaljerne og enten godkende eller afvise det. Når jobbets status angives til **Godkendt** eller **Afvist**, modtager indgiveren en meddelelse herom i Attract samt via e-mail. Godkenderne modtager endvidere en påmindelse via e-mail, såfremt de ikke har svaret på godkendelsesanmodningen inden 24 timer.
 
 > [!NOTE]
-> Du kan oprette brugerdefinerede e-mail-skabeloner til godkendelsesmails. For yderligere oplysninger se [Oprettelse og administration af e-mailskabeloner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> Du kan oprette brugerdefinerede e-mail-skabeloner til godkendelsesmails. For yderligere oplysninger se [Oprettelse og administration af e-mailskabeloner](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Oprette et job
 

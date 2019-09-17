@@ -1,6 +1,6 @@
 ---
-title: Brug analytiske rapporter til indsigt i ansættelsesprocessen
-description: I dette emne beskrives de analytiske rapporter i Attract
+title: Bruge analytiske rapporter i Microsoft Dynamics 365 for Talent - Attract
+description: Dette emne beskriver de analytiske rapporter til indsigt i ansættelsesprocessen i Microsoft Dynamics 365 for Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516554"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742881"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Brug analytiske rapporter til indsigt i ansættelsesprocessen
+# <a name="use-analytic-reports"></a>Bruge analyserapporter
 
 Analytiske rapporter i Attract indeholder en out-of-the-box (OOTB)-løsning, der giver indsigt i ansættelsesprocessen. Tilgængelige funktioner omfatter:
 
@@ -81,8 +81,8 @@ Jobanalyser-rapporter viser data for det valgte job. Analysehub-rapporter samler
 
 ## <a name="cross-filter"></a>Tværgående filtrer
 
-En af de fantastiske funktioner i Power BI er den måde, som alle visuelle elementer på en rapportside er forbundet på. Hvis du markerer et datapunkt i et af de visuelle elementer, bliver alle andre visuelle elementer på siden, der indeholder denne dataændring, baseret på det markerede. Få mere at vide, og få vist et eksempel i [Hvordan visuelle elementer filtreres på tværs af hinanden i en Power BI-rapport](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions).
+En af de fantastiske funktioner i Power BI er den måde, som alle visuelle elementer på en rapportside er forbundet på. Hvis du markerer et datapunkt i et af de visuelle elementer, bliver alle andre visuelle elementer på siden, der indeholder denne dataændring, baseret på det markerede. Få mere at vide, og få vist et eksempel i [Hvordan visuelle elementer filtreres på tværs af hinanden i en Power BI-rapport](https://docs.microsoft.com/power-bi/consumer/end-user-interactions).
 
 ## <a name="export-to-excel"></a>Eksportér til Excel
 
-Hvis du vil have vist rapportdata i Excel, kan du klikke på menuen Indstillinger (tre prikker) i et visuelt element og vælge **Eksporter underliggende data**. Eksporterede data eksporteres som filtrerede i overensstemmelse med brugertilladelser i Attract. Du kan finde flere oplysninger under [Eksportere data fra visualiseringer](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
+Hvis du vil have vist rapportdata i Excel, kan du klikke på menuen Indstillinger (tre prikker) i et visuelt element og vælge **Eksporter underliggende data**. Eksporterede data eksporteres som filtrerede i overensstemmelse med brugertilladelser i Attract. Du kan finde flere oplysninger under [Eksportere data fra visualiseringer](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).

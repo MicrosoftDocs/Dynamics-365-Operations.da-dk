@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517653"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741884"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (5. marts 2019)
 
@@ -43,10 +43,10 @@ I Attract er der adskillige felter, som er grupperede indstillinger, i Common Da
 ## <a name="changes-in-onboarding"></a>Ændringer i Onboarding
 
 ### <a name="private-preview-for-onboard-teams"></a>Privat prøveversion til Onboard-teams
-Du kan nu nemt dele og samarbejde om skabeloner på tværs af hele organisationen. Yderligere oplysninger finder du i [Dele de bedste fremgangsmåder på tværs af organisationen ved hjælp af Onboard-teams](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Du kan nu nemt dele og samarbejde om skabeloner på tværs af hele organisationen. Yderligere oplysninger finder du i [Dele de bedste fremgangsmåder på tværs af organisationen ved hjælp af Onboard-teams](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Privat prøveversion med pladsholdere for modtagere
-Du kan forbedre dine skabeloner ved at tildele aktiviteter til roller i stedet for personer. Roller tildeles derefter til personer på tidspunktet for oprettelse af guiden. Yderligere oplysninger finder du i [Strømline guideadministration ved at tildele aktiviteter til roller](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Du kan forbedre dine skabeloner ved at tildele aktiviteter til roller i stedet for personer. Roller tildeles derefter til personer på tidspunktet for oprettelse af guiden. Yderligere oplysninger finder du i [Strømline guideadministration ved at tildele aktiviteter til roller](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Ændringer i Core HR
 **Build 8.1.2178**
@@ -71,7 +71,7 @@ Med denne ændring får lønfelterne nu de aktuelle standardværdier, når der a
 Andre mindre fejlrettelser er medtaget i denne version.
 
 ### <a name="upgrade-to-common-data-service"></a>Opgrader til Common Data Service
-Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -79,4 +79,4 @@ Fristerne for at opgradere til Common Data Service nærmer sig med hastige skrid
 I mange organisationer har chefer for løn og frynsegoder kun har adgang til bestemte lønposter, f.eks. poster, der er beregnet til ledere eller medarbejdere i bestemte områder. Med denne ændring kan du administrere og vedligeholde lønstrukturer for forskellige medarbejdergrupper i organisationen. faste og variable strukturer kan tildeles til sikkerhedsroller, som bestemmer adgangen til strukturerne og de medarbejderdata, der er knyttet til strukturerne, f.eks. løn- eller bonusposter. Kun roller med den givne adgang kan behandle løn for de pågældende medarbejdere.
 
 ###  <a name="platform-update-24"></a>Platformsopdatering 24
-Yderligere oplysninger om Platform update 24 finder du i [Nyheder eller ændringer i Dynamics 365 for Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Yderligere oplysninger om Platform update 24 finder du i [Nyheder eller ændringer i Dynamics 365 for Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

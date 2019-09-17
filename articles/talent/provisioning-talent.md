@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
-ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
+ms.openlocfilehash: 781487997ceb95f4e3f528f47e8ed2aa5b25fd0e
+ms.sourcegitcommit: eb501d8712212a6ed33bec1e3e2c02f994e0a724
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624601"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "1869930"
 ---
 # <a name="provision-talent"></a>Klargøre Talent
 
@@ -51,10 +51,10 @@ Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
     > [!NOTE]
     > Talent-forekomsttypen er adskilt fra den forekomsttype for PowerApps-miljøet, som du angiver i PowerApps Administration.
 3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Talent-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
-4. Talent klargøres altid i et Microsoft PowerApps-miljø for at aktivere PowerApps-integration og -udvidelse. Læs afsnittet "Valg af et PowerApps miljø" i dette emne, før du fortsætter. Hvis du ikke allerede har et PowerApps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til administrationscentret for PowerApps. Følg derefter trinnene for at [Oprette et PowerApps-miljø](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+4. Talent klargøres altid i et Microsoft PowerApps-miljø for at aktivere PowerApps-integration og -udvidelse. Læs afsnittet "Valg af et PowerApps miljø" i dette emne, før du fortsætter. Hvis du ikke allerede har et PowerApps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til administrationscentret for PowerApps. Følg derefter trinnene for at [Oprette et PowerApps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Talent, være tildelt til PowerApps P2-licensen. Hvis organisationen ikke har en PowerApps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [PowerApps-prissætningssiden](https://powerapps.microsoft.com/en-us/pricing/).
+    > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Talent, være tildelt til PowerApps P2-licensen. Hvis organisationen ikke har en PowerApps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [PowerApps-prissætningssiden](https://powerapps.microsoft.com/pricing/).
 
 5. Vælg det miljø, du vil klargøre Talent til.
 6. Vælg **Ja** for at acceptere vilkårene og begynde installationen.
@@ -66,11 +66,11 @@ Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
     > [!NOTE]
     > Hvis du endnu ikke har godkendt de endelige krav, kan du installere en testforekomst af Talent i projektet. Du kan derefter bruge denne forekomst til at teste din løsning, indtil du kan godkende den. Hvis du bruger det nye miljø til test, skal du gentage denne procedure for at oprette et produktionsmiljø.
 
-    > Da kun to LCS-miljøer er tilladt som en del af Talent-abonnementet, kan du også overveje at benytte dig af et gratis 60-dages [Talent-forsøgsmiljø](https://dynamics.microsoft.com/en-us/talent/overview/). Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i det centrale HR-miljø. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
+    > Da kun to LCS-miljøer er tilladt som en del af Talent-abonnementet, kan du også overveje at benytte dig af et gratis 60-dages [Talent-forsøgsmiljø](https://dynamics.microsoft.com/talent/overview/). Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i det centrale HR-miljø. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
 
 ## <a name="select-a-powerapps-environment"></a>Vælg et PowerApps-miljø
 
-Integrationen mellem Talent- og PowerApps-miljøerne gør det muligt for dig at integrere og udvide brugen af Talent-data ved hjælp af PowerApps-værktøjer. Forståelse af formålet med PowerApps-miljøer vil ikke blot hjælpe dig med at udvikle apps med henblik på at udvide Talent, men vil også hjælpe dig med at vælge det korrekte miljø i forbindelse med klargøringen af Talent. Du kan finde flere oplysninger om PowerApps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af PowerApps-miljøer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
+Integrationen mellem Talent- og PowerApps-miljøerne gør det muligt for dig at integrere og udvide brugen af Talent-data ved hjælp af PowerApps-værktøjer. Forståelse af formålet med PowerApps-miljøer vil ikke blot hjælpe dig med at udvikle apps med henblik på at udvide Talent, men vil også hjælpe dig med at vælge det korrekte miljø i forbindelse med klargøringen af Talent. Du kan finde flere oplysninger om PowerApps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af PowerApps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
 Brug følgende retningslinjer til fastsættelse af, hvilket PowerApps-miljø til Talent skal installeres i: 
 
@@ -84,9 +84,9 @@ Brug følgende retningslinjer til fastsættelse af, hvilket PowerApps-miljø til
    
     - **Testmiljøer** ‑ Disse miljøer oprettes med en udløbsdato og udløber efter dette tidspunkt, hvilket resulterer i, at dit miljø og enhver Talent-forekomst, der er indeholdt heri, automatisk bliver fjernet.
    
-    - **Ikke-understøttede områder** - I øjeblikket understøttes Talent kun i følgende områder: USA, Europa, Det Forenede Kongerige eller Australien.
+    - **Ikke-understøttede områder** - I øjeblikket understøttes Talent kun i følgende områder: USA, Europa, Storbritannien, Australien, Canada og Asien.
   
 6. Når du har besluttet, hvilket miljø der er bedst at anvende, kan du fortsætte klargøringsprocessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
-Som standard har den globale administrator, der oprettede miljøet, adgang til det. Men andre programbrugere skal eksplicit tildeles adgang. For at give adgang skal du tilføje brugere og tildele de relevante roller til dem i det centrale Core HR-miljø. Den globale administrator, der installerede Talent, skal også starte både Attract og Onboard-programmerne for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere.  Før dette er gjort, kan andre brugere ikke få adgang til Attract- og Onboard-programmer, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Som standard har den globale administrator, der oprettede miljøet, adgang til det. Men andre programbrugere skal eksplicit tildeles adgang. For at give adgang skal du tilføje brugere og tildele de relevante roller til dem i det centrale Core HR-miljø. Den globale administrator, der installerede Talent, skal også starte både Attract og Onboard-programmerne for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere.  Før dette er gjort, kan andre brugere ikke få adgang til Attract- og Onboard-programmer, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

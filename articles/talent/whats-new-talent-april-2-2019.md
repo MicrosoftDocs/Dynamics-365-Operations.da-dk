@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8f488b0bf844fc04f07fedfa447073cdeabacc15
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517589"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795238"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (2. april 2019)
 
@@ -57,13 +57,13 @@ I Attract og Onboard vil problemer, der bliver rapporteret af slutbrugere via fu
 Ændringer, der er beskrevet i dette afsnit, gælder for build-nummer 8.1.2216.
 
 ### <a name="platform-update-25"></a>Platform update 25
-Du kan finde yderligere oplysninger om platformsopdatering 25 under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations-platformsopdatering 25 (april 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+Du kan finde yderligere oplysninger om platformsopdatering 25 under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations-platformsopdatering 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avanceret lønsikkerhed (fast og variabel)
 I mange organisationer har de ansvarlige for kompensationer og frynsegoder muligvis kun har adgang til visse kompensationsposter. Disse kan omfatte poster til ledere eller medarbejdere i bestemte områder. Denne ændring giver Personale mulighed for at administrere og vedligeholde kompensationsplaner for forskellige medarbejdergrupper i organisationen. Du kan tildele sikkerhedsroller til faste og variable planer. Disse sikkerhedsroller bestemmer adgangen til planer og hertil relaterede medarbejderdata, såsom løn eller bonusposter, således at alene de pågældende roller kan behandle kompensation for medarbejdergrupperne.
 
 ### <a name="upgrade-to-common-data-service"></a>Opgrader til Common Data Service
-Fristerne for at opgradere til Common Data Service nærmer sig hurtigt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Fristerne for at opgradere til Common Data Service nærmer sig hurtigt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Som eksempel
 

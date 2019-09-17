@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505858"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795214"
 ---
 # <a name="extensibility-in-attract"></a>Udvidelsesmuligheder i Attract
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 for Talent er bygget oven på Common Data Service-platfor
 
 ## <a name="extending-option-sets-in-attract"></a>Udvide grupperede indstillinger i Attract
 
-En **Grupperet indstilling** (valgliste) er en type felt, der kan indgå i en enhed. Den definerer en gruppering af indstillinger. Når en grupperet indstilling vises i en formular, bruger den et kontrolelement på rullelisten.  I Attract er der flere felter, som er grupperede indstillinger.  Vi er ved at indføre mulighed for at udvide grupperede indstillinger, startende med felterne Årsag til afvisning, Medarbejdertype og Anciennitetstype.   Desuden kan du tilføje oversatte visningsetiketter for de indstillinger, du tilføjer. Du kan finde flere oplysninger under [Tilpasse etiketter for grupperede indstillinger](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+En **Grupperet indstilling** (valgliste) er en type felt, der kan indgå i en enhed. Den definerer en gruppering af indstillinger. Når en grupperet indstilling vises i en formular, bruger den et kontrolelement på rullelisten.  I Attract er der flere felter, som er grupperede indstillinger.  Vi er ved at indføre mulighed for at udvide grupperede indstillinger, startende med felterne Årsag til afvisning, Medarbejdertype og Anciennitetstype.   Desuden kan du tilføje oversatte visningsetiketter for de indstillinger, du tilføjer. Du kan finde flere oplysninger under [Tilpasse etiketter for grupperede indstillinger](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Funktionen til jobopslag på LinkedIn kræver brug af **Medarbejdertype** og **Anciennitetstype** på siden **Jobdetaljer**. Standardværdierne i disse felter understøttes af LinkedIn og vises, når jobbet er opslået. Derfor, hvis du laver jobopslag på LinkedIn, og du ændrer de eksisterende værdier for disse felter med grupperede indstillinger, bliver jobbet opslået, men LinkedIn viser ikke de brugerdefinerede værdier i **Medarbejdertype** og **Anciennitetstype**.  
@@ -62,15 +62,15 @@ Da alle dataene fra Attract findes i Common Data Service, kan du bruge værktøj
 
 Du kan bruge PowerApps til nemt at bygge apps, der er tilknyttet dine Attract-data, og som bruger udtryk som dem, der findes i Microsoft Excel, til at tilføje logik. Apps, som du opretter ved hjælp af PowerApps, kan køre på internettet og på Apple iOS- og Google Android-enheder.
 
-For eksempel kan du gøre det nemmere for rekrutteringsmedarbejdere at bruge universitetskarrieremesser ved at bygge en letvægtsapp, så de kan scanne cv'er og sende kandidater videre til en stilling i Attract. Du kan også oprette en app, der hjælper med at opfylde organisationens overholdelsesbehov. Du kan finde flere oplysninger om PowerApps, og hvordan det anvendes til at udvikle programmer, under [Integrering af data i Common Data Service](https://docs.microsoft.com/en-us/powerapps).
+For eksempel kan du gøre det nemmere for rekrutteringsmedarbejdere at bruge universitetskarrieremesser ved at bygge en letvægtsapp, så de kan scanne cv'er og sende kandidater videre til en stilling i Attract. Du kan også oprette en app, der hjælper med at opfylde organisationens overholdelsesbehov. Du kan finde flere oplysninger om PowerApps, og hvordan det anvendes til at udvikle programmer, under [Integrering af data i Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Du kan bruge Microsoft Flow til at oprette automatiserede arbejdsgange, der kører oven på Attract-data. Du kan nemt forbinde hundredvis af populære apps og tjenester uden at skulle skrive kode. Ved at oprette processer, der kommunikerer med Attract-jobenheden, kandidatenheden og ansøgningsenheden i Common Data Service, kan du automatisere forskellige handlinger. F.eks., når en kandidat accepterer et tilbud, kan der sendes en besked til et onboardingteam, eller nyheder kan offentliggøres på Twitter. Du kan finde flere oplysninger om flows i [Microsoft Flow-dokumentationen](https://docs.microsoft.com/en-us/flow/).
+Du kan bruge Microsoft Flow til at oprette automatiserede arbejdsgange, der kører oven på Attract-data. Du kan nemt forbinde hundredvis af populære apps og tjenester uden at skulle skrive kode. Ved at oprette processer, der kommunikerer med Attract-jobenheden, kandidatenheden og ansøgningsenheden i Common Data Service, kan du automatisere forskellige handlinger. F.eks., når en kandidat accepterer et tilbud, kan der sendes en besked til et onboardingteam, eller nyheder kan offentliggøres på Twitter. Du kan finde flere oplysninger om flows i [Microsoft Flow-dokumentationen](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
-Med Power BI kan du oprette og få vist brugerdefinerede rapporter og dashboards, der giver dig bedre indsigt i dine data i Attract. Du kan finde flere oplysninger om Power BI, og hvordan du opretter interaktive rapporter og dashboards, i [Power BI-dokumentationen](https://docs.microsoft.com/en-us/power-bi/).
+Med Power BI kan du oprette og få vist brugerdefinerede rapporter og dashboards, der giver dig bedre indsigt i dine data i Attract. Du kan finde flere oplysninger om Power BI, og hvordan du opretter interaktive rapporter og dashboards, i [Power BI-dokumentationen](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Brugerdefinerede aktiviteter 
 

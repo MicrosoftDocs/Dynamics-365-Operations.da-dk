@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 2858451435c358380503c8edc5cb162e6834894a
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620590"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739581"
 ---
-# <a name="access-preview-features-in-talent"></a>Få adgang til funktioner til forhåndsvisning i Talent
+# <a name="manage-preview-features"></a>Administrere funktioner i prøveversion
 
 [!include[banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Som en del af vores fortløbende implementering af HCM-funktioner til styring af
 
 Dette emne beskriver, hvordan du kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner. Denne liste opdateres, efterhånden som funktioner bliver gjort almindeligt tilgængelige og nye visningsfunktioner frigives. Der gives ikke besked, når der frigives nye funktioner til visning. Funktionerne bliver bare synlige for brugerne. Yderligere oplysninger om de nye funktioner i Talent finder du i [Nyheder eller ændringer i Dynamics 365 for Talent](./whats-new.md) og [Dynamics 365 samt Power Platform-produktbemærkninger](https://docs.microsoft.com/business-applications-release-notes).
 
-## <a name="enable-or-disable-preview-features"></a>Aktivere eller deaktivere funktioner til visning
+## <a name="enable-or-disable-preview-features"></a>Aktivere eller deaktivere funktioner i prøveversion
 
 Hvis du vil have adgang til visningsfunktionerne, skal du først aktivere dem i dit miljø. Aktivering eller deaktivering af funktioner til visning er specifik for miljøet.
 

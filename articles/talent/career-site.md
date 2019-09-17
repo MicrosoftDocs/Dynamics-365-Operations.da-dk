@@ -1,6 +1,6 @@
 ---
-title: Funktioner for karrierewebsteder i Attract
-description: Denne artikel indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Attract.
+title: Konfigurere dit karrierewebsted i Microsoft Dynamics 365 for Talent - Attract
+description: Denne artikel indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729697"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739765"
 ---
-# <a name="career-site-functionality-in-attract"></a>Funktioner for karrierewebsteder i Attract
+# <a name="set-up-your-career-site"></a>Konfigurere dit karrierewebsted
 
 [!include[banner](../includes/banner.md)]
 
@@ -131,7 +131,7 @@ Du kan gøre det nemt for kandidaterne at søge dine stillinger ved at konfigure
 1. Log på Attract som administrator.
 2. Vælg knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne af siden, og vælg dernæst **Administration**.
 3. Vælg fanen **LinkedIn-integration**, og opret forbindelse til en LinkedIn Recruiter-konto.
-4. I afsnittet **LinkedIn Recruiter System Connect -integration** skal du under indstillingen **Ansøg via LinkedIn** vælge **Aktiver**.
+4. I afsnittet **LinkedIn Recruiter System Connect-integration** skal du under indstillingen **Ansøg via LinkedIn** vælge **Aktiver**.
 
 Når du har aktiveret indstillingen, kan kandidater ansøge ved at anvende deres eksisterende LinkedIn-profildata. Når kandidaterne ansøger ved at vælge knappen **Ansøg via LinkedIn**, anmodes de om at godkende med LinkedIn, såfremt de ikke allerede er logget ind. Efter de har godkendt, erstatter deres LinkedIn-profil alle de eksisterende profildata, der fremgår af ansøgningssiden. Kandidaterne kan redigere deres oplysninger efter behov og derefter indsende ansøgningen. Såfremt en kandidat navigerer væk fra siden uden at søge jobbet, opdateres deres profildata ikke i Attract.
 

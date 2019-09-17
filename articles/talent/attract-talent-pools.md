@@ -1,6 +1,6 @@
 ---
-title: Få fat i kandidater ved hjælp af talentpuljer
-description: I dette emne forklares, hvordan du kan oprette og konfigurere talentpuljer i Attract.
+title: Rekruttere kandidater med talentpuljer i Microsoft Dynamics 365 for Talent - Attract
+description: I dette emne forklares, hvordan du kan oprette og konfigurere talentpuljer i Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711288"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741861"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Få fat i kandidater ved hjælp af talentpuljer
+# <a name="source-candidates-with-talent-pools"></a>Rekruttere kandidater med talentpuljer
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Ejeren og bidragyderne til talentpuljer kan føje kandidater til talentpuljen, f
 ## <a name="search-and-view-candidate-profiles"></a>Søge efter og få vist kandidatprofiler
 
 > [!NOTE] 
-> Denne funktion findes på nuværende tidspunkt i prøveversionen. Hvis du ønsker at prøve funktionen, skal du [slå den til i administratorindstillingerne i Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Denne funktion findes på nuværende tidspunkt i prøveversionen. Hvis du ønsker at prøve funktionen, skal du [slå den til i administratorindstillingerne i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Talentpuljer giver dig mulighed for at se en kandidats profil, vedkommendes oplysninger på LinkedIn, relaterede dokumenter og ansøgningshistorikken. Du kan søge i hele kandidatdatabasen blandt alle de kandidater, der er blevet tilføjet til en hvilken som helst talentpulje, herunder lukkede og aktive ansøgere.
 
@@ -116,7 +116,7 @@ Alle brugere har en fælles oversigt over kandidatprofiler. Fanen **Profil** vis
 
     For at få vist et dokument skal du vælge dokumentnavnet på listen over dokumenter. Du kan få vist Microsoft Word-dokumenter i ansøgningen ved hjælp af Microsoft Office 365. Du kan også hente dokumenterne til din lokale computer ved hjælp af indstillingen **Hent** for hvert dokument.
 
-- Fanen **LinkedIn** viser kandidatens LinkedIn-oplysninger. For at kunne bruge denne fane skal du oprette forbindelse til din LinkedIn-konto i brugerindstillingerne, og der skal oprettes forbindelse til dit miljøs LinkedIn Recruiter. Du kan finde flere oplysninger under [Rekruttering med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Fanen **LinkedIn** viser kandidatens LinkedIn-oplysninger. For at kunne bruge denne fane skal du oprette forbindelse til din LinkedIn-konto i brugerindstillingerne, og der skal oprettes forbindelse til dit miljøs LinkedIn Recruiter. Du kan finde flere oplysninger under [Rekruttering med LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Det er kun kandidater, der kan opdatere deres færdigheder, uddannelseshistorik og arbejdserfaringer.

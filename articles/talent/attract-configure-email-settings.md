@@ -19,14 +19,15 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 360937b807ea149edb2f16ad6799d74791d599b5
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729771"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739489"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-for-talent---attract"></a>Konfigurere mailindstillinger i Microsoft Dynamics 365 for Talent - Attract
+# <a name="configure-email-settings"></a>Konfigurere mailindstillinger
+
 [!include[banner](../includes/banner.md)]
 
 Dit varemærke skaber tillid og hjælper dig med at opbygge en relation til kandidater, selv før de ansøger om dine stillinger. Positiv opfattelse af et brand tiltrækker de bedste talenter og øger eksisterende medarbejderes loyalitet. Microsoft Dynamics 365 for Talent: Attract giver dig mulighed for at konfigurere mails, så de afspejler virksomhedens brand. Du kan derfor give jobkandidater en gennemført oplevelse, når de gennemgår ansøgningsprocessen.
