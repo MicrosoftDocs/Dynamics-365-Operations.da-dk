@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620614"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741746"
 ---
 # <a name="intelligent-recommendations"></a>Intelligente anbefalinger
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620614"
 Maskinel indlæring kan hjælpe rekrutteringsmedarbejdere og ansættelsesansvarlige med at identificere de bedste kandidater til en stilling. Det kan også hjælpe jobkandidater med finde den stilling, der passer bedst til deres profil og interesser. Når disse funktioner bruges, og der gives tilbagemeldinger, forbedres anbefalingerne.
 
 > [!NOTE] 
-> - Funktionerne til intelligente anbefalinger er kun tilgængelige med [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funktionerne til intelligente anbefalinger er kun tilgængelige med [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - De funktioner, der er angivet under dette emne, er tilgængelige som en del af en gennemgang af en eksempelversion. Indholdet og funktionaliteten kan blive ændret. For at anvende denne funktion skal du anmode en administrator om at aktivere den ved hjælp af **Administration** i Attract. Angiv indstillingerne for **Kandidatanbefaling**, **Jobanbefaling** og **Kandidatemneanbefaling** til **Til**. Du kan finde yderligere oplysninger under [Få adgang til funktioner i prøveversioner af Talent](./access-preview-feature.md). 
 
 

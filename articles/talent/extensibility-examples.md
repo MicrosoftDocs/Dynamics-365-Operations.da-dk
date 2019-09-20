@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577789"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781436"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Udvide Talent ved hjælp af PowerApps og Microsoft Flow - eksempelscenarier
 
@@ -101,24 +101,15 @@ Denne skabelon kan udvides, så den kan anvendes i alle scenarier, der omfatter 
 
 Du kan downloade skabelonen **Proces – SharePoint-integration** i Microsoft Download Center ved hjælp af følgende link: [Proces – SharePoint-integration](https://go.microsoft.com/fwlink/?linkid=2082109).
 
-## <a name="admin-console-to-manage-talent-pools"></a>Administrationskonsol til styring af talentpuljer
+## <a name="referral-app"></a>Appen Henvisning
+Du kan bruge appen Henvisning til at føje kandidater til en delt talentpulje. Den, der henviser, kan angive **Fornavn**, **Efternavn**, **Mail** og **URL-adresse til LinkedIn** ved indsendelse af en kandidat. Metadata til kandidatkilden udfyldes derefter med oplysningerne fra den, der henviser.
 
-Når du aktiverer integration med LinkedIn, opretter Attract automatisk en LinkedIn-talentgruppe. Når en rekrutteringsmedarbejder udveksler InMail med en rekrutteret via LinkedIn, opretter Attract en profil til den rekrutterede person, og vedkommende bliver medlem af LinkedIn-talentpuljen. Denne PowerApps-app er nyttig til reorganisering af kandidater i talentpuljer baseret på færdigheder.
+Du kan integrere denne app i Medarbejderselvbetjening (ESS) for at sende henvisninger, eller du kan bruge den som et link i firmaportalen og køre den som en fritstående app.
 
-Kør denne PowerApps-app som en administratorkonsol for at udføre følgende opgaver:
-
-- Angive kandidater i en talentpulje
-- Føje kandidater til og fjerne kandidater fra en talentpulje
-- Flytte kandidater fra én talentpulje til en anden
-- Afklare, om kandidater allerede er en del af en talentpulje, før de flyttes
-- Kontrollere kandidaternes færdigheder, før du flytter dem til andre talentpuljer
-
-Denne PowerApps-app bruger mange-til-mange-relationer, så du kan bruge den som skabelon for andre scenarier, hvor du skal uddrage poster, der har mange-til-mange-relationer.
-
-Du kan hente skabelonen **Administrationskonsol til styring af talentpuljer** ved at gå til [Administrationskonsol til styring af talentpuljer](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) i Microsoft Download Center.
+Du kan downloade **appen Henvisning** ved at gå til [Dynamics 365 for Talent-udvidelsesløsning: appen Henvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importere denne app og tilpasse den for at tilføje yderligere funktioner.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Klientens Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Overfør app mellem lejere og miljøer](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Overfør app mellem lejere og miljøer](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

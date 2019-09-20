@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517627"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741769"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systemkrav og opdateringspolitik for Talent
 
@@ -64,10 +64,10 @@ Du kan hente en PDF-fil over de lande, regioner og sprog, som Talent understøtt
 > [!NOTE]
 > Mens brugergrænsefladen er lokaliseret til andre sprog, gemmes alle brugerdata på det sprog, de blev indtastet på. Du kan oprette mails og skabeloner på andre sprog, men data som f.eks. planlægningsoplysninger, er kun tilgængelige på engelsk på nuværende tidspunkt.
 
-Hvis du er udvikler, der er interesseret i at oprette lande- eller områdespecifikke tilpasninger, eller i at oprette en løsning for et land eller en region, der ikke understøttes af Microsoft, skal du se [Globalisering](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+Hvis du er udvikler, der er interesseret i at oprette lande- eller områdespecifikke tilpasninger, eller i at oprette en løsning for et land eller en region, der ikke understøttes af Microsoft, skal du se [Globalisering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
 ## <a name="update-policy"></a>Opdateringspolitik
 
 Microsoft Dynamics 365 for Talent skal serviceres som et skybaseret produkttilbud. Opdateringer til Dynamics 365 for Talent foretages fortløbende og anvendes automatisk af Microsoft.
 
-Opdateringer udgives regelmæssigt og bliver gjort tilgængelige til alle miljøer. Dynamics 365 for Talent understøttes i overensstemmelse med [Microsoft Support Lifecycle-politik](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som giver klare retningslinjer for teknisk support.
+Opdateringer udgives regelmæssigt og bliver gjort tilgængelige til alle miljøer. Dynamics 365 for Talent understøttes i overensstemmelse med [Microsoft Support Lifecycle-politik](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som giver klare retningslinjer for teknisk support.

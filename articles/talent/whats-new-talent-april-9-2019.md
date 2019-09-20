@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517591"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856418"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (9. april 2019)
 
@@ -37,10 +37,10 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 I Attract og Onboard vil problemer, der bliver rapporteret af slutbrugere ved hjælp af funktionen "rapporter et problem", nu automatisk oprette supportproblemer i kundens LCS-projekt. Administratorer kan derefter tildele problemerne og om fornødent indsende dem til Microsoft. Dette er i overensstemmelse med Core HR's håndtering af slutbrugernes supportproblemer.
 
 ### <a name="relevance-search"></a>Relevanssøgning
-I talentpuljer kan du nu søge i hele din kandidatdatabase efter særlige færdigheder, navne eller uddannelsesmæssige baggrunde. Du behøver ikke længere at angive, hvilken sektion af en kandidats profil du ønsker at søge i. Attract søger i hele profilen og fremhæver alle de fundne resultater. Attract søger ligeledes i alle de dokumenter, der er tilgængelige for en kandidat, og rangerer søgeresultaterne på en intelligent måde. Derudover kan du filtrere resultaterne efter kilde, eller efter om de er modtagere af sølvmedaljer. Du kan finde yderligere oplysninger under [Søg efter og se kandidatprofiler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+I talentpuljer kan du nu søge i hele din kandidatdatabase efter særlige færdigheder, navne eller uddannelsesmæssige baggrunde. Du behøver ikke længere at angive, hvilken sektion af en kandidats profil du ønsker at søge i. Attract søger i hele profilen og fremhæver alle de fundne resultater. Attract søger ligeledes i alle de dokumenter, der er tilgængelige for en kandidat, og rangerer søgeresultaterne på en intelligent måde. Derudover kan du filtrere resultaterne efter kilde, eller efter om de er modtagere af sølvmedaljer. Du kan finde yderligere oplysninger under [Søg efter og se kandidatprofiler](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Kandidatemneanbefalinger
-Attract kan hjælpe dig med at sætte gang i kildeindsamling til et job, så snart du har aktiveret jobbet, ved at fremsætte intelligente kandidatanbefalinger fra din organisations kandidatdatabase. Anbefalingerne omfatter de færdigheder og uddannelsesoplysninger, der blev identificeret under søgningen efter relevante kandidatemner. Disse anbefalinger fremgår af fanen **Kandidatemner** under et job, hvis du slår det til i forbindelse med det pågældende jobs ansættelsesproces. Du kan finde flere oplysninger under [Kandidatemneanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract kan hjælpe dig med at sætte gang i kildeindsamling til et job, så snart du har aktiveret jobbet, ved at fremsætte intelligente kandidatanbefalinger fra din organisations kandidatdatabase. Anbefalingerne omfatter de færdigheder og uddannelsesoplysninger, der blev identificeret under søgningen efter relevante kandidatemner. Disse anbefalinger fremgår af fanen **Kandidatemner** under et job, hvis du slår det til i forbindelse med det pågældende jobs ansættelsesproces. Du kan finde flere oplysninger under [Kandidatemneanbefalinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Interviewerens tilgængelighedsstatus
 Samtaleplanlæggere kan snart se statusserne **Ude af kontoret, arbejder andetsteds** for interviewere med henblik på at hjælpe dem med at planlægge tidspunkter, der potentielt passer interviewerne bedre.

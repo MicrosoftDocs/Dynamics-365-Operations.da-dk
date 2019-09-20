@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 568a16a17ed3269c7b72f27f0d4b7bbdbd56630e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517643"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741561"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (26. marts 2019)
 
@@ -75,7 +75,7 @@ I forbindelse med denne udgivelse vil faste lønplaner nu blive vist, når bruge
 Med denne udgivelse kan du nu fjerne jobposterne ved at anvende indstillingen **Åben i Excel** i Dynamics 365 for Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Opgrader til Common Data Service
-Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Som eksempel
 

@@ -1,9 +1,9 @@
 ---
-title: Oprette en spændende onboardingoplevelse
-description: Når onboarding af udføres korrekt, hjælper det nye medarbejdere med at få en følelse af tilhørsforhold i deres nye organisation.
+title: Komme i gang med Onboard
+description: Dette emne vil hjælpe dig med at komme i gang med Microsoft Dynamics 365 for Talent - Onboard. Onboard hjælper dine nyansatte med at få en god start ved at give dem en guide, der fører dem glat gennem onboarding-processen.
 author: andreabichsel
 manager: ''
-ms.date: 11/14/2017
+ms.date: 06/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -16,77 +16,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 805f74a0cf618254b7d5fb9a1195dc75832dc0ca
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517581"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731207"
 ---
-# <a name="create-an-engaging-onboarding-experience"></a>Oprette en spændende onboardingoplevelse
+# <a name="get-started-with-onboard"></a>Komme i gang med Onboard
 
 [!include [banner](includes/banner.md)]
 
-Når det gøres korrekt, hjælper onboarding nye medarbejdere med at arbejde mere effektivt, samtidig med, at de også får en følelse af tilhørsforhold i deres nye rolle. Onboarding kan hjælpe nye medarbejdere med at forstår deres nye rolle, hurtigere og mere præcist, end de ellers ville, og de kommer hurtigt i gang med at etablere relationer, der kan hjælpe dem med at få succes. Omvendt kan en ineffektiv onboardingoplevelse muligvis få medarbejdere til at stille spørgsmål ved deres beslutning om at blive en del af din organisation. En undersøgelse udført af Gartner i 2014 viste, at næsten en tredjedel af de 1.005 svarpersoner, som forlod et job inden for de første seks måneder, gjorde det, fordi de ikke fik klare retningslinjer af ledelsen, fordi deres uddannelse ikke var effektiv, eller fordi de ikke etablerede effektive relationer i deres nye miljø.
+Ved at bruge Microsoft Dynamics 365 for Talent: Onboard kan du hjælpe dine nye medarbejdere med at arbejde mere effektivt og få en følelse af at høre hjemme i deres nye roller. En effektiv onboarding-proces hjælper nye medarbejdere med at forstå deres nye roller. Det giver dem også et forspring i etableringen af værdifulde relationer, der vil bidrage til at sikre deres succes.
 
-## <a name="have-an-onboarding-program-in-place"></a>Sørg for at have et onboardingprogram på plads
-Det er vigtigt at forstå, hvordan og hvor du kan forbedre din onboardingproces. Følgende spørgsmål kan hjælpe dig med at analysere og forbedre onboardingprocessen på en systematisk måde.
+Onboard giver dig mulighed for hurtigt at oprette en onboarding-guide, der vil byde dine nyansatte velkommen og gøre dem begejstrede for at være med i din organisation.
 
-- Hvad er din frafaldsrate?
-- Gennemfører nye medarbejdere alle de nødvendige onboardingopgaver?
-- Hvor lang tid tager det for en ny medarbejder at komme ind i arbejdet?
-- Hvordan vurderer nyansatte deres tilfredshed?
+[![Onboardingguider](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
 
-Vent ikke til din medarbejders første dag med at starte onboarding. Onboarding skal startes, når din nye medarbejder har en startdato. Dette omtales ofte som før-onboarding eller "før-boarding". Dette er din mulighed for at bekræfte nyansatte i deres valg af at blive en del af din virksomhed, udvikle relationer og vise din virksomheds kultur og værdier.
+Du kan få mere at vide om, hvordan du får og bruger appen Onboard, i følgende emner:
 
-En af de vigtigste aktiviteter i før-onboarding er at forberede nyansatte på deres første arbejdsdag. Det kan være en stresset tid for dem. Du kan reducere deres stress ved at oprette en tjekliste og en agenda for deres første arbejdsdag.
+- [Hente Onboard-appen](./onboard-get-app.md)
+- [Oprette en onboardingguide](./onboard-create-guide.md)
+- [Oprette en onboardingskabelon](./onboard-create-template.md)
+- [Redigere onboardingguider og -skabeloner](./onboard-edit-guides-templates.md)
+- [Dele indhold med andre bidragydere](./onboard-share-template.md)
+- [Se status for opgaver og onboarding af medarbejdere](./onboard-view-status.md)
+- [Oprette ansættelsesteam i Onboard](./onboard-create-team.md)
 
-### <a name="what-to-include-in-a-checklist"></a>Hvad der skal medtages i en tjekliste
+## <a name="see-also"></a>Se også
 
-- Hvad skal der medbringes, f.eks. et foto-id og bankoplysninger.
-- Dresscode, hvis dit firma har en.
-- Vejviser til jeres kontor.
-- Navnet på en kontaktperson, eller endnu bedre en rekrutteringsmedarbejder.
-- Alle virksomhedshåndbøger eller politikker, som de skal læse.
-
-**Bonus**
-
-- Sende dem nogle reklameting fra firmaet, f.eks. en T-shirt eller et krus.
-- Send videomeddelelser fra teamet, hvor de bydes velkommen i virksomheden.
-- Inkluder en personlig velkomst fra den administrerende direktør eller en anden topleder.
-- Gør deres første dag til noget særligt.
-
-Lad ikke en nyansat sætte spørgsmål ved beslutningen om at blive en del af virksomheden ved at gøre et dårligt indtryk på den første dag.
-
-## <a name="create-a-good-first-impression"></a>Skab et godt første indtryk
-
-Opret en agenda for dagen, og del den med den nyansatte. Fokusér ikke kun på orientering. Sørg for, at I har det sjovt, introducer den til medarbejderne, og vis dem rundt på kontoret. Hold andre medarbejdere inde i kredsløbet. Lad dem vide, at en ny medarbejder bliver en del af virksomheden. Spring ikke over medarbejderne i IT, lønafdelingen og andre administrative afdelinger. Sørg for, at nyansatte har alt, hvad de har brug for til at komme i gang. Dette omfatter en arbejdsplads, computer og de nødvendige legitimationsoplysninger, software og værktøjer. Fokuser på relationer i stedet for på papirarbejde.
-
-Relationer er nøglen til at få nyansatte hurtigt i gang. Og endnu vigtigere så hjælper de med til at skabe en følelse af fællesskab og tilhørsforhold.
-
-- Find en ekspert eller en nøgleperson i virksomheden, og gør dem til onboardingkammerat.
-- Giv de nyansatte forbindelse til jobrelaterede fællesskaber eller interessegrupper. Dette er en god måde til at finde coaches eller mentorer på.
-- Del teammedlemmers profiler (helst på forhånd) for at øge hastigheden på kommunikation, vidensdeling og netværk.
-- Glem ikke sociale grupper eller arrangementer, der svarer til medarbejderens personlige mål.
-
-## <a name="provide-training"></a>Sørg for uddannelse
-
-Giv den nyansatte den tillid og de værktøjer, som de skal bruge for at få succes. Det starter med en klar definition af deres ansvar og angivelse af dine forventninger til, hvordan målet bliver nået. Opret derefter en plan for uddannelse, der fokuserer på de færdigheder, de skal bruge for at opfylde dine forventninger. Fokuser ikke blot på overholdelsesbaseret uddannelse.
-
-## <a name="set-clear-milestones"></a>Angiv klare milepæle
-
-Opstil klare kontrolpunkter og tilbagemeldingsforløb mellem dig og den nyansatte. Skab så mange muligheder for at gribe ind og rette kursen til som muligt. Du skal gribe fat i konflikter, får de bliver til problemer eller værre endnu fører til frafald.
-
-Planlæg et en til en-møde med den nye medarbejder, før vedkommendes første uge er slut. Dette er en god lejlighed til at gennemgå forventninger, arbejdsstil og karrierevækst.
-
-Definer 30 - 60- og 90-dages mål til de nyeste gruppemedlemmer. Når målene er angivet, skal du sørge for regelmæssig kontrol for at se, hvordan status er i forhold til disse mål.
-
-## <a name="measure-and-optimize"></a>Mål og optimer
-
-Når du ruller et nyt onboardingprogram ud, skal du være særlig opmærksom på følgende spørgsmål. 
-
-- Forbedrer du frafaldet?
-- Stiger tilfredsheden blandt nyansatte? 
-
-Mål disse detaljer, og foretag små forbedringer for hver nyansættelse.
-
+- [Prøve eller købe appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
+- [Nyheder](./whats-new.md)
+- [Frigivelsesnoter](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support](./talent-support.md)
