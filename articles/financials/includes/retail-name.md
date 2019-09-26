@@ -1,2 +1,0 @@
-> [!NOTE]
-> <span data-ttu-id="eb2ca-101">Dette emne gælder for både Dynamics 365 for Finance and Operations og Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="eb2ca-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
