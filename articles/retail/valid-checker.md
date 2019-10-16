@@ -1,6 +1,6 @@
 ---
 title: Konsistenskontrol af detailtransaktion
-description: Dette emne beskriver funktionen konsistenskontrol af detailtransaktion i Microsoft Dynamics 365 for Retail.
+description: Dette emne beskriver funktionen konsistenskontrol af detailtransaktion i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790415"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018407"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenskontrol af detailtransaktion
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790415"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-Dette emne beskriver funktionen konsistenskontrol af detailtransaktion, der blev introduceret i Microsoft Dynamics 365 for Finance and Operations, version 8.1.3. Konsistenskontrollen identificerer og isolerer inkonsistente transaktioner, før de hentes af processen til bogføring af opgørelsen.
+Dette emne beskriver funktionen konsistenskontrol af detailtransaktion. Konsistenskontrollen identificerer og isolerer inkonsistente transaktioner, før de hentes af processen til bogføring af opgørelsen.
 
-Når en opgørelse bogføres i Microsoft Dynamics 365 for Retail, kan bogføringen mislykkes på grund af inkonsistente data i detailtransaktionstabellerne. Dataproblemet kan skyldes uforudsete problemer i POS-programmet, eller at transaktioner blev importeret forkert fra tredjeparts-POS-systemer. Eksempler på, hvordan denne inkonsistens kan vise sig, omfatter: 
+Når en opgørelse bogføres i Retail, kan bogføringen mislykkes på grund af inkonsistente data i detailtransaktionstabellerne. Dataproblemet kan skyldes uforudsete problemer i POS-programmet, eller at transaktioner blev importeret forkert fra tredjeparts-POS-systemer. Eksempler på, hvordan denne inkonsistens kan vise sig, omfatter: 
 
 - Totalen for transaktionen i hovedtabellen stemmer ikke overens med transaktionstotalen på linjerne.
 - Linjeantallet i hovedtabellen stemmer ikke overens med antallet af linjer i transaktionstabellen.

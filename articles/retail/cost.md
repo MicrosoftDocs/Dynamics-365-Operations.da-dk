@@ -1,6 +1,6 @@
 ---
 title: Omkostningskonfiguration for fordelt ordrestyring (DOM)
-description: Dette emne beskriver omkostningskonfiguration til fordelt ordrestyring (DOM) i Microsoft Dynamics 365 for Retail.
+description: Dette emne beskriver omkostningskonfiguration til fordelt ordrestyring (DOM) i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606773"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019433"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Omkostningskonfiguration for fordelt ordrestyring (DOM)
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606773"
 
 Organisationer betragter flere omkostningskomponenter for at bestemme den optimale lokation, som ordren skal opfyldes fra. Nogle af disse omkostningskomponenter er forsendelsesomkostninger, håndteringsomkostninger og emballageomkostninger. Der beregnes en kombination af disse omkostninger for at bestemme opfyldelseslokationen.
 
-Når den første gentagelse af den fordelte ordrestyring (DOM) i Microsoft Dynamics 365 for Retail har optimeret tildelingen af ordrer på opfyldelseslokationer, er den kun indregnet i afstanden. Selvom afstanden kan korreleres med en omkostning, er det ikke det samme som omkostning. En forsendelsesmetode om natten koster f.eks. mere end tre dages forsendelse eller syv dages forsendelse over den samme afstand.
+Når den første gentagelse af den fordelte ordrestyring (DOM) i Dynamics 365 Retail har optimeret tildelingen af ordrer på opfyldelseslokationer, er den kun indregnet i afstanden. Selvom afstanden kan korreleres med en omkostning, er det ikke det samme som omkostning. En forsendelsesmetode om natten koster f.eks. mere end tre dages forsendelse eller syv dages forsendelse over den samme afstand.
 
 Med funktionen til omkostningskonfiguration kan detailforretninger definere og konfigurere yderligere omkostningskomponenter, der skal beregnes og medtages for at bestemme den optimale lokation, som ordrelinjer skal opfyldes fra.
 

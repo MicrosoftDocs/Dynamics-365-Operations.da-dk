@@ -1,6 +1,6 @@
 ---
 title: Returnere varer på tværs af flere kundeordrer og fakturaer
-description: Dette emne beskriver den funktionalitet, der muliggør returneringer på tværs af flere kundeordrer og fakturaer i Microsoft Dynamics 365 for Retail.
+description: Dette emne beskriver den funktionalitet, der muliggør returneringer på tværs af flere kundeordrer og fakturaer i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,19 +18,19 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 25a1081e5f903076e23089c41dda7437f8a70124
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565294"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017983"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnere varer på tværs af flere kundeordrer og fakturaer
 
 [!include [banner](includes/banner.md)]
 
 
-I Dynamics 365 for Finance and Operations version 10.0 kan returneringer foretages på tværs af flere ordrer og fakturaer, men i versioner før 10.0 kan returneringer kun behandles for en enkelt faktura ad gangen. 
+Returneringer kan foretages på tværs af flere kundeordrer og fakturaer. 
 
 ## <a name="configure-retail-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfigurere Retail til at understøtte returneringer på tværs af flere kundeordre og fakturaer
 

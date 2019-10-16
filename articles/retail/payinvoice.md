@@ -1,6 +1,6 @@
 ---
 title: Konfigurere scenarier for betaling af fakturaer
-description: I dette emne beskrives, hvordan du kan konfigurere Dynamics 365 for Retail til at understøtte forskellige scenarier relateret til fakturabetalinger.
+description: I dette emne beskrives, hvordan du kan konfigurere Dynamics 365 Retail til at understøtte forskellige scenarier relateret til fakturabetalinger.
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb9101843396e489e4d7b63879e9df35e52fe64
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564964"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018007"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Konfigurere scenarier for betaling af fakturaer
 
 [!include [banner](includes/banner.md)]
 
-Funktionen Betal faktura i Dynamics 365 for Retail er blevet udvidet for at understøtte:
+Funktionen Betal faktura i Dynamics 365 Retail er blevet udvidet for at understøtte:
 
 - Betaling af flere salgsordrefakturaer i en enkelt POS-transaktion.
 - Betaling af forskellige debitorfakturatyper, herunder fritekstfakturaer, projektbaserede fakturaer og kreditnotaer.
