@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afddb34f29e13e17f2b93bb2633183a78e31f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 462d35ebf1015ace032c523a4efe92bc7594ba3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559802"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026901"
 ---
 # <a name="mobile-bar-code-support"></a>Understøttelse af mobile stregkode
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559802"
 Da Android er et open source-projekt, kan enhver producent af hardware til stregkodescannere til lagerbrug bygge en enhed, der kan køre Android-operativsystemet. En enhed er kun Android-kompatibel, hvis den kan køre programmer, der er skrevet til Android-kørselsmiljøet.
 En hardwareleverandør kan dog redigere og oprette overlejringer til Android-versionen, der kører på deres hardware. Microsoft kan ikke tage sig ansvar for at sikre, at en app til mobil stregkodescanning til Android er kompatibel med en producents hardware til stregkodescanning og den Android-version, der kører på den. 
 
-Lager-appen til Microsoft Dynamics 365 for Finance and Operations er blevet testet for scanning af stregkoder på et udvalg af Android-baserede enheder. Disse test omfatter kun et udvalg af de enheder, der er tilgængelige på markedet.
+Dynamics 365 Supply Chain Management-lagerstedsappen er blevet testet for scanning af stregkoder på et udvalg af Android-baserede enheder. Disse test omfatter kun et udvalg af de enheder, der er tilgængelige på markedet.
 
 Det anbefales, at du som kunde tester appen til mobil scanning til lageret på udvalgt hardware, før du beslutter dig for den hardware, som du vil købe.
 

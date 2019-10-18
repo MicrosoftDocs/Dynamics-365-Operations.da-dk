@@ -1,6 +1,6 @@
 ---
 title: Skærmlayout til POS
-description: Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelserne.
+description: Dette emne indeholder oplysninger om skærmlayouts til Dynamics 365 Retail POS-oplevelserne.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607028"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025260"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skærmlayout til POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelserne.
+Dette emne indeholder oplysninger om skærmlayouts til Dynamics 365 Retail POS-oplevelserne.
 
 Brugergrænsefladen i Retail POS kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og/eller brugere.
 
@@ -50,7 +50,7 @@ Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle element
 - **Beskrivelse** - Du kan angive et beskrivende navn, der hjælper med til at identificere den korrekte profil til din situation.
 - **Tema** - Du kan vælge mellem de lyse eller mørke programtemaer. Temaet påvirker skrifttypen og baggrundsfarverne i hele programmet.
 - **Markeringsfarve** – Markeringsfarven bruges overalt på POS-enheden til at adskille eller fremhæve specifikke visuelle elementer, f.eks.felter, kommandoknapper eller hyperlinks. Disse elementer kræver typisk handling.
-- **Overskriftsfarve** – Du kan konfigurere farven på sidehovedet for at opfylde forhandlerens krav til branding. Denne funktion er kun tilgængelig i Microsoft Dynamics 365 for Retail version 1611.
+- **Overskriftsfarve** – Du kan konfigurere farven på sidehovedet for at opfylde forhandlerens krav til branding. Denne funktion er kun tilgængelig i Retail version 1611.
 - **Vis dato/klokkeslæt** – Når aktiveret, vises dags dato og det aktuelle klokkeslæt i POS-hovedet.
 - **Logonbaggrunde** – Du kan angive et baggrundsbillede til logonskærmen. Filstørrelsen for baggrundsbilleder bør være så lille som muligt, da lagring og indlæsning af store filer kan påvirke programmets funktionsmåde og ydeevne.
 - **Programbaggrund** – Du kan angive et baggrundsbillede, der bruges i hele programmet i stedet for den dækkende temafarve. Hvad angår logonbaggrunde, bør filstørrelsen holdes så lav som muligt.
