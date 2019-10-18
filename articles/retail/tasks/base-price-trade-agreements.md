@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916547"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017752"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispris- og samhandelsaftaler
 
@@ -56,7 +56,7 @@ Denne procedure gennemgår oprettelse af kanalspecifikke salgsprissamhandelsafta
 24. Klik på **Opret handelsaftaler**.
 25. Klik på **Ny**.
 26. Klik på rullelisten i feltet **Navn** for at åbne opslaget.
-27. Vælg "Detail" på listen. I demodataene har kladdenavnet "Detail" standardrelationen "Pris (salg)". Det betyder, at alle nye linjer, der oprettes, som standard vil være salgsprissamhandelsaftaler.  
+27. Vælg **Detail** på listen. I demodataene har kladdenavnet **Detail** standardrelationen **Pris (salg)**. Det betyder, at alle nye linjer, der oprettes, som standard vil være salgsprissamhandelsaftaler.  
 28. Klik på **Linjer** i **Handlingsrude**.
 29. Vælg 'Gruppe' i feltet **Kontokode**.
 30. Klik på rullelisten i feltet **Kontovalg** for at åbne opslaget.

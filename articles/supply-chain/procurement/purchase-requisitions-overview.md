@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572019"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248867"
 ---
 # <a name="purchase-requisition-overview"></a>Oversigt over indkøbsrekvisition
 
@@ -38,7 +38,7 @@ Når en indkøbsrekvisition er godkendt, kan den bruges til at generere en indk�
 ## <a name="creating-purchase-requisitions"></a>Oprette indkøbsrekvisitioner
 Du kan oprette en indkøbsrekvisition på siden **Mine indkøbsrekvisitioner** og vælge de varer og tjenester, som du har brug for. Du kan vælge varer fra et indkøbskatalog, din organisation har oprettet, eller du kan anmode om varer, som ikke findes i et katalog, ved at vælge en indkøbskategori og indtast produktoplysningerne.  
 
-Før du kan sende en indkøbsrekvisition til gennemsyn, skal der konfigureres arbejdsgange i Microsoft Dynamics 365 for Finance and Operations. Du bruger en arbejdsgang til at bevæge en indkøbsrekvisition gennem gennemsynsprocessen fra den første status som **Kladde** til den endelige status som **Godkendt**.
+Før du kan sende en indkøbsrekvisition til gennemsyn, skal der konfigureres arbejdsgange. Du bruger en arbejdsgang til at bevæge en indkøbsrekvisition gennem gennemsynsprocessen fra den første status som **Kladde** til den endelige status som **Godkendt**.
 
 ### <a name="purchase-requisition-statuses"></a>Status for indkøbsrekvisition
 
@@ -141,7 +141,7 @@ I indkøbspolitikker kan du styre de tilgængelige indkøbsrekvisitionsformål, 
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisitioner med formålet forbrug
 
-En rekvisition, der har formålet forbrug, repræsenterer et behov for varer eller tjenester, der skal bruges internt i organisationen. Det behov, der er oprettet af denne type rekvisitionen, opfyldes altid af en indkøbsordre. Hvis Microsoft Dynamics 365 for Finance and Operations er konfigureret til automatisk generering af indkøbsordrer, oprettes der indkøbsordrer, når indkøbsrekvisitionen er godkendt.
+En rekvisition, der har formålet forbrug, repræsenterer et behov for varer eller tjenester, der skal bruges internt i organisationen. Det behov, der er oprettet af denne type rekvisitionen, opfyldes altid af en indkøbsordre. Hvis Supply Chain Management er konfigureret til at oprette indkøbsordrer automatisk, oprettes der indkøbsordrer, når indkøbsrekvisitionen er godkendt.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisitioner med formålet genopfyldning
 

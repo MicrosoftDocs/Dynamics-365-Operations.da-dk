@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553547"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025096"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer til detailsalg
 
@@ -37,10 +37,10 @@ Hver kupon er knyttet til én detailrabat. De prisgrupper, der er tilknyttet rab
 
 I praksis er kuponer ekstra validering ud over detailrabatter. Kuponen indeholder de kuponkoder og stregkoder, der skal bruges, sammen med datointervaller til koderne. Kuponen indeholder desuden valgfrie brugerbegrænsninger og Debitor påkrævet-egenskaber. Rabatten angiver det sæt af produkter, som kuponen gælder for. Prisgrupperne for rabatten angiver det sæt af kunder, kanaler eller kataloger, kuponen gælder for.
 
-Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Derefter tilknytter du dem ved at vælge rabatten på kuponsiden i Microsoft Dynamics 365 for Retail.
+Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Derefter tilknytter du dem ved at vælge rabatten på kuponsiden i Retail.
 
 > [!NOTE]
-> Når en kupon er knyttet til en rabat, bliver flere af felterne på rabatsiden i Microsoft Dynamics 365 for Retail skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
+> Når en kupon er knyttet til en rabat, bliver flere af felterne på rabatsiden i Retail skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
 
 ### <a name="limited-use-coupons"></a>Kuponer med begrænset anvendelse
 
@@ -75,7 +75,7 @@ Når du vil konfigurere en kupon, skal du først angive kuponens stregkode og to
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen af delvise opdateringer på kuponer
 
-Kuponfunktioner indeholder flere specifikke funktioner i Dynamics 365 for Retail. Microsoft Dynamics 365 for Retail Headquarters (HQ) og kanalen kan opdateres delvist på tværs af komponenter. Det er derfor vigtigt, at du forstår, hvordan delvise opdaterer påvirker kuponfunktioner som helhed.
+Kuponfunktioner indeholder flere specifikke funktioner. Dynamics 365 Retail Headquarters (HQ) og kanalen kan opdateres delvist på tværs af komponenter. Det er derfor vigtigt, at du forstår, hvordan delvise opdaterer påvirker kuponfunktioner som helhed.
 
 - **HQ opdateres delvist, men Retail Server og POS opdateres ikke.** Under en opdatering af HQ opdateres kupon- og rabatsiderne, og detailprisprogrammet opdateres også. Hvis der kun en af disse to komponenter opdateres, vil nogle sider i Retail ikke svare til prisberegningsdataene. Derfor kan der forekomme uventede rabatberegninger eller fejl under rabatberegninger.
 - **HQ opdateres, men Retail Server og POS opdateres ikke (N-1).** Da ikke alle detailbutikker kan opdateres på samme tid, anbefales det, at du opdaterer HQ, før du opdaterer detailbutikker. I eksemplet N-1 er nye funktioner, der er relateret til kuponer, ikke tilgængelige i butikker, der endnu ikke er blevet opdateret. For eksempel introducerer kuponfunktionen "udelad"-linjer. Hvis du bruger udelad-linjer på en rabat, bliver de ikke anvendt i en detailbutik, der kører en tidligere version.

@@ -1,6 +1,6 @@
 ---
-title: Redigere onboardingguider og -skabeloner i Dynamics 365 for Talent - Onboard
-description: Dette emne forklarer, hvordan du kan føje aktiviteter og andre oplysninger til onboardingguider og -skabeloner i Microsoft Dynamics 365 for Talent - Onboard.
+title: Redigere onboardingguider og -skabeloner i Dynamics 365 Talent - Onboard
+description: Dette emne forklarer, hvordan du kan føje aktiviteter og andre oplysninger til onboardingguider og -skabeloner i Microsoft Dynamics 365 Talent - Onboard.
 author: andreabichsel
 manager: ''
 ms.date: 06/19/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68afc5d789d1f4af67cd2ec73eb0e073efad0761
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 7803c7cd2c58b8544d2c8dd711c295d6882f9fca
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864387"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010792"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-for-talent-onboard"></a>Redigere onboardingguider og -skabeloner i Dynamics 365 for Talent: Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Redigere onboardingguider og -skabeloner
 
 [!include [banner](includes/banner.md)]
 
-Når du har oprettet en onboardingguide eller -skabelon i Microsoft Dynamics 365 for Talent: Onboard, skal du tilføje en introduktion, aktiviteter, kontakter og ressourcer. Onboard giver dig omfattende indhold i dine onboardingguider, herunder:
+Når du har oprettet en onboardingguide eller -skabelon i Microsoft Dynamics 365 Talent: Onboard, skal du tilføje en introduktion, aktiviteter, kontakter og ressourcer. Onboard giver dig omfattende indhold i dine onboardingguider, herunder:
 
 - YouTube-videoer
 - Microsoft Sway-præsentationer
@@ -124,7 +124,7 @@ Sådan overføres dine ændringer:
 
     - Hvis du vil tilføje en YouTube-video, skal du trække **YouTube**-elementet til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten og angive URL-adressen til YouTube-videoen.
     - Hvis du vil tilføje en Sway-præsentation eller et nyhedsbrev, skal du trække **Sway**-elementet til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten og angive den integrerede URL-adresse til Sway-præsentationen eller -nyhedsbrevet.
-    - Hvis du vil tilføje en PowerApps-app skal du trække **PowerApps**-elementet til redigeringsområdet, angive et navn og en beskrivelse for aktiviteten og enten vælge PowerApps-appen eller angive PowerApps-app-id.
+    - Hvis du vil tilføje en PowerApps-app, skal du trække **PowerApps**-elementet til redigeringsområdet, angive et navn og en beskrivelse for aktiviteten og enten vælge PowerApps-appen eller angive PowerApps-app-id.
     - Hvis du vil tilføje en Microsoft Stream-video, skal du trække **Microsoft Stream**-elementet til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten og angive URL-adressen til Microsoft Stream-videoen.
     - Hvis du vil tilføje en Microsoft forms-formular, skal du trække **Microsoft Forms**-elementet til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten, angive URL-adressen til formen Microsoft Forms og angive størrelsen på skærmområdet.
     - Hvis du vil tilføje en Iframe, der har webindhold, skal du trække elementet **Webindhold (iframe)** til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten, angive URL-adressen til webindholdet og angive størrelsen på skærmområdet.

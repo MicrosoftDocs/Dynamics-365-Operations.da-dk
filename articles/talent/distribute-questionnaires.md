@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c9392263e8c113c541b64e8e79853520a13d11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517572"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026250"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer.
 
@@ -83,7 +83,7 @@ Du kan angive planlægningstyper for en spørgeskemaplan på siden **Spørgeskem
 
 Du kan bruge referencetyper til at angive kriterier de svarpersoner, du eventuelt vælger, når du planlægger et spørgeskema. 
 
-Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema. Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for Finance and Operations. Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet. 
+Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema. Hver referencetype svarer til en tabel i Microsoft Dynamics 365 Finance. Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet. 
 
 Hvis du f.eks. vælger tabellen Kurser, kan du bestemme, hvilket kursus spørgeskemaet er beregnet til. Når du opretter en referencetype til tabellen Kurser, bliver nogle felter og knapper på siden **Kurser** tilgængelige.
 

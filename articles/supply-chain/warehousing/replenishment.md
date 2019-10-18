@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f740ab481b8663ecc29169eee1ead5ff23bb3f5
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866131"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251457"
 ---
 # <a name="replenishment-overview"></a>Oversigt over genopfyldning
 
@@ -55,7 +55,7 @@ Genopfyldning ved behov understøttes for salgsordrer, flytteordrer, produktions
 ## <a name="minmax-replenishment"></a>Min./maks. genopfyldning
 I Min/Maks genopfyldning genopfyldes lagerbeholdningen, så det ligger mellem den angivne minimum- og maksimumgrænse. Processen udføres typisk én gang hver dag for at sikre, at alle plukpladser er fyldt til det maksimale niveau, før plukningen starter. 
 
-Minimum- og maksimummængderne indstilles i en genopfyldningsskabelon. Mange af de andre indstillinger i skabelonen minder om indstillingerne i skabeloner, der bruges i Genopfyldning baseret på bølgebehov. Skabelonen skal indeholde én linje for hver vare og lokation. Når du kører genopfyldning ved hjælp af batchjobbet, vurderer Microsoft Dynamics 365 for Finance and Operations, om der kræves genopfyldning ved hjælp af den rækkefølge, som linjerne er organiseret i. 
+Minimum- og maksimummængderne indstilles i en genopfyldningsskabelon. Mange af de andre indstillinger i skabelonen minder om indstillingerne i skabeloner, der bruges i Genopfyldning baseret på bølgebehov. Skabelonen skal indeholde én linje for hver vare og lokation. Når du kører genopfyldning ved hjælp af batchjobbet, vurderer systemet, om der kræves genopfyldning ved hjælp af den rækkefølge, som linjerne er organiseret i. 
 
 Bemærk, at Min./maks genopfyldningsstrategien ikke kan genopfylde en tom lokation, medmindre lokationen er angivet som fast lokation for varen. Hvis den lokation, der skal genopfyldes, ikke er en fast lokation, kan systemet ikke fastslå, hvilken vare der skal genopfyldes. En vis minimumbeholdning er derfor påkrævet, før der foretages genopfyldning.
 

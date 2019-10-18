@@ -1,6 +1,6 @@
 ---
 title: Analysere salgstendenser og -mønstre
-description: Du kan overvåge salgstendenser og -mønstre i realtid i Microsoft Dynamics 365 for Retail.
+description: Du kan overvåge salgstendenser og -mønstre i realtid i Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c54e707d312d7ac3bbcad71a914e528859038a13
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557894"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025811"
 ---
 # <a name="analyze-sales-trends-and-patterns"></a>Analysere salgstendenser og -mønstre
 
 [!include [banner](includes/banner.md)]
 
-Du kan overvåge salgstendenser og -mønstre i realtid i Microsoft Dynamics 365 for Retail.
+Du kan overvåge salgstendenser og -mønstre i realtid i Dynamics 365 Retail.
 
-Som en del af Dynamics 365 for Retail kan brugere undersøge salgstendenser og -mønstre i realtid på tværs af forskellige niveauer i organisationshierarkiet over en periode på år ved at åbne den færdiglavede rapport **Rapport over kanalsalg pr. år**. Du kan åbne denne rapporter fra en af følgende lokaliteter:
+Som en del af Retail kan brugere undersøge salgstendenser og -mønstre i realtid på tværs af forskellige niveauer i organisationshierarkiet over en periode af år ved at åbne den køreklare rapport **Rapport over kanalsalg pr. år**. Du kan åbne denne rapporter fra en af følgende lokaliteter:
 
 - Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
 - Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**

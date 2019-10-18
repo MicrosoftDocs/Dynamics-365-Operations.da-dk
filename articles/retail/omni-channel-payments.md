@@ -1,6 +1,6 @@
 ---
 title: Oversigt over omni-kanalbetalinger
-description: Dette emne giver en oversigt over omni-kanalbetalinger i Microsoft Dynamics 365 for Retail.
+description: Dette emne giver en oversigt over omni-kanalbetalinger i Dynamics 365 Retail.
 author: rubendel
 manager: AnnBe
 ms.date: 05/12/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 78a4538d5b4854a4c87417acc156bcfb7c0da01d
-ms.sourcegitcommit: 45eeca48c6cb4f3f94d61392f4f99a52dc443a97
+ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606186"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017568"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversigt over omni-kanalbetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne giver en oversigt over omni-kanalbetalinger i Microsoft Dynamics 365 for Retail. Det indeholder en omfattende liste over understøttede scenarier, oplysninger om funktionalitet, opsætning og fejlfinding samt beskrivelser af nogle typiske problemer.
+Dette emne giver en oversigt over omni-kanalbetalinger i Dynamics 365 Retail. Det indeholder en omfattende liste over understøttede scenarier, oplysninger om funktionalitet, opsætning og fejlfinding samt beskrivelser af nogle typiske problemer.
 
 ## <a name="key-terms"></a>Vigtige termer
 

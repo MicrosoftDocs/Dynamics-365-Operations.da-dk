@@ -1,6 +1,6 @@
 ---
 title: Oprettelse, godkendelse og signering af tilbud
-description: Dette emne indeholder oplysninger om, hvordan du kan oprette, godkende og underskrive et kandidattilbud ved hjælp af Dynamics 365 for Talent.
+description: Dette emne indeholder oplysninger om, hvordan du kan oprette, godkende og underskrive et kandidattilbud ved hjælp af Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739627"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008099"
 ---
 # <a name="create-approve-and-sign-offers"></a>Oprette, godkende og underskrive tilbud
 
@@ -110,7 +110,7 @@ Der er flere handlinger, som du kan udføre, før du sender tilbuddet til kandid
 Hvis Adobe Sign er valgt som den foretrukne e-signaturmetode, skal den, der opretter et tilbud, oprette forbindelse til sin Adobe Sign-licens i dette trin. 
 
 ### <a name="docusign"></a>DocuSign
-Hvis DocuSign er valgt som den foretrukne e-signaturmetode, skal den, der opretter et tilbud, oprette forbindelse til sin DocuSign-licens. Når du er logget på, er der forbindelse fra den standardkonto og de tilladelser, der er knyttet til brugerens DocuSign-profil, til Talent Attract. 
+Hvis DocuSign er valgt som den foretrukne e-signaturmetode, skal den, der opretter et tilbud, oprette forbindelse til sin DocuSign-licens. Når du er logget på, er der forbindelse fra den standardkonto og de tilladelser, der er knyttet til brugerens DocuSign-profil, til Talent: Attract. 
 
 -  Du kan få vist og rediger e-mailskabelonen efter behov.
 

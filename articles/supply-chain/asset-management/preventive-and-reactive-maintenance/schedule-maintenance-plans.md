@@ -3,7 +3,7 @@ title: Planlæg vedligeholdelsesplaner
 description: I dette emne beskrives tidsplaner for vedligeholdelse i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875563"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922039"
 ---
 # <a name="schedule-maintenance-plans"></a>Planlæg vedligeholdelsesplaner
 
@@ -49,11 +49,11 @@ Forebyggende vedligeholdelsesplanlægning opretter kalenderposter for aktiver, b
 
 - Med hensyn til planlægning af vedligeholdelsesplaner på arbejdssteder: Hvis du opdaterer opsætningen af aktivtyper, producenter og modeller på vedligeholdelsesplaner i **Alle arbejdssteder** >  oversigtspanelet **Vedligeholdelsesplaner**, når du har planlagt vedligeholdelsesplaner, bliver eksisterende poster i vedligeholdelsesplanen, der er relateret til dette arbejdssted, automatisk slettet. Hvis du vil oprette nye kalenderposter, der svarer til den opdaterede opsætning af vedligeholdelsesplanen på arbejdsstedet, skal du køre en ny tidsplan for vedligeholdelsesplanen for dette arbejdssted. Du kan finde flere oplysninger om opsætning af aktivtyper, producenter og modeller i forbindelse med arbejdssteder i [Oprette arbejdssteder](../functional-locations/create-functional-locations.md).
 
->*Eksempel:* Du vil oprette en vedligeholdelsesplan for et bestemt arbejdssted, hvilket betyder, at alle aktiver, der er konfigureret på dette arbejdssted på et givet tidspunkt, medtages, når du planlægger vedligeholdelsesplanen. I dette tilfælde skal du oprette en vedligeholdelsesplan og vælge det specifikke arbejdssted, men du skal IKKE tilføje nogen objekter i vedligeholdelsesplanen. Resultatet er, at når du planlægger denne vedligeholdelsesplan, oprettes der vedligeholdelsestidsplanslinjer for alle de aktiver, der er knyttet til arbejdsstedet på det pågældende tidspunkt.
+>*Eksempel:* Du vil oprette en vedligeholdelsesplan for et bestemt arbejdssted, hvilket betyder, at alle aktiver, der er konfigureret på dette arbejdssted på et givet tidspunkt, medtages, når du planlægger vedligeholdelsesplanen. I dette tilfælde skal du oprette en vedligeholdelsesplan og vælge det specifikke arbejdssted, men du må IKKE tilføje nogen aktiver i vedligeholdelsesplanen. Resultatet er, at når du planlægger denne vedligeholdelsesplan, oprettes der vedligeholdelsestidsplanslinjer for alle de aktiver, der er knyttet til arbejdsstedet på det pågældende tidspunkt.
 
 - Hvis du foretager ændringer af aktivtyper, producenter og modeller i **Aktivtyper**, påvirker disse ændringer kun nye aktiver, der bruger den opdaterede aktivtype. Læs mere om opsætning af aktivtype under [Aktivtyper](../setup-for-objects/object-types.md).  
 
-5. Klik på **OK** for at starte genereringen af poster i vedligeholdelsesplanen for aktiver. De genererede poster bliver vist på listesiden **Alle vedligeholdelsestidsplaner**.
+5. Klik på **OK** for at starte genereringen af poster i vedligeholdelsesplanen for aktiver. De genererede poster bliver vist på listesiden **Alle vedligeholdelsestidsplaner**. I følgende illustration vises et eksempel på dialogboksen **Planlæg vedligeholdelsesplaner**.
 
 ![Figur 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ De eksempler, der beskrives her, viser, at alle de tællerregistreringer, der ud
 ![Figur 3](media/11-preventive-maintenance.png)
 
 ![Figur 4](media/12-preventive-maintenance.png)
+

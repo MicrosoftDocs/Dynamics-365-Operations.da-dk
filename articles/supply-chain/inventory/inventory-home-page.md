@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27f574be865ca5f7474e11c7aae1a110f66298c8
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 944d43279a6753b73b9dfe89429b2c9d6c80b5df
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865466"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250777"
 ---
 # <a name="inventory-management-overview"></a>Oversigt over lagerstyring
 
@@ -53,10 +53,8 @@ Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for a
 ### <a name="inventory-accounting"></a>Lagerregnskab 
 Du kan få mere at vide under [Lagerregnskab i omkostningsstyring](../cost-management/inventory-close.md).
 
-### <a name="manufacturing-and-supply-chain-management-blogs"></a>Blogge om styring af produktion og forsyningskæde
+### <a name="manufacturing-and-supply-chain-management-blogs"></a>Blogge om produktion og Supply Chain Management
 Du kan finde meninger, nyheder og andre oplysninger om lagerstyring og andre løsninger på [Dynamics AX Manufacturing R&D-teamets blog](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Opgaveguider
-Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knappen **Hjælp** på en vilkårlig side.
-
-
+Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opgaveguider ved at klikke på knappen **Hjælp** på en vilkårlig side

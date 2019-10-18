@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526009"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025166"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner til gruppering af automatiske gebyrer på hovedniveau og til forholdsmæssig beregning af dem for detailsalgslinjer. Denne funktionalitet er tilgængelig for transaktioner, der oprettes på POS i Microsoft Dynamics 365 for Retail version 10.0.1, og salg, der oprettes i et callcenter i Microsoft Dynamics 365 for Retail version 10.0.2.
+I dette emne beskrives funktioner til gruppering af automatiske gebyrer på hovedniveau og til forholdsmæssig beregning af dem for detailsalgslinjer. Denne funktionalitet er tilgængelig for transaktioner, der oprettes på POS i Retail version 10.0.1, og salg, der oprettes i et callcenter i Retail version 10.0.2.
 
 Denne funktionalitet er kun tilgængelig, hvis den [avancerede automatiske gebyrfunktion](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) er aktiveret ved hjælp af indstillingen på siden **Detailparametre**. Desuden kan den forbedrede beregningsmåde for automatiske gebyrer kun anvendes til detailsalgsordrer, der oprettes gennem detailkanaler (POS, et callcenter og Dynamics e-handelsplatformen).
 
 Denne nye funktion giver organisationer større fleksibilitet i den måde, som automatiske gebyrer på hovedniveau beregnes og anvendes i detailsalgstransaktioner.
 
-I versioner af Microsoft Dynamics 365 for Retail, der er ældre end version 10.0.1, beregnes automatiske gebyrer på hovedniveau, der har en bestemt leveringsmåderelation, kun, når der er overensstemmelse med den leveringsmåde, der er defineret i salgsordrehovedet.
+I versioner af Retail, der er ældre end version 10.0.1, beregnes automatiske gebyrer på hovedniveau, der har en bestemt leveringsmåderelation, kun, når der er overensstemmelse med den leveringsmåde, der er defineret i salgsordrehovedet.
 
 F.eks. defineres automatiske gebyrer på hovedniveau for levering **99** og leveringsmåden **11**. Der oprettes en salgsordre, og leveringsmåden **99** defineres i ordrehovedet. Men nogle af salgslinjerne er konfigureret, så de sendes ved hjælp af leveringsmåde **11**. I så fald tages kun gebyrer på hovedniveau, der er knyttet til leveringsmåde **99**, i betragtning og anvendes på salgsordren.
 
-I Dynamics 365 for Retail har gebyrer på hovedniveau en ekstra funktion, som du kan bruge til at definere en [konfiguration af lagdelte gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery), der er baseret på ordreværdien. Eksempelvis hvis ordreværdien er mellem $50,00 og $200,00, kan en organisation eventuelt opkræve et fragtgebyr på $5,00. Hvis ordreværdien er mellem $200,01 og $500,00, kan fragten dog være $4,00.
+I Retail har gebyrer på hovedniveau en ekstra funktion, som du kan bruge til at definere en [konfiguration af lagdelte gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery), der er baseret på ordreværdien. Eksempelvis hvis ordreværdien er mellem $50,00 og $200,00, kan en organisation eventuelt opkræve et fragtgebyr på $5,00. Hvis ordreværdien er mellem $200,01 og $500,00, kan fragten dog være $4,00.
 
 Nogle organisationer ønsker fordelene ved beregningen af lagdelte gebyrer, der følger med gebyrer på hovedniveau. Men i scenarier, der består af blandede leveringsmåder, skal de også sikre, at de gebyrer, der beregnes, passer til den leveringsmåde, der er defineret på hver salgslinje.
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865370"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249488"
 ---
 # <a name="product-configuration-overview"></a>Oversigt over produktkonfiguration
 
@@ -60,6 +60,9 @@ En produktkonfigurationsmodel består af en eller flere komponenter, der er bund
 
 Hver komponent har en eller flere attributter, der identificerer dens egenskaber. Attributterne er, hvad brugerne vælger under konfigurationsprocessen. Attributter styrer både relationer inden og uden for komponenter via medtagelse i begrænsninger eller beregninger. Attributterne kan bruges til at bestemme, hvilke fysiske dele det konfigurere produkt vil bestå af gennem de betingelser, der gælder for styklistelinjer. Desuden kan en attribut kontrollere egenskaben for en styklistelinje via en mekanisme for tilknytning. Der findes lignende funktioner for ruteoperationer med hensyn til både medtagelse og egenskabsindstillinger.
 
+>[!NOTE]
+> Når du opretter attributtyper, skal du undgå at oprette et stort antal værdier for attributtypedomænet. Hvis du gør det, kan det medføre, at produktkonfiguratoren kører langsommere. 
+
 ### <a name="expression-constraints"></a>Udtryksbegrænsninger
 
 Brug af en begrænsningsbaseret produktkonfigurationsmodel indebærer, at der findes nogle begrænsninger, når brugeren vælger værdier for de forskellige attributter. Sådanne begrænsninger kan implementeres som udtryksbegrænsninger ved hjælp af OML (Optimization Modeling Language). En begrænsning kan også implementeres i form af en tabelbegrænsning.
@@ -70,7 +73,7 @@ Tabelbegrænsninger kan være brugerdefinerede eller systemdefinerede.
 
 En brugerdefineret tabelbegrænsning bygges af brugeren. Brugeren vælger en kombination af attributtyper, som repræsenterer kolonnerne i tabellen og indtaster derefter værdierne fra domænerne for de valgte attributtyper for at danne rækkerne i tabelbegrænsningen.  
 
-En systemdefineret tabelbegrænsning defineres ved at vælge, hvilken Microsoft Dynamics 365 for Finance and Operations-tabel der skal bruges som reference og derefter vælge felter fra denne tabel for at danne kolonnerne i begrænsningen. Rækker af tabelbegrænsningen er rækkerne i Finance and Operations-tabellen, der findes på konfigurationstidspunktet.  
+En systemdefineret tabelbegrænsning defineres ved at vælge, hvilken tabel der skal bruges som reference og derefter vælge felter fra denne tabel for at danne kolonnerne i begrænsningen. Rækker af tabelbegrænsningen er rækkerne i Finance and Operations-tabellen, der findes på konfigurationstidspunktet.  
 
 En tabelbegrænsning indgår i en produktkonfigurationsmodel ved at referere til tabelbegrænsningsdefinitionen og knytte de relevante attributter i modellen til kolonnerne i tabelbegrænsningen.
 

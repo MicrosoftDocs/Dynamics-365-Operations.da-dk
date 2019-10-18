@@ -1,6 +1,6 @@
 ---
 title: Sortimentsstyring
-description: I dette emne beskrives de grundlæggende begreber for sortimentsstyring i Microsoft Dynamics 365 for Retail og overvejelser i forbindelse med implementering af projekter.
+description: I dette emne beskrives de grundlæggende begreber for sortimentsstyring i Dynamics 365 Retail og overvejelser i forbindelse med implementering af projekter.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4652641be0a1edaac919d36c7f127cd62c355a57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558822"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025834"
 ---
 # <a name="assortment-management"></a>Sortimentsstyring
 
@@ -28,7 +28,7 @@ ms.locfileid: "1558822"
 
 ## <a name="overview"></a>Overblik
 
-Microsoft Dynamics 365 for Retail indeholder *sortimenter*, så du kan administrere produkttilgængeligheden på tværs af kanaler. Sortimenter bestemmer, hvilke produkter der er tilgængelige i bestemte butikker og i en bestemt periode.
+Dynamics 365 Retail indeholder *sortimenter*, så du kan administrere produkttilgængeligheden på tværs af kanaler. Sortimenter bestemmer, hvilke produkter der er tilgængelige i bestemte butikker og i en bestemt periode.
 
 I Retail er et sortiment en tilknytning af en eller flere kanaler (eller grupper af kanaler, når der bruges organisationshierarkier) til et eller flere produkter (eller grupper af produkter, når der bruges kategorihierarkier).
 

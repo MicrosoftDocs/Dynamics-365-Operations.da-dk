@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783153"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250892"
 ---
 # <a name="create-an-asset"></a>Oprette et aktiv
 
@@ -63,12 +63,12 @@ Felterne **Serviceniveau** og **Kritikalitet** vedrører arbejdsordrer, som er o
 
 ## <a name="asset"></a>Aktiv
 
-Du kan vælge en **Ressource** til aktivet. Ressourcevalget bestemmer, hvilken kalender der bruges til planlægning af arbejdsordre. Ressourcevalg bruges ofte til anlægsaktiver. I Dynamics 365 for Finance and Operations bliver ressourcer og ressourcegrupper konfigureret i **Virksomhedsadministration** > **Ressourcer** > **Ressourcegrupper** eller **Ressourcer**.
+Du kan vælge en **Ressource** til aktivet. Ressourcevalget bestemmer, hvilken kalender der bruges til planlægning af arbejdsordre. Ressourcevalg bruges ofte til anlægsaktiver. Ressourcer og ressourcegrupper konfigureres i **Virksomhedsadministration** > **Ressourcer** > **Ressourcegrupper** eller **Ressourcer**.
 
 I feltet **Nummer på anlægsaktiv** kan du vælge et anlægsaktiv, der skal relateres til aktivet. Dette er relevant, hvis dit aktiv er relateret til et investeringsprojekt.
 
 - Hvis aktivet er relateret til et anlægsaktiv, kan du oprette en arbejdsordretype, der skal bruges til arbejdsordrer i forbindelse med et investeringsprojekt. 
-- Oplysninger om anlægsaktiver for et aktiv er relateret til modulet **Anlægsaktiver** i Dynamics 365 for Finance and Operations. Det betyder, at du i **Anlægsaktiver** > **Anlægsaktiver** > **Anlægsaktiver** kan se en oversigt over de projekter i Styring af aktiver, der kan relateres til et anlægsaktiv, ved at vælge aktivet på listen og se indholdet i **Relaterede oplysninger**-ruden > **Tilknyttede projekter**-sektionen .
+- Oplysninger om anlægsaktiver for et aktiv er relateret til modulet **Anlægsaktiver** i Dynamics 365 Supply Chain Management. Det betyder, at du i **Anlægsaktiver** > **Anlægsaktiver** > **Anlægsaktiver** kan se en oversigt over de projekter i Styring af aktiver, der kan relateres til et anlægsaktiv, ved at vælge aktivet på listen og se indholdet i **Relaterede oplysninger**-ruden > **Tilknyttede projekter**-sektionen .
 
 
 ## <a name="details"></a>Oplysninger

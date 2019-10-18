@@ -1,6 +1,6 @@
 ---
 title: Produkt- og kundesøgning i POS
-description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail.
+description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625636"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023676"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -99,7 +99,10 @@ Den traditionelle kundesøgning kan være tidskrævende, da den søger på tvær
 
 ![Kundesøgningsgenveje](./media/SearchShortcutsPOS.png "Kundesøgningsgenveje")
 
-For at angive søgekriterier som genveje, skal administratoren åbne siden **Detailparametre** i Microsoft Dynamics 365 for Finance and Operations og derefter under fanen **POS-søgekriterier** vælge alle de kriterier, der skal vises som genveje.
+
+
+For at angive søgekriterier som genveje skal administratoren åbne siden **Detailparametre** i Microsoft Dynamics 365 Retail og derefter under fanen **POS-søgekriterier** vælge alle de kriterier, der skal vises som genveje.
+
 
 ![Konfigurere søgningsgenveje](./media/ConfigureShortcutsAX.png "Konfigurere søgningsgenveje")
 
@@ -111,6 +114,6 @@ Feltet **Visningsrækkefølge** bestemmer den rækkefølge, hvori genveje vises 
 > [!NOTE]
 > En brugerdefineret egenskab, der er føjet til fastteksten, påvirker ikke standardalgoritmen til kundesøgning. Med andre ord søger kundesøgningsalgoritmen ikke i den brugerdefinerede egenskab. Brugere kan kun bruge en brugerdefineret egenskab til søgninger, hvis den brugerdefinerede egenskab tilføjes som en genvej, eller hvis standardalgoritmen til søgning tilsidesættes.
 
-I en kommende udgave af Microsoft Dynamics 365 for Retail vil detailhandlere kunne angive standardtilstanden for kundesøgning i POS til **Søg i alle butikker**. Denne konfiguration kan være nyttig i situationer, hvor kunder, der er oprettet uden for POS, skal søges efter med det samme (f.eks. selv før distributionsjobbet køres). En ny indstilling **Standardindstilling for kundesøgning** vil være tilgængelig i POS-funktionalitetsprofilen. Angiv den til **Til** for at indstille standardsøgetilstanden til **Søg i alle butikker**. Alle forsøg på kundesøgninger vil derefter foretage et realtidsopkald til hovedkontoret.
+I en kommende udgave af Retail vil detailhandlere kunne angive standardtilstanden for kundesøgning i POS til **Søg i alle butikker**. Denne konfiguration kan være nyttig i situationer, hvor kunder, der er oprettet uden for POS, skal søges efter med det samme (f.eks. selv før distributionsjobbet køres). En ny indstilling **Standardindstilling for kundesøgning** vil være tilgængelig i POS-funktionalitetsprofilen. Angiv den til **Til** for at indstille standardsøgetilstanden til **Søg i alle butikker**. Alle forsøg på kundesøgninger vil derefter foretage et realtidsopkald til hovedkontoret.
 
 Denne konfiguration er skjult bag et flighting-flag, der kaldes **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** for at hjælpe med at forhindre uventede problemer med ydeevnen. For at få vist indstillingen **Standardtilstand for kundesøgning** i brugergrænsefladen, skal detailhandleren oprette en supportbillet for dennes brugeraccepttest (UAT) og produktionsmiljøer. Når billetten er modtaget, arbejder den tekniske gruppe sammen med detailhandleren for at sikre, at detailhandleren tester i miljøer, der ikke er et produktionsmiljø, for at vurdere ydeevnen og implementere eventuelle nødvendige optimeringer.

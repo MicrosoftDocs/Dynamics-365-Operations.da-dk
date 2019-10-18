@@ -1,6 +1,6 @@
 ---
 title: Betalingsmetoder i callcentre
-description: Dette emne beskriver de forskellige betalingsmetoder, du kan bruge i et callcenter i Microsoft Dynamics 365 for Retail.
+description: Dette emne beskriver de forskellige betalingsmetoder, du kan bruge i et callcenter i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571513"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018222"
 ---
 # <a name="payment-methods-in-call-centers"></a>Betalingsmetoder i callcentre
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Retail omfatter konfigurationen af callcenter-kanalen indstillingen **Aktivér ordrefuldførelse**. Denne indstilling er med til at sikre, at alle ordrer, som brugere af kanalen opretter, kun frigives til ordrebehandling, hvis de har en forudbetalt eller forhåndsgodkendt betaling, der ligger inden for godkendte tolerancer. Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, kan callcenter-brugere angive betalinger i forhold til salgsordrer for debitorer ved hjælp af funktionerne til behandling af betalinger for Callcenter. Hvis indstillingen er slået fra, kan callcenter-brugere ikke bruge funktionerne til behandling af betaling, men de kan stadig anvende forudbetalinger på salgsordrer ved hjælp af standardfunktioner for Debitor.
+I Dynamics 365 Retail omfatter konfigurationen af callcenter-kanalen indstillingen **Aktivér ordrefuldførelse**. Denne indstilling er med til at sikre, at alle ordrer, som brugere af kanalen opretter, kun frigives til ordrebehandling, hvis de har en forudbetalt eller forhåndsgodkendt betaling, der ligger inden for godkendte tolerancer. Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, kan callcenter-brugere angive betalinger i forhold til salgsordrer for debitorer ved hjælp af funktionerne til behandling af betalinger for Callcenter. Hvis indstillingen er slået fra, kan callcenter-brugere ikke bruge funktionerne til behandling af betaling, men de kan stadig anvende forudbetalinger på salgsordrer ved hjælp af standardfunktioner for Debitor.
 
 Som en del af kanalkonfigurationen kan et firma definere de betalingsmetoder, der er tilladt for callcenter-kanal. Callcenter-kanalen bruger de samme betalingsmetoder, der er defineret for detailbutikskanalerne.
 

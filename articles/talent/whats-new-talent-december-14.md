@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (14. december 2018)
-description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
+title: Nyheder eller ændringer i Dynamics 365 Talent - Core HR (14. december 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 36eb5722a7bd98c404fb6c8f5bde407ab38ec28d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517595"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024016"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (14. december 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-14-2018"></a>Nyheder eller ændringer i Dynamics 365 Talent: Core HR (14. december 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -94,9 +94,9 @@ Når der gives mulighed for budgettering, ændres den viste saldo til den aktuel
 
 ## <a name="known-issue"></a>Kendt problem
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Tilknytningsfejl i integrationen med Finance and Operations
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Tilknytningsfejl i integrationen med Finance
 
-Følgende problemer er identificeret i den aktuelle skabelon til integration af Talent med Dynamics 365 for Finance and Operations. En ny skabelon offentliggøres snart og anvendes på alle nye integrationsprojekter, der oprettes. For eksisterende integrationsprojekter kan opgavetilknytningerne opdateres. Du kan finde opdaterede tilknytninger i følgende tabel. 
+Følgende problemer er identificeret i den aktuelle skabelon til integration af Talent med Dynamics 365 Finance. En ny skabelon offentliggøres snart og anvendes på alle nye integrationsprojekter, der oprettes. For eksisterende integrationsprojekter kan opgavetilknytningerne opdateres. Du kan finde opdaterede tilknytninger i følgende tabel. 
 
 >[!NOTE]
 > Den overordnede tildelingsopgave Jobstillinger til stillinger kan ikke integrere data. Dette er et problem, der er i øjeblikket undersøges. Der findes ingen løsning i den aktuelle tilknytning. 

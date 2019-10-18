@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517603"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008357"
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprocesser
 
@@ -43,7 +43,7 @@ For hver forretningsproces kan du definere en procesejer. Procesejeren har overb
 En procesejer kan ikke oprette nye forretningsprocesser eller forretningsprocesskabeloner eller slette aktive forretningsprocesser eller forretningsprocesskabeloner.
 
 ## <a name="tasks"></a>Opgaver
-En forretningsproces består ofte af flere opgaver. Nogle opgaver, f.eks. gennemgang af interne kursustilbud, kan udføres i Microsoft Dynamics 365 for Talent[?]. I så fald vælges en indstilling i feltet **Opgavelink**. Andre opgaver kan omfatte gennemgang eller udfyldelse af sider på et websted. I dette tilfælde er **URL-adressen** valgt i feltet **Opgavelink**, og webadressen kan derefter angives. Du kan angive URL-adresser for både eksterne og interne websteder. Du kan også oprette opgaver for aktiviteter, der udføres manuelt, f.eks. et gennemsyn af adgangen til alle strukturer. I dette tilfælde er et opgavelink ikke påkrævet. Denne fleksibilitet gør det muligt at spore flere typer opgaver i en omfattende proces.
+En forretningsproces består ofte af flere opgaver. Nogle opgaver, f.eks. gennemgang af interne kursustilbud, kan udføres i Microsoft Dynamics 365 Talent. I så fald vælges en indstilling i feltet **Opgavelink**. Andre opgaver kan omfatte gennemgang eller udfyldelse af sider på et websted. I dette tilfælde er **URL-adressen** valgt i feltet **Opgavelink**, og webadressen kan derefter angives. Du kan angive URL-adresser for både eksterne og interne websteder. Du kan også oprette opgaver for aktiviteter, der udføres manuelt, f.eks. et gennemsyn af adgangen til alle strukturer. I dette tilfælde er et opgavelink ikke påkrævet. Denne fleksibilitet gør det muligt at spore flere typer opgaver i en omfattende proces.
 
 Opgaver kan enten tildeles til en bestemt arbejder eller til en stilling. For eksempel vil chefen for kompensation og frynsegoder altid være den person, der udfører en gennemgang af forsikringspræmier. Når du opretter denne opgave, skal du derfor vælge **Stilling** i feltet **Tildelingstype** og derefter vælge **Chef for kompensation og frynsegoder** på listen **Stilling**. Når forretningsprocessen startes, tildeles opgaven til den medarbejder, der har stillingen **Chef for kompensation og frynsegoder**. Hvis du vil tildele en opgave til en bestemt arbejder, skal du vælge **Arbejder** i feltet **Tildelingstype** og derefter vælge den relevante person.
 

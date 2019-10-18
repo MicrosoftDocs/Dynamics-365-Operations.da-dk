@@ -1,0 +1,71 @@
+---
+title: Konfigurere debitorer og debitorbankkonti for direkte ISO20022-debiteringer
+description: Denne opgave fører dig gennem oprettelse af en debitorbankkonto og en bemyndigelsen til direkte kundedebitering, som er nødvendige for at generere en kundebetalingsfil som ISO20022 Direct Debit.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
+audience: Application User
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 82a8a3eff1f882d0d9b3d4943e352a8f3d1a6ae4
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2185721"
+---
+# <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>Konfigurere debitorer og debitorbankkonti for direkte ISO20022-debiteringer
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+Denne opgave fører dig gennem oprettelse af en debitorbankkonto og en bemyndigelsen til direkte kundedebitering, som er nødvendige for at generere en kundebetalingsfil som ISO20022 Direct Debit. Afhængigt af de formater for debitorbetalinger, der er konfigureret, kræves der yderligere oplysninger, der ikke er dækket i denne procedure, for en kunde eller en debitorbankkonto. 
+
+Denne opgave blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse for en juridisk enhed i Tyskland.
+
+
+
+Det er den fjerde procedure af fem, der illustrerer kundens betalingsproces ved hjælp af konfigurationer af elektronisk rapportering.
+
+
+## <a name="set-up-a-customer-bank-account"></a>Konfigurer en debitorbankkonto
+1. Gå til Debitor > Kunder > Alle kunder.
+2. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Konto med værdien "DE-010".
+3. Klik op linket i den valgte række på listen.
+4. Klik på Kunde i handlingsruden.
+5. Klik på Bankkonti.
+6. Klik på Ny.
+7. Skriv en værdi i feltet Bankkonto.
+8. Skriv en værdi i feltet Navn.
+    * Du kan f.eks. skrive 'EUR bank'.  
+9. Indtast eller vælg en værdi i feltet Bankgrupper.
+10. Skriv en værdi i feltet IBAN.
+    * Skriv f.eks. 'DE36200400000628808808'.  
+11. Indtast en værdi i feltet SWIFT-kode.
+    * For eksempel: Angiv "COBADEFFXXX".  Bemærk, at SWIFT\BIC ikke er påkrævet for mange betalingsformater, men det anbefales at få det registreret for en bankkonto.  
+12. Klik på Gem.
+13. Luk siden.
+14. Klik på Rediger.
+15. Udvid sektionen Betalingsstandarder.
+16. Indtast eller vælg en værdi i feltet Bankkonto.
+
+## <a name="add-a-direct-debit-mandate"></a>Tilføj en bemyndigelse til direkte debet
+1. Udvid sektionen Bemyndigelser til Direct Debit.
+2. Klik på Tilføj.
+3. Indtast eller vælg en værdi i feltet Kreditors bankkonto.
+    * Vælg for eksempel DEMF OPER.  
+4. Angiv en dato i feltet Dato for signatur.
+5. Klik på Ja for at bekræfte datoopdateringen.
+6. Indtast eller vælg en værdi i feltet Sted for signatur.
+7. Angiv et tal i feltet Forventet antal betalinger.
+8. Klik på OK.
+9. Klik på Gem.
+

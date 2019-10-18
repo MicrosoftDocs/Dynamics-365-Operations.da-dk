@@ -1,6 +1,6 @@
 ---
 title: Oversigt over regnskabsintegration for detailkanaler
-description: Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Microsoft Dynamics 365 for Retail.
+description: Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Retail.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516232"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025401"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversigt over regnskabsintegration for detailkanaler
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516232"
 
 ## <a name="introduction"></a>Introduktion
 
-Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Microsoft Dynamics 365 for Retail. Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af detailsalg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen:
+Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Retail. Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af detailsalg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen:
 
 - Registrere et detailsalg på en regnskabsenhed, der er knyttet til Retail POS, f.eks. en bonprinter, og udskrive en regnskabskvittering til kunden.
 - Sende oplysninger, der er relateret til salg og returvarer, som er behandlet i Retail POS, sikkert til en ekstern webtjeneste, der styres af skattemyndighederne.
 - Hjælpe med at sikre, at salgstransaktionsdata ikke kan ændres, ved hjælp af digitale signaturer.
 
-Regnskabsintegrationsfunktionen i Retail er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende detailscenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Retail-komponenter og medtages i Retail SDK'et (Software Development Kit). Du kan finde flere oplysninger om de eksempler på regnskabsintegration, der er tilgængelige i Retail SDK'et, i [Eksempler på regnskabsintegration i Retail SDK'et](#fiscal-integration-samples-in-the-retail-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Retail SDK'et, i [Oversigt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Regnskabsintegrationsfunktionen er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende detailscenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Retail-komponenter og er medtaget i SDK'et (Software Development Kit). Du kan finde flere oplysninger om regnskabsintegrationseksempler i [Eksempler på regnskabsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Retail SDK'et, i [Oversigt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 For at understøtte andre scenarier, der ikke understøttes af et regnskabsintegrationseksempel, for at integrere Retail POS med andre regnskabsenheder eller -tjenester eller for at opfylde kravene i andre lande eller områder, skal du enten udvide et eksisterende regnskabsintegrationseksempel eller oprette et nyt eksempel ved hjælp af et eksisterende eksempel.
 
@@ -44,10 +44,10 @@ For at understøtte andre scenarier, der ikke understøttes af et regnskabsinteg
 
 En regnskabsregistreringsproces i Retail POS kan bestå af et eller flere trin. Hvert trin omfatter regnskabsregistrering af bestemte detailtransaktioner eller -hændelser i én regnskabsenhed eller -tjeneste. Følgende løsningskomponenter deltager i regnskabsregistreringen i en regnskabsenhed, der er forbundet med en hardwarestation:
 
-- **Udvidelse for CRT (Commerce runtime)** – Denne komponent serialiserer detailtransaktions-/hændelsesdata i det format, der også bruges til interaktion med regnskabsenheden, analyserer svar fra regnskabsenheden og lagrer svarene i kanaldatabasen. Filtypenavnet definerer også bestemte transaktioner og hændelser, der skal registreres. Denne komponent omtales ofte som en *regnskabsdokumentudbyder*.
+- **Udvidelse for CRT (Commerce Runtime)** – Denne komponent serialiserer detailtransaktions-/hændelsesdata i det format, der også bruges til interaktion med regnskabsenheden, analyserer svar fra regnskabsenheden og lagrer svarene i kanaldatabasen. Filtypenavnet definerer også bestemte transaktioner og hændelser, der skal registreres. Denne komponent omtales ofte som en *regnskabsdokumentudbyder*.
 - **Udvidelse til hardwarestation** – Denne komponent initialiserer kommunikationen med regnskabsenheden, sender anmodninger og direkte kommandoer til regnskabsenheden ud fra detailtransaktions-/hændelsesdata, der er hentet fra regnskabsdokument, og modtager svar fra regnskabsenheden. Denne komponent omtales ofte som en *regnskabsconnector*.
 
-Et eksempel på regnskabsintegration for en regnskabsenhed indeholder CRT-udvidelsen eller hardwarestationsudvidelsen til henholdsvis en udbyder af regnskabsdokumenter og en regnskabsconnector. Det indeholder også følgende komponentkonfigurationer:
+Et eksempel på regnskabsintegration for en regnskabsenhed indeholder CRT- og hardwarestationsudvidelser for henholdsvis en udbyder af regnskabsdokumenter og en regnskabsconnector. Det indeholder også følgende komponentkonfigurationer:
 
 - **Konfiguration af udbydere af regnskabsdokumenter** – Denne konfiguration definerer en outputmetode til og et format for regnskabsdokumenter. Den indeholder også en datatilknytning til moms og betalingsmetoder for at gøre data fra Retail POS kompatible med de værdier, der er foruddefineret i regnskabsenhedens firmware.
 - **Konfiguration af regnskabsconnectoren** – Denne konfiguration definerer den fysiske kommunikation med den ønskede regnskabsenhed.
@@ -58,7 +58,7 @@ Følgende eksempel viser en typisk regnskabsregistreringskørsel af processen fo
 
 1. POS anmoder om et regnskabsdokument fra CRT.
 2. CRT bestemmer, om den aktuelle hændelse kræver regnskabsregistrering.
-3. CRT identificerer baseret på indstillingerne for regnskabsregistreringsprocessen en regnskabsconnector og tilsvarende regnskabsdokumentudbyder, der skal bruges til regnskabsregistreringen.
+3. CRT identificerer, baseret på indstillingerne for regnskabsregistreringsprocessen, en regnskabsconnector og tilsvarende regnskabsdokumentudbyder, der skal bruges til regnskabsregistreringen.
 4. CRT kører regnskabsdokumentudbyderen, der genererer et regnskabsdokument (f.eks. et XML-dokument), der repræsenterer detailtransaktionen eller -hændelsen.
 5. POS sender regnskabsdokumentet, som CRT forbereder til en hardwarestation.
 6. Hardwarestationen kører regnskabsconnectoren, der behandler regnskabsdokumentet og oplyser regnskabsenheden eller -tjenesten om det.
@@ -132,7 +132,7 @@ Funktionen til regnskabsintegration understøtter generering af kasseoptællings
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Eksempler på regnskabsintegration i Retail SDK
 
-Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i det Retail SDK, der er udgivet med Retail:
+Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i Retail SDK:
 
 - [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md)
 - [Eksempel på integration af bonprinter for Polen](emea-pol-fpi-sample.md)

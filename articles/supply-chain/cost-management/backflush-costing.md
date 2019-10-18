@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be4dbadaeac747953af44236156453edc596fcd5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018106"
 ---
 # <a name="backflush-costing"></a>Efterkalkuleret varetræk
 
@@ -61,11 +61,11 @@ For produkter, der leveres af et produktionsflow, skal styklistekalkulationen ba
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Kalkulation, der er baseret på produktionsflowet
 
-lean manufacturing til Microsoft Dynamics 365 for Finance and Operations er uafhængig af ruter. Omkostningsberegningen for produkter, der leveres fra et produktionsflow, kan baseres på selve produktionsflowet. Før beregningen kan udføres skal en kanban-regel oprettes, der leverer produktet fra produktionsflowet. Hvis et produkt kan leveres fra flere produktionsflow på det samme sted på beregningsdatoen, kan du vælge produktionsflowet for styklistekalkulationen. På siden **Standardproduktionsflow** kan du konfigurere et produktionsflow for standard for hver vare. Hvis der findes flere kanban-regler for samme produkt i det produktionsflow, der er aktivt på beregningsdatoen, vælges den første kanban-regel, der er aktiv for beregningen.
+lean manufacturing til Dynamics 365 Supply Chain Management er uafhængig af ruter. Omkostningsberegningen for produkter, der leveres fra et produktionsflow, kan baseres på selve produktionsflowet. Før beregningen kan udføres skal en kanban-regel oprettes, der leverer produktet fra produktionsflowet. Hvis et produkt kan leveres fra flere produktionsflow på det samme sted på beregningsdatoen, kan du vælge produktionsflowet for styklistekalkulationen. På siden **Standardproduktionsflow** kan du konfigurere et produktionsflow for standard for hver vare. Hvis der findes flere kanban-regler for samme produkt i det produktionsflow, der er aktivt på beregningsdatoen, vælges den første kanban-regel, der er aktiv for beregningen.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Beregning, der er baseret på ruten
 
-Beregning, der er baseret på en rute, er gyldig som en beregning, der er baseret på et produktionsflow. En beregning, der er baseret på en rute, kan dog ikke bruge efterkalkulation til lean manufacturing-funktioner. Ruten skal bruge ressourcekravene for ressourcegrupper. Hvis du vil undgå systematiske afvigelser, skal den bruge samme arbejdsceller, eller i det mindste de samme omkostningsarter. Igen skal du undgå omkostningsarter for opsætning og antal. De hjælper ikke med at beregne omkostningerne i en mere detaljeret opdeling end efterkalkuleret varetræk for lean manufacturing. Overvej at resultaterne af kostprisopdelingen for at finde ud af, hvilken indstilling (produktionsflowet eller rute), du skal bruge til at beregne kostprisen. Den version, der kommer tættest på virkeligheden og giver færrest afvigelser overordnet set, er den bedste valgmulighed. I et Lean manufacturing-miljø, hvor et produkt leveres af et enkelt produktionsflow og en enkelt kanban-regel, er den beregning, der er baseret på produktionsflowet, sandsynligvis mest nøjagtig. For et produkt, der kan leveres af lean manufacturing og produktionsordrer på samme sted, eller som kan have flere produktionsflow eller flere kanban-regler i det samme flow, kan en beregning være mere nøjagtig, hvis den er baseret på en ruteversion, der er udviklet specielt til omkostningsberegningen, og ikke til produktion. Produktionsflowberegningen skal bruges til beregning af produkter, der involverer underleverandørarbejde. I Microsoft Dynamics 365 for Finance and Operations bruger omkostningsmodellerne for underleverandørarbejde via produktionsordrer og underleverandørarbejde i Lean manufacturing to forskellige metoder. Lean manufacturing introducerer en ny kostprisgruppetype **Direkte outsourcing** for at beregne underleverandørtjenester.
+Beregning, der er baseret på en rute, er gyldig som en beregning, der er baseret på et produktionsflow. En beregning, der er baseret på en rute, kan dog ikke bruge efterkalkulation til lean manufacturing-funktioner. Ruten skal bruge ressourcekravene for ressourcegrupper. Hvis du vil undgå systematiske afvigelser, skal den bruge samme arbejdsceller, eller i det mindste de samme omkostningsarter. Igen skal du undgå omkostningsarter for opsætning og antal. De hjælper ikke med at beregne omkostningerne i en mere detaljeret opdeling end efterkalkuleret varetræk for lean manufacturing. Overvej at resultaterne af kostprisopdelingen for at finde ud af, hvilken indstilling (produktionsflowet eller rute), du skal bruge til at beregne kostprisen. Den version, der kommer tættest på virkeligheden og giver færrest afvigelser overordnet set, er den bedste valgmulighed. I et Lean manufacturing-miljø, hvor et produkt leveres af et enkelt produktionsflow og en enkelt kanban-regel, er den beregning, der er baseret på produktionsflowet, sandsynligvis mest nøjagtig. For et produkt, der kan leveres af lean manufacturing og produktionsordrer på samme sted, eller som kan have flere produktionsflow eller flere kanban-regler i det samme flow, kan en beregning være mere nøjagtig, hvis den er baseret på en ruteversion, der er udviklet specielt til omkostningsberegningen, og ikke til produktion. Produktionsflowberegningen skal bruges til beregning af produkter, der involverer underleverandørarbejde. Omkostningsmodellerne for underleverandørarbejde via produktionsordrer og underleverandørarbejde i Lean manufacturing bruger to forskellige metoder. Lean manufacturing introducerer en ny kostprisgruppetype **Direkte outsourcing** for at beregne underleverandørtjenester.
 
 ## <a name="material-consumption"></a>Materialeforbrug
 Når der forbruges materiale fra lageret til IGVF, føjes materialekostprisen til IGVF til den faktiske standardkostpris for en kostprisgruppe. Denne handling finder sted på følgende betingelser:
@@ -82,7 +82,7 @@ Produkter modtages fra produktionsflowet på følgende betingelser:
 Produkter, der modtages fra produktionsflowet, trækkes fra IGVF.
 
 ## <a name="products-in-wip"></a>Produkter i IGVF
-I IGVF-modellen til Lean manufacturing i Microsoft Dynamics 365 for Finance and Operations kan du bruge status for kanban-materialehåndteringsenheden til at administrere det materiale, halvfabrikata og færdigvarer, der er en del af IGVF.
+I IGVF-modellen til Lean manufacturing kan du bruge status for kanban-materialehåndteringsenheden til at administrere det materiale, halvfabrikata og færdigvarer, der er en del af IGVF.
 
 -   **Tildelt** - Kanban kan har forbrugt materiale, der er registreret i IGVF.
 -   **Modtaget** - Hvis en kanban refererer til den seneste aktivitet, hvor **Opdater lagerbeholdning ved modtagelse** er angivet til **Nej**, repræsenterer den en fuld materialehåndteringsenhed for et produkt eller et halvfabrikataprodukt, der ikke er registreret på lageret.

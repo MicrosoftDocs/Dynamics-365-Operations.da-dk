@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570382"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248918"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -78,7 +78,7 @@ Når du bekræfter en købsaftale, gemmes den aktuelle version af købsaftalen i
 Når du opretter en indkøbsordre, kan du anvende en købsaftale til den. Oplysninger fra betingelserne for aftalen, såsom betalingsbetingelser, leveringsbetingelser og leveringsadresse, kopieres derefter til hovedet i indkøbsordren. Hvis indkøbsordren indeholder en eller flere ordrelinjer for produkter og kategorier, der er omfattet af aftalen, bruges priser og rabatter fra købsaftalen på disse linjer. Beløbet eller antallet på ordrelinjen bidrager til opfyldelse af forpligtelsen i købsaftalen. Samme indkøbsordre kan indeholde både linjer, der ikke er relateret til en købsaftale, og linjer, der har en forpligtelse til en købsaftale.  
 
 Du kan kun vælge en købsaftale, når du opretter en indkøbsordre. Du kan ikke vælge en købsaftale, når indkøbsordren er blevet oprettet.  
-I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Finance and Operations automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
+I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Supply Chain Management automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Købsaftaler og samhandel internt i firmaet
 Der kan oprettes interne handelsforhold mellem kreditorkonti og debitorkonto, som er i forskellige juridiske enheder. Når der oprettes en salgsordre eller indkøbsordre for en af parterne, oprettes en intern ordretilknytning. I ordretilknytningen oprettes salgsordren og indkøbsordren i de relevante juridiske enheder.  

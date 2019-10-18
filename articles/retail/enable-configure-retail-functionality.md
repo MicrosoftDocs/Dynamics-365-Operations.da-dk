@@ -1,6 +1,6 @@
 ---
 title: Initialisere oprindelsesdata i nye detailmiljøer
-description: I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Microsoft Dynamics 365 for Retail.
+description: I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556892"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025510"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Initialisere oprindelsesdata i nye Retail-miljøer
 
 [!include [banner](includes/banner.md)]
 
-I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Microsoft Dynamics 365 for Retail.
+I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Dynamics 365 Retail.
 
 Når detailløsningen er blevet installeret via Microsoft Dynamics Lifecycle Services (LCS), skal du initialisere detailkonfigurationen for at oprette de grundlæggende konfigurationsdata.
 
@@ -39,7 +39,7 @@ Når detailløsningen er blevet installeret via Microsoft Dynamics Lifecycle Ser
 
 Hvis du vil initialisere detailkonfigurationen, skal du følge disse trin.
 
-1. Start Dynamics 365 for Retail-klienten.
+1. Start Retail-klienten.
 2. Klik på **Detail** &gt; **Konfiguration af hovedkontor** &gt; **Parametre** &gt; **Detailparametre**.
 3. Klik på **Initialiser**.
 
@@ -57,7 +57,7 @@ Initialiseringen opretter følgende standardkonfigurationsdata:
 - Skabeloner til validering af enheder
 - Batchjob til fjernelse af Commerce Data Exchange-sessionshistorik
 
-Derudover er logføring, der er relateret til betalingskortindustrien (PCI), aktiveret for Dynamics 365 for Retail-databasen.
+Derudover er logføring, der er relateret til betalingskortindustrien (PCI), aktiveret for Retail-databasen.
 
 > [!NOTE]
 > Der er en indstilling til at konfigurere Retail planlægger separat. Denne indstilling gør det muligt at nulstille Retail planlægger-konfigurationen til dens standardindstillinger.

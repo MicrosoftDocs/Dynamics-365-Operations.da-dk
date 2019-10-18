@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (13. august 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (13. august 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/13/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1c10d5d7639c1606b00f95e0bd2b3b3fec326787
-ms.sourcegitcommit: db84eeef6f0bd531ba45b5e66bdacfd0398472e6
+ms.openlocfilehash: b813f3e4707724c262a32aca1227b3d91d1a229f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887477"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025973"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-13-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (13. august 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-13-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (13. august 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Attract.
@@ -54,9 +54,9 @@ En ny indstilling gør det muligt for lederne at få vist performance for både 
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="platform-update-29"></a>Platform update 29
+### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 til Finance and Operations
 
-Du kan finde yderligere oplysninger om Platform update 29 under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations platform update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Du kan finde yderligere oplysninger om Platform update 29 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>Strømlinet medarbejderangivelse og navigation
 

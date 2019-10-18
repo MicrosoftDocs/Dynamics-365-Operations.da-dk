@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553432"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249534"
 ---
 # <a name="inventory-journals"></a>Lagerkladder
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553432"
 
 I dette emne beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
 
-Lagerkladder i Microsoft Dynamics 365 for Finance and Operations bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
+Lagerkladder i Supply Chain Management bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
 
 ## <a name="types-of-inventory-journals"></a>Typer af lagerkladder
 Du kan vælge mellem følgende lagerkladdetyper:
@@ -68,7 +68,7 @@ Når du færdigmelder en stykliste, kan du oprette en styklistekladde. Du kan bo
 
 ### <a name="item-arrival"></a>Varemodtagelse
 
-Du kan bruge varemodtagelseskladden til at registrere modtagelsen af varer (f.eks, fra indkøbsordrer). En varemodtagelseskladde kan oprettes som en del af modtagelsesstyring fra siden **Modtagelsesoversigt**, eller du kan manuelt oprette en kladdepostering fra siden **Varemodtagelse**. Hvis du aktiverer kladdenavnet for varemodtagelse for at kontrollere for plukpladser, søger Finance and Operations efter et sted til modtagede varer, og hvis der er plads, genereres der automatisk lokationsdestinationer til indgående varer.
+Du kan bruge varemodtagelseskladden til at registrere modtagelsen af varer (f.eks, fra indkøbsordrer). En varemodtagelseskladde kan oprettes som en del af modtagelsesstyring fra siden **Modtagelsesoversigt**, eller du kan manuelt oprette en kladdepostering fra siden **Varemodtagelse**. Hvis du aktiverer navnet for varemodtagelseskladde for at kontrollere for plukpladser, søger Supply Chain Management efter et sted til modtagne varer, og hvis der er plads, genereres der automatisk lokationsdestinationer til de indgående varer.
 
 ### <a name="production-input"></a>Produktionsindlagring
 
@@ -103,7 +103,7 @@ Dataenheder understøtter følgende typer integrationsmuligheder:
 Du kan finde flere oplysninger under [Dataenheder](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Ikke alle lagerkladder OData-aktiverede, så du kan ikke bruge Excel-dataconnectoren til at hente data, der er udgivet, opdateret og importeret tilbage til Dynamics 365 for Finance and Operations. 
+> Ikke alle lagerkladder er OData-aktiverede, så du kan ikke bruge Excel-dataconnectoren til at hente data, der er udgivet, opdateret og importeret tilbage til Supply Chain Management. 
 
 En anden forskel mellem kladdedataenhederne er muligheden for at bruge sammensatte enheder, der indeholder både hoved og linjedata. I øjeblikket kan du bruge de sammensatte enheder til:
 -   Lagerreguleringskladde

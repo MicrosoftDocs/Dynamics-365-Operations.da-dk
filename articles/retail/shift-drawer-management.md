@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556430"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017891"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Styring af skift og kasseapparater
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556430"
 
 I dette emne forklares, hvordan du opretter og bruger skiftehold i detail-POS.
 
-I Microsoft Dynamics 365 for Retail, beskriver betegnelsen *Skift* samlingen af POS-transaktionsdata og aktiviteter mellem to tidspunkter. For hvert skifte sammenlignes det forventede pengebeløb med det beløb, der er optalt og indberettet.
+I Dynamics 365 Retail, beskriver betegnelsen *Skift* samlingen af POS-transaktionsdata og aktiviteter mellem to tidspunkter. For hvert skifte sammenlignes det forventede pengebeløb med det beløb, der er optalt og indberettet.
 
 Skiftehold åbnes typisk i begyndelsen af arbejdsdagen. På dette tidspunkt kan en bruger opgøre startbeløbet, som pengeskuffen indeholder. Salgstransaktioner udføres derefter i løbet af dagen. I slutningen af dagen, tælles kasseskuffen og slutbeløbene angives. Skiftet lukkes, og der oprettes en Z-rapport. Z-rapporten angiver, om der er overskud eller tab.
 
@@ -69,7 +69,7 @@ Hvis delte skift skal bruges i en butik, skal pengeskuffen konfigureres som en "
 
 ## <a name="shift-and-drawer-operations"></a>Skift- og skuffehandlinger
 
-Der kan foretages forskellige handlinger for at ændre tilstanden for et skift eller for at forøge eller formindske det pengebeløb, der i pengeskuffen. I dette afsnit beskrives disse Skift-operationer for Microsoft Dynamics 365 for Retail Modern POS og Cloud POS.
+Der kan foretages forskellige handlinger for at ændre tilstanden for et skift eller for at forøge eller formindske det pengebeløb, der i pengeskuffen. I dette afsnit beskrives disse Skift-operationer for Retail Modern POS og Cloud POS.
 
 ### <a name="open-shift"></a>Åbne skift
 

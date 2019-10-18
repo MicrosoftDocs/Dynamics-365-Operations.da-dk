@@ -1,6 +1,6 @@
 ---
-title: Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations – Lagersted
-description: I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations – Lagersted til at scanne stregkoder ved hjælp af kameraet på en mobilenhed.
+title: Scanne stregkoder med et kamera i Dynamics 365 Supply Chain Management - Lagersted-app
+description: I dette emne beskrives, hvordan du konfigurerer Dynamics 365 Supply Chain Management - Lagersted-appen til at scanne stregkoder ved hjælp af kameraet på en mobilenhed.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742919"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251449"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations – Lagersted
+# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Scanne stregkoder med et kamera i Dynamics 365 Supply Chain Management - Lagersted-app
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations – Lagersted til at scanne stregkoder ved hjælp af kameraet på en mobilenhed. 
+I dette emne beskrives, hvordan du konfigurerer Dynamics 365 Supply Chain Management - Lagersted-appen til at scanne stregkoder ved hjælp af kameraet på en mobilenhed. 
 
 ## <a name="prerequisites"></a>Forudsætninger
-For at bruge denne funktion skal du have version 1.2.0.0 af Lagersted installeret, og enheden skal have et kamera. Når du åbner appen efter opdateringen, bliver du spurgt, om du vil tillade, at Dynamics 365 for Finance and Operations – Lagersted-programmet bruger kameraet. Hvis enheden ikke har et kamera, vises der ikke et prompt, og du kan ikke bruge et kamera som scanner. 
+For at bruge denne funktion skal du have version 1.2.0.0 af Lagersted-appen installeret, og enheden skal have et kamera. Når du åbner appen efter opdateringen, bliver du spurgt, om du vil tillade, at appen bruger kameraet. Hvis enheden ikke har et kamera, vises der ikke et prompt, og du kan ikke bruge et kamera som scanner. 
 
 ## <a name="setup"></a>Konfiguration
 I skærmindstillingerne i lagerstedsprogrammet kan du vælge, om kameraet skal bruges til scanning af stregkoder. Hvis du aktiverer **Brug kameraet som scanner**, kan du bruge kameraet til alle inputfelter, hvor den foretrukne inputtilstand er indstillet til **Scannes**. 
 
-Hvis du vil styre, om et inputfelt skal kunne scannes, skal du på siden **Feltnavne for lagerstedsapp** i Dynamics 365 for Finance and Operations indstille **Foretrukket inputtilstand** til **Scannes**. Når denne indstilling er markeret, kan et kamera bruges til scanning i lagerstedsappen. Du kan finde oplysninger om, hvordan du konfigurerer appfeltnavne i Lagersted, under [Konfigurere appfeltnavne i lagerstedsappen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+Hvis du vil styre, om et inputfelt skal kunne scannes, skal du på siden **Feltnavne for lagerstedsapp** indstille **Foretrukket inputtilstand** til **Scanning**. Når denne indstilling er markeret, kan et kamera bruges til scanning i lagerstedsappen. Du kan finde oplysninger om, hvordan du konfigurerer appfeltnavne i Lagersted, under [Konfigurere appfeltnavne i lagerstedsappen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Understøttede stregkodeformater
 De mest almindelige stregkodeformater understøttes, herunder kode 128, kode 39, kode 93, EAN-8, EAN-13, UPC-E, UPC-A og QR-koder. 

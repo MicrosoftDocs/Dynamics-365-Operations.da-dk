@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 1b55b91246b22951f4e1d148f59444423e1d8a3d
-ms.sourcegitcommit: e54607a2c80bec4db05045825914f50947f6e31e
+ms.openlocfilehash: 811d499a3eb8133e5ffd29bb4ae6a0c57708accd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1917506"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023436"
 ---
 # <a name="create-and-update-store-hours"></a>Oprette og opdatere åbningstider
 
@@ -36,7 +36,7 @@ Der kan konfigureres flere åbningstider på tværs af forskellige kanaler. Diss
 
 Hvis en kunde har en afhentningsordre i en anden butik, kan kassereren vælge datoer, hvor varen til afhentning er tilgængelig i den pågældende butik. Butiksopslaget giver en reference til datoerne og åbningstiderne. Kassereren kan vælge en dato og et sted og kan også udskrive en afhentningskvittering, der omfatter åbningstiderne.
 
-Denne funktionalitet er tilgængelig i Microsoft Dynamics 365 for Retail version 8.1.2 og nyere.
+Denne funktionalitet er tilgængelig i Microsoft Dynamics 365 Retail version 8.1.2 og nyere.
 
 ## <a name="configure-store-hours"></a>Konfigurere åbningstider
 

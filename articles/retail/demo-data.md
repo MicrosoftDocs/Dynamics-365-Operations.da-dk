@@ -1,6 +1,6 @@
 ---
 title: Skærmlayouts til demodata i Retail Modern POS (MPOS) og Cloud POS
-description: Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Microsoft Dynamics 365 for Retail.
+description: Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570634"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019318"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Skærmlayouts til demodata i Retail Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Microsoft Dynamics 365 for Retail.
+Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Retail.
 
 ## <a name="overview"></a>Overblik
 
@@ -40,7 +40,7 @@ De eksempelskærmlayouts, der følger med Retail-demodata, leverer indhold, der 
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Anatomi af et skærmlayout-id
 
-For at finde skærmlayouts i Retail skal du gå til **Retail** \> **Konfiguration af kanal** \> **POS-opsætning** \> **POS** \> **Skærmlayout**.
+For at finde skærmlayouts skal du gå til **Retail** \> **Konfiguration af kanal** \> **POS-opsætning** \> **POS** \> **Skærmlayout**.
 
 ![Side til skærmlayouts i Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 

@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 55e0d128cdc12843763f81014edd1846b35ed220
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 694835d20e3401aaeb22aa19082a2cd0e3a0163a
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739788"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010700"
 ---
 # <a name="create-a-process-template"></a>Oprette en processkabelon
 
 [!include [banner](includes/banner.md)]
 
-En *ansættelsesprocesskabelon* indeholder alle de aktiviteter, der skal medtages som en del af ansættelsesprocessen for et job. I dette emne beskrives elementerne i en processkabelon i Microsoft Dynamics 365 for Talent: Attract. Det beskrives også, hvordan du opretter en skabelon.
+En *ansættelsesprocesskabelon* indeholder alle de aktiviteter, der skal medtages som en del af ansættelsesprocessen for et job. I dette emne beskrives elementerne i en processkabelon i Microsoft Dynamics 365 Talent: Attract. Det beskrives også, hvordan du opretter en skabelon.
 
 > [!NOTE]
 > Skabelonoprettelse er en del af tilføjelsesprogrammet til omfattende ansættelser i Attract.

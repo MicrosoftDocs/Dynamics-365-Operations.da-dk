@@ -1,6 +1,6 @@
 ---
 title: Oprette en lokalitetsprofil.
-description: Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 for Finance and Operations.
+description: Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/29/2019
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46aa1001c21ae39c158062444303ca02c0f41a45
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866973"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026779"
 ---
 # <a name="create-a-location-profile"></a>Oprette en lokalitetsprofil.
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 for Finance and Operations. Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer. I denne procedure skal vi oprette en profil for en lokalitet, der ikke kræver id-kontrol. Vi aktiverer blandede varer og blandede lagerstatusser og tillader cyklusoptælling. Du kan bruge denne procedure i USMF-demodatafirmaet.
+Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management. Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer. I denne procedure skal vi oprette en profil for en lokalitet, der ikke kræver id-kontrol. Vi aktiverer blandede varer og blandede lagerstatusser og tillader cyklusoptælling. Du kan bruge denne procedure i USMF-demodatafirmaet.
 
 
 1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Lagersted > Lokationsprofiler**.

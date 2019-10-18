@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (9. april 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (9. april 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/09/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 08f3f8150a120817618ee4d31197f3088c7483ab
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856418"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024085"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (9. april 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-9-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (9. april 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
@@ -91,4 +91,4 @@ Sporing af medarbejdernes fridage og forståelse af, hvordan fridagene beregnes,
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. Dubletformularen åbner ikke automatisk for at undgå forstyrrelser i forbindelse med indtastning af data.
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
-Med platformsopdatering 25 kan brugerne oprette påmindelsesregler, som automatisk fremsender e-mailbeskeder til kontaktpersoner, når de udløses af en hændelse. 
+Med Platform update 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk sender mailbeskeder til kontakter, når beskeder udløses af en hændelse. 

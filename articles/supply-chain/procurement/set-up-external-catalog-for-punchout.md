@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595605"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249376"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
@@ -37,12 +37,12 @@ For at konfigurere kommunikationen skal din leverandør give dig oplysninger til
 
 ## <a name="setting-up-an-external-catalog"></a>Konfiguration af et eksternt katalog
 
-Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en indkøbsrekvisition, at blive omdirigeret til et eksternt websted for at vælge produkter. De produkter, som medarbejderen vælger fra det eksterne katalog, returneres til Dynamics 365 for Finance and Operations med opdaterede prisoplysninger, og herfra kan de kan føjes til indkøbsrekvisitionen. Hensigten er ikke at give medarbejdere mulighed for at afgive en ordre på det eksterne websted. Når du opretter det eksterne katalog, skal du kontrollere, at formålet med det websted, der kan tilgås af det eksterne katalog, er at indsamle tilbudsoplysninger og ikke at afgive en faktisk ordre.
+Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en indkøbsrekvisition, at blive omdirigeret til et eksternt websted for at vælge produkter. De produkter, som medarbejderen vælger fra det eksterne katalog, returneres med opdaterede prisoplysninger, og herfra kan de kan føjes til indkøbsrekvisitionen. Hensigten er ikke at give medarbejdere mulighed for at afgive en ordre på det eksterne websted. Når du opretter det eksterne katalog, skal du kontrollere, at formålet med det websted, der kan tilgås af det eksterne katalog, er at indsamle tilbudsoplysninger og ikke at afgive en faktisk ordre.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Hvis du vil konfigurere et eksternt kreditorkatalog, skal du fuldføre følgende opgaver:
 
 1. Konfigurer et indkøbskategorihierarki. Du kan finde flere oplysninger under [Konfigurere politikker for indkøbskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Registrer leverandøren i Finance and Operations. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører i Microsoft Dynamics 365 under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+2. Registrer leverandøren i Supply Chain Management. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenheder](../pim/tasks/manage-unit-measure.md).
 4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Du kan finde yderligere oplysninger om denne opgave i [Konfigurere det eksterne leverandørkatalog](#configure-the-external-vendor-catalog).
 5. Test konfigurationerne af leverandørens eksterne katalog for at kontrollere, at indstillingerne er gyldige, og at du kan få adgang til leverandørens eksterne katalog. Brug handlingen **Valider indstillinger** til at validere den meddelelse om konfigurationsanmodning, du har defineret. Denne meddelelse bør medføre, at leverandørens eksterne katalogwebsted åbnes i et browservindue. Under valideringen kan du ikke bestille varer og tjenester fra leverandøren. Hvis du vil bestille varer og tjenester, skal du have adgang til leverandørkataloget fra en indkøbsrekvisition.
@@ -90,9 +90,9 @@ Leverandøren kan have et behov for at modtage et ydre element i opsætning af a
 Du kan finde flere oplysninger om cXML-protokollen på [cXML.org-webstedet](http://cxml.org/)
 
 ## <a name="post-back-message"></a>Tilbagesendelsesmeddelelse
-Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Finance and Operations. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen.Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje:
+Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Supply Chain Management. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen. Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje.
 
-| Meddelelse modtaget fra leverandør | Kopieret til rekvisitionslinje i Finance and Operations|
+| Meddelelse modtaget fra leverandør | Kopieret til rekvisitionslinje|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Mængde|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Eksternt vare-id|

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere callcenterkanaler
-description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer til callcentre ved hjælp af Microsoft Dynamics 365 for Retail.
+description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer til callcentre ved hjælp af Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549353"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024815"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurere callcenter-kanaler
 
 [!include [banner](includes/banner.md)]
 
-Et firma kan definere flere callcenterkanaler i Microsoft Dynamics 365 for Retail. Callcenter-kanaler konfigureres under **Retail** \> **Kanaler** \> **Callcentre** \> **Alle callcentre**, og de er specifikke for en juridisk enhed.
+Et firma kan definere flere callcenterkanaler i Dynamics 365 Retail. Callcenter-kanaler konfigureres under **Retail** \> **Kanaler** \> **Callcentre** \> **Alle callcentre**, og de er specifikke for en juridisk enhed.
 
 Når der oprettes en ny callcenter-kanal, tildeles den systematisk et driftsenhedsnummer. Da callcentre oprettes som driftsenheder, kan brugere knytte callcenter-kanalen til forskellige Retail-funktioner, f.eks. sortimenter, kataloger og specifikke leveringsmåder.
 
@@ -76,6 +76,8 @@ Når du definerer callcenter-kanalen, skal du knytte kanalens brugere til callce
 
 Som standard er flaget **Detailsalg** aktiveret på salgsordrehovedet for alle ordrer, som callcenterets brugere opretter. Ordrerne kan derefter udnytte systemets detailspecifikke pris- og kampagnefunktioner.
 
-Brugere, som ikke er sammenkædet med en callcenterkanal, bruger standardordreindtastningsfunktionerne i Microsoft Dynamics 365 for Finance and Operations. De ordrer, som disse brugere indtaster via salgsordreformularen, registreres ikke systematisk som ordrer i Retail. Derudover vil disse ordrer, der er indgivet af disse brugere, ikke være omfattet af behandlingsreglerne for ordrefuldførelse, logikken for detailpriser eller andre valideringer, som kan defineres i konfigurationen af callcenter-kanalen eller callcenterets systemparametre.
+
+Brugere, som ikke er sammenkædet med en callcenterkanal, bruger standardordreindtastningsfunktionerne i Microsoft Dynamics 365 Finance. De ordrer, som disse brugere indtaster via salgsordreformularen, registreres ikke systematisk som ordrer i Retail. Derudover vil disse ordrer, der er indgivet af disse brugere, ikke være omfattet af behandlingsreglerne for ordrefuldførelse, logikken for detailpriser eller andre valideringer, som kan defineres i konfigurationen af callcenter-kanalen eller callcenterets systemparametre.
+
 
 Når du er færdig med at konfigurere callcenter-kanalen og definere kanalens brugere, og når du vil sikre den ønskede systemadfærd, skal du kontrollere, at alle nødvendige parametre for callcenteret er defineret under **Retail** \> **Konfiguration af kanal** \> **Callcenter-konfiguration** \> **Callcenter-parametre**. Sørg for, at der også er defineret relaterede nummerserier.

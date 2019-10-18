@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b66369e57e006c9e2fe0a43e4b781c619a65c4a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556938"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025857"
 ---
 # <a name="store-order-fulfillment"></a>Butiksordreopfyldning
 
@@ -96,7 +96,7 @@ Når en ordre er blevet accepteret, kan linjer vælges og markeret som **Pluk**.
 
 Pluklister kan udskrives på POS'et, så det er nemmere for arbejdere at udføre plukprocessen. En udskrevet plukliste kan overføres til den arbejder, der udfører plukket, og efterhånden som produkterne plukkes, skal arbejderen manuelt markere dem som plukket på pluklisten.
 
-Pluklisteformat konfigureres i Dynamics 365 for Retail og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Pluklisteformat konfigureres i Retail og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Hvis der er valgt linjer, og der udskrives en plukliste for disse linjer, opdateres de automatisk med status **Pluk**.
 
@@ -105,7 +105,7 @@ Hvis der er valgt linjer, og der udskrives en plukliste for disse linjer, opdate
 - **Resultatstatus:** Plukket eller delvist plukket
 - **Resultatstatus for administration:** Plukket eller delvist plukket
 
-Når den fysiske plukproces er blevet udført, kan linjer markeres som **Plukket**. Hvis du vælger en linje og markere den som **Plukket**, udføres et realtidsopkald for at opdatere ordrelinjen i Dynamics 365 for Retail. Når linjen er markeret som **Plukket**, opdateres status i administrationen på POS'et også til **Plukket**, og lagertransaktioner afspejler, at det angivne antal er reduceret.
+Når den fysiske plukproces er blevet udført, kan linjer markeres som **Plukket**. Hvis du vælger en linje og markere den som **Plukket**, udføres et realtidsopkald for at opdatere ordrelinjen. Når linjen er markeret som **Plukket**, opdateres status i administrationen på POS'et også til **Plukket**, og lagertransaktioner afspejler, at det angivne antal er reduceret.
 
 Med tiden kan delmængder af ordrer, der behandles, blive behandlet for en bestemt linje. Hvis der vælges en linje og handlingen **Markér som plukket**, og antallet er større end 1, bliver brugeren bedt om at angive antallet. Det resterende antal, der skal plukkes, udfyldes automatisk. Hvis et antal, der er mindre end det resterende antal, angives, bliver status for linjen **Delvist plukket**. Når ordrelinjen opdateres i administrationen, afspejler den også status som delvist plukket, og det antal, der er angivet af brugeren, bruges til opdatering af lageret.
 
@@ -122,7 +122,7 @@ Ordrelinjer kan pakkes på et hvilket som helst tidspunkt, efter at ordrelinjen 
 - **Resultatstatus:** Pakket eller delvist pakket
 - **Resultatstatus for administration:** Leveret eller delvist leveret
 
-Denne handling markerer linjer som pakkede eller delvist pakkede og udskriver en følgeseddel. Du kan udskrive en følgeseddel for at validere de produkter, der er pakket sammen. Følgeseddelformatet konfigureres i Dynamics 365 for Retail og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Denne handling markerer linjer som pakkede eller delvist pakkede og udskriver en følgeseddel. Du kan udskrive en følgeseddel for at validere de produkter, der er pakket sammen. Følgeseddelformatet konfigureres i Retail og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Handling: Markér som pakket**
 

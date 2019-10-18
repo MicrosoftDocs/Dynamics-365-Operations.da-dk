@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577863"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018032"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
@@ -34,7 +34,7 @@ Dette emne indeholder oplysninger om konfiguration og implementering af den avan
 
 Når de avancerede automatiske gebyrfunktioner er aktiveret, kan ordrer, der oprettes i en understøttet detailkanal (POS, callcenter og online), udnytte de konfigurationer for [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services), der er defineret i ERP-programmet for gebyrer på både for ordrehoved- og -linjeniveau.
 
-I versioner før Dynamics 365 for Retail version 10.0 er konfigurationer af [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) kun tilgængelige for ordrer, der er oprettet i e-handels- og callcenterkanaler. I 10.0 og senere versioner kan POS-oprettede ordrer udnytte de automatiske gebyrkonfigurationer. På denne måde kan flere gebyrer systematisk føjes til salgstransaktioner.
+I versioner før Retail version 10.0 er konfigurationer af [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) kun tilgængelige for ordrer, der er oprettet i e-handels- og callcenter-kanaler. I 10.0 og senere versioner kan POS-oprettede ordrer udnytte de automatiske gebyrkonfigurationer. På denne måde kan flere gebyrer systematisk føjes til salgstransaktioner.
 
 I versioner før version 10.0 bliver POS-brugere bedt om at angive et forsendelsesgebyr manuelt under oprettelse af en "send alle" eller "send valgte" POS transaktion. Når gebyrfunktionerne i programmet bruges i forhold til, hvordan gebyrerne skrives til ordren, foretages der ingen systematisk beregning – beregningen til bestemmelse af værdien af gebyrerne er baseret på input fra brugeren. Gebyrerne kan kun tilføjes som en enkelt "forsendelse"-relaterede gebyrkode og kan kun dårligt redigeres eller ændres i POS, når de først er oprettet.
 

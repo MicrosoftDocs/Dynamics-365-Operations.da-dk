@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567993"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025023"
 ---
 # <a name="retail-statements"></a>Detailopgørelser
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Retail bruges processen til bogføring af opgørelsen til at redegøre for de transaktioner, der opstår i Cloud POS eller MPOS (Modern POS). Opgørelsesbogføringsprocessen bruger distributionsplanen til at trække en række POS-transaktioner til Headquarters-klienten (HQ). De parametre, der er defineret på siden **Detailparametre** og **Butikker**, bruges til at vælge de transaktioner, der trækkes til hver enkelt opgørelse.
+I Dynamics 365 Retail bruges processen til bogføring af opgørelsen til at redegøre for de transaktioner, der opstår i Cloud POS eller MPOS (Modern POS). Opgørelsesbogføringsprocessen bruger distributionsplanen til at trække en række POS-transaktioner til Headquarters-klienten (HQ). De parametre, der er defineret på siden **Detailparametre** og **Butikker**, bruges til at vælge de transaktioner, der trækkes til hver enkelt opgørelse.
 
 Følgende illustration viser til opgørelsesbogføringsprocessen. I denne proces overføres transaktioner, der er registreret i POS, til klienten ved hjælp af Retail planlægger. Når klienten modtager transaktionerne, kan du oprette, beregne og bogføre transaktionsopgørelsen for butikken.
 
@@ -85,6 +85,6 @@ Hvis afkrydsningsfeltet **Bogfør som arbejdsdag** ikke er markeret for den samm
 Når du bogfører en opgørelse, oprettes der salgsordrer og fakturaer for detailsalg i opgørelsen.
 
 - Salg efter princippet "kontant og afhentet" er samlet på én salgsordre og faktureret til den standardkunde, der er knyttet til butikken.
-- Detailsalg, for hvilket der blev føjet en kunde til transaktionen i Microsoft Dynamics 365 for Retail POS, genererer separate salgsordrer og fakturaer – en for hver entydig kunde.
+- Detailsalg, for hvilket der blev føjet en kunde til transaktionen i Retail POS, genererer separate salgsordrer og fakturaer – én for hver entydig kunde.
 
 Der oprettes automatisk betalingskladder for betalingerne i opgørelsen, og lageret opdateres for POS-butikken.

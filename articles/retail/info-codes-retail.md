@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6939ed56944ecafb29c1cadd2744b5746b19cb46
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572121"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023358"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Infokoder og infokodegrupper
 
@@ -42,7 +42,7 @@ Infokoder giver mulighed for at registrere data ved et kasseapparat (POS). Du ka
 
 ## <a name="info-codes-group"></a>Infokodegruppe
 
-I Dynamics 365 for Retail kan du oprette grupper af infokoder. Infokodegrupper giver fleksibilitet ved at give dig mulighed for at definere færre infokoder og derefter bruge dem på en mere alsidig måde. Du kan bruge infokodegrupper på følgende måder:
+I Retail kan du oprette grupper af infokoder. Infokodegrupper giver fleksibilitet ved at give dig mulighed for at definere færre infokoder og derefter bruge dem på en mere alsidig måde. Du kan bruge infokodegrupper på følgende måder:
 
 - Definere færre infokoder og nemt bruge dem igen. Infokoder, der er inkluderet i infokodegrupper, har ingen foruddefinerede afhængigheder i forhold til andre infokoder. Du kan medtage den samme infokode i flere infokodegrupper og derefter bruge prioritering for at vise de samme infokoder i en rækkefølge, der giver mening i en given situation.
 - Sammenkæd infokoder med andre infokoder eller infokodegrupper for at indsamle oplysninger om et produkt eller en postering uden at skulle definere en separat infokode eller sammenkædet infokode for hvert scenarie.

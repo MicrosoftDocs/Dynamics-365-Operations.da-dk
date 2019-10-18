@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (31. oktober 2018)
-description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
+title: Nyheder eller ændringer i Dynamics 365 Talent - Core HR (31. oktober 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/31/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d6942f8e4dc86f18a081b347df0567b1358a87ab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2ad9be740d917a760815718a1473d7bcba97968
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517642"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025926"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-31-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (31. oktober 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-october-31-2018"></a>Nyheder eller ændringer i Dynamics 365 Talent: Core HR (31. oktober 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -33,15 +33,15 @@ ms.locfileid: "1517642"
 
 Dette emne beskriver funktioner, der enten er nye eller ændrede i Core HR.
 
-## <a name="create-links-from-talent-to-finance-and-operations"></a>Oprette links fra Talent til Finance and Operations
-Med denne nye navigationsfunktion kan du oprette en tilknytning fra Talent til Finance and Operations, så du kan navigere direkte på Finance and Operations-sider. Når links er konfigureret, kan du angive navn og gruppe for linket, hvor linket skal vises i Talent, og den destinationsside, der skal åbnes i Finance and Operations.
+## <a name="create-links-from-talent-to-finance"></a>Oprette links fra Talent til Finance
+Med denne nye navigationsfunktion kan du oprette et link fra Talent til Finance, så du kan navigere direkte til Finance-sider. Når links er konfigureret, kan du angive navn og gruppe for linket, hvor linket skal vises i Talent, og den destinationsside, der skal åbnes i Finance.
 
 #### <a name="coming-soon"></a>Kommer snart
-Feltkontekst tilføjes senere, så det bliver muligt at navigere direkte til de tilsvarende poster i Finance and Operations. Du kan f.eks. bruge **Link til felt** til at angive konteksten, så du kan gå direkte til en bestemt medarbejder eller placering i Finance and Operations.
+Feltkontekst tilføjes senere, så det bliver muligt at navigere direkte til de tilsvarende poster i Finance. Du kan f.eks. bruge **Link til felt** til at angive konteksten, så du kan gå direkte til en bestemt medarbejder eller placering i Finance.
 
 ### <a name="configure-target-systems"></a>Konfigurere destinationssystemer
 
-I Talent kan systemadministratorer definere links, som de kan få vist via arbejdsområdet Systemadministration. En del af konfigurationen er Finance and Operations-miljøer, som du vil navigere til som linkets "mål". Det gør du ved at give målsystemet et navn og angive URL-adressen til Finance and Operations-miljøet. Her er et eksempel på en Finance and Operations URL-adresse, som du kan angive: https://devax00124aos.cloud.test.dynamics.com/. Når du har konfigureret dine målsystemer, kan du definere dine links.
+I Talent kan systemadministratorer definere links, som de kan få vist via arbejdsområdet Systemadministration. En del af konfigurationen er Finance-miljøer, som du vil navigere til som linkets "destination". Det gør du ved at give målsystemet et navn og angive URL-adressen til Finance-miljøet. Her er et eksempel på en Finance URL-adresse, som du kan angive: https://devax00124aos.cloud.test.dynamics.com/. Når du har konfigureret dine målsystemer, kan du definere dine links.
 
 ### <a name="configure-links"></a>Konfigurer links
 
@@ -51,27 +51,27 @@ Hvert link, der oprettes, har følgende definerede oplysninger.
 
 - Aktivér dette link - Indstil til **Ja**, hvis linket skal kunne ses af brugere af Talent.
 
-- Vist navn – Angiv det navn, der skal vises som et link til Finance and Operations. Disse data oversættes ikke i øjeblikket.
+- Vist navn – Angiv det navn, der skal vises som et link til Finance. Disse data oversættes ikke i øjeblikket.
 
 - Overfladelink i formular - Vælg, hvilken side linket skal vises på.
 
 - Gruppe - Grupper er ikke påkrævet, men hvis du vil organisere dine links ved hjælp af grupper, skal du vælge en eksisterende gruppe eller oprette en ny ved hjælp af feltet **Gruppe**.
 
-- Destinationssystem - Vælg det destinationssystem, der blev oprettet ved hjælp af indstillingen **Konfigurer destinationssystem**. Det er dette Finance and Operations-miljø, der bliver brugt, når du navigerer ved hjælp af linket.
+- Destinationssystem - Vælg det destinationssystem, der blev oprettet ved hjælp af indstillingen **Konfigurer destinationssystem**. Det er dette Finance-miljø, der bliver brugt, når du navigerer ved hjælp af linket.
 
-- Brug brugerens aktuelle firma - Vælg **Ja**, hvis du vil bruge brugerens aktuelle regnskabskontekst, når du navigerer til Finance and Operations. Hvis **Nej** er markeret, kan du vælge det regnskab, der skal bruges.
+- Brug brugerens aktuelle firma - Vælg **Ja**, hvis du vil bruge brugerens aktuelle regnskabskontekst, når du navigerer til Finance. Hvis **Nej** er markeret, kan du vælge det regnskab, der skal bruges.
 
-- Menupunktet Mål – Angiv det menupunkt fra Finance and Operations, som linket skal bruge til navigation. De menupunkter, du direkte kan navigere til, er tilgængelige. Du kan finde det ønskede menupunkt ved at åbne Finance and Operations og åbne den side, der er målet for navigationen. Kopiér menupunktet fra URL-adressen. F.eks. hvis linket skal gå til listen over medarbejdere i Finance and Operations, skal du angive den værdi, der vises efter "&mi" i URL-adressen. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Menupunktet, der bruges til at navigere til listesiden over medarbejdere, er i dette eksempel: HcmWorkerListPage_Employees.
+- Menupunktet Destination – Angiv det menupunkt fra Finance, som linket skal bruge til navigation. De menupunkter, du direkte kan navigere til, er tilgængelige. Du kan finde det ønskede menupunkt ved at åbne Finance og åbne den side, der er destinationen for navigationen. Kopiér menupunktet fra URL-adressen. F.eks. hvis linket skal gå til listen over medarbejdere i Finance and Operations, skal du angive den værdi, der vises efter "&mi" i URL-adressen. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Menupunktet, der bruges til at navigere til listesiden over medarbejdere, er i dette eksempel: HcmWorkerListPage_Employees.
 
 - Link til datakilde – Vælg datakilden, som linket refererer til. De mest almindelige kilder som f.eks. **Arbejder** og **Stilling** er tilgængelige.
 
-- Link til felt - (kommer snart) Dette felt gør det muligt at navigere direkte fra en enkelt post i Talent til en enkelt post i Finance and Operations.
+- Link til felt - (kommer snart) Dette felt gør det muligt at navigere direkte fra en enkelt post i Talent til en enkelt post i Finance.
 
 ### <a name="access-to-links"></a>Adgang til links
 
 Systemadministratorer ser de nyoprettede links på de definerede sider, også selvom der i indstillingen **Aktivér dette link** er valgt **Nej**. Dette kan bruges til test af links, før de bliver gjort synlige for andre medarbejdere. Alle andre roller kan kun se de konfigurerede links, når der i indstillingen **Aktivér dette link** er valgt **Ja**. Medarbejdere, der har adgang til de sider, hvor linkene vises, har adgang til linksene.
 
-Brugere kan også have sikkerhedsrettigheder i Finance and Operations, der er defineret, så de giver adgang til sider i Finance and Operations. Hvis ikke, vises en sikkerhedsdialogboks, når linket bruges.
+Brugere kan også have sikkerhedsrettigheder i Finance, der er defineret, så de giver adgang til sider i Finance and Operations. Hvis ikke, vises en sikkerhedsdialogboks, når linket bruges.
 
 
 ## <a name="other-changesfixes"></a>Andre ændringer/rettelser

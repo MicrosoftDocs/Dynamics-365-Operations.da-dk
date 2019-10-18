@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21cfc2699fdcd6024286ee16bb60c3cd6dda5b67
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0ea5c240063bf8f98f07f2149d67730b30e5c0e4
+ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844700"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "1924464"
 ---
 # <a name="create-a-product-master"></a>Oprette en produktmaster
 
@@ -31,39 +31,33 @@ Opret en produktmaster for de foruddefinerede varianter. Det demodatafirma, der 
 
 
 ## <a name="create-a-new-product-master"></a>Opret en ny produktmaster
-1. Gå til Administration af produktoplysninger > Produkter > Produktmastere.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Produktnummer.
-    * Tallet skal være entydigt. En nummerserie kan konfigureres for feltet Produktnummer. I dette tilfælde skal brugeren ikke at angive en værdi.  
-4. Angiv en værdi i feltet Produktnavn.
-    * Indtast et beskrivende produktnavn. Værdien angives som standard til søgenavnet, men dette kan ændres af brugeren.  
-5. Klik på rullelisten i feltet Produktdimensionsgruppe for at åbne opslaget.
-    * Produktdimensionsgruppen styrer, hvilke af de 4 produktdimensioner der kan bruges til at oprette produktvarianter. I dette eksempel bruges en gruppe med farve og størrelse.  
+1. Gå til **Navigationsrude > Moduler > Administration af produktoplysninger > Produkter > Produktmastere**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Produktnummer**. Tallet skal være entydigt. En nummerserie kan konfigureres for feltet **Produktnummer**. I dette tilfælde skal brugeren ikke at angive en værdi.
+4. Skriv en værdi i feltet **Produktnavn**. Indtast et beskrivende produktnavn. Værdien angives som standard til søgenavnet, men dette kan ændres af brugeren.
+5. Klik på rullelisten i feltet **Produktdimensionsgruppe** for at åbne opslaget. Produktdimensionsgruppen styrer, hvilke af de 4 produktdimensioner der kan bruges til at oprette produktvarianter. I dette eksempel bruges en gruppe med farve og størrelse.
 6. Find og vælg den ønskede post på listen.
-7. Klik op linket i den valgte række på listen.
-    * Standardkonfigurationsteknologien er en foruddefineret variant. Den vil blive brugt i dette eksempel.  
-8. Klik på OK.
+7. Klik op linket i den valgte række på listen. Standarden **Konfigurationsteknologi** er 'Foruddefineret variant'. Den vil blive brugt i dette eksempel.
+8. Klik på **OK**.
 
 ## <a name="select-product-dimension-groups"></a>Vælg produktdimensionsgrupper
-1. Klik på rullelisten i feltet Farvegruppe for at åbne opslaget.
+1. Klik på rullelisten i feltet **Farvegruppe** for at åbne opslaget.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
-4. Klik på rullelisten i feltet Størrelsesgruppe for at åbne opslaget.
+4. Klik på rullelisten i feltet **Størrelsesgruppe** for at åbne opslaget.
 5. Find og vælg den ønskede post på listen.
 6. Klik op linket i den valgte række på listen.
 
 ## <a name="add-dimension-groups"></a>Tilføj dimensionsgrupper
-1. Klik på Produkt i handlingsruden.
-2. Klik på Dimensionsgrupper for at åbne dialogboksen.
-3. Klik på rullelisten i feltet Lagringsdimensionsgruppe for at åbne opslaget.
-    * Lagringsdimensionerne gør det lettere at styre, hvordan varer opbevares og plukkes på lageret. For eksempel kan en lagringsdimension omfatte lokation og lagersted.  
+1. Klik på **Produkt** i **handlingsruden**.
+2. Klik på **Dimensionsgrupper** for at åbne dialogboksen.
+3. Klik på rullelisten i feltet **Lagringsdimensionsgruppe** for at åbne opslaget. Lagringsdimensionerne gør det lettere at styre, hvordan varer opbevares og plukkes på lageret. For eksempel kan en lagringsdimension omfatte lokation og lagersted.
 4. Find og vælg den ønskede post på listen.
 5. Klik op linket i den valgte række på listen.
-6. Klik på rullelisten i feltet Sporingsdimensionsgruppe for at åbne opslaget.
-    * Sporingsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du kan føje til et produkt. For eksempel bruges batchnummeret og serienummeret til at spore lagervarer.  
+6. Klik på rullelisten i feltet **Sporingsdimensionsgruppe** for at åbne opslaget. Sporingsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du kan føje til et produkt. For eksempel bruges batchnummeret og serienummeret til at spore lagervarer.
 7. Find og vælg den ønskede post på listen.
 8. Klik op linket i den valgte række på listen.
-9. Klik på OK.
-10. Klik på Gem.
+9. Klik på **OK**.
+10. Klik på **Gem**.
 11. Luk siden.
 

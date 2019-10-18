@@ -1,6 +1,6 @@
 ---
-title: Oprette og sende en onboardingguide ved hjælp af Dynamics 365 for Talent - Onboard
-description: Dette emne forklarer, hvordan du bruger Microsoft Dynamics 365 for Talent - Onboard-appen til at oprette en onboardingguide for dine nyansatte. Denne opgave er et vigtigt første skridt i en totalstrategi for styring af menneskelig kapital (HCM).
+title: Oprette og sende en onboardingguide ved hjælp af Dynamics 365 Talent - Onboard
+description: Dette emne forklarer, hvordan du bruger Microsoft Dynamics 365 Talent - Onboard-appen til at oprette en onboardingguide for dine nyansatte. Denne opgave er et vigtigt første skridt i en totalstrategi for styring af menneskelig kapital (HCM).
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731412"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009848"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Oprette og sende en onboardingguide ved hjælp af Dynamics 365 for Talent: Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Oprette og sende en onboardingguide
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard giver dig mulighed for at oprette onboardingguider ud fra skabeloner, du har oprettet selv, fra skabeloner, der er tilgængelige i et galleri, eller fra bunden.
+Microsoft Dynamics 365 Talent: Onboard giver dig mulighed for at oprette onboardingguider ud fra skabeloner, du har oprettet selv, fra skabeloner, der er tilgængelige i et galleri, eller fra bunden.
 
 Når du har oprettet en onboardingguide, kan du sende den til en nyansat. Alternativt kan du sende den til flere nyansatte, som du angiver i en Microsoft Excel-fil, som du downloader fra Onboard-appen.
 

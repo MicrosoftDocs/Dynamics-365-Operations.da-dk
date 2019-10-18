@@ -3,7 +3,7 @@ title: Disponeringsindstillinger
 description: Dette emne indeholder oplysninger om de indstillinger for disponering, som behovsplanlægningen bruger til at beregne varebehov.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538888"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998965"
 ---
 # <a name="coverage-settings"></a>Disponeringsindstillinger
 
@@ -49,6 +49,19 @@ Du kan angive disponeringsindstillinger på flere måder:
 - Angiv disponeringsindstillinger for en dimensionsgruppe.
 
     Gå til **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg linket feltet **Lagringsdimensionsgruppe** i sektionen **Administration** i oversigtspanelet **Generelt** på siden **Frigivne produktdetaljer**. På siden **Lagringsdimensionsgrupper** skal du markere afkrydsningsfeltet **Disponer pr. dimension** for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen. Feltet **Disponer pr. dimension** skal være markeret for alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi.
+
+
+## <a name="coverage-codes"></a>Disponeringskoder
+
+Varedisponering kan konfigureres til at bruge forskellige genopfyldningsmetoder. Genopfyldningsmetoderne eller metoderne til angivelse partistørrelse er de teknikker, der bruges af systemet til at bestemme batchstørrelsen for købte eller fremstillede varer. 
+
+Hver genbestillingsmetode tildeles en af følgende disponeringskoder:
+
+- **Manuel** – Metoden til angivelse af partistørrelse, hvor systemet ikke foreslår købte, overflytninger eller produktionsordrer for varen. Planlæggeren for varen vil være ansvarlig for oprettelsen af de nødvendige ordrer til genopfyldning af varen.
+- **Pr. behov** – Metoden til angivelse af partistørrelse, hvor systemet opretter en planlagt indkøbs-, overførsels- eller produktionsordre pr. behov for varen. Dette bruges generelt til dyre varer med forbigående behov.  
+- **Pr. periode** - Metoden til angivelse af partistørrelse, som kombinerer alle behov for en periode til én ordre for varen. Ordren planlægges for den første dag i perioden, og dens antal vil opfylde nettobehovet i den oprettede periode. Perioden starter med det første behov for varen og dækker den definerede varighed i tiden. Den næste periode vil starte med de næste behov for varen.
+- **Min./Maks.** - Metoden til angivelse af partistørrelse, som indeholder genopfyldningen af lageret op til et bestemt niveau, når den forventede beholdning er lavere end en tærskel. Genopfyldningsantallet vil være forskellen mellem maksimumniveauet og det forventede disponible lagerniveau.
+
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

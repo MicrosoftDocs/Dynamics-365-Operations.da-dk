@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bd55988578be2b0287b399549f17642bfb1693b
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 24d75000e2c4b604e1acee94e9581291e156fa5d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783148"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017405"
 ---
 # <a name="assets-and-work-orders"></a>Aktiver og arbejdsordrer
 
@@ -54,4 +54,4 @@ Adskillige trin skal fuldføres, når du vil planlægge og køre et vedligholdel
 ![Figur 4](media/08-overview-image.png)
 
 > [!NOTE]
-> Når du generelt arbejder i Microsoft Dynamics 365 for Finance and Operations og modulet **Styring af aktiver**, skal du vælge **Ny** for at oprette en ny post, **Rediger** for at opdatere en eksisterende post og **Gem** for at gemme nye eller redigerede data.
+> Når du generelt arbejder i Dynamics 365 Supply Chain Management og modulet **Styring af aktiver**, skal du vælge **Ny** for at oprette en ny post, **Rediger** for at opdatere en eksisterende post og **Gem** for at gemme nye eller redigerede data.

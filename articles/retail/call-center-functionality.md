@@ -1,6 +1,6 @@
 ---
 title: Callcenter-salgsfunktioner
-description: Dette emne giver et overblik over funktionerne til callcentersalg i Microsoft Dynamics 365 for Retail.
+description: Dette emne giver et overblik over funktionerne til callcentersalg i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
@@ -19,26 +19,28 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549474"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025765"
 ---
 # <a name="call-center-sales-functionality"></a>Funktionalitet til callcenter-salg
 
 [!include [banner](includes/banner.md)]
 
-I Dynamics 365 for Retail er et callcenter en type detailkanal, som kan defineres i programmet. Når du definerer en bestemt kanal for dine callcenterenheder, kan systemet binde bestemte datastandarder og ordrebehandlingsstandarder til salgsordrer, der er oprettet af en bruger af callcenterkanalen.
+
+I Dynamics 365 Retail er et callcenter en type detailkanal, som kan defineres i programmet. Når du definerer en bestemt kanal for dine callcenterenheder, kan systemet binde bestemte datastandarder og ordrebehandlingsstandarder til salgsordrer, der er oprettet af en bruger af callcenterkanalen.
 
 Callcenterfunktioner omfatter avancerede salgspriser og kampagner, kataloger, gavekort, loyalitetsprogrammer og kuponer. Callcenterordrer bruges også af POS-programmet til at understøtte ordreopfyldningsscenarier på tværs af kanaler.
 
-Det er vigtigt at bemærke, at mens callcentermodulet kan anvendes af andre brancher end detailhandlen, er den aktuelle version af Dynamics 365 for Retail-callcenterprogrammet ikke optimeret til brug i B2B-ordrebehandlingsscenarier eller scenarier, hvor ordrer har en stor mængde salgslinjer. Det anbefales, at brugere, som vil udnytte callcenterfunktionerne til anden ordrebehandling end behandling af almindelige transaktioner direkte til forbrugeren, tager sig tid til at teste og validere, at aktivering af callcenterfunktionaliteten opfylder deres krav til funktion og ydeevne.
+Det er vigtigt at bemærke, at mens callcentermodulet kan anvendes af andre brancher end detailhandlen, er den aktuelle version af Retail-callcenterprogrammet ikke optimeret til brug i B2B-ordrebehandlingsscenarier eller scenarier, hvor ordrer har en stor mængde salgslinjer. Det anbefales, at brugere, som vil udnytte callcenterfunktionerne til anden ordrebehandling end behandling af almindelige transaktioner direkte til forbrugeren, tager sig tid til at teste og validere, at aktivering af callcenterfunktionaliteten opfylder deres krav til funktion og ydeevne.
 
 Ud over at understøtte ordreoprettelsen indeholder callcentermodulet også et brugervenligt kundeserviceprogram, der gør det lettere for brugerne at finde debitorkonti og gennemse alle de relaterede kundeordredata og -attributter. Kundeserviceskærmbilledet er udviklet til at give brugerne hurtig adgang til ordrerelaterede data, som gør det muligt for dem at besvare de mest almindelige ordrerelaterede spørgsmål, der modtages fra debitorer.
 
-Denne side indeholder links til relevant dokumentation, der er relateret til installation, konfiguration og den funktionelle brug af funktionerne i callcenteret i Dynamics 365 for Retail.
+Denne side indeholder links til relevant dokumentation, der er relateret til installation, konfiguration og den funktionelle brug af funktionerne i callcenteret i Retail.
+
 
 ## <a name="configure-the-call-center"></a>Konfigurere callcenteret
 

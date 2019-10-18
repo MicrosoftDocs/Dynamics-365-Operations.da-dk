@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40539d649d3ee43fea8dc71f608dd6281d1c0e39
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553993"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251678"
 ---
 # <a name="transportation-management-engines"></a>Transportstyringsprogrammer
 
@@ -31,15 +31,15 @@ ms.locfileid: "1553993"
 
 Transportstyringsprogrammer definerer den logik, der bruges til at oprette og behandle transportsatser i Transportstyring. 
 
-Et transportstyringsprogram beregner opgaver som f.eks. fragtmandens transportgebyr. Programsystemet gør det muligt at ændre beregningsstrategier ved kørsel baseret på data i Microsoft Dynamics 365 for Finance and Operations. Et transportstyringsprogram minder om en plug-in, der er relateret til en bestemt fragtfirmakontrakt.
+Et transportstyringsprogram beregner opgaver som f.eks. fragtmandens transportgebyr. Programsystemet gør det muligt at ændre beregningsstrategier ved kørsel baseret på data i Supply Chain Management. Et transportstyringsprogram minder om en plug-in, der er relateret til en bestemt fragtfirmakontrakt.
 
 ## <a name="what-engines-are-available"></a>Hvilke programmer er tilgængelige?
-Følgende tabel viser de transportstyringsprogrammer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations.
+Følgende tabel viser de transportstyringsprogrammer, der er tilgængelige.
 
-| Transportstyringsprogram | Betegnelse                                                                                                                                                                                                                                                                                                                 |
+| Transportstyringsprogram | Beskrivelse                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Satsprogram**                  | Beregner satser.                                                                                                                                                                                                                                                                                                           |
-| **Generisk program**               | Enkle hjælpeprogrammer, der bruges af andre programmer, der ikke kræver data fra Microsoft Dynamics 365 for Finance and Operations, for eksempel et fordelingsprogram. Fordelingsprogrammer bruges til at reducere de endelige omkostninger for transport til bestemte ordrer og linjer baseret på dimensioner, f.eks. volumen og vægt. |
+| **Generisk program**               | Enkle hjælpeprogrammer, der bruges af andre programmer, der ikke kræver data fra Supply Chain Management, for eksempel et fordelingsprogram. Fordelingsprogrammer bruges til at reducere de endelige omkostninger for transport til bestemte ordrer og linjer baseret på dimensioner, f.eks. volumen og vægt. |
 | **Program til kørte kilometer**               | Beregner transportafstanden.                                                                                                                                                                                                                                                                                     |
 | **Program til transittid**          | Beregner den tid, det tager at rejse fra start- til slutdestinationen.                                                                                                                                                                                                                                       |
 | **Zoneprogram**                  | Beregner zonen baseret på den aktuelle adresse og beregner antallet af zoner, der skal krydses for at kunne rejse fra adresse A til adresse B.                                                                                                                                                                    |
@@ -62,23 +62,23 @@ I de fleste tilfælde kan du klikke på knappen **Parametre** i konfigurationsfo
 |          Parameter           |                                                                                  Beskrivelse                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>RateBaseAssigner</em>   | .NET-typen, der fortolker satsens grundlæggende tildelingsdata for et bestemt skema. Syntaksen for parameterværdien består af to segmenter, der er afgrænset af en lodret streg ( |
-|  <em>MileageEngineCode</em>  |                       Kørselsprogramkode, der identificerer kørselsprogramposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
-| <em>ApportionmentEngine</em> |                        Generisk programkode, der identificerer fordelingsprogrammet i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+|  <em>MileageEngineCode</em>  |                       Kørselsprogramkode, der identificerer kørselsprogramposten i databasen.                        |
+| <em>ApportionmentEngine</em> |                        Generisk programkode, der identificerer fordelingsprogrammet i databasen.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan bruges metadata i transportstyringsprogrammer?
 ----------------------------------------------------------
 
-Transportstyringsprogrammer, der er baseret på data, som er defineret i Dynamics 365 for Finance and Operations, kan bruge forskellige dataskemaer. Transportstyringssystemet gør det muligt for forskellige transportstyringsprogrammer at bruge de samme generiske, fysiske databasetabeller. For at sikre korrekt kørselsfortolkning af programdata kan du definere metadata for tabellerne i databasen. Dette reducerer omkostningerne ved at bygge nye transportstyringsprogrammer, fordi der ikke kræves yderligere tabel- og formularstrukturer i Operations.
+Transportstyringsprogrammer, der er baseret på data, som er defineret i Supply Chain Management, kan bruge forskellige dataskemaer. Transportstyringssystemet gør det muligt for forskellige transportstyringsprogrammer at bruge de samme generiske, fysiske databasetabeller. For at sikre korrekt kørselsfortolkning af programdata kan du definere metadata for tabellerne i databasen. Dette reducerer omkostningerne ved at bygge nye transportstyringsprogrammer, fordi der ikke kræves yderligere tabel- og formularstrukturer i Operations.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Hvad kan bruges som søgedata i satsberegninger?
-De data, du bruger, når du beregner satser i Microsoft Dynamics 365 for Finance and Operations, styres af metadatakonfigurationen. For eksempel hvis du vil søge efter satser baseret på postnumre, skal du konfigurere metadata baseret på opslagstypen for et postnummer.
+De data, du bruger, når du beregner satser, styres af metadatakonfigurationen. For eksempel hvis du vil søge efter satser baseret på postnumre, skal du konfigurere metadata baseret på opslagstypen for et postnummer.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kræver alle programkonfigurationer metadata?
 Nej, transportstyringsprogrammer, der bruges til at hente de data, som skal bruges til satsberegning fra eksterne systemer, kræver ikke metadata. Satsdataene for disse programmer kan hentes fra eksterne transportfragtsystemer, normalt via en webtjeneste. Du kan for eksempel bruge et kørselsprogram, der henter data direkte fra Bing Maps, så du ikke behøver metadata for dette program.
 
 | **Bemærk!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Transportstyringsprogrammer, der leveres med Finance and Operations, er baseret på data, der hentes fra programmet. Programmer, der opretter forbindelse til eksterne systemer, leveres ikke sammen med Operations. Med den programbaserede udvidelsesmodel kan du dog bygge udvidelser med Microsoft Dynamics 365 for Finance and Operations-værktøjer til Visual Studio. |
+| Transportstyringsprogrammer, der leveres sammen med Supply Chain Management, er baseret på data, der hentes fra programmet. Programmer, der opretter forbindelse til eksterne systemer, leveres ikke sammen med Operations. Med den programbaserede udvidelsesmodel kan du dog bygge udvidelser med Visual Studio-værktøjer. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hvordan kan jeg konfigurere metadata til et transportstyringsprogram?
 Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskellige programtyper.
@@ -99,8 +99,3 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | 3        | Destination – startpostnummer | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 4        | Destination – slutpostnummer   | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 5        | Destinationsland           | Tilknytning | Streng    | Land/område |           |
-
-
-
-
-

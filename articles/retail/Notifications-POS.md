@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577974"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023692"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
 [!include [banner](includes/banner.md)]
 
-I det moderne detailmiljø tildeles medarbejderne i butikken forskellige opgaver, f.eks. at hjælpe kunder, indtaste transaktioner, udføre optællinger af lagerbeholdninger og modtage ordrer i butikken. POS-klienten leverer ét enkelt program, hvor medarbejderne kan udføre alle disse og mange andre opgaver. Da der skal udføres forskellige opgaver i løbet af dagen, skal medarbejderne evt. have besked, når noget kræver deres opmærksomhed. Beskedstrukturen på POS'et er en hjælp, fordi forhandlere kan bruge den til at konfigurere rollebaserede beskeder. I Microsoft Dynamics 365 for Retail med programopdatering 5 kan disse meddelelser kun konfigureres for POS-handlinger.
+I det moderne detailmiljø tildeles medarbejderne i butikken forskellige opgaver, f.eks. at hjælpe kunder, indtaste transaktioner, udføre optællinger af lagerbeholdninger og modtage ordrer i butikken. POS-klienten leverer ét enkelt program, hvor medarbejderne kan udføre alle disse og mange andre opgaver. Da der skal udføres forskellige opgaver i løbet af dagen, skal medarbejderne evt. have besked, når noget kræver deres opmærksomhed. Beskedstrukturen på POS'et er en hjælp, fordi forhandlere kan bruge den til at konfigurere rollebaserede beskeder. I Dynamics 365 for Retail med programopdatering 5 kan disse meddelelser kun konfigureres for POS-handlinger.
+
 
 På nuværende tidspunkt kan systemet kun vise beskeder for ordreopfyldningsoperationer. Fordi strukturen er udviklet til at kunne udvides, vil udviklere dog senere kunne skrive en beskedbehandler for operationer og få vist beskederne for den pågældende operation i POS'et.
 
@@ -68,7 +69,8 @@ I følgende illustration vises indstillingerne for dynamisk indhold i knapgitter
 
 ![Indstillinger for dynamisk indhold i knapgitterdesigneren](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
 
-Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Edge-browseren, og gå til siden **Skærmlayout** i Dynamics 365 for Finance and Operations, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og marker afkrydsningsfeltet **Aktiver dynamisk indhold**. Gå til **Detail \> Detail-it \> Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet.
+Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Edge-browseren, og gå til siden **Skærmlayout**, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og markér afkrydsningsfeltet **Aktivér dynamisk indhold**. Gå til **Detail \> Detail-it \> Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet.
+
 
 ![Finde det skærmlayout, der bruges af POS](./media/Choose_screen_layout.png "Finde skærmlayoutet")
 

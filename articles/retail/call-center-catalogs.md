@@ -1,6 +1,6 @@
 ---
 title: Callcenter-kataloger
-description: I dette emne beskrives call center-specifikke funktioner for kataloger i Microsoft Dynamics 365 for Retail.
+description: I dette emne beskrives call center-specifikke funktioner for kataloger i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ad50be1394daf5bffa6391d2f56340aad14120b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562735"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023653"
 ---
 # <a name="call-center-catalogs"></a>Callcenter-kataloger
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives de callcenterspecifikke funktioner, der er knyttet til katalogfunktionerne i Microsoft Dynamics 365 for Retail.
+I dette emne beskrives de callcenterspecifikke funktioner, der er knyttet til katalogfunktionerne i Dynamics 365 Retail.
 
-Katalogfunktionerne i Dynamics 365 for Retail kan bruges til flere formål. Oprindeligt blev katalogfunktionerne oprettet for at understøtte integration af e-handel med tredjepart. Under opsætning af kataloget kunne virksomheder oprette en gruppering af produkter og attributter, der kunne udgives eksternt med henblik på forbrug i en tredjeparts e-handelsløsning.
+Katalogfunktionerne i Retail kan bruges til flere formål. Oprindeligt blev katalogfunktionerne oprettet for at understøtte integration af e-handel med tredjepart. Under opsætning af kataloget kunne virksomheder oprette en gruppering af produkter og attributter, der kunne udgives eksternt med henblik på forbrug i en tredjeparts e-handelsløsning.
 
-Da understøttelse af en callcenterkanal blev tilføjet i Dynamics 365 for Retail, blev katalogkonceptet udvidet, så der kunne tilføjes yderligere funktioner til understøttelse og administration af funktioner, der er relateret til traditionelle marketingkataloger direkte til forbrugeren. Et firma, der sælger direkte til forbrugerne, udgiver ofte trykte kataloger, som derefter sendes til et eller flere kundesegmenter. Disse kataloger indeholder normalt bestemte kampagner eller tilbud, der kun anvendes, hvis kunden kan angive en katalogidentifikationskode på tidspunktet for oprettelse af ordren.
+Da understøttelse af en callcenterkanal blev tilføjet i Retail, blev katalogkonceptet udvidet, så der kunne føjes yderligere funktioner til understøttelse og administration af funktioner, der er relateret til traditionelle marketingkataloger direkte til forbrugeren. Et firma, der sælger direkte til forbrugerne, udgiver ofte trykte kataloger, som derefter sendes til et eller flere kundesegmenter. Disse kataloger indeholder normalt bestemte kampagner eller tilbud, der kun anvendes, hvis kunden kan angive en katalogidentifikationskode på tidspunktet for oprettelse af ordren.
 
-Firmaer, der benytter marketing direkte til forbrugerne, er meget fokuserede på at spore responsen på disse kataloger, for at sikre sig, at omkostninger til at producere og sende dem bliver dækket ind. For at spore kundernes respons er der normalt trykt en kode på bagsiden af kataloget, og denne kode skal oplyses og anvendes, når modtageren af kataloget ringer for at afgive en ordre via telefon (eller oftere skal koden nu angives, når kunden afgiver en ordre online). Der bruges forskellige betegnelser i branchen til at identificere denne katalogsporingskode (herunder nøglekode, kampagnekode, katalogkode og kildekode), men i Dynamics 365 for Retail refererer vi til koden som **Kildekode-id**.
+Firmaer, der benytter marketing direkte til forbrugerne, er meget fokuserede på at spore responsen på disse kataloger, for at sikre sig, at omkostninger til at producere og sende dem bliver dækket ind. For at spore kundernes respons er der normalt trykt en kode på bagsiden af kataloget, og denne kode skal oplyses og anvendes, når modtageren af kataloget ringer for at afgive en ordre via telefon (eller oftere skal koden nu angives, når kunden afgiver en ordre online). Der bruges forskellige betegnelser i branchen til at identificere denne katalogsporingskode (herunder nøglekode, kampagnekode, katalogkode og kildekode), men i Retail refererer vi til koden som **Kildekode-id**.
 
 ## <a name="basic-catalog-setup"></a>Grundlæggende katalogopsætning
 
@@ -92,7 +92,7 @@ Når du konfigurerer produkterne i kataloget, kan du bruge handlingen **Layout f
 
 ## <a name="catalog-requests"></a>Kataloganmodninger
 
-Når kataloger konfigureres og udgives i Dynamics 365 for Retail, kan funktionen **Send katalog** kan anvendes. Denne funktion er tilgængelig på siderne **Kundesøgning** og **Kundeservice**. Når du har valgt en kundepost via **Kundesøgning**, eller mens du fik vist en bestemt kundekonto fra **Kundeservice**, kan brugerne vælge indstillingen **Send katalog**, der åbner en dialogboks, hvor brugeren kan vælge på en liste over alle udgivne og aktive kataloger. Brugeren kan vælge et katalog og et antal og et bestemt kilde kode-id, der skal sendes. Når de klikker på knappen **Send**, gemmes en anmodning, der kan administreres ved at udskrive rapporten **Kataloganmodninger**. Du kan finde denne rapport ved at gå til **Detail** \> **Call center-rapporter** \> **Kataloganmodningsrapport**. Rapporten viser alle kataloganmodninger, herunder kundeoplysningerne som navn og adresse på den kunde, der har anmodet om kataloget. Denne rapport kan bruges internt, eller dataene kan overføres til tredjepart, som understøtter eksterne processer, som kræves for fysisk at sende kataloget til kunden.
+Når kataloger konfigureres og udgives i Retail, kan funktionen **Send katalog** anvendes. Denne funktion er tilgængelig på siderne **Kundesøgning** og **Kundeservice**. Når du har valgt en kundepost via **Kundesøgning**, eller mens du fik vist en bestemt kundekonto fra **Kundeservice**, kan brugerne vælge indstillingen **Send katalog**, der åbner en dialogboks, hvor brugeren kan vælge på en liste over alle udgivne og aktive kataloger. Brugeren kan vælge et katalog og et antal og et bestemt kilde kode-id, der skal sendes. Når de klikker på knappen **Send**, gemmes en anmodning, der kan administreres ved at udskrive rapporten **Kataloganmodninger**. Du kan finde denne rapport ved at gå til **Detail** \> **Call center-rapporter** \> **Kataloganmodningsrapport**. Rapporten viser alle kataloganmodninger, herunder kundeoplysningerne som navn og adresse på den kunde, der har anmodet om kataloget. Denne rapport kan bruges internt, eller dataene kan overføres til tredjepart, som understøtter eksterne processer, som kræves for fysisk at sende kataloget til kunden.
 
 ## <a name="additional-features"></a>Yderligere funktioner
 

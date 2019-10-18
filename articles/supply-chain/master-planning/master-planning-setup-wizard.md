@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 9cc2d99a8dfc28f8d9a9b36a5b74059a515822b9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 0310ac55d35421d8ad9080739fc5a393660ce520
+ms.sourcegitcommit: 261dc882710f29303b14f9be8a26d71d85d25345
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863603"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "1999528"
 ---
 # <a name="master-planning-setup-wizard"></a>Guiden installation af varedisponering
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Dette emne indeholder en vejledning til **Guiden installation af varedisponering**. Den forklarer, hvordan parameterforslag beregnes, og indeholder også eksempler, som viser, hvordan forskellige firmaer konfigurerer varedisponering på grundlag af deres forretningsbehov.
@@ -67,7 +66,7 @@ Du finder flere oplysninger under [Alloker tid til jobs i et jobbundt](https://d
 
 ### <a name="manufacturing-setup"></a>Opsætning af produktion
 
-Hvis du fremstiller varer, bliver der senere i guiden vist en side for **Opsætning af produktion **.
+Hvis du fremstiller varer, bliver der senere i guiden vist en side for **Opsætning af produktion**.
 
 ## <a name="scope-of-the-current-plan"></a>Omfang af den aktuelle plan
 

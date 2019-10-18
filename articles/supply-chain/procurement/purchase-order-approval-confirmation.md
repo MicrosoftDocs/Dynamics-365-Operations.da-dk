@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572690"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248860"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkende og bekræfte indkøbsordrer
 
@@ -39,7 +39,7 @@ Når en købsordre (IO) er blevet oprettet, skal den evt. gennemgå en godkendel
 ## <a name="approval-of-purchase-orders"></a>Godkendelse af indkøbsordrer
 IO'er, der ikke bruger ændringsstyring, får status som **Godkendt**, så snart de er oprettet, mens IO'er, der bruger ændringsstyring, får status som **Udkast**, når de oprettes. En indkøbsordre, der er oprettet ved autorisation af et ordreforslag fra varedisponering, får altid status **Godkendt**, uanset indstillingerne for ændringsstyring. En IO opretter kun lagertransaktioner, når den har nået status **Godkendt**. Derfor vises dette lager ikke som tilgængeligt for reservation eller mærkning, før ordren accepteres.  
 
-Du aktiverer ændringsstyring for IO'er ved at angive indstillingen **Aktivér ændringsstyring** på siden **Indkøbs- og forsyningsparametre**. Når ændringsstyring er aktiveret, skal IO'er gennemgå et godkendelsesforløb, når de er færdige. Microsoft Dynamics 365 for Finance and Operations er en editor til arbejdsgangsprocesser, hvor du kan definere en arbejdsgang til at repræsentere godkendelsesprocessen. Denne arbejdsgang kan omfatte regler for automatisk godkendelse, regler, som bestemmer, hvem der bliver tildelt til at godkende bestemte IO'er og regler for eskalering af en arbejdsgang, der har afventet godkendelse i lang tid. Du kan aktivere ændringsstyringsprocessen for alle kreditorer eller for bestemte kreditorer. Du kan også konfigurere processen, så den kan tilsidesættes for enkelte IO'er.  
+Du aktiverer ændringsstyring for IO'er ved at angive indstillingen **Aktivér ændringsstyring** på siden **Indkøbs- og forsyningsparametre**. Når ændringsstyring er aktiveret, skal IO'er gennemgå et godkendelsesforløb, når de er færdige. Supply Chain Management er en editor til arbejdsgangsprocesser, hvor du kan definere en arbejdsgang til at repræsentere godkendelsesprocessen. Denne arbejdsgang kan omfatte regler for automatisk godkendelse, regler, som bestemmer, hvem der bliver tildelt til at godkende bestemte IO'er og regler for eskalering af en arbejdsgang, der har afventet godkendelse i lang tid. Du kan aktivere ændringsstyringsprocessen for alle kreditorer eller for bestemte kreditorer. Du kan også konfigurere processen, så den kan tilsidesættes for enkelte IO'er.  
 
 Når ændringsstyring er aktiveret, går IO'er gennem seks godkendelsesstatusser, fra **Udkast** til **Færdiggjort**. Når en ordre er blevet godkendt, skal brugere, der vil ændre den, bruge handlingen **Anmod om ændring**.
 
@@ -55,7 +55,7 @@ Når ændringsstyring er aktiveret, går IO'er gennem seks godkendelsesstatusser
 ## <a name="confirming-purchase-orders"></a>Bekræftelse af indkøbsordrer
 IO'er, der har godkendelsesstatus **Godkendt**, kan gennemgå flere trin, før de bliver bekræftet. For eksempel skal du muligvis sende en forespørgsel om indkøb til leverandøren for at få oplysninger om priser, rabatter eller leveringsdatoer. Skal du det, kan du give indkøbsordren statussen **Til eksternt gennemsyn** ved hjælp af handlingen **Købsforespørgsel**.  
 
-Kreditorer, der er konfigureret til at bruge kreditorportalen, kan gennemse ordrer på portalen, og godkende eller afvise dem. Under denne revisionsproces har indkøbsordren statussen **Til eksternt gennemsyn**. Kreditorportal kan konfigureres, så en bekræftelse fra kreditoren automatisk bekræfter ordren i Finance and Operations. Du kan også manuelt bekræfte en indkøbsordre, når du har modtaget bekræftelse fra leverandøren. Hvis en leverandør afviser en IO, modtages afvisningen samt årsagen til afvisningen og forslag til ændringer. I dette tilfælde forbliver status for indkøbsordren **Til eksternt gennemsyn**.  
+Kreditorer, der er konfigureret til at bruge kreditorportalen, kan gennemse ordrer på portalen, og godkende eller afvise dem. Under denne revisionsproces har indkøbsordren statussen **Til eksternt gennemsyn**. Kreditorportalen kan konfigureres, så en bekræftelse fra kreditoren automatisk bekræfter ordren i Supply Chain Management. Du kan også manuelt bekræfte en indkøbsordre, når du har modtaget bekræftelse fra leverandøren. Hvis en leverandør afviser en IO, modtages afvisningen samt årsagen til afvisningen og forslag til ændringer. I dette tilfælde forbliver status for indkøbsordren **Til eksternt gennemsyn**.  
 
 Der er også mulighed for at generere en proforma bekræftelse for en ordre, før den faktiske bekræftelse er blevet behandlet. Denne indstilling opretter kun en rapport, som du kan dele med leverandøren. Der oprettes ikke nogen kladdeoplysninger.  
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1aaae7a276d098587b5b9c73e433694e3a6f9bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554329"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248905"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produktkvittering sammenlignet med indkøbsordrer
 
@@ -52,7 +52,7 @@ Du kan oprette indkøbsordrelinjer, hvor indstillingen **Nyt anlægsaktiv** er a
 
 Du kan vælge flere ordrer og udføre modtagelse på alle disse ordrer sammen. Denne fremgangsmåde bruges ikke ofte, men kan du bruge den, hvis en leverandør har konsolideret leverancer til dig i en enkelt belastning. Under produktkvitteringen for køb er der en funktion til at foretage samleopdateringer. Med samleopdateringer kan du bogføre en enkelt følgeseddel fra leverandøren til mere end én indkøbsordre.  
 
-IO'er kan oprettes fra en salgsordre, hvor indstillingen **Direkte levering** er valgt. Når du bruger direkte levering, ankommer produkterne aldrig til lageret, men leveres direkte fra leverandøren til kunden. I sådanne tilfælde registreres modtagelsen normalt direkte på indkøbsordren. Modtagelsen kan ske automatisk som f.eks. via EDI-integration (Electronic Data Interchange) med leverandøren. Alternativt, hvis indkøbsordren er en intern indkøbsordre, automatiserer Microsoft Dynamics 365 for Finance and Operations modtagelsen på den interne salgsordre, når forsendelsen sker. Når du bruger direkte levering, figurerer produkter stadig som lager, selvom de ikke fysisk ankommer til lageret. Derfor, når produktkvitteringen registreres på indkøbsordren, opdateres salgsordren automatisk med en følgeseddel, så den overordnede ændring til lageret er 0 (nul). Du bør ikke kræve forudregistrering i scenarier for direkte levering. Hvis du bruger lagersteder, der er aktiveret for lagerstedsstyring, kan du omgå kravet om nummerpladeregistrering ved at angive et virtuelt lagersted i stedet. Du kan angive dette lagersted i feltet **Lagersted til direkte levering** på produktet. 
+IO'er kan oprettes fra en salgsordre, hvor indstillingen **Direkte levering** er valgt. Når du bruger direkte levering, ankommer produkterne aldrig til lageret, men leveres direkte fra leverandøren til kunden. I sådanne tilfælde registreres modtagelsen normalt direkte på indkøbsordren. Modtagelsen kan ske automatisk som f.eks. via EDI-integration (Electronic Data Interchange) med leverandøren. Alternativt, hvis indkøbsordren er en intern indkøbsordre, automatiserer Supply Chain Management modtagelsen på den interne salgsordre, når forsendelsen sker. Når du bruger direkte levering, figurerer produkter stadig som lager, selvom de ikke fysisk ankommer til lageret. Derfor, når produktkvitteringen registreres på indkøbsordren, opdateres salgsordren automatisk med en følgeseddel, så den overordnede ændring til lageret er 0 (nul). Du bør ikke kræve forudregistrering i scenarier for direkte levering. Hvis du bruger lagersteder, der er aktiveret for lagerstedsstyring, kan du omgå kravet om nummerpladeregistrering ved at angive et virtuelt lagersted i stedet. Du kan angive dette lagersted i feltet **Lagersted til direkte levering** på produktet. 
 
 Når produktkvitteringen er blevet behandlet på indkøbsordren, indstilles indkøbsordrestatus til **Modtaget** for at angive, at fakturaen kan behandles for ordren. Du kan få vist oplysninger om produkter, der allerede er modtaget, ved hjælp af siden **Produktkvitteringskladder**.  
 

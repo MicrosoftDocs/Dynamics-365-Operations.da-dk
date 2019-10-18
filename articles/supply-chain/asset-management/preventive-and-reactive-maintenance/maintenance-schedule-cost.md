@@ -3,7 +3,7 @@ title: Omkostning til vedligeholdelsestidsplan
 description: I dette emne beskrives omkostning til vedligeholdelsestidsplaner i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875557"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922062"
 ---
 # <a name="maintenance-schedule-cost"></a>Omkostning til vedligeholdelsestidsplan
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 I Styring af aktiver kan du beregne budgetomkostninger på vedligeholdelsestidsplanslinjer. Dette er nyttigt, hvis du vil have en oversigt over forventede omkostninger, f.eks. omkostninger i forbindelse med planlagte forebyggende vedligeholdelsesjob for det næste år. Beregningerne er baseret på eksisterende vedligeholdelsestidsplanslinjer af typen "Vedligeholdelsesplaner", "Vedligeholdelsesrunder" og "Vedligeholdelsesanmodninger".
 
@@ -48,10 +46,11 @@ I Styring af aktiver kan du beregne budgetomkostninger på vedligeholdelsestidsp
 
 5. Klik på **OK** for at starte omkostningsberegningen.
 
-6. Under fanen **Omkostning til vedligeholdelsestidsplan** i **Gruppér efter...**-handlingsrudegrupper skal du klikke på de relevante knapper for at få vist det nødvendige detaljeringsniveau i omkostningsberegningen. De valgte handlingsrudegrupper er fremhævet med blåt. Klik på en knap for at aktivere eller deaktivere den.
+6. Under fanen **Omkostning til vedligeholdelsestidsplan** i **Gruppér efter...**-handlingsrudegrupper skal du klikke på de relevante knapper for at få vist det nødvendige detaljeringsniveau i omkostningsberegningen. De valgte gruppeknapper i handlingsruden er fremhævet. Klik på en knap for at aktivere eller deaktivere den.
 
 7. Klik på knappen **Beregn omkostninger**, hvis du vil foretage en ny omkostningsberegning.
 
+I illustrationen herunder vises resultaterne af en omkostningsberegning for en vedligeholdelsestidsplan.
 
 ![Figur 1](media/17-preventive-maintenance.png)
 

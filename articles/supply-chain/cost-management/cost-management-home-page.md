@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557633"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249626"
 ---
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
@@ -69,5 +69,5 @@ Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for a
 Du kan finde meninger, nyheder og andre oplysninger om omkostningsstyring på [Dynamics AX Manufacturing R&D-teamets blog](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selvom nogle af disse opslag er skrevet til den tidligere version af Omkostningsstyring, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
 
 #### <a name="task-guides"></a>Opgaveguider
-Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
+Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 

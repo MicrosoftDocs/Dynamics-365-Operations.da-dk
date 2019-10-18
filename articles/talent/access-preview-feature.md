@@ -1,6 +1,6 @@
 ---
-title: Få adgang til funktioner til forhåndsvisning i Microsoft Dynamics 365 for Talent
-description: Dette emne beskriver, hvordan administratorer kan aktivere funktioner til forhåndsvisning i Microsoft Dynamics 365 for Talent, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner.
+title: Få adgang til funktioner til forhåndsvisning i Microsoft Dynamics 365 Talent
+description: Dette emne beskriver, hvordan administratorer kan aktivere funktioner til forhåndsvisning i Microsoft Dynamics 365 Talent, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739581"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008696"
 ---
 # <a name="manage-preview-features"></a>Administrere funktioner i prøveversion
 
 [!include[banner](../includes/banner.md)]
 
-Som en del af vores fortløbende implementering af HCM-funktioner til styring af menneskelig kapital for Microsoft Dynamics 365 for Talent, vil vi give kunderne mulighed for at udnytte nye funktioner, så hurtigt som muligt. Administratorer kan se og bruge funktioner til visning i deres miljøer. Disse funktioner bliver snart almindeligt tilgængelige og har gennemgået omfattende test. Vi mangler kun en sidste runde af kundefeedback og validering, før vi gør dem almindeligt tilgængelige.
+Som en del af vores fortløbende implementering af HCM-funktioner til styring af menneskelig kapital for Microsoft Dynamics 365 Talent, vil vi give kunderne mulighed for at udnytte nye funktioner, så hurtigt som muligt. Administratorer kan se og bruge funktioner til visning i deres miljøer. Disse funktioner bliver snart almindeligt tilgængelige og har gennemgået omfattende test. Vi mangler kun en sidste runde af kundefeedback og validering, før vi gør dem almindeligt tilgængelige.
 
-Dette emne beskriver, hvordan du kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner. Denne liste opdateres, efterhånden som funktioner bliver gjort almindeligt tilgængelige og nye visningsfunktioner frigives. Der gives ikke besked, når der frigives nye funktioner til visning. Funktionerne bliver bare synlige for brugerne. Yderligere oplysninger om de nye funktioner i Talent finder du i [Nyheder eller ændringer i Dynamics 365 for Talent](./whats-new.md) og [Dynamics 365 samt Power Platform-produktbemærkninger](https://docs.microsoft.com/business-applications-release-notes).
+Dette emne beskriver, hvordan du kan aktivere funktioner til visning, og viser de funktioner, der i øjeblikket er tilgængelige som visningsfunktioner. Denne liste opdateres, efterhånden som funktioner bliver gjort almindeligt tilgængelige og nye visningsfunktioner frigives. Der gives ikke besked, når der frigives nye funktioner til visning. Funktionerne bliver bare synlige for brugerne. Yderligere oplysninger om de nye funktioner i Talent finder du i [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md) og [Dynamics 365 samt Power Platform-produktbemærkninger](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Aktivere eller deaktivere funktioner i prøveversion
 
@@ -40,9 +40,9 @@ Hvis du vil have adgang til visningsfunktionerne, skal du først aktivere dem i 
 > [!IMPORTANT]
 > Når du slår indstillingen **Prøveversioner** til, aktiverer du visningsfunktioner for alle brugere i organisationen, der arbejder i det pågældende miljø. Når du deaktiverer indstillingen, slår du funktioner til forhåndsvisning fra og gør dem utilgængelige for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Talent. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og visningsfunktionerne medtages ikke i Talent-serviceaftalen (SLA). Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
 
-### <a name="attract"></a>Tiltræk
+### <a name="attract"></a>Attract
 
-1. Log på Microsoft Dynamics 365 for Talent: Attract.
+1. Log på Microsoft Dynamics 365 Talent: Attract.
 2. I menuen **Opsætning** (tandhjulsymbolet) i øverste højre hjørne skal du vælge **Administration**.
 3. Under fanen **Administration af funktioner** skal du vælge indstillingen ud for **Funktioner i prøveversion**, så den bliver blå, og der står **Til**.
 
@@ -69,11 +69,11 @@ Hvis du vil have adgang til visningsfunktionerne, skal du først aktivere dem i 
 
 ### <a name="onboard"></a>Introducer
 
-Der er i øjeblikket ingen tilgængelige visningsfunktioner for Microsoft Dynamics 365 for Talent: Onboard.
+Der er i øjeblikket ingen tilgængelige visningsfunktioner for Microsoft Dynamics 365 Talent: Onboard.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktioner, der i øjeblikket findes som eksempelfunktioner
 
-### <a name="attract"></a>Tiltræk
+### <a name="attract"></a>Attract
 
 - [Kandidatanbefaling](./intelligent-recommendations.md#candidate-recommendations) – Hvis der til et job er mere end ti ansøgere, der har CV'er eller fuldstændige profiler, vises de ansøgere, der bedst opfylder kravene til et job, i sektionen **Ansøgere, der skal tages i betragtning** på den pågældende jobside.
 - [Jobanbefaling](./intelligent-recommendations.md#job-recommendations) – Hvis der er opslået mere end ti job på dit karrierewebsted, leverer Attract jobanbefalinger til jobkandidater.

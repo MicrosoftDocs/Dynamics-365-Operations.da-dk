@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46aa4378a5b106d5717e0c841f2f7c9d6629489e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555032"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251310"
 ---
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprocessen
 
@@ -34,9 +34,9 @@ ms.locfileid: "1555032"
 
 Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
 
-Mange virksomheder vil blot indsamle serienumre for service- og garantiformål og behøver ikke at gemme serienumre på lageret fra tilgang til afgang. I disse scenarier kan Microsoft Dynamics 365 for Finance and Operations lade dig registrere serienumre på følgesedler eller fakturaer, når produkterne sælges. Hvis produkterne på et senere tidspunkt returneres, kan du spore et produkt til en faktura for at finde ud af, om du har solgt produktet, og om servicen eller garantiforpligtelser er gældende.
+Mange virksomheder vil blot indsamle serienumre for service- og garantiformål og behøver ikke at gemme serienumre på lageret fra tilgang til afgang. I disse scenarier kan du registrere serienumre på følgesedler eller fakturaer, når produkterne sælges. Hvis produkterne på et senere tidspunkt returneres, kan du spore et produkt til en faktura for at finde ud af, om du har solgt produktet, og om servicen eller garantiforpligtelser er gældende.
 
-Du skal aktivere serienumre for salgsprocessen ved at vælge indstillingen **Aktiv i salgsproces** på siden **Sporingsdimensionsgrupper**. Følgende hændelser forekommer derefter i Microsoft Dynamics 365 for Finance and Operations:
+Du skal aktivere serienumre for salgsprocessen ved at vælge indstillingen **Aktiv i salgsproces** på siden **Sporingsdimensionsgrupper**. Følgende hændelser forekommer derefter i Supply Chain Management:
 -   I oversigtspanelet **Serienumre** er indstillingen **Serienummerkontrol** valgt. Hvis denne indstilling er markeret, skal du registrere et serienummer for hver vare på følgesedlen eller fakturaen.
 -   Alle markeringer i sporingsdimensionsgruppen for serienumre fjernes, undtagen indstillingen **Blank afgang tilladt**. Du kan markere indstillingen **Blank afgang tilladt** for at tilsidesætte kontrollen af serienumre og tillade, at produkterne emballeres og faktureres uden registrering af serienumre.
 

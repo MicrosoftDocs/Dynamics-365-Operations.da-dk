@@ -1,6 +1,6 @@
 ---
-title: Konfigurere dit karrierewebsted i Microsoft Dynamics 365 for Talent - Attract
-description: Denne artikel indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Microsoft Dynamics 365 for Talent - Attract.
+title: Konfigurere dit karrierewebsted i Microsoft Dynamics 365 Talent - Attract
+description: Dette emne indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739765"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026273"
 ---
 # <a name="set-up-your-career-site"></a>Konfigurere dit karrierewebsted
 
 [!include[banner](../includes/banner.md)]
 
-Denne artikel indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Microsoft Dynamics 365 for Talent: Attract. I artiklen beskrives også, hvordan du konfigurerer denne funktion.
+Denne artikel indeholder en oversigt over funktioner for kandidater på karrierewebstedet i Microsoft Dynamics 365 Talent: Attract. I artiklen beskrives også, hvordan du konfigurerer denne funktion.
 
 Attract indeholder ét karrierewebsted for hvert miljø i en lejer. F.eks. hvis en organisation har et miljø til udvikling og et testmiljø, klargøres ét karrierewebsted til udviklingsmiljøet og et andet til testmiljøet. Hvert karrierewebsted er fuldstændigt isoleret og har sit eget system til godkendelse. Job- og kandidatprofiler deles ikke mellem karrierewebstederne.
 
@@ -62,7 +62,7 @@ Følgende liste indeholder de almindeligt anvendte karrierewebsteders URL-adress
 
 -   **URL-adresse til startside for karrierewebsted** - Hvis du vil have vist URL-adressen til startsiden for karrierewebstedet, skal du logge på Attract som administrator, vælge **Administration** i menuen **Indstillinger** og derefter vælge fanen **Administration af karrierewebsted**.
 
--   **URL-adresse til ansøgning om individuelt jobopslag** - Når du [slå et eksternt job op](Creating-jobs-Attract.md#postings) for første gang, kan du kopiere linket **Ansøg** fra programmet Attract. URL-adressen til dette link har følgende format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **URL-adresse til ansøgning om individuelt jobopslag** - Når du [slår et eksternt job op](Creating-jobs-Attract.md#postings) for første gang, kan du kopiere linket **Ansøg** fra Attract. URL-adressen til dette link har følgende format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **URL-adresse til individuelt jobopslag** - URL-adressen til jobopslaget er en understreng af URL-adressen til ansøgningen. Den består af alt op til og med jobnummeret. Derfor, for den foregående URL-adresse til ansøgning, er URL-adressen til jobopslaget [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 

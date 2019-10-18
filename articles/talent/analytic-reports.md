@@ -1,6 +1,6 @@
 ---
-title: Bruge analytiske rapporter i Microsoft Dynamics 365 for Talent - Attract
-description: Dette emne beskriver de analytiske rapporter til indsigt i ansættelsesprocessen i Microsoft Dynamics 365 for Talent - Attract
+title: Bruge analytiske rapporter i Microsoft Dynamics 365 Talent - Attract
+description: Dette emne beskriver de analytiske rapporter til indsigt i ansættelsesprocessen i Microsoft Dynamics 365 Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: be62fe9a5021cfa83a465d316b182c0a154c0c50
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742881"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010000"
 ---
 # <a name="use-analytic-reports"></a>Bruge analyserapporter
 
-Analytiske rapporter i Attract indeholder en out-of-the-box (OOTB)-løsning, der giver indsigt i ansættelsesprocessen. Tilgængelige funktioner omfatter:
+Analytiske rapporter i Microsoft Dynamics 365 Talent: Attract indeholder en out-of-the-box (OOTB)-løsning, der giver indsigt i ansættelsesprocessen. Tilgængelige funktioner omfatter:
 
 - **Jobanalyser:** Klik på fanen **Analyser** i det job for at se målværdier for jobansøgere.
 - **Analysehub:** Klik på **Analyser** i venstre navigationslinje for at se samlet metrik på tværs af job.

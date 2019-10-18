@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (6. december 2018)
-description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
+title: Nyheder eller ændringer i Dynamics 365 Talent - Core HR (6. december 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742580"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025950"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (6. december 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Nyheder eller ændringer i Dynamics 365 Talent: Core HR (6. december 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742580"
 Dette emne beskriver funktioner, der enten er nye eller ændrede i Core HR.
 
 
-## <a name="platform-update-22"></a>Platformsopdatering 22
+## <a name="platform-update-22-for-finance-and-operations"></a>Platform update 22 til Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Eksportere op til 1 million rækker til Excel
 
@@ -42,7 +42,7 @@ Funktionen Eksporter til Excel kan nu konfigureres, så brugerne kan eksportere 
 
 ### <a name="restyled-personalization-toolbar"></a>Ændret udseende af tilpasningsværktøjslinjen
 
-Tilpasningsværktøjslinjen har fået nyt udseende i platformsopdatering 22, så brugerne lettere kan skræddersy deres egne oplevelser i Talent. Der er foretaget følgende ændringer: 
+Tilpasningsværktøjslinjen har fået nyt udseende i Platform update 22 til Finance and Operations, så brugerne lettere kan skræddersy deres egne oplevelser i Talent. Der er foretaget følgende ændringer: 
 
 -  Navnet på hver tilpasningsværktøjslinje vises nu sammen med et ikon, som hjælper brugerne med hurtigt at genkende det værktøj, de er interesserede i at bruge.
 -  Beskrivelsen af, hvordan det aktuelle værktøj bruges, vises nu også og hjælper brugerne med at forstå, hvordan de kan oprette de nødvendige tilpasninger.  
@@ -50,19 +50,19 @@ Tilpasningsværktøjslinjen har fået nyt udseende i platformsopdatering 22, så
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimeret "er en af" filtreringsoplevelserne
 
-"Er en af"-filtreringsoperatoren er tilgængelig for de fleste felter, når filterruden og gitteroverskrifternes rullelister bruges. Med denne operator kan en bruger filtrere et felt, baseret på flere værdier. Der findes en ny og forbedret brugeroplevelse af operatoren "er en af" i platformsopdatering 22. Du kan finde flere oplysninger i [Den optimerede filtreringsoplevelse "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+"Er en af"-filtreringsoperatoren er tilgængelig for de fleste felter, når filterruden og gitteroverskrifternes rullelister bruges. Med denne operator kan en bruger filtrere et felt, baseret på flere værdier. Der findes en ny og forbedret brugeroplevelse af operatoren "er en af" i Platform update 22 til Finance and Operations. Du kan finde flere oplysninger i [Den optimerede filtreringsoplevelse "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Indsætte lister fra Excel i filterfelterne med operatoren "er en af"
 
 Brugere kan have en liste over værdier i Excel, som de vil bruge til at filtrere data i Talent, for bestemte opgaver. F.eks. kan en bruger i Personale have fundet en gruppe medarbejdere fra en rapport, der kræver yderligere undersøgelser i systemet, og det ville være ideelt for denne bruger at kunne kopiere listen direkte fra Excel til et filterfelt i Talent.
 
-Fra og med platformsopdatering 22 genkender operatoren "er en af" i filterruden og gitterkolonnefiltreringen nu lister, der er kopieret fra Excel, så de kan indsættes direkte i et filtreringsfelt. Dette omfatter en samling af værdier, der er kopieret fra forskellige rækker og kolonner i Excel. Du kan finde flere oplysninger om denne funktion i [Indsætte lister fra Excel i filterfelterne med operatoren "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Fra og med Platform update 22 til Finance and Operations genkender operatoren "er en af" i filterruden og gitterkolonnefiltreringen nu lister, der er kopieret fra Excel, så de kan indsættes direkte i et filtreringsfelt. Dette omfatter en samling af værdier, der er kopieret fra forskellige rækker og kolonner i Excel. Du kan finde flere oplysninger om denne funktion i [Indsætte lister fra Excel i filterfelterne med operatoren "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Som eksempel
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Konfigurere britisk lønintegrationen mellem Talent og Dayforce
 
-Integration mellem Microsoft Dynamics 365 for Talent og Ceridian Dayforce er tilgængelig som eksempel for Storbritannien. Du kan finde flere oplysninger i følgende emne [Konfigurere lønintegration mellem Talent og Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+Integration mellem Talent og Ceridian Dayforce er tilgængelig som prøveversion for Storbritannien. Du kan finde flere oplysninger i følgende emne [Konfigurere lønintegration mellem Talent og Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -90,9 +90,9 @@ Der er foretaget ændringer til rettelse af vedhæftede filer. Når du føjer en
 
 ## <a name="known-issues"></a>Kendte problemer
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Tilknytningsfejl i integrationen med Finance and Operations
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Tilknytningsfejl i integrationen med Finance
 
-Følgende problemer er identificeret i den aktuelle skabelon til integration af Talent med Finance and Operations. En ny skabelon offentliggøres snart og anvendes på alle nye integrationsprojekter, der oprettes. For eksisterende integrationsprojekter kan opgavetilknytningerne opdateres. Du kan finde opdaterede tilknytninger i følgende tabel. 
+Følgende problemer er identificeret i den aktuelle skabelon til integration af Talent med Finance. En ny skabelon offentliggøres snart og anvendes på alle nye integrationsprojekter, der oprettes. For eksisterende integrationsprojekter kan opgavetilknytningerne opdateres. Du kan finde opdaterede tilknytninger i følgende tabel. 
 
 >[!NOTE]
 > Den overordnede tildelingsopgave Jobstillinger til stillinger kan ikke integrere data. Dette er et problem, der er i øjeblikket undersøges. Der findes ingen løsning i den aktuelle tilknytning. 

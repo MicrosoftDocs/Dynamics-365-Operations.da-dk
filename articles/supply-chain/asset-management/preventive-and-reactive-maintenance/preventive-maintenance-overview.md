@@ -3,7 +3,7 @@ title: Oversigt over forebyggende vedligeholdelse
 description: I dette emne beskrives forebyggende vedligeholdelse i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b43c795426f40cb43962976824c44a7702d91b7
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875556"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922085"
 ---
 # <a name="preventive-maintenance-overview"></a>Oversigt over forebyggende vedligeholdelse
 
@@ -35,7 +35,7 @@ I dette emne beskrives forebyggende vedligeholdelse i Styring af aktiver. Foreby
 
 Vedligeholdelsesplaner bruges til forebyggende og reaktiv vedligeholdelse på individuelle aktiver. Vedligeholdelsesrunder bruges til forebyggende vedligeholdelse i en gruppe eller et sæt aktiver. Vedligeholdelsesplaner og vedligeholdelsesrunder bruges til generering af forslag til arbejdsordrer. Forslag til arbejdsordrer gemmes som vedligeholdelsestidsplanslinjer, som kan samles og konverteres til arbejdsordrer.
 
-I figuren nedenfor vises en oversigt over arbejdsgangen fra oprettelse af vedligeholdelsesplaner og vedligeholdelsesrunder til oprettelse af arbejdsordrer for aktiver baseret på disse vedligeholdelsesplaner og vedligeholdelsesrunder.
+I illustrationen nedenfor vises en oversigt over arbejdsgangen fra oprettelse af vedligeholdelsesplaner og vedligeholdelsesrunder til oprettelse af arbejdsordrer for aktiver baseret på disse vedligeholdelsesplaner og vedligeholdelsesrunder.
 
 ![Figur 1](media/01-preventive-maintenance.png)
 

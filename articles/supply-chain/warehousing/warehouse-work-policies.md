@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 7476cf797685feb4c50e3cefef4c53ca37b82dff
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865106"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251402"
 ---
 # <a name="warehouse-work-policies-overview"></a>Oversigt over politikker for lagerstedsarbejde
 
 [!include [banner](../includes/banner.md)]
 
-Lagerstedets arbejdspolitikker i Microsoft Dynamics 365 for Finance and Operations kontrollerer, om lagerstedsarbejde er oprettet af lagerprocesser i produktion, ud fra arbejdsordretype, lagerlokation og produkt.
+Lagerstedets arbejdspolitikker kontrollerer, om lagerstedsarbejde er oprettet af lagerprocesser i produktion, ud fra arbejdsordretype, lagerlokation og produkt.
 
 Denne arbejdspolitik kontrollerer, om lagerstedets arbejde er oprettet for lagerprocesser i produktion. Du kan angive arbejdspolitikken ved hjælp af en kombination af **arbejdsordretyper**, en **lagerlokation** og et **produkt**. Produkt L0101 rapporteres f.eks. som afsluttet til outputlokalitet 001. Den færdige vare forbruges senere i en anden produktionsordre på outputlokalitet 001. I dette tilfælde kan du oprette en arbejdspolitik for at forhindre, at der oprettes arbejde for færdige varer, når du rapporterer produkt L0101 færdig til outputlokalitet 001. Arbejdspolitikken er en enkelt enhed, der kan beskrives med følgende oplysninger:
 

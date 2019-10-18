@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559139"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249790"
 ---
 # <a name="sales-returns"></a>Salgsreturneringer
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559139"
 
 Dette emne indeholder oplysninger om processen for returordrer. Det indeholder oplysninger om returneringer fra kunder og deres virkning på efterkalkulation og disponible lagerantal.
 
-Kunder kan returnere varer af forskellige årsager. En vare kan f.eks. være defekt, eller den opfylder ikke kundens forventninger. Returvareprocessen starter, når en kunde afgiver en anmodning om at returnere en vare. Når kundens anmodning er modtaget, oprettes en returordre i Microsoft Dynamics 365 for Finance and Operations.
+Kunder kan returnere varer af forskellige årsager. En vare kan f.eks. være defekt, eller den opfylder ikke kundens forventninger. Returvareprocessen starter, når en kunde afgiver en anmodning om at returnere en vare. Når kundens anmodning er modtaget, oprettes en returordre.
 
 ## <a name="return-order-process"></a>Returordreproces
 I følgende illustration vises en oversigt over returvareprocessen.  
@@ -281,7 +281,7 @@ Dette scenario omfatter to firmaer i samme organisation, som vist i følgende il
 
 ![Enkel intern returnering](./media/SalesReturn07.png)
 
-Ordrekæden kan etableres, når der oprettes en returordre til leverandøren i den købende virksomhed, eller der oprettes en kundereturordre i den sælgende virksomhed. Finance and Operations opretter den tilsvarende ordre i et andet firma og sørger for, at hoved- og linjeoplysningerne på returordren til leverandøren afspejler indstillingerne for kundereturordren. Den returordre, der er oprettet, kan enten inkludere eller udelade referencen (**Find salgsordre**) til en eksisterende debitorfaktura. Følgesedler og fakturaer i de to ordrer kan behandles individuelt. Du behøver f.eks. ikke at oprette en følgeseddel for returordren til leverandøren, før du genererer følgesedlen til kundereturordren.
+Ordrekæden kan etableres, når der oprettes en returordre til leverandøren i den købende virksomhed, eller der oprettes en kundereturordre i den sælgende virksomhed. Den tilsvarende ordre oprettes i et andet firma og sørger for, at hoved- og linjeoplysningerne på returordren til leverandøren afspejler indstillingerne for kundereturordren. Den returordre, der er oprettet, kan enten inkludere eller udelade referencen (**Find salgsordre**) til en eksisterende debitorfaktura. Følgesedler og fakturaer i de to ordrer kan behandles individuelt. Du behøver f.eks. ikke at oprette en følgeseddel for returordren til leverandøren, før du genererer følgesedlen til kundereturordren.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Returneringer af direkte leveringer mellem tre parter
 

@@ -1,6 +1,6 @@
 ---
-title: Opdatere onboardingguider i Dynamics 365 for Talent - Onboard
-description: I dette emne forklares det, hvordan du opdaterer onboardingguider i Microsoft Dynamics 365 for Talent - Onboard, og hvordan du overfører ændringer til eksisterende guider.
+title: Opdatere onboardingguider i Dynamics 365 Talent - Onboard
+description: I dette emne forklares det, hvordan du opdaterer onboardingguider i Microsoft Dynamics 365 Talent- Onboard, og hvordan du overfører ændringer til eksisterende guider.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731409"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010723"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Opdatere onboardingguider i Dynamics 365 for Talent: Onboard
+# <a name="update-onboarding-guides"></a>Opdatere onboardingguider
 
 [!include [banner](includes/banner.md)]
 
-Hvis du skal foretage ændringer af onboardingguider i Microsoft Dynamics 365 for Talent: Onboard, kan du opdatere dem og overføre ændringerne, selvom du allerede har sendt guiderne. Du har to muligheder for at opdatere en onboardingguide:
+Hvis du skal foretage ændringer af onboardingguider i Microsoft Dynamics 365 Talent: Onboard, kan du opdatere dem og overføre ændringerne, selvom du allerede har sendt guiderne. Du har to muligheder for at opdatere en onboardingguide:
 
 - Rediger onboardingguiden direkte, og gem ændringerne.
 - Rediger onboardingskabelonen, og overfør derefter ændringerne til alle de onboardingguider, der blev oprettet ud fra den.

@@ -1,6 +1,6 @@
 ---
 title: Kreditorsamarbejde med kunder
-description: Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til at arbejde med indkøbsordrer og overvåge konsignationslager i Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til at arbejde med indkøbsordrer og overvåge konsignationslager.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567578"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250112"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 for Finance and Operations. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
+Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
 
 - **Indkøbsordrebekræftelse** – Overvåge og reagere på indkøbsordrer (IO'er).
 - **Kreditorbud** – Få vist anmodninger om tilbud (tilbudsanmodninger) og reagere på dem ved at afgive bud.

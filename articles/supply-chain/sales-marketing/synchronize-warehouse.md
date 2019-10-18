@@ -1,6 +1,6 @@
 ---
-title: Synkronisere lagersteder fra Finance and Operations til Field Service
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere lagersteder fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+title: Synkronisere lagersteder fra Supply Chain Management til Field Service
+description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere lagersteder fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,41 +19,41 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ae99624076eecda2969961d0361d1adf42c6c5f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835664"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251172"
 ---
-# <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Synkronisere lagersteder fra Finance and Operations til Field Service
+# <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synkronisere lagersteder fra Supply Chain Management til Field Service
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere lagersteder fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere lagersteder fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering af forretningsprocesser mellem Finance and Operations og Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
-Følgende skabelon og underliggende opgaver bruges til at køre synkronisering af lagersteder fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+Følgende skabelon og underliggende opgaver bruges til at synkronisere lagersteder fra Supply Chain Management til Field Service.
 
 **Skabelon i dataintegration**
-- Lagersteder (Fin and Ops til Field Service)
+- Lagersteder (Supply Chain Management til Field Service)
 
 **Opgave i dataintegrationsprojekt**
 - Lagersted
 
 ## <a name="entity-set"></a>Enhedssæt
-| Field Service    | Finance and Operations                 |
+| Field Service    | Supply Chain Management                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Lagersteder                             |
 
 ## <a name="entity-flow"></a>Enhedsflow
-Lagersteder, der er oprettet og vedligeholdes i Finance and Operations, kan synkroniseres til Field Service via et Common Data Service-dataintegrationsprojekt (CDS). De lagersteder, du vil synkronisere til Field Service, kan styres med Avanceret forespørgsel og filtrering i projektet. Lagersteder, der synkroniseres fra Finance and Operations, oprettes i Field Service med feltet **Vedligeholdes eksternt indstillet** til **Ja**, og posten skrivebeskyttes.
+Lagersteder, der oprettes og vedligeholdes i Supply Chain Management, kan synkroniseres til Field Service via et Common Data Service-dataintegrationsprojekt (CDS). De lagersteder, du vil synkronisere til Field Service, kan styres med Avanceret forespørgsel og filtrering i projektet. Lagersteder, der synkroniseres fra Supply Chain Management, oprettes i Field Service med feltet **Vedligeholdes eksternt** indstillet til **Ja**, og posten skrivebeskyttes.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning til Field Service
-For at understøtte integrationen mellem Field Service og Finance and Operations, kræves yderligere funktioner fra CRM-løsningen i Field Service. I løsningen er feltet **Vedligeholdes eksternt** blevet føjet til enheden **Lagersted (msdyn_warehouses)**. Dette felt bruges til at identificere, om lagerstedet håndteres fra Finance and Operations, eller om det kun findes i Field Service. Indstillingerne for dette felt omfatter:
-- **Ja** – Lagerstedet stammer fra Finance and Operations og kan ikke redigeres i Sales.
+For at understøtte integrationen mellem Field Service og Finance and Operations, kræves yderligere funktioner fra CRM-løsningen i Field Service. I løsningen er feltet **Vedligeholdes eksternt** blevet føjet til enheden **Lagersted (msdyn_warehouses)**. Dette felt bruges til at identificere, om lagerstedet håndteres fra Supply Chain Management, eller om det kun findes i Field Service. Indstillingerne for dette felt omfatter:
+- **Ja** – Lagerstedet stammer fra Supply Chain Management, og det kan ikke redigeres i Sales.
 - **Nej** – Lagerstedet er angivet direkte i Field Service og vedligeholdes her.
 
 Feltet **Vedligeholdes eksternt** hjælper med at styre synkroniseringen af lagerniveauer, reguleringer, overførsler og brug i arbejdsordrer. Kun lagersteder, hvor **Vedligeholdes eksternt** er indstillet til **Ja**, kan bruges til at synkronisere direkte til det samme lagersted i andet system. 
@@ -63,7 +63,7 @@ Feltet **Vedligeholdes eksternt** hjælper med at styre synkroniseringen af lage
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forudsætninger og tilknytningsopsætning
 ### <a name="data-integration-project"></a>Dataintegrationsprojekt
-Inden du synkroniserer lagerstederne, skal du sørge for at opdatere Avanceret forespørgsel og filtrering i projektet, så kun de lagersteder, du vil overføre fra Finance and Operations til Field Service, medtages. Bemærk, at du skal bruge lagerstedet i Field Service og anvende det på arbejdsordrer, reguleringer og overførsler.  
+Inden du synkroniserer lagerstederne, skal du sørge for at opdatere Avanceret forespørgsel og filtrering i projektet, så kun de lagersteder, du vil overføre fra Supply Chain Management til Field Service, medtages. Bemærk, at du skal bruge lagerstedet i Field Service og anvende det på arbejdsordrer, reguleringer og overførsler.  
 
 Gør følgende for at sørge for, at der findes en **Integrationsnøgle** for **msdyn_warehouses**:
 1. Gå til Dataintegration.
@@ -76,6 +76,6 @@ Gør følgende for at sørge for, at der findes en **Integrationsnøgle** for **
 
 Følgende illustration viser skabelontilknytningen i Dataintegration.
 
-### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Lagersteder (Fin and Ops til Field Service): lagersteder
+### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagersteder (Supply Chain Management til Field Service): Lagersted
 
 [![Skabelontilknytning i dataintegration](./media/Warehouse1.png)](./media/Warehouse1.png)

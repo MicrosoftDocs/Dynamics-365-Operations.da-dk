@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (11. juni 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (11. juni 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741608"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023924"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (11. juni 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (11. juni 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
 ### <a name="search-engine-optimization-for-job-posts"></a>Optimering af søgemaskine for jobopslag
 
-Når du har aktiveret **Optimering af søgemaskine** i Dynamics 365 for Talent: Attract Administration, informerer Attract Google indekserings-API'et for at gennemsøge websiden, når du aktiverer og slår et nyt job op eller opdaterer en eksisterende Jobliste. På denne måde vil jobbet blive vist i søgeresultaterne på Google og andre søgemaskiner.
+Når du har aktiveret **Optimering af søgemaskine** i Dynamics 365 Talent: Attract Administration, informerer Attract Google indekserings-API'et for at gennemsøge websiden, når du aktiverer og slår et nyt job op eller opdaterer et eksisterende job. På denne måde vil jobbet blive vist i søgeresultaterne på Google og andre søgemaskiner.
 
 Når du ikke fjerner et jobopslag, imformerer Attract på samme måde indekserings-API'et, så jobbet, hvis opslag er blevet fjernet, ikke vises i søgeresultaterne.
 
@@ -50,15 +50,15 @@ Godkendelser vises i området **Godkendelser** på dashboardet. Godkendere kan g
 
 ## <a name="changes-in-onboard"></a>Ændringer i Onboard
 
-Denne version indeholder rettelser af mindre fejl i Dynamics 365 for Talent: Onboard.
+Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Ændringer i Core HR
 
 De ændringer, der er beskrevet i dette afsnit, gælder for build-nummer 8.1.2337.
 
-### <a name="platform-update-27"></a>Platform update 27
+### <a name="platform-update-27-for-finance-and-operations"></a>Platform update 27 til Finance and Operations
 
-Du kan finde yderligere oplysninger om platformsopdatering 27 under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations-platformsopdatering 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Du kan finde yderligere oplysninger om Platform update 27 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Funktionsstyringsarbejdsområde i Talent
 

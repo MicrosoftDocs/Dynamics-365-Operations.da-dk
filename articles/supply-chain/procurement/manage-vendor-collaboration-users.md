@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742464"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248951"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Administrere brugere af kreditorsamarbejde
 
@@ -31,7 +31,7 @@ ms.locfileid: "1742464"
 
 Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde. 
 
-Grænsefladen for kreditorsamarbejde i Microsoft Dynamics 365 for Finance and Operations viser oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne leverandører. Du kan oprette nye kontakter for kreditorsamarbejde og anmode om, at nye brugere forsynes, hvis du arbejder som en ekstern leverandør med de **Kreditoradministrator (ekstern)** som sikkerhedsrolle eller tilsvarende tilladelser. Du kan også udføre disse opgaver, hvis du arbejder som en professionel indkøber. I dette emne vedrører denne rolle en professionel indkøber, der arbejder i virksomheden, som ejer forekomsten af Finance and Operations. Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er ekstern leverandør, under [Leverandør med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Grænsefladen for kreditorsamarbejde i Dynamics 365 Supply Chain Management viser oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne leverandører. Du kan oprette nye kontakter for kreditorsamarbejde og anmode om, at nye brugere forsynes, hvis du arbejder som en ekstern leverandør med de **Kreditoradministrator (ekstern)** som sikkerhedsrolle eller tilsvarende tilladelser. Du kan også udføre disse opgaver, hvis du arbejder som en professionel indkøber. I dette emne vedrører denne rolle en professionel indkøber, der arbejder i virksomheden, som ejer forekomsten af Supply Chain Management. Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er ekstern leverandør, under [Leverandør med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er professionel indkøber, under [Leverandørsamarbejde med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
@@ -60,12 +60,12 @@ Når en anmodning sendes, føjes den til listen **Brugeranmodninger om kreditors
 Før du kan anmode om, at der er klargjort en ny bruger, skal vedkommende sættes op som kontaktperson for en eller flere kreditorkonti. Sådan opretter du en anmodning om en ny bruger af kreditorsamarbejde:
 
 1. På siden **Alle kontaktpersoner** skal du klikke på **Klargør kreditorbruger**.
-2. Angiv en mailadresse på brugeren. Denne adresse bruges til at logge på Finance and Operations af brugeren. Hvis mailadressen hører til et domæne, der er registreret som lejer hos Microsoft Azure, skal mailadressen være en eksisterende Azure Active Directory-konto (AAD), for at klargøringsprocessen kan fuldføres. Hvis mailadressen ikke tilhører et domæne, der er registreret hos Microsoft Azure, vil en AAD-konto blive oprettet som en del af klargøringsprocessen, og den nye bruger modtager en invitationsmail. Forbrugeres mailadresser med domæner som @hotmail.com, @gmail.com eller @comcast.net kan ikke bruges til at registrere en Finance and Operations-bruger.
+2. Angiv en mailadresse på brugeren. Denne adresse bruges af brugeren til at logge på Supply Chain Management. Hvis mailadressen hører til et domæne, der er registreret som lejer hos Microsoft Azure, skal mailadressen være en eksisterende Azure Active Directory-konto (AAD), for at klargøringsprocessen kan fuldføres. Hvis mailadressen ikke tilhører et domæne, der er registreret hos Microsoft Azure, vil en AAD-konto blive oprettet som en del af klargøringsprocessen, og den nye bruger modtager en invitationsmail. Forbrugeres mailadresser med domæner som @hotmail.com, @gmail.com eller @comcast.net kan ikke bruges til at registrere en bruger.
 3. Angiv indstillingen **Adgang til kreditorsamarbejde tilladt** til **Ja** for alle de juridiske enheder, som brugeren skal have adgang til.
 4. I sektionen **Tildel brugerroller** skal du markere **Tildel**-afkrydsningsfeltet for de sikkerhedsroller, som den nye bruger skal have.
 5. Klik på **Send**.
 
-Når kreditorbrugeranmodning sendes, bliver feltet **Adgang til kreditorsamarbejde tilladt** indstillet til **Ja** for den valgte kreditorkonto, og en arbejdsgang for brugeranmodning startes. Der oprettes en ny bruger i Finance and Operations som en del af arbejdsgangen, og der tildeles sikkerhedsroller. Desuden bliver en Azure B2B-tjeneste aktiveret, som starter interaktion med Azure-portal og knytter en ny eller eksisterende AAD-konto til Finance and Operations-brugerkonto. Du kan finde flere oplysninger i [Hvad er Azure AD B2B-samarbejde?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Når kreditorbrugeranmodning sendes, bliver feltet **Adgang til kreditorsamarbejde tilladt** indstillet til **Ja** for den valgte kreditorkonto, og en arbejdsgang for brugeranmodning startes. Der oprettes en ny bruger som en del af arbejdsgangen, og der tildeles sikkerhedsroller. Desuden bliver en Azure B2B-tjeneste aktiveret, som starter interaktion med Azure-portal og knytter en ny eller eksisterende AAD-konto til Supply Chain Management-brugerkontoen. Du kan finde flere oplysninger i [Hvad er Azure AD B2B-samarbejde?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Deaktivere en bruger
 

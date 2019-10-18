@@ -1,6 +1,6 @@
 ---
-title: Få support til Dynamics 365 for Retail
-description: I denne artikel beskrives, hvordan du kan få hjælp til Microsoft Dynamics 365 for Retail.
+title: Få support til Dynamics 365 Retail
+description: I denne artikel beskrives det, hvordan du kan få hjælp til Microsoft Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025000"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Få support til Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-retail"></a>Få support til Dynamics 365 Retail
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives, hvordan du kan få hjælp til Dynamics 365 for Retail.
+I denne artikel beskrives, hvordan du kan få hjælp til Dynamics 365 Retail.
 
 ## <a name="contact-support"></a>Kontakt support
 
@@ -48,7 +48,7 @@ Du kan få support på Retail ved at bruge ressourcerne i følgende tabel. Disse
 <tbody>
 <tr>
 <td>Spørg fællesskabet.</td>
-<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>-community for at få hjælp til dine spørgsmål fra Dynamics Community.</td>
+<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a>-community for at få hjælp til dine spørgsmål fra Dynamics Community.</td>
 </tr>
 <tr>
 <td>Brug problemsøgningsværktøjet.</td>
@@ -74,7 +74,7 @@ Du kan få support på Retail ved at bruge ressourcerne i følgende tabel. Disse
 Ved tekniske spørgsmål, der er relateret til at logge på og få adgang til CustomerSource, e-learning, søgning, Knowledge Base, filoverførsel og side- eller systemfejl, skal du gå til <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Webstedssupport</a>.</td>
 </tr>
 <tr>
-<td>Få hjælp til spørgsmål om Retail- eller Finance and Operations-licenser.</td>
+<td>Få hjælp til spørgsmål om licenser.</td>
 <td>Kontakt din partner, LAR-forhandler (large account reseller) eller Microsoft-sælger.</td>
 </tr>
 <tr>

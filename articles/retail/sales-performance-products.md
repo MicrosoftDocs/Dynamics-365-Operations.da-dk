@@ -1,6 +1,6 @@
 ---
 title: Vurdere salgsperformance efter produkt
-description: Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail.
+description: Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7796aa830c99bd0fd5784ff95e509767a3b55b44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546380"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024949"
 ---
 # <a name="assess-sales-performance-by-product"></a>Vurdere salgsperformance efter produkt
 
 [!include [banner](includes/banner.md)]
 
-Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail.
+Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Dynamics 365 Retail.
 
-Som en del af Dynamics 365 for Retail kan brugerne også undersøge rentabiliteten for de vigtigste produkter (10 til 100) på tværs af forskellige niveauer i organisationshierarkiet, baseret på et af følgende kriterier:
+Som en del af Retail kan brugerne også undersøge rentabiliteten for de vigtigste produkter (10 til 100) på tværs af forskellige niveauer i organisationshierarkiet, baseret på et af følgende kriterier:
 
 - Salgsbeløb
 - Antal

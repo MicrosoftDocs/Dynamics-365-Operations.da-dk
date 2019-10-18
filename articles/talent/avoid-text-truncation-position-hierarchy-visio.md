@@ -1,6 +1,6 @@
 ---
 title: Undgå afkortning af teksten i stillingshierarkiet og eksportere til Visio
-description: I dette emne beskrives, hvordan du kan løse et problem, hvor navnene på personer og stillinger afkortes, når kunder får vist stillingshierarkiet i Microsoft Dynamics 365 for Talent. Afkortning af tekst kan gøre det svært at tage et skærmbillede eller udskrive hierarkiet.
+description: I dette emne beskrives, hvordan du kan løse et problem, hvor navnene på personer og stillinger afkortes, når kunder får vist stillingshierarkiet i Microsoft Dynamics 365 Talent. Afkortning af tekst kan gøre det svært at tage et skærmbillede eller udskrive hierarkiet.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 07a972bc1c6dd4076932248edb314992cb7297e5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: e151818f29ac37ff449daaf1dc02e44b8fb317c3
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741815"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008494"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undgå afkortning af teksten i stillingshierarkiet og eksportere til Visio
 
@@ -30,7 +30,7 @@ ms.locfileid: "1741815"
 
 **Afgang**
 
-Når en kunde får vist stillingshierarkiet i Microsoft Dynamics 365 for Talent, afkortes navnene på personer og stillinger. Derfor kan det være svært at tage et skærmbillede eller udskrive og distribuere hierarkiet.
+Når en kunde får vist stillingshierarkiet i Microsoft Dynamics 365 Talent, afkortes navnene på personer og stillinger. Derfor kan det være svært at tage et skærmbillede eller udskrive og distribuere hierarkiet.
 
 ![Stillingshierarki](media/position-h.png)
 

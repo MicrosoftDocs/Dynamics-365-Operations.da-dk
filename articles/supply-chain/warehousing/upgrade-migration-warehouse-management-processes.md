@@ -1,5 +1,5 @@
 ---
-title: Opgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
+title: Opgradere lokationsstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management
 description: Dette emne indeholder en oversigt over indstillinger for overflytning af produkt-og lagerstyring.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554040"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251425"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Opgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Opgradere lokationsstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over processen for opgradering fra Microsoft Dynamics AX 2012 R3 til Microsoft Dynamics 365 for Finance and Operations ved at køre modulet WMSII.
+Dette emne indeholder en oversigt over processen for opgradering fra Microsoft Dynamics AX 2012 R3 til Supply Chain Management ved at køre modulet WMSII.
 
-Finance and Operations understøtter ikke længere det ældre **WMSII**-modul fra Microsoft Dynamics AX 2012. Du kan i stedet bruge modulet **Lokationsstyring**. I modulet WMSII kunne lokationslagerdimension og lagerdimensionen Palle-id vælges for det økonomiske lager, men lagerdimensionen palle-ID kan ikke bruges til økonomisk varelager i Finance and Operations.
+Supply Chain Management understøtter ikke længere det ældre **WMSII**-modul fra Microsoft Dynamics AX 2012. Du kan i stedet bruge modulet **Lokationsstyring**. I modulet WMSII kunne lokations- og palle-id-lagerdimensioner vælges for det økonomiske lager, men lagerdimensionen palle-id kan ikke bruges til økonomisk lager i Supply Chain Management.
 
 Under en opgradering identificeres alle produkter, der er knyttet til en lagringsdimensionsgruppe, der bruger lagerdimensionen palle-ID, markeres som blokerede og behandles ikke til opgradering.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Opgradering til Finance and Operations, når AX 2012 R3 WMSII bruges.
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Opgradering til Supply Chain Management, når AX 2012 R3 WMSII bruges
 Efter opgraderingen kan du bruge et sæt af indstillinger i formularen **Ændre lagringsdimensionsgruppen for varer** for at fjerne blokeringen af produkter, der blev blokeret under opgraderingen, og derefter behandle transaktioner for disse produkter.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Aktivering af varer i Finance and Operations
-Denne ændring er påkrævet, fordi i Finance and Operations er varesporing en del af processerne for lokationsstyring. For disse processer skal alle lagersteder og deres lokationer være tilknyttet en lokationsprofil. Hvis du vil bruge processer for lokationsstyring, skal følgende konfigureres:
+### <a name="enabling-items-in-supply-chain-management"></a>Aktivere varer i Supply Chain Management 
+Denne ændring er påkrævet, fordi i Supply Chain Management er varesporing en del af processerne for lokationsstyring. For disse processer skal alle lagersteder og deres lokationer være tilknyttet en lokationsprofil. Hvis du vil bruge processer for lokationsstyring, skal følgende konfigureres:
 -   Eksisterende lagersteder skal være aktiverede til at bruge lokationsstyringsprocesser 
 -   Eksisterende frigivne produkter skal være tilknyttet en lagringsdimensionsgruppe, der bruger lokationsstyringsprocesser 
 
