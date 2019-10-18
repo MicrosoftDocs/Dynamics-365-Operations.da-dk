@@ -1,0 +1,62 @@
+---
+title: Konfigurere økonomisk datadeling på tværs af firmaer
+description: Denne procedure viser, hvordan du kan konfigurere, aktivere, validere og løse konflikter ved deling af data mellem virksomheder.
+author: aprilolson
+manager: AnnBe
+ms.date: 06/26/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr, DMFExecutionHistoryWorkspace, DMFExecutionHistorySummary, DMFExecutionHistoryEntities,  SysDataSharingConfiguration, SysDataSharingDiscrepencies
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: dc368351641f3e2432dfdbbaf8eed8694595bd4e
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2184364"
+---
+# <a name="configure-financial-cross-company-data-sharing"></a><span data-ttu-id="5dee2-103">Konfigurere økonomisk datadeling på tværs af firmaer</span><span class="sxs-lookup"><span data-stu-id="5dee2-103">Configure financial cross-company data sharing</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="5dee2-104">Denne procedure viser, hvordan du kan konfigurere, aktivere, validere og løse konflikter ved deling af data mellem virksomheder.</span><span class="sxs-lookup"><span data-stu-id="5dee2-104">This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies.</span></span> <span data-ttu-id="5dee2-105">Den anvender USMF-virksomheden og skabelonen til deling af økonomiske data.</span><span class="sxs-lookup"><span data-stu-id="5dee2-105">It uses the USMF company and the Financial data sharing template.</span></span>
+
+<span data-ttu-id="5dee2-106">Denne opgavevejledning kræver Dynamics AX-platform 7.1 eller nyere.</span><span class="sxs-lookup"><span data-stu-id="5dee2-106">This task guide requires Dynamics AX platform 7.1 or later.</span></span>
+
+1. <span data-ttu-id="5dee2-107">Gå til **Navigationsrude > Moduler > Systemadministration > Arbejdsområder > Datastyring**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-107">Go to **Navigation pane > Modules > System administration > Workspaces > Data management**.</span></span>
+2. <span data-ttu-id="5dee2-108">Klik på **Importér**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-108">Click **Import**.</span></span>
+3. <span data-ttu-id="5dee2-109">Skriv en værdi i feltet **Navn**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-109">In the **Name** field, type a value.</span></span>
+4. <span data-ttu-id="5dee2-110">Vælg typen 'Pakke' i feltet **Kildedataformat**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-110">In the **Source data format** field, select the 'Package' type.</span></span> <span data-ttu-id="5dee2-111">Klik på **Overfør**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-111">Click **Upload**.</span></span> <span data-ttu-id="5dee2-112">Naviger til placeringen af pakkefilen for skabelonen til deling af økonomiske data, og vælg filen.</span><span class="sxs-lookup"><span data-stu-id="5dee2-112">Navigate to the location of the Financial data sharing template package file and select that file.</span></span>
+5. <span data-ttu-id="5dee2-113">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-113">Click **Save**.</span></span>
+6. <span data-ttu-id="5dee2-114">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5dee2-114">In the list, mark the selected row.</span></span> <span data-ttu-id="5dee2-115">Vælg den politik for datadeling, der netop er blevet oprettet.</span><span class="sxs-lookup"><span data-stu-id="5dee2-115">Select the data sharing policy that was just created.</span></span>  
+7. <span data-ttu-id="5dee2-116">Klik på **Importér**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-116">Click **Import**.</span></span>
+8. <span data-ttu-id="5dee2-117">Klik på **Luk**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-117">Click **Close**.</span></span>
+9. <span data-ttu-id="5dee2-118">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="5dee2-118">Refresh the page.</span></span>
+10. <span data-ttu-id="5dee2-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5dee2-119">Close the page.</span></span>
+11. <span data-ttu-id="5dee2-120">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5dee2-120">Close the page.</span></span>
+12. <span data-ttu-id="5dee2-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5dee2-121">Close the page.</span></span>
+13. <span data-ttu-id="5dee2-122">Gå til **Navigationsrude > Moduler > Systemadministration > Opsætning > Konfigurer datadeling på tværs af firma**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-122">Go to **Navigation pane > Modules > System administration > Setup > Configure cross-company data sharing**.</span></span>
+14. <span data-ttu-id="5dee2-123">Find og vælg **Betalingsdage** på listen.</span><span class="sxs-lookup"><span data-stu-id="5dee2-123">In the list, find and select **Payment days**.</span></span>
+15. <span data-ttu-id="5dee2-124">Klik på **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-124">Click **Add**.</span></span>
+16. <span data-ttu-id="5dee2-125">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5dee2-125">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="5dee2-126">Skriv 'USSI' i feltet **Firma**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-126">In the **Company** field, type 'USSI'.</span></span>
+18. <span data-ttu-id="5dee2-127">Klik på **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-127">Click **Add**.</span></span>
+19. <span data-ttu-id="5dee2-128">Skriv 'USMF' i feltet **Firma**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-128">In the **Company** field, type 'USMF'.</span></span>
+20. <span data-ttu-id="5dee2-129">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-129">Click **Save**.</span></span>
+21. <span data-ttu-id="5dee2-130">Klik på **Aktivér**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-130">Click **Enable**.</span></span>
+22. <span data-ttu-id="5dee2-131">Klik på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-131">Click **Yes**.</span></span>
+23. <span data-ttu-id="5dee2-132">Klik på **Find delingsproblemer**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-132">Click **Find sharing issues**.</span></span>
+24. <span data-ttu-id="5dee2-133">Klik på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-133">Click **Yes**.</span></span>
+25. <span data-ttu-id="5dee2-134">Klik på **Opdater feltværdi**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-134">Click **Update field value**.</span></span>
+26. <span data-ttu-id="5dee2-135">Klik på **Brug værdi fra firma 1**.</span><span class="sxs-lookup"><span data-stu-id="5dee2-135">Click **Use value from company 1**.</span></span>
+27. <span data-ttu-id="5dee2-136">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="5dee2-136">Refresh the page.</span></span>
+28. <span data-ttu-id="5dee2-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5dee2-137">Close the page.</span></span>
+
