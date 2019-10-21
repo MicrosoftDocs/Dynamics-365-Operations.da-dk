@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546703"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250181"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
 [!include [banner](../includes/banner.md)]
 
-Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 for Finance and Operations. Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata. Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.
+Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata. Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.
 
 Der er flere oplysninger om, hvad eksterne kreditorer kan gøre i grænsefladen for kreditorsamarbejde, i [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Oplysningerne om kreditorsamarbejde i dette emne gælder kun for den aktuelle version af Finance and Operations. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde flere oplysninger om modulet **Kreditorportal** under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
+> Oplysningerne om kreditorsamarbejde i dette emne gælder kun for den aktuelle version af Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde flere oplysninger om modulet **Kreditorportal** under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Hvis du skal tilføje meddelelser på mere end ét sprog, skal du oprette separa
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Angivelse af kreditorens samarbejdsindstillinger for en bestemt kreditor
 
-En administrator konfigurerer de generelle indstillinger for kreditorsamarbejdet i Finance and Operations, f.eks. de sikkerhedsroller, der er tilgængelige for alle kreditorer, du samarbejder med. Der er dog også nogle indstillinger, som kan være forskellige for hver kreditorkonto. Du skal konfigurere disse indstillinger.
+En administrator konfigurerer de generelle indstillinger for kreditorsamarbejdet , f.eks. de sikkerhedsroller, der er tilgængelige for alle kreditorer, du samarbejder med. Der er dog også nogle indstillinger, som kan være forskellige for hver kreditorkonto. Du skal konfigurere disse indstillinger.
 
 - Aktivér kreditorsamarbejde.
 - Angiv, om kreditoren skal se prisoplysninger.
@@ -71,7 +71,7 @@ Hvis du vil dele prisoplysninger for indkøbsordrer via grænsefladen for kredit
 
 ### <a name="sending-a-po-to-a-vendor"></a>Afsendelse af en indkøbsordre til en kreditor
 
-Indkøbsordrer fremstilles i Finance and Operations. Når en indkøbsordre har statussen **Godkendt**, sender du den til kreditoren ved at vælge **Send til bekræftelse** på siden **Indkøbsordre**. Indkøbsordrens status ændres derefter til **Til eksternt gennemsyn**. Når Indkøbsordren er sendt, kan kreditoren se den på siden **Indkøbsordrer til gennemsyn** i grænsefladen for kreditorsamarbejde. Kreditoren kan derefter acceptere indkøbsordren, afvise den eller foreslå ændringer til den. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail.
+Indkøbsordrer forberedes i Supply Chain Management. Når en indkøbsordre har statussen **Godkendt**, sender du den til kreditoren ved at vælge **Send til bekræftelse** på siden **Indkøbsordre**. Indkøbsordrens status ændres derefter til **Til eksternt gennemsyn**. Når Indkøbsordren er sendt, kan kreditoren se den på siden **Indkøbsordrer til gennemsyn** i grænsefladen for kreditorsamarbejde. Kreditoren kan derefter acceptere indkøbsordren, afvise den eller foreslå ændringer til den. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Bekræftelse og accept af en indkøbsordre hos en kreditor
 
@@ -92,13 +92,13 @@ I nedenstående tabel viser den typiske udveksling af oplysninger, afhængigt af
 </thead>
 <tbody>
 <tr class="even">
-<td>Kreditoren <strong>accepterer</strong> ordren, og Finance and Operations er konfigureret til automatisk at bekræfte IO'er, som kreditoren accepterer.</td>
+<td>Kreditoren <strong>accepterer</strong> ordren, og Supply Chain Management er konfigureret til automatisk at bekræfte indkøbsordrer, som kreditoren accepterer.</td>
 <td>Status for ordren opdateres til <strong>Bekræftet</strong>. Hvis ordren af en eller anden årsag ikke kan opdateres, bliver kreditorens svar stadig registreret som <strong>Accepteret</strong>, men indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. 
 
 Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til eksternt gennemsyn</strong>, opdateres med bekræftede leveringsdatoer på linjerne. Denne opdatering starter en ny version, der automatisk indstilles til <strong>Bekræftet</strong>-status. Når indkøbsordren er bekræftet, vises den i brugergrænsefladen for kreditorens samarbejde.</td>
 </tr>
 <tr class="odd">
-<td>Kreditoren <strong>accepterer</strong> ordren, men Finance and Operations er ikke konfigureret til automatisk at bekræfte IO'er, som kreditoren accepterer.</td>
+<td>Kreditoren <strong>accepterer</strong> ordren, men Supply Chain Management er ikke konfigureret til automatisk at bekræfte indkøbsordrer, som kreditoren accepterer.</td>
 <td>Kreditorens svar registreres som <strong>Accepteret</strong>, men indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>.
 
 Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til eksternt gennemsyn</strong>, opdateres med bekræftede leveringsdatoer på linjerne. Denne opdatering starter en ny version, der automatisk indstilles til <strong>Til eksternt gennemsyn</strong>-status. Derefter kan du manuelt bekræfte indkøbsordren.</td>
@@ -180,14 +180,14 @@ I nedenstående tabel vises et eksempel på ændringerne i status og version, so
 
 | Handling | Status og version |
 |--------|--------------------|
-| Den første version af indkøbsordren oprettes i Finance and Operations. | Status er **Godkendt**. |
+| Den første version af indkøbsordren oprettes i Supply Chain Management. | Status er **Godkendt**. |
 | Indløbsordren sendes til kreditoren. | En version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
 | Kreditoren sender et **Accepteret med ændringer**-svar. | Status er stadig **Til eksternt gennemsyn**. |
 | Du kan foretage nogle ændringer, som kreditoren har anmodet om. | Statussen ændres til **Godkendt**. |
 | Du kan sende den nye version af indkøbsordren til kreditoren. | En ny version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
 | Kreditoren accepterer den nye version af indkøbsordren. | Status er stadig **Til eksternt gennemsyn,** medmindre kreditorkontoen er konfigureret til automatisk at indstille indkøbsordrernes status til **Bekræftet**, når kreditoren accepterer dem. |
 
-Kreditorer behøver ikke at bekræfte en indkøbsordre via grænsefladen for kreditorsamarbejde. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du bekræfte ordren manuelt i Finance and Operations. I dette tilfælde får du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser som en åben bekræftet ordre, som ikke har nogen svar. På dette tidspunkt har kreditoren ikke længere mulighed for at bekræfte eller afvise indkøbsordren.
+Kreditorer behøver ikke at bekræfte en indkøbsordre via grænsefladen for kreditorsamarbejde. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du manuelt bekræfte ordren. I dette tilfælde får du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser som en åben bekræftet ordre, som ikke har nogen svar. På dette tidspunkt har kreditoren ikke længere mulighed for at bekræfte eller afvise indkøbsordren.
 
 > [!NOTE]
 > Den version af indkøbsordren, der er tilgængelig for andre processer i Finance and Operations, er altid den nyeste version, selv om denne version endnu ikke er registreret i grænsefladen for kreditorsamarbejde.
@@ -200,7 +200,7 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 
 | Handling | Status og version |
 |--------|--------------------|
-| Den første version af indkøbsordren oprettes i Finance and Operations. | Status er **Kladde**. |
+| Den første version af indkøbsordren oprettes i Supply Chain Management. | Status er **Kladde**. |
 | Indkøbsordren sendes til godkendelsesprocessen. (Godkendelsesprocessen er en intern proces, som kreditoren ikke er involveret i). | Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke afvises under godkendelsesprocessen. Den godkendte indkøbsordre registreres som en version. | 
 | Indløbsordren sendes til kreditoren. | Versionen registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
 | Du kan foretage de ændringer, som kreditoren har anmodet om, enten manuelt eller ved hjælp af handlingen **Udfør opdatering af indkøbsordre** i svaret for at opdatere indkøbsordren. | Statussen ændres tilbage til **Kladde**. |
@@ -237,13 +237,13 @@ I dette afsnit beskrives interaktionerne mellem debitorer og kreditorer under ti
 
 ## <a name="public-sector-extensions"></a>Udvidelser til den offentlige sektor
 
-For den offentlige sektor muliggør de udvidede funktioner, at en tilbudsanmodningssag bliver sendt til kreditorer og publiceret. Når du udgiver en tilbudsanmodning, kan alle, der anmoder om oplysningerne, kan få vist det arbejde, der er i overensstemmelse med lovgivningen for den offentlige sektor. Alt arbejde, der er tilgængeligt, afspejles på listesiden **Åbne publicerede tilbudsanmodninger**, og de annullerede, ventende eller tildelte tilbudsanmodninger kan ses på listesiden **Lukkede publicerede tilbudsanmodninger**. Disse dokumenter kan også ses på et websted uden for Finance and Operations gennem integration med følgende dataenheder:
+For den offentlige sektor muliggør de udvidede funktioner, at en tilbudsanmodningssag bliver sendt til kreditorer og publiceret. Når du udgiver en tilbudsanmodning, kan alle, der anmoder om oplysningerne, kan få vist det arbejde, der er i overensstemmelse med lovgivningen for den offentlige sektor. Alt arbejde, der er tilgængeligt, afspejles på listesiden **Åbne publicerede tilbudsanmodninger**, og de annullerede, ventende eller tildelte tilbudsanmodninger kan ses på listesiden **Lukkede publicerede tilbudsanmodninger**. Disse dokumenter kan også ses på et websted uden for Supply Chain Management gennem integration med følgende dataenheder:
 
 - Publicerede tilbudsanmodninger
 - Linje i publicerede tilbudsanmodninger
 - Vedhæftede filer i overskrifter til publicerede tilbudsanmodninger
 
-Med disse enheder kan folk, der ikke er klargjorte brugere i Finance and Operations, men har anonym adgang til det eksterne websted, få vist tilgængeligt og lukket arbejdet. Desuden gør de udvidede funktioner i **Send og publicer** det muligt for den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, at definere en e-mailskabelon. Derefter, når indkøberen opretter tilbudsanmodningssagen, skal han eller hun vælge e-mailskabelonen for at sende de nødvendige oplysninger til kreditorerne i tilbudsanmodningssagen. 
+Med disse enheder kan personer, der ikke er klargjorte brugere i Supply Chain Management, men har anonym adgang til det eksterne websted, se tilgængeligt og lukket arbejdet. Desuden gør de udvidede funktioner i **Send og publicer** det muligt for den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, at definere en e-mailskabelon. Derefter, når indkøberen opretter tilbudsanmodningssagen, skal han eller hun vælge e-mailskabelonen for at sende de nødvendige oplysninger til kreditorerne i tilbudsanmodningssagen. 
 
 Den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, kan oprette flere e-mailskabeloner. Disse e-mailskabeloner kan indeholde både statisk tekst og følgende erstatningstokens. Tokenerne erstattes med kontekstafhængige værdier, når der oprettes en e-mail.
 

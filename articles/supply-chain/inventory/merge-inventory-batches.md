@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572828"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250984"
 ---
 # <a name="merge-inventory-batches"></a>Flet lagerbatches
 
@@ -89,7 +89,7 @@ Nej, du kan kun flette batches, der har det samme sted og de samme lagringsdimen
 Nej, du kan kun flette det fulde antal partier. Batchfletfunktionen er beregnet som en lagerfunktion, og ikke en produktionsfunktion.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Hvad hvis batchene har forskellige batchattributværdier?
-Når du vælger kildebatches, der skal kombineres i flettede batches, vil Finance and Operations kontrollere, om alle batches har karakteristika eller attributværdier. Når en attributværdi er den samme, foreslås der en værdi for det flettede batch. Du kan ændre denne værdi. Attributværdier, der ikke er de samme, udfyldes ikke for det flettede batch, og du kan angive disse værdier manuelt. Hvis batchattributtypen for attributværdien er et heltal eller en brøk, og værdierne er ikke de samme for alle kildebatches, beregnes værdien ved hjælp af en beregning af vægtet gennemsnit. De beregnede værdier rundes op eller ned til det nærmeste interval. Hvis værdien er tom for et kildebatch, medtages batchet og dets mængde ikke i beregningen. **Eksempel** Følgende eksempel viser en vægtet gennemsnitsberegning for et flettet batch. To af kildebatchene har en tom værdi for en batchattributtype, der er et heltal. Følgende attribut tildeles kildebatchene.
+Når du vælger kildebatches, der skal kombineres i den flettede batch, vil Supply Chain Management kontrollere, om alle batches har karakteristika eller attributværdier. Når en attributværdi er den samme, foreslås der en værdi for det flettede batch. Du kan ændre denne værdi. Attributværdier, der ikke er de samme, udfyldes ikke for det flettede batch, og du kan angive disse værdier manuelt. Hvis batchattributtypen for attributværdien er et heltal eller en brøk, og værdierne er ikke de samme for alle kildebatches, beregnes værdien ved hjælp af en beregning af vægtet gennemsnit. De beregnede værdier rundes op eller ned til det nærmeste interval. Hvis værdien er tom for et kildebatch, medtages batchet og dets mængde ikke i beregningen. **Eksempel** Følgende eksempel viser en vægtet gennemsnitsberegning for et flettet batch. To af kildebatchene har en tom værdi for en batchattributtype, der er et heltal. Følgende attribut tildeles kildebatchene.
 
 | Egenskab | Minimum | Multiplum | Maksimum |
 |-----------|---------|-----------|---------|

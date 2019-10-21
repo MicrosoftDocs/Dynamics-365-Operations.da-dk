@@ -1,6 +1,6 @@
 ---
 title: Fjerne Talent-miljøer
-description: Dette emne fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 for Talent.
+description: Dette emne fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517619"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010609"
 ---
 # <a name="remove-talent-environments"></a>Fjerne Talent-miljøer
 
 [!include [banner](includes/banner.md)]
 
-Dette emne fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 for Talent.
+Dette emne fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Fjerne et testdrevmiljø
 
@@ -45,7 +45,7 @@ Det eksisterende testdrevmiljø fjernes. Når det er fjernet, kan du tilmelde di
 
 Det antages i emnet, at du har købt Talent via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). 
 
-Da der er "indeholdt" et enkelt Talent-miljø i hver enkelt PowerApps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele PowerApps-miljøet, den anden mulighed omfatter kun fjernelse af Talent. Den første indstilling foretrækkes, når du har oprettet et PowerApps-miljø udtrykkeligt med henblik på klargøring af Talent, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret PowerApps-miljø, der er udfyldt med omfattende data, som udnyttes i PowerApps og processer.
+Da der er "indeholdt" et enkelt Talent-miljø i hvert enkelt PowerApps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele PowerApps-miljøet, den anden mulighed omfatter kun fjernelse af Talent. Den første indstilling foretrækkes, når du har oprettet et PowerApps-miljø udtrykkeligt med henblik på klargøring af Talent, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret PowerApps-miljø, der er udfyldt med omfattende data, som udnyttes i PowerApps og processer.
 
 > [!Important]
 > Før du fjerner PowerApps-miljøet, skal du sikre dig, at det ikke bruges til omfattende dataintegrationer, som ikke er omfattet af Talent. Bemærk også, at PowerApps-standardmiljøerne ikke kan fjernes. 

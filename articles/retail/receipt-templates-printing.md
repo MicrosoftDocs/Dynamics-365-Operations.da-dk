@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og designe kvitteringsformater
-description: I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout for at styre, hvordan kvitteringer, fakturaer og andre dokumenter udskrives. Microsoft Dynamics 365 for Retail indeholder en formularlayoutdesigner, som du kan bruge til nemt at oprette og redigere forskellige typer formularlayout.
+description: I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout for at styre, hvordan kvitteringer, fakturaer og andre dokumenter udskrives. Dynamics 365 Retail indeholder en formularlayoutdesigner, som du kan bruge til nemt at oprette og redigere forskellige typer formularlayout.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553062"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025119"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurere og designe kvitteringsformater
 
 [!include [banner](includes/banner.md)]
 
-I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout for at styre, hvordan kvitteringer, fakturaer og andre dokumenter udskrives. Microsoft Dynamics 365 for Retail indeholder en formularlayoutdesigner, som du kan bruge til nemt at oprette og redigere forskellige typer formularlayout.
+I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout for at styre, hvordan kvitteringer, fakturaer og andre dokumenter udskrives. Dynamics 365 Retail indeholder en formularlayoutdesigner, som du kan bruge til nemt at oprette og redigere forskellige typer formularlayout.
 
 > [!IMPORTANT]
 > Du skal konfigurere formlayout og kvitteringsprofiler for at udskrive kvitteringer og andre dokumenter fra Retail Modern POS og Cloud POS. Du kan medtage flere formularlayout i en kvitteringsprofil. Du kan derefter tildele kvitteringsprofilen til en printer ved at redigere en hardwareprofil.
@@ -55,7 +55,7 @@ Brug formlayoutdesigneren til at oprette en grafisk illustration af layoutet for
 2. Vælg et formularlayout på siden **Kvitteringsformat**, og klik derefter på **Designer**.
 3. Klik på **Kør** for starte installationen af Retail-designerværten.
 4. Klik på **Åbn** på meddelelseslinjen nederst i vinduet Internet Explorer for at begynde at installere ét klik-designeren. (Meddelelseslinjen vises muligvis i et andet sted i andre browsere.) Statusindikatoren viser forløbet af installationen.
-5. Når installationen er fuldført, skal du på siden Log på angive dit brugernavn og din adgangskode til Dynamics 365 for Retail og derefter klikke på **Log på** for at starte designeren.
+5. Når installationen er fuldført, skal du på angive dit brugernavn og din adgangskode til Retail og derefter klikke på **Log på** for at starte designeren.
 6. Når dine legitimationsoplysninger er valideret, og designeren starter, kan du begynde at designe kvitteringsformatet eller redigere et eksisterende format.
 7. Hvis du vil oprette elementerne til formularen, skal du vælge sektionen **Hoved**, **Linjer** eller **Sidefod** og derefter trække et element fra sektionen til arbejdsområdet. De fleste elementer indeholder variabler, som automatisk udfyldes med data fra databasen. Du kan bruge andre elementer, f.eks. delen **Tekst**, til at udskrive brugerdefineret tekst på kvitteringen.
 

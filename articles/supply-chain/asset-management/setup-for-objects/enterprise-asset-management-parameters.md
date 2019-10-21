@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783145"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024562"
 ---
 # <a name="asset-management-parameters"></a>Parametre til aktivstyring
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783145"
 
 I aktivstyring skal der oprettes generelle parametre vedrørende aktiver, arbejdsordrer og planlægning af arbejdsordrer. Dette emne forklarer, hvordan du konfigurerer dem. Vælg **Styring af aktiver** > **Opsætning** > **Parametre til aktivstyring** for at åbne formen.
 
-Knappen **Guiden Opret data** kan bruges til automatisk at oprette opsætningsdata til test- eller demodataformål i et firma i Dynamics 365 for Finance and Operations. Se hvidbogen "Konfigurere testdata i aktivstyring" for at få oplysninger om, hvordan du bruger guiden.
+Knappen **Guiden Opret data** kan bruges til automatisk at oprette opsætningsdata til test- eller demodataformål i et firma i Dynamics 365 Supply Chain Management. Se hvidbogen "Konfigurere testdata i aktivstyring" for at få oplysninger om, hvordan du bruger guiden.
 
 **Aktiver**-link
 
@@ -57,7 +57,7 @@ Knappen **Guiden Opret data** kan bruges til automatisk at oprette opsætningsda
 - Vælg "Ja" på til/fra-knappen **Kopiér fejl**, hvis du automatisk vil kopiere fejl, der er registreret på arbejdsordrer, til relaterede vedligeholdelsesanmodninger.  
 - I feltet **Niveau** skal du definere det arbejdsstedsniveau, der automatisk indsættes på en arbejdsordre, hvis alle relaterede arbejdsordrejob refererer til det samme arbejdssted. Hvis arbejdsordrens job ikke alle er relateret til det samme arbejdssted på det definerede niveau, er feltet **Arbejdssted** tomt i arbejdsordren. Eksempel: Hvis du indsætter tallet "1" i dette felt, er det øverste niveau i en arbejdsstedsstruktur. Hvis du indsætter tallet "0" i dette felt, har du ikke defineret et bestemt arbejdsstedsniveau, kun at alle arbejdsordrejob på en arbejdsordre skal relateres til det samme arbejdssted, for at dette arbejdssted kan føjes til arbejdsordren.  
 - Kladder, der bruges ved bogføring af forbrug på en arbejdsordre, kan vælges i oversigtspanelet **Generelt** i felterne **Time**, **Vare** og **Udgift**.  
-- I feltet **Produktsprogkilde** skal du vælge, hvilket sprog der skal bruges til produktnavne i Styring af aktiver-rapporter. Du kan vælge det sprog, der er angivet på firmakontoen, eller det sprog, der er angivet for den bruger, som aktuelt er logget på Dynamics 365 for Finance and Operations.  
+- I feltet **Produktsprogkilde** skal du vælge, hvilket sprog der skal bruges til produktnavne i Styring af aktiver-rapporter. Du kan vælge det sprog, der er angivet på firmakontoen, eller det sprog, der er angivet for den bruger, som aktuelt er logget på.  
 - Vælg "Ja" på til/fra-knappen **Realtidsopdatering** , hvis du automatisk vil opdatere ændringer af jobtypestandarder, vedligeholdelsesplaner og vedligeholdelsesrunder.
 > - Hvis du vælger "Nej", opdateres ændringer i jobtypestandarder, vedligeholdelsesplaner og vedligeholdelsesrunder ikke automatisk i Styring af aktiver.  
 > - Vælg "Nej" på til/fra-knappen, hvis du har store mængder data, der synkroniseres, for eksempel mange aktiver eller arbejdssteder, der er konfigureret på vedligeholdelsesplaner eller vedligeholdelsesrunder, eller et stort antal vedligeholdelsesplaner eller -runder.  
@@ -75,7 +75,7 @@ Knappen **Guiden Opret data** kan bruges til automatisk at oprette opsætningsda
 - **Behovsplanen** relaterer til ressourcer i modulet **Organisationsadministration**. Hvis du vælger en behovsplan i dette felt, kan du se kapacitetsreservationer, der er relateret til arbejdsordrer, i **Kapacitetsreservationer** (**Virksomhedsadministration** > **Ressourcer** > **Ressourcer** > vælg ressource > fanen **Ressource** > knappen **Kapacitetsreservationer**). Hvis du lader feltet være tomt, kan du se den kapacitetsbelastning, der er relateret til arbejdsordrer, i **Kapacitetsbelastning** (**Virksomhedsadministration** \> **Ressourcer** \> **Ressourcer** \> vælg ressource \> **Ressource**-fanen \> **Kapacitetsbelastning**-knappen).  
 
 >[!NOTE]
->Valget vedrørende brug af en behovsplan eller ej i modulet **Styring af aktiver** og den relaterede form, der bruges til at få en oversigt over kapacitetsreservationer eller kapacitetsbelastning er Dynamics 365 for Finance and Operations-standardopsætning. Afhængigt af opsætningen i feltet **Behovsplan** vil du kunne få adgang til kapacitetsoplysninger i enten **Kapacitetsreservationer** eller **Kapacitetsbelastning** i **Virksomhedsadministration**-modulet. Det er ikke muligt at oprette en opsætning, hvor kapacitetsreservationer kan ses i begge visninger.  
+>Valget vedrørende brug af en behovsplan eller ej i modulet **Styring af aktiver** og den relaterede form, der bruges til at få en oversigt over kapacitetsreservationer eller kapacitetsbelastning er standardopsætningen. Afhængigt af opsætningen i feltet **Behovsplan** vil du kunne få adgang til kapacitetsoplysninger i enten **Kapacitetsreservationer** eller **Kapacitetsbelastning** i **Virksomhedsadministration**-modulet. Det er ikke muligt at oprette en opsætning, hvor kapacitetsreservationer kan ses i begge visninger.  
 
 De felter, der er beskrevet i punktopstillingen nedenfor, relaterer alle til beregnede rangeringsscorer, som bruges til at beregne arbejdsordrens prioritet under planlægningen af arbejdsordren.
 

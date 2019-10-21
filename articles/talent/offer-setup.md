@@ -1,6 +1,6 @@
 ---
 title: Konfigurere tilbudsstyring
-description: I dette emne beskrives, hvordan du kan konfigurere tilbud i Talent.
+description: I dette emne beskrives, hvordan du kan konfigurere tilbud i Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517607"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010838"
 ---
 # <a name="set-up-offer-management"></a>Konfigurere tilbudsstyring 
 
 [!include [banner](includes/banner.md)]
 
-Når en kandidat overgår til tilbudsstadiet i Dynamics 365 for Talent: Attract, skal du sikre dig, at der hurtigt kan oprettes tilbud til kandidaten, at de kan godkendes efter behov og sendes til kandidaten. Da de fleste tilbud er standard, kan de oprettes fra genanvendelige skabeloner. I Attract er alle tilbud samlet i en tilbudspakke, der er en samling af et eller flere tilbudsdokumenter. 
+Når en kandidat overgår til tilbudsstadiet i Dynamics 365 Talent: Attract, skal du sikre dig, at der hurtigt kan oprettes tilbud til kandidaten, at de kan godkendes efter behov og sendes til kandidaten. Da de fleste tilbud er standard, kan de oprettes fra genanvendelige skabeloner. I Attract er alle tilbud samlet i en tilbudspakke, der er en samling af et eller flere tilbudsdokumenter. 
 
 I dette emne beskrives de trin, som Attract-administratorer skal følge for at konfigurere forskellige tilbudspakkeskabeloner som en del af tilbudsstyringsfunktionerne i Attract. Brugere med ikke-administrator roller har ikke adgang til disse funktioner.
 

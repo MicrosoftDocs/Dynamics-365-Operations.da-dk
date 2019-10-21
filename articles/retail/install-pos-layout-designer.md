@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025438"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Installere layoutdesigneren til Retail POS
 
@@ -36,11 +36,11 @@ Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af penge
 
 ## <a name="install-the-one-click-designer"></a>Installere enkelt klik-designer
 
-1. Brug menuen øverst til venstre i Microsoft Dynamics 365 for Retail til at navigere til **Detail** **og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Skærmlayout**.
+1. I Retail skal du bruge menuen øverst til venstre til at navigere til **Detail** **og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Skærmlayout**.
 2. Vælg et layout, der har programtypen **Modern POS til Windows** eller **Cloud POS**, og klik derefter på **Layoutdesigner**.
 3. Klik på **Åbn** på meddelelseslinjen nederst i vinduet Internet Explorer for at starte ét klik-designeren. (Meddelelseslinjen vises muligvis et andet sted i andre browsere).
 4. I **Programkørsel - Sikkerhedsadvarsel**-meddelelsen, der vises, skal du klikke på **Kør** for at installere Retail designerværten. Statusindikatoren viser forløbet af installationen.
-5. Når installationen er fuldført, skal du på siden **Log på** angive dit brugernavn og din adgangskode til Microsoft Dynamics 365 for Retail og derefter klikke på **Log på** for at starte designeren.
+5. Når installationen er fuldført, skal du på siden **Log på** angive dit Retail-brugernavn og din adgangskode og derefter klikke på **Log på** for at starte designeren.
 6. Når dine legitimationsoplysninger er valideret, og designeren starter, kan du designe dit eget layout eller redigere det eksisterende layout.
 
     [![Layout i ét klik-designeren](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af penge
     **Løsninger:**
 
     - Sørg for, at blokering af pop-up-vinduer er deaktiveret for dette websted i Internet Explorer. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Beskyttelse af personlige oplysninger** &gt; **Blokering af pop op-vinduer**, og skift indstillingen, hvis der kræves en ændring.
-    - I Internet Explorer skal du føje Dynamics 365 for Retail URL-adressen til listen over websteder, der er tillid til. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
+    - I Internet Explorer skal du føje Retail URL-adressen til listen over websteder, der er tillid til. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
 
 - Programmet starter ikke, og du bliver bedt om at kontakte leverandøren.
 
-    **Løsning:** I Internet Explorer skal du føje Dynamics 365 for Retail URL-adressen til listen over websteder, der er tillid til. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
+    **Løsning:** I Internet Explorer skal du føje Retail URL-adressen til listen over websteder, der er tillid til. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
 
 **Kendt problem:** Designeren virker ikke korrekt i Google Chrome- og Mozilla Firefox-browsere. Vi arbejder på at løse dette problem.
 

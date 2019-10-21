@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer og Dynamics 365 for Retail
-description: Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner i de seneste udgivelser af Microsoft Dynamics 365 for Retail.
+title: Nyheder eller ændringer og Dynamics 365 Retail
+description: Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner i de seneste udgivelser af Microsoft Dynamics 365 Retail.
 author: sericks007
 manager: AnnBe
 ms.date: 10/20/2018
@@ -16,22 +16,22 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 23156e4f19beaf1bfe6ab9a66a326d55e7d85213
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d0f89cc5ec0a0a1bb174a031aa9b6c059d608be4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845693"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025485"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-for-retail"></a>Nyheder og ændringer i Dynamics 365 for Retail
+# <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Nyheder og ændringer i Dynamics 365 Retail
 
 [!include [banner](../../includes/banner.md)]
 
-Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner og ændringer i de seneste udgivelser af Microsoft Dynamics 365 for Retail.
+Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner og ændringer i de seneste udgivelser af Microsoft Dynamics 365 Retail.
 
 [!include [release notes](../includes/release-notes.md)]
 
-## <a name="releases-of-dynamics-365-for-retail"></a>Versioner af Dynamics 365 for Retail
+## <a name="releases-of-dynamics-365-retail"></a>Versioner af Dynamics 365 Retail
 
 | Frigivelse | Build-nummer | Tilgængelighed | Få mere at vide |
 |---------|--------------|--------------|------------|

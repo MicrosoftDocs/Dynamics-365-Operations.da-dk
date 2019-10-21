@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563522"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249465"
 ---
 # <a name="product-information-overview"></a>Oversigt over produktoplysninger
 
@@ -57,17 +57,17 @@ Et produkt defineres primært af produktnummer, navn og beskrivelse. Andre data 
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribution, eksport og import af produktdata
 
-Produktdefinitionen kan oprettes i Microsoft Dynamics 365 for Finance and Operations. Den kan også importeres fra styring af systemer til produktlivscyklus (PLM), produktdatastyring (PDM) eller administration af produktoplysninger (PIM). Når der bruges mere end én forekomst af Finance and Operations, bruges der som regel én forekomst som produktdatamaster for alle andre forekomster. Denne fremgangsmåde understøttes af en stor mængde dataenheder, der aktiverer eksport og import af produktdefinitionsdata fra én forekomst til en anden.
+Produktdefinitionen kan oprettes i Supply Chain Management. Den kan også importeres fra styring af systemer til produktlivscyklus (PLM), produktdatastyring (PDM) eller administration af produktoplysninger (PIM). Når der bruges mere end én forekomst af Supply Chain Management, bruges der som regel én forekomst som produktdatamaster for alle andre forekomster. Denne fremgangsmåde understøttes af en stor mængde dataenheder, der aktiverer eksport og import af produktdefinitionsdata fra én forekomst til en anden.
 
-For at understøtte distributionen af produktdata til mange forekomster kan du bruge tjenesten Common Data Service i Finance and Operations. Produktdefinitionerne kan eksporteres fra en forekomst af Finance and Operations til Common Data Service. Produktdefinitionerne kan derefter bruges til at klargøre andre forretningsprogrammer, f.eks. Microsoft Dynamics 365 for Sales, med produktdata.
+For at understøtte distributionen af produktdata til mange forekomster kan du bruge tjenesten Common Data Service i Supply Chain Management. Produktdefinitionerne kan eksporteres fra en forekomst af Supply Chain Management til Common Data Service. Produktdefinitionerne kan derefter bruges til at klargøre andre forretningsprogrammer, f.eks. Dynamics 365 Sales, med produktdata.
 
 Bemærk, at i dynamiske og fleksible organisationer ændres produktoplysningsdata hver dag. Vedligeholdelse af nøjagtige og faktiske produktdata er derfor en forretningsproces, der er vigtig i sig selv.
 
 ## <a name="product-masters-and-product-variants"></a>Produktmastere og produktvarianter
 
-I en fleksibel verden, hvor produkter hurtigt skal kunne tilpasses kundebehov, angiver produktdefinitioner et sæt produkter i stedet for specifikke produkter. I Microsoft Dynamics 365 for Finance and Operations er disse generiske produkter kendt som *produktmastere*. Produktmastere indeholder definitioner og regler, der angiver, hvordan specifikke produkter beskrives og fungerer i forretningsprocesser. Baseret på disse definitioner, kan der genereres specifikke produkter. Disse specifikke produkter kaldes for *produktvarianter*.
+I en fleksibel verden, hvor produkter hurtigt skal kunne tilpasses kundebehov, angiver produktdefinitioner et sæt produkter i stedet for specifikke produkter. I Supply Chain Management er disse generiske produkter kendt som *produktmastere*. Produktmastere indeholder definitioner og regler, der angiver, hvordan specifikke produkter beskrives og fungerer i forretningsprocesser. Baseret på disse definitioner, kan der genereres specifikke produkter. Disse specifikke produkter kaldes for *produktvarianter*.
 
-I Finance and Operations er en produktmaster knyttet til en produktdimensionsgruppe og en konfigurationsteknologi for at angive forretningsreglerne. Produktdimensionerne (farve, størrelse, type og konfiguration) er et bestemt sæt attributter, der kan bruges i hele programmet til at definere og spore specifikke funktionsmåder for relaterede produkter. Disse dimensioner kan også hjælpe brugerne med at søge efter og identificere produkterne.
+En produktmaster er knyttet til en produktdimensionsgruppe og en konfigurationsteknologi for at angive forretningsreglerne. Produktdimensionerne (farve, størrelse, type og konfiguration) er et bestemt sæt attributter, der kan bruges i hele programmet til at definere og spore specifikke funktionsmåder for relaterede produkter. Disse dimensioner kan også hjælpe brugerne med at søge efter og identificere produkterne.
 
 ## <a name="configuration-technologies"></a>Konfigurationsteknologier
 
@@ -77,7 +77,7 @@ Du kan vælge mellem tre konfigurationsteknologier:
 - Den dimensionsbaserede konfiguration bruges typisk i produktionsscenarier, og du kan bruge konfigurationsdimensionen i definitionen af styklister. Når du har valgt en bestemt konfiguration, bruges det undersæt af styklistelinjer, der gælder for konfigurationen, til planlægning og produktion. Dette begreb kaldes også for *global stykliste*, fordi der bruges én fælles stykliste til alle konfigurationer af et produkt.
 - Begrænsningsbaseret konfiguration bruger en produktkonfigurationsmodel til at beskrive alle mulige attributter og komponenter, der kræves for at beskrive alle mulige varianter af et produkt i en enkelt model. Begrænsningerne af attributkombinationer kan beskrives med regulære udtryk eller tabelbaserede begrænsninger. Produktkonfigurationsmodeller og -styringer bliver stadig vigtigere i administration af produktoplysninger og bruges på tværs af alle brancher.
 
-Når du planlægger implementeringen af Finance and Operations, er det meget vigtigt, at du vælger den korrekte konfigurationsteknologi for en forretningsproces. Et produkt kan ikke konverteres fra én model til en anden efter implementeringen.
+Når du planlægger implementeringen af Supply Chain Management, er det meget vigtigt, at du vælger den korrekte konfigurationsteknologi for en forretningsproces. Et produkt kan ikke konverteres fra én model til en anden efter implementeringen.
 
 ## <a name="product-variant-model-definition-workspace"></a>Arbejdsområdet Definition af produktvariantmodel
 

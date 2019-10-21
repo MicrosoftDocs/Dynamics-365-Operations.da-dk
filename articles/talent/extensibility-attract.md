@@ -1,6 +1,6 @@
 ---
 title: Udvidelsesmuligheder i Attract
-description: I dette emne beskrives, hvordan du kan udvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjælp af Microsoft Power Platform.
+description: I dette emne beskrives, hvordan du kan udvide Microsoft Dynamics 365 Talent - Attract ved hjælp af Microsoft Power Platform.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795214"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026227"
 ---
 # <a name="extensibility-in-attract"></a>Udvidelsesmuligheder i Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent er bygget oven på Common Data Service-platformen og kan udvides på forskellige måder ved hjælp af Microsoft Power Platform og de funktioner, som Common Data Service tilbyder. Derfor kan du konfigurere og tilpasse systemet ved hjælp af Microsoft PowerApps og Microsoft Flow. Du kan også få yderligere analyser om personer ved hjælp af Microsoft Power BI. Desuden gør nye, brugerdefinerede aktiviteter, f.eks. PowerApps og webindholdsaktiviteter (iframe), ansættelsesprocessen mere fleksibel end nogensinde før. Ved hjælp af disse aktiviteter kan du skræddersy ansættelsesprocessen til dine forretningsbehov og -processer og kan sikre dig, at både ansættelsesteam og kandidater får en problemfri tilpasset brugeroplevelse.
+Microsoft Dynamics 365 Talent er bygget oven på Common Data Service og kan udvides på forskellige måder ved hjælp af Microsoft Power Platform og de funktioner, som Common Data Service tilbyder. Derfor kan du konfigurere og tilpasse systemet ved hjælp af Microsoft PowerApps og Microsoft Flow. Du kan også få yderligere analyser om personer ved hjælp af Microsoft Power BI. Desuden gør nye, brugerdefinerede aktiviteter, f.eks. PowerApps og webindholdsaktiviteter (iframe), ansættelsesprocessen mere fleksibel end nogensinde før. Ved hjælp af disse aktiviteter kan du skræddersy ansættelsesprocessen til dine forretningsbehov og -processer og kan sikre dig, at både ansættelsesteam og kandidater får en problemfri tilpasset brugeroplevelse.
 
 ## <a name="extending-option-sets-in-attract"></a>Udvide grupperede indstillinger i Attract
 
@@ -40,7 +40,7 @@ En **Grupperet indstilling** (valgliste) er en type felt, der kan indgå i en en
 
 Nedenfor vises trinnene til opdatering af **Årsag til afvisning** med værdier, der er specifikke for din virksomhed.  
 
-1. Hvis du vil udvide den grupperede indstilling **Årsag til afvisning**, skal du gå til [Webstedet administration af PowerApps](https://admin.powerapps.com).
+1. Hvis du vil udvide den angivne indstilling **Årsag til afvisning**, skal du gå til [PowerApps Administration-webstedet](https://admin.powerapps.com).
 2. Du kan blive bedt om at logge på din konto. Angiv det bruger-id og den adgangskode, du bruger til at logge på Dynamics 365 og/eller Office 365, og klik derefter på **Næste**.
 3. Under fanen **Miljøer** skal du vælge det miljø, som du vil administrere, og dobbeltklikke for at få adgang til fanen **Oplysninger**.
 4. Under fanen **Oplysninger** skal du vælge **Dynamics 365 Administration**.
@@ -54,7 +54,7 @@ Nedenfor vises trinnene til opdatering af **Årsag til afvisning** med værdier,
 12. Vælg **Gem**.
 13. Vælg **Udgiv** øverst på siden.
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Udnytte Microsoft Power Platform 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Drage fordel af Microsoft Power Platform 
 
 Da alle dataene fra Attract findes i Common Data Service, kan du bruge værktøjer fra Microsoft Power Platform til at integrere dine særlige virksomhedsbehov i Attract.
 
@@ -62,7 +62,7 @@ Da alle dataene fra Attract findes i Common Data Service, kan du bruge værktøj
 
 Du kan bruge PowerApps til nemt at bygge apps, der er tilknyttet dine Attract-data, og som bruger udtryk som dem, der findes i Microsoft Excel, til at tilføje logik. Apps, som du opretter ved hjælp af PowerApps, kan køre på internettet og på Apple iOS- og Google Android-enheder.
 
-For eksempel kan du gøre det nemmere for rekrutteringsmedarbejdere at bruge universitetskarrieremesser ved at bygge en letvægtsapp, så de kan scanne cv'er og sende kandidater videre til en stilling i Attract. Du kan også oprette en app, der hjælper med at opfylde organisationens overholdelsesbehov. Du kan finde flere oplysninger om PowerApps, og hvordan det anvendes til at udvikle programmer, under [Integrering af data i Common Data Service](https://docs.microsoft.com/powerapps).
+For eksempel kan du gøre det nemmere for rekrutteringsmedarbejdere at bruge universitetskarrieremesser ved at bygge en letvægtsapp, så de kan scanne cv'er og sende kandidater videre til en stilling i Attract. Du kan også oprette en app, der hjælper med at opfylde organisationens overholdelsesbehov. Du kan finde flere oplysninger om PowerApps, og hvordan det anvendes til at udvikle programmer, under [Integrere data i Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
@@ -74,14 +74,14 @@ Med Power BI kan du oprette og få vist brugerdefinerede rapporter og dashboards
 
 ### <a name="custom-activities"></a>Brugerdefinerede aktiviteter 
 
-Du kan tilføje brugerdefinerede aktiviteter, f.eks. PowerApps-apps og webindholdsaktiviteter (iframe), på jobprocesskabelonniveau, eller når du opretter et nyt job. Med disse aktiviteter kan du tilpasse ansættelsesprocessen og overføre forretningslogik, der gælder specifikt for din virksomhed, til Attract.
+Du kan tilføje brugerdefinerede aktiviteter, f.eks. PowerApps-apps og webindholdsaktiviteter (iframe), på niveauet for jobprocesskabeloner, eller når du opretter et nyt job. Med disse aktiviteter kan du tilpasse ansættelsesprocessen og overføre forretningslogik, der gælder specifikt for din virksomhed, til Attract.
 
-#### <a name="powerapps-activity"></a>Aktiviteten PowerApps 
+#### <a name="powerapps-activity"></a>PowerApps-aktivitet 
 
-Med aktiviteten PowerApps kan forfatteren til en job- eller jobprocesskabelon få mulighed for at integrere en PowerApps-app i ansættelsesprocessen. Når du opretter og udgiver appen, kan du angive dens app-ID i konfigurationerne af aktiviteten. Ved hjælp af en PowerApps-app kan du læse og skrive data i Common Data Service. Du kan også tilknytte appen til en proces. Du har f.eks. en app, som rekrutteringsmedarbejdere bruger til at udfylde en formular, mens de fører telefonsamtaler. I denne situation kan du knytte appen til en proces, der evaluerer, om en ansøgeren kan rykkes yderligere frem i jobansøgningsprocessen. Denne type aktivitet kan kun ses af medlemmer af ansættelsesteamet. Du kan finde flere oplysninger om, hvordan du konfigurerer PowerApps-aktiviteten, i [Aktiviteter i Attract](./activities-attract.md).
+Med PowerApps-aktiviteten kan forfatteren til en job- eller jobprocesskabelon integrere en PowerApps-app i ansættelsesprocessen. Når du opretter og udgiver appen, kan du angive dens app-ID i konfigurationerne af aktiviteten. Ved hjælp af en PowerApps-app kan du læse og skrive data i Common Data Service. Du kan også tilknytte appen til en proces. Du har f.eks. en app, som rekrutteringsmedarbejdere bruger til at udfylde en formular, mens de fører telefonsamtaler. I denne situation kan du knytte appen til en proces, der evaluerer, om en ansøgeren kan rykkes yderligere frem i jobansøgningsprocessen. Denne type aktivitet kan kun ses af medlemmer af ansættelsesteamet. Du kan finde flere oplysninger om, hvordan du konfigurerer PowerApps-aktiviteten, i [Aktiviteter i Attract](./activities-attract.md).
 
 > [!NOTE]
-> Aktiviteten PowerApps er kun tilgængelig i forbindelse med tilføjelsesprogrammet til omfattende ansættelse.
+> PowerApps-aktiviteten er kun tilgængelig i forbindelse med tilføjelsesprogrammet til omfattende ansættelse.
 
 #### <a name="web-content-iframe-activity"></a>Webindholdsaktivitet (iframe)
 

@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023630"
 ---
 # <a name="attributes-and-attribute-groups"></a>Attributter og attributgrupper
 
 [!include [banner](includes/banner.md)]
 
-*Attributter* er en måde til at beskrive et produkt og dets egenskaber yderligere via brugerdefinerede felter (f.eks. **Hukommelsesstørrelse**, **Harddiskkapacitet**, **Er Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter være tilknyttet forskellige Retail-enheder, som f.eks. produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver derefter attributterne og standardværdierne, når de bliver knyttet til produktkategorierne eller detailkanalerne. Standardværdierne kan tilsidesættes på hvert enkelt produktniveau i detailniveauet eller i et detailkatalog.
+*Attributter* er en måde til at beskrive et produkt og dets egenskaber yderligere via brugerdefinerede felter (f.eks. **Hukommelsesstørrelse**, **Harddiskkapacitet**, **Er Energy star-kompatibel** og så videre). Attributter kan være tilknyttet forskellige detailenheder, såsom produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver derefter attributterne og standardværdierne, når de bliver knyttet til produktkategorierne eller detailkanalerne. Standardværdierne kan tilsidesættes på hvert enkelt produktniveau i detailniveauet eller i et detailkatalog.
+
 
 Et typisk tv-produkt kan f.eks. have følgende attributter.
 
@@ -53,7 +54,7 @@ Et typisk tv-produkt kan f.eks. have følgende attributter.
 
 ## <a name="attributes-and-attribute-types"></a>Attributter og attributtyper
 
-Attributterne baseres på *attributtyper*. Attributtypen identificerer den type data, der kan angives for en bestemt attribut. Finance and Operations understøtter i øjeblikket følgende attributtyper:
+Attributterne baseres på *attributtyper*. Attributtypen identificerer den type data, der kan angives for en bestemt attribut. Følgende attributtyper understøttes:
 
 - **Valuta** – Denne type understøtter en valutaværdi. Den kan være afgrænset (dvs. den kan understøtte et værdiinterval), eller den kan være åben.
 - **DateTime** – Denne type understøtter en dato- og klokkeslætsværdi. Den kan afgrænses eller være åben.
@@ -63,9 +64,9 @@ Attributterne baseres på *attributtyper*. Attributtypen identificerer den type 
 - **Boolesk** – Denne type understøtter en binær værdi (**sand** eller **falsk**).
 - **Reference** – Denne type refererer til andre attributter.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Oprette attributtyper i Finance and Operations
+### <a name="set-up-attribute-types"></a>Konfigurer attributtyper
 
-1. Log på Finance and Operations back-office-klienten som detailproduktchef.
+1. Log på back-office-klienten som detailproduktchef.
 2. Gå til **Administration af produktoplysninger** &gt; **Opsætning** &gt; **Kategorier og attributter** &gt; **Attributtyper**.
 3. Opret to attributtyper for typen **Tekst**, vælg **Ja** i indstillingen **Fast liste**, og tilføj derefter en liste over værdier:
 
@@ -74,7 +75,7 @@ Attributterne baseres på *attributtyper*. Attributtypen identificerer den type 
 
 ![Attributtyper](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Oprette en attribut i Finance and Operations
+### <a name="set-up-an-attribute"></a>Konfigurer en attribut
 
 1. Log på back-office-klienten som detailproduktchef.
 2. Gå til **Administration af produktoplysninger** &gt; **Opsætning** &gt; **Kategorier og attributter** &gt; **Attributter**.
@@ -101,13 +102,13 @@ Her er de resterende indstillinger for attributmetadata på siden **Attributter*
 - Ignorer bogstavstørrelse og format
 - Komplet match
 
-Disse indstillinger var oprindeligt beregnet til at forbedre online storefrontens søgefunktion. Selvom Finance and Operations ikke som standard indeholder online storefronten, indeholder det SDK'et (Software Development Kit) til eCommerce-publicering. Kunder kan bruge dette SDK til at placere produkter i et søgeindeks efter eget valg. Selvom produktdataene er importeret, skal kunder stadig kunne skelne søgbare data, data, der kan forespørges på, osv. På denne måde kan de opbygge et optimalt indeks for at sikre, at de kun indekserer attributter, der *efter deres opfattelse* der skal indekseres.
+Disse indstillinger var oprindeligt beregnet til at forbedre online storefrontens søgefunktion. Selvom Retail ikke som standard indeholder online storefronten, indeholder det SDK'et (Software Development Kit) til eCommerce-publicering. Kunder kan bruge dette SDK til at placere produkter i et søgeindeks efter eget valg. Selvom produktdataene er importeret, skal kunder stadig kunne skelne søgbare data, data, der kan forespørges på, osv. På denne måde kan de opbygge et optimalt indeks for at sikre, at de kun indekserer attributter, der *efter deres opfattelse* der skal indekseres.
 
 Du kan finde oplysninger om formålet med disse resterende indstillinger under [Oversigt over søgeskemaet i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterindstillinger for attributter
 
-Med filterindstillinger for attributter kan du definere, hvordan filtrene for attributter vises i Retail POS. Du kan få adgang til filterindstillingerne for en attribut ved på siden **Attributter** i Finance and Operations at vælge attributten og derefter i handlingsruden vælge **Filterindstillinger**.
+Med filterindstillinger for attributter kan du definere, hvordan filtrene for attributter vises i Retail POS. Du kan få adgang til filterindstillingerne for en attribut ved at vælge attributten på siden **Attributter** og derefter vælge **Filterindstillinger** i handlingsruden.
 
 Siden **Visningsindstillinger for filter** indeholder følgende felter:
 
@@ -233,7 +234,7 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
     - Kanalproduktattributter
 
     > [!NOTE]
-    > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
+    > Hvis der er oprettet delte produktmedier og delte produktattributter, gælder de for alle detailprodukter.
 
 ![Attributgrupper for katalogprodukt](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
     - Kanalproduktattributter
 
     > [!NOTE]
-    > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
+    > Hvis der er oprettet delte produktmedier og delte produktattributter, gælder de for alle detailprodukter.

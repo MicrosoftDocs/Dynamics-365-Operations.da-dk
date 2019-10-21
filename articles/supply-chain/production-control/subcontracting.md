@@ -1,6 +1,6 @@
 ---
 title: Underleverandørarbejde
-description: Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Microsoft Dynamics 365 for Finance and Operations.
+description: Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Dynamics 365 Supply Chain Management.
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d1d7adf91c246ecad574043cbb60ca260bb328
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568378"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249905"
 ---
 # <a name="subcontracting"></a>Underleverandørarbejde
 
 [!include [banner](../includes/banner.md)]
 
-Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Microsoft Dynamics 365 for Finance and Operations. Den første del af dette emne beskriver opsætningen af dataene. Den anden del fører dig gennem trinnene i gennemgangen.
+Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Microsoft Dynamics 365 Supply Chain Management. Den første del af dette emne beskriver opsætningen af dataene. Den anden del fører dig gennem trinnene i gennemgangen.
 
 ## <a name="target-audience"></a>Målgruppe
 

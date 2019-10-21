@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 186ab08e21b7dad7b736b1f5f065aefe0b80d621
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 142a7fa8a18b14347761d3f116c30f2fa5476115
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833166"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025739"
 ---
 # <a name="configure-online-stores"></a>Konfigurer onlinebutikker
 
@@ -53,7 +53,7 @@ Emnerne i følgende tabel kan hjælpe dig med at konfigurere Retail-komponenter 
 | Administrer forsendelsesgebyrer.             | Konfigurer og administrer de forsendelsesgebyrer, der er specifikke for onlinebutikken.                                                                     | [Konfigurere forsendelsesgebyrer for onlinebutikker](https://technet.microsoft.com/library/jj728714.aspx) (TechNet-indhold til AX 2012)                                                                                                                           |
 | Administrer leveringsmåder.            | Administrer de leveringsmåder, der tilbydes i onlinebutikken.                                                                                        | [Konfigurere leveringsmåder](https://technet.microsoft.com/library/jj728719.aspx) (TechNet-indhold til AX 2012)                                                                                                                                            |
 
-## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Konfigurere dataudveksling mellem Microsoft Dynamics 365 for Retail og onlinebutikken
+## <a name="set-up-data-exchange-between-microsoft-dynamics-365-retail-and-the-online-store"></a>Konfigurere dataudveksling mellem Microsoft Dynamics 365 Retail og onlinebutikken
 
 | Opgave                                 | Oplysninger                                                                                                                               | emner                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

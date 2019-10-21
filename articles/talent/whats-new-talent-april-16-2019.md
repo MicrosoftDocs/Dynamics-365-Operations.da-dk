@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (16. april 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (16. april 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024131"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (16. april 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (16. april 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
@@ -47,11 +47,11 @@ Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Enhederne Kompensationsområde, Kompensationsniveau, Frynsegodeindstilling og Færdighedstype i Common Data Service er opdateret, så brugertilpassede felter understøttes
 
-I denne version er disse Common Data Service-enheder blevet opdateret, så de omfatter muligheden for at inkludere brugerdefinerede felter, der er tilføjet via Talent (Core HR).
+I denne version er disse Common Data Service-enheder blevet opdateret, så de omfatter muligheden for at inkludere brugerdefinerede felter, der er tilføjet via Talent: Core HR.
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Understøttelse af nye Common Data Service-enheder til: kompensation - fordelingsregler, kompensation - variabel struktur, variabel kompensation
 
-I denne version er enhederne Kompensation - fordelingsregler, Kompensation - variabel struktur, Variabel kompensation føjet til Common Data Service. Disse enheder understøtter også brugerdefinerede felter, der er tilføjet via Talent (Core HR).
+I denne version er enhederne Kompensation - fordelingsregler, Kompensation - variabel struktur, Variabel kompensation føjet til Common Data Service. Disse enheder understøtter også brugerdefinerede felter, der er tilføjet via Talent: Core HR.
 
 ### <a name="powerbi-refresh-issues-314342"></a>Power BI-opdateringsproblemer (314342)
 
@@ -95,6 +95,6 @@ Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefe
 
 ### <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
 
-Med platformsopdatering 25 kan brugerne oprette påmindelsesregler, som automatisk fremsender e-mailbeskeder til kontaktpersoner, når de udløses af en hændelse.
+Med Platform update 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk sender mailbeskeder til kontakter, når beskeder udløses af en hændelse.
 
 

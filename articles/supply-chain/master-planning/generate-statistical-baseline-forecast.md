@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bc5a38519efb6f4d242daca9aab5226c16e4ea0
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729869"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250731"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
@@ -47,7 +47,7 @@ Når prognosestrategien er indstillet til **Kopiér over historisk efterspørgse
 
 For at undgå forvirring i produktionsplanerne kan et bestemt antal prognosefilsæt fryses. Dette antal er angivet i feltet **Låsningstidshorisont**. På siden **Justeret behovsprognose** er cellerne for de frosne filsæt deaktiveret for at give en visuel indikation af, at disse værdier ikke bør ændres. 
 
-Startdatoen for behovsprognosegrundlaget behøver ikke at være den aktuelle dato eller en dato i fremtiden. Hvis du vil angive en anden startdato, skal du bruge feltet **Startdato for prognosegrundlag – Fra-dato**. I juni kan brugere for eksempel oprette en prognose for næste år. Da prognosefilsættet mellem slutningen af det historiske behov og starten på grundlaget mangler, er forudsigelserne muligvis ikke nøjagtige. Hvis du bruger den tjeneste til behovsprognoser i Microsoft Dynamics 365 for Finance and Operations, er der fire måder, hvorpå du kan udfylde hullerne. Du kan vælge den ønskede metode ved at indstille parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametre til behovsprognoser**. 
+Startdatoen for behovsprognosegrundlaget behøver ikke at være den aktuelle dato eller en dato i fremtiden. Hvis du vil angive en anden startdato, skal du bruge feltet **Startdato for prognosegrundlag – Fra-dato**. I juni kan brugere for eksempel oprette en prognose for næste år. Da prognosefilsættet mellem slutningen af det historiske behov og starten på grundlaget mangler, er forudsigelserne muligvis ikke nøjagtige. Hvis du bruger behovsprognosetjenesten, er der fire måder, hvorpå du kan udfylde hullerne. Du kan vælge den ønskede metode ved at indstille parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametre til behovsprognoser**. 
 
 > [!NOTE]
 > Erstatning af manglende værdi fungerer kun for huller i data mellem start-og slutdatoerne for historiske data. Den vil ikke udfylde data før eller efter det sidste fysiske datapunkt. Den vil kun fungere som ekstrapolering mellem faktiske eksisterende datapunkter. 
@@ -56,7 +56,7 @@ Feltet **Startdato for prognosegrundlag** - **Fra-dato** skal være indstillet t
 
 Feltet **Startdato for prognosegrundlag** - **Fra-dato** kan indstilles til en dato i fortiden. Med andre ord er det muligt at generere en behovsprognose i fortiden. Dette er nyttigt, fordi brugerne får mulighed for at justere parametrene i prognosetjenesten, så den statistiske prognose, der er genereret i fortiden, svarer til det faktiske historiske behov. Brugere kan derefter fortsætte med at bruge disse parameterindstillingerne til at generere et statistisk prognosegrundlag for fremtiden. 
 
-Manuelle justeringer, der er foretaget i tidligere gentagelser af behovsprognoser, kan automatisk anvendes på den grundlagsprognose, hvis afkrydsningsfeltet **Overfør manuelle justeringer til behovsprognosen**. Hvis afkrydsningsfeltet er markeret, føjes de manuelle justeringer ikke til grundlagsprognosen – men de slettes ikke. Manuelle justeringer, der er foretaget på prognose, kan kun slettes, når prognosen importeres. Det gøres ved at fjerne markeringen af **Importér de manuelle justeringer, der er foretaget af behovsprognosegrundlaget**. Manuelle justeringer gemmes på godkendelsestidspunktet. Hvis en bruger derfor foretager manuelle justeringer i prognosen, men ikke godkender prognosen tilbage til Finance and Operations, går ændringerne tabt. Få flere oplysninger om manuelle justeringer, og hvordan de fungerer, under [Godkendelse af den justerede prognose](authorize-adjusted-forecast.md). 
+Manuelle justeringer, der er foretaget i tidligere gentagelser af behovsprognoser, kan automatisk anvendes på den grundlagsprognose, hvis afkrydsningsfeltet **Overfør manuelle justeringer til behovsprognosen**. Hvis afkrydsningsfeltet er markeret, føjes de manuelle justeringer ikke til grundlagsprognosen – men de slettes ikke. Manuelle justeringer, der er foretaget på prognose, kan kun slettes, når prognosen importeres. Det gøres ved at fjerne markeringen af **Importér de manuelle justeringer, der er foretaget af behovsprognosegrundlaget**. Manuelle justeringer gemmes på godkendelsestidspunktet. Hvis en bruger derfor foretager manuelle justeringer i prognosen, men ikke godkender prognosen tilbage til Supply Chain Management, går ændringerne tabt. Få flere oplysninger om manuelle justeringer, og hvordan de fungerer, under [Godkendelse af den justerede prognose](authorize-adjusted-forecast.md). 
 
 Behovsprognosegenerering kan have et navn og kommentarer, så brugerne kan identificere den prognose, der er blevet genereret. Disse værdier er synlige i oversigten over prognosegenereringen på siden **Genereringshistorik for statistisk budgetgrundlag**. 
 

@@ -3,7 +3,7 @@ title: Vedligeholdelsesrunder
 description: I dette emne beskrives vedligeholdelsesrunder i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875564"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922016"
 ---
 # <a name="maintenance-rounds"></a>Vedligeholdelsesrunder
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 I **Styring af aktiver** kan du oprette vedligeholdelsesrunder for forskellige aktiver, hvor du skal udføre en lignende opgave med jævne mellemrum. Det kan f.eks. være smøreopgaver eller sikkerhedsinspektioner, der skal udføres på en række maskiner inden for de samme intervaller. Første trin er at oprette en vedligeholdelsesrunde, herunder aktiver, der kræver samme type vedligeholdelsesjob. Derefter skal du planlægge vedligeholdelsesrunderne. Når du har fuldført tidsplanen for vedligeholdelsesrunderne, kan du se alle de jobposter, der vedrører runden i **Alle vedligeholdelsestidsplaner** og **Åbne vedligeholdelsestidsplanslinjer**.
 
@@ -83,6 +81,8 @@ I **Styring af aktiver** kan du oprette vedligeholdelsesrunder for forskellige a
 >[!NOTE]
 >Felterne **Aktiver** og **Linjer**, der findes i gruppen **Detaljer** i oversigtspanelet **Hoved**, viser det samlede antal aktiver og linjer, der er relateret til den valgte vedligeholdelsesrunde.
 
+Illustrationen nedenfor viser et eksempel på en vedligeholdelsesrunde, der indeholder tre aktiver.
+
 ![Figur 1](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ Når du har konfigureret en vedligeholdelsesrunde, skal du køre et tidsplanlæg
 6. Klik på **OK**.
 
 7. Du kan nu se vedligeholdelsesrundejob i **Styring af aktiver** > **Almindeligt** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller **Åbne vedligeholdelsestidsplanslinjer**. Hvis de planlagte runder er forbundet til en arbejdsordrepulje, kan du også se vedligeholdelsestidsplanslinjer i **Åbne vedligeholdelsestidsplanspuljer**. Vedligeholdelsestidsplanslinjer, der er oprettet ud fra en runde, har referencetypen "Vedligeholdelsesrunder".
+
+De to illustrationer nedenfor viser et planlægningsjob i dialogboksen **Planlæg vedligeholdelsesrunder** og vedligeholdelsestidsplanslinjer, der er oprettet i **Hele vedligeholdelsestidsplanen** baseret på det pågældende planlægningsjob.
 
 ![Figur 2](media/14-preventive-maintenance.png)
 

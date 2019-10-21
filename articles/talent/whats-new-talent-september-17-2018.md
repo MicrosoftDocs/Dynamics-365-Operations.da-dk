@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (17. september 2018)
-description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
+title: Nyheder eller ændringer i Dynamics 365 Talent - Core HR (17. september 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026014"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (17. september 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a>Nyheder eller ændringer i Dynamics 365 Talent: Core HR (17. september 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,13 +37,13 @@ Dette emne beskriver funktioner, der enten er nye eller ændrede i Core HR.
 
 En ny type af periodisering er føjet til orlovsplaner. Periodiseringstidsplanen kan nu være baseret på måneder i tjenesten eller antal arbejdstimer. Yderligere oplysninger finder du i [Periodisering af fravær baseret på antal arbejdstimer](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18"></a>Platformsopdatering 18
+## <a name="platform-update-18-for-finance-and-operations"></a>Platform update 18 til Finance and Operations
 
-Platformsopdatering 18 er nu en del af Talent-udgivelsen. 
+Platform update 18 til Finance and Operations er nu en del af Talent-udgivelsen. 
 
 -   Obligatoriske og andre felter kan være skjult via personlig tilpasning. Så kan en bruger oprette en forenklet funktionsmåde, hvor obligatoriske felter, der er standard i forretningslogik, ikke vises. Skjulte obligatoriske felter er også midlertidigt synlige, hvis de er tomme, når lagring forsøges.
 
--   I platformsopdatering 18 justerer webklienten Talent nu dets grafik med Microsoft Fluent Design.
+-   I Platform update 18 til Finance and Operations justerer webklienten Talent nu grafikken med Microsoft Fluent Design.
 
     -   Når felter er i tilstanden"skrivebeskyttet", kan du blot vælge indstillingen Rediger i felterne for at skifte til at redigere formen.
 

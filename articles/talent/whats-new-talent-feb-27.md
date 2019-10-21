@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (27. februar 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (27. februar 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517604"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023993"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (27. februar 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (27. februar 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
@@ -77,9 +77,9 @@ Denne version indeholder andre mindre fejlrettelser.
 
 I mange organisationer har chefer for løn og frynsegoder kun har adgang til bestemte lønposter. Disse poster kan være beregnet til ledere eller medarbejdere i bestemte områder. Med denne ændring kan HR-medarbejdere administrere og vedligeholde lønstrukturer for forskellige medarbejdergrupper i organisationen. Sikkerhedsroller, der kan tildeles til faste og variable lønstrukturer, bestemmer adgangen til disse strukturer og de medarbejderdata, der er knyttet til dem (f.eks. lønoplysninger og bonusposter). Kun de roller, der har den angivne adgang, vil kunne behandle løn for medarbejderne.
 
-### <a name="platform-update-24"></a>Platformsopdatering 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 til Finance and Operations
 
-Yderligere oplysninger om Microsoft Dynamics 365 for Finance and Operations Platform update 24 (marts 2019) finder du i [Funktioner i prøveversion i Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Yderligere oplysninger om Platform update 24 til Microsoft Dynamics 365 Finance and Operations (marts 2019) finder du under [Funktioner i prøveversion af Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Gøre fast medarbejderløn tilgængelig for fremtidige stillingstildelinger
 
@@ -87,10 +87,10 @@ Det er almindeligt, at personer, der får ansættelse i en organisation, har en 
 
 ## <a name="known-issues"></a>Kendte problemer
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Ændringer af Core HR-integrationsskabelonen (Talent Common Data Service til Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Ændringer af Core HR-integrationsskabelonen (Talent Common Data Service til Finance)
 Core HR-skabelonen er blevet opdateret til en "avanceret forespørgselsskabelon". Derfor er den avancerede forespørgsel som standard tilgængelig for projekter, der er oprettet ved hjælp af denne skabelon. Desuden bliver enhver standardtilknytningsfunktion kun vist i den avancerede forespørgselseditor. (Standardtilknytningsfunktioner vises som "FN" i tilknytningerne).
 
-Du kan finde flere oplysninger om tilknytningsfejl i [Nyheder eller ændringer i Dynamics 365 for Talent Core HR (14. december 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Du kan finde flere oplysninger om tilknytningsfejl under [Nyheder eller ændringer i Dynamics 365 Talent: Core HR (14. december 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 For at bruge den nye skabelon skal du oprette et nyt projekt og vælge den nye Talent-integrationsskabelon.
 

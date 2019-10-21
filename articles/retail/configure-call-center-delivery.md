@@ -1,6 +1,6 @@
 ---
 title: Konfigurere callcenterets leveringsmåder og -gebyrer
-description: I dette emne beskrives, hvordan du konfigurerer leveringsmåder og gebyrer for en callcenterordre i Microsoft Dynamics 365 for Retail.
+description: I dette emne beskrives, hvordan du konfigurerer leveringsmåder og gebyrer for en callcenterordre i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019479"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Når der afgives en salgsordre i Microsoft Dynamics 365 for Retail, og den person, der afgav salgsordren, er tilknyttet en callcenterkanal, bruges logik og regler til at validere leveringsmåden og beregne gebyrer for ordren.
+Når der afgives en salgsordre i Dynamics 365 Retail, og den person, der afgav salgsordren, er tilknyttet en callcenterkanal, bruges logik og regler til at validere leveringsmåden og beregne gebyrer for ordren.
 
 Når du opretter en salgsordre, kan du vælge en leveringsmåde i salgsordrehovedet og på salgsordrelinjerne. Som standard bruges den leveringsmåde, som du vælger i hovedet, til alle salgsordrelinjer. Du kan imidlertid tilsidesætte standardleveringsmåden for de enkelte salgslinjer efter behov. Du kan også definere en leveringsmåde i en kundepost. Når ordren er oprettet for kunden, bruges denne leveringsmåde som standard i salgsordrehovedet.
 

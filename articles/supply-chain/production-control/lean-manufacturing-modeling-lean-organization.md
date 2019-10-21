@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560134"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250193"
 ---
 # <a name="modeling-a-lean-organization"></a>Modellering af en lean organisation
 
@@ -39,7 +39,7 @@ I produktionsscenarier baseret på produktionsordrer udstedes materiale til en b
 
 For at reducere leveringstider og overskydende lager mellem ressourcer, der er forårsaget af batchproduktion, introducerer lean manufacturing kanban-opfyldning og supermarkeder i produktion og genopfyldning af lagersted. Dette bringer normalt uorden i produktionen af delvist uafhængige kanban-cyklusser. Genopfyldning af en kanban for et halvfærdigt produkt udløses ikke længere af en ordre til et færdigt produkt. 
 
-Hvis du vil genoprette en produktions- og omkostningskontekst for de forskellige kanban-scenarier, der foreslås i Microsoft Dynamics 365 for Finance and Operations, introduceres de aktivitetsbaserede produktionsflows som grundstenen i lean manufacturing. Alle kanban-regler refererer til denne prædefinerede struktur. Den aktivitetsbaserede model understøtter opsætningen af en lang række scenarier. Men denne model tilføjer ikke kompleksitet for medarbejdere i produktionen, fordi alle scenarier bruger den samme aktivitetsbaserede brugergrænseflade.
+Hvis du vil genoprette en produktions- og omkostningskontekst for de forskellige kanban-scenarier, der foreslås, introduceres de aktivitetsbaserede produktionsflows som grundstenen i lean manufacturing. Alle kanban-regler refererer til denne prædefinerede struktur. Den aktivitetsbaserede model understøtter opsætningen af en lang række scenarier. Men denne model tilføjer ikke kompleksitet for medarbejdere i produktionen, fordi alle scenarier bruger den samme aktivitetsbaserede brugergrænseflade.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikata (ikke-styklisteniveauer)
 Lean Manufacturing integrerer kanban for produkter på lager og halvfabrikata i en enkelt ramme, hvilket derfor sikrer en ensartet brugeroplevelse for alle sager. På grund af denne arkitektur skal flere styklisteniveauer ikke længere indføres for at aktivere kanbans til anvendelse på halvfabrikata. Denne arkitektur er også med til at reducere lagertransaktioner til et minimum.
@@ -50,7 +50,7 @@ Reduktion af batchstørrelser til den ideelle tilstand af et enkelt stykke flow 
 ## <a name="value-streams-and-value-stream-mapping"></a>Værdistrømme og værdistrømtilknytning
 Arkitekturen i Lean Manufacturing er inspireret af de fem Lean-principper, der er udarbejdet af Womack og Jones: Customer value, Value stream, Flow, Pull og Perfection. En godkendt metode til implementering af lean manufacturing-løsninger i den fysiske verden af produktion er tilknytning af værdistrøm (VSM). Denne metode blev introduceret af Rother og Shook i deres publikation "Learning to See" på Lean Manufacturing Institute. 
 
-I Finance and Operations kan den fremtidige værdistrøm modelleres som en version af produktionsflowet. Alle processer af værdistrømmen er udformet som procesaktiviteter. Bevægelser eller overførsler kan modelleres som overførselsaktiviteter, hvis overførselsstatussen skal registreres, eller hvis en integration med lagerplukning eller konsolideret forsendelse er påkrævet. 
+Den fremtidige værdistrøm modelleres som en version af produktionsflowet. Alle processer af værdistrømmen er udformet som procesaktiviteter. Bevægelser eller overførsler kan modelleres som overførselsaktiviteter, hvis overførselsstatussen skal registreres, eller hvis en integration med lagerplukning eller konsolideret forsendelse er påkrævet. 
 
 Selve værdistrømmen er udformet som en driftsenhed. Værdistrømmen kan derfor bruges som en økonomisk dimension.
 

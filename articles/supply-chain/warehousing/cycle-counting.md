@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560650"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251517"
 ---
 # <a name="cycle-counting"></a>Cyklusoptælling
 
@@ -34,7 +34,7 @@ I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerst
 Cyklusoptælling er en lagerproces, du kan bruge til at overvåge disponible varer i lagerbeholdningen. Cyklusoptællingsprocessen kan beskrives i tre trin:
 
 1.  **Oprette cyklusoptællingsarbejde** – cyklusoptællingsarbejde kan oprettes automatisk baseret på tærskelparametre for varer eller ved hjælp af en plan til cyklusoptælling. Du kan også oprette cyklusoptællingsarbejde manuelt ved hjælp af parametrene for vare eller lagersted på siden **Cyklusoptællingsarbejde efter vare** eller siden **Cyklusoptællingsarbejde efter lokalitet**.
-2.  **Udfør behandling af cyklusoptællingen** – Når cyklusoptællingsarbejdet er oprettet, udfører du cyklusoptællingsarbejde ved optælling af varer på et lagersted og derefter bruge en mobilenhed til at angive resultatet i Microsoft Dynamics 365 for Finance and Operations. Du kan også tælle varer på et lagersted uden at oprette cyklusoptællingsarbejde. Denne proces kaldes *spotcyklusoptælling*.
+2.  **Udfør behandling af cyklusoptællingen** – Når cyklusoptællingsarbejdet er oprettet, udfører du cyklusoptællingsarbejde ved optælling af varer på et lagersted og derefter bruge en mobilenhed til at angive resultatet i Dynamics 365 Supply Chain Management. Du kan også tælle varer på et lagersted uden at oprette cyklusoptællingsarbejde. Denne proces kaldes *spotcyklusoptælling*.
 3.  **Løs forskelle i værdien for cyklusoptællingen** – efter en cyklusoptælling vil varer, der har forskelle i den optalte værdi, have arbejdsstatussen **Afventer gennemsyn** på siden **Alt arbejde**. Du kan løse disse forskelle på siden **Ventende gennemsyn af cyklusoptællingsarbejde**.
 
 Følgende illustration viser cyklusoptællingsprocessen. ![Procesforløb for cyklusoptælling](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Du kan lægge cyklusoptællingsplaner for at oprette cyklusoptællingsarbejde st
 For at oprette en cyklusoptællingsarbejde manuelt kan du bruge siden **Cyklusoptællingsarbejde efter vare** eller **Cyklusoptællingsarbejde efter lokation**. Du kan angive det maks. antal cyklusoptællinger, der skal oprettes. For eksempel hvis lagerchefen angiver en værdi på **5**, oprettes der cyklusoptællingsarbejde for fem steder, selvom varen findes på 10 lokaliteter. Du kan også vælge et arbejdsgruppe-id, som de oprettede id'er for cyklusoptællingsarbejdet skal tildeles til. Når et arbejdspulje-id er behandlet for cyklusoptælling, behandles id'er for cyklusoptællingsarbejde, der er tildelt til arbejdspuljen, som en gruppe.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Udføre en cyklusoptælling ved hjælp af en mobilenhed
-Der er flere metoder til behandling af cyklusoptællingsarbejde ved hjælp af Finance and Operations på en mobilenhed:
+Der er flere metoder til behandling af cyklusoptællingsarbejde ved hjælp af Supply Chain Management på en mobilenhed:
 
 -   **Brugerbaseret** – Arbejderen kan angive et id for cyklusoptællingsarbejde, der har statussen **Åben**.
--   **Systembaseret** – Finance and Operations tildeler et id for cyklusoptællingsarbejde til arbejderen.
+-   **Systembaseret** – Supply Chain Management tildeler et id for cyklusoptællingsarbejde til arbejderen.
 -   **Gruppering af cyklusoptælling** – Arbejderen kan gruppere id'er for cyklusoptællingsarbejde, der er specifikke for en bestemt lokation, zone eller arbejdspulje.
 -   **Spotcyklusoptælling** – Valgfrit: Arbejderen kan tælle elementerne på en lagerlokation til enhver tid uden at oprette cyklusoptællingsarbejde. For at udføre spotcyklusoptælling på en lokation angiver arbejderen lokalitets-id'et.
 

@@ -1,6 +1,6 @@
 ---
-title: Slå job op på LinkedIn fra Microsoft Dynamics 365 for Talent - Attract
-description: Dette emne beskriver, hvordan du anvender Dynamics 365 for Talent - Attract til at slå job op på LinkedIn.
+title: Slå job op på LinkedIn fra Microsoft Dynamics 365 Talent - Attract
+description: Dette emne beskriver, hvordan du anvender Dynamics 365 Talent - Attract til at slå job op på LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756170"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008237"
 ---
 # <a name="post-jobs-to-linkedin"></a>Slå jobs op på LinkedIn
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn er det største professionelle onlinenetværk, der giver dig adgang til verdens største talenter. Microsoft Dynamics 365 for Talent: Attract hjælper dig med at få det talent, du har brug for, ved at lade dig foretage jobopslag direkte fra Attract til LinkedIn.
+LinkedIn er det største professionelle onlinenetværk, der giver dig adgang til verdens største talenter. Microsoft Dynamics 365 Talent: Attract hjælper dig med at få det talent, du har brug for, ved at lade dig foretage jobopslag direkte fra Attract til LinkedIn.
 
 Med Attract kan du slå gratis jobopslag op på LinkedIn uden ekstra omkostninger. Disse opslag er kun tilgængelige via LinkedIn-softwarepartnere som f.eks. Attract. De vises ikke i panelet **Karriere** på din virksomheds LinkedIn-side, fordi der kun vises betalte opslag der. De vises dog, når potentielle kandidater ser alle ledige job. De gratis jobopslag vises også i LinkedIn-jobsøgninger.
 

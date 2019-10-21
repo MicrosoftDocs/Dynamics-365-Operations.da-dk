@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om Attract-integration med LinkedIn
-description: Dette emne besvarer spørgsmål, du måtte have om integration mellem LinkedIn og Microsoft Dynamics 365 for Talent - Attract.
+description: Dette emne besvarer spørgsmål, du måtte have om integration mellem LinkedIn og Microsoft Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c49181fe7e9359fb9d7d43f479273080f90542f4
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: d66ebc01597f8038a38b46a9f1b70feaa5dc505e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756193"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008633"
 ---
 # <a name="linkedin-integration-faq"></a>Ofte stillede spørgsmål om integration af LinkedIn
 
 [!include [banner](includes/banner.md)]
 
-LinkedIn er verdens største faglige professionelle onlinenetværk. Microsoft Dynamics for Talent: Attract kan integreres med LinkedIn for at give dig adgang til verdens største talenter. Attract giver dig mulighed for at slå job direkte op på LinkedIn, og det giver dig også mulighed for at trække kandidatoplysninger fra LinkedIn til Attract.
+LinkedIn er verdens største faglige professionelle onlinenetværk. Microsoft Dynamics Talent: Attract kan integreres med LinkedIn for at give dig adgang til verdens største talenter. Attract giver dig mulighed for at slå job direkte op på LinkedIn, og det giver dig også mulighed for at trække kandidatoplysninger fra LinkedIn til Attract.
 
 ## <a name="for-recruiters-and-hiring-managers"></a>For rekrutteringsmedarbejdere og ansættelsesansvarlige
 

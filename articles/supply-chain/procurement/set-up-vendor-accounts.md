@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547669"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249379"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurer kreditorkonti
 
@@ -60,13 +60,13 @@ Du kan gemme kontakter for en kreditor. Disse kontakter kan derefter bruges på 
 
 Hvis du vil føje kontakter til en kreditor, skal du åbne siden **Alle kreditorer**, fanen **Kreditor** i gruppen **Opsætning** og klikke på **Kontakter** &gt; **Tilføj kontakter**.  
 
-Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Microsoft Dynamics 365 for Finance and Operations og redigere oplysningerne, som du har brug for.  
+Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Supply Chain Management, og redigere oplysningerne, som du har brug for.  
 
 **Bemærk:** Tilføjelse af en kontakt for en kreditor er ikke det samme som at tilføje kontaktoplysninger for den pågældende kreditor. Selvom du kan tilføje generelle kontaktoplysninger for en kreditor, kan du også have flere bestemte personer, der er kontakter i den pågældende virksomhed, og som alle har deres egne kontaktoplysninger.  
 
 Du kan ikke slette en kontaktpersonpost, hvis der refereres til kontakten i et dokument. I stedet kan du deaktivere kontakten.  
 
-Du kan føje kreditorkontakter til dine personlige kontakter i Microsoft Office 365. Du skal dog først konfigurere synkronisering mellem Finance and Operations og Office 365 både i Microsoft Exchange Server-synkronisering og i installationsguiden til Microsoft Outlook.
+Du kan føje kreditorkontakter til dine personlige kontakter i Microsoft Office 365. Du skal dog først konfigurere synkronisering mellem Supply Chain Management og Office 365 både i Microsoft Exchange Server-synkronisering og i installationsguiden til Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditorer i forskellige juridiske enheder
 Hvis en kreditor kun er registreret for én juridisk enhed i organisationen, og andre juridiske enheder skal registrere den samme kreditor, kan du bruge siden **Føj kreditor til en anden juridisk enhed** for at konfigurere kreditoren til at kunne gøre forretninger med en anden juridisk enhed. Du skal vælge en kreditorgruppe, valuta og hold-status for kreditoren i den valgte juridiske enhed.  

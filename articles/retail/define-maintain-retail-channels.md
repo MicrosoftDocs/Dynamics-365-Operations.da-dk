@@ -1,6 +1,6 @@
 ---
 title: Definere og vedligeholde detailkanaler
-description: Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
+description: Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Dynamics 365 Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560342"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019364"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedligeholde detailkanaler
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
+Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Dynamics 365 Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
 
-Dynamics 365 for Retail understøtter flere detailkanaler, f.eks. onlinebutikker, callcentre og fysiske butikker. En fysisk butik kaldes en detailbutik. Hver detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-kasseapparater, indtægtskonti og udgiftskonti samt medarbejdere. Du skal oprette alle disse elementer for en detailbutik, før du opretter den. Når du har oprettet detailbutikken, kan du tildele de produkter, som skal føres i denne butik. Du skal også knytte medarbejdere, kasseapparater og kunder til butikken. Endelig kan føje den nye butik til et organisationshierarki.
+Retail understøtter flere detailkanaler, f.eks. onlinebutikker, callcentre og fysiske butikker. En fysisk butik kaldes en detailbutik. Hver detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-kasseapparater, indtægtskonti og udgiftskonti samt medarbejdere. Du skal oprette alle disse elementer for en detailbutik, før du opretter den. Når du har oprettet detailbutikken, kan du tildele de produkter, som skal føres i denne butik. Du skal også knytte medarbejdere, kasseapparater og kunder til butikken. Endelig kan føje den nye butik til et organisationshierarki.
 
 ## <a name="setting-up-retail-stores"></a>Konfigurere detailbutikker
 
-Før du kan konfigurere en detailbutik i Dynamics 365 for Retail, skal du udføre nogle nødvendige opgaver. Du kan derefter oprette detailbutikken og tilføje oplysninger.
+Før du kan konfigurere en detailbutik i Retail, skal du udføre nogle nødvendige opgaver. Du kan derefter oprette detailbutikken og tilføje oplysninger.
 
 ### <a name="prerequisites"></a>Forudsætninger
 
@@ -55,7 +55,7 @@ Du skal fuldføre følgende opgaver, før du kan konfigurere en detailbutik:
 11. Opsætning af medarbejdere.
 
     > [!NOTE]
-    > Du skal også tildele relevante tilladelser til arbejdstagerne, så de kan logge på og udføre opgaver ved hjælp af Dynamics 365 for Retail for Retail POS-systemet.
+    > Du skal også tildele relevante tilladelser til arbejdstagerne, så de kan logge på og udføre opgaver ved hjælp af Retail POS-systemet.
 
 12. Konfigurer de Retail POS-profiler, som du vil tildele til butikken. Denne opgave omfatter mange andre opgaver, f.eks. opsætning af registre, konfiguration af offlineprofiler samt opsætning af kvitteringsformater og -profiler.
 

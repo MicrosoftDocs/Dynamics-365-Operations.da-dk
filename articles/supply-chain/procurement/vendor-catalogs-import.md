@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569770"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017868"
 ---
 # <a name="import-vendor-catalogs"></a>Importér kreditorkataloger
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Import af kreditorkataloger
 
-I Microsoft Dynamics 365 for Finance and Operations kan indkøbsmedarbejderne oprette og vedligeholde kataloger, som virksomhedens medarbejdere derefter kan bruge, når de bestiller varer og tjenesteydelser til intern brug. Hvis du vil oprette et indkøbskatalog, kan du tilføje de varer og tjenester, som du vil gøre tilgængelige for medarbejderne, enten ved at importere produktkataloget eller ved manuelt at tilføje data fra produktkataloget til produktmasteren. 
+I Dynamics 365 Supply Chain Management kan indkøbsmedarbejderne oprette og vedligeholde kataloger, som virksomhedens medarbejdere derefter kan bruge, når de bestiller varer og tjenesteydelser til intern brug. Hvis du vil oprette et indkøbskatalog, kan du tilføje de varer og tjenester, som du vil gøre tilgængelige for medarbejderne, enten ved at importere produktkataloget eller ved manuelt at tilføje data fra produktkataloget til produktmasteren. 
 
 Du kan overføre katalogdata, som er indsendt af en kreditor, fra klienten for Microsoft Dynamics 365.
 
@@ -52,7 +52,7 @@ Hvis du vil importere oplysninger fra et kreditorkatalog, skal du fuldføre føl
 
 6.  Overfør CMR-filen.
 
-7.  Gennemgå, godkend eller afvis produkterne i kreditorkataloget. Produkterne knyttes automatisk til indkøbskategorierne i Dynamics 365 for Finance and Operations. 
+7.  Gennemgå, godkend eller afvis produkterne i kreditorkataloget. Produkterne knyttes automatisk til indkøbskategorierne. 
     
 Godkendte produkter føjes til produktmasteren og frigives til de valgte juridiske enheder. Kun godkendte produkter kan føjes til indkøbskataloget.
 

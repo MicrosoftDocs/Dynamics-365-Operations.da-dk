@@ -1,6 +1,6 @@
 ---
-title: Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og linjer direkte fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
+title: Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales
+description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,28 +19,28 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94442eb11aac3faf8a412944617686853a12128d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552924"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251655"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisere salgsfakturahoveder og linjer fra Finance and Operations direkte med Sales
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og linjer direkte fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 
-Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Finance and Operations og Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data om firmaer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Finance and Operations og Sales. I følgende illustration vises, hvordan data synkroniseres mellem Finance and Operations og Sales.
+Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Supply Chain Management og Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data om firmaer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Finance and Operations og Sales. I følgende illustration vises, hvordan data synkroniseres mellem Supply Chain Management og Sales.
 
 [![Dataflow i kundeemne til kontant](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
-For at få adgang til de tilgængelige skabeloner, skal du åbne [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
+For at få adgang til de tilgængelige skabeloner skal du åbne [PowerApps Administration](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
 
 Følgende skabelon og underliggende opgaver bruges til at synkronisere salgsfakturahoveder og -linjer fra Finance and Operations til Sales:
 
@@ -52,30 +52,30 @@ Følgende skabelon og underliggende opgaver bruges til at synkronisere salgsfakt
 
 Følgende synkroniseringsopgaver kræves, før salgsfakturahoveder og -linjer kan synkroniseres:
 
-- Produkter (Fin and Ops til Sales) - Direkte
-- Konti (Sales til Fin and Ops) - Direkte (hvis den bruges)
-- Kontakter (Sales til Fin and Ops) - Direkte (hvis den bruges)
-- Salgsordrehoved og -linjer (Fin and Ops til Sales) - Direkte
+- Produkter (Supply Chain Management til Sales) - Direkte
+- Konti (Sales til Supply Chain Management) - Direkte (hvis det er anvendt)
+- Kontakter (Sales til Supply Chain Management) - direkte (hvis det er anvendt)
+- Salgsordrehoved og -linjer (Supply Chain Management til Sales) - direkte
 
 ## <a name="entity-set"></a>Enhedssæt
 
-| Finance and Operations                               | Salg          |
+| Supply Chain Management                              | Salg          |
 |------------------------------------------------------|----------------|
 | Eksternt vedligeholdte kundesalgsfakturahoveder | Fakturaer       |
 | Eksternt vedligeholdte kundesalgsfakturalinjer   | InvoiceDetails |
 
 ## <a name="entity-flow"></a>Enhedsflow
 
-Salgsfakturaer oprettes i Finance and Operations og synkroniseres til Sales.
+Salgsfakturaer oprettes i Supply Chain Management og synkroniseres til Sales.
 
 > [!NOTE]
-> Moms vedrørende gebyrer på salgsfakturahovedet indgår i øjeblikket ikke i synkroniseringen fra Finance and Operations til Sales. Sales understøtter ikke momsoplysninger på hovedniveau. Men moms, som er relateret til gebyrer på linjeniveau, er imidlertid inkluderet i synkroniseringen.
+> Moms vedrørende gebyrer på salgsfakturahovedet indgår i øjeblikket ikke i synkroniseringen fra Supply Chain Management til Sales. Sales understøtter ikke momsoplysninger på hovedniveau. Men moms, som er relateret til gebyrer på linjeniveau, er imidlertid inkluderet i synkroniseringen.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemne til kontantløsning for Sales
 
 - Feltet **Fakturanummer** er føjet til enheden **Faktura** og vises på siden.
-- Knappen **Opret faktura** på siden **Salgsordre** er skjult, da fakturaer oprettes i Finance and Operations og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres, fordi fakturaer synkroniseres fra Finance and Operations.
-- Værdien **Salgsordrestatus** ændres automatisk til **Faktureret**, når den relaterede faktura fra Finance and Operations er blevet synkroniseret til Sales. Desuden tildeles ejeren af den salgsordre, hvorfra fakturaen blev oprettet, som ejer af fakturaen. Ejeren af salgsordren kan derfor få vist fakturaen.
+- Knappen **Opret faktura** på siden **Salgsordre** er skjult, da fakturaer oprettes i Supply Chain Management og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres, fordi fakturaer synkroniseres fra Supply Chain Management.
+- Værdien **Salgsordrestatus** ændres automatisk til **Faktureret**, når den relaterede faktura fra Supply Chain Management er blevet synkroniseret til Sales. Desuden tildeles ejeren af den salgsordre, hvorfra fakturaen blev oprettet, som ejer af fakturaen. Ejeren af salgsordren kan derfor få vist fakturaen.
 
 ## <a name="preconditions-and-mapping-setup"></a>Betingelserne og tilknytningsopsætning
 
@@ -103,7 +103,7 @@ Gå til **Indstillinger** > **Administration** > **Systemindstillinger** > **Sal
 #### <a name="salesinvoiceline-task"></a>Opgaven SalesInvoiceLine
 
 - Du skal sikre, at den nødvendige tilknytning findes for **Måleenhed**.
-- Sørg for, at den påkrævede værditilknytning findes for **SalesUnitSymbol** i Finance and Operations.
+- Sørg for, at den påkrævede værditilknytning findes for **SalesUnitSymbol** i Supply Chain Management.
 
     En skabelonværdi, der har en værditilknytning, er defineret for **SalesUnitSymbol** til **Quantity\_UOM**
 
@@ -115,7 +115,7 @@ Gå til **Indstillinger** > **Administration** > **Systemindstillinger** > **Sal
 Følgende illustration viser et eksempel på en skabelontilknytning i dataintegration. 
 
 > [!NOTE]
-> Tilknytningen viser, hvilke oplysninger der synkroniseres fra Sales til Finance and Operations.
+> Tilknytningen viser, hvilke oplysninger der synkroniseres fra Sales til Supply Chain Management.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
@@ -131,16 +131,10 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
-[Synkronisere konti fra direkte fra Sales med debitorer i Finance and Operations](accounts-template-mapping-direct.md)
+[Synkronisere konti direkte fra Sales med kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synkronisere produkter fra Finance and Operations direkte med produkter i Sales](products-template-mapping-direct.md)
+[Synkronisere produkter direkte fra Supply Chain Management med produkter i Sales](products-template-mapping-direct.md)
 
-[Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations](contacts-template-mapping-direct.md)
+[Synkronisere kontakter direkte fra Sales med kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synkronisere salgsordrehoveder og -linjer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct-two-ways.md)
-
-
-
-
-
-
+[Synkronisere salgshoveder og -linjer direkte fra Supply Chain Management til Sales](sales-order-template-mapping-direct-two-ways.md)

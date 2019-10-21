@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (4. juni 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (4. juni 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e19e5d3f1cb2305e5a4153de3e4d0e8f4c7d31ac
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 32b168eca210b1371db129c05f7035237eb35c38
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856323"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008978"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-4-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (4. juni 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (4. juni 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
-Denne version indeholder rettelser af mindre fejl i Dynamics 365 for Talent: Attract.
+Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Attract.
 
 ## <a name="coming-soon-in-attract"></a>Kommer snart i Attract
 
@@ -43,7 +43,7 @@ Godkendelser vises i området **Godkendelser** på dashboardet. Godkendere kan g
 
 ## <a name="changes-in-onboard"></a>Ændringer i Onboard
 
-Denne version indeholder rettelser af mindre fejl i Dynamics 365 for Talent: Onboard.
+Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Ændringer i Core HR
 
@@ -67,7 +67,7 @@ Muligheden for at spore medarbejdernes fridage og forstå, hvordan fridagene ber
 
 ### <a name="deleting-a-record-from-talent-doesnt-remove-the-record-from-common-data-service"></a>Hvis du sletter en post fra Talent, betyder det ikke, at posten fjernes fra Common Data Service
 
-Poster, der fjernes fra Talent Core HR, fjernes nu også fra Common Data Service.
+Poster, der fjernes fra Talent: Core HR, fjernes nu også fra Common Data Service.
 
 ### <a name="variable-compensation-plan-valid-fromto-dates-arent-being-honored"></a>Gyldig fra/til datoer for variabel lønstruktur bliver ikke accepteret
 

@@ -1,6 +1,6 @@
 ---
 title: Administrere underleverandørarbejde i produktionen
-description: I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Finance and Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
+description: I dette emne beskrives, hvordan underleverandøroperationer administreres i Dynamics 365 Supply Chain Management. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569747"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023535"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Administrere underleverandørarbejde i produktionen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Finance and Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
+I dette emne beskrives, hvordan underleverandøroperationer administreres i Dynamics 365 Supply Chain Management. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
 
 I [produktionsprocesser](production-process-overview.md) kan arbejdet udføres af ressourcer, der ejes eller administreres af leverandører. Leverandørressourcer bruges typisk til at udjævne periodiske ekstra behov, der overgår den tilgængelige kapacitet for en virksomheds egne ressourcer. Leverandøren kan muligvis også tilbyde særlige [ressourceegenskaber](resource-capabilities.md) eller ressourcer til en lavere pris.  
 
@@ -40,7 +40,7 @@ Når der bruges underleverandørarbejde eller -aktiviteter, påvirker de alle fa
 
 For interne ressourcer tildeles typisk en fast omkostningssats for en periode. Derimod er omkostningerne for underleverandørressourcer baseret på købsprisen for den relaterede service. Servicen defineres som et andet produkt og bruges til at udføre udtagnings- og indkøbsprocesserne for en given underleverandøroperation.  
 
-Der er i øjeblikket ingen eksplicit definition af halvfabrikata i Microsoft Dynamics 365 for Finance and Operations. For en produktionsordre, der kræver mere end én operation for at omdanne råvarer til en færdigvare, bogføres færdigvaren først tilbage på lageret i den sidste operation. De halvfabrikata, der er et resultat af de tidligere operationer, figurerer i igangværende forarbejdning (IGVF), men de bogføres eller spores ikke på lageret. Selvom du kan opdele ruter og styklister i flere mindre enheder, øger denne metode antallet af produkter, styklister og ruter, der skal administreres.  
+Der er i øjeblikket ingen eksplicit definition af halvfabrikata i Supply Chain Management. For en produktionsordre, der kræver mere end én operation for at omdanne råvarer til en færdigvare, bogføres færdigvaren først tilbage på lageret i den sidste operation. De halvfabrikata, der er et resultat af de tidligere operationer, figurerer i igangværende forarbejdning (IGVF), men de bogføres eller spores ikke på lageret. Selvom du kan opdele ruter og styklister i flere mindre enheder, øger denne metode antallet af produkter, styklister og ruter, der skal administreres.  
 
 Der er to metoder til modellering af underleverandørarbejde til produktionsoperationer. Disse metoder adskiller sig fra hinanden på den måde, som processen med underleverandørarbejde kan modelleres på, den måde, halvfabrikata repræsenteres i processen, og den måde, omkostningsstyring administreres på.
 

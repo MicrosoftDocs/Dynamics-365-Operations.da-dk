@@ -3,7 +3,7 @@ title: Konfigurere salgsprovisionsregler
 description: Denne procedure viser, hvordan du kan konfigurere og aktivere beregning og sporing af salgsprovision.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16b0525c0fd133b2f41013e9b7daf47466e15ffe
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
+ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833924"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "1995207"
 ---
 # <a name="set-up-sales-commission-rules"></a>Konfigurere salgsprovisionsregler
 
@@ -31,70 +31,68 @@ Denne procedure viser, hvordan du kan konfigurere og aktivere beregning og spori
 
 
 ## <a name="set-up-commission-groups-and-commission-rates"></a>Konfigurer provisionsgrupper og provisionssatser
-1. Gå til Salg og marketing > Provisioner > Provisionskundegrupper.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Gruppe.
-4. Skriv en værdi i feltet Navn.
-5. Klik på Gem.
+1. Gå til **Navigationsrude > Moduler > Salg og marketing > Provisioner > Provisionskundegrupper**.
+2. Vælg **Ny**.
+3. Skriv en værdi i feltet **Gruppe**.
+4. Skriv en værdi i feltet **Navn**.
+5. Vælg **Gem**.
 6. Luk siden.
-7. Gå til Salg og marketing > Provisioner > Varegrupper.
-8. Klik på Ny.
-9. Skriv en værdi i feltet Gruppe.
-10. Skriv en værdi i feltet Navn.
-11. Luk siden.
-12. Gå til Salg og marketing > Provisioner > Salgsgrupper.
-    * En provisionssalgsgruppe angiver medarbejderne i sælgerroller, der er berettiget til at modtage en provision, når en kunde, der er knyttet til den relevante salgsgruppe, køber visse varer.  
-    * I USMF-demodatafirmaet, er der en salgsgruppe, der kaldes "Sælgere USA".  
-13. Klik på Generelt i handlingsruden.
-14. Klik på Sælger.
-    * Siden salg sælger viser en oversigt over virksomhedens sælgere, der er knyttet til en bestemt Kommissionen gruppe. Du kan tildele flere sælgere til den samme gruppe og definere deres respektive andel af den samlede provision gebyr som en procentværdi. Den samlede provision andel på tværs af alle medarbejdere må ikke overstige 100.  
-15. Markér den valgte række på listen.
-16. Klik på Rediger.
-17. Indstil Provisionsandel til "50".
-18. Klik på Ny.
-19. Klik på rullelisten i feltet Navn for at åbne opslaget.
-20. Brug Quick Filter til at finde poster. For eksempel kan du filtrere på feltet Navn med værdien "Susan Burk".
-21. Klik på Vælg.
-22. Indstil Provisionsandel til "50".
-23. Klik på Gem.
-24. Gå til Salg og marketing > Provisioner > Provisionsberegning.
-    * På siden Provisionsberegning kan du definere den provisionssats, medarbejderen skal modtage for en salgspostering, når den indeholder den forudindstillede kombination af kunde og produkt. Som en del af provisionssatsopsætningen, skal du angive provisionsberegningsgrundlaget, og om det skal medtage eller udelukke rabatter. Du kan også angive en gyldighedsperiode for, hvornår provisionssatsen er aktiv.  
-25. Klik på Ny.
-26. Vælg "Gruppe" i feltet Varekode:
-27. Klik på rullelisten i feltet Varerelation for at åbne opslaget.
-28. Find og vælg den gruppe, som du oprettede tidligere, på listen.
-29. Klik op linket i den valgte række på listen.
-30. Vælg Gruppe i feltet Kundekode.
-31. Klik på rullelisten i feltet Debitorrelation for at åbne opslaget.
+7. Gå til **Navigationsrude > Moduler > Salg og marketing > Provisioner > Varegrupper**.
+8. Vælg **Ny**.
+9. Skriv en værdi i feltet **Gruppe**.
+10. Skriv en værdi i feltet **Navn**.
+11. Vælg **Gem**.
+12. Luk siden.
+13. Gå til **Salg og marketing > Provisioner > Salgsgrupper**.
+    - En provisionssalgsgruppe angiver medarbejderne i sælgerroller, der er berettiget til at modtage en provision, når en kunde, der er knyttet til den relevante salgsgruppe, køber visse varer.  
+    - I USMF-demodatafirmaet, er der en salgsgruppe, der kaldes "Sælgere USA".  
+14. Vælg **Generelt** i **handlingsruden**.
+15. Klik på **Sælger**. Siden salg sælger viser en oversigt over virksomhedens sælgere, der er knyttet til en bestemt Kommissionen gruppe. Du kan tildele flere sælgere til den samme gruppe og definere deres respektive andel af den samlede provision gebyr som en procentværdi. Den samlede provision andel på tværs af alle medarbejdere må ikke overstige 100. 
+16. Markér den valgte række på listen.
+17. Vælg **Rediger**.
+18. Indstil **Provisionsandel** til '50'.
+19. Klik på **Ny**.
+20. Klik på rullelisten i feltet **Navn** for at åbne opslaget.
+21. Brug **Quick Filter** til at finde poster. For eksempel kan du filtrere på feltet Navn med værdien "Susan Burk".
+22. Klik på **Vælg**.
+23. Indstil **Provisionsandel** til '50'.
+24. Klik på **Gem**.
+25. Gå til **Salg og marketing > Provisioner > Provisionsberegning**. På siden **Provisionsberegning** kan du definere den provisionssats, medarbejderen skal modtage for en salgstransaktion, når den indeholder den forudindstillede kombination af kunde og produkt. Som en del af provisionssatsopsætningen, skal du angive provisionsberegningsgrundlaget, og om det skal medtage eller udelukke rabatter. Du kan også angive en gyldighedsperiode for, hvornår provisionssatsen er aktiv.  
+26. Klik på **Ny**.
+27. Vælg "Gruppe" i feltet **Varekode**.
+28. Klik på rullelisten i feltet **Varerelation** for at åbne opslaget.
+29. Find og vælg den gruppe, som du oprettede tidligere, på listen.
+30. Vælg 'Gruppe' i feltet **Kundekode**.
+31. Klik på rullelisten i feltet **Kunderelation** for at åbne opslaget.
 32. Vælg den gruppe, som du konfigurerede tidligere, på listen.
-33. I feltet Sælgerrelation skal du klikke på rullelisten for at åbne opslaget.
+33. I feltet **Sælgerrelation** skal du klikke på rullelisten for at åbne opslaget.
 34. Find og vælg den ønskede post på listen.
-    * Bevar indstillingen "Før linjerabat".  
-    * Bevar indstillingen "Omsætning" som grundlag for beregningen af provisionsværdien.    
+    - Bevar indstillingen "Før linjerabat".  
+    - Bevar indstillingen "Omsætning" som grundlag for beregningen af provisionsværdien.    
 35. Angiv et tal i feltet Provisionssats i procent.
-36. Klik på Gem.
+36. Klik på **Gem**.
 
 ## <a name="setting-up-commission-posting"></a>Konfiguration af provisionskonteringer
-1. Gå til Salg og marketing > Provisioner > Provisionskontering.
-    * Provisionsgebyrer skal betales til medarbejderne og skal derfor sættes op til at sikre korrekt økonomisk bogføring på de relevante konti i finansbogholderiet. Dette gøres på siden Provisionskontering. Gennemse den opsætning, der er tilgængelig for det aktuelle firma. Normalt bogføres provisionsbeløbene på en dedikeret konto for udgifter og modposteres på en dedikeret kreditorkonto. Hvis du ikke har konfigureret regler for provisionskonteringer, kan systemet ikke fuldføre fakturering af en salgsordre, der har berettiget provisioner.  
+1. Gå til **Navigationsrude > Salg og marketing > Provisioner > Provisionskontering**. Provisionsgebyrer skal betales til medarbejderne og skal derfor sættes op til at sikre korrekt økonomisk bogføring på de relevante konti i **Finans**. Dette gøres på siden **Provisionskontering**. Gennemse den opsætning, der er tilgængelig for det aktuelle firma. Normalt bogføres provisionsbeløbene på en dedikeret konto for udgifter og modposteres på en dedikeret kreditorkonto. Hvis du ikke har konfigureret regler for provisionskonteringer, kan systemet ikke fuldføre fakturering af en salgsordre, der har berettiget provisioner.  
 2. Luk siden.
 
 ## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Tildel en provisionsgruppe til en kunde og et produkt
-1. Gå til Salg og marketing > Kunder > Alle kunder.
+1. Gå til **Navigationsrude > Moduler > Salg og marketing > Kunder > Alle kunder**.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
-4. Klik på Rediger.
-5. Udvid sektionen Salgsordrestandarder.
-6. Klik på rullelisten i feltet Provisionsgruppe for at åbne opslaget.
+4. Klik på **Rediger**.
+5. Udvid sektionen **Salgsordrestandarder**.
+6. Klik på rullelisten i feltet **Provisionsgruppe** for at åbne opslaget.
 7. Vælg den gruppe, som du oprettede tidligere, på listen.
-8. Klik på rullelisten i feltet Salgsgruppe for at åbne opslaget.
+8. Klik på rullelisten i feltet **Salgsgruppe** for at åbne opslaget.
 9. Find og vælg den ønskede post på listen.
-10. Klik på Gem.
-11. Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.
-12. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Varenummer med værdien "T0020".
+10. Klik på **Gem**.
+11. Gå til **Navigationsrude > Moduler > Administration af produktoplysninger > Produkter > Frigivne produkter**.
+12. Brug **Filter** til at finde poster. Filtrer f.eks. efter feltet Varenummer med værdien "T0020".
 13. Klik op linket i den valgte række på listen.
-14. Klik på Rediger.
-15. Udvid afsnittet Sælg.
-16. Klik på rullelisten i feltet Provisionsgruppe for at åbne opslaget.
+14. Klik på **Rediger**.
+15. Udvid afsnittet **Sælg**.
+16. Klik på rullelisten i feltet **Provisionsgruppe** for at åbne opslaget.
 17. Find og vælg den provisionsgruppe, som du oprettede tidligere, på listen.
+18. Vælg **Gem**.
 

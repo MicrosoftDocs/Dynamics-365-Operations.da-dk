@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843859"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250250"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843859"
 
 Dette emne indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 
-Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations Mobile-appen.
+Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operations-mobilappen.
 
 ## <a name="overview"></a>Overblik 
-Arbejdsområdet til **Kreditorsamarbejde** på mobilenheder holder kreditorerne underrettet om nye indkøbsordrer, så de kan se indkøbsordrer og derefter reagere på dem i Microsoft Dynamics 365 for Finance and Operations-webklienten. 
+Mobilarbejdsområdet **Kreditorsamarbejde** holder kreditorerne underrettet om nye indkøbsordrer, så de kan se indkøbsordrer og derefter reagere på dem i webklienten. 
 
 >[!NOTE]
 > Det mobile arbejdsområde bør anvendes som et supplement til webgrænsefladen til kreditorsamarbejde, men ikke som en erstatning. 
@@ -59,8 +59,8 @@ Arbejdsområdet **Kreditorsamarbejde** til mobilenheder giver en leverandør mul
 ## <a name="prerequisites"></a>Forudsætninger
 Forudsætningerne varierer, afhængigt af hvilken version af Microsoft Dynamics 365 der er installeret i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations 
-Hvis Microsoft Dynamics 365 for Finance and Operations er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Kreditorsamarbejde** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forudsætninger, hvis du bruger Supply Chain Management
+Hvis Supply Chain Management er implementeret for organisationen, skal systemadministratoren publicere mobilarbejdsområdet **Kreditorsamarbejde**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere
 Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger. 
@@ -104,7 +104,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 <li><a href="vendor-collaboration-work-external-vendors.md">Brug kreditorsamarbejde til at arbejde sammen med eksterne kreditorer</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Administrere brugere af kreditorsamarbejde</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Konfigurere og vedligeholde kreditorsamarbejde</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Brug kreditorsamarbejde til at arbejde sammen med kunder i Finance and Operations</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Brug kreditorsamarbejde til at arbejde sammen med kunder i Supply Chain Management</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Download og installer Dynamics 365 for Unified Operations-mobilappen:
+Download og installer Finance and Operations-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

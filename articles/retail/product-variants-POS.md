@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572043"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025143"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersøgning i POS
 
@@ -52,7 +52,7 @@ Antal, der er **Reserveret** og **Bestilt**, vises også for hver lokation.
 Listen over lokationer indeholder to typer enheder:
 
 - **Detailbutikker** – Listen viser butikker, der er konfigureret ved hjælp af butikssøgergruppen for den aktuelle butik i Retail Headquarters.
-- **Distributionscentre** – Forskellige typer distributionscentre (f.eks. lagersteder) kan konfigureres i Microsoft Dynamics 365 for Retail. Listen viser dog kun oplysninger om disponibel lagerbeholdning for distributionscentre af typen **Standard**.
+- **Distributionscentre** – Forskellige typer distributionscentre (f.eks. lagersteder) kan konfigureres i Retail. Listen viser dog kun oplysninger om disponibel lagerbeholdning for distributionscentre af typen **Standard**.
 
     > [!NOTE]
     > Oplysninger om disponibel lagerbeholdning vises ikke for lagersteder af typerne **Transit**, **Karantæne** og **Varer undervejs** for POS.

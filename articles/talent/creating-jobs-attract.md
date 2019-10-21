@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773244"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008449"
 ---
 # <a name="create-a-job"></a>Oprette et job
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives elementerne i et job i Microsoft Dynamics 365 for Talent: Attract. Det beskrives også, hvordan du opretter et job.
+I dette emne beskrives elementerne i et job i Microsoft Dynamics 365 Talent: Attract. Det beskrives også, hvordan du opretter et job.
 
 ## <a name="job-creation"></a>Joboprettelse
 
@@ -74,7 +74,7 @@ Du kan finde flere oplysninger om aktiviteter, der kan føjes til ansættelsespr
 
 ## <a name="postings"></a>Opdateringer
 
-Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og administratorer kan oprette jobopslag. Jobbet kan opslås på enten Talent Careers (et Microsoft Dynamics 365 for Talent-karrierewebsted) eller LinkedIn. Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Denne liste udvides over tid. Når et job alene slås op internt, skal kandidaterne have en ADD-konto for at kunne se og søge jobbet. Såfremt et job slås op offentligt, kan kandidaterne se og søge jobbet ved hjælp af alle godkendelsesmuligheder. 
+Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og administratorer kan oprette jobopslag. Jobbet kan opslås på enten Talent Careers (et Dynamics 365 Talent-karrierewebsted) eller LinkedIn. Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Denne liste udvides over tid. Når et job alene slås op internt, skal kandidaterne have en ADD-konto for at kunne se og søge jobbet. Såfremt et job slås op offentligt, kan kandidaterne se og søge jobbet ved hjælp af alle godkendelsesmuligheder. 
 
 Du kan finde flere oplysninger om jobopslag i [Funktioner for karrierewebsteder i Attract](career-site.md).
 

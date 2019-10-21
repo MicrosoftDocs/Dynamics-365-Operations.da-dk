@@ -1,6 +1,6 @@
 ---
 title: POS-handlinger, online og offline
-description: Dette emne indeholder oplysninger om POS-handlinger i Microsoft Dynamics 365 for Retail. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
+description: Dette emne indeholder oplysninger om POS-handlinger i Dynamics 365 Retail. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625659"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025304"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
 [!include [banner](includes/banner.md)]
 
-De fleste handlinger, som brugeren udfører på POS, betragtes som handlinger. Handlinger konfigureres og administreres i Microsoft Dynamics 365 for Retail-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Andre handlinger indgår i POS-hovedprogrammet og kaldes enten fra på knapper på skærmen eller som en del af andre arbejdsgange eller processer.
+De fleste handlinger, som brugeren udfører på POS, betragtes som handlinger. Handlinger konfigureres og administreres i Dynamics 365 Retail-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Andre handlinger indgår i POS-hovedprogrammet og kaldes enten fra på knapper på skærmen eller som en del af andre arbejdsgange eller processer.
 
-Følgende tabel indeholder oplysninger om de handlinger, der er tilgængelige i Retail Modern POS og Cloud POS til Dynamics 365 for Retail. Tabellen angiver også, hvor i programmet handlingerne kan startes, og om de er tilgængelige, når POS er i offlinetilstand.
+Følgende tabel indeholder oplysninger om de handlinger, der er tilgængelige i Retail Modern POS og Cloud POS. Tabellen angiver også, hvor i programmet handlingerne kan startes, og om de er tilgængelige, når POS er i offlinetilstand.
 
-Nogle handlinger er i øjeblikket ikke tilgængelige i Retail Modern POS eller Cloud POS til Dynamics 365 for Retail. Nogle af disse handlinger er specifikke for landestandarden og kræver yderligere udvidelser og konfiguration. Andre er funktioner fra Microsoft Dynamics AX 2012, der ikke understøttes i øjeblikket.
+Nogle handlinger er i øjeblikket ikke tilgængelige i Retail Modern POS eller Cloud POS. Nogle af disse handlinger er specifikke for landestandarden og kræver yderligere udvidelser og konfiguration. Andre er funktioner fra Microsoft Dynamics AX 2012, der ikke understøttes i øjeblikket.
 
 Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 
@@ -42,7 +42,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 - **Velkomstskærm** – Handlingen kan startes fra POS-knapmatrixer, der er konfigureret på POS-velkomstskærmen.
 
 > [!NOTE]
-> De handlinger, der er angivet nedenfor, gælder for den nyeste version af Dynamics 365 for Retail. Nogle handlinger kan være ændret eller er måske ikke tilgængelige i tidligere versioner.
+> De handlinger, der er angivet nedenfor, gælder for den nyeste version af Retail. Nogle handlinger kan være ændret eller er måske ikke tilgængelige i tidligere versioner.
 
 | Id | Handling | Betegnelse | Knapmatrix | Transaktionsskærm | Velkomstskærm | Tilgængelig offline | Specifik for landestandard |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

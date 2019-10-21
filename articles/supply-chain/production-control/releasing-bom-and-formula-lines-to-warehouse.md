@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c40877bc6557a81adc5c1b8d10afbbd26322b200
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552901"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249921"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
@@ -83,7 +83,7 @@ I følgende illustration vises en produktionsordre, der har to operationer, 10 o
 
 ![Eksempel på frigivelse af materiale pr. operationsnummer](media/two-operations.PNG)
 
-For en hurtig demonstration af, hvordan du frigiver materiale i forhold til mængden af færdige varer, kan du se denne korte YouTube-video: [Forbedringer af frigivelsesprocessen for produktionsordrer i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
+For en hurtig demonstration af, hvordan du frigiver materiale i forhold til mængden af færdige varer, kan du se denne korte YouTube-video om [forbedringer af frigivelsesprocessen for produktionsordrer](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigive materiale i forhold til antallet af færdigvarer
 

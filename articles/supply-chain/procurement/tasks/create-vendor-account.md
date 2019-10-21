@@ -3,7 +3,7 @@ title: Oprette en kreditorkonto
 description: Denne fremgangsmåde viser, hvordan du opretter en kreditorkonto og tilføjer en adresse og kontaktoplysninger.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 98a7c6d209400b754064f2176d1ebca291093304
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
+ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838040"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "1924410"
 ---
 # <a name="create-a-vendor-account"></a>Oprette en kreditorkonto
 
@@ -31,35 +31,31 @@ Denne fremgangsmåde viser, hvordan du opretter en kreditorkonto og tilføjer en
 
 
 ## <a name="create-a-vendor-account"></a>Oprette en kreditorkonto
-1. Gå til Indkøb og forsyning > Kreditorer > Alle kreditorer.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Kreditorkonto.
-    * Værdien udfyldes eventuelt automatisk. Hvis det er tilfældet, kan du springe dette trin over.  
-    * Du kan oprette kreditorkonti for en person eller organisation. Dette påvirker, hvilke felter der er tilgængelige. I dette eksempel opretter vi en kreditorkonto for en organisation.   
-4. Indtast eller vælg en værdi i feltet Navn.
-    * Hvis din kreditor allerede er en registreret part i dit system, kan du bruge rullelisten og vælge den i dette felt. Den nye kreditorkonto arver adresse og kontaktoplysninger, der allerede er registreret.  
-5. Indtast eller vælg en værdi i feltet Gruppe.
-    * Kreditorgruppen bruges til at gruppere kreditorer, der har en eller flere af følgende parametre til fælles: Betalingsbetingelse, afregningsperiode, finanskonti til lagerbogføring – inklusive momsgruppen, standardfinanskonti, produktfilterkoder eller konfiguration af forsyningsprognose.  
-6. Indtast et tal i feltet Antal medarbejdere.
-7. Indtast en værdi i feltet Organisationsnummer.
+1. Gå til **navigationsruden > Moduler > Indkøb og forsyning > Kreditorer > Alle kreditorer**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Kreditorkonto**.
+    - Værdien udfyldes eventuelt automatisk. Hvis det er tilfældet, kan du springe dette trin over.  
+    - Du kan oprette kreditorkonti for en person eller organisation. Dette påvirker, hvilke felter der er tilgængelige. I dette eksempel opretter vi en kreditorkonto for en organisation.   
+4. Indtast eller vælg en værdi i feltet **Navn**. Hvis din kreditor allerede er en registreret part i dit system, kan du bruge rullelisten og vælge den i dette felt. Den nye kreditorkonto arver adresse og kontaktoplysninger, der allerede er registreret.
+5. Indtast eller vælg en værdi i feltet **Gruppe**. Kreditorgruppen bruges til at gruppere kreditorer, der har en eller flere af følgende parametre til fælles: betalingsbetingelse, afregningsperiode, finanskonti til lagerbogføring – inklusive momsgruppen, standardfinanskonti, produktfilterkoder eller konfiguration af forsyningsprognose.
+6. Indtast et tal i feltet **Antal medarbejdere**.
+7. Indtast en værdi i feltet **Organisationsnummer**.
 
 ## <a name="add-an-address"></a>Tilføj en adresse
-1. Udvid sektionen Adresser.
-2. Klik på Tilføj.
-3. Indtast eller vælg en værdi i feltet Formål.
-    * Du kan vælge ét eller flere formål. Disse bruges til at vælge den korrekte adresse til et bestemt formål. Hvis formålet f.eks. er "Faktura", vil denne adresse blive brugt, når du sender fakturaer.  
-4. Skriv en værdi i feltet Navn eller beskrivelse.
-5. Indtast eller vælg en værdi i feltet Land/område.
-    * Indtast adresseoplysninger. Det land/område, du har valgt, bestemmer de felter, der vises, og de svarer til adresseformatet for landet/området.   
-6. Klik på OK.
+1. Udvid sektionen **Adresser**.
+2. Klik på **Tilføj**.
+3. Indtast eller vælg en værdi i feltet **Formål**. Du kan vælge ét eller flere formål. Disse bruges til at vælge den korrekte adresse til et bestemt formål. Hvis formålet f.eks. er "Faktura", vil denne adresse blive brugt, når du sender fakturaer.
+4. Skriv en værdi i feltet **Navn eller beskrivelse**.
+5. Indtast eller vælg en værdi i feltet **Land/område**. Indtast adresseoplysninger. Det land/område, du har valgt, bestemmer de felter, der vises, og de svarer til adresseformatet for landet/området. 
+6. Klik på **OK**.
 
 ## <a name="add-contact-information"></a>Tilføj kontaktoplysninger
-1. Klik på Tilføj.
-2. Skriv en værdi i feltet Beskrivelse.
-3. Vælg en indstilling i feltet Type.
-4. Skriv en værdi i feltet Kontaktpersons nummer/adresse.
-    * Du kan markere afkrydsningsfeltet Primær, hvis dette er den primære kontakt.  
-5. Klik på Gem.
-6. Luk siden.
+1. Udvid sektionen **Kontaktoplysninger**.
+2. Klik på **Tilføj**.
+3. Indtast en værdi i feltet **Beskrivelse**.
+4. Vælg en indstilling i feltet **Type**.
+5. Skriv en værdi i feltet **Kontaktpersons nummer/adresse**. Du kan markere afkrydsningsfeltet Primær, hvis dette er den primære kontakt.  
+6. Klik på **Gem**.
 7. Luk siden.
+8. Luk siden.
 

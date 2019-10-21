@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f03b7fa073c4e5338b7b5681ba7b8c9fe00a657b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875561"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250823"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbejdsordrer og anlægsaktiver
 
@@ -33,7 +33,7 @@ ms.locfileid: "1875561"
 [!include [banner](../../includes/preview-banner.md)]
 
 
-I Styring af aktiver kan aktiver knyttes til anlægsaktiver, og du kan oprette arbejdsordrer for disse aktiver. Hvis du bruger denne funktion, kan du få en komplet oversigt over anlægsaktiver, relaterede investeringsprojekter og de omkostninger, der er registreret for investeringsprojekterne i modulet **Projektstyring og regnskab**, og modulet **Anlægsaktiver** i Dynamics 365 for Finance and Operations.
+I Styring af aktiver kan aktiver knyttes til anlægsaktiver, og du kan oprette arbejdsordrer for disse aktiver. Hvis du bruger denne funktion, kan du få en komplet oversigt over anlægsaktiver, relaterede investeringsprojekter og de omkostninger, der er registreret for investeringsprojekterne i modulet **Projektstyring og regnskab** og modulet **Anlægsaktiver**.
 
 >[!NOTE]
 >Feltet **Nummer på anlægsaktiv** udfyldes kun på arbejdsordrejobprojektet, hvis typen "Investering" er valgt som projekttypen for arbejdsordrejobprojektet.

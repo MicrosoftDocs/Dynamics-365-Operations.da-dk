@@ -1,7 +1,7 @@
 ---
 title: Ændre sorteringsrækkefølgen for merchandisingenheder
-description: I dette emne forklares de begreber, der er relateret til styring af visningsrækkefølgen for forskellige merchandising-relaterede enheder i Microsoft Dynamics 365 for Retail.
-author: ashishharchwani
+description: I dette emne forklares de begreber, der er relateret til styring af visningsrækkefølgen for forskellige merchandising-relaterede enheder i Dynamics 365 Retail.
+author: josaw1
 manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
@@ -18,16 +18,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2be3c1198ac6fff851be1bead2f0995202f1f0e7
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c159ff869d6c504fdebbef1fa68115a410c81d85
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866155"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019410"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ændre sorteringsrækkefølgen for merchandisingenheder
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Detailhandlere regner produktopdagelse for et primært værktøj til kundeinteraktion på tværs af alle detailkanaler. Forskellige funktioner kan hjælpe kunderne med at finde produkter på en nem måde. De kan f.eks. gennemse kategorier, søge og filtrere.
@@ -38,7 +38,7 @@ I dette emne forklares de begreber, der er relateret til styring af visningsræk
 
 Understøttelsen af sortering af forskellige merchandising-relaterede enheder er blevet forbedret. Denne understøttelse er nu bedre tilpasset eksisterende kundescenarier, der tidligere krævede udvidelser fra implementeringspartnere.
 
-I versioner af Microsoft Dynamics 365 for Retail, der er ældre end version 10.0.5, var sorteringsrækkefølgen for kategorierne i navigationshierarkiet alfabetisk. Den nye brugerdefinerede funktion til sorteringsrækkefølge gør det muligt for merchandising-chefer at konfigurere sorteringsrækkefølgen for forskellige merchandising-relaterede enheder på tværs af alle slutbrugerklienter. Disse klienter omfatter hovedkontorer og callcentre.
+I versioner af Retail, der er ældre end version 10.0.5, var sorteringsrækkefølgen for kategorierne i navigationshierarkiet alfabetisk. Den nye brugerdefinerede funktion til sorteringsrækkefølge gør det muligt for merchandising-chefer at konfigurere sorteringsrækkefølgen for forskellige merchandising-relaterede enheder på tværs af alle slutbrugerklienter. Disse klienter omfatter hovedkontorer og callcentre.
 
 ## <a name="configure-the-display-order-for-categories-in-the-retail-product-hierarchy"></a>Konfigurere visningsrækkefølgen for kategorier i detailprodukthierarkiet
 

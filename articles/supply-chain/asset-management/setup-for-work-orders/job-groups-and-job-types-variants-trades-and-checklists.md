@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874756"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249603"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobfag og vedligeholdelsestjeklister
 
@@ -225,7 +225,7 @@ Skabeloner til vedligeholdelsestjeklister kan bruges som et almindeligt sæt opg
 26. Hvis du vil oprette vedhæftede filer på en valgt standardlinje i en vedligeholdelsesjobtype, skal du vælge **Vedhæft dokumenter**. Vedhæftede filer, der er konfigureret på en standardlinje for en vedligeholdelsesjobtype, medtages automatisk på arbejdsordrelinjer, der bruger standardlinjen for vedligeholdelsesjobtypen.
 27. Vælg **Ny**, og vælg derefter en dokumenttype.
 28. Upload dokumentet eller filen.
-29. Angiv felterne på siden **Vedhæftede filer**. I vedhæftningsopsætningen bruges standarddokumentopsætningsfunktionen i Microsoft Dynamics 365 for Finance and Operations.
+29. Angiv felterne på siden **Vedhæftede filer**. I opsætningen af vedhæftninger bruges opsætningsfunktionen for standarddokument.
 30. Vælg **Gem** for at gemme vedhæftningen.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ Når du har oprettet de nødvendige standardkombinationer af vedligeholdelsesjob
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatisk opdatering af budgetter for vedligeholdelsesjobtyper
 
-I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i budgetter til vedligeholdelsesjobtypen for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler i Finance and Operations. På denne måde er du med til at sikre, at dine budgetter for vedligeholdelsesjobtyper altid bruger de seneste kostpriser.
+I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i budgetter til vedligeholdelsesjobtypen for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler. På denne måde er du med til at sikre, at dine budgetter for vedligeholdelsesjobtyper altid bruger de seneste kostpriser.
 
 1. Vælg **Styring af aktiver** \> **Periodisk** \> **Budget** \> **Opdater budget for vedligeholdelsesjobtype**.
 2. I dialogboksen **Opdater budget for vedligeholdelsesjobtype** kan du i oversigtspanelet **Poster, der skal indgå** tilføje valg for bestemte typer af vedligeholdelsesjob efter behov. Vælg **Filter**, og vælg derefter **Vælg** for at foretage valgene.

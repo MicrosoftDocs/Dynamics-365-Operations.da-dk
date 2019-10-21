@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549307"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250197"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaseret underleverandørarbejde
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549307"
 
 I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
 
-I Microsoft Dynamics 365 for Finance and Operations er der to metoder til underleverandørarbejde: produktionsordrer og lean manufacturing. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
+I Microsoft Dynamics 365 Supply Chain Management er der to metoder til underleverandørarbejde: produktionsordrer og lean manufacturing. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflows, der vedrører underleverandører
 Det grundlæggende princip i et produktionsflow ændres ikke, når aktiviteter gives i underentreprise. Materiale flyder stadig mellem lokaliteter, procesaktiviteter konverterer materiale til produkter og overførselsaktiviteter flytter materiale eller produkter fra ét sted til et andet. Du kan modellere steder og arbejdsceller som kreditoradministreret ved at tildele kreditorkontoen til et lagersted eller en ressource i en ressourcegruppe.  
@@ -102,7 +102,7 @@ Folk betragter ofte transport som ikke-produktivt og mener, at det ikke tilføje
 
 Med aktivitetsbaseret underleverandørarbejde i lean manufacturing kan du integrere fragtmænd og transportleverandører, der flytter materialer og produkter mellem et produktionsflows lokationer. Ved at modellere en overførselsaktivitet kan du tildele en fragtmand eller en leverandør. Overførselsaktiviteterne/jobbet er baseret på en aftale om service og køb, og du kan oprette indkøbsordrer og modtagelsesadviseringer baseret på de faktiske overførselsjob. Denne funktionalitet er den samme som funktionaliteten for procesaktiviteter udført af underleverandør.  
 
-Derfor understøtter Finance and Operations nu styklisteberegning, der omfatter transportydelser, oprettelse af relaterede indkøbsordrer, integreret registrering af modtagelser og integration af transportomkostninger i efterkalkulation af produktionsflow.
+Supply Chain Management understøtter nu styklisteberegning, der omfatter transportydelser, oprettelse af relaterede indkøbsordrer, integreret registrering af modtagelser og integration af transportomkostninger i efterkalkulation af produktionsflow.
 
 
 

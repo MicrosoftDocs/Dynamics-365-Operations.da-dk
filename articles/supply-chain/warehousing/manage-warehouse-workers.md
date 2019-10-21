@@ -1,6 +1,6 @@
 ---
 title: Styre lagerarbejdere
-description: I denne artikel beskrives, hvordan du kan bruge Dynamics 365 for Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
+description: I denne artikel beskrives, hvordan du kan bruge Dynamics 365 Supply Chain Management - Lagersted-appen til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0de87e10f9213838dd5e5436b8b5699b19547bf
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018615"
 ---
 # <a name="manage-warehouse-workers"></a>Styre lagerarbejdere
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics 365 for Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
+I denne artikel beskrives, hvordan du kan bruge Dynamics 365 Supply Chain Management - Lagersted-appen til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 
 Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
 

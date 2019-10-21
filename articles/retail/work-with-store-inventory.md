@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606797"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024677"
 ---
 # <a name="store-inventory-management"></a>Butikslagerstyring
 
 [!include [banner](includes/banner.md)]
 
-Når du arbejder med lager i Dynamics 365 for Retail og bruger POS-programmet, det er vigtigt at bemærke, at POS yder begrænset understøttelse til lagerdimensioner og visse lagervaretyper.
+Når du arbejder med lager i Dynamics 365 Retail og bruger POS-programmet, det er vigtigt at bemærke, at POS yder begrænset understøttelse til lagerdimensioner og visse lagervaretyper.
 
 POS-løsningen understøtter ikke følgende varekonfigurationer:
 
@@ -56,7 +56,7 @@ POS-løsningen har begrænset understøttelse af følgende dimensioner. Begræns
 
 ## <a name="purchase-orders"></a>Indkøbsordrer
 
-Indkøbsordrer oprettes på hovedkontoret. Hvis et detaillagersted er medtaget i indkøbsordrehovedet, kan ordren modtages i butikken ved hjælp af Modern POS (MPOS) eller Cloud POS i Microsoft Dynamics 365 for Retail via handlingen **Pluk-/tilgangs-id**. Når de antal, der er modtaget i butikken, angives i feltet **Modtag nu** i POS for indkøbsordredokumentet, kan de gemmes lokalt eller allokeres. Hvis du gemmer disse data lokalt, har det ingen indflydelse på lagerbeholdningen. Lagring skal kun udføres, hvis brugeren ikke er klar til at bogføre tilgangen til hovedkontoret og blot har brug for en metode til midlertidigt at gemme de tidligere angivne **Modtag nu**-data. Derved gemmes Modtag nu-dataene lokalt i brugerens kanaldatabase. Når dokumentet er behandlet ved hjælp af **Bekræft**-indstillingen, sendes dataene i **Modtag nu** til hovedkontoret, og indkøbsordretilgangen bogføres. 
+Indkøbsordrer oprettes på hovedkontoret. Hvis et detaillagersted er medtaget i indkøbsordrehovedet, kan ordren modtages i butikken ved hjælp af Modern POS (MPOS) eller Cloud POS via handlingen **Pluk-/tilgang**. Når de antal, der er modtaget i butikken, angives i feltet **Modtag nu** i POS for indkøbsordredokumentet, kan de gemmes lokalt eller allokeres. Hvis du gemmer disse data lokalt, har det ingen indflydelse på lagerbeholdningen. Lagring skal kun udføres, hvis brugeren ikke er klar til at bogføre tilgangen til hovedkontoret og blot har brug for en metode til midlertidigt at gemme de tidligere angivne **Modtag nu**-data. Derved gemmes Modtag nu-dataene lokalt i brugerens kanaldatabase. Når dokumentet er behandlet ved hjælp af **Bekræft**-indstillingen, sendes dataene i **Modtag nu** til hovedkontoret, og indkøbsordretilgangen bogføres. 
 
 ## <a name="transfer-orders"></a>Flytteordrer
 

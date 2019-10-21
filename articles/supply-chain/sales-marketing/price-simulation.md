@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554638"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251333"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -51,7 +51,7 @@ Det er vigtigt at være omhyggelig, når du kører prissimuleringer på tilbud m
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer af rabatter i samhandelsaftaler
 
-Samhandelsaftaler i Microsoft Dynamics 365 for Finance and Operations kan have fire typer af prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
+Samhandelsaftaler i Supply Chain Management kan have fire typer af prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
 
 -   **Salgspris** – Der kan angives separate varesalgspriser. Når tilbudslinjerne oprettes, søger programmet efter den rigtige salgspris for en vare og overføre den til tilbudslinjerne. En samhandelsaftale, der har denne slags rabat, påvirker derfor ikke prissimuleringen. Den salgspris, der bruges i tilbudslinjen, afspejler samhandelsaftalen.
 -   **Linjerabat** – Der angives særlige rabatter for varer, afhængigt af ordreantallet. Linjebeløb reduceres typisk med linjerabatten, før der køres en prissimulering. En samhandelsaftale, der har denne slags rabat, påvirker derfor prissimuleringen.

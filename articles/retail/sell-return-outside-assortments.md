@@ -1,6 +1,6 @@
 ---
 title: Sælge og returnere produkter, der ikke er en del af en butiks sortiment
-description: Med Dynamics 365 for Retail kan du sælge og returnere produkter uden for sortimenter.
+description: Med Dynamics 365 Retail kan du sælge og returnere produkter uden for sortimenter.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567901"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024931"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Sælge og returnere produkter, der ikke er en del af en butiks sortiment
 
@@ -37,7 +37,7 @@ Her er nogle typiske scenarier:
 + En detailhandler fører ikke bestemte produkter i butikken eller har dem ikke på lager i den butik, kunden har besøgt, men produkterne er tilgængelige i andre butikker. Den butiksansatte kan hjælpe kunden med at søge efter produkter i den anden butik, føje dem til indkøbsvognen og betale ved kassen ved at vælge en leveringsmetode.
 + En detailhandler har mange butikker i og omkring en bestemt by eller et postnummer og vil ikke vinge kunder til at returnere varer til den samme butik, som de er købt i. I stedet kan kunder returnere varer til enhver butik.
 
-De almindelige scenarier er tilgængelige for detailhandlere ved hjælp af Dynamics 365 for Retail. Med Retail kan du:
+De almindelige scenarier er tilgængelige for detailhandlere ved hjælp af Retail. Med Retail kan du:
 
 + Søge efter produkter i andre butikker.
 + Gennemse alle frigivne produkter.

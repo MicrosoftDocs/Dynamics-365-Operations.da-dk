@@ -1,6 +1,6 @@
 ---
 title: Likviditetsstyringsforbedringer
-description: Dette emne beskriver likviditetsstyringsforbedringerne i POS for Dynamics 365 for Retail.
+description: Dette emne beskriver likviditetsstyringsforbedringerne i POS for Dynamics 365 Retail.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630047"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019524"
 ---
 # <a name="cash-management-improvements"></a>Likviditetsstyringsforbedringer
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630047"
 
 Likviditetsstyring er en nøglefunktion for detailhandlere i fysiske butikker. Detailhandlere ønsker, at deres butikker har systemer, der kan hjælpe dem med at tilbyde en komplet sporbarhed og overvågning af kontanter og deres bevægelse på tværs af de forskellige kasseapparater og kasserere i en butik. De skal kunne afstemme eventuelle forskelle og placere ansvaret.
 
-Microsoft Dynamics 365 for Retail indeholder funktioner til likviditetsstyring i POS-programmet. I de versioner af Retail, der er ældre end version 10.0.3, er funktionen til likviditetsstyring dog ikke robust nok til at give en komplet sporbarhed af kontanters bevægelser i butikker. Selvom detailhandlere kan afstemme kontanter i en butik, kan de ikke præcist placere et ansvar i tilfælde af kontantuoverensstemmelser.
 
-I Microsoft Dynamics 365 for Retail version 10.0.3 og nyere versioner vil detailhandlerne få mulighed for at spore håndteringen af kontanter. Som en del af denne sporbarhed vil detailhandlerne kunne definere pengeskabe, oprette tosidede kontanttransaktioner og afstemme likviditetsstyringsposteringer.
+Microsoft Dynamics 365 Retail indeholder funktioner til likviditetsstyring i POS-programmet. I de versioner af Retail, der er ældre end version 10.0.3, er funktionen til likviditetsstyring dog ikke robust nok til at give en komplet sporbarhed af kontanters bevægelser i butikker. Selvom detailhandlere kan afstemme kontanter i en butik, kan de ikke præcist placere et ansvar i tilfælde af kontantuoverensstemmelser.
+
+
+I Retail version 10.0.3 og nyere versioner vil detailhandlerne få mulighed for at spore håndteringen af kontanter. Som en del af denne sporbarhed vil detailhandlerne kunne definere pengeskabe, oprette tosidede kontanttransaktioner og afstemme likviditetsstyringsposteringer.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Konfigurere sporbarhed og definere pengeskabe
 

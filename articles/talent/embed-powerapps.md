@@ -1,5 +1,5 @@
 ---
-title: Integrere PowerApps-apps i Core HR
+title: Integrere PowerApps-apps i Dynamics 365 - Core HR
 description: I dette emne beskrives, hvordan du kan løse problemet, når PowerApps-menupunktet er forsvundet fra modulet Systemadministration.
 author: andreabichsel
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7c0dcdd7e2f407267cf99906b4d0b317858710af
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4fbc24c5ceb73389b84b125eb942ac31757928aa
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742813"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008424"
 ---
-# <a name="embed-powerapps-apps-in-core-hr"></a>Integrere PowerApps-apps i Core HR
+# <a name="embed-powerapps-apps-in-core-hr"></a>Integrer PowerApps-apps i Core HR
 
 [!include [banner](includes/banner.md)]
 
-**Afgang**
+**Udsted**
 
-**PowerApps**-menupunktet er forsvundet fra modulet **Systemadministration**.
+Menupunktet **PowerApps** er forsvundet fra modulet **Systemadministration**.
 
 **Årsag**
 
@@ -38,11 +38,11 @@ Brugergrænsefladens design er blevet ændret, og Microsoft PowerApps er nu inkl
 
 **Løsning**
 
-Den måde, PowerApps-apps er integreret på, er blevet ændret. PowerApps-apps tilføjes nu via tilpasningsmodellen. Du kan tilføje PowerApps-apps på næsten alle sider i Microsoft Dynamics 365 for Talent.
+Den måde, PowerApps-apps er integreret på, er blevet ændret. PowerApps-apps tilføjes nu via tilpasningsmodellen. Du kan tilføje PowerApps-apps på næsten alle sider i Microsoft Dynamics 365 Talent.
 
-Du kan finde oplysninger om, hvordan du integrerer PowerApps-apps i Talent, under [Integrere PowerApps-apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Du kan finde oplysninger om, hvordan du integrerer PowerApps-apps i Talent, under [Integrer PowerApps-apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
-PowerApps-kunder, der har integreret apps inden ændringen, bør være blevet opgraderet til den nye model.
+Enhver PowerApps-kunde, der har integreret apps inden ændringen, bør være blevet opgraderet til den nye model.
 
 Knappen **PowerApps** findes i øverste højre hjørne af næsten alle sider i Talent. Du kan bruge denne knap til at indsætte en PowerApps-app.
 

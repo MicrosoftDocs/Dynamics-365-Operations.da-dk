@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548992"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250131"
 ---
 # <a name="onboard-vendors"></a>Modtage kreditorer
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Nye kreditorer kan modtages og registreres som kreditorer i Microsoft Dynamics 365 for Finance and Operations baseret på oplysninger, der er indsamlet fra en person, der repræsenterer kreditoren.
+Nye kreditorer kan modtages og registreres som kreditorer i Microsoft Dynamics 365 Supply Chain Management baseret på oplysninger, der er indsamlet fra en person, der repræsenterer kreditoren.
 
 Processen består af følgende trin, hvor forskellige roller udfører handlinger i systemet.
 
 1. **OData til datastyring** – Import af enhed – Den oprindelige anmodning er anmodningen om registrering af den mulige kreditor. Denne anmodning stammer normalt fra en kilde som f.eks. et websted til hos kunden, der tillader anonym adgang. Kreditorer kan tilmelde sig ved at angive grundlæggende oplysninger, f.eks. kreditornavnet, berettigelse, organisationsnummer og navn på og mailadresse til kontaktpersonen. Anmodningerne importeres via brugergrænsefladen i Datastyring.
-2. **Listeside med registreringsanmodning for mulige kreditorer** - Baseret på de oplysninger, der er angivet i registreringsanmodningen for mulige kreditorer, beslutter en anmoder, om kreditoren skal modtages. Anmoderen kan se den indgående anmodning på listesiden **Anmodninger om registrering af mulig kreditor** i Finance and Operations.
+2. **Listeside med registreringsanmodning for mulige kreditorer** - Baseret på de oplysninger, der er angivet i registreringsanmodningen for mulige kreditorer, beslutter en anmoder, om kreditoren skal modtages. Anmoderen kan se den indgående anmodning på listesiden **Anmodninger om registrering af mulig kreditor**.
 3. **Arbejdsgang for brugerklargøring** – Når en anmoder har kontrolleret oplysningerne i den indgående anmodning og har besluttet at fortsætte modtagelsesprocessen, klargør brugeranmodningsarbejdsgangen den nye bruger og sender en mail med invitation til at acceptere kontaktpersonen som godkendt bruger af Microsoft Dynamics 365.
-4. **Guide til registrering af kreditorer** - Kreditorens kontaktperson logger på Finance and Operations ved hjælp af den nye brugerkonto. Han eller hun kører en kreditorregistreringsguide for at angive oplysninger som f.eks. adresser, forretningsoplysninger, indkøbskategorier og spørgeskemasvar.
+4. **Guide til registrering af kreditorer** - Kreditorens kontaktperson logger på ved hjælp af den nye brugerkonto. Han eller hun kører en kreditorregistreringsguide for at angive oplysninger som f.eks. adresser, forretningsoplysninger, indkøbskategorier og spørgeskemasvar.
 5. **Godkendelsesarbejdsgang** - Der oprettes en kreditoranmodning, der indeholder oplysningerne om registreringen. Denne kreditoranmodning sendes til en arbejdsgang og videresendes til gennemsyn og godkendelse.
 6. **Oprettelse af en kreditormaster og ændring af brugerrolle** – Når kreditoranmodningen er godkendt, oprettes en kreditorpost. Brugerkontoen for kreditorens kontaktperson har enten tilladelse til samarbejde med leverandøren eller er deaktiveret.
 
@@ -45,14 +45,14 @@ I følgende tabel vises de trin og roller, der er involveret i processen.
 |--------------------------|---|---|---|---|---|---|
 | System                   | Anmodningen om en ny kreditor importeres. | | | | | Når kreditoranmodningen er accepteret, oprettes kreditorposten. |
 | Anmoder | | Start modtagelsesprocessen. | | | Gennemse og accepter eller afvis kreditoranmodningen. | |
-| Administrator            | | | Opret en bruger i Finance and Operations og Microsoft Azure. | | | |
+| Administrator            | | | Opret en bruger i Supply Chain Management og Microsoft Azure. | | | |
 | Kreditors kontaktperson    | | | Send e-mail til kontaktpersonen. | Registrer oplysninger om kreditoren. | | |
 
-Du kan se en hurtig demonstration af processen til onboarding af kreditor i denne korte YouTube-video: [Onboarde en ny kreditor i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}).
+For en hurtig demonstration af processen til onboarding af kreditor kan du se denne korte YouTube-video om [Hvordan du onboarder en ny kreditor i Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Import af anmodning om registrering af mulig kreditor
 
-Registreringsanmodningen for den mulige kreditor er en enhed i Finance and Operations. Du kan konfigurere systemet til at importere data via denne enhed. 
+Registreringsanmodningen for den mulige kreditor er en enhed i Supply Chain Management. Du kan konfigurere systemet til at importere data via denne enhed. 
 
 I følgende tabel vises de oplysninger, som denne enhed indeholder, og som kan importeres.
 
@@ -65,18 +65,18 @@ I følgende tabel vises de oplysninger, som denne enhed indeholder, og som kan i
 | Kontaktpersonens fornavn  | Fornavnet på den person, der inviteres til at registrere kreditoroplysninger. |
 | Kontaktpersonens mellemnavn | Mellemnavnet på den person, der inviteres til at registrere kreditoroplysninger. |
 | Kontaktpersonens efternavn   | Efternavnet på den person, der inviteres til at registrere kreditoroplysninger. |
-| Kontaktpersonens e-mail       | Den e-mailadresse, der skal bruges til at oprette en ny bruger i Finance and Operations, og som vil blive registreret i lejerens Azure Active Directory (Azure AD)-konto. |
+| Kontaktpersonens e-mail       | Den mailadresse, der skal bruges til at oprette en ny bruger i Supply Chain Management, og som vil blive registreret i lejerens Azure Active Directory (Azure AD)-konto. |
 | Sendt dato               | Den dato, hvor anmodningen blev oprettet i et eksternt system. |
-| Juridisk enhed                 | Den juridiske enhed, hvor kreditoren anmoder om at blive kreditor. Denne værdi skal være en kode for en juridisk enhed, der er registreret i Finance and Operations. Hvis ingen værdi modtages under importprocessen, anvendes en værdi fra indkøbs- og forsyningsparametrene. |
+| Juridisk enhed                 | Den juridiske enhed, hvor kreditoren anmoder om at blive kreditor. Denne værdi skal være en kode for en juridisk enhed, der er registreret i Supply Chain Management. Hvis ingen værdi modtages under importprocessen, anvendes en værdi fra indkøbs- og forsyningsparametrene. |
 | Kreditortype                  | Kreditoren kan enten være en organisation eller en person. Kreditortypen bestemmer, hvordan kreditoren oprettes til slut. |
 
 Efter at anmodningen om registrering af den mulige kreditor er importeret, vises den på listesiden **Anmodning om registrering af mulig kreditor**. En anmoder kan invitere brugeren fra denne listeside. En brugeranmodning om klargøring af brugeren sendes til en arbejdsgang.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Afsendelse af en anmodning om mulig kreditorbruger
 
-Formålet med en mulig kreditorbrugeranmodning er, at klargøre den person, som sendte den oprindelige anmodning, så vedkommende kan logge på Finance and Operations ved hjælp af den e-mailkonto, som findes i anmodningen om registrering af mulig kreditor.
+Formålet med en mulig kreditorbrugeranmodning er at klargøre den person, som sendte den oprindelige anmodning, så vedkommende kan logge på Supply Chain Management ved hjælp af den mailkonto, som findes i anmodningen om registrering af mulig kreditor.
 
-Anmodningen om mulig kreditorbruger behandles af brugeranmodningsarbejdsgangen. Denne arbejdsgang kommunikerer via Azure AD B2B-samarbejde. Den opretter en bruger i Finance and Operations, der har de nødvendige sikkerhedsindstillinger.
+Anmodningen om mulig kreditorbruger behandles af brugeranmodningsarbejdsgangen. Denne arbejdsgang kommunikerer via Azure AD B2B-samarbejde. Den opretter en bruger i Supply Chain Management, der har de nødvendige sikkerhedsindstillinger.
 
 Nye brugere, der oprettes, har følgende sikkerhedsroller:
 
@@ -89,7 +89,7 @@ Oplysninger om konfigurationen af e-mailen og arbejdsgangen generelt finder du i
 
 ## <a name="vendor-registration"></a>Registrering af kreditor
 
-En mulig kreditorbruger, der logger på Finance and Operations, ser den første side i en kreditorregistreringsguide, hvor han eller hun kan angive kreditoroplysninger.
+En mulig kreditorbruger, der logger på Supply Chain Management, ser den første side i en kreditorregistreringsguide, hvor han eller hun kan angive kreditoroplysninger.
 
 Guiden afspejler konfigurationen af kreditoranmodningen. Det land eller område, hvor kreditoren handler, bestemmer, hvilke oplysninger der anmodes om i guiden, og hvilke oplysninger er obligatoriske.
 
@@ -119,7 +119,7 @@ Kreditoranmodninger er tilgængelige på siden **Brugeranmodninger om kreditorsa
 
 En kreditoranmodning indeholder de oplysninger, som den mulige kreditorbruger har angivet i kreditorregistreringsguiden.
 
-I anmodningen kan du gennemse kreditoroplysningerne og afgøre, om kreditoren skal gøres til registreret kreditor i Finance and Operations.
+I anmodningen kan du gennemse kreditoroplysningerne og afgøre, om kreditoren skal gøres til registreret kreditor.
 
 Kreditoranmodningen skal sendes til en arbejdsgang, og den skal sendes til de relevante korrekturlæsere og godkendere. Du kan finde grundlæggende oplysninger om, hvordan du kan konfigurere arbejdsgange i [Indkøbs- og forsyningsarbejdsgange](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Når en kreditoranmodning er godkendt, oprettes der en kreditorkonto, og status 
 
 Før du godkender en kreditoranmodning skal du på siden **Ny kreditor** i oversigtspanelet **Generelt** vælge **Kreditorgruppe** for at vælge en kreditorgruppe.
 
-Hvis den mulige kreditorbruger skal have adgang til Finance and Operations som en kreditorsamarbejdsbruger, der repræsenterer kreditoren, skal du indstille adgangsrettigheder for kreditorsamarbejde til **Ja**. Hvis du vil deaktivere den brugerkonto, som den mulige kreditor brugte til at blive registreret, skal du indstille denne rettighed til **Nej**.
+Hvis den mulige kreditorbruger skal have adgang til Supply Chain Management som en kreditorsamarbejdsbruger, der repræsenterer kreditoren, skal du indstille adgangsrettigheder for kreditorsamarbejde til **Ja**. Hvis du vil deaktivere den brugerkonto, som den mulige kreditor brugte til at blive registreret, skal du indstille denne rettighed til **Nej**.
 
 Hvis adgangstilladelsen for kreditorsamarbejdet er indstillet til **Ja**, sendes der en anmodning om at redigere brugerens roller, så brugeren har de roller, der er defineret for typen **Kreditor** i **Eksterne roller**, når kreditoranmodningen er godkendt. Hvis denne rettighed er indstillet til **Nej**, når kreditoranmodningen er godkendt, sendes der en anmodning til den inaktive bruger. I så fald skal arbejdsgangen om at deaktivere en brugeranmodning konfigureres.
 

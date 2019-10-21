@@ -1,6 +1,6 @@
 ---
-title: Synkronisere projektliste fra Finance and Operations til Field Service
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere projekter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+title: Synkronisere projektliste fra Supply Chain Management til Field Service
+description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere projekter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,51 +19,51 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 535094821ca7efa33bf40f2057fac8ffc17bb822
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: b74a7f0445b3bdad671da4c61e561bc0d9d80cd1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843547"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251586"
 ---
-# <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Synkronisere projektliste fra Finance and Operations til Field Service
+# <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synkronisere projektliste fra Supply Chain Management til Field Service
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere projekter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere projekter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering af forretningsprocesser mellem Finance and Operations og Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
-Følgende skabelon og underliggende opgaver bruges til at køre synkronisering af projekter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+Følgende skabelon og underliggende opgaver bruges til at synkronisere projekter fra Supply Chain Management til Field Service.
 
 **Skabelon i dataintegration**
-- Projekter (Fin and Ops til Field Service)
+- Projekter (Supply Chain Management til Field Service)
 
 **Opgave i dataintegrationsprojekt**
 - Projekter
 
 Følgende synkroniseringsopgaver kræves, før projektlister kan synkroniseres:
-- Konti (salg til Fin and Ops) 
+- Konti (Sales til Supply Chain Management) 
 
 ## <a name="entity-set"></a>Enhedssæt
-| Field Service           | Finance and Operations  |
+| Field Service           | Supply Chain Management  |
 |-------------------------|-------------------------|
 |msdynce_externalprojects | Projekter                |
 
 ## <a name="entity-flow"></a>Enhedsflow
-Projekter oprettes i Finance and Operations. Projekter med **Projekttype** indstillet til **Tid og materialer** og **Projektstadie** indstillet til **Under behandling** bliver synkroniseret til enheden **Eksternt projekt** i Field Service, herunder projektnummer, projektnavn, projektstadie og oplysninger om debitorkonti. Listen **Eksternt projekt** bruges til at parre arbejdsordrer i Field Service med Finance and Operations-projekter.
+Projekter oprettes i Supply Chain Management. Projekter med **Projekttype** indstillet til **Tid og materialer** og **Projektstadie** indstillet til **Under behandling** bliver synkroniseret til enheden **Eksternt projekt** i Field Service, herunder projektnummer, projektnavn, projektstadie og oplysninger om debitorkonti. Listen **Eksternt projekt** bruges til at parre arbejdsordrer i Field Service med projekter i Supply Chain Management.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning til Field Service
-Enheden **Eksternt projekt** får alle projekterne fra Finance and Operations. Feltet **Eksternt projekt** er føjet til enheden **Arbejdsordre**. Dette er et opslagsfelt, så hvis du mærker arbejdsordren til et projekt, bliver salgsordren forbundet med et projekt i Finance and Operations. Når **Systemstatus** ændrer **Åben - i gang (690,970,000)** til en højere status, låses feltet **Eksternt projekt**, og du kan ikke længere tilføje, fjerne eller ændre værdien.
+Enheden **Eksternt projekt** får alle projekterne fra Supply Chain Management. Feltet **Eksternt projekt** er føjet til enheden **Arbejdsordre**. Dette er et opslagsfelt, så hvis du mærker arbejdsordren til et projekt, bliver salgsordren forbundet med et projekt i Supply Chain Management. Når **Systemstatus** ændrer **Åben - i gang (690,970,000)** til en højere status, låses feltet **Eksternt projekt**, og du kan ikke længere tilføje, fjerne eller ændre værdien.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forudsætninger og tilknytningsopsætning
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="supply-chain-management"></a>Supply Chain Management
 Gør det muligt at spore ændringer for Dataenhed-projekter.
 
 ## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
 
 
-### <a name="projects-fin-and-ops-to-field-service-projects"></a>Projekter (Fin and Ops til Field Service): projekter
+### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekter (Supply Chain Management til Field Service): Projekter
 
 [![Skabelontilknytning i dataintegration](./media/FSProject1.png)](./media/FSProject1.png)

@@ -1,9 +1,9 @@
 ---
-title: Ofte stillede spørgsmål om integration af Dynamics 365 for Talent med Dynamics 365 for Finance and Operations
-description: I dette emne beskrives, hvilke data der synkroniseres i en integration af Talent og Finance and Operations.
+title: Ofte stillede spørgsmål om integration af Dynamics 365 Talent med Dynamics 365 Finance
+description: I dette emne beskrives, hvilke data der synkroniseres i en integration af Talent og Finance.
 author: andreabichsel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742697"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251008"
 ---
-# <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Ofte stillede spørgsmål om integration af Dynamics 365 for Talent med Dynamics 365 for Finance and Operations
+# <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Ofte stillede spørgsmål om integration af Dynamics 365 Talent med Dynamics 365 Finance
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder svar på almindelige spørgsmål om, hvilke data der synkroniseres, når Dynamics 365 for Talent integreres med Dynamics 365 for Finance and Operations.
+Dette emne indeholder svar på almindelige spørgsmål om, hvilke data der synkroniseres, når Dynamics 365 Talent integreres med Dynamics 365 Finance.
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkroniseres alle data eller bare nogle dataenheder?
 
-Med Core HR (Human Resources) synkroniseres et undersæt af dataene. Du kan finde en liste over alle enheder i [Integration fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+Med Core HR synkroniseres et undersæt af dataene. Du kan finde en liste over alle enheder i [Integration fra Dynamics 365 Talent til Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 I Attract og Onboard er alle data indbygget i Common Data Service.
 
@@ -40,15 +40,15 @@ I Attract og Onboard er alle data indbygget i Common Data Service.
 
 Skabeloner bruges som udgangspunkt. Du kan oprette din egen skabelon, men der skal altid bruges en skabelon ved oprettelse af et integrationsprojekt. Du kan finde flere oplysninger om dataintegrator (DI), skabeloner og projekter under [Integrer data i Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kan jeg tilknytte økonomiske dimensioner for at overføre mellem Talent og Finance and Operations?
+## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance"></a>Kan jeg tilknytte økonomiske dimensioner for at overføre mellem Talent og Finance?
 
 Økonomiske dimensioner findes ikke på nuværende tidspunkt i Common Data Service og er derfor ikke del af standardskabelonen. Denne enhed er planlagt, men i øjeblikket er der ingen versionstidslinje.
 
-For data i Finance and Operations, som ikke findes i Talent, kan du sammenkæde de to systemer ved hjælp af **Konfigurer links** i Talent. Du kan finde flere oplysninger om, hvordan du konfigurerer links mellem Talent og Finance and Operations, i [Nyheder eller ændringer i Dynamics 365 for Talent Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
+For data i Finance, som ikke findes i Talent, kan du sammenkæde de to systemer ved hjælp af **Konfigurer links** i Talent. Du kan finde flere oplysninger om, hvordan du konfigurerer links mellem Talent og Finance, i [Nyheder eller ændringer i Dynamics 365 Talent: Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
 
 ![Tilknyt økonomiske dimensioner](media/MapFinancialDimensions.png)
 
-## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Når jeg importerer medarbejdere, bliver de sommetider placeret blandt inaktive arbejdere i Finance and Operations. Hvorfor?
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Når jeg importerer medarbejdere, bliver de sommetider placeret blandt inaktive arbejdere i Finance. Hvorfor?
 
 Denne fejl kan opstå, hvis medarbejderne ikke har en aktiv post med ansættelsesoplysninger. Du kan løse dette ved at gå til **Personalestyring \> Medarbejdere \> Ansættelseshistorik \> Datoadministrator** og kontrollere, at der findes en aktiv post med ansættelsesoplysninger.
 
@@ -62,7 +62,7 @@ Ved hjælp af "Avanceret forespørgsel" kan du filtrere og omforme kildedata, f�
 
 ![Avanceret forespørgsel for aktive arbejdere](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
-## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kan jeg angive, hvilke felter der skal sendes til Finance and Operations for en bestemt enhed?
+## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kan jeg angive, hvilke felter der skal sendes til Finance for en bestemt enhed?
 
 Felter kan tilføjes eller fjernes fra integrationsopgaven. Ikke alle datafelter, der findes på Common Data Service-enheden, udfyldes fra Core HR.
 Yderligere data kan udfyldes via PowerApps.
@@ -75,7 +75,7 @@ Der kræves ingen speciel opsætning for undtagelseshåndtering. Dataintegrator 
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jeg konfigurere tovejsintegration?
 
-Nej, integration går i øjeblikket kun fra Talent til Finance and Operations. Der er dog en tilgængelig standardskabelon, som kan bruges til at sende data fra Talent til Finance and Operations.
+Nej, integration går i øjeblikket kun fra Talent til Finance and Operations. Der er dog en tilgængelig standardskabelon, som kan bruges til at sende data fra Talent til Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jeg tillade sletning af poster som en del af integrationen?
 
@@ -93,13 +93,13 @@ Når standardskabelonen bruges, importeres integrationsnøglerne automatisk. Det
 
 ## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a>Hvis jeg har N antal juridiske enheder, hvor arbejdere har ansættelse, skal jeg så oprette en tilknytning for hver af dem?
 
-Ja, du skal bruge et separat integrationsprojekt i dataintegrationen for hver juridisk enhed i Finance and Operations.
+Ja, du skal bruge et separat integrationsprojekt i dataintegrationen for hver juridiske enhed i Finance.
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Jeg har brug at overføre data, ikke der er en del af den standardskabelon, der leveres af Microsoft. Kan jeg gøre det?
 
 Ja, du kan tilføje felter i eller fjerne dem fra den eksisterende skabelon. Skabelonen kan ændres, så der medtages yderligere data fra andre Common Data Service-enheder. Enheden skal være i Common Data Service, hvis den skal medtages i skabelonen. 
 
-## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Jeg har netop oprettet nye Finance and Operations- og Talent-miljøer, og jeg får fejlmeddelelsen "Dataværdien overtræder integritetsbegrænsningerne". Hvorfor?
+## <a name="i-just-created-new-finance-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Jeg har netop oprettet nye Finance- og Talent-miljøer, og jeg får fejlmeddelelsen "Dataværdien overtræder integritetsbegrænsningerne". Hvorfor?
 
 Årsager til denne fejl kan omfatte:
 
@@ -109,9 +109,9 @@ Ja, du kan tilføje felter i eller fjerne dem fra den eksisterende skabelon. Ska
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Hvis der er kørselsfejl, og medarbejder-id'et ikke synkroniseres, hvordan finder jeg så historikjobbet med den mislykkede medarbejderpost?
 
-Dataintegrator opretter flere projekter i Finance and Operations. Forholdet mellem Dataintegrator-opgaven og Finance and Operations-projektet er 1 til 1.
+Dataintegrator opretter flere projekter i Finance. Forholdet mellem Dataintegrator-opgaven og Finance-projektet er 1 til 1.
 
-Spor tiden fra historikken for Dataintegrator-udførelse, og se efter indeks -1-projektet i Finance and Operations. Hvis opgavenummeret er 9 i Dataintegrator, er indekset i Finance and Operations 8.
+Spor tiden fra historikken for Dataintegrator-udførelse, og se efter indeks -1-projektet i Finance. Hvis opgavenummeret er 9 i Dataintegrator, er indekset i Finance 8.
 
 1. Hent opgaveindekset fra Dataintegrator (i dette eksempel er det "9").
 
@@ -121,13 +121,13 @@ Spor tiden fra historikken for Dataintegrator-udførelse, og se efter indeks -1-
 
 ![Spor projektets kørselstidspunkt](media/CaptureTimeOfExecution.png)
 
-3. Identificer indeks - 1 i Finance and Operations. I dette eksempel matcher projektet med suffikset "8" og kørselstidspunkt for indeks "0" udførelsestidspunktet i trin 2.
+3. I Finance skal du identificere indeks - 1. I dette eksempel matcher projektet med suffikset "8" og kørselstidspunkt for indeks "0" udførelsestidspunktet i trin 2.
 
 ![Identifikation af indeks](media/IdentifyIndex.png)
 
-## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Jeg kan ikke se dataene i Finance and Operations efter at have integreret Talent og Finance and Operations. Hvad skal jeg gøre?
+## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Jeg kan ikke se dataene i Finance efter at have integreret Talent og Finance. Hvad skal jeg gøre?
 
-Integrationen i Finance and Operations er en totrinsproces. Kontroller først, at Talent-dataene er opdaterede og tilgængelige i Common Data Service. Dette er en synkronisering i nær-realtid, som du kan kontrollere i PowerApps ved at se på dataene i dataenhederne.
+Integrationen i Finance er en totrinsproces. Kontroller først, at Talent-dataene er opdaterede og tilgængelige i Common Data Service. Dette er en synkronisering i nær-realtid, som du kan kontrollere i PowerApps ved at se på dataene i dataenhederne.
 
 ![Data i Common Data Service](media/DataInCDS.png)
 
@@ -135,24 +135,24 @@ Hvis dataene ikke vises som forventet i Common Data Service, skal du kontrollere
 
 Hvis enheden understøttes, og dataene er tilgængelige i Common Data Service, skal du kontrollere, at tilknytningen i dataintegrator er korrekt. Hvis integratortilknytningen ser ud til at være i orden, skal du kontrollere, at datastyringsjobbet er kørt korrekt. Fejl kan opstå under kørsel af batchjob. Du kan finde flere oplysninger om datastyring i [Datastyring](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
-## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Adresserne for mine medarbejdere er forkerte, når jeg har importeret dem i Finance and Operations. Hvad skal jeg gøre?
+## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresserne for mine medarbejdere er forkerte, når jeg har importeret dem i Finance. Hvad skal jeg gøre?
 
-Nummerserien for **Lokations-id** bruger det samme mønster i Finance and Operations som i Talent. Nummerserien skal være unik på begge sider, så der ikke opstår adressekollisioner under integrationen af data fra Common Data Service til Finance and Operations.
+Nummerserien for **Lokations-id** bruger det samme mønster i Finance og Talent. Nummerserien skal være unik på begge sider, så der ikke opstår adressekollisioner under integrationen af data fra Common Data Service til Finance and Operations.
 
-Ved implementering af Talent skal du kontrollere, at nummerserierne ikke de samme i Talent og Finance and Operations. Kontroller, at alle nummerserier ikke er ens, hvor data kan vedligeholdes i begge systemer.
+Ved implementering af Talent skal du kontrollere, at nummerserierne ikke er de samme i Talent og Finance. Kontroller, at alle nummerserier ikke er ens, hvor data kan vedligeholdes i begge systemer.
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Når jeg opretter mit forbindelsessæt, kan jeg ikke se forbindelsen i rullelisten Forbindelse. Hvad skal jeg gøre?
 
-Sørg for, når du opretter forbindelser, at vælge Dynamics 365 for Finance and Operations (i øjeblikket som prøveversion) og Common Data Service.
+Sørg for, når du opretter forbindelser, at vælge Dynamics 365 Finance og Common Data Service.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Når jeg synkroniserer ansættelser, vises fejlmeddelelserne "CompanyInfo_FK findes ikke", eller "Værdien '31/12/2154 23:59:59' i feltet 'Slutdato for ansættelse' bliver ikke fundet i den relaterede tabel 'Ansættelse'". Hvad skal jeg gøre?
 
-Kontroller, at det er de korrekte juridiske enheder, du opretter tilknytning til. Synkroniseringen af en juridisk enhed er ikke en del af standardskabelonen, så det forventes, at de enkelte juridiske enheder, der findes i Talent og Common Data Service, også findes i Finance and Operations.
+Kontroller, at det er de korrekte juridiske enheder, du opretter tilknytning til. Synkroniseringen af en juridisk enhed er ikke en del af standardskabelonen, så det forventes, at de enkelte juridiske enheder, der findes i Talent og Common Data Service, også findes i Finance.
 Kontroller også, at det er de korrekte juridiske enheder for det tilknyttede forbindelsessæt, du vælger.
 
-## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Når jeg har oprettet projektet, ser felttilknytningen for Finance and Operations ud til at være tom. Hvad skal jeg gøre?
+## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Når jeg har oprettet projektet, ser felttilknytningen for Finance ud til at være tom. Hvad skal jeg gøre?
 
-Opdater dataenhederne i Finance and Operations ved at gå til **Datastyring \> Rammeparametre \> Indstillinger for enhed \> Opdater liste over enheder.** Dette tager et par minutter, og derefter bør du kunne se disse tilknytninger. Dette problem opstår, når der oprettes nye projekter.
+Opdater dataenhederne i Finance ved at gå til **Datastyring \> Rammeparametre \> Indstillinger for enhed \> Opdater liste over enheder.** Dette tager et par minutter, og derefter bør du kunne se disse tilknytninger. Dette problem opstår, når der oprettes nye projekter.
 
 ![Manglende felttilknytning](media/MissingFieldMapping.png)
 

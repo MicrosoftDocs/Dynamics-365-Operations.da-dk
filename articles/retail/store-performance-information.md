@@ -1,6 +1,6 @@
 ---
 title: Analysere butikperformance
-description: Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Microsoft Dynamics 365 for Retail-data.
+description: Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Dynamics 365 Retail-data.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b2ea6ad2e3d9589face06cd5f950973209c17d41
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569257"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017776"
 ---
 # <a name="analyze-store-performance"></a>Analysere butikperformance
 
 [!include [banner](includes/banner.md)]
 
-Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Microsoft Dynamics 365 for Retail-data.
+Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Dynamics 365 Retail-data.
 
-Som en del af Dynamics 365 for Retail kan brugere undersøge butikperformance i realtid på tværs af forskellige niveauer i organisationshierarkiet over en valgt periode ved at åbne den færdiglavede rapport **Kanaloversigt** fra en af følgende placeringer:
+Som en del af Retail kan brugerne undersøge butiksperformance i realtid på tværs af forskellige niveauer i organisationshierarkiet over en valgt periode ved at åbne standardrapporten **Kanaloversigt** fra en af følgende placeringer:
 
 - Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Kanaloversigtsrapport**
 - Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Kanaloversigtsrapport**

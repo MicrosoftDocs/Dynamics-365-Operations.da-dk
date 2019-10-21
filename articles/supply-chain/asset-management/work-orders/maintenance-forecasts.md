@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a416bbb79be3f25998d3c0da8d231d0df808685
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875570"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024493"
 ---
 # <a name="maintenance-forecasts"></a>Vedligeholdelsesprognoser
 
@@ -104,7 +104,7 @@ Der er tre måder at tilføje varer i en arbejdsordres vedligeholdelsesprognose:
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk opdatering af prognoser for arbejdsordrer
 
-I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdsordrebudgetter for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler i Dynamics 365 for Finance and Operations. Dette gøres for at sikre, at de seneste kostpriser altid bruges i dine prognoser for arbejdsordrer. Det er også muligt at foretage lignende opdateringer af [budgetter for vedligeholdelsesjobtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdsordrebudgetter for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler. Dette gøres for at sikre, at de seneste kostpriser altid bruges i dine prognoser for arbejdsordrer. Det er også muligt at foretage lignende opdateringer af [budgetter for vedligeholdelsesjobtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Klik på **Styring af aktiver** > **Periodisk** > **Prognose** > **Opdater prognose for arbejdsordre**.
 

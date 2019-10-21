@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (9. juli 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (9. juli 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/09/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e5bb02a7128cb920a79a5f04ac910be205aeed41
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856371"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023947"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-9-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (9. juli 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (9. juli 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
@@ -48,9 +48,9 @@ Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard
 
 Ændringer, der er beskrevet i dette afsnit, gælder for build-nummer 8.1.2374.
 
-### <a name="platform-update-28"></a>Platform update 28
+### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 til Finance and Operations
 
-Du kan finde yderligere oplysninger om platformsopdatering 28 under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations-platformsopdatering 28 (juli 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Du kan finde yderligere oplysninger om Platform update 28 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 28 (juli 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Enhedsunderstøttelse i Common Data Service af brugerdefinerede felter 
 

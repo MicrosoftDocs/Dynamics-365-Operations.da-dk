@@ -1,13 +1,13 @@
 ---
 title: Udvide Talent ved hjælp af PowerApps og Microsoft Flow - eksempelscenarier
-description: Dette emne beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 for Talent ved hjælp af Microsoft PowerApps og Microsoft Flow.
+description: Dette emne beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 Talent ved hjælp af Microsoft PowerApps og Microsoft Flow.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781436"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008053"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Udvide Talent ved hjælp af PowerApps og Microsoft Flow - eksempelscenarier
 
-Dette emne beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 for Talent ved hjælp af Microsoft PowerApps og Microsoft Flow. Du kan importere løsningspakken, der er tilknyttet hvert eksempel, til dit PowerApps-miljø. Du kan dernæst anvende pakkerne enten som vejledning eller som udgangspunktet for at implementere scenarier, der er anvendelige for din organisation.
+Dette emne beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 Talent ved hjælp af Microsoft PowerApps og Microsoft Flow. Du kan importere løsningspakken, der er tilknyttet hvert eksempel, til dit PowerApps-miljø. Du kan dernæst anvende pakkerne enten som vejledning eller som udgangspunktet for at implementere scenarier, der er anvendelige for din organisation.
 
 > [!IMPORTANT]
 > Såfremt du ønsker at anvende de i dette emne beskrevne skabeloner og appen "som de er", skal du afprøve dem for at sikre dig, at de omfatter alle de scenarier, der er specifikke for din implementering.
@@ -61,7 +61,7 @@ Skabelonen **Påbegyndelse og udtræk af de parametre, der er overført til Powe
 
 Denne skabelon kan anvendes til at hente en kandidats vurderingsformular, således at en ansættelsesansvarlig kan gennemgå den vurdering, kandidaten har udfyldt.
 
-Apps, der udvikles ved hjælp af PowerApps, kan integreres i jobskabelonen i Attract.
+Apps, der er oprettet ved hjælp af PowerApps, kan integreres i jobskabelonen i Attract.
 
 Du kan downloade skabelonen **Påbegyndelse og udtræk af parametre, der overføres til PowerApps** og "Brugertilpasset enhedsstruktur" i Microsoft Download Center ved hjælp af følgende link: [Påbegyndelse og udtræk af parametre, der overføres til PowerApps](https://go.microsoft.com/fwlink/?linkid=2081991).
 
@@ -79,7 +79,7 @@ Skabelonen **Proces – E-mailbesked** kan anvendes i scenarier omhandlende e-ma
 
 Denne skabelon kan udvides til at spore ændringer i kandidatstadiet i hele rekrutteringsprocessen og til at sende beskeder til ansættelsesteamet og kandidaten.
 
-Der kan generelt set, for de enheder, som er lagret i Common Data Service, konfigureres processer til at sende beskeder vedrørende hændelser, der finder sted i Core HR, Attract eller Dynamics 365 Talent: Onboard.
+Der kan generelt set, for de enheder, som er lagret i Common Data Service, konfigureres processer til at sende beskeder vedrørende hændelser, der finder sted i Core HR, Attract eller Onboard.
 
 Du kan downloade skabelonen **Proces – E-mailbesked** i Microsoft Download Center ved hjælp af følgende link: [Proces – E-mailbesked](https://go.microsoft.com/fwlink/?linkid=2082103).
 
@@ -106,7 +106,7 @@ Du kan bruge appen Henvisning til at føje kandidater til en delt talentpulje. D
 
 Du kan integrere denne app i Medarbejderselvbetjening (ESS) for at sende henvisninger, eller du kan bruge den som et link i firmaportalen og køre den som en fritstående app.
 
-Du kan downloade **appen Henvisning** ved at gå til [Dynamics 365 for Talent-udvidelsesløsning: appen Henvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importere denne app og tilpasse den for at tilføje yderligere funktioner.
+Du kan downloade **appen Henvisning** ved at gå til [Dynamics 365 Talent-udvidelsesløsning: appen Henvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importere denne app og tilpasse den for at tilføje yderligere funktioner.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

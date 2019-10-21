@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560295"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250570"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategi for problemløser for produktkonfiguration
 
@@ -45,7 +45,7 @@ Konceptet for strategi for problemløser består nu af følgende strategier:
 
 En model til produktkonfiguration kan formuleres som et [begrænsningsbaseret problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Microsoft Solver Foundation (MSF) indeholder to typer strategier for problemløser til at løse CSP'er, der kan bruges fra produktkonfigurationsmodeller. Disse strategier for problemløser er afhængige af [heuristik](https://techterms.com/definition/heuristic), som bruges til at bestemme den rækkefølge, som variablerne i CSP'erne anvendes i, når problemet beregnes. Heuristik kan påvirke ydeevnen betydeligt, når et problem eller en klasse af problemer beregnes.
 
-I Finance and Operations bestemmer strategien for problemløser for produktkonfigurationsmodeller, hvilken problemløser der bruges sammen med heuristik. Strategierne **Standard**, **Først minimale domæner**, og **Oppefra og ned** bruger de to problemløsere fra MSF, mens strategien **Z3** bruger Z3-problemløseren. 
+Strategien for problemløser til produktkonfigurationsmodeller bestemmer, hvilken problemløser der bruges sammen med heuristik. Strategierne **Standard**, **Først minimale domæner**, og **Oppefra og ned** bruger de to problemløsere fra MSF, mens strategien **Z3** bruger Z3-problemløseren. 
 
 Undersøgelse af virkelige kundeimplementeringer har vist, at en ændring i strategien for problemløser for en model til produktkonfiguration kan reducere svartiden fra minutter til millisekunder. Derfor er det indsatsen værd at prøve forskellige strategier for problemløser for at finde den mest effektive strategi for din model til produktkonfiguration.
 

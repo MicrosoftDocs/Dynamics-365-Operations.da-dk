@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 for Talent (20. marts 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+title: Nyheder eller ændringer i Dynamics 365 Talent (20. marts 2019)
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d316aff83bd9f60f054a970e223777db5e214adb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741617"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025996"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-20-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent (20. marts 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (20. marts 2019)
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent.
+I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ændringer i Attract
 
@@ -80,7 +80,7 @@ Der er foretaget ændringer for at løse et problem, som opstår i forbindelse m
 I mange organisationer har de ansvarlige for kompensationer og frynsegoder muligvis kun har adgang til visse kompensationsposter. Disse kan være til ledere eller medarbejdere i bestemte områder. Med denne ændring kan Personale administrere og vedligeholde kompensationsplaner for forskellige medarbejdergrupper i organisationen. Du kan tildele sikkerhedsroller til faste og variable planer, som bestemmer adgangen til planerne og medarbejderdata tilknyttet til planerne, såsom løn eller bonusposter. Alene roller med den godkendte adgang kan behandle kompensation for de pågældende medarbejdere.
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
-Med platformsopdatering 24 kan brugerne oprette påmindelsesregler, som automatisk udsender e-mailbeskeder til kontaktpersoner, når de udløses af en hændelse.
+Med Platform update 24 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk udsender mailbeskeder til kontakter, når beskeder udløses af en hændelse.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Duplikerede medarbejderkontroller: ændringer i grænsefladen
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. For at undgå at forstyrre indtastningen af data åbner dubletformularen ikke automatisk.

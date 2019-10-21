@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 03e090633276cd264ad03f561ddb425a9816357e
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847499"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024631"
 ---
 # <a name="create-maintenance-requests"></a>Oprette vedligeholdelsesanmodninger
 
@@ -41,7 +41,7 @@ Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninge
 2. Vælg **Ny**.
 3. Vælg typen af vedligeholdelsesanmodning i feltet **Vedligeholdelsesanmodningstype** i dialogboksen **Opret anmodning**. Der foreslås en standardtype.
 4. I feltet **Beskrivelse** skal du angive et navn eller en titel, der kort beskriver vedligeholdelsesanmodningen.
-5. I felterne **Arbejdssted** og **Aktiv** skal du vælge et arbejdssted eller et aktiv eller en kombination af et arbejdssted og et aktiv, som du har brug for. Du kan oprette en vedligeholdelsesanmodning uden at vælge et aktiv, og aktivet kan føjes til vedligeholdelsesanmodningen senere. Hvis den vedligeholdelsesarbejder, der er logget på Microsoft Dynamics 365 for Finance and Operations, er relateret til en ressource, der er relateret til et aktiv, er feltet **Aktiv** automatisk angivet.
+5. I felterne **Arbejdssted** og **Aktiv** skal du vælge et arbejdssted eller et aktiv eller en kombination af et arbejdssted og et aktiv, som du har brug for. Du kan oprette en vedligeholdelsesanmodning uden at vælge et aktiv, og aktivet kan føjes til vedligeholdelsesanmodningen senere. Hvis den vedligeholdelsesarbejder, der er logget på, er relateret til en ressource, der er relateret til et aktiv, er feltet **Aktiv** automatisk angivet.
 
     Hvis der allerede er knyttet en vedligeholdelsesanmodning til det valgte aktiv, vises der en meddelelseslinje øverst i dialogboksen **Opret anmodning** for at give dig besked om id'et for den eksisterende vedligeholdelsesanmodning. En meddelelseslinje giver dig også besked, hvis aktivet er dækket af en garantiaftale.
 

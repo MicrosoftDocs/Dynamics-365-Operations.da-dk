@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550064"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018422"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Oprette og køre out of box-rapporter
 
@@ -43,7 +43,7 @@ Det demodatafirma, der bruges til at oprette denne post, er USRT. Denne registre
 5. Indtast en dato i feltet Til dato.
 6. Klik på rullelisten i feltet Kanal for at åbne opslaget.
 7. Vælg "Contoso Retail\Contoso Retail USA\Central\Houston" i træet.
-    * Dette viser standardhierarkiet for detailorganisationen med henblik på detailrapportering.   Gå til Virksomhedsadministration > Organisationer > Formål med organisationshierarkier, og vælg Detailrapportering, og kontrollér under Tildelte hierarkier det hierarkinavn, som standardkolonnen er markeret for.      Som en del af demodata (bruges til denne opgaveregistrering) vil du se, at Detailbutikker efter område er standardorganisationshierarkiet for formål med detailrapportering.     
+    * Dette viser standardhierarkiet for detailorganisationen med henblik på detailrapportering.   Gå til Virksomhedsadministration > Organisationer > Formål med organisationshierarkier, og vælg Detailrapportering, og kontrollér under Tildelte hierarkier det hierarkinavn, som standardkolonnen er markeret for. Som en del af demodata (bruges til denne opgaveregistrering) vil du se, at Detailbutikker efter område er standardorganisationshierarkiet for formål med detailrapportering.     
 8. Klik på OK.
 9. Vælg en indstilling i feltet Vis.
 10. Vælg en indstilling i feltet Efter.
@@ -55,7 +55,7 @@ Det demodatafirma, der bruges til at oprette denne post, er USRT. Denne registre
 3. Indtast en dato i feltet Til dato.
 4. Klik på rullelisten i feltet Kanal for at åbne opslaget.
 5. Vælg "Contoso Retail\Contoso Retail USA\West\Seattle" i træet.
-    * Dette viser standardhierarkiet for detailorganisationen med henblik på detailrapportering.   Gå til Virksomhedsadministration > Organisationer > Formål med organisationshierarkier, og vælg Detailrapportering, og kontrollér under Tildelte hierarkier det hierarkinavn, som standardkolonnen er markeret for.      Som en del af demodata (bruges til denne opgaveregistrering) vil du se, at Detailbutikker efter område er standardorganisationshierarkiet for formål med detailrapportering.     
+    * Dette viser standardhierarkiet for detailorganisationen med henblik på detailrapportering.   Gå til Virksomhedsadministration > Organisationer > Formål med organisationshierarkier, og vælg Detailrapportering, og kontrollér under Tildelte hierarkier det hierarkinavn, som standardkolonnen er markeret for. Som en del af demodata (bruges til denne opgaveregistrering) vil du se, at Detailbutikker efter område er standardorganisationshierarkiet for formål med detailrapportering.     
 6. Klik på OK.
 7. Klik på OK.
 
