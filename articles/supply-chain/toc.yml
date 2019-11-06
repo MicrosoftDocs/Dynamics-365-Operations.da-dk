@@ -36,12 +36,14 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oprette og automatisere test af brugeraccept
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Installer et demomiljø
+            - name: Installere et demomiljø
               href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Overvejelser i forbindelse med installation
               items:
                 - name: Installationsindstillinger
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sammenligning af funktioner i skyen og i det lokale miljø
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skyinstallation
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemkrav til skyinstallationer
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nyheder eller ændringer
               items:
-                - name: Startside for nyheder eller ændringer
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Funktioner i prøveversion i Finance and Operations 10.0.6 (november 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations-apps 10.0.5 (oktober 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations 10.0.4 (juli 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Visningsfunktioner i Supply Chain Management version 10.0.7 (december 2019)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (november 2019)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Nyheder eller ændringer i tidligere versioner
+                  items:
+                    - name: Nyheder eller ændringer på startside for Finance and Operations
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations-apps 10.0.5 (oktober 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations 10.0.4 (juli 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Fjernede eller udfasede funktioner
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'AX 2012-funktioner, der er udsat'
@@ -1687,8 +1693,6 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Styre forbrug af råmaterialer ved hjælp af rydningsprincipper
                       href: production-control/flushing-principles.md
-                    - name: Cross-docking fra produktionsordrer til forsendelsesområder
-                      href: production-control/cross-docking-opportunities.md
                     - name: Angive udlagringslokationen for produktionen for færdigvarer
                       href: production-control/production-output-location.md
                     - name: Færdigmelde styklister
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Udskudt behandling af lagerstedsarbejde
                   href: warehousing/deferred-put.md
+            - name: Cross-docking
+              items:
+                - name: Cross-docking fra produktionsordrer til forsendelsesområder
+                  href: production-control/cross-docking-opportunities.md
+                - name: Automatisk frigivelse af forsendelse til cross-docking
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Delvis frigivelse og delvis forsendelse
               items:
                 - name: Delvis forsendelse af en transportlast
@@ -2311,6 +2321,8 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: Konfigurere vareomfordeling for kort plukning
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: Annullere lagerstedsarbejde for undtagelseshåndtering
+                  href: warehousing/cancel-warehouse-work.md
             - name: Lageroptælling
               items:
                 - name: Lageroptællingsårsagskoder
