@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b1621cf0f1e47d7bd5fe2fa0b41fbcd61f14def
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 026b34934d6527416a4632d8e1aee76a8836dcb0
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887199"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652005"
 ---
 # <a name="dispatch-work-order"></a>Udsende arbejdsordre
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Du kan planlægge en arbejdsordre eller arbejdsordrejob til én arbejder ved hjælp af funktionen **Udsend**.
 
@@ -45,16 +45,18 @@ Du kan planlægge en arbejdsordre eller arbejdsordrejob til én arbejder ved hj�
 
 6. I feltet **Planlagt start** kan du redigere startdato og -tidspunkt, hvis det er nødvendigt.
 
-7. Hvis planlægningsprocessen skal overholde kapacitetsbegrænsningerne for ressourcer, der allerede er planlagt på andre job, skal du sørge for, at til/fra-knapperne **Aktiv**, **Værktøj** og **Arbejder** er indstillet til "Ja". Hvis du vil have vist detaljerede oplysninger om planlægningsprocessen, skal du vælge "Ja" på knappen **Detaljeret**. Det betyder, at der vises detaljerede oplysninger om de beregnede scorer for arbejdsordren i infologgen.
+7. Hvis planlægningsprocessen skal overholde kapacitetsbegrænsningerne for ressourcer, der allerede er planlagt på andre job, skal du sørge for, at til/fra-knapperne **Aktiv**, **Værktøj** og **Arbejder** er indstillet til **Ja**. Hvis du vil have vist detaljerede oplysninger om planlægningsprocessen, skal du vælge **Ja** på knappen **Detaljeret**. Det betyder, at der vises detaljerede oplysninger om de beregnede scorer for arbejdsordren i infologgen.
 
-8. Vælg "Ja" på til/fra-knappen **Ignorer tidsplan** at ignorere lukkede dage i kalenderen (gælder for aktiv, arbejder og værktøjer). Vælg "Ja" på til/fra-knappen **Ignorer planlagt udførelse** for at ignorere begrænsninger, der muligvis er valgt på arbejdsordren vedrørende planlægning. Se afsnittet [Planlagt udførelse](../setup-for-work-orders/scheduled-execution.md) for at få oplysninger om opsætningen af planlagt udførelse.
+8. Vælg **Ja** på til/fra-knappen **Ignorer tidsplan** for at ignorere lukkede dage i kalenderen (gælder for aktiv, arbejder og værktøjer). Vælg **Ja** på til/fra-knappen **Ignorer planlagt udførelse** for at ignorere begrænsninger, der muligvis er valgt på arbejdsordren vedrørende planlægning. 
 
-9. Klik på **OK**. Arbejdsordrens livscyklustilstand opdateres automatisk til den "Planlagte" livscyklustilstand, der er angivet for **Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Livscyklusmodeller**.
+    Se afsnittet [Planlagt udførelse](../setup-for-work-orders/scheduled-execution.md) for at få oplysninger om opsætningen af planlagt udførelse.
+
+9. Klik på **OK**. Arbejdsordrens livscyklustilstand opdateres automatisk til den **Planlagte** livscyklustilstand, der er angivet for **Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Livscyklusmodeller**.
 
 I figuren herunder vises et eksempel på udsendelsesvalg i dialogboksen **Planlægning arbejdsordre**.
 
 ![Figur 1](media/04-work-order-scheduling.png)
 
->[!NOTE]
->Hvis du vil slette tidsplanen på en arbejdsordre, skal dette gøres ved at vælge arbejdsordren i **Alle arbejdsordrer** og klikke **Slet tidsplan** under fanen **Generelt**. Husk at opdatere arbejdsordrens livscyklustilstand manuelt, hvis du sletter tidsplanen.
+[!NOTE]
+Hvis du vil slette tidsplanen på en arbejdsordre, skal du vælge arbejdsordren i **Alle arbejdsordrer** og klikke på **Slet tidsplan** under fanen **Generelt**. Husk at opdatere arbejdsordrens livscyklustilstand manuelt, hvis du sletter tidsplanen.
 

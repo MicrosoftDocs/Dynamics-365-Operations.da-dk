@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887222"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652143"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Dette emne beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver. Det nødvendige antal timer for en arbejdsordre defineres af summen af budgetterede timer for job på arbejdsordrer minus bogførte timer. Hvis der kræves mere tid, skal prognosen i arbejdsordren justeres tilsvarende. I **Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer** kan du få vist eller redigere prognoser på en arbejdsordre ved at vælge **Prognose** under fanen **Arbejdsordre**. Når der er oprettet og forkalkuleret arbejdsordrer, er næste trin at fordele de påkrævede vedligeholdelsesarbejdere og -værktøjer, der skal til for at fuldføre arbejdsordrerne.
+Dette emne beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver. 
+
+Det nødvendige antal timer for en arbejdsordre defineres af summen af budgetterede timer minus bogførte timer. Hvis der kræves mere tid, skal prognosen justeres tilsvarende. I **Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer** kan du se eller redigere prognoser på en arbejdsordre ved at vælge arbejdsordren og klikke på **Prognose** under fanen **Arbejdsordre**. Når der er oprettet og forkalkuleret arbejdsordrer, er næste trin at allokere de påkrævede vedligeholdelsesarbejdere og -værktøjer, der skal til for at fuldføre arbejdsordrerne.
 
 Det er kun arbejdsordrer med en livscyklustilstand, der kan planlægges. Tillad planlægning er konfigureret i **Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Livscyklustilstande** >  oversigtspanelet **Generelt** > til/fra-knappen **Tillad planlægning**.
 
@@ -43,8 +45,8 @@ Det er kun arbejdsordrer med en livscyklustilstand, der kan planlægges. Tillad 
 
 4. I dialogboksen **Planlæg arbejdsordrer** kan du tilføje valg angående forventet startdato og serviceniveau, hvis det er nødvendigt. Hvis planlægningsprocessen skal overholde kapacitetsbegrænsningerne for ressourcer, der allerede er planlagt for andre job, skal du sørge for, at til/fra-knapperne **Aktiv**, **Værktøj** og **Arbejder** er indstillet til "Ja".
 
->[!NOTE]
->Hvis du indstiller knapperne **Aktiv**, **Værktøj** og **Arbejder** til "Nej", bliver eksisterende reservationer ignoreret. I infologgen vises en liste over overlappende tidsplaner for arbejdsordrer, og du kan klikke på meddelelserne for at åbne en arbejdsordre og omplanlægge, hvis det er nødvendigt.
+    [!NOTE]
+    Hvis du indstiller knapperne **Aktiv**, **Værktøj** og **Arbejder** til "Nej", bliver eksisterende reservationer ignoreret. I infologgen vises en liste over overlappende tidsplaner for arbejdsordrer, og du kan klikke på meddelelserne for at åbne en arbejdsordre og omplanlægge, hvis det er nødvendigt.
 
 5. Hvis du vil have vist detaljerede oplysninger om planlægningsprocessen, skal du vælge "Ja" på knappen **Detaljeret**. Det betyder, at der vises detaljerede oplysninger om de beregnede scorer for arbejdsordrerene og vedligeholdelsesarbejderne i infologgen.
 
@@ -110,9 +112,11 @@ De rangeringsscorer, der vedrører beregning af, hvilke vedligeholdelsesarbejder
 | Startdato for medarbejder               | For hver dato, som den planlagte startdato er senere end den forventede startdato, fratrækkes scoren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!NOTE]
->Hvis en score er indstillet til "0", beregnes den ikke. Dette er nyttigt, hvis du f.eks. ikke vil inkludere den ansvarlige arbejder i din planlægning.
+>Hvis en score er indstillet til "0", beregnes den ikke. Dette er nyttigt, hvis du f.eks. ikke vil inkludere en ansvarlig arbejder i din planlægning.
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Kompetencer, der bruges i planlægning af arbejdsordrer
 
-Der kan oprettes krav til færdigheder og certifikater på vedligeholdelsesjobtyper (**Styring af aktiver** > **Opsætning** > **Job** > **Vedligeholdelsesjobtyper**) og fag med relevans for vedligeholdelsesjob (**Styring af aktiver** > **Opsætning** > **Job** > **Vedligeholdelsesjobfag**). Du kan vælge vedligeholdelsesjobtyper og vedligeholdelsesjobfag på arbejdsordrer. Hvis du har valgt færdigheder eller certifikater på en vedligeholdelsesjobtype eller vedligeholdelsesjobfag, og denne type eller dette fag bruges på et job i en arbejdsordre, er det kun vedligeholdelsesarbejdere med matchende færdigheder og certifikater, der planlægges til at arbejde på arbejdsordren.
+Der kan oprettes krav til færdigheder og certifikater på vedligeholdelsesjobtyper (**Styring af aktiver** > **Opsætning** > **Job** > **Vedligeholdelsesjobtyper**) og fag med relevans for vedligeholdelsesjob (**Styring af aktiver** > **Opsætning** > **Job** > **Vedligeholdelsesjobfag**). 
+
+Du kan vælge vedligeholdelsesjobtyper og vedligeholdelsesjobfag på arbejdsordrer. Hvis du har valgt færdigheder eller certifikater på en vedligeholdelsesjobtype eller vedligeholdelsesjobfag, og denne type eller dette fag bruges på et job i en arbejdsordre, er det kun vedligeholdelsesarbejdere med matchende færdigheder og certifikater, der planlægges til at arbejde på arbejdsordren.
 

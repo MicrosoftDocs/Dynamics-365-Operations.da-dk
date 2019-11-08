@@ -3,7 +3,7 @@ title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4b1bd7b869b68f82ce8056ac9f87a0d3bdce4102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190873"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658661"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -37,9 +37,11 @@ Med traditionel brugertilpasning havde brugerne kun et enkelt sæt tilpasninger 
 
 -    Visninger, der oprettes til bestemte sidetyper, kan også indeholde brugertilføjede filtre eller sorteringer, som giver brugerne mulighed for hurtigt at vende tilbage til almindeligt filtrerede datasæt. Se afsnittet [Hvilke sider understøtter visninger](saved-views.md#what-pages-support-views) for at få yderligere oplysninger. 
 
--    Visninger kan publiceres til sikkerhedsroller, hvilket betyder, at alle brugere med den pågældende rolle kan få adgang til og bruge denne visning, uanset brugerens øvrige tilpasningsmuligheder. Denne publiceringsfunktion giver organisationer mulighed for at definere de standardvisninger i firmaet, der er optimeret til deres virksomhed. Yderligere oplysninger finder du i afsnittet [Administrere tilpasninger på organisationsniveau med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+-    Visninger kan publiceres til brugere i bestemte sikkerhedsroller og bestemte juridiske enheder. Derfor kan alle brugere, der har en bestemt rolle i en angivet juridisk enhed, få adgang til at bruge denne visning, også selvom den pågældende bruger muligvis ikke kan tilpasse den. Denne publiceringsfunktion giver organisationer mulighed for at definere de standardvisninger i firmaet, der er optimeret til deres virksomhed. Yderligere oplysninger finder du i afsnittet [Administrere tilpasninger på organisationsniveau med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 
 -    I modsætning til traditionelle tilpasninger gemmes visninger ikke automatisk, når en bruger udfører eksplicitte tilpasninger eller filtrerer en liste. Eksplicitte lagringer er påkrævede for at kunne oprette en visning før eller efter de ændringer, der er knyttet til den pågældende visning, og for at sikre, at visningsdefinitioner ikke utilsigtet ændres af filtre eller tilpasninger, der ikke er beregnet til brug i længere tid.  
+
+-    Visninger kan føjes til arbejdsområder som felter, lister eller links. Derfor kan et filtreret datasæt placeres i et arbejdsområde, og brugerne kan knytte et sæt tilpasninger, der er relevante for det pågældende datasæt, med feltet eller linket.
 
 ## <a name="switching-between-views"></a>Skifte mellem visninger
 Når visninger er aktiveret for et miljø, vil alle sider, der understøtter visninger, indeholde et skjult kontrolelement til valg af visninger i visningsområdet øverst i formularen, som viser navnet på den aktuelle visning.  
@@ -52,9 +54,9 @@ Visningsvælgeren har to størrelsesvariationer:
  
 Hvis du klikker på visningsnavnet, åbnes visningsvælgeren med listen over tilgængelige visninger for denne side.
 
--    **Klassisk visning**: Den klassiske visning er out-of-the-box-visningen af siden, hvor der ikke er anvendt eksplicitte brugertilpasninger.  
+-    **Standardvisning**: **Standard**-visningen (tidligere kendt som den **klassiske** visning) er den oprindelige visning af siden, hvor der ikke anvendes eksplicitte tilpasninger.
 -    **Personlige visninger**: Visningerne uden hængelåse repræsenterer dine personlige visninger. Dette er visninger, som enten du har oprettet, eller som er tildelt af en administrator.  
--    **Låste visninger**: Nogle visninger (som f.eks. klassisk visning og visninger, der måtte være udgivet til din rolle) har en hængelås i visningsvælgeren som tegn på, at de ikke kan redigeres. Implicitte tilpasninger, som afspejler sidens anvendelse, gemmes dog automatisk, f.eks. når bredden af en gitterkolonne ændres, eller et oversigtspanel udvides eller skjules. Du kan dog oprette en personlig visning, der er baseret på en låst visning, ved hjælp af handlingen **Gem en kopi**, hvis du har rettigheder til personlige indstillinger.
+-    **Låste visninger**: Nogle visninger (f.eks. **Standard**-visningen og eventuelle visninger, der er udgivet til din rolle) har et hængelåssymbol ved siden af dem i visningsvælgeren. Dette symbol angiver, at du ikke kan redigere disse visninger. Implicitte tilpasninger, der afspejler sideforbruget, gemmes dog automatisk. Disse implicitte tilpasninger omfatter en ændring af bredden på en gitterkolonne eller udvidelse eller skjulning af et oversigtspanel. Du kan dog oprette en personlig visning, der er baseret på en låst visning, ved hjælp af handlingen **Gem som**, hvis du har rettigheder til personlige indstillinger.
 -    **Nye visninger**: Publicerede visninger, der endnu ikke er åbnet, er afgrænset med et spark til venstre for visningsnavnet.  
 
 Hvis du vil skifte til en anden visning, skal du først åbne visningsvælgeren og derefter vælge den visning, du vil indlæse. 
@@ -69,7 +71,7 @@ Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
 2.  Sådan redigeres den eksisterende visning:
      1. Vælg **Gem**. Bemærk, at denne handling ikke vil blive aktiveret for låste visninger. 
 3.  Sådan oprettes en ny visning:
-     1.    Vælg **Gem en kopi**. 
+     1.    Vælg **Gem som**. 
      2.    Indtast et visningsnavn og evt. en beskrivelse.
      3.    Vælg **Gem**.
 
@@ -81,7 +83,7 @@ For at ændre standardvisningen for en side skal du følge disse trin:
 2.  Vælg visningsnavnet for at åbne visningsvælgeren. 
 3.  Vælg **Flere** og derefter **Vælg som standard**.  
 
-Når du opretter en ny visning (ved hjælp af handlingen **Gem en kopi**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.  
+Når du opretter en ny visning (ved hjælp af handlingen **Gem som**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
 
 Bemærk, at i nogle tilfælde udføres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du navigerer til en side. Hvis du f.eks. navigerer via et felt til en side, udføres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du navigerer til en side, hvis klassiske visning allerede har en defineret forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, får du besked om det, når visningen indlæses. Hvis du skifter visning, efter at siden er indlæst, skulle visningsforespørgslen blive udført som forventet.
 
@@ -97,24 +99,27 @@ Hvis du vil se en liste over tilgængelige visninger for den pågældende side, 
 De ændringer, der er foretaget i denne dialogboks, træder i kraft, når du vælger knappen **Gem**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige indstillinger på organisationsniveau med visninger
-For at forstå forbedringerne af administrationen af personlige indstillinger på et organisationsniveau skal du først se på, hvordan administration af personlige indstillinger fungerede før visninger.  
+For at hjælpe dig med at forstå, hvordan gemte visninger er med til at forbedre administrationen af tilpasninger på et organisationsniveau, beskriver dette afsnit, hvordan administration af personlige tilpasninger fungerede, før visninger var tilgængelige.
 
 Uden visninger skulle administratorer anvende et sæt tilpasninger på en side for en bruger, en gruppe af brugere via siden Tilpasning. Hvis disse brugere havde rettigheder til at tilpasse personlige indstillinger, blev tilpasningerne anvendt på den pågældende side. Men der var ikke nogen mulighed for at forhindre brugerne i at tilpasse siden yderligere, hvilket betød, at organisationen ikke kunne sikre, at brugerne havde en ensartet brugergrænseflade. Hvis nogen af disse brugere ikke havde rettigheder til personlig tilpasning, blev de tilpasninger, som de fik af en administrator, ikke indlæst. Hvis der desuden blev ansat nye brugere i en organisation, skulle administratorer manuelt indlæse et sæt tilpasninger for brugeren. Der var ikke nogen automatisk mekanisme til angivelse af, at et bestemt sæt tilpasninger skulle være tilgængeligt for brugere i den pågældende rolle.
 
-Med funktionen Gemte visninger er det væsentligt lettere at administrere tilpasninger, primært på grund af muligheden for at publicere visninger til sikkerhedsroller. Når en visning er publiceret, kan alle brugere med den pågældende rolle kan få adgang til visningen og bruge den, uanset brugerens øvrige tilpasningsmuligheder. Hver bruger har en kopi af den publicerede visning, hvor brug af siden (implicitte tilpasninger) automatisk anvendes, og ingen bruger kan gemme eksplicitte tilpasninger eller opdateringer af forespørgslen i den publiceret visning (dvs. at publicerede visninger er låst). Hvis nye brugere derudover får tildelt en rolle, som visningen er publiceret til, får de automatisk vist de visninger, der er knyttet til deres rolle, uden administratorhandlinger. Hvis en bruger ændrer roller i en organisation, vil de visninger, der er knyttet til vedkommendes gamle rolle, ikke længere være tilgængelige for dem. Også dette sker uden administratorhandlinger. Opdateringer til en publiceret visning kan let distribueres til brugere ved igen at publicere visningen til de relevante sikkerhedsroller.
+Med funktionen Gemte visninger er det væsentligt lettere at administrere tilpasninger, primært på grund af muligheden for at publicere visninger til brugergrupper. Når en visning er blevet publiceret, kan alle brugere, der har en af de definerede sikkerhedsroller og er i de angivne juridiske enheder, få adgang til at bruge visningen, også selvom den pågældende bruger muligvis ikke kan tilpasse den. Selvom hver bruger har en kopi af den publicerede visning, hvor brug af siden (implicitte tilpasninger) automatisk anvendes, kan ingen bruger gemme eksplicitte tilpasninger eller forespørge på opdateringer til den publiceret visning. (Med andre ord er publicerede visninger låst). Hvis nye brugere får roller i juridiske enheder, som visninger er publiceret til, kan de automatisk se de visninger, der er knyttet til deres roller og juridiske enheder. Der kræves ingen yderligere handlinger af administratoren. På samme måde, hvis brugere ændrer roller i en organisation eller får adgang til forskellige juridiske enheder, kan de muligvis ikke længere få adgang til de visninger, der tidligere er publiceret til dem. Igen kræves der ikke yderligere handlinger af administratoren.
+
+Opdateringer til en publiceret visning kan let distribueres til brugere ved igen at publicere visningen til de relevante sikkerhedsroller og juridiske enheder.
 
 Publiceringsfunktionen giver organisationer mulighed for at definere de standardvisninger i firmaet, der er optimeret til deres virksomhed, målrettet brugere i bestemte sikkerhedsroller.  
 
 ## <a name="publishing-views"></a>Publicere visninger
-Under publiceringsprocessen kan visninger tildeles til en eller flere sikkerhedsroller, hvilket betyder, at alle brugere med den pågældende rolle kan få adgang til og bruge denne visning, men de kan ikke redigere visningen. I øjeblikket er det kun systemadministratorer, der har rettigheder til handlingen **Udgiv** i rullemenuen for visningsvælger, men en ny sikkerhedsrolle vil være tilgængelig i en fremtidig opdatering for at give publiceringsrettigheder til andre betroede brugere.  
+Under udgivelsesprocessen kan visninger tildeles en eller flere sikkerhedsroller for en eller flere juridiske enheder. Derfor kan alle brugere, der har adgang til en juridisk enhed, og som er tildelt en af disse roller, få adgang til at bruge visningerne, selvom de ikke kan redigere dem. Systemadministratorer har adgang til handlingen **Publicer** i rullemenuen til visningsvælgeren. Andre brugere, der er tillid til i organisationen, kan dog også få adgang til at se udgivelsen via den nye administratorrolle **Gemte visninger**.
 
 Følg disse trin for at publicere en visning: 
 1.  Opret og gem en personlig kopi af den visning, du vil publicere. 
 2.  Når denne visning indlæst skal du vælge navnet på visningen for at åbne visningsvælgerens rullemenu. 
 3.  Vælg knappen **Flere**, og vælg derefter **Publicer**. Dialogboksen Publicer åbnes.  
-4.  Angive et navn til og evt. en beskrivelse af visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Bemærk, at identiske navne til publicerede visninger for en side ikke er tilladt, selvom listen over roller, som de anvendes på, er anderledes.  
-5.  Tilføj eventuelle sikkerhedsroller, der svarer til de brugere, der skal have denne visning.  
-6.  Vælg **Publicer**.
+4.  Angiv et navn til og evt. en beskrivelse af visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Navnene på publicerede visninger for en side skal være entydige. Der tillades ingen dublerede navne, selvom listen over roller eller juridiske enheder, som visningerne gælder for, er forskellige.
+5.  Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning.
+6. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
+7.  Vælg **Publicer**.
 
 Bemærk, at det kan tage et stykke tid (op til en time) i nogle miljøer, før brugerne kan se den publicerede visning.
 
@@ -142,7 +147,7 @@ Mens alle brugere kan se fanen **Mine visninger** med deres personlige visninger
 
 Hvis du vil se listen over alle publicerede visninger for siden, kan du bruge følgende sæt handlinger. 
 
--    **Publicer**: Brug handlingen **Publicer** til at publicere en visning med ændrede publiceringsparametre (navn, beskrivelse, sikkerhedsroller).  
+-    **Publicer**: Brug handlingen **Publicer** til at publicere en visning igen, når publiceringsparametre (navn, beskrivelse, sikkerhedsroller eller juridiske enheder) er ændret.
 -    **Fjern**: Brug handlingen **Fjern** til at slette en publiceret visning permanent. Denne handling fjerner visningen for alle brugere i systemet.  
  
 De ændringer, der er foretaget i denne dialogboks, træder i kraft, når knappen **Gem** vælges.
@@ -161,7 +166,9 @@ Hvis du vil aktivere gemte visninger, mens funktionen er i eksempelvisning, skal
 
 4.  **Aktivér funktionen**: Find funktionen **Gemte visninger** på listen over funktioner, og vælg **Aktivér nu** i detaljeruden.
 
-Alle efterfølgende brugersessioner vil starte med gemte visninger aktiveret.  
+Alle efterfølgende brugersessioner vil starte med gemte visninger aktiveret.
+
+Gemte visninger er kun til brug i niveau 1 (udvikling/test) og niveau 2 (sandkasse) for at kunne foretage yderligere test og designændringer. Et eksempel på gemte visninger vil være tilgængeligt i produktionsmiljøer i en fremtidig version.
 
 Bemærk, at hvis brugertilpasning er slået fra for miljøet, deaktiveres visningerne, også selvom du følger ovenstående trin. Det skyldes, at visningsfunktionen er bygget oven på tilpasningsundersystemet.
 
@@ -172,7 +179,7 @@ Når visninger er aktiveret, gemmes eventuelle eksisterende tilpasninger af en b
 Visninger er tilgængelige på de fleste, men ikke på alle sider. Visninger er især aktuelt tilgængelige på alle fuldskærmssider bortset fra dashboards og arbejdsområder. Sider, der ikke vises som fuldskærmssider, og som omfatter dialogbokse, rullelister, opslag, udvidede eksempler, understøtter i øjeblikket heller ikke visninger. Understøttelse af visninger for yderligere sidetyper, f.eks. arbejdsområder og dialogbokse, kan komme i betragtning ved en senere opdatering.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem har tilladelse til at publicere visninger?
-Aktuelt er systemadministratorer de eneste brugere, der har rettigheder til at publicere visninger.  Der planlægges en ny sikkerhedsrolle i en kommende opdatering, som giver kunderne større fleksibilitet mht., hvem der kan publicere.  
+Kun systemadministratorer og brugere, der er tildelt administratorrollen **Gemte visninger**, har rettigheder til at publicere visninger. 
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Hvorfor kan jeg ikke gemme filtre i denne visning? 
 Der er flere grunde til, at et filter muligvis ikke kan gemmes med en visning: 

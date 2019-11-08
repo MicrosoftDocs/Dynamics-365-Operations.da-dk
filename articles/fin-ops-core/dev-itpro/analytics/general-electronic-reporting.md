@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ce7b5418ab9e1a9abd6c3206c74c5a1cf739a3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181881"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578235"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -71,9 +71,8 @@ En modeltilknytning, der understøtter udgående elektroniske dokumenter, har f�
 
 - Den kan bruge forskellige datatyper som datakilder til en datamodel. Den kan for eksempel bruge tabeller, dataenheder, metoder eller fasttekster.
 - Den understøtter brugerinputparametre, der kan defineres som datakilder for en datamodel, når data skal angives på kørselstidspunktet.
-- Den understøtter transformationen af data til de grupper, der kræves. Den gør det også muligt at filtrere, sortere og summere data og tilføje logisk beregnede felter, der er designet via formler, der ligner Microsoft Excel-formler, som vist i følgende illustration. Du kan finde flere oplysninger under [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md).
+- Den understøtter transformationen af data til de grupper, der kræves. Den gør det også muligt at filtrere, sortere og summere data og tilføje logisk beregnede felter, der er designet via formler, der ligner Microsoft Excel-formler. Du kan finde flere oplysninger under [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md).
 
-[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 En modeltilknytning, der understøtter indgående elektroniske dokumenter, har følgende muligheder:
 
@@ -196,9 +195,7 @@ Påkrævede **LCS-projekt**-, **Filsystem**- og **Regulatory Configuration Servi
 ## <a name="supported-scenarios"></a>Understøttede scenarier
 ### <a name="building-a-data-model"></a>Opbygning af en datamodel
 
-ER leverer en modeldesigner, som du kan bruge til at bygge en datamodel for et bestemt virksomhedsdomæne. Alle domænespecifikke forretningsenheder og relationerne mellem dem kan præsenteres i en datamodel som en hierarkisk struktur. I følgende illustration vises et eksempel på denne type datamodel (betalingsdomæne-datamodellen).
-
-[![Datamodel for betalingsdomæne](./media/ER-overview-04.png)](./media/ER-overview-04.png)
+ER leverer en modeldesigner, som du kan bruge til at bygge en datamodel for et bestemt virksomhedsdomæne. Alle domænespecifikke forretningsenheder og relationerne mellem dem kan præsenteres i en datamodel som en hierarkisk struktur. 
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Design ER-domænespecifik datamodel** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
@@ -209,24 +206,14 @@ Datamodelindhold (etiketter og beskrivelser) kan oversættes til andre sprog, so
 - På designtidspunktet for at gøre indholdet mere forståeligt for formatdesignere, der taler andre sprog og som bruger datamodellen til datatilknytning af formatkomponenter.
 - På kørselstidspunktet for at gøre indholdet mere brugervenligt ved at vise beskeder og hjælp til kørselsparametre samt konfigurerede valideringsmeddelelser (fejl og advarsler) på det sprog, som er det foretrukne for den bruger, der aktuelt er logget på.
 
-I følgende illustration vises et eksempel på, hvor datamodelindhold oversættes fra engelsk til japansk.
-
-[![Datamodelindhold på engelsk](./media/ER-overview-05.png)](./media/ER-overview-05.png)
-
-[![Datamodelindhold oversat til japansk](./media/ER-overview-06.png)](./media/ER-overview-06.png)
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfiguration af datamodeltilknytninger for udgående dokumenter
 
-ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte programdatakilder. På baggrund af tilknytningen importeres dataene på kørselstidspunktet fra valgte datakilder til datamodellen. Datamodellen bruges derefter som en abstrakt datakilde til ER-formater, der genererer udgående elektroniske dokumenter. I følgende illustration vises et eksempel på denne type datamodeltilknytning vises i nedenstående billede (**SEPA-overførsel**-modeltilknytningen i datamodellen for betalingsdomæne).
-
-[![Eksempel på en datamodeltilknytning](./media/ER-overview-07.png)](./media/ER-overview-07.png)
+ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte programdatakilder. På baggrund af tilknytningen importeres dataene på kørselstidspunktet fra valgte datakilder til datamodellen. Datamodellen bruges derefter som en abstrakt datakilde til ER-formater, der genererer udgående elektroniske dokumenter. 
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiderne **Definere ER-modeltilknytning, og vælg datakilder** og **ER Tilknyt datamodel til valgte datakilder** (del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfiguration af datamodeltilknytninger for indgående dokumenter
-ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte destinationer. For eksempel kan datamodeller knyttes til datakomponenter, der kan opdateres (tabeller, dataenheder og visninger). På baggrund af tilknytningen opdateres data på kørselstidspunktet ved hjælp af data fra datamodellen. Som abstrakt lagring af ER-formatet udfyldes datamodellen med data, der er importeret fra et indgående elektronisk dokument. I følgende illustration vises et eksempel på denne type datamodeltilknytning. I dette eksempel bruges **Importér tilknytning for NETS**-modeltilknytningen af datamodellen for betalingsdomænet til at understøtte import af bankkontoudtog i NETS-bankformatet for Norge.
-
-[![Importere tilknytning for NETS-datamodeleksempel](./media/ER-overview-08.png)](./media/ER-overview-08.png)
+ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte destinationer. For eksempel kan datamodeller knyttes til datakomponenter, der kan opdateres (tabeller, dataenheder og visninger). På baggrund af tilknytningen opdateres data på kørselstidspunktet ved hjælp af data fra datamodellen. Som abstrakt lagring af ER-formatet udfyldes datamodellen med data, der er importeret fra et indgående elektronisk dokument. 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Lagring af en designet modelkomponent som en modelkonfiguration
 
@@ -236,24 +223,18 @@ For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgavegu
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Opbygning af et format, der bruger en datamodel som udgangspunkt
 
-ER understøtter en formatdesigner, som du kan bruge til at bygge formatet for et elektronisk dokument for et valgt forretningsdomæne ved at vælge modelkomponenten som udgangspunkt. Med samme ER-formatdesigner kan du knytte et format, som du opretter, til et markeret domænes datamodeltilknytning som en datakilde. I følgende illustration vises et eksempel på denne type format (den formatkonfiguration, der understøtter **BACS**-betalingsformatet for Storbritannien).
-
-[![Eksempel på et format, der har en datamodel som udgangspunkt](./media/ER-overview-09.png)](./media/ER-overview-09.png)
+ER understøtter en formatdesigner, som du kan bruge til at bygge formatet for et elektronisk dokument for et valgt forretningsdomæne ved at vælge modelkomponenten som udgangspunkt. Med samme ER-formatdesigner kan du knytte et format, som du opretter, til et markeret domænes datamodeltilknytning som en datakilde. 
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Design ER-domænespecifikt format** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-openxml-worksheet-format"></a>Oprettelse af en konfiguration for at generere elektroniske dokumenter i OPENXML-regnearksformat
 
-ER-formatdesigneren kan bruges til at oprette en elektronisk dokument i OPENXML-regnearksformat. I følgende illustration vises et eksempel på denne type format (en formatkonfiguration til at generere OPENXML-regneark med oplysninger om en valgt betalingskladde).
-
-[![Pic-ER-format-Excel](./media/ER-overview-10.png)](./media/ER-overview-10.png)
+ER-formatdesigneren kan bruges til at oprette en elektronisk dokument i OPENXML-regnearksformat. 
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **ER Opret en konfiguration for rapporter i OPENXML-format** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**). Som en del af trinnet i opgaveguiden til import af en skabelon skal du bruge [Skabelon for betalingsrapport (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) Excel-filen som skabelon.
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Oprettelse af en konfiguration for at generere elektroniske dokumenter i et Word-dokumentformat
 ER-formatdesigneren kan bruges til at oprette en elektronisk dokument i et Word-dokumentformat. I følgende illustration vises et eksempel på denne type format. Bemærk, at dette format genbruger den eksisterende ER-konfiguration, der oprindeligt blev udviklet til at generere rapporten i OPENXML-formatet.
-
-[![Pic-ER-format-Word](./media/ER-overview-11.png)](./media/ER-overview-11.png)
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden ER Design en konfiguration til oprettelse af rapporter i Microsoft WORD-format (som er en del af forretningsprocessen 7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)). Som en del af trinnet i opgaveguiden til import af en skabelon skal du bruge følgende Word-filer som skabeloner for ER-formatet:
 
@@ -261,11 +242,7 @@ For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgavegu
 - [Bundet skabelon for betalingsrapport (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Oprettelse af en konfiguration til import af data fra indgående elektroniske dokumenter
-ER-formatdesigneren kan bruges til at beskrive et elektronisk dokument, der er planlagt til import af data i enten XML- eller tekstformat. Designerformatet bruges til at fortolke et indgående dokument. ER-designeren for formattilknytning kan bruges til at definere bindingen af elementerne i det designede format til datamodellen. I følgende illustration vises et eksempel på denne type format og formattilknytning. I dette eksempel importeres NETS-bankkontoudtog, som indeholder oplysninger om kreditorbetalinger i tekstformat.
-
-[![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
-
-[![ER-model-mapping-designer](./media/ER-overview-13.png)](./media/ER-overview-13.png)
+ER-formatdesigneren kan bruges til at beskrive et elektronisk dokument, der er planlagt til import af data i enten XML- eller tekstformat. Designerformatet bruges til at fortolke et indgående dokument. ER-designeren for formattilknytning kan bruges til at definere bindingen af elementerne i det designede format til datamodellen. 
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden ER-konfigurationer for at importere data fra en ekstern fil (som er en del af forretningsprocessen 7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)). Du kan bruge følgende filer til at afspille denne guide:
 
@@ -280,11 +257,7 @@ ER kan gemme et designet format sammen med de konfigurerede datatilknytninger so
 
 ### <a name="configuring-finance-to-start-to-use-a-created-format-internally"></a>Konfiguration af Finance for at begynde at bruge et oprettet format internt
 
-Programmet kan konfigureres til at begynde at bruge et oprettet format til generering af elektroniske rapporter. Referencen til den oprettede formatkonfigurationen bør fastlægges i indstillingerne for et bestemt domæne. For eksempel for at begynde at bruge en ER-formatkonfiguration for elektroniske kreditorbetalinger i BACS format, skal der refereres til formatkonfigurationen i bestemte betalingsmåder, som vist i følgende illustrationer:
-
-[![BACS (UK) formatkonfiguration](./media/ER-overview-14.png)](./media/ER-overview-14.png)
-
-[![Referencer til formatet BACS (UK) i en betalingsmetode](./media/ER-overview-15.png)](./media/ER-overview-15.png)
+Programmet kan konfigureres til at begynde at bruge et oprettet format til generering af elektroniske rapporter. Referencen til den oprettede formatkonfigurationen bør fastlægges i indstillingerne for et bestemt domæne. For eksempel for at begynde at bruge en ER-formatkonfiguration for elektroniske kreditorbetalinger i BACS format, skal der refereres til formatkonfigurationen i bestemte betalingsmåder.
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille **ER Brug format til at generere elektronisk dokument til betalinger** (del af forretningsprocessen **7.5.4.3 Anskaffe/udvikle IT-tjeneste/løsningskomponenter (10677)**).
 
