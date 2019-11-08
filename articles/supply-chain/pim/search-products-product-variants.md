@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bf90dc4823599ed6ff8e81986fc35f2210b66b0c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e6bc6c60fda3c3e4772d26d94c4c87fb2a3102c
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560260"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570719"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Søge efter produkter og produktvarianter under ordreindtastning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [Retail name](../includes/retail-name.md)]
 
 Brug feltet **Varenummer** til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje.  Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige.
 

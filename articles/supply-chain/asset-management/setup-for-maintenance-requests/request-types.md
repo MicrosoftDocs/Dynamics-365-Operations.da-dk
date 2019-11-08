@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19d529df6c8aab036de59502b4f14101e1a07707
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 430e475b52638dd80512ffd79d42aac6f5f340e1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790477"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571133"
 ---
 # <a name="maintenance-request-types"></a>Typer af vedligeholdelsesanmodninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Vedligeholdelsesanmodningstyper bruges til at kategorisere vedligeholdelsesanmodninger. Du kan for eksempel have vedligeholdelsesanmodningstyper, der er relateret til forebyggende vedligeholdelse og korrigerende vedligeholdelse. Eller du kan have en særlig vedligeholdelsesanmodningstype, der bruges til at administrere reparationer af aktiver (depotreparation).
 
@@ -44,4 +44,4 @@ En vedligeholdelsesanmodningstype definerer tilknytningen til en vedligeholdelse
 
 I følgende illustration vises et eksempel på listesiden **Vedligeholdelsesanmodningstype**.
 
-![Figur 1](media/07-setup-for-requests.png)
+![Siden Vedligeholdelsesanmodningstyper](media/07-setup-for-requests.png)

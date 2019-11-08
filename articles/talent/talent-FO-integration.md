@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om integration af Dynamics 365 Talent med Dynam
 description: I dette emne beskrives, hvilke data der synkroniseres i en integration af Talent og Finance.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251008"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622762"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Ofte stillede spørgsmål om integration af Dynamics 365 Talent med Dynamics 365 Finance
 
@@ -35,6 +35,10 @@ Dette emne indeholder svar på almindelige spørgsmål om, hvilke data der synkr
 Med Core HR synkroniseres et undersæt af dataene. Du kan finde en liste over alle enheder i [Integration fra Dynamics 365 Talent til Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 I Attract og Onboard er alle data indbygget i Common Data Service.
+
+## <a name="why-dont-i-see-any-data-synced-to-common-data-service"></a>Hvorfor kan jeg ikke se data, der er synkroniseret til Common Data Service?
+
+Som standard er Common Data Service-integrationen slået fra i nye miljøer, der ikke indeholder de leverede demonstrationsdata. Som standard er den aktiveret i nye miljøer, der indeholder demonstrationsdata, og datasynkroniseringen starter, når miljøet klargøres. Når miljøet er klar til at synkronisere data, kan du aktivere integrationen. Du kan finde flere oplysninger under [Konfigurere Common Data Service-dataintegration](hr-common-data-service-integration.md).
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jeg oprette en ny tilknytning uden at bruge skabelonerne?
 

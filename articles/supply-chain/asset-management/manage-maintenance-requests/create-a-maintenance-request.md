@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024631"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571915"
 ---
 # <a name="create-maintenance-requests"></a>Oprette vedligeholdelsesanmodninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Vedligeholdelsesanmodninger kan bruges, hvis vedligeholdelsesarbejdere eller produktionsmedarbejdere opdager, at udstyr kræver reparation, men reparationsjobbet ikke kan udføres med det samme.
 
@@ -55,7 +55,7 @@ Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninge
 11. Udfyld eventuelt feltet **Noter** med yderligere bemærkninger.
 12. Vælg **OK**.
 
-![Figur 1](media/03-manage-maintenance-requests.png)
+![Opret vedligeholdelsesanmodning](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Efterfølgende behandling af vedligeholdelsesanmodninger
 
@@ -70,7 +70,7 @@ I detaljevisningen kan du opdatere forskellige oplysninger. Her er nogle eksempl
 - Vælg en vedligeholdelsesjobtype og, hvis disse oplysninger er relevante, en relateret vedligeholdelsesjobvariant og en jobhandel.
 - Angiv geografiske koordinater i felterne **Breddegrad** og **Længdegrad**. Alle koordinater, der føjes til en vedligeholdelsesanmodning, overføres automatisk til en relateret arbejdsordre. 
 
-![Figur 2](media/04-manage-maintenance-requests.png)
+![Opdatere vedligeholdelsesanmodning](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Hvis du vælger et aktiv, når du opretter en vedligeholdelsesanmodning, kan du føje én fejl til aktivet. Når vedligeholdelsesanmodningen er blevet oprettet, kan du tilføje flere fejl efter behov. Hvis du vil tilføje fejl, skal du vælge **Aktivfejl** på siden **Alle vedligeholdelsesanmodninger**.

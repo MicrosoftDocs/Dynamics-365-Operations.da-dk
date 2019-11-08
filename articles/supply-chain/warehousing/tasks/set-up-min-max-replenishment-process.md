@@ -3,7 +3,7 @@ title: Konfigurere en min.-maks. genopfyldningsproces
 description: Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning.
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924441"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559183"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurere en min.-maks. genopfyldningsproces
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning. Når lagerbeholdningen falder under minimumniveauet, oprettes arbejde for genopfyldning af lokationen. Proceduren viser også, hvordan faste plukpladser kan tillade genopfyldning, selvom lageret falder under det minimale niveau, og hvordan du aktiverer genopfyldningsprocessen til at køre regelmæssigt ved hjælp af et batchjob. Disse opgaver udføres normalt af en lagerchef. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne i noterne, eller du kan køre den for dine egne data. Hvis du bruger dine egne data, skal du sørge for, at du har et lagersted, der er aktiveret for lagerstedsstyringsprocesser.
+Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning. Når lagerbeholdningen falder under minimumniveauet, oprettes arbejde for genopfyldning af lokationen. Proceduren viser også, hvordan faste plukpladser kan tillade genopfyldning, selvom lageret falder under det minimale niveau, og hvordan du aktiverer genopfyldningsprocessen til at køre regelmæssigt ved hjælp af et batchjob. Disse opgaver udføres normalt af en lagerchef. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne nedenfor, eller du kan køre den på dine egne data. Hvis du bruger dine egne data, skal du sørge for, at du har et lagersted, der er aktiveret for lagerstedsstyringsprocesser.
 
 
 ## <a name="create-a-fixed-picking-location"></a>Oprette en fast plukplads

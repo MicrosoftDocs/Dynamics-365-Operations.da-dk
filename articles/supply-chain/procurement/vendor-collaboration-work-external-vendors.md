@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250181"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653596"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
@@ -190,7 +190,7 @@ I nedenstående tabel vises et eksempel på ændringerne i status og version, so
 Kreditorer behøver ikke at bekræfte en indkøbsordre via grænsefladen for kreditorsamarbejde. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du manuelt bekræfte ordren. I dette tilfælde får du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser som en åben bekræftet ordre, som ikke har nogen svar. På dette tidspunkt har kreditoren ikke længere mulighed for at bekræfte eller afvise indkøbsordren.
 
 > [!NOTE]
-> Den version af indkøbsordren, der er tilgængelig for andre processer i Finance and Operations, er altid den nyeste version, selv om denne version endnu ikke er registreret i grænsefladen for kreditorsamarbejde.
+> Den version af indkøbsordren, der er tilgængelig for andre processer i Supply Chain Management, er altid den nyeste version, selv om denne version endnu ikke er registreret i grænsefladen for kreditorsamarbejde.
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Versioner og statusser, hvis du bruger ændringsstyring
 

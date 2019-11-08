@@ -1,6 +1,6 @@
 ---
-title: Aktiver forsinket momsberegning på kladde
-description: I dette emne forklares det, hvordan du kan bruge funktionen **Aktiver forsinket momsberegning på kladde** til at forbedre ydeevnen for momsberegningen, når antallet af kladdelinjer er stort.
+title: Aktivere forsinket momsberegning på kladder
+description: I dette emne forklares det, hvordan du kan bruge funktionen Forsinket momsberegning til at forbedre ydeevnen af momsberegninger, når antallet af kladdelinjer er meget stort.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176936"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623515"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a>Aktiver forsinket momsberegning på kladde
+# <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivere forsinket momsberegning på kladder
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne forklares det, hvordan du kan bruge funktionen **Aktiver forsinket momsberegning på kladde** til at forbedre ydeevnen for momsberegningen, når antallet af kladdelinjer er stort.
+Dette emne forklarer, hvordan du kan forsinke momsberegningen på kladder. Denne facilitet hjælper med at forbedre ydeevnen af momsberegninger, når der er mange kladdelinjer.
 
-Den aktuelle beregningsmåde for moms i kladden udløses i realtid, når brugeren opdaterer momsrelaterede felter, f.eks. momsgruppe/varemomsgruppe. Hvis der opdateres på kladdelinjeniveau, beregnes momsbeløbet igen på alle kladdelinjer. Det hjælper brugeren med at få vist beregnet momsbeløb i realtid, men det kan også give problemer med ydeevnen, hvis antallet af kladdelinjer er stort.
+Momsbeløb på kladdelinjer beregnes som standard, når momsrelaterede felter opdateres. Disse felter omfatter felterne til momsgrupper og varemomsgrupper. Enhver opdatering af en kladdelinje medfører, at momsbeløb genberegnes for alle kladdelinjer. Selvom denne funktionsmåde hjælper brugeren med at se momsbeløb beregnet i realtid, kan det også påvirke ydeevnen, hvis antallet af kladdelinjer er meget stort.
 
-Denne funktion giver mulighed for at udsætte momsberegningen for at løse problemer med ydeevnen. Hvis denne funktion er slået til, vil momsbeløbet kun blive beregnet, når brugeren klikker på "Moms" eller bogfører kladden.
+Med funktionen til forsinket beregning af moms kan du forsinke momsberegningen på kladder og dermed løse problemer med ydeevnen. Hvis denne funktion er slået til, vil momsbeløb kun blive beregnet, når brugeren vælger **Moms** eller bogfører kladden.
 
-Brugeren kan slå parameteren til og fra på tre niveauer:
-- af juridisk enhed
-- efter kladdenavn
-- efter kladdehoved
+Du kan forsinke beregningen af moms på tre niveauer:
 
-Systemet vil tage parameterværdien i kladdehovedet som endelig. Parameterværdien til kladdeoverskriften bruges som standard fra kladdenavn. Parameterværdien på kladdenavnet angives som standard fra finanskladdeparameteren, når kladdenavnet oprettes.
+- Juridisk enhed
+- Kladdenavn
+- Kladdehoved
 
-Felterne "Faktisk momsbeløb" og "Beregnet momsbeløb" i kladden vil blive skjult, hvis denne parameter er slået til. Formålet er ikke at forvirre brugeren, fordi værdien af disse to felter altid vil vise 0, før brugeren udløser momsberegningen.
+Systemet giver prioriteten til indstillingen for kladdehovedet. Denne indstilling hentes som standard fra kladdenavnet. Indstillingen for kladdenavnet hentes som standard fra indstillingen på siden **Finansparametre**, når kladdenavnet oprettes. I følgende afsnit forklares det, hvordan du aktiverer forsinket momsberegning for juridiske enheder, kladdenavne og kladdehoveder.
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a>Aktivér udsat beregning af moms efter juridisk enhed
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Aktivere forsinket momsberegning på juridisk enhedsniveau
 
-1. Gå til **Finans > Opsætning Finans > Finansparametre**.
-2. Klik på fanen **Moms**
-3. Under fanen **Generelt** kan du finde parameteren **Forsinket momsberegning**, slå den til/fra
+1. Gå til **Finans \> Opsætning Finans \> Finansparametre**.
+2. Under fanen **Moms** i oversigtspanelet **Generelt** skal du vælge **Ja** i indstillingen **Forsinket momsberegning**.
 
-![](media/delayed-tax-calculation-gl.png)
+![Billede af finansparametre](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Aktivere forsinket momsberegning på kladdenavnsniveau
 
+1. Gå til **Finans \> Kladdeopsætning \> Kladdenavne**.
+2. I sektionen **Moms** i oversigtspanelet **Generelt** skal du vælge **Ja** i indstillingen **Forsinket momsberegning**.
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a>Aktiver forsinket momsberegning efter kladdenavn
+![Billede af kladdenavne](media/delayed-tax-calculation-journal-name.png)
 
-1. Gå til **Finans > Kladdeopsætning > Kladdenavne**.
-2. Under fanen **Generelt** kan du finde parameteren **Forsinket momsberegning**, slå den til/fra
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Aktivere forsinket momsberegning på kladdehovedniveau
 
-![](media/delayed-tax-calculation-journal-name.png)
+1. Gå til **Finans \> Kladdeposteringer \> Finanskladder**.
+2. Vælg **Ny**.
+3. Vælg et kladdenavn.
+4. Under fanen **Opsætning** skal du angive indstillingen **Forsinket momsberegning** til **Ja**.
 
-## <a name="enable-delayed-tax-calculation-by-journal"></a>Aktiver forsinket momsberegning efter kladde
-
-1. Gå til **Finans > Kladdeposteringer > Finanskladder**.
-2. Klik på **Ny**
-3. Vælg et kladdenavn
-4. Klik på **Opsætning**.
-5. Find parameteren **Forsinket momsberegning**, slå den til/fra
-
-![](media/delayed-tax-calculation-journal-header.png)
+![Billede af siden Finanskladde](media/delayed-tax-calculation-journal-header.png)

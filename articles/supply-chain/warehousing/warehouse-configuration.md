@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026710"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653412"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversigt over konfiguration af lagersted
 
@@ -34,7 +34,7 @@ I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indehol
 **Bemærk!** Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
-Lokationsstyringssystemet i Finance and Operations giver dig fleksible muligheder til at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
+Lokationsstyringssystemet i Supply Chain Management giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
 
 -   Du kan oprette opbevaringssteder med høj prioritet og lav prioritet til optimal placering af varer.
 -   Du kan opdele lageret i områder, der passer til forskellige opbevaringsbehov, som temperaturkrav eller forskellige omsætningssatser for varer.
@@ -42,7 +42,7 @@ Lokationsstyringssystemet i Finance and Operations giver dig fleksible mulighede
 -   Du kan gruppere lokationer ved hjælp af indstillingerne for begrænsning af fysisk kapacitet.
 -   Du kan styre, hvordan varer opbevares og plukkes, baseret på regler, der er defineret af forespørgslen.
 
-Hvis du vil bruge styring af lagersted i Finance and Operations, skal du oprette et lagersted og aktivere det til styring af mere avancerede eller specialiserede lageraktiviteter. På siden **Lagersteder** skal du vælge indstillingen **Brug lagerstedsstyringsprocesser**.
+Hvis du vil bruge styring af lagersted i Supply Chain Management, skal du oprette et lagersted og aktivere det til styring af mere avancerede eller specialiserede lageraktiviteter. På siden **Lagersteder** skal du vælge indstillingen **Brug lagerstedsstyringsprocesser**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonegrupper, zoner, lokationstyper og lokationer
 
@@ -54,7 +54,7 @@ Du skal definere lagerets zonegrupper og zoner, lokationsprofiler, lokationstype
 -   **Lokalitetstyper** – en fysisk eller logisk inddeling af lagerstedets lokaliteter. Du kan for eksempel oprette en lokationstype for alle midlertidige lokationer. Faste indstillinger på siden **Parametre til lagerstedsstyring** driver processen med at definere midlertidige lokalitetstyper og den endelige afsendelseslokalitetstype.
 -   **Lokaliteter** – det laveste niveau af lokalitetsoplysninger. Lokaliteter bruges til at spore, hvor den disponible lagerbeholdning er gemt og plukket på et lagersted.
 
-De enheder, du opretter for at definere din lageropbygning, bruges i forespørgsler, der er angivet i arbejdsskabeloner til at drive arbejdsordrer på lageret. Når du definerer zonerne, lokalitetstyperne osv., skal du overveje, hvordan forskellige områder på lagerstedet bruges til forskellige processer. Derudover skal du overveje faktorer som de fysiske karakteristika for et bestemt område. Der kan f.eks. være områder, hvor du kun kan bruge en bestemt type gaffeltruck. Eller hvis din virksomhed har både produktion og færdigvarer inden for den samme facilitet, kan du oprette et enkelt lagersted i Finance and Operations, men derefter adskille de to operationer ved at oprette to zonegrupper. Giv dine enheder beskrivende navne, så det er nemt at identificere dem, når du bruger dem i skabelonforespørgsler.
+De enheder, du opretter for at definere din lageropbygning, bruges i forespørgsler, der er angivet i arbejdsskabeloner til at drive arbejdsordrer på lageret. Når du definerer zonerne, lokalitetstyperne osv., skal du overveje, hvordan forskellige områder på lagerstedet bruges til forskellige processer. Derudover skal du overveje faktorer som de fysiske karakteristika for et bestemt område. Der kan f.eks. være områder, hvor du kun kan bruge en bestemt type gaffeltruck. Eller hvis din virksomhed har både produktion og færdigvarer inden for den samme facilitet, kan du oprette et enkelt lagersted i Supply Chain Management, men derefter adskille de to operationer ved at oprette to zonegrupper. Giv dine enheder beskrivende navne, så det er nemt at identificere dem, når du bruger dem i skabelonforespørgsler.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Grænser for lokalitetslagring, lokalitetsprofiler og faste plukpladser
 

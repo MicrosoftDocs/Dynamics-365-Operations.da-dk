@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2c748fd230796643f1ed6279743da532e7cb320
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 99f76c684150f154404cbb241daacb7a8d05f7f9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874802"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571754"
 ---
 # <a name="create-maintenance-budgets"></a>Oprette vedligeholdelsesbudgetter
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 
@@ -53,7 +53,7 @@ Vedligeholdelsesbudgetter er baseret på de omkostningstyper, der bruges i aktiv
     > [!NOTE]
     > Når du har godkendt et vedligeholdelsesbudget, kan du ikke genberegne eller regulere de relaterede linjer på siden **Vedligeholdelsesbudgetlinjer**, medmindre du først har fjernet godkendelsen. Hvis du vil fjerne godkendelsen af et vedligeholdelsesbudget, skal du vælge det på siden **Vedligeholdelsesbudgetter** og derefter vælge **Godkend**. Vælg derefter **OK** i dialogboksen **Godkend budget**.
 
-![Figur 1](media/01-maintenance-budgets.png)
+![Vedligeholdelsesbudgetter](media/01-maintenance-budgets.png)
 
 Du kan også oprette et nyt vedligeholdelsesbudget ved at kopiere et eksisterende budget. Vælg det budget, du vil kopiere, på siden **Vedligeholdelsesbudgetter**, og vælg derefter **Kopiér**. Denne fremgangsmåde er nyttig, hvis du f.eks. har oprettet et budget for én måned og vil kopiere det til andre måneder.
 

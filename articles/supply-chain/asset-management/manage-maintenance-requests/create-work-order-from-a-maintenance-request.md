@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f7af87f359cfe3a606c8be857dd905bfef75e97
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: c42f259a57675c3dbac829d6d671e91982ef9011
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847453"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571685"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Oprette arbejdsordrer ud fra vedligeholdelsesanmodninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Når du har oprettet vedligeholdelsesanmodninger, kan du nemt konvertere dem til arbejdsordrer. I dette emne beskrives den hurtigste metode til at arbejde med vedligeholdelsesanmodninger på, opdatere flere vedligeholdelsesanmodninger på samme tid og derefter oprette en arbejdsordre for flere vedligeholdelsesanmodninger på samme tid. På siden **Aktive vedligeholdelsesanmodninger** og **Vedligeholdelsesanmodninger for mine arbejdssteder** kan du også arbejde med én vedligeholdelsesanmodning ad gangen og konvertere én vedligeholdelsesanmodning til en arbejdsordre.
@@ -53,5 +53,5 @@ Når du har oprettet vedligeholdelsesanmodninger, kan du nemt konvertere dem til
 
 6. Vælg **Styring af aktiver** \> **Almindeligt** \> **Arbejdsordrer** \> **Alle arbejdsordrer**, og åbn derefter den nye arbejdsordre.
 
-    ![Figur 1](media/05-manage-maintenance-requests.png)
+    ![Åbne ny arbejdsordre](media/05-manage-maintenance-requests.png)
 

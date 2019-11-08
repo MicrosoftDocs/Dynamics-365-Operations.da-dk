@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 828de71da3f16db9024b08c724eb784127b080dc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177092"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553157"
 ---
 # <a name="human-resources-overview"></a>Oversigt over personale
 
@@ -45,9 +45,9 @@ Du kan udføre disse opgaver vha. Personale:
 
 Når du arbejder med Personale, skal du beslutte, hvordan du vil strukturere organisationen, ved hjælp af elementer som f.eks. afdelinger, job og stillinger. Disse er blandt de grundlæggende elementer, der skal konfigureres i Personale. Enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
 
-- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](../../talent/departments-jobs-positions.md)
-- [Oprette firmaspecifikke personaleparametre](../../talent/set-up-company-specific-hr-parameters.md)
-- [Oprette personaleparametre på tværs af juridiske enheder](../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](../../../talent/departments-jobs-positions.md)
+- [Oprette firmaspecifikke personaleparametre](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Oprette personaleparametre på tværs af juridiske enheder](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekruttere, ansætte og motivere medarbejdere
 
@@ -58,25 +58,25 @@ Rekrutteringsprojekter styrer indholdet, der bruges i annoncer for ledige stilli
 
 Når du har ansat personale, kan du oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsplaner samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne plan.
 
-- [Kompensationsplaner](../../talent/compensation-plans.md)
-- [Oprette planer for fast kompensation](../../talent/create-fixed-compensation-plans.md)
-- [Oprette planer for variabel kompensation](../../talent/create-variable-compensation-plans.md)
+- [Kompensationsplaner](../../../talent/compensation-plans.md)
+- [Oprette planer for fast kompensation](../../../talent/create-fixed-compensation-plans.md)
+- [Oprette planer for variabel kompensation](../../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Udvikle og undervise medarbejdere
 
 For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde vigtige forretningsbehov, kan du sætte mål, oprette evalueringer af performance og spore feedback. For at hjælpe medarbejderne med at udvikle de nødvendige færdigheder, kan du også oprette instruktører, kursustyper, kurser, kursusbeskrivelser, agendaer, spor og sessioner, før du tildeler en instruktør til et kursus eller registrere nogen til et kursus. Instruktører skal allerede eksistere som arbejdere, ansøgere eller kontakter.
 
-- [Performancestyring](../../talent/performance-management-overview.md)
-- [Justere arbejdsstyrkens færdigheder og forretningsbehov](../../talent/skills.md)
-- [Administrere uddannelse gennem kurser](../../talent/courses.md)
+- [Performancestyring](../../../talent/performance-management-overview.md)
+- [Justere arbejdsstyrkens færdigheder og forretningsbehov](../../../talent/skills.md)
+- [Administrere uddannelse gennem kurser](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Oprette og vedligeholde frynsegoder
 
 Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvikle frynsegodeprogrammer som f.eks. sygesikring og pensionsordninger. Du kan også administrere frynsegoder som f.eks. låneprogrammer, hvor virksomheden udlåner udstyr som f.eks. computere eller telefoner til sine medarbejdere.
 
-- [Administrere et frynsegodeprogram](../../talent/manage-benefit-program.md)
-- [Politikker for frynsegodeberettigelse](../../talent/benefit-eligibility-policies.md)
-- [Administrere udstyr, der udlånes til arbejdere](../../talent/loan-items.md)
+- [Administrere et frynsegodeprogram](../../../talent/manage-benefit-program.md)
+- [Politikker for frynsegodeberettigelse](../../../talent/benefit-eligibility-policies.md)
+- [Administrere udstyr, der udlånes til arbejdere](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 
@@ -90,7 +90,7 @@ Microsoft Dynamics AX kan hjælpe dig med at vedligeholde et sikkert arbejdsmilj
 
 Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der bruges til forskellige formål. Med spørgeskemafunktionen kan du designe og oprette spørgeskemaer. Når et spørgeskema er klar, skal du distribuere det bredt eller til en bestemt gruppe svarpersoner, som skal udfylde det. Når svarpersonerne har leveret deres svar, kan du gennemse og analysere resultaterne.
 
-- [Spørgeskemaer](../../talent/questionnaires.md)
-- [Designe et spørgeskema](../../talent/design-questionnaires.md)
-- [Distribuere og udfylde et spørgeskema](../../talent/distribute-questionnaires.md)
-- [Se og evaluere resultaterne af et spørgeskema](../../talent/evaluate-questionnaire-results.md)
+- [Spørgeskemaer](../../../talent/questionnaires.md)
+- [Designe et spørgeskema](../../../talent/design-questionnaires.md)
+- [Distribuere og udfylde et spørgeskema](../../../talent/distribute-questionnaires.md)
+- [Se og evaluere resultaterne af et spørgeskema](../../../talent/evaluate-questionnaire-results.md)

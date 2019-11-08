@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181513"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564931"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurere dataimport fra SharePoint
 
@@ -62,9 +62,9 @@ Afspil opgaveguiderne **ER Import af data fra en Microsoft Excel-fil**, der er e
 > Formatet til import af kreditorposteringer er valgt som standardmodeltilknytningen. Hvis du derfor kører en modeltilknytning af **1099-betalingsmodellen**, og modeltilknytningen er af typen **Til destination**, kører modeltilknytningen dette format ved import af data fra eksterne filer. Derefter bruges disse data til at opdatere programtabeller.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurere adgang til SharePoint for at gemme filer
-Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfigurere adgang til den SharePoint Server-forekomst, der skal bruges af den aktuelle virksomhed. I dette eksempel er firmaet USMF. Du kan finde flere oplysninger i [Konfigurere SharePoint-lager](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfigurere adgang til den SharePoint Server-forekomst, der skal bruges af den aktuelle virksomhed. I dette eksempel er firmaet USMF. Du kan finde flere oplysninger i [Konfigurere SharePoint-lager](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Udfør trinnene i [Konfigurere SharePoint-lager](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+1. Udfør trinnene i [Konfigurere SharePoint-lager](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 2. Åbn det konfigurerede SharePoint-websted.
 3. Opret følgende mapper, hvor indgående elektroniske rapporteringsfiler kan gemmes:
 
@@ -80,7 +80,7 @@ Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfig
     - Mappe til fejlslagne filer – Denne mappe bruges til filer, der ikke blev importeret.
 
 4. Gå til **Virksomhedsadministration > Dokumentstyring > Dokumenttyper**.
-5. Opret følgende dokumenttyper, der skal bruges til at få adgang til de SharePoint-mapper, du lige har oprettet. Yderligere oplysninger finder du i [Konfigurere dokumenttyper](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Opret følgende dokumenttyper, der skal bruges til at få adgang til de SharePoint-mapper, du lige har oprettet. Yderligere oplysninger finder du i [Konfigurere dokumenttyper](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Dokumenttype       | Multi              | Placering      | SharePoint-mappe      |
 |--------------------|--------------------|---------------|------------------------|

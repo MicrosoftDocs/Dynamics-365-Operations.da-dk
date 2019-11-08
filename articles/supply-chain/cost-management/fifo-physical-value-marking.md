@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 735f2d3d2f95185e886321c043cebcb6692fe8b1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561404"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570834"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk værdi og afmærkning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 FIFO (First in, First out) er en lagermodel, hvor de først anskaffede tilgange afgår først. Økonomisk opdaterede afgange fra lageret udlignes mod de første økonomisk opdaterede tilgange til lageret på baggrund af den økonomiske dato for lagertransaktionen. 
 
@@ -54,7 +52,9 @@ I dette eksempel er det ikke angivet, at varemodelgruppen skal medtage fysisk v�
 -   5b. Økonomisk lagerafgang for et antal på 1 til en kostpris af kr. 20,00 pr. stk. (løbende gennemsnit af økonomisk opdaterede posteringer).
 -   6. Lagerlukningen udføres. På baggrund af FIFO-metoden udlignes den første økonomisk opdaterede afgang mod den første økonomisk opdaterede tilgang. Der foretages en regulering på USD -10,00 på afgangsposteringen.
 
-Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer. Følgende illustrationer viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. ![FIFO uden Medtag fysisk værdi](./media/fifowithoutincludephysicalvalue.gif) 
+Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer. Følgende illustrationer viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. 
+
+![FIFO uden Medtag fysisk værdi](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -84,7 +84,9 @@ Hvis afkrydsningsfeltet **Medtag fysisk værdi** er markeret for en vare på sid
 -   6a. Fysisk lagerafgang for et antal på 1 til en kostpris a kr. 21,25 pr. stk.
 -   7. Lagerlukningen udføres. På baggrund af FIFO-metoden reguleres eller udlignes den første økonomiske afgangspostering mod den første opdaterede tilgang, uanset om den er økonomisk eller fysisk.
 
-Postering 5b udlignes mod tilgangspostering 1b. Der foretages en regulering på USD -11,25 på afgangsposteringen. Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. Følgende illustration viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. ![FIFO med Medtag fysisk værdi](./media/fifowithincludephysicalvalue.gif) 
+Postering 5b udlignes mod tilgangspostering 1b. Der foretages en regulering på USD -11,25 på afgangsposteringen. Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. Følgende illustration viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. 
+
+![FIFO med Medtag fysisk værdi](./media/fifowithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -114,7 +116,9 @@ Afmærkning er en proces, som giver dig mulighed for at tilknytte – eller afm�
 -   6a. Fysisk lagerafgang for et antal på 1 til en kostpris a kr. 21,25 pr. stk.
 -   7. Lagerlukningen udføres. Da den økonomisk opdaterede FIFO-postering er afmærket til en eksisterende tilgang, udlignes disse posteringer mod hinanden, og der udføres ingen justeringer.
 
-Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. I følgende illustration vises effekterne af FIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes. ![FIFO med afmærkning](./media/fifowithmarking.gif) 
+Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. I følgende illustration vises effekterne af FIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes. 
+
+![FIFO med afmærkning](./media/fifowithmarking.gif) 
 
 **Forklaring til diagram**
 

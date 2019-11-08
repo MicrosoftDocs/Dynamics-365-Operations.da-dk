@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b236013d19967295514bfc0ce3e94eb6765d620a
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783168"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571800"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installation af aktiver på arbejdssteder
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Når du har oprettet strukturerne for arbejdsstederne, er det næste trin at installere aktiverne på de relevante arbejdssteder. Dette emne forklarer, hvordan du installerer aktiver på de pågældende arbejdssteder i Styring af aktiver Du kan finde flere oplysninger om, hvordan du opretter aktiver i [Aktiver](../objects/introduction-to-objects.md).
 

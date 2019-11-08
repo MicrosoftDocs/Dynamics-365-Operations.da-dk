@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f4f6de139d0399263fa19507d63e9521f489dcbd
+ms.sourcegitcommit: 38ce9f4ef499ad208f2fbbc51bc21b12c67dfa16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249511"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2574793"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Disponibelt lager i arbejdsområde til mobilenheder
 
@@ -56,10 +56,10 @@ Arbejdsområdet til mobilenheder indeholder især disse funktioner:
     -   Efter fysisk beholdning (denne visning repræsenterer tilgængelige antal, der ikke har nogen reservationer).
 
 ## <a name="prerequisites"></a>Forudsætninger
-Forudsætningerne er forskellige, afhængigt af hvilken version af Microsoft Dynamics 365 der er installeret i organisationen.
+Forudsætningerne varierer alt efter, hvilken version af Supply Chain Management der er installeret for din organisation.
 
-### <a name="prerequisites-if-you-use-finance-and-operations"></a>Forudsætninger, hvis du bruger Finance and Operations 
-Hvis Supply Chain Management er implementeret for organisationen, skal systemadministratoren publicere mobilarbejdsområdet **Disponibel lagerbeholdning**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forudsætninger, hvis du bruger Supply Chain Management
+Hvis Supply Chain Management er implementeret for din organisation, skal systemadministratoren publicere mobilarbejdsområdet **Disponibel lagerbeholdning**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Platform update 3 eller nyere 
 Hvis Platform update 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger. 

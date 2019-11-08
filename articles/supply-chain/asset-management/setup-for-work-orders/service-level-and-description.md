@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e645c25208f55b1032bc7f7c181c72db7a2f265
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 7dd577c930c6cc17da6baee30d3558656de01a09
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874641"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569817"
 ---
 # <a name="service-level-and-description"></a>Serviceniveau og -beskrivelse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Når du opretter en arbejdsordre, kan det være en god ide at definere serviceniveauerne for den og føje en generel beskrivelse til den. Du kan oprette serviceniveauer for arbejdsordrer på siden **Serviceniveauer for arbejdsordrer** og beskrivelser på siden **Beskrivelse af arbejdsordre**.
 
@@ -48,7 +48,7 @@ Når du opretter en arbejdsordre, kan det være en god ide at definere serviceni
 8. Hvis du vil angive et sluttidspunkt for arbejdsordren, skal du ud over at angive en slutdato vælge **Ja** i indstillingen **Angiv sluttidspunkt**. Angiv derefter sluttidspunktet i feltet **Sluttidspunkt**. Hvis du vælger **Nej** i denne indstillingen, bruges det aktuelle tidspunkt på dagen.
 9. Vælg **Gem**.
 
-![Figur 1](media/19-setup-for-work-orders.png)
+![Siden Serviceniveau for arbejdsordrer](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Oprette en beskrivelse
 

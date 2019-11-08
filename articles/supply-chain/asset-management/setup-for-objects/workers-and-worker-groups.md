@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c85fc24cdf0b3cd1a188ccf0f477ffbfa5fab960
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f0a8fcf26da02bd42f6ee45687c585091e3b945e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783142"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570972"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Vedligeholdelsesarbejdere og arbejdergrupper
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I dette emne forklares vedligeholdelsesarbejdere og arbejdergrupper i Styring af aktiver. I Styring af aktiver kan du knytte vedligeholdelsesarbejdere til arbejdssteder. (Du finder flere oplysninger om arbejdssteder under [Opret arbejdssteder](../functional-locations/create-functional-locations.md).) Denne funktion kan være nyttig, hvis du eksempelvis planlægger et vedligeholdelsesjob på en maskine, der er placeret i arbejdssted 01, og du vil allokere vedligeholdelsesarbejdere fra samme sted til at udføre jobbet.
 

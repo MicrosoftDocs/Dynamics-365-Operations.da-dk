@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188251"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578189"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurere importprocessen for avanceret bankafstemning
 
@@ -36,7 +36,7 @@ Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på
 ## <a name="set-time-zone-preference"></a>Angive foretrukken tidszone
 Når du konfigurerer importindstillingerne for bankkontoudtog, kan det være vigtigt at overveje tidszonen for dato- og klokkeslætsdata i de filer med bankkontoudtog, der skal importeres. Standarden er at antage, at eventuelle dato- og klokkeslætsværdier er i UTC (Coordinated Universal Time), så der ikke anvendes tidszonekonvertering, når du importerer dataene. 
 
-Der findes en indstilling, der angiver, at der skal bruges en tidszone til import af data. Denne indstilling er tilgængelig i feltet **Foretrukket tidszone** på hver side med **oplysninger om kildedataformat** (**Arbejdsområdet Datastyring > Konfigurer datakilder > Vælg et dataformat > oversigtspanelet Internationale indstillinger**). Denne tidszoneindstilling, som du angiver, gælder for alle de Importer, der bruger det pågældende kildedataformat. Du kan oprette lige så mange datakildeformater, der er brug for til at importere data fra flere tidszoner. Indstillingen for tidszone skal være den lokale tidszone for dato- og klokkeslætsdataene i importfilen. Indstillingen for tidszone skal være den lokale tidszone for dato-klokkeslæt-dataene i importfilen. 
+Der findes en indstilling, der angiver, at der skal bruges en tidszone til import af data. Denne indstilling er tilgængelig i feltet **Foretrukket tidszone** på hver side med **oplysninger om kildedataformat** (**Arbejdsområdet Datastyring > Konfigurer datakilder > Vælg et dataformat > oversigtspanelet Internationale indstillinger**). Denne tidszoneindstilling, som du angiver, gælder for alle de Importer, der bruger det pågældende kildedataformat. Du kan oprette lige så mange datakildeformater, der er brug for til at importere data fra flere tidszoner.  
 
 Denne tidszone kan være den samme som brugerens eller firmaets tidszone, så du skal være sikker på, hvilken tidszone dato- og klokkeslætsdataene bruger. Vi anbefaler, at du overvejer følgende punkter, når du angiver en indstilling for tidszone. 
 

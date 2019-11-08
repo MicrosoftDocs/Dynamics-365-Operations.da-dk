@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248694"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553085"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhedskopilager til ER-skabeloner
 
@@ -33,7 +33,7 @@ Med det [elektroniske rapporteringsværktøjs struktur (ER)](general-electronic-
 
 Hvert konfigureret format kan udgives som en del af en ER-løsning. Hver ER-løsning kan eksporteres fra én forekomst af Finance and Operations og importeres til en anden forekomst.
 
-ER-strukturen bruger [dokumentstyringsstrukturen](../../fin-and-ops/organization-administration/configure-document-management.md) til at bevare de krævede skabeloner for den aktuelle Finance and Operations-forekomst. Afhængigt af indstillingerne for ER-strukturen kan der vælges et Microsoft Azure Blob-lager eller en Microsoft SharePoint-mappe som fysisk primær lagringslokation for skabeloner. (Yderligere oplysninger finder du under [Konfigurere ER-strukturen](electronic-reporting-er-configure-parameters.md).) Tabellen DocuValue indeholder en individuel post for hver skabelon. I hver post indeholder feltet **AccessInformation** stien til en skabelonfil, der er placeret på den konfigurerede lagerlokation.
+ER-strukturen bruger [dokumentstyringsstrukturen](../../fin-ops/organization-administration/configure-document-management.md) til at bevare de krævede skabeloner for den aktuelle Finance and Operations-forekomst. Afhængigt af indstillingerne for ER-strukturen kan der vælges et Microsoft Azure Blob-lager eller en Microsoft SharePoint-mappe som fysisk primær lagringslokation for skabeloner. (Yderligere oplysninger finder du under [Konfigurere ER-strukturen](electronic-reporting-er-configure-parameters.md).) Tabellen DocuValue indeholder en individuel post for hver skabelon. I hver post indeholder feltet **AccessInformation** stien til en skabelonfil, der er placeret på den konfigurerede lagerlokation.
 
 Når du administrerer dine Finance and Operations-forekomster, kan du vælge at overflytte den aktuelle forekomst til en anden lokation. Du kan f.eks. flytte produktionsforekomsten til et nyt sandkassemiljø. Hvis du har konfigureret ER-strukturen til at gemme skabeloner i blob-lageret, henviser DocuValue-tabellen i det nye sandkassemiljø til forekomsten af blob-lager i produktionsmiljøet. Men der er ikke adgang til denne forekomst fra sandkassemiljøet, fordi overførselsprocessen ikke understøtter overflytning af artefakter i blob-lageret. Hvis du derfor forsøger at køre et ER-format, der bruger en skabelon til at generere forretningsdokumenter, indtræffer der en undtagelse, og du får besked om den manglende skabelon. Du bliver også guidet til at bruge ER-oprydningsværktøjet til at slette og derefter importere den ER-formatkonfiguration, der indeholder skabelonen, igen. Da du kan have flere ER-formatkonfigurationer, kan denne proces være tidskrævende.
 

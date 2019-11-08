@@ -1,6 +1,6 @@
 ---
-title: Oversigt over installation og konfiguration af lagerstedsapp
-description: I dette emne beskrives, hvordan du installerer og konfigurerer Dynamics 365 Supply Chain Management – Lagerstedsappen.
+title: Oversigt over installation og konfiguration af appen Lagersted
+description: I dette emne beskrives, hvordan du installerer og konfigurerer Dynamics 365 for Finance and Operations – appen Lagersted.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251494"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548962"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>Oversigt over installation og konfiguration af lagerstedsapp
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Oversigt over installation og konfiguration af appen Lagersted
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251494"
 > Dette emne beskriver, hvordan du konfigurerer lagerfunktioner for skyinstallationer. Hvis du søger efter, hvordan du konfigurerer lagerfunktioner for lokale installationer, skal du se [Lager for lokale installationer](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-I dette emne beskrives, hvordan du installerer og konfigurerer Dynamics 365 Supply Chain Management – Lagerstedsappen.
+I dette emne beskrives, hvordan du installerer og konfigurerer Dynamics 365 for Finance and Operations – appen Lagersted.
 
 Lagerstedsappen er tilgængelig i Google Play Butik og Microsoft Store. Til den aktuelle version af Dynamics 365 Supply Chain Management leveres denne app som en separat komponent, der skal installeres separat på enheder, der bruges til opgaver vedrørende lagersted. For at kunne bruge appen skal du downloade den til hver enhed og konfigurere den til at oprette forbindelse til dit Supply Chain Management-miljø. I dette emne beskrives, hvordan du installerer appen på dine enheder. Det forklares også, hvordan du kan konfigurere appen til at oprette forbindelse til dit Supply Chain Management-miljø.
 

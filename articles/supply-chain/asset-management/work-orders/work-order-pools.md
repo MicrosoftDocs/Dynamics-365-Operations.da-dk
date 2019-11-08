@@ -3,7 +3,7 @@ title: Arbejdsordrepuljer
 description: I dette emne beskrives, hvordan du kan arbejde med arbejdsordrepuljer i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875568"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626356"
 ---
 # <a name="work-order-pools"></a>Arbejdsordrepuljer
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+Du kan bruge arbejdsordrepuljer til at gruppere arbejdsordrer, der har noget fælles. Her er nogle eksempler på ting, du kan oprette arbejdsordrepuljer til:
+
+- Arbejdshold, f.eks. Vedligeholdelseshold A eller Vedligeholdelseshold B  
+
+- Faglige kompetencer, f.eks. elektrikere eller VVS-folk  
+
+- Fysiske adresser  
+
+- Tidsplaner, f.eks. uger eller andre perioder  
+
+Når du har brug for det, kan du anbringe én arbejdsordre i flere arbejdsordrepuljer.
 
 
-Du kan bruge arbejdsordrepuljer til at gruppere arbejdsordrer, der har noget fælles. Du kan f.eks. oprette arbejdsordrepuljer for
+## <a name="create-a-work-order-pool"></a>Oprette en arbejdsordrepulje
 
-- arbejdshold, f.eks. Vedligeholdelseshold A, Vedligeholdelseshold B  
+På siden **Alle arbejdsordrepuljer** eller **Aktive arbejdsordrepuljer** kan du få en oversigt over dine arbejdsordrepuljer og oprette nye puljer.
 
-- fagligt kvalificerede, f.eks. elektrikere eller VVS-folk  
+1. Vælg **Styring af aktiver** > **Almindelig** > **Arbejdsordrepuljer** > **Alle arbejdsordrepuljer** eller **Aktive arbejdsordrepuljer**.
 
-- fysiske placeringer  
+2. Vælg **Ny**.
 
-- tidsplaner, f.eks. uger eller andre perioder  
+3. Angiv et id for arbejdsordrepuljen i feltet **Pulje**.
 
+4. Indtast et navn i feltet **Navn**.
 
-Hvis det er nødvendigt, kan én arbejdsordre placeres i mange arbejdsordrepuljer.
+5. Indstil **Aktiv** til **Ja** for at angive, at arbejdsordrepuljen er aktiv.
 
+6. Indstil **Slet arbejdsordrerelationer** til **Ja**, hvis arbejdsordrer automatisk skal fjernes fra arbejdsordrepuljen.
 
-## <a name="create-work-order-pool"></a>Oprette arbejdsordrepulje
+7. I feltet **Slet livscyklustilstand** skal du vælge livscyklustilstanden for arbejdsordren. For eksempel kan livscyklustilstanden for færdiggørelse af en arbejdsordre indstilles til automatisk at slette relationer til arbejdsordrepuljer.
 
-I **Alle arbejdsordrepuljer** eller **Aktive arbejdsordrepuljer** kan du få en oversigt over dine arbejdsordrepuljer og oprette nye puljer.
+    Du kan begynde at føje arbejdsordrer til din arbejdsordrepulje med det samme.
 
-1. Klik på **Styring af aktiver** > **Almindelig** > **Arbejdsordrepuljer** > **Alle arbejdsordrepuljer** eller **Aktive arbejdsordrepuljer**.
+8. Vælg **Tilføj linje** i oversigtspanelet **Arbejdsordrer**.
 
-2. Klik på **Ny**.
+9. I feltet **Arbejdsordre** skal du vælge en arbejdsordre. De relaterede felter opdateres automatisk.
 
-3. Indsæt et arbejdsordrepulje-id i feltet **Pulje** og et navn i feltet **Navn**.
+10. Gentag trin 8 til 9 for at tilføje flere arbejdsordrer.
 
-4. Vælg "Ja" på **Aktiv**-til/fra-knappen for at angive, at arbejdsordrepuljen er aktiv.
+11. Hvis de arbejdsordrer, du har tilføjet, skal udføres i en bestemt rækkefølge, kan du i feltet **Sorteringsrækkefølge** angive numrene **1**, **2**, **3** osv. for at angive den pågældende rækkefølge.
 
-5. Vælg "Ja" på til/fra-knappen **Slet arbejdsordrerelationer**, hvis du ønsker, at arbejdsordrer automatisk skal fjernes fra arbejdsordrepuljen.
+12. Hvis du vil have vist en liste over alle de arbejdsordrer, der er medtaget i arbejdsordrepuljen, skal du vælge **Arbejdsordrer** i gruppen **Vis relateret til arbejdsordrepulje** under fanen **Arbejdsordrepulje** i handlingsruden for at åbne siden **Alle arbejdsordrer**.
 
-6. I feltet **Slet livscyklustilstand** skal du vælge livscyklustilstanden for arbejdsordren. For eksempel kan livscyklustilstanden for færdiggørelse af en arbejdsordre indstilles til automatisk at slette relationer til arbejdsordrepuljer.
+13. Hvis du vil beregne og se kapacitetsbelastningen for vedligeholdelsesplanen, ikke-planlagte arbejdsordrer og planlagte arbejdsordrer, skal du i handlingsruden under fanen **Arbejdsordrepulje** i gruppen **Vis relateret til arbejdsordrepulje** vælge **Kapacitetsbelastning** for at åbne dialogboksen **Beregn kapacitetsbelastning**.
 
-7. Du kan begynde at føje arbejdsordrer til din arbejdsordrepulje med det samme. Klik på **Tilføj linje** i oversigtspanelet **Arbejdsordrer**.
+14. Hvis du vil beregne og se prognoser for varer (reservedele og andre påkrævede varer), der er relateret til vedligeholdelsesplanen, ikke-planlagte arbejdsordrer og planlagte arbejdsordrer, skal du i handlingsruden under fanen **Arbejdsordrepulje** i gruppen **Vis relateret til arbejdsordrepulje** vælge **Varebudget** for at åbne dialogboksen **Beregn varebudget**.
 
-8. I feltet **Arbejdsordre** skal du vælge en arbejdsordre. De relaterede felter opdateres automatisk.
+15. Hvis du vil have vist en liste over indkøbsrekvisitioner, der er relatere til arbejdsordrer i arbejdsordrepuljen, skal du vælge **Indkøbsrekvisition for arbejdsordre** i gruppen **Indkøb** under fanen **Arbejdsordrepulje** i handlingsruden for at åbne siden **Indkøbsrekvisition for arbejdsordre**.
 
-9. Gentag trin 7-8, hvis du vil tilføje flere arbejdsordrer.
-
-10. I feltet **Sorteringsrækkefølge** kan du angive, om arbejdsordrerne skal udføres i en bestemt rækkefølge. Indsæt nummer 1, 2, 3 osv. for at angive en bestemt rækkefølge for de valgte arbejdsordrer.
-
-11. Klik på knappen **Arbejdsordrer** for at få vist en liste over alle de arbejdsordrer, der er inkluderet i arbejdsordrepuljen.
-
-12. Klik på knappen **Kapacitetsbelastning** for at åbne **Kapacitetsbelastning** og beregne og få vist kapacitetsbelastningen for vedligeholdelsesplanen, ikke-planlagte arbejdsordrer og planlagte arbejdsordrer.
-
-13. Klik på knappen **Varebudget** for at åbne **Varebudget** og beregne og få vist budgetter for varer (reservedele og andre påkrævede varer), der er relateret til vedligeholdelsesplanen, ikke-planlagte arbejdsordrer og planlagte arbejdsordrer.
-
-14. Klik på knappen **Indkøbsrekvisition i arbejdsordre** for at åbne listen **Indkøbsrekvisition i arbejdsordre** for at få vist en liste over indkøbsrekvisitioner, der er relateret til arbejdsordrerne i arbejdsordrepuljen.
-
-15. Klik på knappen **Indkøb i arbejdsordre** for at åbne listen **Indkøb i arbejdsordre** og få vist en liste over indkøbsordrer, der er relateret til arbejdsordrerne i arbejdsordrepuljen.
+16. Hvis du vil have vist en liste over indkøbsordrer, der er relatere til arbejdsordrer i arbejdsordrepuljen, skal du vælge **Arbejdsordreindkøb** i gruppen **Indkøb** under fanen **Arbejdsordrepulje** i handlingsruden for at åbne siden **Arbejdsordreindkøb**.
 
 >[!NOTE]
->Når en arbejdsordrepulje ikke længere er relevant for din arbejdsplanlægning, skal du vælge "Nej" i afkrydsningsfeltet **Aktiv** for den pågældende pulje i listevisningen **Arbejdsordrepulje**.
+>Når en arbejdsordrepulje ikke længere er relevant for din arbejdsplanlægning, skal du indstille **Aktiv** til **Nej** for den pågældende pulje i listevisningen på siden **Arbejdsordrepulje**.
 
-Marker afkrydsningsfeltet **Slet arbejdsordrerelationer**, hvis du vil slette alle arbejdsordrelinjer, f.eks. for at oprette en tom pulje, som du senere kan bruge til andre arbejdsordrer. Husk at fjerne markeringen i afkrydsningsfeltet **Slet arbejdsordrerelationer**, hvis du vil bruge arbejdsordrepuljen til at oprette nye arbejdsordrerelationer på et senere tidspunkt.
+Hvis du vil slette alle linjer i en arbejdsordre, skal du angive indstillingen **Slet arbejdsordrerelationer** til **Ja**. Denne indstilling er nyttig, hvis du f.eks. vil oprette en tom pulje, som du senere kan bruge til andre arbejdsordrer. Husk at indstille **Slet arbejdsordrerelationer** til **Nej**, hvis du vil bruge arbejdsordrepuljen til at oprette nye arbejdsordrerelationer på et senere tidspunkt.
 
+I illustrationen herunder vises et eksempel på listesiden **Arbejdsordrepulje**.
 
 ![Figur 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a>Føje en arbejdsordre til en arbejdsordrepulje
+## <a name="add-a-work-order-to-a-work-order-pool"></a>Føje en arbejdsordre til en arbejdsordrepulje
 
-Som beskrevet i ovenstående afsnit kan du føje arbejdsordrer til en arbejdsordrepulje, når du opretter puljen. Du kan også føje en arbejdsordre til en arbejdsordrepulje fra en af **Alle arbejdsordrer** på listen.
+Som beskrevet i ovenstående afsnit kan du føje arbejdsordrer til en arbejdsordrepulje, når du opretter puljen. Du kan også føje arbejdsordrer til en arbejdsordre pulje på listesiden **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
-1. Klik på **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Vælg arbejdsordren, og vælg derefter **Arbejdsordrepulje** i gruppen **Vedligehold** under fanen **Arbejdsordre** i handlingsruden.
 
 2. Vælg arbejdsordren på listen, og klik på **Arbejdsordrepulje**.
 
-3. Vælg "Tilføj" i feltet **Tilføj/fjern**.
+3. Vælg **Tilføj** i feltet **Tilføj/fjern** i dialogboksen **Vedligehold arbejdsordrepulje**.
 
 4. Vælg arbejdsordrepuljen i feltet **Pulje**.
 
-5. Klik på **OK**.
+5. Vælg **OK**.
 
-6. Når du har føjet en arbejdsordre til en arbejdsordrepulje, og du vil placere arbejdsordren i en bestemt rækkefølge i puljen: Åbn en af listesiderne for arbejdsordrepuljer, vælg puljen, og klik på **Rediger**, og juster sorteringsrækkefølgen for arbejdsordrerne i puljen i formularen **Arbejdsordrepulje** > oversigtspanelet **Arbejdsordrer** > feltet **Sorteringsrækkefølge**.
+6. Hvis du vil placere den arbejdsordre, du har tilføjet, i en bestemt rækkefølge i arbejdsordrepuljen, skal du vælge puljen på listesiden **Alle arbejdsordrepuljer** eller **Aktive arbejdsordrepuljer** og derefter vælge **Rediger**. Brug derefter feltet **Sorteringsrækkefølge** i oversigtspanelet **Arbejdsordrer** på siden **Arbejdsordrepulje** til at justere sorteringsrækkefølgen af de arbejdsordrer, der skal medtages i puljen.
 
-Hvis du vil fjerne den valgte arbejdsordre fra en arbejdsordrepulje, skal du vælge "Fjern" i trin 3.
+Hvis du vil fjerne en arbejdsordre fra en arbejdsordrepulje, skal du gentage disse trin, men vælge **Fjern** i trin 3.
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790478"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571156"
 ---
-# <a name="maintenance-request-states"></a>Tilstande for vedligeholdelsesanmodninger
+# <a name="maintenance-request-lifecycle-states"></a>Levetidstilstande for vedligeholdelsesanmodninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Livscyklustilstande for vedligeholdelsesanmodninger definerer de stadier, som en anmodning kan gennemgå. Som eksempler kan nævnes **Oprettede**, **Aktive** og **Afsluttede**. Når en vedligeholdelsesanmodning konverteres til en arbejdsordre, skal vedligeholdelsesanmodningens livscyklustilstand opdateres til **Afsluttet** eller **Lukket** for at angive, at vedligeholdelsesanmodningen ikke længere er aktiv. På listesiden **Alle vedligeholdelsesanmodninger** kan du se alle vedligeholdelsesanmodninger, uanset deres livscyklustilstand.
@@ -51,7 +51,7 @@ Livscyklustilstande for vedligeholdelsesanmodninger definerer de stadier, som en
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklustilstande**.
 
-![Figur 1](media/02-setup-for-requests.png)
+![Siden Livscyklustilstande for vedligeholdelsesanmodning](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Livscyklustilstande for vedligeholdelsesanmodninger, livscyklustilstandsgrupper og -typer er relateret til og bruges på samme måde som arbejdsordres livscyklustilstande, livscyklustilstandsgrupper og -typer. 
@@ -80,4 +80,4 @@ Når du har oprettet de livscyklustilstande, der kræves til dine vedligeholdels
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklusmodeller**.
 
-![Figur 2](media/06-setup-for-requests.png)
+![Siden Livscyklusmodeller for vedligeholdelsesanmodning](media/06-setup-for-requests.png)

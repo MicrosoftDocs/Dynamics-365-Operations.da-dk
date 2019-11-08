@@ -16,12 +16,12 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 903692f549bec17fe634c4ce9a33c2ebc4bd43dc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2a15a9cf0aa79f187735af3d65ac95814dd579c8
+ms.sourcegitcommit: e0b176c0b49ad147e60d6912aae2046dc0715bc9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174605"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564206"
 ---
 # <a name="budget-analysis-report"></a>Budgetanalyserapport
 
@@ -31,7 +31,7 @@ Du kan bruge **Budgetanalyse**-rapporten til at generere en opsummeret rapport, 
 
 Rapporten kan sorteres efter fond og derefter kontonummer. I hver fond viser rapporten subtotaler baseret på den økonomiske dimensionsopsætning, du har valgt at gruppere efter. Når du bruger navigationsruden til at gennemse aktiviteten, bestemmer grupperingen, hvordan aktiviteten vises der.
 
-Rapporten indeholder alle konti, der har en aktivitet i datointervallet for enten konti for indtægter eller udgifter. Den omfatter ikke nettototaler. (Nettototaler beregnes som indtægt minus udgifter).
+Rapporten indeholder alle konti, der har en aktivitet i datointervallet for enten konti for indtægter eller udgifter. Alle konti, der er markeret som en driftskontotype, medtages ikke i rapporten. Rapporten inkluderer heller ikke nettototaler. (Nettototaler beregnes som indtægt minus udgifter).
 
 Hvis du vil have vist flere oplysninger om en konto, skal du vælge kontonavnet eller -nummeret for at åbne formularen **Budgetanalyseforespørgsel**. Du kan få vist alle de transaktioner, der bidrager til beløbet i rapporten. Hvis du vil se transaktionerne, kan du få vist linkene til nedrulningsrapporten i rapporten. Vælg et link for at åbne en nedrulningsrapport, der indeholder transaktionsoplysninger om det reviderede budget, faktiske udgifter eller indtægter, behæftelser eller budgetreservationer. Nedrulningsrapporterne kan også omfatte ventende transaktioner.
 

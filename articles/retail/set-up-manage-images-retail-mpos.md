@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024838"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570650"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurere og administrere billeder til Retail Modern POS (MPOS)
 
@@ -83,9 +83,7 @@ I følgende procedurer er billeder angivet for enheden Katalog som et eksempel. 
     [![Dialogboksen Billeder](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Du kan bruge samme procedure for de fem enheder, der understøttes: arbejder, kunde, katalog, kategori og produkter. "Katalogprodukter" (produkter, der er angivet på katalogniveauet) og "Kanalprodukter" (produkter, der er angivet på kanalniveauet) bruger den medieskabelon, der er angivet for produktenheden. Du kan vælge antallet af produktbilleder, der skal vises pr. produkt, for medieskabelonen Produkter. Du kan også angive standardbilledet for et bestemt produkt. På denne måde kan du forhindre tomme billeder i MPOS og styre, hvilket billede der bruges som standardbilledet for en produktvare. Hvert produkt har fem billeder i eksemplet nedenfor, og det første billede er angivet som standardbilledet. Variantprodukter behandles på samme måde som masterprodukter. Filnavnet på billedfilen skal være baseret på produktnummeret. Nogle tegn er også escaped, mens filnavnet genereres. Det er derfor en god ide at kontrollere filnavnet ved at bruge afsnittet **Generér billed-URL-adresser til Excel**.
->
-> [![Dialogboksen Definer medieskabelon](./media/prods.png)](./media/prods.png)
+> Du kan bruge samme procedure for de fem enheder, der understøttes: arbejder, kunde, katalog, kategori og produkter. "Katalogprodukter" (produkter, der er angivet på katalogniveauet) og "Kanalprodukter" (produkter, der er angivet på kanalniveauet) bruger den medieskabelon, der er angivet for produktenheden. Du kan vælge antallet af produktbilleder, der skal vises pr. produkt, for medieskabelonen Produkter. Du kan også angive standardbilledet for et bestemt produkt. På denne måde kan du forhindre tomme billeder i MPOS og styre, hvilket billede der bruges som standardbilledet for en produktvare. Hvert produkt har fem billeder i eksemplet nedenfor, og det første billede er angivet som standardbilledet. Variantprodukter behandles på samme måde som masterprodukter. Filnavnet på billedfilen skal være baseret på produktnummeret. Nogle tegn er også escaped, mens filnavnet genereres. Det er derfor en god ide at kontrollere filnavnet ved at bruge afsnittet **Generér billed-URL-adresser til Excel**. Se afsnittet [Overskrive ved hjælp af Rediger i Excel](#overwrite-by-using-edit-in-excel) senere i denne artikel.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synkroniseringsjob, der skal sendes til en medieskabelon til kanalsiden
 
@@ -110,8 +108,6 @@ Som du har lært i forrige afsnit, understøtter medieskabelonen for en bestemt 
 
     > [!IMPORTANT]
     > Når medieskabelonen ændres, skal du klikke på **Generer**, før du kan bruge funktionen Rediger i Excel.
-
-    [![Generere billed-URL-adresser til Excel-oversigtspanel](./media/excel1.jpg)](./media/excel1.jpg)
 
     Du ser nu et eksempel på billed-URL-adresser, der blev genereret ud fra den senest gemte medieskabelon.
 

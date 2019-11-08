@@ -18,34 +18,34 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5271b673d758608cae8e43d72b7e75b259d5f142
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e3a42d36fd137aa780886276a4235f1b8f3a3680
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024608"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653341"
 ---
 # <a name="functional-locations-and-assets"></a>Arbejdssteder og aktiver
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I dette emne beskrives arbejdssteder og aktiver i Styring af aktiver. Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.
 
 ## <a name="overview"></a>Overblik
 
-Styring af aktiver kan problemfrit integreres med flere moduler i Finance and Operations. I følgende illustration vises grænsefladerne med andre moduler.
+Styring af aktiver kan problemfrit integreres med flere moduler i andre Finance and Operations-apps. I følgende illustration vises grænsefladerne med andre moduler.
 
-![Figur 1](media/01-overview-image.png)
+![Diagram, der viser, hvordan aktivstyring integreres med andre moduler](media/01-overview-image.png)
 
 Styring af aktiver giver dig mulighed for effektivt at administrere og udføre alle opgaver, der er relateret til administration og servicering af mange typer udstyr i din virksomhed. Dette udstyr omfatter maskiner, produktionsudstyr og køretøjer. Styring af aktiver understøtter også løsninger på tværs af adskillige brancher.
 
 I følgende illustration vises en oversigt over de vigtigste funktioner, der dækkes af Styring af aktiver.
 
-![Figur 2](media/02-overview-image.png)
+![Diagram, der viser de vigtigste funktioner i aktivstyring](media/02-overview-image.png)
 
-## <a name="functional-locations-and-assets"></a>Arbejdssteder og aktiver
+## <a name="functional-locations-and-assets"></a>Funktionelle placeringer og aktiver
 
 Arbejdssteder bruges til at administrere aktiver på lokationer. Denne styring omfatter sporing af aktivomkostninger på arbejdssteder. Arbejdssteder er struktureret hierarkisk, og lokationer kan have underlokationer. Strukturen af arbejdssteder er statisk. Med andre ord kan lokationer ikke skifte sted. Aktiver kan installeres på arbejdssteder og kan efter behov installeres på andre arbejdssteder senere.
 
@@ -53,8 +53,8 @@ Aktivomkostninger følger altid aktivets lokation. Hvis du med andre ord install
 
 Den måde, du opbygger hierarkiet af arbejdssteder på, afhænger af virksomhedens krav til vedligeholdelse af internt udstyr eller servicering af kundeudstyr. I følgende figur vises et eksempel på arbejdssteder, der er baseret på geografiske placeringer.
 
-![Figur 3](media/03-overview-image.png)
+![Diagram, der viser arbejdssteder baseret på geografiske placeringer](media/03-overview-image.png)
 
 I følgende figur vises et eksempel på arbejdssteder, der er baseret på kunder.
 
-![Figur 4](media/04-overview-image.png)
+![Diagram, der viser arbejdssteder baseret på kunder](media/04-overview-image.png)
