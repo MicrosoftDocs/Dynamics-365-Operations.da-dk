@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c07f303b72f286c33979181fca1592b47efa1303
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250938"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571225"
 ---
-# <a name="maintenance-attribute-types"></a><span data-ttu-id="04219-103">Vedligeholdelsesattributtyper</span><span class="sxs-lookup"><span data-stu-id="04219-103">Maintenance attribute types</span></span>
+# <a name="maintenance-attribute-types"></a><span data-ttu-id="78c17-103">Vedligeholdelsesattributtyper</span><span class="sxs-lookup"><span data-stu-id="78c17-103">Maintenance attribute types</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-<span data-ttu-id="04219-104">Dette emne beskriver, hvordan du opretter attributtyper i Styring af aktiver.</span><span class="sxs-lookup"><span data-stu-id="04219-104">This topic explains how to create attribute types in Asset Management.</span></span> <span data-ttu-id="04219-105">Attributter bruges til at beskrive egenskaberne for forskellige elementer.</span><span class="sxs-lookup"><span data-stu-id="04219-105">Attributes are used to describe the properties of various elements.</span></span> <span data-ttu-id="04219-106">Du kan konfigurere attributter for følgende elementer:</span><span class="sxs-lookup"><span data-stu-id="04219-106">You can set up attributes on the following elements:</span></span>
+<span data-ttu-id="78c17-104">Dette emne beskriver, hvordan du opretter attributtyper i Styring af aktiver.</span><span class="sxs-lookup"><span data-stu-id="78c17-104">This topic explains how to create attribute types in Asset Management.</span></span> <span data-ttu-id="78c17-105">Attributter bruges til at beskrive egenskaberne for forskellige elementer.</span><span class="sxs-lookup"><span data-stu-id="78c17-105">Attributes are used to describe the properties of various elements.</span></span> <span data-ttu-id="78c17-106">Du kan konfigurere attributter for følgende elementer:</span><span class="sxs-lookup"><span data-stu-id="78c17-106">You can set up attributes on the following elements:</span></span>
 
-- [<span data-ttu-id="04219-107">Arbejdsstedstyper</span><span class="sxs-lookup"><span data-stu-id="04219-107">Functional location types</span></span>](../setup-for-functional-locations/functional-location-types.md)
-- [<span data-ttu-id="04219-108">Arbejdssteder</span><span class="sxs-lookup"><span data-stu-id="04219-108">Functional locations</span></span>](../functional-locations/create-functional-locations.md)
-- [<span data-ttu-id="04219-109">Aktivtyper</span><span class="sxs-lookup"><span data-stu-id="04219-109">Asset types</span></span>](../setup-for-objects/object-types.md)
-- <span data-ttu-id="04219-110">Aktiver</span><span class="sxs-lookup"><span data-stu-id="04219-110">Assets</span></span>
+- [<span data-ttu-id="78c17-107">Arbejdsstedstyper</span><span class="sxs-lookup"><span data-stu-id="78c17-107">Functional location types</span></span>](../setup-for-functional-locations/functional-location-types.md)
+- [<span data-ttu-id="78c17-108">Arbejdssteder</span><span class="sxs-lookup"><span data-stu-id="78c17-108">Functional locations</span></span>](../functional-locations/create-functional-locations.md)
+- [<span data-ttu-id="78c17-109">Aktivtyper</span><span class="sxs-lookup"><span data-stu-id="78c17-109">Asset types</span></span>](../setup-for-objects/object-types.md)
+- <span data-ttu-id="78c17-110">Aktiver</span><span class="sxs-lookup"><span data-stu-id="78c17-110">Assets</span></span>
 
-<span data-ttu-id="04219-111">De attributter, du kan angive, varierer afhængigt af elementet.</span><span class="sxs-lookup"><span data-stu-id="04219-111">The attributes that you can set up vary, depending on the element.</span></span> <span data-ttu-id="04219-112">For et arbejdssted kan du eksempelvis oprette attributter til konfigurationen og den fysiske størrelse af stedet.</span><span class="sxs-lookup"><span data-stu-id="04219-112">For example, for a functional location, you can set up attributes for the configuration and physical size of the location.</span></span> <span data-ttu-id="04219-113">For en aktivtype eller et aktiv kan du konfigurere attributter for motorvolumen, strømforbrug og maksimal belastningskapacitet under forskellige forhold.</span><span class="sxs-lookup"><span data-stu-id="04219-113">For an asset type or an asset, you can set up attributes for engine volume, power consumption, and maximum load capacity under different conditions.</span></span>
+<span data-ttu-id="78c17-111">De attributter, du kan angive, varierer afhængigt af elementet.</span><span class="sxs-lookup"><span data-stu-id="78c17-111">The attributes that you can set up vary, depending on the element.</span></span> <span data-ttu-id="78c17-112">For et arbejdssted kan du eksempelvis oprette attributter til konfigurationen og den fysiske størrelse af stedet.</span><span class="sxs-lookup"><span data-stu-id="78c17-112">For example, for a functional location, you can set up attributes for the configuration and physical size of the location.</span></span> <span data-ttu-id="78c17-113">For en aktivtype eller et aktiv kan du konfigurere attributter for motorvolumen, strømforbrug og maksimal belastningskapacitet under forskellige forhold.</span><span class="sxs-lookup"><span data-stu-id="78c17-113">For an asset type or an asset, you can set up attributes for engine volume, power consumption, and maximum load capacity under different conditions.</span></span>
 
-## <a name="create-attribute-types"></a><span data-ttu-id="04219-114">Oprette attributtyper</span><span class="sxs-lookup"><span data-stu-id="04219-114">Create attribute types</span></span>
+## <a name="create-attribute-types"></a><span data-ttu-id="78c17-114">Oprette attributtyper</span><span class="sxs-lookup"><span data-stu-id="78c17-114">Create attribute types</span></span>
 
-<span data-ttu-id="04219-115">Du kan oprette dine egne attributtyper.</span><span class="sxs-lookup"><span data-stu-id="04219-115">You can create your own attribute types.</span></span> <span data-ttu-id="04219-116">Derudover kan du overføre produktdimensioner til siden **Attributtyper**.</span><span class="sxs-lookup"><span data-stu-id="04219-116">Additionally, you can transfer product dimensions to the **Attribute types** page.</span></span>
+<span data-ttu-id="78c17-115">Du kan oprette dine egne attributtyper.</span><span class="sxs-lookup"><span data-stu-id="78c17-115">You can create your own attribute types.</span></span> <span data-ttu-id="78c17-116">Derudover kan du overføre produktdimensioner til siden **Attributtyper**.</span><span class="sxs-lookup"><span data-stu-id="78c17-116">Additionally, you can transfer product dimensions to the **Attribute types** page.</span></span>
 
-1. <span data-ttu-id="04219-117">Vælg **Styring af aktiver** \> **Opsætning** \> **Attributtyper**.</span><span class="sxs-lookup"><span data-stu-id="04219-117">Select **Asset management** \> **Setup** \> **Attribute types**.</span></span>
-2. <span data-ttu-id="04219-118">Første gang du konfigurerer attributtyper, skal du vælge **Opret produktdimensioner** for automatisk at overføre standarderne for produktdimensioner.</span><span class="sxs-lookup"><span data-stu-id="04219-118">The first time that you set up attribute types, select **Create product dimensions** to automatically transfer standard product dimensions.</span></span>
-3. <span data-ttu-id="04219-119">Vælg **Ny** for at oprette en ny attributtype.</span><span class="sxs-lookup"><span data-stu-id="04219-119">Select **New** to create a new attribute type.</span></span>
-4. <span data-ttu-id="04219-120">Angiv et navn for attributtypen i feltet **Attributtype**.</span><span class="sxs-lookup"><span data-stu-id="04219-120">In the **Attribute type** field, enter a name for the attribute type.</span></span>
-5. <span data-ttu-id="04219-121">Indtast en beskrivelse i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="04219-121">In the **Description** field, enter a description.</span></span>
-6. <span data-ttu-id="04219-122">Vælg den relevante attributenhed efter behov i feltet **Enhed**.</span><span class="sxs-lookup"><span data-stu-id="04219-122">In the **Unit** field, select the relevant attribute unit, as required.</span></span>
-7. <span data-ttu-id="04219-123">Vælg en datatype for enheden i feltet **Datatype**.</span><span class="sxs-lookup"><span data-stu-id="04219-123">In the **Data type** field, select a data type for the unit.</span></span>
-8. <span data-ttu-id="04219-124">Hvis du har valgt **Streng** som datatype, skal du følge disse trin for at oprette værdier for attributtypen:</span><span class="sxs-lookup"><span data-stu-id="04219-124">If you selected **String** as the data type, follow these steps to create values for the attribute type:</span></span>
+1. <span data-ttu-id="78c17-117">Vælg **Styring af aktiver** \> **Opsætning** \> **Attributtyper**.</span><span class="sxs-lookup"><span data-stu-id="78c17-117">Select **Asset management** \> **Setup** \> **Attribute types**.</span></span>
+2. <span data-ttu-id="78c17-118">Første gang du konfigurerer attributtyper, skal du vælge **Opret produktdimensioner** for automatisk at overføre standarderne for produktdimensioner.</span><span class="sxs-lookup"><span data-stu-id="78c17-118">The first time that you set up attribute types, select **Create product dimensions** to automatically transfer standard product dimensions.</span></span>
+3. <span data-ttu-id="78c17-119">Vælg **Ny** for at oprette en ny attributtype.</span><span class="sxs-lookup"><span data-stu-id="78c17-119">Select **New** to create a new attribute type.</span></span>
+4. <span data-ttu-id="78c17-120">Angiv et navn for attributtypen i feltet **Attributtype**.</span><span class="sxs-lookup"><span data-stu-id="78c17-120">In the **Attribute type** field, enter a name for the attribute type.</span></span>
+5. <span data-ttu-id="78c17-121">Indtast en beskrivelse i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="78c17-121">In the **Description** field, enter a description.</span></span>
+6. <span data-ttu-id="78c17-122">Vælg den relevante attributenhed efter behov i feltet **Enhed**.</span><span class="sxs-lookup"><span data-stu-id="78c17-122">In the **Unit** field, select the relevant attribute unit, as required.</span></span>
+7. <span data-ttu-id="78c17-123">Vælg en datatype for enheden i feltet **Datatype**.</span><span class="sxs-lookup"><span data-stu-id="78c17-123">In the **Data type** field, select a data type for the unit.</span></span>
+8. <span data-ttu-id="78c17-124">Hvis du har valgt **Streng** som datatype, skal du følge disse trin for at oprette værdier for attributtypen:</span><span class="sxs-lookup"><span data-stu-id="78c17-124">If you selected **String** as the data type, follow these steps to create values for the attribute type:</span></span>
 
-    1. <span data-ttu-id="04219-125">Vælg attributtypen, og vælg dernæst **Værdier**.</span><span class="sxs-lookup"><span data-stu-id="04219-125">Select the attribute type, and then select **Values**.</span></span>
-    2. <span data-ttu-id="04219-126">Vælg **Ny** i feltet **Attributværdier**.</span><span class="sxs-lookup"><span data-stu-id="04219-126">In the **Attribute values** field, select **New**.</span></span>
-    3. <span data-ttu-id="04219-127">Vælg en attributtype (dimension) i feltet **Attributtype**.</span><span class="sxs-lookup"><span data-stu-id="04219-127">In the **Attribute type** field, select an attribute type (dimension).</span></span>
-    4. <span data-ttu-id="04219-128">Indtast en relateret værdi i feltet **Værdi**.</span><span class="sxs-lookup"><span data-stu-id="04219-128">In the **Value** field, enter a related value.</span></span>
-    5. <span data-ttu-id="04219-129">Indtast en beskrivelse i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="04219-129">In the **Description** field, enter a description.</span></span>
-    6. <span data-ttu-id="04219-130">Gem posten.</span><span class="sxs-lookup"><span data-stu-id="04219-130">Save the record.</span></span>
-    7. <span data-ttu-id="04219-131">Vend tilbage til siden **Attributtyper**.</span><span class="sxs-lookup"><span data-stu-id="04219-131">Return to the **Attribute types** page.</span></span>
+    1. <span data-ttu-id="78c17-125">Vælg attributtypen, og vælg dernæst **Værdier**.</span><span class="sxs-lookup"><span data-stu-id="78c17-125">Select the attribute type, and then select **Values**.</span></span>
+    2. <span data-ttu-id="78c17-126">Vælg **Ny** i feltet **Attributværdier**.</span><span class="sxs-lookup"><span data-stu-id="78c17-126">In the **Attribute values** field, select **New**.</span></span>
+    3. <span data-ttu-id="78c17-127">Vælg en attributtype (dimension) i feltet **Attributtype**.</span><span class="sxs-lookup"><span data-stu-id="78c17-127">In the **Attribute type** field, select an attribute type (dimension).</span></span>
+    4. <span data-ttu-id="78c17-128">Indtast en relateret værdi i feltet **Værdi**.</span><span class="sxs-lookup"><span data-stu-id="78c17-128">In the **Value** field, enter a related value.</span></span>
+    5. <span data-ttu-id="78c17-129">Indtast en beskrivelse i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="78c17-129">In the **Description** field, enter a description.</span></span>
+    6. <span data-ttu-id="78c17-130">Gem posten.</span><span class="sxs-lookup"><span data-stu-id="78c17-130">Save the record.</span></span>
+    7. <span data-ttu-id="78c17-131">Vend tilbage til siden **Attributtyper**.</span><span class="sxs-lookup"><span data-stu-id="78c17-131">Return to the **Attribute types** page.</span></span>
 
-9. <span data-ttu-id="04219-132">Gem posten.</span><span class="sxs-lookup"><span data-stu-id="04219-132">Save the record.</span></span>
+9. <span data-ttu-id="78c17-132">Gem posten.</span><span class="sxs-lookup"><span data-stu-id="78c17-132">Save the record.</span></span>
 
-    <span data-ttu-id="04219-133">Feltet **Arbejdsstedstyper** viser antallet af arbejdssteder, der bruger attributtypen.</span><span class="sxs-lookup"><span data-stu-id="04219-133">The **Functional location types** field shows the number of functional locations that are using the attribute type.</span></span> <span data-ttu-id="04219-134">Feltet **Aktivtyper** viser antallet af aktivtyper, der bruger det.</span><span class="sxs-lookup"><span data-stu-id="04219-134">The **Asset types** field shows the number of asset types that are using it.</span></span>
+    <span data-ttu-id="78c17-133">Feltet **Arbejdsstedstyper** viser antallet af arbejdssteder, der bruger attributtypen.</span><span class="sxs-lookup"><span data-stu-id="78c17-133">The **Functional location types** field shows the number of functional locations that are using the attribute type.</span></span> <span data-ttu-id="78c17-134">Feltet **Aktivtyper** viser antallet af aktivtyper, der bruger det.</span><span class="sxs-lookup"><span data-stu-id="78c17-134">The **Asset types** field shows the number of asset types that are using it.</span></span>

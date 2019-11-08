@@ -1,6 +1,6 @@
 ---
-title: Aktiver forsinket momsberegning på kladde
-description: I dette emne forklares det, hvordan du kan bruge funktionen **Aktiver forsinket momsberegning på kladde** til at forbedre ydeevnen for momsberegningen, når antallet af kladdelinjer er stort.
+title: Aktivere forsinket momsberegning på kladder
+description: I dette emne forklares det, hvordan du kan bruge funktionen Forsinket momsberegning til at forbedre ydeevnen af momsberegninger, når antallet af kladdelinjer er meget stort.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176936"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623515"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a><span data-ttu-id="1ec37-103">Aktiver forsinket momsberegning på kladde</span><span class="sxs-lookup"><span data-stu-id="1ec37-103">Enable delayed tax calculation on journal</span></span>
+# <a name="enable-delayed-tax-calculation-on-journals"></a><span data-ttu-id="5dea1-103">Aktivere forsinket momsberegning på kladder</span><span class="sxs-lookup"><span data-stu-id="5dea1-103">Enable delayed tax calculation on journals</span></span>
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="1ec37-104">I dette emne forklares det, hvordan du kan bruge funktionen **Aktiver forsinket momsberegning på kladde** til at forbedre ydeevnen for momsberegningen, når antallet af kladdelinjer er stort.</span><span class="sxs-lookup"><span data-stu-id="1ec37-104">This topic explains how to use the **Enable delayed tax calculation on journal** feature to improve tax calculation performance when the volume of journal lines is huge.</span></span>
+<span data-ttu-id="5dea1-104">Dette emne forklarer, hvordan du kan forsinke momsberegningen på kladder.</span><span class="sxs-lookup"><span data-stu-id="5dea1-104">This topic explains how you can delay sales tax calculation on journals.</span></span> <span data-ttu-id="5dea1-105">Denne facilitet hjælper med at forbedre ydeevnen af momsberegninger, når der er mange kladdelinjer.</span><span class="sxs-lookup"><span data-stu-id="5dea1-105">This capability helps improve the performance of tax calculations when there are many journal lines.</span></span>
 
-<span data-ttu-id="1ec37-105">Den aktuelle beregningsmåde for moms i kladden udløses i realtid, når brugeren opdaterer momsrelaterede felter, f.eks. momsgruppe/varemomsgruppe.</span><span class="sxs-lookup"><span data-stu-id="1ec37-105">Current sales tax calculation behavior on journal is real-time triggered when user updates tax related fields, e.g. sales tax group/item sales tax group.</span></span> <span data-ttu-id="1ec37-106">Hvis der opdateres på kladdelinjeniveau, beregnes momsbeløbet igen på alle kladdelinjer.</span><span class="sxs-lookup"><span data-stu-id="1ec37-106">Any update at journal line level will re-calculate tax amount on all journal lines.</span></span> <span data-ttu-id="1ec37-107">Det hjælper brugeren med at få vist beregnet momsbeløb i realtid, men det kan også give problemer med ydeevnen, hvis antallet af kladdelinjer er stort.</span><span class="sxs-lookup"><span data-stu-id="1ec37-107">It helps user to see real-time calculated tax amount but it could also bring performance issue if  the volume of journal lines is huge.</span></span>
+<span data-ttu-id="5dea1-106">Momsbeløb på kladdelinjer beregnes som standard, når momsrelaterede felter opdateres.</span><span class="sxs-lookup"><span data-stu-id="5dea1-106">By default, sales tax amounts on journal lines are calculated whenever tax-related fields are updated.</span></span> <span data-ttu-id="5dea1-107">Disse felter omfatter felterne til momsgrupper og varemomsgrupper.</span><span class="sxs-lookup"><span data-stu-id="5dea1-107">These fields include the fields for sales tax groups and item sales tax groups.</span></span> <span data-ttu-id="5dea1-108">Enhver opdatering af en kladdelinje medfører, at momsbeløb genberegnes for alle kladdelinjer.</span><span class="sxs-lookup"><span data-stu-id="5dea1-108">Any update to a journal line causes tax amounts to be recalculated for all journal lines.</span></span> <span data-ttu-id="5dea1-109">Selvom denne funktionsmåde hjælper brugeren med at se momsbeløb beregnet i realtid, kan det også påvirke ydeevnen, hvis antallet af kladdelinjer er meget stort.</span><span class="sxs-lookup"><span data-stu-id="5dea1-109">Although this behavior helps user see tax amounts calculated in real time, it can also affect performance if the number of journal lines is very large.</span></span>
 
-<span data-ttu-id="1ec37-108">Denne funktion giver mulighed for at udsætte momsberegningen for at løse problemer med ydeevnen.</span><span class="sxs-lookup"><span data-stu-id="1ec37-108">This feature provides an option to delay tax calculation to solve performance issue.</span></span> <span data-ttu-id="1ec37-109">Hvis denne funktion er slået til, vil momsbeløbet kun blive beregnet, når brugeren klikker på "Moms" eller bogfører kladden.</span><span class="sxs-lookup"><span data-stu-id="1ec37-109">If this feature is turned on, tax amount will only be calculated when user clicks "Sales Tax" command or posts the journal.</span></span>
+<span data-ttu-id="5dea1-110">Med funktionen til forsinket beregning af moms kan du forsinke momsberegningen på kladder og dermed løse problemer med ydeevnen.</span><span class="sxs-lookup"><span data-stu-id="5dea1-110">The Delayed tax calculation feature lets you delay tax calculation on journals and therefore helps fix performance issues.</span></span> <span data-ttu-id="5dea1-111">Hvis denne funktion er slået til, vil momsbeløb kun blive beregnet, når brugeren vælger **Moms** eller bogfører kladden.</span><span class="sxs-lookup"><span data-stu-id="5dea1-111">When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.</span></span>
 
-<span data-ttu-id="1ec37-110">Brugeren kan slå parameteren til og fra på tre niveauer:</span><span class="sxs-lookup"><span data-stu-id="1ec37-110">User can turn on/off the parameter at three levels:</span></span>
-- <span data-ttu-id="1ec37-111">af juridisk enhed</span><span class="sxs-lookup"><span data-stu-id="1ec37-111">By legal entity</span></span>
-- <span data-ttu-id="1ec37-112">efter kladdenavn</span><span class="sxs-lookup"><span data-stu-id="1ec37-112">By journal name</span></span>
-- <span data-ttu-id="1ec37-113">efter kladdehoved</span><span class="sxs-lookup"><span data-stu-id="1ec37-113">By journal header</span></span>
+<span data-ttu-id="5dea1-112">Du kan forsinke beregningen af moms på tre niveauer:</span><span class="sxs-lookup"><span data-stu-id="5dea1-112">You can delay the calculation of sales taxes at three levels:</span></span>
 
-<span data-ttu-id="1ec37-114">Systemet vil tage parameterværdien i kladdehovedet som endelig.</span><span class="sxs-lookup"><span data-stu-id="1ec37-114">System will take the parameter value on journal header as final.</span></span> <span data-ttu-id="1ec37-115">Parameterværdien til kladdeoverskriften bruges som standard fra kladdenavn.</span><span class="sxs-lookup"><span data-stu-id="1ec37-115">Parameter value on journal header will be defaulted from journal name.</span></span> <span data-ttu-id="1ec37-116">Parameterværdien på kladdenavnet angives som standard fra finanskladdeparameteren, når kladdenavnet oprettes.</span><span class="sxs-lookup"><span data-stu-id="1ec37-116">Parameter value on journal name will be defaulted from general ledger parameter when the journal name is created.</span></span>
+- <span data-ttu-id="5dea1-113">Juridisk enhed</span><span class="sxs-lookup"><span data-stu-id="5dea1-113">Legal entity</span></span>
+- <span data-ttu-id="5dea1-114">Kladdenavn</span><span class="sxs-lookup"><span data-stu-id="5dea1-114">Journal name</span></span>
+- <span data-ttu-id="5dea1-115">Kladdehoved</span><span class="sxs-lookup"><span data-stu-id="5dea1-115">Journal header</span></span>
 
-<span data-ttu-id="1ec37-117">Felterne "Faktisk momsbeløb" og "Beregnet momsbeløb" i kladden vil blive skjult, hvis denne parameter er slået til.</span><span class="sxs-lookup"><span data-stu-id="1ec37-117">"Actual sales tax amount" and "Calculated sales tax amount" fields on journal will be hided if this parameter is turned on.</span></span> <span data-ttu-id="1ec37-118">Formålet er ikke at forvirre brugeren, fordi værdien af disse to felter altid vil vise 0, før brugeren udløser momsberegningen.</span><span class="sxs-lookup"><span data-stu-id="1ec37-118">The purpose is not to confuse user because the value of these two fields will always show 0 before user trigger the tax calculation.</span></span>
+<span data-ttu-id="5dea1-116">Systemet giver prioriteten til indstillingen for kladdehovedet.</span><span class="sxs-lookup"><span data-stu-id="5dea1-116">The system gives priority to the setting for the journal header.</span></span> <span data-ttu-id="5dea1-117">Denne indstilling hentes som standard fra kladdenavnet.</span><span class="sxs-lookup"><span data-stu-id="5dea1-117">By default, this setting is taken from the journal name.</span></span> <span data-ttu-id="5dea1-118">Indstillingen for kladdenavnet hentes som standard fra indstillingen på siden **Finansparametre**, når kladdenavnet oprettes.</span><span class="sxs-lookup"><span data-stu-id="5dea1-118">By default, the setting for the journal name is taken from the setting on the **General ledger parameters** page when the journal name is created.</span></span> <span data-ttu-id="5dea1-119">I følgende afsnit forklares det, hvordan du aktiverer forsinket momsberegning for juridiske enheder, kladdenavne og kladdehoveder.</span><span class="sxs-lookup"><span data-stu-id="5dea1-119">The following sections explain how to turn on delayed tax calculation for legal entities, journal names, and journal headers.</span></span>
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a><span data-ttu-id="1ec37-119">Aktivér udsat beregning af moms efter juridisk enhed</span><span class="sxs-lookup"><span data-stu-id="1ec37-119">Enable delayed tax calculation by legal entity</span></span>
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a><span data-ttu-id="5dea1-120">Aktivere forsinket momsberegning på juridisk enhedsniveau</span><span class="sxs-lookup"><span data-stu-id="5dea1-120">Turn on delayed tax calculation at the legal entity level</span></span>
 
-1. <span data-ttu-id="1ec37-120">Gå til **Finans > Opsætning Finans > Finansparametre**.</span><span class="sxs-lookup"><span data-stu-id="1ec37-120">Go to **General ledger > Ledger setup > General ledger parameters**</span></span>
-2. <span data-ttu-id="1ec37-121">Klik på fanen **Moms**</span><span class="sxs-lookup"><span data-stu-id="1ec37-121">Click **Sales tax** tab</span></span>
-3. <span data-ttu-id="1ec37-122">Under fanen **Generelt** kan du finde parameteren **Forsinket momsberegning**, slå den til/fra</span><span class="sxs-lookup"><span data-stu-id="1ec37-122">Under **General** fast tab, find parameter **Delayed tax calculation**, turn on/off it</span></span>
+1. <span data-ttu-id="5dea1-121">Gå til **Finans \> Opsætning Finans \> Finansparametre**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-121">Go to **General ledger \> Ledger setup \> General ledger parameters**.</span></span>
+2. <span data-ttu-id="5dea1-122">Under fanen **Moms** i oversigtspanelet **Generelt** skal du vælge **Ja** i indstillingen **Forsinket momsberegning**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-122">On the **Sales tax** tab, on the **General** FastTab, set the **Delayed tax calculation** option to **Yes**.</span></span>
 
-![](media/delayed-tax-calculation-gl.png)
+![Billede af finansparametre](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a><span data-ttu-id="5dea1-124">Aktivere forsinket momsberegning på kladdenavnsniveau</span><span class="sxs-lookup"><span data-stu-id="5dea1-124">Turn on delayed tax calculation at the journal name level</span></span>
 
+1. <span data-ttu-id="5dea1-125">Gå til **Finans \> Kladdeopsætning \> Kladdenavne**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-125">Go to **General ledger \> Journal setup \> Journal names**.</span></span>
+2. <span data-ttu-id="5dea1-126">I sektionen **Moms** i oversigtspanelet **Generelt** skal du vælge **Ja** i indstillingen **Forsinket momsberegning**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-126">On the **General** FastTab, in the **Sales tax** section, set the **Delayed tax calculation** option to **Yes**.</span></span>
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a><span data-ttu-id="1ec37-123">Aktiver forsinket momsberegning efter kladdenavn</span><span class="sxs-lookup"><span data-stu-id="1ec37-123">Enable delayed tax calculation by journal name</span></span>
+![Billede af kladdenavne](media/delayed-tax-calculation-journal-name.png)
 
-1. <span data-ttu-id="1ec37-124">Gå til **Finans > Kladdeopsætning > Kladdenavne**.</span><span class="sxs-lookup"><span data-stu-id="1ec37-124">Go to **General ledger > Journal setup > Journal names**</span></span>
-2. <span data-ttu-id="1ec37-125">Under fanen **Generelt** kan du finde parameteren **Forsinket momsberegning**, slå den til/fra</span><span class="sxs-lookup"><span data-stu-id="1ec37-125">Under **General** fast tab, find parameter **Delayed tax calculation**, turn on/off it</span></span>
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a><span data-ttu-id="5dea1-128">Aktivere forsinket momsberegning på kladdehovedniveau</span><span class="sxs-lookup"><span data-stu-id="5dea1-128">Turn on delayed tax calculation at the journal header level</span></span>
 
-![](media/delayed-tax-calculation-journal-name.png)
+1. <span data-ttu-id="5dea1-129">Gå til **Finans \> Kladdeposteringer \> Finanskladder**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-129">Go to **General ledger \> Journal entries \> General journals**.</span></span>
+2. <span data-ttu-id="5dea1-130">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-130">Select **New**.</span></span>
+3. <span data-ttu-id="5dea1-131">Vælg et kladdenavn.</span><span class="sxs-lookup"><span data-stu-id="5dea1-131">Select a journal name.</span></span>
+4. <span data-ttu-id="5dea1-132">Under fanen **Opsætning** skal du angive indstillingen **Forsinket momsberegning** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="5dea1-132">On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.</span></span>
 
-## <a name="enable-delayed-tax-calculation-by-journal"></a><span data-ttu-id="1ec37-126">Aktiver forsinket momsberegning efter kladde</span><span class="sxs-lookup"><span data-stu-id="1ec37-126">Enable delayed tax calculation by journal</span></span>
-
-1. <span data-ttu-id="1ec37-127">Gå til **Finans > Kladdeposteringer > Finanskladder**.</span><span class="sxs-lookup"><span data-stu-id="1ec37-127">Go to **General ledger > Journal entries > General journals**</span></span>
-2. <span data-ttu-id="1ec37-128">Klik på **Ny**</span><span class="sxs-lookup"><span data-stu-id="1ec37-128">Click **New**</span></span>
-3. <span data-ttu-id="1ec37-129">Vælg et kladdenavn</span><span class="sxs-lookup"><span data-stu-id="1ec37-129">Select a journal name</span></span>
-4. <span data-ttu-id="1ec37-130">Klik på **Opsætning**.</span><span class="sxs-lookup"><span data-stu-id="1ec37-130">Click **Setup**</span></span>
-5. <span data-ttu-id="1ec37-131">Find parameteren **Forsinket momsberegning**, slå den til/fra</span><span class="sxs-lookup"><span data-stu-id="1ec37-131">Find parameter **Delayed tax calculation**, turn on/off it</span></span>
-
-![](media/delayed-tax-calculation-journal-header.png)
+![Billede af siden Finanskladde](media/delayed-tax-calculation-journal-header.png)
