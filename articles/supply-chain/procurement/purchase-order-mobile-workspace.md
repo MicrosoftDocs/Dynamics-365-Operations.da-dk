@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 33e5993f57a8c0248ac2e314f91cc40a2b355858
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249419"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653458"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Arbejdsområdet Godkendelse af indkøbsordre til mobilenheder
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Godkendelse af indkøbsordre** på mobilenheder. I dette arbejdsområde kan du få vist indkøbsordrer og reagere på dem med handlinger. Du kan f.eks. godkende eller afvise en indkøbsordre.
  
@@ -41,7 +39,7 @@ I arbejdsområdet **Godkendelse af indkøbsordre** til mobilenheder kan du nemt 
 Forudsætningerne varierer alt efter, hvilken version af Supply Chain Management der er installeret i din organisation.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forudsætninger, hvis du bruger Supply Chain Management 
-Hvis Finance and Operations er implementeret for organisationen, skal systemadministratoren publicere mobilarbejdsområdet **Godkendelse af indkøbsordre**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Hvis Supply Chain Management er implementeret for din organisation, skal systemadministratoren publicere mobilarbejdsområdet **Godkendelse af indkøbsordre**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere
 Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger. 

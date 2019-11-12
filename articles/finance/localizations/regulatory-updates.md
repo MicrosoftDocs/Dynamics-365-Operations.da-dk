@@ -3,7 +3,7 @@ title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc5a9669a9c6c298a4f9df52346b8a075ba177e0
-ms.sourcegitcommit: a4e1a28b4733f3356e5a2237c8ba5d93f9799391
+ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2517305"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653198"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -28,9 +28,7 @@ ms.locfileid: "2517305"
 
 I dette emne beskrives de lovmæssige opdateringer, der er planlagt og frigivet i Dynamics 365 Finance-understøttede lokaliseringer. Leveringstidslinjer kan blive ændret og planlagte funktioner kan være anderledes eller måske ikke frigivet. Læs [Microsofts politik](https://go.microsoft.com/fwlink/p/?linkid=2007332), hvor du kan finde flere oplysninger. 
 
-Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land. Du kan finde flere oplysninger om andre planlagte og frigivne funktioner, der gælder specifikt for de enkelte lande, i følgende ressourcer:
-- [Dynamics 365- og Power Platform-frigivelsesnoter](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Nyheder i Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
+Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land. Du kan finde flere oplysninger om planlagte og frigivne funktioner, der gælder specifikt for de enkelte lande, i [Produktbemærkninger til Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft bestræber sig på at gennemføre nye lovkrav så tidligt som muligt. Den faktiske leveringsdato afhænger af datoen for lovens offentliggørelse, de lokale myndigheders tilvejebringelse af deltaljerede oplysninger om lovkravene, valideringsværktøjernes tilgængelighed samt af ændringens omfang og kompleksitet.
 
@@ -44,13 +42,19 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 
 |Planlagt frigivelsesdato|Release-version|Land/område|Lovmæssig opdatering|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.10    |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.20    |
-|      August 2019          |   10.0.6(PEAP)      | Brasilien      |   DRCST-erklæring-SC   |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF      | Brasilien     |   Ny lovgivning er implementeret i RJ-tilstand vedrørende EFD-ICMS/IPI. Resolution 13/19 for Rio de Janeiro (RJ)-implementeringen er til "Særlige procedurer, der skal anvendes på Exoneration     |
-|      August 2019          |   10.0.6(PEAP)      | Brasilien      |   Momsangivelse CAT 42/18    |
-|      August 2019          |   10.0.6(PEAP)      | Italien      |   Ændringer i momsstyring efter D.L. 119 pr. 23. okt 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Ændring af forbrugsmomssats og reduceret momssats introduceres    |
+|      November 2019          |   10.0.7(PEAP)      | Italien      |   Ændringer i momsstyring efter D.L. 119 pr. 23. okt. 2019: kvartalsvis momsindberetning ("Lipe 2018")    |
+|      November 2019          |   10.0.7(PEAP)      | Italien      |   Detail - Administrere kundeoplysninger i POS |
+|      November 2019          |   10.0.7(PEAP)      | Italien      |   Detail - Udskrive kundeoplysninger i regnskabskvittering | 
+|      November 2019          |   10.0.7(PEAP)      | Japan      |   Ændring af forbrugsmomssats og reduceret momssats introduceres (fakturalayout) | 
+|      November 2019          |   10.0.7(PEAP)      | Mexico      |   Opdaterer regel 2.7.2.9 - Bruge tidszonen for postnummeret i den virksomhed, der udsteder CFDI-dokumentet. | 
+|      November 2019          |   10.0.7(PEAP)      | Storbritannien     |   Gøre moms digital - Oprettelse af indberetning af moms for firmaer, der indberetter som momsgruppe i samme systemdatabase v. 10 | 
+|      November - august 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.20    |
+|      November - august 2019          |   10.0.7(PEAP), 10.0.6      | Brasilien      |   DRCST-erklæring-SC   |
+|      November - august 2019          |   10.0.7(PEAP), 10.0.6      | Italien      |   Ændringer i momsstyring efter D.L. 119 pr. 23. okt. 2018 - Dynamics 365 for Finance and Operations  |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.10    |
+|      August 2019          |   10.0.6, 10.0.5HF      | Brasilien     |   Ny lovgivning er implementeret i RJ-tilstand vedrørende EFD-ICMS/IPI. Resolution 13/19 for Rio de Janeiro (RJ)-implementeringen er til "Særlige procedurer, der skal anvendes på Exoneration     |
+|      August 2019          |   10.0.6      | Brasilien      |   Momsangivelse CAT 42/18    |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Ændring af forbrugsmomssats og reduceret momssats introduceres    |
 |      August - juli 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Spanien      |   Spanien: SII: Valideringsregler ændres fra 1. oktober 2019    |
 |      Juli 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brasilien      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.00  |
 |      Juli 2019          |   10.0.5      | Brasilien      |   Praktisk vejledning 1.31 vedrørende sped-bidrag. ny vejledning    |
@@ -66,7 +70,7 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 |      2019. april          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brasilien     |   SPED ECD-layout 7    |
 |      2019. april          |   10.0.3      | Brasilien      |   SPED ECF - Layout 5 for 2019    |
 |      2019. april          |   10.0.3      | Indien      |   Momsregulering i toldvaluta i BOE i stedet for i transaktionsvaluta    |
-|      2019. april          |   10.0.3      | Indien      |   Momsberegning i toldvaluta i veksel i stedet for i transaktionsvaluta)    |
+|      2019. april          |   10.0.3      | Indien      |   Momsberegning i toldvaluta i veksel i stedet for i transaktionsvaluta   |
 |      2019. april          |   10.0.3, 10.02HF, 10.0.1HF      | Indien      |   Ændring af IEC-nummerformat    |
 |      2019. april          |   10.0.3      | Litauen      |   Litauen i.SAF-rapport kan brugeren definere systemmomskoder i tilknytning til juridiske momskoder)    |
 |      2019. april          |   10.0.3      | Polen      |   SAF-fakturaer (JPK_FA) v.2 fra 1. juli 2019.    |

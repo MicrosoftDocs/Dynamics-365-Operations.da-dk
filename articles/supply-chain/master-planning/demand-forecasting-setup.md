@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249557"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653505"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -72,7 +72,7 @@ Supply Chain Management anvender en Machine Learning-webtjeneste til at generere
 
 **Bemærk!** Navn og nøgle til Azure-lageret er kun påkrævet, hvis du bruger en brugerdefineret lagerkonto. Hvis du installerer den lokale version, skal du have en brugerdefineret lagerkonto på Azure, så Machine Learning-tjenesten kan få adgang til de historiske data. 
 
-Hvis du vil oprette prognoseforudsigelser, kan du installere din egen tjeneste ved hjælp af Machine Learning Studio eller forsøg med Supply Chain Management-behovsprognoser. Instruktioner til installation af forsøg med behovsprognoser som en webtjeneste er tilgængelig i Finance and Operations. På siden **Parametre til behovsprognoser** skal du klikke på fanen **Azure Machine Learning**.
+Hvis du vil oprette prognoseforudsigelser, kan du installere din egen tjeneste ved hjælp af Machine Learning Studio eller forsøg med Supply Chain Management-behovsprognoser. Instruktioner til installation af forsøg med behovsprognoser som en webtjeneste er tilgængelig i Supply Chain Management. På siden **Parametre til behovsprognoser** skal du klikke på fanen **Azure Machine Learning**.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Indstillinger for Machine Learning-tjenesten til behovsprognoser
 For at få vist de parametre, der kan konfigureres for tjenesten til behovsprognoser, skal du gå til **Varedisponering** &gt; **Konfiguration** &gt; **Behovsprognoser** &gt; **Parametre til prognosealgoritme**. Siden **Parametre til prognosealgoritme** viser standardværdierne for parametrene. Du kan overskrive disse parametre på siden **Parametre til behovsprognoser**. Brug fanen **Generelt** for at overskrive parametrene globalt, eller brug fanen **Varefordelingsnøgler** til at overskrive parametrene pr. varefordelingsnøgle. Parametre, der er overskrevet for en varefordelingsnøgle, påvirker kun prognosen for varer, der er knyttet til den varefordelingsnøgle.

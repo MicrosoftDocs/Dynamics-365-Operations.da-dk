@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9091ff7a394cd08b68e78c8f668d7cd962003e6d
-ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
+ms.openlocfilehash: 65d95507e27ade373008e2046ac4691c271484ca
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1886764"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652442"
 ---
 # <a name="calculate-item-forecast"></a>Beregn varebudget
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Ligesom du kan foretage kapacitetsbelastningsberegninger, som er beskrevet i forrige afsnit, kan du også foretage beregninger af varebudgettet på
+Ligesom du kan foretage kapacitetsbelastningsberegninger, som er beskrevet i forrige afsnit, kan du også foretage beregninger af varebudgettet på:
 
-- Vedligeholdelsestidsplanslinjer  
-- Arbejdsordrer, der endnu ikke er planlagt  
-- Planlagte arbejdsordrer
+- vedligeholdelsestidsplanslinjer  
+- arbejdsordrer, der endnu ikke er planlagt  
+- planlagte arbejdsordrer
 
 Dette er nyttigt, hvis du vil have en oversigt over forventet vareforbrug (reservedele og andre varer, der kræves for at udføre arbejdsordrer) i en bestemt periode. Beregning af varebudget kan foretages på alle aktiver eller udvalgte aktiver. Du kan også foretage en beregning på en aktivitet for vedligeholdelsesnedetid (**Alle aktiviteter for vedligeholdelsesnedetid** eller **Aktive aktiviteter for vedligeholdelsesnedetid**) eller på en arbejdsordrepulje (**Alle arbejdsordrepuljer** eller **Aktive arbejdsordre puljer**).
 
@@ -47,14 +47,16 @@ Dette er nyttigt, hvis du vil have en oversigt over forventet vareforbrug (reser
 
 4. Vælg "Ja" på knappen **Medtag arbejdsordre**, hvis du vil medtage arbejdsordrejob i budgetberegningen.
 
-5. Du kan bruge feltet **Niveau** til at angive, hvor detaljerede varebudgetlinjerne skal være i forbindelse med arbejdssteder. Hvis du f.eks. indsætter tallet "1" i feltet, og du har en arbejdsstedsstruktur med flere niveauer, vises alle vedligeholdelsestidsplanslinjer og arbejdsordrer for et arbejdssted på det øverste niveau, og derfor kan timerne på en linje være opsummeret fra arbejdssteder, der findes på et lavere niveau. Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle vedligeholdelsestidsplanlinjer og alle arbejdsordrer på alle de arbejdsstedsniveauer, de er relateret til.
+5. Du kan bruge feltet **Niveau** til at angive, hvor detaljerede varebudgetlinjerne skal være i forbindelse med arbejdssteder. 
+
+      Hvis du f.eks. indsætter tallet "1" i feltet, og du har en arbejdsstedsstruktur med flere niveauer, vises alle vedligeholdelsestidsplanslinjer og arbejdsordrer for et arbejdssted på det øverste niveau, og derfor kan timerne på en linje være opsummeret fra arbejdssteder, der findes på et lavere niveau. 
+  
+      Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle vedligeholdelsestidsplanlinjer og alle arbejdsordrer på alle de arbejdsstedsniveauer, de er relateret til.
 
 6. Klik på **OK** for at starte beregningen.
 
-7. I **Sammenlæg pr.**-handlingsrudegrupperne skal du klikke på de relevante knapper for at få vist det nødvendige detaljeringsniveau i beregningen. De valgte handlingsrudegrupper er fremhævet med blåt. Klik på en knap for at aktivere eller deaktivere den.
+7. I **Sammenlæg pr.**-grupperne skal du klikke på de relevante knapper for at få vist det nødvendige detaljeringsniveau i beregningen. I skærmbilledet nedenfor fremhæves de valgte **Sammenlæg pr.**-knapper med blå farve. Klik på en knap for at aktivere eller deaktivere den.
 
 8. Klik på knappen **Vis dimensioner**, hvis du vil se de produkt-, lagrings- eller sporingsdimensioner, der er relateret til varerne. Markér relevante afkrydsningsfelter, og klik på **OK**.
-
-I figuren herunder vises et skærmbillede af grænsefladen.
 
 ![Figur 1](media/02-capacity-planning.png)

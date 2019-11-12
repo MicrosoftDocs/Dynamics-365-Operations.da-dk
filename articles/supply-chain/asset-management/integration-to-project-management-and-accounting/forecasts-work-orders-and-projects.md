@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc1992326c448ee8dc30a9ad8f8f538ebea83e54
-ms.sourcegitcommit: f853c8d46ffc8e578387bac4cd48a948916983ef
+ms.openlocfilehash: e527a1ade9b050c0700ef42bbcac8da3f36160b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "2002378"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571777"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Budgetter, arbejdsordrer og projekter
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Styring af aktiver udføres integrationen med modulet **Projektstyring og regnskab** for at hjælpe med at optimere omkostningsstyringen, så brugerne kan spore omkostninger i budgetter for vedligeholdelsesjobtyper og arbejdsordrejob.
 

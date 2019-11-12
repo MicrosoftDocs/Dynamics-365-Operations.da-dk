@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565690"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569265"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk værdi og afmærkning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 LIFO (Last in, First out) er en lagermodel, hvor de senest anskaffede (nyeste) tilgange afgår først. Afgange fra lageret udlignes mod de seneste tilgange på lageret baseret på datoen for lagertransaktioner. 
 
@@ -56,7 +54,9 @@ I dette eksempel er det ikke angivet, at varemodelgruppen skal medtage fysisk v�
 -   5b. Økonomisk lagerafgang for et antal på 1 til en kostpris af kr. 20,00 pr. stk. (løbende gennemsnit af økonomisk opdaterede posteringer).
 -   6. Lagerlukningen udføres. På baggrund af LIFO-metoden udlignes den seneste økonomisk opdaterede afgang mod den seneste økonomisk opdaterede tilgang. Der foretages en regulering på kr. 10,00 på afgangsposteringen.
 
-Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer, kr. 15,00. Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. ![LIFO uden Medtag fysisk værdi](./media/lifowithoutincludephysicalvalue.gif) 
+Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer, kr. 15,00. Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. 
+
+![LIFO uden Medtag fysisk værdi](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -90,7 +90,9 @@ I følgende illustration vises disse posteringer:
 
 Posteringen i 6a reguleres i forhold til tilgangspostering i 4b. Systemet udligner ikke disse posteringer, da tilgangen kun opdateres fysisk, men ikke økonomisk. Der bogføres i stedet kun en regulering på kr. 8,75 for den fysiske afgangspostering. Posteringen i 5b reguleres i forhold til fysisk tilgangspostering i 3a. Disse posteringer udlignes ikke, da de begge ikke opdateres økonomisk. Der sker i stedet kun en regulering på kr. - 3,75 for denne afgangspostering. Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 20,00. 
 
-Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. ![LIFO med Medtag fysisk værdi](./media/lifowithincludephysicalvalue.gif) 
+Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. 
+
+![LIFO med Medtag fysisk værdi](./media/lifowithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -132,7 +134,9 @@ I følgende illustration vises disse posteringer:
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. 
 
-I følgende illustration vises effekterne af LIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes. ![LIFO med afmærkning](./media/lifowithmarking.gif) 
+I følgende illustration vises effekterne af LIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes. 
+
+![LIFO med afmærkning](./media/lifowithmarking.gif) 
 
 **Forklaring til diagram**
 
@@ -146,7 +150,4 @@ I følgende illustration vises effekterne af LIFO-lagermodellen på denne række
 - Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
 - Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
 - Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
-
-
-
 

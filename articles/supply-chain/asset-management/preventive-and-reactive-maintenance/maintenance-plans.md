@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4e9dca4b9b163e73c33ec2dc88b8aea2cecd9bef
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 5f88c681eecbd630902c6087b910bd6880b39673
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922200"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571340"
 ---
 # <a name="maintenance-plans"></a>Vedligeholdelsesplaner
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 En vedligeholdelsesplan definerer, hvornår et forud planlagt præventivt vedligeholdelsesjob skal udføres på et aktiv. Vedligeholdelsesplaner kan knyttes til aktiver, aktivtyper, arbejdssteder eller arbejdsstedstyper, men du skal først oprette de vedligeholdelsesplaner, der skal bruges i firmaet.
 

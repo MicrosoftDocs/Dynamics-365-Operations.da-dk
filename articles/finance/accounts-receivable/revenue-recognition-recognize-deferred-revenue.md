@@ -1,5 +1,5 @@
 ---
-title: Registrer udskudt indtægt
+title: Registrere udskudt indtægt
 description: Dette emne indeholder oplysninger om at registrere udskudt indtægt ved hjælp af funktionen Indtægtsføring.
 author: kweekley
 manager: aolson
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175873"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570350"
 ---
-# <a name="recognize-deferred-revenue"></a>Registrer udskudt indtægt
+# <a name="recognize-deferred-revenue"></a>Registrere udskudt indtægt
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Funktionen Indtægtsføring kan endnu ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
+> Funktionen Indtægtsføring kan ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
 
 Dette emne beskriver processen for indtægtsføring i tidsplanen for indtægtsføring. Når en faktura er blevet bogført for en salgsordre, oprettes der en plan for indtægtsføring for hver salgsordrelinje, der har en tidsplan for indtægtsføring. Indtægtstidsplanen på en linje bruges til at bestemme, om linjens indtægt skal udskydes.
 

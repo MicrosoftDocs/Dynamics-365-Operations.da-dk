@@ -3,7 +3,7 @@ title: Konsistenskontrol af detailtransaktion
 description: Dette emne beskriver funktionen konsistenskontrol af detailtransaktion i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018407"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622591"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenskontrol af detailtransaktion
 
@@ -59,11 +59,14 @@ Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af detail
 - **Gavekortvare** – Retail understøtter ikke returnering af gavekortvarer. Saldoen på et gavekort kan dog udbetales kontant. Alle gavekortvarer, der behandles som en returlinje i stedet for en udbetalingslinje, mislykkes i bogføringsprocessen for opgørelsen. Valideringsprocessen for gavekortvarer er garanti for, at de eneste returneringslinjer for gavekortvarer i detailtransaktionstabellerne er udbetalingslinjer for gavekort.
 - **Negativ pris** – validerer, at der ikke er nogen negative pristransaktionslinjer.
 - **Vare og variant** – validerer, at varer og varianter på transaktionslinjerne findes i masterfilen for vare og variant.
-- **Momsbeløb** - validerer, at momsposter svarer til momsbeløbene på linjerne. 
+- **Momsbeløb** - validerer, at momsposter svarer til momsbeløbene på linjerne.
+- **Serienummer** - validerer, at serienummeret findes i posteringslinjerne for varer, der styres af serienummer.
+- **Fortegn** - validerer, at fortegnet på antallet og nettobeløbet er det samme i alle posteringslinjerne.
+- **Forretningsdato** - validerer, at de økonomiske perioder for alle forretningsdatoerne for detailtransaktionerne er åbne.
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurere konsistenskontrollen
 
-Konfigurere batchprocessen "Valider butiksposteringer" på **Retail \> Retail IT \> POS-bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
+Konfigurer batchprocessen "Valider butiksposteringer" på **Retail \> Retail IT \> POS-bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
 
 ## <a name="results-of-validation-process"></a>Resultater af valideringsprocessen
 

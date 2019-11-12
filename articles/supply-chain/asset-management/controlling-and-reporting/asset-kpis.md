@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918412"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652373"
 ---
 # <a name="asset-kpis"></a>KPI'er for aktiver
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Styring af aktiver kan du beregne forskellige KPI'er (nøgletal) for aktiver og aktivtyper. Du kan bruge KPI'er til at få vist en oversigt over aktivernes præstation i forhold til f.eks. oppetid, nedetid, reparationstid og MTBF (Mean Time Between Failure - gennemsnitstid mellem fejl).
 
@@ -85,7 +85,7 @@ I tabellen nedenfor kan du finde en beskrivelse af felterne på siden **KPI'er f
 
 I figuren herunder vises et skærmbillede af en KPI-beregning for fire aktiver.
 
-![Figur 1](media/11-controlling-and-reporting.png)
+![Skærmbillede af KPI-beregning for fire aktiver](media/11-controlling-and-reporting.png)
 
 - Du kan vælge flere aktiver i **Alle aktiver** og klikke på knappen **KPI'er for aktiver** under fanen **Generelt**. Klik derefter på **OK** i dialogboksen **Beregn aktiv-KPI'er** for at beregne KPI'er for de valgte aktiver.  
 - Resultater fra en KPI-beregning kan også omfatte [registreringer af vedligeholdelsesnedetid](../work-orders/maintenance-downtime.md) afhængigt af opsætning og brug af årsagskoder for vedligeholdelsesnedetid. 

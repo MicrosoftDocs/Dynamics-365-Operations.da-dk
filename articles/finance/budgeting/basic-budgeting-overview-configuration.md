@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188688"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667454"
 ---
 # <a name="budgeting-overview"></a>Budgetteringsoversigt 
 
@@ -69,6 +69,12 @@ Opret *budgetkoder*, der identificerer typen af budgetposteringer, der skal bogf
 Med budgetkoder kan du have et revisionsspor for godkendte budgetændringer gennem hele budgetcyklussen. Hvis en arbejdsproces er tilknyttet en budgetkode, bliver arbejdsprocessen aktiveret for alle budgetregisterposter, der bruger budgetkoden, og trin i arbejdsprocessen skal være fuldført, før du posten i budgetregisteret kan nå stadiet **Fuldført**.  
 
 Du kan eventuelt også angive *regler for budgetoverførsel*. Vælg **Brug regler for budgetoverførsler** på siden **Budgetparametre** for at bruge regler for budgetoverførsel. Når regler for budgetoverførsel bruges, opdateres budgetsaldi ikke, hvis budgetoverførselsregler overtrædes, hvis en bruger opretter et dokument ved hjælp af en budgetkode for typen **Overførsel**. Du kan f.eks. tillade budgetoverførselsdokumenter hvor udgiftsbudgettet overføres mellem hovedkonti for Salg og marketing-afdelingen, men kan forhindre budget i at blive overført fra eller til den pågældende afdeling, medmindre der er givet godkendelse via arbejdsgangen for den pågældende type budgetkontopost.
+
+Funktioner, der blev introduceret i Microsoft Dynamics 365 Finance version 10.0.7 (januar 2020), gav ekstra kapacitet og fleksibilitet for budgetregisterposter. Hvis du vil aktivere disse forbedringer, skal du gå til arbejdsområdet **Administration af funktioner** og vælge **Kun budgetregisterposter for antal** og/eller **Budgetregisterposter med beløbstype som standard**.
+
+Du kan bruge funktionen **Kun budgetregisterposter for antal**, hvis du kun vil bogføre en budgetregisterpost med beløb, der kun er antal. Du kan f.eks. bogføre en budgetpost med et antal på 32 og en pris på nul, hvilket giver et beløb på nul. Du kan derefter bruge dette antal inden for rammerne af en økonomisk rapport til at bestemme en pris pr. antal. Bemærk, at ingen forespørgsler eller rapporter er opdateret som en del af denne funktion. Med funktionen kan du kun bogføre et beløb på nul.
+
+Med **Budgetregisterposter med beløbstype som standard**-funktionen kan standardbeløbstypen i en budgetregisterpost være en anden beløbstype end udgift. Budgetregisterpostlinjen vil nu som standard blive udgift, når hovedkontotypen er udgift, vil som standard være omsætning, når hovedkontotypen er udgift, og som standard være udgift for alle andre kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruge arbejdsområder og forespørgselssider til at spore budget vs. faktiske tal
 Budgetadministratoren kan gennemgå den aktuelle tilstand for et budget i arbejdsområdet **Finansbudgetter og budgetter**. Fanerne **Udgifter over budget** og **Omsætning under budget** giver et hurtigt overblik over de økonomiske dimensionskombinationer, hvor budgetmål ikke opfyldes eller nærmer sig grænsen. Du kan tilpasse budgettærskelprocent og økonomiske dimensionssæt, der bruges på disse faner ved at klikke på **Konfigurer mit arbejdsområde**. Du kan klikke på **Afdelingsledere** for at se de arbejdere, der er ansvarlige for bestemte økonomiske dimensionskombinationer, der er valgt under disse faner. Hvis du f.eks. kan se, at driftsafdelingens udgiftsbudget overskrider budgettærsklen, kan du nemt finde og kontakte driftsafdelingens leder for at diskutere problemet. 

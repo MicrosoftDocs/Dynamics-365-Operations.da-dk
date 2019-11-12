@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 956c866a6b39e2a81f085910e00d2bfe8683829c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177048"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658638"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
@@ -138,13 +138,19 @@ Som hovedregel når du arbejder med designeren til mobilenheder skal du sørge f
 
 Den første mobilenhedsside, du skal designe, er listen over de fakturaer, der er tildelt til brugeren til gennemsyn. For at udforme denne mobilside skal du bruge siden **VendMobileInvoiceAssignedToMeListPage**. Før du kan udføre denne procedure skal du sørge for, at mindst én kreditorfaktura er tildelt til dig til gennemsyn, og at fakturalinjen har to fordelinger. Denne opsætning opfylder kravene i dette scenarie.
 
-1.  I URL-adressen skal du erstatte navnet på menupunktet med **VendMobileInvoiceAssignedToMeListPage** for at åbne mobilversionen af listesiden **Afventende kreditorfakturaer tildelt til mig** i **Kreditor**-modulet. Afhængigt af antallet af fakturaer, der er tildelt til dig i dit system, viser denne side fakturaerne. Når du vil finde en bestemt faktura, kan du bruge filteret til venstre. Men vi har ikke brug for en bestemt faktura i dette eksempel. Vi skal bare bruge en faktura, der er tildelt til dig, så du kan få adgang til at designe siden til mobilenheden. De nye sider, der er tilgængelige, er designet specifikt til udvikling af scenarier for kreditorfakturaer på mobilenheder. Derfor skal du bruge disse sider. URL-adressen skal ligne følgende URL-adresse, og når du har angivet den, skal den side, der er vist i illustrationen, vises: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Afventende kreditorfakturaer, der er tildelt mig](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  I URL-adressen skal du erstatte navnet på menupunktet med **VendMobileInvoiceAssignedToMeListPage** for at åbne mobilversionen af listesiden **Afventende kreditorfakturaer tildelt til mig** i **Kreditor**-modulet. Afhængigt af antallet af fakturaer, der er tildelt til dig i dit system, viser denne side fakturaerne. Når du vil finde en bestemt faktura, kan du bruge filteret til venstre. Men vi har ikke brug for en bestemt faktura i dette eksempel. Vi skal bare bruge en faktura, der er tildelt til dig, så du kan få adgang til at designe siden til mobilenheden. De nye sider, der er tilgængelige, er designet specifikt til udvikling af scenarier for kreditorfakturaer på mobilenheder. Derfor skal du bruge disse sider. URL-adressen skal ligne følgende URL-adresse, og når du har angivet den, skal den side, der er vist i illustrationen, vises: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
+
+    [![Siden Afventende kreditorfakturaer tildelt til mig](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    
 2.  Klik på knappen **Indstillinger** (tandhjulsymbolet) i øverste højre hjørne af siden, og klik derefter på **Mobilapp**.
 3.  Vælg dit arbejdsområde, og klik på **Rediger**.
 4.  Klik på **Tilføj side** for at oprette den første side til mobilenheden.
 5.  Angiv et navn, f.eks. **Mine kreditorfakturaer**, og en beskrivelse, f.eks. **Kreditorfakturaer, der er tildelt til mig til gennemsyn**.
 6.  Klik på **Udført**.
-7.  I designeren til mobilenheder skal du under fanen **Felter** klikke på **Vælg felter**. Kolonnerne på listesiden skal ligne den følgende illustration. [![Kolonner i de afventende kreditorfakturaer, der er tildelt mig](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+7.  I designeren til mobilenheder skal du under fanen **Felter** klikke på **Vælg felter**. Kolonnerne på listesiden skal ligne den følgende illustration. 
+
+    [![Kolonner i de afventende kreditorfakturaer, der er tildelt mig](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    
 8.  Tilføj de kolonner, der kræves, fra den listeside, der skal vises for brugere på mobilenhedssiden. Den rækkefølge, som du tilføjer i, er den rækkefølge, som felterne bliver vist i for slutbrugeren. Den eneste måde at ændre rækkefølgen af felterne er ved igen at vælge alle felter. Baseret på kravene til dette scenario er de følgende otte felter obligatoriske. Men nogle brugere vil mene, at otte felter er for mange oplysninger på en mobilenhed. Derfor vil vi kun vise de vigtigste felter i listevisningen til mobilenheder. De resterende felter vises i detaljevisningen, som vi udformer senere. Nu skal vi tilføje følgende felter. Klik på plustegnet (**+**) i disse kolonner for at føje dem til siden på mobilenheden.
     - Navn på kreditor
     - Fakturatotal
@@ -152,8 +158,10 @@ Den første mobilenhedsside, du skal designe, er listen over de fakturaer, der e
     - Fakturanummer
     - Fakturadato
 
-    Når felterne er tilføjet, skal siden ligne følgende illustration. 
-    [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+  Når felterne er tilføjet, skal siden ligne følgende illustration. 
+    
+   [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+
 9.  Du skal også tilføje følgende kolonner nu, så vi senere kan aktivere arbejdsganghandlinger.
     - Vis fuldført opgave
     - Vis delegeret opgave
@@ -169,16 +177,26 @@ Den første mobilenhedsside, du skal designe, er listen over de fakturaer, der e
 
 ### <a name="vendor-invoice-details"></a>Detaljer i kreditorfaktura
 
-Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge siden **VendMobileInvoiceHeaderDetails**. Bemærk, at afhængigt af antallet af fakturaer, du har i dit system, viser denne side den ældste faktura (faktura, der blev oprettet først). Når du vil finde en bestemt faktura, kan du bruge filteret til venstre. Men vi har ikke brug for en bestemt faktura i dette eksempel. Vi skal blot bruge nogle fakturadata, så vi kan designe siden. [![Siden Arbejdsgang](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge siden **VendMobileInvoiceHeaderDetails**. Bemærk, at afhængigt af antallet af fakturaer, du har i dit system, viser denne side den ældste faktura (faktura, der blev oprettet først). Når du vil finde en bestemt faktura, kan du bruge filteret til venstre. Men vi har ikke brug for en bestemt faktura i dette eksempel. Vi skal blot bruge nogle fakturadata, så vi kan designe siden. 
+
+[![Siden Arbejdsgang](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. I URL-adressen til skal du erstatte navnet på menupunktet med **VendMobileInvoiceHeaderDetails** for at åbne formen
+
 2. Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
+
 3. Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
+
 4. Vælg siden **Mine kreditorfakturaer**, som du oprettede tidligere, og klik derefter på **Rediger**.
+
 5. Under fanen **Felter** skal du klikke på kolonneoverskriften **Gitter**.
+
 6. Klik på **Egenskaber &gt; Tilføj side**. **Bemærk:** Når du klikker på overskriften **Gitter** og tilføjer en side, oprettes relationen med detaljesiden automatisk.
+
 7. Angiv en sidetitel, f.eks. **Fakturadetaljer** og en beskrivelse som **Vis fakturahoved og linjedetaljer**.
+
 8. Klik på **Vælg felter**. Bemærk, at den rækkefølge, som du tilføjer i, er den rækkefølge, som felterne bliver vist i for slutbrugeren. Den eneste måde at ændre rækkefølgen af felterne er ved igen at vælge alle felter. 
+
 9. Baseret på kravene til dette scenario skal du tilføje følgende felter fra hovedet:
    - Navn på kreditor
    - Fakturatotal
@@ -197,9 +215,13 @@ Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge si
     - 1099-beløb
 
 11. Når alle felter fra de forrige to trin er tilføjet, skal du klikke på **Udført**. Siden skal ligne følgende illustration.
+    
     [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+
 12. Klik på **Udført** for at afslutte redigeringstilstand.
+
 13. Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
+
 14. Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
 
 ### <a name="workflow-actions"></a>Arbejdsgangshandlinger
@@ -295,12 +317,19 @@ Brug siden **VendMobileInvoiceHeaderDetails** for at tilføje arbejdsgangshandli
 ### <a name="vendor-invoice-attachments"></a>Vedhæftede filer i kreditorfakturaer
 
 1. Klik på knappen **Indstillinger** (tandhjulsymbolet) i øverste højre hjørne af siden, og klik derefter på **Mobilapp**.
+
 2. Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
+
 3. Vælg siden <strong>Fakturadetaljer**, som du oprettede tidligere, og klik derefter på **Rediger</strong>.
+
 4. Indstil **Dokumentstyring** til **Ja** som vist nedenfor. **Bemærk:** Hvis der er ikke er krav om at vise vedhæftede filer på mobilenheden, kan du lade denne indstilling være sat til **Nej**, som er standardindstillingen.
+   
    ![Dokumentstyring](./media/docmanagement-216x300.png)
+
 5. Klik på **Udført** for at afslutte redigeringstilstand.
+
 6. Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
+
 7. Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
 
 ### <a name="vendor-invoice-line-distributions"></a>Fordelinger af kreditorfakturalinjer
@@ -311,12 +340,19 @@ Kravene til dette scenario bekræfter, at der kun skal være fordelinger på lin
 > Når vi kender kravene, hjælper det os med at afgøre, hvilken specifik side vi skal bruge, og hvordan nøjagtigt vi skal optimere mobiloplevelsen for brugeren, når vi udformer scenariet. I det andet scenario bruger vi en anden side til at vise fordelingerne, da kravene til dette scenario er anderledes.
 
 1.  I URL-adressen skal du erstatte navnet på menupunktet, som du gjorde tidligere. Den side, der vises, skal ligne følgende illustration.
+
 [![Siden Alle fordelinger](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+
 2.  Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
+
 3.  Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet. **Bemærk:** Du kan se, at to nye sider blev oprettet automatisk. Systemet opretter disse sider, fordi du aktiverede dokumentstyring i forrige afsnit. Du kan ignorere disse nye sider.
+
 4.  Klik på **Tilføj side**.
+
 5.  Angiv en titel som **Vis regnskab** og en beskrivelse som **Vis regnskab for fakturaen**.
+
 6.  Klik på **Udført**.
+
 7.  Under fanen **Felter** skal du klikke på **Vælg felter** og vælge følgende felter fra fordelingssiden og derefter klikke på **Udført**:
     1.  Beløb
     2.  Valuta
@@ -324,8 +360,11 @@ Kravene til dette scenario bekræfter, at der kun skal være fordelinger på lin
 
     > [!NOTE] 
     > Vi ikke har valgt kolonnen **Beskrivelse** fra fordelingsgitteret, fordi kravene til dette scenario bekræftede, at den udvidede pris er det eneste beløb, vil der være fordelinger for. Brugeren har derfor ikke brug et andet felt til at bestemme den beløbstype, som vedrører fordelingen. Men i det næste scenario **bruger** vi disse oplysninger, fordi kravene til dette scenarie angiver, at andre beløbstyper har fordelinger (for eksempel moms).
+
 8.  Klik på **Udført** for at afslutte redigeringstilstand.
+
 9.  Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
+
 10. Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
 
 > [!NOTE] 

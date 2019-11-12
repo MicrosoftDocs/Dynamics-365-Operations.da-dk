@@ -3,7 +3,7 @@ title: Oversigt over kvalitetsstyring
 description: I dette emne beskrives det, hvordan du kan bruge kvalitetsstyring i Dynamics 365 Supply Chain Management til at forbedre produktkvaliteten i forsyningskæden.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249568"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653550"
 ---
 # <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
 
@@ -32,7 +32,7 @@ ms.locfileid: "2249568"
 
 I dette emne beskrives det, hvordan du kan bruge kvalitetsstyring i Dynamics 365 Supply Chain Management til at forbedre produktkvaliteten i forsyningskæden.
 
-Kvalitetsstyring kan hjælpe dig med at administrere behandlingstid, når du håndterer ikke-standardiserede produkter, uanset deres oprindelsessted. Fordi diagnosticeringstyper er knyttet til rapportering af korrektion, kan Finance and Operations planlægge opgaver for at løse problemer og forhindre dem i fremtiden.
+Kvalitetsstyring kan hjælpe dig med at administrere behandlingstid, når du håndterer ikke-standardiserede produkter, uanset deres oprindelsessted. Fordi diagnosticeringstyper er knyttet til rapportering af korrektion, kan Supply Chain Management planlægge opgaver for at løse problemer og forhindre dem i fremtiden.
 
 Ud over funktionalitet til administration af uoverensstemmelse omfatter kvalitetsstyring funktionalitet til sporing af problemer efter problemtype (også interne problemer) og til identificering af løsninger som kortsigtede eller langsigtede. Statistik over nøgletal (KPI'er) giver indsigt i historikken for tidligere problemer med uoverensstemmelse, og de løsninger, der blev anvendt til at rette dem. Du kan bruge historikdata til at gennemgå effektiviteten af tidligere kvalitetsmål og fastlægge passende foranstaltninger, der skal bruges i fremtiden.
 
@@ -290,6 +290,256 @@ Tabellen nedenfor indeholder flere oplysninger om, hvordan kvalitetsordrer kan o
 <td></td>
 <td></td>
 <td>En kvalitetsordre skal oprettes manuelt for en vares lagerantal. Fysisk disponibel lagerbeholdning er påkrævet.</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="quality-order-auto-generation-examples"></a>Eksempler på automatisk generering af kvalitetsordre
+
+### <a name="purchasing"></a>Køb
+
+Hvis du i forbindelse med indkøb angiver feltet **Hændelsestype** til **Produktkvittering** og feltet **Udførelse** til **Efter** på siden **Kvalitetstilknytninger**, får du følgende resultater: 
+
+- Hvis indstillingen **Pr. opdateret antal** er angivet til **Ja**, genereres der en kvalitetsordre for hver kvittering i forhold til indkøbsordren baseret på det modtagne antal og indstillinger i stikprøven af vare. Hver gang der modtages et antal på indkøbsordren, oprettes der nye kvalitetsordrer ud fra det nye antal, der er modtaget.
+- Hvis indstillingen **Pr. opdateret antal** er angivet til **Nej**, genereres der en kvalitetsordre for den første kvittering i forhold til indkøbsordren baseret på det modtagne antal. Derudover oprettes en eller flere kvalitetsordrer ud fra det resterende antal afhængigt af sporingsdimensionerne. Kvalitetsordrer genereres ikke for efterfølgende kvitteringer i forhold til indkøbsordren.
+
+<table>
+<tbody>
+<tr>
+<th>Kvalitetsspecifikation</th>
+<th>Pr. opdateret antal</th>
+<th>Pr. sporingsdimension</th>
+<th>Resultat</th>
+</tr>
+<tr>
+<td>Procent: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>
+<p>Ordreantal: 100</p>
+<ol>
+<li>Færdigmelding for 30
+<ul>
+<li>Kvalitetsordrenr. 1 for 3 (10 % af 30)</li>
+</ul>
+</li>
+<li>Færdigmelding for 70
+<ul>
+<li>Kvalitetsordrenr. 2 for 7 (10 % af det resterende ordreantal, hvilket er lig med 70 i dette tilfælde)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antal: 1</td>
+<td>Nr.</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>Ordreantal: 100
+<ol>
+<li>Færdigmelding for 30
+<ul>
+<li>Kvalitetsordrenr. 1 oprettes for 1 (for det første færdigmeldte antal, der har en fast værdi af 1).</li>
+<li>Der oprettes ikke flere kvalitetsordrer i forhold til det resterende antal.</li>
+</ul>
+</li>
+<li>Færdigmelding for 10
+<ul>
+<li>Der oprettes ingen kvalitetsordrer.</li>
+</ul>
+</li>
+<li>Færdigmelding for 60
+<ul>
+<li>Der oprettes ingen kvalitetsordrer.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antal: 1</td>
+<td>Ja</td>
+<td>
+<p>Batchnummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantal: 10</p>
+<ol>
+<li>Færdigmelding for 3
+<ul>
+<li>Kvalitetsordrenr. 1 for 1 af batchnr. b1, serienr. s1</li>
+<li>Kvalitetsordrenr. 2 for 1 af batchnr. b2, serienr. s2</li>
+<li>Kvalitetsordrenr. 3 for 1 af batchnr. b3, serienr. s3</li>
+</ul>
+</li>
+<li>Færdigmelding for 2
+<ul>
+<li>Kvalitetsordrenr. 4 for 1 af batchnr. b4, serienr. s4</li>
+<li>Kvalitetsordrenr. 5 for 1 af batchnr. b5, serienr. s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Bemærk:</strong> Batchen kan genbruges.</p>
+</td>
+</tr>
+<tr>
+<td>Fast antal: 2</td>
+<td>Nr.</td>
+<td>
+<p>Batchnummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantal: 10</p>
+<ol>
+<li>Færdigmelding for 4
+<ul>
+<li>Kvalitetsordrenr. 1 for 1 af batchnr. b1, serienr. s1.</li>
+<li>Kvalitetsordrenr. 2 for 1 af batchnr. b2, serienr. s2.</li>
+<li>Kvalitetsordrenr. 3 for 1 af batchnr. b3, serienr. s3.</li>
+<li>Kvalitetsordrenr. 4 for 1 af batchnr. b4, serienr. s4.</li>
+<li>Der oprettes ikke flere kvalitetsordrer i forhold til det resterende antal.</li>
+</ul>
+</li>
+<li>Færdigmelding for 6
+<ul>
+<li>Der oprettes ingen kvalitetsordrer.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="production"></a>Produktion
+
+Hvis du i forbindelse med produktion angiver feltet **Hændelsestype** til **Færdigmelding** og feltet **Udførelse** til **Efter** på siden **Kvalitetstilknytninger**, får du følgende resultater:
+
+- Hvis indstillingen **Pr. opdateret antal** er angivet til **Ja**, genereres der en kvalitetsordre baseret på hvert færdige antal og indstillinger i stikprøven af vare. Hver gang et antal færdigmeldes på indkøbsordren, oprettes der nye kvalitetsordrer ud fra det nye antal, der er færdigmeldt. Denne genereringslogik stemmer overens med indkøb.
+- Hvis indstillingen **Pr. opdateret antal** er angivet til **Nej**, genereres der en kvalitetsordre, første gang et antal færdigmeldes, baseret på det færdige antal. Derudover oprettes en eller flere kvalitetsordrer ud fra det resterende antal afhængigt af sporingsdimensionerne for stikprøven af varen. Kvalitetsordrer genereres ikke for efterfølgende færdige antal.
+
+<table>
+<tbody>
+<tr>
+<th>Kvalitetsspecifikation</th>
+<th>Pr. opdateret antal</th>
+<th>Pr. sporingsdimension</th>
+<th>Resultat</th>
+</tr>
+<tr>
+<td>Procent: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>
+<p>Ordreantal: 100</p>
+<ol>
+<li>Færdigmelding for 30
+<ul>
+<li>Kvalitetsordrenr. 1 for 3 (10 % af 30)</li>
+</ul>
+</li>
+<li>Færdigmelding for 70
+<ul>
+<li>Kvalitetsordrenr. 2 for 7 (10 % af det resterende ordreantal, hvilket er lig med 70 i dette tilfælde)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antal: 1</td>
+<td>Nr.</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>Ordreantal: 100
+<ol>
+<li>Færdigmelding for 30
+<ul>
+<li>Kvalitetsordrenr. 1 for 1 (for det første færdigmeldte antal, der har en fast værdi af 1)</li>
+<li>Kvalitetsordrenr. 2 for 1 (for det resterende antal, der stadig har en fast værdi af 1)</li>
+</ul>
+</li>
+<li>Færdigmelding for 10
+<ul>
+<li>Der oprettes ingen kvalitetsordrer.</li>
+</ul>
+</li>
+<li>Færdigmelding for 60
+<ul>
+<li>Der oprettes ingen kvalitetsordrer.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antal: 1</td>
+<td>Ja</td>
+<td>
+<p>Batchnummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantal: 10</p>
+<ol>
+<li>Færdigmeld for 3: 1 for nr. b1, nr. s1. 1 for nr. b2, nr. s2 og 1 for nr. b3, nr. s3
+<ul>
+<li>Kvalitetsordrenr. 1 for 1 af batchnr. b1, serienr. s1</li>
+<li>Kvalitetsordrenr. 2 for 1 af batchnr. b2, serienr. s2</li>
+<li>Kvalitetsordrenr. 3 for 1 af batchnr. b3, serienr. s3</li>
+</ul>
+</li>
+<li>Færdigmeld for 2: 1 for nr. b4, nr. s4. og 1 for nr. b5, nr. s5
+<ul>
+<li>Kvalitetsordrenr. 4 for 1 af batchnr. b4, serienr. s4</li>
+<li>Kvalitetsordrenr. 5 for 1 af batchnr. b5, serienr. s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Bemærk:</strong> Batchen kan genbruges.</p>
+</td>
+</tr>
+<tr>
+<td>Fast antal: 2</td>
+<td>Nr.</td>
+<td>
+<p>Batchnummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantal: 10</p>
+<ol>
+<li>Færdigmeld for 4: 1 for nr. b1, nr. s1. 1 for nr. b2, nr. s2, 1 for nr. b3, nr. s3 og 1 for nr. b4, nr. s4
+<ul>
+<li>Kvalitetsordrenr. 1 for 1 af batchnr. b1, serienr. s1</li>
+<li>Kvalitetsordrenr. 2 for 1 af batchnr. b2, serienr. s2</li>
+<li>Kvalitetsordrenr. 3 for 1 af batchnr. b3, serienr. s3</li>
+<li>Kvalitetsordrenr. 4 for 1 af batchnr. b4, serienr. s4</li>
+</ul>
+<ul>
+<li>Kvalitetsordre nr. 5 for 2, uden en reference til et batch og et serienummer</li>
+</ul>
+</li>
+<li>Færdigmeld for 6: 1 for nr. b5, nr. s5. 1 for nr. b6, nr. s6. 1 for nr. b7, nr. s7. 1 for nr. b8, nr. s8. 1 for nr. b9, nr. s9 og 1 for nr. b10, nr. s10
+<ul>
+<li>Der oprettes ingen kvalitetsordrer.</li>
+</ul>
+</li>
+</ol>
+</td>
 </tr>
 </tbody>
 </table>

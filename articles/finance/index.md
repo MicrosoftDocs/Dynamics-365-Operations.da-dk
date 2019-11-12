@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175868"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570119"
 ---
 # <a name="financial-management-home-page"></a>Startside for økonomistyring
 
@@ -69,4 +69,8 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 ### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
 
 Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring. Se afsnittet [Lokalisering og lovpligtige funktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i vores Hjælp-indhold for at få mere at vide om lande-/områdespecifikke funktioner.
+
+### <a name="additional-content"></a>Yderligere indhold
+
+Funktionen til styring af forsyningskæden dækker dele af processen fra levering til betaling, der omfatter rekvisition, bestilling, modtagelse, fakturering og betaling af de varer og tjenester, som organisationen køber. Se [!hjemmesiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for at få flere oplysninger om funktionerne til administration af indkøb, lager og produktion. 
 

@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ff513d2e2d2968e531e4515c45abdc470b384123
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184088"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570327"
 ---
 # <a name="revenue-recognition-setup"></a>Opsætning af Indtægtsføring
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Der er blevet tilføjet et nyt **Indtægtsføring**-modul, som indeholder menupunkter for alle de opsætninger, der kræves. Dette emne beskriver opsætningsindstillingerne og deres konsekvenser.
+
+> [!NOTE]
+> Funktionen Indtægtsføring kan ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
 
 Modulet **Indtægtsføring** har følgende opsætningsindstillinger:
 

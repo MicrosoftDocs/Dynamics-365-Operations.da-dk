@@ -3,7 +3,7 @@ title: Fordelt ordrestyring (DOM)
 description: Dette emne beskriver funktionaliteten til fordelt ordrestyring (DOM) i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023413"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578478"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -94,6 +94,7 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
         - **Opfylde dellinjer?** – Hvis denne indstilling er angivet til **Ja**, opfylder DOM kun en delvis mængde ordrelinjer. Denne delvis opfyldelse opnås ved at opdele ordrelinjen.
         - **Opfyld kun ordre fra én lokation** – Hvis denne indstilling er angivet til **Ja**, sørger DOM for, at alle linjer i en ordre opfyldes fra én lokation.
 
+
         Følgende tabel beskriver funktionaliteten, når en kombination af disse parametre er angivet.
 
         |      | Opfyld delordrer | Opfyld dellinjer | Opfyld ordren fra kun én lokation | Beskrivelse |
@@ -110,19 +111,22 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
 
         \* Hvis **Opfyld delordrer** er angivet til **Nej**, betragtes **Udfyld dellinjer** altid som værende angivet til **Nej**, uanset hvordan indstillingen faktisk er angivet.
 
-    - **Offline opfyldelse af lokationsregel** – Denne regel giver organisationer mulighed for at angive en lokation eller en gruppe af lokationer som offline eller ikke er tilgængelige for DOM, så ordrer ikke kan tildeles der for opfyldelse.
+> [!NOTE]
+> I Retail version 10.0.5 blev parameteren **Opfyld ordren fra kun én lokation** ændret til **Maksimalt antal lokationer til opfyldelse**. I stedet for at give en bruger mulighed for at konfigurere, om ordrer kan opfyldes fra én lokation eller opfyldes fra så mange lokationer som muligt, kan brugerne nu angive, om opfyldelsen skal være fra et bestemt sæt lokationer (op til 5) eller fra så mange lokationer som muligt. Det giver større fleksibilitet i forhold til, hvor mange lokationer ordren kan opfyldes fra.
+
+   - **Offline opfyldelse af lokationsregel** – Denne regel giver organisationer mulighed for at angive en lokation eller en gruppe af lokationer som offline eller ikke er tilgængelige for DOM, så ordrer ikke kan tildeles til disse lokationer til opfyldelse.
     - **Regel for maksimalt antal afvisninger** – Denne regel giver organisationer mulighed for at definere en tærskel for antal afvisninger. Når grænsen nås, skal DOM-processoren markere en ordre eller en ordrelinje, som en undtagelse, og udelade den fra videre behandling.
 
         Når ordrelinjer tildeles til en lokation, kan lokationen afvise den tildelte ordrelinje, da den muligvis ikke kan opfylde linjen af en eller anden grund. Afviste linjer markeret som en undtagelse og placeret tilbage i puljen til behandling i den næste kørsel. Under næste kørsel forsøger DOM at tildele den afviste linje til en anden lokation. Den nye lokation kan også afvise den tildelte ordrelinje. Denne cyklus af tildeling og afvisning kan forekomme flere gange. Når antallet af afvisninger når den angivne grænse, markerer DOM ordrelinjen som en permanent undtagelse, og vælger ikke linjen til tildeling igen. DOM medtager ordrelinjen igen til gentildeling, hvis en bruger manuelt nulstiller status for ordrelinjen.
 
-    - **Regel for maksimal afstand** – Denne regel giver organisationer mulighed for at angive den maksimale afstand, der kan være til en lokation eller en gruppe af lokationer for at opfylde ordren. Hvis der er angivet overlappende regler for maksimal afstand for en lokation, anvender DOM den laveste maksimale afstand, der er defineret for den pågældende lokation.
+   - **Regel for maksimal afstand** – Denne regel giver organisationer mulighed for at angive den maksimale afstand, der kan være til en lokation eller en gruppe af lokationer for at opfylde ordren. Hvis der er angivet overlappende regler for maksimal afstand for en lokation, anvender DOM den laveste maksimale afstand, der er defineret for den pågældende lokation.
     - **Regel for maks. antal ordrer** – Denne regel giver organisationer mulighed for at definere det maksimale antal ordrer, som en lokation eller en gruppe af lokationer kan behandle på en kalenderdag. Hvis det maksimale antal ordrer tildeles til en lokation på en enkelt dag, tildeler DOM ikke flere ordrer til denne lokation resten af den pågældende kalenderdag.
 
-    Her er nogle af de fælles attributter, der kan defineres for alle de foregående regeltyper:
+   Her er nogle af de fælles attributter, der kan defineres for alle de foregående regeltyper:
 
-    - **Startdato for** og **slutdato** – Hver regel kan gøres datorelateret ved hjælp af disse felter.
-    - **Deaktiveret** – Kun regler, der har værdien **Nej** for dette felt tages i betragtning i en DOM-kørsel.
-    - **Fast betingelse** – En regel kan angives som enten en fast betingelse eller ikke en fast betingelse. Hver DOM-kørsel gennemgår to gentagelser. I den første gentagelse behandles hver regel som en fast betingelse, uanset indstillingen i dette felt. Med andre ord anvendes hver regel. Den eneste undtagelse er reglen **Lokations prioritet**. I den anden gentagelse fjernes de regler, der ikke er angivet som faste betingelser, og de ordrer eller ordrelinjer, der ikke blev tilknyttet til lokationer, da alle reglerne blev anvendt, tildeles til lokationer.
+   - **Startdato for** og **slutdato** – Hver regel kan gøres datorelateret ved hjælp af disse felter.
+   - **Deaktiveret** – Kun regler, der har værdien **Nej** for dette felt tages i betragtning i en DOM-kørsel.
+   - **Fast betingelse** – En regel kan angives som enten en fast betingelse eller ikke en fast betingelse. Hver DOM-kørsel gennemgår to gentagelser. I den første gentagelse behandles hver regel som en fast betingelse, uanset indstillingen i dette felt. Med andre ord anvendes hver regel. Den eneste undtagelse er reglen **Lokations prioritet**. I den anden gentagelse fjernes de regler, der ikke er angivet som faste betingelser, og de ordrer eller ordrelinjer, der ikke blev tilknyttet til lokationer, da alle reglerne blev anvendt, tildeles til lokationer.
 
 10. Opfyldningsprofiler bruges til at gruppere en samling regler, juridiske enheder, salgsordreoprindelser og leveringsmåder. Hver DOM-kørsel er for en bestemt opfyldelsesprofil. På denne måde kan organisationer definere og køre et sæt regler for et sæt juridiske enheder på ordrer, der har en bestemt salgsordreoprindelse og leveringsmåde. Hvis der skal køres forskellige sæt regler for forskellige sæt salgsordreoprindelser eller leveringsmåder, kan opfyldningsprofilerne derfor defineres i overensstemmelse hermed. Benyt følgende fremgangsmåde for at konfigurere opfyldelsesprofiler:  
 

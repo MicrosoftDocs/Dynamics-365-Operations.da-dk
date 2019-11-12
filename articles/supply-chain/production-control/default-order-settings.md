@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d13aabfb36e8af4a32de8bc8949e8b164075532a
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250089"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570696"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardordreindstillinger for dimensioner og produktvarianter
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Standardindstillinger for ordrer i Dynamics 365 Supply Chain Management definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum- og maksimumantal, flere antal og standard antal, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Standardordreindstillinger bruges, når du opretter indkøbsordrer, salgsordrer, flytteordrer, lagerkladder og ved varedisponering til at generere ordreforslag. Standardindstillinger for ordre kan være varespecifikke, lokationsspecifikke, specifikke for produktvariant eller produktdimensionsbestemte.
 

@@ -18,32 +18,32 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 84ab803aedf5b803b6c5f39ff1907726335cb45d
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918320"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652350"
 ---
 # <a name="item-where-used"></a>Hvor er varen brugt?
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Du kan foretage en beregning for en bestemt vare for at få en oversigt over, hvor i Styring af aktiver varen er brugt. Resultaterne viser den kontekst, som varen er blevet brugt i, i løbet af dens levetid. Siden **Hvor er varen brugt?** kan åbnes fra hovedmenuen i Styring af aktiver, og den kan også åbnes fra følgende sider:
 
-[Aktivstykliste](../objects/object-BOM.md)
+- [Aktivstykliste](../objects/object-BOM.md)
 
-[Reservedele i aktivtypestandarder](../setup-for-objects/object-types.md)
+- [Reservedele i aktivtypestandarder](../setup-for-objects/object-types.md)
 
-[Varebudget på standardbudget for vedligeholdelsesjobtype](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Varebudget på standardbudget for vedligeholdelsesjobtype](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-[Vedligeholdelsesprognose for arbejdsordre](../work-orders/maintenance-forecasts.md)
+- [Vedligeholdelsesprognose for arbejdsordre](../work-orders/maintenance-forecasts.md)
 
-[Indkøbsrekvisition for arbejdsordre](../work-orders/procurement.md)
+- [Indkøbsrekvisition for arbejdsordre](../work-orders/procurement.md)
 
-[Arbejdsordreindkøb](../work-orders/procurement.md)
+- [Arbejdsordreindkøb](../work-orders/procurement.md)
 
 ## <a name="make-an-item-where-used-calculation"></a>Oprette en beregning af, hvor en vare er brugt
 
@@ -51,17 +51,23 @@ Du kan foretage en beregning for en bestemt vare for at få en oversigt over, hv
 
 2. Vælg i dialogboksen **Hvor er varen brugt?** den vare, der skal foretages en beregning for, i feltet **Varenummer**.
 
-3. Du kan bruge feltet **Niveau** til at angive, hvor detaljerede varelinjerne skal være i forbindelse med arbejdssteder. Hvis du f.eks. indsætter tallet "1" i feltet, og du har en arbejdsstedsstruktur med flere niveauer, vises alle varelinjer for et arbejdssted på det øverste niveau. Derfor kan relationen/antallet på en linje være opsummeret fra arbejdssteder, der er placeret på et lavere niveau. Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle varelinjer på alle de arbejdsstedsniveauer, de er relateret til.
+3. Du kan bruge feltet **Niveau** til at angive, hvor detaljerede varelinjerne skal være i forbindelse med arbejdssteder. 
+
+    Hvis du f.eks. indsætter tallet "1" i feltet, og du har en arbejdsstedsstruktur med flere niveauer, vises alle varelinjer for et arbejdssted på det øverste niveau. Derfor kan relationen/antallet på en linje være opsummeret fra arbejdssteder, der er placeret på et lavere niveau. 
+    
+    Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle varelinjer på alle de arbejdsstedsniveauer, de er relateret til.
 
 4. Vælg "Ja" på de knapper i sektionen **Medtag**, du vil medtage i beregningen.
 
 5. Klik på **OK** for at starte beregningen.
 
-6. Under fanen **Hvor er varen brugt?** > handlingsrudegrupperne **Sammenlæg pr.** skal vælge de relevante knapper for at få vist det nødvendige detaljeringsniveau i beregningen. De valgte handlingsrudeknapper er fremhævet. Klik på en knap for at aktivere eller deaktivere den.
+6. Under fanen **Hvor er varen brugt?** skal vælge de relevante **Sammenlæg pr.**-knapper for at få vist det nødvendige detaljeringsniveau i beregningen. De valgte **Sammenlæg pr.**-knapper er fremhævet. Klik på en knap for at aktivere eller deaktivere den.
 
 7. Hvis du vil have vist de dimensioner, der vedrører varen, skal du klikke på **Vis dimensioner** og vælge de dimensioner, der skal vises.
 
-I nedenstående figur kan du se et eksempel på en beregning af Hvor er varen brugt? for varenummer "1000".
+## <a name="example"></a>Eksempel
 
-![Figur 1](media/12-controlling-and-reporting.png)
+På nedenstående skærmbillede kan du se et eksempel på en beregning af Hvor er varen brugt? for varenummer "1000".
+
+![Eksempel på beregning af, hvor en vare er brugt](media/12-controlling-and-reporting.png)
 

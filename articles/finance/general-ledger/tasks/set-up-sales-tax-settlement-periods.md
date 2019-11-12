@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cff84f8f6c42fd064258b8ca53e24acc8059977
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175344"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658923"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Konfigurere momsafregningsperioder
 
@@ -42,7 +42,7 @@ Denne opgave bruger demofirmaet USMF.
 9. Angiv antallet af enheder i periodeintervallet pr. periode. For eksempel har en kvart 3 måneder.
 10. Markér eller fjern markeringen af afkrydsningsfeltet **Brug batchbehandling til afregning af moms**. Udligningsprocessen for afregningsperioden kan behandles som batchjob i baggrunden. Dette anbefales ved et stort antal momstransaktioner inden for et periodeinterval.  
     > [!NOTE]
-    > I øjeblikket er understøttes dette ikke i Østrig, Belgien, Spanien, Italien, Japan og Nederlandene.
+    > I øjeblikket understøttes dette ikke i Spanien, Japan og Holland.
 11. Marker eller fjern markeringen i afkrydsningsfeltet **Undgå at generere modregning af momsposteringer**. Som standard genererer systemet modregning af momsposteringer under udligningsprocessen, hvilket kan give problemer med ydeevnen, hvis der er et stort antal momsposteringer inden for et periodeinterval. Marker dette afkrydsningsfeltet for at undgå, at der genereres modregning af momsposteringer.
 12. Udvid fanen **Periodeintervaller**.
 13. Vælg **Tilføj**.

@@ -3,7 +3,7 @@ title: Arbejdsordrer og anlægsaktiver
 description: Dette emne beskriver arbejdsordrer og anlægsaktiver i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,53 +16,52 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c87a2b94692e279a9c2f35dc38ac87bfd9bf7d27
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250823"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626218"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbejdsordrer og anlægsaktiver
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-
-I Styring af aktiver kan aktiver knyttes til anlægsaktiver, og du kan oprette arbejdsordrer for disse aktiver. Hvis du bruger denne funktion, kan du få en komplet oversigt over anlægsaktiver, relaterede investeringsprojekter og de omkostninger, der er registreret for investeringsprojekterne i modulet **Projektstyring og regnskab** og modulet **Anlægsaktiver**.
+I Styring af aktiver kan aktiver knyttes til anlægsaktiver, og du kan oprette arbejdsordrer for disse aktiver. Hvis du bruger denne funktion, kan du få en komplet oversigt over anlægsaktiver, relaterede investeringsprojekter og de omkostninger, der er registreret for investeringsprojekterne i modulerne **Projektstyring og regnskab** og **Anlægsaktiver** i Microsoft Dynamics 365 for Finance and Operations.
 
 >[!NOTE]
->Feltet **Nummer på anlægsaktiv** udfyldes kun på arbejdsordrejobprojektet, hvis typen "Investering" er valgt som projekttypen for arbejdsordrejobprojektet.
+>Feltet **Nummer på anlægsaktiv** udfyldes kun på arbejdsordrejobprojektet, hvis **Investering** er valgt som projekttypen for arbejdsordrejobprojektet.
+
+I illustrationen herunder vises relationen mellem et investeringsprojekt i modulet **Projektstyring og regnskab** og et projekt for arbejdsordrejob.
 
 ![Figur 1](media/24-work-orders.png)
 
 Følgende procedure beskriver relationen mellem aktiverne, arbejdsordrerne, arbejdsordrejobprojekter og anlægsaktiver.
 
-1. Du opretter et aktiv, som du relaterer til et anlægsaktiv, som vist på nedenstående illustration.
+1. Du opretter et aktiv, som du relaterer til et anlægsaktiv.
 
 ![Figur 2](media/25-work-orders.png)
 
-2. Når du opretter arbejdsordretyper (**Styring af aktiv** > **Opsætning** > **Arbejdsordrer** > **Arbejdsordretyper**), skal du oprette en arbejdsordre type til håndtering af investeringer. Se også [Arbejdsordretyper](../setup-for-work-orders/work-order-types.md).
+2. Når du opretter arbejdsordretyper på siden **Arbejdsordretyper** (**Styring af aktiv** > **Opsætning** > **Arbejdsordrer** > **Arbejdsordretyper**), skal du oprette en arbejdsordre type til håndtering af investeringer. Se også [Arbejdsordretyper](../setup-for-work-orders/work-order-types.md).
 
 ![Figur 3](media/26-work-orders.png)
 
-3. Når du opretter projektgrupper for arbejdsordrer (**Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Opsætning af projekt** > **Projektgruppe**-linket), opretter du en relation mellem den arbejdsordretype, der bruges til investeringer, og den projektgruppe, der er oprettet for investeringer i modulet **Projektstyring og regnskab** (**Projektstyring og regnskab** > **Opsætning** > **Bogføring** > **Projektgrupper**).
+3. Når du opretter projektgrupper for arbejdsordrer under fanen **Projektgruppe** på siden **Opsætning af arbejdsordreprojekt** (**Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Opsætning af projekt**), opretter du en relation mellem den arbejdsordretype, der bruges til investeringer, og den projektgruppe, der er oprettet for investeringer på siden **Projektgrupper** i modulet **Projektstyring og regnskab** (**Projektstyring og regnskab** > **Opsætning** > **Bogføring** > **Projektgrupper**).
 
 ![Figur 4](media/27-work-orders.png)
 
-4. Når du opretter en arbejdsordre, der vedrører et anlægsaktivobjekt, skal du vælge den type arbejdsordre, der bruges til håndtering af investeringer, f.eks. "Investering".
+4. Når du opretter en arbejdsordre, der vedrører et anlægsaktivobjekt, skal du vælge den type arbejdsordre, der bruges til håndtering af investeringer, f.eks. **Investering**.
 
-5. Når arbejdsordren oprettes, vises den relaterede arbejdsordretype i **Alle arbejdsordrer**.
+5. Når arbejdsordren oprettes, vises den relaterede arbejdsordretype på siden **Alle arbejdsordrer**.
 
 ![Figur 5](media/28-work-orders.png)
 
-6. Når arbejdsordren oprettes, oprettes det projekt, der er relateret til arbejdsordren, i **Projektstyring og regnskab** > **Alle projekter**. Du kan få vist projektrelaterede oplysninger ved at klikke på **Projekt-id**-linket i arbejdsordren (i **Styring af aktiver** skal du åbne arbejdsordren i visningen Detaljer > oversigtspanelet **Linjedetaljer** > **Generelt** > feltet **Projekt-id**).
+6. Når arbejdsordren oprettes, oprettes det projekt, der er relateret til arbejdsordren, på siden **Alle projekter** i modulet **Projektstyring og regnskab** (**Projektstyring og regnskab** > **Projekter** > **Alle projekter**). Hvis du vil have vist projektrelaterede oplysninger, skal du vælge linket i feltet **Projekt-id** under fanen **Generelt** i oversigtspanelet **Linjedetaljer** i detaljevisningen for siden **Alle arbejdsordrer** i modulet **Styring af aktiver** (**Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer**).
 
 ![Figur 6](media/29-work-orders.png)
 
-7. I **Anlægsaktiver** kan du få vist en oversigt over de projekter, der er knyttet til et anlægsaktiv (**Anlægsaktiver** > **Anlægsaktiver** > **Anlægsaktiver** > klik på anlægsaktivet i **Nummer på anlægsaktiv**-feltet > se indholdet i ruden **Relaterede oplysninger** > sektionen **Tilknyttede projekter**).
+7. Hvis du vil have vist en oversigt over de projekter, der er knyttet til et anlægsaktiv, skal du vælge **Anlægsaktiver** > **Anlægsaktiver** > **Anlægsaktiver** og derefter bruge feltet **Nummer på anlægsaktiv** til at vælge linket for anlægsaktivet for at åbne detaljevisningen. Udvid ruden **Relaterede oplysninger** i højre side af siden, og vælg oversigtspanelet **Tilknyttede projekter**.
 

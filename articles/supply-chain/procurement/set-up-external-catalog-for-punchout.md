@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249376"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653435"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
 [!include [banner](../includes/banner.md)]
 
-Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations juli 2017, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
+Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Supply Chain Management, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
 
 Når det eksterne katalog er konfigureret, og medarbejderen forbereder en rekvisition, er der mulighed for at omdirigere til et eksternt websted, det eksterne katalog, og returnere indkøbskurven, der er oprettet på det eksterne websted. Denne meddelelse er baseret på cXML-protokollen og skal være konfigureret mellem systemerne for den købende og den sælgende organisation.
 

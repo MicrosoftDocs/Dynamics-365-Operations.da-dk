@@ -3,7 +3,7 @@ title: Rapportering af trædefinitioner i økonomiske rapporter
 description: Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181812"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564161"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -50,7 +50,7 @@ En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følge
 
 | Kolonne i rapporteringstræ | Beskrivelse |
 |-----------------------|-------------|
-| Firma               | Firmanavnet på rapporteringsenheden. Værdien **@ANY**, som normalt kun tildeles summeringsniveauet, gør det muligt at anvende trædiagrammet til alle firmaer. Alle underordnede grene har et firma tilknyttet. |
+| Regnskab               | Firmanavnet på rapporteringsenheden. Værdien **\@ANY**, som normalt kun tildeles summeringsniveauet, gør det muligt at anvende trædiagrammet til alle firmaer. Alle underordnede grene har et firma tilknyttet. |
 | Enhedsbetegnelse             | Den kode, der identificerer denne rapporteringsenhed i det grafiske rapporteringstræ. Sørg for at oprette et entydigt kodesystem, der er konsistent, og som vil være let for brugerne at forstå. |
 | Enhedsbeskrivelse      | Rapporteringsenhedens titel vises i rapportens sidehoved eller sidefod, hvis du angiver **UnitDesc** som kode på fanen **Sidehoveder og sidefødder** i rapportdefinitionen. Titlen vises i rapportrækkebeskrivelsen, hvis du angiver **UnitDesc** i cellen **Beskrivelse** i rækkedefinitionen. |
 | Dimensioner            | En rapporteringsenhed henter oplysninger direkte fra de økonomiske data. Den definerer den logiske placering og længder for kontoen og relaterede segmenter. Hver rapporteringsenhedsrække skal have en dimension i denne kolonne. Du kan også placere en dimension i en oversigtsrække (for eksempel for udgifter, der er direkte relateret til denne enhed). Hvis du angiver en dimension i en oversigtsrække, bør konti, der bruges i overordnede enheder, ikke bruges i underordnede enheder. Ellers kan beløb blive dubleret. |

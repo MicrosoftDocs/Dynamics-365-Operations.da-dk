@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84b08ec45dfa7aa9c7b913087a2518bfeedf87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
+ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181559"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652611"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -120,7 +120,7 @@ Benyt følgende fremgangsmåde for at aktivere funktionen til styring af forretn
 
 ![Arbejdsområdet Administration af funktioner](./media/BDM-Overview-FMEnabling.png)
 
-Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="configure-parameters"></a>Konfigurere parametre
 
@@ -137,7 +137,7 @@ For denne dokumenttype skal følgende attributværdier vælges.
 | Multi               | Fil                  |
 | Adresse            | SharePoint            |
 
-Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyringsparametre og dokumenttyper, i [Konfigurere dokumentstyring](../../fin-and-ops/organization-administration/configure-document-management.md).
+Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyringsparametre og dokumenttyper, i [Konfigurere dokumentstyring](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
 ![Konfigurere dokumenttype til dokumentstyring](./media/BDM-Overview-DMSetting.png)
 

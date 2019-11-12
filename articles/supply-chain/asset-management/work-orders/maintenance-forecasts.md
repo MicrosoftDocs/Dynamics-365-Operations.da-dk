@@ -3,7 +3,7 @@ title: Vedligeholdelsesprognoser
 description: I dette emne beskrives vedligeholdelsesprognoser i Styring af aktiver.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,36 +16,35 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a1596b283c3eaffca25ff7f03c722a2bcce109fb
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024493"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626287"
 ---
-# <a name="maintenance-forecasts"></a>Vedligeholdelsesprognoser
+# <a name="maintenance-forecasts"></a>Vedligeholdelsesbudgetter
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Når du opretter en arbejdsordre, opretter du arbejdsordrejob med relaterede aktiver og vedligeholdelsesjobtyper. Når du vælger en vedligeholdelsesjobtype, der indeholder vedligeholdelsesprognoser, kopieres prognoserne automatisk til arbejdsordren.
+Når du opretter en arbejdsordre, opretter du arbejdsordrejob, der har relaterede aktiver og vedligeholdelsesjobtyper. Når du vælger en vedligeholdelsesjobtype, der indeholder vedligeholdelsesprognoser, kopieres prognoserne automatisk til arbejdsordren.
 
-Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre. Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne for projekttypen bestemmer, om du kan tilføje eller redigere prognoselinjer. 
+Du kan muligvis føje prognoselinjer til en arbejdsordre eller slette dem fra en arbejdsordre. Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne, der er relateret til projekttypen, bestemmer, om du kan tilføje eller redigere prognoselinjer. Du kan finde flere oplysninger om arbejdsordrers livscyklustilstande og relaterede projektstadier i [Budgetter, arbejdsordrer og projekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Klik på **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
-2. Vælg arbejdsordren på listen, og klik på **Prognose**. I **Vedligeholdelsesprognose for arbejdsordre** vises prognoselinjer fra den type af vedligeholdelsesjob, der er valgt på arbejdsordrejobbet.
+2. Vælg arbejdsordren på listen, og vælg derefter **Budget** i gruppen **Projekt** under fanen **Arbejdsordre** i handlingsruden. På siden **Vedligeholdelsesprognose for arbejdsordre** vises prognoselinjer fra den type af vedligeholdelsesjob, der er valgt på arbejdsordrejobbet.
 
 
-## <a name="add-hours-forecast-to-a-work-order"></a>Føje timeprognose til en arbejdsordre
+## <a name="add-an-hours-forecast-to-a-work-order"></a>Føje en timeprognose til en arbejdsordre
 
-1. Vælg det arbejdsordrejob, hvor du vil tilføje en prognose.
+1. Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.
 
-2. I oversigtspanelet **Timer** skal du klikke på **Tilføj** for at oprette en ny linje.
+2. I oversigtspanelet **Timer** skal du vælge **Tilføj** for at oprette en ny linje.
 
 3. Vælg en kategori i feltet **Kategori**.
 
@@ -54,66 +53,74 @@ Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre. Opsæt
 5. Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.
 
 
-## <a name="add-items-forecast-to-a-work-order"></a>Føje vareprognose til en arbejdsordre
+## <a name="add-an-items-forecast-to-a-work-order"></a>Føje en vareprognose til en arbejdsordre
 
-Der er tre måder at tilføje varer i en arbejdsordres vedligeholdelsesprognose: Du kan oprette linjer for varer (reservedele), der ikke er medtaget på listen over reservedele eller aktivstyklisten, du kan vælge reservedele på listen over godkendte reservedele, og du kan vælge varer fra aktivstyklisten.
+Du kan føje varer til en vedligeholdelsesprognose for en arbejdsordre på tre måder. Du kan oprette linjer for varer (reservedele), der ikke er medtaget på listen over reservedele eller aktivstyklisten, du kan vælge reservedele på listen over godkendte reservedele, og du kan vælge varer fra aktivstyklisten.
 
-1. Vælg det arbejdsordrejob, hvor du vil tilføje en prognose.
+- Vælg det arbejdsordrejob, hvor der skal tilføjes en prognose, på siden **Vedligeholdelsesprognose for arbejdsordre**.
 
-2. Vælg oversigtspanelet **Varer**.
+- I oversigtspanelet **Varer** kan du føje varer til vedligeholdelsesprognosen ved at bruge den relevante metode.
 
-3. Klik på **Tilføj** for at oprette en ny linje til en reservedel, der ikke findes på listen over reservedele eller aktivstyklisten.
+Følg disse trin for at oprette en ny linje til en reservedel, der ikke findes på listen over reservedele eller aktivstyklisten:
 
-4. Vælg elementet i feltet **Varenummer**.
+1. Vælg **Tilføj**.
+2. Vælg varen i feltet **Varenummer**.
+3. Angiv antallet i feltet **Salgsantal**.
+4. Vælg måleenheden for antallet i feltet **Enhed**.
+5. I felterne **Kostpris** og **Valuta** skal du angive relevante værdier.
+6. Vælg en linjeegenskab i feltet **Linjeegenskab**.
+7. Hvis du vil ændre listen over de dimensioner, der vises på varelinjerne, skal du vælge **Lager** > **Vis dimensioner**, vælge dimensioner og indstille **Gem opsætning** til **Ja**.
 
-5. Indsæt antal i feltet **Salgsantal**, og vælg en antalsenhed i feltet **Enhed**.
+Hvis du vil tilføje en reservedel fra en godkendt reservedelsliste, skal du følge disse trin:
 
-6. Indsæt kostpris og valuta i de relevante felter, og vælg en **Linjeegenskab**.
+1. Vælg **Tilføj reservedele**.
+2. Vælg reservedelen, og rediger de relaterede oplysninger efter behov.
+3. Vælg **OK**.
 
-7. Hvis du vil ændre listen over de dimensioner, der vises på varelinjerne, skal du klikke på **Inventory** > **Vis dimensioner**, vælge dimensioner og vælge "Ja" på knappen **Gem opsætning**.
+Udfør følgende trin for at tilføje en vare fra aktivstyklisten:
 
-8. Hvis du vil føje en godkendt reservedel til vedligeholdelsesprognosen, skal du klikke på **Tilføj reservedele**, vælge reservedelen, redigere relaterede oplysninger, hvis det er nødvendigt, og klikke på **OK**.
+1. Vælg **Tilføj styklistevarer**.
+2. Vælg varen, og rediger de relaterede oplysninger efter behov.
+3. Vælg **OK**.
 
-9. Hvis du vil føje varer fra aktivstyklisten til prognosen, skal du klikke på **Tilføj styklistevarer**, vælge varen, redigere relaterede oplysninger, hvis det er nødvendigt, og klikke på **OK**.
-
-10. Klik på **Hvor er varen brugt?**, hvis du vil have en oversigt over, hvor i Styring af aktiver varen på den valgte linje bruges i relation til aktiver, typestandarder for vedligeholdelsesjob, reservedele og arbejdsordrer. 
+Hvis du vil have en oversigt over, hvor varen på den valgte linje bruges i relation til aktiver,typestandarder for vedligeholdelsesjob, reservedele og arbejdsordrer i Styring af aktiver, skal du vælge **Hvor er varen brugt?**. Yderligere oplysninger om denne oversigt finder du under [Hvor er varen brugt?](../controlling-and-reporting/item-where-used.md).
 
 
+## <a name="add-an-expense-forecast-to-a-work-order"></a>Føje et udgiftsbudget til en arbejdsordre
 
-## <a name="add-expense-forecast-to-a-work-order"></a>Føje udgiftsbudget til en arbejdsordre
+1. Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.
 
-1. Dette emne forklarer, hvordan du kan føje et udgiftsbudget til en arbejdsordre. I venstre side af formen skal du vælge det arbejdsordrejob, hvor du vil tilføje et budget.
+2. I oversigtspanelet **Udgift** skal du vælge **Tilføj** for at oprette en ny linje.
 
-2. Vælg oversigtspanelet **Udgift**.
+3. Vælg en kategori i feltet **Kategori**.
 
-3. Klik på **Tilføj** for at oprette en ny linje.
+4. Angiv antallet i feltet **Antal**.
 
-4. Vælg en kategori i feltet **Kategori**.
+5. Indsæt relevante værdier i felterne **Kostpris**, **Salgsvaluta** og **Salgspris**.
 
-5. Angiv antallet i feltet **Antal**.
-
-6. Indsæt kostpris, salgsvaluta og salgspris i de relevante felter.
-
-7. Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.
+6. Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.
 
 >[!NOTE]
->I oversigtspanelet **Vedligeholdelsesprognosetotaler** kan du få vist en oversigt over antallet af linjer, der er oprettet under hver fane, for det valgte arbejdsordrejob og for arbejdsordren. Du kan også se en sum af de budgetterede arbejdstimer for arbejdsordrejobbet og for arbejdsordren.
+>I oversigtspanelet **Vedligeholdelsesprognosetotaler** vises en oversigt over antallet af linjer, der er oprettet for det valgte arbejdsordrejob og for arbejdsordren, i hvert oversigtspanel. Du kan også se en total af de budgetterede arbejdstimer for arbejdsordrejobbet og arbejdsordren.
+
+I illustrationen herunder vises et eksempel på siden **Vedligeholdelsesprognose for arbejdsordre**.
 
 ![Figur 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk opdatering af prognoser for arbejdsordrer
 
-I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdsordrebudgetter for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler. Dette gøres for at sikre, at de seneste kostpriser altid bruges i dine prognoser for arbejdsordrer. Det er også muligt at foretage lignende opdateringer af [budgetter for vedligeholdelsesjobtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdsordrebudgetter for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler i Microsoft Dynamics 365 for Finance and Operations. Dette er med til at sikre, at de seneste kostpriser altid bruges i dine prognoser for arbejdsordrer. Det er også muligt at foretage lignende opdateringer af [budgetter for vedligeholdelsesjobtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
-1. Klik på **Styring af aktiver** > **Periodisk** > **Prognose** > **Opdater prognose for arbejdsordre**.
+1. Vælg **Styring af aktiver** > **Periodisk** > **Prognose** > **Opdater prognose for arbejdsordre**.
 
-2. I dialogboksen **Opdater prognose for arbejdsordre** kan du tilføje valg for bestemte arbejdsordrer eller arbejdsordrejob, hvis det er nødvendigt. Klik på **Filter** for at foretage disse valg.
+2. I dialogboksen **Opdater prognose for arbejdsordre** i oversigtspanelet **Poster, der skal indgå** kan du tilføje valg for bestemte arbejdsordrer eller arbejdsordrejob efter behov. Klik på **Filter** for at foretage de relevante valg.
 
 3. I oversigtspanelet **Kør i baggrunden** kan du konfigurere automatisk opdatering som et batchjob efter behov.
 
-4. Klik på **OK** for at starte prognoseopdateringen.
+4. Vælg **OK** for at starte budgetopdateringen.
 
+
+I illustrationen herunder vises et eksempel på dialogboksen **Opdater prognose for arbejdsordre**.
 
 ![Figur 2](media/07-work-orders.png)
-

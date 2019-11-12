@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62998da7f541379296d5ac325ae29f24a42f9b7c
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847545"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571662"
 ---
 # <a name="inbound-and-outbound-assets"></a>Indgående og udgående aktiver
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Hvis din virksomhed udfører reparationsarbejde eller vedligeholdelsesarbejde på aktiver, som er modtaget fra andre lokationer eller kunder, kan "Styring af aktiver" spore både indgående aktiver, der er på vej til din virksomhed, og udgående aktiver, der returneres.
 
@@ -45,7 +45,7 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 3. Vælg **Opdater vedligeholdelsesanmodningens tilstand**.
 4. Vælg **Indgående** (eller en anden livscyklustilstand, som du har oprettet for indgående aktiver), og vælg dernæst **OK**.
 
-![Figur 1](media/07-manage-maintenance-requests.png)
+![Registrer aktiver som indgående](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrer indgående aktiver som modtaget
 
@@ -54,7 +54,7 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 3. Vælg **Modtag aktiver**.
 4. Angiv datoen og tidspunktet i feltet **Modtaget**. Vælg derefter **OK**. Posten blev fjernet fra listesiden **Indgående aktiver**.
 
-![Figur 2](media/08-manage-maintenance-requests.png)
+![Registrer indgående aktiver som modtaget](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrer aktiver som udgående
 

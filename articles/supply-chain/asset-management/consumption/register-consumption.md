@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024654"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653317"
 ---
 # <a name="register-consumption"></a>Registrere forbrug
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Når et vedligeholdelsesjob er fuldført i en arbejdsordre, er det næste trin at foretage registrering af forbrug og bogføre kladderne. Du kan foretage registreringer på følgende forbrugstyper: timer, varer og udgifter. De forskellige typer af forbrug registreres og bogføres på siden **Arbejdsordrekladder**. Kladdeopsætningen i **Styring af aktiver** bruges til at oprette og bogføre separate kladder for timer, varer og udgifter i modulet **Projektstyring og regnskab**.
 
-Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre. Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne for projekttypen bestemmer, om du kan tilføje eller redigere kladdelinjer. Læs mere om livscyklustilstande for produktionsordrer og relaterede projektstadier i [Integration med projektstyring og regnskab](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre i visse tilfælde. Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne for projekttypen bestemmer, om du kan tilføje eller redigere kladdelinjer. Læs mere om livscyklustilstande for produktionsordrer og relaterede projektstadier i [Integration med projektstyring og regnskab](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Det er muligt at konfigurere automatisk bogføring af kladder på en livscyklustilstand for en arbejdsordre. Du kan finde flere oplysninger i [Livscyklustilstande for arbejdsordrer](../setup-for-work-orders/work-order-lifecycle-states.md).
@@ -50,10 +50,10 @@ Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre. Opsæt
 
 6. Klik på **Bogfør kladder** for at bogføre kladdelinjerne.
 
-7. Når du har bogført forbrugskladderne, kan du opdatere livscyklustilstanden for arbejdsordren, f.eks. til "Afsluttet", for at angive, at arbejdsordren er fuldført.
+7. Når du har bogført forbrugskladderne, kan du opdatere livscyklustilstanden for arbejdsordren. Hvis du f.eks. vil angive, at arbejdsordren er fuldført, kan du opdatere livscyklustilstanden til "Afsluttet".
 
-- I feltet **Vis** øverst på siden **Arbejdsordrekladder** skal du vælge, hvilke kladdelinjer du vil have vist: alle, ikke bogført eller bogført. Bogførte kladder er markeret i afkrydsningsfeltet **Bogført**.  
-- Når der oprettes varelinjer i arbejdsordrekladden, overføres produktdimensioner og sporingsdimensioner, der er knyttet til varen, automatisk til kladdelinjen.  
+    - I feltet **Vis** øverst på siden **Arbejdsordrekladder** skal du vælge, hvilke kladdelinjer du vil have vist: **Alle**, **Ikke bogført** eller **Bogført**. Bogførte kladder er markeret i afkrydsningsfeltet **Bogført**.  
+    - Når der oprettes varelinjer i arbejdsordrekladden, overføres produktdimensioner og sporingsdimensioner, der er knyttet til varen, automatisk til kladdelinjen.  
 
 Skærmbilledet nedenfor viser et eksempel på time- og vareregistreringer på en arbejdsordre i **Arbejdsordrekladder**.
 
@@ -76,7 +76,7 @@ Hvis en arbejdsordre indeholder flere arbejdsordrejob, kan du registrere arbejds
 
 6. Indsæt det antal arbejdstimer, der skal opdeles, i feltet **Timer**.
 
-![Figur 2](media/02-consumption.png)
+    ![Figur 2](media/02-consumption.png)
 
 7. Klik på **OK**.
 
@@ -88,10 +88,10 @@ Hvis en arbejdsordre indeholder flere arbejdsordrejob, kan du registrere arbejds
 
 Når du foretager registreringer af forbrug, føjes økonomiske dimensioner, der er relateret til de forskellige registreringstyper, til registreringerne i en bestemt rækkefølge. 
 
-*Time- og udgiftsregistreringer:* Først tilføjes økonomiske dimensioner fra kladdehovedet, hvis det er relevant. Derefter tilføjes økonomiske dimensioner fra det relaterede arbejdsordreprojekt. Til sidst tilføjes økonomiske dimensioner fra ressourcen (arbejderen).
+- *Time- og udgiftsregistreringer:* Først tilføjes økonomiske dimensioner fra kladdehovedet, hvis det er relevant. Derefter tilføjes økonomiske dimensioner fra det relaterede arbejdsordreprojekt. Til sidst tilføjes økonomiske dimensioner fra ressourcen (arbejderen).
 
-*Vareregistreringer:* Først tilføjes økonomiske dimensioner fra kladdehovedet, hvis det er relevant. Derefter tilføjes økonomiske dimensioner fra det relaterede arbejdsordreprojekt. Så tilføjes økonomiske dimensioner fra stedet. Til sidst tilføjes økonomiske dimensioner fra varen.
+- *Vareregistreringer:* Først tilføjes økonomiske dimensioner fra kladdehovedet, hvis det er relevant. Derefter tilføjes økonomiske dimensioner fra det relaterede arbejdsordreprojekt. Så tilføjes økonomiske dimensioner fra stedet. Til sidst tilføjes økonomiske dimensioner fra varen.
 
 >[!NOTE]
->For alle tre registreringstyper valideres den økonomiske dimensionskombination, og ugyldige kombinationer står tomme. Dette er standardopsætning i Finance and Operations.
+>For alle tre registreringstyper valideres den økonomiske dimensionskombination, og ugyldige kombinationer står tomme. Dette er standardopsætning i andre Finance and Operations-apps.
 

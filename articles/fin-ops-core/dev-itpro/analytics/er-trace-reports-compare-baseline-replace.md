@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181329"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578212"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Forbedringer i sporing af resultaterne fra genererede ER-rapporter og sammenligning af dem med basisværdier
 
@@ -71,9 +71,6 @@ Grundlaget er blevet tilføjet for det valgte **Format til at lære ER-grundlag*
 5. Gå til feltet **Angiv id**, og angiv **1**.
 6. Angiv indstillingen **Opret grundlagsfiler** til **Ja**.
 7. Vælg **OK**.
-
-    ![Dialogboksen Parametre for elektronisk rapportering](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Skærmbillede af dialogboksen Parametre for elektronisk rapportering")
-
 8. Vælg **Grundlag**.
 
     ![Siden Grundlag for elektronisk rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skærmbillede af siden Grundlag for elektronisk rapporteringsformat")
@@ -140,9 +137,6 @@ Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinnene
 
 1. Gå til siden **Konfigurationer**, og vælg **Vælg komponenter** i oversigtspanelet **Erstatninger**.
 2. I træet til formatkomponenter skal du udvide **Output**, udvide **Output\\Dokument** og derefter markere afkrydsningsfeltet for **Output\\Dokument\\ProcessingDateTime**.
-
-    ![Dialogboksen Vælg komponenter](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Skærmbillede af dialogboksen Vælg Komponenter")
-
 3. Vælg **OK**.
 
 ![Siden Grundlag for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skærmbillede af siden Grundlag for elektronisk rapporteringsformat")
@@ -162,19 +156,14 @@ Hvis du angiver specifikke ER-parametre, kan du undertrykke beskeder, der advare
 1. Gå til siden **Konfigurationer**, gå til handlingsruden, og vælg **Brugerparametre** på fanen **Konfigurationer**.
 2. Angiv indstillingen **Undertryk grundlagsadvarsler** til **Ja**, og vælg derefter **OK**.
 
-![Dialogboksen Brugerparametre](media/GER-BaselineSample-ERUserParameters1.png "Skærmbillede af dialogboksen Brugerparametre")
-
 ### <a name="review-the-generated-baseline-file"></a>Gennemse den genererede grundlagsfil.
 
 1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. Vælg **Grundlag**.
 3. Vælg **Vedhæftede filer**.
-
-    ![Siden Vedhæftede filer](media/GER-BaselineSample-AttachedBaselineFile.PNG "Skærmbillede af siden Vedhæftede filer")
-
     > [!NOTE]
     > Den genererede fil indeholder behandlingsdato- og klokkeslættetsteksten (**"#"**) fra den binding, der blev konfigureret i den tilføjede grundlagsregel, ikke fra formatets binding.
-
+    
 4. Luk siden **Vedhæftede filer**.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Kør det designede ER-format, og gennemse logfilen for at analysere resultaterne

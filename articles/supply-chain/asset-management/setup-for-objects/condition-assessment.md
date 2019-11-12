@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5294325f67f0484b39194b5bd9784a2e612001a4
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 05d1a38ab8de406a1615c474ffe39d231335fb67
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783144"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570047"
 ---
 # <a name="condition-assessment"></a>Tilstandsvurdering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Dette emne forklarer, hvordan du opretter en skabelon til tilstandsvurdering og registrering af et aktiv i Styring af aktiver. Tilstandsvurdering udføres med jævne mellemrum, og det primære formål er at oprette og vedligeholde tilstandsdata for aktiver. Set fra et forebyggende vedligeholdelsesperspektiv er det vigtigt at overvåge nøgleoplysninger såsom aktuel tilstand og resterende levetid. Desuden, hvis du udfører tilstandsvurdering med jævne mellemrum, vil du være i stand til at overvåge og sammenligne tilstande på maskinerne i din fabrik.
 

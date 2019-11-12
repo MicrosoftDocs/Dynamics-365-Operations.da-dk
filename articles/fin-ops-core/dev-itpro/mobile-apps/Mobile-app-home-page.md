@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: a8183dd834b1f39773d25fa7c546d5db1c7b7749
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 219bb1b5ac8360acf267fb792b8e23f961096abc
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249020"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553062"
 ---
 # <a name="mobile-app-home-page"></a>Mobilapp-startside
 
@@ -90,12 +90,12 @@ Tabellen nedenfor indeholder links til ressourcer, der kan hjælpe dig med at im
 <td>Du kan finde flere oplysninger under følgende emner:
 <ul>
 
-<li><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Arbejdsområde til omkostningsstyring på mobilenheder</a></li>
-<li><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Disponibelt lager i mobilarbejdsområde</a></li>
-<li><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Arbejdsområder for salgsordrer på mobilenheder</a></li>
-<li><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilarbejdsområde for kreditorsamarbejde</a></li>
-<li><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Projekttidsregistrering i arbejdsområde til mobile enheder</a></li>
-<li><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Arbejdsområde til udgiftsstyring på mobilenhed</a></li>
+<li><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Arbejdsområde til omkostningsstyring på mobilenheder</a></li>
+<li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Disponibelt lager i mobilarbejdsområde</a></li>
+<li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Arbejdsområder for salgsordrer på mobilenheder</a></li>
+<li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilarbejdsområde for kreditorsamarbejde</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Projekttidsregistrering i arbejdsområde til mobile enheder</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Arbejdsområde til udgiftsstyring på mobilenhed</a></li>
 
 </ul></td>
 </tr>

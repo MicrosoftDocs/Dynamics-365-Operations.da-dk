@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 2d079c10331360c035ff800650ed3102c2cc3ad4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922085"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569978"
 ---
 # <a name="preventive-maintenance-overview"></a>Oversigt over forebyggende vedligeholdelse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I dette emne beskrives forebyggende vedligeholdelse i Styring af aktiver. Forebyggende vedligeholdelse er en disciplin, der involverer planlagte vedligeholdelsesjob, f.eks. regelmæssig service, kalibrering og inspektion. I **Styring af aktiver** kan du oprette vedligeholdelsesplaner og konfigurere dem på anlægsaktiver og arbejdssteder. Du kan også konfigurere vedligeholdelsesrunder på arbejdssteder. Vedligeholdelsesplaner for aktiver er aktive, uanset hvor aktivet er installeret. Vedligeholdelsesplaner og vedligeholdelsesrunder på arbejdssteder er aktive for de aktiver, der er installeret på stedet. I stedet for at konfigurere vedligeholdelsesplaner i aktiver eller konfigurere vedligeholdelsesrunder på arbejdssteder, kan du oprette vedligeholdelsesrunder, der omfatter flere aktiver, som du skal bruge til at udføre relaterede typer vedligeholdelsesjob i den samme arbejdsrutine. Vedligeholdelsesrunder, der er oprettet fra aktiver – i stedet for oprettet på arbejdssteder – betyder, at du kan vælge et antal aktiver til én vedligeholdelsesrunde, som ikke installeres på samme arbejdssted.
 

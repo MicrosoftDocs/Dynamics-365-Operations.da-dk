@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606958"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653365"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
@@ -37,7 +37,7 @@ Som standard under installationen af Finance and Operations 7.3.2 konfigureres p
 
 Når den nye **Detailopgørelser**-konfigurationsnøgle er aktiveret, bliver et nyt menupunkt, **Detailopgørelser**, tilgængeligt. I dette menupunkt kan du manuelt kan oprette, beregne og bogføre opgørelser. Enhver opgørelse, der medfører en fejl, når batchposteringsprocessen bruges, vil også være tilgængelig via dette menupunkt. (Når den nye **Detailopgørelser (ældre)**-konfigurationsnøgle aktiveres, får menupunktet navnet **Åbne opgørelser**).
 
-Finance and Operations der indeholder følgende valideringer, der vedrører disse konfigurationsnøgler:
+Detail indeholder følgende valideringer, der vedrører disse konfigurationsnøgler:
 
 - Begge konfigurationsnøgler kan ikke aktiveres på samme tid.
 - De samme konfigurationsnøgler skal bruges til alle de operationer, der udføres på en given opgørelse i dens livscyklus (oprette, beregne, fjerne, bogføre osv). Du kan f.eks. ikke oprette og beregne en opgørelse, mens konfigurationsnøglen **Detailopgørelser (ældre)** er aktiveret, og derefter prøve at bogføre den samme opgørelse, mens konfigurationsnøglen **Detailopgørelse** er aktiveret.

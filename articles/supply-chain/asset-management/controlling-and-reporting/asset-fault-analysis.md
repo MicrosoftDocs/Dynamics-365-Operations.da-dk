@@ -18,37 +18,45 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c9330cc7b3a8839d94c8945418548033254786b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 43772903f6845409cb33c7f2a13a049a3e9aa208
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652396"
 ---
 # <a name="asset-fault-analysis"></a>Analyse af aktivfejl
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Styring af aktiver kan du analysere registreringer af aktivfejl for at få et overblik over det samlede antal registrerede fejl i en bestemt periode. Fejlregistreringer kan analyseres fra forskellige perspektiver, f.eks. med fokus på aktiver, aktivtyper, arbejdssteder, fejlsymptomer eller fejltyper.
 
 1. Klik på **Styring af aktiver** > **Forespørgsler** > **Aktivfejl** > **Analyse af aktivfejl**.
 
-2. I dialogboksen **Analyseberegning af aktivfejl** kan du bruge feltet **Niveau** til at angive, hvor detaljeret aktivfejllinjerne skal være i forbindelse med arbejdssteder. Hvis du f.eks. indsætter tallet "1" i feltet, og du har en arbejdsstedsstruktur med flere niveauer, vises alle aktivfejllinjer for et arbejdssted på det øverste niveau, og derfor kan timerne på en linje være opsummeret fra arbejdssteder, der findes på et lavere niveau. Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle aktivfejllinjer på alle de arbejdsstedsniveauer, de er relateret til.
+2. I dialogboksen **Analyseberegning af aktivfejl** kan du bruge feltet **Niveau** til at angive, hvor detaljeret aktivfejllinjerne skal være i forbindelse med arbejdssteder. 
+
+    Hvis du f.eks. indsætter tallet "1" i feltet, og du har en arbejdsstedsstruktur med flere niveauer, vises alle aktivfejllinjer for et arbejdssted på det øverste niveau, og derfor kan timerne på en linje være opsummeret fra arbejdssteder, der findes på et lavere niveau. 
+        
+    Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle aktivfejllinjer på alle de arbejdsstedsniveauer, de er relateret til.
 
 3. Hvis du vil begrænse søgningen, kan du vælge bestemte aktiver, fejldatoer, fejlårsager og fejlrettelser i oversigtspanelet **Poster, der skal indgå**.
 
 4. Klik på **OK** for at starte beregningen.
 
-5. Klik på en eller flere knapper i handlingsruden **Sammenlæg pr.** under fanen **Analyse af aktivfejl** for at få vist detaljeringsniveauet. Aktiverede knapper er fremhævet. Aktivér eller deaktiver knapper ved at klikke på dem.
+5. Klik på en eller flere af knapperne **Sammenlæg pr.** under fanen **Analyse af aktivfejl** for at få vist detaljeringsniveauet. Aktiverede knapper er fremhævet. Aktivér eller deaktiver knapper ved at klikke på dem.
 
 6. Klik på **Opdater beregninger** for at få vist dine valg på skærmen. 
 
 >[!NOTE]
->Hver gang du aktiverer eller deaktiverer knapper i handlingsrudegrupperne **Sammenlæg pr.**, skal du huske at klikke på knappen **Opdater beregninger**, når du har ændret valgene. Dette er nødvendigt, da en stor mængde data behandles, mens du genberegner fejlsandsynlighed.
+>Når du aktiverer eller deaktiverer knappen **Sammenlæg pr.**, skal du huske at klikke på knappen **Opdater beregninger**. Dette er nødvendigt, da en stor mængde data behandles, mens du genberegner fejlsandsynlighed.
 
-Der er mange måder at analysere fejlregistreringer på. Nedenfor vises eksempler i fem skærmbilleder af, hvordan forskellige datavalg giver forskellige oplysninger. Du kan se, hvordan forskellige valg giver flere oplysninger og detaljer ved analyse af registreringer af aktivfejl.
+## <a name="examples"></a>Eksempler
+
+Der er mange måder at analysere fejlregistreringer på. Denne sektion har fem eksempler på, hvordan forskellige datavalg giver mere indsigt og detaljer ved analyse af registreringer af aktivfejl.
+
+### <a name="group-by-symptoms"></a>Sammenlæg pr. symptomer
 
 I skærmbilledet herunder er det kun knappen **Symptom**, der er valgt.
 
@@ -57,6 +65,7 @@ I skærmbilledet herunder er det kun knappen **Symptom**, der er valgt.
 
 ![Figur 1](media/06-controlling-and-reporting.png)
 
+### <a name="group-by-symptoms-and-time-period"></a>Sammenlæg pr. symptomer og tidsperiode
 
 I skærmbilledet nedenfor tilføjes **År** og **Måned** for at vise, hvordan du kan få vist fejlregistreringer i løbet af en valgt periode.
 
@@ -65,9 +74,13 @@ I skærmbilledet nedenfor tilføjes **År** og **Måned** for at vise, hvordan d
 
 ![Figur 2](media/07-controlling-and-reporting.png)
 
+### <a name="group-by-multiple-symptoms-and-assets"></a>Sammenlæg pr. flere symptomer og aktiver
 
-- Kombinationen af aktiver og en aktivtype bruges som udgangspunkt for de beregninger, der vises i de tre skærmbilleder nedenfor, som øges i detaljeringsgraden.  
-- Generelt vil knapperne i handlingsrudegrupper **Gruppér efter dato**, **Gruppér efter aktiv**, **Gruppér efter arbejdssted** samt knappen **Fejl** (fejl-id) normalt indeholde perioder eller aktivrelationer. Knapperne **Symptom**, **Område**, **Type**, **Årsag** og **Afhjælpning** er de kategoriseringer, der bruges i fejlstyring til at analysere registreringer af aktivfejl og udpege problematiske områder.  
+Kombinationen af aktiver og en aktivtype bruges som udgangspunkt for de beregninger, der vises i de tre skærmbilleder nedenfor, som øges i detaljeringsgraden.  
+
+Generelt vil knapperne i handlingsrudegrupper **Gruppér efter dato**, **Gruppér efter aktiv**, **Gruppér efter arbejdssted** samt knappen **Fejl** (fejl-id) normalt indeholde perioder eller aktivrelationer. Knapperne **Symptom**, **Område**, **Type**, **Årsag** og **Afhjælpning** er de kategoriseringer, der bruges i fejlstyring til at analysere registreringer af aktivfejl og udpege problematiske områder.  
+
+**Sammenlæg pr. symptom, aktiv og aktivtype**
 
 I skærmbilledet nedenfor blev **Aktiv** og **Aktivtype** tilføjet for at give flere oplysninger om fejlregistreringer.
 
@@ -76,6 +89,7 @@ I skærmbilledet nedenfor blev **Aktiv** og **Aktivtype** tilføjet for at give 
 
 ![Figur 3](media/08-controlling-and-reporting.png)
 
+**Sammenlæg pr. to symptomer, aktiv og aktivtype**
 
 I skærmbilledet nedenfor er **Område** lagt til **Symptom**, **Aktiv** og **Aktivtype** for at give flere oplysninger om fejlregistreringer.
 
@@ -83,6 +97,7 @@ I skærmbilledet nedenfor er **Område** lagt til **Symptom**, **Aktiv** og **Ak
 
 ![Figur 4](media/09-controlling-and-reporting.png)
 
+**Sammenlæg pr.tre symptomer, aktiv og aktivtype**
 
 I skærmbilledet nedenfor er **Type** tilføjet, og den mest detaljerede beregning vises i dette eksempel.
  
