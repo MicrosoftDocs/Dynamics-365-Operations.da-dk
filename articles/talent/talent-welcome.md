@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552944"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812758"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Velkommen til Dynamics 365 Talent
 
@@ -52,11 +52,11 @@ Udforsk Dynamics 365 Talent ved at se videoen [Sådan kommer du i gang med Dynam
 
 Når du arbejder med Talent, skal du beslutte, hvordan du vil strukturere organisationen, ved hjælp af elementer som afdelinger, job og stillinger. Disse er blandt de grundlæggende elementer, at du skal konfigurer. De enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
 
--   [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](departments-jobs-positions.md)
--   [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
--   [Angive personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
+-   [Oprette firmaspecifikke HR-parametre](set-up-company-specific-hr-parameters.md)
+-   [Angive personaleparametre (HR) på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
 -   [Ofte stillede spørgsmål om personalehandlinger](personnel-actions-faq.md)
--   [Oversigt over orlov og fravær](leave-absence-overview.md)
+-   [Administration af orlov og fravær](leave-absence-overview.md)
 -   [Sådan bruges Dynamics 365 Talent: orlov og fravær (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Sådan administreres personale i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ Når du arbejder med Talent, skal du beslutte, hvordan du vil strukturere organi
 
 Talent omfatter Attract, som kan hjælpe dig med at identificere, interviewe og ansætte kandidater, der har de færdigheder, som organisationen skal bruge. Når du går fra rekruttering til ansættelse, kan Onboard-appen hjælpe dig med at præsentere din nye medarbejder for organisationen ved at angive nøjagtige forventninger, give de nødvendige oplysninger for at komme godt i gang, introducere dem for kollegerne og klæde dem på til deres nye rolle.  
 
-- [Attract-oversigt](attract-overview.md)
-- [Onboard-oversigt](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent – Attract-funktioner og -egenskaber](attract-overview.md)
+- [Komme i gang med Onboard](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Fastholde og motivere medarbejdere
 
@@ -82,17 +82,17 @@ Du kan oprette planer for effektivt og retfærdigt at administrere kompensation 
 For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde vigtige forretningsbehov, kan du sætte mål, oprette evalueringer af performance og spore feedback. For at hjælpe medarbejderne med at udvikle de nødvendige færdigheder, kan du også oprette instruktører, kursustyper, kurser, kursusbeskrivelser, agendaer, spor og sessioner, før du tildeler en instruktør til et kursus eller registrere nogen til et kursus. Instruktører skal allerede eksistere som arbejdere, ansøgere eller kontakter.
 
 -   [Performancestyring](performance-management-overview.md)
--   [Justere arbejdsstyrkens færdigheder og forretningsbehov](skills.md)
--   [Administrere uddannelse gennem kurser](courses.md)
+-   [Justere arbejdsstyrkens færdigheder med forretningsbehov](skills.md)
+-   [Konfigurere kurser](courses.md)
 -   [Sådan administreres medarbejderudvikling i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Oprette og vedligeholde frynsegoder
 
 Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvikle frynsegodeprogrammer som f.eks. sygesikring og pensionsordninger. Du kan også administrere frynsegoder som f.eks. låneprogrammer, hvor virksomheden udlåner udstyr som f.eks. computere eller telefoner til sine medarbejdere.
 
--   [Administrere et frynsegodeprogram](manage-benefit-program.md)
+-   [Definere og administrere et frynsegodeprogram](manage-benefit-program.md)
 -   [Politikker for berettigelse til frynsegoder](benefit-eligibility-policies.md)
--   [Administrere udstyr, der udlånes til arbejdere](loan-items.md)
+-   [Administrere udstyr, der er udlånt til arbejdere](loan-items.md)
 -   [Sådan administreres medarbejderfrynsegoder i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
@@ -107,6 +107,6 @@ Talent kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overhol
 Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der bruges til forskellige formål. Med spørgeskemafunktionen kan du designe og oprette spørgeskemaer. Når et spørgeskema er klar, skal du distribuere det bredt eller til en bestemt gruppe svarpersoner, som skal udfylde det. Når svarpersonerne har leveret deres svar, kan du gennemse og analysere resultaterne.
 
 -   [Spørgeskemaer](questionnaires.md)
--   [Designe et spørgeskema](design-questionnaires.md)
--   [Distribuere og udfylde et spørgeskema](distribute-questionnaires.md)
--   [Se og evaluere resultaterne af et spørgeskema](evaluate-questionnaire-results.md)
+-   [Designe spørgeskema](design-questionnaires.md)
+-   [Udsende og planlægge spørgeskemaer](distribute-questionnaires.md)
+-   [Se og evaluere resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)

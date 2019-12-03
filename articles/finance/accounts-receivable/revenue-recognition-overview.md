@@ -3,7 +3,7 @@ title: Oversigt over indtægtsføring
 description: Dette emne indeholder oplysninger om funktionen Indtægtsføring. Denne funktion giver en fleksibel ramme, hvor du kan definere firmaspecifikke regler for genkendelse af både indtægtsprisen og indtægtstidsplanen for ordrer med flere elementer.
 author: kweekley
 manager: aolson
-ms.date: 08/24/2018
+ms.date: 11/11/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 0681636853b38895e4b8875150ea42baadd7b951
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8743183c46463395cad3138261860442701e0178
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570373"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781890"
 ---
 # <a name="revenue-recognition-overview"></a>Oversigt over indtægtsføring
 
@@ -36,6 +36,10 @@ Generelt kan processen til indtægtsføring bruges til at udføre disse opgaver:
 
 * Fordele omsætning som en hjælp til at sikre, at den relevante indtægtspris genkendes på basis af værdien af komponenterne i ordrer med flere elementer.
 * Udskyde omsætning på basis af en indtægtstidsplan, der repræsenterer den kontraktmæssige tidsramme og procentdele til indtægtsføring over tid.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44iER]
+
+Videoen [Sådan bruges indtægtsføring i Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 Funktionen Indtægtsføring indeholder en fleksibel ramme, hvor du kan definere firmaspecifikke regler for genkendelse af både indtægtsprisen og indtægtstidsplanen.
 
