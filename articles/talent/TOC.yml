@@ -8,6 +8,14 @@
         - name: Nyheder eller ændringer i Talent
           href: whats-new.md
           items:
+            - name: 19. november 2019
+              href: whats-new-talent-november-19-2019.md
+            - name: 12. november 2019
+              href: whats-new-talent-november-12-2019.md
+            - name: 5. november 2019
+              href: whats-new-talent-november-5-2019.md
+            - name: 29. oktober 2019
+              href: whats-new-talent-oct-29-2019.md
             - name: 23. oktober 2019
               href: whats-new-talent-october-23-2019.md
             - name: 8. oktober 2019
@@ -26,18 +34,18 @@
               href: whats-new-talent-august-15-2019.md
             - name: 6. august 2019
               href: whats-new-talent-august-7-2019.md
-            - name: 30. juli 2019
-              href: whats-new-talent-july-31-2019.md
-            - name: 23. juli 2019
-              href: whats-new-talent-july-24-2019.md
-            - name: 16. juli 2019
-              href: whats-new-talent-july-16-2019.md
-            - name: 9. juli 2019
-              href: whats-new-talent-july-9-2019.md
-            - name: 2. juli 2019
-              href: whats-new-talent-july-2-2019.md
             - name: Arkiver med nyheder 2019
               items:
+                - name: 30. juli 2019
+                  href: whats-new-talent-july-31-2019.md
+                - name: 23. juli 2019
+                  href: whats-new-talent-july-24-2019.md
+                - name: 16. juli 2019
+                  href: whats-new-talent-july-16-2019.md
+                - name: 9. juli 2019
+                  href: whats-new-talent-july-9-2019.md
+                - name: 2. juli 2019
+                  href: whats-new-talent-july-2-2019.md
                 - name: 25. juni 2019
                   href: whats-new-talent-june-25-2019.md
                 - name: 18. juni 2019
@@ -116,10 +124,14 @@
                   href: whats-new-talent-august2018.md
                 - name: Juli 2018
                   href: whats-new-talent-july2018.md
-        - name: Systemkrav og opdateringspolitik
+        - name: Systemkrav
           href: talent-versions-update-policy.md
+        - name: Talent-opdateringer
+          href: talent-updates.md
         - name: Klargøre Talent
           href: provisioning-talent.md
+        - name: Kopiere en Core HR-forekomst
+          href: hr-copy-instance.md
         - name: Fjerne Talent-miljøer
           href: remove-talent-environment.md
         - name: Klargøring af Onboard-appen
@@ -439,9 +451,21 @@
           href: extensibility-attract.md
         - name: Brugerdefinerede felter i Core HR
           href: corehr-custom-fields.md
+        - name: Enheds-API-reference
+          items:
+            - name: Godkendelse
+              href: api-odata-authentication.md
+            - name: Enheder
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: Oversigt over MyLeaveRequests
+                      href: api-myleaverequests-overview.md
+                    - name: Sende en orlovsanmodning til arbejdsgang
+                      href: api-myleaverequests-submit.md
     - name: Fejlfinding af Talent
       items:
-        - name: Optimer ydeevnen med automatiske oprydningsopgaver
+        - name: Optimere ydeevnen med automatiske oprydningsopgaver
           href: talent-batch-history-cleanup.md
         - name: Fejlfinding af opslag af job på LinkedIn
           href: attract-troubleshoot-linkedin.md

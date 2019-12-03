@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Få vist omkostningsværdier for disponibel lagerbeholdning
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Rapporten Aldersfordelt lager
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Produktionsregnskab
               items:
                 - name: Styklistekalkulationer
@@ -868,7 +870,13 @@
                         - name: Hente konfigurationer fra ER-lageret til RCS-typen
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Importere konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Selvstudier
+                      items:
+                        - name: Bruge JOIN-datakilder til at hente data fra flere programtabeller i ER-modeltilknytninger (elektronisk rapportering)
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
                   items:
                     - name: Konfigurere strukturen
@@ -903,7 +911,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oversigt over styring af forretningsdokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                - name: API-struktur til ER
+                    - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API til ER-struktur
                   items:
                     - name: Udvide listen over elektroniske rapporteringsfunktioner
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
@@ -1051,6 +1061,22 @@
           items:
             - name: Startside for varedisponering
               href: master-planning/master-planning-home-page.md
+            - name: Planlægningsoptimering
+              items:
+                - name: Oversigt over planlægningsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Kom i gang med planlægningsoptimering
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Analyse af tilpasning af planlægningsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Anvende filtre på en plan
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Få vist planhistorik og planlægningslogfiler
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automatisk autorisation med planlægningsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Annullere et planlægningsjob
+                  href: master-planning/planning-optimization/cancel-planning-job.md
             - name: Behovsplaner
               items:
                 - name: Oversigt over behovsplaner

@@ -2,6 +2,8 @@
   items:
     - name: Udvikling og administration af Finance and Operations-apps
       items:
+        - name: Dokumentation for Finance and Operations-applikation
+          href: ../fin-ops/index.md
         - name: Udvikling og administration af Finance and Operations-apps
           href: index.md
         - name: Nyheder eller ændringer
@@ -124,20 +126,32 @@
                       href: data-entities/data-integration-cds.md
                     - name: Synkron tovejsintegration
                       items:
-                        - name: Integration næsten i realtid
+                        - name: Dataintegration næsten i realtid
                           href: data-entities/dual-write-overview.md
                         - name: Organisationshierarki på Common Data Service
                           href: data-entities/dual-write-organization.md
-                        - name: Firmabegreb i Common Data Service'er
-                          href: data-entities/dual-write-company.md
+                        - name: Firmaintegration
+                          items:
+                            - name: Firmabegreb i Common Data Service'er
+                              href: data-entities/dual-write-company.md
+                            - name: Bootstrap med firmadata
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Integreret kundemaster
                           href: data-entities/dual-write-customer.md
+                        - name: Integreret finans
+                          href: data-entities/dual-write-ledger.md
                         - name: Samlet produktoplevelse
                           href: data-entities/dual-write-product.md
-                        - name: Integreret kreditormaster
-                          href: data-entities/dual-write-vendor.md
+                        - name: Kreditorintegration
+                          items:
+                            - name: Integreret kreditormaster
+                              href: data-entities/dual-write-vendor.md
+                            - name: Skifte mellem kreditordesign
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Integrerede lokationer og lagersteder
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integreret momsmaster
+                          href: data-entities/dual-write-tax.md
                         - name: Første synkronisering
                           href: data-entities/dual-write-initial.md
                         - name: Fejlfinding af dataintegration
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Fejlfinding af lokale installationer
                   href: deployment/troubleshoot-on-prem.md
+                - name: Scripts til løsning af problemer i lokale miljøer
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Certifikatrotation
                   href: deployment/certificate-rotation-on-prem.md
             - name: Installere brugerdefineret kode
@@ -1024,7 +1040,7 @@
                       href: mobile-apps/platform/client-apis/modules/event-ievent.md
                     - name: Modulet Kontrol
                       href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
-                    - name: Modulet Container
+                    - name: Containermodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
                     - name: Modulet Felt
                       href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md

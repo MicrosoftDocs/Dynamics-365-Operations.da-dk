@@ -500,7 +500,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/retail/toc.json
                     - name: Oversigt over styring af forretningsdokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/retail/toc.json
-                - name: API-struktur til ER
+                - name: API til ER-struktur
                   items:
                     - name: Udvide listen over elektroniske rapporteringsfunktioner
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/retail/toc.json
@@ -850,6 +850,8 @@
           items:
             - name: Oversigt over loyalitet
               href: set-up-customer-loyalty-program.md
+            - name: 'Kundeaktiviteter, oversigt'
+              href: clienteling-overview.md
         - name: Betalinger
           items:
             - name: Betalingsmetoder
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: Installere layoutdesigneren til POS
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS i offlinetilstand
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: Udvide POS Dual-displayvisningen
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Udvidelse af Retail Modern POS- og Cloud POS-udløser
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Implementere en returneringspolitik ved hjælp af udløsere
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Logføre udvidelseshændelser i Application Insights
+                  href: dev-itpro/commerce-application-insights.md
             - name: Udvidelse for e-handel
               items:
                 - name: Konfigurere onlinebutikker

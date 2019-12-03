@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Tilmelde dig prøveabonnementer
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Indsigt i debitorbetaling (prøveversion)
+              href: accounts-receivable/payment-insights-overview.md
             - name: One Version-tjenesteopdateringer
               items:
                 - name: Oversigt over One Version-tjenesteopdateringer
@@ -2239,11 +2241,13 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: Kontantbeholdning
                       href: localizations/emea-petty-cash.md
+                    - name: Kontanter – lokale primære formularer og samlede rapporter
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: Moms
                   items:
                     - name: Lokal specifik bogføring af udgående moms
                       href: localizations/rus-local-specific-posting-sales-vat.md
-                    - name: Behandling og udskrivning af fakuraer
+                    - name: Behandling og udskrivning af fakturaer
                       href: localizations/rus-invoice-facture-process-print.md
                     - name: Reviderede fakturaer og korrektionsfakturaer
                       href: localizations/rus-revise-invoice-facture.md
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Forskudsbetalingsstyring
                       href: localizations/rus-prepayments-management.md
+                    - name: Gendannelse af indgående moms
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Anlægsaktiver
                   items:
                     - name: Administrere anlægsaktiver
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Fordeling af forskellige gebyrer i forhold til vægt og volumen
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Tredjepartstillæg
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Lager
+                  items:
+                    - name: Varer undervejs fra leverandør
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Tolddeklarationsnumre
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Rapportering
                   items:
                     - name: Økonomirapportering
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: Virksomhedsdivisioner
                       href: localizations/rus-company-divisions.md
+                    - name: Russiske adresseformater og import fra FIAS
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Udskydelser
                   items:
                     - name: Konfigurere udskydelser
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Importere konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Selvstudier
+                  items:
+                    - name: Bruge JOIN-datakilder til at hente data fra flere programtabeller i ER-modeltilknytninger (elektronisk rapportering)
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
                   items:
                     - name: Konfigurere strukturen
@@ -2903,7 +2925,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Oversigt over styring af forretningsdokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                - name: API-struktur til ER
+                    - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                - name: API til ER-struktur
                   items:
                     - name: Udvide listen over elektroniske rapporteringsfunktioner
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
