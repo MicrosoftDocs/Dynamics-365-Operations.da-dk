@@ -18,38 +18,38 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176983"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771955"
 ---
-# <a name="cost-accounting-home-page"></a><span data-ttu-id="08346-103">Startside for omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="08346-103">Cost accounting home page</span></span>
+# <a name="cost-accounting-home-page"></a><span data-ttu-id="4f62d-103">Startside for omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="4f62d-103">Cost accounting home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="learning-map"></a><span data-ttu-id="08346-104">Køreplan</span><span class="sxs-lookup"><span data-stu-id="08346-104">Learning map</span></span> 
+## <a name="learning-map"></a><span data-ttu-id="4f62d-104">Køreplan</span><span class="sxs-lookup"><span data-stu-id="4f62d-104">Learning map</span></span> 
 
-<span data-ttu-id="08346-105">Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukturen i modulet Omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="08346-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="08346-106">Klik på linksene i sektionen [Hurtige links](#quick-links) for at få mere at vide, hvordan du bruger modulet.</span><span class="sxs-lookup"><span data-stu-id="08346-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
+<span data-ttu-id="4f62d-105">Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukturen i modulet Omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="4f62d-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="4f62d-106">Klik på linksene i sektionen [Hurtige links](#quick-links) for at få mere at vide, hvordan du bruger modulet.</span><span class="sxs-lookup"><span data-stu-id="4f62d-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
 
-<span data-ttu-id="08346-107">[![Køreplan for omkostningsregnskab](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="08346-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
+<span data-ttu-id="4f62d-107">[![Køreplan for omkostningsregnskab](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="4f62d-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
 
-## <a name="quick-links"></a><span data-ttu-id="08346-108">Hurtige links</span><span class="sxs-lookup"><span data-stu-id="08346-108">Quick links</span></span>
+## <a name="quick-links"></a><span data-ttu-id="4f62d-108">Hurtige links</span><span class="sxs-lookup"><span data-stu-id="4f62d-108">Quick links</span></span>
 
 |      |   |
 |------|---|
-|  <span data-ttu-id="08346-109">[Konfigurere basisenheder (eLearning)](https://mbspartner.microsoft.com/Home) (kræver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="08346-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="08346-110">Opret dimensioner</span><span class="sxs-lookup"><span data-stu-id="08346-110">Create dimensions</span></span>](cost-elements.md)  |
-|  [<span data-ttu-id="08346-111">Oprette dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="08346-111">Create dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="08346-112">Oprette basisopsætning</span><span class="sxs-lookup"><span data-stu-id="08346-112">Create basic setup</span></span>](./tasks/define-cost-control-units.md)| 
-| [<span data-ttu-id="08346-113">Definere en tildelingsbasis</span><span class="sxs-lookup"><span data-stu-id="08346-113">Define allocation base</span></span>](allocation-bases.md)|[<span data-ttu-id="08346-114">Definer politikker</span><span class="sxs-lookup"><span data-stu-id="08346-114">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [<span data-ttu-id="08346-115">Datakilde og dataprovider</span><span class="sxs-lookup"><span data-stu-id="08346-115">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="08346-116">Datakilde og dataprovider</span><span class="sxs-lookup"><span data-stu-id="08346-116">Data source and data provider</span></span>](./tasks/process-trace-source-data.md)     | 
-|[<span data-ttu-id="08346-117">Beregning af fast omkostning</span><span class="sxs-lookup"><span data-stu-id="08346-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="08346-118">Analyse og rapportering</span><span class="sxs-lookup"><span data-stu-id="08346-118">Analysis and reporting</span></span>](cost-control-workspace.md)   |
+|  <span data-ttu-id="4f62d-109">[Konfigurere basisenheder (eLearning)](https://mbspartner.microsoft.com/Home) (kræver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="4f62d-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="4f62d-110">Dimensioner for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="4f62d-110">Cost element dimensions</span></span>](cost-elements.md)  |
+|  [<span data-ttu-id="4f62d-111">Dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="4f62d-111">Dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="4f62d-112">Definere omkostningskontrolenheder</span><span class="sxs-lookup"><span data-stu-id="4f62d-112">Define cost control units</span></span>](./tasks/define-cost-control-units.md)| 
+| [<span data-ttu-id="4f62d-113">Fordelingsgrundlag</span><span class="sxs-lookup"><span data-stu-id="4f62d-113">Allocation bases</span></span>](allocation-bases.md)|[<span data-ttu-id="4f62d-114">Oprette og tildele omkostningsfordelingspolitik til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="4f62d-114">Create and assign a cost allocation policy to a cost control unit</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [<span data-ttu-id="4f62d-115">Administrere en datakilde for finanspost for driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="4f62d-115">Manage a data source for the cost accounting ledger</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="4f62d-116">Behandle og spore kildedata</span><span class="sxs-lookup"><span data-stu-id="4f62d-116">Process and trace source data</span></span>](./tasks/process-trace-source-data.md)     | 
+|[<span data-ttu-id="4f62d-117">Beregning af faste omkostninger</span><span class="sxs-lookup"><span data-stu-id="4f62d-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="4f62d-118">Arbejdsområde for omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="4f62d-118">Cost control workspace</span></span>](cost-control-workspace.md)   |
 
-## <a name="get-started-videosbr"></a><span data-ttu-id="08346-119">Kom i gang-videoer</span><span class="sxs-lookup"><span data-stu-id="08346-119">Get started videos</span></span><br/>
+## <a name="get-started-videosbr"></a><span data-ttu-id="4f62d-119">Kom i gang-videoer</span><span class="sxs-lookup"><span data-stu-id="4f62d-119">Get started videos</span></span><br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
-| [<span data-ttu-id="08346-120">Introduktion til driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="08346-120">Get started with cost accounting</span></span>](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [<span data-ttu-id="08346-121">Mobilarbejdsområde for omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="08346-121">Cost accounting mobile workspace</span></span>](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [<span data-ttu-id="08346-122">Bruge Excel til omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="08346-122">Use Excel for cost accounting analysis</span></span>](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+| [<span data-ttu-id="4f62d-120">Introduktion til driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="4f62d-120">Get started with cost accounting</span></span>](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [<span data-ttu-id="4f62d-121">Mobilarbejdsområde for omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="4f62d-121">Cost accounting mobile workspace</span></span>](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [<span data-ttu-id="4f62d-122">Bruge Excel til omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="4f62d-122">Use Excel for cost accounting analysis</span></span>](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
+
 
 

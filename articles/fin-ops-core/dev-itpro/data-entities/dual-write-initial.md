@@ -19,55 +19,53 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3110cb809558d168e9d97f640701b249caf73f6c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf444ef1192fed3a6a49282da37374dd8c443356
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184502"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769631"
 ---
-# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-apps-and-common-data-service"></a><span data-ttu-id="493df-103">Udførelsesrækkefølge for indledende synkronisering af Finance and Operations-apps og Common Data Service</span><span class="sxs-lookup"><span data-stu-id="493df-103">Execution order for initial synchronization of Finance and Operations apps and Common Data Service</span></span>
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-apps-and-common-data-service"></a><span data-ttu-id="fa15a-103">Udførelsesrækkefølge for indledende synkronisering af Finance and Operations-apps og Common Data Service</span><span class="sxs-lookup"><span data-stu-id="fa15a-103">Execution order for initial synchronization of Finance and Operations apps and Common Data Service</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
-<span data-ttu-id="493df-104">Før du bruger dataintegration, skal du oprette de første data, der kræves til debitorer, kreditorer og kontakter.</span><span class="sxs-lookup"><span data-stu-id="493df-104">Before you use data integration, you must create the initial data that is required for customers, vendors, and contacts.</span></span> <span data-ttu-id="493df-105">Du kan f.eks. oprette en ny **Leverandørgruppe** og angive dens **Betalingsbetingelser** til **Net30**.</span><span class="sxs-lookup"><span data-stu-id="493df-105">For example, you want to create a new **Vendor group** item and set its **Terms of Payment** value to **Net30**.</span></span> <span data-ttu-id="493df-106">I dette tilfælde skal du sikre dig, at **Net30** findes i både programmet og Common Data Service, inden du forsøger at oprette elementet **Leverandørgruppe**.</span><span class="sxs-lookup"><span data-stu-id="493df-106">In this case, before you try to create the **Vendor group** item, you must make sure that **Net30** exists in both the application and Common Data Service.</span></span> <span data-ttu-id="493df-107">(I fremtiden vil Microsoft frigive en dobbeltskrivningsplatform med en funktionalitet kaldet Første synkronisering. Den vil udføre en engangsdatasynkronisering mellem programmet og Common Data Service som en del af dobbeltskrivningsopsætningen).</span><span class="sxs-lookup"><span data-stu-id="493df-107">(In the future, Microsoft will release dual-write platform functionality that is named Initial Sync. This functionality will do a one-time data synchronization between the application and Common Data Service as part of the dual-write setup.)</span></span>
+<span data-ttu-id="fa15a-104">Før du bruger dataintegration, skal du oprette de første data, der kræves til debitorer, kreditorer og kontakter.</span><span class="sxs-lookup"><span data-stu-id="fa15a-104">Before you use data integration, you must create the initial data that is required for customers, vendors, and contacts.</span></span> <span data-ttu-id="fa15a-105">Du kan f.eks. oprette en ny **Leverandørgruppe** og angive dens **Betalingsbetingelser** til **Net30**.</span><span class="sxs-lookup"><span data-stu-id="fa15a-105">For example, you want to create a new **Vendor group** item and set its **Terms of Payment** value to **Net30**.</span></span> <span data-ttu-id="fa15a-106">I dette tilfælde skal du sikre dig, at **Net30** findes i både programmet og Common Data Service, inden du forsøger at oprette elementet **Leverandørgruppe**.</span><span class="sxs-lookup"><span data-stu-id="fa15a-106">In this case, before you try to create the **Vendor group** item, you must make sure that **Net30** exists in both the application and Common Data Service.</span></span> <span data-ttu-id="fa15a-107">(I fremtiden vil Microsoft frigive en dobbeltskrivningsplatform med en funktionalitet kaldet Første synkronisering. Den vil udføre en engangsdatasynkronisering mellem programmet og Common Data Service som en del af dobbeltskrivningsopsætningen).</span><span class="sxs-lookup"><span data-stu-id="fa15a-107">(In the future, Microsoft will release dual-write platform functionality that is named Initial Sync. This functionality will do a one-time data synchronization between the application and Common Data Service as part of the dual-write setup.)</span></span>
 
 > [!TIP]
-> <span data-ttu-id="493df-108">Microsoft frigiver et kort med dobbeltskrivning for alle referencedata, herunder **Betalingsbetingelser** (betalingsvilkår).</span><span class="sxs-lookup"><span data-stu-id="493df-108">Microsoft is releasing a dual-write map for all reference data, including **Terms of Payment** (payment terms).</span></span> <span data-ttu-id="493df-109">Hvis du allerede har de første data i ét system, kan en lille opdateringshandling på en post udløse dobbeltskrivning på den pågældende post.</span><span class="sxs-lookup"><span data-stu-id="493df-109">If you already have the initial data in one system, a small update operation on a record can trigger dual-write on that record.</span></span>
+> <span data-ttu-id="fa15a-108">Microsoft frigiver et kort med dobbeltskrivning for alle referencedata, herunder **Betalingsbetingelser** (betalingsvilkår).</span><span class="sxs-lookup"><span data-stu-id="fa15a-108">Microsoft is releasing a dual-write map for all reference data, including **Terms of Payment** (payment terms).</span></span> <span data-ttu-id="fa15a-109">Hvis du allerede har de første data i ét system, kan en lille opdateringshandling på en post udløse dobbeltskrivning på den pågældende post.</span><span class="sxs-lookup"><span data-stu-id="fa15a-109">If you already have the initial data in one system, a small update operation on a record can trigger dual-write on that record.</span></span>
 
-<span data-ttu-id="493df-110">Du skal følge nedenstående prioriteringsrækkefølge og sørge for, at de første data er tilgængelige i både programmet og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="493df-110">You must follow the following order of precedence and make sure that the initial data is available in the application and Common Data Service.</span></span>
+<span data-ttu-id="fa15a-110">Du skal følge nedenstående prioriteringsrækkefølge og sørge for, at de første data er tilgængelige i både programmet og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="fa15a-110">You must follow the following order of precedence and make sure that the initial data is available in the application and Common Data Service.</span></span>
 
-## <a name="vendor"></a><span data-ttu-id="493df-111">Leverandør</span><span class="sxs-lookup"><span data-stu-id="493df-111">Vendor</span></span>
+## <a name="vendor"></a><span data-ttu-id="fa15a-111">Leverandør</span><span class="sxs-lookup"><span data-stu-id="fa15a-111">Vendor</span></span>
 
-<span data-ttu-id="493df-112">Her er afviklingsrækkefølgen for objektet **Leverandør**:</span><span class="sxs-lookup"><span data-stu-id="493df-112">Here is the order of execution for the **Vendor** entity:</span></span>
+<span data-ttu-id="fa15a-112">Her er afviklingsrækkefølgen for objektet **Leverandør**:</span><span class="sxs-lookup"><span data-stu-id="fa15a-112">Here is the order of execution for the **Vendor** entity:</span></span>
 
-1. <span data-ttu-id="493df-113">Leverandørgruppe</span><span class="sxs-lookup"><span data-stu-id="493df-113">Vendor group</span></span>
+1. <span data-ttu-id="fa15a-113">Leverandørgruppe</span><span class="sxs-lookup"><span data-stu-id="fa15a-113">Vendor group</span></span>
 
-    1. <span data-ttu-id="493df-114">Betalingsbetingelse</span><span class="sxs-lookup"><span data-stu-id="493df-114">Terms of payment</span></span>
+    1. <span data-ttu-id="fa15a-114">Betalingsbetingelse</span><span class="sxs-lookup"><span data-stu-id="fa15a-114">Terms of payment</span></span>
 
-        1. <span data-ttu-id="493df-115">Betalingsdag og -linjer</span><span class="sxs-lookup"><span data-stu-id="493df-115">Payment day and lines</span></span>
-        2. <span data-ttu-id="493df-116">Betalingsplan</span><span class="sxs-lookup"><span data-stu-id="493df-116">Payment schedule</span></span>
+        1. <span data-ttu-id="fa15a-115">Betalingsdag og -linjer</span><span class="sxs-lookup"><span data-stu-id="fa15a-115">Payment day and lines</span></span>
+        2. <span data-ttu-id="fa15a-116">Betalingsplan</span><span class="sxs-lookup"><span data-stu-id="fa15a-116">Payment schedule</span></span>
 
-2. <span data-ttu-id="493df-117">Kreditorbetalingsmetode</span><span class="sxs-lookup"><span data-stu-id="493df-117">Vendor payment method</span></span>
+2. <span data-ttu-id="fa15a-117">Kreditorbetalingsmetode</span><span class="sxs-lookup"><span data-stu-id="fa15a-117">Vendor payment method</span></span>
 
-## <a name="customer-organization"></a><span data-ttu-id="493df-118">Kunde (organisation)</span><span class="sxs-lookup"><span data-stu-id="493df-118">Customer (Organization)</span></span>
+## <a name="customer-organization"></a><span data-ttu-id="fa15a-118">Kunde (organisation)</span><span class="sxs-lookup"><span data-stu-id="fa15a-118">Customer (Organization)</span></span>
 
-<span data-ttu-id="493df-119">Her er afviklingsrækkefølgen for objektet **Kunde**:</span><span class="sxs-lookup"><span data-stu-id="493df-119">Here is the order of execution for the **Customer** entity:</span></span>
+<span data-ttu-id="fa15a-119">Her er afviklingsrækkefølgen for objektet **Kunde**:</span><span class="sxs-lookup"><span data-stu-id="fa15a-119">Here is the order of execution for the **Customer** entity:</span></span>
 
-1. <span data-ttu-id="493df-120">Kundegruppe</span><span class="sxs-lookup"><span data-stu-id="493df-120">Customer group</span></span>
+1. <span data-ttu-id="fa15a-120">Kundegruppe</span><span class="sxs-lookup"><span data-stu-id="fa15a-120">Customer group</span></span>
 
-    1. <span data-ttu-id="493df-121">Betalingsbetingelse</span><span class="sxs-lookup"><span data-stu-id="493df-121">Terms of payment</span></span>
+    1. <span data-ttu-id="fa15a-121">Betalingsbetingelse</span><span class="sxs-lookup"><span data-stu-id="fa15a-121">Terms of payment</span></span>
 
-        1. <span data-ttu-id="493df-122">Betalingsdag og -linjer</span><span class="sxs-lookup"><span data-stu-id="493df-122">Payment day and lines</span></span>
-        2. <span data-ttu-id="493df-123">Betaling</span><span class="sxs-lookup"><span data-stu-id="493df-123">Payment</span></span> 
+        1. <span data-ttu-id="fa15a-122">Betalingsdag og -linjer</span><span class="sxs-lookup"><span data-stu-id="fa15a-122">Payment day and lines</span></span>
+        2. <span data-ttu-id="fa15a-123">Betaling</span><span class="sxs-lookup"><span data-stu-id="fa15a-123">Payment</span></span> 
 
-2. <span data-ttu-id="493df-124">Debitorbetalingsmetode</span><span class="sxs-lookup"><span data-stu-id="493df-124">Customer payment method</span></span>
+2. <span data-ttu-id="fa15a-124">Debitorbetalingsmetode</span><span class="sxs-lookup"><span data-stu-id="fa15a-124">Customer payment method</span></span>
 
-## <a name="contact-person"></a><span data-ttu-id="493df-125">Kontakt (person)</span><span class="sxs-lookup"><span data-stu-id="493df-125">Contact (Person)</span></span>
+## <a name="contact-person"></a><span data-ttu-id="fa15a-125">Kontakt (person)</span><span class="sxs-lookup"><span data-stu-id="fa15a-125">Contact (Person)</span></span>
 
-<span data-ttu-id="493df-126">Her er afviklingsrækkefølgen for objektet **Kontakt**:</span><span class="sxs-lookup"><span data-stu-id="493df-126">Here is the order of execution for the **Contact** entity:</span></span>
+<span data-ttu-id="fa15a-126">Her er afviklingsrækkefølgen for objektet **Kontakt**:</span><span class="sxs-lookup"><span data-stu-id="fa15a-126">Here is the order of execution for the **Contact** entity:</span></span>
 
-1. <span data-ttu-id="493df-127">Debitor </span><span class="sxs-lookup"><span data-stu-id="493df-127">Customer</span></span>
-2. <span data-ttu-id="493df-128">Leverandør</span><span class="sxs-lookup"><span data-stu-id="493df-128">Vendor</span></span>
+1. <span data-ttu-id="fa15a-127">Debitor </span><span class="sxs-lookup"><span data-stu-id="fa15a-127">Customer</span></span>
+2. <span data-ttu-id="fa15a-128">Leverandør</span><span class="sxs-lookup"><span data-stu-id="fa15a-128">Vendor</span></span>

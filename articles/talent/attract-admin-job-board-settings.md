@@ -1,5 +1,5 @@
 ---
-title: Aktivere Broadbean-integration i Microsoft Dynamics 365 Talent - Attract
+title: Aktiver Broadbean-integration i Attract
 description: Dette emne forklarer, hvordan du konfigurerer Microsoft Dynamics 365 Talent - Attract til at slå job op på eksterne jobportaler som Broadbean.
 author: andreabichsel
 manager: AnnBe
@@ -18,36 +18,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0ca655655f79ddf88b6f6c7377a1b596477c35a7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552134"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833202"
 ---
-# <a name="enable-broadbean-integration-in-microsoft-dynamics-365-talent---attract"></a><span data-ttu-id="892b7-103">Aktivere Broadbean-integration i Microsoft Dynamics 365 Talent - Attract</span><span class="sxs-lookup"><span data-stu-id="892b7-103">Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract</span></span>
+# <a name="enable-broadbean-integration-in-attract"></a><span data-ttu-id="a3d49-103">Aktiver Broadbean-integration i Attract</span><span class="sxs-lookup"><span data-stu-id="a3d49-103">Enable Broadbean integration in Attract</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="892b7-104">Du vil gerne have, at dine ledige stillinger ses af så mange kvalificerede kandidater som muligt.</span><span class="sxs-lookup"><span data-stu-id="892b7-104">You want to get your open positions in front of as many qualified candidates as possible.</span></span> <span data-ttu-id="892b7-105">Rekrutteringswebsteder såsom Broadbean kan hjælpe dig med at nå dette mål.</span><span class="sxs-lookup"><span data-stu-id="892b7-105">Recruiting sites such as Broadbean help you accomplish this goal.</span></span> <span data-ttu-id="892b7-106">Microsoft Dynamics 365 Talent: Attract giver dig nu mulighed for at slå job op på Broadbean, og Microsoft stiller løbende nye tilbud til rådighed på dette område.</span><span class="sxs-lookup"><span data-stu-id="892b7-106">Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.</span></span>
+<span data-ttu-id="a3d49-104">Du vil gerne have, at dine ledige stillinger ses af så mange kvalificerede kandidater som muligt.</span><span class="sxs-lookup"><span data-stu-id="a3d49-104">You want to get your open positions in front of as many qualified candidates as possible.</span></span> <span data-ttu-id="a3d49-105">Rekrutteringswebsteder såsom Broadbean kan hjælpe dig med at nå dette mål.</span><span class="sxs-lookup"><span data-stu-id="a3d49-105">Recruiting sites such as Broadbean help you accomplish this goal.</span></span> <span data-ttu-id="a3d49-106">Microsoft Dynamics 365 Talent: Attract giver dig nu mulighed for at slå job op på Broadbean, og Microsoft stiller løbende nye tilbud til rådighed på dette område.</span><span class="sxs-lookup"><span data-stu-id="a3d49-106">Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.</span></span>
 
 > [!NOTE]
-> - <span data-ttu-id="892b7-107">For at slå jobs op på eksterne websteder skal du have [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span><span class="sxs-lookup"><span data-stu-id="892b7-107">To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span></span>
-> - <span data-ttu-id="892b7-108">Hvis du vil opslå job til Broadbean via Attract, skal du have et Broadbean-abonnement.</span><span class="sxs-lookup"><span data-stu-id="892b7-108">To post jobs to Broadbean through Attract, you must have a Broadbean subscription.</span></span>
-> - <span data-ttu-id="892b7-109">Denne funktion findes på nuværende tidspunkt i prøveversionen.</span><span class="sxs-lookup"><span data-stu-id="892b7-109">This feature is currently in preview.</span></span> <span data-ttu-id="892b7-110">Hvis du ønsker at prøve det, skal du [slå det til i administratorindstillingerne i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span><span class="sxs-lookup"><span data-stu-id="892b7-110">If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span></span>
+> - <span data-ttu-id="a3d49-107">For at slå jobs op på eksterne websteder skal du have [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span><span class="sxs-lookup"><span data-stu-id="a3d49-107">To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span></span>
+> - <span data-ttu-id="a3d49-108">Hvis du vil opslå job til Broadbean via Attract, skal du have et Broadbean-abonnement.</span><span class="sxs-lookup"><span data-stu-id="a3d49-108">To post jobs to Broadbean through Attract, you must have a Broadbean subscription.</span></span>
+> - <span data-ttu-id="a3d49-109">Denne funktion findes på nuværende tidspunkt i prøveversionen.</span><span class="sxs-lookup"><span data-stu-id="a3d49-109">This feature is currently in preview.</span></span> <span data-ttu-id="a3d49-110">Hvis du ønsker at prøve det, skal du [slå det til i administratorindstillingerne i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span><span class="sxs-lookup"><span data-stu-id="a3d49-110">If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span></span>
 
-## <a name="configure-broadbean-integration"></a><span data-ttu-id="892b7-111">Konfigurer integrationen af Broadbean</span><span class="sxs-lookup"><span data-stu-id="892b7-111">Configure Broadbean integration</span></span>
+## <a name="configure-broadbean-integration"></a><span data-ttu-id="a3d49-111">Konfigurer integrationen af Broadbean</span><span class="sxs-lookup"><span data-stu-id="a3d49-111">Configure Broadbean integration</span></span>
 
-1. <span data-ttu-id="892b7-112">Log på Attract som administrator.</span><span class="sxs-lookup"><span data-stu-id="892b7-112">Sign in to Attract as an admin.</span></span>
+1. <span data-ttu-id="a3d49-112">Log på Attract som administrator.</span><span class="sxs-lookup"><span data-stu-id="a3d49-112">Sign in to Attract as an admin.</span></span>
 
-2. <span data-ttu-id="892b7-113">Vælg knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne af siden, og vælg dernæst **Administration**.</span><span class="sxs-lookup"><span data-stu-id="892b7-113">Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.</span></span>
+2. <span data-ttu-id="a3d49-113">Vælg knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne af siden, og vælg dernæst **Administration**.</span><span class="sxs-lookup"><span data-stu-id="a3d49-113">Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.</span></span>
 
-3. <span data-ttu-id="892b7-114">Kontakt Broadbean, og indtast dine oplysninger i felterne **Brugernavn**, **Klient-id** og **Krypteringstoken**.</span><span class="sxs-lookup"><span data-stu-id="892b7-114">Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** fields.</span></span>
+3. <span data-ttu-id="a3d49-114">Kontakt Broadbean, og indtast dine oplysninger i felterne **Brugernavn**, **Klient-id** og **Krypteringstoken**.</span><span class="sxs-lookup"><span data-stu-id="a3d49-114">Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** fields.</span></span>
 
-4. <span data-ttu-id="892b7-115">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="892b7-115">Select **Save**.</span></span>
+4. <span data-ttu-id="a3d49-115">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="a3d49-115">Select **Save**.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="892b7-116">Dine legitimationsoplysninger til Broadbean er følsomme og fortrolige.</span><span class="sxs-lookup"><span data-stu-id="892b7-116">Your Broadbean credentials are sensitive and confidential.</span></span> <span data-ttu-id="892b7-117">Opbevar og del dem derfor ansvarligt.</span><span class="sxs-lookup"><span data-stu-id="892b7-117">Therefore, store and share them responsibly.</span></span> <span data-ttu-id="892b7-118">Alle med en administratorrolle i Attract kan se disse legitimationsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="892b7-118">Anyone who has an Administrator role in Attract can view these credentials.</span></span>
+> <span data-ttu-id="a3d49-116">Dine legitimationsoplysninger til Broadbean er følsomme og fortrolige.</span><span class="sxs-lookup"><span data-stu-id="a3d49-116">Your Broadbean credentials are sensitive and confidential.</span></span> <span data-ttu-id="a3d49-117">Opbevar og del dem derfor ansvarligt.</span><span class="sxs-lookup"><span data-stu-id="a3d49-117">Therefore, store and share them responsibly.</span></span> <span data-ttu-id="a3d49-118">Alle med en administratorrolle i Attract kan se disse legitimationsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="a3d49-118">Anyone who has an Administrator role in Attract can view these credentials.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="892b7-119">Microsoft og Attract er ikke involveret i dannelsen og vedligeholdelsen af disse værdier.</span><span class="sxs-lookup"><span data-stu-id="892b7-119">Microsoft and Attract aren't involved in creating and maintaining these values.</span></span> <span data-ttu-id="892b7-120">Det er dit ansvar at ajourføre dem i Attract og arbejde sammen med Broadbean om at løse alle problemer vedrørende dine legitimationsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="892b7-120">It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.</span></span>
+> <span data-ttu-id="a3d49-119">Microsoft og Attract er ikke involveret i dannelsen og vedligeholdelsen af disse værdier.</span><span class="sxs-lookup"><span data-stu-id="a3d49-119">Microsoft and Attract aren't involved in creating and maintaining these values.</span></span> <span data-ttu-id="a3d49-120">Det er dit ansvar at ajourføre dem i Attract og arbejde sammen med Broadbean om at løse alle problemer vedrørende dine legitimationsoplysninger.</span><span class="sxs-lookup"><span data-stu-id="a3d49-120">It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.</span></span>
