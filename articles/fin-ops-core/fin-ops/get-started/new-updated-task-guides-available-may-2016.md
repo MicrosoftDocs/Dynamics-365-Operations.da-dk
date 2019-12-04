@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7134dc49c0e767d3bc4dc32e4feeb0e83a168e86
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 930c744ff2a28451d4267f060867b4b6474d45e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190919"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811572"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller opdaterede opgaveguider (maj 2016)
 
@@ -32,7 +32,7 @@ I denne artikel beskrives de nye eller opdaterede opgaveguider, der blev udgivet
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016 - alle sprog)
 
-APQC Unified-bibliotek (maj 2016) indeholder de opgaveguider, der er beregnet til brug i hjælpen til opdateringen fra maj 2016 til Microsoft Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Lokaliserede versioner af de opgaveguider, der blev udgivet i APQC Unified-biblioteket (februar 2016), er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md).
+APQC Unified-bibliotek (maj 2016) indeholder de opgaveguider, der er beregnet til brug i hjælpen til opdateringen fra maj 2016 til Microsoft Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Lokaliserede versioner af de opgaveguider, der blev udgivet i APQC Unified-biblioteket (februar 2016), er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp-systemet](help-overview.md).
 
 > [!NOTE]
 > En stjerne (\*) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics AX fra maj 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.

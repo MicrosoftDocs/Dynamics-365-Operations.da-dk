@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43700d68587cebfb4f897c8a5b619dd4771cc439
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e55ab83302cc75b1a9d9d3e4f06d2258697b31fc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181306"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771208"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -773,9 +773,9 @@ Når disse datakilder er defineret, kan du bruge et udtryk som <strong>FILTER (U
 
 ### <a name="functions-list-extension"></a>Funktionslistens udvidelse
 
-ER understøtter muligheden for at udvide listen over funktioner, der bruges i ER-udtryk. Der kræves en vis teknisk indsats for at gøre dette. Yderligere oplysninger finder du under [Udvidelse af listen over elektroniske rapporteringsfunktioner](general-electronic-reporting-formulas-list-extension.md).
+ER understøtter muligheden for at udvide listen over funktioner, der bruges i ER-udtryk. Der kræves en vis teknisk indsats for at gøre dette. Yderligere oplysninger finder du under [Udvid listen med Elektroniske rapporteringsfunktioner (ER)](general-electronic-reporting-formulas-list-extension.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+- [Oversigt over Elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Udvide listen over elektroniske rapporteringsfunktioner (ER)](general-electronic-reporting-formulas-list-extension.md)

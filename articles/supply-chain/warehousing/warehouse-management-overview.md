@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f50b950b8588f2b17611889e0cb0eeb6da359886
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251056"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813011"
 ---
 # <a name="warehouse-management-overview"></a>Oversigt over lokationsstyring
 
@@ -36,7 +36,7 @@ Hvis du vil begynde at arbejde med Lokationsstyring, skal du fuldføre opsætnin
 
 Du skal konfigurere komponenter for indgående og udgående lagerstedsarbejdsprocesser i henhold til virksomhedens behov. De vigtigste komponenter, du skal konfigurere, er bølgeskabeloner, arbejdsskabeloner, arbejdspuljer og lokalitetsvejledninger.
 
-- [Konfiguration af lokation](warehouse-configuration.md)
+- [Oversigt over konfiguration af lagersted](warehouse-configuration.md)
 - [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver](control-warehouse-location-directives.md)
 - [Konfigurere mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md)
 - [Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)

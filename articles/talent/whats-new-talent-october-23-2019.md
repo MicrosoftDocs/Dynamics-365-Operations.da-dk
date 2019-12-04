@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94243f83121a1306d8f9ae9be23d24e5c9b63a2d
-ms.sourcegitcommit: 07e109dec176a93eff0df8a37ba5d875f212e9f1
+ms.openlocfilehash: 66419d9093cff68aa6109b22ab57bcb46ac6c718
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2662659"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772890"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (23. oktober 2019)
 
@@ -47,7 +47,7 @@ Du kan finde flere oplysninger i [Nyheder eller ændringer i Platform update 30 
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Fjerne åben tilmelding som frynsegoder som prøveversionsfunktion
 
-Sammen med vores meddelelse om de strategiske investeringer i Core HR som drivkraft bag ekspertise fjerner Microsoft frynsegoder som åben tilmeldingsfunktion fra offentlig prøveversion d. 18. oktober 2019. Der vil i stedet blive udgivet nye funktioner i fremtiden. Produktionens anvendelse af frynsegoder som åben tilmeldingsfunktion, der i øjeblikket findes i offentlig prøveversion, understøttes ikke.
+Sammen med vores meddelelse i blogindlægget [Strategiske investeringer i Core HR som drivkraft bag ekspertise](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence) fjerner Microsoft frynsegoder som åben tilmeldingsfunktion fra offentlig prøveversion d. 18. oktober 2019. Der vil i stedet blive udgivet nye funktioner i fremtiden. Produktionens anvendelse af frynsegoder som åben tilmeldingsfunktion, der i øjeblikket findes i offentlig prøveversion, understøttes ikke.
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>Der opstod en fejl under valg af land/område i arbejderformularen endnu en gang (350294)
 
@@ -69,7 +69,7 @@ Med denne uges udgivelse vil tilføjelse af en ny listeværdi i et eksisterende 
 
 I denne version er det kun ansættelsesvilkårene for de valgte medarbejdere, der åbnes i Excel. Al firmasikkerhed overholdes også.
 
-### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service---324178"></a>Tilknytningen mellem ferieobjektet i arbejdskalenderen og arbejdskalenderobjektet mangler i Common Data Service - (324178)
+### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service-324178"></a>Tilknytningen mellem ferieobjektet i arbejdskalenderen og arbejdskalenderobjektet mangler i Common Data Service (324178)
 
 Denne relation er blevet tilføjet med udgivelsen. Denne ændring vil gøre det muligt at få vist arbejdsdage for en medarbejder i PowerApps. 
 

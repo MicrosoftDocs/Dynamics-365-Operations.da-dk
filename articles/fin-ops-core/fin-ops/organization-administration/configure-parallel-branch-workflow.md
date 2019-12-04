@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2339c6f901a3ef39ad4f9586b2f391b966a3df98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190137"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811351"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Konfigurere parallelle grene i en arbejdsgang
 
@@ -46,8 +46,8 @@ Udfør disse trin for at angive et navn på en parallel gren.
 Udfør følgende trin for at designe og konfigurere elementerne i en parallel gren.
 
 1. Dobbeltklik på den parallelle gren.
-2. Arbejdsgangselementer – dette område indeholder arbejdsgangselementer, som du kan føje til den arbejdsgang, du er ved at oprette. Du kan finde flere oplysninger i [Oprette en arbejdsgang](create-workflow.md).
+2. Arbejdsgangselementer – dette område indeholder arbejdsgangselementer, som du kan føje til den arbejdsgang, du er ved at oprette. Du kan finde flere oplysninger i [Oversigt over oprettelse af arbejdsgange](create-workflow.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Opret en arbejdsgang](create-workflow.md)
+[Oversigt over oprettelse af arbejdsgange](create-workflow.md)

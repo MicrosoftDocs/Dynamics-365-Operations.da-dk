@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250524"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770329"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synkronisere faktiske projektoplysninger direkte fra Project Service Automation med projektintegrationskladden til bogføring i Finance and Operations
 
@@ -50,7 +50,7 @@ I følgende illustration vises, hvordan data synkroniseres mellem Project Servic
 
 ### <a name="template-and-tasks"></a>Skabelon og opgaver
 
-Du kan få adgang til de tilgængelige skabeloner ved i Microsoft PowerApps Administration at vælge **Projekter** og derefter i øverste højre hjørne vælge **Nyt projekt** for at vælge offentlige skabeloner.
+Du kan få adgang til de tilgængelige skabeloner ved i Microsoft Power Apps Administration at vælge **Projekter** og derefter i øverste højre hjørne vælge **Nyt projekt** for at vælge offentlige skabeloner.
 
 Følgende skabelon og underliggende opgaver bruges til at synkronisere faktiske projektoplysninger fra Project Service Automation til Finance:
 

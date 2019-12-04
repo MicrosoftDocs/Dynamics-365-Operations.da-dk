@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89441ee4c799e2d1215fbd82e0490d7168e2aa1b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 859d769b95c57663dc1bb76a632e34728a6691b5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570803"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813865"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantal
 
@@ -55,7 +55,7 @@ Afsnittet **Lagerpolitikker** indeholder følgende reservationspolitikker.
 | FIFO-datokontrolleret    | Hvis du vælger indstillingen **FIFO-datokontrolleret**, styres lagerreservationen af en sorteringsdato i overensstemmelse med FIFO-princippet. Batches reserveres ud fra den tidligste dato for varetilgang ifølge FIFO-princippet.                                                                                                                                                                                                                                                                       |
 | Bagud fra afsendelsesdato | Denne indstilling er kun tilgængelig, hvis du har valgt indstillingen **FIFO-datokontrolleret**. Hvis du vælger **Bagud fra afsendelsesdato**, foretages lagerreservationen bagud fra den ønskede afsendelsesdato i overensstemmelse med LIFO-princippet. Hvis ingen tilgange er tilgængelige før afsendelsesdatoen, bruges der en FIFO-reservation.                                                                                                                                                                                                           |
 | Reservation af varesalg  | Bestemmer, om reservationen er manuel eller automatisk. Hvis en reservation er automatisk, reserveres lager, når der oprettes ordrelinjer. Det er muligt at foretage reservationer på varenummerniveau til styklister (**Automatisk**-indstilling) eller for de enkelte elementer af en Stykliste (**Udfoldning**-indstilling). Standardværdien for **Reservation af varesalg** kan nedarves fra **Debitorparametre.** På denne side angives værdien i feltet Reservation i **sektionen** **Salgsstandardværdier** under fanen **Generelt**. |
-| Valg af samme batch    | Hvis du reserverer fra samme batch, kan du reservere lager til en salgsordrelinje i forhold til en enkelt lagerbatch. Hvis du vil bruge denne indstilling, skal du også angive indstillingen **Konsolider krav** til **Ja**. Der er flere indstillinger, der skal bruges til sporingsdimensionsgruppen og lagringsdimensionsgruppen. Yderligere oplysninger finder du [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).                                                          |
+| Valg af samme batch    | Hvis du reserverer fra samme batch, kan du reservere lager til en salgsordrelinje i forhold til en enkelt lagerbatch. Hvis du vil bruge denne indstilling, skal du også angive indstillingen **Konsolider krav** til **Ja**. Der er flere indstillinger, der skal bruges til sporingsdimensionsgruppen og lagringsdimensionsgruppen. Yderligere oplysninger finder du [Reserver samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).                                                          |
 | Konsolider krav | Denne indstilling er meget lig **Valg af samme batch** og konsoliderer lager, der er reserveret til salgsordrelinjer i et enkelt krav.                                                                                                                                                                                                                                                                                                                                                                                      |
 | FEFO-datokontrolleret    | Denne indstilling gør det muligt at reservere batches, der er tæt på deres udløbsdato eller sidste holdbarhedsdato. Du skal også angive feltet **Kriterier for plukning** til enten **Udløbsdato** eller **Bedst før-dato**.                                                                                                                                                                                                                                                                                                                              |
 

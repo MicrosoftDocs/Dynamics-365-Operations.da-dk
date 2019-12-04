@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc18e9c3f2581d6c5281490f79dd76d71accf466
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e3c58c677953b422b0c9e23282a9472d1722839
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174606"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770254"
 ---
 # <a name="billing-classifications-and-billing-codes-in-the-public-sector"></a>Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 
@@ -78,7 +78,7 @@ Du kan oprette brugerdefinerede felter for faktureringskoder. Disse felter bruge
 Selvom du ikke behøver at aktivere faktureringsklassifikationer, anbefales det, at du gør det. Mange af de offentlige funktioner i appen Debitor er kun tilgængelige, når faktureringsklassifikationer er aktiveret. Når du har aktiveret faktureringsklassifikationer, er faktureringsklassifikationen et obligatorisk felt på fritekstfakturaer. Du kan få flere oplysninger om faktureringsklassifikationer og faktureringskoder på fritekstfakturaer i [Fritekstfakturaer i den offentlige sektor](free-text-invoices-public-sector.md).
 
 ## <a name="how-do-i-enable-billing-classifications"></a>Hvordan aktiverer jeg faktureringsklassifikationer?
-Du kan aktivere faktureringsklassifikationer på siden **Debitorparametre**. I afsnittet **Generelt** på oversigtspanelet **Salgopsætning** skal du vælge **Brug faktureringsklassifikationer**. De sider, hvor du opretter faktureringsklassifikationer og faktureringskoder, er tilgængelige, før du aktiverer faktureringsklassifikationer. Du skal angive alle faktureringsklassifikationer og faktureringskoder, før du aktiverer dem. Når du har aktiveret faktureringsklassifikationer, skal alle fritekstfakturaer have en faktureringsklassifikation. **Bemærk**! Hvis du planlægger at bruge faktureringsklassifikationer til at bestemme udligningsprioriteten af fritekstfakturaer, skal du aktivere attributten **Fakturering** på siden **Udligningsprioritet**, når du har aktiveret faktureringsklassifikationer. Du kan få flere oplysninger i [Udligningsprioriteter i den offentlige sektor](settlement-priority-public-sector.md).
+Du kan aktivere faktureringsklassifikationer på siden **Debitorparametre**. I afsnittet **Generelt** på oversigtspanelet **Salgopsætning** skal du vælge **Brug faktureringsklassifikationer**. De sider, hvor du opretter faktureringsklassifikationer og faktureringskoder, er tilgængelige, før du aktiverer faktureringsklassifikationer. Du skal angive alle faktureringsklassifikationer og faktureringskoder, før du aktiverer dem. Når du har aktiveret faktureringsklassifikationer, skal alle fritekstfakturaer have en faktureringsklassifikation. **Bemærk**! Hvis du planlægger at bruge faktureringsklassifikationer til at bestemme udligningsprioriteten af fritekstfakturaer, skal du aktivere attributten **Fakturering** på siden **Udligningsprioritet**, når du har aktiveret faktureringsklassifikationer. Du kan få flere oplysninger i [Udligningsprioritet i den offentlige sektor](settlement-priority-public-sector.md).
 
 ## <a name="do-i-have-to-create-new-billing-codes-when-billing-rates-change"></a>Behøver jeg at oprette nye faktureringskoder, når fakturerbare satser ændres?
 Når faktureringskoder skal opdateres, skal du ikke oprette nye faktureringskoder. I stedet kan du oprette flere versioner af faktureringskoden med ikrafttrædelses- og slutdatoer for hver version. På ikrafttrædelsesdatoen starter systemet automatisk med at bruge den opdaterede version.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 28ed12bd8cf2df7c25e14a25465cad1229676cfd
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551973"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812850"
 ---
 # <a name="get-the-dynamics-365-talent---onboard-app"></a>Hente Dynamics 365 Talent - Onboard-appen
 
@@ -39,9 +39,9 @@ Under prøve- eller købsprocessen konfigurerer du din Microsoft 365-mailadresse
 > [!WARNING]
 > Du kan ikke migrere data fra din prøveperiode til dit betalte abonnementsmiljø. <!--Reviewers: please verify.-->
 
-Oplysninger om de nye funktioner i Talent finder du i [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md) og [Produktbemærkninger til Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Hvis du vil se en forhåndsvisning af nye funktioner i Onboard, skal du se [Få adgang til funktioner til forhåndsvisning i Talent](./access-preview-feature.md).
+Oplysninger om de nye funktioner i Talent finder du i [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md) og [Produktbemærkninger til Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Hvis du vil se en forhåndsvisning af nye funktioner i Onboard, skal du se [Få adgang til funktioner til forhåndsvisning i Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
-Hvis du er it-medarbejder og ønsker at lære mere om, hvordan de to versioner af Onboard-appen klargøres, skal du se [Klargøring af Onboard-appen](./modular-app-tech-faq.md).
+Hvis du er it-medarbejder og ønsker at lære mere om, hvordan de to versioner af Onboard-appen klargøres, skal du se [Klargøring af Onboard-appen Dynamics 365 Talent](./modular-app-tech-faq.md).
 
 ## <a name="get-started-with-onboard"></a>Komme i gang med Onboard
 
@@ -89,6 +89,6 @@ Hvis du accepterede standarddomænenavnet, da du tilmeldte dig Onboard, kan du �
 ### <a name="see-also"></a>Se også
 
 - [Prøve eller købe appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheder](./whats-new.md)
-- [Frigivelsesnoter](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md)
+- [Frigivelsesplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support til Microsoft Dynamics 365 Talent](./talent-support.md)

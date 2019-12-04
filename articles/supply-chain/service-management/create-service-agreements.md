@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a094ce9f0d9323b089055e74d41cf1f45323a7d4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68dee63f8a426aba4bb408b6052ca9d730629bee
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554546"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813172"
 ---
 # <a name="create-service-agreements"></a>Oprette serviceaftaler
 
@@ -59,6 +59,6 @@ I dette emne beskrives det, hvordan du kan bruge funktionerne i modulerne Servic
 
 ## <a name="related-topics"></a>Relaterede emner
 
-[Serviceaftaler](service-agreements.md)
+[Oversigt over udvikling og udfyldelse af serviceaftaler](service-agreements.md)
 
 

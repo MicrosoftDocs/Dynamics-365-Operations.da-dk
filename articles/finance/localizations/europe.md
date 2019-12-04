@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dac72d7b5ca6a2817207c0bded1befee46406cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ed1fdc4a44ff55586f6879d9fb7df44b4f88c568
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175337"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772839"
 ---
 # <a name="europe-overview"></a>Oversigt for Europa
 
@@ -28,23 +28,23 @@ ms.locfileid: "2175337"
 
 Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig med at konfigurere juridiske enheder med en primær adresse i Europa. 
 
-- [Forskudshavere](emea-advance-holders.md)
- - [Forskudshaverposteringer](emea-advance-holders-transactions.md)
- - [Forskud til en medarbejder (Østeuropa)](tasks/advance-payment-employee.md)
-- [Avanceret fakturering](emea-advance-invoice.md)
-- [Bankafstemning](emea-bank-reconciliation.md)
+- [Oversigt over forskudshavere](emea-advance-holders.md)
+ - [Forskudshavertransaktioner](emea-advance-holders-transactions.md)
+ - [Forskud til medarbejder](tasks/advance-payment-employee.md)
+- [Fakturaer for forskudsbetaling til Østeuropa](emea-advance-invoice.md)
+- [Bankkontoudtog og betalingsafstemning](emea-bank-reconciliation.md)
 - [Korrigerende fakturering](emea-corrective-invoice.md)
-- [Oprette og bogføre periodiske kladder](emea-create-post-periodic-journals.md)
+- [Splitperioder i periodiske kladder](emea-create-post-periodic-journals.md)
 - [Oprette betalinger til en debitor, som har bemyndigelser til direkte debitering](tasks/create-payments-customers-who-have-direct-debit-mandates.md)
-- [Redigere faktura-id'er på salgsordrer](emea-edit-invoice-id-sales-orders.md)
-- [EU-postcertifikater](emea-entry-certificates.md)
+- [Rediger faktura-ID'er på salgsordrer til Østeuropa](emea-edit-invoice-id-sales-orders.md)
+- [EU-posteringscertifikater](emea-entry-certificates.md)
 - [Rapportering til EU-listesystemet](emea-eu-sales-list.md)
 - [Kursreguleringer](emea-exchange-rate-adjustments.md)
 - [Filformater for betalingsmåder](emea-select-file-formats-for-the-method-of-payments.md)
 - [Integration af regnskabsservice (ESR)](emea-fiscal-service-integration.md)
 - [Kassation af anlægsaktiver for Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generere et overførselsdokument for en intern lageroverførsel](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generere en EU-listesystemrapport](tasks/eur-00011-eu-sales-list-report.md)
+- [Generere rapport for EU-listesystem](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importere ISO20022-filer](emea-ISO20022-file-formats.md)
   - [Importere ISO20022 Direct Debit-konfiguration](tasks/import-iso20022-direct-debit-configuration.md)
@@ -52,29 +52,29 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
   - [Konfigurere firmas bankkonti for ISO20022-kreditoverførsler](tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
   - [Konfigurere firmas bankkonti for direkte ISO20022-debiteringer](tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
   - [Konfigurere en betalingsmetode for ISO20022-kreditoverførsler](tasks/set-up-method-payment-iso20022-credit-transfer.md)
-  - [Konfigurere en betalingsmetode for ISO20022 Direct Debit](tasks/setup-method-payment-iso20022-direct-debit.md)
+  - [Opret betalingsmåde til ISO20022 direkte debet](tasks/setup-method-payment-iso20022-direct-debit.md)
   - [Konfigurere debitorer og debitorbankkonti for direkte ISO20022-debiteringer](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Konfigurere kreditorer og kreditorbankkonti for ISO20022-kreditoverførsler](tasks/set-up-vendor-iso20022-credit-transfers.md)
   - [Oprette og eksportere kreditorbetalinger ved hjælp af ISO20022-betalingsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
-- [Intrastat](emea-intrastat.md)
+- [Oversigt over Intrastat](emea-intrastat.md)
   - [Overføre transaktioner til Intrastat](tasks/transfer-transactions-intrastat.md)
-  - [Angive en fragtadresse for en fællesskabspostering](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Angiv en fragtadresse for en transaktion inden for fællesskabet](tasks/eur-00002-specify-lading-address-intra-community.md)
   - [Generere en EU Intrastat-opgørelse](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagerkladderapporter](emea-set-up-report-inventory-journal-names.md)
-- [Deadlines for fakturaudstedelse](emea-invoice-issue-deadline.md)
+- [Deadline for fakturaudstedelse](emea-invoice-issue-deadline.md)
 - [Fakturabehandling](emea-invoice-processing.md)
 - [Udstede et EU-indførselscertifikat](tasks/eur-00012-issue-eu-entry-certificate.md)
-- [OIOUBL-standarder](emea-oioubl-standards-electronic-invoicing.md)
+- [Understøttede standarder til elektronisk fakturering](emea-oioubl-standards-electronic-invoicing.md)
 - [Original fakturareference (Østeuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Søgning efter part ved hjælp af moms-id](tasks/eur-00015-party-search-vat-id.md)
-- [Værktøj til generering af betalingsreference (Østeuropa)](tasks/ee-00015-payment-reference-generation-tool.md)
+- [Værktøj til generering af betalingsreference](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Rapport om indbetalingskort](emea-eur-payment-slip-report-giro.md)
-- [Kontantbeholdning](emea-petty-cash.md)
+- [Kontantbeholdning til Østeuropa og Rusland](emea-petty-cash.md)
 - [Bogføre præanskaffelsen af et anlægsaktiv](emea-pre-acquisition-acquisition-fixed-asset.md)
 - [Postnumre](emea-import-create-postal-codes-manually.md)
 - [Modtage et EU-indførselscertifikat](tasks/eur-00012-receive-eu-entry-certificate.md)
 - [Registrerings-id'er](emea-registration-ids.md)
-- [Tilbageføre gebyrer](emea-reverse-charge.md)
+- [Tilbageføre momsgebyrer](emea-reverse-charge.md)
 - [Oversigt over SEPA-kreditoverførsel](../accounts-payable/sepa-credit-transfer.md)
 - [Oversigt over SEPA Direct Debit](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Konfigurere debitor- og kreditorkompensation](emea-compensation-customer-vendor-transactions.md)
@@ -85,15 +85,15 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 - [Momsvejledninger](emea-tax-directives.md)
 - [Opdatere, hvordan beløb vises på rapporter og dokumenter](emea-amount-printing-forms.md)
 - Moms
-  - [navn: Konfigurere moms-id](tasks/eur-00015-vat-id.md)
-  - [Registrere et moms-id for kreditor](tasks/eur-00015-registration-vendor-vat-id.md)
-  - [Valutakurser for moms](emea-vat-exchange-rate.md)
+  - [Konfigurere moms-id](tasks/eur-00015-vat-id.md)
+  - [Registrering af leverandørers moms-ID](tasks/eur-00015-registration-vendor-vat-id.md)
+  - [Oversigt over valutakurs for moms](emea-vat-exchange-rate.md)
   - [Momsafstemningsrapport](tasks/eur-00018-vat-reconciliation-report.md)
   - [Momsregistrere posteringer for Østeuropa](emea-vat-register-transactions.md)
   - [Momsrapportering](emea-vat-reporting.md)
   - [Oprette og sende en momsrapport](tasks/create-submit-vat-report.md)
-  - [Vise posteringer for udligning](emea-transactions-settlement-form.md)
-  - [Dato for momspunkt (Dato for momsregistrering)](emea-tax-point-date.md)
+  - [Få vist transaktioner til udligning for Østeuropa](emea-transactions-settlement-form.md)
+  - [Dato for momspunkt (dato for momsregistrering)](emea-tax-point-date.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

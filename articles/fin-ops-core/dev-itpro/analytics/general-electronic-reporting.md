@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578235"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771067"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -71,7 +71,7 @@ En modeltilknytning, der understøtter udgående elektroniske dokumenter, har f�
 
 - Den kan bruge forskellige datatyper som datakilder til en datamodel. Den kan for eksempel bruge tabeller, dataenheder, metoder eller fasttekster.
 - Den understøtter brugerinputparametre, der kan defineres som datakilder for en datamodel, når data skal angives på kørselstidspunktet.
-- Den understøtter transformationen af data til de grupper, der kræves. Den gør det også muligt at filtrere, sortere og summere data og tilføje logisk beregnede felter, der er designet via formler, der ligner Microsoft Excel-formler. Du kan finde flere oplysninger under [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md).
+- Den understøtter transformationen af data til de grupper, der kræves. Den gør det også muligt at filtrere, sortere og summere data og tilføje logisk beregnede felter, der er designet via formler, der ligner Microsoft Excel-formler. Du kan finde flere oplysninger under [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md).
 
 
 En modeltilknytning, der understøtter indgående elektroniske dokumenter, har følgende muligheder:
@@ -146,7 +146,7 @@ Forskellige versioner af en dataformatkomponent kan have forskellige indstilling
 
 #### <a name="configuration"></a>Konfiguration
 
-En ER-konfiguration er wrapperen for en bestemt ER-komponent. Denne komponent kan enten være en datamodelkomponent eller en formatkomponent. En konfiguration kan omfatte forskellige versioner af en ER-komponent. Hver konfiguration er markeret som ejet af en bestemt konfigurationsudbyder. **Kladde**versionen af en komponent i en konfiguration kan redigeres, når ejeren af konfigurationen er valgt som aktiv udbyder i ER-indstillingerne i programmet.
+En ER-konfiguration er wrapperen for en bestemt ER-komponent. Denne komponent kan enten være en datamodelkomponent eller en formatkomponent. En konfiguration kan omfatte forskellige versioner af en ER-komponent. Hver konfiguration er markeret som ejet af en bestemt konfigurationsudbyder. **Kladde**-versionen af en komponent i en konfiguration kan redigeres, når ejeren af konfigurationen er valgt som aktiv udbyder i ER-indstillingerne i programmet.
 
 Hver modelkonfiguration indeholder en datamodelkomponent. En ny formatkonfiguration kan stamme fra en bestemt datamodelkonfiguration. I konfigurationstræet vises den formatkonfiguration, der oprettes, som underordnet til den oprindelige modeldatakonfiguration.
 
@@ -173,7 +173,7 @@ Et ER-lager indeholder ER-konfigurationer. Følgende typer af ER-lagre understø
 
 Et **Delt LCS-bibliotek**-lager giver adgang til listen med konfigurationer i biblioteket for delte aktiver i Lifecycle Services (LCS). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra LCS-biblioteket for delte aktiver kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
 
-Et **LCS-projektlager** giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle Finance and Operations-forekomst.
+Et **LCS-projektlager** giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle Finance and Operations-forekomst.
 
 Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle forekomst. 
 
@@ -362,5 +362,5 @@ Med ER kan du automatisk implementere ændringer af den nyeste version af basisk
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Lokaliseringskrav – oprette en elektronisk rapporteringskonfiguration](electronic-reporting-configuration.md)
-- [Administrere livscyklus for elektroniske indberetningskonfigurationer](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Opret konfigurationer for Elektronisk rapportering (ER)](electronic-reporting-configuration.md)
+- [Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)

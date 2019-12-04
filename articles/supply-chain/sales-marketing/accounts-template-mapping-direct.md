@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 4624f7e31c6dca616ff4ee824453b8971c1865e7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ebca416e94f44d0448a4f4d0be08f13e30e749e9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249882"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813218"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisere konti direkte fra Sales med kunder i Supply Chain Management
 
@@ -43,7 +43,7 @@ Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkr
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
-For at få adgang til de tilgængelige skabeloner skal du åbne [PowerApps Administration](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
+For at få adgang til de tilgængelige skabeloner skal du åbne [Power Apps Administration](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
 
 Følgende skabelon og underliggende opgave bruges til at synkronisere konti fra Sales med Supply Chain Management:
 
@@ -111,7 +111,7 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 [Synkronisere kontakter direkte fra Sales med kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synkronisere salgshoveder og -linjer direkte fra Supply Chain Management til Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653596"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815289"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
@@ -218,7 +218,7 @@ Hvis du bruger konsignationslager, kan kreditorer bruge kreditorsamarbejde til a
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Arbejde med tilbudsanmodninger, når du bruger kreditorsamarbejde
 
-I dette afsnit beskrives interaktionerne mellem debitorer og kreditorer under tilbudsanmodningsprocessen. Det beskrives også, hvordan oplysningerne videresendes til kreditorer. En grundlæggende oversigt over understøttelse af tilbudsanmodningsprocessen finder du i [Tilbudsanmodninger](request-quotations.md).
+I dette afsnit beskrives interaktionerne mellem debitorer og kreditorer under tilbudsanmodningsprocessen. Det beskrives også, hvordan oplysningerne videresendes til kreditorer. En grundlæggende oversigt over understøttelse af tilbudsanmodningsprocessen finder du i [Oversigt over tilbudsanmodning](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Alternativer, vedhæftede filer, ændringer og returneringer
 

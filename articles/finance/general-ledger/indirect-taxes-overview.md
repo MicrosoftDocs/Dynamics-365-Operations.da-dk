@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666824"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770660"
 ---
 # <a name="sales-tax-overview"></a>Momsoversigt
 
@@ -38,7 +38,7 @@ Momsstrukturen understøtter mange typer af indirekte skatter, som f.eks. moms, 
 
 I følgende diagram vises enheder på opsætning af skat, og hvordan de er relateret.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram, der viser oversigt over enheder til momsopsætning](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 For hver type moms, en virksomhed skal redegøre for, skal der defineres en momskode. En momskode gemmer afgiftssatser og reglerne for beregning af moms. 
 
@@ -55,7 +55,7 @@ I følgende tabel beskrives enheder og sekvensen for opsætningen af skat.
 | Opsætningsopgave                                                  | Krævet/Valgfri og beskrivelse                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opret hovedkonti.                                           | Påkrævet. Før du kan konfigurere momsfunktionen, skal de hovedkonti, firmaet bruger til at betale og registrere skatter, være oprettet.                                                                                                                                                                             |
-| Oprette finanskonteringsgrupper til moms.                     | Påkrævet. Finanskonteringsgrupperne definerer hovedkontiene for registrering og betaling af moms.   Du kan finde flere oplysninger i [Oprette finanskonteringsgrupper til moms](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Oprette finanskonteringsgrupper til moms.                     | Påkrævet. Finanskonteringsgrupperne definerer hovedkontiene for registrering og betaling af moms.   Du kan finde flere oplysninger i [Opsætning af finanskonteringsgrupper til moms](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
 | Opret momsmyndigheder.                                   | Påkrævet. Momsmyndighederne er de enheder, som moms skal rapporteres og betales til.    Du kan finde flere oplysninger i [Opsætte momsmyndigheder](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Opret momsafregningsperioder.                            | Påkrævet. Momsafregningsperioder indeholder oplysninger om, hvornår og hvor ofte momsen skal rapporteres og betales. De er relateret til en momsmyndighed.                                                                                                                                                       |
 | Konfigurer momsrapporteringskoder.                               | Valgfrit. Momsrapporteringskoder kan tildeles til momskoder til rapportbeløbene for flere momskoder i én momsrapporteringskode. Du kan finde flere oplysninger i [Konfigurere momsrapporteringskoder](tasks/set-up-sales-tax-reporting-codes.md).                                         |

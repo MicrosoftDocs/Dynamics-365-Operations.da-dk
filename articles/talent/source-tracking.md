@@ -1,5 +1,5 @@
 ---
-title: Spore kilder til kandidatprofiler og -ansøgninger
+title: Spor kandidatkilder i Attract
 description: Dette emne indeholder oplysninger om at spore kilden til kandidatprofiler og ansøgninger.
 author: hachandr
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551881"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832640"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Spore kilder til kandidatprofiler og -ansøgninger
+# <a name="track-candidate-sources-in-attract"></a>Spor kandidatkilder i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > De funktioner, der er angivet under dette emne, er tilgængelige som en del af en gennemgang af en eksempelversion. Indholdet og funktionaliteten kan blive ændret. For at anvende denne funktion skal du anmode en administrator om at aktivere den ved hjælp af **Administratorindstillinger** i Attract. I en kommende udgivelse stilles kildesporingsrapporter til rådighed. Du kan finde yderligere oplysninger under [Få adgang til funktioner i prøveversioner af Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

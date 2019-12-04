@@ -1,6 +1,6 @@
 ---
-title: Slå job op på eksterne karrierewebsteder fra Attract
-description: Dette emne beskriver, hvordan du anvender Dynamics 365 Talent - til at slå job op på eksterne rekrutteringswebsteder
+title: Slå job op på Broadbean fra Attract
+description: Dette emne beskriver, hvordan du anvender Dynamics 365 Talent - Attract til at slå job op på Broadbean
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2c822a1f799144bb9240fc0cbdeb6c5441e278af
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 41fa057606887069a9ea0f1f2178eeaff59f33ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551397"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832632"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Slå job op på eksterne karrierewebsteder fra Attract
+# <a name="post-jobs-to-broadbean-from-attract"></a>Slå job op på Broadbean fra Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract hjælper dig med at få det talent, du har brug for, ved at lade dig foretage jobopslag direkte fra Attract til Broadbean. Når du har [oprettet et job](./creating-jobs-attract.md), skal du bare klikke på en knap for at placere dit job for øjnene af alle potentielle jobkandidater på Broadbean.
 
 Jobopslag til Broadbean kræver en relevant Broadbean-licens. Broadbean tilbyder forskellige produkter og planer. Du kan få mere information om Broadbean-licens og -priser ved at [kontakte Broadbean](https://www.broadbean.com/contact-us/).
 
-Hvis du er en administrator, der har brug for mere information om, hvordan du konfigurerer Broadbean-integration med Attract, kan du se [Angive indstillinger for eksterne jobportaler](./attract-admin-job-board-settings.md).
+Hvis du er administrator og har brug for mere information om, hvordan du konfigurerer Broadbean-integration med Attract, kan du se [Aktiver Broadbean-integration med i Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md).
 
 ## <a name="post-jobs-to-broadbean"></a>Slå jobs op på Broadbean
 
@@ -74,7 +74,7 @@ Du kan opdatere et jobopslag på Broadbean på to måder:
 2. I afsnittet **Opslag** skal du vælge den knap for **Opdater opslag**, der svarer til Broadbean.
 3. Rediger opslaget i Broadbean-vinduet.
 
-eller
+    eller
 
 1. I Attract skal du åbne det job, du ønsker at se på Broadbean.
 2. I afsnittet **Opslag** skal du vælge den ellipseformede knap (**...**), der svarer til Broadbean, og dernæst vælge **Se**.
@@ -99,6 +99,6 @@ Hvis du har problemer med at slå et job op på Broadbean, kan du prøve disse t
 
 ## <a name="see-also"></a>Se også
 
-[Oprette job](./creating-jobs-attract.md)
+[Oprette, godkende og bogføre job i Attract](./creating-jobs-attract.md)
 
-[Angive indstillinger for eksterne jobportaler](./attract-admin-job-board-settings.md)
+[Aktivere Broadbean-integration i Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181421"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771277"
 ---
 # <a name="generate-printable-fti-forms"></a>Generere FTI-formularer, der kan udskrives
 
@@ -41,7 +41,7 @@ Ud over de eksisterende muligheder ved generering af FTI-formularer, der kan uds
 Som en del af din tilpassede løsning for FTI-formularer, der kan udskrives, skal du oprette et sæt af ER-konfigurationer.
 
 ### <a name="configure-the-er-data-model"></a>Konfigurere ER-datamodellen
-Programmet skal indeholde den konfiguration af ER-datamodellen, der indeholder en datamodel, som beskriver forretningsdomænet for kundefakturering. Som et krav skal være navnet på datamodellen være **CustomersInvoicing**. Du kan finde oplysninger om, hvordan du designer ER-datamodeller i [Designe en domænespecifik datamodel til elektronisk rapportering (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
+Programmet skal indeholde den konfiguration af ER-datamodellen, der indeholder en datamodel, som beskriver forretningsdomænet for kundefakturering. Som et krav skal være navnet på datamodellen være **CustomersInvoicing**. Du kan finde oplysninger om, hvordan du designer ER-datamodeller i [Design en domænespecifik datamodel (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### <a name="configure-the-er-model-mapping"></a>Konfigurere ER-datamodeltilknytningen
 Programmet skal indeholde ER-modeltilknytningen til datamodellen CustomersInvoicing. Modeltilknytningen kan enten være i konfigurationen af ER-datamodellen eller i konfigurationen af ER-modeltilknytningen. Navnet på rodbeskrivelsen af modeltilknytningen skal dog være **FreeTextInvoice**.
@@ -62,7 +62,7 @@ Tilknytningen skal indeholde følgende datakilder:
 
 Du kan finde oplysninger om programintegration med ER-strukturen i klassen **ERPrintMgmtReportFormatSubscriber** (integrationsmodel for ER-programpakke) i kildekoden for programmet.
 
-Du kan finde flere oplysninger om design af ER-modeltilknytninger i [Definere modeltilknytning og vælge datakilder til elektronisk rapportering (ER)](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+Du kan finde flere oplysninger om design af ER-modeltilknytninger i [Definer ER-modeltilknytninger, og vælg datakilder til dem](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### <a name="configure-the-er-format"></a>Konfigurere ER-formatet
 I din forekomst af programmet, skal du have den ER-formatkonfiguration, der skal bruges til at generere FTI-formularer. 
@@ -70,7 +70,7 @@ I din forekomst af programmet, skal du have den ER-formatkonfiguration, der skal
 > [!NOTE]
 > Denne formatkonfiguration skal oprettes for datamodellen CustomersInvoicing, og den skal bruge den modeltilknytning, der har rodbeskrivelsen **FreeTextInvoice**.
 
-Du kan finde oplysninger om konfiguration af ER-formater i [Oprette en formatkonfiguration til elektronisk rapportering (ER)](tasks/er-format-configuration-2016-11.md). Du kan finde oplysninger om, hvordan du opretter ER-formater til generering af rapporter i OpenXML-format, i [Designe en konfiguration til generering af rapporter i OpenXML-format til elektronisk rapportering (ER)](tasks/er-design-reports-openxml-2016-11.md).
+Du kan finde oplysninger om konfiguration af ER-formater i [ER opret en formatkonfiguration (november 2016)](tasks/er-format-configuration-2016-11.md). Du kan finde oplysninger om, hvordan du opretter ER-formater til generering af rapporter i OpenXML-format, i [ER design en konfiguration til generering af rapporter i OPENXML-format (november 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>Konfigurer udskriftsstyring
 Hvis du vil generere FTI-formularer ved hjælp af ER-strukturen, kan du tildele ER-formater på samme måde, som du tildeler SSRS-rapporter. Hvis du vil knytte ER-formatet til alle FTI'er for debitor, skal du gå til **Debitor** \> **Konfiguration** \> **Formularer** \> **Formularopsætning** \> **Generelt** \> **Udskriftsstyring** \> **Fritekstfaktura** \> **Oprindelig**. Hvisl du vil knytte ER-formatet til en bestemt debitor eller faktura, skal du følge disse trin.
@@ -94,7 +94,7 @@ Du kan vælge fakturaer for at generere FTI-formularer, efter område eller efte
 
 ![Forhåndsvisning af faktura](media/FTIbyGER-InvoiceExcelPreview.png)
 
-Når du bruger ER-formater til at udskrive FTI-formularer på denne måde, bruges standarddestinationerne for ER-filen. Du kan ikke ændre denne destination. Du kan finde oplysninger om konfiguration af ER-destinationer til ER-formater i [Destinationer for elektronisk rapportering](electronic-reporting-destinations.md).
+Når du bruger ER-formater til at udskrive FTI-formularer på denne måde, bruges standarddestinationerne for ER-filen. Du kan ikke ændre denne destination. Du kan finde oplysninger om konfiguration af ER-destinationer til ER-formater i [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md).
 
 Du kan også generere FTI-formularer, når du bogfører en FTI, ved at aktivere **Udskriv faktura** og deaktivere **Brug destinationer for udskriftsstyring**.
 
@@ -224,4 +224,4 @@ Udtrykket **Emailing.TxtToUse.Body** i eksempelformatet er konfigureret til de f
 ![E-mail](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)

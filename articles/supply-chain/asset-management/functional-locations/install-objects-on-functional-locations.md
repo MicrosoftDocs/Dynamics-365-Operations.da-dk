@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571800"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811813"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installation af aktiver på arbejdssteder
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571800"
 
  
 
-Når du har oprettet strukturerne for arbejdsstederne, er det næste trin at installere aktiverne på de relevante arbejdssteder. Dette emne forklarer, hvordan du installerer aktiver på de pågældende arbejdssteder i Styring af aktiver Du kan finde flere oplysninger om, hvordan du opretter aktiver i [Aktiver](../objects/introduction-to-objects.md).
+Når du har oprettet strukturerne for arbejdsstederne, er det næste trin at installere aktiverne på de relevante arbejdssteder. Dette emne forklarer, hvordan du installerer aktiver på de pågældende arbejdssteder i Styring af aktiver Du kan finde flere oplysninger om, hvordan du opretter aktiver i [Introduktion til aktiver](../objects/introduction-to-objects.md).
 
 Hvis du har oprettet en aktivstruktur, skal hele aktivets struktur være installeret på et arbejdssted. Derfor kan kun overordnede aktiver (aktiver på øverste niveau, der ikke har et overordnet aktiv) vælges på et arbejdssted. Alle tilknyttede underordnede aktiver (underaktiver) bliver også installeret på arbejdsstedet. Når du installerer aktiver på et arbejdssted, bliver de økonomiske dimensioner for arbejdsstedet muligvis automatisk overført til dem, afhængigt af opsætningen af typen af det valgte arbejdssted, som er valgt for arbejdsstedet. Du finder flere oplysninger om, hvordan du konfigurerer typer af arbejdssteder i [Typer af arbejdssteder](../setup-for-functional-locations/functional-location-types.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Samtaleplanlægning og tilbagemelding
+title: Planlæg samtaler i Attract
 description: Dette emne indeholder oplysninger om samtaleplanlægning og tilbagemeldingsaktiviteter i Attract.
 author: hasrivas
 manager: AnnBe
@@ -14,18 +14,18 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517605"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832739"
 ---
-# <a name="interview-scheduling-and-feedback"></a>Samtaleplanlægning og tilbagemelding
+# <a name="schedule-interviews-in-attract"></a>Planlæg samtaler i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-## <a name="scheduler-activity"></a>Aktiviteten Planlægger
+## <a name="scheduler-activity"></a>Planlæggeraktivitet
 
 Planlæggeraktiviteten er valgfri og består af to komponenter: anmodning om og tidsplan for kandidatens tilgængelighed. I komponenten Kandidatens tilgængelighed kan du bruge e-mail til at anmode om en kandidats tilgængelighed. Komponenten Planlægger giver mulighed for at planlægge samtaler med kandidaten og ansættelsesteamet.
 

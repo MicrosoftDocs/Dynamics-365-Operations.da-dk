@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653412"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814898"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversigt over konfiguration af lagersted
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653412"
 
 I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 
-**Bemærk!** Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
+> [!NOTE]
+> Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
 Lokationsstyringssystemet i Supply Chain Management giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
@@ -114,7 +115,7 @@ For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknytt
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Konfigurer lokationer i et WMS-aktiveret lagersted (opgaveguide)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Konfigurere lokationer på et WMS-aktiveret lagersted](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

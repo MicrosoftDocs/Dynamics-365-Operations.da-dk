@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c52fc9955afe2a7502d0e1f9e7cdfc5b89bbb31d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 11720b70697112085ac612fc9eded8292a68ab2d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559272"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815082"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Varedisponering for lokations- og lagerdisponering, lagersted er obligatorisk
 
@@ -51,15 +51,15 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+[Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
 
-[Overordnet planlægning – lokalitetsdisponering, lagersted er obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
+[Varedisponering for lokalitetsdisponering, obligatorisk lagersted](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Overordnet planlægning – lokalitetsdisponering, lagersted er ikke obligatorisk](master-plan-site-coverage-warehouse-not-mandatory.md)
+[Varedisponering for lokalitetsdisponering, lagersted ikke obligatorisk](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Overordnet planlægning – lokations- og lagerdisponering, lagersted er ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Varedisponering for lokalitets- og lagerdisponering, lagersted ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Overordnet planlægning – sådan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
+[Bestemme styklisteversionen](master-plan-bom-version-determined.md)
 
 
 

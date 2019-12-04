@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dd88537506521fd37aa170c7e8f43bcf5a106836
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174345"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771627"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
 
@@ -102,7 +102,7 @@ Nu, hvor du har tilføjet de kontrolelementer til formularen, der skal bruges ti
 > [!NOTE]
 > Til integrerede arbejdsområder anbefaler vi, at du bruger udvidelser for at skjule både siden **Filterrude** og siden **Fane** med henblik på konsistens.
 
-Du har nu fuldført udvidelsen af programformulardefinitionen. Du kan finde flere oplysninger om, hvordan du bruger udvidelser til at foretage tilpasninger, i [Tilpasning: Overlejring og udvidelser](../extensibility/customization-overlayering-extensions.md).
+Du har nu fuldført udvidelsen af programformulardefinitionen. Du kan finde flere oplysninger om, hvordan du bruger udvidelser til at foretage tilpasninger, i [Tilpasning via udvidelse og overlejring](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Tilføje X ++-forretningslogik for at integrere et fremviserkontrolelement
 Følg disse trin for at tilføje forretningslogik, der initialiserer det kontrolelement til rapportfremvisningen, der er integreret i arbejdsområdet **Reservationsstyring**.

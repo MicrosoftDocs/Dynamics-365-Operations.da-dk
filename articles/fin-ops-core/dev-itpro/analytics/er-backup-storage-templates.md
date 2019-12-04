@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553085"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771415"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhedskopilager til ER-skabeloner
 
 [!include [banner](../includes/banner.md)]
 
-Med det [elektroniske rapporteringsværktøjs struktur (ER)](general-electronic-reporting.md) kan forretningsbrugere konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande og områder. Konfigurerede ER-formater kan bruge foruddefinerede skabeloner til at oprette udgående dokumenter i forskellige formater, f.eks. Microsoft Excel-projektmapper, Microsoft Word-dokumenter eller PDF-dokumenter. Skabelonerne er fyldt med data, som det konfigurerede dataflow til genererede dokumenter kræver.
+[Oversigten over Elektronisk rapportering (ER)](general-electronic-reporting.md) gør det muligt for erhversbrugere at konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande og områder. Konfigurerede ER-formater kan bruge foruddefinerede skabeloner til at oprette udgående dokumenter i forskellige formater, f.eks. Microsoft Excel-projektmapper, Microsoft Word-dokumenter eller PDF-dokumenter. Skabelonerne er fyldt med data, som det konfigurerede dataflow til genererede dokumenter kræver.
 
 Hvert konfigureret format kan udgives som en del af en ER-løsning. Hver ER-løsning kan eksporteres fra én forekomst af Finance and Operations og importeres til en anden forekomst.
 
-ER-strukturen bruger [dokumentstyringsstrukturen](../../fin-ops/organization-administration/configure-document-management.md) til at bevare de krævede skabeloner for den aktuelle Finance and Operations-forekomst. Afhængigt af indstillingerne for ER-strukturen kan der vælges et Microsoft Azure Blob-lager eller en Microsoft SharePoint-mappe som fysisk primær lagringslokation for skabeloner. (Yderligere oplysninger finder du under [Konfigurere ER-strukturen](electronic-reporting-er-configure-parameters.md).) Tabellen DocuValue indeholder en individuel post for hver skabelon. I hver post indeholder feltet **AccessInformation** stien til en skabelonfil, der er placeret på den konfigurerede lagerlokation.
+ER-strukturen bruger [Konfiguration af dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til at bevare de krævede skabeloner for den aktuelle Finance and Operations-forekomst. Afhængigt af indstillingerne for ER-strukturen kan der vælges et Microsoft Azure Blob-lager eller en Microsoft SharePoint-mappe som fysisk primær lagringslokation for skabeloner. (Yderligere oplysninger finder du under [Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md).) Tabellen DocuValue indeholder en individuel post for hver skabelon. I hver post indeholder feltet **AccessInformation** stien til en skabelonfil, der er placeret på den konfigurerede lagerlokation.
 
 Når du administrerer dine Finance and Operations-forekomster, kan du vælge at overflytte den aktuelle forekomst til en anden lokation. Du kan f.eks. flytte produktionsforekomsten til et nyt sandkassemiljø. Hvis du har konfigureret ER-strukturen til at gemme skabeloner i blob-lageret, henviser DocuValue-tabellen i det nye sandkassemiljø til forekomsten af blob-lager i produktionsmiljøet. Men der er ikke adgang til denne forekomst fra sandkassemiljøet, fordi overførselsprocessen ikke understøtter overflytning af artefakter i blob-lageret. Hvis du derfor forsøger at køre et ER-format, der bruger en skabelon til at generere forretningsdokumenter, indtræffer der en undtagelse, og du får besked om den manglende skabelon. Du bliver også guidet til at bruge ER-oprydningsværktøjet til at slette og derefter importere den ER-formatkonfiguration, der indeholder skabelonen, igen. Da du kan have flere ER-formatkonfigurationer, kan denne proces være tidskrævende.
 
@@ -94,6 +94,6 @@ I Finance and Operations version 10.0.5 er funktionen Sikkerhedskopilager til ER
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-[Konfigurere den elektroniske rapporteringsstruktur](electronic-reporting-er-configure-parameters.md)
+[Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md)

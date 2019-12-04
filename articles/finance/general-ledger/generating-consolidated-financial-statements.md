@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176930"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770683"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 
@@ -41,11 +41,11 @@ Den mest enkle metode til konsolidering ved hjælp af Økonomirapportering er at
 
 I følgende illustration vises, hvordan du kan bruge en trædiagramdefinition i Økonomirapportering til at identificere hvert regnskab, du vil konsolidere.
 
-![Trædiagramdefinition](./media/reporting-tree-definition.png "Trædiagramdefinition")
+![Rapporteringstrædefinition](./media/reporting-tree-definition.png "Rapporteringstrædefinition")
 
 Som den konsoliderede rapport i følgende illustration viser, kan du se hvert firma separat, når du bruger trædiagrammet sammen med en rapportdefinition. De konsoliderede beløb vises på oversigtsniveau.
 
-![Oversigtsniveau for konsolidere beløb](./media/consolidate-amount-summary-level.png "Oversigtsniveau for konsolidere beløb")
+![Oversigtsniveau for konsoliderede beløb](./media/consolidate-amount-summary-level.png "Oversigtsniveau for konsoliderede beløb")
 
 Du kan også oprette et trædiagram med flere niveauer. Diagrammet kan indeholde så mange niveauer, som du har brug for. I følgende illustration vises en trædiagramdefinition med flere niveauer, der indeholder akkumuleringer fra områder verden over.
 
@@ -64,7 +64,7 @@ Mange kunder foretrækker rapporter, hvor regnskaberne vises ved siden af hinand
 
 I følgende illustration vises en kolonnedefinition i side om side-format.
 
-![Kolonnedefinition i side om side-format](./media/column-definition-side-by-side-format.png "Kolonnedefinition i side om side-format")
+![Kolonnedefinition i et side om side-format](./media/column-definition-side-by-side-format.png "Kolonnedefinition i et side om side-format")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolideringer, der bruger organisationsstrukturer, der er oprettet ud fra juridiske enheder
 Organisationshierarkier, der indeholder dimensioner eller juridiske enheder, opretter dynamisk trædiagramdefinitioner i Økonomirapportering. En nem måde at strømline konsolideringer på er ved at føje et organisationshierarki til rapporten i Økonomirapportering. Baseret på rapportdatoen vælger Økonomirapportering organisationshierarkiet på eller før ikrafttrædelsesdatoen, som vist i følgende illustration.
@@ -76,7 +76,7 @@ Elimineringstransaktioner er en almindelig del af konsolideringsprocessen. I det
 
 Følgende illustration viser en kolonnedefinitionen for en konsolideret resultatopgørelse. Der er defineret tre driftsmellemregningskonti for hvert regnskab ved hjælp af dimensionsfilteret. Kolonne D indeholder kun elimineringskontiene for USMF-firmaet, og kolonne E indeholder kun elimineringer for DEMF-firmaet. Både kolonne D og kolonne E er konfigureret, så de **ikke** udskrives i regnskabet.
 
-![Kolonnedefinition for konsolideret resultatopgørelse](./media/column-definition-consolidated-income-statement.png "Kolonnedefinition for konsolideret resultatopgørelse")
+![Kolonnedefinitionen for en konsolideret resultatopgørelse](./media/column-definition-consolidated-income-statement.png "Kolonnedefinitionen for en konsolideret resultatopgørelse")
 
 Når rapporten oprettes, beregnes elimineringsbeløbene i kolonne F, G og H, og de lægges sammen i kolonne I. J viser de konsoliderede beløb. Disse konsolideringsbeløb udelader elimineringer for firmaerne USMF, USRT og DEMF.
 
@@ -104,7 +104,7 @@ Når rapporten oprettes, viser rapporten Contoso Germany 100 procent af salgsbel
 
 Hvis du har mindre end 1 % af et firma, kan du markere afkrydsningsfeltet **Tillad aggregering på mindre end 1%** under fanen **Flere indstillinger** på siden **Rapportindstillinger** som vist i følgende illustration. I så fald behandles værdier i kolonnen **Aggregeringsprocent** i diagramtræet som mindre end 1 %. Hvis du f.eks. angiver **0,8**, aggregeres 0,8 % til det konsoliderede niveau, og ikke 80 procent. Alternativt kan du opnå samme resultat ved ikke at markere afkrydsningsfeltet **Tillad aggregering på mindre end 1%** og angive **0,008** i kolonnen **Aggregeringsprocent**.
 
-![Rapporteringsindstillinger](./media/reporting-setting-options.png "Rapporteringsindstillinger")
+![Indstillinger for rapporteringsindstillinger](./media/reporting-setting-options.png "Indstillinger for rapporteringsindstillinger")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Viser ejerskab som en separat række i den konsoliderede rapport
 En anden indstilling for minoritetsinteresse er at vise 100 procent af datterselskabet for hver linje i rapporten, men fratrække den ikke-bestemmende aktiepost fra nettofortjenesten.
@@ -158,7 +158,7 @@ I følgende illustration vises de indstillinger i rapportdefinitionen, hvor du k
 ## <a name="business-unit-consolidations"></a>Konsolideringer af virksomhedsenheder
 Dette emne har fokuseret på at bruge trædiagramdefinitioner og organisationshierarkier i Økonomirapportering med henblik på konsolidering. Du kan også bruge trædiagrammet til at oprette konsolideringsrapporter for virksomhedsenheden, f.eks. rapporter om globalt salg eller operationer. Disse rapporter er et almindelig krav. Du kan oprette dem ved at vælge et firma og en dimension for hver enhed, som du vil konsolidere for. F.eks. i følgende illustration er akkumuleringen for virksomhedsenheden opnået ved at gentage hver virksomhed i kolonnen **Firma** (kolonne A) og identificere en gruppe af Dimensionsværdi for afdeling pr. firma i kolonnen **Dimensioner** (kolonne D).
 
-![Konsolideringsrapporter for virksomhedsenhed](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter for virksomhedsenhed")
+![Konsolideringsrapporter for virksomhedsenheder](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter for virksomhedsenheder")
 
 ## <a name="consolidations-that-involve-multiple-reporting-currencies"></a>Konsolideringer, der involverer flere rapporteringsvalutaer
 Økonomirapportering giver øget fleksibilitet, når du får vist faktiske data, budgetdata, budgetstyrings- og budgetplanlægningsdata i flere valutaer. Når du leverer på tværs af nøgleopsætningsdata behøver du ikke at fortage yderligere opsætning i Økonomirapportering for at få vist en rapport i en hvilken som helst valuta til enhver tid for alle brugere.
@@ -171,7 +171,7 @@ På hovedkontoen skal felterne **Valutakurstype for økonomirapportering** og **
 - I feltet **Valutakurstype for økonomirapportering** skal du vælge den valutakurstype, der indeholder de valutaer og valutakurser, der skal gælde for kontoen. Denne tabel over valutaer og valutakurser vil blive anvendt til faktiske data i Økonomirapportering.
 - I feltet **Valutaomregningstype** skal du vælge metoden, der bruges til at beregne valutakursen for kontoen. Denne valutametode bruges til både faktiske og budgetterede data i Økonomirapportering.
 
-![Hovedkonti i Økonomirapportering](./media/Financial-reporting-main-accounts.png "Hovedkonti i Økonomirapportering")
+![Hovedkonti for økonomisk rapportering](./media/Financial-reporting-main-accounts.png "Hovedkonti for økonomisk rapportering")
 
 For budget-, budgetstyrings- og budgetplanlægningsdata defineres valutakurstypen på siden **Finans**. Denne tabel skal bruges til at trække valutakurserne, og den valutaomregningstype, der er tildelt til kontoen, bruges.
 
@@ -221,6 +221,6 @@ For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirappor
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
+Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
-Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Konsolidere online](./consolidate-online.md).
+Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570234"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771816"
 ---
 # <a name="general-journal-processing"></a>Finanskladdehåndtering
 
@@ -85,9 +85,9 @@ Opsætningen af hovedkontoen giver mange muligheder for behandling af finansklad
 Regnskabsmæssige strukturer og avancerede regelstrukturer er meget vigtige for at sikre, at de data, der kræves til økonomisk rapportering og sporing af ydeevne, er hentet under behandling af finanskladde og enhver dokumentation. Med regnskabsmæssige strukturer og avancerede regelstrukturer kan du skræddersy dataindtastningsoplevelsen. Du kan kun tillade dataindtastning for økonomiske dimensioner, der er relevante i hver situation, og kan også gennemtvinge kravet om, at obligatoriske og korrekte data altid registreres.
 
 Du kan finde flere oplysninger under følgende emner:
-- [Planlægning: Kontoplan](plan-chart-of-accounts.md). 
+- [Planlægge din kontoplan](plan-chart-of-accounts.md) 
 - [Oprette avancerede regler for kladder](tasks/create-advanced-rules-journals.md)
-- [Oprette en kladdepost ved hjælp af en skabelon](tasks/create-journal-entry-template.md)
+- [Oprette en kladdepostering ved hjælp af en skabelon](tasks/create-journal-entry-template.md)
 - [Oprette og kontrollere kladder](tasks/create-validate-journals.md)
 - [Bogføre periodiske kladder](tasks/post-periodic-journals.md)
 - [Behandle finansfordelingskladde](tasks/process-ledger-allocation-journal.md)

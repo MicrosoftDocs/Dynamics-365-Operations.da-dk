@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653550"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814392"
 ---
 # <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
 
@@ -610,4 +610,4 @@ Du skal definere en kvalitetstilknytning for hver afvigelse i en forretningsproc
 
 [Processer for kvalitetsstyring](quality-management-processes.md)
 
-[Aktivering af uoverensstemmelsesstyring](enable-nonconformance-management.md)
+[Håndtering af uoverensstemmelse](enable-nonconformance-management.md)

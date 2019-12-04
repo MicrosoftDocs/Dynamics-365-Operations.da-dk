@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88186dd1efa5381ad1a1109d54bdcc64d7c14a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: beef5c13c31af7551255c8264c1b6478abee6428
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183517"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773610"
 ---
 # <a name="accounts-payable-in-the-public-sector-overview"></a>Oversigt over Kreditor i den offentlige sektor
 
@@ -52,7 +52,7 @@ Når du har konfigureret forudsætningerne, kan det være nødvendigt at konfigu
   > Dette gælder også for Finans, Budgettering og Debitor.
 
 
-- [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md) – Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du hurtigt oprette en eller flere fakturaer, samtidig med at du opretter en post for kreditoren. Du kan finde flere oplysninger under [Planlægning for engangsleverandører i den offentlige sektor.](plan-one-time-vendors-public-sector.md)
+- [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md) – Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du hurtigt oprette en eller flere fakturaer, samtidig med at du opretter en post for kreditoren. Du kan finde flere oplysninger under [Planlægning for engangsleverandører i den offentlige sektor](plan-one-time-vendors-public-sector.md).
 - Oversigt over 1099-formular i den offentlige sektor – Hvis du handler med leverandører, der er omfattet af amerikansk 1099-skat, skal du spore det beløb, du betaler til hver leverandør, og rapportere disse oplysninger til de amerikanske skattemyndigheder ved udgangen af kalenderåret. Offentlige organisationer bruger formular 1099-G og 1099-S.
 
 > [!NOTE]
@@ -104,7 +104,7 @@ Du kan få vist linjebeløb for en indkøbsordre. Disse beløb omfatter det saml
 
 Du kan finde flere oplysninger under følgende emner:
 
-[[Tilføje en certificeringstype til en leverandør](tasks/add-certification-type-vendor-public-sector.md)
+[Tilføje en certificeringstype til en leverandør](tasks/add-certification-type-vendor-public-sector.md)
 
 [Styre adgangen til købsaftaler](tasks/control-access-purchase-agreements-public-sector.md)
 

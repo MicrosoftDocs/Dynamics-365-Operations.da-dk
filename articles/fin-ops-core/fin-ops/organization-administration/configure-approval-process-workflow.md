@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b09d09464eae932bf9caf4f2ea38cbbb3b4f0162
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190206"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811375"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurere godkendelsesprocesser i en arbejdsgang
 
@@ -182,4 +182,4 @@ En godkendelsesproces består af godkendelsestrin. Fuldfør følgende procedure 
 
 1. Dobbeltklik på godkendelsesprocessen i arbejdsgangseditoren. I arbejdsgangseditoren vises trinene i godkendelsesprocessen.
 2. Du kan tilføje et godkendelsestrin ved at trække trinnet fra området **Arbejdsgangselementer** til lærredet.
-3. Hvis du vil konfigurere et godkendelsestrin, skal du se [Konfigurere et godkendelsestrin](configure-approval-step-workflow.md).
+3. Hvis du vil konfigurere et godkendelsestrin, skal du se [Konfigurer et godkendelsestrin i en arbejdsgang](configure-approval-step-workflow.md).

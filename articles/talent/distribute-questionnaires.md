@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026250"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814737"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer.
 
@@ -54,7 +54,8 @@ Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte besvarelser i et spørgeskema
 Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for. 
 
-> **Bemærk!** Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema. 
+> [!NOTE]
+>   Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema. 
 
 På siden **Planlagte besvarelser** kan du oprette en planlagt besvarelse for en bestemt medarbejder. Listen på siden viser alle planlagte spørgeskemaer. 
 
@@ -108,12 +109,14 @@ Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.e
 
 Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Angiv mailteksten under fanen **Mail til medarbejderselvbetjening**. Når planen er startet, skal du klikke på **Funktioner** &gt; **Send mail** for at generere og sende mailen til svarpersonerne. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
 
-> **Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
+> [!NOTE]
+>   Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Afslutning af et planlagt spørgeskema
 Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt deres tildelte besvarelser. Når et planlagt spørgeskema er afsluttet, kan du ikke kopiere indstillingerne til en ny tidsplan. 
 
-> **Bemærk!** Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**. Derefter kan du slette tidsplanen.
+> [!NOTE]
+>   Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**. Derefter kan du slette tidsplanen.
 
 ## <a name="completing-questionnaires"></a>Besvare spørgeskemaer
 Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner. Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:
@@ -126,10 +129,10 @@ Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Udforme spørgeskemaer](design-questionnaires.md)
+[Designe spørgeskemaer](design-questionnaires.md)
 
-[Brug af spørgeskemaer](questionnaires.md)
+[Spørgeskemaer](questionnaires.md)
 
-[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[Se og evaluere resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
 
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182571"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769849"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)
 
@@ -36,7 +36,7 @@ Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og mark
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Overføre konfiguration for betalingsdatamodel
 1. Gå i navigationsruden til **Moduler > Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering**.
-2. Markér konfigurationsudbyderen for eksempelvirksomheden Litware, Inc på listen. Hvis du ikke kan se konfigurationsudbyderen, skal du først fuldføre trinnene i proceduren [Oprette en konfigurationsudbyder og markere den som aktiv](er-configuration-provider-mark-it-active-2016-11.md).
+2. Markér konfigurationsudbyderen for eksempelvirksomheden Litware, Inc på listen. Hvis du ikke kan se konfigurationsudbyderen, skal du først fuldføre trinnene i proceduren [Oprette konfigurationsudbydere og markere dem som aktiv](er-configuration-provider-mark-it-active-2016-11.md).
 3. Vælg **Angiv aktive**.
 4. Vælg **Lagre**. Vælg et lager for typen Operationsressourcer, hvis det er tilgængeligt. Hvis det er tilgængeligt, skal du springe over dette trin om oprettelse af et nyt lager.  
 5. Vælg **Tilføj** for at åbne dialogboksen.

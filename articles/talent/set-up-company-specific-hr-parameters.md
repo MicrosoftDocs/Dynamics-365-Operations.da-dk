@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8f790cae031b1a1d97f5409974b5d024ed6ceec5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009439"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814553"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Oprette firmaspecifikke HR-parametre
 
@@ -59,7 +59,7 @@ Indstillingerne på fanen **FMLA** definerer, hvor mange timer en medarbejder sk
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Angive personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md)
+[Angive personaleparametre (HR) på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md)
 
 
 

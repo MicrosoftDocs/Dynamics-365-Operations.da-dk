@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025047"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811187"
 ---
 # <a name="retail-peripherals"></a>Eksterne detailenheder
 
@@ -35,11 +35,17 @@ I dette emne forklares begreberne i forbindelse med eksterne detailenheder. Det 
 
 ### <a name="pos-registers"></a>Kasseapparater
 
-Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS-enheden. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kasseapparatet.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. 
+
+POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS-enheden. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kasseapparatet.
 
 ### <a name="devices"></a>Enheder
 
-Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. 
+
+En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. 
+
+Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktion
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigation: Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmet til Windows. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der opnås adgang via et netværk.
+Navigation: Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. 
+
+Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmet til Windows. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der opnås adgang via et netværk.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
-Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardware-profiler**. Hardwareprofilen er en liste over enheder, der er konfigureret til et POS-kasseapparat eller en hardwarestation. Hardwareprofilen kan afbildes direkte til et POS-kasseapparat eller en hardwarestation.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardware-profiler**. 
+
+Hardwareprofilen er en liste over enheder, der er konfigureret til et POS-kasseapparat eller en hardwarestation. Hardwareprofilen kan afbildes direkte til et POS-kasseapparat eller en hardwarestation.
 
 ## <a name="devices-classes"></a>Enhedsklasser
 Eksterne POS-enheder er typisk opdelt i klasser. Dette afsnit beskriver og giver et overblik over de enheder, der understøttes af Modern POS.
@@ -202,11 +212,11 @@ Den logik, der styrer fysisk tilsluttede og netværksadresserbare eksterne enhed
 
 ### <a name="hardware-station-installation"></a>Installation af hardwarestation
 
-Du kan finde flere oplysninger i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
+Du kan finde flere oplysninger i [Konfigurer og installer hardwarestation til Retail](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Windows
 
-Du kan finde flere oplysninger i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).
+Du kan finde flere oplysninger i [Konfigurer, installer og aktiver Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Installation og konfiguration af OPOS-enhed
 
@@ -523,7 +533,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguration til understøttede scenarier
 
-Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md).
+Du kan finde flere oplysninger om, hvordan du opretter hardwareprofiler i [Tilslutte ydre enheder til POS](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > For Retail version 1611 bruges hardwarestationsprofilen ikke længere. Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.
@@ -566,8 +576,8 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der har en hardware
 4. Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 5. Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 6. Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-7. Installer hardwarestationen. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
-8. Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).
+7. Installer hardwarestationen. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfigurer og installer hardwarestation til Retail](retail-hardware-station-configuration-installation.md).
+8. Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration, installation og aktivering af Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.
 10. Start handlingen **Administrer hardwarestationer**.
 11. Klik på **Administrer**.
@@ -595,8 +605,8 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwares
 5. Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 6. Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7. Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-8. Installer hardwarestationen på hver værtscomputer, du har oprettet i trin 2 og 3. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
-9. Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).
+8. Installer hardwarestationen på hver værtscomputer, du har oprettet i trin 2 og 3. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfigurer og installer hardwarestation til Retail](retail-hardware-station-configuration-installation.md).
+9. Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration, installation og aktivering af Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.
 11. Start handlingen **Administrer hardwarestationer**.
 12. Klik på **Administrer**.
@@ -655,7 +665,7 @@ Ifølge de aktuelle sikkerhedsstandarder skal der bruges følgende indstillinger
 
 ## <a name="peripheral-simulator"></a>Ekstern simulator
 
-Du kan finde oplysninger under [Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md).
+Du kan finde oplysninger under [Ekstern simulator til Retail](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Microsoft-testede eksterne enheder
 
@@ -896,4 +906,4 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Ekstern Retail-simulatorenhed](dev-itpro/retail-peripheral-simulator.md)
+[Ekstern simulator for Retail](dev-itpro/retail-peripheral-simulator.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 476b01a4bae34a271203f34481ff18042783d4df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652350"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811257"
 ---
 # <a name="item-where-used"></a>Hvor er varen brugt?
 
@@ -33,15 +33,15 @@ ms.locfileid: "2652350"
 
 Du kan foretage en beregning for en bestemt vare for at få en oversigt over, hvor i Styring af aktiver varen er brugt. Resultaterne viser den kontekst, som varen er blevet brugt i, i løbet af dens levetid. Siden **Hvor er varen brugt?** kan åbnes fra hovedmenuen i Styring af aktiver, og den kan også åbnes fra følgende sider:
 
-- [Aktivstykliste](../objects/object-BOM.md)
+- [Aktivstyklister](../objects/object-BOM.md)
 
-- [Reservedele i aktivtypestandarder](../setup-for-objects/object-types.md)
+- [Reservedele i aktivtypestandarder](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [Varebudget på standardbudget for vedligeholdelsesjobtype](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobhandler og vedligeholdelsestjeklister](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Vedligeholdelsesprognose for arbejdsordre](../work-orders/maintenance-forecasts.md)
+- [Vedligeholdelsesbudget](../work-orders/maintenance-forecasts.md)
 
-- [Indkøbsrekvisition for arbejdsordre](../work-orders/procurement.md)
+- [Indkøb](../work-orders/procurement.md)
 
 - [Arbejdsordreindkøb](../work-orders/procurement.md)
 

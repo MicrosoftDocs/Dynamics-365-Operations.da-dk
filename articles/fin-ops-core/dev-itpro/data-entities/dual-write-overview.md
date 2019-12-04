@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550851"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772381"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Integration næsten i realtid med Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 I den nuværende digitale verden bruger professionelle økosystemer Microsoft Dynamics 365-programmer som en helhed. Da data fra personer, kunder, drift og Tingenes internet flyder ind i én kilde, er der mulighed for digitale feedbackløkker. For at opnå denne oplevelse er integration mellem Finance and Operations-apps og Dynamics 365-programmer afgørende. Nogle programmer er bygget oven på Common Data Service. Integration mellem Finance and Operations-appdata og Common Data Service giver andre programmer mulighed for at kommunikere sammenhængende og flydende med Finance and Operations.
 
@@ -38,13 +36,16 @@ Finance and Operations-apps og Common Data Service leverer datasynkronisering t�
 
 ![Diagram over arkitekturoversigt](media/dual-write-overview.jpg)
 
-Følgende værdiforslag er tilgængelige for kunderne:
+Følgende værdiforslag er tilgængelige:
 
 + [Organisationshierarki i Common Data Service](dual-write-organization.md)
 + [Firmakoncept i Common Data Service](dual-write-company.md)
 + [Integreret debitormaster](dual-write-customer.md)
++ [Integreret finans](dual-write-ledger.md)
++ [Samlet produktoplevelse](dual-write-product.md)
 + [Integreret kreditormaster](dual-write-vendor.md)
-+ Samlet produktmaster
++ [Integrerede lokationer og lagersteder](dual-write-sites-and-warehouses.md)
++ [Integreret momsmaster](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Systemkrav
 

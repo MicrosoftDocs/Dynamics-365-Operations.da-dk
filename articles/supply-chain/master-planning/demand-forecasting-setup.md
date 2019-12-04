@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653505"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813793"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -70,7 +70,8 @@ Supply Chain Management anvender en Machine Learning-webtjeneste til at generere
 -   Kontonavn på Azure-lager
 -   Nøgle til Azure-lagerkonto
 
-**Bemærk!** Navn og nøgle til Azure-lageret er kun påkrævet, hvis du bruger en brugerdefineret lagerkonto. Hvis du installerer den lokale version, skal du have en brugerdefineret lagerkonto på Azure, så Machine Learning-tjenesten kan få adgang til de historiske data. 
+> [!NOTE]
+> Navn og nøgle til Azure-lageret er kun påkrævet, hvis du bruger en brugerdefineret lagerkonto. Hvis du installerer den lokale version, skal du have en brugerdefineret lagerkonto på Azure, så Machine Learning-tjenesten kan få adgang til de historiske data. 
 
 Hvis du vil oprette prognoseforudsigelser, kan du installere din egen tjeneste ved hjælp af Machine Learning Studio eller forsøg med Supply Chain Management-behovsprognoser. Instruktioner til installation af forsøg med behovsprognoser som en webtjeneste er tilgængelig i Supply Chain Management. På siden **Parametre til behovsprognoser** skal du klikke på fanen **Azure Machine Learning**.
 
@@ -93,11 +94,11 @@ Under fanen **Fordelingsnøgler** kan du angive **Parametre til prognosealgoritm
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Introduktion til behovsprognoser](introduction-demand-forecasting.md)
+[Oversigt over behovsprognoser](introduction-demand-forecasting.md)
 
 [Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
 
-[Foretage manuelle reguleringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
+[Foretage manuelle justeringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d62e3475b4336e86e203bbd347d110704eba07
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7066a021390e3403c4312a7cfe8488a989b9aaa3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176975"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771889"
 ---
 # <a name="expense-management-overview"></a>Oversigt over udgiftsstyring
 
@@ -37,7 +37,7 @@ Du kan finde flere oplysninger under [Konfigurere udgiftsstyring](plan-expense-m
 
 ### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Hvis du vil se, hvilke nye funktioner der er planlagt, skal du gå til [Microsoft Dynamics 365-produktbemærkninger](https://go.microsoft.com/fwlink/?linkid=2010158).
+Hvis du vil se, hvilke nye funktioner der er planlagt, skal du gå til [Udgivelsesplaner for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158).
 
 #### <a name="expense-report-entry"></a>Indtastning i udgiftsrapporter
 

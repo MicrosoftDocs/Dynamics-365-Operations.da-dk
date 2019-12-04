@@ -1,5 +1,5 @@
 ---
-title: Oprette, godkende og bogføre job i Attract
+title: Opret et job i Attract
 description: I dette emne beskrives elementerne i et job i Attract. Det beskrives også, hvordan du opretter et job.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551066"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832925"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Oprette, godkende og bogføre job i Attract
+# <a name="create-a-job-in-attract"></a>Opret et job i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Hvis Styring af stillinger er aktiveret i Administration, er opslaget **Opdater 
 > [!NOTE]
 > Styring af stillinger er tilgængelig i tilføjelsesprogrammet til omfattende ansættelser.
 
-Afhængigt af indstillingerne for tilbudsaktiviteten i ansættelsesprocessen kan et stillingsnummer bruges to gange i et tilbud. Du kan finde flere oplysninger under [Ansættelsesproces](./activities-attract.md).
+Afhængigt af indstillingerne for tilbudsaktiviteten i ansættelsesprocessen kan et stillingsnummer bruges to gange i et tilbud. Du kan finde flere oplysninger under [Aktiviteter i ansættelsesprocesser](./activities-attract.md).
 
 Attract indeholder et standardsæt af **Færdigheder**. Disse færdigheder vises som forslag, når du skriver. Du kan tilføje flere færdigheder ved at angive den nye tekst om færdigheder i feltet og derefter trykke på Enter.
 
@@ -67,7 +67,7 @@ Ansættelsesteamet kan opdateres, når jobbet er blevet aktiveret.
 
 Standardoplysningerne om ansættelsesprocessen er baseret på den processkabelon, der blev valgt, da jobbet blev oprettet. Hvis der ikke var valgt en bestemt skabelon på tidspunktet, bruges standardskabelonen. Når du definerer ansættelsesprocessen, kan du tilføje eller fjerne forskellige stadier undtagen Jobkandidat, Ansøgning og Tilbud. Selvom stadiet Jobkandidat ikke kan fjernes, kan det deaktiveres. Du kan tilføje eller fjerne en eller flere foruddefinerede aktiviteter på hvert stadie.
 
-Du kan finde flere oplysninger om aktiviteter, der kan føjes til ansættelsesprocessen, i [Ansættelsesprocesaktiviteter i Attract](./activities-attract.md).
+Du kan finde flere oplysninger om aktiviteter, der kan tilføjes til ansættelsesprocessen, i [Aktiviteter i ansættelsesprocesser](./activities-attract.md).
 
 > [!NOTE]
 > Ansættelser via processer kan ikke opdateres, når et job er blevet aktiveret.
@@ -76,7 +76,7 @@ Du kan finde flere oplysninger om aktiviteter, der kan føjes til ansættelsespr
 
 Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og administratorer kan oprette jobopslag. Jobbet kan opslås på enten Talent Careers (et Dynamics 365 Talent-karrierewebsted) eller LinkedIn. Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Denne liste udvides over tid. Når et job alene slås op internt, skal kandidaterne have en ADD-konto for at kunne se og søge jobbet. Såfremt et job slås op offentligt, kan kandidaterne se og søge jobbet ved hjælp af alle godkendelsesmuligheder. 
 
-Du kan finde flere oplysninger om jobopslag i [Funktioner for karrierewebsteder i Attract](career-site.md).
+Du kan finde flere oplysninger om jobopslag i [Konfigurer dit karrierewebsted i Microsoft Dynamics 365 Talent - Attract](career-site.md).
 
 > [!NOTE]
 > Jobopslagsfunktionerne er kun tilgængelige i tilføjelsesprogrammet til omfattende ansættelser til Attract.
@@ -90,7 +90,7 @@ Når et job er aktiveret, kan det slås op, og jobkandidater og ansøgere kan f�
 
 ## <a name="prospects-and-applicants"></a>Jobkandidater og ansøgere
 
-Muligheden for at tilføje kandidater til et job angives i [Jobkandidat-aktiviteten](./activities-attract.md#prospect-activity) i ansættelsesprocessen. Denne indstilling skal konfigureres, før du aktiverer jobbet. Når et job er aktiveret, kan jobkandidater og ansøgere føjes til det.
+Muligheden for at tilføje kandidater til et job angives i [Aktiviteter i ansættelsesprocesser](./activities-attract.md#prospect-activity) i ansættelsesprocessen. Denne indstilling skal konfigureres, før du aktiverer jobbet. Når et job er aktiveret, kan jobkandidater og ansøgere føjes til det.
 
 ## <a name="approvals"></a>Godkendelser
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248867"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815336"
 ---
 # <a name="purchase-requisition-overview"></a>Oversigt over indkøbsrekvisition
 
@@ -194,7 +194,7 @@ Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Opret en rekvisition til forbrug (opgaveguide)](tasks/create-requisition-consumption.md)
+[Oprette en forbrugsrekvisition](tasks/create-requisition-consumption.md)
 
 [Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
 

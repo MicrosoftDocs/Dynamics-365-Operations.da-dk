@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189999"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812357"
 ---
 # <a name="workflow-system-overview"></a>Oversigt over arbejdsgangssystem
 
@@ -57,18 +57,18 @@ Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
 
 ## <a name="workflow-content"></a>Indhold af arbejdsgang
 
-+ [Arkitektur for arbejdsgang](workflow-system-architecture.md)
++ [Arkitektur for arbejdsgangssystem](workflow-system-architecture.md)
 + [Arbejdsgangselementer](workflow-elements.md)
-+ [Arbejdsgangshandlinger](workflow-actions.md)
-+ [Oprette en arbejdsgang](create-workflow.md)
-+ [Konfigurere egenskaberne for arbejdsgang](configure-workflow-properties.md)
-+ [Konfigurere en manuel opgave i en arbejdsgang](configure-manual-task-workflow.md)
-+ [Konfigurere en automatiseret opgave i en arbejdsgang](configure-automated-task-workflow.md)
-+ [Konfigurere en godkendelsesproces i en arbejdsgang](configure-approval-process-workflow.md)
-+ [Konfigurere et godkendelsestrin i en arbejdsgang](configure-approval-step-workflow.md)
-+ [Konfigurere en manuel beslutning i en arbejdsgang](configure-manual-decision-workflow.md)
-+ [Konfigurere en betinget beslutning i en arbejdsgang](configure-conditional-decision-workflow.md)
-+ [Konfigurere en parallel aktivitet i en arbejdsgang](configure-parallel-activity-workflow.md)
-+ [Konfigurere en parallel gren i en arbejdsgang](configure-parallel-branch-workflow.md)
-+ [Konfigurere en arbejdsgang for linjeelementer](configure-line-item-workflow.md)
++ [Handlinger i godkendelsesprocesser i arbejdsgang](workflow-actions.md)
++ [Oversigt over oprettelse af arbejdsgange](create-workflow.md)
++ [Konfigurere egenskaber for arbejdsgange](configure-workflow-properties.md)
++ [Konfigurere manuelle opgave i en arbejdsgang](configure-manual-task-workflow.md)
++ [Konfigurere automatiserede opgaver i en arbejdsgang](configure-automated-task-workflow.md)
++ [Konfigurere godkendelsesprocesser i en arbejdsgang](configure-approval-process-workflow.md)
++ [Konfigurere godkendelsestrin i en arbejdsgang](configure-approval-step-workflow.md)
++ [Konfigurere manuelle beslutninger i en arbejdsgang](configure-manual-decision-workflow.md)
++ [Konfigurere betingede beslutninger i en arbejdsgang](configure-conditional-decision-workflow.md)
++ [Konfigurere parallelle aktiviteter i en arbejdsgang](configure-parallel-activity-workflow.md)
++ [Konfigurere parallelle grene i en arbejdsgang](configure-parallel-branch-workflow.md)
++ [Konfigurere arbejdsgange for linjeelementer](configure-line-item-workflow.md)
 + [Ofte stillede spørgsmål om arbejdsgang](workflow-FAQ.md)

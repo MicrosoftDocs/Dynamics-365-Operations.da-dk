@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45c0e3b569ca733ae3b70187633d2e84db5ecd87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578212"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771160"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Forbedringer i sporing af resultaterne fra genererede ER-rapporter og sammenligning af dem med basisværdier
 
@@ -56,11 +56,11 @@ Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinenne
 2. Vælg **Grundlag**.
 
     > [!NOTE]
-    > Knappen **Grundlag** i handlingsruden er kun tilgængelig, når brugerparameteren  **Kør i fejlfindingstilstand** er aktiveret for det aktuelle firma.
+    > Knappen **Grundlag** i handlingsruden er kun tilgængelig, når brugerparameteren **Kør i fejlfindingstilstand** er aktiveret for det aktuelle firma.
 
 Grundlaget er blevet tilføjet for det valgte **Format til at lære ER-grundlag**, men grundlagsreglerne er endnu ikke blevet tilføjet for dette grundlag.
 
-![Siden Grundlag for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline2.PNG "Skærmbillede af siden Grundlag for elektronisk rapporteringsformat")
+![Siden for Basislinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline2.PNG "Skærmbillede af siden Format for basislinjer i elektronisk rapportering")
 
 ### <a name="make-a-new-baseline-rule"></a>Opret en ny grundlagsregel
 
@@ -73,7 +73,7 @@ Grundlaget er blevet tilføjet for det valgte **Format til at lære ER-grundlag*
 7. Vælg **OK**.
 8. Vælg **Grundlag**.
 
-    ![Siden Grundlag for elektronisk rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skærmbillede af siden Grundlag for elektronisk rapporteringsformat")
+    ![Siden for Basislinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skærmbillede af siden Format for basislinjer i elektronisk rapportering")
 
     Den genererede udgående fil er automatisk blevet knyttet til grundlaget i det udførte ER-format. Grundlagsreglen er automatisk blevet føjet til dette grundlag og indeholder også referencen til den vedhæftede fil.
 
@@ -131,7 +131,7 @@ Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinnene
 3. På listen over grundlag skal du vælge det grundlag, der er konfigureret til formatet **Format til at lære ER-grundlag**.
 4. I oversigtspanelet **Grundlag** skal du vælge **Slet** for at fjerne den grundlagsregel, du konfigurerede tidligere.
 
-![Siden Grundlag for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline3.PNG "Skærmbillede af siden Grundlag for elektronisk rapporteringsformat")
+![Siden for Basislinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline3.PNG "Skærmbillede af siden Format for basislinjer i elektronisk rapportering")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definer erstatninger for bindinger, der er designet ER-format
 
@@ -139,7 +139,7 @@ Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinnene
 2. I træet til formatkomponenter skal du udvide **Output**, udvide **Output\\Dokument** og derefter markere afkrydsningsfeltet for **Output\\Dokument\\ProcessingDateTime**.
 3. Vælg **OK**.
 
-![Siden Grundlag for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skærmbillede af siden Grundlag for elektronisk rapporteringsformat")
+![Siden for Basislinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skærmbillede af siden Format for basislinjer i elektronisk rapportering")
 
 Den valgte ER-formatkomponent er føjet til listen over komponenter i oversigtspanelet **Erstatninger**. Når basis-ER-formatet køres i fejlfindingstilstand, vil formatets binding for hver komponent blive erstattet af den binding, der vises i kolonnen **Binding**. Hvis du vil ændre standardbindingen for en komponent, der vises i oversigtspanelet **Erstatninger**, skal du vælge **Rediger**.
 
@@ -195,11 +195,11 @@ Eksporterede indstillinger for grundlag kan importeres til et andet miljø. Milj
 
 Hvis du vil importere grundlagsindstillinger fra en XML-fil, der er gemt lokalt, skal du på siden **Grundlag for elektronisk rapporteringsformat** vælge **Importer** og derefter **Gennemse** for at vælge XML-filen.
 
-![Dialogboksen Import indstillinger for grundlag](media/GER-BaselineSample-ImportBaseline1.PNG "Skærmbillede af dialogboksen Import indstillinger for grundlag")
+![Importer dialogboksen indstillinger for basislinje](media/GER-BaselineSample-ImportBaseline1.PNG "Skærmbillede af dialogboksen Importer indstillinger for basislinje")
 
 Hvis du vil importere grundlagsindstillinger fra en XML-fil, der er gemt på Microsoft SharePoint Server, baseret på de aktuelle indstillinger for dokumentstyring og den valgte dokumenttype, skal du vælge **Importer fra kilde** på siden **Grundlag for elektronisk rapporteringsformat**. Vælg derefter dokumenttypen, og XML-filen. Den krævede dokumenttype for at få adgang til SharePoint-mappen skal være konfigureret i forvejen.
 
-![Dialogboksen Importer fra kilde](media/GER-BaselineSample-ImportBaseline2.PNG "Skærmbillede af dialogboksen Importer fra kilde")
+![Dialogboksen Importér fra kilde](media/GER-BaselineSample-ImportBaseline2.PNG "Skærmbillede af dialogboksen Importer fra kilde")
 
 > [!NOTE]
 > Du kan bruge Arbejdsrutineoptager til at registrere de trin, der skal bruges til at vælge den ønskede dokument type og filnavnet i dialogboksen **Importer fra kilde**. På denne måde kan du beholde de nødvendige indstillinger for grundlag på SharePoint Server og derefter importere dem automatisk ved at afspille en opgaveregistrering, når du kører automatiske test ved hjælp af Regression Suite Automation Tool.
@@ -207,4 +207,4 @@ Hvis du vil importere grundlagsindstillinger fra en XML-fil, der er gemt på Mic
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md)
-- [Arbejdsrutineoptager](../user-interface/task-recorder.md)
+- [Ressourcer til arbejdsrutineoptager](../user-interface/task-recorder.md)

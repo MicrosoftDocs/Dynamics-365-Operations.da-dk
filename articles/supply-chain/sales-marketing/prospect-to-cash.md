@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251344"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814069"
 ---
 # <a name="prospect-to-cash"></a>Kundeemne til kontanter
 
@@ -36,12 +36,12 @@ Du kan finde yderligere oplysninger om kundeemne til kontant-integration i denne
 
 I den aktuelle version indeholder Kundeemne til kontanter-løsning følgende typer direkte synkronisering:
 
-- [Vedligeholde konti i Sales og synkronisere dem direkte fra Sales til Supply Chain Management](accounts-template-mapping-direct.md)
-- [Vedligeholde produkter i Supply Chain Management og synkronisere dem direkte til Sales](products-template-mapping-direct.md)
-- [Vedligeholde kontakter i Sales og synkronisere dem direkte med kontakter eller debitorer i Supply Chain Management](contacts-template-mapping-direct.md)
-- [Synkronisere salgstilbud direkte fra Sales til Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
-- [Synkronisere salgsordrer direkte mellem Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-- [Synkronisere salgsfaktura direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
+- [Synkronisere konti direkte fra Sales med kunder i Supply Chain Management](accounts-template-mapping-direct.md)
+- [Synkronisere produkter direkte fra Supply Chain Management med produkter i Sales](products-template-mapping-direct.md)
+- [Synkronisere kontakter direkte fra Sales med kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
+- [Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+- [Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>Systemkrav til Supply Chain Management
 Kundeemne til kontant-integration understøttes iå følgende versioner:

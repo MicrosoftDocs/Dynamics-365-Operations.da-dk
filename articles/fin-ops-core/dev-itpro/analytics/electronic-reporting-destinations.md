@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181260"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771463"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -122,7 +122,7 @@ Hvis du indstiller **Aktiveret** til **Ja**, oprettes der et eksempel på output
 
 ### <a name="power-bi-destination"></a>Power BI-destination
 
-Indstil **Aktiveret** til **Ja** for at bruge din ER-konfiguration til at arrangere overførslen af data fra din forekomst til Microsoft Power BI-tjenester. De overførte filer gemmes på en forekomst af Microsoft SharePoint Server, der skal konfigureres til dette formål. Du kan finde flere oplysninger under [Bruge en konfiguration af elektronisk rapportering til at levere Power BI-data fra Finance](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Indstil **Aktiveret** til **Ja** for at bruge din ER-konfiguration til at arrangere overførslen af data fra din forekomst til Microsoft Power BI-tjenester. De overførte filer gemmes på en forekomst af Microsoft SharePoint Server, der skal konfigureres til dette formål. Du kan finde flere oplysninger under [Konfigurering af Elektronisk rapportering (ER) til at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Hvis du vil tilsidesætte standardindstillingen (dvs dialogboksen for en konfiguration), kan du oprette en reference til destinationen og en fildestination for den vigtigste outputkomponent og derefter deaktivere alle destinationer.
@@ -163,4 +163,4 @@ Forudsætningen er, at formatet skal være tilgængeligt i ER-konfigurationerne.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)

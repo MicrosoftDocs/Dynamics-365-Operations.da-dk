@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572782"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813816"
 ---
 # <a name="quality-management-processes"></a>Processer for kvalitetsstyring
 
@@ -90,14 +90,14 @@ Det er en god idé at definere en entydig dokumenttype for rettelser ved hjælp 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Aktivering af kvalitetsstyring](enable-quality-management.md)
+[Oversigt over kvalitetsstyring](enable-quality-management.md)
 
-[Aktivering af uoverensstemmelsesstyring](enable-nonconformance-management.md)
+[Håndtering af uoverensstemmelse](enable-nonconformance-management.md)
 
 [Lagerblokering](inventory-blocking.md)
 
 [Karantæneordrer](quarantine-orders.md)
 
-[Opret kvalitetsordrer (opgaveguide)](tasks/set-up-quality-orders.md)
+[Konfigurere kvalitetsordrer](tasks/set-up-quality-orders.md)
 
-[Kontrollere kvaliteten af varer (opgaveguide)](tasks/inspect-quality-goods.md)
+[Kontrollere kvaliteten af varer](tasks/inspect-quality-goods.md)

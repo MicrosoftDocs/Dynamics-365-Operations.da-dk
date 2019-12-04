@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 124609041163bbcaf1b86a6964fa3f56fcd8f755
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: d3cf2b82470887ee617704b72e47a53d299911e3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658754"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811525"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -112,15 +112,12 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 
 - Brug værktøjet **Vælg** til at vælge og ændre et elements egenskaber. Hvis du vil bruge dette værktøj, skal du vælge knappen **Vælg** på værktøjslinjen og derefter vælge det ønskede element. Elementets egenskabsvindue åbnes, og du kan redigere egenskaberne for det element. Du kan gentage processen for andre elementer, der kan tilpasses på siden. Bemærk, at nogle egenskaber for brugertilpasning muligvis ikke er tilgængelige i visse scenarier. Du kan f.eks. ikke låse et felt, der er obligatorisk.
 - Brug værktøjet **Skjul** til at skjule et element på siden. Hvis du vil bruge dette værktøj, skal du vælge knappen **Skjul** på værktøjslinjen og derefter vælge det element, du vil skjule. Når du bruger værktøjet **Skjul**, gøres alle elementer, der i øjeblikket er skjult, synlige, men vises i en nedtonet container. Du kan derefter gøre et element synligt ved at markere det. Hvis du vil se, hvordan siden vil se ud, når der skjules elementer, skal du skifte til et andet tilpasningsværktøj.
-
-    Du kan skjule obligatoriske felter og sektioner, der indeholder obligatoriske felter. Så kan du oprette en forenklet funktionsmåde, hvor obligatoriske felter ikke vises, hvis de har standardværdier, som udfyldes af forretningslogik. Skjulte obligatoriske felter bliver midlertidigt synlige, hvis de er tomme, når en bruger prøver at gemme siden.
-
-- Brug værktøjet **Tilføj et felt** for at føje et felt til din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj et felt** på værktøjslinjen, skal du først markere den gruppe eller det område, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til den gruppe eller det område, der er valgt. Vælg ét eller flere felter, som du vil tilføje, i dialogboksen, og vælg derefter **Indsæt**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
+- Brug værktøjet **Tilføj et felt** for at føje et felt til din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Opret og arbejd med brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj et felt** på værktøjslinjen, skal du først markere den gruppe eller det område, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til den gruppe eller det område, der er valgt. Vælg ét eller flere felter, som du vil tilføje, i dialogboksen, og vælg derefter **Indsæt**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
 - Brug værktøjet **Flyt** til at flytte et element til et andet sted inden i den aktuelle gruppe af elementer. Bemærk, at du ikke kan flytte et element uden for dets overordnede gruppe. Hvis du vil bruge dette værktøj, skal du vælge knappen **Flyt** på værktøjslinjen og derefter vælge det element, du vil flytte. Når du vælger et element, fastlægger appen de steder, hvor elementet kan flyttes hen. Disse steder kaldes *slipzoner*. Når du trækker elementet omkring i den aktuelle gruppe, vises hver slipzone som en farvet, fed linje ud for det område, hvor elementet kan slippes.
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra det ved at vælge felterne.
 - Brug værktøjet **Lås** til at markere et element som redigerbart eller ikke-redigerbart. Når du vælger knappen **Lås** på værktøjslinjen, vises alle elementer, der i øjeblikket ikke er redigerbare, i en nedtonet container. Du kan derefter gøre dem redigerbare igen. Bemærk, at nogle af felterne er obligatoriske og ikke kan gøres ikke-redigerbare. Der vises en hængelås ud for de pågældende felter.
-- Brug knappen **Tilføj en PowerApp** til at integrere en app, der er oprettet ved hjælp af Microsoft PowerApps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en PowerApps-app på en side, under [Integrere PowerApps](embed-power-apps.md).
+- Brug knappen **Tilføj en PowerApp** til at integrere en app, der er oprettet ved hjælp af Microsoft PowerApps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en PowerApps-app på en side, under [Integration af PowerApps-apps](embed-power-apps.md).
 - Brug værktøjet **Ryd** for at nulstille siden til dens installerede standardtilstand. Alle tilpasninger på den aktuelle side ryddes. Der er ingen fortrydelseshandling. Derfor skal du kun bruge dette værktøj, hvis du er sikker på, at du vil nulstille siden.
 - Brug værktøjet **Importér** til at indlæse en personlig tilpasning fra en fil, som du eller en anden tidligere har oprettet. Når du importerer tilpasninger for en side, kan du vælge, om de skal føjes til eller erstatte alle eksisterende tilpasninger af siden. Der er ingen fortrydelseshandling. Når du har importeret personlige tilpasninger, skal du derfor manuelt fjerne eller fortryde de ændringer, du ikke har brug for.
 - Brug værktøjet **Eksportér** til at gemme dine personlige indstillinger for siden i en fil. Du kan derefter dele dine tilpasninger med andre brugere. Disse brugere skal kun importere filen, der indeholder dine personlige indstillinger for siden.

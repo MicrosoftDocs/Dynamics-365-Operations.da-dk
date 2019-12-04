@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 76564c440d52f7eae4faa704cf9010c7754c3751
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 4e466e6b1bbec0915b6fdb9b86d3b5cbb45364ad
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536864"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771604"
 ---
 # <a name="analytical-workspaces"></a>Analytiske arbejdsområder
 [!include[banner](../includes/banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "2536864"
 - [Power BI-indhold til omkostningsstyring](cost-management-content-pack.md)
 - [Power BI-indhold til styring af kredit og inkasso](../../../finance/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-indhold til medarbejderudvikling](employee-development-PBI.md) 
-- [Power BI-indhold til økonomisk indsigt](financial-insights.md)
-- [Power BI-indhold til driftsregnskab](financial-performance-power-bi-content-pack.md)
-- [Power BI-indhold til Styring af anlægsaktiv](../../../finance/fixed-assets/Fixed-asset-management-workspace.md)
+- [Økonomisk indsigt](financial-insights.md)
+- [PowerBI.com-løsning til driftsregnskab](financial-performance-power-bi-content-pack.md)
+- [Arbejdsområde for styring af anlægsaktiver](../../../finance/fixed-assets/Fixed-asset-management-workspace.md)
 - [Power BI-indhold til Læring](learning-power-bi.md)
 - [Power BI-indhold til praksischef](practice-manager-power-bi.md)
 - [Power BI-indhold til Produktionsperformance](production-performance-power-bi.md)
 - [Power BI-indhold til Købsforbrugsanalyse](purchase-content-pack-for-power-bi.md) 
 - [Power BI indhold til Rekruttering](recruiting-analysis-power-bi-content-pack.md) 
 - [Power BI-indhold til Salgs og rentabilitetsperformance](sales-profitability-performance-content-pack.md)
-- [Power BI-indhold til Kreditorbetalinger](../../../finance/accounts-payable/Vendor-payments-workspace.md)
+- [Arbejdsområde for kreditorbetalinger](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-indhold til Lagerstedperformance](warehouse-power-bi-content.md)
 - [Power BI-indhold til Nøgletal for arbejdsstyrke](workforce-analysis-power-bi-content-pack.md)

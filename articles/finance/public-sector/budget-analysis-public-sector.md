@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a21241cf13e7fa4ba7c0ee57876b8cce6a4f1c2c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 24a51347cc4b7a80d9de1b71a20792422d05bada
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183515"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773606"
 ---
 # <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
 
@@ -34,7 +34,7 @@ Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist bogf
 
 I dette emne beskrives de budgetanalysefunktioner, som er tilgængelige for den offentlige sektor. 
 
-Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor](budgeting-public-sector.md). 
+Før du læser dette emne, bør du også læse [Overblik over budgettering i den offentlige sektor](budgeting-public-sector.md). 
 
 Du skal evt. angive følgende budgetteringsfunktioner for den offentlige sektor. Brug siden **Budgetanalyse** til at få vist bogførte indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Du kan få vist opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser. 
 

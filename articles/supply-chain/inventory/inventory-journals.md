@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c4a2696b015611f4430ad5dfa1c61c1c4f913a9
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c6774a41887e74bfdb1fa6a9221264b0c8454c70
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570788"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814346"
 ---
 # <a name="inventory-journals"></a>Lagerkladder
 
@@ -74,7 +74,7 @@ Produktionsindlagringskladder fungerer som varemodtagelseskladder, men bruges ti
 
 ### <a name="counting"></a>Optælling
 
-Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage de justeringer, der er nødvendige for at afstemme forskellene. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling (opgaveguide)](tasks/define-inventory-counting-processes.md).
+Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage de justeringer, der er nødvendige for at afstemme forskellene. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Mærkatoptælling
 

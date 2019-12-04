@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024223"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814599"
 ---
 # <a name="questionnaires"></a>Spørgeskemaer
 
@@ -44,17 +44,17 @@ Følgende tabel indeholder links til oplysninger om de centrale opgaver i spørg
 | Emne| Betegnelse|
 |------|------------|
 | [Design et spørgeskema](design-questionnaires.md)  | Denne artikel indeholder oplysninger om, hvordan du designer et spørgeskema. Designprocessen omfatter opsætning af forudsætninger, svar og spørgsmål og kombinerer dem derefter i et spørgeskema. |
-| [Distribuer og udfyld et spørgeskema](distribute-questionnaires.md)  | Denne artikel indeholder oplysninger om, hvordan du distribuerer et spørgeskema til svarpersoner, og hvordan spørgeskemaer udfyldes.                                                                       |
-| [Få vist og evaluer resultaterne af et spørgeskema](evaluate-questionnaire-results.md) | Denne artikel indeholder oplysninger om, hvordan resultaterne fra udfyldte spørgeskemaer vises og evalueres.                                                                                        |
+| [Udsende og planlægge spørgeskemaer](distribute-questionnaires.md)  | Denne artikel indeholder oplysninger om, hvordan du distribuerer et spørgeskema til svarpersoner, og hvordan spørgeskemaer udfyldes.                                                                       |
+| [Se og evaluer resultaterne af spørgeskema](evaluate-questionnaire-results.md) | Denne artikel indeholder oplysninger om, hvordan resultaterne fra udfyldte spørgeskemaer vises og evalueres.                                                                                        |
 
 
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Udforme spørgeskemaer](design-questionnaires.md)
+[Designe spørgeskemaer](design-questionnaires.md)
 
-[Distribution og udfyldning af et spørgeskema](distribute-questionnaires.md)
+[Udsende og planlægge spørgeskemaer](distribute-questionnaires.md)
 
-[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[Se og evaluere resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658804"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812643"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
 
@@ -84,7 +84,7 @@ Sådan ser noteanmærkningen ud i "boblen" i opgaveguiden.
 
 [![Visning af noteanmærkning i opgaveguide](./media/screen4.png)](./media/screen4.png)
 
--   **Infotrin**: Disse anmærkninger oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted i en formular &lt; **Arbejdsrutineoptager** &lt; **Tilføj infotrin**. Infotrin vises som et nummereret trin på sted, hvor du indsætter det, selvom intet blev registreret i brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når et infotrin er knyttet til et kontrolelement, peger opgaveguidens "boble" på kontrolelementet, når opgaveguiden afspilles.I Hjælp-ruden vises en infotrinanmærkning som et nummererede trin med den tekst, du har angivet. Brug infotrin til at forberede brugeren til de næste trin, til at beskrive de skridt, der skal udføres uden for programmet, eller at henvise til andre optagelser (selvom du ikke kan oprette links i anmærkningerne).
+-   **Infotrin**: Disse anmærkninger oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted i en formular &lt; **Arbejdsrutineoptager** &lt; **Tilføj infotrin**. Infotrin vises som et nummereret trin på sted, hvor du indsætter det, selvom intet blev registreret i brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når et infotrin er knyttet til et kontrolelement, peger opgaveguidens "boble" på kontrolelementet, når opgaveguiden afspilles.I Hjælp-ruden vises en infotrinanmærkning som et nummererede trin med den tekst, du har angivet. Brug infotrin til at forberede brugeren til de næste trin, til at beskrive de skridt, der skal udføres uden for programmet, eller at henvise til andre optagelser (selvom du ikke kan oprette links i anmærkningerne).
 
 **Fastlægge, hvor lang registreringen skal være**
 
@@ -97,7 +97,7 @@ Sådan ser noteanmærkningen ud i "boblen" i opgaveguiden.
 **Beslut, hvor i brugergrænsefladen en registrering starter** Siden, du arbejder på, når du begynder at registrere en opgaveregistrering påvirker, hvilken side opgaveguiden vises for.Hvis du f.eks. ønsker, at din opgaveregistrering skal vises i Hjælp-ruden, når en bruger klikker på Hjælp på siden Finansparametre, skal du starte registreringen på siden Finansparametre. **Gemme optagelser som .axtr-filer** Når du er færdig med at oprette eller redigere en opgaveregistrering, får du vist flere muligheder for, hvordan du vil downloade eller gemme registreringen. Du kan hente filen som en opgaveregistreringspakke (.axtr), hente den som en råfil med registreringer (.xml), hente den som et Word-dokument eller gemme filen i et LCS-bibliotek. Det er en god ide altid at gemme din opgaveregistrering som en pakkefil med opgaveregistrering (.axtr). Dette vil gøre det nemmere at vedligeholde filen, hvis procedurer eller anmærkninger skal ændres senere. Hvis du vil hente filen som et Word-dokument, kan du også gemme den som en pakkefile med opgaveregistrering.
 
 ## <a name="create-your-task-recording"></a>Oprette din opgaveregistrering
-Du kan finde en detaljeret gennemgang i [Sådan opretter du en opgaveregistrering](task-recorder.md).
+Du kan finde en detaljeret gennemgang i [Ressourcer til arbejdsrutineoptager](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiere og tilpasse Microsofts opgaveregistreringer
 Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til din egen Hjælp-dokumentation eller dit eget undervisningsmateriale. Følg nedenstående trin, når du vil hente en Microsoft-opgaveregistrering:
@@ -115,14 +115,14 @@ Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til di
 11. Vælg, hvordan du vil gemme Arbejdsrutineoptager.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Medtag dine opgaveregistreringer i Hjælp-ruden
-For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp, så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Du kan finde flere oplysninger i [Tilslut hjælpesystemet.](../../fin-ops/get-started/help-connect.md)
+For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp, så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Du kan finde flere oplysninger i [Tilslut Hjælp-systemet](../../fin-ops/get-started/help-connect.md).
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Oversigt over Hjælp](../../fin-ops/get-started/help-overview.md)
+[Hjælp-system](../../fin-ops/get-started/help-overview.md)
 
-[Forbinde Hjælp](../../fin-ops/get-started/help-connect.md)
+[Oprette forbindelse til Hjælp-systemet](../../fin-ops/get-started/help-connect.md)
 
 [Arbejdsrutineoptager](task-recorder.md)
 

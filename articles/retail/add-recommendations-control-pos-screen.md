@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e6f0b75c8d81a5ac6ec90020375aec39120d4406
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278123"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811210"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder
 
 [!include [banner](includes/banner.md)]
 
 
-I dette emne beskrives, hvordan du føjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 Retail. Hvis du ønsker yderligere oplysninger om produktanbefalinger, kan du læse [produktanbefalingerne i POS-dokumentation.](product.md)
+I dette emne beskrives, hvordan du føjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 Retail. Hvis du ønsker yderligere oplysninger om produktanbefalinger, kan du læse [produktanbefalingerne i POS-dokumentation](product.md).
 
 
 Du kan få vist produktanbefalinger på POS-enheden, når du bruger Microsoft Dynamics 365 Retail. For at få vist produktanbefalinger skal du føje et kontrolelement til transaktionsskærmen ved hjælp af skærmlayoutdesigneren. 
@@ -70,7 +70,7 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 
 3. Klik på **X** for at lukke og afslutte layoutdesigneren.
 4. I Dynamics 365 for Retail skal du gå til **Detail** &gt; **Detail-it** &gt; **Distributionsplaner**.
-5. Vælg**1090, kasseapparater** på listen.
+5. Vælg **1090, kasseapparater** på listen.
 6. Klik på **Kør nu**.
 
 
@@ -93,7 +93,7 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 8. Klik på **OK**. Den nye fane vises i knapmatricen.
 9. Klik på **X** for at lukke og afslutte layoutdesigneren.
 10. I Dynamics 365 for Retail skal du gå til **Detail** &gt; **Detail-it** &gt; **Distributionsplaner**.
-11. Vælg**1090, kasseapparater** på listen.
+11. Vælg **1090, kasseapparater** på listen.
 12. Klik på **Kør nu**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537826"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811666"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -82,7 +82,7 @@ Yderligere oplysninger finder du i vores [vejledning til bidragydere](https://do
 
 En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan åbne (afspille) en opgaveguide fra ruden Hjælp. Når du først klikker på en opgaveguide, viser ruden Hjælp de trinvise instruktioner til opgaven. Der er nu lokaliserede opgaveguider.
 
-Microsoft har leveret opgaveguidebiblioteker til versioner til og med december 2017 for Dynamics 365 for Finance and Operations. I afsnittet [Adgang til opgaveguider fra ruden Hjælp](help-overview.md#accessing-task-guides-from-the-help-pane) beskrives, hvordan du finder de korrekte opgaveguider til produktet.
+Microsoft har leveret opgaveguidebiblioteker til versioner til og med december 2017 for Dynamics 365 for Finance and Operations. I afsnittet [Hjælpesystem](help-overview.md#accessing-task-guides-from-the-help-pane) beskrives, hvordan du finder de korrekte opgaveguider til produktet.
 
 ![Opgaveguidens læsevisning](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ For at starte den automatiserede, interaktive oplevelse skal du klikke på **Sta
 > [!IMPORTANT]
 > De data, du indtaster, når du afspiller en opgaveguide, er faktiske. Hvis du er i et produktionsmiljø, indsættes dataene i det firma, du aktuelt bruger.
 
-Du kan bruge Arbejdsrutineoptager til at oprette dine egne brugerdefinerede opgaveguider. Du kan finde flere oplysninger under [Oprette dokumentation eller kursus ved hjælp af opgaveregistreringer](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+Du kan bruge Arbejdsrutineoptager til at oprette dine egne brugerdefinerede opgaveguider. Du kan finde flere oplysninger under [Opret dokumentation eller kursus med Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Hjælp i produkterne
 
@@ -144,13 +144,12 @@ Oversatte opgaveguider udgives i biblioteker med "Alle sprog" i titlen. Hvis du 
 
 Du kan oprette Hjælp for brugerne ved at oprette brugerdefinerede opgaveguider eller tilslutte dit eget websted til Hjælp-ruden. Der er flere oplysninger i:
 
-- [Sådan opretter du en opgaveregistrering, der kan bruges som dokumentation eller kursus](../../dev-itpro/user-interface/task-recorder.md).
+- [Ressourcer til Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md).
 - [Oprette brugerdefineret Hjælp (hvidbogen)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)
-- [Oprette dokumentation eller undervisning ved hjælp af opgaveregistreringer](../../dev-itpro/user-interface/task-recorder.md)
+- [Ressourcer til arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)
 
 Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for navnet, kræver, at du logger på med en konto, der er tilknyttet en serviceplan.
 

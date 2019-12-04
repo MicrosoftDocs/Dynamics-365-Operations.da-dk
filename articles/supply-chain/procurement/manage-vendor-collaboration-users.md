@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50ce332673e130dace38f596020973d37c34b566
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248951"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813494"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Administrere brugere af kreditorsamarbejde
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248951"
 
 Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde. 
 
-Grænsefladen for kreditorsamarbejde i Dynamics 365 Supply Chain Management viser oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne leverandører. Du kan oprette nye kontakter for kreditorsamarbejde og anmode om, at nye brugere forsynes, hvis du arbejder som en ekstern leverandør med de **Kreditoradministrator (ekstern)** som sikkerhedsrolle eller tilsvarende tilladelser. Du kan også udføre disse opgaver, hvis du arbejder som en professionel indkøber. I dette emne vedrører denne rolle en professionel indkøber, der arbejder i virksomheden, som ejer forekomsten af Supply Chain Management. Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er ekstern leverandør, under [Leverandør med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Grænsefladen for kreditorsamarbejde i Dynamics 365 Supply Chain Management viser oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne leverandører. Du kan oprette nye kontakter for kreditorsamarbejde og anmode om, at nye brugere forsynes, hvis du arbejder som en ekstern leverandør med de **Kreditoradministrator (ekstern)** som sikkerhedsrolle eller tilsvarende tilladelser. Du kan også udføre disse opgaver, hvis du arbejder som en professionel indkøber. I dette emne vedrører denne rolle en professionel indkøber, der arbejder i virksomheden, som ejer forekomsten af Supply Chain Management. Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er ekstern leverandør, under [Leverandørsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er professionel indkøber, under [Leverandørsamarbejde med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 

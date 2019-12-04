@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547095"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813587"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller
 
@@ -37,7 +37,7 @@ Beregninger kan bruges til aritmetiske eller logiske operationer. De supplerer u
 ## <a name="what-is-a-calculation"></a>Hvad er en beregning?
 En beregning er et element, som du kan bruge i en produktkonfigurationsmodel. Beregninger supplerer begrænsninger ved at give dig mulighed for at bruge decimaltal til beregne værdier, når du konfigurerer et produkt. Derudover har beregninger et større udvalg af tilgængelige operatorer end begrænsninger har.  
 
-På samme måde som en begrænsning er en beregning knyttet til en bestemt komponent i en produktkonfigurationsmodel, og den ikke kan genbruges af eller deles med en anden komponent. En vigtig forskel mellem beregninger og begrænsninger er, at beregningerne er imperative (envejs), hvorimod begrænsninger er deklarative (tovejs). Få yderligere oplysninger om begrænsninger på [Udtryksbegrænsninger og tabelbegrænsninger](expression-constraints-table-constraints-product-configuration-models.md).  
+På samme måde som en begrænsning er en beregning knyttet til en bestemt komponent i en produktkonfigurationsmodel, og den ikke kan genbruges af eller deles med en anden komponent. En vigtig forskel mellem beregninger og begrænsninger er, at beregningerne er imperative (envejs), hvorimod begrænsninger er deklarative (tovejs). Få yderligere oplysninger om begrænsninger under [Udtryksbegrænsninger og tabelbegrænsninger i modeller for produktkonfiguration](expression-constraints-table-constraints-product-configuration-models.md).  
 
 En beregning består af en målattribut og et beregningsudtryk.
 
@@ -88,7 +88,7 @@ Nr. De værdier, du angiver, når du konfigurerer et produkt, er de værdier, de
 Hvis du fjerner en inputværdi i en beregning, fjernes også værdien af målattributten.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Hvorfor får jeg en fejlmeddelelse, der siger, at min model er i konflikt?
-Denne meddelelse vises, når en beregning indeholder en fejl, eller når der findes en konflikt i en eller flere begrænsninger. Få yderligere oplysninger om konflikter i begrænsninger på [Udtryksbegrænsninger og tabelbegrænsninger](expression-constraints-table-constraints-product-configuration-models.md). Her er nogle situationer, hvor der kan opstå fejl i beregningerne:
+Denne meddelelse vises, når en beregning indeholder en fejl, eller når der findes en konflikt i en eller flere begrænsninger. Få yderligere oplysninger om konflikter i begrænsninger under [Udtryksbegrænsninger og tabelbegrænsninger i modeller for produktkonfiguration](expression-constraints-table-constraints-product-configuration-models.md). Her er nogle situationer, hvor der kan opstå fejl i beregningerne:
 
 -   En værdi divideres med 0 (nul).
 -   Der findes en konflikt mellem følgende to elementer:

@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0b1cebfd74e3bb64e2a8743e74ec2c26481ef87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 47e79eb12e8f4563595507b0edafba7e056e476c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183509"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770250"
 ---
 # <a name="general-ledger-in-the-public-sector-overview"></a>Oversigt over finans i den offentlige sektor
 
@@ -61,7 +61,7 @@ Du kan bruge afledte finansielle hierarkier til at indsamle og analysere data fo
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Finans](../general-ledger/general-ledger.md)
+[Oversigt over finans og økonomirapportering](../general-ledger/general-ledger.md)
 
 
 

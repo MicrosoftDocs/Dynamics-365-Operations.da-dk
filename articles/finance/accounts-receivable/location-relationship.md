@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a4945f47c86d490f40a6b00cb823e6a6005e0ee4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e38d0bd75ad865b7885182f798beb43551576beb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550503"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770890"
 ---
 # <a name="add-location-and-party-relationship-types"></a>Tilføje lokations- og partsrelationstyper 
 
@@ -41,7 +41,7 @@ Der er to måder at tilføje nye lokationsroller til adresse- og kontaktoplysnin
 
     1.  Opret en udvidelse til fastteksten **LogisticsLocationRoleType**, og tilføj den nye rolle i filtypenavnet. 
   
-        ![LogisticsLocationRoleType](media/Logistics.PNG)
+        ![Udvidelse til fasttekst LogisticsLocationRoleType](media/Logistics.PNG)
 
     2. Opret en ny ressourcefil til den nye rolle, og tildel derefter en værdi til dens egenskaber.
      
@@ -69,7 +69,7 @@ Der findes to måder at tilføje en ny relationstype på:
 
     2. Opret en initialisering for denne nye type. Du kan finde flere eksempler i kernekoden, et af dem er **DirRelationshipTypeChildInitialize**. Dette er en initialiseringsklasse for partsrelationstypen "Underordnet". Du kan starte din initialisering ved at kopiere og indsætte denne kode og derefter opdatere de fremhævede områder.
     
-    ![DirRelationshipChild](media/DirRelationship.PNG)
+    ![DirRelationshipChild-initialisering](media/DirRelationship.PNG)
 
     3.  For at teste udfyldningen af den nye relationstype kan du oprette en klasse, der kan køres, og kalde DirDataPopulation::insertDirRelationshipTypes() i Main(). Den nye relationstype skulle nu vises i **DirRelationshipTypeTable**, og den nye relationstype er tilgængelig på siden **Relationstyper**.
 

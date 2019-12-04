@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174797"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773639"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementere brugerdefinerede felter for Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS og Android
 
@@ -321,13 +321,9 @@ Nedenfor vises et skærmbillede fra mobilappen af en bruger, der ser på en time
 
 ![Kommandoen Vis flere oplysninger](media/show-more.png)
 
-
-
 Nedenfor vises et skærmbillede fra mobilappen, der viser sektionen "Flere" på en timeseddel. Der er føjet et brugerdefineret felt med navnet "Udnyttelsesgraden for denne timeseddel (beregnet brugerdefineret felt)" til timesedlens hovedsektion. Der er angivet en skrivebeskyttet værdi, "0.667", i det brugerdefinerede felt.
 
 ![Sektionen Flere](media/more-section.jpg)
-
-
 
 ### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a>Udvide tabellen TSTimesheetTable, så den har et brugerdefineret felt
 

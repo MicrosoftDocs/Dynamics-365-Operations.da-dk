@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7c8831203ae30991ff8acf1926aafc2d1839aeb2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c91a3b7e28bc55046ff6eeb37a5fddc8637aa230
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251264"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773305"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management
 
@@ -40,7 +40,7 @@ Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkr
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
-For at få adgang til de tilgængelige skabeloner skal du åbne [PowerApps Administration](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
+For at få adgang til de tilgængelige skabeloner skal du åbne [Power Apps Administration](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
 
 Følgende skabeloner og underliggende opgaver bruges til at køre synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management.
 

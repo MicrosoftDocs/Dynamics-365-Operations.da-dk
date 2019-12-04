@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13744df950040056ba03a3847d84f93e266ea6c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181444"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771300"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Designe konfigurationer til elektronisk rapportering for at udfylde PDF-skabeloner
 
@@ -46,7 +46,7 @@ Før du går i gang, skal du have en af følgende adgangstyper, afhængigt af hv
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-Du skal også udføre [Oprette en konfigurationsudbyder og markere den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md)-proceduren.
+Du skal også fuldføre proceduren [Opret konfigurationsudbydere og marker dem som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 Til sidst skal du hente følgende filer fra [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
 
@@ -300,5 +300,5 @@ I følgende illustration vises et eksempel på en anden side i den rapport, der 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Designe en ER-konfiguration til generering af rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md)
-- [Designe ER-konfigurationer til at generere rapporter i Microsoft WORD-format](tasks/er-design-configuration-word-2016-11.md)
+- [Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)](tasks/er-design-reports-openxml-2016-11.md)
+- [Designe ER-konfigurationer til at generere rapporter i Word-format](tasks/er-design-configuration-word-2016-11.md)

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9475a7fbe40d7feb60c23e0d7164222469dffa75
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 43989f95764a60dc7f5662ef74c005c5fddaa275
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552316"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813725"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Varedisponering for lokalitetsdisponering, lagersted er ikke obligatorisk
 
@@ -51,15 +51,15 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+[Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
 
-[Overordnet planlægning – lokalitetsdisponering, lagersted er obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
+[Varedisponering for lokalitets- og lagerdisponering, obligatorisk lagersted](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Overordnet planlægning – lokations- og lagerdisponering, lagersted er ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Varedisponering for lokalitetsdisponering, obligatorisk lagersted](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Overordnet planlægning – lokations- og lagerdisponering, lagersted er obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Varedisponering for lokalitetsdisponering, lagersted ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Varedisponering – Sådan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
+[Bestemme styklisteversionen](master-plan-bom-version-determined.md)
 
 
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653527"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815151"
 ---
 # <a name="demand-forecasting-overview"></a>Oversigt over behovsprognose
 
@@ -78,11 +78,11 @@ Behovsprognoser er et værktøj, der hjælper kunderne i produktionsbranchen med
 
 [Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
 
-[Foretage manuelle reguleringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
+[Foretage manuelle justeringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
-[Godkende den justerede prognose](authorize-adjusted-forecast.md)
+[Autorisere en justeret prognose](authorize-adjusted-forecast.md)
 
-[Overvågning af prognosenøjagtighed](monitor-forecast-accuracy.md)
+[Overvåge prognosenøjagtighed](monitor-forecast-accuracy.md)
 
 [Fjerne afvigende fra historiktransaktionsdata, når du beregner en efterspørgselsprognose](remove-historical-outliers-calculating-demand-forecast.md)
 

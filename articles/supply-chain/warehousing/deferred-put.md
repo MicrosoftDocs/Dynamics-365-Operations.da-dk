@@ -3,7 +3,7 @@ title: Udskudt behandling af lagerstedsarbejde
 description: I dette emne beskrives de funktioner, der gør udskudt behandling af lagerstedets læg på lager-handlinger tilgængelig i Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026909"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815782"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Udskudt behandling af lagerstedsarbejde
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026909"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 I dette emne beskrives de funktioner, der gør udskudt behandling af lagerstedets læg på lager-handlinger tilgængelig i Dynamics 365 Supply Chain Management.
-
 
 Med den udskudte behandlingsfunktion kan lagermedarbejderne fortsætte med at udføre andet arbejde, mens læg på lager-operationen behandles i baggrunden. Udskudt behandling er nyttig, når mange arbejdslinjer skal behandles, og arbejderen kan lade dette arbejde blive behandlet asynkront. Det er også nyttigt, når serveren kan have ad hoc eller ikke-planlagte stigninger i behandlingstiden, og den øgede behandlingstid kan påvirke brugerens produktivitet.
 
@@ -50,6 +49,8 @@ Politikker konfigureres på siden **Politikker for arbejdsbehandling**. I følge
 | Arbejdsbehandlingsmetode          | Den metode, der bruges til at behandle arbejdslinjen. Hvis metoden er indstillet til **Øjeblikkelig**, ligner funktionsmåden den, der bruges, når ingen databehandlingspolitikker bruges til at behandle linjen. Hvis metoden er indstillet til **Udskudt**, bruges udskudt behandling, der bruger batchstrukturen. |
 | Tærskel for udskudt behandling   | En værdi på **0** (nul) angiver, at der ikke er en tærskel. I dette tilfælde bruges udskudt behandling, hvis den kan bruges. Hvis den specifikke tærskelberegning er under tærsklen, anvendes metoden Øjeblikkelig. Ellers bruges den udskudte metode, hvis den kan bruges. For salgs- og overførselsrelateret arbejde beregnes tærsklen som antallet af tilknyttede kildelastlinjer, der behandles for arbejdet. For genopfyldningsarbejde beregnes tærsklen som antallet af arbejdslinjer, der genopfyldes af arbejdet. Ved at sætte en tærskel på for eksempel **5** for salg, vil mindre arbejde, der har færre end fem oprindelige kildebelastningslinjer, ikke bruge udskudt behandling, men større arbejde vil bruge den. Tærsklen har kun virkning, hvis arbejdsbehandlingsmetoden er indstillet til **Udskudt.** |
 | Batchgruppe for udskudt behandling |Den batchgruppe, der bruges til behandling. |
+
+Ved udskudt put-behandling understøttes følgende typer af arbejdsordre: salgsordre, problem med overførsel af ordre og genopfyldning.
 
 ## <a name="assigning-the-work-creation-policy"></a>Tildeling af politikken for oprettelse af arbejde
 
@@ -99,7 +100,7 @@ Der er flere scenarier, hvor udskudt læg på lager-behandling ikke anvendes, se
 - Manuel færdiggørelse af arbejdet anvendes.
 - Arbejdet fuldføres automatisk.
 - Der bruges revisionsskabeloner.
-- Arbejdet bruger containere.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Overvågning af udskudte behandlingsopgaver fra arbejdsområdet Overvågning af udgående arbejde
 

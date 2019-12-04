@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743181"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813103"
 ---
 # <a name="set-up-disposition-codes"></a>Konfigurer dispositionskoder 
 
@@ -32,7 +32,7 @@ ms.locfileid: "1743181"
 
 Du kan oprette dispositionskoder for at angive, hvordan du kan behandle en vare, der er returneret af en debitor. Du kan f.eks. oprette en dispositionskode, der hedder **Reparation og returnering**, til at angive, at den returnerede vare skal repareres og derefter returneres til debitoren. Du kan finde flere eksempler på dispositionskoder, der typisk bruges til varer, der returneres af debitorer, under [Angive, hvordan returvarer skal kasseres](specify-how-to-dispose-of-returned-items.md).
 
-Du kan også angive en årsagskode til at forklare, hvorfor en vare blev returneret. Du kan finde flere oplysninger om, hvordan du konfigurerer årsagskoder, i [Konfigurere årsagskoder for returnering](set-up-return-reason-code.md).
+Du kan også angive en årsagskode til at forklare, hvorfor en vare blev returneret. Du kan finde flere oplysninger om, hvordan du konfigurerer årsagskoder, i [Konfigurer årsagskoder for returnering](set-up-return-reason-code.md).
 
 1.  Klik på **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Dispositionskoder**.
 
@@ -46,7 +46,7 @@ Du kan også angive en årsagskode til at forklare, hvorfor en vare blev returne
 
 ## <a name="see-also"></a>Se også
 
-[Dispositionskoder og returårsagskoder](disposition-and-return-reason-codes.md)
+[Oversigt over returneringer fra kunder](disposition-and-return-reason-codes.md)
 
 [Dispositionskoder (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

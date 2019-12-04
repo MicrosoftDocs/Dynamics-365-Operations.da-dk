@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2e44770af4a30f539e56d38b21c897cacd2707e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025765"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812333"
 ---
 # <a name="call-center-sales-functionality"></a>Funktionalitet til callcenter-salg
 
@@ -44,17 +44,17 @@ Denne side indeholder links til relevant dokumentation, der er relateret til ins
 
 ## <a name="configure-the-call-center"></a>Konfigurere callcenteret
 
-[Konfigurere indstillinger for ordrebehandling](set-up-order-processing-options.md)
+[Konfigurere callcenter-kanaler](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
 
-[Konfigurere advarsler om svindel](set-up-fraud-alerts.md)
+[Konfigurere og arbejde med advarsler om svindel i callcentre](set-up-fraud-alerts.md)
 
-[Manuelle ordrer på hold](work-with-order-holds.md)
+[Konfigurere og arbejde med callcenter-ordrer på hold](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
 
-[Betalingsmetoder i et callcenter](work-with-payments.md)
+[Betalingsmetoder i callcentre](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurere leveringsmetoder
 
@@ -64,8 +64,8 @@ Denne side indeholder links til relevant dokumentation, der er relateret til ins
 
 [Callcenter-kataloger](call-center-catalogs.md)
 
-[Konfigurere RFM-analyse](set-up-rfm-analysis.md)
+[Konfigurere RFM-analyse (Recency, Frekvens og Monetær)](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
 
-[Oprette et kontinuitetsprogram for et callcenter](set-up-continuity-program.md)
+[Oprette kontinuitetsprogrammer for callcentre](set-up-continuity-program.md)

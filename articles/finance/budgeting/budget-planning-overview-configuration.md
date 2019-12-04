@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce94f3bbb988640bc53ca2170c7ed54c6c01c18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5a33ced073394f0f3aa1b0b2e177e4608ca5bcf6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177012"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772024"
 ---
 # <a name="budget-planning-overview"></a>Budgetplanlægningsoversigt
 
@@ -155,7 +155,8 @@ Til eksempelskemaet kan du oprette kolonner til PY-salg, kontrakter og prognoses
 
 Du kan også angive, om hvert layoutelement (kolonne) kan redigeres, og om det er tilgængeligt i en regnearksskabelon, der er oprettet for dette layout. Til eksempelskemaet kan budgetkolonner redigeres i det layout, der bruges til stadiet Estimat, hvorimod kolonnerne PY-salg og kontrakter er skrivebeskyttet.
 
-[!Note] Som standard vil du være begrænset til 36 kolonner, medmindre du udvider budgetplanlægningen med trinnene i [Udvide budgetplanlægningslayout](./extending-budget-planning-layout.md).
+> [!NOTE] 
+> Som standard vil du være begrænset til 36 kolonner, medmindre du udvider budgetplanlægningen med trinnene i [Udvide budgetplanlægningslayout](./extending-budget-planning-layout.md).
 
 ### <a name="templates"></a>Skabeloner
 

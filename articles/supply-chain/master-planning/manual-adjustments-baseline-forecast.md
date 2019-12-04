@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250708"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815128"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foretage manuelle justeringer af prognosegrundlaget
 
@@ -66,7 +66,7 @@ Siden **Detaljer om behovsprognose** side viser følgende oplysninger i grafisk 
 -   De nye behovsprognoseværdier og de beløb, de justeres for manuelt.
 -   Konfidensintervallet for prognoseværdierne.
 -   Den prognosemodel, der blev brugt til at oprette prognosen. Hvis du får vist aggregerede data, kan du se listen over alle de metoder, der blev brugt til den aggregerede tidsserie.
--   Nøjagtigheden af den interne model (MAPE). Du kan få flere oplysninger om prognosenøjagtighed under [Overvåge prognosenøjagtighed](monitor-forecast-accuracy.md).
+-   Nøjagtigheden af den interne model (MAPE). Du kan få flere oplysninger om prognosenøjagtighed under [Overvåg prognosenøjagtighed](monitor-forecast-accuracy.md).
 
 **Bemærkninger:**
 
@@ -78,7 +78,7 @@ Du kan også foretage manuelle justeringer af prognosen på siden **Detaljer om 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Overvågning af prognosenøjagtighed](monitor-forecast-accuracy.md)
+[Overvåge prognosenøjagtighed](monitor-forecast-accuracy.md)
 
 [Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
 

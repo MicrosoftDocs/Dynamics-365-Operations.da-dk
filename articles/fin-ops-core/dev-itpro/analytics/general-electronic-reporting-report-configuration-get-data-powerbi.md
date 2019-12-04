@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181904"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770017"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering (ER) for at trække data ind i Power BI
 
@@ -184,7 +184,7 @@ Klik på knappen **Indstillinger** til den nye destinationspost. I **Indstilling
     [![Opdateret kort](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>Få adgang til Power BI-rapport i Finance
-Konfigurer integrationen med Power BI. Du kan finde flere oplysninger under [Konfiguration af Power BI til arbejdsområder](configure-power-bi-integration.md).
+Konfigurer integrationen med Power BI. Du kan finde flere oplysninger under [Konfigurer Power BI til arbejdsområder](configure-power-bi-integration.md).
 
 1. På siden **Elektronisk rapportering** i arbejdsområdet, der understøtter Power BI-integration (**Virksomhedsadministration** &gt; **Arbejdsområder** &gt; **Arbejdsområde for elektronisk rapportering**) skal du klikke på **Indstillinger** &gt; **Åbn rapportkatalog**.
 2. Vælg den **Import- og eksportoplysninger** Power BI-rapport, du har oprettet, for at få vist rapporten som et handlingselement på den valgte side.
@@ -194,6 +194,6 @@ Konfigurer integrationen med Power BI. Du kan finde flere oplysninger under [Kon
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Destinationer for elektronisk rapportering](electronic-reporting-destinations.md)
+[Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)

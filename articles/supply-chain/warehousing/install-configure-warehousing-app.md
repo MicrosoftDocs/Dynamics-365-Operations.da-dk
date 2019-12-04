@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548962"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814944"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Oversigt over installation og konfiguration af appen Lagersted
 
@@ -62,15 +62,32 @@ For at aktivere appen til at kommunikere med en bestemt Supply Chain Management-
 
 1.  Åbn en webbrowser, og gå til <https://portal.azure.com>.
 2.  Angiv brugernavnet og adgangskoden for den bruger, der har adgang til Azure abonnementet.
-3.  Klik i venstre navigationsrude i Azure Portal på **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+3.  Klik på **Azure Active Directory** i venstre navigationsrude i Azure-portalen.
+
+    [![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+
 4.  Sørg for, at Active Directory-forekomsten er den, der bruges af Supply Chain Management.
-5.  Klik på **App registreringer** på listen. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+5.  Klik på **App registreringer** på listen. 
+
+    [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+
 6.  I den øverste rude skal du klikke på **Ny registrering**. Guiden **Registrer en applikation** starter.
-7.  Angiv et navn til applikationen, og vælg **Kun konti i denne organisations bibliotek**. Klik på **Tilmeld**.  [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
-8.  Den nye appregistrering åbnes. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+7.  Angiv et navn til applikationen, og vælg **Kun konti i denne organisations bibliotek**. Klik på **Tilmeld**.  
+
+    [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+
+8.  Den nye appregistrering åbnes. 
+
+    [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+
 9.  Husk **program-id'et**, du skal bruge det senere. **Program-Id'et** refereres senere til som **klient-id'et**.
-10. Klik på **Certifikat og hemmeligheder** i ruden **Administrer**. Klik på **Ny klienthemmelighed**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
-11. Opret en nøgle ved at indtaste en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**. Klik på **Tilføj**, og kopier nøglen. Denne nøgle vil senere blive kaldt for **Hemmelighed for klient**. [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
+10. Klik på **Certifikat og hemmeligheder** i ruden **Administrer**. Klik på **Ny klienthemmelighed**. 
+
+    [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+
+11. Opret en nøgle ved at indtaste en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**. Klik på **Tilføj**, og kopier nøglen. Denne nøgle vil senere blive kaldt for **Hemmelighed for klient**. 
+
+    [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opret og konfigurer en brugerkonto i Supply Chain Management
 For at aktivere Supply Chain Management til at bruge din Azure AD-applikation skal du fuldføre følgende konfigurationstrin:
@@ -78,28 +95,47 @@ For at aktivere Supply Chain Management til at bruge din Azure AD-applikation sk
 1.  Opret en bruger, der svarer til lagerstedsappens brugerlegitimationsoplysninger.
     1.  Gå til **Systemadministration** &gt; **Generelt** &gt; **Brugere**.
     2.  Opret en ny bruger.
-    3.  Tildel Mobilenhedsbruger for lagersted, som vist på følgende skærmbillede. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
+    3.  Tildel Mobilenhedsbruger for lagersted, som vist på følgende skærmbillede. 
+    
+        [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Knyt din Azure Active Directory-applikation til brugeren af lagerstedsappen.
     1.  I Supply Chain Management skal du gå til **Systemadministration** &gt; **Opsætning** &gt; **Azure Active Directory-programmer**.
     2.  Opet en ny linje.
-    3.  Angiv **Klient-ID** (fra det sidste afsnit), giv det et navn, og vælg den bruger, der er oprettet tidligere. Vi anbefaler, at du mærker alle dine enheder, så du nemt kan fjerne deres adgang til Supply Chain Management fra denne side i tilfælde af, at du mister dem. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+    3.  Angiv **Klient-ID** (fra det sidste afsnit), giv det et navn, og vælg den bruger, der er oprettet tidligere. Vi anbefaler, at du mærker alle dine enheder, så du nemt kan fjerne deres adgang til Supply Chain Management fra denne side i tilfælde af, at du mister dem. 
+    
+        [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
 ## <a name="configure-the-application"></a>Konfigurere applikationen
 Du skal konfigurere appen på enheden at oprette forbindelse til Supply Chain Management-serveren via Azure AD-applikationen. Dette gøres ved at gennemføre følgende trin.
 
 1.  I appen skal du gå til **Forbindelsesindstillinger**.
-2.  Ryd feltet **Demotilstand**. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
-3.  Angiv følgende oplysninger: 
-    + **Azure Active Directory klient-id** - Brug klient-id'et fra trin 9 i "Oprette en webtjenesteapplikation i Active Directory". 
-    + **Azure Active Directory-klienthemmelighed** - Brug klienthemmeligheden fra trin 11 i "Oprette en webtjenesteapplikation i Active Directory". 
-    + **Azure Active Directory-ressource** - Azure AD Directory-ressource viser URL-adressen til Supply Chain Management-roden. **Bemærk**: Afslut ikke dette felt med en skråstreg (/). 
-    + **Azure Active Directory-lejer** - Azure AD Directory-lejeren bruges sammen med Supply Chain Management-serveren: `https://login.windows.net/your-AD-tenant-ID`. F.eks.: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
-    <br>**Bemærk**: Afslut ikke dette felt med en skråstreg (/). 
-    + **Firma** - Angiv den juridiske enhed i Supply Chain Management, som applikationen skal oprette forbindelse til. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  Vælg knappen **Tilbage** i applikationens øverste venstre hjørne. Applikationen opretter nu forbindelse til din Supply Chain Management-server, og logonskærmen for lagermedarbejderen vises. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+2.  Ryd feltet **Demotilstand**. <br>
 
-Du kan finde oplysninger om, hvordan du konfigurerer lagerstedsappen til at scanne stregkoder ved hjælp af et kamera på en mobilenhed, i [Scanne stregkoder ved hjælp af et kamera i Dynamics 365 for Finance and Operations – Lager](scan-bar-codes-using-a-camera.md)
+    [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+
+3.  Angiv følgende oplysninger: 
+    + **Azure Active Directory-klient-id** - Brug klient-id'et fra trin 9 i "Oprette en webtjenesteapplikation i Active Directory". 
+    + **Azure Active Directory-klienthemmelighed** - Brug klienthemmeligheden fra trin 11 i "Oprette en webtjenesteapplikation i Active Directory". 
+    + **Azure Active Directory-ressource** - Azure AD Directory-ressource viser URL-adressen til Supply Chain Management-roden. 
+    
+        > [!NOTE]
+        > Afslut ikke dette felt med en skråstreg (/). 
+
+    + **Azure Active Directory-lejer** - Azure AD Directory-lejeren bruges sammen med Supply Chain Management-serveren: `https://login.windows.net/your-AD-tenant-ID`. For eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    
+        > [!NOTE]
+        > Afslut ikke dette felt med en skråstreg (/). 
+    
+    + **Firma** - Angiv den juridiske enhed i Supply Chain Management, som applikationen skal oprette forbindelse til. <br>
+    
+    [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+
+4.  Vælg knappen **Tilbage** i applikationens øverste venstre hjørne. Applikationen opretter nu forbindelse til din Supply Chain Management-server, og logonskærmen for lagermedarbejderen vises.
+
+    [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+Du kan finde oplysninger om, hvordan du konfigurerer lagerstedsappen til at scanne stregkoder ved hjælp af et kamera på en mobilenhed, i [Scanne stregkoder ved hjælp af et kamera i appen Dynamics 365 for Finance and Operations - Lagersted](scan-bar-codes-using-a-camera.md).
 
 ## <a name="remove-access-for-a-device"></a>Fjerne adgang til en enhed
 I tilfælde af en mistet eller beskadiget enhed skal du fjerne adgangen til Supply Chain Management for enheden. De følgende trin beskriver den anbefalede proces til at fjerne adgangen.

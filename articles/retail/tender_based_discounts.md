@@ -3,7 +3,7 @@ title: Betalingsmiddelbaserede rabatter
 description: Dette emne giver en oversigt over funktioner, som detailhandlere kan bruge til at konfigurere rabatter for bestemte betalingsmiddeltyper.
 author: bebeale
 manager: AnnBe
-ms.date: 10/25/19
+ms.date: 10/30/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 245ee647a3b86303df046fda5bba406c7a2485b5
-ms.sourcegitcommit: b0c176d5d24939307c6d0a6dbe7656007ca53710
+ms.openlocfilehash: ed17b43ac16ebcd310716271b84bbbd904a3253a
+ms.sourcegitcommit: dc31a0f0d9216aa05be76046ac7410702b20706f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "2673559"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2692217"
 ---
 # <a name="tender-based-discounts"></a>Betalingsmiddelbaserede rabatter
 
@@ -40,6 +40,7 @@ I Microsoft Dynamics 365 Retail kan detailhandlere konfigurere en rabatprocent, 
 Betalingsmiddelbaserede rabatter konkurrerer ikke med varebaserede rabatter, f.eks. periodiske eller manuelle rabatter. De er altid sammensat over varerabatterne. Selv hvis der anvendes en eksklusiv periodisk rabat på en vare, anvendes den betalingsmiddelbaserede rabat stadig oven i den eksklusive periodiske rabat. På samme måde, hvis der anvendes en rabatgrænse på transaktionen, og den betalingsmiddelbaserede rabat reducerer totalen ned under grænsen, anvendes grænserabatten stadig på transaktionen.
 
 Selvom betalingsmiddelbaserede rabatter reducerer subtotalen for transaktionen, påvirkes automatiske gebyrer, der gælder for transaktionen, ikke. Hvis f.eks. leveringsgebyr beregnes som kr. 5, fordi subtotalen var mere end kr. 100, og den betalingsmiddelbaserede rabat reducerer beløbet, så det er mindre end kr. 100, vil leveringsgebyrerne stadig være kr. 5 for ordren.
+
 
 > [!NOTE]
 > Betalingsmiddelbaserede rabatter fordeles forholdsmæssigt på de kvalificerede salgslinjer og reducerer beløbet før moms for de enkelte linjers. Hvis der er konfigureret flere betalingsmiddelbaserede rabatter for en betalingsmiddeltype (f.eks. kontant), er det kun den bedste betalingsmiddelbaserede rabat, der anvendes.
@@ -57,6 +58,7 @@ Ved kortbetalinger kan detailhandlerne angive den betalingsbaserede rabat på en
 
 For at undgå denne situation, hvis en kunde betaler med et kreditkort, får kassereren vist en dialogboks med en liste over kreditkort, der giver kunden yderligere besparelser. Kassereren kan derefter spørge, om kunden ønsker at bruge et af de foretrukne kort til at opnå en ekstra rabat. Hvis kassereren bruger et foretrukket kort, anvendes den betalingsmiddelbaserede rabat på transaktionen, og det reducerede beløb vises på betalingsskærmen. Godkendelsen vil være for det reducerede beløb. Hvis kunden indsætter et kort, der er forskelligt fra det kort, som kassereren har valgt, vises en fejlmeddelelse, og godkendelsen afvises.
 
+
 ## <a name="call-center-user-experience"></a>Brugeroplevelse for callcenter
 
 Når brugeren vælger **Afsluttet** under en callcenter-ordre, vises skærmbilledet **Totaler**. I første omgang omfatter totalerne på dette skærmbillede ikke betalingsmiddelbaserede rabatter, da betalingsmetoden endnu ikke er valgt. Hvis brugeren vælger den betalingsmetode, som den betalingsmiddelbaserede rabat er konfigureret for, på skærmbilledet **Tilføj betaling**, reguleres betalingsbeløbet automatisk, så det afspejler rabatbeløbet. Ligesom kunden ved POS kan callcenter-kunden bestemme, om den fulde betaling eller en delbetaling skal foretages. På basis af det beløb, der betales, anvendes den betalingsmiddelbaserede rabat på salgsordren.
@@ -66,7 +68,7 @@ Når brugeren vælger **Afsluttet** under en callcenter-ordre, vises skærmbille
 
 ## <a name="exclude-items-from-discounts"></a>Udelade varer fra rabatter
 
-Detailhandlere vælger ofte at udelukke nogle produkter, f.eks. nye varer eller eftertragtede varer, fra rabatter. Det kan dog stadig være nyttigt at anvende betalingsmiddelbaserede rabatter. En detailhandler konfigurerer f.eks. Detail, så den ikke tillader varebaserede rabatter eller manuelle rabatter. Men hvis kunden betaler ved hjælp af det foretrukne betalingsmiddel, anvender Detail dog stadig den betalingsmiddelbaserede rabat. For at konfigurere Detail på denne måde skal detailhandlere deaktivere **Undgå alle rabatter** og **Undgå betalingsmiddelbaserede rabatter** og aktivere indstillingerne **Undgå detailrabatter** og **Undgå manuelle rabatter**. Indstillingerne findes på siden **Frigivne produkter** under fanen **Detail**.
+Detailhandlere vælger ofte at udelukke nogle produkter, f.eks. nye varer eller eftertragtede varer, fra rabatter. Det kan dog stadig være nyttigt at anvende betalingsmiddelbaserede rabatter. En detailhandler konfigurerer f.eks. Detail, så den ikke tillader varebaserede rabatter eller manuelle rabatter. Men hvis kunden betaler ved hjælp af det foretrukne betalingsmiddel, anvender Detail dog stadig den betalingsmiddelbaserede rabat. Hvis du vil konfigurere Retail på denne måde, skal du gå til **Administration af produktoplysninger > Produkter > Frigivne produkter**, vælge varen, og derefter skal du i oversigtspanelet **Retail** angive indstillingerne **Undgå alle rabatter** og **Undgå betalingsmiddelbaserede rabatter** til **Nej** og indstillingerne **Undgå rabatter til detailforhandlere** og **Undgå manuelle rabatter** til **Ja**.
 
 > [!NOTE]
-> Når konfigurationen **Undgå alle rabatter** er aktiveret, vil der ikke blive anvendt rabatter på produktet. Der vil heller ikke blive anvendt betalingsmiddelbaserede rabatter.
+> Når konfigurationen **Undgå alle rabatter** er angivet til **Ja**, vil der ikke blive anvendt rabatter på produktet. Der vil heller ikke blive anvendt betalingsmiddelbaserede rabatter.

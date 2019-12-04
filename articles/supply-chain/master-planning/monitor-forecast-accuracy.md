@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f238afadfa064e972ef11a95fdad073f63ff20c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 4cf65826279f0741ce5abc89d8f15bfec98c83ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250662"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813678"
 ---
 # <a name="monitor-forecast-accuracy"></a>Overvåge prognosenøjagtighed
 
@@ -44,7 +44,7 @@ Supply Chain Management beregner følgende typer prognosenøjagtighed:
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Godkende den justerede prognose](authorize-adjusted-forecast.md)
+[Autorisere en justeret prognose](authorize-adjusted-forecast.md)
 
 [Fjerne afvigende fra historiktransaktionsdata, når du beregner en efterspørgselsprognose](remove-historical-outliers-calculating-demand-forecast.md)
 

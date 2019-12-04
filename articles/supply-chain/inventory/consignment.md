@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 578aa96de28758a4dfff9f8c5f7782705ddd5f70
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65c5702514a3bc9fe943959fd4ca032eb19bfe4c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556040"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814438"
 ---
 # <a name="set-up-consignment"></a>Konfigurere konsignation
 
@@ -97,7 +97,7 @@ Kladden **Ændring af beholdningsejerskab** bruges til at registrere overdragels
 [![ændringskladde for beholdningsejerskab](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbejde i konsignationsprocesser
-Hvis dine kreditorer bruger leverandørsamarbejde som interface, kan de bruge dette til at overvåge forbruget af lageret på dit sted. Yderligere oplysninger om opsætning af leverandører til leverandørsamarbejde findes i [Konfiguration af sikkerhed for brugere af leverandørsamarbejde](../procurement/configure-security-vendor-portal-users.md).
+Hvis dine kreditorer bruger leverandørsamarbejde som interface, kan de bruge dette til at overvåge forbruget af lageret på dit sted. Yderligere oplysninger om opsætning af leverandører til at anvende leverandørsamarbejde findes i [Sikkerhed for bruger af leverandørportal](../procurement/configure-security-vendor-portal-users.md).
 
 
 

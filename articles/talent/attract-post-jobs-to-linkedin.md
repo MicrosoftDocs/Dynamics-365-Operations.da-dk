@@ -1,5 +1,5 @@
 ---
-title: Slå job op på LinkedIn fra Microsoft Dynamics 365 Talent - Attract
+title: Slå job op på LinkedIn fra Attract
 description: Dette emne beskriver, hvordan du anvender Dynamics 365 Talent - Attract til at slå job op på LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551489"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832994"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Slå job op på LinkedIn fra Microsoft Dynamics 365 Talent - Attract
+# <a name="post-jobs-to-linkedin-from-attract"></a>Slå job op på LinkedIn fra Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn er det største professionelle onlinenetværk, der giver dig adgang til verdens største talenter. Microsoft Dynamics 365 Talent: Attract hjælper dig med at få det talent, du har brug for, ved at lade dig foretage jobopslag direkte fra Attract til LinkedIn.
 
@@ -46,7 +46,7 @@ Følgende tabel viser de handlinger, du kan udføre på LinkedIn, afhængigt af 
 
 Du kan finde flere oplysninger om brugerroller i Attract under [Sikkerheds- og rollestyring i Attract](./security-attract.md).
 
-Hvis du er administrator og har brug for mere information om, hvordan du konfigurerer LinkedIn-integration med Attract, kan du se [Konfigurere integration med LinkedIn](./attract-admin-linkedin.md).
+Hvis du er administrator og har brug for mere information om, hvordan du konfigurerer LinkedIn-integration med Attract, kan du se [Konfigurer integration med LinkedIn til Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 Job, der slås op på LinkedIn, vises på live LinkedIn-webstedet. LinkedIn har ikke noget testmiljø til jobopslag. Sørg derfor for, at du ikke ved en fejltagelse slår testjob op.
 
@@ -67,15 +67,15 @@ Når interesserede kandidater vælger **Vis** ved siden af dit opslag, kan de se
 
 Alle jobopslag, der udføres via Attract, er gratis, men begrænsede. Der er mere information om gratis opslag på LinkedIn under [Begrænsede lister kontra Premium-jobmuligheder til job-wrapping](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Hvis du har problemer med at slå job op på LinkedIn, kan du se [Fejlfinding af opslag af job på LinkedIn](./attract-troubleshoot-linkedin.md).
+Hvis du har problemer med at slå job op på LinkedIn, kan du finde hjælp i [Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Se også
 
-[Ofte stillede spørgsmål om FAQ](./attract-linkedin-faq.md)
+[Ofte stillede spørgsmål om Attract-integration med LinkedIn](./attract-linkedin-faq.md)
 
-[Konfigurer integration med LinkedIn](./attract-admin-linkedin.md)
+[Konfigurer integration med LinkedIn til Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Oprette job](./creating-jobs-attract.md)
+[Oprette, godkende og bogføre job i Attract](./creating-jobs-attract.md)
 
 [Rekruttere kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 

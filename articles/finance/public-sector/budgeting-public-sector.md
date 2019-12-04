@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bdd5be13014e621fe0bfcbde0ee7546eb419620
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f0864e6e174e9c6ffc1ce193c9e7edbd4d285c14
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183514"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770252"
 ---
 # <a name="budgeting-in-the-public-sector-overview"></a>Oversigt over budgettering i den offentlige sektor
 
@@ -46,9 +46,9 @@ For at kunne bruge budgetstyring skal du konfigurere den grundlæggende budgette
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Du skal evt. angive følgende budgetteringsfunktioner:
 
--   [Budgetanalyse i den offentlig sektor](budget-analysis-public-sector.md) Vis indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Vis opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser.
--   [Foreløbige budgetter og fordelinger i den offentlige sektor](preliminary-budgets-apportionments-public-sector.md) Opret et midlertidigt, foreløbigt budget, mens det faktiske budget bliver gennemgået og godkendt. Fordelinger er den del af det oprindelige budget, der er godkendt til forbrug.
--   [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md) Brug bogføringsdefinitioner til at oprette kladdelinjer for reskontro for kildeposteringer, der opfylder udvalgte kriterier.
+-   [Budgetanalyse i den offentlig sektor](budget-analysis-public-sector.md): Få vist indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finans- og budgetstyringsdata. Vis opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser.
+-   [Foreløbige budgetter og fordelinger i den offentlige sektor](preliminary-budgets-apportionments-public-sector.md): Opret et midlertidigt, foreløbigt budget, mens det faktiske budget bliver gennemgået og godkendt. Fordelinger er den del af det oprindelige budget, der er godkendt til forbrug.
+-   [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md): Brug bogføringsdefinitioner til at oprette linjer til reskontrokladde for oprindelseskildeposteringer, der opfylder udvalgte kriterier.
 
 **Bemærk!** Dette gælder også for Finans, Kreditor og Debitor.
 
@@ -65,7 +65,7 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 [Oprette et foreløbigt budget](tasks/create-preliminary-budget-public-sector.md)
 
-[Oprette et oprindeligt budget og tilbageføre foreløbige budgetposter](tasks/create-original-budget.md)
+[Oprette et oprindeligt budget og derefter tilbageføre foreløbige budgetposter](tasks/create-original-budget.md)
 
 
 

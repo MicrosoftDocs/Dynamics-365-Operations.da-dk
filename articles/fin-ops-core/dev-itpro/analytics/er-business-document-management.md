@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652611"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824514"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
-Forretningsbrugere benytter det [elektroniske rapporteringsværktøjs struktur (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Brugerne kan også definere dataflow for at angive, hvilke programdata der skal placeres i genererede dokumenter. ER-strukturen genererer udgående dokumenter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter) ved hjælp af foruddefinerede skabeloner. Skabelonerne udfyldes med de påkrævede data i overensstemmelse med det konfigurerede dataflow, mens de nødvendige dokumenter genereres. Hvert konfigurerede format kan udgives som en del af en ER-løsning til generering af specifikke udgående dokumenter. Dette repræsenteres ved en ER-formatkonfiguration, der kan indeholde skabeloner, som du kan bruge til at generere forskellige udgående dokumenter. Erhvervsbrugere kan benytte denne struktur til at administrere nødvendige forretningsdokumenter.
+Erhvervsbrugere benytter [Oversigt over Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Brugerne kan også definere dataflow for at angive, hvilke programdata der skal placeres i genererede dokumenter. ER-strukturen genererer udgående dokumenter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter) ved hjælp af foruddefinerede skabeloner. Skabelonerne udfyldes med de påkrævede data i overensstemmelse med det konfigurerede dataflow, mens de nødvendige dokumenter genereres. Hvert konfigurerede format kan udgives som en del af en ER-løsning til generering af specifikke udgående dokumenter. Dette repræsenteres ved en ER-formatkonfiguration, der kan indeholde skabeloner, som du kan bruge til at generere forskellige udgående dokumenter. Erhvervsbrugere kan benytte denne struktur til at administrere nødvendige forretningsdokumenter.
 
 **Styring af forretningsdokumenter** er bygget oven på ER-strukturen og gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner i Microsoft Office 365-tjenesten eller Microsoft Office-skrivebordsprogrammet. Ændringer i dokumenterne kan omfatte ændring af forretningsdokumentdesign og tilføjelse af pladsholdere til yderligere data uden ændringer af kildekode og nye installationer. Det er ikke nødvendigt at have kendskab til ER-strukturen for at opdatere skabeloner til forretningsdokumenter.
 
@@ -58,21 +59,17 @@ Følgende rapporter vil blive tilgængelige med Excel-baserede skabeloner med ud
 
 Flere rapporter vil blive tilgængelige. Der vil blive udsendt særlige beskeder om flere rapporter separat. 
 
-En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Eksempel: aktivere, konfigurere og bruge styring af forretningsdokumenter
-
-Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
+En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametre
 
-Da styring af forretningsdokumenter er bygget oven på ER-strukturen, skal du konfigurere ER-parametrene for at begynde at arbejde med styring af forretningsdokumenter. Hvis du vil gøre dette, skal du konfigurere ER-parametrene som beskrevet i [Konfigurere ER-strukturen](electronic-reporting-er-configure-parameters.md). Du skal også tilføje en ny konfigurationsudbyder som beskrevet under [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Da styring af forretningsdokumenter er bygget oven på ER-strukturen, skal du konfigurere ER-parametrene for at begynde at arbejde med styring af forretningsdokumenter. Hvis du vil gøre dette, skal du konfigurere ER-parametrene som beskrevet i [Konfigurere strukturen for Elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md). Du skal også tilføje en ny konfigurationsudbyder som beskrevet under [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![ER-arbejdsområde](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>Importere ER-løsninger
 
-Du skal importere ER-konfigurationer, der indeholder skabeloner for forretningsdokumenter, til den aktuelle forekomst. Download og gem lokalt følgende filer for at fuldføre denne procedure.
+Eksempel på ER-konfigurationer bruges i eksemplet med denne procedure. Du skal til din aktuelle forekomst af Dynamics 365 Finance importere de ER-konfigurationer, der indeholder de skabeloner for forretningsdokumenter, der kan redigeres ved hjælp af Styring af forretningsdokumenter. Download og gem derefter lokalt følgende filer for at fuldføre denne procedure.
 
 **Eksempelløsning til ER-debitorfakturering**
 
@@ -105,7 +102,13 @@ Benyt følgende fremgangsmåde for at importere de enkelte filer. Importér ER-k
 
 ![Siden ER-konfigurationer](./media/BDM-Overview-ERSolutions.png)
 
+
+Du kan også importere de officielt publicerede ER-formatkonfigurationer fra Microsoft Dynamics Lifecycle service (LCS). Hvis du f.eks. vil fuldføre denne procedure, kan du importere den seneste version af ER-formatkonfigurationen **Fritekstfaktura (Excel)**. Varianter af den tilsvarende ER-datamodel og konfigurationer af ER-modeltilknytninger importeres automatisk.
+
+![Indholdssiden for delt LCS-aktivbibliotek](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Du kan finde flere oplysninger om import af ER-konfigurationer under [Administrere livscyklus for ER-konfiguration](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Aktivere styring af forretningsdokumenter
 
@@ -118,9 +121,12 @@ Benyt følgende fremgangsmåde for at aktivere funktionen til styring af forretn
 3. Vælg **Aktivér nu** for at aktivere den valgte funktion.
 4. Opdater siden for at få adgang til den nye funktion.
 
+>[!NOTE]
+> Du har også brug for at aktivere **Office-lignende brugergrænsefladeoplevelse for Styring af forretningsdokumenter** for at kunne anvende en ny brugergrænseflade til styring af forretningsdokumenter.
+
 ![Arbejdsområdet Administration af funktioner](./media/BDM-Overview-FMEnabling.png)
 
-Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Konfigurere parametre
 
@@ -137,7 +143,7 @@ For denne dokumenttype skal følgende attributværdier vælges.
 | Multi               | Fil                  |
 | Adresse            | SharePoint            |
 
-Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyringsparametre og dokumenttyper, i [Konfigurere dokumentstyring](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyringsparametre og dokumenttyper, i [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Konfigurere dokumenttype til dokumentstyring](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ Benyt følgende fremgangsmåde til at konfigurere adgangstilladelser til styring
 1. Log på som bruger med adgang til siden **Konfigurator for adgangstilladelser**.
 2. Gå til **Virksomhedsadministration** \> **Elektronisk rapportering** \> **Styring af forretningsdokumenter** \> **Administrer adgangsrettigheder**.
 
-Vær opmærksom på beskeden om, at brugen af adgangsrettigheder til forretningsdokumentstyring ikke er aktiveret i øjeblikket.
+    Vær opmærksom på beskeden om, at brugen af adgangsrettigheder til forretningsdokumentstyring ikke er aktiveret i øjeblikket.
 
-![Konfiguratorside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Konfiguratorside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess1.png)
 
-Med denne indstilling kan alle brugere, der har fået tildelt en sikkerhedsrolle, der er konfigureret til at udføre opgaven **Administrer forretningsdokumentskabeloner** (AOT-navn **ERBDManageTemplates**), åbne forretningsdokumentstyringens arbejdsområde og kan redigere alle tilgængelige skabeloner.
+    Med denne indstilling kan alle brugere, der har fået tildelt en sikkerhedsrolle, der er konfigureret til at udføre opgaven **Administrer forretningsdokumentskabeloner** (AOT-navn **ERBDManageTemplates**), åbne forretningsdokumentstyringens arbejdsområde og kan redigere alle tilgængelige skabeloner.
 
-I følgende illustration vises, hvad der er tilgængeligt i arbejdsområdet til forretningsdokumentstyring for brugere, der er tildelt rollen **Debitorassistent**. Med de aktuelle indstillinger af adgangsrettigheder kan brugeren redigere forretningsdokumentskabeloner fra forskellige funktionsområder, herunder fakturering, lovpligtig rapportering og betalinger.
+    I følgende illustration vises, hvad der er tilgængeligt i arbejdsområdet til forretningsdokumentstyring for brugere, der er tildelt rollen **Debitorassistent**. Med de aktuelle indstillinger af adgangsrettigheder kan brugeren redigere forretningsdokumentskabeloner fra forskellige funktionsområder, herunder fakturering, lovpligtig rapportering og betalinger.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Vælg **Indstillinger for adgangsrettigheder** på siden **Konfigurator for adgangstilladelser**.
 4. I dialogboksen **Indstillinger for adgangsrettigheder til redigering af skabeloner** skal du aktivere indstillingen **Anvend konfigurerede adgangsrettigheder**.
 5. Vælg **OK** for at bekræfte, at der er aktiveret adgangstilladelser til forretningsdokumentstyring.
 
-![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Vælg **Tilføj** for at angive en ny forretningsrolle, der skal have konfigureret adgangsrettigheder til skabeloner for forretningsdokumentstyring.
 7. I dialogboksen **Sikkerhedsroller** skal du vælge rollen **Debitorassistent** og derefter vælge **OK** for at bekræfte valget af rollen.
@@ -201,11 +207,11 @@ I følgende illustration vises, hvad der er tilgængeligt i arbejdsområdet til 
 9. Vælg **Funktionsområde** i feltet **Mærkattype**, og vælg **Fakturering** i feltet **Id**.
 10. Vælg **Gem** for at gemme de konfigurerede adgangsrettigheder for den valgte rolle.
 
-  Den aktuelle indstilling betyder, at for en hvilken som helst bruger, der er tildelt rollen **Debitorassistent** og udfører pligten **Administrer forretningsdokumentskabeloner** (AOT-navn **ERBDManageTemplates**), vil ER-formatkonfigurationsskabeloner, der har værdien **Fakturering** for mærkatet **Funktionsområde**, kunne redigeres i arbejdsområdet for styring af forretningsdokumenter.
+    Den aktuelle indstilling betyder, at for en hvilken som helst bruger, der er tildelt rollen **Debitorassistent** og udfører pligten **Administrer forretningsdokumentskabeloner** (AOT-navn **ERBDManageTemplates**), vil ER-formatkonfigurationsskabeloner, der har værdien **Fakturering** for mærkatet **Funktionsområde**, kunne redigeres i arbejdsområdet for styring af forretningsdokumenter.
 
 11. Skift til ruden **Relaterede oplysninger** fra højre side af den aktuelle side. I ruden **Relaterede oplysninger** kan du se, hvordan de konfigurerede adgangsrettigheder anvendes, herunder hvilke ER-konfigurationsskabeloner der er tilgængelige for brugere, der er tildelt rollen **Debitorassistent**.
 
-![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Vælg **Tilføj** under fanen **Adgangsrettigheder pr. konfigurationer**.
 13. I dialogboksen **Vælg konfiguration** skal du markere **Intrastat-rapporten** som ER-formatkonfiguration.
@@ -252,21 +258,31 @@ Indstillingen **Rediger skabelon** er tilgængelig for den valgte skabelon. Denn
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Starte redigering af skabeloner, der ejes af andre udbydere
 
-1. I arbejdsområdet til styring af forretningsdokumenter skal du vælge skabelonen **FTI-debitorrapport (GER)** på listen.
-2. Vælg fanen **Detaljer**.
+1. I arbejdsområdet Styring af forretningsdokumenter skal du vælge **Nyt dokument**.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate3.png)
+![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template1.png)
 
-Indstillingen **Nyt dokument** er tilgængelig for den valgte skabelon. Denne indstilling er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der er leveret af en anden udbyder (**Microsoft** i dette eksempel). Når **Nyt dokument** er valgt, kan en ny skabelon redigeres. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
+2. Vælg det dokument, som du ønsker at bruge som skabelon.
+
+![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template2.png)
+
+3. Klik på **Opret dokument**
+4. Rediger feltet **Titel** på den redigerbare skabelon, hvis det er nødvendigt. Teksten vil blive brugt til at navngive den ER-formatkonfiguration, der oprettes automatisk. Bemærk, at kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**), der vil indeholde den redigerede skabelon, automatisk markeres til at køre dette ER-format for den aktuelle bruger. Samtidig bruges den ikke-redigerede oprindelige skabelon fra ER-basisformatkonfigurationen til at køre dette ER-format for enhver anden bruger.
+5. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
+6. I feltet **Kommentar** skal du ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
+7. Vælg **OK** for at bekræfte påbegyndelse af redigeringsprocessen
+
+![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template3.png)
+
+Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der er leveret af en anden udbyder (Microsoft i dette eksempel). Når du klikker på **Nyt dokument**, får du vist alle skabeloner, der ejes af aktuelle og andre udbydere. Når du har valgt den skabelon, vil den blive åbnet til redigering. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
 
 ### <a name="start-editing-a-template"></a>Starte redigering af en skabelon
 
-1. Vælg **Nyt dokument** i den valgte skabelon.
-2. Rediger feltet **Titel** på den redigerbare skabelon, hvis det er nødvendigt. Teksten vil blive brugt til at navngive den ER-formatkonfiguration, der oprettes automatisk. Bemærk, at kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**), der vil indeholde den redigerede skabelon, automatisk markeres til at køre dette ER-format for den aktuelle bruger. Samtidig bruges den ikke-redigerede oprindelige skabelon fra ER-basisformatkonfigurationen til at køre dette ER-format for enhver anden bruger.
-3. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
-4. I feltet **Kommentar** skal du ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
+1. I den valgte skabelon skal du vælge **Rediger dokument**.
+2. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
+3. I feltet **Kommentar** skal du ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate4.png)
+    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template4.png)
 
 5. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
@@ -285,15 +301,15 @@ Rediger skabelonen ved hjælp af funktionerne i Office 365. I Office Online kan 
 1. Vælg indstillingen **Åbn i skrivebordsapp** for at ændre skabelonen ved hjælp af funktionerne i Office-skrivebordsprogrammet (Excel i dette eksempel). Den redigerbare skabelon kopieres fra det permanente lager til det midlertidige lager, der er konfigureret i parametrene for forretningsdokumentstyring, som en SharePoint-mappe.
 2. Bekræft, at du vil åbne skabelonen fra det midlertidige fillager i Office-skrivebordsprogrammet Excel.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout3.png)
+    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout3.png)
 
 3. Rediger skabelonen. Du kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften ved at opdatere farven fra **Sort** til **Blå**.
 
-![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout4.png)
+    ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout4.png)
 
 4. Vælg **Gem** i Excel-skrivebordsprogrammet for at gemme skabelonændringerne i det midlertidige lager.
 
-![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout5.png)
+    ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout5.png)
 
 5. Luk Excel-skrivebordsprogrammet.
 6. Vælg **Synkroniser gemt kopi** for at synkronisere det midlertidige skabelonlager med det permanente skabelonlager.
@@ -307,7 +323,7 @@ Rediger skabelonen ved hjælp af funktionerne i Office 365. I Office Online kan 
 2. Vælg **Vis format** for at få vist formatets aktuelle struktur fra den ER-basisformatkonfigurationen, der skal justeres i forhold til den redigerbare skabelon. 
 3. Vælg **Skjul format** for at lukke ruden.
 
-![Siden med BDM-skabeloneditor](./media/BDM-Overview-EditingTemplate6.png)
+    ![Siden med BDM-skabeloneditor](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Luk siden **BDM-skabeloneditor**.
 
@@ -323,7 +339,7 @@ Den opdaterede skabelon vises under fanen **Skabelon**. Bemærk, at status for d
 4. Vælg **Modul - debitor** \> **Dokumenter** \> **Fritekstfaktura** \> **Originaldokument** som niveau for at angive omfanget af fakturaer til behandling.
 5. I feltet **Rapportformat** skal du vælge **FTI-debitorrapport (GER) Kopi** som ER-formatet for det angivne dokumentniveau.
 
-![Side med indstillinger for udskriftsstyring](./media/BDM-Overview-TestRun1.png)
+    ![Side med indstillinger for udskriftsstyring](./media/BDM-Overview-TestRun1.png)
 
 6. Tryk på **Escape** for at lukke den aktuelle side.
 7. Vælg **Udskriv**, og klik derefter på **Valgt**.
@@ -340,9 +356,9 @@ Den ændrede skabelon bruges til at generere rapporten med fritekstfaktura for d
 3. Hvis det er nødvendigt, skal du ændre navnet på den anden revision i feltet **Navn** og basere den på den aktuelt aktive første revision.
 4. I feltet **Kommentar** skal du efter behov ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-AddRevision.png)
+    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-AddRevision.png)
 
-Du har oprettet en ny revision af skabelonen, der er gemt i det permanente skabelonlager. Nu kan du fortsætte med at redigere skabelonen for den anden revision, der aktuelt er valgt som aktiv.
+    Du har oprettet en ny revision af skabelonen, der er gemt i det permanente skabelonlager. Nu kan du fortsætte med at redigere skabelonen for den anden revision, der aktuelt er valgt som aktiv.
 
 5. Vælg den første revision, og vælg derefter **Angiv som aktiv**. Du kan vælge en anden revision som aktiv, hvis du på et tidspunkt vil vende tilbage til denne revision af skabelonen.
 6. Vælg den anden revision, og vælge derefter **Slet**.
@@ -370,7 +386,7 @@ Når du redigerer skabelonen fra et ER-format, der ejes af den aktuelle aktive u
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg har valgt **Nyt dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations er jeg blevet sendt til Office 365-websiden.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg har valgt **Rediger dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations er jeg blevet sendt til Office 365-websiden.
 Dette er et kendt problem med Office 365-omdirigeringen. Dette sker, når du logger på Office 365 første gang. Du kan løse dette problem ved at vælge knappen **Tilbage** i din browser for at gå tilbage.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår, hvordan jeg kan redigere en skabelon ved at bruge Office 365 i den første programsession, og hvordan jeg kan bruge skabelonen i den anden programsession, der justerer skabelonen, for at se, hvordan mine ændringer påvirker det genererede forretningsdokument. Kan jeg gøre dette ved hjælp af Office-skrivebordsprogrammet?
@@ -386,12 +402,12 @@ Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-[Designe en konfiguration til generering af rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md)
+[Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)](tasks/er-design-reports-openxml-2016-11.md)
 
 [Designe ER-konfigurationer til at generere rapporter i Word-format](tasks/er-design-configuration-word-2016-11.md)
 
 [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurere elektronisk rapportering for at trække data ind i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Konfigurer Elektronisk rapportering (ER) for at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)

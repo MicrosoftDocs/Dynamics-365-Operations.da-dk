@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: abf574293dac634bb4b4f6adc95b4598a66ed264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653435"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813287"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
@@ -43,7 +43,7 @@ Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en in
 
 1. Konfigurer et indkøbskategorihierarki. Du kan finde flere oplysninger under [Konfigurere politikker for indkøbskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Registrer leverandøren i Supply Chain Management. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
-3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenheder](../pim/tasks/manage-unit-measure.md).
+3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenhed](../pim/tasks/manage-unit-measure.md).
 4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Du kan finde yderligere oplysninger om denne opgave i [Konfigurere det eksterne leverandørkatalog](#configure-the-external-vendor-catalog).
 5. Test konfigurationerne af leverandørens eksterne katalog for at kontrollere, at indstillingerne er gyldige, og at du kan få adgang til leverandørens eksterne katalog. Brug handlingen **Valider indstillinger** til at validere den meddelelse om konfigurationsanmodning, du har defineret. Denne meddelelse bør medføre, at leverandørens eksterne katalogwebsted åbnes i et browservindue. Under valideringen kan du ikke bestille varer og tjenester fra leverandøren. Hvis du vil bestille varer og tjenester, skal du have adgang til leverandørkataloget fra en indkøbsrekvisition.
 6. Aktivér det eksterne katalog ved hjælp af knappen **Aktivér katalog** på siden **Eksterne kataloger**. Det eksterne katalog skal aktiveres, før medarbejdere kan bruge det. Du kan deaktivere det eksterne katalog når som helst.
@@ -58,7 +58,7 @@ Dette afsnit indeholder flere detaljer om opgave 4 i forrige afsnit.
 3. Vælg, om leverandørens eksterne katalogwebsted skal vises i det samme browservindue, hvor medarbejderen har oprettet rekvisitionen, eller om det åbnes i et nyt vindue.
 4. Vælg leverandøren for kataloget. På listen **Juridiske enheder** er der en række for hver juridiske enhed, hvor leverandøren er oprettet. Hvis brugere skal kunne anmode om produkter direkte fra leverandørkataloget i visse juridiske enheder, men ikke andre, kan du bruge knappen **Udeluk adgang** eller **Tillad adgang** for hver juridiske enhed, hvor kataloget skal være eller ikke være tilgængeligt.
 5. I feltet **Standardudløb (dage)** skal du angive antallet af dage, hvor tilbuddet fra det eksterne katalog er gyldigt og kan bruges til køb hos den eksterne leverandør. Når et tilbud er oprettet og hentet fra leverandørens eksterne katalogwebsted, er tilbuddet gyldigt med virkning fra den aktuelle systemdato og forbliver gyldigt i det antal dage, du angiver i dette felt.
-6. Klik på knappen **Tilføj** for at starte tilknytning af indkøbskategorier til det eksterne katalog.Vælg derefter en kategori på listen Kategorinavn. Listen over kategorier er et undersæt af indkøbskategorier, som leverandøren er knyttet til i de juridiske enheder, der er konfigureret for leverandøren.
+6. Klik på knappen **Tilføj** for at starte tilknytning af indkøbskategorier til det eksterne katalog. Vælg derefter en kategori på listen Kategorinavn. Listen over kategorier er et undersæt af indkøbskategorier, som leverandøren er knyttet til i de juridiske enheder, der er konfigureret for leverandøren.
 
     > [!NOTE]
     > Indkøbspolitikker bruges til at tillade eller begrænse adgang til kategorier for den juridiske indkøbsenhed eller modtagende driftsenhed.Punchout til et eksternt katalog kræver, at der er tilladt adgang til mindst en af de indkøbskategorier, som er knyttet til kataloget.

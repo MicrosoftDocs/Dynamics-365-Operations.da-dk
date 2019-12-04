@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569078"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771392"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angive en brugerdefineret placering, hvor oprettede dokumenter kan gemmes
 
@@ -54,7 +54,7 @@ I den aktuelle topologi skal du [oprette et nyt ER-format](tasks/er-format-confi
 
 ## <a name="create-a-new-document-type"></a>Oprette en ny dokumenttype
 
-Hvis du vil angive, hvordan dokumenter, der genereres af et ER-format, skal sendes, skal du konfigurere [ER-destinationer](electronic-reporting-destinations.md). I hver ER destination, der er konfigureret til at gemme genererede dokumenter som filer, skal du angive en dokumenttype i dokumentstyringsstrukturen. Der kan bruges forskellige dokumenttyper til at sende dokumenter, som forskellige ER-formater genererer.
+Hvis du vil angive, hvordan dokumenter, der genereres af et ER-format, skal sendes, skal du konfigurere [Destinationer for Elektronisk rapportering (ER)](electronic-reporting-destinations.md). I hver ER destination, der er konfigureret til at gemme genererede dokumenter som filer, skal du angive en dokumenttype i dokumentstyringsstrukturen. Der kan bruges forskellige dokumenttyper til at sende dokumenter, som forskellige ER-formater genererer.
 
 1. Tilføj en ny [dokumenttype](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for det ER-format, som du har oprettet eller tidligere har importeret. I følgende illustration er dokumenttypen **FileX**.
 2. For at skelne denne dokumenttype fra andre dokumenttyper skal du medtage et bestemt nøgleord i dens navn. F.eks. i illustrationen, der følger, er navnet **(LOKAL) mappe**.
@@ -173,5 +173,5 @@ Hændelsen **AttachingFile()** udføres, når de følgende ER-destinationer beha
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Destinationer for elektronisk rapportering](electronic-reporting-destinations.md)
+- [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startside for udvidelsesmuligheder](../extensibility/extensibility-home-page.md)

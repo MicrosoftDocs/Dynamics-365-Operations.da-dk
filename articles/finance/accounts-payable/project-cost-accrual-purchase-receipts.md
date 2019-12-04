@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9200b0e4bc3862abdb3ecacb6539f7ba0d619b2f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a930b4921a29d5ce561ce0e958733f0c3261b81
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189608"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772185"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Periodisering af projektomkostninger på købsleverancer
 
@@ -40,21 +40,20 @@ Contoso Consulting har startet et nyt projekt med skyinstallation. Der oprettes 
 De påløbne omkostninger skal registreres både på økonomisk niveau og projektniveau til rapporteringsformål. Den økonomiske opdatering af produktkvitteringen kan spores for vare- og indkøbskategorierne. 
 
 For varer skal du på siden **Kreditorparametre** vælge indstillingen **Bogfør produktkvittering i finans**.
-[![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Siden kreditorparametre](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 For indkøbskategorier skal du på siden **Kategoripolitikregel** vælge politikkerne **Indkøb** og derefter vælge **Periodiser indkøbsudgifter på kvittering** for hver indkøbskategori.
-[![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Siden regel for kategori](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 Kontiene **Udgifter til indkøb, ikke-faktureret** og **Købsperiodisering** i **Opsætning af bogføring** bruges til bogføring af bilag, der er knyttet til produktkvitteringen.
-[![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
 Når vi bruger det samme scenarie, så lad os se, hvordan bogføring af en produktkvittering påvirker finans og projektoplysninger. 
 
 **Trin 1:** Opret og Bekræft en ny indkøbsordre for projektet for at registrere købet af en computer til $1500 og installationsservices for $150.
-[![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Opret en ny indkøbsordre](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Når indkøbsordren er bekræftet, oprettes der posteringer for den bindende omkostning for projektet. 
-[![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Oprettede transaktioner](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > Posteringerne for den bindende omkostning vil have feltet **Posteringsgrundlag** indstillet til **Indkøbsordre**. Oprettelse og bekræftelse af en indkøbsordre opretter ikke posteringer for et projekt. 
@@ -62,23 +61,23 @@ Når indkøbsordren er bekræftet, oprettes der posteringer for den bindende omk
 **Trin 2:** Varer og tjenesteydelser leveres, og en produktkvittering registreres. 
 
 Bogføring af en produktkvittering genererer og bogfører et bilag til finans. Bilaget debiteres kontoen Udgifter til indkøb, ikke-faktureret og krediteres kontoen Periodisering af køb. 
-[![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Posteringer på bilag](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > Bogføring af en produktkvittering vil bruge posteringsopsætningen for indkøbskategorier og produkter og ikke posteringsopsætningen til projektkategorier. Denne opsætning skal justeres for korrekt at afspejle den økonomiske virkning af købsperiodiseringer. 
 
 Det er muligt at knytte indkøbskategorier til projektkategorier på siden **Indkøbskategori**.
-[![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Siden indkøbskategori](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Trin 3:** Opret en kladdekreditorfaktura. 
 
 Bogføring af en produktkvittering påvirker ikke projektoplysninger. Som en løsning kan du generere en kladdekreditorfaktura lige efter bogføringen af købskvitteringen. Gå til siden **indkøbsordre** &gt; **fanen Faktura** &gt; **Generer** &gt; **Faktura**. Dette opretter et ventende fakturadokument, der opdaterer projektoplysningerne. 
 
 Oprettelse af en kladdekreditorfaktura genererer ventende projektposteringer. 
-[![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Ventende projektposter](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 På siden **Bindende omkostning** lukkes poster, der er oprettet i trin 1, og nye poster oprettes for at afspejle en omkostningsbinding, der kommer fra den ventende kreditorfaktura. Feltet **Posteringsgrundlag** for den bindende omkostning angives til **Kreditorfaktura**.
-[![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Siden bindende omkostninger](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Kreditorfakturaen forbliver i tilstanden Afventer, indtil den faktiske kreditorfaktura ankommer.
 
