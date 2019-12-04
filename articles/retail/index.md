@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e77fd279ddec5eb02e226776eecb1223283313c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278100"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811920"
 ---
 # <a name="help-resources-for-dynamics-365-retail"></a>Hjælp-ressourcer for Dynamics 365 Retail
 
@@ -81,7 +81,7 @@ Du skal konfigurere flere komponenter for at definere relationerne mellem en but
 
 Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du er ansvarlig for at implementere og vedligeholde systemet, skal du se på det indhold til udvikleren og systemadministratoren, der er specifikt for Retail, samt det mere generelle indhold.
 
-- [Dynamics 365 Retail til it-medarbejdere og -udviklere](dev-itpro/dev-retail-home-page.md)
+- [Retail til it-medarbejdere og -udviklere](dev-itpro/dev-retail-home-page.md)
 - [Udvikling og administration i Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

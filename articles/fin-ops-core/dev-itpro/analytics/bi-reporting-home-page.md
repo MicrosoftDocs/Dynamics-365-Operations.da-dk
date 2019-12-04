@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536841"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771558"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Startside for Business Intelligence (BI) og rapportering
 
@@ -48,7 +48,7 @@ Hvis du vil lære mere, skal du se følgende emner:
 - [Power BI Embedded-integration](power-bi-embedded-integration.md)
 - [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](add-analytics-tab-workspaces.md)
 - [Hjælpe med til at sikre analysearbejdsområder og -rapporter ved hjælp af Power BI Embedded](secure-analytical-workspaces.md)
-- [Power BI-indhold til Finance and Operations](power-bi-home-page.md)
+- [Startside for Power BI-indhold](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Forretningsdokumenter og udskrivning
 Rapporteringsløsninger bruges ofte til at indsamle og formidle oplysninger om forretningstransaktioner. Derfor skal en rapporteringsløsning kunne fremvise fysiske gengivelser af virksomhedsdata ved hjælp af eksisterende enheder, f.eks. netværksprintere. Salgsfakturaer, kundekontoudtog og checks er eksempler på forretningsdokumenter.
@@ -57,9 +57,9 @@ Rapporteringsløsninger bruges ofte til at indsamle og formidle oplysninger om f
 
 Hvis du vil lære mere, skal du se følgende emner:
 
-- [Oversigt over Document Reporting Services](document-reporting-services.md)
-- [Udskrivning i Finance and Operations-programmer](print-documents.md)
-- [Installere dokumentets ruteplanlægningsagent til aktivering af netværksprinterenheder](install-document-routing-agent.md)
+- [Dokumentrapporteringstjenester](document-reporting-services.md)
+- [Oversigt over udskrivning af dokumenter](print-documents.md)
+- [Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 Elektronisk rapportering er det værktøj, du bruger til at konfigurere dokumentformater, der opfylder de lovgivningsmæssige krav i forskellige lande eller områder. Anvendelsen af elektronisk rapportering omfatter økonomisk revision, momsindberetning og elektronisk fakturering.
@@ -68,9 +68,9 @@ Elektronisk rapportering er det værktøj, du bruger til at konfigurere dokument
 
 Hvis du vil lære mere, skal du se følgende emner:
 
-- [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
-- [Administrere livscyklus for konfigurationen af elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Oprette en konfiguration af elektronisk rapportering](electronic-reporting-configuration.md)
+- [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
+- [Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Oprette en konfiguration af elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Økonomirapportering
 Der er adgang til økonomiske standardrapporter, der anvender standardhovedkontokategorierne. Du kan bruge rapportdesigneren til at oprette eller redigere traditionelle årsregnskaber, f.eks. resultatopgørelser og balancer. Derefter kan du dele resultaterne med andre medlemmer af organisationen. Eksempler på økonomirapportering omfatter årlige balancer, pengestrømsopgørelser og råbalanceoversigter.
@@ -79,14 +79,14 @@ Der er adgang til økonomiske standardrapporter, der anvender standardhovedkonto
 
 Hvis du vil lære mere, skal du se følgende emner:
 
-- [Økonomirapportering til Finance and Operations](financial-reporting-intro.md)
-- [Generere en økonomirapport](generate-financial-report.md)
+- [Økonomirapportering](financial-reporting-intro.md)
+- [Generere økonomiske rapporter](generate-financial-report.md)
 - [Komponenter i økonomirapport](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>Technical Reference-rapporter
 Følgende rapporter indeholder referenceoplysninger om objekterne:
 
-- [Rapport for dataenheder](../data-entities/data-entities-report.md)
+- [Finde oplysninger om standarddataenheder](../data-entities/data-entities-report.md)
 - [Rapport over licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md)
-- [SQL Server Reporting Services-rapporter](SSRS-report.md)
+- [SQL Server Reporting Services (SSRS)-rapporter, der er tilgængelige](SSRS-report.md)
 - [Rapport for arbejdsgangstyper](../../fin-ops/organization-administration/workflow-types-report.md)

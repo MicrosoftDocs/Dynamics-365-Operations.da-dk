@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181283"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771090"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
 
@@ -33,7 +33,7 @@ I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske 
 
 ## <a name="overview"></a>Overblik
 
-Elektronisk rapportering (ER) er et program, der understøtter lovgivningsmæssigt påkrævede og landespecifikke elektroniske dokumenter. Generelt forudsætter ER evnen til at udføre følgende opgaver for en enkelt elektronisk dokument. Du kan finde flere oplysninger under [Oversigt over elektronisk rapportering](general-electronic-reporting.md).
+Elektronisk rapportering (ER) er et program, der understøtter lovgivningsmæssigt påkrævede og landespecifikke elektroniske dokumenter. Generelt forudsætter ER evnen til at udføre følgende opgaver for en enkelt elektronisk dokument. Du kan finde flere oplysninger under [Oversigt over Elektronisk rapportering (ER)](general-electronic-reporting.md).
 
 - Designe en skabelon til et elektronisk dokument:
 
@@ -87,4 +87,4 @@ ER-konfigurationer, der designet i udviklingsmiljøet, kan overføres til testmi
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)

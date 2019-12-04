@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559020"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814921"
 ---
 # <a name="schedule-workload-capacity"></a>Planlægge arbejdsbyrdekapacitet
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559020"
 
 Du kan planlægge arbejdsbyrdekapacitet for lagersteder, og du kan også planlægge de aktuelle og fremtidige arbejdsbyrder for medarbejderne på de forskellige lagersteder. Du kan planlægge arbejdsbyrden for hele lagerstedet, eller du kan planlægge arbejdsbyrden separat for indgående og udgående arbejdsbyrder.
 
-Hvis du vil planlægge arbejdsbyrdeoutput for udvalgte lagersteder, skal der være behovsplanlægningsdata tilgængelige for de pågældende lagersteder. Du kan finde flere oplysninger under [Behovsplaner](../master-planning/master-plans.md).
+Hvis du vil planlægge arbejdsbyrdeoutput for udvalgte lagersteder, skal der være behovsplanlægningsdata tilgængelige for de pågældende lagersteder. Du kan finde flere oplysninger under [Oversigt over Behovsplaner](../master-planning/master-plans.md).
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>Planlægge og se arbejdsbyrder for et lagersted.
 

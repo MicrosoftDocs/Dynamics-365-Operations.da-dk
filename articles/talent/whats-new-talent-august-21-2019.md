@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024062"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814484"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (20. august 2019)
 
@@ -35,7 +35,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Forenklet ansøgningsoplevelse for kandidater 
 
-En forenklet ansøgningsoplevelse for kandidater er nu tilgængelig i offentlig prøveversion. Når den er aktiveret, kan kandidater ansøge om et job ved hjælp af **Ansøg med LinkedIn** (hvis aktiveret) eller ved hjælp af den eksisterende ansøgningsformular. Med disse ændringer kan kandidater hurtigt indsende deres jobansøgning med et minimum af felter, der kræver manuel indtastning. Du kan finde oplysninger om, hvordan du aktiverer denne funktion, under [Aktiver eller deaktivere funktioner i prøveversion](./access-preview-feature.md#enable-or-disable-preview-features).
+En forenklet ansøgningsoplevelse for kandidater er nu tilgængelig i offentlig prøveversion. Når den er aktiveret, kan kandidater ansøge om et job ved hjælp af **Ansøg med LinkedIn** (hvis aktiveret) eller ved hjælp af den eksisterende ansøgningsformular. Med disse ændringer kan kandidater hurtigt indsende deres jobansøgning med et minimum af felter, der kræver manuel indtastning. Du kan finde flere oplysninger om aktivering af denne funktion under [Få adgang til funktioner i prøveversioner af Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Se afvisningskommentarer som en del af en ansøgningsaktivitet
 

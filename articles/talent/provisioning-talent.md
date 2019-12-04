@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026135"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773051"
 ---
 # <a name="provision-talent"></a>Klargøre Talent
 
@@ -49,12 +49,12 @@ Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
 1. I LCS-projektet skal du vælge feltet **Administration af Talent-app**.
 2. Angiv, om dette er en sandkasse- eller produktionsforekomst af Talent. De tidlige visningsfunktioner kan være tilgængelige i sandkasseforekomster med henblik på hurtig feedback og test. 
     > [!NOTE]
-    > Talent-forekomsttypen er adskilt fra den forekomsttype for PowerApps-miljøet, som du angiver i PowerApps Administration.
+    > Talent-forekomsttypen er adskilt fra den forekomsttype for Microsoft Power Apps-miljøet, som du angiver i Power Apps Administration.
 3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Talent-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
-4. Talent klargøres altid i et Microsoft PowerApps-miljø for at aktivere PowerApps-integration og -udvidelse. Læs afsnittet "Valg af et PowerApps-miljø" i dette emne, før du fortsætter. Hvis du ikke allerede har et PowerApps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til PowerApps Administration. Følg derefter trinnene for at [Oprette et PowerApps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent klargøres altid i et Microsoft Power Apps-miljø for at aktivere Power Apps-integration og -udvidelse. Læs afsnittet "Valg af et Power Apps-miljø" i dette emne, før du fortsætter. Hvis du ikke allerede har et Power Apps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til Power Apps Administration. Følg derefter trinnene for at [Oprette et Power Apps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Talent, være tildelt PowerApps P2-licensen. Hvis organisationen ikke har en PowerApps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [PowerApps-prissætningssiden](https://powerapps.microsoft.com/pricing/).
+    > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Talent, være tildelt Power Apps P2-licensen. Hvis organisationen ikke har en Power Apps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [Power Apps-prissætningssiden](https://powerapps.microsoft.com/pricing/).
 
 5. Vælg det miljø, du vil klargøre Talent til.
 6. Vælg **Ja** for at acceptere vilkårene og begynde installationen.
@@ -68,19 +68,19 @@ Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
 
     > Da kun to LCS-miljøer er tilladt som en del af Talent-abonnementet, kan du også overveje at benytte dig af et gratis 60-dages [Talent-forsøgsmiljø](https://dynamics.microsoft.com/talent/overview/). Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i det centrale HR-miljø. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
 
-## <a name="select-a-powerapps-environment"></a>Vælg et PowerApps-miljø
+## <a name="select-a-power-apps-environment"></a>Vælg et Power Apps-miljø
 
-Integrationen mellem Talent- og PowerApps-miljøerne gør det muligt for dig at integrere og udvide brugen af Talent-data ved hjælp af PowerApps-værktøjer. Forståelse af formålet med PowerApps-miljøer vil ikke blot hjælpe dig med at udvikle apps med henblik på at udvide Talent, men vil også hjælpe dig med at vælge det korrekte miljø i forbindelse med klargøringen af Talent. Du kan finde oplysninger om PowerApps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af PowerApps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Integrationen mellem Talent- og Power Apps-miljøerne gør det muligt for dig at integrere og udvide brugen af Talent-data ved hjælp af Power Apps-værktøjer. Forståelse af formålet med Power Apps-miljøer vil ikke blot hjælpe dig med at udvikle apps med henblik på at udvide Talent, men vil også hjælpe dig med at vælge det korrekte miljø i forbindelse med klargøringen af Talent. Du kan finde oplysninger om Power Apps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af Power Apps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
-Brug følgende retningslinjer til fastsættelse af, hvilket PowerApps-miljø som Talent skal installeres i: 
+Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø som Talent skal installeres i: 
 
-1. I LCS skal du vælge **Administrer miljøer** eller gå direkte til PowerApps Administration, hvor du kan få vist eksisterende miljøer og oprette nye miljøer.
-2. Der er knyttet et enkelt Talent-miljø til et enkelt PowerApps-miljø.
-3. Et PowerApps-miljø indeholder Talent sammen med de tilsvarende PowerApps-, Flow- og Common Data Service-programmer. Hvis PowerApps-miljøet slettes, så slettes apps i det samtidig. Under klargøring af et Talent-miljø kan enten et **Prøveversion**- eller **Produktion**-miljø klargøres. Vælg den ønskede type miljø baseret på, hvordan miljøet skal bruges. 
-4. Dataintegration og teststrategier, såsom Sandkasse, UAT eller Produktion, bør tages i betragtning. Vi anbefaler, at du overvejer de forskellige konsekvenser af din installation, da det ikke er let at ændre tilknytningen af Talent-miljøer til et PowerApps-miljø senere.
-5. Følgende PowerApps-miljøer kan ikke bruges til Talent og filtreres fra valglisten i LCS:
+1. I LCS skal du vælge **Administrer miljøer** eller gå direkte til Power Apps Administration, hvor du kan få vist eksisterende miljøer og oprette nye miljøer.
+2. Der er knyttet et enkelt Talent-miljø til et enkelt Power Apps-miljø.
+3. Et Power Apps-miljø indeholder Talent sammen med de tilsvarende Power Apps-, Power Automate- og Common Data Service-programmer. Hvis Power Apps-miljøet slettes, så slettes apps i det samtidig. Under klargøring af et Talent-miljø kan enten et **Prøveversion**- eller **Produktion**-miljø klargøres. Vælg den ønskede type miljø baseret på, hvordan miljøet skal bruges. 
+4. Dataintegration og teststrategier, såsom Sandkasse, UAT eller Produktion, bør tages i betragtning. Vi anbefaler, at du overvejer de forskellige konsekvenser af din installation, da det ikke er let at ændre tilknytningen af Talent-miljøer til et Power Apps-miljø senere.
+5. Følgende Power Apps-miljøer kan ikke bruges til Talent og filtreres fra valglisten i LCS:
  
-    - **Power Apps-standardmiljøer** ‑ Selvom hver lejer automatisk klargøres med et PowerApps-standardmiljø, anbefales det ikke at bruge dem sammen med Talent, da alle lejerbrugere har adgang til PowerApps-miljøet og derfor utilsigtet kan beskadige produktionsdata i forbindelse med test og gennemsyn af PowerApps- eller Flow-integrationer.
+    - **Power Apps-standardmiljøer** ‑ Selvom hver lejer automatisk klargøres med et Power Apps-standardmiljø, anbefales det ikke at bruge dem sammen med Talent, da alle lejerbrugere har adgang til Power Apps-miljøet og derfor utilsigtet kan beskadige produktionsdata i forbindelse med test og gennemsyn af Power Apps- eller Power Automate-integrationer.
    
     - **Testmiljøer** ‑ Disse miljøer oprettes med en udløbsdato og udløber efter dette tidspunkt, hvilket resulterer i, at dit miljø og enhver Talent-forekomst, der er indeholdt heri, automatisk bliver fjernet.
    

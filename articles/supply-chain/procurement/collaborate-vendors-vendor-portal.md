@@ -1,6 +1,6 @@
 ---
 title: Samarbejde med kreditorer ved hjælp af kreditorportalen
-description: I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016.
+description: I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 &amp; maj 2016.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248974"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813517"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbejde med kreditorer ved hjælp af leverandørportalen
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248974"
 
 I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016.
 
-Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016. Du kan finde flere oplysninger om den nye kreditorsamarbejdsfunktion under [Brug af leverandørsamarbejde til at arbejde med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
+Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016. Du kan finde flere oplysninger om den nye leverandørsamarbejdsfunktion under [Leverandørsamarbejde med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
 
 Kreditorportalen henvender sig til leverandører, der ikke har EDI-integration (electronic data interchange) med Microsoft Dynamics AX til udveksling af indkøbsordreoplysninger (IO). Portalen giver indkøbsagenter mulighed for at sende en IO til kreditoren og modtage et Bekræftet- eller Afvist-svar direkte i Dynamics AX.  
 
@@ -98,7 +98,7 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Konfiguration af sikkerhed for brugere af kreditorsamarbejde](configure-security-vendor-portal-users.md)
+[Brugersikkerhed på leverandørportal](configure-security-vendor-portal-users.md)
 
 [Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 

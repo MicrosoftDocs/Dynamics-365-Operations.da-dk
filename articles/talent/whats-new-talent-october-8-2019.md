@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 159320dcbdf257862378b347172ef71832e293dc
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 496603731eb343a64be1e8d9482ac8d42e6aa79a
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626056"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694400"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (8. oktober 2019)
 
@@ -57,15 +57,15 @@ Funktionaliteten til medarbejdernes indtastning og navigation er nu tilgængelig
 
 Yderligere oplysninger finder du under [Strømlinet medarbejderangivelse](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) i Dynamics 365: 2019 frigivelsesbølge 2-plan.
 
-### <a name="issue-attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Problem: Attract og Onboard opretter inaktive arbejdere i Core HR (380517)
+### <a name="attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Attract og Onboard opretter inaktive arbejdere i Core HR (380517)
 
 I denne uges udgivelse løses et problem, hvor Attract og Onboard opretter inaktive arbejdere i Core HR.
 
-### <a name="issue-the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Problem: Arbejdsgangen mislykkes, når lederen er logget på et andet firma, mens en medarbejderansættelse afsluttes (346852)
+### <a name="the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Arbejdsgangen mislykkes, når lederen er logget på et andet firma, mens en medarbejderansættelse afsluttes (346852)
 
 Arbejdsgangen mislykkes ikke længere på basis af den juridiske enhed, som lederen er logget på.
 
-### <a name="issue-missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Problem: Der mangler oplysninger om HcmOnboardingWorkerChecklistTaskEntity (349591)
+### <a name="missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Der mangler oplysninger om HcmOnboardingWorkerChecklistTaskEntity (349591)
 
 Denne version indeholder yderligere oplysninger om **HcmOnboardingWorkerChecklistTaskEntity**. Her er nogle eksempler:
 
@@ -73,35 +73,35 @@ Denne version indeholder yderligere oplysninger om **HcmOnboardingWorkerChecklis
 - **Medarbejdernavn**, når den tildelte type er **medarbejder**
 - **Ledernavn**, når den tildelte type er **leder**
 
-### <a name="issue-entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Problem: Enheder vises ikke i alfabetisk rækkefølge in Common Data Service Administration (377414)
+### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Enheder vises ikke i alfabetisk rækkefølge in Common Data Service Administration (377414)
 
 Enheder vises nu i alfabetisk rækkefølge på siden **CDS Administration**.
 
-### <a name="issue-changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Problem: Ændring af ansættelsestypen med en fremtidig dato tillader ikke en stillingstildeling (339958)
+### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Ændring af ansættelsestypen med en fremtidig dato tillader ikke en stillingstildeling (339958)
 
 Denne ændring giver mulighed for stillingstildelinger, når arbejdertyper ændres (f.eks. fra medarbejder til kontrahent).
 
-### <a name="issue-updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Problem: Når enheden for Common Data Service-orlovsbanktransaktion opdateres, oprettes en ny post i Talent (352938)
+### <a name="updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Når enheden for Common Data Service-orlovsbanktransaktion opdateres, oprettes en ny post i Talent (352938)
 
 Orlovstransaktionen opdateres nu, når der oprettes en opdatering til Common Data Service i forbindelse med orlovsbanktransaktioner.
 
-### <a name="issue-the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Problem: Titlen på vedhæftede filer til feedbackelementer viser beskrivelsen af feedback (343765)
+### <a name="the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Titlen på vedhæftede filer til feedbackelementer viser beskrivelsen af feedback (343765)
 
 Beskrivelsen af feedback vises ikke længere i titlen til vedhæftede filer.
 
-### <a name="issue-compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Problem: Kompensationsarbejdsgangens kommentarfelt viser forkert indhold (339297)
+### <a name="compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Kompensationsarbejdsgangens kommentarfelt viser forkert indhold (339297)
 
 Denne ændring viser indholdet af feltet **%HcmActionState.HcmWorkerActionComment.Comments%**.
 
-### <a name="issue-workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>Problem: WorkCalendarEntity og WorkCalendarDayEntity fremvises ikke gennem OData (376329)
+### <a name="workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>WorkCalendarEntity og WorkCalendarDayEntity fremvises ikke gennem OData (376329)
 
 I denne version er **WorkCalendarEntity** og **WorkCalendarDayEntity** nu tilgængelige via Open Data Protocol (OData).
 
-### <a name="issue-hcmworkerentity-is-slow-when-odata-is-used-375221"></a>Problem: HCMWorkerEntity er langsom, når OData bruges (375221)
+### <a name="hcmworkerentity-is-slow-when-odata-is-used-375221"></a>HCMWorkerEntity er langsom, når OData bruges (375221)
 
 Ændringer forbedrer ydeevnen af **HCMWorkerEntity**, når Microsoft Excel-projektmappedesigneren bruges.
 
-### <a name="issue-manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Problem: Kladdepost for leder-performance viser en fejl, efter at du har slettet en performance-kladde og oprettet en ny (336061)
+### <a name="manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Kladdepost for leder-performance viser en fejl, efter at du har slettet en performance-kladde og oprettet en ny (336061)
 
 Denne version retter et problem, der opstår, når én performance-kladde er slettet, og der oprettes en ny umiddelbart bagefter. Denne rettelse ændrer funktionaliteten i chefselvbetjening.
 

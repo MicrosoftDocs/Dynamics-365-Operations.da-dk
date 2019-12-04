@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c7675ca0ef2f2477d510c956e63d824a5e6b0980
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177101"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812526"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Nye eller opdaterede opgaveguider (august 2016)
 
@@ -32,7 +32,7 @@ I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet ti
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (august 2016 - alle sprog)
 
-APQC Unified-biblioteket (august 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til Microsoft Dynamics AX-platformopdatering 2 (august 2016), programopdateringen fra maj 2016 til Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan finde flere oplysninger om disse frigivelser i [Nyheder eller ændringer](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md).
+APQC Unified-biblioteket (august 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til Microsoft Dynamics AX-platformopdatering 2 (august 2016), programopdateringen fra maj 2016 til Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan finde flere oplysninger om disse udgivelser under [Nyheder eller ændringer i startsiden for Finance and Operations](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp-systemet](help-overview.md).
 
 ### <a name="data-access"></a>Datarettigheder
 

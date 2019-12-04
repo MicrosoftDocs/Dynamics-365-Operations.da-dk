@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182709"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769872"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få adgang til programmetadata ved hjælp af tilsluttede programmer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Service) i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i Finance and Operations. Du kan få adgang til programmetadata online ved hjælp af det RCS-tilsluttede program. Eksempel på ER-modeltilknytning konfigureres til at give adgang til udenrigshandelstransaktioner. Du skal først fuldføre RCS-trinnene i emnet [Opret en konfigurationsudbyder, og markér den som aktiv](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fuldført trinnene i emnet [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), skal du gå til [eksempelsiden for elektroniske rapporter](https://go.microsoft.com/fwlink/?linkid=862266) for at hente og gemme følgende ER-konfigurationer: Udenrigshandelmetadata.xml, Udenrigshandelmodel.xml, Tilknytning af udenrigshandel.xml og derefter udføre trinnene i proceduren.
+Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Service) i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i Finance and Operations. Du kan få adgang til programmetadata online ved hjælp af det RCS-tilsluttede program. Eksempel på ER-modeltilknytning konfigureres til at give adgang til udenrigshandelstransaktioner. For at fuldføre disse trin skal du i RCS først fuldføre trinnene i emnet [Opret konfigurationsudbydere og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fuldført trinnene i emnet [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), skal du gå til [eksempelsiden for elektroniske rapporter](https://go.microsoft.com/fwlink/?linkid=862266) for at hente og gemme følgende ER-konfigurationer: Udenrigshandelmetadata.xml, Udenrigshandelmodel.xml, Tilknytning af udenrigshandel.xml og derefter udføre trinnene i proceduren.
 
 ## <a name="prerequisites"></a>Forudsætninger
 1. Gå til **Alle arbejdsområder** > **Elektronisk rapportering**. 
-2. Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som **Aktiv**. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren [Opret en konfigurationsudbyder, og markér den som aktiv](er-configuration-provider-mark-it-active-2016-11.md). 
+2. Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som **Aktiv**. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren [Opret konfigurationsudbydere, og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## <a name="get-required-er-configurations"></a>Få de nødvendige ER-konfigurationer
 1. Klik på **Rapporteringskonfigurationer**. 
-2. Hvis du allerede har udført trinnene i proceduren [(RCS) Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), har du allerede alle de nødvendige ER-konfigurationer (konfigurationer af metadata til udenrigshandel, model og tilknytning) i den aktuelle RCS-forekomst. Du kan springe over resten af trinnene i denne underordnede opgave. 
+2. Hvis du allerede har udført trinnene i proceduren [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), har du allerede alle de nødvendige ER-konfigurationer (konfigurationer af metadata til udenrigshandel, model og tilknytning) i den aktuelle RCS-forekomst. Du kan springe over resten af trinnene i denne underordnede opgave. 
 3. Klik på **Udveksling**. 
 4. Klik på **Indlæs fra XML-fil**. 
 5. Klik på **Gennemse**, og vælg filen **Udenrigshandelmetadata.xml**. 
@@ -72,8 +72,8 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 4. I træet skal du vælge **Udenrigshandelmodel\Tilknytning af udenrigshandel**. 
 5. Udvid sektionen **Forudsætninger**. 
 
-> [!NOTE]
-> I øjeblikket refererer denne tilknytning til metadatakonfigurationen. Der tilbydes programmetadata fra denne konfiguration, mens denne modeltilknytning bliver udformet. 
+    > [!NOTE]
+    > I øjeblikket refererer denne tilknytning til metadatakonfigurationen. Der tilbydes programmetadata fra denne konfiguration, mens denne modeltilknytning bliver udformet. 
 
 6. Klik på **Designer**. 
 7. Klik på **Designer**. 
@@ -81,8 +81,8 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 9. Klik på **Tilføj rod**. 
 10. Indtast eller vælg en værdi i feltet **Tabel**. 
 
-> [!NOTE]
-> I øjeblikket refererer denne tilknytning til metadatakonfigurationen. Der tilbydes programmetadata fra denne konfiguration, mens denne modeltilknytning bliver udformet. 
+    > [!NOTE]
+    > I øjeblikket refererer denne tilknytning til metadatakonfigurationen. Der tilbydes programmetadata fra denne konfiguration, mens denne modeltilknytning bliver udformet. 
 
 11. Klik på **Annuller**. 
 12. Luk siden. 
@@ -92,8 +92,8 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 1. Klik på **Rediger**. 
 2. Vælg **MyConnectedApp**-program. 
 
-> [!NOTE]
-> I øjeblikket refererer denne tilknytning til metadataene for det valgte tilsluttede program. Når den samme tilknytning refererer til metadatakonfigurationen og det tilknyttede program samtidig, bruges metadata for det tilknyttede program. 
+    > [!NOTE]
+    > I øjeblikket refererer denne tilknytning til metadataene for det valgte tilsluttede program. Når den samme tilknytning refererer til metadatakonfigurationen og det tilknyttede program samtidig, bruges metadata for det tilknyttede program. 
 
 3. Klik på **Designer**. 
 4. Klik på **Designer**. 
@@ -101,14 +101,14 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 6. Klik på **Tilføj rod**. 
 7. Indtast eller vælg en værdi i feltet **Tabel**. 
 
-> [!NOTE]
-> Der tilbydes mere end to programtabeller nu, da denne tilknytning bruger alle de metadata, der er tildelt det tilknyttede program. 
+    > [!NOTE]
+    > Der tilbydes mere end to programtabeller nu, da denne tilknytning bruger alle de metadata, der er tildelt det tilknyttede program. 
 
 8. Klik på **Annuller**. 
 9. Klik på **Valider**. 
 
-> [!NOTE]
-> Vi har bundet elementer i datamodellen til elementer i de datakilder, der er beskrevet, ved hjælp af oplysninger om metadata for det tilsluttede program, der er tildelt denne tilknytning. 
+    > [!NOTE]
+    > Vi har bundet elementer i datamodellen til elementer i de datakilder, der er beskrevet, ved hjælp af oplysninger om metadata for det tilsluttede program, der er tildelt denne tilknytning. 
 
 10. Luk siden. 
 11. Luk siden. 

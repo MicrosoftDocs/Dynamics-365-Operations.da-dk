@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181789"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771136"
 ---
 # <a name="financial-reporting"></a>Økonomirapportering
 
@@ -47,14 +47,14 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 | Komponent        | Funktioner | Flere oplysninger |
 |------------------|-----------|------------------------|
 | Report Designer  | Opret rapportkomponenter, som kan kombineres for at definere og oprette en rapport. Rapportguiden hjælper mindre erfarne brugere gennem designprocessen. Erfarne brugere kan oprette nye rapportkomponenter eller ændre eksisterende komponenter, der opfylder deres krav. | |
-| Rapportplaner | Planlæg en enkelt rapport eller en gruppe af rapporter, så den oprettes med jævne mellemrum. | [Generere en økonomisk rapport](generate-financial-report.md) |
+| Rapportplaner | Planlæg en enkelt rapport eller en gruppe af rapporter, så den oprettes med jævne mellemrum. | [Generere økonomiske rapporter](generate-financial-report.md) |
 
 ## <a name="features"></a>Funktioner
 <table>
 <thead>
 <tr>
 <th>Funktion</th>
-<th>Betegnelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
@@ -96,4 +96,4 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 </table>
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Generere en økonomirapport](generate-financial-report.md)
+[Generere økonomiske rapporter](generate-financial-report.md)

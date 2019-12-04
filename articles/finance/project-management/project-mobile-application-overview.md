@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 521fdc98c8af51f6f244f9aa606ce047d014edf1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3cb3b25503b559f21c45c0232a8c0abd3e415eb3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250432"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773616"
 ---
 # <a name="project-mobile-applications-overview"></a>Oversigt over Project-mobilprogrammer
 
@@ -45,4 +45,7 @@ Mine timesedler (optimeret til mobilenheder) og Timesedler, som jeg skal gennems
 
 ## <a name="for-more-information"></a>Hvis du vil have flere oplysninger
 
-Yderligere oplysninger finder du i [Microsoft Dynamics 365 Project Timesheet-mobilapp](project-timesheet.md), [Tidsregistrering for projekt]( project-time-entry-mobile-workspace.md), [Projekttimesedler på en mobilenhed](Mobile-timesheets.md) og [Implementere brugerdefinerede felter for Project Timesheet-mobilappen](custom-fields-mobile.md).
+- [Mobilapp til projekttimesedler](project-timesheet.md)
+- [Tidsregistrering for projekt]( project-time-entry-mobile-workspace.md)
+- [Projekttimesedler på en mobilenhed](Mobile-timesheets.md)
+- [Implementer brugerdefinerede felter for Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS og Android](custom-fields-mobile.md)

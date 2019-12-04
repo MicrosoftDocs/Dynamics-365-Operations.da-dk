@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025260"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811774"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skærmlayout til POS
 
@@ -171,7 +171,7 @@ Designeren til knapmatrix giver dig mulighed for at konfigurere knapmatricer, de
 
     - **Handling** – På listen over relevante POS-handlinger skal du vælge den handling, der startes, når der klikkes på knappen i POS.
 
-        Du kan se listen over understøttede POS-handlinger under [POS-handlinger, online og offline](pos-operations.md).
+        Du kan se listen over understøttede POS-handlinger under [Online og offline POS-handlinger](pos-operations.md).
 
     - **Handlingsparametre** – Nogle POS-handlinger bruger flere parametre, når de aktiveres. For handlingen Tilføj produkt kan brugerne f.eks. angive det produkt, der skal tilføjes.
     - **Knaptekst** – Angiv den tekst, der vises på knappen i POS.

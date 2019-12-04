@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9b6c619174be34d5bd4448542e33206a9f3f864
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70adc10cfb4ae446be9ea5d69b14f34f497168a4
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174595"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773604"
 ---
 # <a name="procurement-and-sourcing-in-the-public-sector"></a>Indkøb og forsyning i den offentlige sektor
 
@@ -43,7 +43,7 @@ Før du begynder at justere indstillingerne og angive dine data, skal du:
 
 Du skal muligvis konfigurere følgende indkøbs- og forsyningsfunktioner for offentlige organisationer:
 
--    [Indkøbsordrekoder i den offentlige sektor](purchase-order-codes-public-sector.md) Opret koder og særlige meddelelser til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces.
+-    [Indkøbsordrekoder i den offentlige sektor](purchase-order-codes-public-sector.md): Opret koder og særlige meddelelser til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces.
 
 > [!NOTE]
 > Dette gælder også for Kreditor.
@@ -129,14 +129,14 @@ Lad os sige, at du får vist en indkøbsordrelinje med indkøb, der er bogført 
 <td>400,00</td>
 <td>750,00</td>
 <td>200,00</td>
-<td><p>1.000,00</p></td>
+<td><p>1,000.00</p></td>
 </tr>
 </tbody>
 </table>
 
 
 
-Du kan finde yderligere oplysninger i [Kreditorbetalinger i den offentlige sektor](../../supply-chain/procurement/procurement-sourcing-overview.md) og [Indkøb og forsyning i den offentlige sektor](accounts-payable-public-sector.md).
+Du kan finde yderligere oplysninger i [Oversigt over kreditorbetalinger i den offentlige sektor](../../supply-chain/procurement/procurement-sourcing-overview.md) og [Oversigt over indkøb og forsyning i den offentlige sektor](accounts-payable-public-sector.md).
 
 
 

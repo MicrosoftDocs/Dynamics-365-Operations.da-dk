@@ -1,9 +1,9 @@
 ---
-title: Systemkrav og opdateringspolitik for Talent
-description: I dette emne beskrives kravene til Dynamics 365 Talent. Opdateringspolitikken skitseres også.
+title: Systemkrav for Talent
+description: I dette emne beskrives kravene til Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024154"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818473"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Systemkrav og opdateringspolitik for Talent
+# <a name="talent-system-requirements"></a>Systemkrav for Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -54,7 +54,7 @@ Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 
 ## <a name="supported-microsoft-office-applications"></a>Understøttede Microsoft Office-applikationer
 
-* Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde flere oplysninger om versionskrav i [Fejlfinding af Office-integration](../dev-itpro/office-integration/office-integration-troubleshooting.md "Fejlfinding af Office-integration").
+* Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde yderligere oplysninger om versionskrav i [Fejlfinding af Office-integration](../dev-itpro/office-integration/office-integration-troubleshooting.md "Fejlfinding af Office-integration").
 * Hvis du vil have vist dokumenter, der er genereret med funktionerne Eksport til Excel eller Eksport til Word, skal have Microsoft Office 2007 eller nyere installeret.
 
 ## <a name="regional-availability-languages-and-localization"></a>Regional tilgængelighed, sprog og lokalisering
@@ -66,8 +66,3 @@ Du kan hente en PDF-fil over de lande, regioner og sprog, som Talent understøtt
 
 Hvis du er udvikler, der er interesseret i at oprette lande- eller områdespecifikke tilpasninger, eller i at oprette en løsning for et land eller en region, der ikke understøttes af Microsoft, skal du se [Globalisering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## <a name="update-policy"></a>Opdateringspolitik
-
-Talent serviceres som et skybaseret tilbud. Talent-opdateringer foretages fortløbende og anvendes automatisk af Microsoft.
-
-Opdateringer udgives regelmæssigt og bliver gjort tilgængelige til alle miljøer. Talent understøttes i overensstemmelse med [Microsoft Support Lifecycle-politik](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som giver klare retningslinjer for teknisk support.

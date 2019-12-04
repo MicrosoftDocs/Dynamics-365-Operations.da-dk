@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176952"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771912"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurere anlægsaktiver
 
@@ -43,7 +43,7 @@ Anlægsaktiver tildeles en gruppe, når de oprettes. Som standard tildeles de b�
 
 ## <a name="depreciation-profiles"></a>Afskrivningsprofiler
 
-Du skal først oprette afskrivningsprofiler. I afskrivningsprofilen kan du konfigurere, hvordan værdien af et aktiv afskrives over tid. Du skal angive metoden for afskrivning, afskrivningsår (kalenderår eller regnskabsår) og hyppigheden af afskrivning. Du kan finde flere oplysninger i [Konfigurere og oprette afskrivningsprofiler](tasks/set-up-depreciation-profiles.md).
+Du skal først oprette afskrivningsprofiler. I afskrivningsprofilen kan du konfigurere, hvordan værdien af et aktiv afskrives over tid. Du skal angive metoden for afskrivning, afskrivningsår (kalenderår eller regnskabsår) og hyppigheden af afskrivning. Du kan finde flere oplysninger i [Konfigurer og opret afskrivningsprofiler](tasks/set-up-depreciation-profiles.md).
 
 ## <a name="books"></a>Bøger
 
@@ -51,7 +51,7 @@ Når du har konfigureret afskrivningsprofiler, skal du oprette de krævede bøge
 
 En primære afskrivningsprofil er tilknyttet hver bog. Bøger har også en alternativ eller skifteafskrivningsprofil, hvis denne profiltype er relevant. For at medtage anlægskartoteket automatisk i afskrivningskørsel skal du aktivere **Beregn afskrivning**-indstillingen. Hvis denne indstilling ikke er aktiveret for et aktiv, springer afskrivningsforslaget aktivet over.
 
-Du kan også oprette afledte bøger. De angivne afledte transaktioner bogføres mod de afledte bøger som en nøjagtig kopi af den primære transaktion. Derfor er afledte transaktioner normalt angivet til anskaffelser og kassation, ikke til afskrivningstransaktioner. Du kan finde flere oplysninger under [Opsætning af bøger](tasks/set-up-value-models.md).
+Du kan også oprette afledte bøger. De angivne afledte transaktioner bogføres mod de afledte bøger som en nøjagtig kopi af den primære transaktion. Derfor er afledte transaktioner normalt angivet til anskaffelser og kassation, ikke til afskrivningstransaktioner. Du kan finde flere oplysninger i [Opsætning af værdimodeller](tasks/set-up-value-models.md).
 
 ## <a name="fixed-asset-posting-profiles"></a>Posteringsprofiler for anlægsaktiver
 

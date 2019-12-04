@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfca8ed7bff52592ee57e2ae32f9358789730ced
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9e23aade2af33bc0f62aa11e57de0ad6caacad5d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174584"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773602"
 ---
 # <a name="year-end-processing-in-the-public-sector"></a>Årsafslutningen i den offentlige sektor
 
@@ -46,7 +46,7 @@ Ja, årsafslutningsprocessen kan køres flere gange for det samme sæt af data. 
 Behandling af årsafslutningen for finanskonti styres af konfigurationsindstillingerne for midler på to steder:
 
 -   Årsafslutningsprocessen for ultimofinanssaldi i det gamle regnskabsår og oprettelse af startsaldi for det nye år sker ved hjælp af siden **Primoposter** side. Et enkelt middel eller en række af midler, der kræves til behandling.
--   Årsafslutningens behandlingsindstilling for behæftelser for indkøbsordrer angives på siden **Proces for indkøbsordrers årsafslutning**. Du kan tilsidesætte indstillingen for bestemte midler, forudsat at de finansparametrene er indstillet til at tillade tilsidesættelse. Hvis du vil vide mere om parameterindstillingerne, skal du se under [Finans i den offentlige sektor](general-ledger-public-sector.md).
+-   Årsafslutningens behandlingsindstilling for behæftelser for indkøbsordrer angives på siden **Proces for indkøbsordrers årsafslutning**. Du kan tilsidesætte indstillingen for bestemte midler, forudsat at de finansparametrene er indstillet til at tillade tilsidesættelse. Hvis du vil vide mere om parameterindstillingerne, skal du se under [Oversigt over finans i den offentlige sektor](general-ledger-public-sector.md).
 
 ## <a name="how-do-i-set-up-main-accounts-for-year-end-processing"></a>Hvordan konfigurerer jeg hovedkonti til behandling af årsafslutning?
 Du skal vælge en lukketype for hver konto i din kontoplan. Lukketypen bestemmer, hvordan årsafslutningsprocessen håndterer denne hovedkonto. Der findes fire lukketyper:

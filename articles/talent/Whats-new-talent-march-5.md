@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 561b6fad0facad86e9a7bc8f36218ab98fcec73c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026664"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773259"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (5. marts 2019)
 
@@ -71,7 +71,7 @@ Med denne ændring får lønfelterne nu de aktuelle standardværdier, når der a
 Andre mindre fejlrettelser er medtaget i denne version.
 
 ### <a name="upgrade-to-common-data-service"></a>Opgrader til Common Data Service
-Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Fristerne for at opgradere til Common Data Service nærmer sig med hastige skridt. Log på Power Apps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 

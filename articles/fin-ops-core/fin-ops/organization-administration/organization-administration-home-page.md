@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177064"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811307"
 ---
 # <a name="organization-administration-home-page"></a>Startside for organisationsadministration
 
@@ -34,10 +34,10 @@ Meget af indholdet, der vises her, gælder for funktioner i modulet **Virksomhed
 
 ## <a name="number-sequences"></a>Nummerserier
 
-Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer. En masterdatapost eller transaktionspost, der kræver et id, kaldes en *reference*. Før du kan oprette nye poster for en reference, skal du konfigurere en nummerserie og knytte den til referencen.
+Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer. En masterdatapost eller transaktionspost, der kræver et id, kaldes en *reference*. Før du kan oprette nye poster til en reference, skal du konfigurere en nummerserie og knytte den til referencen.
 
 - [Oversigt over nummerserier](number-sequence-overview.md)
-- [Opret nummerserier vha. en guide](tasks/set-up-number-sequences-wizard.md) (opgaveguide)
+- [Opret nummerserier ved hjælp af en guide](tasks/set-up-number-sequences-wizard.md) (opgaveguide)
 - [Opret nummerserier på individuel basis](tasks/set-up-number-sequences-individual-basis.md) (opgaveguide)
 
 ## <a name="organizations"></a>Organisationer
@@ -46,7 +46,7 @@ En organisation er en grupper personer, der arbejder sammen for at udføre en fo
 
 Før du opretter organisationer og organisationshierarkier, skal du sørge for at planlægge, hvordan din virksomhed skal udformes. Organisationsmodellen har en væsentlig indvirkning på implementeringen og forretningsprocesserne.
 
-- [Organisationer og organisationshierarkier](organizations-organizational-hierarchies.md)
+- [Oversigt over organisationer og organisationshierarkier](organizations-organizational-hierarchies.md)
 - [Planlægge dit organisationshierarki](plan-organizational-hierarchy.md)
 - [Opret et organisationshierarki](tasks/create-organization-hierarchy.md) (opgaveguide)
 - [Opret en juridisk enhed](tasks/create-legal-entity.md) (opgaveguide)
@@ -58,8 +58,8 @@ Det globale adressekartotek er et centraliseret lager til masterdata, der skal g
 
 Når du opretter det globale adressekartotek, kan du oprette yderligere adressekartoteker, du ønsker, som et separat adressekartotek for hvert firma i organisationen eller for hvert forretningsområde.
 
-- [Globalt adressekartotek](overview-global-address-book.md)
-- [Planlæg, hvordan du vil konfigurere det globale adressekartotek og yderligere adressekartoteker](plan-configuration-global-address-book-additional-address-books.md)
+- [Oversigt over globalt adressekartotek](overview-global-address-book.md)
+- [Planen for det globale adressekartotek og andre adressekartoteker](plan-configuration-global-address-book-additional-address-books.md)
 - [Konfigurere det globale adressekartotek](tasks/configure-global-address-book.md)
 - [Ofte stillede spørgsmål om adressekartoteker](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Når du opretter det globale adressekartotek, kan du oprette yderligere adressek
 
 Arbejdsgang er et system, som du kan bruge til oprette individuelle arbejdsgange eller forretningsprocesser. Når du oprette en arbejdsgang, angiver du, hvordan et dokument "flyder" eller bevæger sig gennem systemet, ved at vise, hvem der skal udføre en opgave, træffe en beslutning eller godkende et dokument.
 
-- [Oversigt over arbejdsgang](overview-workflow-system.md)
+- [Oversigt over arbejdsgangssystem](overview-workflow-system.md)
 - [Arbejdsgangselementer](workflow-elements.md)
-- [Arbejdsgangshandlinger](workflow-actions.md)
-- [Opret en arbejdsgang](create-workflow.md)
+- [Handlinger i godkendelsesprocesser i arbejdsgang](workflow-actions.md)
+- [Oversigt over oprettelse af arbejdsgange](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Elektroniske signaturer
 
@@ -86,15 +86,15 @@ Du kan bruge elektroniske signaturer til kritiske forretningsprocesser. Nogle pr
 Ved at planlægge, spore og analysere sager kan du lettere finde frem til effektive løsninger, der også kan bruges til andre tilsvarende sager. Hvis medarbejdere i kundeservice eller personaleafdelingen f.eks. opretter sager, kan de finde videnartikler med oplysninger om, hvordan de kan arbejde med en sag eller løse den mere effektivt.
 
 - [Oversigt over sagsstyring](cases.md)
-- [Konfigurere sagssikkerhed, -processer og -kategorier](plan-case-management.md)
+- [Planlæg sagssikkerhed, sagsprocesser og sagskategorier](plan-case-management.md)
 
 ## <a name="record-templates"></a>Postskabeloner
 
 Med postskabeloner kan du hurtigere oprette poster. Du kan oprette en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post.
 
-- [Postskabeloner](record-templates.md)
+- [Oversigt over postskabeloner](record-templates.md)
 - [Oprette en postskabelon for at lette dataindtastning](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (opgaveguide)
-- [Bruge en postskabelon til at oprette en ny post](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (opgaveguide)
+- [Brug postskabelon til at oprette en ny post](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (opgaveguide)
 
 ## <a name="general-organization-administration"></a>Generel virksomhedsadministration
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9afa98156c58d10c19454430769a3d60343661dc
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550951"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811643"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Brug Regression Suite Automation Tool
 
@@ -44,7 +44,7 @@ Du kan finde flere oplysninger om denne funktion under [Redigere en eksisterende
 
 ### <a name="derived-test-case"></a>Afledt testsag
 
-1. Åbn RSAT (Regression Suite Automation Tool), og vælg begge testsager, du har oprettet i [Konfigurere og installere selvstudium til Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
+1. Åbn Regression suite automation tool (RSAT), og vælg begge testsager, du har oprettet i [Konfigurere og installere selvstudium til Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
 2. Vælg **Ny \> Opret afledt testsag**.
 
     ![Kommandoen Opret afledt testsag i menuen Ny](./media/use_rsa_tool_01.png)
@@ -273,7 +273,7 @@ Kunde-id'et har formatet *ATCUS\<tal\>*, hvor \<tal\> er en værdi mellem **0000
 
 I følgende eksempel bruges en parameter, **start**, til at definere det første tal, der bruges. Er bruger en anden parameter, **nr**, til at det definere det antal kunder, der skal oprettes. For hver gentagelse ændres parametrene i Excel-parameterfilen ved hjælp af en UpdateCustomer-funktion. Derefter kaldes RSAT-kommandolinjen i en RunTestCase-funktion.
 
-Åbn Microsoft Windows PowerShell Integrated Scripting Environment (ISE) i admininistratortilstand, og indsæt følgende kode i det vindue, der hedder**Uden titel.ps1**.
+Åbn Microsoft Windows PowerShell Integrated Scripting Environment (ISE) i admininistratortilstand, og indsæt følgende kode i det vindue, der hedder **Uden titel.ps1**.
 
 ```
 param ( [int]$start = 1, [int]$nr = 1 )

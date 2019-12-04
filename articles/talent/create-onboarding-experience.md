@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008122"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813931"
 ---
 # <a name="get-started-with-onboard"></a>Komme i gang med Onboard
 
@@ -35,17 +35,17 @@ Onboard giver dig mulighed for hurtigt at oprette en onboarding-guide, der vil b
 
 Du kan få mere at vide om, hvordan du får og bruger appen Onboard, i følgende emner:
 
-- [Hente Onboard-appen](./onboard-get-app.md)
-- [Oprette en onboardingguide](./onboard-create-guide.md)
-- [Oprette en onboardingskabelon](./onboard-create-template.md)
-- [Redigere onboardingguider og -skabeloner](./onboard-edit-guides-templates.md)
-- [Dele indhold med andre bidragydere](./onboard-share-template.md)
-- [Se status for opgaver og onboarding af medarbejdere](./onboard-view-status.md)
-- [Oprette ansættelsesteam i Onboard](./onboard-create-team.md)
+- [Hent appen Dynamics 365 Talent - Onboard](./onboard-get-app.md)
+- [Opret og send en onboardingguide ved hjælp af Dynamics 365 Talent - Onboard](./onboard-create-guide.md)
+- [Opret en onboardingskabelon ved hjælp af Dynamics 365 Talent - Onboard](./onboard-create-template.md)
+- [Rediger onboardingguider og -skabeloner i Dynamics 365 Talent - Onboard](./onboard-edit-guides-templates.md)
+- [Del indhold med andre bidragydere i Dynamics 365 Talent - Onboard](./onboard-share-template.md)
+- [Se status for onboarding af medarbejdere og dine opgaver](./onboard-view-status.md)
+- [Opret et ansættelsesteam ved hjælp af Dynamics 365 Talent - Onboard](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Se også
 
 - [Prøve eller købe appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheder](./whats-new.md)
-- [Frigivelsesnoter](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md)
+- [Frigivelsesplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support til Microsoft Dynamics 365 Talent](./talent-support.md)

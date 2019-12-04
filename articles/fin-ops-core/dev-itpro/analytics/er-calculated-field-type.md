@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550078"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771323"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 
@@ -55,7 +55,7 @@ Fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) 
 | Eksempler på ER-formatkonfiguration        | Format til at lære parameteriserede calls.version.1.1.xml  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Log på din RCS-forekomst
-I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware Inc. Først skal du i RCS fuldføre disse trin i proceduren [Opret en konfigurationsudbyder, og markér den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):
+I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware Inc. Først skal du i RCS fuldføre disse trin i proceduren [Opret konfigurationsudbydere, og markér dem som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):
 
 1. Vælg **Elektronisk rapportering**på standarddashboardet.
 2. Vælg **Rapporteringskonfigurationer**.
@@ -75,21 +75,21 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
 3. Vælg **Designer**.
 4. Vælg **Designer**.  
    
-Denne ER-modeltilknytning er beregnet til at gøre følgende:
+    Denne ER-modeltilknytning er beregnet til at gøre følgende:
 
-- Hent listen over momskoder (**Moms**-datakilde), der findes i **TaxTrans**-tabellen.
-- Hent listen over momstransaktioner (**Trans**-datakilde), der findes i **TaxTrans**-tabellen:
+    - Hent listen over momskoder (**Moms**-datakilde), der findes i **TaxTrans**-tabellen.
+    - Hent listen over momstransaktioner (**Trans**-datakilde), der findes i **TaxTrans**-tabellen:
     
-    - Grupper listen over hentede transaktioner (**Gr**-datakilde) efter momskode.
-    - Beregn for grupperede transaktioner følgende aggregerede værdier pr. momskode:
+        - Grupper listen over hentede transaktioner (**Gr**-datakilde) efter momskode.
+        - Beregn for grupperede transaktioner følgende aggregerede værdier pr. momskode:
 
-        - Summen af momsgrundlagsværdier.
-        - Summen af momsværdier.
-        - Minimumværdi for anvendt momssats.
+            - Summen af momsgrundlagsværdier.
+            - Summen af momsværdier.
+            - Minimumværdi for anvendt momssats.
 
-Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i Finance and Operations. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
+    Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i Finance and Operations. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
 
-  ![Siden Modeltilknytningsdesigner, der viser moms- og gr-datakilder](media/er-calculated-field-type-01.png)
+    ![Siden Modeltilknytningsdesigner, der viser moms- og gr-datakilder](media/er-calculated-field-type-01.png)
 
 5.  Luk siden **Modeltilknytningsdesigner**.
 6.  Luk siden **Modeltilknytning**.
@@ -100,25 +100,25 @@ Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for eth
 2. Vælg **Format til at lære parameteriserede kald**.
 3. Vælg **Designer**. Dette ER-format er designet til at gøre følgende:
 
-  - Generer en momsafstemning i XML-format.
-  - Præsenter følgende beskatningsniveauer i momsangivelsen: normal, reduceret og ingen.
-  - Vis flere detaljer på hvert beskatningsniveau med forskellige antal detaljer inden for hvert niveau.
+    - Generer en momsafstemning i XML-format.
+    - Præsenter følgende beskatningsniveauer i momsangivelsen: normal, reduceret og ingen.
+    - Vis flere detaljer på hvert beskatningsniveau med forskellige antal detaljer inden for hvert niveau.
 
-  ![Siden Formatdesigner](media/er-calculated-field-type-02.png)
+    ![Siden Formatdesigner](media/er-calculated-field-type-02.png)
 
 4. Vælg **Tilknytning**.
 5. Udvid elementerne **Model**, **Data** og **Resume**. 
 
-   Det beregnede felt **Model.Data.Summary.Level** indeholder det udtryk, der returnerer koden for beskatningsniveauet (**Almindelig**, **Reduceret**, **Ingen** eller **Andet**) som en tekstværdi for enhver momskode, der kan hentes fra **Model.Data.Summary**-datakilden på kørselstidspunktet.
+    Det beregnede felt **Model.Data.Summary.Level** indeholder det udtryk, der returnerer koden for beskatningsniveauet (**Almindelig**, **Reduceret**, **Ingen** eller **Andet**) som en tekstværdi for enhver momskode, der kan hentes fra **Model.Data.Summary**-datakilden på kørselstidspunktet.
 
-  ![Siden Formatdesigner, der viser oplysninger om datamodellen Model til at lære om parameteriserede kald.](media/er-calculated-field-type-03.png)
+    ![Siden Formatdesigner, der viser oplysninger om datamodellen Model til at lære om parameteriserede kald.](media/er-calculated-field-type-03.png)
 
 6. Udvid elementet **Model**.**Data2**.
 7. Udvid elementet **Model**.**Data2.Summary2**.
    
-   **Model**.**Data2.Summary2**-datakilden er konfigureret til at gruppere **Model.Data.Summary**-datakildens transaktionsoplysninger efter beskatningsniveau (returneret af det beregnede felt **Model.Data.Summary.Level**) og beregne aggregeringerne.
+    **Model**.**Data2.Summary2**-datakilden er konfigureret til at gruppere **Model.Data.Summary**-datakildens transaktionsoplysninger efter beskatningsniveau (returneret af det beregnede felt **Model.Data.Summary.Level**) og beregne aggregeringerne.
 
-  ![Siden Formatdesigner, der viser detaljer om Model.Data2.Summary2-datakilden](media/er-calculated-field-type-04.png)
+    ![Siden Formatdesigner, der viser detaljer om Model.Data2.Summary2-datakilden](media/er-calculated-field-type-04.png)
 
 8. Gennemse de beregnede felter **Model**.**Data2.Level1**, **Model**.**Data2.Level2** og **Model**.**Data2.Level3.** Disse beregnede felter bruges til at filtrere **Model**.**Data2. Summary2**-postlisten og kun returnere poster, der repræsenterer et bestemt beskatningsniveau.
 9. Luk siden **Formatdesigner**.
@@ -309,7 +309,7 @@ Når et beregnet felt med parametre returnerer en post, skal du understøtte bin
 Du kan køre det første og det forbedrede ER-format for at sikre dig, at konfigurerede parameteriserede beregnede felter fungerer korrekt.
 
 ### <a name="import-er-configurations"></a>Importér ER-konfigurationer
-Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af typen **RCS**. Hvis du allerede har gennemgået trinnene i emnet, kan du [Importere konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md), kan du bruge det konfigurerede ER-lager til at importere konfigurationer, der er beskrevet tidligere i dette emne, for dit miljø. Ellers kan du udføre disse trin:
+Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af typen **RCS**. Hvis du allerede har gennemgået trinnene i emnet, kan du [Importere konfigurationer af Elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md), og bruge det konfigurerede ER-lager til at importere konfigurationer, der er beskrevet tidligere i dette emne, for dit miljø. Ellers kan du udføre disse trin:
 
 1. Vælg **DEMF**-firma, og vælg **Elektronisk rapportering** i standarddashboardet.
 2. Vælg **Rapporteringskonfigurationer**.
@@ -339,4 +339,4 @@ Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af 
 8. Sammenlign indholdet af de genererede output.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
+[Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278368"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811111"
 ---
 # <a name="product-recommendations-on-pos"></a>Produktanbefalinger på POS
 
@@ -40,13 +40,13 @@ Produktanbefalinger er aktiveret for følgende POS-scenarier. De er tilgængelig
 
 1. På siden **Produktdetaljer**:
 
-    - • Hvis en butiksansat går ind på siden **Produktdetaljer**, når vedkommende ser på tidligere transaktioner på tværs af forskellige kanaler, foreslår anbefalingstjenesten flere varer, det er sandsynligt at købe sammen.
+    - Hvis en medarbejder går ind på siden **Produktdetaljer**, når vedkommende ser på tidligere transaktioner på tværs af forskellige kanaler, foreslår anbefalingstjenesten flere varer, det er sandsynligt at købe sammen.
 
     [![Anbefalinger på siden Produktdetaljer](./media/proddetails.png)](./media/proddetails.png)
 
 2. På siden **Transaktion**:
 
-    - • Anbefalingsprogrammet foreslår varer baseret på hele listen med varer i kurven, der ofte købes sammen.
+    - Anbefalingsprogrammet foreslår varer baseret på hele listen med varer i kurven, der ofte købes sammen.
 
     > [!NOTE]
     > For at få vist anbefalinger på siden **Transaktion** skal forhandleren opdatere skærmlayoutet i Dynamics 365 for Retail. Kontrolelementet **Anbefalinger** skal slippes på siden **Transaktion**.
@@ -69,10 +69,12 @@ Benyt følgende fremgangsmåde for at konfigurere produktanbefalinger:
 
 - Gå til **Detailparametre** \> **Anbefalingslister** \> **Deaktiver produktanbefalinger**, og kør **Globalt konfigurationsjob \[9999\]**. 
 - Hvis du har føjet **Kontrolelement til anbefalinger** til din transaktionsskærm ved hjælp af **Designer for skærmlayout**, skal du også fjerne det.
-- Hvis du har flere spørgsmål, kan du se [Ofte stillede spørgsmål om anbefalinger](../commerce/faq-recommendations.md) for at få yderligere oplysninger.
+- Hvis du har flere spørgsmål, kan du se [Ofte stillede spørgsmål om produktanbefalinger](../commerce/faq-recommendations.md) for at få yderligere oplysninger.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Tilføje et kontrolelement for anbefalinger på transaktionssiden på en POS-enhed](add-recommendations-control-pos-screen.md)
+[Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder](add-recommendations-control-pos-screen.md)
+
 [Oversigt over produktanbefalinger](../commerce/product-recommendations.md)
-[Aktivere produktanbefalinger](../commerce/enable-product-recommendations.md) 
+
+[Aktivér produktanbefalinger](../commerce/enable-product-recommendations.md) 

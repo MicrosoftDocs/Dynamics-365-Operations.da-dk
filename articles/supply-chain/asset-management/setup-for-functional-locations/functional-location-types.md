@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571248"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812208"
 ---
 # <a name="functional-location-types"></a>Arbejdsstedstyper
 
@@ -56,7 +56,7 @@ Nu oprettes den standardarbejdsstedstype, der kun skal bruges til et standardarb
 3. Indsæt et arbejdsstedstype-id i feltet **Arbejdsstedstype** og et navn i feltet **Navn**.
 4. Vælg en livscyklusmodel i feltet **Livscyklusmodel for arbejdssted**. Se [Livscyklustilstande for arbejdssted](../setup-for-functional-locations/functional-location-stages.md) for at få flere oplysninger om livscyklustilstande for arbejdssteder og livscyklusmodeller.
 5. Vælg "Ja" på til/fra-knappen **Flere aktiver** for at tillade, at flere aktiver må installeres på et arbejdssted ved hjælp af denne arbejdsstedstype. Hvis du vælger "Nej", kan du kun installere *ét* aktiv på et arbejdssted ved hjælp af denne arbejdsstedstype.
-6. Vælg "Ja" på til/fra-knappen **Opdater aktivdimension**, hvis du ønsker, at aktiver, der er installeret på et arbejdssted af denne type, automatisk skal bruge de økonomiske dimensioner, der er relateret til arbejdsstedet. Det betyder, at hvis du ændrer økonomiske dimensioner i formen [Arbejdssted](../functional-locations/create-functional-locations.md), og arbejdsstedet bruger en arbejdsstedstype, hvor denne til/fra-knap er angivet til "Ja", opdateres økonomiske dimensioner automatisk på alle aktiver, der er installeret på dette arbejdssted.
+6. Vælg "Ja" på til/fra-knappen **Opdater aktivdimension**, hvis du ønsker, at aktiver, der er installeret på et arbejdssted af denne type, automatisk skal bruge de økonomiske dimensioner, der er relateret til arbejdsstedet. Det betyder, at hvis du ændrer økonomiske dimensioner i formlen [Opret arbejdssteder](../functional-locations/create-functional-locations.md), og arbejdsstedet bruger en arbejdsstedstype, hvor denne til/fra-knap er angivet til "Ja", opdateres økonomiske dimensioner automatisk på alle aktiver, der er installeret på dette arbejdssted.
 7. Feltet **Aktivtype** bruges, hvis du automatisk vil oprette *ét* aktiv for arbejdsstedet med det samme id og navn som det arbejdssted, du opretter. Dette kan for eksempel være relevant, hvis du opretter et statisk arbejdssted, f.eks en bygning eller pipeline. I så fald skal du vælge den aktivtype, du vil bruge til det automatisk oprettede aktiv. Husk, at hvis du foretager et valg i dette felt, skal til/fra-knappen **Flere aktiver** være indstillet til "Nej".
 8. I oversigtspanelet **Aktivtyper** skal du vælge de aktivtyper, der skal relateres til arbejdsstedstypen. Vælg **Tilføj linje**, og vælg aktivtyperne. Hvis du tilføjer aktivtyper her, kan kun aktiver, der bruger disse aktivtyper, installeres på et arbejdssted ved hjælp af denne arbejdsstedstype. Hvis der ikke er valgt nogen aktivtyper i oversigtspanelet **Aktivtyper**, kan alle aktivtyper være installeret.
 9. I oversigtspanelet **Vedligeholdelsesplaner** skal du vælge de vedligeholdelsesplaner, der automatisk skal konfigureres på nye arbejdssteder ved hjælp af denne arbejdsstedstype. Vælg **Tilføj linje**, og vælg vedligeholdelsesplanerne. Hvis du tilføjer vedligeholdelsesplaner her, er det kun disse planer, der kan bruges på et arbejdssted ved hjælp af denne arbejdsstedstype.

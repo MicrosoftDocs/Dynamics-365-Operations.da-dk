@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653317"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812254"
 ---
 # <a name="register-consumption"></a>Registrere forbrug
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653317"
 
 Når et vedligeholdelsesjob er fuldført i en arbejdsordre, er det næste trin at foretage registrering af forbrug og bogføre kladderne. Du kan foretage registreringer på følgende forbrugstyper: timer, varer og udgifter. De forskellige typer af forbrug registreres og bogføres på siden **Arbejdsordrekladder**. Kladdeopsætningen i **Styring af aktiver** bruges til at oprette og bogføre separate kladder for timer, varer og udgifter i modulet **Projektstyring og regnskab**.
 
-Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre i visse tilfælde. Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne for projekttypen bestemmer, om du kan tilføje eller redigere kladdelinjer. Læs mere om livscyklustilstande for produktionsordrer og relaterede projektstadier i [Integration med projektstyring og regnskab](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre i visse tilfælde. Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne for projekttypen bestemmer, om du kan tilføje eller redigere kladdelinjer. Du kan læse mere om arbejdsordrers livscyklustilstande og relaterede projektstadier i [Budgetter, arbejdsordrer og projekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Det er muligt at konfigurere automatisk bogføring af kladder på en livscyklustilstand for en arbejdsordre. Du kan finde flere oplysninger i [Livscyklustilstande for arbejdsordrer](../setup-for-work-orders/work-order-lifecycle-states.md).

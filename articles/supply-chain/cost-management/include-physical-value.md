@@ -3,7 +3,7 @@ title: Medtag fysisk værdi
 description: Du skal bruge afkrydsningsfeltet Medtag fysisk værdi i oversigtspanelet Lagermodel på siden Varemodelgrupper til at angive, om fysisk opdaterede transaktioner medtages, når varens løbende gennemsnitlige kostpris beregnes.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96d5e2a658a027d66663868329cf4eedcb1d46f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 834438f8389e295bbb992f0b8397ff45559690c3
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551965"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2692991"
 ---
 # <a name="include-physical-value"></a>Medtag fysisk værdi
 
@@ -47,10 +47,16 @@ Afkrydsningsfeltet har lidt forskellige effekter, afhængigt af hvilken lagermod
 
 **Eksempel 1** Du har markeret afkrydsningsfeltet **Medtag fysisk værdi** og modtager følgende indkøbsordrer:
 
--   En indkøbsordre på et antal på 2 og en kostpris på kr. 10,00, der er følgeseddelopdateret
--   En indkøbsordre på et antal på 3 og en kostpris på kr. 12,00, der er fakturaopdateret
+-   En indkøbsordre for et antal af 2 og en kostpris på kr. 10,00, der er følgeseddelopdateret.
+-   En indkøbsordre for et antal af 3 og en kostpris på kr. 12,00, der er fakturaopdateret.
 
-I dette tilfælde er den løbende gennemsnitlige kostpris kr. 11,20, da både de fysisk og økonomisk opdaterede transaktioner bruges til at beregne kostprisen. **Eksempel 2** Du har ikke markeret afkrydsningsfeltet **Medtag fysisk værdi**, og kostprisen i vareopsætningen er kr. 10,00. Du modtager en indkøbsordre på et antal på 20 og en kostpris på kr. 12,00, der er følgeseddelopdateret. Når en salgsordre bogføres, bogføres kostbeløbet på kr. 10,00, da den løbende gennemsnitlige kostpris ikke inkluderer fysisk bogførte transaktioner. **Bemærk!** Til sammenligning: Hvis du markerer afkrydsningsfeltet **Medtag fysisk værdi** for denne vare, når en salgsordre bogføres, er det bogførte kostbeløb kr. 12,00.
+I dette tilfælde er den løbende gennemsnitlige kostpris kr. 11,20 = (2x10+3x12)/(2+3), da både de fysisk og økonomisk opdaterede transaktioner bruges til at beregne kostprisen. 
 
+**Eksempel 2** Du har ikke markeret afkrydsningsfeltet **Medtag fysisk værdi**, og kostprisen i vareopsætningen er kr. 10,00. 
 
+-   Du modtager en indkøbsordre på et antal på 20 og en kostpris på kr. 12,00, der er følgeseddelopdateret.
 
+Når en salgsordre bogføres, bogføres kostbeløbet på kr. 10,00, da den løbende gennemsnitlige kostpris ikke inkluderer fysisk bogførte transaktioner. 
+
+> [!NOTE]
+> Til sammenligning: Hvis du markerer afkrydsningsfeltet **Medtag fysisk værdi** for denne vare, når en salgsordre bogføres, er det bogførte kostbeløb kr. 12,00.

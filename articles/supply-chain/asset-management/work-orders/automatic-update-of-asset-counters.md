@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 005b04bd4c3476356f30ba8e97564f83307a64c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626172"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811734"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk opdatering af aktivtællere
 
@@ -43,16 +43,16 @@ Som nævnt ovenfor kan automatiske tællere opdateres fra produktionsregistrerin
 
 2. Vælg startdatoen for den automatiske opdatering i feltet **Fra-dato**.
 
->[!NOTE]
->Datoen i dette felt er datoen for "igangværende arbejde" fra **Ruteposteringer** (**Produktionsstyring** > **Forespørgsler og rapporter** > **Produktion** > **Ruteposteringer** > **Fysisk dato**-felt).
+    >[!NOTE]
+    >Datoen i dette felt er datoen for "igangværende arbejde" fra **Ruteposteringer** (**Produktionsstyring** > **Forespørgsler og rapporter** > **Produktion** > **Ruteposteringer** > **Fysisk dato**-felt).
 
 3. I oversigtspanelet **Poster, der skal indgå** kan du vælge bestemte aktiver, aktivtyper eller ressourcer til den automatiske opdatering. Vælg **filter**, og foretag de relevante valg.
 
 4. I oversigtspanelet **Kør i baggrunden** kan du konfigurere automatisk opdatering som et batchjob efter behov.
 
-I illustrationen nedenfor vises et eksempel på dialogboksen **Opdater aktivtællere**.
+    I illustrationen nedenfor vises et eksempel på dialogboksen **Opdater aktivtællere**.
 
-![Figur 1](media/12-work-orders.png)
+    ![Figur 1](media/12-work-orders.png)
 
 5. Vælg **OK**. 
 

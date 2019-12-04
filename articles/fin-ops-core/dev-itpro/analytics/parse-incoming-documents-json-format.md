@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185261"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772529"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Analysere indgående dokumenter i JSON-format
 
@@ -46,7 +46,7 @@ Før du fuldfører ER-konfigurationen Opret et format for at importere data fra 
 - JSON-arrays kan kun være indlejrede elementer for et objekts egenskabselementer.
 - JSON-arrays kan kun indeholde JSON-objekter. De må ikke indeholde direkte strengværdier/numeriske værdier og indlejrede arrays. Elementerne i disse arrays parses i den rækkefølge, de er angivet i i formatet. Indstillingerne for multiplicitet på alle JSON-objekter vil blive taget i betragtning.
 
-Derudover skal du fuldføre opgaveguiden [Oprette krævede konfigurationer til import af data fra en ekstern fil til elektronisk rapportering (ER)](tasks/er-required-configurations-import-data.md), hvis du ikke allerede har fuldført den. Hent følgende fil for at fuldføre opgaveguiden.
+Derudover skal du fuldføre opgaveguiden [Opret de krævede konfigurationer til import af data fra en ekstern fil](tasks/er-required-configurations-import-data.md), hvis du ikke allerede har fuldført den. Hent følgende fil for at fuldføre opgaveguiden.
 
 | Stilling                  | Filnavn |
 |------------------------|-----------|

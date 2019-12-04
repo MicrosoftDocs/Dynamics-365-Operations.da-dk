@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c0d9b8708df413118d6e1c1dbe788ce4f6ed5b2f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250731"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815174"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
@@ -56,7 +56,7 @@ Feltet **Startdato for prognosegrundlag** - **Fra-dato** skal være indstillet t
 
 Feltet **Startdato for prognosegrundlag** - **Fra-dato** kan indstilles til en dato i fortiden. Med andre ord er det muligt at generere en behovsprognose i fortiden. Dette er nyttigt, fordi brugerne får mulighed for at justere parametrene i prognosetjenesten, så den statistiske prognose, der er genereret i fortiden, svarer til det faktiske historiske behov. Brugere kan derefter fortsætte med at bruge disse parameterindstillingerne til at generere et statistisk prognosegrundlag for fremtiden. 
 
-Manuelle justeringer, der er foretaget i tidligere gentagelser af behovsprognoser, kan automatisk anvendes på den grundlagsprognose, hvis afkrydsningsfeltet **Overfør manuelle justeringer til behovsprognosen**. Hvis afkrydsningsfeltet er markeret, føjes de manuelle justeringer ikke til grundlagsprognosen – men de slettes ikke. Manuelle justeringer, der er foretaget på prognose, kan kun slettes, når prognosen importeres. Det gøres ved at fjerne markeringen af **Importér de manuelle justeringer, der er foretaget af behovsprognosegrundlaget**. Manuelle justeringer gemmes på godkendelsestidspunktet. Hvis en bruger derfor foretager manuelle justeringer i prognosen, men ikke godkender prognosen tilbage til Supply Chain Management, går ændringerne tabt. Få flere oplysninger om manuelle justeringer, og hvordan de fungerer, under [Godkendelse af den justerede prognose](authorize-adjusted-forecast.md). 
+Manuelle justeringer, der er foretaget i tidligere gentagelser af behovsprognoser, kan automatisk anvendes på den grundlagsprognose, hvis afkrydsningsfeltet **Overfør manuelle justeringer til behovsprognosen**. Hvis afkrydsningsfeltet er markeret, føjes de manuelle justeringer ikke til grundlagsprognosen – men de slettes ikke. Manuelle justeringer, der er foretaget på prognose, kan kun slettes, når prognosen importeres. Det gøres ved at fjerne markeringen af **Importér de manuelle justeringer, der er foretaget af behovsprognosegrundlaget**. Manuelle justeringer gemmes på godkendelsestidspunktet. Hvis en bruger derfor foretager manuelle justeringer i prognosen, men ikke godkender prognosen tilbage til Supply Chain Management, går ændringerne tabt. Få flere oplysninger om manuelle justeringer, og hvordan de fungerer, under [Godkend en justerede prognose](authorize-adjusted-forecast.md). 
 
 Behovsprognosegenerering kan have et navn og kommentarer, så brugerne kan identificere den prognose, der er blevet genereret. Disse værdier er synlige i oversigten over prognosegenereringen på siden **Genereringshistorik for statistisk budgetgrundlag**. 
 
@@ -75,6 +75,6 @@ Hvis prognosen ikke er oprettet for en lang række varer, men for eksempel for �
 
 - [Konfigurere behovsprognoser](demand-forecasting-setup.md)
 
-- [Foretage manuelle reguleringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
+- [Foretage manuelle justeringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
-- [Godkende den justerede prognose](authorize-adjusted-forecast.md)
+- [Autorisere en justeret prognose](authorize-adjusted-forecast.md)

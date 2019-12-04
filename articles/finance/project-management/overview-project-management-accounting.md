@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185629"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770353"
 ---
 # <a name="project-management-and-accounting-overview"></a>Oversigt over projektstyring og regnskab
 
@@ -72,7 +72,7 @@ Yderligere oplysninger om projektkontrakter finder du i [Projektkontrakter](proj
 
 Detaljeringsgraden i et WBS afhænger af niveauet af nøjagtighed, der kræves i estimater og niveauet for registrering, der kræves mod disse estimater. Projekter, som har meget lav tolerance for forsinkelser i tidsplan eller omkostninger, kræver normalt en mere detaljeret WBS og kræver også omhyggelig sporing af igangværende arbejder og omkostninger i forhold til WBS. 
 
-Du kan finde flere oplysninger i [Arbejdsopgavehierarkier](work-breakdown-structures.md).
+Du kan finde flere oplysninger i [Oversigt over Arbejdsopgavehierarkier](work-breakdown-structures.md).
 
 ### <a name="create-project-forecasts-and-budgets"></a>Oprette projektprognoser og budgetter
 
@@ -134,7 +134,7 @@ Under udførelse af projekter registrerer teammedlemmer eller ledere arbejde og 
 
 En WBS er en beskrivelse af det arbejde, der skal udføres for et projekt. En WBS er et hierarki af opgaver. Den repræsenterer ikke kun arbejde for hver opgave, men også opgavens størrelse, omkostninger og varighede. 
 
-Du kan finde flere oplysninger i [Arbejdsopgavehierarkier](work-breakdown-structures.md).
+Du kan finde flere oplysninger i [Oversigt over Arbejdsopgavehierarkier](work-breakdown-structures.md).
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Administrere projektprognoser og -budgetter
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186595"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771839"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
@@ -84,14 +84,14 @@ Den første mulighed er at bruge hovedkontiene fra kilderegnskaberne. I så fald
 
 Den anden mulighed er at angive en standardkoncernkonto på siden **Hovedkonti**. Kontoen knyttes derefter til koncernkontoen. Denne mulighed kan være nyttig, når du har forskellige kontoplaner eller skal oprette tilknytning til en plan, der er defineret af hovedkontoret.
 
-![Standardkoncernkonto, der er angivet på siden Hovedkonto](./media/main-accounts.png "Standardkoncernkonto, der er angivet på siden Hovedkonto")
+![Standardkoncernkonto, der er angivet på siden Hovedkonti](./media/main-accounts.png "Standardkoncernkonto, der er angivet på siden Hovedkonti")
 
 Den tredje mulighed er at bruge koncernkontogrupper. Du kan definere så mange koncernkontogrupper, som du har brug for. På siden **Yderligere koncernkonti** skal du derefter knytte hovedkontoen fra kontoplanen til den konto, du har brug for til den pågældende gruppe.
 
-![Tilknytning på siden Yderligere koncernkonti](./media/additional-consolidation-accounts.png "Tilknytning på siden Yderligere koncernkonti")
+![Tilknytning på siden Flere koncernkonti](./media/additional-consolidation-accounts.png "Tilknytning på siden Flere koncernkonti")
 
 ## <a name="consolidating-online"></a>Konsolidering online
-Du kan finde oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Konsolidere online](./consolidate-online.md).
+Du kan finde oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Administrere konsolideringstransaktioner
 Du kan få vist resultaterne af konsolideringen på flere måder:
@@ -128,7 +128,7 @@ Vælg kildekontiene. Du kan bruge en stjerne (\*) som jokertegn. For eksemplet v
 
 Når du har valgt kildekontiene, skal du bruge feltet **Specifikation af regnskab** til at angive den konto, der bruges fra destinationsregnskabet. Vælg **Kilde** for at bruge den hovedkonto, der er defineret i kildekontoen. Hvis du vælger **Brugerdefineret**, skal du angive en destinationskonto.
 
-![Siden Elimineringsregellinje i Finans](./media/ledger-elimination-rule-line.png "Siden Elimineringsregellinje i Finans")
+![Elimineringsregellinje på siden Finans](./media/ledger-elimination-rule-line.png "Elimineringsregellinje på siden Finans")
 
 Feltet **Specifikation af dimension** fungerer som feltet **Specifikation af regnskab**. Vælg **Kilde** for at bruge de samme dimensioner i modtagervirksomheden og i kilderegnskabet. Hvis du vælger **Brugerdefineret**, skal du angive dimensionerne i modtagervirksomheden ved at vælge menupunktet **Destinationsdimensioner**. Vælg derefter de kildedimensioner og de økonomiske dimensioner og værdier, der bruges som kilde til elimineringen.
 

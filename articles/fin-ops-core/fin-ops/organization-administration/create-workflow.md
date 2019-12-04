@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190091"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811282"
 ---
 # <a name="create-workflows-overview"></a>Oversigt over oprettelse af arbejdsgange
 
@@ -54,21 +54,21 @@ Følg nedenstående trin for at konfigurere egenskaberne for arbejdsgangen.
 
 1. Klik på lærredet for at sikre, at der ikke er markeret noget arbejdsgangselement.
 2. Klik på **Egenskaber** for at åbne siden **Egenskaber** for arbejdsgangen.
-3. Følg procedurerne i emnet [Konfigurere egenskaberne for en arbejdsgang](configure-workflow-properties.md).
+3. Følg procedurerne i emnet [Konfigurer egenskaberne for arbejdsgange](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurere arbejdsgangselementer
 
 Konfigurer hvert af de elementer, du har trukket over på lærredet. Du kan finde flere oplysninger om konfiguration af hvert enkelt arbejdsgangselement i følgende emner.
 
-- [Konfigurere en manuel opgave](configure-manual-task-workflow.md)
-- [Konfigurere en automatiseret opgave](configure-automated-task-workflow.md)
-- [Konfigurere en godkendelsesproces](configure-approval-process-workflow.md)
-- [Konfigurere et godkendelsestrin](configure-approval-step-workflow.md)
-- [Konfigurere en manuel beslutning](configure-manual-decision-workflow.md)
-- [Konfigurere en betinget beslutning](configure-conditional-decision-workflow.md)
-- [Konfigurere en parallel aktivitet](configure-parallel-activity-workflow.md)
+- [Konfigurere manuelle opgave i en arbejdsgang](configure-manual-task-workflow.md)
+- [Konfigurere automatiserede opgaver i en arbejdsgang](configure-automated-task-workflow.md)
+- [Konfigurere godkendelsesprocesser i en arbejdsgang](configure-approval-process-workflow.md)
+- [Konfigurere godkendelsestrin i en arbejdsgang](configure-approval-step-workflow.md)
+- [Konfigurere manuelle beslutninger i en arbejdsgang](configure-manual-decision-workflow.md)
+- [Konfigurere betingede beslutninger i en arbejdsgang](configure-conditional-decision-workflow.md)
+- [Konfigurere parallelle grene i en arbejdsgang](configure-parallel-activity-workflow.md)
 - [Konfigurere en parallel gren](configure-parallel-branch-workflow.md)
-- [Konfigurere en arbejdsgang for linjeelement](configure-line-item-workflow.md)
+- [Konfigurere arbejdsgange for linjeelementer](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Rette fejl eller afhjælpe advarsler
 

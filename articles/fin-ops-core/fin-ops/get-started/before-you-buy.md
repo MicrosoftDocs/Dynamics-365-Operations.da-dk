@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191241"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812620"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -41,8 +41,8 @@ Der skal tages følgende overvejelser, når du vælger lokalt som installationsm
 
 - Lovmæssige krav og behov for overholdelse, der ikke findes i skycertificeringerne
 - Der kræves afbrudte forretningsproces med uregelmæssig forbindelse til internettet for at få adgang til Microsoft Dynamics Lifecycle Services (LCS) til administration af programmets livscyklus
-- [Funktioner, der i øjeblikket ikke er implementeret i lokale installationer](features-not-implemented-on-prem.md)
-- [Minimumkrav til infrastruktur](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Funktioner, der endnu ikke er implementeret i lokale installationer](features-not-implemented-on-prem.md)
+- [Systemkrav til lokale installationer](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Lokale installationer af Microsoft Dynamics 365 for Finance and Operations understøttes ikke i nogen infrastruktur til den offentlige sky, herunder Azure.
@@ -78,7 +78,7 @@ Du kan samarbejde med en Microsoft Cloud Solution Provider for at forstå behove
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Køb via en Dynamics-partner (lokal installation)
 
-Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger under [Købe Dynamics 365 for Finance and Operations (til det lokale miljø)](purchase-on-premises.md)
+Du skal arbejde med en partner for at købe Finance and Operations On-premises. Yderligere oplysninger finder du under [Køb Finance + Operations (lokalt)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Vælge supportmulighed
 
@@ -91,7 +91,7 @@ Flere oplysninger:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Trin 4: Få mere at vide om FastTrack, og planlæg installationen
 
-Microsoft FastTrack til Dynamics 365 er vores populære tjeneste, der gør det nemmere, mere fleksibelt og sikkert at flytte til Dynamics 365, så du hurtigere kan realisere forretningsmæssig værditilvækst. Når du deltager i programmet FastTrack, får du vejledning i best practices, og hvordan du planlægger vellykkede installationer. Du lærer også metoder til at gå nye brugere i gang og udvide funktioner – alle i dit eget tempo. Derudover har du adgang til tekniske ressourcer fra Microsoft, der hjælper dig med at gøre Dynamics 365-oplevelsen til en succes. Du kan finde flere oplysninger i: [Oversigt over Microsoft FastTrack for Dynamics 365](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack til Dynamics 365 er vores populære tjeneste, der gør det nemmere, mere fleksibelt og sikkert at flytte til Dynamics 365, så du hurtigere kan realisere forretningsmæssig værditilvækst. Når du deltager i programmet FastTrack, får du vejledning i best practices, og hvordan du planlægger vellykkede installationer. Du lærer også metoder til at gå nye brugere i gang og udvide funktioner – alle i dit eget tempo. Derudover har du adgang til tekniske ressourcer fra Microsoft, der hjælper dig med at gøre Dynamics 365-oplevelsen til en succes. Flere oplysninger: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du opgraderer fra Dynamics AX 2012 eller overfører fra AX 2009
 

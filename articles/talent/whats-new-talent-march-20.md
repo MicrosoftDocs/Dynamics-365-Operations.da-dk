@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025996"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812689"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (20. marts 2019)
 
@@ -43,7 +43,7 @@ Denne funktion gør det muligt for søgemaskinecrawlere at nå ud til og indekse
 Hvis en kandidat har glemt de sociale legitimationsoplysninger, denne har anvendt til at søge et job, mens de åbner et gemt link eller et link, der er blevet fremsendt til kandidaten i en e-mail, vil der nu blive vist et tip med udbyderens navn og brugernavn (tilsløret). Dette hjælper dem med at huske de korrekte legitimationsoplysninger, således at de kan tilgå deres jobansøgning.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Hjælp interne kandidater med at udforske interne jobs
-Problemet med, at de eksterne kandidater kunne se navnet på rekrutteringsmedarbejderen eller den ansættelsesansvarlige for et job, er blevet løst. Nu kan alene interne kandidater se medlemmerne af ansættelsesteamet for et job. Det er også nemmere for interne kandidater at se og søge jobs, der alene er slået op internt. Når en kandidat forsøger at tilgå linket for at se eller søge et job, der alene er slået op internt, er de nødsaget til at godkende med Azure Active Directory-legitimationsoplysninger. Interne kandidater har nu ligeledes mulighed for at kontakte medlemmerne af ansættelsesteamet for at udtrykke deres interesse for eller få flere oplysninger om jobbet. Denne mulighed er tilgængelig for alle jobs, der alene er tiltænkt interne kandidater. Du kan finde flere oplysninger under [Karrierewebstedsfunktionaliteten i Attract](./career-site.md).
+Problemet med, at de eksterne kandidater kunne se navnet på rekrutteringsmedarbejderen eller den ansættelsesansvarlige for et job, er blevet løst. Nu kan alene interne kandidater se medlemmerne af ansættelsesteamet for et job. Det er også nemmere for interne kandidater at se og søge jobs, der alene er slået op internt. Når en kandidat forsøger at tilgå linket for at se eller søge et job, der alene er slået op internt, er de nødsaget til at godkende med Azure Active Directory-legitimationsoplysninger. Interne kandidater har nu ligeledes mulighed for at kontakte medlemmerne af ansættelsesteamet for at udtrykke deres interesse for eller få flere oplysninger om jobbet. Denne mulighed er tilgængelig for alle jobs, der alene er tiltænkt interne kandidater. Du kan finde flere oplysninger i [Konfigurer dit karrierewebsted i Microsoft Dynamics 365 Talent - Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Udpeg modtagere af sølvmedaljer for at tildele ansøgere af høj værdi til fremtidige stillinger
 Rekrutteringsmedarbejdere og ansættelsesansvarlige har ofte en liste med ansøgere, som passede godt til stillingen, men som ikke fik et ansættelsestilbud, da stillingen allerede var blevet besat. Disse ansøgere, betegnet som "modtagere af sølvmedaljer", er værdifulde, da de kan bidrage til at reducere den tid, der anvendes på at ansætte en ny medarbejder, næste gang en lignende stilling bliver ledig. Attract gør det nu muligt for rekrutteringsmedarbejdere og ansættelsesansvarlige at udpege modtagere af sølvmedaljer på ansøgningslisten, hvis ansøgeren er rykket videre til tilbudsstadiet. Udpegningen af modtageren af sølvmedaljen vil fremgå af ansøgerlisten for jobbet, men også af oversigten over talentpuljen, når de pågældende ansøgere er medlemmer af en af rekrutteringsmedarbejderens eller den ansættelsesansvarliges puljer. Derudover vil udpegningen fremgå af jobhistorikken som en del af en kandidats talentpuljeprofil. Du kan få forhåndsvist denne funktion ved at få en administrator til at slå den til ved hjælp af [Funktionen "Styring" i Administration](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

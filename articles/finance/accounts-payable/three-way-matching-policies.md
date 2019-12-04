@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9c177f7a7b713e7b8490b718650daafeca0e937
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189378"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772737"
 ---
 # <a name="three-way-matching-policies"></a>Trevejs-sammenholdelsespolitikker
 
@@ -141,7 +141,7 @@ Bemærk følgende varer:
 Hvis godkendelse er påkrævet for fakturaer, der skal bogføres med uoverensstemmelser efter en fakturasammenholdelse, skal til/fra-feltet Godkend bogføring med matchningafvigelse på siden Detaljer om fakturasammenholdelse markeres, før fakturaen kan bogføres med fejl ved sammenholdelse af pris og fejl ved sammenholdelse af antal. Hvis godkendelse ikke er nødvendig, kan behandling af fakturaen fortsætte, hvis der ikke er andre bogføringsfejl.
 
 
-Du kan finde flere oplysninger under [Fakturasammenholdelse for Kreditor](accounts-payable-invoice-matching.md).
+Du kan finde flere oplysninger under [Oversigt over fakturasammenholdelse for kreditor](accounts-payable-invoice-matching.md).
 
 
 

@@ -3,7 +3,7 @@ title: Behandling af fastvægtprodukter med lokationsstyring
 description: I dette emne beskrives, hvordan du kan bruge arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor arbejde skal udføres på lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887129"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696633"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -181,7 +181,7 @@ Denne funktion for fastvægtkoder understøttes i øjeblikket kun som en del af 
 - Når behandlingen af en lagerstatus ændres ved hjælp af lagerstedsappen.
 - Når en lageroverførsel sker ved hjælp af lagerstedsappen.
 - Ved behandling af justering ind og ud via lagerstedsappen.
-- Når plukarbejde behandles for salgs- og flytteordrer. (Bemærk, at fastvægtkoder ikke kan registreres til produktionskomponentpluk).
+- Når plukarbejdet behandles i relation til salgs, overførsel og produktionslinjer.
 - Når plukkede mængder reduceres fra lastlinjer, uanset om containere anvendes.
 - Når produkter pakkes i containere på en pakkestation.
 - Når containere genåbnes.

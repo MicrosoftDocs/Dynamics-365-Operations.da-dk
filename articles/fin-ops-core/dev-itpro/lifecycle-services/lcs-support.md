@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
-ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
+ms.openlocfilehash: 6e62e406de5d972b3e66319cf293d3d420c69d46
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2577490"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812129"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
 
@@ -69,7 +69,7 @@ Bemærk: Microsoft Premier-kunder og -partnere kan også sende premier support-a
 </tr>
 <tr class="even">
 <td>Åbn en supportanmodning hos supportteamet.</td>
-<td>Hvis du har problemer, når du forsøger at sende en anmodning til Microsoft fra feltet <strong>Support</strong> i LCS, kan du se under <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Kontakt Microsoft Business Solutions Support</span></a> for at få oplysninger om, hvordan du kontakter Microsoft Dynamics' lokale driftskontor. Supportteamet kan hjælpe dig med at løse følgende tekniske problemtyper:
+<td>Hvis du har problemer, når du forsøger at sende en anmodning til Microsoft fra feltet <strong>Support</strong> i LCS, kan du se under <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Kontakt Microsoft Business Solutions Support</span></a> for at få oplysninger om, hvordan du kontakter et lokalt drift kontor for Microsoft Dynamics. Supportteamet kan hjælpe dig med at løse følgende tekniske problemtyper:
 <ul>
 <li>Fejl, der opstår, når du bruger LCS, eller problemer, når du forsøger at få adgang til LCS.</li>
 <li>Fejl, der opstår, når du bruger Finance and Operations-apps.</li>
@@ -90,6 +90,6 @@ Ved tekniske spørgsmål, der er relateret til at logge på og få adgang til Cu
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 - [Få support til Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Få support til Dynamics 365 Talent](../../../talent/talent-support.md)
+- [Få support til Microsoft Dynamics 365 Talent](../../../talent/talent-support.md)
 - Du kan finde flere oplysninger om Microsoft Dynamics-supporttilbud i [Administrere supportoplevelser for Finance and Operations-apps](cloud-powered-support-lcs.md).
 

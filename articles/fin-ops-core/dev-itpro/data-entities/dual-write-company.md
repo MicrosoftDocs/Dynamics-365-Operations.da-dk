@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184525"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772431"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Firmakoncept i Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 I Finance and Operations er konceptet et *firma* både en juridisk konstruktion og en forretningskonstruktion. Det er også en sikkerheds- og synlighedsgrænse for data. Brugere arbejder altid i konteksten af et enkelt firma, og de fleste data stripes (spredes) af firmaet.
 
@@ -60,12 +58,14 @@ Som den foregående illustration viser, er denne 1:1-tilknytning mellem virksomh
 
 Et sidste emne, der skal omtales, er, hvordan dobbeltskrivning afgør, hvilket ejerteam det skal tildeles poster. Denne funktionsmåde styres af feltet **Standardejerteam** på cdm\_Company-posten. Når en cdm\_Company-post er aktiveret til dobbeltskrivning, opretter en plug-in automatisk den tilknyttede virksomhedsenhed og ejerteamet (hvis den ikke allerede findes) og indstiller feltet **Standardejerteam**. Administratoren kan ændre dette felt til en anden værdi. Men administratoren kan ikke rydde feltet, så længe enheden er aktiveret til dobbeltskrivning.
 
+> [!div class="mx-imgBorder"]
 ![Standardfelt for ejerskab af team](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Firma-striping og bootstrapping
 
 Common Data Service-integration giver firmaparitet ved at bruge en firmaidentifikator til at stripe data. Som det fremgår af følgende illustration, udvides alle firmaspecifikke enheder, så de har en mange-til-en-relation (N:1) med enheden cdm\_Company.
 
+> [!div class="mx-imgBorder"]
 ![N:1-relation mellem en firmaspecifik enhed og enheden cdm_Company](media/dual-write-bootstrapping.png)
 
 + Når et firma er tilføjet og gemt i poster, bliver værdien skrivebeskyttet. Derfor skal brugerne sørge for, at de vælger det rigtige firma.

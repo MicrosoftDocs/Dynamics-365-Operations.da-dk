@@ -3,7 +3,7 @@ title: Automatiske opdateringer af forsendelser
 description: Dette emne indeholder en oversigt over funktioner, der leverer automatiske opdateringer til forsendelser.
 author: josaw1
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 160ad55a12d13fdb64e55effaabb1848179e71cf
-ms.sourcegitcommit: c35dfce2c0605d6f46365ce5d985c22187d21761
+ms.openlocfilehash: e42e7f19311adee7cc48f0ad0b59a4d0d54df9aa
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1986111"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773537"
 ---
 # <a name="shipment-auto-updates"></a>Automatiske opdateringer af forsendelser
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Funktionen til automatisk opdatering af forsendelser opdaterer automatisk mængder (både stigninger og reduktioner) på en lastlinje, der er knyttet til en forsendelse, efter at lasten er frigivet til et lagersted. Denne funktionalitet forbliver slået til, indtil lastlinjen på forsendelsen eller lasten er behandlet på en bølge. Når den bruges, kan ordreopdateringer automatisk bevæge sig frem til lagerstedet uden at kræve manuel indgriben, før der oprettes lagerstedsarbejde.

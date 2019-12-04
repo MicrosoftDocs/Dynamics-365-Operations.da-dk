@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: bbc65a77b7c3df6545dfd7aa2109aba5c4e1b57b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010609"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773028"
 ---
 # <a name="remove-talent-environments"></a>Fjerne Talent-miljøer
 
@@ -34,7 +34,7 @@ Dette emne fører dig gennem processen med at fjerne et testdrev eller produktio
 
 Testdrev til Talent er klargjort med en 60-dages udløbspolitik. Men ejere af testdrevmiljøer har dog mulighed for at afslutte deres forsøg tidligere ved at følge disse trin. 
 
-1. Naviger til [PowerApps Administration](https://admin.businessplatform.microsoft.com/).
+1. Naviger til [Power Apps Administration](https://admin.businessplatform.microsoft.com/).
 2. Vælg **Miljøer**.
 3. Vælg det testdrevmiljø, som har et navngivningsmønster som dette: TestDrive - alias@domain
 4. Vælg **Slet**, og bekræft beslutningen. 
@@ -45,14 +45,14 @@ Det eksisterende testdrevmiljø fjernes. Når det er fjernet, kan du tilmelde di
 
 Det antages i emnet, at du har købt Talent via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). 
 
-Da der er "indeholdt" et enkelt Talent-miljø i hvert enkelt PowerApps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele PowerApps-miljøet, den anden mulighed omfatter kun fjernelse af Talent. Den første indstilling foretrækkes, når du har oprettet et PowerApps-miljø udtrykkeligt med henblik på klargøring af Talent, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret PowerApps-miljø, der er udfyldt med omfattende data, som udnyttes i PowerApps og processer.
+Da der er "indeholdt" et enkelt Talent-miljø i hvert enkelt Power Apps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele Power Apps-miljøet, den anden mulighed omfatter kun fjernelse af Talent. Den første indstilling foretrækkes, når du har oprettet et Power Apps-miljø udtrykkeligt med henblik på klargøring af Talent, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret Power Apps-miljø, der er udfyldt med omfattende data, som udnyttes i Power Apps og Power Automate.
 
 > [!Important]
-> Før du fjerner PowerApps-miljøet, skal du sikre dig, at det ikke bruges til omfattende dataintegrationer, som ikke er omfattet af Talent. Bemærk også, at PowerApps-standardmiljøerne ikke kan fjernes. 
+> Før du fjerner Power Apps-miljøet, skal du sikre dig, at det ikke bruges til omfattende dataintegrationer, som ikke er omfattet af Talent. Bemærk også, at Power Apps-standardmiljøerne ikke kan fjernes. 
 
-Sådan fjernes hele PowerApps-miljøet, herunder Talent og de tilknyttede apps og processer:
+Sådan fjernes hele Power Apps-miljøet, herunder Talent og de tilknyttede apps og flows:
 
-1. Naviger til [PowerApps Administration](https://admin.businessplatform.microsoft.com/).
+1. Naviger til [Power Apps Administration](https://admin.businessplatform.microsoft.com/).
 2. Vælg **Miljøer**.
 3. Vælg det miljø, der skal fjernes.
 4. Vælg **Slet**, og bekræft beslutningen. 
@@ -63,7 +63,7 @@ Sådan fjernes hele PowerApps-miljøet, herunder Talent og de tilknyttede apps o
 9. Marker den forekomst, du vil fjerne. 
 10. Vælg **Fjern forekomst**, og bekræft sletningen.  
 
-Hvis du vil fjerne et Talent-miljø fra et eksisterende PowerApps-miljø, skal du benytte følgende fremgangsmåde. Bemærk, at behovet for at involvere support og kontakte Talent DevOps-teamet er midlertidig, indtil denne funktion er aktiveret direkte i LCS.
+Hvis du vil fjerne et Talent-miljø fra et eksisterende Power Apps-miljø, skal du benytte følgende fremgangsmåde. Bemærk, at behovet for at involvere support og kontakte Talent DevOps-teamet er midlertidig, indtil denne funktion er aktiveret direkte i LCS.
 
 1. Kontakt Support for at starte en anmodning til fjernelse.
 2. Support-teamet igangsætter en anmodning om fjernelse hos Talent DevOps-teamet. 

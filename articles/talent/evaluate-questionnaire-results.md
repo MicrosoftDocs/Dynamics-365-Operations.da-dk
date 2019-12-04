@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517650"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813977"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Få vist og evaluere resultaterne af spørgeskemaer
 
@@ -57,7 +57,8 @@ Fra siden **Svar** kan du se oplysninger om svar, opnåede point, svarpersonens 
 -   **Svarrapport** – denne rapport viser de svar, som svarpersonen valgte for hver enkelt spørgsmål i spørgeskemaet.
 -   **Forkerte svar** – denne rapport indeholder oplysninger, der er relateret til de forkerte svar, som svarpersonen valgte.
 
-**Bemærk!** Rapporten **Resultater** er kun tilgængelig, hvis du bruger resultatgrupper på spørgeskemaet, og hvis du har valgt **Resultatside** på siden **Spørgeskemaer**. Rapporten **Smart** og rapporten **Forkerte svar** er kun tilgængelige, hvis du har valgt **Svarrapport** på siden **Spørgeskemaer**.
+> [!NOTE]
+> Rapporten **Resultater** er kun tilgængelig, hvis du bruger resultatgrupper på spørgeskemaet, og hvis du har valgt **Resultatside** på siden **Spørgeskemaer**. Rapporten **Smart** og rapporten **Forkerte svar** er kun tilgængelige, hvis du har valgt **Svarrapport** på siden **Spørgeskemaer**.
 
 ## <a name="questionnaire-statistics"></a>Spørgeskemastatistik
 Du kan bruge spørgeskemastatistik til at analysere resultaterne af et udfyldt spørgeskema baseret på beregninger, som du definerer. Når du skal definere beregninger, skal du udføre følgende opgaver:
@@ -75,9 +76,9 @@ De indstillinger, du definerer, gemmes og kan bruges til at genberegne resultate
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Udforme spørgeskemaer](design-questionnaires.md)
+[Designe spørgeskemaer](design-questionnaires.md)
 
-[Brug af spørgeskemaer](questionnaires.md)
+[Spørgeskemaer](questionnaires.md)
 
-[Distribution og udfyldning af et spørgeskema](distribute-questionnaires.md)
+[Udsende og planlægge spørgeskemaer](distribute-questionnaires.md)
 

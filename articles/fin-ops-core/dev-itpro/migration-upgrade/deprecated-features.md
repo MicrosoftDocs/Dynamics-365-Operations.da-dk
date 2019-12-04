@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658684"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811987"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Fjernede eller udfasede funktioner for Finance and Operations
 
@@ -348,7 +348,7 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 | **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Operations 1611 og nyere.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Udvidelser af listen over elektroniske rapporteringsfunktioner (ER)
-Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-udtryksgeneratoren (yderligere oplysninger finder du i [Udvide listen over elektroniske rapporteringsfunktioner](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)), understøttes ikke længere. På grund af ændringer af ER-API'er er API'en til kald af indbyggede funktioner fra ER-udtryksgeneratoren blevet intern og kan ikke længere udvides.
+Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-udtryksgeneratoren (yderligere oplysninger finder du i [Udvide listen over elektroniske rapporteringsfunktioner (ER)](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)), understøttes ikke længere. På grund af ændringer af ER-API'er er API'en til kald af indbyggede funktioner fra ER-udtryksgeneratoren blevet intern og kan ikke længere udvides.
 
 |   |  |
 |------------|--------------------|
@@ -474,7 +474,7 @@ Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er be
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Identiske funktioner.       |
-| **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger i [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger i [Oversigt over installation og konfiguration af appen Lagersted](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområder, der er berørt**         | Lokationsstyring, transportstyring     |
 | **Installationsindstilling**              | Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er beregnet til selvstændig installation i det lokale miljø.               |
 | **Status**                         | Forældet: Måltidsrammen for funktioner, der skal fjernes, er 4. kvartal 2019.   |
@@ -966,7 +966,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktion er blevet erstattet af en anden funktion. |
-| **Erstattet af en anden funktion?**   | Common Data Service                                      |
+| **Erstattet af en anden funktion?**   | Common data service                                      |
 | **Produktområder, der er berørt**         | Connector til Dynamics                         |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0                           |
 
@@ -1244,7 +1244,7 @@ Product Builder blev brugt til at konfigurere varer dynamisk fra en salgsordre, 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Product Builder viste X ++-kode for slutbrugere. Det understøttes ikke i den aktuelle version af Dynamics AX. Det er blevet fjernet for at undgå dobbelt vedligeholdelsesarbejde på overlappende kodebaser, hvor størrelsen kan tilpasses.  |
-| **Erstattet af en anden funktion?**   | Ja. Begrænsningsbaseret konfiguration blev introduceret i Dynamics AX 2012, hvor afskrivningen af Product Builder i fremtidige versioner allerede blev offentliggjort. Den begrænsningsbaserede konfigurationsteknologi vælges på produktmasterne for at aktivere konfigurationen. Du kan finde flere oplysninger under [Bygge en produktkonfigurationsmodel](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Erstattet af en anden funktion?**   | Ja. Begrænsningsbaseret konfiguration blev introduceret i Dynamics AX 2012, hvor afskrivningen af Product Builder i fremtidige versioner allerede blev offentliggjort. Den begrænsningsbaserede konfigurationsteknologi vælges på produktmasterne for at aktivere konfigurationen. Du kan finde flere oplysninger under [Oversigt over produktkonfiguration](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger, Salg og marketing  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0      |
 

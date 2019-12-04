@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2bfe007995c894d6cc86d07ef2b52da65e32e950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182732"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772457"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Få adgang til programmetadata ved hjælp af ER-konfiguration
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Service) i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i applikationen. Der opnås adgang til programmetadata ved hjælp af en ER-metadatakonfiguration, der indeholder et eksempel sæt af metadata for adgang til udenrigshandelstransaktioner. Du skal først fuldføre RCS-trinnene i procedureemnet [Oprette konfigurationsudbydere og markere dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Udfør derefter trinnene i emnet [(ER) Klargøre programmetadata, der skal bruges i RCS](prepare-application-metadata-rcs.md).
+Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Service) i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i applikationen. Der opnås adgang til programmetadata ved hjælp af en ER-metadatakonfiguration, der indeholder et eksempel sæt af metadata for adgang til udenrigshandelstransaktioner. Du skal først fuldføre RCS-trinnene i procedureemnet [Oprette konfigurationsudbydere og markere dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Udfør derefter trinnene i emnet [Klargør de programmetadata, der skal bruges i RCS](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
 1. Gå til **Alle arbejdsområder** > **Elektronisk rapportering**. 
@@ -35,7 +35,7 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 
 ## <a name="import-metadata-configuration"></a>Importere konfiguration af metadata 
 1. Klik på **Konfiguration af metadata**. 
-2. Importer den ER-metadatakonfiguration, der indeholder metadata, der er konfigureret til at generere elektroniske dokumenter for udenrigshandel. Denne ER-konfiguration af metadata er blevet eksporteret som en XML-fil, mens trinnene i [(ER) Klargøre programmetadata, der skal bruges i RCS](prepare-application-metadata-rcs.md) blev fuldført. 
+2. Importer den ER-metadatakonfiguration, der indeholder metadata, der er konfigureret til at generere elektroniske dokumenter for udenrigshandel. Denne ER-konfiguration af metadata er blevet eksporteret som en XML-fil, mens trinnene i proceduren for [Klargøring af de programmetadata, der skal bruges i RCS](prepare-application-metadata-rcs.md) blev fuldført. 
 3. Klik på **Udveksling**. 
 4. Klik på **Indlæs fra XML-fil**. 
 5. Klik på **Gennemse**, og vælg filen 'Udenrigshandelmetadata.xml'. 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577894"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811159"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurere regnskabsintegration for detailkanaler
 
@@ -210,7 +210,7 @@ De fejlhåndteringsindstillinger, der er tilgængelige i regnskabsintegrationen,
 
 Hvis du vil køre X/Z-regnskabsrapporter fra POS, skal du føje nye knapper til et POS-layout.
 
-- På siden **Knapmatricer** skal du følge vejledningen i [Føj en brugerdefineret handlingsknap til POS-layoutet i Retail Headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
+- På siden **Knapmatricer** skal du følge vejledningen i [Tilføj POS-operationer til POS-layout ved at anvende Knapmatricedesigneren](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
 
     1. Vælg det layout, der skal opdateres. 
     2. Tilføj en ny knap, og indstil **Udskriv regnskab X**-knapegenskaben.
@@ -221,7 +221,7 @@ Hvis du vil køre X/Z-regnskabsrapporter fra POS, skal du føje nye knapper til 
 
 For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du tilføje en ny knap til POS-layoutet.
 
-- På siden **Knapmatricer** skal du følge vejledningen i [Føj en brugerdefineret handlingsknap til POS-layoutet i Retail Headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
+- På siden **Knapmatricer** skal du følge vejledningen i [Tilføj POS-operationer til POS-layout ved at anvende Knapmatricedesigneren](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
 
     1. Vælg det layout, der skal opdateres.
     2. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.

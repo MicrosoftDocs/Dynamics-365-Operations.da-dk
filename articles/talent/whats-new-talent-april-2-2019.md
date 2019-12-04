@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 86d81d60fcbc77375f3b8c525e8c084e3a3d8a99
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026065"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773687"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (2. april 2019)
 
@@ -63,7 +63,7 @@ Du kan finde yderligere oplysninger om Platform update 25 til Finance and Operat
 I mange organisationer har de ansvarlige for kompensationer og frynsegoder muligvis kun har adgang til visse kompensationsposter. Disse kan omfatte poster til ledere eller medarbejdere i bestemte områder. Denne ændring giver Personale mulighed for at administrere og vedligeholde kompensationsplaner for forskellige medarbejdergrupper i organisationen. Du kan tildele sikkerhedsroller til faste og variable planer. Disse sikkerhedsroller bestemmer adgangen til planer og hertil relaterede medarbejderdata, såsom løn eller bonusposter, således at alene de pågældende roller kan behandle kompensation for medarbejdergrupperne.
 
 ### <a name="upgrade-to-common-data-service"></a>Opgrader til Common Data Service
-Fristerne for at opgradere til Common Data Service nærmer sig hurtigt. Log på PowerApps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Fristerne for at opgradere til Common Data Service nærmer sig hurtigt. Log på Microsoft Power Apps Administration for at finde ud af, om din database skal opgraderes. Du kan finde flere oplysninger om frister og de nødvendige trin for at opgradere under [Opgrader til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Som eksempel
 

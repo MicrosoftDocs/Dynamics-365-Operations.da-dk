@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865322"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813540"
 ---
 # <a name="product-lifecycle-state-overview"></a>Oversigt over status for produktlivscyklus
 
@@ -107,9 +107,9 @@ Brug følgende kriterier til at vælge og opdatere frigivne produkter og produkt
 
 ## <a name="related-topics"></a>Relaterede emner
 
--  [Oprette en ny produktlivscyklustilstand (opgaveguide)](tasks/new-product-lifecycle-state.md)
--  [Oprette en standardtilstand for produktlivscyklus (opgaveguide)](tasks/default-product-lifecycle-state.md)
--  [Tildele en produktlivscyklustilstand til en frigivet produktmaster (opgaveguide)](tasks/product-lifecycle-state-released-product-master.md)
--  [Tildele en produktlivscyklustilstand til et frigivet produkt (opgaveguide)](tasks/product-lifecycle-state-released-product.md)
--  [Finde forældede produktvarianter og tildele en status for produktlivscyklus (opgaveguide)](tasks/obsolete-product-variants.md)
--  [Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering (opgaveguide)](tasks/exclude-products-master-planning.md)
+-  [Oprette en ny status for produktlivscyklus](tasks/new-product-lifecycle-state.md)
+-  [Oprette en standardstatus for produktlivscyklus](tasks/default-product-lifecycle-state.md)
+-  [Tildele en produktlivscyklustilstand til en frigivet produktmaster](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tildele en produktlivscyklustilstand til et frigivet produkt](tasks/product-lifecycle-state-released-product.md)
+-  [Find forældede produktvarianter og tildel en livscyklustilstand for et produkt](tasks/obsolete-product-variants.md)
+-  [Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering](tasks/exclude-products-master-planning.md)

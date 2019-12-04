@@ -1,5 +1,5 @@
 ---
-title: Konfigurere firmaoplysninger i Microsoft Dynamics 365 Talent - Attract
+title: Konfigurer firmaoplysninger i Attract
 description: Dette emne forklarer, hvordan du konfigurerer firmaoplysninger og branding for Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551585"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833248"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Konfigurere firmaoplysninger i Microsoft Dynamics 365 Talent - Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Konfigurer firmaoplysninger i Attract
+
+[!include [banner](includes/banner.md)]
 
 Administration i Microsoft Dynamics 365 Talent: Attract indeholder konfigurationsindstillinger, muligheder for integration og opsætningsindstillinger til programmet Attract.
 
@@ -36,7 +37,7 @@ Angiv et visningsnavn til firmaet, og tilføj et firmalogo. Det viste navn og lo
 
 ## <a name="linkedin-integration"></a>Integration af LinkedIn
 
-Konfigurer integrationen med LinkedIn Recruiter System Connect(RSC). Når du har oprette forbindelse til LinkedIn ved hjælp af dine LinkedIn-legitimationsoplysninger, kan du synkronisere en kandidats LinkedIn-profil, ansøgninger, samtalefeedback og ansættelsesteamnoter. Der kræves en fuld LinkedIn Recruiter-medarbejderlicens. Yderligere oplysninger om LinkedIn Recruiter finder du her [Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483).
+Konfigurer integrationen med LinkedIn Recruiter System Connect (RSC). Når du har oprette forbindelse til LinkedIn ved hjælp af dine LinkedIn-legitimationsoplysninger, kan du synkronisere en kandidats LinkedIn-profil, ansøgninger, samtalefeedback og ansættelsesteamnoter. Der kræves en fuld LinkedIn Recruiter-medarbejderlicens. Yderligere oplysninger om LinkedIn Recruiter finder du her [Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Brugerrettigheder
 
@@ -48,11 +49,11 @@ Når der tilføjes nye funktioner, kan de frigives i en offentlig prøveversion.
 
 ## <a name="template-management"></a>Skabelonstyring
 
-En processkabelon indeholder alle de aktiviteter, der skal medtages som en del af ansættelsesprocessen for et job. Din organisation kan give alle teammedlemmer eller kun administratorer adgang til at oprette ansættelsesskabeloner. For at give teammedlemmerne mulighed for at oprette deres egne ansættelsesprocesskabeloner skal du aktivere funktionen Skabelonstyring. Du kan finde flere oplysninger om processkabeloner i [Processkabeloner i Attract](./process-templates-attract.md).
+En processkabelon indeholder alle de aktiviteter, der skal medtages som en del af ansættelsesprocessen for et job. Din organisation kan give alle teammedlemmer eller kun administratorer adgang til at oprette ansættelsesskabeloner. For at give teammedlemmerne mulighed for at oprette deres egne ansættelsesprocesskabeloner skal du aktivere funktionen Skabelonstyring. Du kan finde flere oplysninger om processkabeloner i [Oprette en processkabelon i Attract](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>Mailskabelonindstillinger
 
-Organisationer kan oprette mailskabeloner til forskellige scenarier. Du kan vælge det sidehovedbillede, der skal medtages i mailskabelonerne. Det valgte sidehoved vises derefter i alle mailskabeloner. I skabelonens sidefod kan du tilføje et link til din organisations erklæring om beskyttelse af personlige oplysninger og vilkår for anvendelse af kommunikation. Du kan finde flere oplysninger i [Mailskabeloner i Attract](./email-templates.md).
+Organisationer kan oprette mailskabeloner til forskellige scenarier. Du kan vælge det sidehovedbillede, der skal medtages i mailskabelonerne. Det valgte sidehoved vises derefter i alle mailskabeloner. I skabelonens sidefod kan du tilføje et link til din organisations erklæring om beskyttelse af personlige oplysninger og vilkår for anvendelse af kommunikation. Du kan finde flere oplysninger i [E-mail-skabeloner](./email-templates.md).
 
 ## <a name="offer-process"></a>Tilbudsproces
 

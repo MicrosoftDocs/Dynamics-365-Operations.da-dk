@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187906"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770844"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Oprette dimensioner og importere dimensionsmedlemmer
 
@@ -44,11 +44,10 @@ I følgende diagram illustreres de dimensioner, der bruges i forbindelse med dri
 Når dataene importeres til driftsregnskab, kan du bruge dem til at oprette forskellige perspektiver, der giver indsigt for ledere på alle niveauer i organisationen. Følgende emner indeholder oplysninger om oprettelse af dimensioner og import af dimensionsmedlemmer. 
 
 -  [Dimensioner for omkostningselement](cost-elements.md)
--  [Oprette omkostningselementer (Opgaveguide)](./tasks/create-cost-elements.md) (opgave guide)
+-  [Oprette omkostningselementer](./tasks/create-cost-elements.md)
 -  [Dimensioner for omkostningsobjekt](cost-objects.md)
--  [Oprette omkostningselementer (Opgaveguide)](./tasks/create-cost-objects.md) (opgave guide)
 -  [Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer](map-cost-elements-dimension-members.md)
--  [Tilknytte en dimension for omkostningselement (Opgaveguide)](./tasks/map-cost-element-dimension.md)
+-  [Tilknytte en dimension for omkostningselement](./tasks/map-cost-element-dimension.md)
 -  [Skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger](statistical-measure-provider-template.md)
 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184065"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772645"
 ---
 # <a name="budgeting-home-page"></a>Startside for budgettering
 
@@ -42,12 +42,12 @@ Processerne for både langsigtet strategisk planlægning og årlig budgetplanlæ
 
 Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor medarbejderne er uddannet i organisatoriske mål, og følge disse mål via politikker som "Overvej et onlinemøde i stedet for en rejse". Applikationen omfatter en budgetstyringsstruktur, der gør det muligt for virksomhedens ledelse at vælge enten stringent kontrol (der forhindrer posteringer, der vil overskride budgettet) eller blød kontrol (hvor brugere advares om, at de vil overskride de disponible budgetmidler, men selv kan bestemme, hvordan de vil fortsætte). Endelig kan du bruge rullende prognoser. En rullende prognose er en almindelig sammenligning af budget med faktiske oplysninger, der bruges til at definere, hvor godt virksomheden arbejder mod budgettet. En rullende prognose bruges også til at identificere tendenser. I Finance and Operations understøttes rullende prognose via et budgetplansdokument som første planlægningsaktiviteter. Rullende prognoser kan udføres parallelt med planlægning af den kommende budgetcyklus.
 
--   [Grundlæggende budgettering: Oversigt og konfiguration](basic-budgeting-overview-configuration.md)
--   [Budgetstyring: Oversigt og konfiguration](budget-control-overview-configuration.md)
--   [Budgetplanlægning: Oversigt og konfiguration](budget-planning-overview-configuration.md)
+-   [Budgetteringsoversigt](basic-budgeting-overview-configuration.md)
+-   [Budgetstyringsoversigt](budget-control-overview-configuration.md)
+-   [Oversigt over budgetplanlægning](budget-planning-overview-configuration.md)
 -   [Budgetteret stilling](position-forecasting.md)
 -   [Berettigelsesdokumenter for budgetplanlægning](budget-planning-justification-docs.md)
--   [Microsoft Excel skabeloner til budgetplanlægning](budget-planning-excel-templates.md)
+-   [Budgetplanlægningsskabeloner til Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgetteringsværktøjer
 [![Budgetteringsværktøjer](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

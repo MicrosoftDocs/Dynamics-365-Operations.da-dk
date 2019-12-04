@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248918"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813356"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter. 
 
@@ -80,6 +81,9 @@ Når du opretter en indkøbsordre, kan du anvende en købsaftale til den. Oplysn
 Du kan kun vælge en købsaftale, når du opretter en indkøbsordre. Du kan ikke vælge en købsaftale, når indkøbsordren er blevet oprettet.  
 I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Supply Chain Management automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Sammenholdelsespolitik for købsaftaler
+Du kan definere en sammenholdelsespolitik for en linje i overskriften til købsaftalen. Denne sammenholdelsespolitik for linjer vil respektere sammenholdelsespolitikken for kreditorparametrelinjer, når feltet **Tillad overskrivelse af sammenholdelsespolitik** på siden **Kreditorparametre** (i oversigtspanelet **Prce og antalssammenholdelse**) angives til **Højere end firmapolitikken**. Dokumenter, der refererer til købsaftalen, bruger den sammenholdelsespolitik for linjer, der er defineret i overskriften for købsaftalen, medmindre andet er angivet i den tilsvarende vare-, vare- og leverandør- eller kategoriindkøbspolitik.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Købsaftaler og samhandel internt i firmaet
 Der kan oprettes interne handelsforhold mellem kreditorkonti og debitorkonto, som er i forskellige juridiske enheder. Når der oprettes en salgsordre eller indkøbsordre for en af parterne, oprettes en intern ordretilknytning. I ordretilknytningen oprettes salgsordren og indkøbsordren i de relevante juridiske enheder.  
 
@@ -93,9 +97,9 @@ Du kan kopiere økonomiske dimensioner til dokumentoverskrifter eller til enkelt
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Opret en ny købsaftale (opgaveguide)](tasks/create-purchase-agreement.md)
+[Oprette en købsaftale](tasks/create-purchase-agreement.md)
 
-[Opret en købsaftræksordre ud fra en købsaftale (opgaveguide)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Oprette en købsaftræksordre ud fra en købsaftale](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

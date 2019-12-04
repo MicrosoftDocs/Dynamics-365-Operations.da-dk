@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570995"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812231"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobfag og vedligeholdelsestjeklister
 
@@ -33,7 +33,7 @@ ms.locfileid: "2570995"
 
 Der er knyttet en aktivtype til hvert aktiv. Aktivtyper definerer de vedligeholdelsesjobtyper (og dermed vedligeholdelsesjob), der kan udføres på aktiver. Du skal vælge en vedligeholdelsesjobtype, når du opretter en arbejdsordre. Du kan kun vælge de vedligeholdelsesjobtyper, der er relateret til opsætningen af den aktivtype, der bruges for aktivet.
 
-Der findes en grafisk oversigt over aktiver og vedligeholdelsesjobtyper og deres forbindelse til arbejdsordrer i [Aktiver og arbejdsordrer](../overview/functional-locations-and-objects.md).
+Der findes en grafisk oversigt over aktiver og vedligeholdelsesjobtyper og deres forbindelse til arbejdsordrer i [Arbejdssteder og aktiver](../overview/functional-locations-and-objects.md).
 
 Varianter af vedligeholdelsesjobtyper kan konfigureres for en vedligeholdelsesjobtype. Varianter af vedligeholdelsesjobtype definerer varianter af en jobtype, f.eks. størrelser (lille, mellem eller stor), perioder (hver uge, hver anden uge, en måned eller tre måneder) og konfigurationer (lav standard, fleksibel eller høj ydeevne).
 

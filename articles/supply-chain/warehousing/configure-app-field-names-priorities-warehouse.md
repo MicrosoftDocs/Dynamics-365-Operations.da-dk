@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251079"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814967"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere appfeltnavne i lagerstedsappen
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251079"
 
 I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 Supply Chain Management. 
 
-**Bemærk!** Denne emne gælder for funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Lagersted i selvstudiet [Installere og konfigurere Lagersted](install-configure-warehousing-app.md).
+> [!NOTE]
+> Dette emne vedrører funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Lagersted i selvstudiet [Oversigt over installation og konfiguration af appen Lagersted](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
 
@@ -142,4 +143,4 @@ De resterende metadata, f.eks. placering, vises ikke på opgavesiden, men vises 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Lager](install-configure-warehousing-app.md)
+[Oversigt over installation og konfiguration af appen Lagersted](install-configure-warehousing-app.md)

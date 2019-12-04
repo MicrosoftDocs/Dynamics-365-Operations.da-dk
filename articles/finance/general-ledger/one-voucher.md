@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553181"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810693"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -83,6 +83,9 @@ Baseret på samtaler med kunderne, har Microsoft samlet følgende liste over de 
 
 Følgende scenarier kan kun udføres ved hjælp af funktionen ét bilag. Hvis din organisation har et af disse scenarier, skal du aktivere flere transaktioner, der skal angives i et bilag, ved at ændre indstillingen af parameteren **Tillad flere transaktioner i ét bilag** på siden **Finansparametre**. Disse funktionsmæssige huller udfyldes via andre funktioner i senere versioner.
 
+> [!Note]
+> [For hver af følgende situationer skal **Tillad flere posteringer inden for ét bilagsfelt** være angivet til Ja i oversigtspanelet **Generelt** på siden **Finansparametre**.]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bogføre kreditor- eller debitorbetalinger i oversigtsform til en bankkonto
 
 **Scenario** En organisation sender en liste over kreditorer og beløb til banken, og banken bruger denne liste til at betale kreditorerne på organisationens vegne. Banken bogfører summen af betalinger som et enkelt træk på bankkontoen.
@@ -120,6 +123,9 @@ De følgende anlægsaktivposteringer kan også oprette flere transaktioner i et 
 - Et aktiv opdeles.
 - En parameter til at beregne afskrivning på kassation aktiveres, og derefter kasseres anlægsaktivet.
 - Et aktivs servicedato ligger før anskaffelsesdatoen. Derfor bogføres en afskrivningsregulering.
+
+> [!Note]
+> Når du indtaster transaktioner, skal du kontrollere, at alle transaktioner gælder for det samme anlægsaktiv. Bilaget bogføres ikke, hvis det indeholder mere end ét anlægsaktiv, selvom feltet **Nyt bilag** kun er angivet som ét bilagsnummer på siden **Kladdenavne** i Finans. Hvis du medtager mere end ét anlægsaktiv i bilaget, vises meddelelsen **Der kan kun være én anlægsaktivpostering pr. bilag**, og du kan ikke bogføre bilaget.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>Veksler og egenveksler
 Veksler og egenveksler kræver, at Ét bilag bruges, fordi posteringerne flytter debitor- eller kreditorsaldoen fra én debitor/konti- finanskonto til en anden, baseret på status for betalingen.

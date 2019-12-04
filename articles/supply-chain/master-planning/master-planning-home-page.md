@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250685"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814255"
 ---
 # <a name="master-planning-home-page"></a>Startside for varedisponering
 
@@ -39,9 +39,9 @@ Varedisponering bruger oplysningerne til at beregne behovene og oprette ordrefor
 
 De tre vigtigste planlægningsprocesser er:
 
--  **Varedisponering** - Behovsplanen beregner nettobehovene. Den er baseret på faktiske aktuelle ordrer og gør det muligt for virksomheder at styre genopfyldning af lageret på en kortsigtet daglig basis. Et andet udtryk, der kræver nærmere beskrivelse, er *Plan for nettobehov*. Du kan finde flere oplysninger under [Varedisponering](master-plans.md). 
+-  **Varedisponering** - Behovsplanen beregner nettobehovene. Den er baseret på faktiske aktuelle ordrer og gør det muligt for virksomheder at styre genopfyldning af lageret på en kortsigtet daglig basis. Et andet udtryk, der kræver nærmere beskrivelse, er *Plan for nettobehov*. Du kan finde flere oplysninger under [Oversigt over Behovsplaner](master-plans.md). 
 
--  **Hovedplanlægning** - Hovedplanen beregner bruttobehov. Den er baseret på fremtidige projektioner (eller budgetter) og giver firmaer mulighed for udføre langsigtet planlægning for materialer og kapacitet. Du kan finde flere oplysninger under [Hovedplanlægning](introduction-demand-forecasting.md). 
+-  **Hovedplanlægning** - Hovedplanen beregner bruttobehov. Den er baseret på fremtidige projektioner (eller budgetter) og giver firmaer mulighed for udføre langsigtet planlægning for materialer og kapacitet. Du kan finde flere oplysninger under [Oversigt over Behovsprognose](introduction-demand-forecasting.md). 
 
 -  **Intern varedisponering** - Den interne behovsplan beregner nettobehov på tværs af juridiske enheder. Den forbinder behov og forsyning mellem firmaer, ikke kun kortsigtet, fast behov og forsyning, men også langsigtet, planlagt (der endnu ikke er autoriseret) behov og forsyning. Du kan finde flere oplysninger i [Intern varedisponering](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (kræver CustomerSource-konto). 
 
@@ -57,13 +57,13 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 
 ## <a name="quick-links"></a>Hurtige links
 
-- [Behovsplaner](master-plans.md)  
+- [Oversigt over behovsplaner](master-plans.md)  
 - [Generere en begrænset plan](./tasks/constrained-plan.md)
 - [Oprette en materialeplan for samprodukter](./tasks/create-material-plan-co-products.md)
-- [Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+- [Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
 - [Oprette en intern plan](./tasks/create-intercompany-plan.md)
-- [Oversigt over behovsprognose](introduction-demand-forecasting.md)
-- [Reduktionsnøgler](reduction-keys.md)
+- [Oversigt over behovsprognoser](introduction-demand-forecasting.md)
+- [Prognosereduktionsnøgler](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

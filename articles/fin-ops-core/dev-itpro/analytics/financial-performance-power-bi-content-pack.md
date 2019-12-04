@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35db2b51274afa6dae4cb5f75b4ba5390b167a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181743"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771113"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>PowerBI.com-løsning til driftsregnskab
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Denne PowerBI.com-løsning er blevet udfaset, som beskrevet i [Power BI-indholdspakker, der er tilgængelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Denne PowerBI.com-løsning er forældet som dokumenteret i [Fjernede eller forældede funktioner til Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 I dette emne beskrives PowerBI.com-løsning til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdsløsningen.
 

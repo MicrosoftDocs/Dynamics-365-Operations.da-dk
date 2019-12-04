@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551443"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812827"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Dele indhold med andre bidragydere i Dynamics 365 Talent - Onboard
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboard giver dig mulighed for at dele onboarding
 
 3. Under **Modtager** kan du angive indstillingen **Kan disse personer foretage ændringer?** til **Til**, hvis modtagerne skal kunne revidere skabelonen. Hvis modtagerne skal have besked via mail om, at du har delt skabelonen med dem, kan du angive indstillingen **Send mailbesked til modtagere** til **Til**.
 
-    [!Opsætning af adgangs- og mailindstillinger for en skabelon](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Opsætning af adgangs- og e-mail-indstillinger for en skabelon](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Indtast et navn eller en mailadresse, og vælg den ønskede modtager på rullelisten.
 5. Under fanen **Administrer adgang** kan du gennemse eller ændre, hvad modtagerne kan gøre med skabelonen. Hvis du vil ændre en modtagers adgang, skal du på rullelisten ud for modtagerens navn vælge **Kan vise**, **Kan redigere** eller **Fjern**, når det er relevant.
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboard giver dig mulighed for at dele onboarding
 ### <a name="see-also"></a>Se også
 
 - [Prøve eller købe appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheder](./whats-new.md)
-- [Frigivelsesnoter](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md)
+- [Frigivelsesplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support til Microsoft Dynamics 365 Talent](./talent-support.md)

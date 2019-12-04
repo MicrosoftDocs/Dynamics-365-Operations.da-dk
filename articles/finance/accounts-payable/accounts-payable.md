@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658730"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772231"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
@@ -41,9 +41,9 @@ Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dat
 
 Konfigurer kreditorgrupper, kreditorer, posteringsprofiler, forskellige betalingsindstillinger og parametre for kreditorer, gebyrer, leveringer og destinationer, egenveksler og andre typer kreditoroplysninger. 
 
-[Konfigurere Kreditorer](accounts-payable-overview.md)
+[Oversigt over konfiguration af kreditor](accounts-payable-overview.md)
 
-[Regnskabsfordelinger og kladdeposter for reskontro til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
+[Regnskabsfordelinger og reskontrokladdeposter til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
 [Værdiregulering af udenlandsk valuta for kreditor og debitor](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 
@@ -51,7 +51,7 @@ Konfigurer kreditorgrupper, kreditorer, posteringsprofiler, forskellige betaling
 
 I Kreditorer kan du spore fakturaer og udgående betalinger til kreditorer.
 
-[Fakturasammenholdelse for kreditorer](accounts-payable-invoice-matching.md)
+[Oversigt over fakturasammenholdelse for kreditor](accounts-payable-invoice-matching.md)
 
 [Kreditorposteringsprofiler](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ I Kreditorer kan du spore fakturaer og udgående betalinger til kreditorer.
 
 [Fakturasammenholdelse og interne indkøbsordrer](invoice-matching-intercompany-purchase-orders.md)
 
-[Løse afvigelser under sammenholdelse af fakturatotaler](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Oversigt over løsning af afvigelser under sammenholdelse af fakturatotaler](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Standardmodkonti for kreditorfakturakladder og fakturagodkendelseskladder](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,11 +93,11 @@ Tildel en systemdefineret betalingstype, f.eks check, elektronisk betaling eller
 
 [Bruge en kasserabat uden for kasserabatperioden](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Elektronisk rapportering for kreditorchecks](electronic-reporting-sample-vendor-checks.md)
+[Eksempel på elektronisk rapportering for kreditorchecks](electronic-reporting-sample-vendor-checks.md)
 
 [Tilbageføre en kreditorbetaling](reverse-vendor-payment.md)
 
-[Oversigt over forudbetalinger og forudbetalingsfakturaer](prepayments-invoices-vs-prepayments.md)
+[Forudbetalingsfakturaer vs. forudbetalinger](prepayments-invoices-vs-prepayments.md)
 
 [Centraliserede kreditorbetalinger](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ Under følgende emner finder du oplysninger om udligninger. Udligningsprocessen 
 
 [Konfigurere udligning](../cash-bank-management/configure-settlement.md)
 
-[Udligne en delvis kreditorbetaling før rabatdatoen](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Udligne en delvis kreditorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Udligne en delvis kreditorbetaling med rabatter på kreditorkreditnotaer](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Udligne en delvis kreditorbetaling, der omfatter flere rabatperioder](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Udligne en delvis kreditorbetaling eller endelig betaling før rabat](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Udligne en delvis kreditorbetaling og udligne den endelige betaling fuldt ud før rabatdatoen](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Enkelt bilag med flere debitor- eller kreditorposter](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ Under følgende emner finder du oplysninger om udligninger. Udligningsprocessen 
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-produktbemærkninger](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="blogs"></a>Blogs
 

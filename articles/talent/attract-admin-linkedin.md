@@ -1,5 +1,5 @@
 ---
-title: Konfigurere integration med LinkedIn for Microsoft Dynamics 365 Talent - Attract
+title: Konfigurer LinkedIn-integration med Attract
 description: Dette emne forklarer, hvordan du konfigurerer LinkedIn-integration for Microsoft Dynamics 365 Talent - Attract, så du nemt kan slå job op på LinkedIn fra Attract, så dine rekrutteringsmedarbejdere kan synkronisere deres rekrutteringsoplysninger med en kandidats LinkedIn-profil.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5cdce69396d6972d810e65e15b27c79119a0a9e6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552111"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833178"
 ---
-# <a name="set-up-integration-with-linkedin-for-microsoft-dynamics-365-talent---attract"></a>Konfigurere integration med LinkedIn for Microsoft Dynamics 365 Talent - Attract
+# <a name="set-up-linkedin-integration-with-attract"></a>Konfigurer LinkedIn-integration med Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Hjælp dine rekrutteringsmedarbejdere og ansættelsesansvarlige med at tiltrække de bedste talenter ved at konfigurere LinkedIn-integration med Microsoft Dynamics 365 Talent: Attract. Attract giver dig mulighed for at slå job direkte op til LinkedIn, det største professionelle onlinenetværk.
 
@@ -41,11 +41,11 @@ Attract giver to måder for interaktion med LinkedIn, så du kan få hjælp til 
 Du kan konfigurere begge muligheder under fanen **LinkedIn-integration** i Administration. Åbn Administration ved at gå til <https://attract.talent.dynamics.com/adminsettings>.
 
 > [!NOTE]
-> Før du kan bruge LinkedIn Recruiter-integration med Attract, skal du have [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) og [LinkedIn Recruiter-licenser](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). Yderligere oplysninger finder du under [Hvilken version af Attract?](./attract-comprehensive-hiring.md).
+> Før du kan bruge LinkedIn Recruiter-integration med Attract, skal du have [Tilføjelsesprogrammet Omfattende ansættelser](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) og [LinkedIn Recruiter-licenser](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). Yderligere oplysninger finder du under [Hvilken version af Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
-Hvis du har problemer med at slå job op på LinkedIn, kan du se [Fejlfinding af integration med LinkedIn](./attract-troubleshoot-linkedin.md).
+Hvis du har problemer med at slå job op på LinkedIn, kan du finde hjælp i [Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
-Du kan finde oplysninger om andre måder at slå job op på LinkedIn i [Ofte stillede spørgsmål om LinkedIn](./attract-linkedin-faq.md).
+Du kan finde oplysninger om andre måder at slå job op på LinkedIn i [Ofte stillede spørgsmål om Attract-integration med LinkedIn](./attract-linkedin-faq.md).
 
 ## <a name="configure-job-posting-to-linkedin"></a>Konfigurere jobopslag til LinkedIn
 
@@ -98,7 +98,7 @@ Hvis du vil tillade, at rekrutteringsmedarbejdere rekruttere ansøgere fra Linke
 
 Du kan give kandidater mulighed for at ansøge om dine job ved hjælp af deres LinkedIn-profiler. Yderligere oplysninger om Ansøg med LinkedIn finder du under [Styrken ved LinkedIn overalt: Ansøg med LinkedIn](https://blog.linkedin.com/2011/07/24/apply-with-linkedin).
 
-Denne funktion findes på nuværende tidspunkt i prøveversionen. Før du følger disse trin, skal du sikre dig, at Ansøg med LinkedIn er aktiveret. Du kan finde flere oplysninger om aktivering af funktioner til forhåndsvisning under [Få adgang til funktioner i prøveversioner af Talent](./access-preview-feature.md).
+Denne funktion findes på nuværende tidspunkt i prøveversionen. Før du følger disse trin, skal du sikre dig, at Ansøg med LinkedIn er aktiveret. Du kan finde flere oplysninger om aktivering af funktioner til forhåndsvisning under [Få adgang til funktioner i prøveversioner af Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 1. I menuen **Opsætning** (tandhjulsymbolet) i øverste højre hjørne skal du vælge **Administration**. Du kan også gå til <https://attract.talent.dynamics.com/adminsettings>.
 2. Vælg fanen **LinkedIn-integration**.
@@ -109,12 +109,12 @@ Denne funktion findes på nuværende tidspunkt i prøveversionen. Før du følge
 
 ## <a name="see-also"></a>Se også
 
-[Ofte stillede spørgsmål om FAQ](./attract-linkedin-faq.md)
+[Ofte stillede spørgsmål om Attract-integration med LinkedIn](./attract-linkedin-faq.md)
 
-[Slå job op på eksterne websteder fra Attract](./posting-jobs-external.md)
+[Slå job op på eksterne karrierewebsteder fra Attract](./posting-jobs-external.md)
 
-[Rekruttere kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Rekrutter kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Oprette job](./creating-jobs-attract.md)
+[Oprette, godkende og bogføre job i Attract](./creating-jobs-attract.md)
 
-[Fejlfinding af integration med LinkedIn](./attract-troubleshoot-linkedin.md)
+[Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

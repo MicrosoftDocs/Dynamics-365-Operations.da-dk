@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190942"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811620"
 ---
 # <a name="new-task-guides-february-2016"></a>Nye opgaveguider (februar 2016)
 
@@ -32,7 +32,7 @@ I dette emne vises de opgaveguider, der er udgivet til Microsoft BPM-biblioteker
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Opgaveguider i APQC Unified-bibliotek (februar 2016) til Microsoft Dynamics AX
 
-APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet til brug i Hjælp i Dynamics AX 7.0.0-frigivelsen. Hvis du har brug for lokaliserede versioner af disse Opgaveguider, er de tilgængelige i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016). Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md).
+APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet til brug i Hjælp i Dynamics AX 7.0.0-frigivelsen. Hvis du har brug for lokaliserede versioner af disse Opgaveguider, er de tilgængelige i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016). Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp-systemet](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kreditor
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176983"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771955"
 ---
 # <a name="cost-accounting-home-page"></a>Startside for omkostningsregnskab
 
@@ -39,17 +39,17 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 
 |      |   |
 |------|---|
-|  [Konfigurere basisenheder (eLearning)](https://mbspartner.microsoft.com/Home) (kræver CustomerSource-konto)  |[Opret dimensioner](cost-elements.md)  |
-|  [Oprette dimensionshierarki](dimension-hierarchy.md)  |[Oprette basisopsætning](./tasks/define-cost-control-units.md)| 
-| [Definere en tildelingsbasis](allocation-bases.md)|[Definer politikker](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Datakilde og dataprovider](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Datakilde og dataprovider](./tasks/process-trace-source-data.md)     | 
-|[Beregning af fast omkostning](overhead-calculation.md)  | [Analyse og rapportering](cost-control-workspace.md)   |
+|  [Konfigurere basisenheder (eLearning)](https://mbspartner.microsoft.com/Home) (kræver CustomerSource-konto)  |[Dimensioner for omkostningselement](cost-elements.md)  |
+|  [Dimensionshierarki](dimension-hierarchy.md)  |[Definere omkostningskontrolenheder](./tasks/define-cost-control-units.md)| 
+| [Fordelingsgrundlag](allocation-bases.md)|[Oprette og tildele omkostningsfordelingspolitik til en omkostningskontrolenhed](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Administrere en datakilde for finanspost for driftsregnskab](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Behandle og spore kildedata](./tasks/process-trace-source-data.md)     | 
+|[Beregning af faste omkostninger](overhead-calculation.md)  | [Arbejdsområde for omkostningsstyring](cost-control-workspace.md)   |
 
 ## <a name="get-started-videosbr"></a>Kom i gang-videoer<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [Introduktion til driftsregnskab](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobilarbejdsområde for omkostningsregnskab](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Bruge Excel til omkostningsregnskab](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

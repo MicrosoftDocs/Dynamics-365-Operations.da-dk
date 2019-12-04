@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537849"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812574"
 ---
 # <a name="connect-the-help-system"></a>Oprette forbindelse til Hjælp-systemet
 
@@ -54,7 +54,7 @@ På siden **Systemparametre** skal du følge disse trin:
 > [!IMPORTANT]
 > Første gang du åbner fanen **Hjælp**, skal du oprette forbindelse til Lifecycle Services. Du skal klikke på linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter klikke på **OK** for at få adgang til siden **Systemparametre**.
 >
-> [![Oprette forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Oprette forbindelse til LCS")](./media/connect-to-lcs-crop.png)
+> [![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Opret forbindelse til LCS")](./media/connect-to-lcs-crop.png)
 
 1. Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 2. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
@@ -80,7 +80,7 @@ Du kan bruge opgaveguider til at oprette brugerdefineret hjælp eller oprette fo
 
 Du kan oprette en brugerdefineret hjælp til Finance, Supply Chain Management og til Retail ved at oprette opgaveregistreringer, der afspejler din implementering, og gemme dem i et bibliotek i en LCS-forretningsproces. Du kan ikke oprette brugerdefinerede opgaveguider til Talent.
 
-Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan også oprette en kopi af det globale APQC Unified-bibliotek og derefter åbne kopien, åbne opgaveregistreringer fra det, redigere dem og gemme registreringerne med dine ændringer. Du kan finde flere oplysninger under [Sådan opretter du en opgaveregistrering, der skal bruges som dokumentation eller uddannelse](../../dev-itpro/user-interface/task-recorder.md).
+Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan også oprette en kopi af det globale APQC Unified-bibliotek og derefter åbne kopien, åbne opgaveregistreringer fra det, redigere dem og gemme registreringerne med dine ændringer. Du kan finde flere oplysninger under [Arbejdsrutineoptagerressourcer](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Oprette forbindelse til et brugerdefineret websted
 
@@ -91,8 +91,8 @@ Microsoft har udgivet en hvidbog og eksempelkode, der beskriver, hvordan du opre
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over Hjælp](help-overview.md)
+[Hjælp-system](help-overview.md)
 
-[Oversigt over Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)
+[Ressourcer til arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)
 
-[Sådan opretter du en opgaveregistrering, der kan bruges til dokumentation eller undervisning](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder-training-docs.md)

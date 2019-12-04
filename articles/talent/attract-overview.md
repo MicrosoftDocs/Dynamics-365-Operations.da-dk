@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attract-funktioner og -egenskaber
+title: Attract-funktioner og -egenskaber
 description: I dette emne beskrives funktionerne i Microsoft Dynamics 365 Talent - Attract til administration af processen til ansættelse af nye talenter.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552065"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833063"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Microsoft Dynamics 365 Talent - Attract-funktioner og -egenskaber
+# <a name="attract-features-and-capabilities"></a>Attract-funktioner og -egenskaber
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Attract indeholder en foruddefineret ansættelsesproces, der har fire grundlægg
 Så snart kandidaten er føjet til et job, modtager vedkommende en mail med et link til det sted, hvor de kan hente webappen. Appen indeholder oplysninger om jobbet og bruges til at kommunikere med ansættelsesteamet. Kandidaterne kan også bruge den til at sende oplysninger om, hvornår de er til rådighed for samtaler.
 
 ## <a name="analytic-reports"></a>Analyserapporter
-Ansættelsesteam kan bruge nøglemålepunkter for ansættelsesprocesser til et enkelt job eller samlet på tværs af alle job med [analytiske rapporter i Attract](analytic-reports.md). Denne funktion findes i øjeblikket som [eksempel](access-preview-feature.md) for kunder med [tilføjelsesprogrammet Omfattende ansættelser](attract-comprehensive-hiring.md).
+Ansættelsesteam kan bruge nøglemålepunkter for ansættelsesprocesser til et enkelt job eller samlet på tværs af alle job med [analytiske rapporter i Attract](analytic-reports.md). Denne funktion er i øjeblikket tilgængelig i en [prøveversion](access-preview-feature.md) for kunder, der har [Hvilken version af Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174184"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771511"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-indhold til omkostningsstyring
 
@@ -37,7 +37,7 @@ Microsoft Power BI-indholdet til **Omkostningsstyring** er beregnet til lagerbog
 > [!NOTE]
 > Det Power BI-indhold til **Omkostningsstyring**, som beskrives i dette emne, gælder for Dynamics 365 Finance and Operations 8.0.
 > 
-> Power BI-indholdspakken til **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, er blevet udfaset. Du kan finde flere oplysninger om denne udfasning i [Power BI-indholdspakkerne, der er tilgængelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Power BI-indholdspakken til **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, er blevet udfaset. Yderligere oplysninger om denne forældede funktion finder du i [Fjernede eller forældede funktioner til Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dette Power BI-indhold giver et kategoriseret format, som gør det lettere at overvåge performance for lagerbeholdninger og visualisere, hvordan omkostninger "flyder" gennem dem. Du kan få ledelsesmæssig indsigt, f.eks. omsætningshastigheden, antallet af dage, hvor varen er på lager, nøjagtighed og "ABC-klassifikation" på dit foretrukne samlede niveau (firma, vare, varegruppe eller sted). De oplysninger, der er gjort tilgængelige, kan også bruges som et detaljeret supplement til regnskabet.
 
@@ -172,7 +172,7 @@ I nedenstående tabeller vises en oversigt over visualiseringerne i Power BI-ind
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 
-Data fra programmet bruges til at udfylde rapportsiderne i Power BI-indhold til **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL Server-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
+Data fra programmet bruges til at udfylde rapportsiderne i Power BI-indhold til **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL Server-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Power BI-integration med Enhedslager](power-bi-integration-entity-store.md).
 
 De vigtigste samlede målinger for følgende objekter bruges som grundlag af Power BI-indholdet.
 

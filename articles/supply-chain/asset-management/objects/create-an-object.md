@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571593"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811843"
 ---
 # <a name="create-an-asset"></a>Oprette et aktiv
 
@@ -36,15 +36,15 @@ Dette emne beskriver, hvordan du opretter et aktiv i Styring af aktiver.
 1. Klik på **Styring af aktiver** > **Almindeligt** > **Aktiver** > **Alle aktiver** eller **Aktive aktiver**.
 2. Klik på knappen **Nyt**.
 3. I dialog **Opret aktiver** skal du indsætte data vedrørende **Aktiv** (aktiv-id'et) og navnet på aktivet. Vælg dato og klokkeslæt for aktivet i feltet **Gyldig**. Fra denne dato kan du installere aktivet på et arbejdssted samt flytte og erstatte aktivet i en aktiv struktur.
-4. I feltet **Aktivtype** skal du vælge aktivtypen for aktivet (obligatorisk felt). Vælg om nødvendigt **Aktivproducent** og **Aktivmodel** for aktivet. Hvis der kun er oprettet ét produkt, vælges det pågældende produkt automatisk i feltet **Aktivproducent**. De valg, der er tilgængelige i felterne **Aktivproducent** og **Aktivmodel**, afhænger af opsætningen i [Aktivproducent og -model](../setup-for-objects/product-and-model.md).
+4. I feltet **Aktivtype** skal du vælge aktivtypen for aktivet (obligatorisk felt). Vælg om nødvendigt **Aktivproducent** og **Aktivmodel** for aktivet. Hvis der kun er oprettet ét produkt, vælges det pågældende produkt automatisk i feltet **Aktivproducent**. De valg, der er tilgængelige i felterne **Aktivproducent** og **Aktivmodel**, afhænger af opsætningen i [Aktivproducenter og -modeller](../setup-for-objects/product-and-model.md).
 5. I gruppen **Overordnede aktiv** er feltet **Aktiv** tomt som standard. Hvis det er nødvendigt, kan du vælge et overordnet aktiv, og derefter udfyldes alle felter i gruppen **Overordnet aktiv** automatisk.
 >[!NOTE]  
->Når du vælger et overordnet aktiv, er der to eller tre tilgængelige faner: Fanen **Mine aktiver** indeholder aktiver, der er relateret til de arbejdssteder, som du (den vedligeholdelsesarbejder, som er logget på systemet) kan allokeres til. Hvis der ikke er konfigureret noget arbejdssted for en vedligeholdelsesarbejder i formen [Vedligeholdelsesarbejdere](../setup-for-objects/workers-and-worker-groups.md), vil fanen **Mine aktiver** ikke være synlig. Fanen **Aktive aktiver** indeholder en liste over alle aktiver med status som "Aktiv" for aktivers livscyklus. Fanen **Aktiv visning** viser en trævisning af arbejdssteder og aktiver, der er installeret på disse steder.
+>Når du vælger et overordnet aktiv, er der to eller tre tilgængelige faner: Fanen **Mine aktiver** indeholder aktiver, der er relateret til de arbejdssteder, som du (den vedligeholdelsesarbejder, som er logget på systemet) kan allokeres til. Hvis der ikke er konfigureret noget arbejdssted for en vedligeholdelsesarbejder i formen [Vedligeholdelsesarbejdere og arbejdsgrupper](../setup-for-objects/workers-and-worker-groups.md), vil fanen **Mine aktiver** ikke være synlig. Fanen **Aktive aktiver** indeholder en liste over alle aktiver med status som "Aktiv" for aktivers livscyklus. Fanen **Aktiv visning** viser en trævisning af arbejdssteder og aktiver, der er installeret på disse steder.
 
 6. Det standardarbejdssted, du har oprettet, foreslås for aktivet i **Aktiv**-gruppen > feltet **Arbejdssted**. Vælg et andet arbejdssted, hvis det er nødvendigt.
 
 >[!NOTE]
->Når du har oprettet et aktiv, kan du installere det på et andet arbejdssted, hvis det er nødvendigt. Kun aktiver på øverste niveau (aktiver uden et aktuelt overordnet aktiv) kan installeres på et arbejdssted. Det betyder, at du installerer det øverste niveau samt eventuelle underordnede aktiver på det valgte arbejdssted. Læs mere om at installere aktiver på arbejdssteder under [Arbejdssteder](../functional-locations/introduction-to-functional-locations.md).
+>Når du har oprettet et aktiv, kan du installere det på et andet arbejdssted, hvis det er nødvendigt. Kun aktiver på øverste niveau (aktiver uden et aktuelt overordnet aktiv) kan installeres på et arbejdssted. Det betyder, at du installerer det øverste niveau samt eventuelle underordnede aktiver på det valgte arbejdssted. Læs mere om at installere aktiver på arbejdssteder under [Introduktion til arbejdssteder](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klik på **OK**.
 8. Vælg aktivet på listen **Alle aktiver**, og klik på knappen **Rediger** for at føje yderligere oplysninger til aktivet.
@@ -53,13 +53,13 @@ Dette emne beskriver, hvordan du opretter et aktiv i Styring af aktiver.
 
 Det arbejdssted, som aktivet er relateret til, vises i feltet **Arbejdssted**. Hvis aktivet er et overordnet aktiv, vises antallet af underordnede, der er relateret til aktivet, i feltet **Underordnet**. Hvis aktivet er et underordnet aktiv for et eksisterende aktiv, vises id'et for det overordnede aktiv i feltet **Overordnet**.
 
-Du kan redigere oplysninger om **Aktivproducent** og **Aktivmodel** på aktivet, som bruges til at administrere reservedele, alternative reservedele og jobtypestandarder. Se [Aktivproducent og -model](../setup-for-objects/product-and-model.md) for at få flere oplysninger. Du kan også tilføje oplysninger om **Modelår** og **Serienummer**, hvis det er nødvendigt.
+Du kan redigere oplysninger om **Aktivproducent** og **Aktivmodel** på aktivet, som bruges til at administrere reservedele, alternative reservedele og jobtypestandarder. Se [Aktivproducenter og -modeller](../setup-for-objects/product-and-model.md) for at få flere oplysninger. Du kan også tilføje oplysninger om **Modelår** og **Serienummer**, hvis det er nødvendigt.
 
 **Aktuel livscyklustilstand** bruges til at definere, om aktivet er aktivt eller inaktivt. Når du opretter et aktiv, angives fasen altid til den første fase i aktivfasegruppen. Når du er klar til at aktivere et aktiv, skal du klikke på **Opdater aktivtilstand** og vælge den livscyklustilstand, du har defineret som "aktivt aktiv", og klikke på **OK**.
 
 **Bemærk:** Når et aktiv er indstillet til "inaktiv", er det ikke længere muligt at oprette arbejdsordrer for aktivet. Du kan heller ikke planlægge forebyggende vedligeholdelsesopgaver for et inaktivt aktiv.
 
-Felterne **Serviceniveau** og **Kritikalitet** vedrører arbejdsordrer, som er oprettet for aktivet. Felterne viser de **Serviceniveau**- og **Kritikalitet**-tal, som er beregnet for aktivets aktuelle opsætning. Se [Serviceniveauer for aktiv](../setup-for-objects/object-priorities.md) og [Kritiske forhold omkring aktiv](../setup-for-objects/object-criticalities.md) vedrørende opsætningen af disse værdier.
+Felterne **Serviceniveau** og **Kritikalitet** vedrører arbejdsordrer, som er oprettet for aktivet. Felterne viser de **Serviceniveau**- og **Kritikalitet**-tal, som er beregnet for aktivets aktuelle opsætning. Se [Serviceniveauer for aktiv](../setup-for-objects/object-priorities.md) og [Kritikalitetstyper for aktiver](../setup-for-objects/object-criticalities.md) vedrørende opsætningen af disse værdier.
 
 ## <a name="asset"></a>Aktiv
 

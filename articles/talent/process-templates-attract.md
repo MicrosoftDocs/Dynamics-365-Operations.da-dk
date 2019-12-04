@@ -1,6 +1,6 @@
 ---
-title: Oprette en processkabelon i Attract
-description: Dette emne indeholder oplysninger om, hvordan du opretter en processkabelon i Attract.
+title: Opret en ansættelsesprocesskabelon i Attract
+description: Dette emne indeholder oplysninger om, hvordan du opretter en ansættelsesprocesskabelon i Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622712"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832552"
 ---
-# <a name="create-a-process-template-in-attract"></a>Oprette en processkabelon i Attract
+# <a name="create-a-hiring-process-template-in-attract"></a>Opret en ansættelsesprocesskabelon i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Administratorer, rekrutteringsmedarbejdere og ansættelsesansvarlige kan oprette
 > [!NOTE]
 > Stadienavne er synlige for kandidater på siden **Ansøgningsstatus**. Du bør overveje dette, når du vælger navne til stadier.
 
-Du kan få mere at vide om aktiviteter i [Ansættelsesprocesaktiviteter i Attract](./activities-attract.md).
+Du kan få mere at vide om aktiviteter i [Aktiviteter i ansættelsesprocesser](./activities-attract.md).
 
 Følg disse trin for at oprette en ansættelsesprocesskabelon.
 

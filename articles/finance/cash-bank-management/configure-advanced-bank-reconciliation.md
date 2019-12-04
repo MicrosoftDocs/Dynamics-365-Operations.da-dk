@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177003"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772622"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Konfigurationsproces for avanceret bankafstemning
 
@@ -31,7 +31,7 @@ ms.locfileid: "2177003"
 
 Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 Finance. I denne artikel forklares opsætningsprocesserne ved afstemning.  
 
-Der er et antal enheder, der skal konfigureres, før du kan bruge den avancerede bankkontoafstemningsfunktion. Du kan finde flere oplysninger om opsætning af import af bankkontoudtog under [Konfigurere importprocessen for bankkontoudtog](set-up-advanced-bank-reconciliation-import-process.md).  Krav til konfiguration af afstemningsprocessen er beskrevet nedenfor.
+Der er et antal enheder, der skal konfigureres, før du kan bruge den avancerede bankkontoafstemningsfunktion. Du kan finde flere oplysninger om opsætning af import af bankkontoudtog under [Konfigurer den avancerede importprocessen for bankkontoudtog](set-up-advanced-bank-reconciliation-import-process.md).  Krav til konfiguration af afstemningsprocessen er beskrevet nedenfor.
 
 ## <a name="transaction-codes"></a>Transaktionskategorier
 Posteringskoder kan bruges som en del af sammenholdningsreglerne for bankafstemningen. Posteringskoder gør det nemmere kun at sammenholde de samme typer transaktioner mellem Finance og bankkontoudtoget. For at udføre denne type sammenholdelse skal du først definere posteringstyper, der bruges til banktransaktioner fra Finance, og derefter knytte disse typer til kontoudtogstransaktionskoder, der bruges af din bank. Posteringstyper for bankposteringer defineres på siden **Bankposttyper**. Det er også her, at du kan definere den hovedkonto, der skal bruges til posteringer, der er knyttet til denne posteringstype. 

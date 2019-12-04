@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a73f49064911a2b28c742cfc19469f4bf95e74
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b77605070387871335c480e25cbe23af1155d6e8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569955"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812162"
 ---
 # <a name="asset-manufacturers-and-models"></a>Aktivproducenter og -modeller
 
@@ -45,7 +45,7 @@ I dette emne beskrives, hvordan du konfigurerer aktivproducenter og relaterede m
 8. I feltet **Aktivtype** skal du vælge den aktivtype, som producentmodellen skal relateres til.
 
     > [!NOTE]
-    > Du kan også oprette relationer for aktivtyper, producenter og modeller i opslaget **Aktivtyper**. Du kan finde flere oplysninger under [Opret en aktivtype](../setup-for-objects/object-types.md).
+    > Du kan også oprette relationer for aktivtyper, producenter og modeller i opslaget **Aktivtyper**. Du kan finde flere oplysninger under [Aktivtyper](../setup-for-objects/object-types.md).
 
     I oversigtspanelet **Detaljer** viser feltet **Modeller** antallet af aktivmodeller, der er konfigureret for den valgte aktivproducent. Feltet **Aktiver** viser antallet af aktiver, der bruger den valgte producent.
     

@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551217"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773425"
 ---
 # <a name="import-iso20022-files"></a>Importere ISO20022-filer
 
@@ -49,7 +49,7 @@ Følgende forudsætninger skal være opfyldt, for at du kan importere meddelelse
 
     - I feltet **Debitorbetalinger, kontolængde** skal du angive længden på den debitorkode, der bruges i ISR-referencer eller til automatisk identifikation af kunden.
     - Sørg for, at kundenummer og fakturanummeret (nummerserier) kun indeholder cifre. De må ikke indeholde nogen andre tegn. Fakturanummeret må ikke have foranstillede nuller.
-    - Angiv ESR, BESR og registreringsnumre for den juridiske enheds bankkonto. Yderligere oplysninger finder du i [ældre ESR-funktion](emea-che-esr-customer-payments-import.md), fordi der kræves lignende indstillinger.
+    - Angiv ESR, BESR og registreringsnumre for den juridiske enheds bankkonto. Yderligere oplysninger finder du i [import af kundebetalinger i ESR](emea-che-esr-customer-payments-import.md), fordi der kræves lignende indstillinger.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importere filen camt.054 kreditadvis til debitorbetalingskladden
 1. På siden **Kladdelinjer for debitorindbetalinger** skal du klikke på **Funktioner** > **Importer betalinger**.
@@ -127,5 +127,5 @@ Yderligere oplysninger om elektronisk indberetning kan du finde i [Oversigt over
 - [Konfigurere firmas bankkonti for direkte ISO20022-debiteringer](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
 - [Konfigurere debitorer og debitorbankkonti for direkte ISO20022-debiteringer](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
 - [Konfigurere en betalingsmetode for ISO20022-kreditoverførsler](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
-- [Konfigurere en betalingsmetode for ISO20022 Direct Debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Opret betalingsmåde til ISO20022 direkte debet](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Konfigurere kreditorer og kreditorbankkonti for ISO20022-kreditoverførsler](./tasks/set-up-vendor-iso20022-credit-transfers.md)

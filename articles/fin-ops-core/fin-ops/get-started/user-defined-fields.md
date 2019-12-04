@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: af2066c095c675aa0003ac2cf66bebba48a1e8a5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190850"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812499"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Oprette og arbejde med brugerdefinerede felter
 
@@ -103,7 +103,7 @@ For felter på valglister kan sættet af gyldige værdier for det brugerdefinere
 
 ### <a name="exposing-custom-fields-on-data-entities"></a>Visning af brugerdefinerede felter på dataenheder
 
-Det kan også være vigtigt at tillade brugerdefinerede felter at være synlige på dataenheder. Dataenheder bruges i funktionen [Åbn i Office](../../dev-itpro/office-integration/office-integration.md), samt hvad angår scenarier til import og eksport af data.
+Det kan også være vigtigt at tillade brugerdefinerede felter at være synlige på dataenheder. Dataenheder bruges i funktionen [Oversigt over integration af Office](../../dev-itpro/office-integration/office-integration.md), samt hvad angår scenarier til import og eksport af data.
 
 Følg disse trin for at få vist et brugerdefineret felt i en dataenhed:
 

@@ -1,5 +1,5 @@
 ---
-title: Aktivere Broadbean-integration i Microsoft Dynamics 365 Talent - Attract
+title: Aktiver Broadbean-integration i Attract
 description: Dette emne forklarer, hvordan du konfigurerer Microsoft Dynamics 365 Talent - Attract til at slå job op på eksterne jobportaler som Broadbean.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0ca655655f79ddf88b6f6c7377a1b596477c35a7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552134"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833202"
 ---
-# <a name="enable-broadbean-integration-in-microsoft-dynamics-365-talent---attract"></a>Aktivere Broadbean-integration i Microsoft Dynamics 365 Talent - Attract
+# <a name="enable-broadbean-integration-in-attract"></a>Aktiver Broadbean-integration i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Du vil gerne have, at dine ledige stillinger ses af så mange kvalificerede kandidater som muligt. Rekrutteringswebsteder såsom Broadbean kan hjælpe dig med at nå dette mål. Microsoft Dynamics 365 Talent: Attract giver dig nu mulighed for at slå job op på Broadbean, og Microsoft stiller løbende nye tilbud til rådighed på dette område.
 

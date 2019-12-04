@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04b3fb3038a1373e203ec240a0163cf67de655cc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549980"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813830"
 ---
 # <a name="set-up-consignment"></a>Konfigurer konsignation
 
@@ -31,7 +31,7 @@ ms.locfileid: "1549980"
 
 Dette emne forklarer, hvordan du konfigurerer indgående konsignationslageroperationer.
 
-Konsignationslager er lager, der ejes af en leverandør, men lagret på dit sted. Når du er klar til at forbruge eller bruge af lageret, overtager du ejerskabet af lageret. I dette emne beskrives den opsætning, der er nødvendig for at aktivere konsignationsprocesser. Yderligere oplysninger om konsignationsprocesser findes under [Konsignation](consignment.md).
+Konsignationslager er lager, der ejes af en leverandør, men lagret på dit sted. Når du er klar til at forbruge eller bruge af lageret, overtager du ejerskabet af lageret. I dette emne beskrives den opsætning, der er nødvendig for at aktivere konsignationsprocesser. Yderligere oplysninger om konsignationsprocesser findes under [Opsætning af konsignation](consignment.md).
 
 ## <a name="inventory-owners"></a>Lagerejere
 For at registrere fysisk indgående konsignationslager skal du definere en leverandørejer. Dette gøres på siden **Lagerejer**. Når du vælger en **kreditorkonto**, oprettes standardværdier for felterne **Navn** og **Ejer**. Værdien i feltet **Ejer** vil være synlig for leverandøren, så kan du ændre den, hvis dine kontonavne for kreditorer ikke er let for eksterne personer at genkende. Det er muligt at redigere feltet **Ejer**, men kun indtil tidspunktet, når du gemmer posten **Lagerejer**. Feltet **Navn** udfyldes med navnet på den part, der er tilknyttet kreditorkontoen, og dette kan ikke ændres.
@@ -49,4 +49,4 @@ Kladden **Ændring af beholdningsejerskab** bruges til at registrere overdragels
 [![ændringskladde for beholdningsejerskab](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbejde i konsignationsprocesser
-Hvis dine kreditorer bruger leverandørsamarbejde som interface, kan de bruge dette til at overvåge forbruget af lageret på dit sted. Yderligere oplysninger om opsætning af leverandører til leverandørsamarbejde findes i [Konfiguration af sikkerhed for brugere af leverandørsamarbejde](../procurement/configure-security-vendor-portal-users.md).
+Hvis dine kreditorer bruger leverandørsamarbejde som interface, kan de bruge dette til at overvåge forbruget af lageret på dit sted. Yderligere oplysninger om opsætning af leverandører til at anvende leverandørsamarbejde findes i [Sikkerhed for bruger af leverandørportal](../procurement/configure-security-vendor-portal-users.md).
