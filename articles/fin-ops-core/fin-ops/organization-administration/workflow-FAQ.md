@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om arbejdsgang
 description: Dette emne besvarer ofte stillede spørgsmål om arbejdsgangssystemet.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772691"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934903"
 ---
 # <a name="workflow-faq"></a>Ofte stillede spørgsmål om arbejdsgang
 
@@ -37,7 +37,7 @@ Hver besked er for en særskilt workflowopgave, men lighedspunkter kan medføre 
 Der er i øjeblikket en begrænsning i funktionen til eksport af arbejdsgange, som forhindrer, at arbejdsgangens navne overstiger 48 tegn. Hvis du bruger et navn, der er længere end 48 tegn, kan det resultere i, at fejlen "Serveren kunne ikke godkende anmodningen", og/eller forhindre, at en fil kan eksporteres uden en filtype. Følgende blogindlæg indeholder flere detaljer [Fejlfinding i forbindelse med eksport af arbejdsgang](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Kan afsenderen af en arbejdsgang også godkende arbejdsgangen?
-Ja, en afsender af en arbejdsgang kan også godkende arbejdsgangen, hvis den er konfigureret på denne måde. Hvis du vil undgå dette, skal du angive **Arbejdsgangsparametre > Generelt > Godkender > Tillad ikke afsenders godkendelse** til **Ja**.
+Ja, en afsender af en arbejdsgang kan også godkende arbejdsgangen, hvis den er konfigureret på denne måde. Hvis du vil undgå dette, skal du angive **Systemadministration > Arbejdsgang > Arbejdsgangsparametre > Generelt > Godkender > Tillad ikke afsenders godkendelse** til **Ja**.
 
 ## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>Kan jeg føje påmindelser til arbejdsgange for at sende beskeder til brugerne?
 Her er nogle få nøgleområder, du kan bemærke om tilføjelse af påmindelser til arbejdsgange for at give beskeder:
@@ -51,3 +51,6 @@ Her er nogle få nøgleområder, du kan bemærke om tilføjelse af påmindelser 
     - [Arbejdsgangsforretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), som kunden kan bruge til at udløse flows, har de beskeder, de søger.   
 
 Hvis en bruger kort sagt ikke får den rigtige besked fra Handlingscenter, når vedkommende er blevet tildelt en arbejdsgangsopgave, så brug [Arbejdsgangsforretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate til at give flere eller andre beskeder.
+
+## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>Arbejdsproceseditoren har problemer med at starte under ADFS 
+Når du kører arbejdsproceseditoren under Active Directory Federation Services (ADFS) i et opgraderet miljø, kan den have problemer med at starte. Hvis den gør det, skal du sørge for, at URL-adressen "https://dynamicsaxworkfloweditor/" er tilføjet til egenskaben **Microsoft Dynamics 365 for Operations i Det lokale miljø - Arbejdsgang - Forudinstalleret program** i ADFS-indstillingerne.

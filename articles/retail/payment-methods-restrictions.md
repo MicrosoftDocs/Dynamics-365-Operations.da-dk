@@ -3,7 +3,7 @@ title: Begrænse betalingsmetoder for returneringer uden kvittering
 description: I dette emne beskrives, hvordan der kan være begrænsede refusionsmuligheder for bestemte betalingstyper, hvis varerne returneres uden kvittering.
 author: rapraj
 manager: AnnBe
-ms.date: 013/05/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: 6e2c32aae06ce7bbdde30809d7a197f43b856af1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22e675fd9b7ee33c89f52ac4c8c15807580b86a7
+ms.sourcegitcommit: b806f0c94d703bec39680fead827733361d47045
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564337"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935846"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrænse betalingsmetoder for returneringer uden kvittering
 
@@ -41,7 +41,7 @@ Når du vil konfigurere betalingsmetoder, skal følgende opgaver være fuldført
 3. Konfigurer betalingsmetoder for butikken. Tilknyt betalingsmetoder til de enkelte butikker, og angiv derefter butiksspecifikke indstillinger for de enkelte betalingsmetoder.
 4. Konfigurer betalingsmetoder for butikker. For alle kortbetalingsmetoder, som butikken accepterer, skal du udføre kortopsætningen.
 
-![Opsætning for detailbutik](media/NoReceiptReturns1.png "Opsætning for detailbutik") 
+![Konfiguration af Retail Store](media/NoReceiptReturns1.png "Konfiguration af Retail Store") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrænse betalingsmetoder for returneringer uden kvittering
@@ -52,12 +52,12 @@ Standardværdien for ja/nej-knappen er **Nej**, hvilket sikrer, at betalingsmeto
 
 Når **Begræns for returneringer uden kvittering** er indstillet til **Ja**, er den valgte betalingsmetode ikke tilladt for refusioner. 
 
-![Betalingsmetode for detailbutik](media/NoReceiptReturns3.png "Betalingsmetode for detailbutik") 
+![Betalingsmetode for Retail Store](media/NoReceiptReturns3.png "Betalingsmetode for Retail Store") 
 
 > [!NOTE]
 > Når en kasserer vælger en betalingsmåde, hvor der er begrænsede refusionsmuligheder uden kvittering, vises en meddelelse til kontrol af godkendte betalingsmetoder.
 
-![Godkendte betalingsmetoder](media/NoReceiptReturns4.png "Godkendte betalingsmetoder") 
+![Acceptable betalingsmetoder](media/NoReceiptReturns4.png "Acceptable betalingsmetoder") 
 
 Hvis en transaktion har både en returnering med kvittering og en returnering uden kvittering, gennemtvinges begrænsningsbetingelserne ikke, fordi transaktionen bliver en returneringsarbejdsgang med en kvittering. 
 

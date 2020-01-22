@@ -3,7 +3,7 @@ title: Konfigurere brugerdefinerede sider til brugerlogon
 description: Dette emne beskriver, hvordan du bygger tilpassede sider i Microsoft Dynamics 365 Commerce, der håndterer tilpasset logon for brugere af Azure Active Directory (Azure AD) Business-to-Consumer-lejere (B2C).
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697537"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945553"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -136,11 +136,11 @@ Følg disse trin for at opdatere politikken "Tilmelding og logon" med oplysninge
 1. Vælg **Sidelayout** i den **Tilmelding og logon**-politik, du har konfigureret tidligere, i navigationsruden.
 1. Vælg layoutet **Side for samlet tilmelding eller logon**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Skriv f.eks. **www.\<mit domæne\>.com/sign-in?preloadscripts=true**.
+1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
 1. Vælg layoutet **Lokal kontotilmelding**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Skriv f.eks. **www.\<mit domæne\>.com/sign-in?preloadscripts=true**.
+1. Angiv hele URL-adressen til tilmelding i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
 1. Benyt følgende fremgangsmåde i sektionen **Brugerattributter**:
 
@@ -156,7 +156,7 @@ Følg disse trin for at opdatere politikken "Profilredigering" med oplysninger o
 1. Vælg **Sidelayout** i den **Profilredigering**-politik, du har konfigureret tidligere, i navigationsruden.
 1. Vælg layoutet til **Profilredigeringsside**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Skriv f.eks. **www.\<mit domæne\>.com/sign-in?preloadscripts=true**.
+1. Angiv hele URL-adressen til profilredigering i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
 1. Benyt følgende fremgangsmåde i sektionen **Brugerattributter**:
 
@@ -170,12 +170,14 @@ Følg disse trin for at opdatere politikken "Nulstilling af adgangskode" med opl
 1. Vælg **Sidelayout** i den **Nulstilling af adgangskode**-politik, du har konfigureret tidligere, i navigationsruden.
 1. Vælg layoutet **Side for ny adgangskode**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Skriv f.eks. **www.\<mit domæne\>.com/sign-in?preloadscripts=true**.
+1. Angiv hele URL-adressen til nulstilling af kodeord i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
 1. Vælg layoutet for **Side til kontogodkendelse**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Skriv f.eks. **www.\<mit domæne\>.com/sign-in?preloadscripts=true**.
+1. Angiv hele URL-adressen til verificering af nulstilling af kodeord i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Tilpasse standardtekststrenge for etiketter og beskrivelser
 
@@ -193,15 +195,15 @@ Når du har opdateret global.json-filen og publiceret dine ændringer, vises den
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over onlinebutik](online-store-overview.md)
-
-[Oprette et websted for e-handel](create-ecommerce-site.md)
+[Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
 
+[Oprette et websted for e-handel](create-ecommerce-site.md)
+
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 
-[Konfigurere dit domænenavn](configure-your-domain-name.md)
+[Administrer robots.txt-filer](manage-robots-txt-files.md)
 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 

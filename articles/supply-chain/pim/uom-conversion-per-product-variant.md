@@ -3,12 +3,12 @@ title: Måleenhedskonvertering pr. produktvariant
 description: Dette emne beskriver, hvordan måleenhedskonverteringer kan konfigureres for produktvarianter.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249442"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935093"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måleenhedskonvertering pr. produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 Dette emne beskriver, hvordan måleenhedskonverteringer kan konfigureres for produktvarianter. Emnet indeholder et eksempel på opsætningen.
 
 Denne funktion gør det muligt for virksomheder at definere forskellige enhedsomregninger mellem varianterne af det samme produkt. I dette emne bruges følgende eksempel. Et firma sælger T-shirts i størrelse lille, mellem, stor og ekstra stor. Disse T-shirts er defineret som et produkt, og de forskellige størrelser er defineret som varianter af produktet. T-shirts er pakket i kasser, og der kan være fem T-shirts i en kasse med undtagelse af de ekstra store, hvor der er kun plads til fire T-shirts. Virksomheden ønsker at spore de forskellige varianter af sine T-shirts i enheden **Styk**, men sælger T-shirts i enheden **Kasser**. Konverteringen mellem lagerenheden og salgsenheden er 1 kasse = 5 stk. undtagen varianten ekstra stor, hvor konverteringen er 1 kasse = 4 styk.
-
-## <a name="setup"></a>Konfiguration
-
-Du kan konfigurere parametrene til at bruge funktionen for produkter, der er aktiveret til **Alle processer**, eller kun til produkter, der er aktiveret til **Lagerstedsprocesser** ved hjælp af indstillingen **Aktivér konverteringer af måleenheder** på siden **Parametre for produktoplysninger**.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurere et produkt til enhedsomregning pr. variant
 
 Produktvarianter kan kun oprettes for produkter af **produktundertypen**: **Produktmaster**. Du kan finde flere oplysninger i [Oprette en produktmaster](tasks/create-product-master.md).
 
 Funktionen er ikke aktiveret for produkter, der er konfigureret til fastvægtprocesser. 
-
-Under oprettelsen af en produktmaster skal du aktivere måleenhedskonvertering ved hjælp af indstillingen **Aktivér konverteringer af måleenheder** på siden **Produktdetaljer**.
 
 Når produktmasteren er oprettet med frigivne produktvarianter, kan du angive enhedsomregninger pr. variant. Du kan finde menupunktet, hvor du kan åbne siden til enhedsomregning i forbindelse med et produkt eller en produktvariant på følgende sider.
 

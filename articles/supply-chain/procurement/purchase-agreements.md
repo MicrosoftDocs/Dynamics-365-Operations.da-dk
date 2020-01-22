@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813356"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902426"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -36,7 +36,14 @@ Købsaftaler kan gælde for en bestemt mængde af et produkt, et bestemt valutab
 
 På siden **Købsaftaler** kan du oprette, anvende og følge op på de købsaftaler, der findes mellem din organisation og dine kreditorer. Når du har oprettet en købsaftale, kan du f.eks. oprette en ordre direkte fra den. Hver købsaftale har en gyldighedsperiode, der er defineret af den person, der opretter købsaftalen. Leveringsdatoen for et køb skal ligge inden for denne gyldighedsperiode.  
 
-Når du opretter en købsaftale, skal du aktivere den, før den træder i kraft. Du aktiverer en købsaftale ved at sætte indstillingen **Markér aftale som gældende** til **Ja**.
+Når du opretter en købsaftale, skal du aktivere den, før den træder i kraft. Du aktiverer en købsaftale ved at sætte indstillingen **Markér aftale som gældende** til **Ja**. 
+
+For at forhindre, at din købsaftale bliver brugt og bekræftet, skal du markere aftalens status som **Lukket**. Du kan stadig opdatere statussen til **Effektiv** når som helst efter at have udført denne ændring.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Ansvarlige arbejdere for købsaftaler
+
+Du kan identificere en primær ansvarlig arbejder og sekundær ansvarlig arbejder i købsaftaleklassifikationen. Disse værdier nedarves af den resulterende købsaftale. Du er ikke forpligtet til at føje ansvarlige arbejdere til købsaftalen, og de kan ændres direkte for hver enkelt sag på selve købsaftalen. Du kan ikke angive en sekundær ansvarlig arbejder uden en primær ansvarlig arbejder, selvom du ikke behøver at have en sekundær ansvarlig arbejder. Du kan ikke angive den samme arbejder som både den primære og sekundære ansvarlige arbejder. 
+
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en købsaftale er en forpligtelse til at købe noget. Du kan bruge linjer fra flere købsordrer (IO'er) til at opfylde forpligtelsen. Der findes fire typer forpligtelser:
@@ -82,7 +89,7 @@ Du kan kun vælge en købsaftale, når du opretter en indkøbsordre. Du kan ikke
 I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Supply Chain Management automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
 
 ## <a name="matching-policy-on-purchase-agreements"></a>Sammenholdelsespolitik for købsaftaler
-Du kan definere en sammenholdelsespolitik for en linje i overskriften til købsaftalen. Denne sammenholdelsespolitik for linjer vil respektere sammenholdelsespolitikken for kreditorparametrelinjer, når feltet **Tillad overskrivelse af sammenholdelsespolitik** på siden **Kreditorparametre** (i oversigtspanelet **Prce og antalssammenholdelse**) angives til **Højere end firmapolitikken**. Dokumenter, der refererer til købsaftalen, bruger den sammenholdelsespolitik for linjer, der er defineret i overskriften for købsaftalen, medmindre andet er angivet i den tilsvarende vare-, vare- og leverandør- eller kategoriindkøbspolitik.
+Du kan definere en sammenholdelsespolitik for en linje i overskriften til købsaftalen. Denne sammenholdelsespolitik for linjer vil respektere sammenholdelsespolitikken for kreditorparametrelinjer, når feltet **Tillad overskrivelse af sammenholdelsespolitik** på siden **Kreditorparametre** (i oversigtspanelet **Pris og antalssammenholdelse**) angives til **Højere end firmapolitikken**. Dokumenter, der refererer til købsaftalen, bruger den sammenholdelsespolitik for linjer, der er defineret i overskriften for købsaftalen, medmindre andet er angivet i den tilsvarende vare-, vare- og leverandør- eller kategoriindkøbspolitik.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Købsaftaler og samhandel internt i firmaet
 Der kan oprettes interne handelsforhold mellem kreditorkonti og debitorkonto, som er i forskellige juridiske enheder. Når der oprettes en salgsordre eller indkøbsordre for en af parterne, oprettes en intern ordretilknytning. I ordretilknytningen oprettes salgsordren og indkøbsordren i de relevante juridiske enheder.  

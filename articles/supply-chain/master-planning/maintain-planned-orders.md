@@ -3,7 +3,7 @@ title: Vedligehold ordreforslag
 description: Dette emne indeholder oplysninger om, hvordan du administrerer planlagte ordrer. Den beskriver, hvordan du kan opdatere status for planlagte ordrer, autorisere dem og filtrere for planlagte ordre, der har samme status som en valgte planlagt ordre.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/07/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: ec67caf596b0efc256c957eca17a04509fe86855
+ms.sourcegitcommit: 274ff2bb6872ff714781b348b29fd9f1affff9d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813770"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "2904030"
 ---
 # <a name="maintain-planned-orders"></a>Vedligehold ordreforslag
 
@@ -39,7 +39,7 @@ Du kan bruge feltet **Status** til at registrere status. Følgende værdier brug
 
 -   Når varedisponering opretter ordreforslag, har ordreforslagene statussen **Ubehandlet**.
 -   Hvis du vælger ikke at autorisere et ordreforslag, kan du tildele det statussen **Fuldført**.
--   Hvis du vil autorisere et ordreforslag, kan du ændre status til **Godkendt**. Ordreforslag med statussen **Godkendt** respekteres af varedisponeringen, så de ikke ændres eller slettes, når varedisponeringen køres. 
+-   Hvis du vil autorisere et ordreforslag, kan du ændre status til **Godkendt**. Ordreforslag med statussen **Godkendt** respekteres af varedisponeringen, så de ikke ændres eller slettes, når varedisponeringen køres. For at opnå dette kopierer planlægningslogikken de **Godkendte** planlagte ordre fra den gamle planversion til den nye planversion under varedisponering.
 
 ## <a name="firming-planned-orders"></a>Autorisering af ordreforslag 
 Når ordreforslag autoriseres, oprettes rigtige ordrer. Disse kaldes også *frigivne* eller *åbne ordrer*. Når et ordreforslag er autoriseret, flyttes det til ordresektionen i det relevante modul.
@@ -58,6 +58,8 @@ Hvis du planlægger at autorisere mange ordrer på samme tid, kan paralleliserin
 -   **Paralleliser autorisation** – Hvis den er **Ja**, vil autorisationsprocessen blive parallel med det antal tråde, der er defineret i **Antal tråde**.
 -   **Antal tråde** – Styrer antallet af tråde, der bruges til at parallelisere autorisationsprocessen. Parameteren vises kun, når **Paralleliser autorisation** er angivet til **Ja**.
 
+> [!NOTE]
+> Indstillingen for **Parallel autorisation** vises kun, når der er valgt mere end en planlagt ordre til autorisation.
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------

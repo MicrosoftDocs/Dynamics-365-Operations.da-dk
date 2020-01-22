@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d735b215132b90ca786d6967589496bee73f4d9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4ab152dff0925f9c816419083577b5272ac813be
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697583"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945771"
 ---
 # <a name="enrich-a-category-landing-page"></a>Forbedre en kategorilandingsside
 
@@ -65,3 +65,5 @@ Benyt følgende fremgangsmåde for at forbedre en kategoriside.
 [Gemme, få vist og udgive en side](save-preview-publish-page.md)
 
 [Forbedre en produktside](enrich-product-page.md)
+
+[Bekræft tilgængelighed af sideindhold](verify-accessibility.md)

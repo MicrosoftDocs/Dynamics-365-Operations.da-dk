@@ -3,7 +3,7 @@ title: Definere og vedligeholde detailkanaler
 description: Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Dynamics 365 Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 45d0386d215da15103a417502debb245c91f6309
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019364"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934602"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedligeholde detailkanaler
 
@@ -85,3 +85,6 @@ Når du har angivet oplysningerne om detailbutikken, skal du udføre disse opgav
 ## <a name="organization-hierarchies"></a>Organisationshierarkier
 
 Retail bruger organisationshierarkier til at strukturere detailkanaler. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af. Når du opretter butikker, kan du føje dem til et organisationshierarki. Butikkerne deler derefter data, der bruges til udvalg, genbestilling og rapportering.
+
+> [!NOTE]
+> Hvis du vil bruge Retail Sales-funktionaliteten, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af Retail-funktionalitet, som udfører forskellige valideringer baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau.

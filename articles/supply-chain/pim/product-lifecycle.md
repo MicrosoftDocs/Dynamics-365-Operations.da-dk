@@ -3,7 +3,7 @@ title: Oversigt over status for produktlivscyklus
 description: En status for produktlivscyklus dokumenter livscyklusstatus for et frigivet produkt eller en produktvariant.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813540"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934834"
 ---
 # <a name="product-lifecycle-state-overview"></a>Oversigt over status for produktlivscyklus
 
@@ -74,11 +74,7 @@ Du kan finde detaljerede oplysninger om, hvordan du kan bruge statusser for prod
 
 ## <a name="default-migration-import-and-export"></a>Standardoverførsel, - import og -eksport 
 
-Statusser for produktlivscyklus understøttes ikke af dataenheder, og livscyklusstatussen kan ikke indstilles til en variabel status via de frigivne produktdataenheder.
-
--  Ved overførsel fra tidligere frigivelser er livscyklusstatussen for alle produkter og produktvarianter tom.  
--  Når frigivne produkter importeres via en dataenhed, anvendes standardlivscyklusstatussen ved oprettelse.  
--  Når frigivne produktvarianter importeres via en dataenhed, importeres produktlivscyklusstatussen for den frigivne produktmaster.   
+Statusser for produktlivscyklus understøttes af dataenheder, og livscyklusstatussen kan indstilles til en variabel status via enten den frigivne produktdataenhed eller den frigivne dataenhed.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Finde forældede produkter og produktvarianter 
 

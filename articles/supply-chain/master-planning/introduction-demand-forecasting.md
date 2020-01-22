@@ -3,7 +3,7 @@ title: Oversigt over behovsprognose
 description: Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815151"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935508"
 ---
 # <a name="demand-forecasting-overview"></a>Oversigt over behovsprognose
 
@@ -32,7 +32,7 @@ ms.locfileid: "2815151"
 
 Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning.
 
-For at generere prognosegrundlaget overføres en oversigt over historiske transaktioner til en Microsoft Azure Machine Learning-tjeneste, der er placeret på Azure. Da denne tjeneste ikke er delt mellem brugere, kan den nemt tilpasses til branchespecifikke behov. Du kan bruge Supply Chain Management til at visualisere prognosen, justere prognosen og få vist nøgletal (KPI'er) om prognosenøjagtigheden.
+For at generere prognosegrundlaget overføres en oversigt over historiske transaktioner til Microsoft Azure Machine Learning, der er placeret på Azure. Da denne tjeneste ikke er delt mellem brugere, kan den nemt tilpasses til branchespecifikke behov. Du kan bruge Supply Chain Management til at visualisere prognosen, justere prognosen og få vist nøgletal (KPI'er) om prognosenøjagtigheden.
 
 ## <a name="key-features-of-demand-forecasting"></a>Nøglefunktioner i behovsprognoser
 Her er nogle af de vigtigste funktioner i behovsprognoser:
@@ -51,7 +51,7 @@ Tre overordnede temaer er implementeret i behovsprognoser:
 -   **Genbrug af Microsoft-stakken** – Microsoft lancerede Machine Learning platformen i februar 2015. Med Machine Learning, som nu er en del af Microsoft Cortana Analytics Suite, kan du hurtigt og nemt lave forsøg med fremtidsanalyser, f.eks. forsøg med behovsestimeringer, ved at bruge algoritmerne R eller Python-programmeringssprogene og en enkel grænseflade med træk og slip.
     -   Du kan downloade forsøg med behovsprognoser, ændre dem, så de svarer til dine forretningsmæssige behov, udgive dem som en webtjeneste på Azure og bruge dem til at generere behovsprognoser. Forsøgene kan downloades, hvis du har købt et abonnement på Supply Chain Management til en produktionsplanlægger som bruger på enterprise-niveau.
     -   Du kan hente alle aktuelt tilgængelige forsøg med fremtidsanalyse af behov fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Hvor forsøg med behovsprognoser automatisk integreres i Supply Chain Management, skal kunder og partnere kunne håndtere integrationen af de forsøg, de downloader fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Forsøg fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) er derfor ikke ligetil at bruge som forsøg med behovsprognoser i Finance and Operations. Du skal ændre koden for forsøg, så de bruger Finance and Operations' API (application programming interface).
-    -   Du kan oprette dine egne forsøg i Microsoft Azure Machine Learning Studio, udgive dem som tjenester på Azure og bruge dem til at generere behovsprognoser.
+    -   Du kan oprette dine egne forsøg i Microsoft Azure Machine Learning Studio (klassisk), udgive dem som tjenester på Azure og bruge dem til at generere behovsprognoser.
     -   Hvis du ikke har brug for høj ydeevne, eller hvis du ikke kræver, at en stor mængde data skal behandles, kan du bruge det gratis Machine Learning-niveau. Vi anbefaler, at du altid starter fra dette niveau, især under implementerings- og testfaserne. Hvis du kræver højere ydeevne og ekstra lagerplads, kan du bruge Machine Learning-standardniveauet. Dette niveau kræver et Azure-abonnement og indebærer ekstra omkostninger. Få oplysninger om priser på Machine Learning under [Machine Learning Studio-prisssætning](https://aka.ms/machine-learning-price-info).
 -   **Prognosereduktion ved ethvert afkoblingspunkt** – Behovsprognoser bygger på denne funktion, hvor du kan forudsige både afhængigt og uafhængigt behov ved et hvilket som helst afkoblingspunkt.
 

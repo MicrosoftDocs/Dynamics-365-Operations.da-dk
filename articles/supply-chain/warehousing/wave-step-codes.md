@@ -18,28 +18,26 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f89c6098db9e2e3a9aa4ee3666e4b9ae608f054
-ms.sourcegitcommit: d8f1135cdbc2deca70bc4b2805a0519253c9a31f
+ms.openlocfilehash: 1a1a32495b63a5a67a49bf3b02710aba63c1e2f0
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1992351"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946184"
 ---
 # <a name="wave-step-codes"></a>Bølgetrinskoder
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-## <a name="about-wave-step-codes"></a>Om bølgetrinskoder
-
 Bølgetrinskoder er koder, som brugerne kan konfigurere og bruge til at knytte bestemte forekomster af bølgemetoder til en tilsvarende skabelon. Skabelonerne indeholder skabeloner til genopfyldning, containerisering, etiketudskrivning, lastopbygning og sortering.
 
-Når der ikke bruges bølgetrinskoder, skal brugerne angive en fri tekst for at referere til en bestemt skabelon fra forekomsten af bølgemetoden. Der er fejlrisiko for fri tekst, fordi brugerne skal sørge for, at den bølgetrinstekst, som de føjer til en bestemt bølgetrinsmetode i i en bølgeskabelon, nøjagtigt svarer til bølgetrinsteksten i destinationsskabelonen.
+Når der ikke bruges bølgetrinskoder, skal brugerne angive en fri tekst for at referere til en bestemt skabelon fra forekomsten af bølgemetoden. Der er risiko for fejl i fri tekst, fordi brugerne skal sørge for, at den bølgetrinstekst, som de føjer til en bestemt bølgetrinsmetode i i en bølgeskabelon, nøjagtigt svarer til bølgetrinsteksten i destinationsskabelonen.
 
 Bølgetrinskoder for en specifik bølgetrinstype oprettes på en separat side. For hver forekomst af en bølgetrinsmetode i en bølgeskabelon, der kræver en bølgetrinskode, skal bølgetrinskoden være valgt på en rulleliste. Valg på en rulleliste erstatter indtastning af fritekst og hjælper med at reducere risikoen og virkningerne af menneskelige fejl. Opsætningskoder bruges til at sammenkæde en bølgetrinsmetode i en bølgeskabelon med en destinationsskabelon for metoden.
 
 > [!NOTE]
-> Det er valgfrit at bruge funktionen for bølgetrinskoder, og inddragelse sker pr. juridisk enhed. Hvis en bestemt juridisk enhed bruger funktionen, bliver alle eksisterende bølgetrinskoder i den juridiske enhed derfor opgraderet til den nye struktur.
+> Brug af funktionen bølgetrinskoder er valgfri. Den er aktiveret for alle juridiske enheder i hele organisationen.
 
 ## <a name="setup-demo"></a>Installationsdemo 
 
@@ -49,20 +47,20 @@ Til denne demo skal du have installeret demodata, og du skal bruge demodatafirma
 
 Udfør følgende trin for at aktivere funktionen for bølgetrinskoder.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> Parametre til lagerstedsstyring**.
-2. Under fanen **Generelt** på oversigtspanelet **Bølgebehandling** skal du vælge **Ja** i indstillingen **Aktivér bølgetrinskoder**.
+1. Gå til **Funktionsstyring**.
+2. Markeres, hvis du vil aktivere den funktion, der kaldes **Bølgetrinskode for hele organisationen**.
 
-Alle eksisterende fritekster til bølgetrin opgraderes til den nye struktur. Når denne opgradering er fuldført for en juridisk enhed, er indstillingen **Aktiver bølgetrinskoder** ikke længere tilgængelig på siden **Parametre til lokationsstyring**.
+Alle eksisterende fritekster til bølgetrin i alle juridiske enheder opgraderes til den nye struktur. Når opgraderingen er fuldført for alle juridiske enheder, er funktionen aktiveret. Hvis funktionen ikke kan aktiveres for en eller flere juridiske enheder, er funktionen ikke aktiveret for nogen juridiske enheder.
 
-Valideringer udføres under opgraderingen, og hvis opgraderingen mislykkes, får du vist en fejlmeddelelse. En opgradering kan mislykkes på grund af følgende konflikter:
+Under aktiveringen foretages valideringer under dataopgraderingen. Hvis opgraderingen mislykkes, vises en fejlmeddelelse. En opgradering kan mislykkes på grund af følgende konflikter:
 
 - Der findes identiske fritekster til bølgetrin.
 - Tilpasninger findes.
 - Et fritekst til bølgetrin, der er knyttet til en forekomst af bølgetrinsmetoden, stemmer ikke overens med den forventede skabelontype.
 
-Når du har løst eventuelle konflikter, der er identificeret under valideringerne, kan du køre opgraderingsprocessen igen.
+Når du har løst eventuelle konflikter, der er identificeret under valideringerne, kan forsøge af aktivere funktionen igen.
 
-Når opgraderingen lykkes, bliver siden **Bølgetrinskoder** (**Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinskoder**) tilgængelig. Denne side viser de bølgetrinskoder, der blev opgraderet, da funktionen bølgetrinskoder blev slået til.
+Når funktionen er aktiveret, bliver siden **Bølgetrinskoder** (**Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinskoder**) tilgængelig. Denne side viser de bølgetrinskoder, der blev opgraderet, da funktionen bølgetrinskoder for hele organisationen blev aktiveret.
 
 ### <a name="create-new-wave-step-codes"></a>Oprette nye bølgetrinskoder
 
@@ -94,3 +92,5 @@ Følgende procedure hjælper med at sikre, at den genopfyldningsskabelon, du har
 4. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**, og vælg den bølgeskabelon, du vil bruge.
 5. Vælg **Genbestilling**-metoden i oversigtspanelet **Metoder** i skabelonen.
 6. Vælg den bølgetrinskode, du har oprettet i genopfyldningsskabelonen, i feltet **Kode for bølgetrin**.
+
+Du udfører disse trin for hver juridisk enhed.

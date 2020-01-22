@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023947"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897620"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (9. juli 2019)
-
-[!include [banner](includes/banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
@@ -36,6 +34,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Attract.
 
 ### <a name="coming-soon-in-attract"></a>Kommer snart i Attract
+
 #### <a name="job-approvals-appear-on-the-home-page"></a>Jobgodkendelser vises på startsiden
 
 Godkendelser vises i området **Godkendelser** på dashboardet. Godkendere kan gennemse deres godkendelser under **Tildelt til dig**, som viser job-id'et, jobtitlen, andre godkendere og datoen, hvor jobbet blev tildelt. Brugere, der sender et job til godkendelse, kan gennemse deres job under **Anmodet af dig**, som viser de godkendere, der stadig skal godkende det sendte job.
@@ -50,7 +49,7 @@ Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard
 
 ### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 til Finance and Operations
 
-Du kan finde yderligere oplysninger om Platform update 28 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 28 (juli 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Du kan finde yderligere oplysninger om Platform update 28 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 28 (juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Enhedsunderstøttelse i Common Data Service af brugerdefinerede felter 
 

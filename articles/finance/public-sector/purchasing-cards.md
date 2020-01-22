@@ -16,18 +16,17 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: cfb2a459d8cb8a3d859bddaf2144c12aa6de522e
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 34e9cbafaa365ca76194a98e569330e885606ab1
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2659039"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935404"
 ---
 # <a name="purchasing-cards"></a>Indkøbskort
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Agenturerne bruger indkøbskort, så medarbejderne kan skaffe varer og tjenester uden at bruge standardprocessen for indkøbsrekvisitioner. De sider og felter, der er relateret til indkøbskort, indeholder en metode til sporing af indkøb. Hvert indkøb, som en medarbejder foretager via et indkøbskort, registreres på en kreditorfaktura. Fakturaen betales dog ikke med en check eller elektronisk betaling til den kreditor, der leverede varerne eller tjenesterne. Hver faktura af denne type er i stedet knyttet til en anden kreditorfaktura, der oprettes for at betale den leverandør, der udbyder tjenesterne for indkøbskort (dvs. finansinstitut). Kortkøbene betales, når den saldo, der skal betales til tjenesteudbyderen af indkøbskort, betales hver måned.
 

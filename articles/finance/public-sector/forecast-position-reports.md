@@ -16,17 +16,16 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a72be97d9dff8bf10ff6578415c45d989d04a666
-ms.sourcegitcommit: 4925136bd9bbeeb1db5aa35ed174e8342a3a300e
+ms.openlocfilehash: 84ae2e7c86926c21edef6c26cd658cec5e908765
+ms.sourcegitcommit: cfaad79bcb1460ee0e7ad5a2c596f9199e14c53a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "2673410"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944415"
 ---
 # <a name="forecast-position-reports-for-the-public-sector"></a>Rapporter over budgetteret stilling for den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruge rapporterne **Oversigt over budgetteret stilling** og **Detaljer for budgetteret stilling** til at generere oplysninger om budgetterede stillinger under en budgetplan og det scenarie, du angiver.  
 

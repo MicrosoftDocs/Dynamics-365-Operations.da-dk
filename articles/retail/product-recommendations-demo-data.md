@@ -3,7 +3,7 @@ title: Demodata til produktanbefalinger for omni-kanal
 description: Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i trin-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2225725"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872320"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Demodata til produktanbefalinger for omni-kanal
 
 Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i trin-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
 
-Omni-kanalproduktanbefalinger giver et sæt redaktionelt leverede eller programmeringsmæssigt fremstillede lister over produkter. Disse lister kan bruges i flere forskellige scenarier, afhængigt af virksomhedens behov. Yderligere oplysninger om lister over produktanbefalinger finder du under [Oversigt over produktanbefalinger.](product-recommendaitons-overview.md)
+Omni-kanalproduktanbefalinger giver et sæt redaktionelt leverede eller programmeringsmæssigt fremstillede lister over produkter. Disse lister kan bruges i flere forskellige scenarier, afhængigt af virksomhedens behov. Yderligere oplysninger om lister over produktanbefalinger finder du under [Oversigt over produktanbefalinger.](../commerce/product-recommendations.md)
 
 For niveau 2 og højere Dynamics-miljøer beregnes produktanbefalinger automatisk ud fra kundedata.
 Hvis du bruger demodata til produktanbefalinger, deaktiveres ingen af de anbefalinger for produktløsninger, der allerede er klargjort i miljøet, og eventuelle omkostninger, der er forbundet med brugen af dem.
@@ -68,6 +68,6 @@ Udvidelsen indeholder en datafil med navnet RecoMockDataset.csv, som giver kunde
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over produktanbefalinger](product-recommendations-overview.md)
+[Oversigt over produktanbefalinger](../commerce/product-recommendations.md)
 
-[Miljøplanlægning](environment-planning.md)
+[Miljøplanlægning](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

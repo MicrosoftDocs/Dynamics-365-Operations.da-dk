@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009416"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915195"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Strømlinet medarbejderangivelse og navigation
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent giver mulighed for effektiv indtastning af medarbejder- og ansættelsesdata. Du kan hurtigt opdatere oplysninger om arbejdshistorik for tidligere, aktive og fremtidige medarbejdere og kontrahenter.
 
-Du kan også få en forenklet navigationsoplevelse for hurtigt at finde relaterede oplysninger og foretage de nødvendige ændringer. Denne funktionalitet er nu tilgængelig i sandkassemiljøer. Hvis du vil aktivere funktionen, skal du gå til **Systemadministration > Links > Opsætning > Systemparametre > Funktioner i prøveversion**. Vælg **Udvidet arbejderform og navigation**. Dette aktiverer disse ændringer for alle brugere. Du kan deaktivere denne indstilling på et hvilket som helst tidspunkt.
+Du kan også få en forenklet navigationsoplevelse for hurtigt at finde relaterede oplysninger og foretage de nødvendige ændringer. Denne funktionalitet er nu tilgængelig i alle miljøer. Hvis du vil slå denne funktion til, skal du gå til **Systemadministration > Funktionsstyring > Ny > Strømlinet medarbejderpost > Aktiver**. Dette aktiverer disse ændringer for alle brugere. Du kan deaktivere denne indstilling på et hvilket som helst tidspunkt.
 
 ## <a name="view-options"></a>Indstillinger for visning
 

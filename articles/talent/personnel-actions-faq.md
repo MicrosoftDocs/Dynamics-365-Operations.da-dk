@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 91b154a2379d6f0bdf8bea322c99be9e1c1925c9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b0bcef9673970ad921f6ca5c6715b7086bcd8c4b
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517622"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898150"
 ---
 # <a name="personnel-actions-faq"></a>Ofte stillede spørgsmål om personalehandlinger
-
-[!include [banner](includes/banner.md)]
 
 Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.
 

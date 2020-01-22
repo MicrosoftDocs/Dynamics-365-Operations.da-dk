@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f72f12e8afdf190865a77fc6153c0c0a111e5a7
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175342"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888603"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Vise bogførte momstransaktioner
 
@@ -29,13 +29,13 @@ ms.locfileid: "2175342"
 
 I dette emne beskrives forskellige måder, du kan få vist bogførte momstransaktioner på. Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist. Denne opgave bruger demofirmaet USMF.
 
-# <a name="posted-sales-tax-page"></a>Siden Bogført moms
+## <a name="posted-sales-tax-page"></a>Siden Bogført moms
 
 1. I navigationsruden skal du gå til **Moduler > Moms > Forespørgsler og rapporter > Momsforespørgsler > Bogført moms**.
 2. Vælg **Vis filtre** for at indsnævre visningen til bestemte posteringer.
 3. Luk siden.
 
-# <a name="sales-tax-settlement-periods-page"></a>Siden Momsafregningsperioder
+## <a name="sales-tax-settlement-periods-page"></a>Siden Momsafregningsperioder
 
 1. I navigationsruden skal du gå til **Moduler > Moms > Indirekte skatter > Moms > Momsafregningsperioder**.
 2. Udvid sektionen **Periodeintervaller**.
@@ -43,7 +43,7 @@ I dette emne beskrives forskellige måder, du kan få vist bogførte momstransak
 4. Du kan filtrere listen over bogførte momsposteringer yderligere.
 5. Luk siden.
 
-# <a name="sales-tax-codes-page"></a>Siden Momskoder
+## <a name="sales-tax-codes-page"></a>Siden Momskoder
 
 1. Gå i navigationsruden til **Moduler > Moms > Indirekte skatter > Moms > Momskoder**.
 2. Klik på **Momskode** i handlingsruden.

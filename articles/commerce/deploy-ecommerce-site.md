@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697445"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945507"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
 
@@ -88,16 +88,16 @@ For at få adgang til oprettelsesmiljøet skal du gå til fanen **e-handel** på
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over onlinebutik](online-store-overview.md)
+[Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 
-[Konfigurere dit domænenavn](configure-your-domain-name.md)
+[Administrer robots.txt-filer](manage-robots-txt-files.md)
+
+[Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
-
-[Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)

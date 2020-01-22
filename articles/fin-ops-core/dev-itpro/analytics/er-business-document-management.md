@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824514"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933902"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
-Erhvervsbrugere benytter [Oversigt over Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Brugerne kan også definere dataflow for at angive, hvilke programdata der skal placeres i genererede dokumenter. ER-strukturen genererer udgående dokumenter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter) ved hjælp af foruddefinerede skabeloner. Skabelonerne udfyldes med de påkrævede data i overensstemmelse med det konfigurerede dataflow, mens de nødvendige dokumenter genereres. Hvert konfigurerede format kan udgives som en del af en ER-løsning til generering af specifikke udgående dokumenter. Dette repræsenteres ved en ER-formatkonfiguration, der kan indeholde skabeloner, som du kan bruge til at generere forskellige udgående dokumenter. Erhvervsbrugere kan benytte denne struktur til at administrere nødvendige forretningsdokumenter.
+Forretningsbrugere benytter strukturen til [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Brugerne kan også definere dataflow for at angive, hvilke programdata der skal placeres i genererede dokumenter. ER-strukturen genererer udgående dokumenter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter) ved hjælp af foruddefinerede skabeloner. Skabelonerne udfyldes med de påkrævede data i overensstemmelse med det konfigurerede dataflow, mens de nødvendige dokumenter genereres. Hvert konfigurerede format kan udgives som en del af en ER-løsning til generering af specifikke udgående dokumenter. Dette repræsenteres ved en ER-formatkonfiguration, der kan indeholde skabeloner, som du kan bruge til at generere forskellige udgående dokumenter. Erhvervsbrugere kan benytte denne struktur til at administrere nødvendige forretningsdokumenter.
 
 **Styring af forretningsdokumenter** er bygget oven på ER-strukturen og gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner i Microsoft Office 365-tjenesten eller Microsoft Office-skrivebordsprogrammet. Ændringer i dokumenterne kan omfatte ændring af forretningsdokumentdesign og tilføjelse af pladsholdere til yderligere data uden ændringer af kildekode og nye installationer. Det er ikke nødvendigt at have kendskab til ER-strukturen for at opdatere skabeloner til forretningsdokumenter.
 
@@ -59,7 +59,7 @@ Følgende rapporter vil blive tilgængelige med Excel-baserede skabeloner med ud
 
 Flere rapporter vil blive tilgængelige. Der vil blive udsendt særlige beskeder om flere rapporter separat. 
 
-En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
+En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametre
 
@@ -92,7 +92,7 @@ Eksempel på ER-konfigurationer bruges i eksemplet med denne procedure. Du skal 
 | Intrastat-model.version.1.xml             | [ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Intrastat-rapport.version.1.9.xml          | [ER-formatkonfiguration af Intrastat-kontrolrapport](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
-Benyt følgende fremgangsmåde for at importere de enkelte filer. Importér ER-konfigurationen af *datamodellen* for hver ER-løsning i tabellerne ovenfor, før du importerer den tilsvarende ER-*format*konfiguration.
+Benyt følgende fremgangsmåde for at importere de enkelte filer. Importér ER-konfigurationen af *datamodellen* for hver ER-løsning i tabellerne ovenfor, før du importerer den tilsvarende ER-*format*-konfiguration.
 
 1. Åbn siden **Virksomhedsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. Vælg **Udveksling** øverst på siden.

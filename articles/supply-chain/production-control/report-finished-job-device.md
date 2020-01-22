@@ -3,7 +3,7 @@ title: Færdigmelde til en id-kontrolleret lokation fra jobkortenheden
 description: Dette emne beskriver processen til fuldførelse af færdigvarer på en produktionsordre til et lager, når et id styrer lokationen.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: cb809e596fd6bf3030bcee460838798435512b95
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 63073035941cd2ef343c65364536fe76a9b71430
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572123"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935116"
 ---
 [!include [banner](../includes/banner.md)]
 
@@ -32,4 +32,10 @@ ms.locfileid: "2572123"
 
 Den proces, der kaldes færdigmelding, fuldfører færdigvarerne på en produktionsordre til lageret. Hvis det færdige produkt er aktiveret til de avancerede lagerprocesser, færdigmeldes produktet til en lokation, der kaldes udlagringslokationen for produktionen. Du kan finde oplysninger om, hvordan du konfigurerer udlagringslokationen for produktionen, under [Produktionsudlagringslokation](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location).
 
-Du skal vælge et eksisterende id-nummer for at udføre denne opgave. Hvis produktionsudlagringslokationen er konfigureret til at blive sporet på basis af id, skal id-nummeret inkluderes, når produktionsudlagringslokationen færdigmeldes. Feltet **Id** vises i prompten **Rapport i gang** på siden **Jobkortenhed**. Feltet er kun synligt i prompten **Rapport i gang**, når der rapporteres for den sidste operation i produktionsordren. Feltet vises kun, hvis varen for produktionsordren er aktiveret til lokationsstyringsprocesserne. 
+Hvis udlagringslokationen for produktionen er kontrolleret af nummerplader, skal der angives en nummerplade, når færdigmeldingen rapporteres. Feltet **Id** vises i prompten **Rapport i gang** på siden **Jobkortenhed**. Feltet er kun synligt i prompten **Rapportfremgang**, når der rapporteres om den sidste operation i produktionsordren, og varen til produktionsordren er aktiveret for lagerstedets styringsprocesser. 
+
+Der er to muligheder for at angive nummerpladen
+- Brugeren vælger et eksisterende nummerpladenummer i feltet nummerplade.
+- Nummerpladenummeret genereres automatisk fra en nummerserie og nulstilles til nummerpladefeltet.
+
+Muligheden for automatisk at oprette nummerpladen konfigureres ved at vælge indstillingen **Generer nummerplade** på siden **Konfigurer jobkort for enheder**.
