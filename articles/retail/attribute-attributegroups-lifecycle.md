@@ -1,5 +1,5 @@
 ---
-title: Attributter og attributgrupper
+title: Styring af attributter og attributgrupper
 description: I dette emne beskrives, hvordan du kan bruge attributter som et værktøj til at beskrive et produkt og dets egenskaber via brugerdefinerede felter.
 author: ashishmsft
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 5ba273265b677f71762c8beae3561712efb92645
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023630"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915266"
 ---
-# <a name="attributes-and-attribute-groups"></a>Attributter og attributgrupper
+# <a name="manage-attributes-and-attribute-groups"></a>Styring af attributter og attributgrupper
 
 [!include [banner](includes/banner.md)]
 

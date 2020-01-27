@@ -3,7 +3,7 @@ title: Konfigurer tilbudsstyring i Attract
 description: I dette emne beskrives, hvordan du kan konfigurere tilbud i Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832716"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890549"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Konfigurer tilbudsstyring i Attract
 
@@ -45,9 +45,11 @@ Tilbudsdata er den mindste enhed i tilbudspakkeskabelonen. Et typisk tilbud best
 
     >[!NOTE]
     > På siden **Tilbudsdata** finder du sektionerne **Detaljer om kandidat** og **Jobdetaljer**. Attract indeholder som standard nogle tilbudsdatapladsholdere.
-    
+    > 
     > Der er sektioner på siden, hvor du kan organisere forskellige tilbudsdatapladsholdere i logiske grupper. Disse sektioner kan hjælpe med vedligeholdelse af tilbudsdata og udfyldning af data under oprettelsen af tilbuddet.
-
+    > 
+    > Hvis du vil oprette en liste over værdier for en pladsholder, skal du uploade et Excel-regneark, der har én kolonne med pladsholderen som kolonnetitel og listen over valgmuligheder i rækkerne nedenunder. Hvis der refereres til den samme pladsholder i et andet dataregelsæt, skal du sikre, at de har et fælles værdisæt.
+    
 1.  Hvis du vil oprette en ny sektion med tilbudsdata, skal du klikke på **Tilføj en sektion** og angive et entydigt navn til sektionen.
 
 1.  Hvis du vil tilføje tilbudsdatapladsholdere i en bestemt sektion, skal du klikke på **Tilføj tilbudsdata** og angive et entydigt navn til pladsholderen.

@@ -3,12 +3,12 @@ title: Produktidentifikatorer
 description: Dette emne indeholder oplysninger om de forskellige typer produkt-id'er og forklarer, hvordan du kan føje produkt-id'er til produktdataene.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250593"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934880"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
@@ -43,6 +43,9 @@ I mange tilfælde er produktnummeret ikke oprindeligt oprettet i Dynamics 365 Su
 Når du implementerer Supply Chain Management, skal du foretage specielle overvejelser med hensyn til din strategi for produktnumre. En godt nummereringssystem forbedrer logistikprocesser og hjælper med til at forhindre fejl. Et godt produkt-id må højst være på 15 tegn. Ideelt set har det mindre end 10 tegn og indeholder mere end fem klassificeringstegn. Du kan også bruge søgenavne til at aktivere hurtig søgning. Et søgenavn er et yderligere navn, der repræsenterer klassificeringer af et produkt.
 
 Når du bruger Common Data Service, er produktnummeret i Supply Chain Management også produktnummeret i Common Data Service. Produktvarianter synkroniseres til Common Data Service som specifikke produkter.
+
+> [!NOTE]
+> Produktnummeret kan ikke starte med "%".
 
 ## <a name="item-number-and-product-dimensions"></a>Varenummer og produktdimensioner
 

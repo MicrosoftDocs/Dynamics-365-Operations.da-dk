@@ -3,7 +3,7 @@ title: Konfigurere behovsprognoser
 description: Dette emne omhandler de konfigurationsopgaver, du skal udføre, for at forberede behovsprognoser.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813793"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935485"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -63,7 +63,7 @@ Du kan når som helst tilføje prognosedimensioner til listen over dimensioner, 
 
 Det er ikke alle varer, der fungerer på samme måde, hvis man ser det ud fra en behovsprognose. Lignende varer kan grupperes i en varefordelingsnøgle, og parametre som transaktionstyper og indstillinger for prognosemetode kan angives pr. varefordelingsnøgle. Klik på **Varefordelingsnøgler** i venstre rude på siden **Parametre til behovsprognoser**. 
 
-Supply Chain Management anvender en Machine Learning-webtjeneste til at generere prognosen. Hvis du vil oprette forbindelse til tjenesten, skal du angive følgende oplysninger, hvis du logger på Microsoft Azure Machine Learning Studio:
+Supply Chain Management anvender en Machine Learning-webtjeneste til at generere prognosen. Hvis du vil oprette forbindelse til tjenesten, skal du angive følgende oplysninger, hvis du logger på Microsoft Azure Machine Learning Studio (klassisk):
 
 -   Webtjeneste-API-nøglen (application programming)
 -   URL-adresse til webtjenesteslutpunkt
@@ -71,7 +71,7 @@ Supply Chain Management anvender en Machine Learning-webtjeneste til at generere
 -   Nøgle til Azure-lagerkonto
 
 > [!NOTE]
-> Navn og nøgle til Azure-lageret er kun påkrævet, hvis du bruger en brugerdefineret lagerkonto. Hvis du installerer den lokale version, skal du have en brugerdefineret lagerkonto på Azure, så Machine Learning-tjenesten kan få adgang til de historiske data. 
+> Navn og nøgle til Azure-lageret er kun påkrævet, hvis du bruger en brugerdefineret lagerkonto. Hvis du installerer den lokale version, skal du have en brugerdefineret lagerkonto på Azure, så Machine Learning kan få adgang til de historiske data. 
 
 Hvis du vil oprette prognoseforudsigelser, kan du installere din egen tjeneste ved hjælp af Machine Learning Studio eller forsøg med Supply Chain Management-behovsprognoser. Instruktioner til installation af forsøg med behovsprognoser som en webtjeneste er tilgængelig i Supply Chain Management. På siden **Parametre til behovsprognoser** skal du klikke på fanen **Azure Machine Learning**.
 

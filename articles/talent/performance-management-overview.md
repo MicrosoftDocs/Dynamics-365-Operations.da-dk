@@ -3,7 +3,7 @@ title: Performancestyring
 description: Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590499"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921144"
 ---
 # <a name="performance-management"></a>Performancestyring
-
-[!include [banner](includes/banner.md)]
 
 Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne.  
 
@@ -91,6 +89,8 @@ Du kan trække i aktive og afsluttede mål og skrive bemærkninger om dem for at
 Du kan også bruge afsnittet **Kompetencer** til at drøfte, evaluere og vurdere medarbejderens kompetencer. Du kan tilføje så mange kompetencer, som du har brug for, og du kan vælge, om kompetencen skal bedømmes. 
 
 Du kan oprette nye anmeldelser, der er baseret på skabeloner, du har oprettet. Du kan f.eks. have en skabelon til en til en-møder, udviklingsplaner eller periodiske evalueringer. Du kan vælge skabelonen, når du opretter en ny evaluering.
+
+Hvis du vil udskrive anmeldelserne, skal du vælge knappen **Udskriv anmeldelse**. Hvis du ikke kan se knappen på siden **Anmeldelse**, skal du sikre dig, at du har aktiveret funktionen i arbejdsområdet **Funktionsstyring**. Du kan finde flere oplysninger om Administration af funktioner under [Oversigt over funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Komponenter, som du kan medtage i effektivitetsevalueringer
 Du kan medtage et antal forskellige typer oplysninger i performanceevalueringer. De omfatter evalueringsdetaljer, målinger, aktiviteter, klassifikationer, godkendelser og vedhæftede filer.

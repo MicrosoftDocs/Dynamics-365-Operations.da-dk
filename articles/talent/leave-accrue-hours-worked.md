@@ -18,17 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8589527f75f48c16244c93c3fdbe3ce7fcd4e366
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 938d2eea7b9e85b19e9c1e3e0930f625224b880d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517601"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898613"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>Periodisering af fravær baseret på antal arbejdstimer
-
-[!include [banner](includes/banner.md)]
-
 
 ## <a name="overview"></a>Overblik
 

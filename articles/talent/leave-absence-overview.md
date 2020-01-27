@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebfaeb0696d7200ddf3c715f96a259b91db08e7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3376a9aec5c0003e9cc7c076c4d221a697df61ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517598"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898288"
 ---
 # <a name="leave-and-absence-management"></a>Styring af orlov og fravær
-
-[!include [banner](includes/banner.md)]
 
 Modulet **Orlovs- og fraværsstyring** giver en fleksibel struktur til definition af fraværsstyringsprocessen. Orlov og fraværsplaner kan oprettes for at finde ud af, hvordan medarbejdere periodiserer eller tildeles fridage. Når medarbejderne er tilmeldt en plan, kan de sende anmodninger om fravær til godkendelse af ledere. Med orlovssporing kan både ledere på øverste niveau og personalechefer se, hvem der holder fri, og hvor lang tid hver enkelt medarbejder stadig holder fri.  
 

@@ -3,7 +3,7 @@ title: Integrer Power Apps
 description: Dette emne beskriver, hvordan du kan integrere Power Apps i klienten for at øge produktets funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824487"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870235"
 ---
 # <a name="embed-microsoft-power-apps"></a>Integrer Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Følgende instruktioner viser, hvordan du integrerer en Power App i webklienten.
 
     - Feltet **Navn** angiver den tekst, der vises for knappen eller fanen, der indeholder den integrerede Power App. Ofte ønsker du blot at gentage navnet på Power App'en i dette felt.
     - **App-ID** er GUID'et for den Power App, du vil integrere. For at hente denne værdi skal du finde Power App'en på [web.powerapps.com](https://web.powerapps.com) og derefter finde feltet **App-id** feltet under **Detaljer**.
-    - Som **Inputdata for Power App** kan du eventuelt vælge det felt, der indeholder de data, du vil overføre til Power App som input. Se afsnittet senere i dette emne med titlen [Oprette en Power App, der anvender data fra Finance and Operations-apps](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps) for at få flere oplysninger om, hvordan Power App får adgang til de data, der er sendt fra Finance and Operations-apps.
+    - Som **Inputdata for Power App** kan du eventuelt vælge det felt, der indeholder de data, du vil overføre til Power App som input. Se afsnittet senere i dette emne med titlen [Oprette en Power App, der anvender data fra Finance and Operations-apps](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) for at få flere oplysninger om, hvordan Power App får adgang til de data, der er sendt fra Finance and Operations-apps.
     - Vælg den **Programstørrelse**, der svarer til den type Power App, du vil integrere. Vælg **Tynd** for Power Apps, der er bygget til mobilenheder, og **Bred** for Power Apps, der er bygget til tablets. Dette sikrer, at der allokeres en tilstrækkelig mængde plads til den integrerede Power App.
     - Oversigtspanelet **Juridiske enheder** giver mulighed for at vælge, hvilke juridiske enheder Power App'en er tilgængelig for. Standarden er at vise Power App'en i alle juridiske enheder.
 
@@ -101,7 +101,7 @@ Følg disse trin for at redigere konfigurationen af en integreret Power App:
 
 Når en Power App er integreret på en side, er der to måder til at fjerne den, hvis det er nødvendigt:
 
-- Gå til ruden **Rediger en Power App** ved at følge vejledningen fra afsnittet [Redigere en integreret Power App](#editing-an-embedded-powerapp) tidligere i dette emne. Bekræft, at ruden vises oplysninger for den integrerede Power App, du vil fjerne, og klik derefter på knappen **Slet**.
+- Gå til ruden **Rediger en Power App** ved at følge vejledningen fra afsnittet [Redigere en integreret Power App](#editing-an-embedded-power-app) tidligere i dette emne. Bekræft, at ruden vises oplysninger for den integrerede Power App, du vil fjerne, og klik derefter på knappen **Slet**.
 - Fordi en integreret Power App er gemt som tilpasningsdata, vil fjernelse af din sides tilpasning også fjerne eventuelle integrerede Power Apps på den pågældende side. Bemærk, at rydning af sidens tilpasning er permanent og ikke kan fortrydes. Hvis du vil fjerne dine tilpasninger på en side, skal du vælge **Indstillinger** og derefter klikke på **Tilpas denne formular**. Under menuen **Administrer** skal du vælge knappen **Ryd**. Når du har opdateret din browser, fjernes alle de tidligere tilpasninger for denne side. Se [Tilpas brugeroplevelsen](personalize-user-experience.md) for at få flere oplysninger om, hvordan sider bruger tilpasninger.
 
 ## <a name="appendix"></a>Appendiks

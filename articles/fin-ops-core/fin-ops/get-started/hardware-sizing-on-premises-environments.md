@@ -1,9 +1,9 @@
 ---
 title: Krav til tilpasning af hardware til lokale miljøer
 description: Krav til tilpasning af hardware til lokale miljøer
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812551"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870258"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til tilpasning af hardware til lokale miljøer
 
@@ -137,7 +137,7 @@ I versionen til almindelig tilgængelighed kan kun én SSRS-node installeres. Ov
 
 ## <a name="environment-orchestrator"></a>Miljø-Orchestrator
 
-Tjenesten Orchestrator er den tjeneste, der styrer installationen og den relaterede kommunikation med LCS. Denne tjeneste installeres som den primære Service Fabric-tjeneste og kræver mindst tre VM'er. Tjenesten er placeret sammen med Service Fabric Orchestration-tjenesterne. Dette og skal tilpasses klyngens spidsbelastning. Yderligere oplysninger finder du i [Overvejelser i forbindelse med planlægning af Service Fabric-klyngekapacitet](/azure/service-fabric/service-fabric-cluster-capacity).
+Tjenesten Orchestrator er den tjeneste, der styrer installationen og den relaterede kommunikation med LCS. Denne tjeneste installeres som den primære Service Fabric-tjeneste og kræver mindst tre VM'er. Tjenesten er placeret sammen med Service Fabric Orchestration-tjenesterne. Dette og skal tilpasses klyngens spidsbelastning. Du kan finde flere oplysninger i [Planlægge og forberede enkeltstående Service Fabric-klyngeinstallation](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering og overtegning
 

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832832"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898311"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Udvid Talent med Power Apps og Power Automate
-
-[!include [banner](includes/banner.md)]
 
 Dette emne beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 Talent ved hjælp af Microsoft Power Apps og Microsoft Power Automate. Du kan importere løsningspakken, der er tilknyttet hvert eksempel, til dit Power Apps-miljø. Du kan dernæst anvende pakkerne enten som vejledning eller som udgangspunktet for at implementere scenarier, der er anvendelige for din organisation.
 
@@ -108,7 +106,7 @@ Du kan bruge appen Henvisning til at føje kandidater til en delt talentpulje. D
 
 Du kan integrere denne app i Medarbejderselvbetjening (ESS) for at sende henvisninger, eller du kan bruge den som et link i firmaportalen og køre den som en fritstående app.
 
-Du kan downloade **appen Henvisning** ved at gå til [Dynamics 365 Talent-udvidelsesløsning: appen Henvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importere denne app og tilpasse den for at tilføje yderligere funktioner.
+Du kan downloade **appen Henvisning** ved at gå til [Dynamics 365 Talent-udvidelsesløsning: appen Henvisning](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importere denne app og tilpasse den for at tilføje yderligere funktioner.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fd87a51b73deae64867b0420c00db9fce7c79336
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697123"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945829"
 ---
 # <a name="create-an-e-commerce-site"></a>Oprette et websted for e-handel
 
@@ -59,20 +59,16 @@ Når webstedet er oprettet, kan du kontrollere, om det er knyttet til din online
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over onlinebutik](online-store-overview.md)
+[Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
 
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 
-[Konfigurere dit domænenavn](configure-your-domain-name.md)
+[Administrer robots.txt-filer](manage-robots-txt-files.md)
+
+[Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
-
-[Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
-
-[Oversigt over startside for oprettelse](authoring-home-overview.md)
-
-[Tilføje en ny webstedsside](add-new-page.md)

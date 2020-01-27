@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812827"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897137"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Dele indhold med andre bidragydere i Dynamics 365 Talent - Onboard
+# <a name="share-content-with-other-contributors"></a>Dele indhold med andre bidragydere
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Talent: Onboard giver dig mulighed for at dele onboarding
 
 3. Under **Del med** kan du angive indstillingen **Kan disse personer foretage ændringer?** til **Til**, hvis modtagerne skal kunne revidere guiden. Hvis modtagerne skal have besked via mail om, at du har delt guiden med dem, kan du angive indstillingen **Send mailbesked til modtagere** til **Til**.
 
-    ![[Indstilling af adgangs- og mailindstillinger for en onboardingguide](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Indstille adgangs- og mailpræferencer for en onboardingguide](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Indtast et navn eller en mailadresse, og vælg den ønskede modtager på rullelisten.
 5. Under fanen **Administrer adgang** kan du gennemse eller ændre, hvad modtagerne kan gøre med guiden. Hvis du vil ændre en modtagers adgang, skal du på rullelisten ud for modtagerens navn vælge **Kan vise**, **Kan redigere** eller **Fjern**, når det er relevant.

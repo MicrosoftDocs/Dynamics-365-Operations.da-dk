@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832809"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898683"
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprocesser
-
-[!include [banner](includes/banner.md)]
 
 Funktionen til forretningsprocesser giver dig mulighed for at oprette en skabelon til forretningsproces til processer, der skal fuldføres i organisationen. Virksomheden udfører f.eks. en revision af personale (HR) hvert år. I så fald kan du oprette en skabelon, der sporer alle de opgaver, revisionsprocessen består af. Denne skabelon kan hjælpe med til at sikre, at alle opgaver er udført, hver gang revisionen udføres. Hvis opgaverne skal fuldføres i en bestemt rækkefølge, kan skabelonen desuden hjælpe med til at sikre, at de udføres i den rigtige rækkefølge.
 

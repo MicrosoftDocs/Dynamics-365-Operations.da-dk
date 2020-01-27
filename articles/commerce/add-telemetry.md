@@ -3,7 +3,7 @@ title: Tilføje scriptkode til sider på websteder for at understøtte telemetri
 description: I dette emne beskrives det, hvordan du føjer klientside-scriptkode til siderne på webstedet for at understøtte samlingen af telemetri på klientsiden.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a5f82426d87cd2e0faa0195a841899bb03f9df08
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 79d0e11946f3c6f4704d3a726d33de0378eb53bd
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697330"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914533"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Tilføje scriptkode til sider på websteder for at understøtte telemetri
 
@@ -63,6 +63,8 @@ Når du har oprettet et fragment til scriptkoden, kan det genbruges på tværs a
 [Tilføj et logo](add-logo.md)
 
 [Vælg et tema for webstedet](select-site-theme.md)
+
+[Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
 [Tilføj en favicon](add-favicon.md)
 

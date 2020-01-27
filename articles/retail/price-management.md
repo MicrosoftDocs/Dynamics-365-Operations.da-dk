@@ -3,7 +3,7 @@ title: Styring af detailsalgspriser
 description: I dette emne beskrives begreberne for oprettelse og styring af salgspriser i Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025212"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934765"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -221,11 +221,11 @@ Et enkelt program til prissætning bruges til at beregne detailpriserne på tvæ
 
 Detailprissætning er designet til at fungere sammen med detailenheder i stedet for enheder uden for detailhandel. Den er specifikt designet til at angive butikspriser, ikke lagerpriser.
 
-Programmet til prissætning i detailhandel understøtter ikke følgende prisfunktioner:
+Programmet til prissætning i detailhandel **understøtter ikke** følgende prisfunktioner:
 
-- Angivelse af pris ved hjælp af lagerdimensionerne Lokation og Lagersted.
-- Attributbaseret prissætning
-- Gennemgang af kreditorrabatter
+- Prissætning efter lokation eller lokation og lagerstedets lagringsdimensioner understøttes ikke. Hvis du kun angiver lokationsdimensionen i handelsaftalerne, ignorerer detailpriserne lokationen og anvender handelsaftalen på alle lokationer. Hvis du angiver både lokation og lagersted, er adfærden udefineret/ikke afprøvet, fordi det forventes, at detailhandlere bruger butikkens prisgrupperne til at styre priserne for de enkelte butikker/lagersteder.
+- Attributbaseret prissætning understøttes ikke.
+- Gennemgang af leverandørrabatter understøttes ikke.
 
 Programmet til prissætning i detailhandel understøtter desuden **kun** følgende prisfunktioner:
 

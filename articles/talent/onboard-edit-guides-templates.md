@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812873"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897114"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Redigere onboardingguider og -skabeloner i Dynamics 365 Talent - Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Redigere onboardingguider og -skabeloner
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Sådan overføres dine ændringer:
 1. Under fanen **Aktiviteter** skal du trække elementer fra højre til redigeringsområdet.
 2. Hvis du vil organisere din guide i sektioner, skal du trække elementet **Ny sektion** til redigeringsområdet og angive et navn og en valgfri beskrivelse af sektionen.
 
-    ![[Tilføjelse af en ny sektion i en onboardingguide eller -skabelon](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Tilføjelse af en ny sektion til en onboardingguide eller -skabelon](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Hvis du vil tilføje aktiviteter, som din nyansatte skal udføre, skal du trække elementet **Ny aktivitet** til redigeringsområdet og angive et navn og en beskrivelse for aktiviteten.
 
-    ![[Tilføjelse af en ny aktivitet i en onboardingguide eller -skabelon](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Tilføjelse af en ny aktivitet til en onboardingguide eller -skabelon](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Føje avanceret indhold til din onboardingguide:
 
@@ -129,7 +129,7 @@ Sådan overføres dine ændringer:
     - Hvis du vil tilføje en Microsoft forms-formular, skal du trække **Microsoft Forms**-elementet til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten, angive URL-adressen til formen Microsoft Forms og angive størrelsen på skærmområdet.
     - Hvis du vil tilføje en Iframe, der har webindhold, skal du trække elementet **Webindhold (iframe)** til redigeringsområdet, angive et navn og en beskrivelse til aktiviteten, angive URL-adressen til webindholdet og angive størrelsen på skærmområdet.
 
-    ![[Tilføjelse af avanceret indhold i en onboardingguide eller -skabelon](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Tilføjelse af rigt indhold til en onboardingguide eller -skabelon](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Valgfrit: I området til højre for hver aktivitet skal du tildele aktiviteten en bestemt person eller rolle, tilføje en forfaldsdato og kontaktperson og tildele en kategorifarve. Når du tildeler en person eller rolle en aktivitet, oprettes der en opgave for hver enkelt. Denne opgave vises i menuen **Opgaver** i Onboard.
 
@@ -148,7 +148,7 @@ Du kan tilføje kontaktpersoner, der kan hjælpe din nyansatte med at komme godt
 1. Vælg **Ny kontakt** under fanen **Kontakter**.
 2. Angiv kontaktpersonens navn eller mailadresse i dialogboksen **Tilføj teammedlem**, angiv en kort beskrivelse, der forklarer, hvordan kontaktpersonen kan hjælpe den nyansatte, og vælg derefter **Tilføj**. 
 
-    ![[Tilføjelse af kontakter i en onboardingguide eller -skabelon](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Tilføjelse af kontakter til en onboardingguide eller -skabelon](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Du kan også vælge en eller flere kontaktpersoner under **Forslag**.
 
@@ -169,7 +169,7 @@ Du kan tilføje nyttige filer, kort og links i sektionen **Ressourcer** i din on
     - Hvis du vil tilføje et link, skal du vælge fanen **Link**, angive et navn og en adresse for linket og derefter vælge **Tilføj**.
     - Hvis du vil tilføje et kort, skal du vælge fanen **Kort**, angive et navn og en adresse for kortet og derefter vælge **Tilføj**. Onboard vil medtage et kort over den adresse, du angiver.
 
-    ![[Tilføjelse af en ny ressource i en onboardingguide eller -skabelon](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Tilføjelse af ressourcer til en onboardingguide eller -skabelon](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Vælg **Gem** for at gemme dit arbejde.
 

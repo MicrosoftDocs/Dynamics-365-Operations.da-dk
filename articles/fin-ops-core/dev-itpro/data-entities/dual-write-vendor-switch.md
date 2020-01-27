@@ -1,6 +1,6 @@
 ---
-title: Skift mellem leverandørdesign
-description: ''
+title: Skifte mellem kreditordesign
+description: I dette emne beskrives det, hvordan du kan skifte mellem integrationen af leverandørdata mellem Finance and Operations-programmer og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772358"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902719"
 ---
-# <a name="switch-between-vendor-designs"></a>Skift mellem leverandørdesign
+# <a name="switch-between-vendor-designs"></a>Skifte mellem kreditordesign
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772358"
 
 Hvis du bruger andre Dynamics 365-apps til leverandørhåndtering, og du vil adskille leverandøroplysningerne fra kundernes, kan du bruge dette grundlæggende leverandørdesign.  
 
-![Grundlæggende leverandørflow](media/dual-write-switch-1.png)
+![Grundlæggende leverandørflow](media/dual-write-vendor-data-flow.png)
  
 Hvis du bruger andre Dynamics 365-apps til leverandørhåndtering, og du fortsat vil bruge enheden **Konto** til at gemme leverandøroplysninger, kan du bruge dette udvidede leverandørdesign. I dette design gemmes udvidede leverandøroplysninger som f.eks. leverandørers på hold-status og leverandørprofil i enheden **leverandører** i Common Data Service. 
 
-![Udvidet leverandørflow](media/dual-write-switch-2.png)
+![Udvidet leverandørflow](media/dual-write-vendor-detail.jpg)
  
 Følg nedenstående fremgangsmåde for at bruge det udvidede leverandør design: 
  
@@ -60,5 +60,5 @@ Følg nedenstående fremgangsmåde for at bruge det udvidede leverandør design:
     4. Du kan konfigurere arbejdsprocesser som realtids- eller baggrundsarbejdsgange, der er baseret på dine krav. 
         > [!div class="mx-imgBorder"]
         > ![Konverter til en baggrundsarbejdsgang](media/dual-write-switch-8.png)
-    5. Aktiver de arbejdsgange, du har oprettet på enhederne **Konto** og **Leverandør** for at påbegynde anvendelsen af Customer Engagement-enheden **Konto** til lagring af leverandøroplysninger. 
+    5. Aktiver de arbejdsgange, du har oprettet på enhederne **Konto** og **Leverandør** for at påbegynde anvendelsen af enheden **Konto** til lagring af leverandøroplysninger. 
  

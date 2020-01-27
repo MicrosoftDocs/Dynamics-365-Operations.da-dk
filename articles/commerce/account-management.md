@@ -3,7 +3,7 @@ title: Kontostyringssider og -moduler
 description: Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785370"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885803"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontostyringssider og -moduler
 
@@ -58,7 +58,7 @@ På ordredetaljesiden vises der detaljerede oplysninger om hver enkelt ordre, og
 
 ### <a name="user-profile-page"></a>Brugerprofilside
 
-På brugerprofilsiden vises der detaljer om brugerkonti, f. eks. brugerens navn og mailadresse. Den bruger brugerprofilmodulet. Mailadressen kan ikke fjernes, men den kan redigeres.
+På brugerprofilsiden forevises detaljer om brugerkonti, f.eks. en brugers navn og mailadresse. Den bruger brugerprofilmodulet. Mailadressen kan ikke fjernes, men den kan redigeres. Brugerprofilsiden viser også brugerpræferencer, der giver en bruger mulighed for at tilmelde sig eller fravælge visse funktioner såsom personalisering af anbefalingslister. 
 
 ### <a name="user-address-page"></a>Brugeradresseside
 

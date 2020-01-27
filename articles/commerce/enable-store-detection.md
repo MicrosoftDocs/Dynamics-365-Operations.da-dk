@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a542d6987280451910b4ff3bcfb3a109a0e028c6
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: c5fb59a9798e2cddfb75b71235ee7754e54b0e28
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697606"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945760"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere registrering af lokationsbaserede butikker
 
@@ -50,16 +50,16 @@ Udfør følgende trin for at aktivere registrering af lokationsbaserede butikker
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over onlinebutik](online-store-overview.md)
-
-[Oprette et websted for e-handel](create-ecommerce-site.md)
+[Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
 
+[Oprette et websted for e-handel](create-ecommerce-site.md)
+
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 
-[Konfigurere dit domænenavn](configure-your-domain-name.md)
-
-[Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
+[Administrer robots.txt-filer](manage-robots-txt-files.md)
 
 [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
+
+[Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)

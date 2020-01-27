@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814622"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898242"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Oprette og sende en onboardingguide ved hjælp af Dynamics 365 Talent - Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Oprette og sende en onboardingguide
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Når du har oprettet en onboardingguide, kan du sende den til en nyansat. Altern
 
 5. I vinduet **Opret en guide** skal du under **Hvem onboarder du?** indtaste den nyansattes navn eller mailadresse. Hvis den nyansatte endnu ikke er i systemet, skal du vælge **Tilføj nu** og indtaste medarbejderens oplysninger.
 
-    ![[Indtastning af information til onboardingguide](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Indtastning af oplysninger til onboarding-guiden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. Under **Hvornår starter de?** skal du vælge en startdato.
 7. Hvis onboardingguiden automatisk skal sendes til den nyansatte på en bestemt dato, skal du sørge for, at indstillingen **Planlæg en automatisk afsendelsesdato** er aktiveret, og vælg derefter den automatiske afsendelsesdato. For at sende guiden straks skal du deaktivere indstillingen **Planlæg en automatisk afsendelsesdato**.
@@ -92,7 +92,7 @@ Du behøver ikke altid at oprette en guide ud fra en skabelon. Hvis du foretræk
 1. I menuen til venstre skal du vælge **Guider** og derefter vælge **Tilføj**-knappen (plustegnet \[**+**\]).
 2. I vinduet **Opret en guide** skal du under **Hvem onboarder du?** indtaste den nyansattes navn eller mailadresse. Hvis den nyansatte endnu ikke er i systemet, skal du vælge **Tilføj nu** og indtaste medarbejderens oplysninger.
 
-    ![[Indtastning af information til onboardingguide](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Indtastning af oplysninger til onboarding-guiden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. Under **Hvornår starter de?** skal du vælge en startdato.
 4. Hvis onboardingguiden automatisk skal sendes til den nyansatte på en bestemt dato, skal du sørge for, at indstillingen **Planlæg en automatisk afsendelsesdato** er aktiveret, og vælg derefter den automatiske afsendelsesdato. For at sende guiden straks skal du deaktivere indstillingen **Planlæg en automatisk afsendelsesdato**.
@@ -105,7 +105,7 @@ Du kan gemme en onboardingguide som en skabelon. På denne måde kan du spare ti
 1. Vælg **Guider** i menuen til venstre.
 2. Vælg **Mere**-knappen (ellipsen \[**...**\]) til den guide, du vil oprette en skabelon ud fra, og vælg derefter **Gem som skabelon**.
 
-    ![[Gemme en onboardingguide som en skabelon](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[At gemme en onboardingguide som en skabelon](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. I vinduet **Gem som en ny skabelon** skal du indtaste et navn til din nye skabelon og derefter vælge **Gem**.
 

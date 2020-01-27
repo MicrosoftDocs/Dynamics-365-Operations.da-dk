@@ -8,7 +8,9 @@
           href: index.md
         - name: Nyheder eller ændringer
           items:
-            - name: Prøveversionsfunktioner i Platform update 31 (januar 2020)
+            - name: Prøveversionsfunktioner i Platform update 32 (februar 2020)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (januar 2020)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (november 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform Update 15 (marts 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Nyheder eller ændringer i tidligere versioner
+              items:
+                - name: Nyheder eller ændringer på startside for Finance and Operations
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Forretningshændelser
           items:
             - name: Oversigt over forretningshændelser
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integration med lokale miljøer
                   href: analytics/entity-store-on-prem.md
-                - name: Konfigurere omvendte proxyer til dine lokale miljøer
+                - name: Konfigurere proxyer til lokale miljøer
                   href: deployment/onprem-reverseproxy.md
                 - name: Anvende opdateringer til en lokal installation
                   href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Kendte problemer
                   href: lifecycle-services/known-issues.md
+                - name: Fjernede eller udfasede funktioner i Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Brugervejledning til Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Abonnementsestimator

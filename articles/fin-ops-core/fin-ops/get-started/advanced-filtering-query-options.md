@@ -3,7 +3,7 @@ title: Syntaks for avanceret filtrering og forespørgsler
 description: I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering eller operatoren matches i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9e57cac740a26c6c5b451c92d856e533c6db33e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180823"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931282"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 
@@ -114,6 +114,12 @@ I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der 
 <td>Svarer til de værdier, der er adskilt af kommaer</td>
 <td>Skriv alle kriterierne, og adskil dem med kommaer.</td>
 <td><strong>A, D, F, G</strong> finder nøjagtigt &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finder nøjagtigt &quot;10, 20, 30, 100&quot;.</td>
+</tr>
+<tr>
+<td>"" (to dobbelte anførselstegn)</td>
+<td>Matche en tom værdi</td>
+<td>Skriv to fortløbende dobbelte anførselstegn for at filtrere efter tomme værdier i det pågældende felt.</td>
+<td>To på hinanden følgende dobbelte anførselstegn (<strong>""</strong>) finder rækker uden værdi for den aktuelle kolonne.</td>
 </tr>
 <tr>
 <td>(<span class="code">SQL-sætning</span>) (SQL-sætning i parenteser)</td>

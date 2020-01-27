@@ -3,7 +3,7 @@ title: Konfigurere callcenterkanaler
 description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer til callcentre ved hjælp af Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/16/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4ebe25f91cd4228537254dc0b7891c8584981775
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024815"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934694"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurere callcenter-kanaler
 
@@ -81,3 +81,6 @@ Brugere, som ikke er sammenkædet med en callcenterkanal, bruger standardordrein
 
 
 Når du er færdig med at konfigurere callcenter-kanalen og definere kanalens brugere, og når du vil sikre den ønskede systemadfærd, skal du kontrollere, at alle nødvendige parametre for callcenteret er defineret under **Retail** \> **Konfiguration af kanal** \> **Callcenter-konfiguration** \> **Callcenter-parametre**. Sørg for, at der også er defineret relaterede nummerserier.
+
+> [!NOTE]
+> Hvis du vil bruge funktionen call center, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af funktionen call center, som udfører forskellige valideringer baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau. 

@@ -3,7 +3,7 @@ title: Hjælp-ressourcer til Supply Chain Management
 description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til Supply Chain Management-funktioner.
 author: josaw1
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4926cd63aa360c7e08a0a435f7609017f02cb229
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814415"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853982"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Hjælp-ressourcer til Supply Chain Management
 
@@ -115,7 +115,6 @@ Der er mange emner om styring af produktionen og forsyningskæden i <a href="htt
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser i driftsregnskab</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringsevne og kanban-finplanlægning</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Styklistekalkulation ved hjælp af efterkalkulationsark</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet i lagerstedet ved hjælp af Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 Du kan finde flere oplysninger om Dynamics 365-uddannelse i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics-uddannelsesportalen</a>. (kræver CustomerSource-konto) 
