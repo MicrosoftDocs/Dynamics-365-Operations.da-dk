@@ -1,0 +1,1620 @@
+- name: Udvikling og administration til Finance and Operations
+  href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Nyheder eller ændringer
+  items:
+    - name: Prøveversionsfunktioner i Platform update 30 (november 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 29 (oktober 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 28 (juli 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 27 (juni 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform Update 26 (maj 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform Update 25 (april 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-25.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform Update 24 (marts 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 23 (januar 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 22 (december 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 21 (november 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 20 (september 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform Update 15 (marts 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Forretningshændelser
+  items:
+    - name: Oversigt over forretningshændelser
+      href: ../../dev-itpro/business-events/home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forretningshændelser i program
+      href: ../../dev-itpro/business-events/app-business-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forretningshændelser i arbejdsgang
+      href: ../../dev-itpro/business-events/business-events-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Påmindelser som forretningshændelser
+      href: ../../dev-itpro/business-events/alerts-business-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forretningshændelser i Microsoft Flow
+      href: ../../dev-itpro/business-events/business-events-flow.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Dokumentation til udviklere af forretningshændelser
+      href: ../../dev-itpro/business-events/business-events-dev-doc.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Foretage fejlfinding af forretningshændelser
+      href: ../../dev-itpro/business-events/troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Bruge sager til forretningshændelser
+      href: ../../dev-itpro/business-events/potential-use-cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Selvstudier
+      items:
+        - name: Forretningshændelser og Microsoft Flow
+          href: ../../dev-itpro/business-events/how-to/how-to-flow.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forretningshændelser og Azure Event Grid
+          href: ../../dev-itpro/business-events/how-to/how-to-eventgrid.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forretningshændelser og Azure-tjenestebus
+          href: ../../dev-itpro/business-events/how-to/how-to-servicebus.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forretningshændelser og arbejdsgangsgodkendelser
+          href: ../../dev-itpro/business-events/how-to/how-to-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forretningshændelser og Microsoft Forms Pro
+          href: ../../dev-itpro/business-events/how-to/FormsPro.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forretningshændelser og Azure Event Hubs
+          href: ../../dev-itpro/business-events/how-to/event-hub.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Fortløbende levering
+  items:
+    - name: Startside for fortløbende levering
+      href: ../../dev-itpro/dev-tools/continuous-delivery-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Ofte stillede spørgsmål om udvikling og fortløbende levering
+      href: ../../dev-itpro/dev-tools/continuous-delivery-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Udelade testpakker fra build-output
+      href: ../../dev-itpro/dev-tools/exclude-test-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Administrere tredjepartsmodeller og kørsel af pakker ved hjælp af kildekontrol
+      href: ../../dev-itpro/dev-tools/manage-runtime-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opdatere modelversioner i det automatiske build
+      href: ../../dev-itpro/dev-tools/version-models-build.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Dataintegration
+  items:
+    - name: Vælg en strategi for dataintegration (import/eksport)
+      href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: API'er for dataintegration
+      items:
+        - name: REST API for datastyringspakke
+          href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tjenesteslutpunkter
+          items:
+            - name: Oversigt over tjenesteslutpunkter
+              href: ../../dev-itpro/data-entities/services-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Fejlfinding i forbindelse med servicegodkendelse
+              href: ../../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: OData
+          href: ../../dev-itpro/data-entities/odata.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Udvikling af brugerdefinerede tjenester
+          href: ../../dev-itpro/data-entities/custom-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tilbagevendende integrationer
+          href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Testtjenester, der bruger værktøjer fra tredjepartstjenester'
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Finance and Operations-connector
+      href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Udvikling med henblik på integration
+      items:
+        - name: Dataintegration med dataenheder
+          items:
+            - name: Oversigt over dataintegration med dataenheder
+              href: ../../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvikle en enhed til dataoverflytning
+              href: ../../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvikle sammensatte dataenheder
+              href: ../../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Konfigurere økonomisk datadeling på tværs af firmaer
+              href: ../../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Oprette postskabeloner for at lette dataindtastning
+              href: ../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Oprette poster ved hjælp af postskabeloner
+              href: ../../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Dataintegration ved brug af Common Data Service
+          items:
+            - name: Oversigt over dataintegration ved brug af Common Data Service
+              href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Synkron tovejsintegration
+              items:
+                - name: Dataintegration næsten i realtid
+                  href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Organisationshierarki på Common Data Service
+                  href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Firmabegreb i Common Data Services
+                  href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Integreret kundemaster
+                  href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Samlet produktoplevelse
+                  href: ../../dev-itpro/data-entities/dual-write-product.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Integreret kreditormaster
+                  href: ../../dev-itpro/data-entities/dual-write-vendor.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Integrerede lokationer og lagersteder
+                  href: ../../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Første synkronisering
+                  href: ../../dev-itpro/data-entities/dual-write-initial.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Fejlfinding af dataintegration
+                  href: ../../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Asynkron envejsintegration
+              items:
+                - name: Konfigurere et kundeemne til kontantscenarie
+                  items:
+                    - name: Kundeemne til kontanter
+                      href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
+                      href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
+                      href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
+                      href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
+                      href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Konfigurere integration med Field Service
+                  items:
+                    - name: Oversigt over konfiguration af integration med Field Service
+                      href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere produkter fra Finance and Operations med produkter i Field Service
+                      href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere lageroverførsler og reguleringer fra Field Service til Finance and Operations
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere lagerniveauoplysninger fra Finance and Operations til Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere produkter med lagerenhed fra Finance and Operations til Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere projektliste fra Finance and Operations til Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere lagersteder fra Finance and Operations til Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere arbejdsordrer med projekt fra Field Service til Finance and Operations
+                      href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Konfigurere integration af Project Service Automation
+                  items:
+                    - name: Oversigt over Project Service Automation
+                      href: ../../financials/project-management/PSA-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Integrationsparametre for Project Service Automation
+                      href: ../../financials/project-management/PSA-parameters.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere projektkontrakter og projekter
+                      href: ../../financials/project-management/project-contracts-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere projektopgaver
+                      href: ../../financials/project-management/project-tasks-template.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere udgiftskategorier for projekt
+                      href: ../../financials/project-management/project-categories-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere projektestimater til projektprognoser
+                      href: ../../financials/project-management/project-estimates-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Synkronisere faktiske oplysninger om projekter til projektintegrationskladden
+                      href: ../../financials/project-management/project-actuals-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forbrug af eksterne webtjenester
+      href: ../../dev-itpro/data-entities/consume-external-web-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Elektroniske meddelelser
+      href: ../../financials/general-ledger/electronic-messaging.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Datastyring
+  items:
+    - name: Oversigt over datastyring
+      href: ../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Dataenheder
+      items:
+        - name: Oversigt over dataenheder
+          href: ../../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurationsdataprojekter
+          href: ../../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kopiere konfigurationsdata mellem firmaer eller juridiske enheder
+          items:
+            - name: Oversigt over kopiering af konfigurationsdata
+              href: ../../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Konfigurationsdatapakker
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Konfiguration af datapakker (kun frigivelsen fra juli 2017)
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Gøre enhedslager tilgængelig som en Data Lake
+              href: ../../dev-itpro/data-entities/entity-store-data-lake.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurationsdataskabeloner
+          href: ../../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Spore ændringer i en enhed
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Finde oplysninger om standarddataenheder
+          href: ../../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Dataskabeloner med flere regneark
+          href: ../../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Aktivere ændringssporing for enheder
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurationsnøgler og dataenheder
+          href: ../../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurationsdatapakker
+          href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Dataimport- og -eksportjob
+      items:
+        - name: Oversigt over dataimport- og -eksportjob
+          href: ../../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
+          href: ../../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Udvikling for dataenheder
+      items:
+        - name: Principper for design og bedste praksis for dataenheder
+          href: ../../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette nye dataenheder
+          href: ../../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Egenskaber for dataenhed
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette beregnede kolonner og virtuelle felter
+          href: ../../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Adfærd på tværs af virksomhed
+          href: ../../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Håndtering af lande- og områdekoder
+          href: ../../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Nedarvningsmønstre
+          href: ../../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Regler for dataenhedsguide
+          href: ../../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Metadata-egenskaber
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Valideringer, standarder og ikke-tilknyttede felter'
+          href: ../../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Sikkerhed og dataenheder
+          href: ../../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Bruge testværktøjer fra tredjepartstjenester
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Oprette skrivebeskyttede enheder, der viser økonomiske dimensioner'
+          href: ../../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Brug din egen database
+      href: ../../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opdatering af automatiseret enhedslager
+      href: ../../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Automatisering af dataopgave
+      href: ../../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Arbejdsområdet Kontrolliste for datavalidering
+      href: ../../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Fejlbeskrivelser til datastyring
+      href: ../../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Handlinger til databaseflytning
+  items:
+    - name: Oversigt
+      href: ../../dev-itpro/database/dbmovement-operations.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Hurtige introduktioner
+      items:
+        - name: Opdater database
+          href: ../../dev-itpro/database/database-refresh.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Eksportér en database
+          href: ../../dev-itpro/database/export-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Import af en database
+          href: ../../dev-itpro/database/import-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tidsbestemt gendannelse af database
+          href: ../../dev-itpro/database/database-point-in-time-restore.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Selvstudier
+      items:
+        - name: Opdatering i uddannelsesøjemed
+          href: ../../dev-itpro/database/dbmovement-scenario-general-refresh.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fejlfinding i en kopi af produktionsdatabasen
+          href: ../../dev-itpro/database/dbmovement-scenario-debugdiag.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Eksportere en kopi af databasen for godkendelsestest for standardbruger (UAT)
+          href: ../../dev-itpro/database/dbmovement-scenario-exportuat.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Gylden konfigurationskampagne
+          href: ../../dev-itpro/database/dbmovement-scenario-goldenconfig.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Destruktiv test
+          href: ../../dev-itpro/database/dbmovement-scenario-destructivetests.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Demodata
+  items:
+    - name: Oversigt over demodata
+      href: ../../fin-and-ops/get-started/demo-data.md?toc=/dynamics365/unified-operations/retail/toc.json?toc=/dev-itpro/toc.json
+    - name: Generere demodata ved hjælp af datapakker
+      href: ../../dev-itpro/data-entities/generate-demo-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Installation
+  items:
+    - name: Installere demomiljøer
+      href: ../../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Skyinstallation
+      items:
+        - name: Oversigt over skyinstallation
+          href: ../../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Selvbetjeningsinstallation
+          items:
+            - name: Oversigt over selvbetjeningsinstallation
+              href: ../../dev-itpro/deployment/infrastructure-stack.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Installere et nyt miljø
+              href: ../../dev-itpro/deployment/deployenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ofte stillede spørgsmål om installation
+              href: ../../dev-itpro/deployment/deploymentFAQ.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Kendte problemer med selvbetjeningsinstallation
+              href: ../../dev-itpro/deployment/known-issues-new-deployment-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Vedligeholdelsesoperationer for installationer
+              href: ../../dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Opdatere et miljø
+              href: ../../dev-itpro/deployment/updateenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Fejlfinding i miljøer, der er installeret via selvbetjeningsinstallation'
+              href: ../../dev-itpro/deployment/troubleshoot-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Komplet onboarding af Azure Resource Manager
+          href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Azure ExpressRoute og Finance and Operations
+          href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Finance and Operations-arkitektur
+          href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anvende opdateringer i skybaserede miljøer
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anvende opdateringer og udvidelser på skybaserede Retail-kanalkomponenter
+          href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Initialisere Retail Cloud Scale Unit
+          href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Retail-databopæl
+          href: ../../dev-itpro/deployment/retail-data-residency.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Lokal installation
+      items:
+        - name: Startside for lokal installation
+          href: ../../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oversigt over lokal installation
+          href: ../../dev-itpro/deployment/on-premises-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Planlægge og forberede lokale installationer
+          href: ../../dev-itpro/deployment/plan-onprem-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Krav til tilpasning af hardware
+          href: ../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dynamics365/unified-operations/retail/toc.json?toc=/dev-itpro/toc.json
+        - name: Konfigurere lokale projekter
+          href: ../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurere og installere lokale miljøer
+          items:
+            - name: Startside for konfiguration og installation af lokale miljøer
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-environments.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Installere lokale miljøer (Platform update 12 og senere)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Installere on-premises-miljøer (Platform update 8 og 11)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Installationstrin for Retail-kanalkomponenter i et on-premises-miljø.
+              href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
+          href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: PowerBI.com-integration med lokale miljøer
+          href: ../../dev-itpro/analytics/entity-store-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurere omvendte proxyer til dine lokale miljøer
+          href: ../../dev-itpro/deployment/onprem-reverseproxy.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anvende opdateringer til en lokal installation
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Diagnosticering i det lokale miljø
+          href: ../../dev-itpro/deployment/on-premises-diagnostics.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Geninstallere lokale installationer
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Lokal agent
+          items:
+            - name: AD FS Office 365-kompatibilitet
+              href: ../../dev-itpro/deployment/onprem-adfscompatibility.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Scripts til forudinstallation og efterinstallation af lokale agenter
+              href: ../../dev-itpro/lifecycle-services/pre-post-scripts.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Opdatere den lokale agent
+              href: ../../dev-itpro/lifecycle-services/update-local-agent.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Omkonfigurere miljøer
+          href: ../../dev-itpro/lifecycle-services/reconfigure-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Klientens internetforbindelse
+          href: ../../dev-itpro/user-interface/client-disconnected.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fejlfinding af lokale installationer
+          href: ../../dev-itpro/deployment/troubleshoot-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Certifikatrotation
+          href: ../../dev-itpro/deployment/certificate-rotation-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Installere brugerdefineret kode
+      items:
+        - name: Oprette installerbare modelpakker
+          href: ../../dev-itpro/deployment/create-apply-deployable-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Installere installerbare pakker fra kommandolinjen
+          href: ../../dev-itpro/deployment/install-deployable-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fjerne installation af en pakke
+          href: ../../dev-itpro/deployment/uninstall-deployable-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fejlfinde problemer med pakkeprogrammer
+          href: ../../dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Udvikle og tilpasse
+  items:
+    - name: Udvikle og tilpasse startside
+      href: ../../dev-itpro/dev-tools/developer-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Applikationsstak og serverarkitektur
+      href: ../../dev-itpro/dev-tools/application-stack-server-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Få evalueringskopier
+      href: ../../dev-itpro/dev-tools/get-evaluation-copy.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Tilmelde dig prøveabonnementer
+      href: ../../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Installere og åbne udviklingsmiljøer
+      items:
+        - name: Udviklingsmiljøer
+          href: ../../dev-itpro/dev-tools/access-instances.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Installere udviklingsmiljøer med én boks
+          href: ../../dev-itpro/dev-tools/configure-developer-vm.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette nye brugere på computere til udvikling
+          href: ../../dev-itpro/dev-tools/enable-development-machine.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Ofte stillede spørgsmål om udviklings- og build-VM''er, der ikke tillader administratoradgang'
+          href: ../../dev-itpro/sysadmin/VMs-no-admin-access.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Omdøbe lokale miljøer for at få adgang til Azure DevOps
+          href: ../../dev-itpro/migration-upgrade/vso-machine-renaming.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Systemkrav til udvikling
+          href: ../../dev-itpro/dev-tools/development-system-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 'Versionskontrol, metadatasøgning og navigation'
+      href: ../../dev-itpro/dev-tools/version-control-metadata-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Eksempelprogram til flådeadministration
+      items:
+        - name: Komplet scenarie for eksempelprogram til flådeadministration
+          href: ../../dev-itpro/dev-tools/fleet-management-sample.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Eksempelprogram til flådeadministration
+          href: ../../dev-itpro/dev-tools/introduction-fleet-management-sample.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Visual Studio-værktøjer
+      items:
+        - name: Udviklingsværktøjer
+          href: ../../dev-itpro/dev-tools/development-tools-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Selvstudium til udviklingsværktøjer
+          href: ../../dev-itpro/dev-tools/introduction-visual-studio.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Programkontrol
+          items:
+            - name: Installere BaseX til Programkontrol
+              href: ../../dev-itpro/dev-tools/install-basex.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Application Explorer
+          href: ../../dev-itpro/dev-tools/application-explorer.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette og foretage fejlfinding af projekter
+          href: ../../dev-itpro/dev-tools/build-debug-project.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Buildhandlinger
+          href: ../../dev-itpro/dev-tools/build-operations.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Funktioner i kodeeditor
+          href: ../../dev-itpro/dev-tools/code-editor.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette modeller og datamodelelementer
+          items:
+            - name: Oversigt over oprettelse af modeller og datamodelelementer
+              href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Retningslinjer for navngivning af udvidelser
+              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Deaktivere tilpasning af modellen og fraråde brug af funktionaliteten
+              href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tilpasningsanalyserapport
+          href: ../../dev-itpro/dev-tools/customization-analysis-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Elementdesignere
+          href: ../../dev-itpro/dev-tools/element-designers.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kommandoer til bestemmelse af elementbrug
+          href: ../../dev-itpro/dev-tools/element-usage.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Eksportere og importere modeller
+          href: ../../dev-itpro/dev-tools/models-export-import.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Metadatasøgning i Visual Studio
+          href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Modeller og pakker
+          href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Projekttype for Finance and Operations
+          href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Værktøjstilføjelsesprogrammer til Visual Studio
+          href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opdatere Visual Studio-udviklingsværktøjerne
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Programmeringssproget X++
+      items:
+        - name: X++ og fejlfindingsfunktioner
+          href: ../../dev-itpro/dev-tools/new-x-debugger-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fejlfinde en X++-kode
+          href: ../../dev-itpro/dev-tools/debug-xpp.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: EventHandlerResult-klasser i anmodnings- eller svarscenarier
+          href: ../../dev-itpro/dev-tools/event-handler-result-class.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Skrive forretningsregel ved hjælp af C#- og X++-kildekode'
+          href: ../../dev-itpro/dev-tools/write-business-logic.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Ændringer i X++ og X++-kompileren
+          href: ../../dev-itpro/dev-tools/programming-language-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'LINQ-udbyder for C#'
+          href: ../../dev-itpro/dev-tools/linq-provider-c.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Skrive Best Practice-regler
+          href: ../../dev-itpro/dev-tools/author-best-practice-rules.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Egenskaber for Application Explorer
+          href: ../../dev-itpro/dev-ref/application-explorer-aot-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++-sprogreference
+          items:
+            - name: Oversigt over X++-sprogreference
+              href: ../../dev-itpro/dev-ref/xpp-language-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Variabler og datatyper
+              items:
+                - name: Variabler
+                  href: ../../dev-itpro/dev-ref/xpp-variables-data-types.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Basisdatatyper
+                  href: ../../dev-itpro/dev-ref/xpp-data-primitive.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Sammensatte datatyper
+                  href: ../../dev-itpro/dev-ref/xpp-data-composite.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Samlingsklasser
+                  href: ../../dev-itpro/dev-ref/xpp-data-collection.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Udvidede datatyper
+                  href: ../../dev-itpro/dev-ref/xpp-data-edt.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Sætninger, løkker og undtagelseshåndtering'
+              items:
+                - name: 'Kommentarer, brug og udskrivning'
+                  href: ../../dev-itpro/dev-ref/xpp-statements-loops.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Betingelsessætninger
+                  href: ../../dev-itpro/dev-ref/xpp-conditional.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Løkkesætninger
+                  href: ../../dev-itpro/dev-ref/xpp-loops.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Undtagelseshåndtering
+                  href: ../../dev-itpro/dev-ref/xpp-exceptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: SQL-forbindelsesfejl X++-undtagelse
+              href: ../../dev-itpro/dev-ref/sql-connection-error.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-operatorer
+              href: ../../dev-itpro/dev-ref/xpp-operators.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-operatorpræcedens
+              href: ../../dev-itpro/dev-ref/xpp-operator-precedence.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-klasser og -metoder
+              items:
+                - name: Klasser og -metoder
+                  href: ../../dev-itpro/dev-ref/xpp-classes-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Nedarvning
+                  href: ../../dev-itpro/dev-ref/xpp-inheritance.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Medlemmer af statisk klasse
+                  href: ../../dev-itpro/dev-ref/xpp-static-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Grænseflader
+                  href: ../../dev-itpro/dev-ref/xpp-interfaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Biblioteker
+                  href: ../../dev-itpro/dev-ref/xpp-library-objects.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Hændelser
+                  href: ../../dev-itpro/dev-ref/xpp-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Dataudvælgelse og -manipulation i X++
+              href: ../../dev-itpro/dev-ref/xpp-data-query.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Dataadgang ved hjælp af SysDa-API'et
+              href: ../../dev-itpro/dev-ref/sysda.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-makroer
+              href: ../../dev-itpro/dev-ref/xpp-macros.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-attributklasser
+              href: ../../dev-itpro/dev-ref/xpp-attribute-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Sammenligning af X++ og C#'
+              href: ../../dev-itpro/dev-ref/xpp-cs-comparison.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-syntaks
+              href: ../../dev-itpro/dev-ref/xpp-syntax.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 'API, klasse og tabelreference'
+      items:
+        - name: 'API, klasse og tabelressourcer'
+          href: ../../dev-itpro/dev-ref/api-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Funktioner for X++-kompileringstid
+          href: ../../dev-itpro/dev-ref/xpp-compile-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++-kørselsfunktioner
+          items:
+            - name: Ressourcer til X++-kørselsfunktioner
+              href: ../../dev-itpro/dev-ref/xpp-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-kørselsfunktioner for erhverv
+              href: ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-kørselsfunktioner for container
+              href: ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-kørselsfunktioner for konvertering
+              href: ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-kørselsfunktioner for dato
+              href: ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-kørselsfunktioner for matematik
+              href: ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++-kørselsfunktioner for refleksion
+              href: ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Funktioner for kørsel af X++-session
+              href: ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Funktioner for kørsel af X++-streng
+              href: ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Systemtabeller
+          href: ../../dev-itpro/dev-ref/system-tables.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Systemklasser
+          items:
+            - name: A-klasser
+              href: ../../dev-itpro/dev-ref/a-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: B-klasser
+              href: ../../dev-itpro/dev-ref/b-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: C-klasser
+              href: ../../dev-itpro/dev-ref/c-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: D-klasser
+              href: ../../dev-itpro/dev-ref/d-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: E-klasser
+              href: ../../dev-itpro/dev-ref/e-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FieldBinding til FormBuildAnimateControl)
+              href: ../../dev-itpro/dev-ref/fieldbinding-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormBuildButtonControl til FormBuildFastTabSummarySeparator)
+              href: ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormBuildFilterPaneControl til FormBuildRealControl)
+              href: ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormBuildReferenceControl til FormButtonSeparatorControl)
+              href: ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormChangeTracker til FormControlEventArgs)
+              href: ../../dev-itpro/dev-ref/formchangetracker-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormDataObject til FormFastTabHeaderControl)
+              href: ../../dev-itpro/dev-ref/formdataobject-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormFastTabSummarySeparator til FormGridControl)
+              href: ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormGroupControl til FormIntControl)
+              href: ../../dev-itpro/dev-ref/formgroupcontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormListBoxControl til FormNotifyEventArgs)
+              href: ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormObject til FormRealControl)
+              href: ../../dev-itpro/dev-ref/formobject-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormReferenceControl to FormStringControl)
+              href: ../../dev-itpro/dev-ref/formreferencecontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F-klasser (FormTabControl to FormWindowControl)
+              href: ../../dev-itpro/dev-ref/formtabcontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: G-klasser
+              href: ../../dev-itpro/dev-ref/g-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: H-klasser
+              href: ../../dev-itpro/dev-ref/h-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: I-klasser
+              href: ../../dev-itpro/dev-ref/i-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: J-klasser
+              href: ../../dev-itpro/dev-ref/j-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: K-klasser
+              href: ../../dev-itpro/dev-ref/k-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: L-klasser
+              href: ../../dev-itpro/dev-ref/l-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: M-klasser
+              href: ../../dev-itpro/dev-ref/m-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: N-klasser
+              href: ../../dev-itpro/dev-ref/n-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: O-klasser
+              href: ../../dev-itpro/dev-ref/o-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: P-klasser
+              href: ../../dev-itpro/dev-ref/p-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Q-klasser
+              href: ../../dev-itpro/dev-ref/q-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: R-klasser
+              href: ../../dev-itpro/dev-ref/r-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: S-klasser
+              href: ../../dev-itpro/dev-ref/s-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: T-klasser
+              href: ../../dev-itpro/dev-ref/t-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: U-klasser
+              href: ../../dev-itpro/dev-ref/u-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: V-klasser
+              href: ../../dev-itpro/dev-ref/v-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: W-klasser
+              href: ../../dev-itpro/dev-ref/w-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X-klasser
+              href: ../../dev-itpro/dev-ref/x-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Udvidelsesmuligheder
+      items:
+        - name: Startside for udvidelsesmuligheder
+          href: ../../dev-itpro/extensibility/extensibility-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Introduktion og kom godt i gang
+          items:
+            - name: Plan for programs udvidelse
+              href: ../../dev-itpro/extensibility/extensibility-roadmap.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvidelsesanmodninger
+              href: ../../dev-itpro/extensibility/extensibility-requests.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ofte stillede spørgsmål om udvidelsesmuligheder
+              href: ../../dev-itpro/extensibility/app-sealing-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Overflytte fra overlejring til udvidelser
+              href: ../../dev-itpro/extensibility/migrate-overlayer-extension.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilpasse modelelementer gennem udvidelse (selvstudium)
+              href: ../../dev-itpro/extensibility/customize-model-elements-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilpasse gennem udvidelse og overlejring
+              href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Nyheder
+          items:
+            - name: Nyheder eller ændringer for udvidelsesmuligheder
+              href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 10.0.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 10.0.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 10.0.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 10.0
+              href: ../../dev-itpro/extensibility/extensibility-changes-10.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.1.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-813.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.1.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-812.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.1.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-811.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-81.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.0.4
+              href: ../../dev-itpro/extensibility/extensibility-changes-804.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.0.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-803.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.0.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-802.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder version 8.0.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-801.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder i version 8.0
+              href: ../../dev-itpro/extensibility/changes-80.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder i version 7.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-73.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af udvidelsesmuligheder juli 2017
+              href: ../../dev-itpro/extensibility/changes-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Grundlæggende
+          items:
+            - name: Forstyrrende tilpasninger
+              href: ../../dev-itpro/extensibility/intrusive-customizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Klasseudvidelsesmodel
+              href: ../../dev-itpro/extensibility/class-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Klasseudvidelse via metodeombrydning og kommandovej
+              href: ../../dev-itpro/extensibility/method-wrapping-coc.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Retningslinjer for navngivning af udvidelser
+              href: ../../dev-itpro/extensibility/naming-guidelines-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Begrænsninger for Relax-model ved omstrukturering af overlejring til udvidelser
+              href: ../../dev-itpro/extensibility/refactoring-over-layering.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprettelse af udvidelser
+          items:
+            - name: Tilføje værdier til enums
+              href: ../../dev-itpro/extensibility/add-enum-value.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændre udvidede datatyper
+              href: ../../dev-itpro/extensibility/modify-edt.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Registrere underklasser for standardmetoder
+              href: ../../dev-itpro/extensibility/register-subclass-factory-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Svare ved hjælp af EventHandlerResult
+              href: ../../dev-itpro/extensibility/respond-event-handler-result.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvide RunBase-klassen
+              href: ../../dev-itpro/extensibility/extend-runbase-class.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilpasse opstart af program ved hjælp af delegerede
+              href: ../../dev-itpro/extensibility/startup-customizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændre eksisterende felter i en tabel
+              href: ../../dev-itpro/extensibility/modify-existing-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilføje felter til tabeller
+              href: ../../dev-itpro/extensibility/add-field-extension.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilføje indeks til tabeller
+              href: ../../dev-itpro/extensibility/add-index.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilføje relationer til tabeller
+              href: ../../dev-itpro/extensibility/add-relation.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Redigere tabelegenskaber
+              href: ../../dev-itpro/extensibility/modify-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilføje metoder til tabeller
+              href: ../../dev-itpro/extensibility/add-method-table.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udføre forretningshandlinger gennem tabelposters livscyklus
+              href: ../../dev-itpro/extensibility/subscribe-table-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilføje datakilder til formularer
+              href: ../../dev-itpro/extensibility/add-datasource.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændre formulars overskrifter
+              href: ../../dev-itpro/extensibility/change-caption-form.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændre egenskaber for formularkontrol
+              href: ../../dev-itpro/extensibility/modify-control-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvide omfanget af nummerserier
+              href: ../../dev-itpro/extensibility/extend-number-sequence-scope.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tilføje nye lagerdimensioner
+              href: ../../dev-itpro/extensibility/inventory-dimensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvidelse af priser og rabatter
+              href: ../../dev-itpro/extensibility/pricing-app73.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvidelse af tabeloversigt
+              href: ../../dev-itpro/extensibility/map-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Udvide tabeloversigter, der bruges som grænseflader'
+              href: ../../dev-itpro/extensibility/maps-as-interfaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Udvide tabeloversigter, der bruges til versionsstyring'
+              href: ../../dev-itpro/extensibility/maps-with-versioning.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvide decimaltegnet præcision for de valgte datatyper
+              href: ../../dev-itpro/extensibility/decimal-point-precision.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Oprettelse af løsninger, der kan udvides'
+          items:
+            - name: 'Skrive kode, der kan udvides'
+              href: ../../dev-itpro/extensibility/writing-extensible-code.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Klasser
+              href: ../../dev-itpro/extensibility/extensible-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Metoder
+              href: ../../dev-itpro/extensibility/extensible-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Formularer
+              href: ../../dev-itpro/extensibility/extensible-forms.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvidede datatyper
+              href: ../../dev-itpro/extensibility/extensible-edts.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Fasttekst, der kan udvides'
+              href: ../../dev-itpro/extensibility/extensible-enums.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Delegerede
+              href: ../../dev-itpro/extensibility/extensible-code-delegates.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Tabeller
+              href: ../../dev-itpro/extensibility/extensible-tables.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Udvidelsesattributter for metoder
+              href: ../../dev-itpro/extensibility/extensibility-attributes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Ændringer, der giver beskadigelser'
+              href: ../../dev-itpro/extensibility/breaking-changes.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Ydeevne
+      items:
+        - name: Udføre sporinger ved hjælp af sporingsparser
+          href: ../../dev-itpro/perf-test/trace-trace-tutorial.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Enkeltbrugertest med Arbejdsrutineoptager og Performance SDK
+          href: ../../dev-itpro/perf-test/single-user-test-perf-sdk.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Flerbrugertest med Performance SDK og en lokal testcontroller
+          href: ../../dev-itpro/perf-test/multi-user-testing-local-test-controller.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Flerbrugertest med Performance SDK og Azure DevOps
+          href: ../../dev-itpro/perf-test/multi-user-testing-perfsdk-azuredevops.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fejlfindingsvejledning til enkeltbruger- eller flerbrugertest med Performance SDK
+          href: ../../dev-itpro/perf-test/troubleshoot-perf-sdk-user-testing.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Performance SDK og flerbrugertest i lokale miljøer
+          href: ../../dev-itpro/perf-test/perfsdk-tutorial-lbd.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Diagnosticere problemer og analysere ydeevne ved hjælp af Trace parser
+          href: ../../dev-itpro/perf-test/trace-parser.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Ydeevne-timer
+          href: ../../dev-itpro/perf-test/performance-timer.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Test af understøttelse i Visual Studio
+      items:
+        - name: Test og valideringer
+          href: ../../dev-itpro/perf-test/testing-validation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Testprojekter i Visual Studio
+          href: ../../dev-itpro/perf-test/testing-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Installere miljøer, der understøtter fortløbende build og automatisering af test'
+          href: ../../dev-itpro/perf-test/continuous-build-test-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: SysTest-filtrering ved hjælp af klasse og metodeattributter
+          href: ../../dev-itpro/perf-test/systest-filtering.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Bibliotek til godkendelsestest
+          items:
+            - name: Ressourcer til bibliotek til godkendelsestest
+              href: ../../dev-itpro/perf-test/acceptance-test-library.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Begreber i navigation
+              href: ../../dev-itpro/perf-test/concepts-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Testdatametoder
+              href: ../../dev-itpro/perf-test/test-data-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Enheder i biblioteket til godkendelsestest
+              href: ../../dev-itpro/perf-test/concepts-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Kommandoer i bibliotek til godkendelsestest
+              href: ../../dev-itpro/perf-test/concepts-commands.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Oprettere i biblioteket til godkendelsestest
+              href: ../../dev-itpro/perf-test/concepts-creators.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Forespørgsler i biblioteket til godkendelsestest
+              href: ../../dev-itpro/perf-test/concepts-queries.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Specifikationsklasser
+              href: ../../dev-itpro/perf-test/concepts-specifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Guide til oprettelse af kode i bibliotek til godkendelsestest
+              href: ../../dev-itpro/perf-test/code-generation-wizard.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Bedste praksis for bibliotek til godkendelsestest
+              href: ../../dev-itpro/perf-test/atl-best-practices.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ofte stillede spørgsmål
+              href: ../../dev-itpro/perf-test/atl-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Gyldig fra
+      href: ../../dev-itpro/dev-tools/date-effectivity.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ISV-licensering
+      href: ../../dev-itpro/dev-tools/isv-licensing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ISV-licensering lokalt
+      href: ../../dev-itpro/dev-tools/isv-licensing-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Generel forordning om databeskyttelse (GDPR)
+  items:
+    - name: Oversigt over Generel forordning om databeskyttelse (GDPR)
+      href: ../../dev-itpro/gdpr/gdpr-guide.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Reagere på anmodninger om GDPR-data
+      items:
+        - name: Ressourcer til reaktion på anmodninger om GDPR-data
+          href: ../../dev-itpro/gdpr/gdpr-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Klassifikationer af aktiver
+          href: ../../dev-itpro/gdpr/gdpr-asset-classification-values.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Rapport over personsøgning
+          href: ../../dev-itpro/gdpr/gdpr-person-search-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Udvide rapporten over personsøgning
+          href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Administrere adgang til følsomme data
+          href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Besvare anmodninger om personlige data ved hjælp af Talent
+          href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Besvare anmodninger om personlige data i AX 2012
+          href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anmodninger om GDPR-data for LCS
+          href: ../../dev-itpro/gdpr/gdpr-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Lifecycle Services
+  items:
+    - name: Ressourcer til Lifecycle Services
+      items:
+        - name: Ressourcer til Lifecycle Services
+          href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: LCS for kunder
+          href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: LCS for partnere
+          href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Nyheder
+          href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kendte problemer
+          href: ../../dev-itpro/lifecycle-services/known-issues.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Brugervejledning til Lifecycle Services
+      href: ../../dev-itpro/lifecycle-services/lcs-user-guide.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Abonnementsestimator
+      href: ../../dev-itpro/lifecycle-services/subscription-estimator.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Konfigurere sikkerhed
+      href: ../../dev-itpro/lifecycle-services/configure-lcs-security.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Problemsøgning
+      href: ../../dev-itpro/lifecycle-services/issue-search-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Konfigurationsstyring
+      items:
+        - name: Oversigt over konfigurationsstyring
+          href: ../../dev-itpro/lifecycle-services/configuration-manager-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opsætning af konfigurationsstyring
+          href: ../../dev-itpro/lifecycle-services/set-up-configuration-manager-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Konfigurere tjenesten for opgradering af kode
+      href: ../../dev-itpro/lifecycle-services/configure-execute-code-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Oprette eller opdatere metoder
+      href: ../../dev-itpro/lifecycle-services/create-methodology.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forretningsmodeldesigner
+      href: ../../dev-itpro/lifecycle-services/bpm-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forretningsmodeldesigner for forretningsprocesbiblioteker
+      href: ../../dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 'Oprette, redigere og gennemse biblioteker for forretningsmodeldesigner'
+      href: ../../dev-itpro/lifecycle-services/creating-editing-browsing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Udføre opgaver i forretningsmodeldesigner
+      href: ../../dev-itpro/lifecycle-services/complete-tasks-bpm.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Arbejde med aktivitetsdiagrammer i BPM-biblioteker
+      href: ../../dev-itpro/lifecycle-services/using-activity-diagrams.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Synkronisere BPM-biblioteker med Azure DevOps
+      href: ../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Oprette biblioteker for brugergodkendelsestest ved hjælp af opgaveguider og BPM
+      href: ../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Rutediagrammer i forretningsmodeldesigner
+      href: ../../dev-itpro/lifecycle-services/flowcharts-business-process-modeler.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Overføre tilpassede forretningsprocesser til forretningsmodeldesigner
+      href: ../../dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Overvågning og diagnosticering
+      href: ../../dev-itpro/lifecycle-services/monitoring-diagnostics.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Genstarte miljøtjenester
+      href: ../../dev-itpro/lifecycle-services/restart-environment-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Rapportere en produktionsafbrydelse
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Registrere brugerpålogninger
+      href: ../../dev-itpro/lifecycle-services/user-logins.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Aktivbibliotek
+      href: ../../dev-itpro/lifecycle-services/asset-library.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Fejlfinding af ydeevne ved hjælp af værktøjer i LCS
+      href: ../../dev-itpro/lifecycle-services/performancetroubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Kogebog for forespørgsel
+      href: ../../dev-itpro/lifecycle-services/querycookbook.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Microsoft Dynamics 365 Translation Service
+      items:
+        - name: Oversigt over Dynamics 365 Translation Service
+          href: ../../dev-itpro/lifecycle-services/translation-service-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oversætte brugergrænsefladefiler
+          href: ../../dev-itpro/lifecycle-services/use-translation-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oversætte dokumentationsfiler
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-ua.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Filer til oversættelseshukommelse
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-tm.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Mobilplatform
+  items:
+    - name: Ressourcer til mobilplatform
+      href: ../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Introduktion
+      items:
+        - name: Introduktion til mobilplatformen
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-getting-started.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overvejelser om arkitektur og design
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Hændelser i forretningsregel
+          href: ../../dev-itpro/mobile-apps/platform/business-logic-events-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Retningslinjer for sidedesign
+          href: ../../dev-itpro/mobile-apps/platform/page-design-guidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Retningslinjer for handlingsdesign
+          href: ../../dev-itpro/mobile-apps/platform/action-design-guidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Krav til formulardesign
+          href: ../../dev-itpro/mobile-apps/platform/form-design-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Almindelige opgaver
+      items:
+        - name: Konfigurere arbejdsområder ved hjælp af klassen SysAppWorkspace
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Oprette felter på mobilapps sider, der kan klikkes på'
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Vise tællinger i felter
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/display-count-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Hjælpe med at beskytte arbejdsområder til mobile enheder
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Finde arbejdsområder til mobile enheder
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Gøre felter obligatoriske ved hjælp af arbejdsområdeklasser
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Reference til udvikling på serversiden
+      items:
+        - name: Udvikling på serversiden (arbejdsområde X++ API'er)
+          href: ../../dev-itpro/mobile-apps/platform/mobile-workspace-server-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Reference til udvikling på klientsiden
+      items:
+        - name: Design-API'er på klientsiden
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Klient-API'er
+          items:
+            - name: Startside for klient-API'er
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/client-apis-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageState-fasttekst
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Program
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Udskyd
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/defer.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Hændelse
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Kontrol
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Containermodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Felt
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Filoverfører
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Gruppe
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Hyperlink
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Billede
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Input
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Liste
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Opslag
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Multiopslag
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Side
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Pagelink
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Del
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Tjenester
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Modulet Værdi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Programtype
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ApplicationMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen AsyncService
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen CacheService
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen CompleteEventArgs
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ContainerControl
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ContainerControlDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ContainerControlMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ControlMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen DataService
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Deferred<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Design
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen EventHook<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Field
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen FieldDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen FieldMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen FileUploader
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen FileUploaderDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen FileUploaderMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen GenericValue
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen getDataSource
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Group
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen GroupDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen GroupMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen HyperLink
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen HyperLinkDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen HyperLinkMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Image
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ImageDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ImageMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen InputControl
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen InputControlDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen InputControlMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen List
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ListDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ListMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Lookup
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen LookupDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen LookupMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen MetadataService
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen MultiLookup
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen MultiLookupDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen MultiLookupMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen NavigationArgs
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen NumberSequenceConfig
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Page
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageData
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageLink
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageLinkDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageLinkMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageOptions
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageSubmitArgs
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PageTarget
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Part
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PartDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen PartMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Row
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen Value
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ValueDesign
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Typen ValueMetadata
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Regression Suite Automation Tool
+  items:
+    - name: Oversigt over Regression Suite Automation Tool
+      href: ../../dev-itpro/perf-test/rsat/rsat-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Installation og konfiguration
+      href: ../../dev-itpro/perf-test/rsat/rsat-install-configure.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Dataagnostisk testning ved hjælp af Regression Suite Automation Tool
+      href: ../../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Køre testcases
+      href: ../../dev-itpro/perf-test/rsat/rsat-run.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Validere forventede værdier
+      href: ../../dev-itpro/perf-test/rsat/rsat-validate-expected.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sammenkæde testcases
+      href: ../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Afledte testcases
+      href: ../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Bruge Regression Suite Automation Tool
+      href: ../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Bedste fremgangsmåder
+      href: ../../dev-itpro/perf-test/rsat/rsat-best-practices.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Fejlfinding
+      href: ../../dev-itpro/perf-test/rsat/rsat-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Frigive løsninger ved hjælp af Lifecycle Services
+  items:
+    - name: Udvikle og frigive
+      href: ../../dev-itpro/lcs-solutions/lcs-solutions-app-source.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Stadie og udgive
+      href: ../../dev-itpro/lcs-solutions/marketing-content-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Tilføje metoder
+      href: ../../dev-itpro/lcs-solutions/methodologies-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opsætte forretningsmodeldesigner-biblioteker
+      href: ../../dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Overflytte kode
+      href: ../../dev-itpro/lcs-solutions/code-migration-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Validere programmer
+      href: ../../dev-itpro/lcs-solutions/app-validation-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Behandle og forbruge datapakker
+      href: ../../dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sikkerhedskopiere løsningsdatabaser
+      href: ../../dev-itpro/lcs-solutions/database-backup-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Lokalisering og lovpligtige funktioner
+      items:
+        - name: Globaliseringsressourcer
+          href: ../../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Klassifikation af lokaliseringsfunktioner
+          href: ../../dev-itpro/lcs-solutions/classify-localization-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anvende lande/-områdekontekst
+          href: ../../dev-itpro/lcs-solutions/apply-country-context.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Lovpligtige certificeringsoplysninger i funktionstitler
+          href: ../../dev-itpro/lcs-solutions/regulatory-certifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Lovmæssige opdateringer
+          href: ../../dev-itpro/lcs-solutions/regulatory-watch-communication.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Separation af lokaliseringsmodeller
+          href: ../../dev-itpro/lcs-solutions/separate-localization-models.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Sende lovpligtige påmindelser
+          href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Support
+  items:
+    - name: Få support til Finance and Operations og Lifecycle Services
+      href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Supportoversigt for Dynamics 365
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: Få support til Finance and Operations drevet af 21Vianet i Kina
+      href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Log en premier-supportbillet
+      href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sende anmodninger til Dynamics Service Engineering-teamet
+      href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Konfigurere teknisk support til Finance and Operations
+      href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Ofte stillede spørgsmål om vindue for planlagt vedligeholdelse
+      href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Skyoperationer og -vedligeholdelse
+      href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Administrere supportoplevelser for Finance and Operations
+      href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Systemadministration
+  items:
+    - name: Startside for systemadministration
+      href: ../../dev-itpro/sysadmin/system-administration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Tilføje links til dine juridiske begreber og erklæring om beskyttelse af personlige oplysninger
+      href: ../../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Rapport over licenskoder og konfigurationsnøgler
+      href: ../../dev-itpro/sysadmin/license-codes-configuration-keys-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Datadeling på tværs af firma
+      href: ../../dev-itpro/sysadmin/cross-company-data-sharing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Vedligeholdelsestilstand
+      href: ../../dev-itpro/sysadmin/maintenance-mode.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Forudkonfigurerede systemkonti
+      href: ../../dev-itpro/sysadmin/pre-configured-system-accounts.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Eksportere B2B-brugere til Azure AD
+      href: ../../dev-itpro/sysadmin/implement-b2b.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sikkerhed
+      items:
+        - name: Rollebaseret sikkerhed
+          href: ../../dev-itpro/sysadmin/role-based-security.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Sikkerhedsarkitektur
+          href: ../../dev-itpro/sysadmin/security-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Angive timeout for sessionsinaktivitet
+          href: ../../dev-itpro/sysadmin/session-idle-timeout.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Brugsklare sikkerhedsrapporter
+          href: ../../dev-itpro/sysadmin/security-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette nye brugere
+          href: ../../dev-itpro/sysadmin/tasks/create-new-users.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Masseimportere brugere
+          href: ../../dev-itpro/sysadmin/tasks/import-bulk-users.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurere opdeling af opgaver
+          href: ../../dev-itpro/sysadmin/tasks/set-up-segregation-duties.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Identificere og løse konflikter i opdeling af opgaver
+          href: ../../dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tildele brugere til sikkerhedsroller
+          href: ../../dev-itpro/sysadmin/tasks/assign-users-security-roles.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Batchbehandling
+      items:
+        - name: Oversigt over batchbehandling
+          href: ../../dev-itpro/sysadmin/batch-processing-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Batchafvikling og batchservere
+          href: ../../dev-itpro/sysadmin/batch-server-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette batchjob
+          href: ../../dev-itpro/sysadmin/tasks/create-batch-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kopiere et batchjob
+          href: ../../dev-itpro/sysadmin/copy-batch-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Aktive batchperioder
+          href: ../../dev-itpro/sysadmin/activeperiod.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Sikkerhedsrolle for batchstyring
+          href: ../../dev-itpro/sysadmin/runby.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Batchjob til håndtering af defragmentering af SQL-indeks
+          href: ../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurere påmindelser om batch
+          href: ../../dev-itpro/sysadmin/alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forbedrede batchformularer
+          href: ../../dev-itpro/sysadmin/enhanced-forms.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Rydde batchhistorik
+          href: ../../dev-itpro/sysadmin/batch-history-cleanup.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Afbryde et igangværende batchjob
+          href: ../../dev-itpro/sysadmin/batch-abort.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Optimeringsrådgiver
+      items:
+        - name: Oversigt over optimeringsrådgiver
+          href: ../../dev-itpro/sysadmin/optimization-advisor-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette regler for optimeringsrådgiver
+          href: ../../dev-itpro/sysadmin/create-rules-optimization-advisor.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Rapportere en produktionsafbrydelse
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: 'Opgraderinger, opdateringer og hotfixes'
+  items:
+    - name: 'Ressourcer til opgraderinger, opdateringer og hotfixes'
+      href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opgradere fra AX 2012
+      items:
+        - name: Opgradere fra AX 2012 til Finance and Operations
+          href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Planlægning med opgraderingsanalyseværktøjet
+          href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Anslå behov ved hjælp af kodeopgraderingstjeneste
+          href: ../../dev-itpro/migration-upgrade/analyze-code-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Installere et demonstrationsmiljø til analyse
+          href: ../../dev-itpro/migration-upgrade/analysis-sandbox.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Dataopgradering i udviklingsmiljøer
+          href: ../../dev-itpro/migration-upgrade/data-upgrade-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Kontrolliste før opgradering af data
+          href: ../../dev-itpro/migration-upgrade/prepare-data-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Dataopgradering i sandkassemiljøer
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012-opgradering – Efterkalkulationstest
+          href: ../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Opgaver efter opgradering
+          href: ../../dev-itpro/migration-upgrade/app-validation-process.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Beståelser af funktionstest
+          href: ../../dev-itpro/migration-upgrade/upgrade-functional-validation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Forberedelse af udgivelse
+          href: ../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradering til AX 2012 – Udgivelse
+          href: ../../dev-itpro/migration-upgrade/2012-upgrade-cutover.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Ændringer, der påvirker opgradering fra AX 2012'
+          items:
+            - name: Gøre afgrænsningstegn for kontoplaner entydigt
+              href: ../../dev-itpro/migration-upgrade/chart-accounts-delimiter-unique.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Opgradere enkeltbilagskladder og værdireguleringer af valuta
+              href: ../../dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Datamodel for projektressourceplanlægning
+              href: ../../dev-itpro/migration-upgrade/data-model-changes-resource-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Ændringer af undersystem for arbejdsgang
+              href: ../../dev-itpro/migration-upgrade/workflow-subsystem.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'Aggregere modeller, der bruges i stedet for kuber til analyser'
+              href: ../../dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Overflytte opgraderede salgskuber til enhedslageret
+              href: ../../dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Opgradere budgetplanlægning
+              href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Overflytte data fra AX 2009
+      items:
+        - name: Overflytte data fra AX 2009 til Finance and Operations
+          href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytning af AX 2009 – installere dataoverflytningsværktøjet
+          href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytning af AX 2009 – generere tilknytninger
+          href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytning af AX 2009 - oprette skabeloner
+          href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytning af AX 2009 - oprette overflytningsgrupper
+          href: ../../dev-itpro/migration-upgrade/create-definition.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytning af AX 2009 - pakker til eksport
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-export-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytning af AX 2009 – pakker til import
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-import-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Kodeoverflytning og -opgradering
+      items:
+        - name: Startside for kodeoverflytning og -opgradering
+          href: ../../dev-itpro/migration-upgrade/code-migration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Forberede overflytning af kode
+          href: ../../dev-itpro/migration-upgrade/prepare-migration.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Konfigurere Azure DevOps-tilknytningen
+          href: ../../dev-itpro/migration-upgrade/configure-vso-solution.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Modelopdeling
+          href: ../../dev-itpro/dev-tools/model-split.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Løse afhængigheder mellem modeller ved hjælp af delegerede
+          href: ../../dev-itpro/migration-upgrade/delegates-migration.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opgradere til en aktuel opdatering (sky)
+      items:
+        - name: Proces for flytning til den seneste opdatering
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Stier til One Version
+          items:
+            - name: Selvbetjeningsopgradering til den seneste version
+              href: ../../dev-itpro/migration-upgrade/self-service-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Genopbygge og opdatere til den seneste version
+              href: ../../dev-itpro/migration-upgrade/appupdate-80-81.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Livscykluspolitik for software og skyversioner
+          href: ../../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anvende den seneste platformsopdatering til miljøer
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opgradere data i udviklings- eller demomiljøer
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-to-latest-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opdatere udviklingsværktøjer
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Planlægge og forberede kompilering af koden i forhold til den seneste opdatering
+          href: ../../dev-itpro/migration-upgrade/compile-considerations.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opgradere til en aktuel opdatering (i det lokale miljø)
+      items:
+        - name: Anvende opdateringer til lokale installationer
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Geninstallere en lokal installation
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Lokal opgradering til lokal 7.x til 8.1
+          href: ../../dev-itpro/migration-upgrade/on-prem-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Hotfixes
+      items:
+        - name: Hente opdateringer fra Lifecycle Services
+          href: ../../dev-itpro/migration-upgrade/download-hotfix-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Anvende opdateringer i skybaserede miljøer
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Installere metadatahotfixes i udviklingsmiljøer
+          href: ../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Foretage programrettelse af Reporting Services i miljøer med én boks
+          href: ../../dev-itpro/migration-upgrade/patch-reporting-service-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opdatere Visual Studio-udviklingsværktøjer
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Afskrivninger
+      items:
+        - name: Fjernede eller udfasede funktioner
+          href: ../../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Udfasning af metoder og metadataelementer
+          href: ../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Udfasede API'er
+          href: ../../dev-itpro/migration-upgrade/deprecated-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Udvikling af brugergrænseflade
+  items:
+    - name: Startside for udvikling af brugergrænseflade
+      href: ../../dev-itpro/user-interface/user-interface-development-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Selvstudier
+      items:
+        - name: Oprette formularen Gebyrtyper for leje
+          href: ../../dev-itpro/user-interface/build-rental-charge-type-form.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette formularen Debitor
+          href: ../../dev-itpro/user-interface/build-customer-form.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opbygge navigation
+          href: ../../dev-itpro/user-interface/build-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Opbygge arbejdsområder
+          href: ../../dev-itpro/user-interface/build-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Formularer
+      items:
+        - name: Begreber i navigation
+          href: ../../dev-itpro/user-interface/page-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Sidelayout i webklienten
+          href: ../../dev-itpro/user-interface/page-layout.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Dynamics-symbolskrifttypen
+          href: ../../dev-itpro/user-interface/symbol-font.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Gemte visninger
+          href: ../../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Opbygge formularer, der fuldt ud anvender gemte visninger'
+          href: ../../dev-itpro/user-interface/understanding-saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Testformularer, der bruger brugerdefinerede mønstre'
+          href: ../../dev-itpro/user-interface/testing-forms-custom-patterns.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Oprette delbare, sikrede URL-adresser (dybe links)'
+          href: ../../dev-itpro/user-interface/create-deep-links.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Tilgængelighed i formularer, produkter og kontrolelementer'
+          href: ../../dev-itpro/user-interface/enable-accessibility.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tilpasse feltbeskrivelser
+          href: ../../dev-itpro/user-interface/customize-field-help.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Kontrolelementer
+      items:
+        - name: Kontrolelementer for handling
+          href: ../../dev-itpro/user-interface/action-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Inputkontrolelementer og kolonnestørrelse for gitter
+          href: ../../dev-itpro/user-interface/sizing-input-controls-grid-columns.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Understøttelse af afkrydsningsfelter i trækontroller
+          href: ../../dev-itpro/user-interface/check-box-tree-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Filtreringsindstillinger
+          href: ../../dev-itpro/user-interface/filtering.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kontrolelement for PowerApps-vært
+          href: ../../dev-itpro/user-interface/powerapps-host-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Vinduesstyring
+      items:
+        - name: Overflytte genvejsmenukode
+          href: ../../dev-itpro/migration-upgrade/code-migration-context-menus.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Overflytte logik for mus-dobbeltklik
+          href: ../../dev-itpro/migration-upgrade/code-migration-double-click.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kontekstafhængige dataindtastning for opslag
+          href: ../../dev-itpro/user-interface/contextual-data-entry-lookups.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: HierarchyViewer-kontrolelement
+          href: ../../dev-itpro/user-interface/hierarchy-viewer-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kontrolelementer for opslag
+          href: ../../dev-itpro/user-interface/lookups-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Kontrolelement til filoverførsel
+          href: ../../dev-itpro/user-interface/file-upload-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Systemdefinerede knapper
+          href: ../../dev-itpro/user-interface/system-defined-buttons.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Billeder på en side eller i et gitter
+          href: ../../dev-itpro/user-interface/images-form-grid.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Skrifttype og baggrundsfarver for input-, tabel- og gitterkontrolelementer'
+          href: ../../dev-itpro/user-interface/specify-color-font-background-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Understøttelse af højre mod venstre-sprog og torettet tekst
+          href: ../../dev-itpro/user-interface/bidirectional-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette ikoner for felter i arbejdsområdet
+          href: ../../dev-itpro/user-interface/create-icons-workspace-tiles.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Kontrolelementer, der kan udvides, for offentlige JavaScript-API''er'
+          href: ../../dev-itpro/user-interface/public-javascript-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Tjekliste for kontrolelement
+          href: ../../dev-itpro/user-interface/control-checklist.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Beskeder
+      items:
+        - name: Billedforklaringer til funktioner
+          href: ../../dev-itpro/user-interface/feature-callouts.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Skyder- og MessageBox-dialogbokse
+          href: ../../dev-itpro/user-interface/slider-messagebox.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'API for meddelelsescenter, meddelelseslinje og meddelelsesdetaljer'
+          href: ../../dev-itpro/user-interface/messaging-api-center-bar-details.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Ofte stillede spørgsmål for meddelelsescenter, meddelelseslinje og meddelelsesdetaljer'
+          href: ../../dev-itpro/user-interface/messaging-user.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Retningslinjer for formularmønster
+      items:
+        - name: Formularmønstre for overførte formularer
+          href: ../../dev-itpro/user-interface/select-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Formulartypografier og -mønstre
+          href: ../../dev-itpro/user-interface/form-styles-patterns.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Visual Studio-tilføjelsesprogrammer, der understøtter formularmønstre'
+          href: ../../dev-itpro/user-interface/form-pattern-add-ins.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Formularmønstre
+      items:
+        - name: Generelle retningslinjer for formularer
+          href: ../../dev-itpro/user-interface/general-form-guidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for Details Master-formular
+          href: ../../dev-itpro/user-interface/details-master-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for Details Transaction-formular
+          href: ../../dev-itpro/user-interface/details-transaction-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønstre for Form Part Section List-formular
+          href: ../../dev-itpro/user-interface/section-list-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for Listeside-formular
+          href: ../../dev-itpro/user-interface/list-page-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for formular med simple detaljer
+          href: ../../dev-itpro/user-interface/simple-details-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for formular med simpel liste og detaljer
+          href: ../../dev-itpro/user-interface/simple-list-details-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for formular med simpel liste
+          href: ../../dev-itpro/user-interface/simple-list-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for indholdsfortegnelsesform
+          href: ../../dev-itpro/user-interface/table-of-contents-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for dobbelt opgave-formular
+          href: ../../dev-itpro/user-interface/task-double-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for enkelt opgave-formular
+          href: ../../dev-itpro/user-interface/task-single-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for Guide-formular
+          href: ../../dev-itpro/user-interface/wizard-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for arbejdsområde-formular
+          href: ../../dev-itpro/user-interface/workspace-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sekundære formular-mønstre
+      items:
+        - name: Mønster for avanceret valg-formular
+          href: ../../dev-itpro/user-interface/advanced-selection-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Mønster for dialog-formular
+          href: ../../dev-itpro/user-interface/dialog-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Formularmønster for dialogboksen Fjern
+          href: ../../dev-itpro/user-interface/drop-dialog-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Formularmønster for Opslag
+          href: ../../dev-itpro/user-interface/lookup-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Formularmønstre for Faktaboks
+          href: ../../dev-itpro/user-interface/factbox-form-patterns.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Undermønstre
+      items:
+        - name: Undermønster for brugerdefineret filtergruppe
+          href: ../../dev-itpro/user-interface/custom-filter-group-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for dimensionspostkontrolelement
+          href: ../../dev-itpro/financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for Dimension Expression Builder
+          href: ../../dev-itpro/financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for felter og feltgrupper
+          href: ../../dev-itpro/user-interface/fields-field-groups-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønstre for filtre og værktøjslinje
+          href: ../../dev-itpro/user-interface/filters-toolbar-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Fill Text-undermønster
+          href: ../../dev-itpro/user-interface/fill-text-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for gruppen Felter og knapper
+          href: ../../dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for billedeksempel
+          href: ../../dev-itpro/user-interface/image-preview-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for listepanel
+          href: ../../dev-itpro/user-interface/list-panel-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Indlejret mønster for simpel liste og detaljer
+          href: ../../dev-itpro/user-interface/nested-simple-list-details-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Formularmønster for sektionsdiagram
+          href: ../../dev-itpro/user-interface/section-chart-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for sektions-Power BI
+          href: ../../dev-itpro/user-interface/section-powerbi-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for sektionsrelaterede links
+          href: ../../dev-itpro/user-interface/section-related-links-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for stablet sektionsdiagram
+          href: ../../dev-itpro/user-interface/section-stacked-chart-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for faneopdelt liste for sektion
+          href: ../../dev-itpro/user-interface/section-tabbed-list-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for sektionsfelter
+          href: ../../dev-itpro/user-interface/section-tiles-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for tabelfelter
+          href: ../../dev-itpro/user-interface/tabular-fields-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for værktøjslinje og felter
+          href: ../../dev-itpro/user-interface/toolbar-fields-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for værktøjslinje og liste
+          href: ../../dev-itpro/user-interface/toolbar-list-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Undermønster for filtergruppe for arbejdsområdeside
+          href: ../../dev-itpro/user-interface/workspace-filter-group-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Udvidelse af kontrolelement
+      items:
+        - name: Opret kontrolelementer med mulighed for udvidelse
+          href: ../../dev-itpro/user-interface/build-extensible-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Tastaturgenveje til kontrolelementer, der kan udvides'
+          href: ../../dev-itpro/user-interface/keyboard-shortcuts-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Programmingsreference for et kontrolelement, der kan udvides'
+          href: ../../dev-itpro/user-interface/extensible-control-programming-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Udvidelse af kontrolelement
+          href: ../../dev-itpro/user-interface/control-extensibility.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Oprette etiketter, der kan oversættes'
+          href: ../../dev-itpro/user-interface/create-localizable-labels-client.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Retningslinjer for layout af kontrolelementer, der kan udvides'
+          href: ../../dev-itpro/user-interface/extensible-controls-layout.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'Kontrollere den tekst, som Arbejdsrutineoptager genererer for en kontrol'
+          href: ../../dev-itpro/user-interface/task-recorder-control-text.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Opbygge arbejdsområder
+      items:
+        - name: Opbygge operationelle arbejdsområder
+          href: ../../dev-itpro/user-interface/build-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Cachelagring af felt og liste for arbejdsområder
+          href: ../../dev-itpro/user-interface/tile-list-caching-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Arbejdsrutineoptager
+      items:
+        - name: Ressourcer til Arbejdsrutineoptager
+          href: ../../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Hurtig reference til Arbejdsrutineoptager
+          href: ../../dev-itpro/user-interface/task-recorder-quick-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Oprette dokumentation eller kursusmateriale ved hjælp af opgaveregistreringer
+          href: ../../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
