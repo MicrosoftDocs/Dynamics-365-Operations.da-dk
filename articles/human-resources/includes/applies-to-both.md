@@ -1,0 +1,2 @@
+> [!NOTE]
+> <span data-ttu-id="e3a24-101">Denne artikel gælder for både arbejdsområdet Dynamics 365 Human Resources og **Personale** i Dynamics 365 Finance.</span><span class="sxs-lookup"><span data-stu-id="e3a24-101">This article applies to both Dynamics 365 Human Resources and the **Human resources** workspace in Dynamics 365 Finance.</span></span>

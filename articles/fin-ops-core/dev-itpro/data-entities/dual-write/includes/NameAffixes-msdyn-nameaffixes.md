@@ -1,0 +1,9 @@
+## <a name="name-affixes-to-msdyn_nameaffixes"></a><span data-ttu-id="082e7-101">Foranstillede navne til msdyn_nameaffixes</span><span class="sxs-lookup"><span data-stu-id="082e7-101">Name affixes to msdyn_nameaffixes</span></span>
+
+<span data-ttu-id="082e7-102">Denne skabelon synkroniserer data mellem Finance and Operations-apps og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="082e7-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="082e7-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="082e7-103">Finance and Operations field</span></span> | <span data-ttu-id="082e7-104">Tilknytningstype</span><span class="sxs-lookup"><span data-stu-id="082e7-104">Map type</span></span> | <span data-ttu-id="082e7-105">Andet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="082e7-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="082e7-106">Standardværdi</span><span class="sxs-lookup"><span data-stu-id="082e7-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="082e7-107">AFFIX</span><span class="sxs-lookup"><span data-stu-id="082e7-107">AFFIX</span></span> | = | <span data-ttu-id="082e7-108">msdyn_affix</span><span class="sxs-lookup"><span data-stu-id="082e7-108">msdyn_affix</span></span> | 
+<span data-ttu-id="082e7-109">TYPE</span><span class="sxs-lookup"><span data-stu-id="082e7-109">TYPE</span></span> | >< | <span data-ttu-id="082e7-110">msdyn_affixtype</span><span class="sxs-lookup"><span data-stu-id="082e7-110">msdyn_affixtype</span></span> | 
+<span data-ttu-id="082e7-111">BESKRIVELSE</span><span class="sxs-lookup"><span data-stu-id="082e7-111">DESCRIPTION</span></span> | = | <span data-ttu-id="082e7-112">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="082e7-112">msdyn_description</span></span> | 
