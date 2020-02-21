@@ -1,0 +1,8 @@
+## <a name="payment-days-cds-to-msdyn_paymentdays"></a><span data-ttu-id="6218c-101">Betalingsdage CDS til msdyn_paymentdays</span><span class="sxs-lookup"><span data-stu-id="6218c-101">Payment days CDS to msdyn_paymentdays</span></span>
+
+<span data-ttu-id="6218c-102">Denne skabelon synkroniserer data mellem Finance and Operations-apps og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="6218c-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="6218c-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="6218c-103">Finance and Operations field</span></span> | <span data-ttu-id="6218c-104">Tilknytningstype</span><span class="sxs-lookup"><span data-stu-id="6218c-104">Map type</span></span> | <span data-ttu-id="6218c-105">Andet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="6218c-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="6218c-106">Standardværdi</span><span class="sxs-lookup"><span data-stu-id="6218c-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="6218c-107">NAVN</span><span class="sxs-lookup"><span data-stu-id="6218c-107">NAME</span></span> | = | <span data-ttu-id="6218c-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="6218c-108">msdyn_name</span></span> | 
+<span data-ttu-id="6218c-109">BESKRIVELSE</span><span class="sxs-lookup"><span data-stu-id="6218c-109">DESCRIPTION</span></span> | = | <span data-ttu-id="6218c-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="6218c-110">msdyn_description</span></span> | 

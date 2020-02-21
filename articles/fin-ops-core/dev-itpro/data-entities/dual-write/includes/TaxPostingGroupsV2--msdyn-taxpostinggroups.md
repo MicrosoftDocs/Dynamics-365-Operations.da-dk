@@ -1,0 +1,8 @@
+## <a name="sales-tax-ledger-posting-groups-v2-to-msdyn_taxpostinggroups"></a><span data-ttu-id="d7d78-101">Momsfinanskonteringsgrupper V2 til msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="d7d78-101">Sales tax ledger posting groups V2 to msdyn_taxpostinggroups</span></span>
+
+<span data-ttu-id="d7d78-102">Denne skabelon synkroniserer data mellem Finance and Operations-apps og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="d7d78-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="d7d78-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="d7d78-103">Finance and Operations field</span></span> | <span data-ttu-id="d7d78-104">Tilknytningstype</span><span class="sxs-lookup"><span data-stu-id="d7d78-104">Map type</span></span> | <span data-ttu-id="d7d78-105">Andet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="d7d78-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="d7d78-106">Standardværdi</span><span class="sxs-lookup"><span data-stu-id="d7d78-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="d7d78-107">TAXPOSTINGGROUPCODE</span><span class="sxs-lookup"><span data-stu-id="d7d78-107">TAXPOSTINGGROUPCODE</span></span> | = | <span data-ttu-id="d7d78-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="d7d78-108">msdyn_name</span></span> | 
+<span data-ttu-id="d7d78-109">BESKRIVELSE</span><span class="sxs-lookup"><span data-stu-id="d7d78-109">DESCRIPTION</span></span> | = | <span data-ttu-id="d7d78-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="d7d78-110">msdyn_description</span></span> | 
