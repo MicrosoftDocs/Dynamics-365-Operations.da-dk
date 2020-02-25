@@ -3,7 +3,7 @@ title: Oversigt over startsæt
 description: Dette emne indeholder en oversigt over startsættet til Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785254"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025896"
 ---
 # <a name="starter-kit-overview"></a>Oversigt over startsæt
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over startsættet til Microsoft Dynamics 365 Commerce.
@@ -43,7 +43,7 @@ Du kan anvende temaer på modulerne i startsættet for at ændre deres udseende 
 Følgende typer moduler findes i startsættet:
 
 - **Containermodul** – Et containermodul er et simpelt modul, der fungerer som vært for andre moduler. Det styrer layoutet for de moduler, der ligger i det.
-- **Marketingmoduler** – Marketingmoduler omfatter hero, funktion, indholdsplacering, indholdsrig blok, videoafspiller og karruselmoduler. Alle disse moduler kan bruges til at vise indhold. De kan placeres på en hvilken som helst side og styres af data fra CMS-indholdsstyringssystemet (Content Management System).
+- **Marketingmoduler** – Marketingmoduler omfatter indholdsblok, tekstblok, videoafspiller og karruselmoduler. Alle disse moduler kan bruges til at vise indhold. De kan placeres på en hvilken som helst side og styres af data fra CMS-indholdsstyringssystemet (Content Management System).
 - **Sidehoved- og sidefodsmoduler** – Sidehoved- og sidefodsmoduler vises i sidehovedet og sidefoden på alle webstedssider. Disse moduler kan konfigureres efter behov ved hjælp af egenskaber.
 - **Søgemoduler** – Produkter kan opdages ved hjælp af søgemodulet i sidehovedet. Søgeresultaterne vises på siden med søgeresultater. Der kan også registreres produkter på kategorisider, som er dedikerede sider til hver kategori, der understøttes i kanalens navigationshierarki. Desuden kan afgrænsningsmoduler bruges til at filtrere resultater yderligere i søgeresultater og på kategorisider.
 - **Sidemoduler for produktdetaljer** – Sider med produktdetaljer bruger flere moduler til at vise produktoplysninger. I købefeltmodulet kan kunder få vist produkter og føje dem til indkøbsvognen. Andre moduler som f.eks. modulet til tekniske specifikationer viser produktoplysningerne. Modulet til vurderinger og anmeldelser kan bruges til at se og angive vurderinger.

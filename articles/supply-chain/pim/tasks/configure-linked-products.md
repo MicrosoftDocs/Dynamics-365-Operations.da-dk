@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3ef8314c3b6122627de0a730e912c7ebcd99be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec7a2c5a2b2b7ef22fd3dcf7f7d3859e8e07ea5e
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568644"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003944"
 ---
 # <a name="configure-linked-products"></a>Konfigurere tilknyttede produkter
 
@@ -30,7 +30,7 @@ Denne procedure gennemgår konfiguration af tilknyttede produkter. Denne procedu
 
 1. Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.
 2. Find og vælg den ønskede post på listen.
-3. Klik på Detail i handlingsruden.
+3. Klik på Retail og Commerce i handlingsruden.
 4. Klik på Tilknyttede produkter.
 5. Klik på Rediger.
 6. Klik på rullelisten i feltet Tilknyttet produkt for at åbne opslaget.

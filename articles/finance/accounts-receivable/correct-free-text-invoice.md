@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76cf1f24a31f246a41601908ebba308551925d90
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bf6e7a070d7c151c6ff5d868f4f916359b82683
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177027"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030986"
 ---
 # <a name="correct-a-free-text-invoice"></a>Rette en fritekstfaktura
 
@@ -47,7 +47,7 @@ Du kan identificere annullerede og rettede fakturaer på to måder:
 -   Overskriften for fritekstfakturaen viser en status for **Annulleringsfaktura '\[fakturanummer\]'** eller **Rettet faktura '\[fakturanummer\]'**.
 
 > [!NOTE]
-> Denne funktion er kun tilgængelig, hvis konfigurationsnøglen **Fri tekst til rettelse af faktura** er valgt. Du kan finde flere oplysninger om, hvordan du aktiverer konfigurationsnøgler, i afsnittet Aktivere (eller deaktivere) konfigurationsnøgler i emnet [Vedligeholdelsestilstand](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode). 
+> Denne funktion er kun tilgængelig, hvis konfigurationsnøglen **Fri tekst til rettelse af faktura** er valgt. Du kan finde flere oplysninger om, hvordan du aktiverer konfigurationsnøgler, i afsnittet Aktivere (eller deaktivere) konfigurationsnøgler i emnet [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md). 
 
 
 

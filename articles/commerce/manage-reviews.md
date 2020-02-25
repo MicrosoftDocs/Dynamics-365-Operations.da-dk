@@ -3,7 +3,7 @@ title: Administrere vurderinger og anmeldelser
 description: I dette emne beskrives, hvordan du kan administrere vurderinger og anmeldelser ved hjælp af Microsofts Dynamics 365 Commerce-vurderings- og anmeldelsesværktøj.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698020"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027236"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du kan administrere vurderinger og anmeldelser ved hjælp af Microsofts Dynamics 365 Commerce-vurderings- og anmeldelsesværktøj.
@@ -39,6 +38,16 @@ Dynamics 365 Commerce bruger Microsoft Azure Cognitive Services til automatisk a
 - Moderere anmeldelser ved at reagere på dem eller fjerne dem.
 - Slette en kundes anmeldelser på kundens anmodning.
 - Masseimportere vurderings- og anmeldelsesdata for alle produkter i en Microsoft Power BI-skabelon, så tendenser for vurderinger og anmeldelser kan analyseres.
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>Få adgang til ændringsfunktioner for vurderinger og anmeldelser
+
+Udfør følgende trin for at få adgang til ændringsfunktioner for vurderinger og anmeldelser i værktøjet til e-handelsadministration af websteder.
+
+1. Log på [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
+1. Åbn det projekt, der indeholder det miljø, hvor du vil initialisere e-handel.
+1. Vælg miljøet i sektionen **Miljøer**.
+1. Under **Miljøfunktioner** skal du vælge **Retail administration**.
+1. Under fanen **e-handel** skal du under **Links** vælge **Værktøj til administration af e-Commerce-websted**.
 
 ## <a name="read-a-review"></a>Læse en anmeldelse 
 

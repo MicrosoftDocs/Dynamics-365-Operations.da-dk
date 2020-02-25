@@ -3,7 +3,7 @@ title: Oversigt over startsiden
 description: Dette emne indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698274"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025965"
 ---
 # <a name="overview-of-the-home-page"></a>Oversigt over startsiden
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
@@ -45,20 +45,20 @@ Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagne
 
 - **Hero** – Normalt viser det første element øverst i hovedafsnittet et eller flere "hero"-billeder, der fremhæver nye produkter og kampagner i butikken. Hvis der er flere hero-billeder, er de placeret i et karruselmodul, så brugerne kan gennemse dem.
 
-    I følgende illustration vises et eksempel på en startside, hvor det første element i hovedsektionen er et modul, der hedder **Ny profil**.
+    I følgende illustration vises et eksempel på en startside, hvor det første element i hovedsektionen er et hero-layout af et indholdsblokmodul, der hedder "New Arrival".
 
     ![Eksempel på et hero-modul](./media/Hero.PNG)
 
-- **Funktion** – Et funktionsmodul bruges til markedsføring af produkter eller kampagner ved hjælp af en kombination af billeder og tekst. Funktionsmoduler kan bruges uafhængigt, eller de kan være placeret i et karruselmodul.
+- **Funktion** – Et funktionslayout af et indholdsblokmodul bruges til markedsføring af produkter eller kampagner ved hjælp af en kombination af billeder og tekst. Funktionslayout kan bruges uafhængigt, eller de kan være placeret i et karruselmodul.
 
-    Følgende illustration viser et eksempel på funktionsmoduler på en startside.
+    Følgende illustration viser et eksempel på et funktionslayout af et indholdsblokmodul på en startside.
 
     ![Eksempler på funktionsmoduler](./media/Feature.PNG)
 
-- **Indholdsplacering** – Et modul til indholdsplacering bruges til at fremvise flere produkter eller produktkategorier ved hjælp af en kombination af billeder og tekst i et layout med flere kolonner. På illustrationen af en startside, der vises tidligere i dette emne, bruges et indholdsplaceringsmodul til 3-kolonnelayoutet med varetyperne for **Shop Women**, **Shop Men** og **Shop Accessories**.
+- **Felt** – Et feltlayout af et indholdsblokmodul bruges til at fremvise flere produkter eller produktkategorier ved hjælp af en kombination af billeder og tekst i et layout med flere kolonner. På illustrationen af en startside, der vises tidligere i dette emne, bruges et feltlayout til gengivelsen af tre kolonner med varetyperne **Shop Women**, **Shop Men** og **Shop Accessories**.
 - **Videoafspiller** – Et videoafspillermodul kan bruges til at vise videoindhold på startsiden. Illustrationen af en hjemmeside, der vises tidligere i dette emne, indeholder et videoafspillermodul.
-- **Indholdsrig blok** – Et indholdsrigt blokmodul kan bruges til at vise tekstindhold på startsiden i et layout med en enkelt kolonne eller flere kolonner.
-- **Produktanbefalinger** – Produktanbefalingerne bruges til at vise lister som f.eks. **Nyt**, **Mest populære** og **Mest solgte** på startsiden. Disse lister viser produkter baseret på indkøbstendenser, og de kan genereres algoritmisk eller oprettes manuelt. De hjælper kunder med hurtigt at finde de mest populære produkter, så de fortsætter med at handle.
+- **Tekstblok** – Et indholdsrigt blokmodul kan bruges til at vise tekstindhold på startsiden i et layout med en enkelt kolonne eller flere kolonner.
+- **Produktanbefalinger** – Produktanbefalingerne bruges til at vise lister som f.eks. **Nyhed**, **Mest populære** og **Mest solgte** på startsiden. Disse lister viser produkter baseret på indkøbstendenser, og de kan genereres algoritmisk eller oprettes manuelt. De hjælper kunder med hurtigt at finde de mest populære produkter, så de fortsætter med at handle.
 
     Følgende illustration viser et eksempel på produktanbefalingsmoduler på en startside.
 

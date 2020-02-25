@@ -1,5 +1,5 @@
 ---
-title: Konfigurering af et Commerce-prøveversionsmiljø
+title: Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-prøveversionsmiljø, efter at det er blevet klargjort.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f19d03f3f2f5a9f6f7ba08b682277e4e3b764d10
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906133"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024700"
 ---
-# <a name="configure-a-commerce-preview-environment"></a>Konfigurering af et Commerce-prøveversionsmiljø
+# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-prøveversionsmiljø, efter at det er blevet klargjort.
@@ -142,13 +142,13 @@ Hvis du vil konfigurere valgfrie funktioner til dit Commerce-prøveversionsmilj�
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over miljø til prøveversion af Commerce](cpe-overview.md)
+[Oversigt over Dynamics 365 Commerce-prøveversionsmiljø](cpe-overview.md)
 
-[Klargøring af et Commerce-prøveversionsmiljø](provisioning-guide.md)
+[Klargøre et Dynamics 365 Commerce-prøveversionsmiljø](provisioning-guide.md)
 
-[Konfigurer valgfrie funktioner for et Commerce-prøveversionsmiljø](cpe-optional-features.md)
+[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø](cpe-optional-features.md)
 
-[Ofte stillede spørgsmål om Commerce-prøveversionsmiljø](cpe-faq.md)
+[Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -157,5 +157,3 @@ Hvis du vil konfigurere valgfrie funktioner til dit Commerce-prøveversionsmilj�
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Hjælp-ressourcer til Dynamics 365 Retail](../retail/index.md)

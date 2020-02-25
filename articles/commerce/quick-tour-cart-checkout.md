@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697836"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002929"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Oversigt over sider til indkøbsvogn og betaling ved kassen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over sider til indkøbsvogn og betaling ved kassen i Microsoft Dynamics 365 Commerce.
@@ -65,11 +65,11 @@ Hovedindholdet af betalingssiden er det sted, hvor alle ordreoplysningerne indsa
 
 ### <a name="shipping-address"></a>Leveringsadresse
 
-Der skal angives en leveringsadresse, hvis der skal leveres varer. Formatet for forsendelsesadresser for hver landestandard kan konfigureres i Dynamics 365 Retail. Hvis varerne f.eks. skal sendes til USA, skal leveringsadressen indeholde en gadeadresse, stat og postnummer. Der udføres grundlæggende validering af leveringsadresser, f.eks. validering af alfanumeriske tegn, maksimumlængde og tal. Selvom gyldigheden af selve adressen ikke bekræftes, kan denne kontrol udføres ved hjælp af tilpassede tredjepartstjenester.
+Der skal angives en leveringsadresse, hvis der skal leveres varer. Formatet for forsendelsesadresser for hver landestandard kan konfigureres i Dynamics 365 Commerce. Hvis varerne f.eks. skal sendes til USA, skal leveringsadressen indeholde en gadeadresse, stat og postnummer. Der udføres grundlæggende validering af leveringsadresser, f.eks. validering af alfanumeriske tegn, maksimumlængde og tal. Selvom gyldigheden af selve adressen ikke bekræftes, kan denne kontrol udføres ved hjælp af tilpassede tredjepartstjenester.
 
 Leveringsadressen anvendes på alle de varer i indkøbsvognen, som indstillingen "afsendelse" er valgt for. Hvis du bruger flowet for betaling, der findes i online startersættet, kan individuelle varer i indkøbsvognen ikke leveres til forskellige adresser. Hvis du har brug for denne egenskab, kan den implementeres ved at tilpasse betalingsmodulerne.
 
-Når leveringsadressen er angivet, vises de leveringsmetoder, der er tilgængelige fra Dynamics 365 Commerce-onlinebutikken. De leveringsmetoder og de adresser, de understøtter, kan konfigureres i Retail.
+Når leveringsadressen er angivet, vises de leveringsmetoder, der er tilgængelige fra Dynamics 365 Commerce-onlinebutikken. De leveringsmetoder og adresser, de understøtter, kan konfigureres i Commerce.
 
 ### <a name="payment"></a>Betaling
 

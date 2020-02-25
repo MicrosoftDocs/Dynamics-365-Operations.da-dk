@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d66cc69da08478ceb931fab594da51bafcacc38
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3fe08b30977b8515ffd8d0acc1fd8f4b3085de93
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185077"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026080"
 ---
 # <a name="er-design-domain-specific-data-model"></a>Design ER-domænespecifik datamodel
 
@@ -48,7 +48,7 @@ I dette eksempel skal du oprette en konfiguration af en udbyder for eksempelfirm
 4. Klik på "Opret konfiguration" for at fuldføre oprettelsen af konfigurationsopgaven
 
 ## <a name="create-a-data-model"></a>Opret en datamodel
-    * Du er ved at oprette en ny datamodel for den valgte konfiguration. Denne konfigurationsversion får statussen Kladde.  
+Du er ved at oprette en ny datamodel for den valgte konfiguration. Denne konfigurationsversion får statussen Kladde.  
 1. Klik på Designer.
 
 ## <a name="define-the-structure-of-a-party-participating-in-a-payment-process"></a>Definer strukturen af en part, der deltager i en betalingsproces

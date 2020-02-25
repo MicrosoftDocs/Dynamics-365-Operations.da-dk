@@ -3,7 +3,7 @@ title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935459"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029356"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -59,7 +59,8 @@ Når du benytter appen, lagres mange af dine valg for at gøre det lettere for d
 
 Implicitte tilpasninger er tilpasninger, som du udfører ved blot at interagere med visse kontrolelementer, som lagrer deres aktuelle tilstand for synlighed.
 
-- **Gitterkolonner** – Du kan justere bredden på en kolonne i et gitter ved at markere størrelseslinjen til venstre eller højre for kolonneoverskriften og derefter skubbe den mod venstre eller højre, indtil kolonnen har den ønskede bredde. Appen gemmer den bredde, du angiver for en kolonne. Derefter ændres størrelsen på kolonnen til denne bredde, næste gang du åbner den side, der indeholder dette gitter.
+- **Gitterkolonnebredder** – Du kan justere bredden på en kolonne i et gitter ved at markere størrelseslinjen til venstre eller højre for kolonneoverskriften og derefter skubbe den mod venstre eller højre, indtil kolonnen har den ønskede bredde. Appen gemmer den bredde, du angiver for en kolonne. Derefter ændres størrelsen på kolonnen til denne bredde, næste gang du åbner den side, der indeholder dette gitter.
+- **Gitterkolonnetotaler** -(kun tilgængelig med det nye gitterkontrol aktiveret) Du kan bestemme, om der skal vises en total nederst i en numerisk kolonne i et gitter, og om sidefoden i gitteret er synlig. Appen gemmer disse data, så disse indstillinger huskes, næste gang du åbner siden. Se emnet [Gitteregenskaber](grid-capabilities.md) for at få flere oplysninger. 
 - **Oversigtspaneler** – Nogle sider har udvidelige sektioner, der kaldes *oversigtspaneler*. Appen gemmer oplysninger om de oversigtspaneler, som du har udvidet og skjult. Næste gang du åbner siden, bliver de samme oversigtspaneler enten vist eller skjult baseret på din seneste interaktion med siden. I nogle tilfælde kan du forbedre systemets ydeevne ved at skjule et oversigtspanel, fordi appen ikke behøver at hente oplysningerne for oversigtspaneler, før de er udvidet. Som det forklares senere i dette emne, kan du også ændre rækkefølgen af oversigtspanelerne på en side.
 - **Faktabokse** – Nogle sider indeholder en **Relaterede oplysninger**-rude, der viser skrivebeskyttede oplysninger, der er relateret til sidens aktuelle emne. Hver sektion i ruden **Relaterede oplysninger** kaldes en *Faktaboks*. Du kan udvide eller skjule ruden **Relaterede oplysninger**, og du kan også udvide eller skjule individuelle faktabokse. Appen gemmer disse indstillinger. Næste gang du åbner siden,vil ruden **Relaterede oplysninger** og de enkelte faktabokse enten være udvidet eller skjult baseret på din seneste interaktion med siden. I nogle tilfælde kan du forbedre systemets ydeevne ved at skjule en faktaboks, fordi appen ikke behøver at hente oplysningerne for faktabokse, før de er udvidet.
 - **Handlingsruder** – Øverst på de fleste sider vises en *handlingsrude*. Handlingsruden indeholder knapper for mange af de handlinger, som du kan udføre på den aktuelle side. Disse knapper er ofte organiseret under faner. Du kan fastgøre hele den åbne handlingsrude, eller du kan lade den være skjult som standard. Næste gang du åbner siden, vil handlingsruden enten være open eller skjult baseret på din seneste interaktion med siden. Hvis du har fastgjort den åbne handlingsrude, vises den sidste fane, du har brugt.
@@ -95,7 +96,7 @@ Egenskabsvinduet kan omfatte andre tilpasningsmuligheder, afhængigt af elemente
 
 Hvis du vil foretage flere ændringer på en side eller ændringer, der ikke er tilgængelige via andre mekanismer (f.eks. sortering af elementer), kan du bruge **Brugertilpasning**-værktøjslinjen. Benyt et af følgende fremgangsmåder for at åbne værktøjslinjen **Brugertilpasning**:
 
-- Vælg **Personaliser denne formular** i egenskabsvinduet for elementet.
+- Vælg **Tilpas denne side** i egenskabsvinduet for elementet.
 - Vælg **Tilpas denne side** i gruppen **Personaliser** under fanen **Indstillinger** i handlingsruden på en side.
 - Vælg knappen **Indstillinger** (tandhjulssymbolet) på navigationslinjen, og vælg derefter **Personaliser**.
 
@@ -116,7 +117,8 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra det ved at vælge felterne.
 - Brug værktøjet **Lås** til at markere et element som redigerbart eller ikke-redigerbart. Når du vælger knappen **Lås** på værktøjslinjen, vises alle elementer, der i øjeblikket ikke er redigerbare, i en nedtonet container. Du kan derefter gøre dem redigerbare igen. Bemærk, at nogle af felterne er obligatoriske og ikke kan gøres ikke-redigerbare. Der vises en hængelås ud for de pågældende felter.
-- Brug knappen **Tilføj en PowerApp** til at integrere en app, der er oprettet ved hjælp af Microsoft PowerApps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en PowerApps-app på en side, under [Integration af PowerApps-apps](embed-power-apps.md).
+- Brug knappen **Tilføj en app fra Power Apps** til at integrere en app, der er oprettet ved hjælp af Microsoft Power Apps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en Power Apps-app på en side, under [Integrere apps fra Power Apps](embed-power-apps.md). Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er deaktiveret.  
+- Brug knappen **Tilføj en app** til at integrere en app, der enten er oprettet i Microsoft Power Apps eller en tredjepart, på siden. Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er aktiveret. 
 - Brug værktøjet **Ryd** for at nulstille siden til dens installerede standardtilstand. Alle tilpasninger på den aktuelle side ryddes. Der er ingen fortrydelseshandling. Derfor skal du kun bruge dette værktøj, hvis du er sikker på, at du vil nulstille siden.
 - Brug værktøjet **Importér** til at indlæse en personlig tilpasning fra en fil, som du eller en anden tidligere har oprettet. Når du importerer tilpasninger for en side, kan du vælge, om de skal føjes til eller erstatte alle eksisterende tilpasninger af siden. Der er ingen fortrydelseshandling. Når du har importeret personlige tilpasninger, skal du derfor manuelt fjerne eller fortryde de ændringer, du ikke har brug for.
 - Brug værktøjet **Eksportér** til at gemme dine personlige indstillinger for siden i en fil. Du kan derefter dele dine tilpasninger med andre brugere. Disse brugere skal kun importere filen, der indeholder dine personlige indstillinger for siden.
@@ -152,7 +154,7 @@ Dashboardet er ofte den første side, du ser, når du åbner appen. Du kan tilpa
 Hvis du vil tilpasse dashboardet, skal du højreklikke på et felt og derefter vælge **Personaliser** for at åbne feltets egenskabsvindue.
 
 - Hvis du vil skjule eller omdøbe det valgte felt, kan du foretage denne ændring direkte i egenskabsvinduet.
-- Hvis du vil omarrangere felterne i arbejdsområdet, skal du vælge **Tilpas denne formular** for at åbne værktøjslinjen **Brugertilpasning**. Du kan derefter bruge værktøjet **Flyt** til at omarrangere felterne efter behov.
+- Hvis du vil omarrangere felterne i arbejdsområdet, skal du vælge **Tilpas denne side** for at åbne værktøjslinjen **Brugertilpasning**. Du kan derefter bruge værktøjet **Flyt** til at omarrangere felterne efter behov.
 - For at oprette et nyt arbejdsområdefelt skal du vælge **Tilføj et arbejdsområde** i egenskabsvinduet. Der oprettes et nyt felt i arbejdsområdet i bunden af dashboardet. Du kan omdøbe dette nye arbejdsområdefelt, som du vil. Du kan også føje lister, felter og links til arbejdsområdet som beskrevet i sektionen [Føje lister, felter eller links til arbejdsområder](#adding-a-tile-list-or-link-to-a-workspace) i dette emne.
 
 ## <a name="administration-of-personalizations"></a>Administration af brugertilpasninger

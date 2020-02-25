@@ -3,7 +3,7 @@ title: Modulet Container
 description: Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697054"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025522"
 ---
 # <a name="container-module"></a>Modulet Container
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversigt
 
-Et containermodul er et modul, der indeholder andre moduler, som det er vært for. Det er den mest generiske container, der bruges i Dynamics 365 Commerce. Det primære formål med et containermodul er, via de egenskaber, der er angivet for det, at definere layoutet af de moduler, det indeholder. De pågældende moduler kan f. eks. vises ved siden af hinanden i et layout med to, tre, fire eller seks kolonner. De kan også være begrænset til containerens bredde, eller de kan udfylde skærmen. Der kan også føjes en overskrift til alle containermoduler.
+Et containermodul er et modul, der indeholder andre moduler, som det er vært for. Det primære formål med et containermodul er, via de egenskaber, der er angivet for det, at definere layoutet af de moduler, det indeholder. De pågældende moduler kan f. eks. vises ved siden af hinanden i et layout med to, tre, fire eller seks kolonner. De kan også være begrænset til containerens bredde, eller de kan udfylde skærmen. Der kan også føjes en overskrift til alle containermoduler.
 
-Der findes tre standardtyper af containermoduler: container, container med to pladser og container med tre pladser. Der kan placeres moduler af enhver type i disse containere. Der findes også særlige typer containermoduler, f. eks. karrusel, indholdsrig blok, indholdsplacering, indkøbsvogn, betaling, købefelt, sidehoved og sidefod. Disse containere har bestemte formål, og det er kun bestemte understøttede modultyper, der kan placeres i dem.
+Der understøttes tre containermoduler: container, container med 2 pladser og container med 3 pladser. Der kan placeres moduler af enhver type i disse containere. 
 
-Det anbefales, at du placerer moduler i en container, så de kan begrænses til containerens bredde.
+> [!NOTE] 
+> Det anbefales, at du altid placerer moduler i et containermodul, så de kan begrænses til containerens bredde.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Eksempler på containermoduler i e-handel
 
@@ -98,20 +99,19 @@ Yderligere egenskaber kan bruges til at optimere layoutet for forskellige visnin
 
 Hvis du vil føje et containermodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Opret en sideskabelon med navnet **containerskabelon**.
-1. Tilføj et containermodul på pladsen **Hoved** på standardsiden.
-1. Føj et funktionsmodul til containermodulet.
-1. Tjek skabelonen ind, og publicer den.
+1. Opret en sideskabelon med navnet **containerskabelon**. 
+1. På pladsen **Brødtekst** skal du tilføje et **Standardside**-modul.
+1. Afslut redigeringen af skabelonen, og udgiv den.
 1. Brug den containerskabelon, som du netop har oprettet, til at oprette en side med navnet **containerside**.
 1. Tilføj et containermodul på pladsen **Hoved** på den nye side.
-1. Angiv egenskaben **Antal kolonner** til **1** og egenskaben **Bredde** til **Tilpas til container** i egenskabsruden for containermodulet.
-1. Føj et funktionsmodul til containermodulet.
-1. Konfigurer en overskrift i egenskabsruden for funktionsmodulet.
+1. Angiv egenskaben **Antal kolonner** til **1** og egenskaben **Bredde** til **Fyld container** i egenskabsruden for containermodulet.
+1. Føj et indholdsblokmodul til containermodulet.
+1. Konfigurer overskriften, billedet og layoutet i egenskabsruden for indholdsblokmodulet.
 1. Gem siden, og se en forhåndsvisning af den. Der vises ét funktionsmodul, der er tilpasset til containermodulets bredde.
 1. Rediger værdien af egenskaben **Antal kolonner** til **3** i egenskabsruden for containermodulet.
-1. Føj yderligere to funktionsmoduler til containermodulet.
-1. Gem siden, og se en forhåndsvisning af den. Du kan nu se tre funktionsmoduler, der vises ved siden af hinanden.
-1. Når du har opnået det ønskede layout, skal du tjekke siden ind og publicere den.
+1. Føj yderligere to indholdsblokmoduler til containermodulet.
+1. Gem siden, og se en forhåndsvisning af den. Der vises nu tre indholdsblokmoduler ved siden af hinanden.
+1. Når du har opnået det ønskede layout, skal du afslutte redigeringen af siden og publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -119,13 +119,11 @@ Hvis du vil føje et containermodul til en ny side og angive de påkrævede egen
 
 [Karruselmodul](add-carousel.md)
 
-[Indholdsrig blok-modul](add-content-rich-block.md)
+[Tekstblokmodul](add-content-rich-block.md)
 
-[Indholdsplaceringsmodul](add-content-placement-modules.md)
+[Boksmodul til køb](add-buy-box.md)
 
-[Købefeltmodul](add-buy-box.md)
-
-[Indkøbsvognmodul](add-cart-module.md)
+[Indkøbskurvsmodul](add-cart-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 

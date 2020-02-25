@@ -3,7 +3,7 @@ title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc919d232f0e4f0cfbab372b9fdded2657906a1d
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934671"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "2999995"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -40,44 +40,41 @@ Lovmæssige opdateringer, der frigives som en del af den månedlige opdatering, 
 
 De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabel.   
 
-|Planlagt frigivelsesdato|Release-version|Land/område|Lovmæssig opdatering|
+|Land/område|Planlagt frigivelsesdato|Release-version|Lovmæssig opdatering|
 |--------------------|---------------|-------|-------|
-|      Brasilien        |   2019. december       | 10.0.8      |   Sped Fiscal Layout 014 |
-|      Brasilien         |   November - august 2019       | 10.0.7, 10.0.6HF, 10.0.5HF, 10.0.4HF      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.20    |
-|      Brasilien          |   November - august 2019       | 10.0.7, 10.0.6      |   DRCST-erklæring-SC   |
-|      Brasilien         |   August 2019       | 10.0.6HF, 10.0.5HF, 10.0.4HF      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.10    |
-|      Brasilien          |   August 2019      | 10.0.6HF, 10.0.5HF, 10.0.4HF     |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.10    |
-|      Brasilien          |   August 2019      | 10.0.6, 10.0.5HF     |   Ny lovgivning er implementeret i RJ-tilstand vedrørende EFD-ICMS/IPI. Resolution 13/19 for Rio de Janeiro (RJ)-implementeringen er til "Særlige procedurer, der skal anvendes på Exoneration     |
-|      Brasilien          |   August 2019      | 10.0.6        |   Momsangivelse CAT 42/18    |
-|      Brasilien          |   Juli 2019     | 10.0.5, 10.0.4HF, 10.0.2HF      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.00  |
-|      Brasilien          |   Juli 2019     | 10.0.5      |   Praktisk vejledning 1.31 vedrørende sped-bidrag. ny vejledning    |
-|      Brasilien          |   Maj 20191     | 10.0.4      |   Indgående regnskabsdokument 66    |
-|      Brasilien          |   Maj 2019      | 10.0.4      |   NF-e dekret 54.308/18 - RS    |
-|      Brasilien          |   Maj 2019      | 10.0.4      |   NF-e og NFC-e - Resolution 13/2019 og Forordning SUCIEF 55/2019- RJ - nye betingelser for output af undtagelsestags i NF-e    |
-|      Indien          |   August 2019     | 10.0.6       |   Retail: Administration af kunderegistreringsnumre fra POS for Indien    |
-|      Indien          |   Maj 2019     | 10.0.4      |   Visning af "Leveringssted" og "Tilstand" i GST-momsfaktura    |
-|      Italien          |   2019. december       | 10.0.8      |   Ændringer i momsstyring efter D.L. 119 af 23. okt. 2018: årlig momsindberetning |
-|      Italien         |   November 2019       | 10.0.7      |   Ændringer i momsstyring efter D.L. 119 pr. 23. okt. 2019: kvartalsvis momsindberetning ("Lipe 2018")    |
-|      Italien         |   November 2019     | 10.0.7      |   Detail - Administrere kundeoplysninger i POS |
-|      Italien         |   November 2019      | 10.0.7      |   Detail - Udskrive kundeoplysninger i regnskabskvittering |
-|      Italien         |   November - august 2019     | 10.0.7, 10.0.6      |   Ændringer i momsstyring efter D.L. 119 pr. 23. okt. 2018 - Dynamics 365 for Finance and Operations  |
-|      Italien          |   August 2019      | 10.0.6      |   Dato for momsregistrering    |
-|      Italien          |   August 2019     | 10.0.6      |   Momsstyring efter Dato for Momsregistrering    |
-|      Japan          |   December-november 2019     | 10.0.8, 10.0.7HF       |   Ændring af forbrugsmomssats og reduceret momssats introduceres (Forbrugsmomsrapport) |
-|      Japan         |   November 2019      | 10.0.7       |   Ændring af forbrugsmomssats og reduceret momssats introduceres (fakturalayout) |
-|      Japan          |   November 2019     | 10.0.6HF     |   Ændring af forbrugsmomssats og reduceret momssats introduceres (Forbrugsmomsrapport)  |
-|      Japan          |   August 2019      | 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      |   Ændring af forbrugsmomssats og reduceret momssats introduceres    |
-|      Mexico          |   December-oktober 2019    | 10.0.8, 10.0.7HF, 10.0.6HF        |   Retail - CFDI Global: misc. Resol 2019 - c_CodigoPostal og Tidszone |
-|     Mexico          |   November-september 2019       | 10.0.7, 10.0.6HF      |   Opdaterer regel 2.7.2.9 - Bruge tidszonen for postnummeret i den virksomhed, der udsteder CFDI-dokumentet. |
-|      Mexico           |   December-oktober 2019      | 10.0.8, 10.0.7HF, 10.0.6HF     |   Kodevalidering i kataloget Produkter og tjenester |
-|      Mexico         |   Juli 2019     | 10.0.5      |   MX -CFDI 3.3 - Oplysninger om IEPS momstransaktioner i XML skal være valgfrie afhængigt af kundens profil    |
-|      Mexico          |   Maj 2019     | 10.0.4      |   DIOT-tredjepartserklæring – ændringer i layout 2019    |
-|      Polen          |   November-oktober 2019     | 10.0.7, 10.0.6HF Polen     |   Obligatorisk opdelt betaling - 10.0.7 |
-|      Singapore           |   2019. december     | 10.0.7      |   GST-returneringsrapport |
-|      Spanien          |   August - juli 2019      | 10.0.5, 10.0.4HF      |   Spanien: SII: Valideringsregler ændres fra 1. oktober 2019    |
-|      Storbritannien          |   2019. december       | 10.0.8      |   Gør moms digital (MTD) - Samtykke fra systemadministrator til at sende oplysninger uden for D365 ved hjælp af integrationen med HMRC |
-|      Storbritannien          |   November 2019     | 10.0.7     |   Gøre moms digital - Oprettelse af indberetning af moms for firmaer, der indberetter som momsgruppe i samme systemdatabase v. 10 |
-|      Storbritannien          |   Juni - juli 2019      | 10.0.5     |   Gør moms digitalt - parametre til forebyggelse af svindel i forbindelse med oprindelig enhed - 10.0.5    |
+|      Brasilien         |   2020. marts       | 10.0.9      |   SPED-regnskab - ændringer i post D100 felt COD_MUN_ORI    |
+|      Brasilien         |   Marts 2020 - december 2019       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – Forordning SEF Nº 254/19    |
+|      Brasilien         |   Januar 2020 - december 2019       | 10.0.8, 10.0.7HF      |   Supplerende oplysninger om ICMS-ST    |
+|      Brasilien        |   Marts 2020 - december 2019       | 10.0.9, 10.0.8HF, 10.0.7HF      |   Sped Fiscal Layout 014 |
+|      Brasilien         |   2019. december       | 10.0.7      |   En ny version af tekniske bemærkninger til NF-e: NT 2019.001 version 1.20    |
+|      Brasilien         |   2019. december       | 10.0.7      |   DRCST-erklæring-SC    |
+|      Brasilien          |   Marts 2020 - januar 2020       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – Forordning SEF Nº 343DR   |
+|      Frankrig          |   2020. marts       | 10.0.9      |   Fransk lokalisering: ISO 20022-format til international betaling og likviditetsoverførsel   |
+|      Indien          |   2020. marts       | 10.0.9      |   Nyt GSTR (ANX-1 & ANX-2) offline-værktøj for returnering   |
+|      Italien          |   2020. januar       | 10.0.8      |   Ændringer i momsstyring efter D.L. 119 af 23. okt. 2018: årlig momsindberetning |
+|      Italien         |   2019. december       | 10.0.7      |   Ændringer i momsstyring efter D.L. 119 pr. 23. okt. 2019: kvartalsvis momsindberetning ("Lipe 2018")    |
+|      Italien         |   Marts 2020 - december 2019     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Detail - Administrere kundeoplysninger i POS |
+|      Italien         |   Marts 2020 - december 2019      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Detail - Udskrive kundeoplysninger i regnskabskvittering |
+|      Italien         |   2019. december     | 10.0.7      |   Ændringer i momsstyring efter D.L. 119 af 23. oktober 2018: kommunikation om fakturaer  |
+|      Japan          |   Marts 2020 - december 2019     | 10.0.9, 10.0.8HF, 10.0.7HF     |   Japan Bankers Association erstatter JBA-betalingsformater med fast længde med ISO20022 |
+|      Japan          |   Januar 2020 - december 2019     | 10.0.8, 10.0.7HF       |   Ændring af forbrugsmomssats og reduceret momssats introduceres (Forbrugsmomsrapport) |
+|      Japan         |   2019. december      | 10.0.7       |   Ændring af forbrugsmomssats og reduceret momssats introduceres (fakturalayout) |
+|      Mexico          |   Januar 2020 - december 2019    | 10.0.8, 10.0.7HF        |   Retail - CFDI Global: misc. Resol 2019 - c_CodigoPostal og Tidszone |
+|     Mexico          |   2019. december       | 10.0.7      |   Opdaterer regel 2.7.2.9 - Bruge tidszonen for postnummeret i den virksomhed, der udsteder CFDI-dokumentet. |
+|      Mexico           |   Januar 2020 - december 2019      | 10.0.8, 10.0.7HF     |   Kodevalidering i kataloget Produkter og tjenester |
+|      Norge          |   Marts 2020 - december 2019   | 10.0.9, 10.0.8HF, 10.7.7HF     |   SAF-T XSD-opdatering til version 1.1 for Dynamics 365 for Finance and Operations |
+|      Polen          |   2020. marts    | 10.0.9     |   Indgående momsregister og SAF-momsregister: brugerdefineret agentur fra SAD-dokumenter skal erstattes af tredjeparts navn og SE-nummer |
+|      Polen          |   Marts 2020 - januar 2020   | 10.0.9, 10.0.8HF     |   Detail - Administrere kundeoplysninger i POS |
+|      Polen          |   Marts 2020 - januar 2020     | 10.0.9, 10.0.8HF     |   Detail - Udskrive kundeoplysninger i regnskabskvittering |
+|      Polen          |   Marts 2020 - december 2019     | 10.0.9, 10.0.8, 10.0.7     |   SAF-fakturaer (JPK_FA) v.3 fra 2. december 2019 |
+|      Polen          |   Marts 2020 - januar 2019     | 10.0.9, 10.0.8     |   JPK_VDEK erstatter JPK_VAT (SAF-moms) |
+|      Polen          |   2019. december     | 10.0.7     |   Obligatorisk opdelt betaling |
+|      Rusland          |   2020. marts     | 10.0.9     |   Format af ejendomsskatteopgørelsen for rapportering i 2019 |
+|      Rusland          |   2020. marts     | 10.0.9     |   Opdaterede formater for opgørelse til skat af overskud |
+|      Singapore           |   Januar 2020 - december 2019     | 10.0.8, 10.0.7HF      |   GST-returneringsrapport |
+|      Schweiz           |   2020. marts     | 10.0.9      |   Schweizisk indbetalingskort ISR får nyt format (QR-kode) |
+|      Storbritannien          |   2020. januar       | 10.0.8      |   Gør moms digital (MTD) - Samtykke fra systemadministrator til at sende oplysninger uden for D365 ved hjælp af integrationen med HMRC |
+|      Storbritannien          |   2019. december     | 10.0.7     |   Gøre moms digital - Oprettelse af indberetning af moms for firmaer, der indberetter som momsgruppe i samme systemdatabase v. 10 |
 
 
 

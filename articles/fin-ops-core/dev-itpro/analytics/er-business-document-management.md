@@ -3,7 +3,7 @@ title: Oversigt over styring af forretningsdokumenter
 description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til styring af forretningsdokumenter i ER-strukturen.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933902"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957361"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -122,7 +122,7 @@ Benyt følgende fremgangsmåde for at aktivere funktionen til styring af forretn
 4. Opdater siden for at få adgang til den nye funktion.
 
 >[!NOTE]
-> Du har også brug for at aktivere **Office-lignende brugergrænsefladeoplevelse for Styring af forretningsdokumenter** for at kunne anvende en ny brugergrænseflade til styring af forretningsdokumenter.
+> Yderligere oplysninger om brug af den nye brugergrænseflade i dokumenter i Styring af forretningsdokumenter finder du i [Ny brugergrænseflade i dokumenter i Styring af forretningsdokumenter](er-business-document-management-new-template-ui.md).
 
 ![Arbejdsområdet Administration af funktioner](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyr
 
 ![Konfigurere dokumenttype til dokumentstyring](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Konfigurere parametre
+### <a name="SetupBdmParameters">Konfigurere parametre</a>
 
 De grundlæggende parametre til styring af forretningsdokumenter kan konfigureres på siden **Parametre for forretningsdokument**. Det er kun specifikke brugere, der har adgang til siden. Det omfatter:
 
@@ -166,6 +166,9 @@ Benyt følgende fremgangsmåde til at konfigurere grundlæggende parametre for a
 ![Konfigurere parametre til styring af forretningsdokumenter](./media/BDM-Overview-BDMSetting.png)
 
 Den valgte dokumenttype er firmaspecifik og vil blive brugt, når brugeren arbejder med styring af forretningsdokumenter i det firma, som den valgte dokumenttype er konfigureret til. Når brugeren arbejder med styring af forretningsdokumenter i et andet firma, bruges den samme valgte dokumenttype, hvis der ikke er konfigureret nogen for dette firma. Når en dokumenttype er konfigureret, bruges den i stedet for den, der er valgt i feltet **SharePoint-dokumenttype**.
+
+> [!NOTE]
+> Parameteren **SharePoint-dokumenttype** definerer en SharePoint-mappe som et midlertidigt lagringssted til skabeloner, der kan redigeres ved hjælp af enten Microsoft Excel eller Word. Du skal konfigurere denne parameter, hvis du planlægger at bruge disse Office-skrivebordsprogrammer til redigering af skabeloner. Du kan finde flere oplysninger i [Redigere en skabelon i Office-skrivebordsprogrammet](#EditInOfficeDesktopApp). Du kan sørge for, at denne parameter er tom, hvis du planlægger at redigere skabelonen udelukkende ved hjælp af funktionaliteten i Office 365. Du kan finde flere oplysninger i [Redigere en skabelon i Office 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurere adgangstilladelser
 
@@ -258,23 +261,18 @@ Indstillingen **Rediger skabelon** er tilgængelig for den valgte skabelon. Denn
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Starte redigering af skabeloner, der ejes af andre udbydere
 
-1. I arbejdsområdet Styring af forretningsdokumenter skal du vælge **Nyt dokument**.
+1. Vælg det dokument, du vil bruge som skabelon, i arbejdsområdet til Styring af forretningsdokumenter.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template1.png)
+![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Vælg det dokument, som du ønsker at bruge som skabelon.
+3. Vælg **Nyt dokument**, og rediger titlen på den redigerbare skabelon i feltet **Titel**, hvis det er nødvendigt. Teksten vil blive brugt til at navngive den ER-formatkonfiguration, der oprettes automatisk. Bemærk, at kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**), der vil indeholde den redigerede skabelon, automatisk markeres til at køre dette ER-format for den aktuelle bruger. Samtidig bruges den ikke-redigerede oprindelige skabelon fra ER-basisformatkonfigurationen til at køre dette ER-format for enhver anden bruger.
+4. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
+5. I feltet **Kommentar** skal du ændre kommentaren til den automatisk oprettede revision af den redigerbare skabelon.
+6. Vælg **OK** for at bekræfte påbegyndelse af redigeringsprocessen
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template2.png)
+![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Klik på **Opret dokument**
-4. Rediger feltet **Titel** på den redigerbare skabelon, hvis det er nødvendigt. Teksten vil blive brugt til at navngive den ER-formatkonfiguration, der oprettes automatisk. Bemærk, at kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**), der vil indeholde den redigerede skabelon, automatisk markeres til at køre dette ER-format for den aktuelle bruger. Samtidig bruges den ikke-redigerede oprindelige skabelon fra ER-basisformatkonfigurationen til at køre dette ER-format for enhver anden bruger.
-5. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
-6. I feltet **Kommentar** skal du ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
-7. Vælg **OK** for at bekræfte påbegyndelse af redigeringsprocessen
-
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template3.png)
-
-Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der er leveret af en anden udbyder (Microsoft i dette eksempel). Når du klikker på **Nyt dokument**, får du vist alle skabeloner, der ejes af aktuelle og andre udbydere. Når du har valgt den skabelon, vil den blive åbnet til redigering. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
+Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der er leveret af den aktuelle udbyder og en anden udbyder (Microsoft i dette eksempel), som ikke har nogen revision. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
 
 ### <a name="start-editing-a-template"></a>Starte redigering af en skabelon
 
@@ -282,7 +280,7 @@ Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-for
 2. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
 3. I feltet **Kommentar** skal du ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
 
-    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM_overview_new_template4.png)
+    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
@@ -290,13 +288,16 @@ Siden **BDM-skabeloneditor** åbnes. Den valgte skabelon er tilgængelig for onl
 
 ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Redigere en skabelon i Office 365
+### <a name="EditInOffice365">Redigere en skabelon i Office 365</a>
 
-Rediger skabelonen ved hjælp af funktionerne i Office 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard er det Azure-blob-lageret), der er konfigureret til ER-strukturen.
+Du kan redigere skabelonen ved hjælp af Office 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard er det Azure-blob-lageret). Dette er konfigureret for ER-strukturen.
 
 ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Redigere en skabelon i Office-skrivebordsprogrammet
+### <a name="EditInOfficeDesktopApp">Redigere en skabelon i Office-skrivebordsprogrammet</a>
+
+> [!NOTE]
+> Denne funktion er kun tilgængelig, når parameteren **SharePoint-dokumenttype** er konfigureret korrekt. Du kan finde flere oplysninger i [Konfigurere parametre](#SetupBdmParameters).
 
 1. Vælg indstillingen **Åbn i skrivebordsapp** for at ændre skabelonen ved hjælp af funktionerne i Office-skrivebordsprogrammet (Excel i dette eksempel). Den redigerbare skabelon kopieres fra det permanente lager til det midlertidige lager, der er konfigureret i parametrene for forretningsdokumentstyring, som en SharePoint-mappe.
 2. Bekræft, at du vil åbne skabelonen fra det midlertidige fillager i Office-skrivebordsprogrammet Excel.
@@ -386,7 +387,7 @@ Når du redigerer skabelonen fra et ER-format, der ejes af den aktuelle aktive u
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg har valgt **Rediger dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations er jeg blevet sendt til Office 365-websiden.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations, blev jeg sendt til Office 365-websiden.
 Dette er et kendt problem med Office 365-omdirigeringen. Dette sker, når du logger på Office 365 første gang. Du kan løse dette problem ved at vælge knappen **Tilbage** i din browser for at gå tilbage.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår, hvordan jeg kan redigere en skabelon ved at bruge Office 365 i den første programsession, og hvordan jeg kan bruge skabelonen i den anden programsession, der justerer skabelonen, for at se, hvordan mine ændringer påvirker det genererede forretningsdokument. Kan jeg gøre dette ved hjælp af Office-skrivebordsprogrammet?
@@ -411,3 +412,4 @@ Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure 
 [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurer Elektronisk rapportering (ER) for at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

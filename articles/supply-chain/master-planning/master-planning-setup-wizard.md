@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635120"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031061"
 ---
 # <a name="master-planning-setup-wizard"></a>Guiden installation af varedisponering
 
@@ -32,7 +32,7 @@ ms.locfileid: "2635120"
 
 Dette emne indeholder en vejledning til **Guiden installation af varedisponering**. Den forklarer, hvordan parameterforslag beregnes, og indeholder også eksempler, som viser, hvordan forskellige firmaer konfigurerer varedisponering på grundlag af deres forretningsbehov.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
 Videoen [Guiden Opsætning af varedisponering i Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
@@ -184,7 +184,7 @@ I guiden angives følgende værdier for Contoso Manufacturer:
 Contoso Retailer er et distributionsselskab i modebranchen. Det bruger varedisponering til at beregne, hvornår indkøbsordrer skal placeres på grundlag af det estimerede salg. Her er nogle af virksomhedens karakteristika:
 
 - Contoso Retailer bruger en behovsprognose til at forudsige salg. Indkøbsordrer planlægges i henhold til prognosen.
-- Detailbutikker bruger rekvisitioner til genopfyldning.
+- Butikker bruger rekvisitioner til genopfyldning.
 - Leveringstiden fra hovedlageret til hver butik er ca. to uger for alle varer.
 
 I guiden angives følgende værdier for Contoso Retailer:
@@ -208,4 +208,4 @@ I guiden angives følgende værdier for Contoso Retailer:
     - **Spørgsmål:** "Vil du medtage efterspørgsel fra godkendte rekvisitioner for at genopfylde detailbutikker?"
     - **Svar:** "Ja, som defineret i denne behovsplan." **1 dag** indtastes.
 
-    Contoso bruger de godkendte rekvisitioner fra sine detailbutikker til at oprette indkøbsordreforslag for at genopfylde disse butikker. Da varedisponering køres hver dag, medtages rekvisitionerne fra den sidste dag i planlægningen.
+    Contoso bruger de godkendte rekvisitioner fra sine butikker til at oprette indkøbsordreforslag for at genopfylde disse butikker. Da varedisponering køres hver dag, medtages rekvisitionerne fra den sidste dag i planlægningen.

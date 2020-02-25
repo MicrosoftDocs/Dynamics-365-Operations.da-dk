@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7506953c797f5a55a93f1169bf48af8b06eb440e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896790"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006258"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (23. oktober 2019)
 
@@ -41,7 +41,7 @@ Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard
 
 ### <a name="platform-update-30-for-finance-and-operations-apps"></a>Platform update 30 til Finance and Operations-apps
 
-Du kan finde flere oplysninger i [Nyheder eller ændringer i Platform update 30 til Finance and Operations-apps (november2019)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
+Du kan finde flere oplysninger under [Nyheder eller ændringer i Platform update 30 til Finance and Operations-apps (november2019)](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Fjerne åben tilmelding som frynsegoder som prøveversionsfunktion
 
@@ -89,4 +89,4 @@ Se [Udskrive performancegennemgange](https://docs.microsoft.com/dynamics365-rele
 
 Funktioner tilføjes og opdateres i alle versioner. Administrationen af funktioner indeholder et arbejdsområde, hvor du kan få vist en liste over de funktioner, der er leveret i hver version. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem.
 
-Du kan få mere at vide om de ændringer, der kommer til funktionsstyring, under [Oversigt over funktionsstyring](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Du kan få mere at vide om de ændringer, der kommer til funktionsstyring, under [Oversigt over funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).

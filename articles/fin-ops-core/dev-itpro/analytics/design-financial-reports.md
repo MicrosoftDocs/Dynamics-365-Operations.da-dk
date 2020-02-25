@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc68289514dc3b201b423091c92fa128d3065707
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536795"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002537"
 ---
 # <a name="view-and-design-financial-reports"></a>Vise og designe økonomirapporter
 
@@ -172,7 +172,7 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 3. Oprette en ny kolonnedefinition af ved at klikke på **Filer**, derefter **Ny** og derefter **Kolonnedefinition**.
 4. I **Kolonne A** skal du vælge **DESC** for kolonnetypen.
 5. I **Kolonne B** skal du vælge **FD** for kolonnetypen.
-6. Dobbeltklik på feltet **Dimensionsfilter**.
+6. Dobbeltklik i feltet **Dimensionsfilter**.
 7. I vinduet **Dimension** skal du dobbeltklikke på kolonnen **Afdeling**.
 8. I området med enkeltvist eller interval i dialogboksen skal du klikke på **ellipsen** for feltet **Fra** for at få vist en liste over afdelinger.
 9. Vælg afdeling **022**, **Salg og marketing**, og klik derefter på **OK**.
@@ -197,4 +197,4 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 
 [Se økonomiske rapporter](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)

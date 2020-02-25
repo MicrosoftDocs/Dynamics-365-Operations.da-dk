@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ffbb29fb89ed6a3fd6db11f2c8d656ab565c43f3
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 8d89b1251429281521f32338f642cc7034420e0b
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897643"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005980"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-23-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (23. juli 2019)
 
@@ -73,6 +73,6 @@ En ny indstilling gør det muligt for lederne at få vist performance for både 
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Områdeunderstøttelse af Canada og Sydøstasien
 
-Vi er glade for at kunne oplyse, at Canada og Sydøstasien vil være tilgængelige for Talent den 1. august 2019. Med denne ændring kan du oprette miljøer i de canadiske og asiatiske områder, og alle Talent-data vil blive opbevaret udelukkende inden for disse steder. Du kan oprette et miljø i disse nye områder ved at vælge stedet i dialogboksen Nyt miljø og bruge det pågældende miljø til at klargøre Talent i LCS som beskrevet her i [Klargøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Vi er glade for at kunne oplyse, at Canada og Sydøstasien vil være tilgængelige for Talent den 1. august 2019. Med denne ændring kan du oprette miljøer i de canadiske og asiatiske områder, og alle Talent-data vil blive opbevaret udelukkende inden for disse steder. Du kan oprette et miljø i disse nye områder ved at vælge stedet i dialogboksen Nyt miljø og bruge det pågældende miljø til at klargøre Talent i LCS som beskrevet her i [Klargøre Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Dataoverflytning af eksisterende projekter fra andre områder til de canadiske og asiatiske områder understøttes ikke. Det er kun nye projekter, der kan klargøres til disse nye understøttede områder.

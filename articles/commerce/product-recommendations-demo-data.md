@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697928"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003228"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Få produktanbefalinger ved hjælp af demo-data
 Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
@@ -39,7 +39,7 @@ Produktanbefalinger for niveau 1-miljøer er udelukkende baseret på de statiske
 Du skal udrulle Dynamics 365 Commerce-prøveversionens demoudvidelse i det respektive miljø for at aktivere demodata til produktanbefalinger. Hvis du gør det automatisk, aktiveres demodata til produktanbefalinger.
 
 ## <a name="default-demo-data"></a>Standarddemodata
-Hvert Onebox-typemiljø indeholder et forudindlæst sæt demodata til produktanbefalinger, der er gemt i den kommaseparerede fil 'reco_demo_data.csv', som er placeret på Retail Server.
+Hvert Onebox-typemiljø indeholder et forudindlæst sæt demodata til produktanbefalinger, der er gemt i den kommaseparerede fil 'reco_demo_data.csv', som er placeret på Commerce Scale Unit.
 
 Disse data er struktureret langs følgende kolonner.
 

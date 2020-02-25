@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570742"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003990"
 ---
 # <a name="product-information-overview"></a>Oversigt over produktoplysninger
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570742"
 
 Dette emne indeholder oplysninger om administration af produktoplysninger. Administration af produktoplysninger fungerer sammen med en fælles produktdefinition, kategorisering og identifikatorer på tværs af alle juridiske enheder, og også med bestemte konfigurationer af et produkt, så det passer til forretningsprocesserne. 
 
-Produktoplysninger er udgangspunkt for supply chain- og detailprogrammer på tværs af alle brancher. Det refererer til processer og teknologier, der har fokus på central administration af oplysninger om produkter (f.eks. på tværs af supply chains). Det er vigtigt, at der bruges delte produktdefinitioner, dokumentation, attributter og identifikatorer. I de forskellige moduler i en virksomhedsløsning, kræves der produktspecifikke oplysninger og konfigurationer for at administrere de forretningsprocesser, der er relateret til bestemte produkter, produktfamilier eller produktkategorier.
+Produktoplysninger er udgangspunkt for forsyningskæde- og handelsprogrammer på tværs af alle brancher. Det refererer til processer og teknologier, der har fokus på central administration af oplysninger om produkter (f.eks. på tværs af supply chains). Det er vigtigt, at der bruges delte produktdefinitioner, dokumentation, attributter og identifikatorer. I de forskellige moduler i en virksomhedsløsning, kræves der produktspecifikke oplysninger og konfigurationer for at administrere de forretningsprocesser, der er relateret til bestemte produkter, produktfamilier eller produktkategorier.
 
 ## <a name="product-definition"></a>Produktdefinition
 

@@ -3,7 +3,7 @@ title: Implementere en ny e-handelslejer
 description: I dette emne beskrives, hvordan du installerer en ny e-handelslejer ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945507"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001777"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du implementerer et nyt e-handelswebsted ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Oversigt
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) er et skybaseret arbejdsområde til samarbejde, som partnere og kunder kan bruge til at styre deres projekter og miljøer, få vist de seneste oplysninger om Microsoft Dynamics-produkter og -funktioner og oprette, spore og gennemse supporthændelser. Funktioner til styring e-handel er integreret i LCS.
 
 Du kan få mere at vide om LCS i [Brugervejledning til Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Når du har indsamlet de nødvendige oplysninger, skal du udføre disse trin for
 1. På næste side skal du udfylde de påkrævede oplysninger og derefter sende formularen. Du vender tilbage til fanen **e-handel**, hvor du kan se, at initialiseringen er startet.
 1. Hvis du vil have vist initialiseringsstatus, skal du enten vælge **Opdater** eller vende tilbage til fanen **e-handel** senere.
     
-Når e-handel initialiseres fra LCS, klargør systemet flere komponenter, der kræves til e-handel, og knytter dem til miljøet. Når klargøringen er fuldført, opdateres fanen **e-handel** på siden **Detailstyring** og afspejler klargøringen. På siden vises de seneste tilpasningsinstallationer og status for eventuelle andre igangværende installationer. Siden indeholder også links til e-handelswebstedet og værktøjet til administration af e-handelswebsteder (oprettelsesværktøj).
+Når e-handel initialiseres fra LCS, klargør systemet flere komponenter, der kræves til e-handel, og knytter dem til miljøet. Når klargøringen er fuldført, opdateres fanen **e-handel** på siden **Detailstyring**, så den afspejler klargøringen. På siden vises de seneste tilpasningsinstallationer og status for eventuelle andre igangværende installationer. Siden indeholder også links til e-handelswebstedet og generatoren til e-handelswebsteder, hvor websteder oprettes.
 
-## <a name="access-the-authoring-environment"></a>Adgang til oprettelsesmiljøet
+## <a name="access-site-builder"></a>Få adgang til webstedsgenerator
 
-For at få adgang til oprettelsesmiljøet skal du gå til fanen **e-handel** på siden **Detailstyring**. Her finder du links til e-handelswebstedet og webstedets administrationsværktøj.
+Hvis du vil have adgang til webstedsgeneratoren, skal du gå til fanen **e-handel** på siden **Detailstyring** i LCS og vælge linket **Administrationsværktøj til websted for e-handel**. Landingssiden for webstedsgeneratoren viser en visning på lejerniveau. Fra denne side kan du:
+
+- Redigere indstillinger på lejerniveau.
+- Navigere til et websted, du har oprettet og har tilladelse til at få vist. 
+- Få adgang til funktioner til gennemsyn, f.eks. redigering og rapportering.
+- Oprette et nyt websted. Du kan finde flere oplysninger om, hvordan du opretter et nyt websted [Oprette et websted for e-handel](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

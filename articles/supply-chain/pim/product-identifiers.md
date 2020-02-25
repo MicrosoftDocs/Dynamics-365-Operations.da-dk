@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934880"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004013"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
@@ -88,7 +88,7 @@ På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandøre
 | Betegnelse | Det navn, som kunden knytter til varen | Det navn, som leverandøren knytter til varen |
 | Ekstern varetekst | Debitorens varebeskrivelse | Leverandørens varebeskrivelse |
 
-Hvis mange debitorer eller kreditorer bruge de samme varenumre (som det f.eks. er tilfældet i en indkøbssammenslutning eller en detailgruppe), kan du oprette grupper af debitorer/kreditorer for at forenkle vedligeholdelse af eksterne produktoplysninger.
+Hvis mange debitorer eller kreditorer bruge de samme varenumre (som det f.eks. er tilfældet i en indkøbssammenslutning eller en handelsgruppe), kan du oprette grupper af debitorer/kreditorer for at forenkle vedligeholdelse af eksterne produktoplysninger.
 
 - For debitorgrupper skal du gå til **Salg** &gt; **Konfiguration** &gt; **Varer** &gt; **Ekstern varebeskrivelse** for at oprette og vedligeholde grupperne og de relaterede varenumre. For at knytte kunder til en gruppe, skal du gå til **Debitor** &gt; **Debitorer** &gt; **Alle kunder** og derefter klikke på oversigtspanelet **Salgsordrestandarder** og angive en værdi i feltet **Vare - Kundegruppe**.
 - For kreditorgrupper skal du gå til **Indkøb og forsyning** &gt; **Konfiguration** &gt; **Ekstern varebeskrivelsesgruppe** for at oprette og vedligeholde grupperne og de relaterede varenumre. For at knytte kreditorer til en gruppe, skal du gå til **Kreditor** &gt; **Kreditorer** &gt; **Alle kreditorer** og derefter under oversigtspanelet **Standardindstillinger for indkøbsordrer** angive en værdi i feltet **Vare - Leverandørgruppe**.

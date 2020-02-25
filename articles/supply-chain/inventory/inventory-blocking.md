@@ -3,7 +3,7 @@ title: Lagerblokering
 description: Dette emne indeholder en oversigt over lagerblokering, som er en del af kvalitetsinspektionsprocessen i Supply Chain Management. Du kan bruge lagerblokering til at forhindre elementer i at blive behandlet eller forbrugt.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814369"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971481"
 ---
-# <a name="inventory-blocking"></a>Lagerspærring
+# <a name="inventory-blocking"></a>Lagerblokering
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder en oversigt over lagerblokering, som er en del af kvalitetsinspektionsprocessen i Supply Chain Management. Du kan bruge lagerblokering til at forhindre elementer i at blive behandlet eller forbrugt.
+Dette emne indeholder en oversigt over lagerblokering, som er en del af kvalitetsinspektionsprocessen i Supply Chain Management. Du kan bruge lagerblokering til at forhindre elementer i at blive behandlet eller forbrugt.
 
 Du kan blokere lagervarer på følgende måder:
 -   Manuelt
@@ -43,6 +43,9 @@ Du kan blokere et antal varer ved at oprette en postering på siden **Lagerbloke
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>Blokering af varer ved at oprette en kvalitetsordre
 Du kan angive varer, der skal undersøges ved at oprette en kvalitetsordre på siden **Kvalitetsordrer**. Når du opretter en kvalitetsordre, er antallet, som du angiver for en vare, blokeret. Prøveplanen, der er knyttet til en kvalitetsordre kontrollerer kun antallet af varer, der skal inspiceres, ikke antallet, der er blokeret. Antallet, der er angivet på kvalitetsordren, er det antal, der er blokeret, uanset det antal, som prøveplanen angiver skal sendes til inspektion.
+
+> [!NOTE]
+> Brug af både batch-udløbsdatoen og funktionen til blokering af lagerstatus understøttes ikke af varedisponering. Dette kan resultere i dobbelt udelukkelse af disponibel lagerbeholdning, som kan opstå under varedisponering. Det anbefales, at du bruger batchdispositionskoder i stedet for lagerstatus til blokering af udløbne batches.
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Blokering af varer ved at bruge en proces, der genererer en kvalitetsordre
 Hvis en kvalitetsproces angiver, at en vare skal inspiceres, blokeret et antal varen automatisk. Så når der automatisk genereres en kvalitetsordre, kontrollerer den vareprøveplan, der er tilknyttet kvalitetsordren, både antallet af varer, der blokeres, og antal varer, der skal inspiceres. Hvis indstillingen **Fuld spærring** på siden **Vareprøve** er markeret, blokeres det fulde antal på f.eks. en indkøbsordrelinje under inspektionen, uanset vareprøveantallet.

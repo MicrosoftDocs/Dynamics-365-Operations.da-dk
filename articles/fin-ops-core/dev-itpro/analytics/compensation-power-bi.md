@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d314875287b0d69909c91450cd67c628d708cd3a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b1a094402f4ed81de2f9b10f3c40557bc103eb65
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174253"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005819"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-indhold til kompensation
 
@@ -33,7 +33,7 @@ Dette emne beskriver Microsoft Power BI-indhold til **Kompensation**. Det beskri
 Power BI-indholdet til **Kompensation** vises i arbejdsområdet **Kompensationsstyring**, hvis du bruger et af følgende produkter:
 
 - Finance and Operations-apps
-- Microsoft Dynamics 365 Talent
+- Microsoft Dynamics 365 Human Resources
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 De rapporter, der er inkluderet i Power BI-indholdet til **Kompensation**, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.

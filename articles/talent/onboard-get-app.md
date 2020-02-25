@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 8739bb1afdbea40c7f1c77064ee6b052516903d1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 1b59fdbdd9ed46f42afd3e7310d2cd3f076edd95
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898196"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006373"
 ---
 # <a name="get-the-onboard-app"></a>Hente Onboard-appen
 
@@ -32,7 +32,7 @@ Du kan se en demo og prøve Microsoft Dynamics 365 Talent: Onboard-appen gratis 
 > [!NOTE]
 > Den gratis prøveversion kræver en virksomheds mailkonto.
 
-Du kan købe et abonnement på Onboard som enten en enkeltstående app eller som en del af Dynamics 365 Talent. Talent er et omfattende system til styring af menneskelig kapital (HCM), der inkluderer Dynamics 365 Talent: Attract, Onboard og Core HR. Få mere information om, hvordan du køber Onboard, på [Produktsiden Onboard](https://dynamics.microsoft.com/talent/onboard/).
+Du kan købe et abonnement på Onboard som enten en enkeltstående app eller som en del af Dynamics 365 Talent. Få mere information om, hvordan du køber Onboard, på [Produktsiden Onboard](https://dynamics.microsoft.com/talent/onboard/).
 
 Under prøve- eller købsprocessen konfigurerer du din Microsoft 365-mailadresse og -adgangskode. Sørg for at notere disse værdier.
 

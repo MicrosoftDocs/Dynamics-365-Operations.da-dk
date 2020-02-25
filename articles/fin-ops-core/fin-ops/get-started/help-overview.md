@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811666"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005697"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811666"
 Dette emne indeholder en oversigt over komponenterne i Hjælp-systemet. Hjælp-systemet er fælles for følgende produkter:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 Du kan få hjælp fra ruden Hjælp i det produkt, du bruger. 
 
@@ -42,7 +42,7 @@ Du kan få hjælp fra ruden Hjælp i det produkt, du bruger.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjælp til docs.microsoft.com
 
-Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) er den primære kilde til produktdokumentation til de programmer, der er angivet ovenfor. Webstedet indeholder følgende funktioner:
+Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) er den primære kilde til produktdokumentation til de programmer, der er angivet ovenfor. Webstedet indeholder følgende funktioner:
 
 - **Adgang til det mest opdaterede indhold** – Webstedet giver os en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen på. Derfor hjælper det med at sikre, at du har adgang til de seneste tekniske oplysninger.
 - **Indhold, der er skrevet af eksperter** – Webstedet giver et mere omfattende sæt af produktdokumentation, der kan forbedres af community-medlemmer både inden for og uden for Microsoft.
@@ -73,7 +73,7 @@ Du kan bidrage til og foretage redigeringer til dokumentationen. For at komme i 
 
 Videoen [Sådan kan du bidrage til Microsoft Dynamics 365-dokumentation](https://youtu.be/m5djioozRbg) (vist ovenfor ) findes i Microsoft Dynamics 365-kanalen på YouTube.
 
-Yderligere oplysninger finder du i vores [vejledning til bidragydere](https://docs.microsoft.com/en-us/contribute).
+Yderligere oplysninger finder du i vores [vejledning til bidragydere](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Vi accepterer kun oprettelse af bidrag til vores engelske indhold på nuværende tidspunkt.
@@ -106,12 +106,12 @@ For at få adgang til indhold i Hjælp skal du enten klikke på ikonet **Hjælp*
 Fra ruden Hjælp kan du få adgang til artikler, der gælder for klienten. Når du først åbner Hjælp-ruden og klikker på fanen **Hjælp**, kan du se de artikler, der gælder for den aktuelle side. Hvis der ikke findes artikler, kan du angive nøgleord for at indsnævre søgningen. Når du klikker på en artikel i ruden Hjælp, åbnes en ny fane i browseren og viser artiklen.
 
 > [!IMPORTANT]
-> Dette afsnit gælder ikke for Dynamics 365 Talent. Hjælpesystemet til Talent er automatisk tilknyttet opgaveguider til produktet. Du kan ikke oprette brugerdefinerede opgaveguider til Talent.
+> Dette afsnit gælder ikke for Dynamics 365 Human Resources. Hjælpesystemet til Personale er automatisk tilknyttet opgaveguider til produktet. Du kan ikke oprette brugerdefinerede opgaveguider til Personale.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Adgang til opgaveguider fra ruden Hjælp
 
-Før du kan få adgang til opgaveguider fra ruden Hjælp, skal en systemadministrator gå til siden **Systemparametre** i Finance, Supply Chain Management og Retail og konfigurere nogle indstillinger.
+Før du kan få adgang til opgaveguider fra ruden Hjælp, skal en systemadministrator gå til siden **Systemparametre** i Finance, Supply Chain Management og Commerce og konfigurere nogle indstillinger.
 
 > [!NOTE]
 > - Hvis du vil konfigurere hjælp, skal du være logget på med en konto i den samme lejer som den lejer, hvor appen er installeret.

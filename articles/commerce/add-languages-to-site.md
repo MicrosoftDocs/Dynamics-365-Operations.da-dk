@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914602"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001409"
 ---
 # <a name="add-languages-to-your-site"></a>Føje sprog til webstedet
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I dette emne forklares det, hvordan du kan føje understøttelse af yderligere sprog til et Microsoft Dynamics 365 Commerce-websted.
 
 ## <a name="overview"></a>Oversigt
 
-Du kan lokalisere dit websted til ethvert sprog, som Dynamics 365 Commerce understøtter. Listen over understøttede sprog vises senere i dette emne. Hvis du vil tilføje et sprog på dit websted, skal du først føje det til en onlinebutik, der er tilknyttet dit websted.
+Du kan lokalisere dit websted til ethvert sprog, som Commerce understøtter. Listen over understøttede sprog vises senere i dette emne. Hvis du vil tilføje et sprog på dit websted, skal du først føje det til en onlinebutik, der er tilknyttet dit websted.
 
 ## <a name="add-a-language-to-an-online-store"></a>Føj et sprog til en onlinebutik
 
 Hvis du vil føje et sprog til en onlinebutik, skal du følge disse trin.
 
-1. Åbn Dynamics 365 Retail-miljøet for dit websted.
-1. Gå til **Detail \> Kanaler \> Onlinebutikker** for at få adgang til listen over online butikker, der er konfigureret til dit miljø. Du kan også angive **onlinebutikker** som et søgeord.
+1. Åbn Dynamics 365 Commerce-miljøet for dit websted.
+1. Gå til **Detail og Commerce \> Kanaler \> Onlinebutikker** for at få adgang til listen over online butikker, der er konfigureret til dit miljø. Du kan også angive **onlinebutikker** som et søgeord.
 1. Vælg den onlinebutik, du vil tilføje et sprog for
 1. Vælg **Tilføj** i oversigtspanelet **Sprog**.
 1. Vælg det sprog, der skal tilføjes, i feltet **Sprog**.
