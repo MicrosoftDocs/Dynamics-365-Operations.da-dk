@@ -1,9 +1,9 @@
 ---
-title: Klargøring af et Commerce-prøveversionsmiljø
+title: Klargøre et Dynamics 365 Commerce-prøveversionsmiljø
 description: I dette emne beskrives det, hvordan du klargør et Microsoft Dynamics 365 Commerce-prøveversionsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934742"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024630"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Klargøring af et Commerce-prøveversionsmiljø
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Klargøre et Dynamics 365 Commerce-prøveversionsmiljø
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives det, hvordan du klargør et Microsoft Dynamics 365 Commerce-prøveversionsmiljø.
+I dette emne beskrives det, hvordan du klargør et Dynamics 365 Commerce-prøveversionsmiljø.
 
-Før du går i gang, anbefales det, at du som minimum skimmer hele dette emne igennem for at få en ide om, hvad processen indebærer, og hvad dette emne indeholder.
+Før du går i gang, anbefales det, at du hurtigt gennemgår dette emne for at få et indtryk af, hvad processen kræver.
 
 > [!NOTE]
-> Hvis du endnu ikke har fået adgang til Dynamics 365 Commerce-prøveversionen, kan du anmode om adgang fra [Commerce-webstedet](https://aka.ms/Dynamics365CommerceWebsite).
+> Hvis du endnu ikke har fået adgang til Dynamics 365 Commerce-prøveversionen, kan du anmode om adgang fra [Dynamics 365 Commerce-webstedet](https://aka.ms/Dynamics365CommerceWebsite).
 
 ## <a name="overview"></a>Oversigt
 
-Hvis du vil kunne klargør dit Commerce-prøveversionsmiljø, skal du oprette et projekt, der har et bestemt produktnavn og er en bestemt type. Miljøet og Retail Cloud Scale Unit (RCSU) har nogle specifikke parametre, du skal bruge, når du senere klargør dit e-Commerce. Instruktionerne i dette emne beskriver alle de påkrævede trin, du skal fuldføre, og de parametre, du skal bruge.
+Hvis du vil kunne klargør dit Commerce-prøveversionsmiljø, skal du oprette et projekt, der har et bestemt produktnavn og er en bestemt type. Miljøet og Commerce Scale Unit (CSU) har nogle specifikke parametre, du skal bruge, når du senere klargør dit e-Commerce. Instruktionerne i dette emne beskriver alle de påkrævede trin for klargøring og de parametre, du skal bruge.
 
 Nå du har klargjort dit Commerce-prøveversionsmiljø, skal du fuldføre nogle få efter-klargørings-trin, for at gøre dit prøveversionsmiljø klar. Nogle trin er valgfrie, afhængigt af de aspekter af systemet, du vil evaluere. Du kan altid udføre de valgfrie trin senere.
 
@@ -52,69 +52,21 @@ Hvis du har spørgsmål til klargøringstrinnene, eller du oplever problemer, be
 Følgende forudsætninger skal være på plads, før du kan klargør dit Commerce-prøveversionsmiljø:
 
 - Du har adgang til Microsoft Dynamics Lifecycle Services-portalen (LCS).
+- Du er en eksisterende Microsoft Dynamics 365-partner eller -kunde og kan oprette et Dynamics 365 Commerce-projekt.
 - Du er blevet godkendt til Dynamics 365 Commerce-prøveversionsprogrammet.
-- Du har de nødvendige rettigheder til at oprette et projekt til **Mulige førsalg** eller **Overflyt, opret løsninger, og lær at bruge**.
+- Du har de nødvendige rettigheder til at oprette et projekt til **Overflyt, opret løsninger, og lær at bruge**.
 - Du er medlem af rollen **Miljøadministrator** eller **Projektejer** i det projekt, hvor du skal klargøre miljøet.
 - Du har administratoradgang til dit Microsoft Azure-abonnement eller du er i kontakt med en abonnementsadministrator, der kan fuldføre de to trin, der kræver administratorrettigheder, på dine vegne.
 - Du har dit Azure Active Directory-lejer-ID (Azure AD) ved hånden.
 - Du har oprettet en Azure AD-sikkerhedsgruppe, der kan bruges som en systemadministratorgruppe til e-Commerce, og du har gruppens ID ved hånden.
 - Du har oprettet en Azure AD-sikkerhedsgruppe, der kan bruges som en gruppe for redaktører af vurderinger og anmeldelser, og du har gruppens ID ved hånden. (Denne sikkerhedsgruppe kan være den samme som e-Commerce-systemadministratorgruppen.)
 
-### <a name="find-your-azure-ad-tenant-id"></a>Find dit Azure AD-lejer-ID
-
-Dit Azure AD-lejer-ID er en global entydig identifikator (GUID), der ligner dette eksempel: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Find dit Azure AD-lejer-ID ved hjælp af Azure-portalen
-
-1. Log på [Azure-portalen](https://portal.azure.com/).
-1. Sørg for, at det korrekte bibliotek er valgt.
-1. Vælg **Azure Active Directory** i menuen til venstre.
-1. Under **Administrer** skal du vælge **Egenskaber**. Dit Azure AD-lejer-ID vises under **Mappe-ID**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Find dit Azure AD-lejer-ID ved hjælp af OpenID Connect-metadata
-
-Opret en OpenID-URL-adresse ved at erstatte **\{DIT\_DOMÆNE\}** med dit domæne, som eksemeplvis `microsoft.com`. For eksempel `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration` bliver til `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration`.
-
-1. Gå til den OpenID-URL-adresse, der indeholder dit domæne.
-
-    Du kan finde dit Azure AD-lejer-ID i flere egenskabsværdier.
-
-1. Find **godkendelse\_slutpunkt**, og udpak det GUID, der vises umiddelbart efter `login.microsoftonline.com/`.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Find dit Azure AD-sikkerhedsgruppe-ID
-
-ID'et for din Azure AD-sikkerhedsgruppe er et GUID, der ligner dette eksempel: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-I denne procedure antages det, at du er medlem af den gruppe, du forsøger at finde ID'et for.
-
-1. Åbn [Graf-stifinder](https://developer.microsoft.com/graph/graph-explorer#).
-1. Vælg **Log på med Microsoft**, og log på ved hjælp af dine legitimationsoplysninger.
-1. Vælg **vis flere eksempler** til venstre.
-1. Aktivér **Grupper** i højre rude.
-1. Luk den højre rude.
-1. Vælg **alle grupper, som jeg tilhører**.
-1. Find din gruppe i feltet **Forhåndsvisning af svar**. Sikkerhedsgruppe-ID'et vises under **ID**-egenskaben.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Klargøring af dit Commerce-prøveversionsmiljø
 
 Disse procedurer forklarer, hvordan du klargør et Commerce-prøveversionsmiljø. Når du har fuldført dem, vil Commerce-prøveversionsmiljøet være klar til konfiguration. Alle de aktiviteter, der er beskrevet her, finder sted på LCS-portalen.
 
 > [!IMPORTANT]
-> Forhåndsadgang er knyttet til den LCS-konto og -organisation, som du angav i prøveversionsansøgning. Du skal bruge den samme konto til at klargøre Commerce-prøveversionmiljøet. Hvis du skal bruge en anden LCS-konto eller -lejer til Commerce-prøveversionmiljøet, skal du oplyse Microsoft herom. Du finder kontaktoplysninger i afsnittet [Support til Commerce-prøveversionmiljøet](#commerce-preview-environment-support) senere i dette emne.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Give adgang til e-handelsprogrammer
-
-> [!IMPORTANT]
-> Den person, der logger på, skal være en Azure AD-lejeradministrator, som har Azure AD-lejer-ID'et. Hvis dette trin ikke er fuldført, vil de resterende klargøringstrin mislykkes.
-
-Følg disse trin for at autorisere e-Commerce-programmer til at få adgang til dit Azure-abonnement.
-
-1. Sammensæt en URL-adresse i følgende format:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Kopiér og Indsæt URL-adressen i din browser eller teksteditor, og erstat **\{AAD\_LEJER\_-ID\}** med dit Azure AD-lejer-ID. Åbn dernæst URL-adressen.
-1. Log på Azure AD i dialogboksen for logon, og bekræft, at du vil give **Dynamics 365 Commerce (prøveversion)** adgang til dit abonnement. Du bliver sendt videre til en side, der indikerer, om handlingen lykkedes.
+> Forhåndsadgang er knyttet til den LCS-konto og -organisation, som du angav i Commerce-prøveversionsansøgningen. Du skal bruge den samme konto til at klargøre Commerce-prøveversionmiljøet. Hvis du skal bruge en anden LCS-konto eller -lejer til Commerce-prøveversionsmiljøet, skal du oplyse Microsoft herom. Du finder kontaktoplysninger i afsnittet [Support til Commerce-prøveversionmiljøet](#commerce-preview-environment-support) senere i dette emne.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Bekræft, at prøveversionens funktioner er tilgængelige og aktiverede i LCS
 
@@ -210,12 +162,12 @@ I følgende illustration vises de handlinger, der skal udføres på LCS-siden **
 Følg disse trin for at installere miljøet.
 
 > [!NOTE]
-> Du behøver måske ikke at fuldføre trin 6, 7 og/eller 8, fordi sider, der har en enkelt indstilling, springes over. Når du er i visningen **Miljøparametre**, skal du bekræfte, at teksten **Dynamics 365 Commerce (prøveversion) - Demo (10.0.6 med platformsopdatering 30)** vises direkte over feltet **Miljønavn**. Se den illustration, der vises efter trin 8.
+> Du behøver måske ikke at fuldføre trin 6, 7 og/eller 8, fordi sider, der har en enkelt indstilling, springes over. Når du er i visningen **Miljøparametre**, skal du bekræfte, at teksten **Dynamics 365 Commerce - Demo (10.0.* x* med platformsopdatering *xx*)** vises direkte over feltet **Miljønavn**. Se detaljer på den illustration, der vises efter trin 8.
 
 1. Vælg **Skybaserede miljøer** øverst i menuen.
 1. Vælg **Tilføj** for at tilføje et miljø.
-1. I feltet **Programversion** skal du vælge **10.0.6**.
-1. I feltet **Platformsversion** skal du vælge **Platformsopdatering 30**.
+1. Vælg den seneste version i feltet **Programversion**. Hvis du har et specifikt behov for at vælge en anden programversion end den seneste version, skal du ikke vælge en version før **10.0.8**.
+1. I feltet **Platformsversion** skal du bruge den platformsversion, der automatisk vælges for den programversion, du har valgt. 
 
     ![Valg af program- og platformsversioner](./media/project1.png)
 
@@ -224,7 +176,7 @@ Følg disse trin for at installere miljøet.
 
     ![Valg af miljøtopologi 1](./media/project2.png)
 
-1. Vælg **Dynamics 365 Commerce (prøveversion) - Demo** som miljøtopologi. Hvis du har konfigureret en enkelt Azure Connector tidligere, bruges denne til dette miljø. Hvis du har konfigureret flere Azure Connector'er, kan du vælge, hvilken connector der skal bruges: **Det østlige USA**, **Det østlige USA 2**, **Det vestlige USA** eller **Det vestlige USA 2**. (For at opnå den bedste altomfattende præstation anbefaler vi, at du vælger **Det vestlige USA 2**.)
+1. Vælg **Dynamics 365 Commerce - Demo** som miljøtopologi. Hvis du har konfigureret en enkelt Azure Connector tidligere, bruges denne til dette miljø. Hvis du har konfigureret flere Azure Connector'er, kan du vælge, hvilken connector der skal bruges: **Det østlige USA**, **Det østlige USA 2**, **Det vestlige USA** eller **Det vestlige USA 2**. (For at opnå den bedste altomfattende præstation anbefaler vi, at du vælger **Det vestlige USA 2**.)
 
     ![Valg af miljøtopologi 2](./media/project3.png)
 
@@ -241,39 +193,38 @@ Følg disse trin for at installere miljøet.
 
 1. Før du fortsætter, skal du kontrollere, at din statussen for dit miljø er **Installeret**.
 
-### <a name="initialize-rcsu"></a>Initialisere RCSU
+### <a name="initialize-the-commerce-scale-unit-csu"></a>Initialisere Commerce Scale Unit (CSU)
 
-Følg disse trin for at påbegynde RCSU.
+Følg disse trin for at påbegynde CSU.
 
 1. Vælg dit miljø på listen i visningen **Skybaserede miljøer**.
 1. Vælg **Alle detaljer** i miljøvisningen til højre. Visningen med miljødetaljer vises.
 1. Under **Miljøfunktioner** skal du vælge **Administrer**.
-1. På fanen **Retail** skal du vælge **Initialiser**. RCSU-initialiseringsparametrene bliver vist.
+1. På fanen **Commerce** skal du vælge **Initialiser**. CSU-initialiseringsparametrene bliver vist.
 1. I feltet **Tegion** skal du vælge **Det østlige USA**, **Det østlige USA 2**, **Det vestlige USA** eller **Det vestlige USA 2**.
-1. I feltet **Version** skal du vælge **Angiv en Version** på listen og derefter angive **9.16.19262.5** i det felt, der vises. Sørg for at angive den nøjagtige version, der er angivet her. Ellers skal du opdatere RCSU til den korrekte version senere.
+1. I feltet **Version** skal du vælge **Angiv en Version** på listen og derefter angive **9.18.20014.4** i det felt, der vises. Sørg for at angive den nøjagtige version, der er angivet her. Ellers skal du opdatere RCSU til den korrekte version senere.
 1. Aktivér indstillingen **Anvend udvidelse**.
 1. Vælg **Demobasisudvidelse til Commerce-prøveversion** på listen over udvidelser.
 1. Vælg **Initialiser**.
-1. Klik på **Ja** på siden til bekræftelse af installationen, når du har kontrolleret, at oplysningerne er korrekte. Du returneres til visningen **Retail management**, hvor fanen **Retail** er valgt. Din RCSU er sat i kø til klargøring.
-1. Før du fortsætter, skal du kontrollere, at din statussen for dit RCSU er **Vellykket**. Initialiseringen tager ca. to til fem timer.
+1. Klik på **Ja** på siden til bekræftelse af installationen, når du har kontrolleret, at oplysningerne er korrekte. Visningen **Commerce-administration** vises igen, hvor fanen **Commerce** er valgt. Din CSU er sat i kø til klargøring.
+1. Før du fortsætter, skal du kontrollere, at din statussen for dit CSU er **Vellykket**. Initialiseringen tager ca. to til fem timer.
 
 ### <a name="initialize-e-commerce"></a>Initialisere e-handel
 
 Følg disse trin for at påbegynde e-Commerce.
 
-1. Under fanen **e-Commerce (prøveversion)** skal du gennemgå samtykket for prøveversionen og derefter vælge **Opsætning**.
+1. Under fanen **e-Commerce** skal du gennemgå samtykket for prøveversionen og derefter vælge **Konfiguration**.
 1. Angiv et navn for **e-Commerce-lejernavn** i feltet. Bemærk dog, at navnet vil være synligt i nogle af URL-adresserne, der peger på din e-Commerce-forekomst.
-1. I feltet **Retail cloud scale unit-navn** skal du vælge din RCSU fra listen. (Listen bør kun have én indstilling.)
+1. I feltet **Commerce scale unit-navn** skal du vælge din CSU på listen. (Listen bør kun have én indstilling.)
 
     Feltet **e-Commerce-geografi** angives automatisk, og værdien kan ikke ændres.
 
 1. Vælg **Næste** for at fortsætte.
 1. I feltet **Understøttede værtsnavne** skal du angive et vilkårligt gyldigt domæne som f.eks. `www.fabrikam.com`.
-1.  I feltet **AAD-sikkerhedsgruppe for systemadministrator** skal du angive de første få bogstaver i navnet på den sikkerhedsgruppe, som du ønsker at bruge. Vælg ikonet for forstørrelsesglasset for at få vist søgeresultaterne. Vælg en sikkerhedsgruppe på listen.
-2.  I feltet **AAD-sikkerhedsgruppen for redaktører for vurderinger og anmeldelser** skal du angive de første få bogstaver i navnet på den sikkerhedsgruppe, som du ønsker at bruge. Vælg ikonet for forstørrelsesglasset for at få vist søgeresultaterne. Vælg en sikkerhedsgruppe på listen.
+1.  I feltet **AAD-sikkerhedsgruppe for systemadministrator** skal du angive de første få bogstaver i navnet på den sikkerhedsgruppe, som du ønsker at bruge. Vælg ikonet for forstørrelsesglasset for at få vist søgeresultaterne. Vælg den korrekte sikkerhedsgruppe på listen.
+2.  I feltet **AAD-sikkerhedsgruppen for redaktører for vurderinger og anmeldelser** skal du angive de første få bogstaver i navnet på den sikkerhedsgruppe, som du ønsker at bruge. Vælg ikonet for forstørrelsesglasset for at få vist søgeresultaterne. Vælg den korrekte sikkerhedsgruppe på listen.
 1. Lad indstillingen **Aktivér tjenesten vurderinger og anmeldelser** være aktiveret.
-1. Hvis du allerede har fuldført samtykketrinnet for Microsoft Azure Active Directory (Azure AD) som beskrevet i afsnittet "Tildel adgang til e-Commerce-programmer", skal du markere afkrydsningsfeltet for at bekræfte dit samtykke. Hvis du endnu ikke har fuldført dette trin, skal du gøre det, før du fortsætter initialiseringen. Marker hyperlinket i teksten ved siden af afkrydsningsfeltet for at åbne dialogboksen til samtykke og fuldføre trinnet.
-1. Vælg **Initialiser**. Du bliver returneret til visningen **Detailstyring**, hvor fanen **e-Commerce (prøveversion)** er valgt. Din initialisering af e-Commerce er påbegyndt.
+1. Vælg **Initialiser**. Visningen **Commerce-administration** vises igen, hvor fanen **e-Commerce** er valgt. Din initialisering af e-Commerce er påbegyndt.
 1. Før du fortsætter, skal du vente, indtil initialiseringsstatus for din e-Commerce er **Initialisering blev gennemført**.
 1. Under **Links** nederst til højre skal du notere URL-adresserne for følgende links:
 
@@ -292,13 +243,13 @@ For at fortsætte processen med klargøring og konfigurering af dit Commerce-pr�
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over miljø til prøveversion af Commerce](cpe-overview.md)
+[Oversigt over Dynamics 365 Commerce-prøveversionsmiljø](cpe-overview.md)
 
-[Konfigurering af et Commerce-prøveversionsmiljø](cpe-post-provisioning.md)
+[Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø](cpe-post-provisioning.md)
 
-[Konfigurer valgfrie funktioner for et Commerce-prøveversionsmiljø](cpe-optional-features.md)
+[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø](cpe-optional-features.md)
 
-[Ofte stillede spørgsmål om Commerce-prøveversionsmiljø](cpe-faq.md)
+[Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ For at fortsætte processen med klargøring og konfigurering af dit Commerce-pr�
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Hjælp-ressourcer til Dynamics 365 Retail](../retail/index.md)

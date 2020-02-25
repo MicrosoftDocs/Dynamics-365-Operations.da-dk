@@ -3,7 +3,7 @@ title: Tilføj en copyright-meddelelse
 description: I dette emne beskrives det, hvordan du føjer en copyrightmeddelelse til e-handelswebstedet.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914559"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025476"
 ---
 # <a name="add-a-copyright-notice"></a>Tilføj en copyright-meddelelse
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives det, hvordan du føjer en copyrightmeddelelse til e-handelswebstedet.
@@ -48,8 +48,8 @@ Hvis du vil tilføje en meddelelse om ophavsret nederst på alle de sider, der b
 1. Vælg ellipseknappen (**...**) i navigationsruden ud for **Sidefod**, og vælg derefter **Tilføj modul**.
 1. Vælg **Sidefodskategori** i dialogboksen, og vælg derefter **OK**.
 1. Vælg ellipseknappen i navigationsruden ud for **Sidefodskategori**, og vælg derefter **Tilføj modul**.
-1. Vælg **Element for indholdsrig blok** i dialogboksen, og vælg derefter **OK**.
-1. Vælg **Element for indholdsrig blok** i navigationsruden.
+1. Vælg **Tekstblok** i dialogboksen, og vælg derefter **OK**.
+1. Vælg **Tekstblok**i navigationsruden.
 1. Tilføj meddelelsen om ophavsret i egenskabsruden til højre i feltet **Afsnit**. Angiv f.eks. **(C) Fabrikam 2019**.
 1. Vælg **Gem**, vælg **Tjek ind**, og vælg derefter **Publicer**.
 1. Gå til **Skabeloner**, vælg skabelonen, og vælg derefter **Tjek ud**.

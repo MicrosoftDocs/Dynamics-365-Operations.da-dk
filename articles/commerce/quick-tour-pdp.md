@@ -3,7 +3,7 @@ title: Oversigt over sider med produktdetaljer
 description: Dette emne indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b02d50adbfcda27d590bcb87fd9669d67d4a01c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: dbf8f4c1ea479a508f4a0294020b7201b32fe228
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697859"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025919"
 ---
 # <a name="overview-of-product-details-pages"></a>Oversigt over sider med produktdetaljer
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
@@ -45,7 +45,7 @@ Den øverste del af en PDP har et sidehoved, der viser alle produktkategorierne 
 
 ## <a name="buy-box-module"></a>Boksmodul til køb
 
-Det vigtigste modul på en PDP er boksmodulet til køb. Det er derfor det første element i hovedsektionen på siden. Et boksmodul til køb er et container-modul, som er vært for flere forskellige moduler, der indeholder de vigtigste oplysninger om produktet. Disse oplysninger omfatter produktnavn, produktbilleder, beskrivelse, pris og produktvurderinger.
+Det vigtigste modul på en PDP er modulet med købsfeltet, som vises som det første element i hovedsektionen på siden. I et købsfeltmodul vises vigtige produktoplysninger, f.eks. produktnavn, produktbeskrivelse, produktpris, produktbilleder og produktvurderinger.
 
 I boksmodulet til køb kan kunden vælge produktindstillinger (f.eks. en størrelse, en stil og en farve) og føje produktet til indkøbsvognen. Det giver også kunden mulighed for at købe produktet online og plukke det på et lager. Køb online, og afhent i butikken-modulet bruger integration med Bing Kort-API'er (Application Programming Interfaces) til at finde butikker i nærheden eller butikker på et andet sted, som kunden angiver.
 
@@ -53,7 +53,7 @@ Et boksmodul til køb kræver et produkt-id. Dette id er afledt af sidekontekste
 
 ## <a name="product-specifications-module"></a>Modul til produktspecifikationer
 
-Modulet til produktspecifikationer kan bruges til at vise yderligere oplysninger om produktet. Disse oplysninger hentes fra produktattributter i Dynamics 365 Retail. I modulet til produktspecifikationer vises alle attributter, hvor egenskaben **synlig** er angivet til **sand**. Der kræves et produkt-id for at hente produktattributterne.
+Modulet til produktspecifikationer kan bruges til at vise yderligere oplysninger om produktet. Disse oplysninger hentes fra produktattributter i Commerce. I modulet til produktspecifikationer vises alle attributter, hvor egenskaben **synlig** er angivet til **sand**. Der kræves et produkt-id for at hente produktattributterne.
 
 ## <a name="recommendations-module"></a>Anbefalingsmodulet
 
@@ -62,17 +62,23 @@ Anbefalingsmodulet er et vigtigt modul på en PDP. Mens kunder søger efter prod
 Der findes forskellige typer af anbefalingslister:
 
 - Listen **Personer synes også om** er baseret på maskinel indlæring. Den bruger transaktionshistorikken fra andre kunder til at give anbefalinger. Denne liste genereres af anbefalingstjenesten og minder om listetypen "Kunder, der købte dette, købte også...". Der kræves et produkt-id for at generere denne liste.
-- Der kan konfigureres en **Relateret**-liste for et produkt i Retail. Til en brun rejsetaske i læder kan der f.eks. være konfigureret flere tasker, der er fremstillet af læder eller designet til rejsebrug, på den relaterede liste. Andre typer af relaterede lister, som f.eks. **Tilbehør** og **Mere som dette** kan også konfigureres i Retail. Der kræves et produkt-id for at generere denne liste. Hvis sidekonteksten ikke omfatter et produkt-id, vil listen derfor være tom, hvis den føjes til en startside.
+- Der kan konfigureres en **Relateret**-liste for et produkt i Commerce. Til en brun rejsetaske i læder kan der f.eks. være konfigureret flere tasker, der er fremstillet af læder eller designet til rejsebrug, på den relaterede liste. Andre typer af relaterede lister som f.eks. **Tilbehør** og **Mere som dette** kan også konfigureres i Commerce. Der kræves et produkt-id for at generere denne liste. Hvis sidekonteksten ikke omfatter et produkt-id, vil listen derfor være tom, hvis den føjes til en startside.
 - Algoritmisk genererede anbefalingslister, f.eks. **Mest populære**, **Mest solgte** og **Nyt**, kan bruges på PDP'er. Selvom disse lister ikke er direkte relateret til produktet på PDP, kan de også hjælpe kunderne med at finde produkter, der er interessante for dem. Disse typer lister kræver ikke et produkt-id. De er standardlister, der genereres på basis af indkøbsmønstre på tværs af webstedet.
 - Redaktionelle lister er manuelt fremstillede lister. En forhandler kan f.eks. manuelt fremstille lister over produkter, der skal vises frem.
 
-## <a name="ratings-and-reviews-module"></a>Modulet til vurderinger og anmeldelser
+## <a name="ratings-and-reviews-modules"></a>Moduler til vurderinger og anmeldelser
 
-Modulet til vurderinger og anmeldelser indeholder vurderinger og anmeldelser, der er leveret af andre kunder. Det giver også kunden mulighed for at skrive sin egen anmeldelse af produktet. Desuden indeholder den et histogram, der viser vurderingstendensen for produktet. Du kan finde flere oplysninger under [Oversigt over vurderinger og anmeldelser](ratings-reviews-overview.md).
+Tre moduler kan bruges til at vise og tilføje anmeldelser:
+
+- **Anmeldelser** – Modulet indeholder vurderinger og anmeldelser, der er leveret af andre kunder. Kunderne kan sortere og filtrere anmeldelserne. Dette modul giver også kunder mulighed for at synes om eller ikke synes om anmeldelser, og de kan rapportere problemer.
+- **Skriv anmeldelse** – Med dette modul kan kunderne skrive deres egne anmeldelser af et produkt.
+- **Vurderingshistogram** – Dette modul indeholder et histogram, der viser vurderingstendensen for et produkt.
+
+Du kan finde flere oplysninger under [Oversigt over vurderinger og anmeldelser](ratings-reviews-overview.md).
 
 ## <a name="marketing-modules"></a>Marketingmoduler
 
-Hvis marketingindhold er entydigt for et bestemt produkt, kan der føjes et marketingmodul til PDP. Du kan føje marketingmoduler til en PDP ved at "forbedre" siden. 
+Hvis marketingindhold er entydigt for et bestemt produkt, kan der føjes et marketingmodul til PDP. Du kan føje marketingmoduler til en PDP ved at "forbedre" siden. Du kan finde flere oplysninger under [Forbedre en produktside](enrich-product-page.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -83,3 +89,5 @@ Hvis marketingindhold er entydigt for et bestemt produkt, kan der føjes et mark
 [Oversigt over sider til indkøbsvogn og betaling ved kassen](quick-tour-cart-checkout.md)
 
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
+
+[Forbedre en side med produktdetaljer](enrich-product-page.md)
