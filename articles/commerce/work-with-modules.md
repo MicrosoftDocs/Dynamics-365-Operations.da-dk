@@ -3,7 +3,7 @@ title: Arbejde med moduler
 description: Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914788"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025873"
 ---
 # <a name="work-with-modules"></a>Arbejde med moduler
 
 Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Oversigt
@@ -99,12 +99,10 @@ I følgende procedurer beskrives, hvordan du kan konfigurere indholds- og contai
 
 Hvis du vil konfigurere et indholdsmodul på en side, skal du følge disse trin.
 
-1. Vælg en indholdsmodultype i dispositionsruden til venstre (f.eks. **Funktion**, **Hero** eller **Banner**).
-1. Udvid de indlejrede kontrolelementer i ruden Egenskaber til højre ved at vælge overskrifterne, og angiv eventuelle nødvendige kontrolværdier.
-1. Hvis ruden Egenskaber indeholder afsnittet **Datakonfiguration**, skal du vælge det for at udvide det. Gå ellers til trin 5.
-1. Hvis knappen **Tilføj datakilde** ikke er markeret, skal du markere den og derefter vælge de indholdselementer, der skal tilføjes.
-1. Angiv indstillinger for nødvendige eller ønskede kontrolelementer til moduler.
-1. Vælg **Gem**.
+1. Udvid træet i dispositionsruden til venstre, og vælg et indholdsmodul (f.eks. **Funktion**, **Hero** eller **Banner**).
+1. Find kontrolelementerne til modulets indhold og indstillinger i ruden Egenskaber til højre.
+1. Angiv egenskaber for de ønskede kontrolelementer til moduler.
+1. Vælg **Gem** på kommandolinjen. Dette vil også opdatere eksemplet på lærredet.
 
 ### <a name="configure-a-container-module"></a>Konfigurere et containermodul
 
@@ -112,7 +110,7 @@ Hvis du vil konfigurere et containermodul på en side, skal du følge disse trin
 
 1. Vælg et containermodul på siden (f.eks. et karrusel- eller flydende containermodul).
 1. Udvid de indlejrede kontrolelementer i ruden Egenskaber til højre ved at vælge overskrifterne, og angiv eventuelle nødvendige kontrolværdier.
-1. Vælg ellipseknappen i dispositionsruden til venstre ud for navnet på enten containeren eller pladser inde i containeren, og vælg derefter **Tilføj modul**. Føj derefter underordnede moduler til den valgte container. Du kan finde flere oplysninger i proceduren [Tilføje et modul](#add-a-module) tidligere i dette emne.
+1. Vælg ellipseknappen i dispositionsruden til venstre ud for navnet på enten containeren eller pladser inde i containeren, og vælg derefter **Tilføj modul**. Føj derefter underordnede moduler til den valgte container. Du kan finde flere oplysninger i afsnittet [Arbejde med moduler](#add-a-module) tidligere i dette emne.
 1. Hvis der findes flere underordnede moduler som sidestillede i en overordnet container, kan du ændre deres visningsrækkefølge i den overordnede container. Vælg ellipseknappen for et modul, og brug derefter knapperne pil op og pil ned.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
@@ -127,7 +125,5 @@ Hvis du vil konfigurere et containermodul på en side, skal du følge disse trin
 
 [Føje et containermodul til en side](add-container-module.md)
 
-[Føje moduler for indholdsplacering til en side](add-content-placement-modules.md)
-
-[Arbejd med publiceringsgrupper](publish-groups.md)
+[Arbejde med publiceringsgrupper](publish-groups.md)
 

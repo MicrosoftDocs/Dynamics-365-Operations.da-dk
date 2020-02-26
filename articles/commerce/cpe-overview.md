@@ -1,5 +1,5 @@
 ---
-title: Oversigt over prøveversionsmiljøet til Commerce
+title: Oversigt over Dynamics 365 Commerce-prøveversionsmiljø
 description: Dette emne indeholder en oversigt over prøveversionsmiljøet til Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 901583afde4739be5313fa129ff0e52f11326881
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906064"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024677"
 ---
-# <a name="commerce-preview-environment-overview"></a>Oversigt over prøveversionsmiljøet til Commerce
+# <a name="dynamics-365-commerce-preview-environment-overview"></a>Oversigt over Dynamics 365 Commerce-prøveversionsmiljø
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over prøveversionsmiljøet til Microsoft Dynamics 365 Commerce.
@@ -52,10 +52,10 @@ Hvis du vil klargør Commerce-prøveversionsmiljøet se [Klargøring af et Comme
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Klargøring af et Commerce-prøveversionsmiljø](provisioning-guide.md)
+[Klargøre et Dynamics 365 Commerce-prøveversionsmiljø](provisioning-guide.md)
 
-[Konfigurering af et Commerce-prøveversionsmiljø](cpe-post-provisioning.md)
+[Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø](cpe-post-provisioning.md)
 
-[Konfigurer valgfrie funktioner for et Commerce-prøveversionsmiljø](cpe-optional-features.md)
+[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø](cpe-optional-features.md)
 
-[Ofte stillede spørgsmål om Commerce-prøveversionsmiljø](cpe-faq.md)
+[Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø](cpe-faq.md)

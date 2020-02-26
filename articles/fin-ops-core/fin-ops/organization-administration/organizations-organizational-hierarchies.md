@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812380"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003673"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversigt over organisationer og organisationshierarkier
 
@@ -47,7 +47,7 @@ Et firma er en type juridisk enhed. I øjeblikket er firmaer den eneste slags ju
 
 En driftsenhed er en organisation, der bruges til at opdele administrationen af økonomiske ressourcer og driftsprocesser i et firma. Personer i en driftsenhed er forpligtet til at maksimere brugen af knappe ressourcer, til at forbedre processer og til at redegøre for deres præstation.
 
-Typerne af driftsenheder omfatter bærere, virksomhedsenheder, værdistrømme, afdelinger og detailkanaler. Tabellen nedenfor indeholder flere oplysninger om hver type driftsenhed.
+Typerne af driftsenheder omfatter bærere, virksomhedsenheder, værdistrømme, afdelinger og handelskanaler. Tabellen nedenfor indeholder flere oplysninger om hver type driftsenhed.
 
 | Type driftsenhed | Beskrivelser | Formål |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ Typerne af driftsenheder omfatter bærere, virksomhedsenheder, værdistrømme, a
 | Virksomhedsenhed       | En halvautomatisk driftsenhed, der er skabt for at nå strategiske forretningsmålsætninger. | Bruges til regnskabsaflægning, der er baseret på brancher eller produktlinjer, som organisationen betjener uafhængigt af juridiske enheder. |
 | Værdistrøm        | En driftsenhed, der kontrollerer en eller flere produktionsflow. | Bruges normalt ved lean produktion til kontrol af aktiviteter og flow, der er påkrævet for at levere et produkt eller en tjeneste til forbrugere. |
 | Afdeling          | En driftsenhed, der repræsenterer en kategori eller funktionel del af en organisation, der udfører en bestemt opgave, som f.eks. salg eller regnskab. | Bruges til afrapportering for funktionelle områder. En afdeling kan have ansvar for driftsregnskabet og kan bestå af en gruppe af bærere. |
-| Detailkanal      | En driftsenhed, der repræsenterer en fysisk butik, en onlinebutik eller en onlinemarkedsplads. | Bruges til styring og driftskontrol af en eller flere butikker inden for eller på tværs af juridiske enheder. |
+| Handelskanal      | En driftsenhed, der repræsenterer en fysisk butik, en onlinebutik eller en onlinemarkedsplads. | Bruges til styring og driftskontrol af en eller flere butikker inden for eller på tværs af juridiske enheder. |
 
 ### <a name="teams"></a>Team
 

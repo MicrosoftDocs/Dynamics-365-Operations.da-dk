@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563383"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004082"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Levere produkter direkte fra modtagende lagersteder til butikker
 
@@ -31,7 +31,7 @@ Denne procedure gennemgår trin til oprettelse og behandling af en cross-dock me
 
 1. Gå til Alle indkøbsordrer.
 2. Vælg en indkøbsordre på listen, og klik på linket for at åbne ordren.
-3. Klik på Detail i handlingsruden.
+3. Klik på Retail og Commerce i handlingsruden.
 4. Klik på Cross docking.
 5. Klik på Rediger.
     * Kategorien, der kan bruges til at filtrere varerne i sektionen Linjer.  

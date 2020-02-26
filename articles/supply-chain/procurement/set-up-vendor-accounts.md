@@ -3,7 +3,7 @@ title: Konfigurer kreditorkonti
 description: I dette emne beskrives, hvilke typer oplysninger du skal angive, når du opretter en ny kreditorkonto.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249379"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012439"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurer kreditorkonti
 
@@ -88,7 +88,7 @@ Du kan placere en kreditor i venteposition for forskellige posteringstyper. Føl
 -   **Faktura** – Der kan ikke bogføres fakturaer for kreditoren.
 -   **Alle** – Kreditoren er sat på hold for alle transaktionstyper. Disse transaktionsstyper omfatter indkøbsrekvisitioner, fakturaer og betalinger.
 -   **Betaling** – Der kan ikke genereres betalinger for kreditoren.
--   **Rekvisition** – Der kan kun oprettes indkøbsrekvisitioner. Der kan ikke oprettes andre transaktioner.
+-   **Rekvisition** – Indkøbsrekvisitioner kan ikke oprettes for kreditoren, og de rekvisitionslinjer, der allerede er oprettet, før kreditoren blev sat på hold, kan ikke konverteres til en indkøbsordre. Rekvisitionslinjer for kreditoren annulleres, hvis din politik er indstillet til automatisk oprettelse af indkøbsordrer.
 -   **Aldrig** – Kreditoren bliver aldrig sat på hold på grund af inaktivitet.
 
 Når du sætter en kreditor på hold, kan du også angive en årsag og en dato, hvor ventepositionen ophører. Hvis du ikke angiver en slutdato, opretholdes ventepositionen på ubestemt tid.

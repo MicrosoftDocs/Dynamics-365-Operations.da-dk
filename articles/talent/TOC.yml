@@ -8,6 +8,12 @@
         - name: Nyheder eller ændringer i Talent
           href: whats-new.md
           items:
+            - name: 21. januar 2020
+              href: whats-new-talent-january-21-2020.md
+            - name: 14. januar 2020
+              href: whats-new-talent-january-14-2020.md
+            - name: 7. januar 2020
+              href: whats-new-talent-january-7-2020.md
             - name: 17. december 2019
               href: whats-new-talent-december-17-2019.md
             - name: 12. december 2019
@@ -28,12 +34,12 @@
               href: whats-new-talent-october-8-2019.md
             - name: 1. oktober 2019
               href: whats-new-talent-october-1-2019.md
-            - name: 17. september 2019
-              href: whats-new-talent-september-17-2019.md
-            - name: 10. september 2019
-              href: whats-new-talent-september-12-2019.md
             - name: Arkiver med nyheder 2019
               items:
+                - name: 17. september 2019
+                  href: whats-new-talent-september-17-2019.md
+                - name: 10. september 2019
+                  href: whats-new-talent-september-12-2019.md
                 - name: 27. august 2019
                   href: whats-new-talent-august-28-2019.md
                 - name: 22. august 2019
@@ -136,18 +142,14 @@
           href: talent-updates.md
         - name: Klargøre Talent
           href: provisioning-talent.md
-        - name: Kopiere en Core HR-forekomst
-          href: hr-copy-instance.md
-        - name: Fjerne Talent-miljøer
-          href: remove-talent-environment.md
         - name: Administrere funktioner
           href: access-preview-feature.md
         - name: Klargøre Onboard
           href: modular-app-tech-faq.md
-        - name: Integrer Power Apps-apps
+        - name: Eksportere data fra Attract og Onboard
+          href: attract-onboard-export-data.md
+        - name: Integrere Microsoft Power Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR-enheder i Common Data Service
-          href: CoreHREntities.md
         - name: Få support til Talent
           href: talent-support.md
     - name: Udstyre din organisation med Attract
@@ -216,7 +218,7 @@
           href: extensibility-attract.md
     - name: Byde nyansatte velkommen med Onboard
       items:
-        - name: Komme i gang med Onboard
+        - name: Kom i gang med Onboard
           href: create-onboarding-experience.md
         - name: Hente Onboard-appen
           href: onboard-get-app.md
@@ -232,266 +234,19 @@
           href: onboard-view-status.md
         - name: Oprette et ansættelsesteam
           href: onboard-create-team.md
-    - name: Administrere dine medarbejdere med Core HR
-      items:
-        - name: Organisere dine medarbejdere
-          items:
-            - name: 'Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger'
-              href: departments-jobs-positions.md
-            - name: Konfigurere komponenterne i et job
-              href: create-job.md
-            - name: Strømlinet medarbejderangivelse og navigation
-              href: streamlined-employee-entry.md
-            - name: Oprette afdelinger og medtage dem i afdelingshierarkiet
-              href: create-department-add-department-hierarchy.md
-            - name: Angive personaleparametre på tværs af juridiske enheder
-              href: set-up-hr-parameters-across-legal-entities.md
-            - name: Oprette firmaspecifikke personaleparametre
-              href: set-up-company-specific-hr-parameters.md
-            - name: Dato-og tidsfelter i Talent
-              href: date-time-fields-in-talent.md
-            - name: Ofte stillede spørgsmål om personalehandlinger
-              href: personnel-actions-faq.md
-            - name: Formalisere forretningsprocesser
-              href: formalize-business-processes.md
-            - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
-              href: workflow-manage-employee-information.md
-            - name: Oprette nummerserier
-              items:
-                - name: Oversigt over nummerserier
-                  href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurere individuelle nummerserier
-                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oprette nummerserier ved hjælp af en guide
-                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurere organisationer og organisationshierarkier
-              items:
-                - name: Oversigt over organisationer
-                  href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Planlægge dit organisationshierarki
-                  href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oprette et organisationshierarki
-                  href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oprette en juridisk enhed
-                  href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oprette en driftsenhed
-                  href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Oprette et globalt adressekartotek
-              items:
-                - name: Oversigt over globalt adressekartotek
-                  href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Planlægge for det globale adressekartotek og andre
-                  href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurere det globale adressekartotek
-                  href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Ofte stillede spørgsmål om adressekartoteker
-                  href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurere arbejdsgange
-              items:
-                - name: Oversigt over arbejdsgang
-                  href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Arbejdsgangselementer
-                  href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Handlinger i godkendelsesprocesser i arbejdsgang
-                  href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oprette arbejdsgange
-                  href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                  items:
-                    - name: Konfigurere egenskaber for arbejdsgange
-                      href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere manuelle opgaver
-                      href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere automatiserede opgaver
-                      href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere godkendelsesprocesser
-                      href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere godkendelsestrin
-                      href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere manuelle beslutninger
-                      href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere betingede beslutninger
-                      href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere parallelle aktiviteter
-                      href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere parallelle grene
-                      href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: Konfigurere arbejdsgange for linjeelementer
-                      href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Konfigurer batchjob til behandling af arbejdsgangmeddelelser
-                  href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Uddelegere arbejdselementer i en arbejdsgang
-                  href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Vise arbejdsgangshistorik
-                  href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Give brugere mulighed for at modtage arbejdsgangsrelaterede mailmeddelelser
-                  href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurere påmindelser
-              items:
-                - name: Oversigt over påmindelser
-                  href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oprette påmindelsesregler
-                  href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Batchbehandling af påmindelser
-                  href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Håndtere sager
-              items:
-                - name: Oversigt over sagsstyring
-                  href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 'Planlægge sagssikkerhed, -processer og -kategorier'
-                  href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurere dokumentstyring
-              href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Konfigurere og sende mail
-              href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Data om dato/klokkeslæt og tidszoner
-              href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Konfigurere orlov og fravær
-          items:
-            - name: Administrere orlov og fravær
-              href: leave-absence-overview.md
-            - name: Orlovs- og fraværskoncepter
-              href: leave-absence-concepts.md
-            - name: Periodisere fravær baseret på antal arbejdstimer
-              href: leave-accrue-hours-worked.md
-            - name: Arbejdstidskalendere
-              href: working-time-calendars.md
-        - name: Konfigurere lønstrukturer
-          items:
-            - name: Oversigt over lønstukturer
-              href: compensation-plans.md
-            - name: Oprette planer for fast løn
-              href: create-fixed-compensation-plans.md
-            - name: Oprette planer for variabel kompensation
-              href: create-variable-compensation-plans.md
-            - name: Behandle kompensation
-              href: process-compensation.md
-            - name: Konfigurere komponenterne i et job
-              href: create-job.md
-        - name: Udvikle og undervise medarbejdere
-          items:
-            - name: Performancestyring
-              href: performance-management-overview.md
-            - name: Justere arbejdsstyrkens færdigheder med forretningsbehov
-              href: skills.md
-            - name: Konfigurere kurser
-              href: courses.md
-            - name: Føje til performancekladde og sende ros til en person
-              href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Oprette et mål
-              href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Oprette en performancegennemgang
-              href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Definere og administrere et frynsegodeprogram
-          items:
-            - name: Definere og administrere et frynsegodeprogram
-              href: manage-benefit-program.md
-            - name: Politikker for berettigelse til frynsegoder
-              href: benefit-eligibility-policies.md
-            - name: Generere Affordable Care Act-indberetninger (ACA)
-              href: generate-aca-reports.md
-            - name: 'Administrere udstyr, der udlånes til arbejdere'
-              href: loan-items.md
-        - name: Evaluere nøgleværdier med spørgeskemaer
-          items:
-            - name: Indsamle oplysninger med spørgeskemaer
-              href: questionnaires.md
-            - name: Designe spørgeskemaer
-              href: design-questionnaires.md
-            - name: Udsende og planlægge spørgeskemaer
-              href: distribute-questionnaires.md
-            - name: Se og evaluere resultaterne af spørgeskemaer
-              href: evaluate-questionnaire-results.md
-        - name: Sikkerhed og overholdelse på arbejdspladsen (USA)
-          items:
-            - name: Besvare en anmodning om personlige data i Talent
-              href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: I-9-formular til ansættelsesbekræftelse
-              href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Overholde ADA
-              href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Integration
-      items:
-        - name: Vejledning til integration af data til Dynamics 365 for Talent
-          href: data-integration.md
-        - name: Konfigurere Common Data Service-integration
-          href: hr-common-data-service-integration.md
-        - name: Integrere med Dynamics 365 for Finance and Operations
-          href: talent-financeandoperations-integration.md
-        - name: Konfigurere lønintegrationen mellem Talent og Dayforce
-          href: configure-payroll-integration.md
-        - name: Ofte stillede spørgsmål til integration
-          href: talent-fo-integration.md
-        - name: Tilbagevendende dataeksport ved hjælp af Azure Logic Apps
-          href: tutorial-integration-recurring-export.md
-        - name: Office-integration
-          items:
-            - name: Selvstudium til Office-integration
-              href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Opdatere enhedsdata i Excel
-              href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Oprette Åbn i Excel-oplevelser
-              href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Fejlfinding af Office-integration
-              href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Udvidelsesmuligheder
       items:
-        - name: Integreret Power BI i arbejdsområder
-          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Udvide Talent med Power Apps og Power Automate
-          href: extensibility-examples.md
-        - name: Mobilapp
-          items:
-            - name: Arbejdsområder til mobile enheder
-              items:
-                - name: Mobilarbejdsområdet Firmaadressekartotek
-                  href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Mobilarbejdsområdet Mit team
-                  href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Spore ændringer i rekrutteringsdata
           href: process-auditing.md
         - name: Udvidelsesmuligheder i Attract
           href: extensibility-attract.md
-        - name: Brugerdefinerede felter i Core HR
-          href: corehr-custom-fields.md
-        - name: Enheds-API-reference
-          items:
-            - name: Godkendelse
-              href: api-odata-authentication.md
-            - name: Enheder
-              items:
-                - name: MyLeaveRequests
-                  items:
-                    - name: Oversigt over MyLeaveRequests
-                      href: api-myleaverequests-overview.md
-                    - name: Sende en orlovsanmodning til arbejdsgang
-                      href: api-myleaverequests-submit.md
-    - name: Fejlfinding af Talent
+        - name: Udvide Talent med Power Apps og Power Automate
+          href: extensibility-examples.md
+    - name: Fejlfinding af Attract og Onboard
       items:
-        - name: Optimere ydeevnen med automatiske oprydningsopgaver
-          href: talent-batch-history-cleanup.md
         - name: Fejlfinding af opslag af job på LinkedIn
           href: attract-troubleshoot-linkedin.md
-        - name: Analytiske rapporter opdateres ikke
-          href: analytic-reports-not-updated.md
-        - name: Kan ikke oprette et miljø i PowerApps Administration
-          href: create-envi-powerapps-admin-ctr.md
-        - name: Talent-klient afbryder forbindelsen
-          href: client-disconnects.md
-        - name: 'Undgå tekstafkortning i stillingshierarkiet, og eksportér til Visio'
-          href: avoid-text-truncation-position-hierarchy-visio.md
-        - name: Kør kompensationsprocessen
-          href: run-compensation-process.md
-        - name: 'Gem opgaveguider for LCS, og afspil dem'
-          href: save-play-task-guides-LCS.md
-        - name: Adgang til privatadresser efter sikkerhedsrolle
-          href: security-roles-addresses.md
-        - name: Talent vises ikke sammen med Microsoft Dynamics 365-apps (Common Data Service 1.0)
-          href: talent-not-in-home-CDS.md
-        - name: 'Brugeren kan få adgang til Core HR, men ikke Onboard- eller Attract-appen'
+        - name: 'Brugeren kan få adgang til Human Resources, men ikke Onboard- eller Attract-appen'
           href: user-access-core-hr.md
-        - name: Rapporteringsindstillinger i Talent
-          href: talent-reporting-options.md
-        - name: Ofte stillede spørgsmål til integration
-          href: talent-FO-integration.md
         - name: 'Azure Active Directory-brugere, der blev ikke fundet i personvælgeren'
           href: people-picker-user-not-found.md

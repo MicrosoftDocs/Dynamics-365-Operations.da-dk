@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b409b6cd5eb8c1b96ffb9cc1df47ff88019989f9
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: f8c2cdbf055a2854c4140d3ccc264da260c7cdf5
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945984"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002260"
 ---
 # <a name="compliance-overview"></a>Oversigt over overholdelse
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over den overholdelsesvejledning, der leveres sammen Microsoft Dynamics 365 Commerce for at hjælpe dig med at sikre dine virksomhedswebsteders overholdelse. Overholdelse er en vigtig faktor for alle virksomheder, fordi det hjælper deres brugerbase med at oprette forbindelse til deres webstedsindhold. Ved at forblive kompatibel, kan du også hjælpe med at beskytte din virksomhed mod dyre retssager eller heftige bøder.

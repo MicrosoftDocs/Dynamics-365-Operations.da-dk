@@ -3,7 +3,7 @@ title: Oprette nye brugere
 description: Brugerne er interne medarbejdere i din organisation, eller eksterne debitorer og kreditorer, der kræver adgang til systemet for at udføre deres job.
 author: maertenm
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 02/06/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c347a34a389c32d005cc8086c4a1349ecb8a698
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6d884dfe30be5684a90925d4d2d9ab7eebca5b44
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570515"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029803"
 ---
 # <a name="create-new-users"></a>Oprette nye brugere
 
@@ -30,9 +30,12 @@ ms.locfileid: "2570515"
 Brugerne er interne medarbejdere i din organisation eller eksterne debitorer og kreditorer, der kræver adgang til systemet for at udføre deres job.
 
 ## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Tilknyt en bruger til en licens (kun nye licenstyper)
-For kunder, der er medlem af en af de nye licenstyper, som er tilføjet i oktober 2019, skal brugere være tilknyttet en licens. Brugere, der er tilknyttet en licens, tilføjes automatisk som systembrugere, der ikke har nogen roller, første gang de logger på. Brugere, der ikke er knyttet til et licens, får vist en advarselsmeddelelse.
+For kunder, der er medlem af en af de nye licenstyper, som er tilføjet i oktober 2019, skal brugere være tilknyttet en licens. Brugere, der er tilknyttet en licens, tilføjes automatisk som systembrugere, der ikke har nogen roller, første gang de logger på.
 
 Systemadministratorer kan [tildele licenser til brugere](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) i [Microsoft 365 Administration](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+
+## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Tilknytte en ekstern bruger til en licens (kun nye licenstyper)
+Brugere uden for den lejer, som miljøet blev implementeret i, skal repræsenteres i værtslejebiblioteket (Azure Active Directory (Azure AD)), så de kan tildeles licenser. Disse eksterne brugere skal føjes til lejeren i Azure AD som gæstebrugere og derefter tildeles de relevante licenser. Du kan finde flere oplysninger under [Tilføje Azure Active Directory B2B-samarbejdsbrugere i Azure-portalen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="add-a-new-user"></a>Tilføje en ny bruger
 1. Gå til **Systemadministration \> Brugere \> Brugere**.
@@ -42,7 +45,7 @@ Systemadministratorer kan [tildele licenser til brugere](https://docs.microsoft.
 5. I feltet **Domæne** skal du angive brugerens domæne.  
 6. Angiv brugerens alias i feltet **Alias**.  
 7. I feltet **Firma** skal du vælge det ønskede firma. 
-8. I oversigtspanelet **Brugerens roller** skal du vælge **Tildel roller** for at [tildele brugere til sikkerhedsroller](assign-users-security-roles.md)
+8. I oversigtspanelet **Brugerens roller** skal du vælge **Tildel roller** for at tildele brugere til sikkerhedsroller. Du kan finde flere oplysninger under [Tildele brugere til sikkerhedsroller](assign-users-security-roles.md).
 9. Vælg **OK**.
 10. Vælg **Gem**.
 

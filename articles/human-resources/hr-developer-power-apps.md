@@ -1,0 +1,61 @@
+---
+title: Udvide Talent med Power Apps og Power Automate
+description: Denne artikel beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 Human Resources ved hjælp af Microsoft Power Apps og Microsoft Power Automate.
+author: negudava
+manager: Annbe
+ms.date: 02/06/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-human-resources
+ms.technology: Dynamics 365 Human Resources;PowerApps;Flow;Common Data Service
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Core;Experience Apps;Human Resources
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: negudava
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 8d4185b958ed35e9d2bc764db8ea77b3a2f53c37
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029859"
+---
+# <a name="extend-with-power-apps-and-power-automate"></a>Udvide med Power Apps og Power Automate
+
+Denne artikel beskriver nogle eksempler på udvidelsesmulighederne for Microsoft Dynamics 365 Human Resources ved hjælp af Microsoft Power Apps og Microsoft Power Automate. Du kan importere løsningspakken, der er tilknyttet hvert eksempel, til dit Power Apps-miljø. Du kan dernæst anvende pakkerne enten som vejledning eller som udgangspunktet for at implementere scenarier, der er anvendelige for din organisation.
+
+> [!IMPORTANT]
+> Såfremt du ønsker at anvende de i dette emne beskrevne skabeloner og apps "som de er", skal du afprøve dem for at sikre dig, at de omfatter alle de scenarier, der er specifikke for din implementering.
+
+## <a name="prerequisites"></a>Forudsætninger
+
+- For at importere pakker skal brugerne have rettigheden **Miljøoprettelse**.
+- For at eksportere eller importere apps skal brugerne have en licens til en Power Apps Plan 2 eller en Power Apps Plan 2-prøveversion.
+
+## <a name="integration-with-office-365-power-automate"></a>Integration med Office 365, Power Automate
+
+Appen **Integration med Office 365** kan anvendes til at udtrække teamoplysninger for brugere, der er logget på Microsoft Office 365. Den refererer til arbejdere i personale for at udtrække medarbejderidentifikationstyper. Ledere kan kontrollere udløbsdatoer for medarbejder-id-typer. De kan også sende en påmindelse via mail, hvis medarbejder-id-typen udløber. Power Automate kan integreres med Power Apps for at sende denne påmindelse. Der sendes en bekræftelse tilbage til Power Apps fra Power Automate, når påmindelsen er sendt. Identifikationstyper omfatter chaufførens kørekort, pas og andre acceptable former for id.
+
+Du kan udvide denne app til andre scenarier. Du kan eksempelvis anvende den til at vise oplysninger om teamets ferie, kalenderhændelser og alle teamspecifikke hændelser.
+
+Du kan downloade appen **Integration med Office 365, Power Automate** ved at gå til [Integration med Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) i Microsoft Download Center.
+
+## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – Forbindelse til SQL og udførelse
+
+Skabelonen **Power Automate – Forbindelse til SQL og udførelse** forbinder til Microsoft SQL Server og gør det muligt at køre SQL-forespørgsler.
+
+Selvom denne skabelon læser og opdaterer SQL-tabeller, kan du udvide den og bruge den til andre scenarier. Du kan eksempelvis anvende den til at udfylde en stadieinddelt tabel i Common Data Service med poster fra SQL-serveren og til at synkronisere den stadieinddelte tabel periodisk ved hjælp af en trinvis overførelse fra SQL-serveren.
+
+En avanceret forespørgsel er integreret med flow, der muliggør datatransformation og trinvis push.
+
+Du kan downloade skabelonen **Power Automate – Forbindelse til SQL og udførelse** i Microsoft Download Center ved hjælp af følgende link: [Power Automate – Forbindelse til SQL og udførelse](https://go.microsoft.com/fwlink/?linkid=2081789).
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Klientens Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+[Overfør app mellem lejere og miljøer](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

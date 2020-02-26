@@ -3,7 +3,7 @@ title: Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver
 description: I dette emne beskrives, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026900"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028022"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver
 
@@ -152,7 +152,7 @@ Vælg denne for at bruge batchstrategier til de varer, der er batchaktiverede. H
 ### <a name="strategy"></a>Strategi
 
 -   **Konsolider** - Denne strategi bruges til at konsolidere varer i en bestemt lokation, når der allerede findes lignende varer. Dette fungerer kun med lokationsvejledninger af typen Læg på lager. Almindelig opsætning af læg på lager er at konsolidere på den første handlingslinje og derefter i andet forsøg at lægge på lager uden konsolidering. Konsolidering af varer gør senere pluk mere effektivt.
--   **Match emballagemængde** - Denne strategi bruges til at kontrollere, om en pluklokation har den angivne emballagemængde. Dette fungerer kun med lokationsvejledninger af typen Pluk. 
+-   **Match emballagemængde** – Denne strategi finder en lokation, der indeholder et id, som har det nøjagtige antal, der skal bruges. Det kan ikke bruges sammen med lokationer, der ikke styres via et id. Denne strategi fungerer kun med lokationsvejledninger af arbejdstypen Pluk.
 -   **FEFO-batchreservation** - Denne strategi bruges, når lageret lokaliseres ved hjælp af en batchudløbsdato og tildeles batchreservation. Du kan kun bruge denne strategi til batchaktiverede varer. Dette fungerer kun med lokationsvejledninger af arbejdstypen Pluk. 
 -   **Rund op til fuld LP** - Denne strategi bruges til at afrunde det lagerantal, der skal svare til antallet af id-numre, som er tildelt de varer, der skal plukkes. Du kan kun bruge denne strategi for genopfyldningstypen til lokationsvejledning af typen Pluk. 
 -   **Tom lokation uden indgående arbejde** - Denne strategi bruges til at finde tomme lokationer. Lokaliteten anses for at være tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Denne strategi bruges kun til lokationsvejledninger af typen Læg på lager. 

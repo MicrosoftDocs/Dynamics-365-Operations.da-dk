@@ -1,6 +1,6 @@
 ---
 title: Oprette forbindelse til Hjælp-systemet
-description: I dette emne beskrives komponenterne i Hjælp-systemet til Finance and Operations-apps, og du får et overblik over, hvordan du tilslutter dem, og hvordan du opretter brugerdefineret Hjælp.
+description: I dette emne beskrives komponenterne i hjælpesystemet til Finance and Operations-apps, og du får et overblik over, hvordan du tilslutter dem, og hvordan du opretter en brugerdefineret Hjælp.
 author: margoc
 manager: AnnBe
 ms.date: 10/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812574"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006166"
 ---
 # <a name="connect-the-help-system"></a>Oprette forbindelse til Hjælp-systemet
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver komponenterne i Hjælp-systemet til Finance and Operations-apps, f.eks. Dynamics 365 Finance Supply Chain Management, Retail og Talent. Det giver et overblik over, hvordan du forbinder disse komponenter, og en oversigt over, hvordan du opretter brugerdefinerede Hjælp.
+Dette emne beskriver komponenterne i Hjælp-systemet til Finance and Operations-apps, f.eks. Dynamics 365 Finance, Supply Chain Management, Commerce og Personale. Det giver et overblik over, hvordan du forbinder disse komponenter, og en oversigt over, hvordan du opretter brugerdefinerede Hjælp.
 
 ## <a name="help-architecture"></a>Hjælp-arkitektur
 
@@ -43,7 +43,7 @@ I følgende illustration vises delene i Hjælp-systemet. Hjælp-systemet i produ
 ## <a name="connecting-the-help-system"></a>Forbindelse til Hjælp-systemet
 
 > [!NOTE]
-> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Dynamics 365 Talent eller Retail. Vi arbejder aktuelt på at aktivere denne funktion i en senere version. Opgaveguiderne i oplevelsen Introduktion i Talent forbliver tilgængelig og dækker de grundlæggende funktioner. Automatiseret hjælp er også tilgængelig på docs.microsoft.com-webstedet for både Retail og Talent.
+> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Dynamics 365 Human Resources eller Commerce. Vi arbejder aktuelt på at aktivere denne funktion i en senere version. Opgaveguiderne i oplevelsen Introduktion i Personale forbliver tilgængelig og dækker de grundlæggende funktioner. Automatiseret hjælp er også tilgængelig på docs.microsoft.com-webstedet for både Personale og Commerce.
 
 På siden **Systemparametre** kan systemadministratorer stykke Hjælp-systemet sammen med henblik på implementering.
 
@@ -60,7 +60,7 @@ På siden **Systemparametre** skal du følge disse trin:
 2. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
 3. Angiv visningsrækkefølgen for BPM-bibliotekerne. Dette bestemmer den rækkefølge, som opgaveregistreringer fra bibliotekerne vises i på ruden **Hjælp**.
 
-Når du har fuldført disse trin, kan du åbne ruden **Hjælp** og klikke på fanen **Opgaveguider**. Nu kan du se de opgaveguider, der gælder for den aktuelle side i Finance and Operations. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen.
+Når du har fuldført disse trin, kan du åbne ruden **Hjælp** og klikke på fanen **Opgaveguider**. Nu kan du se opgaveguiderne, der gælder for den aktuelle side i Finance and Operations-apps. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen.
 
 ### <a name="showing-translated-task-guides"></a>Visning af oversatte opgaveguider
 
@@ -78,7 +78,7 @@ Du kan bruge opgaveguider til at oprette brugerdefineret hjælp eller oprette fo
 
 ### <a name="create-custom-help-with-task-guides"></a>Oprette tilpasset hjælp til opgaveguider
 
-Du kan oprette en brugerdefineret hjælp til Finance, Supply Chain Management og til Retail ved at oprette opgaveregistreringer, der afspejler din implementering, og gemme dem i et bibliotek i en LCS-forretningsproces. Du kan ikke oprette brugerdefinerede opgaveguider til Talent.
+Du kan oprette en brugerdefineret hjælp til Finance, Supply Chain Management og til Commerce ved at oprette opgaveregistreringer, der afspejler din implementering, og gemme dem i et bibliotek i en LCS-forretningsproces. Du kan ikke oprette brugerdefinerede opgaveguider til Personale.
 
 Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan også oprette en kopi af det globale APQC Unified-bibliotek og derefter åbne kopien, åbne opgaveregistreringer fra det, redigere dem og gemme registreringerne med dine ændringer. Du kan finde flere oplysninger under [Arbejdsrutineoptagerressourcer](../../dev-itpro/user-interface/task-recorder.md).
 

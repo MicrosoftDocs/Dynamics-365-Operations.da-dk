@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 938d2eea7b9e85b19e9c1e3e0930f625224b880d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 229ae14b9e2dedcd0ade094a772f16c0524d32a7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898613"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006072"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>Periodisering af fravær baseret på antal arbejdstimer
 
 ## <a name="overview"></a>Overblik
 
-Organisationer med timeansatte kan tildele fravær baseret på arbejdstimer i stedet for ansættelse i organisationen. Data med arbejdstimer er typisk gemt i et system for tid og fremmøde. I Talent: Core HR kan de normale og overtidens arbejdstimer importeres og bruges som grundlag for en medarbejders bonus.
+Organisationer med timeansatte kan tildele fravær baseret på arbejdstimer i stedet for ansættelse i organisationen. Data med arbejdstimer er typisk gemt i et system for tid og fremmøde. 
 
 ## <a name="leave-plans"></a>Orlovsplaner
 

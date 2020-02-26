@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: adfb8ffce3f91c0e8e8b996c284414f5ddc1baf1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562524"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004059"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing af varer og råvarer i lager, produktion og salg
 
@@ -44,7 +44,7 @@ Varesporing er et business intelligence-værktøj (BI), der synliggør kilde og 
 -   Undersøg, hvor en vare eller råvare er forbrugt ved produktion af en anden vare.
 
 ## <a name="what-can-i-trace-and-are-there-any-limitations"></a>Hvad kan jeg spore, og er der nogen begrænsninger?
-Du kan spore historiske lagertransaktioner for varer og råvarer, der er baseret på et varenummer og en sporingsdimensions såsom et serienummer, batchnummer eller kreditorbatchnummer. Du kan kun spore en vare eller en råvare, hvis der er tildelt sporingsdimension til den. Da sporing er baseret på lagertransaktioner, er der visse begrænsninger, når du sporer varer. Der er for eksempel begrænsninger relateret til transaktioner for projekter, anlægsaktiver og detail. Derudover vises samprodukter i sporingsdetaljerne, men biprodukter medtages ikke. Sporingen omfatter alle lagertransaktioner fra én lokalitet til en anden. Derfor kan kan brugere finde mængden af oplysninger overvældende. Sporingen vises for én juridisk enhed ad gangen. Der er ingen funktioner på tværs af firmaer i en intern sammenhæng. For hvert firma, hvor en vare modtages eller udstedes, skal du starte en ny sporing.
+Du kan spore historiske lagertransaktioner for varer og råvarer, der er baseret på et varenummer og en sporingsdimensions såsom et serienummer, batchnummer eller kreditorbatchnummer. Du kan kun spore en vare eller en råvare, hvis der er tildelt sporingsdimension til den. Da sporing er baseret på lagertransaktioner, er der visse begrænsninger, når du sporer varer. Der er for eksempel begrænsninger relateret til transaktioner for projekter, anlægsaktiver og handel. Derudover vises samprodukter i sporingsdetaljerne, men biprodukter medtages ikke. Sporingen omfatter alle lagertransaktioner fra én lokalitet til en anden. Derfor kan kan brugere finde mængden af oplysninger overvældende. Sporingen vises for én juridisk enhed ad gangen. Der er ingen funktioner på tværs af firmaer i en intern sammenhæng. For hvert firma, hvor en vare modtages eller udstedes, skal du starte en ny sporing.
 
 ## <a name="what-criteria-can-i-specify-for-an-item-trace"></a>Hvilke kriterier kan jeg angive for en varesporing?
 De kriterier, der er nødvendige for at spore en vare, er varenummeret, en sporingsdimension (såsom et batchnummer eller serienummer) samt retningen. I følgende tabel beskrives de kriterier, som du kan bruge til en varesporing.

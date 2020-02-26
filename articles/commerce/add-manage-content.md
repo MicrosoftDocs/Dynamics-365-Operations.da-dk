@@ -1,9 +1,9 @@
 ---
 title: Metoder til at tilføje indhold
-description: Dette emne indeholder oplysninger om, hvordan du kan tilføje og administrere indhold på Microsoft Dynamics 365 Commerce-webstedet.
+description: Dette emne giver en oversigt og udvalgte links til, hvor og hvordan du begynder at administrere indhold vha. Microsoft Dynamics 365 Commerce-webstedsgeneratorens værktøjssæt til webredigering.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,43 +17,40 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2232dc7cdd24416b0df0919b96cd5d1f8113299f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 916e28c2628613332246d19af0fae81f258404b0
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914648"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025709"
 ---
 # <a name="ways-to-add-content"></a>Metoder til at tilføje indhold
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan du kan tilføje og administrere indhold på Microsoft Dynamics 365 Commerce-webstedet.
+Dette emne giver en oversigt og udvalgte links til dokumentation af, hvordan du administrerer indhold vha. Microsoft Dynamics 365 Commerce-webstedsgeneratorens værktøjssæt til webredigering.
 
 ## <a name="overview"></a>Oversigt
 
-Der er mange måder at ændre webstedets udseende, layout og indhold på. Afhængigt af det nødvendige tilpasningsniveau kan mange af disse ændringer implementeres af ikke-udviklere. Der skal f. eks. ikke skrives kode for at bygge skabeloner, vælge temaer samt vælge og konfigurere moduler. Derimod kræves der udviklingsfærdigheder for at oprette et nyt tema eller modul, fordi e-handels-SDK'et (Software Development Kit) og Microsoft Dynamics Lifecycle Services (LCS)-arbejdsgangen til implementering skal bruges.
+Der er mange måder at ændre webstedets udseende, layout og indhold på. Afhængigt af det nødvendige tilpasningsniveau kan mange af disse ændringer implementeres af ikke-udviklere i webstedsgeneratoren, som er de værktøjer til weboprettelse, der leveres sammen med Dynamics 365 Commerce. Du kan bruge webstedsgeneratoren til at oprette skabeloner, vælge temaer og vælge og konfigurere moduler uden at skrive nogen kode. Derimod kræves der udviklingsfærdigheder for at oprette et nyt tema eller modul, fordi e-handels-SDK'et (Software Development Kit) og Microsoft Dynamics Lifecycle Services (LCS)-arbejdsgangen til implementering skal bruges.
 
-Følgende emne indeholder detaljerede oplysninger om, hvordan du kan tilføje og administrere indhold på webstedet. Der fokuseres på områder af webstedet, der ikke kræver en udvikler. Efter behov udpeges der opgaver, der kræver SDK-arbejde.
+Følgende emner er en god måde at springe punkter over for at begynde at forstå, hvordan du kan tilføje og administrere websteds indhold. De fleste af de viste emner fokuserer på områder af webstedet, der ikke kræver en udvikler. Nogle redigerer grundlæggende indhold, mens andre fokuserer på opgaver med webstedsadministrator. Hvert af disse emner vil indeholde bestemte opgaver, der kan kræve SDK-arbejde. I hvert emne antages det, at du allerede har klargjort et websted og fået adgang til webstedsgeneratorens værktøjssæt for dit websted.
 
+Vælg et af følgende emner for at komme i gang.
+
+- Du kan lære, hvilken terminologi for indholdsstyring der bruges i webstedsgeneratoren og i denne dokumentation, i [Ordliste til sidemodel](page-elements-overview.md).
+- Hvis du vil forstå, hvordan moduler fungerer inden for indholdsstyringsarbejdsgange, kan du se [Arbejde med moduler](work-with-modules.md).
 - Se [Arbejde med moduler](work-with-modules.md), hvis du vil ændre tekst, billeder eller video på en eksisterende side på et websted.
-- Se [Arbejde med skabeloner](work-with-templates.md), hvis du vil være med til at sikre en garanteret brandbaseret oplevelse for oprettere af webindhold.
+- Hvis du vil vide, hvordan fragmenter kan gøre indholdsstyring mere effektiv og fleksibel, skal du se [Arbejde med fragmenter](work-with-fragments.md).
+- Du kan få hjælp til en vellykket oplevelse til oprettelse af websider til forfattere af webindhold under [Oversigt over skabeloner og layout](templates-layouts-overview.md) og [Arbejde med skabeloner](work-with-templates.md).
 - Se [Arbejde med layout](work-with-layouts.md), hvis du vil flytte rundt på sektionerne på en side på et websted.
-- Se [Vælge et tema for webstedet](select-site-theme.md), hvis du vil ændre skrifttyper og farver på samt det generelle udseende af sider på websteder.
+- Hvis du vil ændre skrifttyper og farver på samt det generelle udseende af sider på websteder, skal du se [Vælge et tema for webstedet](select-site-theme.md) eller [Arbejde med CSS-tilsidesættelsesfiler](css-override-files.md).
+- Hvis du vil omarrangere eller tilføje nye navigationsindstillinger, skal du se [Tilpasse webstedsnavigation](customize-site-navigation.md).
+- Du kan få mere at vide om, hvordan du kan vise, få vist og udgive et bredt udvalg af samtidige ændringer i webindhold, under [Arbejde med udgivelsesgrupper](publish-groups.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Ordliste til sidemodel](page-elements-overview.md)
+[Oprette oversigt over side](authoring-home-overview.md)
 
 [Dokumenttilstande og -livscyklus](document-states-overview.md)
-
-[Arbejd med publiceringsgrupper](publish-groups.md)
-
-[Arbejde med moduler](work-with-modules.md)
-
-[Arbejde med fragmenter](work-with-fragments.md)
-
-[Oversigt over skabeloner og layout](templates-layouts-overview.md)
-
-[Tilpasse navigation på webstedet](customize-site-navigation.md)

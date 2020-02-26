@@ -76,7 +76,7 @@
       href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: API'er for dataintegration
       items:
-        - name: REST API til datastyringspakke
+        - name: REST API for datastyringspakke
           href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Tjenesteslutpunkter
           items:
@@ -116,11 +116,11 @@
               href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Synkron tovejsintegration
               items:
-                - name: Integration næsten i realtid
+                - name: Dataintegration næsten i realtid
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Organisationshierarki på Common Data Service
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/financials/toc.json
-                - name: Firmabegreb i Common Data Service'er
+                - name: Firmabegreb i Common Data Services
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Integreret kundemaster
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -142,7 +142,7 @@
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synkronisere produkter fra Finance and Operations direkte med produkter i Sales
+                    - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -150,7 +150,7 @@
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synkronisere salgsfakturahoveder og linjer fra Finance and Operations direkte med Sales
+                    - name: Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Konfigurere integration med Field Service
                   items:
@@ -362,7 +362,7 @@
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Installere on-premises-miljøer (Platform update 8 og 11)
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/financials/toc.json
-            - name: Installationstrin for Detail-kanalkomponenter i et on-premises-miljø.
+            - name: Installationstrin for Retail-kanalkomponenter i et on-premises-miljø.
               href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
           href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Administrere adgang til følsomme data
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Besvare anmodninger om personlige data ved hjælp af Talent
+        - name: Besvare anmodninger om personlige data ved hjælp af Human Resources
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Besvare anmodninger om personlige data i AX 2012
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -996,7 +996,7 @@
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Modulet Kontrol
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
-            - name: Modulet Container
+            - name: Containermodul
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Modulet Felt
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1344,7 +1344,7 @@
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Overflytning af AX 2009 – installere dataoverflytningsværktøjet
           href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Overflytning af AX 2009 - generere tilknytninger
+        - name: Overflytning af AX 2009 – generere tilknytninger
           href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Overflytning af AX 2009 - oprette skabeloner
           href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json

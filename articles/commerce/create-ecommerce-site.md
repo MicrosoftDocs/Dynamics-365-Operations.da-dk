@@ -1,9 +1,9 @@
 ---
 title: Oprette et websted for e-handel
-description: I dette emne beskrives de opgaver, der er knyttet til oprettelsen af et nyt e-handelswebsted i Dynamics 365 Commerce.
+description: I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945829"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002007"
 ---
 # <a name="create-an-e-commerce-site"></a>Oprette et websted for e-handel
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives de opgaver, der er knyttet til oprettelsen af et nyt e-handelswebsted i Dynamics 365 Commerce.
+I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 
-## <a name="overview"></a>Oversigt
+Før du kan gå i gang med at udvikle dit e-handelswebsted, skal du først oprette et nyt websted i webstedsgeneratoren. 
 
-Før du kan udvikle dit e-handelswebsted, skal du først oprette et nyt websted i webstedets oprettelsesmiljø. Før du kan oprette en nyt websted, skal der oprettes mindst én onlinebutik i Dynamics 365 Retail. 
+
+Før du kan udvikle dit e-handelswebsted, skal du først oprette et nyt websted i webstedets oprettelsesmiljø. Før du kan oprette et nyt websted, skal der oprettes mindst én onlinebutik i Commerce. 
+
 
 ## <a name="set-up-your-site"></a>Konfigurere dit websted
 
 Du kan konfigurere dit websted ved at gøre følgende:
 
-1. I Microsoft Lifecycle Services (LCS) skal du vælge linket til webstedets oprettelsesmiljø. 
+1. Åbn webstedsgeneratormiljøet. Du kan finde et link til webstedsgeneratoren i Microsoft Lifecycle Services (LCS) på siden med miljøfunktioner til Commerce.
 1. Vælg **Nyt websted** på startsiden for webstedets oprettelsesmiljø.
 1. I dialogboksen **Nyt websted** skal du angive følgende oplysninger.
 

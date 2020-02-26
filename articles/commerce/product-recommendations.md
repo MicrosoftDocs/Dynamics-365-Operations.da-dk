@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770040"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024973"
 ---
 # <a name="product-recommendations-overview"></a>Oversigt over produktanbefalinger
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce kan bruges til at få vist produktanbefalinger på e-handels-webstedet og POS-enheden. Produktanbefalinger er varer, som en kunde kan være interesseret i. Anbefalingerne er baseret på indkøbstendenser fra andre kunder i onlinebutikker og fysiske butikker.
@@ -45,6 +44,7 @@ Produktanbefalinger er tilgængelige for følgende scenarier:
 - **På en butiksside til gennemsyn eller landingsside i e-handel**: Hvis kunder eller butiksansatte besøger en butiks side, kan anbefalingsprogrammet foreslå produkter på de nye lister **Nyt**, **Mest solgte** og **Mest populære**.
 - **På siden Produktdetaljer:** Hvis kunder eller butiksansatte besøger siden **Produktdetaljer**, foreslår anbefalingsprogrammet yderligere varer, der formentlig også er interessante at købe. Disse varer vises på listen **Personer synes også om**.
 - **På siden Transaktion eller ved kassen:** Anbefalingsprogrammet foreslår varer på basis af hele listen med varer i kurven. Disse varer vises på listen **Ofte købt sammen**.
+- **Personlige anbefalinger:** Forhandlere kan give logon-kunder en personligt **udvalgt** liste samt nye funktioner, der gør det muligt at tilpasse eksisterende listescenarier efter den pågældende kunde. Yderligere oplysninger finder du i funktionsdokumentationen: [aktivere tilpassede anbefalinger.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Anbefalingstjeneste
 
@@ -56,6 +56,10 @@ Produktanbefalinger bruger anbefalingerne fra teknologier for maskinel indlærin
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Aktivér produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
+
+[Oversigt over modulet Produktsamling](product-collection-module-overview.md)
 
 [Oprette overvågede lister med produktanbefalinger](create-editorial-recommendation-lists.md)
 

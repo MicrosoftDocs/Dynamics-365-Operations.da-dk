@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843235"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026308"
 ---
 # <a name="reconcile-freight-manually"></a>Afstemme fragt manuelt
 
@@ -37,7 +37,7 @@ Denne procedure viser, hvordan du afstemmer fragt manuelt. Denne konfiguration v
 3. Vælg på listen den last, som har last-id'et 00006.
 
 ## <a name="create-a-carrier-invoice"></a>Oprette en faktura fra fragtmand
-    * Hvis du manuelt afstemmer fragt og ikke automatisk modtager fakturaer fra fragtmænd, kan du oprette en faktura ud fra fragtbrevet.  
+Hvis du manuelt afstemmer fragt og ikke automatisk modtager fakturaer fra fragtmænd, kan du oprette en faktura ud fra fragtbrevet.  
 1. Klik på Relaterede oplysninger.
 2. Klik på Fragtbrevsdetaljer.
 3. Klik på Generér fragtbrevsfaktura.
@@ -45,7 +45,7 @@ Denne procedure viser, hvordan du afstemmer fragt manuelt. Denne konfiguration v
 5. Klik på OK.
 
 ## <a name="reconcile-the-invoice"></a>Afstem fakturaen
-    * Når du afstemmer en fragtfaktura og et fragtbrev, kan du gøre det linje for linje.  
+Når du afstemmer en fragtfaktura og et fragtbrev, kan du gøre det linje for linje.  
 1. Klik på Afstem fragtbreve og fakturaer.
 2. Udvid sektionen Fakturadetaljer.
 3. Udvid sektionen Oplysninger om uafstemte fragtbreve.

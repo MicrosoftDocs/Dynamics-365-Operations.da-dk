@@ -1,5 +1,5 @@
 ---
-title: Konfigurere kredit og inkasso
+title: Konfigurere rykkere
 description: I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177021"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013157"
 ---
-# <a name="set-up-credit-and-collections"></a>Konfigurere kredit og inkasso
+# <a name="set-up-collections"></a>Konfigurere rykkere
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
+I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen Du skal udføre nogle opsætningstrin, når du bruger rykkerfunktioner. Der er også nogle valgfrie funktioner, herunder kundepuljer og rykkerteams. 
+
+- Definitioner af forældelsesperioder
+- Øjebliksbilleder af aldersfordeling
+- Kladdenavne
+- Årsagskode for afskrivningstransaktioner
+- Inkassoagenter
+- Afskrivningskonto
+- Oplysninger om NSF (ikke tilstrækkelige midler)
+- Outlook-indstillinger til brugere af siden **Rykkere**
+- E-mail-adresser
+
+Disse punkter gennemgås mere detaljeret i resten af dette emne. 
 
 <a name="set-up-aging-period-definitions"></a>Konfigurer definitioner af forældelsesperioder
 -------------------------------
@@ -46,10 +58,10 @@ Du kan oprette kundepuljer, der repræsenterer grupper af kunder. Du kan bruge k
 Hvis der er flere medarbejdere i virksomheder, der udfører rykkerarbejde, kan du oprette et inkassatorteam. Du kan vælge teamet på siden **Debitorparametre**. Hvis du ikke opretter et inkassatorteam, oprettes der automatisk et team, når du angiver inkassoagenter på siden **Inkassoagent**.
 
 ## <a name="set-up-a-collections-case-category"></a>Oprette en rykkersagskategori
-Hvis du vil bruge sager til at organisere rykkerarbejdet, kan du oprette en sagskategori med kategoritypen **Rykkere**. Denne konfiguration er kun nødvendig, hvis du vil bruge sagsfunktionen på siden **Rykkere**.
+Hvis du vil bruge sager til at organisere rykkerarbejdet, kan du oprette en sagskategori med kategoritypen **Rykkere**. Dette er kun nødvendigt, hvis du vil bruge sagsfunktionen på siden **Rykkere**.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Opret kladdenavne (udligning, afskrivning og NSF)
-Opret de kladdenavne, der anvendes, når posteringer behandles på siden **Rykkere**. Denne behandling omfatter afstemning af en postering, afskrivning af en postering eller behandling af en NSF-betaling, dvs. en betaling med ikke tilstrækkelige midler.
+Opret de kladdenavne, der anvendes, når posteringer behandles på siden **Rykkere**. Denne behandling omfatter afstemning af en transaktion, afskrivning af en transaktion eller behandling af en NSF-betaling, dvs. en betaling med ikke tilstrækkelige midler.
 
 | Beskrivelse | Kladdetype     |
 |-------------|------------------|
@@ -78,16 +90,19 @@ Opdater bankkonti, så de har den rette kladde, når NSF-betalinger identificere
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Angive Outlook-indstillinger til brugere af siden Rykkere
 Før arbejdere kan oprette aktiviteter eller sende e-mails vha. siden **Rykkere**, skal du bekræfte, at konfigurationsnøglen for **Microsoft Outlook-synkronisering** er valgt, og at Outlook-synkronisering er konfigureret for arbejderne.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Angive e-mail- og adresseindstillinger for rykkerkontaktpersoner hos kunden
-Opret e-mailadresser for kundekontakter, hvis du vil sende e-mails til disse kontakter fra siden **Rykkere**. Rykkerkontakten bruges som standardkontaktperson i på siden **Rykkere**. Du kan angive en opgørelsesadresse til en kunde, hvis opgørelser skal sendes til en anden adresse end den primære adresse. 
+## <a name="set-up-email-and-addresses"></a>Konfigurere mail og adresser
+Du kan bruge mail til at kommunikere med både kunder og sælgere om rykkerproblemer for at sende mails fra siden **Rykkere**. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Angive e-mail- og adresseindstillinger for rykkerkontaktpersoner hos kunden
+Opret mailadresser for kundekontakter, hvis du vil sende mails til disse kontakter fra siden **Rykkere**. Rykkerkontakten bruges som standardkontaktperson i på siden **Rykkere**. Du kan angive en opgørelsesadresse til en kunde, hvis opgørelser skal sendes til en anden adresse end den primære adresse. 
 
 I oversigtspanelet **Kredit og inkasso** for en kunde skal du i feltet **Kontaktperson ved rykker** vælge den person i kundens virksomhed, der arbejder sammen med din inkassoagent. Denne person bruges som standardkontakt på siden **Rykkere** og e-mails sendes til ham eller hende. 
 
 > [!NOTE] 
 > Hvis en rykkerkontaktperson ikke er angivet for en kunde, bruges den primære kontaktperson for kunden. Hvis en primær kontakt ikke er angivet, sendes mails til den første adresse, der vises på siden **Kontakter**.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Angive e-mail-indstillinger for sælgere
-Opret e-mailadresser for sælgere, hvis du vil sende e-mails til disse sælgere på siden **Rykkere**. Opret en e-mail-adresse til hver sælger i hver provisionssalgsgruppe. Den sælger, hvor afkrydsningsfeltet **Kontakt** er markeret, er den standardsælger, der får tilsendt e-mails. 
+### <a name="set-up-email-settings-for-salespeople"></a>Angive e-mail-indstillinger for sælgere
+Opret mailadresser for sælgere, hvis du vil sende mails til disse sælgere fra siden **Rykkere**. Opret en e-mail-adresse til hver sælger i hver provisionssalgsgruppe. Den sælger, hvor afkrydsningsfeltet **Kontakt** er markeret, er den standardsælger, der får tilsendt e-mails. 
 
 Hvis der ikke er angivet en sælger, bruges kundens primære sælger. Hvis der ikke er angivet en primær sælger, sendes e-mails til den første sælger, der vises på siden.
 

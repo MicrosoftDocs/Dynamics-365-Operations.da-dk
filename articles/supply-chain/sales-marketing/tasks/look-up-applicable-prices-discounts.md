@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835570"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025822"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå gældende priser og rabatter op
 
@@ -49,7 +49,7 @@ Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt
 10. Luk siden.
 
 ## <a name="find-the-applicable-discount"></a>Find den gældende rabat
-    * Kontrollér, at feltet Debitorkonto indeholder debitornummer US-001   
+Kontrollér, at feltet Debitorkonto indeholder debitornummer US-001   
 1. Skriv 'T0012' i feltet Varenummer.
     * Sørg for, at feltet Mængde er angivet til 1.  
     * De følgende oplysninger om priser, der vises for produkt T0012, kommer fra en eller flere samhandelsaftaler: prisen pr. enhed er 1.000 kr., og rabatprocenten er 5.  

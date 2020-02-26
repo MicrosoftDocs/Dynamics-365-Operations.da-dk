@@ -1,0 +1,68 @@
+---
+title: Nulstille kvitteringsnumre
+description: Dette emne beskriver, hvordan du nulstiller de kvitteringsnumre, der bruges til forskellige handlinger på den ønskede dato (f.eks. regnskabsåret eller kalenderåret).
+author: ShalabhjainMSFT
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-Commerce
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail, Commerce
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: Retail, Commerce
+ms.author: asharchw
+ms.search.validFrom: 2020-01-14
+ms.dyn365.ops.version: Application update 10.0.9
+ms.openlocfilehash: e81ff86a8b8a4dca6b14a21d6e982b03a928d29e
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3020072"
+---
+# <a name="reset-receipt-numbers"></a>Nulstille kvitteringsnumre 
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+Detailhandlere genererer kvitteringsnumre for forskellige handlinger i butikken, f.eks. kontanttransaktioner, returtransaktioner, kundeordrer, tilbud og betalinger. Selvom detailhandlere definerer deres egne kvitteringsformater, har visse lande eller områder forordninger, der har lagt begrænsninger på disse kvitteringsformater. Disse regler kan f.eks. begrænse antallet af tegn i kvitteringen, kræve fortløbende kvitteringsnumre, begrænse nogle specialtegn eller kræve nulstilling af kvitteringsnumrene i begyndelsen af året. Microsoft Dynamics 365 Commerce gør det nemmere at administrere kvitteringsnumre for at hjælpe forhandlerne med at overholde lovpligtige krav. Dette emne forklarer, hvordan du kan bruge funktionerne til nulstilling af kvitteringsnumre.
+
+I Commerce kan kvitteringsformater være alfanumeriske. Du kan indsætte både statisk indhold og dynamisk indhold i dem. Statisk indhold omfatter alfabetiske tegn, tal og specialtegn. Dynamisk indhold omfatter et eller flere tegn, der repræsenterer oplysninger som butiksnummer, terminalnummer, dato, måned, år og nummerserier, der øges automatisk. Formaterne defineres i sektionen **Kvitteringsnummerering** i funktionalitetsprofilen. I følgende tabel beskrives de tegn, der repræsenterer det dynamiske indhold.
+
+| Tegn | Beskrivelse |
+|------------|-------------|
+| S          | Tegnet **S** bruges til butiksnummeret. Hvis f.eks. en butik er nummereret HOUSTON1, viser formatet **SSS** "ON1" i kvitteringen. Formatet **SSSSS** viser "STON1" i kvitteringen. |
+| T          | Tegnet **T** bruges til terminalnummeret. Hvis f.eks. en terminal er nummereret 0001, viser formatet **TTTT** "0001" i kvitteringen. |
+| C          | Tegnet **C** bruges til medarbejders id-nummer. Hvis en medarbejder f.eks. har ID 000160, viser formatet **CCCC** "0160" på kvitteringen. |
+| ddd        | Tegnene **ddd** svarer til årets dag fra 1 til 366. F.eks. vil 15. januar med formatet **ddd** vise "015" i kvitteringen. |
+| MM         | Tegnene **MM** bruges til den tocifrede måned. F.eks. vil januar med formatet **MM** vise "01" i kvitteringen. |
+| DD         | Tegnene **DD** bruges til den tocifrede dag i måneden. F.eks. vil 15. januar med formatet **DD** vise "15" i kvitteringen. |
+| YY         | Tegnene **YY** bruges til det tocifrede årstal. I en måned i år 2020 viser formatet **YY** f.eks. "20" på kvitteringen. |
+| \#         | Et nummertegn (**\#**) bruges til fortløbende nummerering. F.eks. vil viser formatet **####** "0001," "0002," "0003" osv. i kvitteringen. |
+
+Du kan nulstille den fortløbende nummerering af kvitteringen på en bestemt dato. Derefter nulstiller systemet kvitteringsnummerserien til 1 for den første transaktion, der finder sted efter kl. 12:00 midnat på den valgte nulstillingsdato. Du kan også angive, om nulstillingen kun skal foretages én gang, eller om den skal gentages hvert år. Hvis der er angivet årlig gentagelse, sker nulstillingen automatisk hvert år, indtil forhandleren vælger at stoppe den. 
+
+Udfør følgende trin for at aktivere nulstilling.
+
+1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**.
+1. Vælg **Nulstil dato for nulstilling af nummer** i oversigtspanelet **Kvitteringsnummerering**.
+1. Vælg en fremtidig dato, hvor nulstillingen skal finde sted, i feltet **Nulstillingsdato** i dialogboksen.
+1. I feltet **Nulstil kvittering-type** skal du vælge **Kun engangs** eller **Årligt**.
+1. Vælg **OK**.
+
+![Vælge en nulstillingsdato for kvittering](media/Enable_receipt_reset.png "Vælge en nulstillingsdato for kvittering")
+
+Når du har valgt en dato, vises den i kolonnen **Næste dato for nulstilling af kvitteringsnummer**. Nulstillingsdatoen gælder for alle kvitteringstransaktionstyper. Derfor nulstilles kvitteringsnummerserien for alle kvitteringstyper.
+
+Når nulstillingsdatoen er kommet, nulstilles kvitteringsnummeret for den første transaktion af hver type. I funktionalitetsprofilen flyttes nulstillingsdatoen desuden fra kolonnen **Næste dato for nulstilling af kvitteringsnummer** til **Nuværende dato for nulstilling af kvitteringsnummer**. Denne ændring angiver, at hvis der ikke bruges en kasse på nulstillingsdatoen, vil kvitteringsnummeret blive nulstillet, næste gang kasseapparatet *er* i brug. F.eks. skal du 3. december 2019 vælge **1. januar 2020** som nulstillingsdato. Den 1. januar, når kasseapparatet foretager den første transaktion, nulstilles kvitteringsnummeret. Ét kasseapparat bruges dog ikke i hele december og januar, men begynder derefter at blive brugt i februar. Da der i dette tilfælde er defineret en nulstillingshandling, nulstilles kvitteringsnummeret for den pågældende kasse, når kassen foretager den første transaktion i februar.
+
+Du kan bruge funktionen **Ryd nulstillingsdato** til at rydde fremtidige nulstillingsdatoer. Men hvis nulstillingsdatoen er i fortiden, kan den ikke fortrydes. Derfor vil nulstillingen blive foretaget for alle kasseapparater, hvor der endnu ikke er foretaget nulstilling.
+
+> [!NOTE]
+> Afhængigt af, hvilken nulstillingsdato du har valgt og kvitteringsformatet, kan du have dublerede kvitteringsnumre. Selvom POS-systemet kan håndtere disse situationer, øger de den tid, der kræves for at behandle returneringer, da salgsmedarbejderne skal vælge blandt de dublerede kvitteringer. Andre komplikationer, der er relateret til dataoprydning, kan forekomme, hvis de dublerede kvitteringer ikke var en planlagt konsekvens. Det anbefales derfor, at du bruger dynamiske datotegn (f.eks **ddd**, **MM**, **DD** og **YY**) for at forhindre dublerede kvitteringsnumre efter nulstilling.

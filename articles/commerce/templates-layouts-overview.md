@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914835"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002676"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversigt over skabeloner og layout
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Skabeloner er et grundlæggende element i Microsoft Dynamics 365 Commerce-sidemodellen. Hvis dit mål er at maksimere effektiviteten og ensartetheden for arbejdsgange til oprettelse af websteder, er det vigtigt, at du lærer, hvordan du drager fordel af skabeloner til dit websted. De tidlige beslutninger om skabelonstruktur er vigtige, og de kan påvirke omkostningerne og smidigheden for daglige, lejlighedsvise og webstedsdækkende opdateringer af brands. Velstrukturerede skabeloner har også andre fordele. De kan f.eks. forbedre SEO-scoren (optimering af søgemaskine) og minimere antallet af fejl.

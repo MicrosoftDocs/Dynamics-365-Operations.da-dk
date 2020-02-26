@@ -1,6 +1,6 @@
 ---
-title: Dokumentation for Finance and Operations-applikation
-description: Dokumentation for Finance and Operations-apps.
+title: Dokumentation til Finance and Operations-applikation
+description: Dokumentation til Finance and Operations-apps.
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770913"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005534"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentation for Finance and Operations-applikation
+# <a name="finance-and-operations-application-documentation"></a>Dokumentation til Finance and Operations-applikation
 
 [!include [banner](includes/banner.md)]
 
-I dette emne kan du lære at lade for Finance and Operations-applikationer arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
+I dette emne kan du lære, hvordan du lader Finance and Operations-applikationer arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
 
-Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 Retail og Talent. 
+Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 Commerce og Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -43,8 +43,8 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 R
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du køber</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig et prøveabonnement</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælge en installationsindstilling</a></p>
- <p><a href="get-started/purchase-on-premises.md">Købe Finance and Operations (on-premises)</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælg en installationsindstilling</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Køb Finance and Operations (i det lokale miljø)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementeringslivscyklus</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
@@ -84,9 +84,9 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 R
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale lovpligtige funktioner</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Personale</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Frynsegoder</a></p>
-<p><a href="../../talent/performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
-<p><a href="../../talent/questionnaires.md">Spørgeskema</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Frynsegoder</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Spørgeskemaer</a></p>
 <p><a href="hr/manage-recruiting-process.md">Rekruttering</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Løn i USA</a></p>
 
@@ -129,16 +129,17 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 R
 </td>
 <td>
 <h3>Relaterede produkter</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Callcenter</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Konfiguration og styring af kanal</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS og Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retail-udvikling og -administration</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce-udvikling og -administration</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Frynsegoder</a></p>
-<p><a href="../../talent/performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
-<p><a href="../../talent/questionnaires.md">Spørgeskema</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Vejledning for administrator</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Vejledning for udvikler</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Brugervejledning</a></p>
+
 
 </td>
 </tr>

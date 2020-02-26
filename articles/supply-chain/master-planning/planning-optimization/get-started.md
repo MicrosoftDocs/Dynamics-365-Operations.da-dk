@@ -3,7 +3,7 @@ title: Introduktion til Planlægningsoptimering
 description: I dette emne beskrives, hvordan du kommer i gang med at bruge funktionen Planlægningsoptimering.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 37c2acb2397b2a0ad69272c0645bd200a8d7910d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773923"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971458"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
@@ -47,15 +47,17 @@ Hvis du vil bruge Planlægningsoptimering, skal du installere tilføjelsesprogra
 
 1. Log på LCS, og åbn det ønskede miljø.
 1. Gå til **Alle detaljer**.
-1. Vælg **Vedligehold**, eller rul ned til oversigtspanelet **Tilføjelsesprogrammer for miljø**.
+1. Rul ned til oversigtspanelet **Tilføjelsesprogrammer for miljø**.
 1. Vælg **Installer et nyt tilføjelsesprogram**.
 1. Vælg **Planlægningsoptimering**.
 1. Følg installationsvejledningen, og accepter vilkårene og betingelserne.
 1. Vælg **Installer**.
+1. I oversigtspanelet **Tilføjelsesprogrammer for miljø** kan du se, at Planlægningsoptimering er ved at blive installeret.
+1. Efter nogle minutter bør **Installerer** blive ændret til **Installeret** (du skal muligvis opdatere siden). Når den er installeret, er du klar til at aktivere Planlægningsoptimering i Dynamics 365 Supply Chain Management.
 
 ### <a name="planning-optimization-integration"></a>Integration af Planlægningsoptimering
 
-Hvis du vil konfigurere, om tilføjelsesprogrammet til Planlægningsoptimering skal bruges til varedisponering, skal du gå til **Varedisponering** \> **Opsætning** \> **Integration af Planlægningsoptimering** \> **Integrationsparametre**.
+Hvis du vil konfigurere, om tilføjelsesprogrammet til Planlægningsoptimering skal bruges til varedisponering, skal du gå til **Varedisponering** \> **Opsætning** \> **Parametre for Planlægningsoptimering**.
 
 #### <a name="connection-status"></a>Forbindelsesstatus
 

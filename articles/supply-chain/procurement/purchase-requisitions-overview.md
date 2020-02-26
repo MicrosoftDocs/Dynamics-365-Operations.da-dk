@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815336"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003647"
 ---
 # <a name="purchase-requisition-overview"></a>Oversigt over indkøbsrekvisition
 
@@ -81,7 +81,7 @@ Den overordnede status for indkøbsrekvisitionen bestemmes af status for indkøb
 <li><strong>Til gennemsyn</strong> – Indkøbsrekvisitionslinjerne er sendt til gennemsyn. Når arbejdsgangsprocessen er fuldført for en indkøbsrekvisitionslinje, er dens status fortsat <strong>Til gennemsyn</strong>, indtil alle resterende indkøbsrekvisitionslinjer er gennemset.</li>
 <li><strong>Afvist</strong> – En indkøbsrekvisitionslinje er blevet afvist. Afviste indkøbsrekvisitionslinjer kan ændres og sendes til godkendelse igen.</li>
 </ul>
-Hvis du sender en indkøbsrekvisitionslinje igen, efter at den blev afvist, starter gennemsynsprocessen for alle linjer i indkøbsrekvisitionen, som stadig er til gennemsyn, forfra. <strong>Bemærk:</strong> Du kan trække en indkøbsrekvisition tilbage, selvom den allerede er sendt. Når du trækker en indkøbsrekvisition tilbage, tilbagekaldes alle andre indkøbsrekvisitionslinjer samtidig. Indkøbsrekvisitionslinjer, der er trukket tilbage, kan slettes.</td>
+Hvis du sender en indkøbsrekvisitionslinje igen, efter at den blev afvist, starter gennemsynsprocessen for alle linjer i indkøbsrekvisitionen, som stadig er til gennemsyn, forfra. </br><strong>Bemærk:</strong> Du kan trække en indkøbsrekvisition tilbage, selvom den allerede er sendt. Når du trækker en indkøbsrekvisition tilbage, tilbagekaldes alle andre indkøbsrekvisitionslinjer samtidig. Indkøbsrekvisitionslinjer, der er trukket tilbage, kan slettes.</td>
 </tr>
 <tr class="odd">
 <td>Afvist</td>
@@ -109,7 +109,7 @@ Hvis du sender en indkøbsrekvisitionslinje igen, efter at den blev afvist, star
 <tr class="odd">
 <td>Annulleret</td>
 <td>Annulleret</td>
-<td>Indkøbsrekvisition og alle indkøbsrekvisitionslinjer er blevet annulleret. <strong>Bemærk:</strong> Hvis du ikke længere har brug for en vare på en indkøbsrekvisitionslinje, skal du annullere indkøbsrekvisitionslinjen, hvis den allerede er godkendt. Kun godkendte indkøbsrekvisitionslinjer kan annulleres. Hvis der er indkøbsrekvisitionslinjer, som stadig er til gennemsyn, har indkøbsrekvisitionen statussen <strong>Til gennemsyn</strong>. I dette tilfælde kan du trække indkøbsrekvisitionen tilbage og slette den relevante indkøbsrekvisitionslinje.</td>
+<td>Indkøbsrekvisition og alle indkøbsrekvisitionslinjer er blevet annulleret.</br> <strong>Bemærk:</strong> Hvis du ikke længere har brug for en vare på en indkøbsrekvisitionslinje, skal du annullere indkøbsrekvisitionslinjen, hvis den allerede er godkendt. Kun godkendte indkøbsrekvisitionslinjer kan annulleres. Hvis der er indkøbsrekvisitionslinjer, som stadig er til gennemsyn, har indkøbsrekvisitionen statussen <strong>Til gennemsyn</strong>. I dette tilfælde kan du trække indkøbsrekvisitionen tilbage og slette den relevante indkøbsrekvisitionslinje.</td>
 </tr>
 <tr class="even">
 <td>Lukket</td>
@@ -156,7 +156,8 @@ I nogle tilfælde skal du starte en tilbudsanmodningsproces (RFQ) for at identif
 
 Du kan sætte en indkøbsrekvisition på hold ved at vælge afkrydsningsfeltet **På hold** på siden **Oplysninger om indkøbsrekvisition**. Behandling af indkøbsrekvisitionen kan kun fortsætte, når du fjerner spærringen ved at fjerne markeringen i afkrydsningsfeltet.  
 
-**Bemærk:** I e-indkøb giver tilbudsanmodningen for indkøbsrekvisitionen eventuelt leverandører mulighed for at tilføje alternative linjer. I dette tilfælde afspejler din indkøbsrekvisition godkendte alternativer.
+> [!NOTE]
+> I e-indkøb kan tilbudsanmodningen for indkøbsrekvisitionen give leverandører mulighed for at tilføje alternative linjer. I dette tilfælde afspejler din indkøbsrekvisition godkendte alternativer.
 
 ## <a name="demand-consolidation"></a>Efterspørgselskonsolidering
 Du kan forbedre din forhandlingsposition over for dine kreditorer og dermed opnå bedre priser, lavere forsendelses- og administrationsomkostninger samt lavere faste omkostninger ved at konsolidere indkøbsrekvisitionslinjer fra flere indkøbsrekvisitioner.  
@@ -172,7 +173,8 @@ En konsolideringsmulighed er en gruppe af indkøbsrekvisitionslinjer, der er gru
 
 Efter du har føjet rekvisitionslinjerne til en konsolideringsmulighed og foretaget ændringer, der er behov for, kan du oprette en indkøbsordre for de konsoliderede indkøbsrekvisitionslinjer.  
 
-**Bemærk:** Ændringer, du laver til en indkøbsrekvisitionslinje på siden **Konsolidering af indkøbsrekvisition**, afspejles på den købsordre, du opretter. I indkøbsrekvisitionen forbliver linjen dog uændret, således at dens historik bevares.  
+> [!NOTE]
+> Ændringer, du laver til en indkøbsrekvisitionslinje på siden **Konsolidering af indkøbsrekvisition**, afspejles på den indkøbsordre, du opretter. I indkøbsrekvisitionen forbliver linjen dog uændret, således at dens historik bevares.  
 
 Du kan oprette en indkøbsordre for indkøbsrekvisitionslinjer, der ikke er berettiget til efterspørgselskonsolidering, eller som ikke er valgt til en konsolideringsmulighed, ved manuelt at behandle linjerne.
 

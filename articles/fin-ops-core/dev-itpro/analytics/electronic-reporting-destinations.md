@@ -1,9 +1,9 @@
 ---
 title: Destinationer for elektronisk rapportering (ER)
-description: Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der er tildelt passende adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. I denne artikel forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser.
-author: ShylaThompson
+description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering (ER), de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
+author: nselin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,119 +18,151 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771463"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030767"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der er tildelt passende adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. I denne artikel forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser.
+Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der har de nødvendige adgangsrettigheder, kan også ændre indstillingerne på kørselstidspunktet. I dette emne forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser.
 
-Konfigurationer af formater for elektronisk rapportering (ER) består normalt af mindst én output-komponent: en fil. Normalt indeholder konfigurationer flere filoutputkomponenter af forskellige typer (for eksempel XML, TXT eller XLSX), der er grupperet i enten en enkelt mappe eller flere mapper. Med styring af ER-destination kan du forudkonfigurere, hvad sker der, når hver komponent køres. Når en konfiguration køres, åbnes som standard en dialogboks, hvor brugeren kan gemme eller åbne filen. Samme funktionsmåde bruges også, når du importerer en ER-konfiguration og ikke konfigurerer særlige destinationer for den. Når der oprettes en destination for en vigtig outputkomponent, tilsidesætter denne destination standardindstillingen, og mappen eller filen sendes på grundlag af destinationens indstillinger.
+Konfigurationer af ER-formater består normalt af mindst én output-komponent: en fil. Normalt indeholder konfigurationer flere filoutputkomponenter af forskellige typer (for eksempel XML, TXT, XLSX, DOCX eller PDF), der er grupperet i enten en enkelt mappe eller flere mapper. Med styring af ER-destination kan du forudkonfigurere, hvad sker der, når hver komponent køres. Når en konfiguration køres, åbnes som standard en dialogboks, hvor du kan gemme eller åbne filen. Samme funktionsmåde forekommer også, når du importerer en ER-konfiguration og ikke konfigurerer særlige destinationer for den. Når der oprettes en destination for en vigtig outputkomponent, tilsidesætter denne destination standardindstillingen, og mappen eller filen sendes på grundlag af destinationens indstillinger.
 
 ## <a name="availability-and-general-prerequisites"></a>Tilgængelighed og generelle forudsætninger
-Funktionerne for ER-destinationer findes ikke i Microsoft Dynamics AX 7.0 (februar 2016). Derfor skal du installere Microsoft Dynamics 365 for Operations version 1611 (november 2016) for at kunne bruge alle de funktioner, der er beskrevet i dette emne. Du kan også vælge at installere en af følgende forudsætninger. Du skal dog være opmærksom på, at disse alternativer giver en mere begrænset ER destinationsoplevelse.
+
+Funktionaliteten for ER-destinationer findes ikke i Microsoft Dynamics AX 7.0 (februar 2016). Du skal derfor installere Microsoft Dynamics 365 for Operations version 1611 (november 2016) eller nyere for at kunne bruge følgende destinationstyper:
+
+- [E-mail](er-destination-type-email.md)
+- [Arkivér](er-destination-type-archive.md)
+- [Filer](er-destination-type-file.md)
+- [Skærm](er-destination-type-screen.md)
+- [Power BI](er-destination-type-powerbi.md)
+
+Du kan også vælge at installere en af følgende forudsætninger. Du skal dog være opmærksom på, at disse alternativer giver en mere begrænset ER-destinationsoplevelse.
 
 - Microsoft Dynamics AX-programversion 7.0.1 (maj 2016)
-- ER destinationsstyring [programhotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
+- [Programhotfix til styring af destination for elektronisk rapportering](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
+
+Der findes også en [Udskriv](er-destination-type-print.md)-destinationstype. Hvis du vil bruge den, skal du installere Microsoft Dynamics 365 Finance version 10.0.9 (april 2020).
+
+## <a name="overview"></a>Oversigt
+
+Du kan kun konfigurere destinationer for ER-konfigurationer, der er [importeret](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) til aktuelle Finance-forekomst, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**. Funktionaliteten for ER-destinationsstyring er tilgængelig på **Organisationsadministration** \> **Elektronisk rapportering** \> **Destination for elektronisk rapportering**. På siden **Destination for elektronisk rapportering** kan du tilsidesætte standardfunktionsmåden for en konfiguration. Importerede konfigurationer vises ikke på denne side, før du vælger **Ny** og derefter i feltet **Reference** vælger en konfiguration at oprette destinationsindstillinger for.
+
+[![Vælge en konfiguration i feltet Reference](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+
+Når du har oprettet en reference, kan du oprette en fildestination for hver outputkomponent for **Mappe** eller **Fil** i det ER-format, der refereres til.
+
+[![Oprettelse af en fildestination](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+
+Derefter kan du i dialogboksen **Indstillinger for destination** aktivere og deaktivere individuelle destinationer for fildestinationen. Knappen **Indstillinger** bruges til at styre alle destinationer for en valgt fildestination. I dialogboksen **Indstillinger for destination** kan du styre hver destination separat ved at vælge indstillingen **Aktiveret** for destinationen.
+
+I versioner af Finance **før version 10.0.9** kan du oprette **én fildestination** for hver outputkomponent af samme format som f.eks. en mappe eller en fil, der er markeret i feltet **Filnavn**. Men i **version 10.0.9 og senere** kan du oprette **flere fildestinationer** for hver outputkomponent af samme format.
+
+Du kan f.eks. bruge denne egenskab til at konfigurere fildestinationer for en filkomponent, der bruges til at generere et udgående dokument i Excel-format. En destination ([Arkiv](er-destination-type-archive.md)) kan konfigureres til at gemme den oprindelige Excel-fil i et ER-jobarkiv, og en anden destination ([E-mail](er-destination-type-email.md)) kan konfigureres til samtidigt at [konvertere](#OutputConversionToPDF) Excel-filen til PDF-format og sende PDF-filen med e-mail.
+
+[![Konfigurere flere destinationer for et enkelt formatelement](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+## <a name="destination-types"></a>Destinationstyper
+
+Følgende destinationer understøttes i øjeblikket for ER-formater. Du kan deaktivere eller aktivere alle typer på samme tid. På denne måde kan du enten gøre ingenting eller sende komponenten til alle konfigurerede destinationer.
+
+- [E-mail](er-destination-type-email.md)
+- [Arkivér](er-destination-type-archive.md)
+- [Filer](er-destination-type-file.md)
+- [Skærm](er-destination-type-screen.md)
+- [Power BI](er-destination-type-powerbi.md)
+- [Udskrivning](er-destination-type-print.md)
+
+## <a name="applicability"></a>Anvendelighed
 
 Du kan konfigurere destinationer kun for ER-konfigurationer, der er importeret, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**.
 
-## <a name="overview"></a>Overblik
-Funktionen ER-destinationsstyring er tilgængelig på **Virksomhedsadministration** &gt; **Elektronisk rapportering**. Her kan du tilsidesætte standardindstillingen for en konfiguration. Importerede konfigurationer vises først her, når du klikker på **Ny** og derefter i feltet **Reference** vælger en konfiguration at oprette destinationsindstillinger for.
+> [!NOTE]
+> Konfigurerede destinationer er firmaspecifikke. Hvis du planlægger at bruge et ER-format i forskellige firmaer i den aktuelle forekomst af Finance, skal du konfigurere destinationer for det pågældende ER-format for hvert af disse firmaer.
 
-[![Vælge en konfiguration i feltet Reference](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
+Når du konfigurerer fildestinationer for et valgt format, skal du konfigurere dem for hele formatet.
 
-Når du har oprettet en reference, kan du oprette en fildestination for hver mappe eller for en fil.
+[![Konfigurationslink](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-[![Oprettelse af en fildestination](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
+Samtidig kan du have flere [versioner](general-electronic-reporting.md#component-versioning) af det format, der er importeret til den aktuelle forekomst af Finance. Du kan få vist dem, hvis du vælger linket **Konfiguration**, der tilbydes, når du vælger feltet **Reference**.
+
+[![Konfigurationsversioner](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+
+Som standard anvendes konfigurerede destinationer kun, når du kører en ER-formatversion, der har status som enten **Fuldført** eller **Delt**. Du skal dog sommetider bruge konfigurerede destinationer, når kladdeversionen af et ER-format køres. Det kan f.eks. være, at du redigerer en kladdeversion af dit format, og du vil bruge konfigurerede destinationer til at teste, hvordan det genererede output leveres. Benyt følgende fremgangsmåde til at anvende destinationer for et ER-format, når kladdeversionen køres.
+
+1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
+3. Angiv indstillingen **Anvend destinationer for kladdetilstand** til **Ja**.
+
+[![Indstillingen Anvend destinationer for kladdetilstand](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+
+Hvis du vil bruge kladdeversionen af et ER-format, skal du markere ER-formatet i overensstemmelse hermed.
+
+1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
+3. Angiv indstillingen **Indstillingen Kør** til **Ja**.
+
+[![Indstillingen Kør](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+
+Når du har fuldført denne konfiguration, bliver indstillingen **Kør kladde** tilgængelig for ER-formater, som du redigerer. Angiv denne indstilling til **Ja** for at begynde at bruge kladdeversionen af formatet, når formatet køres.
+
+[![Indstillingen Kør kladde](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+
+## <a name="DestinationFailure"></a>Håndtering af destinationsfejl
+
+Normalt køres et ER-format inden for området for en bestemt forretningsproces. Leveringen af et udgående dokument, der genereres under udførelsen af et ER-format, skal dog nogle gange ses som en del af den pågældende forretningsproces. I dette tilfælde skal udførelsen af forretningsprocessen annulleres, hvis leveringen af et genereret udgående dokument til en konfigureret destination ikke lykkes. Hvis du vil konfigurere den rette ER-destination, skal du vælge indstillingen **Stop behandling ved fejl**.
+
+Du kan f.eks. konfigurere behandling af kreditorbetalinger, så ER-formatet **ISO20022-kreditoverførsel** køres for at generere betalingsfilen og de supplerende dokumenter (f.eks. følgeskrivelse og kontrolrapport). Hvis en betaling kun skal anses for at være behandlet korrekt, hvis følgeskrivelsen er leveret korrekt via mail, skal du markere afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** i den rette destinationsfil som vist i følgende illustration. I dette tilfælde ændres status for den betaling, der er valgt til behandling, kun fra **Ingen** til **Sendt**, når det følgebrev, der er oprettet, accepteres til levering af en e-mailudbyder, der er konfigureret i Finance-forekomsten.
+
+[![Konfigurere proceshåndtering for fildestinationsfejl](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+
+Hvis du fjerner markeringen af afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** på destinationen, anses en betaling for at være behandlet korrekt, også selv om følgebrevet ikke er leveret korrekt via mail. Status for betalingen ændres fra **Ingen** til **Sendt**, selvom følgebrevet ikke kan sendes, f.eks. fordi modtagerens eller afsenderens e-mailadresse mangler eller er forkert.
+
+## <a name="OutputConversionToPDF"></a>Konvertering af output til PDF
+
+Du kan bruge PDF-konverteringsindstillingen til at konvertere output i Microsoft Office-format (Excel/Word) til PDF-format.
+
+### <a name="make-pdf-conversion-available"></a>Stille PDF-konvertering til rådighed
+
+Hvis du vil stille PDF-konverteringsindstillingen til rådighed i den aktuelle Finance-forekomst, skal du åbne arbejdsområdet **Funktionsstyring** og aktivere funktionen **Konverter udgående dokumenter til elektroniske rapportering fra Microsoft Office-formater til PDF**.
+
+[![Aktivere PDF-konvertering af funktionen udgående dokumenter i Funktionsstyring](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+
+### <a name="applicability"></a>Anvendelighed
+
+PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der bruges til at oprette output i Microsoft Office Excel- eller Word-format (**Excel-fil**). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format.
+
+### <a name="limitations"></a>Begrænsninger
 
 > [!NOTE]
-> Du kan oprette én fildestination for hver outputkomponent af samme format som f.eks. en mappe eller en fil, der er markeret i feltet **Filnavn**. Du kan derefter aktivere og deaktivere individuelle destinationer for fildestinationen i dialogboksen **Indstillinger for destination**. Knappen **Indstillinger** bruges til at styre alle destinationer for en valgt fildestination. I dialogboksen **Indstillinger for destination** kan du styre hver destination separat ved at vælge indstillingen **Aktiveret** for destinationen.
-
-[![Dialogboksen Indstillinger for destination](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
-
-## <a name="destination-types"></a>Destinationstyper
-Forskellige typer destinationer understøttes. Du kan deaktivere eller aktivere alle typer på samme tid. På denne måde kan du enten gøre ingenting eller sende komponenten til alle konfigurerede destinationer. I følgende afsnit beskrives de destinationer, der understøttes.
-
-### <a name="email-destination"></a>Maildestination
-
-Indstil **Aktiveret** til **Ja** for at sende en outputfil via mail. Når denne indstilling er aktiveret, kan du angive e-mailmodtagere og redigere e-mailens emne og brødtekst. Du kan konfigurere konstanttekster til e-mailens emne og brødtekst, eller du kan bruge ER formler til dynamisk at oprette e-mailtekster. Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan udføres på samme måde, som funktionen Udskriftsstyring i programmet udfører den. Du kan også oversætte en e-mailadresse ved hjælp af en direkte reference til ER-konfigurationen via en formel.
-
-### <a name="email-address-types"></a>E-mailadressetyper
-
-Når du klikker på **Rediger** for feltet **til** eller **Cc**, åbnes dialogboksen **Mail til**. Du kan derefter vælge type e-mailadresse, du vil bruge.
-
-[![Mail til-dialogboks](./media/ger-destinations-email-1-1611-1024x588.jpg)](./media/ger-destinations-email-1-1611.jpg)
-
-#### <a name="print-management"></a>Udskriftsstyring
-
-Hvis du vælger typen **Mail for udskriftsstyring**, kan du angive fast e-mailadresser i feltet **Til**. Hvis du vil bruge mailadresser, der ikke er faste, skal du vælge mailkildetypen for en fildestination. Følgende værdier understøttes: **Kunde**, **Leverandør**, **Kundeemne**, **Kontakt**, **Konkurrent**, **Arbejder**, **Ansøger**, **Mulig kreditor** og **Ikke-godkendt kreditor**. Når du har valgt en kildetype for mail, skal du bruge knappen ved feltet **Kildekonto for mail** til at åbne formularen **Formeldesigner**. Du kan bruge denne formular til at knytte en formel, der repræsenterer den valgte partskonto, til e-maildestinationen.
-
-[![Konfigurere e-mailtypen udskriftsstyring](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
-
-Bemærk, at formler er specifikke for ER-konfigurationen. Angiv en dokumentspecifik reference til en debitor- eller kreditorparttype i feltet **Formel**. I stedet for at skrive kan du finde datakildenoden, der repræsenterer debitor- eller kreditorkontoen, og derefter klikke på **Tilføj** datakilde for at opdatere formlen. Hvis du bruger konfigurationen ISO 20022 SEPA-kreditoverførsel, er den node, der repræsenterer en kreditorkonto, **'$PaymentsForCoveringLetter'. Creditor.Identification.SourceID**. Ellers skal du indtaste en strengværdi som f.eks. **DE-001** for at gemme en formel.
-
-[![Formeldesigner](./media/ger_formuladesignerfordestination-1024x541.jpg)](./media/ger_formuladesignerfordestination.jpg)
-
-I dialogboksen **Mail til** skal du klikke på papirkurven ud for den **Kildekonto for mail** for at slette formlen for e-mailens kildekonto. Du kan også åbne formeldesigneren for at ændre en formel, der blev gemt tidligere. Hvis du vil tildele e-mailadresser, skal du klikke på **Rediger** for at åbne dialogboksen **Tildel e-mailadresser**.
-
-[![Tildele mailadresser til en maildestination](./media/ger-destinations-email-3-1611-1024x587.jpg)](./media/ger-destinations-email-3-1611.jpg)
-
-#### <a name="configuration-email"></a>Konfigurationsmail
-
-Brug denne e-mailtype, hvis den konfiguration, du bruger, har en node i datakilderne, der repræsenterer en e-mailadresse. Du kan bruge datakilder og funktioner i formeldesigneren til at få en korrekt formateret e-mailadresse.
-
-[![Tildeling af en mailadresses datakilde til en maildestination](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
+> Denne funktion er en prøveversionsfunktion og er underlagt de vilkår for anvendelse, der er beskrevet i [Supplerende vilkår for anvendelse for Microsoft Dynamics 365-prøveversioner](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 > [!NOTE]
-> En SMTP-server (Simple Mail Transfer Protocol) skal konfigureres og være tilgængelig. Du kan angive din SMTP-server under **Systemadministration** &gt; **Konfiguration** &gt; **Mail** &gt; **E-mail-parametre**.
+> PDF-konverteringsindstillingen er kun tilgængelig for skyinstallationer.
+>
+> Den fremstillede PDF-fil er begrænset til maksimalt 300 sider.
+>
+> På nuværende tidspunkt understøttes kun liggende sideretning i det PDF-dokument, der fremstilles af et Excel-output.
+>
+> Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der bruges til konvertering af et output, der ikke indeholder integrerede skrifttyper.
 
-### <a name="archive-destination"></a>Arkivdestination
+### <a name="use-the-pdf-conversion-option"></a>Bruge PDF-konverteringsindstillingen
 
-Du kan bruge denne indstilling til at sende output til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Indstil **Aktiveret** til **Ja** for at sende output til en destination, der er defineret af den valgte dokumenttype. Kun dokumenttyper, hvor gruppen er indstillet til **Fil**, kan vælges. Du definerer dokumenttyper i **Virksomhedsadministration** &gt; **Dokumentstyring** &gt; **Dokumenttyper**. Konfigurationen for ER-destinationer svarer til konfigurationen for dokumentstyringssystemet.
+Hvis du vil aktivere PDF-konvertering for en fildestination, skal du markere afkrydsningsfeltet **Konverter til PDF**.
 
-[![Siden Dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
-
-Lokaliteten bestemmer, hvor filen gemmes. Når destinationen **Arkiv** er aktiveret, kan resultaterne af konfigurationskørslen gemmes i jobarkivet. Du kan få vist resultaterne i **Virksomhedsadministration** &gt; **elektronisk rapportering** &gt; **Elektronisk rapportering af arkiverede job**.
-
-> [!NOTE]
-> Du kan vælge en dokumenttype til jobarkivet i **Virksomhedsadministration** &gt; **Arbejdsområder** &gt; **Elektronisk rapportering** &gt; **Parametre til elektronisk rapportering**.
-
-#### <a name="sharepoint"></a>SharePoint
-
-Du kan gemme en fil i en angivet SharePoint-mappe. Du definerer SharePoint-standardserveren under **Organisationsadministration** &gt; **Dokumentstyring** &gt; **Dokumentstyringsparametre** under fanen **SharePoint**. Når SharePoint-mappen er konfigureret, kan du vælge den som den mappe, hvor ER-outputtet gemmes for dokumenttypen.
-
-[![Valg af en SharePoint-mappe](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
-
-#### <a name="azure-storage"></a>Azure Storage
-
-Når dokumenttype placeringen er indstillet til **Arkivbibliotek**, kan du gemme en fil på Azure Storage.
-
-### <a name="file-destination"></a>Fildestination
-
-Hvis du indstiller **Aktiveret** til **Ja**, åbnes dialogboksen Åbn eller dialogboksen Gem, når konfigurationen er afsluttet.
-
-### <a name="screen-destination"></a>Skærmdestination
-
-Hvis du indstiller **Aktiveret** til **Ja**, oprettes der et eksempel på outputtet. Du kan få vist nogle filtyper som f.eks. XML, TXT eller PDF direkte i et browservindue. For andre filtyper, f.eks. Microsoft Excel eller Word, bruges tjenesten Microsoft Office Online.
-
-### <a name="power-bi-destination"></a>Power BI-destination
-
-Indstil **Aktiveret** til **Ja** for at bruge din ER-konfiguration til at arrangere overførslen af data fra din forekomst til Microsoft Power BI-tjenester. De overførte filer gemmes på en forekomst af Microsoft SharePoint Server, der skal konfigureres til dette formål. Du kan finde flere oplysninger under [Konfigurering af Elektronisk rapportering (ER) til at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
-
-> [!TIP]
-> Hvis du vil tilsidesætte standardindstillingen (dvs dialogboksen for en konfiguration), kan du oprette en reference til destinationen og en fildestination for den vigtigste outputkomponent og derefter deaktivere alle destinationer.
+[![Aktivere PDF-konvertering for en fildestination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
-To typer rettigheder og opgaver bruges til ER-destinationer. Én type styrer muligheden for at opretholde de samlede destinationer, der er konfigureret for en juridisk enhed (dvs. den styrer adgang til siden **Destinationer for elektronisk rapportering**). Den anden type styrer muligheden for at en programbruger på kørselstidspunktet kan tilsidesætte de destinationsindstillinger, der er konfigureret af en ER udvikler eller funktionel konsulent i elektronisk rapportering.
 
-| Rolle (AOT-navn)                     | Navn på rolle                                  | Arbejdsopgave (AOT-navn)                     | Navn på arbejdsopgave                                                        |
+To typer rettigheder og opgaver bruges til ER-destinationer. Én type styrer en brugers generelle mulighed for at opretholde de destinationer, der er konfigureret for en juridisk enhed (dvs. den styrer adgang til siden **Destinationer for elektronisk rapportering**). Den anden type styrer en programbrugers mulighed for på kørselstidspunktet at tilsidesætte de destinationsindstillinger, der er konfigureret af en ER-udvikler eller en funktionel konsulent i elektronisk rapportering.
+
+| Rolle (AOT-navn)                     | Rollenavn                                  | Arbejdsopgave (AOT-navn)                     | Navn på arbejdsopgave                                                        |
 |-------------------------------------|--------------------------------------------|-------------------------------------|------------------------------------------------------------------|
 | ERDeveloper                         | Udvikler til elektronisk rapportering             | ERFormatDestinationConfigure        | Konfigurer destination for elektronisk rapportformat                |
 | ERFunctionalConsultant              | Funktionel konsulent i elektronisk rapportering | ERFormatDestinationConfigure        | Konfigurer destination for elektronisk rapportformat                |
@@ -141,25 +173,26 @@ To typer rettigheder og opgaver bruges til ER-destinationer. Én type styrer mul
 > To rettigheder bruges i de foregående opgaver. Disse rettigheder har de samme navne som de tilsvarende opgaver: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
+
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jeg har importeret elektroniske konfigurationer, og jeg kan se dem på siden Konfigurationer for elektronisk rapportering. Men hvorfor kan jeg ikke se dem på siden Destinationer for elektronisk rapportering?
 
-Sørg for at klikke på **Ny** og derefter vælge en konfiguration i feltet **Reference**. På siden **Destinationer for elektronisk rapportering** kan du se kun de konfigurationer, som destinationer er konfigureret for.
+Sørg for at vælge **Ny** og derefter vælge en konfiguration i feltet **Reference**. Siden **Destinationer for elektronisk rapportering** viser kun de konfigurationer, som destinationer er konfigureret for.
 
-### <a name="is-there-any-way-to-define-which-azure-storage-account-and-azure-blob-storage-are-used"></a>Er der nogen måde at definere, hvilken Azure Storage-konto og Azure Blob-lager der skal bruges?
+### <a name="is-there-any-way-to-define-which-microsoft-azure-storage-account-and-azure-blob-storage-are-used"></a>Er der nogen måde at definere, hvilken Microsoft Azure Storage-konto og hvilket Azure Blob-lager der skal bruges?
 
-Nej. Standard Azure Blob-lageret, der er defineret og anvendes til dokumentstyringssystemet, bruges.
+Nr. Standard Microsoft Azure Blob-lageret, der er defineret og anvendes til dokumentstyringssystemet, bruges.
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Hvad er formålet med fildestinationen i indstillingerne for destinationen? Hvad gør denne indstilling?
 
-**Fil**-destinationen bruges til at styre en dialogboks. Hvis du aktiverer denne destination, eller hvis ingen destination er defineret for en konfiguration, vises en Gem- eller Åbn-dialogboks, når der oprettes en outputfil.
+**Fil**-destinationen bruges til at styre en dialogboks. Hvis du aktiverer denne destination, eller hvis ingen destination er defineret for en konfiguration, vises dialogboksen Åbn eller Gem, når der oprettes en outputfil.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Kan du give et eksempel på den formel, der refererer til en kreditorkonto, som jeg kan sende mail til?
 
 Formlen er specifik for ER-konfigurationen. Hvis du bruger konfigurationen ISO 20022 SEPA-kreditoverførsler, kan du f.eks bruge **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID** eller **model. Payments.Creditor.Identification.SourceID** til at få en tilknyttet kreditorkonto.
 
-### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>En af mine formatkonfigurationer indeholder flere filer, der er grupperet i én mappe (for eksempel Mappe1 indeholder, fil1 og fil2 og fil3). Hvordan konfigurerer jeg destinationer, så Mappe1.zip slet ikke oprettes, fil1 sendes via mail, fil2 sendes til SharePoint, og jeg kan åbne fil3 straks, når konfigurationen er udført?
+### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-grouped-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>En af mine formatkonfigurationer indeholder flere filer, der er grupperet i én mappe (f.eks. indeholder Mappe1 Fil1, Fil2 og Fil3). Hvordan konfigurerer jeg destinationer, så Mappe1.zip slet ikke oprettes, fil1 sendes via mail, fil2 sendes til SharePoint, og jeg kan åbne fil3 straks, når konfigurationen er udført?
 
-Forudsætningen er, at formatet skal være tilgængeligt i ER-konfigurationerne. Hvis du har formatet, skal du åbne siden **Destination for elektronisk rapportering** og oprette en ny reference til denne konfiguration. Derefter skal du have fire fildestinationer, én for hver outputkomponent. Opret den første fildestination, giv den et navn som f.eks. **Mappe**, og vælg et filnavn, der repræsenterer en mappe i din konfiguration. Klik derefter på **Indstillinger**, og sørg for, at alle destinationer er deaktiveret. Mappen vil ikke blive oprettet for denne fildestination. Som standard fungerer filerne på samme måde på grund af hierarkisk afhængigheder mellem filerne og overordnede mapper. Med andre ord sendes de ikke et vilkårligt sted hen. Hvis du vil tilsidesætte denne standardfunktionsmåde, skal du oprette tre yderligere fildestinationer, én for hver fil. I destinationsindstillingerne for hver skal du aktivere den destination, som filen skal sendes til.
+Dit format skal først være tilgængeligt i ER-konfigurationerne. Hvis denne forudsætning er opfyldt, kan du åbne siden **Destination for elektronisk rapportering** og oprette en ny reference til konfigurationen. Derefter skal du have fire fildestinationer, én for hver outputkomponent. Opret den første fildestination, giv den et navn som f.eks. **Mappe**, og vælg et filnavn, der repræsenterer en mappe i din konfiguration. Vælg derefter **Indstillinger**, og sørg for, at alle destinationer er deaktiveret. Mappen vil ikke blive oprettet for denne fildestination. Som standard fungerer filerne på samme måde på grund af hierarkisk afhængigheder mellem filerne og overordnede mapper. Med andre ord sendes de ikke et vilkårligt sted hen. Hvis du vil tilsidesætte denne standardfunktionsmåde, skal du oprette tre yderligere fildestinationer, én for hver fil. I destinationsindstillingerne for hver skal du aktivere den destination, som filen skal sendes til.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184732"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026234"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Tilknyt ER-komponenter i det oprettede format til datamodelelementer (november 2016)
 
@@ -98,7 +98,7 @@ Følgende procedure viser, hvordan en bruger med rollen Systemadministrator elle
 2. Luk siden.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>Ændr status for den aktuelle version af formatkonfiguration
-    * I de næste trin skal du ændre status for formatkonfigurationen fra Udkast til Fuldført for at gøre den tilgængelig for generering af betalingsdokumenter.  
+I de næste trin skal du ændre status for formatkonfigurationen fra Udkast til Fuldført for at gøre den tilgængelig for generering af betalingsdokumenter.  
 1. Klik på Skift status.
 2. Klik på Fuldført.
 3. Skriv en værdi i feltet Beskrivelse.
@@ -108,7 +108,7 @@ Følgende procedure viser, hvordan en bruger med rollen Systemadministrator elle
     * Bemærk, at konfigurationen gemmes som fuldført version 1.1: Dette er version 1 af det format, der er baseret på version 1 af datamodellen.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Definer ikrafttrædelsesdatoen for færdig version af format
-    * Hver formatversion kan konfigureres som tilgængelig for brug fra en bestemt dato. Når der er mere end én formatversion aktiv på en bestemt dato, vælges det nyeste format (baseret på versionsnummer) til anvendelse. Sessionens datoværdi bruges til valg af korrekt version.  
+Hver formatversion kan konfigureres som tilgængelig for brug fra en bestemt dato. Når der er mere end én formatversion aktiv på en bestemt dato, vælges det nyeste format (baseret på versionsnummer) til anvendelse. Sessionens datoværdi bruges til valg af korrekt version.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Begræns adgang til oprettet format fra firmaer
 1. Udvid sektionen ISO-land/områdekoder.

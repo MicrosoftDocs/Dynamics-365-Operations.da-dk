@@ -1,6 +1,6 @@
 ---
 title: Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
-description: Dette emne forklarer, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS).
+description: I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 10/14/2019
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e62e406de5d972b3e66319cf293d3d420c69d46
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8ac2cf0c2b78dd3456c5c1a69981a4e498b115ae
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812129"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005510"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS). 
+I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS). 
 
 ## <a name="contact-support"></a>Kontakt support
 
 Du kan bruge oplysningerne i denne artikel til at kontakte Microsoft, hvis du har tekniske spørgsmål, eller hvis du har brug for hjælp til at få adgang til Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="finance-and-operations-apps-support"></a>Support til Finance and Operations-apps
+### <a name="finance-and-operations-apps-support"></a>Understøttelse af Finance and Operations-apps
 
 Du kan få support ved at bruge ressourcerne i følgende tabel. Disse ressourcer er angivet i den rækkefølge, vi anbefaler, at du følger, når du foretager fejlfinding.
 
@@ -90,6 +90,6 @@ Ved tekniske spørgsmål, der er relateret til at logge på og få adgang til Cu
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 - [Få support til Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Få support til Microsoft Dynamics 365 Talent](../../../talent/talent-support.md)
+- [Få support til Microsoft Dynamics 365 Human Resources](../../../human-resources/hr-admin-troubleshooting-support.md)
 - Du kan finde flere oplysninger om Microsoft Dynamics-supporttilbud i [Administrere supportoplevelser for Finance and Operations-apps](cloud-powered-support-lcs.md).
 

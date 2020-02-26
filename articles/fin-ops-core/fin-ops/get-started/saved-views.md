@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658661"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017698"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -37,7 +37,7 @@ Med traditionel brugertilpasning havde brugerne kun et enkelt sæt tilpasninger 
 
 -    Visninger, der oprettes til bestemte sidetyper, kan også indeholde brugertilføjede filtre eller sorteringer, som giver brugerne mulighed for hurtigt at vende tilbage til almindeligt filtrerede datasæt. Se afsnittet [Hvilke sider understøtter visninger](saved-views.md#what-pages-support-views) for at få yderligere oplysninger. 
 
--    Visninger kan publiceres til brugere i bestemte sikkerhedsroller og bestemte juridiske enheder. Derfor kan alle brugere, der har en bestemt rolle i en angivet juridisk enhed, få adgang til at bruge denne visning, også selvom den pågældende bruger muligvis ikke kan tilpasse den. Denne publiceringsfunktion giver organisationer mulighed for at definere de standardvisninger i firmaet, der er optimeret til deres virksomhed. Yderligere oplysninger finder du i afsnittet [Administrere tilpasninger på organisationsniveau med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+-    Visninger kan publiceres til brugere i bestemte sikkerhedsroller og bestemte juridiske enheder. Derfor kan alle brugere, der har en bestemt rolle og adgang til en angivet juridisk enhed, få adgang til at bruge denne visning, også selvom den pågældende bruger muligvis ikke kan tilpasse den. Denne publiceringsfunktion giver organisationer mulighed for at definere de standardvisninger i firmaet, der er optimeret til deres virksomhed. Yderligere oplysninger finder du i afsnittet [Administrere tilpasninger på organisationsniveau med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 
 -    I modsætning til traditionelle tilpasninger gemmes visninger ikke automatisk, når en bruger udfører eksplicitte tilpasninger eller filtrerer en liste. Eksplicitte lagringer er påkrævede for at kunne oprette en visning før eller efter de ændringer, der er knyttet til den pågældende visning, og for at sikre, at visningsdefinitioner ikke utilsigtet ændres af filtre eller tilpasninger, der ikke er beregnet til brug i længere tid.  
 
@@ -71,7 +71,7 @@ Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
 2.  Sådan redigeres den eksisterende visning:
      1. Vælg **Gem**. Bemærk, at denne handling ikke vil blive aktiveret for låste visninger. 
 3.  Sådan oprettes en ny visning:
-     1.    Vælg **Gem som**. 
+     1.    Vælg **Gem som...**. 
      2.    Indtast et visningsnavn og evt. en beskrivelse.
      3.    Vælg **Gem**.
 
@@ -83,7 +83,7 @@ For at ændre standardvisningen for en side skal du følge disse trin:
 2.  Vælg visningsnavnet for at åbne visningsvælgeren. 
 3.  Vælg **Flere** og derefter **Vælg som standard**.  
 
-Når du opretter en ny visning (ved hjælp af handlingen **Gem som**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
+Når du opretter en ny visning (ved hjælp af handlingen **Gem som...**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
 
 Bemærk, at i nogle tilfælde udføres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du navigerer til en side. Hvis du f.eks. navigerer via et felt til en side, udføres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du navigerer til en side, hvis klassiske visning allerede har en defineret forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, får du besked om det, når visningen indlæses. Hvis du skifter visning, efter at siden er indlæst, skulle visningsforespørgslen blive udført som forventet.
 
@@ -99,11 +99,11 @@ Hvis du vil se en liste over tilgængelige visninger for den pågældende side, 
 De ændringer, der er foretaget i denne dialogboks, træder i kraft, når du vælger knappen **Gem**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige indstillinger på organisationsniveau med visninger
-For at hjælpe dig med at forstå, hvordan gemte visninger er med til at forbedre administrationen af tilpasninger på et organisationsniveau, beskriver dette afsnit, hvordan administration af personlige tilpasninger fungerede, før visninger var tilgængelige.
+For at hjælpe dig med at forstå, hvordan gemte visninger er med til at forbedre administrationen af tilpasninger på et organisationsniveau, beskriver dette afsnit nogle forskelle i administration af personlige tilpasninger med og uden gemte visninger.
 
 Uden visninger skulle administratorer anvende et sæt tilpasninger på en side for en bruger, en gruppe af brugere via siden Tilpasning. Hvis disse brugere havde rettigheder til at tilpasse personlige indstillinger, blev tilpasningerne anvendt på den pågældende side. Men der var ikke nogen mulighed for at forhindre brugerne i at tilpasse siden yderligere, hvilket betød, at organisationen ikke kunne sikre, at brugerne havde en ensartet brugergrænseflade. Hvis nogen af disse brugere ikke havde rettigheder til personlig tilpasning, blev de tilpasninger, som de fik af en administrator, ikke indlæst. Hvis der desuden blev ansat nye brugere i en organisation, skulle administratorer manuelt indlæse et sæt tilpasninger for brugeren. Der var ikke nogen automatisk mekanisme til angivelse af, at et bestemt sæt tilpasninger skulle være tilgængeligt for brugere i den pågældende rolle.
 
-Med funktionen Gemte visninger er det væsentligt lettere at administrere tilpasninger, primært på grund af muligheden for at publicere visninger til brugergrupper. Når en visning er blevet publiceret, kan alle brugere, der har en af de definerede sikkerhedsroller og er i de angivne juridiske enheder, få adgang til at bruge visningen, også selvom den pågældende bruger muligvis ikke kan tilpasse den. Selvom hver bruger har en kopi af den publicerede visning, hvor brug af siden (implicitte tilpasninger) automatisk anvendes, kan ingen bruger gemme eksplicitte tilpasninger eller forespørge på opdateringer til den publiceret visning. (Med andre ord er publicerede visninger låst). Hvis nye brugere får roller i juridiske enheder, som visninger er publiceret til, kan de automatisk se de visninger, der er knyttet til deres roller og juridiske enheder. Der kræves ingen yderligere handlinger af administratoren. På samme måde, hvis brugere ændrer roller i en organisation eller får adgang til forskellige juridiske enheder, kan de muligvis ikke længere få adgang til de visninger, der tidligere er publiceret til dem. Igen kræves der ikke yderligere handlinger af administratoren.
+Med funktionen Gemte visninger er det væsentligt lettere at administrere tilpasninger, primært på grund af muligheden for at publicere visninger til brugergrupper. Når en visning er blevet publiceret, kan alle brugere, der har en af de definerede sikkerhedsroller og adgang til en af de angivne juridiske enheder, få adgang til at se og bruge visningen, også selvom den pågældende bruger muligvis ikke kan tilpasse den. Selvom hver bruger har en kopi af den publicerede visning, hvor brug af siden (implicitte tilpasninger) automatisk anvendes, kan ingen bruger gemme eksplicitte tilpasninger eller forespørge på opdateringer til den publiceret visning. Med andre ord er publicerede visninger låst. Hvis nye brugere får roller i juridiske enheder, som visninger er publiceret til, kan de automatisk se de visninger, der er knyttet til deres roller og juridiske enheder. Der kræves ingen yderligere handlinger af administratoren. På samme måde, hvis brugere ændrer roller i en organisation eller får adgang til forskellige juridiske enheder, kan de muligvis ikke længere få adgang til de visninger, der tidligere er publiceret til dem. Igen kræves der ikke yderligere handlinger af administratoren.
 
 Opdateringer til en publiceret visning kan let distribueres til brugere ved igen at publicere visningen til de relevante sikkerhedsroller og juridiske enheder.
 
@@ -119,7 +119,8 @@ Følg disse trin for at publicere en visning:
 4.  Angiv et navn til og evt. en beskrivelse af visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Navnene på publicerede visninger for en side skal være entydige. Der tillades ingen dublerede navne, selvom listen over roller eller juridiske enheder, som visningerne gælder for, er forskellige.
 5.  Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning.
 6. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
-7.  Vælg **Publicer**.
+7. [10.0.9/Platform update 33 eller nyere] afgør, om visningen skal udgives som standardvisning for de valgte brugere. Hvis du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Dette vil ændre standardvisningen for disse brugere. Brugerne kan dog stadig ændre deres standardvisning, når udgivelsen er foretaget.    
+8.  Vælg **Publicer**.
 
 Bemærk, at det kan tage et stykke tid (op til en time) i nogle miljøer, før brugerne kan se den publicerede visning.
 
@@ -132,7 +133,8 @@ Hvis de ændringer, du vil foretage i en publiceret visning, kun omfatter public
 3.  Vælg **Ja**, hvis du vil opdatere den eksisterende visning (eller **Nej**, hvis du vil publicere denne under et andet navn).
 4.  Opdater navnet, beskrivelsen og/eller sikkerhedsrollerne for visningen. 
 5.  Vælg **Publicer**. 
-6.  Hvis du har opdateret navnet på den publicerede visning, skal du også slette den publicerede visning med det gamle navn (se afsnittet **Administrere publicerede visninger** for at få flere oplysninger). 
+6.  [10.0.8/Platform update 32 eller tidligere] Hvis du har opdateret navnet på den publicerede visning, skal du også slette den publicerede visning med det gamle navn (se afsnittet **Administrere publicerede visninger** for at få flere oplysninger). 
+7. [10.0.9/Platform update 33 eller nyere] Hvis du oprindeligt har valgt, at denne publicerede visning skal være standardvisningen, vil den blive standardvisningen for disse brugere igen efter genudgivelsen.  
 
 Hvis ændringerne af den publicerede visning omfatter redigering af de tilpasninger eller filtre, der er tilknyttet visningen, skal du følge disse trin: 
 1.  Skift til den publicerede visning, du vil redigere. 
@@ -148,13 +150,15 @@ Mens alle brugere kan se fanen **Mine visninger** med deres personlige visninger
 Hvis du vil se listen over alle publicerede visninger for siden, kan du bruge følgende sæt handlinger. 
 
 -    **Publicer**: Brug handlingen **Publicer** til at publicere en visning igen, når publiceringsparametre (navn, beskrivelse, sikkerhedsroller eller juridiske enheder) er ændret.
--    **Fjern**: Brug handlingen **Fjern** til at slette en publiceret visning permanent. Denne handling fjerner visningen for alle brugere i systemet.  
- 
-De ændringer, der er foretaget i denne dialogboks, træder i kraft, når knappen **Gem** vælges.
+-    **Fjern**: Brug handlingen **Fjern** til at slette en publiceret visning permanent. Denne handling fjerner visningen for alle brugere i systemet. Når publicerede visninger fjernes, træder det i kraft, når knappen **Gem** er valgt.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø? 
-Hvis du vil aktivere gemte visninger, mens funktionen er i eksempelvisning, skal du følge trinnene nedenfor: 
+Bemærk: Funktionen **Gemte visninger** kræver, at Finance and Operations-tilpasningssystemet er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
+
+**10.0.9/Platform Update 33 og nyere** **Gemte visninger**-funktionen er tilgængelig direkte i funktionsstyring i et hvilket som helst miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt den [supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Platform update 32 og før** **Gemte visninger**-funktionen kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
 
 1.  **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
 
@@ -168,15 +172,12 @@ Hvis du vil aktivere gemte visninger, mens funktionen er i eksempelvisning, skal
 
 Alle efterfølgende brugersessioner vil starte med gemte visninger aktiveret.
 
-Gemte visninger er kun til brug i niveau 1 (udvikling/test) og niveau 2 (sandkasse) for at kunne foretage yderligere test og designændringer. Et eksempel på gemte visninger vil være tilgængeligt i produktionsmiljøer i en fremtidig version.
-
-Bemærk, at hvis brugertilpasning er slået fra for miljøet, deaktiveres visningerne, også selvom du følger ovenstående trin. Det skyldes, at visningsfunktionen er bygget oven på tilpasningsundersystemet.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Hvad sker der med eksisterende tilpasninger, når visninger er aktiveret? 
 Når visninger er aktiveret, gemmes eventuelle eksisterende tilpasninger af en bruger og en formular i en ny visning kaldet **Min visning**, der automatisk indstilles som standardvisningen. Formålet med dette er, at der er en ensartet brugeroplevelse, før og efter at visninger aktiveres, bortset fra visningsvælgerkontrolelementet, der vises i formularer.  
 
 ### <a name="what-pages-support-views"></a>Hvilke sider understøtter visninger? 
-Visninger er tilgængelige på de fleste, men ikke på alle sider. Visninger er især aktuelt tilgængelige på alle fuldskærmssider bortset fra dashboards og arbejdsområder. Sider, der ikke vises som fuldskærmssider, og som omfatter dialogbokse, rullelister, opslag, udvidede eksempler, understøtter i øjeblikket heller ikke visninger. Understøttelse af visninger for yderligere sidetyper, f.eks. arbejdsområder og dialogbokse, kan komme i betragtning ved en senere opdatering.   
+Visninger er tilgængelige på de fleste, men ikke på alle sider. Visninger er især aktuelt tilgængelige på alle fuldskærmssider bortset fra dashboards og arbejdsområder. Sider, der ikke vises som fuldskærmssider, og som omfatter dialogbokse, rullelister, opslag, udvidede eksempler, understøtter i øjeblikket ikke visninger. Understøttelse af visninger for yderligere sidetyper, f.eks. arbejdsområder og dialogbokse, kan komme i betragtning ved en senere opdatering.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem har tilladelse til at publicere visninger?
 Kun systemadministratorer og brugere, der er tildelt administratorrollen **Gemte visninger**, har rettigheder til at publicere visninger. 
@@ -184,12 +185,14 @@ Kun systemadministratorer og brugere, der er tildelt administratorrollen **Gemte
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Hvorfor kan jeg ikke gemme filtre i denne visning? 
 Der er flere grunde til, at et filter muligvis ikke kan gemmes med en visning: 
 
-- Siden understøtter muligvis ikke lagring af filtre som en del af visningsdefinitionen. Bemærk, at det kun er sider med store visningsvælgere, der tillader, at tilpasninger og forespørgselsændringer gemmes som en visning. Du kan finde flere oplysninger i afsnittet "Skifte visninger". 
-
-- Hvis visningen er standardvisningen, og navigationsstien til siden omfatter en forespørgsel, anvendes visningsforespørgslen muligvis ikke i starten. De to primære scenarier for dette er: 
-     - Hvis du navigerer til en side fra et felt, udføres feltforespørgslen, uanset hvilken forespørgsel der er knyttet til standardvisningen. 
-     - Hvis du navigerer til en side, og dette adgangspunkt omfatter en forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. 
-     
-  Du skulle få besked, når visningen indlæses, i sådanne situationer. Du kan også bekræfte ved at skifte til denne visning, når siden er indlæst, fordi visningsforespørgslen skulle kunne udføres under alle omstændigheder.  
+- Siden understøtter muligvis ikke lagring af filtre som en del af visningsdefinitionen. Bemærk, at det kun er sider med store visningsvælgere, der tillader, at tilpasninger og forespørgselsændringer gemmes som en visning. Du kan finde flere oplysninger i afsnittet **Skifte visninger**. 
 
 - Den pågældende side understøtter muligvis ikke visninger korrekt, da den kan ignorere visningsforespørgslen helt eller bruger en midlertidig tabel, hvis data ikke er vedholdende. 
+
+### <a name="what-data-will-i-see-when-i-visit-a-page"></a>Hvilke data får jeg vist, når jeg besøger en side? 
+På sider med små visningsvælgere (kun personlige tilpasninger kan gemmes i visningen) kan du se de samme data som før, når du besøger siden. 
+
+For sider med store visningsvælgere (tilpasninger og forespørgsler kan gemmes i visningen) kan du primært se de data, der er knyttet til den forespørgsel, som er knyttet til din standardvisning. Der er to hovedundtagelser fra dette: Hvis du navigerer til en side fra et felt, udføres feltforespørgslen, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du har oprettet det pågældende felt, efter at visninger er blevet aktiveret, vil valg af et felt åbne siden med den visning, der er knyttet til feltet.   
+     - Hvis du navigerer til en side, og dette adgangspunkt omfatter en forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, skulle du få besked om det, når visningen indlæses. Du kan også bekræfte ved at skifte til denne visning, når siden er indlæst, fordi visningsforespørgslen skulle kunne udføres under alle omstændigheder.  
+
+

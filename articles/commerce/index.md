@@ -1,9 +1,9 @@
 ---
-title: Hjælp-ressourcer for Dynamics 365 Commerce
+title: Startside for Commerce
 description: Startside for Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 371f85063333bec53227f9b25a5b69c2cba2e6f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770087"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024654"
 ---
-# <a name="help-resources-for-dynamics-365-commerce"></a>Hjælp-ressourcer for Dynamics 365 Commerce
+# <a name="commerce-home-page"></a>Startside for Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 
@@ -36,25 +36,24 @@ Dynamics 365 Commerce – bygget på de gennemprøvede Dynamics 365 Retail-funkt
 
 Denne version gør det muligt at oprette digitale oplevelser ved hjælp af indbyggede weboprettelses- og udviklingsværktøjer, der kan producere tillokkende og intelligente digitale storefronts. En forbundet marketing- og konsolløs handelsplatform giver yderligere mulighed for problemfri administration af indhold, aktiver, kampagner, lager og prisfastsættelse på tværs af alle kanaler.
 
-- Alt til at opbygge og køre digital handel: Strømlin din virksomhed og den komplette handelsløsning, der kan skaleres til dine behov på tværs af traditionelle og nye kanaler. De indbyggede webudviklings- og udviklingsværktøjer giver dig mulighed for at oprette tillokkende, intelligente digitale storefronts, mens en forbundet marketingplatform og konsolløs handelsplatform giver mulighed for problemfri administration af indhold, aktiver, kampagner, lager og priser på tværs af kanaler.
+- **Alt til at opbygge og køre digital handel:** Strømlin din virksomhed og den komplette handelsløsning, der kan skaleres til dine behov på tværs af traditionelle og nye kanaler. De indbyggede webudviklings- og udviklingsværktøjer giver dig mulighed for at oprette tillokkende, intelligente digitale storefronts, mens en forbundet marketingplatform og konsolløs handelsplatform giver mulighed for problemfri administration af indhold, aktiver, kampagner, lager og priser på tværs af kanaler.
 
-- Opbyg loyalitet og overgå kundernes forventninger: Brug værktøjer til kundeaktiviteter til at få en mere omfattende visning af din kunde og reagere på deres behov på alle niveauer, baseret på kundens profil, historik og præferencer, der flyder på tværs af fysiske og digitale kanaler. Giv medarbejderne mulighed for at skabe varige relationer ved hjælp af AI-baserede anbefalinger, kundeindsigt og fordelskundeprogrammer med stærk mærkevareappel.
+- **Opbyg loyalitet og overgå kundernes forventninger**: Brug værktøjer til kundeaktiviteter til at få en mere omfattende visning af din kunde og reagere på deres behov på alle niveauer, baseret på kundens profil, historik og præferencer, der flyder på tværs af fysiske og digitale kanaler. Giv medarbejderne mulighed for at skabe varige relationer ved hjælp af AI-baserede anbefalinger, kundeindsigt og fordelskundeprogrammer med stærk mærkevareappel.
 
-- Fleksibel og intelligent omnikanaloplevelse: Samle fysisk og digital handel ved at give kunderne en ensartet oplevelse på tværs af skybaseret søgning og registrering, produktanmeldelser, ønskelister, lager, gavekort og kundefordele. Gør det muligt for kunderne at købe, hvornår, hvordan og hvor de vil, på en hvilken som helst enhed – og giv samtidig mulighed for moderne betalingsmetoder og produktsamling eller -levering.
+- **Fleksibel og intelligent omnikanaloplevelse:** Du kan samle fysisk og digital handel ved at give kunderne en ensartet oplevelse på tværs af skybaseret søgning og registrering, produktanmeldelser, ønskelister, lager, gavekort og kundefordele. Gør det muligt for kunderne at købe, hvornår, hvordan og hvor de vil, på en hvilken som helst enhed – og giv samtidig mulighed for moderne betalingsmetoder og produktsamling eller -levering.
 
-- Strømlin operationer ved hjælp af AI i skyen: Frem omnikanal-handelsoplevelser og integrerede, optimerede administrationsoperationer via gennemført, udbredt og kontekstorienteret Cloud Intelligence. Brug avanceret merchandising, lagerstyring, distribueret ordrestyring og priser og kampagner til at skabe innovation og holde dig foran konkurrenterne. Få indsigt ved at visualisere og analysere omfattende og ensartede data på tværs af alle aspekter af din virksomhed. Brug AI-styrede teknologier til at give adgang til websteder, beskyt din virksomhed mod betalingsbedrageri og moderer effektivt brugergenereret indhold som f.eks. vurderinger og anmeldelser. 
-
-## <a name="sign-up-for-the-preview"></a>Tilmeld dig prøveversionen
-
-Gå til siden [Dynamics 365 Commerce (prøveversion)](https://dynamics.microsoft.com/en-us/commerce/overview/) for at udfylde en ansøgning om at komme i betragtning til prøveversionen. Eksisterende Dynamics 365 Retail-kunder vil kunne opdatere til Commerce, når det bliver tilgængeligt generelt. 
+- **Strømlin operationer ved hjælp af AI i skyen**: Skab omnikanal-handelsoplevelser og integrerede, optimerede administrationsoperationer via gennemført, udbredt og kontekstorienteret Cloud Intelligence. Brug avanceret merchandising, lagerstyring, distribueret ordrestyring og priser og kampagner til at skabe innovation og holde dig foran konkurrenterne. Få indsigt ved at visualisere og analysere omfattende og ensartede data på tværs af alle aspekter af din virksomhed. Brug AI-styrede teknologier til at give adgang til websteder, beskyt din virksomhed mod betalingsbedrageri og moderer effektivt brugergenereret indhold som f.eks. vurderinger og anmeldelser. 
 
 ## <a name="core-concepts-and-tasks"></a>Grundlæggende begreber og opgaver
 
 Vælg et funktionsområde, du vil vide mere om.
-- [Konfigurere et miljø til evaluering af e-handel](provisioning-guide.md)
-- [Oversigt over startsæt til butik](starter-kit-overview.md)
-- [Oversigt over produktanbefalinger](product-recommendations.md)
-- [Oversigt over vurderinger og anmeldelser](ratings-reviews-overview.md)
-- [Oversigt over skabeloner og layout](templates-layouts-overview.md)
-- [Tilføje og administrere indhold](add-manage-content.md)
-- [Udvidelsesmuligheder for onlinekanal](e-commerce-extensibility/overview.md)
+- [Konfigurere et Commerce-prøveversionsmiljø](provisioning-guide.md)
+- [Commerce-arkitektur](retail-components.md)
+- [Konfigurere dine kanaler](channels-overview.md)
+- [Promovere dine produkter og serviceydelser](set-up-retail-products.md)
+- [Administrere dine ordrer](Order-fulfillment-overview.md)
+- [Administrere dine kunder](set-up-customer-loyalty-program.md)
+- [Styre din økonomi](retail-statements.md)
+- [Administrere dit websted til e-handel](online-store-overview.md)
+- [Beskyttelse mod svindel](dev-itpro/DFP.md)
+- [Handelsudvikling og-udvidelse](dev-itpro/dev-retail-home-page.md)

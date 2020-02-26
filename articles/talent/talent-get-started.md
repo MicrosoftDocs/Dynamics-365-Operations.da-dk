@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c3a2881ede53e4adfba775b9bb23071468c8f602
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024236"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006511"
 ---
 # <a name="get-started-with-talent"></a>Kom i gang med Talent
 
@@ -31,7 +31,7 @@ ms.locfileid: "2024236"
 I Microsoft Dynamics 365 Talent er det nemt at ændre brugergrænsefladen og angive indstillinger, der gør programmet mere intuitiv til dine behov. Dette emne indeholder links til emner med oplysninger om, hvordan du tilpasser brugergrænsefladen til dine behov. Emnet indeholder også links til oplysninger, der kan hjælpe dig med at finde oplysninger i systemet, effektivt og korrekt. 
 
 > [!NOTE] 
-> Følgende tre produkter er tæt forbundne: Dynamics 365 Finance, Dynamics 365 Retail og Dynamics 365 Talent. Den samme funktionalitet kan forekomme i alle tre produkter. Derfor er produktnavnet i emner, der primært vedrører Retail, Dynamics 365 Retail. I emner, der primært vedrører Talent, er produktnavnet Dynamics 365 Talent, og i emner, der primært vedrører kerneproduktet, er produktnavnet Dynamics 365 Finance. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
+> Følgende tre produkter er tæt forbundne: Dynamics 365 Finance, Dynamics 365 Commerce og Dynamics 365 Talent. Den samme funktionalitet kan forekomme i alle tre produkter. Derfor er produktnavnet i emner, der primært vedrører Commerce, Dynamics 365 Commerce. I emner, der primært vedrører Talent, er produktnavnet Dynamics 365 Talent, og i emner, der primært vedrører kerneproduktet, er produktnavnet Dynamics 365 Finance. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
 ## <a name="personalizing-talent"></a>Tilpasse Talent 
 I de følgende emner beskrives opsætning af mange funktioner i Talent, der gør det lettere for dig at udføre dit arbejde til tiden. 

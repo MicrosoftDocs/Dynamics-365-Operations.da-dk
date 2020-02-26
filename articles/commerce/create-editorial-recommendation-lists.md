@@ -19,27 +19,26 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d075635b7b986cc854550d15f7e941a9ea9cf72
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770407"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024927"
 ---
 # <a name="create-curated-product-recommendation-lists"></a>Oprette overvågede lister med produktanbefalinger
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 I dette emne forklares det, hvordan detailhandlere kan oprette og administrere manuelle produktlister til Microsoft Dynamics 365 Commerce-kunder.
 
 Overvågede lister er samlinger af individuelt indhold, der er oprettet og overvåges af personer.  
 
-## <a name="create-a-new-list"></a>Oprette en ny liste
+## <a name="create-a-new-list"></a>Opret en ny liste
 
 Hvis du vil oprette en overvåget liste med produktanbefalinger, skal du følge disse trin.
 
-1. Gå til **Detail** &gt; **Produktanbefalinger** &gt; **Anbefalingslister**.
+1. Gå til **Retail og Commerce &gt; Produktanbefalinger &gt; Anbefalingslister**.
 1. Vælg **Ny**.
 1. Angiv en værdi i feltet **Liste-id**.
 1. Angiv en værdi i feltet **Listenavn**.
@@ -60,3 +59,5 @@ Hvis du vil oprette en overvåget liste med produktanbefalinger, skal du følge 
 [Aktivér produktanbefalinger](enable-product-recommendations.md)
 
 [Tilføje lister med produktanbefalinger på sider](add-reco-list-to-page.md)
+
+[Oversigt over modulet Produktsamling](product-collection-module-overview.md)

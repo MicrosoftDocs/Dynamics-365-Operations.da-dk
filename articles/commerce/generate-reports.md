@@ -1,6 +1,6 @@
 ---
 title: Generere onlinekanalrapporter
-description: Dette emne indeholder en beskrivelse af, hvordan du genererer rapporter for din onlinekanal i Microsoft Dynamics 365 Retail.
+description: Dette emne indeholder en beskrivelse af, hvordan du genererer rapporter for din onlinekanal i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698044"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002998"
 ---
 # <a name="generate-online-channel-reports"></a>Generere onlinekanalrapporter
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du genererer rapporter for din onlinekanal i Microsoft Dynamics 365 Retail.
+Dette emne indeholder en beskrivelse af, hvordan du genererer rapporter for din onlinekanal i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversigt
 
-Du kan generere og få vist flere rapporter i Retail for at se, hvordan din onlinekanal fungerer.
+Du kan generere og få vist flere rapporter i Commerce for at se, hvordan din onlinekanal fungerer.
 
 ## <a name="channel-summary-report"></a>Kanaloversigtsrapport
 
@@ -46,7 +46,7 @@ Rapporten **Kanaloversigt** indeholder en oversigt over følgende transaktioner 
 
 Hvis du vil generere en **Kanaloversigt**-rapport, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Kanaloversigtsrapport**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Kanaloversigtsrapport**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -58,7 +58,7 @@ Hvis du vil generere en **Kanaloversigt**-rapport, skal du følge disse trin.
 
 Hvis du vil generere en **Rapport over kanalsalg pr. år**, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over kanalsalg pr. år**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over kanalsalg pr. år**.
 1. Indtast et år i feltet **Fra kalenderår**.
 1. Indtast et år i feltet **Til kalenderår**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -70,7 +70,7 @@ Rapporten **Kanalsalg pr. time** viser salgsmetrik pr. time for en valgt kanal e
 
 Hvis du vil generere en **Rapport over kanalsalg pr. time**, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over kanalsalg pr. time**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over kanalsalg pr. time**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -82,7 +82,7 @@ Rapporten **Vigtigste kunder** viser salgsmetrik for de vigtigste *N*-kunder for
 
 Hvis du vil generere en **Vigtigste kunder**-rapport, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over vigtigste kunder**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over vigtigste kunder**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -94,7 +94,7 @@ Rapporten **Toprabatter** viser salgsmetrik for de vigtigste *N*-rabatter for en
 
 Hvis du vil generere en **Toprabatter**-rapport, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over toprabatter**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over toprabatter**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -106,7 +106,7 @@ Rapporten **Vigtigste produkter** viser salgsmetrik for de vigtigste *N*-produkt
 
 Hvis du vil generere en **Vigtigste produkter**-rapport, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over topprodukter**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Rapport over topprodukter**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -118,7 +118,7 @@ I rapporten **Salg i kategori** vises salgsmetrikken for en valgt periode for hv
 
 Hvis du vil generere en **Salg i kategori**-rapport, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Salgsrapport for kategori**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Salgsrapport for kategori**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg onlinekanalen i feltet **Kanal**.
@@ -126,11 +126,11 @@ Hvis du vil generere en **Salg i kategori**-rapport, skal du følge disse trin.
 
 ## <a name="organization-sales-report"></a>Salgsrapport for organisation
 
-Rapporten **Salg i organisation** viser dine detailbutikkers resultater pr. organisationsenhed. Denne rapport indeholder salgsantal og beløb efter butik og overskudsgraden for hver butik. Organisationsenheden er baseret på standardrapporteringshierarkiet.
+Rapporten **Salg i organisation** viser dine butikkers resultater pr. organisationsenhed. Denne rapport indeholder salgsantal og beløb efter butik og overskudsgraden for hver butik. Organisationsenheden er baseret på standardrapporteringshierarkiet.
 
 Hvis du vil generere en **Salg i organisation**-rapport, skal du følge disse trin.
 
-1. Gå til **Detail \> Forespørgsler og rapporter \> Salgsrapporter \> Salgsrapport for organisation**.
+1. Gå til **Retail og Commerce \> Forespørgsler og rapporter \> Salgsrapporter \> Salgsrapport for organisation**.
 1. Indtast en dato i feltet **Fra dato**.
 1. Indtast en dato i feltet **Til dato**.
 1. Vælg **OK**.

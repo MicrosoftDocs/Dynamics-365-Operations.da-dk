@@ -3,7 +3,7 @@ title: Kontostyringssider og -moduler
 description: Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885803"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025666"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontostyringssider og -moduler
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
@@ -40,13 +40,12 @@ Kontostyring henviser til en gruppe sider, der bruges til at administrere bruger
 
 Landingssiden til kontostyring bruger følgende moduler:
 
-- **Indholdsplacering** – dette modul er et containermodul, der indeholder alle modulerne på landingssiden til kontostyring.
-- **Velkomstelement for konto** – dette modul bruges til at angive en velkomstmeddelelse på kontostyringssiden. Det indeholder egenskaber for overskriften og feltstørrelsen. Egenskaben **Feltstørrelse** definerer bredden af modulet i indholdsplaceringsmodulet. Værdierne går fra **1** til **12**, hvor **12** repræsenterer den fulde bredde på containeren til indholdsplacering.
-- **Ordreafgivelseselement for konto** – dette modul bruges til at angive en oversigt over antallet af ordrer, der er afgivet af brugerkontoen. Det indeholder egenskaber for overskriften, feltstørrelsen og linket "vis detaljer". Linket "vis detaljer" skal konfigureres, så der omdirigeres til ordrehistoriksiden.
-- **Profilplaceringselement for konto** – dette modul bruges til at angive en oversigt over brugerprofilen. Det indeholder egenskaber for overskriften, feltstørrelsen og linket "vis detaljer". Linket "vis detaljer" skal konfigureres, så der omdirigeres til brugerprofilsiden.
-- **Ønskelisteelement for konto** – dette modul bruges til at angive en oversigt over varerne på kundens ønskeliste. Det kan f. eks. angive, at "Du har 10 varer på din ønskeliste". Det indeholder egenskaber for overskriften, feltstørrelsen og linket "vis detaljer". Linket "vis detaljer" skal konfigureres, så der omdirigeres til ønskelistesiden.
-- **Adresseelement for konto** – dette modul bruges til at angive en oversigt over brugerens adresser. Det kan f. eks. angive, at "Du har føjet 2 adresser til din konto". Det indeholder egenskaber for overskriften, feltstørrelsen og linket "vis detaljer". Linket "vis detaljer" skal konfigureres, så der omdirigeres til brugeradressesiden.
-- **Fordelskundeelement for konto** – dette modul bruges til at få vist og indsætte et link til oplysninger om fordelskundeprogrammet. Det indeholder egenskaber for overskriften, feltstørrelsen, linket "vis detaljer" samt linket "bliv medlem". Linket "vis detaljer" skal konfigureres, så der omdirigeres til fordelskundesiden. Linket "bliv medlem" skal konfigureres, så det omdirigeres til en side, hvor brugerne kan komme med i fordelskundeprogrammet.
+- **Container** - Alle sidemoduler for kontoadministration skal placeres i en container. 
+- **Velkomsttitel for konto** – Dette modul bruges til at angive en velkomstmeddelelse på kontostyringssiden. Den indeholder egenskaber for overskriften.
+- **Generisk kontotitel** – Dette modul kan bruges til at angive overskrifter og links til kontostyringssider, f.eks. siderne "Ordreoversigt" eller "Min profil". Det generiske flisemodul kan bruges til at konfigurere en flise for en side. I Fabrikam bruges dette modul til sidelinkene "Ordreoversigt" og "Min profil" på siden til start af kontostyring.
+- **Ønskelisteflise for konto** – Dette modul bruges til at angive en oversigt over varerne på kundens ønskeliste. Det kan f. eks. angive, at "Du har 10 varer på din ønskeliste". Det indeholder egenskaber for overskriften og linket "Vis detaljer". Linket "Vis detaljer" skal konfigureres, så der omdirigeres til ønskelistesiden. 
+- **Adresseflise for konto** – Dette modul bruges til at angive en oversigt over brugerens adresser. Det kan f. eks. angive, at "Du har føjet 2 adresser til din konto". Det indeholder egenskaber for overskriften og linket "Vis detaljer". Linket "Vis detaljer" skal konfigureres, så der omdirigeres til brugeradressesiden.
+- **Fordelskundeflise for konto** – Dette modul bruges til at få vist og indsætte et link til oplysninger om fordelskundeprogrammet. Dette felt indeholder to tilstande: en tilstand viser link til at deltage i et fordelskundeprogam, hvis brugeren ikke allerede er medlem. I den anden tilstand vises links til visning af siden Fordelskundeoplysninger, når brugeren allerede er medlem. Egenskaber omfatter overskriften, linket "Tilmeld" og linket "Vis fordelskunde". Linket "Vis fordelskunde" skal konfigureres, så der omdirigeres til fordelskundesiden. Linket "Tilmeld" skal konfigureres, så det omdirigeres til en side, hvor brugerne kan komme med i fordelskundeprogrammet. 
 
 ### <a name="order-history-page"></a>Ordrehistorikside
 
@@ -58,7 +57,7 @@ På ordredetaljesiden vises der detaljerede oplysninger om hver enkelt ordre, og
 
 ### <a name="user-profile-page"></a>Brugerprofilside
 
-På brugerprofilsiden forevises detaljer om brugerkonti, f.eks. en brugers navn og mailadresse. Den bruger brugerprofilmodulet. Mailadressen kan ikke fjernes, men den kan redigeres. Brugerprofilsiden viser også brugerpræferencer, der giver en bruger mulighed for at tilmelde sig eller fravælge visse funktioner såsom personalisering af anbefalingslister. 
+På brugerprofilsiden forevises detaljer om brugerkonti, f.eks. en brugers navn og mailadresse. Den bruger brugerprofilen og redigeringsmodulerne til brugerprofiler. Mailadressen kan ikke fjernes, men den kan redigeres. Brugerprofilsiden viser også brugerpræferencer, der giver en bruger mulighed for at tilmelde sig eller fravælge visse funktioner som f.eks. personalisering af anbefalingslister. 
 
 ### <a name="user-address-page"></a>Brugeradresseside
 
@@ -70,13 +69,15 @@ På ønskelistesiden vises de varer, som er føjet til kundens ønskeliste. Den 
 
 ### <a name="loyalty-page"></a>Side for fordelskunde
 
-På fordelskundesiden kan kunderne blive medlem af et fordelskundeprogram eller, hvis de allerede er medlem af fordelskundeprogrammet, få vist oplysninger om deres program. De kan også få vist de point, de har optjent og indløst i seneste transaktioner.
+På fordelskundesiden kan kunderne få vist deres fordelskundedetaljer, hvis de allerede er medlem af fordelskundeprogrammet. De kan også få vist de point, de har optjent og indløst i seneste transaktioner. På denne side bruges modulet fordelskundeoplysninger til at vise fordelskundeoplysningerne. 
+
+Hvis du vil deltage i fordelskundesprogrammet, kan der oprettes en marketingside med modulerne til fordelskundetilmelding og fordelskundebetingelserne. Hvis brugeren ikke er medlem af et fordelskundeprogram, vil disse moduler give brugeren mulighed for at tilmelde sig.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over startsæt](starter-kit-overview.md)
 
-[Modulet Container](add-container-module.md)
+[Container-modul](add-container-module.md)
 
 [Købefeltmodul](add-buy-box.md)
 

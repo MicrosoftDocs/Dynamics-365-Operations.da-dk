@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cfb122cd01fcaae331f61327966916388d70e923
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: cfefc6ea654a3012137a1135db5696da39a19048
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897827"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006003"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-13-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (13. august 2019)
 
@@ -54,7 +54,7 @@ En ny indstilling gør det muligt for lederne at få vist performance for både 
 
 ### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 til Finance and Operations
 
-Du kan finde yderligere oplysninger om Platform update 29 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Du kan finde yderligere oplysninger om til Finance and Operations under [Prøveversionsfunktioner i Dynamics 365 Finance and Operations platform update 29 (oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>Strømlinet medarbejderangivelse og navigation
 

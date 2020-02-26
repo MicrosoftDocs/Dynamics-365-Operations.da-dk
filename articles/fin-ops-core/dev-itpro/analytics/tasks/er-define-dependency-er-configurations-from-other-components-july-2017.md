@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d949be57d9e9fe744860f5c4045bef2923b7f284
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249175"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026104"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer i andre komponenter
 
@@ -28,7 +28,7 @@ ms.locfileid: "2249175"
 
 For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og du skal have adgang til Microsoft Dynamics Lifecycle Services (LCS).
 
-Denne procedure viser, hvordan du designer en konfiguration af elektronisk rapportering (ER) og angiver dens afhængighed fra andre softwarekomponenter, så du kan hjælpe med at sikre, at konfigurationen er hentet korrekt til en bestemt version af Finance and Operations. I dette eksempel skal du oprette de krævede ER-konfigurationer for eksempelfirmaet Litware Inc. 
+Denne procedure viser, hvordan du designer en konfiguration af elektronisk rapportering (ER) og angiver dens afhængighed fra andre softwarekomponenter, så du kan hjælpe med at sikre, at konfigurationen er hentet korrekt til en bestemt version af Finance and Operations, Enterprise Edition. I dette eksempel skal du oprette de krævede ER-konfigurationer for eksempelfirmaet Litware Inc. 
 
 Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Trinene kan udføres i alle firmaer, fordi ER-konfigurationer deles mellem firmaer. 
 
@@ -60,7 +60,7 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 16. Klik på Ny.
 17. Vælg den nødvendige Produkt-komponent.
 18. Vælg Microsoft Dynamics AX 7.0 RTW.
-19. Skriv '[7.0.1265.3015,7.1)' i feltet Version.
+19. Skriv '[7.0.1265.3015,7.1) i feltet Version.
     * [7.0.1265.3015,7.1)  
     * Afhængigheder evalueres, når konfigurationen hentes fra et ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Microsoft Dynamics 365 for Finance and Operations Enterprise edition, version 7.0.1265.3015 eller nyere, men ikke nyere end mindre version 1.   
 20. Klik på Gem.
@@ -109,7 +109,7 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
     * Version 1.1 af denne modeltilknytningskonfiguration er blevet overført til LCS ved hjælp af det LCS-projekt for ER-lageret, der blev konfigureret tidligere.   
 
 ## <a name="evaluate-er-configuration-dependencies"></a>Evaluere ER-konfigurationsafhængigheder
-    * Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-lageret.  
+Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-lageret.  
 1. Vælg i træet 'Eksempeldatamodel\Eksempeltilknytning'.
 2. Klik på Slet.
 3. Klik på Ja.
@@ -139,5 +139,5 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 25. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
 26. Udvid 'Eksempeldatamodel' i træet.
     * Bemærk, at tilknytningskonfigurationen Eksempeltilknytning for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
-    * Hvis du logger på Finance and Operations, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
+    * Hvis du logger på Finance and Operations,registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
 

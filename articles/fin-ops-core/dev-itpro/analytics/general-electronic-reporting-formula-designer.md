@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0028d1f64aced1bbff91b18456c81adbb95bce30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914812"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002514"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -51,7 +51,7 @@ Du kan åbne siden **Formeldesigner**, når du udfører en af følgende handling
 - Definerer betingelserne for proceskontrolvalideringer.
 - Definerer meddelelsestekst for proceskontrolvalideringer.
 
-## <a name="Binding">Databinding</a>
+## <a name="Binding"></a>Databinding
 
 ER-formeldesigneren kan bruges til at definere et udtryk, der transformerer data, der er modtaget fra datakilder, så data kan angives i dataforbrugeren på følgende måde på kørselstidspunktet:
 
@@ -69,7 +69,7 @@ I følgende illustration vises, hvordan et udtryk af denne type kan bruges. I de
 
 På kørselstidspunktet afrunder den designede formel `ROUND (Intrastat.AmountMST, 2)` værdien af feltet **AmountMST** for hver post i Intrastattabellen til to decimaler. Den indsætter derefter den afrundede værdi i komponenten **Transaction.InvoicedAmount** i datamodellen **Momsrapportering**.
 
-## <a name="Transformation">Dataformatering</a>
+## <a name="Transformation"></a>Dataformatering
 
 ER-formeldesigneren kan bruges til at definere et udtryk, der formaterer data, der er modtaget fra datakilder, så data kan sendes som en del af det genererende elektroniske dokument. Du har muligvis formatering, der skal anvendes som en typisk regel, der skal genbruges til et format. I så fald kan du introducere denne formatering én gang i formatkonfigurationen, som en navngivet transformering, der har et formateringsudtryk. Denne navngivne transformation kan sammenkædes med mange formatkomponenter, hvor outputtet skal været formateret i henhold til det formateringsudtryk, du oprettede.
 
@@ -87,7 +87,7 @@ Hvis du har en formatering, der skal anvendes individuelt, kan den indføres som
 
 [![Anvende formatering på en enkelt komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Kontrol af procesforløb</a>
+## <a name="Validation"></a>Kontrol af procesforløb
 
 ER-formeldesigneren kan bruges til at definere udtryk, der styrer procesforløbet under generering af elektroniske dokumenter. Du kan udføre følgende opgaver:
 
@@ -112,7 +112,7 @@ ER-formeldesigneren bruges også til at generere et filnavn til et genererende e
 
 [![Kontrol af procesforløb](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Kontrol af dokumentindhold</a>
+## <a name="Enabled"></a>Kontrol af dokumentindhold
 
 ER-formeldesigneren kan bruges til at konfigurere udtryk, der styrer, hvilke data der indgår i genererede elektroniske dokumenter på kørselstidspunktet. Udtrykkene kan aktivere eller deaktivere outputtet af bestemte elementer i formatet, afhængigt af behandlingen af data og den konfigurerede logik. Disse udtryk kan angives for et enkelt formatelement i feltet **Aktiveret** under fanen **Tilknytning** på siden **Operationsdesigner**. Du kan angive udtrykkene som en logik betingelse, der returnerer en *Boolesk* værdi:
 
@@ -139,7 +139,7 @@ I følgende illustration vises udtryk af denne type. (Version 11.12.11 af format
 > 
 > Baseret på denne indstilling vil den genererede meddelelse for hver debitorbetaling, XML-elementet **Ustrd**, indeholde enten tekst med betalingsnoter eller, når denne tekst er tom, kommasepareret liste med fakturanumre, som bruges til at afstemme denne betaling.
 
-## <a name="TestFormula">Validering af konfigurerede formler</a>
+## <a name="TestFormula"></a>Validering af konfigurerede formler
 
 På siden **Formeldesigner** skal du vælge **Test** for at validere, hvordan den konfigurerede formel fungerer.
 
