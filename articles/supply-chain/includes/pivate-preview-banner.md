@@ -1,2 +1,0 @@
-> [!IMPORTANT]
-> <span data-ttu-id="d287d-101">Funktioner, der er anført i dette emne, er tilgængelige for målrettede brugere, der er en del af målgruppen for en privat eksempelversion.</span><span class="sxs-lookup"><span data-stu-id="d287d-101">Functionality noted in this topic is available to targeted users as part of a private preview release.</span></span> <span data-ttu-id="d287d-102">Indholdet og funktionaliteten kan blive ændret.</span><span class="sxs-lookup"><span data-stu-id="d287d-102">The content and the functionality are subject to change.</span></span> 
