@@ -150,9 +150,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
                 - name: Gemte visninger
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+                - name: Gitteregenskaber
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Oprette og arbejde med brugerdefinerede felter
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Integrer PowerApps-apps
+                - name: Integrere PowerApps-apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Finde oplysninger ved hjælp af opslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -940,6 +942,8 @@
                   href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
                 - name: Konfigurere momsrapporteringskoder
                   href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Understøttelse af dobbelt valuta til moms
+                  href: general-ledger/dual-currency-for-tax.md
                 - name: Momsspecifikation pr. finanstransaktionsrapport
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                 - name: Konfigurere momsafregningsperioder
@@ -1102,6 +1106,8 @@
                   href: public-sector/interest-distribution.md
             - name: Indkøb og forsyning i den offentlige sektor
               href: public-sector/procurement-sourcing-public-sector.md
+            - name: Beregne leveringsdatoen for en linje baseret på gennemløbstiden
+              href: public-sector/po-delivery-date.md
             - name: Sikkerhedsroller i den offentlige sektor
               href: public-sector/security-roles-public-sector.md
             - name: Finansieringskilder i den offentlige sektor
@@ -1298,6 +1304,8 @@
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
                 - name: SPED-regnskabsløsning – Layout 014
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
+                - name: Angive SPED EFD-bidrag
+                  href: localizations/latam-bra-sped-contributions.md
                 - name: Parametre for juridiske enheder
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Konfigurere parametre for juridiske enheder
@@ -2575,11 +2583,11 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: 1099-blanket for den offentlige sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Personale
+        - name: Human Resources
           items:
-            - name: Oversigt over personale
+            - name: Oversigt over Human Resources
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Konfigurere Personale
+            - name: Konfigurere Human Resources
               items:
                 - name: Konfigurere Human Resources-parametre
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
@@ -2807,9 +2815,11 @@
               items:
                 - name: Oversigt over dokumentrapporteringstjenester
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                - name: Understøttede skrifttyper
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere SSRS til lokale installationer
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Udskriver
+                - name: Udskrivning
                   items:
                     - name: Oversigt over udskrivning af dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
@@ -3686,6 +3696,4 @@
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md
