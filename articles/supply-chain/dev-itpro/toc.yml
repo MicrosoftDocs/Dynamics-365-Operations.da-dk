@@ -456,8 +456,6 @@
           items:
             - name: Oversigt over oprettelse af modeller og datamodelelementer
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Retningslinjer for navngivning af udvidelser
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Deaktivere tilpasning af modellen og fraråde brug af funktionaliteten
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Tilpasningsanalyserapport

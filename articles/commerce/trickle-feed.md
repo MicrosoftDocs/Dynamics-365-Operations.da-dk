@@ -1,6 +1,6 @@
 ---
 title: Foretag sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
-description: I dette emne beskrives den sivende feedbaserede ordreoprettelse til transaktioner i Microsoft Dynamics 365 Commerce.
+description: I dette emne beskrives den sivende feedbaserede ordreoprettelse til butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/14/2019
@@ -18,18 +18,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f691017ad06d3416e4ba0e86d7a0bc207aba5bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004268"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057140"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Foretag sivende feedbaseret ordreoprettelse til transaktioner i detailbutik (offentlig prøveversion)
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik (offentlig prøveversion)
 
 [!include [banner](includes/banner.md)]
-
-
 
 I Dynamics 365 Retail version 10.0.4 og tidligere er opgørelsesbogføring en handling ved afslutningen af dagen, og alle transaktioner bogføres i bøgerne sidst på dagen. Store transaktioner skal derefter behandles i et begrænset tidsvindue, og det kan nogle gange resultere i belastning og låsning og fejl ved bogføring af opgørelse. Detailhandlere kan heller ikke genkende indtægter og betalinger i deres bøger i løbet af dagen.
 
