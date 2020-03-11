@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a345fc48b0d87b353308060903a6b5156c0e62
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 808e328bfcc35c96091da9a69850429b82a71070
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915872"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070569"
 ---
 # <a name="CH_BANK_MOD_10">ER-funktionen CH_BANK_MOD_10</a>
 
@@ -33,7 +33,7 @@ Funktionen `CH_BANK_MOD_10` returnerer en *Streng*-værdi, som repræsenterer en
 
 ## <a name="syntax"></a>Syntaks
 
-```
+```vb
 CH_BANK_MOD_10 (invoice number digits)
 ```
 

@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om arbejdsgang
 description: Dette emne besvarer ofte stillede spørgsmål om arbejdsgangssystemet.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934903"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076080"
 ---
 # <a name="workflow-faq"></a>Ofte stillede spørgsmål om arbejdsgang
 
@@ -48,9 +48,13 @@ Her er nogle få nøgleområder, du kan bemærke om tilføjelse af påmindelser 
     - I en fremtidig opdatering vil vi tilføje en Handlingscenter-meddelelse, så en bruger får tildelt et arbejdsgangsopgave. 
 - Føje beskeder til arbejdsgange
     - Handlingscenter-meddelelser kan oprettes for bestemte brugere, f.eks. en meddelelse, der er oprettet fra en arbejdsgang i X++.
-    - [Arbejdsgangsforretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), som kunden kan bruge til at udløse flows, har de beskeder, de søger.   
+    - [Arbejdsgange har forretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), som kunden kan bruge til at udløse flows, har de beskeder, de søger efter.   
 
 Hvis en bruger kort sagt ikke får den rigtige besked fra Handlingscenter, når vedkommende er blevet tildelt en arbejdsgangsopgave, så brug [Arbejdsgangsforretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate til at give flere eller andre beskeder.
 
-## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>Arbejdsproceseditoren har problemer med at starte under ADFS 
+## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Hvorfor kan arbejdsgangseditor ikke starte under AD FS?
 Når du kører arbejdsproceseditoren under Active Directory Federation Services (ADFS) i et opgraderet miljø, kan den have problemer med at starte. Hvis den gør det, skal du sørge for, at URL-adressen "https://dynamicsaxworkfloweditor/" er tilføjet til egenskaben **Microsoft Dynamics 365 for Operations i Det lokale miljø - Arbejdsgang - Forudinstalleret program** i ADFS-indstillingerne.
+
+## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Hvorfor får jeg vist SQL-deadlock ved arbejdsgangsbehandling? 
+Standardfeltværdien for **Antal af arbejdsgangsvarer pr. batch** på siden **Arbejdsgangparametre** er 0. En værdi på 0 gør, at standarden ændres til 20 varer pr. batch. Vær forsigtig, når du justerer denne værdi, fordi et stort antal varer pr. batch (> 40) kan forårsage SQL-deadlock.
+

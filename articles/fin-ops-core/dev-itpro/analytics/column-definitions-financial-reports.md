@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771535"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070754"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
 
@@ -120,11 +120,11 @@ I nedenstående tabel beskrives koderne for kolonnebegrænsning.
 | ADJ                     | Begræns beløbene i kolonnen til periodens reguleringsbeløb, hvis disse beløb er tilgængelige. |
 | XAD                     | Begræns beløbene i kolonnen, så periodens reguleringsbeløb udelades. |
 | PT                      | Begræns beløbene i kolonnen, så kun bogførte transaktioner medtages, hvis disse transaktioner er tilgængelige. |
-| UPT                     | Begræns beløbene i kolonnen, så kun transaktioner, der ikke er bogført, medtages, hvis disse transaktioner er tilgængelige.<p><strong>Bemærk:</strong> ikke alle dataudbydere understøtter ikke-bogførte transaktioner. Du kan finde flere oplysninger i <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsvejledningen</a> til dit Microsoft Dynamics ERP-system.</p> |
+| UPT                     | Begræns beløbene i kolonnen, så kun transaktioner, der ikke er bogført, medtages, hvis disse transaktioner er tilgængelige.<p><strong>Bemærk:</strong> ikke alle dataudbydere understøtter ikke-bogførte transaktioner. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begrænse en kolonne til en rapporteringsenhed
 
-1. Åbn den kolonnedefinition, der skal redigeres, i Rapportdesigner.
+1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
 2. Dobbeltklik på cellen **Rapporteringsenhed** for den kolonne, der skal begrænses.
 3. I dialogboksen **Valg af rapporteringsenhed** på listen **Rapporteringstræ** skal du vælge et træ.
 4. Udvid eller skjul listen over enheder, vælg en rapporteringsenhed og klik derefter på **OK**.

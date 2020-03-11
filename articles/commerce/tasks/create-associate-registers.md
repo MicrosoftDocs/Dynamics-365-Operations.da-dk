@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ac5135d0606ffc9816c841637aa032826f87e28
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022003"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057144"
 ---
 # <a name="create-and-associate-registers"></a> Oprette og tilknytte registre
 
@@ -30,14 +30,14 @@ ms.locfileid: "3022003"
 
 Denne fremgangsmåde viser, hvordan du kan oprette en POS-kasse. Denne procedure bruger demodatafirmaet USRT.
 
-1. Gå til Detail og handel > Konfiguration af kanal > POS-opsætning > Kasseapparater.
+1. Gå til Retail og Commerce> Konfiguration af kanal > POS-opsætning > Kasseapparater.
 2. Klik på Ny.
 3. Indtast et id til den nye kasse i feltet Kassenummer.
     * Kasse-id'et indeholder typisk koder, der kan hjælpe med at knytte kassen til den butik, som den tilhører, og placeringen i butikken.  
 4. Skriv et beskrivende navn til kassen i feltet Navn.
 5. Indtast eller vælg en værdi i feltet Butiksnummer.
 6. Indtast eller vælg en værdi i feltet Hardwareprofil.
-    * Hardwareprofiler bruges til at angive detailenheder, der skal knyttes til kassen, f.eks. pengeskuffen og bonprinteren.  
+    * Hardwareprofiler bruges til at angive de eksterne enheder, der skal knyttes til kassen, f.eks. pengeskuffen og bonprinteren.  
 7. Indtast eller vælg en værdi i feltet Visuel profil.
     * Visuelle profiler bruges til at angive de billeder, der bruges i POS-baggrunden og på logonside samt temaer for POS.  
 8. Skriv en værdi i feltet Autorisationskode - POS-kasseapparatnummer.

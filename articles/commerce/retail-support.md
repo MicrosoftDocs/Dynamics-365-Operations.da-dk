@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 7d68f65c27ec8704ef588cf98bbe30fc70cd5b47
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4185d4762b65b6b1ce7531c3995f8bbe084a9c5f
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022027"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057295"
 ---
 # <a name="get-support-for-dynamics-365-retail"></a>Få support til Dynamics 365 Retail
 
@@ -48,7 +48,7 @@ Du kan få support på Commerce ved at bruge ressourcerne i følgende tabel. Dis
 <tbody>
 <tr>
 <td>Spørg fællesskabet.</td>
-<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a>-community for at få hjælp til dine spørgsmål fra Dynamics 365 Community.</td>
+<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 Community</a> for at få hjælp til dine spørgsmål fra Dynamics 365-communityet.</td>
 </tr>
 <tr>
 <td>Brug problemsøgningsværktøjet.</td>

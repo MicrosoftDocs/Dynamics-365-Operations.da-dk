@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015162"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071654"
 ---
 # <a name="credit-management-parameters-setup"></a>Konfiguration af kreditstyringsparametre
 
@@ -38,8 +38,8 @@ Der er fire oversigtspaneler, hvor du kan ændre parametrene for Kreditstyring: 
 - Vælg **Ja** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet ændret, efter at salgsordren blev frigivet fra spærringslisten. .
 - I feltet **Årsager til annullerede ordrer** skal du vælge den frigivelsesårsag, der skal bruges som standard, når en salgsordre, hvor der er spærret for kreditstyring, annulleres.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum for kundekreditgrupper** for at kontrollere kreditgrænsen for en kundekreditgruppe, når kunden på en salgsordre tilhører en kundekreditgruppe. Gruppens kreditmaksimum kontrolleres, og hvis det er tilstrækkeligt, kontrolleres kreditmaksimum for kunden.
-- Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når betalingsbetingelserne er forlænget**, hvis du vil kontrollere, om rangeringen i betalingsbetingelserne er forskellig på salgsordrerne. Hvis de nye betalingsbetingelser har en højere rangering end de oprindelige betalingsbetingelser, sættes ordren på hold i kreditstyringen.
-- Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når en udligningsrabat er forøget**, hvis du vil kontrollere rangeringerne i udligningsrabatten for at afgøre, om kasserabatten er forskellig på salgsordrerne. Hvis den nye kasserabat har en højere rangering end den oprindelige kasserabat, sættes ordren på hold i kreditstyringen.
+- Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når betalingsbetingelserne er forlænget**, hvis du vil kontrollere, om rangeringen i betalingsbetingelserne er forskellig fra standardbetalingsbetingelserne for kunden. Hvis de nye betalingsbetingelser har en højere rangering end de oprindelige betalingsbetingelser, sættes ordren på hold i kreditstyringen.
+- Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når en udligningsrabat er forøget**, hvis du vil kontrollere rangeringerne i udligningsrabatten for at afgøre, om kasserabatten er forskellig standardkasserabatten for kunden. Hvis den nye kasserabat har en højere rangering end den oprindelige kasserabat, sættes ordren på hold i kreditstyringen.
 - I feltet **Årsag til frigivelse af ændrede ordrer** skal du vælge den årsag til frigivelse, der skal bruges som standard, når spærringen af ændrede ordrer automatisk fjernes i kreditstyringen.
 - Vælg **Ja** i indstillingen **Ignorer spærringsreglen for udløbet kreditmaks., når udløbsdatoen ikke er angivet** for at styre funktionsmåden for **Kreditmaksimum udløbet**. Vælg **Nej** i indstillingen for at spærre en ordre, når udløbsdatoen ikke er angivet.
 - I Lokationsstyring kan der oprettes belastninger på tidspunktet for ordreindtastning. Vælg **Nej** i indstillingen **Fjern blokerede lastlinjer** for at lade salgsordrelinjer forblive i belastningen, når en salgsordre er på kredithold. Belastningen kan ikke behandles, mens salgsordren er på hold. Vælg **Ja** for at fjerne salgsordrelinjer fra belastningen, når en salgsordre er på kredithold. Belastningen kan derefter behandles.

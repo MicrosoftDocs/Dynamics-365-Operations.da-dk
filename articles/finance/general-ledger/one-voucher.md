@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810693"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058011"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -156,7 +156,7 @@ Organisationer ønsker ofte at bogføre i finansmodulet i oversigtsform for at m
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Udligne flere ikke-bogførte betalinger til den samme faktura
 
-Dette scenario findes som regel i detailorganisationer, hvor kunderne kan bruge flere betalingsmåder til at betale for indkøb. I dette scenario skal organisationen kunne registrere flere ikke-bogførte betalinger og udligne dem mod debitorfakturaen.
+Dette scenario findes som regel i organisationer, hvor kunderne kan bruge flere betalingsmåder til at betale for indkøb. I dette scenario skal organisationen kunne registrere flere ikke-bogførte betalinger og udligne dem mod debitorfakturaen.
 
 En ny funktion, der blev tilføjet i Microsoft Dynamics 365 for Operations version 1611 (november 2016) giver mulighed for, at flere ikke-bogførte betalinger kan udlignes mod en enkelt faktura. Flere kundebetalinger behøver ikke længere at blive anført i et enkelt bilag.
 

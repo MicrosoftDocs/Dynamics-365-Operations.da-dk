@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ec42ab920868f541eeac54556f4f24cb1efaa3a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 42448bd54c00b8642b158f422e17d2b46ee25579
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002444"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057873"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurere en callcenter-kanal
 
@@ -33,7 +33,7 @@ Dette emne beskriver, hvordan du opretter en ny callcenter-kanal i Microsoft Dyn
 
 ## <a name="overview"></a>Oversigt
 
-I Dynamics 365 Commerce er et callcenter en type detailkanal, som kan defineres i programmet. Hvis du definerer en kanal til dit callcenter, kan systemet binde specifikke data og ordrebehandlingstandarder til salgsordrer. Et firma kan definere flere callcenter-kanaler i Commerce. 
+I Dynamics 365 Commerce er et callcenter en type kanal, som kan defineres i programmet. Hvis du definerer en kanal til dit callcenter, kan systemet binde specifikke data og ordrebehandlingstandarder til salgsordrer. Et firma kan definere flere callcenter-kanaler i Commerce. 
 
 Før du opretter en ny callcenter-kanal, skal du sikre dig, at du har fuldført [forudsætningerne for kanalopsætning](channels-prerequisites.md).
 

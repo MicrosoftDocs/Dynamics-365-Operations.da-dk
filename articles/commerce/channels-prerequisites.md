@@ -3,7 +3,7 @@ title: Forudsætninger for konfiguration af kanal
 description: Dette emne indeholder en oversigt over forudsætninger for konfiguration af kanaler i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002283"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081309"
 ---
 # <a name="channel-setup-prerequisites"></a>Forudsætninger for konfiguration af kanal
 
@@ -40,16 +40,16 @@ Før en Dynamics 365 Commerce-kanal kan oprettes, skal der udføres flere nødve
 
 ## <a name="initialization"></a>Initialisering
 
-- [Initialisere oprindelsesdata](../retail/enable-configure-retail-functionality.md)
+- [Initialisere oprindelsesdata](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Globale forudsætninger kræves til alle kanaltyper
 
 - [Definere og konfigurere strukturen for den juridiske enhed](channels-legal-entities.md) 
 - [Konfigurere dit organisationshierarki](channels-org-hierarchies.md)
 - [Konfigurer et lagersted](channels-setup-warehouse.md)
-- [Konfigurere moms](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurere moms](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Konfigurere en mailbeskedprofil](email-notification-profiles.md)
-- [Oprette nummerserier](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Oprette nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Oprette en standardkunde og -adressekartotek](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,19 +57,17 @@ Før en Dynamics 365 Commerce-kanal kan oprettes, skal der udføres flere nødve
 
 ## <a name="retail-channel-prerequisites"></a>Forudsætninger for detailkanal
 
-- [Infokoder og infokodegrupper](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Infokoder og infokodegrupper](info-codes-retail.md)
 - [Oprette en profil for detailfunktionalitet](retail-functionality-profile.md)
 - [Oprette et medarbejderadressekartotek](new-address-book.md)
-- [Konfigurere et skærmlayout](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Oprette en hardwarestation](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Konfigurere et skærmlayout](pos-screen-layouts.md)
+- [Oprette en hardwarestation](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Forudsætninger for callcenter-kanal
 
 - Call center-parametre
-- Call center-refusionsmetoder
-- Lejetyper
-- Betalingstjenester
-- Koder for ordrehold
+- [Callcenter-ordre og refusionsbetalingsmetoder](work-with-payments.md)
+- [Callcenterets leveringsmåder og -gebyrer](configure-call-center-delivery.md)
 
 ## <a name="online-channel-prerequisites"></a>Forudsætninger for onlinekanal
 

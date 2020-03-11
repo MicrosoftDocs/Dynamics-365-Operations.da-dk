@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021961"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057804"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
@@ -66,7 +66,7 @@ Gebyrer kan konfigureres, så de anvendes til en bestemt leveringsmåde, en leve
 
 I sektionen **Linjer** kan du definere en eller flere gebyrer efter valuta, som du ønsker. Gebyrer skal knyttes til en gebyrkode, der definerer de økonomiske bogføringsregler for gebyret. Feltet **Kategori** bruges til at definere, hvordan gebyrer beregnes. Eksempelvis hvis debitorer skal faktureres et fast beløb på $9,95 for levering af en ordre med en bestemt leveringsmåde, skal du bruge kategorien **Fast**. Hvis virksomheden beslutter at debitere kunderne en procentdel af ordrens samlede værdi til dækning af leveringsgebyrer, skal du bruge kategorien **Procent**. Det faktiske kundegebyr, defineres i feltet **Gebyrværdi**.
 
-Detailfirmaer konfigurerer ofte lagdelte gebyrer. I så fald er det beløb, som kunderne betaler for levering, baseret på ordreværdien. Du kan konfigurere lagdelte gebyrer ved at angive værdier i felterne **Fra beløb** og **Til beløb** ud over at definere selve gebyret i feltet **Gebyrværdi**. Ved ordrer, der har en værdi på mindre end $50, trækker en forhandler f.eks. $5,95 ved levering med vognmand. Ved ordrer med en værdi, der er lig med eller større end $50, men mindre end $100, opkræver detailhandleren $7,95 i gebyr. Ved ordrer med en værdi, der er lig med eller større end $100, leverer detailhandleren uden at opkræve gebyr. I følgende illustration vises konfigurationen af disse gebyrer.
+Firmaer konfigurerer ofte lagdelte gebyrer. I så fald er det beløb, som kunderne betaler for levering, baseret på ordreværdien. Du kan konfigurere lagdelte gebyrer ved at angive værdier i felterne **Fra beløb** og **Til beløb** ud over at definere selve gebyret i feltet **Gebyrværdi**. Ved ordrer, der har en værdi på mindre end $50, trækker en forhandler f.eks. $5,95 ved levering med vognmand. Ved ordrer med en værdi, der er lig med eller større end $50, men mindre end $100, opkræver detailhandleren $7,95 i gebyr. Ved ordrer med en værdi, der er lig med eller større end $100, leverer detailhandleren uden at opkræve gebyr. I følgende illustration vises konfigurationen af disse gebyrer.
 
 ![Eksempel på faste lagdelte gebyrer](media/fixedtieredcharges.png)
 

@@ -3,7 +3,7 @@ title: Klargøring af Personale
 description: ''
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3a7987a9b385fb6ba0294dc46b0d66be8228f06
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f105144047c64fc8e9d42da8d7525a8cc3912c33
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026261"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071608"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Personale
 
@@ -62,9 +62,6 @@ Når du har oprettet et LCS-projekt, kan du klargøre Personale i et miljø.
 3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Personale-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
 
 4. Personale klargøres altid i et Microsoft Power Apps-miljø for at aktivere Power Apps-integration og -udvidelse. Læs afsnittet "Valg af et Power Apps-miljø" i denne artikel, før du fortsætter. Hvis du ikke allerede har et Power Apps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til Power Apps Administration. Følg derefter trinnene for at [Oprette et Power Apps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
-
-    > [!NOTE]
-    > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Personale, være tildelt Power Apps P2-licensen. Hvis organisationen ikke har en Power Apps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [Power Apps-prissætningssiden](https://powerapps.microsoft.com/pricing/).
 
 5. Vælg det miljø, du vil klargøre Personale til.
 

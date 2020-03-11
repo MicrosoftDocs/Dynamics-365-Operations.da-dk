@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022017"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057203"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurere og arbejde med advarsler om svindel i callcentre
 
@@ -54,6 +54,7 @@ Endelig skal du bruge feltet **Svindelkommentartype** til at angive den dokument
 Systemet refererer til to typer svindelkriterier for at afgøre, om en ordre skal sættes på hold og kontrolleres for svindel:
 
 - **Statiske svindeldata** bruger en bestemt værdi, f.eks. et telefonnummer, der er placeret på en liste over blokerede numre, eller en e-mailadresse, der er markeret, fordi den tidligere har været brugt til svindeltransaktioner. Du kan angive statiske svindeldata ved at gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Svindel** \> **Statiske svindeldata**. På siden **Statiske svindeldata** kan du tilføje kriterier for svindel manuelt eller via dataimport. Resultater er tilknyttet oplysningerne om svindel. Hvis svindelkontrolfunktionen er aktiveret, sammenlignes hver salgsordre, der er indtastes, med de statiske data. Hvis dataene findes i debitorens faktureringsadresse eller den leveringsadresse, som er knyttet til ordrehovedet, eller hvis dataene findes i leveringsadresser, der er knyttet til nogen af linjerne i denne salgsordre, lægges resultaterne for alle entydige matches sammen og sammenlignes med **Min. resultat**-værdien for at afgøre, om ordren skal sættes på hold.
+
 - **Regler for svindel** består af brugerdefinerede variabler og de betingelser, der er defineret for disse variabler. Du kan oprette regler ved at gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Svindel** \> **Regler**. Et firma kan bruge svindelregler til at konfigurere et mere komplekst regelsæt, som kan indeholde **AND** eller **OR** -sætninger til evaluering af flere betingelser. En bruger vil f.eks. have, at alle ordrer fra kunder, der hører til en bestemt kundegruppe, og som har bestilt et bestemt produkt, skal sættes på hold og kontrolleres for svindel. I så fald defineres betingelser validering af kunde og produkter på siden **Regler**, og der bruges en AND-betingelse. En ordre sættes derefter kun på hold, hvis begge betingelser er opfyldt, og hvis resultatværdien, der er tildelt denne regel, samt resultatværdien af evt. andre regler, som ordren matcher, medfører, at ordrens samlede svindelresultat overskrider **Min. resultat**-værdien, der er defineret på siden **Call center-parametre**.
 
 > [!NOTE]

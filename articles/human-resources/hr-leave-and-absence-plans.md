@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008527"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087294"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Oprette en orlovs- og fraværsplan
 
@@ -61,8 +61,8 @@ Du kan også oprette stillingsbaserede orlovsfrynsegoder, f.eks. frynsegodetimer
 
       | Grundlag for periodiseringsperiode | Beskrivelse |
       | --- | --- |
-      | Startdato for plan | Startdatoen for periodiseringsperioden er den dato, hvor planen er tilgængelig. |
-      | Medarbejderspecifik dato | Startdatoen for periodiseringsperioden afhænger af en medarbejderhændelse:</br><ul><li>Brugerdefineret (du skal angive et periodiseringsdatogrundlag for hver enkelt tilmelding)</li><li>Jubilæumsdato</li><li>Oprindelig ansættelsesdato</li><li>Anciennitetsdato</li><li>Justeret startdato for medarbejder</li><li>Startdato for medarbejder</li></ul> |
+      | **Startdato for plan** | Startdatoen for periodiseringsperioden er den dato, hvor planen er tilgængelig. |
+      | **Medarbejderspecifik dato** | Startdatoen for periodiseringsperioden afhænger af en medarbejderhændelse:</br><ul><li>Brugerdefineret (du skal angive et periodiseringsdatogrundlag for hver enkelt tilmelding)</li><li>Jubilæumsdato</li><li>Oprindelig ansættelsesdato</li><li>Anciennitetsdato</li><li>Justeret startdato for medarbejder</li><li>Startdato for medarbejder</li></ul> |
 
    3. Vælg en indstilling fra rullelisten **Dato for periodisering af bonus**:
 
