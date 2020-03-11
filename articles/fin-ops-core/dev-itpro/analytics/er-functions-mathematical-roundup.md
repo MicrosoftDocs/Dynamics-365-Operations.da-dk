@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84a62639b49db17fef1abcda75bc5ad7f08d1005
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 1784ab3587a090c8e5535509a1ba52fc85111daa
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917045"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041573"
 ---
-# <span data-ttu-id="0621a-103"><a name="ROUNDUP">ER-funktionen ROUNDUP</a></span><span class="sxs-lookup"><span data-stu-id="0621a-103"><a name="ROUNDUP">ROUNDUP ER function</a></span></span>
+# <span data-ttu-id="7e405-103"><a name="ROUNDUP">ER-funktionen ROUNDUP</a></span><span class="sxs-lookup"><span data-stu-id="7e405-103"><a name="ROUNDUP">ROUNDUP ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0621a-104">Funktionen `ROUNDUP` returnerer det angivne tal som en *Reel* værdi, når det er rundet op til det angivne antal decimaler.</span><span class="sxs-lookup"><span data-stu-id="0621a-104">The `ROUNDUP` function returns the specified number as a *Real* value after it has been rounded up to the specified number of decimal places.</span></span>
+<span data-ttu-id="7e405-104">Funktionen `ROUNDUP` returnerer det angivne tal som en *Reel* værdi, når det er rundet op til det angivne antal decimaler.</span><span class="sxs-lookup"><span data-stu-id="7e405-104">The `ROUNDUP` function returns the specified number as a *Real* value after it has been rounded up to the specified number of decimal places.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0621a-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="0621a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7e405-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="7e405-105">Syntax</span></span>
 
-```
+```vb
 ROUNDDOWN (number, decimals)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0621a-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="0621a-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="7e405-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="7e405-106">Arguments</span></span>
 
-<span data-ttu-id="0621a-107">`number`: *Reel*</span><span class="sxs-lookup"><span data-stu-id="0621a-107">`number`: *Real*</span></span>
+<span data-ttu-id="7e405-107">`number`: *Reel*</span><span class="sxs-lookup"><span data-stu-id="7e405-107">`number`: *Real*</span></span>
 
-<span data-ttu-id="0621a-108">En numerisk værdi, der skal rundes op.</span><span class="sxs-lookup"><span data-stu-id="0621a-108">A numeric value that must be rounded up.</span></span>
+<span data-ttu-id="7e405-108">En numerisk værdi, der skal rundes op.</span><span class="sxs-lookup"><span data-stu-id="7e405-108">A numeric value that must be rounded up.</span></span>
 
-<span data-ttu-id="0621a-109">`decimals`: *Heltal*</span><span class="sxs-lookup"><span data-stu-id="0621a-109">`decimals`: *Integer*</span></span>
+<span data-ttu-id="7e405-109">`decimals`: *Heltal*</span><span class="sxs-lookup"><span data-stu-id="7e405-109">`decimals`: *Integer*</span></span>
 
-<span data-ttu-id="0621a-110">En numerisk værdi, der repræsenterer antallet af decimaler.</span><span class="sxs-lookup"><span data-stu-id="0621a-110">A numeric value that represents the number of decimal places.</span></span>
+<span data-ttu-id="7e405-110">En numerisk værdi, der repræsenterer antallet af decimaler.</span><span class="sxs-lookup"><span data-stu-id="7e405-110">A numeric value that represents the number of decimal places.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0621a-111">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="0621a-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7e405-111">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="7e405-111">Return values</span></span>
 
-<span data-ttu-id="0621a-112">*Kommatal*</span><span class="sxs-lookup"><span data-stu-id="0621a-112">*Real*</span></span>
+<span data-ttu-id="7e405-112">*Kommatal*</span><span class="sxs-lookup"><span data-stu-id="7e405-112">*Real*</span></span>
 
-<span data-ttu-id="0621a-113">Den resulterende numeriske værdi.</span><span class="sxs-lookup"><span data-stu-id="0621a-113">The resulting numeric value.</span></span>
+<span data-ttu-id="7e405-113">Den resulterende numeriske værdi.</span><span class="sxs-lookup"><span data-stu-id="7e405-113">The resulting numeric value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="0621a-114">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="0621a-114">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="7e405-114">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="7e405-114">Usage notes</span></span>
 
-<span data-ttu-id="0621a-115">Denne funktion fungerer ligesom [ROUND](er-functions-mathematical-round.md), men den runder altid det angivne tal op (væk fra nul).</span><span class="sxs-lookup"><span data-stu-id="0621a-115">This function behaves like [ROUND](er-functions-mathematical-round.md), but it always rounds the specified number up (away from zero).</span></span>
+<span data-ttu-id="7e405-115">Denne funktion fungerer ligesom [ROUND](er-functions-mathematical-round.md), men den runder altid det angivne tal op (væk fra nul).</span><span class="sxs-lookup"><span data-stu-id="7e405-115">This function behaves like [ROUND](er-functions-mathematical-round.md), but it always rounds the specified number up (away from zero).</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="0621a-116">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="0621a-116">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="7e405-116">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="7e405-116">Example 1</span></span>
 
-<span data-ttu-id="0621a-117">`ROUNDUP (1200.763, 2)` runder op til to decimaler og returnerer **1200,77**.</span><span class="sxs-lookup"><span data-stu-id="0621a-117">`ROUNDUP (1200.763, 2)` rounds up to two decimal places and returns **1200.77**.</span></span>
+<span data-ttu-id="7e405-117">`ROUNDUP (1200.763, 2)` runder op til to decimaler og returnerer **1200,77**.</span><span class="sxs-lookup"><span data-stu-id="7e405-117">`ROUNDUP (1200.763, 2)` rounds up to two decimal places and returns **1200.77**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="0621a-118">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="0621a-118">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="7e405-118">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="7e405-118">Example 2</span></span>
 
-<span data-ttu-id="0621a-119">`ROUNDUP (1200.767, -3)` runder op til det nærmeste multiplum af 1.000 og returnerer **2000**.</span><span class="sxs-lookup"><span data-stu-id="0621a-119">`ROUNDUP (1200.767, -3)` rounds up to the nearest multiple of 1,000 and returns **2000**.</span></span>
+<span data-ttu-id="7e405-119">`ROUNDUP (1200.767, -3)` runder op til det nærmeste multiplum af 1.000 og returnerer **2000**.</span><span class="sxs-lookup"><span data-stu-id="7e405-119">`ROUNDUP (1200.767, -3)` rounds up to the nearest multiple of 1,000 and returns **2000**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0621a-120">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="0621a-120">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7e405-120">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="7e405-120">Additional resources</span></span>
 
-[<span data-ttu-id="0621a-121">Matematiske funktioner</span><span class="sxs-lookup"><span data-stu-id="0621a-121">Mathematical functions</span></span>](er-functions-category-mathematical.md)
+[<span data-ttu-id="7e405-121">Matematiske funktioner</span><span class="sxs-lookup"><span data-stu-id="7e405-121">Mathematical functions</span></span>](er-functions-category-mathematical.md)
