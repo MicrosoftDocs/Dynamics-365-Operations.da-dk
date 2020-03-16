@@ -5,6 +5,10 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 18. februar 2020
+          href: hr-whats-new-2020-02-18.md
+        - name: 12. februar 2020
+          href: hr-whats-new-2020-02-12.md
         - name: 7. februar 2020
           href: hr-whats-new-2020-02-07.md
         - name: 3. februar 2020
@@ -81,7 +85,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: Oprette og arbejde med brugerdefinerede felter
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: Integrer PowerApps-apps
+            - name: Integrere PowerApps-apps
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Finde oplysninger ved hjælp af opslag
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json

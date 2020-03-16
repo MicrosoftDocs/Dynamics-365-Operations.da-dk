@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015165"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057664"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredithold for salgsordrer
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ Salgsordrer, der er gennemtvunget på hold, kan ikke behandles med arbejdsgangen
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>Frigivelse af ordrer, der er føjet til listen over kreditstyringshold med et gennemtvunget kredithold
 Salgsordrer med en årsag til gennemtvunget hold kan ikke frigives automatisk. Hvis salgsordren er gennemtvunget på hold, og du har brugt en proces, der automatisk frigiver salgsordrer, vises salgsordren som **Klar til frigivelse** og forbliver på listen over hold. Du skal bruge menuen **Frigiv** til at frigive ordren.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Understøttelse af fritekstfakturaer, detailordrer og projektfakturaer i kreditstyring 
-Kreditstyring kan i øjeblikket kun bruges til salgsordrer. Fritekstfakturaer, Retail POS-salgsordrer og callcenter-ordrer bruger det midlertidige kreditmaks. og den forsikring/de garantier, du tilføjer, til at regulere kreditmaks. De bruger ikke blokeringsreglerne, og de sættes ikke på listen over, hvis der er et problem med kreditmaks.
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Understøttelse af fritekstfakturaer, ordrer og projektfakturaer i Kreditstyring 
+Kreditstyring kan i øjeblikket kun bruges til salgsordrer. Fritekstfakturaer, POS-salgsordrer og callcenter-ordrer bruger det midlertidige kreditmaks. og den forsikring/de garantier, du tilføjer, til at regulere kreditmaks. De bruger ikke blokeringsreglerne, og de sættes ikke på listen over, hvis der er et problem med kreditmaks.
 
 Projektfakturaer understøttes ikke i kreditstyring.

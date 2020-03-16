@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022047"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057481"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -43,23 +43,23 @@ Følgende begreber anvendes i dette emne.
 
 ## <a name="price-groups"></a>Prisgrupper
 
-Prisgrupper er omdrejningspunktet for styring af priser og rabatter i Commerce. Prisgrupper anvendes til at tildele priser og rabatter til detailenheder (dvs. kanaler, kataloger, tilknytninger og fordelskundeprogrammer). Eftersom prisgrupper bruges til alle priser og rabatter, er det vigtigt, at du planlægger, hvordan du vil bruge dem, før du starter.
+Prisgrupper er omdrejningspunktet for styring af priser og rabatter i Commerce. Prisgrupper anvendes til at tildele priser og rabatter til Commerce-enheder (dvs. kanaler, kataloger, tilknytninger og fordelskundeprogrammer). Eftersom prisgrupper bruges til alle priser og rabatter, er det vigtigt, at du planlægger, hvordan du vil bruge dem, før du starter.
 
-I sig selv er en prisgruppe blot et navn, en beskrivelse og eventuelt en prioritet for prissætning. Det vigtigste at huske om prisgrupper er, at de bruges til at administrere de utallige relationer, rabatter og priser har med detailenheder.
+I sig selv er en prisgruppe blot et navn, en beskrivelse og eventuelt en prioritet for prissætning. Det vigtigste at huske om prisgrupper er, at de bruges til at administrere de utallige relationer, rabatter og priser har med Commerce-enheder.
 
-I følgende illustration vises, hvordan prisgrupperne bruges. I denne illustration skal du bemærke, at "Prisgruppe" bogstaveligt talt er placeret midt i administrationen af prissætning og rabat. De detailenheder, du kan bruge til at administrere differentierede priser og rabatter, er placeret til venstre, og de faktiske pris- og rabatposter er placeret til højre.
+I følgende illustration vises, hvordan prisgrupperne bruges. I denne illustration skal du bemærke, at "Prisgruppe" bogstaveligt talt er placeret midt i administrationen af prissætning og rabat. De Commerce-enheder, du kan bruge til at administrere differentierede priser og rabatter, er placeret til venstre, og de faktiske pris- og rabatposter er placeret til højre.
 
 ![Prisgrupper](./media/PriceGroups.png "Prisgrupper")
 
-Når du opretter prisgrupper, bør du ikke bruge samme prisgruppe til flere typer detailenheder. I modsat fald kan det være vanskeligt at afgøre, hvorfor en bestemt pris eller rabat anvendes til en transaktion.
+Når du opretter prisgrupper, bør du ikke bruge samme prisgruppe til flere typer Commerce-enheder. I modsat fald kan det være vanskeligt at afgøre, hvorfor en bestemt pris eller rabat anvendes til en transaktion.
 
 Når den røde stiplede linje i illustrationen vises, understøtter Commerce kernefunktionaliteten i Microsoft Dynamics 365 for en prisgruppe, som er indstillet direkte for en debitor. I så fald får du imidlertid kun samhandelsaftaler om salgspris. Hvis du vil anvende kundespecifikke priser, anbefales det, at du ikke angiver prisgrupper direkte for debitoren. Du skal i stedet bruge tilknytninger.
 
-De følgende afsnit indeholder flere oplysninger om de detailenheder, du kan bruge til at angive specifikke priser, når der anvendes prisgrupper. Konfigurationen af priser og rabatter for disse enheder er en proces i to trin. Disse trin kan udføres i vilkårlig rækkefølge. Den logiske rækkefølge er dog først at angive prisgrupperne for enhederne, fordi dette trin ofte kun skal udføres en enkelt gang under implementeringen. Derefter, når der oprettes priser og rabatter, kan du oprette prisgrupper for de enkelte priser og rabatter.
+De følgende afsnit indeholder flere oplysninger om de Commerce-enheder, du kan bruge til at angive specifikke priser, når der anvendes prisgrupper. Konfigurationen af priser og rabatter for disse enheder er en proces i to trin. Disse trin kan udføres i vilkårlig rækkefølge. Den logiske rækkefølge er dog først at angive prisgrupperne for enhederne, fordi dette trin ofte kun skal udføres en enkelt gang under implementeringen. Derefter, når der oprettes priser og rabatter, kan du oprette prisgrupper for de enkelte priser og rabatter.
 
 ### <a name="channels"></a>Kanaler
 
-Det er meget almindeligt at have forskellige priser i forskellige kanaler i detailbranchen. De to primære faktorer, der påvirker kanalspecifikke priser, er omkostninger og lokale markedsforhold.
+Det er meget almindeligt at have forskellige priser i forskellige kanaler i Commerce-branchen. De to primære faktorer, der påvirker kanalspecifikke priser, er omkostninger og lokale markedsforhold.
 
 - **Omkostninger** – Jo længere væk en kanal er fra produktkilden, jo mere koster det at lagerføre et produkt. Friske produkter har f.eks. en begrænset hyldelevetid og specifikke produktionsbetingelser (f.eks. en enkelt vækstsæson). Om vinteren koster frisk salat sandsynligvis mere i det nordlige klima end i det sydlige klima. Hvis du angiver priser for kanaler over et stort geografisk område, vil du sandsynligvis angive forskellige priser for forskellige kanaler.
 - **Lokale markedsbetingelser** – Et lager, som har en direkte konkurrent på den anden side af gaden, vil være meget mere prisfølsomt end en butik, som ikke har en direkte konkurrent i nærheden.
@@ -84,7 +84,7 @@ Nogle detailhandlere bruger fysiske eller virtuelle kataloger til at markedsfør
 
 ### <a name="best-practices-for-price-groups"></a>Bedste praksis for prisgrupper
 
-Brug ikke en prisgruppe til flere detailenhedstyper. I stedet anvendes et sæt prisgrupper for kanaler, et sæt prisgrupper for tilknytninger eller fordelskundeprogrammer osv. Du kan bruge et præfiks eller suffiks i navnet på prisgruppen for at gruppere de forskellige prisgruppetyper visuelt.
+Brug ikke en prisgruppe til flere enhedstyper. I stedet anvendes et sæt prisgrupper for kanaler, et sæt prisgrupper for tilknytninger eller fordelskundeprogrammer osv. Du kan bruge et præfiks eller suffiks i navnet på prisgruppen for at gruppere de forskellige prisgruppetyper visuelt.
 
 Undlad at angive prisgrupper direkte for en debitor. Anvend i stedet en tilknytning. På denne måde kan du tildele alle typer priser og rabatter til debitorer, ikke blot samhandelsaftaler for salgspriser.
 
@@ -98,7 +98,7 @@ Hvis du vil bruge prioriteter for prissætning til priser, skal du tildele en pr
 
 Funktionen til prioriteter for prissætning blev indført for at understøtte det scenarie, hvor en detailhandler ønsker at anvende højere priser i et bestemt række af butikker. Et eksempel er, når en detailhandler har defineret regionale priser for den amerikanske østkyst i USA, men ønsker højere priser for visse produkter i butikkerne i New York City, fordi det koster mere at sælge visse produkter i byen, og/eller fordi en højere pris er gælder på det lokale marked.
 
-Som beskrevet i afsnittet "Bedste pris" i dette emne, vælger programmet for detailprissætning typisk den mindste af to priser. Derfor forhindres detailhandleren normalt i at bruge den højeste af to priser i en butik, der har både har prisgrupper for østkysten og i New York. For at løse problemet, inden funktionen for prioriteter for prissætning blev indført, måtte detailhandleren definere priser for hvert produkt to gange og ikke tildele prisen til begge prisgrupper. Detailhandleren kunne også oprette ekstra prisgrupper for at isolere de produkter, der har højere priser, fra produkter med de normale, lavere priser.
+Som beskrevet i afsnittet "Bedste pris" i dette emne, vælger programmet for prissætning typisk den mindste af to priser. Derfor forhindres detailhandleren normalt i at bruge den højeste af to priser i en butik, der har både har prisgrupper for østkysten og i New York. For at løse problemet, inden funktionen for prioriteter for prissætning blev indført, måtte detailhandleren definere priser for hvert produkt to gange og ikke tildele prisen til begge prisgrupper. Detailhandleren kunne også oprette ekstra prisgrupper for at isolere de produkter, der har højere priser, fra produkter med de normale, lavere priser.
 
 Funktionen til prioriteter for prissætning lader imidlertid detailhandleren oprette en prioritet for butikkens priser, som er højere end prioriteten for de regionale priser. Forhandleren kan også oprette en prioritet for prissætning, der kun gælder for butikspriser, mens de regionale priser får standardprioriteten for prissætning, dvs. 0 (nul). Begge opsætninger er med til at sikre, at butikspriser altid bruges før de regionale priser.
 
@@ -142,7 +142,7 @@ Det sted, der er lettest at angive prisen for et produkt, er direkte for produkt
 
 Hvis et produkt har én pris for alle, udgør basisprisen den mest effektive metode til at administrere prisen på produktet. Selvom du bruger samhandelsaftaler til at angive priser, kan du også angive basisprisen for et produkt. Hvis du ikke bruger en samhandelsaftale af typen **Alle**, du har en reservepris, der bruges, når ingen samhandelsaftale er gældende.
 
-Hvis en detailkanals valuta afviger fra firmavalutaen, fastlægges basisprisen i den pågældende kanal ved hjælp af valutaomregning af den pris, der er angivet for produktet.
+Hvis en kanals valuta afviger fra firmavalutaen, fastlægges basisprisen i den pågældende kanal ved hjælp af valutaomregning af den pris, der er angivet for produktet.
 
 Selvom prisenheden ikke er et almindeligt scenarie, understøttes den af programmet for prissætning. Hvis prisenheden er indstillet til en anden værdi end **0** (nul), er prisen pr. enhed lig med Pris ÷ Prisenhed. Hvis et produkts pris f.eks. er $10,00, og Prisenheden er 50, er prisen for et antal på 1 lig med $0,20 (= $10,00 ÷ 50).
 
@@ -150,9 +150,9 @@ Selvom prisenheden ikke er et almindeligt scenarie, understøttes den af program
 
 Ved hjælp af en samhandelsaftalekladde kan du oprette samhandelsaftaler om salgspriser for hvert produkt. I Microsoft Dynamics 365 findes der tre forskellige omfang af debitorer for samhandelsaftaler for salgspriser: **Tabel**, **Gruppe** og **Alle**. Omfanget af debitorer bestemmer, hvilke debitorer en bestemt samhandelsaftale for salgspriser gælder for.
 
-En samhandelsaftale for salgspriser af typen **Tabel** gælder for en enkelt kunde, som er angivet direkte i samhandelsaftalen. Dette scenario er ikke et typisk detailscenarie for salg fra virksomheder til forbrugere (B2C). Hvis det forekommer, anvender programmet for prissætning samhandelsaftaler af typen **Tabel** til at fastlægge prisen.
+En samhandelsaftale for salgspriser af typen **Tabel** gælder for en enkelt kunde, som er angivet direkte i samhandelsaftalen. Dette scenario er ikke et typisk scenarie for salg fra virksomheder til forbrugere (B2C). Hvis det forekommer, anvender programmet for prissætning samhandelsaftaler af typen **Tabel** til at fastlægge prisen.
 
-En samhandelsaftale for salgspriser af typen **Gruppe** er den type, der bruges oftest til detailscenarier. Uden for Commerce gælder samhandelsaftaler for salgspriser af typen **Gruppe** for en simpel debitorgruppe. I Commerce er begrebet for en debitorgruppe udvidet til en mere generel prisgruppe. En prisgruppe kan knyttes til en kanal, et tilhørsforhold, et fordelskundeprogram eller et katalog. Detaljerede oplysninger om prisgrupper finder du i afsnittet "Prisgrupper" tidligere i dette emne.
+En samhandelsaftale for salgspriser af typen **Gruppe** er den type, der bruges oftest. Uden for Commerce gælder samhandelsaftaler for salgspriser af typen **Gruppe** for en simpel debitorgruppe. I Commerce er begrebet for en debitorgruppe udvidet til en mere generel prisgruppe. En prisgruppe kan knyttes til en kanal, et tilhørsforhold, et fordelskundeprogram eller et katalog. Detaljerede oplysninger om prisgrupper finder du i afsnittet "Prisgrupper" tidligere i dette emne.
 
 > [!NOTE]
 > En samhandelsaftale for priser bruges altid før basisprisen.
@@ -211,7 +211,7 @@ Microsoft SQL Server Express bruges ofte til kanaldatabaser på grund af prisen 
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Priser inklusive moms, vs. priser eksklusive moms
 
-Når du angiver salgspriser i Dynamics 365, skal du ikke angive, om den angivne prisværdi er med eller uden moms. Værdien er kun prisen. Med indstillingen **Pris er inklusive moms** for detailkanaler kan du konfigurere kanaler, så de enten er inklusive eller eksklusive moms i priser. Denne indstilling er angivet for kanalen og kan ændres selv i en enkelt virksomhed.
+Når du angiver salgspriser i Dynamics 365, skal du ikke angive, om den angivne prisværdi er med eller uden moms. Værdien er kun prisen. Med indstillingen **Pris er inklusive moms** for kanaler kan du konfigurere kanaler, så de enten er inklusive eller eksklusive moms i priser. Denne indstilling er angivet for kanalen og kan ændres selv i en enkelt virksomhed.
 
 Hvis du arbejder både med inklusive og eksklusive moms, er det vigtigt, at du angiver priserne korrekt, da det samlede beløb, som kunden betaler, ændres, hvis indstillingen **Pris er inklusive moms** for kanalen ændres.
 
@@ -219,15 +219,15 @@ Hvis du arbejder både med inklusive og eksklusive moms, er det vigtigt, at du a
 
 Et enkelt program til prissætning bruges til at beregne priserne på tværs af alle kanaler: Callcenter, Detailbutik og Onlinebutikker. Dette hjælper med at muliggøre ensartede handelsscenarier.
 
-Detailprissætning er designet til at fungere sammen med detailenheder i stedet for enheder uden for detailhandel. Den er specifikt designet til at angive butikspriser, ikke lagerpriser.
+Prissætning er designet til at fungere sammen med detailenheder i stedet for enheder uden for detailhandel. Den er specifikt designet til at angive butikspriser, ikke lagerpriser.
 
-Programmet til prissætning i detailhandel **understøtter ikke** følgende prisfunktioner:
+Programmet til prissætning **understøtter ikke** følgende prisfunktioner:
 
-- Prissætning efter lokation eller lokation og lagerstedets lagringsdimensioner understøttes ikke. Hvis du kun angiver lokationsdimensionen i handelsaftalerne, ignorerer detailpriserne lokationen og anvender handelsaftalen på alle lokationer. Hvis du angiver både lokation og lagersted, er adfærden udefineret/ikke afprøvet, fordi det forventes, at detailhandlere bruger butikkens prisgrupperne til at styre priserne for de enkelte butikker/lagersteder.
+- Prissætning efter lokation eller lokation og lagerstedets lagringsdimensioner understøttes ikke. Hvis du kun angiver lokationsdimensionen i handelsaftalerne, ignorerer priserne lokationen og anvender handelsaftalen på alle lokationer. Hvis du angiver både lokation og lagersted, er adfærden udefineret/ikke afprøvet, fordi det forventes, at detailhandlere bruger butikkens prisgrupperne til at styre priserne for de enkelte butikker/lagersteder.
 - Attributbaseret prissætning understøttes ikke.
 - Gennemgang af leverandørrabatter understøttes ikke.
 
-Programmet til prissætning i detailhandel understøtter desuden **kun** følgende prisfunktioner:
+Programmet til prissætning understøtter desuden **kun** følgende prisfunktioner:
 
 - Prisen baseres på produktdimensioner i rækkefølge fra den mest specifikke variantpris til den mindst specifikke variantpris til produktmasterprisen. En pris, der er angivet ved hjælp af to produktdimensioner (f.eks. Farve og Størrelse), bruges før en pris, der er angivet kun ved hjælp af en produktdimension (f.eks. Størrelse).
 - Den samme prisgruppe kan bruges til at styre priser og rabatter.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002237"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057827"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
 
@@ -33,7 +33,7 @@ Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 
 
 ## <a name="overview"></a>Oversigt
 
-Produktregistrering hjælper dig med at sikre, at kunder hurtigt og nemt kan finde produkter ved at gennemse kategorier, foretage søgninger og filtrere. Detailhandlere regner produktopdagelse for et primært værktøj til kundeinteraktion på tværs af alle detailkanaler.
+Produktregistrering hjælper dig med at sikre, at kunder hurtigt og nemt kan finde produkter ved at gennemse kategorier, foretage søgninger og filtrere. Detailhandlere regner produktopdagelse for et primært værktøj til kundeinteraktion på tværs af alle kanaler.
 
 Kunder er vant til de næsten øjeblikkelige svartider fra websøgemaskiner, sofistikerede e-handelswebsteder, sociale apps, automatiske forslag, der vises, når de skriver søgeord, filterbaseret navigation og fremhævning. Hvis kunderne ikke kan finde det produkt, som de leder efter hurtigt nok i én e-handelsbutik, går de straks videre til en anden e-handelsbutik.
 

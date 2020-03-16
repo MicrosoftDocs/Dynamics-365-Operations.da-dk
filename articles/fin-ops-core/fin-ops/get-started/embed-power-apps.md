@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017722"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042936"
 ---
 # <a name="embed-microsoft-power-apps"></a>Integrer Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Følgende instruktioner viser, hvordan du integrerer en app fra Power Apps i web
 
     - Feltet **Navn** angiver den tekst, der vises for knappen eller fanen, der indeholder den integrerede app. Ofte ønsker du blot at gentage navnet på appen i dette felt.
     - **App-ID** er GUID'et for den app, du vil integrere. For at hente denne værdi skal du finde appen på [web.powerapps.com](https://web.powerapps.com) og derefter finde feltet **App-id** feltet under **Detaljer**.
-    - Som **Inputkontekst for appen** kan du eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i dette emne med titlen [Opbygning af apps, der udnytter data fra Finance and Operations-apps](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen kan få adgang til data, der er sendt fra Finance and Operations-apps.
+    - Som **Inputkontekst for appen** kan du eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i dette emne med titlen [Opbygning af en app, der udnytter data afsendt fra Finance and Operations-apps](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen kan få adgang til data, der er sendt fra Finance and Operations-apps.
     - Vælg den **Programstørrelse**, der svarer til den type app, du vil integrere. Vælg **Tynd** til apps, der er bygget til mobilenheder, og **Bred** til apps, der er bygget til tablets. Dette sikrer, at der allokeres en tilstrækkelig mængde plads til den integrerede app.
     - Oversigtspanelet **Juridiske enheder** giver mulighed for at vælge, hvilke juridiske enheder appen er tilgængelig for. Standarden er at gøre appen tilgængelig for alle juridiske enheder. Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er deaktiveret. 
 
@@ -76,7 +76,7 @@ En vigtig del af oprettelsen af en app fra Power Apps, der vil blive integreret 
 
 For eksempel kan du i funktionen OnStart i appen indstille de indgående data fra Finance and Operations-apps til en variabel som denne:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Følg disse trin for at redigere konfigurationen af en integreret app:
 
 Når en app er integreret på en side, er der to måder til at fjerne den, hvis det er nødvendigt:
 
-- Gå til ruden **Rediger en app** ved at følge vejledningen fra afsnittet [Redigere en integreret app](#editing-an-embedded-power-app) tidligere i dette emne. Bekræft, at ruden vises oplysninger for den integrerede app, du vil fjerne, og klik derefter på knappen **Slet**.
+- Gå til ruden **Rediger en app** ved at følge vejledningen fra afsnittet [Redigere en integreret app](#editing-an-embedded-app) tidligere i dette emne. Bekræft, at ruden vises oplysninger for den integrerede app, du vil fjerne, og klik derefter på knappen **Slet**.
 - Eftersom den integrerede app er gemt som tilpasningsdata, vil fjernelse af din sides tilpasning også fjerne eventuelle integrerede apps på den pågældende side. Bemærk, at rydning af sidens tilpasning er permanent og ikke kan fortrydes. Hvis du vil fjerne dine tilpasninger på en side, skal du vælge **Indstillinger** og derefter klikke på **Tilpas denne side** og til sidst på knappen **Ryd**. Når du har opdateret din browser, fjernes alle de tidligere tilpasninger for denne side. Se [Tilpas brugeroplevelsen](personalize-user-experience.md) for at få flere oplysninger om, hvordan sider bruger tilpasninger.
 
 ## <a name="appendix"></a>Appendiks
@@ -115,7 +115,7 @@ Som standard kan brugere integrere apps på enhver side, enten under menuknappen
 
 I følgende eksempel vises en ny klasse med de to metoder, der skal bruges til at konfigurere, hvor apps kan integreres.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

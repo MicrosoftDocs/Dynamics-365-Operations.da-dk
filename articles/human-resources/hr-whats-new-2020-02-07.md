@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029951"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076264"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (7. februar 2020)
 
@@ -47,7 +47,7 @@ Følgende prøvefunktioner er tilgængelige den 3. februar 2020:
 
 - **Visningsfunktioner for orlov og fravær** - Du kan finde flere oplysninger under [Visningsfunktioner for orlov og fravær](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Prøveversionsfunktion: Administration af frynsegoder** – Der er flere oplysninger, herunder kendte problemer, under [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
+- **Prøveversionsfunktion: Administration af frynsegoder** – Du kan finde flere oplysninger, herunder kendte problemer, i [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -68,5 +68,11 @@ Der vil snart være en ny Common Data Service-løsning med følgende ændringer:
 | Nye konfigurationsobjekter til variabel kompensation | **Type af variabel kompensationsplan**</br>**Kompensation - variabel struktur**</br>**Fordelingsregler**</br>**Niveau i variabel kompensationsplan** |
 | Nyt objekt **Arbejderkalender for ansættelse** | **Arbejdskalenderobjekt** er tilføjet |
 | Nyt objekt **Lønoplysninger for stillinger** | **Lønoplysninger for stillinger** er tilføjet |
-| Nyt objekt **Titel** | **Titel** er tilføjet. Det nye **Titel**-objekt vil blive medtaget i synkroniseringsprocessen mellem Personale og Common Data Service, men vil ikke oprindeligt blive refereret til fra **Stilling**- eller **Job**-objekter. |
+| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Common Data Service. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
 
+## <a name="see-also"></a>Se også
+
+[Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Opdater proces](hr-admin-setup-update-process.md)</br>
+[Administrere funktioner](hr-admin-manage-features.md)

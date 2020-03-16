@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a61529da63bc20fdd591afc94db960b05c284bb9
-ms.sourcegitcommit: b806f0c94d703bec39680fead827733361d47045
+ms.openlocfilehash: 25f3b39d0e6e88eb3f042ab93773e9724528ab0f
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935869"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076172"
 ---
+# <a name="planning-optimization-fit-analysis"></a>Analyse af om Planlægningsoptimering passer til
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="planning-optimization-fit-analysis"></a>Analyse af om Planlægningsoptimering passer til
 
 Hvis du vil se, hvordan din aktuelle opsætning og data er kompatibel med funktionen Planlægningsoptimering, skal du gå til **Varedisponering** \> **Opsætning** \> **Analyse af om Planlægninsoptimering passer til** og dernæst vælge **Kør analyse**. Hvis analysen finder nogen uoverensstemmelser, vises de på samme side. (Det kan tage et par minutter at køre analysen).
 

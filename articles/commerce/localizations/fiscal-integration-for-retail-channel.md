@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ff9d722640c86333cb1f9174c640adc2e76e9a5f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022066"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057550"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
@@ -36,7 +36,7 @@ Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der f
 - Sende oplysninger, der er relateret til salg og returvarer, som er behandlet i Retail POS, sikkert til en ekstern webtjeneste, der styres af skattemyndighederne.
 - Hjælpe med at sikre, at salgstransaktionsdata ikke kan ændres, ved hjælp af digitale signaturer.
 
-Regnskabsintegrationsfunktionen er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende detailscenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Commerce-komponenter og er medtaget i SDK'et (Software Development Kit). Du kan finde flere oplysninger om regnskabsintegrationseksempler i [Eksempler på regnskabsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Retail SDK'et, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Regnskabsintegrationsfunktionen er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende scenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Commerce-komponenter og er medtaget i SDK'et (Software Development Kit). Du kan finde flere oplysninger om regnskabsintegrationseksempler i [Eksempler på regnskabsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Retail SDK'et, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 For at understøtte andre scenarier, der ikke understøttes af et regnskabsintegrationseksempel, for at integrere Retail POS med andre regnskabsenheder eller -tjenester eller for at opfylde kravene i andre lande eller områder, skal du enten udvide et eksisterende regnskabsintegrationseksempel eller oprette et nyt eksempel ved hjælp af et eksisterende eksempel.
 

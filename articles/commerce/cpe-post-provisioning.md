@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024700"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057711"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø
 
@@ -35,7 +35,7 @@ I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Co
 
 Fuldfør kun procedurerne i dette emne, efter dit Commerce-prøveversionsmiljø er klargjort. For yderligere oplysninger om, hvordan du klargør dit Commerce-prøveversionsmiljø se [Klargøring af et Commerce-prøveversionsmiljø](provisioning-guide.md).
 
-Når dit Commerce-prøveversionsmiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at evaluere miljøet. Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) Dynamics 365 Commerce og Dynamics 365 Retail.
+Når dit Commerce-prøveversionsmiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at evaluere miljøet. Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) og Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Før du begynder
 
@@ -53,7 +53,7 @@ Når dit Commerce-prøveversionsmiljø er blevet klargjort fra ende til anden, s
 
 Hvis du vil knytte en arbejder til din identitet i LCS, skal du følge disse trin.
 
-1. Brug menuen til venstre for at gå til **Moduler \> Retail \> Medarbejdere \> Arbejdere**.
+1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Medarbejdere \> Arbejdere**.
 1. Find og vælg følgende post i listen: **000713 - Andrew Collette**.
 1. Vælg **Retail** i handlingsruden.
 1. Vælg **Tilknyt eksisterende identitet**.
@@ -91,12 +91,12 @@ Følg disse trin for at begynde at konfigurere dit prøveversionswebsted i Comme
 1. Lad værdien i feltet **Sti** være, som den er.
 1. Vælg **OK**. Listen over sider på webstedet vises.
 
-## <a name="enable-jobs-in-retail"></a>Aktivér job i Retail
+## <a name="enable-jobs"></a>Aktivere job
 
-Følg disse trin for at aktivere job i Retail.
+Følg disse trin for at aktivere job i Commerce.
 
 1. Log på miljøet (hovedkontor).
-1. Brug menuen til venstre for at gå til **Retail \> Forespørgsler og rapporter \> Batchjobs**.
+1. Brug menuen til venstre for at gå til **Retail og Commerce \> Forespørgsler og rapporter \> Batchjobs**.
 
     De resterende trin i denne procedure skal fuldføres for hvert af følgende job:
 
@@ -112,11 +112,11 @@ Følg disse trin for at aktivere job i Retail.
     1. Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.
     1. Vælg **Afventer**, og vælg derefter **OK**.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Kør fuld datasynkronisering i Retail
+### <a name="run-full-data-synchronization"></a>Kør fuld datasynkronisering
 
-Følg disse trin for at køre fuld datasynkronisering i Retail.
+Følg disse trin for at køre fuld datasynkronisering i Commerce.
 
-1. Brug menuen til venstre for at gå til **Moduler \> Retail \> Konfiguration af hovedkontor \> Retail planlægger \> Kanaldatabase**.
+1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Retail planlægger \> Kanaldatabase**.
 1. På listen til venstre er kanalen **Standard** valgt. Vælg den anden tilgængelige kanal. Denne kanal hedder **scXXXXXXXXX**.
 1. Vælg **Fuld datasynkronisering** i handlingsruden.
 1. Angiv **9999** som distributionsplanen.

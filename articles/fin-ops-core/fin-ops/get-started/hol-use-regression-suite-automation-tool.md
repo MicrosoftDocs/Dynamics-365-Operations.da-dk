@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025798"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070814"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Brug Regression Suite Automation Tool
 
@@ -217,15 +217,15 @@ I følgende illustration vises forretningsprocesserne for dette scenario i RSAT.
 
 ## <a name="advanced-scripting"></a>Avanceret scripting
 
-### <a name="command-line"></a>Kommandolinje
+### <a name="cli"></a>CLI
 
-RSAT kan kaldes fra et **Kommandopropt**-vindue.
+RSAT kan kaldes fra et **Kommandoprompt**- eller **PowerShell**-vindue.
 
 > [!NOTE]
 > Kontroller, at **TestRoot**-miljøvariablen er indstillet til RSAT-installationsstien. (Gå til Microsoft Windows, åbn **Kontrolpanel**, vælg **System og sikkerhed \> System \> Avancerede systemindstillinger**, og vælg derefter **Miljøvariabler**.)
 
-1. Åbn et **kommandopromptvindue** som administrator.
-2. Kør værktøjet fra installationsmappen.
+1. Åbn et **Kommandoprompt**- eller **PowerShell**-vindue som administrator.
+2. Naviger til RSAT-installationsmappen.
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ RSAT kan kaldes fra et **Kommandopropt**-vindue.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+Viser hjælp om alle tilgængelige kommandoer og deres parametre.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>Valgfrie parametre
+
+**``command``**
+
+
+Hvor ``[command]`` er en af de kommandoer, der er angivet nedenfor.
+
+
+#### <a name="about"></a>om
+Viser den aktuelle version.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+Rydder skærmen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>hent
+Downloader vedhæftede filer for den angivne testcase til outputmappen. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``test_case_id``** Repræsenterer testcase-id'et.  
+**``output_dir``** Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="examples"></a>Eksempler
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>rediger
+Giver dig mulighed for at åbne parameterfilen i Excel-programmet og redigere den.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``excel_file``** Skal indeholde en fuldstændig sti til en eksisterende Excel-fil.
+
+##### <a name="examples"></a>Eksempler
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>generate
+Opretter testkørsels- og -parameterfiler for det angivne testcase i outputmappen.
+Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``test_case_id``** Repræsenterer testcase-id'et.  
+**``output_dir``** Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="examples"></a>Eksempler
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+Genererer en ny testcase, der er afledt fra den leverede testcase. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``parent_test_case_id``** Repræsenterer det overordnede testcase-id.  
+**``test_plan_id``** Repræsenterer testplan-id'et.  
+**``test_suite_id``** Repræsenterer testpakke-id'et.
+
+##### <a name="examples"></a>Eksempler
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+Opretter kun testkørselsfilen for det angivne testcase i outputmappen. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``test_case_id``** Repræsenterer testcase-id'et.  
+**``output_dir``** Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="examples"></a>Eksempler
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+Opretter alle testcases for den angivne pakke i outputmappen.
+Du kan bruge kommandoen ``listtestsuitenames`` til at få vist alle tilgængelige testpakker. Brug en vilkårlig værdi fra første kolonne som en **test_suite_name**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``test_suite_name``** Repræsenterer testpakkenavnet.  
+**``output_dir``** Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="examples"></a>Eksempler
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>help
+Identisk med [?](####?) command
+
+
+#### <a name="list"></a>listen
+Viser alle tilgængelige testcases.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+Viser alle tilgængelige testplaner.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+Viser testcases for den angivne testpakke. Du kan bruge kommandoen ``listtestsuitenames`` til at få vist alle tilgængelige pakker. Brug en vilkårlig værdi fra første kolonne som **suite_name**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``suite_name``** Navnet på den ønskede pakke.
+
+##### <a name="examples"></a>Eksempler
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+Viser alle tilgængelige testpakker.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>playback
+Afspiller en testcase ved hjælp af en Excel-fil.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``excel_file``** En fuld sti til Excel-filen. Filen skal eksistere. 
+
+##### <a name="examples"></a>Eksempler
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+Afspiller flere testcases på én gang.
+Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``test_case_id1``** Id for eksisterende testcase.  
+**``test_case_id2``** Id for eksisterende testcase.  
+**``test_case_idN``** Id for eksisterende testcase.  
+
+##### <a name="examples"></a>Eksempler
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Afspiller mange testcases på én gang ved hjælp af Excel-filer.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``excel_file1``** Fuld sti til Excel-filen. Filen skal eksistere.  
+**``excel_file2``** Fuld sti til Excel-filen. Filen skal eksistere.  
+**``excel_fileN``** Fuld sti til Excel-filen. Filen skal eksistere.  
+
+##### <a name="examples"></a>Eksempler
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+Afspiller alle testcases fra den angivne testpakke. Du kan bruge kommandoen ``listtestsuitenames`` til at få vist alle tilgængelige pakker. Brug en vilkårlig værdi fra første kolonne som **suite_name**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``suite_name``** Navnet på den ønskede pakke.
+
+##### <a name="examples"></a>Eksempler
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>quit
+Lukker programmet.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>upload
+Uploader alle de filer, der hører til den angivne testpakke eller de angivne testcases.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>Påkrævede parametre
+**``suite_name``** Alle de filer, der hører til den angivne testpakke, bliver uploadet.
+**``testcase_id``** Alle de filer, der hører til den eller de angivne testcases, bliver uploadet.
+
+##### <a name="examples"></a>Eksempler
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+Uploader kun den optagne fil, der hører til de angivne testcases.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>Påkrævede parametre
+**``testcase_id``** Den optagne fil, der hører til de angivne testcases, bliver uploadet.
+
+##### <a name="examples"></a>Eksempler
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>usage
+Viser to måder at aktivere dette program på: en, der bruger en fil med standardindstillinger, en anden, der angiver en fil med indstillinger.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-eksempler
 

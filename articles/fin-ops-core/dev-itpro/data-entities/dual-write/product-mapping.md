@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019697"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081145"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -75,7 +75,7 @@ Enhed | uoms
 Enhedsomregninger | msdyn_ unitofmeasureconversions
 Konvertering af produktspecifik måleenhed | msdyn_productspecificunitofmeasureconversion
 Produktkategorier | msdyn_productcategories | Hver produktkategorier og oplysninger om dens struktur og karakteristika findes i enheden produktkategori. 
-Hierarkier for produktkategori | msdyn_productcategoryhierarhies | Du kan bruge produkthierarkier til at kategorisere eller gruppere produkter. Kategorihierarkierne er tilgængelige i Common Data Service ved at bruge enheden Produktkategorihierarki. 
+Hierarkier for produktkategori | msdyn_productcategoryhierarhies | Du kan bruge produkthierarkier til at kategorisere eller gruppere produkter. Kategorihierarkierne er tilgængelige i Common Data Service ved at bruge kategorihierarkienheden. 
 Hierarkiroller for produktkategori | msdyn_productcategoryhierarchies | Produkthierarkier kan bruges til forskellige roller i D365 Finance and Operations. De angiver, hvilken kategori der bruges i hver rolle for enheden produktkategorirolle, som anvendes. 
 Tildelinger af produktkategori | msdyn_productcategoryassignments | Du kan anvende enheden produktkategoritildeling til at tildele et produkt til en kategori.
 
@@ -91,7 +91,7 @@ Da produktet er repræsenteret som en SKU, kan koncepterne for specifikke produk
 
 ![Datamodel for produkter](media/dual-write-product.png)
 
-Når dobbeltskrivningsfunktionaliteten er aktiveret, vil apps fra Finance and Operations blive synkroniseret i andre Dynamics 365-apps i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske enhed, hvor produktet frigives i en Finance and Operations-app. 
+Når dobbeltskrivningsfunktionaliteten er aktiveret, vil apps fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-apps i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske enhed, hvor produktet frigives i en Finance and Operations-app. 
 
 Som standard synkroniseres produkter fra Finance and Operations-apps til andre Dynamics 365-apps i tilstanden **Kladde**. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, så du f.eks. kan bruge det direkte i salgsordretilbud, skal følgende indstilling vælges: under fanen **System> Administration > Systemadministration > Systemindstillinger > Sales** skal du vælge **Opret produkter i aktiv tilstand = ja**. 
 
@@ -109,7 +109,7 @@ Bemærk, at synkroniseringen af produkter sker fra Finance and Operations-apps t
 
 Produktdimensioner er egenskaber, der identificerer en produktvariant. De fire produktdimensioner (farve, størrelse, typografi og konfiguration) knyttes også til Common Data Service, så du kan definere produktvarianterne. I følgende illustration vises datamodellen for produktdimensionen Farve. Den samme model anvendes på størrelser, typografier og konfigurationer. 
 
-![Datamodel for produkter](media/dual-write-product-2.PNG)
+![Datamodel for produkter](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varern
 
 Måleenhederne og de respektive omregninger er tilgængelige i Common Data Service i henhold til datamodellen, der vises i diagrammet.
 
-![Datamodel for produkter](media/dual-write-product-3.PNG)
+![Datamodel for produkter](media/dual-write-product-three.png)
 
 Måleenhedsbegrebet er integreret mellem Finance and Operations-apps og andre Dynamics 365-apps. For hver enhedsklasse i en Finance and Operations-app oprettes der en enhedsgruppe i en Dynamics 365-app, som indeholder de enheder, der hører til enhedsklassen. Der oprettes også en standardbasisenhed for hver enhedsgruppe. 
 
@@ -205,13 +205,13 @@ Til entydig identifikation af produkter mellem Dynamics 365 for Finance and Oper
 
 For en anden bruger af Dynamics 365-apps identificeres produktet i brugergrænsefladen med **msdyn_produktnummer** (bemærk, at etiketten for feltet er **Produktnummer**). I produktformularen vises både firmaet og msydn_produktnummeret. Men i feltet (produktnummer) vises den entydige nøgle for et produkt ikke. 
 
-Bemærk, at hvis der bygges apps ovenpå Common Data Service, bør du være særlig opmærksom på, at du anvender det (produktnummmer), der er det entydige produkt-ID, som integrationsnøglen, og ikke msdyn_produktnummer, idet den sidstnævnte ikke er entydig. 
+Hvis du bygger apps på Common Data Service, skal du være opmærksom på at bruge **produktnummer** (det entydige produkt-id) som integrationsnøgle. Brug **ikke msdyn_productnumber**, da det ikke er entydigt. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Første synkronisering af produkter og migrering af data fra Common Data Service til Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Første synkronisering af produkter 
 
-Når dobbeltskrivning er aktiveret, synkroniseres produkter fra Dynamics 365 Finance and Operations til Common Data Service og andre Dynamics 365-apps. Bemærk, at produkter oprettet i Common Data Service og andre Dynamics 365-apps forud for dobbeltskrivning, ikke bliver opdateret eller sammenlignet med produktdata fra Finance and Operations.
+Når dobbeltskrivning er aktiveret, synkroniseres produkter fra Finance and Operations-apps til Common Data Service og andre modeldrevne apps i Dynamics 365. Produkter, der er oprettet i Common Data Service- og andre Dynamics 365-apps, før dobbeltskrivning blev frigivet, bliver ikke opdateret eller sammenlignet med produktdata fra Finance and Operations-apps.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Sammenligning af produktdata fra Finance and Operations og andre Dynamics 365-apps
 

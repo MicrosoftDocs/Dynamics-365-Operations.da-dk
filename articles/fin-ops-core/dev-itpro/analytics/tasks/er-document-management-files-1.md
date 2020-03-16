@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026128"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042821"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Brug dokumentstyringsfiler i formatoutput (del 1: Forbedret datamodel)
 
@@ -36,10 +36,14 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Få adgang til listen over de konfigurationer, der leveres af Microsoft
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-    * Sørg for, at udbyderen 'Litware, Inc.' er tilgængelig og markeret som aktiv.  
+
+    Sørg for, at udbyderen 'Litware, Inc.' er tilgængelig og markeret som aktiv.  
+
 2. Vælg udbyderen Litware, Inc. .
 3. Klik på Lagre.
-    * Hvis der allerede findes et lager af typen "Operationsressourcer", kan du springe over de resterende trin i den aktuelle underopgave.  
+
+    Hvis der allerede findes et lager af typen "Operationsressourcer", kan du springe over de resterende trin i den aktuelle underopgave.  
+
 4. Klik på Tilføj for at åbne dialogboksen.
 5. Angiv 'Operationsressourcer' i feltet Konfigurationslagertype.
 6. Klik på Opretlager.
@@ -51,9 +55,13 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 3. Klik på Vis filtre.
 4. Klik på Åbn.
 5. Vælg 'Debitorfakturamodel' i træet.
-    * Vælg modelkonfigurationen 'Debitorfakturamodel' for at importere den.  
+
+    Vælg modelkonfigurationen 'Debitorfakturamodel' for at importere den.  
+
 6. Klik på Importer.
-    * Klik på Importer for version 1 af den valgte konfiguration.  
+
+    Klik på Importer for version 1 af den valgte konfiguration.  
+
 7. Klik på Ja.
 8. Luk siden.
 9. Luk siden.
@@ -65,6 +73,5 @@ Du vil oprette vores egen konfiguration af kundens fakturamodel, der er afledt a
 1. Klik på Opret konfiguration for at åbne dialogboksen.
 2. Skriv 'Afled fra navn: Debitorfakturamodel, Microsoft' i feltet Ny.
 3. Skriv "Debitorfakturamodel (brugerdefineret)" i feltet Navn.
-    * Debitorfakturamodel (brugerdefineret)  
 4. Klik på Opret konfiguration.
 

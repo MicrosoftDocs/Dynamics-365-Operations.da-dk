@@ -3,7 +3,7 @@ title: Oversigt over genopfyldning
 description: I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251457"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076338"
 ---
 # <a name="replenishment-overview"></a>Oversigt over genopfyldning
 
@@ -49,6 +49,8 @@ Lokationsvejledninger bruges til at bestemme, hvilken lokation der skal genopfyl
 Ud over at oprette en skabelon skal du angive nogle genopfyldningsindstillinger i bølgeskabelonen. Bølgeskabelonen skal indeholde et bølgetrin for genopfyldning, der kun køres, hvis en vare ikke er korrekt fordelt. Genopfyldningsbølgetrinnet bruger en bølgetrinskode til at bestemme, hvilken genopfyldningsskabelon der skal bruges. Ud over at have et bølgetrin for genopfyldning du skal kontrollere, at **Genopfyld** er valgt i sektionen **Metoder** i bølgeskabelonen. 
 
 Siden **Genopfyldningsskabelon** indeholder afkrydsningsfeltet **Tillad bølgebehov at bruge ikke-reserverede antal**. Markér dette afkrydsningsfelt, hvis genopfyldningsbehov skal være i stand til at trække ikke-reserverede mængder fra arbejde, der er oprettet ud fra den valgte genopfyldningsskabelon. For at gøre det muligt for genopfyldningsskabeloner at bruge denne logik skal du markere dette afkrydsningsfelt for hver eksisterende genopfyldningsskabelon. Når der udløses genopfyldningsbehov på lagerstedet, trækkes behovet fra eksisterende genopfyldningsarbejde, der har ikkereserverede mængder, hvis arbejdet stammer fra genopfyldningsskabeloner, hvor afkrydsningsfeltet **Tillad bølgebehov at bruge ikke-reserverede antal** er markeret.
+
+**Genopfyldningsenhed** er den mindste enhed, der skal genopfyldes. Det skal være et helt tal, der er et multiplum af enheden. Systemet vil runde op til den højest mulige enhed, når der oprettes arbejde.
 
 Genopfyldning ved behov understøttes for salgsordrer, flytteordrer, produktionsordrer og kanbans. 
 

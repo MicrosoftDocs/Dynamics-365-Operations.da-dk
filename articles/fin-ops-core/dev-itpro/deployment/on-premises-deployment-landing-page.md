@@ -1,9 +1,9 @@
 ---
 title: Startside for lokal installation
 description: Dette emne indeholder oplysninger og links til indhold om lokale installationer.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770940"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090583"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal installation
 
@@ -50,17 +50,17 @@ Du kan installere Dynamics 365 Finance + Operations (i det lokale miljø). Når 
 - [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importér konfigurationer for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurer proxyer til dine lokale miljøer](onprem-reverseproxy.md)
-- [Konfigurer teknisk support til Finance and Operations-apps](../lifecycle-services/support-experience.md)
+- [Konfigurere proxyer til lokale miljøer](onprem-reverseproxy.md)
+- [Konfigurere teknisk support til Finance and Operations-apps](../lifecycle-services/support-experience.md)
 - [Klientens internetforbindelse](../user-interface/client-disconnected.md)
 - [Anvende opdateringer til lokale installationer](apply-updates-on-premises.md)
 - [Installere lokale miljøer på ny](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [Detailegenskaber, der er tilgængelige i lokale installationer](../../../retail/retail-onprem.md)
+## <a name="commerce"></a>Commerce
+- [Commerce-egenskaber, som er tilgængelige i lokale installationer](../../../retail/retail-onprem.md)
 - [Installationstrin for Retail-kanalkomponenter i et on-premises-miljø.](deploy-retail-onprem.md)
-- [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurere og installere Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurere, installere og aktivere Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurere og installere Commerce-skalaenhed](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Opgrader
 - [Lokal opgraderingsproces til lokale miljøer](../migration-upgrade/on-prem-upgrade.md)
@@ -71,6 +71,6 @@ Du kan installere Dynamics 365 Finance + Operations (i det lokale miljø). Når 
 - [Certifikatrotation](certificate-rotation-on-prem.md)
 - [Diagnosticering i det lokale miljø](on-premises-diagnostics.md)
 - [Funktioner, der endnu ikke er implementeret i lokale installationer](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Genfjernede eller udfasede funktioner for Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Fjernede eller udfasede funktioner til Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Livscykluspolitik for software og lokale versioner](../migration-upgrade/on-prem-version-update-policy.md)
  

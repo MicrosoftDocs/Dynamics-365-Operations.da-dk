@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026057"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042844"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generere dokumenter, der har programdata
 
@@ -40,10 +40,14 @@ Denne procedure er til brugere, der er tildelt rollen som systemadministrator el
 ## <a name="set-up-foreign-trade-parameters"></a>Konfigurer udenrigshandelsparametre
 1. Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre.
 2. Klik på fanen Nummerserier.
-    * For at arkivere oplysninger om Intrastat-rapporteringsproces skal vi kunne identificere poster for hvert arkiv, vi har oprettet. I den forbindelse skal der konfigureres en særlig nummerserie.  
+
+    For at arkivere oplysninger om Intrastat-rapporteringsproces skal vi kunne identificere poster for hvert arkiv, vi har oprettet. I den forbindelse skal der konfigureres en særlig nummerserie.  
+
 3. Vælg referencen, der er 'Id for Intrastat-arkiv'.
 4. Skriv en værdi i feltet Nummerseriekode.
-    * Skriv eller vælg værdien 'Fore_2' i feltet 'Nummerseriekode'.  
+
+    Skriv eller vælg værdien 'Fore_2' i feltet 'Nummerseriekode'.  
+
 5. Nummerseriekoden ResolveChanges.
 6. Klik på Gem.
 7. Luk siden.
@@ -54,18 +58,23 @@ Denne procedure er til brugere, der er tildelt rollen som systemadministrator el
 3. Vælg 'Intrastat (model)\Intrastat (format)' i træet.
 4. Klik på Kør.
 5. Skriv 'intrastat2.xml' i feltet Angiv filnavn.
-    * intrastat2.xml  
 6. Klik på OK.
 
 ## <a name="review-er-format-executions-results"></a>Gennemse resultaterne af udførelse af ER-format
 Gennemse den genererede XML-fil.  
 1. Luk siden.
 2. Gå til Skat > Erklæringer > Udenrigshandel > Intrastat.
-    * Åbn denne formular, der indeholder Intrastat-posteringer, der er medtaget i det genererede elektroniske dokument.  
+
+    Åbn denne formular, der indeholder Intrastat-posteringer, der er medtaget i det genererede elektroniske dokument.  
+
 3. Klik på Intrastat-arkiv.
-    * Da det udførte ER-format nu indeholder indstillinger for opdatering af programdata, er detaljerne for den fuldførte Intrastat-rapportering blevet arkiveret. I denne formular kan du se overskriftsposten for det oprettede arkiv.  
+
+    Da det udførte ER-format nu indeholder indstillinger for opdatering af programdata, er detaljerne for den fuldførte Intrastat-rapportering blevet arkiveret. I denne formular kan du se overskriftsposten for det oprettede arkiv.  
+
 4. Klik på Detaljer.
-    * I denne formular kan du se oplysninger om det oprettede arkiv.  
+
+    I denne formular kan du se oplysninger om det oprettede arkiv.  
+
 5. Luk siden.
 6. Luk siden.
 7. Luk siden.

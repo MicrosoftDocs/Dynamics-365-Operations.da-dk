@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251149"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057759"
 ---
 # <a name="trade-allowance-management"></a>Administration af handelstilladelse
 
 [!include [banner](../includes/banner.md)]
 
-Administration af handelsrabat hjælper virksomheder med at håndtere kampagneprogrammer, der tilbyder monetære belønninger i form af "præstationsløn" til de detailhandelskunder, som når mængde- og funktionsmæssige mål. Funktionens egenskaber er udviklet til virksomheder, der fokuserer på omfattende processer til fremme af fortjeneste, fra budgettering og fordeling af kampagnemidler til opsætning af rabatkontrakt, kravoprettelse og -behandling, betalingsprocesser og endelig til analyse af kampagneeffektivitet.
+Administration af handelsrabat hjælper virksomheder med at håndtere kampagneprogrammer, der tilbyder monetære belønninger i form af "præstationsløn" til de kunder, som når mængde- og funktionsmæssige mål. Funktionens egenskaber er udviklet til virksomheder, der fokuserer på omfattende processer til fremme af fortjeneste, fra budgettering og fordeling af kampagnemidler til opsætning af rabatkontrakt, kravoprettelse og -behandling, betalingsprocesser og endelig til analyse af kampagneeffektivitet.
 
 
 Denne artikel giver en bred oversigt over funktionen til administration af handelsrabat, så du kan få et indblik i de opgaver, der typisk skal udføres ved administration af et kampagneprogram. Forskellige typer brugere, der har ansvaret for drift og beslutningstagning, forventes at bruge denne funktion til at opnå deres respektive mål:
@@ -77,9 +77,9 @@ Når definitionen af midler er på plads, er næste trin i planlægning af marke
 
 Rabathandelsaftaler registreres på siden **Aftaler om handelsrabat**. Du kan åbne siden **Aftaler om handelsrabat** ved at vælge **Salg og marketing** \> **Handelsrabatter** \> **Aftaler om handelsrabat**.
 
-![Siden Aftaler om handelsrabat](./media/trade-allowance-management-agreements-page.png "Siden Aftaler om handelsrabat")
+![Siden Handelsrabataftaler](./media/trade-allowance-management-agreements-page.png "Siden Handelsrabataftaler")
 
-#### <a name="header"></a>Hoved
+#### <a name="header"></a>Header
 
 Vælg **Hoved** for at skifte til Overskriftsvisning.
 
@@ -105,7 +105,7 @@ Fanen **Merchandizinghændelser** viser de typer af hændelser, der er omfattet 
 
 Når du vælger merchandizinghændelsen og derefter vælge fanen **Beløb**, findes oplysninger om hændelsen.
 
-![Linjer til handelsrabataftale](./media/trade-allowance-management-agreements-lines.png "Linjer til handelsrabataftale")
+![Aftalelinjer for handelsrabat](./media/trade-allowance-management-agreements-lines.png "Aftalelinjer for handelsrabat")
 
 I sektionen **Handelsrabatlinjer** skal du angive antal- eller beløbsområder, som kunden skal opnå, for at definitioner kan opnå belønninger.
 

@@ -1,6 +1,6 @@
 ---
-title: Oprette en profil for detailfunktionalitet
-description: Dette emne beskriver, hvordan du opretter en profil for detailfunktionalitet i Microsoft Dynamics 365 Commerce.
+title: Oprette en detailfunktionalitetsprofil
+description: I dette emne beskrives, hvordan du opretter en funktionalitetsprofil i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002837"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057342"
 ---
-# <a name="create-a-retail-functionality-profile"></a>Oprette en profil for detailfunktionalitet
+# <a name="create-a-retail-functionality-profile"></a>Oprette en detailfunktionalitetsprofil
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter en profil for detailfunktionalitet i Microsoft Dynamics 365 Commerce.
+I dette emne beskrives, hvordan du opretter en funktionalitetsprofil i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversigt
 
-Profilen for detailfunktionalitet giver forskellige indstillinger, der bruges til onlinekanaler. Hver detailkanal skal angive en profil for detailfunktionalitet.
+Commerce-funktionalitetsprofilen giver forskellige indstillinger, der bruges til onlinekanaler. Hver kanal skal angive en funktionalitetsprofil.
 
-## <a name="create-a-retail-functionality-profile"></a>Oprette en profil for detailfunktionalitet
+## <a name="create-a-functionality-profile"></a>Opret en funktionalitetsprofil
 
-Benyt følgende fremgangsmåde for at oprette en ny profil for detailfunktionalitet.
+Benyt følgende fremgangsmåde for at oprette en ny funktionalitetsprofil.
 
 1. I navigationsruden skal du gå til **Moduler \> Konfiguration af kanal \> POS-profiler \> Funktionalitetsprofiler**.
 1. Gå til handlingsruden, og vælg **Ny**.
@@ -51,9 +51,9 @@ Benyt følgende fremgangsmåde for at oprette en ny profil for detailfunktionali
 1. Rediger indstillinger i sektionen **Infokoder** efter behov.
 1. Rediger indstillinger i sektionen **Kvitteringsnummerering** efter behov. 
   
-Følgende billede viser et eksempel på en profil for detailfunktionalitet.
+Følgende billede viser et eksempel på en funktionalitetsprofil.
   
-![Eksempel på profil for detailfunktionalitet](media/retail-functionality-profile.png)
+![Eksempel på funktionalitetsprofil](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

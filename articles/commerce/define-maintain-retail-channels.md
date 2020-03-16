@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021956"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057908"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedligeholde detailkanaler
 
@@ -47,9 +47,9 @@ Du skal fuldføre følgende opgaver, før du kan konfigurere en butik:
 3. Definer nummerserier til butikker, butiksopgørelser og opgørelsesbilag.
 4. Konfigurer parametre for Commerce.
 5. Konfigurer betalingsmetoderne, som butikken accepterer.
-6. Hvis du vil behandle kreditkorttransaktioner på butikkens Retail POS-kasseapparater, kan du også konfigurere betalingstjenester.
+6. Hvis du vil behandle kreditkorttransaktioner på butikkens POS-kasseapparater, kan du også konfigurere betalingstjenester.
 7. Konfigurer momsgrupper.
-8. Konfigurer detailprodukter. Som en del af denne opgave skal du oprette produkthierarkier, produktvarianter og produktudvalg.
+8. konfigurer produkter. Som en del af denne opgave skal du oprette produkthierarkier, produktvarianter og produktudvalg.
 9. Konfigurer produktprisgrupper.
 10. Konfigurer produktpriser. Som en del af denne opgave skal du også konfigurere prisjusteringer, rabatter og rabatperioder.
 11. Opsætning af medarbejdere.
@@ -87,5 +87,5 @@ Når du har angivet oplysningerne om butikken, skal du udføre disse opgaver for
 Commerce bruger organisationshierarkier til at strukturere kanaler. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af. Når du opretter butikker, kan du føje dem til et organisationshierarki. Butikkerne deler derefter data, der bruges til udvalg, genbestilling og rapportering.
 
 > [!NOTE]
-> Hvis du vil bruge Retail Sales-funktionaliteten, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af Retail-funktionalitet, som udfører forskellige valideringer baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau.
+> Hvis du vil bruge funktionaliteten Commerce Sales, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af forskellige valideringer, som er baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau.
 

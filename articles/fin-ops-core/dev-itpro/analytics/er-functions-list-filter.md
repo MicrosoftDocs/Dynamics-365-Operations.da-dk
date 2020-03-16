@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2783fbfa0ba45c8d3772cf9ca16d110549d227b4
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: adeefd08531f59e478efbb45ab294b3bc8216f4c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917367"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042130"
 ---
 # <a name="FILTER">ER-funktionen FILTER</a>
 
@@ -33,7 +33,7 @@ Funktionen `FILTER` returnerer den angivne liste som en *Postliste*-værdi, når
 
 ## <a name="syntax"></a>Syntaks
 
-```
+```vb
 FILTER (list, condition)
 ```
 

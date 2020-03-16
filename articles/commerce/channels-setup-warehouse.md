@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002306"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057850"
 ---
 # <a name="warehouse-set-up"></a>Konfigurere lagersted
 
@@ -59,7 +59,7 @@ Gør følgende for at konfigurere et lagersted.
 
 1. Gå til **Moduler \> Detail og handel \> Konfiguration af kanal \> Lagersteder** i navigationsruden.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Indtast en værdi i feltet **Lagersted**.  Hvis dette er en 1:1-tilknytning til en detailbutik, skal du overveje at bruge butiksnavnet eller navnet på et regionalt distributionscenter.
+1. Indtast en værdi i feltet **Lagersted**.  Hvis dette er en 1:1-tilknytning til en butik, skal du overveje at bruge butiksnavnet eller navnet på et regionalt distributionscenter.
 1. Angiv en værdi i feltet **Navn**.
 1. Vælg det sted til lagerstedet, du tidligere har oprettet, på rullelisten **Sted**.
 1. Vælg **Standard** i feltet **Type**.

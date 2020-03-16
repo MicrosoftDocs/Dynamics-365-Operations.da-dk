@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024723"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057734"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø
 
@@ -63,8 +63,8 @@ Hvis du vil evaluere funktionerne til administration af digitale aktiver ved at 
 
 ### <a name="update-the-media-base-url"></a>Opdater URL-basisadressen til mediet
 
-1. Log på Dynamics 365 Retail.
-1. anvend menuen til venstre for at gå til **Moduler \> Retail \> Konfiguration af kanal \> Kanalprofiler**.
+1. Log på Dynamics 365 Commerce.
+1. Anvend menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af kanal \> Kanalprofiler**.
 1. Vælg **Rediger**.
 1. Under **Profilegenskaber** skal du erstatte egenskabsværdien for **URL-basisadressen til medieserveren** med den URL-basisadresse til medie, som du oprettede tidligere.
 1. Vælg den anden kanal på listen til venstre under **Standard**-kanal.
@@ -77,7 +77,7 @@ Hvis du vil evaluere funktionerne til administration af digitale aktiver ved at 
 > [!NOTE]
 > SMTP-serveren eller mailtjenesten, du angiver her, skal være tilgængelig fra det Azure-abonnement, som du bruger til miljøet.
 
-1. Log på Retail.
+1. Log på Commerce.
 1. Brug menuen til venstre for at gå til **Moduler \> Systemadministration \> Konfiguration \> E-mail \> E-mailparametre**.
 1. På fanen **SMTP-indstillinger** i feltet **Udgående mailserver** skal du indtaste FQDN- eller IP-adressen på din SMTP-server eller e-mailtjeneste.
 1. I feltet **SMTP-portnummer** skal du indtaste portnummeret. (Hvis du ikke bruger SSL-certifikater (Secure Sockets Layer) \[SSL\], er standardportnummeret **25**.)
@@ -92,7 +92,7 @@ Hvis du vil evaluere funktionerne til administration af digitale aktiver ved at 
 
 For hver transaktionshændelse, du vil sende mails for, skal du opdatere mailskabelonen med en gyldig afsendermailadresse.
 
-1. Log på Retail.
+1. Log på Commerce.
 1. Brug menuen til venstre for at gå til **Moduler \> Organisationsadministration \> Konfiguration \> Skabelon til organisationsmail**.
 1. Vælg **Vis liste**.
 1. Benyt følgende fremgangsmåde for hver skabelon på listen:
@@ -115,7 +115,7 @@ Du ønsker måske at tilpasse e-mail-skabelonerne, så de bruger forskellige bil
     - Skabelon til plukordre
 
 1. Tilpas skabelonerne ved hjælp af en tekst- eller HTML-editor. Se listen over [understøttede tokens](#supported-tokens-in-the-email-template) senere i dette emne.
-1. Log på Retail.
+1. Log på Commerce.
 1. Brug menuen til venstre for at gå til **Moduler \> Organisationsadministration \> Konfiguration \> Skabelon til organisationsmail**.
 1. Udvid listen til venstre for at få vist alle skabelonerne.
 1. Følg disse trin for hver skabelon, du vil tilpasse:

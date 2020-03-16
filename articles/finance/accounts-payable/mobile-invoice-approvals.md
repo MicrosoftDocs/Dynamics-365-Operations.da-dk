@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658638"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059422"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
@@ -54,8 +54,8 @@ Hver organisation organiserer og definerer sin forretningsproces for kreditorfak
     -   Hvor mange regnskabsfordelinger (udvidet pris, moms, gebyrer, opdelinger osv.) er der for en fakturalinje? Igen anvend 80-20-reglen.
     -   Har fakturaerne også regnskabsfordelinger i fakturahovedet? I så fald, skal disse regnskabsfordelinger være tilgængelige på enheden?
 
-> [!NOTE]
-> Dette emne forklarer ikke, hvordan du redigerer regnskabsfordelinger, fordi denne funktion i øjeblikket ikke understøttes for mobilscenarier.
+    > [!NOTE]
+    > Dette emne forklarer ikke, hvordan du redigerer regnskabsfordelinger, fordi denne funktion i øjeblikket ikke understøttes for mobilscenarier.
 
 -   Ønsker brugere at se vedhæftede filer til fakturaen på enheden?
 
@@ -158,9 +158,9 @@ Den første mobilenhedsside, du skal designe, er listen over de fakturaer, der e
     - Fakturanummer
     - Fakturadato
 
-  Når felterne er tilføjet, skal siden ligne følgende illustration. 
+    Når felterne er tilføjet, skal siden ligne følgende illustration. 
     
-   [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Du skal også tilføje følgende kolonner nu, så vi senere kan aktivere arbejdsganghandlinger.
     - Vis fuldført opgave
@@ -247,9 +247,10 @@ Brug siden **VendMobileInvoiceHeaderDetails** for at tilføje arbejdsgangshandli
     - Den skjuler de ekstra arbejdsgang-relaterede kolonner, som vi tidligere tilføjede på listeside til mobilenheden. Vi tilføjede disse kolonner, så appen har disse oplysninger i den rette sammenhæng og kan udføre det næste trin.
     - Baseret på, hvilket trin i arbejdsgangen der er aktivt, anvender den regler, så kun disse handlinger viser.
 
-> [!NOTE]
-> Navnet på siderne og andre kontrolelementer i koden skal være det samme som navnene i arbejdsområdet.
+    > [!NOTE]
+    > Navnet på siderne og andre kontrolelementer i koden skal være det samme som navnene i arbejdsområdet.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Brug siden **VendMobileInvoiceHeaderDetails** for at tilføje arbejdsgangshandli
                  },
            };
         }
+    ```
 
 2.  Overfør kodefilen til arbejdsområdet ved at vælge fanen **Regel**
 3.  Klik på **Udført** for at afslutte redigeringstilstand.
@@ -341,7 +343,7 @@ Kravene til dette scenario bekræfter, at der kun skal være fordelinger på lin
 
 1.  I URL-adressen skal du erstatte navnet på menupunktet, som du gjorde tidligere. Den side, der vises, skal ligne følgende illustration.
 
-[![Siden Alle fordelinger](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Siden Alle fordelinger](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
 
@@ -367,16 +369,18 @@ Kravene til dette scenario bekræfter, at der kun skal være fordelinger på lin
 
 10. Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
 
-> [!NOTE] 
-> Siden **Vis regnskab** til mobilenheder er ikke aktuelt knyttet til nogen af de sider til mobilenheder, vi har udviklet indtil videre. Da brugeren skal kunne navigere til siden **Vis regnskab** fra siden **Fakturaoplysninger** på mobilenheden, skal vi sørge for navigation fra siden **Fakturadetaljer** til siden **Vis regnskab**. Vi opretter denne navigation ved hjælp af yderligere logik via JavaScript.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Føje navigation til siden "Vis regnskab"
+
+Siden **Vis regnskab** til mobilenheder er ikke aktuelt knyttet til nogen af de sider til mobilenheder, vi har udviklet indtil videre. Da brugeren skal kunne navigere til siden **Vis regnskab** fra siden **Fakturaoplysninger** på mobilenheden, skal vi sørge for navigation fra siden **Fakturadetaljer** til siden **Vis regnskab**. Vi opretter denne navigation ved hjælp af yderligere logik via JavaScript.
 
 1.  Åbn den .js-fil, du oprettede tidligere, og tilføj de linjer, der er fremhævet i følgende kode. Denne kode gør to ting:
     1.  Det hjælper med at sikre, at brugerne ikke kan navigere direkte fra arbejdsområdet til siden **Vis regnskab**.
     2.  Det etablerer et navigationskontrolelement fra siden **Fakturadetaljer** til siden **Vis regnskab**.
 
-> [!NOTE] 
-> Navnet på siderne og andre kontrolelementer i koden skal være det samme som navnene i arbejdsområdet.
+    > [!NOTE] 
+    > Navnet på siderne og andre kontrolelementer i koden skal være det samme som navnene i arbejdsområdet.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Kravene til dette scenario bekræfter, at der kun skal være fordelinger på lin
                  },
            };
         }
-
+    ```
+    
 2.  Overfør kodefilen til arbejdsområdett ved at vælge fanen **Regel** for at overskrive den tidligere kode
 3.  Klik på **Udført** for at afslutte redigeringstilstand.
 4.  Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
