@@ -14,6 +14,8 @@
               items:
                 - name: Startside for Nyheder eller ændringer i platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platform update 34 (maj 2020)
+                  href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (februar 2020)
@@ -146,41 +148,67 @@
                   items:
                     - name: Oversigt over dataintegration ved brug af Common Data Service
                       href: data-entities/data-integration-cds.md
-                    - name: Synkron tovejsintegration
+                    - name: Integration med dobbeltskrivning
                       items:
                         - name: Startside for dobbeltskrivning
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: Oversigt over dobbeltskrivning
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Organisationshierarki på Common Data Service
-                          href: data-entities/dual-write/organization-mapping.md
-                        - name: Firmaintegration
+                        - name: Konfiguration af dobbeltskrivning
                           items:
-                            - name: Firmabegreb i Common Data Services
-                              href: data-entities/dual-write/company-data.md
-                            - name: Bootstrap med firmadata
-                              href: data-entities/dual-write/bootstrap-company-data.md
-                        - name: Integreret kundemaster
-                          href: data-entities/dual-write/customer-mapping.md
-                        - name: Integreret finans
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Samlet produktoplevelse
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Kreditorintegration
+                            - name: Systemkrav til dobbeltskrivning
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Understøttede scenarier til konfiguration af dobbeltskrivning
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Konfiguration af dobbeltskrivning fra Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                        - name: Tilknytning af begreber mellem apps
                           items:
-                            - name: Integreret kreditormaster
-                              href: data-entities/dual-write/vendor-mapping.md
-                            - name: Skifte mellem kreditordesign
-                              href: data-entities/dual-write/vendor-switch.md
-                        - name: Integrerede lokationer og lagersteder
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                        - name: Integreret momsmaster
-                          href: data-entities/dual-write/tax-mapping.md
-                        - name: Første synkronisering
-                          href: data-entities/dual-write/initial-sync.md
-                        - name: Fejlfinding af dataintegration
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Asynkron envejsintegration
+                            - name: Organisationshierarki på Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Firmaintegration
+                              items:
+                                - name: Firmabegreb i Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Bootstrap med firmadata
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Integreret kundemaster
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Produktintegration
+                              items:
+                                - name: Samlet produktoplevelse
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrerede lokationer og lagersteder
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Finansierings- og momsdata
+                              items:
+                                - name: Adgang til finansierings- og momsreferencedata
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integreret finans
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integreret momsmaster
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Kreditorintegration
+                              items:
+                                - name: Integreret kreditormaster
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Skifte mellem kreditordesign
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Kundeemne til kontanter i dobbeltskrivning
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Interne aktiver til vedligeholdelse
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integreret arbejder, job og position'
+                              href: data-entities/dual-write/integrated-hr.md
+                        - name: Understøttelse af dobbeltskrivning
+                          items:
+                            - name: Understøttelse af Field Service-løsninger og Project Service Automation-løsninger
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Første synkronisering
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Fejlfinding af dataintegration
+                              href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integration med Power Platform-dataintegrator
                       items:
                         - name: Konfigurere et kundeemne til kontantscenarie
                           items:
@@ -324,14 +352,16 @@
               href: database/dbmovement-operations.md
             - name: Hurtige introduktioner
               items:
-                - name: Opdater database
+                - name: Opdatere database
                   href: database/database-refresh.md
-                - name: Eksportér en database
+                - name: Eksportere en database
                   href: database/export-database.md
-                - name: Import af en database
+                - name: Importere en database
                   href: database/import-database.md
                 - name: Tidsbestemt gendannelse af database
                   href: database/database-point-in-time-restore.md
+                - name: Tidsbestemt gendannelse af produktionsdatabasen til et sandkassemiljø
+                  href: database/database-pitr-prod-sandbox.md
             - name: Selvstudier
               items:
                 - name: Opdatering i uddannelsesøjemed
@@ -426,10 +456,12 @@
                       href: deployment/setup-deploy-on-premises-environments.md
                     - name: Installere lokale miljøer (Platform update 12 og senere)
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Installere on-premises-miljøer (Platform update 8 og 11)
+                    - name: Installere lokale miljøer (Platform update 8 og 11)
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
-                    - name: Installationstrin for Retail-kanalkomponenter i et on-premises-miljø.
+                    - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                       href: deployment/deploy-retail-onprem.md
+                    - name: Genbrug den samme AD FS-forekomst til flere miljøer
+                      href: deployment/onprem-reuseadfs.md
                 - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integration med lokale miljøer
@@ -970,25 +1002,35 @@
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Oprette eller opdatere metoder
               href: lifecycle-services/create-methodology.md
-            - name: Forretningsmodeldesigner
-              href: lifecycle-services/bpm-overview.md
-            - name: Forretningsmodeldesigner for forretningsprocesbiblioteker
-              href: lifecycle-services/business-process-libraries-business-process-modeler.md
-            - name: 'Oprette, redigere og gennemse biblioteker for forretningsmodeldesigner'
-              href: lifecycle-services/creating-editing-browsing.md
-            - name: Udføre opgaver i forretningsmodeldesigner
-              href: lifecycle-services/complete-tasks-bpm.md
-            - name: Arbejde med aktivitetsdiagrammer i BPM-biblioteker
-              href: lifecycle-services/using-activity-diagrams.md
-            - name: Synkronisere BPM-biblioteker med Azure DevOps
-              href: lifecycle-services/synchronize-bpm-vsts.md
-            - name: Oprette biblioteker for brugergodkendelsestest ved hjælp af opgaveguider og BPM
-              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Rutediagrammer i forretningsmodeldesigner
-              href: lifecycle-services/flowcharts-business-process-modeler.md
-            - name: Overføre tilpassede forretningsprocesser til forretningsmodeldesigner
-              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
-            - name: Overvågning og diagnosticering
+            - name: Forretningsmodeldesigner (BPM)
+              items:
+                - name: Oversigt over Forretningsmodeldesigner (BPM)
+                  href: lifecycle-services/bpm-overview.md
+                - name: Forretningsmodeldesigner for forretningsprocesbiblioteker
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: 'Oprette, redigere og gennemse biblioteker for forretningsmodeldesigner'
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: Udføre opgaver i forretningsmodeldesigner
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: Arbejde med aktivitetsdiagrammer i BPM-biblioteker
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: Synkronisere BPM-biblioteker med Azure DevOps
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: Oprette biblioteker for brugergodkendelsestest ved hjælp af opgaveguider og BPM
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: Rutediagrammer i forretningsmodeldesigner
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: Overføre tilpassede forretningsprocesser til forretningsmodeldesigner
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Serviceanmodninger
+              items:
+                - name: Skyoperationer og -vedligeholdelse
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Sende serviceanmodninger til Dynamics Service Engineering-teamet
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: Ofte stillede spørgsmål om vindue for planlagt vedligeholdelse
+                  href: lifecycle-services/planned-maintenance-window-faq.md
+            - name: Overvågning og diagnose
               href: lifecycle-services/monitoring-diagnostics.md
             - name: Genstarte miljøtjenester
               href: lifecycle-services/restart-environment-services.md
@@ -1282,14 +1324,8 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Få support til Finance and Operations drevet af 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Sende anmodninger til Dynamics Service Engineering-teamet
-              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
             - name: Konfigurere teknisk support til Finance and Operations
               href: lifecycle-services/support-experience.md
-            - name: Ofte stillede spørgsmål om vindue for planlagt vedligeholdelse
-              href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Skyoperationer og -vedligeholdelse
-              href: lifecycle-services/cloud-operations-servicing.md
             - name: Administrere supportoplevelser for Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemadministration

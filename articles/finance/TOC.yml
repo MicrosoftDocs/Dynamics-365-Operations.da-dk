@@ -10,8 +10,6 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Tilmelde dig prøveabonnementer
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: Indsigt i debitorbetaling (prøveversion)
-              href: accounts-receivable/payment-insights-overview.md
             - name: One Version-tjenesteopdateringer
               items:
                 - name: Oversigt over One Version-tjenesteopdateringer
@@ -26,11 +24,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: Anvende opdateringer i skybaserede miljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere serviceopdateringer
+                - name: Anvende opdateringer til lokale installationer
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurere tjenesteopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
-                - name: Afbryde serviceopdateringer midlertidigt
+                - name: Afbryde tjenesteopdateringer midlertidigt
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
-                - name: Få besked om serviceopdateringer
+                - name: Få besked om tjenesteopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
@@ -70,20 +70,24 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance version 10.0.10 (maj 2020)
+                      href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance version 10.0.9 (april 2020)
                       href: get-started/whats-new-changed-10-0-9.md
                     - name: Finance version 10.0.8 (februar 2020)
                       href: get-started/whats-new-changed-10-0-8.md
-                    - name: Finance version 10.0.7 (januar 2020)
-                      href: get-started/whats-new-changed-10-0-7.md
-                - name: Fjernede eller udfasede funktioner
+            - name: Fjernede eller udfasede funktioner
+              items:
+                - name: Fjernede eller udfasede funktioner i Dynamics 365 Finance
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Fjernede eller udfasede funktioner i tidligere versioner
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-                - name: 'AX 2012-funktioner, der er udsat'
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-                - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+            - name: 'AX 2012-funktioner, der er udsat'
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
+              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+            - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsressourcer
               items:
                 - name: Hjælp-system
@@ -312,7 +316,9 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Fastlægge gebyrer for debitorbetaling
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
-            - name: Debitorposteringsprofiler
+            - name: Indsigt i debitorbetaling (prøveversion)
+              href: accounts-receivable/payment-insights-overview.md
+            - name: 'Debitor, posteringsprofiler'
               href: accounts-receivable/customer-posting-profiles.md
             - name: Kopiere debitorer ved hjælp af delte nummerserier
               href: accounts-receivable/copy-customer.md
@@ -1794,6 +1800,8 @@
                           href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
                         - name: Definere HSN-koder og serviceregnskabskoder
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                        - name: Oprette momssatstype
+                          href: localizations/apac-ind-GST-create-tax-rate-type.md
                         - name: Oprette hovedkonti til GST-bogføringstypen
                           href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
                         - name: Oprette momsafregningsperiode
@@ -1922,17 +1930,18 @@
                   items:
                     - name: Oversigt over momsprogram
                       href: general-ledger/tax-engine.md
-                      items:
-                        - name: Oprette momskomponenter
-                          href: localizations/tax-engine-create-tax-component.md
-                        - name: Importere konfiguration
-                          href: general-ledger/tax-engine-import-configuration.md
-                        - name: Anvendelse af momsprogram
-                          href: general-ledger/tax-engine-applicability.md
-                        - name: Integration af momsprogram
-                          href: general-ledger/tax-engine-integration.md
-                        - name: Udvidelse af momsprogram
-                          href: general-ledger/extend-tax-engine-configurations.md
+                    - name: Importere konfiguration
+                      href: general-ledger/tax-engine-import-configuration.md
+                    - name: Avanceret formeldesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                    - name: Anvendelse af momsprogram
+                      href: general-ledger/tax-engine-applicability.md
+                    - name: Oprette momskomponenter
+                      href: localizations/tax-engine-create-tax-component.md
+                    - name: Integration af momsprogram
+                      href: general-ledger/tax-engine-integration.md
+                    - name: Udvidelse af momsprogram
+                      href: general-ledger/extend-tax-engine-configurations.md
                 - name: Ofte stillede spørgsmål om momsgrænser
                   href: localizations/apac-ind-tax-thresholds.md
                 - name: Lageroverførsler
@@ -2357,50 +2366,56 @@
                       href: localizations/rus-incoming-VAT-restoring.md
                 - name: Anlægsaktiver
                   items:
-                    - name: Administrere anlægsaktiver
-                      href: localizations/rus-fixed-assets.md
                     - name: Oversigt over anlægsaktiver
-                      hfre: localizations/rus-fixed-assets-overview.md
+                      href: localizations/rus-fixed-assets-overview.md
                     - name: Konfigurere anlægsaktiver
-                      href: localizations/rus-set-up-fixed-assets.md
-                    - name: Anskaffe anlægsaktiver og igangsætte dem
-                      href: localizations/rus-fixed-asset-acquisition.md
-                    - name: Registrere erhvervelse af anlægsaktiver
-                      href: localizations/rus-register-acquisition.md
-                    - name: Oprette og bogføre budgetkladder for anskaffelser af anlægsaktiver
-                      href: localizations/rus-post-budget-fixed-asset-acquisition.md
-                    - name: Oprette en transaktion for leje af anlægsaktiv og en returnering fra leje
-                      href: localizations/rus-fixed-asset-leasing.md
-                    - name: Optælling af anlægsaktiver
-                      href: localizations/rus-fixed-assets-counting.md
-                    - name: Værdiregulering af valuta for anlægsaktiver
-                      href: localizations/rus-fixed-asset-currency-revaluation.md
-                    - name: Vedligehold anlægsaktiver
-                      href: localizations/rus-maintain-fixed-assets.md
-                    - name: Værdireguler omkostning og afskrivning for anlægsaktiver
-                      href: localizations/rus-fixed-assets-revaluation.md
-                    - name: Delvis adskillelse af anlægsaktiv (afvikling)
-                      href: localizations/rus-fixed-assets-disassembly.md
-                    - name: 'Sælg, kassér, og afskriv aktiver'
-                      href: localizations/rus-sell-dispose-write-off-fixed-assets.md
-                    - name: Konfigurer og lokationer og nummerering for anlægsaktiver
-                      href: localizations/rus-fixed-assets-locations-numbering.md
-                    - name: Konfigurer afskrivning
-                      href: localizations/rus-depreciation-setup.md
-                    - name: Afskrivningsmetoder
-                      href: localizations/rus-depreciation-methods.md
-                    - name: Straksafskrivninger
-                      href: localizations/rus-bonus-depreciation.md
-                    - name: Beregn afskrivning
-                      href: localizations/rus-depreciation-calculation.md
-                    - name: Overfør anlægsaktiver
-                      href: localizations/rus-fixed-asset-transfer.md
-                    - name: Formularer til samlet udskrivning af anlægsaktiver
-                      href: localizations/printing-forms-fixed-assets.md
-                    - name: Regnskab for arbejdstøj/specielrigning (Rusland)
-                      href: localizations/rus-working-clothes-instruments-accounting.md
-                    - name: Ikke-værdifulde anlægsaktiver (NVFAs) (Rusland)
-                      href: localizations/rus-not-valuable-assets.md
+                      items:
+                        - name: Konfigurere anlægsaktiver
+                          href: localizations/rus-set-up-fixed-assets.md
+                        - name: Konfigurere afskrivning
+                          href: localizations/rus-depreciation-setup.md
+                        - name: Afskrivningsmetoder
+                          href: localizations/rus-depreciation-methods.md
+                        - name: Straksafskrivninger
+                          href: localizations/rus-bonus-depreciation.md
+                        - name: Konfigurere lokationer og nummerering for anlægsaktiver
+                          href: localizations/rus-fixed-assets-locations-numbering.md
+                    - name: Arbejde med anlægsaktiver
+                      items:
+                        - name: Oprette anlægsaktiver
+                          href: localizations/rus-fixed-assets.md
+                        - name: Registrere erhvervelse af anlægsaktiver
+                          href: localizations/rus-register-acquisition.md
+                        - name: Anskaffe anlægsaktiver og igangsætte dem
+                          href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Beregne afskrivning
+                          href: localizations/rus-depreciation-calculation.md
+                        - name: Delvis adskillelse af anlægsaktiv (afvikling)
+                          href: localizations/rus-fixed-assets-disassembly.md
+                        - name: 'Sælge, kassere og afskrive aktiver'
+                          href: localizations/rus-sell-dispose-write-off-fixed-assets.md
+                        - name: Oprette en transaktion for leje af anlægsaktiv og en returnering fra leje
+                          href: localizations/rus-fixed-asset-leasing.md
+                        - name: Vedligeholde anlægsaktiver
+                          href: localizations/rus-maintain-fixed-assets.md
+                        - name: Optælling af anlægsaktiver
+                          href: localizations/rus-fixed-assets-counting.md
+                        - name: Værdiregulering af valuta for anlægsaktiver
+                          href: localizations/rus-fixed-asset-currency-revaluation.md
+                        - name: Værdiregulere omkostning og afskrivning for anlægsaktiver
+                          href: localizations/rus-fixed-assets-revaluation.md
+                        - name: Oprette og bogføre budgetkladder for anskaffelser af anlægsaktiver
+                          href: localizations/rus-post-budget-fixed-asset-acquisition.md
+                        - name: Overføre anlægsaktiver
+                          href: localizations/rus-fixed-asset-transfer.md
+                    - name: Ikke-værdifulde anlægsaktiver og arbejdstøj
+                      items:
+                        - name: Ikke-værdifulde anlægsaktiver (Rusland)
+                          href: localizations/rus-not-valuable-assets.md
+                        - name: Regnskab for arbejdstøj/specielrigning (Rusland)
+                          href: localizations/rus-working-clothes-instruments-accounting.md
+                        - name: Formularer til samlet udskrivning af anlægsaktiver
+                          href: localizations/printing-forms-fixed-assets.md
                 - name: Kreditor og debitor
                   items:
                     - name: Kreditnota som rettelse (Rusland)
@@ -2427,6 +2442,14 @@
                           href: localizations/rus-register-transactions-with-reference-to-agreements.md
                         - name: Forespørgsler og rapporter med aftaler
                           href: localizations/rus-inquiries-reports-agreements.md
+                    - name: Transaktioner via mellemled
+                      items:
+                        - name: Oversigt over transaktioner via mellemled
+                          href: localizations/rus-transactions-through-intermediary.md
+                        - name: Køb på provision
+                          href: localizations/rus-purchases-on-commission.md
+                        - name: Salg på provision
+                          href: localizations/rus-sales-on-commission.md
                 - name: Lager
                   items:
                     - name: Varer undervejs fra leverandør
@@ -2533,6 +2556,8 @@
                   href: localizations/emea-swe-sie-standard-report.md
                 - name: Importere betalingsformater
                   href: localizations/emea-swe-payment-formats-import.md
+                - name: Momsafregningsrapport for Sverige
+                  href: localizations/emea-swe-sales-tax-payment-report-sweden.md
             - name: Schweiz
               items:
                 - name: Oversigt for Schweiz
@@ -2561,20 +2586,24 @@
                   href: localizations/united-kingdom.md
                 - name: 'Konstruktionsbranchen, skema'
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Oprette en kredit på udligningsrabatten
-                  href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: 'Oprette en indkøbsordre, som indeholder varer, der skal betales modtagermoms af'
-                  href: localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: 'Oprette en salgsordre, som indeholder varer, der skal betales modtagermoms af'
-                  href: localizations/tasks/gb-00002-sales-order.md
-                - name: Konfigurere momsgrupper for varesalg til modtagermoms
-                  href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Konfigurere varegrupper, regler og parametre for modtagermoms'
-                  href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Konfigurere momsgrupper til modtagermoms
-                  href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Modtagermoms
+                  items:
+                    - name: Oprette en kredit på udligningsrabatten
+                      href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+                    - name: 'Oprette en indkøbsordre, som indeholder varer, der skal betales modtagermoms af'
+                      href: localizations/tasks/purchase-order-reverse-charge-vat.md
+                    - name: 'Oprette en salgsordre, som indeholder varer, der skal betales modtagermoms af'
+                      href: localizations/tasks/gb-00002-sales-order.md
+                    - name: Konfigurere momsgrupper for varesalg til modtagermoms
+                      href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+                    - name: 'Konfigurere varegrupper, regler og parametre for modtagermoms'
+                      href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+                    - name: Konfigurere momsgrupper til modtagermoms
+                      href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
                 - name: Gøre moms digital
                   href: localizations/emea-gbr-mtd-vat-integration.md
+                - name: Rapport over statistik for betalingspraksis
+                  href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
               items:
                 - name: Oversigt for USA
@@ -3141,6 +3170,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: 'Vælge datamodeldefinitioner, når du opretter formater'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Udvidede filtreringsindstillinger til søgning efter konfigurationer i det globale lager
+                  href: ../finance/localizations/enhanced-filtering-global-repo.md
                 - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                 - name: (ER) Datakilder på tværs af firma i elektronisk rapportering
