@@ -22,11 +22,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Anvende opdateringer i skybaserede miljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere serviceopdateringer
+                - name: Anvende opdateringer til lokale installationer
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere tjenesteopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Afbryde serviceopdateringer midlertidigt
+                - name: Afbryde tjenesteopdateringer midlertidigt
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Få besked om serviceopdateringer
+                - name: Få besked om tjenesteopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
@@ -60,7 +62,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Systemkrav til lokale installationer
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
-                - name: Installationstrin for Retail-kanalkomponenter i et on-premises-miljø.
+                - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Købe Finance and Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
@@ -84,12 +86,12 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce version 10.0.10 (maj 2020)
+                      href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce version 10.0.9 (april 2020)
                       href: get-started/whats-new-10-0-9.md
                     - name: Commerce version 10.0.8 (februar 2020)
                       href: get-started/whats-new-10-0-8.md
-                    - name: Retail version 10.0.7 (januar 2020)
-                      href: get-started/whats-new-10-0-7.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Finance and Operations
@@ -214,7 +216,7 @@
                   href: set-up-activation-accounts-validate-devices-hq.md
                 - name: POS-enhedsaktivering
                   href: dev-itpro/retail-device-activation.md
-                - name: Hjælpe med at beskytte POS i skyen i delte miljøer
+                - name: Hjælpe med at beskytte Cloud POS i delte miljøer
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfiguration og installation af Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
@@ -336,6 +338,8 @@
                       href: pos-operations.md
                     - name: Enhedsaktivering af en brugerdefineret Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
+                    - name: Aktivere Azure Active Directory-godkendelse for POS-login
+                      href: aad-pos-logon.md
                     - name: Skærmlayouts til demodata i MPOS og Cloud POS
                       href: demo-data.md
                     - name: Produkt- og kundesøgning i POS
@@ -368,6 +372,8 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Tilslutte eksterne enheder til POS
                           href: define-maintain-channel-clients-registers-hw-stations.md
+                        - name: Sundhedskontrol af eksterne enheder og tjenester til POS
+                          href: pos-healthcheck.md
                     - name: Skærmlayouts
                       items:
                         - name: Skærmlayouts til demodata i MPOS/CPOS
@@ -518,7 +524,7 @@
                       href: create-variant-group.md
                 - name: Oprette et nyt produkt
                   items:
-                    - name: Oversigt over oprette et nyt produkt
+                    - name: Oprette et nyt produkt i Commerce
                       href: create-new-product.md
                     - name: Administrere produktkategorier og -produkter
                       href: category-management-product-creation.md
@@ -570,6 +576,8 @@
                   href: retail-shipping-discount.md
                 - name: Konfigurere kuponer
                   href: retail-coupons.md
+                - name: Få vist rabatter i POS
+                  href: discounts-pos.md
                 - name: Prisrapporter
                   href: price-report.md
                 - name: Oprette kanalspecifikke samhandelsaftaler
@@ -582,8 +590,6 @@
                   href: product-recommendations.md
                 - name: Aktivere ADLS i et Dynamics 365 Commerce-miljø
                   href: enable-ADLS-environment.md
-                - name: Tilføje lister med produktanbefalinger til e-handelssider
-                  href: add-reco-list-to-page.md
                 - name: Aktivere produktanbefalinger
                   href: enable-product-recommendations.md
                 - name: Tilpassede anbefalinger
@@ -592,20 +598,22 @@
                       href: personalized-recommendations.md
                     - name: Fravælge tilpassede anbefalinger
                       href: personalization-gdpr.md
-                - name: Oprette overvågede lister med produktanbefalinger
-                  href: create-editorial-recommendation-lists.md
-                - name: Administrere resultater for AI-ML-baserede produktanbefalinger
+                - name: Tilføje lister med anbefalinger til et e-handelswebsted
+                  href: add-reco-list-to-page.md
+                - name: POS-oplevelser
+                  items:
+                    - name: Tilføje produktanbefalinger på POS
+                      href: product.md
+                    - name: Føje anbefalinger til transaktionsskærmen
+                      href: add-recommendations-control-pos-screen.md
+                - name: Justere resultater for AI-ML-baserede produktanbefalinger
                   href: modify-product-recommendation-results.md
-                - name: Få produktanbefalinger ved hjælp af demo-data
+                - name: Oprette overvågede produktanbefalinger manuelt
+                  href: create-editorial-recommendation-lists.md
+                - name: Oprette anbefalinger ved hjælp af demodata
                   href: product-recommendations-demo-data.md
                 - name: Ofte stillede spørgsmål om produktanbefalinger
                   href: faq-recommendations.md
-                - name: POS-oplevelser
-                  items:
-                    - name: Produktanbefalinger på POS
-                      href: product.md
-                    - name: Tilføje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder
-                      href: add-recommendations-control-pos-screen.md
             - name: Vurderinger og anmeldelser
               items:
                 - name: Oversigt over vurderinger og anmeldelser
@@ -656,6 +664,8 @@
               items:
                 - name: Oprette en callcenter-ordre
                   href: tasks/create-call-center-orders.md
+                - name: Skifte leveringsmåde til i POS
+                  href: POS-change-delivery-mode.md
             - name: Fordelt ordrestyring
               items:
                 - name: DOM-oversigt
@@ -768,8 +778,14 @@
                   href: associate-site-online-store.md
                 - name: Administrere robots.txt-filer
                   href: manage-robots-txt-files.md
+                - name: Masseoverføre omdirigeringer af URL-adresser
+                  href: upload-bulk-redirects.md
+                - name: Konfigurere en B2C-lejer i Commerce
+                  href: set-up-B2C-tenant.md
                 - name: Konfigurere brugerdefinerede sider til brugerlogon
                   href: custom-pages-user-logins.md
+                - name: Konfigurere flere B2C-lejere i et Commerce-miljø
+                  href: configure-multi-B2C-tenants.md
                 - name: 'Tilføje understøttelse af et netværk, der leverer indhold (CDN)'
                   href: add-cdn-support.md
                 - name: Aktivere registrering af lokationsbaseret lager
@@ -864,6 +880,20 @@
                       href: customize-site-navigation.md
                     - name: Oprette en side-URL-adresse
                       href: create-page-URL.md
+            - name: Administrere digitale aktiver
+              items:
+                - name: Oversigt over styring af digitale aktiver
+                  href: dam-overview.md
+                - name: Overføre billeder
+                  href: dam-upload-images.md
+                - name: Overføre video
+                  href: dam-upload-video.md
+                - name: Overfør andre filer end billeder og videoer
+                  href: dam-upload-files.md
+                - name: Beskære billeder
+                  href: dam-crop-images.md
+                - name: Tilpasse billedets fokuspunkter
+                  href: dam-custom-focal-point.md
             - name: Gøre dit websted kompatibelt
               items:
                 - name: Oversigt over overholdelse
@@ -1824,10 +1854,12 @@
                   items:
                     - name: Systemkrav
                       href: e-commerce-extensibility/system-requirements.md
-                    - name: Opsætte et udviklingsmiljø
+                    - name: Konfigurere et udviklingsmiljø
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurere en fil til et udviklingsmiljø (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Konfigurere Azure DevOps-kodedeling og oprette en build-pipeline
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Platformsoversigt
                   items:
                     - name: Arkitektonisk oversigt
@@ -1912,11 +1944,15 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Delingstilstand på tværs af moduler
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Tilsidesættelser af datahandlinger
+                      href: e-commerce-extensibility/data-action-overrides.md
+                    - name: Datahandlings-hooks
+                      href: e-commerce-extensibility/data-action-hooks.md
                 - name: Udvikle temaer
                   items:
                     - name: Oversigt over temaer
                       href: e-commerce-extensibility/theming.md
-                    - name: Opret et tema
+                    - name: Oprette et tema
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temaindstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
@@ -2062,6 +2098,8 @@
                   href: dev-itpro/commerce-application-insights.md
                 - name: Oprette asynkrone Commerce (CRT)-API'er i din forretningslogik
                   href: dev-itpro/async-commerce-extension.md
+                - name: Forlængede kolonner i kanaldatabasen
+                  href: dev-itpro/extended-columns.md
             - name: Udvidelse for betalingsconnector
               items:
                 - name: Oprette integration af betaling for en betalingsterminal
