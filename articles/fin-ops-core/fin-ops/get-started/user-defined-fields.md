@@ -1,9 +1,9 @@
 ---
 title: Oprette og arbejde med brugerdefinerede felter
-description: Dette emne viser, hvordan brugere kan oprette brugerdefinerede felter for at skræddersy programmet, så det passer til virksomheden.
+description: I dette emne vises, hvordan du kan oprette brugerdefinerede felter gennem brugergrænsefladen for at skræddersy programmet, så det passer til din virksomhed.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812499"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112330"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Oprette og arbejde med brugerdefinerede felter
 
 [!include [banner](../includes/banner.md)]
 
-Selvom der findes et omfattende sæt af felter klar til brug til administration af en lang række forretningsprocesser, er der nogle gange et behov for, at et firma kan spore flere oplysninger i systemet. For at imødekomme dette behov kan du oprette brugerdefinerede felter for at skræddersy programmet til virksomhedens behov, forudsat at du har rettigheder til funktionen.
+Selvom der findes et omfattende sæt af felter klar til brug til administration af en lang række forretningsprocesser, er der nogle gange et behov for, at et firma kan spore flere oplysninger i systemet. Mens programmører kan bruges til at tilføje disse felter som filtypenavne i udviklingsværktøjerne, kan felter tilføjes direkte fra brugergrænsefladen i funktionen til brugerdefinerede felter, hvilket giver dig mulighed for at skræddersy programmet, så det passer til din virksomhed ved hjælp af din webbrowser.
 
-Muligheden for at tilføje brugerdefinerede felter findes i platformsopdatering 13 og nyere.
+Muligheden for at tilføje brugerdefinerede felter findes i platformsopdatering 13 og nyere. Kun brugere med specielle tilladelser har adgang til denne funktion.
 
 Denne video viser, hvor let det er at føje et brugerdefineret felt til en side: [Tilføje brugerdefinerede felter](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -159,3 +159,7 @@ Af ydelsesmæssige og tekniske årsager tillader kun tabeller, der opfylder føl
 - Tabellen kan ikke udvide en anden tabel.
 - Tabellen kan ikke markeres som en systemtabel.
 - Tabellen må ikke være en midlertidig tabel.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jeg henvise til brugerdefinerede felter fra udviklingsværktøjerne?  
+
+Brugerdefinerede felter kan kun administreres via brugergrænsefladen, og der kan ikke henvises til dem ved hjælp af en kode. 

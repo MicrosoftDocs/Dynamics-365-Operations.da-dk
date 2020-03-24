@@ -3,7 +3,7 @@ title: Startside for lokal installation
 description: Dette emne indeholder oplysninger og links til indhold om lokale installationer.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
-ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
+ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
+ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090583"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3099724"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal installation
 
@@ -55,8 +55,9 @@ Du kan installere Dynamics 365 Finance + Operations (i det lokale miljø). Når 
 - [Klientens internetforbindelse](../user-interface/client-disconnected.md)
 - [Anvende opdateringer til lokale installationer](apply-updates-on-premises.md)
 - [Installere lokale miljøer på ny](redeploy-on-prem.md)
+- [Genbrug den samme AD FS-forekomst til flere miljøer](onprem-reuseadfs.md)
 
-## <a name="commerce"></a>Commerce
+## <a name="commerce"></a>Handel
 - [Commerce-egenskaber, som er tilgængelige i lokale installationer](../../../retail/retail-onprem.md)
 - [Installationstrin for Retail-kanalkomponenter i et on-premises-miljø.](deploy-retail-onprem.md)
 - [Konfigurere, installere og aktivere Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)

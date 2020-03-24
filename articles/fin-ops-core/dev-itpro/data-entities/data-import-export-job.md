@@ -3,7 +3,7 @@ title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184548"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124606"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -191,8 +191,11 @@ Når oprydningsprocessen planlægges, skal følgende parametre angives for at de
 
 -   **Antal dage, historikken skal bevares** – Denne indstilling bruges til at kontrollere den mængde udførelseshistorik, der skal bibeholdes. Det er angivet i antal dage. Når oprydningsjobbet er planlagt som et tilbagevendende batchjob, fungerer denne indstilling som en tidsramme, der bevæger sig kontinuerligt, og som altid efterlader historikken intakt i det angivne antal dage, mens resten slettes. Standarden er 7 dage.
 
--   **Antal timer til at udføre jobbet** – Afhængigt af den mængde historik, der skal ryddes op, kan den samlede udførelsestid for oprydningsjobbet variere fra et par minutter til et par timer. Da oprydning af de nævnte tabeller skal foretages, når der ikke er nogen anden datahåndteringsaktivitet i systemet, bliver det vigtigt at sikre, at oprydningsjobbet udføres og afsluttes, før forretningsaktiviteten påbegyndes.
+-   **Antal timer til at udføre jobbet** – Afhængigt af den mængde historik, der skal ryddes op, kan den samlede udførelsestid for oprydningsjobbet variere fra et par minutter til et par timer. Dette parameter skal angives til det antal timer, som jobbet skal udføre. Når oprydningsjobbet er blevet udført i det angivne antal timer, afsluttes jobbet, og oprydningen fortsættes, næste gang det køres på grundlag af gentagelsesplanen.
 
     Der kan angives en maksimal gennemførelsestid ved at angive en maksimumgrænse for det antal timer, jobbet skal køre, ved hjælp af denne indstilling. Oprydningslogikken går gennem ét jobudførelses-id ad gangen i en kronologisk arrangeret sekvens, med det ældste først for oprydning af relateret udførelseshistorik. Det vil stoppe plukning af nye udførelses-id'er til oprydning, når den resterende udførelsesvarighed er inden for de sidste 10 % af den angivne varighed. I nogle tilfælde forventes det, at oprydningsjobbet fortsætter ud over den angivne maksimale tid. Dette afhænger i høj grad af antallet af poster, der skal slettes for det aktuelle udførelses-id, som blev startet, før tærsklen på 10 % blev nået. Den oprydning, der blev startet, skal være fuldført for at sikre dataintegriteten, hvilket betyder, at oprydning vil fortsætte på trods af overskridelse af den angivne grænse. Når dette er gennemført, bliver nye udførelses-id'er ikke opsamlet, og oprydningsjobbet er fuldført. Den resterende udførelseshistorik, der ikke blev ryddet op på grund af manglende gennemførelsestid, vil blive medtaget, næste gang oprydningsjobbet er planlagt. Standard- og minimumværdien for denne indstilling er angivet til 2 timer.
 
 -   **Tilbagevendende batch** – Oprydningsjobbet kan køres som en manuel engangsudførelse, eller det kan også planlægges til tilbagevendende udførelse i batch. Batchen kan planlægges ved hjælp af indstillingerne **Kør i baggrunden**, som er standardbatchopsætning.
+
+> [!NOTE]
+> Hvis posterne i de midlertidige tabeller ikke er fuldstændig renset, skal du sikre dig, at oprydningsjobbet er planlagt til at skulle køre som en gentagelse. Som forklaret ovenfor vil jobbet i enhver oprydningskørsel alene fjerne så mange kørsels-id'er, som det er muligt inden for de opgivne maksimum timer. For at fortsætte oprydningen af eventuelle tilbageværende midlertidige poster, skal jobbet planlægges til at køre med jævne mellemrum.

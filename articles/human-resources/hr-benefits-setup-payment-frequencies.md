@@ -1,6 +1,6 @@
 ---
-title: Konfigurere betalingsfrekvenser
-description: ''
+title: Konfigurere betalingshyppigheder
+description: Microsoft Dynamics 365 Human Resources bruger betalingsfrekvenser til at beregne den årlige frynsegodeløn, bestemme det beløb for frynsegodepræmie, som medarbejderen betaler hver lønperiode, og definere de frekvensbetalinger, der foretages til providere.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5fe0a16c4abbb9241fcdac88fd56e92bf04788c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b786485ab53dcdb3b7e5ff02562f674a7f8e6eae
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008545"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092585"
 ---
-# <a name="set-up-payment-frequencies"></a>Konfigurere betalingsfrekvenser
+# <a name="set-up-payment-frequencies"></a>Konfigurere betalingshyppigheder
 
 [!include [banner](includes/preview-feature.md)]
 

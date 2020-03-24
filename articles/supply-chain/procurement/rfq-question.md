@@ -16,17 +16,16 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 75bf839fbda034609eb2a9e36520ae113f4701ec
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 3e45d6e69cc0f452d435f267fc35d56b43965d74
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015436"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124336"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Når dit kontor har sendt en tilbudsanmodning, har leverandørerne nogle gange spørgsmål, der vedrører anmodningen. Leverandører, der har spørgsmål til en RFP, kan sende deres spørgsmål og læse svarene på siden til **Kreditorsamarbejde**, når du gør siden tilgængelig for dem. Når leverandørspørgsmål er accepteret, er **Spørgsmål og svar** tilgængelige på siden **Bud på tilbudsanmodning** i **Kreditorsamarbejde** og for dit kontor via siden **Tilbudsanmodning** i **Spørgsmål og svar**. 
 

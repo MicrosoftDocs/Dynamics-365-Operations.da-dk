@@ -1,6 +1,6 @@
 ---
-title: Oversigt
-description: ''
+title: Overblik
+description: Brugervejledningen til Dynamics 365 Human Resources indeholder oplysninger om opsætning af personale, konfiguration af kompensation og frynsegoder til medarbejderne og administration af medarbejdere.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008478"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091718"
 ---
-# <a name="overview"></a>Oversigt
+# <a name="overview"></a>Overblik
 
 Brugervejledningen til Dynamics 365 Human Resources indeholder oplysninger om opsætning af personale, konfiguration af kompensation og frynsegoder til medarbejderne og administration af medarbejdere.
 
 ## <a name="set-up-human-resources"></a>Konfigurere personale
 
 [Konfigurere personaleparametre](hr-setup-parameters.md)</br>
-[Konfigurere delte personaleparametre](hr-setup-shared-parameters.md)</br>
-[Konfigurere arbejdsgange for personale](hr-setup-workflows.md)</br>
-[Forstå dato- og klokkeslætsfelter](hr-setup-date-time-fields.md)</br>
+[Konfigurere delte Human Resources-parametre](hr-setup-shared-parameters.md)</br>
+[Konfigurere arbejdsgange for Human Resources](hr-setup-workflows.md)</br>
+[Forstå dato- og tidsfelter](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurere organisationsindstillinger
 
@@ -72,8 +72,8 @@ Brugervejledningen til Dynamics 365 Human Resources indeholder oplysninger om op
 [Udarbejde en kompensationsstruktur og -plan](hr-compensation-structure.md)</br>
 [Oprette planer for fast løn](hr-compensation-fixed-plans.md)</br>
 [Oprette planer for variabel kompensation](hr-compensation-variable-plans.md)</br>
-[Melde medarbejdere til en plan for fast løn](hr-compensation-enroll-employees-fixed.md)</br>
-[Melde medarbejdere til en variabel kompensationsplan](hr-compensation-enroll-employees-variable.md)</br>
+[Tilmelde medarbejdere til en plan for fast løn](hr-compensation-enroll-employees-fixed.md)</br>
+[Tilmelde medarbejdere til en variabel kompensationsplan](hr-compensation-enroll-employees-variable.md)</br>
 [Definere kompensationsproces og beregne resultater](hr-compensation-define-process.md)</br>
 [Behandle kompensationsplaner](hr-compensation-process.md)</br>
 
@@ -95,25 +95,25 @@ Brugervejledningen til Dynamics 365 Human Resources indeholder oplysninger om op
 [Overblik](hr-leave-and-absence-overview.md)</br>
 [Konfigurere parametre for orlov og fravær](hr-leave-and-absence-parameters.md)</br>
 [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)</br>
-[Oprette en arbejdsgang for orlovsanmodninger](hr-leave-and-absence-workflow.md)</br>
+[Oprette en arbejdsgang for orlovsanmodning](hr-leave-and-absence-workflow.md)</br>
 [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md)</br>
-[Oprette en orlovs- og fraværsplan](hr-leave-and-absence-plans.md)</br>
+[Oprette en plan for orlov og fravær](hr-leave-and-absence-plans.md)</br>
 [Tildele arbejdere til en orlovsplan](hr-leave-and-absence-enroll.md)</br>
-[Periodisere orlovs- og fraværsplaner](hr-leave-and-absence-accrue.md)</br>
-[Få vist analyse for orlov og fravær](hr-leave-and-absence-analytics.md)</br>
+[Periodisere planer for orlov og fravær](hr-leave-and-absence-accrue.md)</br>
+[Vis analyse af orlov og fravær](hr-leave-and-absence-analytics.md)</br>
 [Administrere anmodninger om orlov og fravær](hr-employee-self-service-manage-requests.md)</br>
-[Anmode om fridag](hr-employee-self-service-request-time-off.md)</br>
-[Få vist team- og firmakalendere](hr-employee-self-service-calendar.md)</br>
+[Anmode om fravær](hr-employee-self-service-request-time-off.md)</br>
+[Vis team- og firmakalendere](hr-employee-self-service-calendar.md)</br>
 
 ## <a name="develop-employees"></a>Udvikle medarbejdere
 
 [Oversigt over performancestyring](hr-develop-performance-management-overview.md)</br>
-[Justere kvalifikationer for arbejdsstyrke](hr-develop-skills.md)</br>
-[Føje til performancekladden](hr-develop-add-performance-journal.md)</br>
+[Justere arbejdsstyrkens færdigheder](hr-develop-skills.md)</br>
+[Tilføje til din performancekladde](hr-develop-add-performance-journal.md)</br>
 [Oprette et mål](hr-develop-create-goal.md)</br>
 [Oprette en performancegennemgang](hr-develop-create-performance-review.md)</br>
 
-## <a name="create-courses"></a>Opret kurser
+## <a name="create-courses"></a>Oprette kurser
 
 [Konfigurere kurser](hr-learning-courses.md)</br>
 [Spørgeskemaoversigt](hr-learning-questionnaires.md)</br>
@@ -122,8 +122,8 @@ Brugervejledningen til Dynamics 365 Human Resources indeholder oplysninger om op
 [Udsende spørgeskemaer ved hjælp af planlægning](hr-learning-distribute-questionnaires-scheduling.md)</br>
 [Vis spørgeskemaresultater](hr-learning-evaluate-questionnaire-results.md)</br>
 [Analysere spørgeskemaresultater](hr-learning-analyze-questionnaire-results.md)</br>
-[Opret et åbent spørgsmål](hr-learning-create-open-ended-question.md)</br>
-[Opret et lukket spørgsmål](hr-learning-create-closed-ended-question.md)</br>
+[Oprette et åbent spørgsmål](hr-learning-create-open-ended-question.md)</br>
+[Oprette et lukket spørgsmål](hr-learning-create-closed-ended-question.md)</br>
 [Oprette et afhængigt spørgsmål](hr-learning-depending-question.md)</br>
 
 

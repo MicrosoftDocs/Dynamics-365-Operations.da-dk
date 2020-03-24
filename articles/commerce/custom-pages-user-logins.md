@@ -3,7 +3,7 @@ title: Konfigurere brugerdefinerede sider til brugerlogon
 description: Dette emne beskriver, hvordan du bygger tilpassede sider i Microsoft Dynamics 365 Commerce, der håndterer tilpasset logon for brugere af Azure Active Directory (Azure AD) Business-to-Consumer-lejere (B2C).
 author: brianshook
 manager: annbe
-ms.date: 12/05/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fe2a716d370c350c0c7e034835ff755f1ec9c6a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001938"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096791"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -199,11 +199,19 @@ Når du har opdateret global.json-filen og publiceret dine ændringer, vises den
 
 [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
 
+[Konfigurere en onlinebutikskanal](online-stores.md)
+
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 
-[Administrer robots.txt-filer](manage-robots-txt-files.md)
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
+
+[Masseoverføre omdirigeringer af URL-adresser](upload-bulk-redirects.md)
+
+[Konfigurere en B2C-lejer i Commerce](set-up-B2C-tenant.md)
+
+[Konfigurere flere B2C-lejere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 

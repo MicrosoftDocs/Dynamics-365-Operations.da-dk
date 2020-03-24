@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083012"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113914"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregning af lagertilgængelighed for detailkanaler
 
@@ -41,7 +41,7 @@ I dette emne forklares de datasynkroniseringsprocesser, der kan køres hyppigt m
 Du kan bruge følgende API'er til at få vist lagertilgængeligheden for et produkt, når kunderne handler på et e-Commerce-websted.
 
 - **GetEstimatedAvailability** – Brug denne API til at få oplyst lagertilgængelighed for varen i e-Commerce-kanalens lagersted eller alle de lagersteder, der er knyttet til konfigurationen af opfyldelsesgruppen for e-Commerce-kanalen. Denne API kan også bruges til lagersteder i et specifikt søgeområde eller en bestemt radius baseret på data for længdegrad og breddegrad.
-- **ProductWarehouseInventoryAvailabilities** – Brug denne API til at anmode om lageroplysninger for en vare fra et bestemt lagersted. Du kan f.eks. bruge den til at få vist lagertilgængelighed i scenarier, der omfatter ordreafhentning.
+- **GetEstimatedProductWarehouseAvailability** – Brug denne API til at anmode om lageroplysninger for en vare fra et bestemt lagersted. Du kan f.eks. bruge den til at få vist lagertilgængelighed i scenarier, der omfatter ordreafhentning.
 
 > [!NOTE]
 > Disse API'er erstatter API'erne **GetProductAvailabilities** og **GetAvailableInventoryNearby** i Dynamics 365 Retail, version 10.0.7 og tidligere.

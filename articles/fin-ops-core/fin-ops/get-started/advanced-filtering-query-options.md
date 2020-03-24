@@ -1,9 +1,9 @@
 ---
-title: Syntaks for avanceret filtrering og forespørgsler
-description: I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering eller operatoren matches i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
+title: Avanceret filtrering og forespørgselssyntaks
+description: I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering, eller operatoren forekomster i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931282"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112185"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering eller operatoren **matches** i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
+I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering, eller operatoren **forekomster** i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 
 ## <a name="advanced-query-syntax"></a>Avanceret forespørgselssyntaks
 
@@ -122,13 +122,14 @@ I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der 
 <td>To på hinanden følgende dobbelte anførselstegn (<strong>""</strong>) finder rækker uden værdi for den aktuelle kolonne.</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL-sætning</span>) (SQL-sætning i parenteser)</td>
+<td>(<span class="code">Finance and Operations-forespørgsel</span>) (Finance and Operations-forespørgsel mellem parenteser)</td>
 <td>Svarende til en defineret forespørgsel</td>
-<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af Finance and Operations-forespørgselssproget.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       som et eksempel på en filterbetingelse i et felt fra rodens datakilden samt et felt fra en anden datakilde (for siden Alle kunder)</td>
 </tr>
 <tr>
-<td>T</td>
+<td>V</td>
 <td>Dags dato</td>
 <td>Skriv <strong>T</strong>.</td>
 <td><strong>T</strong> svarer til dags dato.</td>

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057850"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113753"
 ---
 # <a name="warehouse-set-up"></a>Konfigurere lagersted
 
@@ -33,7 +33,7 @@ Dette emne beskriver, hvordan du kan konfigurere et lagersted til brug med en ny
 
 ## <a name="overview"></a>Oversigt
 
-Hver enkelt Commerce-kanal kræver, at den er tilknyttet et konfigureret lagersted. Følgende procedurer indeholder den minimumkonfiguration, der kræves for at konfigurere et lagersted til en Commerce-kanal. Du kan få yderligere oplysninger om opsætning af lagersteder i [Oversigt over lokationsstyring](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Hver enkelt Commerce-kanal kræver, at den er tilknyttet et konfigureret lagersted. Følgende procedurer indeholder den minimumkonfiguration, der kræves for at konfigurere et lagersted til en Commerce-kanal. Du kan få yderligere oplysninger om opsætning af lagersteder i [Oversigt over lokationsstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Konfigurer et sted til et lagersted
 
@@ -131,7 +131,7 @@ Følgende billede viser oplysninger om et konfigureret lagersted.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over lokationsstyring](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Oversigt over lokationsstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Oversigt over kanaler](channels-overview.md)
 

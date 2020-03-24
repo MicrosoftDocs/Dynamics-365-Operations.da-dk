@@ -1,6 +1,6 @@
 ---
-title: Klargøring af Personale
-description: ''
+title: Klargør Human Resources
+description: Denne artikel fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/18/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f105144047c64fc8e9d42da8d7525a8cc3912c33
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071608"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092240"
 ---
-# <a name="provision-human-resources"></a>Klargøring af Personale
+# <a name="provision-human-resources"></a>Klargør Human Resources
 
 Denne artikel fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. Det antages i artiklen, at du har købt Personale via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Personale-serviceplanen, og du ikke kan udføre trinnene i denne artikel, kan du kontakte Support.
 

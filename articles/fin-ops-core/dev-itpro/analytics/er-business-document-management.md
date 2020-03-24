@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957361"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117331"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
+
+[!include [banner](../includes/banner.md)]
 
 Forretningsbrugere benytter strukturen til [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Brugerne kan også definere dataflow for at angive, hvilke programdata der skal placeres i genererede dokumenter. ER-strukturen genererer udgående dokumenter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter) ved hjælp af foruddefinerede skabeloner. Skabelonerne udfyldes med de påkrævede data i overensstemmelse med det konfigurerede dataflow, mens de nødvendige dokumenter genereres. Hvert konfigurerede format kan udgives som en del af en ER-løsning til generering af specifikke udgående dokumenter. Dette repræsenteres ved en ER-formatkonfiguration, der kan indeholde skabeloner, som du kan bruge til at generere forskellige udgående dokumenter. Erhvervsbrugere kan benytte denne struktur til at administrere nødvendige forretningsdokumenter.
 
@@ -98,7 +100,7 @@ Benyt følgende fremgangsmåde for at importere de enkelte filer. Importér ER-k
 2. Vælg **Udveksling** øverst på siden.
 3. Vælg **Indlæs fra XML-fil**.
 4. Vælg **Gennemse** for at indlæse den påkrævede XML-fil.
-5. Vælg **OK** for at bekræfte konfigurationsimporten.
+5. Vælg **OK** for at bekræfte konfigurationens import.
 
 ![Siden ER-konfigurationer](./media/BDM-Overview-ERSolutions.png)
 
@@ -147,7 +149,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyr
 
 ![Konfigurere dokumenttype til dokumentstyring](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Konfigurere parametre</a>
+### <a name=""></a><a name="SetupBdmParameters">Konfigurere parametre</a>
 
 De grundlæggende parametre til styring af forretningsdokumenter kan konfigureres på siden **Parametre for forretningsdokument**. Det er kun specifikke brugere, der har adgang til siden. Det omfatter:
 
@@ -158,7 +160,7 @@ Benyt følgende fremgangsmåde til at konfigurere grundlæggende parametre for a
 
 1. Log på som bruger med adgang til siden **Parametre for forretningsdokument**.
 2. Gå til **Virksomhedsadministration** \> **Elektronisk rapportering** \> **Styring af forretningsdokumenter** \> **Parametre for forretningsdokument**.
-3.  På siden **Parametre for forretningsdokument** skal du under fanen **Vedhæftede filer** i feltet **SharePoint-dokumenttype** definere den dokumenttype, der skal bruges til midlertidig lagring af skabeloner i Office-formater, mens de redigeres ved hjælp af Office-skrivebordsprogrammer. 
+3.    På siden **Parametre for forretningsdokument** skal du under fanen **Vedhæftede filer** i feltet **SharePoint-dokumenttype** definere den dokumenttype, der skal bruges til midlertidig lagring af skabeloner i Office-formater, mens de redigeres ved hjælp af Office-skrivebordsprogrammer. 
 
 > [!NOTE]
 > Det er kun de dokumenttyper, der er konfigureret ved hjælp af et SharePoint-sted, der er tilgængelige for denne parameter.
@@ -288,13 +290,13 @@ Siden **BDM-skabeloneditor** åbnes. Den valgte skabelon er tilgængelig for onl
 
 ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Redigere en skabelon i Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Redigere en skabelon i Office 365</a>
 
-Du kan redigere skabelonen ved hjælp af Office 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard er det Azure-blob-lageret). Dette er konfigureret for ER-strukturen.
+Du kan redigere skabelonen ved hjælp af Office 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard Azure Blob Storage). Dette er konfigureret for ER-strukturen.
 
 ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Redigere en skabelon i Office-skrivebordsprogrammet</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Redigere en skabelon i Office-skrivebordsprogrammet</a>
 
 > [!NOTE]
 > Denne funktion er kun tilgængelig, når parameteren **SharePoint-dokumenttype** er konfigureret korrekt. Du kan finde flere oplysninger i [Konfigurere parametre](#SetupBdmParameters).
@@ -359,7 +361,7 @@ Den ændrede skabelon bruges til at generere rapporten med fritekstfaktura for d
 
     ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-AddRevision.png)
 
-    Du har oprettet en ny revision af skabelonen, der er gemt i det permanente skabelonlager. Nu kan du fortsætte med at redigere skabelonen for den anden revision, der aktuelt er valgt som aktiv.
+    Du har oprettet en ny revision af skabelonen, der er gemt i den permanente skabelons lager. Nu kan du fortsætte med at redigere skabelonen for den anden revision, der aktuelt er valgt som aktiv.
 
 5. Vælg den første revision, og vælg derefter **Angiv som aktiv**. Du kan vælge en anden revision som aktiv, hvis du på et tidspunkt vil vende tilbage til denne revision af skabelonen.
 6. Vælg den anden revision, og vælge derefter **Slet**.
@@ -398,7 +400,7 @@ Ja, det kan du. Vælg **Åbn i skrivebordsapp** i den første programsession. Sk
 3. Vælg **Synkroniser gemt kopi** på siden **BDM-skabeloneditor** i den første programsession.
 4. Udfør dette skabelon-ER-format i den anden programsession.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jeg får vist fejlen 'Værdi kan ikke være nul. Parameternavn: externalId', når jeg vælger **Åbn i skrivebordsapp**. Hvordan kan jeg undgå dette? 
+#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jeg får vist fejlen 'Værdi kan ikke være NULL. Parameternavn: externalId', når jeg vælger **Åbn i skrivebordsapp**. Hvordan kan jeg undgå dette? 
 Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure AD-domæne, der er forskelligt fra det Azure AD-domæne, der blev brugt til at installere denne forekomst. Da SharePoint-tjenesten, der bruges til at gemme skabeloner for at gøre dem tilgængelige for redigering ved hjælp af Office-skrivebordsprogrammer, tilhører det samme domæne, har vi ingen adgangsrettigheder til SharePoint-tjenesten. Du kan løse dette problem ved at logge på den aktuelle forekomst ved hjælp af legitimationsoplysningerne for en bruger med det korrekte Azure AD-domæne.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

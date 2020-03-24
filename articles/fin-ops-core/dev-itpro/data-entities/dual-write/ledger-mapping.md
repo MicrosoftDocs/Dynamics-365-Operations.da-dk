@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6bf1c554f56c1424da9fde98f67f80a6b7c95461
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: d9bcec1d4bb0207a2c3e0d46f7661b666fea3736
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019699"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112208"
 ---
 # <a name="integrated-ledger"></a>Integreret finans
 
@@ -38,22 +38,22 @@ I et forretningsprogram definerer finansdata den kerneopsætning, der er angivet
 
 Finansdata omfatter en samling af centrale finansielle enhedstilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
-Finance and Operations-apps      | Andre Dynamics 365-apps
----------------------------------|---------------------------------
-Valutaer                       | handelsvaluta
-Regnskabskalender                   | msdyn\_regnskabskalendere
-Regnskabskalenderår               | msdyn\_regnskabskalenderår
-ExchRateType                     | msdyn\_vekseltyper
-ValutaparForValutakurser         | msdyn\_valutaomvekslingspar
-RegnskabsperiodeEnhed               | msdyn\_regnskabskalenderperioder
-KategoriForHovedkonto              | msdyn\_KategoriForHovedkonto
-Hovedkonto                      | msdyn\_hovedkonti
-Finans                           | msdyn\_finans
-Vekselkurser                    | msdyn\_valutaomvekslingskurser
-FinansielKalenderperiode          | msdyn\_finansielkalenderperioder
-DimensionAttributEnhed         | msdyn\_dimensionattributter.md
-DimensionIntegrationFormatEnhed | msdyn\_finansieldimensionsformat.md
-Finanskontoplan            | msdyn\_kontoplan.md
+Finance and Operations-apps      | Modelstyret app i Dynamics 365 | Beskrivende tekst
+---------------------------------|----------------------------------|------------
+Valutaer                       | handelsvaluta            |
+Regnskabskalender                   | msdyn\_regnskabskalendere        |
+Regnskabskalenderår               | msdyn\_regnskabskalenderår        |
+ExchRateType                     | msdyn\_vekseltyper        |
+ValutaparForValutakurser         | msdyn\_valutaomvekslingspar        |
+RegnskabsperiodeEnhed               | msdyn\_regnskabskalenderperioder        |
+KategoriForHovedkonto              | msdyn\_KategoriForHovedkonto        |
+Hovedkonto                      | msdyn\_hovedkonti        |
+Finans                           | msdyn\_finans        |
+Vekselkurser                    | msdyn\_valutaomvekslingskurser        |
+FinansielKalenderperiode          | msdyn\_regnskabskalenderperioder        |
+DimensionAttributEnhed         | msdyn\_dimensionattributes        |
+DimensionIntegrationFormatEnhed | msdyn\_financialdimensionformats        |
+Finanskontoplan            | msdyn\_chartofaccounts        |
 
 
 [!include [banner](../../includes/dual-write-symbols.md)]

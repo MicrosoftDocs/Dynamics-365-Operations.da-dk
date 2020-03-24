@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177014"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106853"
 ---
 # <a name="process-collection-letters"></a>Behandle rykkere
 
@@ -70,7 +70,11 @@ I dette emne vises, hvordan du kan oprette, udskrive og bogføre rykkere. Denne 
     1. Vælg en indstilling i feltet **Udskrevet**.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Styre rykkere på debitorniveau
-Du kan også konfigurere rykkere på debitorniveau, så rykkerkoden for hver postering spores, mens rykkerbehandlingen baseres på niveauet for den enkelte rykker, der er gemt for debitoren. Enkeltrykkeren indeholder alle posteringer, der er forfaldne for debitoren. Da respitdagene nu spores på debitorniveau, bliver den næste rykker ikke sendt, før antallet af respitdage er overskredet for den næste rykker i rækkefølgen, selvom posteringer er forfaldne, efter at den sidste rykker blev sendt. Denne indstilling reducerer det antal rykkere, du skal sende pr. debitor. 
+Hvis der oprettes rykkere på transaktionsniveau, kan der oprettes flere breve for en kunde ud fra den aldersfordelte transaktion. Hvis der vises transaktioner i forskellige brevsekvenser, genereres der separate rykkere for hver gruppe af forfaldne transaktioner for kunden. Derfor kan en individuel kunde f.eks. modtage en rykker for transaktioner, der er 60 dage forsinket, og en anden rykker for transaktioner, som er 90 dage forsinkede. 
+
+Hver rykker knyttes også til en rykkerkode. Rykkerkoden knyttes til individuelle transaktioner og bruges til at bestemme, hvornår den næste rykker skal genereres for hver transaktion. Hvis en postering f.eks. er mere end 30 dage forsinket, bestemmer rykkerkoden, at den næste rykker sendes, når transaktionen bliver 60 dage forsinket, hvis den ikke betales før. 
+
+Rykkere kan også konfigureres på kundeniveau. I dette tilfælde spores rykkerkoden for hver transaktion, mens rykkerbehandlingen baseres på niveauet for den enkelte rykker, der er gemt for kunden. Den enkelte rykker indeholder alle de transaktioner, der er forfaldne for kunden. Da respitdagene nu spores på kundeniveau, bliver den næste rykker ikke sendt, før antallet af respitdage er overskredet for den næste rykker i rækkefølgen, selvom posteringer er forfaldne, efter at den sidste rykker blev sendt. Denne indstilling hjælper med at reducere det antal rykkere, du skal sende pr. kunde.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Konfigurere debitor for at styre rykkere på debitorniveau
 1.  Gå til **Navigationsrude > Moduler > Kredit > Opsætning > Debitorparametre**, og vælg fanen **Rykkere**. 

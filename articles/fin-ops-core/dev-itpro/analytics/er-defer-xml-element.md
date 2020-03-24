@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015155"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120872"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Udskyde udførelse af XML-elementer i ER-formater
 
@@ -47,7 +47,7 @@ Indstillingen **Udskudt udførelse** understøttes kun for XML-elementer, der ku
 
 Indstillingen **Udskudt udførelse** understøttes ikke for XML-elementer, der findes i formatelementet **Almindelig\\Fil**, når indstillingen **Opdel fil** er angivet til **Ja**. Du kan finde flere oplysninger om, hvordan du opdeler XML-filer, i [Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde](er-split-files.md).
 
-## <a name="Example"></a>Eksempel: Udskyde udførelse af et XML-element i et ER-format
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Udskyde udførelse af et XML-element i et ER-format
 
 I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurere et ER-format, der indeholder et XML-element, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
 

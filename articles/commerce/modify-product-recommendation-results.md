@@ -1,9 +1,9 @@
 ---
-title: Administrere resultater for AI-ML-baserede produktanbefalinger
+title: Juster resultater for AI-ML-baserede produktanbefalinger
 description: I dette emne beskrives, hvordan du kan skræddersy resultater fra produktanbefalinger på basis af kunstig intelligens-maskinel indlæring (AI-ML) til din virksomhed.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024996"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127922"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>Administrere resultater for AI-ML-baserede produktanbefalinger
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>Juster resultater for AI-ML-baserede produktanbefalinger
 
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan skræddersy resultater fra produktanbefalinger på basis af kunstig intelligens-maskinel indlæring (AI-ML) til din virksomhed. 
+I dette emne beskrives, hvordan du justerer resultater fra produktanbefalinger på basis af kunstig intelligens-maskinel indlæring (AI-ML) til din virksomhed. 
 
 Når du har aktiveret produktanbefalinger, træder standardindstillingerne i kraft. Disse parametre kan bruges ved mange behov og til mange formål. Det er bedst at planlægge at bruge tid på at evaluere, om resultaterne opfylder produkternes markedsbevægelse. Vi foreslår, at du evaluerer resultaterne i nogle dage, før du ændrer parametre efter behov og tester igen. 
 
@@ -102,10 +102,22 @@ Udfør følgende trin for manuelt at tilføje eller fjerne resultater for et opr
 
 [Oversigt over produktanbefalinger](product-recommendations.md)
 
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
 [Aktivér produktanbefalinger](enable-product-recommendations.md)
 
-[Aktivere personlige anbefalinger](personalized-recommendations.md)
+[Aktivere tilpassede anbefalinger](personalized-recommendations.md)
 
-[Tilføje lister med produktanbefalinger på sider](add-reco-list-to-page.md)
+[Fravælge tilpassede anbefalinger](personalization-gdpr.md)
 
-[Oversigt over modulet Produktsamling](product-collection-module-overview.md)
+[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
+
+[Tilføje produktanbefalinger på POS](product.md)
+
+[Føje anbefalinger til transaktionsskærmen](add-recommendations-control-pos-screen.md)
+
+[Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
+
+[Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)

@@ -1,9 +1,9 @@
 ---
-title: Fjernede eller udfasede funktioner for Finance and Operations
-description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
+title: Fjernede eller udfasede funktioner i tidligere versioner
+description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811987"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124560"
 ---
-# <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Fjernede eller udfasede funktioner for Finance and Operations
+# <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver funktioner, der er blevet fjernet eller udfaset for Finance and Operations.
+> [!IMPORTANT]
+> Dette emne opdateres ikke længere. Hvis du vil have vist en aktuel liste over funktioner, der er fjernet eller udfaset fra Finance and Operations-apps, skal du søge efter indhold i **Fjernede eller udfasede funktioner**, der er relateret til den app, du bruger.
+
+I dette emne beskrives funktioner, der er blevet fjernet eller er udfaset fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
-> [!NOTE]
-> Fra og med Finance and Operations-versionen fra juli 2017 med Platform update 8 er installationstyperne angivet for hver fjernet eller udfaset funktion. Alle de tidligere versioner, der er nævnt i dette emne, understøtter kun installationer i skyen.
-
-Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations.
+Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
 
@@ -51,7 +51,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Tec
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Frarådes: Pr. 1. december 2020 planlægger vi ikke længere at understøtte opsætning af kinesiske bilagstyper uden valg af kontogrupper. Find flere oplysninger om den nye funktionsopsætning i Nyheder i 10.0.7 |
 
-## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 med Platform update 30
+## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 med platformsopdatering 30
 
 
 ### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
@@ -106,7 +106,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Tec
 | **Status**                         | Udfaset: Fra den 1. oktober 2020 planlægger vi ikke længere at understøtte metoden **Indenlandsk momsrapport – Funktionsreference IT-00003**. |
 
 
-## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med Platform update 29
+## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med platformsopdatering 29
 
 ### <a name="us-payroll-tax-updates"></a>Opdateringer til amerikansk lønskat
 
@@ -128,7 +128,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Tec
 | **Installationsindstilling**              | Alt  |
 | **Status**                         | Udfasning: den fastsatte tidsramme for funktioner, der skal fjernes, er december 2020. |
 
-## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 med Platform update 28
+## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 med platformsopdatering 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Frankrig: Eksport af FEC-regnskabsdata i XML-format
 
@@ -152,7 +152,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Tec
 | **Status**                         | Forælder: Fra og med april 2020 er den ældre navigationslinje ikke længere tilgængelig. Indtil dette tidspunkt kan kunder vende tilbage til den ældre navigationslinje via siden **Indstillinger for klientydelse**. |
 
 
-## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 med Platform update 26
+## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 med platformsopdatering 26
 
 
 ### <a name="legacy-default-action-behavior"></a>Ældre standardhandlingers opførelse
@@ -196,7 +196,7 @@ Understøttelse til at oprette projektbaserede salgsordre i de tilfælde, hvor p
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfasning: den fastsatte tidsramme for funktioner, der skal fjernes, er april 2020. |
 
-## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 med Platform update 25
+## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 med platformsopdatering 25
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Forældede API'er og ændringer, der potentielt kan give beskadigelser
 
@@ -221,7 +221,7 @@ Understøttelse til at oprette projektbaserede salgsordre i de tilfælde, hvor p
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfasning: advarslen ændres til en kompileringsfejl i platformsopdatering 26. |
 
-## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 med Platform update 24
+## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 med platformsopdatering 24
 
 ### <a name="renaming-released-products"></a>Omdøbe frigivne produkter 
 |   |  |
@@ -230,17 +230,17 @@ Understøttelse til at oprette projektbaserede salgsordre i de tilfælde, hvor p
 | **Erstattet af en anden funktion?**   | Nr. |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger |
 | **Installationsindstilling**              | Alt  |
-| **Status**                         | Fjernet fra Finance and Operations 10.0.0 med Platform update 24. I særlige tilfælde, f.eks. gendannelse efter tidligere omdøbning af den primære nøgle for et frigivet produkt, er det muligt at anmode Microsoft om midlertidigt at fjerne denne begrænsning for omdøbning af den primære nøgle til de frigivne produkter. |
+| **Status**                         | Fjernes fra og med Finance and Operations 10.0.0 med platformsopdatering 24. (Hvis og kun hvis du har brug for at reparere databeskadigelse forårsaget af en tidligere omdøbning af primærnøglen for et frigivet produkt, skal du kontakte Microsoft Support for at anmode om midlertidig fjernelse af denne begrænsning). |
 
 
-## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med Platform update 23
+## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med platformsopdatering 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>Kontrolelement til visning af rapporter i SQL Server Reporting Services
-Kunderne kan anvende **Eksport**-handlingen, som er tilgængelig via det integrerede kontrolelement til visning af rapporter i SQL Server Reporting Services (SSRS), til at downloade dokumenter, der oprettes i Finance and Operations-programmer. Med denne HTML-baserede præsentation af rapporten får brugerne vist et ikke-sideinddelt eksempel på dokumentet.
+Kunderne kan anvende handlingen **Eksport** , som er tilgængelig via det integrerede kontrolelement til visning af rapporter i SQL Server Reporting Services (SSRS), til at downloade dokumenter, der oprettes af Finance and Operations-programmet. Med denne HTML-baserede præsentation af rapporten får brugerne vist et ikke-sideinddelt eksempel på dokumentet.
 
 |   |  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | HTML-baserede eksempler er ikke-sideinddelte og gengiver derfor **ikke** de fysiske dokumenter, der i sidste ende produceres af Finance and Operations, nøjagtigt. Ved at integrere PDF som standardformatet til forretningsdokumenter fuldt ud vil brugerne kunne drage fordel af en moderne visningsoplevelse med forbedret ydeevne, når de udarbejder programrapporter. |
+| **Årsagen til forældelsen/fjernelsen** | Den ikke-sideinddelte natur af de HTML-baserede eksempler gengiver derfor **ikke** de fysiske dokumenter, der i sidste ende produceres af Finance and Operations. Ved at integrere PDF som standardformatet til forretningsdokumenter fuldt ud vil brugerne kunne drage fordel af en moderne visningsoplevelse med forbedret ydeevne, når de udarbejder programrapporter. |
 | **Erstattet af en anden funktion?**   | Fremadrettet bliver PDF-dokumenter standardformatet for rapporter, der gengives af Finance and Operations.   |
 | **Produktområder, der er berørt**         | Denne ændring påvirker **ikke** kundescenarier, hvor rapporter distribueres elektronisk eller sendes direkte til printere.    |
 | **Installationsindstilling**              | Alt  |
@@ -272,7 +272,7 @@ Integrerede nøgletal (KPI'er) kan modelleres i Visual Studio af en udvikler og 
 #### <a name="complete-list"></a>Komplet liste
 For at få adgang til den komplette liste over API'er, der udfases, skal du se [Udfasning af metoder og metadataelementer](deprecation-deletion-apis.md).
 
-## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 med Platform update 20
+## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 med platformsopdatering 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Regler for batchoverførsel for kontoposter for reskontrokladde
 Synkron overførselstilstand frarådes i finansparametrene.  Denne tilstand erstattes af asynkron og planlagt batch, der allerede findes som indstillinger for overførsel. Du kan finde flere oplysninger i bloggen [Finansparametre – Batchoverførselsregler](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
@@ -294,7 +294,7 @@ Funktion til at konfigurere filformaterne .txt- og .xml for erklæringer.
 | **Erstattet af en anden funktion?**   | Ja. |
 | **Produktområder, der er berørt**         | Finans |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra Finance and Operations 8.1 med Platform update 20. |
+| **Status**                         | Fjernes fra og med Finance and Operations 8.1 med platformsopdatering 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generator til økonomiske rapporter for Rusland
 Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapporter og eksportere data til XLS- og DOC-rapportskabeloner. Funktionelle dele: eksportere data til XLS- og DOC-rapportskabeloner, forespørgsler, faste forudsætninger fjernes. 
@@ -305,7 +305,7 @@ Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapport
 | **Erstattet af en anden funktion?**   | Ja. Økonomirapporters brugergrænseflade for opsætning skal bruges til at opstille dataindsamlingsregler efter GL-konti eller momsregistre. Eksportere data til forskellige filtyper, faste forudsætninger og regler for forespørgselslignende indsamling bør være konfigureret i elektronisk rapportering. |
 | **Produktområder, der er berørt**         | Finans. |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra Finance and Operations 8.1 med Platform update 20. |
+| **Status**                         | Fjernes fra og med Finance and Operations 8.1 med platformsopdatering 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med eksterne udbydere for at sende elektronisk rapportering via kommunikationskanaler for Rusland
 Funktion til eksport af genererede elektroniske filer med erklæringer til mappe for at sende dem til officielle udbydere af elektronisk rapportering samt tilbageimport af tilstand.
@@ -316,7 +316,7 @@ Funktion til eksport af genererede elektroniske filer med erklæringer til mappe
 | **Erstattet af en anden funktion?**   | Ja.  |
 | **Produktområder, der er berørt**         | Finans, moms |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra Finance and Operations 8.1 med Platform update 20. |
+| **Status**                         | Fjernes fra og med Finance and Operations 8.1 med platformsopdatering 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Guiden Registre over skat af overskud
@@ -326,15 +326,15 @@ Funktion til oprettelse af skabeloner for nye registre over skat af overskud. De
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Funktionen er ikke kompatibel med Finance and Operations-udvidelsesmodellen. |
 | **Erstattet af en anden funktion?**   | Nr. |
-| **Produktområder, der er berørt**         | Moms |
+| **Produktområder, der er berørt**         | Skat |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra Finance and Operations 8.1 med Platform update 20. |
+| **Status**                         | Fjernes fra og med Finance and Operations 8.1 med platformsopdatering 20. |
 
 
-## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med Platform update 15
+## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med platformsopdatering 15
 Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platform update 15 er kumulativ og indeholder nye eller ændrede funktioner fra Platform update 13, Platform update 14 og Platform update 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med Platform update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 med platformsopdatering 12
 
 ### <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger 
 Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise personlige produktanbefalinger på en POS-enhed. Du kan finde flere oplysninger under [Oversigt over produktanbefalinger](../../../commerce/product-recommendations.md).  
@@ -356,7 +356,7 @@ Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-
 | **Erstattet af en anden funktion?**   | Ingen. Hver gang der kræves en ny indbygget funktion, skal en ny anmodning om forlængelse adresseres til ER-strukturteamet.<br><br>Som en midlertidig løsning, mens den anmodede funktion er under udvikling af ER-teamet, kan den logik, der kræves, programmeres som en metode til en brugerdefineret programklasse. Denne metode kan benyttes i ER-udtrykket som en egenskab for den tilføjede ER-datakilde til den **Program\klasse**-type, der refererer til den pågældende brugerdefinerede programklasse.  |
 | **Produktområder, der er berørt**         | Elektronisk rapporteringsstruktur                                                      |
 | **Installationsindstilling**              | Alt                                                                                      |
-| **Status**                         | Fjernet fra Finance and Operations, Enterprise edition 7.3.    |
+| **Status**                         | Fjernes fra og med Finance and Operations, Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Rapporterne Lager pr. varegruppe og Lager aldersfordelt pr. lagerdimension
 
@@ -371,7 +371,7 @@ Disse to rapporter understøttes ikke længere i Finance and Operations. I stede
 | **Status**                       | Forældet: Menupunkterne for de to rapporter er blevet fjernet i version 7.3. Koden for rapporterne forbliver dog i produktet. Planen er at fjerne koden i en senere version. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-indholdspakker, der er tilgængelige på AppSource
-Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Retail Channel Performance**, der er tilgængelige på webstedet [Microsoft AppSource](https://appsource.microsoft.com), frarådes som følge af produktopdateringer i Microsoft Power BI. Systemadministrationsformularer, som bruges til at installere disse indholdspakker på PowerBI.com, er også forældede i Finance and Operations.
+Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Retail Channel Performance**, der er tilgængelige på webstedet [Microsoft AppSource](https://appsource.microsoft.com), frarådes som følge af produktopdateringer i Microsoft Power BI. Systemadministrationsformularer, som bruges til at installere disse indholdspakker på PowerBI.com, udfases også i Finance and Operations.
 
 |   |  |
 |------------|--------------------|
@@ -453,7 +453,7 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 | **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Retail 7.2 og nyere. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition July 2017 med Platform update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition juli 2017 med platformsopdatering 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Omregning af valuta for regnskabs- og rapporteringsvalutaer
 
@@ -474,7 +474,7 @@ Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er be
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Identiske funktioner.       |
-| **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger i [Oversigt over installation og konfiguration af appen Lagersted](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations – Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger i [Oversigt over installation og konfiguration af appen Lagersted](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområder, der er berørt**         | Lokationsstyring, transportstyring     |
 | **Installationsindstilling**              | Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er beregnet til selvstændig installation i det lokale miljø.               |
 | **Status**                         | Forældet: Måltidsrammen for funktioner, der skal fjernes, er 4. kvartal 2019.   |
@@ -966,7 +966,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktion er blevet erstattet af en anden funktion. |
-| **Erstattet af en anden funktion?**   | Common data service                                      |
+| **Erstattet af en anden funktion?**   | Common Data Service                                      |
 | **Produktområder, der er berørt**         | Connector til Dynamics                         |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0                           |
 

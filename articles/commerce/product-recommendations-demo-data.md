@@ -1,9 +1,9 @@
 ---
-title: Få produktanbefalinger ved hjælp af demo-data
+title: Oprette anbefalinger med demonstrationsdata
 description: Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,17 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042774"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127830"
 ---
-# <a name="get-product-recommendations-using-demo-data"></a>Få produktanbefalinger ved hjælp af demo-data
+# <a name="create-recommendations-with-demo-data"></a>Oprette anbefalinger med demonstrationsdata
+
+[!include [banner](includes/banner.md)]
+
 Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
 
 Omni-kanalproduktanbefalinger giver et sæt redaktionelt leverede eller programmeringsmæssigt fremstillede lister over produkter. Disse lister kan bruges i flere forskellige scenarier, afhængigt af virksomhedens behov. Yderligere oplysninger om lister over produktanbefalinger finder du under [Oversigt over produktanbefalinger](product-recommendations.md).
@@ -39,7 +42,7 @@ Produktanbefalinger for niveau 1-miljøer er udelukkende baseret på de statiske
 Du skal udrulle Dynamics 365 Commerce-prøveversionens demoudvidelse i det respektive miljø for at aktivere demodata til produktanbefalinger. Hvis du gør det automatisk, aktiveres demodata til produktanbefalinger.
 
 ## <a name="default-demo-data"></a>Standarddemodata
-Hvert Onebox-typemiljø indeholder et forudindlæst sæt demodata til produktanbefalinger, der er gemt i den kommaseparerede fil 'reco_demo_data.csv', som er placeret på Commerce Scale Unit.
+Hvert Onebox-typemiljø indeholder et forudindlæst sæt demodata til produktanbefalinger, der er gemt i den kommaseparerede 'reco_demo_data.csv'-fil, som er placeret på Commerce Scale Unit.
 
 Disse data er struktureret langs følgende kolonner.
 
@@ -49,7 +52,7 @@ Disse data er struktureret langs følgende kolonner.
 | OperatingUnitNumber | :heavy_check_mark: | Det specifikke driftsenhedsnummer, hvor produktanbefalinger forventes at blive synlige.                                        |                                                                              |
 | Kategori            |                    |    Den kategori, som den specifikke liste skal returneres for. Hvis der ikke er angivet en kategori, gælder listen kun for det øverste navigationshierarki.    |                                                                              |
 | SeedItemId          |                    |    Til lister, der kræver oprindelsesdata (RecoPeopleAlsoBuy og RecoCart), skal produktet indeholde supplerende produkter til disse lister.            |                                                                              |
-| ItemIds             | :heavy_check_mark: | Et eller flere produkter, der skal returneres som resultat, adskilt af ';'.                                                                  |                                                                              |
+| ItemIds             | :heavy_check_mark: | Et eller flere produkter, der skal returneres som resultat, skal adskilles med ';'.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Tilpasse demodata
 Du kan redigere standarddemodataene med eventuelle produkt- og kategorioplysninger, der er konfigureret i hovedkontoret. Når du opdaterer .csv-filen, afspejler de produktanbefalinger, der returneres til kunderne, straks ændringerne.
@@ -67,4 +70,22 @@ Udvidelsen indeholder en datafil med navnet 'RecoMockDataset.csv', som giver dig
 
 [Oversigt over produktanbefalinger](product-recommendations.md)
 
-[Miljøplanlægning](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
+[Aktivér produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere tilpassede anbefalinger](personalized-recommendations.md)
+
+[Fravælge tilpassede anbefalinger](personalization-gdpr.md)
+
+[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
+
+[Tilføje produktanbefalinger på POS](product.md)
+
+[Føje anbefalinger til transaktionsskærmen](add-recommendations-control-pos-screen.md)
+
+[Justere resultater for AI-ML-anbefalinger](modify-product-recommendation-results.md)
+
+[Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
