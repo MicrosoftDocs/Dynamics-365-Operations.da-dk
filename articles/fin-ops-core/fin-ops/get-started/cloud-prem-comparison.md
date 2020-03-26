@@ -3,7 +3,7 @@ title: Sammenligning af funktioner i skyen og i det lokale miljø
 description: Emnet viser, hvilke funktioner der understøttes i skyen og lokalt.
 author: sericks007
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: a918d9fa1ad7ed5adcbb1d056bb8cc3306507aec
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081964"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100276"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
@@ -63,7 +63,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 |                                      | Integration med PowerBI Desktop                                                          | Nr.        | Ja             |
 |                                      | Analytiske arbejdsområder                                                                     | Ja       | Nr.              |
 |                                      | Intelligent forretningsproces: anbefalinger                                             | Ja       | Nr.              |
-|                                      | Udarbejde Power BI-rapporter med OData-ved hjælp af Power BI Desktop eller funktionerne i Excel PowerQuery    | Ja       | Nr.              |
+|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nr.              |
 |                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Nr.              |
 |                                      | Telemetri overføres til skyen                                                   | Ja       | Nr.              |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |
@@ -97,7 +97,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 | Datastyring og -integration      |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurationsdrevet udvidelse                                                            | Ja       | Nej              |
 |                                      | Eksportere data til dit eget datalager                                                    | Ja       | Ja             |
-|                                      | Aktiver eksport af trinvise opdateringer til en dataenhed                                 | Ja       | Nr.              |
+|                                      | Aktiver eksport af trinvise opdateringer til en dataenhed                                 | Ja       | Ja              |
 |                                      | Dataintegrationer                                                                         | Ja       | Ja             |
 | Dokumentstyring                  |                                                                                           | Ja       | Ja             |
 | Hjælp                                 |                                                                                           | Ja       | Nr.              |
@@ -135,7 +135,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 |                                      | Power BI-rapporter for salgs- og rentabilitetsperformance                                      | Ja       | Nr.              |
 | Sikkerhed                             |                                                                                           | Ja       | Ja             |
 | Servicestyring                   |                                                                                           | Ja       | Ja             |
-| Supply Chain Management              |                                                                                           | Ja       | Ja             |
+| Administration af leveringskæde              |                                                                                           | Ja       | Ja             |
 | Transportstyring            |                                                                                           | Ja       | Ja             |
 | Kreditorsamarbejde                 |                                                                                           | Ja       | Nr.              |
 | Lagerstedsstyring                 |                                                                                           | Ja       | Ja             |

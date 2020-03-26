@@ -3,7 +3,7 @@ title: Datafordeling til budgetplanlægning
 description: I dette emne beskrives de forskellige fordelingsmetoder, der er tilgængelige i Microsoft Dynamics 365 Finance, og hvordan de kan bruges.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772070"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106876"
 ---
 # <a name="budget-planning-data-allocation"></a>Datafordeling til budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives de forskellige fordelingsmetoder, der er tilgængelige i Microsoft Dynamics 365 Finance, og hvordan de kan bruges.  
+I dette emne beskrives de forskellige fordelingsmetoder, der er tilgængelige i Microsoft Dynamics 365 Finance, og hvordan de kan bruges.  
 
 Du kan distribuere data i en budgetplan på en række forskellige måder at give et præcist billede af de forventede beløb.
 
 ## <a name="allocation-methods"></a>Fordelingsmetoder
 Tre fordelingsmetoder (Fordel hen over perioder, Fordel på dimensioner og Brug finansfordelingsregler) kan oprette budgetplanlinjer, der er baseret på linjer i den samme budgetplan. Tre andre metoder (Aggregat, Fordel og Kopier fra budgetplanen) kan oprette budgetplanlinjer i andre budgetplaner. Du kan angive destinationsscenariet for alle seks fordelingsmetoder. Destinationsscenariet kan enten være det samme som kildescenariet eller forskelligt fra kildescenariet. Desuden kan du angive, om nye linjer er føjet til budgetplanen eller erstatter de aktuelle linjer i budgetplanen.
+
+> [!NOTE] 
+> Et entydigt scenarie skal bruges til sammenlægning, der adskiller sig fra det scenarie, som blev brugt til distribution, eller andre ændringer, som tidligere er udført i den overordnede plan.  
 
 [![Fordel på tværs af metode for periodefordeling](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Fordel på tværs af perioder** – En periodefordelingskategori bruges til at fordele budgetplanlinjerne fra Kildebudgetplanscenariet på tværs af perioder i destinationsscenariet. Beløbet i kildedokumentet er tildelt flere linjer i destinationsscenariet, baseret på den procentdel og dato, der er defineret i periodefordelingskategorien.         

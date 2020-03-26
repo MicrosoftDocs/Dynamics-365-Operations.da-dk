@@ -3,7 +3,7 @@ title: Behandling af fastvægtprodukter med lokationsstyring
 description: I dette emne beskrives, hvordan du kan bruge arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor arbejde skal udføres på lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004105"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095791"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004105"
 
 ## <a name="feature-exposure"></a>Visning af funktioner
 
-Når du vil bruge lokationsstyring til at behandle fastvægtprodukter, skal du bruge en licenskonfigurationsnøgle til at aktivere funktionen. (Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**. Klik derefter på fanen **Konfigurationsnøgler**, udvid **Handel \> Lagersted- og transportstyring**, og marker afkrydsningsfeltet for **Fastvægt til lagersted**).
+Når du vil bruge lokationsstyring til at behandle fastvægtprodukter, skal du bruge en licenskonfigurationsnøgle til at aktivere funktionen. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**. Klik derefter på fanen **Konfigurationsnøgler**, udvid **Handel \> Lagersted- og transportstyring**, og marker afkrydsningsfeltet for **Fastvægt til lagersted**.
 
 > [!NOTE]
-> Både **Lagersted- og transportstyring**-licenskonfigurationsnøglen og **Procesdistribution \> Fastvægt**-licenskonfigurationsnøglerne skal være aktiveret. Hvis du vil angive konfigurationsnøgler for fastvægt, skal du også aktivere funktionen ved hjælp af arbejdsområdet **Funktionsstyring**. Den hovedfunktion, der skal slås til, er **Behandling af fastvægtprodukter med lokationsstyring**. En anden relateret, men valgfri funktion, som du måske vil aktivere, er **Ændringer i lagerstatus for fastvægtprodukter**. Denne funktion føjer understøttelse af ændringer til lagerstatus for produkter, der er aktiveret for fastvægt.
+> Både **Lagersted- og transportstyring**-licenskonfigurationsnøglen og **Procesdistribution \> Fastvægt**-licenskonfigurationsnøglerne skal være aktiveret. Hvis du vil angive konfigurationsnøgler for fastvægt, skal du også aktivere funktionen ved hjælp af arbejdsområdet **Funktionsstyring**. Den hovedfunktion, der skal slås til, er **Behandling af fastvægtprodukter med lokationsstyring**. To relaterede, men valgfrie funktioner, som du måske vil aktivere, er **Ændringer af lagerstatus for fangstvægtprodukter** og **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes**.
 
 Når licenskonfigurationsnøglen er aktiveret, og du opretter et frigivet produkt, kan du vælge **Fastvægt**. Du kan også knytte det frigivne produkt til en lagerdimensionsgruppe, som parameteren **Brug lokationsstyringsprocesser** er markeret for.
 
@@ -107,10 +107,11 @@ Når en vare kodespores, findes der desuden en parameter til **Registreringsmeto
 **Når der bruges sporing af fangstvægtkode**, skal der altid oprettes en kode for hver fastvægtenhed, der modtages, og alle koder skal altid være tilknyttet en vægt.
 
 **Kasse** er f.eks. fastvægtenheden, og du modtager en palle med otte kasser. I dette tilfælde skal der oprettes otte entydige fastvægtkoder, og der skal knyttes en vægt til hver kode. Alt efter den indgående fastvægtkode kan vægten af alle de otte kasser registreres, og den gennemsnitlige vægt kan derefter distribueres til hver kasse, eller der kan registreres en entydig vægt for hver kasse.
+Når du bruger funktionen **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes** med den proces, der er aktiveret via et menupunkt i en mobil enhed, opdateres lageret på basis af eksisterende oplysninger om fangstvægtmærkatet. Derfor beder appen Lagersted dig ikke om at registrere fangstvægtmærkatets data som del af en produktionsrapport som en færdigmeldt handling.
 
 **Når sporing af fastvægtkode ikke bruges**, kan vægten registreres for hver dimensionsopsætning (f.eks. for hvert id og sporingsdimension). Vægten kan også registreres på basis af et samlet niveau, f.eks. fem id-numre (paller).
 
-For metoderne til registrering af udgående vægt giver indstillingen **Pr. fastvægtenhed** dig mulighed for at angive, at vejningen skal udføres for hver fastvægtenhed (f.eks. pr. boks). Med indstillingen **Pr. plukenhed** kan du angive, at vægten skal registreres ud fra det antal, der skal plukkes (f.eks. tre kasser). Bemærk, at hvis indstillingen **Ikke registreret** anvendes, vil den gennemsnitlige vægt for produktionslinjeplukprocesserne og processerne for de interne bevægelse bruges.
+For metoderne til registrering af udgående vægt giver indstillingen **Pr. fastvægtenhed** dig mulighed for at angive, at vejningen skal udføres for hver fastvægtenhed (f.eks. pr. boks). Med indstillingen **Pr. plukenhed** kan du angive, at vægten skal registreres ud fra det antal, der skal plukkes (f.eks. tre kasser). Bemærk, at hvis indstillingen **Ikke registreret** anvendes, vil den gennemsnitlige vægt for produktionslinjeplukprocesserne og processerne for de interne bevægelse finde anvendelse.
 
 Der defineres metoder til hentning af flere vægter på politikken for håndtering af fastvægtvarer. Hver parameter for metode til hentning af vægt anvendes af forskellige transaktioner. I følgende tabel vises en oversigt over, hvilke parametre der bruges til hvilke transaktioner.
 

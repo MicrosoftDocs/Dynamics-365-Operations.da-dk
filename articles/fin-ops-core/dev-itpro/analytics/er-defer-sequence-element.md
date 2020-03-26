@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 6efa4466dbf7f5ca1d3945acf15fac65d628d691
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015154"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124537"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Udskyde udførelse af sekvenselementer i ER-formater
 
@@ -45,7 +45,7 @@ Indstillingen **Udskudt udførelse** understøttes kun for sekvenselementer, der
 
 Indstillingen **Udskudt udførelse** kan ikke anvendes til sekvenser, der er konfigureret som tilpassede sekvenser, hvor den maksimale længde er begrænset.
 
-## <a name="Example"></a>Eksempel: Udskyde udførelse af et sekvenselement i et ER-format
+## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Udskyde udførelse af et sekvenselement i et ER-format
 
 I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurere et ER-format, der indeholder et sekvenselement, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
 

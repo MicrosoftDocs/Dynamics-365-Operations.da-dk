@@ -1,6 +1,6 @@
 ---
 title: Konfigurere medarbejderselvbetjening
-description: ''
+description: I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e44a35071b8d0987e6c949fb11312204317b44a1
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 17918fc7b894929c92c54b59b7440ab8aef980bd
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008497"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092654"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere medarbejderselvbetjening
 

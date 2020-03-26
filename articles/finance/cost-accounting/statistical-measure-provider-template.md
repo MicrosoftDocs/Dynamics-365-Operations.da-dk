@@ -20,11 +20,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: c46a9e042482ad66e769383b4e81e2df85a5e97b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187952"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124514"
 ---
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger
 
@@ -296,7 +296,7 @@ Før du kan få statistiske målinger i omkostningsregnskabet, skal du oprette r
 > [!NOTE]
 > I dette eksempel skal du oprette en relation for den **faktiske version**.
 
-Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Administrer** \> **Statistiske målinger** for at oprette relationen. I dette scenarie skal du vælge **Importerede statistiske målinger** som dataconnector, fordi dataene er importeret fra et tredjepartssystem til omkostningsregnskabet via Microsoft Excel.
+Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Administrer** \> **Statistiske målinger** for at oprette relationen. I dette scenarie skal du vælge **Importerede statistiske målinger** som dataconnector, fordi dataene er importeret fra et tredjepartssystem til omkostningsregnskabet via Excel.
 
 **Datakilde**
 

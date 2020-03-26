@@ -3,7 +3,7 @@ title: Handlingssøgning
 description: I denne artikel beskrives handlingssøgningsfunktionen. Med handlingssøgning kan du finde og køre handlinger på en side.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d01247aa356625cb759306e5ead2afd3cdeb840f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bd4d81f010149c762dac0f4e6fa912c2e2cef072
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191310"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112162"
 ---
 # <a name="action-search"></a>Handlingssøgning
 
@@ -69,6 +69,9 @@ Du har for eksempel indtastet **tot** i feltet **handlingssøgning** og er nu at
 I det forrige eksempel viste handlingssøgning resultater fra standardhandlingsruden øverst på en side. Handlingssøgning viser også resultaterne fra synlige værktøjslinjer, der er placeret andre steder på siden. For eksempel søger du efter knappen **Disponibel lagerbeholdning**, der er placeret i oversigtspanelet **Salgsordrelinjer**. I dette tilfælde fortæller knapstien i resultatlisten (**Salgsordrelinjer** &gt; **Lager** &gt; **Vis**) dig, at knappen er placeret under overskriften **Vis** på menuknappen **Lager** i oversigtspanelet **Salgsordrelinjer**.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+
+> [!NOTE]
+> Der er nogle knapper, der ikke vises i søgningen Handling. Disse omfatter knapper til at slette dialogbokse og knapper fra underformularer. 
 
 ## <a name="action-search-vs-navigation-search"></a>Handlingssøgning vs. navigationsøgning
 

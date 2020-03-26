@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 14c6f7aaab4c6e4f099f47210f4d89fdfcd33d79
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030837"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124399"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
 [!include[banner](includes/banner.md)]
 
-I dette emne forklares begreberne i forbindelse med eksterne detailbutiksenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
+I dette emne beskrives forklares begreberne i forbindelse med eksterne butiksenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
 
 ## <a name="concepts"></a>Begreber
 
@@ -65,7 +65,7 @@ Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktion
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigation: Klik på **Retail og Commerce** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmer til Windows og Android. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der skaffes adgang via et netværk.
+Navigation: Klik på **Retail og Commerce** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne enheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmer til Windows og Android. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der skaffes adgang via et netværk.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
@@ -117,27 +117,30 @@ Understøttelse af betalingsenheder er implementeret via betalingsconnectoren. B
 ## <a name="supported-interfaces"></a>Understøttede grænseflader
 ### <a name="opos"></a>OPOS
 
-For at sikre, at det største udvalg af enheder kan bruges sammen med Commerce, er OLE til POS-branchestandarden den primære platform for eksterne detailenheder, der understøttes. OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne detailenheder. OPOS er en alment vedtagen implementering af OLE til POS-standarden. Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da. OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer. OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren. Et OPOS-kontrolelement består af to dele:
+OLE til POS-branchestandarden er den primære platform for eksterne enheder, der understøttes, for at sikre, at det største udvalg af enheder kan bruges sammen med Commerce. OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne enheder. OPOS er en alment vedtagen implementering af OLE til POS-standarden. Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da. OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer. OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren. Et OPOS-kontrolelement består af to dele:
 
 -   **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'er bruges til at teste POS-komponenten i Commerce. Derfor er afprøvningen med til at garantere, at hvis Commerce understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
 -   **Serviceobjekt** – Serviceobjektet kan bruges til kommunikation mellem kontrolobjektet (CCO) og enheden. Typisk leveres serviceobjektet til en enhed af enhedsproducenten. I nogle tilfælde kan det dog være nødvendigt at hente serviceobjektet fra producentens websted. Et nyere serviceobjekt kan f.eks. være tilgængeligt. Se dokumentationen til hardwaren for at finde adressen på producentens websted.
 
-[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. **Bemærk:** OPOS-understøttelse garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Microsoft Dynamics 365 for Retail skal først understøtte den pågældende enhedstype eller klasse via OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
+[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. 
+
+> [!NOTE]
+> OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Commerce skal først understøtte den pågældende enhedstype eller klasse via OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
 
 ### <a name="windows"></a>Windows
 
-Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS. OPOS har en tendens til at være meget hurtigere end udskrivning via Windows. Det er derfor en god ide at bruge OPOS, især i detailmiljøer, hvor der udskrives kvitteringer med 40 kolonner, og transaktionshastigheden skal være hurtig. Til de fleste enheder bruger du OPOS-kontrolelementer. Men nogle OPOS-bonprintere understøtter også Windows-drivere. Ved hjælp af en Windows-driver kan du få adgang til de nyeste skrifttyper og via netværk forbinde én printer til flere kasseapparater. Der er dog ulemper ved at bruge Windows-drivere. Her er nogle eksempler på disse ulemper:
+Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS. OPOS har en tendens til at være meget hurtigere end udskrivning via Windows. Det er derfor en god ide at bruge OPOS, især i miljøer, hvor der udskrives kvitteringer med 40 kolonner, og transaktionshastigheden skal være hurtig. Til de fleste enheder bruger du OPOS-kontrolelementer. Men nogle OPOS-bonprintere understøtter også Windows-drivere. Ved hjælp af en Windows-driver kan du få adgang til de nyeste skrifttyper og via netværk forbinde én printer til flere kasseapparater. Der er dog ulemper ved at bruge Windows-drivere. Her er nogle eksempler på disse ulemper:
 
 -   Når der bruges Windows-drivere, gengives billeder, før udskrivningen sker. Derfor har udskrivningen en tendens til at være langsommere end på printere, der bruger OPOS-kontrolelementer.
 -   Enheder, der er tilsluttet via printeren ("sammenkoblet"), fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.
--   OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i detailhandlen, f.eks. papirafskæring eller bilagsudskrivning.
+-   OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i handlen, f.eks. papirafskæring eller bilagsudskrivning.
 -   Windows-printere understøttes ikke via IIS-hardwarestationen. 
 
 Hvis OPOS-kontrolelementer er tilgængelige for den Windows-printer, du bruger, skulle printeren stadig fungere korrekt med Commerce.
 
 ### <a name="universal-windows-platform"></a>Universel Windows-platform
 
-UWP, for så vidt angår eksterne detailenheder, er relateret til understøttelse af Plug and Play-enheder i Windows. Når en Plug and Play-enhed tilsluttes til en Windows OS-version, som understøtter denne type enhed, kræves der ingen driver, for at enheden kan bruges som tilsigtet. Hvis Windows f.eks. registrerer en enhed med en Bluetooth-højttaler, ved operativsystemet, at enheden har klassetypen **Højttaler**. Derfor behandler det den pågældende enhed som en højttaler. Der kræves ikke yderligere opsætning. Hvad angår POS-enheder, kan mange USB-enheder tilsluttes, og Windows kan genkende dem som brugerstyrede inputenheder (HID'er). Operativsystemet er dog muligvis ikke i stand til at bestemme de funktioner, enheden indeholder, fordi enheden ikke angiver klassen eller typen af enhed. Enhedsklasser til stregkodescannere og MSR'er er blevet tilføjet i Windows 10. Hvis en enhed derfor erklærer sig selv over for Windows 10 som en enhed af en af disse klasser, vil Windows lytte efter hændelser fra enheden på passende tidspunkter. Modern POS understøtter UWP MSR'er og scannere. Når det er klar til input fra en af disse enheder, og en enhed, der hører til en af disse klasser, er tilsluttet, kan enheden bruges. Hvis en UWP-stregkodescanner f.eks. er tilsluttet en computer med Windows 10, og stregkodelogon er konfigureret til Modern POS, bliver stregkodescanneren aktiv på logonskærmen. Der kræves ikke yderligere opsætning. Flere klasser af POS-enheder til UWP føjes til Windows. Disse klasser omfatter klasser for pengeskuffer og bonprintere. Understøttelse af disse nye enhedsklasser i Modern POS afventer.
+UWP, for så vidt angår eksterne enheder, er relateret til understøttelse af Plug and Play-enheder i Windows. Når en Plug and Play-enhed tilsluttes til en Windows OS-version, som understøtter denne type enhed, kræves der ingen driver, for at enheden kan bruges som tilsigtet. Hvis Windows f.eks. registrerer en enhed med en Bluetooth-højttaler, ved operativsystemet, at enheden har klassetypen **Højttaler**. Derfor behandler det den pågældende enhed som en højttaler. Der kræves ikke yderligere opsætning. Hvad angår POS-enheder, kan mange USB-enheder tilsluttes, og Windows kan genkende dem som brugerstyrede inputenheder (HID'er). Operativsystemet er dog muligvis ikke i stand til at bestemme de funktioner, enheden indeholder, fordi enheden ikke angiver klassen eller typen af enhed. Enhedsklasser til stregkodescannere og MSR'er er blevet tilføjet i Windows 10. Hvis en enhed derfor erklærer sig selv over for Windows 10 som en enhed af en af disse klasser, vil Windows lytte efter hændelser fra enheden på passende tidspunkter. Modern POS understøtter UWP MSR'er og scannere. Når det er klar til input fra en af disse enheder, og en enhed, der hører til en af disse klasser, er tilsluttet, kan enheden bruges. Hvis en UWP-stregkodescanner f.eks. er tilsluttet en computer med Windows 10, og stregkodelogon er konfigureret til Modern POS, bliver stregkodescanneren aktiv på logonskærmen. Der kræves ikke yderligere opsætning. Flere klasser af POS-enheder til UWP føjes til Windows. Disse klasser omfatter klasser for pengeskuffer og bonprintere. Understøttelse af disse nye enhedsklasser i Modern POS afventer.
 
 ### <a name="keyboard-wedge"></a>Kreditkortlæser
 
@@ -155,13 +158,13 @@ Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruge
 
 ### <a name="dedicated"></a>Dedikeret
 
-Modern POS-klienter til Windows og Android omfatter **dedikerede** eller indbyggede hardwarestationer. Disse klienter kan kommunikere direkte med eksterne enheder ved hjælp af forretningslogik, der er indbygget i programmerne. Android-programmet understøtter kun netværksenheder. Yderligere oplysninger om understøttelse af eksterne enheder til Android finder du i artiklen (Konfigurere POS Hybrid-appen på Android og iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+Modern POS-klienter til Windows og Android omfatter **dedikerede** eller indbyggede hardwarestationer. Disse klienter kan kommunikere direkte med eksterne enheder ved hjælp af forretningslogik, der er indbygget i programmerne. Android-programmet understøtter kun netværksenheder. Du kan finde yderligere oplysninger om understøttelse af eksterne enheder til Android i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 Hvis du vil bruge den dedikerede hardwarestation, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows- eller Android-programmer. Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges. Start Modern POS uden for pengeskuffe-tilstand, og brug funktionen **Administrer hardwarestationer** til at aktivere hardwarestationens funktioner. Den dedikerede hardwarestation vil som standard være aktiv. Log derefter af Modern POS og derefter på igen, og åbne et skift, så de eksterne enheder, der er konfigureret i hardwareprofilen, kan anvendes. 
 
 ### <a name="shared"></a>Delt 
 
-Det kaldes også "IIS"-hardwarestationen. "IIS" antyder, at POS-programmet opretter forbindelse til hardwarestationen via Microsoft Internet Information Services. POS-programmet opretter forbindelse til IIS-hardwarestationen via webtjenester, der kører på en computer, hvor enhederne er tilsluttet. Når du bruger den delte hardwarestation, kan de eksterne detailenheder, der er tilsluttet en hardwarestation, bruges af ethvert POS-kasseapparat, der er på samme netværk som IIS-hardwarestationen. Da kun Modern POS til Windows og Android indeholder indbygget understøttelse af eksterne detailenheder, skal alle andre Modern POS-programmer bruge IIS-hardwarestationen til at kommunikere med eksterne POS-enheder, der er konfigureret i hardwareprofilen. Hver forekomst af IIS hardware station kræver derfor, at en computer, der kører webtjenesten, og et program, der kommunikerer med enhederne. 
+Det kaldes også "IIS"-hardwarestationen. "IIS" antyder, at POS-programmet opretter forbindelse til hardwarestationen via Microsoft Internet Information Services. POS-programmet opretter forbindelse til IIS-hardwarestationen via webtjenester, der kører på en computer, hvor enhederne er tilsluttet. Når du bruger den delte hardwarestation, kan de eksterne enheder, der er tilsluttet en hardwarestation, bruges af ethvert POS-kasseapparat, der er på samme netværk som IIS-hardwarestationen. Da kun Modern POS til Windows og Android indeholder indbygget understøttelse af eksterne enheder, skal alle andre Modern POS-programmer bruge IIS-hardwarestationen til at kommunikere med eksterne POS-enheder, der er konfigureret i hardwareprofilen. Hver forekomst af IIS hardware station kræver derfor, at en computer, der kører webtjenesten, og et program, der kommunikerer med enhederne. 
 
 Den delte hardwarestation kan bruges til at tillade, at flere POS-klienter deler eksterne enheder, eller at de kan bruges til at administrere et sæt eksterne enheder for et enkelt POS. 
 
@@ -179,7 +182,7 @@ Netværksangivelsen for enheder i hardwareprofilen, giver pengeskuffer, bonprint
 
 #### <a name="modern-pos-for-windows"></a>Modern POS til Windows
 
-Du kan angive IP-adresser til eksterne netværksenheder to steder. Hvis Windows-klienten til Modern POS bruger et enkelt sæt af eksterne netværksenheder, skal du angive IP-adresserne for disse enheder ved hjælp af indstillingen **IP-konfiguration** i handlingsruden for selve kasseapparatet. Hvis netværksenheder skal deles mellem POS-kasseapparater, kan en hardwareprofil, der har netværksenheder tilknyttet, afbildes direkte til en delt hardwarestation. For at tildele IP-adresser, skal du vælge den pågældende hardwarestation på siden **Butikker** og derefter bruge indstillingen **IP-konfiguration** i afsnittet **Hardwarestationer** til at angive de netværksenheder, der er knyttet til denne hardwarestation. For hardwarestationer, der kun har netværksenheder, behøver du ikke at installere selve hardwarestationen. I det tilfælde kræves hardwarestationen kun for begrebsmæssigt at gruppere netværksadresserbare enheder ud fra deres placering i detailbutikken.
+Du kan angive IP-adresser til eksterne netværksenheder to steder. Hvis Windows-klienten til Modern POS bruger et enkelt sæt af eksterne netværksenheder, skal du angive IP-adresserne for disse enheder ved hjælp af indstillingen **IP-konfiguration** i handlingsruden for selve kasseapparatet. Hvis netværksenheder skal deles mellem POS-kasseapparater, kan en hardwareprofil, der har netværksenheder tilknyttet, afbildes direkte til en delt hardwarestation. For at tildele IP-adresser, skal du vælge den pågældende hardwarestation på siden **Butikker** og derefter bruge indstillingen **IP-konfiguration** i afsnittet **Hardwarestationer** til at angive de netværksenheder, der er knyttet til denne hardwarestation. For hardwarestationer, der kun har netværksenheder, behøver du ikke at installere selve hardwarestationen. I det tilfælde kræves hardwarestationen kun for begrebsmæssigt at gruppere netværksadresserbare enheder ud fra deres placering i butikken.
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS og Modern POS til iOS
 
@@ -192,11 +195,11 @@ Du kan finde flere oplysninger under [Konfigurere og installere hardwarestation]
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Windows
 
-Du kan finde flere oplysninger under [Konfigurere, installere og aktivere Retail Modern POS](retail-modern-pos-device-activation.md).
+Du kan finde flere oplysninger i [Konfigurer, installer og aktiver Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Android og iOS
 
-Se (Konfigurere POS Hybrid-appen på Android og iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+Du kan få flere oplysninger i [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>Installation og konfiguration af OPOS-enhed
 
@@ -283,14 +286,14 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <td>Kasseskuffe</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
+<li>Netværk </br><strong>Bemærk!</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Kasseskuffe 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
+<li>Netværk </br><strong>Bemærk!</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -333,7 +336,8 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-klienter, der har en bindende "Delt" IIS-hardwarestation
 
-**Bemærk:** Når IIS-hardwarestationen er "bindende", er der en én til én-relation mellem POS-klienten og hardwarestationen.
+> [!NOTE]
+> Når IIS-hardwarestationen er "bindende", er der en én til én-relation mellem POS-klienten og hardwarestationen.
 
 <table>
 <colgroup>
@@ -373,7 +377,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <td>Kasseskuffe</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
+<li>Netværk </br><strong>Bemærk!</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -415,7 +419,8 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 
 ### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Alle Modern POS-klienter delte en IIS-hardwarestation
 
-**Bemærk:** Når IIS-hardwarestationen er "delt", kan flere enheder bruge hardwarestationen på samme tid. I dette scenarie skal du kun bruge de enheder, der er angivet i følgende tabel. Hvis du forsøger at dele enheder, der ikke er angivet her, f.eks. stregkodescannere og MSR'er, opstår der fejl, når flere enheder forsøger at gøre krav på den samme eksterne enhed. I fremtiden forhindres en sådan konfiguration udtrykkeligt.
+> [!NOTE]
+> Når IIS-hardwarestationen er "delt", kan flere enheder bruge hardwarestationen på samme tid. I dette scenarie skal du kun bruge de enheder, der er angivet i følgende tabel. Hvis du forsøger at dele enheder, der ikke er angivet her, f.eks. stregkodescannere og MSR'er, opstår der fejl, når flere enheder forsøger at gøre krav på den samme eksterne enhed. I fremtiden forhindres en sådan konfiguration udtrykkeligt.
 
 <table>
 <colgroup>
@@ -447,7 +452,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <td>Kasseskuffe</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
+<li>Netværk </br><strong>Bemærk!</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -476,8 +481,12 @@ Denne konfiguration er den mest typiske konfiguration for traditionelle, faste P
 
 1.  Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.
 2.  Tilknyt hardwareprofilen til POS-kasseapparatet.
-3.  Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges. En beskrivelse er valgfri. **Bemærk:** Du behøver ikke at angive andre egenskaber for hardwarestationen. Alle andre nødvendige oplysninger, f.eks. hardwareprofilen, kommer fra selve kasseapparatet.
-4.  Klik på **Retail og Commerce** &gt; **Retail IT** &gt; **Distributionsplan**.
+3.  Opret en hardwarestation af typen **Dedikeret** til den butik, hvor POS-kasseapparatet skal bruges. En beskrivelse er valgfri. 
+
+    > [!NOTE]
+    > Du behøver ikke at angive andre egenskaber for hardwarestationen. Alle andre nødvendige oplysninger, f.eks. hardwareprofilen, kommer fra selve kasseapparatet.
+
+4.  Klik på **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan**.
 5.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 6.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7.  Installer og aktivér Modern POS til Windows.
@@ -485,29 +494,30 @@ Denne konfiguration er den mest typiske konfiguration for traditionelle, faste P
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS til Android med en IPC-hardwarestation (indbygget)
 
-**Nyhed for 10.0.8** - Epson-netværksprintere og kontantskuffer, der er tilsluttet de pågældende printere via DK-porten, understøttes nu af Modern POS til Android-app. Yderligere oplysninger finder du i artiklen (Konfigurere POS Hybrid-appen på Android og iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+**Nyhed for 10.0.8** - Epson-netværksprintere og kontantskuffer, der er tilsluttet de pågældende printere via DK-porten, understøttes nu af Modern POS til Android-app. Du kan finde yderligere oplysninger i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-klienter, der har en bindende, delt IIS-hardwarestation
 
 Denne konfiguration kan bruges til alle Modern POS-klienter, der har en hardwarestation, der bruges udelukkende af ét POS-kasseapparat. Benyt denne fremgangsmåde for at udføre konfigurationen.
 
 1.  Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.
-2.  Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges.
+2.  Opret en hardwarestation af typen **Dedikeret** til den butik, hvor POS-kasseapparatet skal bruges.
 3.  På den dedikerede hardwarestation skal du angive følgende egenskaber:
     -   **Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre. 
     
-    **Bemærk:** Cloud POS kan fortolke **localhost** for at bestemme den lokale computer, hvor Cloud POS kører. Men det certifikat, der kræves for at parre Cloud POS med hardwarestationen, skal dog også have "Localhost" som navnet på computeren. For at undgå problemer anbefaler vi, at du efter behov angiver en forekomst af hver dedikeret hardwarestation for butikken. For hver hardwarestation skal værtsnavnet være det specifikke computernavn, hvor hardwarestationen skal installeres.
+        > [!NOTE]
+        > Cloud POS kan fortolke **localhost** for at bestemme den lokale computer, hvor Cloud POS kører. Men det certifikat, der kræves for at parre Cloud POS med hardwarestationen, skal dog også have "Localhost" som navnet på computeren. For at undgå problemer anbefaler vi, at du efter behov angiver en forekomst af hver dedikeret hardwarestation for butikken. For hver hardwarestation skal værtsnavnet være det specifikke computernavn, hvor hardwarestationen skal installeres.
     
     -   **Port** – Den port, der skal bruges af hardwarestationen til at kommunikere med Modern POS-klienten.
     -   **Hardwareprofil** – Hvis hardwareprofilen ikke er angivet på selve hardwarestationen, bruges den hardwareprofil, der er tildelt til kasseapparatet.
     -   **Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes. Dette id leveres af kreditkortprocessoren.
     -   **Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.
 
-4.  Klik på **Retail og Commerce** &gt; **Retail IT** &gt; **Distributionsplan**.
+4.  Klik på **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan**.
 5.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 6.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7.  Installer hardwarestationen. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfigurer og installer hardwarestation til Retail](retail-hardware-station-configuration-installation.md).
-8.  Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS, under [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+8.  Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS, under [Konfigurere, installere og aktivere Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9.  Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.
 10. Start handlingen **Administrer hardwarestationer**.
 11. Klik på **Administrer**.
@@ -521,7 +531,7 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der har en hardware
 Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwarestationer med andre enheder. Benyt denne fremgangsmåde for at udføre konfigurationen.
 
 1.  Opret en hardwareprofil, hvor de nødvendige eksterne enheder er konfigureret.
-2.  Opret en hardwarestation af typen **Delt** til den detailbutik, hvor POS-kasseapparatet skal bruges.
+2.  Opret en hardwarestation af typen **Delt** til den butik, hvor POS-kasseapparatet skal bruges.
 3.  På den delte hardwarestation skal du angive følgende egenskaber:
     -   **Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre.
     -   **Beskrivelse** – Tekst, der hjælper med til at identificere hardwarestationen, f.eks. **Returneringer** eller **Foran i butikken**.
@@ -531,11 +541,11 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwares
     -   **Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.
 
 4.  Gentag trinene 2 og 3 for hver yderligere hardwarestation, der skal bruges i butikken.
-5.  Klik på **Retail og Commerce** &gt; **Retail IT** &gt; **Distributionsplan**.
+5.  Klik på **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan**.
 6.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 8.  Installer hardwarestationen på hver værtscomputer, du har oprettet i trin 2 og 3. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfigurer og installer hardwarestation til Retail](retail-hardware-station-configuration-installation.md).
-9.  Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS, under [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+9.  Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS, under [Konfigurere, installere og aktivere Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.
 11. Start handlingen **Administrer hardwarestationer**.
 
@@ -546,7 +556,8 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwares
 16. Når alle de påkrævede hardwarestationer er parret, skal du klikke på **Luk**.
 17. Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv. 
 
-**Bemærk:** Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen. Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**. Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.
+> [!NOTE]
+> Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen. Klik på **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**. Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.
 
 ## <a name="extensibility"></a>Udvidelsesmuligheder
 Du kan finde oplysninger om scenarier med udvidelsesmuligheder for hardwarestationen i [Udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md).
@@ -554,12 +565,14 @@ Du kan finde oplysninger om scenarier med udvidelsesmuligheder for hardwarestati
 ## <a name="security"></a>Sikkerhed
 Ifølge de aktuelle sikkerhedsstandarder skal der bruges følgende indstillinger i et produktionsmiljø: 
 
-**Bemærk:** Som en del af installationen via selvbetjening udfører hardwarestation-installationsprogrammet automatisk disse redigeringer i registreringsdatabasen.
-
+### <a name="hardware-station-installer"></a>Installationsprogram til hardwarestation
+Som en del af installationen via selvbetjening udfører hardwarestation-installationsprogrammet automatisk disse redigeringer i registreringsdatabasen.
+ 
 -   SSL (Secure Sockets Layer) skal deaktiveres.
 -   Kun TLS (Transport Layer Security) version 1.2 (eller den aktuelle højeste version) skal aktiveres og anvendes. 
 
-**Bemærk:** Som standard er SSL og alle versioner af TLS, undtagen TLS 1.2, deaktiveret. Hvis du vil redigere eller aktivere disse værdier, skal du følge disse trin:
+### <a name="ssl-and-tls"></a>SSL og TLS
+Som standard er SSL og alle versioner af TLS, undtagen TLS 1.2, deaktiveret. Hvis du vil redigere eller aktivere disse værdier, skal du følge disse trin:
     1.  Tryk på Windows-logotasten + R for at åbne et **Kør**-vindue.
     2.  I feltet **Åbn** skal du skrive **Regedit** og derefter klikke på **OK**.
     3.  Hvis meddelelsesboksen **Kontrol af brugerkonti** vises, skal du klikke på **Ja**.
@@ -580,10 +593,11 @@ Ifølge de aktuelle sikkerhedsstandarder skal der bruges følgende indstillinger
 -   Deling af ressourcer på tværs af oprindelse skal deaktiveres, og skal angive de tilladte oprindelser, der er godkendt.
 -   Kun de nøglecentre, der er tillid til, skal bruges til at hente certifikater, der skal bruges på computere, der kører hardwarestationen.
 
-**Bemærk:** Det er meget vigtigt, at du gennemgår sikkerhedsretningslinjer for IIS og PCI-kravene (Payment Card Industry).
+> [!NOTE]
+> Det er meget vigtigt, at du gennemgår sikkerhedsretningslinjer for IIS og PCI-kravene (Payment Card Industry).
 
 ## <a name="peripheral-simulator"></a>Ekstern simulator
-Du kan finde oplysninger under [Ekstern simulator til Retail](dev-itpro/retail-peripheral-simulator.md).
+Du kan finde oplysninger under [Ekstern simulator til Commerce](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Microsoft-testede eksterne enheder
 ### <a name="ipc-built-in-hardware-station"></a>IPC-hardwarestation (indbygget)
@@ -736,7 +750,10 @@ De følgende enheder blev testet ved hjælp af en dedikeret (ikke delt) IIS-hard
 
 ### <a name="shared-iis-hardware-station"></a>Delt IIS-hardwarestation
 
-De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestation samt Modern POS til Windows og Cloud POS. **Bemærk:** Kun en printer, en betalingsterminal og en pengeskuffe understøttes.
+De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestation samt Modern POS til Windows og Cloud POS. 
+
+> [!NOTE]
+> Kun en printer, en betalingsterminal og en pengeskuffe understøttes.
 
 #### <a name="printer"></a>Printer
 
@@ -793,7 +810,7 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 **Løsning:** Her er nogle typiske årsager til problemet:
 
 -   Kontrollér, at andre konfigurationsværktøjer til enhedsdrivere er lukket. Hvis disse værktøjer er åbne, kan de forhindre Modern POS eller hardwarestationen i at gøre krav på enheden.
--   Hvis den eksterne detailenhed deles med flere POS-enheder, skal du kontrollere, at den tilhører en af følgende kategorier:
+-   Hvis den eksterne enhed deles med flere POS-enheder, skal du kontrollere, at den tilhører en af følgende kategorier:
     -   Pengeskuffe
     -   Printer til modtagelse
     -   Betalingsterminal
@@ -817,6 +834,6 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Ekstern simulator for Retail](dev-itpro/retail-peripheral-simulator.md)
+[Ekstern simulator for Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 

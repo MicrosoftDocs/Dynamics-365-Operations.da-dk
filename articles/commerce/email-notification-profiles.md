@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 9e5d90eaf1815bbe54b0bea40d92a0a993a23b75
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057608"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113799"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Konfigurere en mailbeskedprofil
 
@@ -35,7 +35,7 @@ Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynami
 
 Før du opretter kanaler, skal du oprette en profil for at sikre, at mailbeskeder kan sendes ud fra forskellige hændelser, f.eks. ordreoprettelse, ordreforsendelsesstatus og betalingsfejl.
 
-Du kan finde yderligere oplysninger om mailkonfiguration i [Konfigurere og sende e-mail](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+Du kan finde yderligere oplysninger om mailkonfiguration i [Konfigurere og sende e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="create-an-email-notification-profile"></a>Oprette en mailbeskedprofil
 
@@ -84,7 +84,7 @@ Følgende billede viser eksempler på indstillinger for hændelsesbeskeder.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Konfigurere og sende mail](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
+[Konfigurere og sende mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
 
 [Oversigt over kanaler](channels-overview.md)
 

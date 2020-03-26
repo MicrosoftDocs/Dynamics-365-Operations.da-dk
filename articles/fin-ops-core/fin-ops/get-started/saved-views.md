@@ -3,7 +3,7 @@ title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017698"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100302"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -71,7 +71,7 @@ Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
 2.  Sådan redigeres den eksisterende visning:
      1. Vælg **Gem**. Bemærk, at denne handling ikke vil blive aktiveret for låste visninger. 
 3.  Sådan oprettes en ny visning:
-     1.    Vælg **Gem som...**. 
+     1.    Vælg **Gem som**. 
      2.    Indtast et visningsnavn og evt. en beskrivelse.
      3.    Vælg **Gem**.
 
@@ -83,9 +83,9 @@ For at ændre standardvisningen for en side skal du følge disse trin:
 2.  Vælg visningsnavnet for at åbne visningsvælgeren. 
 3.  Vælg **Flere** og derefter **Vælg som standard**.  
 
-Når du opretter en ny visning (ved hjælp af handlingen **Gem som...**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
+Når du opretter en ny visning (ved hjælp af handlingen **Gem som**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
 
-Bemærk, at i nogle tilfælde udføres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du navigerer til en side. Hvis du f.eks. navigerer via et felt til en side, udføres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du navigerer til en side, hvis klassiske visning allerede har en defineret forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, får du besked om det, når visningen indlæses. Hvis du skifter visning, efter at siden er indlæst, skulle visningsforespørgslen blive udført som forventet.
+Bemærk, at i nogle tilfælde udføres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du navigerer til en side. Hvis du f.eks. navigerer via et felt til en side, udføres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du navigerer til en side med en standardvisning, som allerede har en defineret forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, får du besked om det, når visningen indlæses. Hvis du skifter visning, efter at siden er indlæst, skulle visningsforespørgslen blive udført som forventet. Fra og med version 10.0.10 platformopdatering 34 vil meddelelsen indeholde en integreret handling, der giver dig mulighed for at indlæse forespørgslen i standardvisningen direkte.
 
 ## <a name="managing-personal-views"></a>Administrere personlige visninger 
 Dialogboksen **Administrer mine visninger** indeholder grundlæggende vedligeholdelsesfunktioner til dine personlige visninger og rækkefølgen af visninger i visningsvælgeren. Når du vil åbne denne side, skal du klikke på navnet på visningen for at åbne rullemenuen for visningsvælger, vælge **Flere** og derefter vælge **Administrer mine visninger**.  
@@ -119,7 +119,7 @@ Følg disse trin for at publicere en visning:
 4.  Angiv et navn til og evt. en beskrivelse af visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Navnene på publicerede visninger for en side skal være entydige. Der tillades ingen dublerede navne, selvom listen over roller eller juridiske enheder, som visningerne gælder for, er forskellige.
 5.  Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning.
 6. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
-7. [10.0.9/Platform update 33 eller nyere] afgør, om visningen skal udgives som standardvisning for de valgte brugere. Hvis du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Dette vil ændre standardvisningen for disse brugere. Brugerne kan dog stadig ændre deres standardvisning, når udgivelsen er foretaget.    
+7. [10.0.9/Platformopdatering 33 eller nyere] Afgør, om visningen skal udgives som standardvisning for de valgte brugere. Hvis du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Dette vil ændre standardvisningen for disse brugere. Brugerne kan dog stadig ændre deres standardvisning, når udgivelsen er foretaget.    
 8.  Vælg **Publicer**.
 
 Bemærk, at det kan tage et stykke tid (op til en time) i nogle miljøer, før brugerne kan se den publicerede visning.
@@ -133,8 +133,8 @@ Hvis de ændringer, du vil foretage i en publiceret visning, kun omfatter public
 3.  Vælg **Ja**, hvis du vil opdatere den eksisterende visning (eller **Nej**, hvis du vil publicere denne under et andet navn).
 4.  Opdater navnet, beskrivelsen og/eller sikkerhedsrollerne for visningen. 
 5.  Vælg **Publicer**. 
-6.  [10.0.8/Platform update 32 eller tidligere] Hvis du har opdateret navnet på den publicerede visning, skal du også slette den publicerede visning med det gamle navn (se afsnittet **Administrere publicerede visninger** for at få flere oplysninger). 
-7. [10.0.9/Platform update 33 eller nyere] Hvis du oprindeligt har valgt, at denne publicerede visning skal være standardvisningen, vil den blive standardvisningen for disse brugere igen efter genudgivelsen.  
+6.  [10.0.8/Platformopdatering 32 eller tidligere] Hvis du har opdateret navnet på den publicerede visning, skal du også slette den publicerede visning med det gamle navn (se afsnittet **Administrere publicerede visninger** for at få flere oplysninger). 
+7. [10.0.9/Platformopdatering 33 eller nyere] Hvis du oprindeligt har valgt, at denne publicerede visning skal være standardvisningen, vil den blive standardvisningen for disse brugere igen efter genudgivelsen.  
 
 Hvis ændringerne af den publicerede visning omfatter redigering af de tilpasninger eller filtre, der er tilknyttet visningen, skal du følge disse trin: 
 1.  Skift til den publicerede visning, du vil redigere. 

@@ -1,9 +1,9 @@
 ---
-title: Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder
+title: Føje anbefalinger til transaktionsskærmen
 description: I dette emne beskrives, hvordan du føjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021953"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127669"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder
+# <a name="add-recommendations-to-the-transaction-screen"></a>Føje anbefalinger til transaktionsskærmen
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Produktanbefalinger på POS](product.md)
+[Oversigt over produktanbefalinger](product-recommendations.md)
 
-[Oversigt over produktanbefalinger](../commerce/product-recommendations.md)
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
+[Aktivér produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere tilpassede anbefalinger](personalized-recommendations.md)
+
+[Fravælge tilpassede anbefalinger](personalization-gdpr.md)
+
+[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
+
+[Tilføje produktanbefalinger på POS](product.md)
+
+[Justere resultater for AI-ML-anbefalinger](modify-product-recommendation-results.md)
+
+[Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
+
+[Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)

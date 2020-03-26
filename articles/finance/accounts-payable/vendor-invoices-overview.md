@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890321"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133890"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 
@@ -66,6 +67,16 @@ Du kan tilføje en linje, der ikke var på indkøbsordren, til kreditorfakturaen
 
 Din organisation bruger måske arbejdsgange til at administrere gennemsynsprocessen for kreditorfakturaer. Gennemsyn via arbejdsgang kan være påkrævet for fakturahovedet, fakturalinjen eller begge dele. Arbejdsgangskontrolelementerne gælder for hovedet eller linjen, afhængigt af hvor fokus er, når du vælger kontrolelementet. I stedet for knappen **Indlæg** får du vist knappen **Send**, som du kan bruge til at sende kreditorfakturaen gennem evalueringsprocessen.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Forhindre faktura i at blive sendt til arbejdsgang 
+
+Du kan bruge følgende forskellige metoder til at forhindre, at der sendes en faktura til en arbejdsgang.
+
+- **Fakturatotalen og den registrerede total er forskellige.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at totalerne ikke er lig med hinanden, så saldiene kan rettes, før fakturaen sendes til arbejdsgangen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturatotalen og den registrerede slutsaldo ikke er ens** på siden **Funktionsstyring** er slået til. 
+
+- **Fakturaen indeholder ikke-allokerede gebyrer.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at fakturaen har ikke-allokerede gebyrer, så fakturaen kan rettes, før den sendes til arbejdsgangen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når der er ikke-allokerede gebyrer på en kreditorfaktura** på siden **Funktionsstyring** er slået til.
+
+- **Faktura indeholder samme fakturanummer som en anden bogført faktura.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at der findes en faktura med et duplikeret fakturanummer, så den kan rettes, før den sendes til arbejdsgangen. Denne påmindelse vises, når kreditorparameteren med navnet **Tjek det anvendte fakturanummer** er indstillet til **Afvis dublet**. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturanummeret allerede findes på en bogført faktura, og dit system ikke er konfigureret til at acceptere for identiske fakturanumre** på siden **Funktionsstyring** er slået til.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Sammenholde kreditorfakturaer med produktkvitteringer
 
 Du kan angive og gemme oplysninger om kreditorfakturaer, og du kan sammenholde fakturalinjer med produktkvitteringslinjer. Du kan også sammenholde delmængder for en linje.
@@ -77,6 +88,16 @@ Når du bogfører fakturaen, opdateres antallet for **Fakturarestmængde** for d
 Denne indstilling antager, at der er bogført mindst én produktkvittering for indkøbsordren. Kreditorfakturaen er baseret på disse produktkvitteringer og afspejler antallene i dem. De økonomiske oplysninger til fakturaen er baseret på de oplysninger, der angives, når du bogfører fakturaen.
 
 Du kan finde flere oplysninger under [Registrere kreditorfaktura og sammenligne med modtaget antal](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Konfigurere en automatisk opgave for arbejdsgangen for kreditorfakturaer til bogføring af kreditorfakturaen ved hjælp af et batchjob
+
+Du kan føje en automatisk bogføringsopgave til arbejdsgangen for kreditorfakturaer, så fakturaer behandles i et batch. Når fakturaer bogføres i en batch, kan processen fortsætte uden at vente på, at bogføringen er færdig, hvilket forbedrer den overordnede ydeevne for alle opgaver, der er sendt til arbejdsgangen.
+
+Hvis du vil bogføre en kreditorfaktura i en batch, skal du slå parameteren **Batchbogføring af kreditorfaktura** til på siden **Funktionsstyring**. Arbejdsgange for kreditorfakturaer konfigureres ved at gå til **Kreditor > Opsætning > Kreditorarbejdsgange**.
+
+Du kan få vist opgaven **Bogfør kreditorfakturaen ved hjælp af en batch** i arbejdsgangseditoren, uanset om den funktionsparameteren **Batchbogføring af kreditorfaktura** er aktiveret. Når funktionsparameteren ikke er aktiveret, behandles en faktura, der indeholder **Bogfør kreditorfakturaen ved hjælp af en batchopgave**, ikke i arbejdsgangen, før parameteren er aktiveret. Opgaven **Bogfør kreditorfakturaen ved hjælp af en batch** må ikke bruges i den samme arbejdsgang som den automatiserede opgave **Bogfør kreditorfakturaer** . Desuden skal opgaven **Bogfør kreditorfakturaen ved hjælp af en batch** være det sidste element i konfigurationen af arbejdsgangen.
+
+Du kan angive det antal fakturaer, der skal medtages i batchen, og det antal timer, du vil vente, før du omplanlægger en batch, ved at gå til **Kreditor > Opsætning > Kreditorparametre > Faktura > Fakturaarbejdsgang**. 
 
 ## <a name="working-with-multiple-invoices"></a>Arbejde med flere fakturaer
 

@@ -3,7 +3,7 @@ title: Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 description: Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bf5a0da2803f985e6c0c04dd9916977397173d11
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 23ac9d8844c2a8ae20bd316c40078319601a3a4d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001616"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096719"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 
@@ -144,12 +144,20 @@ Dit CDN bør nu være korrekt konfigureret, så det kan bruges sammen med Commer
 
 [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
 
+[Konfigurere en onlinebutikskanal](online-stores.md)
+
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 
-[Administrer robots.txt-filer](manage-robots-txt-files.md)
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
+
+[Masseoverføre omdirigeringer af URL-adresser](upload-bulk-redirects.md)
+
+[Konfigurere en B2C-lejer i Commerce](set-up-B2C-tenant.md)
 
 [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
+
+[Konfigurere flere B2C-lejere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)

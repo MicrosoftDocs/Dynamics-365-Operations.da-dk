@@ -1,6 +1,6 @@
 ---
-title: Kredithold for salgsordrer
-description: ''
+title: Kredit på hold for salgsordrer
+description: Dette emne beskriver konfigurationen af regler, der bruges til at sætte salgsordrer på kredithold.
 author: mikefalkner
 manager: AnnBe
 ms.date: 01/25/2019
@@ -9,25 +9,23 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057664"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124248"
 ---
-# <a name="credit-holds-for-sales-orders"></a>Kredithold for salgsordrer
+# <a name="credit-holds-for-sales-orders"></a>Kredit på hold for salgsordrer
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-Dette emne beskriver konfigurationen af regler, der bruges til at sætte salgsordrer på kredithold. Blokeringsreglerne for kreditstyring kan gælde for en individuel kunde eller en kundegruppe.  Blokeringsregler definerer svar i følgende tilfælde:
+Dette emne beskriver konfigurationen af regler, der bruges til at sætte salgsordrer på kredithold. Blokeringsreglerne for kreditstyring kan gælde for en individuel kunde eller en kundegruppe. Blokeringsregler definerer svar i følgende tilfælde:
 
 1. Antal dage over forfaldsdato
 2. Status på konti
@@ -87,9 +85,9 @@ Vælg **Betalingsbetingelser**, hvis blokeringsreglen gælder for den valgte bet
    - Vælg **Alle**, hvis reglen gælder for alle kunder. 
 3. Vælg en **Risikogruppe** for yderligere at begrænse listen over kunder, der skal sættes på kreditstyringshold. 
 4. Vælg den regeltype, du konfigurerer. 
-  - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
-  - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
-6. Angiv **Antal dage kreditmaks. er udløbet** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold. Antallet af dage over forfaldsdato udgør de ekstra respitdage, der er føjet til det antal dage, kreditmaks. er udløbet.
+   - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
+   - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
+5. Angiv **Antal dage kreditmaks. er udløbet** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold. Antallet af dage over forfaldsdato udgør de ekstra respitdage, der er føjet til det antal dage, kreditmaks. er udløbet.
 
 ### <a name="overdue-amount"></a>Forfaldent beløb
 
@@ -104,11 +102,10 @@ Vælg **Betalingsbetingelser**, hvis blokeringsreglen gælder for den valgte bet
    - Vælg **Alle**, hvis reglen gælder for alle kunder. 
 3. Vælg en **Risikogruppe**, hvis du yderligere vil begrænse listen over kunder, der skal sættes på kreditstyringshold. 
 4. Vælg den regeltype, du konfigurerer. 
-  - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
-  - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
+   - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
+   - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
 5. Angiv **Forfaldent beløb** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold til gennemsyn. 
-6. Vælg den **Værditype**, der definerer den værditype, der skal bruges til også at teste, hvor meget af kreditmaks. der er brugt. Blokeringsregler kræver en procent, men en udelukkelse kan have et fast beløb eller en procentdel.
-Grænseværdi. Grænseværdien er relateret til kreditmaks.
+6. Vælg den **Værditype**, der definerer den værditype, der skal bruges til også at teste, hvor meget af kreditmaks. der er brugt. Blokeringsregler kræver en procent, men en udelukkelse kan have et fast beløb eller en procentdel. Grænseværdien er relateret til kreditmaks.
 7. Angiv **Grænseværdi for kreditmaks.** for den valgte regel, før en kunde sættes på kreditstyringshold. Dette kan være et beløb eller en procentdel, der er baseret på den valgte værditype i værditypen.
 8. Reglen kontrollerer, at **Forfaldent beløb** er overskredet, og at **Grænseværdi for kreditmaks.** er overskredet. 
 
@@ -125,9 +122,9 @@ Vælg **Salgsordre**, hvis blokeringsreglen gælder for værdien af salgsordren.
    - Vælg **Alle**, hvis reglen gælder for alle kunder. 
 3. Vælg en **Risikogruppe**, hvis du yderligere vil begrænse listen over kunder, der skal sættes på kreditstyringshold. 
 4. Vælg den regeltype, du konfigurerer.  
-  - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
-  - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
-6. Angiv **Salgsordrebeløb** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold. 
+   - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
+   - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
+5. Angiv **Salgsordrebeløb** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold. 
 
 Reglen for salgsordren indeholder en ekstra indstilling, der tilsidesætter alle andre regler. Hvis du vil oprette en udelukkelse, der frigiver salgsordren uden at tage højde for andre regler, skal du markere afkrydsningsfeltet **Frigiv salgsordre** på udelukkelseslinjen.
 
@@ -187,7 +184,7 @@ Funktionen af reglen **Anvendt kreditmaks.** ændres baseret på indstillingerne
 
 Ordrer kan udelukkes fra kreditstyring, selvom der er konfigureret regler. 
 
-- Hvis du ændrer indstillingerne **Udeluk kunde fra kreditstyring** i **Alle kunder > vælg en kunde > oversigtspanelet Kredit og inkasso** til **Ja**, behandles der ingen ordrer for den pågældende kunde.
+- Hvis du ændrer indstillingerne **Udeluk kunde fra kreditstyring** i oversigtspanelet **Alle kunder > Vælg en kunde > Kredit og inkasso** til **Ja**, behandles der ingen ordrer for den pågældende kunde
 - Hvis du ændrer værdien **Udeluk fra kreditstyring** på **salgsordrehovedet** på **oversigtspanelet Kreditstyring** til **Ja**, behandles reglerne for kreditstyring ikke. Denne indstilling kan kun udføres af kreditmedarbejderen eller kreditchefen.
 
 ## <a name="processing-orders-on-hold-using-the-credit-management-hold-list"></a>Behandle ordrer på hold ved hjælp af listen over kreditstyringshold
@@ -216,8 +213,8 @@ Når du har undersøgt årsagerne til pågældende hold, og du har afhjulpet dem
 2) Vælg en **Frigivelsesårsag** for den ordre, der er valgt til frigivelse.  
 3) Vælg en **Dato for gennemsyn** for hver ordre, der er valgt til frigivelse.  
 4) Vælg menuen **Frigiv** i handlingsruden for at frigive en ordre. Denne menu er kun tilgængelig, når der er valgt transaktioner. Brugeren får vist to muligheder:
- - Vælg **Med bogføring** for at fjerne pågældende hold, og bogfør dokumentet ved at bruge samme bogføringsproces, der blev brugt, da det blev sat på hold. Hvis salgsordrebekræftelsen f.eks. blev sat på hold, fuldføres salgsordrebekræftelsen efter frigivelsen. Bogføringen af salgsordren vises, så brugeren kan bogføre bekræftelsen.
- - Vælg **Uden bogføring** for at fjerne pågældende hold uden yderligere behandling. Salgsordren kan bogføres manuelt.
+   - Vælg **Med bogføring** for at fjerne pågældende hold, og bogfør dokumentet ved at bruge samme bogføringsproces, der blev brugt, da det blev sat på hold. Hvis salgsordrebekræftelsen f.eks. blev sat på hold, fuldføres salgsordrebekræftelsen efter frigivelsen. Bogføringen af salgsordren vises, så brugeren kan bogføre bekræftelsen.
+   - Vælg **Uden bogføring** for at fjerne pågældende hold uden yderligere behandling. Salgsordren kan bogføres manuelt.
 
 ### <a name="rejecting-orders-in-the-hold-list"></a>Afvise ordrer på listen over hold
 Du kan bruge menuen **Afvis** i handlingsruden for at afvise en salgsordre.

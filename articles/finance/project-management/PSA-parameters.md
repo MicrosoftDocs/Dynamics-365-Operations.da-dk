@@ -3,7 +3,7 @@ title: Project Service Automation-integrationsparametre
 description: I dette emne beskrives, hvordan du konfigurerer, hvordan standarddata indtastes, når du integrerer Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 Finance.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174798"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096245"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Integrationsparametre for Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
 På siden **Integrationsparametre for Project Service Automation** kan du konfigurere, hvordan standarddata skal indtastes, når du integrerer Dynamics 365 Project Service Automation med Dynamics 365 Finance. For at projekter kan synkroniseres korrekt fra Project Service Automation til Finance, skal du konfigurere følgende felter.
+
+Hvis du vil åbne siden **Project Service Automation-integrationsparametrene**, skal du gå til **Projektstyring og regnskab** \> **Opsætning** \> **Dynamics 365 for Project Service Automation-integrationsparametre**. 
 
 > [!NOTE]
 > - Projektopgaveintegration, udgiftstransaktionskategorier, timeestimater, udgiftsestimater og låsning af funktioner er tilgængelig i version 8.0.

@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om produktanbefalinger
 description: Dette emne indeholder oplysninger om processer og værktøjer, du kan bruge til at foretage fejlfinding af problemer, der vedrører produktanbefalinger eller resultaterne af dem.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7951f92ef68a7a782f2874d7b73d7e45eba0afba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003021"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127784"
 ---
 # <a name="product-recommendations-faq"></a>Ofte stillede spørgsmål om produktanbefalinger
 
@@ -75,12 +75,28 @@ Du kan finde flere oplysninger om, hvordan du føjer produktanbefalingssider til
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Hvordan aktiverer jeg anbefalinger i POS?
 
-Når du har aktiveret produktanbefalinger, skal du tilføje anbefalingspanelet på kontrolelementets POS-skærm. Du kan finde flere oplysninger om, hvordan du føjer anbefalingspanelet til POS-enhedens layout, i [denne funktionsvejledning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen).
+Når du har aktiveret produktanbefalinger, skal du tilføje anbefalingspanelet på kontrolelementets POS-skærm. Du kan få flere oplysninger i [Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder](add-recommendations-control-pos-screen.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over produktanbefalinger](product-recommendations.md)
 
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
 [Aktivér produktanbefalinger](enable-product-recommendations.md)
 
-[Administrere resultater for AI-ML-baserede produktanbefalinger](modify-product-recommendation-results.md)
+[Aktivere tilpassede anbefalinger](personalized-recommendations.md)
+
+[Fravælge tilpassede anbefalinger](personalization-gdpr.md)
+
+[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
+
+[Tilføje produktanbefalinger på POS](product.md)
+
+[Føje anbefalinger til transaktionsskærmen](add-recommendations-control-pos-screen.md)
+
+[Justere resultater for AI-ML-anbefalinger](modify-product-recommendation-results.md)
+
+[Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
