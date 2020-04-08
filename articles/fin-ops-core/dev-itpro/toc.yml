@@ -162,24 +162,52 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Konfiguration af dobbeltskrivning fra Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
+                            - name: Første synkronisering
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Aktivér dobbeltskrivning for eksisterende Finance and Operations-apps
+                              items:
+                                - name: Aktivér dobbeltskrivning for eksisterende Finance and Operations-apps
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Systemkrav og forudsætninger
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: Sådan bruges guiden Dobbeltskrivning til at sammenkæde dine miljøer
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Aktiver enhedstilknytning for dobbeltskrivning
+                                  href: data-entities/dual-write/enable-entity-map.md
+                        - name: Administrere dobbeltskrivning
+                          items:
+                            - name: Tilpasse objekt- og felttilknytninger
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Fejladministration og beskeder om påmindelser
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Applikationscyklusstyring
+                              href: data-entities/dual-write/app-lifecycle-management.md
                         - name: Tilknytning af begreber mellem apps
                           items:
-                            - name: Organisationshierarki på Common Data Service
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Firmaintegration
-                              items:
-                                - name: Firmabegreb i Common Data Services
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Bootstrap med firmadata
-                                  href: data-entities/dual-write/bootstrap-company-data.md
                             - name: Integreret kundemaster
                               href: data-entities/dual-write/customer-mapping.md
+                            - name: Kreditorintegration
+                              items:
+                                - name: Integreret kreditormaster
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Skifte mellem kreditordesign
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Kundefordelskundekort og -belønningspoint
+                              href: data-entities/dual-write/loyalty-mapping.md
                             - name: Produktintegration
                               items:
                                 - name: Samlet produktoplevelse
                                   href: data-entities/dual-write/product-mapping.md
                                 - name: Integrerede lokationer og lagersteder
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Firmaintegration
+                              items:
+                                - name: Firmabegreb i Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Selvstart med firmadata
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Organisationshierarki på Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
                             - name: Finansierings- og momsdata
                               items:
                                 - name: Adgang til finansierings- og momsreferencedata
@@ -188,12 +216,8 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integreret momsmaster
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Kreditorintegration
-                              items:
-                                - name: Integreret kreditormaster
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Skifte mellem kreditordesign
-                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Synkroniser med Dynamics 365 Supply Chain Management-prissætningsprogrammet efter behov
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: Kundeemne til kontanter i dobbeltskrivning
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: Interne aktiver til vedligeholdelse
@@ -204,13 +228,27 @@
                           items:
                             - name: Understøttelse af Field Service-løsninger og Project Service Automation-løsninger
                               href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Første synkronisering
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: Fejlfinding af dataintegration
-                              href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Integration med Power Platform-dataintegrator
+                            - name: Fejlfinding
+                              items:
+                                - name: 'Kontroller, at dobbeltskrivning er konfigureret i Finance and Operations-apps og Common Data Service'
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Foretage fejlfinding af problemer under den indledende opsætning
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Foretage fejlfinding af problemer under den indledende synkronisering
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Foretage fejlfinding af problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Foretage fejlfinding af problemer med aktiv synkronisering
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: Foretage fejlfinding af problemer med i forbindelse med løsningsforståelse
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Foretage fejlfinding af problemer i forbindelse med opgraderinger af Finance and Operations-apps
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Generel fejlfinding
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integration med Power Platform
                       items:
-                        - name: Konfigurere et kundeemne til kontantscenarie
+                        - name: Konfigurere et kundeemne til kontanter-scenarie
                           items:
                             - name: Kundeemne til kontanter
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
@@ -392,7 +430,9 @@
                       href: database/api/v1/reference-list-backups.md
                     - name: Opret databaseopdatering
                       href: database/api/v1/reference-create-refresh.md
-                    - name: Hent operationsaktivitetsstatus
+                    - name: Oprette en databaseeksport
+                      href: database/api/v1/reference-create-export.md
+                    - name: Hente operationsaktivitetsstatus
                       href: database/api/v1/reference-get-status.md
         - name: Demodata
           items:
@@ -1032,6 +1072,8 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Overvågning og diagnose
               href: lifecycle-services/monitoring-diagnostics.md
+            - name: Rapport over effektanalyse
+              href: lifecycle-services/impact-analysis-report.md
             - name: Genstarte miljøtjenester
               href: lifecycle-services/restart-environment-services.md
             - name: Rapportere en produktionsafbrydelse
@@ -1396,6 +1438,10 @@
                   href: sysadmin/create-rules-optimization-advisor.md
             - name: Rapportere en produktionsafbrydelse
               href: lifecycle-services/report-production-outage.md
+            - name: Konfigurere og administrere databaselogning
+              href: sysadmin/configure-manage-database-log.md
+            - name: 'Oprette OData-metadatacache, når AOS startes'
+              href: sysadmin/odata-warmup.md
         - name: 'Opgraderinger, opdateringer og hotfixes'
           items:
             - name: 'Ressourcer til opgraderinger, opdateringer og hotfixes'
