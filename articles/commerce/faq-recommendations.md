@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om produktanbefalinger
 description: Dette emne indeholder oplysninger om processer og værktøjer, du kan bruge til at foretage fejlfinding af problemer, der vedrører produktanbefalinger eller resultaterne af dem.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 2e30d29516dff6b2128e21bfa6e449e396884d00
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127784"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154384"
 ---
 # <a name="product-recommendations-faq"></a>Ofte stillede spørgsmål om produktanbefalinger
 
@@ -88,8 +88,6 @@ Når du har aktiveret produktanbefalinger, skal du tilføje anbefalingspanelet p
 [Aktivere tilpassede anbefalinger](personalized-recommendations.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
-
-[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
 
 [Tilføje produktanbefalinger på POS](product.md)
 

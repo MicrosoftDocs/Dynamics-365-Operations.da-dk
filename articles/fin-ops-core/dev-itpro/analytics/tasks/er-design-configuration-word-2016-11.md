@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 327f03435ab55551953fd998dd89c831c76c4c26
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 208b1be20a8833afbf4929a7ceda706aeb5bda3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182594"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142080"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Designe ER-konfigurationer til at generere rapporter i Word-format
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Følgende trin beskriver, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan konfigurere en model for elektronisk rapporteringsformater (ER) til at generere rapporter som Microsoft Word-filer. Disse trin kan udføres i GBSI-virksomheden.
 
@@ -39,7 +39,7 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Microsoft Dyna
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Vælg den eksisterende ER-rapportkonfiguration
-1. Gå i **navigationsruden til Moduler > Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering**. Sørg for, at konfigurationsprovideren "Litware, Inc.". er markeret som aktiv.  
+1. Gå i **navigationsruden til Moduler > Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering**. Sørg for, at konfigurationsprovideren 'Litware, Inc.'. er markeret som aktiv.  
 2. Klik på **Rapporteringskonfigurationer**. Vi genbruger den eksisterende ER-konfiguration, der oprindeligt er udviklet til at generere rapporten i OPENXML-formatet.  
 3. Udvid "Betalingsmodel" i træet.
 4. Vælg 'Betalingsmodel\Eksempel på regnearksrapport' i træet.
@@ -68,7 +68,7 @@ Aktuelt bruges Excel-dokumentet som en skabelon til at generere outputtet i OPEN
 Åbn dette dokument i Word, og gør følgende:  
 1. Åbn fanen Udvikler i Word (tilpas båndet, hvis det endnu ikke er aktiveret).
 2. Vælg XML-tilknytningsrude.
-3. Vælg den brugerdefinerede del 'Rapport' i opslaget.
+3. Vælg den brugerdefinerede del "Rapport" i opslaget.
 4. Udfør tilknytningen af elementerne i den markerede brugerdefinerede XML-del og indholdskontrolelementerne i Word-dokumentet.  5 Gem det opdaterede Word-dokument på et lokalt drev.  
 
 ## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a>Upload Word-skabelonen med brugerdefineret XML-del bundet til indholdskontrolelementer

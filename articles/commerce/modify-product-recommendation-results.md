@@ -3,7 +3,7 @@ title: Juster resultater for AI-ML-baserede produktanbefalinger
 description: I dette emne beskrives, hvordan du kan skræddersy resultater fra produktanbefalinger på basis af kunstig intelligens-maskinel indlæring (AI-ML) til din virksomhed.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127922"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154335"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Juster resultater for AI-ML-baserede produktanbefalinger
 
@@ -109,8 +109,6 @@ Udfør følgende trin for manuelt at tilføje eller fjerne resultater for et opr
 [Aktivere tilpassede anbefalinger](personalized-recommendations.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
-
-[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
 
 [Tilføje produktanbefalinger på POS](product.md)
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141735"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og bogføre en fremdateret check for en debitor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en kunde. Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser.   Fuldfør følgende opgaver, inden du registrerer og bogfører en fremdateret check, du har modtaget fra en kunde: • Opret fremdaterede checks på siden Kontant- og bankstyring • Opret en betalingsmåde for fremdaterede checks Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
+Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en kunde. Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser.   Fuldfør følgende opgaver, inden du registrerer og bogfører en fremdateret check, du har modtaget fra en kunde: *Opret fremdaterede checks på siden Kontant- og bankstyring* Opret en betalingsmåde for fremdaterede checks Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
 
 1. Gå til Kreditor > Betalinger > Betalingskladde.
 2. Klik på Ny.
