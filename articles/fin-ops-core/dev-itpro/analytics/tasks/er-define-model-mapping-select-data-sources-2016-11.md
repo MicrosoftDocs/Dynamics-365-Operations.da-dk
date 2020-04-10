@@ -16,145 +16,145 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185100"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142156"
 ---
-# <a name="define-er-model-mappings-and-select-data-sources-for-them"></a><span data-ttu-id="3ce96-103">Definere ER-modeltilknytninger og vælge datakilder til dem</span><span class="sxs-lookup"><span data-stu-id="3ce96-103">Define ER model mappings and select data sources for them</span></span>
+# <a name="define-er-model-mappings-and-select-data-sources-for-them"></a><span data-ttu-id="51861-103">Definere ER-modeltilknytninger og vælge datakilder til dem</span><span class="sxs-lookup"><span data-stu-id="51861-103">Define ER model mappings and select data sources for them</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3ce96-104">Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan vælge datakilder til en datamodel for elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="3ce96-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model.</span></span> <span data-ttu-id="3ce96-105">Datakilderne skal være bundet til enkelte komponenter i den valgte datamodel i designfasen og udfylde forretningsoplysninger til denne datamodel på kørselstidspunktet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-105">The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time.</span></span> <span data-ttu-id="3ce96-106">I dette eksempel skal du vælge datakilder til en eksisterende datamodel, der er oprettet for eksempelfirmaet Litware, Inc. For at fuldføre denne fremgangsmåde, skal du først fuldføre trinnene i proceduren "Oprette en ny datamodel".</span><span class="sxs-lookup"><span data-stu-id="3ce96-106">In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Create a new data model” procedure.</span></span>
+<span data-ttu-id="51861-104">Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan vælge datakilder til en datamodel for elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="51861-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model.</span></span> <span data-ttu-id="51861-105">Datakilderne skal være bundet til enkelte komponenter i den valgte datamodel i designfasen og udfylde forretningsoplysninger til denne datamodel på kørselstidspunktet.</span><span class="sxs-lookup"><span data-stu-id="51861-105">The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time.</span></span> <span data-ttu-id="51861-106">I dette eksempel skal du vælge datakilder til en eksisterende datamodel, der er oprettet for eksempelfirmaet Litware, Inc. For at fuldføre denne fremgangsmåde, skal du først fuldføre trinnene i proceduren "Oprette en ny datamodel".</span><span class="sxs-lookup"><span data-stu-id="51861-106">In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Create a new data model" procedure.</span></span>
 
 
-## <a name="open-the-electronic-reporting-configurations-tree"></a><span data-ttu-id="3ce96-107">Åbn træet til elektroniske rapporteringskonfigurationer</span><span class="sxs-lookup"><span data-stu-id="3ce96-107">Open the Electronic Reporting configurations tree</span></span>
-1. <span data-ttu-id="3ce96-108">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="3ce96-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="3ce96-109">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="3ce96-109">Click Reporting configurations.</span></span>
+## <a name="open-the-electronic-reporting-configurations-tree"></a><span data-ttu-id="51861-107">Åbn træet til elektroniske rapporteringskonfigurationer</span><span class="sxs-lookup"><span data-stu-id="51861-107">Open the Electronic Reporting configurations tree</span></span>
+1. <span data-ttu-id="51861-108">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="51861-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="51861-109">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="51861-109">Click Reporting configurations.</span></span>
 
-## <a name="insert-a-new-model-mapping"></a><span data-ttu-id="3ce96-110">Indsæt en ny modeltilknytning</span><span class="sxs-lookup"><span data-stu-id="3ce96-110">Insert a new model mapping</span></span>
-1. <span data-ttu-id="3ce96-111">Vælg "Betalinger (forenklet mode)" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-111">In the tree, select 'Payments (simplified model)'.</span></span>
-2. <span data-ttu-id="3ce96-112">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="3ce96-112">Click Designer.</span></span>
-3. <span data-ttu-id="3ce96-113">Klik på Tilknyt model til datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-113">Click Map model to datasource.</span></span>
-4. <span data-ttu-id="3ce96-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="3ce96-114">Click New.</span></span>
-    * <span data-ttu-id="3ce96-115">Derved oprettes en ny post, der knytter datamodellen til datakilder.</span><span class="sxs-lookup"><span data-stu-id="3ce96-115">This will create a new record that will map the data model to data sources.</span></span> <span data-ttu-id="3ce96-116">I dette eksempel skal du knytte datamodellen til datakilder for den ønskede betalingstype: overførsel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-116">In this example, you will map the data model to data sources for the desired payment type: credit transfer.</span></span>     <span data-ttu-id="3ce96-117">Det er muligt at udforme mere end én tilknytning til en bestemt datamodel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-117">It is possible to design more than one mapping for a particular data model.</span></span> <span data-ttu-id="3ce96-118">For eksempel kan du oprette en tilknytning til de forskellige typer betalinger, såsom direkte debitering eller krediteringsoverførsler.</span><span class="sxs-lookup"><span data-stu-id="3ce96-118">For example, you could create a mapping for the different types of payments, such as for direct debit or for credit transfers.</span></span> <span data-ttu-id="3ce96-119">I dette eksempel skal du oprette en tilknytning til overførsler.</span><span class="sxs-lookup"><span data-stu-id="3ce96-119">In this example, you will create a mapping for credit transfers.</span></span>  
-5. <span data-ttu-id="3ce96-120">Skriv CT-tilknytning" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-120">In the Name field, type 'CT mapping'.</span></span>
-    * <span data-ttu-id="3ce96-121">CT-tilknytning</span><span class="sxs-lookup"><span data-stu-id="3ce96-121">CT mapping</span></span>  
-6. <span data-ttu-id="3ce96-122">Skriv "Betalingsmodel tilknytning CT" i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="3ce96-122">In the Description field, type 'Payment model mapping CT'.</span></span>
-    * <span data-ttu-id="3ce96-123">Betalingsmodel tilknytning CT</span><span class="sxs-lookup"><span data-stu-id="3ce96-123">Payment model mapping CT</span></span>  
-7. <span data-ttu-id="3ce96-124">Skriv "CustomerCreditTransferInitiation" i feltet Definition.</span><span class="sxs-lookup"><span data-stu-id="3ce96-124">In the Definition field, type 'CustomerCreditTransferInitiation'.</span></span>
-    * <span data-ttu-id="3ce96-125">Vælg CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="3ce96-125">CustomerCreditTransferInitiation</span></span>  
-8. <span data-ttu-id="3ce96-126">ResolveChanges definitionen.</span><span class="sxs-lookup"><span data-stu-id="3ce96-126">ResolveChanges the Definition.</span></span>
-9. <span data-ttu-id="3ce96-127">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3ce96-127">Click Save.</span></span>
+## <a name="insert-a-new-model-mapping"></a><span data-ttu-id="51861-110">Indsæt en ny modeltilknytning</span><span class="sxs-lookup"><span data-stu-id="51861-110">Insert a new model mapping</span></span>
+1. <span data-ttu-id="51861-111">Vælg "Betalinger (forenklet mode)" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-111">In the tree, select 'Payments (simplified model)'.</span></span>
+2. <span data-ttu-id="51861-112">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="51861-112">Click Designer.</span></span>
+3. <span data-ttu-id="51861-113">Klik på Tilknyt model til datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-113">Click Map model to datasource.</span></span>
+4. <span data-ttu-id="51861-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="51861-114">Click New.</span></span>
+    * <span data-ttu-id="51861-115">Derved oprettes en ny post, der knytter datamodellen til datakilder.</span><span class="sxs-lookup"><span data-stu-id="51861-115">This will create a new record that will map the data model to data sources.</span></span> <span data-ttu-id="51861-116">I dette eksempel skal du knytte datamodellen til datakilder for den ønskede betalingstype: overførsel.</span><span class="sxs-lookup"><span data-stu-id="51861-116">In this example, you will map the data model to data sources for the desired payment type: credit transfer.</span></span>     <span data-ttu-id="51861-117">Det er muligt at udforme mere end én tilknytning til en bestemt datamodel.</span><span class="sxs-lookup"><span data-stu-id="51861-117">It is possible to design more than one mapping for a particular data model.</span></span> <span data-ttu-id="51861-118">For eksempel kan du oprette en tilknytning til de forskellige typer betalinger, såsom direkte debitering eller krediteringsoverførsler.</span><span class="sxs-lookup"><span data-stu-id="51861-118">For example, you could create a mapping for the different types of payments, such as for direct debit or for credit transfers.</span></span> <span data-ttu-id="51861-119">I dette eksempel skal du oprette en tilknytning til overførsler.</span><span class="sxs-lookup"><span data-stu-id="51861-119">In this example, you will create a mapping for credit transfers.</span></span>  
+5. <span data-ttu-id="51861-120">Skriv CT-tilknytning" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-120">In the Name field, type 'CT mapping'.</span></span>
+    * <span data-ttu-id="51861-121">CT-tilknytning</span><span class="sxs-lookup"><span data-stu-id="51861-121">CT mapping</span></span>  
+6. <span data-ttu-id="51861-122">Skriv "Betalingsmodel tilknytning CT" i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="51861-122">In the Description field, type 'Payment model mapping CT'.</span></span>
+    * <span data-ttu-id="51861-123">Betalingsmodel tilknytning CT</span><span class="sxs-lookup"><span data-stu-id="51861-123">Payment model mapping CT</span></span>  
+7. <span data-ttu-id="51861-124">Skriv "CustomerCreditTransferInitiation" i feltet Definition.</span><span class="sxs-lookup"><span data-stu-id="51861-124">In the Definition field, type 'CustomerCreditTransferInitiation'.</span></span>
+    * <span data-ttu-id="51861-125">Vælg CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="51861-125">CustomerCreditTransferInitiation</span></span>  
+8. <span data-ttu-id="51861-126">ResolveChanges definitionen.</span><span class="sxs-lookup"><span data-stu-id="51861-126">ResolveChanges the Definition.</span></span>
+9. <span data-ttu-id="51861-127">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="51861-127">Click Save.</span></span>
 
-## <a name="define-required-data-sources-for-the-current-model-mapping"></a><span data-ttu-id="3ce96-128">Definer påkrævede datakilder for den aktuelle modeltilknytning</span><span class="sxs-lookup"><span data-stu-id="3ce96-128">Define required data sources for the current model mapping</span></span>
-1. <span data-ttu-id="3ce96-129">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="3ce96-129">Click Designer.</span></span>
-2. <span data-ttu-id="3ce96-130">Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-130">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
-3. <span data-ttu-id="3ce96-131">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="3ce96-131">Click Add root.</span></span>
-    * <span data-ttu-id="3ce96-132">Angiv denne datakilde for at få adgang til betalingstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="3ce96-132">Enter this data source to access payment transactions.</span></span>  
-4. <span data-ttu-id="3ce96-133">Skriv "Transaktioner" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-133">In the Name field, type 'Transactions'.</span></span>
-    * <span data-ttu-id="3ce96-134">Poster</span><span class="sxs-lookup"><span data-stu-id="3ce96-134">Transactions</span></span>  
-5. <span data-ttu-id="3ce96-135">Angiv "Transaktioner" i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="3ce96-135">In the Label field, enter 'Transactions'.</span></span>
-    * <span data-ttu-id="3ce96-136">Poster</span><span class="sxs-lookup"><span data-stu-id="3ce96-136">Transactions</span></span>  
-6. <span data-ttu-id="3ce96-137">Angiv "Finansjournallinjer" i feltet Hjælp.</span><span class="sxs-lookup"><span data-stu-id="3ce96-137">In the Help field, enter 'Ledger journal lines'.</span></span>
-    * <span data-ttu-id="3ce96-138">Finansjournallinjer</span><span class="sxs-lookup"><span data-stu-id="3ce96-138">Ledger journal lines</span></span>  
-7. <span data-ttu-id="3ce96-139">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-139">Select Yes in the Ask for query field.</span></span>
-    * <span data-ttu-id="3ce96-140">Vælg Ja.</span><span class="sxs-lookup"><span data-stu-id="3ce96-140">Select Yes.</span></span>  
-8. <span data-ttu-id="3ce96-141">Skriv "LedgerJournalTrans" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-141">In the Table field, type 'LedgerJournalTrans'.</span></span>
-    * <span data-ttu-id="3ce96-142">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="3ce96-142">LedgerJournalTrans</span></span>  
-9. <span data-ttu-id="3ce96-143">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="3ce96-143">Click OK.</span></span>
-    * <span data-ttu-id="3ce96-144">Vælg LedgerJournalTrans-tabellen som en datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-144">Select the LedgerJournalTrans table as a data source for the current data model.</span></span>  
-10. <span data-ttu-id="3ce96-145">Vælg "Funktioner\Beregnet felt" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-145">In the tree, select 'Functions\Calculated field'.</span></span>
-11. <span data-ttu-id="3ce96-146">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="3ce96-146">Click Add.</span></span>
-    * <span data-ttu-id="3ce96-147">Klik på Tilføj for at tilføje et nyt beregnet felt.</span><span class="sxs-lookup"><span data-stu-id="3ce96-147">Click Add to add a new calculated field.</span></span>  
-12. <span data-ttu-id="3ce96-148">Skriv "$EndToEndID" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-148">In the Name field, type '$EndToEndID'.</span></span>
-    * <span data-ttu-id="3ce96-149">$EndToEndID</span><span class="sxs-lookup"><span data-stu-id="3ce96-149">$EndToEndID</span></span>  
-13. <span data-ttu-id="3ce96-150">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-150">Click Edit formula.</span></span>
-14. <span data-ttu-id="3ce96-151">Vælg '"Streng\SAMMENKÆD" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-151">In the tree, select 'String\CONCATENATE'.</span></span>
-15. <span data-ttu-id="3ce96-152">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="3ce96-152">Click Add function.</span></span>
-16. <span data-ttu-id="3ce96-153">Udvid "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-153">In the tree, expand 'Transactions'.</span></span>
-17. <span data-ttu-id="3ce96-154">Vælg "Transaktioner\Bilag" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-154">In the tree, select 'Transactions\Voucher'.</span></span>
-18. <span data-ttu-id="3ce96-155">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-155">Click Add data source.</span></span>
-19. <span data-ttu-id="3ce96-156">Skriv "CONCATENATE(Transaktioner.Bilag, "-", " i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-156">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", '.</span></span>
-    * <span data-ttu-id="3ce96-157">Skriv [, "-",] i slutningen af formlen.</span><span class="sxs-lookup"><span data-stu-id="3ce96-157">Type [ , “-“, ] at the end of the formula.</span></span>  
-20. <span data-ttu-id="3ce96-158">Vælg "Streng\TEKST" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-158">In the tree, select 'String\TEXT'.</span></span>
-21. <span data-ttu-id="3ce96-159">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="3ce96-159">Click Add function.</span></span>
-22. <span data-ttu-id="3ce96-160">Vælg "Transaktioner\Post-ID(RecId)' i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-160">In the tree, select 'Transactions\Record-ID(RecId)'.</span></span>
-23. <span data-ttu-id="3ce96-161">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-161">Click Add data source.</span></span>
-24. <span data-ttu-id="3ce96-162">Skriv "CONCATENATE(Transaktioner.Bilag, "-", TEXT(Transaktioner.RecId))" i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-162">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))'.</span></span>
-    * <span data-ttu-id="3ce96-163">Skriv [))] i slutningen af formlen.</span><span class="sxs-lookup"><span data-stu-id="3ce96-163">Type [))] at the end of the formula.</span></span>  
-25. <span data-ttu-id="3ce96-164">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3ce96-164">Click Save.</span></span>
-    * <span data-ttu-id="3ce96-165">Sørg for, at ingen fejl er fundet for den formel, der er oprettet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-165">Make sure that no errors have been discovered for the created formula.</span></span> <span data-ttu-id="3ce96-166">Se fanen FEJL under formelkontrolelementet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-166">See the ERRORS tab below the formula editor control.</span></span>  
-26. <span data-ttu-id="3ce96-167">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3ce96-167">Close the page.</span></span>
-27. <span data-ttu-id="3ce96-168">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="3ce96-168">Click OK.</span></span>
-    * <span data-ttu-id="3ce96-169">Føj det beregnede felt til denne datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-169">Add the calculated field to this data source.</span></span>  
-28. <span data-ttu-id="3ce96-170">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="3ce96-170">Click Add.</span></span>
-    * <span data-ttu-id="3ce96-171">Klik på Tilføj for at tilføje et nyt beregnet felt.</span><span class="sxs-lookup"><span data-stu-id="3ce96-171">Click Add to add a new calculated field.</span></span>  
-29. <span data-ttu-id="3ce96-172">Skriv "$Amount" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-172">In the Name field, type '$Amount'.</span></span>
-    * <span data-ttu-id="3ce96-173">$Amount</span><span class="sxs-lookup"><span data-stu-id="3ce96-173">$Amount</span></span>  
-30. <span data-ttu-id="3ce96-174">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-174">Click Edit formula.</span></span>
-31. <span data-ttu-id="3ce96-175">Udvid "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-175">In the tree, expand 'Transactions'.</span></span>
-32. <span data-ttu-id="3ce96-176">Vælg "Transaktioner\Debit(AmountCurDebit)" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-176">In the tree, select 'Transactions\Debit(AmountCurDebit)'.</span></span>
-33. <span data-ttu-id="3ce96-177">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-177">Click Add data source.</span></span>
-34. <span data-ttu-id="3ce96-178">Skriv "Transaktioner.AmountCurDebit - " i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-178">In the Formula field, enter 'Transactions.AmountCurDebit - '.</span></span>
-    * <span data-ttu-id="3ce96-179">Skriv [ - ] i slutningen af formlen.</span><span class="sxs-lookup"><span data-stu-id="3ce96-179">Type [ - ] at the end of the formula.</span></span>  
-35. <span data-ttu-id="3ce96-180">Vælg "Transaktioner\Credit(AmountCurCredit)" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-180">In the tree, select 'Transactions\Credit(AmountCurCredit)'.</span></span>
-36. <span data-ttu-id="3ce96-181">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-181">Click Add data source.</span></span>
-37. <span data-ttu-id="3ce96-182">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3ce96-182">Click Save.</span></span>
-38. <span data-ttu-id="3ce96-183">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3ce96-183">Close the page.</span></span>
-39. <span data-ttu-id="3ce96-184">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="3ce96-184">Click OK.</span></span>
-    * <span data-ttu-id="3ce96-185">Dette føjer det $Amount-beregnede felt til den valgte datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-185">This will add the $Amount calculated field to the selected data source for the current data model.</span></span>  
-40. <span data-ttu-id="3ce96-186">Vælg "Transaktioner\$Amount" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-186">In the tree, select 'Transactions\$Amount'.</span></span>
-41. <span data-ttu-id="3ce96-187">Udvid "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-187">In the tree, expand 'Transactions'.</span></span>
-42. <span data-ttu-id="3ce96-188">Udvid eller skjul "Transaktioner\$Amount" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-188">In the tree, expand or collapse 'Transactions\$Amount'.</span></span>
-43. <span data-ttu-id="3ce96-189">Udvid eller skjul "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-189">In the tree, expand or collapse 'Transactions'.</span></span>
-44. <span data-ttu-id="3ce96-190">Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-190">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
-45. <span data-ttu-id="3ce96-191">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="3ce96-191">Click Add root.</span></span>
-    * <span data-ttu-id="3ce96-192">Angiv denne datakilde for at få adgang til oplysninger om firmaets bankkonto.</span><span class="sxs-lookup"><span data-stu-id="3ce96-192">Enter this data source to access the company’s bank account details.</span></span>  
-46. <span data-ttu-id="3ce96-193">Skriv "BankAccount" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-193">In the Name field, type 'BankAccount'.</span></span>
-    * <span data-ttu-id="3ce96-194">BankAccount</span><span class="sxs-lookup"><span data-stu-id="3ce96-194">BankAccount</span></span>  
-47. <span data-ttu-id="3ce96-195">Angiv "Bankkonto" i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="3ce96-195">In the Label field, enter 'Bank Account'.</span></span>
-    * <span data-ttu-id="3ce96-196">Bankkonto</span><span class="sxs-lookup"><span data-stu-id="3ce96-196">Bank Account</span></span>  
-48. <span data-ttu-id="3ce96-197">Angiv "Bankkonto" i feltet Hjælp.</span><span class="sxs-lookup"><span data-stu-id="3ce96-197">In the Help field, enter 'Bank Account'.</span></span>
-    * <span data-ttu-id="3ce96-198">Bankkonto</span><span class="sxs-lookup"><span data-stu-id="3ce96-198">Bank Account</span></span>  
-49. <span data-ttu-id="3ce96-199">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-199">Select Yes in the Ask for query field.</span></span>
-    * <span data-ttu-id="3ce96-200">Vælg Ja.</span><span class="sxs-lookup"><span data-stu-id="3ce96-200">Select Yes.</span></span>  
-50. <span data-ttu-id="3ce96-201">Skriv "BankAccountTable" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-201">In the Table field, type 'BankAccountTable'.</span></span>
-    * <span data-ttu-id="3ce96-202">BankAccountTable</span><span class="sxs-lookup"><span data-stu-id="3ce96-202">BankAccountTable</span></span>  
-51. <span data-ttu-id="3ce96-203">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="3ce96-203">Click OK.</span></span>
-    * <span data-ttu-id="3ce96-204">Vælg BankAccountTable-tabellen som en datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-204">Select the BankAccountTable table as a data source for the current data model.</span></span>  
-52. <span data-ttu-id="3ce96-205">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="3ce96-205">Click Add root.</span></span>
-    * <span data-ttu-id="3ce96-206">Angiv denne datakilde for at få adgang til oplysninger om firmaets forudsætninger.</span><span class="sxs-lookup"><span data-stu-id="3ce96-206">Enter this data source to access the company’s requisites.</span></span>  
-53. <span data-ttu-id="3ce96-207">Skriv "Firma" feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-207">In the Name field, type 'Company'.</span></span>
-    * <span data-ttu-id="3ce96-208">Regnskab</span><span class="sxs-lookup"><span data-stu-id="3ce96-208">Company</span></span>  
-54. <span data-ttu-id="3ce96-209">Skriv en værdi i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="3ce96-209">In the Label field, type a value.</span></span>
-    * <span data-ttu-id="3ce96-210">Firmaoplysninger</span><span class="sxs-lookup"><span data-stu-id="3ce96-210">Company information</span></span>  
-55. <span data-ttu-id="3ce96-211">Skriv "Firmaoplysninger" i feltet Hjælp.</span><span class="sxs-lookup"><span data-stu-id="3ce96-211">In the Help field, enter 'Company information'.</span></span>
-    * <span data-ttu-id="3ce96-212">Firmaoplysninger</span><span class="sxs-lookup"><span data-stu-id="3ce96-212">Company information</span></span>  
-56. <span data-ttu-id="3ce96-213">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-213">Select Yes in the Ask for query field.</span></span>
-    * <span data-ttu-id="3ce96-214">Vælg Ja.</span><span class="sxs-lookup"><span data-stu-id="3ce96-214">Select Yes.</span></span>  
-57. <span data-ttu-id="3ce96-215">Skriv "CompanyInfo" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-215">In the Table field, type 'CompanyInfo'.</span></span>
-    * <span data-ttu-id="3ce96-216">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="3ce96-216">CompanyInfo</span></span>  
-58. <span data-ttu-id="3ce96-217">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="3ce96-217">Click OK.</span></span>
-    * <span data-ttu-id="3ce96-218">Vælg CompanyInfo-tabellen som en datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-218">Select the CompanyInfo table as a data source for the current data model.</span></span>  
-59. <span data-ttu-id="3ce96-219">Vælg "Funktioner\Beregnet felt" i træet.</span><span class="sxs-lookup"><span data-stu-id="3ce96-219">In the tree, select 'Functions\Calculated field'.</span></span>
-60. <span data-ttu-id="3ce96-220">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="3ce96-220">Click Add root.</span></span>
-    * <span data-ttu-id="3ce96-221">Indsæt et beregnet felt som en ny datakilde.</span><span class="sxs-lookup"><span data-stu-id="3ce96-221">Insert a calculated field as a new data source.</span></span>  
-61. <span data-ttu-id="3ce96-222">Skriv "ProcessingDateTime" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3ce96-222">In the Name field, type 'ProcessingDateTime'.</span></span>
-    * <span data-ttu-id="3ce96-223">ProcessingDateTime</span><span class="sxs-lookup"><span data-stu-id="3ce96-223">ProcessingDateTime</span></span>  
-62. <span data-ttu-id="3ce96-224">Skriv "Afviklingsdato og -klokkeslæt" i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="3ce96-224">In the Label field, enter 'Processing date & time'.</span></span>
-    * <span data-ttu-id="3ce96-225">Behandlingsdato og -klokkeslæt</span><span class="sxs-lookup"><span data-stu-id="3ce96-225">Processing date & time</span></span>  
-63. <span data-ttu-id="3ce96-226">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-226">Click Edit formula.</span></span>
-64. <span data-ttu-id="3ce96-227">Vælg "Dato/klokkeslæt\SESSIONNOW".</span><span class="sxs-lookup"><span data-stu-id="3ce96-227">In the tree, select 'Date/time\SESSIONNOW'.</span></span>
-65. <span data-ttu-id="3ce96-228">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="3ce96-228">Click Add function.</span></span>
-66. <span data-ttu-id="3ce96-229">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3ce96-229">Click Save.</span></span>
-67. <span data-ttu-id="3ce96-230">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3ce96-230">Close the page.</span></span>
-68. <span data-ttu-id="3ce96-231">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="3ce96-231">Click OK.</span></span>
-    * <span data-ttu-id="3ce96-232">Føj det ProcessingDateTime-beregnede som en datakilde til den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="3ce96-232">Add the ProcessingDateTime calculated field as a data source for the current data model.</span></span>  
-69. <span data-ttu-id="3ce96-233">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3ce96-233">Click Save.</span></span>
-70. <span data-ttu-id="3ce96-234">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3ce96-234">Close the page.</span></span>
-71. <span data-ttu-id="3ce96-235">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3ce96-235">Close the page.</span></span>
-72. <span data-ttu-id="3ce96-236">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3ce96-236">Close the page.</span></span>
+## <a name="define-required-data-sources-for-the-current-model-mapping"></a><span data-ttu-id="51861-128">Definer påkrævede datakilder for den aktuelle modeltilknytning</span><span class="sxs-lookup"><span data-stu-id="51861-128">Define required data sources for the current model mapping</span></span>
+1. <span data-ttu-id="51861-129">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="51861-129">Click Designer.</span></span>
+2. <span data-ttu-id="51861-130">Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-130">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+3. <span data-ttu-id="51861-131">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="51861-131">Click Add root.</span></span>
+    * <span data-ttu-id="51861-132">Angiv denne datakilde for at få adgang til betalingstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="51861-132">Enter this data source to access payment transactions.</span></span>  
+4. <span data-ttu-id="51861-133">Skriv "Transaktioner" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-133">In the Name field, type 'Transactions'.</span></span>
+    * <span data-ttu-id="51861-134">Poster</span><span class="sxs-lookup"><span data-stu-id="51861-134">Transactions</span></span>  
+5. <span data-ttu-id="51861-135">Angiv "Transaktioner" i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="51861-135">In the Label field, enter 'Transactions'.</span></span>
+    * <span data-ttu-id="51861-136">Poster</span><span class="sxs-lookup"><span data-stu-id="51861-136">Transactions</span></span>  
+6. <span data-ttu-id="51861-137">Angiv "Finansjournallinjer" i feltet Hjælp.</span><span class="sxs-lookup"><span data-stu-id="51861-137">In the Help field, enter 'Ledger journal lines'.</span></span>
+    * <span data-ttu-id="51861-138">Finansjournallinjer</span><span class="sxs-lookup"><span data-stu-id="51861-138">Ledger journal lines</span></span>  
+7. <span data-ttu-id="51861-139">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="51861-139">Select Yes in the Ask for query field.</span></span>
+    * <span data-ttu-id="51861-140">Vælg Ja.</span><span class="sxs-lookup"><span data-stu-id="51861-140">Select Yes.</span></span>  
+8. <span data-ttu-id="51861-141">Skriv "LedgerJournalTrans" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="51861-141">In the Table field, type 'LedgerJournalTrans'.</span></span>
+    * <span data-ttu-id="51861-142">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="51861-142">LedgerJournalTrans</span></span>  
+9. <span data-ttu-id="51861-143">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="51861-143">Click OK.</span></span>
+    * <span data-ttu-id="51861-144">Vælg LedgerJournalTrans-tabellen som en datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="51861-144">Select the LedgerJournalTrans table as a data source for the current data model.</span></span>  
+10. <span data-ttu-id="51861-145">Vælg "Funktioner\Beregnet felt" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-145">In the tree, select 'Functions\Calculated field'.</span></span>
+11. <span data-ttu-id="51861-146">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="51861-146">Click Add.</span></span>
+    * <span data-ttu-id="51861-147">Klik på Tilføj for at tilføje et nyt beregnet felt.</span><span class="sxs-lookup"><span data-stu-id="51861-147">Click Add to add a new calculated field.</span></span>  
+12. <span data-ttu-id="51861-148">Skriv "$EndToEndID" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-148">In the Name field, type '$EndToEndID'.</span></span>
+    * <span data-ttu-id="51861-149">$EndToEndID</span><span class="sxs-lookup"><span data-stu-id="51861-149">$EndToEndID</span></span>  
+13. <span data-ttu-id="51861-150">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="51861-150">Click Edit formula.</span></span>
+14. <span data-ttu-id="51861-151">Vælg '"Streng\SAMMENKÆD" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-151">In the tree, select 'String\CONCATENATE'.</span></span>
+15. <span data-ttu-id="51861-152">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="51861-152">Click Add function.</span></span>
+16. <span data-ttu-id="51861-153">Udvid "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-153">In the tree, expand 'Transactions'.</span></span>
+17. <span data-ttu-id="51861-154">Vælg "Transaktioner\Bilag" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-154">In the tree, select 'Transactions\Voucher'.</span></span>
+18. <span data-ttu-id="51861-155">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-155">Click Add data source.</span></span>
+19. <span data-ttu-id="51861-156">Skriv "CONCATENATE(Transaktioner.Bilag, "-", " i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="51861-156">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", '.</span></span>
+    * <span data-ttu-id="51861-157">Skriv [ , "-", ] i slutningen af formlen.</span><span class="sxs-lookup"><span data-stu-id="51861-157">Type [ , "-", ] at the end of the formula.</span></span>  
+20. <span data-ttu-id="51861-158">Vælg "Streng\TEKST" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-158">In the tree, select 'String\TEXT'.</span></span>
+21. <span data-ttu-id="51861-159">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="51861-159">Click Add function.</span></span>
+22. <span data-ttu-id="51861-160">Vælg "Transaktioner\Post-ID(RecId)' i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-160">In the tree, select 'Transactions\Record-ID(RecId)'.</span></span>
+23. <span data-ttu-id="51861-161">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-161">Click Add data source.</span></span>
+24. <span data-ttu-id="51861-162">Skriv "CONCATENATE(Transaktioner.Bilag, "-", TEXT(Transaktioner.RecId))" i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="51861-162">In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))'.</span></span>
+    * <span data-ttu-id="51861-163">Skriv [))] i slutningen af formlen.</span><span class="sxs-lookup"><span data-stu-id="51861-163">Type [))] at the end of the formula.</span></span>  
+25. <span data-ttu-id="51861-164">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="51861-164">Click Save.</span></span>
+    * <span data-ttu-id="51861-165">Sørg for, at ingen fejl er fundet for den formel, der er oprettet.</span><span class="sxs-lookup"><span data-stu-id="51861-165">Make sure that no errors have been discovered for the created formula.</span></span> <span data-ttu-id="51861-166">Se fanen FEJL under formelkontrolelementet.</span><span class="sxs-lookup"><span data-stu-id="51861-166">See the ERRORS tab below the formula editor control.</span></span>  
+26. <span data-ttu-id="51861-167">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="51861-167">Close the page.</span></span>
+27. <span data-ttu-id="51861-168">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="51861-168">Click OK.</span></span>
+    * <span data-ttu-id="51861-169">Føj det beregnede felt til denne datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-169">Add the calculated field to this data source.</span></span>  
+28. <span data-ttu-id="51861-170">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="51861-170">Click Add.</span></span>
+    * <span data-ttu-id="51861-171">Klik på Tilføj for at tilføje et nyt beregnet felt.</span><span class="sxs-lookup"><span data-stu-id="51861-171">Click Add to add a new calculated field.</span></span>  
+29. <span data-ttu-id="51861-172">Skriv "$Amount" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-172">In the Name field, type '$Amount'.</span></span>
+    * <span data-ttu-id="51861-173">$Amount</span><span class="sxs-lookup"><span data-stu-id="51861-173">$Amount</span></span>  
+30. <span data-ttu-id="51861-174">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="51861-174">Click Edit formula.</span></span>
+31. <span data-ttu-id="51861-175">Udvid "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-175">In the tree, expand 'Transactions'.</span></span>
+32. <span data-ttu-id="51861-176">Vælg "Transaktioner\Debit(AmountCurDebit)" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-176">In the tree, select 'Transactions\Debit(AmountCurDebit)'.</span></span>
+33. <span data-ttu-id="51861-177">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-177">Click Add data source.</span></span>
+34. <span data-ttu-id="51861-178">Skriv "Transaktioner.AmountCurDebit - " i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="51861-178">In the Formula field, enter 'Transactions.AmountCurDebit - '.</span></span>
+    * <span data-ttu-id="51861-179">Skriv [ - ] i slutningen af formlen.</span><span class="sxs-lookup"><span data-stu-id="51861-179">Type [ - ] at the end of the formula.</span></span>  
+35. <span data-ttu-id="51861-180">Vælg "Transaktioner\Credit(AmountCurCredit)" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-180">In the tree, select 'Transactions\Credit(AmountCurCredit)'.</span></span>
+36. <span data-ttu-id="51861-181">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-181">Click Add data source.</span></span>
+37. <span data-ttu-id="51861-182">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="51861-182">Click Save.</span></span>
+38. <span data-ttu-id="51861-183">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="51861-183">Close the page.</span></span>
+39. <span data-ttu-id="51861-184">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="51861-184">Click OK.</span></span>
+    * <span data-ttu-id="51861-185">Dette føjer det $Amount-beregnede felt til den valgte datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="51861-185">This will add the $Amount calculated field to the selected data source for the current data model.</span></span>  
+40. <span data-ttu-id="51861-186">Vælg "Transaktioner\$Amount" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-186">In the tree, select 'Transactions\$Amount'.</span></span>
+41. <span data-ttu-id="51861-187">Udvid "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-187">In the tree, expand 'Transactions'.</span></span>
+42. <span data-ttu-id="51861-188">Udvid eller skjul "Transaktioner\$Amount" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-188">In the tree, expand or collapse 'Transactions\$Amount'.</span></span>
+43. <span data-ttu-id="51861-189">Udvid eller skjul "Transaktioner" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-189">In the tree, expand or collapse 'Transactions'.</span></span>
+44. <span data-ttu-id="51861-190">Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-190">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+45. <span data-ttu-id="51861-191">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="51861-191">Click Add root.</span></span>
+    * <span data-ttu-id="51861-192">Angiv denne datakilde for at få adgang til oplysninger om firmaets bankkonto.</span><span class="sxs-lookup"><span data-stu-id="51861-192">Enter this data source to access the company's bank account details.</span></span>  
+46. <span data-ttu-id="51861-193">Skriv "BankAccount" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-193">In the Name field, type 'BankAccount'.</span></span>
+    * <span data-ttu-id="51861-194">BankAccount</span><span class="sxs-lookup"><span data-stu-id="51861-194">BankAccount</span></span>  
+47. <span data-ttu-id="51861-195">Angiv "Bankkonto" i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="51861-195">In the Label field, enter 'Bank Account'.</span></span>
+    * <span data-ttu-id="51861-196">Bankkonto</span><span class="sxs-lookup"><span data-stu-id="51861-196">Bank Account</span></span>  
+48. <span data-ttu-id="51861-197">Angiv "Bankkonto" i feltet Hjælp.</span><span class="sxs-lookup"><span data-stu-id="51861-197">In the Help field, enter 'Bank Account'.</span></span>
+    * <span data-ttu-id="51861-198">Bankkonto</span><span class="sxs-lookup"><span data-stu-id="51861-198">Bank Account</span></span>  
+49. <span data-ttu-id="51861-199">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="51861-199">Select Yes in the Ask for query field.</span></span>
+    * <span data-ttu-id="51861-200">Vælg Ja.</span><span class="sxs-lookup"><span data-stu-id="51861-200">Select Yes.</span></span>  
+50. <span data-ttu-id="51861-201">Skriv "BankAccountTable" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="51861-201">In the Table field, type 'BankAccountTable'.</span></span>
+    * <span data-ttu-id="51861-202">BankAccountTable</span><span class="sxs-lookup"><span data-stu-id="51861-202">BankAccountTable</span></span>  
+51. <span data-ttu-id="51861-203">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="51861-203">Click OK.</span></span>
+    * <span data-ttu-id="51861-204">Vælg BankAccountTable-tabellen som en datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="51861-204">Select the BankAccountTable table as a data source for the current data model.</span></span>  
+52. <span data-ttu-id="51861-205">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="51861-205">Click Add root.</span></span>
+    * <span data-ttu-id="51861-206">Angiv denne datakilde for at få adgang til oplysninger om firmaets forudsætninger.</span><span class="sxs-lookup"><span data-stu-id="51861-206">Enter this data source to access the company's requisites.</span></span>  
+53. <span data-ttu-id="51861-207">Skriv "Firma" feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-207">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="51861-208">Regnskab</span><span class="sxs-lookup"><span data-stu-id="51861-208">Company</span></span>  
+54. <span data-ttu-id="51861-209">Skriv en værdi i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="51861-209">In the Label field, type a value.</span></span>
+    * <span data-ttu-id="51861-210">Firmaoplysninger</span><span class="sxs-lookup"><span data-stu-id="51861-210">Company information</span></span>  
+55. <span data-ttu-id="51861-211">Skriv "Firmaoplysninger" i feltet Hjælp.</span><span class="sxs-lookup"><span data-stu-id="51861-211">In the Help field, enter 'Company information'.</span></span>
+    * <span data-ttu-id="51861-212">Firmaoplysninger</span><span class="sxs-lookup"><span data-stu-id="51861-212">Company information</span></span>  
+56. <span data-ttu-id="51861-213">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="51861-213">Select Yes in the Ask for query field.</span></span>
+    * <span data-ttu-id="51861-214">Vælg Ja.</span><span class="sxs-lookup"><span data-stu-id="51861-214">Select Yes.</span></span>  
+57. <span data-ttu-id="51861-215">Skriv "CompanyInfo" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="51861-215">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="51861-216">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="51861-216">CompanyInfo</span></span>  
+58. <span data-ttu-id="51861-217">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="51861-217">Click OK.</span></span>
+    * <span data-ttu-id="51861-218">Vælg CompanyInfo-tabellen som en datakilde for den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="51861-218">Select the CompanyInfo table as a data source for the current data model.</span></span>  
+59. <span data-ttu-id="51861-219">Vælg "Funktioner\Beregnet felt" i træet.</span><span class="sxs-lookup"><span data-stu-id="51861-219">In the tree, select 'Functions\Calculated field'.</span></span>
+60. <span data-ttu-id="51861-220">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="51861-220">Click Add root.</span></span>
+    * <span data-ttu-id="51861-221">Indsæt et beregnet felt som en ny datakilde.</span><span class="sxs-lookup"><span data-stu-id="51861-221">Insert a calculated field as a new data source.</span></span>  
+61. <span data-ttu-id="51861-222">Skriv "ProcessingDateTime" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="51861-222">In the Name field, type 'ProcessingDateTime'.</span></span>
+    * <span data-ttu-id="51861-223">ProcessingDateTime</span><span class="sxs-lookup"><span data-stu-id="51861-223">ProcessingDateTime</span></span>  
+62. <span data-ttu-id="51861-224">Skriv "Afviklingsdato og -klokkeslæt" i feltet Etiket.</span><span class="sxs-lookup"><span data-stu-id="51861-224">In the Label field, enter 'Processing date & time'.</span></span>
+    * <span data-ttu-id="51861-225">Behandlingsdato og -klokkeslæt</span><span class="sxs-lookup"><span data-stu-id="51861-225">Processing date & time</span></span>  
+63. <span data-ttu-id="51861-226">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="51861-226">Click Edit formula.</span></span>
+64. <span data-ttu-id="51861-227">Vælg "Dato/klokkeslæt\SESSIONNOW".</span><span class="sxs-lookup"><span data-stu-id="51861-227">In the tree, select 'Date/time\SESSIONNOW'.</span></span>
+65. <span data-ttu-id="51861-228">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="51861-228">Click Add function.</span></span>
+66. <span data-ttu-id="51861-229">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="51861-229">Click Save.</span></span>
+67. <span data-ttu-id="51861-230">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="51861-230">Close the page.</span></span>
+68. <span data-ttu-id="51861-231">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="51861-231">Click OK.</span></span>
+    * <span data-ttu-id="51861-232">Føj det ProcessingDateTime-beregnede som en datakilde til den aktuelle datamodel.</span><span class="sxs-lookup"><span data-stu-id="51861-232">Add the ProcessingDateTime calculated field as a data source for the current data model.</span></span>  
+69. <span data-ttu-id="51861-233">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="51861-233">Click Save.</span></span>
+70. <span data-ttu-id="51861-234">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="51861-234">Close the page.</span></span>
+71. <span data-ttu-id="51861-235">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="51861-235">Close the page.</span></span>
+72. <span data-ttu-id="51861-236">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="51861-236">Close the page.</span></span>
 

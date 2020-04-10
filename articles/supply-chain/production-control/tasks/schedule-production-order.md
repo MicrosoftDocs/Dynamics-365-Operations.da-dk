@@ -17,41 +17,41 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6fa2ea9d38c4f4d00f742ccfbf714c237f0ce4d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4ae2414fcc96b4a12aeb0c60252a27321aacc7df
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843451"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146623"
 ---
-# <a name="schedule-a-production-order"></a><span data-ttu-id="a0ad7-103">Planlægge en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="a0ad7-103">Schedule a production order</span></span>
+# <a name="schedule-a-production-order"></a><span data-ttu-id="1ac78-103">Planlægge en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="1ac78-103">Schedule a production order</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a0ad7-104">Denne procedure viser, hvordan du planlægger en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-104">This procedure shows how to schedule a production order.</span></span> <span data-ttu-id="a0ad7-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="a0ad7-106">Dette er den tredje procedure ud af syv, der beskriver produktionsordrelivscyklussen.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-106">This is the third procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="1ac78-104">Denne procedure viser, hvordan du planlægger en produktionsordre.</span><span class="sxs-lookup"><span data-stu-id="1ac78-104">This procedure shows how to schedule a production order.</span></span> <span data-ttu-id="1ac78-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="1ac78-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="1ac78-106">Dette er den tredje procedure ud af syv, der beskriver produktionsordrelivscyklussen.</span><span class="sxs-lookup"><span data-stu-id="1ac78-106">This is the third procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="schedule-a-production-order"></a><span data-ttu-id="a0ad7-107">Planlægge en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="a0ad7-107">Schedule a production order</span></span>
-1. <span data-ttu-id="a0ad7-108">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="a0ad7-109">Vælg en produktionsordre, som har statussen Forkalkuleret.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-109">Select a production order that has the Estimated status.</span></span>  
-2. <span data-ttu-id="a0ad7-110">Klik på Planlæg i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-110">On the Action Pane, click Schedule.</span></span>
-3. <span data-ttu-id="a0ad7-111">Klik på Finplanlægge.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-111">Click Schedule jobs.</span></span>
-    * <span data-ttu-id="a0ad7-112">Parametrene for planlægning konfigureres på denne side.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-112">The parameters for scheduling are set up on this page.</span></span> <span data-ttu-id="a0ad7-113">Du kan konfigurere parametre for bestemte brugere eller alle brugere.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-113">You can set up the parameters for specific users or all users.</span></span>  
-4. <span data-ttu-id="a0ad7-114">Vælg "Fremad fra i dag" i feltet Planlægningsvej.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-114">In the Scheduling direction field, select 'Forward from today'.</span></span>
-5. <span data-ttu-id="a0ad7-115">Angiv en dato i feltet Planlægningsdato.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-115">In the Scheduling date field, enter a date.</span></span>
-6. <span data-ttu-id="a0ad7-116">Markér eller fjern markeringen i afkrydsningsfeltet Kapacitetsbegrænsning.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-116">Select or clear the Finite capacity check box.</span></span>
-7. <span data-ttu-id="a0ad7-117">Markér eller fjern markeringen i afkrydsningsfeltet Materialebegrænsning.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-117">Select or clear the Finite material check box.</span></span>
-8. <span data-ttu-id="a0ad7-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-118">Click OK.</span></span>
+## <a name="schedule-a-production-order"></a><span data-ttu-id="1ac78-107">Planlægge en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="1ac78-107">Schedule a production order</span></span>
+1. <span data-ttu-id="1ac78-108">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="1ac78-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="1ac78-109">Vælg en produktionsordre, som har statussen Forkalkuleret.</span><span class="sxs-lookup"><span data-stu-id="1ac78-109">Select a production order that has the Estimated status.</span></span>  
+2. <span data-ttu-id="1ac78-110">Klik på Planlæg i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="1ac78-110">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="1ac78-111">Klik på Finplanlægge.</span><span class="sxs-lookup"><span data-stu-id="1ac78-111">Click Schedule jobs.</span></span>
+    * <span data-ttu-id="1ac78-112">Parametrene for planlægning konfigureres på denne side.</span><span class="sxs-lookup"><span data-stu-id="1ac78-112">The parameters for scheduling are set up on this page.</span></span> <span data-ttu-id="1ac78-113">Du kan konfigurere parametre for bestemte brugere eller alle brugere.</span><span class="sxs-lookup"><span data-stu-id="1ac78-113">You can set up the parameters for specific users or all users.</span></span>  
+4. <span data-ttu-id="1ac78-114">Vælg "Fremad fra i dag" i feltet Planlægningsvej.</span><span class="sxs-lookup"><span data-stu-id="1ac78-114">In the Scheduling direction field, select 'Forward from today'.</span></span>
+5. <span data-ttu-id="1ac78-115">Angiv en dato i feltet Planlægningsdato.</span><span class="sxs-lookup"><span data-stu-id="1ac78-115">In the Scheduling date field, enter a date.</span></span>
+6. <span data-ttu-id="1ac78-116">Markér eller fjern markeringen i afkrydsningsfeltet Kapacitetsbegrænsning.</span><span class="sxs-lookup"><span data-stu-id="1ac78-116">Select or clear the Finite capacity check box.</span></span>
+7. <span data-ttu-id="1ac78-117">Markér eller fjern markeringen i afkrydsningsfeltet Materialebegrænsning.</span><span class="sxs-lookup"><span data-stu-id="1ac78-117">Select or clear the Finite material check box.</span></span>
+8. <span data-ttu-id="1ac78-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="1ac78-118">Click OK.</span></span>
 
-## <a name="view-the-scheduling-results"></a><span data-ttu-id="a0ad7-119">Vise planlægningsresultaterne</span><span class="sxs-lookup"><span data-stu-id="a0ad7-119">View the scheduling results</span></span>
-1. <span data-ttu-id="a0ad7-120">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-120">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="a0ad7-121">Klik på Alle job.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-121">Click All jobs.</span></span>
-    * <span data-ttu-id="a0ad7-122">Denne side viser de planlagte opgaver, som du lige har oprettet.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-122">This page displays the scheduled jobs that you have just generated.</span></span>  
-3. <span data-ttu-id="a0ad7-123">Udvid eller skjul sektionen Planlægning.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-123">Expand or collapse the Scheduling section.</span></span>
-    * <span data-ttu-id="a0ad7-124">Du kan få vist den planlagte dato og klokkeslæt i oversigtspanelet Planlægning.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-124">On the Scheduling FastTab, you can view the scheduled date and time.</span></span>  
-4. <span data-ttu-id="a0ad7-125">Klik på Forespørgsler.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-125">Click Inquiries.</span></span>
-5. <span data-ttu-id="a0ad7-126">Klik på Kapacitetsbelastning.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-126">Click Capacity load.</span></span>
-    * <span data-ttu-id="a0ad7-127">Siden Kapacitetsbelastning viser den kapacitet, der er reserveret via finplanlægning, det samlede antal timer, som aktuelt er reserveret for ressourcen, og antallet af timer, der er tilgængelige til finplanlægning af ressourcen.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-127">The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.</span></span>  
-6. <span data-ttu-id="a0ad7-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-128">Close the page.</span></span>
-7. <span data-ttu-id="a0ad7-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="a0ad7-129">Close the page.</span></span>
+## <a name="view-the-scheduling-results"></a><span data-ttu-id="1ac78-119">Vise planlægningsresultaterne</span><span class="sxs-lookup"><span data-stu-id="1ac78-119">View the scheduling results</span></span>
+1. <span data-ttu-id="1ac78-120">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="1ac78-120">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="1ac78-121">Klik på Alle job.</span><span class="sxs-lookup"><span data-stu-id="1ac78-121">Click All jobs.</span></span>
+    * <span data-ttu-id="1ac78-122">Denne side viser de planlagte opgaver, som du lige har oprettet.</span><span class="sxs-lookup"><span data-stu-id="1ac78-122">This page displays the scheduled jobs that you have just generated.</span></span>  
+3. <span data-ttu-id="1ac78-123">Udvid eller skjul sektionen Planlægning.</span><span class="sxs-lookup"><span data-stu-id="1ac78-123">Expand or collapse the Scheduling section.</span></span>
+    * <span data-ttu-id="1ac78-124">Du kan få vist den planlagte dato og klokkeslæt i oversigtspanelet Planlægning.</span><span class="sxs-lookup"><span data-stu-id="1ac78-124">On the Scheduling FastTab, you can view the scheduled date and time.</span></span>  
+4. <span data-ttu-id="1ac78-125">Klik på Forespørgsler.</span><span class="sxs-lookup"><span data-stu-id="1ac78-125">Click Inquiries.</span></span>
+5. <span data-ttu-id="1ac78-126">Klik på Kapacitetsbelastning.</span><span class="sxs-lookup"><span data-stu-id="1ac78-126">Click Capacity load.</span></span>
+    * <span data-ttu-id="1ac78-127">Siden Kapacitetsbelastning viser den kapacitet, der er reserveret via finplanlægning, det samlede antal timer, som aktuelt er reserveret for ressourcen, og antallet af timer, der er tilgængelige til finplanlægning af ressourcen.</span><span class="sxs-lookup"><span data-stu-id="1ac78-127">The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.</span></span>  
+6. <span data-ttu-id="1ac78-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1ac78-128">Close the page.</span></span>
+7. <span data-ttu-id="1ac78-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1ac78-129">Close the page.</span></span>
 
