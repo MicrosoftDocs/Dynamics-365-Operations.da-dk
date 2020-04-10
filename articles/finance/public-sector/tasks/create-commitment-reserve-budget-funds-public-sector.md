@@ -17,33 +17,33 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf24d198d7f46747e377ee10be5b6b994b2d5abf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d7617869a145d6bd88886df130fe44faacdabc63
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183499"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144585"
 ---
-# <a name="create-a-commitment-to-reserve-budget-funds-for-the-public-sector"></a><span data-ttu-id="515e6-103">Oprette et tilsagn om at reservere budgetmidler for den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="515e6-103">Create a commitment to reserve budget funds for the public sector</span></span>
+# <a name="create-a-commitment-to-reserve-budget-funds-for-the-public-sector"></a><span data-ttu-id="9ac0c-103">Oprette et tilsagn om at reservere budgetmidler for den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="9ac0c-103">Create a commitment to reserve budget funds for the public sector</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="515e6-104">Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig.</span><span class="sxs-lookup"><span data-stu-id="515e6-104">Commitments are budget control source documents used by public sector entities in France.</span></span> <span data-ttu-id="515e6-105">Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="515e6-105">This task guide was created using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="9ac0c-104">Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-104">Commitments are budget control source documents used by public sector entities in France.</span></span> <span data-ttu-id="9ac0c-105">Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-105">This task guide was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. <span data-ttu-id="515e6-106">Gå til Budgettering > Tilsagn.</span><span class="sxs-lookup"><span data-stu-id="515e6-106">Go to Budgeting > Commitments.</span></span>
-2. <span data-ttu-id="515e6-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="515e6-107">Click New.</span></span>
-3. <span data-ttu-id="515e6-108">Skriv et navn, der identificerer dette tilsagn, i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="515e6-108">In the Name field, type a name that will identify this commitment.</span></span>
-4. <span data-ttu-id="515e6-109">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="515e6-109">Click Add line.</span></span>
-5. <span data-ttu-id="515e6-110">Vælg midler og hovedkontoen i feltet Finanskonto.</span><span class="sxs-lookup"><span data-stu-id="515e6-110">In the Ledger account field, select the Fund and the Main account.</span></span>
-6. <span data-ttu-id="515e6-111">Angiv et tal i feltet Beløb.</span><span class="sxs-lookup"><span data-stu-id="515e6-111">In the Amount field, enter a number.</span></span>
-    * <span data-ttu-id="515e6-112">Angiv en købsaftalelinjen, hvis der er givet tilsagn til en bestemt købsaftale.</span><span class="sxs-lookup"><span data-stu-id="515e6-112">Enter a purchase agreement line if the commitment is for a specific purchase agreement.</span></span> <span data-ttu-id="515e6-113">Tilføj yderligere linjer efter behov.</span><span class="sxs-lookup"><span data-stu-id="515e6-113">Add additional lines as needed.</span></span>  
-7. <span data-ttu-id="515e6-114">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="515e6-114">On the Action Pane, click Options.</span></span>
-8. <span data-ttu-id="515e6-115">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="515e6-115">Click Change view.</span></span>
-9. <span data-ttu-id="515e6-116">Klik på Overskriftsvisning.</span><span class="sxs-lookup"><span data-stu-id="515e6-116">Click Header view.</span></span>
-10. <span data-ttu-id="515e6-117">Klik på rullelisten i feltet Kreditorkonto for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="515e6-117">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="515e6-118">Valgfrit: Vælg kreditor for dette tilsagn, på listen.</span><span class="sxs-lookup"><span data-stu-id="515e6-118">Optional: In the list, select the vendor for this commitment.</span></span>
-12. <span data-ttu-id="515e6-119">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="515e6-119">On the Action Pane, click Options.</span></span>
-13. <span data-ttu-id="515e6-120">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="515e6-120">Click Change view.</span></span>
-14. <span data-ttu-id="515e6-121">Klik på Linjevisning.</span><span class="sxs-lookup"><span data-stu-id="515e6-121">Click Line view.</span></span>
-15. <span data-ttu-id="515e6-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="515e6-122">Click Save.</span></span>
+1. <span data-ttu-id="9ac0c-106">Gå til Budgettering > Tilsagn.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-106">Go to Budgeting > Commitments.</span></span>
+2. <span data-ttu-id="9ac0c-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-107">Click New.</span></span>
+3. <span data-ttu-id="9ac0c-108">Skriv et navn, der identificerer dette tilsagn, i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-108">In the Name field, type a name that will identify this commitment.</span></span>
+4. <span data-ttu-id="9ac0c-109">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-109">Click Add line.</span></span>
+5. <span data-ttu-id="9ac0c-110">Vælg midler og hovedkontoen i feltet Finanskonto.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-110">In the Ledger account field, select the Fund and the Main account.</span></span>
+6. <span data-ttu-id="9ac0c-111">Angiv et tal i feltet Beløb.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-111">In the Amount field, enter a number.</span></span>
+    * <span data-ttu-id="9ac0c-112">Angiv en købsaftalelinjen, hvis der er givet tilsagn til en bestemt købsaftale.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-112">Enter a purchase agreement line if the commitment is for a specific purchase agreement.</span></span> <span data-ttu-id="9ac0c-113">Tilføj yderligere linjer efter behov.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-113">Add additional lines as needed.</span></span>  
+7. <span data-ttu-id="9ac0c-114">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-114">On the Action Pane, click Options.</span></span>
+8. <span data-ttu-id="9ac0c-115">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-115">Click Change view.</span></span>
+9. <span data-ttu-id="9ac0c-116">Klik på Overskriftsvisning.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-116">Click Header view.</span></span>
+10. <span data-ttu-id="9ac0c-117">Klik på rullelisten i feltet Kreditorkonto for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-117">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="9ac0c-118">Valgfrit: Vælg kreditor for dette tilsagn, på listen.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-118">Optional: In the list, select the vendor for this commitment.</span></span>
+12. <span data-ttu-id="9ac0c-119">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-119">On the Action Pane, click Options.</span></span>
+13. <span data-ttu-id="9ac0c-120">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-120">Click Change view.</span></span>
+14. <span data-ttu-id="9ac0c-121">Klik på Linjevisning.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-121">Click Line view.</span></span>
+15. <span data-ttu-id="9ac0c-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9ac0c-122">Click Save.</span></span>
 

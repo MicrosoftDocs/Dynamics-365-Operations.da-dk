@@ -16,34 +16,34 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: daa950877fd30174b46087303ae7275fb7dca337
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 826a65af563207fbfbc7391b176aa0e65b3363f9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186204"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145233"
 ---
-# <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a><span data-ttu-id="5f4f6-103">Oprette koncerngrupper og supplerende koncernkonti</span><span class="sxs-lookup"><span data-stu-id="5f4f6-103">Create consolidation groups and additional consolidation accounts</span></span>
+# <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a><span data-ttu-id="6002b-103">Oprette koncerngrupper og supplerende koncernkonti</span><span class="sxs-lookup"><span data-stu-id="6002b-103">Create consolidation groups and additional consolidation accounts</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="5f4f6-104">Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter føjer konti til gruppen.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-104">This procedure shows how to create a consolidation account group and then add accounts to the group.</span></span> <span data-ttu-id="5f4f6-105">Denne procedure bruger demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-105">This procedure uses the demo data company USMF.</span></span>
+<span data-ttu-id="6002b-104">Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter føjer konti til gruppen.</span><span class="sxs-lookup"><span data-stu-id="6002b-104">This procedure shows how to create a consolidation account group and then add accounts to the group.</span></span> <span data-ttu-id="6002b-105">Denne procedure bruger demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="6002b-105">This procedure uses the demo data company USMF.</span></span>
 
 
-## <a name="create-a-consolidation-account-group"></a><span data-ttu-id="5f4f6-106">Oprette en koncernkontogruppe</span><span class="sxs-lookup"><span data-stu-id="5f4f6-106">Create a consolidation account group</span></span>
-1. <span data-ttu-id="5f4f6-107">Gå til Finans > Kontoplan > Konti > Koncernkontogrupper.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-107">Go to General ledger > Chart of accounts > Accounts > Consolidation account groups.</span></span>
-2. <span data-ttu-id="5f4f6-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-108">Click New.</span></span>
-3. <span data-ttu-id="5f4f6-109">I feltet Koncernkontogruppe skal du angive en entydig identifikator for koncernkontogruppen.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-109">In the Consolidation account group field, enter a unique identifier for the consolidation account group.</span></span>
-4. <span data-ttu-id="5f4f6-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-110">In the Name field, type a value.</span></span>
+## <a name="create-a-consolidation-account-group"></a><span data-ttu-id="6002b-106">Oprette en koncernkontogruppe</span><span class="sxs-lookup"><span data-stu-id="6002b-106">Create a consolidation account group</span></span>
+1. <span data-ttu-id="6002b-107">Gå til Finans > Kontoplan > Konti > Koncernkontogrupper.</span><span class="sxs-lookup"><span data-stu-id="6002b-107">Go to General ledger > Chart of accounts > Accounts > Consolidation account groups.</span></span>
+2. <span data-ttu-id="6002b-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6002b-108">Click New.</span></span>
+3. <span data-ttu-id="6002b-109">I feltet Koncernkontogruppe skal du angive en entydig identifikator for koncernkontogruppen.</span><span class="sxs-lookup"><span data-stu-id="6002b-109">In the Consolidation account group field, enter a unique identifier for the consolidation account group.</span></span>
+4. <span data-ttu-id="6002b-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="6002b-110">In the Name field, type a value.</span></span>
 
-## <a name="add-accounts-to-consolidation-account-group"></a><span data-ttu-id="5f4f6-111">Tilføjelse af konti til koncernkontogruppe</span><span class="sxs-lookup"><span data-stu-id="5f4f6-111">Add accounts to consolidation account group</span></span>
-1. <span data-ttu-id="5f4f6-112">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-112">Close the page.</span></span>
-2. <span data-ttu-id="5f4f6-113">Gå til Finans > Kontoplan > Konti > Flere koncernkonti.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-113">Go to General ledger > Chart of accounts > Accounts > Additional consolidation accounts.</span></span>
-3. <span data-ttu-id="5f4f6-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-114">Click New.</span></span>
-4. <span data-ttu-id="5f4f6-115">Klik på rullelisten i feltet Hovedkonto for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-115">In the Main account field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="5f4f6-116">På listen, skal du klikke på den hovedkonto, som du vil tilknytte.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-116">In the list, click the main account that you want to map.</span></span>
-6. <span data-ttu-id="5f4f6-117">Klik på rullelisten i feltet Koncernkontogruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-117">In the Consolidation account group field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="5f4f6-118">Klik på koncernkontogruppen på listen.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-118">In the list, click the consolidation account group.</span></span>
-8. <span data-ttu-id="5f4f6-119">Skriv en værdi i feltet Koncernkonto.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-119">In the Consolidation account field, type a value.</span></span>
-9. <span data-ttu-id="5f4f6-120">Skriv en værdi i feltet Navn på koncernkonto.</span><span class="sxs-lookup"><span data-stu-id="5f4f6-120">In the Consolidation account name field, type a value.</span></span>
+## <a name="add-accounts-to-consolidation-account-group"></a><span data-ttu-id="6002b-111">Tilføjelse af konti til koncernkontogruppe</span><span class="sxs-lookup"><span data-stu-id="6002b-111">Add accounts to consolidation account group</span></span>
+1. <span data-ttu-id="6002b-112">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="6002b-112">Close the page.</span></span>
+2. <span data-ttu-id="6002b-113">Gå til Finans > Kontoplan > Konti > Flere koncernkonti.</span><span class="sxs-lookup"><span data-stu-id="6002b-113">Go to General ledger > Chart of accounts > Accounts > Additional consolidation accounts.</span></span>
+3. <span data-ttu-id="6002b-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6002b-114">Click New.</span></span>
+4. <span data-ttu-id="6002b-115">Klik på rullelisten i feltet Hovedkonto for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="6002b-115">In the Main account field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="6002b-116">På listen, skal du klikke på den hovedkonto, som du vil tilknytte.</span><span class="sxs-lookup"><span data-stu-id="6002b-116">In the list, click the main account that you want to map.</span></span>
+6. <span data-ttu-id="6002b-117">Klik på rullelisten i feltet Koncernkontogruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="6002b-117">In the Consolidation account group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="6002b-118">Klik på koncernkontogruppen på listen.</span><span class="sxs-lookup"><span data-stu-id="6002b-118">In the list, click the consolidation account group.</span></span>
+8. <span data-ttu-id="6002b-119">Skriv en værdi i feltet Koncernkonto.</span><span class="sxs-lookup"><span data-stu-id="6002b-119">In the Consolidation account field, type a value.</span></span>
+9. <span data-ttu-id="6002b-120">Skriv en værdi i feltet Navn på koncernkonto.</span><span class="sxs-lookup"><span data-stu-id="6002b-120">In the Consolidation account name field, type a value.</span></span>
 

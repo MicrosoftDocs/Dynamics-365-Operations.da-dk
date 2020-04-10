@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 39450b5aef2fb7b57492a52011f4b0db9dc8ff2e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 55f8fcfdafb2d5fb5a4d4800221fabf4b2111f86
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845035"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150257"
 ---
-# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="7b9ce-103">Tilføje en beregning til en produktkonfigurationsmodel</span><span class="sxs-lookup"><span data-stu-id="7b9ce-103">Add a calculation to a product configuration model</span></span>
+# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="ba449-103">Tilføje en beregning til en produktkonfigurationsmodel</span><span class="sxs-lookup"><span data-stu-id="ba449-103">Add a calculation to a product configuration model</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7b9ce-104">Denne procedure viser, hvordan du kan føje en ny beregning til en produktkonfigurationsmodel.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="7b9ce-105">Den viser, hvordan du kan oprette et logisk udtryk ved at bruge operatoren "Hvis" til at indstille en højttalerhøjde til 10 for hvide højttalere og 15 til ethvert andet kabinetfinish.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="7b9ce-106">Proceduren bruger komponenten Højttaler af topkvalitet i demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="ba449-104">Denne procedure viser, hvordan du kan føje en ny beregning til en produktkonfigurationsmodel.</span><span class="sxs-lookup"><span data-stu-id="ba449-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="ba449-105">Den viser, hvordan du kan oprette et logisk udtryk ved at bruge operatoren "Hvis" til at indstille en højttalerhøjde til 10 for hvide højttalere og 15 til ethvert andet kabinetfinish.</span><span class="sxs-lookup"><span data-stu-id="ba449-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="ba449-106">Proceduren bruger komponenten Højttaler af topkvalitet i demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="ba449-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="add-a-calculation"></a><span data-ttu-id="7b9ce-107">Tilføje en beregning</span><span class="sxs-lookup"><span data-stu-id="7b9ce-107">Add a calculation</span></span>
+## <a name="add-a-calculation"></a><span data-ttu-id="ba449-107">Tilføje en beregning</span><span class="sxs-lookup"><span data-stu-id="ba449-107">Add a calculation</span></span>
 
-## <a name="create-calculation-expression"></a><span data-ttu-id="7b9ce-108">Oprette et beregningsudtryk</span><span class="sxs-lookup"><span data-stu-id="7b9ce-108">Create calculation expression</span></span>
-1. <span data-ttu-id="7b9ce-109">Klik på udtrykket Rediger.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-109">Click Edit expression.</span></span>
-2. <span data-ttu-id="7b9ce-110">I feltet ConstraintBody skal du angive 'If[CabinetFinish == "Hvid", 10, 15]'.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
-3. <span data-ttu-id="7b9ce-111">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-111">Click Validate.</span></span>
-4. <span data-ttu-id="7b9ce-112">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-112">Click Close.</span></span>
-5. <span data-ttu-id="7b9ce-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7b9ce-113">Click OK.</span></span>
+## <a name="create-calculation-expression"></a><span data-ttu-id="ba449-108">Oprette et beregningsudtryk</span><span class="sxs-lookup"><span data-stu-id="ba449-108">Create calculation expression</span></span>
+1. <span data-ttu-id="ba449-109">Klik på udtrykket Rediger.</span><span class="sxs-lookup"><span data-stu-id="ba449-109">Click Edit expression.</span></span>
+2. <span data-ttu-id="ba449-110">I feltet ConstraintBody skal du angive 'If[CabinetFinish == "Hvid", 10, 15]'.</span><span class="sxs-lookup"><span data-stu-id="ba449-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
+3. <span data-ttu-id="ba449-111">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="ba449-111">Click Validate.</span></span>
+4. <span data-ttu-id="ba449-112">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="ba449-112">Click Close.</span></span>
+5. <span data-ttu-id="ba449-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ba449-113">Click OK.</span></span>
 

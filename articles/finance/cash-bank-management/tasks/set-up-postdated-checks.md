@@ -16,44 +16,44 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 035f6e3b0268f8ee4c9006ca5f0527133cf2771c
-ms.sourcegitcommit: 69f8233e86b32347474a25d83b4ac5920f60407d
+ms.openlocfilehash: 22e67aa051b5ea8267df7efac40e007d0f11a83d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2538472"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141102"
 ---
-# <a name="set-up-postdated-checks"></a><span data-ttu-id="ef95b-103">Oprette fremdaterede checks</span><span class="sxs-lookup"><span data-stu-id="ef95b-103">Set up postdated checks</span></span>
+# <a name="set-up-postdated-checks"></a><span data-ttu-id="25549-103">Oprette fremdaterede checks</span><span class="sxs-lookup"><span data-stu-id="25549-103">Set up postdated checks</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ef95b-104">I dette emne beskrives, hvordan du angiver, om du vil bogføre journalposter for fremdaterede checks, og hvilke bogføringsjournaler, der skal bruges til at fjerne poster og kreditorbetalinger.</span><span class="sxs-lookup"><span data-stu-id="ef95b-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="ef95b-105">Du kan også angive clearingkonti for udstedte kontrol, modtagne checks og A-skat.</span><span class="sxs-lookup"><span data-stu-id="ef95b-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="ef95b-106">Fremdaterede checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato.</span><span class="sxs-lookup"><span data-stu-id="ef95b-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="ef95b-107">Du kan angive, om checken skal afspejles i regnskaberne før dens forfaldsdato.</span><span class="sxs-lookup"><span data-stu-id="ef95b-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
-
-
-
-<span data-ttu-id="ef95b-108">Rollen for denne procedure er Kasserer.</span><span class="sxs-lookup"><span data-stu-id="ef95b-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="ef95b-109">Denne procedure bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="ef95b-109">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="25549-104">I dette emne beskrives, hvordan du angiver, om du vil bogføre journalposter for fremdaterede checks, og hvilke bogføringsjournaler, der skal bruges til at fjerne poster og kreditorbetalinger.</span><span class="sxs-lookup"><span data-stu-id="25549-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="25549-105">Du kan også angive clearingkonti for udstedte kontrol, modtagne checks og A-skat.</span><span class="sxs-lookup"><span data-stu-id="25549-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="25549-106">Fremdaterede checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato.</span><span class="sxs-lookup"><span data-stu-id="25549-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="25549-107">Du kan angive, om checken skal afspejles i regnskaberne før dens forfaldsdato.</span><span class="sxs-lookup"><span data-stu-id="25549-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
 
 
-## <a name="set-up-postdated-checks"></a><span data-ttu-id="ef95b-110">Oprette fremdaterede checks</span><span class="sxs-lookup"><span data-stu-id="ef95b-110">Set up postdated checks</span></span>
-1. <span data-ttu-id="ef95b-111">Gå til Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre</span><span class="sxs-lookup"><span data-stu-id="ef95b-111">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="ef95b-112">Klik på fanen Fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="ef95b-112">Click the Postdated checks tab.</span></span>
-3. <span data-ttu-id="ef95b-113">Marker eller fjern markeringen af afkrydsningsfeltet Aktivér fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="ef95b-113">Select or clear the Enable postdated checks check box.</span></span>
-4. <span data-ttu-id="ef95b-114">Marker eller fjern markeringen i afkrydsningsfeltet Bogfør kladdeposteringer for fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="ef95b-114">Select or clear the Post journal entries for postdated checks check box.</span></span>
-5. <span data-ttu-id="ef95b-115">Angiv de ønskede værdier i feltet Clearingkonto til udstedte checks.</span><span class="sxs-lookup"><span data-stu-id="ef95b-115">In the Clearing account for issued checks field, specify the desired values.</span></span>
-6. <span data-ttu-id="ef95b-116">Angiv de ønskede værdier i feltet Clearingkonto til modtagne checks.</span><span class="sxs-lookup"><span data-stu-id="ef95b-116">In the Clearing account for received checks field, specify the desired values.</span></span>
-7. <span data-ttu-id="ef95b-117">Skriv en værdi i feltet Finanskladde til clearingposteringer.</span><span class="sxs-lookup"><span data-stu-id="ef95b-117">In the General journal for clearing entries field, type a value.</span></span>
-8. <span data-ttu-id="ef95b-118">Skriv en værdi i feltet Overfør fremdaterede checks til denne kreditorbetalingskladde.</span><span class="sxs-lookup"><span data-stu-id="ef95b-118">In the Transfer postdated checks to this vendor payment journal field, type a value.</span></span>
-9. <span data-ttu-id="ef95b-119">Angiv de ønskede værdier i feltet Clearingkonto til A-skat.</span><span class="sxs-lookup"><span data-stu-id="ef95b-119">In the Withholding tax clearing account field, specify the desired values.</span></span>
-10. <span data-ttu-id="ef95b-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ef95b-120">Click Save.</span></span>
-11. <span data-ttu-id="ef95b-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ef95b-121">Close the page.</span></span>
-12. <span data-ttu-id="ef95b-122">Gå til Kreditor > Opsætning af betaling > Betalingsmåder.</span><span class="sxs-lookup"><span data-stu-id="ef95b-122">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
-13. <span data-ttu-id="ef95b-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ef95b-123">Click New.</span></span>
-14. <span data-ttu-id="ef95b-124">Indtast en værdi i feltet Betalingsmåde.</span><span class="sxs-lookup"><span data-stu-id="ef95b-124">In the Method of payment field, type a value.</span></span>
-15. <span data-ttu-id="ef95b-125">Vælg indstillingen Bogføring af fremdateret checkclearing for at angive, at checkbeløbet bogføres på en clearingkonto.</span><span class="sxs-lookup"><span data-stu-id="ef95b-125">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
-16. <span data-ttu-id="ef95b-126">Vælg "Bank" i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="ef95b-126">In the Account type field, select 'Bank'.</span></span>
-    * <span data-ttu-id="ef95b-127">Modkontoen for betalingsmetoden bliver en bank.</span><span class="sxs-lookup"><span data-stu-id="ef95b-127">The offset account of the payment method will be a bank.</span></span>  
-17. <span data-ttu-id="ef95b-128">I feltet Betalingskonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="ef95b-128">In the Payment account field, specify the desired values.</span></span>
-    * <span data-ttu-id="ef95b-129">Vælg den bankkonto, der bruges til at fratrække fakturabeløbet.</span><span class="sxs-lookup"><span data-stu-id="ef95b-129">Select the bank account that is used to deduct the invoice amount.</span></span>  
-18. <span data-ttu-id="ef95b-130">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ef95b-130">Click Save.</span></span>
-19. <span data-ttu-id="ef95b-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ef95b-131">Close the page.</span></span>
+
+<span data-ttu-id="25549-108">Rollen for denne procedure er Kasserer.</span><span class="sxs-lookup"><span data-stu-id="25549-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="25549-109">Denne procedure bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="25549-109">This procedure uses the USMF demo company.</span></span>
+
+
+## <a name="set-up-postdated-checks"></a><span data-ttu-id="25549-110">Oprette fremdaterede checks</span><span class="sxs-lookup"><span data-stu-id="25549-110">Set up postdated checks</span></span>
+1. <span data-ttu-id="25549-111">Gå til Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre</span><span class="sxs-lookup"><span data-stu-id="25549-111">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="25549-112">Klik på fanen Fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="25549-112">Click the Postdated checks tab.</span></span>
+3. <span data-ttu-id="25549-113">Marker eller fjern markeringen af afkrydsningsfeltet Aktivér fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="25549-113">Select or clear the Enable postdated checks check box.</span></span>
+4. <span data-ttu-id="25549-114">Marker eller fjern markeringen i afkrydsningsfeltet Bogfør kladdeposteringer for fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="25549-114">Select or clear the Post journal entries for postdated checks check box.</span></span>
+5. <span data-ttu-id="25549-115">Angiv de ønskede værdier i feltet Clearingkonto til udstedte checks.</span><span class="sxs-lookup"><span data-stu-id="25549-115">In the Clearing account for issued checks field, specify the desired values.</span></span>
+6. <span data-ttu-id="25549-116">Angiv de ønskede værdier i feltet Clearingkonto til modtagne checks.</span><span class="sxs-lookup"><span data-stu-id="25549-116">In the Clearing account for received checks field, specify the desired values.</span></span>
+7. <span data-ttu-id="25549-117">Skriv en værdi i feltet Finanskladde til clearingposteringer.</span><span class="sxs-lookup"><span data-stu-id="25549-117">In the General journal for clearing entries field, type a value.</span></span>
+8. <span data-ttu-id="25549-118">Skriv en værdi i feltet Overfør fremdaterede checks til denne kreditorbetalingskladde.</span><span class="sxs-lookup"><span data-stu-id="25549-118">In the Transfer postdated checks to this vendor payment journal field, type a value.</span></span>
+9. <span data-ttu-id="25549-119">Angiv de ønskede værdier i feltet Clearingkonto til A-skat.</span><span class="sxs-lookup"><span data-stu-id="25549-119">In the Withholding tax clearing account field, specify the desired values.</span></span>
+10. <span data-ttu-id="25549-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="25549-120">Click Save.</span></span>
+11. <span data-ttu-id="25549-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="25549-121">Close the page.</span></span>
+12. <span data-ttu-id="25549-122">Gå til Kreditor > Opsætning af betaling > Betalingsmåder.</span><span class="sxs-lookup"><span data-stu-id="25549-122">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
+13. <span data-ttu-id="25549-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="25549-123">Click New.</span></span>
+14. <span data-ttu-id="25549-124">Indtast en værdi i feltet Betalingsmåde.</span><span class="sxs-lookup"><span data-stu-id="25549-124">In the Method of payment field, type a value.</span></span>
+15. <span data-ttu-id="25549-125">Vælg indstillingen Bogføring af fremdateret checkclearing for at angive, at checkbeløbet bogføres på en clearingkonto.</span><span class="sxs-lookup"><span data-stu-id="25549-125">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
+16. <span data-ttu-id="25549-126">Vælg "Bank" i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="25549-126">In the Account type field, select 'Bank'.</span></span>
+    * <span data-ttu-id="25549-127">Modkontoen for betalingsmetoden bliver en bank.</span><span class="sxs-lookup"><span data-stu-id="25549-127">The offset account of the payment method will be a bank.</span></span>  
+17. <span data-ttu-id="25549-128">I feltet Betalingskonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="25549-128">In the Payment account field, specify the desired values.</span></span>
+    * <span data-ttu-id="25549-129">Vælg den bankkonto, der bruges til at fratrække fakturabeløbet.</span><span class="sxs-lookup"><span data-stu-id="25549-129">Select the bank account that is used to deduct the invoice amount.</span></span>  
+18. <span data-ttu-id="25549-130">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="25549-130">Click Save.</span></span>
+19. <span data-ttu-id="25549-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="25549-131">Close the page.</span></span>
 

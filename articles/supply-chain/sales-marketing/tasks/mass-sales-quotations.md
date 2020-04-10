@@ -16,88 +16,88 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dcf216c65514820dc50486266a79ad1b4d696db3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 77f7a2df813eb0bf211b72646c1e99306fdf3f88
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835520"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148601"
 ---
-# <a name="mass-create-sales-quotations"></a><span data-ttu-id="d2ddb-103">Opret flere salgstilbud</span><span class="sxs-lookup"><span data-stu-id="d2ddb-103">Mass create sales quotations</span></span>
+# <a name="mass-create-sales-quotations"></a><span data-ttu-id="ebb94-103">Opret flere salgstilbud</span><span class="sxs-lookup"><span data-stu-id="ebb94-103">Mass create sales quotations</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d2ddb-104">Denne procedure viser, hvordan til effektivt du kan oprette tilbud, der tilbyder en række produkter eller ydelser, der skal sendes til flere kunder.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-104">This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.</span></span> <span data-ttu-id="d2ddb-105">Oprettelse af dette massetilbud er baseret på tilbudsskabeloner.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-105">This mass quotation creation is based on quotation templates.</span></span> <span data-ttu-id="d2ddb-106">Du kan køre procedure på dine egne data eller i demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-106">You can run this procedure on your own data or in demo data company USMF.</span></span>
+<span data-ttu-id="ebb94-104">Denne procedure viser, hvordan til effektivt du kan oprette tilbud, der tilbyder en række produkter eller ydelser, der skal sendes til flere kunder.</span><span class="sxs-lookup"><span data-stu-id="ebb94-104">This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.</span></span> <span data-ttu-id="ebb94-105">Oprettelse af dette massetilbud er baseret på tilbudsskabeloner.</span><span class="sxs-lookup"><span data-stu-id="ebb94-105">This mass quotation creation is based on quotation templates.</span></span> <span data-ttu-id="ebb94-106">Du kan køre procedure på dine egne data eller i demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="ebb94-106">You can run this procedure on your own data or in demo data company USMF.</span></span>
 
 
-## <a name="create-a-quotation-template"></a><span data-ttu-id="d2ddb-107">Oprette en tilbudsskabelon</span><span class="sxs-lookup"><span data-stu-id="d2ddb-107">Create a quotation template</span></span>
-1. <span data-ttu-id="d2ddb-108">Gå til Salg og marketing > Opsætning > Tilbud > Skabelongrupper.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-108">Go to Sales and marketing > Setup > Quotations > Template groups.</span></span>
-2. <span data-ttu-id="d2ddb-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-109">Click New.</span></span>
-3. <span data-ttu-id="d2ddb-110">Skriv et id efter eget valg i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-110">In the Group ID field, type an ID of your choice.</span></span>
-4. <span data-ttu-id="d2ddb-111">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="d2ddb-112">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-112">Click Save.</span></span>
-6. <span data-ttu-id="d2ddb-113">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-113">Close the page.</span></span>
-7. <span data-ttu-id="d2ddb-114">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-114">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
-8. <span data-ttu-id="d2ddb-115">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-115">Click New.</span></span>
-9. <span data-ttu-id="d2ddb-116">Vælg 'Debitor' i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-116">In the Account type field, select 'Customer'.</span></span>
-10. <span data-ttu-id="d2ddb-117">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-117">In the Customer account field, enter or select a value.</span></span>
-11. <span data-ttu-id="d2ddb-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-118">Click OK.</span></span>
-    * <span data-ttu-id="d2ddb-119">For at et tilbud kan blive en skabelon, skal du udføre nogle trin i opsætningen af tilbudshovedet.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-119">For a quotation to become a template you must carry out  setup steps on the quotation header.</span></span> <span data-ttu-id="d2ddb-120">Dette skal gøres, før du føjer linjer til tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-120">This must be done before you add lines to the quotation.</span></span>   
-12. <span data-ttu-id="d2ddb-121">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-121">On the Action Pane, click Options.</span></span>
-13. <span data-ttu-id="d2ddb-122">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-122">Click Change view.</span></span>
-14. <span data-ttu-id="d2ddb-123">Klik på Overskriftsvisning.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-123">Click Header view.</span></span>
-15. <span data-ttu-id="d2ddb-124">Udvid sektionen Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-124">Expand the Setup section.</span></span>
-16. <span data-ttu-id="d2ddb-125">Indtast eller vælg en værdi i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-125">In the Group ID field, enter or select a value.</span></span>
-17. <span data-ttu-id="d2ddb-126">Skriv en værdi i feltet Skabelonnavn.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-126">In the Template name field, type a value.</span></span>
-18. <span data-ttu-id="d2ddb-127">Vælg Ja i feltet Aktiv.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-127">Select Yes in the Active field.</span></span>
-    * <span data-ttu-id="d2ddb-128">Kun aktive skabeloner kan bruges, når du anvender en skabelon på et nyt salgstilbud.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-128">Only active templates can be used when you apply a template to a new sales quotation.</span></span>  
-19. <span data-ttu-id="d2ddb-129">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-129">On the Action Pane, click Options.</span></span>
-20. <span data-ttu-id="d2ddb-130">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-130">Click Change view.</span></span>
-21. <span data-ttu-id="d2ddb-131">Klik på Linjevisning.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-131">Click Line view.</span></span>
-22. <span data-ttu-id="d2ddb-132">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-132">In the Item field, enter or select a value.</span></span>
-23. <span data-ttu-id="d2ddb-133">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-133">In the Item field, type a value.</span></span>
-24. <span data-ttu-id="d2ddb-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-134">Close the page.</span></span>
-25. <span data-ttu-id="d2ddb-135">Angiv et tal i feltet Rabatprocentdel.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-135">In the Discount percent field, enter a number.</span></span>
-26. <span data-ttu-id="d2ddb-136">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-136">Click Add line.</span></span>
-27. <span data-ttu-id="d2ddb-137">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-137">In the Item field, enter or select a value.</span></span>
-28. <span data-ttu-id="d2ddb-138">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-138">In the Item field, type a value.</span></span>
-29. <span data-ttu-id="d2ddb-139">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-139">Close the page.</span></span>
-30. <span data-ttu-id="d2ddb-140">Angiv en ny pris i feltet Enhedspris, eller rediger den aktuelle pris.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-140">In the Unit price field, enter a new price or change the current one.</span></span>
-31. <span data-ttu-id="d2ddb-141">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-141">Click Add line.</span></span>
-32. <span data-ttu-id="d2ddb-142">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-142">In the Item field, enter or select a value.</span></span>
-33. <span data-ttu-id="d2ddb-143">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-143">In the Item field, type a value.</span></span>
-34. <span data-ttu-id="d2ddb-144">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-144">Close the page.</span></span>
-35. <span data-ttu-id="d2ddb-145">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-145">In the Quantity field, enter a number.</span></span>
-36. <span data-ttu-id="d2ddb-146">Angiv et tal i feltet Rabat.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-146">In the Discount field, enter a number.</span></span>
-37. <span data-ttu-id="d2ddb-147">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-147">Click Save.</span></span>
+## <a name="create-a-quotation-template"></a><span data-ttu-id="ebb94-107">Oprette en tilbudsskabelon</span><span class="sxs-lookup"><span data-stu-id="ebb94-107">Create a quotation template</span></span>
+1. <span data-ttu-id="ebb94-108">Gå til Salg og marketing > Opsætning > Tilbud > Skabelongrupper.</span><span class="sxs-lookup"><span data-stu-id="ebb94-108">Go to Sales and marketing > Setup > Quotations > Template groups.</span></span>
+2. <span data-ttu-id="ebb94-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebb94-109">Click New.</span></span>
+3. <span data-ttu-id="ebb94-110">Skriv et id efter eget valg i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="ebb94-110">In the Group ID field, type an ID of your choice.</span></span>
+4. <span data-ttu-id="ebb94-111">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="ebb94-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="ebb94-112">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ebb94-112">Click Save.</span></span>
+6. <span data-ttu-id="ebb94-113">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-113">Close the page.</span></span>
+7. <span data-ttu-id="ebb94-114">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="ebb94-114">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+8. <span data-ttu-id="ebb94-115">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebb94-115">Click New.</span></span>
+9. <span data-ttu-id="ebb94-116">Vælg 'Debitor' i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="ebb94-116">In the Account type field, select 'Customer'.</span></span>
+10. <span data-ttu-id="ebb94-117">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="ebb94-117">In the Customer account field, enter or select a value.</span></span>
+11. <span data-ttu-id="ebb94-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebb94-118">Click OK.</span></span>
+    * <span data-ttu-id="ebb94-119">For at et tilbud kan blive en skabelon, skal du udføre nogle trin i opsætningen af tilbudshovedet.</span><span class="sxs-lookup"><span data-stu-id="ebb94-119">For a quotation to become a template you must carry out  setup steps on the quotation header.</span></span> <span data-ttu-id="ebb94-120">Dette skal gøres, før du føjer linjer til tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="ebb94-120">This must be done before you add lines to the quotation.</span></span>   
+12. <span data-ttu-id="ebb94-121">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-121">On the Action Pane, click Options.</span></span>
+13. <span data-ttu-id="ebb94-122">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="ebb94-122">Click Change view.</span></span>
+14. <span data-ttu-id="ebb94-123">Klik på Overskriftsvisning.</span><span class="sxs-lookup"><span data-stu-id="ebb94-123">Click Header view.</span></span>
+15. <span data-ttu-id="ebb94-124">Udvid sektionen Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="ebb94-124">Expand the Setup section.</span></span>
+16. <span data-ttu-id="ebb94-125">Indtast eller vælg en værdi i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="ebb94-125">In the Group ID field, enter or select a value.</span></span>
+17. <span data-ttu-id="ebb94-126">Skriv en værdi i feltet Skabelonnavn.</span><span class="sxs-lookup"><span data-stu-id="ebb94-126">In the Template name field, type a value.</span></span>
+18. <span data-ttu-id="ebb94-127">Vælg Ja i feltet Aktiv.</span><span class="sxs-lookup"><span data-stu-id="ebb94-127">Select Yes in the Active field.</span></span>
+    * <span data-ttu-id="ebb94-128">Kun aktive skabeloner kan bruges, når du anvender en skabelon på et nyt salgstilbud.</span><span class="sxs-lookup"><span data-stu-id="ebb94-128">Only active templates can be used when you apply a template to a new sales quotation.</span></span>  
+19. <span data-ttu-id="ebb94-129">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-129">On the Action Pane, click Options.</span></span>
+20. <span data-ttu-id="ebb94-130">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="ebb94-130">Click Change view.</span></span>
+21. <span data-ttu-id="ebb94-131">Klik på Linjevisning.</span><span class="sxs-lookup"><span data-stu-id="ebb94-131">Click Line view.</span></span>
+22. <span data-ttu-id="ebb94-132">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="ebb94-132">In the Item field, enter or select a value.</span></span>
+23. <span data-ttu-id="ebb94-133">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="ebb94-133">In the Item field, type a value.</span></span>
+24. <span data-ttu-id="ebb94-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-134">Close the page.</span></span>
+25. <span data-ttu-id="ebb94-135">Angiv et tal i feltet Rabatprocentdel.</span><span class="sxs-lookup"><span data-stu-id="ebb94-135">In the Discount percent field, enter a number.</span></span>
+26. <span data-ttu-id="ebb94-136">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="ebb94-136">Click Add line.</span></span>
+27. <span data-ttu-id="ebb94-137">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="ebb94-137">In the Item field, enter or select a value.</span></span>
+28. <span data-ttu-id="ebb94-138">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="ebb94-138">In the Item field, type a value.</span></span>
+29. <span data-ttu-id="ebb94-139">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-139">Close the page.</span></span>
+30. <span data-ttu-id="ebb94-140">Angiv en ny pris i feltet Enhedspris, eller rediger den aktuelle pris.</span><span class="sxs-lookup"><span data-stu-id="ebb94-140">In the Unit price field, enter a new price or change the current one.</span></span>
+31. <span data-ttu-id="ebb94-141">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="ebb94-141">Click Add line.</span></span>
+32. <span data-ttu-id="ebb94-142">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="ebb94-142">In the Item field, enter or select a value.</span></span>
+33. <span data-ttu-id="ebb94-143">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="ebb94-143">In the Item field, type a value.</span></span>
+34. <span data-ttu-id="ebb94-144">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-144">Close the page.</span></span>
+35. <span data-ttu-id="ebb94-145">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="ebb94-145">In the Quantity field, enter a number.</span></span>
+36. <span data-ttu-id="ebb94-146">Angiv et tal i feltet Rabat.</span><span class="sxs-lookup"><span data-stu-id="ebb94-146">In the Discount field, enter a number.</span></span>
+37. <span data-ttu-id="ebb94-147">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ebb94-147">Click Save.</span></span>
 
-## <a name="apply-the-template-to-create-a-single-quotation"></a><span data-ttu-id="d2ddb-148">Anvende skabelonen til at oprette et enkelt tilbud</span><span class="sxs-lookup"><span data-stu-id="d2ddb-148">Apply the template to create a single quotation</span></span>
-1. <span data-ttu-id="d2ddb-149">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-149">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
-    * <span data-ttu-id="d2ddb-150">Bemærk, at det tilbud, du lige har oprettet, er markeret som skabelon.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-150">Note that the quotation you have just created is marked as template.</span></span>  
-2. <span data-ttu-id="d2ddb-151">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-151">Click New.</span></span>
-3. <span data-ttu-id="d2ddb-152">Vælg 'Debitor' i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-152">In the Account type field, select 'Customer'.</span></span>
-4. <span data-ttu-id="d2ddb-153">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-153">In the Customer account field, enter or select a value.</span></span>
-5. <span data-ttu-id="d2ddb-154">Udvid afsnittet Skabelon.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-154">Expand the Template section.</span></span>
-6. <span data-ttu-id="d2ddb-155">Indtast eller vælg en værdi i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-155">In the Group ID field, enter or select a value.</span></span>
-7. <span data-ttu-id="d2ddb-156">Indtast eller vælg en værdi i feltet Skabelonnavn.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-156">In the Template name field, enter or select a value.</span></span>
-8. <span data-ttu-id="d2ddb-157">Vælg 'Baseret på skabelonværdier' i feltet Beregningsmåde.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-157">In the Calculation method field, select 'Based on template values'.</span></span>
-9. <span data-ttu-id="d2ddb-158">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-158">Click OK.</span></span>
-    * <span data-ttu-id="d2ddb-159">Det nye tilbud er nu oprettet baseret på dataene og vilkårene i skabelonen.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-159">The new quotation has now been created, based on the data and terms of the template.</span></span>  
-10. <span data-ttu-id="d2ddb-160">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-160">Close the page.</span></span>
-11. <span data-ttu-id="d2ddb-161">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-161">Close the page.</span></span>
+## <a name="apply-the-template-to-create-a-single-quotation"></a><span data-ttu-id="ebb94-148">Anvende skabelonen til at oprette et enkelt tilbud</span><span class="sxs-lookup"><span data-stu-id="ebb94-148">Apply the template to create a single quotation</span></span>
+1. <span data-ttu-id="ebb94-149">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="ebb94-149">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="ebb94-150">Bemærk, at det tilbud, du lige har oprettet, er markeret som skabelon.</span><span class="sxs-lookup"><span data-stu-id="ebb94-150">Note that the quotation you have just created is marked as template.</span></span>  
+2. <span data-ttu-id="ebb94-151">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ebb94-151">Click New.</span></span>
+3. <span data-ttu-id="ebb94-152">Vælg 'Debitor' i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="ebb94-152">In the Account type field, select 'Customer'.</span></span>
+4. <span data-ttu-id="ebb94-153">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="ebb94-153">In the Customer account field, enter or select a value.</span></span>
+5. <span data-ttu-id="ebb94-154">Udvid afsnittet Skabelon.</span><span class="sxs-lookup"><span data-stu-id="ebb94-154">Expand the Template section.</span></span>
+6. <span data-ttu-id="ebb94-155">Indtast eller vælg en værdi i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="ebb94-155">In the Group ID field, enter or select a value.</span></span>
+7. <span data-ttu-id="ebb94-156">Indtast eller vælg en værdi i feltet Skabelonnavn.</span><span class="sxs-lookup"><span data-stu-id="ebb94-156">In the Template name field, enter or select a value.</span></span>
+8. <span data-ttu-id="ebb94-157">Vælg 'Baseret på skabelonværdier' i feltet Beregningsmåde.</span><span class="sxs-lookup"><span data-stu-id="ebb94-157">In the Calculation method field, select 'Based on template values'.</span></span>
+9. <span data-ttu-id="ebb94-158">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebb94-158">Click OK.</span></span>
+    * <span data-ttu-id="ebb94-159">Det nye tilbud er nu oprettet baseret på dataene og vilkårene i skabelonen.</span><span class="sxs-lookup"><span data-stu-id="ebb94-159">The new quotation has now been created, based on the data and terms of the template.</span></span>  
+10. <span data-ttu-id="ebb94-160">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-160">Close the page.</span></span>
+11. <span data-ttu-id="ebb94-161">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ebb94-161">Close the page.</span></span>
 
-## <a name="apply-the-template-to-mass-create-quotations"></a><span data-ttu-id="d2ddb-162">Anvende skabelonen til at oprette flere tilbud</span><span class="sxs-lookup"><span data-stu-id="d2ddb-162">Apply the template to mass create quotations</span></span>
-1. <span data-ttu-id="d2ddb-163">Gå til Salg og marketing > Salgstilbud > Opdatering af tilbud > Opret flere tilbud.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-163">Go to Sales and marketing > Sales quotations > Quotation update > Mass create quotations.</span></span>
-2. <span data-ttu-id="d2ddb-164">Vælg 'Debitor' i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-164">In the Account type field, select 'Customer'.</span></span>
-3. <span data-ttu-id="d2ddb-165">Indtast eller vælg en værdi i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-165">In the Group ID field, enter or select a value.</span></span>
-4. <span data-ttu-id="d2ddb-166">Indtast eller vælg en værdi i feltet Skabelonnavn.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-166">In the Template name field, enter or select a value.</span></span>
-5. <span data-ttu-id="d2ddb-167">Vælg 'Baseret på skabelonværdier' i feltet Beregningsmåde.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-167">In the Calculation method field, select 'Based on template values'.</span></span>
-6. <span data-ttu-id="d2ddb-168">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-168">Expand the Records to include section.</span></span>
-7. <span data-ttu-id="d2ddb-169">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-169">Click Filter.</span></span>
-8. <span data-ttu-id="d2ddb-170">Indstil filteret til at dække en række kunder, du vil medtage i af denne oprettelse af flere tilbud.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-170">In the Criteria field, set the filter to cover a range of customers you want to include in this mass quotation creation.</span></span> <span data-ttu-id="d2ddb-171">Brug følgende format "Customer1..CustomerN".</span><span class="sxs-lookup"><span data-stu-id="d2ddb-171">Use the following format "Customer1..CustomerN.</span></span>
-    * <span data-ttu-id="d2ddb-172">For eksempel kan du angive filteret: US-001..US-004</span><span class="sxs-lookup"><span data-stu-id="d2ddb-172">For example, you could set the filter to: US-001..US-004</span></span>  
-9. <span data-ttu-id="d2ddb-173">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-173">Click OK.</span></span>
-10. <span data-ttu-id="d2ddb-174">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-174">Click OK.</span></span>
-11. <span data-ttu-id="d2ddb-175">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-175">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
-    * <span data-ttu-id="d2ddb-176">Kontroller, at der er oprettet tilbud for alle de debitorer, der er angivet i masseopdateringsrutinen, på basis af den valgte skabelon.</span><span class="sxs-lookup"><span data-stu-id="d2ddb-176">Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.</span></span>  
+## <a name="apply-the-template-to-mass-create-quotations"></a><span data-ttu-id="ebb94-162">Anvende skabelonen til at oprette flere tilbud</span><span class="sxs-lookup"><span data-stu-id="ebb94-162">Apply the template to mass create quotations</span></span>
+1. <span data-ttu-id="ebb94-163">Gå til Salg og marketing > Salgstilbud > Opdatering af tilbud > Opret flere tilbud.</span><span class="sxs-lookup"><span data-stu-id="ebb94-163">Go to Sales and marketing > Sales quotations > Quotation update > Mass create quotations.</span></span>
+2. <span data-ttu-id="ebb94-164">Vælg 'Debitor' i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="ebb94-164">In the Account type field, select 'Customer'.</span></span>
+3. <span data-ttu-id="ebb94-165">Indtast eller vælg en værdi i feltet Gruppe-id.</span><span class="sxs-lookup"><span data-stu-id="ebb94-165">In the Group ID field, enter or select a value.</span></span>
+4. <span data-ttu-id="ebb94-166">Indtast eller vælg en værdi i feltet Skabelonnavn.</span><span class="sxs-lookup"><span data-stu-id="ebb94-166">In the Template name field, enter or select a value.</span></span>
+5. <span data-ttu-id="ebb94-167">Vælg 'Baseret på skabelonværdier' i feltet Beregningsmåde.</span><span class="sxs-lookup"><span data-stu-id="ebb94-167">In the Calculation method field, select 'Based on template values'.</span></span>
+6. <span data-ttu-id="ebb94-168">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="ebb94-168">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="ebb94-169">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="ebb94-169">Click Filter.</span></span>
+8. <span data-ttu-id="ebb94-170">Indstil filteret til at dække en række kunder, du vil medtage i af denne oprettelse af flere tilbud.</span><span class="sxs-lookup"><span data-stu-id="ebb94-170">In the Criteria field, set the filter to cover a range of customers you want to include in this mass quotation creation.</span></span> <span data-ttu-id="ebb94-171">Brug følgende format "Customer1..CustomerN".</span><span class="sxs-lookup"><span data-stu-id="ebb94-171">Use the following format "Customer1..CustomerN.</span></span>
+    * <span data-ttu-id="ebb94-172">For eksempel kan du angive filteret: US-001..US-004</span><span class="sxs-lookup"><span data-stu-id="ebb94-172">For example, you could set the filter to: US-001..US-004</span></span>  
+9. <span data-ttu-id="ebb94-173">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebb94-173">Click OK.</span></span>
+10. <span data-ttu-id="ebb94-174">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ebb94-174">Click OK.</span></span>
+11. <span data-ttu-id="ebb94-175">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="ebb94-175">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="ebb94-176">Kontroller, at der er oprettet tilbud for alle de debitorer, der er angivet i masseopdateringsrutinen, på basis af den valgte skabelon.</span><span class="sxs-lookup"><span data-stu-id="ebb94-176">Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.</span></span>  
 

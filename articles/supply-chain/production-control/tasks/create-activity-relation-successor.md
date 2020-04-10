@@ -17,52 +17,52 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07ebb7d2158964a5d8862df998fe470032a0d354
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dfd9d515b9417ce0142b7bf5db3485902968e4de
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550407"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149291"
 ---
-# <a name="create-activity-relation---successor"></a><span data-ttu-id="bdf25-103">Oprette aktivitetsrelation - Efterfølgende</span><span class="sxs-lookup"><span data-stu-id="bdf25-103">Create activity relation - Successor</span></span>
+# <a name="create-activity-relation---successor"></a><span data-ttu-id="74417-103">Oprette aktivitetsrelation - Efterfølgende</span><span class="sxs-lookup"><span data-stu-id="74417-103">Create activity relation - Successor</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="bdf25-104">Flowet af aktiviteter i et lean produktionsflow dokumenteres via aktivitetsrelationer.</span><span class="sxs-lookup"><span data-stu-id="bdf25-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="bdf25-105">Denne optagelse viser, hvordan du opretter en aktivitetsrelation.</span><span class="sxs-lookup"><span data-stu-id="bdf25-105">This recording shows how to create an activity relation.</span></span>
+<span data-ttu-id="74417-104">Flowet af aktiviteter i et lean produktionsflow dokumenteres via aktivitetsrelationer.</span><span class="sxs-lookup"><span data-stu-id="74417-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="74417-105">Denne optagelse viser, hvordan du opretter en aktivitetsrelation.</span><span class="sxs-lookup"><span data-stu-id="74417-105">This recording shows how to create an activity relation.</span></span>
 
-<span data-ttu-id="bdf25-106">Forudsætninger:</span><span class="sxs-lookup"><span data-stu-id="bdf25-106">Prerequisites:</span></span>
+<span data-ttu-id="74417-106">Forudsætninger:</span><span class="sxs-lookup"><span data-stu-id="74417-106">Prerequisites:</span></span>
 
-- <span data-ttu-id="bdf25-107">Et produktionsflow og en version i kladdetilstand.</span><span class="sxs-lookup"><span data-stu-id="bdf25-107">A production flow and version in draft mode.</span></span> 
+- <span data-ttu-id="74417-107">Et produktionsflow og en version i kladdetilstand.</span><span class="sxs-lookup"><span data-stu-id="74417-107">A production flow and version in draft mode.</span></span> 
 
-- <span data-ttu-id="bdf25-108">To aktiviteter, der følger efter hinanden i produktionsflowet, er oprettet, men ikke relateret.</span><span class="sxs-lookup"><span data-stu-id="bdf25-108">Two activities that follow each other in the production flow are created but not related.</span></span>
+- <span data-ttu-id="74417-108">To aktiviteter, der følger efter hinanden i produktionsflowet, er oprettet, men ikke relateret.</span><span class="sxs-lookup"><span data-stu-id="74417-108">Two activities that follow each other in the production flow are created but not related.</span></span>
 
 
-## <a name="find-the-production-flow-version"></a><span data-ttu-id="bdf25-109">Find produktionsflowversionen</span><span class="sxs-lookup"><span data-stu-id="bdf25-109">Find the production flow version</span></span> 
-1. <span data-ttu-id="bdf25-110">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="bdf25-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="bdf25-111">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="bdf25-111">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="bdf25-112">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="bdf25-112">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="bdf25-113">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="bdf25-113">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="bdf25-114">Vælg en kladdeversion på listen.</span><span class="sxs-lookup"><span data-stu-id="bdf25-114">In the list, select a draft version.</span></span>
-    * <span data-ttu-id="bdf25-115">Aktivitetsrelationer kan føjes til både kladdeversioner eller aktive versioner af et produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="bdf25-115">Activity relations can be added to both draft or active versions of a production flow.</span></span>  
+## <a name="find-the-production-flow-version"></a><span data-ttu-id="74417-109">Find produktionsflowversionen</span><span class="sxs-lookup"><span data-stu-id="74417-109">Find the production flow version</span></span> 
+1. <span data-ttu-id="74417-110">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="74417-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="74417-111">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="74417-111">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="74417-112">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="74417-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="74417-113">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="74417-113">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="74417-114">Vælg en kladdeversion på listen.</span><span class="sxs-lookup"><span data-stu-id="74417-114">In the list, select a draft version.</span></span>
+    * <span data-ttu-id="74417-115">Aktivitetsrelationer kan føjes til både kladdeversioner eller aktive versioner af et produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="74417-115">Activity relations can be added to both draft or active versions of a production flow.</span></span>  
 
-## <a name="open-the-activity-overview"></a><span data-ttu-id="bdf25-116">Åbn den aktivitetsoversigten</span><span class="sxs-lookup"><span data-stu-id="bdf25-116">Open the activity overview</span></span>
-1. <span data-ttu-id="bdf25-117">Klik på Aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="bdf25-117">Click Activities.</span></span>
-    * <span data-ttu-id="bdf25-118">Bemærk, at formularen viser alle aktiviteter i produktionsflowet, der er allokeret til versionen af de produktionsflow, du arbejder i.</span><span class="sxs-lookup"><span data-stu-id="bdf25-118">Note that the form shows all activities of the production flow that are allocated to the Version of the production flows that you are working in.</span></span>  
+## <a name="open-the-activity-overview"></a><span data-ttu-id="74417-116">Åbn den aktivitetsoversigten</span><span class="sxs-lookup"><span data-stu-id="74417-116">Open the activity overview</span></span>
+1. <span data-ttu-id="74417-117">Klik på Aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="74417-117">Click Activities.</span></span>
+    * <span data-ttu-id="74417-118">Bemærk, at formularen viser alle aktiviteter i produktionsflowet, der er allokeret til versionen af de produktionsflow, du arbejder i.</span><span class="sxs-lookup"><span data-stu-id="74417-118">Note that the form shows all activities of the production flow that are allocated to the Version of the production flows that you are working in.</span></span>  
 
-## <a name="add-a-successor"></a><span data-ttu-id="bdf25-119">Tilføj en efterfølgende aktivitet</span><span class="sxs-lookup"><span data-stu-id="bdf25-119">Add a Successor</span></span>
-1. <span data-ttu-id="bdf25-120">Klik på Tilføj efterfølgende aktivitet.</span><span class="sxs-lookup"><span data-stu-id="bdf25-120">Click Add successor.</span></span>
-2. <span data-ttu-id="bdf25-121">Klik på rullelisten i feltet Aktivitet for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="bdf25-121">In the Activity field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="bdf25-122">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="bdf25-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="bdf25-123">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="bdf25-123">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="bdf25-124">Markér afkrydsningsfeltet Begrænsning.</span><span class="sxs-lookup"><span data-stu-id="bdf25-124">Select the Constraint check box.</span></span>
-6. <span data-ttu-id="bdf25-125">Skriv et tal i feltet Begrænsningsværdi.</span><span class="sxs-lookup"><span data-stu-id="bdf25-125">In the Constraint value field, enter a number.</span></span>
-    * <span data-ttu-id="bdf25-126">Begrænsningstiden er den tid, der skal planlægges mellem den planlagte afslutning af den foregående aktivitet (forfaldsdato og tid) og det planlagte starttidspunkt for den efterfølgende aktivitet.</span><span class="sxs-lookup"><span data-stu-id="bdf25-126">The constraint time is the time to be scheduled between the scheduled end of the predecessor (due date and time) and the scheduled start of the successor.</span></span>  
-7. <span data-ttu-id="bdf25-127">Angiv en værdi i feltet Enheder.</span><span class="sxs-lookup"><span data-stu-id="bdf25-127">In the Units field, type a value.</span></span>
-8. <span data-ttu-id="bdf25-128">Angiv et tal i feltet Procestidsforhold.</span><span class="sxs-lookup"><span data-stu-id="bdf25-128">In the Cycle time ratio field, enter a number.</span></span>
-    * <span data-ttu-id="bdf25-129">Hvis begge aktiviteter kører i den samme takt, skal procestidsforholdet være 1.</span><span class="sxs-lookup"><span data-stu-id="bdf25-129">If both activities run at the same takt, the cycle time ratio should be 1.</span></span> <span data-ttu-id="bdf25-130">Hvis den foregående opgave kører med dobbelt hastighed af den efterfølgende, skal forholdet være 2.</span><span class="sxs-lookup"><span data-stu-id="bdf25-130">If the predecessor runs at the double speed of the successor, the ratio should be 2.</span></span>   <span data-ttu-id="bdf25-131">Procestidsforholdene bruges til at beregne de enkelte procestider for produktionsflowaktiviteterne.</span><span class="sxs-lookup"><span data-stu-id="bdf25-131">The cycle time ratios are used to calculate the individual cycle times of the production flow activities.</span></span>  
-9. <span data-ttu-id="bdf25-132">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="bdf25-132">Click OK.</span></span>
-10. <span data-ttu-id="bdf25-133">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bdf25-133">Close the page.</span></span>
-11. <span data-ttu-id="bdf25-134">Klik på fanen GridPanel.</span><span class="sxs-lookup"><span data-stu-id="bdf25-134">Click the GridPanel tab.</span></span>
-12. <span data-ttu-id="bdf25-135">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bdf25-135">Close the page.</span></span>
-13. <span data-ttu-id="bdf25-136">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="bdf25-136">Refresh the page.</span></span>
+## <a name="add-a-successor"></a><span data-ttu-id="74417-119">Tilføj en efterfølgende aktivitet</span><span class="sxs-lookup"><span data-stu-id="74417-119">Add a Successor</span></span>
+1. <span data-ttu-id="74417-120">Klik på Tilføj efterfølgende aktivitet.</span><span class="sxs-lookup"><span data-stu-id="74417-120">Click Add successor.</span></span>
+2. <span data-ttu-id="74417-121">Klik på rullelisten i feltet Aktivitet for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="74417-121">In the Activity field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="74417-122">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="74417-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="74417-123">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="74417-123">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="74417-124">Markér afkrydsningsfeltet Begrænsning.</span><span class="sxs-lookup"><span data-stu-id="74417-124">Select the Constraint check box.</span></span>
+6. <span data-ttu-id="74417-125">Skriv et tal i feltet Begrænsningsværdi.</span><span class="sxs-lookup"><span data-stu-id="74417-125">In the Constraint value field, enter a number.</span></span>
+    * <span data-ttu-id="74417-126">Begrænsningstiden er den tid, der skal planlægges mellem den planlagte afslutning af den foregående aktivitet (forfaldsdato og tid) og det planlagte starttidspunkt for den efterfølgende aktivitet.</span><span class="sxs-lookup"><span data-stu-id="74417-126">The constraint time is the time to be scheduled between the scheduled end of the predecessor (due date and time) and the scheduled start of the successor.</span></span>  
+7. <span data-ttu-id="74417-127">Angiv en værdi i feltet Enheder.</span><span class="sxs-lookup"><span data-stu-id="74417-127">In the Units field, type a value.</span></span>
+8. <span data-ttu-id="74417-128">Angiv et tal i feltet Procestidsforhold.</span><span class="sxs-lookup"><span data-stu-id="74417-128">In the Cycle time ratio field, enter a number.</span></span>
+    * <span data-ttu-id="74417-129">Hvis begge aktiviteter kører i den samme takt, skal procestidsforholdet være 1.</span><span class="sxs-lookup"><span data-stu-id="74417-129">If both activities run at the same takt, the cycle time ratio should be 1.</span></span> <span data-ttu-id="74417-130">Hvis den foregående opgave kører med dobbelt hastighed af den efterfølgende, skal forholdet være 2.</span><span class="sxs-lookup"><span data-stu-id="74417-130">If the predecessor runs at the double speed of the successor, the ratio should be 2.</span></span>   <span data-ttu-id="74417-131">Procestidsforholdene bruges til at beregne de enkelte procestider for produktionsflowaktiviteterne.</span><span class="sxs-lookup"><span data-stu-id="74417-131">The cycle time ratios are used to calculate the individual cycle times of the production flow activities.</span></span>  
+9. <span data-ttu-id="74417-132">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="74417-132">Click OK.</span></span>
+10. <span data-ttu-id="74417-133">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="74417-133">Close the page.</span></span>
+11. <span data-ttu-id="74417-134">Klik på fanen GridPanel.</span><span class="sxs-lookup"><span data-stu-id="74417-134">Click the GridPanel tab.</span></span>
+12. <span data-ttu-id="74417-135">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="74417-135">Close the page.</span></span>
+13. <span data-ttu-id="74417-136">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="74417-136">Refresh the page.</span></span>
 

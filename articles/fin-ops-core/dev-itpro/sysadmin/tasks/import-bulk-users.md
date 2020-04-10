@@ -15,36 +15,36 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb2c316465f8c6964a562e92ce0a2233b37d38fe
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7d8b55895c9dfaf1c69cd319697f1e0da5990daf
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180892"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144081"
 ---
-# <a name="import-users-in-bulk"></a><span data-ttu-id="a4a4f-103">Masseimportere brugere</span><span class="sxs-lookup"><span data-stu-id="a4a4f-103">Import users in bulk</span></span>
+# <a name="import-users-in-bulk"></a><span data-ttu-id="f8eac-103">Masseimportere brugere</span><span class="sxs-lookup"><span data-stu-id="f8eac-103">Import users in bulk</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a4a4f-104">Systemadministratorer kan bruge denne procedure til at importere et stort antal brugere fra Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-104">This procedure can be used by system administrators to import a large number of users from Azure Active Directory.</span></span>
+<span data-ttu-id="f8eac-104">Systemadministratorer kan bruge denne procedure til at importere et stort antal brugere fra Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="f8eac-104">This procedure can be used by system administrators to import a large number of users from Azure Active Directory.</span></span>
 
 
-## <a name="run-as-a-batch-job"></a><span data-ttu-id="a4a4f-105">Kør som et batchjob</span><span class="sxs-lookup"><span data-stu-id="a4a4f-105">Run as a batch job</span></span>
-1. <span data-ttu-id="a4a4f-106">Gå til Systemadministration > Brugere > Brugere.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-106">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="a4a4f-107">Klik på Batchimport.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-107">Click Batch import.</span></span>
-3. <span data-ttu-id="a4a4f-108">Udvid sektionen Kør i baggrunden.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-108">Expand the Run in the background section.</span></span>
-4. <span data-ttu-id="a4a4f-109">Vælg Ja i feltet Batchbehandling.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-109">Select Yes in the Batch processing field.</span></span>
-5. <span data-ttu-id="a4a4f-110">Skriv en værdi i feltet Opgavebeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-110">In the Task description field, type a value.</span></span>
-6. <span data-ttu-id="a4a4f-111">Indtast eller vælg en værdi i feltet Batchgruppe.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-111">In the Batch group field, enter or select a value.</span></span>
-    * <span data-ttu-id="a4a4f-112">Dette trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-112">This is an optional step.</span></span>  
-7. <span data-ttu-id="a4a4f-113">Vælg Ja i feltet Privat.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-113">Select Yes in the Private field.</span></span>
-    * <span data-ttu-id="a4a4f-114">Dette trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-114">This is an optional step.</span></span>  
-8. <span data-ttu-id="a4a4f-115">Vælg Ja i feltet Kritisk job.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-115">Select Yes in the Critical Job field.</span></span>
-    * <span data-ttu-id="a4a4f-116">Dette trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-116">This is an optional step.</span></span>  
-9. <span data-ttu-id="a4a4f-117">Vælg en indstilling i feltet Overvågning.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-117">In the Monitoring category field, select an option.</span></span>
-10. <span data-ttu-id="a4a4f-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-118">Click OK.</span></span>
+## <a name="run-as-a-batch-job"></a><span data-ttu-id="f8eac-105">Kør som et batchjob</span><span class="sxs-lookup"><span data-stu-id="f8eac-105">Run as a batch job</span></span>
+1. <span data-ttu-id="f8eac-106">Gå til Systemadministration > Brugere > Brugere.</span><span class="sxs-lookup"><span data-stu-id="f8eac-106">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="f8eac-107">Klik på Batchimport.</span><span class="sxs-lookup"><span data-stu-id="f8eac-107">Click Batch import.</span></span>
+3. <span data-ttu-id="f8eac-108">Udvid sektionen Kør i baggrunden.</span><span class="sxs-lookup"><span data-stu-id="f8eac-108">Expand the Run in the background section.</span></span>
+4. <span data-ttu-id="f8eac-109">Vælg Ja i feltet Batchbehandling.</span><span class="sxs-lookup"><span data-stu-id="f8eac-109">Select Yes in the Batch processing field.</span></span>
+5. <span data-ttu-id="f8eac-110">Skriv en værdi i feltet Opgavebeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="f8eac-110">In the Task description field, type a value.</span></span>
+6. <span data-ttu-id="f8eac-111">Indtast eller vælg en værdi i feltet Batchgruppe.</span><span class="sxs-lookup"><span data-stu-id="f8eac-111">In the Batch group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f8eac-112">Dette trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="f8eac-112">This is an optional step.</span></span>  
+7. <span data-ttu-id="f8eac-113">Vælg Ja i feltet Privat.</span><span class="sxs-lookup"><span data-stu-id="f8eac-113">Select Yes in the Private field.</span></span>
+    * <span data-ttu-id="f8eac-114">Dette trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="f8eac-114">This is an optional step.</span></span>  
+8. <span data-ttu-id="f8eac-115">Vælg Ja i feltet Kritisk job.</span><span class="sxs-lookup"><span data-stu-id="f8eac-115">Select Yes in the Critical Job field.</span></span>
+    * <span data-ttu-id="f8eac-116">Dette trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="f8eac-116">This is an optional step.</span></span>  
+9. <span data-ttu-id="f8eac-117">Vælg en indstilling i feltet Overvågning.</span><span class="sxs-lookup"><span data-stu-id="f8eac-117">In the Monitoring category field, select an option.</span></span>
+10. <span data-ttu-id="f8eac-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f8eac-118">Click OK.</span></span>
 
-## <a name="run-in-a-sandbox-environment"></a><span data-ttu-id="a4a4f-119">Køre i et sandkassemiljø</span><span class="sxs-lookup"><span data-stu-id="a4a4f-119">Run in a sandbox environment</span></span>
-1. <span data-ttu-id="a4a4f-120">Klik på Batchimport.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-120">Click Batch import.</span></span>
-2. <span data-ttu-id="a4a4f-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a4a4f-121">Click OK.</span></span>
+## <a name="run-in-a-sandbox-environment"></a><span data-ttu-id="f8eac-119">Køre i et sandkassemiljø</span><span class="sxs-lookup"><span data-stu-id="f8eac-119">Run in a sandbox environment</span></span>
+1. <span data-ttu-id="f8eac-120">Klik på Batchimport.</span><span class="sxs-lookup"><span data-stu-id="f8eac-120">Click Batch import.</span></span>
+2. <span data-ttu-id="f8eac-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f8eac-121">Click OK.</span></span>
 
