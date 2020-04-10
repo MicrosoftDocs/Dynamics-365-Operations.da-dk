@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf27590d80bbaf7749a0b6e69adc63ddcf4f9380
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8511b83a5d327f6a1d5c9ace091eae9e546307b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185146"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142225"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Designe ER-konfigurationer til at importere data fra eksterne CSV-filer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Brug denne procedure til at designe konfigurationer til elektronisk rapportering (ER) for at importere data til programmet fra en ekstern fil i CSV-format. I denne procedure skal du oprette de nødvendige ER konfigurationer for eksempelfirmaet Litware, Inc. For at fuldføre disse trin skal du først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudbyder og markere den som aktiv". 
 
@@ -35,7 +35,7 @@ Du skal også hente og gemme følgende filer lokalt: (https://go.microsoft.com/f
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
     * Du kan konfigurere en proces til at importere eksterne filer i XML-, TXT- eller CSV-format til tabeller i programmet. Først skal du oprette en abstrakt datamodel, der repræsenterer de importerede data fra en forretningsmæssig betragtning – der oprettes en konfiguration af ER-datamodellen til dette. Derefter skal du definere strukturen for den importerede fil, der knyttes til designede datamodel, som metoden til at overføre data fra filen til den abstrakte datamodel – der oprettes en ER-formatkonfiguration til dette. Derefter skal ER-datamodelkonfigurationen udvides med en ny modeltilknytning, der beskriver, hvordan dataene fra den importerede fil og de bevarede data fra den abstrakte datamodel bruges til at opdatere programtabeller og dataenheder.  
     * De følgende trin viser, hvordan eksternt registrerede leverandørers posteringer bliver importeret fra den eksterne CSV-fil til senere brug i kreditorudligningen for 1099-formularer.   
-    * Kontrollér, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i proceduren "Oprette en ER-konfigurationsudbyder og markere den som aktiv".  
+    * Kontrollér, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv".  
 2. Klik på Rapporteringskonfigurationer.
 3. Anvend filteret '1099-betalingsmodel'. Hvis du allerede har fuldført proceduren "Oprette krævede konfigurationer til import af data fra en ekstern fil til elektronisk rapportering (ER)" og konfigurationen '1099-betalingsmodel' er tilgængelig i konfigurationstræet, skal du springe alle trin i den næste underordnede opgave.   
 
@@ -52,7 +52,7 @@ Du skal også hente og gemme følgende filer lokalt: (https://go.microsoft.com/f
 3. Skriv "Format baseret på datamodel 1099-betalingsmodel" i feltet Ny.
 4. Vælg Ja i feltet Understøtter dataimport.
 5. Tryk på tasten ESC for at lukke denne side.
-    * I stedet for at oprette et nyt ER-format, der understøtter dataimport, kan du indlæse filen 1099formatcsv.xml, som du tidligere har downloadet. Denne fil indeholder det krævede ER-format, der definerer strukturen på den indgående CSV-fil, og tilknytningen af denne struktur til datamodellen for kreditorens transaktioner.   
+    * I stedet for at oprette et nyt ER-format, der understøtter dataimport, kan du indlæse filen 1099formatcsv.xml, som du tidligere har downloadet. Denne fil indeholder det krævede ER-format, der definerer strukturen på den indgående CSV-fil, og tilknytningen af denne struktur til datamodellen for kreditorernes transaktioner.   
 6. Klik på Udveksling.
 7. Klik på Indlæs fra XML-fil.
     * Klik på Gennemse, og naviger til filen 1099formatcsv.xml, som du tidligere har downloadet.  

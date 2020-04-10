@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2948282d8b40f7d34ffbae072a195cf954ab6e2
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 6ca44b4793f61d1067b9e0740b9a447d3a2363c2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147382"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Oprette en forbrugsrekvisition
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I dette emne beskrives processen til oprettelse af en rekvisition. Den viser forskellige måder at søge efter produkter i indkøbskataloget, og hvordan du tilføjer et produkt, der ikke findes i kataloget. Inden du begynder denne procedure, skal du have en indkøbspolitik, der er konfigureret med Forbrug som standardtypen for rekvisitionen. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Proceduren kan kun udføres af en brugerprofil, der er angivet som arbejder. Denne opgave vil normalt udføres af en medarbejder. **Medarbejder**-sikkerhedsrollen tillader, at du kan udføre opgaverne, eller hvis du bruger USMF, kan du logge på som **Alicia**.
 

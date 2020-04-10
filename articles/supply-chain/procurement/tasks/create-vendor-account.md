@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: ba585a9bb1a296bbf7181530e151d737bfa22fc2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924410"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149590"
 ---
 # <a name="create-a-vendor-account"></a>Oprette en kreditorkonto
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåde viser, hvordan du opretter en kreditorkonto og tilføjer en adresse og kontaktoplysninger. Fremgangsmåden viser ikke, hvordan du udfylder alle felter med henblik på købsformål og økonomiske formål. Hvis du vil vide mere om disse felter, skal du læse i feltbeskrivelserne. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data. Der oprettes typisk kreditorkonti af en indkøber eller debitorpersonale.
 

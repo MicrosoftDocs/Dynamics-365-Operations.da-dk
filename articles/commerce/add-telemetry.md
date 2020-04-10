@@ -3,7 +3,7 @@ title: Tilføje scriptkode til sider på websteder for at understøtte telemetri
 description: I dette emne beskrives det, hvordan du føjer klientside-scriptkode til siderne på webstedet for at understøtte samlingen af telemetri på klientsiden.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001271"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154080"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Tilføje scriptkode til sider på websteder for at understøtte telemetri
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,31 +37,78 @@ Web Analytics er et vigtigt værktøj, når du vil forstå, hvordan dine kunder 
 > [!NOTE]
 > Instruktionerne i dette emne gælder også for andre brugerdefinerede funktioner på klientsiden, som Microsoft Dynamics 365 Commerce ikke tilbyder som oprindelige funktioner.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Oprette et fragment, der kan genbruges, til scriptkoden
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Oprette et sidefragment, der kan genbruges, til scriptkoden
 
-Når du har oprettet et fragment til scriptkoden, kan det genbruges på tværs af alle sider på dit websted.
+Et sidefragment giver dig mulighed for at genbruge indbygget eller ekstern scriptkode på alle sider på webstedet, uanset hvilken skabelon de bruger.
 
-1. Gå til **Fragmenter \> Nyt sidefragment**.
-2. Vælg **Eksternt script**, angiv et navn til fragmentet, og vælg derefter **OK**.
-3. Vælge det underordnede **script-injektor**-modul til det fragment, du lige har oprettet, i fragmenthierarkiet.
-4. Tilføj klientsidescriptet i egenskabsruden til højre, og angiv andre konfigurationsindstillinger efter behov.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Oprette et sidefragment, der kan genbruges, til den indbyggede scriptkode
 
-## <a name="add-the-fragment-to-templates"></a>Føje fragmentet til skabeloner
+Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den indbyggede scriptkode i webstedsgeneratoren.
+
+1. Gå til **Sidefragmenter**, og vælg derefter **Ny**.
+1. Vælg **Indbygget script** i dialogboksen **Nyt sidefragment**.
+1. Angiv et navn til fragmentet under **Sidefragmentsnavn**, og vælg derefter **OK**.
+1. Vælg modulet **Indbygget standardscript** under det sidefragment, du har oprettet.
+1. Angiv dit klientsidescript under **Indbygget script** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
+1. Vælg **Publicer**.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Oprette et sidefragment, der kan genbruges, til den eksterne scriptkode
+
+Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den eksterne scriptkode i webstedsgeneratoren.
+
+1. Gå til **Sidefragmenter**, og vælg derefter **Ny**.
+1. Vælg **Eksternt script** i dialogboksen **Nyt sidefragment**.
+1. Angiv et navn til fragmentet under **Sidefragmentsnavn**, og vælg derefter **OK**.
+1. Vælg modulet **Eksternt standardscript** under det sidefragment, du har oprettet.
+1. Tilføj en ekstern eller relativ URL-adresse til den eksterne scriptkilde under **Scriptkilde** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
+1. Vælg **Publicer**.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Føje et sidefragment, der indeholder scriptkode, til en skabelon
+
+Udfør følgende trin for at føje et sidefragment, der indeholder scriptkode, til en skabelon, i webstedsgeneratoren.
 
 1. Gå til **Skabeloner**, og åbn skabelonen for de sider, du vil føje din scriptkode til.
-2. Udvid skabelon hierarkiet i ruden til venstre for at få vist pladsen **HTML-hoved**.
-3. Vælg ellipseknappen (**...**) for pladsen **HTML-hoved**, og vælg derefter **Tilføj fragment**.
-4. Vælg det fragment, du har oprettet til scriptkoden.
-5. Gem skabelonen ind, og tjek den ind.
+1. Udvid skabelon hierarkiet i ruden til venstre for at få vist pladsen **HTML-hoved**.
+1. Vælg ellipseknappen (**...**) i pladsen **HTML-hoved**, og vælg derefter **Tilføj sidefragment**.
+1. Vælg det fragment, du har oprettet til scriptkoden.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
+1. Vælg **Publicer**.
 
-> [!NOTE]
-> Når du er færdig, skal du publicere fragmentet og masterskabelonen. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Føje et eksternt script eller indbygget script til en skabelon
+
+Hvis du vil indsætte et indbygget eller eksternt script direkte i et sæt sider, der styres af en enkelt skabelon, behøver du ikke oprette et sidefragment først.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Føje et indbygget script til en skabelon
+
+Hvis du vil føje et indbygget script direkte til en skabelon i webstedsgeneratoren, skal du følge disse trin.
+
+1. Gå til **Skabeloner**, og åbn skabelonen for de sider, du vil føje din scriptkode til.
+1. Udvid skabelon hierarkiet i ruden til venstre for at få vist pladsen **HTML-hoved**.
+1. Vælg ellipseknappen (**...**) i pladsen **HTML-hoved**, og vælg derefter **Tilføj modul**.
+1. Vælg **Indbygget script** i dialogboksen **Tilføj modul**.
+1. Angiv dit klientsidescript under **Indbygget script** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
+1. Vælg **Publicer**.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Føje et eksternt script til en skabelon
+
+Hvis du vil føje et eksternt script direkte til en skabelon i webstedsgeneratoren, skal du følge disse trin.
+
+1. Gå til **Skabeloner**, og åbn skabelonen for de sider, du vil føje din scriptkode til.
+1. Udvid skabelon hierarkiet i ruden til venstre for at få vist pladsen **HTML-hoved**.
+1. Vælg ellipseknappen (**...**) i pladsen **HTML-hoved**, og vælg derefter **Tilføj modul**.
+1. Vælg **Eksternt script** i dialogboksen **Tilføj modul**.
+1. Tilføj en ekstern eller relativ URL-adresse til den eksterne scriptkilde under **Scriptkilde** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
+1. Vælg **Publicer**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Tilføj et logo](add-logo.md)
+[Tilføje et logo](add-logo.md)
 
-[Vælg et tema for webstedet](select-site-theme.md)
+[Vælge et tema for webstedet](select-site-theme.md)
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
@@ -73,4 +119,3 @@ Når du har oprettet et fragment til scriptkoden, kan det genbruges på tværs a
 [Tilføj en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
-

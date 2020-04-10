@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26a3dee8b73ae710def7e526ceefa7194171d716
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a261acee47c6d52e3a1390d0e55cb3f9d197efec
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182663"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142228"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Designe ER- konfigurationer til at fortolke indgående dokumenter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I denne procedure forklares det, hvordan du designer konfigurationer af elektronisk rapportering (ER) for at analysere et elektronisk dokument. I denne procedure skal du importere de nødvendige ER-konfigurationer, der er oprettet til eksempelfirmaet Litware, Inc., og bruge dem til at analysere indgående elektroniske dokumenter. For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Oprette en konfigurationsudbyder og markere den som aktiv".
 
@@ -33,7 +33,7 @@ Denne procedure er til brugere, der er tildelt rollen som Systemadministrator el
 Disse trin kan udføres ved hjælp af ethvert datasæt. Før du går i gang, skal du hente og gemme de filer, der er anført i emnet "Analysere indgående dokumenter for at opdatere programdata" (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filerne er: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-    * Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren "Oprette en konfigurationsudbyder og markere den som aktiv".  
+    * Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv".  
 2. Klik på Rapporteringskonfigurationer.
     * Følgende scenario skal bruges til at få vist egenskaberne for fortolkning af indgående elektroniske dokumenter i XML-format: ERP-programmet anmoder om data fra webtjenesten (f.eks. http://efsta.org/ EFSTA-regnskabsservice) og fortolker indgående svar for at opdatere programdata tilsvarende. For at opnå den mest effektive fortolkningsmåde bruges et enkelt ER-format til trods for, at forventede indgående dokumenter i XML-format har en anderledes struktur.   
 

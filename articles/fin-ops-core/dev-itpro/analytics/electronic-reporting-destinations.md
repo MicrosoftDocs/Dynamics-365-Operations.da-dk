@@ -3,7 +3,7 @@ title: Destinationer for elektronisk rapportering (ER)
 description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering (ER), de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030767"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150809"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -114,7 +114,7 @@ Når du har fuldført denne konfiguration, bliver indstillingen **Kør kladde** 
 
 [![Indstillingen Kør kladde](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Håndtering af destinationsfejl
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Håndtering af destinationsfejl
 
 Normalt køres et ER-format inden for området for en bestemt forretningsproces. Leveringen af et udgående dokument, der genereres under udførelsen af et ER-format, skal dog nogle gange ses som en del af den pågældende forretningsproces. I dette tilfælde skal udførelsen af forretningsprocessen annulleres, hvis leveringen af et genereret udgående dokument til en konfigureret destination ikke lykkes. Hvis du vil konfigurere den rette ER-destination, skal du vælge indstillingen **Stop behandling ved fejl**.
 
@@ -124,7 +124,7 @@ Du kan f.eks. konfigurere behandling af kreditorbetalinger, så ER-formatet **IS
 
 Hvis du fjerner markeringen af afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** på destinationen, anses en betaling for at være behandlet korrekt, også selv om følgebrevet ikke er leveret korrekt via mail. Status for betalingen ændres fra **Ingen** til **Sendt**, selvom følgebrevet ikke kan sendes, f.eks. fordi modtagerens eller afsenderens e-mailadresse mangler eller er forkert.
 
-## <a name="OutputConversionToPDF"></a>Konvertering af output til PDF
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Konvertering af output til PDF
 
 Du kan bruge PDF-konverteringsindstillingen til at konvertere output i Microsoft Office-format (Excel/Word) til PDF-format.
 
@@ -157,6 +157,19 @@ PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der brug
 Hvis du vil aktivere PDF-konvertering for en fildestination, skal du markere afkrydsningsfeltet **Konverter til PDF**.
 
 [![Aktivere PDF-konvertering for en fildestination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Vælge en sideretning til PDF-konvertering</a>
+
+Hvis du opretter en ER-konfiguration i Excel-format og vil konvertere den til PDF-format, kan du angive sideretningen i PDF-dokumentet. Når du markerer afkrydsningsfeltet **Konverter til PDF** for at aktivere PDF-konvertering for en fildestination, der opretter en outputfil i Excel-format, bliver feltet **Sideretning** tilgængeligt i oversigtspanelet **Indstillinger for PDF-konvertering**. Vælg den foretrukne retning i feltet **Sideretning**.
+
+[![Vælge en sideretning til PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Hvis du vil have mulighed for at vælge PDF-sideretningen, skal du installere Microsoft Dynamics 365 Finance version 10.0.10 (maj 2020) eller nyere.
+>
+> Den valgte sideretning anvendes på alle de ER-konfigurationer, der genereres i Excel-format og konverteres derefter til PDF-format.
+>
+> Hvis der oprettes et konverteret PDF-dokument ud fra en ER-konfiguration i Word-format, hentes sideretningen i PDF-dokumentet fra Word-dokument.
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 

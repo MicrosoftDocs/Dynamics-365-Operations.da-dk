@@ -17,16 +17,16 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54f60a8b9a8cf8e2c881675113b6d46db60be391
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 905206f6f7ce764ff072916da3b2c9807b67fd39
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183500"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144591"
 ---
 # <a name="create-a-billing-classification-in-the-public-sector"></a>Oprette en faktureringsklassifikation i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Offentlige institutioner kan bruge faktureringsklassifikationer til at administrere fritekstfakturaer. Faktureringsklassifikationer bruges til at gruppere ensartede fritekstfakturaer til behandling og visning. Før du bruger denne procedure, skal du kontrollere, at der findes en faktureringskode, der kan tildeles til en faktureringsklassifikation. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

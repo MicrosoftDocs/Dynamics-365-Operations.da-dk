@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 249fde6f7bba5d6e0bc6cfde62fd792dee3f1301
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112408"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172802"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 Et vigtigt mål i de fleste virksomheder er at konvertere kundeemner til kunder og derefter vedligeholde et løbende forretningsforhold til disse kunder. I Microsoft Dynamics 365-apps sker kundeemne til kontant-processen gennem tilbud eller ordrebehandlingsarbejdsgange, og finanserne afstemmes og registreres. Integration af kundeemner til kontanter med to skrivninger opretter en arbejdsgang, der tager et tilbud og en ordre, der stammer fra Dynamics 365 Sales eller Dynamics 365 Supply Chain Management, og gør tilbuddet og ordren tilgængeligt i begge apps.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f31804b3988af44bad0cba28e8226e625d32148b
-ms.sourcegitcommit: 7a855deed9f95ca2589f38db214890464b2b9061
+ms.openlocfilehash: ebe68f926848c86843be04977f58d89e7a54509b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "2951226"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143874"
 ---
 # <a name="configure-the-global-address-book"></a>Konfiguration af den globale adressebog
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Brug denne procedure til at angive standardværdier og sikkerhedspolitikker for det globale adressekartotek. 
 

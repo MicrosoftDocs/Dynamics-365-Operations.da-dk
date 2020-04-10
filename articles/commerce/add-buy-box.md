@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025453"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154057"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -58,7 +58,7 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler, der kan bruges i et købefeltmodul
 
 - **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Den kan understøtte fra ét til mange billeder. Det understøtter også miniaturebilleder. Miniaturebillederne kan arrangeres enten vandret (som en række under billedet) eller lodret (som en kolonne ved siden af billedet). Du kan føje mediegallerimodulet til pladsen **Medier** i købefeltmodulet. Det understøtter i øjeblikket kun billeder. 
-- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Modulet Butiksvælger er integreret med Bing Maps Geocoding-API'en (Application Programming Interface) til at konvertere det sted, som kunden indtastede, til en bredde- og en længdegrad. Der kræves en Bing Maps-API-nøgle, og den skal føjes til den delte Retail-parameterside i Dynamics 365 Retail. Dette modul understøtter to egenskaber **Søgeradius** og **Link til vilkår for tjeneste**. Egenskaben **Søgeradius** definerer søgeradiussen for butikker, i miles. Hvis der ikke er angivet en værdi, bruges standardradiussen, som er 50 miles. Hvis Bing Maps eller en ekstern tjeneste bruges, kan egenskaben for **Link til vilkår for tjeneste** bruges til at angive et link til servicebetingelserne. Tjenesten Bing Maps kræver et link til et serviceprogram. 
+- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Modulet Butiksvælger](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
 
@@ -93,9 +93,11 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 [Oversigt over startsæt](starter-kit-overview.md)
 
-[Modulet Container](add-container-module.md)
+[Modulet Butiksvælger](store-selector.md)
 
-[Indkøbsvognmodul](add-cart-module.md)
+[Container-modul](add-container-module.md)
+
+[Indkøbskurvsmodul](add-cart-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 

@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
-ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
+ms.openlocfilehash: e8210369139b3c3d4123deff5279abb26b1cbb17
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559183"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145956"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurere en min.-maks. genopfyldningsproces
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning. Når lagerbeholdningen falder under minimumniveauet, oprettes arbejde for genopfyldning af lokationen. Proceduren viser også, hvordan faste plukpladser kan tillade genopfyldning, selvom lageret falder under det minimale niveau, og hvordan du aktiverer genopfyldningsprocessen til at køre regelmæssigt ved hjælp af et batchjob. Disse opgaver udføres normalt af en lagerchef. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne nedenfor, eller du kan køre den på dine egne data. Hvis du bruger dine egne data, skal du sørge for, at du har et lagersted, der er aktiveret for lagerstedsstyringsprocesser.
 
@@ -34,7 +34,7 @@ Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruge
 ## <a name="create-a-fixed-picking-location"></a>Oprette en fast plukplads
 1. Gå til **Navigationsrude > Moduler > Lokationsstyring > Opsætning > Lagersted > Faste lokationer**. Dette er en valgfri opgave for minimal/maksimal genopfyldning, men hvis du bruger en fast plukplads, kan lageret genopfyldes, selvom det falder under det minimale niveau, fordi systemet kan afgøre, hvilke varer der skal genbestilles, selvom der ikke er nogen tilbage.
 2. Klik på **Ny**.
-3. Indtast eller vælg en værdi i feltet **Varenummer**. Hvis du bruger USMF, kan du vælge element A0001.  
+3. Indtast eller vælg en værdi i feltet **Varenummer**. Hvis du bruger USMF, kan du vælge vare A0001.  
 4. Indtast eller vælg en værdi i feltet **Sted**. Hvis du bruger USMF, kan du vælge lokation 2.  
 5. Indtast eller vælg en værdi i feltet **Lokation**. Hvis du bruger USMF, kan du vælge lagersted 24.  
 6. Indtast eller vælg en værdi i feltet **Lokation**. Hvis du bruger USMF, kan du vælge CP-003.  

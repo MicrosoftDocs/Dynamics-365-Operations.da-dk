@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57526fccd1e997acde570e712d64caf4df728318
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9bf9f4725120a7b893bf113a50d208ae27755d56
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844219"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149843"
 ---
 # <a name="release-a-dimension-based-product-master"></a>Frigive en dimensionsbaseret produktmaster
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåde viser, hvordan du frigiver en produktmaster, der skal bruges til dimensionsbaserede konfigurationer. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Det er en forudsætning, at du har oprettet en produktmaster med dimensionsbaseret konfigurationsteknologi. Dette er den anden procedure ud af otte, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.
 

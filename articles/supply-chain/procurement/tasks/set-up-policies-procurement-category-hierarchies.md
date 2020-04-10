@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 230794eacd5e9911496dd3826f08126cc21494cb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8d8c259ad081d02395c6ae3c3b7cf66b89933fdf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844164"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149498"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Konfigurere politikker for indkøbskategorihierarkier
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Brug denne fremgangsmåde til at oprette regler for bestilling af produkter i en kategori. Reglerne er defineret for en bestemt indkøbspolitik. Kategoriadgangspolitikreglen styrer, hvilke indkøbskategorier medarbejdere har adgang til, når de opretter en indkøbsrekvisition. Når der oprettes en indkøbsrekvisition, afgøres den indkøbspolitik og den regel for kategoriadgang, der skal anvendes, af den juridiske enhed og den driftsenhed, som medarbejderen tilhører. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne opgave vil typisk blive udført af en indkøbschef.
 

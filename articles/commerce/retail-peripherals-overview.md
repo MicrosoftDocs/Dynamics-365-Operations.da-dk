@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124399"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154174"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -158,7 +158,7 @@ Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruge
 
 ### <a name="dedicated"></a>Dedikeret
 
-Modern POS-klienter til Windows og Android omfatter **dedikerede** eller indbyggede hardwarestationer. Disse klienter kan kommunikere direkte med eksterne enheder ved hjælp af forretningslogik, der er indbygget i programmerne. Android-programmet understøtter kun netværksenheder. Du kan finde yderligere oplysninger om understøttelse af eksterne enheder til Android i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+Modern POS-klienter til Windows og Android omfatter **dedikerede** eller indbyggede hardwarestationer. Disse klienter kan kommunikere direkte med eksterne enheder ved hjælp af forretningslogik, der er indbygget i programmerne. Android-programmet understøtter kun netværksenheder. Du kan finde yderligere oplysninger om understøttelse af eksterne enheder til Android i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 Hvis du vil bruge den dedikerede hardwarestation, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows- eller Android-programmer. Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges. Start Modern POS uden for pengeskuffe-tilstand, og brug funktionen **Administrer hardwarestationer** til at aktivere hardwarestationens funktioner. Den dedikerede hardwarestation vil som standard være aktiv. Log derefter af Modern POS og derefter på igen, og åbne et skift, så de eksterne enheder, der er konfigureret i hardwareprofilen, kan anvendes. 
 
@@ -199,7 +199,7 @@ Du kan finde flere oplysninger i [Konfigurer, installer og aktiver Modern POS (M
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Android og iOS
 
-Du kan få flere oplysninger i [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+Du kan få flere oplysninger i [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>Installation og konfiguration af OPOS-enhed
 
@@ -494,7 +494,7 @@ Denne konfiguration er den mest typiske konfiguration for traditionelle, faste P
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS til Android med en IPC-hardwarestation (indbygget)
 
-**Nyhed for 10.0.8** - Epson-netværksprintere og kontantskuffer, der er tilsluttet de pågældende printere via DK-porten, understøttes nu af Modern POS til Android-app. Du kan finde yderligere oplysninger i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+**Nyhed for 10.0.8** - Epson-netværksprintere og kontantskuffer, der er tilsluttet de pågældende printere via DK-porten, understøttes nu af Modern POS til Android-app. Du kan finde yderligere oplysninger i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-klienter, der har en bindende, delt IIS-hardwarestation
 

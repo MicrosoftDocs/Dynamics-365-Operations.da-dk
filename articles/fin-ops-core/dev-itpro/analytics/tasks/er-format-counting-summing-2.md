@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d785b321037645837dbcbaf28c8ede9b8e97b79
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 20188438a4ca623fc926e6c373fb002f148c3df4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550596"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142472"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurer beregninger)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet. Disse trin kan udføres i en hvilken som helst virksomhed.
 
@@ -49,7 +49,7 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 1. Klik på Designer.
 2. Vælg Ja i feltet Detaljer om indsamlingsoutput.
     * Dette flag aktiverer på kørselstidspunktet processen til indsamling af outputdetaljer til generering af Intrastat-filen.  
-    * Du skal foretage optælling for forskellige Intrastat-retninger, så føj en dedikeret modeloptælling til datakildens liste over denne formatkonfiguration.  
+    * Du skal foretage optælling for forskellige Intrastat-retninger, så føj en dedikeret modeloptælling til datakildernes liste over denne formatkonfiguration.  
 3. Klik på fanen Tilknytning.
 4. Klik på Tilføj rod for at åbne dialogboksen.
 5. Vælg 'Datamodel\Optælling' i træet.

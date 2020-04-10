@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f61228d328521d0c6fe8e0ae704001a65d03151f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 207309e8be6c097cec187f3475a489330e1f6b6c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249221"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142679"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Designe ER-udtryk til kald af programklassemetoder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne vejledning indeholder oplysninger om, hvordan du genbruge den eksisterende programlogik i konfigurationer til elektronisk rapportering (ER) ved at kalde de krævede metoder for programklasser i ER-udtryk. Værdier for argumenter til kald af klasser kan defineres dynamisk på kørselstidspunktet, f.eks. baseret på oplysninger i parsingdokumentet for at sikre, at det er korrekt. I denne guide skal du oprette de krævede ER-konfigurationer til eksempelfirmaet Litware Inc. Denne procedure er til brugere, der er tildelt rollen som Systemadministrator eller Elektronisk rapporteringsudvikler. 
 
@@ -33,7 +33,7 @@ Disse trin kan udføres ved hjælp af ethvert datasæt. Du skal hente og gemme f
 Du skal først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudbyder markere den som aktiv" for at fuldføre disse trin.
 
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-    * Kontrollér, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i proceduren "Oprette en ER-konfigurationsudbyder og markere den som aktiv".   
+    * Kontrollér, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv".   
     * Du designer en proces til fortolkning af indgående bankkontoudtog for en opdatering til programdata. Du får de indgående bankkontoudtog som TXT-filer, der indeholder IBAN-koder. Som en del af importprocessen for kontoudtog skal du validere rigtigheden af disse IBAN-koder ved brug af den logik, der allerede findes.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importere en ny ER-modelkonfiguration
@@ -41,7 +41,7 @@ Du skal først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudby
     * Vælg feltet Microsoft-udbyder.  
 2. Klik på Lagre.
 3. Klik på Vis filtre.
-4. Tilføje et filterfelt ‘Typenavn’. Angiv værdien "ressourcer" i feltet Navn, vælg filteroperatoren "indeholder", og klik derefter på Anvend.
+4. Tilføje et filterfelt 'Typenavn'. Angiv værdien "ressourcer" i feltet Navn, vælg filteroperatoren "indeholder", og klik derefter på Anvend.
 5. Klik på Åbn.
 6. Vælg 'Betalingsmodel' i træet.
     * Hvis knappen Importer i oversigtspanelet Versioner ikke er aktiveret, har du allerede importeret version 1 af ER-konfigurationen 'Betalingsmodel'. Du kan springe over resten af trinnene i denne underordnede opgave.   
@@ -76,7 +76,7 @@ Du skal først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudby
 9. Indtast 'Rækker' i feltet Navn.
     * Rækker  
 10. Vælg 'Én mange' i feltet Multiplicitet.
-    * Indstillingen 'én mange' er valgt i feltet 'Multiplicitet'. Baseret på denne indstilling forventes det, at der vises mindst én linje i parsingfilen.  
+    * Indstillingen 'Én mange' er valgt i feltet 'Multiplicitet'. Baseret på denne indstilling forventes det, at der vises mindst én linje i parsingfilen.  
 11. Klik på OK.
 12. Vælg 'Rod\Rækker' i træet.
 13. Klik på Tilføj rækkefølge.

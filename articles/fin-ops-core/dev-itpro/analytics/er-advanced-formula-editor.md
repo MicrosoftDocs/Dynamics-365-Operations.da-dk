@@ -3,7 +3,7 @@ title: Avanceret formeleditor til elektronisk rapportering
 description: Dette emne beskriver, hvordan den avancerede formeleditor kan bruges til at konfigurere udtryk i modeltilknytning til elektronisk rapportering (ER) og formatkomponenter.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d183f77da1dda0c4f04e4e48ab3db0133f494a55
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: df402bc20753d2ba14295592f4b40e20f9fdc7bf
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015153"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138892"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Avanceret formeleditor til elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Udover den [elektroniske rapporterings](general-electronic-reporting.md) [formeleditor](general-electronic-reporting-formula-designer.md) kan du bruge den avancerede formeleditor til elektronisk rapportering til at forbedre oplevelsen i forbindelse med konfiguration af elektroniske rapporteringsudtryk (ER). Den avancerede editor er browserbaseret og er styret af [Monaco-editoren](https://microsoft.github.io/monaco-editor). De mest almindeligt anvendte avancerede funktioner i editoren er beskrevet i dette emne:
 
@@ -42,7 +40,7 @@ Udover den [elektroniske rapporterings](general-electronic-reporting.md) [formel
 - [Indsætning af data](#DataPasting)
 - [Syntaksfarvelægning](#SyntaxColorization)
 
-## <a name="ActivateAdvEditor">Aktivere den avancerede formeleditor</a>
+## <a name=""></a><a name="ActivateAdvEditor">Aktivere den avancerede formeleditor</a>
 
 Gennemfør følgende trin for at begynde at bruge den avancerede formeleditor i din forekomst af Microsoft Dynamics 365 Finance.
 
@@ -55,7 +53,7 @@ Gennemfør følgende trin for at begynde at bruge den avancerede formeleditor i 
 > [!NOTE]
 > Vær opmærksom på, at denne parameter er brugerspecifik og firmaspecifik.
 
-## <a name="Autoformatting">Autoformatering af kode</a>
+## <a name=""></a><a name="Autoformatting">Autoformatering af kode</a>
 
 Når du skriver et komplekst udtryk, der består af flere koderækker, sker der automatisk indrykning af en ny linje baseret på indrykningen af den foregående række. Du kan markere linjer og ændre deres indrykning ved at trykke på **tabulator** eller **Skift+tabulator**.
 
@@ -63,13 +61,13 @@ Når du skriver et komplekst udtryk, der består af flere koderækker, sker der 
 
 Automatisk formatering giver dig mulighed for at bevare hele udtrykket formateret, så yderligere vedligeholdelse bliver nemmere, og at forenkle forståelsen af den konfigurerede logik.
 
-## <a name="IntelliSense">IntelliSense</a>
+## <a name=""></a><a name="IntelliSense">IntelliSense</a>
 
 Editoren indsætter ord, så du kan skrive udtryk hurtigere og undgå slåfejl. Når du begynder at indsætte ny tekst, viser editoren automatisk en liste over funktioner, der understøttes i ER-funktioner, som indeholder de tegn, du har angivet. Du kan også udløse IntelliSense på et hvilket som helst sted i et konfigureret udtryk ved at trykke på **CTRL+mellemrum**.
 
 [![ER-formeleditor](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
-## <a name="CodeCompletion">Fuldførelse af kode</a>
+## <a name=""></a><a name="CodeCompletion">Fuldførelse af kode</a>
 
 Editoren leverer automatisk fuldførelse af kode ved at:
 
@@ -81,7 +79,7 @@ Editoren leverer automatisk fuldførelse af kode ved at:
 
 Når du peger på den indsatte kantede parentes, fremhæves den anden parentes i parret automatisk, så det viser den konstruktion, som de understøtter.
 
-## <a name="CodeNavigation">Kodenavigation</a>
+## <a name=""></a><a name="CodeNavigation">Kodenavigation</a>
 
 Du kan finde påkrævede symboler eller linjer i udtrykket ved at skrive kommandoen **Gå til** ved hjælp af kommandopaletten eller genvejsmenuen.
 
@@ -95,7 +93,7 @@ Hvis du f.eks. vil hoppe til linje **8**, skal du benytte følgende fremgangsmå
 
 [![ER-formeleditor](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
-## <a name="CodeStructuring">Kodestrukturering</a>
+## <a name=""></a><a name="CodeStructuring">Kodestrukturering</a>
 
 Koden for nogle funktioner, f.eks. [IF](er-functions-logical-if.md) eller [CASE](er-functions-logical-case.md), struktureres automatisk. Du kan udvide og skjule et vilkårligt foldningsområde eller alle foldningsområder i denne kode for at reducere den redigerbare del af et udtryk for kun at fokusere på den del af koden, der kræver din opmærksomhed. Kommandoerne til at folde/folde ud kan bruges til dette.
 
@@ -117,7 +115,7 @@ Hvis du vil folde alle områder ud, skal du benytte følgende fremgangsmåde:
 
 [![ER-formeleditor](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
-## <a name="FindAndReplace">Søg og erstat</a>
+## <a name=""></a><a name="FindAndReplace">Søg og erstat</a>
 
 Hvis du vil søge efter forekomster af bestemt tekst, skal du markere teksten i udtrykket og gøre følgende:
 
@@ -145,13 +143,13 @@ Hvis du vil ændre alle forekomster af en bestemt tekst, skal du markere teksten
 
 [![ER-formeleditor](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
-## <a name="DataPasting">Datakilder og indsætning af funktioner</a>
+## <a name=""></a><a name="DataPasting">Datakilder og indsætning af funktioner</a>
 
 Du kan vælge **Tilføj datakilde**, som indsætter en datakilde, der aktuelt er valgt i **Datakilde** i det venstre panel, i udtrykket. På samme måde kan du vælge **Tilføj funktion**, som indsætter en funktion, der aktuelt er valgt i **Funktioner** i det højre panel, i udtrykket. Hvis du bruger ER-formeleditoren, vil en valgt funktion eller en valgt datakilde altid blive indsat i slutningen af det konfigurerede udtryk. Når du bruger den avancerede ER-formeleditor, kan en valgt funktion eller en valgt datakilde blive indsat i en vilkårlig del af det konfigurerede udtryk. Du skal bruge markøren til at angive, hvor du vil indsætte dataene.
 
 formel[![ER-formeleditor](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
-## <a name="SyntaxColorization">Syntaksfarvelægning</a>
+## <a name=""></a><a name="SyntaxColorization">Syntaksfarvelægning</a>
 
 I øjeblikket bruges forskellige farver til at fremhæve følgende dele af udtryk:
 

@@ -17,16 +17,16 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1731581c3a828c1c9b7a5cc6db9d1c8c85850f79
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ce588229047021ee602104e007b4d5995fa090d7
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183498"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144581"
 ---
 # <a name="create-a-fund-type-in-the-public-sector"></a>Oprette en finansieringskildetype i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Middeltyper er kategorier, du kan bruge til gruppere midler til detaljeret sporing og rapportering i regnskabet. De generelt accepterede regnskabsmæssige principper (GAAP) for statslige og lokale statslige regnskaber indeholder standarder, som du kan følge, når du opretter dit system af midler og middeltyper. 
 

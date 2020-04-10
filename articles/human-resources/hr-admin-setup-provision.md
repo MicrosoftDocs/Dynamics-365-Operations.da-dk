@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092240"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138353"
 ---
 # <a name="provision-human-resources"></a>Klargør Human Resources
 
@@ -56,7 +56,7 @@ Når du har oprettet et LCS-projekt, kan du klargøre Personale i et miljø.
 2. Angiv, om dette er en sandkasse- eller produktionsforekomst af Personale. De tidlige visningsfunktioner kan være tilgængelige i sandkasseforekomster med henblik på hurtig feedback og test.
    
     > [!NOTE]
-    > Talent-forekomsttypen kan ikke ændres, når den først er angivet. Kontrollér, at den korrekte forekomsttype er valgt, før du fortsætter.</br></br>
+    > Personale-forekomsttypen kan ikke ændres, når den først er angivet. Kontrollér, at den korrekte forekomsttype er valgt, før du fortsætter.</br></br>
     > Personale-forekomsttypen er adskilt fra den forekomsttype for Microsoft Power Apps-miljøet, som du angiver i Power Apps Administration.
     
 3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Personale-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
@@ -74,7 +74,7 @@ Når du har oprettet et LCS-projekt, kan du klargøre Personale i et miljø.
     > [!NOTE]
     > Hvis du endnu ikke har godkendt de endelige krav, kan du installere en testforekomst af Personale i projektet. Du kan derefter bruge denne forekomst til at teste din løsning, indtil du kan godkende den. Hvis du bruger det nye miljø til test, skal du gentage denne procedure for at oprette et produktionsmiljø.
 
-    > Da kun to LCS-miljøer er tilladt som en del af Personale-abonnementet, kan du også overveje at benytte dig af et gratis 60-dages [Personale-forsøgsmiljø](https://dynamics.microsoft.com/talent/overview/). Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Personale. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
+    > Du kan overveje at udnytte et gratis [Personale-prøvemiljø](https://dynamics.microsoft.com/talent/overview/) i 60 dage. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Personale. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
 
 ## <a name="select-a-power-apps-environment"></a>Vælg et Power Apps-miljø
 
@@ -97,7 +97,10 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
     - **Testmiljøer** ‑ Disse miljøer oprettes med en udløbsdato og udløber efter dette tidspunkt, hvilket resulterer i, at dit miljø og enhver Personale-forekomst, der er indeholdt heri, automatisk bliver fjernet.
    
     - **Ikke-understøttede områder** - I øjeblikket understøttes Personale kun i følgende områder: USA, Europa, Storbritannien, Australien, Canada og Asien.
-  
+
+    > [!NOTE]
+    > Personale-miljøet klargøres i det samme område, som Power Apps-miljøet klargøres. Overflytning af et Personale-miljø til et andet område understøttes ikke.
+
 6. Når du har besluttet, hvilket miljø der er bedst at anvende, kan du fortsætte klargøringsprocessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet

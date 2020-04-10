@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 56621d8de89ee0a62e2ad92930b632bbce5d6b06
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9d18677f6fc469043907e84032a25eae958f1875
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843715"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146876"
 ---
 # <a name="create-working-time-scheduling-properties"></a>Oprette planlægningsegenskaber for arbejdstid
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Egenskaber for planlægning af arbejdstid bruges til at kategorisere tidsintervaller i arbejdstiden og definere de indstillinger, som operatorer skal tage højde for. Denne fremgangsmåde viser, hvordan du definerer en egenskab for planlægning af arbejdstid og tilknyttede egenskabsværdier. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b1d1a232558efbe05e83d51706a78b12439e47
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
+ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124133"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151291"
 ---
 # <a name="credit-management-setup"></a>Konfiguration af kreditstyring 
 
@@ -40,13 +40,17 @@ Gå til **Kredit og inkasso \> Konfiguration \> Arbejdsgange for kreditstyring**
 
 Du kan sætte en salgsordre på hold, hvis betalingsbetingelserne i ordren ikke stemmer overens med standardbetalingsbetingelserne for kunden. Betalingsbetingelserne er dog nogle gange forskellige, men tilstrækkeligt ens til, at du ikke ønsker at sætte ordren på hold. Du kan rangere betalingsbetingelser, så nogle af dem har samme rangering, mens andre har en højere eller lavere rangering.
 
-Hvis rangeringerne for betalingsbetingelserne er aktive, sættes salgsordrerne på hold, hvis betalingsbetingelserne for ordren har en højere rangering end standardbetalingsbetingelserne for kunden.
+Hvis rangeringerne for betalingsbetingelserne er aktive, og hvis betalingsbetingelserne for ordren har en højere rangering end standardbetalingsbetingelserne for kunden, sættes salgsordren på hold.
+
+Når du vil konfigurere rangeringen af betalingsbetingelser, skal du gå til **Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Ranger betalingsbetingelser**  
 
 ### <a name="ranking-settlement-discounts"></a>Rangere afregningsrabatter
 
 Du kan sætte en salgsordre på hold, hvis kasserabatten i ordren ikke stemmer overens med standardkasserabatten for kunden. Kasserabatterne er dog nogle gange forskellige, men tilstrækkeligt ens til, at du ikke ønsker at sætte ordren på hold. Du kan rangere kasserabatter, så nogle af dem har samme rangering, mens andre har en højere eller lavere rangering.
 
-Hvis rangeringerne for kasserabatterne er aktive, sættes salgsordrerne på hold, hvis kasserabatten for ordren har en højere rangering end standardkasserabatten for kunden.
+Hvis rangeringerne for kasserabatterne er aktive, og hvis kasserabatten for ordren har en højere rangering end standardkasserabatten for kunden, sættes salgsordren på hold.
+
+Når du vil konfigurere rangeringen af betalingsbetingelser, skal du gå til **Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Ranger udligningsrabatter**  
 
 ## <a name="reasons"></a>Årsager
 
@@ -56,7 +60,7 @@ Der bruges flere forskellige årsagstyper i kreditstyring:
 - Årsager til frigivelse føjes til en ordre, når den frigives fra hold.
 - Statusårsager angiver, hvorfor en kontostatus er tildelt en kunde.
 
-Du kan konfigurere årsager på siden **Kreditstyringsårsager** (**Kreditstyring \> Konfiguration \> Kreditstyring \> Kreditstyringsårsager**).
+Du kan konfigurere årsager på siden **Kreditstyringsårsager** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Kreditstyringsårsager**).
 
 1. Vælg årsagstypen i feltet **Årsagstype**: **Hold**, **Frigiv** eller **Status**.
 2. Angiv et navn på årsagen i feltet **Årsag**.
@@ -66,7 +70,7 @@ Du kan konfigurere årsager på siden **Kreditstyringsårsager** (**Kreditstyrin
 
 Kreditstyringsgrupper bruges til at identificere kunder eller kundegrupper, der har samme kreditstyringsegenskaber. Kreditstyringsgrupper kan f.eks. bruges til at bestemme blokerings- og udelukkelsesregler for kreditstyring for kunder.
 
-Du kan konfigurere kreditstyringsgrupper på siden **Kreditstyringsgrupper** (**Kreditstyring \> Konfiguration > Konfiguration af grupper \> Kreditstyringsgrupper**).
+Du kan konfigurere kreditstyringsgrupper på siden **Kreditstyringsgrupper** (**Kredit \> Konfiguration > Konfiguration af kreditstyring \> Kreditstyringsgrupper**).
 
 1. Vælg **Ny** for at oprette en ny linje.
 2. Angiv et id for gruppen. Id'et kan indeholde op til 10 tegn.
@@ -78,7 +82,7 @@ Kreditstyringsgruppen knyttes til en kunde på oversigtspanelet **Kredit og inka
 
 Du kan oprette kontostatusser for at identificere den udestående kredit for kundekonto. Du kan definere en status og dens effekt på de fakturerings- og leveringsprocesser, der er på hold. Kontostatusser kan også bruges til at bestemme blokeringsregler for en kunde.
 
-Du kan oprette kontostatusser på siden **Kontostatusser** (**Kreditstyring \> Konfiguration > Konfiguration af grupper \> Kontostatusser**).
+Du kan oprette kontostatusser på siden **Kontostatusser** (**Kredit \> Konfiguration > Konfiguration af kreditstyring \> Kontostatusser**).
 
 1. Tilføj en kontostatus, og angiv en beskrivelse, der repræsenterer den udestående kredit for en kunde. Du kan f.eks. bruge **Normal** til at angive, at en kunde ikke har noget udestående, og at åbne ordrer indgår i standardkreditstyringsbehandlingen.
 2. I felterne **Fakturering** og **Levering på hold** skal du vælge den type hold, der skal indtræde for kunder, der har denne kontostatus. Du kan sætte al behandling på hold, kun sætte fakturabehandling på hold eller ikke sætte nogen behandling på hold, når reglerne for kreditmaks. anvendes.
@@ -87,7 +91,7 @@ Du kan oprette kontostatusser på siden **Kontostatusser** (**Kreditstyring \> K
 
 Du kan konfigurere resultatgrupper for at definere risikofaktorer og de kriterier, der bruges til at måle dem. Når oplysninger om en kunde knyttes til en resultatgruppe, beregnes der et resultat for hver risikofaktor, og dette bruges til at anbringe kunden i en risikogruppe. Risikogruppen kan bruges til at identificere kreditværdighed og beregne automatisk kreditmaks.
 
-Du kan oprette resultatgrupper på siden **Resultatgrupper** (**Kreditstyring \> Konfiguration \> Konfiguration af risiko \> Resultatgrupper**).
+Du kan oprette resultatgrupper på siden **Resultatgrupper** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Risiko \> Resultatgrupper**).
 
 1. Opret en resultatgruppe, og giv den et navn.
 2. Angiv en beskrivelse for yderligere at beskrive resultatgruppen.
@@ -108,11 +112,11 @@ Du kan oprette resultatgrupper på siden **Resultatgrupper** (**Kreditstyring \>
     1. I feltet **Værdi** skal du angive den brugerdefinerede værdi, der skal angives fra kundeoplysningerne.
     2. I feltet **Resultat** skal du angive det resultat, der skal tildeles, når den angivne værdi ligger i "fra"/"til"-intervallet.
 
-## <a name="risk-assessments"></a>Risikovurderinger
+## <a name="risk-classification"></a>Risikoklassifikation
 
 Du kan definere risikovurderinger, der kan tilknyttes kunder på baggrund af deres risikovurdering. En risikovurdering beregnes ved at sammenligne kundeoplysninger med hver resultatgruppe. Resultaterne lægges sammen, og det samlede resultat sammenlignes med værdierne i konfigurationen af risikogrupper for at identificere den risikogruppe, som kunden tilhører. Risikogrupperesultatet bruges derefter til at definere blokerings- og udelukkelsesregler for kreditstyring for kunden.
 
-Du kan oprette risikogrupper på siden **Risikovurderinger** (**Kreditstyring \> Konfiguration \> Konfiguration af risiko \> Risikovurderinger**).
+Du kan oprette risikogrupper på siden **Risikovurderinger** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Risiko \> Risikoklassifikation**).
 
 1. Angiv et risikogruppe-id.
 2. Angiv en beskrivelse for yderligere at beskrive risikogruppen.
@@ -121,7 +125,7 @@ Du kan oprette risikogrupper på siden **Risikovurderinger** (**Kreditstyring \>
 
 ## <a name="guaranteeinsurance-types"></a>Garanti-/forsikringstyper
 
-Du kan oprette garanti-/forsikringstyper på siden **Garanti-/forsikringstyper** (**Kreditstyring \> Konfiguration \> Konfiguration af garanti/forsikring \> Garanti-/forsikringstyper**).
+Du kan oprette garanti-/forsikringstyper på siden **Garanti-/forsikringstyper** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Forsikring og garantier \> Garanti-/forsikringstyper**).
 
 1. Angiv en garanti- eller forsikringstype, der identificerer navnet på kautionisten eller forsikringsmægleren.
 2. Angiv en beskrivelse for at beskrive kautionisten/forsikringsmægleren.
@@ -130,14 +134,14 @@ Du kan oprette garanti-/forsikringstyper på siden **Garanti-/forsikringstyper**
 
 Dækningstyper kan bruges til yderligere at klassificere forsikringspolicer. De kan ikke bruges med garantier.
 
-Du kan tilføje dækningstyper på siden **Dækningstyper** (**Kreditstyring \> Konfiguration \> Konfiguration af garanti/forsikring \> Dækningstyper**).
+Du kan tilføje dækningstyper på siden **Dækningstyper** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Forsikring og garantier \> Dækningstyper**).
 
 1. Angiv en dækningstype for at identificere den dækningstype , der skal tilføjes som forsikring eller garanti.
 2. Angiv en kort beskrivelse for at beskrive dækningstypen.
 
 ## <a name="automatic-credit-limits"></a>Automatiske kreditgrænser
 
-Du kan oprette kriterier for automatisk kreditmaks. på siden **Automatisk kreditmaks.** (**Kreditstyring \> Konfiguration \> Konfiguration af risiko \> Automatisk kreditmaks.**).
+Du kan oprette kriterier for automatisk kreditmaks. på siden **Automatisk kreditmaks.** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Risiko \> Automatisk kreditmaks.**).
 
 1. Vælg en risikogruppe, som den automatiske kreditmaks. skal tildeles.
 2. Vælg valutaen for den automatiske kreditmaks. Du kan oprette flere automatiske kreditmaks. i forskellige valutaer for den samme risikogruppe.

@@ -3,7 +3,7 @@ title: Aktivér produktanbefalinger
 description: I dette emne beskrives, hvordan du kan lave produktanbefalinger, der er baseret på kunstig intelligens-maskinel læring (AI-ML), som er tilgængelig for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 879fccb063ca0b74e0f022a9edf6a15f7d1311ae
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127876"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154407"
 ---
 # <a name="enable-product-recommendations"></a>Aktivér produktanbefalinger
 
@@ -75,8 +75,6 @@ Yderligere oplysninger om, hvordan du modtager tilpassede anbefalinger, finder d
 [Aktivere tilpassede anbefalinger](personalized-recommendations.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
-
-[Føje lister med anbefalinger til et e-handelswebsted](add-reco-list-to-page.md)
 
 [Tilføje produktanbefalinger på POS](product.md)
 

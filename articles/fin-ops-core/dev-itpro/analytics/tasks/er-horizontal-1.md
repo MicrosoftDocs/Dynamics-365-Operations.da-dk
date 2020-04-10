@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550526"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142357"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Bruge vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 1: Designformat)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret. Disse trin kan udføres i en hvilken som helst virksomhed.
 
@@ -33,9 +33,9 @@ Du skal først udføre disse tre opgaveguider for at fuldføre disse trin:
 
 "ER Oprette en konfigurationsudbyder og markere den som aktiv"
 
-"ER Bruge økonomiske dimensioner som en datakilde (del 1: Design datamodel)"
+"ER Bruge økonomiske dimensioner som en datakilde (Del 1: Design datamodel)"
 
-"ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)"
+"ER Bruge økonomiske dimensioner som en datakilde (Del 2: Modeltilknytning)"
 
 Du skal også hente og gemme en lokal kopi af skabelonen med et rapporteksempel, du finder her: [Eksempel på økonomisk dimensions webtjenesterapport](https://go.microsoft.com/fwlink/?linkid=862266).
 

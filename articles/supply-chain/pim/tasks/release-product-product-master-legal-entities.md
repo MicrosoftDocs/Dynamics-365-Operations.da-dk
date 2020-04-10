@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 25f84d960be4f4e8ff1b569d00b356390c232a2c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 39e3c208ec98bc79a72b902b67be24c0cf891e31
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147537"
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Frigive et produkt/en produktmaster til juridiske enheder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure gennemgår frigivelse af et produkt eller en produktmaster til en eller flere juridiske enheder. Demodatafirmaet, der bruges til at oprette denne opgave, er USRT, og opgaven er beregnet til markedsføringschefen og produktdesigneren.
 

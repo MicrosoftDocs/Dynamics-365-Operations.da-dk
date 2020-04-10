@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 764d1dc1d7fb54e0fa14a681d6d3cdb1d829aa57
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026779"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146117"
 ---
 # <a name="create-a-location-profile"></a>Oprette en lokalitetsprofil.
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management. Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer. I denne procedure skal vi oprette en profil for en lokalitet, der ikke kræver id-kontrol. Vi aktiverer blandede varer og blandede lagerstatusser og tillader cyklusoptælling. Du kan bruge denne procedure i USMF-demodatafirmaet.
 
