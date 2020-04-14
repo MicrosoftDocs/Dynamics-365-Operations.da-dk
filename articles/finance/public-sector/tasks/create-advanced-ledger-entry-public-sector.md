@@ -17,16 +17,16 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 500cb3e1a6a6014b335ec3275675e1e9eb8a0dd4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f0de1f119f872a8cee233f7625d6cb188ef5e6a1
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183501"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144639"
 ---
 # <a name="create-an-advanced-ledger-entry-in-the-public-sector"></a>Oprette en avanceret finanspost i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter. For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

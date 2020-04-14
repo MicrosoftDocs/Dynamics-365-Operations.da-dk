@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 523f6414ec212aef48eece487f4199ea2cf4b87e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5dfd5655ecdfa74d75490b0915c4cea609baebe3
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836139"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146491"
 ---
 # <a name="validate-a-production-flow-and-version"></a>Validere et produktionsflow og en version
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure viser, hvordan du opretter et nyt produktionsflow og en første version af lean manufacturing. Forudsætninger: Produktionsparametre for lean manufacturing og måleenheder for klassen Tid skal defineres. Du skal definere en værdistrøm og en produktionsgruppe. Se hvidbøgerne om Lean manufacturing for at blive fortrolig med begreberne produktionsflow og -aktiviteter. Denne procedure refererer til den juridiske enhed USMF i demodata. Forudsat at den juridiske enhed er konfigureret for Lean manufacturing, kan andre juridiske enheder imidlertid også bruges.
 

@@ -1,6 +1,6 @@
 ---
 title: Skifte mellem kreditordesign
-description: I dette emne beskrives det, hvordan du kan skifte mellem integrationen af kreditordata mellem Finance and Operations-apps og Common Data Service.
+description: I dette emne beskrives det, hvordan du kan skifte integrationen af kreditordata mellem Finance and Operations-apps og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,48 +19,61 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 587a9b98f28b11e303aff4b59e9726f220d956eb
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019693"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173033"
 ---
 # <a name="switch-between-vendor-designs"></a>Skifte mellem kreditordesign
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 ## <a name="vendor-data-flow"></a>Kreditordataflow 
 
-Hvis du bruger andre Dynamics 365-apps til leverandørhåndtering, og du vil adskille leverandøroplysningerne fra kundernes, kan du bruge dette grundlæggende leverandørdesign.  
+Hvis du vælger at bruge enheden **Konto** til at gemme kreditorer af typen **Organisation** og enheden **Kontaktperson** til at gemme kreditorer af typen **Person**, skal du konfigurere følgende arbejdsgange. Ellers kræves denne konfiguration ikke.
 
-![Grundlæggende leverandørflow](media/dual-write-vendor-data-flow.png)
- 
-Hvis du bruger andre Dynamics 365-apps til leverandørhåndtering, og du fortsat vil bruge enheden **Konto** til at gemme leverandøroplysninger, kan du bruge dette udvidede leverandørdesign. I dette design gemmes udvidede leverandøroplysninger som f.eks. leverandørers på hold-status og leverandørprofil i enheden **leverandører** i Common Data Service. 
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a>Bruge det udvidede kreditordesign til kreditorer af typen Organisation
 
-![Udvidet leverandørflow](media/dual-write-vendor-detail.jpg)
- 
-Følg nedenstående fremgangsmåde for at bruge det udvidede leverandør design: 
- 
-1. Løsningspakken **SupplyChainCommon** indeholder skabeloner for arbejdsgangsproces som vist i følgende billede.
-    > [!div class="mx-imgBorder"]
-    > ![Skabeloner for arbejdsgangsprocesser](media/dual-write-switch-3.png)
-2. Opret nye arbejdsgangsprocesser ved hjælp af arbejdsgangsprocesskabeloner: 
-    1. Opret en ny arbejdsgangsproces for enheden **Leverandør** ved hjælp af skabelonen for arbejdsgangsprocessen **Opret leverandører i Kontoenheden**, og tryk dernæst på **OK**. Denne arbejdsgang håndterer leverandøroprettelsesscenariet for enheden **Konto**.
-        > [!div class="mx-imgBorder"]
-        > ![Opret Leverandører i Kontoenhed](media/dual-write-switch-4.png)
-    2. Opret en ny arbejdsgangsproces for enheden **Leverandør** ved hjælp af skabelonen for arbejdsgangsprocessen **Opdater Kontoenheder**, og tryk dernæst på **OK**. Denne arbejdsgang håndterer opdateringsscenariet for leverandører for enheden **Konto**. 
-        > [!div class="mx-imgBorder"]
-        > ![Opdater Kontoenheder](media/dual-write-switch-5.png)
-    3. Opret nye arbejdsgangsprocesser ud fra de skabeloner, der blev oprettet på enheden **Konti**. 
-        > [!div class="mx-imgBorder"]
-        > ![Opret leverandører i leverandørenheder](media/dual-write-switch-6.png)
-        > [!div class="mx-imgBorder"]
-        > ![Opdater leverandørenheder](media/dual-write-switch-7.png)
-    4. Du kan konfigurere arbejdsprocesser som realtids- eller baggrundsarbejdsgange, der er baseret på dine krav. 
-        > [!div class="mx-imgBorder"]
-        > ![Konverter til en baggrundsarbejdsgang](media/dual-write-switch-8.png)
-    5. Aktiver de arbejdsgange, du har oprettet på enhederne **Konto** og **Leverandør** for at påbegynde anvendelsen af enheden **Konto** til lagring af leverandøroplysninger. 
- 
+Løsnings pakken **Dynamics365FinanceExtended** indeholder følgende arbejdsgangsskabeloner. Du skal oprette en arbejdsgang for hver skabelon.
+
++ Opret kreditorer i enheden Konti
++ Opret kreditorer i enheden Kreditorer
++ Opdater kreditorer i enheden Konti
++ Opdater kreditorer i enheden Kreditorer
+
+Følg disse trin for at oprette nye arbejdsgangsprocesser ved hjælp af arbejdsgangsprocesskabeloner:
+
+1. Opret en ny arbejdsgangsproces for enheden **Kreditor**, og vælg skabelonen **Opret kreditorer i enheden Konti** for arbejdsgangsprocessen. Vælg derefter **OK**. Denne arbejdsgang håndterer leverandøroprettelsesscenariet for enheden **Konto**.
+
+    ![Oprette kreditorer i arbejdsgangprocessen for enheden Konti](media/create_process.png)
+
+2. Opret en ny arbejdsgangsproces for enheden **Kreditor**, og vælg skabelonen **Opdater kreditorer i enheden Konti** for arbejdsgangsprocessen. Vælg derefter **OK**. Denne arbejdsgang håndterer opdateringsscenariet for leverandører for enheden **Konto**.
+3. Opret en ny arbejdsgangsproces for enheden **Konto**, og vælg skabelonen **Opret kreditorer i enheden Kreditorer** for arbejdsgangsprocessen.
+4. Opret en ny arbejdsgangsproces for enheden **Konto**, og vælg skabelonen **Opdater kreditorer i enheden Kreditorer** for arbejdsgangsprocessen.
+5. Du kan konfigurere arbejdsprocesser som enten realtids- eller baggrundsarbejdsgange, afhængigt af dine krav. Hvis du vil konfigurere en arbejdsgang som en baggrundsarbejdsgang, skal du vælge **Konverter til en baggrundsarbejdsgang**.
+
+    ![Konvertere til en baggrundsarbejdsgangsknap](media/background_workflow.png)
+
+6. Aktiver de arbejdsgange, du har oprettet for enhederne **Konto** og **Kreditor** for at påbegynde anvendelsen af enheden **Konto** til lagring af oplysninger til kreditorer af typen **Organisation**.
+
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a>Bruge det udvidede kreditordesign til kreditorer af typen Person
+
+Løsnings pakken **Dynamics365FinanceExtended** indeholder følgende arbejdsgangsskabeloner. Du skal oprette en arbejdsgang for hver skabelon.
+
++ Oprette kreditorer af typen Person i enheden Kreditorer
++ Oprette kreditorer af typen Person i enheden Kontaktpersoner
++ Opdatere kreditorer af typen Person i enheden Kontaktpersoner
++ Opdatere kreditorer af typen Person i enheden Kreditorer
+
+Følg disse trin for at oprette nye arbejdsgangsprocesser ved hjælp af arbejdsgangsprocesskabeloner:
+
+1. Opret en ny arbejdsgangsproces for enheden **Kreditor**, og vælg skabelonen **Opret kreditorer af typen Person i enheden Kontaktpersoner** for arbejdsgangsprocessen. Vælg derefter **OK**. Denne arbejdsgang håndterer kreditoroprettelsesscenariet for enheden **Kontaktperson**.
+2. Opret en ny arbejdsgangsproces for enheden **Kreditor**, og vælg skabelonen **Opdater kreditorer af typen Person i enheden Kontaktpersoner** for arbejdsgangsprocessen. Vælg derefter **OK**. Denne arbejdsgang håndterer opdateringsscenariet for kreditorer for enheden **Kontaktperson**.
+3. Opret en ny arbejdsgangsproces for enheden **Kontaktperson**, og vælg skabelonen **Opret kreditorer af typen Person i enheden Kreditorer** for arbejdsgangsprocessen.
+4. Opret en ny arbejdsgangsproces for enheden **Kontaktperson**, og vælg skabelonen **Opdater kreditorer af typen Person i enheden Kreditorer** for arbejdsgangsprocessen.
+5. Du kan konfigurere arbejdsprocesser som enten realtids- eller baggrundsarbejdsgange, afhængigt af dine krav. Hvis du vil konfigurere en arbejdsgang som en baggrundsarbejdsgang, skal du vælge **Konverter til en baggrundsarbejdsgang**.
+6. Aktiver de arbejdsgange, du har oprettet i enhederne **Kontaktperson** og **Kreditor** for at påbegynde anvendelsen af enheden **Kontaktperson** til lagring af oplysninger til kreditorer af typen **Person**.

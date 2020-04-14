@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e3293caa905eacaebc757a57ec5b104629b6a8d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8557a196a3998d57baf3db63c05fc3945d52e8f4
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567670"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149876"
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Opret en ny status for produktlivscyklus
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure viser, hvordan du opretter en ny status for produktlivscyklus. En status for produktlivscyklus dokumenter livscyklusstatus for et frigivet produkt eller en produktvariant. Status for produktlivscyklus defineres af brugeren, typisk en produktchef eller produktmasterdatachef. Bestemte virksomhedsprocesser, f.eks. varedisponering, kan blive påvirket af en bestemt livscyklusstatus.
 

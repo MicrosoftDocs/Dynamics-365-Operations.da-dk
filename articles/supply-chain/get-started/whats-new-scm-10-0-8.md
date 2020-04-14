@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fb34ecc0ff5966ae09fdb00e80134a11eceb30a2
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: d62cf8be089eb8bccaf323041bf446b7f120b93f
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097439"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164529"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.8 (februar 2020)
 
@@ -32,13 +32,14 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 - **Foreløbig version:** december 2019
 - **Generel tilgængelighed (selv-opdatering):** januar 2020
-- **Automatisk opdatering:** februar 2020 
+- **Automatisk opdatering:** februar 2020
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
 Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. Nogle af disse funktioner kan også have været medtaget i en tidligere trinvis version, men de blev ikke annonceret i det forrige emne *Nyheder*, så vi tilføjer dem her. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 - [Flere lokationszoner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Aktivadministration](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) - Yderligere oplysninger finder du i [Oversigt over aktivstyring](../asset-management/index.md).
 - [Annuller arbejde](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) – Du kan finde flere oplysninger i [Annuller lagersted for undtagelseshåndtering](../warehousing/cancel-warehouse-work.md).
 - [Skift arbejdspulje på arbejde](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Klyngeplacering fuld](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)

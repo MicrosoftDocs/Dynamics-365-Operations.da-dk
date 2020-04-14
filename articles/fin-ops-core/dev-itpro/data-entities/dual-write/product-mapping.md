@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
-ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
+ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3081145"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173194"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Når en virksomheds økosystem består af Dynamics 365-applikationer, som f.eks. Finance, Supply Chain Management og Sales, anvender virksomhederne ofte disse programmer til at levere produktdata. Det skyldes, at disse apps udgør en robust produktinfrastruktur suppleret med avancerede prissætningskoncepter og nøjagtige disponible lagerbeholdningsdata. Virksomheder, der bruger et eksternt PLM-system (Product Lifecycle Management) til at levere produktdata, kan kanalisere produkter fra Finance and Operations-apps til andre Dynamics 365-apps. Den samlede produktoplevelse overfører den integrerede produktdatamodel ind til Common Data Service, så alle programbrugere, herunder Power Platform-brugere, kan udnytte de omfattende produktdata, der kommer fra Finance and Operations-apps.
 
@@ -52,7 +52,7 @@ Enhedstilknytninger med dobbeltskrivning for produkter er designet til kun at ov
 
 Produktoplysninger indeholder alle de oplysninger, der er knyttet til produktet og dets definition, f. eks. produktdimensionerne eller sporings-og lagringsdimensionerne. Som følgende tabel viser, oprettes der en samling af enhedstilknytninger for at synkronisere produkter og relaterede oplysninger.
 
-Finance and Operations | Andre Dynamics 365-apps | Beskrivelse
+Finance and Operations-apps | Andre Dynamics 365-apps | Beskrivende tekst
 -----------------------|--------------------------------|---
 Frigivne produkter V2 | msdyn\_sharedproductdetails | Enheden **msdyn\_sharedproductdetails** indeholder felterne fra Finance and Operations-apps, der definerer produktet, og som indeholder produktets økonomiske og administrative oplysninger. 
 Common Data Service frigav specifikke produkter | Produkt | Enheden **Produkt** indeholder de felter, der definerer produktet. Den omfatter individuelle produkter (produkter med undertypeprodukt) og produktvarianterne. Tilknytningerne vises i følgende tabel.
@@ -75,7 +75,7 @@ Enhed | uoms
 Enhedsomregninger | msdyn_ unitofmeasureconversions
 Konvertering af produktspecifik måleenhed | msdyn_productspecificunitofmeasureconversion
 Produktkategorier | msdyn_productcategories | Hver produktkategorier og oplysninger om dens struktur og karakteristika findes i enheden produktkategori. 
-Hierarkier for produktkategori | msdyn_productcategoryhierarhies | Du kan bruge produkthierarkier til at kategorisere eller gruppere produkter. Kategorihierarkierne er tilgængelige i Common Data Service ved at bruge kategorihierarkienheden. 
+Hierarkier for produktkategori | msdyn_productcategoryhierarhies | Du kan bruge produkthierarkier til at kategorisere eller gruppere produkter. Kategorihierarkierne er tilgængelige i Common Data Service ved hjælp af enheden Produktkategorihierarki. 
 Hierarkiroller for produktkategori | msdyn_productcategoryhierarchies | Produkthierarkier kan bruges til forskellige roller i D365 Finance and Operations. De angiver, hvilken kategori der bruges i hver rolle for enheden produktkategorirolle, som anvendes. 
 Tildelinger af produktkategori | msdyn_productcategoryassignments | Du kan anvende enheden produktkategoritildeling til at tildele et produkt til en kategori.
 
@@ -153,7 +153,7 @@ Måleenhedsbegrebet er integreret mellem Finance and Operations-apps og andre Dy
 
 [!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-[!include [product specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
+[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 ## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Indledende synkronisering af enhedsdata der matches mellem Finance and Operations og Common Data Service
 
@@ -203,7 +203,7 @@ Produktpolitikkerne er sæt af politikker, der bruges til at definere produkter 
 
 Til entydig identifikation af produkter mellem Dynamics 365 for Finance and Operations og produkter i Common Data Service anvendes integrationsnøgler. For produkter er **(produktnummer)** den entydige nøgle, der identificerer et produkt i Common Data Service. Den er sammensat af sammenkædningen af: **(firma, msdyn_produktnummer)**. **Firmaet** angiver den juridiske enhed i Finance and Operations, og **msdyn_productnumber** angiver produktnummeret for det specifikke produkt i Finance and Operations. 
 
-For en anden bruger af Dynamics 365-apps identificeres produktet i brugergrænsefladen med **msdyn_produktnummer** (bemærk, at etiketten for feltet er **Produktnummer**). I produktformularen vises både firmaet og msydn_produktnummeret. Men i feltet (produktnummer) vises den entydige nøgle for et produkt ikke. 
+For brugere af andre Dynamics 365-apps identificeres produktet i brugergrænsefladen med **msdyn_produktnummer** (bemærk, at etiketten for feltet er **Produktnummer**). I produktformularen vises både firmaet og msydn_produktnummeret. Men i feltet (produktnummer) vises den entydige nøgle for et produkt ikke. 
 
 Hvis du bygger apps på Common Data Service, skal du være opmærksom på at bruge **produktnummer** (det entydige produkt-id) som integrationsnøgle. Brug **ikke msdyn_productnumber**, da det ikke er entydigt. 
 

@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfce85b43a4678bf94a5570f4df047249cf29d1e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 85cdd35e2e2f1e4e7a311b7eb61989d87f681466
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836282"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149084"
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definere arbejdsceller for lean manufacturing
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 En arbejdscelle er en bestemt form for ressourcegruppe, der kan bruges i procesaktiviteter for lean manufacturing. Arbejdsceller har indlagrings- og udlagringssteder og en kapacitetsdefinition, der er baseret på en produktionsflowmodel. Du kan få mere at vide om de grundlæggende begreber i arbejdsceller og kapacitetsberegninger i lean manufacturing i hvidbøgerne om Lean manufacturing. Det demodatafirma, der bruges til at oprette denne procedure, er USMF
 

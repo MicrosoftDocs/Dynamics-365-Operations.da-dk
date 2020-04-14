@@ -1,9 +1,9 @@
 ---
-title: Fejlfindingsvejledning til dataintegration
-description: Dette emne indeholder fejlfindingsoplysninger for dataintegration mellem Finance and Operations-apps og Common Data Service.
+title: Generel fejlfinding
+description: Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,57 +18,98 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 87bdb72024c1c3844ff61e832a92f7edcc77c5d6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019701"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172685"
 ---
-# <a name="troubleshooting-guide-for-data-integration"></a>Fejlfindingsvejledning til dataintegration
+# <a name="general-troubleshooting"></a>Generel fejlfinding
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Aktivere plug-in-sporingslogge i Common Data Service og se fejldetaljerne for dobbeltskrivnings-plug-in
 
-Hvis du oplever problemer eller fejl under dobbeltskrivningssynkronisering, skal du følge disse trin for at undersøge fejlene i sporingslogfilen.
+Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Common Data Service.
 
-1. Før du kan kontrollere fejlene, skal du aktivere sporingslogge til plug-ins. Du kan finde instruktioner i afsnittet "Vise sporingslogfiler" [Selvstudium: skrive og registrere en plug-in](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
+> [!IMPORTANT]
+> Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
 
-    Nu kan du inspicere fejlene.
+## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Når du forsøger at installere dobbeltskrivningspakken ved hjælp af værktøjet Package Deployer, vises der ingen tilgængelige løsninger
 
-2. Log på Microsoft Dynamics 365 Sales.
-3. Vælg knappen **Indstillinger** (tandhjulsymbolet), og vælg derefter **Avancerede indstillinger**.
-4. I menuen **Indstillinger** skal du vælge **Tilpasning \> Plug-in-sporingslogfil**.
-5. Vælg typenavnet **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** for at få vist fejloplysningerne.
+Nogle versioner af Package Deployer-værktøjet er inkompatible med pakken til dobbeltskrivningsløsninger. For at installere pakken korrekt skal du sørge for at bruge [version 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) eller nyere af Package Deployer-værktøjet.
 
-## <a name="inspect-dual-write-synchronization-errors"></a>Undersøg synkroniseringsfejl ved dobbeltskrivning
+Når du har installeret Package Deployer-værktøjet, skal du installere løsningspakken ved at følge disse trin.
 
-Udfør følgende trin for at kontrollere fejl under testen.
+1. Hent den seneste fil med løsningspakken fra Yammer.com. Når zip-filen med pakken er hentet, skal du højreklikke på den og vælge **Egenskaber**. Markér afkrydsningsfeltet **Ophæv blokering**, og vælg derefter **Anvend**. Hvis du ikke kan se afkrydsningsfeltet **Ophæv blokering**, er blokeringen af zip-filen allerede fjernet, og du kan springe dette trin over.
+
+    ![Dialogboksen Egenskaber](media/unblock_option.png)
+
+2. Udpak zip-filen med pakken, og kopier alle filerne i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438**.
+
+    ![Indhold af mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
+
+3. Indsæt alle de kopierede filer i mappen **Tools** i Package Deployer-værktøjet. 
+4. Kør **PackageDeployer.exe** for at vælge Common Data Service-miljøet og installere løsningerne.
+
+    ![Indhold af mappen Tools](media/paste_copied_files.png)
+
+## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Aktivere og åbne plug-in-sporingslogge i Common Data Service for at få vist oplysninger om fejl
+
+**Følgende rolle er påkrævet for at kunne aktivere sporingsloggen og få vist fejl:** systemadministrator
+
+Udfør følgende trin for at aktivere sporingsloggen.
+
+1. Log på Finance and Operations-appen, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
+2. På siden **Administration** skal du vælge **Systemindstillinger**.
+3. Under fanen **Tilpasning** i feltet **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
+
+
+Udfør følgende trin for at få vist sporingsloggen.
+
+1. Log på Finance and Operations-appen, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
+2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
+
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finance and Operations-apps
+
+**Påkrævet rolle for at få vist fejl** : Systemadministrator
+
+Dobbeltskrivningsfejl, der stammer fra Common Data Service, kan forekomme i Finance and Operations-appen. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
+
+1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i enheden **DualWriteProjectConfiguration**. Åbn enheden **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
+
+    > [!TIP]
+    > En nem måde at åbne objektet på er at slå **Design**-tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
+
+2. Indstil egenskaben **IsDebugMode** til **Ja** for projektet.
+3. Kør det scenario, der genererer fejl.
+4. De detaljerede logfiler er tilgængelige i tabellen DualWriteErrorLog. Hvis du vil slå data op i tabelbrowseren, skal du bruge følgende URL-adresse (Erstat **XXX** efter behov):
+
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfejl på den virtuelle maskine for Finance and Operations-appen
+
+**Påkrævet rolle for at få vist fejl** : Systemadministrator
 
 1. Log på Microsoft Dynamics LifeCycle Services (LCS).
-2. Åbn det LCS-projekt, du vil udføre dobbeltskrivningstest for.
-3. Vælg **Skybaserede miljøer**.
-4. Opret en fjernskrivebordsforbindelse til programmets virtuelle maskine (VM) ved hjælp af en lokal konto, der vises i LCS.
-5. Åbn Logbog. 
-6. Gå til **Logfiler for programmer og tjenester \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operationel**. Fejlene og detaljerne vises.
+2. Åbn det LCS-projekt, du har valgt til at udføre dobbeltskrivningstesten for.
+3. Vælg titlen **Skybaserede miljøer**.
+4. Brug Fjernskrivebord til at logge på den virtuelle maskine (VM) for Finance and Operations-appen. Brug den lokale konto, der vises i LCS.
+5. Åbn Logbog.
+6. Vælg **Logfiler for programmer og tjenester \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operationel**.
+7. Gennemse listen over seneste fejl.
 
-## <a name="unlink-one-common-data-service-environment-from-the-application-and-link-another-environment"></a>Frakoble ét Common Data Service-miljø fra programmet og tilknytte et andet miljø
+## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Fjerne sammenkædning og sammenkæde med et andet Common Data Service-miljø fra en Finance and Operations-app
 
-Hvis du vil opdatere links, skal du følge disse trin.
+**Påkrævede legitimationsoplysninger for at fjerne sammenkædningen af miljøet**: Azure AD-lejeradministrator
 
-1. Gå til programmiljøet.
-2. Åbn Datastyring.
-3. Vælg **Link til CDS for Apps**.
-4. Markér alle de tilknytninger, der kører, og vælg derefter **Stop**.
-5. Vælg alle tilknytninger, og vælge derefter **Slet**.
+1. Log på Finance and Operations-appen.
+2. Gå til **Arbejdsområder \> Datastyring**, og vælg feltet **Dobbeltskrivning**.
+3. Vælg alle kørende tilknytninger, og vælg derefter **Stop**.
+4. Vælg **Ophæv sammenkædning af miljø**.
+5. Vælg **Ja** for at bekræfte operationen.
 
-    > [!NOTE]
-    > Indstillingen **Slet** er ikke tilgængelig, hvis skabelonen **CustomerV3-Account** er valgt. Fjern markeringen af denne skabelon efter behov. **CustomerV3-Account** er en ældre klargjort skabelon, der virker sammen med løsningen Kundeemne til kontant. Fordi den er globalt frigivet, dukker den op under alle skabeloner.
-
-6. Vælg **Ophæv sammenkædning af miljø**.
-7. Vælg **Ja** for at bekræfte operationen.
-8. Følg trinnene i [installationsvejledningen](https://aka.ms/dualwrite-docs) for at tilknytte det nye miljø.
+Nu kan du sammenkæde et nyt miljø.

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72940f719baca5e8042c2f2caa8abbacb7d8264e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ed8c60b188b7c7090546e8367455e0f58ce9359b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844483"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147681"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Oprette kriterier for valg af salgspris
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure viser, hvordan du opretter et valgkriterium for salgspris til attributbaserede salgsprismodeller. Denne procedure kræver, at der er mindst én tilgængelig salgspris. I dette eksempel bruges prismodellen for salgsprismodellen for højttalerløsningen i demodatafirmaet USMF. Normalt bruger en produktchef denne procedure.
 
@@ -37,7 +37,7 @@ Denne procedure viser, hvordan du opretter et valgkriterium for salgspris til at
 4. Klik på Model i handlingsruden.
 5. Klik på Prismodelkriterier.
 6. Klik på Ny.
-7. Skriv "Kundegruppe 10" i feltet Navn.
+7. Skriv 'Kundegruppe 10' i feltet Navn.
     * Navnet på prismodelkriteriet bruges til at identificere de underliggende udvælgelseskriterier.  
 8. Indtast eller vælg en værdi i feltet Prismodel.
 9. I feltet Ordretype skal du vælge "Salgsordre".

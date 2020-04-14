@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85402e05d55367da5fe89b242ad8eafc727b441e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec353ecffdc457e1502cfad24e7a50ae31048647
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558001"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146048"
 ---
 # <a name="set-up-dispositions-codes"></a>Konfigurere dispositionskoder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåde fokuserer på oprettelsen af en dispositionskode, der kan bruges på en mobil enhed for returordren modtager proces. Dispositionskoder er en samling regler, der kan bruges, når der modtages varer. For eksempel når en arbejder bruger en mobilenhed til at modtage varer, der blev beskadiget, skal brugeren scanne en dispositionskode for beskadigede varer. Lagerstatus for varerne, der modtages, skabelonen arbejde og direktivet placering kan bestemmes ud fra den scannede dispositionskode. For den indkøbsordre, der er modtaget proces og rapporten produktion ordre som færdig proces, er brugen af en dispositionskode valgfrit. For salgsordren modtagende returvareprocessen, hvis varerne er registreret ved hjælp af en mobil enhed, er brug af dispositionskoden obligatorisk.  Denne vejledning blev oprettet ved hjælp af demodatafirmaet USMF. Denne procedure er beregnet til lagerchefen. 
 

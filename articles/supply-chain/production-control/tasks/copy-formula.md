@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd87ded3bcc20b94fae723424d9cc6b94049a1a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9c5d8dbc5204464b2265029b6a11fcac7b79b464
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558758"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147152"
 ---
 # <a name="copy-a-formula"></a>Kopiere en formel
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåde fokuserer på at oprette en formel, der indeholder de samme ingredienser som en eksisterende formel, men med mindre forskelle. Du kan bruge funktionen Kopier til at kopiere en eksisterende formel, der har de fleste af de ingredienser, du har brug for, til at oprette formellinjerne. Du kan derefter foretage de nødvendige ændringer af de enkelte linjer i den nye version. Ved hjælp af funktionen Kopier skal du ikke at oprette flere formler, der er næsten identiske. Det demodatafirma, der bruges til at oprette denne opgave, er USP2.
 

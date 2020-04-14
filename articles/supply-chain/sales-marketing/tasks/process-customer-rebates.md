@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994928"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148578"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle debitorrabatter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kravet til punktet, hvor de godkendes som periodiseringer til debitor. Det fører dig gennem et specifikt eksempel for at forklare, hvordan de forskellige betingelser på rabatlinjerne påvirker de endelige beløb, der krediteres til kunden. Du skal bruge USMF-demodatafirmaet og udføre følgende opgaver, før du starter guiden: (1) gå til siden Debitorparametre, og udvid fanen Priser og derefter fanen Prisdetaljer. Kontrollér, at indstillingen Aktivér prisdetaljer er angivet til Ja. (2) Gå til rabataftalesiden, og vælg debitorrabataftalen: USMF-000001. Hvis feltet Status for godkendelsesarbejdsgang ikke er angivet til Godkendt, skal du klikke på Validering i handlingsruden for at godkende den.
 

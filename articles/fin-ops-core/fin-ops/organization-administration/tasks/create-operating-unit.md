@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 38db4a5f93f4b755cfd6fee43eaef27672551077
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189884"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143828"
 ---
 # <a name="create-an-operating-unit"></a>Opret en driftsenhed
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 En driftsenhed er en organisation, der bruges til at opdele administrationen af økonomiske ressourcer og driftsprocesser i et firma. Personer i en driftsenhed er forpligtet til at maksimere brugen af knappe ressourcer, til at forbedre processer og til at redegøre for deres præstation. Typerne af driftsenheder inkluderer bærere, virksomhedsenheder, afdelinger og værdistrømme. Du kan bruge følgende procedure for at oprette en driftsenhed. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

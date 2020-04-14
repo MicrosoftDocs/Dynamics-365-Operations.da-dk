@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a911fea9e7d1009160a021e53533c0ce49efbfe
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177072"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143690"
 ---
 # <a name="manage-email-templates"></a>Administrere mailskabeloner
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Du kan overføre oplysninger fra din organisations database til bogmærkerne i et nyt dokument og bruge dem i skabeloner, der kan hjælper dig med at kommunikere effektivt med ansøgere og kandidater. Det kan du gøre ved at oprette en skabelon, der indeholder standardtekst og nogle bogmærker, hvor systemdataene skal indsættes. Du kan f.eks. indsætte adresse og kontaktoplysninger for ansøgeren i et Microsoft Word-dokument, som du kan bruge ved kommunikation med ansøgeren. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

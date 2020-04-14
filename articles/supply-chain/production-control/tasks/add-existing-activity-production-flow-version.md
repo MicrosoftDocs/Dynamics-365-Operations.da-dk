@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 315a82ce3502164fcf7813e866fb3dc1806d03d7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c01d988469ead4ab09d69b1cb6e2f9b417080c69
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843955"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149406"
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Tilføje en eksisterende aktivitet til en produktionsflowversion
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Når du opretter nye versioner af produktionsflow, kan du vælge at føje aktiviteter, der er oprettet for de ældre versioner, til den nye version. Denne fremgangsmåde viser, hvordan du kan oprette en ny version for et eksisterende produktionsflow uden at kopiere aktiviteterne. I næste trin føjes der en eksisterende aktivitet til den nye version. 
 

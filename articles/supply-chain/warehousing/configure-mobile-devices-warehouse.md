@@ -3,7 +3,7 @@ title: Konfigurere mobilenheder til lagerstedsarbejde
 description: Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813034"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161822"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
@@ -95,11 +95,11 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 </tr>
 <tr>
 <td>Nummerplade til modtagelse</td>
-<td>Modtag en indgående last ved hjælp af id.</td>
+<td>Modtag en indgående Advance Shipping Notice (ASN) ved hjælp af id.</td>
 </tr>
 <tr>
 <td>Modtagelse af nummerplade og placering på lager</td>
-<td>Modtag en indgående last ved hjælp af id, og læg den på lager.</td>
+<td>Modtag en indgående Advance Shipping Notice (ASN) ved hjælp af id og læg den på lager.</td>
 </tr>
 <tr>
 <td>Modtagelse af varelast</td>
@@ -119,7 +119,7 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 <td>Registrer modtagelsen af et antal af en vare ved at registrere RMA-nummeret, og læg varerne på lager. Den samme medarbejder udfører begge handlinger.</td>
 </tr>
 <tr>
-<td rowspan="4">Overførselsordre</td>
+<td rowspan="6">Overførselsordre</td>
 <td>Varemodtagelse i flytteordre</td>
 <td>Registrer modtagelsen af et antal af en vare, og opret læg på lager-arbejde for en anden arbejder.
 
@@ -140,8 +140,16 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 <td>Registrer modtagelsen af et antal af en vare, og læg varerne på lager. Den samme medarbejder udfører begge handlinger.</td>
 </tr>
 <tr>
+<td>Nummerplade til modtagelse</td>
+<td>Modtag en indgående Advance Shipping Notice (ASN) ved hjælp af id.</td>
+</tr>
+<tr>
+<td>Modtagelse af nummerplade og placering på lager</td>
+<td>Modtag en indgående Advance Shipping Notice (ASN) ved hjælp af id og læg den på lager.</td>
+</tr>
+<tr>
 <td rowspan="4">Produktion</td>
-<td>Færdigmeld</td>
+<td>Færdigmelding</td>
 <td>Registrer et antal af en færdigvare, der er færdig til produktion, og opret læg på lager-arbejde for en anden arbejder. Antallet kan være nogle af eller hele det antal, der er planlagt til produktion.</td>
 </tr>
 <tr>

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124087"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161586"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Understøttelse af to momsvalutaer
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Funktionen vedrørende to valutaer for Dynamics 365 Finance blev introduceret i 
 
 I tidligere versioner blev transaktioner omregnet til rapporteringsvalutaen i følgende rækkefølge: 
 
-Det samlede transaktionsbeløb blev beregnet i transaktionsvalutaen > transaktionsbeløbet blev omregnet til regnskabsvalutaen > regnskabsvalutabeløbet blev omregnet til rapporteringsvalutaen
+- Det samlede transaktionsbeløb blev beregnet i transaktionsvalutaen > transaktionsbeløbet blev omregnet til regnskabsvalutaen > regnskabsvalutabeløbet blev omregnet til rapporteringsvalutaen
 
 Når funktionen vedrørende to valutaer er aktiveret, blev transaktionerne omregnet til rapporteringsvalutaen i følgende rækkefølge:
 
@@ -48,8 +48,6 @@ Som følge af support i forbindelse med dobbelte valutaer er der stillet to nye 
 - Automatisk saldo for momsafregning i rapporteringsvaluta (udgivet i version 10.0.11)
 
 Understøttelse af to momsvalutaer sikrer, at momsen beregnes nøjagtigt i momsvalutaen, og at momsafregningssaldoen beregnes nøjagtigt i både regnskabsvalutaen og rapporteringsvalutaen. 
-
-De nye funktioner er i øjeblikket aktiveret for kunder med private eksempelversioner. Hvis du vil aktivere funktionerne, skal du indgive en tjenesteanmodning til Microsoft gennem de tilsvarende kanaler.
 
 ## <a name="sales-tax-conversion"></a>Omregning af moms
 

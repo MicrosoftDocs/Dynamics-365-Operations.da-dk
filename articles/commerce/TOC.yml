@@ -454,6 +454,8 @@
                   items:
                     - name: Konfigurere og bruge avancerede automatiske gebyrer
                       href: omni-auto-charges.md
+                    - name: Aktivere og konfigurere automatiske gebyrer efter kanal
+                      href: auto-charges-by-channel.md
                     - name: Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
                       href: pro-rate-charges-matching-lines.md
                 - name: Administrere kontinuitetsprogrammer
@@ -525,7 +527,7 @@
                 - name: Oprette et nyt produkt
                   items:
                     - name: Oprette et nyt produkt i Commerce
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Administrere produktkategorier og -produkter
                       href: category-management-product-creation.md
                 - name: Produktattributter
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Fravælge tilpassede anbefalinger
                       href: personalization-gdpr.md
-                - name: Tilføje lister med anbefalinger til et e-handelswebsted
-                  href: add-reco-list-to-page.md
                 - name: POS-oplevelser
                   items:
                     - name: Tilføje produktanbefalinger på POS
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: Ordrebekræftelsesmodul
                       href: order-confirmation-module.md
+                    - name: Butiksvælgermodul
+                      href: store-selector.md
                 - name: Kontostyringsmoduler
                   items:
                     - name: Kontostyringssider og -moduler
@@ -2115,7 +2117,7 @@
                 - name: Brug af betalingsdata
                   href: payment-connector-data-fields.md
                 - name: Aktivere beskyttelse mod dubleret betaling for betalingsconnector
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Oprette betalingspakke til Application Explorer i Service Fabric-installationer
                   href: dev-itpro/payment-connector-package.md
             - name: Tredjepartsudvidelse for e-handel

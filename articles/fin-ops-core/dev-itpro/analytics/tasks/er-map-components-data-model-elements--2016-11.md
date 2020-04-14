@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: e77de79113e3f44da1d7f92f17a446df86f6852e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026234"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143024"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Tilknyt ER-komponenter i det oprettede format til datamodelelementer (november 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Følgende procedure viser, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektroniske rapportering), der definerer et elektronisk dokumentformat for betalingsvirksomhedens domæne. Dette format bruges senere til at generere elektroniske dokumenter til behandling af betalinger. I dette eksempel skal du oprette en formatkonfiguration til eksempelfirmaet "Litware Inc." Disse trin kan udføres i alle firmaer, da ER-konfigurationer deles mellem alle firmaer. For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "Opret en formatkonfiguration".
+Følgende procedure viser, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektroniske rapportering), der definerer et elektronisk dokumentformat for betalingsvirksomhedens domæne. Dette format bruges senere til at generere elektroniske dokumenter til behandling af betalinger. I dette eksempel skal du oprette en formatkonfiguration til eksempelfirmaet 'Litware Inc.'. Disse trin kan udføres i alle firmaer, da ER-konfigurationer deles mellem alle firmaer. For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "Opret en formatkonfiguration".
 
 
 ## <a name="select-a-format-configuration"></a>Vælg en formatkonfiguration

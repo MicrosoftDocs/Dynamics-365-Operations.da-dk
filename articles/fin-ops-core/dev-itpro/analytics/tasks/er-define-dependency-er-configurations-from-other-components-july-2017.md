@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042913"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142227"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer i andre komponenter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og du skal have adgang til Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -33,7 +33,7 @@ Denne procedure viser, hvordan du designer en konfiguration af elektronisk rappo
 Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Trinene kan udføres i alle firmaer, fordi ER-konfigurationer deles mellem firmaer. 
 
 1. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
-    * Kontroller, at konfigurationstræet indeholder ''Eksempeldatamodel'-konfigurationen og underordnede elementer. Udfør ellers trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og start derefter denne guide igen.   
+    * Kontroller, at konfigurationstræet indeholder 'Eksempeldatamodel'-konfigurationen og underordnede elementer. Udfør ellers trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og start derefter denne guide igen.   
 
 ## <a name="define-the-dependency-of-er-configurations-from-other-components"></a>Definere afhængigheden af ER-konfigurationer fra andre komponenter
 1. Udvid 'Eksempeldatamodel' i træet.
@@ -138,5 +138,5 @@ Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-
 24. Luk siden.
 25. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
 26. Udvid 'Eksempeldatamodel' i træet.
-    * Bemærk, at tilknytningskonfigurationen Eksempeltilknytning for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
-    * Hvis du logger på Finance and Operations,registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
+    * Bemærk, at tilknytningskonfigurationen 'Eksempeltilknytning' for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
+    * Hvis du logger på Finance and Operations, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  

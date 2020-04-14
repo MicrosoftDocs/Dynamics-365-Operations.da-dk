@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: df8552aab5f1566dccf0b905c2d5db372671ec09
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249626"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144105"
 ---
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
@@ -32,12 +32,13 @@ ms.locfileid: "2249626"
 
 Med [Omkostningsstyring (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du arbejde med vurdering og regnskab for råvarer, halvfabrikata, færdigvarer og igangværende arbejde-aktiver. Det er processen med at definere, administrere og rapportere [Lagerregnskab](cost-object.md) og [Produktionsregnskab](bom-calculations.md).
 
-Du kan definere politikker for omkostninger på følgende områder: 
--  [Foruddefineret omkostning](costing-versions.md)
--  [Lagerregnskab](cost-object.md)
--  [Produktionsregnskab](bom-calculations.md)
--  [Indirekte omkostningsregnskab](costing-sheets.md)
--  [Finansintegration](production-order-cost-analysis.md)
+Du kan definere politikker for omkostninger på følgende områder:
+
+- [Foruddefineret omkostning](costing-versions.md)
+- [Lagerregnskab](cost-object.md)
+- [Produktionsregnskab](bom-calculations.md)
+- [Indirekte omkostningsregnskab](costing-sheets.md)
+- [Finansintegration](production-order-cost-analysis.md)
 
 For eksempel kan du definere, hvilke lagervurderingsmetoder, f.eks. [FIFO](fifo-physical-value-marking.md), [Vægtet gennemsnit](weighted-average-physical-value-marking.md), [Standardomkostning](prerequisites-standard-costs.md) eller [Glidende gennemsnit](moving-average.md), som du vil anvende på produkter i [Varemodelgruppen](../inventory/reserve-inventory-quantities.md) i Lagerregnskab.
 
@@ -51,23 +52,16 @@ Med produktionsregnskab kan du håndtere [Efterkalkulering af jobordre](producti
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
+Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.
 
 #### <a name="white-paper"></a>Hvidbog
-[Styklistekalkulation ved hjælp af efterkalkulationsark](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver, hvordan du konfigurerer et efterkalkulationsark, der omfatter materiale og produktion, og hvordan konfigurationen påvirker resultaterne af styklistekalkulation. Emnerne illustreres gennem konkrete scenarier og data, der viser effekten af de forskellige indstillinger og konfigurationer. Vi forventer ikke, at du følger alle disse scenarier, fordi dette dokument ikke indeholder nok oplysninger til at konfigurere dem. Hvis du har den grundlæggende viden, kan du imidlertid forsøge at afspille opgaveguiderne nedenfor i den viste rækkefølge. Du kan bruge den viden, du har opnået ved at læse dette dokument, til at udføre analyse af styklistekalkulation. 
 
--  [Opret et færdigt produkt.](tasks/create-finished-product-2016-02.md)
--  [Opret et halvfabrikataprodukt.](tasks/create-semi-finished-product-2016-02.md)
--  [Opret råmaterialer](tasks/create-raw-materials-2016-02.md)
--  [Oprette styklister](tasks/create-boms-2016-02.md)
--  [Opret ruter](tasks/create-routes-2016-02.md)
--  [Beregne en stykliste ved hjælp af en enkelt struktur](tasks/calculate-bom-single-level-structure-2016-02.md)
--  [Beregne en stykliste ved hjælp af en struktur for flere niveauer](tasks/calculate-bom-multilevel-structure-2016-02.md)
-
+[Styklistekalkulation ved hjælp af efterkalkulationsark](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver, hvordan du konfigurerer et efterkalkulationsark, der omfatter materiale og produktion, og hvordan konfigurationen påvirker resultaterne af styklistekalkulation. Emnerne illustreres gennem konkrete scenarier og data, der viser effekten af de forskellige indstillinger og konfigurationer.
 
 #### <a name="blogs"></a>Blogs
+
 Du kan finde meninger, nyheder og andre oplysninger om omkostningsstyring på [Dynamics AX Manufacturing R&D-teamets blog](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selvom nogle af disse opslag er skrevet til den tidligere version af Omkostningsstyring, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
 
 #### <a name="task-guides"></a>Opgaveguider
-Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
+Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.

@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea3f08ea2d1bd584448c3033aea41eca2a0e3ce
-ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
+ms.openlocfilehash: 54c75696f7147a7a4eb7b9d984936af9c28ef501
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "1870910"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146209"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I dette emne beskrives, hvordan du konfigurerer en enkel lokationsvejledning. Det viste eksemplet opretter en lokalitetsvejledning, som skal bruges til at bestemme, hvor du kan placere elementer, der er blevet modtaget for en indkøbsordre. Du kan afspille denne opgaveguide med de nævnte data ved hjælp af demodatafirmaet USMF. Forudsætninger: Du skal oprette en dispositionskode. I denne procedure bruger vi en dispositionskode kaldet Relabel. Hvis du opretter en lokalitetsvejledning i dine egne data, skal du havet oprettet avanceret lagerstedsstyring for dit lagersted og dine elementer. Denne procedure er beregnet til lagerchefen.
 
