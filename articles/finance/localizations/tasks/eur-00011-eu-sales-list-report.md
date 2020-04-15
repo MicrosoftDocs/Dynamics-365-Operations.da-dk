@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7038af3977797a0be2523f2414800400757b7007
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 37f1a6e3bf39e16702d1367a325134ec84369945
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183527"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144367"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Generere EU-listesystemrapporten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure fører dig gennem oprettelse af EU-salgslisterapporten. Dette omfatter overførsel af samhandelstransaktioner inden for Fællesskabet til EU-listesystemet og procestiden for rapporten. Denne procedure omfatter også oprettelse af en EU-samhandelstransaktion til demonstrationsformål. Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Hjælp.
 
@@ -96,7 +96,7 @@ Denne procedure er kun beregnet til bogholdere.
 3. Markér rækken for feltet Fakturadato på listen.
 4. Skriv "01/01/2016..01/31/2016" i feltet Kriterier.
 5. Markér rækken for feltet Rapporteringsstatus på listen.
-6. Vælg Rapporteret i feltet Kriterier.
+6. Vælg Rapporteret i feltet 'Kriterier'.
     * Du kan også angive ekstra filtre på samhandelstransaktioner inden for Fællesskabet, som du vil markere som Rapporteret.  
 7. Klik på OK.
 8. Vælg Lukket i feltet Valg.

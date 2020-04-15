@@ -16,16 +16,16 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8c313a93f74ee4d8293d70f92b9795a4f94099f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6524bf0a13c33d910bdd3357b80fb0c0cedabf8d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143113"
 ---
 # <a name="create-and-post-a-project-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne opgave hjælper dig med at oprette og bogføre en projektfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering. 
 

@@ -16,16 +16,16 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d5ea9c857cc70015dc2e983a80eec5aa1c8b2f1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 859aa31107f20c85a17a155586cfd9c23d478b7c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175096"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141569"
 ---
 # <a name="create-and-post-a-customer-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure hjælper dig med at oprette og bogføre en salgsordrefaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering. 
 
