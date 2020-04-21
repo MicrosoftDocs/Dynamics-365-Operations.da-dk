@@ -14,11 +14,13 @@
               items:
                 - name: Startside for Nyheder eller ændringer i platformsopdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (maj 2020)
+                - name: Platformsopdateringer til 10.0.11 (juli 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Platformsopdateringer til 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (april 2020)
+                - name: Platformsopdatering 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (februar 2020)
+                - name: Platformsopdatering 32 (februar 2020)
                   href: get-started/whats-new-platform-update-32.md
                 - name: Platform update 31 (januar 2020)
                   href: get-started/whats-new-platform-update-31.md
@@ -322,10 +324,8 @@
                       href: data-entities/copy-configuration.md
                     - name: Konfigurationsdatapakker
                       href: data-entities/configuration-data-packages.md
-                    - name: Konfiguration af datapakker (kun frigivelsen fra juli 2017)
+                    - name: Konfigurationsdatapakker (kun frigivelsen fra juli 2017)
                       href: data-entities/configuration-data-packages.md
-                    - name: Gøre enhedslager tilgængelig som en Data Lake
-                      href: data-entities/entity-store-data-lake.md
                 - name: Konfigurationsdataskabeloner
                   href: data-entities/configuration-data-templates.md
                 - name: Spore ændringer i en enhed
@@ -384,6 +384,14 @@
               href: user-interface/data-validation-workspace.md
             - name: Fejlbeskrivelser til datastyring
               href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Azure Data Lake-oversigt
+              href: data-entities/azure-data-lake-overview.md
+            - name: Finance and Operations-apps i Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Gøre enhedslageret tilgængeligt som en Data Lake
+              href: data-entities/entity-store-data-lake.md
         - name: Handlinger til databaseflytning
           items:
             - name: Oversigt
@@ -482,38 +490,46 @@
               items:
                 - name: Startside for lokal installation
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Oversigt over lokal installation
-                  href: deployment/on-premises-overview.md
-                - name: Planlægge og forberede lokale installationer
-                  href: deployment/plan-onprem-deployment.md
-                - name: Krav til tilpasning af hardware
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Konfigurere lokale projekter
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Forberede lokale installationer
+                  items:
+                    - name: Oversigt over lokal installation
+                      href: deployment/on-premises-overview.md
+                    - name: Planlægge og forberede lokale installationer
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Krav til tilpasning af hardware
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Konfigurere og installere lokale miljøer
                   items:
-                    - name: Startside for konfiguration og installation af lokale miljøer
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Installere lokale miljøer (Platform update 12 og senere)
+                    - name: Konfigurere lokale projekter i LCS
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Konfigurere og installere lokale miljøer
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Installere lokale miljøer (Platform update 8 og 11)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                       href: deployment/deploy-retail-onprem.md
+                    - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Miljøvedligeholdelse
+                  items:
+                    - name: Anvende opdateringer til en lokal installation
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Certifikatrotation
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Klientens internetforbindelse
+                      href: user-interface/client-disconnected.md
+                    - name: Konfigurere proxyer til lokale miljøer
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Diagnosticering i det lokale miljø
+                      href: deployment/on-premises-diagnostics.md
+                    - name: PowerBI.com-integration med lokale miljøer
+                      href: analytics/entity-store-on-prem.md
+                    - name: Omkonfigurere miljøer
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Geninstallere lokale installationer
+                      href: deployment/redeploy-on-prem.md
+                    - name: Fjerne og geninstallere en AOS-node
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Genbrug den samme AD FS-forekomst til flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com-integration med lokale miljøer
-                  href: analytics/entity-store-on-prem.md
-                - name: Konfigurere proxyer til lokale miljøer
-                  href: deployment/onprem-reverseproxy.md
-                - name: Anvende opdateringer til en lokal installation
-                  href: deployment/apply-updates-on-premises.md
-                - name: Diagnosticering i det lokale miljø
-                  href: deployment/on-premises-diagnostics.md
-                - name: Geninstallere lokale installationer
-                  href: deployment/redeploy-on-prem.md
                 - name: Lokal agent
                   items:
                     - name: AD FS Office 365-kompatibilitet
@@ -522,16 +538,12 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Opdatere den lokale agent
                       href: lifecycle-services/update-local-agent.md
-                - name: Omkonfigurere miljøer
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Klientens internetforbindelse
-                  href: user-interface/client-disconnected.md
-                - name: Fejlfinding af lokale installationer
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Scripts til løsning af problemer i lokale miljøer
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Certifikatrotation
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Fejlfinding
+                  items:
+                    - name: Fejlfinding af lokale installationer
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Scripts til løsning af problemer i lokale miljøer
+                      href: deployment/onprem-tsg-implementations.md
             - name: Installere brugerdefineret kode
               items:
                 - name: Oprette installerbare modelpakker
@@ -928,6 +940,8 @@
                       href: extensibility/extensibility-attributes.md
                     - name: 'Ændringer, der giver beskadigelser'
                       href: extensibility/breaking-changes.md
+                    - name: Kompatibilitetskontrolværktøj
+                      href: extensibility/compatibility-checker-tool.md
             - name: Ydeevne
               items:
                 - name: Udføre sporinger ved hjælp af sporingsparser
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: 'Oprette OData-metadatacache, når AOS startes'
               href: sysadmin/odata-warmup.md
+            - name: Konfigurere klient til Azure Key Vault
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Opgraderinger, opdateringer og hotfixes'
           items:
             - name: 'Ressourcer til opgraderinger, opdateringer og hotfixes'
@@ -1542,7 +1558,7 @@
                   href: deployment/apply-updates-on-premises.md
                 - name: Geninstallere en lokal installation
                   href: deployment/redeploy-on-prem.md
-                - name: Lokal opgradering til lokal 7.x til 8.1
+                - name: Lokal opgraderingsproces til lokale miljøer
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Hotfixes
               items:
@@ -1552,7 +1568,7 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Installere metadatahotfixes i udviklingsmiljøer
                   href: migration-upgrade/install-metadata-hotfix-package.md
-                - name: Foretage programrettelse af Reporting Services i miljøer med én boks
+                - name: Foretage programrettelse af rapporteringstjenester i miljøer med én boks
                   href: migration-upgrade/patch-reporting-service-environment.md
                 - name: Opdatere Visual Studio-udviklingsværktøjer
                   href: dev-tools/update-development-tools.md
