@@ -2,7 +2,7 @@
 title: Definere en udløbsdato for en produktionsflowversion
 description: For at afslutte gyldigheden og behandlingen af en version af produktionsflowet på en given dato eller for at planlægge udskiftningen af en aktiv version med en ny version, skal du angive en udløbsdato for versionen.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,34 +10,34 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d8df396abc3ac4a2c3920e6bf2b21d8a4463df2
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 3d942f54b2739f2ca3dcc3e8b8a497166a8edb42
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146853"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212083"
 ---
-# <a name="define-an-expiry-date-for-a-production-flow-version"></a><span data-ttu-id="03f07-103">Definere en udløbsdato for en produktionsflowversion</span><span class="sxs-lookup"><span data-stu-id="03f07-103">Define an expiry date for a production flow version</span></span>
+# <a name="define-an-expiry-date-for-a-production-flow-version"></a><span data-ttu-id="25093-103">Definere en udløbsdato for en produktionsflowversion</span><span class="sxs-lookup"><span data-stu-id="25093-103">Define an expiry date for a production flow version</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="03f07-104">For at afslutte gyldigheden og behandlingen af en version af produktionsflowet på en given dato eller for at planlægge udskiftningen af en aktiv version med en ny version, skal du angive en udløbsdato for versionen.</span><span class="sxs-lookup"><span data-stu-id="03f07-104">To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version.</span></span> <span data-ttu-id="03f07-105">Det er ikke nødvendigt at deaktivere versionen.</span><span class="sxs-lookup"><span data-stu-id="03f07-105">It is not necessary to deactivate the version.</span></span>
+<span data-ttu-id="25093-104">For at afslutte gyldigheden og behandlingen af en version af produktionsflowet på en given dato eller for at planlægge udskiftningen af en aktiv version med en ny version, skal du angive en udløbsdato for versionen.</span><span class="sxs-lookup"><span data-stu-id="25093-104">To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version.</span></span> <span data-ttu-id="25093-105">Det er ikke nødvendigt at deaktivere versionen.</span><span class="sxs-lookup"><span data-stu-id="25093-105">It is not necessary to deactivate the version.</span></span>
 
 
-## <a name="set-an-expiration-date-to-end-a-production-flow-version"></a><span data-ttu-id="03f07-106">Angiv en udløbsdato for at afslutte en produktionsflowversion</span><span class="sxs-lookup"><span data-stu-id="03f07-106">Set an expiration date to end a production flow version</span></span>
-1. <span data-ttu-id="03f07-107">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="03f07-107">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="03f07-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="03f07-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="03f07-109">Vælg et produktionsflow med en version, der allerede er defineret.</span><span class="sxs-lookup"><span data-stu-id="03f07-109">Select any production flow that has a version that is already defined.</span></span>  
-3. <span data-ttu-id="03f07-110">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="03f07-110">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="03f07-111">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="03f07-111">Click Edit.</span></span>
-5. <span data-ttu-id="03f07-112">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="03f07-112">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="03f07-113">Angiv dato og klokkeslæt i feltet Udløbsdato.</span><span class="sxs-lookup"><span data-stu-id="03f07-113">In the Expiration date field, enter a date and time.</span></span>
-    * <span data-ttu-id="03f07-114">For udløbsdatoen starter der ikke eller deaktiveres der ikke en ny version.</span><span class="sxs-lookup"><span data-stu-id="03f07-114">For the expiration date, a new version will not start or become activated.</span></span> <span data-ttu-id="03f07-115">Det vil heller ikke længere være muligt at oprette eller starte job for denne produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="03f07-115">It will also no longer be possible to create or start jobs for this production flow.</span></span> <span data-ttu-id="03f07-116">Du kan stadig fuldføre igangsatte job efter udløbsdatoen.</span><span class="sxs-lookup"><span data-stu-id="03f07-116">You can still complete started jobs after the expiration date.</span></span>  
+## <a name="set-an-expiration-date-to-end-a-production-flow-version"></a><span data-ttu-id="25093-106">Angiv en udløbsdato for at afslutte en produktionsflowversion</span><span class="sxs-lookup"><span data-stu-id="25093-106">Set an expiration date to end a production flow version</span></span>
+1. <span data-ttu-id="25093-107">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="25093-107">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="25093-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="25093-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="25093-109">Vælg et produktionsflow med en version, der allerede er defineret.</span><span class="sxs-lookup"><span data-stu-id="25093-109">Select any production flow that has a version that is already defined.</span></span>  
+3. <span data-ttu-id="25093-110">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="25093-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="25093-111">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="25093-111">Click Edit.</span></span>
+5. <span data-ttu-id="25093-112">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="25093-112">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="25093-113">Angiv dato og klokkeslæt i feltet Udløbsdato.</span><span class="sxs-lookup"><span data-stu-id="25093-113">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="25093-114">For udløbsdatoen starter der ikke eller deaktiveres der ikke en ny version.</span><span class="sxs-lookup"><span data-stu-id="25093-114">For the expiration date, a new version will not start or become activated.</span></span> <span data-ttu-id="25093-115">Det vil heller ikke længere være muligt at oprette eller starte job for denne produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="25093-115">It will also no longer be possible to create or start jobs for this production flow.</span></span> <span data-ttu-id="25093-116">Du kan stadig fuldføre igangsatte job efter udløbsdatoen.</span><span class="sxs-lookup"><span data-stu-id="25093-116">You can still complete started jobs after the expiration date.</span></span>  
 

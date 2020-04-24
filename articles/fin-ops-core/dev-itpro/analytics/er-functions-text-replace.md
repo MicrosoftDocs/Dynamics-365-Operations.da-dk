@@ -3,7 +3,7 @@ title: ER-funktionen REPLACE
 description: Dette emne indeholder oplysninger om, hvordan funktionen REPLACE til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,67 +18,67 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040980"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201060"
 ---
-# <span data-ttu-id="881e4-103"><a name="REPLACE">ER-funktionen REPLACE</a></span><span class="sxs-lookup"><span data-stu-id="881e4-103"><a name="REPLACE">REPLACE ER function</a></span></span>
+# <a name=""></a><span data-ttu-id="1c5bb-103"><a name="REPLACE">ER-funktionen REPLACE</a></span><span class="sxs-lookup"><span data-stu-id="1c5bb-103"><a name="REPLACE">REPLACE ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="881e4-104">Funktionen `REPLACE` returnerer den angivne tekststreng som en *Streng*-værdi, efter at hele eller en del af den er blevet erstattet med en anden streng.</span><span class="sxs-lookup"><span data-stu-id="881e4-104">The `REPLACE` function returns the specified text string as a *String* value after all or part of it has been replaced with another string.</span></span>
+<span data-ttu-id="1c5bb-104">Funktionen `REPLACE` returnerer den angivne tekststreng som en *Streng*-værdi, efter at hele eller en del af den er blevet erstattet med en anden streng.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-104">The `REPLACE` function returns the specified text string as a *String* value after all or part of it has been replaced with another string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="881e4-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="881e4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1c5bb-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="1c5bb-105">Syntax</span></span>
 
 ```vb
 REPLACE (text, pattern, replacement, regular expression flag)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="881e4-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="881e4-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="1c5bb-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="1c5bb-106">Arguments</span></span>
 
-<span data-ttu-id="881e4-107">`text`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="881e4-107">`text`: *String*</span></span>
+<span data-ttu-id="1c5bb-107">`text`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="1c5bb-107">`text`: *String*</span></span>
 
-<span data-ttu-id="881e4-108">Den gyldige sti til en datakilde af typen *Streng*.</span><span class="sxs-lookup"><span data-stu-id="881e4-108">The valid path of a data source of the *String* type.</span></span>
+<span data-ttu-id="1c5bb-108">Den gyldige sti til en datakilde af typen *Streng*.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-108">The valid path of a data source of the *String* type.</span></span>
 
-<span data-ttu-id="881e4-109">`pattern`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="881e4-109">`pattern`: *String*</span></span>
+<span data-ttu-id="1c5bb-109">`pattern`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="1c5bb-109">`pattern`: *String*</span></span>
 
-<span data-ttu-id="881e4-110">Hvis argumentet `regular expression flag` er **FALSK**, indeholder argumentet den tekst, der skal udskiftes.</span><span class="sxs-lookup"><span data-stu-id="881e4-110">If the `regular expression flag` argument is **FALSE**, this argument contains the text that must be replaced.</span></span>
+<span data-ttu-id="1c5bb-110">Hvis argumentet `regular expression flag` er **FALSK**, indeholder argumentet den tekst, der skal udskiftes.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-110">If the `regular expression flag` argument is **FALSE**, this argument contains the text that must be replaced.</span></span>
 
-<span data-ttu-id="881e4-111">Hvis argumentet `regular expression flag` er **SANDT**, indeholder dette argument et regulært udtryk, der definerer både et søgemønster og erstatningsteksten.</span><span class="sxs-lookup"><span data-stu-id="881e4-111">If the `regular expression flag` argument is **TRUE**, this argument contains a regular expression that defines both a search pattern and the replacement text.</span></span>
+<span data-ttu-id="1c5bb-111">Hvis argumentet `regular expression flag` er **SANDT**, indeholder dette argument et regulært udtryk, der definerer både et søgemønster og erstatningsteksten.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-111">If the `regular expression flag` argument is **TRUE**, this argument contains a regular expression that defines both a search pattern and the replacement text.</span></span>
 
-<span data-ttu-id="881e4-112">`replacement`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="881e4-112">`replacement`: *String*</span></span>
+<span data-ttu-id="1c5bb-112">`replacement`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="1c5bb-112">`replacement`: *String*</span></span>
 
-<span data-ttu-id="881e4-113">Hvis argumentet `regular expression flag` er **FALSK**, indeholder argumentet den tekst, der anvendes i stedet for.</span><span class="sxs-lookup"><span data-stu-id="881e4-113">If the `regular expression flag` argument is **FALSE**, this argument contains the text to use as a replacement.</span></span>
+<span data-ttu-id="1c5bb-113">Hvis argumentet `regular expression flag` er **FALSK**, indeholder argumentet den tekst, der anvendes i stedet for.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-113">If the `regular expression flag` argument is **FALSE**, this argument contains the text to use as a replacement.</span></span>
 
-<span data-ttu-id="881e4-114">Hvis argumentet `regular expression flag` er **SANDT**, bruges dette argument ikke.</span><span class="sxs-lookup"><span data-stu-id="881e4-114">If the `regular expression flag` argument is **TRUE**, this argument isn't used.</span></span>
+<span data-ttu-id="1c5bb-114">Hvis argumentet `regular expression flag` er **SANDT**, bruges dette argument ikke.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-114">If the `regular expression flag` argument is **TRUE**, this argument isn't used.</span></span>
 
-<span data-ttu-id="881e4-115">`regular expression flag`: *Boolesk*</span><span class="sxs-lookup"><span data-stu-id="881e4-115">`regular expression flag`: *Boolean*</span></span>
+<span data-ttu-id="1c5bb-115">`regular expression flag`: *Boolesk*</span><span class="sxs-lookup"><span data-stu-id="1c5bb-115">`regular expression flag`: *Boolean*</span></span>
 
-<span data-ttu-id="881e4-116">En *Boolesk* værdi, der angiver, om et regulært udtryk bruges til at udføre erstatningen.</span><span class="sxs-lookup"><span data-stu-id="881e4-116">A *Boolean* value that indicates whether a regular expression is used to do the replacement.</span></span>
+<span data-ttu-id="1c5bb-116">En *Boolesk* værdi, der angiver, om et regulært udtryk bruges til at udføre erstatningen.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-116">A *Boolean* value that indicates whether a regular expression is used to do the replacement.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="881e4-117">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="881e4-117">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="1c5bb-117">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="1c5bb-117">Return values</span></span>
 
-<span data-ttu-id="881e4-118">*Streng*</span><span class="sxs-lookup"><span data-stu-id="881e4-118">*String*</span></span>
+<span data-ttu-id="1c5bb-118">*Streng*</span><span class="sxs-lookup"><span data-stu-id="1c5bb-118">*String*</span></span>
 
-<span data-ttu-id="881e4-119">Den returnerede tekstværdi.</span><span class="sxs-lookup"><span data-stu-id="881e4-119">The resulting text value.</span></span>
+<span data-ttu-id="1c5bb-119">Den returnerede tekstværdi.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-119">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="881e4-120">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="881e4-120">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="1c5bb-120">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="1c5bb-120">Usage notes</span></span>
 
-<span data-ttu-id="881e4-121">Hvis argumentet `regular expression flag` er **SANDT**, returnerer denne funktion den angivne streng, når den er blevet ændret, ved at anvende det regulære udtryk, der er angivet af argumentet `pattern`.</span><span class="sxs-lookup"><span data-stu-id="881e4-121">If the `regular expression flag` argument is **TRUE**, this function returns the specified string after it has been changed by applying the regular expression that is specified by the `pattern` argument.</span></span> <span data-ttu-id="881e4-122">Dette regulære udtryk bruges til at søge efter de tegn, der skal erstattes.</span><span class="sxs-lookup"><span data-stu-id="881e4-122">The regular expression is used to find the characters that must be replaced.</span></span>
+<span data-ttu-id="1c5bb-121">Hvis argumentet `regular expression flag` er **SANDT**, returnerer denne funktion den angivne streng, når den er blevet ændret, ved at anvende det regulære udtryk, der er angivet af argumentet `pattern`.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-121">If the `regular expression flag` argument is **TRUE**, this function returns the specified string after it has been changed by applying the regular expression that is specified by the `pattern` argument.</span></span> <span data-ttu-id="1c5bb-122">Dette regulære udtryk bruges til at søge efter de tegn, der skal erstattes.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-122">The regular expression is used to find the characters that must be replaced.</span></span>
 
-<span data-ttu-id="881e4-123">Hvis argumentet `regular expression flag` er **FALSK**, opfører denne funktion sig som [TRANSLATE](er-functions-text-translate.md).</span><span class="sxs-lookup"><span data-stu-id="881e4-123">If the `regular expression flag` argument is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md).</span></span> <span data-ttu-id="881e4-124">De tegn, der er angivet af argumentet `replacement`, anvendes til at erstatte de tegn, der findes.</span><span class="sxs-lookup"><span data-stu-id="881e4-124">The characters that are specified by the `replacement` argument are used to replace the characters that are found.</span></span> 
+<span data-ttu-id="1c5bb-123">Hvis argumentet `regular expression flag`er **FALSE**, returnerer denne funktion den angivne streng, efter at det sæt tegn, der er defineret i argumentet `pattern`, er erstattet af tegn i argumentet `replacement`.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-123">If the `regular expression flag` argument is **FALSE**, this function returns the specified string after the set of characters that are defined in the `pattern` argument have been replaced by characters of the `replacement` argument.</span></span> 
 
-## <a name="example-1"></a><span data-ttu-id="881e4-125">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="881e4-125">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="1c5bb-124">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="1c5bb-124">Example 1</span></span>
 
-<span data-ttu-id="881e4-126">`REPLACE ("+1 923 456 4971", "[^0-9]", "", true)` anvender et almindeligt udtryk, der fjerner alle ikke-numeriske symboler og returnerer **"19234564971"**.</span><span class="sxs-lookup"><span data-stu-id="881e4-126">`REPLACE ("+1 923 456 4971", "[^0-9]", "", true)` applies a regular expression that removes all non-numeric symbols, and it returns **"19234564971"**.</span></span> 
+<span data-ttu-id="1c5bb-125">`REPLACE ("+1 923 456 4971", "[^0-9]", "", true)` anvender et almindeligt udtryk, der fjerner alle ikke-numeriske symboler og returnerer **"19234564971"**.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-125">`REPLACE ("+1 923 456 4971", "[^0-9]", "", true)` applies a regular expression that removes all non-numeric symbols, and it returns **"19234564971"**.</span></span> 
 
-## <a name="example-2"></a><span data-ttu-id="881e4-127">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="881e4-127">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="1c5bb-126">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="1c5bb-126">Example 2</span></span>
 
-<span data-ttu-id="881e4-128">`REPLACE ("abcdef", "cd", "GH", false)` erstatter mønsteret **"cd"** med strengen **"GH"** og returnerer **"abGHef"**.</span><span class="sxs-lookup"><span data-stu-id="881e4-128">`REPLACE ("abcdef", "cd", "GH", false)` replaces the pattern **"cd"** with the string **"GH"** and returns **"abGHef"**.</span></span>
+<span data-ttu-id="1c5bb-127">`REPLACE ("abcdef", "cd", "GH", false)` erstatter mønsteret **"cd"** med strengen **"GH"** og returnerer **"abGHef"**.</span><span class="sxs-lookup"><span data-stu-id="1c5bb-127">`REPLACE ("abcdef", "cd", "GH", false)` replaces the pattern **"cd"** with the string **"GH"** and returns **"abGHef"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="881e4-129">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="881e4-129">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="1c5bb-128">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="1c5bb-128">Additional resources</span></span>
 
-[<span data-ttu-id="881e4-130">Tekstfunktioner</span><span class="sxs-lookup"><span data-stu-id="881e4-130">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="1c5bb-129">Tekstfunktioner</span><span class="sxs-lookup"><span data-stu-id="1c5bb-129">Text functions</span></span>](er-functions-category-text.md)

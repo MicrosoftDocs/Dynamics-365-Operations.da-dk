@@ -3,7 +3,7 @@ title: Oprette ansættelseskategorier
 description: Ansættelseskategorier kan konfigureres i Dynamics 365 Human Resources, så de svarer til medarbejderne.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,23 +18,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bad9ea41e0b1367fc660dfbc59595dce81174adc
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 999e17be00ff9ac4fd5905844572dee35369b784
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092677"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229780"
 ---
-# <a name="create-employment-categories"></a><span data-ttu-id="7d4ad-103">Oprette ansættelseskategorier</span><span class="sxs-lookup"><span data-stu-id="7d4ad-103">Create employment categories</span></span>
+# <a name="create-employment-categories"></a><span data-ttu-id="84166-103">Oprette ansættelseskategorier</span><span class="sxs-lookup"><span data-stu-id="84166-103">Create employment categories</span></span>
 
-[!include [banner](includes/preview-feature.md)]
+<span data-ttu-id="84166-104">Opret ansættelseskategorier i Dynamics 365 Human Resources, så de svarer til medarbejderne.</span><span class="sxs-lookup"><span data-stu-id="84166-104">Set up employment categories in Dynamics 365 Human Resources to match your workers.</span></span>
 
-<span data-ttu-id="7d4ad-104">Opret ansættelseskategorier i Dynamics 365 Human Resources, så de svarer til medarbejderne.</span><span class="sxs-lookup"><span data-stu-id="7d4ad-104">Set up employment categories in Dynamics 365 Human Resources to match your workers.</span></span>
+1. <span data-ttu-id="84166-105">I arbejdsområdet **Frynsegodeadministration** skal du vælge **Ansættelseskategorier** under **Konfiguration**.</span><span class="sxs-lookup"><span data-stu-id="84166-105">In the **Benefits management** workspace, under **Setup**, select **Employment categories**.</span></span>
 
-1. <span data-ttu-id="7d4ad-105">I arbejdsområdet **Frynsegodeadministration** skal du vælge **Ansættelseskategorier** under **Konfiguration**.</span><span class="sxs-lookup"><span data-stu-id="7d4ad-105">In the **Benefits management** workspace, under **Setup**, select **Employment categories**.</span></span>
+2. <span data-ttu-id="84166-106">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="84166-106">Select **New**.</span></span>
 
-2. <span data-ttu-id="7d4ad-106">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="7d4ad-106">Select **New**.</span></span>
+3. <span data-ttu-id="84166-107">Angiv værdier for **Arbejdertype**, **Ansættelseskategori** og **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="84166-107">Specify values for **Worker type**, **Employment category**, and **Description**.</span></span>
 
-3. <span data-ttu-id="7d4ad-107">Angiv værdier for **Arbejdertype**, **Ansættelseskategori** og **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="7d4ad-107">Specify values for **Worker type**, **Employment category**, and **Description**.</span></span>
-
-4. <span data-ttu-id="7d4ad-108">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="7d4ad-108">Select **Save**.</span></span> 
+4. <span data-ttu-id="84166-108">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="84166-108">Select **Save**.</span></span> 
