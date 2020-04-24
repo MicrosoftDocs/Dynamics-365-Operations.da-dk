@@ -3,7 +3,7 @@ title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036259"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260454"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -90,4 +90,23 @@ Hvis du vil fortryde gruppering i et gitter, skal du højreklikke på gruppering
 ## <a name="evaluating-math-expressions"></a>Evaluere matematiske udtryk
 Som en produktivitetsbooster kan brugerne indtaste matematiske formler i numeriske celler i et gitter. De behøver ikke at foretage beregningen i en app uden for systemet. Hvis du f.eks. angiver **=15\*4** og derefter trykker på tasten **Tab** for at flytte ud af feltet, evalueres udtrykket, og værdien **60** gemmes for feltet.
 
-Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Yderligere oplysninger om de understøttede operatorer og syntaks finder du under [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).  
+Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Du kan få flere oplysninger om de understøttede operatorer og den understøttede syntaks i [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg det nye gitterkontrolelement i mit miljø? 
+
+**10.0.9/Platformopdatering 33 og nyere** **Nyt gitterkontrolelement**-funktionen er tilgængelig direkte i Funktionsstyring i et hvilket som helst miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Platformopdatering 32 og10.0.7/Platformopdatering 31** Funktionen **Nyt gitterkontrolelement** kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
+
+1.  **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **Nulstil IIS** for at rydde den statiske flighting-cache. 
+
+3.  **Find funktionen**: Gå til arbejdsområdet **Funktionsstyring**. Hvis **Nyt gitterkontrolelement** ikke vises på listen over alle funktioner, skal du vælge **Søg efter opdateringer**.   
+
+4.  **Aktivér funktionen**: Find funktionen **Nyt gitterkontrolelement** på listen over funktioner, og vælg **Aktivér nu** i detaljeruden. Bemærk, at browseren skal opdateres. 
+
+Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktiveret.

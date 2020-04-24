@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897919"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197261"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (16. april 2019)
 
@@ -46,10 +46,6 @@ Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Enhederne Kompensationsområde, Kompensationsniveau, Frynsegodeindstilling og Færdighedstype i Common Data Service er opdateret, så brugertilpassede felter understøttes
 
 I denne version er disse Common Data Service-enheder blevet opdateret, så de omfatter muligheden for at inkludere brugerdefinerede felter, der er tilføjet via Talent: Core HR.
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Understøttelse af nye Common Data Service-enheder til: kompensation - fordelingsregler, kompensation - variabel struktur, variabel kompensation
-
-I denne version er enhederne Kompensation - fordelingsregler, Kompensation - variabel struktur, Variabel kompensation føjet til Common Data Service. Disse enheder understøtter også brugerdefinerede felter, der er tilføjet via Talent: Core HR.
 
 ### <a name="powerbi-refresh-issues-314342"></a>Power BI-opdateringsproblemer (314342)
 
@@ -93,6 +89,6 @@ Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefe
 
 ### <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
 
-Med Platform update 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk sender mailbeskeder til kontakter, når beskeder udløses af en hændelse.
+Med platformsopdatering 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender mailbeskeder til kontaktpersoner, når de udløses af en hændelse.
 
 

@@ -3,7 +3,7 @@ title: Avancerede automatiske gebyrer for omni-kanal
 description: I dette emne beskrives funktioner til styring af ekstra ordregebyrer for Commerce-kanalordrer ved hjælp af funktioner til avancerede automatiske gebyrer.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022063"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175148"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om konfiguration og implementering af den avancerede automatiske gebyrfunktion, der er tilgængelig i Dynamics 365 for Retail version 10.0.
+Dette emne indeholder oplysninger om konfiguration og implementering af funktionen til avancerede automatiske gebyrfunktion, der er tilgængelig i Dynamics 365 for Retail version 10.0.
 
 Når de avancerede automatiske gebyrfunktioner er aktiveret, kan ordrer, der oprettes i en understøttet Commerce-kanal (POS, callcenter og online), udnytte de konfigurationer for [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services), der er defineret i ERP-programmet for gebyrer på både for ordrehoved- og -linjeniveau.
 
@@ -67,7 +67,7 @@ Der findes følgende nye handlinger.
 
 Som med alle POS-handlinger kan sikkerhedskonfigurationer udføres, så det kræver godkendelse fra lederen at udføre handlingen.
 
-Det er vigtigt at bemærke, at de ovenfor angivne POS operationer også kan føjes til POS layout, selvom **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. I dette scenario får organisationer stadig fordelene ved at kunne få vist gebyrer, der er tilføjet manuelt, og redigere dem ved hjælp af handlingen **Administrer gebyrer**. Brugere kan også bruge handlingerne **Tilføj hovedgebyrer** og **Tilføj linjegebyrer** for POS-transaktioner, selv når **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. Handlingen **Genberegn gebyrer** har mindre funktionalitet, hvis den bruges, når **Brug avancerede automatiske gebyrer** er deaktiveret. I dette scenario skal intet genberegnes, og eventuelle gebyrer, der er føjet til transaktionen manuelt, ville blot nulstille til $0,00.
+Det er vigtigt at bemærke, at de ovenfor angivne POS operationer også kan føjes til POS layout, selvom **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. I dette scenario får organisationer stadig fordelene ved at kunne få vist gebyrer, der er tilføjet manuelt, og redigere dem ved hjælp af handlingen **Administrer gebyrer**. Brugere kan også bruge handlingerne **Tilføj hovedgebyrer** og **Tilføj linjegebyrer** for POS-transaktioner, selv når **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. Handlingen **Genberegn gebyrer** har mindre funktionalitet, hvis den bruges, når **Brug avancerede automatiske gebyrer** er deaktiveret. I dette scenarie skal intet genberegnes, og eventuelle gebyrer, der er føjet til transaktionen manuelt, nulstilles blot til $0,00.
 
 ## <a name="use-case-examples"></a>Eksempler på brugsmønstre
 
@@ -77,7 +77,7 @@ I dette afsnit beskrives brugsmønstre, som kan hjælpe dig med at forstå konfi
 
 #### <a name="use-case-scenario"></a>Brugsmønsterscenario
 
-En forhandler ønsker automatisk at tilføje gebyrer for fragt, når der oprettes transaktioner i en Commerce-kanal, der kræver en forsendelse af produkter til kunden. Detailhandleren tilbyder 2 leveringsmåder: Fragt og Luft. Hvis en kunde vælger Fragt-levering, og ordreværdien er mindre end 100 USD, vil detailhandleren kræve et fragtgebyr af kunden på 10,00 USD. Hvis ordreværdien er over 100 USD, og kunden vælger Fragt-levering, opkræves kunden ikke yderligere fragtgebyrer. Hvis kunden vælger leveringsmetoden Luft for alle ordrer, uanset deres samlede værdi, opkræves et fragtgebyr på 20,00 USD.
+En forhandler ønsker automatisk at tilføje gebyrer for fragt, når der oprettes transaktioner i en Commerce-kanal, der kræver en forsendelse af produkter til kunden. Detailhandleren tilbyder to leveringsmåder: Fragt og Luft. Hvis en kunde vælger Fragt-levering, og ordreværdien er mindre end 100 USD, vil detailhandleren kræve et fragtgebyr af kunden på 10,00 USD. Hvis ordreværdien er over 100 USD, og kunden vælger Fragt-levering, opkræves kunden ikke yderligere fragtgebyrer. Hvis kunden vælger leveringsmetoden Luft for alle ordrer, uanset deres samlede værdi, opkræves et fragtgebyr på 20,00 USD.
 
 #### <a name="setup-and-configuration"></a>Installation og konfiguration
 
@@ -133,7 +133,7 @@ På nuværende tidspunkt anvendes gebyrerne på enhver salgslinje, der matcher k
 
 #### <a name="use-case-scenario-description"></a>Beskrivelse af brugsmønsterscenario
 
-En forhandler gør en undtagelse fra typiske processer ved at tilbyde at levere en særlig privat levering af produkter til en kunde, der bestiller produkter i butikken. Forhandleren og kunden har aftalt, at kunden skal betale et gebyr på 25 USD ekstra for håndtering af denne service. Medarbejderen hos forhandleren skal føje dette ekstra gebyr til transaktionen. Da gebyret er et rammeordregebyr og ikke er relateret til et enkelt produkt i ordren, bruges et hovedgebyr.
+En forhandler gør en undtagelse fra typiske processer ved at tilbyde at levere en særlig privat levering af produkter til kunder, der bestiller produkter i butikken. Forhandleren og kunden har aftalt, at kunden skal betale et gebyr på 25 USD ekstra for håndtering af denne service. Medarbejderen hos forhandleren skal føje dette ekstra gebyr til transaktionen. Da gebyret er et rammeordregebyr og ikke er relateret til et enkelt produkt i ordren, bruges et hovedgebyr.
 
 #### <a name="setup-and-configuration"></a>Installation og konfiguration
 
@@ -157,7 +157,7 @@ Denne proces kan anvendes i callcenter ved hjælp af den eksisterende **Tillæg*
 
 #### <a name="use-case-scenario"></a>Brugsmønsterscenario
 
-En kunde har anmodet om, at 2 af 5 varer på salgsordren bliver pakket som gave. Detailhandleren tilbyder denne valgfrie tjeneste for et gebyr på 2,00 USD pr. vare. Medarbejderen hos detailhandleren skal tilføje disse gebyrer til de forskellige varer, som skal pakkes som gave.
+En kunde har anmodet om, at to af fem varer på salgsordren bliver pakket som gave. Detailhandleren tilbyder denne valgfrie tjeneste for et gebyr på 2,00 USD pr. vare. Medarbejderen hos detailhandleren skal tilføje disse gebyrer til de forskellige varer, som skal pakkes som gave.
 
 #### <a name="setup-and-configuration"></a>Installation og konfiguration
 
@@ -173,7 +173,7 @@ Handlingen **Tilføj linjegebyrer** skal være konfigureret i dit [POS-skærmlay
 
 Du kan udføre scenariet i POS-programmet. POS-brugeren opretter salgstransaktionen som sædvanlig og tilføjer produkterne og eventuelle andre konfigurationer til salget. Før opkrævning af betaling, skal brugeren vælge den specifikke linje, hvor gebyret anvendes, fra visningen med POS-varelisten og udføre **Tilføj linjegebyr**-handlingen. Brugeren bliver bedt om at vælge en gebyrkode og angiv værdien af gebyret. Når brugeren har fuldført processen, knyttes gebyret til linjen og føjes til ordretotalen som et gebyr på linjeniveau. Brugeren kan gentage processen for at føje yderligere linjegebyrer til andre varelinjer i posteringen, hvis det er nødvendigt.
 
-Den samme proces kan anvendes i callcenteret ved hjælp af funktionen "Vedligehold gebyrer", som du finder under **Regnskaber**-rullemenuen i **Salgsordrelinjer** sektionen på siden **Salgsordre**. Siden **Vedligehold gebyrer**, hvor brugeren kan tilføje et nyt linjespecifikt gebyr til transaktionen, åbnes.
+Den samme proces kan anvendes i callcenteret ved hjælp af funktionen "Vedligehold gebyrer", som du finder under **Regnskaber**-rullemenuen i **Salgsordrelinjer** sektionen på siden **Salgsordre**. Det åbner siden **Vedligehold gebyrer**, hvor brugeren kan tilføje et nyt linjespecifikt gebyr til transaktionen.
 
 ## <a name="additional-features"></a>Yderligere funktioner
 
@@ -214,4 +214,11 @@ Visse organisationer kan foretrække at vente på, at brugeren er færdig med at
 
 ### <a name="charges-override-reports"></a>Rapporter over gebyrtilsidesættelser
 
-Hvis brugere tilsidesætter de beregnede gebyrer manuelt eller føjer et manuelle gebyr til transaktionen, er disse data tilgængelige til revidering i rapporten **Tilsidesættelseshistorik for gebyr**. Rapporten findes i **Retail og Commerce \> Forespørgsler og rapporter \> Tilsidesættelseshistorik for gebyr**. Det er vigtigt at bemærke, at de data, der skal bruges til denne rapport, importeres fra kanaldatabasen til Headquarters via "P"-distributionsplanlægningsopgaver. Derfor er oplysninger om tilsidesættelser, der netop er udført i POS, muligvis ikke umiddelbart tilgængelige i denne rapport, før dette job har overført butikkens transaktionsdata til Headquarters.
+Hvis brugere tilsidesætter de beregnede gebyrer manuelt eller føjer et manuelle gebyr til transaktionen, vil disse data være tilgængelige til revidering i rapporten **Tilsidesættelseshistorik for gebyr**. Rapporten findes i **Retail og Commerce \> Forespørgsler og rapporter \> Tilsidesættelseshistorik for gebyr**. Det er vigtigt at bemærke, at de data, der skal bruges til denne rapport, importeres fra kanaldatabasen til Headquarters via "P"-distributionsplanlægningsopgaver. Derfor er oplysninger om tilsidesættelser, der netop er udført i POS, muligvis ikke umiddelbart tilgængelige i denne rapport, før dette job har overført butikkens transaktionsdata til Headquarters.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Aktivere og konfigurere automatiske gebyrer efter kanal](auto-charges-by-channel.md)
+
+[Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md)
+

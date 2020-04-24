@@ -2,7 +2,7 @@
 title: Modtagelsesoversigt
 description: Dette emne indeholder oplysninger om funktionen Modtagelsesoversigt. Siden Modtagelsesoversigt er en del af denne funktion og indeholder en oversigt over alle varer, der forventes at ankomme som indgående varer.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 43e49fb6e8deead7c6dfe24a25337aeb35f1fcc0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557563"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212911"
 ---
 # <a name="arrival-overview"></a>Modtagelsesoversigt
 
@@ -73,15 +73,15 @@ Hvis du automatisk vil oprette modtagelseskladder fra siden **Modtagelsesoversig
 
 -   Hvis du angiver værdier i felterne **Lagersted** og **Placering**, anvendes disse værdier på kladdelinjerne. Hvis du ikke angiver værdier, bruges værdierne fra den dimension, der er angivet af lagertransaktionerne.
 
-#### <a name="items-that-are-received-from-one-expected-receipt-order"></a>Varer, der modtages fra én forventet kvitteringsordre
+#### <a name="items-that-are-received-from-one-expected-receipt-order"></a>Varer, der modtages fra én forventet modtagelsesordre
 
-I oversigtspanelet **Tilgange** vælger Claus en linje og klikker derefter på **Start modtagelse**. Alle tilknyttede linjer, der er i det angivne område, og som har et antal at registrere, vælges automatisk. Der genereres en varemodtagelseskladde, der har et match mellem den forventede kvitteringsordre og kladden. Antallet initialiseres automatisk på alle linjer, der oprettes.
+I oversigtspanelet **Tilgange** vælger Claus en linje og klikker derefter på **Start modtagelse**. Alle tilknyttede linjer, der er i det angivne område, og som har et antal at registrere, vælges automatisk. Der genereres en varemodtagelseskladde, der har et match mellem den forventede modtagelsesordre og kladden. Antallet initialiseres automatisk på alle linjer, der oprettes.
 
-#### <a name="items-that-are-received-from-more-than-one-expected-receipt-order"></a>Varer, der modtages fra mere end én forventet kvitteringsordre
+#### <a name="items-that-are-received-from-more-than-one-expected-receipt-order"></a>Varer, der modtages fra mere end én forventet modtagelsesordre
 
-I oversigtspanelet **Tilgange** vælger Claus flere linjer og klikker derefter på **Start modtagelse**. Der genereres en varemodtagelseskladde, der har et match mellem alle forventede kvitteringsordrer og kladden. Alle linjer oprettes i én overskrift til varemodtagelseskladden, og antallet initialiseres automatisk.
+I oversigtspanelet **Tilgange** vælger Claus flere linjer og klikker derefter på **Start modtagelse**. Der genereres en varemodtagelseskladde, der har et match mellem alle forventede modtagelsesordrer og kladden. Alle linjer oprettes i én overskrift til varemodtagelseskladden, og antallet initialiseres automatisk.
 
-### <a name="receive-items-from-one-or-more-expected-receipt-orders"></a>Modtage varer fra én eller flere forventede kvitteringsordrer
+### <a name="receive-items-from-one-or-more-expected-receipt-orders"></a>Modtage varer fra én eller flere forventede modtagelsesordrer
 
 #### <a name="view-information"></a>Vis oplysninger
 
@@ -95,7 +95,7 @@ For at få et overblik over forventede tilgange i et datointerval angiver Claus 
 
 Claus kan se følgende oplysninger:
 
--   Alle relaterede kvitteringsordrer for systemdatoen og et ubegrænset antal dage tilbage fra den (**InventTrans.StatusDate**-intervallet) og tilgange til lagersteder GL og HL uanset status.
+-   Alle relaterede modtagelsesordrer for systemdatoen og et ubegrænset antal dage tilbage fra den (**InventTrans.StatusDate**-intervallet) og tilgange til lagersteder GL og HL uanset status.
 -   Detaljerede linjeoplysninger for mere end én ordre. Claus kan vælge flere overskriftslinjer i oversigten og derefter klikke på **Vis alle valgte** for at få vist alle de tilsvarende linjedetaljer for alle valgte ordrer.
 -   Oplysninger om en bestemt indkøbsordre. For kun at få vist oplysninger, der er knyttet til et bestemt referencenummer i oversigten, kan Claus angive et kontonummer i feltet **Kontonummer** og et ordrenummer i feltet **Referencenummer**.
 -   Der er oprettet en oversigt over de registreringsopgaver, der forfalder for de ordrelinjer, der er har en varemodtagelseskladde, men den endnu ikke er blevet bogført. For at få vist disse oplysninger kan Claus vælge **Igangværende** i feltet **Vis linjer**.

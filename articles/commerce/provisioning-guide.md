@@ -3,7 +3,7 @@ title: Klargøre et Dynamics 365 Commerce-prøveversionsmiljø
 description: I dette emne beskrives det, hvordan du klargør et Microsoft Dynamics 365 Commerce-prøveversionsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024630"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254742"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Klargøre et Dynamics 365 Commerce-prøveversionsmiljø
 
@@ -234,8 +234,6 @@ Følg disse trin for at påbegynde e-Commerce.
 ## <a name="commerce-preview-environment-support"></a>Support til Commerce-prøveversionsmiljøet
 
 Hvis der opstår problemer under din fuldførelse af klargøringstrinnene, kan du gå til [Microsoft Dynamics 365 Commerce-prøveversionens Yammer-gruppe](https://aka.ms/Dynamics365CommercePreviewYammer) for at få hjælp.
-
-Hvis du oplever problemer, når du forsøger at få adgang til Yammer-gruppen, kan du kontakte Microsoft via e-mail på <Dynamics365Commerce@microsoft.com>. Denne e-mailadresse overvåges ikke aktivt. Du skal derfor regne med, at svaret vil blive forsinket.
 
 ## <a name="next-steps"></a>Næste trin
 

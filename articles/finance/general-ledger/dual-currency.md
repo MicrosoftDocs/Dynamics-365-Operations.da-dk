@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 580f0c885373006cb9cd955a61c41704a2ac9a94
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186687"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249005"
 ---
 # <a name="dual-currency"></a>Dobbelt valuta
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Funktioner, der blev introduceret i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) giver mulighed for at bruge rapporteringsvalutaen til andre formål og som endnu en regnskabsvaluta. Denne funktion kaldes *dobbelt valuta*. Ændringerne i forbindelse med den dobbelte valuta kan ikke deaktiveres via en konfigurationsnøgle eller parameter. Da rapporteringsvalutaen bruges som en ekstra regnskabsvaluta, er den måde, som rapporteringsvalutaen beregnes i bogføringslogikken, blevet ændret.
 

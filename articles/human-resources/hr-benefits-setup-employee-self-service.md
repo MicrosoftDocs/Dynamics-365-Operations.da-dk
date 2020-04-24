@@ -3,7 +3,7 @@ title: Konfigurere medarbejderselvbetjening
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,40 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17918fc7b894929c92c54b59b7440ab8aef980bd
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: dbbcb10f1d14088435248c3354ac153b23e5f8d7
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092654"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229803"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere medarbejderselvbetjening
 
-[!include [banner](includes/preview-feature.md)]
-
-I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening. Frynsegodeplansfelter sender brugere videre til frynsegodeplaner som de er berettiget til at tilmelde sig.
-
-## <a name="set-up-a-role-center-tile"></a>Oprette et felt i et rollebaseret område
-
-1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Parametre for medarbejdsselvbetjening** under **Konfiguration**.
-
-2. Vælg fanen **Opsætning af rollebaseret område**, og vælg derefter **Ny**.
-
-3. Angiv værdier for følgende felter:
-
-   | Felt | Beskrivelse |
-   | --- | --- |
-   | Felt-id | Entydigt id for feltet. |
-   | Feltlabeltekst | Den tekst, der vises for feltet på selvbetjening. |
-   | Beskrivelse | En beskrivelse af feltet. |
-   | Internetadresse | Angiv URL-adressen på siden med medarbejderselvbetjening. |
-   | Feltstørrelse | Feltets størrelse: lille, mellem eller stor. |
-   | Destination | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
-   | Feltbaggrundsbillede | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
-   | Igangsætning | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
-   | End | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
-
-4. Vælg **Gem**.
+I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening. Frynsegodeplansfelter sender brugere videre til frynsegodeplaner, som de er berettiget til.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Konfigurere et felt til frynsegodeplaner
 
@@ -63,15 +39,15 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Felt-id | Entydigt id for feltet. |
-   | Feltlabeltekst | Den tekst, der vises for feltet på selvbetjening. |
-   | Beskrivelse | En beskrivelse af feltet. |
-   | Internetadresse | Angiv URL-adressen på siden med medarbejderselvbetjening. |
-   | Feltstørrelse | Feltets størrelse: lille, mellem eller stor. |
-   | Destination | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
-   | Feltbaggrundsbillede | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
-   | Igangsætning | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
-   | End | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
+   | **Felt-id** | Entydigt id for feltet. |
+   | **Feltlabeltekst** | Den tekst, der vises for feltet på selvbetjening. |
+   | **Beskrivelse** | En beskrivelse af feltet. |
+   | **Internetadresse** | Angiv URL-adressen på siden med medarbejderselvbetjening. |
+   | **Feltstørrelse** | Feltets størrelse: lille, mellem eller stor. |
+   | **Destination** | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
+   | **Feltbaggrundsbillede** | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
+   | **Igangsætning** | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
+   | **End** | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
 
 4. Vælg **Gem**.
 
@@ -85,14 +61,14 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Felt-id | Entydigt id for feltet. |
-   | Feltlabeltekst | Den tekst, der vises for feltet på selvbetjening. |
-   | Beskrivelse | En beskrivelse af feltet. |
-   | Internetadresse | Angiv URL-adressen på siden med medarbejderselvbetjening. |
-   | Feltstørrelse | Feltets størrelse: lille, mellem eller stor. |
-   | Destination | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
-   | Feltbaggrundsbillede | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
-   | Igangsætning | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
-   | End | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
+   | **Felt-id** | Entydigt id for feltet. |
+   | **Feltlabeltekst** | Den tekst, der vises for feltet Selvbetjening. |
+   | **Beskrivelse** | En beskrivelse af feltet. |
+   | **Internetadresse** | Angiv URL-adressen på siden med medarbejderselvbetjening. |
+   | **Feltstørrelse** | Feltets størrelse: lille, mellem eller stor. |
+   | **Destination** | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
+   | **Feltbaggrundsbillede** | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
+   | **Igangsætning** | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
+   | **End** | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
 
 4. Vælg **Gem**.

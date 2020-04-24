@@ -3,7 +3,7 @@ title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f35ab4b3ad49edfd0b68f906f44b8a2b04787f1a
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: 6e403e3d18aec616d0c569b16ba77eaefdf4b0ea
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161799"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262620"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -51,8 +51,11 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 |      Brasilien         |   2020. januar       | 10.0.8      |   Supplerende oplysninger om ICMS-ST    |
 |      Brasilien         |   Marts 2020 - januar 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
 |      Brasilien         |   Marts 2020 - januar 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Forordning SEF Nº 343DR   |
+|      Brasilien         |   Maj 2020 – marts 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD-layout 8   |
+|      Brasilien         |   Maj 2020 – April 2020      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Teknisk note NT 2019.001 v 1.40   |
 |      Frankrig         |   2020. april       | 10.0.10      |   Juridisk gebyr-opgørelse til skattemyndigheder for selvstændige erhvervsfolk (DAS2)    |
 |      Frankrig         |   2020. marts       | 10.0.9      |   Fransk lokalisering: ISO 20022-format til international betaling og likviditetsoverførsel    |
+|      Ungarn         |   Maj 2020 – marts 2020       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online faktureringssystem v. 2.0 på Finance and Operations    |
 |      Indien         |   2020. marts      | 10.0.9      |   Nyt GSTR (ANX-1 & ANX-2) offline-værktøj for returnering    |
 |      Italien         |   2020. januar      | 10.0.8      |   Ændringer i momsstyring efter D.L. 119 af 23. okt. 2018: årlig momsindberetning    |
 |      Italien         |   2020. marts      | 10.0.9, 10.0.8HF      |   Detail - Administrere kundeoplysninger i POS |
@@ -68,6 +71,9 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 |      Polen          |   Marts 2020 - januar 2020     | 10.0.9, 10.0.8HF     |   Detail - Udskrive kundeoplysninger i regnskabskvittering |
 |      Polen          |   Marts 2020 - januar 2020     | 10.0.9, 10.0.8     |   SAF-fakturaer (JPK_FA) v.3 fra 2. december 2019 |
 |      Polen          |   April 2020 - januar 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK erstatter JPK_VAT (SAF-moms) |
+|      Polen          |   Maj 2020     | 10.0.11     |   Beløb for delt AP/AR-realiseret kursdifference i valutadifferencer for fakturaernes nettoværdi og momsbeløb  |
+|      Polen          |   Maj 2020     | 10.0.11     |   SAF-regnskabsbøger – Forbedringer af filtrering af posteringslag |
+|      Polen          |   Maj 2020     | 10.0.11     |   JPK_VDEK supplerende pakke I |
 |      Rusland          |   2020. marts     | 10.0.9     |   Format af ejendomsskatteopgørelsen for rapportering i 2019 |
 |      Rusland          |   2020. marts     | 10.0.9     |   Opdaterede formater for opgørelse til skat af overskud |
 |      Singapore           |   2020. januar     | 10.0.8      |   GST-returneringsrapport |

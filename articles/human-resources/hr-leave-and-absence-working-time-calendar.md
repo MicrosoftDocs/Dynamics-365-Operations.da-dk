@@ -3,7 +3,7 @@ title: Oprette en arbejdstidskalender
 description: Definer en arbejdstidskalender, feriedage og ikke-arbejdstider i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 641f66c75875cfba51af3753223a070d7cb7dc50
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: dc209b62836011b18362f78b63cdd3fcda884dc3
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008525"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198021"
 ---
 # <a name="create-a-working-time-calendar"></a>Oprette en arbejdstidskalender
 
@@ -68,10 +68,6 @@ Du kan tilføje eller ændre fritid separat fra en arbejdstidskalender.
 1. Vælg **Fritid** på siden **Organisationsadministration**.
 
 2. Vælg **Ny**, og angiv navnet og tidsintervallet for fritiden.
-
-## <a name="leave-and-absence-preview-feature"></a>Prøvefunktion for orlov og fravær
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 Hvis du har aktiveret prøvefunktionen til korrektion af helligdage i orlov og fravær, bruger Personale helligdage og lukningsdatoer til at bestemme det antal dage, der skal reguleres for medarbejdere, der er tilmeldt i kalenderen.
 

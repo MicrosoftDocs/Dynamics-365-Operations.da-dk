@@ -2,14 +2,14 @@
 title: Disponibelt lager i arbejdsområde til mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet Disponibelt lager på mobilenheder. I dette arbejdsområde på mobilenheder kan du få indblik i reserveret og tilgængelig lagerplads, når som helst og hvor som helst på mobilenheden.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: f4f6de139d0399263fa19507d63e9521f489dcbd
-ms.sourcegitcommit: 38ce9f4ef499ad208f2fbbc51bc21b12c67dfa16
+ms.openlocfilehash: 4a41f877816e331351a0950dcdc07ee07f643beb
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2574793"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212727"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Disponibelt lager i arbejdsområde til mobilenheder
 
@@ -96,7 +96,7 @@ Hvis Platform update 3 eller nyere er implementeret for organisationen, skal sys
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Download og installer Finance and Operations-mobilappen:
+Sådan downloades og installeres Finance and Operations-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

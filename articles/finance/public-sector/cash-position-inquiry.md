@@ -16,17 +16,15 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 450b59290eea6bf7460d4b239341203c13f2d1ba
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 0f08f5af1617c2d69c2ed025b6716546b59e8a85
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2659038"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249079"
 ---
 # <a name="cash-position-inquiry"></a>Forespørgsel på likviditet
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Med forespørgslen **Likviditet** kan du fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner. I forespørgslen vises startkassesaldoen og resultatet af tilførte kasseboner, subtraktion af kontante udbetalinger og subtraktion af overførsler mellem fonde for at komme til en slutsaldo. Derefter trækkes de generelle budgetreservationer, behæftelser eller budgetreservationer fra slutsaldoen for at få en ikke-behæftet saldo.
 

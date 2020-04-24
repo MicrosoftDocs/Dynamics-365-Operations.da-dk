@@ -3,7 +3,7 @@ title: Oversigt over styring af forretningsdokumenter
 description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til styring af forretningsdokumenter i ER-strukturen.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117331"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258551"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -248,9 +248,18 @@ Benyt følgende fremgangsmåde for at redigere skabeloner til fritekstfakturaer 
 1. Log på som bruger med adgang til arbejdsområdet til styring af forretningsdokumenter.
 2. Åbn arbejdsområdet til styring af forretningsdokumenter.
 
+Når funktionen **Office-lignende brugergrænsefladeoplevelse for styring af forretningsdokumenter** er slået fra i arbejdsområdet **Funktionsstyring**, viser hovedgitteret i arbejdsområdet **Styring af forretningsdokumenter** følgende skabeloner:
+
+- Skabeloner, som ejes af din ER-konfigurationsleverandør (dvs. den udbyder, der aktuelt er markeret som aktiv i arbejdsområdet **Elektronisk rapportering**). Når du har valgt en af disse skabeloner, kan du vælge **Rediger skabelon** for at starte eller fortsætte med at redigere den.
+- Skabeloner, der ejes af andre ER-konfigurationsudbydere. Når du har valgt en af disse skabeloner, kan du vælge **Nyt dokument** for at oprette en kopi af det, der ejes af din ER-konfigurationsudbyder, og derefter begynde at redigere kopien.
+
 ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate1.png)
 
 Fanen **Skabelon** viser indholdet af den valgte skabelon. Vælg fanen **Detaljer** for at få vist oplysninger om den valgte skabelon samt detaljer om en ER-formatkonfiguration, som denne skabelon er placeret i. Bemærk, at alle skabelonerne har statussen **Udgivet**og ikke indeholder nogen detaljer i kolonnen **Revision**. Det betyder, at disse skabeloner ikke redigeres i øjeblikket.
+
+Når funktionen **Office-lignende brugergrænsefladeoplevelse for styring af forretningsdokumenter** er slået til i **Funktionsstyring**, viser hovedgitteret i arbejdsområdet **Styring af forretningsdokumenter** skabeloner, der ejes af din ER-konfigurationsudbyder (dvs. den udbyder, der aktuelt er markeret som aktiv i arbejdsområdet **Elektronisk rapportering**). Når du har valgt en af disse skabeloner, kan du vælge **Rediger skabelon** for at starte eller fortsætte med at redigere den.
+
+Hvis du vil arbejde med skabeloner, der ejes af andre ER-konfigurationsudbydere, skal du vælge **Nyt dokument** for at oprette en kopi af den skabelon, der ejes af din ER-udbyder. Du kan derefter starte med at redigere kopier. Du kan få flere oplysninger i [Brugergrænseflade for nyt dokument i styring af forretningsdokumenter](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Starte redigering af skabeloner, der ejes af din konfigurationsudbyder
 

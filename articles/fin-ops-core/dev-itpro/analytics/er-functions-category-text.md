@@ -3,7 +3,7 @@ title: Liste over ER-funktioner i kategorien tekst
 description: Dette emne indeholder oplysninger om tekstfunktionerne, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916608"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201083"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funktioner i kategorien tekst
 
@@ -52,7 +52,7 @@ Tekstfunktioner til elektronisk rapportering (ER) kan bruges til at udføre hand
 | [Erstatte](er-functions-text-replace.md) | Denne funktion returnerer den angivne tekststreng som en *Streng*-værdi, efter at hele eller en del af den er blevet erstattet med en anden streng. |
 | [Højre](er-functions-text-right.md) | Denne funktion returnerer en *Streng*-værdi, som repræsenterer det angivne antal tegn i slutningen af den angivne streng. |
 | [Tekst](er-functions-text-text.md) | Denne funktion returnerer det angivne tal som en *Streng*-værdi, efter at det er blevet konverteret til en tekststreng, der er formateret i henhold til indstillingerne for serverens landestandard for den aktuelle forekomst. |
-| [Oversæt](er-functions-text-translate.md) | Denne funktion returnerer den angivne tekststreng som en *Streng*-værdi, efter at hele eller en del af den er blevet erstattet med en anden streng. |
+| [Oversæt](er-functions-text-translate.md) | Denne funktion returnerer en *Streng*-værdi, der indeholder resultatet af erstatningen af den angivne tekst i tegn for et andet angivet sæt tegn. |
 | [Trim](er-functions-text-trim.md) | Denne funktion returnerer den angivne streng som en *Streng*-værdi, når foranstillede og efterstillede mellemrum er blevet afkortet, og flere mellemrum mellem ord er blevet fjernet. |
 | [Øverste](er-functions-text-upper.md) | Denne funktion returnerer den angivne tekststreng som en *Streng*-værdi, når den er konverteret til store bogstaver. |
 

@@ -1,9 +1,9 @@
 ---
 title: Overblik
-description: Arbejdsområdet **Orlov og fravær** i Dynamics 365 Human Resources giver en fleksibel struktur til oprettelse af nye orlovsplaner, arbejdsgange til administration af anmodninger og en intuitiv selvbetjeningsside, hvor medarbejdere kan anmode om fritid.
+description: I Dynamics 365 Human Resources giver arbejdsområdet Orlov og fravær en fleksibel struktur til oprettelse af nye orlovsplaner, arbejdsgange til administration af anmodninger og en intuitiv selvbetjeningsside, hvor medarbejdere kan anmode om fritid.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091742"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226224"
 ---
 # <a name="overview"></a>Overblik
 
@@ -31,7 +31,7 @@ Dynamics 365 Human Resources hjælper dig med at give medarbejderne store orlovs
 
 ## <a name="set-up-leave-and-absence"></a>Konfigurere orlov og fravær
 
-Før du kan oprette orlovsplaner for dine medarbejdere, skal du udføre et par opsætningstrin:
+Før du opretter orlovsplaner for dine medarbejdere, skal du udføre et par opsætningstrin:
 
 - [Konfigurere parametre for orlov og fravær](hr-leave-and-absence-parameters.md)
 - [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
@@ -51,31 +51,35 @@ Før du opretter orlovsplaner for medarbejderne, skal du oprette orlovs- og frav
 
 Dine medarbejdere kan sende anmodninger om fritid, og du kan administrere dem i arbejdsområdet **Medarbejderselvbetjening**.
 
-- [Anmode om fridag](hr-employee-self-service-request-time-off.md)
+- [Anmod om fridag](hr-employee-self-service-request-time-off.md)
 - [Administrere anmodninger om orlov og fravær](hr-employee-self-service-manage-requests.md)
+
+## <a name="leave-and-absence-known-issues"></a>Kendte problemer ved Orlov og fravær
+
+### <a name="rounding-precision"></a>Afrundingspræcision
+
+Du kan ikke indstille **Afrundingspræcision**, når du indstiller **Afrundingstype**. Du kan kun indstille **Afrundingspræcision** vha. enheden **Orlov- og fraværstype** . 
+
+1. Fra **Orlovs- og fraværstyper** skal du vælge **Åbn i Excel** for at åbne objektet **Orlov og fraværstype**.
+
+2. Når filen er åbnet og er aktiveret, skal du vælge **Design**.
+
+3. Vælg blyanten for at redigere i tabellen **Orlovs- og fraværstype**.
+
+4. Vælg **Afrundingspræcision** og **Afrundingstype**, og vælg derefter **Tilføj** for at føje til listen over felter.
+
+5. Vælg **Opdater**, og vælg derefter **Udført**.
+
+6. Angiv eller vælg **Afrundingstype** for hver orlovstype, hvis de ikke allerede er angivet. 
+
+7. Angiv **Afrundingspræcisionen** for de relevante typer.
+
+8. Vælg **Udgiv** for at sende ændringerne til Human Resources.
 
 ## <a name="leave-and-absence-preview-features"></a>Visningsfunktioner for orlov og fravær
 
-Du kan afprøve nye visningsfunktioner for orlov og fravær i et **sandkasse**-miljø. Du kan finde oplysninger om aktivering af visningsfunktioner under [Administrere funktioner](hr-admin-manage-features.md). Visningsfunktionerne omfatter:
+Du kan afprøve nye visningsfunktioner for orlov og fravær i et **sandkasse**-miljø. Du kan få oplysninger om aktivering af visningsfunktioner under [Administrere funktioner](hr-admin-manage-features.md). Visningsfunktionerne omfatter:
 
-- **Orlovs- og fraværskalender** – Orlovs- og fraværsparametre flyttes fra **Personaleparametre** til en ny skærm kaldet **Orlovs- og fraværsparametre**. Den nye skærm indeholder en ny fane **Kalender**. Denne forhåndsvisning aktiverer kun et undersæt af parametrene. Du kan få adgang til den nye skærm fra fanen **Links** i arbejdsområdet **Orlov og fravær**. Kalenderne omfatter:
-  - **Firmakalender** – viser alle anmodninger om medarbejderfridage. Personer med rollen **Personale** kan få adgang til denne kalender fra fanen **Links** i arbejdsområdet **Orlov og fravær**.
-  - **Kalender for lederteam** – viser alle anmodninger om fridage i direkte rapporter. Ledere kan få adgang til kalenderen fra fanen **Mit team** i Medarbejderselvbetjening under **Orlov og fravær**. 
+- **Orlovssuspension** – Du kan afbryde orlov og fravær i personale for en medarbejder. Når du suspendere orlov, stoppes orloven for de valgte orlovstyper. Hvis suspensionen finder sted, når der foretages en periodisering, opretter suspensionen en forholdsmæssig justering til medarbejderens orlov. 
 
-- **Feriekalendere for orlov og fravær** – Orlovstyper omfatter en ny indstilling, **Ferie**, der bruges sammen med arbejdstidskalenderen. Dage, der er defineret af helligdage og lukninger, er nu angivet som **Ferie**, når der genereres arbejdsdage. Når periodiseringer behandles, foretages der reguleringer af medarbejdere, der er tildelt til kalenderen, for at tage højde for helligdage, der ligger på en arbejdsdag.
-
-- **Revision af orlovsperiodisering** – En ny skærm giver dig mulighed for at se, hvornår periodiseringer er behandlet og slettet, både af alle medarbejdere og individuelle medarbejdere. Du kan få adgang til denne nye skærm fra fanen **Links** i arbejdsområdet **Orlov og fravær**.
-
-- **Sletning af orlovsperiodisering** – Du kan nu slette periodiseringsposter for bestemte orlovsplaner. Du kan få adgang til denne nye indstilling fra fanen **Links** i arbejdsområdet **Orlov og fravær**. For de enkelte medarbejdere vises denne indstilling i **Orlov og fravær**-grupperingen i medarbejderprofilen. 
-
-- **Afrunding af orlovsperiodisering** – Nye indstillinger for **Orlovstype** definerer, hvilken type afrundingsperiodisering der skal bruges, plus decimalpræcisionen i afrunding under periodiseringsprocessen. Når periodiseringer behandles, anvendes afrundingen og præcisionen til periodiseringsposterne. 
-
-- **Konfigurer flere orlovstyper i en enkelt orlovsplan** – En ny kolonne i orlovsperiodiseringtidsplanen for orlovstyper giver dig mulighed for at definere flere orlovstyper i en orlovs- og fraværsplan med forskellige periodiseringstidsplaner. Det tidligere felt **Orlovstype** er fjernet. I medarbejderens tilmelding vises saldi for orlovstyperne nu i en tabel i stedet for øverst på skærmen.
-
-  > [!IMPORTANT]
-  > Du kan ikke deaktivere denne funktion, når du har aktiveret den.
-
-- **Brug en medarbejders fuldtidsækvivalent for periodisering**– En ny kolonne i orlovsperiodiseringtidsplanen gør det muligt at bruge fuldtidsækvivalent til periodisering. Når periodiseringer behandles, bruger programmet medarbejderens primære stilling og den angivne fuldtidsækvivalent til at fastlægge det forholdsmæssige periodiseringsbeløb.
-
-  > [!NOTE]
-  > Denne funktion er kun tilgængelig, hvis du aktiverer **Konfigurer flere orlovstyper i en enkelt orlovsplan**. 
+- **Overføre regler** – Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringer overføres. Hvis en medarbejder f.eks. overfører 10 dage, kan du vælge en anden orlovstype for disse 10 dage. 

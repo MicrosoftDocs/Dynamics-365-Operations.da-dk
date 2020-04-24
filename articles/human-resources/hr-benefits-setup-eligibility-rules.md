@@ -3,7 +3,7 @@ title: Konfigurere berettigelsesregler og -indstillinger
 description: Angiv berettigelsesregler og -indstillinger i Frynsegodeadministration i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008549"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229895"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger
-
-[!include [banner](includes/preview-feature.md)]
 
 Når du har konfigureret de nødvendige parametre for Frynsegodeadministration i Microsoft Dynamics 365 Human Resources, kan du oprette berettigelsesregler, bundter, perioder og programmer, som du vil knytte til dine frynsegodeplaner.
 
@@ -57,6 +55,7 @@ Under åben tilmelding kan medarbejdere vælge frynsegodeplaner. Hvis de bliver 
    | **Ansættelseskategori** | Medarbejderens ansættelseskategori, hvis **Brug ansættelseskategori** er angivet til **Ja**. |
    | **Brug ny ansættelsesregel** | Angiver, om der skal bruges en nyansats nye ansættelsesperiode som en del af berettigelsesreglen for frynsegoder. |
    | **Tilmeldingsperiode** | Den tidsperiode, hvor tilmelding for den nye ansættelse er tilladt. Hvis du også angiver dette i parametre, tilsidesætter parameterindstillingen dette. |
+   | **Brug tidligere ansættelsesstatus** | Angiver, om en medarbejders tidligere ansættelsesstatus er del af reglen for frynsegodeberettigelse. Du kan f.eks. angive en berettigelsesregel, der frafalder en forsikrings venteperiode for alle medarbejdere, som er overgået fra statussen **Afskediget** til **Ansat** inden for 90 dage efter den tidligere ansættelse. |
 
 4. Under **Yderligere kriterier** skal du vælge følgende indstillinger og tilføje oplysninger efter behov:
 

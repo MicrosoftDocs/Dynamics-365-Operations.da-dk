@@ -3,7 +3,7 @@ title: Angive parametre for administration af frynsegoder
 description: Konfigurere parametre for administration af frynsegoder i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008495"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229757"
 ---
-# <a name="set-benefits-management-parameters"></a>Angive parametre for administration af frynsegoder
-
-[!include [banner](includes/preview-feature.md)]
+# <a name="set-benefits-management-parameters"></a>Angive parametre til administration af frynsegoder
 
 Før du kan oprette orlovsplaner i Microsoft Dynamics 365 Human Resources, skal du konfigurere parametre for administration af frynsegoder. Disse parametre angiver standardværdier, årsagskoder og andre indstillinger.
 
@@ -47,7 +45,6 @@ Før du kan oprette orlovsplaner i Microsoft Dynamics 365 Human Resources, skal 
    | **Årsagskode for satsændring** | Den årsagskode, der skal bruges, når en medarbejders frynsegodeplan annulleres og genåbnes under behandlingen af opdateret satsændring. Den angiver, hvilke poster der er ændret af opdateringsprocessen for satsændringen. |
    | **Ny ansættelse berettiget** | Angiver, om nyansatte er berettigede. |
    | **Periode for tilmelding af nyansat** | Den tidsperiode, hvor tilmelding for den nyansatte er tilladt.</br></br>**Bemærk** Denne indstilling tilsidesætter en eventuel tilmeldingsperiode for nyansatte, som du angiver for berettigelsesreglen for planen. | 
-   | **Forbedring af årlig løn** | Angiver, om beløbet for **Årlig frynsegodeløn** automatisk skal beregnes i **Oplysninger om medarbejders frynsegoder**. Det er baseret på medarbejderens **Lønssats for fast kompensation**, **Gennemsnitligt antal timer** og **Betalingsfrekvens**.</br></br>**Gennemsnitligt antal timer** x **Fast lønsats** x **Betalingsfrekvens** (antal lønperioder) = **Årlig frynsegodeløn** </br></br>Hvis nogen af værdierne i felterne **Gennemsnitligt antal timer**, **Lønsats for fast kompensation** eller **Betalingsfrekvens** ændres, genberegnes beløbet for medarbejderens **Årlige frynsegodeløn** automatisk på basis af de ændrede værdier. Systemet opretter en **Gyldig fra**-post for at identificere den nøjagtige dato og det nøjagtige klokkeslæt, hvor ændringen fandt sted. Du kan eventuelt redigere beløbet for **Årlig frynsegodeløn** manuelt. |
    | **Livshændelser er aktiveret** | Aktiverer levetidshændelser. |
    | **Skjul formularer for ældre frynsegoder** | Giver dig mulighed for at skjule ældre frynsegodeformularer. |
 

@@ -3,7 +3,7 @@ title: Årsafslutning
 description: Dette emne beskriver den krævede konfiguration og trinnene for at køre årsafslutningsprocessen i Finans.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175340"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259765"
 ---
 # <a name="year-end-close"></a>Årsafslutning
 
@@ -74,7 +74,7 @@ Indstillingen **Overfør balancedimensioner** bruges til at definere, om de øko
 Årsafslutningsprocessen overholder ikke kontostrukturer. Dette skyldes, at kontostrukturer kan ændres i løbet af et regnskabsår, og det er ikke altid muligt at identificere relevante kontostruktur på grund af disse ændringer.  Når der oprettes primoposteringer, fremføres saldi med økonomiske dimensioner som defineret i skabelonen til årsafslutning. Primosaldiposter kan omfatte økonomiske dimensioner, der ikke længere er i den aktuelle kontostruktur og segmentkombinationer, der ikke længere er gyldige i den aktuelle kontostruktur. Hvis din virksomhed ønsker at udelukke en økonomisk dimension for primosaldoen for overført overskud, skal den økonomiske dimension angives til **Luk et enkelt**, og dimensionsværdien skal være tom.
 
 ## <a name="run-the-year-end-close-process"></a>Kør årsafslutningsprocessen
-Når årsafslutningsskabelonerne er oprettet, startes årsafslutningsprocessen ved at vælge **Kør regnskabsår** i handlingsruden. Vælg enten alle eller et undersæt af juridiske enheder fra den skabelon, som årsafslutningen skal køres for. Når du kører årsafslutningen for første gang i et regnskabsår, vil du sandsynligvis vælge alle de juridiske enheder for at oprette primosaldi for alle juridiske enheder. Hvis du kører årsafslutningen igen, kan du vælge at køre processen kun for de juridiske enheder, hvor reguleringsposteringer blev bogført. 
+Når årsafslutningsskabelonerne er oprettet, startes årsafslutningsprocessen ved at vælge **Kør regnskabsafslutning** i handlingsruden. Vælg enten alle eller et undersæt af juridiske enheder fra den skabelon, som årsafslutningen skal køres for. Når du kører årsafslutningen for første gang i et regnskabsår, vil du sandsynligvis vælge alle de juridiske enheder for at oprette primosaldi for alle juridiske enheder. Hvis du kører årsafslutningen igen, kan du vælge at køre processen kun for de juridiske enheder, hvor reguleringsposteringer blev bogført. 
 
 Vælg det regnskabsår, du vil køre årsafslutningen for. Hvis der findes mere end én ultimoperiode for den sidste periode i regnskabsåret, bliver feltet **Periodenavn** tilgængeligt, så du kan vælge, hvilken ultimoperiode ultimoposteringen skal bogføres i, hvis opsætningen er defineret til at oprette ultimoposteringen. 
 

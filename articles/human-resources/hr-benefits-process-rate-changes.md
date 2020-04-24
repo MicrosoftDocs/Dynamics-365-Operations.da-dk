@@ -3,7 +3,7 @@ title: Behandle satsændringer
 description: Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources, når en ny eller eksisterende frynsegodeplan har en ændring i indstillingerne for berettigelsesregler.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9ebe5cfc2bdf7790770d27ece2dc67f7677db593
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 850709480326f6a0871f19ea1bb287631cd58b42
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008445"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229928"
 ---
 # <a name="process-rate-changes"></a>Behandle satsændringer
-
-[!include [banner](includes/preview-feature.md)]
 
 Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources, når en ny eller eksisterende frynsegodeplan har en ændring i indstillingerne for berettigelsesregler. Hvis der oprettes en ny berettigelsesregel, som tildeles til planen, bliver systemet bedt om at køre medarbejderberettigelse igen for at kontrollere, om arbejdere nu er berettiget til planen baseret på nye indstillinger for berettigelse. 
 
@@ -37,7 +35,7 @@ Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources,
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Tilmeldingsperiode | Den tilmeldingsperiode, som satsændringer skal behandles for. |
+   | **Tilmeldingsperiode** | Den tilmeldingsperiode, som satsændringer skal behandles for. |
 
 3. Hvis du vil køre processen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 

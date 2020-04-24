@@ -1,8 +1,8 @@
 ---
 title: Produktkvittering sammenlignet med indkøbsordrer
 description: I dette emne beskrives de forskellige indstillinger for registrering af produkter som modtaget.
-author: FrankDahl
-manager: AnnBe
+author: mkirknel
+manager: tfehr
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: ''
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f39ce63b6d9d57e245fbdce27bd11a8cbc3eebf
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 5868b9ef02bdbca33c9e155af3bf7540f0522f86
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813403"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208034"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produktkvittering sammenlignet med indkøbsordrer
 
@@ -42,7 +42,7 @@ Produktregistrering sker ofte ved modtagelsesområdet på et lagersted. Den udf�
 Produkter, der modtages på et lagersted, kan passere gennem kvalitetskontrol, før de lægges på lager. Enten kvalitetsordrer eller karantæneordrer kan bruges til at udføre kvalitetskontrol. Hvis der bruges kvalitetsordrer, kan du konfigurere processen for midlertidigt at blokere produkter via en reservation, mens de undersøges. Hvis der bruges karantæneordrer, flyttes produkter til et andet lagersted til inspektion. Dette lagersted er kendt som karantænelagerstedet. I begge kvalitetsinspektionsprocesser kan nogle af varerne kasseres, enten fordi de ikke lever op til kvalitetsforventningerne, eller fordi kvalitetsinspektionen indebærer destruktive test af en stikprøve af produktet.
 
 ## <a name="product-receipt"></a>Produktkvittering
-Oftest bruges handlingen **Produktkvittering** på siden **Indkøbsordrer** til at markere produkter som **Modtaget** på indkøbsordren. Siden **Konterer produktkvittering** har forskellige indstillinger for det antal, der er bogført som modtaget. For eksempel kan du indstille feltet **Antal** til **Bestilt antal** eller **Antal til modtagelse nu**. Alternativt, hvis der er brugt en lagersteds-modtagelsesproces, skal du ofte indstille feltet til **Registreret antal**. Du kan ændre antallet på hver ordrelinje, der skal markeres som **Modtaget**, for at tage højde for eventuelle uoverensstemmelser, som f.eks. underlevering og overlevering. Under produktmodtagelsen skal du angive et produktmodtagelses-id, som typisk er en reference til følgesedlen fra leverandøren. Dette id er påkrævet ved regnskabsføring, fordi det giver mulighed for kontrol eller revision af leverandørens følgesedler i forhold til, hvad der er modtaget, og de tilskrevne lager eller udgifter.  
+Oftest bruges handlingen **Produktkvittering** på siden **Indkøbsordrer** til at markere produkter som **Modtaget** på indkøbsordren. Siden **Konterer produktkvittering** har forskellige indstillinger for det antal, der er bogført som modtaget. For eksempel kan du indstille feltet **Antal** til **Bestilt antal** eller **Antal til modtagelse nu**. Alternativt, hvis der er brugt en lagersteds-modtagelsesproces, skal du ofte indstille feltet til **Registreret antal**. Du kan ændre antallet på hver ordrelinje, der skal markeres som **Modtaget**, for at tage højde for eventuelle uoverensstemmelser, som f.eks. underlevering og overlevering. Under produktkvitteringen skal du angive et produktkvitterings-id, som typisk er en reference til følgesedlen fra leverandøren. Dette id er påkrævet ved regnskabsføring, fordi det giver mulighed for kontrol eller revision af leverandørens følgesedler i forhold til, hvad der er modtaget, og de tilskrevne lager eller udgifter.  
 
 IO'er kan oprettes for produkter, der ikke er beregnet som lager, men betragtes som en udgift. Denne kategori omfatter ordrelinjer, hvor produkterne er markeret som **Ikke på lager** af deres lagermodelgruppe, og også linjer, der bruger indkøbskategorier. Varerne kan i så fald ikke passere gennem registrering ved ankomst og modtagelse på lagerstedet. I stedet for bruges handlingen **Produktkvittering** til at registrere modtagelsen direkte på indkøbsordren, og modtagelsen baseres på det bestilte antal og ikke et registreret antal.  
 

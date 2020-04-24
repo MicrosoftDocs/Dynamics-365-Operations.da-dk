@@ -3,7 +3,7 @@ title: Behandle livshændelser
 description: Under hele medarbejderens livscyklus i Microsoft Dynamics 365 Human Resources, kan de enkelte medarbejdere opleve forskellige ændringer i livshændelser.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008498"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229919"
 ---
 # <a name="process-life-events"></a>Behandle livshændelser
-
-[!include [banner](includes/preview-feature.md)]
 
 Under hele medarbejderens livscyklus i Microsoft Dynamics 365 Human Resources, kan de enkelte medarbejdere opleve forskellige ændringer i livshændelser. Det kan f.eks. være ægteskab, ændring i ansættelsesforhold eller ændringer af afhængig/modtager-forhold. Hvis du vil bruge livshændelser, skal du aktivere livshændelser i formularen med parametre for frynsegoder, konfigurere typer af livshændelser og konfigurere indstillinger for livshændelser for plantyper.
 
@@ -43,10 +41,10 @@ Hvis dags dato f.eks. er 1. februar, og arbejder Karina Smith er den 14. februar
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Tilmeldingsperiode | Den tilmeldingsperiode, der skal behandles livshændelser for. |
-   | Juridisk enhed | Den juridiske enhed, der skal behandles livshændelser for. |
-   | Dato for livshændelse | Systemet behandler alle hændelser under den tilmeldingsperiode, der indtræffer indtil denne dato. |
-   | Arbejdstråd | Den arbejder, der skal behandles livshændelser for. Hvis du ikke udfylder dette felt, behandles livshændelser for alle arbejdere. |
+   | **Tilmeldingsperiode** | Den tilmeldingsperiode, der skal behandles livshændelser for. |
+   | **Juridisk enhed** | Den juridiske enhed, der skal behandles livshændelser for. |
+   | **Dato for livshændelse** | Systemet behandler alle hændelser under den tilmeldingsperiode, der indtræffer indtil denne dato. |
+   | **Arbejdstråd** | Den arbejder, der skal behandles livshændelser for. Hvis du ikke udfylder dette felt, behandles livshændelser for alle arbejdere. |
 
 3. Hvis du vil køre processen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 

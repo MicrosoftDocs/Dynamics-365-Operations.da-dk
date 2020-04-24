@@ -1,30 +1,30 @@
 ---
 title: Godkende og bekræfte indkøbsordrer
-description: I dette emne beskrives de statusser, som en indkøbsordre (IO) gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på IO'er.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+description: I dette emne beskrives de statusser, som en indkøbsordre gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på PO'er.
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813425"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207988"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkende og bekræfte indkøbsordrer
 
@@ -69,9 +69,10 @@ I nogle situationer kan det være nødvendigt at ændre en indkøbsordre, når d
 
 Hvis indkøbsordren blev oprettet ved hjælp af en ændringsstyringsproces, kan du foretage ændringer ved at tilbagekalde ordren eller, hvis ordren er allerede blevet godkendt, ved hjælp af handlingen **Anmod om ændring**. I så fald ændres godkendelsesstatussen tilbage til **Udkast**, og du kan derefter ændre ordren. Når du er færdig med at foretage ændringer, kan det være nødvendigt at sende IO'en til fornyet godkendelse. Du kan konfigurere de ændringstyper, som kræver fornyet godkendelse, ved hjælp af en **Gengodkendelsesregel for indkøbsordrer**-politikregel på siden **Indkøbspolitikker**.
 
-Hvis en del af det bestilte antal for en indkøbsordrelinje er leveret, kan du ikke ændre det bestilte antal. Du kan dog ændre **Levér rest**-antallet på linjen. Du kan derefter bruge handlingen **Færdiggør** til at annullere linjer og forhindre yderligere behandling. 
+Hvis en del af det bestilte antal for en indkøbsordrelinje er leveret, kan du ikke ændre det bestilte antal, når indkøbsordren er i tilstanden **Kladde**. Du kan imidlertid ændre antallet for **Levér rest** på linjen for den indkøbsordre, der er i tilstanden **Kladde**.
 
-Når en ordre er bekræftet, kan du ikke længere slette den. Du kan dog annullere den samlede mængde eller et eventuelt restantal på en ordre, forudsat at mængden eller antallet endnu ikke er modtaget eller faktureret.
+Når en ordre er bekræftet, kan du ikke længere slette den. Du kan dog annullere den samlede mængde eller et eventuelt restantal på en ordre, forudsat at mængden eller antallet endnu ikke er modtaget eller faktureret. Du kan derefter bruge handlingen **Færdiggør** for at forhindre yderligere behandling. 
+
 
 ## <a name="canceling-purchase-orders"></a>Annullering af indkøbsordrer
 

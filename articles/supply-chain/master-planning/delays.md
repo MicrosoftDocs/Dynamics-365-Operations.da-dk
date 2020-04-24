@@ -2,15 +2,15 @@
 title: Forsinkelser
 description: Dette emne indeholder oplysninger om forsinkede datoer i forbindelse med varedisponering. En forsinket dato er en realistisk forfaldsdato, som en transaktion får, hvis den tidligste dato for udførelse, som Varedisponering beregner, er senere end den ønskede dato.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522283"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203842"
 ---
 # <a name="delays"></a>Forsinkelser
 
@@ -44,6 +44,12 @@ På siden **Varedisponeringsparametre** kan du angive starttidspunktet for bereg
 
 > [!NOTE]
 > I tidligere versioner blev beregnede forsinkelser kaldt *terminssætninger*, den forsinkede dato blev kaldt *terminsdato*, og en forsinket transaktion blev kaldt *en fremtidig angivet transaktion*.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Begrænsede forsinkelser i produktionsopsætningen med flere styklisteniveauer
+Når du arbejder med forsinkelser i en produktionsopsætning, der har flere styklisteniveauer, er det vigtigt at bemærke, at det kun er varer direkte over varen (i styklistestrukturen), som forårsager forsinkelsen, der opdateres med en forsinkelse som del af varedisponeringskørslen. Andre varer i styklistestrukturen vil ikke få den anvendte forsinkelse, før den første varedisponering køres, når den planlagte ordre på øverste niveau er godkendt eller autoriseret. 
+
+Produktionsordrerne øverst i styklistestrukturen med forsinkelser kan godkendes (eller autoriseres), før næste varedisponering køres, for at løse denne kendte begrænsning. På denne måde bevares forsinkelsen fra den godkendte planlagte produktionsordre, og alle underliggende komponenter opdateres tilsvarende.
+Handlingsmeddelelser kan også bruges til at identificere planlagte ordrer, der kan flyttes til en senere dato på grund af andre forsinkelser i styklistestrukturen.
 
 ## <a name="desired-date"></a>Ønsket dato
 

@@ -1,9 +1,9 @@
 ---
 title: Oprette anbefalinger med demonstrationsdata
-description: Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
+description: Dette emne er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 03/30/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
+ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154243"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175543"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Oprette anbefalinger med demonstrationsdata
 
 [!include [banner](includes/banner.md)]
 
-Dette dokument er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
+Dette emne er en vejledning til, hvordan du kan udnytte produktanbefalinger til omni-kanal i niveau-1 enkelt boks-miljøer med forudindstillede demodata, der kan tilpasses.
 
 Omni-kanalproduktanbefalinger giver et sæt redaktionelt leverede eller programmeringsmæssigt fremstillede lister over produkter. Disse lister kan bruges i flere forskellige scenarier, afhængigt af virksomhedens behov. Yderligere oplysninger om lister over produktanbefalinger finder du under [Oversigt over produktanbefalinger](product-recommendations.md).
 
@@ -42,20 +42,21 @@ Produktanbefalinger for niveau 1-miljøer er udelukkende baseret på de statiske
 Du skal udrulle Dynamics 365 Commerce-prøveversionens demoudvidelse i det respektive miljø for at aktivere demodata til produktanbefalinger. Hvis du gør det automatisk, aktiveres demodata til produktanbefalinger.
 
 ## <a name="default-demo-data"></a>Standarddemodata
-Hvert Onebox-typemiljø indeholder et forudindlæst sæt demodata til produktanbefalinger, der er gemt i den kommaseparerede 'reco_demo_data.csv'-fil, som er placeret på Commerce Scale Unit.
+Hvert OneBox-typemiljø indeholder et forudindlæst sæt demodata til produktanbefalinger, der er gemt i den kommaseparerede 'reco_demo_data.csv'-fil, som er placeret på Commerce Scale Unit.
 
 Disse data er struktureret langs følgende kolonner.
 
-| Kolonnenavn         | Obligatorisk          | Beskrivelse                                                                                                                                 | Mulige værdier                                                              |
+| Kolonnenavn         | Obligatorisk          | Beskrivende tekst                                                                                                                                 | Mulige værdier                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | RecoList            | :heavy_check_mark: | Den specifikke listetype for produktanbefalinger, som demodatapunktet skal generere.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | Det specifikke driftsenhedsnummer, hvor produktanbefalinger forventes at blive synlige.                                        |                                                                              |
 | Kategori            |                    |    Den kategori, som den specifikke liste skal returneres for. Hvis der ikke er angivet en kategori, gælder listen kun for det øverste navigationshierarki.    |                                                                              |
 | SeedItemId          |                    |    Til lister, der kræver oprindelsesdata (RecoPeopleAlsoBuy og RecoCart), skal produktet indeholde supplerende produkter til disse lister.            |                                                                              |
+| CustomerId          |                    |    For lister, der kræver et kunde-id (RecoPicks).  Standardværdien "0" gælder for alle kunder.          |                                                                              |
 | ItemIds             | :heavy_check_mark: | Et eller flere produkter, der skal returneres som resultat, skal adskilles med ';'.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Tilpasse demodata
-Du kan redigere standarddemodataene med eventuelle produkt- og kategorioplysninger, der er konfigureret i hovedkontoret. Når du opdaterer .csv-filen, afspejler de produktanbefalinger, der returneres til kunderne, straks ændringerne.
+Du kan redigere standarddemodataene med eventuelle produkt- og kategorioplysninger, der er konfigureret i hovedkontoret. Efter du opdaterer .csv-filen, afspejler de produktanbefalinger, der returneres til kunderne, straks ændringerne.
 
 Udvidelsen indeholder en datafil med navnet 'RecoMockDataset.csv', som giver dig mulighed for at styre det datasæt, der bruges til at styrke de anbefalede resultater. Filnavnet kan styres via udvidelseskonfiguration ved hjælp af indstillingen **ext.Recommendations.DemoFilePath**. Det giver dig mulighed for at have flere tilgængelige datasæt, der kan skiftes mellem nemt og hurtigt under konfigurationen.
 

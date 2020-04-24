@@ -2,7 +2,7 @@
 title: Oversigt over kvalitetsstyring
 description: I dette emne beskrives det, hvordan du kan bruge kvalitetsstyring i Dynamics 365 Supply Chain Management til at forbedre produktkvaliteten i forsyningskæden.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814392"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224903"
 ---
 # <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
 
@@ -302,122 +302,6 @@ Hvis du i forbindelse med indkøb angiver feltet **Hændelsestype** til **Produk
 
 - Hvis indstillingen **Pr. opdateret antal** er angivet til **Ja**, genereres der en kvalitetsordre for hver kvittering i forhold til indkøbsordren baseret på det modtagne antal og indstillinger i stikprøven af vare. Hver gang der modtages et antal på indkøbsordren, oprettes der nye kvalitetsordrer ud fra det nye antal, der er modtaget.
 - Hvis indstillingen **Pr. opdateret antal** er angivet til **Nej**, genereres der en kvalitetsordre for den første kvittering i forhold til indkøbsordren baseret på det modtagne antal. Derudover oprettes en eller flere kvalitetsordrer ud fra det resterende antal afhængigt af sporingsdimensionerne. Kvalitetsordrer genereres ikke for efterfølgende kvitteringer i forhold til indkøbsordren.
-
-<table>
-<tbody>
-<tr>
-<th>Kvalitetsspecifikation</th>
-<th>Pr. opdateret antal</th>
-<th>Pr. sporingsdimension</th>
-<th>Resultat</th>
-</tr>
-<tr>
-<td>Procent: 10 %</td>
-<td>Ja</td>
-<td>
-<p>Batchnummer: Nej</p>
-<p>Serienummer: Nej</p>
-</td>
-<td>
-<p>Ordreantal: 100</p>
-<ol>
-<li>Færdigmelding for 30
-<ul>
-<li>Kvalitetsordrenr. 1 for 3 (10 % af 30)</li>
-</ul>
-</li>
-<li>Færdigmelding for 70
-<ul>
-<li>Kvalitetsordrenr. 2 for 7 (10 % af det resterende ordreantal, hvilket er lig med 70 i dette tilfælde)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fast antal: 1</td>
-<td>Nr.</td>
-<td>
-<p>Batchnummer: Nej</p>
-<p>Serienummer: Nej</p>
-</td>
-<td>Ordreantal: 100
-<ol>
-<li>Færdigmelding for 30
-<ul>
-<li>Kvalitetsordrenr. 1 oprettes for 1 (for det første færdigmeldte antal, der har en fast værdi af 1).</li>
-<li>Der oprettes ikke flere kvalitetsordrer i forhold til det resterende antal.</li>
-</ul>
-</li>
-<li>Færdigmelding for 10
-<ul>
-<li>Der oprettes ingen kvalitetsordrer.</li>
-</ul>
-</li>
-<li>Færdigmelding for 60
-<ul>
-<li>Der oprettes ingen kvalitetsordrer.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fast antal: 1</td>
-<td>Ja</td>
-<td>
-<p>Batchnummer: Ja</p>
-<p>Serienummer: Ja</p>
-</td>
-<td>
-<p>Ordreantal: 10</p>
-<ol>
-<li>Færdigmelding for 3
-<ul>
-<li>Kvalitetsordrenr. 1 for 1 af batchnr. b1, serienr. s1</li>
-<li>Kvalitetsordrenr. 2 for 1 af batchnr. b2, serienr. s2</li>
-<li>Kvalitetsordrenr. 3 for 1 af batchnr. b3, serienr. s3</li>
-</ul>
-</li>
-<li>Færdigmelding for 2
-<ul>
-<li>Kvalitetsordrenr. 4 for 1 af batchnr. b4, serienr. s4</li>
-<li>Kvalitetsordrenr. 5 for 1 af batchnr. b5, serienr. s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Bemærk:</strong> Batchen kan genbruges.</p>
-</td>
-</tr>
-<tr>
-<td>Fast antal: 2</td>
-<td>Nr.</td>
-<td>
-<p>Batchnummer: Ja</p>
-<p>Serienummer: Ja</p>
-</td>
-<td>
-<p>Ordreantal: 10</p>
-<ol>
-<li>Færdigmelding for 4
-<ul>
-<li>Kvalitetsordrenr. 1 for 1 af batchnr. b1, serienr. s1.</li>
-<li>Kvalitetsordrenr. 2 for 1 af batchnr. b2, serienr. s2.</li>
-<li>Kvalitetsordrenr. 3 for 1 af batchnr. b3, serienr. s3.</li>
-<li>Kvalitetsordrenr. 4 for 1 af batchnr. b4, serienr. s4.</li>
-<li>Der oprettes ikke flere kvalitetsordrer i forhold til det resterende antal.</li>
-</ul>
-</li>
-<li>Færdigmelding for 6
-<ul>
-<li>Der oprettes ingen kvalitetsordrer.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### <a name="production"></a>Produktion
 

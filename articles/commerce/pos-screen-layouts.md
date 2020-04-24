@@ -1,9 +1,9 @@
 ---
-title: Skærmlayout til POS
+title: Visuelle konfigurationer af POS-brugergrænseflade
 description: Dette emne indeholder oplysninger om skærmlayouts til Dynamics 365 Commerce POS-oplevelserne.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022050"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261461"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skærmlayout til POS
+# <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurationer af POS-brugergrænseflade
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Dette emne indeholder oplysninger om skærmlayouts til Dynamics 365 Commerce POS-oplevelserne.
-
-Brugergrænsefladen i POS kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt butikker, kasseapparater og/eller brugere.
+Brugergrænsefladen i Microsoft Dynamics 365 Commerce POS (Point Of Sale) kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og brugere. Dette emne indeholder oplysninger om disse konfigurationsvalg.
 
 I følgende illustration vises forholdet mellem de forskellige enheder, der udgør de konfigurerbare elementer i POS-brugergrænsefladen.
 
@@ -40,7 +39,7 @@ I følgende illustration vises forholdet mellem de forskellige enheder, der udg�
 
 ## <a name="visual-profile"></a>Visuel profil
 
-Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle elementer, der er kasseapparatspecifikke og delt på tværs af brugere. Alle brugere, der logger på kasseapparatet, får vist det samme tema og de samme farver og billeder.
+Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle elementer, der er kasseapparatspecifikke og delt på tværs af brugere. Alle brugere, der logger på kasseapparatet, får vist det samme tema, layout og de samme farver og billeder.
 
 ![POS-velkomstskærm med lystema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle element
 
 - **Profilnummer** - Profilnummeret er den entydige identifikator for den visuelle profil.
 - **Beskrivelse** - Du kan angive et beskrivende navn, der hjælper med til at identificere den korrekte profil til din situation.
-- **Tema** - Du kan vælge mellem de lyse eller mørke programtemaer. Temaet påvirker skrifttypen og baggrundsfarverne i hele programmet.
+- **Tema** – Du kan vælge mellem programtemaerne **Lys** og **Mørk**. Temaet påvirker skrifttypen og baggrundsfarverne i hele programmet.
 - **Markeringsfarve** – Markeringsfarven bruges overalt på POS-enheden til at adskille eller fremhæve specifikke visuelle elementer, f.eks.felter, kommandoknapper eller hyperlinks. Disse elementer kræver typisk handling.
-- **Overskriftsfarve** – Du kan konfigurere farven på sidehovedet for at opfylde forhandlerens krav til branding. Denne funktion er kun tilgængelig i Retail version 1611.
-- **Vis dato/klokkeslæt** – Når aktiveret, vises dags dato og det aktuelle klokkeslæt i POS-hovedet.
-- **Logonbaggrunde** – Du kan angive et baggrundsbillede til logonskærmen. Filstørrelsen for baggrundsbilleder bør være så lille som muligt, da lagring og indlæsning af store filer kan påvirke programmets funktionsmåde og ydeevne.
-- **Programbaggrund** – Du kan angive et baggrundsbillede, der bruges i hele programmet i stedet for den dækkende temafarve. Hvad angår logonbaggrunde, bør filstørrelsen holdes så lav som muligt.
+- **Overskriftsfarve** – Du kan konfigurere farven på sidehovedet for at opfylde forhandlerens krav til branding.
+- **Skrifttypeskema** – Du kan vælge mellem skrifttypeskemaerne **Standard** og **Stor**. Skrifttypeskemaet påvirker skriftstørrelsen i hele programmet. Standardindstillingen er **Standard**.
+- **Vis altid etiketter på programlinje** – Når denne indstilling er slået til, er etiketteksten altid synlig under knapperne på programlinjen.
+- **Layout** – Du kan vælge mellem **Centrerede** og **Højre** layout. Layoutet har indflydelse på justeringen af logonsiden på logonskærmen. Standardindstillingen er **Centreret**.
+- **Vis dato/klokkeslæt** – Når denne indstilling er aktiveret, vises dags dato og klokkeslæt i POS-overskriften og på logonskærmen.
+- **Tastatur** – Du kan vælge mellem **Standard til OS-tastatur** og **Vis numerisk tastatur** for at angive det standardtastatur, der bruges til input på logonskærmen. Det numeriske tastatur er et virtuelt tastatur, der primært bruges på berøringsbaserede enheder. Standardindstillingen er **Standard til OS-tastatur**.
+- **Logobillede** – Du kan angive et logo, der vises på logonskærmen. Det anbefales, at du bruger et billede, der har en gennemsigtig baggrund. Filstørrelsen bør være så lille som muligt, da programmets funktionsmåde og ydeevne kan blive påvirket, når store filer gemmes og indlæses.
+- **Logonbaggrund** – Du kan angive et baggrundsbillede til logonskærmen. Filstørrelsen af baggrundsbilleder bør være så lille som muligt.
+- **Baggrund** – Du kan angive et baggrundsbillede, der bruges i hele programmet i stedet for den dækkende temafarve. For baggrundsbilleder på logonskærmen skal filstørrelsen være så lille som muligt.
+
+> [!NOTE]
+> Layoutet **Højre** og visningen af dato/klokkeslæt kan ikke anvendes på logonsiden i kompakt visning.
 
 ## <a name="screen-layouts"></a>Skærmlayout
 
-Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placeringen af UI-kontrolelementer på velkomstskærmen og **transaktionsskærmen** på POS-enheden.
+Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placeringen af UI-kontrolelementer på POS-skærmen **Velkommen** og skærmen **Transaktion**.
 
 ![Visning af POS-skærmlayout](../commerce/media/POS-Screen-Layout-View.png)
 

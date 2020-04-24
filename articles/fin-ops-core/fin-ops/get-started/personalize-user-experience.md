@@ -3,7 +3,7 @@ title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029356"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260500"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -80,7 +80,7 @@ Nogle af de mest almindelige og vigtigste ændringer, der kan udføres på en si
 
 De mest grundlæggende typer eksplicitte tilpasninger er desuden tilgængelige, hvis du højreklikker på et element og derefter vælger **Tilpas**. (Bemærk, at ikke alle elementer på din side kan tilpasses). Når du bruger denne metode for tilpasning, vises elementets egenskabsvindue.
 
-![Tilpasning af et elements egenskaber](./media/personalization-element-properties.png)
+![Tilpasning af et elements egenskaber](./media/cli-element-property-window.png)
 
 Du kan bruge egenskabsvinduet til at tilpasse et element på følgende måder:
 
@@ -89,6 +89,7 @@ Du kan bruge egenskabsvinduet til at tilpasse et element på følgende måder:
 - Medtage oplysningerne i oversigtspanelets oversigtssektion (hvis elementet er i et oversigtspanel).
 - Spring feltet over, så det aldrig får fokus, når du tabulerer gennem siden.
 - Forhindre, at data i feltet redigeres (for enhver post).
+- Angiv et felt, der skal bruges til dataindtastning. Hvis der ikke er angivet en værdi i dette felt, vises det med en rød kant og en stjerne for at angive denne tilstand. Denne indstilling er kun tilgængelig, hvis du starter i version 10.0.11, hvor funktionerne [Gemte visninger](saved-views.md) og **Relevante felter efter behov vha. tilpasning** er aktiveret.
 
 Egenskabsvinduet kan omfatte andre tilpasningsmuligheder, afhængigt af elementet. I egenskabsvinduet for et felt kan du f.eks. opgradere feltet til et dashboard, og i egenskabsvinduet for et dashboard kan du evt. oprette et nyt arbejdsområde i dette dashboard.
 
@@ -116,6 +117,7 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 - Brug værktøjet **Flyt** til at flytte et element til et andet sted inden i den aktuelle gruppe af elementer. Bemærk, at du ikke kan flytte et element uden for dets overordnede gruppe. Hvis du vil bruge dette værktøj, skal du vælge knappen **Flyt** på værktøjslinjen og derefter vælge det element, du vil flytte. Når du vælger et element, fastlægger appen de steder, hvor elementet kan flyttes hen. Disse steder kaldes *slipzoner*. Når du trækker elementet omkring i den aktuelle gruppe, vises hver slipzone som en farvet, fed linje ud for det område, hvor elementet kan slippes.
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra det ved at vælge felterne.
+- Brug værktøjet **Kræv** for at udpege et element, der kræves til dataindtastning. Når du vælger knappen **Kræv** på værktøjslinjen, vises alle elementer, der er blevet tilpasset til at være påkrævet, i en nedtonet container. Du kan derefter gøre dem ikke påkrævet igen. Denne indstilling er kun tilgængelig i en fremtidig udgave, hvor funktionerne [Gemte visninger](saved-views.md) og **Relevante felter efter behov vha. tilpasning** er aktiveret.
 - Brug værktøjet **Lås** til at markere et element som redigerbart eller ikke-redigerbart. Når du vælger knappen **Lås** på værktøjslinjen, vises alle elementer, der i øjeblikket ikke er redigerbare, i en nedtonet container. Du kan derefter gøre dem redigerbare igen. Bemærk, at nogle af felterne er obligatoriske og ikke kan gøres ikke-redigerbare. Der vises en hængelås ud for de pågældende felter.
 - Brug knappen **Tilføj en app fra Power Apps** til at integrere en app, der er oprettet ved hjælp af Microsoft Power Apps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en Power Apps-app på en side, under [Integrere apps fra Power Apps](embed-power-apps.md). Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er deaktiveret.  
 - Brug knappen **Tilføj en app** til at integrere en app, der enten er oprettet i Microsoft Power Apps eller en tredjepart, på siden. Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er aktiveret. 

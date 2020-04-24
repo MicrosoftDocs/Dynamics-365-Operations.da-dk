@@ -2,8 +2,8 @@
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.10. (maj 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.10.
 author: kamaybac
-manager: AnnBe
-ms.date: 03/21/2020
+manager: tfehr
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: afab27ef8a60e9d7e8749e94d3738ee7e6d53d12
-ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.openlocfilehash: 8297daa0d802b0b821b43aebe7a841011c70fd55
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3164787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261182"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.10. (maj 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management foreløbig version 10.0.10. Denne version har et build-nummer på 10.0.420 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.10. Denne version har et build-nummer på 10.0.420 og er tilgængelig som følger:
 
 - **Prøveversion:** marts 2020
 - **Generel tilgængelighed (selv-opdatering):** april 2020
@@ -40,20 +39,21 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 - [Forbedring til brug af eksisterende fastvægtkoder med lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
-- [Forbedringer af indgående belastningsstyring til lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)
+- [Forbedringer af indgående laststyring til lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – Du kan få flere oplysninger under [Lagerekspedition af indgående laster for indkøbsordrer](../warehousing/inbound-load-handling.md).
+- [Forbedringer af etiketudskrivning i forbindelse med lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management) – Du kan få flere oplysninger i [Dokumentrutelayout for nummerpladeetiketter](../warehousing/document-routing-layout-for-license-plates.md).
 - [Varedisponering omfatter varer med disponibel lagerbeholdning, når filtre til forhåndsbehandling er aktiveret](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 - [Nye dataenheder til produktionsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Kvalitetsstyring for lagerstedsprocesser.](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-update-34"></a>Platform update 34
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformopdateringer til Finance and Operations-apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.10 indeholder platformsopdatering 34. Du kan få flere oplysninger i [Prøveversionsfunktioner i platformopdatering 34](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md)
+Dynamics 365 Supply Chain Management 10.0.10 inkluderer platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.10 af Finance and Operations-apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
-Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af de opdateringer, som er del af 10.0.10, ved at logge på Lifecycle Services (LCS) og se [KB-artiklen](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+Du kan få flere oplysninger om de fejlrettelser, der er inkluderet i denne opdatering, ved at logge på Lifecycle Services (LCS) og se [KB-artiklen](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020-frigivelsesplan bølge 1
 

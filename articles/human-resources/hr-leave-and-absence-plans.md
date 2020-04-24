@@ -3,7 +3,7 @@ title: Oprette en orlovs- og fraværsplan
 description: Opret orlovsplaner i Dynamics 365 Human Resources for forskellige typer orlov.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087294"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197353"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Oprette en orlovs- og fraværsplan
 
@@ -42,6 +42,11 @@ Du kan også oprette stillingsbaserede orlovsfrynsegoder, f.eks. frynsegodetimer
 1. På siden **Orlov og fravær** skal du vælge **Opret ny plan**.
 
 2. Under **Oplysninger** skal du angive **Navn**, **Startdato**, **Beskrivelse** og **Orlovstype** for din plan.
+
+Hvis funktionen **Konfigurer flere orlovstyper for en enkelt orlovs- og fraværsplan** er aktiveret, konfigureres orlovstyperne i **Periodiseringsplan** i stedet for under **Detaljer**. For hver post i periodiseringsplanens tabel kan du definere en orlovstype.
+
+ > [!IMPORTANT]
+   > Du kan ikke deaktivere denne funktion, når du har aktiveret den.
 
 3. Definer periodiseringer under fanen **Periodiseringer**. Periodiseringer bestemmer, hvornår og hvor ofte en medarbejder tildeles fritid. I dette trin definerer du politikker for, hvornår periodiseringer skal tildeles, og politikker for proportionale værdier af orlovsfordele.
 
@@ -95,8 +100,8 @@ Du kan også oprette stillingsbaserede orlovsfrynsegoder, f.eks. frynsegodetimer
    Du kan oprette niveauer, så der tildeles fritid baseret på forskellige niveauer.
 
    Hvis du har timeansatte, kan du tildele fridage baseret på arbejdstimer i stedet for ansættelsestid i din organisation. Data for arbejdstimer er typisk gemt i et system for tid og fremmøde. Du kan importere almindelige arbejds- og overtidstimer fra systemet til tid og fremmøde og bruge dem som grundlag for en medarbejders bonus.
-
-   1. Vælg en indstilling fra rullelisten **Periodiseringstype**:
+   
+    1. Vælg en indstilling fra rullelisten **Periodiseringstype**:
 
       - **Måneders tjeneste** - Baserer periodiseringsplanen på måneder i tjenesten.
 
@@ -117,6 +122,13 @@ Du kan også oprette stillingsbaserede orlovsfrynsegoder, f.eks. frynsegodetimer
       - **Maksimumoverførsel** - Periodiseringsprocessen regulerer orlovssaldi, der overskrider den maksimale overførte saldo på årsdagen for startdatoen.
 
       - **Bonusbeløb** - Bonusbeløbet er det indledende antal timer eller dage, der tildeles medarbejdere, når de tilmelder sig orlovsplanen. Beløbet periodiseres ikke for hver periodiseringsperiode.
+      
+Hvis funktionen **Konfigurer flere orlovstyper for en enkelt orlovs- og fraværsplan** er aktiveret, skal du vælge en indstilling fra **Orlovstype**. 
+
+   > [!IMPORTANT]
+   > Du kan ikke deaktivere denne funktion, når du har aktiveret den.
+
+Hvis funktionen **Brug fuldtidsækvivalens** er aktiveret, bruger Human Resources den fuldtidsækvivalens (FTE), der er defineret for stillingen, til at beregne en medarbejders periodisering forholdsmæssigt. Hvis FTE f.eks. er 0,5, og det periodiserede beløb er 10, vil medarbejderen periodisere 5. Du kan kun bruge denne funktion, hvis du aktiverer flere orlovstyper.  
 
 5. Vælg **Gem**.
 
@@ -357,19 +369,6 @@ Budgetteret saldo (30) = Periodiseringsbeløb (10 × 1) + Aktuel saldo (40) – 
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-
-## <a name="configure-preview-features"></a>Konfigurere prøveversioner
-
-Hvis du har aktiveret prøvefunktioner for orlov og fravær, skal du også konfigurere indstillingerne for dem.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Prøvefunktion: Konfigurer flere orlovstyper for en enkelt orlovs- og fraværs plan**. For hver post i periodiseringsplanens tabel kan du definere en orlovstype.
-
-   > [!IMPORTANT]
-   > Du kan ikke deaktivere denne funktion, når du har aktiveret den.
-
-2. **Prøvefunktion: Brug fuldtidsækvivalens**. Hvis du aktiverer denne prøvefunktion, bruger Personale den fuldtidsækvivalente (FTE), der er defineret for stillingen, til at beregne en medarbejders periodisering forholdsmæssigt. Hvis FTE f.eks. er 0,5, og det periodiserede beløb er 10, vil medarbejderen periodisere 5. Du kan kun bruge denne funktion, hvis du aktiverer flere orlovstyper.
 
 ## <a name="see-also"></a>Se også
 
