@@ -2,7 +2,7 @@
 title: Konfigurere konsignation
 description: Dette emne forklarer, hvordan du bruger indgående processer for konsignationslager.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65c5702514a3bc9fe943959fd4ca032eb19bfe4c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: af30938929677ad0e1388760e6b7a992a8718240
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814438"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212888"
 ---
 # <a name="set-up-consignment"></a>Konfigurere konsignation
 
@@ -60,7 +60,7 @@ Kreditoren, US-104, kan overvåge opdateringer ved hjælp af siden **Disponibelt
 ## <a name="consignment-replenishment-orders"></a>Genopfyldningsordrer til konsignation
 En genopfyldningsordre for konsignation er et dokument, der bruges til at anmode om og holde styr på lagerantal af produkter, som en leverandør har til hensigt at levere inden for et bestemt datointerval ved at oprette bestilte lagertransaktioner. Dette vil normalt baseres på budgettet og faktisk efterspørgsel på specifikke produkter. Det lager, der skal modtages mod genopfyldningsordre til konsignation, forbliver i ejerskabet af leverandøren. Det er kun besiddelse af produkter i forbindelse med fysisk opdatering, der registreres, og derfor bliver ingen opdateringer af finanstransaktion udført. 
 
-Dimensionen **Ejer** bruges til at adskille oplysninger om, hvilket lager der ejes af leverandøren, og som ejes af den modtagende juridiske enhed. Genopfyldningens ordrelinjer til konsignation har en **Åben ordre**-status, så længe det fulde antal på linjerne ikke er modtaget eller annulleret. Når det fulde antal er modtaget eller annulleret, ændres status til **Fuldført**. Den fysisk disponible lagerbeholdning, der er tilknyttet en genopfyldningsordre til konsignation, kan registreres ved hjælp af en registreringsproces samt en opdateringsproces for produktmodtagelse. Registrering kan foretages som en del af varemodtagelsesprocessen eller ved manuelt at opdatere ordrelinjerne. Når opdateringsprocessen for produktmodtagelse bruges, oprettes der en post i produktkvitteringskladden, som kan bruges til at bekræfte modtagelsen af varerne for leverandørerne.
+Dimensionen **Ejer** bruges til at adskille oplysninger om, hvilket lager der ejes af leverandøren, og som ejes af den modtagende juridiske enhed. Genopfyldningens ordrelinjer til konsignation har en **Åben ordre**-status, så længe det fulde antal på linjerne ikke er modtaget eller annulleret. Når det fulde antal er modtaget eller annulleret, ændres status til **Fuldført**. Den fysisk disponible lagerbeholdning, der er tilknyttet en genopfyldningsordre til konsignation, kan registreres ved hjælp af en registreringsproces samt en opdateringsproces for produktkvittering. Registrering kan foretages som en del af varemodtagelsesprocessen eller ved manuelt at opdatere ordrelinjerne. Når opdateringsprocessen for produktkvittering bruges, oprettes der en post i produktkvitteringskladden, som kan bruges til at bekræfte modtagelsen af varerne for leverandørerne.
 
 [![consignment-replenishment-order](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -68,7 +68,7 @@ Dimensionen **Ejer** bruges til at adskille oplysninger om, hvilket lager der ej
 Processen, der ændrer ejeren af lageret fra leverandøren til den modtagende juridiske enhed, udføres via en ændringskladde for lagerejerskab. Der oprettes ingen lagertransaktioner for kladden. Det er kun lagertransaktioner, der vedrører en bogført kladde, der oprettes. Når kladden er bogført:
 
 -   Det lager, der ejes af leverandøren, udstedes ved hjælp af en **Ændring af ejerskab**-reference med en **Solgt**-status.
--   Den disponible lagerbeholdning modtages af den juridiske enhed, der forbruger den, ved hjælp af en produktmodtagelsesopdatering af lagertransaktionen på indkøbsordren. Dette angiver status for ordren til **Modtaget**. Indkøbsordrer, der bruges til konsignation, har feltet **Oprindelse** indstillet til **Konsignation**.
+-   Den disponible lagerbeholdning modtages af den juridiske enhed, der forbruger den, ved hjælp af en produktkvitteringsopdatering af lagertransaktionen på indkøbsordren. Dette angiver status for ordren til **Modtaget**. Indkøbsordrer, der bruges til konsignation, har feltet **Oprindelse** indstillet til **Konsignation**.
 
 Det er ikke muligt at opdatere antal på indkøbsordrelinjer til konsignation, når ordren er blevet oprettet.
 

@@ -1,9 +1,9 @@
 ---
 title: Konfigurere Common Data Service-integration
-description: Du kan slå integration mellem Common Data Service og en forekomst af Microsoft Dynamics 365 Human Resources til eller fra. Du kan også få vist synkroniseringsdetaljerne, rydde sporingsdata og synkronisere en enhed som hjælp til fejlfinding af dataproblemer mellem de to miljøer.
+description: Du kan slå integration mellem Common Data Service og Dynamics 365 Human Resources til eller fra. Du kan også få vist synkroniseringsdetaljer, rydde sporingsdata og synkronisere en enhed som hjælp til fejlfinding af dataproblemer mellem de to miljøer.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,31 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008460"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198416"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurere Common Data Service-integration
 
-Du kan slå integration mellem Common Data Service og en forekomst af Microsoft Dynamics 365 Human Resources til eller fra. Du kan også få vist synkroniseringsdetaljerne, rydde sporingsdata og synkronisere en enhed som hjælp til fejlfinding af dataproblemer mellem de to miljøer.
+Du kan slå integration mellem Common Data Service og Dynamics 365 Human Resources til eller fra. Du kan også få vist synkroniseringsdetaljerne, rydde sporingsdata og synkronisere en enhed som hjælp til fejlfinding af dataproblemer mellem de to miljøer.
 
 Når du deaktiverer integration, kan brugere foretage ændringer i Personale eller Common Data Service, men disse ændringer synkroniseres ikke mellem de to miljøer.
 
-Integration mellem Personale og Common Data Service er som standard slået fra eller til, afhængigt af tilstedeværelsen af demodata i miljøerne:
-
-- **Fra** for nye miljøer, der ikke indeholder demodata
-- **Til** for nye miljøer, der indeholder demodata
-
-Nye miljøer, der indeholder demodata, vil starte med at synkronisere data, når de er klargjort.
+Som standard er dataintegration mellem Human Resources og Common Data Service slået fra.
 
 Du kan eventuelt deaktivere integration i følgende situationer:
 
 - Du er ved at udfylde data via Data Management Framework og skal importere dataene flere gange for at få dem i korrekt tilstand.
 
-- Der er problemer med dataene i enten Personale eller Common Data Service. Hvis du deaktiverer integration, kan du slette en post i ét miljø uden at slette den i det andet. Når du slår integrationen til igen, vil posten i det miljø, hvor den ikke blev slettet, blive synkroniseret tilbage til det miljø, hvor den blev slettet. Synkroniseringen starter, næste gang batchjobbet **Common Data Service-integration mistet anmodningssynk.** køres.
+- Der er problemer med dataene i enten Personale eller Common Data Service. Hvis du deaktiverer integration, kan du slette en post i ét miljø uden at slette den i det andet. Når du slår integrationen til igen, vil posten i det miljø, hvor den ikke blev slettet, blive synkroniseret til det miljø, hvor den blev slettet. Synkroniseringen starter, næste gang batchjobbet **Common Data Service-integration mistet anmodningssynk.** køres.
 
 > [!WARNING]
 > Når du slår dataintegration fra, skal du sørge for ikke at redigere den samme post i begge miljøer. Når du slår integration til igen, vil den post, du senest har redigeret, blive synkroniseret. Hvis du derfor ikke har foretaget de samme ændringer i posten i begge miljøer, kan der opstå datatab.
@@ -103,9 +98,17 @@ Se den næste procedure, hvis du vil køre en fuld synkronisering af enheden, n�
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synkronisere en enhed mellem Personale og Common Data Service
 
-Brug denne fremgangsmåde, hvis det tager for lang tid, før ændringer fra Common Data Service vises i Personale, eller hvis du skal opdatere sporingstabellen, efter at du har ryddet sporingen.
+Benyt denne fremgangsmåde, når:
 
-- Hvis du vil køre fuld synkronisering på en enhed mellem Personale og Common Data Service skal du vælge enheden i feltet **CDS-enhedsnavn** og derefter vælge **Synkroniser nu**.
+- Ændringerne fra Common Data Service er for længe om at blive vist i Human Resources.
+
+- Du skal opdatere sporingstabellen, efter at du har ryddet registreringen.
+
+Sådan kører du en fuld synkronisering af en enhed mellem Human Resources og Common Data Service:
+
+1. Vælg enheden i feltet **CDS-enhedsnavn**.
+
+2. Vælg **Synkroniser nu**.
 
 [![Køre en fuld synkronisering](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 

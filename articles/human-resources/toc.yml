@@ -5,6 +5,12 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 13. april 2020
+          href: hr-whats-new-2020-04-13.md
+        - name: 3. april 2020
+          href: hr-whats-new-2020-04-03.md
+        - name: 24. marts 2020
+          href: hr-whats-new-2020-03-24.md
         - name: 19. marts 2020
           href: hr-whats-new-2020-03-19.md
         - name: 10. marts 2020
@@ -401,7 +407,7 @@
               href: hr-compensation-process.md
         - name: Administrere frynsegoder
           items:
-            - name: 'Prøveversionsfunktion: Administration af frynsegoder'
+            - name: Frynsegodeadministration
               items:
                 - name: Oversigt over administration af frynsegoder
                   href: hr-benefits-management-overview.md
@@ -445,12 +451,8 @@
                   items:
                     - name: Konfigurere frynsegodeplaner
                       href: hr-benefits-plans-setup.md
-                    - name: Oprette frynsegodeplaner for medarbejder
-                      href: hr-benefits-plans-worker.md
                     - name: Konfigurere flekskreditprogrammer
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: Konfigurere fremtidige livsbegivenheder
-                      href: hr-benefits-plans-future-life-events.md
                 - name: Behandle frynsegodeplaner
                   items:
                     - name: Behandle berettigelse til tilmelding
@@ -499,6 +501,8 @@
               href: hr-leave-and-absence-enroll.md
             - name: Periodisere planer for orlov og fravær
               href: hr-leave-and-absence-accrue.md
+            - name: Stop orlov midlertidigt
+              href: hr-leave-and-absence-suspend-leave.md
             - name: Vis analyse af orlov og fravær
               href: hr-leave-and-absence-analytics.md
             - name: Administrere anmodninger om orlov og fravær

@@ -3,7 +3,7 @@ title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260477"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -156,7 +156,7 @@ Hvis du vil se listen over alle publicerede visninger for siden, kan du bruge f�
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø? 
 Bemærk: Funktionen **Gemte visninger** kræver, at Finance and Operations-tilpasningssystemet er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
 
-**10.0.9/Platform Update 33 og nyere** **Gemte visninger**-funktionen er tilgængelig direkte i funktionsstyring i et hvilket som helst miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt den [supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/Platform Update 33 og nyere** **Gemte visninger**-funktionen er tilgængelig direkte i funktionsstyring i et hvilket som helst miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8/Platform update 32 og før** **Gemte visninger**-funktionen kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
 

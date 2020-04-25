@@ -2,30 +2,30 @@
 title: Oprette en produktionsflowversion
 description: Denne procedure fokuserer på oprettelse af en ny produktionsflow-version.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: da3b77ed459f42ef91d64066b18b07fece9efc8f
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564080"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212129"
 ---
 # <a name="create-a-production-flow-version"></a>Oprette en produktionsflowversion
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne procedure fokuserer på oprettelse af en ny produktionsflow-version. For denne procedure skal produktionsparametre for lean manufacturing og måleenheder for klassen Tid være defineret. Du skal også definere en værdistrøm og en produktionsgruppe. Du kan finde flere oplysninger om produktionsflows og aktiviteter inden for lean manufacturing i hvidbøgerne om lean manufacturing til Microsoft Dynamics AX. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

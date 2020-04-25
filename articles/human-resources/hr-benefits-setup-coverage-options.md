@@ -1,9 +1,9 @@
 ---
 title: Oprette disponeringsindstillinger
-description: Disponeringsindstillinger i Microsoft Dynamics 365 Human Resources er disponeringsniveauer for en deltagers valg i en frynsegodeplan eller et frynsegodeprogram, f.eks. Kun medarbejder for en medicinsk plan eller en 2 x løn for en livsforsikringsplan.
+description: Dækningsindstillinger i Microsoft Dynamics 365 Human Resources er niveauer for en deltagers valg i en frynsegodeplan eller et program.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 021fea7604af2fff833ddc6868d55a316ef70aae
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230171"
 ---
 # <a name="create-coverage-options"></a>Oprette disponeringsindstillinger
 
-[!include [banner](includes/preview-feature.md)]
+Dækningsindstillinger i Microsoft Dynamics 365 Human Resources er niveauer for en deltagers valg i en frynsegodeplan eller et program. Dækningsindstillinger kan f.eks. omfatte **Kun medarbejder** for en medicinsk plan eller **2 x løn** til en livsforsikring. Når den er defineret, kan du genbruge indstillingerne for frynsegodedækning. Du kan knytte en indstilling til en eller flere planer.
 
-Disponeringsindstillinger i Microsoft Dynamics 365 Human Resources er disponeringsniveauer for en deltagers valg i en frynsegodeplan eller et frynsegodeprogram, f.eks. Kun medarbejder for en medicinsk plan eller en 2 x løn for en livsforsikringsplan. Når den er defineret, kan indstillingerne for frynsegodedisponering genbruges, og du kan knytte en indstilling til en eller flere planer.
-
-Når disponeringsindstillingerne er defineret, skal du knytte disponeringsindstillingerne til en type af frynsegodeplan. Plantypen knyttes derefter til en frynsegodeplan eller et frynsegodeprogram. Disponeringsindstillinger, der er knyttet til plantype, vil være tilgængelige for alle de planer, der oprettes med den pågældende plantype. 
+Når du har defineret dækningsindstillingerne, skal du knytte dækningsindstillingerne til en type af frynsegodeplan. Plantypen knyttes derefter til en frynsegodeplan eller et frynsegodeprogram. Dækningsindstillinger, der er knyttet til plantype, vil være tilgængelige for alle de planer, der oprettes med den pågældende plantype. 
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Disponeringsindstillinger** under **Konfiguration**.
 

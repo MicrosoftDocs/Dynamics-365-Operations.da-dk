@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø
 description: Dette emne indeholder svar på ofte stillede spørgsmål om miljøet til prøveversionen af Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024746"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254718"
 ---
 # <a name="dynamics-365-commerce-preview-environment-faq"></a>Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø
 
@@ -77,8 +77,6 @@ Vi tildeler en kvote på ét miljø til prøveversionen af Commerce for hver anm
 ## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Kontaktoplysninger til miljø til prøveversion af Dynamics 365 Commerce
 
 Hvis du har spørgsmål eller anmodninger, der er relateret til miljøet til prøveversionen af Commerce, kan du kontakte Microsoft ved at besøge [Microsoft Dynamics 365 Commerce Prøveversion Yammer-gruppe](https://aka.ms/Dynamics365CommercePreviewYammer) for at få hjælp.
-
-Hvis du oplever problemer, når du forsøger at få adgang til Yammer-gruppen, kan du kontakte Microsoft via e-mail på <Dynamics365Commerce@microsoft.com>. Denne e-mailadresse overvåges ikke aktivt. Du skal derfor regne med, at svaret vil blive forsinket.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

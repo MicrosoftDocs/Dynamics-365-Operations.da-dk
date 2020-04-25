@@ -3,7 +3,7 @@ title: Oprette en teamkalender
 description: Få vist og opret teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22350e0a9da593d52278090dde298923d490cb8c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 71637a659b26ea6912da993f1e899e33f7082512
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008479"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226201"
 ---
-# <a name="view-team-and-company-calendars"></a>Få vist team- og firmakalendere
+# <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
 [!include [banner](includes/preview-feature.md)]
 
-Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources.
+Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources. Teamkalendere viser kun direkte underordnede som defineret i linjehierarkiet.
 
-## <a name="view-your-team-calendar"></a>Få vist teamkalenderen
-
-Ledere kan få vist teamkalendere. Teamkalendere viser kun direkte underordnede som defineret i linjehierarkiet.
+## <a name="view-your-team-calendar-as-an-employee"></a>Få vist din teamkalender som medarbejder
 
 1. Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.
 
 2. Vælg **Orlov og fravær**, og vælg derefter **Vis teamkalender**.
+
+## <a name="view-your-team-calendar-as-a-manager"></a>Få vist din teamkalender som leder
+
+1. Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.
+
+2. Vælg **Orlov og fravær**, og vælg derefter **Vis teamkalender**.
+
+Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fridage for mit team**, **Godkendt fritid** og **Anmodninger om fridage**. 
 
 ## <a name="view-a-company-calendar"></a>Få vist en firmakalender
 
@@ -47,5 +53,7 @@ Personer, der er i HR-roller, kan få vist firmakalendere. I firmakalendere vise
 
 2. Vælg **Orlovs- og fraværskalender**.
 
-Yderligere oplysninger om kalenderindstillinger finder du under [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
+Human Resources-roller kan også få adgang til firmakalenderen fra **Orlovs- og fraværsanmodninger**, **Godkendt fritid** og **Anmodninger om fridage**. 
+
+Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

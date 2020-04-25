@@ -3,7 +3,7 @@ title: Konfigurere egenskaber for arbejdsgang
 description: I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190114"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199430"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaber for arbejdsgang
 
@@ -75,9 +75,11 @@ Du kan angive instruktioner til brugere, der sender dokumenter til behandling og
     5. Hvis du vil personalisere teksten, kan du indsætte pladsholdere. I trin 3 kan du se anvisninger i, hvordan du angiver en pladsholder.
     6. Klik på **Luk**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Angive, hvornår denne arbejdsgang bruges
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Angive, hvornår denne arbejdsgang bruges via aktiveringsbetingelser
 
-Du kan oprette flere arbejdsgange, der er baseret på samme type. Du kan f.eks. oprette en arbejdsgang for indkøbsrekvisitioner for hvert land eller område, som du opererer i, f.eks. Indkøbsrekvisitioner Danmark eller Indkøbsrekvisitioner Spanien. Når der findes flere arbejdsgange, der er baseret på samme type, skal du angive, hvornår den enkelte arbejdsgang bruges. I det foregående eksempel skal du angive følgende betingelser:
+Du kan oprette flere arbejdsgange, der er baseret på samme arbejdsgangtype. Når der findes flere arbejdsgange, der er baseret på samme type, skal du angive, hvornår den enkelte arbejdsgang bruges vha. aktiveringsbetingelser. Hvis aktiveringsbetingelserne ikke er opfyldt, bruges standardarbejdsgangen. Hvis der kun er defineret én arbejdsgangskonfiguration for en arbejdsgangstype, vil den pågældende arbejdsgangskonfiguration også blive brugt uanset aktiveringsbetingelserne.
+
+Du kan f.eks. oprette en arbejdsgang for indkøbsrekvisitioner for hvert land eller område, som du opererer i, f.eks. Indkøbsrekvisitioner Danmark eller Indkøbsrekvisitioner Spanien, med følgende betingelser:
 
 - Indkøbsrekvisitioner Danmark bruges når: land/område = DK
 - Indkøbsrekvisitioner Spanien bruges når: land/område = ES

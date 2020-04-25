@@ -3,7 +3,7 @@ title: Fjernede eller udfasede funktioner i tidligere versioner
 description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124560"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225122"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -263,11 +263,11 @@ Integrerede nøgletal (KPI'er) kan modelleres i Visual Studio af en udvikler og 
 
 |   |  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Det er muligt for definitioner af tabelmetadata at have feltgrupper, der indeholder ugyldige referencer. Dette problem kategoriseres i øjeblikket som en *kompileradvarsel* i stedet for en *fejl*, hvilket betyder, at oprettelsen af den installerbare pakke og installationen kan fortsætte, uden at problemet rettes. Hvis pakken installeres, kan det medføre kørselsfejl i Økonomirapportering og SQL Server Reporting Services (SSRS). Sådan løser du problemet:<br><br>1. Fjern den ugyldige feltreference fra definitionen af tabelfeltgruppen.<br><br>2. Kompiler igen.<br><br>3. Kontroller, at eventuelle advarsler eller fejl er rettet. |
-| **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejlmeddelelse fremover.  |
-| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer. |
-| **Installationsindstilling**              | Alle. |
-| **Status**                         | Udfasning: advarslen vil fremadrettet være en fejlmeddelelse om kompileringstid. Vi satser i øjeblikket på Platform update 30. |
+| **Årsagen til forældelsen/fjernelsen** | Det er muligt for definitioner af tabelmetadata at have feltgrupper, der indeholder ugyldige referencer. Hvis pakken installeres, kan det medføre kørselsfejl i Økonomirapportering og SQL Server Reporting Services (SSRS). Dette problem kategoriseres i øjeblikket som en *kompileradvarsel* i stedet for en *fejl*, hvilket betyder, at oprettelsen af den installerbare pakke og installationen kan fortsætte, uden at problemet rettes. Sådan løser du problemet:<br><br>1. Fjern den ugyldige feltreference fra definitionen af tabelfeltgruppen.<br><br>2. Kompiler igen.<br><br>3. Kontroller, at eventuelle advarsler eller fejl er rettet. |
+| **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejlmeddelelse fremover. |
+| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfasning: advarslen vil fremadrettet være en fejlmeddelelse om kompileringstid. Denne ændring er målrettet mod platformsopdateringer til version 10.0.11 af Finance and Operations-apps. |
 
 #### <a name="complete-list"></a>Komplet liste
 For at få adgang til den komplette liste over API'er, der udfases, skal du se [Udfasning af metoder og metadataelementer](deprecation-deletion-apis.md).

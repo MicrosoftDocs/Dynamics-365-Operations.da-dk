@@ -1,5 +1,5 @@
 ---
-title: Startside for Business Intelligence (BI) og rapportering
+title: Rapportering og analyse med startside for Power BI
 description: Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence og de rapporteringsværktøjer, der er tilgængelige.
 author: sericks007
 manager: AnnBe
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771558"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258574"
 ---
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Startside for Business Intelligence (BI) og rapportering
+# <a name="reporting-and-analytics-with-power-bi-home-page"></a>Rapportering og analyse med startside for Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence og de rapporteringsværktøjer, der er tilgængelige.
+Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence (BI) og de rapporteringsværktøjer, der er tilgængelige.
 
 ## <a name="get-started"></a>Introduktion
 - [Adgang til oplysninger og rapportering](information-access-reporting.md)
 - [Tech Talk: Rapporteringsindstillinger](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Blog om Power BI-analyser og Reporting Services](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Finance and Operations: Blog om Power BI Analyse og rapporteringstjenester](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analytiske arbejdsområder
 Arbejdsområderne kan bruge avancerede infographics og visuelle elementer, der understøttes af Microsoft Power BI. Disse infographics og visuelle elementer omfatter mange funktioner, som leveres af tredjeparter. Derfor giver arbejdsområderne en effektiv visuel og interaktiv oplevelse for brugerne.
@@ -88,5 +88,5 @@ Følgende rapporter indeholder referenceoplysninger om objekterne:
 
 - [Finde oplysninger om standarddataenheder](../data-entities/data-entities-report.md)
 - [Rapport over licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md)
-- [SQL Server Reporting Services (SSRS)-rapporter, der er tilgængelige](SSRS-report.md)
+- [SQL Server-rapporteringstjenesteer (SSRS)-rapporter, der er tilgængelige](SSRS-report.md)
 - [Rapport for arbejdsgangstyper](../../fin-ops/organization-administration/workflow-types-report.md)

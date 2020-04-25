@@ -3,7 +3,7 @@ title: Behandle tilmeldingsberettigelse
 description: I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0344c48460a7d1540481e09ba106526e119de72b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1d978982213e713e362798c49aa57e6dc8b7a862
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008433"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230010"
 ---
 # <a name="process-enrollment-eligibility"></a>Behandle tilmeldingsberettigelse
-
-[!include [banner](includes/preview-feature.md)]
 
 I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
 
@@ -37,10 +35,10 @@ I denne artikel beskrives, hvordan du kan køre processen til berettigelse af ti
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Tilmeldingsperiode | Den tilmeldingsperiode, der skal behandles berettigelse til tilmelding for. |
-   | Juridisk enhed | Den juridiske enhed, der skal behandles berettigelse til tilmelding for. |
-   | Arbejdstråd | Den arbejder, der skal behandles berettigelse til tilmelding for. Hvis du ikke udfylder dette felt, behandles berettigelsen til tilmelding for alle arbejdere. |
-   | Frynsegodeplan | Den frynsegodeplan, der skal behandles berettigelse til tilmelding for.
+   | **Tilmeldingsperiode** | Den tilmeldingsperiode, der skal behandles berettigelse til tilmelding for. |
+   | **Juridisk enhed** | Den juridiske enhed, der skal behandles berettigelse til tilmelding for. |
+   | **Arbejdstråd** | Den arbejder, der skal behandles berettigelse til tilmelding for. Hvis du ikke udfylder dette felt, behandles berettigelsen til tilmelding for alle arbejdere. |
+   | **Frynsegodeplan** | Den frynsegodeplan, der skal behandles berettigelse til tilmelding for.
 
 3. Hvis du vil køre processen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 
@@ -53,3 +51,24 @@ I denne artikel beskrives, hvordan du kan køre processen til berettigelse af ti
    4. Vælg **OK**. Processen køres med de parametre, du angiver.
 
 4. Vælg **OK**.
+
+## <a name="view-process-results"></a>Vis procesresultater
+
+I denne artikel beskrives, hvordan du få vist resultater af berettigelsesprocessen.
+
+1.  Vælg **Procesresultater** under **Behandling** i arbejdsområdet **Administration af frynsegoder**.
+
+2.  Følgende felter er angivet i formularen **Procesresultater**:
+
+   | Felt | Beskrivende tekst |
+   | --- | --- |
+   | **Proces-id** | Det entydige id for kombinationen af Arbejder, Juridisk enhed og Proceskørsel. |
+   | **Procestype** | Det identificerer den proces, der blev kørt. Eksempel: Tilmelding. |
+   | **Registreringstidspunkt** | Det tidspunkt, hvor berettigelsesprocessen blev kørt. |
+   | **Juridisk enhed** | Den juridiske enhed, der er angivet under tilmeldingsprocessen. |
+   | **Arbejdstråd** | Den arbejder, der blev behandlet. |
+   | **Plan | Den frynsegodeplan, som tilmeldingen blev forsøgt for. |
+   | **Berettigelsesregel** | Den berettigelsesregel, der blev behandlet. Hvis der blev fundet en fejl, før berettigelsen blev kørt, vil dette felt være tomt. Eksempel: Hvis der ikke er defineret kompensation for en arbejder, vil berettigelsesprocessen ikke blive kørt, og dette felt vil være tomt. |
+   | **Resultatstatus** | Det vil være Berettiget eller Ikke-berettiget. Resultatstatussen vil være Ikke-berettiget, hvis arbejderen ikke opfylder kriterierne for berettigelsesreglen, hvis arbejderen mangler påkrævede oplysninger som f.eks. en betalingsfrekvens eller fast løn, eller hvis der mangler oplysninger i frynsegodeplanen, der forhindrer, at arbejdere kan tilmeldes. |
+   | **Resultatmeddelelse** | Angiver, hvorfor en arbejder ikke er berettiget til en frynsegodeplan, eller hvis berettigelsesreglen er overført. |
+

@@ -2,14 +2,14 @@
 title: Hjælp-ressourcer til Supply Chain Management
 description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til Supply Chain Management-funktioner.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
-ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
+ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853982"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201519"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Hjælp-ressourcer til Supply Chain Management
 
@@ -57,11 +57,11 @@ Du kan finde flere oplysninger om Dynamics 365 Finance ved at gå til siden [Sta
 
 ## <a name="videos"></a>Videoer
 
-Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).
+Disse korte videoer hjælper dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).
 
-- [Synkronisere en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synkronisering af en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017).
+Disse korte videoer hjælper dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017).
 
 -  [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
@@ -75,7 +75,7 @@ Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, de
 -  [Godkende indkøbsordrer på en mobilenhed](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuel planlægning med Gantt-diagram til produktions- og batchordrer](https://youtu.be/BtbuShkGj4I)
 
-Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version er også stort set identiske. 
+Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er stadig gældende, og procedurerne i den aktuelle version er identiske. 
 
 **Omkostningsstyring**
 

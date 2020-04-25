@@ -3,7 +3,7 @@ title: Arbejdsområde for kreditorbetalinger
 description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorbetalinger. Arbejdsområdet Kreditorbetalinger viser oplysninger, der vedrører behandling af kreditorbetalinger.
 author: abruer
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 89ba0d68bd52413328dd583e87b09b01fd523d6f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177052"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225007"
 ---
 # <a name="vendor-payments-workspace"></a>Arbejdsområde for kreditorbetalinger
 
@@ -36,7 +36,7 @@ Følgende konfiguration skal være fuldført for de data, der skal vises i visue
 1. Gå til **Systemadministration > Konfiguration > systemparametre** for at angive **Systemvaluta** og **Systemvalutakurs**.
 2. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**. 
 2. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
-3. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **VendPaymentBIMeasure**. 
+3. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **VendPaymentBIMeasureV2**. 
 
 ## <a name="my-work-view"></a>Visningen Mit arbejde
 

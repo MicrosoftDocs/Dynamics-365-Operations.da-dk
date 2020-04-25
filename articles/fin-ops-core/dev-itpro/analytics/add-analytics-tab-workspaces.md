@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025848"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259626"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
 
@@ -84,7 +84,7 @@ Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reserv
 8. Højreklik, og vælg derefter **New Tab Page**.
 9. Giv fanesiden til et nyt, sigende navn, f.eks. **Analyse**.
 10. Vælg **Analytics (Tab Page)** i formulardesigneren.
-11. Indstil egenskaben **Caption** til **Analytics**.
+11. Indstil egenskaben **Caption** til **Analytics**, og indstil egenskaben **Auto-opgørelse** til **Ja**.
 12. Højreklik på kontrolelementet, og vælg derefter **Ny** \> **Gruppe** for at tilføje et nyt formulargruppekontrolelement.
 13. Giv formulargruppen et nyt, sigende navn, f.eks. **powerBIRapportGruppe**.
 14. I formulardesigneren skal du vælge **PanoramaBody (Tab)** og derefter trække kontrolelementet til fanen **Workspace**.

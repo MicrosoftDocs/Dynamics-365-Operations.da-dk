@@ -3,7 +3,7 @@ title: Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 description: I dette emne beskrives yderligere funktioner til beregning og anvendelse af automatiske gebyrer på Commerce-kanalordrer ved hjælp af den avancerede automatiske gebyrfunktion.
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5c03b1a1db11098058022a6916dc5bddf5518f9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022045"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175125"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 
@@ -37,7 +37,7 @@ Denne funktionalitet er kun tilgængelig, hvis den [avancerede automatiske gebyr
 
 Denne nye funktion giver organisationer større fleksibilitet i den måde, som automatiske gebyrer på hovedniveau beregnes og anvendes i salgstransaktioner.
 
-I versioner af appen, der er ældre end version 10.0.1, beregnes automatiske gebyrer på hovedniveau, der har en bestemt leveringsmåderelation, kun, når der er overensstemmelse med den leveringsmåde, der er defineret i salgsordrehovedet.
+I versioner af appen, der er ældre end version 10.0.1, beregnes automatiske gebyrer på hovedniveau, som har en bestemt leveringsmåderelation, kun, når der er overensstemmelse med den leveringsmåde, som er defineret i salgsordrehovedet.
 
 F.eks. defineres automatiske gebyrer på hovedniveau for levering **99** og leveringsmåden **11**. Der oprettes en salgsordre, og leveringsmåden **99** defineres i ordrehovedet. Men nogle af salgslinjerne er konfigureret, så de sendes ved hjælp af leveringsmåde **11**. I så fald tages kun gebyrer på hovedniveau, der er knyttet til leveringsmåde **99**, i betragtning og anvendes på salgsordren.
 
@@ -45,9 +45,9 @@ I Commerce har gebyrer på hovedniveau en ekstra funktion, som du kan bruge til 
 
 Nogle organisationer ønsker fordelene ved beregningen af lagdelte gebyrer, der følger med gebyrer på hovedniveau. Men i scenarier, der består af blandede leveringsmåder, skal de også sikre, at de gebyrer, der beregnes, passer til den leveringsmåde, der er defineret på hver salgslinje.
 
-Du kan nu konfigurere automatiske gebyrer på hovedniveau, så alle leveringsmåder på ordren indgår i beregningen af gebyrer. Denne funktionalitet kræver en mere kompleks beregningslogik til beregning af gebyrer på hovedniveau. Logikken grupperer de varer, der leveres ved hjælp af den samme leveringsmåde, og behandler denne gruppe som beregningsgruppen for varerne ved beregning af automatiske gebyrer på hovedniveau. For varer, der har samme leveringsmåde, beregnes automatiske gebyrer ud fra den samlede salgsværdi for varerne. På denne måde bestemmes det relevante automatiske gebyrniveau.
+Du kan nu konfigurere automatiske gebyrer på hovedniveau, så alle leveringsmåder på ordren indgår i beregningen af gebyrer. Denne funktionalitet kræver en mere kompleks beregningslogik til beregning af gebyrer på hovedniveau. Logikken grupperer de varer, der leveres ved hjælp af samme leveringsmåde, og behandler denne gruppe som beregningsgruppen for varerne ved beregning af automatiske gebyrer på hovedniveau. For varer, der har samme leveringsmåde, beregnes automatiske gebyrer ud fra den samlede salgsværdi for varerne. På denne måde bestemmes det relevante automatiske gebyrniveau.
 
-Når de relevante gebyrer på hovedniveau opnås for de salgslinjer, der sendes ved hjælp af den samme leveringsmåde, fordeles de beregnede gebyrer helt ned til salgslinjeniveau. Da disse gebyrer er på linjeniveau og ikke holdes på hovedniveau, oprettes en mere specifik tilknytning mellem varen og den gebyrværdi, der beregnes for den. Denne funktionsmåde kan være nyttig ved delvise returneringer, hvor en organisation kun ønsker at tilbagebetale en del af gebyrer i stedet for hele gebyret, når kun nogle af varerne returneres.
+Når de relevante gebyrer på hovedniveau opnås for de salgslinjer, der sendes ved hjælp af samme leveringsmåde, fordeles de beregnede gebyrer helt ned til salgslinjeniveau. Da disse gebyrer er på linjeniveau og ikke holdes på hovedniveau, oprettes en mere specifik tilknytning mellem varen og den gebyrværdi, der beregnes for den. Denne funktionsmåde kan være nyttig ved delvise returneringer, hvor en organisation kun ønsker at tilbagebetale en del af gebyrer i stedet for hele gebyret, når kun nogle af varerne returneres.
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -169,3 +169,9 @@ Derfor tildeles vare 81334 et fragtgebyr på $5,62 i dette eksempel. Du kan få 
 ![Forholdsmæssigt beregnede gebyrer på salgslinje for vare 81334](media/proratedlinecharge.png)
 
 Når denne beregningsmetode bruges til en delvis returnering, og hvis gebyrkoden kan refunderes, er det kun en del af det gebyr, som er allokeret til den pågældende linje, der refunderes, når varen er returneret.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Avancerede automatiske gebyrer for omni-kanal](omni-auto-charges.md)
+
+[Aktivere og konfigurere automatiske gebyrer efter kanal](auto-charges-by-channel.md)

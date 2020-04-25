@@ -3,7 +3,7 @@ title: Aktivér produktanbefalinger
 description: I dette emne beskrives, hvordan du kan lave produktanbefalinger, der er baseret på kunstig intelligens-maskinel læring (AI-ML), som er tilgængelig for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154407"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259788"
 ---
 # <a name="enable-product-recommendations"></a>Aktivér produktanbefalinger
 
@@ -34,12 +34,32 @@ I dette emne beskrives, hvordan du kan lave produktanbefalinger, der er baseret 
 
 ## <a name="recommendations-pre-check"></a>Forhåndscheck af anbefalinger
 
-Før du aktiverer anbefalinger, skal du vide, at produktanbefalingerne kun understøttes for Commerce-kunder, som har overført deres lager for at bruge Azure Data Lake Storage (ADLS). 
+Før du aktiverer, skal du vide, at produktanbefalingerne kun understøttes for Commerce-kunder, som har overført deres lager for at bruge Azure Data Lake Storage (ADLS). 
 
-Du kan se trinnene til at aktivere i [Sådan aktiveres ADLS i et Dynamics 365-miljø](enable-ADLS-environment.md).
+Følgende konfigurationer skal aktiveres i administrationen, før du aktiverer anbefalinger:
 
-Derudover skal du kontrollere, at RetailSale-målinger er aktiveret. Du kan få mere at vide om denne opsætningsproces [her.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
+1. Kontrollér, at ADLS er købt og godkendt i miljøet. Du kan få flere oplysninger i [Kontrollér, at ADLS er købt og godkendt i miljøet](enable-ADLS-environment.md).
+2. Sørg for, at opdatering af enhedslageret er automatiseret. Du kan finde flere oplysninger i [Sørg for, at opdatering af enhedslageret er automatiseret](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Bekræft, at Azure AD-identitetskonfiguration indeholder en indtastning til anbefalinger. Du kan få flere oplysninger om, hvordan denne handling udføres, nedenfor.
 
+Derudover skal du kontrollere, at RetailSale-målinger er aktiveret. Du kan få mere at vide om denne opsætning i [Arbejde med målpunkter](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+
+## <a name="azure-ad-identity-configuration"></a>Azure AD-identitetskonfiguration
+
+Dette trin er obligatorisk for alle kunder, der kører en IaaS-konfiguration (Infra-Structure as a Service). For kunder, der kører på service fabric (SF), skal dette trin være automatisk, og det anbefales, at man kontrollerer, at indstillingen er konfigureret som forventet.
+
+### <a name="setup"></a>Konfiguration
+
+1. Fra administrationen skal du søge efter siden **Azure Active Directory-programmer**.
+2. Kontrollér, om der findes en post for "RecommendationSystemApplication-1".
+
+Hvis posten ikke findes, skal du tilføje en ny post med følgende oplysninger:
+
+- **Klient-id** – d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Navn** – RecommendationSystemApplication-1
+- **Bruger-id** – RetailServiceAccount
+
+Gem og luk siden. 
 
 ## <a name="turn-on-recommendations"></a>Aktivere anbefalinger
 
@@ -49,10 +69,10 @@ Benyt følgende fremgangsmåde for at aktivere produktanbefalinger.
 1. Vælg **Anbefalingslister** på listen over delte parametre.
 1. Vælg **Ja** i indstillingen **Aktivér anbefalinger**.
 
-![Aktivere produktanbefalinger](./media/enableproductrecommendations.png)
+![Slå anbefalinger til](./media/enablepersonalization.png)
 
 > [!NOTE]
-> Denne procedure starter processen til oprettelse af produktanbefalingslister. Der kan være op til flere timer, før listerne er tilgængelige og kan ses på POS eller i Dynamics 365 Commerce.
+> Denne procedure starter processen til oprettelse af produktanbefalingslister. Der kan tage op til flere timer, før listerne er tilgængelige og bliver vist på POS eller i Dynamics 365 Commerce.
 
 ## <a name="configure-recommendation-list-parameters"></a>Konfigurere parametre for anbefalingslister
 
@@ -62,9 +82,11 @@ Den AI-ML-baserede produktanbefalingsliste angiver som standard foreslåede vær
 
 Når anbefalingerne er aktiveret i Commerce-administrationen, skal anbefalingspanelet føjes til kontrolelementets POS-skærm ved hjælp af layoutværktøjet. Du kan få mere at vide om denne proces i [Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder](add-recommendations-control-pos-screen.md). 
 
-## <a name="enable-personalized-recommendations"></a>Aktivere personlige anbefalinger
+## <a name="enable-personalized-recommendations"></a>Aktivere tilpassede anbefalinger
 
-Yderligere oplysninger om, hvordan du modtager tilpassede anbefalinger, finder du i [Aktivere personlige anbefalinger](personalized-recommendations.md).
+I Dynamics 365 Commerce kan detailhandlere gøre personligt tilpassede produktanbefalinger tilgængelige. På denne måde kan personlige anbefalinger indarbejdes i den online kundeoplevelse og på salgsstedet (POS). Når tilpasningsfunktionen er slået til, kan systemet tilknytte en brugers købs- og produktoplysninger for at generere individuelle produktanbefalinger.
+
+Du kan få flere oplysninger om tilpassede anbefalinger i [Aktivere personlige anbefalinger](personalized-recommendations.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

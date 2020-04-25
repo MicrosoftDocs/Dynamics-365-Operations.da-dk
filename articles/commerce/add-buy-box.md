@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154057"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261392"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -46,7 +46,7 @@ På siden med produktdetaljer er et købefelt opdelt i to områder: et medieomr�
 I et købsfeltmodul vises titlen, beskrivelsen, prisen og klassifikationen for et produkt. Kunderne kan også vælge produktvarianter, der har forskellige produktattributter, f.eks. størrelse, typografi og farve. Når der er valgt en produktvariant, opdateres andre egenskaber i købefeltet (f. eks. produktbeskrivelsen og -billederne), så de afspejler variantoplysningerne. 
 
 Der angives en mængdevælger, så debitorer kan angive antallet af varer, der skal købes. Det maksimale antal, der kan købes, kan defineres i indstillingerne for webstedet.
- 
+
 Fra købsfeltet kan kunderne også udføre handlinger, som f.eks. føje et produkt til indkøbsvognen, føje et produkt til ønskelisten og vælge et afhentningssted. Disse handlinger kan udføres på et produkt eller en produktvariant. Hvis du vil føje et produkt til en ønskeliste, skal kunden være logget på.
 
 Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produktegenskaber og handlingskontroller. 
@@ -58,14 +58,15 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler, der kan bruges i et købefeltmodul
 
 - **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Den kan understøtte fra ét til mange billeder. Det understøtter også miniaturebilleder. Miniaturebillederne kan arrangeres enten vandret (som en række under billedet) eller lodret (som en kolonne ved siden af billedet). Du kan føje mediegallerimodulet til pladsen **Medier** i købefeltmodulet. Det understøtter i øjeblikket kun billeder. 
-- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Modulet Butiksvælger](store-selector.md).
+- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Du kan få flere oplysninger om dette modul i [Butiksvælgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
 
 Købefeltmoduler har tre indstillinger, der kan konfigureres på **Indstillinger for websted \> Udvidelser**:
 
 - **Maks. antal** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
-- **Lagerkontrol** – når værdien er angivet til **Sand**, føjes der først en vare til indkøbsvognen, når købefeltmodulet har sikret, at varen er på lager. Denne lagerkontrol udføres både for de scenarier, hvor varen skal afsendes, og for scenarier, hvor den afhentes i butikken. Hvis værdien er angivet til **Falsk**, udføres der ingen lagerkontrol, før der føjes en vare til indkøbsvognen, og ordren afgives.
+- **Lagerkontrol** – når værdien er angivet til **Sand**, føjes der først en vare til indkøbsvognen, når købefeltmodulet har sikret, at varen er på lager. Denne lagerkontrol udføres for de scenarier, hvor varen skal afsendes, og for scenarier, hvor den afhentes i butikken. Hvis værdien er angivet til **Falsk**, udføres der ingen lagerkontrol, før der føjes en vare til indkøbsvognen, og ordren afgives. Du kan få flere oplysninger om, hvordan du konfigurerer lagerindstillinger i et sikkerhedskontor, i [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md).
+
 - **Lagerbuffer** – Denne egenskab bruges til at angive et buffernummer til lageret. Lageret vedligeholdes i realtid, og når mange kunder afgiver ordrer, kan det være vanskeligt at bevare en nøjagtig lageroptælling. Når der foretages en lagerkontrol, og lageret er mindre end bufferantallet, behandles produktet, som om det ikke er på lager. Når salg sker hurtigt via flere kanaler, og lageroptællingen ikke er synkroniseret, er der derfor mindre risiko for, at der sælges en vare, som ikke er på lager.
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
@@ -93,16 +94,20 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 [Oversigt over startsæt](starter-kit-overview.md)
 
-[Modulet Butiksvælger](store-selector.md)
+[Butiksvælgermodul](store-selector.md)
 
 [Container-modul](add-container-module.md)
 
 [Indkøbskurvsmodul](add-cart-module.md)
 
+[Ikon for indkøbskurvsmodul](cart-icon-module.md)
+
 [Betalingsmodul](add-checkout-module.md)
 
 [Ordrebekræftelsesmodul](order-confirmation-module.md)
 
-[Sidehovedmodul](author-header-module.md)
+[Overskriftsmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+[Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)

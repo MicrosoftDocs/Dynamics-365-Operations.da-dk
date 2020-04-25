@@ -2,7 +2,7 @@
 title: Aktivere udskrivning af id-etiket
 description: Dette emne viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket (Serial Shipping Container Code), efter at sidste vare er plukket fra lager i en arbejdsproces til salgspluk.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 545f1c15888bcd0b46e1028f58cbe3a274846c92
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 484a1465dd41429fe201de18aac55f118a483cab
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146023"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3217005"
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivere udskrivning af id-etiket
 
@@ -37,7 +37,7 @@ Dette emne viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket 
 3. Vælg **Gem**.
 4. Luk siden.
 
-## <a name="setup-the-sscc-license-plate-number-sequence"></a>Konfigurer SSCC-id-sekvensen
+## <a name="setup-the-sscc-license-plate-number-sequence"></a>Konfigurer SSCC-id-nummersekvensen
 1. Gå til **Navigationsrude > Moduler > Organisationsadministration > Nummerserier > Nummerserier**.
 2. Vælg en indstilling i feltet **Område**.
 3. Vælg en indstilling i feltet **Reference**.

@@ -17,16 +17,16 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b91b5c5345a95f305d5e45ddff369579b910448c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7fa99c179d69a01289532ed9590e6e17098b1d2c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174586"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144525"
 ---
 # <a name="set-up-a-fund-in-the-public-sector"></a>Konfigurere en finansieringskilde i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Middeltyper skal være oprettet, før du kan konfigurere midler. Hvert enkelt middel skal have et navn og et entydigt nummer og skal være tildelt en middeltype og middelklasse. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

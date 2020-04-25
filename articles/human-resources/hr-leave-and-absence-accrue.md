@@ -3,7 +3,7 @@ title: Periodiser orlovs- og fraværsplaner
 description: Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medarbejdere eller for en enkelt person.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba60fc2e5b17ec32aa6ad7eb104e8ae55ddee3bb
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092332"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197307"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodiser orlovs- og fraværsplaner
 
@@ -35,7 +35,7 @@ Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medar
 
 2. Under **Administrer orlov** skal du vælge **Periodiser orlovs- og fraværsplaner**.
 
-3. Vælg enten **Dags dato**, eller vælg **Brugerdefineret dato** i **Periodisering pr.** i dialogboksen **Periodiser orlovs- og fraværsplaner**, og angiv en brugerdefineret dato.
+3. Dialogboksen **Periodisere planer for orlov og fravær** vises. I **Periodisering pr.** skal du vælge **Dags dato** eller **Brugerdefineret dato** og angive en brugerdefineret dato.
 
 4. Hvis du vil køre periodiseringsprocessen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 
@@ -53,7 +53,7 @@ Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medar
 
 2. Vælg **Periodiser orlovs- og fraværsplaner**.
 
-3. Vælg enten **Dags dato**, eller vælg **Brugerdefineret dato** i **Periodisering pr.** i dialogboksen **Periodiser orlovs- og fraværsplaner**, og angiv en brugerdefineret dato.
+3. Dialogboksen **Periodisere planer for orlov og fravær** vises. I **Periodisering pr.** skal du vælge **Dags dato** eller **Brugerdefineret dato** og angive en brugerdefineret dato.
 
 4. Hvis du vil køre periodiseringsprocessen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 
@@ -65,17 +65,45 @@ Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medar
 
    4. Vælg **OK**. Periodiseringsprocessen køres med de parametre, du angiver.
 
-## <a name="preview-features-for-leave-and-absence"></a>Visningsfunktioner for orlov og fravær
+## <a name="delete-leave-and-absence-accruals-for-multiple-employees"></a>Slette periodiseringer af orlov og fravær for flere medarbejdere
 
-[!include [banner](includes/preview-feature-leave-absence.md)]
+Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Periodiseringsdatoer skal være dateret i dag eller i fremtiden.
 
-Du kan aktivere følgende visningsfunktioner for orlov og fravær:
+1. På siden **Orlov og fravær** skal du vælge fanen **Links**.
 
-- **Slet periodiseringer af orlovs- og fraværsplaner**. Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Periodiseringsdatoer skal være dateret i dag eller i fremtiden.
+2. Under **Administrer orlov** skal du vælge **Slet periodiseringer af orlovs- og fraværsplaner**.
 
-- **Revision af orlovsperiodisering**. Viser, hver gang en person kører eller sletter en periodisering for en eller flere medarbejdere, sammen med datoen og, hvem der udførte handlingen.
+3. Vælg **Orlovsplan** i dialogboksen **Slet periodiseringer af orlovs- og fraværsplaner**. 
+
+4. Vælg **Slet saldoreguleringer**, hvis det er relevant.
+
+5. Angiv eller vælg en **Dato for orlovsperiodisering**. Denne dato skal være i dag eller i fremtiden. 
+
+6. Vælg **OK**. Periodiseringsprocessen sletter periodiseringer med de parametre, du angiver. 
+
+## <a name="delete-leave-and-absence-accruals-for-a-single-employee"></a>Slette periodiseringer af orlov og fravær for en enkelt medarbejder
+
+1. Vælg **Orlov**i medarbejderens post.
+
+2. Vælg **Slet periodiseringer af orlovs- og fraværsplaner**.
+
+3. Vælg **Orlovsplan** i dialogboksen **Slet periodiseringer af orlovs- og fraværsplaner**. 
+
+4. Vælg **Slet saldoreguleringer**, hvis det er relevant.
+
+5. Angiv eller vælg en **Dato for orlovsperiodisering**. Denne dato skal være i dag eller i fremtiden. 
+
+6. Vælg **OK**. Periodiseringsprocessen sletter periodiseringer med de parametre, du angiver. 
+
+## <a name="review-leave-accrual-and-deletion-processes"></a>Gennemse processer til orlovsperiodisering og sletning
+
+**Revision af orlovsperiodisering** vises, hver gang du kører eller sletter en periodisering for en eller flere medarbejdere. Datoen og den person, der udførte handlingen, vises også.
+
+1. På siden **Orlov og fravær** skal du vælge fanen **Links**.
+
+2. Under **Administrer orlov** skal du vælge **Slet revision af orlovsperiodisering**.
 
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
-- [Oprette en orlovs- og fraværsplan](hr-leave-and-absence-plans.md)
+- [Oprette en plan for orlov og fravær](hr-leave-and-absence-plans.md)

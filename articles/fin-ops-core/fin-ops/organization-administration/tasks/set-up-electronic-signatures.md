@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ad4ef067841511e235dcf538c720b72283d31c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0b8b248481f04856fe15dadbc245caae5330ef8f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177058"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140530"
 ---
 # <a name="set-up-electronic-signatures"></a>Opsætning af elektroniske signaturer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Brug denne procedure til at konfigurere elektroniske signaturer. En elektronisk signatur bekræfter identiteten på en person, som skal starte eller godkende en computerproces. Det demodatafirma, der bruges til at oprette denne procedure, er DAT.
 

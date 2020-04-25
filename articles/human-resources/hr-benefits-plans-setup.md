@@ -3,7 +3,7 @@ title: Oprette en frynsegodeplan
 description: Konfigurer frynsegodeplaner i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008502"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230102"
 ---
 # <a name="create-a-benefits-plan"></a>Oprette en frynsegodeplan
-
-[!include [banner](includes/preview-feature.md)]
 
 Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Human Resources.
 
@@ -39,16 +37,16 @@ Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Huma
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Plan | Et entydigt id for planen. |
-   | Beskrivelse | En beskrivelse af planen. |
-   | Plantype | Når du opretter en ny plan, skal du angive plantypen. En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig flere planer af den pågældende type, og angiver, om kontaktpersoner er modtagere eller afhængige, og definerer disponeringsindstillinger. Du kan oprette nye brugerdefinerede plantyper for at imødekomme behovet for dine tilbudte frynsegoder. De vigtigste typer af frynsegodeplaner er: <ul><li>401K</li><li>ADD</li><li>Tandlægearbejde</li><li>Fitness</li><li>FSA</li><li>Liv</li><li>LTD</li><li>Medicinsk</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
-   | Kode for plantype | Kodetypekoden for plantypen. |
-   | Program | Angiver et program, som planen eventuelt kan tildeles til. |
-   | Bundt | Angiver et bundt, som planen eventuelt kan tildeles til. |
-   | Hoved | Angiver, om planen er behovsplanen i det bundt, den er tildelt til. |
-   | Status | Angiver frynsegodeplanens aktuelle status. Standardværdien er Aktiv. Hvis du ændrer status til Inaktiv, vil planen ikke være tilgængelig som et valg under registreringen. |
-   | Dato og tidspunkt for Gyldig fra | Dato og klokkeslæt, som planen starter. Standardværdien er den aktuelle systemdato. |
-   | Dato og tidspunkt for Gyldig til | Den dato og det klokkeslæt, hvor planen slutter (status er angivet til Inaktiv). Standardværdien er 31-12-2154, som angiver aldrig. |
+   | **Plan** | Et entydigt id for planen. |
+   | **Beskrivelse** | En beskrivelse af planen. |
+   | **Plantype** | Når du opretter en ny plan, skal du angive plantypen. En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig flere planer af den pågældende type, og angiver, om kontaktpersoner er modtagere eller afhængige, og definerer disponeringsindstillinger. Du kan oprette nye brugerdefinerede plantyper for at imødekomme behovet for dine tilbudte frynsegoder. De vigtigste typer af frynsegodeplaner er: <ul><li>401K</li><li>ADD</li><li>Tandlægearbejde</li><li>Fitness</li><li>FSA</li><li>Liv</li><li>LTD</li><li>Medicinsk</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
+   | **Kode for plantype** | Kodetypekoden for plantypen. |
+   | **Program** | Angiver et program, som planen eventuelt kan tildeles til. |
+   | **Bundt** | Angiver et bundt, som planen eventuelt kan tildeles til. |
+   | **Hoved** | Angiver, om planen er behovsplanen i det bundt, den er tildelt til. |
+   | **Status** | Angiver frynsegodeplanens aktuelle status. Standardværdien er Aktiv. Hvis du ændrer status til Inaktiv, vil planen ikke være tilgængelig som et valg under registreringen. |
+   | **Dato og tidspunkt for Gyldig fra** | Dato og klokkeslæt, som planen starter. Standardværdien er den aktuelle systemdato. |
+   | **Dato og tidspunkt for Gyldig til** | Den dato og det klokkeslæt, hvor planen slutter (status er angivet til Inaktiv). Standardværdien er 31-12-2154, som angiver aldrig. |
 
 4. Under fanen **Konfiguration** skal du angive værdier for følgende felter, afhængigt af den plantype, du er ved at oprette:
 
@@ -77,42 +75,42 @@ Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Huma
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Tillad/fortsæt tilmelding | Angiver, om medarbejdere kan tilmelde sig planen, hvis de overholder berettigelseskrav.</br></br>Hvis dette er angivet til Nej, vil planen ikke være tilgængelig for medarbejdere, når du behandler berettigelse. |
-   | Tilmeld automatisk fra forrige år | Angiver, om der automatisk skal tilmeldes en berettiget medarbejder i planen, hvis vedkommende er tilmeldt i løbet af det foregående år. |
-   | Tilmeld automatisk som standard | Angiver, om planen for tilmelding som standard skal vælges. Planen er ikke obligatorisk, så medarbejderen kan ændre standardvalget. |
-   | Lukket for nye tilmeldinger | Angiver, om planen kun skal begrænses til de berettigede medarbejdere, der var tilmeldt planen i det foregående år. |
-   | Obligatorisk plan | Angiver, om medarbejdere automatisk skal tilmeldes planen. Medarbejdere kan ikke ændre tilmeldingsvalget. |
-   | Dato for start | Den dato, hvor planen blev oprettet i firmaet. |
-   | Kreditorkonto (leverandør af frynsegode) | Den leverandør, som firmaet betaler præmier for planen. |
-   | Navn (leverandør af frynsegode) | Kreditorens navn. |
-   | Kreditorreference (leverandør af frynsegode) | Kreditorens reference til planen. F.eks. firmaets gruppeplannummer. |
-   | Alternativ reference (leverandør af frynsegode) | Kreditorens alternative reference til planen. F.eks. firmaets kontonummer. |
-   | Valuta (leverandør af frynsegode) | Den valuta, der bruges til at betale præmie til leverandøren. |
-   | Udgiftskonto (leverandør af frynsegode) | Den finanskontoen, der bruges som udgiftskonto til betaling af præmie for planen. |
-   | Kreditorkonto (administrator af frynsegode) | Den leverandør, som firmaet betaler for at administrere planen. Hvis planen er selvadministreret, skal feltet ikke udfyldes. |
-   | Navn (administrator af frynsegode) | Navnet på administratorleverandøren af frynsegode. |
-   | Kreditorreference (administrator af frynsegode) | Administratorleverandørs reference til planen. |
-   | Alternativ reference (administrator af frynsegode) | Administratorleverandørs alternative reference til planen. |
-   | Valuta (administrator af frynsegode) | Den valuta, der bruges til at betale administratoren af frynsegode. |
-   | Udgiftskonto (administrator af frynsegode) | Den finanskonto, der bruges som udgiftskonto for de omkostninger, der er knyttet til administrationen af planen. |
+   | **Tillad/fortsæt tilmelding** | Angiver, om medarbejdere kan tilmelde sig planen, hvis de overholder berettigelseskrav.</br></br>Hvis dette er angivet til Nej, vil planen ikke være tilgængelig for medarbejdere, når du behandler berettigelse. |
+   | **Tilmeld automatisk fra forrige år** | Angiver, om der automatisk skal tilmeldes en berettiget medarbejder i planen, hvis vedkommende er tilmeldt i løbet af det foregående år. |
+   | **Tilmeld automatisk som standard** | Angiver, om planen for tilmelding som standard skal vælges. Planen er ikke obligatorisk, så medarbejderen kan ændre standardvalget. |
+   | **Lukket for nye tilmeldinger** | Angiver, om planen kun skal begrænses til de berettigede medarbejdere, der var tilmeldt planen i det foregående år. |
+   | **Obligatorisk plan** | Angiver, om medarbejdere automatisk skal tilmeldes planen. Medarbejdere kan ikke ændre tilmeldingsvalget. |
+   | **Dato for start** | Den dato, hvor planen blev oprettet i firmaet. |
+   | **Kreditorkonto** (leverandør af frynsegode) | Den leverandør, som firmaet betaler præmier for planen. |
+   | **Navn** (leverandør af frynsegode) | Kreditorens navn. |
+   | **Kreditorreference** (leverandør af frynsegode) | Kreditorens reference til planen. F.eks. firmaets gruppeplannummer. |
+   | **Alternativ reference** (leverandør af frynsegode) | Kreditorens alternative reference til planen. F.eks. firmaets kontonummer. |
+   | **Valuta** (leverandør af frynsegode) | Den valuta, der bruges til at betale præmie til leverandøren. |
+   | **Udgiftskonto** (leverandør af frynsegode) | Den finanskontoen, der bruges som udgiftskonto til betaling af præmie for planen. |
+   | **Kreditorkonto** (administrator af frynsegode) | Den leverandør, som firmaet betaler for at administrere planen. Hvis planen er selvadministreret, skal feltet ikke udfyldes. |
+   | **Navn** (administrator af frynsegode) | Navnet på administratorleverandøren af frynsegode. |
+   | **Kreditorreference** (administrator af frynsegode) | Administratorleverandørs reference til planen. |
+   | **Alternativ reference** (administrator af frynsegode) | Administratorleverandørs alternative reference til planen. |
+   | **Valuta** (administrator af frynsegode) | Den valuta, der bruges til at betale administratoren af frynsegode. |
+   | **Udgiftskonto** (administrator af frynsegode) | Den finanskonto, der bruges som udgiftskonto for de omkostninger, der er knyttet til administrationen af planen. |
 
 6. Filtrer efter behov under fanen **Filtre**. Du kan filtrere efter følgende felter:
 
-   - Virksomhedsenhed
-   - Afdeling
-   - Juridisk enhed
-   - Adresse
-   - Stilling
+   - **Virksomhedsenhed**
+   - **Afdeling**
+   - **Juridisk enhed**
+   - **Adresse**
+   - **Stilling**
 
 7. Angiv værdier for følgende felter under fanen **Berettigelsesregler**:
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Linjenummer | Berettigelsesreglens linjenummer. |
-   | Berettigelsesregel | En berettigelsesregel, der skal anvendes på frynsegodeplanen. Denne berettigelsesregel anvendes på den tilsvarende handlingstype og knyttes til den angivne venteperiode for dækning og fradrag. |
-   | Handlingstype | Den handling, som berettigelsesreglen skal anvendes på: tilmelding til frynsegoder eller udløb af frynsegoder. |
-   | Karenstid for dækning | En værdi fra formularen Venteperioder. Venteperioden for dækning er det antal dage eller måneder, en medarbejder venter på dækning af frynsegoder eller udløb af frynsegoder baseret på kriterierne i berettigelsesreglen og handlingstypen. |
-   | Karenstid for fradrag | En værdi fra formularen Venteperioder. Venteperioden for fradrag er det antal dage eller måneder, en medarbejder venter på fradrag for frynsegoder på lønsedlen baseret på kriterierne i berettigelsesreglen og handlingstypen. |
+   | **Linjenummer** | Berettigelsesreglens linjenummer. |
+   | **Berettigelsesregel** | En berettigelsesregel, der skal anvendes på frynsegodeplanen. Denne berettigelsesregel anvendes på den tilsvarende handlingstype og knyttes til den angivne venteperiode for dækning og fradrag. |
+   | **Handlingstype** | Den handling, som berettigelsesreglen skal anvendes på: tilmelding til frynsegoder eller udløb af frynsegoder. |
+   | **Karenstid for dækning** | En værdi fra formularen Venteperioder. Venteperioden for dækning er det antal dage eller måneder, en medarbejder venter på dækning af frynsegoder eller udløb af frynsegoder baseret på kriterierne i berettigelsesreglen og handlingstypen. |
+   | **Karenstid for fradrag** | En værdi fra formularen Venteperioder. Venteperioden for fradrag er det antal dage eller måneder, en medarbejder venter på fradrag for frynsegoder på lønsedlen baseret på kriterierne i berettigelsesreglen og handlingstypen. |
 
 8. Vælg **Gem**.
 

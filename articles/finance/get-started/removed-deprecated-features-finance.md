@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127971"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175102"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -47,6 +47,18 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Produktområder, der er berørt**         | Applikation |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfases: Fra og med d. 1. juli 2021 planlægger vi ikke længere at understøtte SSRS-rapporter: **Registrering af salgsmoms, registrering af købsmoms, EU-oversigt af momsregister – funktionsreference PL-00014**. Eksempel i Excel-format til standardrevisionsfil med momsopgørelse (JPK_VDEK) vil blive introduceret i stedet. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.11 udgaven
+
+### <a name="norwegian-standard-main-accounts"></a>Norske standardhovedkonti
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Omdesign  |
+| **Erstattet af en anden funktion?**   | Ja (erstattet af programspecifikke parametre for ER-format) |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Fra og med d. 1. april 2021 planlægger vi ikke længere at understøtte funktionalitet, der er relateret til standardhovedkonti: Referencefelt, relateret tabel, dataobjekt. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.7 udgaven
 

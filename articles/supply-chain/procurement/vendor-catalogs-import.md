@@ -2,7 +2,7 @@
 title: Importér kreditorkataloger
 description: Dette emne beskriver processen for import af data fra kreditorkataloget.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017868"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207365"
 ---
 # <a name="import-vendor-catalogs"></a>Importér kreditorkataloger
 [!include[banner](../includes/banner.md)]
@@ -35,17 +35,16 @@ I Dynamics 365 Supply Chain Management kan indkøbsmedarbejderne oprette og vedl
 Du kan overføre katalogdata, som er indsendt af en kreditor, fra klienten for Microsoft Dynamics 365.
 
 De produktdata, som en kreditor sender til dig i form af en CMR-fil (Catalog Maintenance Request – anmodning om katalogvedligeholdelse), skal være i filformatet XML. CMR-filen skal indeholde alle oplysninger om de produkter, som kreditoren leverer til dit firma.
-
+''''
 ## <a name="import-vendor-catalog-data"></a>Importere oplysninger fra et kreditorkatalog
-
-Hvis du vil importere oplysninger fra et kreditorkatalog, skal du fuldføre følgende opgaver:
+'' Hvis du vil importere oplysninger fra et kreditorkatalog, skal du fuldføre følgende opgaver:
 
 1.  Opret et projekt i det arbejdsområde for Datastyring, hvor du har defineret dine regler for tilknytning af data. Vælg **Datastyring** og derefter **Opsætning af roller for dataprojekter**. 
-
+    ''
 2.  Opret et indkøbskategorihierarki, og knyt dine leverandører til bestemte indkøbskategorier. Hvis du bruger varekoder, skal du føje varekoder til indkøbskategorierne. Du kan finde flere oplysninger om opsætning af et hierarki af indkøbskategorier under [Konfigurere et indkøbskategorihierarki](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-
+    ''
 3.  Konfigurer kreditoren til katalogimport. Vælg en kreditor, og vælg derefter **Indkøb** > **Opsætning** > **Konfigurer kreditor til katalogimport**.
-
+''''
 4.  Konfigurer arbejdsgangen til katalogimport. Opret en skabelon for CMR-filen, og del den med kreditoren.
 
 5.  Vælg **Indkøb og forsyning** \> **Generelt** \> **Kataloger** \> **Kreditorkataloger** for at oprette et kreditorkatalog. De CMR-filer, som du modtager fra leverandøren, grupperes i dette katalog. 

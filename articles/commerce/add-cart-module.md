@@ -3,7 +3,7 @@ title: Indkøbsvognmodul
 description: Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 598b35b1bd365e761d8d4c5ef214935e60b971f4
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d91f6ff24f8f2c051ed23565983c2bc6a2c12b55
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261415"
 ---
 # <a name="cart-module"></a>Indkøbsvognmodul
 
@@ -45,14 +45,15 @@ Indkøbsvognmodulet har en **Overskrift**-egenskab, der kan angives til værdier
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler, der kan bruges i et indkøbsvognmodul
 
 - **Tekstblok** – Dette modul understøtter brugerdefinerede meddelelser i indkøbsvognmodulet. Meddelelserne styres af CMS (Content Management system). Der kan tilføjes en hvilken som helst besked f.eks. "Kontakt 1-800-Fabrikam, hvis der er problemer med din ordre".
-- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Modulet Butiksvælger](store-selector.md).
+- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Du kan få flere oplysninger om dette modul i [Butiksvælgermodul](store-selector.md).
 
-## <a name="cart-module-settings"></a>Indstillinger for indkøbsvognmodul
+
+## <a name="module-properties"></a>Modulegenskaber
 
 Indkøbsvognmoduler har følgende indstillinger, der kan konfigureres på **Indstillinger for websted \> Udvidelser**:
 
 - **Maks. antal** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
-- **Lagerkontrol** – når værdien er angivet til **Sand**, føjes der først en vare til indkøbsvognen, når købefeltmodulet har sikret, at varen er på lager. Denne lagerkontrol udføres for de scenarier, hvor varen skal afsendes, og for scenarier, hvor den afhentes i butikken. Hvis værdien er angivet til **Falsk**, udføres der ingen lagerkontrol, før der føjes en vare til indkøbsvognen, og ordren afgives.
+- **Lagerkontrol** – når værdien er angivet til **Sand**, føjes der først en vare til indkøbsvognen, når købefeltmodulet har sikret, at varen er på lager. Denne lagerkontrol udføres for de scenarier, hvor varen skal afsendes, og for scenarier, hvor den afhentes i butikken. Hvis værdien er angivet til **Falsk**, udføres der ingen lagerkontrol, før der føjes en vare til indkøbsvognen, og ordren afgives. Du kan få flere oplysninger om, hvordan du konfigurerer lagerindstillinger i et sikkerhedskontor, i [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md).
 - **Lagerbuffer** – Denne egenskab bruges til at angive et buffernummer til lageret. Lageret vedligeholdes i realtid, og når mange kunder afgiver ordrer, kan det være vanskeligt at bevare en nøjagtig lageroptælling. Når der foretages en lagerkontrol, og lageret er mindre end bufferantallet, behandles produktet, som om det ikke er på lager. Når salg sker hurtigt via flere kanaler, og lageroptællingen ikke er synkroniseret, er der derfor mindre risiko for, at der sælges en vare, som ikke er på lager.
 - **Tilbage til indkøb** – Denne egenskab bruges til at angive ruten for linket **Tilbage til indkøb**. Ruten kan konfigureres på webstedsniveau, så detailhandlere kan føre kunden tilbage til startsiden eller en anden side på webstedet.
 
@@ -80,9 +81,11 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 
 [Container-modul](add-container-module.md)
 
-[Modulet Butiksvælger](store-selector.md)
+[Butiksvælgermodul](store-selector.md)
 
 [Boksmodul til køb](add-buy-box.md)
+
+[Ikon for indkøbskurvsmodul](cart-icon-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 
@@ -91,3 +94,5 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 [Overskriftsmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+[Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)

@@ -17,16 +17,16 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6523c53821a0a875dd6a1184a7e38e0d95139bbe
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b669001cd9665ccc26613c2af7ef09e2d8177426
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174589"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144579"
 ---
 # <a name="create-a-one-time-vendor-and-invoice-in-the-public-sector"></a>Oprette en engangskreditor og -faktura i den offentlige sektor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Kreditorpost bruger værdier fra standardengangskreditorkontoen. Du kan få vist kontooplysningerne ved at gå til listesiden Alle kreditorer og derefter dobbeltklikke på kreditorkontonummeret for standardengangskreditoren. Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne. Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.
 

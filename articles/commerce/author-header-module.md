@@ -3,7 +3,7 @@ title: Sidehovedmodul
 description: Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: efadd19681bbb21ea5b2b469e55bc6f4b0535046
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3025647"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261438"
 ---
 # <a name="header-module"></a>Overskriftsmodul
 
@@ -51,6 +51,7 @@ Følgende moduler kan bruges i et sidehovedmodul:
 
 - **Navigationsmenu** – Navigationsmenuen repræsenterer hierarkiet for kanalnavigation og andre statiske navigationslinks. Kanalnavigationshierarkiet kan konfigureres i Dynamics 365 Commerce. Navigationsmenuen indeholder egenskaben **Navigationskilde**, der bruges til at angive navigationsmenupunkter i Detailservere og statiske menupunkter som en kilde. Hvis statiske menupunkter angives som kilde, kan der angives relative links til andre sider på webstedet. Konfigurerede elementer vises derefter som sidehovednavigation. 
 - **Søg** – Søgemodulet giver brugerne mulighed for at angive søgeord, så de kan søge efter produkter. URL-adressen til standardsøgesiden og parametrene for søgeforespørgslen skal angives på **Indstillinger for webside \> Udvidelser**. Søgemodulet har egenskaber, du kan bruge til at undertrykke søgeknappen eller -etiketten efter behov. Søgemodulet understøtter også indstillinger for automatisk at foreslå, f.eks. produkt-, nøgleords- og kategorisøgeresultater.
+- **Indkøbsvognikon** – Indkøbsvognikonmodulet repræsenterer indkøbsvognikonet, som viser antallet af varer i en indkøbsvogn på et givet tidspunkt. Du kan få flere oplysninger i [Modulet for indkøbsvognikon](cart-icon-module.md).
 
 ## <a name="create-a-header-module-for-a-page"></a>Opret et sidehovedmodul for en side
 
@@ -58,14 +59,17 @@ Følg disse trin for at oprette et sidehovedmodul.
 
 1. Opret et fragment med navnet **Sidehovedfragment**, og føj et containermodul til det.
 1. Angiv egenskaben **Bredde** til **Fyld container**i egenskabsruden for containermodulet.
-1. Føj kampagnebanner og cookie-samtykkemoduler til containermodulet.
+1. Føj et kampagnebanner og cookie-samtykkemoduler til containermodulet.
 1. Føj et andet containermodul til fragmentet, og indstil egenskaben **Bredde** til **Fyld container**.
 1. Føj et sidehovedmodul til det andet containermodul.
 1. Tilføj et navigationsmenumodul i **Navigationsmenu**pladsen i sidehovedmodulet. 
 1. Konfigurer egenskaberne for navigationsmenumodulet i egenskabsruden for navigationsmenumodulet.
 1. Tilføj et søgemodul i **Søg**pladsen i sidehovedmodulet. 
 1. Konfigurer egenskaberne for søgemodulet i egenskabsruden for søgemodulet. 
+1. Tilføj et indkøbsvognikonmodul i pladsen **Indkøbsvognikon**. 
+1. Konfigurer egenskaberne for indkøbsvognikonmodulet i egenskabsruden for ikonet for indkøbsvognikonmodulet. Hvis indkøbsvognikonet skal vise en minivogn, når der peges på den, skal du vælge **Sand** for **Vis minivogn**.
 1. Gem sidefragmentet, afslut redigeringen, og udgiv det. 
+
 
 Du kan medvirke til at sikre, at der vises et sidehoved på hver side, ved at følge disse trin i hver sideskabelon, der oprettes for webstedet.
 
@@ -76,16 +80,18 @@ Du kan medvirke til at sikre, at der vises et sidehoved på hver side, ved at f�
 
 [Oversigt over startsæt](starter-kit-overview.md)
 
-[Modulet Container](add-container-module.md)
+[Container-modul](add-container-module.md)
 
-[Købefeltmodul](add-buy-box.md)
+[Boksmodul til køb](add-buy-box.md)
 
-[Indkøbsvognmodul](add-cart-module.md)
+[Indkøbskurvsmodul](add-cart-module.md)
+
+[Modulet Indkøbskurvikon](cart-icon-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 
 [Ordrebekræftelsesmodul](order-confirmation-module.md)
 
-[Sidehovedmodul](author-header-module.md)
+[Overskriftsmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)

@@ -16,17 +16,16 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 491e23c482b8870a44b7e04cb0e58b82d2f6986d
-ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
+ms.openlocfilehash: f2b82ef80bd4b745153ca6c54c97aa172d42b9b4
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3059464"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249081"
 ---
 # <a name="calculate-the-delivery-date-for-a-line-based-on-the-lead-time"></a>Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne beskriver, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalendere for arbejdsdage, som de er angivet på fanen **Tilbud** på siden **Svar på tilbudsanmodning**. Leverandører kan angive en leveringstid for hver linje. Når en indkøbsordre er bekræftet, beregnes en leveringsdato for en linje fra bekræftelsesdatoen, baseret på leveringstiden og kalenderen med arbejdsdage. Hvis der ikke er angivet en leveringstid, bruges bekræftelsesdatoen som leveringsdato, medmindre leveringsdatoen automatisk beregnes.
 
