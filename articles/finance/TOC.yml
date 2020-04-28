@@ -70,12 +70,12 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.11 (juli 2020)
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (maj 2020)
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance 10.0.9 (april 2020)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Finance 10.0.8 (februar 2020)
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner i Dynamics 365 Finance
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Konfigurere standardomkostninger for arbejdskraft og udgifter
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Konfigurere og bruge betal ved betaling for kreditorbetalinger
+              href: project-management/setup-manage-vendor-payments.md
             - name: Periodisering købsleverancer i projektomkostninger
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektfakturering
               href: accounts-payable/project-invoicing.md
             - name: Projektkontrakter
               href: project-management/project-contracts.md
+            - name: Oprette avancerede kontrakter til fakturering baseret på status
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Projektprognoser og -budgetter
               href: project-management/project-forecasts-budgets.md
             - name: Overføre projektbudgetter ved afslutning af regnskabsår
@@ -1012,8 +1016,10 @@
                   href: project-management/project-timesheet.md
                 - name: Projekttimesedler på en mobilenhed
                   href: project-management/mobile-timesheets.md
-                - name: Implementere tilpassede felter for Project Timesheet-mobilapp
+                - name: Implementere tilpassede felter til mobilappen Projekttimeseddel
                   href: project-management/custom-fields-mobile.md
+            - name: Projekttilskud
+              href: project-management/project-grants.md
         - name: Offentlig sektor
           items:
             - name: Startside for offentlig sektor
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Import af protest over veksler
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: Momsloft
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japan
               items:
                 - name: Oversigt for Japan

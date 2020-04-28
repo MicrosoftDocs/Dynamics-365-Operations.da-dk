@@ -70,12 +70,12 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.11 (juli 2020)
+                      href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (maj 2020)
                       href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management 10.0.9 (april 2020)
                       href: get-started/whats-new-scm-10-0-9.md
-                    - name: Supply Chain Management 10.0.8 (februar 2020)
-                      href: get-started/whats-new-scm-10-0-8.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
@@ -349,6 +349,8 @@
               items:
                 - name: 'Budgetter, arbejdsordrer og projekter'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Integrere aktivstyring med anlægsaktiver
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Forebyggende og reaktiv vedligeholdelse
               items:
                 - name: Oversigt over forebyggende vedligeholdelse
@@ -565,6 +567,8 @@
                   href: cost-management/lifo-physical-value-marking.md
                 - name: Glidende gennemsnit
                   href: cost-management/moving-average.md
+                - name: Reserveomkostningssekvens med glidende gennemsnit
+                  href: cost-management/moving-average-fallback.md
                 - name: Fysiske og økonomiske opdateringer
                   href: cost-management/physical-financial-updates.md
                 - name: Løbende gennemsnitskostpris
@@ -577,9 +581,11 @@
                   href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerlukning
                   href: cost-management/inventory-close.md
-                - name: Få vist omkostningsværdier for disponibel lagerbeholdning
+                - name: Regulere omkostningsværdier for disponibel lagerbeholdning
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Rapporten Aldersfordelt lager
+                - name: Lagerrapport over lagerværdi
+                  href: cost-management/inventory-value-report-storage.md
+                - name: Lagerrapport over aldersfordelt lager
                   href: cost-management/inventory-aging-report-storage.md
             - name: Produktionsregnskab
               items:
@@ -729,9 +735,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Forberede programspecifikke metadata
                       items:
-                        - name: '(Elektronisk rapportering (ER)) Klargøre programmetadata, der skal bruges i RCS'
+                        - name: '(ER (elektronisk rapportering)) Klargøre programmetadata, der skal bruges i RCS'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Få adgang til programmetadata ved hjælp af elektronisk rapporteringskonfiguration
+                        - name: (RCS) Få adgang til programmetadata ved hjælp af konfiguration af elektronisk rapportering (ER)
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
                         - name: (RCS) Få adgang til programmetadata ved hjælp af tilsluttede programmer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
@@ -1011,19 +1017,19 @@
               href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
-            - name: (Elektronisk rapportering) Datakilder på tværs af firma i elektronisk rapportering
+            - name: (ER (elektronisk rapportering) Datakilder på tværs af firma i elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
             - name: Designe elektronisk rapporteringsformater til generering af udgående elektroniske dokumenter i forskellige formater
               items:
-                - name: (ER) Designe en konfiguration til generering af rapporter i OPENXML-format
+                - name: (ER (elektronisk rapportering)) Designe en konfiguration til generering af rapporter i OPENXML-format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: (ER) Designe konfigurationer til generering af rapporter i Word-format
+                - name: (ER (elektronisk rapportering)) Designe konfigurationer til generering af rapporter i Word-format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Designe konfigurationer til udfyldelse af PDF-skabeloner
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
             - name: Integrere billeder og figurer
               items:
-                - name: '(ER) Integrere billeder og figurer i de dokumenter, du opretter'
+                - name: '(ER (elektronisk rapportering)) Integrere billeder og figurer i de dokumenter, du opretter'
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Eksempel på integrering af billeder og figurer
                   items:
@@ -1035,7 +1041,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
             - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Definere afhængigheden af elektroniske rapporteringskonfigurationer af andre komponenter
+            - name: Definere afhængigheden af elektronisk rapporteringskonfigurationer af andre komponenter
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
             - name: Designe en elektronisk rapporteringsløsning til at bruge økonomiske dimensioner
               items:
@@ -1047,7 +1053,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Køre rapporter, som bruger økonomiske dimensioner som datakilder'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Designe elektroniske rapporteringsformater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
+            - name: Designe elektronisk rapporteringsformater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
               items:
                 - name: Oprette formater til at udføre optælling og opsummering
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
@@ -1137,7 +1143,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere parametrene for et elektronisk rapporteringsformat for hver juridisk enhed
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Udskyde udførelse af elektroniske rapporteringsformatelementer
+                - name: Udskyde udførelse af elektronisk rapporteringsformatelementer
                   items:
                     - name: Udskyde udførelse af et sekvenselement
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
@@ -1223,6 +1229,8 @@
                   href: inventory/enable-quality-management.md
                 - name: Processer for kvalitetsstyring
                   href: inventory/quality-management-processes.md
+                - name: Kvalitetsstyring for lagerstedsprocesser
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Håndtering af uoverensstemmelse
                   href: inventory/enable-nonconformance-management.md
                 - name: Konfigurere forudsætninger for administration
@@ -2545,10 +2553,12 @@
                   href: warehousing/tasks/set-up-dispositions-codes.md
                 - name: Måleenhed og lagerføringspolitikker
                   href: warehousing/unit-measure-stocking-policies.md
-                - name: Power BI-indhold for indhold
+                - name: Power BI-indhold for lagersted
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                 - name: Systemgruppering på en åben opgaveliste
                   href: warehousing/system-group-on-open-work-list.md
+                - name: Dokumentruteplanlægning for layout til id-etiketter
+                  href: warehousing/document-routing-layout-for-license-plates.md
                 - name: Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Understøttelse af mobilstregkode
@@ -2653,6 +2663,8 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Konfigurere mobilenheder til lagerstedsarbejde
                   href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Modtagelse af id med appen Lagersted til mobilenheder
+                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
                   href: warehousing/tasks/set-up-mobile-device-menu.md
                 - name: Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
@@ -2673,6 +2685,8 @@
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Kvitteringer for registrering og placering på lager
               items:
+                - name: Lagerstedshåndtering af indgående laster til indkøbsordrer
+                  href: warehousing/inbound-load-handling.md
                 - name: Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Registrere varer for en vare med aktiveret grundlæggende lagerstyring ved hjælp af en varemodtagelseskladde
@@ -2682,6 +2696,7 @@
                 - name: Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Konfigurere en arbejdsskabelon for indkøbsordrer
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Udvikling af Supply Chain Management
           items:
             - name: Udviklingsvejledning til Gantt-kontrolelementer
