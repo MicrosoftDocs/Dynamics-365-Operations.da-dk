@@ -44,6 +44,8 @@
                   href: provisioning-guide.md
                 - name: Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø
                   href: cpe-post-provisioning.md
+                - name: Konfigurere BOPIS i et Dynamics 365 Commerce-miljø
+                  href: cpe-bopis.md
                 - name: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø
                   href: cpe-optional-features.md
                 - name: Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø
@@ -86,6 +88,8 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.11 (juli 2020)
+                      href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (maj 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (april 2020)
@@ -206,6 +210,8 @@
                   href: retail-onprem.md
             - name: Installation og hotfixes
               items:
+                - name: Synkronisere installationsprogrammer med selvbetjening i Dynamics 365 Commerce
+                  href: dev-itpro/Synchronize-installers.md
                 - name: Commerce Scale Unit
                   href: dev-itpro/retail-store-system-begin.md
                 - name: Konfigurere og installere Commerce Scale Unit
@@ -226,6 +232,8 @@
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Anvende en installerbar pakke
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Initialisere oprindelsesdata i nye Commerce-miljøer
+                  href: enable-configure-retail-functionality.md
             - name: Implementering af livscyklusstyring
               items:
                 - name: Startside for implementering af livscyklusstyring
@@ -374,11 +382,11 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Sundhedskontrol af eksterne enheder og tjenester til POS
                           href: pos-healthcheck.md
-                    - name: Skærmlayouts
+                    - name: Skærmlayout
                       items:
                         - name: Skærmlayouts til demodata i MPOS/CPOS
                           href: demo-data.md
-                        - name: Skærmlayouts til POS
+                        - name: Visuelle konfigurationer af POS-brugergrænseflade
                           href: pos-screen-layouts.md
                         - name: Installere layoutdesigneren til POS
                           href: install-pos-layout-designer.md
@@ -902,10 +910,12 @@
                   href: compliance-overview.md
                 - name: Tilgængelighedsfunktioner og -egenskaber
                   href: accessibility.md
-                - name: Cookie-compliance
+                - name: Cookieoverholdelse
                   href: cookie-compliance.md
                 - name: Tilføje en side med politik om beskyttelse af personlige oplysninger
                   href: add-privacy-page.md
+                - name: 'Erstatte bruger-id''er, der er knyttet til sporede indholdsændringer'
+                  href: replace-IDs-tracked-changes.md
             - name: Startsæt
               items:
                 - name: Oversigt over startsæt
@@ -942,12 +952,16 @@
                   items:
                     - name: Indkøbskurvsmodul
                       href: add-cart-module.md
+                    - name: Ikonmodul for indkøbskurv
+                      href: cart-icon-module.md
                     - name: Betalingsmodul
                       href: add-checkout-module.md
                     - name: Ordrebekræftelsesmodul
                       href: order-confirmation-module.md
                     - name: Butiksvælgermodul
                       href: store-selector.md
+                    - name: Gavekortsmodul
+                      href: add-giftcard.md
                 - name: Kontostyringsmoduler
                   items:
                     - name: Kontostyringssider og -moduler
@@ -1156,9 +1170,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Forberede programspecifikke metadata
                       items:
-                        - name: '(Elektronisk rapportering (ER)) Klargøre programmetadata, der skal bruges i RCS'
+                        - name: '(ER (elektronisk rapportering)) Klargøre programmetadata, der skal bruges i RCS'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/commerce/toc.json
-                        - name: (RCS) Få adgang til programmetadata ved hjælp af elektronisk rapporteringskonfiguration
+                        - name: (RCS) Få adgang til programmetadata ved hjælp af konfiguration af elektronisk rapportering (ER)
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/commerce/toc.json
                         - name: (RCS) Få adgang til programmetadata ved hjælp af tilsluttede programmer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/commerce/toc.json
@@ -1172,7 +1186,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Teste den forberedte elektronisk rapporteringsløsning i destinationsprogrammet
                       items:
-                        - name: (ER) Importere konfigurationer fra RCS
+                        - name: (ER (elektronisk rapportering)) Importere konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                         - name: Generere elektroniske dokumenter til betalinger ved hjælp af en formatkonfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
@@ -1438,9 +1452,9 @@
               href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
-            - name: (ER) Datakilder på tværs af firma i elektronisk rapportering
+            - name: (ER (elektronisk rapportering) Datakilder på tværs af firma i elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
-            - name: Designe elektroniske rapporteringsformater til generering af udgående elektroniske dokumenter i forskellige formater
+            - name: Designe elektronisk rapporteringsformater til generering af udgående elektroniske dokumenter i forskellige formater
               items:
                 - name: (ER (elektronisk rapportering)) Designe en konfiguration til generering af rapporter i OPENXML-format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1462,7 +1476,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
             - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
-            - name: Definere afhængigheden af elektroniske rapporteringskonfigurationer af andre komponenter
+            - name: Definere afhængigheden af elektronisk rapporteringskonfigurationer af andre komponenter
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
             - name: Designe en elektronisk rapporteringsløsning til at bruge økonomiske dimensioner
               items:
@@ -1474,7 +1488,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Køre rapporter, som bruger økonomiske dimensioner som datakilder'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
-            - name: Designe elektroniske rapporteringsformater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
+            - name: Designe elektronisk rapporteringsformater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
               items:
                 - name: Oprette formater til at udføre optælling og opsummering
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
@@ -1492,9 +1506,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
             - name: Bruge dokumentstyringsfiler i formatoutput
               items:
-                - name: Forberede datamodeller til at bruge dokumentstyringsfiler i elektronisk rapportgeringsoutput
+                - name: Forberede datamodeller til at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Udvide datamodeller til at bruge dokumentstyringsfiler i elektroniske rapporteringsoutput
+                - name: Udvide datamodeller til at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
                 - name: Oprette formater for at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commerce/toc.json
@@ -1564,7 +1578,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere parametrene for et elektronisk rapporteringsformat for hver juridisk enhed
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: Udskyde udførelse af elektroniske rapporteringsformatelementer
+                - name: Udskyde udførelse af elektronisk rapporteringsformatelementer
                   items:
                     - name: Udskyde udførelse af et sekvenselement
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
@@ -1576,7 +1590,7 @@
                   items:
                     - name: Konfigurere den elektroniske rapporteringsstruktur
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
-                    - name: Sikkerhedskopiering og gendannelse af elektroniske rapporterings-skabeloner
+                    - name: Sikkerhedskopiering og gendannelse af elektroniske rapporteringsskabeloner
                       href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette konfigurationsudbydere og markere dem som aktive
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1940,7 +1954,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temaindstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
-                - name: Indsæt script
+                    - name: Udvide et tema
+                      href: e-commerce-extensibility/extend-theme.md
+                - name: Indsætte script
                   items:
                     - name: Script-injektorer
                       href: e-commerce-extensibility/script-injector.md
@@ -1962,6 +1978,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Flette build-systemer for Commerce og Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: Overflytte Retail SDK data fra Visual Studio 2015 til Visual Studio 2017
+                  href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Eksempler på udvidelsesmuligheder for Retail SDK
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Oprette installerbare pakker
