@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275435"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Foretage fejlfinding af problemer under den indledende opsætning
 
@@ -39,7 +39,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Du kan ikke sammenkæde en Finance and Operations-app med Common Data Service
 
-**Påkrævede legitimationsoplysninger til opsætning af dobbeltskrivning:** Azure AD-lejeradministrator
+**Påkrævet rolle for at konfigurere dobbeltskrivning:** Systemadministrator i Finance and Operations-apps og Common Data Service.
 
 Fejl på siden **Opsætning af sammenkædning til Common Data Service** er normalt forårsaget af ufuldstændige opsætnings- eller rettighedsproblemer. Kontroller, at hele tilstandskontrollen bliver gennemført tilfredsstillende på siden **Opsætning af sammenkædning til Common Data Service**, som vist i følgende illustration. Du kan ikke sammenkæde med Dobbeltskrivning, medmindre hele tilstandskontrollen gennemføres tilfredsstillende.
 

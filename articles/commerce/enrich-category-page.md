@@ -3,7 +3,7 @@ title: Forbedre en kategorilandingsside
 description: Dette emne omhandler forbedring af kategorisider i Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003044"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269837"
 ---
 # <a name="enrich-a-category-landing-page"></a>Forbedre en kategorilandingsside
 
@@ -39,7 +39,7 @@ Men i stedet for at bruge standardkategorisiden kan du bruge en "forbedret" kate
 
 ![Forbedre en kategorilandingsside](./media/CategoryLandingPages.png)
 
-I oprettelsesværktøjet indeholder siden **Produkt** en liste over kategorier fra den kanal, der er tildelt til webstedet. Hvis status **Forbedret** er valgt for en kategoriside, er den pågældende kategoriside blevet forbedret. Ellers bruges standardkategorisiden og standardindholdet til kategorien. Du kan gennemse både de forbedrede og de ikke-forbedrede kategorisider for en kategori ved at vælge kategorinavnet.
+I Commerce-webstedsgeneratoren indeholder siden **Produkter** en liste over kategorier fra den kanal, der er tildelt webstedet. Hvis status **Forbedret** er valgt for en kategoriside, er den pågældende kategoriside blevet forbedret. Ellers bruges standardkategorisiden og standardindholdet til kategorien. Du kan gennemse både de forbedrede og de ikke-forbedrede kategorisider for en kategori ved at vælge kategorinavnet.
 
 Benyt følgende fremgangsmåde for at forbedre en kategoriside.
 
@@ -48,9 +48,7 @@ Benyt følgende fremgangsmåde for at forbedre en kategoriside.
 3. Vælg en skabelon til den forbedrede kategoriside. Hvis du kun foretager mindre ændringer, kan du vælge standardkategorisiden. Du kan også vælge en bestemt skabelon for kategorisiden. Når du vælger skabelonen, åbnes sideeditoren, og den valgte skabelon bruges til at oprette en ny kategoriside for den valgte kategori. Siden er checket ud til dig, og du kan nu foretage dine ændringer.
 
 > [!NOTE]
-> Moduler, der bruger kategorispecifikationsdata, bruger dataene fra den valgte kategori.
->
-> Indstillingerne for den skabelon, du vælger, bestemmer, hvilke ændringer du kan foretage.
+> Moduler, der bruger kategorispecifikationsdata, bruger dataene fra den valgte kategori. Indstillingerne for den skabelon, du vælger, bestemmer, hvilke ændringer du kan foretage.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 3febd3ca36f4d517033e910c4087ad3a6ffff35a
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096672"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269929"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
 
@@ -66,8 +66,8 @@ Derudover kan du indsamle følgende valgfrie oplysninger:
     - Politik-id for nulstilling af adgangskode.
     - Rediger profilpolitik-id.
 
-[!NOTE]
-Disse oplysninger kan tilføjes senere via en serviceanmodning.
+> [!NOTE]
+> Disse oplysninger kan tilføjes senere via en serviceanmodning.
 
 Når du har indsamlet de nødvendige oplysninger, skal du udføre disse trin for at initialisere e-handel.
 

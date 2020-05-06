@@ -3,7 +3,7 @@ title: Indholdsblokmodul
 description: Dette emne omhandler indholdsblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f91de93ce5ed4813f9f2adbe7678229189b5af2f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: daf9193a7fdc3b57defbb3250ae902f6eb6ee6c4
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025752"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269676"
 ---
 # <a name="content-block-module"></a>Indholdsblokmodul
 
@@ -79,10 +79,10 @@ Følgende billede viser et eksempel på et indholdsblokmodul med et funktionslay
 
 Hvis du vil føje et hero-modul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Skabeloner**, og opret en sideskabelon med navnet **indholdsblokskabelon**.
+1. Gå til **Skabeloner**, og opret en sideskabelon med navnet **Indholdsblokskabelon**.
 1. Tilføj et hero-modul på pladsen **Hoved** på standardsiden.
-1. Tjek skabelonen ind, og publicer den.
-1. Brug den Helte-skabelon, som du netop har oprettet, til at oprette en side med navnet **indholdsblokside**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Brug den hero-skabelon, som du netop har oprettet, til at oprette en side med navnet **Indholdsblokside**.
 1. Vælg pladsen **Hoved** på standardsiden, vælg ellipseknappen (**...**), og vælg derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** under **Vælg moduler** skal du vælge hero-modulet og derefter vælge **OK**.
 1. Vælg indholdsblokmodulet i dispositionstræet til venstre.
@@ -93,8 +93,8 @@ Hvis du vil føje et hero-modul til en ny side og angive de påkrævede egenskab
 1. Vælg **Tilføj link**.
 1. Tilføj linktekst, en URL-adresse og en ARIA-mærkat for linket i dialogboksen **Link**, og vælg derefter **OK**.
 1. Vælg layoutet **Helt**.
-1. Gem siden, og se dine ændringer.
-1. Tjek siden ind, og publicer den.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
+1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

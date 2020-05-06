@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172871"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275458"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Foretage fejlfinding af problemer i forbindelse med opgraderinger af Finance and Operations-apps
 
@@ -85,9 +85,8 @@ Hvis problemet stadig ikke er løst, skal du følge disse trin.
 > Disse trin fører dig gennem processen til sletning af en enhed og derefter tilføjelse af den igen. Hvis du vil undgå problemer, skal du sørge for at følge trinene nøjagtigt.
 
 1. Gå i Finance and Operations-appen til **Arbejdsområder \> Datastyring**, og marker feltet **Dataenheder**.
-2. Find den enhed, der mangler feltet. Noter destinationsenheden, den midlertidige tabel, enhedsnavnet og andre kolonneværdier.
-3. Hvis nogen af behandlingsgrupperne afhænger af denne enhed, skal du udføre de nødvendige handlinger for behandlingsgrupperne, før du sletter enheden.
-4. Slet den enhed, der mangler feltet.
-5. Vælg **Ny**, og tilføj enheden igen. Angiv de værdier, du har noteret i trin 2.
-6. Åbn siden **Enhedstilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
-7. Vælg **Opdater liste over enheder**, så felterne i enhedstilknytninger automatisk udfyldes.
+2. Find den enhed, der mangler attributten. Klik på **Rediger måltilknytning** på værktøjslinjen.
+3. Klik på **Generér tilknytning** i ruden **Knyt midlertidig placering til mål**.
+4. Åbn siden **Enhedstilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
+5. Hvis attributten ikke udfyldes automatisk på tilknytningen, skal du tilføje den manuelt ved at klikke på knappen **Tilføj attribut** og derefter klikke på **Gem**. 
+6. Vælg tilknytningen, og klik på **Kør**.

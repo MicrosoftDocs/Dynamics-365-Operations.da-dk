@@ -1,9 +1,9 @@
 ---
 title: Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
 description: Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 13ea54a6fc4ccdfbcc917b533fe9896d57bcb347
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769604"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281480"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
 
@@ -30,7 +30,7 @@ ms.locfileid: "2769604"
 
 Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
 
-Du kan bruge enheden Finanskladde til at importere bilag, der har kontotypen eller modkontotypen **Finans, Kunde, Kreditor eller Bank**. Bilaget kan angives som én linje, der bruger både feltet **Konto** og feltet **Modkonto**, eller som et flerlinjet bilag, hvor kun feltet **Konto** bruges (og **Modkonto** er tomt på hver linje). Enheden Finanskladde understøtter ikke alle kontotyper. I stedet findes andre enheder for scenarier, hvor der kræves forskellige kombinationer af kontotyper. Hvis du f.eks. vil importere en projekttransaktion, skal du bruge enheden Projektudgiftskladde. Hver enhed er udviklet til at understøtte specifikke scenarier, hvilket betyder, at flere felter kan være tilgængelige i enheder i disse scenarier, men ikke i enheder for et andet scenarie.
+Du kan bruge enheden Finanskladde til at importere bilag, der har kontotypen eller modkontotypen **Finans**, **Debitor**, **Kreditor** eller **Bank**. Bilaget kan angives som én linje, der bruger både feltet **Konto** og feltet **Modkonto**, eller som et flerlinjet bilag, hvor kun feltet **Konto** bruges (og **Modkonto** er tomt på hver linje). Enheden Finanskladde understøtter ikke alle kontotyper. I stedet findes andre enheder for scenarier, hvor der kræves forskellige kombinationer af kontotyper. Hvis du f.eks. vil importere en projekttransaktion, skal du bruge enheden Projektudgiftskladde. De enkelte enheder er udviklet til at understøtte specifikke scenarier. Det betyder, at yderligere felter kan være tilgængelige i enheder for de pågældende scenarier. Yderligere felter er dog muligvis ikke tilgængelige i enheder for forskellige scenarier.
 
 ## <a name="setup"></a>Konfiguration
 Før du importerer ved hjælp af enheden Finanskladde, skal du validere følgende opsætning:
@@ -44,7 +44,7 @@ To indstillinger i Datastyring påvirker, hvordan standardkladdebatchnummer elle
 - **Sætbaseret behandling** (på dataenheden)
 - **Auto-genereret** (på felttilknytningen)
 
-De følgende afsnit beskriver virkningen af disse indstillinger og forklarer også, hvordan kladdebatchnumre og bilagsnumre genereres.
+I følgende afsnit beskrives virkningen af disse indstillinger. Det forklares også, hvordan systemet genererer batchnumre til kladder og bilagsnumre.
 
 ### <a name="journal-batch-number"></a>Kladdebatchnummer
 
@@ -57,10 +57,10 @@ De følgende afsnit beskriver virkningen af disse indstillinger og forklarer ogs
 
 ### <a name="voucher-number"></a>Bilagsnummer
 
-- Når du bruger indstillingen **Angivet på basis af-behandling** på enheden Finanskladde, skal bilagsnummeret gives i den importerede fil. Hver transaktion i finanskladden tildeles det bilagsnummer, der er angivet i den importerede fil, også selvom bilaget ikke er afstemt. Hvis du vil bruge sætbaseret behandling, men også vil bruge den nummerserie, der er defineret for bilagsnumre, er der et hotfix i frigivelsen fra februar 2016. Hotfix-nummer er 3170316 og kan hentes fra Lifecycle Services (LCS). Du kan finde flere oplysninger i [Download opdateringer fra Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+- Når du bruger indstillingen **Angivet på basis af-behandling** på enheden Finanskladde, skal bilagsnummeret gives i den importerede fil. Hver transaktion i finanskladden tildeles det bilagsnummer, der er angivet i den importerede fil, også selvom bilaget ikke er afstemt. Bemærk følgende punkter, hvis du vil bruge sætbaseret behandling, men også vil bruge den nummerserie, der er defineret for bilagsnumre.
 
     - Hvis du vil aktivere denne funktion, skal du på det kladdenavn, der bruges til import, indstille **Nummertildeling under bogføring** til **Ja**.
-    - Et bilagsnummer skal stadig defineres i den importerede fil. Men dette nummer er midlertidigt og overskrives af bilagsnummeret, når kladden bogføres. Du skal sikre dig, at linjerne i kladden er grupperet korrekt efter midlertidigt bilagsnummer. Under bogføring findes der f.eks. tre linjer, der har det midlertidige bilagsnummer 1. Det midlertidige bilagsnummer for alle tre linjer overskrives med det næste nummer i nummerserien. Hvis disse tre linjer ikke er en afstemt indgang, bogføres bilaget ikke. Hvis linjer, der har det midlertidige bilagsnummer 2, overskrives dette nummer derefter med det næste bilagsnummer i nummerserien, og så videre.
+    - Et bilagsnummer skal stadig defineres i den importerede fil. Men dette nummer er midlertidigt og overskrives af bilagsnummeret, når kladden bogføres. Sørg for, at linjerne i kladden er grupperet korrekt efter midlertidigt bilagsnummer. Under bogføring findes der f.eks. tre linjer, der har det midlertidige bilagsnummer 1. Det midlertidige bilagsnummer for alle tre linjer overskrives med det næste nummer i nummerserien. Hvis disse tre linjer ikke er en afstemt indgang, bogføres bilaget ikke. Hvis linjer har det midlertidige bilagsnummer 2, overskrives dette nummer derefter med det næste bilagsnummer i nummerserien, og så videre.
 
 - Når du ikke bruger indstillingen **Angivet på basis af-behandling**, behøver du ikke at angive et bilagsnummer i den importerede fil. Bilagsnumrene oprettes under importen baseret på opsætningen af kladdenavnet (**Kun ét bilagsnummer**, **Ved saldo** osv.). For eksempel, hvis kladdenavnet er defineret som **Ved saldo** i den første linje, modtages et nyt standardbilagsnummer. Systemet evaluerer derefter linjen for at afgøre, om debiteringer er lig med kreditterne. Hvis der findes en modkonto på linjen, modtager den næste linje, der importeres, et nyt bilagsnummer. Hvis der ikke findes en modkonto, evaluerer systemet, om debiteringer er lig med krediteringer, efterhånden som hver ny linje importeres.
 - Hvis feltet **Bilagsnummer** er indstillet til **Auto-genereret**, vil importen ikke lykkes. Indstillingen **Auto-genereret** for feltet **Bilagsnummer** understøttes ikke.

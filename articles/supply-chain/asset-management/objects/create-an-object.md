@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209898"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274159"
 ---
 # <a name="create-an-asset"></a>Oprette et aktiv
 
@@ -38,13 +38,13 @@ Dette emne beskriver, hvordan du opretter et aktiv i Styring af aktiver.
 3. I dialog **Opret aktiver** skal du indsætte data vedrørende **Aktiv** (aktiv-id'et) og navnet på aktivet. Vælg dato og klokkeslæt for aktivet i feltet **Gyldig**. Fra denne dato kan du installere aktivet på et arbejdssted samt flytte og erstatte aktivet i en aktiv struktur.
 4. I feltet **Aktivtype** skal du vælge aktivtypen for aktivet (obligatorisk felt). Vælg om nødvendigt **Aktivproducent** og **Aktivmodel** for aktivet. Hvis der kun er oprettet ét produkt, vælges det pågældende produkt automatisk i feltet **Aktivproducent**. De valg, der er tilgængelige i felterne **Aktivproducent** og **Aktivmodel**, afhænger af opsætningen i [Aktivproducenter og -modeller](../setup-for-objects/product-and-model.md).
 5. I gruppen **Overordnede aktiv** er feltet **Aktiv** tomt som standard. Hvis det er nødvendigt, kan du vælge et overordnet aktiv, og derefter udfyldes alle felter i gruppen **Overordnet aktiv** automatisk.
->[!NOTE]  
->Når du vælger et overordnet aktiv, er der to eller tre tilgængelige faner: Fanen **Mine aktiver** indeholder aktiver, der er relateret til de arbejdssteder, som du (den vedligeholdelsesarbejder, som er logget på systemet) kan allokeres til. Hvis der ikke er konfigureret noget arbejdssted for en vedligeholdelsesarbejder i formen [Vedligeholdelsesarbejdere og arbejdsgrupper](../setup-for-objects/workers-and-worker-groups.md), vil fanen **Mine aktiver** ikke være synlig. Fanen **Aktive aktiver** indeholder en liste over alle aktiver med status som "Aktiv" for aktivers livscyklus. Fanen **Aktiv visning** viser en trævisning af arbejdssteder og aktiver, der er installeret på disse steder.
+    >[!NOTE]  
+    >Når du vælger et overordnet aktiv, er der to eller tre tilgængelige faner: Fanen **Mine aktiver** indeholder aktiver, der er relateret til de arbejdssteder, som du (den vedligeholdelsesarbejder, som er logget på systemet) kan allokeres til. Hvis der ikke er konfigureret noget arbejdssted for en vedligeholdelsesarbejder i formen [Vedligeholdelsesarbejdere og arbejdsgrupper](../setup-for-objects/workers-and-worker-groups.md), vil fanen **Mine aktiver** ikke være synlig. Fanen **Aktive aktiver** indeholder en liste over alle aktiver med status som "Aktiv" for aktivers livscyklus. Fanen **Aktiv visning** viser en trævisning af arbejdssteder og aktiver, der er installeret på disse steder.
 
 6. Det standardarbejdssted, du har oprettet, foreslås for aktivet i **Aktiv**-gruppen > feltet **Arbejdssted**. Vælg et andet arbejdssted, hvis det er nødvendigt.
 
->[!NOTE]
->Når du har oprettet et aktiv, kan du installere det på et andet arbejdssted, hvis det er nødvendigt. Kun aktiver på øverste niveau (aktiver uden et aktuelt overordnet aktiv) kan installeres på et arbejdssted. Det betyder, at du installerer det øverste niveau samt eventuelle underordnede aktiver på det valgte arbejdssted. Læs mere om at installere aktiver på arbejdssteder under [Introduktion til arbejdssteder](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Når du har oprettet et aktiv, kan du installere det på et andet arbejdssted, hvis det er nødvendigt. Kun aktiver på øverste niveau (aktiver uden et aktuelt overordnet aktiv) kan installeres på et arbejdssted. Det betyder, at du installerer det øverste niveau samt eventuelle underordnede aktiver på det valgte arbejdssted. Læs mere om at installere aktiver på arbejdssteder under [Introduktion til arbejdssteder](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klik på **OK**.
 8. Vælg aktivet på listen **Alle aktiver**, og klik på knappen **Rediger** for at føje yderligere oplysninger til aktivet.

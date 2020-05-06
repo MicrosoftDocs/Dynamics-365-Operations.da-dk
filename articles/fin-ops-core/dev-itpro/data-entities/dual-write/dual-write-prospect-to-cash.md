@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172802"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270282"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
@@ -66,6 +66,14 @@ Salgstilbud kan oprettes i Sales eller i Supply Chain Management. Hvis du oprett
 + Du kan føje en rabat til produktet i tilbuddet. I dette tilfælde synkroniseres rabatten med Supply Chain Management. Felterne **Rabat**, **Gebyrer** og **Moms** i hovedet styres af en opsætning i Supply Chain Management. Denne opsætning understøtter ikke integrationstilknytning. I stedet administreres og håndteres felterne **Pris**, **Rabat**, **Tillæg** og **Moms** af Supply Chain Management.
 + Felterne **Rabatprocent**, **Rabat** og **Fragtbeløb** i salgstilbuddets overskrift er skrivebeskyttede.
 + Felterne **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke del af standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
+
+Hvis du også bruger løsningen Field Service, skal du sørge for at aktivere parameteren **Opret hurtigt tilbudslinjen** igen. Hvis du aktiverer parameteren igen, kan du fortsætte med at oprette tilbudslinjer ved hjælp af funktionen til hurtig oprettelse.
+1. Naviger til dit Dynamics 365 Sales-program.
+2. Vælg ikonet Indstillinger på den øverste navigationslinje.
+3. Vælg **Avancerede indstillinger**.
+4. Vælg indstillingen **Tilpas systemet**.
+5. Vælg menupunktet **Tilbudslinje**.
+6. Gå til området **Datatjenester**, og markér afkrydsningsfeltet **Tillad hurtig oprettelse**.
 
 ## <a name="sales-orders"></a>Salgsordre
 

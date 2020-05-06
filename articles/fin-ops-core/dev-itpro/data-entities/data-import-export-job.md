@@ -3,7 +3,7 @@ title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124606"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278892"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -151,6 +151,18 @@ Oplysningerne om kørslen viser tilstanden for hver dataenhed, som jobbet behand
 Du kan hente de midlertidige data i en fil til eksportjob, eller du kan hente dem som en pakke til import- og eksportjob.
 
 På grundlag af oplysningerne i kørslen, kan du også åbne kørselslogfilen.
+
+## <a name="parallel-imports"></a>Parallel import
+For at gøre det hurtigere at importere data kan parallel behandling af en filimport aktiveres, hvis enheden understøtter parallel import. Hvis du vil konfigurere parallel import for en enhed, skal du følge disse trin.
+
+1. Gå til **Systemadministration \> Arbejdsområder \> Datastyring**.
+2. I afsnittet **Import/eksport** skal du vælge feltet **Rammeparametre** for at åbne siden **Rammeparametre for dataimport/-eksport**.
+3. Under fanen **Indstillinger for enhed** skal du vælge **Konfigurer udførelsesparametre for enhed** for at åbne siden **Udførelsesparametre for enhedsimport**.
+4. Angiv følgende felter for at konfigurere parallel import for en enhed:
+
+    - I feltet **Enhed** skal du vælge enheden.
+    - I feltet **Antal poster for importtærskel** skal du angive grænsen for antallet af poster til import. Dette bestemmer det antal poster, der skal behandles af en tråd. Hvis en fil har 10.000 poster, vil et postantal på 2500 med et opgaveantal på 4 betyde, at hver tråd behandler 2500 poster.
+    - Angiv antallet af importopgaver i feltet **Antal importopgaver**. Dette må ikke overstige det maksimale antal batchtråde, der er tildelt batchbehandling i **Systemadministration \>Serverkonfiguration**.
 
 ## <a name="clean-up-the-staging-tables"></a>Ryd op i de midlertidige tabeller
 Med start i Platform update 29 er denne funktionalitet blevet udfaset. Den er erstattet af en ny version af oprydningsfunktionalitet af jobhistorik, der er forklaret nedenfor.

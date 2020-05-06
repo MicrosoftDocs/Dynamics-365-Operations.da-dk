@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261392"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269745"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -80,15 +80,15 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 1. Opret et fragment med navnet **købefeltfragment**, og føj et købefeltmodul til det.
 1. Tilføj et mediegallerimodul til pladsen **Medier** i købefeltmodulet.
 1. Tilføj et butiksvælgermodult i pladsen **Butiksvælger** af købsfeltmodulet.
-1. Tjek siden ind, og publicer den.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 1. Opret en skabelon til en side med produktdetaljer, og navngiv den **PDP-skabelonen**.
 1. Tilføj en standardside.
 1. Tilføj et købefeltfragment på pladsen **Hoved** på standardsiden.
-1. Gem skabelonen, afslut redigeringen, og udgiv den.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Brug den skabelon, som du netop har oprettet, til at oprette en side med navnet **PDP-side**.
 1. Tilføj et købefeltfragment på pladsen **Hoved** på den nye side.
 1. Gem siden, og se en forhåndsvisning af den. Føj forespørgselsstrengparameteren **?productid=&lt;product id&gt;** til URL-adressen for eksempelsiden. På denne måde bruges produktkonteksten til at indlæse og gengive eksempelsiden.
-1. Gem siden, afslut redigeringen, og udgiv den. Der vises et købefelt på siden med produktdetaljer.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. Der vises et købefelt på siden med produktdetaljer.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

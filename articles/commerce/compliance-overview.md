@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8c2cdbf055a2854c4140d3ccc264da260c7cdf5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002260"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275342"
 ---
 # <a name="compliance-overview"></a>Oversigt over overholdelse
 
@@ -39,8 +39,10 @@ Hvis du vil vide mere om de grundlæggende principper, som Microsoft gør brug a
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Funktioner og egenskaber til øget tilgængelighed](accessibility.md)
+[Tilgængelighedsfunktioner og -egenskaber](accessibility.md)
 
-[Cookie-overholdelse](cookie-compliance.md)
+[Cookie-compliance](cookie-compliance.md)
 
-[Tilføj en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
+[Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
+
+[Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)

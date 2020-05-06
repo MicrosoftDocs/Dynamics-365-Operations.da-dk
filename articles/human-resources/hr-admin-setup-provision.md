@@ -3,7 +3,7 @@ title: Klargør Human Resources
 description: Denne artikel fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: 88a0be50a9b861190e7ce9b3f56bb4e583b791d1
+ms.sourcegitcommit: 33685a5cc37081a189279e917def7f122d3beaef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138353"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285483"
 ---
 # <a name="provision-human-resources"></a>Klargør Human Resources
 
@@ -53,13 +53,13 @@ Når du har oprettet et LCS-projekt, kan du klargøre Personale i et miljø.
 
 1. I LCS-projektet skal du vælge feltet **Administration af Personale-app**.
 
-2. Angiv, om dette er en sandkasse- eller produktionsforekomst af Personale. De tidlige visningsfunktioner kan være tilgængelige i sandkasseforekomster med henblik på hurtig feedback og test.
+2. Angiv, om dette miljø er en sandkasse- eller produktionsforekomst af Human Resources. De tidlige visningsfunktioner kan være tilgængelige i sandkasseforekomster med henblik på hurtig feedback og test.
    
     > [!NOTE]
     > Personale-forekomsttypen kan ikke ændres, når den først er angivet. Kontrollér, at den korrekte forekomsttype er valgt, før du fortsætter.</br></br>
     > Personale-forekomsttypen er adskilt fra den forekomsttype for Microsoft Power Apps-miljøet, som du angiver i Power Apps Administration.
     
-3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Personale-oplevelsen. Dette er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer.  Bemærk, at du skal vælge denne indstilling ved første installation. Du kan ikke efterfølgende opdatere en eksisterende installation.
+3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Personale-oplevelsen. Demodata er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer. Du skal vælge denne indstilling ved første installation. Du kan ikke opdatere en eksisterende installation senere.
 
 4. Personale klargøres altid i et Microsoft Power Apps-miljø for at aktivere Power Apps-integration og -udvidelse. Læs afsnittet "Valg af et Power Apps-miljø" i denne artikel, før du fortsætter. Hvis du ikke allerede har et Power Apps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til Power Apps Administration. Følg derefter trinnene for at [Oprette et Power Apps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
@@ -69,34 +69,34 @@ Når du har oprettet et LCS-projekt, kan du klargøre Personale i et miljø.
 
    Det nye miljø vises på listen over miljøer i navigationsruden til venstre. Men du kan ikke begynde at bruge miljøet, før installationsstatus er opdateret til **Installeret**. Denne proces tager typisk få minutter. Hvis klargøringsprocessen mislykkes, skal du kontakte Support.
 
-7. Vælg **Log på Personale** for at bruge det nye miljø.
+7. Vælg **Log på Human Resources** for at bruge det nye miljø.
 
     > [!NOTE]
     > Hvis du endnu ikke har godkendt de endelige krav, kan du installere en testforekomst af Personale i projektet. Du kan derefter bruge denne forekomst til at teste din løsning, indtil du kan godkende den. Hvis du bruger det nye miljø til test, skal du gentage denne procedure for at oprette et produktionsmiljø.
 
-    > Du kan overveje at udnytte et gratis [Personale-prøvemiljø](https://dynamics.microsoft.com/talent/overview/) i 60 dage. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Personale. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
+    > Du kan overveje at udnytte et gratis [Personale-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) i 60 dage. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Personale. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
 
 ## <a name="select-a-power-apps-environment"></a>Vælg et Power Apps-miljø
 
-Integrationen mellem Personale- og Power Apps-miljøerne gør det muligt for dig at integrere og udvide brugen af Personale-data ved hjælp af Power Apps-værktøjer. Forståelse af formålet med Power Apps-miljøer vil ikke blot hjælpe dig med at udvikle apps med henblik på at udvide Personale, men vil også hjælpe dig med at vælge det korrekte miljø i forbindelse med klargøringen af Personale. Du kan finde oplysninger om Power Apps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af Power Apps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Du kan integrere og udvide brugen af Human Resources-data ved hjælp af Power Apps-værktøjer. Du kan finde oplysninger om Power Apps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af Power Apps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
 Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø som Personale skal installeres i: 
 
-1. I LCS skal du vælge **Administrer miljøer** eller gå direkte til Power Apps Administration, hvor du kan få vist eksisterende miljøer og oprette nye miljøer.
+1. I LCS skal du vælge **Administrer miljøer**. Du kan også gå direkte til Power Apps Administration, hvor du kan se eksisterende miljøer og oprette nye miljøer.
 
 2. Der er knyttet et enkelt Personale-miljø til et enkelt Power Apps-miljø.
 
 3. Et Power Apps-miljø indeholder Personale sammen med de tilsvarende Power Apps-, Power Automate- og Common Data Service-programmer. Hvis Power Apps-miljøet slettes, så slettes apps i det samtidig. Under klargøring af et Personale-miljø kan enten et **Prøveversion**- eller **Produktion**-miljø klargøres. Vælg den ønskede type miljø baseret på, hvordan miljøet skal bruges. 
 
-4. Dataintegration og teststrategier, såsom Sandkasse, UAT eller Produktion, bør tages i betragtning. Vi anbefaler, at du overvejer de forskellige konsekvenser af din installation, da det ikke er let at ændre tilknytningen af Personale-miljøer til et Power Apps-miljø senere.
+4. Dataintegration og teststrategier, såsom Sandkasse, UAT eller Produktion, bør tages i betragtning. Overvej nøje de forskellige konsekvenser af din installation, da det ikke er let at ændre tilknytningen af Human Resources-miljøer til et Power Apps-miljø.
 
-5. Følgende Power Apps-miljøer kan ikke bruges til Personale og filtreres fra valglisten i LCS:
+5. Du kan ikke bruge følgende Power Apps-miljøer til Human Resources. De filtreres fra valglisten i LCS:
  
-    - **Power Apps-standardmiljøer** ‑ Selvom hver lejer automatisk klargøres med et Power Apps-standardmiljø, anbefales det ikke at bruge dem sammen med Personale, da alle lejerbrugere har adgang til Power Apps-miljøet og derfor utilsigtet kan beskadige produktionsdata i forbindelse med test og gennemsyn af Power Apps- eller Power Automate-integrationer.
+    - **Standardmiljøer i Power Apps** – Mens hver enkelt lejer automatisk er klargjort med et Power Apps-standardmiljø, anbefales det, at du ikke bruger dem sammen med Human Resources. Alle lejerbrugere kan få adgang til Power Apps-miljøet og utilsigtet beskadige produktionsdata, når de tester og udforsker dem med Power Apps- eller Power Automate-integrationer.
    
-    - **Testmiljøer** ‑ Disse miljøer oprettes med en udløbsdato og udløber efter dette tidspunkt, hvilket resulterer i, at dit miljø og enhver Personale-forekomst, der er indeholdt heri, automatisk bliver fjernet.
+    - **Prøvemiljøer** - Disse miljøer oprettes med en udløbsdato. Ved udløb fjernes dit miljø og eventuelle forekomster af Human Resources, der er indeholdt i det, automatisk.
    
-    - **Ikke-understøttede områder** - I øjeblikket understøttes Personale kun i følgende områder: USA, Europa, Storbritannien, Australien, Canada og Asien.
+    - **Ikke-understøttede områder** - I øjeblikket understøttes Human Resources kun i følgende områder: USA, Europa, Storbritannien, Australien, Canada og Asien.
 
     > [!NOTE]
     > Personale-miljøet klargøres i det samme område, som Power Apps-miljøet klargøres. Overflytning af et Personale-miljø til et andet område understøttes ikke.
@@ -105,4 +105,4 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
  
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
 
-Som standard har den globale administrator, der oprettede miljøet, adgang til det. Men andre programbrugere skal eksplicit tildeles adgang. For at give adgang skal du tilføje brugere og tildele dem de relevante roller i Personale-miljøet. Den globale administrator, der installerede Personale, skal også starte både Attract og Onboard for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere.  Før dette er gjort, kan andre brugere ikke få adgang til Attract og Onboard, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Som standard har den globale administrator, der oprettede miljøet, adgang til det. Du skal eksplicit tildele andre programbrugere adgang. Du skal tilføje brugere og tildele dem de relevante roller i Human Resources-miljøet. Den globale administrator, der installerede Personale, skal også starte både Attract og Onboard for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere. Før dette er gjort, kan andre brugere ikke få adgang til Attract og Onboard, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

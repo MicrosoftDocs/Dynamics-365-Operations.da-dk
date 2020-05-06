@@ -3,7 +3,7 @@ title: Fjernede eller udfasede funktioner i tidligere versioner
 description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225122"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284008"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -230,7 +230,7 @@ Understøttelse til at oprette projektbaserede salgsordre i de tilfælde, hvor p
 | **Erstattet af en anden funktion?**   | Nr. |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger |
 | **Installationsindstilling**              | Alt  |
-| **Status**                         | Fjernes fra og med Finance and Operations 10.0.0 med platformsopdatering 24. (Hvis og kun hvis du har brug for at reparere databeskadigelse forårsaget af en tidligere omdøbning af primærnøglen for et frigivet produkt, skal du kontakte Microsoft Support for at anmode om midlertidig fjernelse af denne begrænsning). |
+| **Status**                         | Fjernes fra og med Finance and Operations 10.0.0 med platformsopdatering 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med platformsopdatering 23
@@ -267,7 +267,7 @@ Integrerede nøgletal (KPI'er) kan modelleres i Visual Studio af en udvikler og 
 | **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejlmeddelelse fremover. |
 | **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Udfasning: advarslen vil fremadrettet være en fejlmeddelelse om kompileringstid. Denne ændring er målrettet mod platformsopdateringer til version 10.0.11 af Finance and Operations-apps. |
+| **Status**                         | Udfases: Advarslen er en fejl på kompileringstidspunktet for platformsopdateringer til version 10.0.11 af Finance and Operations-apps. |
 
 #### <a name="complete-list"></a>Komplet liste
 For at få adgang til den komplette liste over API'er, der udfases, skal du se [Udfasning af metoder og metadataelementer](deprecation-deletion-apis.md).

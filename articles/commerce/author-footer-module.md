@@ -3,7 +3,7 @@ title: Sidefodsmodul
 description: Dette emne omhandler sidefodsmoduler og beskriver, hvordan du kan oprette dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8e0290b5af9d0c1fc9ad0279b0d7f81c9feb2fc
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 51f8d26d6223dcd1f6961058cd9d772a67c69670
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001129"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269626"
 ---
 # <a name="footer-module"></a>Sidefodsmodul  
 
@@ -37,7 +37,7 @@ Sidefodsmodulet er en særlig container, der bruges som vært for de moduler, de
 
 ## <a name="footer-module-properties"></a>Egenskaber for sidefodsmodul 
 
-Som de fleste containere understøtter et sidefodsmodul egenskaber for overskrift og bredde. Det understøtter også tilføjelse af flere sidefodskategorimoduler. Hver af de sidefodskategorimodul, der tilføjes, gengives som en kolonne i sidefodsmodulet.
+Som de fleste containere understøtter et sidefodsmodul egenskaber for overskriften og bredden. Det understøtter også tilføjelse af flere sidefodskategorimoduler. Hver af de sidefodskategorimodul, der tilføjes, gengives som en kolonne i sidefodsmodulet.
 
 ## <a name="modules-available-in-a-footer-module"></a>Moduler, der er tilgængelige i et sidefodsmodul
 
@@ -58,12 +58,12 @@ Som de fleste containere understøtter et sidefodsmodul egenskaber for overskrif
 1. Hvis du vil føje et "Tilbage til toppen"-link til din sidefod, skal du vælge ellipseknappen for sidefodskategorien og derefter vælge **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge Tilbage til toppen-modulet og derefter vælge **OK**.
 1. Vælg Tilbage til toppen-modulet i dispositionstræet. Derefter skal du konfigurere Tilbage til toppen-modulet efter behov i egenskabsruden til højre.
-1. Gem sidefragmentet, check det ind, og publicer det.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke sidefragmentet ind, og vælg derefter **Publicer** for at publicere det.
 
 Udfør følgende trin på hver sideskabelon, der er oprettet til webstedet.
 
 1. Tilføj det sidefodsfragment, du har oprettet, i sidefodsmodulet sidefod på **Hoved**-pladsen på standardsiden.
-1. Gem skabelonen, tjek den ind, og publicer den.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 
 Ved at føje sidefragmentet til sideskabeloner kan du sikre, at sidefoden gengives på alle sider.
 

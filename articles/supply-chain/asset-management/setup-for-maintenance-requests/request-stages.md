@@ -3,7 +3,7 @@ title: Livscyklustilstande for vedligeholdelsesanmodninger
 description: Dette emne beskriver, hvordan du konfigurerer livscyklustilstande for vedligeholdelsesanmodninger i Styring af aktiver.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209001"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275620"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Levetidstilstande for vedligeholdelsesanmodninger
 
@@ -47,7 +47,7 @@ Livscyklustilstande for vedligeholdelsesanmodninger definerer de stadier, som en
 6. Angiv indstillingen **Angiv faktisk slutning** til **Ja**, hvis der automatisk skal angives en faktisk slutdato og tidspunkt på en vedligeholdelsesanmodning i denne livscyklustilstand.
 7. Angiv indstillingen **Opret arbejdsordre** til **Ja**, hvis der kan oprettes en arbejdsordre ud fra en vedligeholdelsesanmodning i denne livscyklustilstand.
 8. Angiv indstillingen **Slet** til **Ja**, hvis en vedligeholdelsesanmodning kan slettes, mens den er i denne livscyklustilstand.
-9. I oversigtspanelet **Opdater** er de **Indgående** og **Udgående** indstillinger i sektionen **Aktiv** relevante, hvis du bruger reparation af depot. Angiv den relevante indstilling til **Ja**, hvis aktivlivscyklustilstand for aktiver, der indgår i en vedligeholdelsesanmodning, automatisk bør opdateres til **Indgående** eller **Udgående**, når vedligeholdelsesanmodningens livscyklustilstand for den pågældende vedligeholdelsesanmodning er angivet til **Indgående** eller **Udgående**.
+9. I oversigtspanelet **Opdater** er indstillingerne **Indgående** og **Udgående** i afsnittet **Aktiv** relevante, hvis du bruger reparation af depot. Angiv den relevante indstilling til **ja**, hvis livscyklustilstanden for aktiver, der er valgt på en vedligeholdelsesanmodning, automatisk skal opdateres til **Indgående** eller **Udgående**, når vedligeholdelsesanmodningens livscyklustilstand for den pågældende vedligeholdelsesanmodning er angivet til **Indgående** eller **Udgående**.
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklustilstande**.
 

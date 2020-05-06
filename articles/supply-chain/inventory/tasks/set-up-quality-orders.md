@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 679448255bd85aafb07270f4858d4b83d2fe643b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204027"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268787"
 ---
 # <a name="set-up-quality-orders"></a>Konfigurere kvalitetsordrer
 
@@ -78,6 +78,9 @@ Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring,
 8. Klik på **Gem**.
 9. Luk siden.
 
+> [!NOTE]
+> Funktionen *Kvalitetsstyring for lagerstedsprocesser* indeholder yderligere vareprøveegenskaber. Den tilføjer et begreb for *vareprøveudtagningsområde* og giver dig mulighed for at definere et fuldt id som angivelse af antal. Hvis du har aktiveret denne funktion, skal du se [Kvalitetsstyring for lagerstedsprocesser](../quality-management-for-warehouses-processes.md) for at få flere oplysninger.
+
 ## <a name="create-a-quality-group"></a>Oprette en kvalitetsgruppe
 1. Gå til **Lagerstyring > Opsætning > Kvalitetskontrol > Kvalitetsgrupper**.
 2. Klik på **Ny**.
@@ -131,3 +134,5 @@ Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring,
 16. Klik på **Gem**.
 17. Luk siden.
 
+> [!NOTE]
+> Funktionen *Kvalitetsstyring for lagerstedsprocesser* indeholder yderligere indstillinger til opsætning af kvalitetstilknytninger. Den tilføjer en ny betingelse (**gældende lagerstedstype**) og en ny indstilling (**kvalitetsbehandlingspolitik**). Hvis du har aktiveret denne funktion, skal du se [Kvalitetsstyring for lagerstedsprocesser](../quality-management-for-warehouses-processes.md) for at få flere oplysninger.

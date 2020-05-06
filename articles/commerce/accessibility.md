@@ -3,7 +3,7 @@ title: Funktioner og egenskaber til øget tilgængelighed
 description: Dette emne indeholder oplysninger om funktionerne og egenskaberne til øget tilgængelighed i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3edc6250dd5438be31d80a9d6b0f3b730438ca53
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001754"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274182"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funktioner og egenskaber til øget tilgængelighed
 
@@ -49,7 +49,7 @@ Dynamics 365 Commerce's digitale system til styring af aktiver understøtter fle
 
 | Videofunktion               | Beskrivelse |
 |-----------------------------|-------------|
-| Undertekster for hørehæmmede (CC)      | Tekst, der kan vises for lydelementer og lydbeskrivende elementer i en video, for at hjælpe brugere, der er hørehæmmede |
+| Undertekster for hørehæmmede (CC)      | Tekst, der kan vises for lydelementer og lydbeskrivende elementer i en video, for at hjælpe brugere, der er døve eller hørehæmmede |
 | Undertitler                   | Undertekstfiler, der viser teksten til kontekstspor eller -dialog på skærmen |
 | Lydtransskription           | En tekstmæssige transkription af talte ord, der genereres fra lyden af et videoaktiv |
 | Beskrivende lyd           | En ikke-primær lydkanal, der beskriver det indhold eller den kontekst, der forekommer på skærmen |
@@ -57,7 +57,7 @@ Dynamics 365 Commerce's digitale system til styring af aktiver understøtter fle
 
 ### <a name="configure-video-accessibility-elements"></a>Konfiguration af tilgængelighedselementer til video
 
-I Dynamics 365 Commerce under afsnittet **Aktiver** for dit websted kan du overføre videoaktiver, der har separate filer til undertekster, almindelig lyd og beskrivende lyd. Undertekster kan også genereres automatisk, når et videoaktiv overføres.
+I Commerce-afsnittet **Mediebibliotek** for dit websted kan du overføre videoaktiver, der har separate filer til undertekster, almindelig lyd og beskrivende lyd. Undertekster kan også genereres automatisk, når et videoaktiv overføres.
 
 #### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a>Generer eller overfør filer med undertekster i forbindelse med overførslen af videoaktiver
 
@@ -72,7 +72,7 @@ Følg dette trin for manuelt at overføre en undertekstfil, når du overfører e
 Hvis du vil overføre almindelige lydfiler eller beskrivende lydfiler for videoen, skal du bruge filvælgeren i dialogboksen **Aktivoverførsel**.
 
 > [!NOTE]
-> Aktiver relateret til undertekster, almindelig lyd og beskrivende lyd kan også tilføjes efter, at et videoaktiv er blevet overført. Gå til **Aktiver**, vælg videoaktivet, og check det ud, og overfør derefter de yderligere aktiver i egenskabsruden for videoaktivet.
+> Aktiver relateret til undertekster, almindelig lyd og beskrivende lyd kan også tilføjes efter, at et videoaktiv er blevet overført. Gå til **Mediebibliotek**, vælg videoaktivet, og vælg **Rediger**. Overfør derefter de andre aktiver i egenskabsruden for videoaktivet.
 
 #### <a name="edit-cc-and-audio-transcript-files"></a>Redigering af CC- og audiotransskriptionsfiler
 
@@ -80,10 +80,10 @@ CC- og audiotransskriptionsfiler kan redigeres direkte i oprettelsesværktøjet.
 
 For at redigerer CC- og audiotransskriptionsfiler skal du følge disse trin.
 
-1. Gå til **Aktiver**, vælg videoaktivet, og vælg derefter **Rediger CC/transskription**. Editoren til undertekster og transskriptionen vises.
-1. Vælg **Check ud**.
+1. Gå til **Mediebibliotek**, og vælg filnavnet på videoaktivet. Editoren til undertekster og transskriptionen vises.
+1. Vælg **Rediger**.
 1. Rediger underteksten eller transskriptionen.
-1. Når du er færdig, skal du vælge **Gem** og derefter vælge **Check ind**.
+1. Når du er færdig, skal du vælge **Gem** og derefter vælge **Afslut redigering**.
 1. Når du er klar til at udgive, skal du vælge **Udgiv**.
 
 #### <a name="set-the-minimum-age-attribute"></a>Angiv attributten minimumsalder
@@ -92,8 +92,8 @@ Der kan tilknyttes en metadata-attribut for **Minimumsalder** til videoaktiver.
 
 Følg disse trin for at angive en attribut for **Minimumsalder** for et videoaktiv.
 
-1. Gå til **Aktiver**, og vælg videoaktivet.
-1. Vælg **Check ud**.
+1. Gå til **Mediebibliotek**, og vælg videoaktivet.
+1. Vælg **Rediger**.
 1. Angiv attributten **Minimumsalder** i egenskabsruden for videoaktivet.
 
 > [!NOTE]
@@ -109,6 +109,8 @@ Følg disse trin for at angive en attribut for **Minimumsalder** for et videoakt
 
 [Oversigt over overholdelse](compliance-overview.md)
 
-[Cookie-overholdelse](cookie-compliance.md)
+[Cookie-compliance](cookie-compliance.md)
 
-[Tilføj en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
+[Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
+
+[Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211715"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275596"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
@@ -102,14 +102,14 @@ Hvis scoren på serviceniveau øges til '100' i stedet for '5', vil planlægning
 
 De rangeringsscorer, der vedrører beregning af, hvilke vedligeholdelsesarbejdere der skal arbejde på arbejdsordrerne, konfigureres alle som numre, der føjes til hver enkelt arbejderberegning under planlægningen af arbejdsordrer. Den vedligeholdelsesmedarbejder, der har den højeste score, vælges på arbejdsordren. Her er en kort beskrivelse af scorerne for vedligeholdelsesarbejdere:
 
-| Vedligeholdelsesarbejderscore       | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ansvarlig arbejder | Hvis vedligeholdelsesarbejderen er valgt som ansvarlig arbejder på arbejdsordren, tilføjes scoren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Ansvarlig vedligeholdelsesarbejdergruppe | Hvis vedligeholdelsesarbejderen indgår i den ansvarlige vedligeholdelsesarbejdergruppe på arbejdsordren, tilføjes scoren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Foretrukken vedligeholdelsesarbejder         | Hvis arbejderen er valgt som den foretrukne vedligeholdelsesarbejder på aktivet, tilføjes scoren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Foretrukken vedligeholdelsesarbejdergruppe   | Hvis arbejderen indgår i den foretrukne vedligeholdelsesarbejdergruppe på aktivet, tilføjes scoren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Adresse                 | Hvis din virksomhed bruger arbejdssteder, får vedligeholdelsesarbejderne fuld score, hvis de er på det arbejdssted, der er relateret til aktivet. Hvis aktivets arbejdssted har et overordnet sted, får vedligeholdelsesarbejdere på det pågældende arbejdssted 1/2 score. Hvis dette sted også har et overordnet sted, vil vedligeholdelsesarbejdere på dette sted få 1/3 score. Hvis dette sted også har et overordnet sted, vil vedligeholdelsesarbejderne på dette sted få 1/4 score osv. Hvis dit firma bruger aktivlokation, hvilket vi fraråder, bruges lokation, område og zone til at beregne lokationsscore. Arbejdere får fuld score, hvis de er placeret i lokationen og området og zonen, der er relateret til aktivet. Hvis arbejderens lokation kun svarer til lokation og område, er rangeringsscoren for vedligeholdelsesarbejderen 2/3 af den fulde score. Hvis vedligeholdelsesarbejderens lokation kun svarer til lokation, er rangeringsscoren for vedligeholdelsesarbejderen 1/3 af den fulde score. |
-| Startdato for medarbejder               | For hver dato, som den planlagte startdato er senere end den forventede startdato, fratrækkes scoren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Vedligeholdelsesarbejderscore| Beskrivelse |
+|---|---|
+| Ansvarlig arbejder | Hvis vedligeholdelsesarbejderen er valgt som ansvarlig arbejder på arbejdsordren, tilføjes scoren. |
+| Ansvarlig vedligeholdelsesarbejdergruppe | Hvis vedligeholdelsesarbejderen indgår i den ansvarlige vedligeholdelsesarbejdergruppe på arbejdsordren, tilføjes scoren. |
+| Foretrukken vedligeholdelsesarbejder         | Hvis arbejderen er valgt som den foretrukne vedligeholdelsesarbejder på aktivet, tilføjes scoren. |
+| Foretrukken vedligeholdelsesarbejdergruppe   | Hvis arbejderen indgår i den foretrukne vedligeholdelsesarbejdergruppe på aktivet, tilføjes scoren.  |
+| Adresse  | Hvis din virksomhed bruger arbejdssteder, får vedligeholdelsesarbejderne fuld score, hvis de er på det arbejdssted, der er relateret til aktivet. Hvis aktivets arbejdssted har et overordnet sted, får vedligeholdelsesarbejdere på det pågældende arbejdssted 1/2 score. Hvis dette sted også har et overordnet sted, vil vedligeholdelsesarbejdere på dette sted få 1/3 score. Hvis dette sted også har et overordnet sted, vil vedligeholdelsesarbejderne på dette sted få 1/4 score osv. Hvis dit firma bruger aktivlokation, hvilket vi fraråder, bruges lokation, område og zone til at beregne lokationsscore. Arbejdere får fuld score, hvis de er placeret i lokationen og området og zonen, der er relateret til aktivet. Hvis arbejderens lokation kun svarer til lokation og område, er rangeringsscoren for vedligeholdelsesarbejderen 2/3 af den fulde score. Hvis vedligeholdelsesarbejderens lokation kun svarer til lokation, er rangeringsscoren for vedligeholdelsesarbejderen 1/3 af den fulde score. |
+| Startdato for medarbejder  | For hver dato, som den planlagte startdato er senere end den forventede startdato, fratrækkes scoren.  |
 
 >[!NOTE]
 >Hvis en score er indstillet til "0", beregnes den ikke. Dette er nyttigt, hvis du f.eks. ikke vil inkludere en ansvarlig arbejder i din planlægning.
@@ -120,3 +120,21 @@ Der kan oprettes krav til færdigheder og certifikater på vedligeholdelsesjobty
 
 Du kan vælge vedligeholdelsesjobtyper og vedligeholdelsesjobfag på arbejdsordrer. Hvis du har valgt færdigheder eller certifikater på en vedligeholdelsesjobtype eller vedligeholdelsesjobfag, og denne type eller dette fag bruges på et job i en arbejdsordre, er det kun vedligeholdelsesarbejdere med matchende færdigheder og certifikater, der planlægges til at arbejde på arbejdsordren.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Arbejde med planlagte arbejdsordrer ved hjælp af et Gantt-diagram
+
+**Gantt-diagrammet Planlagte arbejdsordrer** udgør en grafisk brugergrænseflade, hvor du kan se og ændre planlægningen af dine arbejdsordrer.
+
+Sådan kan du se og arbejde med Gantt-diagrammet:
+
+1. Gå til **Styring af aktiver > Arbejdsordrer > Gantt-diagrammet Planlagte arbejdsordrer**.
+
+1. Du kan bruge rullelisterne og felterne i sektionen **Indstillinger** til at definere det arbejdssted, det tidsinterval og den tidsskala, der skal vises i Gantt-diagrammet.
+
+1. Vælg **Anvend**.
+
+    - Gantt-diagrammet opdateres til at vise de planlagte arbejdsordrer, der svarer til dine indstillinger. Hver enkelt arbejdsordre repræsenteres af et blåt rektangel.
+    - Hvis du vil ændre planlægningen af en vist arbejdsordre, skal du vælge og derefter trække den til den relevante nye dato og det ønskede klokkeslæt.
+
+1. Hvis du har foretaget ændringer, skal du vælge **Gem** i handlingsruden for at gemme dem.
