@@ -1,9 +1,9 @@
 ---
-title: Udvidet filtrering i RCS/Globalt lager
+title: Forbedret filtrering i RCS/Globalt lager
 description: I dette emne beskrives udvidede filtreringsmuligheder for det globale RCS-lager, der er blevet forbedret, så det indeholder ekstra filtre.
 author: JaneA07
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,35 +18,31 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1adbd690795139778dc77a574e9d5f91a4bdeb3c
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 1913b661c46af5e34da1a2939cb2a5d5b4e46411
+ms.sourcegitcommit: 7df49a85de484d013518217ba8ada6c61da4b6e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249159"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287933"
 ---
-# <a name="enhanced-filtering-options-for-finding-configurations-in-the-global-repository"></a><span data-ttu-id="90023-103">Udvidede filtreringsindstillinger for søgning efter konfigurationer i det globale lager</span><span class="sxs-lookup"><span data-stu-id="90023-103">Enhanced filtering options for finding configurations in the Global repository</span></span>
+# <a name="rcs-enhanced-filtering-options-for-finding-configurations-in-the-rcsglobal-repository"></a><span data-ttu-id="46c16-103">Forbedrede filtreringsindstillinger til søgning efter konfigurationer i RCS/det globale lager</span><span class="sxs-lookup"><span data-stu-id="46c16-103">RCS enhanced filtering options for finding configurations in the RCS/Global repository</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="90023-104">I dette emne beskrives udvidede filtreringsmuligheder for det globale RCS-lager (Regulatory Configuration Service), der er blevet forbedret, så det indeholder følgende filtre:</span><span class="sxs-lookup"><span data-stu-id="90023-104">This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the following filters:</span></span> 
-- <span data-ttu-id="90023-105">**Land/område** baseret på ISO-landekoder</span><span class="sxs-lookup"><span data-stu-id="90023-105">**Country/region** - based on ISO country codes</span></span>  
-- <span data-ttu-id="90023-106">**Koder** – for funktions/facilitetsområde; Branche; Forretningsdokumenttype</span><span class="sxs-lookup"><span data-stu-id="90023-106">**Tags** - for functional/feature area; Industry; Business document type</span></span> 
+<span data-ttu-id="46c16-104">I dette emne beskrives udvidede filtreringsmuligheder for det globale RCS-lager (Regulatory Configuration Service), der er blevet forbedret, så det giver mulighed for at filtrere med følgende kriterier:</span><span class="sxs-lookup"><span data-stu-id="46c16-104">This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the ability to filter with the following criteria:</span></span> 
+- <span data-ttu-id="46c16-105">**Land/område** - baseret på ISO-landekoder</span><span class="sxs-lookup"><span data-stu-id="46c16-105">**Country/region** - Based on ISO country codes</span></span>  
+- <span data-ttu-id="46c16-106">**Kodetyper** for:</span><span class="sxs-lookup"><span data-stu-id="46c16-106">**Tags** types for:</span></span>
+  - <span data-ttu-id="46c16-107">Funktionsområde</span><span class="sxs-lookup"><span data-stu-id="46c16-107">Functional area</span></span>
+  - <span data-ttu-id="46c16-108">Funktionsområde</span><span class="sxs-lookup"><span data-stu-id="46c16-108">Feature area</span></span>
+  - <span data-ttu-id="46c16-109">Branche</span><span class="sxs-lookup"><span data-stu-id="46c16-109">Industry</span></span> 
+  - <span data-ttu-id="46c16-110">Forretningsdokument</span><span class="sxs-lookup"><span data-stu-id="46c16-110">Business document</span></span> 
 
-<span data-ttu-id="90023-107">Du kan anvende filtre, enten individuelt eller i grupper, til at finde bestemte eller relaterede konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="90023-107">You can apply filters, either individually or in groups, to find specific or related configurations.</span></span> <span data-ttu-id="90023-108">Hvis du f.eks. vil finde alle konfigurerbare forretningsdokumenter, der er relateret til kreditorfakturaer, kan du anvende filteret **Forretningsdokumenttype**.</span><span class="sxs-lookup"><span data-stu-id="90023-108">For example, to find all configurable business documents related to vendor invoices, you can apply the **Business document type** filter.</span></span> 
+<span data-ttu-id="46c16-111">Du kan anvende filtre, enten individuelt eller som gruppe, for at gøre det lettere at finde bestemte eller relaterede konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="46c16-111">To make it easier to discover specific or related configurations you can apply filters, either individually or as a group.</span></span> <span data-ttu-id="46c16-112">Hvis du f.eks. vil finde en enkelt type af forretningsdokumenter, der kan konfigureres, med relation til kreditorfakturaer, kan du anvende et **Forretningsdokumenttype**-filter til at søge efter den pågældende dokumenttype.</span><span class="sxs-lookup"><span data-stu-id="46c16-112">For example, to find a single type of 'configurable business documents that are related to vendor invoices, you could apply a **Business document type** filter to search for that type of document.</span></span> 
 
-<span data-ttu-id="90023-109">Du kan yderligere forfine en søgning ved at vælge landekoden og klikke på **Anvend filter**.</span><span class="sxs-lookup"><span data-stu-id="90023-109">You can further refine a search by selecting the country code and clicking **Apply filter**.</span></span>  
+<span data-ttu-id="46c16-113">[![Filtersektion for globalt lager](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span><span class="sxs-lookup"><span data-stu-id="46c16-113">[![Filter section for Global repository](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span></span> 
 
-<span data-ttu-id="90023-110">[![Filtersektion for globalt lager](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span><span class="sxs-lookup"><span data-stu-id="90023-110">[![Filter section for Global repository](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span></span> 
+<span data-ttu-id="46c16-114">Du kan yderligere indsnævre søgningen ved at vælge dokumenttype, f.eks. 'kreditorfaktura', og klikke på **Anvend filter**.</span><span class="sxs-lookup"><span data-stu-id="46c16-114">You can further refine the search by selecting document type, for example 'vendor invoice' and clicking **Apply filter**.</span></span> <span data-ttu-id="46c16-115">Følgende eksempel viser resultaterne, når du filtrerer efter **Forretningsdokumenttype** med tilføjet dokumenttype.</span><span class="sxs-lookup"><span data-stu-id="46c16-115">The following example shows the results when filtering on **Business document type** with the document type added.</span></span> 
 
-<span data-ttu-id="90023-111">Følgende eksempel viser resultaterne, når der filtreres efter **Forretningsdokumenttype**.</span><span class="sxs-lookup"><span data-stu-id="90023-111">The following example shows the results when filtering on **Business document type**.</span></span> 
+<span data-ttu-id="46c16-116">[![Anvendte filter og import for forretningsdokumenttype](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span><span class="sxs-lookup"><span data-stu-id="46c16-116">[![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span></span> 
 
-<span data-ttu-id="90023-112">[![Anvendte filter og import for forretningsdokumenttype](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span><span class="sxs-lookup"><span data-stu-id="90023-112">[![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span></span> 
-
-<span data-ttu-id="90023-113">Filtrerede resultater kan importeres til brugeres RCS- eller Dynamics 365 Finance-miljø individuelt eller som sæt (ved at vælge gruppen af varianter) og klikke på **Importer**.</span><span class="sxs-lookup"><span data-stu-id="90023-113">Filtered results can be imported into users RCS or Dynamics 365 Finance environment, either individually or as a set (by selecting the group of configurations) and clicking **Import**.</span></span>
-
-
-
-
-
-
+<span data-ttu-id="46c16-117">Filtrerede resultater kan importeres til en brugers RCS-lager eller et Dynamics 365 Finance-miljø, enten individuelt eller som et sæt.</span><span class="sxs-lookup"><span data-stu-id="46c16-117">Filtered results can be imported into a users RCS repository or a Dynamics 365 Finance environment, either individually or as a set.</span></span> <span data-ttu-id="46c16-118">Det gør du ved at vælge gruppen af konfigurationer og klikke på **Importér**.</span><span class="sxs-lookup"><span data-stu-id="46c16-118">To do this, select the group of configurations, and click **Import**.</span></span>
