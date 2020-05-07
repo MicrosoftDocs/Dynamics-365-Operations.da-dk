@@ -19,22 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 4adb2c8d57ad8f67346b8d34212b7a4b0bd052ab
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 9ae14703941b97308bca5845eeac3eb9b181ae75
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173125"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275481"
 ---
 # <a name="entity-dependency-chain-synchronization-order"></a>Enhedsafhængighedskæde (synkroniseringsrækkefølge)
 
 [!include [banner](../../includes/banner.md)]
 
-
-
-I følgende tabeller vises enhederne i den rækkefølge, du skal aktivere dem. Når du aktiverer en tilknytning til første synkronisering, registrerer Dobbeltskrivning automatisk andre tilknytninger, der skal aktiveres. Du kan bruge siden **Dobbeltskrivning** i Finance and Operations-apps til at vælge eller annullere valgte enheder under den første synkronisering.
-
-I den seneste version af Dobbeltskrivning kan du kun aktivere nogle enheder, og afhængighederne håndteres for dig.
+Dette emne angiver den synkroniseringsrækkefølge, du skal følge for at oprette de første data, hvis du ikke bruger de enhedsafhængigheder, der er angivet i den **første synkronisering**. Hvis du ikke bruger **den første synkronisering**, skal du køre hver enkelt objekttilknytning individuelt.
 
 ## <a name="dynamics-365-supply-chain-management-entities"></a>Dynamics 365 Supply Chain Management-enheder
 

@@ -3,7 +3,7 @@ title: Tilføj en side med politik om beskyttelse af personlige oplysninger
 description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer en side med politik om beskyttelse af personlige oplysninger i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee9a68f46c91299065732e5f65479906f9e06079
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001317"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274205"
 ---
 # <a name="add-a-privacy-policy-page"></a>Tilføj en side med politik om beskyttelse af personlige oplysninger
 
@@ -54,36 +54,33 @@ For at komme i gang skal du i oprettelsesværktøjerne gå til det websted, som 
 
 Følg disse trin for at oprette en skabelon.
 
-1. Gå til **Skabeloner \> Ny skabelon**.
-1. Angiv skabelonens navn, og vælg derefter **OK**.
-1. Tilføj eventuelle påkrævede moduler til de påkrævede sidepladser i skabelonen. Hold musen over de røde udråbstegn for vejledning.
-
-    For eksempel kræver pladsen **HTML-hoved** muligvis et **Eksternt Standard Script**-modul.
-
+1. Gå til **Skabeloner**, og vælg derefter **Ny** for at oprette en sideskabelon.
+1. Angiv **Kampagnebannerskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
+1. Tilføj eventuelle påkrævede moduler til de påkrævede sidepladser i skabelonen. Hold musen over de røde udråbstegn for vejledning. (For eksempel kræver pladsen **HTML-hoved** muligvis et **Eksternt standardscript**-modul).
 1. På pladsen **Brødtekst** skal du tilføje et **Standardside**-modul.
 1. I modulet **Standardside** skal du på pladsen **Primær** tilføje et **Indholdsrig blokmodul**.
 1. I **Indholdsrigt blokmodul** skal du tilføje et **Indholdsrigt blokelement**-modul.
-1. Check skabelonen ind, og publicer den.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 
 ### <a name="build-a-privacy-policy-page"></a>Opret en side med politik om beskyttelse af personlige oplysninger
 
 Følg disse trin for at oprette en side med politik om beskyttelse af personlige oplysninger.
 
-1. Gå til **Sider \> Ny side**.
-1. Vælg skabelonen for privatlivspolitiksiden.
-1. Angiv et sidenavn og URL-adresse, og vælg derefter **OK**. 
+1. Gå til **Sider**, og vælg derefter **Ny** for at oprette en side.
+1. Vælg skabelonen til siden med politikken for beskyttelse af personlige oplysninger i dialogboksen **Vælg en skabelon**.
+1. Angiv et sidenavn og sidens URL-adresse, og vælg derefter **OK**. 
 1. På pladsen **Primær** på siden skal du tilføje et **Indholdsrigt blokmodul**.
 1. I **Indholdsrigt blokmodul** skal du tilføje et **Indholdsrigt blokelement**-modul.
 1. I egenskabsruden for **Indholdsrigt blokmodul** skal du vælge **Tilføj datakilde** og derefter vælge **RTF-indhold**.
 1. I RTF-editoren skal du angive indholdet til siden med politik om beskyttelse af personlige oplysninger. Udvid RTF-editoren til fuldskærmstilstand efter behov.
 1. Når du er færdig med at indtaste indholdet, skal du vælge **Forhåndsvisning** for at få vist siden i webbrowseren.
 1. Gør eventuelle resterende tilføjelser til sidens og modulets egenskaber færdig.
-1. Check siden med politik om beskyttelse af personlige oplysninger ind, og publicer den.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 Følg disse trin for at publicere URL-adressen til siden med politik om beskyttelse af personlige oplysninger.
 
 1. Gå til **URL**, og vælg URL-adressen for siden med politik om beskyttelse af personlige oplysninger.
-1. Publicer den valgte URL-adresse.
+1. Vælg **Publicer** for at publicere den valgte URL-adresse.
 
 ### <a name="create-a-link-to-the-privacy-policy-page-in-a-footer"></a>Opret et link til siden med politik om beskyttelse af personlige oplysninger i en sidefod
 
@@ -91,15 +88,14 @@ Du kan tilføje et link til siden med politik om beskyttelse af personlige oplys
 
 Følg disse trin for at føje et link til sidefodsfragment.
 
-1. Gå til **Sidefragmenter \> Nyt sidefragment**.
-1. Vælg modulet **Sidefod**, og angiv derefter et navn i feltet **Sidefragmentsnavn**.
+1. Gå til **Sidefragmenter**, og vælg derefter **Nyt** for at oprette et sidefragment.
+1. Vælg modulet **Sidefod** i dialogboksen **Nyt sidefragment**.
+1. Angiv et navn til fragmentet under **Sidefragmentsnavn**, og vælg derefter **OK**.
 1. På pladsen **Sidefodskategori** skal du tilføje modulet **Sidefodselement**.
 1. Vælg **Linktekst** i egenskabsruden til højre.
 1. I dialogboksen **Linktekst** skal du angive linkteksten og linkmålet på siden med politik om beskyttelse af personlige oplysninger og derefter klikke på **OK**.
-
-    Hvis du vil have URL-adressen tilføjet til siden med politik om beskyttelse af personlige oplysninger, skal du gå til **Sider** og derefter til siden med politik om beskyttelse af personlige oplysninger og kopierer URL-adressen fra egenskabsruden.
-
-1. Gem fragmentet, check det ind, og publicer det.
+1. Hvis du vil have URL-adressen tilføjet til siden med politik om beskyttelse af personlige oplysninger, skal du gå til **Sider** og derefter til siden med politik om beskyttelse af personlige oplysninger og kopierer URL-adressen fra egenskabsruden.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 1. Se et eksempel på fragmentet, og test linket til siden med politik om beskyttelse af personlige oplysninger.
 
 Der kan nu refereres til fragmentet i skabelonen for andre webstedssider. Når der refereres til dette fragment i modulet **Sidefod** i en skabelon, vises linkreferencen på alle sider, der er oprettet ved hjælp af denne skabelon.
@@ -108,6 +104,8 @@ Der kan nu refereres til fragmentet i skabelonen for andre webstedssider. Når d
 
 [Oversigt over overholdelse](compliance-overview.md)
 
-[Funktioner og egenskaber til øget tilgængelighed](accessibility.md)
+[Tilgængelighedsfunktioner og -egenskaber](accessibility.md)
 
-[Cookie-overholdelse](cookie-compliance.md)
+[Cookie-compliance](cookie-compliance.md)
+
+[Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)

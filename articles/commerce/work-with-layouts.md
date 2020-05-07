@@ -3,7 +3,7 @@ title: Arbejde med forudindstillede layout
 description: Dette emne beskriver, hvordan du kan arbejde med forudindstillede layout i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c8149c6e443c77dabfa641a698c931176bedbc98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002630"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269883"
 ---
 # <a name="work-with-preset-layouts"></a>Arbejde med forudindstillede layout
 
@@ -44,7 +44,7 @@ Der findes to metoder til oprettelse af et forudindstillet layout. Du kan gemme 
 Du kan oprette et forudindstillet layout ud fra et eksisterende brugerdefineret layout ved at følge disse trin.
 
 1. Åbn en eksisterende side, der ikke aktuelt bruger et foruddefineret layout, og som har en modulstruktur, du vil genbruge til andre sider på webstedet.
-1. Vælg **Check ud**.
+1. Vælg **Rediger** for at tjekke siden ud.
 1. Vælg **Gem som nyt layout**. Dialogboksen **Gem som nyt layout** vises.
 1. Indtast et navn og en beskrivelse til det forudindstillede layout. De værdier, du angiver, vises for andre forfattere, når de opretter nye sider ud fra dit layout eller skifter til det. Angiv derfor værdier, der vil være nyttige for sideforfattere.
 1. Vælg **OK**.
@@ -91,14 +91,14 @@ Hvis du vil angive eller ændre temaet for alle de underordnede sider, der bruge
 Følg disse trin for at gemme og checke dit forudindstillede layout ind.
 
 1. Vælg **Gem** øverst i layouteditoren. Gemte ændringer påvirker ikke downstream-sider, før de er checket ind.
-1. Vælg **Check ind**. Dine ændringer er nu synlige for downstream-arbejdsgange.
+1. Vælg **Afslut redigering**. Dine ændringer er nu synlige for downstream-arbejdsgange.
 
 Hvis du vil se ændringerne på forhånd, skal du enten åbne en eksisterende side, der bruger det forudindstillede layout, eller oprette en ny side ud fra layoutet.
 
 Når du har set ændringerne af det forudindstillede layout, skal du følge et af disse trin for at publicere layoutet til dit aktive websted:
 
 * Gå til **Layout**, vælg layoutet, og vælg derefter **Publicer**.
-* Vælg **Publicer** i layouteditoren.
+* Vælg layoutnavnet for at åbne layouteditoren, og vælg derefter **Publicer**.
 * Publicer en side, der refererer til det ikke-publicerede layout. Layoutet vil automatisk blive publiceret.
 
 > [!WARNING]

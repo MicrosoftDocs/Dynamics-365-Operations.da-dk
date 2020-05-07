@@ -1,9 +1,9 @@
 ---
 title: Ordretilsagn
-description: Denne artikel indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer.
+description: Dette emne indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210042"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270021"
 ---
 # <a name="order-promising"></a>Ordretilsagn
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer.
+Dette emne indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer.
 
 Ordretilsagn beregner tidligste afsendelses- og modtagelsesdatoer og er baseret på kontrolmetoden for leveringsdato og transportdage. Du kan vælge mellem fire kontrolmetoder for leveringsdato:
 
@@ -47,11 +47,13 @@ DTT beregnes ved hjælp af følgende formel:
 
 DTT = DTT for den forrige periode + tilgange i indeværende periode - afgange i indeværende periode – Nettoafgangsantallet for alle fremtidige perioder indtil den periode, hvor summen af tilgange for alle fremtidige perioder til og med den fremtidige periode er større end summen af afgange til og med den fremtidige periode.  
 
+Bemærk, at beregningen af DTT ikke indeholder oplysninger omkring udløbsdatoen og ud over den DTT-horisont, som systemet forventer, når et antal kan loves.
+
 Når der ikke er flere afgange eller tilgange, der skal tages i betragtning, er DTT-antallet for følgende datoer det samme som det senest beregnede DTT-antal.  
 
 Hvis ikke alle de dimensioner, der bruges for en vare, er angivet, når DTT-kontrollen udføres, kan de måske stadig blive angivet på afgangen og tilgangen. I dette tilfælde skal tilgangene og afgangene i DTT-beregningen samles i de eksisterende dimensioner for at reducere antallet af tilgangs- og afgangslinjer, der bruges i DTT-beregningen.  
 
-DTT-antallet, der vises, er altid større end eller lig med 0 (nul). Hvis beregningen returnerer et negativt DTT-antal (hvis f.eks. det antal, der tidligere er lovet, overstiger det antal, der er tilgængeligt), angives antallet automatisk til **0**.
+DTT-antallet, der vises, er altid større end eller lig med 0 (nul). Hvis beregningen returnerer et negativt DTT-antal (hvis f.eks. det antal, der tidligere er lovet, overstiger det antal, der er tilgængeligt), angives antallet automatisk til 0.
 
 ### <a name="example"></a>Eksempel
 

@@ -3,7 +3,7 @@ title: Momsafregninger og afrundingsregler
 description: I denne artikel forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771746"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275668"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsafregninger og afrundingsregler
 
@@ -43,26 +43,26 @@ Den samlede moms for en periode viser en kreditsaldo på -98.765,43. Den juridis
 
 Den juridiske enhed vil bruge en afrundingsmetode, der afrunder saldoen til nærmeste hele 1,00. Den bruger, der er ansvarlig for bogføring af moms, udfører følgende trin.
 
-1.  Klik på Moms &gt; Indirekte skatter &gt; Moms &gt; Skattemyndigheder
-2.  I oversigtspanelet Generelt skal du vælge Normal i feltet Afrundingsform.
-3.  Angiv 1,00 i feltet Afrunding.
-4.  Når det er tid til at betale momsen til skattemyndighederne, skal du åbne siden Afregn og bogfør moms. (Klik på Moms &gt; Opgørelser &gt; Moms &gt; Afregn og bogfør moms).
-5.  I momsafregningskontoen afrundes skattetilsvarsbeløbet på 98.765,43 til 98.765.
+1. Klik på **Moms** > **Indirekte skatter** > **Moms** > **Momsmyndigheder**.
+2. I oversigtspanelet **Generelt** skal du vælge **Normal** i feltet **Afrundingsform**.
+3. Angiv 1,00 i feltet **Afrunding**.
+4. Når det er tid til at betale momsen til skattemyndighederne, skal du gå til **Moms** > **Erklæringer** > **Moms** > **Afregn og bogfør moms**. I momsafregningskontoen kan du se, at skattetilsvarsbeløbet på **98.765,43** er afrundet til **98.765**.
 
-Følgende tabel viser, hvordan et beløb på 98.765,43 afrundes ved hjælp af hver afrundingsmetode, der er tilgængelig i feltet Afrundingsform på siden Skattemyndigheder.
+Følgende tabel viser, hvordan et beløb på 98.765,43 afrundes ved hjælp af hver afrundingsmetode, der er tilgængelig i feltet **Afrundingsform** på siden **Skattemyndigheder**.
 
-| Indstilling for afrundingsform                | Afrundingsværdi = 0,01 | Afrundingsværdi = 0,10 | Afrundingsværdi = 1,00 | Afrundingsværdi = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Almindelig                              | 98.765,43              | 98.765,40              | 98.765,00              | 98.800,00                |
-| Nedad                            | 98.765,43              | 98.765,40              | 98.765,00              | 98.700,00                |
-| Oprunding                         | 98.765,43              | 98.765,50              | 98.766,00              | 98.800,00                |
-| Egen fordel, for en kreditsaldo | 98.765,43              | 98.765,40              | 98.765,00              | 98.700,00                |
-| Egen fordel, for en debetsaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Hvis afrundingsværdien er angivet til 0,00, gælder følgende:
+>
+> - Ved normal afrunding er afrundingsfunktionen den samme som for **Afrunding = 0,01**.
+> - I forbindelse med **Indstilling for afrundingsform**, **Nedad**, **Oprunding** og **Egen fordel** er funktionsmåden den samme som for **Afrunding = 1,00**.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Ingen afrunding overhovedet, da afrundingen er 0,00
-
-afrund(1,0151, 0,00) = 1,0151 afrund(1,0149, 0,00) = 1,0149
+| Indstilling for afrundingsform                | Afrundingsværdi = 0,01 | Afrundingsværdi = 0,10 | Afrundingsværdi = 1,00 | Afrundingsværdi = 100,00 | Afrundingsværdi = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Nedad                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Oprunding                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Egen fordel, for en kreditsaldo | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Egen fordel, for en debetsaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normal afrunding og afrundingspræcision er 0,01
 
