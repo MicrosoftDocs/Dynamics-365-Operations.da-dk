@@ -3,7 +3,7 @@ title: Tilføje en ny webstedsside
 description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer en ny side på et websted i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001340"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269952"
 ---
 # <a name="add-a-new-site-page"></a>Tilføje en ny webstedsside
 
@@ -67,7 +67,7 @@ Hvis du vil føje en ny side til dit websted, skal du følge disse trin.
 1. Vælg **Indholdsrig blok**, vælg ellipseknappen, og vælg derefter **Tilføj modul**.
 1. Vælg **Element for indholdsrig blok**, og vælg derefter **OK**.
 1. I egenskabsruden til højre skal du vælge **Afsnit**og derefter angive **Min testtekst** i feltet.
-1. Vælg **Gem**, og vælg derefter **Tjek ind**.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
 1. Angiv **Tilføjet ny side** i feltet **Kommentarer**, og vælg derefter **OK**.
 1. Vælg **Eksempel** for at få vist din side. Når du er færdig, skal du lukke eksempelfanen for at vende tilbage til oprettelsesværktøjet.
 1. Vælg **Publicer**.

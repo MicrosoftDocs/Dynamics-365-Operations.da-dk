@@ -3,7 +3,7 @@ title: Lager, luk
 description: Som en del af processen til at udligne afgangsposteringerne med tilgangsposteringer, kan du også vælge at have Finans opdateret for at afspejle de justeringer, der er foretaget.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c88a5fe52e41df5a0371d6666f544996bd3c76
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e9f0608c9afc25e7ca6657f6a2e87d088d4cbad
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201625"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3283984"
 ---
 # <a name="inventory-close"></a>Lager, luk
 
@@ -59,11 +59,10 @@ Flere af de opgaver, du kan udføre på siden **Lukning og regulering**, kan med
 
 De finanskonti, der opdateres på grund af disse opgaver, er knyttet til den oprindelige lagerpostering. Hvis en salgsordre f.eks. afregnes med en indkøbsordre, bliver de finanskonti, der blev brugt til den oprindelige salgsordre, justeret. Funktionsmåden anvendes også, selvom finanskontiene for den varegruppe, der er tildelt varen, er ændret, siden salgsordren blev bogført. Når lagerlukningen opretter et udligningsbeløb, bogføres udligningsbeløbet stadig på de oprindelige finanskonti, og ikke på de nye finanskonti, som er tildelt til varen. Finansmodulet kan også opdateres, hvis du tilbagefører en lagerlukning. 
 
-**Bemærkninger:**
-
--   Lagerlukning er ikke påkrævet, hvis du bruger metoden til evaluering af standardomkostninger.
--   Før du kører lukningsproceduren, kan du se en liste over varer, der ikke kan udlignes under opdateringen.
--   Det anbefales, at du kører lagerlukning i løbet af de mindst belastede timer for at fordele computerressourcerne så jævnt som muligt.
+> [!NOTE] 
+> - Lagerlukning er et påkrævet trin i proceduren til lukningsprocedure ved månedens slutning for alle lagermodeller. Dette omfatter en almindelig og glidende gennemsnitlig efterkalkulation. Du kan ikke lukke regnskabsperioden, før der er udført en lagerlukning pr. periodeslutdato.
+> - Før du kører lukningsproceduren, kan du se en liste over varer, der ikke kan udlignes under opdateringen.
+> - Det anbefales, at du kører lagerlukning i løbet af de mindst belastede timer for at fordele computerressourcerne så jævnt som muligt.
 
 ## <a name="the-inventory-close-log"></a>Få vist log for lagerlukning
 Når lagerlukningen er udført, vises der evt. en meddelelse i meddelelsescentret om, at en enhedskostpris muligvis ikke er korrekt, fordi en postering ikke kunne udlignes helt. 
@@ -85,7 +84,6 @@ I nogle tilfælde kan du muligvis ikke gøre noget ved advarslerne. Hvis der f.e
 ## <a name="reversing-a-completed-inventory-close"></a>Tilbageførsel af en fuldført lagerlukning
 Nogle gange kan det være nødvendigt at tilbageføre en afsluttet lagerlukning for at ændre udligninger til den tilstand, de var i, før reguleringerne blev foretaget. Når du tilbagefører en afsluttet lagerlukning, åbnes lageret også igen for at gøre det muligt at bogføre i den periode, lagerlukningen dækker. Relaterede ændringer kan også foretages i Finans. Når du er færdig med at foretage justeringer, kan du køre lagerlukningen igen for den periode, du arbejder med. 
 
-**Bemærk!** Det er kun den sidste lagerperiode, der blev lukket, som kan åbnes igen. Hvis du vil tilbageføre en tidligere lagerlukning, skal du tilbageføre hver efterfølgende lagerlukning for sig, og du skal starte med den seneste lukning.
-
-
+> [!NOTE] 
+> Det er kun den sidste lagerperiode, der blev lukket, som kan åbnes igen. Hvis du vil tilbageføre en tidligere lagerlukning, skal du tilbageføre hver efterfølgende lagerlukning for sig, og du skal starte med den seneste lukning.
 

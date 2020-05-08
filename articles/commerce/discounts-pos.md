@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116550"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265571"
 ---
 # <a name="show-discounts-in-pos"></a>Få vist rabatter i POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Kampagner spiller en vigtig rolle i at motivere kunder, der træffer beslutninger om indkøb. Ferier kan f.eks. producere det højeste antal salg for detailhandlere, da hele detailmarkedet er overfyldt med lokkende kampagner og rabatter. Hvis butiksmedarbejderne kender til og forstår de tilgængelige kampagner, kan de nemt udnytte disse kampagner for at kunne krydssælge og videresælge varer. I dette emne forklares det, hvordan Microsoft Dynamics 365 Commerce hjælper salgsforbindelser med at få mere at vide om kampagner, og hvordan de kan bruges til at krydssælge og videresælge bevægelser.
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172685"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275644"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -70,14 +70,12 @@ Udfør følgende trin for at aktivere sporingsloggen.
 Udfør følgende trin for at få vist sporingsloggen.
 
 1. Log på Finance and Operations-appen, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
-2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finance and Operations-apps
 
-**Påkrævet rolle for at få vist fejl** : Systemadministrator
-
-Dobbeltskrivningsfejl, der stammer fra Common Data Service, kan forekomme i Finance and Operations-appen. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
+**Påkrævet rolle for at få vist fejl**: Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Common Data Service, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
 
 1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i enheden **DualWriteProjectConfiguration**. Åbn enheden **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
 
@@ -92,7 +90,7 @@ Dobbeltskrivningsfejl, der stammer fra Common Data Service, kan forekomme i Fina
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfejl på den virtuelle maskine for Finance and Operations-appen
 
-**Påkrævet rolle for at få vist fejl** : Systemadministrator
+**Påkrævet rolle for at få vist fejl:** Systemadministrator
 
 1. Log på Microsoft Dynamics LifeCycle Services (LCS).
 2. Åbn det LCS-projekt, du har valgt til at udføre dobbeltskrivningstesten for.
@@ -104,7 +102,7 @@ Dobbeltskrivningsfejl, der stammer fra Common Data Service, kan forekomme i Fina
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Fjerne sammenkædning og sammenkæde med et andet Common Data Service-miljø fra en Finance and Operations-app
 
-**Påkrævede legitimationsoplysninger for at fjerne sammenkædningen af miljøet**: Azure AD-lejeradministrator
+**Påkrævet rolle for at fjerne miljøtilknytningen:** Systemadministrator for enten Finance and Operations-app eller Common Data Service.
 
 1. Log på Finance and Operations-appen.
 2. Gå til **Arbejdsområder \> Datastyring**, og vælg feltet **Dobbeltskrivning**.
@@ -113,3 +111,13 @@ Dobbeltskrivningsfejl, der stammer fra Common Data Service, kan forekomme i Fina
 5. Vælg **Ja** for at bekræfte operationen.
 
 Nu kan du sammenkæde et nyt miljø.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Kan ikke se linjeoplysningsformularen for salgsordren 
+
+Når du opretter en salgsordre i Dynamics 365 Sales, kan klik på **+ Tilføj produkter** omdirigere dig til ordrelinjeformen i Dynamics 365 Project Operations. Du kan ikke få vist formularen for salgsordrelinjens **Oplysninger** på denne måde. Indstillingen for **Oplysninger** vises ikke på rullelisten under **Ny ordrelinje**. Dette sker, fordi Project Operations er installeret i dit miljø.
+
+Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge disse trin:
+1. Naviger til objektet **Ordrelinje**.
+2. Find formularen **Oplysninger** under formularernoden. 
+3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**. 
+4. Ret sikkerhedsindstillingen til **Vis for alle**.

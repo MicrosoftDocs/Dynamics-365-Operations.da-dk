@@ -3,7 +3,7 @@ title: Konfigurere en B2C-lejer i Commerce
 description: I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) til godkendelse af brugerwebsteder i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 04/17 /2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5fca37fb89c723273ef753b102092e2cfb26563
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096495"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270204"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -169,8 +169,7 @@ Gør følgende for at oprette en brugerstrømpolitik til nulstilling af adgangsk
 1. Vælg **Nulstil adgangskode ved hjælp af mailadresse** under **Identitetsudbydere**.
 1. Vælg **Opret**.
 1. Vælg følgende afkrydsningsfelter under **Programkrav**:
-    - **E-mail**
-    - **Adresser**
+    - **E-mail-adresser**
     - **Givent navn**
     - **Efternavn**
     - **Brugerens objekt-id**

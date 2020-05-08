@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224903"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268810"
 ---
 # <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
 
@@ -43,7 +43,11 @@ Kvalitetsstyring er fleksibel og kan gennemføres på forskellige måder for at 
 
 -   Automatisk starte en proces for kvalitetskontrol baseret på foruddefinerede kriterier (ved lagerregistreringen af en indkøbsordre fra en bestemt leverandør).
 -   Spærre lageret under kontrol for at forhindre, at ikke-godkendt lagerbeholdning bliver brugt (fuld spærring af indkøbsordreantal).
--   Bruge vareprøve som en del af en kvalitetstilknytning til at definere beløbet af det aktuelle fysiske lager, der skal undersøges. Vareprøver kan baseres på faste antal eller en procentdel.
+-   Bruge vareprøve som en del af en kvalitetstilknytning til at definere beløbet af det aktuelle fysiske lager, der skal undersøges. Vareprøver kan baseres på faste antal, en procentdel eller et fuldt id.
+
+> [!NOTE]
+> Funktionen _Kvalitetsstyring for lagerstedsprocesser_ udvider funktionerne for kvalitetsstyring. Hvis du bruger denne funktion, skal du se [Kvalitetsstyring for lagerstedsprocesser](quality-management-for-warehouses-processes.md) for at få vist eksempler på, hvordan kvalitetsstyring fungerer, når den er aktiveret.
+
 -   Opret kvalitetsordrer for delleverancer. For at oprette en kvalitetsordre, der er baseret på det antal, der fysisk er modtaget med en ordre, skal du markere afkrydsningsfeltet **Pr. opdateret antal** i formularen **Vareprøve**.
 -   Oprette testtyper, der omfatter minimum, maksimum og måltestværdier og udføre kvalitative kontra kvantitative test, der har foruddefinerede valideringsresultater.
 -   Angive et acceptabelt kvalitetsniveau (AQL) for at styre tolerancer for kvalitetsmål.
@@ -428,6 +432,9 @@ Hvis du i forbindelse med produktion angiver feltet **Hændelsestype** til **Fæ
 </tbody>
 </table>
 
+> [!NOTE]
+> Funktionen *Kvalitetsstyring for lagerstedsprocesser* føjer egenskaber til behandling af kvalitetsordrer til produktion med **Hændelsestype** angivet til *Færdigmeld* og **Udførelse** angivet til *Efter* og for køb med **Hændelsestype** angivet til *Færdigmelding*. Der er flere oplysninger under [Kvalitetsstyring for lagerstedsprocesser](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Kvalitetsstyringssider
 <table>
 <colgroup>
@@ -438,7 +445,7 @@ Hvis du i forbindelse med produktion angiver feltet **Hændelsestype** til **Fæ
 <thead>
 <tr class="header">
 <th>Side</th>
-<th>Beskrivelse</th>
+<th>Beskrivende tekst</th>
 <th>Eksempel</th>
 </tr>
 </thead>
@@ -495,3 +502,5 @@ Du skal definere en kvalitetstilknytning for hver afvigelse i en forretningsproc
 [Processer for kvalitetsstyring](quality-management-processes.md)
 
 [Håndtering af uoverensstemmelse](enable-nonconformance-management.md)
+
+[Kvalitetsstyring for lagerstedsprocesser.](quality-management-for-warehouses-processes.md)

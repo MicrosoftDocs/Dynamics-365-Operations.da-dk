@@ -3,7 +3,7 @@ title: Tilpasse navigation på webstedet
 description: I dette emne beskrives, hvordan du opretter et tilpasset onlinenavigationshierarki for at organisere dine produkter til gennemsyn på dit Microsoft Dynamics 365 Commerce-websted.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001823"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269653"
 ---
 # <a name="customize-site-navigation"></a>Tilpasse navigation på webstedet
 
@@ -93,7 +93,7 @@ Hvis du vil føje brugerdefinerede navigationsindstillinger til navigationsmenue
 1. Vælg **Tilføj element** under fanen **Data** i egenskabsruden for at oprette et nyt (CMS)-navigationselement i indholdsstyringssystemet.
 1. Indtast linktekst og en URL-adresse.
 1. Gentag trin 2 og 3 for at tilføje flere brugerdefinerede navigationsindstillinger.
-1. Når du er færdig, skal du gemme skabelonen eller fragmentet og checke det ind.
+1. Når du er færdig, skal du vælge **Gem** for at gemme skabelonen eller fragmentet og derefter vælge **Afslut redigering** for at tjekke den ind.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

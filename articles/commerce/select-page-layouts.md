@@ -3,7 +3,7 @@ title: Vælge sidelayout
 description: I dette emne forklares, hvordan du kan oprette og vælge sidelayout i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3e8efcdc236911ac79007c606d5d1da56f6c424
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002768"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269906"
 ---
 # <a name="select-page-layouts"></a>Vælge sidelayout
 
@@ -39,7 +39,7 @@ I dette emne forklares, hvordan du kan oprette og vælge sidelayout i Microsoft 
 Benyt følgende fremgangsmåde for at oprette layout til en eksisterende side.
 
 1. Gå til **Sider**, og find den eksisterende side på listen. Brug søgefunktionen efter behov.
-1. Vælg siden, tjek den ud, og vælg den derefter for at åbne den. Notér dig modulrækkefølgen.
+1. Vælg siden, vælg **Rediger** for at tjekke den ud, og vælg derefter sidenavnet for at åbne den. Notér dig modulrækkefølgen.
 1. Vælg **Gem som nyt layout**.
 1. Angiv et navn til layoutet, og vælg derefter **OK**.
 1. Vælg **Konverter til integreret layout**.
@@ -47,6 +47,7 @@ Benyt følgende fremgangsmåde for at oprette layout til en eksisterende side.
 1. Vælg **Gem som nyt layout**.
 1. Angiv et navn til layoutet, og vælg derefter **OK**.
 1. Vælg **Skift layout**, vælg det første layout, du har oprettet, og vælg derefter **OK**. Notér dig modulrækkefølgen. Ret det, så det svarer til den modulrækkefølge, der er gemt sammen med layoutet.
+1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. 
 
 ## <a name="select-a-different-layout-for-an-existing-page"></a>Vælge et andet layout for en eksisterende side
 
@@ -56,9 +57,10 @@ Benyt følgende fremgangsmåde for at oprette layout til en eksisterende side.
 Benyt følgende fremgangsmåde for at vælge et andet layout til en eksisterende side.
 
 1. Gå til **Sider**, og find den eksisterende side på listen. Brug søgefunktionen efter behov.
-1. Vælg siden, tjek den ud, og vælg den derefter for at åbne den.
+1. Vælg siden, vælg **Rediger** for at tjekke den ud, og vælg derefter sidenavnet for at åbne den.
 1. Vælg **Skift layout**.
 1. Vælg det nye layout for siden, og vælg derefter **OK**. Sideeditoren opdateres til at vise det nye layout.
+1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -3,7 +3,7 @@ title: Administrere SEO-metadata
 description: I dette emne beskrives, hvordan du administrerer SEO-metadata (søgemaskineoptimering) i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003458"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270044"
 ---
 # <a name="manage-seo-metadata"></a>Administrere SEO-metadata
 
@@ -72,13 +72,10 @@ Hvis du vil redigere sidemetadata, skal du følge disse trin.
 1. Vælg **Fabrikam** (eller navnet på dit websted) under **Websteder**.
 1. Vælg **Sider** i navigationsruden til venstre.
 1. Vælg startsiden for at åbne den i sideeditoren.
-1. Vælg **Check ud** i handlingsruden.
+1. Vælg **Rediger** på kommandolinjen.
 1. Udvid **Standardmetatags** i egenskabsruden til højre.
-1. Hvis du vil tilføje en ny metatag, skal du vælge **Tilføj** og derefter angive den pågældende tag i feltet.
-
-    Hvis du vil fjerne en eksisterende metatag, skal du vælge skraldespandsymbolet til højre for den.
-
-1. Vælg **Gem**, og vælg derefter **Tjek ind**.
+1. Hvis du vil tilføje en ny metatag, skal du vælge **Tilføj** og derefter angive den pågældende tag i feltet. Hvis du vil fjerne en eksisterende metatag, skal du vælge skraldespandsymbolet til højre for den.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
 1. Angiv **Opdaterede metatags** i feltet **Kommentarer**, og vælg derefter **OK**.
 1. Vælg **Eksempel** for at få vist din side. Når du er færdig, skal du lukke eksempelfanen for at vende tilbage til oprettelsesværktøjet.
 1. Vælg **Publicer**.

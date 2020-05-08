@@ -3,7 +3,7 @@ title: Arbejde med skabeloner
 description: Dette emne beskriver, hvordan du kan arbejde med skabeloner i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 815565dd203925fa0acca9336c4ddc56db8c4058
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002561"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269860"
 ---
 # <a name="work-with-templates"></a>Arbejde med skabeloner
 
@@ -132,14 +132,14 @@ Hvis du vil tilføje et script i en skabelon, skal du følge disse trin.
 Hvis du vil gemme en skabelon og checke den ind, skal du følge disse trin.
 
 1. Vælg **Gem** øverst i skabeloneditoren. Gemte ændringer påvirker ikke downstream-sider, før de er checket ind.
-1. Vælg **Check ind**. Dine ændringer er nu synlige for downstream-arbejdsgange.
+1. Vælg **Afslut redigering**. Dine ændringer er nu synlige for downstream-arbejdsgange.
 
 Hvis du vil se ændringerne på forhånd, skal du enten åbne en eksisterende side, der bruger skabelonen, eller oprette en ny side ud fra skabelonen.
 
 Når du har set ændringerne af skabelonen, skal du følge et af disse trin for at publicere skabelonen til dit aktive websted:
 
 * Gå til **Skabeloner**, vælg skabelonen, og vælg derefter **Publicer**.
-* Vælg **Publicer** i skabeloneditoren.
+* Vælg layoutnavnet for at åbne layouteditoren, og vælg derefter **Publicer**.
 * Publicer en side, der refererer til den ikke-publicerede skabelon. Skabelonen publiceres automatisk.
 
 > [!WARNING]

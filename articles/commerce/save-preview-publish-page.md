@@ -3,7 +3,7 @@ title: Gemme, få vist og udgive en side
 description: Dette emne beskriver, hvordan du gemmer, ser forhåndsvisning af og udgiver en side i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002801"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269975"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Gemme, få vist og udgive en side
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ Dette emne beskriver, hvordan du gemmer, ser forhåndsvisning af og udgiver en s
 
 ## <a name="save-a-page"></a>Gemme en side
 
-Hvis du vil gemme en side, skal du selv have den tjekket ud til dig selv og åbnet den i sideeditoren. Du bør gemme en side umiddelbart efter, at du har redigeret den, for at sikre, at ændringerne bevares.
+Hvis du vil gemme en side, skal du selv have den tjekket ud til dig selv og åbnet den i sideeditoren. Vælg **Rediger** på kommandolinjen for at tjekke siden ud. Du bør gemme den straks efter, at du har redigeret den, for at sikre, at ændringerne bevares.
 
 Når du gemmer en side, er ændringerne kun synlige for dig. Gemmehandlingen er primært beregnet til at gemme ændringer, mens siden endnu ikke er klar til at blive tjekket ind. Når du er færdig med at redigere siden, anbefales du at tjekke den ind, så ændringerne bliver synlige for andre. På dette tidspunkt kan siden også være tjekket ud af andre brugere, der skal redigere den.
 
@@ -50,7 +49,7 @@ Når du er færdig med at redigere siden, kan det være en god ide at se forhån
 
 ## <a name="publish-a-page"></a>Udgive en side
 
-Når siden er færdig, er næste trin at udgive den, så eksterne brugere kan få vist indholdet. Før du kan udgive en side, skal du tjekke den ind.
+Når siden er færdig, er næste trin at udgive den, så eksterne brugere kan få vist indholdet. Før du kan udgive en side, skal du tjekke den ind ved at vælge **Afslut redigering** på kommandolinjen.
 
 Du kan udgive og annullere udgivelsen af sider fra enten sidefremviseren eller sideeditoren. Sideeditoren viser en liste over sider og tillader massehandlinger. Sideeditoren kan kun bruges til at udgive eller annullere udgivelsen af en enkelt side, der er åben i den.
 
@@ -70,9 +69,9 @@ Hvis du vil gemme, se forhåndsvisning af og udgive en startside, skal du følge
 1. Vælg **Fabrikam** (eller navnet på dit websted) under **Websteder**.
 1. Vælg **Sider** i navigationsruden til venstre.
 1. Find og vælg startsiden for at åbne den i sideeditoren.
-1. Vælg **Check ud**.
+1. Vælg **Rediger**.
 1. Rediger siden efter behov.
-1. Vælg **Gem**, og vælg derefter **Tjek ind**.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
 1. Brug feltet **Bemærkninger** til at skrive en note om de ændringer, du har foretaget, og vælg derefter **OK**.
 1. Vælg **Eksempel** for at få vist din side. Når du er færdig, skal du lukke eksempelfanen for at vende tilbage til oprettelsesværktøjet.
 1. Vælg **Publicer**.

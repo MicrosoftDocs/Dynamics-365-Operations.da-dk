@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207827"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281503"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
@@ -85,6 +85,9 @@ I dette eksempel omfatter arbejdsgangsprocessen for indkøbsrekvisitionslinjer f
 3.  Anmoderens linjechef gennemser og godkender indkøbsrekvisitionslinjerne. Godkendelsen kan sendes til anmoderens chef, hvis f.eks. beløbet i en indkøbsrekvisitionslinje overstiger anmoderens forbrugsgrænse for indkøbsrekvisitionslinjer. Chefen kan godkende eller afvise en eller begge indkøbsrekvisitionslinjer.
 4.  Afdelingslederen for marketingafdelingen gennemser indkøbsrekvisitionslinjerne for både plakater og t-shirts. Afdelingschefen for salgsafdelingen gennemser kun indkøbsrekvisitionslinjen for plakaterne, fordi det er den eneste omkostning, som salgsafdelingen bliver faktureret for.
 5.  Gruppelederen gennemser og godkender kun indkøbsrekvisitionslinjen for t-shirts, hvis gruppelederens godkendelse er påkrævet, fordi beløbet på indkøbsrekvisitionslinjen f.eks. overstiger afdelingslederens godkendelsesgrænse. Gruppelederen behøver ikke at godkende indkøbsrekvisitionslinjen for plakaterne.
+
+> [!NOTE]
+> Systemvalutaen skal være angivet, hvis hovedarbejdsgangen for en indkøbsrekvisition kræver godkendelser, der er relateret til signeringsgrænser.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurere en arbejdsgang for indkøbsrekvisitioner
 Hvis du skal sende en indkøbsrekvisition til gennemsyn, skal du konfigurere arbejdsgangsprocesserne for indkøbsrekvisitioner. Den arbejdsgangsproces, du definerer, styrer udvekslingen mellem den bruger, der har rekvireret varerne (anmoderen), og validatoren og godkenderen i arbejdsgangen. Ruten for indkøbsrekvisitionen afhænger af de betingelser, der er angivet i arbejdsgangskonfigurationen. Disse betingelser bestemmer f.eks., hvornår indkøbsrekvisitionen skal distribueres, den bruger eller rolle, den skal distribueres til, og de handlinger, som brugerne kan tage.  

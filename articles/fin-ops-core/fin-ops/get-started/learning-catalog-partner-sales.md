@@ -1,36 +1,40 @@
 ---
 title: Undervisningskatalog til Microsoft Partner Sales and Marketing
-description: ''
-author: margoc
-manager: AnnBe
-ms.date: 05/03/2019
+description: Find alle uddannelsesmuligheder til Finance and Operations.
+author: loreleishannonmsft
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
+ms.date: 04/17/2020
+ms.author: v-lshann
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: margoc
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7419ecae20ec4bc7579ad6c525092e6642254db9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: d2c029f6e5654f0da399ee7fc26ead6d787e59f5
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191011"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278949"
 ---
 # <a name="microsoft-partner-sales-and-marketing-learning-catalog"></a>Undervisningskatalog til Microsoft Partner Sales and Marketing
 
-Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de mest grundlæggende til de mest avancerede. Hvis der findes indhold i flere formater, giver vi dig besked, så du kan vælge det kursusformat, der bedst opfylder dine behov. Yderligere oplysninger finder du under Formater af undervisningsindhold. 
+Er du ansvarlig for at hjælpe dine kunder med at købe den rigtige løsning? 
 
-## <a name="get-started"></a>Introduktion
-| Indhold                                                                                                                                   | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                              | Format                                                                         | Længde    | 
+Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de mest grundlæggende til de mest avancerede. Hvis der findes indhold i flere formater, giver vi dig besked, så du kan vælge det kursusformat, der bedst opfylder dine behov. 
+
+
+## <a name="get-started"></a>Introduktion<a name="get-started"></a>
+| Indhold  | Beskrivende tekst  | Formater  | Længde    | 
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/en-us/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Denne læringsoplevelse fører dig på en rejse, der begynder med at vise dig, hvordan digital omdannelse og styrken ved forretningsprogrammer kan transformere din virksomhed. Vi dækker, hvordan Dynamics 365 og Power Platform hjælper dig med at træffe velovervejede beslutninger på baggrund af din organisations behov og mål, via fire byggestene af digital transformation – moderne, ensartet, intelligent og fleksibel.   | Gratis onlinelæringssti i dit eget tempo                                          | 6.5 timer |
-| [Grundlæggende funktioner i Dynamics 365 og Power Platform](https://docs.microsoft.com/en-us/learn/paths/dyn-power-plat-bus-app-fundamentals/)                                                  | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps.                                                                                                                                                                                              | Gratis onlinelæringssti i dit eget tempo                                          | 5.5 timer |
-| [Kom i gang med Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/learn/paths/get-started-with-dynamics-365-for-finance-and-ops/)                        | Få mere at vide om, hvordan Microsoft Dynamics 365 for Finance and Operations støtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations skal du være bekendt med dets funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo                                          | 1.5 timer |
-| [Kursus MB-900T01-A: Grundlæggende funktioner i Dynamics 365](https://www.microsoft.com/en-us/learning/course.aspx?cid=MB-900T01)                                                                | Dette kursus giver kendskab til funktionerne i Dynamics 365 og forretningsværdien. Kurset dækker Dynamics 365-programmer, Power Platform, skybegreber, sikkerhedsmodellen og licensovervejelserne.                                                                                                                                                                                      | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag     |
-| [Grundlæggende funktioner i Dynamics 365](https://www.microsoft.com/en-us/learning/d365-fundamentals.aspx)                                                                                       | Bevis, at du forstår Microsoft Dynamics 365. Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder.                                                                                                                                                                                                                                                                             | Eksamen, hvor omkostning varierer alt efter region                                                    |           |
+| [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed.  | Gratis onlinelæringssti i dit eget tempo                                          | 7 timer |
+| [Grundlæggende funktioner i Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/)  | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | 5.5 timer |
+| [Kom i gang med Finance and Operations-apps](https://docs.microsoft.com/learn/paths/get-started-with-dynamics-365-for-finance-and-ops/)  | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo   | 2 timer |
+| [Kursus MB-900T01-A: Grundlæggende funktioner i Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)  | Dette kursus giver kendskab til funktionerne i Dynamics 365 og forretningsværdien. Kurset dækker Dynamics 365-programmer, Power Platform, skybegreber, sikkerhedsmodellen og licensovervejelserne.  | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag     |
+
+
+## <a name="exam"></a>Eksamen<a name="exam"></a>
+| Indhold  | Beskrivende tekst  | Formater | Længde    | 
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
+| [Grundlæggende funktioner i Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)                                                                                       | Bevis, at du forstår Microsoft Dynamics 365. Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder.  | Eksamen, hvor omkostning varierer alt efter region                                                    |           |
