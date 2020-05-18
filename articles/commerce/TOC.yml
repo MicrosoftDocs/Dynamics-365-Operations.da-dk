@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (april 2020)
                       href: get-started/whats-new-10-0-9.md
-                    - name: Commerce 10.0.8 (februar 2020)
-                      href: get-started/whats-new-10-0-8.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: 'AX 2012-funktioner, der er udsat'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Arbejde med serialiserede varer
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Arbejde med serialiserede varer i POS
+                      href: pos-serialized-items.md
                     - name: Skubbe produkter fra distributionscenter til butik ved hjælp af centraliseret indkøb
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Konfigurere regler og parametre for cross-docking og centraliseret indkøb
@@ -1002,7 +1004,7 @@
               href: store-performance-information.md
             - name: 'Konfigurere RFM-analyse (Recency, Frekvens og Monetær)'
               href: set-up-rfm-analysis.md
-        - name: Lokalisering og lovpligtige funktioner
+        - name: Globalisering
           items:
             - name: Oversigt over regnskabsintegration for Commerce-kanal
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1010,22 +1012,30 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Østrig
               items:
-                - name: Eksempel på integration af regnskabsregistreringstjeneste for Østrig
+                - name: Eksempel på integration af regnskabsregistreringstjeneste i Østrig
                   href: localizations/emea-aut-fi-sample.md
             - name: Østeuropa
               items:
-                - name: Fakturaer for forskudsbetaling til Commerce for Østeuropa
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Administration af kontantbeholdning til Commerce til Østeuropa
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Debitorfakturaer og -retursalgsordrer i østeuropæiske lande
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: 'Retningslinjer for installation for kasseapparater for Tjekkiet, Ungarn og Polen'
-                  href: localizations/emea-eeu-deployment.md
-                - name: Eksempel på integration af bonprinter for Polen
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Eksempel på integration af regnskabsregistreringstjeneste for Tjekkiet
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Almindeligt
+                  items:
+                    - name: Fakturaer for forskudsbetaling til Commerce til Østeuropa
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Administration af kontantbeholdning til Commerce til Østeuropa
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Debitorfakturaer og -retursalgsordrer i østeuropæiske lande
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: 'Retningslinjer for installation af kasseapparater i Tjekkiet, Ungarn og Polen'
+                      href: localizations/emea-eeu-deployment.md
+                - name: Tjekkiet
+                  items:
+                    - name: Eksempel på integration af regnskabsregistreringstjeneste i Tjekkiet
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Polen
+                  items:
+                    - name: Eksempel på integration af bonprinter i Polen
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Administration af kundeoplysninger i Polen
+                      href: localizations/emea-pol-customer-information.md
             - name: Frankrig
               items:
                 - name: Kasseapparatfunktionalitet
@@ -1044,6 +1054,8 @@
               items:
                 - name: Eksempel på integration af bonprinter for Italien
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Administration af kundeoplysninger for Italien
+                  href: localizations/emea-ita-customer-information.md
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer til Mexico
@@ -1058,7 +1070,9 @@
               items:
                 - name: Kasseapparatfunktionalitet
                   href: localizations/emea-swe-cash-registers.md
-                - name: Eksempel på POS-integration med kontrolenheder
+                - name: Eksempel på integration med kontrolenhed for Sverige
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Eksempel på Retail POS-integration med kontrolenheder (ældre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering og Power BI-integration
           items:
@@ -1138,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Føje økonomiske dimensioner til samlede målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Oprette analyserapporter ved hjælp af PowerBI Desktop
+                - name: Oprette analyserapporter ved hjælp af Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json

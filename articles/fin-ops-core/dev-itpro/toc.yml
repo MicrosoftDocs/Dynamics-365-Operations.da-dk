@@ -18,10 +18,8 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platformsopdateringer til 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (april 2020)
+                - name: Platformsopdatering 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (februar 2020)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede Platform-funktioner
@@ -140,11 +138,9 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Konfiguration af dobbeltskrivning fra Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Første synkronisering
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: Aktivér dobbeltskrivning for eksisterende Finance and Operations-apps
+                            - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
                               items:
-                                - name: Aktivér dobbeltskrivning for eksisterende Finance and Operations-apps
+                                - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
                                   href: data-entities/dual-write/enable-dual-write.md
                                 - name: Systemkrav og forudsætninger
                                   href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Versionskontrol, metadatasøgning og navigation'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Bygge automatisering ved hjælp af Azure
+              items:
+                - name: Bygge automatisering med Microsoft-baserede agenter og Azure Pipelines
+                  href: dev-tools/hosted-build-automation.md
+                - name: Føje licensfiler til en installerbare pakke i Azure Pipelines
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Oprette installerbare pakker i Azure Pipelines
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: X++-modelversionen i Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
             - name: Eksempelprogram til flådeadministration
               items:
                 - name: Komplet scenarie for eksempelprogram til flådeadministration
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Tildele brugere til sikkerhedsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Sikkerhedsdiagnosticering for opgaveregistreringer
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Batchbehandling
               items:
                 - name: Oversigt over batchbehandling
