@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Vedligeholdelsesstatus
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Integrere aktivstyring med Dynamics 365 Guides
+              href: asset-management/asset-management-guides-integration.md
             - name: Arbejdsområde til aktivstyring på mobilenhed
               href: asset-management/asset-management-mobile-workspace.md
         - name: Datastyring
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Føje økonomiske dimensioner til samlede målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Oprette analyserapporter ved hjælp af PowerBI Desktop
+                - name: Oprette analyserapporter ved hjælp af Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Oversigt over planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Negative beholdninger behandles som nul beholdning
+                - name: Planlægning med negative disponible lagerantal
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Kom i gang med planlægningsoptimering
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: Konfigurere en min.-maks. genopfyldningsproces
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Konfigurere en arbejdsskabelon for indkøbsordrer
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Installere og konfigurere lagerstedsapp
               items:
                 - name: Oversigt over installation og konfiguration
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Konfigurere mobilenheder til lagerstedsarbejde
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Modtagelse af id med appen Lagersted til mobilenheder
+                - name: Modtage id med lagerstedsapp
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
                   href: warehousing/tasks/set-up-mobile-device-menu.md

@@ -990,6 +990,8 @@
               href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Projektprognoser og -budgetter
               href: project-management/project-forecasts-budgets.md
+            - name: Oprette prognosemodeller for projektbudgetter
+              href: project-management/create-forecast-models-project-budgets.md
             - name: Overføre projektbudgetter ved afslutning af regnskabsår
               href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Projektsalgsordrer
@@ -1742,8 +1744,8 @@
               items:
                 - name: Oversigt for Ungarn
                   href: localizations/hungary.md
-                - name: Beregning af valutakurs
-                  href: localizations/tasks/hu-00001-exchange-rate-calculation.md
+                - name: Gennemsnitlig og daglig valutakursberegning
+                  href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
                 - name: Afskrivningsmetoder for anlægsaktiver
                   href: localizations/emea-hun-fixed-assets-depreciation-methods.md
                 - name: Prisbillige anlægsaktiver
@@ -2284,6 +2286,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
+                - name: 'Revisionsfil (XML Auditfile Financieel, XAF)'
+                  hred: localizations/emea-nl-audit-file.md
             - name: Norge
               items:
                 - name: Oversigt for Norge
@@ -2930,7 +2934,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Føje økonomiske dimensioner til samlede målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Oprette analyserapporter ved hjælp af PowerBI Desktop
+                - name: Oprette analyserapporter ved hjælp af Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -2976,9 +2980,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/finance/toc.json
                         - name: Knytte komponenter i det oprettede format til datamodelelementer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Teste den forberedte elektronisk rapporteringsløsning i destinationsprogrammet
+                    - name: Teste den forberedte elektroniske rapporteringsløsning i destinationsprogrammet
                       items:
-                        - name: (ER (elektronisk rapportering)) Importere konfigurationer fra RCS
+                        - name: Importere konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                         - name: Generere elektroniske dokumenter til betalinger ved hjælp af en formatkonfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3026,7 +3030,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
-                    - name: List
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+                    - name: Liste
                       items:
                         - name: Listefunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3240,13 +3246,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: 'Vælge datamodeldefinitioner, når du opretter formater'
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Udvidede filtreringsindstillinger til søgning efter konfigurationer i det globale lager
-              href: ../finance/localizations/enhanced-filtering-global-repo.md
-            - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-            - name: (ER (elektronisk rapportering) Datakilder på tværs af firma i elektronisk rapportering
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
-            - name: Designe elektronisk rapporteringsformater til generering af udgående elektroniske dokumenter i forskellige formater
+            - name: Designe elektroniske rapporteringsformater til generering af udgående elektroniske dokumenter i forskellige formater
               items:
                 - name: (ER (elektronisk rapportering)) Designe en konfiguration til generering af rapporter i OPENXML-format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3268,46 +3268,14 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
             - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
-            - name: Definere afhængigheden af elektronisk rapporteringskonfigurationer af andre komponenter
+            - name: Definere afhængigheden af elektroniske rapporteringskonfigurationer for andre komponenter
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Designe en elektronisk rapporteringsløsning til at bruge økonomiske dimensioner
-              items:
-                - name: Designe datamodeller til at bruge økonomiske dimensioner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
-                - name: Tilknytte modeller for at bruge økonomiske dimensioner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                - name: Designe rapporter til at bruge økonomiske dimensioner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                - name: 'Køre rapporter, som bruger økonomiske dimensioner som datakilder'
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-            - name: Designe elektronisk rapporteringsformater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
-              items:
-                - name: Oprette formater til at udføre optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere format til at udføre optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
-                - name: Bruge beregninger til at generere output til optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
-                - name: Køre formater for at udføre optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
             - name: 'Tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
               items:
                 - name: 'Designe formater for at tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                 - name: 'Køre formater for at tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-            - name: Bruge dokumentstyringsfiler i formatoutput
-              items:
-                - name: Forberede datamodeller til at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
-                - name: Udvide datamodeller til at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
-                - name: Oprette formater for at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                - name: Køre formater for at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                - name: Redigere og køre formater for at bruge dokumentstyringsfiler i elektronisk rapporteringsoutput
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: Opdatere applikationsdata ved hjælp af elektronisk rapportering
               items:
                 - name: Generere elektroniske dokumenter og opdatere programdata
@@ -3340,8 +3308,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: Understøt parameteriserede opkald om elektroniske rapporteringsdatakilder af typen Beregnet felt
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
             - name: Livscyklus for konfiguration
               items:
                 - name: Administrere konfigurationslivscyklus
@@ -3361,23 +3327,67 @@
                     - name: Hente konfigurationer fra det elektroniske rapporteringslager til RCS-typen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Importere konfigurationer fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
             - name: Selvstudier
               items:
-                - name: Bruge JOIN-datakilder til at hente data fra flere programtabeller
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                - name: 'Få mere at vide om, hvordan du bruger datakilder'
+                  items:
+                    - name: Bruge SAMMENKÆDNING til at hente data fra flere tabeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Bruge UBEHANDLET XML til at tilføje indhold
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+                    - name: Understøtte parameteriserede opkald om datakilder af typen BEREGNET FELT
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektroniske rapporteringsdatakilder på tværs af firmaer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Bruge DETALJER OM ØKONOMISKE DIMENSIONER-datakilder
+                      items:
+                        - name: Designe datamodeller
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Tilknytte modeller til brug af økonomiske dimensioner
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Designe rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Køre rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Bruge det genererede output som en datakilde til at udføre optælling og opsummering
+                      items:
+                        - name: Oprette formater
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurere format til at udføre optælling og opsummering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Generere output til optælling og opsummering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Køre formater for at udføre optælling og opsummering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Bruge relationer til DOKUMENTER til at få adgang til dokumentstyringsfiler
+                      items:
+                        - name: Forberede datamodeller
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Udvide datamodeller til at bruge dokumentstyringsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Oprette formater
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Køre formater for at bruge dokumentstyringsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                        - name: Redigere og køre formater for at bruge dokumentstyringsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+                        - name: Fejlfinde datakilder
+                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
                 - name: Konfigurere landekontekstafhængige elektroniske rapporteringsmodeltilknytninger
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
                 - name: 'Konfigurere elektroniske rapporteringsformater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                 - name: Konfigurere parametrene for et elektronisk rapporteringsformat for hver juridisk enhed
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
-                - name: Udskyde udførelse af elektronisk rapporteringsformatelementer
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                - name: Udskyde udførelse af elektroniske rapporteringsformatelementer
                   items:
                     - name: Udskyde udførelse af et sekvenselement
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                     - name: Udskyde udførelse af et XML-element
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                - name: Relativ sti i databindinger
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
               items:
                 - name: Konfigurere strukturen
@@ -3385,7 +3395,11 @@
                     - name: Konfigurere den elektroniske rapporteringsstruktur
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: Sikkerhedskopiering og gendannelse af elektroniske rapporteringsskabeloner
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: Sikkerhedskopilager til elektroniske rapporteringsskabeloner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                        - name: Oprydning i elektronisk rapporteringsoverflytning
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/finance/toc.json
                     - name: Oprette konfigurationsudbydere og markere dem som aktive
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Destinationer
