@@ -3,7 +3,7 @@ title: Overblik
 description: I Dynamics 365 Human Resources giver arbejdsområdet Orlov og fravær en fleksibel struktur til oprettelse af nye orlovsplaner, arbejdsgange til administration af anmodninger og en intuitiv selvbetjeningsside, hvor medarbejdere kan anmode om fritid.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226224"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325759"
 ---
 # <a name="overview"></a>Overblik
 
@@ -78,8 +78,16 @@ Du kan ikke indstille **Afrundingspræcision**, når du indstiller **Afrundingst
 
 ## <a name="leave-and-absence-preview-features"></a>Visningsfunktioner for orlov og fravær
 
-Du kan afprøve nye visningsfunktioner for orlov og fravær i et **sandkasse**-miljø. Du kan få oplysninger om aktivering af visningsfunktioner under [Administrere funktioner](hr-admin-manage-features.md). Visningsfunktionerne omfatter:
+Du kan afprøve nye visningsfunktioner for orlov og fravær i et **sandkasse**-miljø. Du kan få oplysninger om aktivering af visningsfunktioner under [Administrere funktioner](hr-admin-manage-features.md). 
 
-- **Orlovssuspension** – Du kan afbryde orlov og fravær i personale for en medarbejder. Når du suspendere orlov, stoppes orloven for de valgte orlovstyper. Hvis suspensionen finder sted, når der foretages en periodisering, opretter suspensionen en forholdsmæssig justering til medarbejderens orlov. 
+[!include [banner](includes/preview-feature.md)]
+
+Visningsfunktionerne omfatter:
+
+- **Orlovssuspension** – Du kan afbryde orlov og fravær i personale for en medarbejder. Når du suspendere orlov, stoppes orloven for de valgte orlovstyper. Hvis suspensionen finder sted, når der foretages en periodisering, opretter suspensionen en forholdsmæssig justering til medarbejderens orlov. Du kan også medtage årsagskoder, når du suspenderer en medarbejders orlov. Brugeroplevelsen er opdateret for at indikere suspendering. 
 
 - **Overføre regler** – Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringer overføres. Hvis en medarbejder f.eks. overfører 10 dage, kan du vælge en anden orlovstype for disse 10 dage. 
+
+- **Medtag årsagskode og kommentarer for reguleringer** – Du kan medtage en årsagskode og en kommentar, når du foretager en regulering af en medarbejders orlov. 
+
+- **Overgang til orlovs- og fraværsparametre** – Du kan nu kun bruge orlovs- og fraværsparametre i stedet for HR-parametre. 

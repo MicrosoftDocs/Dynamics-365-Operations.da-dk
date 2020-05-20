@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
+ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275644"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340924"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -62,14 +62,14 @@ Når du har installeret Package Deployer-værktøjet, skal du installere løsnin
 
 Udfør følgende trin for at aktivere sporingsloggen.
 
-1. Log på Finance and Operations-appen, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
+1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
 2. På siden **Administration** skal du vælge **Systemindstillinger**.
 3. Under fanen **Tilpasning** i feltet **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
 
 
 Udfør følgende trin for at få vist sporingsloggen.
 
-1. Log på Finance and Operations-appen, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
+1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
 2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
 

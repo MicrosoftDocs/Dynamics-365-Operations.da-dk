@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205661"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346462"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Reservationspolitik for fleksibel dimension for lagerstedsniveau
 
@@ -233,7 +233,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på WMA (mobilappen for lagerstedet), når du starter pluk af arbejde.</li>
+<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på lagerstedsappen, når du starter pluk af arbejde.</li>
 <li>Vælg <strong>Foreslå</strong>.</li>
 <li>Bekræft den nye lokation, der foreslås, på basis af tilgængeligheden af batchantal.</li>
 </ol>
@@ -247,10 +247,10 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ikke relevant</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på WMA, når du starter pluk af arbejde.</li>
+<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på lagerstedsappen, når du starter pluk af arbejde.</li>
 <li>Angiv en lokation manuelt.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ikke relevant</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Fuld</strong> på WMA, når du behandler plukarbejde.</li>
+<li>Vælg menupunktet <strong>Fuld</strong> på lagerstedsapp, når du behandler plukarbejde.</li>
 <li>I feltet <strong>Plukantal</strong> skal du angive en del af antallet af det krævede pluk for at angive den fulde kapacitet.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Start en bevægelse på WMA.</li>
+<li>Start en bevægelse på lagerstedsappen.</li>
 <li>Angiv "fra"- og "til"-lokationer.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på WMA, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du angive <strong>Ingen omfordeling</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på WMA, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du angive <strong>Ingen omfordeling</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på WMA, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 <li>Vælg lokationen/id'et på listen.</li>
@@ -545,10 +545,10 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 </tr>
 <tr>
 <td>En arbejdsundtagelse af typen <strong>Kort pluk</strong> er angivet, hvor <strong>Vareomfordeling</strong> = <strong>Manuel</strong>, <strong>Reguler lager</strong> = <strong>Ja</strong>, og <strong>Fjern reservationer</strong> = <strong>Nej</strong>. Derudover er indstillingen <strong>Tillad manuel vareomfordeling</strong> aktiveret for arbejderen.</td>
-<td>Nr.</td>
+<td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på WMA, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 </ol>
@@ -558,10 +558,10 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 </tr>
 <tr>
 <td>En arbejdsundtagelse af typen <strong>Kort pluk</strong> er angivet, hvor <strong>Vareomfordeling</strong> = <strong>Manuel</strong>, <strong>Reguler lager</strong> = <strong>Ja</strong>, og <strong>Fjern reservationer</strong> = <strong>Ja</strong>. Derudover er indstillingen <strong>Tillad manuel vareomfordeling</strong> aktiveret for arbejderen.</td>
-<td>Nr.</td>
+<td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på WMA, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 <li>Vælg lokationen/id'et på listen.</li>
@@ -585,7 +585,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ikke relevant</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på WMA, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med automatisk omfordeling</strong>.</li>
 </ol>

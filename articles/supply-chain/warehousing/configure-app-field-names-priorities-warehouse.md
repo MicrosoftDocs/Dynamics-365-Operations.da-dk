@@ -1,6 +1,6 @@
 ---
 title: Konfigurere appfeltnavne i lagerstedsappen
-description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 Supply Chain Management.
+description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsappen i Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f9b02b93895757580b323a4cd891909d5551ea55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205753"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346393"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere appfeltnavne i lagerstedsappen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 Supply Chain Management. 
+I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsappen i Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
 > Dette emne vedrører funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Lagersted i selvstudiet [Oversigt over installation og konfiguration af appen Lagersted](install-configure-warehousing-app.md).
 
-## <a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
+## <a name="configure-warehousing-app-field-names"></a>Konfigurere feltnavne i lagerstedsapp
 
 Når du bruger Lagersted på din mobilenhed, kan du konfigurere, hvordan metadata skal vises på din enhed på siden **Feltnavne for lagerstedsapp**. I et nyt firma skal du vælge **Opret standardopsætning** for at oprette alle de feltnavne, der skal bruges i arbejdsprocesser på mobilenheden til lagerstedet, og derefter tildele dem en foretrukken inputtilstand og inputtype. Når du har oprettet alle feltnavne, kan du vælge følgende indstillinger for input.
 
@@ -68,7 +68,7 @@ Når du bruger Lagersted på din mobilenhed, kan du konfigurere, hvordan metadat
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a>Konfigurere feltprioritet for lagerstedsapp
+## <a name="configure-warehousing-app-field-priority"></a>Konfigurere feltprioritet i lagerstedsapp
 
 På siden **Feltprioritet for lagerstedsapp** kan du placere feltnavnene i forskellige prioriterede grupper. Dette gør det muligt at afgøre, hvilke oplysninger der vises på siden for hovedopgaven, når lagermedarbejderne udfører opgaver ved hjælp af programmet. Hvis du klikker på **Opret standardopsætning**, oprettes et standardsæt af prioriterede grupper. Det er muligt at oprette så mange prioriterede grupper som ønsket, men kun tre prioriterede grupper vil blive vist på opgavesiden. Når systemet sender metadata til programmet, tildeler det hvert felt en relativ prioritet afhængigt af dets prioriterede gruppe, og appen viser de tre første højt prioriterede grupper, der er indeholdt i metadataene på opgavesiden. Resten af overløbsmetadataene vises på en side med sekundære oplysninger. Følgende tabel viser et eksempel på fem prioriterede grupper.
 

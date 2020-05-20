@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 479a7edd456a1f4d121ceef292d2559c400c31a2
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266317"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346347"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.11. (juli 2020)
 
@@ -40,7 +40,7 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 - [Lagring af rapporten Disponibelt lager](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Nummerplader, der modtager forbedringer af Warehousing Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Du kan få flere oplysninger i [Nummerplademodtagelse via Warehousing Mobile App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Nummerplader, der modtager forbedringer af lagerstedsappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Du kan få flere oplysninger i [Nummerplademodtagelse via lagerstedsappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 - [Forbedringer af linjereservation til formularen til batchnummer reservation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – Du kan få flere oplysninger i [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Nye dataenheder til produktionsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Overmodtagelse af lastantal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – Du kan få flere oplysninger i [Lagerstedshåndtering af indgående laster for indkøbsordrer](../warehousing/inbound-load-handling.md).

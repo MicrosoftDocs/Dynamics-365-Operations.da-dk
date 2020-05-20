@@ -3,7 +3,7 @@ title: Konfigurere en B2C-lejer i Commerce
 description: I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) til godkendelse af brugerwebsteder i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270204"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295263"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -87,7 +87,7 @@ Hvis du vil oprette B2C-programmet, skal du følge disse trin.
 
 ### <a name="reply-urls"></a>Svar-URL-adresser
 
-Svar-URL-adresser er vigtige, da de giver en hvidliste af returdomænerne, når dit websted kalder Azure AD B2C for at godkende en bruger. Det gør det muligt at returnere den godkendte bruger tilbage til det domæne, hvor de logger på (domænet for dit websted). 
+Svar-URL-adresser er vigtige, da de giver en liste over returdomænerne, når dit websted kalder Azure AD B2C for at godkende en bruger. Det gør det muligt at returnere den godkendte bruger tilbage til det domæne, hvor de logger på (domænet for dit websted). 
 
 I feltet **Svar-URL-adresse** på skærmen **Azure AD B2C-programmer \> Nyt program** skal du tilføje separate linjer til både dit websteds domæne og (når miljøet er klargjort) til den Commerce-genererede URL-adresse. Disse URL-adresser skal altid bruge et gyldigt URL-adresseformat og må kun være grundlæggende URL-adresser (ingen efterfølgende skråstreger eller stier). Strengen ``/_msdyn365/authresp`` skal derefter føjes til de grundlæggende URL-adresser som i følgende eksempler.
 
@@ -121,7 +121,7 @@ Gør følgende for at konfigurere en tilmeldings- og login-politik.
 
     | **Indsaml attribut** | **Returkrav** |
     | ---------------------- | ----------------- |
-    |                        | Mailadresser   |
+    | E-mailadresse          | Mailadresser   |
     | Givent navn             | Givent navn        |
     |                        | Identitetsudbyder |
     | Efternavn                | Efternavn           |
@@ -246,10 +246,6 @@ Udfør følgende trin for at opdatere Headquarters med de nye Azure AD B2C-oplys
     1. Skriv **Offentlig** i feltet **Type**.
     1. Skriv **Kunde** i feltet **Brugertype**.
 1. Gå til handlingsruden, og vælg **Gem**.
-1. Søg efter **Nummerserier** (Organisationsadministration > Nummerserier) i feltet Commerce-søgning.
-1. Vælg **Rediger** under **Vedligehold**i handlingsruden.
-1. Vælg **Nej** for **Manuel** på oversigtspanelet **Generelt**.
-1. Gå til handlingsruden, og vælg **Gem**. 
 1. Søg efter **Distributionsplan** i feltet Commerce-søgning
 1. Vælg job **1110 global konfiguration** i den venstre navigationsmenu på siden **Distributionsplaner**.
 1. Vælg **Kør nu** i handlingsruden.
@@ -304,13 +300,14 @@ Udfør følgende trin for at føje AAD B2C-lejerens programoplysninger til Comme
 1. Angiv følgende påkrævede punkter i formularen, der vises, ved at bruge værdier fra B2C-lejeren og -programmet. Felter, der ikke er obligatoriske (dvs. uden en stjerne), kan være tomme.
 
     - **Programnavn**: Navnet på dit B2C-program, f.eks. "Fabrikam B2C".
-    - **Navn på lejer**: Navnet på din B2C-lejer, f.eks. "Fabrikam".
+    - **Navn på lejer**: Navnet på din B2C-lejer (f.eks. brug "fabrikam", hvis domænet vises som "fabrikam.onmicrosoft.com" for B2C-lejeren). 
     - **Glem adgangskodepolitik-id**: Politik-id for brugerstrømmen for glemt adgangskode, f.eks. "B2C_1_PasswordReset".
     - **Politik-id for tilmelding og logon**: Politik-id for tilmelding og logon i brugerstrømmen, f.eks. "B2C_1_signup_signin".
     - **Klient-GUID**: B2C-program-id'et, f.eks. "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Rediger profilpolitik-id**: Politik-id'et for brugerstrømmen til profilredigering, f.eks. "B2C_1A_ProfileEdit".
 
 1. Vælg **OK**. Navnet på dit B2C-program vises nu på listen.
+1. Vælg **Gem** for at gemme ændringerne.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Knyt B2C-programmet til dit websted og din kanal
 

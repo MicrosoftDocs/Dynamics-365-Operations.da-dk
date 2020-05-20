@@ -3,7 +3,7 @@ title: Introduktion til Planlægningsoptimering
 description: I dette emne beskrives, hvordan du kommer i gang med at bruge funktionen Planlægningsoptimering.
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f9124e824a0b6d5035b2567cb19c2c494390d55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce1bbb18e9a448e84d001a4195421d2b0e4af5be
+ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213509"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339872"
 ---
 # <a name="get-started-with-planning-optimization"></a>Introduktion til Planlægningsoptimering
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Funktionen Planlægningsoptimering understøtter i øjeblikket ikke alle de funktioner, der er tilgængelige i det planlægningsprogram, der er indbygget i Microsoft Dynamics 365 Supply Chain Management. Det er derfor vigtigt, at du evaluerer, om det funktionssæt, der aktuelt er tilgængeligt i Planlægningsoptimering, opfylder dine behov. Funktionen Planlægningsoptimering er som standard ikke slået til i Dynamics Lifecycle Services (LCS). Derfor har du mulighed for at foretage evalueringen, før den aktiveres.
@@ -37,7 +36,12 @@ Til sidst erstatter Planlægningsoptimering det eksisterende indbyggede planlæg
 
 Før du slår Planlægningsoptimering til, anbefales det på det kraftigste, at du evaluerer resultaterne af analysen af om Planlægningsoptimering passer. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
 
-### <a name="licensing"></a>Licenser
+### <a name="availability"></a>Tilgængelighed
+Planlægningsoptimering er i øjeblikket tilgængelig i følgende Azure-områder: USA, Canada, Europa, Storbritannien og Australien. Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil LCS vise en meddelelse om, at dette geografiske område ikke understøttes.
+
+Bemærk, at planlægningsoptimering ikke understøtter lokale installationer af Dynamics 365 Supply Chain Management.
+
+### <a name="licensing"></a>Licensering
 
 Hvis du kan køre varedisponering ved hjælp af din aktuelle licens, behøver du ikke købe en ekstra licens for at begynde at bruge Planlægningsoptimering.
 
@@ -46,7 +50,7 @@ Hvis du kan køre varedisponering ved hjælp af din aktuelle licens, behøver du
 Hvis du vil bruge Planlægningsoptimering, skal du installere tilføjelsesprogrammet Planlægningsoptimering til Dynamics 365 Supply Chain Management. Du kan få adgang til tilføjelsesprogrammet fra dit LCS projekt og slå Planlægningsoptimeringsfunktionen til fra brugergrænsefladen til Supply Chain Management (UI).
 
 > [!NOTE]
-> Behovet for planlægningsoptimering er et LCS-aktiveret miljø med høj tilgængelighed (ikke et Onebox-miljø) i Dynamics 365 Supply Chain Management, version 10.0.7 eller nyere.
+> Behovet for planlægningsoptimering er et LCS-aktiveret miljø med høj tilgængelighed på niveau 2 eller højere (ikke et Onebox-miljø) i Dynamics 365 Supply Chain Management, version 10.0.7 eller nyere. Hvis du forsøger at installere tilføjelsesprogrammet i et OneBox-miljø, fuldføres installationen ikke, og du skal annullere installationen.
 
 1. Log på LCS, og åbn det ønskede miljø.
 1. Gå til **Alle detaljer**.
@@ -88,11 +92,11 @@ Indstillingen af indstillingen **Brug Planlægningsoptimering** bestemmer, hvilk
 
 Hvis forhåndsvisningen af Planlægningsoptimering er aktiveret, foretages varedisponering ved hjælp af tilføjelsesprogrammet for Planlægningsoptimering. I dette tilfælde påvirkes resultaterne af og funktionerne for varedisponering.
 
-## <a name="related-resources"></a>Tilknyttede ressourcer
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Vilkår og betingelser for forhåndsvisning](https://go.microsoft.com/fwlink/?linkid=2015274)
 
-[Oversigt over Planlægningsoptimering](planning-optimization-overview.md)
+[Oversigt over planlægningsoptimering](planning-optimization-overview.md)
 
 [Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
 

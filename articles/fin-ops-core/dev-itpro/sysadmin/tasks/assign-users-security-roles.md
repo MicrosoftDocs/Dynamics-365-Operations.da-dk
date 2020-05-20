@@ -1,9 +1,9 @@
 ---
 title: Tildele brugere til sikkerhedsroller
 description: Brugerne skal være tildelt sikkerhedsroller for at få adgang til Finance and Operations.
-author: ChrisGarty
+author: Peakerbl
 manager: AnnBe
-ms.date: 11/14/2019
+ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,28 +16,29 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0744f45ac91dfb9b5aae35091e3675202c9144f9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f0421ad6c932f2c91de51169bda6c98f53d3bc65
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143533"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346439"
 ---
 # <a name="assign-users-to-security-roles"></a>Tildele brugere til sikkerhedsroller
 
 [!include [banner](../../includes/banner.md)]
 
-Brugerne skal være tildelt sikkerhedsroller for at kunne bruge andet end almindelige egenskaber. Denne procedure forklarer, hvordan systemadministratorer automatisk kan tildele roller til brugerne ud fra forretningsdataene. 
+Brugerne skal være tildelt sikkerhedsroller for at kunne bruge andet end almindelige egenskaber i Finance and Operations-apps. Du kan tildele brugere roller automatisk baseret på regler og forretningsdata, udelukke brugere fra automatisk rolletildeling eller føje brugere til roller manuelt.
 
 ## <a name="automatically-assign-users-to-roles"></a>Tildele brugere automatisk til roller
+Denne procedure forklarer, hvordan systemadministratorer automatisk kan tildele roller til brugerne ud fra forretningsdataene. 
 1. Gå til **Navigationsrude > Moduler > Systemadministration > Sikkerhed > Tildel brugere roller**.
 2. Vælg 'Regnskabsansvarlig' i træet. Vælg den rolle, du vil konfigurere reglen for. Vælg Regnskabsansvarlig i dette eksempel. 
-3. Klik på **Tilføj regel** for at åbne dialogboksen.
+3. Vælg **Tilføj regel** for at åbne dialogmenuen.
 4. Find og vælg den ønskede post på listen **Vælg en forespørgsel**. Vælg den forespørgsel, du vil bruge for denne regel.  
 5. Klik på linket i den valgte række på listen **Navn på medlemskabsregel**.
-6. Klik på **Rediger forespørgsel**. Rediger forespørgslen efter behov.  
-7. Klik på **OK**.
-8. Klik på **Kør automatisk rolletildeling**.
+6. Vælg **Rediger forespørgsel**. Rediger forespørgslen efter behov.  
+7. Vælg **OK**.
+8. Vælg **Kør automatisk rolletildeling**.
 9. Gå til **Navigationsrude > Moduler > Systemadministration > Brugere > Brugere** (helst i en separat fane i browseren).
 10. Gennemse de roller, der er tildelt de forskellige brugere, for at bekræfte, at forespørgslen om rolletildeling er korrekt. Tilpas, og kør den igen, hvis det er nødvendigt.
 
@@ -48,5 +49,12 @@ Brugerne skal være tildelt sikkerhedsroller for at kunne bruge andet end almind
 4. Vælg **Tildel brugere roller/udeluk brugere fra roller manuelt** i menuen **Brugere, der er tildelt til rollen**.
 5. Markér den valgte række på listen **Tildel en rolle til brugere, eller udeluk brugere fra rollen**. Vælg en bruger.  
 6. Vælg **Udeluk fra rolle** i **Handlingsrude**.
-    
-    Klik på **Udeluk fra rolle** for at udelukke de valgte brugere fra rollen. Hvis du vil fjerne udelukkelser, skal du markere de brugere, hvor du vil fjerne udelukkelser, og derefter klikke på **Nulstil status**. Når du fjerner en udelukkelse ved at nulstille brugerens status, tildeles brugerens rolle igen automatisk. Brugeren bliver dog ikke tildelt eller udelukket fra rollen med det samme, når du nulstiller statussen. I stedet bliver brugeren enten tildelt eller fjernet fra rollen, næste gang reglerne for automatisk rolletildeling bliver kørt.  
+7. Vælg **Udeluk fra rolle** for at udelukke de valgte brugere fra rollen. Hvis du vil fjerne udelukkelser, skal du markere de brugere, hvor du vil fjerne udelukkelser, og derefter klikke på **Nulstil status**. Når du fjerner en udelukkelse ved at nulstille brugerens status, tildeles brugerens rolle automatisk. Brugeren bliver dog ikke tildelt eller udelukket fra rollen med det samme, når du nulstiller statussen. I stedet bliver brugeren enten tildelt eller fjernet fra rollen, næste gang reglerne for automatisk rolletildeling bliver kørt.  
+
+## <a name="manually-assign-users-to-roles"></a>Tildele brugere til roller manuelt
+Brugere, som manuelt tildeles sikkerhedsroller, skal også fjernes manuelt af administratoren. Disse brugere fjernes ikke fra rollerne efter regler for automatisk rolletildeling.
+
+1. Gå til **Navigationsrude > Moduler > Systemadministration > Sikkerhed > Tildel brugere roller**.
+2. Vælg en rolle i træet, og vælg **Tildel brugere roller/udeluk brugere fra roller manuelt** i menuen **Brugere, der er tildelt til rollen**.
+4. I **Tildel brugere til roller, eller udeluk brugere fra roller** vises de brugere, der ikke er tildelt til rollen, med **Tildelingstilstand** angivet til **Ingen**. Vælg en eller flere brugere, der skal have tildelt rollen.
+5. Vælg **Tildel til rolle** i **handlingsruden**. **Tildelingstilstand** opdateres til **Manuel**, og brugerne har nu fået tildelt en ny rolle.

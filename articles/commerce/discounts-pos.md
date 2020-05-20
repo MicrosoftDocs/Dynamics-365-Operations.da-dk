@@ -3,7 +3,7 @@ title: Få vist rabatter i POS
 description: I dette emne forklares det, hvordan Microsoft Dynamics 365 Commerce hjælper salgsforbindelser med at få mere at vide om kampagner, og hvordan de kan bruges til at krydssælge og videresælge bevægelser.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265571"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334702"
 ---
 # <a name="show-discounts-in-pos"></a>Få vist rabatter i POS
 
@@ -54,9 +54,9 @@ På siden **Alle rabatter** kan salgsmedarbejderen også søge efter rabatter ef
 
 Samkøbsrabatter, f.eks. mængderabatter, mix og match-rabatter og grænserabatter, er en god måde at motivere kunderne til at købe flere produkter på for at opnå større rabatter. Derfor kan de også øge størrelsen på kundens indkøbsvogn og detailhandlers indtægt. Disse rabatter kan offentliggøres på e-handelswebsteder, på sociale medier og på bannere i butikken.
 
-Selv når alle disse metoder til offentligheden anvendes, kan kunderne imidlertid miste muligheden for at udnytte kampagnerne. Detailhandlere kan føje knappen til handlingen "Få vist alle rabatter" til en knaplinje i POS for at gøre det let for salgsmedarbejderne at finde ud af, hvilke kampagner der gælder for en bestemt linje eller endda til hele indkøbsvognen. Vi anbefaler, at knappen føjes til knapmatricen for siden **Transaktion**. På denne måde kan en salgsmedarbejder vælge en transaktionslinje og derefter vælge knappen for at få vist alle de rabatter, der er tilgængelige for den valgte linje. Salgsmedarbejderen kan også vælge en anden fane for at få vist rabatter, der gælder for hele transaktionen.
+Selv når alle disse metoder til offentligheden anvendes, kan kunderne imidlertid miste muligheden for at udnytte kampagnerne. Detailhandlere kan føje knappen for handlingen "Få vist tilgængelige rabatter" til knaplinjen på siden **Oversættelse** for at gøre det let for salgsmedarbejderne at finde ud af, hvilke kampagner der gælder for en bestemt linje eller endda for hele kurven. På denne måde kan en salgsmedarbejder vælge en transaktionslinje og derefter vælge knappen for at få vist alle de rabatter, der er tilgængelige for den valgte linje. Salgsmedarbejderen kan også vælge en anden fane for at få vist rabatter, der gælder for hele transaktionen.
 
-Siden **Alle rabatter**, der blev nævnt tidligere, viser kun rabatter, der ikke konkurrerer med nogen af de anvendte rabatter. Denne funktionsmåde sikrer, at en salgsmedarbejder informerer kunden om en rabat, og kunden udfører den påkrævede handling (f.eks. hvis kunden køber én mere vare for at opnå en rabat på 10 %), anvendes rabatten på transaktionen. Som nævn tidligere vises kuponbaserede rabatter kun, når indstillingen **Anvend uden en kuponkode** er slået til.
+Siden **Alle rabatter** viser kun rabatter, der ikke konkurrerer med nogen af de anvendte rabatter. Denne funktionsmåde sikrer, at en salgsmedarbejder informerer kunden om en rabat, og kunden udfører den påkrævede handling (f.eks. hvis kunden køber én mere vare for at opnå en rabat på 10 %), anvendes rabatten på transaktionen. De kuponbaserede rabatter vises kun, når indstillingen **Anvend uden en kuponkode** er slået til.
 
 I et simpelt scenarie hvor alle rabatter har samme prioritet, er rabattens sammensatte tilstand **Sammensat**, og rabattens sammensatte kontrol er angivet til **Bedste pris og sammensæt inden for prioritet, aldrig sammensat på tværs af prioriteter**, viser siden **Alle rabatter** alle tilgængelige rabatter for et produkt, da alle rabatter er sammensatte og ikke konkurrerer med hinanden.
 
