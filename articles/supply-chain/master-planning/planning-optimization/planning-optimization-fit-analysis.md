@@ -3,7 +3,7 @@ title: Analyse af om Planlægningsoptimering passer til
 description: Dette emne beskriver, hvordan du kan kontrollere den aktuelle opsætning og de nuværende data i forhold til funktionerne i funktionen Planlægningsoptimering.
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0382e78942e6cb2047e37b76f1daf5725638d5c3
-ms.sourcegitcommit: 915ee7c59ef5fbd4927c10840e5c5e8652f667a9
+ms.openlocfilehash: 9bf19604d246988e05b91c8a41b1f57b523d2192
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277792"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346647"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af om Planlægningsoptimering passer til
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Hvis du vil se, hvordan din aktuelle opsætning og data er kompatibel med funktionen Planlægningsoptimering, skal du gå til **Varedisponering** \> **Opsætning** \> **Analyse af om Planlægninsoptimering passer til** og dernæst vælge **Kør analyse**. Hvis analysen finder nogen uoverensstemmelser, vises de på samme side. (Det kan tage et par minutter at køre analysen).
@@ -73,6 +72,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Intern handel | Behovsplaner, der inkluderer planlagt downstream-efterspørgsel: _\#_ | Denne funktion afventer. Aktuelt medtager varedisponering ikke downstream-planlagt behov, når planlægningsoptimering er aktiveret, uanset denne indstilling. Bemærk, at frigivne/autoriserede ordrer stadig fungerer sammen med den normale interne funktion og vil omfatte de fleste scenarier. |
 | Kanban | Varedisponeringsposter med ordreforslagstypen kanban: _\#_ | Denne funktion afventer. Aktuelt vil varedisponering, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-ordreforslagstypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. |
 | Kanban | Varer med standardordretypen kanban: _\#_ | Aktuelt vil en standardordretype, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-standardordretypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. |
+| Status for produktlivscyklus   | Produktlivscyklustilstande er ikke aktive for disponering: _\#_ | Dette er en afventende funktion. Produktlivscyklustilstanden ignoreres i øjeblikket med Planlægningsoptimering aktiveret. Du kan justere produktfilteret på planlægningsniveau for at undgå at medtage produkter, hvor produktlivscyklustilstanden er deaktiveret for planlægning. |
 | Produktion | Styklistelinjer med afrunding eller flere opsætninger: _\#_ | Denne funktion afventer. I øjeblikket ignoreres afrunding og flere opsætninger på styklistelinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. |
 | Produktion | Stykliste/formellinjer med formelmåling: _\#_ | Denne funktion afventer. I øjeblikket ignoreres formelmål på styklister og formellinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. |
 | Produktion | Stykliste/formellinjer med erstatningsvare (plangrupper): _\#_ | Denne funktion afventer. I øjeblikket ignoreres erstatningsvare (plangrupper) på styklister og formellinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. |
@@ -99,7 +99,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Salgstilbud | Behovsplaner med salgstilbud aktiveret: _\#_ | Denne funktion afventer. I øjeblikket ignoreres tilbud, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. |
 | Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: _\#_ | Denne funktion afventer. I øjeblikket ignoreres hyldelevetid, når planlægningsoptimering er aktiveret, uanset denne indstilling. |
 
-## <a name="related-resources"></a>Tilknyttede ressourcer
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over planlægningsoptimering](planning-optimization-overview.md)
 

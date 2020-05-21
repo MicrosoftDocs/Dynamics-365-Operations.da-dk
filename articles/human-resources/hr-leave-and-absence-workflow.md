@@ -3,7 +3,7 @@ title: Oprette en arbejdsgang for orlovsanmodninger
 description: Opret en arbejdsgang for orlovs- og fraværsanmodninger for at administrere anmodninger om orlov i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2689a0cdf2969455a301593e8f60b10c07e6f91
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: c2e994d11bbd45907a48c1f3955fa751a676a327
+ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008468"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353682"
 ---
 # <a name="create-a-leave-request-workflow"></a>Oprette en arbejdsgang for orlovsanmodninger
 
@@ -44,6 +44,38 @@ Du kan oprette en arbejdsgang i Dynamics 365 Human Resources for at administrere
 4. Når meddelelsen **Åbn denne fil?** vises, skal du vælge **Åbn** og logge på med dit firmas legitimationsoplysninger.
 
 5. Brug arbejdsgangseditoren til at oprette en arbejdsgang til orlovsanmodninger. Yderligere oplysninger om at arbejde med arbejdsgange finder du i [Oversigt over oprettelse af arbejdsgange](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)
+
+## <a name="leave-and-absence-request-workflow-data-elements"></a>Dataelementer for arbejdsgang for orlovs- og fraværsanmodninger
+
+Du kan bruge følgende dataelementer til at oprette betingede eller automatiske godkendelser i arbejdsgange for orlovs- og fraværsanmodninger:
+
+- **Kommentar**
+- **Regnskab**
+- **Oprettet af**
+- **Dato og klokkeslæt for oprettelse**
+- **Slutdato**
+- **Orlovstype**
+- **Ændret af**
+- **Dato og klokkeslæt for ændring**
+- **Årsagskode**
+- **Anmodnings-id**
+- **Igangsæt dato**
+- **Status** 
+- **Indsendelsesdato**
+- **Sendt af**
+- **Sendt af HR**
+- **Sendt af leder**
+- **Sendt på vegne af**
+- **Arbejdstråd**
+- **Arbejdertype**
+
+Disse eksempler viser, hvordan du kan oprette forskellige typer betingelser for arbejdsgange via disse dataelementer:
+
+- Brug **Årsagskode** i en betingelsessætning til at sende orlovsanmodninger for sygefravær med årsagskoden **Kirurgi** til HR mht. godkendelse – andre årsagskoder sendes til lederen. Du kan finde flere oplysninger om betingelsessætninger under [Konfigurere betingede beslutninger i en arbejdsgang](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow). 
+
+- Brug **Sendt af HR** og **Sendt af leder** i en automatisk handling for at godkende orlovsanmodninger automatisk, som disse roller sender på vegne af medarbejdere. Du kan finde flere oplysninger om automatiske handlinger under [Konfigurere godkendelsesprocesser i en arbejdsgang](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).
+
+- Brug **Orlovstype** i en betingelsessætning eller automatisk handling til at styre, hvordan arbejdsgangen sender anmodninger med bestemte orlovstyper.
 
 ## <a name="see-also"></a>Se også
 

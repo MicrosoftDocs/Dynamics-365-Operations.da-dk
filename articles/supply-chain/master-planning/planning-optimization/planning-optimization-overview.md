@@ -19,17 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: f88ee8067fdd816ba6890ee28bafe8fa4d3b3ac5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208725"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323387"
 ---
 # <a name="planning-optimization-overview"></a>Oversigt over Planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management giver dig mulighed for at beregne varedisponering udenfor Dynamics 365 Supply Chain Management og den relaterede SQL-database. De fordele, der er tilknyttet funktionen Planlægningsoptimering, omfatter forbedret ydeevne og minimal påvirkning af SQL-databasen under kørsel af varedisponeringen. Hurtige planlægningskørsler kan udføres selv i kontortiden, så planlæggerne kan reagere øjeblikkeligt på ændringer i behov eller parametre.
 

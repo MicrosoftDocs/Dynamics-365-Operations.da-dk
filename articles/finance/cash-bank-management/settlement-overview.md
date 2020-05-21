@@ -1,9 +1,9 @@
 ---
 title: Udligningsoversigt
-description: Dette emne indeholder generelle oplysninger om udligningsprocessen. Den beskriver de typer transaktioner, der kan udlignes, hvornår og hvordan transaktioner kan udlignes og resultaterne af udligningsprocessen.
+description: Dette emne indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
 author: kweekley
 manager: AnnBe
-ms.date: 05/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,40 +18,63 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b8b25575d5956e1345934512a7fe6503202b67a9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 650b0ef0123cf9acf42c2e7460693b555897744f
+ms.sourcegitcommit: efde328c40201b1cb60d34891900b62a7e2b6645
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176993"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329466"
 ---
 # <a name="settlement-overview"></a>Udligningsoversigt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder generelle oplysninger om udligningsprocessen. Den beskriver de typer transaktioner, der kan udlignes, hvornår og hvordan transaktioner kan udlignes og resultaterne af udligningsprocessen.
+Dette emne indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
 
-I udligningsprocessen udlignes posteringerne på et enkelt dokument med transaktionerne i et andet dokument for at øge eller reducere saldoen for hvert dokument. En betaling kan f.eks. udlignes med en faktura. Forskellige posteringstyper kan udlignes, på forskellige tidspunkter, og via forskellige metoder. Udligning kan også medføre, at der oprettes nye posteringer.
+I udligningsprocessen udlignes posteringerne på et enkelt dokument med transaktionerne i et andet dokument for at øge eller reducere saldoen for hvert dokument. En betaling kan f.eks. udlignes med en faktura. Forskellige posteringstyper kan udlignes, på forskellige tidspunkter, og via forskellige metoder. Udligningsprocessen kan også generere nye posteringer.
 
 ## <a name="what-transactions-can-be-settled"></a>Hvilke posteringer kan udlignes
-Udligning i Kreditor og Debitor kan forekomme mellem de posteringstyper, der påvirker kreditorsaldoen eller debitorsaldoen, såsom fakturaer, betalinger, kreditnotaer og gebyrer. Alle posteringstyper kan udlignes med en anden transaktionstype. Du kan f.eks. udligne en betaling med en faktura, en kreditnota med en faktura, en faktura med en faktura og betaling med betaling. Du kan udligne betalinger med en postering i samme juridiske enhed eller i en anden juridisk enhed. I organisationer, der anvender en centraliseret betalingsmodel, kan [centraliserede betalinger](set-up-centralized-payments.md) hjælpe med at strømline betalingsprocessen.
+
+I Kreditor og Debitor kan udligning forekomme mellem de posteringstyper, der påvirker kreditorsaldoen eller debitorsaldoen. Disse posteringstyper kan omfatte fakturaer, betalinger, kreditnotaer og gebyrer. Alle posteringstyper kan udlignes med en anden transaktionstype. Du kan f.eks. udligne en betaling med en faktura, en kreditnota med en faktura, en faktura med en anden faktura og betaling med en anden betaling.
+
+Du kan udligne betalinger med en postering i samme juridiske enhed eller i en anden juridisk enhed. I organisationer, der anvender en centraliseret betalingsmodel, kan [centraliserede betalinger](set-up-centralized-payments.md) hjælpe med at strømline betalingsprocessen.
 
 ## <a name="when-to-settle-transactions"></a>Hvornår posteringer skal udlignes
-Posteringer kan udlignes ved tidspunktet for betaling. Når du f.eks. foretager en betaling til en kreditor, vælger du typisk de fakturaer, der skal betales. Når du vælger fakturaer, markerer du dem til udligning mod betalingen. Når debitormedarbejdere registrerer en kundebetaling, kan de markere de relevante fakturaer til udligning baseret på de oplysninger, der er inkluderet i debitorens betaling. Siden **Udlign transaktioner** bruges til at markere transaktioner til udligning. Denne side kan åbnes fra enhver ikke-bogført faktura eller betaling. Når transaktionen bogføres, bogføres udligningen også. Posteringer kan også udlignes, efter de er bogført. Du kan angive og bogføre en debitorbetaling uden at udligne den med en faktura. Du skal måske lige undersøge, at betalingen udlignes med den korrekte faktura. Siden **Udlign transaktioner** kan åbnes fra siden **Alle kunder** eller **Alle leverandører** eller fra siden **Transaktioner** for en debitor eller kreditor. Du kan også tilbageføre bogførte forudbetalinger for en faktura ved at markere betalingen for udligning med en købsordre eller salgsordre. I dette tilfælde har betalingen fortsat en åben saldo, men den kan ikke udlignes mod en anden faktura. Betalingen udlignes automatisk mod den faktura, der oprettes ud fra indkøbsordren eller salgsordren.
+
+Posteringer kan udlignes, når der angives betalinger. Når du f.eks. foretager en betaling til en kreditor, vælger du typisk, hvilke fakturaer der skal betales. Når du vælger fakturaer, markerer du dem til udligning mod betalingen. Når Debitor-medarbejdere registrerer kundebetalinger, kan de markere de relevante fakturaer til udligning baseret på de oplysninger, der er inkluderet i hver enkelt debitors betaling. Du kan bruge **Udlign transaktioner** til at markere posteringer til udligning. Du kan åbne denne side fra enhver ikke-bogført faktura eller betaling. Når transaktionen bogføres, bogføres udligningen også. 
+
+Posteringer kan også udlignes, efter de er bogført. Du kan angive og bogføre en debitorbetaling uden at udligne den med en faktura. Du kan evt. sikre dig, at betalingen udlignes med den korrekte faktura, før du posterer udligningen. Siden **Udlign transaktioner** kan åbnes fra siden **Alle kunder** eller **Alle leverandører** eller fra siden **Transaktioner** for en debitor eller kreditor.
+
+Du kan også tilbageføre bogførte forudbetalinger for en faktura ved at markere betalingen for udligning med en købsordre eller salgsordre. I dette tilfælde har betalingen fortsat en åben saldo, men den kan ikke udlignes mod en anden faktura. Betalingen udlignes automatisk mod den faktura, der oprettes ud fra indkøbsordren eller salgsordren.
 
 ## <a name="how-to-settle-transactions"></a>Hvordan posteringer skal udlignes
-Posteringer kan udlignes manuelt, automatisk eller via en kombination af de to metoder. Valget af udligningsmetode afhænger af forretningsprocesser, som derefter kan implementeres i hele opsætningen af udligning i Kreditorparametre og Debitorparametre. Du kan oprette kreditorbetalinger og direkte debitorbetalinger for kunder ved hjælp af et betalingsforslag, som bruges til at vælge fakturaer, der skal betales. Betalingsforslaget startes manuelt, og Dynamics 365 Finance markerer derefter automatisk de valgte fakturaer til udligning, når betalingerne oprettes. Hvis betalingerne oprettes manuelt, kan du bruge siden **Udlign transaktioner** til at vælge fakturaer til udligning. Du kan manuelt vælge fakturaerne, eller du kan bruge indstillingen **Markér efter prioritet**, så fakturaer automatisk markeres til udligning. Indstillingen **Markér efter prioritet** er kun tilgængelig for Debitor. Hvis du vil aktivere denne indstilling, skal du bruge siden **Udligningsprioritet** i Debitorparametre. Hvis en betalingsmedarbejder indtaster en betaling, men ikke udligner betalingen, før den er bogført, kan betalingen udlignes automatisk. Du kan aktivere automatisk udligning i debitorparametre og kreditorparametre. Automatisk udligning udligner posteringer i den samme juridiske enhed og udligner ikke på tværs af flere juridiske enheder. Når du bruger automatisk udligning, kan du bruge den foruddefinerede udligningsrækkefølge, eller du kan definere dine egen prioritetsrækkefølge for udligning i debitorparametre. Denne funktionalitet er kun tilgængelig for Debitor.
+
+Posteringer kan udlignes manuelt, automatisk eller via en kombination af de to metoder. Valget af en udligningsmetode afhænger af dine forretningsprocesser. På siderne **Kreditorparametre** og **Debitorparametre** kan du konfigurere udligningsprocessen, så den er justeret i forhold til disse forretningsprocesser.
+
+Du kan oprette kreditorbetalinger og direkte debitorbetalinger for kunder ved hjælp af et betalingsforslag. Et betalingsforslag bruges til at vælge fakturaer, der skal betales. Betalingsforslaget startes manuelt, og derefter markerer systemet automatisk de valgte fakturaer til udligning, når betalingerne oprettes.
+
+Hvis betalingerne oprettes manuelt, kan du bruge siden **Udlign transaktioner** til at vælge fakturaer til udligning. Du kan manuelt vælge fakturaerne, eller du kan bruge indstillingen **Markér efter prioritet**, så fakturaer automatisk markeres til udligning. Indstillingen **Markér efter prioritet** er kun tilgængelig for Debitor. Du kan aktivere denne indstilling på fanen **Udligningsprioritet** på siden **Debitorparametre**.
+
+Hvis en betalingsmedarbejder indtaster en betaling, men ikke udligner betalingen, før den er bogført, kan betalingen udlignes automatisk. Du kan slå automatisk udligning til på siderne **Debitorparametre** og **Kreditorparametre**. Automatisk udligning udligner kun posteringer i den samme juridiske enhed. Den udligner ikke posteringer på tværs af flere juridiske enheder.
+
+Når du bruger automatisk udligning, kan du bruge den foruddefinerede udligningsprioritet, eller du kan definere dine egen udligningsprioritet på siden **Debitorparametre**. Denne funktionalitet er kun tilgængelig for Debitor.
 
 ## <a name="results-of-settlement"></a>Resultater af udligning
-Når posteringer udlignes, øges eller mindskes den udestående saldo for hver postering. I et typisk scenarie, hvor en faktura og betaling udlignes, opdateres status og saldoen for hver transaktion efter følgende regler:
 
--   Hvis betalingsbeløbet er større end fakturabeløbet, reduceres fakturasaldoen til 0,00, og fakturaen lukkes. Betalingen forbliver åben, og saldoen er det beløb, som betalingen overstiger fakturabeløbet med.
--   Hvis betalingsbeløbet er mindre end fakturabeløbet, reduceres betalingssaldoen til 0,00, og betalingen lukkes. Fakturaen forbliver åben, og saldoen er det beløb, som betalingen har underbetatalt fakturaen med.
--   Hvis betalingsbeløbet er lig med fakturabeløbet, lukkes både betalingen og fakturaen, og saldoen for begge er 0,00.
+Når posteringer udlignes, øges eller mindskes den udestående saldo for hver postering efter behov. Normalt, når en faktura og betaling udlignes, opdateres status og saldoen for hver transaktion efter følgende regler:
 
-Hvis en [betalingen er mindre end fakturabeløbet](../accounts-payable/vendor-payments-partial-amount.md) på grund af en kasserabat, afskrivning eller underbetaling, lukkes fakturaen og betalingen måske alligevel, afhængigt af opsætningen af udligning i Kreditorparametre og Debitorparametre. Udligning kan også generere transaktioner. Udligning af en faktura og betaling kan for eksempel medføre kasserabat, realiseret gevinst eller tab, momsreguleringer, afskrivninger eller øredifferencer.
+- Hvis betalingsbeløbet er større end fakturabeløbet, reduceres fakturasaldoen til 0,00, og fakturaen lukkes. Betalingen forbliver åben, og saldoen er forskellen mellem betalingsbeløbet og fakturabeløbet.
+- Hvis betalingsbeløbet er mindre end fakturabeløbet, reduceres betalingssaldoen til 0,00, og betalingen lukkes. Fakturaen forbliver åben, og saldoen er forskellen mellem fakturabeløbet og betalingsbeløbet.
+- Hvis betalingsbeløbet er lig med fakturabeløbet, lukkes både betalingen og fakturaen, og saldoen for begge er reduceret til 0,00.
 
+Hvis [betalingsbeløbet er mindre end fakturabeløbet](../accounts-payable/vendor-payments-partial-amount.md) på grund af en kasserabat, afskrivning eller underbetaling, lukkes fakturaen og betalingen måske alligevel, afhængigt af, hvordan udligninger er konfigureret på siderne **Kreditorparametre** og **Debitorparametre**.
+
+Udligninger kan også generere posteringer. Udligning af en faktura og betaling kan for eksempel medføre en kasserabat, realiseret gevinst eller tab, momsreguleringer, afskrivninger eller øredifferencer.
+
+## <a name="identifying-marked-transactions-during-settlement"></a>Identificere markerede posteringer under udligning
+
+Når du forsøger at udligne en postering, kan du bemærke et symbol, der angiver, at posteringen er markeret et andet sted. I dette tilfælde kan du vælge posteringen på siden **Udlign posteringer** og derefter vælge **Forespørgsel \> Udligning** i udligningsvinduet. Visningen for denne forespørgsel viser kladder, salgsordrer, fakturaer, betalingsforslag og debitorlokationer, der muligvis blokerer posteringen i at blive udlignet. Hvis du vil løse dette problem, kan du vælge linket for at gå direkte fra forespørgslen til den blokerede lokation. Du kan derefter opdatere dokumentet med de justeringer, der er nødvendige for at udligne den. Du kan også bruge indikatoren **Markeret** til at identificere andre dokumenter, der er inkluderet på samme blokeringslokation.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-- [Udlign rest](settle-remainder.md)
 
+- [Udlign rest](settle-remainder.md)

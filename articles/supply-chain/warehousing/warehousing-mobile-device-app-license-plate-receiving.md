@@ -1,6 +1,6 @@
 ---
-title: Modtagelse af nummerplade via Warehousing Mobile App
-description: I dette emne beskrives, hvordan du konfigurerer Warehousing Mobile App til at understøtte brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
+title: Modtagelse af nummerplade via lagerstedsappen
+description: I dette emne beskrives, hvordan du konfigurerer lagerstedsappen til at understøtte brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261314"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346370"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Modtagelse af nummerplade via Warehousing Mobile App
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Modtagelse af nummerplade via lagerstedsappen
 
-I dette emne beskrives, hvordan du konfigurerer Warehousing Mobile App, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
+I dette emne beskrives, hvordan du konfigurerer lagerstedsappen, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 
 Du kan bruge denne funktion til hurtigt at registrere modtagelsen af det indgående lager, der er knyttet til en ASN (Advance Ship Notice). Systemet opretter automatisk en ASN, når der bruges lokationsstyringsprocesser til at levere en flytteordre. I forbindelse med indkøbsordreprocessen kan en ASN registreres manuelt, eller den kan importeres automatisk ved hjælp af en indgående ASN-dataenhedsproces.
 
@@ -63,7 +63,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Få vist eller spring over siden til opsummering af modtagelse
 
-Du kan bruge funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* for at udnytte et mere detaljeret flow i Warehouse-appen som del af modtagelsesprocessen af nummerplader.
+Du kan bruge funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* for at udnytte et mere detaljeret flow i lagerstedsappen som del af nummerplademodtagelsesprocessen.
 
 Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises denne funktion på følgende måde:
 

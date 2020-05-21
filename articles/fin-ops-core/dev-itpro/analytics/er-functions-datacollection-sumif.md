@@ -3,7 +3,7 @@ title: ER-funktionen SUMIF
 description: Dette emne indeholder oplysninger om, hvordan funktionen SUMIF til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374569d3bbe59f1b96eee9c789b97b7b2a6004bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042475"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290194"
 ---
-# <a name="SUMIF">ER-funktionen SUMIF</a>
+# <a name=""></a><a name="SUMIF">ER-funktionen SUMIF</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,6 +62,8 @@ I argumentet `condition value` kan jokertegnet **"\*"** bruges til at repræsent
 ## <a name="example"></a>Eksempel
 
 Du kan få flere oplysninger om brugen af denne funktion i opgaveguiden [Brug ER-data af formatoutput til optælling og sammenlægning](tasks/er-format-counting-summing-1.md) en del af forretningsprocessen **Anskaffe/udarbejde komponenter til it-servicer og -løsninger** til at lære mere om brugen af disse funktioner.
+
+Yderligere oplysninger og eksempler på brug af denne funktion finder du under [Udskyde udførelse af sekvenselementer i ER-formater](er-defer-sequence-element.md#Example) og [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md#Example).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

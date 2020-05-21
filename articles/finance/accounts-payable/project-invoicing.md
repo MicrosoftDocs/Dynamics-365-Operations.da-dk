@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658614"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331366"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
@@ -112,6 +112,9 @@ Når du bestiller en vare fra en leverandør og tildeler varen til et projekt, b
 
 -   Fakturere projektets debitor for varen: Angiv linjeegenskaben for varen til en fakturerbar værdi på indkøbsordren, og fakturer derefter kunden ved hjælp af den korrekte projektfaktureringsmetode.
 -   Ikke fakturere projektets debitor for varen: Vælg ikke linjeegenskaben **Fakturerbar** på indkøbsordrelinjen for varen. Du kan derefter fakturere indkøbsordren, uden at du behøver foretage dig yderligere.
+
+> [!NOTE] 
+> Frigivne tilbageholdelseslinjer kan ikke faktureres som standard. Det betyder, at muligheden for at oprette et fakturaforslag til den frigivne tilbageholdelse ikke er aktiveret.
 
 ## <a name="credit-notes"></a>Kreditnotaer
 Når et beløb i en debitorfaktura har en negativ værdi, klassificeres fakturaen som en kreditnota. Når dokumentet udskrives, har det titlen "Kreditnota". 

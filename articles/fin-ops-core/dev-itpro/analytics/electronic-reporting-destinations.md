@@ -3,7 +3,7 @@ title: Destinationer for elektronisk rapportering (ER)
 description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering (ER), de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150809"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323686"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -52,7 +52,36 @@ Der findes også en [Udskriv](er-destination-type-print.md)-destinationstype. Hv
 
 ## <a name="overview"></a>Oversigt
 
-Du kan kun konfigurere destinationer for ER-konfigurationer, der er [importeret](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) til aktuelle Finance-forekomst, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**. Funktionaliteten for ER-destinationsstyring er tilgængelig på **Organisationsadministration** \> **Elektronisk rapportering** \> **Destination for elektronisk rapportering**. På siden **Destination for elektronisk rapportering** kan du tilsidesætte standardfunktionsmåden for en konfiguration. Importerede konfigurationer vises ikke på denne side, før du vælger **Ny** og derefter i feltet **Reference** vælger en konfiguration at oprette destinationsindstillinger for.
+Du kan kun konfigurere destinationer for ER-konfigurationer, der er [importeret](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) til aktuelle Finance-forekomst, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**. Funktionaliteten for ER-destinationsstyring er tilgængelig på **Organisationsadministration** \> **Elektronisk rapportering** \> **Destination for elektronisk rapportering**.
+
+### <a name="default-behavior"></a>Standardfunktionsmåde
+
+Standardfunktionsmåden for en ER-formatkonfiguration afhænger af den udførelsestype, du angiver, når et ER-format starter.
+
+Hvis du angiver indstillingen **Batchbehandling** til **Nej** i dialogboksen **Intrastat-rapport** på oversigtspanelet **Kør i baggrunden**, køres der øjeblikkeligt et ER-format i interaktiv tilstand. Når denne udførelse er fuldført, er et genereret udgående dokument gjort tilgængeligt for download.
+
+Hvis du angiver **Batchbehandling** til **Ja**, køres et ER-format i [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview)-tilstand. Det relevante batchjob oprettes på basis af de parametre, du angiver på fanen **Kør i baggrunden** i dialogboksen **ER-parametre**.
+
+> [!NOTE]
+> Kobbeskrivelsen startes for at informere dig om kørslen af en ER-formattilknytning. Det indeholder også navnet på den udførte ER-komponent.
+
+[![Køre et ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+Du kan finde oplysninger om dette job på flere steder:
+
+- Gå til **Generelt** \> **Forespørgsler** \> **Batchjob** \> **Mine batchjob** for at kontrollere status for det planlagte job.
+- Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektroniske rapportingsjob** for at kontrollere status for det planlagte job og udførelsesresultaterne af det fuldførte job. Når jobudførelsen er fuldført, skal du vælge **Vis filer** på siden **Elektroniske rapportingsjob** for at få et genereret udgående dokument.
+
+    > [!NOTE]
+    > Dette dokument gemmes som en vedhæftet fil for den aktuelle jobpost og styres af strukturen [Dokumentstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Den [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), der bruges til at gemme ER-artefakter af denne type, konfigureres i [ER-parametrene](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+
+- På siden **Elektroniske rapporteringsjob** skal du vælge **Vis filer** for at få vist listen over de fejl og advarsler, der blev genereret under jobudførelsen.
+
+    [![Gennemse ER-joblisten](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Brugerkonfigureret funktionsmåde
+
+På siden **Destination for elektronisk rapportering** kan du tilsidesætte standardfunktionsmåden for en konfiguration. Importerede konfigurationer vises ikke på denne side, før du vælger **Ny** og derefter i feltet **Reference** vælger en konfiguration at oprette destinationsindstillinger for.
 
 [![Vælge en konfiguration i feltet Reference](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -148,7 +177,7 @@ PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der brug
 >
 > Den fremstillede PDF-fil er begrænset til maksimalt 300 sider.
 >
-> På nuværende tidspunkt understøttes kun liggende sideretning i det PDF-dokument, der fremstilles af et Excel-output.
+> I Microsoft Dynamics 365 Finance version 10.0.9 (april 2020) understøttes kun liggende sideretning i det PDF-dokument, der oprettes af et Excel-output. Med udgivelsen af Dynamics 365 Finance version 10.0.10 (maj 2020) kan du [angive sideretningen](#SelectPdfPageOrientation) i det PDF-dokument, der oprettes ud fra et Excel-output, mens du konfigurerer en ER-destination.
 >
 > Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der bruges til konvertering af et output, der ikke indeholder integrerede skrifttyper.
 

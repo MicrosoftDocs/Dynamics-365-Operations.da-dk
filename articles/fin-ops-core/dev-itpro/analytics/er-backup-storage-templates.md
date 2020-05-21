@@ -3,7 +3,7 @@ title: Sikkerhedskopilager til ER-skabeloner
 description: I dette emne forklares det, hvordan du bruger sikkerhedskopilageret for elektroniske rapporter (ER) til genoprettelse af skabeloner.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2e399290153c2c63ac1c02f0f9cdb956ff5031e5
+ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771415"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321660"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhedskopilager til ER-skabeloner
 
@@ -33,21 +33,23 @@ ms.locfileid: "2771415"
 
 Hvert konfigureret format kan udgives som en del af en ER-løsning. Hver ER-løsning kan eksporteres fra én forekomst af Finance and Operations og importeres til en anden forekomst.
 
-ER-strukturen bruger [Konfiguration af dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til at bevare de krævede skabeloner for den aktuelle Finance and Operations-forekomst. Afhængigt af indstillingerne for ER-strukturen kan der vælges et Microsoft Azure Blob-lager eller en Microsoft SharePoint-mappe som fysisk primær lagringslokation for skabeloner. (Yderligere oplysninger finder du under [Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md).) Tabellen DocuValue indeholder en individuel post for hver skabelon. I hver post indeholder feltet **AccessInformation** stien til en skabelonfil, der er placeret på den konfigurerede lagerlokation.
+ER-strukturen bruger [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til at bevare de krævede skabeloner for den aktuelle Finance and Operations-forekomst. Afhængigt af indstillingerne for ER-strukturen kan der vælges et Microsoft Azure Blob-lager eller en Microsoft SharePoint-mappe som fysisk primær lagringslokation for skabeloner. (Yderligere oplysninger finder du under [Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md).) Tabellen DocuValue indeholder en individuel post for hver skabelon. I hver post indeholder feltet **AccessInformation** stien til en skabelonfil, der er placeret på den konfigurerede lagerlokation.
 
-Når du administrerer dine Finance and Operations-forekomster, kan du vælge at overflytte den aktuelle forekomst til en anden lokation. Du kan f.eks. flytte produktionsforekomsten til et nyt sandkassemiljø. Hvis du har konfigureret ER-strukturen til at gemme skabeloner i blob-lageret, henviser DocuValue-tabellen i det nye sandkassemiljø til forekomsten af blob-lager i produktionsmiljøet. Men der er ikke adgang til denne forekomst fra sandkassemiljøet, fordi overførselsprocessen ikke understøtter overflytning af artefakter i blob-lageret. Hvis du derfor forsøger at køre et ER-format, der bruger en skabelon til at generere forretningsdokumenter, indtræffer der en undtagelse, og du får besked om den manglende skabelon. Du bliver også guidet til at bruge ER-oprydningsværktøjet til at slette og derefter importere den ER-formatkonfiguration, der indeholder skabelonen, igen. Da du kan have flere ER-formatkonfigurationer, kan denne proces være tidskrævende.
+Når du administrerer dine Finance and Operations-forekomster, kan du vælge at flytte den aktuelle forekomst til en anden lokation. Du kan f.eks. flytte produktionsforekomsten til et nyt sandkassemiljø. Hvis du har konfigureret ER-strukturen til at gemme skabeloner i blob-lageret, henviser DocuValue-tabellen i det nye sandkassemiljø til forekomsten af blob-lager i produktionsmiljøet. Men der er ikke adgang til denne forekomst fra sandkassemiljøet, fordi overførselsprocessen ikke understøtter overflytning af artefakter i blob-lageret. Hvis du derfor forsøger at køre et ER-format, der bruger en skabelon til at generere forretningsdokumenter, indtræffer der en undtagelse, og du får besked om den manglende skabelon. Du bliver også guidet til at bruge ER-oprydningsværktøjet til at slette og derefter importere den ER-formatkonfiguration, der indeholder skabelonen, igen. Da du kan have flere ER-formatkonfigurationer, kan denne proces være tidskrævende.
 
 Funktionen sikkerhedskopilager for ER-skabeloner kan hjælpe dig med at oprette dine skabeloner, så de altid er tilgængelige til oprettelse af forretningsdokumenter.
 
 > [!NOTE]
 > Denne funktion kan kun bruges, når blob-lagerstedet er valgt som fysisk lagerplacering for ER-skabeloner.
 
+## <a name="automated-recovery-and-notification"></a>Automatiseret genoprettelse og besked
+
 I forbindelse med denne funktion gemmes hver skabelon for en ny ER-formatkonfiguration i det aktuelle miljø automatisk på sikkerhedskopiens lagerplacering for skabeloner (ERDocuDatabaseStorage-databasetabellen), når følgende hændelser indtræffer:
 
 - Du importerer en ny ER-formatkonfiguration, der indeholder en skabelon.
 - Du fuldfører kladdeversionen af en ER-formatkonfiguration, der indeholder en skabelon.
 
-Sikkerhedskopier af skabeloner overføres til en ny forekomst af Finance and Operations som en del af programdatabasen.
+Sikkerhedskopier af skabeloner overflyttes til en ny forekomst af Finance and Operations som en del af programdatabasen.
 
 Hvis der kræves en skabelon med et ER-format til generering af udgående dokumenter til at behandle leverandørbetalinger, herunder generering af betalingsadviseringer og kontrolrapporter, men den ønskede skabelon ikke findes på den primære lagringsplacering, indtræffer følgende hændelser:
 
@@ -59,7 +61,7 @@ Hvis der kræves en skabelon med et ER-format til generering af udgående dokume
 
 Hvis du vil opsætte parameteren **Kør automatisk proceduren for gendannelse af de brudte skabeloner i batch**, skal du fuldføre følgende trin:
 
-1. I Finance and Operations skal du åbne **Organisationsadministration \> Elektronisk rapportering \> Siden Konfigurationer**.
+1. I Finance and Operations skal du åbne siden **Organisationsadministration \> Elektronisk rapportering \> Konfigurationer**.
 2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
 3. I dialogboksen **Brugerparametre** skal du angive den påkrævede værdi for parameteren **Kør automatisk proceduren for gendannelse af de brudte skabeloner i batch**.
 
@@ -87,6 +89,10 @@ Hvis du angiver indstillingen **Stop med at oprette sikkerhedskopier af skabelon
 Hvis du har opgraderet miljøet til Finance and Operations version 10.0.5 (oktober 2019) og vil overflytte til et nyt miljø, der indeholder ER-formatkonfigurationer, der kan køres, skal du vælge **Udfyld sikkerhedskopilager** på siden **Parametre til elektronisk rapportering**, før overførslen sker. Denne knap starter processen med at tage sikkerhedskopier af alle tilgængelige skabeloner, så de kan gemmes på ER-sikkerhedskopiplaceringen for skabeloner.
 
 ![Siden Parametre til elektronisk rapportering](./media/GER-BackupTemplates-5.png)
+
+## <a name="manual-recovery"></a>Manuel gendannelse
+
+Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Gendan brudte skabeloner** for at starte processen med at gendanne ER-skabeloner fra sikkerhedskopiplaceringen til den primære lagerplacering. Før du starter denne proces kan du på siden **Gendan brudte skabeloner** angive, om den skal udføres interaktivt, eller om batchprocessen skal planlægges for dette.
 
 ## <a name="supported-deployments"></a>Understøttede installationer
 

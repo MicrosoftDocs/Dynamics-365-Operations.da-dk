@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: c11821db796220cd61d776428fb6890480f27b8e
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 481f7787e21cd9a00ed1798d4d2588e93ca73b56
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269431"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346531"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerstedsprocesser.
 
@@ -46,7 +46,7 @@ Funktionen _Kvalitetsstyring for lagerstedsprocesser_ genererer automatisk arbej
 
 Når funktionen _Kvalitetsstyring for lagerstedsprocesser_ er slået til, ændres opsætningen af enheder for nøglelokationsstyring og kvalitetsstyring. I følgende illustration vises en oversigt over de enheder, der muliggør kvalitetsordrer for lagerstedsprocesser. Tekst i parentes angiver anbefalede handlinger, når kvalitetsstyringen blev anvendt, før funktionen _Kvalitetsstyring for lokationsstyringsprocesser_ blev aktiveret.
 
-![Enheder for kvalitetsstyring](media/quality-management-entity-diagram.png "Enheder for kvalitetsstyring")
+![![Enheder for kvalitetsstyring](media/quality-management-entity-diagram.png "Enheder for kvalitetsstyring")](media/quality-management-entity-diagram.png "Quality management entities")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Aktiveringer: Arbejdsordretyperne Kvalitetsvareprøve og Kvalitetsordre
 
@@ -61,7 +61,7 @@ Arbejdsordretyperne _Kvalitetsvareprøve_ og _Kvalitetsordre_ bruges i lokations
 
 Før der automatisk kan oprettes lagerstedsarbejde for at flytte lager til kvalitetskontrol, skal du udføre disse trin for at konfigurere systemet.
 
-1. Opret separate arbejdsklasser for arbejdsordretyperne _Kvalitetsvareprøve_ og _Kvalitetsordre_. På denne måde sikrer du, at det rette arbejde kan genereres automatisk ud fra de to arbejdsordretyper, og at dette arbejde derefter kan køres ved hjælp af Lagersted-mobilappen (WMA).
+1. Opret separate arbejdsklasser for arbejdsordretyperne _Kvalitetsvareprøve_ og _Kvalitetsordre_. På denne måde sikrer du, at det rette arbejde kan genereres automatisk ud fra de to arbejdsordretyper, og at dette arbejde derefter kan køres ved hjælp af lagerstedsappen.
 1. Konfigurer en arbejdsskabelon for hver arbejdsordretype:
 
     - Konfigurer en arbejdsskabelon, der bruger arbejdsordretypen _Kvalitetsvareprøve_, til automatisk at flytte registreret lager til et kvalitetskontrolsted.
@@ -165,7 +165,7 @@ Indstillingen **Opdelingsantal efter vare** bestemmer, om id-antallet evalueres 
 
 Værdien i feltet **Pr. n. id** bestemmer, hvor ofte der oprettes kvalitetsordrer i forhold til antallet af varer, der er registreret. En værdi på *3* vil f.eks. sende hver tredje vare til kvalitetskontrol, startende med den første vare. Værdien skal være større end 0 (nul).
 
-Mens arbejdere modtager varer ved hjælp af WMA, kontrollerer systemet, om der er konfigureret en kvalitetstilknytning for hver indgående vare. Hvis der er konfigureret en kvalitetstilknytning, bruger systemet den vareprøvepost, der er konfigureret for den pågældende kvalitetstilknytning, til at bestemme, hvordan den skal oprette kvalitetsordrer, arbejde for kvalitetsvareprøver og indkøbsordrearbejde.
+Mens arbejdere modtager varer ved hjælp af lagerstedsappen, kontrollerer systemet, om der er konfigureret en kvalitetstilknytning for hver indgående vare. Hvis der er konfigureret en kvalitetstilknytning, bruger systemet den vareprøvepost, der er konfigureret for den pågældende kvalitetstilknytning, til at bestemme, hvordan den skal oprette kvalitetsordrer, arbejde for kvalitetsvareprøver og indkøbsordrearbejde.
 
 > [!NOTE]
 > Når modtagelsesregistrering er udført i webklienten (ved hjælp af den lille registreringsside eller varemodtagelseskladden for indkøbsordrelinjer), oprettes der ikke arbejde for kvalitetsvareprøver, uanset opsætningen. I stedet for varer, der svarer til en kvalitetstilknytning, bruges den vareprøve, der refereres til, kun til at styre oprettelsen af kvalitetsordrer.
@@ -180,14 +180,14 @@ Når **Angivelse af antal**-værdien er _Fuldt id_, bestemmer feltet **Pr. n. id
 
 | Prøveudtagningsområde | Angivelse af antal | Pr. opdateret antal | Pr. lagringsdimension | Opdelingsantal efter vare | Pr. n. id | Resultat |
 |---|---|---|---|---|---|---|
-| Bestilling | Fuldt id | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Ja</p><p>Id: Ja _(låst/ikke redigerbart)_</p> | Ingen | 3 | <p>**Ordrelinjeantal: 100 EA**</p><ol><li>Registrer kvittering i WMA for 20 EA, LP1<p>Arbejde til kvalitetsvareprøve for 20 EA</p><p>Kvalitetsordre 1 for 20 EA</p></li><li>Registrer kvittering i WMA for 20 EA, LP2<p>Indkøbsordrearbejde for 20 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 20 EA, LP3<p>Indkøbsordrearbejde for 20 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 20 EA, LP4<p>Arbejde til kvalitetsvareprøve for 20 EA</p></li><li>Registrer kvittering i WMA for 20 EA, LP5<p>Indkøbsordrearbejde for 20 EA (læg-på-lager)</p></li></ol> |
-| Bestilling | Fast antal = 1 | Ja | <p>Lokation: Ja</p><p>Id: Ja</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100**</p><ol><li>Registrer kvittering i WMA for 20 EA, LP1<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 20 EA, LP2<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 20 EA, LP3<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 20 EA, LP4<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 20 EA, LP5<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li></ol> |
-| Bestilling | Procent = 10 | Ingen | <p>Lokation: Nej</p><p>Id: Nej</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100 EA**</p><ol><li>Registrer kvittering i WMA for 50 EA, LP1<p>Arbejde til kvalitetsvareprøve for 10 EA</p><p>Kvalitetsordre 1 for 10 EA</p><p>Indkøbsordrearbejde for 40 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 50 EA, LP2<p>Indkøbsordrearbejde for 50 EA (læg-på-lager)</p></li></ol> |
-| Læs | Procent = 5 | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Nej</p><p>Id: Nej</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 500 EA**</p><p>**To laster: første last 200 EA, anden last 300 EA**</p><ol><li>Registrer kvittering i WMA for første last for 100 EA<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 95 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for første last for 100 EA<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 95 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for anden last for 300 EA<p>Arbejde til kvalitetsvareprøve for 15 EA</p><p>Kvalitetsordre 1 for 15 EA</p><p>Indkøbsordrearbejde for 285 EA (læg-på-lager)</p></li></ol> |
-| Bestilling | Procent = 10 | Ingen | <p>Lokation: Ja</p><p>Id: Ja</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100**</p><ol><li>Registrer kvittering i WMA for 50 EA, LP1<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 50 EA, LP2<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 (læg-på-lager)</p></li></ol> |
-| Læs | Fuldt id | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Ja</p><p>Id: Ja _(låst/ikke redigerbart)_</p> | Ingen | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantal for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantal for vare B: 90 EA (3 paller)**</li></ul><p>**Én last, to lastlinjer med hver ordrelinje**</p><ol><li>Registrer kvittering i WMA for vare A, 30 EA, LP1<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP2<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP3<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP4<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer kvittering i WMA for vare B, 30 EA, LP5<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare B, 30 EA, LP6<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP7<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li></ol> |
-| Læs | Fuldt id | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Ja</p><p>Id: Ja _(låst/ikke redigerbart)_</p> | Ja | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantal for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantal for vare B: 90 EA (3 paller)**</li></ul><p>**Én last, to lastlinjer med hver ordrelinje**</p><ol><li>Registrer kvittering i WMA for vare A, 30 EA, LP1<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP2<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP3<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP4<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer kvittering i WMA for vare B, 30 EA, LP5<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer kvittering i WMA for vare B, 30 EA, LP6<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for vare A, 30 EA, LP7<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li></ol> |
-| Læs | Procent = 10 | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Nej</p><p>Id: Nej</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100 EA**</p><p>**Der oprettes ingen laster. Ordrens omfang anvendes.**</p><ol><li>Registrer kvittering i WMA for 50 EA, LP1<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 EA (læg-på-lager)</p></li><li>Registrer kvittering i WMA for 50 EA, LP2<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 EA (læg-på-lager)</p></li></ol> |
+| Bestilling | Fuldt id | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Ja</p><p>Id: Ja _(låst/ikke redigerbart)_</p> | Ingen | 3 | <p>**Ordrelinjeantal: 100 EA**</p><ol><li>Registrere kvittering i lagerstedsappen for 20 EA, LP1<p>Arbejde til kvalitetsvareprøve for 20 EA</p><p>Kvalitetsordre 1 for 20 EA</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP2<p>Indkøbsordrearbejde for 20 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP3<p>Indkøbsordrearbejde for 20 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP4<p>Arbejde til kvalitetsvareprøve for 20 EA</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP5<p>Indkøbsordrearbejde for 20 EA (læg-på-lager)</p></li></ol> |
+| Bestilling | Fast antal = 1 | Ja | <p>Lokation: Ja</p><p>Id: Ja</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100**</p><ol><li>Registrere kvittering i lagerstedsappen for 20 EA, LP1<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP2<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP3<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP4<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 20 EA, LP5<p>Arbejde til kvalitetsvareprøve for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Indkøbsordrearbejde for 19 EA (læg-på-lager)</p></li></ol> |
+| Bestilling | Procent = 10 | Ingen | <p>Lokation: Nej</p><p>Id: Nej</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100 EA**</p><ol><li>Registrere kvittering i lagerstedsappen for 50 EA, LP1<p>Arbejde til kvalitetsvareprøve for 10 EA</p><p>Kvalitetsordre 1 for 10 EA</p><p>Indkøbsordrearbejde for 40 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 50 EA, LP2<p>Indkøbsordrearbejde for 50 EA (læg-på-lager)</p></li></ol> |
+| Læs | Procent = 5 | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Nej</p><p>Id: Nej</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 500 EA**</p><p>**To laster: første last 200 EA, anden last 300 EA**</p><ol><li>Registrere kvittering i lagerstedsappen for første last for 100 EA<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 95 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for første last for 100 EA<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 95 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for anden last for 300 EA<p>Arbejde til kvalitetsvareprøve for 15 EA</p><p>Kvalitetsordre 1 for 15 EA</p><p>Indkøbsordrearbejde for 285 EA (læg-på-lager)</p></li></ol> |
+| Bestilling | Procent = 10 | Ingen | <p>Lokation: Ja</p><p>Id: Ja</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100**</p><ol><li>Registrere kvittering i lagerstedsappen for 50 EA, LP1<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 50 EA, LP2<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 (læg-på-lager)</p></li></ol> |
+| Læs | Fuldt id | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Ja</p><p>Id: Ja _(låst/ikke redigerbart)_</p> | Ingen | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantal for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantal for vare B: 90 EA (3 paller)**</li></ul><p>**Én last, to lastlinjer med hver ordrelinje**</p><ol><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP1<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP2<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP3<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP4<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrere kvittering i lagerstedsappen for vare B, 30 EA, LP5<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare B, 30 EA, LP6<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP7<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li></ol> |
+| Læs | Fuldt id | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Ja</p><p>Id: Ja _(låst/ikke redigerbart)_</p> | Ja | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantal for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantal for vare B: 90 EA (3 paller)**</li></ul><p>**Én last, to lastlinjer med hver ordrelinje**</p><ol><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP1<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP2<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP3<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP4<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrere kvittering i lagerstedsappen for vare B, 30 EA, LP5<p>Arbejde til kvalitetsvareprøve for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrere kvittering i lagerstedsappen for vare B, 30 EA, LP6<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for vare A, 30 EA, LP7<p>Indkøbsordrearbejde for 30 EA (læg-på-lager)</p></li></ol> |
+| Læs | Procent = 10 | Ja _(låst/ikke redigerbart)_ | <p>Lokation: Nej</p><p>Id: Nej</p> | Ingen | Ikke relevant | <p>**Ordrelinjeantal: 100 EA**</p><p>**Der oprettes ingen laster. Ordrens omfang anvendes.**</p><ol><li>Registrere kvittering i lagerstedsappen for 50 EA, LP1<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 EA (læg-på-lager)</p></li><li>Registrere kvittering i lagerstedsappen for 50 EA, LP2<p>Arbejde til kvalitetsvareprøve for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Indkøbsordrearbejde for 45 EA (læg-på-lager)</p></li></ol> |
 
 Når en arbejder validerer en af de kvalitetsordrer, der vises i den forrige tabel, genererer systemet automatisk kvalitetsordrearbejde for at flytte lager fra kvalitetskontrollens lokation til den lokation, der er defineret i lokalitetsvejledningen til arbejdsordretypen _Kvalitetsordre_. Du kan konfigurere enhver lokation til dette formål, f.eks. en retur- eller lagerlokation, afhængigt af testresultatet for kvalitetsordren. Du kan se et eksempel på denne opsætning i [eksempelscenariet](#example-scenario) i slutningen af dette emne.
 
@@ -239,7 +239,7 @@ I følgende eksempel er værdien af **Referencetype** lig med _Indkøb_.
     - **Testgruppe:** *Kegle*
     - **Vareprøve:** *10 %*
 
-En indkøbsordre på et antal af 10 af vare A0001 er nu oprettet for leverandør 104. Derefter registreres en indkøbsordrelinje med antallet 10 som modtaget på et id ved hjælp af WMA. Her er resultatet:
+En indkøbsordre på et antal af 10 af vare A0001 er nu oprettet for leverandør 104. Derefter registreres en indkøbsordrelinje med antallet 10 som modtaget på et id ved hjælp af lagerstedsappen. Her er resultatet:
 
 - Der er én kvalitetsordre fra den første kvalitetstilknytning for testgruppen *Kabinet*. Antallet er 5. Der er ingen kvalitetsordre fra den anden kvalitetstilknytning, da kriterierne for den første kvalitetstilknytning er mere specifikke i forhold til testgruppen *Kabinet*.
 - Der er én kvalitetsordre for den tredje kvalitetstilknytning for testgruppen *Impedans*. Antallet er 10. Der er ingen kvalitetsordre fra den fjerde kvalitetstilknytning, da kriterierne for den første kvalitetstilknytning er mere specifikke i forhold til testgruppen *Impedans*.
@@ -457,7 +457,7 @@ Du har nu defineret en kvalitetstilknytning, der bruger funktionen *Kvalitetssty
     - **Lagersted:** *51*
 
 1. Skriv indkøbsordrenummeret ned, så du kan bruge det senere.
-1. Gå til en mobilenhed eller emulator, der kører WMA, og log på lagersted 51 ved at bruge *51* som bruger-id og *1* som adgangskode.
+1. Gå til en mobilenhed eller emulator, der kører lagerstedsappen, og log på lagersted 51 ved at bruge *51* som bruger-id og *1* som adgangskode.
 1. Gå til **Indgående \> Købsmodtagelse**, og angiv følgende værdier:
 
     - **IO-num:** Nummeret på den indkøbsordre, du lige har oprettet
@@ -465,7 +465,7 @@ Du har nu defineret en kvalitetstilknytning, der bruger funktionen *Kvalitetssty
     - **Enhed:** *Styk*
 
 1. Fortsæt med at modtage på linjen, *5 styk* ad gangen, indtil linjen er fuldt modtaget. (I alt vil der blive oprettet fire id'er).
-1. Log ud af WMA.
+1. Log ud af lagerstedsappen.
 1. Tilbage i webklienten skal du gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Find og åbn indkøbsordren.
 1. Marker linjen for varenummer **M9201** i afsnittet *Indkøbsordrelinjer*, og vælg derefter **Indkøbsordrelinjer \> Arbejdsdetaljer**.
@@ -475,7 +475,7 @@ Du har nu defineret en kvalitetstilknytning, der bruger funktionen *Kvalitetssty
 
 Du skal nu flytte id'erne til deres tildelte lokationer. Første og fjerde id går til kvalitetskontrollens lokation, mens andet og tredje id går direkte til legeret.
 
-1. Gå til en mobilenhed eller emulator, der kører WMA, og log på lagersted 51 ved at bruge *51* som bruger-id og *1* som adgangskode.
+1. Gå til en mobilenhed eller emulator, der kører lagerstedsappen, og log på lagersted 51 ved at bruge *51* som bruger-id og *1* som adgangskode.
 1. Gå til **Indgående \> Læg indkøb på lager**, og læg de enkelte id'er på lager fra den forrige procedure, indtil du har lukket hele arbejdet.
 
 #### <a name="summary-process-quality-management-work"></a>Oversigt: Behandle kvalitetsstyringsarbejde
@@ -617,7 +617,7 @@ Du har konfigureret arbejds- og lokalitetsdataene for lagersted 51 for at sikre,
 
 1. Gå til **Lokationsstyring \> Alt arbejde**.
 1. Vælg det arbejde, der netop er oprettet, og læg mærke til, at der er oprettet endnu et hoved for en kvalitetsordre, hvor læg på lager-lokationen er *BULK-001*.
-1. Gå til en mobilenhed eller emulator, der kører WMA, og log på lagersted 51 ved at bruge *51* som bruger-id og *1* som adgangskode.
+1. Gå til en mobilenhed eller emulator, der kører lagerstedsappen, og log på lagersted 51 ved at bruge *51* som bruger-id og *1* som adgangskode.
 1. Gå til **Kvalitet \> Læg på lager fra QMS**, og behandl de to id'er, der er relateret til begge arbejdsopgaver, så alt arbejde er lukket.
 
 > [!NOTE]
