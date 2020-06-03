@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 14. maj 2020
+          href: hr-whats-new-2020-05-14.md
         - name: 1. maj 2020
           href: hr-whats-new-2020-05-01.md
         - name: 13. april 2020
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Forstå Lifecycle Services
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources-app i Teams
+          href: hr-admin-teams-leave-app.md
         - name: Dokumentationsressourcer
           items:
             - name: Hjælp-system
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Oprette forbindelse til Hjælp-systemet
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Oprette forbindelse til et brugerdefineret Hjælp-websted
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: Brugerdefineret oversigt over hjælp
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Se og eksportere feltbeskrivelser
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Arbejdsrutineoptager
@@ -513,8 +517,10 @@
               href: hr-employee-self-service-manage-requests.md
             - name: Anmode om fravær
               href: hr-employee-self-service-request-time-off.md
-            - name: Vis team- og firmakalendere
+            - name: Vise team- og firmakalendere
               href: hr-employee-self-service-calendar.md
+        - name: Administrere fraværsanmodninger i Teams
+          href: hr-teams-leave-app.md
         - name: Udvikle medarbejdere
           items:
             - name: Oversigt over performancestyring
