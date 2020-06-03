@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Fejlfinde problemer med pakkeprogrammer
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Installere brugerdefineret hjælp
+              items:
+                - name: Brugerdefineret oversigt over hjælp
+                  href: help/custom-help-overview.md
+                - name: Forberede indhold til brug sammen med ruden Hjælp
+                  href: help/preparing-content.md
+                - name: Installere brugerdefineret hjælp til Azure
+                  href: help/walkthrough-help-azure.md
+                - name: Oprette forbindelse fra brugerdefineret hjælp til ruden Hjælp
+                  href: help/connect-help-pane.md
+                - name: Brugerdefineret værktøjssæt til hjælp
+                  items:
+                    - name: Oversigt
+                      href: help/custom-help-toolkit.md
+                    - name: Værktøjet HTML From Repo Generator
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Værktøjet Convert HTML To JSON
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Værktøjet HTML Locale Changer
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Konvertere Dynamics AX til brugerdefineret hjælp til brug i Dynamics 365
+                      href: help/migrate-dynamicsax2012.md
+                - name: Beskrivelser af sprog og landestandarder på tværs af produkt og hjælp
+                  href: help/language-locale.md
+                - name: 'Udvide, tilpasse og samarbejde med hjælp'
+                  href: help/contributor-guide.md
         - name: Udvikle og tilpasse
           items:
             - name: Udvikle og tilpasse startside
@@ -835,7 +861,7 @@
                     - name: Ændringer af udvidelsesmuligheder version 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Ændringer af udvidelsesmuligheder i version 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Ændringer af udvidelsesmuligheder i version 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Ændringer af udvidelsesmuligheder juli 2017

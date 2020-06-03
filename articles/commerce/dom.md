@@ -3,7 +3,7 @@ title: Fordelt ordrestyring (DOM)
 description: Dette emne beskriver funktionaliteten til fordelt ordrestyring (DOM) i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004314"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396026"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -37,7 +37,7 @@ DOM optimerer ordreopfyldning på tværs af komplekse netværk af systemer og pr
 
 Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
 
-![Salgsordrelivscyklus i DOM](./media/flow.png "Salgsordrelivscyklus i DOM")
+![![Salgsordrelivscyklus i DOM](./media/flow.png "Salgsordrelivscyklus i DOM (fordelt ordrestyring)")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>Konfigurer DOM
 
@@ -83,6 +83,15 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
     2. Vælg **Ny**, og angiv et navn og en beskrivelse for den nye gruppe.
     3. Vælg **Gem**.
     4. Vælg **Tilføj linje** for at tilføje et enkelt sted til gruppen. Du kan også vælge **Tilføj linjer** for at tilføje flere steder.
+    
+    > [!NOTE]
+    > I Commerce version 10.0.12 og derover skal **Evnen til at angive steder som 'Forsendelse' eller 'Afhentning' aktiveret i gruppen Opfyldelse,** være aktiveret i arbejdsområdet **Funktionsstyring**.
+    >
+    > Denne funktion tilføjer nye konfigurationer på siden **Opfyldelsesgruppe**, så du kan definere, om lagerstedet kan bruges til forsendelse, eller om kombinationen af lager/butik kan bruges til forsendelse, afhentning eller begge dele. 
+    >
+    > Hvis du aktiverer funktionen, opdateres indstillingerne, der er tilgængelige for valg af lokation, når du opretter afhentnings- eller forsendelsesordrer i POS.
+    >
+    > Aktivering af funktionen resulterer også i opdaterede sider i POS, når operationerne "afsend alle" eller "forsendelse angivet" er valgt.
 
 9. For at angive regler skal du gå til **Retail og Commerce \> Fordelt ordrestyring \> Opsætning \> Administrer regler**. Følgende DOM-regler understøttes i øjeblikket:
 
@@ -134,7 +143,17 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
     2. Vælg **Ny**.
     3. Angiv værdier i felterne **Profil** og **Beskrivelse**.
     4. Angiv indstillingen **Anvend automatisk resultat**. Hvis du angiver denne indstilling til **Ja**, anvendes resultaterne af DOM-kørslen for profilen automatisk på salgsordrelinjerne. Hvis du angiver indstillingen til **Nej**, kan resultaterne kun vises i opfyldningsplanen. De anvendes ikke for salgsordrelinjerne.
-    5. Hvis du ønsker, at DOM-profilen skal køres for ordrer, der har enhver salgordroprindelse, selv ordrer, hvor salgsordreoprindelsen ikke er defineret, skal du, angive indstillingen **Behandl ordrer med tomme ordreoprindelser** til **Ja**. Hvis du kun vil køre profilen for et par salgsordreoprindelser, kan du definere dem på siden **Salgsoprindelser** som beskrevet senere.
+    5. Hvis du ønsker, at DOM (fordelt ordrestyring)-profilen skal køres for ordrer, der har enhver salgsordreoprindelse, herunder ordrer, hvor salgsordreoprindelsen ikke er defineret, skal du angive indstillingen **Behandl ordrer med tomme ordreoprindelser** til **Ja**. Hvis du kun vil køre profilen for et par salgsordreoprindelser, kan du definere dem på siden **Salgsoprindelser** som beskrevet senere.
+
+    > [!NOTE]
+    > I Commerce version 10.0.12 og nyere skal **Evnen til at tildele Opfyldelsesgruppe til en Opfyldelsesprofil** være aktiveret i arbejdsområdet **Funktionsstyring**. 
+    >
+    > Denne funktion tilføjer en ny konfiguration på siden **Opfyldelsesprofil**, der kan knyttes til en enkelt opfyldelsesgruppe. 
+    >
+    > Hvis du vælger opfyldelsesgruppe, udføres DOM (fordelt ordrestyring)-reglerne for den pågældende opfyldelsesprofil effektivt i forhold til de "forsendelseslagersteder", der er inkluderet i opfyldelsesgruppen. 
+    > 
+    > Hvis du vil bruge denne funktion effektivt, skal du sikre dig, at der er én opfyldelsesgruppe, der indeholder alle forsendelseslagersteder, og derefter tilknytte denne opfyldelsesgruppe til opfyldelsesprofilen.
+    
     6. På oversigtspanelet **Juridiske enheder** skal du vælge **Tilføj** og derefter vælge en juridisk enhed.
     7. På oversigtspanelet **Regler** skal du vælge **Tilføj** og derefter vælge den regel, der skal tilknyttes til profilen.
     8. Gentag de to forrige trin, indtil alle de nødvendige regler er tilknyttet til profilen.
@@ -153,12 +172,12 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
     21. Luk siden **Ordreoprindelser**.
     22. Angiv indstillingen **Aktivér profil** til **Ja**. Hvis der er fejl i opsætningen, modtager du en advarselsmeddelelse.
 
-## <a name="dom-processing"></a>DOM-behandling
+## <a name="dom-processing"></a>DOM (fordelt ordrestyring)-behandling
 
-DOM kører kun i et batchjob. Du kan konfigurere batchjobbet til DOM-kørsler ved at følge disse trin.
+DOM (fordelt ordrestyring) kører kun i et batchjob. Du kan konfigurere batchjobbet til DOM (fordelt ordrestyring)-kørsler ved at følge disse trin.
 
-1. Gå til **Retail og Commerce \> Fordelt ordrestyring \> Batchbehandling \> Opsætning af DOM-processorjob**.
-1. På oversigtspanelet **Parametre** i feltet **Opfyldelsesprofil** skal du vælge en profil, der skal køres DOM for.
+1. Gå til **Retail og Commerce \> Fordelt ordrestyring \> Batchbehandling \> Opsætning af DOM (fordelt ordrestyring)-processorjob**.
+1. På oversigtspanelet **Parametre** i feltet **Opfyldelsesprofil** skal du vælge en profil, der skal køres DOM (fordelt ordrestyring) for.
 1. På oversigtspanelet **Kør i baggrunden** i feltet **Batchgruppe** skal du vælge en batchgruppe, der er konfigureret.
 1. I feltet **Opgavebeskrivelse** skal du angive et navn til batchjobbet.
 1. Vælg **Gentagelse**, og definer gentagelsen af batchjobbet.
@@ -166,20 +185,20 @@ DOM kører kun i et batchjob. Du kan konfigurere batchjobbet til DOM-kørsler ve
 
 På behandlingstidspunktet medtager DOM ordren og ordrelinjerne som beskrevet her:
 
-- Ordrelinjer, der opfylder kriterierne for salgsordreoprindelser, leveringsmåder og juridisk enhed som defineret i DOM-profilen, og som også opfylder nogen af disse kriterier:
+- Ordrelinjer, der opfylder kriterierne for salgsordreoprindelser, leveringsmåder og juridisk enhed som defineret i DOM (fordelt ordrestyring)-profilen, og som også opfylder nogen af disse kriterier:
 
     - De oprettes fra Commerce-kanaler.
-    - De er aldrig blevet formidlet af DOM.
-    - De er blevet formidlet af DOM før, men de er markeret som undtagelser og ligger under tærsklen for maksimalt antal forsøg.
+    - De er aldrig blevet formidlet af DOM (fordelt ordrestyring).
+    - De er blevet formidlet af DOM (fordelt ordrestyring) før, men de er markeret som undtagelser og ligger under tærsklen for maksimalt antal forsøg.
     - Leveringsmåden er ikke afhentning eller elektronisk levering.
     - De ikke er markeret til levering.
     - De er ikke udelukket manuelt.
 
 - Ordrer, der ikke er på hold
 
-Efter anvendelse af regler, lagerbegrænsninger og optimering vælger DOM den placering, der er tættest på kundens leveringsadresse.
+Efter anvendelse af regler, lagerbegrænsninger og optimering vælger DOM (fordelt ordrestyring) den placering, der er tættest på kundens leveringsadresse.
 
-![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")
+![![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>Resultater af DOM-kørsler
 
@@ -191,7 +210,7 @@ Følg disse trin for at få vist alle de opfyldningsplaner, der genereres.
 2. I arbejdsområdet **Fordelt ordrestyring** skal du vælge feltet **Opfyldningsplaner**.
 3. Vælg ID'et for den relevante ordreopfyldningsplan for at få vist opfyldningsplanen.
 
-    Sektionen med ordreoplysninger i opfyldningsplanen viser de oprindelige salgsordrelinjer, der var en del af kørslen. Ud over standardfelterne for salgsordrelinjer indeholder sektionen med ordreoplysninger også følgende tre DOM-relaterede felter:
+    Sektionen med ordreoplysninger i opfyldningsplanen viser de oprindelige salgsordrelinjer, der var en del af kørslen. Ud over standardfelterne for salgsordrelinjer indeholder sektionen med ordreoplysninger også følgende tre DOM (fordelt ordrestyring)-relaterede felter:
 
     - **Opfyldelsestype** – Dette felt angiver, om salgsordrelinjen er fuldt formidlet, delvist formidlet eller slet ikke formidlet til en lokation.
     - **Opdel** – Dette felt angiver, om en salgsordrelinje er blevet opdelt og formidlet til forskellige placeringer.
@@ -214,12 +233,12 @@ I det følgende beskrives indstillingerne på ordrelinjen. For at åbne ordrelin
         - **Dataændringskonflikt** – Salgsordrelinjen er blevet ændret, siden ordren blev formidlet. Opfyldningsplanen kan derfor ikke anvendes for ordren.
         - **Specifik undtagelse for ordrelinje** – Der er flere undtagelser på ordrelinjen.
 
-- Under salgsordreindtastning kan DOM køres i en interaktiv tilstand. Mens du indtaster en ordrelinje, når du har angivet produktet og antallet, kan du vælge **Opdater linje** og derefter klikke på **DOM** og vælge **Foreslå opfyldelseslokation**. Du ser derefter en liste over lokationer, der er baseret på DOM-regler, som kan opfylde antallet på ordrelinjen. Denne listen er sorteret efter afstand. Vælg en lokation for at angive den relevante websted og lagersted på salgsordrelinjen. For at denne funktion kan fungere, skal der være en eksisterende, aktivt opfyldningsprofil, der svarer til salgsoprindelsen og leveringsmåden på salgslinjen.
-- For at få vist DOM-kørselslogfiler for en salgsordrelinje skal du vælge **Salgsordrelinje** og derefter under **DOM** vælge **Vis DOM-logfiler**. DOM-logfilerne viser alle hændelser og logfiler, der blev oprettet af DOM-kørslen. Logfilerne kan hjælpe dig med at forstå, hvorfor en bestemt lokation er tildelt til ordrelinjen, og hvilke regler og begrænsninger der blev taget i betragtning som en del af tildelingen. På fanen **Administrer** er DOM-logfilerne også tilgængelige på salgsordrehovedniveau.
+- Under salgsordreindtastning kan DOM (fordelt ordrestyring) køres i en interaktiv tilstand. Mens du indtaster en ordrelinje, når du har angivet produktet og antallet, kan du vælge **Opdater linje** og derefter klikke på **DOM** (fordelt ordrestyring) og vælge **Foreslå opfyldelseslokation**. Du ser derefter en liste over lokationer, der er baseret på DOM (fordelt ordrestyring)-regler, som kan opfylde antallet på ordrelinjen. Denne listen er sorteret efter afstand. Vælg en lokation for at angive den relevante websted og lagersted på salgsordrelinjen. For at denne funktion kan fungere, skal der være en eksisterende, aktivt opfyldningsprofil, der svarer til salgsoprindelsen og leveringsmåden på salgslinjen.
+- For at få vist DOM-kørselslogfiler for en salgsordrelinje skal du vælge **Salgsordrelinje** og derefter under **DOM** vælge **Vis DOM-logfiler**. DOM-logfilerne viser alle hændelser og logfiler, der blev oprettet af DOM (fordelt ordrestyring)-kørslen. Logfilerne kan hjælpe dig med at forstå, hvorfor en bestemt lokation er tildelt til ordrelinjen, og hvilke regler og begrænsninger der blev taget i betragtning som en del af tildelingen. På fanen **Administrer** er DOM-logfilerne også tilgængelige på salgsordrehovedniveau.
 
-## <a name="run-a-clean-up-job-for-dom-fulfillment-plans"></a>Kør et oprydningsjob for DOM-opfyldningsplaner
+## <a name="run-a-clean-up-job-for-dom-fulfillment-plans"></a>Kør et oprydningsjob for DOM (fordelt ordrestyring)-opfyldningsplaner
 
-Når DOM-behandlingen køres, oprettes der opfyldningsplaner. Med tiden beholder systemet adskillige opfyldningsplaner. For at administrere det antal opfyldningsplaner, som systemet opbevarer, kan du konfigurere et batchjob, der sletter ældre opfyldningsplaner baseret på værdien **Tilbageholdelsesperiode i dage**.
+Når DOM (fordelt ordrestyring)-behandlingen køres, oprettes der opfyldningsplaner. Med tiden beholder systemet adskillige opfyldningsplaner. For at administrere det antal opfyldningsplaner, som systemet opbevarer, kan du konfigurere et batchjob, der sletter ældre opfyldningsplaner baseret på værdien **Tilbageholdelsesperiode i dage**.
 
 1. Gå til **Retail og Commerce \> Fordelt ordrestyring \> Batchbehandling \> Opsætning af job til sletning af DOM-opfyldelsesdata**. 
 1. Vælg en konfigureret batchgruppe i feltet **Batchgruppe**.
@@ -228,8 +247,8 @@ Når DOM-behandlingen køres, oprettes der opfyldningsplaner. Med tiden beholder
 
 ## <a name="more-information"></a>Flere oplysninger
 
-Her er nogle ting, du bør være opmærksom på, når du bruger DOM-funktionen:
+Her er nogle ting, du bør være opmærksom på, når du bruger DOM (fordelt ordrestyring)-funktionen:
 
-- DOM ser i øjeblikket kun på ordrer, der er oprettet ud fra Commerce-kanaler. Salgsordrer identificeres som detailsalgsordrer, når indstillingen **Commerce-salg** er angivet til **Ja**.
-- Microsoft har ikke testet DOM med funktioner til avanceret lokationsstyring. Kunder og partnere skal være omhyggelige med at afgøre, om DOM er kompatibel med de funktioner og processer for avanceret lokationsstyring, der er relevante for dem.
-- DOM er kun tilgængelig i sky-versionen af Commerce. Funktionen understøttes ikke i lokale installationer.
+- DOM (fordelt ordrestyring) ser i øjeblikket kun på ordrer, der er oprettet ud fra Commerce-kanaler. Salgsordrer identificeres som detailsalgsordrer, når indstillingen **Commerce-salg** er angivet til **Ja**.
+- Microsoft har ikke testet DOM (fordelt ordrestyring) med funktioner til avanceret lokationsstyring. Kunder og partnere skal være omhyggelige med at afgøre, om DOM (fordelt ordrestyring) er kompatibel med de funktioner og processer for avanceret lokationsstyring, der er relevante for dem.
+- DOM (fordelt ordrestyring) er kun tilgængelig i sky-versionen af Commerce. Funktionen understøttes ikke i lokale installationer.
