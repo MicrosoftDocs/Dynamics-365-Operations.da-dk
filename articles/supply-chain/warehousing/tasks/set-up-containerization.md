@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b5ad1bdd91a2fb9109f29400f082e9a8af009ba
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216936"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383291"
 ---
 # <a name="set-up-containerization"></a>Konfigurere containerisering
 
@@ -60,7 +60,7 @@ Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lo
 
 ## <a name="set-up-a-container-group"></a>Konfigurere en containergruppe
 1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Bølger > Container > Containergrupper**.
-2. I handlingsruden skal du vælge **Ny**. Du kan konfigurere logiske grupper af containertyper. For hver gruppe kan du angive den rækkefølge, i hvilken du skal pakke containerne, og hvor meget containerne skal fyldes op i procent. Varens størrelsesdimensioner bruges til at bestemme, om den kan være i en container. Den container, der er tættest på varens størrelsesdimension, bruges. Hvis du har flere containertyper i en gruppe, anbefaler vi, at du arrangerer rækkefølgen efter størrelse, så den største container er først, nummer 1 i rækkefølgen, og den mindste container er sidst.    
+2. Gå til handlingsruden, og vælg **Ny**. Du kan konfigurere logiske grupper af containertyper. For hver gruppe kan du angive den rækkefølge, i hvilken du skal pakke containerne, og hvor meget containerne skal fyldes op i procent. Varens størrelsesdimensioner bruges til at bestemme, om den kan være i en container. Den container, der er tættest på varens størrelsesdimension, bruges. Hvis du har flere containertyper i en gruppe, anbefaler vi, at du arrangerer rækkefølgen efter størrelse, så den største container er først, nummer 1 i rækkefølgen, og den mindste container er sidst.    
 3. Skriv en værdi, du tidligere har oprettet, i feltet **Containergruppe-ID**.
 4. Indtast en værdi i feltet **Beskrivelse**.
 5. Gentag trin 2-4 for alle tre containertyper, du oprettede tidligere.

@@ -1,5 +1,5 @@
 ---
-title: Introduktion til omkostningsregnskabstjenesten
+title: Introduktion til omkostningsregnskabstjenesten (privat visning)
 description: Dette emne indeholder licensoplysninger og installationsinstruktioner til omkostningsregnskabstjenesten.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276900"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372730"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Introduktion til omkostningsregnskabstjenesten
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Introduktion til omkostningsregnskabstjenesten (privat visning)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ Omkostningsregnskabstjenesten er et tilføjelsesprogram. For at gøre dets funkt
 
 Omkostningsregnskabstjenesten understøtter i øjeblikket ikke alle de funktioner til omkostningsstyring, der er indbygget i Dynamics 365 Supply Chain Management. Det er derfor vigtigt, at du evaluerer, om det funktionssæt, der aktuelt er tilgængeligt, opfylder dine behov.
 
-## <a name="licensing"></a>Licensering
-
-Omkostningsregnskabstjenesten er givet i licens sammen med standardfunktionerne i lagerregnskabet, der er tilgængelige for Supply Chain Management. Du behøver ikke at købe en ekstra licens for at bruge tjenesten til omkostningsregnskab.
-
-## <a name="install-the-add-in"></a>Installer tilføjelsesprogrammet
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Sådan får du omkostningsregnskabstjenesten (privat visning)
 
 > [!IMPORTANT]
 > Hvis du vil bruge omkostningsregnskabstjenesten, skal du have et LCS-aktiveret miljø med høj tilgængelighed (ikke et OneBox-miljø), og du skal køre Dynamics 365 Supply Chain Management version 10.0.11 eller senere.
 
+Hvis du vil tilmelde dig den private visning af omkostningsregnskabstjenesten, skal du sende dit LCS-miljø-ID med e-mail til [Omkostningsregnskabstjeneste (privat visning)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). Når vi godkender dig til programmet, sender vi dig en opfølgnings-e-mail, der indeholder en betanøgle til omkostningsregnskabstjenesten. Når du modtager betanøglen, kan du fortsætte ved at [installere tilføjelsesprogrammet](#install).
+
+## <a name="licensing"></a>Licensering
+
+Omkostningsregnskabstjenesten er givet i licens sammen med standardfunktionerne i lagerregnskabet, der er tilgængelige for Supply Chain Management. Du behøver ikke at købe en ekstra licens for at bruge tjenesten til omkostningsregnskab.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Installer tilføjelsesprogrammet
+
 Hvis du vil bruge omkostningsregnskabstjenesten, skal du installere tilføjelsesprogrammet med omkostningsregnskabstjenesten til Supply Chain Management som beskrevet i følgende procedure.
+
+1. [Tilmeld dig](#sign-up) til omkostningsregnskabstjenesten (privat visning).
 
 1. Log på LCS.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c83cafd3a8934c488bb7a9f315bd5cb154f88c09
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b4587c9d64c2456e5f9f27cdb19625d9537f1e29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204813"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383199"
 ---
 # <a name="create-a-purchase-return-order"></a>Oprette en købsreturordre
 
@@ -34,7 +34,7 @@ Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hj�
 2. Klik på **Ny**.
 3. Skriv "US-102" i feltet **Kreditorkonto**.
 4. Klik på **OK**.
-5. Klik på **Køb** i **handlingsruden**.
+5. Klik på **Køb** i **Handlingsrude**.
 6. Klik på **Kreditnota**. Det er den side, hvorfra du kan kopiere fra en eksisterende kreditorfaktura til din returordre. Dette er den samme side, der bruges til andre kopieringshandlinger. Men da vi har åbnet den fra handlingen Kreditnota, er siden konfigureret til at understøtte oprettelsen af en returordre, der modregner kreditorfakturaer.  
 7. Udvid sektionen **Parametre**.
     - Indstillingen **Vend fortegn** vælges automatisk og kan ikke ændres. Derved sikres, at tegnet ændres for mængderne, og at de ordrelinjer, der er tilføjet, modregnes kreditorfakturaen.  

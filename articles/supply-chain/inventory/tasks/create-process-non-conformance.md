@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c0c4415f490219485b3d96fa678a317c1f12f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8bf20ed737707b7cf99023e3c78489caf4a68eab
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204119"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383613"
 ---
 # <a name="create-and-process-a-conformance"></a>Oprette og behandle en overensstemmelse
 
@@ -35,7 +35,7 @@ Dette emne forklarer, hvordan du udfører uoverensstemmelsesstyring baseret på 
 2. Vælg på listen den kvalitetsordre, der blev oprettet i [Inspicere varers kvalitet](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md).  
 
 ## <a name="create-a-nonconformance"></a>Oprette en uoverensstemmelse
-1. Gå til handlingsruden, og vælg **Forespørgsler**.
+1. Gå til Handlingsrude, og vælg **Forespørgsler**.
 2. Vælg **Uoverensstemmelser**.
 3. Vælg **Ny**.
 4. Vælg det problem, der blev fundet i inspektionsprocessen, i rullemenuen til feltet **Problemtype**.  

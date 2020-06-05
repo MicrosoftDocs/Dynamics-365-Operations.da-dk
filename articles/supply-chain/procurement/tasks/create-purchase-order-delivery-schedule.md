@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e16c9adf592282a941b1112e197ea1ce9bdd34f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207709"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383245"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Oprette en indkøbsordre med en leveranceplan
 
@@ -31,7 +31,7 @@ Dette emne viser, hvordan du opretter en leveranceplan til en indkøbsordre. En 
 
 ## <a name="create-a-delivery-schedule"></a>Oprette en leveranceplan
 1. Gå i navigationsruden til **Moduler > Indkøb og forsyning > Indkøbsordrer > Alle indkøbsordrer**.
-2. I handlingsruden skal du vælge **Ny**.
+2. Gå til handlingsruden, og vælg **Ny**.
 3. I feltet **Leverandørkonto** skal du indtaste `US-101`.
 4. Vælg **OK**.
 5. I feltet **Varenummer** skal du indtaste `M0001`.

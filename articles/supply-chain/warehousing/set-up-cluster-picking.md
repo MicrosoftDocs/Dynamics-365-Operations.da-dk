@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204280"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367401"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Konfigurere klyngepluk
+
+[!include[banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan arbejderne skal kunne bruge deres mobilenheder til at gruppere plukkearbejde i klynger, så de kan plukke varer fra et enkelt sted til flere arbejdsordrer på samme tid. Dette kaldes *klyngepluk*.
 
@@ -36,35 +36,35 @@ Når arbejdsordrer er frigivet til lagerstedet, kan arbejderen bruge en mobilenh
 
 Hvis det er nødvendigt, kan en arbejder sende en klynge til en anden arbejder. Dette ændrer statussen på klyngen til Bestået. Når arbejderen bruger en mobilenhed til at angive, at plukning og læg på lager-arbejde er fuldført, skal forsendelsen eller lasten bekræftes i klienten.
 
-## <a name="set-up-cluster-picking"></a>Konfigurere klyngepluk
+## <a name="enable-cluster-picking"></a>Aktivere klyngepluk
 
 Hvis du vil aktivere klyngepluk, skal du angive følgende:
 
--   **Klyngeprofiler** – Angiv, om der automatisk skal oprettes klynge-id'er, antallet af positioner, der skal bruges, hvornår klynger skal brydes, og hvordan rækkefølgen af plukarbejdet skal angives og bekræftes.
+- **Klyngeprofiler** – Angiv, om der automatisk skal oprettes klynge-id'er, antallet af positioner, der skal bruges, hvornår klynger skal brydes, og hvordan rækkefølgen af plukarbejdet skal angives og bekræftes.
 
--   **Arbejdsskabeloner** – Definer, hvordan du opretter plukarbejde til klyngepluk.
+- **Arbejdsskabeloner** – Definer, hvordan du opretter plukarbejde til klyngepluk.
 
--   **Lokationsvejledninger** – Angiv, hvor du kan plukke varer fra, og hvor du kan placere dem.
+- **Lokationsvejledninger** – Angiv, hvor du kan plukke varer fra, og hvor du kan placere dem.
 
--   **Menupunkter i mobilenhed** – Konfigurer et menupunkt på en mobilenhed til at bruge eksisterende arbejde, der er pålagt ved hjælp af klyngepluk. Du skal tilføje menupunktet til en mobilenhedmenu, så den vises på mobilenheder.
+- **Menupunkter i mobilenhed** – Konfigurer et menupunkt på en mobilenhed til at bruge eksisterende arbejde, der er pålagt ved hjælp af klyngepluk. Du skal tilføje menupunktet til en mobilenhedmenu, så den vises på mobilenheder.
 
--   **Parametre til lokationsstyring** – Angiv den nummerserie, der skal bruges, hvis du vil generere id'er til klynger.
+- **Parametre til lokationsstyring** – Angiv den nummerserie, der skal bruges, hvis du vil generere id'er til klynger.
 
 ## <a name="set-up-a-cluster-profile"></a>Konfigurere en klyngeprofil
 
 Du kan konfigurere en klyngeprofil på følgende måde:
 
-1.  Klik på **Lokationsstyring** \> **Opsætning** \> **Mobilenhed** \> **Klyngeprofiler**.
+1. Klik på **Lokationsstyring** \> **Opsætning** \> **Mobilenhed** \>  **Klyngeprofiler**.
 
-2.  Klik på **Ny** for at oprette en ny profil.
+1. Klik på **Ny** for at oprette en ny profil.
 
-3.  Klik på **Opret klynge** og under **Klyngesortering**, skal du klikke på **Ny** for at konfigurere sorteringskriterier for klyngen. Sorteringskriteriet styrer den rækkefølge, som arbejderen skal udføre plukkearbejdet i. Du kan tilføje lige så mange kriterier, der er behov for.
+1. Klik på **Opret klynge** og under **Klyngesortering**, skal du klikke på **Ny** for at konfigurere sorteringskriterier for klyngen. Sorteringskriteriet styrer den rækkefølge, som arbejderen skal udføre plukkearbejdet i. Du kan tilføje lige så mange kriterier, der er behov for.
 
-4.  I feltet **Løbenummer** skal du angive et nummer for at definere den rækkefølge, som sorteringskriterierne behandles i.
+1. I feltet **Løbenummer** skal du angive et nummer for at definere den rækkefølge, som sorteringskriterierne behandles i.
 
-5.  Vælg det felt, der skal bestemme sorteringen, i feltet **Feltnavn**. Hvis du f.eks. vælger **WMSLocationId**, sorteres arbejdet efter den lokation.
+1. Vælg det felt, der skal bestemme sorteringen, i feltet **Feltnavn**. Hvis du f.eks. vælger **WMSLocationId**, sorteres arbejdet efter den lokation.
 
-6.  Vælg en af følgende indstillinger i feltet **Sortering**.
+1. Vælg en af følgende indstillinger i feltet **Sortering**.
 
 | **Indstilling**     | **Beskrivelse**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af d
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Konfigurer varekontrol med klyngepluk
 
-1.  I et menupunkt på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse: **Lokationsstyring** \> **Lokationsstyring** \> **Opsætning** \> **Mobilenhed** \> **Menupunkter i mobilenhed**.
+1. I et menupunkt på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse:  **Lagerstedsstyring** \> **Lagerstedsstyring** \> **Opsætning** \>  **Mobilenhed** \> **Menupunkter i mobilenhed**.
 
-2.  Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden. Indstillingen **Bekræftelse af produkt** gør det muligt at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.
+1. Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden. Indstillingen **Bekræftelse af produkt** gør det muligt at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.

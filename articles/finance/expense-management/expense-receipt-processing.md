@@ -3,7 +3,7 @@ title: Behandling af udgiftskvittering
 description: Dette emne indeholder oplysninger om behandling af kvitteringer med brug af optisk tegngenkendelse (OCR). Denne funktion er beregnet til at forbedre brugeroplevelsen, når der oprettes udgiftsrapporter i Microsoft Dynamics 365 Finance.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248957"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378225"
 ---
 # <a name="expense-receipt-processing"></a>Behandling af udgiftskvittering
 
@@ -36,24 +36,24 @@ Udgiftsregistrering er blevet forbedret via indførelsen af OCR-behandling (opti
 
 ## <a name="usage-examples"></a>Eksempler på anvendelse
 
-- **Tilknyt automatisk kvitteringer, der indeholder kreditkorttransaktioner, når der oprettes en udgiftsrapport.**
+Hvis du automatisk vil vedhæfte kvitteringer, der indeholder kreditkorttransaktioner, når der oprettes en udgiftsrapport, skal du gøre følgende:
 
-    1. Åbn arbejdsområdet **Udgiftsstyring**.
-    2. Kontroller under fanen **Kvitteringer**, at der findes ikke-tilknyttede kvitteringer. Du kan også overføre kvitteringer under fanen **Kvitteringer**.
-    3. Under fanen **Udgifter** skal du kontrollere, at der findes ikke-tilknyttede udgifter. Udgiftsadministratoren importerer typisk disse udgifter fra udbyderen af kreditkortet.
-    4. Vælg **Ny udgiftsrapport**. Bemærk, at du nu også kan medtage udgifter og kvitteringer, når du opretter en udgiftsrapport. Hvis du tilføjer både udgifter og kvitteringer, udløses automatisk afstemning af kvitteringer med udgifter.
+  1. Åbn arbejdsområdet **Udgiftsstyring**.
+  2. Kontroller under fanen **Kvitteringer**, at der findes ikke-tilknyttede kvitteringer. Du kan også overføre kvitteringer under fanen **Kvitteringer**.
+  3. Under fanen **Udgifter** skal du kontrollere, at der findes ikke-tilknyttede udgifter. Udgiftsadministratoren importerer typisk disse udgifter fra udbyderen af kreditkortet.
+  4. Vælg **Ny udgiftsrapport**. Bemærk, at du nu også kan medtage udgifter og kvitteringer, når du opretter en udgiftsrapport. Hvis du tilføjer både udgifter og kvitteringer, udløses automatisk afstemning af kvitteringer med udgifter.
 
-- **Opret en udgift, eller afstem en udgift fra en kvittering.**
+Hvis du opretter en udgift eller afstemmer en udgift fra en kvittering, skal du gøre følgende:
 
-    1. I en udgiftsrapport skal du under fanen **Kvitteringer** tilknytte en kvittering ved at vælge **Tilføj kvitteringer**.
-    2. Bemærk indstillingerne **Opret** og **Afstem** under det overførte billede af kvitteringen.
+  1. I en udgiftsrapport skal du under fanen **Kvitteringer** tilknytte en kvittering ved at vælge **Tilføj kvitteringer**.
+  2. Bemærk indstillingerne **Opret** og **Afstem** under det overførte billede af kvitteringen.
 
-        - Vælg **Opret** for at oprette en manuelt indtaste udgiftstransaktion, og indsæt de værdier, der er udtrukket fra kvitteringen.
-        - Hvis du vælger **Afstem**, forsøger systemet at afstemme en eksisterende udgift med kvitteringen.
+      - Vælg **Opret** for at oprette en manuelt indtaste udgiftstransaktion, og indsæt de værdier, der er udtrukket fra kvitteringen.
+      - Hvis du vælger **Afstem**, forsøger systemet at afstemme en eksisterende udgift med kvitteringen.
 
 ## <a name="installation"></a>Installation
 
-Denne funktion fungerer sammen med funktionen **Udgiftsrapporter nyfortolkede** for at gøre udgiftsangivelsesoplevelsen mere enkel.
+Denne funktion fungerer sammen med funktionen **Udgiftsrapporter nyfortolkede** for at gøre udgiftsangivelsesoplevelsen mere enkel. Denne funktion er kun tilgængelig for miljøer på niveau 2 +, hvilket er Sandkasse og Produktion.
 
 Hvis du vil bruge disse avancerede udgiftsfunktioner, skal du installere tilføjelsesprogrammet til Udgiftsstyring-tjeneste til Microsoft Dynamics 365 Finance, og aktivere funktionerne i din forekomst. Du kan få adgang til tilføjelsesprogrammet fra dit projekt i Microsoft Dynamics Lifecycle Services (LCS).
 

@@ -3,7 +3,7 @@ title: Udgående lagerhandling i POS
 description: I dette emne beskrives egenskaberne for den udgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123916"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384123"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -117,6 +117,18 @@ I visningen **Fuld ordreliste** kan du manuelt vælge en linje på listen og der
 ### <a name="over-delivery-shipping-validations"></a>Leveringsvalideringer for overlevering
 
 Valideringer sker under modtagelsesprocessen for dokumentlinjerne. De indeholder valideringer for overlevering. Hvis en bruger forsøger at modtage mere lager, end der blev bestilt på en indkøbsordre, men overlevering ikke er konfigureret, eller det modtagne antal overskrider den tolerance for overlevering, der er konfigureret for indkøbsordrelinjen, modtager brugeren en fejl og det er ikke tilladt at modtage for stort et antal.
+
+### <a name="underdelivery-close-lines"></a>Lukkelinjer ved underlevering
+
+I Commerce version 10.0.12 blev der tilføjet en funktionalitet, så POS-brugere kan lukke eller annullere det resterende antal under udgående ordreforsendelse, hvis det udgående lagersted bestemmer, at det fulde antal, der er anmodet om, ikke kan leveres. Antal kan også lukkes eller annulleres senere. Hvis du vil bruge denne funktion, skal firmaet være konfigureret til at tillade underlevering af flytteordrer. Derudover skal der defineres en underleveringsprocent til flytteordrelinjen.
+
+Hvis du vil konfigurere firmaet, så der tillades underlevering af flytteordrer, skal du i Commerce Headquarters gå til **Lagerstyring \> Opsætning \> Parametre til lager- og lagerstedsstyring**. På siden **Parametre til lager- og lokationsstyring** skal du under fanen **Flytteordrer** aktivere parameteren **Accepter underlevering**. Kør derefter distributionsplanlægningsjobbet **1070** for at synkronisere parameterændringerne til din butikskanal.
+
+Underleveringsprocenter for en flytteordrelinje kan foruddefineres for produkter som del af produktkonfigurationen i Commerce Headquarters. Alternativt kan de angives eller overskrives på en bestemt flytteordrelinje via Commerce Headquarters.
+
+Når en organisation har afsluttet konfigurationen af flytteordren med underlevering, vil brugerne få vist en ny indstilling **Luk restantal** i ruden **Detaljer**, når de vælger en udgående flytteordrelinje via handlingen **Udgående handlinger** i POS. Når brugere derefter fuldfører forsendelsen ved at bruge processen **Afslut opfyldelse**, kan de sende en anmodning til Commerce Headquarters om at annullere det resterende ikke-afsendte antal. Hvis en bruger vælger at lukke restantallet, foretager Commerce en validering for at kontrollere, at det antal, der annulleres, er inden for den procentvise tolerance, der er defineret på flytteordrelinjen. Hvis underleveringstolerancen overskrides, modtager brugeren en fejlmeddelelse og kan ikke lukke restantallet, før det tidligere afsendte antal og "Send nu"-antal opfylder eller overholder tolerancen for underleveringen.
+
+Når forsendelsen er blevet synkroniseret med Commerce Headquarters, opdateres de antal, der er defineret i feltet **Afsend nu** for flytteordrelinjen i POS, til en status som afsendt i Commerce Headquarters. Alle ikke-afsendte antal, der tidligere ville være anset for at være antal for "Resterende forsendelse" *dvs. antal, der skal leveres senere), i stedet anses for at være annullerede antal. Antallet for "Resterende forsendelse" for flytteordrelinje er angivet til **0** (nul), og linjen betragtes som fuldt afsendt.
 
 ### <a name="shipping-location-controlled-items"></a>Afsende placeringsstyrede varer
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaab2093eb2531b63f27717d828f7064a8f9ed1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e45c80718c73ad785643c2a5fc0e712b291104d5
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207502"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383107"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Konfigurer et indkøbskategorihierarki
 
@@ -31,7 +31,7 @@ Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorih
 
 ## <a name="add-a-new-procurement-category"></a>Tilføj en ny indkøbskategori
 1. Gå til **Navigationsrude > Moduler > Indkøb og forsyning > Konsignation > Indkøbskategorier**.
-2. Vælg **Rediger kategorihierarki** i handlingsruden. Det aktuelle indkøbskategorihierarki vises i venstre side af siden. Du er ved at ændre hierarkiet.  
+2. Gå til handlingsruden, og vælg **Rediger kategorihierarki**. Det aktuelle indkøbskategorihierarki vises i venstre side af siden. Du er ved at ændre hierarkiet.  
 3. Vælg **Ny kategorinode** i handlingsruden. Systemet vælger øverste node som standard. Hvis du kører denne procedure som en opgaveguide, kan du klikke på knappen Lås op og vælge en anden overordnet node for at indsætte en ny node. Når det er gjort, skal du låse opgaveguiden igen og derefter klikke på Ny kategorinode.  
 4. Skriv en værdi i feltet **Navn**.
 5. Indtast en værdi i feltet **Beskrivelse**.

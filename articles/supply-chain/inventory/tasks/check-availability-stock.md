@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e76c123ffbeb33cbc3ba01b4b2758208ed0c445f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 66b6b365958820a76f733df5eb2aabf6c3c4ebac
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204211"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383487"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrollere tilgængelighed af lagerbeholdning
 
@@ -35,7 +35,7 @@ Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponi
 2. Vælg rækken **Varenummer**. Hvis du vil forespørge om den disponible lagerbeholdning efter varenummer, skal du markere den række, hvor tabellen er angivet til **Disponibel lagerbeholdning** og Felt er angivet til **Varenummer**.
 3. Vælg den vare, du vil forespørge på, i feltet **Kriterier**. Hvis du bruger demodatafirmaet USMF, kan du vælge 'M9201'.  
 4. Klik på **OK**.
-5. Klik på **Dimensioner** i **handlingsruden**. Med fanen **Dimensioner** kan du vælge, hvor mange oplysninger du vil se om den disponible lagerbeholdning. Hvis du har brug for data vedrørende reservation, skal du få vist alle lagerdimensioner for de varer, der bruger avancerede lagerstedsprocesser (WHS).
+5. Klik på **Dimensioner** i **handlingsruden**. Med fanen **Dimensioner** kan du vælge, hvor mange oplysninger du vil se om den disponible lagerbeholdning. Hvis du har brug for data vedrørende reservation, skal du få vist alle lagerdimensioner for de varer, der bruger avancerede lagerstedsprocesser (WMS).
 6. Klik på **OK**.
 7. Klik på **Relaterede oplysninger** i **handlingsruden**. Hvis du ikke kan se denne indstilling, skal du muligvis klikke på ellipseknappen (...) for at få vist yderligere indstillinger i handlingsruden.
 8. Klik på **Leveringsoversigt**. Fanen **Leveringsoversigt** indeholder leveringsoplysninger for en bestemt vare, som disponibelt antal, leveringstid og kreditoroplysninger.  

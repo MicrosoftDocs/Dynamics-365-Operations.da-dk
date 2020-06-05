@@ -3,7 +3,7 @@ title: Beregning af lagertilgængelighed for detailkanaler
 description: I dette emne beskrives de indstillinger, der er tilgængelige for visning af butikkens og onlinekanalernes disponible lager.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113914"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379230"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregning af lagertilgængelighed for detailkanaler
 
@@ -50,12 +50,7 @@ Begge API'er henter data fra Commerce-serveren og giver en forkalkulation af det
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Introduktion til beregnet lagertilgængelighed i e-Commerce
 
-Før du bruger de to API'er, der er nævnt tidligere, skal du foretage en parameterændring i Commerce Headquarters for at sikre, at det øjebliksbillede af lagerværdier, som Commerce Headquarters beregner ved hjælp af jobbet **Produkttilgængelighed**, angiver data i de korrekte tabeller.
-
-Følg disse trin for at indstille parametrene.
-
-1. Gå til **Retail og Commerce \> Konfiguration af Headquarters \> Parametre \> Delte Commerce-parametre**.
-1. På fanen **Lager** i sektionen **Produkttilgængelighedsjobbet** og vælg **Brug optimeret proces for Produkttilgængelighedsjobbet**. Denne indstilling sikrer, at den optimale funktionsopsætning bruges til at beregne kanalens tilgængelige lager via Commerce-serveren.
+Før du bruger de to API'er, der er nævnt tidligere, skal du aktivere funktionen **Beregning af optimeret produkttilgængelighed** via arbejdsområdet **Funktionsstyring** i Commerce Headquarters.
 
 Før API'erne kan beregne det bedst mulige estimat over lagertilgængelighed for en vare, skal et periodisk øjebliksbillede af lagertilgængeligheden fra Commerce Headquarters behandles og sendes til den kanaldatabase, som e-Commerce Scale Unit bruger. Øjebliksbilledet repræsenterer de oplysninger, som Commerce Headquarters har om lagertilgængeligheden for en bestemt kombination af et produkt eller en produktvariant og et lagersted. Det kan indeholde lagerreguleringer eller -bevægelser, der er forårsaget af lagerkvitteringer eller forsendelser eller andre processer, der udføres i Commerce Headquarters, og som e-Commerce-kanalen kun har oplysninger om på grund af synkroniseringsprocessen.
 
@@ -85,20 +80,15 @@ Når kanalsideberegningen er korrekt konfigureret og administreret, kan det give
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Introduktion til beregnet lagertilgængelighed på en POS-kanalside
 
-Hvis du vil bruge beregningslogikken for kanalsiden og deaktivere realtids servicekald til lagersøgninger fra POS-programmet, skal du først foretage to parameterændringer. Du skal derefter synkronisere ændringerne med kanalen via distributionsplanlægningsprocessen.
+Hvis du vil bruge beregningslogikken for kanalsiden og deaktivere realtidstjenesteopkald for lageropslag fra POS-programmet, skal du først aktivere funktionen **Beregning af optimeret produkttilgængelighed** via arbejdsområdet **Funktionsstyring** i Commerce Headquarters. Ud over at aktivere funktionen skal du foretage ændringer af **funktionalitetsprofilen**.
 
-Følg disse trin for at indstille det første parameter.
-
-1. Gå til **Retail og Commerce \> Konfiguration af Headquarters \> Parametre \> Delte Commerce-parametre**.
-1. På fanen **Lager** i sektionen **Produkttilgængelighedsjobbet** og vælg **Brug optimeret proces for Produkttilgængelighedsjobbet**. Denne indstilling sikrer, at den optimale funktionsopsætning bruges til at beregne kanalens tilgængelige lager via Commerce-serveren.
-
-Følg disse trin for at indstille det andet parameter.
+Benyt følgende fremgangsmåde for at ændre **funktionalitetsprofilen**:
 
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**.
 1. Vælg en funktionalitetsprofil.
 1. I oversigtspanelet **Funktioner** i sektionen **Beregning af disponibelt lager** skal du ændre værdien i feltet **Metode til beregning af disponibelt lager** fra **Realtidstjeneste** til **Kanal**. Alle funktionalitetsprofiler anvender som standard realtidstjenestekald. Du skal derfor ændre værdien i dette felt, hvis du vil bruge kanalsidens beregningslogik. Alle de detailbutikker, der er kædet sammen med den valgte funktionalitetsprofil, påvirkes af ændringen.
 
-Følg disse trin for at opdatere serverne.
+Du skal derefter synkronisere ændringerne af kanalen ved hjælp af processen for distributionsplanlægning ved at udføre følgende trin:
 
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**.
 1. Kør jobbet **1070** (**Kanalkonfiguration**).

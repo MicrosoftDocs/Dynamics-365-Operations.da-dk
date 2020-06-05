@@ -1,9 +1,9 @@
 ---
 title: Definer udgiftspolitikker
 description: Du kan definere udgiftspolitikker, som medarbejderne skal følge, når de registrerer og sender rejserekvisitioner og udgiftsrapporter i Microsoft Dynamics 365 Finance.
-author: ryansandness
+author: suvaidya
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3b4a8f6cf74bb1fe7e53a4dfdd607f604e16e3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22504e0e26c025d117f29dee3b59b41d508e7724
+ms.sourcegitcommit: 4f90b9ddedf312e75a714e0ec7f7ee5fd43cac6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187446"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3389709"
 ---
 # <a name="define-expense-policies"></a>Definer udgiftspolitikker
 
@@ -45,9 +45,10 @@ Du kan definere tre typer politikker:
  - Justering – kræver, at medarbejderen eller en leder angiver en begrundelse for, hvorfor politikkens beløb er overskredet, inden udgiftsrapporten eller rejserekvisitionen sendes.        
 
 ## <a name="policy-tips"></a>Tip om politik
-Her er nogle få forslag, der kan hjælpe dig med at oprette nye politikker for udgiftsstyring. 
+Her er nogle få forslag, der kan hjælpe dig, når du opretter nye politikker for udgiftsstyring. 
 * Politikker er datostyrede og træder ikke i kraft, hvis politikken oprettes med en dato efter den dato, hvor udgiften opstod. Hvis du f.eks. opretter en ny politik i dag for at gennemtvinge en maksimal måltidsudgift på $50, kontrolleres eventuelle eksisterende udgifter, der er angivet pr. i går, ikke med denne politik.
 * Når du opretter en politik for en udgiftskategori, der kan specificeres, skal du overveje at tilføje en betingelse for udgiftslinjetypen. Visse politikker, som f.eks. kræver en kvittering, giver muligvis ikke mening for specificerede linjer og bør kun anvendes på hovedlinjen eller en ikke-specificeret linje. 
+* Politikker for udgiftsstyring evalueres som standard i forhold til kildeenheden. I forbindelse med interne scenarier kan du angive den politik, der skal evalueres i forhold til destinationsenheden (låneenheden) i stedet. Hvis du vil køre politikkerne i forhold til destinationsenheden, skal du aktivere funktionen "Evaluere udgiftspolitik i forhold til juridisk enhed for udlån" i arbejdsområdet **Funktionsstyring**.
 
 ## <a name="when-to-evaluate-policies"></a>Hvornår politikker skal evalueres
 

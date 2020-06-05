@@ -16,12 +16,12 @@ ms.search.industry: public sector
 ms.author: v-alpavk
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3aecd924ee47a0a722d0a62f6b96453011d94b87
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 950bffc1f657c7237d029303684fc92dff6f23c8
+ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207821"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3338321"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 
@@ -32,36 +32,44 @@ Når dit kontor har sendt en tilbudsanmodning, har leverandørerne nogle gange s
 Brugerne kan udgive svar på leverandørspørgsmål mere end én gang. Kreditorer kan ikke længere postere spørgsmål, når en leverandør er valgt, og tilbudsanmodningen er tildelt, eller når skæringsdatoen for spørgsmål er nået.
 
 ## <a name="setting-up-for-vendor-questions"></a>Opsætning af leverandørspørgsmål
+
 Når du opretter en tilbudsanmodning, bestemmer du, om leverandører kan stille spørgsmål til tilbudsanmodningen.
+
 1. Gå til **Indkøb og forsyning > Tilbudsanmodninger**, og klik på **Ny > Tilbudsanmodning**. 
-2. På siden **Ny tilbudsanmodning** skal **Hoved** angives til **Indstillinger for leverandørspørgsmål** for at tillade spørgsmål før en bestemt dato.
-- Angiv indstillingen **Tillad leverandørspørgsmål** til **Ja**, så leverandørerne kan skrive spørgsmål. Brugerne kan angive og besvare spørgsmål og udpege ofte stillede spørgsmål til udgivelse for leverandører, når tilbudsanmodningen er sendt til leverandørerne.
-3. Valgfrit: Definer feltet **Skæringsdato**, hvor spørgsmål senest skal indsendes. Hvis der ikke angives en skæringsdato, accepteres spørgsmålene, så længe tilbudsanmodningen er åben og accepterer bud.
-4. Klik på **Gem** for at gemme tilbudsanmodningen.
-5. Klik på **Send** for at sende tilbudsanmodningen til leverandører.
+1. På siden **Ny tilbudsanmodning** skal **Hoved** angives til **Indstillinger for leverandørspørgsmål** for at tillade spørgsmål før en bestemt dato.
+1. Angiv indstillingen **Tillad leverandørspørgsmål** til **Ja**, så leverandørerne kan skrive spørgsmål. Brugerne kan angive og besvare spørgsmål og udpege ofte stillede spørgsmål til udgivelse for leverandører, når tilbudsanmodningen er sendt til leverandørerne.
+1. Valgfrit: Definer feltet **Skæringsdato**, hvor spørgsmål senest skal indsendes. Hvis der ikke angives en skæringsdato, accepteres spørgsmålene, så længe tilbudsanmodningen er åben og accepterer bud.
+1. Klik på **Gem** for at gemme tilbudsanmodningen.
+1. Klik på **Send** for at sende tilbudsanmodningen til leverandører.
 
 ## <a name="entering-and-replying-to-vendor-questions"></a>Angive og besvare leverandørspørgsmål
+
 Leverandører skriver spørgsmål i **Kreditorsamarbejde > Bud på tilbudsanmodning**, oversigtspanelet **Leverandørspørgsmål**. Spørgsmålet er kun synligt for leverandøren og brugerne.
 
 ## <a name="entering-a-vendor-question"></a>Angive et leverandørspørgsmål
+
 1. I Kreditorsamarbejde skal du på siden **Bud på tilbudsanmodning** klikke på **Spørgsmål og svar** og derefter klikke på **+ Stil et spørgsmål**.
 
-[Bemærk!] Alternativt kan en bruger skrive spørgsmål til en leverandør på siden **Tilbudsanmodning** ved at klikke **Administrer svar**, **Rediger svar på tilbudsanmodning** og derefter klikke på **Spørgsmål og svar**.
+    > [!NOTE]
+    > Alternativt kan en bruger skrive spørgsmål til en leverandør på siden **Tilbudsanmodning** ved at klikke **Administrer svar**, **Rediger svar på tilbudsanmodning** og derefter klikke på **Spørgsmål og svar**.
 
 2. Skriv teksten til spørgsmålet i feltet **Spørgsmål**.
 3. Klik på **Send**. Gentag trin 1-3 for at tilføje et spørgsmål.
 4. Når du er færdig, skal du klikke på **Gem** for at gemme dine spørgsmål.
 
 ## <a name="replying-to-a-single-vendor"></a>Besvare en enkelt leverandør
+
 Spørgsmål og svar er kun synlige for leverandøren og brugerne.
+
 1. På siden **Tilbudsanmodning** skal du klikke på **Spørgsmål og svar** for at åbne siden **Spørgsmål og svar**.
-2. Klik på **Rediger**.
+1. Klik på **Rediger**.
 1. Indtast tekst i **Svar**-feltet for at svare på leverandørspørgsmålet.
-2. Markér feltet **Direkte svar**.
-3. Klik på **Gem** for at gemme svarene.
-4. Klik på **Send svar** for at sende svarene til leverandøren.
+1. Markér feltet **Direkte svar**.
+1. Klik på **Gem** for at gemme svarene.
+1. Klik på **Send svar** for at sende svarene til leverandøren.
 
 ## <a name="replying-to-all-vendors"></a>Besvare alle leverandører
+
 Hvis du modtager samme spørgsmål fra flere leverandører, kan du gruppere spørgsmålene og reagere med det samme svar. Alle leverandører modtager en besked, når de ofte stillede spørgsmål og svar udgives. Leverandørerne og alle, der har adgang til tilbudsanmodningen, kan få vist oversigten over spørgsmål og svar.
 
 1. På siden **Tilbudsanmodning** skal du klikke på **Spørgsmål og svar** for at åbne siden **Spørgsmål og svar**.
@@ -75,5 +83,7 @@ Hvis du modtager samme spørgsmål fra flere leverandører, kan du gruppere spø
 9. Klik på **Send svar** for at sende svarene til leverandørerne.
 
 ## <a name="changing-rfq-to-allow-or-disallow-questions"></a>Ændre tilbudsanmodning for at tillade eller forbyde spørgsmål
+
 Du kan foretage ændringer for at tillade eller ikke tillade spørgsmål til tilbudsanmodninger, indtil tilbudsanmodningen er belønnet. Du kan også udvide eller forkorte den tidsramme, som leverandørerne kan indsende spørgsmål i.
-I forbindelse med publicerede tilbudsanmodninger skal du redigere en tilbudsanmodning for at tillade eller ikke tillade leverandørspørgsmål eller justere tidsrammen for spørgsmål. 
+I forbindelse med publicerede tilbudsanmodninger skal du redigere en tilbudsanmodning for at tillade eller ikke tillade leverandørspørgsmål eller justere tidsrammen for spørgsmål.
+
