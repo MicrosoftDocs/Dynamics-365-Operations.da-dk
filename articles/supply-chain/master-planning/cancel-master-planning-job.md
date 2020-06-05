@@ -3,7 +3,7 @@ title: Annuller et varedisponeringsjob
 description: I dette emne beskrives det, hvordan du kan annullere et aktivt planlægningsjob, der bruger den indbyggede planlægningsfunktion.
 author: ChristianRytt
 manager: tfehr
-ms.date: 01/10/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 08dd612d9fb01ba2db6d4fcc7db9507a41a4b29f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e38b1bb84414dde603dbf5bcda0e8253a12e40b
+ms.sourcegitcommit: 78a1aa37f9a1565135b139e36501b759e7b2f849
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203911"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3374790"
 ---
 # <a name="cancel-a-master-planning-job"></a>Annuller et varedisponeringsjob
 
@@ -51,4 +51,5 @@ Disse bør kun anvendes hvis annulleringen af varedisponeringsjobbet fra siden *
 2. Hvis job-ID'et ikke fremgår af listen, skal du klikke på **Skift til udvidet formular**, ellers skal du fortsætte med næste trin.
 3. Åbn batchjobbet. Klik på **Opgave-ID'et** for batchjobbet med de opgaver, du vil afslutte.
 4. Vælg hvilke opgaver, der skal afsluttes, i **Batchopgaver**.
-5. I oversigtspanelet **Batchopgaver** skal du klikke på **Afbryd**.
+5. Klik på **Skift status**, vælg **Annuller**, og klik på **OK**.
+6. I oversigtspanelet **Batchopgaver** skal du klikke på **Afbryd**.

@@ -1,9 +1,9 @@
 ---
 title: Måleenhedskonvertering pr. produktvariant
-description: Dette emne beskriver, hvordan måleenhedskonverteringer kan konfigureres for produktvarianter.
+description: Dette emne beskriver, hvordan du konfigurerer måleenhedskonverteringer for produktvarianter. Emnet indeholder et eksempel på opsætningen.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204487"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382791"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måleenhedskonvertering pr. produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan måleenhedskonverteringer kan konfigureres for produktvarianter. Emnet indeholder et eksempel på opsætningen.
+Dette emne beskriver, hvordan du konfigurerer måleenhedskonverteringer for forskellige produktvarianter.
 
-Denne funktion gør det muligt for virksomheder at definere forskellige enhedsomregninger mellem varianterne af det samme produkt. I dette emne bruges følgende eksempel. Et firma sælger T-shirts i størrelse lille, mellem, stor og ekstra stor. Disse T-shirts er defineret som et produkt, og de forskellige størrelser er defineret som varianter af produktet. T-shirts er pakket i kasser, og der kan være fem T-shirts i en kasse med undtagelse af de ekstra store, hvor der er kun plads til fire T-shirts. Virksomheden ønsker at spore de forskellige varianter af sine T-shirts i enheden **Styk**, men sælger T-shirts i enheden **Kasser**. Konverteringen mellem lagerenheden og salgsenheden er 1 kasse = 5 stk. undtagen varianten ekstra stor, hvor konverteringen er 1 kasse = 4 styk.
+I stedet for at oprette flere individuelle produkter, der skal vedligeholdelse, kan du bruge produktvarianter til at oprette variationer af et enkelt produkt. En produktvariant kan f.eks. være en t-shirt af en given størrelse og farve.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurere et produkt til enhedsomregning pr. variant
+Tidligere kunne enhedsomregninger kun konfigureres på produktmasteren. Derfor har alle produktvarianter de samme regler for enhedsomregning. Men når funktionen *Enhedsomregninger for produktvarianter*, er slået til, hvis t-shirts sælges i kasser, og antallet af t-shirts, der kan pakkes i en kasse, afhænger af størrelsen på T-shirts, kan du nu konfigurere enhedsomregninger mellem de forskellige t-shirt-størrelser og de kasser der bruges til pakning.
 
-Produktvarianter kan kun oprettes for produkter af **produktundertypen**: **Produktmaster**. Du kan finde flere oplysninger i [Oprette en produktmaster](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
 
-Funktionen er ikke aktiveret for produkter, der er konfigureret til fastvægtprocesser. 
+Hvis du ikke allerede kan se denne funktion i dit system, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Enhedsomregninger for produktvarianter*.
 
-Når produktmasteren er oprettet med frigivne produktvarianter, kan du angive enhedsomregninger pr. variant. Du kan finde menupunktet, hvor du kan åbne siden til enhedsomregning i forbindelse med et produkt eller en produktvariant på følgende sider.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurere et produkt til enhedsomregning pr. variant
 
--   Siden **Produktdetaljer**
--   Siden **Oplysninger om frigivne produkter**
--   Siden **Frigivne produktvarianter**
+Produktvarianter kan kun bruges til produkter, der er produktmastere. Du kan finde flere oplysninger i [Oprette en produktmaster](tasks/create-product-master.md). Funktionen *Enhedsomregninger for produktvarianter* er ikke tilgængelig for produkter, der er konfigureret til fastvægtsprocesser.
 
-Når du åbner siden **Enhedsomregning** i forbindelse med en produktmaster eller en frigivet produktvariant, kan du vælge, om du vil definere enhedsomregningen for produktet eller for en produktvariant. Det gør du ved at vælge enten **Produktvariant** eller **Produkt** i feltet **Opret konvertering for**.
+Udfør følgende trin for at konfigurere en produktmaster til at understøtte enhedsomregning pr. variant:
 
-### <a name="product-variant"></a>Produktvariant
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktmastere**.
+1. Opret eller åbn en produktmaster for at gå til siden **Produktdetaljer**.
+1. Angiv indstillingen **Aktivér enhedsomregning** til *Ja*.
+1. Gå til handlingsruden, og vælg **Enhedsomregninger** i gruppen **Opsætning** under fanen **Produkt**.
+1. Siden **Enhedsomregninger** åbnes. Vælg én af følgende faner:
 
-Hvis du vælger **Produktvariant**, kan du vælge, hvilken variant du vil definere enhedsomregning for, i feltet **Produktvariant**.
+    - **Omregninger i klasser** – vælg denne fane for at konvertere mellem enheder, der tilhører samme enhedsklasse.
+    - **Omregninger mellem klasser** – vælg denne fane for at konvertere mellem enheder, der tilhører forskellige enhedsklasse.
 
-### <a name="product"></a>Produkt
+1. Vælg **Ny** for at tilføje en ny enhedsomregning.
+1. Indstil feltet **Opret omregning for** til en af følgende værdier:
 
-Hvis du vælger **Produkt**, kan du konfigurere en enhedsomregning for produktmasteren. Denne enhedsomregning skal gælde for alle produktvarianter uden defineret enhedsomregning.
+    - **Produkt** – hvis du vælger denne værdi, kan du konfigurere en enhedsomregning for produktmasteren. Denne enhedsomregning vil blive brugt som reserve for alle produktvarianter, der ikke er defineret en enhedsomregning for.
+    - **Produktvariant** – hvis du vælger denne værdi, kan du konfigurere en enhedsomregning for en specifik produktvariant. Brug feltet **Produktvariant** til at vælge varianten.
 
-### <a name="example"></a>Eksempel
+    ![Tilføje en ny enhedsomregning](media/uom-new-conversion.png "Tilføje en ny enhedsomregning")
 
-En produktmaster, **T-shirt**, har fire frigivne produktvarianter: lille, mellem, stor og ekstra stor. T-shirts er pakket i kasser, og der kan være fem T-shirts i en kasse med undtagelse af de ekstra store, hvor der er kun plads til fire T-shirts.
+1. Brug de andre felter, der er angivet, til at konfigurere din enhedsomregning.
+1. Vælg **OK** for at gemme den nye enhedsomregning.
 
-Først skal du åbne siden **Enhedsomregning** fra siden Frigivne produktdetaljer for **T-shirt.**
+> [!TIP]
+> Du kan åbne siden **Enhedsomregninger** for et produkt eller en produktvariant fra en af følgende sider:
+> 
+> - Produktdetaljer
+> - Frigivne produktdetaljer
+> - Frigivne produktvarianter
 
-På siden **Enhedsomregning** skal du definere enhedsomregningen for produktvarianten ekstra stor.
+## <a name="example-scenario"></a>Eksempelscenario
 
-| **Felt**             | **Indstilling**             |
-|-----------------------|-------------------------|
-| Opret konvertering for | Produktvariant         |
-| Produktvariant       | T-shirt : : Ekstra stor : : |
-| Fra enhed             | Kasser                   |
-| Faktor                | 4                       |
-| Til enhed               | Styk                  |
+I dette scenarie sælger et firma t-shirts i størrelserne lille, mellem, stor og ekstra stor. Disse t-shirts er defineret som et produkt, og de forskellige størrelser er defineret som varianter af det pågældende produkt. T-shirtene er pakket i kasser. I størrelser lille, mellem og stor kan der være fem t-shirts i hver kasse. Men i størrelsen ekstra stor er der kun plads til fire t-shirts i hver kasse.
 
-De frigivne produktvarianter lille, mellem og stor har samme enhedsomregning mellem enhedens Kasser og styk, hvilket betyder, at du kan definere enhedsomregningen for disse produktvarianter på produktmasteren.
+Virksomheden ønsker at spore de forskellige varianter i enheden *Styk*, men sælger dem i enheden *Kasser*. I størrelserne lille, mellem og stor er omregningen mellem lagerenheden og salgsenheden 1 kasse = 5 stk. I størrelsen ekstra stor er omregningen 1 kasse = 4 styk.
 
-| **Felt**             | **Indstilling** |
-|-----------------------|-------------|
-| Opret konvertering for | Produkt     |
-| Produkt               | T-shirt     |
-| Fra enhed             | Kasser       |
-| Faktor                | 5           |
-| Til enhed               | Styk      |
+1. På siden **Frigivne produktdetaljer** for produktet **T-shirt** skal du åbne siden **Enhedsomregninger**.
+1. På siden **Enhedsomregning** skal du konfigurere følgende enhedsomregning for den frigivning produktvariant **Ekstra stor**.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>Bruge Excel til at opdatere enhedsomregningerne
+    | Felt                 | Indstilling                 |
+    |-----------------------|-------------------------|
+    | Opret konvertering for | Produktvariant         |
+    | Produktvariant       | T-shirt : : Ekstra stor : : |
+    | Fra enhed             | Kasser                   |
+    | Faktor                | 4                       |
+    | Til enhed               | Styk                  |
 
-Hvis et produkt har mange produktvarianter med forskellige enhedsomregninger, er det en god ide at eksportere enhedsomregninger fra siden **Enhedsomregning** til et Excel-regneark, opdatere konverteringerne og derefter publicere dem tilbage til Supply Chain Management.
+1. Da produktvarianterne **Lille**, **Mellem** og **Stor** alle har samme enhedsomregning mellem *Kasse*- og *Styk*-enheder, kan du definere følgende enhedsomregning for dem på produktmasteren.
 
-Muligheden for at eksportere til Excel og publicere ændringerne tilbage til Supply Chain Management aktiveres fra menupunktet **Åbn i Microsoft Office** i handlingsruden på siden **Enhedsomregning**.
+    | Felt                 | Indstilling |
+    |-----------------------|---------|
+    | Opret konvertering for | Produkt |
+    | Produkt               | T-shirt |
+    | Fra enhed             | Kasser   |
+    | Faktor                | 5       |
+    | Til enhed               | Styk  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>Bruge Excel til at opdatere enhedsomregningerne
+
+Hvis et produkt har mange produktvarianter, der har forskellige enhedsomregninger, er det en god ide at eksportere enhedsomregninger til en Microsoft Excel-projektmappe, opdatere dem og derefter udgive dem igen i Dynamics 365 Supply Chain Management.
+
+Hvis du vil eksportere enhedsomregninger til Excel, skal du på siden **Enhedsomregninger** vælge **Åbn i Microsoft Office** i handlingsruden.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Administrere måleenhed](tasks/manage-unit-measure.md)

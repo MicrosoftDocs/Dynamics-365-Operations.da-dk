@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2c13ed20ec86108bcb9edc0d20d53ff98732b9d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 68624a0288f9eaaf8f74b361bb308b8ca3c03b29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204740"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383157"
 ---
 # <a name="create-a-request-for-quotation"></a>Oprette en tilbudsanmodning
 
@@ -67,7 +67,7 @@ Når du har angivet de grundlæggende oplysninger om din tilbudsanmodning, kan d
 7. Indtast eller vælg en værdi i feltet **Kreditorkonto**. Når du har valgt en kreditor, er status Oprettet. Det betyder, at leverandøroplysningerne er gemt i tilbudsanmodningen, men du har ikke sendt tilbudsanmodningen til leverandøren. Du kan føje en leverandør til en tilbudsanmodning uanset leverandørens status.  
 
 ## <a name="send-the-rfq-to-vendors"></a>Send tilbudsanmodningen til kreditorer
-1. Klik på **Send** i **handlingsruden**. Markér de kreditorer på listen, som skal have tilbudsanmodningen, på siden Sender tilbudsanmodning.  
+1. Klik på **Send** i **Handlingsrude**. Markér de kreditorer på listen, som skal have tilbudsanmodningen, på siden Sender tilbudsanmodning.  
 2. Klik på **Udskriv**. I denne dialogboks kan du udskrive tilbudsanmodningen. Hvis du vælger at udskrive et svarark, er indholdet af dette defineret i parametrene for Indkøb og forsyning. Hvis du vil vælge, hvordan du vil udskrive svarark, når du har åbnet dialogboksen Udskriv, skal du klikke på Avancerede udskriftsindstillinger. Der udskrives én tilbudsanmodning for hver kreditor, der indeholder de linjer, der har statussen Oprettet eller Sendt. Annullerede linjer og linjer med registrerede svar udskrives ikke.   
 3. Klik på **Annuller**.
 4. Klik på **OK**.

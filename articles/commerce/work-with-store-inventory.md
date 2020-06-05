@@ -3,7 +3,7 @@ title: Butikslagerstyring
 description: I dette emne beskrives de typer af dokumenter, du kan bruge til at lagerstyring.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,56 +18,54 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3f7f228bbf312a2ccdc96d3e95287898bee01de4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a3e6450c358d12dc62c2ffa20e7ff529be86bbe5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021969"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379253"
 ---
 # <a name="store-inventory-management"></a>Butikslagerstyring
 
 [!include [banner](includes/banner.md)]
 
-Når du arbejder med lager i Dynamics 365 Commerce og bruger POS-programmet, det er vigtigt at bemærke, at POS yder begrænset understøttelse til lagerdimensioner og visse lagervaretyper.
+Når du arbejder med lager i Microsoft Dynamics 365 Commerce og bruger POS-programmet (point of sale), er det vigtigt, at du er opmærksom på, at POS har begrænset understøttelse af visse lagerdimensioner og nogle lagervaretyper. POS-programmet understøtter ikke hele udvalget af varekonfigurationsfaciliteter, der er tilgængelige via varekonfigurationsindstillingerne i Dynamics 365 Supply Chain Management.
 
-POS-løsningen understøtter ikke følgende varekonfigurationer:
+POS-løsningen understøtter i øjeblikket ikke følgende produktdimensioner og varekonfigurationer:
 
-- Styklistevarer (undtagen pakkeprodukter, som anvender nogle komponenter af styklistestrukturen)
+- Konfigurationsproduktdimension og styklistevarer (undtagen detailpakkeprodukter, der bruger visse komponenter i styklistestrukturen)
 - Fastvægtvarer
-- Batchstyrede varer
+- Versionsproduktdimension-styrede varer
 
 POS-programmet understøtter i øjeblikket ikke følgende sporingsdimensioner i POS:
 
 - Batchsporingsdimension
 - Ejerdimension
 
-POS-løsningen har begrænset understøttelse af følgende dimensioner. Begrænset understøttelse angiver, at en POS evt. vil bruge standardværdien for nogle af disse dimensioner i lagerposteringer, der automatisk baseres på konfigurationen af lagersted/butiksopsætning. POS understøtter ikke dimensionerne fuldstændigt på den måde, de understøttes, hvis en salgstransaktion angives manuelt i ERP. 
+POS har begrænset understøttelse af følgende dimensioner. POS kan med andre automatisk angive nogle af disse dimensioner i lagerposteringer baserest på konfigurationen af lagerstedet/butiksopsætningen. POS understøtter ikke dimensionerne fuldstændigt på den måde, de understøttes, hvis en salgstransaktion angives manuelt i Commerce Headquarters. 
 
-- **Lagerstedslokation** – Brugerne har ikke mulighed for at administrere det modtagende lagersteds lokation for varer, der modtages på et butikslager, når butikken ikke er konfigureret til at bruge lokationsstyringsprocessen. En standard modtagelseslokation, der er defineret på butikslagerstedet, bruges til disse varer. Hvis lokationsstyringsprocessen er aktiveret for butikken, udløses der en begrænset support, som beder brugeren om at vælge en modtagelseslokation for hele tilgangen. Varer, der er solgt fra butikken, bliver altid solgt fra standardlokationen, som er defineret i opsætningen af butikkens lagersted. Lokationen for håndtering af returvarer kan styres via standarddefinitionen af returneringsstedet på butikslagerstedet eller baseret på returårsagskoder, som er defineret i politikken for returlokationen.
-- **Id** – Id'er er kun relevante, når **Brug lokationsstyringsprocesser** er aktiveret på varen og butikkens lagersted. Hvis lagervarer modtages på et butikslagersted, hvor lokationsstyringsprocessen er aktiveret, og den lokation, der er valgt for modtagelse af varen, er bundet til en lokationsprofil, der kræver kontrol af id'er, anvender POS-programmet systematisk et id på modtagelseslinjen. Brugere i POS vil ikke kunne ændre eller administrere disse id-data. Hvis det er nødvendigt med fuld styring af id'er, foreslås butikken at bruge WMS mobil-programmet eller ERP-administrationsklienten til at styre modtagelsen af disse varer.
-- **Serienummer** – POS-programmet har begrænset understøttelse af et enkelt serienummer, der skal registreres på en transaktions salgslinje for ordrer, der er oprettet i POS, med serialiserede varer. Dette serienummer bliver ikke valideret mod registrerede serienumre, der allerede findes på lageret. Hvis der oprettes en salgsordre i callcenterkanalen, eller den opfyldes via ERP, og der er registreret flere serienumre på en enkelt salgslinje under opfyldningsprocessen i ERP, kan disse serienumre ikke anvendes eller valideres, hvis en returværdi behandles i POS for disse ordrer.
-- **Lagerstatus** – For varer, der bruger lokationsstyringsprocessen og kræver en lagerstatus, kan dette statusfelt ikke angives eller ændres via POS-programmet. Standardlagerstatussen som defineret i konfigurationen af butikkens lagersted bruges, når varer modtages på lageret.
+- **Lagerstyringssted** – når de bruger de nye POS-handlinger [Indgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) og [Udgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), kan brugerne vælge et lagerstyringssted, som de vil modtage varer til, eller forsende udgående ordrevarer ud fra. Hvis der bruges den forældede handling **Pluk og modtagelse**, er understøttelse af begrænset lokationsstyring tilgængelig for modtagelse og afsendelse af udgående overflytninger. Denne understøttelse er kun tilgængelig, hvis indstillingen **Brug proces til lagerstyringssted** er aktiveret for varen og butikkens lager. En lagerlokation kan ikke bruges i øjeblikket med handlingen **Status** eller **Lagersøgning**.
+- **Nummerplade** – nummerplader er kun relevante, når indstillingen **Brug proces til lagerstyringssted** er aktiveret på varen og butikkens lager. I POS er det sådan, at hvis lageret modtages på en butiks lager sted ved hjælp af **Indgående handling** eller handlingen **Pluk og modtagelse**, hvor processen til lagerstyringsstedet er aktiveret, og hvis den placering, der er valgt til at modtage varen, er knyttet til en lokationsprofil, der kræver nummerpladekontrol, anvender POS-programmet automatisk en nummerplade på modtagelseslinjen. POS-brugere kan ikke ændre eller administrere disse id-data. Hvis det er nødvendigt med fuld styring af id'er, anbefaler via, at butikken bruger [lagerstyringsappen](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) eller administrationsklient til at styre modtagelsen af disse varer.
+- **Serienummer** – POS-programmet giver understøttelse af registrering af et enkelt serienummer på en transaktions salgslinje for ordrer, der er oprettet i POS, og omfatter serialiserede varer. Dette serienummer bliver ikke valideret mod registrerede serienumre, der allerede findes på lageret. Hvis der oprettes en salgsordre i callcenterkanalen, eller den opfyldes via ERP, og der er registreret flere serienumre på en enkelt salgslinje under opfyldningsprocessen i ERP, kan disse serienumre ikke anvendes eller valideres, hvis en returværdi behandles for denne ordre i POS. Når lageret modtages ved hjælp af **Indgående handling**, kan brugere [registrere eller bekræfte de modtagne serienumre](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Lagerstatus** – for varer, der bruger lokationsstyringsprocessen og kræver en lagerstatus, kan dette statusfelt ikke angives eller ændres via POS-programmet. Standardlagerstatussen som defineret i konfigurationen af butikkens lagersted bruges, når varer modtages på lageret.
 
 > [!NOTE]
-> Alle organisationer skal teste varekonfigurationer via POS i udviklings- eller testmiljøer, inden de installeres til produktion. Test dine varer ved at udføre almindelige cash and carry-salgstransaktioner og oprette kundeordrer (hvis relevant) via POS med dine varer. Test skal omfatte kørsel af en fuldstændig redegørelse for bogføringsprocesser i testmiljøet og skal kontrollere, at der ikke er nogen problemer.
+> Alle organisationer skal teste varekonfigurationer via POS i udviklings- eller testmiljøer, inden de installerer disse varekonfigurationer til produktionsmiljøer. Test dine varer ved at bruge dem til at udføre almindelige cash and carry-salgstransaktioner og oprette kundeordrer (hvis relevant) via POS. Du skal også teste POS-opfyldnings- og -lagerprocesser (f.eks. handling med lagertilgang og ordreopfyldelse), før du implementerer nye varekonfigurationer, for at sikre, at POS-programmer kan understøtte dem. Test skal omfatte kørsel af en fuld bogføringsproces for opgørelse i testmiljøet og kontrollere, at der ikke opstår problemer, når der oprettes ordrer for disse varer, og de bogføres i Commerce Headquarters.
 >
-> Hvis varer konfigureres på en måde, der ikke understøttes af POS-programmet, uden grundige test, kan det medføre, at der opstår fejl i dine bogføringsprocesser i produktionen, og at der ikke er nogen nem måde at løse problemet på. Partner- eller kundetilpasninger til programmet kan eventuelt komme i betragtning, så disse bogføringsprocesser kan fuldføres. Hvis tilpasninger ikke er nødvendige, skal organisationen sikre, at produktkonfigurationen af dine produkter er udført på en måde, der understøttes af det POS-program/den ordreoprettelse/bogføring af opgørelsesprocessen, der bruges som standard.
+> Hvis der er konfigureret varer på en måde, som POS-programmet ikke understøtter, og der ikke udføres passende test, kan der opstå datafejl, som ikke er lette at rette, eller som ikke er dækket af standardproduktsupport, under processen til oprettelse af ordrer.
 
 ## <a name="purchase-orders"></a>Indkøbsordrer
 
-Indkøbsordrer oprettes på hovedkontoret. Hvis et lagersted er medtaget i indkøbsordrehovedet, kan ordren modtages i butikken ved hjælp af Modern POS (MPOS) eller Cloud POS via handlingen **Pluk-/tilgang**. Når de antal, der er modtaget i butikken, angives i feltet **Modtag nu** i POS for indkøbsordredokumentet, kan de gemmes lokalt eller allokeres. Hvis du gemmer disse data lokalt, har det ingen indflydelse på lagerbeholdningen. Lagring skal kun udføres, hvis brugeren ikke er klar til at bogføre tilgangen til hovedkontoret og blot har brug for en metode til midlertidigt at gemme de tidligere angivne **Modtag nu**-data. Derved gemmes Modtag nu-dataene lokalt i brugerens kanaldatabase. Når dokumentet er behandlet ved hjælp af **Bekræft**-indstillingen, sendes dataene i **Modtag nu** til hovedkontoret, og indkøbsordretilgangen bogføres. 
+Indkøbsordrer oprettes i Commerce Headquarters. Hvis en butiks lagersted er medtaget i indkøbsordrehovedet eller på indkøbsordrelinjer, kan linjerne modtages i butikken ved hjælp af [Indgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) i POS. 
 
 ## <a name="transfer-orders"></a>Flytteordrer
 
-En flytteordre kan angive, at en bestemt butik er den lokation, som varerne kan afsendes fra, eller den lokation, som lagerbeholdningen skal modtages på. Hvis POS-brugeren er afsenderlagerstedet for en flytteordre, kan vedkommende angive antal for **Afsend nu** fra POS. De data, der angives af afsendelseslageret, kan gemmes lokalt eller allokeres. Når de gemmes lokalt, foretages der ingen opdateringer af dokumentet for flytteordren i hovedkontoret. Lagring skal kun udføres, hvis brugeren ikke er klar til at bogføre forsendelsen til hovedkontoret og blot har brug for en metode til midlertidigt at gemme de tidligere angivne **Afsend nu**-data. Når butikken er klar til at bekræfte forsendelsen, skal du vælge indstillingen **Bekræft**. Derved bogføres forsendelsen af flytteordren i hovedkontoret, så tilgangslagerstedet nu kan modtage imod den. 
-
-Hvis POS-brugeren er tilgangslagerstedet for en flytteordre, kan vedkommende angive antal for **Modtag nu** fra POS. De data, der angives af tilgangslageret, kan gemmes lokalt eller allokeres. Lagring skal kun udføres, hvis brugeren ikke er klar til at bogføre tilgangen til hovedkontoret og har brug for en metode til midlertidigt at gemme de tidligere angivne **Modtag nu**-data. Derved gemmes Modtag nu-dataene lokalt i brugerens kanaldatabase. Når dokumentet er behandlet ved hjælp af **Bekræft**-indstillingen, sendes dataene i **Modtag nu** til hovedkontoret, og flytteordretilgangen bogføres. Det er vigtigt at bemærke, at den modtagende butik bliver begrænset, så det kun er muligt at modtage antal, der er lig med eller mindre end de afsendte antal. Et forsøg på at modtage antal på en flytteordre, der ikke tidligere er afsendt, vil resultere i fejl, og tilgangen bekræftes ikke i hovedkontoret.
+Flytteordrer kan oprettes i Commerce Headquarters eller enten ved hjælp af [Indgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) eller [Udgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) i POS. Brug den **Indgående handling** for POS til at oprette en anmodning om flytteordre for at få lager sendt til butikken fra et andet lagersted eller butikslokalitet. Brug den **Udgående handling** for POS til at oprette en anmodning om flytteordre for at få lager sendt fra butikken til et andet lagersted eller en anden butikslokalitet. Når en flytteordre for en butik er oprettet, kan den pågældende butik administrere modtagelsen af flytteordren via den **Indgående handling** i POS. Hvis butikken sender lager til en anden lokation, bruges den **Udgående handling** i POS til at administrere butikkens proces for udgående forsendelser.
 
 ## <a name="stock-counts"></a>Lagerstatus
 
-Status kan enten være planlagt eller ikke-planlagt. Planlagte statusopgørelser startes i hovedkontoret, der angiver, hvilke varer der skal optælles. Hovedkontoret opretter et optællingsdokument, som kan modtages i butikken, hvor antallet af den disponible beholdning angives i MPOS eller Cloud POS. Ikke-planlagte statusoptællinger startes i en butik, og antal i den disponible lagerbeholdning opdateres i enten i MPOS eller Cloud POS. I modsætning til planlagt status har ikke-planlagt status ikke en foruddefineret liste over varer. Når en status af en af typerne er fuldført, gøres den bindende og sendes til hovedkontoret. På hovedkontoret valideres antallet og bogføres som et særskilt trin.
+Status kan enten være planlagt eller ikke-planlagt. Planlagte statusopgørelser oprettes via Commerce Headquarters ved at oprette et dokument som Optællingskladde , der er knyttet til butikkens lagersted. Denne kladde angiver de varer, der skal optælles. Butikken kan derefter få adgang til disse foruddefinerede optællingskladder og udføre handlinger på dem ved at bruge handlingen **Status** i POS. Butiksbrugere starter en ikke-planlagt status, som det er påkrævet, når de bruger handlingen **Status** i POS. I modsætning til planlagt status har ikke-planlagt status ikke en foruddefineret liste over varer. Når en lagertælling af en af typerne er fuldført i POS, gøres den bindende og sendes til hovedkontoret. På hovedkontoret skal antallet valideres og bogføres i Commerce Headquarters som et separat trin.
 
 ## <a name="inventory-lookup"></a>Lagersøgning
 
-Det aktuelle antal disponible produkter for flere butikker og lagersteder kan ses på siden **Lagersøgning**. Udover den aktuelle disponible beholdning kan det fremtidige disponible tilsagn (DTT) vises for hver enkelt butik. Det gør du ved at vælge den butik, du vil have vist DTT for, og derefter klikke på **Vis butikkens tilgængelighed**.
+Det antal produkter, der i øjeblikket er disponibelt for flere butikker og lagersteder, kan ses på siden **Lagersøgning**. Ud over den aktuelle disponible beholdning kan det fremtidige disponible tilsagn (DTT) vises for hver enkelt butik. Vælg den butik, du vil se DTT-mængder for, og vælg derefter **Vis butikkens tilgængelighed**. Få flere oplysninger om de konfigurationsindstillinger, der er tilgængelige, i afsnittet [Beregne lagertilgængelighed for detailkanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).

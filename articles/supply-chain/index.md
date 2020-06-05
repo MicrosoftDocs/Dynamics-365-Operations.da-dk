@@ -1,5 +1,5 @@
 ---
-title: Hjælp-ressourcer til Supply Chain Management
+title: Startside for Supply Chain Management
 description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til Supply Chain Management-funktioner.
 author: josaw1
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
+ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201519"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386381"
 ---
-# <a name="help-resources-for-supply-chain-management"></a>Hjælp-ressourcer til Supply Chain Management
+# <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
@@ -42,6 +42,7 @@ Vælg et funktionsområde, du vil vide mere om.
 - [Omkostningsregnskab](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Omkostningsstyring](cost-management/cost-management-home-page.md)  
 - [Lagerstyring](inventory/inventory-home-page.md)
+- [IoT-intelligens](iot/iot-intelligence-home-page.md)
 - [Varedisponering](master-planning/master-planning-home-page.md)
 - [Indkøb og forsyning](procurement/procurement-sourcing-overview.md)
 - [Administration af produktoplysninger](pim/product-information.md)

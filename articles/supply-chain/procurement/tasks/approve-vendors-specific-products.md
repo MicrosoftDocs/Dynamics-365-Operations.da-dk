@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ccaeea8d0494644b4d55c29a778d9a8239de10b9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207778"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383268"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkende kreditorer til specifikke produkter
 
@@ -33,7 +33,7 @@ Denne fremgangsmåde viser, hvordan du godkender kreditorer for bestemte produkt
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
 4. Udvid oversigtspanelet **Indkøb**. Hvis der ingen primær kreditor vises i feltet **Kreditor**, skal du tilføje denne kreditor som en godkendt kreditor med følgende fremgangsmåde. Noter kreditornummeret ned, hvis der vises et.  
-5. Klik på **Indkøb** i handlingsruden.
+5. Klik på **Køb** i handlingsruden.
 6. Klik på **Konfiguration**.
 7. Klik på **Tilføj**.
 8. Indtast eller vælg en værdi i feltet Kreditor. Vælg den godkendte kreditor. Mindst én af linjerne skal vise den primære leverandør, hvis der var en i produktposten. Hvis du tidligere har noteret kreditornummeret ned, kan du vælge det her.  
@@ -57,7 +57,7 @@ Denne fremgangsmåde viser, hvordan du godkender kreditorer for bestemte produkt
 26. Luk siden.
 27. Gå i navigationsruden til **Moduler > Indkøb og forsyning > Kreditorer > Alle kreditorer**. Du kan også starte fra en kreditor og derefter gå til listen over godkendte produkter for den pågældende kreditorkonto.  
 28. Find og vælg den ønskede post på listen.
-29. Klik på **Indkøb** i handlingsruden.
+29. Klik på fanen **Indkøb** i handlingsruden.
 30. Klik på **Godkendt kreditorliste efter kreditor**.
 31. Luk siden.
 32. Luk siden.

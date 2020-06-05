@@ -3,7 +3,7 @@ title: Startside for lokal installation
 description: Dette emne indeholder oplysninger og links til indhold om lokale installationer.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
-ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
+ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3099724"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367052"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal installation
 
@@ -41,7 +41,6 @@ Du kan installere Dynamics 365 Finance + Operations (i det lokale miljø). Når 
 ## <a name="onboard"></a>Introducer
 - [Konfigurere lokale projekter i Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Konfigurere og installere lokale miljøer (Platformsopdatering 12 og senere)](setup-deploy-on-premises-pu12.md)
-- [Konfigurer og installer lokale miljøer (platformsopdateringer 8 og 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Installere netværksprinterenheder i lokale miljøer](../analytics/install-network-printer-onprem.md)
 - [Konfigurere SQL Server Reporting Services for lokal installationer](../analytics/configure-ssrs-on-premises.md)
 - [Udvikle og installere brugerdefinerede modeller i lokale miljøer](develop-deploy-custom-models-on-premises.md)

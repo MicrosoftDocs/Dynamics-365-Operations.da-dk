@@ -3,7 +3,7 @@ title: Videoer
 description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Finance and Operations-apps, som er tilgængelige på YouTube og andre websteder.
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781844"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367123"
 ---
 # <a name="videos"></a>Videoer 
 
@@ -33,7 +33,7 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 > [!Note]
 > Nogle af de viste videoer blev udgivet under et tidligere produktnavn, men gælder stadig.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer til udvikling og administration af Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer om udvikling og administration af Finance and Operations
 
 ### <a name="data-integration"></a>Dataintegration
 
@@ -55,8 +55,8 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 ### <a name="intelligence"></a>Intelligence
 
 - [Sådan redigerer du en integreret rapport i et analytisk arbejdsområde](https://youtu.be/_8WlwmSggcQ)
-- [Sådan integrerer du PowerBI.com-rapporter i Finance and Operations-apps](https://youtu.be/gGWuNJDoi-M)
-- [Bruge din egen database (BYOD - Bring Your Own Database) i Finance and Operations-apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Sådan integrerer du PowerBI.com-rapporter Finance and Operations-apps](https://youtu.be/gGWuNJDoi-M)
+- [Brug din egen database (BYOD) i Finance and Operations-apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Sådan bruges Power BI-indhold til omkostningsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -76,6 +76,12 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 - [Opdatere data i et produktionsmiljø](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Optagelse af en ny platformsfrigivelse efter Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Bruge telemetri til at overvåge tællere for KPI'er i Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>RSAT (Regression Suite Automation Tool)
+
+- [Sådan bruges arbejdsrutineoptager til at oprette et testeksempel til RSAT (Regression suite automation tool)](https://youtu.be/bBr4BXAxTNI)
+- [Sådan opretter du en testplan i Azure DevOps, du kan bruge sammen med RSAT (Regression suite automation tool)](https://youtu.be/3jIuBleAnQk) 
+- [Sådan bruger du RSAT (Regression Suite Automation Tool)](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videoer til Dynamics 365 Finance

@@ -3,7 +3,7 @@ title: Automatisering af kreditorfaktura
 description: Dette emne forklarer de funktioner, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, tilmed fakturaer, der indeholder vedhæftede filer.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177034"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396003"
 ---
 # <a name="vendor-invoice-automation"></a>Automatisering af kreditorfaktura
 
@@ -61,7 +61,7 @@ En datapakke er arbejdsenheden, der skal sendes til, så fakturahoveder, faktura
 
 Kreditorfakturaens vedhæftede dokument er en ny dataenhed, der indføres i forbindelse med denne funktion. Kreditorfakturahovedets enhed er blevet ændret, så det understøtter vedhæftede filer. Kreditorfakturaens linjeenhed er ikke blevet ændret for denne funktion.
 
-Dette emne give ikke en detaljeret definition af en datapakke. Det forklarer heller ikke, hvordan datapakker oprettes. Du kan finde disse oplysninger i [Struktur for dataenheder og pakker](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Få detaljerede oplysninger om datapakker i [Oversigt over datastyring](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Du kan finde oplysninger om, hvordan du opretter datapakker ved hjælp af arbejdsområdet Datastyring, i [Behandle og forbruge datapakker i Dynamics 365 Finance and Operations-app-løsning](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Du kan hurtigt generere testdata, der indeholder fakturaer og vedhæftede filer, ved at følge disse trin.
 
