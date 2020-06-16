@@ -88,6 +88,8 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (august 2020)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (maj 2020)
@@ -212,9 +214,9 @@
               items:
                 - name: Synkronisere installationsprogrammer med selvbetjening i Dynamics 365 Commerce
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (selvhostet)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Konfigurere og installere Commerce Scale Unit
+                - name: Konfigurere og installere Commerce Scale Unit (selvhostet)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: Konfiguration og installation af Modern POS
                   href: retail-modern-pos-device-activation.md
@@ -604,7 +606,7 @@
               items:
                 - name: Oversigt over produktanbefalinger
                   href: product-recommendations.md
-                - name: Aktivere ADLS i et Dynamics 365 Commerce-miljø
+                - name: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
                   href: enable-ADLS-environment.md
                 - name: Aktivere produktanbefalinger
                   href: enable-product-recommendations.md
@@ -646,8 +648,8 @@
                   items:
                     - name: Butikslagerstyring
                       href: work-with-store-inventory.md
-                    - name: Arbejde med serialiserede varer
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurere lagerbuffere og lagerniveauer
+                      href: inventory-buffers-levels.md
                     - name: Arbejde med serialiserede varer i POS
                       href: pos-serialized-items.md
                     - name: Skubbe produkter fra distributionscenter til butik ved hjælp af centraliseret indkøb
@@ -824,6 +826,8 @@
                   href: authoring-home-overview.md
                 - name: Administrere brugere og roller
                   href: manage-ecommerce-users-roles.md
+                - name: Anvend lagerindstillinger
+                  href: inventory-settings.md
                 - name: Overvejelser om optimering af søgeprogram (SEO) for webstedet
                   href: search-engine-optimization-considerations.md
                 - name: Administrere sikkerhedspolitik for indhold (CSP)
@@ -848,7 +852,9 @@
                       href: select-site-theme.md
                     - name: Arbejde med CSS-tilsidesættelsesfiler
                       href: css-override-files.md
-                    - name: Tilføje en favicon
+                    - name: Arbejde med forudindstillinger for typografi
+                      href: style-presets.md
+                    - name: Tilføje et favoritikon
                       href: add-favicon.md
                     - name: Tilføje en velkomstmeddelelse
                       href: add-welcome-message.md
@@ -932,6 +938,10 @@
                   items:
                     - name: Container-modul
                       href: add-container-module.md
+                    - name: Harmonikamodul
+                      href: add-accordion.md
+                    - name: Fanemodul
+                      href: add-tab.md
                 - name: Marketingmoduler
                   items:
                     - name: Kampagnebannermodul
@@ -978,7 +988,11 @@
                   items:
                     - name: Produktsamlingsmoduler
                       href: product-collection-module-overview.md
-            - name: Søgning
+                - name: Navigationsmoduler
+                  items:
+                    - name: Brødkrummemodul
+                      href: add-breadcrumb.md
+            - name: Søg
               items:
                 - name: Standardlandingsside for kategori og side for søgeresultater
                   href: category-search-page-overview.md
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Retningslinjer for installation af kasseapparater
                   href: localizations/emea-fra-deployment.md
+            - name: Tyskland
+              items:
+                - name: Eksempel på integration af regnskabsregistreringstjeneste i Tyskland
+                  href: localizations/emea-deu-fi-sample.md
             - name: Indien
               items:
                 - name: Integration af moms på varer og ydelser (GST) for kasseapparater
@@ -1184,7 +1202,7 @@
               items:
                 - name: Oprette konfigurationer
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
-                - name: Forberede komponenter i den elektroniske rapporteringsløsning
+                - name: Forberede komponenter i løsningen til elektronisk rapportering
                   items:
                     - name: Designe domænespecifik datamodel
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1496,7 +1514,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
             - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
-            - name: Definere afhængigheden af ER-konfigurationer af andre komponenter
+            - name: Definere afhængigheden af ER-konfigurationer for andre komponenter
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
             - name: Designe en ER-løsning til at bruge økonomiske dimensioner
               items:
@@ -1536,7 +1554,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
                 - name: Redigere og køre formater for at bruge dokumentstyringsfiler i ER-output
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
-            - name: Opdatere applikationsdata ved hjælp af elektronisk rapportering
+            - name: Opdatere programdata ved hjælp af elektronisk rapportering
               items:
                 - name: Generere elektroniske dokumenter og opdatere programdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/commerce/toc.json
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temaindstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Udvide et tema
+                    - name: Udvide et tema for at tilføje moduludvidelser
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Udvide et tema fra et basistema
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Indsætte script
                   items:
@@ -2072,15 +2092,15 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server-udvidelse
               items:
-                - name: Udvide en Retail Server OData-controller
+                - name: Udvide en OData-controller til Commerce Scale Unit
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: Kunde- og forbruger-API'er for Retail Server
+                - name: Kunde og forbruger-API'er for Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Udvide standardmetadatacontroller for Retail Server
+                - name: Udvid standardmetadatacontrolleren for Commerce Scale Unit
                   href: dev-itpro/extend-metadata.md
                 - name: Kalde CRT-tjenesten i offlinetilstand
                   href: dev-itpro/call-crt-service-offline.md
-                - name: Opret en ny Retail Server-udvidelse
+                - name: Oprette en ny Retail Server-udvidelse
                   href: dev-itpro/retail-server-extension.md
                 - name: 'Retail Typescript og C#-proxyer'
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2096,8 +2116,6 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Administrere hemmeligheder for Retail-kanaler
                   href: dev-itpro/manage-secrets.md
-                - name: Føje egenskaber til salgsordrer
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: Udvidelse og udløsere for CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Spærre transaktioner ved hjælp af udløsere
