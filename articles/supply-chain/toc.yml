@@ -70,12 +70,12 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.12 (august 2020)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (maj 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management 10.0.9 (april 2020)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Styklisteberegningsgrupper
                   href: cost-management/bom-calculation-groups.md
+                - name: Omkostningsberegningsniveau
+                  href: cost-management/cost-calculation-level.md
                 - name: Efterkalkuleret varetræk
                   href: cost-management/backflush-costing.md
                 - name: Almindelige kilder til produktionsafvigelser
@@ -731,7 +733,7 @@
               items:
                 - name: Oprette konfigurationer
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Forberede komponenter i den elektroniske rapporteringsløsning
+                - name: Forberede komponenter i løsningen til elektronisk rapportering
                   items:
                     - name: Designe domænespecifik datamodel
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -1043,7 +1045,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
             - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Definere afhængigheden af ER-konfigurationer af andre komponenter
+            - name: Definere afhængigheden af ER-konfigurationer for andre komponenter
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
             - name: Designe en ER-løsning til at bruge økonomiske dimensioner
               items:
@@ -1083,7 +1085,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Redigere og køre formater for at bruge dokumentstyringsfiler i ER-output
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Opdatere applikationsdata ved hjælp af elektronisk rapportering
+            - name: Opdatere programdata ved hjælp af elektronisk rapportering
               items:
                 - name: Generere elektroniske dokumenter og opdatere programdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
@@ -1143,7 +1145,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere parametrene for ER-format for hver juridisk enhed
+                - name: Konfigurere parametrene for et ER-format for hver juridisk enhed
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Udskyde udførelse af ER-formatelementer
                   items:
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Anvende filtre på en plan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Varedisponering med samhandelsaftaler vedrørende indkøb
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Få vist planhistorik og planlægningslogfiler
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automatisk autorisation med planlægningsoptimering
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Færdigmelde produktionsordrer
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Rapportere som færdig til en id-styret lokalitet
+                    - name: Konfigurere jobkort for enheder
+                      href: production-control/config-job-card-device.md
+                    - name: Færdigmelde fra jobkortenheden.
                       href: production-control/report-finished-job-device.md
                     - name: Tilbageføre produktionsordrestatus
                       href: production-control/reverse-production-order-status.md
@@ -2259,6 +2265,16 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Konfigurere salgsprovisionsregler
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Debitorportal for Dynamics 365 Supply Chain Management
+              items:
+                - name: Oversigt over debitorportal
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Installere, konfigurere og opdatere debitorportalen'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Oprette og administrere debitorportalbrugere
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Tilpasse og bruge debitorportalen
+                  href: sales-marketing/customer-portal-customize.md
             - name: Handelsrabat
               href: sales-marketing/trade-allowance.md
             - name: Oprette en ny samhandelsaftale
@@ -2651,10 +2667,12 @@
                   href: warehousing/cycle-counting.md
                 - name: 'Definere cyklusoptælling '
                   href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
-                - name: Delvis cyklusoptælling for sted
+                - name: Delvis cyklusoptælling for lokation
                   href: warehousing/partial-location-cycle-counting.md
-                - name: 'Definere delvis cyklusoptællingsproces for lokation '
+                - name: Definere delvis cyklusoptællingsproces for lokation
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Oprydningsjob for disponible poster for lokationsstyring
+                  href: warehousing/onhand-cleanup.md
                 - name: Lagerkladde
                   href: inventory/inventory-journals.md
                 - name: Lagerlokation

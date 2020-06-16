@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 28. maj 2020
+          href: hr-whats-new-2020-05-28.md
         - name: 14. maj 2020
           href: hr-whats-new-2020-05-14.md
         - name: 1. maj 2020
@@ -505,10 +507,12 @@
               href: hr-leave-and-absence-plans.md
             - name: Tildele arbejdere til en orlovsplan
               href: hr-leave-and-absence-enroll.md
-            - name: Periodisere planer for orlov og fravær
+            - name: Periodisere orlovs- og fraværsplaner
               href: hr-leave-and-absence-accrue.md
             - name: Stoppe orlov midlertidigt
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Orlovsanmodning
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Administrere medarbejderorlov
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Vise analyse af orlov og fravær
@@ -519,6 +523,10 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Vise team- og firmakalendere
               href: hr-employee-self-service-calendar.md
+            - name: Administrere politikker for køb og salg af orlov
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Købe og sælge orlov
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Administrere fraværsanmodninger i Teams
           href: hr-teams-leave-app.md
         - name: Udvikle medarbejdere
