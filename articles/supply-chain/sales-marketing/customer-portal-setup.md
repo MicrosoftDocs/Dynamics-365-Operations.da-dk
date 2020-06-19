@@ -1,0 +1,86 @@
+---
+title: Installere, konfigurere og opdatere kundeportalen
+description: Dette emne indeholder licensoplysninger og opsætningsinstruktioner til kundeportalen.
+author: dasani-madipalli
+manager: tfehr
+ms.date: 04/22/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: damadipa
+ms.search.validFrom: 2020-04-22
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
+ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3413946"
+---
+# <a name="install-set-up-and-update-the-customer-portal"></a>Installere, konfigurere og opdatere kundeportalen
+
+## <a name="licensing-requirements"></a>Licenskrav
+
+Hvis du vil implementere kundeportalen, skal du have følgende licenser:
+
+- **Power Apps-portaler** – Denne licens kræves for at være vært for kundeportalen. Portaler gives i licens baseret på brug. Du kan finde flere oplysninger i [Licenskrav til Power Apps-portaler](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dobbeltskrivning** – Du skal have de nødvendige licenser for at kunne aktivere dobbeltskrivning til Supply Chain Management-enheder. Du kan finde flere oplysninger under [Systemkrav til dobbeltskrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+
+## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Afhængigheder af dobbeltskrivning og Power Apps-portaler
+
+Kundeportalen er afhængig af Power Apps-portaler og dobbeltskrivning som vist i følgende illustration.
+
+![![Kundeportalafhængigheder](media/customer-portal-elements.png "Kundeportalafhængigheder")](media/customer-portal-elements.png "Customer portal dependencies")
+
+I modsætning til andre funktioner i Supply Chain Management findes kundeportalskabelonen i Power Apps-portaler. Derfor er kundeportalen begrænset af den funktionalitet og de funktioner, der leveres af Power Apps-portaler og enhederne i dobbelskrivning.
+
+## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Krævet opsætning for at aktivere kundeportalen
+
+Når du har fundet ud af, om du har de påkrævede licenser, kan du konfigurere dobbeltskrivning som beskrevet i [Instruktioner for indledende synkronisering af dobbeltskrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+
+Sørg for at aktivere følgende enhedstilknytninger i dobbeltskrivning:
+
+- Salgsordreoverskrift
+- Salgsordredetaljer
+- Konti
+- Kontakter
+- Produkter
+
+Når denne konfiguration er fuldført, kan du klargøre kundeportalskabelonen.
+
+## <a name="provision-the-customer-portal"></a>Klargøring af kundeportalen
+
+Før du går i gang, skal du sikre dig, at du allerede har fuldført den [krævede opsætning](#required-setup). Udfør derefter følgende trin for at klargøre kundeportalen.
+
+1. Gå til [make.powerapps.com](https://make.powerapps.com/).
+2. Sørg for at bruge det miljø, hvor du aktiverede dobbeltskrivning.
+3. På fanen **Opret** skal du rulle ned til sektionen **Start fra skabelon** og vælge den skabelon, der har navnet **Supply Chain Management-kunde**.
+4. Følg vejledningen på skærmen.
+
+Når klargøring er fuldført, kan du få adgang til kundeportalen i sektionen **Dine apps** på **Startsiden**.
+
+> [!NOTE]
+> Hvis dobbeltskrivningsløsningen ikke er installeret i det miljø, du arbejder i, får du vist en fejlmeddelelse, og kundeportalen vil ikke være tilgængelig.
+
+## <a name="update-the-customer-portal"></a>Opdatering af kundeportalen
+
+Der kan blive føjet flere funktioner til kundeportalen senere. Eventuelle ændringer, som Microsoft foretager af de underliggende løsningskomponenter, vises automatisk i dit miljø. Det websted, der er klargjort i dit miljø, afspejler dog ikke automatisk ændringer, der er foretaget i konfigurationsdataene. Du skal anvende disse ændringer manuelt ved at hente koden fra den nye skabelon og flette den med det klargjorte websted.
+
+## <a name="resources"></a>Ressourcer
+
+Hvis du vil vide, hvordan du kan konfigurere og tilpasse kundeportalen, skal du starte med at gennemgå følgende dokumentation for de underliggende teknologier:
+
+- [Power Apps-dokumentationen til portaler](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Dokumentationen til dobbeltskrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
+
+For at kunne styre dine portaler effektivt skal du forstå Power Apps-portalerne og Common Data Service-livscyklus. Du kan finde flere oplysninger i følgende ressourcer:
+
+- [Om portalens livscyklus](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
+- [Opgradering af en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
+- [Overflytning af portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Solution Lifecycle Management: Dynamics 365 for Customer Engagement-apps](https://www.microsoft.com/download/details.aspx?id=57777)

@@ -3,7 +3,7 @@ title: Klargøre et Dynamics 365 Commerce-prøveversionsmiljø
 description: I dette emne beskrives det, hvordan du klargør et Microsoft Dynamics 365 Commerce-prøveversionsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254742"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426459"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Klargøre et Dynamics 365 Commerce-prøveversionsmiljø
 
@@ -193,7 +193,7 @@ Følg disse trin for at installere miljøet.
 
 1. Før du fortsætter, skal du kontrollere, at din statussen for dit miljø er **Installeret**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Initialisere Commerce Scale Unit (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
 Følg disse trin for at påbegynde CSU.
 
@@ -215,7 +215,7 @@ Følg disse trin for at påbegynde e-Commerce.
 
 1. Under fanen **e-Commerce** skal du gennemgå samtykket for prøveversionen og derefter vælge **Konfiguration**.
 1. Angiv et navn for **e-Commerce-lejernavn** i feltet. Bemærk dog, at navnet vil være synligt i nogle af URL-adresserne, der peger på din e-Commerce-forekomst.
-1. I feltet **Commerce scale unit-navn** skal du vælge din CSU på listen. (Listen bør kun have én indstilling.)
+1. I feltet **Commerce Scale Unit-navn** skal du vælge din CSU på listen. (Listen bør kun have én indstilling.)
 
     Feltet **e-Commerce-geografi** angives automatisk, og værdien kan ikke ændres.
 
@@ -251,7 +251,7 @@ For at fortsætte processen med klargøring og konfigurering af dit Commerce-pr�
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (sky)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 

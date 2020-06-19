@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9965d72474e5fa39fbc0a43753f7645df6881a5
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 22ffe71ccb890d35f2b0d5ef2bc3767b1e700be9
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275691"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413001"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.9 (april 2020)
 
@@ -48,9 +48,9 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 - Yderligere fastvægtintegration [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) – Du kan få flere oplysninger i [Behandling af fastvægtprodukt med Warehouse Management](../warehousing/catch-weight-processing.md) og også i videoen [Forbedringer i fastvægtprodukt](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
 - [Integration af anlægsaktiver med livscyklus for administration af aktiver](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle) - Du kan finde flere oplysninger under [Integrere aktivstyring med anlægsaktiver](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md)
 - [Fleksibel dimensionsreservation på lagersted](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) – du kan få flere oplysninger i [Politik for fleksibel dimensionsreservation på lagerstedsniveau](../warehousing/flexible-warehouse-level-dimension-reservation.md).
-- [Forbedret jobkortenhed](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) – Du kan finde flere oplysninger under [Rapportere status for en mobil jobenhed](../production-control/tasks/report-progress-mobile-job-device.md) og [Færdigmelde til en id-kontrolleret lokation fra jobkortenheden](../production-control/report-finished-job-device.md)
+- [Forbedret jobkortenhed](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) – Du kan finde flere oplysninger under [Rapportere status for en mobil jobenhed](../production-control/tasks/report-progress-mobile-job-device.md) og [Færdigmelde fra jobkortenheden](../production-control/report-finished-job-device.md)
 - [Indgående kvalitetskontrol](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
-- [Lagring af Rapporten Aldersfordelt lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
+- [Lagerrapport over aldersfordelt lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [Lagerværdirapportlager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
 - [Gantt.diagram med status for varedisponering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart) – Du kan få flere oplysninger i [Overvåge kørsel af en varedisponering](../master-planning/tasks/monitor-master-planning-run.md) og også i videoen [MPS-ydeevne og anvendelighedsforbedringer](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 - [Nye dataenheder til produktionsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
@@ -67,7 +67,7 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 - [Visuel planlægning for arbejdsordrer i aktivstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management) - Du kan finde flere oplysninger under [Arbejde med planlagte arbejdsordrer ved hjælp af et Gantt-diagram](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt)
 - [Lagerstedsallokering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Forbedrede bølgenavne til udskrivning](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
-- [Kode for bølgetrin](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
+- [Kode for bølgetrin](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code) – Du finder yderligere oplysninger under [Kode for bølgetrin](../warehousing/wave-step-codes.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

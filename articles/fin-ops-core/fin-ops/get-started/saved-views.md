@@ -3,7 +3,7 @@ title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6b7f1c64c273f52dc1d414185ba54efdfb8e5c0
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260477"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412324"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -137,7 +137,7 @@ Hvis de ændringer, du vil foretage i en publiceret visning, kun omfatter public
 7. [10.0.9/Platformopdatering 33 eller nyere] Hvis du oprindeligt har valgt, at denne publicerede visning skal være standardvisningen, vil den blive standardvisningen for disse brugere igen efter genudgivelsen.  
 
 Hvis ændringerne af den publicerede visning omfatter redigering af de tilpasninger eller filtre, der er tilknyttet visningen, skal du følge disse trin: 
-1.  Skift til den publicerede visning, du vil redigere. 
+1.  Indlæs den publicerede visning, du vil redigere. 
 2.  Gem en kopi af den publicerede visning for at oprette en lokal kladde til den publicerede visning. 
 3.  Rediger den lokale kladde med de nødvendige ændringer.
 4.  Publicer visningen med det oprindelige navn. 
@@ -149,14 +149,27 @@ Mens alle brugere kan se fanen **Mine visninger** med deres personlige visninger
 
 Hvis du vil se listen over alle publicerede visninger for siden, kan du bruge følgende sæt handlinger. 
 
--    **Publicer**: Brug handlingen **Publicer** til at publicere en visning igen, når publiceringsparametre (navn, beskrivelse, sikkerhedsroller eller juridiske enheder) er ændret.
--    **Fjern**: Brug handlingen **Fjern** til at slette en publiceret visning permanent. Denne handling fjerner visningen for alle brugere i systemet. Når publicerede visninger fjernes, træder det i kraft, når knappen **Gem** er valgt.
+-    **Publicer** – Brug handlingen **Publicer** til at publicere en visning igen, når publiceringsparametre (navn, beskrivelse, sikkerhedsroller eller juridiske enheder) er ændret.
+-    **Gem som personlig** – Brug handlingen **Gem som personlig** til at oprette en personlig kladdekopi af den publicerede visning. Denne egenskab kan hjælpe dig med at forstå indholdet af en visning, der ikke blev publiceret til dig, eller som endnu ikke er publiceret. Du kan også bruge den til at redigere og derefter publicere en visning igen. Denne funktion introduceres i version 10.0.12.  
+-    **Fjern** – Brug handlingen **Fjern** til at slette en publiceret visning permanent. Denne handling fjerner visningen for alle brugere i systemet. Når publicerede visninger fjernes, træder det i kraft, når knappen **Gem** er valgt.
+
+## <a name="managing-views-globally"></a>Administrere visninger globalt
+Selvom nogle administrationsmuligheder vises på alle sider som angivet i dette emne, kan **systemadministratorer** og **gemte visningsadministratorer** administrere visninger mere enkelt for systemet via siden **Brugertilpasning**. Denne side indeholder bl. a. følgende afsnit og funktioner: 
+
+- **Publicerede visninger** – i dette afsnit beskrives alle de visninger, der er publiceret for din organisation. Herfra kan du publicere en visning igen, efter at du har justeret de sikkerhedsroller eller juridiske enheder, som visningen er mål for. Du kan også eksportere eller slette en eller flere publicerede visninger. I version 10.0.12 og nyere kan du bruge handlingen **Gem som personlig** til at oprette en personlig kopi af visningen, så du kan opdatere visningen eller få en bedre forståelse af dens indhold. 
+- **Ikke-publicerede visninger** – Dette afsnit beskriver alle de visninger, der er importeret til systemet, men som endnu ikke er publiceret. Du kan publicere, eksportere eller slette disse visninger. Handlingen **Hurtig publicering**, der blev tilføjet i version 10.0.12, gør det muligt at publicere flere visninger fra dette afsnit i én handling ved hjælp af de eksisterende konfigurationer af sikkerhedsroller og juridiske enheder. I version 10.0.12 og nyere kan du bruge handlingen **Gem som personlig** til at oprette personlige kopier af disse visninger, så du kan få en bedre forståelse af deres indhold.   
+- **Personlige visninger** – Dette afsnit beskriver alle de visninger, der er oprettet af brugere i systemet. Herfra kan du publicere en personlig visning i organisationen eller kopiere en eller flere af disse visninger til andre brugere. Du kan også eksportere eller slette disse visninger efter behov.
+- **Brugere** – Vælg en bruger for at få vist listen over sider, som brugeren har besøgt. Du kan derefter justere brugerens mulighed for at bruge brugertilpasning til bestemte sider eller til hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for brugeren. Derudover kan du nulstille billedforklaringer til funktioner for brugeren. Hvis brugeren således tidligere har lukket pop op-vinduer, der introducerede nye funktioner, vises disse pop op-vinduer igen, næste gang brugeren støder på disse funktioner.
+- **System** - Du kan midlertidigt deaktivere tilpasninger for alle brugere i systemet. I dette tilfælde slettes alle tilpasninger for alle brugere, og alle sider nulstilles til deres standardtilstand. Hvis du senere aktiverer tilpasninger igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
+
+Brugere, der har adgang til siden **Brugertilpasning**, kan også importere personlige visninger eller skabelonvisninger ved hjælp af knappen **Importér visninger** i handlingsruden. I version 10.0.12 og nyere er der tilføjet en mekanisme til øjeblikkelig publicering af visninger, når de importeres.  
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø? 
-Bemærk: Funktionen **Gemte visninger** kræver, at Finance and Operations-tilpasningssystemet er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
+> [!NOTE]
+> Funktionen **Gemte visninger** kræver, at Finance and Operations-tilpasningssystemet er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
 
-**10.0.9/Platform Update 33 og nyere** **Gemte visninger**-funktionen er tilgængelig direkte i funktionsstyring i et hvilket som helst miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/Platform Update 33 og nyere** **Gemte visninger**-funktionen er tilgængelig direkte i funktionsstyring i et hvilket som helst miljø. Ligesom det er tilfældet med andre funktioner i prøveversioner, er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8/Platform update 32 og før** **Gemte visninger**-funktionen kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
 

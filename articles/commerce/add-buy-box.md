@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269745"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411336"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
@@ -38,6 +38,10 @@ Termen *købefelt* refererer normalt til det område på en produktdetaljeside, 
 Et købefeltmodul er en særlig container, der omfatter alle de moduler, som vises i købefeltområdet på en side med produktdetaljer.
 
 URL-adressen for siden produktdetaljer indeholder produkt-id'et. Alle de oplysninger, der kræves for at gengive et købefeltmodul, er afledt af dette produkt-id. Hvis der ikke er angivet et produkt-ID, gengives købefeltmodulet ikke korrekt på en side. Derfor kan et købsfeltmodul kun bruges på sider med en produktkontekst. Hvis du vil bruge den på en side, der ikke har en produktkontekst (f.eks. en startside eller en marketingside), skal du udføre flere tilpasninger.
+
+Det følgende billede viser et eksempel på et købefeltmodul på en side med produktdetaljer.
+
+![Eksempel på et købefeltmodul](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Egenskaber og pladser i købefeltmodulet 
 
@@ -58,35 +62,47 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler, der kan bruges i et købefeltmodul
 
 - **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Den kan understøtte fra ét til mange billeder. Det understøtter også miniaturebilleder. Miniaturebillederne kan arrangeres enten vandret (som en række under billedet) eller lodret (som en kolonne ved siden af billedet). Du kan føje mediegallerimodulet til pladsen **Medier** i købefeltmodulet. Det understøtter i øjeblikket kun billeder. 
-- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Du kan få flere oplysninger om dette modul i [Butiksvælgermodul](store-selector.md).
+- **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Butiksvælgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
 
-Købefeltmoduler har tre indstillinger, der kan konfigureres på **Indstillinger for websted \> Udvidelser**:
+De følgende indstillinger for købefeltmoduler kan konfigureres under **Indstillinger for websted \> Udvidelser**:
 
-- **Maks. antal** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
-- **Lagerkontrol** – når værdien er angivet til **Sand**, føjes der først en vare til indkøbsvognen, når købefeltmodulet har sikret, at varen er på lager. Denne lagerkontrol udføres for de scenarier, hvor varen skal afsendes, og for scenarier, hvor den afhentes i butikken. Hvis værdien er angivet til **Falsk**, udføres der ingen lagerkontrol, før der føjes en vare til indkøbsvognen, og ordren afgives. Du kan få flere oplysninger om, hvordan du konfigurerer lagerindstillinger i et sikkerhedskontor, i [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md).
+- **Grænse for antal linjevarer i indkøbsvogn** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
+- **Lager** – Du finder oplysninger om, hvordan du anvender lagerindstillinger, under [Anvendelse af lagerindstillinger](inventory-settings.md).
+- **Føj til indkøbsvogn** – Denne egenskab bruges til at angive proceduren, når en vare er føjet til indkøbsvognen. De mulige værdier er **Naviger til indkøbsvogn**, **Naviger ikke til indkøbsvogn** og **Vis beskeder**. Når værdien er angivet til **Naviger til indkøbsvogn**, sendes brugeren til indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Naviger ikke til indkøbsvogn**, sendes brugeren ikke til siden med indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Vis beskeder**, får brugerne vist en bekræftelsesmeddelelse og kan fortsætte med at søge på siden produktdetaljer. 
 
-- **Lagerbuffer** – Denne egenskab bruges til at angive et buffernummer til lageret. Lageret vedligeholdes i realtid, og når mange kunder afgiver ordrer, kan det være vanskeligt at bevare en nøjagtig lageroptælling. Når der foretages en lagerkontrol, og lageret er mindre end bufferantallet, behandles produktet, som om det ikke er på lager. Når salg sker hurtigt via flere kanaler, og lageroptællingen ikke er synkroniseret, er der derfor mindre risiko for, at der sælges en vare, som ikke er på lager.
+    Det følgende billede viser et eksempel på en besked med bekræftelse af handlingen "Føjet til indkøbsvogn" på Fabrikam-webstedet.
+
+    ![Eksempel på et beskedmodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 
-Købsfeltmodulet henter produktoplysninger ved hjælp af Commerce Scale Unit-API'er. Produkt-id'et fra siden med produktdetaljer bruges til at hente alle oplysninger.
+Købsfeltmodulet henter produktoplysninger ved hjælp af Commerce Scale Unit-API'er (Application Programming Interfaces). Produkt-id'et fra siden med produktdetaljer bruges til at hente alle oplysninger.
 
 ## <a name="add-a-buy-box-module-to-a-page"></a>Føje et købefeltmodul til en side
 
 Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Opret et fragment med navnet **købefeltfragment**, og føj et købefeltmodul til det.
-1. Tilføj et mediegallerimodul til pladsen **Medier** i købefeltmodulet.
-1. Tilføj et butiksvælgermodult i pladsen **Butiksvælger** af købsfeltmodulet.
+1. Gå til **Sidefragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
+1. Vælg modulet **Købefelt** i dialogboksen **Nyt sidefragment**.
+1. Under **Sidefragmentsnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
+1. På pladsen **Media Gallery** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Media Gallery** og derefter **OK**.
+1. På pladsen **Butiksvælger** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Butiksvælger** og derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
-1. Opret en skabelon til en side med produktdetaljer, og navngiv den **PDP-skabelonen**.
-1. Tilføj en standardside.
-1. Tilføj et købefeltfragment på pladsen **Hoved** på standardsiden.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. Angiv **PDP-skabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. Vælg pladsen **Hoved** på standardsiden, vælg ellipsen (**...**) og derefter **Tilføj sidefragment**.
+1. I dialogboksen **Vælg sidefragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
-1. Brug den skabelon, som du netop har oprettet, til at oprette en side med navnet **PDP-side**.
-1. Tilføj et købefeltfragment på pladsen **Hoved** på den nye side.
+1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. Vælg dialogboksen **Vælg en skabelon**, og vælg skabelonen **PDP-skabelon**. Under **Sidenavn** skal du angive **PDP-side** og derefter vælge **OK**.
+1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj sidefragment**.
+1. I dialogboksen **Vælg sidefragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Gem siden, og se en forhåndsvisning af den. Føj forespørgselsstrengparameteren **?productid=&lt;product id&gt;** til URL-adressen for eksempelsiden. På denne måde bruges produktkonteksten til at indlæse og gengive eksempelsiden.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. Der vises et købefelt på siden med produktdetaljer.
 
