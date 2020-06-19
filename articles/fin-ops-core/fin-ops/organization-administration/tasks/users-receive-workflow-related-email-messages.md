@@ -3,7 +3,7 @@ title: Aktivér brugerne til at modtage e-mails, der er relateret til arbejdsgan
 description: Du kan konfigurere systemet til at sende e-mails til brugerne, når der opstår hændelser med relation til arbejdsgangen.
 author: jasongre
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/01/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,27 +16,29 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4c9f2f22bc4b5ca5b4351f7956ad2eb6d3b903d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 40ad380c7bfb2b3fc518b0278286ae03532668ed
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140415"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416547"
 ---
-# <a name="enable-users-to-receive-workflow-related-email-messages"></a><span data-ttu-id="0b0aa-103">Aktivér brugerne til at modtage e-mails, der er relateret til arbejdsgangen</span><span class="sxs-lookup"><span data-stu-id="0b0aa-103">Enable users to receive workflow-related email messages</span></span>
+# <a name="enable-users-to-receive-workflow-related-email-messages"></a><span data-ttu-id="031b0-103">Aktivér brugerne til at modtage e-mails, der er relateret til arbejdsgangen</span><span class="sxs-lookup"><span data-stu-id="031b0-103">Enable users to receive workflow-related email messages</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0b0aa-104">Du kan konfigurere systemet til at sende e-mails til brugerne, når der opstår hændelser med relation til arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-104">You can configure the system to send email messages to users when workflow-related events occur.</span></span> <span data-ttu-id="0b0aa-105">For eksempel kan e-mails sendes til brugerne, når dokumenter tildeles til dem til godkendelse.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-105">For example, email messages can be sent to users when documents are assigned to them for approval.</span></span> <span data-ttu-id="0b0aa-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="031b0-104">Du kan konfigurere systemet til at sende e-mails til brugerne, når der opstår hændelser med relation til arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="031b0-104">You can configure the system to send email messages to users when workflow-related events occur.</span></span> <span data-ttu-id="031b0-105">For eksempel kan e-mails sendes til brugerne, når dokumenter tildeles til dem til godkendelse.</span><span class="sxs-lookup"><span data-stu-id="031b0-105">For example, email messages can be sent to users when documents are assigned to them for approval.</span></span> <span data-ttu-id="031b0-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="031b0-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="0b0aa-107">Gå til **Navigationsrude > Moduler > Systemadministration > Brugere > Brugere**.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
-2. <span data-ttu-id="0b0aa-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="0b0aa-109">Klik på **Brugerindstillinger** i **Handlingsrude**.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-109">On the **Action pane**, click **User options**.</span></span>
-4. <span data-ttu-id="0b0aa-110">Klik på fanen **Arbejdsgang**. Kontrollér, at sektionen **Beskeder** er udvidet.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-110">Click the **Workflow** tab. Make sure that the **Notifications** section is expanded.</span></span> <span data-ttu-id="0b0aa-111">I sektionen **Beskeder** kan du angive, hvordan du ønsker, brugeren skal have besked om hændelser, der er relateret til arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-111">In the **Notifications** section, you can specify how you want the user to be notified about workflow-related events.</span></span>  
-5. <span data-ttu-id="0b0aa-112">Vælg en indstilling i feltet **Beskedtype for arbejdsgang for linjeelement**.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-112">In the **Line-item workflow notification type** field, select an option.</span></span>
-    - <span data-ttu-id="0b0aa-113">Grupperet – beskeder om linjeelementer grupperes i en enkelt e-mail.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-113">Grouped – Notifications for line items are grouped into a single email message.</span></span>
-    - <span data-ttu-id="0b0aa-114">Individuelt – der sendes en e-mail for hvert linjeelement.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-114">Individual – An email message is sent for each line item.</span></span>  
-    - <span data-ttu-id="0b0aa-115">Hvis du ønsker, at brugeren skal modtage beskeder i klienten, skal du markere afkrydsningsfeltet **Send beskeder i e-mail**.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-115">If you want the user to receive notifications in the client, select the **Send notifications in email** check box.</span></span>  
-6. <span data-ttu-id="0b0aa-116">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-116">Click **Save**.</span></span>
-7. <span data-ttu-id="0b0aa-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="0b0aa-117">Close the page.</span></span>
+1. <span data-ttu-id="031b0-107">Gå til **Navigationsrude > Moduler > Systemadministration > Brugere > Brugere**.</span><span class="sxs-lookup"><span data-stu-id="031b0-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
+2. <span data-ttu-id="031b0-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="031b0-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="031b0-109">Klik på **Brugerindstillinger** i **Handlingsrude**.</span><span class="sxs-lookup"><span data-stu-id="031b0-109">On the **Action pane**, click **User options**.</span></span>
+4. <span data-ttu-id="031b0-110">Klik på fanen **Arbejdsgang**. Kontrollér, at sektionen **Beskeder** er udvidet.</span><span class="sxs-lookup"><span data-stu-id="031b0-110">Click the **Workflow** tab. Make sure that the **Notifications** section is expanded.</span></span> <span data-ttu-id="031b0-111">I sektionen **Beskeder** kan du angive, hvordan du ønsker, brugeren skal have besked om hændelser, der er relateret til arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="031b0-111">In the **Notifications** section, you can specify how you want the user to be notified about workflow-related events.</span></span>  
+5. <span data-ttu-id="031b0-112">Vælg en indstilling i feltet **Beskedtype for arbejdsgang for linjeelement**.</span><span class="sxs-lookup"><span data-stu-id="031b0-112">In the **Line-item workflow notification type** field, select an option.</span></span>
+    - <span data-ttu-id="031b0-113">Grupperet – beskeder om linjeelementer grupperes i en enkelt e-mail.</span><span class="sxs-lookup"><span data-stu-id="031b0-113">Grouped – Notifications for line items are grouped into a single email message.</span></span>
+    - <span data-ttu-id="031b0-114">Individuelt – der sendes en e-mail for hvert linjeelement.</span><span class="sxs-lookup"><span data-stu-id="031b0-114">Individual – An email message is sent for each line item.</span></span>  
+    - <span data-ttu-id="031b0-115">Hvis du ønsker, at brugeren skal modtage beskeder i klienten, skal du markere afkrydsningsfeltet **Send beskeder i e-mail**.</span><span class="sxs-lookup"><span data-stu-id="031b0-115">If you want the user to receive notifications in the client, select the **Send notifications in email** check box.</span></span>  
+6. <span data-ttu-id="031b0-116">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="031b0-116">Click **Save**.</span></span>
+7. <span data-ttu-id="031b0-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="031b0-117">Close the page.</span></span>
 
+> [!NOTE]
+> <span data-ttu-id="031b0-118">E-mailskabelonerne til arbejdsgangen leveres fra enten systemmailskabeloner eller virksomhedsmailskabeloner, afhængigt af om arbejdsgangen er på systemniveau (ikke firmaspecifik) eller på virksomhedsniveau (firmaspecifik).</span><span class="sxs-lookup"><span data-stu-id="031b0-118">The workflow email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.</span></span>
