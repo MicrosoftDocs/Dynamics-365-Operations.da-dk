@@ -70,12 +70,12 @@
                   items:
                     - name: Startside for Nyheder eller ændringer i Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.12 (august 2020)
+                      href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (juli 2020)
                       href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (maj 2020)
                       href: get-started/whats-new-changed-10-0-10.md
-                    - name: Finance 10.0.9 (april 2020)
-                      href: get-started/whats-new-changed-10-0-9.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner i Dynamics 365 Finance
@@ -232,6 +232,8 @@
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
             - name: Konfigurere politikker for kreditorfakturaer
               href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Automatisere kreditorbetalingsforslag
+              href: accounts-payable/automate-vendor-payment-proposal.md
             - name: Registrere kreditorfaktura og sammenligne med modtaget antal
               href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Oversigt over positive betalinger
@@ -324,14 +326,6 @@
               href: accounts-receivable/copy-customer.md
             - name: Arbejdsgang for kunde
               href: accounts-receivable/customer-workflow.md
-            - name: Kredit og rykkere i Debitor
-              href: accounts-receivable/collections-credit-accounts-receivable.md
-            - name: Konfigurere debitorer og kredit og rykkere
-              href: accounts-receivable/accounts-receivables-set-up-overview.md
-            - name: Konfigurere kredit og rykkere
-              href: accounts-receivable/set-up-collections.md
-            - name: Gennemse oplysninger om rykkere
-              href: accounts-receivable/tasks/review-collections-information.md
             - name: Oversigt over indtægtsføring
               href: accounts-receivable/revenue-recognition-overview.md
             - name: Opsætning af Indtægtsføring
@@ -406,10 +400,18 @@
                   href: accounts-receivable/reimburse-customers.md
                 - name: Debitorbetalinger af et delvist beløb
                   href: accounts-receivable/customer-payments-partial-amount.md
-            - name: Kredit
+            - name: Kredit og rykkere
               items:
-                - name: Oversigt over kredit
+                - name: Oversigt over kredit og rykkere
                   href: accounts-receivable/cm-credit-and-collections-overview.md
+                - name: Rykkere i Debitor
+                  href: accounts-receivable/collections-credit-accounts-receivable.md
+                - name: Konfigurere debitorer og kredit og rykkere
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: Konfigurere kredit og rykkere
+                  href: accounts-receivable/set-up-collections.md
+                - name: Gennemse oplysninger om rykkere
+                  href: accounts-receivable/tasks/review-collections-information.md
                 - name: Konfiguration af kreditstyring
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Oplysninger om konfiguration af kreditstyring
@@ -448,13 +450,15 @@
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Oprette en afskrivningskladde for en debitor
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
-        - name: Budgetplanlægning
+            - name: Administration af avancerede noter
+              href: localizations/emea-ita-exil-structured-notes.md
+        - name: Budgetlægning
           items:
             - name: Startside for budgetplanlægning
               href: budgeting/budgeting-overview.md
             - name: Oversigt over budgetplanlægning
               href: budgeting/budget-planning-overview-configuration.md
-            - name: Budgetstyringsoversigt
+            - name: Oversigt over budgetstyring
               href: budgeting/budget-control-overview-configuration.md
             - name: Budgetteringsoversigt
               href: budgeting/basic-budgeting-overview-configuration.md
@@ -978,9 +982,11 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Konfigurere standardomkostninger for arbejdskraft og udgifter
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Oprette og anvende betingelser for tilbageholdelse af kreditorbetaling
+              href: project-management/create-and-apply-vendor-payment-retention-terms.md
             - name: Konfigurere og bruge betal ved betaling for kreditorbetalinger
               href: project-management/setup-manage-vendor-payments.md
-            - name: Periodisering købsleverancer i projektomkostninger
+            - name: Periodisering af købsleverancer i projektomkostninger
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektfakturering
               href: accounts-payable/project-invoicing.md
@@ -1000,6 +1006,10 @@
               href: project-management/project-purchase-orders.md
             - name: Projekttilbud
               href: project-management/project-quotations.md
+            - name: 'Bekræfte, opdatere og sende et projekttilbud'
+              href: project-management/confirm-update-send-project-quotation.md
+            - name: Overføre et tilbud til et projekt
+              href: project-management/transfer-quote-new-existing-project.md
             - name: Projektressourcer
               href: project-management/project-resourcing.md
             - name: Modtage varer på indkøbsordre ud fra varebehov
@@ -1022,6 +1032,8 @@
                   href: project-management/custom-fields-mobile.md
             - name: Projekttilskud
               href: project-management/project-grants.md
+            - name: Eliminere et projektestimat
+              href: project-management/eliminate-project-estimate.md
         - name: Offentlig sektor
           items:
             - name: Startside for offentlig sektor
@@ -1758,6 +1770,8 @@
                   href: localizations/emea-hun-tax-reimbursement-docs.md
                 - name: Årsafslutning
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Onlinefaktureringssystem
+                  href: localizations/emea-hun-online-invoicing.md
             - name: Island
               items:
                 - name: Oversigt for Island
@@ -2008,8 +2022,6 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: Forskellige gebyrer pr. kg i en Intrastat-opgørelse
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
-                - name: Administration af avancerede noter
-                  href: localizations/emea-ita-exil-structured-notes.md
                 - name: Hensigtserklæringer – fakturere almindelige eksportører
                   href: localizations/emea-ita-exil-intent-letter.md
                 - name: 'Momsfaktura for varer, der er leveret gratis'
@@ -2288,8 +2300,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Revisionsfil - (XML Auditfile Financieel, XAF)'
-                  hred: localizations/emea-nl-audit-file.md
+                - name: Revisionsfil (XML Auditfile Financieel XAF)
+                  href: localizations/emea-nl-audit-file.md
             - name: Norge
               items:
                 - name: Oversigt for Norge
@@ -2359,7 +2371,7 @@
                     - name: Oversigt over forskudshavere for Rusland
                       href: localizations/rus-advance-holders.md
                     - name: Oprette en forskudshaver
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Daglige handlinger for forskudshavere
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: Forskudsrapporter med budgetstyring
@@ -2970,7 +2982,9 @@
               items:
                 - name: Oprette konfigurationer
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-                - name: Forberede komponenter i den elektroniske rapporteringsløsning
+                - name: Definere afhængigheden af ER-konfigurationer for andre komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Forberede komponenter i løsningen til elektronisk rapportering
                   items:
                     - name: Designe domænespecifik datamodel
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3252,10 +3266,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Tekst: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: Administrere ER-modeltilknytning i separate ER-konfigurationer
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: 'Vælge datamodeldefinitioner, når du opretter formater'
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Designe ER-formater til generering af udgående elektroniske dokumenter i forskellige formater
               items:
                 - name: Designe konfigurationer til at generere udgående dokumenter i Excel-format
@@ -3290,9 +3300,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: Definere afhængigheden af ER-konfigurationer af andre komponenter
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Opdatere applikationsdata ved hjælp af elektronisk rapportering
+            - name: Opdatere programdata ved hjælp af elektronisk rapportering
               items:
                 - name: Generere elektroniske dokumenter og opdatere programdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
@@ -3321,31 +3329,41 @@
                     - name: Importere filer i XML-format med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere ER-formater til at importere XML-formatfiler med valgfrie attributter
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: Livscyklus for konfiguration
               items:
-                - name: 'Administrere konfigurationslivscyklus '
+                - name: Administrere konfigurationslivscyklus
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Overføre konfigurationer til Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: Importere konfigurationer fra Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: Hente konfigurationer fra Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                - name: Importere konfigurationer
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Udvidede filtreringsindstillinger til søgning efter konfigurationer i det globale lager
-                  href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                - name: Hente ER-konfigurationer fra RCS-lageret
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Hente konfigurationer fra ER-lageret til RCS-typen
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Importere konfigurationer fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-                - name: Oprette ER-konfigurationer i RCS og overføre dem til det globale lager
-                  href: localizations/rcs-global-repo-upload.md
-                - name: Dele ER-konfigurationer i RCS med eksterne organisationer
-                  href: localizations/rcs-global-repo-share-configuration.md
+                    - name: Overføre konfigurationer til LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: Importere konfigurationer fra LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: Hent konfigurationer fra LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Importere konfigurationer (LBD).
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory services (RCS)
+                  items:
+                    - name: Regulatory Configuration Services (RCS) – globaliseringsfunktioner
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Hente ER-konfigurationer til Finance
+                      items:
+                        - name: Hente konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globalt lager (GR)
+                      items:
+                        - name: Importere konfigurationer fra GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Udvidet filtrering til søgning efter konfigurationer i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Overføre konfigurationer til GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Dele konfigurationer i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
             - name: Selvstudier
               items:
                 - name: 'Få mere at vide om, hvordan du bruger datakilder'
@@ -3392,18 +3410,26 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                         - name: Fejlfinde datakilder
                           href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
-                - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-                - name: 'Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
-                - name: Konfigurere parametrene for et ER-format for hver juridisk enhed
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                - name: Udskyde udførelse af ER-formatelementer
+                - name: Konfigurere modeltilknytninger
                   items:
-                    - name: Udskyde udførelse af et sekvenselement
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
-                    - name: Udskyde udførelse af et XML-element
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                    - name: Administrere ER-modeltilknytning i separate ER-konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurere formater
+                  items:
+                    - name: 'Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                    - name: Konfigurere parametrene for et ER-format for hver juridisk enhed
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                    - name: 'Vælge modeldefinitioner, når du opretter formater'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: Udskyde udførelse af ER-formatelementer
+                      items:
+                        - name: Udskyde udførelse af et sekvenselement
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                        - name: Udskyde udførelse af et XML-element
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                 - name: Relativ sti i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations

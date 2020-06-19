@@ -14,6 +14,8 @@
               items:
                 - name: Startside for Nyheder eller ændringer i platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til 10.0.12 (august 2020)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platformsopdateringer til 10.0.11 (juli 2020)
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platformsopdateringer til 10.0.10 (maj 2020)
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integreret arbejder, job og position'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Lagertilgængelighed
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: Understøttelse af dobbeltskrivning
                           items:
                             - name: Understøttelse af Field Service-løsninger og Project Service Automation-løsninger
@@ -452,9 +456,9 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Anvende opdateringer i skybaserede miljøer
                   href: deployment/apply-deployable-package-system.md
-                - name: Anvende opdateringer og udvidelser på skybaserede Retail-kanalkomponenter
+                - name: Anvende opdateringer og udvidelser i Commerce Scale Unit (sky)
                   href: deployment/Update-retail-channel.md
-                - name: Initialisere Retail Cloud Scale Unit
+                - name: Initialisere Commerce Scale Unit (sky)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Retail-databopæl
                   href: deployment/retail-data-residency.md
@@ -488,6 +492,8 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Klientens internetforbindelse
                       href: user-interface/client-disconnected.md
+                    - name: Konfigurere kun batch-AOS-noder og kun interaktive AOS-noder i lokale installationer
+                      href: deployment/onprem-batchonly.md
                     - name: Konfigurere proxyer til lokale miljøer
                       href: deployment/onprem-reverseproxy.md
                     - name: Diagnosticering i det lokale miljø
@@ -1048,6 +1054,8 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Brugervejledning til Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
+            - name: Projektonboarding
+              href: lifecycle-services/project-onboarding.md
             - name: Abonnementsestimator
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurere sikkerhed
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer til oversættelseshukommelse
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Microsoft Power Platform-integration
+          items:
+            - name: Microsoft Power Platform-integration med Finance and Operations
+              href: power-platform/overview.md
+            - name: Enhedsmodellering
+              href: power-platform/entity-modeling.md
+            - name: Applikationscyklusstyring
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations- og Common Data Service-administratorreference
+              href: power-platform/admin-reference.md
+            - name: Power Apps-portaler med Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Ofte stillede spørgsmål og virtuelle enheder i Finance and Operations
+              href: power-platform/faq.md
         - name: Mobilplatform
           items:
             - name: Ressourcer til mobilplatform
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Installation og konfiguration
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Dataagnostisk testning ved hjælp af Regression Suite Automation Tool
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Køre testcases
+            - name: Bruge Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
             - name: Validere forventede værdier
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Afledte testcases
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Bruge Regression Suite Automation Tool
+            - name: Regression Suite Automation Tool-selvstudium og andre funktioner
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Bedste fremgangsmåder
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Dataagnostisk testning ved hjælp af Regression Suite Automation Tool
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Fejlfinding
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Frigive løsninger ved hjælp af Lifecycle Services
@@ -1442,6 +1464,8 @@
                   href: sysadmin/copy-batch-job.md
                 - name: Aktive batchperioder
                   href: sysadmin/activeperiod.md
+                - name: Understøttelse af sommertid for aktive batchperioder
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Sikkerhedsrolle for batchstyring
                   href: sysadmin/runby.md
                 - name: Batchjob til håndtering af defragmentering af SQL-indeks
