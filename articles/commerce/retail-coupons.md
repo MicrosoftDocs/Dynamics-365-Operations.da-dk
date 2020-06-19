@@ -3,7 +3,7 @@ title: Konfigurere kuponer for detailsalg
 description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057365"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431972"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer for detailsalg
 
@@ -48,8 +48,10 @@ Kuponer kan konfigureres som kuponer med begrænset anvendelse. Anvendelsesgræn
 
 Grænsen gennemtvinges pr. kuponkode på en kupon. F.eks. kan en engangskupon, der har to kuponkoder, bruges to gange: én gang for hver kuponkode. Hver kode på en kupon kan indstilles uafhængigt til aktiv.
 
+Kuponerne kan bruges på tværs af en hvilken som helst sælgerkanal, men i forbindelse med callcenter-ordrer kan kuponerne med begrænset brug kun bruges til de callcenter-ordrer, hvor indstillingen **Ordrefuldførelse** er aktiveret i callcentret. Hvis denne ikke er aktiveret, er det kun rabatkuponer af typen ikke-begrænset brug, der kan bruges i callcenter-ordrer.
+
 > [!NOTE]
-> Når en kuponkode har nået sin forbrugsgrænse, ændrer systemet *ikke* automatisk statussen for kuponkoden til "Brugt". Systemet tillader dog ikke yderligere brug af en kuponkode, som har nået brugsgrænsen. Hvis statussen for en kuponkode indstilles manuelt til andet end "Aktiv", kan denne kuponkode ikke bruges i nogen kanal.
+> Når en kuponkode har nået sin forbrugsgrænse, ændrer systemet *ikke* automatisk statussen for kuponkoden til "Brugt". Denne kuponkode har dog nået forbrugsgrænsen og kan ikke bruges. Hvis statussen for en kuponkode indstilles manuelt til andet end **Aktiv**, kan denne kuponkode ikke bruges i nogen kanal.  
 
 ## <a name="managing-coupons"></a>Administration af kuponer
 
