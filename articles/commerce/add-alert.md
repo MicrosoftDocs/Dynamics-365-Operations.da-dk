@@ -3,7 +3,7 @@ title: Kampagnebannermodul
 description: Dette emne omhandler kampagnebannermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269768"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411359"
 ---
 # <a name="promo-banner-module"></a>Kampagnebannermodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -48,9 +47,15 @@ Kampagnebannere kan bruges i webstedets overskift til at vise kampagner eller me
 
 "Store besparelser på skolestartudsalg. Køb nu".
 
+"Butik for Thanksgiving-SALG!" 
+
+Det følgende billede viser et eksempel på et reklamebanner.
+
+![Eksempel på et reklamebannermodul](./media/ecommerce-Promobanner.PNG)
+
 ## <a name="promo-banner-module-properties"></a>Egenskaber for kampagnebannermodul
 
-| Egenskabsnavn             | Value                              | Beskrivelse |
+| Egenskabsbetegnelse             | Værdi                              | Beskrivende tekst |
 |---------------------------|------------------------------------|-------------|
 | Bannermeddelelser           | Tekst og link                     | En matrix af tekst og link. |
 | Automatisk afspilning                  | **Sand** eller **Falsk**              | En værdi, der angiver, om meddelelser automatisk gennemløbes, hvis der er konfigureret flere meddelelser. |
@@ -64,7 +69,7 @@ Kampagnebannere kan bruges i webstedets overskift til at vise kampagner eller me
 
 Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Vælg **Ny** for at oprette en sideskabelon.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv **Kampagnebannerskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
 1. Under **Sidedisposition**kan du føje et **Standardside**modul til **Brødtekst**-pladsen. 
 1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den. 
@@ -74,7 +79,7 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 1. Føj et kampangebannermodul til containermodulet under **Sidedisposition**.
 1. Tilføj en eller flere bannermeddelelser i indstillingerne for bannermodulet. Hver meddelelse kan have tekst sammen med et link. Du kan redigere de andre egenskaber for at tilpasse modulet yderligere.
 1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Øverst på siden vises en påmindelse med den tekst, du har tilføjet.
-1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. 
+1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 > [!NOTE]
 > Et kampagnebanner bruges typisk i sidehovedpladsen eller en underoverskriftplads.

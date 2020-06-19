@@ -3,12 +3,12 @@ title: Overblik
 description: I Dynamics 365 Human Resources giver arbejdsområdet Orlov og fravær en fleksibel struktur til oprettelse af nye orlovsplaner, arbejdsgange til administration af anmodninger og en intuitiv selvbetjeningsside, hvor medarbejdere kan anmode om fritid.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325759"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428961"
 ---
 # <a name="overview"></a>Overblik
 
@@ -84,10 +84,9 @@ Du kan afprøve nye visningsfunktioner for orlov og fravær i et **sandkasse**-m
 
 Visningsfunktionerne omfatter:
 
-- **Orlovssuspension** – Du kan afbryde orlov og fravær i personale for en medarbejder. Når du suspendere orlov, stoppes orloven for de valgte orlovstyper. Hvis suspensionen finder sted, når der foretages en periodisering, opretter suspensionen en forholdsmæssig justering til medarbejderens orlov. Du kan også medtage årsagskoder, når du suspenderer en medarbejders orlov. Brugeroplevelsen er opdateret for at indikere suspendering. 
+- **Periodisere orlov pr. firma eller plan** - Du kan køre en periodiseringsproces for alle virksomheder eller for en enkelt virksomhed. Du kan også køre periodiseringsprocessen for en bestemt orlovs- og fraværsplan for en bestemt virksomhed. 
 
-- **Overføre regler** – Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringer overføres. Hvis en medarbejder f.eks. overfører 10 dage, kan du vælge en anden orlovstype for disse 10 dage. 
+- **Køb orlov** – Du kan aktivere og oprette politikker for køb af orlov, så medarbejderne kan sende købsanmodninger. Medarbejderne kan sende anmodninger om køb og få saldi opdateret automatisk, så de afspejler anmodningen.  
 
-- **Medtag årsagskode og kommentarer for reguleringer** – Du kan medtage en årsagskode og en kommentar, når du foretager en regulering af en medarbejders orlov. 
+- **Føje vedhæftede filer til godkendte orlovsanmodninger** – Du kan vedhæfte en fil til en orlovsanmodning, der allerede er godkendt. 
 
-- **Overgang til orlovs- og fraværsparametre** – Du kan nu kun bruge orlovs- og fraværsparametre i stedet for HR-parametre. 

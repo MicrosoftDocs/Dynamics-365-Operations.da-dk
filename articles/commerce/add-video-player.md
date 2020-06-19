@@ -3,7 +3,7 @@ title: Videoafspillermodul
 description: Dette emne omhandler videoafspillermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025637"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411153"
 ---
 # <a name="video-player-module"></a>Videoafspillermodul
 
@@ -47,9 +47,13 @@ Videoafspillermodulet understøtter også sekundære lydspor. I forbindelse med 
 - Kampagnevideoer eller videoer om politikker på en hvilken som helst marketingside
 - Marketingvideoer, der fremhæver produktfunktioner på sider med produktdetaljer eller marketingsider
 
+Det følgende billede viser et eksempel på et videoafspillermodul på en startside.
+
+![Eksempel på et videoafspillermodul](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Egenskaber for videoafspillermodul
 
-| Egenskabsbetegnelse         | Værdi                               | Beskrivelse |
+| Egenskabsbetegnelse         | Værdi                               | Beskrivende tekst |
 |-----------------------|-------------------------------------|-------------|
 | Automatisk afspilning             | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, afspilles videoen automatisk. |
 | Slå mikrofon fra                  | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, deaktiveres lyden. Standardværdien for denne afspiller er **Falsk**. I Google Chrome-browseren er automatisk afspilning af videoer som standard slået fra, og lyden afspilles kun, hvis brugeren afspiller videoen manuelt. |
@@ -68,16 +72,28 @@ Videoafspillermodulet understøtter også sekundære lydspor. I forbindelse med 
 
 Hvis du vil føje et videoafspillermodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Opret en sideskabelon med navnet **videoafspillerskabelon**.
-1. Tilføj et containermodul på pladsen **Hoved** på standardsiden.
-1. Tilføj videoafspiller- og atmosfæreskabende videoafspiller-modulet i containermodulet.
-1. Afslut redigeringen af skabelonen, og udgiv den.
-1. Brug den indholdsskabelon, som du har oprettet, til at oprette en side med navnet **videoafspillerside**.
-1. Tilføj et videoafspillermodul på pladsen **Hoved** på den nye side.
-1. Vælg **Tilføj en video**i egenskabsruden for videoafspillermodulet.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. I diaglogboksen **Ny skabelon** under **Skabelonnavn** skal du angive **Videoafspillerskabelon** og derefter vælge **OK**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Videoafspiller** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den. 
+1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. I dialogboksen **Vælg en skabelon** skal du vælge den videoafspillerskabelon, du har oprettet. Under **Sidenavn** skal du angive **Videoafspillerside** og derefter vælge **OK**.
+1. På pladsen **Hoved** på den nye side skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Videoafspiller** og derefter **OK**.
+1. Vælg **Tilføj en video** i egenskabsruden for videoafspillermodulet.
 1. Vælg en video i dialogboksen **Medievælger**, og vælg derefter **Upload nyt medieelement**.
-1. Gem siden, og se en forhåndsvisning af den. Nu vises videomodulet på siden. Du kan ændre flere indstillinger for at tilpasse funktionsmåden af modulet.
-1. Afslut redigeringen af siden, og udgiv den.
+1. Vælg en videofil i Stifinder, og vælg derefter **Åbn**.
+1. I dialogboksen **Overfør medieelement** skal du angive en titel og andre nødvendige oplysninger og derefter vælge **OK**.
+1. I dialogboksen **Medievælger** skal du vælge **Luk**.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Nu vises videomodulet på siden. Du kan ændre flere indstillinger for at tilpasse funktionsmåden af modulet.
+1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

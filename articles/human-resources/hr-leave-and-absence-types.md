@@ -3,12 +3,12 @@ title: Konfigurere orlovs- og fraværstyper
 description: Konfigurer de orlovstyper, medarbejderne kan tage i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3198044"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428587"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere orlovs- og fraværstyper
 
@@ -56,7 +56,9 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 
 8. Under **Begræns adgangen til valgte roller** skal du vælge, om du vil begrænse adgangen. Vælg derefter sikkerhedsrollerne under **Sikkerhedsroller for denne orlovstype**. Sikkerhedsrollerne defineres i den arbejdsgang, du valgte under **Arbejdsgangs-id** tidligere i denne procedure.
 
-9. Vælg **Gem**.
+9. Under **Suspensionsforhold** skal du vælge, om du ønsker, at denne orlovstype enten skal suspendere en anden orlovstype, eller den skal suspenderes af en anden orlovstype. Når der sendes en orlovsanmodning for den suspenderende orlovstype, oprettes der automatisk en orlovssuspendering for den suspenderede orlovstype. 
+
+10. Vælg **Gem**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurere regler for orlovstype
 
@@ -66,16 +68,15 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 
    Du kan angive helligdage i arbejdstidskalenderen. Du kan finde flere oplysninger under [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
    
-## <a name="configure-preview-features"></a>Konfigurere prøveversioner
-
-Hvis du har aktiveret prøvefunktioner for orlov og fravær, skal du også konfigurere indstillingerne for dem.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. Vælg orlovstypen for de overførselssaldi, der skal overføres til. Du kan også oprette en ny orlovstype til overførsel. 
-
+ 3. Angiv **Overført orlovstype** for orlovstypen. Når du vælger denne indstilling, overføres eventuelle overførte saldi til den angivne orlovstype. Type overført orlov skal også medtages i orlovs- og fraværsplanen. 
+ 
+ 4. Definer **Udløbsregler** for orlovstypen. Når du konfigurerer denne indstilling, kan du vælge enheden dage eller måneder og angive varigheden for udløbet. Du kan også angive ikrafttrædelsesdatoen for udløbsreglen. De orlovssaldi, der findes på tidspunktet for udløbet, trækkes fra orlovstypen og afspejles i orloven. 
+ 
+ 
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Oprette en plan for orlov og fravær](hr-leave-and-absence-plans.md)
 - [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
+- [Stoppe orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
+

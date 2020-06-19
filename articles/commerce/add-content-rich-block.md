@@ -3,7 +3,7 @@ title: Tekstblokmodul
 description: Dette emne omhandler tekstblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc5b2fa35633b1ce7f7ffefacec318e14fa8db3f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025591"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411129"
 ---
 # <a name="text-block-module"></a>Tekstblokmodul
 
@@ -46,9 +46,13 @@ Tekstblokmoduler kan bruges på følgende måder:
 * Til tilføjelse af brugerdefinerede meddelelser på en side med produktdetaljer (f. eks. "Gratis levering af ordrer over $50").
 * For ansvarsfraskrivelser og kontaktoplysninger på sider med produktdetaljer, indkøbsvognsider, betalingssider og andre sider (f. eks. "Levering og returnering sker i henhold til butikkens politikker").
 
+Det følgende billede viser et eksempel på et tekstblokmodul, der bruges på en startside.
+
+![Eksempel på et tekstblokmodul](./media/ecommerce-textblock.PNG)
+
 ## <a name="text-block-module-properties"></a>Egenskaber for Tekstblokmodul
 
-| Egenskabsnavn     | Value                                            | Beskrivelse |
+| Egenskabsbetegnelse     | Værdi                                            | Beskrivende tekst |
 |-------------------|--------------------------------------------------|-------------|
 | RTF         | RTF                                        | Afsnitstekst. Nogle grundlæggende RTF-funktioner understøttes, f. eks. fed, understreget og kursiv tekst. |
 | Brugerdefineret klassenavn | Klassenavn for overlappende typografiark (CSS)        | Navnet på en brugerdefineret CSS-klasse, som en udvikler leverer til at formatere dette modul. Klassenavnet skal defineres i temapakken. |
@@ -58,15 +62,21 @@ Tekstblokmoduler kan bruges på følgende måder:
 
 Hvis du vil føje et tekstblokmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Opret en sideskabelon med navnet **Indholdsskabelon**. 
-1. På pladsen **Brødtekst** skal du tilføje et **Standardside**-modul.
-1. Afslut redigeringen af skabelonen, og udgiv den.
-1. Brug den indholdsskabelon, som du netop har oprettet, til at oprette en side med navnet **Indholdsside**.
-1. Tilføj et containermodul på pladsen **Hoved** på den nye side.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. I dialogboksen **Ny skabelon** skal du under **Skabelonnavn** angive **Indholdsskabelon**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. Vælg dialogboksen **Vælg en skabelon**, og vælg **Indholdsskabelon**. Under **Sidenavn** skal du angive **Indholdsside** og derefter vælge **OK**.
+1. På pladsen **Hoved** på den nye side skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
 1. Angiv egenskaben **Bredde** til **Fyld container**i egenskabsruden for containermodulet.
-1. Føj et tekstblokmodul til containermodulet. 
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Tekstblok** og derefter **OK**. 
 1. Føj tekst til **RTF-tekst**-feltet i egenskabsruden af tekstblokmodulet.
-1. Afslut redigeringen af siden, og udgiv den.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
+1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

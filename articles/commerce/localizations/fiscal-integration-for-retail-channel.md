@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057550"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403209"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
@@ -137,8 +137,9 @@ Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i Retail SDK:
 - [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md)
 - [Eksempel på integration af bonprinter for Polen](emea-pol-fpi-sample.md)
 - [Eksempel på integration af regnskabsregistreringstjeneste for Østrig](emea-aut-fi-sample.md)
-- [Eksempel på integration af regnskabsregistreringstjeneste for Tjekkiet](emea-cze-fi-sample.md)
+- [Eksempel på integration af regnskabsregistreringstjeneste i Tjekkiet](emea-cze-fi-sample.md)
 - [Eksempel på integration med kontrolenhed for Sverige](./emea-swe-fi-sample.md)
+- [Eksempel på integration af regnskabsregistreringstjeneste i Tyskland](./emea-deu-fi-sample.md)
 
 Følgende regnskabsintegrationsfunktioner er også tilgængelige i Retail SDK, men kan i øjeblikket ikke udnytte regnskabsintegrationsstrukturen. Overførsel af denne funktion til regnskabsintegrationsstrukturen er planlagt til senere opdateringer.
 

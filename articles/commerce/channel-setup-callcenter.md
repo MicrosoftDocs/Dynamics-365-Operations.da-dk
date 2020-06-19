@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131725"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410407"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurere en callcenter-kanal
 
@@ -31,10 +31,10 @@ ms.locfileid: "3131725"
 
 Dette emne beskriver, hvordan du opretter en ny callcenter-kanal i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 
-I Dynamics 365 Commerce er et callcenter en type detailkanal, som kan defineres i programmet. Hvis du definerer en kanal til dit callcenter, kan systemet binde specifikke data og ordrebehandlingstandarder til salgsordrer. Mens en virksomhed kan definere flere callcenter-kanaler i Commerce, er det vigtigt at bemærke, at en individuel bruger kun kan knyttes til én callcenter-kanal. 
+I Dynamics 365 Commerce er et callcenter en slags Commerce-kanal, som kan defineres i programmet. Hvis du definerer en kanal til dit callcenter, kan systemet binde specifikke data og ordrebehandlingstandarder til salgsordrer. Mens en virksomhed kan definere flere callcenter-kanaler i Commerce, er det vigtigt at bemærke, at en individuel bruger kun kan knyttes til én callcenter-kanal. 
 
 Før du opretter en ny callcenter-kanal, skal du sikre dig, at du har fuldført [Forudsætningerne for kanalopsætning](channels-prerequisites.md).
 
@@ -84,7 +84,7 @@ Hvis du vil oprette betalingsmetoder, skal du følge disse trin for hver af de b
 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
-![Eksempel på betalingsmetoder](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmetoder](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Konfigurer leveringsmåder
 
