@@ -589,6 +589,8 @@
                   href: cost-management/inventory-value-report-storage.md
                 - name: Lagerrapport over aldersfordelt lager
                   href: cost-management/inventory-aging-report-storage.md
+                - name: Eksempler på aldersfordelt lager og regel
+                  href: cost-management/inventory-aging-report.md
             - name: Produktionsregnskab
               items:
                 - name: Styklistekalkulationer
@@ -707,7 +709,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Føje økonomiske dimensioner til samlede målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Oprette analyserapporter ved hjælp af Power BI Desktop
+                - name: Oprette analyserapporter ved hjælp af PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json

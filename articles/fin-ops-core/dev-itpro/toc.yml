@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platformsopdateringer til 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platformsopdatering 33 (april 2020)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede Platform-funktioner
@@ -148,8 +146,10 @@
                                   href: data-entities/dual-write/requirements-and-prerequisites.md
                                 - name: Sådan bruges guiden Dobbeltskrivning til at sammenkæde dine miljøer
                                   href: data-entities/dual-write/link-your-environment.md
-                                - name: Aktiver enhedstilknytning for dobbeltskrivning
+                                - name: Aktivere enhedstilknytning for dobbeltskrivning
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Overføre valutadatatype til dobbelt skrivning
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Administrere dobbeltskrivning
                           items:
                             - name: Tilpasse objekt- og felttilknytninger
@@ -364,6 +364,8 @@
           items:
             - name: Azure Data Lake-oversigt
               href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurere eksport til Azure Data Lake
+              href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-apps i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gøre enhedslageret tilgængeligt som en Data Lake
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Diagnosticering i det lokale miljø
                       href: deployment/on-premises-diagnostics.md
+                    - name: Gendanne lokal konfiguration for genoprettelse efter nedbrud
+                      href: deployment/onprem-dr.md
                     - name: PowerBI.com-integration med lokale miljøer
                       href: analytics/entity-store-on-prem.md
                     - name: Omkonfigurere miljøer
@@ -652,11 +656,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-klasser i anmodnings- eller svarscenarier
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Skrive forretningsregel ved hjælp af C#- og X++-kildekode'
+                - name: Skrive forretningsregel ved hjælp af C#- og X++-kildekode
                   href: dev-tools/write-business-logic.md
                 - name: Ændringer i X++ og X++-kompileren
                   href: dev-tools/programming-language-support.md
-                - name: 'LINQ-udbyder for C#'
+                - name: LINQ-udbyder for C#
                   href: dev-tools/linq-provider-c.md
                 - name: Skrive Best Practice-regler
                   href: dev-tools/author-best-practice-rules.md
@@ -716,7 +720,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: X++-attributklasser
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'Sammenligning af X++ og C#'
+                    - name: Sammenligning af X++ og C#
                       href: dev-ref/xpp-cs-comparison.md
                     - name: X++-syntaks
                       href: dev-ref/xpp-syntax.md
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Sikkerhedsarkitektur
                   href: sysadmin/security-architecture.md
+                - name: Kryptere i Finance and Operations-apps
+                  href: sysadmin/encryption.md
                 - name: Angive timeout for sessionsinaktivitet
                   href: sysadmin/session-idle-timeout.md
                 - name: Brugsklare sikkerhedsrapporter
