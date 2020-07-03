@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388110"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431124"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Personale i Teams
 
@@ -45,6 +45,7 @@ Få flere oplysninger om styring af app-tilladelser i Teams i [Styre app-tillade
 
 | Udsted | Status |
 | --- | --- |
+| Fejl: Der er problemer med at finde et miljø, der skal oprettes forbindelse til. | Du kan få vist denne fejl, selvom du har bekræftet, at brugeren kan få adgang til et eller flere personalemiljøer (HR). Du kan heller ikke se alle de miljøer, du forventer. sIndtil dette problem er løst, skal du slette brugeren og derefter importere vedkommende igen for at løse problemet. |
 | Saldoen er forkert, når der angives fri for en fremtidig dato. | Prognosefunktion er ikke tilgængelig endnu. Saldoen viser den aktuelle dato. |
 | Når du reducerer antallet af timer, der er taget i en eksisterende anmodning, går **Den resterende saldo** ned i stedet for. | Vi løser dette kendte problem på et senere tidspunkt. Visningen er ikke korrekt, men de korrekte beløb reguleres ved afsendelsen. |
 | To kort for **Kommende fridage** vises for de samme datoer. | Kortene repræsenterer de enkelte indsendelser. Vi fortsætter med at få feedback og foretage justeringer. |

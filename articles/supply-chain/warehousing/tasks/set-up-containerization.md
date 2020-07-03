@@ -3,7 +3,7 @@ title: Konfigurere containerisering
 description: Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lokationsstyring.
 author: ShylaThompson
 manager: tfehr
-ms.date: 07/22/19
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383291"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454712"
 ---
 # <a name="set-up-containerization"></a>Konfigurere containerisering
 
@@ -75,7 +75,7 @@ Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lo
 5. Skriv en værdi i feltet **Kode for bølgetrin**.
 6. Markér afkrydsningsfeltet **Tillad opdeling af plukninger**.
 7. Vælg **Gem**.
-8. Klik på **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt**, når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
+8. Vælg **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt**, når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
 9. Vælg **Ny**.
 10. Vælg en indstilling i feltet **Tabel**.
 11. Indtast eller vælg en værdi i feltet **Valg af felt**.

@@ -3,7 +3,7 @@ title: Karruselmodul
 description: Dette emne omhandler karruselmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 35aaf35419a8c5b83b2a3e1136a02200bf347c6b
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269722"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411290"
 ---
 # <a name="carousel-module"></a>Karruselmodul
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler karruselmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
@@ -44,9 +44,13 @@ Du kan tilføje indholdsblokmoduler inde i et karruselmodul. Egenskaberne for ka
 - En karrusel, der indeholder flere kampagnemoduler, kan bruges på en side med produktdetaljer.
 - En karrusel kan bruges på en hvilken som helst marketingside til at vise flere kampagner eller produkter.
 
+Det følgende billede viser et eksempel på et karruselmodul, der bruges på en startside. Dette karruselmodul indeholder flere blokelementer med indhold.
+
+![Eksempel på et karruselmodul](./media/Hero.PNG)
+
 ## <a name="carousel-module-properties"></a>Egenskaber for karruselmodul
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivelse |
+| Egenskabsbetegnelse             | Værdi                 | Beskrivende tekst |
 |---------------------------|-----------------------|-------------|
 | Automatisk afspilning                  | **Sand** eller **Falsk** | Hvis værdien er angivet til **Sand**, sker overgangen mellem varerne inde i karrusellen automatisk. Hvis værdien er angivet til **Falsk**, sker der ingen overgang, medmindre kunden bruger tastaturet eller musen til at flytte fra en vare til den næste. |
 | Interval for glidende interval | En værdi i sekunder    | Intervallet for overgange mellem varerne. |
@@ -58,7 +62,7 @@ Du kan tilføje indholdsblokmoduler inde i et karruselmodul. Egenskaberne for ka
 
 Hvis du vil føje et karruselmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Vælg **Ny** for at oprette en sideskabelon.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv **Karruselskabelonskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
 1. På pladsen **Brødtekst** skal du tilføje et **Standardside**-modul.
 1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.  

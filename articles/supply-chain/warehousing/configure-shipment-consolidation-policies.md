@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383736"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403329"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere politikker for forsendelseskonsolidering
 
@@ -270,7 +270,7 @@ I dette eksempel skal du oprette en *Debitor tillader konsolidering*-politik, de
 
 - Politikken vil forespørge efter en bestemt ordrepulje for at identificere debitorer, der accepterer konsoliderede forsendelser.
 - Konsolidering med åbne forsendelser er deaktiveret.
-- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-politikken (for at replikere det tidligere afkrydsningsfeltet **Lagersted**).
+- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted**).
 
 - Du kan tilsidesætte reglen på en salgsordre ved at vælge en anden ordrepulje.
 
@@ -306,7 +306,7 @@ I dette eksempel skal du oprette en *Lagersted tillader konsolidering*-politik, 
 
 - Politikken vil forespørge efter en bestemt ordrepulje for at identificere lagersteder, der kan konsolidere forsendelser.
 - Konsolidering med åbne forsendelser er deaktiveret.
-- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-politikken (for at replikere det tidligere afkrydsningsfeltet **Lagersted**).
+- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted**).
 
 Dette forretningseksempel kan typisk håndteres ved hjælp af de standardpolitikker, du har oprettet i [scenarie 1](#scenario-1). Du kan dog også oprette ensartede politikker manuelt ved at følge disse trin.
 

@@ -3,7 +3,7 @@ title: Styring af detailsalgspriser
 description: I dette emne beskrives begreberne for oprettelse og styring af salgspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057481"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431995"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -53,7 +53,9 @@ I følgende illustration vises, hvordan prisgrupperne bruges. I denne illustrati
 
 Når du opretter prisgrupper, bør du ikke bruge samme prisgruppe til flere typer Commerce-enheder. I modsat fald kan det være vanskeligt at afgøre, hvorfor en bestemt pris eller rabat anvendes til en transaktion.
 
-Når den røde stiplede linje i illustrationen vises, understøtter Commerce kernefunktionaliteten i Microsoft Dynamics 365 for en prisgruppe, som er indstillet direkte for en debitor. I så fald får du imidlertid kun samhandelsaftaler om salgspris. Hvis du vil anvende kundespecifikke priser, anbefales det, at du ikke angiver prisgrupper direkte for debitoren. Du skal i stedet bruge tilknytninger.
+Når den røde stiplede linje i illustrationen vises, understøtter Commerce kernefunktionaliteten i Microsoft Dynamics 365 for en prisgruppe, som er indstillet direkte for en debitor. I så fald får du imidlertid kun samhandelsaftaler om salgspris. Hvis du vil anvende kundespecifikke priser, anbefales det, at du ikke angiver prisgrupper direkte for debitoren. Du skal i stedet bruge tilknytninger. 
+
+Bemærk, at hvis prisgruppen er angivet for debitoren, så bliver denne prisgruppe knyttet til salgsordrehovedet for de ordrer, der er oprettet for denne debitor. Hvis brugeren ændrer prisgruppen i ordrehovedet, erstattes den gamle prisgruppe kun med den nye prisgruppe for den aktuelle ordre. Den gamle prisgruppe vil f.eks. ikke påvirke den aktuelle ordre, men den vil stadig være knyttet til kunden for fremtidige ordrer.
 
 De følgende afsnit indeholder flere oplysninger om de Commerce-enheder, du kan bruge til at angive specifikke priser, når der anvendes prisgrupper. Konfigurationen af priser og rabatter for disse enheder er en proces i to trin. Disse trin kan udføres i vilkårlig rækkefølge. Den logiske rækkefølge er dog først at angive prisgrupperne for enhederne, fordi dette trin ofte kun skal udføres en enkelt gang under implementeringen. Derefter, når der oprettes priser og rabatter, kan du oprette prisgrupper for de enkelte priser og rabatter.
 
@@ -226,6 +228,7 @@ Programmet til prissætning **understøtter ikke** følgende prisfunktioner:
 - Prissætning efter lokation eller lokation og lagerstedets lagringsdimensioner understøttes ikke. Hvis du kun angiver lokationsdimensionen i handelsaftalerne, ignorerer priserne lokationen og anvender handelsaftalen på alle lokationer. Hvis du angiver både lokation og lagersted, er adfærden udefineret/ikke afprøvet, fordi det forventes, at detailhandlere bruger butikkens prisgrupperne til at styre priserne for de enkelte butikker/lagersteder.
 - Attributbaseret prissætning understøttes ikke.
 - Gennemgang af leverandørrabatter understøttes ikke.
+- Standardprissætningsprogrammet i Supply Chain Management understøtter prisberegningen baseret på "ønsket afsendelsesdato" og "ønsket modtagelsesdato" sammen med dags dato. Detailprissætning understøtter dog ikke disse værdier i øjeblikket. Årsagen er, at kunder i B2C-scenarier ikke forventer, at den ønskede leveringsdato påvirker vareprisen. I nogle tilfælde har detailhandlere både B2B- og B2C-operationer. I forbindelse med B2B-operationer er det almindeligt at ændre priser ud fra leveringsdatoerne. Disse detailhandlere kan bruge prissætning i Supply Chain Management til deres B2B-forretning og detailprissætning til deres B2C-forretning. Detailprissætning kommer kun på tale, hvis programbrugeren tilføjes som bruger af et call center, så de detailhandlende kan tildele visse brugere, der arbejder med prissætningen i Supply Chain Management, og tildele nogle få stykker, der arbejder med detailprissætning, dvs. disse brugere skal tilføjes som brugere af et call center. Desuden skal funktionen **Brug dags dato til beregning af priser** i sektionen **Commerce-parametre > prissætning og rabatter > diverse** være aktiveret. På denne måde kan de gøre brug af en debitorparameterværdi for den ønskede afsendelsesdato eller den ønskede modtagelsesdato for prissætning i Supply Chain Management, men detailprissætningen bruger fortsat dags dato til prisberegning.
 
 Programmet til prissætning understøtter desuden **kun** følgende prisfunktioner:
 

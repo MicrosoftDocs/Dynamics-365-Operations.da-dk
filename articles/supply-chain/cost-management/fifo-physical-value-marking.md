@@ -3,7 +3,7 @@ title: FIFO med fysisk værdi og afmærkning
 description: FIFO (First in, First out) er en lagermodel, hvor de først anskaffede tilgange afgår først. Økonomisk opdaterede afgange fra lageret udlignes mod de første økonomisk opdaterede tilgange til lageret på baggrund af den økonomiske dato for lagertransaktionen.
 author: AndersGirke
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e237d1e9f9bb83d0fe65556eca07c8757f920664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a66a1b977a4e36f9ad057683366c39a81ba1d833
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201749"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454620"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk værdi og afmærkning
 
@@ -49,8 +49,8 @@ I dette eksempel er det ikke angivet, at varemodelgruppen skal medtage fysisk v�
 -   4a. Fysisk lagertilgang for et antal på 1 til en kostpris a kr. 30,00 pr. stk.
 -   4b. Økonomisk lagertilgang for et antal på 1 til en kostpris a kr. 30,00 pr. stk.
 -   5a. Fysisk lagerafgang for et antal på 1 til en kostpris af kr. 20,00 pr. stk. (løbende gennemsnit af økonomisk opdaterede posteringer).
--   5b. Økonomisk lagerafgang for et antal på 1 til en kostpris af kr. 20,00 pr. stk. (løbende gennemsnit af økonomisk opdaterede posteringer).
--   6. Lagerlukningen udføres. På baggrund af FIFO-metoden udlignes den første økonomisk opdaterede afgang mod den første økonomisk opdaterede tilgang. Der foretages en regulering på USD -10,00 på afgangsposteringen.
+-   5b. Økonomisk lagerafgang for et antal på 1 til en kostpris af kr. 15,00 pr. stk. (løbende gennemsnit af økonomisk opdaterede posteringer).
+-   6. Lagerlukningen udføres. På baggrund af FIFO-metoden udlignes den første økonomisk opdaterede afgang mod den første økonomisk opdaterede tilgang. Der foretages en regulering på USD -5,00 på afgangsposteringen.
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer. Følgende illustrationer viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. 
 

@@ -1,42 +1,150 @@
 ---
-title: Færdigmelde til en id-kontrolleret lokation fra jobkortenheden
-description: I dette emne beskrives processen til fuldførelse af færdigvarer på en produktionsordre til et lager, når et id styrer lokationen.
+title: Færdigmelde fra jobkortenheden
+description: Dette emne beskriver, hvordan systemet konfigureres, så brugere af en jobkortenhed kan rapportere færdigvarer fra en produktionsordre til lageret.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
+ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
-ms.custom: 19351
-ms.assetid: bcc9e242-b4b8-4144-b14d-c3c106fb40ec
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2019-09-06
-ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: 74e1e30f5afe51cd0ecec2530ffcb9a59eec5fee
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.search.validFrom: 2020-05-18
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f5d34893ddc8adc3785ec50dbd72438cf8f68c5d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367239"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403256"
 ---
-# <a name="report-as-finished-to-a-license-plate-controlled-location-from-the-job-card-device"></a>Færdigmelde til en id-kontrolleret lokation fra jobkortenheden
+# <a name="report-as-finished-from-the-job-card-device"></a>Færdigmelde fra jobkortenheden
 
 [!include [banner](../includes/banner.md)]
 
-Den proces, der kaldes færdigmelding, fuldfører færdigvarerne på en produktionsordre til lageret. Hvis det færdige produkt er aktiveret til de avancerede lagerprocesser, færdigmeldes produktet til en lokation, der kaldes udlagringslokationen for produktionen. Du kan finde oplysninger om, hvordan du konfigurerer udlagringslokationen for produktionen, under [Produktionsudlagringslokation](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location).
+Arbejderne skal bruge siden **Rapportstatus** på jobkortenheden til at rapportere de mængder, der er færdiggjort for et produktionsjob.
 
-Hvis udlagringslokationen for produktionen er kontrolleret af nummerplader, skal der angives en nummerplade, når færdigmeldingen rapporteres. Feltet **Id** vises i prompten **Rapport i gang** på siden **Jobkortenhed**. Feltet er kun synligt i prompten **Rapportfremgang**, når der rapporteres om den sidste operation i produktionsordren, og varen til produktionsordren er aktiveret for lagerstedets styringsprocesser.
+## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Kontrollere, om færdigmeldte mængder føjes til lageret
 
-Der er to muligheder for at angive nummerpladen:
+Udfør følgende trin for at kontrollere, om og hvordan de mængder, der er færdigmeldt i den sidste operation, skal føjes til lageret.
 
-- Brugeren vælger et eksisterende nummerpladenummer i feltet nummerplade.
-- Nummerpladenummeret genereres automatisk fra en nummerserie og nulstilles til nummerpladefeltet.
+1. Gå til **Produktkontrol \> Opsætning \> Produktionsudførelse \> Produktionsordrestandarder**.
+1. På fanen **Færdigmelding** skal du angive feltet **Opdater færdigmelding online** til en af følgende værdier:
 
-Muligheden for automatisk at oprette nummerpladen konfigureres ved at vælge indstillingen **Generer nummerplade** på siden **Konfigurer jobkort for enheder**.
+    - **Nej** – Der føjes intet antal til lageret, når der rapporteres mængder for den sidste operation. Status for produktionsordren ændres aldrig.
+    - **Status + antal** – Statussen for produktionsordren ændres til *Færdigmeldt*, og antallet vil blive færdigmeldt til lageret.
+    - **Antal** – Antallet færdigmeldes til lageret, men statussen for produktionsordren ændres aldrig.
+    - **Status** – Kun statussen for produktionsordren ændres. Der føjes ingen antal til lageret, når der rapporteres mængder for den sidste operation.
+
+> [!NOTE]
+> Antal spores ikke på lageret, hvis de operationer, de er færdigmeldt på, ikke er defineret som den sidste operation. Disse antal kan dog bruges til at få vist status. De kan også inkluderes i regler, der styrer, om arbejderne kan starte den næste operation, før en defineret tærskel for rapporterede antal i den forrige operation nås. Du kan definere disse regler på fanen **Validering af antal** på siden **Produktionsordrestandarder**.
+
+Du kan finde flere oplysninger om, hvordan du arbejder med siden **Produktionsordrestandarder** i [Produktionsparametre i produktionsudførelse](production-parameters-manufacturing-execution.md).
+
+## <a name="report-batch-controlled-items-as-finished"></a>Færdigmelde batchstyrede varer
+
+Jobkortenheden understøtter tre scenarier til rapportering af batchvarer. Disse scenarier gælder både for varer, der er aktiveret til avancerede lagerprocesser, og for varer, der ikke er aktiveret til avancerede lagerprocesser.
+
+- **Manuelt tildelte batchnumre:** Arbejderne angiver et brugerdefineret batchnummer. Dette batchnummer kan komme fra en ekstern kilde, der ikke er kendt af systemet.
+- **Foruddefinerede batchnumre:** Arbejderne vælger et batchnummer på en liste over batchnumre, som systemet automatisk genererer, før produktionsordren frigives til jobkortenheden.
+- **Faste batchnumre:** Arbejderne angiver og vælger ikke et batchnummer. I stedet tildeler systemet automatisk et batchnummer til produktionsordren, før den frigives.
+
+Følg disse trin for at aktivere et scenarie.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
+1. Vælg produktet, der skal konfigureres.
+1. I oversigtspanelet **Styr lager** i feltet **Batchnummergruppe** skal du vælge den sporingsnummergruppe, der er konfigureret til at understøtte dit scenarie.
+
+> [!NOTE]
+> Hvis der ikke er knyttet en batchnummergruppe til et batchstyret produkt, er jobkortenheden som standard angivet til manuel indtastning for batchnummeret under færdigmelding.
+
+I det følgende underafsnit beskrives, hvordan du kan konfigurere sporingsnummergrupper, så hvert af de tre scenarier for rapportering om batchvarer understøttes.
+
+### <a name="enable-batch-number-reporting-on-the-job-card-device"></a>Aktivere batchnummerrapportering på jobkortenheden
+
+Hvis du vil sætte dine jobkortenheder i gang med at acceptere et batchnummer under færdigmeldingen, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
+
+1. Forbedret brugeroplevelse for dialogboksen Rapport i gang på jobkortenheden.
+1. Aktivér denne funktion for at kunne angive batch- og serienumre, når der færdigmeldes fra jobkortenheden (prøveversion)
+
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Konfigurere en sporingsnummergruppe, så arbejderne kan tildele et batchnummer manuelt
+
+Du skal følge disse trin for at konfigurere en sporingsnummergruppe og tillade manuelt tildelte batchnumre.
+
+1. Gå til **Lagerstyring \> Opsætning \> Dimensionser \> Sporingsnummergrupper**.
+1. Opret eller vælg den sporingsnummergruppe, der skal konfigureres.
+1. I oversigtspanelet **Generelt** skal du angive indstillingen **Manuel** til **Ja**.
+
+    ![Siden sporingsnummergrupper](media/tracking-number-group-manual.png "Siden sporingsnummergrupper")
+
+1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som batchnummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
+
+Når du bruger dette scenarie, er feltet **Batchnummer**, som siden **Rapport i gang** på jobkortenheden indeholder, en tekstboks, hvor arbejderne kan angive en hvilken som helst værdi.
+
+![Siden Rapportstatus med et felt til manuelle batchnumre](media/job-card-device-batch-manual.png "Siden Rapportstatus med et felt til manuelle batchnumre")
+
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>Konfigurere en sporingsnummergruppe, der viser en liste over foruddefinerede batchnumre
+
+Du skal følge disse trin for at konfigurere en sporingsnummergruppe og lave en liste over foruddefinerede batchnumre.
+
+1. Gå til **Lagerstyring \> Opsætning > Dimensioner \> Sporingsnummergrupper**.
+1. Opret eller vælg den sporingsnummergruppe, der skal konfigureres.
+1. I oversigtspanelet **Generelt** skal du angive indstillingen **Kun på lagertransaktioner** til **Ja**.
+1. Brug feltet **Pr. antal** til at opdele batchnumre pr. antal ud fra den værdi, du angiver. Du har f.eks. en produktionsordre på ti stykker, og feltet **Pr. antal** er angivet til *2*. I dette tilfælde tildeles der fem batchnumre til produktionsordren, når den oprettes.
+
+    ![Siden sporingsnummergrupper](media/tracking-number-group-predefined.png "Siden Sporingsnummergrupper")
+
+1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som batchnummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
+
+Når du bruger dette scenarie, er feltet **Batchnummer**, som siden **Rapport i gang** på jobkortenheden indeholder, en rulleliste, hvor arbejderne skal vælge en foruddefineret værdi.
+
+![Siden Rapportstatus med en liste over foruddefinerede batchnumre](media/job-card-device-batch-predefined.png "Siden Rapportstatus med en liste over foruddefinerede batchnumre")
+
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-batch-numbers"></a>Konfigurere en sporingsnummergruppe, som automatisk tildeler batchnumre
+
+Hvis der automatisk skal tildeles batchnumre uden arbejderinput, skal du følge disse trin for at konfigurere en sporingsnummergruppe.
+
+1. Gå til **Lagerstyring \> Opsætning \> Dimensionser \> Sporingsnummergrupper**.
+1. Opret eller vælg den sporingsnummergruppe, der skal konfigureres.
+1. I oversigtspanelet **Generelt** skal du angive indstillingen **Kun på lagertransaktioner** til **Nej**.
+1. Angiv indstillingen **Manuel** til **Nej**.
+
+    ![Siden sporingsnummergrupper](media/tracking-number-group-fixed.png "Siden sporingsnummergrupper")
+
+1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som batchnummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
+
+Når du bruger dette scenarie, viser feltet **Batchnummer**, som siden **Rapport i gang** på jobkortenheden leverer, en værdi, men arbejderne kan ikke redigere denne værdi.
+
+![Siden Rapportstatus med et fast batchnummer](media/job-card-device-batch-fixed.png "Siden Rapportstatus med et fast batchnummer")
+
+## <a name="report-as-finished-to-a-license-plate"></a>Rapportere som færdig til en nummerplade
+
+Avancerede lagerprocesser kan bruge nummerpladedimensionen til at spore lager på lagersteder, der er konfigureret til dette formål. I dette tilfælde er nummeret på nummerpladen nødvendigt, når en arbejder rapporterer antal som færdige.
+
+### <a name="enable-license-plate-reporting-and-label-printing"></a>Aktivere nummerpladerapportering og labeludskrivning
+
+Hvis du vil bruge de funktioner, der er beskrevet i dette afsnit, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
+
+1. Id for færdigmelding tilføjet i jobkortenheden
+1. Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden
+1. Udskriv etiket fra jobkortenhed
+
+### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>Konfigurere rapportering som færdig til en nummerplade
+
+Hvis du vil styre, om arbejdere skal genbruge en eksisterende nummerplade eller generere en ny nummerplade, når de færdigmelder antal, skal du følge disse trin.
+
+1. Gå til **Produktionsstyring \> Opsætning \> Produktionsudførelse \> Konfigurere jobkort for enheder**.
+2. For hver enhed skal du angive følgende indstillinger:
+
+    - **Generér nummerplade** – Angiv denne indstilling til **Ja** for at generere en ny nummerplade for hver færdigmeldingsrapport. Angiv den til **Nej**, hvis en eksisterende nummerplade skal anvendes til hver færdigmeldingsrapport.
+    - **Udskriv label** – Angiv denne indstilling til **Ja**, hvis arbejderen skal udskrive en nummerpladelabel for hver færdigmeldingsrapport. Angiv den til **Nej**, hvis der ikke kræves en label. 
+
+![Siden Konfigurere jobkort for enheder](media/config-job-card-raf.png "Siden Konfigurere jobkort for enheder")
+
+> [!NOTE]
+> Gå til **Lokationsstyring \> Opsætning \> Dokumentrute \> Dokumentrute** for at konfigurere labelen. Yderligere oplysninger finder du i afsnittet [Aktivere udskrivning af id-etiket](../warehousing/tasks/license-plate-label-printing.md).

@@ -3,7 +3,7 @@ title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260500"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412348"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -117,7 +117,11 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 - Brug værktøjet **Flyt** til at flytte et element til et andet sted inden i den aktuelle gruppe af elementer. Bemærk, at du ikke kan flytte et element uden for dets overordnede gruppe. Hvis du vil bruge dette værktøj, skal du vælge knappen **Flyt** på værktøjslinjen og derefter vælge det element, du vil flytte. Når du vælger et element, fastlægger appen de steder, hvor elementet kan flyttes hen. Disse steder kaldes *slipzoner*. Når du trækker elementet omkring i den aktuelle gruppe, vises hver slipzone som en farvet, fed linje ud for det område, hvor elementet kan slippes.
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra det ved at vælge felterne.
-- Brug værktøjet **Kræv** for at udpege et element, der kræves til dataindtastning. Når du vælger knappen **Kræv** på værktøjslinjen, vises alle elementer, der er blevet tilpasset til at være påkrævet, i en nedtonet container. Du kan derefter gøre dem ikke påkrævet igen. Denne indstilling er kun tilgængelig i en fremtidig udgave, hvor funktionerne [Gemte visninger](saved-views.md) og **Relevante felter efter behov vha. tilpasning** er aktiveret.
+- Brug værktøjet **Kræv** for at udpege et element, der kræves til dataindtastning. Når du vælger knappen **Kræv** på værktøjslinjen, vises alle elementer, der er blevet tilpasset til at gøre dem påkrævet, i en nedtonet container. Du kan derefter gøre dem ikke påkrævet igen. Denne indstilling er kun tilgængelig i version 10.0.12 og senere, når funktionen **Relevante felter efter behov vha. tilpasning** er aktiveret.
+
+    > [!IMPORTANT]
+    > Version 10.0.12 er en prøveversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om frigivelser af eksempelversioner her: [Tilgængelighed af tjenesteopdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - Brug værktøjet **Lås** til at markere et element som redigerbart eller ikke-redigerbart. Når du vælger knappen **Lås** på værktøjslinjen, vises alle elementer, der i øjeblikket ikke er redigerbare, i en nedtonet container. Du kan derefter gøre dem redigerbare igen. Bemærk, at nogle af felterne er obligatoriske og ikke kan gøres ikke-redigerbare. Der vises en hængelås ud for de pågældende felter.
 - Brug knappen **Tilføj en app fra Power Apps** til at integrere en app, der er oprettet ved hjælp af Microsoft Power Apps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en Power Apps-app på en side, under [Integrere apps fra Power Apps](embed-power-apps.md). Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er deaktiveret.  
 - Brug knappen **Tilføj en app** til at integrere en app, der enten er oprettet i Microsoft Power Apps eller en tredjepart, på siden. Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er aktiveret. 
@@ -159,28 +163,21 @@ Hvis du vil tilpasse dashboardet, skal du højreklikke på et felt og derefter v
 - Hvis du vil omarrangere felterne i arbejdsområdet, skal du vælge **Tilpas denne side** for at åbne værktøjslinjen **Brugertilpasning**. Du kan derefter bruge værktøjet **Flyt** til at omarrangere felterne efter behov.
 - For at oprette et nyt arbejdsområdefelt skal du vælge **Tilføj et arbejdsområde** i egenskabsvinduet. Der oprettes et nyt felt i arbejdsområdet i bunden af dashboardet. Du kan omdøbe dette nye arbejdsområdefelt, som du vil. Du kan også føje lister, felter og links til arbejdsområdet som beskrevet i sektionen [Føje lister, felter eller links til arbejdsområder](#adding-a-tile-list-or-link-to-a-workspace) i dette emne.
 
+
+## <a name="sharing-personalizations"></a>Deling af tilpasninger
+Når du har tilpasset en side, kan du dele dine tilpasninger med andre brugere ved at eksportere den tilpassede side. Du kan bede de andre brugere om at åbne den tilpassede side og importere den tilpasningsfil, du har oprettet. Alternativt kan du give tilpasningerne til en bruger med administratorrettigheder. Den bruger kan derefter anvende din tilpasningsfil på mange brugere samtidigt ved hjælp af administrationssiden **Tilpasning**.
+
 ## <a name="administration-of-personalizations"></a>Administration af brugertilpasninger
+Siden **Tilpasning** er den centrale hub til administration af personlige indstillinger på et organisationsniveau. Indholdet og egenskaberne på denne side afhænger af, om funktionen **Gemte visninger** er blevet aktiveret.  
 
-Når du har tilpasset en side, kan du dele dine tilpasninger med andre brugere ved at eksportere den tilpassede side. Du kan bede de andre brugere om at åbne den tilpassede side og importere den tilpasningsfil, du har oprettet. Alternativt kan du give tilpasningerne til en bruger med administratorrettigheder. Denne bruger kan derefter anvende din fil med personlige indstillinger til mange brugere på samme tid.
+For kunder, der har aktiveret funktionen **Gemte visninger** skal du se afsnittet "Administrere visninger globalt" i emnet [Gemte visninger](saved-views.md).  
 
-Brugere, der har administratorrettigheder, kan også administrere tilpasninger for andre brugere på siden **Brugertilpasning**.
-
-For kunder, der ikke har aktiveret funktionen [Gemte visninger](saved-views.md), indeholder denne side fire faner:
+For kunder, der endnu ikke har aktiveret funktionen [Gemte visninger](saved-views.md), indeholder denne side fire faner:
 
 - **Anvend** – Du kan importere eller vælge en tilpasning for en eller flere brugere. For at anvende en tilpasning på en eller flere brugere skal du først vælge en rolle og brugere, der har denne rolle. Vælg derefter en eksisterende tilpasning, der skal anvendes på de brugere, du har valgt, eller importér en tilpasningsfil. Tilpasningen valideres og anvendes på alle de markerede brugere, næste gang de åbner den valgte side.
 - **Slet** – Du kan slette alle tilpasninger for en side eller et arbejdsområde for en eller flere brugere. Vælg først en side eller et arbejdsområde for at se en liste over de brugere, der har tilpasset siden eller området. Vælg de brugere, der skal have ryddet tilpasninger for siden eller arbejdsområdet, og vælg derefter **Ryd**. Alle tilpasninger, som de valgte brugere har anvendt på den valgte side eller det valgte arbejdsområde, slettes. Denne handling kan ikke fortrydes. Hvis der er gemt en tilpasning for siden eller arbejdsområdet, kan denne tilpasning dog importeres igen.
 - **Brugere** – Vælg en bruger for at få vist listen over sider, som brugeren har tilpasset. Du kan derefter aktivere eller deaktivere den valgte brugers mulighed for at bruge personlige tilpasninger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for brugeren. Derudover kan du nulstille billedforklaringer til funktioner for brugeren. Hvis brugeren i så fald tidligere har lukket pop op-vinduer, der introducerede nye funktioner, vises de igen, næste gang brugeren støder på disse funktioner.
 - **System** - Du kan midlertidigt deaktivere tilpasninger for alle brugere i systemet. I dette tilfælde slettes alle tilpasninger for alle brugere, og alle sider nulstilles til deres standardtilstand. Hvis du senere aktiverer tilpasninger igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
-
-For kunder, der har aktiveret funktionen [Gemte visninger](saved-views.md), indeholder siden **Brugertilpasning** fem faner:
-
-- **Publicerede visninger** – Disse visninger er publiceret til din organisation. Hvis du vil ændre de brugere, der er målrettet til disse visninger, kan du ændre de sikkerhedsroller eller juridiske enheder, der er knyttet til de enkelte visninger. Du kan også eksportere eller slette en eller flere publicerede visninger.
-- **Ikke-publicerede visninger** – Disse visninger er skabelonvisninger, der er importeret til systemet, men som endnu ikke er publiceret. Du kan publicere, eksportere eller slette disse visninger.
-- **Personlige visninger** – Disse visninger er blevet oprettet af brugere i systemet. Du kan publicere en personlig visning i organisationen eller kopiere en eller flere af disse visninger til andre brugere. Du kan også eksportere eller slette disse visninger efter behov.
-- **Brugere** – Vælg en bruger for at få vist listen over sider, som brugeren har tilpasset. Du kan derefter aktivere eller deaktivere den valgte brugers mulighed for at bruge personlige tilpasninger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for brugeren. Derudover kan du nulstille billedforklaringer til funktioner for brugeren. Hvis brugeren i så fald tidligere har lukket pop op-vinduer, der introducerede nye funktioner, vises de igen, næste gang brugeren støder på disse funktioner.
-- **System** - Du kan midlertidigt deaktivere tilpasninger for alle brugere i systemet. I dette tilfælde slettes alle tilpasninger for alle brugere, og alle sider nulstilles til deres standardtilstand. Hvis du senere aktiverer tilpasninger igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
-
-Brugere, der har adgang til siden **Brugertilpasning**, kan også importere personlige visninger eller skabelonvisninger ved hjælp af knappen **Importér visninger** i handlingsruden.
 
 ## <a name="personalizing-inventory-dimensions"></a>Tilpasning af lagerdimensioner
 

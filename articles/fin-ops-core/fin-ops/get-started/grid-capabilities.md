@@ -3,7 +3,7 @@ title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 04/23/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284398"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431354"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -89,11 +89,11 @@ Hvis du vil fortryde gruppering i et gitter, skal du højreklikke på gruppering
 ## <a name="typing-ahead-of-the-system"></a>Skrive forud i forhold til systemet
 I mange forretningsscenarier er muligheden for hurtigt at indtaste data i systemet meget vigtig. Før det nye gitterkontrolelement blev introduceret, kunne brugerne kun ændre data i den aktuelle række. Før de kunne oprette en ny række eller skifte til en anden række, var de tvunget til at vente på, at systemet havde valideret eventuelle ændringer. I et forsøg på at reducere den mængde tid, som brugerne venter på, at disse valideringer udføres, og for at forbedre brugerproduktiviteten justerer det nye gitter disse valideringer, så de er asynkrone. Brugeren kan derfor flytte til andre rækker for at foretage ændringer, mens tidligere valideringer af rækker venter. 
 
-For at understøtte denne nye funktionsmåde er der tilføjet en ny kolonne for rækkestatus øverst i gitteret, når gitteret er i redigeringstilstand. Denne kolonne angiver en af følgende statusser:
+For at understøtte denne nye funktionsmåde er der tilføjet en ny kolonne for rækkestatus til højre for kolonnen for rækkevalg, når gitteret er i redigeringstilstand. Denne kolonne angiver en af følgende statusser:
 
 - **Tom** – Intet statusbillede angiver, at rækken er blevet gemt af systemet.
 - **Afventer behandling** – Denne status angiver, at ændringerne i rækken endnu ikke er gemt af serveren, men de er i en kø med ændringer, der skal behandles. Før du udfører en handling uden for gitteret, skal du vente på, at alle ventende ændringer behandles. Desuden er teksten i disse rækker kursiv for at angive den ikke-gemte status for rækkerne. 
-- **Valideringsadvarsel** – Denne status angiver, at systemet ikke kan gemme ændringerne i rækken grundet et valideringsproblem. I det gamle gitter blev du tvunget tilbage til rækken for at løse problemet med det samme. Men i det nye gitter får du besked om, at der er opstået et valideringsproblem, men du kan beslutte, hvornår eventuelle problemer skal løses i rækken. Når du er klar til at løse problemet, kan du manuelt flytte fokus tilbage til rækken. Du kan også vælge funktionen **Løs dette problem**. Denne handling flytter øjeblikkeligt fokus tilbage til den række, hvor problemet er, og giver dig mulighed for at foretage ændringer i eller uden for gitteret. Bemærk, at behandlingen af efterfølgende ventende rækker standses, indtil denne valideringsadvarsel er løst. 
+- **Ugyldig tilstand** – Denne status angiver, at der blev udløst en eller anden advarsel eller meddelelse under behandlingen af rækken, og det kan have forhindret systemet i at gemme ændringerne i den pågældende række. I det gamle gitter blev du tvunget tilbage til rækken for at løse problemet med det samme, hvis gemmehandlingen ikke lykkedes. Men i det nye gitter får du besked om, at der er opstået et valideringsproblem, men du kan beslutte, hvornår eventuelle problemer skal løses i rækken. Når du er klar til at løse et problem, kan du manuelt flytte fokus tilbage til rækken. Du kan også vælge funktionen **Løs dette problem**. Denne handling flytter øjeblikkeligt fokus tilbage til den række, hvor problemet er, og giver dig mulighed for at foretage ændringer i eller uden for gitteret. Bemærk, at behandlingen af efterfølgende ventende rækker standses, indtil denne valideringsadvarsel er løst. 
 - **Midlertidigt afbrudt** – Denne status angiver, at behandlingen af serveren er sat på pause, fordi validering af rækken udløste en pop op-dialogboks, der kræver brugerinput. Da brugeren måske indtaster data i en anden række, vises pop op-dialogboksen ikke med det samme for den pågældende bruger. Den vises i stedet, når brugeren vælger at genoptage behandlingen. Denne status er ledsaget af en besked, der oplyser brugeren om situationen. Beskeden indeholder handlingen **Fortsæt behandling**, der vil udløse pop op-dialogboksen.  
     
 Når brugerne indtaster data før det sted, hvor serveren behandler data, kan de forvente en række degraderinger i dataindtastningsoplevelsen, f.eks. manglende opslag, validering på kontrolniveau og indtastning af standardværdier. Brugere, der har brug for en rulleliste til at finde en værdi, anbefales at vente på, at serveren når til den aktuelle række. Validering på kontrolniveau og angivelse af standardværdier vil også finde sted, når serveren behandler den pågældende række.   
@@ -135,55 +135,62 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 
 - Kortlister, der blev gengivet som flere kolonner, gengives nu som en enkelt kolonne.
 - Grupperede lister gengives ikke som grupper eller i separate kolonner.
-- Der vises ikke værktøjstip til billeder.
-- Visningen af gitterlinjer fungerer ikke for alle felttyper.
-- Periodisk kan du ikke klikke uden for gitteret, når du f.eks. vælger flere rækker.
-- Indstillingerne **Valider** og **Kopiér** i Arbejdsrutineoptager er ikke tilgængelige for dato- og nummerkontrolelementer.
+
+### <a name="fixed-as-part-of-10013"></a>Rettet i 10.0.13
+
+> [!NOTE]
+> Følgende oplysninger er tilgængelige, så du kan planlægge i overensstemmelse hermed. Du kan finde flere oplysninger om tidsplanen for version 10.0.13 under [Tilgængelighed af tjenesteopdatering](../../fin-ops/get-started/public-preview-releases.md).
+
+- [KB 4563317] Der vises ikke værktøjstip til billeder.
 
 ### <a name="fixed-as-part-of-10012"></a>Rettet i 10.0.12
 
-> [!Note]
-> Følgende oplysninger er tilgængelige, så du kan planlægge i overensstemmelse hermed. Du kan finde flere oplysninger om tidsplanen for version 10.0.12 under [Tilgængelighed af tjenesteopdatering](../../fin-ops/get-started/public-preview-releases.md).
-
-- [Problem 429126] Kontrolelementer uden for gitteret opdateres ikke, når den sidste post er slettet.
-- [Problem 430575] Tabelkontrolelementer opdaterer ikke indholdet af viste elementer.
+- [KB 4558545] Tabelkontrolelementer opdaterer ikke indholdet af viste elementer.
 - [KB 4558570] Der vises stadig elementer på siden, når posten er blevet slettet.
-- [KB 4558584] Negative tal gengives ikke korrekt.
-- [KB 4558575] Felter opdateres ikke, når en rækkeændring/gitterbehandling sidder fast efter sletning af rækker.
-- [Problem 436980] Den formatering, der er knyttet til listepanelet **ExtendedStyle**, anvendes ikke.
+- [KB 4558572] Den formatering, der er knyttet til listepanelet **ExtendedStyle**, anvendes ikke.
 - [KB 4558573] Valideringsfejl kan ikke rettes, når den nødvendige ændring er uden for gitteret.
-    
-### <a name="quality-update-for-10011"></a>Kvalitetsopdatering for 10.0.11
-
-- [KB 4558381] Negative tal gengives ikke korrekt, og brugerne vil sommetider blive fastlåst, efter at der er registreret valideringsproblemer.
+- [KB 4558584] Negative tal gengives ikke korrekt.
+- [KB-4560726] Der opstår "en uventet klientfejl", efter at der er skiftet mellem lister ved hjælp af listevisningskontrol.
+- [KB-4562141] Gitterindeks er slået fra, efter at der er tilføjet en ny post.
+- [KB 4562151] Indstillingerne **Valider** og **Kopiér** i Arbejdsrutineoptager er ikke tilgængelige for dato- og nummerkontrolelementer. 
+- [KB-4562153] Afkrydsningsfelter med flere valg er ikke synlige på liste/kort-gitre.
+- [KB 4562646] Undertiden kan du ikke klikke uden for gitteret, når du f.eks. vælger rækker i gitteret.
+- [KB-4562647] Fokus nulstilles til det første kontrolelement i dialogboksen **Publicer**, efter at der er tilføjet en ny række i sikkerhedsrollegitteret.
+- [KB-4563310] Den udvidede visning lukkes ikke, efter at en række er ændret.
+- [KB-4563313] Der opstår en "uventet klientfejl" i Internet Explorer, når der vælges en værdi i et opslag.
+- [KB-4563324] Navigationen fungerer ikke, når arbejdsområdet **Personalestyring** er blevet åbnet.
 
 ### <a name="fixed-as-part-of-10011"></a>Rettet i 10.0.11
 
+- [Problem 432458] Tomme eller dublerede linjer vises i starten af nogle underordnede samlinger.
+- [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes korrekt, når det nye gitterkontrolelement er aktiveret.
 - [KB 4558374] Poster, der kræver dialogboks med polymorf vælger, kan ikke oprettes.
-- [KB 4558382] Der opstår uventede klientfejl.
 - [KB 4558375] Der vises ingen hjælpetekst på kolonner i det nye gitter.
 - [KB 4558376] Listepanelets gitre gengives ikke med den korrekte højde i Internet Explorer.
 - [KB 4558377] Kombinationsfeltkolonner, der har **SizeToAvailable**-bredde, gengives ikke på visse sider.
-- [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes korrekt, når det nye gitterkontrolelement er aktiveret.
 - [KB 4558378] Detaljeadgang åbner nogle gange den forkerte post.
 - [KB 4558379] Der opstår en fejl, når opslag åbnes, hvor **ReplaceOnLookup**=**Nej**.
 - [KB 4558380] Den ledige plads i gitteret udfyldes ikke straks, når en del af siden er skjult.
-- [Problem 432458] Tomme eller dublerede linjer vises i starten af nogle underordnede samlinger.
+- [KB 4558381] Negative tal gengives ikke korrekt, og brugerne vil sommetider blive fastlåst, efter at der er registreret valideringsproblemer.
+- [KB 4558382] Der opstår uventede klientfejl.
+- [KB 4558383] Kontrolelementer uden for gitteret opdateres ikke, når den sidste post er slettet.
 - [KB 4558587] Referencegrupper, der indeholder kombinationsbokse for erstatningsfelter, viser ikke værdier.
+- [KB 4562143] Felter opdateres ikke, når en rækkeændring/gitterbehandling sidder fast efter sletning af rækker.
+- [KB-4562645] Der opstår en undtagelse, når der åbnes et opslag, mens RSAT-test (Remote Server Administration Tools) kører.
 
 ### <a name="fixed-as-part-of-10010"></a>Rettet i 10.0.10
 
 - [Problem 414301] Nogle data fra tidligere linjer forsvinder, når der oprettes nye linjer.
-- [KB 4550367] Tidsværdier formateres ikke korrekt.
-- [KB 4549734] Aktive rækker behandles ikke som markerede, hvis markeringskolonnen er skjult.
 - [Fejl 417044] Der er ingen meddelelse om tomt gitter for listetypegitre.
-- [KB 4558367] Tekstmarkering er inkonsekvent, når rækkerne ændres.
-- [KB 4558372] Det nye gitter sidder fast i behandlingstilstand, hvis antallet af kolonner i det indhold, der indsættes, overstiger antallet af resterende kolonner i gitteret.
-- [KB 4558368] Flere valg via tastaturet er tilladt i enkeltvalgsscenarier.
 - [KB 4539058] Nogle gitre (typisk i oversigtspanelerne) kan nogle gange ikke gengives (men gengives, hvis du zoomer ud).
+- [KB 4549734] Aktive rækker behandles ikke som markerede, hvis markeringskolonnen er skjult.
+- [KB 4549796] Værdier kan ikke redigeres i et gitter, når det er i visningstilstand.
+- [KB 4558367] Tekstmarkering er inkonsekvent, når rækkerne ændres.
+- [KB 4558368] Flere valg via tastaturet er tilladt i enkeltvalgsscenarier.
 - [KB 4558369] Statusbilleder forsvinder i det hierarkiske gitter.
 - [KB 4558370] En ny række rulles ikke ind i visningen.
-- [KB 4549796] Værdier kan ikke redigeres i et gitter, når det er i visningstilstand.
+- [KB 4558372] Det nye gitter sidder fast i behandlingstilstand, hvis antallet af kolonner i det indhold, der indsættes, overstiger antallet af resterende kolonner i gitteret.
+- [KB 4562631] Tidsværdier formateres ikke korrekt.
 
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsopdatering til 10.0.9/Platform update 33
 

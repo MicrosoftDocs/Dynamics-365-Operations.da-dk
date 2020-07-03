@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276898"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413093"
 ---
 # <a name="inventory-value-storage-report"></a>Lagerrapport over lagerværdi
 
@@ -50,7 +50,7 @@ Udfør følgende trin for at generere og gemme en **lagerrapport over lagerværd
 1. Vælg **Ny**.
 1. I dialogboksen **Lagerværdi** skal du angive følgende værdier for at definere, hvilke poster der skal medtages i rapporten:
 
-    - Angiv et entydigt navn til rapporten i oversigtspanelet **Parametre**, og brug felterne i sektionen **Datointerval** til at definere, hvilke poster der skal medtages i rapporten. Hvis du vil definere datointervallet, kan du enten vælge et foruddefineret interval (i forhold til rapportgenereringsdatoen ) i feltet **Datointervalkode** eller vælge bestemte datoer i felterne **Fra dato** og **Til dato**. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - Angiv et entydigt navn til rapporten i oversigtspanelet **Parametre**, og brug felterne i sektionen **Datointerval** til at definere, hvilke poster der skal medtages i rapporten. Hvis du vil definere datointervallet, kan du enten vælge et foruddefineret interval (i forhold til rapportgenereringsdatoen ) i feltet **Datointervalkode** eller vælge bestemte datoer i felterne **Fra dato** og **Til dato**.
     - I oversigtspanelet **Poster, som skal medtages** skal du konfigurere filtre og begrænsninger for at definere, hvilke data der skal medtages i rapporten.
     - Angiv, hvordan, hvornår og hvor ofte rapporten skal genereres, i oversigtspanelet **Kør i baggrunden**.
 

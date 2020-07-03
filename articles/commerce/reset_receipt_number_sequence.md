@@ -19,17 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123940"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456567"
 ---
 # <a name="reset-receipt-numbers"></a>Nulstille kvitteringsnumre 
 
 [!include [banner](includes/banner.md)]
 
+> [!NOTE]
+> Vi kræver, at du vælger egenskaben **Uafhængig sekvens** for alle kvitteringstyperne i funktionalitetsprofilen, før du bruger denne funktion. Desuden skal systemets tidszone for den enhed, hvor POS bruges, svare til butikkens tidszone. Vi arbejder på at fjerne disse begrænsninger i en fremtidig version. Kontakt Microsoft Support, før du bruger denne funktion i produktion.
 
 Detailhandlere genererer kvitteringsnumre for forskellige handlinger i butikken, f.eks. kontanttransaktioner, returtransaktioner, kundeordrer, tilbud og betalinger. Selvom detailhandlere definerer deres egne kvitteringsformater, har visse lande eller områder forordninger, der har lagt begrænsninger på disse kvitteringsformater. Disse regler kan f.eks. begrænse antallet af tegn i kvitteringen, kræve fortløbende kvitteringsnumre, begrænse nogle specialtegn eller kræve nulstilling af kvitteringsnumrene i begyndelsen af året. Microsoft Dynamics 365 Commerce gør det nemmere at administrere kvitteringsnumre for at hjælpe forhandlerne med at overholde lovpligtige krav. Dette emne forklarer, hvordan du kan bruge funktionerne til nulstilling af kvitteringsnumre.
 

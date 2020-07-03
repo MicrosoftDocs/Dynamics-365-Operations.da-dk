@@ -1,6 +1,6 @@
 ---
-title: Kredit og rykkere i Debitor
-description: Oplysninger om rykkere for debitorer administreres i en central visning, siden Rykkere i Microsoft Dynamics 365 Finance. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder.
+title: Rykkere i Debitor
+description: Oplysninger om rykkere for debitorer administreres i en central visning, siden Rykkere i Microsoft Dynamics 365 Finance. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier eller fra siden Debitorer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189171"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426390"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og rykkere i Debitor
+# <a name="collections-in-accounts-receivable"></a>Rykkere i Debitor
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +52,7 @@ Overskriften for det aldersfordelte øjebliksbillede indeholder det samlede skyl
 
 Der oprettes en detaljeret post for det aldersfordelte øjebliksbillede for hver forældelsesperiode i definitionen af forældelsesperioden. Den detaljerede post for det aldersfordelte øjebliksbillede indeholder forældelsesperiode-id'et og det samlede beløb for postering med datoer, der er inden for forældelsesperioden. Posteringer tildeles en forældelsesperiode, som f.eks 30 dage efter forfald. Datoen er relativ i forhold til datoen Aldersfordeling pr., der angives, når du opretter det aldersfordelte øjebliksbillede. Disse oplysninger vises på listesiden Aldersfordelte saldi og i faktaboksen Aldersfordelte saldi på siden Rykkere.
 
-## <a name="collections-customer-pools"></a> Kundepuljer for rykkere 
+## <a name="collections-customer-pools"></a>Kundepuljer for rykkere
 Kundepuljer er forespørgsler, der definerer en gruppe kundeposter, der kan vises og administreres for rykkere eller aldersfordelte processer. Brug kundepuljer til at filtrere oplysningerne på listesiderne Aldersfordelte saldi, Rykkeraktiviteter og Rykkersager. Du kan også bruge kundepuljer til at filtrere de debitorkonti, der inkluderes ved oprettelsen af aldersfordelte øjebliksbilleder.
 
 ## <a name="collections-agents"></a>Inkassoagenter
@@ -68,7 +68,7 @@ Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
 
 > [!NOTE]
 > Der skal oprettes et aldersfordelt øjebliksbillede, før du kan få vist oplysningerne på disse listesider. Der vises kun oplysninger for debitorer, for hvem der allerede er oprettet et aldersfordelt øjebliksbillede. De poster, der vises på listesiden, kan filtreres yderligere på følgende måde:
-> <li>En Finance and Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
+> <li>En Finance and Operations-bruger har som standard adgang til alle de kunder, som der findes et aldersfordelt øjebliksbillede for.</li>
 > <li>Hvis der findes kundepuljer, skal brugeren oprettes som en inkassator for at kunne bruge puljerne til filtrering af oplysninger på listesiderne med rykkere. Oplysningerne er begrænset til kunder, der er inkluderet i den valgte kundepulje.</li>
 > <li>Hvis en bruger oprettes som inkassator, er det kun de puljer, der er valgt for den pågældende inkassator, der er tilgængelige på listesiden. Hvis til/fra-tasten Tillad agent at få vist alle kundepuljer er markeret på siden Inkassoagent for inkassoagenten, er alle puljer tilgængelige for den pågældende agent.</li>
 

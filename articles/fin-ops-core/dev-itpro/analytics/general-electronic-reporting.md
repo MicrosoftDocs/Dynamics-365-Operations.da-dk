@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933926"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421649"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -40,7 +40,7 @@ ER understøtter i øjeblikket TEXT, XML, Microsoft Word-dokument og OPENXML-reg
 ## <a name="capabilities"></a>Egenskaber
 ER-programmet har følgende funktioner:
 
-- Det repræsenterer et enkelt fælles værktøj til elektronisk indberetning i forskellige domæner og erstatter mere end 20 forskellige programmer, der foretager en eller anden form for elektronisk rapportering i Finance and Operations.
+- Det repræsenterer et enkelt delt værktøj til elektronisk indberetning i forskellige domæner og erstatter mere end 20 forskellige programmer, der foretager en eller anden form for elektronisk rapportering i Finance and Operations.
 - Det isolerer en rapports format fra den aktuelle implementering. Med andre ord kan formatet anvendes i forskellige versioner.
 - Det understøtter oprettelse af et brugerdefineret format, der er baseret på et oprindeligt format. Det indeholder også funktioner til automatisk at opgradere det tilpassede format, når det oprindelige format ændres pga. lokaliserings-/tilpasningskrav.
 - Det bliver det primære standardværktøj til understøttelse af lokaliseringskrav i forbindelse med elektronisk rapportering, for både Microsoft og MS-partnere.
@@ -81,7 +81,7 @@ En modeltilknytning, der understøtter indgående elektroniske dokumenter, har f
 
 Der udvikles en datamodelkomponent til hvert forretningsdomæne, der skal bruges som en samlet datakilde til rapportering, der isolerer rapportering fra den fysiske implementering af datakilder. Den repræsenterer domænespecifikke forretningsbegreber og -funktioner i en formular, der gør et rapporteringsformats oprindelige design og yderligere vedligeholdelse mere effektivt.
 
-#### <a name="FormatComponentOutbound"></a>Formatkomponenter for udgående elektroniske dokumenter
+#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Formatkomponenter for udgående elektroniske dokumenter
 
 En formatkomponent er skemaet for rapporteringsoutput, der skal oprettes på kørselstidspunktet. Et skema består af følgende elementer:
 
@@ -107,7 +107,7 @@ I følgende illustration vises, hvordan dataene flyder for disse formater.
 
 For at køre en enkelt ER-formatkonfiguration og generere et udgående elektronisk dokument skal du identificere tilknytningen af formatkonfigurationen.
 
-#### <a name="FormatComponentInbound"></a>Formatkomponenter for indgående elektroniske dokumenter
+#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenter for indgående elektroniske dokumenter
 En formatkomponent er skemaet for det indgående dokument, der importeres på kørselstidspunktet. Et skema består af følgende elementer:
 
 - Et format, der definerer strukturen og indholdet af det indgående elektroniske dokument, som indeholder data, der importeres på kørselstidspunktet. En formatkomponent bruges til at fortolke et indgående dokument i forskellige formater, f.eks. tekst og XML.
@@ -144,7 +144,7 @@ Adgang til ER-formatkomponenter afhænger af indstilling af ISO-lande/områdekod
 
 Forskellige versioner af en dataformatkomponent kan have forskellige indstillinger for ISO-lande/områdekoder.
 
-#### <a name="Configuration"></a>Konfiguration
+#### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
 
 En ER-konfiguration er wrapperen for en bestemt ER-komponent. Denne komponent kan enten være en datamodelkomponent eller en formatkomponent. En konfiguration kan omfatte forskellige versioner af en ER-komponent. Hver konfiguration er markeret som ejet af en bestemt konfigurationsudbyder. **Kladde**-versionen af en komponent i en konfiguration kan redigeres, når ejeren af konfigurationen er valgt som aktiv udbyder i ER-indstillingerne i programmet.
 
@@ -154,26 +154,26 @@ Den formatkonfiguration, der oprettes, indeholder en formatkomponent. Datamodelk
 
 En ER-konfiguration deles for firmaer i programmet.
 
-#### <a name="Provider"></a>Udbyder
+#### <a name="provider"></a><a name="Provider"></a>Udbyder
 
 ER-udbyderen er den partsidentifikator, der bruges til at angive forfatteren (ejeren) af hver ER-konfiguration. Med ER kan du administrere listen over udbydere af konfigurationen. Formatkonfigurationer, der frigives for elektroniske dokumenter som del af Finance and Operations-løsningen, markeres som ejet af **Microsoft**-konfigurationsudbyderen.
 
 Du kan få oplysninger om, hvordan du registrerer en ny ER-udbyder, ved at afspille opgaveguiden **Oprette en ER-konfigurationsudbyder og markere den som aktiv** (en del af forretningsprocessen **7.5.4.3 Anskaf/udarbejd komponenter til it-ydelser og -løsninger (10677)**).
 
-#### <a name="Repository"></a>Lager
+#### <a name="repository"></a><a name="Repository"></a>Lager
 
 Et ER-lager indeholder ER-konfigurationer. Følgende typer af ER-lagre understøttes i øjeblikket: 
 
 - Delt LCS-bibliotek
 - LCS-projekt
 - Filsystem
-- Regulatory Configuration Services (RCS)
-- Operationsressourcer
-
+- RCS
+- Operations-ressourcer
+- Global lagermappe
 
 Et **Delt LCS-bibliotek**-lager giver adgang til listen med konfigurationer i biblioteket for delte aktiver i Lifecycle Services (LCS). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra LCS-biblioteket for delte aktiver kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
 
-Et **LCS-projektlager** giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle Finance and Operations-forekomst.
+Et **LCS-projektlager** giver adgang til listen over konfigurationer af et bestemt LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt, da lageret blev registreret. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle forekomst af dine Finance and Operations-apps.
 
 Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle forekomst. 
 
@@ -184,9 +184,13 @@ Bemærk, at denne lagertype er tilgængelig i følgende miljøer:
 
 Du kan finde flere oplysninger under [Importer konfigurationer for elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md).
 
-Et **RCS-forekomst** giver adgang til listen over konfigurationer af en bestemt RCS-forekomst, der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RCS-forekomst til den aktuelle forekomst, hvor du kan anvende dem til elektronisk rapportering.
+Et **RCS**-lager giver adgang til listen over konfigurationer af en bestemt forekomst af [Konfigurationstjeneste (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RCS-forekomst til den aktuelle forekomst, hvor du kan anvende dem til elektronisk rapportering.
 
-Du kan finde flere oplysninger under [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+Du kan finde flere oplysninger under [Importere konfigurationer for elektronisk rapportering (ER) fra RCS](./rcs-download-configurations.md).
+
+Et **Globalt lager** giver adgang til listen over konfigurationer i det globale lager i [Konfigurationstjenesten](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra det globale lager kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
+
+Du kan finde flere oplysninger under [Importere konfigurationer af elektronisk rapportering (ER) fra det globale lager i konfigurationstjenesten](./er-download-configurations-global-repo.md).
 
 Et lager med **Operationsressourcer** giver adgang til listen over de konfigurationer, som Microsoft, i kraft af sin rolle som ER-konfigurationsudbyder, indledningsvist frigiver som en del af programløsningen. Disse konfigurationer kan importeres til den aktuelle forekomst og anvendes til elektronisk rapportering eller afspilning af opgaveguider for stikprøver. De kan også bruges til flere sprogversioner og tilpasninger. Bemærk, at de nyeste versioner fra Microsoft ER-konfigurationer skal importeres fra LCS-biblioteket med delte aktiver ved hjælp af det tilsvarende ER-lager.
 

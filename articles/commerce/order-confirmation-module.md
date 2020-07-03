@@ -3,7 +3,7 @@ title: Modulet Ordredetaljer
 description: Dette emne omhandler ordredetaljemoduler og beskriver, hvordan du bruger dem i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb09a0b6ce1e48707f96021e9fad0006d9c1c55c
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026011"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464924"
 ---
 # <a name="order-details-module"></a>Modulet Ordredetaljer
 
@@ -35,11 +35,11 @@ Dette emne omhandler ordredetaljemoduler og beskriver, hvordan du bruger dem i M
 
 Modulet Ordredetaljer bruges til at vise ordrebekræftelsesoplysningerne, når en ordre er afgivet. Det viser ordrebekræftelses-id, ordrekontaktoplysninger og andre ordreoplysninger, f.eks. de varer, der er købt, betalingsoplysninger og forsendelsesmåde.
 
-## <a name="order-confirmation-module-properties"></a>Egenskaber for ordrebekræftelsesmodul
+## <a name="order-details-module-properties"></a>Egenskaber for ordredetaljemodul
 
-| Egenskabsnavn  | Værdier | Beskrivelse |
+| Egenskabsbetegnelse  | Værdier | Beskrivende tekst |
 |----------------|--------|-------------|
-| Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Ordrebekræftelsesmodulet kan have en overskrift. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
+| Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Ordredetaljemodulet kan have en overskrift. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
 | Kontaktnummer | Text | Der kan angives et kontaktnummer for ordrerelaterede spørgsmål. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduler, der kan bruges på en side med ordredetaljer
@@ -49,28 +49,32 @@ Når du opretter en side med ordredetaljer, kan du tilføje andre relevante modu
 - **Anbefalingsmodul** – Anbefalingsmodulet kan tilføjes på ordredetaljesiden for at foreslå andre produkter til kunden.
 - **Marketingmoduler** – Ethvert marketingmodul kan føjes til siden Ordredetaljer for at vise marketingindhold.
 
-## <a name="create-an-order-details-page-module"></a>Oprette et sidemodul med ordredetaljer
+## <a name="add-an-order-details-module-to-a-page"></a>Føj et ordredetaljemodul til en side
 
-1. Opret en sideskabelon med navnet **Ordredetaljeskabelon**.
-1. Tilføj et ordredetaljemodul på **Hoved**-pladsen på standardsiden.
-1. Tilføj et anbefalingsmodul i ordredetaljemodulet.
-1. Gem skabelonen, og se forhåndsvisningen af den. Ordredetaljemodulet skal ikke gengives, fordi det kræver ordrebekræftelsesnummerets kontekst.
-1. Afslut redigeringen af skabelonen, og udgiv den.
-1. Brug den ordredetaljeskabelon, som du netop har oprettet, til at oprette en side med navnet **ordredetaljeside**.
-1. Føj standardsiden til sidedispositionen.
-1. Tilføj et sidehovedfragment på pladsen **Sidehoved**.
-1. Tilføj et sidefodsfragment på pladsen **Sidefod**.
-1. Tilføj et ordredetaljemodul på **Hoved**-pladsen.
-1. Tilføj overskriften **Ordredetaljer** i egenskabsruden i ordredetaljemodulet.
-1. Tilføj et anbefalingsmodul under ordredetaljemodulet, og konfigurer det, så det bruger indstillingerne **Ny** og **Bedst sælgende**.
-1. Gem siden, og se en forhåndsvisning af den.
-1. Afslut redigeringen af siden, og udgiv den.
+Hvis du vil føje et ordredetaljemodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
+
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. Angiv navnet **Ordredetaljeskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Ordredetaljer** og derefter **OK**.
+1. Vælg **Gem** og derefter **Vis** for at få vist skabelonen. Ordredetaljemodulet skal ikke gengives, fordi det kræver ordrebekræftelsesnummerets kontekst.
+1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. I dialogboksen **Vælg en skabelon** skal du vælge **Ordredetaljeskabelon**. Under **Sidenavn** skal du angive **Ordredetaljeside** og derefter vælge **OK**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Ordredetaljer** og derefter **OK**.
+1. Vælg **Overskrift** ud for blyantsymbolet i egenskabsruden for ordredetaljemodulet.
+1. Angiv overskriftsteksten **Ordredetaljer** i feltet **Overskriftstekst** i dialogboksen **Overskrift**, og vælg derefter **OK**.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
+1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over startsæt](starter-kit-overview.md)
 
-[Modulet Container](add-container-module.md)
+[Container-modul](add-container-module.md)
 
 [Købefeltmodul](add-buy-box.md)
 

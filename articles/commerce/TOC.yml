@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Opgradering og N-1 support
               items:
-                - name: Understøttelse af opgradering og N-1 for Retail
+                - name: Understøttelse af opgradering og N-1 for Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Trinvis implementering af (N-1)-installation, konfiguration og ændring af status'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (maj 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Commerce 10.0.9 (april 2020)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Finance and Operations
@@ -504,6 +502,8 @@
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Effektiv kundegodkendelse (SCA) ved hjælp af Adyen-connector
                       href: adyen_redirect.md
+                    - name: Dedikerede betalingsterminaler og anmodninger om printer og kasseterminal
+                      href: pos-multi-hws.md
                     - name: Problemfri offline-switch til gavekort- og kreditnotaoperationer
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Konfigurere scenarier for betaling af fakturaer
@@ -572,11 +572,15 @@
                       href: set-up-bar-codes.md
                     - name: Konfigurere stregkodemasker
                       href: set-up-bar-code-masks.md
-            - name: Prissætning og rabatter
+                - name: Garantier
+                  items:
+                    - name: Oprette og konfigurere udvidede garantier
+                      href: extended-warranty.md
+            - name: Priser og rabatter
               items:
                 - name: Rabatter
                   href: retail-discounts-overview.md
-                - name: Styring af salgspriser
+                - name: Styre salgspriser
                   href: price-management.md
                 - name: Prisjusteringer og rabatter
                   href: price-adjustments-discounts.md
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Betalingsmodul
                       href: add-checkout-module.md
-                    - name: Ordrebekræftelsesmodul
+                    - name: Ordredetaljer-modul
                       href: order-confirmation-module.md
                     - name: Butiksvælgermodul
                       href: store-selector.md
@@ -1176,7 +1180,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Føje økonomiske dimensioner til samlede målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Oprette analyserapporter ved hjælp af Power BI Desktop
+                - name: Oprette analyserapporter ved hjælp af PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1896,6 +1900,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurere en fil til et udviklingsmiljø (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Foretage fejlfinding i forhold til et niveau 1 Commerce-udviklingsmiljø
+                      href: e-commerce-extensibility/debug-tier-1.md
                     - name: Konfigurere Azure DevOps-kodedeling og oprette en build-pipeline
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Platformsoversigt
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Udvikling i skybaserede udviklingsmiljøer uden administratoradgang
                   href: dev-itpro/cloud-dev-box.md
+                - name: Konfigurere Commerce SDK-build pipeline
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: POS-udvidelse
               items:
                 - name: POS-skærmlayout
@@ -2102,7 +2110,7 @@
                   href: dev-itpro/call-crt-service-offline.md
                 - name: Oprette en ny Retail Server-udvidelse
                   href: dev-itpro/retail-server-extension.md
-                - name: 'Retail Typescript og C#-proxyer'
+                - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Commerce Runtime (CRT)-udvidelsesmuligheder
               items:

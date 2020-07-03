@@ -3,7 +3,7 @@ title: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335270"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443912"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 
@@ -35,6 +35,16 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.11-frigivelsen
+### <a name="data-action-hooks"></a>Datahandlings-hooks
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Funktionen Datahandlings-hooks frarådes på grund af problemer med ydeevnen. |
+| **Erstattet af en anden funktion?**   | Du anbefales i stedet at bruge [datahandlingstilsidesættelser](../e-commerce-extensibility/data-action-overrides.md) til at redigere forretningslogik i datahandlingslaget.|
+| **Produktområder, der er berørt**         | Datahandlinger for udvidelse af e-handel |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet fra og med version 10.0.11 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.10-frigivelsen
 ### <a name="pos-operation-803---picking-and-receiving"></a>POS-operation 803 – pluk og tilgang

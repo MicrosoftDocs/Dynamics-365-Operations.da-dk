@@ -3,7 +3,7 @@ title: Modulet Container
 description: Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025522"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417340"
 ---
 # <a name="container-module"></a>Modulet Container
-
 
 [!include [banner](includes/banner.md)]
 
@@ -46,9 +45,13 @@ Der understøttes tre containermoduler: container, container med 2 pladser og co
 - En webstedsopretter ønsker et layout med seks kolonner, hvor der vises seks moduler ved siden af hinanden. Derfor bruger webstedsopretteren en containertype med seks kolonner.
 - En webstedsopretter vil placere et modul på en side, men vil ikke have, at det udfylder skærmen. Derfor føjer webstedsopretteren modulet til et containermodul og angiver egenskaben for containerens **Bredde** til **Tilpas til container**.
 
+Det følgende billede viser et eksempel på et containermodul, der indeholder et karruselmodul i Commerce-webstedsgeneratoren. I dette eksempel angives egenskaben **Bredde** for containermodulet til **Udfyld skærm**.
+
+![Eksempel på et containermodul](./media/ecommerce-container.PNG)
+
 ## <a name="container-module-properties"></a>Egenskaber for containermodul
 
-| Egenskabsbetegnelse     | Værdier | Beskrivelse |
+| Egenskabsbetegnelse     | Værdier | Beskrivende tekst |
 |-------------------|--------|-------------|
 | Overskrift           | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Der kan angives en valgfri overskrift til containeren. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
 | Bredde             | **Tilpas til container** eller **Udfyld skærm** | Hvis værdien er angivet til **Tilpas til container** (standardværdien), begrænses modulerne i containeren til containerens bredde. Hvis værdien er angivet til **Udfyld skærm**, begrænses modulerne ikke til containeren, men kan udfylde skærmen. |
@@ -99,23 +102,32 @@ Yderligere egenskaber kan bruges til at optimere layoutet for forskellige visnin
 
 Hvis du vil føje et containermodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Opret en sideskabelon med navnet **containerskabelon**. 
-1. På pladsen **Brødtekst** skal du tilføje et **Standardside**-modul.
-1. Afslut redigeringen af skabelonen, og udgiv den.
-1. Brug den containerskabelon, som du netop har oprettet, til at oprette en side med navnet **containerside**.
-1. Tilføj et containermodul på pladsen **Hoved** på den nye side.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. I dialogboksen **Ny skabelon** skal du under **Skabelonnavn** angive **Containerskabelon** og derefter klikke på **OK**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den. 
+1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. I dialogboksen **Vælg en skabelon** skal du vælge den videoafspillerskabelon, du har oprettet. Under **Sidenavn** skal du angive **Containerside** og derefter vælge **OK**.
+1. På pladsen **Hoved** på den nye side skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
 1. Angiv egenskaben **Antal kolonner** til **1** og egenskaben **Bredde** til **Fyld container** i egenskabsruden for containermodulet.
-1. Føj et indholdsblokmodul til containermodulet.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Indholdsblok** og derefter **OK**.
 1. Konfigurer overskriften, billedet og layoutet i egenskabsruden for indholdsblokmodulet.
-1. Gem siden, og se en forhåndsvisning af den. Der vises ét funktionsmodul, der er tilpasset til containermodulets bredde.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Der vises ét funktionsmodul, der er tilpasset til containermodulets bredde.
 1. Rediger værdien af egenskaben **Antal kolonner** til **3** i egenskabsruden for containermodulet.
-1. Føj yderligere to indholdsblokmoduler til containermodulet.
-1. Gem siden, og se en forhåndsvisning af den. Der vises nu tre indholdsblokmoduler ved siden af hinanden.
-1. Når du har opnået det ønskede layout, skal du afslutte redigeringen af siden og publicere den.
+1. Føj yderligere to indholdsblokmoduler til containermodulet, og konfigurer dem.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Der vises nu tre indholdsblokmoduler ved siden af hinanden.
+1. Når du har opnået det ønskede layout, skal du vælge **Udfør redigering** for at tjekke siden ind og derefter vælge **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over startsæt](starter-kit-overview.md)
+
+[Harmonikamodul](add-accordion.md)
+
+[Fanemodul](add-tab.md)
 
 [Karruselmodul](add-carousel.md)
 
