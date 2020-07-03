@@ -3,7 +3,7 @@ title: Oversigt over kundeaktiviteter
 description: Dette emne indeholder en oversigt over de nye egenskaber for kundeaktiviteter, der findes i butiksprogrammet.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4f045f8509a6b5027fd3cf8e5ca9e382457a5e83
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021962"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456501"
 ---
 # <a name="clienteling-overview"></a>Kundeaktiviteter, oversigt
 
@@ -115,7 +115,7 @@ Følg disse trin for at konfigurere integrationen.
 3. Opret en Key Vault for Azure, og gem programhemmeligheden. Du kan finde instruktioner under [Hurtig start: Angiv og hent en hemmelighed fra Key Vault for Azure ved hjælp af Azure-portalen](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
 4. Aktivér adgangen til Key Vault for Azure fra Commerce. For at fuldføre dette trin skal du have et program-ID og en hemmelighed. Programmet kan være det samme program, som du oprettede i trin 1, eller det kan være et nyt program. (Med andre ord kan du bruge det program, du oprettede i trin 1, til at få adgang til både Key Vault og tjenesten Customer Insights, eller du kan oprette et unikt program til hver enkelt adgangstype.) Yderligere oplysninger finder du i [Gem primære legitimationsoplysninger til tjenester Stack Key Vault for Azure](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. Gå til **Systemadministration \> Opsætning \> Parametre for Key Vault** i Headquarters, og angiv de krævede oplysninger til Key Vault. Derefter skal du i feltet **Key Vault-klient** angive det program-id, du brugte i trin 4, så Commerce kan få adgang til hemmelighederne i Key Vault.
-6. Hvis du vil tilføje det program, du oprettede i trin 1, til listen over sikre programmer (kaldes til tider også en whitelist), skal du gå til Customer Insights og give **Få vist** adgang til programmet. Du finder flere instruktioner under [Tilladelser](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Hvis du vil tilføje det program, du oprettede i trin 1, til listen over sikre programmer (kaldes til tider også en sikker liste), skal du gå til Customer Insights og give **Vise**-adgang til programmet. Du finder flere instruktioner under [Tilladelser](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. I Commerce skal du på siden **Parametre for Commerce** på fanen **Kundeaktiviteter** i oversigtspanelet **Dynamics 365 Customer Insights** gøre følgende:
 
     1. I feltet **Program-ID** skal du angive det program-ID, du brugte i trin 1.

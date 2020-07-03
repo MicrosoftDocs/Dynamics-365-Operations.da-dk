@@ -3,7 +3,7 @@ title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
-ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433916"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457560"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -36,6 +36,22 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.13 af Finance and Operations-apps
+
+> [!NOTE]
+> Version 10.0.13 er endnu ikke frigivet. Oplysningerne gives kun af hensyn til planlægning. Indholdet og funktionaliteten for version 10.0.13 kan blive ændret. Du kan finde flere oplysninger om frigivelser under [Tilgængelighed af tjenesteopdatering](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Opgradering af tre jQuery-komponentbiblioteker 
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Tre jQuery-komponentbiblioteker opdateres for at levere sikkerhedsrettelser og vedligeholde valuta.   
+| **Erstattet af en anden funktion?**   | Følgende biblioteker bliver berørt: jQuery (til version 3.5.0 fra version 2.1.4), jQuery UI (til version 1.12.1 fra version 1.11.4), jQuery qTip (til version 3.0.3 fra 2.2.1). Der er leveret en migreringsvejledning online af jQuery.  |
+| **Produktområder, der er berørt**         | Udvidede kontroller, specielt tilpasset JavaScript-kode, der udnytter de frarådede eller fjernede API'er |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Med version 10.0.13/Platform update 37 kan kunderne vælge at flytte til de seneste biblioteker ved at aktivere funktionen "Opgrader tre jQuery-komponentbiblioteker". Det bliver obligatorisk at flytte til de nye biblioteker med frigivelsen i april 2021 for at give tid til migrering af berørte API'er.   |
+
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.12 af Finance and Operations-apps
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Udvidelser af gitter- eller gruppekontrolformularer, der indeholder ugyldige feltreferencer
@@ -50,11 +66,11 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.11 af Finance and Operations-apps
 
-### <a name="explicit-whitelisting-for-self-service-environments"></a>Eksplicit whitelisting til selvbetjeningsmiljøer
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Eksplicitte sikre lister til selvbetjeningsmiljøer
 
 |   |  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Processen for IP-whitelisting er ændret. Selvbetjening understøtter ikke længere IP-whitelisting. |
+| **Årsagen til forældelsen/fjernelsen** | Processen til flytning af IP til sikre lister er ændret. Selvbetjening understøtter ikke længere IP-sikre lister. |
 | **Erstattet af en anden funktion?**   | Du kan finde flere oplysninger i [Konfiguration af betinget adgang til Azure Active Directory](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
 | **Produktområder, der er berørt**         | Sikkerhed |
 | **Installationsindstilling**              | Sky |

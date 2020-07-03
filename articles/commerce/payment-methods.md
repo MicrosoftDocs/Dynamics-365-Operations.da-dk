@@ -3,7 +3,7 @@ title: Betalingsmetoder
 description: De enkelte betalingstyper, som en detailhandlende accepterer, skal konfigureres, når systemet konfigureres. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem..
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6afbddad869c70e4527c49fc5d4b520d7602f825
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022057"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463154"
 ---
 # <a name="payment-methods"></a>Betalingsmetoder
 
@@ -39,7 +39,7 @@ Detailhandlende kan acceptere forskellige former for betalinger for de produkter
 - **Valuta** - Den primære betalingsform bortset fra firmaets standardvaluta. Mønter og sedler er begge valutaformer. Valutabetalingsmetoden repræsenterer alle valutaer, der bruges. Før du kan bruge denne betalingsmetode, skal du konfigurere valutaer og angive oplysninger om kurssatser.
 - **Kort** – Alle typer kort, der anvendes, f.eks. debetkort eller kreditkort. Det anbefales, at du konfigurerer én kortbetalingsmetode på organisationsniveau, der repræsenterer alle slags kort. Derefter kan der på butiksniveau konfigureres en betalingsmetode for hvert kort eller sæt af kort, som behandles ved hjælp af de samme indstillinger. Du skal konfigurere de producentkort, der er tilgængelige på markedet, f.eks. debetkort og kreditkort, før du kan acceptere kortene som betaling i en butik.
 - **Kreditnota** – Kreditnotaer, der udstedes eller indløses ved kassen. Kreditnotaen kan være en kredit- eller returnota, der udstedes i forhold til retursalg. Hvis kreditnotaer kun indløses delvist, udsteder programmet en ny kreditnota for restbeløbet. Den nye kreditnota får et nyt nummer. En kreditnota kan kun bruges én gang, og i systemet holdes der styr på alle de numre, der er anvendt. Posten kan ses på siden **Kreditnotatabel**. En kunde kan ikke indløse mere end den værdi, der er angivet på kreditnotaen.
-- **Gavekort** - Gavekort, der udstedes og indløses ved POS. Der tillades ikke overbetaling i forbindelse med gavekort.
+- **Gavekort** - Gavekort, der udstedes og indløses ved POS. Der tillades ikke overbetaling i forbindelse med gavekort. Alle gavekort skal have tilknytninger af kortnummer. 
 - **Debitorkonto** – Betalinger kan tilskrives en debitorkonto ved kasseapparatet på salgstidspunktet. Du kan også bruge denne betalingsmetode til at indsamle salgsoplysninger eller kundespecifikke rabatter, når kunden foretager en betaling ved hjælp af en anden betalingsmetode. I dette tilfælde skal du definere kundespecifikke oplysninger.
 - **Fordelskundepoint** – de point, som kunder akkumulere gennem loyalitetsprogrammer. Hvis du opretter loyalitetsprogrammer, kan kunderne få point og indløse dem på forskellige måder. I nogle loyalitetsprogrammer kan kunder f.eks. indløse fordelskundepoint i form af en rabat eller endda bruge dem som en form for betaling.
 

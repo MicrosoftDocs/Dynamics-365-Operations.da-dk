@@ -3,7 +3,7 @@ title: Installere, konfigurere og opdatere kundeportalen
 description: Dette emne indeholder licensoplysninger og opsætningsinstruktioner til kundeportalen.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413946"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435601"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installere, konfigurere og opdatere kundeportalen
 
@@ -35,7 +35,7 @@ Hvis du vil implementere kundeportalen, skal du have følgende licenser:
 
 Kundeportalen er afhængig af Power Apps-portaler og dobbeltskrivning som vist i følgende illustration.
 
-![![Kundeportalafhængigheder](media/customer-portal-elements.png "Kundeportalafhængigheder")](media/customer-portal-elements.png "Customer portal dependencies")
+![Kundeportalafhængigheder](media/customer-portal-elements.png "Kundeportalafhængigheder")
 
 I modsætning til andre funktioner i Supply Chain Management findes kundeportalskabelonen i Power Apps-portaler. Derfor er kundeportalen begrænset af den funktionalitet og de funktioner, der leveres af Power Apps-portaler og enhederne i dobbelskrivning.
 
@@ -59,7 +59,7 @@ Før du går i gang, skal du sikre dig, at du allerede har fuldført den [kræve
 
 1. Gå til [make.powerapps.com](https://make.powerapps.com/).
 2. Sørg for at bruge det miljø, hvor du aktiverede dobbeltskrivning.
-3. På fanen **Opret** skal du rulle ned til sektionen **Start fra skabelon** og vælge den skabelon, der har navnet **Supply Chain Management-kunde**.
+3. Under fanen **Opret** skal du rulle ned til sektionen **Start fra skabelon** og vælge den skabelon, der har navnet **Kundeportal**.
 4. Følg vejledningen på skærmen.
 
 Når klargøring er fuldført, kan du få adgang til kundeportalen i sektionen **Dine apps** på **Startsiden**.
@@ -71,7 +71,7 @@ Når klargøring er fuldført, kan du få adgang til kundeportalen i sektionen *
 
 Der kan blive føjet flere funktioner til kundeportalen senere. Eventuelle ændringer, som Microsoft foretager af de underliggende løsningskomponenter, vises automatisk i dit miljø. Det websted, der er klargjort i dit miljø, afspejler dog ikke automatisk ændringer, der er foretaget i konfigurationsdataene. Du skal anvende disse ændringer manuelt ved at hente koden fra den nye skabelon og flette den med det klargjorte websted.
 
-## <a name="resources"></a>Ressourcer
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 Hvis du vil vide, hvordan du kan konfigurere og tilpasse kundeportalen, skal du starte med at gennemgå følgende dokumentation for de underliggende teknologier:
 
