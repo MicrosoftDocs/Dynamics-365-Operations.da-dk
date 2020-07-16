@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (juli 2020)
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (maj 2020)
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner i Dynamics 365 Finance
@@ -738,7 +736,7 @@
                   href: fixed-assets/fixed-asset-integration.md
                 - name: Oprette og anskaffe aktiver fra kreditorer
                   href: fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-                - name: 'Konfigurere afskrivningsmodeller  '
+                - name: 'Konfigurere afskrivningsmodeller '
                   href: fixed-assets/tasks/set-up-depreciation-books-2016-05.md
                 - name: Konfigurere og oprette afskrivningsprofiler
                   href: fixed-assets/tasks/set-up-depreciation-profiles.md
@@ -1184,6 +1182,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Kolonnedefinitioner
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Rapportering af trædefinitioner i økonomiske rapporter
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: Redigere rækkedefinitionsceller
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Nulstille datacenter for økonomirapportering
@@ -3386,12 +3386,18 @@
                       items:
                         - name: Importere konfigurationer fra GR
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere opdaterede versioner af ER-konfigurationer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: Udvidet filtrering til søgning efter konfigurationer i GR
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Overføre konfigurationer til GR
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Dele konfigurationer i GR
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Hurtige introduktioner
+              items:
+                - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: Selvstudier
               items:
                 - name: 'Få mere at vide om, hvordan du bruger datakilder'

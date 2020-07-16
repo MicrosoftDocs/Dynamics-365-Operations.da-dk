@@ -92,8 +92,6 @@
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
-                    - name: Commerce 10.0.10 (maj 2020)
-                      href: get-started/whats-new-commerce-10-0-10.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Finance and Operations
@@ -192,6 +190,8 @@
               items:
                 - name: Arkitektonisk oversigt i Dynamics 365 Commerce
                   href: commerce-architecture.md
+                - name: Godkendelsesstrømme i Dynamics 365 Commerce
+                  href: arch-auth-flow.md
                 - name: Arkitektur for Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Vælg en topologi i butikken
@@ -294,7 +294,7 @@
                           href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
                         - name: Definere relationerne mellem organisationsenheder
                           href: tasks/design-relationships-between-organizational-units.md
-                    - name: Konfiguration af lagersted
+                    - name: Opsætning af lagersted
                       href: channels-setup-warehouse.md
                     - name: Momsopsætning
                       items:
@@ -748,12 +748,12 @@
               href: edit-audit-retail-transactions.md
             - name: 'Oprette, beregne og bogføre opgørelser for en detailbutik'
               href: tasks/create-calculate-post-statement-retail-store.md
-            - name: Funktionalitet til forbedring af bogføring af opgørelsen
-              href: statement-posting-eod.md
             - name: Foretag sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
               href: trickle-feed.md
             - name: 'Oprette, beregne og bogføre opgørelser for en detailbutik'
               href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Økonomisk afstemning i detailbutikker
+              href: fin-recon.md
             - name: Funktionalitet til forbedring af bogføring af opgørelsen
               href: statement-posting-eod.md
             - name: Forbedret håndtering af batchsporede varer
@@ -792,8 +792,6 @@
                   href: configure-your-domain-name.md
                 - name: Implementere en ny e-handelslejer
                   href: deploy-ecommerce-site.md
-                - name: Konfigurere en onlinebutikskanal
-                  href: online-stores.md
                 - name: Oprette et websted for e-handel
                   href: create-ecommerce-site.md
                 - name: Tilknytte et websted til e-handel med en onlinekanal
@@ -810,14 +808,12 @@
                   href: configure-multi-B2C-tenants.md
                 - name: 'Tilføje understøttelse af et netværk, der leverer indhold (CDN)'
                   href: add-cdn-support.md
-                - name: Aktivere registrering af lokationsbaseret lager
+                - name: Aktivere registrering af placeringsbaseret lager
                   href: enable-store-detection.md
             - name: Oversigt over eksempelwebsted
               items:
-                - name: Oversigt over startsiden
+                - name: Oversigt over startside
                   href: quick-tour-home-page.md
-                - name: Oversigt over standardlandingsside for kategori og side for søgeresultater
-                  href: category-search-page-overview.md
                 - name: Oversigt over sider med produktdetaljer
                   href: quick-tour-pdp.md
                 - name: Oversigt over sider til indkøbsvogn og betaling ved kassen
@@ -998,7 +994,7 @@
                       href: add-breadcrumb.md
             - name: Søg
               items:
-                - name: Standardlandingsside for kategori og side for søgeresultater
+                - name: Oversigt over standardlandingsside for kategori og side for søgeresultater
                   href: category-search-page-overview.md
                 - name: Oversigt over skybaseret søgning
                   href: cloud-powered-search-overview.md
@@ -2000,6 +1996,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temaindstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Konfigurere forudindstillinger for tematypografi
+                      href: e-commerce-extensibility/theme-style-presets.md
                     - name: Udvide et tema for at tilføje moduludvidelser
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Udvide et tema fra et basistema
@@ -2036,6 +2034,8 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurere Commerce SDK-build pipeline
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Ofte stillede spørgsmål om Retail SDK
+                  href: dev-itpro/retail-sdk/sdk-faq.md
             - name: POS-udvidelse
               items:
                 - name: POS-skærmlayout
@@ -2046,8 +2046,6 @@
                   href: install-pos-layout-designer.md
                 - name: Udvide POS Dual-displayvisningen
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: Modern POS- og Cloud POS-udløsers udvidelse
-                  href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Tilføje brugerdefinerede kontrolelementer til POS-visninger
                   href: dev-itpro/pos-custom-control.md
                 - name: Tilføje POS-handlinger til POS-layout ved hjælp af knapmatrixdesigner
@@ -2080,9 +2078,9 @@
                   href: dev-itpro/pos-custom-transaction.md
                 - name: Tilføje brugerdefinerede kolonner til et POS-transaktionsgitter
                   href: dev-itpro/pos-custom-transaction-column.md
-                - name: Kalde POS API'er eller handlinger fra POS-udvidelser
+                - name: Kalde POS-API'er eller handlinger fra POS-udvidelser
                   href: dev-itpro/pos-api-extension.md
-                - name: Modern POS-udløsere og udskrivning
+                - name: Modern POS-udløsere (MPOS) og udskrivning
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Tilføje brugerdefinerede kontrolelementer til designerbaserede POS-visninger uden skærm
                   href: dev-itpro/pos-control-non-screen.md
