@@ -3,7 +3,7 @@ title: Fjernede eller udfasede funktioner i tidligere versioner
 description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284008"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500406"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -588,7 +588,7 @@ eGiro er baseret på den internationale FN standard EDIFACT CREMUL, (Multiple Cr
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformatet bruges ikke længere.                                                     |
-| **Erstattet af en anden funktion?**   | Nej Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Ja, ISO20022 Camt.054-beskedimporten. |
 | **Produktområder, der er berørt**         | Debitor                                                                       |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                            |
 
@@ -621,7 +621,7 @@ Du kan vælge et importformat til finske betalinger, der importerer debitorbetal
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformatet bruges ikke længere.                                                     |
-| **Erstattet af en anden funktion?**   | Nej Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Ja, ISO20022 Camt.054-beskedimporten. |
 | **Produktområder, der er berørt**         | Debitor                                                                       |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                            |
 
@@ -632,7 +632,7 @@ Et format, der er specifikt for Finland, bruges til import af regnskabstransakti
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformatet bruges ikke længere.                                                     |
-| **Erstattet af en anden funktion?**   | Nej Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Ja, 20022 Camt.053-bankudtogsimport vha. avanceret bankafstemning. |
 | **Produktområder, der er berørt**         | Debitor                                                                       |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                            |
 
@@ -698,7 +698,7 @@ Telehansa- og TeleTeenus-formater bruges til import af bankens betaling.
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformaterne bruges ikke længere.                                                    |
-| **Erstattet af en anden funktion?**   | Nej Formaterne erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Ja, ISO20022 Camt.054-bankbeskedimporten. |
 | **Produktområder, der er berørt**         | Debitor                                                                        |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                             |
 
@@ -784,7 +784,7 @@ Telepay-betalingsformater omfatter kreditorbetalingseksport (pengeoverførsel) o
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformaterne bruges ikke længere.                                                        |
-| **Erstattet af en anden funktion?**   | Ja, ISO20022-kreditoverførsel som betalingsformat og AvtaleGiro-debitorbetalingsformat til Norge |
+| **Erstattet af en anden funktion?**   | Ja, ISO20022, betalingsformat for kreditoverførsel og AvtaleGiro-debitorbetalingsformat for Norge samt import af returfiler med pain.002- og camt.054-bankbeskeder. |
 | **Produktområder, der er berørt**         | Debitor/kreditor                                                          |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                                 |
 
@@ -844,7 +844,7 @@ En arbejdsgang til styring af oprettelse af medarbejdermål er et af flere arbej
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF, AxD og AxBC integrationer
 
-I Application Integration Framework (AIF) kan data udveksles med eksterne systemer via forretningslogik, der vises som tjenester. Dynamics AX indeholder tjenester, der er baseret på dokumenter og .NET Business Connector (AxBC). Der oprettes et dokument ved hjælp af XML. XML-filen indeholder hovedoplysninger, der er tilføjet for at oprette en *meddelelse*, der kan overføres til eller fra Dynamics AX. Eksempler på dokumenter omfatter salgsordrer og indkøbsordrer. Næsten enhver enhed, f.eks. en kunde, kan dog være repræsenteret af et dokument. Tjenester, der er baseret på dokumenter, bruger **Axd \<Dokument\>**-klasser.
+I Application Integration Framework (AIF) kan data udveksles med eksterne systemer via forretningslogik, der vises som tjenester. Dynamics AX indeholder tjenester, der er baseret på dokumenter og .NET Business Connector (AxBC). Der oprettes et dokument ved hjælp af XML. XML-filen indeholder hovedoplysninger, der er tilføjet for at oprette en *meddelelse*, der kan overføres til eller fra Dynamics AX. Eksempler på dokumenter omfatter salgsordrer og indkøbsordrer. Næsten enhver enhed, f.eks. en kunde, kan dog være repræsenteret af et dokument. Tjenester, der er baseret på dokumenter, bruger **Axd \<Document\>**-klasser.
 
 |   |  |
 |------------|--------------------|
@@ -1125,13 +1125,13 @@ Oprettelsen af adviseringer kan ikke udføres ved hjælp af et batch, men kan st
 | **Produktområder, der er berørt**         | Alle moduler  |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
-### <a name="german-dtazv-payment-format"></a>Tysk DTAZV-betalingsformat
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Tysk DTAZV-betalingsformat i indenlandsk valuta
 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Formatet er ikke længere gældende i Tyskland, fordi det er blevet erstattet af SEPA-funktioner. |
 | **Erstattet af en anden funktion?**   | Eksport af SEPA-betalinger    |
-| **Produktområder, der er berørt**         | Alle moduler   |
+| **Produktområder, der er berørt**         | Kreditor   |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.    |
 
 ### <a name="german-mt940-import"></a>Tysk MT940-import

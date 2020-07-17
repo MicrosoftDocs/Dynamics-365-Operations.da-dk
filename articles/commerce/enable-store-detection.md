@@ -3,7 +3,7 @@ title: Aktivere registrering af lokationsbaserede butikker
 description: I dette emne beskrives, hvordan du aktiverer registrering af lokationsbaserede butikker for dit Dynamics 365 Commerce-websted.
 author: brianshook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 66ffe56f9d969c9d62ed4ff49f0848fab7e58a56
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096863"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533384"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere registrering af lokationsbaserede butikker
 
@@ -53,8 +53,6 @@ Udfør følgende trin for at aktivere registrering af lokationsbaserede butikker
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
-
-[Konfigurere en onlinebutikskanal](online-stores.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 

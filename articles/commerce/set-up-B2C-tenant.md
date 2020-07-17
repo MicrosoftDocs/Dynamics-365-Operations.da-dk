@@ -3,7 +3,7 @@ title: Konfigurere en B2C-lejer i Commerce
 description: I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) til godkendelse af brugerwebsteder i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/28/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9339b584c2d78e59f1a6b79d1610eef1581722c7
-ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
+ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3488756"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497162"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -91,7 +91,7 @@ Svar-URL-adresser er vigtige, da de giver en liste over returdomænerne, når di
 
 I feltet **Svar-URL-adresse** på skærmen **Azure AD B2C-programmer \> Nyt program** skal du tilføje separate linjer til både dit websteds domæne og (når miljøet er klargjort) til den Commerce-genererede URL-adresse. Disse URL-adresser skal altid bruge et gyldigt URL-adresseformat og må kun være grundlæggende URL-adresser (ingen efterfølgende skråstreger eller stier). Strengen ``/_msdyn365/authresp`` skal derefter føjes til de grundlæggende URL-adresser som i følgende eksempler.
 
-- ``https://www.fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp`` (Domænet skal svare helt til e-handelsdomænet. Hvis du har flere domæner, skal du tilføje denne URL-adresse for hvert domæne.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## <a name="create-user-flow-policies"></a>Oprette politikker for brugerstrøm

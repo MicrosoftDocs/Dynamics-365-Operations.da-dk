@@ -1,9 +1,9 @@
 ---
 title: Oversigt over skybaseret søgning
 description: Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057827"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527437"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
 
@@ -73,8 +73,12 @@ I følgende illustration vises et eksempel, hvor der bruges avancerede automatis
 
 Med forbedret sortering i Dynamics 365 Commerce kan kunderne sortere, søge efter og gennemse søgeresultater og begrænse dem efter kriterier som f.eks. pris, produktnavn og produktnummer. Kunderne kan også sortere resultater, afhængigt af om et produkt er nyt, mest sælgende eller tilføjet for nylig.
 
+>[!NOTE]
+>Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
+![Konfigurationsparametre for cloud-baseret søgning](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Standardlandingsside for kategori og side for søgeresultater](category-search-page-overview.md)
+[Oversigt over standardlandingsside for kategori og side for søgeresultater](category-search-page-overview.md)
 
 [Administrere SEO-metadata](manage-seo-metadata.md)

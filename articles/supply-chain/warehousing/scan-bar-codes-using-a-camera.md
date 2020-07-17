@@ -1,6 +1,6 @@
 ---
-title: Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations - Lagersted-app
-description: I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations - Lagersted-appen til at scanne stregkoder ved hjælp af kameraet på en mobilenhed.
+title: Scanne stregkoder med et kamera i lagerstedsappen
+description: I dette emne beskrives, hvordan du konfigurerer lagerstedsappen til at scanne stregkoder ved hjælp af kameraet på en mobilenhed.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 01/03/2018
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 9d3b807b18a0a9c7d24763a2a2a7ea9eccf9c2bb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205847"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530000"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Scanne stregkoder med et kamera i Dynamics 365 Supply Chain Management - Lagersted-app
+# <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>Scanne stregkoder med et kamera i lagerstedsappen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations - Lagersted-appen til at scanne stregkoder ved hjælp af kameraet på en mobilenhed. 
+I dette emne beskrives, hvordan du konfigurerer lagerstedsappen til at scanne stregkoder ved hjælp af kameraet på en mobilenhed. 
 
 ## <a name="prerequisites"></a>Forudsætninger
-For at bruge denne funktion skal du have version 1.2.0.0 af Lagersted-appen installeret, og enheden skal have et kamera. Når du åbner appen efter opdateringen, bliver du spurgt, om du vil tillade, at appen bruger kameraet. Hvis enheden ikke har et kamera, vises der ikke et prompt, og du kan ikke bruge et kamera som scanner. 
+For at bruge denne funktion skal du have version 1.2.0.0 af lagerstedsappen installeret, og enheden skal have et kamera. Når du åbner appen efter opdateringen, bliver du spurgt, om du vil tillade, at appen bruger kameraet. Hvis enheden ikke har et kamera, vises der ikke et prompt, og du kan ikke bruge et kamera som scanner. 
 
 ## <a name="setup"></a>Konfiguration
 I skærmindstillingerne i lagerstedsprogrammet kan du vælge, om kameraet skal bruges til scanning af stregkoder. Hvis du aktiverer **Brug kameraet som scanner**, kan du bruge kameraet til alle inputfelter, hvor den foretrukne inputtilstand er indstillet til **Scannes**. 

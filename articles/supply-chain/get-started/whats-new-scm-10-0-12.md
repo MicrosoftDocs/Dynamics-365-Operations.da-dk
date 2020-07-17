@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c773b5e1013bbd58f48cd345f50a342175ed0c98
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: fd64a4ea53976293a6ff484a370d7804bf6c724f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413887"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530138"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.12 (august 2020)
 
@@ -40,10 +40,9 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 - [Tillad låsning af berøringsskærm for rensning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) – Du finder yderligere oplysninger i [Konfigurere jobkort for enheder](../production-control/config-job-card-device.md).
-- [Hent produktvarianter og sporingsdimensioner i lagersteds-appen under modtagelse af varelast](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) – Du finder flere oplysninger i [Konfigurere mobilenheder til lagerstedsarbejde](../warehousing/configure-mobile-devices-warehouse.md).
+- [Hent produktvarianter og sporingsdimensioner i lagerstedsappen under modtagelse af varelast](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) – Du finder flere oplysninger i [Konfigurere mobilenheder til lagerstedsarbejde](../warehousing/configure-mobile-devices-warehouse.md).
 - Omkostningsberegningsniveau (nyt styklisteniveau) – Du finder yderligere oplysninger under [Omkostningsberegningsniveau](../cost-management/cost-calculation-level.md).
 - [Debitorportal for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) – Du finder flere oplysninger i [Debitorportal for Dynamics 365 Supply Chain Management-oversigt](../sales-marketing/customer-portal-overview.md).
-- [Tjeneste for disponibelt lager](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
 - [Kerneindsigt i IoT-intelligens](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) – Du finder flere oplysninger i [Startsiden for IoT-intelligens](../iot/iot-intelligence-home-page.md).
 - [Nummerplader, der modtager forbedringer af lagerstedsappen (fortsat)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) – Du kan få flere oplysninger i [Nummerplademodtagelse via lagerstedsappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 - [Masseinstallation af Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) Du finder flere oplysninger i [Oversigt over installation og konfiguration af appen Lagersted](../warehousing/install-configure-warehousing-app.md).

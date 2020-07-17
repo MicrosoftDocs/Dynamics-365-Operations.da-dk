@@ -1,9 +1,9 @@
 ---
 title: Konfigurere vareomfordeling for kort plukning
-description: Denne fremgangsmåde viser, hvordan du giver lagermedarbejderne mulighed for hurtigt at finde alternative lokaliteter, hvis der ikke er tilstrækkeligt lager på den lokalitet, der er blevet henvist til.
+description: Dette emner viser, hvordan du giver lagermedarbejderne mulighed for hurtigt at finde alternative lokaliteter, hvis der ikke er tilstrækkeligt lager på den lokation, der er blevet henvist til.
 author: ShylaThompson
 manager: tfehr
-ms.date: 08/29/2018
+ms.date: 06/29/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,35 +17,50 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e860a54c2306f8140947b77cdcb538160a84e06f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e14a4fc72d256bea31296bff80d5b5818b95ea9d
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216798"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527413"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Konfigurere vareomfordeling for kort plukning
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåde viser, hvordan du giver lagermedarbejderne mulighed for hurtigt at finde alternative lokaliteter, hvis der ikke er tilstrækkeligt lager på den lokalitet, der er blevet henvist til. Det er muligt at bruge en automatisk omfordelingsproces, som bruger lokalitetsbestemmelser til at hente varerne, hvis de er tilgængelige på en anden lokalitet. Når manuel omfordeling bruges, vises der også en liste over lokaliteter med det disponible på mobilenheden, så lagermedarbejderen kan vælge, hvilken lokalitet lageret skal bruges fra. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Denne fremgangsmåde viser, hvordan du giver lagermedarbejderne mulighed for hurtigt at finde alternative lokationer, hvis der ikke er tilstrækkeligt lager på den lokation, der er blevet henvist til. 
 
+Omfordelingsprocessen styres af en **Arbejdsundtagelse** og bruges af **lagermedarbejderen.**
+
+Det er muligt at bruge automatiske, manuelle eller begge omfordelingsprocesser:
+
+- Automatisk omfordeling – lokationsvejledninger bruges til at bestemme, om varerne er tilgængelige på en anden lokation. Hvis det er muligt, opdateres arbejdet, og lagerbrugeren dirigeres videre til den alternative lokation.
+- Manuel omfordeling – gør det muligt for lagerbrugeren at vælge mellem en eller flere lokationer med ikke-reserverede antal varer. 
+- Automatisk og manuel – hvis systemet ikke kan udføre en automatisk omfordeling, og der er tilgængelige lokationer med ikke-reserverede antal, vil brugeren blive bedt om at vælge en lokalitet.
 
 ## <a name="set-up-work-exceptions"></a>Konfigurer arbejdsundtagelser
+Det er muligt at definere flere undtagelser for arbejde med forskellige politikker for omfordeling af varer for at give lagermedarbejderen mulighed for at vælge én baseret på behov i den leverance, som de behandler.
+
+Demodatafirmaet USMF bruges til at oprette denne procedure.
+
 1. I **Navigationsrude** skal du gå til **Lokationsstyring > Opsætning > Arbejde > Arbejdsundtagelser**.
-2. Klik på **Ny**. Det er muligt at definere flere undtagelser for arbejde med forskellige politikker for omfordeling af varer for at give lagermedarbejderen mulighed for at vælge én baseret på behov i den leverance, som de behandler.  
-3. Indtast en værdi i feltet **Kode for arbejdsundtagelse**. Giv undtagelsen for arbejde en titel for at angive, hvad den skal bruges til. Det kan f.eks. være Vejledning til korte pluk.  
-4. Indtast en værdi i feltet **Beskrivelse**.
-5. Vælg 'Kort pluk' i typefeltet **Undtagelse**.
-6. Marker afkrydsningsfeltet **Reguler lager**. Denne indstilling betyder, at lageret automatisk reguleres til 0 på den placering, hvor der er udført korte pluk.  
-7. Indtast eller vælg en værdi i feltet **Standardkode for reguleringstype**. I USMF kan du for eksempel vælge 'Fjern Res Adj Out'.  
-8. Vælg 'Manuelt' i feltet **Vareomfordeling**. Hvis du vælger Manuel eller Automatisk og manuel, skal lagermedarbejderen have mulighed for at bruge manuel omfordeling.  
+2. Klik på **Ny** 
+3. Indtast en værdi i feltet **Kode for arbejdsundtagelse**. Dette vil være titlen på denne undtagelse. Det kan f.eks. være Vejledning til korte pluk.
+4. Indtast en værdi i feltet **Beskrivelse**. Dette er en kort beskrivelse af brugen af denne undtagelse. Elementet Kort pluk er f. eks. ikke tilgængelig.
+5. Vælg **Kort pluk** i feltet **Undtagelsestype**.
+6. Marker afkrydsningsfeltet **Reguler lager**. Hvis indstillingen er valg, reguleres lageret automatisk til 0 på den lokation, hvor der er udført korte pluk.
+7. Indtast eller vælg en værdi i feltet **Standardkode for reguleringstype**. I USMF kan du f.eks. vælge **Fjern Res Adj Out**. Hver reguleringstypekode indeholder fire karakteristika: navn, beskrivelse, lagerkladdenavn og **Fjern reservationer**. Hvis **Fjern reservationer** er aktiveret, vil reservationerne for ordrelinjer med kort pluk blive fjernet.  
+8. Vælg en værdi i feltet **Vareomfordeling** som f.eks. Manuel. Hvis du vælger Manuel eller Automatisk og manuel, skal lagermedarbejderen have mulighed for at bruge manuel omfordeling.
 
 ## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a>Konfigurer en arbejder til at bruge manuel vareomfordeling
+
+Demodatafirmaet USMF bruges til at oprette denne procedure.
+
 1. Luk siden.
 2. I **Navigationsrude** skal du gå til **Lokationsstyring > Opsætning > Arbejder**.
 3. Klik på **Rediger**.
-4. Vælg arbejder 24 på listen.
-5. Udvid oversigtspanelet **Arbejde**.
-6. Vælg 'Ja' i feltet **Tillad manuel vareomfordeling**.
-
+4. Vælg arbejder på listen. F.eks. Julia Funderburk.
+5. Udvid oversigtspanelet **Brugere**.
+6. Vælg et **bruger-id** på listen. For eksempel 24.
+7. Udvid oversigtspanelet **Arbejde**.
+8. Vælg **Ja** i feltet **Tillad manuel vareomfordeling**.

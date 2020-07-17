@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175148"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505605"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
@@ -52,7 +52,7 @@ Når avancerede autogebyrer er aktiveret, bliver brugerne ikke længere bedt om 
 
 Når avancerede automatiske gebyrer er aktiveret, bruges de eksisterende **Commerce-parametre** for **Kode for forsendelsesgebyrer** og **Refunder forsendelsesgebyrer** ikke længere. Disse parametre gælder kun hvis parameteren **Brug avancerede automatiske gebyrer** er indstillet til **Nej**.
 
-Inden du aktiverer denne funktion, skal du teste og uddanne dine medarbejdere, fordi dette ændrer forretningsprocessen for, hvordan forsendelsesgebyrer eller andre gebyrer beregnes og føjes til salgsordrer i POS. Du skal kunne forstå, hvilken virkning procesforløbet har på oprettelsen af transaktioner fra POS. Virkningen af at aktivere avancerede automatiske gebyrer er minimal for callcenter- og e-handelsordrer. Callcenter- og e-handels-programmer vil fortsat fungere på samme måde, som de har gjort historisk i forbindelse med tabeller for automatiske gebyrer til beregning af yderligere gebyrer. Callcenterkanalbrugere har fortsat mulighed for manuelt at redigere eventuelle systemberegnede automatiske gebyrer på hoved- eller linjeniveau eller manuelt tilføje ekstra gebyrer på hoved- eller linjeniveau.
+Inden du aktiverer denne funktion, skal du teste og uddanne dine medarbejdere, fordi den aktiverede funktion ændrer forretningsprocessen for, hvordan forsendelsesgebyrer eller andre gebyrer beregnes og føjes til salgsordrer i POS. Du skal kunne forstå, hvilken virkning procesforløbet har på oprettelsen af transaktioner fra POS. Virkningen af at aktivere avancerede automatiske gebyrer er minimal for callcenter- og e-handelsordrer. Callcenter- og e-handels-programmer vil fortsat fungere på samme måde, som de har gjort historisk i forbindelse med tabeller for automatiske gebyrer til beregning af yderligere gebyrer. Callcenterkanalbrugere har fortsat mulighed for manuelt at redigere eventuelle systemberegnede automatiske gebyrer på hoved- eller linjeniveau eller manuelt tilføje ekstra gebyrer på hoved- eller linjeniveau.
 
 ## <a name="additional-pos-operations"></a>Yderligere POS-handlinger
 
@@ -89,7 +89,7 @@ Konfigurer to forskellige automatiske gebyrer på overskriftsniveau. Konfigurer 
 
 For Fragt-leveringsgebyrerne skal du i området Linjer på siden **Automatiske gebyrer** definere et gebyr, der gælder for ordrer mellem 0,01 USD og 100 USD som 10,00 USD. Opret en anden gebyrlinje for at angive, at ordrer over 100,01 USD er gebyrfri.
 
-![Eksempel på automatiske gebyrer](media/headerchargesexample.png)
+![Eksempel på to tabeller med automatiske gebyr](media/headerchargesexample.png)
 
 For Luft-leveringsgebyrerne skal du i området Linjer i formularen Automatiske gebyrer definere et gebyr på 20,00 USD, der skal anvendes på alle ordrer (mellem en værdi på 0,01 og 9.999.999 USD).
 
@@ -119,7 +119,7 @@ Gå til **Debitor \> Konfiguration af gebyrer \> Automatiske gebyrer**.
 
 Indstil **Niveau** rullemenuen til **Linje**, og opret en ny post til automatiske gebyrer for alle kunder og for det specifikke produkt eller produktgruppe, hvor opsætningsgebyrerne bliver opkrævet.
 
-![Eksempel på automatiske gebyrer](media/linechargesexample.png)
+![Eksempel på et tabel med automatiske tillæg på linjeniveau](media/linechargesexample.png)
 
 Send gebyrerne til Commerce Scale Unit/Kanaldatabase, så POS kan udnytte dem, ved at køre jobbet **Distributionsplan 1040**.
 
@@ -173,7 +173,7 @@ Handlingen **Tilføj linjegebyrer** skal være konfigureret i dit [POS-skærmlay
 
 Du kan udføre scenariet i POS-programmet. POS-brugeren opretter salgstransaktionen som sædvanlig og tilføjer produkterne og eventuelle andre konfigurationer til salget. Før opkrævning af betaling, skal brugeren vælge den specifikke linje, hvor gebyret anvendes, fra visningen med POS-varelisten og udføre **Tilføj linjegebyr**-handlingen. Brugeren bliver bedt om at vælge en gebyrkode og angiv værdien af gebyret. Når brugeren har fuldført processen, knyttes gebyret til linjen og føjes til ordretotalen som et gebyr på linjeniveau. Brugeren kan gentage processen for at føje yderligere linjegebyrer til andre varelinjer i posteringen, hvis det er nødvendigt.
 
-Den samme proces kan anvendes i callcenteret ved hjælp af funktionen "Vedligehold gebyrer", som du finder under **Regnskaber**-rullemenuen i **Salgsordrelinjer** sektionen på siden **Salgsordre**. Det åbner siden **Vedligehold gebyrer**, hvor brugeren kan tilføje et nyt linjespecifikt gebyr til transaktionen.
+Den samme proces kan anvendes i callcenteret ved hjælp af funktionen "Vedligehold gebyrer", som du finder under **Regnskaber**-rullemenuen i **Salgsordrelinjer** sektionen på siden **Salgsordre**. Hvis du vælger denne indstilling, åbnes siden **Vedligehold gebyrer**, hvor brugeren kan tilføje et nyt linjespecifikt gebyr til transaktionen.
 
 ## <a name="additional-features"></a>Yderligere funktioner
 

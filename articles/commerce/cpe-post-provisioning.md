@@ -3,7 +3,7 @@ title: Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-prøveversionsmiljø, efter at det er blevet klargjort.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: ad05996eaabd3965308370649a27b8bc3080c7ce
+ms.sourcegitcommit: f72e90dccc80718e99cab2752eaf8931dcbb915e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057711"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3534061"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø
 
@@ -116,7 +116,7 @@ Følg disse trin for at aktivere job i Commerce.
 
 Følg disse trin for at køre fuld datasynkronisering i Commerce.
 
-1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Retail planlægger \> Kanaldatabase**.
+1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Handelsplanlægger \> Kanaldatabase**.
 1. På listen til venstre er kanalen **Standard** valgt. Vælg den anden tilgængelige kanal. Denne kanal hedder **scXXXXXXXXX**.
 1. Vælg **Fuld datasynkronisering** i handlingsruden.
 1. Angiv **9999** som distributionsplanen.

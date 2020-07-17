@@ -1,5 +1,5 @@
 ---
-title: Installere og forbinde lagerstedsappen
+title: Installere og tilslutte lagerstedsapp
 description: Dette emne forklarer, hvordan du installerer lagerstedsappen på de mobile enheder og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
 author: MarkusFogelberg
 manager: tfehr
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 290888dbf7d194b8cf259d7218d01d4a4f911db0
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367076"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530069"
 ---
-# <a name="install-and-connect-the-warehousing-app"></a>Installere og forbinde lagerstedsappen
+# <a name="install-and-connect-the-warehouse-app"></a>Installere og tilslutte lagerstedsapp
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,7 +47,7 @@ Lagerstedsappen er tilgængelig på både Windows- og Android-operativsystemer. 
 > [!NOTE]
 > Hvis du skal understøtte ældre Windows-enheder, der ikke kan køre den nyeste version af Windows, kan du stadig hente version 1.6.3.0 af lagerstedsappen i Microsoft Store. Denne version kører på Windows 10 (UWP) November Update 1511 (build 10.0.10586) eller senere. Bemærk dog, at denne version af lagerstedsappen ikke understøtter masseimplementering af forbindelsesindstillinger. Du skal derfor [manuelt konfigurere forbindelsen](#config-manually) for de enkelte enheder, der kører denne version af appen.
 
-## <a name="get-the-warehousing-app"></a>Hent lagerstedsappen
+## <a name="get-the-warehouse-app"></a>Hente lagerstedsappen
 
 Brug et af følgende links til at hente appen:
 

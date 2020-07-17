@@ -3,7 +3,7 @@ title: Konfigurere en onlinekanal
 description: Dette emne beskriver, hvordan du opretter en ny onlinekanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002421"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533315"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurere en onlinekanal
 
@@ -35,15 +35,15 @@ Dette emne beskriver, hvordan du opretter en ny onlinekanal i Microsoft Dynamics
 
 Dynamics 365 Commerce understøtter flere detailkanaler. Disse detailkanaler omfatter onlinebutikker, call centre og detailbutikker (også kaldet fysiske butikker). Onlinebutikker giver kunderne mulighed for at købe produkter fra detailhandlerens onlinebutik ud over fra detailhandlerens fysiske butik.
 
-Hvis du vil oprette en onlinebutik i Commerce, skal du først oprette en onlinekanal. 
+Hvis du vil oprette en onlinebutik i Commerce, skal du først oprette en onlinekanal. Før du opretter en ny onlinekanal, skal du sikre dig, at du har fuldført [forudsætningerne for kanalopsætning](channels-prerequisites.md).
 
-Før du opretter en ny onlinekanal, skal du sikre dig, at du har fuldført [forudsætningerne for kanalopsætning](channels-prerequisites.md).
+Før du kan oprette et nyt websted, skal der oprettes mindst én onlinebutik i Commerce. Du kan finde flere oplysninger under [Oprette et websted for e-handel](create-ecommerce-site.md).
 
 ## <a name="create-and-configure-a-new-online-channel"></a>Oprette og konfigurere en ny onlinekanal
 
 Følg disse trin for at oprette en ny onlinekanal.
 
-1. Gå til **Moduler \>Kanaler \> Onlinebutikker** i navigationsruden.
+1. Gå til **Moduler \> Kanaler \> Onlinebutikker** i navigationsruden.
 1. Gå til handlingsruden, og vælg **Ny**.
 1. Skriv et navn til den nye kanal i feltet **Navn**.
 1. Angiv den relevante **Juridiske enhed** på rullelisten Juridisk enhed.

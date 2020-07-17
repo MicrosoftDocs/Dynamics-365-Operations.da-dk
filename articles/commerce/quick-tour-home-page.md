@@ -1,9 +1,9 @@
 ---
-title: Oversigt over startsiden
+title: Oversigt over startside
 description: Dette emne indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025965"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527572"
 ---
-# <a name="overview-of-the-home-page"></a>Oversigt over startsiden
-
+# <a name="home-page-overview"></a>Oversigt over startside
 
 [!include [banner](includes/banner.md)]
 
@@ -68,8 +67,6 @@ Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagne
 > Alle moduler på listen her kan bruges på alle webstedssider. Deres placering på startsiden er dog vigtig, fordi denne side er det første sted, hvor kunderne interagerer med dit websted.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-
-[Oversigt over standardlandingsside for kategori og side for søgeresultater](category-search-page-overview.md)
 
 [Oversigt over sider med produktdetaljer](quick-tour-pdp.md)
 
