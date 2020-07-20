@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5a751b360b2da8f786dd7b8d139e1a0a44052894
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211968"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530529"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -107,7 +107,7 @@ Når en vare kodespores, findes der desuden en parameter til **Registreringsmeto
 **Når der bruges sporing af fangstvægtkode**, skal der altid oprettes en kode for hver fastvægtenhed, der modtages, og alle koder skal altid være tilknyttet en vægt.
 
 **Kasse** er f.eks. fastvægtenheden, og du modtager en palle med otte kasser. I dette tilfælde skal der oprettes otte entydige fastvægtkoder, og der skal knyttes en vægt til hver kode. Alt efter den indgående fastvægtkode kan vægten af alle de otte kasser registreres, og den gennemsnitlige vægt kan derefter distribueres til hver kasse, eller der kan registreres en entydig vægt for hver kasse.
-Når du bruger funktionen **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes** med den proces, der er aktiveret via et menupunkt i en mobil enhed, opdateres lageret på basis af eksisterende oplysninger om fangstvægtmærkatet. Derfor beder appen Lagersted dig ikke om at registrere fangstvægtmærkatets data som del af en produktionsrapport som en færdigmeldt handling.
+Når du bruger funktionen **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes** med den proces, der er aktiveret via et menupunkt i en mobil enhed, opdateres lageret på basis af eksisterende oplysninger om fangstvægtmærkatet. Derfor beder lagerstedsappen dig ikke om at registrere fangstvægtmærkatets data som del af en produktionsrapport som en færdigmeldt handling.
 
 **Når sporing af fastvægtkode ikke bruges**, kan vægten registreres for hver dimensionsopsætning (f.eks. for hvert id og sporingsdimension). Vægten kan også registreres på basis af et samlet niveau, f.eks. fem id-numre (paller).
 

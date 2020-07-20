@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278950"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502107"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>Undervisningskatalog for projektlederens implementering
 
@@ -29,7 +29,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | Indhold | Beskrivende tekst  | Formater  | Længde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo   | 7 timer   |
-| [Grundlæggende funktioner i Dynamics 365 og Power Platform]https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/ | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo   | 5.5 timer |
+| [Grundlæggende funktioner i Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo   | 5.5 timer |
 | [Kom i gang med Finance and Operations-apps](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo   | 2 timer   |
 | [Før du køber](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Se den trinvise vejledning, som du kan bruge, uanset om du stadig evaluerer Finance and Operations eller er klar til at købe.| Dokument  |           |
 | [Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/)  | Få mere at vide om de nyeste funktioner og forbedringer i Dynamics 365  | Dokument  |           |

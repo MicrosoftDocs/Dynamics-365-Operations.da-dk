@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201473"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530230"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse af forsendelse til cross-docking
 
@@ -164,7 +164,7 @@ Udfør følgende trin for at foretage cross-docking af antal færdigvarer til de
 8. På siden **Produktionsordre** i handlingsruden skal du vælge fanen **Produktionsordre**, og i gruppen **Proces** skal du vælge **Estimat** og derefter vælge **OK**. Ordren forkalkuleres, og råvareantallet er reserveret til produktionen.
 9. Under fanen **Produktionsordre** i handlingsruden skal du vælge gruppen **Proces**, vælge **Frigiv** og derefter vælge **OK**. Der oprettes lagerpluk for råvarerne.
 10. Åbn og gennemse arbejdet. Vælg **Arbejdsdetaljer** i gruppen **Generelt** under fanen **Lagersted** i handlingsruden. Notér dig arbejds-id'et.
-11. Åbn og log på Dynamics 365 for Finance and Operations - Lagersted-appen for at køre arbejde på lagersted 51.
+11. Log på lagerstedsappen for at køre arbejde på lagersted 51.
 12. Gå til **Produktion** \> **Produktionspluk**.
 13. Angiv arbejds-id'et for at starte og fuldføre råvarepluk. 
 

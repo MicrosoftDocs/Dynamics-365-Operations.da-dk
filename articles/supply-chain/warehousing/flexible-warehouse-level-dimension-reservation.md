@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346462"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530299"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Reservationspolitik for fleksibel dimension for lagerstedsniveau
 
@@ -186,7 +186,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
     Antallet **10** for batchnummer **B11** plukkes nu for salgsordrelinjen og placeres på lokationen **Baydoor**. På dette tidspunkt er det klar til at blive læsset på lastbilen og sendt til kundens adresse.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>Undtagelseshåndtering af lagerstedsarbejde, der har ordrebekræftede batchnumre
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Undtagelseshåndtering af lagerstedsarbejde, der har ordrebekræftede batchnumre
 
 Lagerstedsarbejde for plukning af ordrebekræftede batchnumre er underlagt samme standardhåndtering af undtagelser for lagersted og handlinger som almindeligt arbejde. Generelt kan det åbne arbejde eller den åbne arbejdslinje annulleres, den kan afbrydes, fordi en brugerlokation er fuld, den kan være kort plukket, og den kan opdateres på grund af en bevægelse. På samme måde kan den plukkede mængde arbejde, der allerede er udført, reduceres, eller arbejdet kan tilbageføres.
 

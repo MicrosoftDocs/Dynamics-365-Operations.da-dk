@@ -3,7 +3,7 @@ title: Oversigt over funktionsstyring
 description: Dette emne beskriver funktionen Administration af funktioner, og hvordan du kan bruge den.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456591"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499613"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -140,6 +140,10 @@ Følgende eksempler beskriver, hvad der sker, når du bruger enheden **Administr
 ## <a name="feature-management-and-flighting"></a>Administration af funktioner og flighting
 
 Med Administration af funktioner kan du styre de funktioner, der leveres i hver udgave. Flighting gør det muligt for Microsoft Teams at frigive funktioner til et begrænset antal kunder, så disse funktioner kan testes og valideres, uden at det påvirker alle kunder. Administration af funktioner styrer ikke flighting af nogen funktioner.
+
+## <a name="new-features-are-optional-for-12-months"></a>Nye funktioner er valgfrie i 12 måneder
+
+Når der er installeret en ny funktion, der ikke er kritisk, er den valgfri i en periode på 12 måneder. Dette giver dig og din organisation tid til at planlægge, hvornår I skal tage funktion i anvendelse og få den testet i forhold til de daglige operationer. Du kan finde flere oplysninger under [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Bruge Administration af funktioner til at slå ISV-funktioner eller brugerdefinerede funktioner til
 

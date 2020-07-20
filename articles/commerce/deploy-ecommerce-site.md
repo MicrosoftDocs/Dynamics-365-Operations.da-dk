@@ -3,7 +3,7 @@ title: Implementere en ny e-handelslejer
 description: I dette emne beskrives, hvordan du installerer en ny e-handelslejer ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3febd3ca36f4d517033e910c4087ad3a6ffff35a
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269929"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533269"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
 
@@ -96,8 +96,6 @@ Hvis du vil have adgang til webstedsgeneratoren, skal du gå til fanen **e-hande
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
-
-[Konfigurere en onlinebutikskanal](online-stores.md)
 
 [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
 

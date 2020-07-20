@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 709a75a259b1f8daa5b72e76b56942573c403f43
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 9a030f2e219c7c389d6255254545f3f895eff75b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261312"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530575"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
 
@@ -66,7 +66,7 @@ Når der først ankommer en indgående last på lagerstedet, skal lagermedarbejd
 
 - **En mobil enheds menu, der er konfigureret til at understøtte modtagelse af last**
 
-    Appen [Dynamics 365 for Finance and Operations – Lagersted](install-configure-warehousing-app.md) til mobile enheder understøtter følgende arbejdsoprettelsesprocesser:
+    [Lagerstedsappen](install-configure-warehousing-app.md) til mobile enheder understøtter følgende arbejdsoprettelsesprocesser:
 
     - Modtagelse af varelast
     - Modtagelse af lagervare og placering på lager
@@ -285,7 +285,7 @@ Hvis du vil arbejde gennem disse scenarier ved hjælp af de angivne eksempelpost
 
 Før lagermodtagelsesassistenter kan bruge en mobil enhed til at registrere indgående lager, der er knyttet til en last, skal du oprette et menupunkt på en mobil enhed til dette formål.
 
-I dette afsnit skal du oprette et menupunkt på den mobil enhed og føje det til en eksisterende menu. En lagermedarbejder kan derefter vælge menupunktet i appen Lagersted.
+I dette afsnit skal du oprette et menupunkt på den mobil enhed og føje det til en eksisterende menu. En lagermedarbejder kan derefter vælge menupunktet i lagerstedsappen.
 
 1. Gå til **Lokationsstyring \> Opsætning \> Mobil enhed \> Menupunkter i mobilenhed**, og kontrollér, at din mobile enheds menu indeholder et menupunkt, der har følgende indstillinger:
 

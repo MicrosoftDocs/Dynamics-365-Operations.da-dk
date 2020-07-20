@@ -1,9 +1,9 @@
 ---
 title: Delegere workflowopgaver i en arbejdsgang
 description: Hvis du planlægger at være væk fra kontoret eller af anden årsag ikke kan udføre workflowopgaver, kan du delegere eller tildele dine workflowopgaver til andre brugere.
-author: jasongre
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/23/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aceafbe8dfcdac2ac7b97a4f77a9a30599c60c51
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140576"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515758"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegere arbejdselementer i en arbejdsgang
 
@@ -30,6 +30,16 @@ ms.locfileid: "3140576"
 ## <a name="manually-delegate-a-work-item"></a>Manuel delegering af et arbejdselement
 
 For at delegere et individuelt arbejdselement skal du vælge indstillingen **Deleger** i menuen **Arbejdsgang** og derefter indtaste den bruger, som elementet skal delegeres til, samt en bemærkning hertil. Dette vil omfordele arbejdselementet til den pågældende bruger, således at denne kan udføre opgaven.
+
+## <a name="manually-delegate-multiple-work-items"></a>Manuelt delegere flere arbejdselementer
+
+Flere arbejdselementer kan delegeres sammen på siden **Arbejdselementer, der er tildelt mig**. Følgende arbejdsgangstyper er berettiget til massedelegering: arbejdsgang til godkendelse af købsaftaler, arbejdsgang til indkøbsordrer, gennemgang af indkøbsrekvisitioner og arbejdsgang til kreditorfakturaer. Funktionen **Deleger flere arbejdselementer** er som standard deaktiveret og kan aktiveres under **Arbejdsområder > Funktionsstyring**. Kontakt systemadministratoren for at få hjælp til at aktivere denne funktion.
+1.  Gå til **Almindeligt > Almindeligt > Arbejdselementer > Arbejdselementer, der er tildelt til mig**.
+2.  Vælg de arbejdselementer, der skal delegeres.
+3.  Klik på menuen **Deler arbejdselementer**.
+4.  Vælg den bruger, der skal delegeres arbejdselementer til, i feltet **Bruger**.
+5.  Skriv en kommentar i feltet **Kommentar** for at forklare, hvorfor du delegerer arbejdselementer.
+6.  Klik på knappen **Deleger arbejdselementer** for at fuldføre delegeringen af arbejdselementet.
 
 ## <a name="automatically-delegate-work-items"></a>Automatisk delegering af arbejdselementer
 

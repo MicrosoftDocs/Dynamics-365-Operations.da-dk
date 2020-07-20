@@ -1,9 +1,9 @@
 ---
 title: Oversigt over standardlandingsside for kategori og side for søgeresultater
 description: Dette emne indeholder en oversigt over standardlandingsside for kategori og side for søgeresultater i Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002490"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527462"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Oversigt over standardlandingsside for kategori og side for søgeresultater
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversigt over standardlandingsside for kategori og side for søgeresultater
 
 [!include [banner](includes/banner.md)]
 
@@ -96,9 +95,15 @@ Følgende komponenter er vigtige for en søgeresultatside:
 - **Sideinddeling** lader de besøgende på webstedet flytte fra én side med kategoriserede produktresultater til en anden side.
 - **Samlet antal** viser det samlede antal produkter, der er defineret i en kategori, og som opfylder søgekriterierne.
 
+>[!NOTE]
+>Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
+![Konfigurationsparametre for cloud-baseret søgning](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsiden](quick-tour-home-page.md)
+[Oversigt over skybaseret søgning](cloud-powered-search-overview.md)
+
+[Oversigt over startside](quick-tour-home-page.md)
 
 [Oversigt over sider med produktdetaljer](quick-tour-pdp.md)
 
