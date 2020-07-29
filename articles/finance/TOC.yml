@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: Levering af ISV-løsninger ved brug af One Version
+                - name: Levere ISV-løsninger ved brug af One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: Oprette og automatisere test af brugeraccept
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -2540,12 +2540,14 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Lagerrapporter
                       href: localizations/rus-inventory-reports.md
-                    - name: Oversigt over lagerprofil
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: Konfigurere en lagerprofil
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: Bruge en lagerprofil i dokumenter og forespørgsler
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Lagerprofil
+                      items:
+                        - name: Oversigt over lagerprofil
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: Konfigurere en lagerprofil
+                          hreF: localizations/rus-set-up-inventory-profile.md
+                        - name: Bruge en lagerprofil i dokumenter og forespørgsler
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering
                   items:
                     - name: Økonomirapportering
