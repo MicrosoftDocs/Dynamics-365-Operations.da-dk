@@ -41,7 +41,7 @@ I et typisk forretningsscenarie til Microsoft Dynamics 365-integration skal data
 I dette selvstudium bruges følgende teknologier:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Masterdatakilden for arbejdere, der skal eksporteres.
-- **[Azure Logic apps](https://azure.microsoft.com/services/logic-apps/)** – Den teknologi, der omfatter organisering og planlægning af den tilbagevendende eksport.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – Den teknologi, der omfatter organisering og planlægning af den tilbagevendende eksport.
 
     - **[Connectors](https://docs.microsoft.com/azure/connectors/apis-list)** – Den teknologi, der bruges til at forbinde logikappen med de nødvendige slutpunkter.
 
@@ -83,7 +83,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
 
     ![Side til oprettelse af logikapp](media/integration-logic-app-creation-1.png)
 
-2. Start med en tom logikapp i designeren af logikapp.
+2. Start med en tom logikapp i Logic Apps Designer.
 3. Tilføj en [udløser for gentagelsesplan](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) for at køre logikappen hver 24. time (eller i henhold til en tidsplan efter eget valg).
 
     ![Dialogboksen Gentagelse](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Hvis du vil teste logikappen, skal du vælge knappen **Kør** i designeren. Du k
 
 Hvis der rapporteres om en fejl for et af trinnene, skal du vælge det trin, der er fejl ved, i designerne og undersøge felterne **Input** og **Output** for det. Foretag fejlfinding, og juster trinnet som nødvendigt for at rette fejlene.
 
-I følgende illustration vises det, hvordan designeren af logikapp ser ud, når alle trin i logikappen kører korrekt.
+I følgende illustration vises det, hvordan Logic Apps Designer ser ud, når alle trin i logikappen kører korrekt.
 
 ![Gennemført kørsel af logikapp](media/integration-logic-app-successful-run.png)
 
