@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Levering af ISV-løsninger ved brug af One Version
+                - name: Levere ISV-løsninger ved brug af One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oprette og automatisere test af brugeraccept
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
@@ -74,6 +74,8 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
+                    - name: Supply Chain Management 10.0.10 (maj 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
@@ -1355,6 +1357,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Annullere et planlægningsjob
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Udvidelse til planlægningsoptimering
+                  href: master-planning/planning-optimization/extensibility.md
                 - name: Fejlfinde i Planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Behovsplaner
@@ -1511,6 +1515,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oprette nummerserier ved hjælp af en guide
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere nummerserier til lagerstrømme
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
             - name: Organisationer og organisationshierarkier
               items:
                 - name: Oversigt over organisationer og organisationshierarkier
@@ -1817,6 +1823,10 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Udelade produkter fra varedisponering
                       href: pim/tasks/exclude-products-master-planning.md
+                - name: Varer med dobbelt anvendelse
+                  href: pim/dual-use.md
+                - name: Oprindelsesland
+                  href: pim/country-of-origin.md
                 - name: Oprette en stregkode for et produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Angive GTIN-koden for et produkt
@@ -2565,22 +2575,20 @@
               href: warehousing/warehouse-management-overview.md
             - name: Indgående lagerstedsoperationer
               items:
-                - name: Kvitteringer for registrering og placering på lager
-                  items:
-                    - name: Lagerstedshåndtering af indgående laster til indkøbsordrer
-                      href: warehousing/inbound-load-handling.md
-                    - name: Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
-                      href: warehousing/tasks/register-items-advanced-warehousing.md
-                    - name: Registrere varer for en vare med aktiveret grundlæggende lagerstyring ved hjælp af en varemodtagelseskladde
-                      href: warehousing/tasks/register-items-basic-warehousing.md
-                    - name: Levere produkter direkte fra modtagende lagersteder til butikker
-                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                    - name: Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
-                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                    - name: Konfigurere en arbejdsskabelon for indkøbsordrer
-                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
-                    - name: Blanding af produktdimension for lokation
-                      href: warehousing/location-product-dimension-mixing.md
+                - name: Lagerstedshåndtering af indgående laster til indkøbsordrer
+                  href: warehousing/inbound-load-handling.md
+                - name: Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Registrere varer for en vare med aktiveret grundlæggende lagerstyring ved hjælp af en varemodtagelseskladde
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Levere produkter direkte fra modtagende lagersteder til butikker
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Konfigurere en arbejdsskabelon for indkøbsordrer
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: Blanding af produktdimension for lokation
+                  href: warehousing/location-product-dimension-mixing.md
             - name: Udgående lagerstedsoperationer
               items:
                 - name: Reservationer i lokationsstyring
@@ -2597,14 +2605,14 @@
                   items:
                     - name: Konfigurere klyngepluk
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Systembaseret klyngepluk
+                      href: warehousing/system-directed-cluster-pick.md
                     - name: Konfigurere containerisering
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Bekræftelse af batch og nummerplade
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Aktivere udskrivning af id-etiket
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Bekræftelse af stykplukning
                       href: warehousing/piece-picking-confirmation.md
                     - name: Emballage og gebyrer
@@ -2615,15 +2623,19 @@
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Annullere lagerstedsarbejde for undtagelseshåndtering
                       href: warehousing/cancel-warehouse-work.md
-                    - name: Systembaseret klyngepluk
-                      href: warehousing/system-directed-cluster-pick.md
                     - name: Systembaseret arbejdsrækkefølge
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Pluklinjegruppering
                       href: warehousing/pick-line-grouping.md
                     - name: Lagerstedsallokering
                       href: warehousing/warehouse-slotting.md
-                - name: Genopfyldning
+                    - name: Aldersfordeling i lokalitetsvejledning til lagerpluk
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Udgående sortering
+                      href: warehousing/outbound-sorting.md
+                    - name: Sæt til væg - Læg til butik
+                      href: warehousing/put-to-wall-put-to-store.md
+                - name: Opfyldning
                   items:
                     - name: Oversigt over genopfyldning
                       href: warehousing/replenishment.md
@@ -2645,6 +2657,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Bølgeskabelongruppering
                       href: warehousing/wave-template-grouping.md
+                    - name: Udskriv og Afvis bølgeetiketter
+                      href: warehousing/reprint-and-void-wave-labels.md
                 - name: Forsendelseskonsolideringspolitikker
                   items:
                     - name: Forsendelseskonsolideringspolitikker
@@ -2715,6 +2729,10 @@
                       href: warehousing/work-line-details.md
                     - name: Placering af lokations-id
                       href: warehousing/location-license-plate-positioning.md
+                    - name: Skift arbejdspulje på arbejde
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: Varekonsolidering - udnyttelse af lokation
+                      href: warehousing/item-consolidation-location-utilization.md
             - name: Opsætning af lagersted
               items:
                 - name: Konfiguration af lagersted
@@ -2729,11 +2747,13 @@
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurere behandling af bølge
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Angive og bruge bølgeetiketudskrivning
+                      href: warehousing/configure-wave-label-printing.md
                     - name: Opdatere forsendelser automatisk
                       href: warehousing/auto-update-shipment.md
-                    - name: Oprette en placeringsprofil.
+                    - name: Oprette en lokationsprofil
                       href: warehousing/tasks/create-location-profile.md
-                    - name: Konfigurere placeringer på et WMS-aktiveret lagersted
+                    - name: Konfigurere lokationer på et WMS-aktiveret lagersted
                       href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
                     - name: Placeringsstatus for lagersted
                       href: warehousing/warehouse-location-status.md
@@ -2753,8 +2773,6 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Dokumentruteplanlægning for layout til id-etiketter
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Understøttelse af mobilstregkode
                       href: warehousing/mobile-barcode-support.md
                     - name: Oprette lagersted for flytteordrer
@@ -2767,6 +2785,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurere mobilenheder til lagerstedsarbejde
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Scanne stregkoder med et kamera i lagerstedsappen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Modtage id med lagerstedsapp
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
