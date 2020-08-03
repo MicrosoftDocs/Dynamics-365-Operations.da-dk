@@ -3,7 +3,7 @@ title: Konfigurere egenskaber for arbejdsgang
 description: I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199430"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541103"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaber for arbejdsgang
 
@@ -91,12 +91,7 @@ Udfør følgende trin for at angive, hvornår den arbejdsgang, du konfigurerer, 
 3. Klik på **Tilføj betingelse**.
 4. Angiv en betingelse.
 5. Angiv eventuelle supplerende betingelser, hvis det er påkrævede.
-6. Hvis du vil kontrollere, at de angivne betingelser er konfigureret korrekt, skal du følge disse trin:
-
-    1. Klik på **Test**.
-    2. På siden **Test betingelse for arbejdsgang** i området **Valider betingelse**, og vælg en post.
-    3. Klik på **Test**. Systemet evaluerer den valgte post for at afgøre, om den opfylder de betingelser, du har angivet. Hvis du f.eks. opretter en arbejdsgang for indkøbsrekvisitioner til Spanien, vises en liste over indkøbsrekvisitioner i området **Valider betingelse** på siden. Når du klikker på **Test**, evaluerer systemet den markerede indkøbsrekvisition for at finde ud af, om land/område er ES.
-    4. Klik på **OK** eller **Annuller** for at vende tilbage til siden **Egenskaber**.
+6. Du kan køre arbejdsgangen med nogle destinationsposter for at kontrollere, om betingelsen medtager og udelukker poster korrekt.
 
 ## <a name="specify-when-notifications-are-sent"></a>Angive, hvornår beskeder sendes
 

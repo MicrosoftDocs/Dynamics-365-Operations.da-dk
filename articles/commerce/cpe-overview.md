@@ -1,9 +1,9 @@
 ---
-title: Oversigt over Dynamics 365 Commerce-prøveversionsmiljø
-description: Dette emne indeholder en oversigt over prøveversionsmiljøet til Microsoft Dynamics 365 Commerce.
+title: Oversigt over Dynamics 365 Commerce-evalueringsmiljø
+description: Dette emne indeholder en oversigt over evalueringsmiljøet til Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,45 +17,50 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024677"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599745"
 ---
-# <a name="dynamics-365-commerce-preview-environment-overview"></a>Oversigt over Dynamics 365 Commerce-prøveversionsmiljø
-
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Oversigt over Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over prøveversionsmiljøet til Microsoft Dynamics 365 Commerce.
+Dette emne indeholder en oversigt over evalueringsmiljøet til Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+> [!NOTE]
+> Miljøer til Commerce-evaluering er ikke generelt tilgængelige og tildeles til partnere og kunder efter anmodning. Du kan få flere oplysninger ved at rette henvendelse til din kontakt hos din Microsoft-partner.
 
-Commerce-prøveversionsmiljøet er et valgfrit altomfattende prøveversionsmiljø til Dynamics 365 Commerce, som gør det muligt for potentielle kunder at afprøve Commerce-produktet før dets generelle offentlige udgivelse.
+## <a name="overview"></a>Overblik
 
-Bortset fra nogle mindre begrænsninger, der ikke påvirker funktioner eller funktionalitet, giver Commerce-prøveversionsmiljøet den komplette Commerce-oplevelse og kan bruges af kunder og implementeringspartnere til at evaluere produktet, give feedback og foretage fit-/GAP-analyse.
+Commerce-evalueringsmiljøet er et valgfrit altomfattende miljø til Dynamics 365 Commerce, som gør det muligt for partnere og potentielle kunder at afprøve Commerce-produktet.
 
-## <a name="limitations-of-the-commerce-preview-environment"></a>Begrænsninger i Commerce-prøveversionsmiljøet
+Evalueringsmiljøer er delvist forudkonfigureret for at reducere de krævede trin efter klargøring.
 
-Selvom Commerce-prøveversionsmiljøet indeholder det komplette sæt af Commerce-funktioner og -funktionalitet, er der nogle mindre begrænsninger:
+Bortset fra nogle mindre begrænsninger, der ikke påvirker funktioner eller funktionalitet, giver Commerce-evalueringsmiljøet den komplette Commerce-oplevelse og kan bruges af kunder og implementeringspartnere til at evaluere produktet, give feedback og foretage fit-/GAP-analyse.
 
-- Selv om Commerce-prøveversionsmiljøet i sig selv ikke har nogen geografiske begrænsning, kan miljøets komponenter, såsom Retail Cloud Scale Unit (RCSU) og e-Commerce-programmer, kun klargøres i USA.
-- Anvendelse af Commerce-prøveversionsmiljøet er begrænset til 30 dage fra datoen for klargøringen af e-Commerce.
-- Commerce-prøveversionsmiljøet kan kun implementeres og initialiseres i et miljø, der bruger demotopologien, hvor alle komponenter i et miljø installeres i en enkelt virtuel maskine (VM). Den væsentligste begrænsning for denne VM-topologi med én boks er antallet af brugere, som prøveversionsmiljøet kan understøtte samtidig.
-- Commerce-prøveversionsmiljøet kan kun evalueres indtil Commerce-produktet gøres generelt tilgængeligt (GA). Nye demo-miljøer vil være tilgængelige efter GA.
+## <a name="limitations-of-the-commerce-evaluation-environment"></a>Begrænsninger i Commerce-evalueringsmiljøet
+
+Selvom Commerce-evalueringsmiljøet indeholder det komplette sæt af Commerce-funktioner og -funktionalitet, er der nogle mindre begrænsninger:
+
+- Selv om Commerce-evalueringsmiljøet i sig selv ikke har nogen geografiske begrænsninger, skal miljøets komponenter, såsom Retail Cloud Scale Unit (RCSU) og e-Commerce-programmer, klargøres i USA.
+- Anvendelse af Commerce-evalueringsmiljøet er begrænset til 30 dage fra datoen for klargøringen af e-Commerce.
+- Commerce-evalueringsmiljøet kan kun implementeres og initialiseres i et miljø, der bruger demotopologien, hvor alle komponenter i et miljø installeres i en enkelt skybaseret virtuel maskine (VM). Den væsentligste begrænsning for denne topologi er antallet af brugere, som miljøet kan understøtte samtidig.
 
 ## <a name="get-started"></a>Introduktion
 
-Hvis du vil klargør Commerce-prøveversionsmiljøet se [Klargøring af et Commerce-prøveversionsmiljø](provisioning-guide.md).
+Sådan klargør du Commerce-evalueringsmiljøet se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Klargøre et Dynamics 365 Commerce-prøveversionsmiljø](provisioning-guide.md)
+[Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md)
 
-[Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø](cpe-post-provisioning.md)
+[Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md)
 
-[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø](cpe-optional-features.md)
+[Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](cpe-bopis.md)
 
-[Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø](cpe-faq.md)
+[Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)
+
+[Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)

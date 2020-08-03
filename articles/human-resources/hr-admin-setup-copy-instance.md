@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8385b7dfcd1d7294542c7f54f609b26b7988ac4
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431239"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554319"
 ---
 # <a name="copy-an-instance"></a>Kopiér en forekomst
 
@@ -68,7 +68,7 @@ Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og deref
 
 4. I opgaveruden **Kopier en forekomst** skal du markere den forekomst, der skal overskrives, og derefter vælge **Kopier**. Vent, indtil værdien i feltet **Kopieringsstatus** opdateres til **Fuldført**.
 
-   ![[Vælg en forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Vælg forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vælg **Power Platform**, og log på Microsoft Power Platform Administration.
 
@@ -108,6 +108,6 @@ Følgende statusser ændres desuden, når du kopierer en forekomst:
 
 ## <a name="environment-admin"></a>Miljøadmin
 
-Alle brugere i destinationens sandkassemiljøet, herunder administratorer, erstattes af brugerne af kildemiljøet. Før du kopierer en forekomst, skal du sikre dig, at du er administrator i destinationsmiljøet. Er du ikke det, kan du ikke logge på destinationens sandkassemiljø, når kopieringen er fuldført.
+Alle brugere i destinationens sandkassemiljøet, herunder administratorer, erstattes af brugerne af kildemiljøet. Før du kopierer en forekomst, skal du sikre dig, at du er administrator i kildemiljøet. Er du ikke det, kan du ikke logge på destinationens sandkassemiljø, når kopieringen er fuldført.
 
 Alle brugere, der ikke er administratorer i destinationens sandkassemiljø, er deaktiveret for at forhindre uønsket logon i sandkassemiljøet. Administratorer kan genaktivere brugerne, hvis det er nødvendigt.

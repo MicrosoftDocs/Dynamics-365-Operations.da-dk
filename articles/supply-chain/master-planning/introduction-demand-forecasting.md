@@ -3,7 +3,7 @@ title: Oversigt over behovsprognose
 description: Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213877"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550034"
 ---
 # <a name="demand-forecasting-overview"></a>Oversigt over behovsprognose
 
@@ -48,7 +48,7 @@ Her er nogle af de vigtigste funktioner i behovsprognoser:
 Tre overordnede temaer er implementeret i behovsprognoser:
 
 -   **Modularitet** – behovsprognoser er modulære og lette at konfigurere. Du kan slå funktionen til og fra ved at ændre konfigurationsnøglen under **Handel** &gt; **Lagerbudget** &gt; **Behovsprognoser**.
--   **Genbrug af Microsoft-stakken** – Microsoft lancerede Machine Learning platformen i februar 2015. Med Machine Learning, som nu er en del af Microsoft Cortana Analytics Suite, kan du hurtigt og nemt lave forsøg med fremtidsanalyser, f.eks. forsøg med behovsestimeringer, ved at bruge algoritmerne R eller Python-programmeringssprogene og en enkel grænseflade med træk og slip.
+-   **Genbrug af Microsoft Stack** – Med Machine Learning, som nu er en del af Microsoft Cortana Analytics Suite, kan du hurtigt og nemt lave forsøg med fremtidsanalyser, f.eks. forsøg med behovsestimeringer, ved at bruge algoritmerne R eller Python-programmeringssprogene og en enkel grænseflade med træk og slip.
     -   Du kan downloade forsøg med behovsprognoser, ændre dem, så de svarer til dine forretningsmæssige behov, udgive dem som en webtjeneste på Azure og bruge dem til at generere behovsprognoser. Forsøgene kan downloades, hvis du har købt et abonnement på Supply Chain Management til en produktionsplanlægger som bruger på enterprise-niveau.
     -   Du kan hente alle aktuelt tilgængelige forsøg med fremtidsanalyse af behov fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Hvor forsøg med behovsprognoser automatisk integreres i Supply Chain Management, skal kunder og partnere kunne håndtere integrationen af de forsøg, de downloader fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Forsøg fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) er derfor ikke ligetil at bruge som forsøg med behovsprognoser i Finance and Operations. Du skal ændre koden for forsøg, så de bruger Finance and Operations-API'en (Application Programming Interface).
     -   Du kan oprette dine egne forsøg i Microsoft Azure Machine Learning Studio (klassisk), udgive dem som tjenester på Azure og bruge dem til at generere behovsprognoser.
@@ -70,6 +70,16 @@ Du kan bruge Supply Chain Management til at visualisere og ændre prognosegrundl
 
 ## <a name="limitations"></a>Begrænsninger
 Behovsprognoser er et værktøj, der hjælper kunderne i produktionsbranchen med at generere prognoseprocesser. Det tilbyder den grundlæggende funktionalitet i en løsning til behovsprognoser og er designet, så den nemt kan udvides. Behovsprognoser er måske ikke den bedste valgmulighed for kunder inden for brancher som handel, grossister, lagersteder, transport eller andre professionelle tjenester.
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>Begrænsning på konvertering af varianter ved efterspørgselsprognose
+
+Måleenhed pr. variantkonvertering understøttes ikke fuldt ud ved generering af efterspørgselsprognose, hvis lagermåleenheden er forskellig fra efterspørgselsprognosens måleenhed.
+
+Oprettelse af budget (**Måleenhed for lager > Måleenhed for efterspørgselsprognose**) bruger konvertering af måleenhed for produkt. Når der indlæses historiske data til oprettelsen af efterspørgselsprognosen, bruges konvertering af måleenheder på produktniveau, når der konverteres fra måleenhed for lager til måleenhed for efterspørgselsprognose, også selvom der er defineret konverteringer på variantniveauet.
+
+Den første del af den godkendende prognose (**Måleenhed for efterspørgselsprognose > Måleenhed for lager**) bruger konvertering af måleenhed for produkt. Den anden del af den godkendende prognose (**Måleenhed for lager > Måleenhed for salg**) bruger konvertering af måleenhed for variant. Når den genererede efterspørgselsprognose er godkendt, udføres konverteringen til måleenhed for lager fra måleenheden for efterspørgselsprognose ved hjælp af konvertering af måleenhed på produktniveau. Samtidig respekteres konverteringen mellem lagerenheden og salgsmåleenheden på de definerede konverteringer på variantniveau.
+
+Bemærk, at måleenheden for efterspørgselsprognose ikke har nogen specifik mening. Den kan defineres som "Enhed for efterspørgselsprognose". For de enkelte produkter kan du definere, at konverteringen skal være 1:1 med måleenheden for lager.
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------

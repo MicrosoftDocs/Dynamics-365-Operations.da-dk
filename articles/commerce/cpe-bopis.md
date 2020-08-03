@@ -1,9 +1,9 @@
 ---
-title: Konfigurere BOPIS i et Dynamics 365 Commerce-miljø
-description: Dette emne forklarer, hvordan du konfigurerer køb online, afhent i butikken (BOPIS) i et Microsoft Dynamics 365 Commerce-miljø, efter at det er blevet klargjort.
+title: Konfigurere BOPIS i et  Dynamics 365 Commerce-evalueringsmiljø
+description: Dette emne forklarer, hvordan du konfigurerer køb online og afhentning i butikken (BOPIS) i et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 956d66d09885d4d54655ce25b3aa7ba6a9c34cf4
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282790"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599790"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-environment"></a>Konfigurere BOPIS i et Dynamics 365 Commerce-miljø
-
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et  Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emne forklarer, hvordan du konfigurerer køb online, afhent i butikken (BOPIS) i et Microsoft Dynamics 365 Commerce-miljø, efter at miljøet er blevet klargjort.
+Dette emne forklarer, hvordan du konfigurerer køb online og afhentning i butikken (BOPIS) i et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at miljøet er blevet klargjort.
 
 ## <a name="prerequisite"></a>Forudsætning
 
-Fuldfør kun procedurerne i dette emne, efter dit Commerce-prøveversionsmiljø er klargjort og konfigureret. Oplysninger om, hvordan du klargør og konfigurerer dit miljø, finder du under [Klargøre et Dynamics 365 Commerce-prøveversionsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort og konfigureret. Oplysninger om, hvordan du klargør og konfigurerer dit miljø, finder du under [Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
 Når Commerce-miljøet er blevet klargjort og konfigureret fra ende til anden, kan du bruge dette emne til at aktivere BOPIS-scenarier.
 
@@ -71,7 +70,7 @@ BOPIS-scenarier, der involverer en kreditkortbetaling, kræver en hardwarestatio
 5. Der vises en godkendelsesdialogboks. Vælg den konto, der bruger den mailadresse, der tidligere er knyttet til arbejderen **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Hvis du endnu ikke har knyttet en arbejder til din identitet, lykkes aktiveringen ikke. I dette tilfælde skal du følge trinnene i afsnittet "Knytte en arbejder til din identitet" under emnet [Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Hvis du endnu ikke har knyttet en arbejder til din identitet, lykkes aktiveringen ikke. I dette tilfælde skal du følge trinnene i afsnittet "Knytte en arbejder til din identitet" under emnet [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Når du bliver bedt om at lade din organisation administrere enheden, skal du vælge **Kun denne app**.
 7. Vælg **Kom i gang**, når aktiveringen er fuldført.
@@ -144,13 +143,13 @@ Ved alle generelle problemer skal du altid konsultere hændelseslogfilerne for h
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over Dynamics 365 Commerce-prøveversionsmiljø](cpe-overview.md)
+[Oversigt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
 
-[Klargøre et Dynamics 365 Commerce-prøveversionsmiljø](provisioning-guide.md)
+[Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md)
 
-[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø](cpe-optional-features.md)
+[Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)
 
-[Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø](cpe-faq.md)
+[Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

@@ -2,7 +2,7 @@
 title: Bekræft og flyt
 description: Dette emne forklarer, hvordan du bruger funktionen Bekræft og overfør, så brugerne kan sende laster ud af lagerstedet, før de fuldfører alt det arbejde, der er knyttet til disse laster.
 author: mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 488eed23972022f9437e62a462ae5f70d6833a67
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: cc5dcec7e50f43d3c17feef55967b32b8a261cdd
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530552"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597354"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 

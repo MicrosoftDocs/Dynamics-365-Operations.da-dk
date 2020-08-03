@@ -3,7 +3,7 @@ title: Oversigt over økonomirapportering
 description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering. Den indeholder en beskrivelse af de økonomirapporter, der findes.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
+ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262643"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3609583"
 ---
 # <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 
@@ -34,7 +34,7 @@ I dette emne beskrives, hvor du kan få adgang til økonomirapportering, og hvor
 <a name="accessing-financial-reporting"></a>Adgang til økonomirapportering
 -----------------------------
 
-Du kan finde menuen **Økonomirapportering** følgende steder:
+Du kan finde menuen **Financial reporting** følgende steder:
 
 -   **Finans** &gt; **Forespørgsler og rapporter**
 -   **Budgettering** &gt; **Forespørgsler og rapporter** &gt; **Grundlæggende budgettering**
@@ -45,10 +45,11 @@ Du kan finde menuen **Økonomirapportering** følgende steder:
 Hvis du vil oprette og generere økonomiske rapporter for en juridisk enhed, skal du angive følgende oplysninger for den pågældende juridiske enhed:
 
 -   Regnskabskalender
--   Finans
+-   Ledger
 -   Kontoplan
 -   Valuta
 
+## <a name="granting-security-access-to-financial-reporting"></a>Tildele sikkerhedsadgang til Financial Reporting
 Funktionerne til økonomisk rapportering er tilgængelige for brugere, der har de nødvendige rettigheder og pligter tildelt via deres sikkerhedsroller. I følgende afsnit vises disse rettigheder og pligter samt de tilknyttede roller.
 
 ### <a name="duties"></a>Opgaver
@@ -78,15 +79,26 @@ Funktionerne til økonomisk rapportering er tilgængelige for brugere, der har d
 | Generere økonomiske rapporter            | Generere økonomiske rapporter            | Administrerende direktør, regnskabsdirektør, bogholder                                                            |
 | Vis økonomiske rapporter                | Gennemgå driftsregnskaber          | Ingen tildelt                                                                   |
 
-Når en bruger er tilføjet, eller en rolle er ændret, bør brugeren kunne få adgang til økonomirapportering inden for få minutter. **Bemærk!** Rollen sysadmin føjes til alle roller i økonomirapportering.
+Når en bruger er tilføjet, eller en rolle er ændret, bør brugeren kunne få adgang til økonomirapportering inden for få minutter. 
+
+> [!NOTE]
+> Rollen sysadmin føjes til alle roller i Financial Reporting.
 
 ## <a name="report-deletions-and-expirations"></a>Rapportér sletninger og udløbsdatoer
 Brugere, der genererer en rapport, kan slette deres egne rapporter. Brugere med pligten **Ajourføring af sikker økonomirapportering** kan slette andres rapporter. 
 
-Begrebet udløbsdato er blevet introduceret i version 10.0.8. En ny påkrævet funktion aktiveres på siden **Alle** i arbejdsområdet til administration af funktioner. Funktionen **Opbevaringspolitikker for økonomiske rapporter** indeholder følgende ændringer:
+Fra og med udgivelse 10.0.7 er begrebet udløbsdatoer blevet introduceret. En ny krævet funktion vil blive aktiveret i arbejdsområdet til administration af funktioner. Denne funktion indeholder følgende ændringer:
+
+* Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres.
+* Alle eksisterende rapporter fra før funktionen blev installeret, får en udløbsperiode på 90 dage. Datoen kan blive vist som tom i en kort periode frem til tjenesten regnskabsrapportering kører, en rapport genereres, og tjenesten udfører opdateringen til eksisterende rapporter med en tom udløbsdato. 
+* Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder:
+   * et udløb på 90 dage
+   * en mulighed for at indstille, at rapporten aldrig skal udløbe
+
+Når der vælges en udløbsfrist på 90 dage, anvendes den 90 dage fra i dag, hvilket er forskelligt fra de 90 dage fra den oprindelige generationsdato, der blev angivet, da rapporten blev genereret. Begrebet udløbsdato blev introduceret i version 10.0.8. En ny påkrævet funktion aktiveres på siden **Alle** i arbejdsområdet til administration af funktioner. Funktionen **Opbevaringspolitikker for økonomiske rapporter** indeholder følgende ændringer:
 * Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres
 * Alle eksisterende rapporter fra før funktionen blev installeret, får en udløbsperiode på 90 dage. Datoen kan blive vist som tom i en kort periode frem til tjenesten regnskabsrapportering kører, en rapport genereres, og tjenesten udfører opdateringen til eksisterende rapporter med en tom udløbsdato. 
-* Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder. 
+* Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder: 
   * Et udløb på 90 dage.
   * En mulighed for at indstille, at rapporten aldrig skal udløbe.
   
@@ -125,16 +137,36 @@ Når der vælges en udløbsfrist på 90 dage, løber de 90 dage fra i dag, hvilk
 | Tilgængelige budgetmidler - standard                         | Se en detaljeret sammenligning af det reviderede budget, faktiske udgifter, budgetreservationer og disponible budgetmidler for alle konti                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Startøkonomirapporter
-Når du klikker på menuen **Økonomirapportering**, vises listen over økonomiske standardrapporter for firmaet. Du kan derefter åbne eller redigere en rapport. Vælg navnet på rapporten for at åbne en af standardrapporterne. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2016, oprettes rapporten for 31. juli 2016. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
+Når du vælger menuen **Financial Reporting**, vises listen over økonomiske standardrapporter for firmaet. Du kan derefter åbne eller redigere en rapport. Vælg navnet på rapporten for at åbne en af standardrapporterne. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2019, oprettes rapporten for 31. juli 2019. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Oprettelse og redigering af økonomiske rapporter
-Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at klikke på **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du bruger i Finance. 
+Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at vælge **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du bruger i Dynamics 365 Finance. 
 
-> [!NOTE] 
-> Den computer, du henter rapportdesignerklienten ned på, skal have version 4.6.2 af Microsoft .NET Framework installeret. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). Hvis du bruger Chrome, skal du installere en ClickOnce-udvidelse for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan også redigere en rapport, der vises på listen over økonomiske rapporter. Når området omkring rapportnavnet er markeret, skal du klikke på **Rediger** i handlingsruden. Rapportdesignerprogrammet starter.
+## <a name="troubleshooting-issues-opening-report-designer"></a>Fejlfinding af problemer med at åbne Report Designer
+Der er nogle få almindelige problemer, der kan forårsage problemer, når du åbner Report Designer. Disse problemer og de trin, der skal løses, er som følger.
+
+Problem 1: Report Designer starter ikke, når du vælger **Ny** eller **Rediger**.
+
+* I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til, og vælg derefter **Websteder**. I **Føj dette websted til zone** skal du angive "\*\.dynamics.com" (uden anførselstegn) og derefter vælge **Tilføj**. 
+* I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til. I området, der er angivet med Sikkerhedsniveau for denne zone, skal du ændre indstillingen til **Mellem-Lav**.
+* Deaktiver blokering af pop op-vinduer i din browser.
+* Der kræves arbejdsstationer for at installere Visual Studio .NET 4.6.2 eller nyere.
+
+Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Hvis du ikke kan logge ind med Chrome, skal du prøve at følge de opsætningstrin, der er beskrevet i punkt 1 ved hjælp af Internet Explorer eller Edge. 
+
+Problem 2: Brugeren har ikke fået tildelt de krævede tilladelser til at bruge Financial Reporting. 
+
+* Hvis du vil kontrollere, om brugeren ikke har tilladelse, skal **Ja** på fejlen "Der kunne ikke oprettes forbindelse til serveren til Financial Reporting. Vælg Ja, hvis du vil fortsætte, og angiv en anden serveradresse. " Vælg derefter **Test forbindelse**. Hvis du ikke har rettigheder, vises en meddelelse med teksten "forbindelsesforsøg mislykkedes. Brugeren har ikke de rette tilladelser til at oprette forbindelse til serveren. Kontakt din systemadministrator."
+* De nødvendige rettigheder vises ovenfor i [Tildele sikkerhedsadgang til Financial Reporting](#granting-security-access-to-financial-reporting). Sikkerhed i Financial Reporting er baseret på disse rettigheder. Du har ikke adgang til dem, medmindre du har fået tildelt disse rettigheder (eller en anden sikkerhedsrolle, der omfatter disse rettigheder). 
+* Integrationsopgaven **Firmaets brugere – udbyder til firma** (som også er ansvarlig for og kendt som brugerintegration) kører i et 5-minutters interval. Det kan tage op til 10 minutter, før eventuelle ændringer af tilladelser træder i kraft i Financial Reporting. 
+  Hvis en anden bruger kan åbne Report Designer, skal du vælge **Funktioner** og derefter vælge **Integrationsstatus**. Kontroller, at integrationstilknytningen "Firmaets bruger – udbyder til firma" kører korrekt, fordi du er tildelt tilladelse til at bruge Financial Reporting. 
+* Det kan være muligt, at en anden fejl har forhindret **Dynamics-bruger til Financial Reporting-brugerintegration** i at afslutte. Eller er det muligt, at en Datamart-nulstilling er blevet startet og endnu ikke fuldført, eller at der er opstået en anden systemfejl. Prøv at køre processen igen senere. Hvis problemet fortsætter, skal du kontakte din systemadministrator.
+
+Problem 3: Du kan fortsætte efter logonsiden til ClickOnce-Rapport Designer, men de ikke fuldføre logon i Report Designer. 
+
+* Den tid, der er angivet på din lokale computer, når du angiver dine logonoplysninger, skal være inden for fem minutter efter tiden på serveren til Financial Reporting. Hvis der er forskel på mere end fem minutter, vil systemet ikke tillade logon. 
+* I dette tilfælde anbefales det, at du aktiverer Windows-indstillingen til automatisk at indstille pc'ens tid. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-- [Se økonomiske rapporter](view-financial-reports.md)
-
-
-
+- [Vis økonomiske rapporter](view-financial-reports.md)

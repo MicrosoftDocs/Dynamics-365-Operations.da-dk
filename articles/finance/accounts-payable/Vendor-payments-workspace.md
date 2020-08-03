@@ -3,7 +3,7 @@ title: Arbejdsområde for kreditorbetalinger
 description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorbetalinger. Arbejdsområdet Kreditorbetalinger viser oplysninger, der vedrører behandling af kreditorbetalinger.
 author: abruer
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225007"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598103"
 ---
 # <a name="vendor-payments-workspace"></a>Arbejdsområde for kreditorbetalinger
 
@@ -34,9 +34,10 @@ Arbejdsområdet **Kreditorbetalinger** viser oplysninger, der vedrører behandli
 
 Følgende konfiguration skal være fuldført for de data, der skal vises i visuelle elementer for **Kreditorbetalinger** Power BI.
 1. Gå til **Systemadministration > Konfiguration > systemparametre** for at angive **Systemvaluta** og **Systemvalutakurs**.
-2. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**. 
-2. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
-3. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **VendPaymentBIMeasureV2**. 
+2. Gå til **Finans > Kalendere > Regnskabskalendere** for at validere regnskabskalenderdatoer, der er tildelt den aktive tidsperiode.
+3. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**. 
+4. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
+5. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **VendPaymentBIMeasureV2**.
 
 ## <a name="my-work-view"></a>Visningen Mit arbejde
 

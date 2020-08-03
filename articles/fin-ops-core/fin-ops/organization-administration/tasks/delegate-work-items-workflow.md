@@ -3,7 +3,7 @@ title: Delegere workflowopgaver i en arbejdsgang
 description: Hvis du planlægger at være væk fra kontoret eller af anden årsag ikke kan udføre workflowopgaver, kan du delegere eller tildele dine workflowopgaver til andre brugere.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: 96777b66645453bc909bd4053e2724a37771d5d6
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515758"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541079"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegere arbejdselementer i en arbejdsgang
 
@@ -49,13 +49,15 @@ Hvis du har planer om at være væk fra kontoret eller på anden vis ikke er til
 1. Gå til **Generelt > Opsætning > Brugerindstillinger**.
 2. Klik på fanen **Arbejdsgang**. Kontrollér, at afsnittet Delegering er udvidet. Hvis du vil konfigurere systemet til automatisk at delegere dine workflowopgaver til andre brugere, skal du oprette delegeringsregler, som angiver, hvornår bestemte workflowopgaver skal uddelegeres. Udfør følgende trin for at oprette en delegeringsregel:  
 3. Klik på **Tilføj**.
-4. Vælg en indstilling i feltet **Omfang**.
+4. Vælg en indstilling i feltet **Omfang**:
     - Alle – Deleger alle workflowopgaver, der er tildelt dig.
-    - Modul – Deleger kun de arbejdselementer, der er relateret til en bestemt type arbejdsgang. Hvis du vælger denne indstilling, skal du også vælge arbejdsgangens type i feltet Navn.
-    - Arbejdsgang – Deleger kun de arbejdselementer, der er relateret til en bestemt arbejdsgang. Hvis du vælger denne indstilling, skal du vælge arbejdsgangen i feltet Navn.  
-5. Vælg den bruger, der skal delegeres arbejdselementer til, i feltet **Deleger**. Brug felterne Startdato/-tidspunkt og Slutdato/-tidspunkt til at angive, hvornår du ønsker, at arbejdselementerne skal delegeres automatisk.  
-6. Angiv en dato og et klokkeslæt i feltet **Startdato/-klokkeslæt**.
-7. Angiv en dato og et klokkeslæt i feltet **Slutdato/-klokkeslæt**.
-8. Markér afkrydsningsfeltet **Aktiveret** for at aktivere delegeringsreglen. Hvis du valgte **Modul** som Omfang, skal du vælge modulet i feltet Navn. Hvis du har valgt **Arbejdsgang** som Omfang, skal du vælge den specifikke arbejdsgang, der skal delegeres, i feltet Navn.  
-9. Skriv en kommentar i feltet **Kommentar** for at forklare, hvorfor du delegerer arbejdselementer.
-
+    - Modul – Deleger kun de arbejdselementer, der er relateret til en bestemt type arbejdsgang. Hvis du vælger denne indstilling, skal du også vælge arbejdsgangens type i feltet **Navn**.
+    - Arbejdsgang – Deleger kun de arbejdselementer, der er relateret til en bestemt arbejdsgang. Hvis du vælger denne indstilling, skal du vælge arbejdsgangen i feltet **Navn**.  
+5. I feltet **Navn**:
+    - Vælg destinationsmodulet for området **Modul**.
+    - For området **Arbejdsgang** skal du vælge destinationsarbejdsgangen.
+6. Vælg den bruger, der skal delegeres arbejdselementer til, i feltet **Deleger**. Brug felterne **Startdato/-tidspunkt** og **Slutdato/-tidspunkt** til at angive, hvornår du ønsker, at arbejdselementerne skal delegeres automatisk.  
+7. Angiv en dato og et klokkeslæt i feltet **Startdato/-klokkeslæt**.
+8. Angiv en dato og et klokkeslæt i feltet **Slutdato/-klokkeslæt**.
+9. Markér afkrydsningsfeltet **Aktiveret** for at aktivere delegeringsreglen. 
+10. Skriv en kommentar i feltet **Kommentar** for at forklare, hvorfor du delegerer arbejdselementer.

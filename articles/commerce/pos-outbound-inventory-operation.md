@@ -3,7 +3,7 @@ title: Udgående lagerhandling i POS
 description: I dette emne beskrives egenskaberne for den udgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384123"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551619"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -58,6 +58,9 @@ Hvis du vil konfigurere en asynkron dokumentstruktur, skal du gennemføre følge
 7. Indstil valget **Uafbrudt** til **Nej** i afsnittet **Opsætning** på oversigtspanelet **Generelt** for at sikre, at der ikke er problemer med ydeevnen.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Oprette og planlægge to batchjob for dokumentbehandlingen og overvågningen af opgaver
+
+> [!NOTE]
+> I Commerce version 10.0.13 og nyere behøver du ikke konfigurere batchjobbene i batchjobbet-frameworket. Batchprocesserne kan konfigureres fra  menuen **Retail og Commerce >Retail og Commerce IT**. Brug menuindstillingerne **Retail-dokumenbetjeningsovervågning** og **Retail-dokumentbetjeningsbehandling** for at konfigurere batchjobbene
 
 De batchjob, du opretter, bruges til at behandle dokumenter, der ikke fejler eller får timeout. De bruges også, når antallet af aktive lagerdokumenter, der behandles fra kasseapparatet, overskrider en systemkonfigureret værdi.
 
