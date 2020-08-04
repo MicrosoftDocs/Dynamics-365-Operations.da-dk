@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c1a9f10a434343e4c9c8a42ec5c0b7a1a18ad36
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 1843095c41428d377341154c9f2140085831e770
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3124010"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555241"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (10. marts 2020)
 
@@ -97,3 +97,10 @@ Følgende prøvefunktioner er tilgængelige den 3. februar 2020:
 - Anbefalede felter – brugere skal ofte føje felter til et gitter eller en side. Det kan være svært med så mange tilgængelige felter. I stedet for at skulle søge gennem en stor liste, gør denne funktion det muligt for systemet at placere et sæt anbefalede felter øverst baseret på, hvad andre brugere oftest tilføjer i lignende scenarier.
 
 - Træge standardhandlinger i gitre – Denne funktion sikrer, at standardhandlingen i et gitter sammenkædes med en bestemt kolonne i et gitter, uanset om den pågældende kolonne flyttes eller skjules.
+
+## <a name="see-also"></a>Se også
+
+[Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Opdater proces](hr-admin-setup-update-process.md)</br>
+[Administrere funktioner](hr-admin-manage-features.md)

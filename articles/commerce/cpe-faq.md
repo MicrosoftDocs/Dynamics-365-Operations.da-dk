@@ -1,9 +1,9 @@
 ---
-title: Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø
-description: Dette emne indeholder svar på ofte stillede spørgsmål om miljøet til prøveversionen af Microsoft Dynamics 365 Commerce.
+title: Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø
+description: Dette emne indeholder svar på ofte stillede spørgsmål om miljøet til evalueringsversionen af Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254718"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599748"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Ofte stillede spørgsmål om Dynamics 365 Commerce-prøveversionsmiljø
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder svar på ofte stillede spørgsmål om miljøet til prøveversionen af Microsoft Dynamics 365 Commerce.
+Dette emne indeholder svar på ofte stillede spørgsmål om miljøet til evalueringsversionen af Microsoft Dynamics 365 Commerce.
 
-**Kan jeg overføre min invitation til miljøet til prøveversionen af Commerce til en anden lejer?**
+**Kan vi bruge miljøet til evalueringsversionen af Commerce som en e-handel-butiksfacade for kunder, der i øjeblikket implementerer Retail?**
 
-Ja. I forbindelse med invitationsoverførsler kan du bruge [overførselsformularen Commerce-prøveversion](https://aka.ms/Dynamics365CommercePreviewTransferForm)
+Nr. Commerce-evalueringsmiljøet er kun til evaluering. Hvis du har brug for et miljø til en kunde, der implementerer Retail, skal du kontakte Microsoft.
 
-**Hvor lang tid tager invitationsoverførslen?**
+**Kan evalueringsmiljøet til af Commerce bruges til at klargøre e-handel-funktionerne oven på et eksisterende program/miljø, der implementerer Retail?**
 
-Overførslen tager i gennemsnit ca. tre til fem hverdage. Der kan dog være visse undtagelser.
+Nej (hovedsageligt). Commerce-evalueringskomponenterne er kun tilgængelige for de miljøer, der svarer til de konfigurationer, der er angivet i guiden for forudsætninger og klargøring. Derudover er de nødvendige grundlæggende demonstrationsdata ikke tilgængelige i miljøer, der er implementeret med en første udgivelse, der er tidligere end 10.0.8. 
 
-**Fungerer miljøet til prøveversionen af Commerce sammen med Dynamics 365 Finance eller Dynamics 365 Supply Chain-projekter?**
+**Hvilke omkostninger er der forbundet med implementeringen af evalueringsmiljøet til Commerce på Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Nr. Miljøet til prøveversionen af Commerce fungerer kun sammen Dynamics 365 Retail-projekter.
+Et traditionelt demonstrationsmiljø for Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce-hovedkontoret (virtuel maskine \[VM\]) hostes i dit Azure-abonnement. Du kan bruge [Azure prisberegneren](https://azure.microsoft.com/pricing/calculator/) til at anslå denne omkostning.
 
-**Kan vi bruge miljøet til prøveversionen af Commerce som en e-handel-butiksfacade for kunder, der i øjeblikket implementerer Retail?**
+Andre komponenter som f. eks. Commerce Scale Unit, Commerce Site Builder, og dit e-handels-websted vil være tilgængeligt som software som en tjeneste (SaaS) og hostes af Microsoft.
 
-Nr. Miljøet til prøveversionen af Commerce er kun evalueringsmiljøet. Hvis du har brug for et miljø til en kunde, der implementerer Retail, skal du kontakte Microsoft.
+**Hvilke geografiske Azure-områder understøttes i øjeblikket for evalueringsmiljøet til Commerce?**
 
-**Kan miljøet til prøveversionen af Commerce bruges til at klargøre e-handel-funktionerne oven på et eksisterende program/miljø, der implementerer Retail?**
-
-Nr. Miljøet til prøveversionen af Commerce er i øjeblikket kun tilgængeligt i nye miljøer, der er installeret på de Retail lagerenhed (SKU), der har demodata fra version 10.0.6.
-
-**Hvilke omkostninger er der forbundet med implementeringen af miljøet til prøveversionen af Commerce på Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
-
-Retail er den eneste komponent, der hostes i dit abonnement. Andre komponenter såsom Retail Cloud Scale Unit (RCSU) og e-Commerce vil blive hostet i Microsoft-abonnementer. Du kan bruge [Azure prisberegneren](https://azure.microsoft.com/pricing/calculator/) til at anslå denne omkostning.
-
-**Hvilke geografiske Azure-områder understøttes i øjeblikket for miljøet til prøveversionen af Commerce?**
-
-Miljøet til prøveversionen af Commerce kan kun implementeres i det nordamerikanske område.
+Evalueringsmiljøet til Commerce kan kun implementeres i det nordamerikanske område.
 
 **Findes der en virtuel harddisk (VHD), der kan downloades, og som har den komplette indstilling for en virtuel maskine med én boks (VM)?**
 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) og e-Commerce er udelukkende Software som en service (SaaS) og skal være hostet i skyen.
+Dynamics 365 Commerce og Commerce Scale Unit er udelukkende software som en service (SaaS) og skal være hostet i skyen.
 
-**Hvor længe kan miljøet til prøveversionen af Commerce bruges?**
+**Hvor længe kan evalueringsmiljøet til Commerce bruges?**
 
-Miljøet til prøveversionen af Commerce har en frist på 30 dage fra datoen for klargøring af e-Commerce.
+Der er en frist på 30 dage for Commerce-evalueringsmiljøet fra den dato, hvor SaaS-komponenter som f.eks. Commerce Scale Unit, Commerce-webstedsgenerator og dit e-handelssted klargøres.
 
-**Kan jeg forlænge fristen for mit miljø til prøveversionen af Commerce?**
+**Kan jeg forlænge fristen for mit evalueringsmiljø til Commerce?**
 
-Ja. Du kan kontakte supportteamet ved hjælp af formularen [formular til forlængelse af prøveversionen af Commerce](https://aka.ms/Dynamics365CommercePreviewExtensionForm).
-
-**Kan vi anmode flere gange om et miljø til prøveversionen af Commerce?**
-
-Vi tildeler en kvote på ét miljø til prøveversionen af Commerce for hver anmodning, der accepteres. Hvis du har brug for mere end ét prøveversionsmiljø, skal du kontakte Microsoft. Kontaktoplysninger er angivet i næste afsnit.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Kontaktoplysninger til miljø til prøveversion af Dynamics 365 Commerce
-
-Hvis du har spørgsmål eller anmodninger, der er relateret til miljøet til prøveversionen af Commerce, kan du kontakte Microsoft ved at besøge [Microsoft Dynamics 365 Commerce Prøveversion Yammer-gruppe](https://aka.ms/Dynamics365CommercePreviewYammer) for at få hjælp.
+Forlængelsen af tidsfristen er en undtagelse fra normen og tages i betragtning ved hvert enkelt tilfælde. Du skal rette henvendelse til din kontakt hos din Microsoft-partner for at få hjælp.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over Dynamics 365 Commerce-prøveversionsmiljø](cpe-overview.md)
+[Oversigt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
 
-[Klargøre et Dynamics 365 Commerce-prøveversionsmiljø](provisioning-guide.md)
+[Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md)
 
-[Konfigurere et Dynamics 365 Commerce-prøveversionsmiljø](cpe-post-provisioning.md)
+[Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md)
 
-[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-prøveversionsmiljø](cpe-optional-features.md)
+[Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](cpe-bopis.md)
+
+[Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)

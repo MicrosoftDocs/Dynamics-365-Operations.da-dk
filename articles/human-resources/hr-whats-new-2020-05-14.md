@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d46671f73a75a9ed3a652d76153c923a3542b5f6
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: 3ce1aca9cebc5b330f054a11e38b5dfc4fc9109d
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386101"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555165"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (14. maj 2020)
 
@@ -110,3 +110,10 @@ Denne version begynder at kombinere Human Resource-parametre med orlovs- og frav
 ## <a name="carry-forward-rules"></a>Overføre regler
 
 Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringer overføres. Hvis en medarbejder f.eks. overfører 10 dage, kan du vælge en anden orlovstype for disse 10 dage. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md).
+
+## <a name="see-also"></a>Se også
+
+[Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Opdater proces](hr-admin-setup-update-process.md)</br>
+[Administrere funktioner](hr-admin-manage-features.md)

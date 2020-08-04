@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 720b4e03549a059c8945bec9d27de9cdcaada488
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: e5bc232bef257e757086d37d56b0f68b80114749
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092746"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555069"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (25. februar 2020)
 
@@ -97,3 +97,10 @@ Følgende prøvefunktioner blev tilgængelige d. 3. februar 2020:
 - **Visningsfunktioner for orlov og fravær** - Du kan finde flere oplysninger under [Visningsfunktioner for orlov og fravær](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
 - **Prøveversionsfunktion: Administration af frynsegoder** – Der er flere oplysninger, herunder kendte problemer, under [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
+
+## <a name="see-also"></a>Se også
+
+[Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Opdater proces](hr-admin-setup-update-process.md)</br>
+[Administrere funktioner](hr-admin-manage-features.md)

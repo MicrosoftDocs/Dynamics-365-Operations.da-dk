@@ -3,7 +3,7 @@ title: Power BI-indhold til styring af kredit og inkasso
 description: I dette emne beskrives, hvad der indgår i Power BI-indhold til styring af kredit og inkasso. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278868"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598052"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-indhold til styring af kredit og inkasso
 
@@ -47,9 +47,10 @@ Som standard vises kredit og rykkerdata for det aktuelle firma. Hvis du vil se d
 Følgende konfiguration skal være fuldført for de data, der skal vises i **Kundekredit og inkasso** i Power BI.
 
 1. Gå til **Systemadministration > Konfiguration > systemparametre** for at angive **Systemvaluta** og **Systemvalutakurs**.
-2. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**.
-3. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
-4. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **CustCollectionsBIMeasurementsV2**.
+2. Gå til **Finans > Kalendere > Regnskabskalendere** for at validere regnskabskalenderdatoer, der er tildelt den aktive tidsperiode.
+3. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**.
+4. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
+5. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **CustCollectionsBIMeasurementsV2**.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 

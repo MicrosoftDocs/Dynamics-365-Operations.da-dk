@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a6d792a0e52d2b82b25de461dcec358fdc8f439
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f2422dcec1fb222f1be7162d7c799a13046329b4
+ms.sourcegitcommit: f0faa2929435cd1408c5925f0ee4d6636fec5da1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211071"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3552911"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -225,7 +225,7 @@ Når du bruger denne metode, bliver siden **Operationsrelationer** din primære 
 Hvis du ikke angiver en operationsressource eller ressourcegruppe som en del af ressourcekravene for en operation, kan de relevante ressourcer fungere ved forskellige hastigheder. Den tid, der kræves for at behandle en operation, kan derfor variere. Du kan løse dette problem ved at bruge feltet **Formel** på operationsrelationen til at angive, hvordan procestiden beregnes. Følgende valgmuligheder er tilgængelige:
 
 -   **Standard** – (standardindstilling) Beregningen bruger kun felterne fra operationsrelationen og ganger den angivne procestid med ordreantallet.
--   **Kapacitet** – Beregningen omfatter feltet **Kapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig. Den værdi, der er angivet på operationsressourcen, er kapacitet pr. time. Denne værdi ganges med ordreantallet og værdien **Faktor** fra operationsrelationen.
+-   **Kapacitet** – Beregningen omfatter feltet **Kapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig. Den værdi, der er angivet på operationsressourcen, er kapacitet pr. time. **Procestid** beregnes som **Ordreantal** divideret med **Kapacitet**.
 -   **Batch** – En batchkapacitet beregnes ved hjælp af oplysninger fra operationsrelationen. Antallet af batches, og derfor procestiden, kan beregnes baseret på ordreantallet.
 -   **Ressourcebatch** – Denne indstilling er grundlæggende den samme som indstillingen **Batch**. Men beregningen omfatter feltet **Batchkapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig.
 
