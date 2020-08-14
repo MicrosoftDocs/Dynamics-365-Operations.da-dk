@@ -88,8 +88,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Nyheder eller ændringer i Commerce
                   items:
-                    - name: Startside for Nyheder eller ændringer i Commerce
+                    - name: Nyheder eller ændringer i Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (oktober 2020)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (august 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
@@ -127,23 +129,23 @@
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Virksomhedens beslutningstagere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Forretningsbrugere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Projektledere for implementering
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Udviklere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnersalg og marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionelle konsulenter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Løsningsarkitekter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Undersøge brugergrænsefladen
               items:
                 - name: Brugergrænsefladeelementer
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Indstillinger for beregning af hele beløbet og intervaller for momskoder
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Beregning af momsfritagelse
+                          href: tax-exempt-price-inclusive.md
                     - name: Konfigurere en profil for mailbesked
                       href: email-notification-profiles.md
                     - name: Nummerserier
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Sundhedskontrol af eksterne enheder og tjenester til POS
                           href: pos-healthcheck.md
+                        - name: Understøttelse af eksterne netværksenheder
+                          href: dev-itpro/network-peripherals.md
                     - name: Skærmlayout
                       items:
                         - name: Skærmlayouts til demodata i MPOS/CPOS
@@ -946,6 +952,8 @@
                       href: add-accordion.md
                     - name: Fanemodul
                       href: add-tab.md
+                    - name: Iframe-modul
+                      href: iframe-module.md
                 - name: Marketingmoduler
                   items:
                     - name: Kampagnebannermodul
@@ -968,6 +976,8 @@
                   items:
                     - name: Boksmodul til køb
                       href: add-buy-box.md
+                    - name: Mediegallerimodul
+                      href: media-gallery-module.md
                     - name: Moduler til vurderinger og anmeldelser
                       href: ratings-reviews-modules.md
                 - name: Købsmoduler
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Ordredetaljer-modul
                       href: order-confirmation-module.md
-                    - name: Butiksvælgermodul
-                      href: store-selector.md
                     - name: Gavekortsmodul
                       href: add-giftcard.md
+                - name: Butikssøgemoduler
+                  items:
+                    - name: Kortmodul
+                      href: map-module.md
+                    - name: Butiksvælgermodul
+                      href: store-selector.md
                 - name: Kontostyringsmoduler
                   items:
                     - name: Kontostyringssider og -moduler
@@ -1046,7 +1060,7 @@
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
                     - name: Administration af kontantbeholdning til Commerce til Østeuropa
                       href: localizations/emea-eeu-petty-cash-for-retail.md
-                    - name: Debitorfakturaer og -retursalgsordrer i østeuropæiske lande
+                    - name: Debitorfakturaer og -retursalgsordrer i østeuropæiske lande/områder
                       href: localizations/emea-eeu-retail-invoices.md
                     - name: 'Retningslinjer for installation af kasseapparater i Tjekkiet, Ungarn og Polen'
                       href: localizations/emea-eeu-deployment.md
@@ -1936,15 +1950,15 @@
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Tilføje modulkonfigurationsfelter
                       href: e-commerce-extensibility/add-module-config-fields.md
-                    - name: Forhåndsvisning og fejlfinding af moduler
+                    - name: Forhåndsvise og fejlfinde moduler
                       href: e-commerce-extensibility/test-module.md
-                    - name: Teste moduler ved hjælp af modeller
+                    - name: Teste moduler med modulmodeller
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Teste moduler ved hjælp af sidemodeller
                       href: e-commerce-extensibility/test-page-mock.md
                     - name: Container-moduler
                       href: e-commerce-extensibility/container-modules.md
-                    - name: Oprette et containermodul for layout
+                    - name: Oprette et layoutcontainermodul
                       href: e-commerce-extensibility/create-layout-container.md
                     - name: Oprette et containermodul for side
                       href: e-commerce-extensibility/create-page-containers.md

@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheder eller ændringer i platformsopdateringer
               items:
-                - name: Startside for Nyheder eller ændringer i platformsopdateringer
+                - name: Nyheder eller ændringer i opdateringer i platformstartsiden
                   href: get-started/whats-new-home-page.md
+                - name: Platformopdateringer til 10.0.13 (oktober 2020)
+                  href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platformsopdateringer til 10.0.12 (august 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platformsopdateringer til 10.0.11 (juli 2020)
@@ -82,6 +84,8 @@
           items:
             - name: Vælg en strategi for dataintegration (import/eksport)
               href: data-entities/integration-overview.md
+            - name: Prioritetsbaseret begrænsning
+              hreF: data-entities/priority-based-throttling.md
             - name: API'er for dataintegration
               items:
                 - name: REST API for datastyringspakke
@@ -150,8 +154,10 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Administrere dobbeltskrivning
                           items:
-                            - name: Tilpasse objekt- og felttilknytninger
+                            - name: Tilpasse enheds- og felttilknytninger
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Redigere en juridisk enhed efter konfiguration af dobbeltskrivning
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: Fejladministration og beskeder om påmindelser
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: Applikationscyklusstyring
@@ -332,7 +338,7 @@
                   href: data-entities/data-entity-computed-columns-virtual-fields.md
                 - name: Adfærd på tværs af virksomhed
                   href: data-entities/cross-company-behavior.md
-                - name: Håndtering af lande- og områdekoder
+                - name: 'Håndtering af lande/områdekoder:'
                   href: data-entities/countryregion-codes-configuration-keys.md
                 - name: Nedarvningsmønstre
                   href: data-entities/support-super-type-sub-type.md
@@ -1396,7 +1402,7 @@
                   href: lcs-solutions/country-region.md
                 - name: Klassifikation af lokaliseringsfunktioner
                   href: lcs-solutions/classify-localization-features.md
-                - name: Anvende lande/-områdekontekst
+                - name: Anvende lande/områdekontekst
                   href: lcs-solutions/apply-country-context.md
                 - name: Lovpligtige certificeringsoplysninger i funktionstitler
                   href: lcs-solutions/regulatory-certifications.md

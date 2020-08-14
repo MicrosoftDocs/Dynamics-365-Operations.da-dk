@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheder eller ændringer i Supply Chain Management
                   items:
-                    - name: Startside for Nyheder eller ændringer i Supply Chain Management
+                    - name: Nyheder eller ændringer i Supply Chain Management-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.13 (oktober 2020)
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (august 2020)
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (maj 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
@@ -109,23 +109,23 @@
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Virksomhedens beslutningstagere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Forretningsbrugere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Projektledere for implementering
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Udviklere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnersalg og marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionelle konsulenter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Løsningsarkitekter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Undersøge brugergrænsefladen
               items:
                 - name: Brugergrænsefladeelementer
@@ -1257,6 +1257,8 @@
               items:
                 - name: Lagerkladder
                   href: inventory/inventory-journals.md
+                - name: Arbejdsgange for godkendelse af lagerkladde
+                  href: inventory/inventory-journal-workflow.md
                 - name: Lagerlokationer
                   href: inventory/inventory-locations.md
                 - name: Lagerstatusser
@@ -1267,6 +1269,8 @@
                   href: inventory/tasks/maintain-barcode-types.md
                 - name: Kontrollere tilgængelighed af lagerbeholdning
                   href: inventory/tasks/check-availability-stock.md
+                - name: Liste over disponibel lagerbeholdning
+                  href: inventory/inventory-on-hand-list.md
                 - name: Initialisere lagerbeholdninger på lagerstedet
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Overføre fysisk lager på lagersted
@@ -1951,7 +1955,7 @@
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: Ruter og operationer
                       href: production-control/routes-operations.md
-                    - name: Politikker for lagerstedsarbejde
+                    - name: Arbejdspolitikker
                       href: warehousing/warehouse-work-policies.md
                     - name: Oprette planlægningsegenskaber for arbejdstid
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Blanding af produktdimension for lokation
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Kvalitetskontrol
+                  href: warehousing/quality-check.md
             - name: Udgående lagerstedsoperationer
               items:
                 - name: Reservationer i lokationsstyring
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Tærskel for genopfyldning af zone
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Genopfyldning over lokationskapacitet
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: Lastopbygning og forsendelser
                   items:
                     - name: Bekræfte og flytte
                       href: warehousing/confirm-and-transfer.md
+                    - name: Bekræft udgående forsendelser fra batchjob
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Avanceret lastopbygning under en bølge
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Regel for frigivelse til lagersted
@@ -2679,10 +2689,8 @@
               items:
                 - name: Politikker for lagerstedsarbejde
                   items:
-                    - name: Oversigt over politikker for lagerstedsarbejde
+                    - name: Arbejdspolitikker
                       href: warehousing/warehouse-work-policies.md
-                    - name: Konfigurere politikker for lagerstedsarbejde
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
                     - name: Flytning af lager med tilknyttet arbejde i Lokationsstyring
                       href: warehousing/move-inventory-associated-work.md
                     - name: Oprette en arbejdsklasse
@@ -2715,7 +2723,7 @@
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
                     - name: Oprydningsjob for disponible poster for lokationsstyring
                       href: warehousing/onhand-cleanup.md
-                    - name: Lagerkladde
+                    - name: Lagerkladder
                       href: inventory/inventory-journals.md
                     - name: Lagerlokation
                       href: inventory/inventory-locations.md
