@@ -68,8 +68,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Nyheder eller ændringer i Finance
                   items:
-                    - name: Startside for Nyheder eller ændringer i Finance
+                    - name: Nyheder eller ændringer i Finance-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.13 (oktober 2020)
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (august 2020)
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (juli 2020)
@@ -107,23 +109,23 @@
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Virksomhedens beslutningstagere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Forretningsbrugere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Projektledere for implementering
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Udviklere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnersalg og marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionelle konsulenter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Løsningsarkitekter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Undersøge brugergrænsefladen
               items:
                 - name: Brugergrænsefladeelementer
@@ -846,9 +848,11 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Procesfordelinger
                   href: general-ledger/process-allocations.md
+                - name: Fordelingsbetingelser
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Økonomiske dimensioner
                   href: general-ledger/financial-dimensions.md
-                - name: Koncerngrupper og supplerende koncernkonti
+                - name: Koncernkontogrupper og supplerende koncernkonti
                   href: budgeting/consolidation-account-groups-consolidation-accounts.md
                 - name: Oversigt over konsolidering og eliminering
                   href: budgeting/consolidation-elimination-overview.md
@@ -1122,6 +1126,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Oprette en avanceret finanspost i den offentlige sektor
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Rapport over råbalance med transaktionsdetaljer
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Bruge grænser for kontantstyring
                   href: public-sector/cash-control.md
                 - name: Årsafslutningen i den offentlige sektor
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Tilføje en certificeringstype til en kreditor i den offentlige sektor
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Beregne harmoniseret moms i Canada
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Økonomirapportering
           items:
             - name: Oversigt over økonomirapportering
@@ -1846,6 +1854,8 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Nyheder eller ændringer i 10.0.11
                           href: localizations/apac-ind-news-letter-10-0-11.md
+                        - name: Nyheder eller ændringer i 10.0.12
+                          href: localizations/apac-ind-news-letter-10-0-12.md
                     - name: Indiske GST-referencegrupper
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-integration for kasseapparater
@@ -2318,7 +2328,7 @@
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
             - name: Holland
               items:
-                - name: Oversigt for Holland
+                - name: Oversigt for Nederlandene
                   href: localizations/netherlands.md
                 - name: Momsopgørelse
                   href: localizations/emea-nl-VAT-declaration.md
@@ -2632,10 +2642,14 @@
                   href: localizations/emea-esp-promissory-note-options.md
                 - name: Rapport 340
                   href: localizations/emea-esp-report-340.md
+                - name: Rapport over opgørelse 347
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Salgs- og købscyklusser
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Specialposter og primoark
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: Omgående angivelse af moms-oplysninger
+                  href: localizations/emea-esp-sii.md
             - name: Sverige
               items:
                 - name: Oversigt for Sverige
