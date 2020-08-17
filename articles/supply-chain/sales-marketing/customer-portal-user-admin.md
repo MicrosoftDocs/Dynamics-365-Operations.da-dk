@@ -3,7 +3,7 @@ title: Oprette og administrere brugere af kundeportalen
 description: Dette emne forklarer, hvordan du kan oprette brugerkonti til kundeportalen og indstille rettigheder for dem.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413947"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645307"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
 
@@ -30,11 +30,16 @@ Før en bruger kan bruge et websted, skal der oprettes en kontaktpersonpost for 
 
 Når brugerne selv registrerer, oprettes der automatisk kontaktposter for dem. Derfor kan du ikke sikre, at en bruger vælger den korrekte kundekonto og juridiske enhed. På den anden side giver invitationsprocessen en administrator mulighed for at tildele den korrekte kundekonto og juridiske enhed til kontaktpersonposten, før der sendes en invitation. Hvis du overvejer at tilpasse løsningen, så brugerne kan registrere sig selv, skal du huske på de mulige konsekvenser.
 
+## <a name="video"></a>Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
+
 ## <a name="prerequisite-setup"></a>Forudsætninger for opsætning
 
 Kontaktpersoner i Power Apps-portaler gemmes som poster i enheden **Kontaktpersoner** i Common Data Service. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
 
-![![Systemdiagram for kundeportal-kontaktpersoner](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Systemdiagram for kundeportal-kontaktpersoner](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
 
 Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret enhedstilknytningen **Kontakt** i dobbeltskrivning.
 

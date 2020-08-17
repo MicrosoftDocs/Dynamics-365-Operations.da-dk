@@ -3,7 +3,7 @@ title: Konfigurere Common Data Service-integration
 description: Du kan slå integration mellem Common Data Service og Dynamics 365 Human Resources til eller fra. Du kan også få vist synkroniseringsdetaljer, rydde sporingsdata og synkronisere en enhed som hjælp til fejlfinding af dataproblemer mellem de to miljøer.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431308"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621298"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurere Common Data Service-integration
 
@@ -66,6 +66,9 @@ Du kan eventuelt deaktivere integration i følgende situationer:
 - Hvis du vil deaktivere integration, skal du angive indstillingen til **Nej**.
 
 [![Slå Common Data Service-integration til eller fra](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> Det anbefales kraftigt, at du deaktiverer Common Data Service-integration, mens du udfører dataoverførselsopgaver. Store dataoverførsler kan påvirke ydeevnen betydeligt. Overførsel af 2000 arbejdere kan f.eks. tage flere timer, når integration er aktiveret, og mindre end en time, når den deaktiveres. De tal, der er i dette eksempel, er udelukkende til demonstrationsformål. Det nøjagtige tidsforbrug med at importere poster kan variere meget afhængigt af mange faktorer.
 
 ## <a name="view-data-integration-details"></a>Vis dataintegrationsdetaljer
 

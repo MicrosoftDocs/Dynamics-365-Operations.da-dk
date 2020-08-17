@@ -3,7 +3,7 @@ title: Produkt- og kundesøgning i POS
 description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021946"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628903"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -95,6 +95,9 @@ I en ekstern kundesøgning vises kunde-id ikke for debitorer fra de andre juridi
 
 Søgninger, der er baseret på telefonnummeret, er blevet mere enkle. Disse søgninger ignorerer nu specialtegn som f.eks. mellemrum, bindestreger og parenteser, der kan være blevet tilføjet, da debitoren blev oprettet. Derfor behøver kasserere ikke spekulere på telefonnummerets format, når de søger. De kan også søge efter kunder ved at skrive et telefonnummer, der er delvis. Hvis et telefonnummer indeholder specialtegn, skal finder det også du ved at søge efter de tal, der vises efter de særlige tegn. Hvis en kundes telefonnummer f.eks. blev angivet som **123-456-7890**, kan en kasserer søge efter debitoren ved at skrive **123**, **456**, **7890** eller **1234567890** eller ved at angive de første par tal af telefonnummeret.
 
+> [!NOTE]
+> En kunde kan have flere telefonnumre og flere mails. Algoritmen til kundesøgning søger også i disse sekundære mails og telefonnumre, men på resultatsiden for kundesøgning vises kun den primære mail og det primære telefonnummer. Dette kan medføre en vis forvirring, fordi de returnerede kunderesultater ikke vil vise den søgte mail eller det søgte telefonnummer. I en fremtidig frigivelse har vi planlagt at forbedre skærmbilledet med kundesøgeresultater for at vise disse oplysninger.
+
 Den traditionelle kundesøgning kan være tidskrævende, da den søger på tværs af flere felter. I stedet kan kasserere nu søge i en enkelt kundeegenskab, f.eks. navn, mailadresse eller telefonnummer. De egenskaber, som kundesøgningsalgoritmen bruger, kaldes samlet *kundesøgningskriteriet*. Systemadministratoren kan nemt konfigurere et eller flere kriterier som genveje, der skal vises i POS. Da søgningen er begrænset til et enkelt kriterium, vises kun de relevante søgeresultater, og ydeevnen er meget bedre end ydeevnen ved en standardkundesøgning. I følgende illustration vises kundesøgningsgenvejene i POS.
 
 ![Genveje til kundesøgning](./media/SearchShortcutsPOS.png "Genveje til kundesøgning")
@@ -114,3 +117,4 @@ Feltet **Visningsrækkefølge** bestemmer den rækkefølge, hvori genveje vises 
 I en kommende udgave af Commerce vil detailhandlere kunne angive standardtilstanden for kundesøgning i POS til **Søg i alle butikker**. Denne konfiguration kan være nyttig i situationer, hvor kunder, der er oprettet uden for POS, skal søges efter med det samme (f.eks. selv før distributionsjobbet køres). En ny indstilling **Standardindstilling for kundesøgning** vil være tilgængelig i POS-funktionalitetsprofilen. Angiv den til **Til** for at indstille standardsøgetilstanden til **Søg i alle butikker**. Alle forsøg på kundesøgninger vil derefter foretage et realtidsopkald til hovedkontoret.
 
 Denne konfiguration er skjult bag et flighting-flag, der kaldes **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** for at hjælpe med at forhindre uventede problemer med ydeevnen. For at få vist indstillingen **Standardtilstand for kundesøgning** i brugergrænsefladen, skal detailhandleren oprette en supportbillet for dennes brugeraccepttest (UAT) og produktionsmiljøer. Når billetten er modtaget, arbejder den tekniske gruppe sammen med detailhandleren for at sikre, at detailhandleren tester i miljøer, der ikke er et produktionsmiljø, for at vurdere ydeevnen og implementere eventuelle nødvendige optimeringer.
+

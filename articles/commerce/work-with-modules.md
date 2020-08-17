@@ -3,7 +3,7 @@ title: Arbejde med moduler
 description: Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,19 +17,19 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025873"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646009"
 ---
 # <a name="work-with-modules"></a>Arbejde med moduler
 
-Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
-
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversigt
 
@@ -42,8 +42,10 @@ Dynamics 365 Commerce-webstedet indeholder som standard et startsæt med modulbi
 Som tidligere nævnt er nogle moduler designet til at rumme underordnede moduler. Disse moduler kaldes *containere*, og de giver mulighed for hierarkier af indlejrede moduler. Containermoduler indeholder *pladser*. Pladser bruges til at håndtere layoutet og formålet med underordnede moduler i containeren. Et eksempel er et grundlæggende sidecontainermodul (et modul på øverste niveau for en side), der definerer flere vigtige pladser:
 
 - En sidehovedplads
-- En brødtekstplads
+- En undersidehovedplads
+- En hovedplads
 - En sidefodsplads
+- En undersidefodsplads
 
 Modulets udvikler definerer disse pladser og bestemmer, hvilke underordnede moduler og hvor mange underordnede moduler der kan placeres direkte i det. F.eks. understøtter sidehovedpladsen måske kun ét modul af typen **Sidehovedmodul**, mens brødtekstpladsen understøtter et ubegrænset antal moduler af enhver type (undtagen andre sidecontainermoduler).
 
@@ -51,7 +53,7 @@ I oprettelsesværktøjerne behøver sideforfattere ikke at vide på forhånd, hv
 
 ## <a name="content-modules"></a>Indholdsmoduler
 
-Indholdsmoduler har indhold og medieelementer, f.eks. tekst (f.eks. overskrifter, afsnit og links) eller aktivreferencer (f.eks. billeder, video og PDF-filer). Eksempler på typiske indholdsmodultyper er **Hero**, **Funktion** og **Banner**. Moduler af disse tre typer kan indeholde tekst eller medier, og de kræver ingen underordnede moduler for at gøre noget synligt på en side.
+Indholdsmoduler har indhold og medieelementer, f.eks. tekst (f.eks. overskrifter, afsnit og links) eller aktivreferencer (f.eks. billeder, video og PDF-filer). Typiske indholdsmodultyper omfatter indholdsblok, tekstblok og kampagnebannermoduler. Moduler af disse tre typer kan indeholde tekst eller medier, og de kræver ingen underordnede moduler for at gøre noget synligt på en side.
 
 Størstedelen af typiske, daglige side- og indholdsoprettelsesaktiviteter omfatter indholdsmoduler, primært fordi disse moduler definerer det faktiske indhold, der gengives i de overordnede containermoduler. Mange indholdsmoduler er tilgængelige, og disse moduler er typisk de sidste stykker, du skal føje til sidens hierarki af indlejrede moduler.
 
@@ -67,20 +69,20 @@ I følgende procedurer beskrives, hvordan du kan tilføje og fjerne moduler.
 
 Hvis du vil tilføje et modul på en plads eller container på en side, skal du følge disse trin.
 
-1. Vælg en container eller en plads, som et underordnet modul kan føjes til, i dispositionsruden til venstre.
+1. Vælg en container eller en plads, som et underordnet modul kan føjes til, i dispositionsruden til venstre eller direkte i hovedlærredet.
 
     > [!NOTE]
-    > Moduldesigneren definerer listen over de modultyper, der kan føjes til en bestemt modulplads. Skabelonoprettere kan derefter begrænse de tilladte modulindstillinger for at sikre konsistent optimering af søgemaskiner og redigeringseffektivitet for alle sider, der er bygget ud fra en bestemt skabelon.
+    > Moduldesigneren definerer listen over de modultyper, der kan føjes til en bestemt modulplads. Skabelonoprettere kan derefter begrænse de tilladte modulindstillinger for at sikre konsistent optimering af søgemaskiner og redigeringseffektivitet for alle de sider, der er bygget ud fra en bestemt skabelon. Dialogboksen **Tilføj modul** filtreres automatisk, når et modul føjes til en plads, så der kun vises moduler, der understøttes i den valgte container eller plads. Listen over tilladte moduler bestemmes af sidens skabelon eller definitionen af containerens modul.
 
-1. Vælg ellipseknappen (**...**) til modulet, og vælg derefter **Tilføj modul**. Dialogboksen **Tilføj modul** vises. Denne dialogboks filtreres automatisk, så der kun vises moduler, der understøttes i den valgte container eller plads. Listen over moduler bestemmes af sidens skabelon eller definitionen af containerens modul.
+1. Hvis du bruger dispositionsruden, skal du vælge ellipsen (**...**) ud for modulnavnet og derefter vælge **Tilføj modul**. Hvis du bruger kontrolelementerne direkte i lærredet, skal du vælge plussymbolet (**+**) i en tom plads eller ved siden af det aktuelt valgte modul og derefter vælge **Tilføj modul**.
 
     > [!NOTE]
     > Hvis containeren eller pladsen ikke understøtter nye underordnede moduler, er indstillingen **Tilføj modul** ikke tilgængelig.
 
-1. Søg efter og vælg et modul, der skal tilføjes på siden, i dialogboksen.
+1. Vælg et modul, der skal tilføjes på siden, i dialogboksen **Tilføj modul**.
 
     > [!TIP]
-    > **Funktion** og **Hero** er egnede modultyper, som begyndere kan arbejde med.
+    > **Indholdsblok** er en god modultype, som begyndere kan arbejde med.
 
 1. Vælg **OK** for at føje det valgte modul til den valgte container eller plads på siden.
 
@@ -88,8 +90,35 @@ Hvis du vil tilføje et modul på en plads eller container på en side, skal du 
 
 Hvis du vil fjerne et modul fra en plads eller container på en side, skal du følge disse trin.
 
-1. Vælg ellipseknappen i dispositionsruden til venstre ud for navnet på det modul, der skal fjernes, og vælg derefter knappen med papirkurven.
+1. Vælg ellipseknappen (**...**) i dispositionsruden til venstre ud for navnet på det modul, der skal fjernes, og vælg derefter symbolet med papirkurven. Du kan også vælge papirkurvesymbolet på værktøjslinjen i det valgte modul på hovedlærredet.
 1. Når du bliver bedt om at bekræfte, at du vil fjerne modulet, skal du vælge **OK**.
+
+## <a name="move-a-module-to-a-new-position"></a>Flytte et modul til en ny position
+
+Hvis du vil flytte et modul til en ny position på siden, skal du bruge en af følgende metoder.
+
+### <a name="move-a-module-using-the-outline-pane"></a>Flytte et modul ved hjælp af dispositionsruden
+
+Hvis du vil flytte et modul ved hjælp af dispositionsruden, skal du følge disse trin.
+
+1. Markér og hold fast i det modul, du vil flytte, i dispositionsruden, og træk derefter modulet til en ny placering i dispositionen. Den blå linje i konturen og på lærredet angiver, hvor modulet kan placeres.
+1. Slip modulet på den nye placering.
+
+### <a name="move-a-module-directly-within-the-canvas"></a>Flytte et modul direkte i lærredet
+
+Hvis du vil flytte et modul direkte i lærredet, skal du følge disse trin.
+
+1. Vælg det modul, du vil flytte, i lærredet. 
+1. Vælg enten et symbol for opadgående eller nedadgående pil på værktøjslinjen for modulet, og træk derefter pilen til en ny placering på siden. Den blå linje i lærredet og konturen angiver, hvor modulet kan placeres. Hvis et modul ikke kan flyttes op eller ned, vil pilesymbolet være nedtonet. 
+1. Slip modulet på den nye placering.
+
+### <a name="move-a-module-using-the-ellipsis-menu"></a>Flytte et modul ved hjælp af ellipsemenuen
+
+Hvis du vil flytte et modul ved hjælp af ellipsemenuen, skal du følge disse trin.
+
+1. Vælg et modul enten i dispositionen eller på lærredet.
+1. Vælg ellipsen (**...**) ud for navnet på modulet i dispositionsruden eller på værktøjslinjen for modulet på lærredet.
+1. Hvis modulet kan flyttes op eller ned inden for containeren eller pladsen, kan du se indstillingerne for **Flyt op** eller **Flyt ned**. Vælg den ønskede indstilling for flytning for at flytte modulet op eller ned i forhold til dets sidestillede.
 
 ## <a name="configure-modules"></a>Konfigurere moduler
 
@@ -99,10 +128,28 @@ I følgende procedurer beskrives, hvordan du kan konfigurere indholds- og contai
 
 Hvis du vil konfigurere et indholdsmodul på en side, skal du følge disse trin.
 
-1. Udvid træet i dispositionsruden til venstre, og vælg et indholdsmodul (f.eks. **Funktion**, **Hero** eller **Banner**).
-1. Find kontrolelementerne til modulets indhold og indstillinger i ruden Egenskaber til højre.
-1. Angiv egenskaber for de ønskede kontrolelementer til moduler.
+1. Udvid træet i dispositionsruden til venstre, og vælg et indholdsmodul (f.eks. **Indholdsblok**). Eller vælg modulet i hovedlærredet.
+1. Angiv egenskaber for de ønskede kontrolelementer til moduler i ruden Egenskaber for modul til højre.
 1. Vælg **Gem** på kommandolinjen. Dette vil også opdatere eksemplet på lærredet.
+
+### <a name="edit-module-text-properties"></a>Redigere tekstegenskaber for modul
+
+Tekstegenskaber for modul, der ikke er skrivebeskyttet, kan redigeres direkte i lærredet.
+
+Benyt følgende fremgangsmåde for at redigere egenskaber for modultekst.
+
+1. Vælg tekstkontrolelementet på lærredet, og placer derefter markøren på det sted, hvor du vil redigere teksten.
+1. Indtast tekstindholdet.
+1. Vælg et vilkårligt sted uden for tekstindholdet for at fortsætte med at redigere andet indhold.
+
+### <a name="inline-image-selection"></a>Valg af indbygget billede
+
+Modulbilleder, der ikke er skrivebeskyttet, kan ændres direkte i lærredet.
+
+Hvis du vil vælge et nyt billede for et indholdsmodul, skal du følge disse trin.
+
+1. Dobbeltklik på billedet på lærredet. Dette vil åbne vinduet med medievælgeren.
+1. Find og vælg et nyt billede, du vil bruge, og vælg derefter **OK**. Det nye billede gengives nu på lærredet.
 
 ### <a name="configure-a-container-module"></a>Konfigurere et containermodul
 

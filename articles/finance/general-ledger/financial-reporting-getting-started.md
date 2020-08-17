@@ -3,7 +3,7 @@ title: Oversigt over økonomirapportering
 description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering. Den indeholder en beskrivelse af de økonomirapporter, der findes.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
-ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
+ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
+ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3609583"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "3618032"
 ---
 # <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 
@@ -87,24 +87,16 @@ Når en bruger er tilføjet, eller en rolle er ændret, bør brugeren kunne få 
 ## <a name="report-deletions-and-expirations"></a>Rapportér sletninger og udløbsdatoer
 Brugere, der genererer en rapport, kan slette deres egne rapporter. Brugere med pligten **Ajourføring af sikker økonomirapportering** kan slette andres rapporter. 
 
-Fra og med udgivelse 10.0.7 er begrebet udløbsdatoer blevet introduceret. En ny krævet funktion vil blive aktiveret i arbejdsområdet til administration af funktioner. Denne funktion indeholder følgende ændringer:
-
-* Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres.
-* Alle eksisterende rapporter fra før funktionen blev installeret, får en udløbsperiode på 90 dage. Datoen kan blive vist som tom i en kort periode frem til tjenesten regnskabsrapportering kører, en rapport genereres, og tjenesten udfører opdateringen til eksisterende rapporter med en tom udløbsdato. 
-* Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder:
-   * et udløb på 90 dage
-   * en mulighed for at indstille, at rapporten aldrig skal udløbe
-
-Når der vælges en udløbsfrist på 90 dage, anvendes den 90 dage fra i dag, hvilket er forskelligt fra de 90 dage fra den oprindelige generationsdato, der blev angivet, da rapporten blev genereret. Begrebet udløbsdato blev introduceret i version 10.0.8. En ny påkrævet funktion aktiveres på siden **Alle** i arbejdsområdet til administration af funktioner. Funktionen **Opbevaringspolitikker for økonomiske rapporter** indeholder følgende ændringer:
+Begrebet udløbsdato blev introduceret i version 10.0.8. En ny påkrævet funktion aktiveres på siden **Alle** i arbejdsområdet til administration af funktioner. Funktionen **Opbevaringspolitikker for økonomiske rapporter** indeholder følgende ændringer:
 * Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres
 * Alle eksisterende rapporter fra før funktionen blev installeret, får en udløbsperiode på 90 dage. Datoen kan blive vist som tom i en kort periode frem til tjenesten regnskabsrapportering kører, en rapport genereres, og tjenesten udfører opdateringen til eksisterende rapporter med en tom udløbsdato. 
 * Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder: 
   * Et udløb på 90 dage.
   * En mulighed for at indstille, at rapporten aldrig skal udløbe.
   
-Yderligere indstillinger vil blive medtaget i fremtidige funktioner. Udløbet på 90 dage er standard, og brugere med de rette tilladelser kan tilsidesætte standarden på listesiden **Økonomirapporter**.    
+Når der vælges en udløbsdato som f.eks. 90 dage, anvendes den 90 dage fra dags dato. Dette er en anden funktion end de 90 dage fra den oprindelige oprettelsesdato, der blev angivet, da rapporten blev genereret. 
   
-Når der vælges en udløbsfrist på 90 dage, løber de 90 dage fra i dag, hvilket er forskelligt fra de 90 dage fra den oprindelige generationsdato, der er angivet under generering af rapporter. 
+Yderligere indstillinger vil blive medtaget i fremtidige funktioner. Udløbet på 90 dage er standard, og brugere med de rette tilladelser kan tilsidesætte standarden på listesiden **Økonomirapporter**.    
 
 ## <a name="default-reports"></a>Standardrapporter
 Økonomirapportering indeholder 22 økonomiske standardrapporter. Hver rapport bruger standardhovedkontokategorierne: Du kan bruge disse rapporter, som de er, eller du kan bruge dem som udgangspunkt til dine behov for økonomirapportering. Disse standardrapporter omfatter ud over de traditionelle regnskaber, resultatopgørelsen og balancen, rapporter, der viser de forskellige typer økonomiske rapporter, du kan oprette. 

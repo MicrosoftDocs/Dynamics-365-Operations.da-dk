@@ -3,7 +3,7 @@ title: Få vist rabatter i POS
 description: I dette emne forklares det, hvordan Microsoft Dynamics 365 Commerce hjælper salgsforbindelser med at få mere at vide om kampagner, og hvordan de kan bruges til at krydssælge og videresælge bevægelser.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
-ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3334702"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3638176"
 ---
 # <a name="show-discounts-in-pos"></a>Få vist rabatter i POS
 
@@ -54,7 +54,7 @@ På siden **Alle rabatter** kan salgsmedarbejderen også søge efter rabatter ef
 
 Samkøbsrabatter, f.eks. mængderabatter, mix og match-rabatter og grænserabatter, er en god måde at motivere kunderne til at købe flere produkter på for at opnå større rabatter. Derfor kan de også øge størrelsen på kundens indkøbsvogn og detailhandlers indtægt. Disse rabatter kan offentliggøres på e-handelswebsteder, på sociale medier og på bannere i butikken.
 
-Selv når alle disse metoder til offentligheden anvendes, kan kunderne imidlertid miste muligheden for at udnytte kampagnerne. Detailhandlere kan føje knappen for handlingen "Få vist tilgængelige rabatter" til knaplinjen på siden **Oversættelse** for at gøre det let for salgsmedarbejderne at finde ud af, hvilke kampagner der gælder for en bestemt linje eller endda for hele kurven. På denne måde kan en salgsmedarbejder vælge en transaktionslinje og derefter vælge knappen for at få vist alle de rabatter, der er tilgængelige for den valgte linje. Salgsmedarbejderen kan også vælge en anden fane for at få vist rabatter, der gælder for hele transaktionen.
+Selv når alle disse metoder til offentligheden anvendes, kan kunderne imidlertid miste muligheden for at udnytte kampagnerne. Detailhandlere kan føje knappen for handlingen **"Få vist tilgængelige rabatter"** til knaplinjen på siden **Transaktion** for at gøre det let for salgsmedarbejderne at finde ud af, hvilke kampagner der gælder for en bestemt linje eller endda for hele kurven. Derfor kan en salgsmedarbejder vælge en transaktionslinje og derefter vælge knappen for at få vist alle de rabatter, der er tilgængelige for den valgte linje. Salgsmedarbejderen kan også vælge en anden fane for at få vist rabatter, der gælder for hele transaktionen. Det er vigtigt at bemærke, at **Få vist tilgængelige rabatter** ikke viser de rabatter, der allerede er anvendt på salgslinjen, fordi rabatoplysningerne allerede er vist på salgslinjen. Formålet med dette scenario er kun at vise de rabatter, der endnu ikke er anvendt. Undtagelsen til dette er de rabatter, der anvendes på basis af en kupon, der er markeret som "Anvend uden en kuponkode". Det gør det nemt for salgsmedarbejderen at fjerne den kupon, de har anvendt.
 
 Siden **Alle rabatter** viser kun rabatter, der ikke konkurrerer med nogen af de anvendte rabatter. Denne funktionsmåde sikrer, at en salgsmedarbejder informerer kunden om en rabat, og kunden udfører den påkrævede handling (f.eks. hvis kunden køber én mere vare for at opnå en rabat på 10 %), anvendes rabatten på transaktionen. De kuponbaserede rabatter vises kun, når indstillingen **Anvend uden en kuponkode** er slået til.
 

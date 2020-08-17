@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411336"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645333"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -61,7 +61,7 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler, der kan bruges i et købefeltmodul
 
-- **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Den kan understøtte fra ét til mange billeder. Det understøtter også miniaturebilleder. Miniaturebillederne kan arrangeres enten vandret (som en række under billedet) eller lodret (som en kolonne ved siden af billedet). Du kan føje mediegallerimodulet til pladsen **Medier** i købefeltmodulet. Det understøtter i øjeblikket kun billeder. 
+- **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Yderligere oplysninger om dette modul finder du i [Mediegallerimodul](mediagallery-module.md).
 - **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Butiksvælgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
@@ -112,11 +112,13 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 [Butiksvælgermodul](store-selector.md)
 
+[Mediegallerimodul](media-gallery-module.md)
+
 [Container-modul](add-container-module.md)
 
 [Indkøbskurvsmodul](add-cart-module.md)
 
-[Ikon for indkøbskurvsmodul](cart-icon-module.md)
+[Ikonmodul for indkøbskurv](cart-icon-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 

@@ -3,7 +3,7 @@ title: Konfiguration af kreditstyringsparametre
 description: I dette emne beskrives de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154522"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651899"
 ---
 # <a name="credit-management-parameters-setup"></a>Konfiguration af kreditstyringsparametre
 
@@ -34,7 +34,7 @@ Der er fire oversigtspaneler i sektionen **Kredit**, hvor du kan ændre parametr
 
 ### <a name="credit-holds"></a>Kreditter på hold
 
-- Vælg **Ja** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet ændret, efter at salgsordren blev frigivet fra spærringslisten. .
+- Vælg **Nej** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet øget, efter at salgsordren blev frigivet fra spærringslisten. .
 - I feltet **Årsager til annullerede ordrer** skal du vælge den frigivelsesårsag, der skal bruges som standard, når en salgsordre, hvor der er spærret for kreditstyring, annulleres.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum for kundekreditgrupper** for at kontrollere kreditgrænsen for en kundekreditgruppe, når kunden på en salgsordre tilhører en kundekreditgruppe. Gruppens kreditmaksimum kontrolleres, og hvis det er tilstrækkeligt, kontrolleres kreditmaksimum for kunden.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når betalingsbetingelserne er forlænget**, hvis du vil kontrollere, om rangeringen i betalingsbetingelserne er forskellig fra standardbetalingsbetingelserne for kunden. Hvis de nye betalingsbetingelser har en højere rangering end de oprindelige betalingsbetingelser, sættes ordren på hold i kreditstyringen.

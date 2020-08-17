@@ -3,7 +3,7 @@ title: Foreslå anskaffelser af anlægsaktiver
 description: I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden.
 author: saraschi2
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 07/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e08177aad2db2438c2d5d4ddd294c1056b88167c
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142725"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628879"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anskaffelser af anlægsaktiver
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
+I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF. Hvis du vil erhverve et anlægsaktiv via en forslagskladde, skal du først oprette anlægsaktivposten og derefter definere anskaffelsesprisen i anlægskartoteket.
 
 1. I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Anlægsaktivkladde**.
 2. Vælg **Ny**.
@@ -43,4 +43,3 @@ I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffe
 - Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
 11. Vælg fanen **Bøger** på siden.
 12. Vælg **Bogfør**.
-
