@@ -3,7 +3,7 @@ title: Indgående lagerhandling i POS
 description: I dette emne beskrives egenskaberne for den indgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551595"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627532"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551595"
 I Microsoft Dynamics 365 Commerce version 10.0.10 og nyere skal indgående og udgående handlinger på POS-stedet erstatte pluk- og modtagelseshandlingen.
 
 > [!NOTE]
-> I version 10.0.10 og nyere vil alle nye funktioner i POS-programmet, der er relateret til modtagelse af lagerbeholdninger i forhold til indkøbsordrer og flytteordrer, blive føjet til POS-handlingen **Indgående handling**. Hvis du i øjeblikket bruger pluk- og modtagelseshandlinger i POS, anbefales det, at du udvikler en strategi for flytning fra den pågældende handling til de nye indgående og udgående handlinger. Selvom pluk- og modtagelseshandlingen ikke fjernes fra produktet, vil der ikke være flere investeringer i den fra et funktionelt eller ydeevneperspektiv efter version 10.0.9.
+> I Commerce version 10.0.10 og nyere vil alle nye funktioner i POS-programmet, der er relateret til modtagelse af lagerbeholdninger i forhold til indkøbsordrer og flytteordrer, blive føjet til POS-handlingen **Indgående handling**. Hvis du i øjeblikket bruger pluk- og modtagelseshandlinger i POS, anbefales det, at du udvikler en strategi for flytning fra den pågældende handling til de nye indgående og udgående handlinger. Selvom pluk- og modtagelseshandlingen ikke fjernes fra produktet, vil der ikke være flere investeringer i den fra et funktionelt eller ydeevneperspektiv efter version 10.0.9.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Krav: Konfigurer en asynkron dokumentstruktur
 
@@ -153,6 +153,20 @@ Du bør kun bruge funktionen **Annuller modtagelse** på applinjen, hvis du vil 
 Hvis du modtager lagerbeholdning, kan du bruge funktionen **Afbryd modtagelse**, hvis du vil tage en pause fra modtagelsesprocessen. Du kan f.eks. vælge at udføre en anden handling fra kasseapparatet, f.eks. ringe op til et kundesalg eller forsinke bogføringen af kvitteringen.
 
 Når du vælger **Afbryd modtagelse**, ændres dokumentets status til **Midlertidigt afbrudt**. Derfor skal brugerne vide, hvilke data som er angivet for dokumentet, men dokumentet er ikke blevet bekræftet endnu. Når du er klar til at genoptage modtagelsesprocessen, skal du vælge det midlertidigt afbrudte dokument og derefter vælge **Ordredetaljer**. Alle antal i **Modtages nu**, der tidligere er gemt, bevares og kan vises fra visningen **Komplet ordreliste**.
+
+### <a name="review"></a>Gennemse
+
+Før den endelige forpligtelse af kvitteringen til Commerce Headquarters kan du bruge funktionen til gennemsyn til at validere det indgående dokument. Gennemsynet vil give dig besked om manglende eller forkerte data, der kan forårsage behandlingsfejl, og giver dig mulighed for at rette problemer, før kvitteringen sendes. Hvis du vil aktivere funktionen **Gennemse** på applinjen, skal du aktivere funktionen **Aktivér validering i indgående og udgående POS-lagerhandlinger** via arbejdsområdet **Funktionsstyring** i Commerce Headquarters (HQ).
+
+Funktionen **Gennemse** validerer følgende problemer i et indgående dokument:
+
+- **Overmodtagelse** – antallet for modtagelse er nu større end det bestilte antal. Problemets alvor bestemmes af konfigurationen af overlevering i Commerce Headquarters (HQ).
+- **Undermodtagelse** – antallet for modtagelse er nu mindre end det bestilte antal. Problemets alvor bestemmes af konfigurationen af underlevering i Commerce Headquarters (HQ).
+- **Serienummer** – serienummeret er ikke angivet eller valideret for en serialiseret vare, der kræver, at der registreres serienummer på lageret.
+- **Lokationen er ikke angivet** – lokationen er ikke angivet for en lokationsstyret vare, hvor blank lokation ikke er tilladt.
+- **Slettede linjer** – ordren indeholder linjer, der er slettet af Commerce Headquarters (HQ), og som ikke er kendt for POS-programmet.
+
+Angiv parameteren **Aktivér automatisk validering** til **Ja** i **Commerce-parametre** > **Lager** > **Butikslager** for at få valideringen udført automatisk, når der er valgt **Afslut modtagelse**.
 
 ### <a name="finish-receiving"></a>Afslut modtagelse
 

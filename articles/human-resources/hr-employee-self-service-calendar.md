@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429650"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628423"
 ---
 # <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
@@ -33,15 +33,13 @@ Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources. Teamkale
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Få vist din teamkalender som medarbejder
 
-1. Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.
-
-2. Vælg **Orlov og fravær**, og vælg derefter **Vis teamkalender**.
+1. Vælg **Teamfraværskalender** under **Oversigt** i arbejdsområdet **Medarbejderselvbetjening**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Få vist din teamkalender som leder
 
 1. Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.
 
-2. Vælg **Orlov og fravær**, og vælg derefter **Vis teamkalender**.
+2. Vælg **Orlov og fravær**, og vælg derefter **Vis cheffraværskalender**.
 
 Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fridage for mit team**, **Godkendt fritid** og **Anmodninger om fridage**. 
 

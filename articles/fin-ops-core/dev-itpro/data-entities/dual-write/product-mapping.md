@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173194"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621322"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -86,7 +86,7 @@ I denne model repræsenteres produktet af kombinationen af to enheder i Common D
 Da produktet er repræsenteret som en SKU, kan koncepterne for specifikke produkter, produktmastere og produktvarianter registreres i Common Data Service på følgende måde:
 
 - **Produkter med undertypeprodukt** er produkter, der defineres af dem selv. Der skal ikke defineres dimensioner. Et eksempel er en bestemt bog. For disse produkter oprettes der en post i enheden **Produkt**, og der oprettes en post i enheden **msdyn\_sharedproductdetails**. Der oprettes ingen produktfamiliepost.
-- **Produktmastere** bruges som standardprodukter, der indeholder de definitioner og regler, der bestemmer funktionaliteten i forretningsprocesser. Baseret på disse definitioner kan der genereres specifikke produkter, der kaldes produktvarianter. F. eks. er T-shirt produktmasteren, og den kan have farve og størrelse som dimensioner. Der kan frigives varianter med forskellige kombinationer af disse dimensioner, f. eks. en lille blå T-shirt eller en mellem grøn T-shirt. I integrationen oprettes der én post pr. variant i produkttabellen. Denne post indeholder variantspecifikke oplysninger, f. eks. de forskellige dimensioner. De generelle oplysninger for produktet gemmes i enheden **msdyn\_sharedproductdetails**. (Disse standardoplysninger opbevares i produktmasteren). Derudover oprettes der én produktfamiliepost pr. produktmaster. Oplysningerne om produktmasteren synkroniseres med Common Data Service, så snart den frigivne produktmaster er oprettet (men før der frigives varianter).
+- **Produktmastere** bruges som standardprodukter, der indeholder de definitioner og regler, der bestemmer funktionaliteten i forretningsprocesser. Baseret på disse definitioner kan der genereres specifikke produkter, der kaldes produktvarianter. F. eks. er T-shirt produktmasteren, og den kan have farve og størrelse som dimensioner. Der kan frigives varianter med forskellige kombinationer af disse dimensioner, f. eks. en lille blå T-shirt eller en mellem grøn T-shirt. I integrationen oprettes der én post pr. variant i produkttabellen. Denne post indeholder variantspecifikke oplysninger, f. eks. de forskellige dimensioner. De generelle oplysninger for produktet gemmes i enheden **msdyn\_sharedproductdetails**. (Disse standardoplysninger opbevares i produktmasteren). Oplysningerne om produktmasteren synkroniseres med Common Data Service, så snart den frigivne produktmaster er oprettet (men før der frigives varianter).
 - **Specifikke produkter** refererer til alle produkternes undertypeprodukt og alle produktvarianterne. 
 
 ![Datamodel for produkter](media/dual-write-product.png)

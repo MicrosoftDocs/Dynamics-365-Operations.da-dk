@@ -3,7 +3,7 @@ title: Oversigt over loyalitet
 description: I dette emne beskrives fordelskundefunktionerne i Dynamics 365 Commerce og de tilsvarende konfigurationstrin, der kan hjælpe detailhandlere i gang med deres fordelskundeprogram.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022038"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613197"
 ---
 # <a name="loyalty-overview"></a>Oversigt over fordelskundeprogrammer
 
@@ -55,7 +55,7 @@ I følgende tabel beskrives de enkelte komponenter, og hvor de er anvendt i ops�
 | Konfigurer rabatter (forudsætning)                  | Konfigurer de rabatter, du tilbyder dine fordelskunder. Eksempelvis kan du tilbyde en rabat på 5 % på alle beklædningsprodukter. | Rabatter skal føjes til prisgrupper, før de kan indgå i et fordelskundeprogram. Prisgrupper tildeles til fordelskundeprogrammer og fordelskundeniveauer. |
 | Konfigurer prisgrupper (forudsætning)               | Prisgrupper bruges til at oprette og administrere priser og rabatter for produkter. Du kan oprette prisgrupper, der indeholder de rabatter, der gælder for din fordelskundeprogrammer. | Prisgrupper tildeles til fordelskundeprogrammer og niveauer af fordelskundeprogrammer. |
 | Konfigurer kanaler (forudsætning)                   | Commerce-kanaler er de butikker, der deltager i fordelskundeprogrammer, f.eks. en fysisk butik, en onlinebutik eller et callcenter. Du skal oprette dine kanaler, før du kan tildele fordelskundeprogrammer til dem. | Du tildeler kanaler til et fordelskundeprogram, hvis kanalen deltager i fordelskundeprogrammet. |
-| Konfigurer metoden for fordelskundebetaling (forudsætning) | Du skal oprette en betalingsmetode, før et fordelskundekort kan bruges ved et kasseapparat, og fordelskundepoint kan indløses som en del af et fordelskundeprogram. Du skal også føje betalingsmetoden for fordelskunder til kanalen, før kunderne kan indløse deres fordelskundepoint som betaling for produkter. | Opret en betalingsmetode for fordelskunder, og tildel derefter betalingsmetode for fordelskunder til de kanaler, der deltager i fordelskundeprogrammet. |
+| Konfigurer metoden for fordelskundebetaling (forudsætning) | Hvis du vil sikre, at fordelskundepointene kan indløses i en hvilken som helst kanal, f.eks. fysiske butikker, onlinebutikker eller callcentre, skal du konfigurere beholderintervallet for fordelskundekortet på siden **Kortnumre**. | Opret en betalingsmetode for fordelskunder, og tildel derefter betalingsmetode for fordelskunder til de kanaler, der deltager i fordelskundeprogrammet. |
 | Konfigurer datointervaller                            | Med datointervaller kan du angive fleksible tidsintervaller, der gælder for niveauer for fordelskunder. Du kan bruge datointervallerne til at angive, hvor lang tid en kunde kan forblive på et niveau, eller hvor lang tid en kunde har til at udføre en aktivitet, der berettiger til et niveau. | Datointervaller gælder kun, hvis du bruger niveauer i dine fordelskundeprogrammer. Du kan vælge det datointerval, der gælder for programniveauer, og de datointervaller, der gælder for regler for programniveau. |
 | Opret belønningspoint                             | Belønningspoint er de typer bonus, du tilbyder dine kunder. Belønningspoint kan enten indløses eller ikke indløses. Belønningspoint, der kan indløses, kan byttes til produkter. Ikke-indløselige belønningspoint bruges til sporing eller til at flytte en kunde til det næste niveau i et fordelskundeprogram. | Der henvises til belønningspoint i reglerne for niveauer, og de bruges til at kvalificere en kunde til et bestemt niveau. Der henvises også til belønningspoint i fordelskundeplaner i regler for optjening og indløsning. I regler for optjening kan du angive den belønning, som en kunde kan optjene for en bestemt aktivitet. I regler for indløsning kan du angive den belønning, som kunden kan indløse. |
 | Konfigurere fordelskundeprogrammer                          | Fordelskundeprogrammer er den centrale fordelskundeenhed, du tilbyder. Alle fordelskundeprogrammer kan også have tildelt niveauer for fordelskunder. Rabatter og prisgrupper tildeles til fordelskundeprogrammer på programniveau eller på fordelskundeniveauet. | Du kan oprette fordelskundeplaner for dine fordelskundeprogrammer. Du tildeler dine fordelskundekort til dine fordelskundeprogrammer, og fordelskundekort kan tildeles til en kunde. Kanaler deltager i de fordelskundeprogrammer, der er tildelt til fordelskundeplaner. Kunder, der ejer et fordelskundekort, kan deltage i de fordelskundeprogrammer, der er knyttet til kortet. |

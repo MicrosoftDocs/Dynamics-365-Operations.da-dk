@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546416"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640393"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurere nummerserier til lagerstrømme
 
@@ -36,7 +36,7 @@ Denne funktion inkluderer følgende funktioner:
 - Stykliste-id'er kan genereres på forhånd.
 - En entydig nummerserie kan genereres for SSCC-numre (Serial Report Container Code).
 - GS1-kompatible nummerserier kan oprettes for stykliste- og SSCC-numre. Funktionen tilføjer færdiglavet understøttelse af id-numre, container-id'er, bølgeetiket-id'er og stykliste-id'er.
-- Konfiguration af id-numre er fleksibel. Du kan f.eks. medtage eller udelukke kunstig intelligens (AI), f.eks. foranstillede nuller (00).
+- Konfiguration af id-numre er fleksibel. Du kan f.eks. medtage eller udelukke programidentifikatorer, f.eks. foranstillede nuller (00).
 
 Denne funktionalitet gør det mere effektivt at understøtte etikettering af kartoner og justere nye numre, der genereres af systemet.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0d5265079dd96b272d13b30436b83b94bdb7297f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: fa67cdc7ad07c1384c4a0bad453447a464adf144
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530276"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652077"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.11. (juli 2020)
 
@@ -39,11 +39,11 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 - [Lagring af rapporten Disponibelt lager](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Nummerplader, der modtager forbedringer af lagerstedsappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Du kan få flere oplysninger i [Nummerplademodtagelse via lagerstedsappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Forbedringer af linjereservation til formularen til batchnummer reservation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – Du kan få flere oplysninger i [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Forbedringer af modtager-id med lagerstedsapp](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Du kan finde flere oplysninger under [Modtagelse af id via lagerstedsappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Forbedringer af linjereservation i formular for batchnummerreservation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Yderligere oplysninger finder du under [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).
 - [Nye dataenheder til produktionsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Overmodtagelse af lastantal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – Du kan få flere oplysninger i [Lagerstedshåndtering af indgående laster for indkøbsordrer](../warehousing/inbound-load-handling.md).
-- [Rapportér som afsluttet på batchnumre fra jobkortenheden](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) – Du finder flere oplysninger i [Færdigmelde fra jobkortenheden.](../production-control/report-finished-job-device.md)
+- [Overtilgang af lastantal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Du finder flere oplysninger under [Lagerstedshåndtering af indgående laster til indkøbsordrer](../warehousing/inbound-load-handling.md).
+- [Rapportér som afsluttet på batchnumre fra jobkortenheden](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Du kan finde flere oplysninger under [Færdigmelde fra jobkortenheden](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

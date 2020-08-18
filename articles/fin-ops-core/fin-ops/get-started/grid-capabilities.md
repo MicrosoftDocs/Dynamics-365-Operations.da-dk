@@ -3,7 +3,7 @@ title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431354"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651684"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -128,20 +128,47 @@ Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du start
 
 Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktiveret.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
+Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i formularens `run()`-metode.
+
+        this.forceLegacyGrid();
+
+Denne API anvendes, indtil oktober 2021-frigivelsen, når det nye gitterkontrolelement bliver obligatorisk. Rapportér eventuelle problemer til Microsoft, som kræver, at denne API kan udnyttes. 
+
 ## <a name="known-issues"></a>Kendte problemer
 I dette afsnit findes en liste over kendte problemer i forbindelse med den nye gitterkontrol, mens funktionen er i prøvetilstand.  
 
 ### <a name="open-issues"></a>Aktuelle problemer
+-  Når funktionen **Nyt gitterkontrolelement** er aktiveret, vil nogle sider fortsat anvende det eksisterende gitterkontrolelement. Det sker i følgende situationer:  
+    -  Der findes en kortliste på siden, som gengives i flere kolonner.
+    -  Der findes en grupperet kortliste på siden.
+    -  En gitterkolonne med et ikke-reagerende kontrolelement, der kan udvides.
 
-- Kortlister, der blev gengivet som flere kolonner, gengives nu som en enkelt kolonne.
-- Grupperede lister gengives ikke som grupper eller i separate kolonner.
+    Når en bruger først støder på en af disse situationer, vises der en meddelelse om opdatering af siden. Når denne meddelelse vises, vil siden fortsat anvende det eksisterende gitter for alle brugere indtil den næste opdatering af produktversionen. En bedre håndtering af disse scenarier, så det nye gitter kan anvendes, vil blive betragtet som en fremtidig opdatering.     
 
 ### <a name="fixed-as-part-of-10013"></a>Rettet i 10.0.13
 
-> [!NOTE]
-> Følgende oplysninger er tilgængelige, så du kan planlægge i overensstemmelse hermed. Du kan finde flere oplysninger om tidsplanen for version 10.0.13 under [Tilgængelighed af tjenesteopdatering](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Der vises ikke værktøjstip til billeder.
+-  [Fejl 470173] Afkrydsningsfelter i inaktive rækker skifter, når der klikkes på blanktegnene i cellen
+-  [Fejl 474848] Udvidede eksempler med gitre vises ikke
+-  [Fejl 474851] Hyperlinks i referencegruppekontrolelementer virker ikke 
+-  [Fejl 471777] Kan ikke vælge felter i et gitter for at redigere eller oprette en mobilapp
+-  [KB 4569441] Problemer med at gengive kortlister med flere kolonner, værktøjstip på billeder og visningsindstillinger på nogle felter
+-  [KB 4575279] Ikke alle markerede rækker slettes i finanskladden
+-  [KB 4575233] Visningsindstillinger gendannes ikke efter flytning til en anden række
+-  [KB 4571095] Bogføring af produktkvittering sker ved utilsigtet tryk på Enter (korrekt håndtering af en sides standardhandling)
+-  [KB 4575437] Opslag med redigerbare kontrolelementer lukker uventet
+-  [KB 4569418] Dubleret linje oprettes i leveranceplanens formular
+-  [KB 4575435] Udvidet eksempel forsvinder nogle gange, selv når musemarkøren ikke er tæt på feltet
+-  [KB 4575434] Opslaget filtreres ikke, når feltet er blevet ændret
+-  [KB 4575430] Værdier i adgangskodefelter maskeres ikke i gitteret
+-  [KB 4569438] "Behandlingen er stoppet på grund af et valideringsproblem" vises efter afmærkningslinjer under udligning af leverandørtransaktioner
+-  [KB 4569434] Når du opdaterer formularen juridiske enheder, er der færre poster
+-  [KB 4575297] Fokus bliver ved med at blive flyttet til ruden Arbejdsrutineoptager, når der redigeres og tabuleres gennem et gitter
+-  [KB 4566773] Korrektionstransaktioner vises ikke som negative på forespørgsel om bilagstransaktioner 
+-  [KB 4575288] Fokus nulstilles til den aktive række, når du markerer rammen mellem rækker på en simpel liste
+-  [KB 4575287] Fokus vender ikke tilbage til første kolonne, når du bruger pil ned til at oprette en ny række i kladder
+-  [KB 4564819] Kan ikke slette linjer i en fritekstfaktura (fordi datakilden ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Der vises ikke værktøjstip/forbedrede eksempler til billeder
 
 ### <a name="fixed-as-part-of-10012"></a>Rettet i 10.0.12
 
@@ -158,6 +185,7 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 - [KB-4562647] Fokus nulstilles til det første kontrolelement i dialogboksen **Publicer**, efter at der er tilføjet en ny række i sikkerhedsrollegitteret.
 - [KB-4563310] Den udvidede visning lukkes ikke, efter at en række er ændret.
 - [KB-4563313] Der opstår en "uventet klientfejl" i Internet Explorer, når der vælges en værdi i et opslag.
+- [KB 4564557] Opslag og rullemenuer åbnes ikke i Internet Explorer
 - [KB-4563324] Navigationen fungerer ikke, når arbejdsområdet **Personalestyring** er blevet åbnet.
 
 ### <a name="fixed-as-part-of-10011"></a>Rettet i 10.0.11

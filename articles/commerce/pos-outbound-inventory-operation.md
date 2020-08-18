@@ -3,7 +3,7 @@ title: Udgående lagerhandling i POS
 description: I dette emne beskrives egenskaberne for den udgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551619"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646153"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -38,9 +38,9 @@ I Microsoft Dynamics 365 Commerce version 10.0.10 og nyere skal indgående og ud
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Krav: Konfigurer en asynkron dokumentstruktur
 
-Den udgående handling indeholder forbedringer af ydeevnen for at sikre, at brugere, der har mange modtagelsesposteringer på tværs af mange butikker eller firmaer og store lagerdokumenter, kan behandle disse dokumenter til Commerce Headquarters uden at få timeout eller fejl. Disse forbedringer kræver brug af en asynkron dokumentstruktur.
+Den udgående handling indeholder forbedringer af ydeevnen for at sikre, at brugere, der har mange modtagelsesposteringer på tværs af mange butikker eller firmaer og store lagerdokumenter, kan behandle disse dokumenter til Commerce Headquarters (HQ) uden at få timeout eller fejl. Disse forbedringer kræver brug af en asynkron dokumentstruktur.
 
-Når der bruges en asynkron dokumentstruktur, kan du knytte udgående dokumentændringer fra POS til Commerce Headquarters og derefter gå videre til andre opgaver, mens behandlingen til Commerce Headquarters udføres i baggrunden. Du kan kontrollere status for dokumentet via dokumentlistesiden **Udgående handling** i POS for at sikre, at bogføringen er udført. I POS-programmet kan du også bruge listen over aktive dokumenter i udgående handling til at få vist dokumenter, der ikke kunne bogføres i Commerce Headquarters. Hvis et dokument mislykkes, kan POS-brugerne foretage rettelser og derefter prøve at behandle det i Commerce Headquarters igen.
+Når der bruges en asynkron dokumentstruktur, kan du knytte udgående dokumentændringer fra POS til Commerce Headquarters (HQ) og derefter gå videre til andre opgaver, mens behandlingen til Commerce Headquarters (HQ) udføres i baggrunden. Du kan kontrollere status for dokumentet via dokumentlistesiden **Udgående handling** i POS for at sikre, at bogføringen er udført. I POS-programmet kan du også bruge listen over aktive dokumenter i udgående handling til at få vist dokumenter, der ikke kunne bogføres i Commerce Headquarters (HQ). Hvis et dokument mislykkes, kan POS-brugerne foretage rettelser og derefter prøve at behandle det i Commerce Headquarters (HQ) igen.
 
 > [!IMPORTANT]
 > Den asynkrone dokumentstruktur skal konfigureres, før en virksomhed forsøger at bruge den udgående handling i POS.
@@ -88,22 +88,22 @@ Når den udgående handling startes fra POS-programmet, vises en listesidevisnin
 
 Den udgående lagerdokumentliste indeholder tre faner.
 
-- **Aktiv** – På denne fane vises flytteordrer, der har statussen **Anmodet** eller **Delvist leveret**. Ordrerne indeholder linjer eller antal på linjer, der skal leveres af brugerens aktuelle butik. På denne fane vises også ordrer, der har statussen **Behandles i HQ** (dvs., at de venter på bekræftelse af en vellykket bogføring fra Commerce Headquarters), eller **Behandling mislykkedes** (dvs. at bogføring til Commerce Headquarters ikke lykkedes, og brugeren skal rette data og prøve at sende ordrerne igen).
-- **Kladde** – På denne fane vises nye udgående anmodninger om overflytningsordrer, som brugerens butik har oprettet. Dokumenterne er dog kun gemt lokalt. De er endnu ikke blevet sendt til Commerce Headquarters til behandling.
+- **Aktiv** – På denne fane vises flytteordrer, der har statussen **Anmodet** eller **Delvist leveret**. Ordrerne indeholder linjer eller antal på linjer, der skal leveres af brugerens aktuelle butik. På denne fane vises også ordrer, der har statussen **Behandles i HQ** (dvs., at de venter på bekræftelse af en vellykket bogføring fra Commerce Headquarters (HQ)), eller **Behandling mislykkedes** (dvs. at bogføring til Commerce Headquarters (HQ) ikke lykkedes, og brugeren skal rette data og prøve at sende ordrerne igen).
+- **Kladde** – På denne fane vises nye udgående anmodninger om overflytningsordrer, som brugerens butik har oprettet. Dokumenterne er dog kun gemt lokalt. De er endnu ikke blevet sendt til Commerce Headquarters (HQ) til behandling.
 - **Fuldført** – På denne fane vises en liste over flytteordredokumenter, som butikken har afsendt helt i løbet af de seneste syv dage. Denne fane er udelukkende til orientering. Alle oplysninger om dokumenterne er skrivebeskyttede data til butikken.
 
 Når du får vist dokumenter på en af fanerne, kan feltet **Status** hjælpe dig med at forstå det trin, som dokumentet er i.
 
-- **Kladde** – Flytteordredokumentet er kun gemt lokalt i butikkens kanaldatabase. Der er endnu ikke blevet sendt oplysninger om flytteordreanmodningen til Commerce Headquarters.
-- **Anmodet** – Indkøbsordren eller flytteordren er blevet oprettet i Commerce Headquarters og er helt åben. Brugerens aktuelle butik har endnu forarbejdet nogen forsendelser i forhold til dokumentet.
+- **Kladde** – Flytteordredokumentet er kun gemt lokalt i butikkens kanaldatabase. Der er endnu ikke blevet sendt oplysninger om flytteordreanmodningen til Commerce Headquarters (HQ).
+- **Anmodet** – indkøbsordren eller flytteordren er blevet oprettet i Commerce Headquarters (HQ) og er helt åben. Brugerens aktuelle butik har endnu forarbejdet nogen forsendelser i forhold til dokumentet.
 - **Delvist leveret** – Flytteordredokumentet har en eller flere linjer eller et delvist linjeantal, der er bogført som leveret af det udgående lagersted. Disse afsendte linjer kan modtages via den indgående handling.
 - **Fuldt leveret** – Flytteordren har alle linjerne og det fulde linjeantal, der er bogført som leveret af det udgående lagersted.
 - **I gang** – Denne status bruges til at informere enhedsbrugere om, at en anden bruger arbejder aktivt på dokumentet.
 - **Midlertidigt afbrudt** – Denne status vises, efter at **Afbryd modtagelse** er valgt for midlertidigt at stoppe modtagelsesprocessen.
-- **Behandling i HQ** – Dokumentet blev sendt til Commerce Headquarters fra POS-programmet, men det er endnu ikke bogført i Commerce Headquarters. Dokumentet går gennem den asynkrone dokumentbogføringsproces. Når dokumentet er bogført i Commerce Headquarters, skal statussen opdateres til **Fuldt modtaget** eller **Delvist modtaget**.
-- **Behandlingen mislykkedes** – Dokumentet blev bogført til Commerce Headquarters og afvist. I ruden **Detaljer** vises årsagen til, at posteringsfejlen opstod. Dokumentet skal redigeres for at løse dataproblemer, og derefter skal det sendes til Commerce Headquarters igen til behandling.
+- **Behandling i HQ** – Dokumentet blev sendt til Commerce Headquarters (HQ) fra POS-programmet, men det er endnu ikke bogført i Commerce Headquarters (HQ). Dokumentet går gennem den asynkrone dokumentbogføringsproces. Når dokumentet er bogført i Commerce Headquarters (HQ), skal statussen opdateres til **Fuldt modtaget** eller **Delvist modtaget**.
+- **Behandlingen mislykkedes** – Dokumentet blev bogført til Commerce Headquarters (HQ) og afvist. I ruden **Detaljer** vises årsagen til, at posteringsfejlen opstod. Dokumentet skal redigeres for at løse dataproblemer, og derefter skal det sendes til Commerce Headquarters (HQ) igen til behandling.
 
-Når du vælger en dokumentlinje på listen, vises ruden **Detaljer**. I denne rude vises yderligere oplysninger om dokumentet, f.eks. afsendelses- og datooplysninger. En statuslinje viser, hvor mange varer der mangler at blive behandlet. Hvis dokumentet ikke blev behandlet til Commerce Headquarters, viser ruden **Detaljer** også fejlmeddelelser vedrørende fejlen.
+Når du vælger en dokumentlinje på listen, vises ruden **Detaljer**. I denne rude vises yderligere oplysninger om dokumentet, f.eks. afsendelses- og datooplysninger. En statuslinje viser, hvor mange varer der mangler at blive behandlet. Hvis dokumentet ikke blev behandlet til Commerce Headquarters (HQ), viser ruden **Detaljer** også fejlmeddelelser vedrørende fejlen.
 
 I dokumentlistens sidevisning kan du vælge **Ordredetaljer** på applinjen for at få vist dokumentoplysningerne. Du kan også aktivere modtagelsesbehandling for berettigede dokumentlinjer.
 
@@ -125,13 +125,13 @@ Valideringer sker under modtagelsesprocessen for dokumentlinjerne. De indeholder
 
 I Commerce version 10.0.12 blev der tilføjet en funktionalitet, så POS-brugere kan lukke eller annullere det resterende antal under udgående ordreforsendelse, hvis det udgående lagersted bestemmer, at det fulde antal, der er anmodet om, ikke kan leveres. Antal kan også lukkes eller annulleres senere. Hvis du vil bruge denne funktion, skal firmaet være konfigureret til at tillade underlevering af flytteordrer. Derudover skal der defineres en underleveringsprocent til flytteordrelinjen.
 
-Hvis du vil konfigurere firmaet, så der tillades underlevering af flytteordrer, skal du i Commerce Headquarters gå til **Lagerstyring \> Opsætning \> Parametre til lager- og lagerstedsstyring**. På siden **Parametre til lager- og lokationsstyring** skal du under fanen **Flytteordrer** aktivere parameteren **Accepter underlevering**. Kør derefter distributionsplanlægningsjobbet **1070** for at synkronisere parameterændringerne til din butikskanal.
+Hvis du vil konfigurere firmaet, så der tillades underlevering af flytteordrer, skal du i Commerce Headquarters (HQ) gå til **Lagerstyring \> Opsætning \> Parametre til lager- og lagerstedsstyring**. På siden **Parametre til lager- og lokationsstyring** skal du under fanen **Flytteordrer** aktivere parameteren **Accepter underlevering**. Kør derefter distributionsplanlægningsjobbet **1070** for at synkronisere parameterændringerne til din butikskanal.
 
-Underleveringsprocenter for en flytteordrelinje kan foruddefineres for produkter som del af produktkonfigurationen i Commerce Headquarters. Alternativt kan de angives eller overskrives på en bestemt flytteordrelinje via Commerce Headquarters.
+Underleveringsprocenter for en flytteordrelinje kan foruddefineres for produkter som del af produktkonfigurationen i Commerce Headquarters. Alternativt kan de angives eller overskrives på en bestemt flytteordrelinje via Commerce Headquarters (HQ).
 
-Når en organisation har afsluttet konfigurationen af flytteordren med underlevering, vil brugerne få vist en ny indstilling **Luk restantal** i ruden **Detaljer**, når de vælger en udgående flytteordrelinje via handlingen **Udgående handlinger** i POS. Når brugere derefter fuldfører forsendelsen ved at bruge processen **Afslut opfyldelse**, kan de sende en anmodning til Commerce Headquarters om at annullere det resterende ikke-afsendte antal. Hvis en bruger vælger at lukke restantallet, foretager Commerce en validering for at kontrollere, at det antal, der annulleres, er inden for den procentvise tolerance, der er defineret på flytteordrelinjen. Hvis underleveringstolerancen overskrides, modtager brugeren en fejlmeddelelse og kan ikke lukke restantallet, før det tidligere afsendte antal og "Send nu"-antal opfylder eller overholder tolerancen for underleveringen.
+Når en organisation har afsluttet konfigurationen af flytteordren med underlevering, vil brugerne af POS få vist en ny indstilling **Luk restantal** i ruden **Detaljer**, når de vælger en udgående flytteordrelinje via funktionen **Udgående handlinger**. Når brugeren fuldfører forsendelsen ved at bruge processen **Afslut opfyldelse**, kan de sende en anmodning til Commerce Headquarters (HQ) om at annullere det resterende ikke-afsendte antal. Hvis brugeren lukker restantallet, foretager Commerce en validering for at kontrollere, at det antal, der annulleres, er inden for den procentvise tolerance, der er defineret på flytteordrelinjen. Hvis underleveringstolerancen overskrides, vises en fejlmeddelelse, og brugeren kan ikke lukke restantallet, før det tidligere afsendte antal og "Send nu"-antal opfylder eller overholder tolerancen for underleveringen.
 
-Når forsendelsen er blevet synkroniseret med Commerce Headquarters, opdateres de antal, der er defineret i feltet **Afsend nu** for flytteordrelinjen i POS, til en status som afsendt i Commerce Headquarters. Alle ikke-afsendte antal, der tidligere ville være anset for at være antal for "Resterende forsendelse" *dvs. antal, der skal leveres senere), i stedet anses for at være annullerede antal. Antallet for "Resterende forsendelse" for flytteordrelinje er angivet til **0** (nul), og linjen betragtes som fuldt afsendt.
+Når forsendelsen er blevet synkroniseret med Commerce Headquarters (HQ), opdateres de antal, der er defineret i feltet **Afsend nu** for flytteordrelinjen i POS, til en status som afsendt i Commerce Headquarters (HQ). Alle ikke-afsendte antal, der tidligere ville være anset for at være antal for "Resterende forsendelse" (dvs. antal, der skal leveres senere), i stedet anses for at være annullerede antal. Antallet for "Resterende forsendelse" for flytteordrelinje er angivet til **0** (nul), og linjen betragtes som fuldt afsendt.
 
 ### <a name="shipping-location-controlled-items"></a>Afsende placeringsstyrede varer
 
@@ -145,13 +145,26 @@ Du kan vælge **Afsend alle** på applinjen efter behov for hurtigt at opdatere 
 
 ### <a name="cancel-fulfillment"></a>Annuller opfyldelse
 
-Du bør kun bruge funktionen **Annuller opfyldelse** på applinjen, hvis du vil have en sikkerhedskopi af dokumentet og ikke vil gemme ændringer. Du har f.eks. valgt et forkert dokument, og du vil ikke gemme nogen af de forrige afsendelsesdata.
+Brug kun funktionen **Annuller opfyldelse** på applinjen, hvis du vil have en sikkerhedskopi af dokumentet og ikke vil gemme ændringer. Du har f.eks. valgt et forkert dokument, og du vil ikke gemme nogen af de forrige afsendelsesdata.
 
 ### <a name="pause-fulfillment"></a>Afbryd opfyldelse midlertidigt
 
-Hvis du opfylder en overførselsordre, kan du bruge funktionen **Afbryd opfyldelse**, hvis du vil tage en pause fra processen. Du kan f.eks. vælge at udføre en anden handling fra kasseapparatet, f.eks. ringe op til et kundesalg eller forsinke bogføringen af afsendelsen til Commerce Headquarters.
+Hvis du opfylder en overførselsordre, kan du bruge funktionen **Afbryd opfyldelse**, hvis du vil tage en pause fra processen. Du kan f.eks. vælge at udføre en anden handling fra kasseapparatet, f.eks. ringe op til et kundesalg eller forsinke bogføringen af afsendelsen til Commerce Headquarters (HQ).
 
 Når du vælger **Afbryd opfyldelse**, ændres dokumentets status til **Midlertidigt afbrudt**. Derfor skal brugen vide, hvilke data som er angivet i dokumentet, men dokumentet er ikke blevet bekræftet endnu. Når du er klar til at genoptage opfyldelsesprocessen, skal du vælge det midlertidigt afbrudte dokument og derefter vælge **Ordredetaljer**. Alle antal i **Afsender nu**, der tidligere er gemt, vil blive bevaret og kan vises fra visningen **Komplet ordreliste**.
+
+### <a name="review"></a>Gennemse
+
+Før den endelige forpligtelse af opfyldelsen til Commerce Headquarters (HQ) kan du bruge funktionen til **Gennemse** til at validere det udgående dokument. Denne funktion vil give dig besked om manglende eller forkerte data, der kan forårsage behandlingsfejl, og giver dig mulighed for at rette problemer, før opfyldelsesanmodningen sendes. Hvis du vil aktivere funktionen **Gennemse** på applinjen, skal du aktivere funktionen **Aktivér validering i indgående og udgående POS-lagerhandlinger** via arbejdsområdet Funktionsstyring i Commerce Headquarters (HQ).
+
+Funktionen **Gennemse** validerer følgende problemer i et udgående dokument:
+- **Overlevering** – antallet til levering er nu større end det bestilte antal. Problemets alvor bestemmes af konfigurationen af overlevering i Commerce Headquarters (HQ).
+- **Underlevering** – antallet til levering er nu mindre end det bestilte antal. Problemets alvor bestemmes af konfigurationen af underlevering i Commerce Headquarters (HQ).
+- **Serienummer** – serienummeret er ikke angivet eller ikke tilgængeligt for en serialiseret vare, der kræver, at der registreres et serienummer på lageret.
+- **Lokationen er ikke angivet** – lokationen er ikke angivet for en lokationsstyret vare, hvor blank lokation ikke er tilladt.
+- **Slettede linjer** – ordren indeholder linjer, der er slettet af Commerce Headquarters (HQ), og som ikke er kendt for POS-programmet.
+
+Hvis du angiver parameteren **Aktivér automatisk validering** til **Ja** i **Commerce-parametre** > **Lager** > **Butikslager**, udføres valideringen automatisk, når du vælger funktionen **Fuldfør opfyldelse**.
 
 ### <a name="finish-fulfillment"></a>Fuldfør opfyldelse
 
@@ -163,15 +176,15 @@ Når der bruges asynkron dokumentbehandling, sendes kvitteringen via en asynkron
 
 Fra POS kan brugere oprette nye dokumenter fra flytteordren. Hvis du vil starte processen, skal du vælge **Ny** på applinjen, mens du befinder dig i hoveddokumentlisten med **Udgående handlinger**. Du bliver derefter bedt om at vælge et **Overfør til**-lagersted eller en butik, som din nuværende butik vil sende lager til. Værdierne er begrænset til den indstilling, der er defineret i konfigurationen af butikkens opfyldelsesgruppe. I en udgående overførselsanmodning vil din aktuelle butik altid være **Overførsel fra**-lagersted for flytteordren. Denne værdi kan ikke ændres.
 
-Du kan angive værdier i felterne **Afsendelsesdato**, **Modtagelsesdato** og **Leveringsmåde**, som du har brug for. Du kan også tilføje en note, der skal gemmes sammen med overflytningsordreoverskriften, som en vedhæftet fil i dokumentet i Commerce Headquarters.
+Du kan angive værdier i felterne **Afsendelsesdato**, **Modtagelsesdato** og **Leveringsmåde**, som du har brug for. Du kan også tilføje en note, der skal gemmes sammen med overflytningsordreoverskriften, som en vedhæftet fil i dokumentet i Commerce Headquarters (HQ).
 
 Når oplysningerne i overskriften er oprettet, kan du føje produkter til flytteordren. Du starter processen med at tilføje varer og ønsket antal ved at scanne stregkoder eller vælge **Tilføj produkt**.
 
-Når linjerne er angivet på den udgående flytteordre, skal du vælge **Gem** for at gemme dokumentændringerne lokalt, eller **Send anmodning** for at indsende ordreoplysningerne til Commerce Headquarters til yderligere behandling. Hvis du vælger **Gem**, gemmes kladde dokumentet i kanaldatabasen, og det udgående lagersted kan ikke køre dokumentet, før det er blevet behandlet via **Indsend anmodning**. Du bør kun vælge **Gem**, hvis du ikke er klar til at bekræfte anmodningen til i Commerce Headquarters til behandling.
+Når linjerne er angivet på den udgående flytteordre, skal du vælge **Gem** for at gemme dokumentændringerne lokalt, eller **Send anmodning** for at indsende ordreoplysningerne til Commerce Headquarters (HQ) til yderligere behandling. Hvis du vælger **Gem**, gemmes kladde dokumentet i kanaldatabasen, og det udgående lagersted kan ikke køre dokumentet, før det er blevet behandlet via **Indsend anmodning**. Vælg kun **Gem**, hvis du ikke er klar til at bekræfte anmodningen i Commerce Headquarters (HQ) til behandling.
 
 Hvis et dokument gemmes lokalt, findes det på fanen **Kladder** på dokumentlisten **Indgående handling**. Mens et dokument har statussen **Kladde**, kan du redigere det ved at vælge **Rediger**. Du kan opdatere, tilføje eller slette linjer efter behov. Du kan også slette hele dokumentet, mens det er i statussen **Kladde**, ved at vælge **Slet** på fanen **Kladder**.
 
-Når kladdedokumentet er sendt til Commerce Headquarters, vises det under fanen **Aktiv** og har status som **Anmodet**. På dette punkt er det kun brugere på det udgående lagersted, der kan redigere dokumentet ved at vælge **Udgående handling** i POS-programmet. Brugere på det indgående lagersted kan få vist flytteordren på fanen **Aktiv** på dokumentlisten **Indgående handling**, men de kan ikke redigere eller slette den. Redigeringslåsen sikrer, at der ikke opstår konflikter, fordi en indgående anmoder ændrer overflytningsordren, samtidig med at den udgående afsender aktivt plukker og afsender ordren. Hvis der kræves ændringer fra det indgående lager eller lagersted, efter at flytteordren er sendt, skal den udgående afsender kontaktes og bedes om at angive ændringerne.
+Når kladdedokumentet er sendt til Commerce Headquarters (HQ), vises det under fanen **Aktiv** og har status som **Anmodet**. På dette punkt er det kun brugere på det udgående lagersted, der kan redigere dokumentet ved at vælge **Udgående handling** i POS-programmet. Brugere på det indgående lagersted kan få vist flytteordren på fanen **Aktiv** på dokumentlisten **Indgående handling**, men de kan ikke redigere eller slette den. Redigeringslåsen sikrer, at der ikke opstår konflikter, fordi en indgående anmoder ændrer overflytningsordren, samtidig med at den udgående afsender aktivt plukker og afsender ordren. Hvis der kræves ændringer fra det indgående lager eller lagersted, efter at flytteordren er sendt, skal den udgående afsender kontaktes og bedes om at angive ændringerne.
 
 Når dokumentet har status **Anmodet**, er det klar til opfyldelse af behandling af det udgående lagersted. Når afsendelsen behandles vha. den udgående handling, opdateres flytteordredokumentets status fra **Anmodet** til **Fuldt afsendt** eller **Delvist afsendt**. Når dokumenterne er i statussen **Fuldt afsendt** eller **Delvist afsendt**, kan det indgående lager eller lagersted bogføre kvitteringer i forhold til dem ved hjælp af den indgående handling for modtagelsesprocessen.
 

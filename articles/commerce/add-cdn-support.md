@@ -3,7 +3,7 @@ title: Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 description: Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533338"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646033"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 
@@ -35,7 +35,7 @@ Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til di
 
 Når du konfigurerer et e-handels-miljø i Dynamics 365 Commerce, kan du konfigurere det til at arbejde sammen med CDN-tjenesten. 
 
-Dit brugerdefinerede domæne kan aktiveres under klargøringsprocessen for e-handels-miljøet. Du kan også bruge en serviceanmodning til at konfigurere den, når klargøringsprocessen er fuldført. Klargøringsprocessen for e-handels miljøet genererer et værtsnavn, der er knyttet til miljøet. Dette værtsnavn har følgende format, hvor *e-handels-lejernavn* er navnet på dit miljø:
+Dit brugerdefinerede domæne kan aktiveres under klargøringsprocessen for e-handels-miljøet. Du kan også bruge en serviceanmodning til at konfigurere den, når klargøringsprocessen er fuldført. Klargøringsprocessen for e-handels miljøet genererer et værtsnavn, der er knyttet til miljøet. Dette værtsnavn har følgende format, hvor \<*e-commerce-tenant-name*\> er navnet på dit miljø:
 
 &lt;e-handels-lejernavn&gt;.commerce.dynamics.com
 
@@ -74,18 +74,20 @@ Alle CDN-tjenester kan bruges, men i eksemplet i dette emne bruges Azure Front D
 
 Du kan finde oplysninger om, hvordan du konfigurerer Azure Front Door Service, i [Hurtigstart: Opret en Front Door til et globalt webprogram med høj tilgængelighed](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Konfigurere en back-end-pulje i Azure Front Door Service
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurere en back-end-pulje i Azure Front Door Service
 
 Benyt følgende fremgangsmåde for at konfigurere en back-end-pulje i Azure Front Door Service.
 
 1. Føj **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** til en back-end-pulje som en brugerdefineret vært, der har en tom back-end-værtsheader.
-1. Under **Tilstandsundersøgelser** i feltet **Sti** skal du angive **/keepalive**.
-1. I feltet **Intervaller (sekunder)** skal du indtaste **255**.
 1. Lad standardværdierne stå under **Belastningsjustering**.
 
-I følgende illustration vises dialogboksen **Tilføj en back-end-pulje** i Azure Front Door Service.
+I følgende illustration vises dialogboksen **Tilføj en back-end-pulje** i Azure Front Door Service med back-end-værtsnavnet indtastet.
 
 ![Dialogboksen Tilføj en back-end-pulje](./media/CDN_BackendPool.png)
+
+I følgende illustration vises dialogboksen **Tilføj en back-end-pulje** i Azure Front Door Service med standardværdier for justering af belastning.
+
+![Dialogboksen Tilføj en back-end-pulje fortsat](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Konfigurere regler i Azure Front Door Service
 
@@ -121,20 +123,22 @@ Følgende illustration viser dialogboksen **Tilføj en regel** i Azure Front Doo
 
 ![Dialogboksen Tilføj en regel](./media/CDN_CachingRule.png)
 
-Når denne indledende konfiguration er installeret, skal du føje det brugerdefinerede domæne til konfigurationen for Azure Front Door Service. Hvis du vil tilføje det brugerdefinerede domæne (f.eks. `www.fabrikam.com`), skal du konfigurere et vedtaget navn (CNAME) for domænet.
+> [!WARNING]
+> Hvis det domæne, du vil bruge, allerede er aktivt og live, kan du oprette en supportanmodning fra **Support**-feltet i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) for at få hjælp til de næste trin. Du kan finde flere oplysninger i [Få support til Finance and Operations-apps eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+Hvis dit domæne er nyt og ikke er et eksisterende Live-domæne, kan du føje dit tilpassede domæne til konfigurationen for Azure Front Door Service. Dette gør det muligt for webtrafik at dirigere til dit websted via forekomsten af Azure Front Door. Hvis du vil tilføje det brugerdefinerede domæne (f.eks. `www.fabrikam.com`), skal du konfigurere et vedtaget navn (CNAME) for domænet.
 
 I følgende illustration vises dialogboksen **CNAME-konfiguration** i Azure Front Door Service.
 
 ![Dialogboksen CNAME-konfiguration](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Hvis det domæne, du vil bruge, allerede er aktivt og live, skal du kontakte support for at aktivere dette domæne med Azure Front Door Service
 
 Du kan bruge Azure Front Door Service til at administrere certifikatet, eller du kan bruge dit eget certifikat til det brugerdefinerede domæne.
 
 I følgende illustration vises dialogboksen **HTTPS for brugerdefineret domæne** i Azure Front Door Service.
 
 ![Dialogboksen HTTPS for brugerdefineret domæne](./media/Custom_Domain_HTTPS.png)
+
+Detaljerede oplysninger om, hvordan du føjer et brugerdefineret domæne Azure Front Door, finder du under [Føje et brugerdefineret domæne til Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 Dit CDN bør nu være korrekt konfigureret, så det kan bruges sammen med Commerce-webstedet.
 

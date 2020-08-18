@@ -3,7 +3,7 @@ title: Oversigt over omni-kanalbetalinger
 description: Dette emne giver en oversigt over omni-kanalbetalinger i Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022062"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613171"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversigt over omni-kanalbetalinger
 
@@ -68,11 +68,13 @@ Der kræves følgende komponenter og opsætningstrin:
 
 - **eCommerce-integration** : Der kræves integration med Commerce for at understøtte scenarier, hvor en ordre stammer fra en onlinebutik. Yderligere oplysninger om SDK'et til Retail E-commerce finder du i [SDK'et (Software Development Kit) til Retail E-commerce](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I et demomiljø understøtter referencebutikken omni-kanalbetalingsscenarier. 
 - **Konfiguration af onlinebetalinger:** Konfigurationen af onlinekanalen skal indeholde en betalingsconnector, der er opdateret til at understøtte omni-kanalbetalinger. Alternativt kan der bruges en out-of-box-betalingsconnector. Du kan finde oplysninger om, hvordan du konfigurerer Adyen-betalingsconnectoren til onlinebutikker, i [Betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Ud over de trin til eCommerce-opsætning, der er beskrevet i dette emne, skal indstillingen **Tillad lagring af betalingsoplysninger under e-handel**-parameteren sættes til **True** i indstillingerne for Adyen-connectoren. 
-- **Konfiguration af omni-kanalbetalinger**: Gå i administrationen til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Delte parametre for Commerce**. Indstil derefter **Brug omni-kanalbetalinger** til **Ja** under fanen **Omni-kanalbetalinger**.
+- **Konfiguration af omni-kanalbetalinger**: Gå i administrationen til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Delte parametre for Commerce**. Indstil derefter **Brug omni-kanalbetalinger** til **Ja** under fanen **Omni-kanalbetalinger**. I Commerce version 10.0.12 og nyere findes denne indstilling i arbejdsområdet **Funktionsstyring**. Vælg funktionen **Omni-kanalbetalinger**, og klik på **Aktivér nu**. 
 - **Betalingstjenester:** Callcenteret bruger standardbetalingsconnectoren på siden **Betalingstjenester** til at behandle betalinger. For at understøtte scenarier som f.eks. "Køb i callcenter, og afhent i butik" skal denne standardbetalingsconnector være Adyen-betalingsconnectoren eller en betalingsconnector, der opfylder implementeringskravene til omni-kanalbetalinger.
 - **Autorisationskodetjeneste**: Betalinger via en betalingsterminal skal være konfigureret i oversigtspanelet **Autorisationskodetjeneste** i hardwareprofilen. Adyen-connectoren understøtter omni-kanalbetalingsscenarier out of the box. Andre betalingsconnectorer, der understøtter **iNamedRequestHandler**-grænsefladen, kan også bruges, hvis de understøtter omni-kanalbetalinger.
 - **Tilgængelighed af betalingsconnector:** Når en ordre tilbagekaldes, omfatter de betalingsmiddellinjer, der tilbagekaldes sammen med ordren, navnet på den betalingsconnector, der blev brugt til at oprette de godkendelser, der er knyttet til den pågældende ordre. Når ordren er opfyldt, forsøger betalings-SDK'et at bruge den samme connector, som blev brugt til at oprette den oprindelige godkendelse. Derfor skal en betalingsconnector med de samme forhandleregenskaber være tilgængelig for registrering. 
 - **Korttyper:** Hvis omni-kanalscenarierne skal fungere korrekt, skal hver kanal have samme opsætning for betalingsmiddeltyper, der kan bruges til omni-kanalen. Denne opsætning omfatter betalingsmetode-id'er og korttype-id'er. Hvis betalingsmiddeltypen **Kort** f.eks. har id'et **2** i opsætningen af onlinebutikken, skal det have samme id i opsætningen af detailbutikken. Det samme krav gælder for korttype-id'er. Hvis kortnummer **12** er indstillet til **Visa** i onlinebutikken, skal det samme id defineres for detailbutikken. 
+- Retail Modern POS til Windows eller Android med indbygget hardwarestation -eller-
+- Modern POS til iOS eller Cloud POS med tilsluttet delt hardwarestation. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>Grundlæggende princip, der understøtter omni-kanalbetalinger
 
@@ -100,8 +102,10 @@ I følgende afsnit beskrives trinnene for hvert scenarie, og hvordan du kan kør
 Før du går i gang, skal du kontrollere, at følgende forudsætninger er opfyldt:
 
 - Du har en referencebutik, hvor Adyen-connectoren er konfigureret.
-- Indstillingen **Omni-kanalbetalinger** på siden **Delte parametre for Commerce** er angivet til **Sand**.
+- Indstillingen **Omni-kanalbetalinger** på siden **Delte parametre for Commerce** er angivet til **Sand**. I senere versioner flyttes denne indstilling til arbejdsområdet **Funktionsstyring**, hvor du kan vælge funktionen **Omni-kanalbetalinger** og klikke på **Aktivér nu**. 
 - Adyen-betalingsconnectoren er konfigureret til Houston POS-kasseapparatet.
+- Retail Modern POS til Windows eller Android med indbygget hardwarestation -eller-
+- Modern POS til iOS eller Cloud POS med tilsluttet delt hardwarestation. 
 
 Følg disse trin for at køre scenariet.
 
@@ -229,3 +233,5 @@ Når en ordre med flere betalingsmidler og flere linjer afhentes, modtager kasse
 
 - [Ofte stillede spørgsmål om betalinger](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

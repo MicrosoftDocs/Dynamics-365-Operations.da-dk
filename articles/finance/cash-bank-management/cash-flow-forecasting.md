@@ -3,7 +3,7 @@ title: Likviditetsbudget
 description: Dette emne indeholder en oversigt over likviditetsbudgetteringsprocessen. I emnet beskrives også, hvordan likviditetsbudgettering er integreret med andre moduler i systemet.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188412"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653770"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
@@ -104,6 +104,13 @@ Beregn likviditetsbudgettet ved hjælp af siden **Beregn likviditetsbudgetter**.
 
 Du kan også bruge batchbehandling til likviditetsbudgettering. For at sikre, at budgetteringsanalyser opdateres regelmæssigt, kan du konfigurere en tilbagevendende batchproces til likviditetsbudgetberegning.
 
+I version 10.0.13 blev der frigivet en forbedring til beregningsprocessen, der bruger procesautomatiseringsstrukturen til at planlægge jobbet til likviditetsberegning. Dette aktiveres ved hjælp af funktionen **Automatisering af likviditetsbudget** i arbejdsområdet **Funktionsstyring**. Når den er aktiveret, skal du vælge linket **Automatisering af likviditetsbudget** for at få vist den nye automatiseringsside, hvor du kan planlægge processen for likviditetsberegning. Hvis du vil oprette en ny plan for likviditetsbudgetter, skal du vælge **Opret ny procesautomatisering** og derefter vælge **Automatisering af likviditetsbudget** i rullemenuen **Planlægningstype**. Du skal angive en tidsplan for hvert af de firmaer, du opdaterer data til likviditetsbudgettet for.  Denne side viser også, hvilke automatiseringsjobs for likviditetsbudgettet der afventer, og hvornår det sidste job blev fuldført.  
+
+> [!NOTE] 
+> Hvis eksisterende batchjob allerede er planlagt til likviditetsbudgetter, modtager du en fejlmeddelelse, og du vil ikke kunne aktivere denne funktion. Eksisterende batchjob skal ryddes, før du kan aktivere denne funktion. 
+
+Du kan finde flere oplysninger under [Procesautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
 ### <a name="reporting"></a>Rapportering
 
 Når likviditetsbudgettet er beregnet, skal du opdatere de tilknyttede enhedsoplysninger for analyserapportering. På siden **Enhedslager** skal du vælge målet **LedgerCovLiquidityMeasurement samlet** og derefter klikke på **Opdater**.
@@ -128,7 +135,7 @@ Arbejdsområdet **Oversigt over kontanter – alle firmaer** viser likviditetsbu
 
 Arbejdsområdet **Oversigt over kontanter - aktuelt firma** viser likviditetsbudgetteringsanalyser i firmaets definerede regnskabsvaluta. Den regnskabsvaluta, der bruges til analyser, defineres på siden **Finans**. Dette arbejdsområde viser en oversigt over likviditetsbudgettering og bankkontosaldi for det aktuelle firma. Et diagram over indgående og udgående pengestrømme giver et overblik over de fremtidige kontantbevægelser og -saldi i regnskabsvalutaen sammen med detaljerede oplysninger om de budgetterede posteringer. Du kan også se saldi for budgetteret valuta.
 
-Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i emnet Power BI-indhold for oversigt over kontanter.
+Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i emnet [Power BI-indhold for oversigt over kontanter](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Desuden kan du få vist likviditetsbudgetteringsdata for bestemte konti, ordrer og varer på de følgende sider:
 
