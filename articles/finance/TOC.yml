@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Økonomirapportering
           items:
-            - name: Oversigt over økonomirapportering
+            - name: Introduktion til Financial Reporting
               href: general-ledger/financial-reporting-getting-started.md
             - name: Oversigt over økonomirapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Rapportering om udskydelser
                       href: localizations/rus-reporting-deferrals.md
+                - name: Momsregnskab
+                  items:
+                    - name: Udgifts- og indtægtskoder
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Momsjournaler for aktiver
+                      href: localizations/rus-assets-tax-registers.md
             - name: Saudi-Arabien
               items:
                 - name: Oversigt for Saudi-Arabien
@@ -3126,6 +3132,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: Liste
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3413,12 +3421,14 @@
             - name: Hurtige introduktioner
               items:
                 - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Design en ny ER-løsning til udskrivning af en brugerdefineret rapport
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Selvstudier
               items:
                 - name: 'Få mere at vide om, hvordan du bruger datakilder'
                   items:
-                    - name: Bruge JOINFORBINDE til at hente data fra flere tabeller
+                    - name: Bruge JOIN-forbindelse til at hente data fra flere tabeller
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Bruge RAW XML til at tilføje indhold
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json

@@ -156,6 +156,8 @@
                           items:
                             - name: Tilpasse enheds- og felttilknytninger
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Håndtere flere enhedstilknytninger
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Redigere en juridisk enhed efter konfiguration af dobbeltskrivning
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Fejladministration og beskeder om påmindelser

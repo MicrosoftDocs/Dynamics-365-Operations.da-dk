@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 6. august 2020
+          href: hr-whats-new-2020-08-06.md
         - name: 23. juli 2020
           href: hr-whats-new-2020-07-23.md
         - name: 8. juli 2020
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: 3. april 2020
           href: hr-whats-new-2020-04-03.md
-        - name: 24. marts 2020
-          href: hr-whats-new-2020-03-24.md
-        - name: 19. marts 2020
-          href: hr-whats-new-2020-03-19.md
-        - name: 10. marts 2020
-          href: hr-whats-new-2020-03-10.md
-        - name: 3. marts 2020
-          href: hr-whats-new-2020-03-03.md
         - name: Arkiver med nyheder 2020
           items:
+            - name: 24. marts 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. marts 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. marts 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. marts 2020
+              href: hr-whats-new-2020-03-03.md
             - name: 25. februar 2020
               href: hr-whats-new-2020-02-25.md
             - name: 18. februar 2020
@@ -225,8 +227,6 @@
               href: hr-setup-parameters.md
             - name: Konfigurere delte Human Resources-parametre
               href: hr-setup-shared-parameters.md
-            - name: Konfigurere arbejdsgange for Human Resources
-              href: hr-setup-workflows.md
             - name: Forstå dato- og tidsfelter
               href: hr-setup-date-time-fields.md
         - name: Konfigurere organisationsindstillinger
@@ -383,6 +383,8 @@
               href: hr-personnel-actions-faq.md
             - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
               href: hr-workflow-manage-employee-information.md
+            - name: Få vist og administrer adresseændringer
+              href: hr-personnel-view-address-changes.md
             - name: Redigere rapporteringsrelationerne for en stilling
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Angive arbejderoplysninger
@@ -395,8 +397,6 @@
               href: hr-personnel-loan-items.md
             - name: Udarbejde en efterfølgerplan
               href: hr-personnel-develop-succession-plan.md
-            - name: Angive projekttimesedler
-              href: hr-personnel-enter-project-timesheets.md
             - name: Masseansættelsesprojekter
               href: hr-personnel-mass-hire-projects.md
             - name: Oprette et masseansættelsesprojekt
