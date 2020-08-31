@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497162"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677898"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -77,7 +77,7 @@ Når B2C-lejeren er blevet oprettet, skal du oprette et B2C-program i lejeren fo
 
 Hvis du vil oprette B2C-programmet, skal du følge disse trin.
 
-1. Vælg **Programmer** i Azure-portalen, og vælg derefter **Tilføj**.
+1. Vælg **Applikationer(Ældre)** i Azure-portalen, og vælg derefter **Tilføj**.
 1. Angiv på det ønskede AAD B2C-program under **Navn**.
 1. Vælg **Ja** for **Inkluder webapp/web-API** under **Webapp/Web-API**.
 1. Vælg **Ja** (standardværdien) til **Tillad implicit flow**.

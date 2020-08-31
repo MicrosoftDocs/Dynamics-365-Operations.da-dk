@@ -3,7 +3,7 @@ title: Kundeordrer i Modern POS (MPOS)
 description: Dette emne indeholder oplysninger om kundeordrer i Modern POS (MPOS). Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
+ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021959"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699363"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundeordrer i Modern POS (MPOS)
 
@@ -53,6 +53,8 @@ Her er nogle af de parametre, der kan indstilles på siden **Handelsparametre**,
 
     - Gebyrer anvendes på niveauet for salgsordrehovedet, og når et antal af en produktlinje returneres, kan den maksimale refusion af forsendelsesgebyrer, der er tilladt for produkterne og antallet, ikke bestemmes på måde, der fungerer for alle kunder.
     - Forsendelsesgebyrer påløber for hver leveringsforekomst. Hvis en kunde returnerer varer flere gange, og forhandlerens politik angiver, at forhandleren skal bære omkostningerne ved returforsendelsesgebyrer, bliver returforsendelsesgebyrerne højere end de faktiske forsendelsesgebyrer.
+    
+- **Momsberegningsmetode** - **Genberegn** er standardindstillingen og den traditionelle indstilling for, hvordan moms skal genberegnes, når ordren importeres til administrationen. **Genberegn ikke** deaktiverer genberegningen af momsen, indtil eller medmindre ordren redigeres i administrationen, når genberegningen udløses. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflow for kundeordrer
 

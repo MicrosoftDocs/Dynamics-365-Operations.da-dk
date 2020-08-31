@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274205"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686689"
 ---
 # <a name="add-a-privacy-policy-page"></a>Tilføj en side med politik om beskyttelse af personlige oplysninger
 
@@ -88,9 +88,9 @@ Du kan tilføje et link til siden med politik om beskyttelse af personlige oplys
 
 Følg disse trin for at føje et link til sidefodsfragment.
 
-1. Gå til **Sidefragmenter**, og vælg derefter **Nyt** for at oprette et sidefragment.
+1. Gå til **Fragmenter**, og vælg derefter **Nyt** for at oprette et sidefragment.
 1. Vælg modulet **Sidefod** i dialogboksen **Nyt sidefragment**.
-1. Angiv et navn til fragmentet under **Sidefragmentsnavn**, og vælg derefter **OK**.
+1. Angiv et navn til fragmentet under **Sidefragmentnavn**, og vælg derefter **OK**.
 1. På pladsen **Sidefodskategori** skal du tilføje modulet **Sidefodselement**.
 1. Vælg **Linktekst** i egenskabsruden til højre.
 1. I dialogboksen **Linktekst** skal du angive linkteksten og linkmålet på siden med politik om beskyttelse af personlige oplysninger og derefter klikke på **OK**.

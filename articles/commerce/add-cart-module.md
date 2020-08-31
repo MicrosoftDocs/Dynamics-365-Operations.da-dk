@@ -3,7 +3,7 @@ title: Indkøbsvognmodul
 description: Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f21268ed4cffed1d5c789f722796cdf05e965819
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621030"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686760"
 ---
 # <a name="cart-module"></a>Indkøbsvognmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -42,9 +43,17 @@ Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabr
 
 ![Eksempel på et indkøbvognmodul](./media/cart2.PNG)
 
+Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet. I dette eksempel er der et ekspeditionsgebyr for et linjeelement.
+
+![Eksempel på et indkøbvognmodul](./media/ecommerce-handling-fee.png)
+
 ## <a name="cart-module-properties-and-slots"></a>Egenskaber og pladser i indkøbsvognmodulet
 
-Indkøbsvognmodulet har en **Overskrift**-egenskab, der kan angives til værdier som f.eks. **Indkøbspose** og **Varer i indkøbsvognen**. 
+| Egenskab | Værdier | Betegnelse |
+|----------------|--------|-------------|
+| Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En overskrift til vognen som f.eks. "Indkøbspose" eller "Varer i din indkøbsvogn". |
+| Vis fejl for ikke på lager | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vil der blive vist lagerrelaterede fejl på siden for indkøbsvogn. Det anbefales, at du angiver denne egenskab til **Sand**, hvis der anvendes lagerkontroller på lokationen. |
+| Vis forsendelsesgebyrer for linjeelementer | **Sand** eller **Falsk** | Hvis denne egenskab angives til **Sand**, vil linjeelementer i en indkøbsvogn vise forsendelsesgebyrer, hvis disse oplysninger er tilgængelige. Denne funktion understøttes ikke i Fabrikam-temaet, da brugere først vælger levering i betalingsflowet. Denne funktion kan dog aktiveres i andre arbejdsprocesser, hvis det er relevant. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler, der kan bruges i et indkøbsvognmodul
 
@@ -67,9 +76,9 @@ Indkøbsvognmodulet henter produktoplysninger vha. Commerce Scale Unit-API'er. I
 
 Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Sidefragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
+1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
 1. Vælg modulet **Indkøbsvogn** i dialogboksen **Nyt sidefragment**.
-1. Under **Sidefragmentsnavn** skal du angive navnet **Indkøbsvognfragment** og derefter vælge **OK**.
+1. Under **Sidefragmentnavn** skal du angive navnet **Indkøbsvognfragment** og derefter vælge **OK**.
 1. Vælg **Indkøbsvogn**-pladsen.
 1. Vælg blyantsymbolet i ruden Egenskaber til højre. Skriv overskriften i feltet, og vælg derefter markeringssymbolet.
 1. På pladsen **Indkøbsvogn** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
@@ -77,8 +86,8 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv et navn for skabelonen under **Skabelonnavn** i dialogboksen **Ny skabelon**.
-1. Vælg pladsen **Brødtekst** i dispositionstræet, vælg ellipsen (**...**), og vælg derefter **Tilføj modul**.
-1. I dialogboksen **Vælg sidefragment** skal du vælge **Indkøbsvognfragmentet** og derefter **OK**.
+1. Vælg pladsen **Brødtekst** i dispositionstræet, vælg ellipsen (**...**), og vælg derefter **Tilføj sidefragment**.
+1. I dialogboksen **Vælg sidefragment** skal du vælge **Indkøbsvognfragment** og derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
 1. I dialogboksen **Vælg en skabelon** skal du vælge den skabelon, du har oprettet, angive et sidenavn og derefter vælge **OK**.
@@ -87,22 +96,18 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
-
-[Container-modul](add-container-module.md)
-
-[Butiksvælgermodul](store-selector.md)
-
-[Boksmodul til køb](add-buy-box.md)
-
-[Ikon for indkøbskurvsmodul](cart-icon-module.md)
+[Ikonmodul for indkøbskurv](cart-icon-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 
-[Ordrebekræftelsesmodul](order-confirmation-module.md)
+[Betalingsmodul](payment-module.md)
 
-[Overskriftsmodul](author-header-module.md)
+[Leveringsadressemodul](ship-address-module.md)
 
-[Sidefodsmodul](author-footer-module.md)
+[Leveringsindstillingsmodul](delivery-options-module.md)
+
+[Ordredetaljer-modul](order-confirmation-module.md)
+
+[Gavekortsmodul](add-giftcard.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)

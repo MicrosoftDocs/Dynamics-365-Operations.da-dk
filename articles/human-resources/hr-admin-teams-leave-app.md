@@ -3,7 +3,7 @@ title: Appen Personale i Teams
 description: I dette emne introduceres Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431124"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666354"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Personale i Teams
 
@@ -45,10 +45,10 @@ Få flere oplysninger om styring af app-tilladelser i Teams i [Styre app-tillade
 
 | Udsted | Status |
 | --- | --- |
+| Vandret rulning fungerer ikke på Android-telefoner | Vandret rulning er ikke et problem på iOS-enheder eller stationære computere. Vi arbejder på at løse problemet for Android. |
 | Fejl: Der er problemer med at finde et miljø, der skal oprettes forbindelse til. | Du kan få vist denne fejl, selvom du har bekræftet, at brugeren kan få adgang til et eller flere personalemiljøer (HR). Du kan heller ikke se alle de miljøer, du forventer. sIndtil dette problem er løst, skal du slette brugeren og derefter importere vedkommende igen for at løse problemet. |
 | Saldoen er forkert, når der angives fri for en fremtidig dato. | Prognosefunktion er ikke tilgængelig endnu. Saldoen viser den aktuelle dato. |
 | Når du reducerer antallet af timer, der er taget i en eksisterende anmodning, går **Den resterende saldo** ned i stedet for. | Vi løser dette kendte problem på et senere tidspunkt. Visningen er ikke korrekt, men de korrekte beløb reguleres ved afsendelsen. |
-| To kort for **Kommende fridage** vises for de samme datoer. | Kortene repræsenterer de enkelte indsendelser. Vi fortsætter med at få feedback og foretage justeringer. |
 | Kan ikke annullere en anmodning **Til gennemsyn**. | Denne funktionalitet understøttes ikke i øjeblikket, og den føjes til en fremtidig version. |
 | Saldooplysninger beregnes pr. dags dato. | Systemet viser i øjeblikket ikke saldi pr. periodiseringsperioden, også selvom det er konfigureret i orlovs- og fraværsparametre. |
 

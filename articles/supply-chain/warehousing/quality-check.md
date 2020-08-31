@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSQualityCheckTemplate,WHSWorkClass,WHSWorkTemplateTable.WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c270426a228ac58652f1f60d6fe99d4886071fa6
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 44a4694281f3dd53581c9d8245a0105b37b2b155
+ms.sourcegitcommit: 7dc2ff9461c310324937bea2fc160ff056fefd8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621432"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686351"
 ---
 # <a name="quality-check"></a>Kvalitetskontrol
 
@@ -179,7 +180,7 @@ Yderligere oplysninger om arbejdsskabeloner finder du under [Styre lagerarbejde 
 
 ### <a name="location-directive--quality-failures"></a>Lokationsvejledning – Kvalitetsfejl
 
-Lokalitetsvejledninger er regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser. I f.eks. en salgsordretransaktion bestemmer en lokationsvejledning , hvor varerne plukkes, og hvor de plukkede varer skal lægges på lager. Du skal konfigurere en lokationsvejledningsregel for at definere, hvordan mislykkede kvalitetskontroller skal håndteres.
+Lokationsvejledninger er regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser. I f.eks. en salgsordretransaktion bestemmer en lokationsvejledning , hvor varerne plukkes, og hvor de plukkede varer skal lægges på lager. Du skal konfigurere en lokationsvejledningsregel for at definere, hvordan mislykkede kvalitetskontroller skal håndteres.
 
 1. Gå til **Lokationsstyring \> Opsætning \> Lokationsvejledninger**.
 1. I ruden til venstre skal du angive feltet **Arbejdsordretype** til *Indkøbsordrer* for at arbejde med lokationsvejledninger af den pågældende type.

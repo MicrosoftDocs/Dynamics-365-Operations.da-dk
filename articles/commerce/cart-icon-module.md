@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411083"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661141"
 ---
 # <a name="cart-icon-module"></a>Modulet Indkøbskurvikon
 
@@ -42,22 +42,22 @@ Følgende billede viser et eksempel på et indkøbskurvikonmodul, der viser en m
 
 - **Vis minivogn** – Hvis sand, aktiverer denne egenskab en indkøbsvognoversigt (minivogn), som vises, når man peger på indkøbsvognens ikon. Denne funktionalitet understøttes kun ved visning på skrivebordet.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Føje et indkøbskurvikonmodul til en side
 
 Hvis du vil tilføje et indkøbsvognikonmodul, skal du se [Overskriftsmodul](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>Yderligere ressourcer
-
-[Boksmodul til køb](add-buy-box.md)
 
 [Indkøbskurvsmodul](add-cart-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 
-[Ordrebekræftelsesmodul](order-confirmation-module.md)
+[Betalingsmodul](payment-module.md)
 
-[Sidehovedmodul](author-header-module.md)
+[Leveringsadressemodul](ship-address-module.md)
 
-[Sidefodsmodul](author-footer-module.md)
+[Leveringsindstillingsmodul](delivery-options-module.md)
+
+[Ordredetaljer-modul](order-confirmation-module.md)
+
+[Gavekortsmodul](add-giftcard.md)

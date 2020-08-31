@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411191"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686712"
 ---
 # <a name="footer-module"></a>Sidefodsmodul  
 
@@ -50,7 +50,7 @@ Som de fleste containere understøtter et sidefodsmodul egenskaber for overskrif
 
 ## <a name="create-a-footer-module"></a>Opret et sidefodsmodul
 
-1. Gå til **Sidefragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
+1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
 1. I dialogboksen **Nyt sidefragment** skal du vælge modulet **Container**, angive et navn for sidefragmentet og derefter vælge **OK**.
 1. På pladsen **Standardcontainer** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Sidefodskategori** og derefter **OK**.

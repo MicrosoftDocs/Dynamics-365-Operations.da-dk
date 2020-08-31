@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295074"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686784"
 ---
 # <a name="add-a-favicon"></a>Tilføj en favicon
 
@@ -62,7 +62,7 @@ Du opretter HTML-koden til favoritikonet ved hjælp af følgende HTML-streng. I 
 
 Følg disse trin for at oprette et sidefragment, der indeholder et metatag til dit favoritikon.
 
-1. Gå til **Sidefragmenter**, og vælg derefter **Ny**.
+1. Gå til **Fragmenter**, og vælg derefter **Ny**.
 1. Vælg **Metakoder** i dialogboksen **Nyt sidefragment** som det modul, sidefragmentet er baseret på.
 1. Angiv et navn til sidefragmentet, og vælg derefter **OK**.
 1. Vælg det underordnede **Standardmetamoder** i fragmenthierarkitræet.
@@ -71,7 +71,7 @@ Følg disse trin for at oprette et sidefragment, der indeholder et metatag til d
 
 ## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Føj sidefragmentet for metakoder til HTML-hovedsektionen for dine sider
 
-Følge disse trin for at føj sidefragmentet for metakoder til HTML-**hoved**sektionen for dine sider.
+Følge disse trin for at føj sidefragmentet for metakoder til sektionen for HTML-**hoved** på dine sider.
 
 1. Gå til **Skabeloner**, åbn skabelonen for de sider, du vil føje dit favoritikon til, og vælg derefter **Rediger**.
 1. Vælg ellipseknappen (**...**) i skabelonhierarkitræet til højre for containeren i **HTML-hovedet**, og vælg derefter **Tilføj sidefragment**.
