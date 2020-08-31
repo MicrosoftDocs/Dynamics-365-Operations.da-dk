@@ -408,12 +408,6 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Klientbilleder i POS
                           href: pos-image.md
-                    - name: Kundeordrer
-                      items:
-                        - name: Kundeordrer i MPOS
-                          href: customer-orders-overview.md
-                        - name: Hybride kundeordrer
-                          href: hybrid-customer-orders.md
                     - name: Salgstilknytninger
                       items:
                         - name: Spore provisioner i POS ved hjælp af salgsgrupper
@@ -630,6 +624,8 @@
                       href: personalized-recommendations.md
                     - name: Fravælge tilpassede anbefalinger
                       href: personalization-gdpr.md
+                - name: Aktivér anbefalinger af "Køb tilsvarende"
+                  href: shop-similar-looks.md
                 - name: POS-oplevelser
                   items:
                     - name: Tilføje produktanbefalinger på POS
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Administrere dine ordrer
           items:
+            - name: Kundeordrer
+              items:
+                - name: Kundeordrer i MPOS
+                  href: customer-orders-overview.md
+                - name: Hybride kundeordrer
+                  href: hybrid-customer-orders.md
             - name: Salgsordrer
               items:
                 - name: Oprette en callcenter-ordre
@@ -988,6 +990,12 @@
                       href: cart-icon-module.md
                     - name: Betalingsmodul
                       href: add-checkout-module.md
+                    - name: Betalingsmodul
+                      href: payment-module.md
+                    - name: Leveringsadressemodul
+                      href: ship-address-module.md
+                    - name: Leveringsindstillingsmodul
+                      href: delivery-options-module.md
                     - name: Ordredetaljer-modul
                       href: order-confirmation-module.md
                     - name: Gavekortsmodul
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Cookie-API-oversigt
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Oversigt over interaktive komponenter
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Globalisere moduler ved hjælp af klassen CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Udvikle datahandlinger
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Script-injektorer
                       href: e-commerce-extensibility/script-injector.md
+                - name: Connectorer
+                  items:
+                    - name: Konfigurere og aktivere forbindelser
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetri og analyse
                   items:
                     - name: Telemetri-logføring
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Kommende ændringer i Retail SDK
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Vigtige udviklings- og ALM-ændringer fra version 10.0.10 til 10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Flette build-systemer for Commerce og Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Overflytte Retail SDK data fra Visual Studio 2015 til Visual Studio 2017
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server-udvidelse
               items:
-                - name: Udvide en OData-controller til Commerce Scale Unit
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Kunde og forbruger-API'er for Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Udvid standardmetadatacontrolleren for Commerce Scale Unit
-                  href: dev-itpro/extend-metadata.md
-                - name: Kalde CRT-tjenesten i offlinetilstand
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Oprette en ny Retail Server-udvidelse
+                - name: Opret ny udvidelses-API til Retail Server (Retail SDK version 10.0.11 og nyere)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: Opret ny udvidelses-API til Retail Server (Retail SDK version 10.0.11 og tidligere)
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: Udvidelse for CRT og Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Føje kundepræferencedata til kanaldatabaser
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Administrere hemmeligheder for Retail-kanaler
                   href: dev-itpro/manage-secrets.md
                 - name: Udvidelse og udløsere for CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Spærre transaktioner ved hjælp af udløsere
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Implementere en returneringspolitik ved hjælp af udløsere
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Loyalitetsudvidelse
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Udvidelsespunkter for følgesedler
