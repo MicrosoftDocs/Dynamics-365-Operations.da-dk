@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Oprette og arbejde med brugerdefinerede felter
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Integrere PowerApps-apps
+                - name: Integrere Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Finde oplysninger ved hjælp af opslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -2076,6 +2076,8 @@
                   href: localizations/emea-ita-exil-protest-boe.md
                 - name: Momsloft
                   href: localizations/emea-ita-exil-tax-plafond.md
+                - name: Elektroniske fakturaer til kunder
+                  href: localizations/emea-ita-e-invoices.md
             - name: Japan
               items:
                 - name: Oversigt for Japan
@@ -2890,13 +2892,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Adgang til oplysninger og rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Muligheder for tilpasning med PowerBI.com
+            - name: Muligheder for tilpasning med Power BI
               items:
-                - name: 'Funktioner, der er tilgængelige via PowerBI.com-integration'
+                - name: 'Funktioner, der er tilgængelige via Power BI-integration'
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-                - name: Fastgør PowerBI.com-indhold
+                - name: Fastgøre Power BI-indhold
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Vælge analytiske arbejdsområder fra PowerBI.com
+                - name: Vælge analytiske arbejdsområder fra Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Power BI-indhold
               items:
@@ -2904,7 +2906,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Faktisk vs. budget
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Fordele
+                - name: Personalegoder
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Power BI-indhold til oversigt over kontanter
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
@@ -2992,11 +2994,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
                 - name: Løse problemer efter vedligeholdelse af enhedslager
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurere PowerBI.com-integration
+                - name: Konfigurere Power BI-integration
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
                 - name: Brug din egen database
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
-                - name: Få vist PDF-dokumenter ved hjælp af en PDF-fremviser
+                - name: Vise PDF-dokumenter ved hjælp af en PDF-fremviser
                   href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/finance/toc.json
             - name: Udviklingsværktøjer til oprettelse og udvidelse af løsninger
               items:
@@ -3170,6 +3172,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
                     - name: Matematisk
                       items:
                         - name: Matematiske funktioner
