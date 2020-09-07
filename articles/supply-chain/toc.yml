@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oprette og arbejde med brugerdefinerede felter
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Integrere PowerApps-apps
+                - name: Integrere Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finde oplysninger ved hjælp af opslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Adgang til oplysninger og rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Muligheder for tilpasning med PowerBI.com
+            - name: Muligheder for tilpasning med Power BI
               items:
-                - name: 'Funktioner, der er tilgængelige via PowerBI.com-integration'
+                - name: 'Funktioner, der er tilgængelige via Power BI-integration'
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Fastgør PowerBI.com-indhold
+                - name: Fastgøre Power BI-indhold
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vælge analytiske arbejdsområder fra PowerBI.com
+                - name: Vælge analytiske arbejdsområder fra Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI-indhold
               items:
@@ -699,7 +699,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Brug din egen database
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Få vist PDF-dokumenter ved hjælp af en PDF-fremviser
+                - name: Vise PDF-dokumenter ved hjælp af en PDF-fremviser
                   href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/supply-chain/toc.json
             - name: Udviklingsværktøjer til oprettelse og udvidelse af løsninger
               items:
@@ -1827,10 +1827,6 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Udelade produkter fra varedisponering
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Varer med dobbelt anvendelse
-                  href: pim/dual-use.md
-                - name: Oprindelsesland
-                  href: pim/country-of-origin.md
                 - name: Oprette en stregkode for et produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Angive GTIN-koden for et produkt
@@ -1839,6 +1835,20 @@
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Tilføje et billede til et produkt
                   href: pim/tasks/add-image-product.md
+                - name: Oprindelsesland
+                  href: pim/country-of-origin.md
+                - name: Varer med dobbelt anvendelse
+                  href: pim/dual-use.md
+                - name: Farlige materialer
+                  items:
+                    - name: Oversigt over farligt materiale
+                      href: pim/hazmat-overview.md
+                    - name: Konfigurere farlige materialer
+                      href: pim/hazmat-setup.md
+                    - name: 'Farlige materialer i produkter, ordrer, forsendelser og laster'
+                      href: pim/hazmat-items.md
+                    - name: Forespørgsler og rapporter om farligt materiale
+                      href: pim/hazmat-reports.md
                 - name: Oversættelse af ofte stillede spørgsmål om produktoplysninger
                   href: pim/translations-product-related-information.md
                 - name: Søge efter produkt under ordreindtastning
