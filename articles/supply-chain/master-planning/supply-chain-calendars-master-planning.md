@@ -3,7 +3,7 @@ title: Kalendere og varedisponering
 description: Dette emne indeholder en oversigt over forsyningskædekalendere, og hvordan de påvirker varedisponeringen.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213486"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710327"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og varedisponering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over forsyningskædekalendere, og hvordan de påvirker varedisponeringen.  De forskellige kalendere, der bruges i varedisponeringsprogrammet, gennemgås, herunder hvordan de påvirker datoerne for afsendelse- og modtagelse i de planlagte ordrer. Til slut får du anbefalinger vedrørende tildeling, brug og opdatering af kalenderne.
+Dette emne indeholder en oversigt over forsyningskædekalendere, og hvordan de påvirker varedisponeringen.  De forskellige kalendere, der bruges i varedisponeringsprogrammet, gennemgås, herunder hvordan de påvirker datoerne for afsendelse og modtagelse i de planlagte ordrer. Til slut får du anbefalinger vedrørende tildeling, brug og opdatering af kalenderne.
 
 ## <a name="definition-of-a-calendar"></a>Definition af en kalender
 
@@ -105,28 +105,28 @@ Ordredatoen i et indkøbsordreforslag angiver den dato, hvor ordren er afgives. 
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Leveringsdato for et indkøbsordreforslag
 Modtagelsesdatoen for et køb angiver den dato, hvor du vil modtage varerne. Det er en åben dato i kalenderen. Den kalender, der vil blive taget i betragtning med hensyn til angivelse af, hvilke dage indkøbsordrerne kan modtages, er følgende i rækkefølge fra højeste til laveste prioritet: 
-    1. Leverandørens kalender
-    2. Kalender for disponeringsgruppe
-    3. Lagerstedkalender for tilgangslagerstedet
+1. Leverandørens kalender
+1. Kalender for disponeringsgruppe
+1. Lagerstedkalender for tilgangslagerstedet
 
 Bemærk, at kalenderen for disponeringsgruppen kan angives på forskellige sider, og at de prioriteres i følgende rækkefølge:
-    1. Varedisponeringsgruppe på siden **Oplysninger om frigivne produkter**.
-    2. Varedisponeringsgruppe på siden **Varedisponering**
-    3. Standardvaredisponeringsgruppe i **Varedisponeringsparametre**
+1. Varedisponeringsgruppe på siden **Varedisponering**
+1. Varedisponeringsgruppe på siden **Oplysninger om frigivne produkter**.
+1. Standardvaredisponeringsgruppe i **Varedisponeringsparametre**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Forsendelsesdato for et flytteordreforslag
 Når du opretter en flytteordre mellem to lagersteder, medtages afsendelsesdatoen og modtagelsesdatoen i flytteordrens hoved sammen med "Fra"-lagersted og "Til"-lagersted. Forskellen mellem disse to datoer er den forventede transporttid (i dage) mellem lagerstederne.
 
 Afsendelsesdatoen for et flytteordreforslag angiver den dato, hvor varerne sendes fra "Fra"-lagerstedet. De kalendere, der bruges til at angive den tilgængelige afsendelsesdato, er angivet efter prioritet: 
-    1. Lagerstedskalenderen for "Fra"-lagersted
-    2. Kalender for disponeringsgruppe (se reserverækkefølgen for denne kalender ovenfor) Hvis der er defineret en lagerstedskalender, bliver afsendelsesdatoen en åben dato i kalenderen. Hvis der ikke er defineret en lagerstedskalender, anvendes kalenderen for disponeringsgruppen. 
+1. Lagerstedskalenderen for "Fra"-lagersted
+1. Kalender for disponeringsgruppe (se reserverækkefølgen for denne kalender ovenfor) Hvis der er defineret en lagerstedskalender, bliver afsendelsesdatoen en åben dato i kalenderen. Hvis der ikke er defineret en lagerstedskalender, anvendes kalenderen for disponeringsgruppen. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Modtagelsesdato for et flytteordreforslag
 Modtagelsesdatoen for et flytteordreforslag angiver den dato, hvor varerne modtages på "Til"-lagerstedet.
 
 De kalendere, der bruges til at angive modtagelsesdatoen, er dem, der er angivet efter prioritet: 
-    1. Kalender for disponeringsgruppe 
-    2. Lagerstedkalender for "Til"-lagerstedet Hvis der er angivet en disponeringskalender, er modtagelsesdatoen automatisk en åben dato i kalenderen. Hvis der ikke er defineret en kalender for disponeringsgruppen, anvendes lagerstedskalenderen. 
+1. Kalender for disponeringsgruppe 
+1. Lagerstedkalender for "Til"-lagerstedet Hvis der er angivet en disponeringskalender, er modtagelsesdatoen automatisk en åben dato i kalenderen. Hvis der ikke er defineret en kalender for disponeringsgruppen, anvendes lagerstedskalenderen. 
 
 Når der skal findes forsendelses- og modtagelsesdatoer for flytteordreforslag, bliver margener, der er defineret af brugeren for afsendelse og modtagelse, også taget i betragtning. 
 

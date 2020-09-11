@@ -3,7 +3,7 @@ title: Administrere politikker for køb og salg af orlov
 description: Du kan give medarbejderne mulighed for at købe og sælge orlov i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429007"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712104"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Administrere politikker for køb og salg af orlov
 
-[!include [banner](includes/preview-feature.md)]
-
-Du kan give medarbejderne mulighed for at købe orlov ved at oprette en politik for køb af orlov.  
+Du kan give medarbejderne mulighed for at købe og sælge orlov ved at oprette en politik for køb og salg af orlov. Du kan konfigurere disse politikker til at bruge en arbejdsproces til godkendelser, angive maksimumbeløb og satser samt angive satser for køb og salg. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Give medarbejdere mulighed for at købe og sælge orlov
 
-1. På siden **Parametre for orlov og fravær** skal du vælge **Ja** for **Tillad medarbejderne at købe orlov**. 
+1. På siden **Parametre for orlov og fravær** skal du vælge **Ja** for **Tillad medarbejderne at købe orlov** og **Tillad medarbejderne at sælge orlov**.
 
-## <a name="create-a-buy-leave-policy"></a>Oprette en politik for køb af orlov
+## <a name="create-a-buy-and-sell-leave-policy"></a>Oprette en politik for køb og salg af orlov
 
 1. På siden **Orlov og fravær** skal du vælge fanen **Links**. 
 
@@ -51,19 +49,23 @@ Du kan give medarbejderne mulighed for at købe orlov ved at oprette en politik 
 
 6. Vælg en **Startdato** og en **Slutdato** for politikken. Anmodninger om at købe eller sælge orlov vil kun kunne sendes i løbet af denne tidsramme. 
 
-7. Under **Politik for køb** skal du vælge **Fuldtidsækvivalens** (FTÆ) for at opnå det maksimale beløb baseret på den FTÆ, der er defineret folr medarbejderens stilling. Hvis politiktypen er **Beløb**, skal du angive et **Maksimalt fast beløb**. 
+7. Vælg et **Arbejdsgangs-id** for politikken. Alle købs- og salgsanmodninger bruger denne arbejdsgang til gennemsyn og godkendelse. 
 
-8. Vælg **Tilføj** for at tilføje orlovstyper, som medarbejderne kan købe orlov for. Du kan føje flere orlovstyper til politikken. 
+8. Under **Politik for køb** skal du vælge **Fuldtidsækvivalens** (FTÆ) for at opnå det maksimale beløb baseret på den FTÆ, der er defineret folr medarbejderens stilling. Hvis politiktypen er **Beløb**, skal du angive et **Maksimalt fast beløb**. 
 
-9. Angiv **Måneders tjeneste** for orlovstypen for at aktivere forskellige tjenestemåneder og bestemme det maksimale beløb, som en medarbejder kan købe. 
+9. Vælg **Tilføj** for at tilføje orlovstyper, som medarbejderne kan købe orlov for. Du kan føje flere orlovstyper til politikken. 
 
-10. Angiv **Maksimalt beløb** for orlovstypen. 
+10. Angiv **Måneders tjeneste** for orlovstypen for at aktivere forskellige tjenestemåneder og bestemme det maksimale beløb, som en medarbejder kan købe. 
 
-11. Angiv den **Lønsats**, som medarbejderen skal købe orloven med. 
+11. Angiv **Maksimalt beløb** for orlovstypen. 
 
-12. Du kan vælge at angive den **Lønkode**, der skal bruges til købet af orlov. 
+12. Angiv den **Lønsats**, som medarbejderen skal købe orloven med. 
 
-13. Du kan evt. angive, om du vil bruge FTÆ til at bestemme det maksimale beløb for orlovstypen. 
+13. Du kan vælge at angive den **Lønkode**, der skal bruges til købet af orlov. 
+
+14. Du kan evt. angive, om du vil bruge FTÆ til at bestemme det maksimale beløb for orlovstypen. 
+
+15. Hvis du vil oprette en salgspolitik, skal du følge trin 8 til 14 under **Salgspolitik**. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>Føje politikken for køb og salg af orlov til en orlovs- og fraværsplan
 

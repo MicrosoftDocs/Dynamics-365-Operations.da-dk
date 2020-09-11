@@ -3,7 +3,7 @@ title: Garantiaftaler
 description: I dette emne beskrives garantiaftaler i Styring af aktiver.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215372"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719232"
 ---
 # <a name="warranty-agreements"></a>Garantiaftaler
 
@@ -42,12 +42,12 @@ En garantiaftale kan omfatte flere aftalelinjer, der dækker garantien for arbej
 
 1. Vælg **Styring af aktiver** \> **Opsætning** \> **Aktiver** \> **Garanti**.
 2. Vælg **Ny** for at oprette et produkt.
-3. Angiv et garanti-id i feltet **Garanti**.
+3. Angiv et garanti-id i feltet **Garanti**. 
 4. Angiv en beskrivelse i feltet **Navn**.
 
     I oversigtspanelet **Detaljer** indeholder feltet **Aktiver** antallet af aktive aktiver, der bruger garantiaftalen.
 
-5. Udfør følgende trin i oversigtspanelerne **Timegaranti** og **Varegaranti** for at tilføje linjer, der skal medtages i en garantiaftale, der vedrører timer eller varer:
+5. Udfør følgende trin i oversigtspanelet **Garantilinjer** for at tilføje linjer, der skal medtages i en garantiaftale:
 
     1. Vælg **Tilføj linje** for at føje en ny betingelse til garantien. Der indsættes automatisk et fortløbende linjenummer i feltet **Linje**.
     2. Vælg garantiperiodetypen i feltet **Periode**.

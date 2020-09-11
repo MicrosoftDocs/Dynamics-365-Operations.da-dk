@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443889"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719258"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
@@ -79,7 +79,7 @@ Hvis du også bruger løsningen Field Service, skal du sørge for at aktivere pa
 
 Salgstilbud kan oprettes i Sales eller i Supply Chain Management. Hvis du opretter et salgstilbud i Sales, synkroniseres det med Supply Chain Management i realtid. Hvis du tilsvarende opretter et salgstilbud i Supply Chain Management, synkroniseres det med Sales i realtid. Vær opmærksom på følgende punkter:
 
-+ Du kan kun aktivere og synkronisere ordrer fra Sales, hvis alle produkterne i ordren kommer fra Finance and Operations-apps. Derfor kan der ikke være nogen produkter, der skal rekvireres.
++ Produkter, der skal rekvireres på Dynamics 365 Sales, vises som produktkategorier i Dynamics 365 Supply Chain Management.
 + Beregning og afrunding af rabat:
 
     - Rabatberegningsmodellen i Sales adskiller sig fra rabatberegningsmodellen i Supply Chain Management. I Supply Chain Management kan det endelige rabatbeløb på en salgslinje være resultatet af en kombination af rabatbeløb og rabatprocenter. Hvis dette endelige rabatbeløb divideres med antallet på linjen, kan afrunding forekomme. Denne afrunding tages imidlertid ikke i betragtning, hvis et afrundet rabatbeløb pr. enhed synkroniseres med Sales. Det fulde beløb skal synkroniseres uden at blive divideret med linjeantallet for at sikre, at det fulde rabatbeløb fra en salgslinje i Supply Chain Management synkroniseres korrekt til Sales. Derfor skal du definere rabatberegningsmetoden som **Linjeelement** i Sales.

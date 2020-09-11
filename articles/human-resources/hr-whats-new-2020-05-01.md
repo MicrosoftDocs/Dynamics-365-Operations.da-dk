@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (1. maj 2020)
-description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 1. maj 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/01/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e4da626ce3412fba6f90dd7f953c1cbc79ab60c3
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: 074c678d9d8294aabf4e78b2a6ee0fa53efbaf23
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555117"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712274"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (1. maj 2020)
 
@@ -87,7 +87,7 @@ Denne version begynder at kombinere Human Resource-parametre med orlovs- og frav
 
 ## <a name="carry-forward-rules"></a>Overføre regler
 
-Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringer overføres. Hvis en medarbejder f.eks. overfører 10 dage, kan du vælge en anden orlovstype for disse 10 dage. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværstyper ](hr-leave-and-absence-types.md).
+Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringer overføres. Hvis en medarbejder f.eks. overfører 10 dage, kan du vælge en anden orlovstype for disse 10 dage. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md).
 
 ## <a name="known-issues"></a>Kendte problemer
 

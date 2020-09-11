@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699363"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710253"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundeordrer i Modern POS (MPOS)
 
@@ -54,7 +54,10 @@ Her er nogle af de parametre, der kan indstilles på siden **Handelsparametre**,
     - Gebyrer anvendes på niveauet for salgsordrehovedet, og når et antal af en produktlinje returneres, kan den maksimale refusion af forsendelsesgebyrer, der er tilladt for produkterne og antallet, ikke bestemmes på måde, der fungerer for alle kunder.
     - Forsendelsesgebyrer påløber for hver leveringsforekomst. Hvis en kunde returnerer varer flere gange, og forhandlerens politik angiver, at forhandleren skal bære omkostningerne ved returforsendelsesgebyrer, bliver returforsendelsesgebyrerne højere end de faktiske forsendelsesgebyrer.
     
-- **Momsberegningsmetode** - **Genberegn** er standardindstillingen og den traditionelle indstilling for, hvordan moms skal genberegnes, når ordren importeres til administrationen. **Genberegn ikke** deaktiverer genberegningen af momsen, indtil eller medmindre ordren redigeres i administrationen, når genberegningen udløses. 
+
+## <a name="disable-option-to-pay-later"></a>Deaktivere muligheden for at betale senere
+
+I Commerce version 10.0.12 og nyere kan forhandlerne fjerne muligheden for at betale senere, når der oprettes en kundeordre i POS. Hvis du vil deaktivere indstillingen, skal du åbne **Funktionalitetsprofil** for den kanal, hvor betaling senere ikke er tilladt, og derefter vælge **Rediger**. Under fanen **Generelt** skal du vælge rullelisten for **Kræv betaling for opfyldelse**. Hvis betaling senere ikke skal være tilladt ved POS, skal du vælge **Kort påkrævet** og vælge **Gem**. Kør distributionsplanen **1070** for at synkronisere ændringen til kanalen. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflow for kundeordrer
 

@@ -3,7 +3,7 @@ title: Liste over ER-funktioner i kategorien logisk
 description: Dette emne indeholder oplysninger om de logiske funktioner, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916631"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705089"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Liste over ER-funktioner i kategorien logisk
 
@@ -41,6 +41,8 @@ Logiske funktioner til elektronisk rapportering (ER) kan bruges til at arbejde m
 | [Negeret](er-functions-logical-not.md)                       | Denne funktion returnerer den omvendte logiske værdi af den angivne betingelse som en *Boolesk* værdi. |
 | [Eller](er-functions-logical-or.md)                         | Denne funktion returnerer en *Boolesk* værdi som værende **FALSK**, hvis alle de angivne betingelser ikke er opfyldte. Hvis en eller flere af de angivne betingelser er opfyldte, returnerer denne funktion en *Boolesk* værdi som værende **SAND**. |
 | [ValueIn](er-functions-logical-valuein.md)               | Denne funktion afgør, hvorvidt det angivne input svarer til en værdi for et angivet element på den angivne liste. Den returnerer en *Boolesk* værdi som værende **SANDT**, hvis det angivne input svarer til resultatet af kørslen med det angivne udtryk for mindst én post på den angivne liste. Ellers returneres en *Boolesk* værdi på **FALSK**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Denne funktion afgør, om det angivne input af typen *Int64* eller *Heltal* svarer til en værdi for et angivet element på den angivne liste. Den returnerer en *Boolesk* værdi som værende **SANDT**, hvis det angivne input svarer til resultatet af kørslen med det angivne udtryk for mindst én post på den angivne liste. Ellers returneres en *Boolesk* værdi på **FALSK**. |
+
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

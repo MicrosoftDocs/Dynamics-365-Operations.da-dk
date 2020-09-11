@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (25. juni 2020)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources.
+description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 23. juni 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/25/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fa02cf10b2b4fe08440d3641472e83dfe58169c9
-ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
+ms.openlocfilehash: d9787df5f36c1f08ade40e3e8fc5d5189e3bd5b0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3614380"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711934"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (23. juni 2020)
 
@@ -88,7 +88,7 @@ Nogle organisationer giver et frynsegode, der giver medarbejderne mulighed for a
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Orlovsperiodisering for et enkelt firma eller en enkelt plan
 
-Kunderne kan behandle periodiseringer for et enkelt firma eller en enkelt orlovs- fraværsplan. Denne mulighed giver klarhed over periodiseringsprocessen for kunder med forskellige sabbatår eller politikker for orlovsperiodisering. Du kan finde flere oplysninger under [Periodiseret orlov pr. firma eller pr. orlovsplan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Kunderne kan behandle periodiseringer for et enkelt firma eller en enkelt orlovs- fraværsplan. Denne mulighed giver klarhed over periodiseringsprocessen for kunder med forskellige sabbatår eller politikker for orlovsperiodisering. Du kan finde flere oplysninger under [Periodiseret orlov pr. firma eller pr. orlovsplan](hr-leave-and-absence-accrue.md).
 
 ## <a name="add-attachments-to-time-off-requests"></a>Føje vedhæftede filer til anmodninger om fravær
 

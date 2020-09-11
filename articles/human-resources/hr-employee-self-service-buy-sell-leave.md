@@ -1,9 +1,9 @@
 ---
 title: Køb og sælg orlov
-description: Du kan sende anmodninger om at købe og sælge orlov.
+description: I Dynamics 365 Human Resources kan du sende anmodninger om køb og salg af orlov på grundlag af de politikker for køb og salg af orlov, der er konfigureret af din virksomhed.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b765544dcca02ff629e4cc88e3b34d1d3b3e85dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429675"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711812"
 ---
 # <a name="buy-and-sell-leave"></a>Køb og sælg orlov
 
-[!include [banner](includes/preview-feature.md)]
-
-Du kan sende anmodninger om at købe orlov.  
+I Dynamics 365 Human Resources kan du sende anmodninger om køb og salg af orlov på grundlag af de politikker for køb og salg af orlov, der er konfigureret af din virksomhed.  
 
 ## <a name="request-to-buy-leave"></a>Anmod om at købe orlov
 
@@ -39,7 +37,17 @@ Du kan sende anmodninger om at købe orlov.
 
 3. Vælg **Send**, når du er klar til at sende din anmodning. 
 
-Når anmodningen er sendt, vil dine saldi automatisk blive opdateret med det antal orlovsdage, du har anmodet om at købe. 
+Dine saldi opdateres enten automatisk eller gennem en godkendelsesproces, inden de opdateres. Dette afhænger af, hvordan købspolitikken er konfigureret.
+
+## <a name="request-to-sell-leave"></a>Anmode om at sælge orlov
+
+1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Anmodning om at sælge orlov** i feltet **Fritidssaldi**. 
+
+2. Tilføj en **Orlovstype**, og angiv et **Antal** for det antal orlovsdage, du vil sælge. 
+
+3. Vælg **Send**, når du er klar til at sende din anmodning.
+
+Dine saldi opdateres enten automatisk eller gennem en godkendelsesproces, inden de opdateres. Dette afhænger af, hvordan købspolitikken er konfigureret.
 
 ## <a name="see-also"></a>Se også
 
