@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645333"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686664"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -61,7 +61,7 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler, der kan bruges i et købefeltmodul
 
-- **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Yderligere oplysninger om dette modul finder du i [Mediegallerimodul](mediagallery-module.md).
+- **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Yderligere oplysninger om dette modul finder du i [Mediegallerimodul](media-gallery-module.md).
 - **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Butiksvælgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
@@ -84,9 +84,9 @@ Købsfeltmodulet henter produktoplysninger ved hjælp af Commerce Scale Unit-API
 
 Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Sidefragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
+1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
 1. Vælg modulet **Købefelt** i dialogboksen **Nyt sidefragment**.
-1. Under **Sidefragmentsnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
+1. Under **Sidefragmentnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
 1. På pladsen **Media Gallery** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Media Gallery** og derefter **OK**.
 1. På pladsen **Butiksvælger** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.

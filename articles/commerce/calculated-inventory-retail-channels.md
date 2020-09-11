@@ -3,7 +3,7 @@ title: Beregning af lagertilgængelighed for detailkanaler
 description: I dette emne beskrives de indstillinger, der er tilgængelige for visning af butikkens og onlinekanalernes disponible lager.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379230"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694916"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregning af lagertilgængelighed for detailkanaler
 
@@ -40,7 +40,7 @@ I dette emne forklares de datasynkroniseringsprocesser, der kan køres hyppigt m
 
 Du kan bruge følgende API'er til at få vist lagertilgængeligheden for et produkt, når kunderne handler på et e-Commerce-websted.
 
-- **GetEstimatedAvailability** – Brug denne API til at få oplyst lagertilgængelighed for varen i e-Commerce-kanalens lagersted eller alle de lagersteder, der er knyttet til konfigurationen af opfyldelsesgruppen for e-Commerce-kanalen. Denne API kan også bruges til lagersteder i et specifikt søgeområde eller en bestemt radius baseret på data for længdegrad og breddegrad.
+- **GetEstimatedAvailability** – Brug denne API til at få oplyst lagertilgængeligheden for varen på e-Commerce-kanalens lagersted eller alle de lagersteder, der er knyttet til konfigurationen af ordreopfyldningsgruppen for e-Commerce-kanalen. Denne API kan også bruges til lagersteder i et specifikt søgeområde eller en bestemt radius baseret på data for længdegrad og breddegrad.
 - **GetEstimatedProductWarehouseAvailability** – Brug denne API til at anmode om lageroplysninger for en vare fra et bestemt lagersted. Du kan f.eks. bruge den til at få vist lagertilgængelighed i scenarier, der omfatter ordreafhentning.
 
 > [!NOTE]
@@ -66,7 +66,7 @@ Når jobbet **Produkttilgængelighed** er kørt færdigt, skal de data, der blev
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**.
 1. Kør jobbet **1130** (**Produkttilgængelighed**) for at synkronisere de øjebliksdata, som jobbet **Produkttilgængelighed** oprettede fra Commerce Headquarters til dine kanaldatabaser.
 
-Når der anmodes om lagertilgængelighed fra API'erne **GetEstimatedAvailabilty** eller **ProductWarehouseInventoryAvailabilities**, køres der en beregning for at forsøge at få det bedst mulige estimat over produktets lageret. Beregningen refererer til alle kundeordrer, der findes i kanaldatabasen, men som ikke var medtaget i de øjebliksdata, som 1130-jobbet angav. Denne logik udføres ved at spore den seneste behandlede lagertransaktion fra Commerce Headquarters og sammenligne den med transaktionerne i kanaldatabasen. Det giver en basislinje for beregningslogikken for kanalsiden, så de ekstra lagerbevægelser, der forekom for kundeordresalgstransaktioner i e-Commerce-kanaldatabasen, kan medtages i den estimerede lagerværdi, som API 'et tilvejebringer.
+Når der anmodes om lagertilgængelighed fra API'erne **GetEstimatedAvailability** eller **GetEstimatedProductWarehouseAvailability**, køres der en beregning for at forsøge at få det bedst mulige estimat over produktets lageret. Beregningen refererer til alle kundeordrer, der findes i kanaldatabasen, men som ikke var medtaget i de øjebliksdata, som 1130-jobbet angav. Denne logik udføres ved at spore den seneste behandlede lagertransaktion fra Commerce Headquarters og sammenligne den med transaktionerne i kanaldatabasen. Det giver en basislinje for beregningslogikken for kanalsiden, så de ekstra lagerbevægelser, der forekom for kundeordresalgstransaktioner i e-Commerce-kanaldatabasen, kan medtages i den estimerede lagerværdi, som API 'et tilvejebringer.
 
 I beregningslogikken for kanalsiden returneres en estimeret værdi for den fysiske tilgængelighed og en samlet tilgængelighedsværdi for det anmodede produkt og lagersted. Værdierne kan vises på dit e-Commerce-websted, hvis du ønsker det, eller de kan bruges til at udløse en anden forretningslogik på dit e-Commerce-websted. Du kan f.eks. vise en "uden for lager"-meddelelse i stedet for det faktiske disponible antal, som API'et har videregivet.
 
@@ -107,6 +107,8 @@ For at sikre det bedst mulige estimat over lageret, er det vigtigt, at du bruger
 - **Bogfør transaktionsopgørelser i batch** – Dette job er også påkrævet ved sivende feedbaseret bogføring. Den følger jobbet **Beregning af transaktionsopgørelser i batch**. Dette job bogfører systematisk de beregnede opgørelser, så der oprettes salgsordrer for cash-and-carry-salg i Commerce Headquarters, og Commerce Headquarters mere nøjagtigt kan afspejle butikkens lagerbeholdning.
 - **Produkttilgængelighed** – Dette job opretter øjebliksbilledet af lageret fra Commerce Headquarters.
 - **1130 (Produkttilgængelighed)** – Dette job kan findes på siden **Distributionsplaner** og bør køres umiddelbart efter jobbet **Produkttilgængelighed**. Dette job viderefører øjebliksdataene for lageret fra Commerce Headquarters til kanaldatabaserne.
+
+Det anbefales, at du ikke kører disse batchjob for ofte (med få minutters mellemrum). Hyppige kørsler vil overbelaste Commerce Headquarters (hovedkontor) og kan påvirke ydeevnen. Generelt er det en god ide at køre produkttilgængeligheden og 1130 job hver time, planlægge P-job, synkronisere ordrer og udføre sivende feedbaseret bogføring med samme eller højere frekvens.
 
 > [!NOTE]
 > Af hensyn til ydeevnen bruger beregningen en cache til at angive, om der er forløbet nok tid til at kunne begrunde at køre beregningslogikken igen, når der anvendes kanalsideberegninger til at beregne lagertilgængelighed til at foretage en anmodning om varetilgængelighed ved hjælp af beregninger af e-Commerce-API'erne eller den nye POS-kanalsidelagerlogik. Standardcachen er angivet til 60 sekunder. Du har f.eks. slået kanalsideberegningen til for din butik og har fået vist det disponible lager for et produkt på siden **Lagersøgning**. Hvis der derefter sælges en enhed af produktet, vil siden **Lagersøgning** ikke vise det reducerede lager, før cachen er blevet ryddet. Når brugere har bogført transaktioner i POS, bør de vente 60 sekunder, før de bekræfter, at det disponible lager er blevet reduceret.

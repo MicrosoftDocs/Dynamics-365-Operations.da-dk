@@ -1,9 +1,9 @@
 ---
 title: Oversigt over økonomirapportering
-description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering. Den indeholder en beskrivelse af de økonomirapporter, der findes.
+description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618032"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696682"
 ---
-# <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
+# <a name="get-started-with-financial-reporting"></a>Introduktion til Financial Reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Når en bruger er tilføjet, eller en rolle er ændret, bør brugeren kunne få 
 Brugere, der genererer en rapport, kan slette deres egne rapporter. Brugere med pligten **Ajourføring af sikker økonomirapportering** kan slette andres rapporter. 
 
 Begrebet udløbsdato blev introduceret i version 10.0.8. En ny påkrævet funktion aktiveres på siden **Alle** i arbejdsområdet til administration af funktioner. Funktionen **Opbevaringspolitikker for økonomiske rapporter** indeholder følgende ændringer:
-* Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres
+* Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres.
 * Alle eksisterende rapporter fra før funktionen blev installeret, får en udløbsperiode på 90 dage. Datoen kan blive vist som tom i en kort periode frem til tjenesten regnskabsrapportering kører, en rapport genereres, og tjenesten udfører opdateringen til eksisterende rapporter med en tom udløbsdato. 
 * Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder: 
   * Et udløb på 90 dage.
@@ -134,6 +134,12 @@ Når du vælger menuen **Financial Reporting**, vises listen over økonomiske st
 ## <a name="creating-and-modifying-financial-reports"></a>Oprettelse og redigering af økonomiske rapporter
 Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at vælge **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du bruger i Dynamics 365 Finance. 
 
+## <a name="reporting-tree-definitions"></a>Rapporteringstrædefinitioner 
+En af de komponenter, der bruges til at oprette økonomirapporter, er en definition af rapporteringstræet. En rapporteringstrædefinition hjælper med at definere strukturen og hierarkiet i din organisation. Det er en krydsdimensionale hierarkisk struktur, der er baseret på de størrelsesmæssige relationer i dine økonomiske data. Den giver oplysninger på rapporteringsenhedsniveau og på oversigtsniveau for alle enheder i træet.
+
+Du kan oprette et ubegrænset antal rapporteringstræer for at få vist virksomhedens data på forskellige måder. Hvert rapporteringsræ kan indeholde alle kombinationer af afdelinger og summeringsenheder, men en rapportdefinition kan kun knyttes til ét rapporteringstræ ad gangen. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Fejlfinding af problemer med at åbne Report Designer
 Der er nogle få almindelige problemer, der kan forårsage problemer, når du åbner Report Designer. Disse problemer og de trin, der skal løses, er som følger.
 
@@ -155,10 +161,11 @@ Problem 2: Brugeren har ikke fået tildelt de krævede tilladelser til at bruge 
   Hvis en anden bruger kan åbne Report Designer, skal du vælge **Funktioner** og derefter vælge **Integrationsstatus**. Kontroller, at integrationstilknytningen "Firmaets bruger – udbyder til firma" kører korrekt, fordi du er tildelt tilladelse til at bruge Financial Reporting. 
 * Det kan være muligt, at en anden fejl har forhindret **Dynamics-bruger til Financial Reporting-brugerintegration** i at afslutte. Eller er det muligt, at en Datamart-nulstilling er blevet startet og endnu ikke fuldført, eller at der er opstået en anden systemfejl. Prøv at køre processen igen senere. Hvis problemet fortsætter, skal du kontakte din systemadministrator.
 
-Problem 3: Du kan fortsætte efter logonsiden til ClickOnce-Rapport Designer, men de ikke fuldføre logon i Report Designer. 
+Problem 3: Du kan fortsætte efter logonsiden til ClickOnce Report Designer, men de ikke fuldføre logon i Report Designer. 
 
-* Den tid, der er angivet på din lokale computer, når du angiver dine logonoplysninger, skal være inden for fem minutter efter tiden på serveren til Financial Reporting. Hvis der er forskel på mere end fem minutter, vil systemet ikke tillade logon. 
+* Den tid, der er angivet på din lokale computer, når du angiver dine logonoplysninger, skal være inden for fem minutter efter tiden på serveren til Financial Reporting. Hvis der er en forskel på mere end fem minutter, vil systemet ikke tillade logon. 
 * I dette tilfælde anbefales det, at du aktiverer Windows-indstillingen til automatisk at indstille pc'ens tid. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 - [Vis økonomiske rapporter](view-financial-reports.md)
+- [Rapportering af trædefinitioner i økonomiske rapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

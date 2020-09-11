@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: cc5dcec7e50f43d3c17feef55967b32b8a261cdd
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
+ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597354"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677404"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 
@@ -77,7 +78,7 @@ Hvis du vil bruge funktionen *Bekræft og overfør*, skal du slå aktivere den p
 Denne opsætning er ikke påkrævet i alle situationer. Det eksempel, der vises her, sikrer, at arbejdet kan opdeles efter forsendelse for at understøtte det eksempelscenarie, der er angivet senere i dette emne. Der findes også andre måder at opnå dette resultat på.
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Arbejde \> Arbejdsskabeloner**.
-1. Vælg en eksisterende arbejdsskabelon, hvor du vil konfigurere funktionen *Bekræft og overfør*, i gitteret på den øverste del af siden. (Hvis du arbejder med **USMF**-demodata, skal du vælge arbejdsskabelonen **51 Pluk til stadie**). Du kan også oprette en ny arbejdsskabelon.
+1. Vælg en eksisterende arbejdsskabelon, hvor du vil konfigurere funktionen *Bekræft og overfør*, i gitteret på den øverste del af siden. (Hvis du arbejder med **USMF**-demodata, skal du vælge arbejdsskabelonen **51 Pluk til midlertidigt lager**). Du kan også oprette en ny arbejdsskabelon.
 1. I handlingsruden skal du vælge **Rediger forespørgsel** for at åbne dialogboksen **Salg**.
 1. I dialogboksen **Salg** skal du under fanen **Sortering** vælge **Tilføj** for at føje en række til gitteret.
 1. Angiv følgende værdier i den nye række:
@@ -191,7 +192,7 @@ I det næste trin skal laste to plukkede nummerplader på lastbilen.
 1. Log på mobilenheden ved hjælp af et bruger-id og en adgangskode til lagerstedet *51*.
 1. Vælg **Udgående**.
 1. Vælg **Salgslastning**.
-1. Angiv det brugerdefinerede målnummerplade-id, som du oprettede for det første arbejds-id i den foregående procedure. Vælg derefter **Angiv** for at placere målnummerpladen på lokationen **STADIE**.
+1. Angiv det brugerdefinerede målnummerplade-id, som du oprettede for det første arbejds-id i den foregående procedure. Vælg derefter **Angiv** for at placere målnummerpladen på lokationen **MIDLERTIDIGT LAGER**.
 1. Angiv målnummerplade-id'et, og vælg derefter **Angiv** for at placere nummerpladen på lokationen **BÅSEDØR**.
 1. Gentag trin 4 til 5 for det målnummerplade-id, du har oprettet til det andet arbejds-id.
 

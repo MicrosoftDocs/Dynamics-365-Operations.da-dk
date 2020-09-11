@@ -3,7 +3,7 @@ title: Kundeordrer i Modern POS (MPOS)
 description: Dette emne indeholder oplysninger om kundeordrer i Modern POS (MPOS). Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021959"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710253"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundeordrer i Modern POS (MPOS)
 
@@ -53,6 +53,11 @@ Her er nogle af de parametre, der kan indstilles på siden **Handelsparametre**,
 
     - Gebyrer anvendes på niveauet for salgsordrehovedet, og når et antal af en produktlinje returneres, kan den maksimale refusion af forsendelsesgebyrer, der er tilladt for produkterne og antallet, ikke bestemmes på måde, der fungerer for alle kunder.
     - Forsendelsesgebyrer påløber for hver leveringsforekomst. Hvis en kunde returnerer varer flere gange, og forhandlerens politik angiver, at forhandleren skal bære omkostningerne ved returforsendelsesgebyrer, bliver returforsendelsesgebyrerne højere end de faktiske forsendelsesgebyrer.
+    
+
+## <a name="disable-option-to-pay-later"></a>Deaktivere muligheden for at betale senere
+
+I Commerce version 10.0.12 og nyere kan forhandlerne fjerne muligheden for at betale senere, når der oprettes en kundeordre i POS. Hvis du vil deaktivere indstillingen, skal du åbne **Funktionalitetsprofil** for den kanal, hvor betaling senere ikke er tilladt, og derefter vælge **Rediger**. Under fanen **Generelt** skal du vælge rullelisten for **Kræv betaling for opfyldelse**. Hvis betaling senere ikke skal være tilladt ved POS, skal du vælge **Kort påkrævet** og vælge **Gem**. Kør distributionsplanen **1070** for at synkronisere ændringen til kanalen. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflow for kundeordrer
 

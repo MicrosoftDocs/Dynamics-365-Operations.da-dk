@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (24. marts 2020)
-description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 24. marts 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/24/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4f46d631379711dd2002a95dfa6001a362727f4f
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: da6d6ba6340bf27c1978404097059d99681518eb
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555093"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712467"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (24. marts 2020)
 

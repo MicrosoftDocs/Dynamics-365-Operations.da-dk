@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429053"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712153"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodiser orlovs- og fraværsplaner
 
@@ -37,7 +37,9 @@ Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medar
 
 3. Dialogboksen **Periodisere planer for orlov og fravær** vises. I **Periodisering pr.** skal du vælge **Dags dato** eller **Brugerdefineret dato** og angive en brugerdefineret dato.
 
-4. Hvis du vil køre periodiseringsprocessen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
+4. Hvis du vil køre periodiseringer for alle firmaer, skal du vælge **Alle firmaer**. Hvis du vil behandle periodiseringer for en enkelt orlovsplan, skal du vælge **Nej** for **Alle planer** og derefter vælge en **Orlovsplan**. Hvis du vælger alle firmaer, kan du ikke vælge en individuel orlovsplan. 
+
+5. Hvis du vil køre periodiseringsprocessen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 
    1. Angiv oplysninger om periodiseringsprocessen.
 
@@ -55,7 +57,9 @@ Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medar
 
 3. Dialogboksen **Periodisere planer for orlov og fravær** vises. I **Periodisering pr.** skal du vælge **Dags dato** eller **Brugerdefineret dato** og angive en brugerdefineret dato.
 
-4. Hvis du vil køre periodiseringsprocessen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
+4. Hvis du vil køre periodiseringer for alle firmaer, skal du vælge **Alle firmaer**. Hvis du vil behandle periodiseringer for en enkelt orlovsplan, skal du vælge **Nej** for **Alle planer** og derefter vælge en **Orlovsplan**. Hvis du vælger alle firmaer, kan du ikke vælge en individuel orlovsplan. 
+
+5. Hvis du vil køre periodiseringsprocessen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:
 
    1. Angiv oplysninger om periodiseringsprocessen.
 
@@ -102,18 +106,6 @@ Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Perio
 1. På siden **Orlov og fravær** skal du vælge fanen **Links**.
 
 2. Under **Administrer orlov** skal du vælge **Slet revision af orlovsperiodisering**.
-
-## <a name="configure-preview-features"></a>Konfigurere prøveversioner
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Hvis du har aktiveret prøvefunktioner for orlov og fravær, skal du også konfigurere indstillingerne for dem.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Periodiser orlov pr. firma eller pr. orlovsplan
-
-Når du periodiserer orlovs- og fraværsplaner, kan du vælge at periodisere for alle firmaer. Hvis du vælger alle firmaer, kan du ikke vælge planer for personlig orlov. Hvis du vælger ikke at periodisere for alle firmaer, kan du periodisere for en bestemt orlovsplan. 
-
-Disse indstillinger er tilgængelige, når du periodiserer for alle medarbejdere eller enkelte medarbejdere. 
 
 ## <a name="see-also"></a>Se også
 

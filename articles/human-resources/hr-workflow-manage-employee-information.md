@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a159f5fd811ee80c0ac45ca1b582f2f46fcb2c61
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 250b214372a12f99d2ababc97c5edf4456cadcad
+ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008448"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3688266"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Bruge arbejdsgange til at administrere medarbejderoplysninger
 
@@ -67,6 +67,9 @@ Følg disse trin for at konfigurere en grundlæggende arbejdsgang, der startes, 
 11. Vælg **Matrix**.
 12. Tilføj arbejdsgangen **Identifikationsnummer på arbejder** til listen.
 
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Få vist og administrer adresseændringer](hr-personnel-view-address-changes.md) 
 
 
 

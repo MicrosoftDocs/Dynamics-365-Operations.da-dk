@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411194"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686616"
 ---
 # <a name="header-module"></a>Overskriftsmodul
 
@@ -62,7 +62,7 @@ Følgende moduler kan bruges i et sidehovedmodul:
 
 Følg disse trin for at oprette et sidehovedmodul.
 
-1. Gå til **Sidefragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
+1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
 1. I dialogboksen **Nyt sidefragment** skal du vælge modulet **Container**, angive et navn for sidefragmentet og derefter vælge **OK**.
 1. Vælg pladsen **Standardcontainer**, og angiv derefter egenskaben **Bredde** til **Udfyld container**, i egenskabsruden til højre.
 1. På pladsen **Standardcontainer** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.

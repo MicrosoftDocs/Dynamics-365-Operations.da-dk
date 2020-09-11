@@ -3,7 +3,7 @@ title: Oversigt over medarbejderes og lederes selvbetjening
 description: Denne artikel giver et overblik over arbejdsområdet til selvbetjening for medarbejdere og ledere.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429790"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712226"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Oversigt over selvbetjening for medarbejdere og ledere
 
@@ -32,6 +32,25 @@ Denne artikel giver et overblik over arbejdsområdet til selvbetjening for medar
 ## <a name="edit-personal-details"></a>Rediger personlige oplysninger
 
 Hvis du vil tilføje eller ændre personlige oplysninger, skal du se under [Redigere personlige oplysninger](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Brugeren er ikke tildelt en arbejderpost
+
+Hvis du ikke har knyttet din bruger til en **Arbejder**-post på siden **Brugere**, vises følgende meddelelse:
+
+**Dit bruger-id er ikke tilknyttet til din medarbejderpost i systemet. Du kan ikke få vist eller opdatere dine oplysninger, før id'et er tilknyttet. Kontakt din chef eller dit supportteam for at få hjælp.**
+
+Hvis du vil knytte en bruger til en **Arbejder**-post, skal du navigere til **Brugere** og vælge brugeren. Vælg **Rediger**, tilføj den tilsvarende arbejder i feltet **Person** i formularen, og vælg **Gem**. Nu skulle du have adgang til Medarbejderselvbetjening.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sikkerhedskrav til medarbejder- og lederselvbetjeningstjeneste
+
+Medarbejder- og lederselvbetjeningstjeneste kræver to sikkerhedsroller:
+
+- Medarbejdere kræver medarbejderrollen.
+- Ledere kræver både medarbejder- og lederrolle.
+
+>[!NOTE]
+>Du kan også bruge brugerdefinerede roller til at få adgang til Medarbejder- og lederselvbetjeningstjeneste, så længe de har fået adgang til medarbejder- og lederarbejdsområder.<br>
+>Lederens adgang til medarbejderoplysninger er baseret på det aktuelle stillingslinjehierarki, der er defineret i Human Resources.
 
 ## <a name="employee-self-service"></a>Medarbejderselvbetjening
 

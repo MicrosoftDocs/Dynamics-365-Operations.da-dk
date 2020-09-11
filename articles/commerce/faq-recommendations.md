@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e27e4c4d8bdf614d6f55f44daeac3bc152219004
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: cf3df2267671b50c20b28dbdb1c6a21696bf2515
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404296"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664972"
 ---
 # <a name="product-recommendations-faq"></a>Ofte stillede spørgsmål om produktanbefalinger
 
@@ -88,6 +88,8 @@ Når du har aktiveret produktanbefalinger, skal du tilføje anbefalingspanelet p
 [Aktivere tilpassede anbefalinger](personalized-recommendations.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
+
+[Aktivere anbefalinger af "Køb tilsvarende"](shop-similar-looks.md)
 
 [Tilføje produktanbefalinger på POS](product.md)
 

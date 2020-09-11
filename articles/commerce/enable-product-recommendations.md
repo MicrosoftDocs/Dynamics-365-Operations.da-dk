@@ -3,7 +3,7 @@ title: Aktivér produktanbefalinger
 description: I dette emne beskrives, hvordan du kan lave produktanbefalinger, der er baseret på kunstig intelligens-maskinel læring (AI-ML), som er tilgængelig for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404203"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700836"
 ---
 # <a name="enable-product-recommendations"></a>Aktivér produktanbefalinger
 
@@ -65,11 +65,13 @@ Gem og luk siden.
 
 Benyt følgende fremgangsmåde for at aktivere produktanbefalinger.
 
-1. Gå til **Retail og Commerce &gt; Produktanbefalinger &gt; Anbefalingsparametre**.
-1. Vælg **Anbefalingslister** på listen over delte parametre.
-1. Vælg **Ja** i indstillingen **Aktivér anbefalinger**.
+1. Søg efter **Funktionsstyring** i Commerce Headquarters.
+1. Vælg **Alle** for at få vist en liste over tilgængelige funktioner. 
+1. Skriv **Anbefalinger** i søgefeltet.
+1. Vælg funktionen **Produktanbefalinger**.
+1. Vælg **Aktivér nu** i ruden med egenskaber for **Produktanbefalinger**.
 
-![Slå anbefalinger til](./media/enablepersonalization.png)
+![Slå anbefalinger til](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Denne procedure starter processen til oprettelse af produktanbefalingslister. Der kan tage op til flere timer, før listerne er tilgængelige og bliver vist på POS eller i Dynamics 365 Commerce.
@@ -95,6 +97,8 @@ Du kan få flere oplysninger om tilpassede anbefalinger i [Aktivere personlige a
 [Aktivér Azure Data Lake Storage i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
 [Aktivere tilpassede anbefalinger](personalized-recommendations.md)
+
+[Aktivere anbefalinger af "Køb tilsvarende"](shop-similar-looks.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
 

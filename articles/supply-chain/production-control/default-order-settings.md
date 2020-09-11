@@ -3,7 +3,7 @@ title: Standardordreindstillinger for dimensioner og produktvarianter
 description: Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn.
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
-ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637750"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657334"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardordreindstillinger for dimensioner og produktvarianter
 
@@ -32,7 +32,16 @@ ms.locfileid: "3637750"
 
 Standardindstillinger for ordrer i Dynamics 365 Supply Chain Management definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum- og maksimumantal, flere antal og standard antal, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Standardordreindstillinger bruges, når du opretter indkøbsordrer, salgsordrer, flytteordrer, lagerkladder og ved varedisponering til at generere ordreforslag. Standardindstillinger for ordre kan være varespecifikke, lokationsspecifikke, specifikke for produktvariant eller produktdimensionsbestemte.
 
-Du kan definere standardindstillinger af ordre på siden **Standardindstillinger for ordre**. Åbn denne side ved at gå til **Administration af produktoplysninger** &gt; **Produkter** &gt; **Frigivne produkter** &gt; **Vælg et frigivet produkt** &gt; på **Plan**. Du kan også gå til **Styr lager** &gt; **Ordreindstillinger** &gt; **Standardindstillinger for ordre**.
+Benyt følgende fremgangsmåde for at definere standardindstillingerne for produktordrer.
+
+1. Gå til **Administration af produktoplysninger** &gt; **Produkter** &gt; **Frigivne produkter**.
+1. Vælg det relevante produkt i gitteret.
+1. Benyt en af følgende fremgangsmåder i handlingsruden for at åbne siden **Standardordreindstillinger** for det valgte produkt:
+
+    - På fanen **Plan** i gruppen **Ordreindstillinger** skal du vælge **Standardordreindstillinger**.
+    - På fanen **Administrer lager** i gruppen **Ordreindstillinger** skal du vælge **Standardordreindstillinger**.
+
+1. Konfigurer indstillingerne som beskrevet i resten af dette emne.
 
 ## <a name="default-order-settings"></a>Standardindstillinger for ordre
 
@@ -74,7 +83,7 @@ Lagerordres standardindstillinger gælder også, når du opretter:
 
 ## <a name="full-definition-of-a-released-product"></a>Fuld definition af et frigivet produkt
 
-Når du opretter en postering, skal du angive den fulde definition af et frigivet produkt på linjen, før Supply Chain Management forsøger at identificere standardordreindstillingerne. Fuld definitionen af frigivet produkt betyder, at varenummeret og alle de aktive produktdimensioner, f.eks. konfiguration, størrelse, typografi og farve, er angivet på posteringen. For eksempel hvis du manuelt opretter en indkøbsordrelinje for en frigiet produktvariant, skal du angive alle nødvendige produktdimensioner, før lokation, lagersted, mængder og gennemløbstid vises som standard på ordrelinjen. 
+Når du opretter en transaktion, skal du angive den fulde definition af et frigivet produkt på linjen, så Supply Chain Management kan forsøge at identificere standardordreindstillingerne. I den fulde definition af et frigivet produkt angives varenummeret og alle de aktive produktdimensioner, f.eks. konfiguration, størrelse, typografi, version og farve, er på transaktionen. Hvis du f.eks. manuelt opretter en indkøbsordrelinje for en frigiet produktvariant, skal du angive alle nødvendige produktdimensioner, før lokationen, lagerstedet, mængderne og gennemløbstiden vises som standard på ordrelinjen. 
 
 Ikke alle standardparametre til ordreindstillinger anvendes ved oprettelse af ordre- eller kladdelinjer. Antal og leveringstider vises kun som standard, når det er relevant. Eksempelvis ved optælling en kladdelinje vises lokation og lagersted som standard, når linjen er oprettet. Derfor er der intet standardantal eller kontrol af multiplum eller minimum udført ved oprettelse af linjen eller bogføring af kladden. 
 
@@ -96,7 +105,7 @@ Du kan definere generelle ordreindstillinger eller lokationsspecifikke ordreinds
 
 ### <a name="site-specific-order-settings"></a>Lokationsspecifikke ordreindstillinger.
 
-Du kan oprette lokationsspecifikke ordreindstillinger ved at vælge **Ny**. I **Detaljevisning** skal du udfylde lokationen i **Indstillinger gældende for** &gt; feltet **Lokation**. I **Gittervisning** skal du udfylde lokationen i **Lokation**-kolonnen. Den nye regel får automatisk en ny rangværdi, der er højere end nul. Du kan oprette så mange lokationsspecifikke regler, du vil, og du kan tildele alle reglerne samme rang for at modellere, at de er lige vigtige. 
+Du kan oprette lokationsspecifikke ordreindstillinger ved at vælge **Ny**. I **Detaljevisning** skal du indtaste lokationen i feltet **Lokation** i sektionen **Indstillinger gældende for**. I **Gittervisning** skal du angive lokationen i kolonnen **Lokation**. Den nye regel tildeles automatisk en ny rangeringsværdi, der er større end 0 (nul). Du kan oprette lige så mange lokationsspecifikke regler, du har brug for. Hvis du vil angive, at de er lige vigtige, kan du tildele samme rangeringsværdi til alle lokationsspecifikke regler.
 
 Hvis du er i **Detaljevisning**, kan du ikke få overblik over de regler, der er oprettet for varen. Brug knappen **Vis/skjul liste** for at se oversigtsoplysninger. Når der oprettes en ordrelinje af enhver type, og den ikke har nogen lokation angivet, søger Supply Chain Management efter en regel uden angivet lokation. Dette hjælper med at bestemme standardlokationen på ordrelinjen. Denne lokation bruges derefter til at søge efter en lokationsspecifik regel, hvor et standardlagersted kan være angivet. Dette lagersted anvendes på ordrelinjen.
 
@@ -111,41 +120,41 @@ Se på følgende produkteksempel.
 | **Produktnavn**                                    | Fotoelektrisk sensor                    |
 | **Varenummer**                                     | XW56                                    |
 | **Konfiguration** (bruges til at modellere lystypen) | C1-Synligt rødt lys, C2-Infrarødt lys |
-| **Skabelon** (bruges til at modellere teknisk revision)  | R1, R2, R3                              |
+| **Version** | V1, V2, V3                              |
 
 I dette eksempel antages det, at produktet er indkøbt og ikke fremstillet. Det antages desuden, at konfigurationen C1 bruges mest, så den har kortere leveringstider. 
 
 Opret følgende standardordreindstillinger til modellen i dette scenario.
 
-| Ranger | Sted | Variantkonfiguration | Skabelon | Køb - Tilsidesæt standardindstillinger | Leveringstid for indkøb | Køb - Standset | Salg - Tilsidesæt standardindstillinger | Salg - Standset |
+| Ranger | Lokation | Variantkonfiguration | Version | Køb - Tilsidesæt standardindstillinger | Leveringstid for indkøb | Køb - Standset | Salg - Tilsidesæt standardindstillinger | Salg - Standset |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Når en indkøbsordrelinje eller en planlagt indkøbsordre oprettes for XW56, konfiguration C1, betragtes leveringstiden 2 uanset revision eller lokation, hvor linjen er placeret. Lad os antage, at alle revisioner udover R3 er standset.
+Når en indkøbsordrelinje eller en planlagt indkøbsordre oprettes for varen XW56, konfigurationen C1, betragtes gennemløbstiden som 2 uanset versionen eller den lokation, hvor linjen placeres. Lad os antage, at alle versioner udover V3 er standset.
 
 Du kan oprette følgende standardregler for ordreindstillinger:
 
-| Ranger | Sted | Variantkonfiguration | Skabelon | Køb - Tilsidesæt standardindstillinger | Leveringstid for indkøb | Køb - Standset | Salg - Tilsidesæt standardindstillinger | Salg - Standset |
+| Ranger | Lokation | Variantkonfiguration | Version | Køb - Tilsidesæt standardindstillinger | Leveringstid for indkøb | Køb - Standset | Salg - Tilsidesæt standardindstillinger | Salg - Standset |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
-| 20   |      |               | R1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
+| 20   |      |               | V2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
+| 20   |      |               | V1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-De to regler til at stoppe de gamle revisioner har samme rangorden, hvilket betyder, at de er lige vigtige. Begge af dem har en højere rang end reglen for konfiguration C1, hvilket betyder, at de tilsidesætter reglen til C1-konfiguration. 
+De to regler for standsning af de gamle versioner har samme placering. Derfor er de lige vigtige. Fordi begge regler har en højere rangering end reglen for konfigurationen C1, tilsidesætter de reglen for konfigurationen C1. 
 
-Dette eksempel forklarer behovet for rang. Hvis der oprettes en indkøbsordre for konfiguration C1 og revision R2, er, i mangel af rang, de to regler, der er defineret for R2 og C1, tvetydige. For at løse tvetydigheden, søger Supply Chain Management gennem regler i faldende rækkefølge efter rang og anvender den første relevante regel. I det aktuelle eksempel, når der oprettes en indkøbsordrelinje for konfiguration C1 og revision R2, får brugeren en advarsel om, at varen er på hold, og at dette er forårsaget af revisionsværdien. Hvis reglen for konfigurationen havde en højere rang end den til revision, ville oprettelsen af en indkøbsordrelinje for konfiguration C1 og revision R2 have lykkedes, og ingen meddelelse "vare på hold" ville være givet til brugeren. 
+Dette eksempel forklarer behovet for rang. Hvis rangeringen ikke anvendes, når en indkøbsordre oprettes for konfigurationen C1 og versionen V2, vil de to regler, der er defineret for V2 og C1, være tvetydige. For at løse tvetydigheden, søger Supply Chain Management gennem regler i faldende rækkefølge efter rang og anvender den første relevante regel. I det aktuelle eksempel, hvor der oprettes en indkøbsordrelinje for konfigurationen C1 og versionen V2, modtager brugeren en advarsel om, at varen er på hold, og at dette skyldes versionsværdien. Hvis reglen for konfigurationen havde en højere rangering end reglen for versionen, oprettes der af en korrekt indkøbsordrelinje for konfigurationen C1 og versionen V2, og brugeren vil modtage en meddelelse om "vare på hold". 
 
 Se på følgende standardregler for ordreindstilling.
 
-| Ranger | Sted | Variantkonfiguration | Skabelon | Standardsted | Standardlagersted | Køb - Tilsidesæt standardlagringsdimensioner | Lagersted for indkøb |
+| Ranger | Lokation | Variantkonfiguration | Version | Standardsted | Standardlagersted | Køb - Tilsidesæt standardlagringsdimensioner | Lagersted for indkøb |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Ja                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systemet kører gennem regelsættet to gange for at fastslå lokation og lagersted. Når der oprettes en indkøbsordrelinje for konfiguration C1, typografi R2, bestemmes lokationen baseret på reglen med rang 10. Derefter søger systemet efter en regel for lokation 2 for at bestemme et lagersted. Reglen 20 er fundet, og fordi den har en højere rang, bliver lagerstedet på købsordrelinjen 22, og ikke 21.
+Systemet kører gennem regelsættet to gange for at fastslå lokation og lagersted. Når der oprettes en indkøbsordrelinje for konfigurationen C1, versionen V2, bestemmes lokationen baseret på den regel, der har en rangering på 10. Systemet søger derefter efter en regel for lokation 2 for at bestemme et lagersted. Reglen 20 er fundet, og fordi den har en højere rangering, vil lagerstedet på indkøbsordrelinjen være 22 og ikke 21.
 
 Som en generel retningslinje får specifikke regler og regler for dimensioner, der er vigtigere end andre dimensioner, højere rang, mens mere generiske regler får lavere rang. 
 
@@ -159,14 +168,14 @@ Antallet af regler, der er oprettet for et frigivet produkt, kan være mange. Fo
 
 Hvis regelsystemet for standardordreindstillinger er for tungt, er der mulighed for at definere standardordreindstillingerne for hver produktvariant. Følgende eksempel viser, hvordan det ser ud til produktet og de tilfælde, der er beskrevet ovenfor.
 
-| Ranger | Sted | Variantkonfiguration | Skabelon | Køb - Tilsidesæt standardindstillinger | Leveringstid for indkøb | Køb - Standset | Salg - Tilsidesæt standardindstillinger | Salg - Standset |
+| Ranger | Lokation | Variantkonfiguration | Version | Køb - Tilsidesæt standardindstillinger | Leveringstid for indkøb | Køb - Standset | Salg - Tilsidesæt standardindstillinger | Salg - Standset |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Ja                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
-| 10   |      | C2            | R1    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
-| 10   |      | C1            | R3    | Ja                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
-| 10   |      | C1            | R1    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
+| 10   |      | C2            | V3    | Ja                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
+| 10   |      | C2            | V1    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
+| 10   |      | C1            | V3    | Ja                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
+| 10   |      | C1            | V1    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Rang har i dette tilfælde ingen virkelig betydning, så du kan vælge at skjule den. Denne løsning giver potentielt et vedligeholdelsesproblem. Dog kan du overveje at bruge denne opsætning, hvis du skal integrere med Product Lifecycle Management-systemer (PLM).

@@ -3,7 +3,7 @@ title: Aktivere personlige produktanbefalinger
 description: Dette emne beskriver, hvordan du stiller personligt tilpassede produktanbefalinger til rådighed for kunder i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e49b4db17ffd792e8dd536a1671773253c74d71
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404134"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700860"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivere personlige anbefalinger
 
@@ -49,11 +49,13 @@ Yderligere oplysninger om produktanbefalinger finder du under [Oversigt over pro
 
 Udfør følgende trin for at aktivere personlig tilpasning.
 
-1. Gå til **Retail og Commerce \> Produktanbefalinger \> Anbefalingsparametre**.
-1. Vælg **Anbefalingslister** på listen over delte Retail-parametre.
-1. Angiv indstillingen **Aktivér tilpasning** til **Ja**.
+1. Søg efter **Funktionsstyring** i Commerce Headquarters.
+1. Vælg **Alle** for at få vist en liste over tilgængelige funktioner. 
+1. Skriv **Anbefalinger** i søgefeltet.
+1. Vælg funktionen **Tilpassede produktanbefalinger**.
+1. Vælg **Aktivér nu** i ruden med egenskaber for **Tilpassede produktanbefalinger**.
 
-![Aktivere tilpasning](./media/enablepersonalization.png)
+![Aktivere tilpasning](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Når du aktiverer personlig tilpasning, startes processen til generering af lister over tilpassede produktanbefalinger. Der kan gå op til en dag, før disse lister er tilgængelige og synlige online og på POS.
@@ -113,6 +115,8 @@ Hvis du vil anvende tilpasning på en eksisterende anbefalingsliste i Commerce-w
 [Aktivér Azure Data Lake Storage i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
 [Aktivér produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere anbefalinger af "Køb tilsvarende"](shop-similar-looks.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
 

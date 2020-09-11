@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154080"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686808"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Tilføje scriptkode til sider på websteder for at understøtte telemetri
 
@@ -32,7 +32,7 @@ I dette emne beskrives det, hvordan du føjer klientside-scriptkode til siderne 
 
 ## <a name="overview"></a>Oversigt
 
-Web Analytics er et vigtigt værktøj, når du vil forstå, hvordan dine kunder interagerer med dit websted og træffe beslutninger, der kan hjælpe med at optimere oplevelsen i forbindelse med maksimal konvertering. Der findes mange tilgængelige webanalysepakker, som kan hjælpe dig med at nå disse mål, f. eks. Google Analytics, Clicky, Moz Analytics og KISSMetrics. De fleste webanalysepakker kræver, at du tilføjer klientside-scriptkode i elementet **\<head\>** i HTML-koden for alle siderne på dit websted.
+Web Analytics er et vigtigt værktøj, når du vil forstå, hvordan dine kunder interagerer med dit websted og træffe beslutninger, der kan hjælpe med at optimere oplevelsen i forbindelse med maksimal konvertering. Der findes mange tilgængelige webanalysepakker, som kan hjælpe dig med at nå disse mål, f. eks. Google Analytics, Clicky, Moz Analytics og KISSMetrics. De fleste webanalysepakker kræver, at du tilføjer scriptkode på klientsiden i **\<head\>**-elementet i HTML-koden for alle siderne på dit websted.
 
 > [!NOTE]
 > Instruktionerne i dette emne gælder også for andre brugerdefinerede funktioner på klientsiden, som Microsoft Dynamics 365 Commerce ikke tilbyder som oprindelige funktioner.
@@ -45,9 +45,9 @@ Et sidefragment giver dig mulighed for at genbruge indbygget eller ekstern scrip
 
 Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den indbyggede scriptkode i webstedsgeneratoren.
 
-1. Gå til **Sidefragmenter**, og vælg derefter **Ny**.
+1. Gå til **Fragmenter**, og vælg derefter **Ny**.
 1. Vælg **Indbygget script** i dialogboksen **Nyt sidefragment**.
-1. Angiv et navn til fragmentet under **Sidefragmentsnavn**, og vælg derefter **OK**.
+1. Angiv et navn til fragmentet under **Sidefragmentnavn**, og vælg derefter **OK**.
 1. Vælg modulet **Indbygget standardscript** under det sidefragment, du har oprettet.
 1. Angiv dit klientsidescript under **Indbygget script** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
 1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
@@ -57,9 +57,9 @@ Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den
 
 Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den eksterne scriptkode i webstedsgeneratoren.
 
-1. Gå til **Sidefragmenter**, og vælg derefter **Ny**.
+1. Gå til **Fragmenter**, og vælg derefter **Ny**.
 1. Vælg **Eksternt script** i dialogboksen **Nyt sidefragment**.
-1. Angiv et navn til fragmentet under **Sidefragmentsnavn**, og vælg derefter **OK**.
+1. Angiv et navn til fragmentet under **Sidefragmentnavn**, og vælg derefter **OK**.
 1. Vælg modulet **Eksternt standardscript** under det sidefragment, du har oprettet.
 1. Tilføj en ekstern eller relativ URL-adresse til den eksterne scriptkilde under **Scriptkilde** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
 1. Vælg **Gem**, og vælg derefter **Afslut redigering**.

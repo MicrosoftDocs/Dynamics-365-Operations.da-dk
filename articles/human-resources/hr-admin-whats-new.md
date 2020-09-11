@@ -3,7 +3,7 @@ title: Nyheder eller ændringer i Human Resources
 description: Hver uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Artiklerne, som findes her, beskriver de ændringer, der er sket hver uge.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/22/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0fc9d521d40f47821d6134ebef4dc041df3059f
-ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
+ms.openlocfilehash: 34e80ace6a0676e5702f633554a5f241cc8b00a7
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3614306"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712161"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheder eller ændringer i Human Resources
 
@@ -41,6 +41,8 @@ Du kan få yderligere oplysninger om kommende funktioner eller opdateringsproces
 
 Du kan få oplysninger om, hvad der er nyt eller ændret i hver 2-ugers udgave af Human Resources, i følgende artikler:
 
+[20. august 2020](hr-whats-new-2020-08-20.md)</br>
+[6. august 2020](hr-whats-new-2020-08-06.md)</br>
 [23. juli 2020](hr-whats-new-2020-07-23.md)</br>
 [8. juli 2020](hr-whats-new-2020-07-08.md)</br>
 [23. juni 2020](hr-whats-new-2020-06-23.md)</br>

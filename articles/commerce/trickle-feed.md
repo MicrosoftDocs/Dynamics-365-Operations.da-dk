@@ -1,9 +1,9 @@
 ---
-title: Foretag sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
+title: Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
 description: I dette emne beskrives den sivende feedbaserede ordreoprettelse til butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 06/08/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,20 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057140"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710277"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik (offentlig prøveversion)
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
 
 [!include [banner](includes/banner.md)]
 
 I Dynamics 365 Retail version 10.0.4 og tidligere er opgørelsesbogføring en handling ved afslutningen af dagen, og alle transaktioner bogføres i bøgerne sidst på dagen. Store transaktioner skal derefter behandles i et begrænset tidsvindue, og det kan nogle gange resultere i belastning og låsning og fejl ved bogføring af opgørelse. Detailhandlere kan heller ikke genkende indtægter og betalinger i deres bøger i løbet af dagen.
 
-Med den offentlige prøveversion af sivende feedbaseret ordreoprettelse der blev introduceret i Retail version 10.0.5, behandles transaktionerne i løbet af dagen, og det er kun den økonomiske afstemning af betalingsmidler og andre kassestyringstransaktioner, der behandles ved afslutningen af dagen. Denne funktion opdeler belastningen fra oprettelsen af salgsordrer, fakturaer og betalinger over hele dagen, hvilket giver en bedre formodet performance og muligheden for at genkende indtægter og betalinger i bøgerne i næsten realtid. 
+Med den sivende feedbaseret ordreoprettelse der blev introduceret i Retail version 10.0.5, behandles transaktionerne i løbet af dagen, og det er kun den økonomiske afstemning af betalingsmidler og andre kassestyringstransaktioner, der behandles ved afslutningen af dagen. Denne funktion opdeler belastningen fra oprettelsen af salgsordrer, fakturaer og betalinger over hele dagen, hvilket giver en bedre formodet performance og muligheden for at genkende indtægter og betalinger i bøgerne i næsten realtid. 
 
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>Sådan bruges sivende feedbaseret bogføring

@@ -5,7 +5,7 @@ author: rubendel
 manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
-ms.prod: tonyafehr
+ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4035817fb534477eb4146ff712a92d6e29ce2db2
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416600"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719208"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerede betalingsterminaler og anmodninger om printer og kasseskuffe
 
@@ -78,8 +78,8 @@ Udfør følgende trin for at konfigurere den hardwareprofil, der er tildelt kass
 
     | Enhed | Type | Enhedens navn | Flere oplysninger |
     |---|---|---|---|
-    | Printer | Reserve | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. **Id'et for kvitteringsprofilen** skal være det samme som det **Kvitteringsprofil-id**, som er knyttet til den netværksprinter, der er konfigureret i den hardwareprofil, der er tildelt hardwarestationen på kanalniveau. |
-    | Pengeskuffe | Reserve | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. Angiv indstillingen **Brug af delt skift** til **Ja**. |
+    | Printer | Reserve | *Alle* | Der skelnes mellem store og små bogstaver i enhedsnavnet. **Id'et for kvitteringsprofilen** skal være det samme som det **Kvitteringsprofil-id**, som er knyttet til den netværksprinter, der er konfigureret i den hardwareprofil, der er tildelt hardwarestationen på kanalniveau. |
+    | Pengeskuffe | Reserve | *Alle* | Der skelnes mellem store og små bogstaver i enhedsnavnet. Angiv indstillingen **Brug af delt skift** til **Ja**. |
     | Autorisationskodetjeneste | Adyen | Ikke relevant | Du kan finde oplysninger om, hvordan du konfigurerer out-of-box Adyen-betalingsconnectoren i [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andre betalingsconnectorer kan understøttes via [Commerce Software Development Kit (SDK) til betalinger](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | Pinkodetastatur | Netværk | **MicrosoftAdyenDeviceV001** | Ingen. |
 
@@ -103,7 +103,7 @@ Hvis du vil konfigurere den hardwareprofil, der bruges til at gruppere netværks
     | Enhed | Type | Beskrivende tekst | Flere oplysninger |
     |---|---|---|---|
     | Printer | Netværk | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. **Id'et for kvitteringsprofilen** skal være det samme som det **Kvitteringsprofil-id**, der er knyttet til den printer, der er konfigureret i den hardwareprofil, der er tildelt kasseapparatet. |
-    | Pengeskuffe | Reserve | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. angiv indstillingen **Brug af delt skift** til **Ja**. |
+    | Pengeskuffe | Netværk | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. angiv indstillingen **Brug af delt skift** til **Ja**. |
 
 5. Vælg **Gem**.
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208451"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699530"
 ---
 # <a name="hazardous-materials"></a>Farlige materialer
 
@@ -35,7 +35,7 @@ Oplysninger om farligt materiale konfigureres i Administration af produktoplysni
 Når du sender materialer, der klassificeres som farligt gods, kræves der flere papirer, der skal følge forsendelserne. Funktionen til farlige materialer giver kunder mulighed for at lagre klassifikationsoplysninger og knytte dem til frigivelse af varer. Disse oplysninger kan derefter bruges til at udarbejde forsendelsesdokumentation.
 
 > [!IMPORTANT]
-> Som en hjælp til at administrere forsendelser af farligt gods kan du med Microsoft Dynamics 365 Supply Chain Management konfigurere yderligere referenceoplysninger, der er relateret til produkter. Du kan også oprette flere forsendelsesdokumenter. Systemet er dog ikke automatisk kompatibelt med regler og bestemmelser i dit land eller område. Det er i stedet et værktøj, der kan hjælpe det overordnede program.
+> Funktionerne for farlige materialer i Microsoft Dynamics 365 Supply Chain Management giver en samling nyttige produktoplysningsfelter og tilhørende funktioner, der kan hjælpe dig med at registrere og henvise til oplysninger, der er relateret til de farlige produkter. Disse funktioner kan også være en hjælp til at designe og udskrive forsendelsesdokumenter, der indeholder nogle af de samme oplysninger om alle former for farligt materiale, som du skal levere. Systemet er dog ikke automatisk kompatibelt med alle gældende regler og bestemmelser i dit land eller område. Selvom disse værktøjer er beregnet til at hjælpe dig med at overholde de fælles regler, er de hverken tilstrækkelige i sig selv eller garanteret for at være det. Din organisation er ansvarlig for at være opmærksom på alle gældende regler og skal træffe alle nødvendige foranstaltninger for at overholde dem.
 
 Før du kan bruge denne funktion, kræves følgende opsætning:
 

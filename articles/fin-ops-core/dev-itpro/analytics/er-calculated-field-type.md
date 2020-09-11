@@ -3,7 +3,7 @@ title: Understøtte parameteriserede kald af ER-datakilder for typen Beregnet fe
 description: Dette emne indeholder oplysninger om, hvordan du bruger typen Beregnet felt til ER-datakilder.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771323"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665604"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 
@@ -39,20 +39,20 @@ Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-- Adgang til RCS (Regulatory Configuration Service), der er klargjort til den samme lejer som Finance and Operations for en af følgende roller:
+- Adgang til RCS (Regulatory Configuration Services), der er klargjort til den samme lejer som Finance and Operations for en af følgende roller:
 
     - Udvikler til elektronisk rapportering
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-Fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) skal du hente den ZIP-komprimerede fil **Understøt parameteriserede kald af ER-datakilder for typen Beregnet felt**. Den indeholder følgende ER-konfigurationer, der skal udtrækkes og gemmes lokalt.
+Du skal også hente og lokalt gemme følgende filer.
 
 | **Indhold**                           | **Filnavn**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Eksempler på ER-datamodelkonfiguration    | Model til at lære parameteriserede calls.version.1.xml     |
-| Eksempler på ER-metadatakonfiguration      | Metadata til at lære parameteriserede calls.version.1.xml  |
-| Eksempler på ER-modeltilknytningskonfiguration | Tilknytning for at lære parameteriserede calls.version.1.1.xml |
-| Eksempler på ER-formatkonfiguration        | Format til at lære parameteriserede calls.version.1.1.xml  |
+| Eksempler på ER-datamodelkonfiguration    | [Model til at lære parameteriserede calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Eksempler på ER-metadatakonfiguration      | [Metadata til at lære parameteriserede calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Eksempler på ER-modeltilknytningskonfiguration | [Tilknytning for at lære parameteriserede calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Eksempler på ER-formatkonfiguration        | [Format til at lære parameteriserede calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Log på din RCS-forekomst
 I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware Inc. Først skal du i RCS fuldføre disse trin i proceduren [Opret konfigurationsudbydere, og markér dem som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):

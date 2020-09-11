@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570188"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665836"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Beregning af moms på finanskladdelinjer
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ I følgende diagram vises reglen grafisk.
 
 Hvis et bilag har en kladdelinje, hvor kontotypen er **Kreditor**, anvender alle kladdelinjerne i bilaget samme momsretning. Følgende punkter viser de mulige momsretninger for kreditorkonti. 
 
-• Hvis momskoden er momsfrit, er momsretningen Momsfrit køb.
-
-• Hvis momskoden er ekstern moms, er momsretningen Indgående moms.
-
-• Hvis momskoden er modtagermoms, er momsretningen Indgående moms.
-
-
-Ellers bruges momsretningen Udgående moms.
-
-I følgende diagram vises reglen grafisk.
-
-![Muligheder for momsretning for kreditorkonti](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Kontotype er Debitor
-
-Hvis et bilag har en kladdelinje, hvor kontotypen er **Debitor**, anvender alle kladdelinjerne i bilaget samme momsretning. Følgende punkter viser de mulige momsretninger for debitorkonti.
-
 • Hvis momskoden er importmoms, er momsretningen Importmoms.
 
 • Hvis momskoden er momsfrit, er momsretningen Momsfrit køb.
@@ -90,6 +73,22 @@ Hvis et bilag har en kladdelinje, hvor kontotypen er **Debitor**, anvender alle 
 • Hvis momskoden er modtagermoms, er momsretningen Udgående moms.
 
 Ellers bruges momsretningen Indgående moms.
+
+I følgende diagram vises reglen grafisk.
+
+![Muligheder for momsretning for kreditorkonti](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Kontotype er Debitor
+
+Hvis et bilag har en kladdelinje, hvor kontotypen er **Debitor**, anvender alle kladdelinjerne i bilaget samme momsretning. Følgende punkter viser de mulige momsretninger for debitorkonti.
+
+• Hvis momskoden er momsfrit, er momsretningen Momsfrit køb.
+
+• Hvis momskoden er ekstern moms, er momsretningen Indgående moms.
+
+• Hvis momskoden er modtagermoms, er momsretningen Indgående moms.
+
+Ellers bruges momsretningen Udgående moms.
 
 I følgende diagram vises reglen grafisk.
 

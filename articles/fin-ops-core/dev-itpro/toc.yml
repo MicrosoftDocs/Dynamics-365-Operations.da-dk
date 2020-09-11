@@ -130,6 +130,8 @@
                       items:
                         - name: Startside for dobbeltskrivning
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Nyheder eller ændringer i dobbeltskrivning
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Oversigt over dobbeltskrivning
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Konfiguration af dobbeltskrivning
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Oprette en sikkerhedspolitik
                   href: sysadmin/create-simple-security-policy.md
+            - name: Være i overensstemmelse med krav til brugerlicens
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Procesautomatisering
               href: sysadmin/process-automation.md
             - name: Batchbehandling

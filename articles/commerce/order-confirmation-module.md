@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464924"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661166"
 ---
 # <a name="order-details-module"></a>Modulet Ordredetaljer
-
 
 [!include [banner](includes/banner.md)]
 
@@ -72,16 +71,16 @@ Hvis du vil føje et ordredetaljemodul til en ny side og angive de påkrævede e
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
-
-[Container-modul](add-container-module.md)
-
-[Købefeltmodul](add-buy-box.md)
-
 [Indkøbskurvsmodul](add-cart-module.md)
+
+[Ikonmodul for indkøbskurv](cart-icon-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 
-[Sidehovedmodul](author-header-module.md)
+[Betalingsmodul](payment-module.md)
 
-[Sidefodsmodul](author-footer-module.md)
+[Leveringsadressemodul](ship-address-module.md)
+
+[Leveringsindstillingsmodul](delivery-options-module.md)
+
+[Gavekortsmodul](add-giftcard.md)
