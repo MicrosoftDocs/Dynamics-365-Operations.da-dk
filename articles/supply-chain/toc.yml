@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheder eller ændringer i Supply Chain Management
                   items:
-                    - name: Nyheder eller ændringer i Supply Chain Management-startsiden
+                    - name: Nyheder eller ændringer på Supply Chain Management-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (november 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (oktober 2020)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (august 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (juli 2020)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Vedligeholdelsestjeklister
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Vedligeholdelsesnedetid
+                - name: Vedligeholdelsesnedetid for arbejdsordrer
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: Tilføje fejl til arbejdsordre
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -341,7 +341,7 @@
                   href: asset-management/work-orders/work-order-report.md
                 - name: Arbejdsordrepuljer
                   href: asset-management/work-orders/work-order-pools.md
-                - name: Aktive vedligeholdelsesjob for arbejdsordre
+                - name: Aktive vedligeholdelsesjob i arbejdsordrer
                   href: asset-management/work-orders/active-work-order-jobs-overview.md
                 - name: Arbejdsordrer og anlægsaktiver
                   href: asset-management/work-orders/work-orders-and-fixed-assets.md
@@ -365,15 +365,15 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
                 - name: Omkostning til vedligeholdelsestidsplan
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
-                - name: Oprette arbejdsordrer
+                - name: Opret arbejdsordrer
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Vedligeholdelsesnedetid
+                - name: Aktiviteter for vedligeholdelsesnedetid
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Kapacitetsplanlægning
               items:
-                - name: Beregne kapacitetsbelastning
+                - name: Beregn kapacitetsbelastning
                   href: asset-management/capacity-planning/calculate-capacity-load.md
-                - name: Beregne varebudget
+                - name: Beregn varebudget
                   href: asset-management/capacity-planning/calculate-item-forecast.md
             - name: Planlægning af arbejdsordrer
               items:
@@ -675,7 +675,7 @@
                   items:
                     - name: Oversigt over udskrivning af dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning
+                    - name: Installere agenten for ruteplanlægning af dokumenter for at aktivere netværksudskrivning
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,8 +1345,6 @@
               items:
                 - name: Oversigt over planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Planlægning med negative disponible lagerantal
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Kom i gang med planlægningsoptimering
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analyse af tilpasning af planlægningsoptimering
@@ -1355,21 +1353,27 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Varedisponering med samhandelsaftaler vedrørende indkøb
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Få vist planhistorik og planlægningslogfiler
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Sikkerhedsmargener
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Godkend ordreforslag
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatisk autorisation med planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Planlægning med negative disponible lagerantal
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Få vist planhistorik og planlægningslogfiler
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Annullere et planlægningsjob
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Fejlfinde i planlægningsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Udvidelse til planlægningsoptimering
                   href: master-planning/planning-optimization/extensibility.md
-                - name: Fejlfinde i Planlægningsoptimering
-                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Behovsplaner
               items:
                 - name: Oversigt over behovsplaner
                   href: master-planning/master-plans.md
-                - name: Konkfigurere behovsplaner
+                - name: Definer behovsplaner
                   href: master-planning/master-planning-setup.md
                 - name: Guiden Opsætning af varedisponering
                   href: master-planning/master-planning-setup-wizard.md
@@ -2515,7 +2519,7 @@
                           href: service-management/reverse-changes-in-a-dispatch-board.md
                         - name: Få vist ikke-planlagte serviceordrer
                           href: service-management/view-undispatched-service-orders.md
-                        - name: 'Redigere en servicestykliste '
+                        - name: Redigere en servicestykliste
                           href: service-management/modify-service-bom.md
                     - name: Levere service
                       items:
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Konfigurere klyngepluk
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Klyngeplacering fuld
+                      href: warehousing/cluster-position-full.md
                     - name: Systembaseret klyngepluk
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Konfigurere containerisering
@@ -2725,7 +2731,7 @@
                       href: inventory/inventory-blocking.md
                     - name: Cyklusoptælling
                       href: warehousing/cycle-counting.md
-                    - name: 'Definere cyklusoptælling '
+                    - name: Definere cyklusoptælling
                       href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
                     - name: Delvis cyklusoptælling for lokation
                       href: warehousing/partial-location-cycle-counting.md
