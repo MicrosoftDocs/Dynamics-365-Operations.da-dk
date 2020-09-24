@@ -3,7 +3,7 @@ title: Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbu
 description: I dette emne beskrives den sivende feedbaserede ordreoprettelse til butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710277"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766730"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
 
@@ -36,22 +36,20 @@ Med den sivende feedbaseret ordreoprettelse der blev introduceret i Retail versi
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>Sådan bruges sivende feedbaseret bogføring
   
-1. Hvis du vil aktivere sivende feedbaseret bogføring af detailtransaktioner, skal du gå til **System administration > Konfiguration > Licenskonfiguration** og deaktivere nøglen **Opgørelser**.
+1. Hvis du vil aktivere sivende feedbaseret bogføring af detailtransaktioner, skal du aktivere funktionen **Detailopgørelser – Sivende feed** ved hjælp af Funktionsstyring.
 
-2. På samme side skal du aktivere licensnøglen **Opgørelser (sivende feed) – prøveversion**. Når du aktiverer denne nøgle, skal du sikre dig, at der ikke er nogen opgørelser, der venter på at blive bogført. 
+    > [!IMPORTANT]
+    > Før du aktiverer funktionen, skal du sikre dig, at der ikke er nogen opgørelser, der venter på at blive bogført.
 
-    > [!Important]
-    > Før du aktiverer licensnøglen **Opgørelser (sivende feed) – prøveversion**, skal du sørge for, at der ikke er opgørelser, der venter på at blive bogført.
-
-3. Det aktuelle opgørelsesdokument opdeles i to forskellige typer. Transaktionsopgørelse og regnskabsopgørelse.
+2. Det aktuelle opgørelsesdokument opdeles i to forskellige typer: transaktionsopgørelse og regnskabsopgørelse.
 
       - Transaktionsopgørelsen samler alle ikke-bogførte og validerede transaktioner og opretter salgsordrer, salgsfakturaer, betalings-og rabatkladder og indtægts-/udgiftstransaktioner med den hyppighed, der har konfigureret. Du skal konfigurere denne proces til at køre med en høj frekvens, så dokumenter oprettes, når transaktionerne overføres til Headquarters via P-jobbet. Da transaktionsopgørelsen allerede opretter salgsordrer og salgsfakturaer, er det egentlig ikke nødvendigt at konfigurere batchjobbet **Bogfør lager**. Du kan dog stadig bruge det til at imødekomme bestemte virksomhedskrav, som du måtte have.  
       
      - Regnskabet er beregnet til at blive udarbejdet ved dagens afslutning og understøtter kun afslutningsmetoden **Skift**. Denne opgørelse vil være begrænset til økonomisk afstemning og vil kun oprette kladder til differencebeløb mellem optalt beløb og posteringsbeløb for de forskellige betalingsmidler, samt kladder til andre kassestyringstransaktioner.   
 
-4. Hvis du vil beregne transaktionsopgørelsen, skal du klikke på **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn transaktionsopgørelser i batch**. Hvis du vil bogføre transaktionsopgørelserne i batch, skal du klikke på **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør transaktionsopgørelser i batch**.
+3. Hvis du vil beregne transaktionsopgørelsen, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn transaktionsopgørelser i batch**. Hvis du vil bogføre transaktionsopgørelserne i batch, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør transaktionsopgørelser i batch**.
 
-5. Hvis du vil beregne regnskabet, skal du klikke på **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn regnskaber i batch**. Hvis du vil bogføre regnskabet i batch, skal du klikke på **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør regnskaber i batch**.
+4. Hvis du vil beregne regnskabet, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn regnskaber i batch**. Hvis du vil bogføre regnskabet i batch, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør regnskaber i batch**.
 
 > [!NOTE]
 > Menupunkterne **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn opgørelser i batch** og **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør opgørelser i batch** fjernes med den nye funktion.

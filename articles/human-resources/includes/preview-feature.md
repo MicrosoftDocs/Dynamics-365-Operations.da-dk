@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Funktionaliteten, der er angivet i denne artikel, er tilgængelig som en offentlig prøveversion i et vilkårligt sandkasse- eller forsøgsmiljø. Den er ikke tilgængelig i produktionsmiljøer. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversionsfunktioner i [Administrere funktioner](../hr-admin-manage-features.md).
+> En del af eller hele denne funktionalitet er tilgængelig som en offentlig prøveversion i ethvert sandkasse- eller forsøgsmiljø. Den er ikke tilgængelig i produktionsmiljøer. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversionsfunktioner i [Administrere funktioner](../hr-admin-manage-features.md).
