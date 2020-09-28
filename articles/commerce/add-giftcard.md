@@ -3,7 +3,7 @@ title: Gavekortmodul
 description: I dette emne dækkes gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,24 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 4cc947b9d6f3cfa51bce2155170c49e9529d0f7d
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661236"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761075"
 ---
 # <a name="gift-card-module"></a>Gavekortmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I dette emne dækkes gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Overblik
 
-Gavekort er en almindelig form for betaling, og gavekortmodulet kan bruges i modulet til betaling ved kassen til at acceptere gavekort. Gavekortmodulet understøtter Dynamics 365-, SVS- og Givex-gavekort. SVS- og Givex-gavekort indløses via betalingsudbyderen Adyen.
+Gavekortmoduler kan bruges i betalingsmoduler til at acceptere gavekort og er en almindelig betalingsform i e-handelstransaktioner. Gavekortmodulet understøtter Dynamics 365-, SVS- og Givex-gavekort. SVS- og Givex-gavekort indløses via betalingsudbyderen Adyen. Du kan se flere oplysninger om understøttelse af eksterne gavekort som f.eks. SVS og Givex i emnet [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md).
 
-Du kan flere oplysninger om understøttelse af eksterne gavekort som f.eks. SVS og Givex, i [Support for eksterne gavekort](./dev-itpro/gift-card.md)
+Der er to tilgængelige gavekortmoduler:
+
+- **Gavekort** - Dette modul kan bruges på en betalingsside til at indløse et gavekort som betalingsmiddel. 
+- **Saldokontrol af gavekort** – Dette modul kan bruges på en hvilken som helst side til at kontrollere saldoen på et gavekort. Dette modul er tilgængeligt i Commerce version 10.0.14 og nyere.
 
 Det følgende billede viser et eksempel på et gavekortmodul på en betalingsside.
 

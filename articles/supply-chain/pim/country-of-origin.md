@@ -15,18 +15,26 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: fd234c57bf9893e9b8bcfa5ada7439a642f7a288
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: d0d93a02817bab8e188818862c1bb7f84b498fc1
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596214"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802791"
 ---
 # <a name="country-of-origin"></a>Oprindelsesland
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Mange organisationer udsteder certifikater til deres leverandører for at sikre, at produkterne opfylder bestemte certificeringsstandarder. Disse certifikater afhænger ofte af oprindelseslandet. Oprindelseslandet giver dig mulighed for at sammenkæde et produkt med dets oprindelsesland og holde styr på dets produktcertificeringer.
+
+## <a name="turn-on-the-country-of-origin-feature"></a>Aktivere funktionen for oprindelsesland
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Administration af produktoplysninger*
+- **Funktionsnavn:** *Administrationsfunktion for oprindelsesland*
 
 ## <a name="configure-source-and-destination-countries"></a>Konfigurere kilde- og destinationslande
 
@@ -34,13 +42,13 @@ Før du udsteder et certifikat for et produkt, skal du knytte produktet til dest
 
 1. Gå til **Administration af produktoplysninger \> Konfiguration \> Produktoverholdelse \> Oprindelsesland \> Regler for oprindelsesland**.
 2. Vælg en eksisterende landeopsætning, du vil redigere, eller vælg **Ny** i handlingsruden for at oprette en ny landeopsætning.
-3. Angiv følgende værdier for det valgte eller nye land.
+3. Angiv følgende værdier for det valgte eller nye land/område.
 
     | Felt | Beskrivende tekst |
     |---|---|
     | varenummer | Vælg varenummeret for produktet. |
-    | Destinationsland | Vælg det land, du sender produktet til. |
-    | Oprindelsesland | Vælg det land, du sender produktet fra. |
+    | Destinationsland | Vælg det land/område, du sender produktet til. |
+    | Oprindelsesland | Vælg det land/område, du sender produktet fra. |
 
 Formålet med denne konfiguration er at hjælpe dig med at generere en styklisterapport, hvor du kan medtage oprindelsesland for hver del, som kilde- og destinationslandene er angivet for. Denne rapport kan hjælpe dig med at få et holistisk billede af, hvor dine dele kommer fra, og hvor de befinder sig.
 
@@ -64,13 +72,13 @@ Benyt følgende fremgangsmåde for at konfigurere dine certifikatoplysninger.
     | Certifikatnummer | Angiv id-nummeret på det certifikat, du har udstedt. |
     | Gyldig fra | Vælg den første dato, hvor det aktuelle certifikat er gyldigt.|
     | Udløb | Vælg den sidste dato, hvor det aktuelle certifikat er gyldigt. |
-    | Udskriv på faktura | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de fakturaer, der er adresseret til det angivne land i det angivne datointerval. |
-    | Udskriv på følgeseddel | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på følgesedler, der er adresseret til det angivne land i det angivne datointerval. |
-    | Udskriv på salgsordre | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de salgsordrer, der er adresseret til det angivne land i det angivne datointerval. |
+    | Udskriv på faktura | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de fakturaer, der er adresseret til det angivne land/område i det angivne datointerval. |
+    | Udskriv på følgeseddel | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på følgesedler, der er adresseret til det angivne land/område i det angivne datointerval. |
+    | Udskriv på salgsordre | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de salgsordrer, der er adresseret til det angivne land/område i det angivne datointerval. |
 
 ## <a name="include-the-country-of-origin-on-bom-reports"></a>Medtag oprindelseslandet på styklisterapporter
 
-Når du genererer en styklisterapport, kan du medtage oprindelseslandet for hver del, som du har angivet kilde- og destinations lande for, på siden **Regler for oprindelsesland**.
+Når du genererer en styklisterapport, kan du medtage oprindelseslandet for hver del, som du har angivet kilde- og destinationslande for, på siden **Regler for oprindelsesland**.
 
 1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
 1. Vælg eller opret et produkt for at åbne dets side for **Frigivne produktdetaljer**.

@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 77598717129742f291fae4df8f09953027ce0c60
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699598"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803183"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Farlige materialer i produkter, ordrer, forsendelser og laster
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan du angiver egenskaber for farligt materiale for frigivne produkter, hvordan du kan lægge lagergrænser på farlige varer, og hvordan farligt materiale medtages i en salgsordre, forsendelse eller last.
 
@@ -46,7 +47,7 @@ Hvis du vil konfigurere et frigivet produkt som farligt materiale, skal du følg
 
 I følgende tabel beskrives de felter, der er tilgængelige øverst på siden **Varen er farligt gods**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | varenummer | Det frigivne produkt, du arbejder med. |
 | Forordningskode | Vælg den forordning for farligt materiale, der gælder for produktet. Forordningen definerer, hvordan den udskrevne forsendelsestekst oprettes for en vare og de tilhørende leveringsmåder. Når den er tildelt, kan koden ikke redigeres på denne side. Du kan dog tildele en ny forordningskode ved at vælge **Ny**. |
@@ -57,7 +58,7 @@ I følgende tabel beskrives de felter, der er tilgængelige øverst på siden **
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Beskrivelser**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Korrekt forsendelsesnavn | Angiv standardbeskrivelsen af materialet, som er specificeret i den gældende forordning. Du kan angive oversættelser af denne værdi i oversigtspanelet **Oversættelse af tekst til vareforsendelse** som beskrevet i næste afsnit. |
 | Teknisk navn | Vælg det almindelige eller generelle navn til materialet. Dette navn kan være et navn, som dit firma bruger internt for materialet. |
@@ -70,7 +71,7 @@ Oversigtspanelet **Oversættelse af tekst til vareforsendelse** indeholder et gi
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Oversættelse af tekst til vareforsendelse**.
 
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Sprog | Den sprogkode, som rækken bruger. F.eks. angiver **pt-br** brasiliansk portugisisk. |
 | Tekst til forsendelsesudskrift | Den oversatte værdi af **Korrekt forsendelsesnavn** på det sprog, som rækken bruger. |
@@ -84,14 +85,14 @@ Hvis du vil tilføje eller redigere en oversættelse, skal du vælge **Oversætt
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Materialestyring**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Klasse | Vælg den farlige materialeklasse, som produktet tilhører og er defineret i den forordning, du skal være i overensstemmelse med. Du skal knytte både en division og en klasse til hvert produkt, der indeholder farligt materiale. |
-| Betegnelse | Den beskrivelse, der er defineret for den klasse, der er valgt i feltet **Klasse**. Feltet er skrivebeskyttet. |
+| Beskrivelse | Den beskrivelse, der er defineret for den klasse, der er valgt i feltet **Klasse**. Feltet er skrivebeskyttet. |
 | Division | Vælg den farlige materialedivision, som produktet tilhører og er defineret i den forordning, du skal være i overensstemmelse med. Divisionen er et undersæt af klassen. Du skal knytte både en division og en klasse til hvert produkt, der indeholder farligt materiale. |
 | Identifikation | Vælg identifikationskoden for farligt materiale. Denne kode er typisk baseret på en FN-standard. |
 | Pakkegruppe | Vælg den pakkegruppe, der gælder for varen. |
-| Betegnelse | Den beskrivelse, der er defineret for den gruppe, der er valgt i feltet **Pakkegruppe**. Feltet er skrivebeskyttet. |
+| Beskrivelse | Den beskrivelse, der er defineret for den gruppe, der er valgt i feltet **Pakkegruppe**. Feltet er skrivebeskyttet. |
 | Pakkebeskrivelser | Vælg den relevante pakkebeskrivelseskode. Denne kode refererer til en beskrivelse, der angiver, hvordan produktet skal pakkes. |
 | Etiketter for farligt materiale | Vælg en kode, der refererer til den relevante etiket for farligt gods, som skal anvendes til produktet. |
 | Begrænset antal | Angiv denne indstilling til **Ja** for at rapportere den samlede produktvægt, der er medtaget i hver last og på hver lastlinje. |
@@ -130,7 +131,7 @@ Her er en nøgle til formlen:
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Transportoplysninger**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Transportkategori | Vælg den relaterede transportkategori. |
 | Tunnelkode | Vælg den relaterede tunnelbegrænsningskode for varen. |
@@ -145,7 +146,7 @@ I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet *
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Miljøoplysninger**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Miljøfarligt | Angiv denne indstilling til **Ja** for at angive, at produktet er miljøfarligt. Brug dette felt til dine egne rapporteringsformål. |
 | Forurenende marinestoffer | Angiv denne indstilling til **Ja** for at angive, at produktet giver havforurening. Brug dette felt til dine egne rapporteringsformål. |

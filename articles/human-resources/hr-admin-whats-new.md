@@ -1,9 +1,9 @@
 ---
 title: Nyheder eller ændringer i Human Resources
-description: Hver uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Artiklerne, som findes her, beskriver de ændringer, der er sket hver uge.
+description: Hver uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Emnerne, som findes her, beskriver de ændringer, der er foretaget hver uge.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34e80ace6a0676e5702f633554a5f241cc8b00a7
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f814395405003464e9f101fb0f46b64e64971b68
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712161"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760295"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheder eller ændringer i Human Resources
 
-Hver anden uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Artiklerne i dette afsnit beskriver de ændringer, der er sket hver udgave.
+Hver anden uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Emnerne, som findes her, beskriver de ændringer, der er foretaget for hver frigivelse.
 
-Du kan få yderligere oplysninger om kommende funktioner eller opdateringsprocessen for Human Resources i følgende artikler:
+>[!NOTE]
+>For at kunne tage højde for feriedage er frigivelsesplanen for november og december 2020 følgende.
+>
+>- Frigivelse i november: 2. november - 13. november
+>- Frigivelse i december: 30. november - 11. december
+> 
+>Den to-ugers frigivelsestakt vil fortsætte som sædvanligt den 11. januar 2021.
+
+Du kan få yderligere oplysninger om kommende funktioner eller opdateringsprocessen for Human Resources i følgende artikler: 
 
 - [Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
@@ -39,8 +47,9 @@ Du kan få yderligere oplysninger om kommende funktioner eller opdateringsproces
 
 ## <a name="human-resources-weekly-releases"></a>Ugentlige Human Resources-udgaver
 
-Du kan få oplysninger om, hvad der er nyt eller ændret i hver 2-ugers udgave af Human Resources, i følgende artikler:
+Du kan få oplysninger om, hvad der er nyt eller ændret i hver 2-ugers frigivelse af Human Resources, i følgende artikler:
 
+[3. september 2020](hr-whats-new-2020-09-03.md)</br>
 [20. august 2020](hr-whats-new-2020-08-20.md)</br>
 [6. august 2020](hr-whats-new-2020-08-06.md)</br>
 [23. juli 2020](hr-whats-new-2020-07-23.md)</br>

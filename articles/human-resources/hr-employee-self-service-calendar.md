@@ -3,7 +3,7 @@ title: Oprette en teamkalender
 description: Få vist og opret teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712202"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796463"
 ---
 # <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
@@ -43,13 +43,29 @@ Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fri
 
 ## <a name="view-a-company-calendar"></a>Få vist en firmakalender
 
-Personer, der er i HR-roller, kan få vist firmakalendere. I firmakalendere vises alle medarbejdere. Kalenderen viser som standard dags dato plus 28 dage, men du kan ændre datointervallet. Du kan også filtrere kalenderen efter **Navn**, **Personalenummer**og **Orlovstype.**
+Personer, der har HR-roller, kan få vist firmakalendere. I firmakalendere vises alle medarbejdere. Kalenderen viser som standard dags dato plus 28 dage, men du kan ændre datointervallet. Du kan også filtrere kalenderen efter **Navn**, **Personalenummer**og **Orlovstype.**
 
 1. Vælg **Links** i arbejdsområdet **Orlov og fravær**.
 
 2. Vælg **Orlovs- og fraværskalender**.
 
 Human Resources-roller kan også få adgang til firmakalenderen fra **Orlovs- og fraværsanmodninger**, **Godkendt fritid** og **Anmodninger om fridage**. 
+
+[!include [banner](includes/preview-feature.md)]
+
+Kalenderne indeholder nu yderligere filtre og indstillinger. Alle kalendere indeholder visningsindstillinger for:
+
+- Godkendte anmodninger
+- Ventende anmodninger
+- Medarbejdere med orlovsanmodninger
+- Medarbejdere uden orlovsanmodninger
+- Medarbejdernes fødselsdage
+- Anmodninger om fri 
+- Orlovsanmodninger
+
+Kalenderkonfiguration i orlovs- og fraværsparametre bestemmer tilgængelige visningsindstillinger.
+
+Du kan også filtrere kalendere efter leder eller afdeling. Den primære stillingstildeling bestemmer, hvilke medarbejdere der vises, når disse filtre angives. 
 
 Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

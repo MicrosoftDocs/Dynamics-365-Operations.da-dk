@@ -1,6 +1,6 @@
 ---
 title: Tastaturgenveje
-description: Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data.
+description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finance and Operations-apps.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811549"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761615"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
 [!include [banner](../includes/banner.md)]
 
-Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data.
+Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finance and Operations-apps.
 
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
@@ -236,6 +236,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flytte en række op/ned i opslaget                                                                                        | Pil op/pil ned            |
 | Flytte en side op/ned i opslaget                                                                                       | Page up/Page down              |
 | Flytte til toppen/bunden af opslaget                                                                                    | Home/End                       |
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)

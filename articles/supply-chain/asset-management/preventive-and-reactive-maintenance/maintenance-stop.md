@@ -1,6 +1,6 @@
 ---
-title: Vedligeholdelsesnedetid
-description: I dette emne beskrives vedligeholdelsesnedetid i Styring af aktiver.
+title: Vedligeholdelsesnedetidsaktiviteter
+description: Dette emne beskriver, hvordan vedligeholdelsesnedetid bruges til at få et overblik over den kapacitet, der kræves for at udføre vedligeholdelsesjob på bestemte aktiver i en bestemt periode.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383521"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802815"
 ---
-# <a name="maintenance-downtime"></a>Vedligeholdelsesnedetid
+# <a name="maintenance-downtime-activities"></a>Vedligeholdelsesnedetidsaktiviteter
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Vedligeholdelsesnedetid bruges til at få et overblik over den kapacitet, der kræves for at udføre vedligeholdelsesjob på bestemte aktiver i en bestemt periode. Du kan f.eks. oprette en registrering af vedligeholdelsesnedetid for produktionslinje 10 i produktionshal 29-A på produktionssted 02. Registrering af vedligeholdelsesnedetid har et start- og sluttidspunkt, der angiver den periode, hvor de aktiver, der er tilknyttet vedligeholdelsesstoppet, ikke er tilgængelige for produktionen.
 
@@ -79,7 +77,7 @@ I følgende illustration vises et eksempel på detaljevisningen af **Vedligehold
 
 ![Figur 3](media/21-preventive-maintenance.png)
 
-11. Når du har overblik over kapacitetsbelastningen, og du vil foretage reguleringer af vedligeholdelsesjob for arbejdsordrer eller linjer til vedligeholdelsestidsplaner, skal du vende tilbage til detaljevisningen **Aktiviteter med vedligeholdelsesnedetid** og vælge de linjer, du vil justere i oversigtspanelerne **Resulterende vedligeholdelsesjob for arbejdsordre** og **Vedligeholdelsestidsplanslinjer**.
+11. Når du har overblik over kapacitetsbelastningen, og du vil foretage reguleringer af vedligeholdelsesjob for arbejdsordrer eller linjer til vedligeholdelsestidsplaner, skal du vende tilbage til detaljevisningen **Aktiviteter med vedligeholdelsesnedetid** og vælge de linjer, du vil justere, i oversigtspanelerne **Resulterende vedligeholdelsesjob for arbejdsordre** og **Vedligeholdelsestidsplanslinjer**.
 
 12. Klik på knappen **Juster**, og opdater forventede start-/slutdatoer, serviceniveau eller ansvarlige vedligeholdelsesarbejdere for de valgte vedligeholdelsesjob for arbejdsordrer eller vedligeholdelsestidsplanslinjer.
 

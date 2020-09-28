@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostObjectList, CAMMobileCostObjectOverviewDetailsPreviousPeriod, CAMMobileCostObjectOverview, CAMMobileCostObjectOverviewDetailsYearToDate, CAMMobileCostControlWorkspaceConfiguration
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -17,12 +18,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 27381a408df64b8f11323b2f164d242bb2c4b6c5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22acdcfbecc1efe78a1b1be87e40b2e7d23506fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249695"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759442"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 
@@ -88,7 +89,7 @@ Hvis version 1611 med Platform update 3 eller nyere er implementeret for organis
 <tr class="header">
 <th>Forudsætning</th>
 <th>Rolle</th>
-<th>Betegnelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
@@ -115,7 +116,7 @@ Hvis version 1611 med Platform update 3 eller nyere er implementeret for organis
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
-Download og installer Finance and Operations-mobilappen:
+Sådan downloades og installeres Finance and Operations-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

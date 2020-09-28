@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMDimensionMember
+ms.search.form: CAMDimensionMember, CAMCostObject
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c15402993568c53eda8e03351fc2fccbcd82ab8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 879d4ce5710974d2838c646e0e184eab653f7293
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770821"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759394"
 ---
 # <a name="cost-object-dimensions"></a>Dimensioner for omkostningsobjekt
 
@@ -39,8 +39,8 @@ Omkostningsobjekter er kendt som *omkostningsobjektdimensioner*. Når du har bes
 
 [![Skærmbillede, der viser Bærer som omkostningsobjektdimension](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
 
-## <a name="import-cost-object-dimension-members-through-data-connectors"></a>Importere omkostningsobjekters dimensionsmedlemmer gennem dataforbindelser
-For at gøre import af omkostningsobjekters dimensionsmedlemmer nemmere kan du bruge dataforbindelser til at hente værdierne fra de enheder, du vil bruge som omkostningsobjektdimensioner. Du kan bruge de færdigbyggede dataforbindelser eller tilpassede dataforbindelser, du bygger.
+## <a name="import-cost-object-dimension-members-through-data-connectors"></a>Importere omkostningsobjekters dimensionsmedlemmer gennem dataconnectorer
+For at gøre import af omkostningsobjekters dimensionsmedlemmer nemmere kan du bruge dataconnectorer til at hente værdierne fra de enheder, du vil bruge som omkostningsobjektdimensioner. Du kan bruge de færdigbyggede dataforbindelser eller tilpassede dataconnectorer, du bygger.
 
 
 

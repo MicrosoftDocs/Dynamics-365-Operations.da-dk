@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208011"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803157"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter. 
 
@@ -42,8 +41,13 @@ For at forhindre, at din købsaftale bliver brugt og bekræftet, skal du markere
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Ansvarlige arbejdere for købsaftaler
 
-Du kan identificere en primær ansvarlig arbejder og sekundær ansvarlig arbejder i købsaftaleklassifikationen. Disse værdier nedarves af den resulterende købsaftale. Du er ikke forpligtet til at føje ansvarlige arbejdere til købsaftalen, og de kan ændres direkte for hver enkelt sag på selve købsaftalen. Du kan ikke angive en sekundær ansvarlig arbejder uden en primær ansvarlig arbejder, selvom du ikke behøver at have en sekundær ansvarlig arbejder. Du kan ikke angive den samme arbejder som både den primære og sekundære ansvarlige arbejder. 
+Du kan identificere en primær ansvarlig arbejder og sekundær ansvarlig arbejder i købsaftaleklassifikationen. Disse værdier nedarves af den resulterende købsaftale. Du er ikke forpligtet til at føje ansvarlige arbejdere til købsaftalen, og de kan ændres direkte for hver enkelt sag på selve købsaftalen. Du kan ikke angive en sekundær ansvarlig arbejder uden en primær ansvarlig arbejder, selvom du ikke behøver at have en sekundær ansvarlig arbejder. Du kan ikke angive den samme arbejder som både den primære og sekundære ansvarlige arbejder.
 
+> [!IMPORTANT]
+> Før du kan bruge funktionen Ansvarlig part, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+> 
+> - **Modul:** *Indkøb og forsyning*
+> - **Funktionsnavn:** *Ansvarlig part for købsaftale*
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en købsaftale er en forpligtelse til at købe noget. Du kan bruge linjer fra flere købsordrer (IO'er) til at opfylde forpligtelsen. Der findes fire typer forpligtelser:

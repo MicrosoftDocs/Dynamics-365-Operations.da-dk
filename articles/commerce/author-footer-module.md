@@ -3,7 +3,7 @@ title: Sidefodsmodul
 description: Dette emne omhandler sidefodsmoduler og beskriver, hvordan du kan oprette dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6dd9f214fbeeeaabadac4853916363c20a3288ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686712"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761195"
 ---
 # <a name="footer-module"></a>Sidefodsmodul  
 
@@ -51,7 +51,7 @@ Som de fleste containere understøtter et sidefodsmodul egenskaber for overskrif
 ## <a name="create-a-footer-module"></a>Opret et sidefodsmodul
 
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. I dialogboksen **Nyt sidefragment** skal du vælge modulet **Container**, angive et navn for sidefragmentet og derefter vælge **OK**.
+1. I dialogboksen **Nyt fragment** skal du vælge modulet **Container**, angive et navn for fragmentet og derefter vælge **OK**.
 1. På pladsen **Standardcontainer** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Sidefodskategori** og derefter **OK**.
 1. På pladsen **Sidefodskategori** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
@@ -68,7 +68,7 @@ Du kan medvirke til at sikre, at der vises et sidehoved på hver side, ved at f�
 1. På pladsen **Sidefod** i modulet **Standardside** skal du tilføje det sidefodsfragment, som du har oprettet.
 1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 
-Ved at føje sidefragmentet til sideskabeloner kan du sikre, at sidefoden gengives på alle sider.
+Ved at føje fragmentet til sideskabeloner kan du sikre, at sidefoden gengives på alle sider.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

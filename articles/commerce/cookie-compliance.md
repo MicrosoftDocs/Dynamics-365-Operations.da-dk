@@ -3,7 +3,7 @@ title: Cookie-overholdelse
 description: Dette emne beskriver overvejelser om cookie-overholdelse og de standardpolitikker, der er inkluderet i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446907"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761315"
 ---
 # <a name="cookie-compliance"></a>Cookie-overholdelse
 
@@ -56,6 +56,10 @@ I følgende tabel vises den aktuelle referenceliste over cookies, der er placere
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Bruges til vedligeholdelse af SSO-sessionen.                        |
 | x-ms-cpim-trans                             | Bruges til sporing af posteringer (antallet af åbne faner, der godkender mod et B2C-websted (Business-to-Consumer)), herunder den aktuelle postering. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-samtykke på websted for bruger af et e-handels-websted 
+
+Hvis et e-handels-websteds funktion eller modul bruger en ikke-afgørende cookie, skal en webstedsbrugers samtykke anskaffes, før cookien registreres. Hvis brugere af webstederne skal kunne give samtykke på e-handels-webstedet, skal en websteds forfatter tilføje og konfigurere et cookie-samtykkemodul i sidens sidehovedmodul for at sikre, at samtykke efterspørges og modtages. Brugersamtykke til webstedet skal gives, før en funktion eller et modul, der bruger en ikke-afgørende cookie, kan gengives på en webside.
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tilgængelighedsfunktioner og -egenskaber](accessibility.md)
@@ -64,4 +68,8 @@ I følgende tabel vises den aktuelle referenceliste over cookies, der er placere
 
 [Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
 
-[Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
+[Erstatte bruger-id'er, der er knyttet til sporede indholdsændringer](replace-IDs-tracked-changes.md)
+
+[Cookie-samtykkemodul](cookie-consent-module.md) 
+ 
+[Overskriftsmodul](author-header-module.md)

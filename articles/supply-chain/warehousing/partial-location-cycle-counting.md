@@ -3,7 +3,7 @@ title: Delvis cyklusoptælling for sted
 description: Cyklusoptællingsplaner guider de faktiske optællingshandlinger. Du kan anmode om, at kun specifikke produkter og produktvarianter optælles i stedet for alle disponible lagerbeholdninger på en lokalitet.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215671"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760001"
 ---
 # <a name="partial-location-cycle-counting"></a>Delvis cyklusoptælling for sted
 
@@ -45,7 +45,7 @@ Hvis du knytter cyklusoptællingsplaner til arbejdsskabeloner ved hjælp af inds
 
 Før delvis cyklusoptællingsarbejde kan behandles, skal du som minimum vælge **Vis varenummer** for menupunktet på mobilenheden som et led i opsætningen af cyklusoptællingen. Operatøren på lagerstedet bliver bedt om kun at registrere kun optællingsoplysninger, der er relateret til optællingslinjerne (varenumre og produktdimensioner). Alle andre disponible lagerbeholdninger bliver ignoreret for denne optællingsproces. 
 
-For den delvise cyklusoptællingsproces bliver dato og klokkeslæt for **Seneste optællingscyklus** ikke opdateret for lokationen.
+For processen til delvis cyklusoptælling opdateres dato/klokkeslæt for **Seneste cyklusoptælling** ikke for lokationen, selvom alle disponible varer på en bestemt lokation tælles. Den delvise cyklusoptælling tager ikke højde for parameteren **Dage mellem cyklusoptælling**, der er angivet på siden **Cyklusoptællingsplaner**. Delvis cyklusoptælling understøtter ikke samtidig optælling af flere varer på samme lokation. Funktionen for delvis cyklusoptælling kan resultere i, at samme lokation optælles flere gange for en vare, når **Udfør behandling af cyklusoptællingsplan** køres. Hvis du vil undgå dette scenario, skal du angive filtre i feltet **Vælg lokationer**.
 
 ## <a name="example"></a>Eksempel
 I dette eksempel skal kun varenummer A0001 optælles på lagersted 61.
