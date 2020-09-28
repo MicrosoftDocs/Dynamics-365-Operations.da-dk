@@ -1,0 +1,175 @@
+---
+title: Domæner i Dynamics 365 Commerce
+description: Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
+author: BrShoo
+manager: AnnBe
+ms.date: 09/03/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: ''
+ms.search.region: Global
+ms.search.industry: retail
+ms.author: BrShoo
+ms.search.validFrom: ''
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
+ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3764995"
+---
+# <a name="domains-in-dynamics-365-commerce"></a><span data-ttu-id="7b4dd-103">Domæner i Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="7b4dd-103">Domains in Dynamics 365 Commerce</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="7b4dd-104">Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-104">This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.</span></span>
+
+<span data-ttu-id="7b4dd-105">Domæner er webadresser, der bruges til at navigere til Dynamics 365 Commerce-websteder i en webbrowser.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-105">Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a web browser.</span></span> <span data-ttu-id="7b4dd-106">Du styrer administrationen af dit domæne hos en valgt DNS-serverudbyder (Domain Name Server).</span><span class="sxs-lookup"><span data-stu-id="7b4dd-106">You control management of your domain with a chosen Domain Name Server (DNS) provider.</span></span> <span data-ttu-id="7b4dd-107">Der henvises til domæner i hele Dynamics 365 Commerce-webstedsgeneratoren for at koordinere, hvordan der er adgang til et websted, når det udgives.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-107">Domains are referenced throughout Dynamics 365 Commerce site builder to coordinate how a site will be accessed when published.</span></span> <span data-ttu-id="7b4dd-108">I dette emne gennemgås, hvordan domæner håndteres og henvises til i hele livscyklussen for udviklingen og lanceringen af Commerce-webstedet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-108">This topic reviews how domains are handled and referenced throughout the lifecycle of the Commerce site development and launch.</span></span>
+
+## <a name="provisioning-and-supported-host-names"></a><span data-ttu-id="7b4dd-109">Klargøring og understøttede værtsnavne</span><span class="sxs-lookup"><span data-stu-id="7b4dd-109">Provisioning and supported host names</span></span>
+
+<span data-ttu-id="7b4dd-110">Når der klargøres et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), bruges feltet **Understøttede værtsnavne** på skærmen for klargøring af e-handel til at angive domæner, der knyttes til det udrullede Commerce-miljø.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-110">When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-Commerce provisioning screen is used to enter domains that will be associated with the deployed Commerce environment.</span></span> <span data-ttu-id="7b4dd-111">Disse domæner er kundeorienterede DNS-servernavne, som er vært for e-handels-websteder.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-111">These domains will be the customer-facing Domain Name Server (DNS) names where e-Commerce websites will be hosted.</span></span> <span data-ttu-id="7b4dd-112">Hvis du angiver et domæne på dette stadie, starter det ikke omdirigering af trafik for domænet til Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-112">Entering a domain at this stage does not start diverting traffic for the domain to Dynamics 365 Commerce.</span></span> <span data-ttu-id="7b4dd-113">Trafik for et domæne sendes kun til Commerce-slutpunktet, når DNS CNAME-posten opdateres til at bruge Commerce-slutpunktet sammen med domænet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-113">Traffic for a domain will only be routed to the Commerce endpoint when the DNS CNAME record is updated to use the Commerce endpoint with the domain.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7b4dd-114">Der kan angives flere domæner i feltet **Understøttede værtsnavne** ved at adskille dem med semikoloner.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-114">Multiple domains can be entered into the **Supported host names** box by separating them with semi-colons.</span></span>
+
+<span data-ttu-id="7b4dd-115">I følgende illustration vises LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-115">The following illustration shows the LCS e-Commerce provisioning screen with the **Supported host names** box highlighted.</span></span> 
+
+![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet](./media/Domains_ProvisioningeCommerceScreen.png)
+
+<span data-ttu-id="7b4dd-117">Du kan oprette en serviceanmodning for at føje flere domæner til et miljø, hvis der allerede er foretaget klargøring.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-117">You can create a service request to add additional domains to an environment if provisioning has already occurred.</span></span> <span data-ttu-id="7b4dd-118">Hvis du vil oprette en serviceanmodning i LCS, skal du i dit miljø gå til **Support \> Supportproblemer** og vælge **Send en hændelse**.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-118">To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.</span></span>
+
+## <a name="commerce-generated-urls"></a><span data-ttu-id="7b4dd-119">Commerce-genererede URL-adresser</span><span class="sxs-lookup"><span data-stu-id="7b4dd-119">Commerce-generated URLs</span></span>
+
+<span data-ttu-id="7b4dd-120">Ved klargøring af et e-handels-miljø vil Commerce generere en URL-adresse, der er arbejdsadressen for miljøet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-120">When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment.</span></span> <span data-ttu-id="7b4dd-121">Der henvises til denne URL-adresse i linket til e-handel-webstedet, som vises i LCS, efter at miljøet er klargjort.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-121">This URL is referenced in the e-Commerce site link shown in LCS after the environment is provisioned.</span></span> <span data-ttu-id="7b4dd-122">En Commerce-genereret URL-adresse har formatet `https://<e-Commerce tenant name>.commerce.dynamics.com`, hvor navnet på e-handels-lejeren er det navn, der er angivet i LCS for Commerce-miljøet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-122">A Commerce-generated URL is in the format `https://<e-Commerce tenant name>.commerce.dynamics.com`, where the e-Commerce tenant name is the name entered in LCS for the Commerce environment.</span></span>
+
+<span data-ttu-id="7b4dd-123">Du kan også bruge værtsnavne for produktionswebsteder i et sandkassemiljø.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-123">You can use production site host names in a sandbox environment as well.</span></span> <span data-ttu-id="7b4dd-124">Denne mulighed er ideel, når du kopierer et websted fra et sandkassemiljø til produktion.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-124">This option is ideal when you will be copying a site from a sandbox environment to production.</span></span>
+
+## <a name="site-setup"></a><span data-ttu-id="7b4dd-125">Webstedopsætning</span><span class="sxs-lookup"><span data-stu-id="7b4dd-125">Site setup</span></span>
+
+<span data-ttu-id="7b4dd-126">Når dit e-handels-miljø er klargjort, skal du konfigurere webstedet i Commerce-webstedsgeneratoren for at kunne knytte dit websted til URL-arbejdsadressen.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-126">After your e-Commerce environment is provisioned, you must set up your site in Commerce site builder to associate your site to the working URL.</span></span>
+
+<span data-ttu-id="7b4dd-127">Første gang du konfigurerer et websted i webstedsgeneratoren, vises dialogboksen **Konfigurer dit websted**.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-127">When you first set up a site in site builder, the **Setup your Site** dialog box will appear.</span></span>
+
+<span data-ttu-id="7b4dd-128">I følgende illustration vises dialogboksen **Konfigurer dit websted** for et websted med navnet "standard", når du får adgang til webstedet for første gang i webstedsgeneratoren.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-128">The following illustration shows the **Setup your Site** dialog box for a site named "default" when you access the site for the first time in site builder.</span></span>
+
+![Dialogboksen **Konfigurer dit websted**](./media/Domains_SetupyoursiteScreen.png)
+
+<span data-ttu-id="7b4dd-130">I feltet **Vælg et domæne** kan du knytte et af de understøttede værtsnavne, der er leveret til dit websted i LCS, til dit websted i webstedsgeneratoren.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-130">The **Select a domain** box allows you to associate one of the supported host names provided for your site in LCS to your site in site builder.</span></span>
+
+<span data-ttu-id="7b4dd-131">Feltet **Sti** kan være tomt, eller der kan tilføjes en ekstra stistreng, som afspejles i din URL-arbejdsadresse.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-131">The **Path** box can be left blank, or an additional path string can be added that will be reflected in your working URL.</span></span> <span data-ttu-id="7b4dd-132">Når du feltet **Sti** være tomt, knyttes den Commerce-genererede URL-basisadresse til webstedet i webstedsgeneratoren.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-132">Leaving the **Path** box blank associates the base Commerce-generated URL with the site being set up in site builder.</span></span> <span data-ttu-id="7b4dd-133">Stier skal være entydige for de enkelte par af websted/domæne.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-133">Paths must be unique for each site/domain pair.</span></span> <span data-ttu-id="7b4dd-134">Inden for webstedet og domænet kan kun ét websted i miljøet bruge den tomme sti eller være tilknyttet en entydig stistreng.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-134">Within the site and domain selected, only one site in the environment can use the blank path or be associated with a unique path string.</span></span> <span data-ttu-id="7b4dd-135">Enhver streng, der føjes til feltet **Sti** under opsætningen af webstedet, bliver en understi til den Commerce-genererede URL-basisadresse, der bruges til at få adgang til webstedet i en webbrowser.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-135">Any string added to the **Path** field during site setup will become a subpath of the base Commerce-generated URL used to access the site in a web browser.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7b4dd-136">Stien kaldes også den **matchende sti**, når der tilføjes en kanal i konfigurationssektionen **Indstillinger for websted \> Kanaler** i webstedsgeneratoren.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-136">The path is also known as the **Match path** when adding a channel in the **Site Settings \> Channels** configuration section of site builder.</span></span>
+
+<span data-ttu-id="7b4dd-137">Hvis du f.eks. har et websted i webstedsgeneratoren kaldet "fabrikam" i en e-handels-lejer med navnet "xyz", og hvis du konfigurerer webstedet med en tom sti, vil du få adgang til det udgivne websteds indhold i en webbrowser ved at gå direkte til den Commerce-genererede URL-basisadresse:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-137">For example, if you have a site in site builder called "fabrikam" in an e-Commerce tenant named "xyz," and if you set up the site with a blank path, then you would access the published site content in a web browser by going directly to the base Commerce-generated URL:</span></span>
+
+`https://xyz.commerce.dynamics.com`
+
+<span data-ttu-id="7b4dd-138">Hvis du også har tilføjet en sti til "fabrikam" under dette websteds opsætning, kan du få adgang til det udgivne websteds indhold i en webbrowser ved hjælp af følgende URL-adresse:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-138">Alternately, if you had added a path of "fabrikam" during this same site's setup, you would access the published site content in a web browser using the following URL:</span></span>
+
+`https://xyz.commerce.dynamics.com/fabrikam`
+
+## <a name="pages-and-urls"></a><span data-ttu-id="7b4dd-139">Sider og URL-adresser</span><span class="sxs-lookup"><span data-stu-id="7b4dd-139">Pages and URLs</span></span>
+
+<span data-ttu-id="7b4dd-140">Når webstedet er konfigureret med en sti, bygger alle URL-adresser, der er knyttet til sider i webstedsgeneratoren, på URL-arbejdsadressen (den Commerce-genererede URL-adresse eller den Commerce-genererede URL-adresse plus stien) til webstedet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-140">After your site is set up with a path, all URLs associated with pages in site builder will build on the working URL (the Commerce-generated URL, or the Commerce-generated URL plus the path) for the site.</span></span> <span data-ttu-id="7b4dd-141">Oprettelse af en ny URL-adresse i webstedsgenerator (**URL-adresser/> + Ny**) ved at vælge en side på listen i dialogboksen **Ny URL-adresse** og angive URL-stien til siden vil knytte URL-adressen til den valgte side.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-141">Creating a new URL in site builder (**URLS /> +New**) by selecting a page from the list in the **New URL** dialog box and entering the URL path for that page will associate that URL with the selected page.</span></span> <span data-ttu-id="7b4dd-142">Værdien af URL-stien føjes derefter til webstedets URL-arbejdsadresse for at give adgang til siden, og den angives som `./<URL path>` på URL-adresselisten på **URL-adresse**-siden i webstedsgenerator.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-142">The URL path value then appends to the site's working URL to access the page, and is labeled as `./<URL path>` in the URL list of the **URLs** page in site builder.</span></span>
+
+<span data-ttu-id="7b4dd-143">Følgende illustration viser dialogboksen **Ny URL-adresse** i webstedsgenerator med eksempel på en URL-sti fremhævet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-143">The following illustration shows the **New URL** dialog box in site builder with an example URL path highlighted.</span></span> 
+
+![Dialogboksen **Ny URL-adresse** i webstedsgenerator](./media/Domains_PageSetup2a.png)
+
+<span data-ttu-id="7b4dd-145">Følgende illustration viser siden **URL-adresser** i webstedsgenerator med eksempel på en URL-adresse fremhævet på listen.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-145">The following illustration shows the **URLs** page in site builder with an example URL highlighted in the list.</span></span>
+
+![Kør indstillingen brugerstrøm i politikstrøm](./media/Domains_URLsInSiteBuilder2a.png)
+
+## <a name="domains-in-site-builder"></a><span data-ttu-id="7b4dd-147">Domæner i webstedsgenerator</span><span class="sxs-lookup"><span data-stu-id="7b4dd-147">Domains in site builder</span></span>
+
+<span data-ttu-id="7b4dd-148">De understøttede værdier for værtsnavne kan knyttes til et domæne, når der konfigureres et websted.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-148">The supported host names values are available to be associated as a domain when setting up a site.</span></span> <span data-ttu-id="7b4dd-149">Når du vælger en understøttet værdi for et værtsnavn som domænet, får du vist refererer til det valgte domæne fra hele webstedsgeneratoren.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-149">When selecting a supported host name value as the domain, you will see the chosen domain referenced throughout site builder.</span></span> <span data-ttu-id="7b4dd-150">Dette domæne er kun en reference i Commerce-miljøet, så der videresendes ikke direkte trafik til det pågældende domæne i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-150">This domain is only a reference within the Commerce environment, live traffic for that domain will not yet be forwarded to Dynamics 365 Commerce.</span></span>
+
+<span data-ttu-id="7b4dd-151">Når du arbejder med websteder i webstedsgenerator, og du har to websteder konfigureret med to forskellige domæner, kan du føje attributten **?domain=** til din URL-arbejdsadresse for at få adgang til det udgivne websteds indhold i en browser.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-151">When working with sites in site builder, if you have two sites set up with two different domains, you can append the **?domain=** attribute to your working URL to access the published site content in a browser.</span></span>
+
+<span data-ttu-id="7b4dd-152">Miljøet "xyz" er f.eks. blevet klargjort, og to websteder er blevet oprettet og tilknyttet i webstedsgenerator: en med domænet `www.fabrikam.com` og det andet med domænet `www.constoso.com`.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-152">For example, environment "xyz" has been provisioned, and two sites have been created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`.</span></span> <span data-ttu-id="7b4dd-153">Hvert websted er konfigureret ved hjælp af en tom sti.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-153">Each site was set up using a blank path.</span></span> <span data-ttu-id="7b4dd-154">Du kan få adgang til disse to websteder i en webbrowser på følgende måde ved hjælp af attributten **?domain=**:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-154">These two sites could then be accessed in a web browser as follows using the **?domain=** attribute:</span></span>
+- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
+- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+
+<span data-ttu-id="7b4dd-155">Når der ikke er angivet en domæneforespørgselsstreng i et miljø med flere domæner, bruger Commerce det første domæne, du har angivet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-155">When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided.</span></span> <span data-ttu-id="7b4dd-156">Hvis f.eks. stien "fabrikam" blev angivet først under opsætningen af webstedet, kan URL-adressen `https://xyz.commerce.dynamics.com` bruges til at få adgang til det indhold, der er udgivet til webstedet for `www.fabrikam.com`.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-156">For example, if the path "fabrikam" was provided first during site setup, the URL `https://xyz.commerce.dynamics.com` could be used to access the published site content site for `www.fabrikam.com`.</span></span>
+
+## <a name="traffic-forwarding-in-production"></a><span data-ttu-id="7b4dd-157">Videresendelse af trafik i produktion</span><span class="sxs-lookup"><span data-stu-id="7b4dd-157">Traffic forwarding in production</span></span>
+
+<span data-ttu-id="7b4dd-158">Du kan simulere flere domæner ved hjælp af parametre for domæneforespørgselsstrenge på selve commerce.dynamics.com slutpunktet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-158">You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself.</span></span> <span data-ttu-id="7b4dd-159">Men når du skal aktivere det i produktionen, skal du videresende trafikken for dit brugerdefinerede domæne til slutpunktet for `<e-Commerce tenant name>.commerce.dynamics.com`.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-159">But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-Commerce tenant name>.commerce.dynamics.com` endpoint.</span></span>
+
+<span data-ttu-id="7b4dd-160">Slutpunktet `<e-Commerce tenant name>.commerce.dynamics.com` understøtter ikke brugerdefinerede SSL'er (Secure Sockets Layer), så du skal konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller et Content Delivery Network (CDN).</span><span class="sxs-lookup"><span data-stu-id="7b4dd-160">The `<e-Commerce tenant name>.commerce.dynamics.com` endpoint does not support custom domain Secure Sockets Layers (SSLs), so you must set up custom domains using a front door service or content delivery network (CDN).</span></span> 
+
+<span data-ttu-id="7b4dd-161">Hvis du vil konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller CDN, har du to muligheder:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-161">To set up custom domains using a front door service or CDN, you have two options:</span></span>
+
+- <span data-ttu-id="7b4dd-162">Konfigurer en Front Door Service som Azure Front Door for at håndtere frontend-trafik og oprette forbindelse til Commerce-miljøet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-162">Set up a front door service like Azure Front Door to handle front-end traffic and connect to your Commerce environment.</span></span> <span data-ttu-id="7b4dd-163">Det giver større kontrol over domæne- og certifikatstyring og mere detaljerede sikkerhedspolitikker.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-163">This provides greater control over domain and certificate management and more granular security policies.</span></span>
+- <span data-ttu-id="7b4dd-164">Brug den Commerce-leverede Azure Front Door-forekomst.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-164">Use the Commerce-supplied Azure Front Door instance.</span></span> <span data-ttu-id="7b4dd-165">Det kræver en handling til koordinering med Dynamics 365 Commerce-teamet i forbindelse med domænebekræftelse og anskaffelse af SSL-certifikater til dit produktionsdomæne.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-165">This requires coordinating action with the Dynamics 365 Commerce team for domain verification and obtaining SSL certificates for your production domain.</span></span>
+
+<span data-ttu-id="7b4dd-166">Du kan finde oplysninger om, hvordan du konfigurerer en CDN-tjeneste direkte, under [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md).</span><span class="sxs-lookup"><span data-stu-id="7b4dd-166">For information about how to set up a CDN service directly, see [Add support for a content delivery network (CDN)](add-cdn-support.md).</span></span>
+
+<span data-ttu-id="7b4dd-167">Hvis du vil bruge den Commerce-leverede Azure Front Door forekomst, skal du oprette en serviceanmodning til CDN-opsætningen fra Commerce-onboarding-teamet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-167">To use the Commerce-supplied Azure Front Door instance, you must create a service request for CDN setup assistance from the Commerce onboarding team.</span></span> 
+
+- <span data-ttu-id="7b4dd-168">Du skal angive firmanavn, produktionsdomæne, miljø-id og produktionens e-handels-lejernavn.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-168">You will need to provide your company name, the production domain, environment ID, and production e-Commerce tenant name.</span></span> 
+- <span data-ttu-id="7b4dd-169">Du skal bekræfte, om dette er et eksisterende domæne (bruges til et aktuelt aktivt websted) eller et nyt domæne.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-169">You will need to confirm if this is an existing domain (used for a currently active site) or a new domain.</span></span> 
+- <span data-ttu-id="7b4dd-170">I forbindelse med et nyt domæne kan domænebekræftelse og SSL-certifikatet foretages i et enkelt trin.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-170">For a new domain, the domain verification and SSL certificate can be achieved in a single step.</span></span> 
+- <span data-ttu-id="7b4dd-171">I forbindelse med et domæne, der betjener et eksisterende websted, kræves der en proces med flere trin for at fastlægge domænebekræftelse og SSL-certifikat.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-171">For a domain serving an existing website, there is a multistep process required to establish the domain verification and SSL certificate.</span></span> <span data-ttu-id="7b4dd-172">Denne proces har en 7-dages serviceniveauaftale (SLA) for et domæne, der skal være aktivt, fordi det omfatter flere sekventielle trin.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-172">This process has a 7-working-day service level agreement (SLA) for a domain to go live, because it includes multiple sequential steps.</span></span>
+
+<span data-ttu-id="7b4dd-173">Hvis du vil oprette en serviceanmodning i LCS, skal du i dit miljø gå til **Support \> Supportproblemer** og vælge **Send en hændelse**.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-173">To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7b4dd-174">Brugerdefinerede domæner med SSL understøttes kun i produktionsmiljøer.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-174">Custom domains with SSL are only supported on production environments.</span></span> <span data-ttu-id="7b4dd-175">I forbindelse med ikke-produktionsmiljøer som f.eks. sandkasse og test af brugeraccept (UAT) skal du bruge den Commerce-genererede URL-adresse til at få adgang til udgivet indhold i en webbrowser.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-175">For non-production environments such as sandbox and user acceptance testing (UAT), use the Commerce-generated URL to access published content in a web browser.</span></span>
+
+## <a name="ssl-certificate-process"></a><span data-ttu-id="7b4dd-176">SSL-certifikatproces</span><span class="sxs-lookup"><span data-stu-id="7b4dd-176">SSL certificate process</span></span>
+
+<span data-ttu-id="7b4dd-177">Når en serviceanmodning er blevet gemt, koordinerer Commerce-teamet følgende trin med dig.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-177">When a service request is filed, the Commerce team will coordinate the following steps with you.</span></span>
+
+<span data-ttu-id="7b4dd-178">For nye domæner:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-178">For new domains:</span></span>
+- <span data-ttu-id="7b4dd-179">Commerce-teamet konfigurerer forekomsten af Azure Front Door (Commerce-vært).</span><span class="sxs-lookup"><span data-stu-id="7b4dd-179">The Commerce team will set up the Azure Front Door instance (Commerce-hosted).</span></span>
+- <span data-ttu-id="7b4dd-180">Derefter giver Commerce-teamet CNAME-posten mulighed for at henvise til dit brugerdefinerede domæne.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-180">The Commerce team will then provide the CNAME record to point your custom domain.</span></span>
+- <span data-ttu-id="7b4dd-181">Når CNAME-posten er opdateret, vil forekomsten af Azure Front Door med Commerce-vært være i stand til at kontrollere domæneejerskabet og få SSL-certifikatet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-181">After the CNAME record is updated, the Commerce-hosted Azure Front Door instance will be able to verify the domain ownership and get the SSL certificate.</span></span>
+
+<span data-ttu-id="7b4dd-182">For eksisterende/aktive domæner:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-182">For existing/active domains:</span></span>
+- <span data-ttu-id="7b4dd-183">Commerce-teamet vil bede dig om at tilføje en `afdverify.<custom-domain>`-CNAME-post, som du kan levere til din DNS-domæneudbyder.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-183">The Commerce team will instruct you to add an `afdverify.<custom-domain>` CNAME record to provide to your domain DNS provider.</span></span>
+- <span data-ttu-id="7b4dd-184">Derefter vil Commerce-teamet føje domænet til Azure Front Door-forekomsten og levere yderligere DNS TXT-poster, der skal tilføjes DNS for domænet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-184">When complete, the Commerce team will add the domain to the Azure Front Door instance and provide additional DNS TXT records to be added to the DNS for the domain.</span></span>
+- <span data-ttu-id="7b4dd-185">Når TXT-posterne er fuldført, vil Commerce-teamet fuldføre opdateringen af Azure Front Door for det domæne, der skal konfigurere SSL-certifikatet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-185">After the TXT records are completed, the Commerce team will complete the Azure Front Door updates for the domain that will set up the SSL certificate.</span></span>
+
+## <a name="apex-domains"></a><span data-ttu-id="7b4dd-186">Toppunktdomæner</span><span class="sxs-lookup"><span data-stu-id="7b4dd-186">Apex domains</span></span>
+
+<span data-ttu-id="7b4dd-187">Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdomæner (roddomæner, der ikke indeholder underdomæner).</span><span class="sxs-lookup"><span data-stu-id="7b4dd-187">The Commerce-supplied Azure Front Door instance does not support apex domains (root domains that do not contain subdomains).</span></span> <span data-ttu-id="7b4dd-188">Toppunktdomæner kræver en IP-adresse for at kunne fortolkes, og der findes kun virtuelle slutpunkter for Commerce Azure Front Door-forekomsten.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-188">Apex domains require an IP address to resolve, and the Commerce Azure Front Door instance exists with virtual endpoints only.</span></span> <span data-ttu-id="7b4dd-189">Hvis du vil bruge et toppunktdomæne, har du to muligheder:</span><span class="sxs-lookup"><span data-stu-id="7b4dd-189">To use an apex domain, you have two options:</span></span>
+
+- <span data-ttu-id="7b4dd-190">**Mulighed 1** - Brug DNS-udbyderen til at omdirigere toppunktdomænet til et "www"-domæne.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-190">**Option 1** - Use your DNS provider to redirect the apex domain to a "www" domain.</span></span> <span data-ttu-id="7b4dd-191">F.eks. omdirigerer fabrikam.com til `www.fabrikam.com`, hvor `www.fabrikam.com` er den CNAME-post, der peger på den Commerce-tilknyttede Azure Front Door-forekomst.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-191">For example, fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is the CNAME record that points to the Commerce-hosted Azure Front Door instance.</span></span>
+
+- <span data-ttu-id="7b4dd-192">**Mulighed 2** - Konfigurer selv en CDN/front door-forekomst som vært for toppunktdomænet.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-192">**Option 2** - Set up a CDN/front door instance on your own to host the apex domain.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7b4dd-193">Hvis du bruger Azure Front Door, skal du også konfigurere en Azure DNS i det samme abonnement.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-193">If you are using Azure Front Door, you must also set up an Azure DNS in the same subscription.</span></span> <span data-ttu-id="7b4dd-194">Toppunktdomænet, der har Azure DNS som vært, kan pege på din Azure Front Door som en aliaspost.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-194">The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record.</span></span> <span data-ttu-id="7b4dd-195">Dette er den eneste løsning, da toppunktdomæner altid skal pege på en IP-adresse.</span><span class="sxs-lookup"><span data-stu-id="7b4dd-195">This is the only work around, as apex domains must always point to an IP address.</span></span>
+
+  ## <a name="additional-resources"></a><span data-ttu-id="7b4dd-196">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="7b4dd-196">Additional resources</span></span>
+
+  [<span data-ttu-id="7b4dd-197">Implementere et nyt websted for e-handel</span><span class="sxs-lookup"><span data-stu-id="7b4dd-197">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
+
+  [<span data-ttu-id="7b4dd-198">Konfigurere en onlinebutikskanal</span><span class="sxs-lookup"><span data-stu-id="7b4dd-198">Set up an online store channel</span></span>](online-stores.md)
+
+  [<span data-ttu-id="7b4dd-199">Oprette et websted for e-handel</span><span class="sxs-lookup"><span data-stu-id="7b4dd-199">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
+
+  [<span data-ttu-id="7b4dd-200">Tilknytte et onlinewebsted til en kanal</span><span class="sxs-lookup"><span data-stu-id="7b4dd-200">Associate an online site with a channel</span></span>](associate-site-online-store.md)
+
+  [<span data-ttu-id="7b4dd-201">Administrere robots.txt-filer</span><span class="sxs-lookup"><span data-stu-id="7b4dd-201">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
+
+  [<span data-ttu-id="7b4dd-202">Masseoverføre omdirigeringer af URL-adresser</span><span class="sxs-lookup"><span data-stu-id="7b4dd-202">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
+
+  [<span data-ttu-id="7b4dd-203">Konfigurere en B2C-lejer i Commerce</span><span class="sxs-lookup"><span data-stu-id="7b4dd-203">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
+
+  [<span data-ttu-id="7b4dd-204">Konfigurere brugerdefinerede sider til brugerlogon</span><span class="sxs-lookup"><span data-stu-id="7b4dd-204">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
+
+  [<span data-ttu-id="7b4dd-205">Konfigurere flere B2C-lejere i et Commerce-miljø</span><span class="sxs-lookup"><span data-stu-id="7b4dd-205">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
+
+  [<span data-ttu-id="7b4dd-206">Tilføje understøttelse af et netværk, der leverer indhold (CDN)</span><span class="sxs-lookup"><span data-stu-id="7b4dd-206">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
+
+  [<span data-ttu-id="7b4dd-207">Aktivere registrering af lokationsbaseret lager</span><span class="sxs-lookup"><span data-stu-id="7b4dd-207">Enable location-based store detection</span></span>](enable-store-detection.md)

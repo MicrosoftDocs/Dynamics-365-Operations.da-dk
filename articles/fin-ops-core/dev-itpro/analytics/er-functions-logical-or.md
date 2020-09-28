@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a850b1cbe7224ab1a7b2bd39ac4667304781cbb
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: faf07c5d8b30cd3babe8a6a55ae7effe5ce457a0
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041670"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744617"
 ---
-# <span data-ttu-id="ee10b-103"><a name="OR">ER-funktionen OR</a></span><span class="sxs-lookup"><span data-stu-id="ee10b-103"><a name="OR">OR ER function</a></span></span>
+# <a name="or-er-function"></a><span data-ttu-id="3fac2-103">ER-funktionen OR</span><span class="sxs-lookup"><span data-stu-id="3fac2-103">OR ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ee10b-104">Funktionen `OR` returnerer en *Boolesk* værdi som værende **FALSK**, hvis alle de angivne betingelser ikke er opfyldte.</span><span class="sxs-lookup"><span data-stu-id="ee10b-104">The `OR` function returns a *Boolean* value of **FALSE** if all the specified conditions are false.</span></span> <span data-ttu-id="ee10b-105">Hvis en eller flere af de angivne betingelser er opfyldte, returnerer denne funktion en *Boolesk* værdi som værende **SAND**.</span><span class="sxs-lookup"><span data-stu-id="ee10b-105">If any specified condition is true, the function returns a *Boolean* value of **TRUE**.</span></span>
+<span data-ttu-id="3fac2-104">Funktionen `OR` returnerer en *Boolesk* værdi som værende **FALSK**, hvis alle de angivne betingelser ikke er opfyldte.</span><span class="sxs-lookup"><span data-stu-id="3fac2-104">The `OR` function returns a *Boolean* value of **FALSE** if all the specified conditions are false.</span></span> <span data-ttu-id="3fac2-105">Hvis en eller flere af de angivne betingelser er opfyldte, returnerer denne funktion en *Boolesk* værdi som værende **SAND**.</span><span class="sxs-lookup"><span data-stu-id="3fac2-105">If any specified condition is true, the function returns a *Boolean* value of **TRUE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ee10b-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="ee10b-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3fac2-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="3fac2-106">Syntax</span></span>
 
 ```vb
 OR (condition 1[, condition 2, …, condition N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ee10b-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="ee10b-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="3fac2-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="3fac2-107">Arguments</span></span>
 
-<span data-ttu-id="ee10b-108">`condition 1`: *Boolesk*</span><span class="sxs-lookup"><span data-stu-id="ee10b-108">`condition 1`: *Boolean*</span></span>
+<span data-ttu-id="3fac2-108">`condition 1`: *Boolesk*</span><span class="sxs-lookup"><span data-stu-id="3fac2-108">`condition 1`: *Boolean*</span></span>
 
-<span data-ttu-id="ee10b-109">Et gyldigt betinget udtryk, der skal afprøves.</span><span class="sxs-lookup"><span data-stu-id="ee10b-109">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="ee10b-110">Dette argument skal udfyldes.</span><span class="sxs-lookup"><span data-stu-id="ee10b-110">This argument is required.</span></span>
+<span data-ttu-id="3fac2-109">Et gyldigt betinget udtryk, der skal afprøves.</span><span class="sxs-lookup"><span data-stu-id="3fac2-109">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="3fac2-110">Dette argument skal udfyldes.</span><span class="sxs-lookup"><span data-stu-id="3fac2-110">This argument is required.</span></span>
 
-<span data-ttu-id="ee10b-111">`condition N`: *Boolesk*</span><span class="sxs-lookup"><span data-stu-id="ee10b-111">`condition N`: *Boolean*</span></span>
+<span data-ttu-id="3fac2-111">`condition N`: *Boolesk*</span><span class="sxs-lookup"><span data-stu-id="3fac2-111">`condition N`: *Boolean*</span></span>
 
-<span data-ttu-id="ee10b-112">Et gyldigt betinget udtryk, der skal afprøves.</span><span class="sxs-lookup"><span data-stu-id="ee10b-112">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="ee10b-113">Disse yderligere argumenter er valgfrie.</span><span class="sxs-lookup"><span data-stu-id="ee10b-113">These additional arguments are optional.</span></span>
+<span data-ttu-id="3fac2-112">Et gyldigt betinget udtryk, der skal afprøves.</span><span class="sxs-lookup"><span data-stu-id="3fac2-112">A valid conditional expression that must be tested.</span></span> <span data-ttu-id="3fac2-113">Disse yderligere argumenter er valgfrie.</span><span class="sxs-lookup"><span data-stu-id="3fac2-113">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ee10b-114">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="ee10b-114">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3fac2-114">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="3fac2-114">Return values</span></span>
 
-<span data-ttu-id="ee10b-115">*Boolesk*</span><span class="sxs-lookup"><span data-stu-id="ee10b-115">*Boolean*</span></span>
+<span data-ttu-id="3fac2-115">*Boolesk*</span><span class="sxs-lookup"><span data-stu-id="3fac2-115">*Boolean*</span></span>
 
-<span data-ttu-id="ee10b-116">Den resulterende *Booleske* værdi.</span><span class="sxs-lookup"><span data-stu-id="ee10b-116">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="3fac2-116">Den resulterende *Booleske* værdi.</span><span class="sxs-lookup"><span data-stu-id="3fac2-116">The resulting *Boolean* value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee10b-117">Eksempel</span><span class="sxs-lookup"><span data-stu-id="ee10b-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3fac2-117">Eksempel</span><span class="sxs-lookup"><span data-stu-id="3fac2-117">Example</span></span>
 
-<span data-ttu-id="ee10b-118">`OR (1=2, "a"="a")` returnerer **SANDT**.</span><span class="sxs-lookup"><span data-stu-id="ee10b-118">`OR (1=2, "a"="a")` returns **TRUE**.</span></span>
+<span data-ttu-id="3fac2-118">`OR (1=2, "a"="a")` returnerer **SANDT**.</span><span class="sxs-lookup"><span data-stu-id="3fac2-118">`OR (1=2, "a"="a")` returns **TRUE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ee10b-119">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="ee10b-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3fac2-119">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="3fac2-119">Additional resources</span></span>
 
-[<span data-ttu-id="ee10b-120">Logiske funktioner</span><span class="sxs-lookup"><span data-stu-id="ee10b-120">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="3fac2-120">Logiske funktioner</span><span class="sxs-lookup"><span data-stu-id="3fac2-120">Logical functions</span></span>](er-functions-category-logical.md)

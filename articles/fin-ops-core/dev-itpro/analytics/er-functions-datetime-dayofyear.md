@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d24aabb582151b0b357b64a988cc932a9c9f3cea
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 755f5f1de28f95ed682648caf47155ad71c8f4b0
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070661"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745483"
 ---
-# <span data-ttu-id="ad9ac-103"><a name="DAYOFYEAR">ER-funktionen DAYOFYEAR</a></span><span class="sxs-lookup"><span data-stu-id="ad9ac-103"><a name="DAYOFYEAR">DAYOFYEAR ER function</a></span></span>
+# <a name="dayofyear-er-function"></a><span data-ttu-id="9ebf7-103">ER-funktionen DAYOFYEAR</span><span class="sxs-lookup"><span data-stu-id="9ebf7-103">DAYOFYEAR ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ad9ac-104">Funktionen `DAYOFYEAR` returnerer en værdi i form af et *Heltal*, som repræsenterer antallet af dage mellem 1. januar og den angivne dato.</span><span class="sxs-lookup"><span data-stu-id="ad9ac-104">The `DAYOFYEAR` function returns an *Integer* value that represents the number of days between January 1 and the specified date.</span></span>
+<span data-ttu-id="9ebf7-104">Funktionen `DAYOFYEAR` returnerer en værdi i form af et *Heltal*, som repræsenterer antallet af dage mellem 1. januar og den angivne dato.</span><span class="sxs-lookup"><span data-stu-id="9ebf7-104">The `DAYOFYEAR` function returns an *Integer* value that represents the number of days between January 1 and the specified date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ad9ac-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="ad9ac-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9ebf7-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="9ebf7-105">Syntax</span></span>
 
 ```vb
 DAYOFYEAR (date) as Integer
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ad9ac-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="ad9ac-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="9ebf7-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="9ebf7-106">Arguments</span></span>
 
-<span data-ttu-id="ad9ac-107">`date`: *Dato*</span><span class="sxs-lookup"><span data-stu-id="ad9ac-107">`date`: *Date*</span></span>
+<span data-ttu-id="9ebf7-107">`date`: *Dato*</span><span class="sxs-lookup"><span data-stu-id="9ebf7-107">`date`: *Date*</span></span>
 
-<span data-ttu-id="ad9ac-108">En datoværdi, som repræsenterer den dato, der skal bruges til beregning af antallet af dage.</span><span class="sxs-lookup"><span data-stu-id="ad9ac-108">A date value that represents the date to use for the calculation of the number of days.</span></span>
+<span data-ttu-id="9ebf7-108">En datoværdi, som repræsenterer den dato, der skal bruges til beregning af antallet af dage.</span><span class="sxs-lookup"><span data-stu-id="9ebf7-108">A date value that represents the date to use for the calculation of the number of days.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ad9ac-109">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="ad9ac-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="9ebf7-109">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="9ebf7-109">Return values</span></span>
 
-<span data-ttu-id="ad9ac-110">*Heltal*</span><span class="sxs-lookup"><span data-stu-id="ad9ac-110">*Integer*</span></span>
+<span data-ttu-id="9ebf7-110">*Heltal*</span><span class="sxs-lookup"><span data-stu-id="9ebf7-110">*Integer*</span></span>
 
-<span data-ttu-id="ad9ac-111">Den resulterende numeriske værdi.</span><span class="sxs-lookup"><span data-stu-id="ad9ac-111">The resulting numeric value.</span></span>
+<span data-ttu-id="9ebf7-111">Den resulterende numeriske værdi.</span><span class="sxs-lookup"><span data-stu-id="9ebf7-111">The resulting numeric value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="ad9ac-112">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="ad9ac-112">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="9ebf7-112">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="9ebf7-112">Example 1</span></span>
 
-<span data-ttu-id="ad9ac-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` returnerer **61**.</span><span class="sxs-lookup"><span data-stu-id="ad9ac-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` returns **61**.</span></span>
+<span data-ttu-id="9ebf7-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` returnerer **61**.</span><span class="sxs-lookup"><span data-stu-id="9ebf7-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` returns **61**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="ad9ac-114">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="ad9ac-114">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="9ebf7-114">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="9ebf7-114">Example 2</span></span>
 
-<span data-ttu-id="ad9ac-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` returnerer **1**.</span><span class="sxs-lookup"><span data-stu-id="ad9ac-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` returns **1**.</span></span>
+<span data-ttu-id="9ebf7-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` returnerer **1**.</span><span class="sxs-lookup"><span data-stu-id="9ebf7-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` returns **1**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ad9ac-116">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="ad9ac-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="9ebf7-116">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="9ebf7-116">Additional resources</span></span>
 
-[<span data-ttu-id="ad9ac-117">Dato- og klokkeslætsfunktioner</span><span class="sxs-lookup"><span data-stu-id="ad9ac-117">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="9ebf7-117">Dato- og klokkeslætsfunktioner</span><span class="sxs-lookup"><span data-stu-id="9ebf7-117">Date and time functions</span></span>](er-functions-category-datetime.md)
