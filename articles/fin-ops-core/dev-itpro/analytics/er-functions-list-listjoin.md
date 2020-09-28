@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7f78b687865e63e658c1c1c4f148b50595bf063
-ms.sourcegitcommit: 54bdcf8e9b6d1b1aae2a244f7a82754879d12053
+ms.openlocfilehash: 035bf720a892e987ff9fc073ab8ed6f6cc6ea18e
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "3740657"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745099"
 ---
-# <a name=""></a><a name="LISTJOIN">LISTJOIN ER-funktion</a>
+# <a name="listjoin-er-function"></a>LISTJOIN ER-funktion
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,11 +73,11 @@ Du indtaster derefter datakilde **Post 2** af typen `Container`. Denne datakilde
 
 I dette tilfælde returnerer udtrykket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny liste, der indeholder to poster.
 
-![Side for ER-modeltilknytningsdesigner](./media/er-functions-list-listjoin-image2.gif)
+![Designerside med to poster til ER-modeltilknytning](./media/er-functions-list-listjoin-image2.gif)
 
 Strukturen i denne liste består af et enkelt felt for **Beløb** af typen `Real`, fordi dette felt er det eneste felt, der vises i alle argumenterne for den kaldte funktion.
 
-![Side for ER-modeltilknytningsdesigner](./media/er-functions-list-listjoin-image3.gif)
+![Designerside med beløbsfelt til ER-modeltilknytning](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

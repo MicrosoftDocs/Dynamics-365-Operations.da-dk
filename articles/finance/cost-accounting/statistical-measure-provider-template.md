@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
+ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c46a9e042482ad66e769383b4e81e2df85a5e97b
-ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
+ms.openlocfilehash: 3595f896afb991f0161764fd6ca6c9891767865b
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "3734904"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759298"
 ---
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger
 
@@ -64,7 +64,7 @@ Et statistisk dimensionsmedlem bliver automatisk en foruddefineret fordelingsbas
 
 Her er nogle eksempler på typiske statistiske dimensionsmedlemmer.
 
-| Navn på statistisk dimension  | Statistiske elementer | Betegnelse             | Enhed |
+| Navn på statistisk dimension  | Statistiske elementer | Beskrivelse             | Enhed |
 |-----------------------------|----------------------|-------------------------|------|
 | Delte statistiske elementer | Fuldtidsansat                  | Fuldtidsmedarbejdere     | Styk  |
 | Delte statistiske elementer | Elektricitet          | Forbrug af elektricitet | kWh  |
@@ -94,7 +94,7 @@ HcmEmployment-tabellen indeholder en liste over alle medarbejdere i forekomsten.
 
 Her er et eksempel på medarbejdere i HcmEmployment-tabellen.
 
-| Navn       | Bærer | Betegnelse   | Medarbejdertype |
+| Navn       | Bærer | Beskrivelse   | Medarbejdertype |
 |------------|-------------|----|-------------|
 | Medarbejder 1 | CC001       | Personale | Medarbejder    |
 | Medarbejder 2 | CC002       | FI | Medarbejder    |
@@ -155,7 +155,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende sta
 
 **Overførselskladdeposteringer for statistisk post**
 
-| Regnskabsdato | Størrelsesorden | Statistisk element |   Betegnelse       | Bærer |
+| Regnskabsdato | Størrelsesorden | Statistisk element |   Beskrivelse       | Bærer |
 |-----------------|-----------|---------------------|---------------------|-------------|
 | 31-01-2017      | 1,00      | Fuldtidsansatte                | Fuldtidsmedarbejdere | CC001       |
 | 31-01-2017      | 2.00      | Fuldtidsansatte                | Fuldtidsmedarbejdere | CC002       |
@@ -163,7 +163,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende sta
 
 **Statistiske poster**
 
-| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |  Betegnelse        | Størrelsesorden |
+| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |  Beskrivelse        | Størrelsesorden |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personale | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 1,00      |
 | CC002       | FI | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 2.00      |
@@ -171,7 +171,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende sta
 
 Hvis de fuldtidsansattes foruddefinerede fordelingsbasis for dimensionsmedlemmer tildeles som en fordelingsbasis i en regel til fordeling af omkostninger, fordeles omkostningerne ved hjælp af følgende fordelingsfaktor.
 
-| Omkostningsobjekt | Betegnelse    | Størrelsesorden | Fordelingsfaktor |
+| Omkostningsobjekt | Beskrivelse    | Størrelsesorden | Fordelingsfaktor |
 |-------------|----|-----------|-------------------|
 | CC001       | Personale | 1,00      | (1/5) × beløb    |
 | CC002       | FI | 2.00      | (2/5) × beløb    |
@@ -245,14 +245,14 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende sta
 
 **Overførselskladdeposteringer for statistisk post**
 
-| Regnskabsdato | Størrelsesorden | Statistisk element |  Betegnelse          | Produktgruppe         |
+| Regnskabsdato | Størrelsesorden | Statistisk element |  Beskrivelse          | Produktgruppe         |
 |-----------------|-----------|---------------------|-----------------------|-----------------------|
 | 31-01-2017      | 16,00     | Pakke-CC             | Emballagebærer | Appelsinjuice B2B      |
 | 31-01-2017      | 8,00      | Pakke-CC             | Emballagebærer | Appelsinjuice Forbruger |
 
 **Statistiske poster**
 
-| Omkostningsobjekt           | Regnskabsdato | Statistisk dimensionsmedlem |    Betegnelse        | Størrelsesorden |
+| Omkostningsobjekt           | Regnskabsdato | Statistisk dimensionsmedlem |    Beskrivelse        | Størrelsesorden |
 |-----------------------|-----------------|------------------------------|-----------------------|-----------|
 | Appelsinjuice B2B      | 31-01-2017      | Pakke-CC                      | Emballagebærer | 16,00     |
 | Appelsinjuice Forbruger | 31-01-2017      | Pakke-CC                      | Emballagebærer | 8,00      |
@@ -321,7 +321,7 @@ Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Admin
 
 **Overførselskladdeposteringer for statistisk post**
 
-| Regnskabsdato | Størrelsesorden  | Omkostningselement |   Betegnelse           | Bærer |
+| Regnskabsdato | Størrelsesorden  | Omkostningselement |   Beskrivelse           | Bærer |
 |-----------------|------------|--------------|-------------------------|-------------|
 | 31-01-2017      | 2,450.00   | Elektricitet  | Forbrug af elektricitet | CC001       |
 | 31-01-2017      | 4,100.00   | Elektricitet  | Forbrug af elektricitet | CC002       |
@@ -329,7 +329,7 @@ Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Admin
 
 **Statistiske poster**
 
-| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |      Betegnelse                   | Størrelsesorden  |
+| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |      Beskrivelse                   | Størrelsesorden  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | Personale | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00   |

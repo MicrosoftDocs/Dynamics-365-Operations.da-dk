@@ -3,7 +3,7 @@ title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651684"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760393"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner, der kan bruges til at forbedre brugernes produktivitet, oprette mere interessante visninger af dine data og få meningsfuld indsigt i dine data. Denne artikel dækker følgende funktioner: 
 
 -  Beregner totaler
--  Gruppering af data
 -  Skrive forud i forhold til systemet
 -  Evaluere matematiske udtryk 
+-  Gruppere data i tabelformat (aktiveres separat ved hjælp af funktionen **(Prøveversion) Gruppering i gitre**)
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
@@ -71,21 +70,6 @@ Hvis beregningen tager for lang tid, kan du annullere operationen ved at klikke 
 
 Totaler opdateres automatisk, efterhånden som du opdaterer, sletter eller opretter rækker i datasættet.  
 
-## <a name="grouping-data"></a>Gruppering af data
-Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel, og ved brug af pivottabeller tillader funktionen **Gruppering** i gitre i tabelform brugere at organisere deres data på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
-
-Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny "Gruppér efter kolonne" til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe: 
--  Dataværdi for gruppen 
--  Kolonneetiket (disse oplysninger vil især være nyttige, når der ydes støtte til grupper på flere niveauer.)
--  Antallet af datarækker i denne gruppe
--  Subtotaler for enhver kolonne, der er konfigureret til at vise totaler
-
-Når [Gemte visninger](saved-views.md) er aktiveret, kan denne gruppering gemmes via tilpasning som del af en visning for at få hurtig adgang, når du næste gang besøger siden.  
-
-Hvis du vælger **Gruppér efter denne kolonne** for en anden kolonne, erstattes den oprindelige gruppering, da kun et grupperingsniveau understøttes i version 10.0.9 med platformsopdatering 33.
-
-Hvis du vil fortryde gruppering i et gitter, skal du højreklikke på grupperingskolonnen og vælge **Opdel gruppe**.  
-
 ## <a name="typing-ahead-of-the-system"></a>Skrive forud i forhold til systemet
 I mange forretningsscenarier er muligheden for hurtigt at indtaste data i systemet meget vigtig. Før det nye gitterkontrolelement blev introduceret, kunne brugerne kun ændre data i den aktuelle række. Før de kunne oprette en ny række eller skifte til en anden række, var de tvunget til at vente på, at systemet havde valideret eventuelle ændringer. I et forsøg på at reducere den mængde tid, som brugerne venter på, at disse valideringer udføres, og for at forbedre brugerproduktiviteten justerer det nye gitter disse valideringer, så de er asynkrone. Brugeren kan derfor flytte til andre rækker for at foretage ændringer, mens tidligere valideringer af rækker venter. 
 
@@ -109,6 +93,32 @@ Som en produktivitetsbooster kan brugerne indtaste matematiske formler i numeris
 
 Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Du kan få flere oplysninger om de understøttede operatorer og den understøttede syntaks i [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## <a name="grouping-tabular-data"></a>Gruppere data i tabelformat
+[!include [preview banner](../includes/preview-banner.md)]
+
+Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **(Prøveversion) Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
+
+Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny **Gruppér efter kolonne** til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe: 
+-  Dataværdi for gruppen 
+-  Kolonnenavn (disse oplysninger vil især være nyttige, når der understøttes grupper på flere niveauer).  
+-  Antallet af datarækker i denne gruppe
+-  Subtotaler for enhver kolonne, der er konfigureret til at vise totaler
+
+Når [Gemte visninger](saved-views.md) er aktiveret, kan denne gruppering gemmes via tilpasning som del af en visning for at få hurtig adgang, når du næste gang besøger siden.  
+
+Hvis du vælger **Gruppér efter denne kolonne** for en anden kolonne, erstattes den oprindelige gruppering, da kun ét grupperingsniveau understøttes i version 10.0.9/Platform update 33.
+
+Hvis du vil fortryde gruppering i et gitter, skal du højreklikke på grupperingskolonnen og vælge **Opdel gruppe**.  
+
+### <a name="expanding-and-collapsing-groups"></a>Udvide og skjule grupper
+Den oprindelige gruppering af data vil få alle grupper udvidet. Du kan oprette opsummerede visninger af dataene ved at skjule de enkelte grupper, eller du kan bruge gruppeudvidelse og skjulning som hjælp til at navigere gennem dataene. Hvis du vil udvide eller skjule en gruppe, skal du vælge knappen vinkeltegn (>) i den tilsvarende gruppeoverskriftsrække. Bemærk, at de enkelte gruppers udvidede/skjulte tilstand **ikke** gemmes i personlig tilpasning.
+
+### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Markere og fjerne markering af rækker på gruppeniveau
+På samme måde som du kan markere (eller fjerne markeringen af) alle rækker i gitteret ved at markere afkrydsningsfeltet øverst i den første kolonne af gitteret, kan du også hurtigt markere (eller fjerne markeringen af) alle rækkerne i en gruppe ved at markere afkrydsningsfeltet i den tilsvarende gruppehovedrække. Afkrydsningsfeltet i gruppehovedrækken afspejler altid den aktuelle valgtilstand for rækker i den pågældende gruppe, uanset om alle eller ingen rækker er markeret, eller kun bestemte rækker er markeret.
+
+### <a name="hiding-column-names"></a>Skjule kolonnenavne
+Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehovedrækken. Fra og med version 10.0.14/Platform update 38 kan du vælge at udelade kolonnenavnet i gruppehovedrækker ved at vælge **Gitterindstillinger** > **Skjul gruppekolonnenavn**.
+
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg det nye gitterkontrolelement i mit miljø? 
 
@@ -131,7 +141,7 @@ Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktive
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
 Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i formularens `run()`-metode.
 
-        this.forceLegacyGrid();
+ ```this.forceLegacyGrid();```
 
 Denne API anvendes, indtil oktober 2021-frigivelsen, når det nye gitterkontrolelement bliver obligatorisk. Rapportér eventuelle problemer til Microsoft, som kræver, at denne API kan udnyttes. 
 

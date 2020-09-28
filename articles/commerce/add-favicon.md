@@ -3,7 +3,7 @@ title: Tilføj en favicon
 description: I dette emne forklares det, hvordan du føjer et favoritikon til webstedet.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686784"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761147"
 ---
 # <a name="add-a-favicon"></a>Tilføj en favicon
 
@@ -58,30 +58,30 @@ Du opretter HTML-koden til favoritikonet ved hjælp af følgende HTML-streng. I 
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Oprette et sidefragment, der indeholder en metakode til dit favoritikon
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Oprette et fragment, der indeholder en metakode til dit favoritikon
 
-Følg disse trin for at oprette et sidefragment, der indeholder et metatag til dit favoritikon.
+Følg disse trin for at oprette et fragment, der indeholder en metakode til dit favoritikon.
 
 1. Gå til **Fragmenter**, og vælg derefter **Ny**.
-1. Vælg **Metakoder** i dialogboksen **Nyt sidefragment** som det modul, sidefragmentet er baseret på.
-1. Angiv et navn til sidefragmentet, og vælg derefter **OK**.
+1. Vælg **Metakoder** i dialogboksen **Nyt fragment** som det modul, fragmentet er baseret på.
+1. Angiv et navn til fragmentet, og vælg derefter **OK**.
 1. Vælg det underordnede **Standardmetamoder** i fragmenthierarkitræet.
 1. Vælg **Tilføj** under **Metakoder** i ruden til højre, og angiv derefter den HTML-streng, du oprettede til favoritikonet tidligere. 
-1. Vælg **Afslut redigering**, og vælg derefter **Publicer** for at publicere sidefragmentet.
+1. Vælg **Afslut redigering**, og vælg derefter **Publicer** for at publicere fragmentet.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Føj sidefragmentet for metakoder til HTML-hovedsektionen for dine sider
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Føj fragmentet for metakode til HTML-hovedsektionen på dine sider
 
-Følge disse trin for at føj sidefragmentet for metakoder til sektionen for HTML-**hoved** på dine sider.
+Følge disse trin for at føj fragmentet for metakoder til sektionen for HTML-**hoved** på dine sider.
 
 1. Gå til **Skabeloner**, åbn skabelonen for de sider, du vil føje dit favoritikon til, og vælg derefter **Rediger**.
-1. Vælg ellipseknappen (**...**) i skabelonhierarkitræet til højre for containeren i **HTML-hovedet**, og vælg derefter **Tilføj sidefragment**.
-1. Vælg det sidefragment for metakoder, du oprettede tidligere, i dialogboksen **Vælg sidefragment**, og vælg derefter **OK**.
+1. Vælg ellipseknappen (**...**) i skabelonhierarkitræet til højre for containeren i **HTML-hovedet**, og vælg derefter **Tilføj fragment**.
+1. Vælg det fragment for metakoder, du oprettede tidligere, i dialogboksen **Vælg fragment**, og vælg derefter **OK**.
 1. Vælg **Afslut redigering**, og vælg derefter **Publicer** for at publicere skabelonen.
 
 > [!NOTE]
-> Hvis webstedet bruger mere end én skabelon, skal du føje sidefragmentet for metakoder til dem alle.
+> Hvis webstedet bruger mere end én skabelon, skal du føje fragmentet for metakoder til dem alle.
 
-Når du får vist sider, der er baseret på den skabelon, du har føjet til sidefragmentet for metakoder, burde du nu kunne se favoritikonet på browserfanen.
+Når du får vist sider, der er baseret på den skabelon, du har føjet til fragmentet for metakoder, burde du nu kunne se favoritikonet på browserfanen.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

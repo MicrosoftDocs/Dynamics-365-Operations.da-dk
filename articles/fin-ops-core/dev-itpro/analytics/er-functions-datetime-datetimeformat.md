@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e550b0c7634c7aac3f8c597a1c1eac3f8125e3b
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 65b988e6c58aed35577288e01157b8c1f76e6efd
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070707"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744857"
 ---
-# <a name="DATETIMEFORMAT">ER-funktionen DATETIMEFORMAT</a>
+# <a name="datetimeformat-er-function"></a>ER-funktionen DATETIMEFORMAT
 
 [!include [banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Når funktionen `DATETIMEFORMAT` konverterer en given dato-/klokkeslætsværdi, 
 
 ## <a name="example-3"></a>Eksempel 3
 
-`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returnerer strengværdien **2019-11-12T08:00:00.0000000-08:00**, når den kaldes under en proces, der blev initieret af en programbruger, der har tidszoneværdien  **(GMT-08:00) Pacific Time (USA og Canada)** i afsnittet **Sprog og lande-/områdepræferencer**.
+`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returnerer strengværdien **2019-11-12T08:00:00.0000000-08:00**, når den kaldes under en proces, der blev initieret af en programbruger, der har tidszoneværdien **(GMT-08:00) Pacific Time (USA og Canada)** i afsnittet **Sprog og lande-/områdepræferencer**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

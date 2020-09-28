@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a67c8d0795d31464d900eb5aa82a6d93b689950c
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699596"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803009"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Forespørgsler og rapporter om farligt materiale
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management leverer forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
 
@@ -41,7 +42,7 @@ Hvis du leverer varer, der indeholder farligt materiale, skal du normalt generer
 1. Gå til **Lagerstedsstyring \> Opsætning \> Parametre til lagerstedsstyring**.
 2. Åbn fanen **Rapporter**. Angiv følgende felter i oversigtspanelet **Rapportparameter for farligt materiale**.
 
-    | Sektion | Felt | Betegnelse |
+    | Sektion | Felt | Beskrivelse |
     |---|---|---|
     | Multimodalt farligt gods | Forordningskode | Vælg den forordning, der skal bruges, når der genereres en rapport over **Multimodalt farligt gods**. |
     | Lagergrænser for farligt materiale | Forordningskode | Vælg den forordning, der skal anvendes ved evaluering af lagergrænser. |

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6585e44701160bf31c107c07226f992b12cf035e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550642"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760025"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore kørslen af ER-formater for at foretage fejlfinding af problemer med ydeevnen
 
@@ -101,7 +101,7 @@ Antag, at du er begyndt at designe en ny ER-løsning for at generere en ny rappo
 
 Antag, at du er færdig med at designe den første version af ER-løsningen. Du vil nu teste den i din forekomst og analysere kørselsydeevnen.
 
-### <a id='import-configuration'></a>Importere en ER-konfiguration fra RCS til Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfigurationer fra RCS til Finance and Operations
 
 1. Log på din programforekomst.
 2. I dette selvstudium skal du importere konfigurationer fra din RCS-forekomst (hvor du udformer dine ER-komponenter) i din forekomst (hvor du tester og til slut bruger dem). Du skal derfor sikre dig, at alle påkrævede artefakter er forberedt. Du kan finde instruktioner i proceduren [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
@@ -146,7 +146,7 @@ De tilsvarende versioner af datamodellen og modeltilknytningskonfigurationerne i
 
     ![Dialogboksen Brugerparametre](./media/GER-PerfTrace-GER-UserParameters.png)
 
-### <a id='run-format'></a>Køre ER-formatet
+### <a name="run-the-er-format"></a><a id='run-format'></a>Køre ER-formatet
 
 1. Vælg firmaet **DEMF**.
 2. Gå til **Virksomhedsadministration \> Elektronisk rapportering \> Konfigurationer**.
@@ -157,7 +157,7 @@ Bemærk, at den fil, der genereres, indeholder oplysninger om 265 posteringer fo
 
 ## <a name="review-the-execution-trace"></a>Gennemse kørselssporingen
 
-### <a id='export-trace'></a>Eksportere den genererede sporing fra programmet
+### <a name="export-the-generated-trace-from-the-application"></a><a id='export-trace'></a>Eksportere den genererede sporing fra programmet
 
 Performancesporing fjernes fra ER-kildeformatet og kan serialiseres til en ekstern zip-fil.
 
@@ -176,7 +176,7 @@ Performancesporing fjernes fra ER-kildeformatet og kan serialiseres til en ekste
 
 Bemærk, at tilknytningen mellem den performancesporing, der er genereret for det kørte ER-format og ER-modeltilknytningen, er baseret på den rodbeskrivelse, der blev brugt, og den fælles datamodel. Formatets versionsnummer og modeltilknytningen tages ikke i betragtning. Indstillingen af **Standard for modeltilknytning**-flaget for modeltilknytningen tages heller ikke i betragtning.
 
-### <a id='import-trace'></a>Import af den genererede sporing i RCS
+### <a name="import-the-generated-trace-into-rcs"></a><a id='import-trace'></a>Import af den genererede sporing i RCS
 
 1. I RCS i arbejdsområdet **Elektronisk rapportering** skal du vælge feltet **Rapporteringskonfigurationer**.
 2. Udvid elementet **Performancesporingsmodel** i konfigurationstræet på siden **Konfigurationer**, og vælg elementet **Performancesporingsformat**.
@@ -201,7 +201,7 @@ Bemærk, at tilknytningen mellem den performancesporing, der er genereret for de
 
 2. Luk siden **Formatdesigner**.
 
-### <a id='use-trace'></a>Bruge performancesporing til analyse i RCS – modeltilknytning
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><a id='use-trace'></a>Bruge performancesporing til analyse i RCS – modeltilknytning
 
 1. I RCS på siden **Konfigurationer** skal du vælge elementet **Tilknytning af performancesporing** i konfigurationstræet.
 2. Vælg **Designer** i handlingsruden.
@@ -301,7 +301,7 @@ Gentag trinnene i afsnittet [Importere en ER-konfiguration fra RCS til Finance a
 
 Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette emne for at generere en ny performancesporing.
 
-## <a name="review-the-execution-trace"></a>Gennemse kørselssporingen
+## <a name="work-with-the-execution-trace"></a>Arbejde med sporingen af udførelsen
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Eksportere den genererede sporing fra programmet
 
@@ -347,7 +347,7 @@ Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette e
 
 Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indeholder performancesporingen i PerfView-format. Du kan derefter bruge værktøjet PerfView-performanceanalyse til at analysere detaljerne i ER-formatkørslen.
 
-![Sporingsoplysninger om det udførte ER-format i PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Oplysninger om performancesporing i PerfView-format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Brug eksterne værktøjer til at gennemse en udførelsessporing, der indeholder databaseforespørgsler
 
@@ -363,7 +363,7 @@ På grund af de forbedringer, der er foretaget i ER-strukturen, indeholder den p
     - Angiv indstillingen **Indsaml forespørgselsstatistikker** til **Ja**.
     - Angiv indstillingen **Sporingsforespørgsel** til **Ja**.
 
-    ![Dialogboksen Brugerparametre](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Sektionen Sporing af udførelse, dialogboksen Brugerparametre](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Køre ER-formatet
 
@@ -372,3 +372,8 @@ Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette e
 Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indeholder performancesporingen i PerfView-format. Du kan derefter bruge værktøjet PerfView-performanceanalyse til at analysere detaljerne i ER-formatkørslen. Denne sporing indeholder nu oplysninger om SQL-databaseadgang under udførelsen af ER-formatet.
 
 ![Sporingsoplysninger om det udførte ER-format i PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+- [Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder](er-calculated-field-ds-performance.md)

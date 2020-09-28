@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686664"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761291"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -59,10 +59,13 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 
 - **Overskriftskode** – Denne egenskab definerer overskriftskoden for produkttitlen. Hvis købsfeltet vises øverst på siden, skal denne egenskab indstilles til **h1** for at overholde tilgængelighedsstandarder. 
 
+- **Aktivér anbefalinger af "Køb tilsvarende"** – Denne egenskab giver feltet Køb mulighed for at vise links til produkter, der ligner den aktuelt viste vare. Denne funktion er tilgængelig i Commerce version 10.0.13 og nyere.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler, der kan bruges i et købefeltmodul
 
 - **Mediegalleri** – dette modul bruges til at vise billeder af et produkt på en side med produktdetaljer. Yderligere oplysninger om dette modul finder du i [Mediegallerimodul](media-gallery-module.md).
 - **Butiksvælger** – Dette modul viser en liste over butikker i nærheden, hvor en vare kan afhentes. Det giver brugerne mulighed for at angive en placering for butikker, der er i nærheden. Yderligere oplysninger om dette modul finder du i [Butiksvælgermodul](store-selector.md).
+- **Social deling** - Dette modul kan føjes til feltet Køb for at give brugere mulighed for at dele produktoplysninger på sociale medier. Du kan få flere oplysninger under [Modulet Social deling](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
 
@@ -85,8 +88,8 @@ Købsfeltmodulet henter produktoplysninger ved hjælp af Commerce Scale Unit-API
 Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. Vælg modulet **Købefelt** i dialogboksen **Nyt sidefragment**.
-1. Under **Sidefragmentnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
+1. Vælg modulet **Købefelt** i dialogboksen **Nyt fragment**.
+1. Under **Fragmentnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
 1. På pladsen **Media Gallery** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Media Gallery** og derefter **OK**.
 1. På pladsen **Butiksvælger** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
@@ -96,13 +99,13 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 1. Angiv **PDP-skabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
 1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
-1. Vælg pladsen **Hoved** på standardsiden, vælg ellipsen (**...**) og derefter **Tilføj sidefragment**.
-1. I dialogboksen **Vælg sidefragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
+1. Vælg pladsen **Hoved** på standardsiden, vælg ellipsen (**...**) og derefter **Tilføj fragment**.
+1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
 1. Vælg dialogboksen **Vælg en skabelon**, og vælg skabelonen **PDP-skabelon**. Under **Sidenavn** skal du angive **PDP-side** og derefter vælge **OK**.
-1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj sidefragment**.
-1. I dialogboksen **Vælg sidefragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
+1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj fragment**.
+1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Gem siden, og se en forhåndsvisning af den. Føj forespørgselsstrengparameteren **?productid=&lt;product id&gt;** til URL-adressen for eksempelsiden. På denne måde bruges produktkonteksten til at indlæse og gengive eksempelsiden.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. Der vises et købefelt på siden med produktdetaljer.
 
@@ -118,8 +121,6 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 [Indkøbskurvsmodul](add-cart-module.md)
 
-[Ikonmodul for indkøbskurv](cart-icon-module.md)
-
 [Betalingsmodul](add-checkout-module.md)
 
 [Ordrebekræftelsesmodul](order-confirmation-module.md)
@@ -127,5 +128,7 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 [Overskriftsmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+[Modulet Social deling](social-share-module.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)

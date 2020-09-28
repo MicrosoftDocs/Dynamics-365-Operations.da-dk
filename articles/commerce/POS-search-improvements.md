@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628903"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759929"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -45,7 +45,7 @@ En lokal produktsøgning søger i følgende produktegenskaber:
 
 - Produktnummer
 - Produktnavn
-- Betegnelse
+- Beskrivelse
 - Dimensioner
 - Stregkode
 - Søgenavn
@@ -93,7 +93,7 @@ I en ekstern kundesøgning vises kunde-id ikke for debitorer fra de andre juridi
 
 ### <a name="enhancements-to-local-customer-search"></a>Forbedringer af søgning efter lokale debitorer
 
-Søgninger, der er baseret på telefonnummeret, er blevet mere enkle. Disse søgninger ignorerer nu specialtegn som f.eks. mellemrum, bindestreger og parenteser, der kan være blevet tilføjet, da debitoren blev oprettet. Derfor behøver kasserere ikke spekulere på telefonnummerets format, når de søger. De kan også søge efter kunder ved at skrive et telefonnummer, der er delvis. Hvis et telefonnummer indeholder specialtegn, skal finder det også du ved at søge efter de tal, der vises efter de særlige tegn. Hvis en kundes telefonnummer f.eks. blev angivet som **123-456-7890**, kan en kasserer søge efter debitoren ved at skrive **123**, **456**, **7890** eller **1234567890** eller ved at angive de første par tal af telefonnummeret.
+Søgninger, der er baseret på telefonnummeret, er blevet mere enkle. Disse søgninger ignorerer nu specialtegn som f.eks. mellemrum, bindestreger og parenteser, der kan være blevet tilføjet, da debitoren blev oprettet. Derfor behøver kasserere ikke spekulere på telefonnummerets format, når de søger. Hvis en kundes telefonnummer f.eks. blev angivet som **123-456-7890**, kan en kasserer søge efter debitoren ved at skrive **1234567890** eller ved at angive de første par tal af telefonnummeret.
 
 > [!NOTE]
 > En kunde kan have flere telefonnumre og flere mails. Algoritmen til kundesøgning søger også i disse sekundære mails og telefonnumre, men på resultatsiden for kundesøgning vises kun den primære mail og det primære telefonnummer. Dette kan medføre en vis forvirring, fordi de returnerede kunderesultater ikke vil vise den søgte mail eller det søgte telefonnummer. I en fremtidig frigivelse har vi planlagt at forbedre skærmbilledet med kundesøgeresultater for at vise disse oplysninger.

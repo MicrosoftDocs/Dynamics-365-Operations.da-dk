@@ -3,7 +3,7 @@ title: Sidehovedmodul
 description: Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,24 +17,25 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: eb440a8fb67888c9411ad5998fead4d00982b436
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686616"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761218"
 ---
 # <a name="header-module"></a>Overskriftsmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
-I Dynamics 365 Commerce indeholder et sidehoved flere moduler, f.eks. sidehoved, navigationsmenu, søg, kampagnebanner og moduler til cookie-samtykke. 
+I Dynamics 365 Commerce konfigureres et sidehoved som et sidefragment, der omfatter modulerne til sidehoved, kampagnebanner og cookie-samtykke. 
 
-Sidehovedmodulet indeholder et websteds logo, links til navigationshierarkiet, links til andre sider på webstedet, et indkøbskurvsymbol, et hvidlistesymbol, logonindstillinger og søgelinjen. Et sidehovedmodul optimeres automatisk for den enhed, som webstedet vises på (med andre ord en stationær enhed eller en mobilenhed). På en mobilenhed er navigationslinjen f.eks. skjult på **Menu**-knappen (som undertiden kaldes en *hamburgermenu*).
+Sidehovedmodulet indeholder et websteds logo, links til navigationshierarkiet, links til andre sider på webstedet, et modul til indkøbskurveikon, et hvidlistesymbol, logonindstillinger og søgelinjen. Et sidehovedmodul optimeres automatisk for den enhed, som webstedet vises på (med andre ord en stationær enhed eller en mobilenhed). På en mobilenhed er navigationslinjen f.eks. skjult på **Menu**-knappen (som undertiden kaldes en *hamburgermenu*).
 
 Det følgende billede viser et eksempel på et sidehovedmodul på en startside.
 
@@ -48,33 +49,36 @@ Egenskaberne **Logo-billede** og **Logo-link** bruges til at definere et logo p�
 
 Egenskaben **Min konto-link** kan bruges til at definere kontosider, som ejeren af webstedet ønsker at vise hurtige links for i sidehovedet.
 
-## <a name="modules-that-are-available-in-a-header-module"></a>Moduler, der er tilgængelige i et sidehovedmodul
+## <a name="modules-that-are-available-within-a-header-module"></a>Moduler, der er tilgængelige i et sidehovedmodul
 
 Følgende moduler kan bruges i et sidehovedmodul:
 
-- **Navigationsmenu** – Navigationsmenuen repræsenterer hierarkiet for kanalnavigation og andre statiske navigationslinks. Kanalnavigationshierarkiet kan konfigureres i Dynamics 365 Commerce. Navigationsmenuen indeholder egenskaben **Navigationskilde**, der bruges til at angive navigationsmenupunkter i Detailservere og statiske menupunkter som en kilde. Hvis statiske menupunkter angives som kilde, kan der angives relative links til andre sider på webstedet. Konfigurerede elementer vises derefter som sidehovednavigation. 
+- **Navigationsmenu** – Navigationsmenuen repræsenterer hierarkiet for kanalnavigation og andre statiske navigationslinks. Du kan finde flere oplysninger i [Navigationsmenumodul](nav-menu-module.md).
 
 - **Søg** – Søgemodulet giver brugerne mulighed for at angive søgeord, så de kan søge efter produkter. URL-adressen til standardsøgesiden og parametrene for søgeforespørgslen skal angives på **Indstillinger for webside \> Udvidelser**. Søgemodulet har egenskaber, du kan bruge til at undertrykke søgeknappen eller -etiketten efter behov. Søgemodulet understøtter også indstillinger for automatisk at foreslå, f.eks. produkt-, nøgleords- og kategorisøgeresultater.
 
 - **Indkøbsvognikon** – Indkøbsvognikonmodulet repræsenterer indkøbsvognikonet, som viser antallet af varer i en indkøbsvogn på et givet tidspunkt. Du kan få flere oplysninger i [Modulet for indkøbsvognikon](cart-icon-module.md).
 
-## <a name="create-a-header-module-for-a-page"></a>Opret et sidehovedmodul for en side
+## <a name="create-a-header-fragment-for-a-page"></a>Oprette et sidehovedfragment for en side
 
-Følg disse trin for at oprette et sidehovedmodul.
+Følg disse trin for at oprette et sidehovedfragment.
 
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. I dialogboksen **Nyt sidefragment** skal du vælge modulet **Container**, angive et navn for sidefragmentet og derefter vælge **OK**.
-1. Vælg pladsen **Standardcontainer**, og angiv derefter egenskaben **Bredde** til **Udfyld container**, i egenskabsruden til højre.
+1. I dialogboksen **Nyt fragment** skal du vælge modulet **Container**, angive et navn for fragmentet og derefter vælge **OK**.
+1. Vælg pladsen **Standardcontainer**, og angiv derefter egenskaben **Bredde** til **Udfyld skærm** i egenskabsruden til højre.
 1. På pladsen **Standardcontainer** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulerne **Kampagnebanner** og **Cookie-samtykke**. Vælg derefter **OK**.
-1. På pladsen **Standardcontainer** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
-1. Vælg pladsen **Container**, og angiv derefter egenskaben **Bredde** til **Udfyld container**, i egenskabsruden til højre.
-1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Sidehoved** og derefter **OK**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulerne **Cookie-samtykke**, **Sidehoved** og **Kampagnebanner**. Vælg derefter **OK**.
+1. Vælg **Tilføj meddelelse** i ruden Egenskaber i modulet **Kampagnebanner**, og vælg derefter **Meddelelse**.
+1. Tilføj tekst og links i kampagneindholdet i dialogboksen **Meddelelse**, og vælg derefter **OK**.
+1. Tilføj og Konfigurer tekst og et link til websiden om beskyttelse af personlige oplysninger i ruden Egenskaber i modulet **Cookie-samtykke**.
 1. På pladsen **Navigationsmenu** i sidehovedmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Navigationsmenu** og derefter **OK**.
-1. Konfigurer egenskaberne som påkrævet i egenskabsruden for navigationsmenumodulet.
+1. Vælg **Detailserver** under **Kilde til navigationsmenu** i egenskabsruden for modulet navigationsmenu.
+1. Vælg **Tilføj menupunkt** i egenskabsruden for modulet navigationsmenu under **Statiske menupunkter**, og vælg derefter **Menupunkt**. 
+1. Angiv "Kontakt" i dialogboksen **Menupunkt** under **Menupunkttekst**.
+1. Vælg **Tilføj et link** under **Linkdestination for menupunkt** i dialogboksen **Menupunkt**.
+1. Vælg URL-adressen til websiden "Kontakt" i dialogboksen **Tilføj et link**, og vælg derefter **OK**.  
+1. Vælg **OK** i dialogboksen **Menupunkt**.
 1. På pladsen **Søg** i sidehovedmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Søg** og derefter **OK**.
 1. Konfigurer egenskaberne som påkrævet i egenskabsruden for søgemodulet.
@@ -94,16 +98,12 @@ Du kan medvirke til at sikre, at der vises et sidehoved på hver side, ved at f�
 
 [Container-modul](add-container-module.md)
 
-[Boksmodul til køb](add-buy-box.md)
+[Ikonmodul for indkøbskurv](cart-icon-module.md)
 
-[Indkøbskurvsmodul](add-cart-module.md)
+[Kampagnebannermodul](add-alert.md)
 
-[Modulet Indkøbskurvikon](cart-icon-module.md)
+[Navigationsmenumodul](nav-menu-module.md) 
 
-[Betalingsmodul](add-checkout-module.md)
-
-[Ordrebekræftelsesmodul](order-confirmation-module.md)
-
-[Overskriftsmodul](author-header-module.md)
+[Samtykke til cookie](cookie-consent-module.md)
 
 [Sidefodsmodul](author-footer-module.md)

@@ -3,7 +3,7 @@ title: Opdater proces
 description: Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS), der tilbyder kontinuerlige serviceopdateringer til program- og platformændringer.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431170"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759953"
 ---
 # <a name="update-process"></a>Opdater proces
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS
 
 Opdateringer udgives regelmæssigt til alle miljøer. Personale understøttes i overensstemmelse med [Livscykluspolitik for Microsoft](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), der giver leverer klare retningslinjer for tilgængeligheden af support.
 
-## <a name="release-cadence"></a>Opdateringstakt af versioner
+## <a name="release-cadence"></a>Opdateringstakt af versioner 
 
 Personale-opdateringer anvendes automatisk til alle miljøer. Der frigives to typer versioner af Personale:
 
@@ -56,14 +56,12 @@ Versioner gennemses, testes og valideres i et internt miljø. Når builds er god
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Undtagelser til udgivelsestakten i 2020
 
-Følgende datoer er undtagelser til den almindelige versionsplan:
+For at kunne tage højde for feriedage er frigivelsesplanen for november og december 2020 følgende.
 
-| Dato | Beskrivende tekst |
-| --- | --- |
-| Uge med 23. november | Ingen opdateringer |
-| Uge med 14. december | Kun mindre opdateringer |
-| Uge med 21. december | Ingen opdateringer |
-| Uge med 28. december | Ingen opdateringer |
+- Frigivelse i november: 2. november - 13. november
+- Frigivelse i december: 30. november - 11. december
+ 
+Den to-ugers frigivelsestakt vil fortsætte som sædvanligt den 11. januar 2021.
 
 ## <a name="communications"></a>Kommunikation
 

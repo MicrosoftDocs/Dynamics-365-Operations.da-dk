@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771511"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759250"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-indhold til omkostningsstyring
 
@@ -176,7 +176,7 @@ Data fra programmet bruges til at udfylde rapportsiderne i Power BI-indhold til 
 
 De vigtigste samlede målinger for følgende objekter bruges som grundlag af Power BI-indholdet.
 
-| Objekt                          | Samlede nøglemålinger | Datakilde til Finance and Operations | Felt               |
+| Objekt                          | Samlede nøglemålinger | Datakilde for Finance and Operations | Felt               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Beløb                     | CostObjectStatementCache               | Beløb              |
 | CostObjectStatementCacheMonthly | Kvantitet                   | CostObjectStatementCache               | Antal                 |
@@ -193,10 +193,10 @@ Tabellen nedenfor viser de beregnede målinger i Power BI-indholdet.
 | Antal for slutsaldo                | Antal for slutsaldo = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Netto ændring                         | Nettoændring = SUM(\[AMOUNT\]) |
 | Antal for nettoændring                    | Antal for nettoændring = SUM(\[QTY\]) |
-| Lageromsætningshastighed pr. beløb | Lageromsætningshastighed pr. beløb = if(OR(\[Gennemsnitlig saldo for lager\] \<= 0, \[Lagerafgange, salg eller forbrug\] \>= 0), 0, ABS(\[Lagerafgange, salg eller forbrug\])/\[Gennemsnitlig saldo for lager\]) |
+| Lageromsætningshastighed pr. beløb | Lageromsætningshastighed pr. beløb = if(OR(\[Gennemsnitlig saldo for lager\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Lagerafgange, salg eller forbrug\])/\[Gennemsnitlig saldo for lager\]) |
 | Gennemsnitlig saldo for lager          | Gennemsnitlig saldo for lager = ((\[Slutsaldo\] + \[Startsaldo\]) / 2) |
 | Dage for disponibel beholdning             | Dage for disponibel beholdning = 365 / CostObjectStatementEntries\[Lageromsætningshastighed pr. beløb\] |
-| Lagernøjagtighed                 | Lagernøjagtighed pr. beløb = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Lager, optalt beløb\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS\[Lager, optalt beløb\]))/\[Slutsaldo\])) |
+| Lagernøjagtighed                 | Lagernøjagtighed pr. beløb = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS(\[Lager, optalt beløb\]))/\[Slutsaldo\])) |
 
 Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger, så du kan få større granularitet og dybere analytisk indsigt.
 
@@ -207,4 +207,4 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Kategorihierarkier (tildelt rollen Omkostningsstyring) | Kategorihierarki, Kategoriniveau              |
 | Juridiske enheder                                          | Navne på juridisk enhed                              |
 | Regnskabskalendere                                        | Regnskabskalender, År, Kvartal, Periode, Måned   |
-| Sted                                                    | Id, Navn, Adresse, Stat, Land               |
+| Sted                                                    | Id, Navn, Adresse, Stat, Land/område               |

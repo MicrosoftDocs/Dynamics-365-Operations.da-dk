@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: aaf66b98717c72b4260e0a482400bdb29bbd9ecb
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699599"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803207"
 ---
 # <a name="set-up-hazardous-materials"></a>Konfigurere farlige materialer
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Hvis du vil bruge funktionalitet til farlige materialer, skal du først konfigurere de data, der kræves for at klassificere varer som farligt materiale. Når du derefter opretter en salgsordre, der indeholder en vare, der er klassificeret som farligt materiale, genererer systemet dokumentation til farligt materiale for den pågældende salgsordre, når den leveres.
 
@@ -63,16 +64,16 @@ Hvis du vil definere forordninger for farlige materialer, skal du gå til **Admi
 
 Hver forordning har en kode og en beskrivelse. I følgende tabel forklares de felter, der er tilgængelige i overskriften.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Forordningskode | Angiv en kode, der identificerer farligt materialets forordningspost. |
-| Betegnelse | Angiv en beskrivelse af forordningen om farligt materiale. |
+| Beskrivelse | Angiv en beskrivelse af forordningen om farligt materiale. |
 
 ### <a name="print-setup-fasttab"></a>Oversigtspanelet Udskriftsopsætning
 
 Hver forordning kan have ethvert antal udskriftsopsætninger. Du kan definere udskriftsopsætningerne i oversigtspanelet **Udskriftsopsætning**. I følgende tabel forklares de felter, der er tilgængelige for hver udskriftsopsætning.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Rækkefølge | Definer den rækkefølge, som felterne i forsendelsesteksten skal omtales i. |
 | Udskriftsfelt | Vælg det felt, der skal indgå i forsendelsesteksten. Ikke alle felter til farligt materiale kan udskrives. Det er kun de almindelige felter, der bruges til at definere forsendelsestekst i de forskellige forordninger, der vil være tilgængelige. Du skal definere det første udskriftsfelt som en feltseparator, der har en **Sekvens**-værdi på *0* (nul), så det kan bruges som separator mellem andre felter. Der kræves kun én reference til feltseparatoren.<p>Følgende værdier er tilgængelige:</p><ul></li><li>**Feltseparator** – Dette udskriftsfelt bruges som feltseparator for teksten. Der kræves kun én feltseparator i sekvensen. Normalt skal du angive **Sekvens**-værdien for dette udskriftsfelt til *0* (nul). Systemet vil søge efter en feltseparator og bruge den første, der findes på listen. Den tekstværdi, der bruges i strengen, kommer fra feltet **Udskriv efter**.</li><li>**Identifikation** – Dette udskriftsfelt indsætter [identifikationskoden og/eller beskrivelsen](#identification) i den trykte tekst.</li><li>**Klasse** – Dette udskriftsfelt indsætter [klassekoden og/eller beskrivelsen](#classes) i den trykte tekst.</li><li>**Division** – Dette udskriftsfelt indsætter [divisionskoden og/eller beskrivelsen](#divisions) i den trykte tekst.</li><li>**Emballagegruppe** – Dette udskriftsfelt indsætter [emballagegruppekoden og/eller beskrivelsen](#packing-group) i den trykte tekst.</li><li>**Tunnelkode og/eller -beskrivelse** – Dette udskriftsfelt indsætter [tunnelkode og/eller -beskrivelse](#tunnel) i den trykte tekst.</li><li>**Korrekt forsendelsesnavn** – Dette udskriftsfelt indsætter det [korrekte forsendelsesnavn](hazmat-items.md#hazmat-description) i den trykte tekst.</li><li>**Teknisk navn** – Dette udskriftsfelt indsætter [teknisk navn og/eller beskrivelse](#technical-name) i den trykte tekst.</li><li>**Transportkategori** – Dette udskriftsfelt indsætter [transportkategori og/eller -beskrivelse](#transport-category) i den trykte tekst.</li><li>**Opbevaring** – Dette udskriftsfelt indsætter [opbevaringskoden og/eller -beskrivelsen](#stowage) i den trykte tekst.</li><li>**Fasttekst** – Dette udskriftsfelt angiver den tekst, der er defineret i feltet **Fasttekst** for denne række.</li><li>**Etiketkode og/eller -beskrivelse** – Dette udskriftsfelt indsætter [etiketkode og/eller -beskrivelse](#label) i den trykte tekst.</li><li>**Flyemballage** – Dette udskriftsfelt indsætter [instruktionskoden og/eller -beskrivelsen til flyemballage](#packing-instruction) i den trykte tekst.</li><li>**Begrænset mængde** – Dette udskriftsfelt kontrollerer, om varen er markeret som [vare med begrænset mængde](hazmat-items.md#material-management) og angiver i så fald den tekst, der er defineret i feltet **Fasttekst** for denne række.</li><li>**Emballagebeskrivelse** – Dette udskriftsfelt indsætter [emballagebeskrivelsen](#packing-description) i den trykte tekst.</li></ul> |
@@ -88,7 +89,7 @@ Forordningen er en delt tabel, der ikke er specifik for de enkelte juridiske enh
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Leveringsmåde**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Firma | Vælg en juridisk enhed, der skal knyttes til denne forordning. |
 | Leveringsmåde | På basis af den juridiske enhed, du har valgt, skal du vælge den leveringsmåde, der skal knyttes til forordningen. |
@@ -99,7 +100,7 @@ Til referenceformål kan du få vist de lande/områder eller regioner, som en re
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Land/område**.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Land/område | Vælg et land/område, der skal tilknyttes forordningen. |
 
@@ -128,10 +129,10 @@ Disse opsætningsdata er ikke specifikke for de enkelte juridiske enheder. Derfo
 
 Hvis du vil konfigurere klassifikationsgrupper for farlige materialer, skal du gå til **Administration af produktoplysninger: \> Konfiguration \> Forsendelsesdokumentation til farligt materiale \> Klassifikationsgruppe for farligt materiale**. På siden **Klassifikationsgruppe for farligt materiale** kan du oprette ethvert antal grupper og konfigurere dem ved hjælp af de felter, der er beskrevet i følgende tabel.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Gruppekode | Angiv en kode som identifikation af gruppen. |
-| Betegnelse | Angiv en beskrivelse af gruppen. |
+| Beskrivelse | Angiv en beskrivelse af gruppen. |
 | Klassekode | Knyt et farligt materiales [klassekode](#classes) til gruppen. |
 | Afdelingskode | Knyt et farligt materiales [divisionskode](#divisions) til gruppen. |
 | Pakkegruppekode | Knyt en [emballagegruppekode](#packing-group) til gruppen. |
@@ -154,10 +155,10 @@ Klasser af farligt materiale arbejder sammen med divisioner, grupper og kompatib
 
 Hvis du vil konfigurere klasser af farlige materialer, skal du gå til **Administration af produktoplysninger: \> Konfiguration \> Forsendelsesdokumentation til farligt materiale \> Klasse af farligt materiale**. På siden **Klasse af farligt materiale** kan du oprette ethvert antal klasser og konfigurere dem ved hjælp af de felter, der er beskrevet i følgende tabel.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Klassekode | Angiv en kode som identifikation af klassen. Du kan definere denne kode for varen. Den bruges derefter på opslagslister, når du knytter en klasse af farligt materiale til en frigivet vare. |
-| Betegnelse | Angiv en beskrivelse af klassen. |
+| Beskrivelse | Angiv en beskrivelse af klassen. |
 
 ## <a name="hazardous-material-divisions"></a><a name="divisions"></a>Divisioner af farligt materiale
 
@@ -175,10 +176,10 @@ Divisioner af farligt materiale arbejder sammen med klasser, grupper og kompatib
 
 Hvis du vil konfigurere divisioner for farlige materialer, skal du gå til **Administration af produktoplysninger: \> Konfiguration \> Forsendelsesdokumentation til farligt materiale \> Division af farligt materiale**. På siden **Division af farligt materiale** kan du oprette ethvert antal divisioner og konfigurere dem ved hjælp af de felter, der er beskrevet i følgende tabel.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Division | Angiv en kode, der skal bruges som referencenummer for divisionen. |
-| Betegnelse | Angiv en beskrivelse af divisionen. |
+| Beskrivelse | Angiv en beskrivelse af divisionen. |
 | Klasse | Find og tildel den klasse, som divisionen tilhører. |
 
 ## <a name="hazardous-material-compatibility-groups"></a><a name="compatibility-groups"></a>Kompatibilitetsgrupper for farlige materialer
@@ -193,16 +194,16 @@ Hvis du vil konfigurere kompatibilitetsgrupper for farlige materialer, skal du g
 
 Hver kompatibilitetsgruppe har en kode og en beskrivelse. I følgende tabel forklares de felter, der er tilgængelige i overskriften.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Kompatibilitetsgruppe | Angiv en kode som identifikation af kompatibilitetsgruppen |
-| Betegnelse | Angiv en beskrivelse af kompatibilitetsgruppen. |
+| Beskrivelse | Angiv en beskrivelse af kompatibilitetsgruppen. |
 
 ### <a name="compatibility-group-details"></a>Detaljer for kompatibilitetsgruppe
 
 Hver kompatibilitetsgruppe fastslår en liste over klasser og divisioner af farligt materiale, der kan leveres sammen.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Klasse | Vælg en klasse af farligt materiale, der er kompatibel med alle andre klasser i gruppen. |
 | Division | Vælg en division af farligt materiale, der tilhører den valgte klasse. |
@@ -229,10 +230,10 @@ Specifikationen *Identifikation af farligt materiale* identificerer klassen elle
 
 Hvis du vil konfigurere værdier for denne specifikation, skal du gå til **Administration af produktoplysninger: \> Konfiguration \> Forsendelsesdokumentation til farligt materiale \> Identifikation af farligt materiale**. På siden **Identifikation af farligt materiale** kan du oprette ethvert antal værdier og konfigurere dem ved hjælp af de felter, der er beskrevet i følgende tabel.
 
-| Felt | Betegnelse |
+| Felt | Beskrivelse |
 |---|---|
 | Identifikation | Angiv en kode, der skal bruges som referencenummer, der identificerer denne klasse af farligt materiale. |
-| Betegnelse | Angiv en beskrivelse af denne klasse. |
+| Beskrivelse | Angiv en beskrivelse af denne klasse. |
 | Begræns fra lufttransport | Markér dette afkrydsningsfelt for at angive, at denne klasse af farligt materiale ikke skal transporteres ad luftvejen. |
 | Begræns fra søtransport | Markér dette afkrydsningsfelt for at angive, at denne klasse af farligt materiale ikke skal transporteres ad søvejen. |
 

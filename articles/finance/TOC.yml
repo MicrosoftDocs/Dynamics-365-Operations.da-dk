@@ -68,8 +68,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Nyheder eller ændringer i Finance
                   items:
-                    - name: Nyheder eller ændringer i Finance-startsiden
+                    - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.14 (november 2020)
+                      href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (oktober 2020)
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (august 2020)
@@ -412,6 +414,8 @@
                   href: accounts-receivable/set-up-collections.md
                 - name: Gennemse oplysninger om rykkere
                   href: accounts-receivable/tasks/review-collections-information.md
+                - name: Automatiseret opkrævningsproces
+                  href: accounts-receivable/collections-process-automate.md
                 - name: Konfiguration af kreditstyring
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Oplysninger om konfiguration af kreditstyring
@@ -756,6 +760,8 @@
                   href: fixed-assets/175-percent-reducing-balance-depreciation.md
                 - name: 200 procent saldoafskrivning
                   href: fixed-assets/200-percent-reducing-balance-depreciation.md
+                - name: Metode til princip for halvårlig afskrivning
+                  href: fixed-assets/half-year-depreciation-methodology.md
                 - name: Straksafskrivning
                   href: fixed-assets/bonus-depreciation.md
                 - name: Konfigurere straksafskrivning
@@ -1013,7 +1019,27 @@
             - name: Overføre et tilbud til et projekt
               href: project-management/transfer-quote-new-existing-project.md
             - name: Projektressourcer
-              href: project-management/project-resourcing.md
+              items:
+                - name: Oversigt over projektressourcer
+                  href: project-management/project-resourcing.md
+                - name: Konfigurere projektressourcer
+                  href: project-management/set-up-project-resources.md
+                - name: Administrere ressourcekompetencer
+                  href: project-management/manage-resource-competencies.md
+                - name: Opret et nyt projekt
+                  href: project-management/create-new-project.md
+                - name: Konfigurere rollebaserede priser
+                  href: project-management/set-up-role-based-pricing.md
+                - name: Oprette et projektteam
+                  href: project-management/create-project-team.md
+                - name: Synkronisere ressourcekapacitet
+                  href: project-management/synchronize-resource-capacity.md
+                - name: Ydeevne for projektressourceplanlægning
+                  href: project-management/project-scheduling-performance.md
+                - name: Konfigurere roller i skabeloner til arbejdsopgavehierarki
+                  href: project-management/set-up-roles-wbs-template.md
+                - name: Ressourceopfyldelse for planlagte ressourcer
+                  href: project-management/resource-fulfillment-planned-resources.md
             - name: Modtage varer på indkøbsordre ud fra varebehov
               href: project-management/tasks/receive-items-purchase-order-item-requirement.md
             - name: Arbejdsopgavehierarkier
@@ -1224,11 +1250,21 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Momsopgørelse
                   href: localizations/emea-aut-vat-statement-details.md
+            - name: Bahrain
+              items:
+                - name: Oversigt for Bahrain
+                  href: localizations/bahrain.md
+                - name: Konfigurere fakturalayout for Bahrain
+                  href: localizations/emea-bhr-invoice-layout.md
+                - name: Momsopgørelse for Bahrain
+                  href: localizations/emea-bhr-vat-declaration.md
+                - name: Deadline for fakturaudstedelse
+                  href: localizations/gcc-invoice-issue-deadline.md
             - name: Belgien
               items:
                 - name: Oversigt for Belgien
                   href: localizations/belgium.md
-                - name: CODA-bankkontoudtog
+                - name: Coded Statement Of Account-bankkontoudtog (CODA - BE)
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Oprette og overføre posteringer til BLWI
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
@@ -1496,6 +1532,8 @@
                   href: localizations/emea-amount-printing-forms.md
                 - name: Momsopgørelse
                   href: localizations/emea-cze-vat-statement-details.md
+                - name: Momsopgørelse (Den Tjekkiske Republik)
+                  href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Årsafslutning
                   href: localizations/emea-cze-hun-year-end.md
             - name: Danmark
@@ -1780,6 +1818,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Onlinefaktureringssystem
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Udskudte momsberegninger
+                  href: localizations/emea-hun-deferred-vat.md
             - name: Island
               items:
                 - name: Oversigt for Island
@@ -2238,13 +2278,17 @@
                   href: localizations/tasks/use-assemble-list-fixed-asset.md
                 - name: Bruge demonteringsliste til anlægsaktiver
                   href: localizations/tasks/use-disassemble-list-fixed-assets.md
+            - name: Kuwait
+              items:
+                - name: Oversigt for Kuwait
+                  href: localizations/kuwait.md
             - name: Letland
               items:
                 - name: Oversigt for Letland
                   href: localizations/latvia.md
                 - name: Regnskab for anlægsaktiver
                   href: localizations/emea-lva-fixed-assets-accounting.md
-                - name: Sporing af ændret anlægsaktivlokation
+                - name: Sporing af ændret anlægsaktivlokalitet
                   href: localizations/emea-lva-fixed-assets-location-fields-change.md
                 - name: Nummerering af faktura og følgeseddel
                   href: localizations/emea-invoices-packing-slips-numbering.md
@@ -2288,6 +2332,8 @@
                   href: localizations/tasks/my-00007-self-billed-invoices.md
                 - name: Konfigurere GST-afhjælpningssætninger
                   href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+                - name: SST-02-opgørelse for Malaysia
+                  href: localizations/apac-mys-sst-declaration.md
             - name: Mexico
               items:
                 - name: Oversigt for Mexico
@@ -2328,13 +2374,17 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Registreringsnumre for kreditorer
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Holland
+            - name: Oman
+              items:
+                - name: Oversigt for Oman
+                  href: localizations/oman.md
+            - name: Nederlandene
               items:
                 - name: Oversigt for Nederlandene
                   href: localizations/netherlands.md
                 - name: Momsopgørelse
                   href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektroniske momsangivelser (EVAT)
+                - name: Elektroniske momsopgørelser (EVAT)
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
@@ -2386,6 +2436,10 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Delt kreditor/debitor-kursdifference
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+            - name: Qatar
+              items:
+                - name: Oversigt for Qatar
+                  href: localizations/qatar.md
             - name: Rusland
               items:
                 - name: Oversigt for Rusland
@@ -2724,6 +2778,8 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: 1099-blanket for den offentlige sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
+                - name: Konfigurere kreditorer til 1099-rapportering (US)
+                  href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
         - name: Human Resources
           items:
             - name: Oversigt over Human Resources
@@ -2970,11 +3026,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Standardrapporteringsoplevelser i IaaS-miljøer
                   href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+                - name: Indstillinger for visning af dokumentrapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
                 - name: Udskrivning
                   items:
                     - name: Oversigt over udskrivning af dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
-                    - name: Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning
+                    - name: Installere agenten for ruteplanlægning af dokumenter for at aktivere netværksudskrivning
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
@@ -3437,7 +3495,11 @@
                     - name: Bruge RAW XML til at tilføje indhold
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                     - name: Understøtte parameteriserede opkald om datakilder af typen BEREGNET FELT
-                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: Forbedre brugeroplevelsen og vedligeholdelse af brugervenligheden
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                        - name: Forbedre ydeevnen for dataadgang
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
                     - name: ER-datakilder på tværs af firmaer
                       href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Bruge DETALJER OM ØKONOMISKE DIMENSIONER-datakilder

@@ -3,7 +3,7 @@ title: Oprette en orlovs- og fraværsplan
 description: Opret orlovsplaner i Dynamics 365 Human Resources for forskellige typer orlov.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428703"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796491"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Oprette en orlovs- og fraværsplan
 
@@ -43,7 +43,15 @@ Du kan også oprette stillingsbaserede orlovsfrynsegoder, f.eks. frynsegodetimer
 
 2. Under **Oplysninger** skal du angive **Navn**, **Startdato**, **Beskrivelse** og **Orlovstype** for din plan.
 
-Hvis funktionen **Konfigurer flere orlovstyper for en enkelt orlovs- og fraværsplan** er aktiveret, konfigureres orlovstyperne i **Periodiseringsplan** i stedet for under **Detaljer**. For hver post i periodiseringsplanens tabel kan du definere en orlovstype.
+Hvis funktionen **Konfigurer flere orlovstyper for en enkelt orlovs- og fraværsplan** er aktiveret, konfigureres orlovstyperne i **Periodiseringsplan** i stedet for under **Detaljer**. For hver post i periodiseringsplanens tabel kan du definere en orlovstype. Når denne funktion er aktiveret, skal du også bruge nye dataenheder til integrationer eller andre scenarier, hvor du skal bruge enheder. 
+
+De nye enheder er:
+
+- Banktransaktion for orlov og fravær V2
+- Orlovs- og fraværstilmelding V2
+- Orlovs- og fraværsplanniveau V2
+- Orlovs- og fraværsplan V2
+- Orlovsanmodning V2
 
  > [!IMPORTANT]
    > Du kan ikke deaktivere denne funktion, når du har aktiveret den.

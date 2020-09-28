@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
+ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 083b6cb604115c3f2a72a5ba23199e1517fc1ea1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f07483d0ccb8593f0e7ce8dbd3c83f63ce60d457
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771894"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759370"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -51,7 +51,7 @@ Forestil dig, at en organisation har følgende struktur med 4 bærere.
 
 **Dimension for omkostningsobjekt**
 
-| Bærere | Betegnelse          |
+| Bærere | Beskrivelse          |
 |--------------|-----------|
 | CC001        | Personale        |
 | CC002        | Finans   |
@@ -60,7 +60,7 @@ Forestil dig, at en organisation har følgende struktur med 4 bærere.
 
 **Dimension for omkostningselement**
 
-| Omkostningselementer | Betegnelse | Type    |
+| Omkostningselementer | Beskrivelse | Type    |
 |---------------|-------------|---------|
 | 1001          | Elektricitet | Primær |
 | 1002          | Lønninger    | Primær |
@@ -115,7 +115,7 @@ Når finansposterne er behandlet, ser omkostningssaldoposten efter omkostningsob
 
 **Statistisk dimension**
 
-| Statistiske elementer |    Betegnelse   |
+| Statistiske elementer |    Beskrivelse   |
 |----------------------|------------------|
 | SE-1                 | Personale-tjenester      |
 | SE-2                 | Finans-tjenester |
@@ -124,7 +124,7 @@ Omkostningsobjektet CC001 personale bidrager med personaletjenester til flere om
 
 Personale-tjenester forbruges ud fra følgende distribution af størrelsesorden.
 
-| Omkostningsobjekt | Betegnelse |   Personale-tjenester |
+| Omkostningsobjekt | Beskrivelse |   Personale-tjenester |
 |-------------|-------------|----|
 | CC002       | Finans     | 35 |
 | CC003       | Samling    | 55 |
@@ -134,14 +134,14 @@ Omkostningsobjektet CC002 Finans bidrager til flere omkostningsobjekter.
 
 Finans-tjenester forbruges ud fra følgende distribution af størrelsesorden.
 
-| Omkostningsobjekt |   Betegnelse    |  Finans-tjenester   |
+| Omkostningsobjekt |   Beskrivelse    |  Finans-tjenester   |
 |-------------|------------------|----|
 | CC003       | Samling         | 65 |
 | CC004       | Emballage        | 35 |
 
 Politikker for omkostningsfordeling kan konfigureres på følgende måde.
 
-| Navn på politik | Betegnelse     | Dimensionshierarki for omkostningsobjekt | Statistisk dimension | Dimension for omkostningselement |
+| Navn på politik | Beskrivelse     | Dimensionshierarki for omkostningsobjekt | Statistisk dimension | Dimension for omkostningselement |
 |-------------|-----------------|---------------------------------|-----------------------|------------------------|
 | 2017        | Omkostningstildeling | Organisation                    | Statistiske elementer  | Omkostningselementer          |
 
@@ -190,7 +190,7 @@ Opret en **Politik for omkostningstotaler**, hvor hver bærer er knyttet til et 
 
 **Politikker for omkostningstotaler**
 
-| Navn på politik | Betegnelse | Dimensionshierarki for omkostningsobjekt | Dimensionshierarki for omkostningselement |
+| Navn på politik | Beskrivelse | Dimensionshierarki for omkostningsobjekt | Dimensionshierarki for omkostningselement |
 |-------------|-------------|---------------------------------|----------------------------------|
 | 2017        | Omkostningsforløb   | Organisation                    | Driftsregnskab          |
 
@@ -215,7 +215,7 @@ Systemet anvender nu **Politik for omkostningstotaler**, når det opretter **Kla
 
 **Kladdeposteringer for omkostningsobjektsaldo**
 
-| Regnskabsdato | Omkostningsobjekt | Betegnelse  | Omkostningselement | Betegnelse |  Beløb |
+| Regnskabsdato | Omkostningsobjekt | Beskrivelse  | Omkostningselement | Beskrivelse |  Beløb |
 |-----------------|-------------|--------------|----------|-----------|-----------|
 | 01-31-2017      | CC001       | Personale           | SC-CC001 | Personale        | 10.100,00 |
 | 01-31-2017      | CC002       | Finans      | SC-CC002 | Finans   | 17.735,00 |
@@ -231,7 +231,7 @@ Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt**, 
 
 **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt**
 
-| Dimensionsmedlem for omkostningselement | Betegnelse |  Beløb   |
+| Dimensionsmedlem for omkostningselement | Beskrivelse |  Beløb   |
 |-------------------------------|-------------|-----------|
 | 1001                          | Elektricitet | 200.00    |
 | 1002                          | Lønninger    | 10.000,00 |
@@ -240,7 +240,7 @@ Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt**, 
 
 **Omkostningsposter, der er genereret af beregningen af fast omkostning**
 
-| Omkostningsobjekt | Betegnelse  | Omkostningselement   | Betegnelse  |        Beløb     |       Regnskabsdato     |
+| Omkostningsobjekt | Beskrivelse  | Omkostningselement   | Beskrivelse  |        Beløb     |       Regnskabsdato     |
 |-------------|--------------|----------|-----------------|-------------|------------|
 | CC001       | Personale           | SC-CC001 | Personale              | 10.100,00. \- | 01-31-2017 |
 | CC002       | Finans      | SC-CC001 | Personale              | 3.535,00    | 01-31-2017 |

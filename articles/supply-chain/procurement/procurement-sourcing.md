@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209208"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813828"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for indkøb og forsyning
 
@@ -55,7 +55,7 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 -   [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md)
 -   [Konfigurere og vedligeholde kreditorsamarbejde](set-up-maintain-vendor-collaboration.md)
--   [Demoscript for indgående konsignationslager til Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvidbog)
+-   [Demoscript for indgående konsignationslager til Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(hvidbog)
 -   [Overvåge konsignationslager ved hjælp af kreditorsamarbejde](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Samarbejd med leverandører ved at bruge leverandørportalen](collaborate-vendors-vendor-portal.md) (kun Dynamics AX-versioner fra februar 2016 og maj 2016)
 -   [Leverandørportalens brugersikkerhed ](configure-security-vendor-portal-users.md) (kun versioner fra 2016 og maj 2016 af Finance and Operations)
@@ -98,7 +98,7 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 -   [Indkøbs- og forsyningsarbejdsgange](procurement-sourcing-workflows.md)
 -   [Registrere modtagelsen af varer for indkøbsordren](tasks/record-receipt-goods-purchase-order.md)
 -   [Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
--   [Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (hvidbog)
+-   [Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://www.microsoft.com/download/details.aspx?id=101821) (hvidbog)
 -   [Oversigt over indkøbspolitikker](purchase-policies.md)
 -   [Oprette indkøbspolitikker](tasks/create-purchasing-policies.md)
 

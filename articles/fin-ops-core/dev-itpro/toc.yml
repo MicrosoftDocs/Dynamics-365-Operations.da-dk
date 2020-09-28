@@ -12,14 +12,14 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheder eller ændringer i platformsopdateringer
               items:
-                - name: Nyheder eller ændringer i opdateringer i platformstartsiden
+                - name: Nyheder eller ændringer på startsiden for platformopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformopdateringer til 10.0.14 (november 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platformopdateringer til 10.0.13 (oktober 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Platformsopdateringer til 10.0.12 (august 2020)
+                - name: Platformopdateringer til 10.0.12 (august 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Platformsopdateringer til 10.0.11 (juli 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede Platform-funktioner
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: X++-modelversionen i Azure Pipelines
                   href: dev-tools/pipeline-model-version.md
+                - name: Hente aktiver ved hjælp af Azure Pipelines
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Overføre aktiver ved hjælp af Azure Pipelines
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Installere aktiver ved hjælp af Azure Pipelines
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Oprette en LCS-forbindelse (Lifecycle Services) i Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Eksempelprogram til flådeadministration
               items:
                 - name: Komplet scenarie for eksempelprogram til flådeadministration

@@ -3,7 +3,7 @@ title: Tilføje scriptkode til sider på websteder for at understøtte telemetri
 description: I dette emne beskrives det, hvordan du føjer klientside-scriptkode til siderne på webstedet for at understøtte samlingen af telemetri på klientsiden.
 author: bicyclingfool
 manager: annbe
-ms.date: 03/20/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: a88f4f920154aafaa15a48af67365152e21111f7
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686808"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761243"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Tilføje scriptkode til sider på websteder for at understøtte telemetri
 
@@ -37,48 +37,48 @@ Web Analytics er et vigtigt værktøj, når du vil forstå, hvordan dine kunder 
 > [!NOTE]
 > Instruktionerne i dette emne gælder også for andre brugerdefinerede funktioner på klientsiden, som Microsoft Dynamics 365 Commerce ikke tilbyder som oprindelige funktioner.
 
-## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Oprette et sidefragment, der kan genbruges, til scriptkoden
+## <a name="create-a-reusable-fragment-for-your-script-code"></a>Oprette et fragment, der kan genbruges, til scriptkoden
 
-Et sidefragment giver dig mulighed for at genbruge indbygget eller ekstern scriptkode på alle sider på webstedet, uanset hvilken skabelon de bruger.
+Et fragment giver dig mulighed for at genbruge indbygget eller ekstern scriptkode på alle sider på webstedet, uanset hvilken skabelon de bruger.
 
-### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Oprette et sidefragment, der kan genbruges, til den indbyggede scriptkode
+### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a>Oprette et fragment, der kan genbruges, til den indbyggede scriptkode
 
-Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den indbyggede scriptkode i webstedsgeneratoren.
+Udfør følgende trin for at oprette et fragment, der kan genbruges, til den indbyggede scriptkode i webstedsgeneratoren.
 
 1. Gå til **Fragmenter**, og vælg derefter **Ny**.
-1. Vælg **Indbygget script** i dialogboksen **Nyt sidefragment**.
-1. Angiv et navn til fragmentet under **Sidefragmentnavn**, og vælg derefter **OK**.
-1. Vælg modulet **Indbygget standardscript** under det sidefragment, du har oprettet.
+1. Vælg **Indbygget script** i dialogboksen **Nyt fragment**.
+1. Angiv et navn til fragmentet under **Fragmentnavn**, og vælg derefter **OK**.
+1. Vælg modulet **Indbygget standardscript** under det fragment, du har oprettet.
 1. Angiv dit klientsidescript under **Indbygget script** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
 1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
 1. Vælg **Publicer**.
 
-### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Oprette et sidefragment, der kan genbruges, til den eksterne scriptkode
+### <a name="create-a-reusable-fragment-for-your-external-script-code"></a>Oprette et fragment, der kan genbruges, til den eksterne scriptkode
 
-Udfør følgende trin for at oprette et sidefragment, der kan genbruges, til den eksterne scriptkode i webstedsgeneratoren.
+Udfør følgende trin for at oprette et fragment, der kan genbruges, til den eksterne scriptkode i webstedsgeneratoren.
 
 1. Gå til **Fragmenter**, og vælg derefter **Ny**.
-1. Vælg **Eksternt script** i dialogboksen **Nyt sidefragment**.
-1. Angiv et navn til fragmentet under **Sidefragmentnavn**, og vælg derefter **OK**.
-1. Vælg modulet **Eksternt standardscript** under det sidefragment, du har oprettet.
+1. Vælg **Eksternt script** i dialogboksen **Nyt fragment**.
+1. Angiv et navn til fragmentet under **Fragmentnavn**, og vælg derefter **OK**.
+1. Vælg modulet **Eksternt standardscript** under det fragment, du har oprettet.
 1. Tilføj en ekstern eller relativ URL-adresse til den eksterne scriptkilde under **Scriptkilde** i egenskabsruden til højre. Konfigurer derefter andre indstillinger efter behov.
 1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
 1. Vælg **Publicer**.
 
-## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Føje et sidefragment, der indeholder scriptkode, til en skabelon
+## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Tilføje et fragment, der indeholder scriptkode, i en skabelon
 
-Udfør følgende trin for at føje et sidefragment, der indeholder scriptkode, til en skabelon, i webstedsgeneratoren.
+Udfør følgende trin for at føje et fragment, der indeholder scriptkode, til en skabelon, i webstedsgeneratoren.
 
 1. Gå til **Skabeloner**, og åbn skabelonen for de sider, du vil føje din scriptkode til.
 1. Udvid skabelon hierarkiet i ruden til venstre for at få vist pladsen **HTML-hoved**.
-1. Vælg ellipseknappen (**...**) i pladsen **HTML-hoved**, og vælg derefter **Tilføj sidefragment**.
+1. Vælg ellipseknappen (**...**) i pladsen **HTML-hoved**, og vælg derefter **Tilføj fragment**.
 1. Vælg det fragment, du har oprettet til scriptkoden.
 1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
 1. Vælg **Publicer**.
 
 ## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Føje et eksternt script eller indbygget script til en skabelon
 
-Hvis du vil indsætte et indbygget eller eksternt script direkte i et sæt sider, der styres af en enkelt skabelon, behøver du ikke oprette et sidefragment først.
+Hvis du vil indsætte et indbygget eller eksternt script direkte i et sæt sider, der styres af en enkelt skabelon, behøver du ikke oprette et fragment først.
 
 ### <a name="add-an-inline-script-directly-to-a-template"></a>Føje et indbygget script til en skabelon
 

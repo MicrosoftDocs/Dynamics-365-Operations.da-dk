@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
+ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 30229992151e6b7a34de7c10e266ecdd5ba2f7b7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e94a8a5ecdc636e73755460a89b08f7271cd3ae1
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551743"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759514"
 ---
 # <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring 
 
@@ -42,17 +42,17 @@ Når du vil konfigurere et arbejdsområde for omkostningsstyring, skal du klikke
 
 I oversigtspanelet **Generelt** kan du oprette et entydigt rapportlayout. Navnet på rapporten er en entydig identifikator, som brugerne kan genkende i arbejdsområdet **Omkostningsstyring**. Du kan også angive, om rapporten skal deles eller kun gælde internt for bogholdere.
 
-| Felt       | Betegnelse |
+| Felt       | Beskrivelse |
 |-------------|-------------|
 | Navn        | Angiv et entydigt navn til layoutet. |
-| Betegnelse | Angiv en mere detaljeret beskrivelse. |
+| Beskrivelse | Angiv en mere detaljeret beskrivelse. |
 | Publiceret   | Hvis du indstiller dette felt til **Ja**, kan en bruger, der er tildelt en af følgende roller, få vist rapporten i arbejdsområdet **Omkostningsstyring**:<ul><li>Vedligehold regnskabschef for omkostning</li><li>Lagerbogholder</li><li>Lagerregnskabsassistent</li><li>Controller til omkostningsobjekt</li></ul>Hvis du indstiller dette felt til **Nej**, er det kun brugere, der er tildelt en af følgende roller, der kan få vist rapporten i arbejdsområdet **Omkostningsstyring**:<ul><li>Vedligehold regnskabschef for omkostning</li><li>Lagerbogholder</li><li>Lagerregnskabsassistent</li></ul> |
 
 ### <a name="data-filtering"></a>Filtrering af data
 
 I oversigtspanelet **Filtrering af data** skal du definere datagrundlaget for rapporten. Brugerne af denne rapport får vist værdier i rapporten, når kildedataene er blevet behandlet.
 
-| Felt                                                             | Betegnelse |
+| Felt                                                             | Beskrivelse |
 |-------------------------------------------------------------------|-------------|
 | Finanspost for omkostningsregnskab                                            | Den **Finanspost for omkostningsregnskab**, som rapporten er baseret på. Den værdi, der er afledt af feltet **Omkostningskontrolenhed**. |
 | Omkostningskontrolenhed                                                 | Den værdi, du vælger, bestemmer den finanspostering for omkostningsregnskabet og de omkostningsobjekter, som rapporten skal baseres på. |
@@ -65,7 +65,7 @@ I oversigtspanelet **Filtrering af data** skal du definere datagrundlaget for ra
 
 Beregningen af faste omkostninger udfører flere beregningstrin på kildedataene, f.eks. klassificering af omkostningsfunktionalitet, omkostningsfordeling og omkostningstildeling. Beregning af flere faste omkostninger kan udføres for samme regnskabsperiode, i tilfælde af manglende kildedata eller regler, der skal opdateres. Alle beregninger af faste omkostninger gemmes med et entydigt id. Bogholderen kan vælge et specifikt id for beregning af faste omkostninger. Brugerne af rapporten, f.eks. ledere, kan se resultatet af beregningen af faste omkostninger i arbejdsområdet **Omkostningsstyring**.
 
-| Felt                  | Betegnelse |
+| Felt                  | Beskrivelse |
 |------------------------|-------------|
 | Regnskabskalenderperiode | Vælg den regnskabskalenderperiode, du vil tildele et id for beregning af faste omkostninger til.<blockquote>[!NOTE]<br>De regnskabsperioder, der er angivet i feltet, stammer fra den regnskabskalender, der er knyttet til finansposteringer for omkostningsregnskab.</blockquote> |
 | Aktuel version         | Vælg den relevante id for beregning af faste omkostninger. |
@@ -78,7 +78,7 @@ I oversigtspanelet **Regnskabsperioder pr. kolonne** vælger bogholderen, hvilke
 
 Værdierne i de markerede kolonner skal ganges med de valgte værdier i oversigtspanelet **Regnskabsperioder pr. kolonne**.
 
-| Felt                | Betegnelse |
+| Felt                | Beskrivelse |
 |----------------------|-------------|
 | Aktuel periode       | Saldoen for den aktuelle regnskabsperiode vises.<blockquote>[!NOTE]<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode.</blockquote> |
 | Forrige periode      | Saldoen for den forrige regnskabsperiode vises. Følgende formel bruges:<br>Aktuel regnskabsperiode – 1<blockquote>[!NOTE]<br>Som standard afledes den forrige periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode som den aktuelle periode. **Forrige periode** genberegnes derefter i overensstemmelse hermed.</blockquote> |
@@ -89,7 +89,7 @@ Værdierne i de markerede kolonner skal ganges med de valgte værdier i oversigt
 
 I oversigtspanelet **Kolonner, der skal vises for omkostninger** angiver bogholderen, hvilke kolonner rapportlayoutet skal indeholde. Der findes tre kategorier: fast omkostning, variabel omkostning og ikke-klassificeret omkostning.
 
-| Felt                 | Betegnelse |
+| Felt                 | Beskrivelse |
 |-----------------------|-------------|
 | Fast omkostning            | Denne kolonnetype viser de faste omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>[!NOTE]<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
 | Variabel omkostning         | Denne kolonnetype viser de variable omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>[!NOTE]<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
@@ -104,7 +104,7 @@ I oversigtspanelet **Kolonner, der skal vises for budgetterede omkostninger** an
 > [!NOTE]
 > Eftersom følgende felter fungerer på samme måde for det oprindelige budget og det reviderede budget, forklares de kun én gang.
 
-| Felt                     | Betegnelse |
+| Felt                     | Beskrivelse |
 |---------------------------|-------------|
 | Budget                    | Budgetsaldi vises pr. de markerede kolonner.<blockquote>[!NOTE]<br>Saldiene baseres på de budgetversioner, der er valgt i oversigtspanelet **Filtrering af data**.</blockquote> |
 | Budgetafvigelse           | Beregn og vis forskellen mellem de budgetterede og de faktiske værdier. Følgende formel bruges:<br>Budgetsaldo – faktisk saldo |

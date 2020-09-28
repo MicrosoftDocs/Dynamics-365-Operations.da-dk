@@ -3,7 +3,7 @@ title: Betalingsmodul
 description: I dette emne beskrives det, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 389e3e9d631574eac499f7c6146e2776b8126a52
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686736"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761099"
 ---
 # <a name="checkout-module"></a>Betalingsmodul
 
@@ -45,7 +45,7 @@ Det følgende billede viser et eksempel på et Fabrikam-betalingsmodul på en be
 
 Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en ordre. Hvis du vil indsamle alle de kundeoplysninger, der kræves, før en ordre kan placeres, skal der føjes yderligere moduler til udtjekningsmodulet. Detailhandlere har derfor fleksibilitet til at føje brugerdefinerede moduler til udtjekningen eller til at udelukke moduler ud fra behovene.
 
-| Egenskabsbetegnelse | Værdier | Betegnelse |
+| Egenskabsbetegnelse | Værdier | Beskrivelse |
 |----------------|--------|-------------|
 | Overskrift til udtjekning | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En overskrift til betalingsmodulet. |
 | Overskrift til Ordreoversigt | Overskriftstekst | En overskrift til sektionen Ordreoversigt i modulet. |
@@ -97,8 +97,8 @@ De fleste betalingsoplysninger, f. eks. leveringsadressen og leveringsmåden, ge
 Hvis du vil føje et betalingsmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. Vælg modulet **Betaling** i dialogboksen **Nyt sidefragment**.
-1. Under **Sidefragmentnavn** skal du angive navnet **Betalingsfragment** og derefter vælge **OK**.
+1. Vælg modulet **Betaling** i dialogboksen **Nyt fragment**.
+1. Under **Fragmentnavn** skal du angive navnet **Betalingsfragment** og derefter vælge **OK**.
 1. Vælg pladsen **Betalingsmodul**.
 1. Vælg blyantsymbolet i ruden Egenskaber til højre. Skriv overskriften i feltet, og vælg derefter markeringssymbolet.
 1. På pladsen **Betalingsoplysninger** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.

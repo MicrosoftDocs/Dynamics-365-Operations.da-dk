@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 128083b22bb14d9b445863a0ba1217f723727ee4
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597500"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775168"
 ---
 # <a name="warehouse-location-status"></a>Placeringsstatus for lagersted
 
@@ -77,7 +77,10 @@ Eksempelscenariet kræver, at du forbereder to lokationsprofiler.
 
 1. Gentag trin 3 ti 4 for profilen **PLUK-06**.
 
-### <a name="scenario"></a>Scenario
+> [!NOTE]
+> Når parametrene på lokationsprofilen (**Aktivér vare på lokation**, **Aktivér lokationsaktivitet**, **Aktivér lokationsstatus**) er angivet til *Ja*, vil systemet omgående opdatere de relevante lokationer ved at udføre jobbet *Konsistenskontrol af lagersteds placeringsstatus*.
+
+### <a name="scenario"></a>Scenarie
 
 1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Vælg **Ny**.

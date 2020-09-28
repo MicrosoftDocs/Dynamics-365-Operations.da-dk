@@ -3,7 +3,7 @@ title: Download af elektroniske rapporteringskonfigurationer fra Lifecycle Servi
 description: I dette emne beskrives det, hvordan du henter konfigurationer af elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934648"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810613"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du henter konfigurationer af elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
-
-Dette selvstudium fører dig gennem processen med at hente den nyeste version af konfigurationer af elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
+Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer af elektronisk rapportering (ER)](general-electronic-reporting.md#Configuration) fra det [delte aktivbibliotek](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
 1. Log på programmet ved hjælp af en af følgende roller:
 
@@ -41,36 +39,41 @@ Dette selvstudium fører dig gennem processen med at hente den nyeste version af
 
 2. Gå til **Organisationsadministration** &gt; **Arbejdsområder** &gt; **Elektronisk rapportering**.
 3. I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.
-4. I feltet **Microsoft** skal du klikke på **Lagre**.
+4. I feltet **Microsoft** skal du vælge **Lagre**.
 
-    [![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft-felt på siden Lokaliseringskonfigurationer](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. På siden **Konfigurationslagre** i gitteret, skal du vælge det eksisterende lager for **LCS**-typen. Hvis lageret ikke vises i gitteret, skal du følge disse trin:
 
-    1. Klik på **Tilføj** for at tilføje et nyt lager.
+    1. Vælg **Tilføj** for at tilføje et lager.
     2. Vælg **LCS** som lagertype.
-    3. Klik på **Opret lager**.
-    4. Hvis du bliver spurgt, skal du følge godkendelsesinstruktionerne.
+    3. Vælg **Opret lager**.
+    4. Hvis du bliver spurgt om godkendelse, skal du følge vejledningen på skærmen.
     5. Angiv et navn og en beskrivelse til lageret.
-    6. Klik på **OK** at bekræfte den nye lagerpost.
+    6. Vælg **OK** for at bekræfte den nye lagerpost.
     7. I gitteret skal du vælge det nye lager for **LCS**-typen.
 
-6. Klik på **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.
+6. Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.
 
-    [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Siden Konfigurationslagre](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
-7. I konfigurationstræet i venstre rude skal du vælge de ER-konfigurationer, du har brug for.
+    > [!TIP]
+    > Hvis du har problemer med at få adgang til LCS-lageret for at kunne hente konfigurationer fra det delte aktivbibliotek i LCS, kan du i stedet hente konfigurationer fra det [globale lager](er-download-configurations-global-repo.md).
+
+7. I konfigurationstræet i venstre rude skal du vælge den ER-konfiguration, du har brug for.
 8. I oversigtspanelet **Versioner** skal vælge den krævede version af den valgte ER-konfiguration.
-9. Klik på **Importer** til at hente den valgte version fra LCS til den aktuelle forekomst.
+9. Vælg **Importér** for at download den valgte version fra LCS til den aktuelle forekomst.
 
     > [!NOTE]
     > Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes på den aktuelle forekomst.
 
-    [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Siden Konfigurationslager](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne. Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget. Du skal løse disse problemer, før du kan bruge den importerede konfigurationsversion. Se listen over relaterede artikler i dette emne for at få flere oplysninger.
+> Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne. Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget. Du skal løse disse problemer, før du kan bruge den importerede konfigurationsversion. Se listen over relaterede emner til dette emne for at få flere oplysninger.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+[Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten](er-download-configurations-global-repo.md)

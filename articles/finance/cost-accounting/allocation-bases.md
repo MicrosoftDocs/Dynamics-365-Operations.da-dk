@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMDimensionMember
+ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c2cea745ec645b2e9cc6f9d72a0aeae2f7467155
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a871eef822140f028832aa1be39372f07668d79
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187998"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759586"
 ---
 # <a name="allocation-bases"></a>Fordelingsgrundlag 
 
@@ -53,7 +53,7 @@ Dette eksempel viser, hvordan du opretter en regel for omkostningsfordeling for 
 
 Kontoplanen defineres på følgende måde i de relevante finanskonti.
 
-| Kontoplan | Hovedkonto | Betegnelse        | Hovedkontotype |
+| Kontoplan | Hovedkonto | Beskrivelse        | Hovedkontotype |
 |------------------|--------------|--------------------|-------------------|
 | Delt           | 10001        | Lønninger           | Udgift           |
 | Delt           | 10002        | Medarbejderforsikring | Udgift           |
@@ -62,14 +62,14 @@ Definer en omkostningselementdimension, og konfigurer dataconnectoren. Når data
 
 **Dimensionsmedlemmer for omkostningselement**
 
-| Navn på dimension for omkostningselement | Omkostningselement |  Betegnelse       | Type    |
+| Navn på dimension for omkostningselement | Omkostningselement |  Beskrivelse       | Type    |
 |-----------------------------|--------------|--------------------|---------|
 | Omkostningselementer               | 10001        | Lønninger           | Primær |
 | Omkostningselementer               | 10002        | Medarbejderforsikring | Primær |
 
 **Foruddefinerede fordelingsgrundlag for dimensionsmedlem** 
 
-| Navn  | Betegnelse        | Dimension for omkostningselement |
+| Navn  | Beskrivelse        | Dimension for omkostningselement |
 |-------|--------------------|------------------------|
 | 10001 | Lønninger           | Omkostningselementer          |
 | 10002 | Medarbejderforsikring | Omkostningselementer          |
@@ -79,7 +79,7 @@ Følgende poster er blevet bogført i finansmodulet:
 - De poster, der viser Lønninger-hovedkontoen, stammer fra lønsystemet og bogføres i bærere.
 - Udgifterne for medarbejderforsikring bogføres manuelt til en standardbærer.
 
-| Regnskabsdato | Bærer |  Betegnelse        | Hovedkonto |  Betegnelse       | Beløb i regnskabsvaluta |
+| Regnskabsdato | Bærer |  Beskrivelse        | Hovedkonto |  Beskrivelse       | Beløb i regnskabsvaluta |
 |-----------------|-------------|---------------------|--------------|--------------------|-------------------------------|
 | 01-03-2017      | CC001       | Personale                  | 10001        | Lønninger           | 2.000,00                      |
 | 01-03-2017      | CC002       | FI                  | 10001        | Lønninger           | 5.000,00                      |
@@ -90,7 +90,7 @@ Når kildedataene for finansposter er behandlet, oprettes følgende poster i omk
 
 **Omkostningsposter**
 
-| Omkostningsobjekt |  Betegnelse        | Omkostningselement  |  Betegnelse       | Funktionalitet af omkostning   |Beløb|Regnskabsdato|
+| Omkostningsobjekt |  Beskrivelse        | Omkostningselement  |  Beskrivelse       | Funktionalitet af omkostning   |Beløb|Regnskabsdato|
 |-------------|---------------------|---------------|--------------------|-----------------|------|---------------|
 | CC001       | Personale                  | 10001         | Lønninger           | Ikke-klassificerede    |2.000,00|  01-03-2017    |
 | CC002       | FI                  | 10001         | Lønninger           | Ikke-klassificerede    |5.000,00|     01-03-2017         |
@@ -109,7 +109,7 @@ I dette forenklede eksempel er der oprettet en regel for omkostningsfordeling fo
 
 Når omkostningselementet 10001 (lønninger) anvendes som fordelingsbasis, er resultatet af beregningen af faste omkostninger følgende.
 
-| Omkostningsobjekt | Betegnelse | Størrelsesorden |   Fordelingsfaktor         | Beløb |
+| Omkostningsobjekt | Beskrivelse | Størrelsesorden |   Fordelingsfaktor         | Beløb |
 |-------------|-------------|-----------|-----------------------------|--------|
 | CC001       | Personale          | 2.000     | (2.000 ÷ 10.000) × 1.000,00 | 200,00 |
 | CC002       | FI          | 5.000     | (5.000 ÷ 10.000) × 1.000,00 | 500,00 |
@@ -123,13 +123,13 @@ Når omkostningselementet 10001 (lønninger) anvendes som fordelingsbasis, er re
 
 **Kladdeposteringer for omkostningsobjektsaldo**
 
-| Regnskabsdato | Omkostningsobjekt | Betegnelse         | Omkostningselement | Betegnelse        | Funktionalitet af omkostning |  Beløb  |
+| Regnskabsdato | Omkostningsobjekt | Beskrivelse         | Omkostningselement | Beskrivelse        | Funktionalitet af omkostning |  Beløb  |
 |-----------------|-------------|---------------------|--------------|--------------------|---------------|----------|
 | 01-31-2017      | CC099       | Standardbærer | 10002        | Medarbejderforsikring | Ikke-klassificerede  | 1.000,00 |
 
 **Omkostningsposter**
 
-| Omkostningsobjekt |  Betegnelse        | Omkostningselement |    Betegnelse     | Funktionalitet af omkostning | Beløb    | Regnskabsdato |
+| Omkostningsobjekt |  Beskrivelse        | Omkostningselement |    Beskrivelse     | Funktionalitet af omkostning | Beløb    | Regnskabsdato |
 |-------------|---------------------|--------------|--------------------|---------------|-----------|-----------------|
 | CC099       | Standardbærer | 10002        | Medarbejderforsikring | Ikke-klassificerede  | -1.000,00 | 01-31-2017      |
 | CC001       | Personale                  | 10002        | Medarbejderforsikring | Ikke-klassificerede  | 200,00    | 01-31-2017      |
@@ -142,7 +142,7 @@ Statistiske dimensionsmedlemmer kan bruges som fordelingsgrundlag til at definer
 
 **Statistiske dimensionsmedlemmer**
 
-| Navn på statistisk dimension | Statistisk element | Betegnelse               | Enhed |
+| Navn på statistisk dimension | Statistisk element | Beskrivelse               | Enhed |
 |----------------------------|---------------------|---------------------------|------|
 | Statistiske elementer       | Fuldtidsansat                 | Fuldtidsmedarbejdere       | Styk   |
 | Statistiske elementer       | Elektricitet         | Forbrug af elektricitet   | kWh  |
@@ -151,7 +151,7 @@ Når et statistisk dimensionsmedlem er gemt, oprettes der en tilsvarende post i 
 
 **Foruddefinerede fordelingsgrundlag for dimensionsmedlem**
 
-| Navn        | Betegnelse             | Dimension for statistisk element |
+| Navn        | Beskrivelse             | Dimension for statistisk element |
 |-------------|-------------------------|-------------------------------|
 | Fuldtidsansat         | Fuldtidsmedarbejdere     | Statistiske elementer          |
 | Elektricitet | Forbrug af elektricitet | Statistiske elementer          |
@@ -161,7 +161,7 @@ Statistiske målinger kan komme fra forskellige kilder:
 - Elforbrug kan måles af målere, der er installeret i forskellige områder af virksomheden.
 - Tabeller indeholder statistiske målinger. F.eks. indeholder HcmEmployment-tabellen en liste over alle medarbejdere og de bærere, de arbejder for.
 
-| Navn       | Bærer |  Betegnelse  | Medarbejdertype |
+| Navn       | Bærer |  Beskrivelse  | Medarbejdertype |
 |------------|-------------|----|-------------|
 | Medarbejder A | CC001       | Personale | Medarbejder    |
 | Medarbejder B | CC002       | FI | Medarbejder    |
@@ -189,7 +189,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende pos
 
 **Statistiske poster**
 
-| Omkostningsobjekt | Betegnelse      | Regnskabsdato | Statistisk dimensionsmedlem | Betegnelse         | Størrelsesorden |
+| Omkostningsobjekt | Beskrivelse      | Regnskabsdato | Statistisk dimensionsmedlem | Beskrivelse         | Størrelsesorden |
 |-------------|------------------|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personale               | 01-31-2017      | Fuldtidsansatte                        | Fuldtidsmedarbejdere | 1,00      |
 | CC002       | FI               | 01-31-2017      | Fuldtidsansatte                        | Fuldtidsmedarbejdere | 2.00      |
@@ -197,7 +197,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende pos
 
 Her er et eksempel på en regel til fordeling af omkostninger, hvis den foruddefinerede fordelingsbasis for dimensionsmedlem for Fuldtidsansatte er tildelt som fordelingsgrundlag i den.
 
-| Omkostningsobjekt | Betegnelse  | Størrelsesorden | Fordelingsfaktor |
+| Omkostningsobjekt | Beskrivelse  | Størrelsesorden | Fordelingsfaktor |
 |-------------|------|-----------|-------------------|
 | CC001       | Personale   | 1,00      | (1/5) × beløb    |
 | CC002       | FI   | 2.00      | (2/5) × beløb    |
@@ -215,7 +215,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende pos
 
 **Statistiske poster**
 
-| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |    Betegnelse          | Størrelsesorden |
+| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |    Beskrivelse          | Størrelsesorden |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | Personale | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
 | CC002       | FI | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
@@ -223,7 +223,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende pos
 
 Her er et eksempel på en regel til fordeling af omkostninger, hvis den foruddefinerede fordelingsbasis for dimensionsmedlem for Elektricitet er tildelt som fordelingsgrundlag i den.
 
-| Omkostningsobjekt | Betegnelse  | Størrelsesorden | Fordelingsfaktor          |
+| Omkostningsobjekt | Beskrivelse  | Størrelsesorden | Fordelingsfaktor          |
 |-------------|------|-----------|----------------------------|
 | CC001       | Personale   | 2,450.00  | (2.450 ÷ 21.550) × beløb  |
 | CC002       | FI   | 4,100.00  | (4.100 ÷ 21.550) × beløb  |
@@ -246,7 +246,7 @@ Det oprindelige foruddefinerede fordelingsgrundlag for dimensionsmedlemmer for F
 
 **Statistiske poster**
 
-| Omkostningsobjekt | Betegnelse  | Regnskabsdato | Statistisk dimensionsmedlem | Betegnelse | Størrelsesorden |
+| Omkostningsobjekt | Beskrivelse  | Regnskabsdato | Statistisk dimensionsmedlem | Beskrivelse | Størrelsesorden |
 |-------------|------|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personale   | 01-31-2017      | Fuldtidsansatte                        | Fuldtidsmedarbejdere | 1,00      |
 | CC002       | FI   | 01-31-2017      | Fuldtidsansatte                        | Fuldtidsmedarbejdere | 2.00      |
@@ -264,14 +264,14 @@ Med en eksempelfunktion kan du validere fordelingsbasis for det hierarki, der er
 
 **Oplysninger om fordelingsbasis**
 
-| Omkostningsobjekt | Betegnelse  |  Størrelsesorden |
+| Omkostningsobjekt | Beskrivelse  |  Størrelsesorden |
 |-------------|------|------------|
 | CC001       | Personale   | 1,00       |
 | CC002       | FI   | 2.00       |
 
 Her er et eksempel på en regel til fordeling af omkostninger, hvis fordelingsbasis i Antal fuldtidsansatte under Regnskabsdirektør er tildelt som fordelingsgrundlag i den.
 
-| Omkostningsobjekt | Betegnelse  | Størrelsesorden | Fordelingsfaktor |
+| Omkostningsobjekt | Beskrivelse  | Størrelsesorden | Fordelingsfaktor |
 |-------------|------|-----------|-------------------|
 | CC001       | Personale   | 1,00      | (1/3) × beløb    |
 | CC002       | FI   | 2.00      | (2/3) × beløb    |
@@ -316,7 +316,7 @@ Den foruddefinerede fordelingsbasis for dimensionsmedlem for Elektricitet er all
 
 **Statistiske poster**
 
-| Omkostningsobjekt | Navn | Regnskabsdato | Statistisk dimensionsmedlem | Betegnelse             | Størrelsesorden |
+| Omkostningsobjekt | Navn | Regnskabsdato | Statistisk dimensionsmedlem | Beskrivelse             | Størrelsesorden |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | Personale   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
 | CC002       | FI   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
@@ -354,7 +354,7 @@ Med en eksempelfunktion kan du validere den fordelingsbasis for formlen, der er 
 
 **Oplysninger om fordelingsbasis**
 
-| Omkostningsobjekt | Betegnelse  | Formel           | Størrelsesorden |
+| Omkostningsobjekt | Beskrivelse  | Formel           | Størrelsesorden |
 |-------------|------|-------------------|-----------|
 | CC001       | Personale   | 2.450,00 \> 0,01  | 1,00      |
 | CC002       | FI   | 4.100,00 \> 0,01  | 1,00      |
@@ -424,7 +424,7 @@ Her kan du se nærmere på formlen for CC003 (LO):
 Her er et eksempel på en regel til fordeling af omkostninger, hvis fordelingsbasis for formlen for Elektricitet, der er fastsat, er tildelt som fordelingsgrundlag i den.
 
 
-| Omkostningsobjekt | Betegnelse | Størrelsesorden |        Fordelingsfaktor         |
+| Omkostningsobjekt | Beskrivelse | Størrelsesorden |        Fordelingsfaktor         |
 |-------------|-------------|-----------|----------------------------------|
 |    CC001    |     Personale      | 1,837.50  | (1.837,50 ÷ 18.162,50) × beløb  |
 |    CC002    |     FI      | 3,075.00  | (3.075,00 ÷ 18.162,50) × beløb  |

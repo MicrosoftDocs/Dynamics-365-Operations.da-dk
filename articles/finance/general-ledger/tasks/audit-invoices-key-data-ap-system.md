@@ -1,6 +1,6 @@
 ---
-title: Revider fakturaer og nøgledata i kreditorsystem
-description: Når du modtager en faktura fra en leverandør af varer eller tjenester på en indkøbsordre, kræver forretningsprocesserne måske, at varerne eller tjenesterne modtages, før fakturaen kan godkendes til betaling.
+title: Revidere fakturaer og nøgledata for kreditorer
+description: Dette emne viser, hvordan du kan revidere fakturaer og nøgledata for kreditorer.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e1af0dac107be6009eb3ca576c49ac5abbd9848
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139931"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761543"
 ---
-# <a name="audit-invoices-and-key-data-in-ap-system"></a>Revider fakturaer og nøgledata i kreditorsystem
+# <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Revidere fakturaer og nøgledata for kreditorer
 
 [!include [banner](../../includes/banner.md)]
 
 Når du modtager en faktura fra en leverandør af varer eller tjenester på en indkøbsordre, kræver forretningsprocesserne måske, at varerne eller tjenesterne modtages, før fakturaen kan godkendes til betaling. Inden du begynder, skal du kontrollere, at konfigurationsnøglen til fakturasammenholdelse er valgt. 
 
-På siden Kreditorparametre skal du sørge for, at indstillingen Aktivér validering af fakturasammenholdelse er valgt, at feltet Aktivér validering af fakturasammenholdelse er angivet til Kræv godkendelse, og at feltet Sammenholdelsespolitik for linjer er angivet til Trevejs-sammenholdelse.
+På siden **Kreditorparametre** skal du sørge for, at indstillingen Aktivér validering af fakturasammenholdelse er valgt, at feltet **Bogfør faktura med uoverensstemmelser** er angivet til **Kræv godkendelse**, og at feltet **Sammenholdelsespolitik for linjer** er angivet til **Trevejs-sammenholdelse**.
 
 Denne procedure bruger demofirmaet USMF. Rollen kreditorchef eller rollen regnskabschef skal udføre disse trin.
 

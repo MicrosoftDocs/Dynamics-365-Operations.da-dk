@@ -3,7 +3,7 @@ title: Tilføj en side med politik om beskyttelse af personlige oplysninger
 description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer en side med politik om beskyttelse af personlige oplysninger i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686689"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761267"
 ---
 # <a name="add-a-privacy-policy-page"></a>Tilføj en side med politik om beskyttelse af personlige oplysninger
 
@@ -89,8 +89,8 @@ Du kan tilføje et link til siden med politik om beskyttelse af personlige oplys
 Følg disse trin for at føje et link til sidefodsfragment.
 
 1. Gå til **Fragmenter**, og vælg derefter **Nyt** for at oprette et sidefragment.
-1. Vælg modulet **Sidefod** i dialogboksen **Nyt sidefragment**.
-1. Angiv et navn til fragmentet under **Sidefragmentnavn**, og vælg derefter **OK**.
+1. Vælg modulet **Sidefod** i dialogboksen **Nyt fragment**.
+1. Angiv et navn til fragmentet under **Fragmentnavn**, og vælg derefter **OK**.
 1. På pladsen **Sidefodskategori** skal du tilføje modulet **Sidefodselement**.
 1. Vælg **Linktekst** i egenskabsruden til højre.
 1. I dialogboksen **Linktekst** skal du angive linkteksten og linkmålet på siden med politik om beskyttelse af personlige oplysninger og derefter klikke på **OK**.

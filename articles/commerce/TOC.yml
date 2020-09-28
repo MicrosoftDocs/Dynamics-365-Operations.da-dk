@@ -90,8 +90,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Nyheder eller ændringer i Commerce
                   items:
-                    - name: Nyheder eller ændringer i Commerce-startsiden
+                    - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (november 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (august 2020)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Masseinstallation af selvbetjeningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Retail-komponenthændelser for diagnosticering og fejlfinding
+                - name: Commerce-komponenthændelser for diagnosticering og fejlfinding
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Anvende en installerbar pakke
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -526,6 +528,8 @@
                       href: omni-channel-payments.md
                     - name: Omni-kanalers Commerce-ordrebetalinger
                       href: dev-itpro/commerce-payments.md
+                    - name: Behandle kreditkort uden en hardwarestation
+                      href: dev-itpro/cnp-pos.md
                     - name: Ofte stillede spørgsmål om betalinger
                       href: dev-itpro/payments-retail.md
                 - name: Administrere Bing Kort for din organisation
@@ -700,7 +704,7 @@
           items:
             - name: Kundeordrer
               items:
-                - name: Kundeordrer i MPOS
+                - name: Kundeordrer på POS
                   href: customer-orders-overview.md
                 - name: Hybride kundeordrer
                   href: hybrid-customer-orders.md
@@ -826,6 +830,8 @@
                   href: custom-pages-user-logins.md
                 - name: Konfigurere flere B2C-lejere i et Commerce-miljø
                   href: configure-multi-B2C-tenants.md
+                - name: Domæner i Dynamics 365 Commerce
+                  href: domains-commerce.md
                 - name: 'Tilføje understøttelse af et netværk, der leverer indhold (CDN)'
                   href: add-cdn-support.md
                 - name: Aktivere registrering af placeringsbaseret lager
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Moduler til vurderinger og anmeldelser
                       href: ratings-reviews-modules.md
+                    - name: Modul til deling på sociale medier
+                      href: social-share-module.md
                 - name: Købsmoduler
                   items:
                     - name: Indkøbskurvsmodul
@@ -1026,6 +1034,12 @@
                   items:
                     - name: Brødkrummemodul
                       href: add-breadcrumb.md
+                    - name: Navigationsmenumodul
+                      href: nav-menu-module.md
+                - name: Modul til overholdelse af angivne standarder
+                  items:
+                    - name: Modul til cookie-samtykke
+                      href: cookie-consent-module.md
             - name: Søg
               items:
                 - name: Oversigt over standardlandingsside for kategori og side for søgeresultater
@@ -1176,7 +1190,7 @@
                   items:
                     - name: Oversigt over udskrivning af dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
-                    - name: Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning
+                    - name: Installere agenten for ruteplanlægning af dokumenter for at aktivere netværksudskrivning
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/commerce/toc.json
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Udskyde udførelse af ER-formatelementer
                   items:
-                    - name: Udskyde udførelse af et sekvenselement
+                    - name: Udskyde udførelse af sekvenselementer i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Udskyde udførelse af et XML-element
+                    - name: Udskyde udførelse af XML-elementer i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
               items:

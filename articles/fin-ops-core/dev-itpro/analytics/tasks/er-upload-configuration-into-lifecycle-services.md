@@ -1,9 +1,9 @@
 ---
-title: Overføre ER-konfiguration til Lifecycle Services
-description: Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny konfiguration af elektronisk rapportering (ER) og overføre den til Microsoft Lifecycle Services (LCS).
+title: Overføre en konfiguration til Lifecycle Services
+description: Dette emne beskriver, hvordan en bruger i rollen som Systemadministrator eller Udvikler af elektronisk rapportering kan oprette en ny elektronisk rapporteringskonfiguration (ER) og uploade den til Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143274"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810685"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a>Overføre ER-konfiguration til Lifecycle Services
+# <a name="upload-a-configuration-into-lifecycle-services"></a>Overføre en konfiguration til Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny konfiguration af elektronisk rapportering (ER) og overføre den til Microsoft Lifecycle Services (LCS).
+Dette emne beskriver, hvordan en bruger i rollen som Systemadministrator eller Udvikler af elektronisk rapportering kan oprette en ny [Elektronisk rapporteringskonfiguration (ER)](../general-electronic-reporting.md#Configuration) og uploade den til [aktivbiblioteket på projektniveau](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
-I dette eksempel skal du oprette en konfiguration og overføre den til LCS for eksempelfirmaet Litware, Inc. Denne fremgangsmåde kan udføres i alle virksomheder, da ER-konfigurationer deles af alle firmaer. Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Adgang til LCS er også nødvendig for at udføre disse trin.
+I dette eksempel skal du oprette en konfiguration og uploade den til LCS for eksempelfirmaet med navnet Litware, Inc. Denne fremgangsmåde kan udføres i alle virksomheder, da ER-konfigurationer deles af alle firmaer. For at fuldføre disse trin skal du først fuldføre trinnene under [Oprette konfigurationsudbydere og markere dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Der kræves også adgang til LCS.
 
-1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-2. Vælg 'Litware, Inc.' og indstil det som aktivt.
-3. Klik på Konfigurationer.
+1. Log på programmet ved hjælp af en af følgende roller:
+
+    - Udvikler til elektronisk rapportering
+    - Systemadministrator
+
+2. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+3. Vælg **Litware, Inc.**, og angiv **Aktiv**.
+4. Vælg **Konfigurationer**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Sørg for, at den aktuelle Dynamics 365 Finance-bruger er medlem af det LCS projekt, der indeholder det [aktivbibliotek](../../lifecycle-services/asset-library.md#asset-library-support), som bruges til at importere ER-konfigurationer.
+>
+> Du kan ikke få adgang til et LCS-projekt fra et ER-lager, der repræsenterer et andet domæne end det domæne, der bruges i Finance. Hvis du forsøger, vises der en tom liste over LCS-projekter, og du kan ikke importere ER-konfigurationer fra aktivbiblioteket på projektniveau i LCS. Hvis du vil have adgang til aktivbiblioteker på projektniveau fra et ER-lager, der bruges til at importere ER-konfigurationer, skal du logge på Finance ved hjælp af legitimationsoplysningerne for en bruger, der tilhører den lejer (domæne), som den aktuelle Finance-forekomst er klargjort til.
 
 ## <a name="create-a-new-data-model-configuration"></a>Opret en ny datamodelkonfiguration
-1. Klik på Opret konfiguration for at åbne dialogboksen.
-    * Du skal oprette en konfiguration, der indeholder en eksempeldatamodel for elektroniske dokumenter. Denne datakonfigurationsmodel overføres senere til LCS.  
-2. Skriv 'Eksempelmodelkonfiguration' i feltet Navn.
-    * Eksempemodellkonfiguration  
-3. Skriv 'Eksempelmodelkonfiguration' i feltet Beskrivelse.
-    * Eksempemodellkonfiguration  
-4. Klik på Opret konfiguration.
-5. Klik på Modeldesigner.
-6. Klik på Ny.
-7. Skriv 'Indgangspunkt' i feltet Navn.
-    * Indgangspunkt  
-8. Klik på Tilføj.
-9. Klik på Gem.
-10. Luk siden.
-11. Klik på Skift status.
-12. Klik på Fuldført.
-13. Klik på OK.
 
-## <a name="register-a-new--repository"></a>Registrere et nyt lager
-1. Luk siden.
-2. Klik på Lagre.
-    * Dette gør det muligt at åbne listen over lagre for konfigurationsudbyderen Litware, Inc.  
-3. Klik på Tilføj for at åbne dialogboksen.
-    * Her kan du tilføje et nyt lager.  
-4. Vælg LCS i feltet Konfigurationslagertype.
-5. Klik på Opretlager.
-6. Indtast eller vælg en værdi i feltet Projekt.
-    * Vælg det ønskede LCS-projekt. Du skal have adgang til projektet.  
-7. Klik på OK.
-    * Udfyld en ny lagerpost.  
-8. Markér den valgte række på listen.
-    * Vælg LCS-lagerposten.  
-    * Bemærk, at et registreret lager er markeret af den aktuelle udbyder, dvs. at de eneste konfigurationer, der ejes af den pågældende udbyder, kan placeres på dette lager og derfor overføres til det valgte LCS-projekt.  
-9. Klik på Åbn.
-    * Åbn lageret for at få vist listen over ER-konfigurationer. Den vil være tom, hvis dette projekt endnu ikke er blevet brugt til deling af ER-konfigurationer.  
-10. Luk siden.
+1. Gå til **Virksomhedsadministration \> Elektronisk rapportering \> Konfigurationer**.
+2. Vælg **Opret konfiguration** på siden **Konfigurationer** for at åbne dialogboksen med rullemenu.
+
+    I dette eksempel skal du oprette en konfiguration, der indeholder en eksempeldatamodel for elektroniske dokumenter. Denne datakonfigurationsmodel overføres senere til LCS.
+
+3. Skriv **Eksempelmodelkonfiguration** i feltet **Navn**.
+4. Skriv **Eksempelmodelkonfiguration** i feltet **Beskrivelse**.
+5. Vælg **Opret konfiguration**.
+6. Vælg **Modeldesigner**.
+7. Vælg **Ny**.
+8. I feltet **Navn** skal du angive **Indgangspunkt**.
+9. Vælg **Tilføj**.
+10. Vælg **Gem**.
 11. Luk siden.
+12. Vælg **Skift status**.
+13. Vælg **Fuldfør**.
+14. Vælg **OK**.
+15. Luk siden.
 
-## <a name="upload-configuration-into-lcs"></a>Overføre konfiguration til LCS
-1. Klik på Konfigurationer.
-2. Vælg 'Eksempelmodelkonfiguration' i træet.
-    * Vælg en oprettet konfiguration, der allerede er fuldført.  
+## <a name="register-a-new-repository"></a>Registrere et nyt lager
+
+1. Gå til **Virksomhedsadministration \> Arbejdsområder \> Elektronisk rapportering**.
+
+2. I sektionen **Konfigurationsudbydere** skal du vælge feltet **Litware, Inc.**.
+
+3. I feltet **Litware, Inc.** skal du vælge **Lagre**.
+
+    Nu kan du åbne listen over lagre for konfigurationsudbyderen Litware, Inc.
+
+4. Vælg **Tilføj** for at åbne dialogboksen med rullemenu.
+
+    Nu kan du tilføje et nyt lager.
+
+5. Vælg **LCS** i feltet **Konfigurationslagertype**.
+6. Vælg **Opret lager**.
+7. Indtast eller vælg en værdi i feltet **Projekt**.
+
+    Vælg det ønskede LCS-projekt til dette eksempel. Du skal have [adgang](#accessconditions) til projektet.
+
+8. Vælg **OK**.
+
+    Udfyld en ny lagerpost.
+
+9. Markér den valgte række på listen.
+
+    I dette eksempel skal du vælge **LCS**-lagerposten.
+
+    Bemærk, at et registreret lager er markeret af den aktuelle udbyder. Det vil sige, at det kun er de konfigurationer, der ejes af den pågældende udbyder, der kan placeres i lageret og derfor overføres til det valgte LCS-projekt.
+
+10. Vælg **Åbn**.
+
+    Åbn lageret for at få vist listen over ER-konfigurationer. Den vil være tom, hvis projektet endnu ikke er blevet brugt til deling af ER-konfigurationer.
+
+11. Luk siden.
+12. Luk siden.
+
+## <a name="upload-a-configuration-into-lcs"></a>Uploade en konfiguration til LCS
+
+1. Gå til **Virksomhedsadministration \> Elektronisk rapportering \> Konfigurationer**.
+2. På siden **Konfigurationer** skal du i konfigurationstræet vælge **Eksempemodellkonfiguration**.
+
+    Du skal vælge en oprettet konfiguration, der allerede er fuldført.
+
 3. Find og vælg den ønskede post på listen.
-    * Vælg versionen af den valgte konfiguration med statussen 'Fuldført'.  
-4. Klik på Skift status.
-5. Klik på Del.
-    * Konfigurationens status ændres fra 'Fuldført' til 'Delt', når den er udgivet i LCS.  
-6. Klik på OK.
-7. Find og vælg den ønskede post på listen.
-    * Vælg konfigurationsversionen 'med statussen 'Delt'.  
-    * Bemærk, at statussen for den valgte version er ændret fra 'Fuldført' til 'Delt'.  
-8. Luk siden.
-9. Klik på Lagre.
-    * Dette gør det muligt at åbne listen over lagre for konfigurationsudbyderen Litware, Inc.  
-10. Klik på Åbn.
-    * Vælg LCS-lageret, og åbn det.  
-    * Bemærk, at den valgte konfiguration vises som et aktiv for det valgte LCS-projekt.  
-    * Åbne LCS ved hjælp af https://lcs.dynamics.com. Åbn et projekt, der tidligere blev brugt til registrering af lageret, åbn 'Aktivbibliotek' for dette projekt, og udvid indholdet af aktivtypen 'GER-konfiguration' – den overførte ER-konfiguration vil være tilgængelig. Bemærk, at den uploadede LCS-konfiguration kan importeres til en anden forekomst, hvis udbyderne har adgang til dette LCS-projekt.  
 
+    I dette eksempel skal du vælge den konfigurationsversion, der har statussen **Fuldført**.
+
+4. Vælg **Skift status**.
+5. Vælg **Del**.
+
+    Status for konfigurationen ændres fra **Fuldført** til **Delt**, når konfigurationen er udgivet i LCS.
+
+6. Vælg **OK**.
+7. Find og vælg den ønskede post på listen.
+
+    I dette eksempel skal du vælge den konfigurationsversion, der har statussen **Delt**.
+
+    Bemærk, at statussen for den valgte version er ændret fra **Fuldført** til **Delt**.
+
+8. Luk siden.
+9. Vælg **Lagre**.
+
+    Nu kan du åbne listen over lagre for konfigurationsudbyderen Litware, Inc.
+
+10. Vælg **Åbn**.
+
+    I dette eksempel skal du vælge **LCS**-lageret og åbne det.
+
+    Bemærk, at den valgte konfiguration vises som et aktiv for det valgte LCS-projekt.
+
+11. Åbn LCS ved at gå til <https://lcs.dynamics.com>.
+12. Åbn et projekt, der er brugt tidligere til registrering af lager.
+13. Åbn aktivbiblioteket for projektet.
+14. Vælg **GER-konfiguration** som aktivtype.
+
+    Den ER-konfiguration, du har uploadet, skal være vist på listen.
+
+    Bemærk, at den uploadede LCS-konfiguration kan importeres til en anden forekomst, hvis udbyderne har adgang til dette LCS-projekt.
