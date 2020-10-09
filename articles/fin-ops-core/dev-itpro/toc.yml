@@ -82,10 +82,12 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegration
           items:
-            - name: Vælg en strategi for dataintegration (import/eksport)
+            - name: Vælge en strategi for dataintegration (import/eksport)
               href: data-entities/integration-overview.md
             - name: Prioritetsbaseret begrænsning
               hreF: data-entities/priority-based-throttling.md
+            - name: Prioritetsbaseret begrænsning (FAQ)
+              href: data-entities/throttling-faq.md
             - name: API'er for dataintegration
               items:
                 - name: REST API for datastyringspakke
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Overføre valutadatatype til dobbelt skrivning
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Konfigurere tilknytning af felter for salgsordrestatus
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Administrere dobbeltskrivning
                           items:
                             - name: Tilpasse enheds- og felttilknytninger
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Lokal agent
                   items:
-                    - name: AD FS Office 365-kompatibilitet
+                    - name: AD FS Microsoft 365-kompatibilitet
                       href: deployment/onprem-adfscompatibility.md
                     - name: Scripts til forudinstallation og efterinstallation af lokale agenter
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,9 +631,7 @@
                 - name: Selvstudium til udviklingsværktøjer
                   href: dev-tools/introduction-visual-studio.md
                 - name: Programkontrol
-                  items:
-                    - name: Installere BaseX til Programkontrol
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Application Explorer
                   href: dev-tools/application-explorer.md
                 - name: Oprette og foretage fejlfinding af projekter
@@ -1360,14 +1362,32 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
                     - name: Typen PartMetadata
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
-                    - name: Typen Row
+                    - name: Rækketype
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
-                    - name: Typen Value
+                    - name: Værditype
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
                     - name: Typen ValueDesign
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: Typen ValueMetadata
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Procesautomatiseringsstruktur
+          items:
+            - name: Udvikling i procesautomatiseringsstruktur
+              href: process-automation/process-automation-framework.md
+            - name: Typeregistrering
+              href: process-automation/type-registration.md
+            - name: Serieregistrering
+              href: process-automation/series-registration.md
+            - name: Procesparametre
+              href: process-automation/process-parameters.md
+            - name: 'Forespørgsler, der kan konfigureres af brugeren'
+              href: process-automation/user-queries.md
+            - name: Køre processen
+              href: process-automation/run-process.md
+            - name: Logføre resultater og meddelelser
+              href: process-automation/log-results.md
+            - name: Tilpasse brugergrænsefladen
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Oversigt over Regression Suite Automation Tool
@@ -1395,7 +1415,7 @@
             - name: Udvikle og frigive
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Stadie og udgive
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Tilføje metoder
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Opsætte forretningsmodeldesigner-biblioteker

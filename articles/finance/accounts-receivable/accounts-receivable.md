@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d210e234e9004422913ac76bf4c9b720806cbece
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 00af26a9f41a6908fd0010ec9eac37e41ad9c2b6
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175876"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888102"
 ---
 # <a name="accounts-receivable-home-page"></a>Startside for debitor
 
@@ -102,10 +102,10 @@ Gå til [Microsoft Dynamics 365 oversigten](https://go.microsoft.com/fwlink/?lin
 
 Du kan finde meninger, nyheder og andre oplysninger om Debitorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 
 #### <a name="task-guides"></a>Opgaveguider
-Yderligere hjælp er tilgængelig som opgaveguider i applikationen. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
+Yderligere hjælp er tilgængelig som opgaveguider i ansøgningen. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
 #### <a name="videos"></a>Videoer
 
