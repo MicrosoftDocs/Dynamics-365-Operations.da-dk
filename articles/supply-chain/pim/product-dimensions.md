@@ -1,14 +1,14 @@
 ---
 title: Produktdimensioner
 description: Der er fem produktdimensioner – farve, konfiguration, størrelse, typografi og version. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.
-author: cvocph
+author: t-benebo
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,15 +16,15 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657310"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895443"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -107,7 +107,7 @@ Når du tester løsningerne for at sikre kompatibilitet med versionsdimensionen,
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Kort:** Hvis der er tilknyttet lagerdimensioner, skal den tilsvarende relationstilknytning til disse tilknytninger opdateres, så de omfatter versionsdimensionen. Se efter tabeller, hvor felterne omfatter lagerdimensioner, i de udvidede model- eller tabeludvidelser.
-1. **Microsoft Dynamics 365 Commerce-funktionalitet:** Når den er slået til, vises versionsdimensionen i hele den Commerce-specifikke kode i Dynamics 365 Supply Chain Management. Versionsdimensionen understøttes dog endnu ikke af Commerce-kanaldatabasen eller i POS-programmerne. Denne funktionsmåde ligner konfigurationsdimensionens aktuelle funktionsmåde i hele Commerce.
+1. **Microsoft Dynamics 365 Commerce-funktionalitet:** Når den er slået til, vises versionsdimensionen i hele den Commerce-specifikke kode i Dynamics 365 Supply Chain Management. Versionsdimensionen understøttes dog endnu ikke af Commerce-kanaldatabasen eller i POS- eller e-Commerce-programmerne. Disse Commerce-specifikke programmer understøtter ikke brugere, der sælger/sender eller returnerer/modtager lagerbeholdning efter versionsdimension. Opslagsfunktionerne for lagertilgængelighed skelner ikke mellem lagerbeholdning efter versionsdimension i Commerce-apps. Denne funktionsmåde ligner konfigurationsdimensionens aktuelle funktionsmåde i hele Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivere versionsdimensionen
 

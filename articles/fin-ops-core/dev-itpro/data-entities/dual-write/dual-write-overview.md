@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 1eb5e4ea8d086baeee686ccb3d044b3ef9d2a4fa
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775141"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818566"
 ---
 # <a name="dual-write-overview"></a>Oversigt over dobbeltskrivning
 
@@ -86,7 +86,7 @@ Dobbeltskrivning opretter en tilknytning mellem koncepter i Finance and Operatio
 Dobbeltskrivning giver dataintegration på tværs af Microsoft Dynamics 365-programmer. Denne solide rammer forbinder miljøer og giver forskellige virksomhedsprogrammer mulighed for at arbejde sammen. Her er de vigtigste grunde til, at du skal bruge dobbeltskrivning:
 
 + Dobbeltskrivning giver tæt kombineret, nær-realtidsintegration tovejsintegration mellem Finance and Operations-apps og modelbaserede apps i Dynamics 365. Denne integration gør Microsoft Dynamics 365 til en fælles løsning for alle dine virksomhedsløsninger. Kunder, der bruger Dynamics 365 Finance og Dynamics 365 Supply Chain Management, men som bruger løsninger fra andre leverandører end Microsoft til kunderelationsstyring (CRM), hælder mod Dynamics 365 for så vidt angår understøttelse af dobbeltskrivning.
-+ Data fra kunder, produkter, handlinger, projekter og Tingenes internet flyder automatisk over til Common Data Service via dobbeltskrivning. Denne forbindelse er nyttig for virksomheder, der er interesserede i Microsoft Power Platform-udvidelser.
++ Data fra kunder, produkter, handlinger, projekter og Tingenes internet flyder automatisk over til Common Data Service via dobbeltskrivning. Denne forbindelse er nyttig for virksomheder, der er interesserede i Power Platform-udvidelser.
 + Infrastrukturen med dobbeltskrivninger følger princippet om ingen kode/lav kode. Der kræves en minimal teknisk indsats for at udvide standard tabel-til-tabel-tilknytningerne og for at medtage brugerdefinerede kort.
 + Dobbeltskrivning understøtter både onlinetilstand og offlinetilstand. Microsoft er det eneste firma, der tilbyder support til online- og offline-tilstand.
 

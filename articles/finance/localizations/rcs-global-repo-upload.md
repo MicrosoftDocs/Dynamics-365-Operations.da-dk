@@ -3,7 +3,7 @@ title: Oprette ER-konfigurationer i RCS og overføre dem til det globale lager
 description: Dette emne forklarer, hvordan du opretter en ER-konfiguration (Electronic reporting) i Microsoft Regulatory Configuration Services (RCS) og uploader den til det globale lager.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371237"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834227"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Oprette ER-konfigurationer i RCS (Regulatory Configuration Services) og overføre dem til det globale lager
 
@@ -54,7 +54,7 @@ Hvis der allerede er klargjort et RCS-miljø til dit firma, kan du bruge side-UR
 5. Angiv et navn og en beskrivelse, og vælg derefter **Opret konfiguration** for at oprette en ny afledt version.
 6. Vælg den netop afledte konfiguration, tilføj en beskrivelse af versionen, og vælg derefter **OK**. Statussen for konfigurationen er ændret til **Fuldført**.
 
-![Ny konfigurationsversion i RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Ny konfigurationsversion i RCS](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Når konfigurationsstatussen ændres, kan du få vist en meddelelse om valideringsfejl, der er relateret til de tilknyttede programmer. Hvis du vil deaktivere valideringen, skal du vælge bruger parametre i handlingsruden under fanen **Konfigurationer**, vælge **Brugerparametre** og derefter angive indstillingen **Spring validering ved skift og rebasering af konfigurationsstatus** til **Ja**. 
@@ -66,7 +66,7 @@ Hvis du vil dele en ny eller afledt konfiguration i din organisation, kan du upl
 1. Vælg den fuldførte version af konfigurationen, og vælg derefter **Upload til lager**.
 2. Vælg indstillingen **Global (Microsoft)**, og vælg derefter **Send**.
 
-    ![Uploade til lagerindstillingerne](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Uploade til lagerindstillingerne](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Vælg **Ja** i bekræftelsesmeddelelsesboksen. 
 4. Opdater beskrivelsen af versionen efter behov, og vælg derefter **OK**. 
@@ -74,6 +74,27 @@ Hvis du vil dele en ny eller afledt konfiguration i din organisation, kan du upl
 Status for konfigurationen opdateres til **Del**, og konfigurationen overføres til det globale lager. Derfra kan du arbejd med den på følgende måder:
 
 - Importere den til Dynamics 365-forekomsten. Du kan finde flere oplysninger under [(ER) Importér konfigurationer fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Del det med en tredjepart eller en ekstern organisation. Se [RCS ER-konfigurationer (Electronic reporting) med eksterne organisationer](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- Del det med en tredjepart eller en ekstern organisation. Se [RCS ER-konfigurationer (Electronic reporting) med eksterne organisationer](rcs-global-repo-share-configuration.md)
 
-![Den afledte Intrastat Contoso-konfigurationsversion i det globale lager](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Den afledte Intrastat Contoso-konfigurationsversion i det globale lager](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Slette en konfiguration fra det globale lager
+Fuldfør følgende trin for at slette en konfiguration, som din organisation har oprettet.
+
+1. I arbejdsområdet **Elektronisk rapportering** skal du bekræfte, at din konfigurationsudbyder er **Aktiv**. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Vælg **lager** på din aktive konfigurationsudbyder.
+3. Vælg den globale lagertype **Global**, og vælg **Åbn**.
+4. Find den konfiguration, du vil slette, ved hjælp af funktionen **Filter** i oversigtspanelet **Filter**.
+5. I oversigtspanelet **Version** skal du vælge den version af konfigurationen, du vil slette, og derefter vælge **Slet**:
+
+    ![Slette en konfiguration fra det globale lager](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. Vælg **Ja** i bekræftelsesmeddelelsesboksen.
+
+    ![Slette meddelelse om bekræftelse af konfigurationsversion](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+Konfigurationsversionen slettes, og der vises en bekræftelsesmeddelelse. 
+
+> [!NOTE]
+> Der kan kun slettes konfigurationer af den konfigurationsudbyder, der har oprettet dem. Hvis konfigurationen er delt med en anden organisation, skal du fjerne delingen af konfigurationen, før du sletter den.
+ 

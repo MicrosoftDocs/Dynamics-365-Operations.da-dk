@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5bc0776174960af6cb8a62f00e3fd7d56b1676
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793605"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893071"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Udvide med Power Apps og Power Automate
 
@@ -37,13 +37,13 @@ Denne artikel beskriver nogle eksempler på udvidelsesmulighederne for Microsoft
 - For at importere pakker skal brugerne have rettigheden **Miljøoprettelse**.
 - For at eksportere eller importere apps skal brugerne have en licens til en Power Apps Plan 2 eller en Power Apps Plan 2-prøveversion.
 
-## <a name="integration-with-office-365-power-automate"></a>Integration med Office 365, Power Automate
+## <a name="integration-with-microsoft-365-power-automate"></a>Integration med Microsoft 365, Power Automate
 
-Appen **Integration med Office 365** kan anvendes til at udtrække teamoplysninger for brugere, der er logget på Microsoft Office 365. Den refererer til arbejdere i personale for at udtrække medarbejderidentifikationstyper. Ledere kan kontrollere udløbsdatoer for medarbejder-id-typer. De kan også sende en påmindelse via mail, hvis medarbejder-id-typen udløber. Power Automate kan integreres med Power Apps for at sende denne påmindelse. Der sendes en bekræftelse tilbage til Power Apps fra Power Automate, når påmindelsen er sendt. Identifikationstyper omfatter chaufførens kørekort, pas og andre acceptable former for id.
+Appen **Integration med Microsoft 365** kan anvendes til at udtrække teamoplysninger for brugere, der er logget på Microsoft 365. Den refererer til arbejdere i personale for at udtrække medarbejderidentifikationstyper. Ledere kan kontrollere udløbsdatoer for medarbejder-id-typer. De kan også sende en påmindelse via mail, hvis medarbejder-id-typen udløber. Power Automate kan integreres med Power Apps for at sende denne påmindelse. Der sendes en bekræftelse tilbage til Power Apps fra Power Automate, når påmindelsen er sendt. Identifikationstyper omfatter chaufførens kørekort, pas og andre acceptable former for id.
 
 Du kan udvide denne app til andre scenarier. Du kan eksempelvis anvende den til at vise oplysninger om teamets ferie, kalenderhændelser og alle teamspecifikke hændelser.
 
-Du kan downloade appen **Integration med Office 365, Power Automate** ved at gå til [Integration med Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) i Microsoft Download Center.
+Du kan downloade appen **Integration med Microsoft 365, Power Automate** ved at gå til [Integration med Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) i Microsoft Download Center.
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – Forbindelse til SQL og udførelse
 

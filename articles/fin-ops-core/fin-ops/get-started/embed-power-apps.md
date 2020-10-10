@@ -1,9 +1,9 @@
 ---
-title: Integrer Power Apps
-description: Dette emne beskriver, hvordan du kan integrere Power Apps i klienten for at øge produktets funktioner.
+title: Integrere lærredsapps fra Power Apps
+description: Dette emne beskriver, hvordan du kan integrere lærredapps fra Microsoft Power Apps i klienten for at øge produktets funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,36 +16,39 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042936"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893101"
 ---
-# <a name="embed-microsoft-power-apps"></a>Integrer Microsoft Power Apps
+# <a name="embed-canvas-apps-from-power-apps"></a>Integrere lærredsapps fra Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations understøtter integration med Microsoft Power Apps, en tjeneste til udviklere og ikke-tekniske brugere til opbygning af brugerdefinerede forretningsapps til mobilenheder, tablets og internettet uden at skrive kode. Power Apps, der er udviklet af dig, din organisation eller det bredere økosystem, kan derefter integreres i Finance and Operations-apps for at øge produktets funktionalitet. Du kan f.eks. opbygge en app fra Power Apps, der supplerer en Finance and Operations-app med oplysninger, der er hentet fra et andet system.
+Microsoft Power Apps er en tjeneste, der giver udviklere og ikke-tekniske brugere mulighed for at oprette brugerdefinerede forretningsapps til mobilenheder, tablets og internettet uden at skrive kode. Finance and Operations-apps understøtter integration med Power Apps. Lærredapps, som du, din organisation eller det bredere økosystem udvikler, kan integreres i Finance and Operations-apps for at øge produktets funktionalitet. Du kan f.eks. opbygge en lærredapp fra Power Apps, der supplerer en Finance and Operations-app med oplysninger, der er hentet fra et andet system.
 
 Hvis du vil vide mere om Power Apps, kan du se den korte video [Sådan integreres Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-## <a name="adding-an-embedded-app-from-power-apps-to-a-page"></a>Tilføjelse af en integreret app fra Power Apps til en side
+## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Tilføjelse af en integreret lærredapp fra Power Apps til en side
 
-### <a name="overview"></a>Oversigt
+### <a name="overview"></a>Overblik
 
-Før du integrerer en app fra Power Apps i klienten, skal du først finde eller oprette en app med den ønskede grafik og/eller funktionalitet. Vi beskriver ikke i detaljer processen til oprettelse af apps her. Emnet [Introduktion til Power Apps](https://docs.microsoft.com/powerapps/getting-started) er et godt udgangspunkt, hvis du ikke kender Power Apps.
+Før du integrerer en lærredapp fra Power Apps i klienten, skal du finde eller oprette en app, der har den ønskede grafik eller funktionalitet. Dette emne omfatter ikke en detaljeret beskrivelse af processen til oprettelse af apps. Hvis du ikke vant til at bruge Power Apps, kan du se [dokumentationen til Power Apps](https://docs.microsoft.com/powerapps/).
 
-Når du er klar til at integrere en bestemt app, kan du vælge mellem en af to måder til at få adgang til appen på en side, afhængig af hvilken måde der passer bedst til dit scenarie. Den første måde er via knappen Power Apps, der er føjet til standardhandlingsruden. Apps, der er tilføjet ved hjælp af denne mekanisme, vises som menupunkter i menuknappen Power Apps. Når den vælges, åbner hver af disse menupunkter en siderude, der indeholder den integrerede app. Du kan også vælge at integrere en app direkte på en side, som en ny fane, et oversigtspanel, blad eller som et nyt afsnit i et arbejdsområde.
+Du kan få adgang til en specifik lærredapp på en side på to måder, når du er klar til at integrere appen. Du kan vælge, hvilken fremgangsmåde der passer bedre til dit scenarie. Det første fremgangsmåde bruger knappen **Power Apps**, der er føjet til standardhandlingsruden. De apps, du tilføjer ved hjælp af denne fremgangsmåde, vises som elementer på menuknappen for **Power Apps**. Når du vælger et af disse elementer, vises en siderude, der indeholder den integrerede app. Du kan også integrere en app direkte på en side, som en ny fane, et oversigtspanel eller blad eller som et nyt afsnit i et arbejdsområde.
 
-Når du konfigurerer din integrerede app, kan du vælge et enkelt felt, du vil sende som kontekst til appen. Dette giver mulighed for, at appen kan reagere på basis af de data, du aktuelt får vist.
+Når du konfigurerer din integrerede lærredapp, kan du vælge et enkelt felt, du vil sende som kontekst til appen. Dette trin gør, at appen kan reagere på basis af de data, du aktuelt får vist.
 
-### <a name="details"></a>Oplysninger
+> [!NOTE]
+> Du kan i øjeblikket ikke bruge denne metode til at integrere udformede apps.  
 
-Følgende instruktioner viser, hvordan du integrerer en app fra Power Apps i webklienten.
+### <a name="details"></a>Detaljer
 
-1. Gå til siden, hvor du vil integrere appen. Dette er den samme side, der indeholder de data, der skal sendes til appen som input.
+Følgende procedure viser, hvordan du integrerer en lærredapp fra Power Apps i webklienten.
+
+1. Gå til siden, hvor du vil integrere lærredappen. Denne side er den samme side, der indeholder de data, der skal sendes til appen som input.
 2. Åbn ruden **Tilføj en app fra Power Apps**:
 
     - Klik på **Indstillinger**, og vælg derefter **Tilpas denne side**. Under menuen **Indsæt** skal du vælge **Power Apps**. Endelig skal du vælge det område, hvor du vil tilføje appen. Hvis du vil integrere appen under menuknappen Power Apps, skal du vælge handlingsruden. Hvis du vil integrere appen direkte på siden, skal du vælge den eller det relevante fane, oversigtspanel, blad eller afsnit (hvis du er på et arbejdsområde).
@@ -54,8 +57,8 @@ Følgende instruktioner viser, hvordan du integrerer en app fra Power Apps i web
 3. Konfigurere den integrerede app:
 
     - Feltet **Navn** angiver den tekst, der vises for knappen eller fanen, der indeholder den integrerede app. Ofte ønsker du blot at gentage navnet på appen i dette felt.
-    - **App-ID** er GUID'et for den app, du vil integrere. For at hente denne værdi skal du finde appen på [web.powerapps.com](https://web.powerapps.com) og derefter finde feltet **App-id** feltet under **Detaljer**.
-    - Som **Inputkontekst for appen** kan du eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i dette emne med titlen [Opbygning af en app, der udnytter data afsendt fra Finance and Operations-apps](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen kan få adgang til data, der er sendt fra Finance and Operations-apps.
+    - Feltet **App-id** angiver Globally Unique Identifier (GUID) for den lærredapp, du vil integrere. For at hente denne værdi skal du finde appen på [web.powerapps.com](https://web.powerapps.com) og derefter kigge i feltet **App-id** under **Detaljer**.
+    - Som **Inputkontekst for appen** kan du eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i dette emne med titlen [Opbygning af en app, der udnytter data afsendt fra Finance and Operations-apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen kan få adgang til data, der er sendt fra Finance and Operations-apps.
     - Vælg den **Programstørrelse**, der svarer til den type app, du vil integrere. Vælg **Tynd** til apps, der er bygget til mobilenheder, og **Bred** til apps, der er bygget til tablets. Dette sikrer, at der allokeres en tilstrækkelig mængde plads til den integrerede app.
     - Oversigtspanelet **Juridiske enheder** giver mulighed for at vælge, hvilke juridiske enheder appen er tilgængelig for. Standarden er at gøre appen tilgængelig for alle juridiske enheder. Denne indstilling er kun tilgængelig, når funktionen [Gemte visninger](saved-views.md) er deaktiveret. 
 
@@ -63,16 +66,23 @@ Følgende instruktioner viser, hvordan du integrerer en app fra Power Apps i web
 
 ## <a name="sharing-an-embedded-app"></a>Deling af en integreret app
 
-Når du har integreret en app på en side og bekræftet, at den fungerer korrekt med alle typer datakontekst, der blev overført fra siden, ønsker du muligvis at dele denne integrerede dette med andre brugere i systemet. Dette kan gøres på to forskellige måder ved hjælp af funktionerne til brugertilpasning af produktet:
+Når du har integreret en lærredapp på en side og bekræftet, at den fungerer korrekt med alle typer datakontekst, der er overført fra pågældende side, ønsker du muligvis at dele appen med andre brugere i systemet. Du kan dele en integreret lærredapp ved at følge disse trin.
 
-- Det anbefalede scenarie er via systemadministratoren, der kan overføre en tilpasning til alle brugere eller en undergruppe af brugere.
-- Du kan også eksportere dine sidetilpasninger og sende dem til en eller flere brugere og få hver af disse brugere til at importere disse ændringer. Tilpasningsværktøjslinjen har handlinger, der giver dig mulighed for at eksportere og importere tilpasninger.
+1. [Del lærredappen](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) med de relevante brugere, så de kan få adgang til appen i Power Apps. 
+
+2. Sørg for, at de målrettede brugere har de relevante tilpasninger, så den integrerede app vises, når brugerne får vist siden. Du kan bruge en af følgende fremgangsmåder:
+
+    - Anbefalet: Brug funktionen [Gemte visninger](saved-views.md) til at oprette og publicere en visning, der indeholder den integrerede app. Denne fremgangsmåde sikrer, at alle brugere, der har sikkerhedsroller, som er målrettet af den publicerede visning, kan se appen i Finance and Operations-apps. 
+    - Hvis du ikke har aktiveret funktionen Gemte visninger, kan du få systemadministratoren til at sende en tilpasning, der omfatter den integrerede app, til alle brugere eller et undersæt af brugere. Du kan også eksportere din sides tilpasninger og sende dem til én eller flere brugere. Hver af disse brugere kan derefter importere tilpasningerne. Tilpasningsværktøjslinjen har handlinger, der giver dig mulighed for at eksportere og importere tilpasninger. 
+    
+> [!NOTE]
+> Hvis lærredappen er delt med eksterne brugere, kan disse brugere ikke bruge den integrerede app i Finance and Operations-apps. De kan dog få adgang til appen direkte i Power Apps. Eksterne brugere omfatter gæster og brugere, der ikke tilhører Microsoft 365 Azure Directory, hvor Finance and Operations-appen er installeret.
 
 Se [Tilpasse brugeroplevelsen](personalize-user-experience.md) for at få yderligere oplysninger om tilpasningsmuligheder i produktet, og hvordan de bruges.
 
-## <a name="building-an-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>Opbygge en app, der anvender data, som er sendt fra Finance and Operations-apps
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Oprette en lærredapp, der bruger data, som er sendt fra Finance and Operations-apps
 
-En vigtig del af oprettelsen af en app fra Power Apps, der vil blive integreret i en Finance and Operations-app, anvender inputdataene fra det pågældende program. Fra Power Apps-udviklingsoplevelsen kan der opnås adgang til inputdata, der er overført fra en Finance and Operations-app, ved hjælp af variablen Param ("EntityId").
+Når du opretter en lærredapp, der skal integreres i en Finance and Operations-app, er det en vigtig del af processen at bruge inputdataene fra den pågældende Finance and Operations-app. Fra Power Apps-udviklingsoplevelsen kan der opnås adgang til inputdata, der er overført fra en Finance and Operations-app, ved hjælp af variablen **Param ("EntityId")**.
 
 For eksempel kan du i funktionen OnStart i appen indstille de indgående data fra Finance and Operations-apps til en variabel som denne:
 
@@ -80,9 +90,9 @@ For eksempel kan du i funktionen OnStart i appen indstille de indgående data fr
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-app"></a>Visning af en app
+## <a name="viewing-a-canvas-app"></a>Få vist en lærredapp
 
-For at få vist en integreret app på en side i Finance and Operations-apps skal du gå til en side med en integreret app. Husk, at apps kan åbnes via knappen Power Apps i standardhandlingsruden, eller at den kan vises direkte på siden som en ny fane, et oversigtspanel, et blad eller som en ny sektion i et arbejdsområde. Når en bruger første gang forsøger at indlæse en app på en side, bliver vedkommende bedt om at logge på for at sikre, at brugeren har de nødvendige tilladelser til at bruge appen.
+For at få vist en integreret lærredapp på en side i Finance and Operations-apps skal du blot gå til en side, der har en integreret app. Husk, at du har adgang til apps ved hjælp af **Power Apps**-knappen i standardhandlingsruden. De kan også vises direkte på siden som en ny fane, et oversigtspanel eller blad eller som et nyt afsnit i et arbejdsområde. Når brugerne første gang forsøger at indlæse en app på en side, bliver de bedt om at logge på. Dette trin sikrer, at brugerne har de relevante rettigheder til at bruge appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigere en integreret app
 
@@ -106,7 +116,7 @@ Når en app er integreret på en side, er der to måder til at fjerne den, hvis 
 
 ## <a name="appendix"></a>Appendiks
 
-### <a name="developer-control-over-where-an-app-can-be-embedded"></a>Udviklerkontrol med hvor en app kan integreres
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Udvikler] Angiver, hvor en app kan integreres
 
 Som standard kan brugere integrere apps på enhver side, enten under menuknappen Power Apps eller direkte på siden som en fane, et oversigtspanel, et blad eller som en ny sektion i et arbejdsområde. Hvis det er nødvendigt, kan udviklerne imidlertid også konfigurere denne funktion til kun at tillade integrering af apps på visse sider ved at implementere følgende metoder:
 

@@ -3,7 +3,7 @@ title: Oversigt over økonomirapportering
 description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
-ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
+ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696682"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835104"
 ---
 # <a name="get-started-with-financial-reporting"></a>Introduktion til Financial Reporting 
 
@@ -148,9 +148,7 @@ Problem 1: Report Designer starter ikke, når du vælger **Ny** eller **Rediger*
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til, og vælg derefter **Websteder**. I **Føj dette websted til zone** skal du angive "\*\.dynamics.com" (uden anførselstegn) og derefter vælge **Tilføj**. 
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til. I området, der er angivet med Sikkerhedsniveau for denne zone, skal du ændre indstillingen til **Mellem-Lav**.
 * Deaktiver blokering af pop op-vinduer i din browser.
-* Der kræves arbejdsstationer for at installere Visual Studio .NET 4.6.2 eller nyere.
-
-Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Der kræves arbejdsstationer for at installere Microsoft .NET Framework 4.6.2 eller nyere. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
 * Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Hvis du ikke kan logge ind med Chrome, skal du prøve at følge de opsætningstrin, der er beskrevet i punkt 1 ved hjælp af Internet Explorer eller Edge. 
 
 Problem 2: Brugeren har ikke fået tildelt de krævede tilladelser til at bruge Financial Reporting. 

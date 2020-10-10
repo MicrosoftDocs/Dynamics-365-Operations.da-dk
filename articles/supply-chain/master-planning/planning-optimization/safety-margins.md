@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05ac817081689f27cdf55cb86a3235d7707a737b
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 646a0e7c8b8a7f2d00a50eddfa65500d0f8afbaf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803415"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "3814894"
 ---
 # <a name="safety-margins"></a>Sikkerhedsmargener
 
@@ -162,13 +162,13 @@ Følgende regler bruges til at bestemme, om planlægningsprogrammet kan bruge en
 
 #### <a name="calendar-setup-overview-matrix"></a>Oversigtsmatrix for kalenderopsætning
 
-I følgende illustration vises en matrix, der opsummerer, hvilke kalendere der anvendes, når der beregnes sikkerhedsmargener. Følgende forkortelser og farver bruges til at angive, hvor de enkelte typer kalendere er specificeret:
+I følgende illustration vises en matrix, der opsummerer, hvilke kalendere der anvendes, når der beregnes sikkerhedsmargener. (Vælg billedet for at åbne en version af det med høj opløsning). Følgende forkortelser og farver bruges til at angive, hvor de enkelte typer kalendere er specificeret:
 
 - **Disponeringsgruppe (CG):** grøn
 - **Lagersted (WH):** gul
 - **Leverandør (V):** blå
 
-![Oversigtsmatrix for kalenderopsætning](media/safety-margins-calendar-matrix.png)
+[![Oversigtsmatrix for kalenderopsætning](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Beregning af forsinkelser
 
