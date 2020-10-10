@@ -3,7 +3,7 @@ title: Kontostyringssider og -moduler
 description: Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025666"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817152"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontostyringssider og -moduler
-
 
 [!include [banner](includes/banner.md)]
 
@@ -75,13 +74,13 @@ Hvis du vil deltage i fordelskundesprogrammet, kan der oprettes en marketingside
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Container-modul](add-container-module.md)
 
-[Købefeltmodul](add-buy-box.md)
+[Boksmodul til køb](add-buy-box.md)
 
-[Indkøbsvognmodul](add-cart-module.md)
+[Indkøbskurvsmodul](add-cart-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 

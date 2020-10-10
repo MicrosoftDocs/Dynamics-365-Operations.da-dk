@@ -3,7 +3,7 @@ title: Oversigt over sider til indkøbsvogn og betaling ved kassen
 description: Dette emne indeholder en oversigt over sider til indkøbsvogn og betaling ved kassen i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527556"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817772"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversigt over sider til indkøbsvogn og betaling ved kassen
 
@@ -40,7 +40,7 @@ Betalingssiden på et e-handels-websted indeholder en trinvis proces, som kunder
 
 Indkøbsvognens side fungerer som indkøbspose og indeholder alle de varer, der er lag i indkøbsvognen.
 
-I følgende illustration vises et eksempel på en indkøbsvognside, der er oprettet ved hjælp af startsættet og temaet "Fabrikam".
+I følgende illustration vises et eksempel på en indkøbsvognside, der er oprettet ved hjælp af modulbiblioteket og temaet "Fabrikam".
 
 ![Eksempel på en indkøbsvognside](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Du kan finde oplysninger om, hvordan du opretter en indkøbsvognside, under [Fø
 
 Siden med betaling ved kassen er det sted, hvor kunderne angiver de oplysninger, der skal bruges til afgivelsen af ordren.
 
-I følgende illustration vises et eksempel på en betalingsside, der er oprettet ved hjælp af online startsættet.
+I følgende illustration vises et eksempel på en betalingsside, der er oprettet ved hjælp af modulbiblioteket.
 
 ![Eksempel på en betalingsside](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Hovedindholdet af betalingssiden er det sted, hvor alle ordreoplysningerne indsa
 
 Der skal angives en leveringsadresse, hvis der skal leveres varer. Formatet for forsendelsesadresser for hver landestandard kan konfigureres i Dynamics 365 Commerce. Hvis varerne f.eks. skal sendes til USA, skal leveringsadressen indeholde en gadeadresse, stat og postnummer. Der udføres grundlæggende validering af leveringsadresser, f.eks. validering af alfanumeriske tegn, maksimumlængde og tal. Selvom gyldigheden af selve adressen ikke bekræftes, kan denne kontrol udføres ved hjælp af tilpassede tredjepartstjenester.
 
-Leveringsadressen anvendes på alle de varer i indkøbsvognen, som indstillingen "afsendelse" er valgt for. Hvis du bruger flowet for betaling, der findes i online startersættet, kan individuelle varer i indkøbsvognen ikke leveres til forskellige adresser. Hvis du har brug for denne egenskab, kan den implementeres ved at tilpasse betalingsmodulerne.
+Leveringsadressen anvendes på alle de varer i indkøbsvognen, som indstillingen "afsendelse" er valgt for. Hvis du bruger flowet for betaling, der findes i modulbiblioteket, kan individuelle varer i indkøbsvognen ikke leveres til forskellige adresser. Hvis du har brug for denne egenskab, kan den implementeres ved at tilpasse betalingsmodulerne.
 
 Når leveringsadressen er angivet, vises de leveringsmetoder, der er tilgængelige fra Dynamics 365 Commerce-onlinebutikken. De leveringsmetoder og adresser, de understøtter, kan konfigureres i Commerce.
 
@@ -80,7 +80,7 @@ Under processen til betaling ved kassen kan en kunde, der er medlem af et fordel
 
 #### <a name="gift-cards"></a>Gavekort
 
-Med online startsættet kan interne gavekort indløses for en ordre. For at anvende et internt gavekort skal kunden være logget på. Af hensyn til øget sikkerhed anbefales det, at du tilpasser processen ved at bruge et personligt identifikationsnummer (PIN) til interne gavekort.
+Med modulbiblioteket kan interne gavekort indløses for en ordre. For at anvende et internt gavekort skal kunden være logget på. Af hensyn til øget sikkerhed anbefales det, at du tilpasser processen ved at bruge et personligt identifikationsnummer (PIN) til interne gavekort.
 
 ### <a name="signed-in-and-guest-users"></a>Brugere, der er logget på, og gæstebrugere
 

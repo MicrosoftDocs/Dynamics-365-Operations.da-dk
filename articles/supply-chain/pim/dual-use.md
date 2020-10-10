@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0847dc1ce01a6e6f4f8b72db115445f75de4aac2
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596213"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895467"
 ---
 # <a name="dual-use-goods"></a>Varer med dobbelt anvendelse
 
@@ -40,7 +41,7 @@ Overvej på følgende scenarie:
 
     1. Indeholder ordren produkter, der er varer med dobbelt anvendelse?
     2. Hvis ordren omfatter varer med dobbelt anvendelse, kræver destinationslandet så certifikater for dobbelt anvendelse?
-    3. Hvis det pågældende land kræver certifikater for dobbelt anvendelse, findes der så et gyldigt certifikat for hver vare med dobbelt anvendelse, der kan bruges til destinationslandet?
+    3. Hvis det pågældende land/område kræver certifikater for dobbelt anvendelse, findes der så et gyldigt certifikat for hver vare med dobbelt anvendelse, der kan bruges til destinationslandet?
 
 6. Ordren omfatter produkt X-100, produktet leveres til Frankrig, og der findes et fransk certifikat for produktet. Certifikatet er dog udløbet. Derfor får du vist følgende advarselsmeddelelse: "Certifikater for dobbelt anvendelser for en eller flere varer med dobbelt anvendelse i denne salgsordre er ikke gyldige. Vil du fortsætte med bekræftelsen? "
 
@@ -48,7 +49,7 @@ I dette emne forklares, hvordan du kan konfigurere alle de indstillinger, der sk
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Definere krav for dobbelt anvendelse for hvert af de relevante lande
 
-Forskellige lande har forskellige krav til varer med dobbelt anvendelse. Du kan bruge **Landeopsætning for dobbelt anvendelse** til at holde styr på de lande, kræver og ikke kræver et certifikat. De oplysninger, du angiver her, kontrolleres, når du opretter salgsordrer, og du bliver påmindet om at levere de nødvendige certificeringer.
+Forskellige lande har forskellige krav til varer med dobbelt anvendelse. Du kan bruge **Landeopsætning for dobbelt anvendelse** til at holde styr på de lande, der kræver og ikke kræver et certifikat. De oplysninger, du angiver her, kontrolleres, når du opretter salgsordrer, og du bliver påmindet om at levere de nødvendige certificeringer.
 
 Udfør følgende trin for at angive oplysninger om krav i forbindelse med dobbelt anvendelse for forskellige lande.
 
@@ -58,8 +59,8 @@ Udfør følgende trin for at angive oplysninger om krav i forbindelse med dobbel
 
     | Felt | Beskrivende tekst |
     |---|---|
-    | Land/område | Vælg det land, du sporer krav for. |
-    | Krævet certifikat | Markér dette afkrydsningsfelt for lande, der kræver certificering for varer med dobbelt anvendelse. Fjern markeringen for lande, der ikke kræver denne certificering. |
+    | Land/område | Vælg det land/område, du sporer krav for. |
+    | Krævet certifikat | Markér dette afkrydsningsfelt for lande/områder, der kræver certificering for varer med dobbelt anvendelse. Fjern markeringen for lande/områder, der ikke kræver denne certificering. |
 
 ## <a name="create-dual-use-categories"></a>Oprette kategorier for dobbelt anvendelse
 
@@ -91,7 +92,7 @@ Denne opsætning kontrolleres, når du opretter en salgsordre.
 
 ## <a name="set-up-dual-use-certificates"></a>Konfigurere certifikater for dobbelt anvendelse
 
-Du kan bruge siden **Certifikater for dobbelt anvendelse** til til at konfigurere og administrere de påkrævede certifikater for dobbelt anvendelse for hvert produkt og land. Du kan spore hvert certifikats detaljer, f.eks. landet og gyldighedsdatoerne. Du kan også angive indstillinger for, hvor disse oplysninger skal udskrives. Oplysningerne kan f.eks. udskrives på fakturaen, følgesedlen og/eller salgsordren. Denne opsætning kontrolleres, når du opretter en salgsordre.
+Du kan bruge siden **Certifikater for dobbelt anvendelse** til til at konfigurere og administrere de påkrævede certifikater for dobbelt anvendelse for hvert produkt og land/område. Du kan spore hvert certifikats detaljer, f.eks. landet og gyldighedsdatoerne. Du kan også angive indstillinger for, hvor disse oplysninger skal udskrives. Oplysningerne kan f.eks. udskrives på fakturaen, følgesedlen og/eller salgsordren. Denne opsætning kontrolleres, når du opretter en salgsordre.
 
 1. Gå til **Administration af produktoplysninger \> Konfiguration \> Produktoverholdelse \> Produkter med dobbelt anvendelse \> Certifikater for dobbelt anvendelse**.
 2. Vælg en eksisterende certifikatopsætning for at redigere den, eller vælg **Ny** i handlingsruden for at oprette et nyt certifikat.
@@ -104,6 +105,6 @@ Du kan bruge siden **Certifikater for dobbelt anvendelse** til til at konfigurer
     | Certifikatnummer | Det nummer, der vises på det certifikat, der er udstedt til kreditoren eller debitoren. |
     | Gyldig fra | Vælg den første dato, hvor det aktuelle certifikat er gyldigt.|
     | Udløb | Vælg den sidste dato, hvor det aktuelle certifikat er gyldigt. |
-    | Udskriv på faktura | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de fakturaer, der er adresseret til det angivne land i det angivne datointerval. |
-    | Udskriv på følgeseddel | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på følgesedler, der er adresseret til det angivne land i det angivne datointerval. |
-    | Udskriv på salgsordre | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de salgsordrer, der er adresseret til det angivne land i det angivne datointerval. |
+    | Udskriv på faktura | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de fakturaer, der er adresseret til det angivne land/område i det angivne datointerval. |
+    | Udskriv på følgeseddel | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på følgesedler, der er adresseret til det angivne land/område i det angivne datointerval. |
+    | Udskriv på salgsordre | Markér dette afkrydsningsfelt for at udskrive certifikatnummeret på de salgsordrer, der er adresseret til det angivne land/område i det angivne datointerval. |

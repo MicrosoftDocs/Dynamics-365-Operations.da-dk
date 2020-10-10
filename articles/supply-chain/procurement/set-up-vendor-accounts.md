@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 59c8071ed20740f81854d29e21f87b2e8650d10f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216064"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893155"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurer kreditorkonti
 
@@ -66,7 +66,7 @@ Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fr
 
 Du kan ikke slette en kontaktpersonpost, hvis der refereres til kontakten i et dokument. I stedet kan du deaktivere kontakten.  
 
-Du kan føje kreditorkontakter til dine personlige kontakter i Microsoft Office 365. Du skal dog først konfigurere synkronisering mellem Supply Chain Management og Office 365 både i Microsoft Exchange Server-synkronisering og i installationsguiden til Microsoft Outlook.
+Du kan føje kreditorkontakter til dine personlige kontakter i Microsoft 365. Du skal dog først konfigurere synkronisering mellem Supply Chain Management og Microsoft 365 både i Microsoft Exchange Server-synkronisering og i installationsguiden til Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditorer i forskellige juridiske enheder
 Hvis en kreditor kun er registreret for én juridisk enhed i organisationen, og andre juridiske enheder skal registrere den samme kreditor, kan du bruge siden **Føj kreditor til en anden juridisk enhed** for at konfigurere kreditoren til at kunne gøre forretninger med en anden juridisk enhed. Du skal vælge en kreditorgruppe, valuta og hold-status for kreditoren i den valgte juridiske enhed.  

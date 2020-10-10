@@ -3,7 +3,7 @@ title: Moduler til vurderinger og anmeldelser
 description: I dette emne beskrives de vurderinger og vurderingsmoduler, der bruges på siderne med produktdetaljer i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 02/17/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: ee2a2a781537b592fb5f80ce424a7331c4e21d41
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071848"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817724"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduler til vurderinger og anmeldelser
 
@@ -87,11 +87,11 @@ Modulet med produktanmeldelseslister indeholder en plads, hvor du kan tilføje e
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Container-modul](add-container-module.md)
 
-[Indkøbsvognmodul](add-cart-module.md)
+[Indkøbskurvsmodul](add-cart-module.md)
 
 [Betalingsmodul](add-checkout-module.md)
 

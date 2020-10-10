@@ -1,9 +1,9 @@
 ---
 title: Regnskabsfordelinger
-description: Denne artikel indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem. Regnskabsfordelinger bruges til at allokere pengebeløb til et kildedokument til bestemte finanskonti.
+description: Dette emne indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772254"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819833"
 ---
 # <a name="accounting-distributions"></a>Regnskabsfordelinger
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem. Regnskabsfordelinger bruges til at allokere pengebeløb til et kildedokument til bestemte finanskonti. 
+Dette emne indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem. Regnskabsfordelinger bruges til at allokere pengebeløb til et kildedokument til bestemte finanskonti. 
 
 Regnskabsfordelinger er en funktion i hele programmet, der bruges og udvides med hvert kildedokument, som en indkøbsordre, kreditorfaktura, udgiftsrapport og fritekstfaktura. Som standard genereres der en regnskabsfordeling for hver kildedokumentlinje og pengebeløb og er betinget aktiveret til redigering. 
 
-> [!Note] 
+> [!NOTE] 
 > Nogle dokumenter understøtter også pengebeløb i dokumenthovedet, f.eks. gebyrer for ordrer og fakturaer. 
 
 Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger til behandling af regnskabsfordelinger:
@@ -47,14 +47,13 @@ Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger ti
     -   Knappen **Nulstil** kan aktiveres for overordnede fordelinger, når der findes mere end én fordeling. **Nulstil** vender manuel ændring af fordelingen ved at slette alle eksisterende fordelinger og oprette standardfordelingerne igen.
     -   Alle underordnede fordelinger, f.eks. rabat, gebyr og moms, følger altid den overordnede fordeling. Du kan få vist den overordnede/underordnede relation til **Reference** &gt; **Overordnede oplysninger**.
     -   Hovedkontoen og den økonomiske dimension kan også være redigerbar for børn.
-    -   De økonomiske dimensioner på regnskabsfordelinger følger et standardmønster, som dokument kan udvide. Yderligere oplysninger finder du under relaterede artikler.
+    -   De økonomiske dimensioner på regnskabsfordelinger følger et standardmønster, som dokument kan udvide.
     -   Afvigelsesfordelinger kan genereres i matchende situationer, f.eks. som en matching mellem en kreditorfaktura og en købsordre. Du kan få vist de tilsvarende forbindelser mellem regnskabsfordelingen i **Reference** &gt; **Dokumentoplysninger**.
     -   **Korrekt**-knappen vises og er aktiveret for dokumenter, der understøtter rettelser. **Korrekt** opretter nye fordelinger. Først oprettes fordelinger, som tilbagefører de oprindelige fordelinger. Disse fordelinger kan ikke ændres. Derefter oprettes nye korrekte regnskabsfordelinger. Disse fordelinger kan ændres, hvis de oprindelige fordelinger kunne ændres.
     -   Knappen **Projektoplysninger** er aktiveret som en udvidelse, når en linje er knyttet til et projekt. Projektregnskabsfordelinger giver dig mulighed for at redigere detaljer som finansieringskilde og linjeegenskab.
     -   Du kan se den aktuelle regnskabsstatus i **Reference**. Status er for hele dokumentet, og angiver, om dokumentet er i gang eller afsluttet.
 -   **Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjerne og pengebeløbene i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
 
+I version 10.0.13 er der tilføjet en funktion, der validerer regnskabsfordelingstabellen for at sikre, at nye felter konfigureres korrekt. Denne funktion kaldes **Aktivér yderligere validering af data for dokumenter ved hjælp af kildedokumentets regnskabsstruktur**. Hvis du vil bruge denne funktion, skal du aktivere den ved hjælp af arbejdsområdet **Funktionsstyring**. Hvis du vil aktivere funktionen, skal du søge efter funktionsnavnet i feltet **Søg** på siden **Funktionsstyring** og derefter vælge **Aktivér nu**.
 
 Du kan finde flere oplysninger under [Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
-
-

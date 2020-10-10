@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761123"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818269"
 ---
 # <a name="cart-module"></a>Indkøbsvognmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -41,15 +40,15 @@ I indkøbsvognmodulet gengives data baseret på indkøbsvogn-id'et, som er en br
 
 Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet.
 
-![Eksempel på et indkøbvognmodul](./media/cart2.PNG)
+![Eksempel på et indkøbsvognmodul på Fabrikam-webstedet](./media/cart2.PNG)
 
 Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet. I dette eksempel er der et ekspeditionsgebyr for et linjeelement.
 
-![Eksempel på et indkøbvognmodul](./media/ecommerce-handling-fee.png)
+![Eksempel på et indkøbsvognmodul med et ekspeditionsgebyr for et linjeelement](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Egenskaber og pladser i indkøbsvognmodulet
 
-| Egenskab | Værdier | Beskrivelse |
+| Egenskab | Værdier | Betegnelse |
 |----------------|--------|-------------|
 | Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En overskrift til vognen som f.eks. "Indkøbspose" eller "Varer i din indkøbsvogn". |
 | Vis fejl for ikke på lager | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vil der blive vist lagerrelaterede fejl på siden for indkøbsvogn. Det anbefales, at du angiver denne egenskab til **Sand**, hvis der anvendes lagerkontroller på lokationen. |

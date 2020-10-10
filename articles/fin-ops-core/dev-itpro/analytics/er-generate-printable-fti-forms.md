@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771277"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893357"
 ---
 # <a name="generate-printable-fti-forms"></a>Generere FTI-formularer, der kan udskrives
 
@@ -111,7 +111,7 @@ Du kan også generere FTI-formularer, når du bogfører en FTI, ved at aktivere 
 ER-strukturen understøtter i øjeblikket følgende destinationer for oprettede dokumenter:
 
 - **Hentet fil** – Genererede formularer tilbydes som overførsler, du kan gemme ved hjælp af webbrowseren.
-- **Skærm** – Microsoft Office 365 Excel bruges til at få vist genererede FTI-formularer i Excel-format.
+- **Skærm** – Microsoft 365 Excel bruges til at få vist oprettede FTI-formularer i Excel-format.
 - **SharePoint-mappe** – Genererede formularer gemmes baseret på indstillingerne for strukturen for dokumentstyring.
 - **Programarkiv** – Genererede formularer gemmes som vedhæftede filer i kørselslogposter i Microsoft Azure Storage.
 - **Mail** – Genererede formularer sendes som vedhæftede filer.
@@ -154,7 +154,7 @@ I øjeblikket understøtter dette ER-eksempelformat følgende funktioner til at 
 - Genererede fakturaformularer kan sendes til en fakturakunde som vedhæftet fil i en mail. Den korrekte ER-fildestination skal konfigureres til det ER-format, der bruges.
 
 ### <a name="countryregion-specific-features"></a>Funktioner, der er specifikke for landet/området 
-De følgende lande-/regionsspecifikke funktioner findes i ER-eksempelformatet for at vise, hvordan bestemte krav kan håndteres i ER-konfigurationer.
+De følgende lande-/områdespecifikke funktioner findes i ER-eksempelformatet for at vise, hvordan bestemte krav kan håndteres i ER-konfigurationer.
 
 #### <a name="norway"></a>Norge
 Termen Virksomhedsregister udskrives i overskriften på den genererede fakturaformular, når fakturaen behandles for en juridisk enhed, der er konfigureret på følgende måde:

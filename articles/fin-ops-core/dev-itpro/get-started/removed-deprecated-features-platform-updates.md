@@ -3,7 +3,7 @@ title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803133"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819883"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -34,6 +34,22 @@ Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.14 af Finance and Operations-apps
+
+> [!NOTE]
+> Version 10.0.14 er en prøveversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om frigivelser af eksempelversioner her: [Tilgængelighed af tjenesteopdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### <a name="online-users-page"></a>Siden Onlinebrugere 
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Dette er en ældre side, der blev oprettet til forrige klient-/serverarkitektur. Oplysningerne på denne side er ikke altid nøjagtige, hvilket kan være forvirrende og vildledende. |
+| **Erstattet af en anden funktion?**   | Vi vil angive en ny side i en senere opdatering.|
+| **Produktområder, der er berørt**         | Systemadministration |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | I oktober 2021 fjernes denne formular.   |
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.13 af Finance and Operations-apps
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823449"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
@@ -103,6 +103,7 @@ Du kan få vist resultaterne af konsolideringen på flere måder:
     ![Konsolideringstransaktioner på siden Konsolideringer](./media/managing-consolidation-transactions.png "Konsolideringstransaktioner på siden Konsolideringer")
 
 Hvis du vil køre konsolideringen igen, kan du kun behandle konsolideringen. Alternativt kan du først vælge **Fjern transaktioner** på siden **Konsolideringer**.
+I tilfælde af, at saldiene på den konsoliderede konto ikke nøjagtige, kan disse saldi rettes via siden **Justeringer af ultimoperiode**.
 
 ## <a name="consolidate-with-import"></a>Konsolider med import
 Funktionen Konsolider med import fungerer som funktionen Konsolider online. Når du vælger de juridiske enheder, skal du browse til kildefilen, der indeholder dataene.
@@ -156,6 +157,7 @@ Du kan finde flere oplysninger om, hvordan værdireguleringen af valuta fungerer
 - Elimineringskladder kan kun bogføres for det aktuelle lag.
 - Kun saldi for driftsenheder konsolideres. Derfor for at få vist primosaldi skal du stadig køre en ultimo ved årsafslutning i det konsoliderede regnskab.
 - Du kan bogføre en kassekladde i et elimineringsregnskab, men ikke i et konsolideret regnskab.
+- Justeringer af saldi i et konsolideret regnskab kan kun foretages ved hjælp af siden **Justeringer af ultimoperiode**. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Fordele ved at bruge Økonomirapportering til økonomiske konsolideringer og valutaomregning eller at supplere Konsolider online til konsolideret rapportering
 Kunder, der bruger Økonomirapportering til økonomiske konsolideringer og valutaomregning eller at supplere Konsolider online til konsolideret rapportering, får en række forskellige fordele:

@@ -3,7 +3,7 @@ title: Konfigurere brugerdefinerede sider til brugerlogon
 description: Dette emne beskriver, hvordan du bygger tilpassede sider i Microsoft Dynamics 365 Commerce, der håndterer tilpasset logon for brugere af Azure Active Directory (Azure AD) Business-to-Consumer-lejere (B2C).
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533453"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817300"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -181,17 +181,17 @@ Følg disse trin for at opdatere politikken "Nulstilling af adgangskode" med opl
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Tilpasse standardtekststrenge for etiketter og beskrivelser
 
-I startpakken er logonmoduler udfyldt på forhånd med standardtekststrenge for etiketter og beskrivelser. Du kan tilpasse disse strenge i SDK (Software Development Kit) ved at opdatere værdierne i filen global.json for logonmodulet.
+I modulbiblioteket er logonmoduler udfyldt på forhånd med standardtekststrenge til etiketter og beskrivelser. Du kan tilpasse disse strenge i SDK (Software Development Kit) ved at opdatere værdierne i filen global.json for logonmodulet.
 
 Standardteksten for linket til den glemte adgangskode er f.eks. **Har du glemt adgangskoden?**. I det følgende vises denne standardtekst på logonsiden.
 
 ![Standardtekst for linket til glemt adgangskode på logonsiden](./media/B2C_SignUp_ModuleFace.png)
 
-Du kan dog redigere teksten i **Har du glemt adgangskoden?** i filen global.json til startpakkens logonmodul, som vist i følgende illustration.
+Du kan dog redigere teksten til **Har du glemt adgangskoden?** i filen global.json til modulbibliotekets logonmodul, som vist i følgende illustration.
 
 ![Linkteksten opdateret i logonmodulets global.json-fil](./media/B2C_CustomizingStringsForModule.png)
 
-Når du har opdateret global.json-filen og publiceret dine ændringer, vises den nye linktekst i logonmodulet i både Commerce-siden og på siden til direkte logon.
+Når du har opdateret global.json-filen og publiceret dine ændringer, vises den nye linktekst i logonmodulet i både Commerce og på den direkte logonside.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
