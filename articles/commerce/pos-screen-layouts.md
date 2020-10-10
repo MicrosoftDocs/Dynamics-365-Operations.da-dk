@@ -3,7 +3,7 @@ title: Visuelle konfigurationer af POS-brugergrænseflade
 description: Dette emne indeholder oplysninger om skærmlayouts til Dynamics 365 Commerce POS-oplevelserne.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505628"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834203"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurationer af POS-brugergrænseflade
 
@@ -62,6 +62,8 @@ Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle element
 > [!NOTE]
 > Layoutet **Højre** og visningen af dato/klokkeslæt kan ikke anvendes på logonsiden i kompakt visning.
 
+Du skal køre distributionsplanjobbet **1090** (**Kasseapparater**) for at synkronisere de seneste visuelle profilkonfigurationer med kanaldatabasen.
+
 ## <a name="screen-layouts"></a>Skærmlayout
 
 Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placeringen af UI-kontrolelementer på POS-skærmen **Velkommen** og skærmen **Transaktion**.
@@ -81,6 +83,8 @@ Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placering
 ### <a name="assignment"></a>Tilknytning
 
 Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparats- og butikstildelingerne, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butiksniveau. I tilfælde, hvor specifikke kasseapparater eller brugere kræver specialiserede layouts, kan disse layouts tildeles.
+
+Afhængigt af, hvilket niveau skærmlayoutet er tildelt, skal du køre distributionsplanjobbet **1070** (**Kanalkonfiguration**), **1090** (**Kasseapparater**) og/eller **1060** (**Personale**) for at synkronisere de seneste skærmlayoutkonfigurationer med kanaldatabasen.
 
 ### <a name="layout-sizes"></a>Layoutstørrelser
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et eksternt katalog til PunchOut e-indkøb
-description: Dette emne beskriver brugen af et eksternt katalog eller punchout-katalog til at indsamle oplysninger tilbud fra en leverandør og føje dem til en rekvisition.
+description: Dette emne beskriver brugen af et eksternt katalog eller PunchOut-katalog til at indsamle oplysninger om tilbud fra en leverandør og føje dem til en rekvisition.
 author: mkirknel
 manager: tfehr
 ms.date: 11/02/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207801"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826822"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og 
 
 Når det eksterne katalog er konfigureret, og medarbejderen forbereder en rekvisition, er der mulighed for at omdirigere til et eksternt websted, det eksterne katalog, og returnere indkøbskurven, der er oprettet på det eksterne websted. Denne meddelelse er baseret på cXML-protokollen og skal være konfigureret mellem systemerne for den købende og den sælgende organisation.
 
-For at konfigurere kommunikationen skal din leverandør give dig oplysninger til brug i det konfigurationen af det eksterne katalog, f.eks. identitet, køberfirmaets domæne, f.eks. "DUNS" og "DUNS-nummer", legitimationsoplysninger og URL-adressen til leverandørens katalog.
+For at konfigurere kommunikationen skal din leverandør give dig oplysninger til brug i konfigurationen af det eksterne katalog, f.eks. identitet, køberfirmaets domæne, f.eks. "DUNS" og "DUNS-nummer", legitimationsoplysninger og URL-adressen til leverandørens katalog.
 
 ## <a name="setting-up-an-external-catalog"></a>Konfiguration af et eksternt katalog
 
@@ -81,12 +81,13 @@ Nedenfor kan du se en beskrivelse af de koder, der er inkluderet i skabelonen:
 |< Header >< Sender >< Credential >< Identity >< /Identity> | Indkøbsfirmaets identitet.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Den delte hemmelighed for køberens firma.|
 |< Request deploymentMode=”” >|Test- eller produktionsinstallationen.|
-|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|URL-adressen på leverandørens punchout-slutpunkt.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|URL-adressen på leverandørens PunchOut-slutpunkt.|
 
 ### <a name="extrinsic-elements"></a>Ydre elementer
 
-Et ydre element er yderligere oplysninger, f.eks. et brugernavn, der er baseret på en bruger, der stempler ud. Det ydre element angives, når udstempling forekommer, og det kan sendes i meddelelsen om konfigurationsanmodning.
-Leverandøren kan have et behov for at modtage et ydre element i opsætning af anmodningen. I så fald skal du føje det ydre element til listen over ydre elementer i sektionen **Meddelelsesformat** på siden **Eksternt katalog**. Angiv et navn for det ydre element, så leverandøren kan genkende det og tilknytte en værdi. De mulige værdier er: brugernavn, brugermail eller en tilfældig værdi.
+Et ydre element er yderligere oplysninger, f.eks. et brugernavn, der er baseret på en bruger, der stempler ud. Det ydre element angives, når PunchOut forekommer, og det kan sendes i meddelelsen om konfigurationsanmodning.
+Leverandøren kan have et behov for at modtage et ydre element i opsætning af anmodningen. I så fald skal du føje det ydre element til listen over ydre elementer i sektionen **Meddelelsesformat** på siden **Eksternt katalog**.
+Angiv et navn for det ydre element, så leverandøren kan genkende det og tilknytte en værdi. De mulige værdier er: brugernavn, brugermail eller en tilfældig værdi.
 Du kan finde flere oplysninger om cXML-protokollen på [cXML.org-webstedet](http://cxml.org/)
 
 ## <a name="post-back-message"></a>Tilbagesendelsesmeddelelse
@@ -109,3 +110,7 @@ Slet et eksternt katalog med handlingen Slet på siden.
 
 Hvis der er anmodet om et produkt fra det eksterne kreditorkatalog, kan det eksterne kreditorkatalog ikke slettes. I stedet er status for det eksterne leverandørkatalog sat til inaktiv. Hvis du vil fjerne adgangen til webstedet for det eksterne leverandørkatalog uden at slette det, kan du ændre status for det eksterne katalog til Inaktiv.
 
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Forbedringer af indkøbs-cXML](purchasing-cxml-enhancements.md)
+- [Bruge eksterne kataloger til PunchOut e-indkøb](use-external-catalogs-for-punchout.md)

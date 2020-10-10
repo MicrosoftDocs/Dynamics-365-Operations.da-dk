@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621322"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835848"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -91,7 +91,7 @@ Da produktet er repræsenteret som en SKU, kan koncepterne for specifikke produk
 
 ![Datamodel for produkter](media/dual-write-product.png)
 
-Når dobbeltskrivningsfunktionaliteten er aktiveret, vil apps fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-apps i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske enhed, hvor produktet frigives i en Finance and Operations-app. 
+Når dobbeltskrivningsfunktionaliteten er aktiveret, vil produkterne fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-produkter i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske enhed, hvor produktet frigives i en Finance and Operations-app. 
 
 Som standard synkroniseres produkter fra Finance and Operations-apps til andre Dynamics 365-apps i tilstanden **Kladde**. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, så du f.eks. kan bruge det direkte i salgsordretilbud, skal følgende indstilling vælges: under fanen **System> Administration > Systemadministration > Systemindstillinger > Sales** skal du vælge **Opret produkter i aktiv tilstand = ja**. 
 

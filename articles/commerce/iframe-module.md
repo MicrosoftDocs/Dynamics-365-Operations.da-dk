@@ -3,7 +3,7 @@ title: iFrame-modul
 description: I dette emne dækkes iFrame-modulet, og det beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0616a772a416a7c9d9756a840c93b8601c08c3d0
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646891"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818192"
 ---
 # <a name="iframe-module"></a>iFrame-modul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 I dette emne dækkes iFrame-modulet, og det beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -37,6 +36,9 @@ I dette emne dækkes iFrame-modulet, og det beskriver, hvordan du kan føje det 
 Et iFrame-modul indeholder en iframe (indbygget ramme), der fungerer som vært for eksternt indhold på et websted. Det kan f.eks. bruges som vært for en YouTube-video eller PDF-filfremviser på en side på et websted. 
 
 Et iFrame-modul kræver en URL-destination. Derefter vil den være vært for indholdet af målsiden i et HTML **iframe**-element. Eksterne URL-adresser skal være på listen over tilladte (også kaldet et "hvidliste") i henhold til direktiverne om indholdssikkerhedspolitik (CSP) pr. websted. Til iframe-indhold skal URL-adresser tillades ved hjælp af **frame-ancestor**-direktivet. Du kan finde flere oplysninger under [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md).
+
+> [!NOTE]
+> iFrame-modulet er tilgængeligt i Dynamics 365 Commerce version 10.0.13.
 
 Følgende billede viser eksempler på iFrame-moduler, der præsenterer eksterne videoer på websider.
 
@@ -72,6 +74,6 @@ Hvis du vil føje et iFrame-modul til en side, der viser en ekstern video, skal 
  
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)

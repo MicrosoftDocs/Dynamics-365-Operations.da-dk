@@ -3,7 +3,7 @@ title: Oversigt over administration af frynsegoder
 description: Oversigt over funktionen Administration af frynsegoder i Dynamics 365 Human Resources. Tilbyd dine medarbejdere mulighed for ekstra frynsegoder via en brugervenlig onlineoplevelse.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599374"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819759"
 ---
 # <a name="benefits-management-overview"></a>Oversigt over administration af frynsegoder
 
@@ -41,15 +41,9 @@ Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegod
 
 Hvis du vil have adgang til demodataene, skal du geninstallere dit sandkassemiljø.
 
-## <a name="benefits-management-known-issues"></a>Kendte problemer i forbindelse med Administration af frynsegoder
-
-### <a name="flex-credit-programs"></a>Programmer for fleksibel kredit
-
-Den samlede kreditværdi, der er defineret for et Flex-kreditprogram, vises ikke i formularen **Frynsegodeplaner for medarbejdere**. Hvis du angiver, at et Flex-kreditprogram skal have en prorate-regel af **Ingen**, vises en fejl i **Frynsegodeplaner for medarbejder**, når du vælger og bekræfter planer.
-
 ## <a name="enable-benefits-management"></a>Aktivere Administration af frynsegoder
 
-I disse artikler beskrives, hvordan du slår funktioner til i Human Resources. Den angiver også, hvilke eksisterende funktioner i Human Resources som Administration af frynsegoder erstatter, eller der deaktiveres, når du aktiverer Administration af frynsegoder.
+I dette emne beskrives, hvordan du slår funktioner til i Human Resources. Den angiver også, hvilke eksisterende funktioner i Human Resources som Administration af frynsegoder erstatter, eller der deaktiveres, når du aktiverer Administration af frynsegoder.
 
 > [!IMPORTANT]
 > Når du aktiverer Administration af frynsegoder i et **produktionsmiljø**, kan du ikke deaktivere det. Vi anbefaler, at du aktiverer og tester Administration af frynsegoder i et **sandkassemiljø**, før du aktiverer det i et **produktionsmiljø**. Der er betydelige forskelle mellem den gamle frynsegodefunktionalitet og de nye funktioner til administration af frynsegoder, der kræver yderligere opsætning, og som skal testes, før de bringes i produktion.

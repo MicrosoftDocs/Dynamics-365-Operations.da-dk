@@ -3,7 +3,7 @@ title: Modulet Butiksvælger
 description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646129"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818244"
 ---
 # <a name="store-selector-module"></a>Modulet Butiksvælger
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -65,7 +64,7 @@ Hvis dette scenarie skal fungere, skal produkterne konfigureres med leveringstil
 
 Følgende billede viser et eksempel på et butiksvælgermodul, der bruges på en produktoplysningsside (PDP).
 
-![Eksempel på et butiksvælgermodul](./media/BOPIS.PNG)
+![Eksempel på et butiksvælgermodul, der bruges på en PDP](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Find butikker-tilstand
 
@@ -73,7 +72,7 @@ Butiksvælgermodulet understøtter også tilstanden **Find butikker**. Denne til
 
 I følgende illustration vises et eksempel på et butiksvælgermodul, der bruges sammen med et kortmodul på en butiksadresseside.
 
-![Eksempel på et butiksvælgermodul](./media/ecommerce-Storelocator.PNG)
+![Eksempel på et butiksvælgermodul og et kortmodul på en side med butiksadresser](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Gengive et kort
 
@@ -127,7 +126,7 @@ Hvis du vil konfigurere butiksvælgermodulet til at vise tilgængelige butikker 
  
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Boksmodul til køb](add-buy-box.md)
 

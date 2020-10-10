@@ -3,7 +3,7 @@ title: Kortmodul
 description: Dette emne omhandler kortmoduler og beskriver, hvordan du kan konfigurere dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ca531e6cbf0a1044b0a13e5cdf42c7b4f0498fe5
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811178"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817200"
 ---
 # <a name="map-module"></a>Kortmodul
 
@@ -38,7 +38,8 @@ Et kortmodul viser butikkernes placering på et interaktivt kort, der gengives v
 
 Et kortmodul fungerer sammen med modulet for butiksvælger for at bestemme de geografiske placeringer af butikker, der skal gengives på et kort. Butiksvælger og kortmoduler fungerer interaktivt, når en bruger vælger en butik i et af disse moduler på en webside. Kortmoduler kan udvides til andre scenarier udover interaktion med butiksvælgermoduler. Modultilpasning er dog påkrævet.
 
-Kortmodulet blev introduceret i Commerce version 10.0.13.
+> [!NOTE]
+> Kortmodulet er tilgængeligt i Dynamics 365 Commerce version 10.0.13.
 
 Det følgende billede viser et eksempel på et kortmodul, der bruges på en side med butiksadresser.
 
@@ -70,7 +71,7 @@ Du kan finde detaljerede oplysninger om, hvordan du konfigurerer et kortmodul p�
  
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Boksmodul til køb](add-buy-box.md)
 

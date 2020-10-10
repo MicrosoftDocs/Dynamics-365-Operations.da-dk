@@ -3,7 +3,7 @@ title: Tilpasse navigation på webstedet
 description: I dette emne beskrives, hvordan du opretter et tilpasset onlinenavigationshierarki for at organisere dine produkter til gennemsyn på dit Microsoft Dynamics 365 Commerce-websted.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269653"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817224"
 ---
 # <a name="customize-site-navigation"></a>Tilpasse navigation på webstedet
 
@@ -81,7 +81,7 @@ Udfør følgende trin for at gøre navigationshierarkiet tilgængeligt for din o
 Hvis du vil have vist din kategorihierarki i din onlinestorefront, skal du tilføje navigationsmenumodulet på den relevante placering i en skabelon eller et fragment. Navigationsmenumodulet viser derefter dit navigationshierarki, hvis du har publiceret dit navigationshierarki til den kanal, som dit websted er bundet til.
 
 > [!NOTE]
-> Det navigationsmenumodul, der er inkluderet i butikkens startpakke, gør det kun muligt for brugere at navigere til kategorier, der ikke har underkategorier. Hvis kunderne skal kunne navigere til kategorier, der har underkategorier, skal du tilpasse navigationsmenumodulet.
+> Det navigationsmenumodul, der er inkluderet i modulbiblioteket, gør det kun muligt for brugere at navigere til kategorier, der ikke har underkategorier. Hvis kunderne skal kunne navigere til kategorier, der har underkategorier, skal du tilpasse navigationsmenumodulet.
 
 ## <a name="add-custom-navigation-options"></a>Tilføje brugerdefinerede navigationsindstillinger
 

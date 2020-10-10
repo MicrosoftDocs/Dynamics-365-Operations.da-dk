@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210151"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887234"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram til finplanlægning
 
@@ -38,7 +38,7 @@ Et Gantt-diagram er en visuel repræsentation af planlagte aktiviteter inden for
 -   Job fra planlagte produktionsordrer.
 -   Finplanlagte projektaktiviteter af typen Timebudgetter.
 
-Gantt-diagrammet kan åbnes i to forskellige visninger, **Ordrevisning** og **Ressourcevisning**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). I **Ordrevisning** grupperes aktiviteter under produktionsordrer. Dette kan være nyttigt, hvis du f.eks. vil vedligeholde en oversigt over alle de job, der tilhører samme ordrer. I **Ressourcevisning** er alle job grupperet under individuelle ressourcer. Denne visning kan være nyttig, når du optimerer planen på ressourceniveau, f.eks. en maskine eller en gruppe af maskiner. Gantt-diagrammerne i illustrationerne nedenfor viser **Ordrevisning** og **Ressourcevisning** med følgende nøgleelementer:
+Gantt-diagrammet kan åbnes i to forskellige visninger, **Ordrevisning** og **Ressourcevisning**. I **Ordrevisning** grupperes aktiviteter under produktionsordrer. Dette kan være nyttigt, hvis du f.eks. vil vedligeholde en oversigt over alle de job, der tilhører samme ordrer. I **Ressourcevisning** er alle job grupperet under individuelle ressourcer. Denne visning kan være nyttig, når du optimerer planen på ressourceniveau, f.eks. en maskine eller en gruppe af maskiner. Gantt-diagrammerne i illustrationerne nedenfor viser **Ordrevisning** og **Ressourcevisning** med følgende nøgleelementer:
 
 1.  Gantt-diagramaktivitet
 2.  Mangel på materialer-ikon

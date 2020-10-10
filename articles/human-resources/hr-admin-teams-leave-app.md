@@ -18,22 +18,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a022f8297066793080d254baa01410884a3fafd9
-ms.sourcegitcommit: 55b729361ea852e38531c51972c6730e3d9c2b45
+ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3776302"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828908"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Personale i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan medarbejdere hurtigt anmode om at få fri og se deres flekskontooplysninger i Microsoft Teams. Medarbejderne kan interagere med en bot for at anmode om oplysninger. Fanen **Fridage** giver mere detaljerede oplysninger.
+Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan medarbejdere hurtigt anmode om at få fri og se deres flekskontooplysninger i Microsoft Teams. Medarbejderne kan interagere med en bot for at anmode om oplysninger. Fanen **Fridage** giver mere detaljerede oplysninger. Derudover kan de sende personer oplysninger om kommende fridage i Teams og chatsamtaler uden for Human Resources-app.
 
 ![Orlov via appbot i Personale i Teams](./media/hr-admin-teams-leave-app-bot.png)
 
 ![Fanen Fri i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+
+![Human Resources-orlovsanmodningskort](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installere og konfigurere
 
@@ -85,7 +87,6 @@ Når du har aktiveret beskeder for Teams-appen Personale, kan du slå beskeder t
 | Udsted | Status |
 | --- | --- |
 | Vandret rulning fungerer ikke på Android-telefoner | Vandret rulning er ikke et problem på iOS-enheder eller stationære computere. Vi arbejder på at løse problemet for Android. |
-| Fejl: Der er problemer med at finde et miljø, der skal oprettes forbindelse til. | Du kan få vist denne fejl, selvom du har bekræftet, at brugeren kan få adgang til et eller flere personalemiljøer (HR). Du kan heller ikke se alle de miljøer, du forventer. sIndtil dette problem er løst, skal du slette brugeren og derefter importere vedkommende igen for at løse problemet. |
 | Saldoen er forkert, når der angives fri for en fremtidig dato. | Prognosefunktion er ikke tilgængelig endnu. Saldoen viser den aktuelle dato. |
 | Kan ikke annullere en anmodning **Til gennemsyn**. | Denne funktionalitet understøttes ikke i øjeblikket, og den føjes til en fremtidig version. |
 | Saldooplysninger beregnes pr. dags dato. | Systemet viser i øjeblikket ikke saldi pr. periodiseringsperioden, også selvom det er konfigureret i orlovs- og fraværsparametre. |
@@ -102,9 +103,15 @@ Indholdet af brugerforespørgsler og-meddelelser bevares i LUIS-systemet i maksi
 
 Hvis du vil styre administratorindstillinger for apps i Microsoft Teams, skal du gå til [Microsoft Teams Administration](https://admin.teams.microsoft.com/).
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid og Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid og Azure Cosmos DB
 
-Når du bruger beskedfunktionen til Dynamics 365 Human Resources-appen i Teams, vil visse kundedata flyde uden for det geografiske område, hvor din lejers personaleservice er installeret. Dynamics 365 Human Resources overfører oplysninger om medarbejderens orlovsanmodning og arbejdsgangsopgave til Microsoft Azure Event Grid og Microsoft Teams. Disse data kan gemmes i op til 24 timer og behandles i USA, krypteres under overførslen og i lageret og bruges ikke af Microsoft eller underprocesser til træning eller forbedring af tjenester.
+Når du bruger Dynamics 365 Human Resources-appen i Microsoft Teams, kan visse kundedata flyde uden for det geografiske område, hvor din lejers personaleservice er installeret.
+
+Dynamics 365 Human Resources overfører oplysninger om medarbejderens orlovsanmodning og arbejdsgangsopgave til Microsoft Azure Event Grid og Microsoft Teams. Disse data kan gemmes i Microsoft Azure Event Grid i op til 24 timer og behandles i USA, krypteres under overførslen og i lageret og bruges ikke af Microsoft eller underprocesser til træning eller forbedring af tjenester. Få indsigt i, hvor dine data opbevares i Teams, ved at se: [Placering af data i Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Indholdet i samtalen med chatrobotten i Human Resources-appen kan gemmes i Azure Cosmos DB og overføres til Microsoft Teams. Disse data kan gemmes i Azure Cosmos DB i op til 24 timer og kan behandles uden for det geografiske område, hvor din lejers Human Resources-tjeneste er udrullet. Data, der er undervejs, og inaktive data krypteres og bruges ikke af Microsoft eller underprocesser til træning eller tjenesteforbedringer. Få indsigt i, hvor dine data opbevares i Teams, ved at se: [Placering af data i Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Hvis du vil begrænse adgangen til Human Resources-appen i Microsoft Teams for din organisation eller brugere i organisationen, skal du se [Styre apptilladelsespolitikker i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Se også 
 

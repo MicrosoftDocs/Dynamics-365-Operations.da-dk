@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: b4f69e7933bc5a50cccad6911c99cf08d2768578
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706246"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818590"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>Understøttede scenarier til installation med to skrivninger
 
@@ -42,7 +42,7 @@ Du kan oprette en forbindelse med to skrivninger mellem et Finance and Operation
 
 Konfigurationsmekanismen varierer, afhængigt af dit abonnement og miljøet.
 
-+ Ved nye forekomster af Finance and Operations-apps begynder opsætningen af en forbindelse med to skrivninger i Microsoft Dynamics Lifecycle Services (LCS). Hvis du har en licens til Microsoft Power Platform, vil du få et nyt Common Data Service-miljø, hvis din lejer ikke har en.
++ Ved nye forekomster af Finance and Operations-apps begynder opsætningen af en forbindelse med to skrivninger i Microsoft Dynamics Lifecycle Services (LCS). Hvis du har en licens til Power Platform, vil du få et nyt Common Data Service-miljø, hvis din lejer ikke har en.
 + For eksisterende forekomster af Finance and Operations-apps begynder opsætningen af en forbindelse med to skrivninger i Finance and Operations-miljøet.
 
 Følgende konfigurationsscenarier understøttes:
