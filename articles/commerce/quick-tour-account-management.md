@@ -3,7 +3,7 @@ title: Oversigt over sider til kontostyring
 description: Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,82 +17,82 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: d0e066428e8c4717b5a50144f63e59b87089d286
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527602"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817796"
 ---
-# <a name="account-management-pages-overview"></a><span data-ttu-id="edc69-103">Oversigt over sider til kontostyring</span><span class="sxs-lookup"><span data-stu-id="edc69-103">Account management pages overview</span></span>
+# <a name="account-management-pages-overview"></a><span data-ttu-id="0eddd-103">Oversigt over sider til kontostyring</span><span class="sxs-lookup"><span data-stu-id="0eddd-103">Account management pages overview</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="edc69-104">Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="edc69-104">This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="0eddd-104">Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="0eddd-104">This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="edc69-105">Oversigt</span><span class="sxs-lookup"><span data-stu-id="edc69-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="0eddd-105">Oversigt</span><span class="sxs-lookup"><span data-stu-id="0eddd-105">Overview</span></span>
 
-<span data-ttu-id="edc69-106">På sider til kontostyring kan kunderne se oplysninger, der er relateret til deres konto og deres ordrer.</span><span class="sxs-lookup"><span data-stu-id="edc69-106">Account management pages let customers view information that is related to their account and orders.</span></span> <span data-ttu-id="edc69-107">Sider til kontostyring omfatter landingssiden til kontostyring og sider til brugerens profil, adresser, ordrehistorik, ordreoplysninger, fordelskundepoint og ønskeliste.</span><span class="sxs-lookup"><span data-stu-id="edc69-107">Account management pages include the account management landing page, and pages for the user's profile, addresses, order history, order details, loyalty points, and wish list.</span></span>
+<span data-ttu-id="0eddd-106">På sider til kontostyring kan kunderne se oplysninger, der er relateret til deres konto og deres ordrer.</span><span class="sxs-lookup"><span data-stu-id="0eddd-106">Account management pages let customers view information that is related to their account and orders.</span></span> <span data-ttu-id="0eddd-107">Sider til kontostyring omfatter landingssiden til kontostyring og sider til brugerens profil, adresser, ordrehistorik, ordreoplysninger, fordelskundepoint og ønskeliste.</span><span class="sxs-lookup"><span data-stu-id="0eddd-107">Account management pages include the account management landing page, and pages for the user's profile, addresses, order history, order details, loyalty points, and wish list.</span></span>
 
-### <a name="account-management-landing-page"></a><span data-ttu-id="edc69-108">Landingsside for kontostyring</span><span class="sxs-lookup"><span data-stu-id="edc69-108">Account management landing page</span></span>
+### <a name="account-management-landing-page"></a><span data-ttu-id="0eddd-108">Landingsside for kontostyring</span><span class="sxs-lookup"><span data-stu-id="0eddd-108">Account management landing page</span></span>
 
-<span data-ttu-id="edc69-109">Når en kunde logger på og vælger **Min konto**, åbnes landingssiden til kontostyring.</span><span class="sxs-lookup"><span data-stu-id="edc69-109">When a customer signs in and selects **My Account**, the account management landing page is opened.</span></span> <span data-ttu-id="edc69-110">Denne side giver et hurtigt overblik over alle kontorelaterede oplysninger, f.eks. brugerens profil, ordrer, ønskeliste, adresser, fordelskundepoint.</span><span class="sxs-lookup"><span data-stu-id="edc69-110">This page provides a quick summary of all account-related information, such as the user's profile, orders, wish list, addresses, loyalty points.</span></span> <span data-ttu-id="edc69-111">Fra denne side kan kunden få adgang til flere oplysninger om de enkelte områder.</span><span class="sxs-lookup"><span data-stu-id="edc69-111">From this page, the customer can access more details for each area.</span></span>
+<span data-ttu-id="0eddd-109">Når en kunde logger på og vælger **Min konto**, åbnes landingssiden til kontostyring.</span><span class="sxs-lookup"><span data-stu-id="0eddd-109">When a customer signs in and selects **My Account**, the account management landing page is opened.</span></span> <span data-ttu-id="0eddd-110">Denne side giver et hurtigt overblik over alle kontorelaterede oplysninger, f.eks. brugerens profil, ordrer, ønskeliste, adresser, fordelskundepoint.</span><span class="sxs-lookup"><span data-stu-id="0eddd-110">This page provides a quick summary of all account-related information, such as the user's profile, orders, wish list, addresses, loyalty points.</span></span> <span data-ttu-id="0eddd-111">Fra denne side kan kunden få adgang til flere oplysninger om de enkelte områder.</span><span class="sxs-lookup"><span data-stu-id="0eddd-111">From this page, the customer can access more details for each area.</span></span>
 
-<span data-ttu-id="edc69-112">I følgende illustration vises et eksempel på landingssiden til kontostyring.</span><span class="sxs-lookup"><span data-stu-id="edc69-112">The following illustration shows an example of the account management landing page.</span></span>
+<span data-ttu-id="0eddd-112">I følgende illustration vises et eksempel på landingssiden til kontostyring.</span><span class="sxs-lookup"><span data-stu-id="0eddd-112">The following illustration shows an example of the account management landing page.</span></span>
 
 ![Eksempel på en landingsside til kontostyring](./media/Account-Management.PNG)
 
-### <a name="my-profile-page"></a><span data-ttu-id="edc69-114">Siden Min profil</span><span class="sxs-lookup"><span data-stu-id="edc69-114">My profile page</span></span>
+### <a name="my-profile-page"></a><span data-ttu-id="0eddd-114">Siden Min profil</span><span class="sxs-lookup"><span data-stu-id="0eddd-114">My profile page</span></span>
 
-<span data-ttu-id="edc69-115">På siden **Min profil** vises kundens kontooplysninger, f.eks. personens navn og telefonnummer.</span><span class="sxs-lookup"><span data-stu-id="edc69-115">The **My profile** page shows customer's account information, such as his or her name and phone number.</span></span> <span data-ttu-id="edc69-116">Kunden kan opdatere sine profiloplysninger på denne side.</span><span class="sxs-lookup"><span data-stu-id="edc69-116">The customer can update his or her profile information on this page.</span></span> <span data-ttu-id="edc69-117">Denne side kan tilpasses, så den indeholder yderligere indstillinger for kundekontoen, f.eks. en indstilling for tilmelding til marketingmail.</span><span class="sxs-lookup"><span data-stu-id="edc69-117">This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.</span></span>
+<span data-ttu-id="0eddd-115">På siden **Min profil** vises kundens kontooplysninger, f.eks. personens navn og telefonnummer.</span><span class="sxs-lookup"><span data-stu-id="0eddd-115">The **My profile** page shows customer's account information, such as his or her name and phone number.</span></span> <span data-ttu-id="0eddd-116">Kunden kan opdatere sine profiloplysninger på denne side.</span><span class="sxs-lookup"><span data-stu-id="0eddd-116">The customer can update his or her profile information on this page.</span></span> <span data-ttu-id="0eddd-117">Denne side kan tilpasses, så den indeholder yderligere indstillinger for kundekontoen, f.eks. en indstilling for tilmelding til marketingmail.</span><span class="sxs-lookup"><span data-stu-id="0eddd-117">This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.</span></span>
 
-<span data-ttu-id="edc69-118">I følgende illustration vises et eksempel på en **Min profil**-side, der er oprettet ved hjælp af startsættet.</span><span class="sxs-lookup"><span data-stu-id="edc69-118">The following illustration shows an example of a **My profile** page that was built by using the starter kit.</span></span>
+<span data-ttu-id="0eddd-118">I følgende illustration vises et eksempel på en **Min profil**-side, der er oprettet ved hjælp af modulbiblioteket.</span><span class="sxs-lookup"><span data-stu-id="0eddd-118">The following illustration shows an example of a **My profile** page that was built by using the module library.</span></span>
 
 ![Eksempel på siden Min profil](./media/Account-Management-MyProfile.PNG)
 
-### <a name="addresses-page"></a><span data-ttu-id="edc69-120">Siden Adresser</span><span class="sxs-lookup"><span data-stu-id="edc69-120">Addresses page</span></span>
+### <a name="addresses-page"></a><span data-ttu-id="0eddd-120">Siden Adresser</span><span class="sxs-lookup"><span data-stu-id="0eddd-120">Addresses page</span></span>
 
-<span data-ttu-id="edc69-121">På siden **Adresser** kan kunden føje adresser til sin konto.</span><span class="sxs-lookup"><span data-stu-id="edc69-121">The **Addresses** page lets the customer add addresses to his or her account.</span></span> <span data-ttu-id="edc69-122">Den viser også listen over adresser, som kunden tidligere har tilføjet eller gemt på kontoen.</span><span class="sxs-lookup"><span data-stu-id="edc69-122">It also shows the list of addresses that the customer has previously added or saved to the account.</span></span> <span data-ttu-id="edc69-123">Disse adresser er adresser, som kunden enten har angivet på denne side eller under afgivelsen af en ordre.</span><span class="sxs-lookup"><span data-stu-id="edc69-123">These addresses are addresses that the customer entered either on this page or while placing an order.</span></span>
+<span data-ttu-id="0eddd-121">På siden **Adresser** kan kunden føje adresser til sin konto.</span><span class="sxs-lookup"><span data-stu-id="0eddd-121">The **Addresses** page lets the customer add addresses to his or her account.</span></span> <span data-ttu-id="0eddd-122">Den viser også listen over adresser, som kunden tidligere har tilføjet eller gemt på kontoen.</span><span class="sxs-lookup"><span data-stu-id="0eddd-122">It also shows the list of addresses that the customer has previously added or saved to the account.</span></span> <span data-ttu-id="0eddd-123">Disse adresser er adresser, som kunden enten har angivet på denne side eller under afgivelsen af en ordre.</span><span class="sxs-lookup"><span data-stu-id="0eddd-123">These addresses are addresses that the customer entered either on this page or while placing an order.</span></span>
 
-<span data-ttu-id="edc69-124">I følgende illustration vises et eksempel på siden **Adresser**.</span><span class="sxs-lookup"><span data-stu-id="edc69-124">The following illustration shows an example of the **Addresses** page.</span></span>
+<span data-ttu-id="0eddd-124">I følgende illustration vises et eksempel på siden **Adresser**.</span><span class="sxs-lookup"><span data-stu-id="0eddd-124">The following illustration shows an example of the **Addresses** page.</span></span>
 
 ![Eksempel på en adresseside](./media/Account-Management-Address.png)
 
-### <a name="order-history-and-order-details-pages"></a><span data-ttu-id="edc69-126">Siderne Ordrehistorik og Ordredetaljer</span><span class="sxs-lookup"><span data-stu-id="edc69-126">Order history and Order details pages</span></span>
+### <a name="order-history-and-order-details-pages"></a><span data-ttu-id="0eddd-126">Siderne Ordrehistorik og Ordredetaljer</span><span class="sxs-lookup"><span data-stu-id="0eddd-126">Order history and Order details pages</span></span>
 
-<span data-ttu-id="edc69-127">På siden **Ordrehistorik** vises en oversigt over alle ordrer, som kunden har afsendt ved hjælp af sin konto.</span><span class="sxs-lookup"><span data-stu-id="edc69-127">The **Order history** page shows a summary of all orders that the customer has submitted by using his or her account.</span></span> <span data-ttu-id="edc69-128">Den giver en hurtig oversigt over de bestilte varer, bekræftelsesnummeret, salgs-id, sporingsoplysninger og andre oplysninger.</span><span class="sxs-lookup"><span data-stu-id="edc69-128">It gives a quick summary of the items that were ordered, the confirmation number, sales ID, tracking information, and other information.</span></span> <span data-ttu-id="edc69-129">Hvis kunden ønsker at få vist en mere detaljeret opdeling af hver ordre, er der en side med **Ordreoplysninger**.</span><span class="sxs-lookup"><span data-stu-id="edc69-129">If the customer wants to view a more detailed breakdown of each order, there is an **Order details** page.</span></span> <span data-ttu-id="edc69-130">Denne side indeholder oplysninger som forsendelsesadresse, betalingsoplysninger, rabatter, moms og forsendelsesomkostninger for ordren.</span><span class="sxs-lookup"><span data-stu-id="edc69-130">This page includes information such as the shipping address, payment information, discounts, taxes, and shipping costs for the order.</span></span>
+<span data-ttu-id="0eddd-127">På siden **Ordrehistorik** vises en oversigt over alle ordrer, som kunden har afsendt ved hjælp af sin konto.</span><span class="sxs-lookup"><span data-stu-id="0eddd-127">The **Order history** page shows a summary of all orders that the customer has submitted by using his or her account.</span></span> <span data-ttu-id="0eddd-128">Den giver en hurtig oversigt over de bestilte varer, bekræftelsesnummeret, salgs-id, sporingsoplysninger og andre oplysninger.</span><span class="sxs-lookup"><span data-stu-id="0eddd-128">It gives a quick summary of the items that were ordered, the confirmation number, sales ID, tracking information, and other information.</span></span> <span data-ttu-id="0eddd-129">Hvis kunden ønsker at få vist en mere detaljeret opdeling af hver ordre, er der en side med **Ordreoplysninger**.</span><span class="sxs-lookup"><span data-stu-id="0eddd-129">If the customer wants to view a more detailed breakdown of each order, there is an **Order details** page.</span></span> <span data-ttu-id="0eddd-130">Denne side indeholder oplysninger som forsendelsesadresse, betalingsoplysninger, rabatter, moms og forsendelsesomkostninger for ordren.</span><span class="sxs-lookup"><span data-stu-id="0eddd-130">This page includes information such as the shipping address, payment information, discounts, taxes, and shipping costs for the order.</span></span>
 
-<span data-ttu-id="edc69-131">I følgende illustration vises et eksempel på siden **Ordrehistorik**.</span><span class="sxs-lookup"><span data-stu-id="edc69-131">The following illustration shows an example of the **Order history** page.</span></span>
+<span data-ttu-id="0eddd-131">I følgende illustration vises et eksempel på siden **Ordrehistorik**.</span><span class="sxs-lookup"><span data-stu-id="0eddd-131">The following illustration shows an example of the **Order history** page.</span></span>
 
 ![Eksempel på en side med ordrehistorik](./media/Account-Management-OrderHistory.PNG)
 
-<span data-ttu-id="edc69-133">I følgende illustration vises et eksempel på siden **Ordredetaljer**.</span><span class="sxs-lookup"><span data-stu-id="edc69-133">The following illustration shows an example of the **Order details** page.</span></span>
+<span data-ttu-id="0eddd-133">I følgende illustration vises et eksempel på siden **Ordredetaljer**.</span><span class="sxs-lookup"><span data-stu-id="0eddd-133">The following illustration shows an example of the **Order details** page.</span></span>
 
 ![Eksempel på en side med ordredetaljer](./media/Account-Management-OrderDetails.PNG)
 
-### <a name="loyalty-program-page"></a><span data-ttu-id="edc69-135">Siden Fordelskundeprogram</span><span class="sxs-lookup"><span data-stu-id="edc69-135">Loyalty program page</span></span>
+### <a name="loyalty-program-page"></a><span data-ttu-id="0eddd-135">Siden Fordelskundeprogram</span><span class="sxs-lookup"><span data-stu-id="0eddd-135">Loyalty program page</span></span>
 
-<span data-ttu-id="edc69-136">På siden **Fordelskundeprogram** kan kunden blive medlem af et fordelskundeprogram.</span><span class="sxs-lookup"><span data-stu-id="edc69-136">The **Loyalty program** page lets the customer become a member of a loyalty program.</span></span> <span data-ttu-id="edc69-137">Når en kunde har tilmeldt sig et fordelskundeprogram, indeholder siden **Fordelskundeprogram** oplysninger om f.eks. det antal point, der er optjent, og det antal point, der er blevet indløst.</span><span class="sxs-lookup"><span data-stu-id="edc69-137">After a customer has signed up for a loyalty program, the **Loyalty program** page include details such as the number of points that have been earned and the number of points that have been redeemed.</span></span>
+<span data-ttu-id="0eddd-136">På siden **Fordelskundeprogram** kan kunden blive medlem af et fordelskundeprogram.</span><span class="sxs-lookup"><span data-stu-id="0eddd-136">The **Loyalty program** page lets the customer become a member of a loyalty program.</span></span> <span data-ttu-id="0eddd-137">Når en kunde har tilmeldt sig et fordelskundeprogram, indeholder siden **Fordelskundeprogram** oplysninger om f.eks. det antal point, der er optjent, og det antal point, der er blevet indløst.</span><span class="sxs-lookup"><span data-stu-id="0eddd-137">After a customer has signed up for a loyalty program, the **Loyalty program** page include details such as the number of points that have been earned and the number of points that have been redeemed.</span></span>
 
-<span data-ttu-id="edc69-138">Følgende illustration viser et eksempel på siden **Fordelskundeprogram**.</span><span class="sxs-lookup"><span data-stu-id="edc69-138">The following illustration shows an example of a **Loyalty program** page.</span></span>
+<span data-ttu-id="0eddd-138">Følgende illustration viser et eksempel på siden **Fordelskundeprogram**.</span><span class="sxs-lookup"><span data-stu-id="0eddd-138">The following illustration shows an example of a **Loyalty program** page.</span></span>
 
 ![Eksempel på en side med fordelskundeprogram](./media/Account-Management-Loyalty.PNG)
 
-### <a name="wishlist-page"></a><span data-ttu-id="edc69-140">Siden Ønskeliste</span><span class="sxs-lookup"><span data-stu-id="edc69-140">Wishlist page</span></span>
+### <a name="wishlist-page"></a><span data-ttu-id="0eddd-140">Siden Ønskeliste</span><span class="sxs-lookup"><span data-stu-id="0eddd-140">Wishlist page</span></span>
 
-<span data-ttu-id="edc69-141">Siden **Ønskeliste** viser en liste over de varer, som kunden har føjet til sin ønskeliste.</span><span class="sxs-lookup"><span data-stu-id="edc69-141">The **Wishlist** page shows a list of the items that the customer has added to his or her wish list.</span></span> <span data-ttu-id="edc69-142">Både produkter og produktvarianter kan tilføjes på ønskelisten.</span><span class="sxs-lookup"><span data-stu-id="edc69-142">Both products and product variants can be added to the wish list.</span></span> <span data-ttu-id="edc69-143">Fra denne side kan kunden fjerne en vare fra ønskelisten eller føje en vare direkte til indkøbsvognen.</span><span class="sxs-lookup"><span data-stu-id="edc69-143">From this page, the customer can remove an item from the wish list or add an item directly to the cart.</span></span>
+<span data-ttu-id="0eddd-141">Siden **Ønskeliste** viser en liste over de varer, som kunden har føjet til sin ønskeliste.</span><span class="sxs-lookup"><span data-stu-id="0eddd-141">The **Wishlist** page shows a list of the items that the customer has added to his or her wish list.</span></span> <span data-ttu-id="0eddd-142">Både produkter og produktvarianter kan tilføjes på ønskelisten.</span><span class="sxs-lookup"><span data-stu-id="0eddd-142">Both products and product variants can be added to the wish list.</span></span> <span data-ttu-id="0eddd-143">Fra denne side kan kunden fjerne en vare fra ønskelisten eller føje en vare direkte til indkøbsvognen.</span><span class="sxs-lookup"><span data-stu-id="0eddd-143">From this page, the customer can remove an item from the wish list or add an item directly to the cart.</span></span>
 
-<span data-ttu-id="edc69-144">Følgende illustration viser et eksempel på siden **Ønskeliste**.</span><span class="sxs-lookup"><span data-stu-id="edc69-144">The following illustration shows an example of a **Wishlist** page.</span></span>
+<span data-ttu-id="0eddd-144">Følgende illustration viser et eksempel på siden **Ønskeliste**.</span><span class="sxs-lookup"><span data-stu-id="0eddd-144">The following illustration shows an example of a **Wishlist** page.</span></span>
 
 ![Eksempel på siden Ønskeliste](./media/Account-Management-Wishlist.PNG)
 
-<span data-ttu-id="edc69-146">Yderligere oplysninger om kontostyringsmoduler, og hvordan de oprettes, finder du under [Kontostyring](account-management.md).</span><span class="sxs-lookup"><span data-stu-id="edc69-146">For more information about account management modules and how to author them, see [Account Management](account-management.md).</span></span>
+<span data-ttu-id="0eddd-146">Yderligere oplysninger om kontostyringsmoduler, og hvordan de oprettes, finder du under [Kontostyring](account-management.md).</span><span class="sxs-lookup"><span data-stu-id="0eddd-146">For more information about account management modules and how to author them, see [Account Management](account-management.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="edc69-147">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="edc69-147">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0eddd-147">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="0eddd-147">Additional resources</span></span>
 
-[<span data-ttu-id="edc69-148">Oversigt over startside</span><span class="sxs-lookup"><span data-stu-id="edc69-148">Home page overview</span></span>](quick-tour-home-page.md)
+[<span data-ttu-id="0eddd-148">Oversigt over startside</span><span class="sxs-lookup"><span data-stu-id="0eddd-148">Home page overview</span></span>](quick-tour-home-page.md)
 
-[<span data-ttu-id="edc69-149">Oversigt over sider med produktdetaljer</span><span class="sxs-lookup"><span data-stu-id="edc69-149">Product details pages overview</span></span>](quick-tour-pdp.md)
+[<span data-ttu-id="0eddd-149">Oversigt over sider med produktdetaljer</span><span class="sxs-lookup"><span data-stu-id="0eddd-149">Product details pages overview</span></span>](quick-tour-pdp.md)
 
-[<span data-ttu-id="edc69-150">Oversigt over sider til indkøbsvogn og betaling ved kassen</span><span class="sxs-lookup"><span data-stu-id="edc69-150">Cart and checkout pages overview</span></span>](quick-tour-cart-checkout.md)
+[<span data-ttu-id="0eddd-150">Oversigt over sider til indkøbsvogn og betaling ved kassen</span><span class="sxs-lookup"><span data-stu-id="0eddd-150">Cart and checkout pages overview</span></span>](quick-tour-cart-checkout.md)
 
