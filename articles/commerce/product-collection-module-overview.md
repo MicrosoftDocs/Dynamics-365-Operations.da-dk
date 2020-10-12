@@ -3,7 +3,7 @@ title: Produktsamlingsmoduler
 description: Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 698bdd22cffad26bc9126fca5649f091fbeef4dd
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464947"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817567"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
@@ -94,11 +94,11 @@ Følgende tabel viser de listetyper, der kan vælges i dialogboksen **Vælg prod
 | Algoritmisk                | <ul><li>**Ny** – En liste over de nyeste produkter, der er blevet udvalgt til kanaler og kataloger.</li><li>**Bedst sælgende** – En liste over produkter, der er rangeret efter det højeste salgsantal.</li><li>**Mest populære** – En liste over de mest populære produkter i en given periode.</li></ul> | Startside, forbedring af kategoriside og sider for betaling og indkøbsvogn | Kategori fra sidekonteksten (f.eks. en kategoriside) | Den kategori, der bestemmes af webstedets forfatter | Understøttet |
 | Ofte købt sammen | En liste, der bruger maskinel indlæring til at analysere forbrugeres indkøbsmønstre og anbefale relaterede varer, der ofte indkøbes sammen med et bestemt produkt. | Denne type liste gælder kun for siden med indkøbskurven. | Indkøbskurv | Ikke relevant | Understøttet |
 | Folk kan også godt lide           | En liste, der bruger maskinel indlæring til at analysere forbrugeres indkøbsmønstre og anbefale varer, der er relateret til et bestemt produkt. | Denne type liste bruges på PDP'er til at vise produkter, som andre kunder har købt. | Produktkontekst fra siden | Det produkt, der leveres af webstedets forfatter | Understøttet |
-| Muligheder til dig              | En liste, der bruger maskinel indlæring til at bestemme kundernes præferencer. | Denne type liste kan bruges på alle sider. | Ikke relevant| Ikke relevant | Understøttet | 
+| Muligheder til dig              | En liste, der bruger maskinel indlæring til at bestemme kundernes præferencer. | Denne type liste kan bruges på alle sider. | Ikke anvendelig| Ikke anvendelig | Understøttet | 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Karruselmodul](add-carousel.md)
 

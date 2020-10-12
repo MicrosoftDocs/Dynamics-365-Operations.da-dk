@@ -3,7 +3,7 @@ title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760393"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835080"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -33,6 +33,7 @@ Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner,
 -  Skrive forud i forhold til systemet
 -  Evaluere matematiske udtryk 
 -  Gruppere data i tabelformat (aktiveres separat ved hjælp af funktionen **(Prøveversion) Gruppering i gitre**)
+-  Fastgjorte systemkolonner
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
@@ -119,12 +120,19 @@ På samme måde som du kan markere (eller fjerne markeringen af) alle rækker i 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavne
 Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehovedrækken. Fra og med version 10.0.14/Platform update 38 kan du vælge at udelade kolonnenavnet i gruppehovedrækker ved at vælge **Gitterindstillinger** > **Skjul gruppekolonnenavn**.
 
+## <a name="pinned-system-columns"></a>Fastgjorte systemkolonner
+Kolonnen med rækkevalg og kolonnen med rækkestatus i det nye gitter er fastgjort, eller fastfrosset, i venstre del af gitteret. Når disse kolonner er medtaget i et gitter, er de derfor altid synlige for brugeren, uafhængigt af den vandrette rulleposition i gitteret.   
+
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg det nye gitterkontrolelement i mit miljø? 
 
-**10.0.9/Platformopdatering 33 og nyere** **Nyt gitterkontrolelement**-funktionen er tilgængelig direkte i Funktionsstyring i et hvilket som helst miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9 / Platform update 33 og senere**
 
-**10.0.8/Platformopdatering 32 og10.0.7/Platformopdatering 31** Funktionen **Nyt gitterkontrolelement** kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
+Funktionen **Nyt gitterkontrolelement** er tilgængelig direkte i funktionsstyring i ethvert miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform update 32 og 10.0.7 / Platform update 31**
+
+Funktionen **Nyt gitterkontrolelement** kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
 
 1.  **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
 
@@ -139,11 +147,14 @@ Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehoved
 Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktiveret.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
-Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i formularens `run()`-metode.
+Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API fra og med version 10.0.13/Platform update 37, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i `run()`-metoden for formularen.
 
  ```this.forceLegacyGrid();```
 
-Denne API anvendes, indtil oktober 2021-frigivelsen, når det nye gitterkontrolelement bliver obligatorisk. Rapportér eventuelle problemer til Microsoft, som kræver, at denne API kan udnyttes. 
+Denne API anvendes, indtil oktober 2021-frigivelsen, når det nye gitterkontrolelement bliver obligatorisk. Hvis der er problemer, der kræver, at denne API bruges, skal du rapportere dem til Microsoft.
+
+## <a name="developer-size-to-available-width-columns"></a>[Udvikler] "Tilpas størrelsen til tilgængelig bredde"-kolonner
+Hvis en udvikler angiver egenskaben **WidthMode** til **SizeToAvailable** for kolonner i det nye gitter, har disse kolonner som udgangspunkt samme bredde, som de ville have, hvis egenskaben var angivet til **SizeToContent**. De strækkes dog for at bruge eventuel ekstra tilgængelig bredde i gitteret. Hvis egenskaben er angivet til **SizeToAvailable** for flere kolonner, deler alle kolonnerne eventuel ekstra tilgængelig bredde i gitteret. Men hvis en bruger manuelt tilpasser størrelsen på en af disse kolonner, bliver kolonnen statisk. Den forbliver på denne bredde og kan ikke længere strækkes for at bruge den ekstra tilgængelige gitterbredde.  
 
 ## <a name="known-issues"></a>Kendte problemer
 I dette afsnit findes en liste over kendte problemer i forbindelse med den nye gitterkontrol, mens funktionen er i prøvetilstand.  

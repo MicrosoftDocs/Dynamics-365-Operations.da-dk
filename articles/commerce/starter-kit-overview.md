@@ -1,9 +1,9 @@
 ---
-title: Oversigt over startsæt
-description: Dette emne indeholder en oversigt over startsættet til Microsoft Dynamics 365 Commerce.
+title: Oversigt over modulbibliotek
+description: Dette emne indeholder en oversigt over modulbiblioteket til Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,29 +18,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025896"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817820"
 ---
-# <a name="starter-kit-overview"></a>Oversigt over startsæt
-
+# <a name="module-library-overview"></a>Oversigt over modulbibliotek
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over startsættet til Microsoft Dynamics 365 Commerce.
+Dette emne indeholder en oversigt over modulbiblioteket til Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
-Dynamics 365 Commerce-startsættet er en samling af moduler, der kan bruges til at bygge et e-handels-websted. Moduler har både aspekter af brugergrænseflade og funktionsmåder.
+Dynamics 365 Commerce-modulbiblioteket er en samling af moduler, der kan bruges til at bygge et e-handels-websted. Moduler har både aspekter af brugergrænseflade og funktionsmåder.
 
-Du kan anvende temaer på modulerne i startsættet for at ændre deres udseende og funktionalitet. Temaerne bruger overlappende typografiark (CSS). Der findes et tema for et fiktivt e-handels-websted med navnet "Fabrikam" som en del af startsættet, der kan bruges som reference.
+Du kan anvende temaer på modulerne i modulbiblioteket for at ændre deres udseende og funktionalitet. Temaerne bruger overlappende typografiark (CSS). Der findes et tema for et fiktivt e-handels-websted med navnet "Fabrikam" som en del af modulbiblioteket, der kan bruges som reference.
 
-## <a name="starter-kit-modules"></a>Moduler i startsæt
+## <a name="module-library-modules"></a>Modulbibliotekets moduler
 
-Følgende typer moduler findes i startsættet:
+Følgende typer moduler findes i modulbiblioteket:
 
 - **Containermodul** – Et containermodul er et simpelt modul, der fungerer som vært for andre moduler. Det styrer layoutet for de moduler, der ligger i det.
 - **Marketingmoduler** – Marketingmoduler omfatter indholdsblok, tekstblok, videoafspiller og karruselmoduler. Alle disse moduler kan bruges til at vise indhold. De kan placeres på en hvilken som helst side og styres af data fra CMS-indholdsstyringssystemet (Content Management System).

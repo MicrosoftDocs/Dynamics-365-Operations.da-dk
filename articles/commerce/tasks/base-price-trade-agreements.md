@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141516"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899343"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispris- og samhandelsaftaler
 
@@ -58,7 +58,7 @@ Denne procedure gennemgår oprettelse af kanalspecifikke salgsprissamhandelsafta
 26. Klik på rullelisten i feltet **Navn** for at åbne opslaget.
 27. Markér **Commerce** på listen. I demodataene har kladdenavnet **Commerce** standardrelationen **Pris (salg)**. Det betyder, at alle nye linjer, der oprettes, som standard vil være salgsprissamhandelsaftaler.  
 28. Klik på **Linjer** i **Handlingsrude**.
-29. Vælg 'Gruppe' i feltet **Kontokode**.
+29. Vælg 'Gruppe' i feltet **Type af partkode**.
 30. Klik på rullelisten i feltet **Kontovalg** for at åbne opslaget.
 31. Find og vælg den ønskede post på listen. Dette fuldfører linket fra Kanal til Prisgruppe til Samhandelsaftale.  
 32. Indtast en værdi i feltet **Varerelation**.

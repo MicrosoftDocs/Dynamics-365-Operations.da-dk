@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d6e0f2c914b8d348ef6eac42557fb46c53df04a9
-ms.sourcegitcommit: d16d370dab734e09312cb06711beca9cca52d4c9
+ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2809514"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893241"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Tilføj nye felter til en skabelon for forretningsdokument i Microsoft Excel
 
@@ -67,7 +67,7 @@ Du kan finde flere oplysninger om, hvordan du importerer ER-konfigurationer unde
 5.  I feltet **Titel** skal du angive **Fritekstfaktura (Excel) Contoso** som titlen på den nye skabelon.
 6.  Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
-Siden BDM-skabeloneditor vises. Du kan bruge Microsoft Office 365 til at redigere den valgte skabelon online i det integrerede kontrolelement.
+Siden BDM-skabeloneditor vises. Du kan bruge Microsoft 365 til at redigere den valgte skabelon online i det integrerede kontrolelement.
 
 ![Siden med BDM-skabeloneditor](./media/BDM-AddFldExcel-EditableTemplate.png)
 

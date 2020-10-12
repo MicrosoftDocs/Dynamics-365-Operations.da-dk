@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383084"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837257"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
@@ -399,6 +399,9 @@ Indstillingerne er beskrevet i følgende tabel.
 <tr class="odd">
 <td>Kode for arbejdsskabelon</td>
 <td>Vælg den arbejdsskabelon, der skal oprette arbejdet for en proces. Hvis du f.eks. modtager en vare for en indkøbsordre, oprettes læg på lager-arbejdet baseret på arbejdsskabelonen. Hvis du ikke vælger en arbejdsskabelon, tildeler Supply Chain Management en skabelon baseret på forespørgselskriterier. Yderligere oplysninger om arbejdsskabeloner finder du under <a href="control-warehouse-location-directives.md">Styre lagerarbejde med arbejdsskabeloner og lokalitetsdirektiver</a>.</td>
+<tr class="even">
+<td>Vis liste over arbejdslinjer</td>
+<td>Vælg en indstilling for, hvordan arbejdere kan se og interagere med linjerne for det aktuelt valgte plukarbejde. Yderligere oplysninger om denne indstilling finder du i afsnittet <a href="pick-line-overview.md">Konfigurere et menupunkt i mobilenheder, der viser en pluklinjeoversigt</a>.</td>
 </tr>
 </tbody>
 </table>

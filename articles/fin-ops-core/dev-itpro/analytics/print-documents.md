@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 25996cbccf3e9eec6fc29b80b8241e89b5b6b4a5
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772552"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893273"
 ---
 # <a name="document-printing-overview"></a>Oversigt over udskrivning af dokumenter
 
@@ -52,10 +52,10 @@ I følgende tabel beskrives de tre primære udskrivningsscenarier.
 Eftersom løsningen varierer afhængigt af scenariet, tilbyder programmer indbyggede tjenester og værktøjer, der hjælper brugerne med at opfylde deres mål:
 
 - **Eksempel 1** understøttes af browserens gengivelse af HTML5-klienten.
-- **Eksempel 2** bruger klientprogrammer og Microsoft Office 365-tjenester.
+- **Scenarie 2** bruger klientprogrammer og Microsoft Office 365-tjenester.
 - **Eksempel 3** kræver understøttelse fra klientprogrammer og tjenester, der er tilknyttet Microsoft Azure.
 
-Ud over den platform, der er installeret under Azure-abonnementet, giver Finance and Opersations-programmer kunderne et integreret, oprindeligt Azure-program, der gør det lettere at bruge domænetilknyttede enheder til at udskrive dokumenter.
+Ud over den platform, der er installeret under Azure-abonnementet, giver Finance and Operations-programmer kunderne et integreret, oprindeligt Azure-program, der gør det lettere at bruge domænetilknyttede enheder til at udskrive dokumenter.
 
 ## <a name="service-overview"></a>Serviceoversigt
 Mens dokumenter, der fremstilles af de tilknyttede programmer, venter på at blive udskrevet på en netværkstilsluttet enhed, gemmes de i blob-lageret for Azure. [Installation af Dokumentets ruteplanlægningsagent for at aktivere netværksprint](install-document-routing-agent.md) bruger Azure-godkendelse til at oprette en sikker kanal for Azure-tjenesterne.

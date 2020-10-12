@@ -3,7 +3,7 @@ title: Anvendelse af lagerindstillinger
 description: Dette emne dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621215"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817603"
 ---
 # <a name="apply-inventory-settings"></a>Anvendelse af lagerindstillinger
 
@@ -38,6 +38,9 @@ Lagerindstillinger angiver, om lageret skal kontrolleres, før produkterne føje
 Dynamics 365 Commerce giver skøn over den disponible tilgængelighed for produkter. Du kan finde oplysninger om, hvordan det forkalkulerede disponible antal beregnes, i afsnittet [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md).
 
 I Commerce Site Builder kan der defineres lagergrænseværdier og -intervaller for et produkt eller en kategori. De bestemmer, om lagerbeholdningen kan klassificeres som på lager, lav lagerbeholdning eller udsolgt. Yderligere oplysninger finder du under [Konfigurere lagerbuffere og lagerniveauer](inventory-buffers-levels.md).
+
+> [!NOTE]
+> Understøttelse af lagergrænseværdier og -områder er tilgængelige i Dynamics 365 Commerce version 10.0.12.
 
 ## <a name="inventory-settings"></a>Lagerindstillinger
 
@@ -55,6 +58,9 @@ I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Ud
     - Når du vælger **Udsolgt**, vises kun meddelelsen "Udsolgt".
 
 - **Grænse for udsolgt** – Denne gamle numeriske indstilling træder kun i kraft, hvis du vælger værdien **Grænse for udsolgt** for indstillingen **Lagerniveau baseret på**.
+
+> [!IMPORTANT] 
+> Disse indstillinger er tilgængelige i Dynamics 365 Commerce version 10.0.12. Hvis du opdaterer fra en ældre version af Dynamics 365 Commerce, skal du opdatere filen appsettings.json manuelt. Oplysninger om opdatering af filen appsettings.json finder du under [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="modules-that-use-inventory-settings"></a>Moduler, der bruger lagerindstillinger
 
@@ -74,7 +80,7 @@ Følgende billede viser et eksempel på en indkøbsvogn, der viser en på lager-
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Konfigurere lagerbuffere og lagerniveauer](inventory-buffers-levels.md)
 
@@ -85,3 +91,5 @@ Følgende billede viser et eksempel på en indkøbsvogn, der viser en på lager-
 [Kontostyringssider og -moduler](account-management.md)
 
 [Butiksvælgermodul](store-selector.md)
+
+[Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)

@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 565ff2ca0475ec8a41f1d9606f7bd81403bb678c
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: 398bc231870a8573103ee7c7c63e96322b0b62a1
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821146"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Undervisningskatalog for Dynamics 365 Commerce-udviklere
 
@@ -37,8 +37,8 @@ Du kan finde oplysninger om undervisning i funktioner, der deles med andre Finan
 | [Kom i gang med Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)                                                              | Dynamics 365 Commerce, der bygger på de gennemprøvede Dynamics 365 Retail-funktioner, leverer en omfattende flerkanalsløsning, der forener administrations-, butiks-, callcenter- og digitale erfaringer. Dynamics 365 Commerce giver dig mulighed for at opbygge varemærkeloyalitet gennem personlige kundeaftaler, øge indtjeningen med forbedret medarbejderproduktivitet, optimere operationer for at reducere omkostninger og fremme effektivitet i forsyningskæden og i sidste ende levere bedre virksomhedsresultater. | Gratis onlinelæringssti i dit eget tempo | 2 timer   |
 | [Kom i gang med Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybaseret løsning, der er udviklet til e-handel, fysiske butikker og omnikanal-forhandlere for at beskytte deres indtægt og omdømme ved at levere værktøjer og funktioner til at mindske bedrageri og misbrug, reducere driftsudgifterne og øge acceptraterne og samtidig beskytte brugerkonti mod eksponering for bedrageri. | Gratis onlinelæringssti i dit eget tempo | 35 minutter |
 
-## <a name="commerce"></a>Handel<a name="commerce"></a>
+## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
-| Indhold  | Beskrivende tekst  | Formater  | Længde    |
+| Indhold  | Betegnelse  | Formater  | Længde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Installere Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dette læringsforløb beskriver, hvordan du implementerer Dynamics 365 Commerce-miljøer og udfører trin efter klargøring for vellykkede Commerce-implementeringer ved hjælp af den korrekte topologi for hver enkelt detailhandlers forretningsbehov. | Gratis onlinelæringssti i dit eget tempo | 5 timer |
+| [Udrulle og udvide Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dette læringsforløb beskriver, hvordan du udruller Dynamics 365 Commerce-miljøer og udfører trin efter klargøring for vellykkede Commerce-implementeringer ved hjælp af den korrekte topologi for hver enkelt detailhandlers forretningsbehov. | Gratis onlinelæringssti i dit eget tempo | 5 timer |

@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203438"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834254"
 ---
 # <a name="vendor-rebates"></a>Kreditorrabatter
+
 [!include [banner](../includes/banner.md)]
 
 Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået.
@@ -50,6 +51,7 @@ Personer i disse stillinger har brug for måder til at opnå forskellige mål. H
 - Få et kvantificeret grundlag for løbende og fremtidige forhandlinger med leverandører om rabatter.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Gennemgå detaljer om en leverandørrabataftale
+
 En leverandørrabataftale registreres i en kontrakt med en leverandør, der angiver de aftalte vilkår og betingelser, hvor firmaet er berettiget til en monetær belønning mod at nå forud angivne købsmål. Leverandørrabataftaler registreres på siden **Rabataftaler**.
 
 Du åbner siden **Kreditorrabataftaler** ved at vælge **Indkøb og forsyning** &gt; **Kreditorrabatter** &gt; **Rabataftaler**.
@@ -60,7 +62,9 @@ På siden **Kreditorrabataftaler** kan du få vist detaljer om de betingelser, d
 
 Aftalens overskrift angiver de generelle betingelser, der berettiget et firma til rabatter. Når den er aktiv angiver oplysningerne i hovedet, at en kreditor giver en rabat, når der købes et specifikt produkt i et specifikt antal. I hovedet, kan du også angive indstillingen for måleenheden for rabat og datoberegningstypen.
 
-- Under fanen **Generelt** kan du i feltet **Indstillingen Måleenhed for rabat** du definere om måleenheden skal være en betingelse for, at indkøbsordrelinjen berettiger til rabatkrav. 
+- Hvis du under fanen **Oversigt** har linjer med **Varekode** angivet til *tabel* for at angive varen, gælder aftalen for den pågældende vare. Hvis du har linjer med **Varekode** angivet til *Gruppe* eller *Alle* for at angive varerne, behandles leverandørrabataftalen individuelt pr. vare, der er berettiget til varekoden, og ikke på tværs af alle varer, der er berettiget til varekoden.
+
+- Under fanen **Generelt** kan du i feltet **Indstillingen Måleenhed for rabat** du definere om måleenheden skal være en betingelse for, at indkøbsordrelinjen berettiger til rabatkrav.
 
     - **Konvertere** – En indkøbsordrelinje, der er berettiget til en leverandørrabat i henhold til rabataftalen. Du modtager en rabat, uanset den måleenhed, der gælder for linjen.
     - **Nøjagtigt match** – For at opnå en rabat skal en indkøbslinje have den samme måleenhed, der er angivet i aftalen.
@@ -97,6 +101,7 @@ På aftalelinjer kan du angive leverandørrabataftalen mere detaljeret.
 Når indkøbsordrer afgives til en leverandør, som firmaet har en rabataftale med, identificerer programmet alle fremtidige leverandørkreditbetalinger. Hvis indkøbsordrerne er kvalificerede til en rabat, genereres et rabatkrav for hver ordrelinje, så snart en købsfaktura er blevet bogført. Processen er automatisk. Du kan senere kan gennemse de forventede rabatter og se virkningen af disse rabatter på produktets omkostninger og overskudsgrad.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Få vist detaljer om rabatter, der anvendes på en indkøbsordrelinje pr. leverandørrabataftale
+
 1. På siden **Indkøbsordre** skal du vælge en ordrelinje, og derefter vælge **Indkøbsordrelinje** &gt; **Vis** &gt; **Prisdetaljer**.
 2. På siden **Prisdetaljer** skal du vælge oversigtspanelet **Rabatter**.
 
@@ -106,15 +111,18 @@ Rabatoplysningerne vises også i feltet **Kreditorrabat** i sektionen **Forkalku
 > På siden **Indkøbs- og forsyningsparametre** under fanen **Priser** skal du kontrollere, at indstillingen **Aktivér prisdetaljer** er angivet til **Ja**. Hvis indstillingen er angivet til **Nej**, kan du ikke få vist rabatterne.
 
 ## <a name="review-and-approve-claims"></a>Gennemse og godkende krav
+
 Krav til rabat, der genereres, repræsenterer de fremtidige betalinger, der kan forventes fra leverandøren. Før der udstedes en kreditnota til leverandøren, ønsker ejeren af aftalen typisk at gennemse krav og godkende dem. Bemærk dog, at status for et krav bestemmer, om kravet er klar til at gennemgå godkendelsesprocessen.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Status for krav og effekten på godkendelsesprocessen
+
 Når der oprettes et krav, angives dets status som **Skal beregnes**, hvis rabatten tildeles på kumulativt grundlag, eller **Beregnet**, hvis rabatten tildeles pr. faktura. Hvis status for et krav er **Skal beregnes**, skal kravet gennemgå en beregningsproces, der håndteres af funktionen Opsaml. Kun de krav, der har status som **Beregnet** skal indgå i godkendelsesprocessen.
 
 > [!NOTE]
 > Hvis indstillingen **Godkendelse kræves** på en kreditorrabataftale er angivet til **Nej**, får de krav, der genereres, status som **Godkendt**. Godkendelsen er obligatorisk for de krav, der er tildelt på kumulativt grundlag.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Godkende krav, og få vist posteringer og fakturaoplysninger
+
 Når krav er blevet godkendt, kan de behandles af Kreditor (A/P). Der genereres automatisk en kreditnota (kreditorfaktura) for beløbet i rabatkravet. Kreditbeløbet kan derefter føjes til kreditorsaldoen og A/P-teamet kan medtage den i den almindelige udligningsproces.
 
 1. Vælg **Indkøb og forsyning** &gt; **Kreditorrabatter** &gt; **Rabatkrav** for at åbne et rabatkrav.
@@ -153,6 +161,7 @@ Når krav er blevet godkendt, kan de behandles af Kreditor (A/P). Der genereres 
 9. På siden **Alle leverandører** skal du vælge den leverandør, du modtager en rabat fra, og derefter vælge **Transaktioner** i handlingsruden. Find linjen for fakturaen. Rabatbeløbet er nu blevet føjet til kreditorsaldoen.
 
 ## <a name="summary"></a>Resumé
+
 Processen til håndtering af kreditorrabatter omfatter flere manuelle sporingsopgaver, der ofte er langsommelige. Ved at automatisere disse opgaver, kan funktionen til styring af kreditorrabatten hjælpe dig med at komme igennem følgende processer:
 
 - Generering af præcise rabatkrav

@@ -3,7 +3,7 @@ title: Kampagnebannermodul
 description: Dette emne omhandler kampagnebannermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411359"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817248"
 ---
 # <a name="promo-banner-module"></a>Kampagnebannermodul
 
@@ -87,7 +87,7 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Karruselmodul](add-carousel.md)
 

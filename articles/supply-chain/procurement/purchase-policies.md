@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207896"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830743"
 ---
 # <a name="purchasing-policies-overview"></a>Oversigt over indkøbspolitikker
 
@@ -102,9 +102,9 @@ Reglen for tilbudsanmodning ved indkøbsrekvisition definerer kriterierne for at
 
 ### <a name="purchase-requisition-control-rule"></a>Regel for styring af indkøbsrekvisition
 
-Kontrolreglen for indkøbsrekvisition er en valgfri regel. Når du opretter regler af denne type, kan du angive indstillinger under forskellige faner:
+Kontrolreglen for indkøbsrekvisitioner af typen **forbrug** er en valgfri regel. Når du opretter regler af denne type, kan du angive indstillinger under forskellige faner:
 
--   På fanen **Afsendelse af arbejdsgang** kan du konfigurere de felter, der skal udfyldes på rekvisitionslinjen for, at rekvisitionen kan blive sendt til godkendelse, når rekvisitionsformålet **Forbrug**.
+-   På fanen **Afsendelse af arbejdsgang** kan du konfigurere de felter, der skal udfyldes på rekvisitionslinjen for, at rekvisitionen kan blive sendt til godkendelse.
 -   På fanen **Ordreantal** kan du konfigurere de felter, der kræves på indkøbsrekvisitionen under visse betingelser. Du kan også gennemtvinge ordreantal.
 -   På fanen **Datoer** kan du konfigurere, om regnskabsdatoen er den samme som den ønskede dato
 -   På fanen **Adresse** kan du angive, om brugeren har rettighed til at oprette nye adresser i systemet, der skal gælde for indkøbsrekvisitionen.

@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oprette og arbejde med brugerdefinerede felter
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Integrere Microsoft Power Apps
+                - name: Integrere lærredsapps fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finde oplysninger ved hjælp af opslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,6 +1655,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Indkøbs- og forsyningsarbejdsgang
               href: procurement/procurement-sourcing-workflows.md
+            - name: Fejlfinde arbejdsgange for indkøb og forsyning
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Indkøbskataloger
               items:
                 - name: Oversigt over indkøbskataloger
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Registrere modtagelsen af varer for indkøbsordren
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Fejlfinde indkøbsordrer
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Oprettelse af indkøbsordre
               items:
                 - name: Oprette indkøbsordrer manuelt
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Kreditorrabatter
                   href: procurement/vendor-rebates.md
+                - name: 'Fejlfinde priser, nedsættelser, aftaler og rabatter'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Indkøbspolitikker
               items:
                 - name: Oversigt over indkøbspolitikker
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Oversigt over kreditorfakturaer
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Fejlfinde produktkvitteringer og fakturering
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Kreditoradministration og -samarbejde
               items:
                 - name: Konfigurere og vedligeholde kreditorsamarbejde
@@ -1765,6 +1773,8 @@
                   href: procurement/vendor-catalogs-import.md
                 - name: Konfigurere et eksternt katalog til PunchOut e-indkøb
                   href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Forbedringer af indkøbs-cXML
+                  href: procurement/purchasing-cxml-enhancements.md
                 - name: Bruge eksterne kataloger til PunchOut e-indkøb
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Mobilarbejdsområde for kreditorsamarbejde
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Bekræfte salgsordrer
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Fejlfinde salgsordrer
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Salgsaftaler
               items:
                 - name: Oversigt over salgsaftaler
@@ -2283,6 +2295,8 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Oprette og redigere salgstilbud
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: Fejlfinde salgstilbud
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Returneringer
               items:
                 - name: Salgsreturneringer
@@ -2807,18 +2821,20 @@
                   items:
                     - name: Installere og tilslutte lagerstedsapp
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Scanne stregkoder med et kamera i lagerstedsappen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Konfigurere feltnavne i lagerstedsapp
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurere mobilenheder til lagerstedsarbejde
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Scanne stregkoder med et kamera i lagerstedsappen
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Modtage id med lagerstedsapp
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Konfigurere et menupunkt til en mobil enhed for at oprette en pluklinjeoversigt
+                      href: warehousing/pick-line-overview.md
                     - name: Oprette et menupunkt for mobilenhedens id-konsolidering
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Modtagelse af blandede id'er på en mobilenhed

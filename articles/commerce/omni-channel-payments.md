@@ -3,7 +3,7 @@ title: Oversigt over omni-kanalbetalinger
 description: Dette emne giver en oversigt over omni-kanalbetalinger i Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613171"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819807"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversigt over omni-kanalbetalinger
 
@@ -92,6 +92,9 @@ Følgende scenarier til omni-kanalbetaling understøttes:
 - Køb i callcenter, og afhent i butik
 - Køb i butik A, og afhent i butik B
 - Køb i butik A, og levér til kunde
+
+    > [!NOTE]
+    > Betalinger, der foretages i callcenteret, som er knyttet til betalingsfunktionen "Normal", skal markeres som **Forudbetaling** = **Ja**, hvis de skal afspejles i det forfaldne beløb ved tilbagekald af ordren i POS. Ikke-forudbetalte betalinger af typen "Normal" genkendes ikke, når ordren tilbagekaldes i POS. 
 
 Variationer af disse scenarier understøttes også. En onlineordre kan f.eks. indeholde både linjer, der skal afsendes til kunden, og de linjer, der skal afhentes i en butik. Alle indstillinger for ordreopfyldning understøttes via omni-kanalbetalinger. 
 
@@ -190,8 +193,8 @@ Følg disse trin for at køre scenariet.
 2. På siden **Transaktion** skal du føje Karen Berg til transaktionen ved at bruge det numeriske tastatur til at skrive **2001**.
 3. Føj en eller flere linjer til transaktionen.
 4. Vælg **Ordrer** for at få vist ordreindstillingerne.
-5. Vælg **Afhent alle**, og når du bliver bedt om det, skal du vælge **Kundeordre**.
-6. Skriv **Seattle** i søgepanelet, og vælg derefter afhenting i **Seattle**-butikken. 
+5. Vælg **Send alle**, og vælg derefter **Kundeordre**, når du bliver bedt om det.
+6. Vælg **Om natten som standard** på siden med forsendelsesmetode, og vælg derefter **OK** for at acceptere dags dato som forsendelsesdato. 
 7. Vælg **OK** for at acceptere dags dato som datoen for afhentning.
 8. Vælg **Kortbetaling** for at starte betalingen.
 9. Betal det beløb, der er forfaldent for indbetalingen, via kortbetalingen. 
@@ -233,5 +236,5 @@ Når en ordre med flere betalingsmidler og flere linjer afhentes, modtager kasse
 
 - [Ofte stillede spørgsmål om betalinger](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

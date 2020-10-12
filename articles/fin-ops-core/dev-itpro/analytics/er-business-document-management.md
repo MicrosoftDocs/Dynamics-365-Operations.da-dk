@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258551"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893129"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258551"
 
 Forretningsbrugere benytter strukturen til [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Brugerne kan også definere dataflow for at angive, hvilke programdata der skal placeres i genererede dokumenter. ER-strukturen genererer udgående dokumenter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter) ved hjælp af foruddefinerede skabeloner. Skabelonerne udfyldes med de påkrævede data i overensstemmelse med det konfigurerede dataflow, mens de nødvendige dokumenter genereres. Hvert konfigurerede format kan udgives som en del af en ER-løsning til generering af specifikke udgående dokumenter. Dette repræsenteres ved en ER-formatkonfiguration, der kan indeholde skabeloner, som du kan bruge til at generere forskellige udgående dokumenter. Erhvervsbrugere kan benytte denne struktur til at administrere nødvendige forretningsdokumenter.
 
-**Styring af forretningsdokumenter** er bygget oven på ER-strukturen og gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner i Microsoft Office 365-tjenesten eller Microsoft Office-skrivebordsprogrammet. Ændringer i dokumenterne kan omfatte ændring af forretningsdokumentdesign og tilføjelse af pladsholdere til yderligere data uden ændringer af kildekode og nye installationer. Det er ikke nødvendigt at have kendskab til ER-strukturen for at opdatere skabeloner til forretningsdokumenter.
+**Styring af forretningsdokumenter** er bygget oven på ER-strukturen og gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner i Microsoft 365-tjenesten eller Microsoft Office-skrivebordsprogrammet. Ændringer i dokumenterne kan omfatte ændring af forretningsdokumentdesign og tilføjelse af pladsholdere til yderligere data uden ændringer af kildekode og nye installationer. Det er ikke nødvendigt at have kendskab til ER-strukturen for at opdatere skabeloner til forretningsdokumenter.
 
 > [!NOTE]
 > Vær opmærksom på, at styring af forretningsdokumenter giver dig mulighed for at redigere skabeloner, der bruges til at fremstille forretningsdokumenter som f.eks. ordrer, fakturaer osv. Mens en skabelon er ændret, og der er udgivet en ny version af den, bruges denne version til at oprette nødvendige forretningsdokumenter. Styring af forretningsdokumenter kan ikke bruges til at redigere allerede genererede forretningsdokumenter.
@@ -170,7 +170,7 @@ Benyt følgende fremgangsmåde til at konfigurere grundlæggende parametre for a
 Den valgte dokumenttype er firmaspecifik og vil blive brugt, når brugeren arbejder med styring af forretningsdokumenter i det firma, som den valgte dokumenttype er konfigureret til. Når brugeren arbejder med styring af forretningsdokumenter i et andet firma, bruges den samme valgte dokumenttype, hvis der ikke er konfigureret nogen for dette firma. Når en dokumenttype er konfigureret, bruges den i stedet for den, der er valgt i feltet **SharePoint-dokumenttype**.
 
 > [!NOTE]
-> Parameteren **SharePoint-dokumenttype** definerer en SharePoint-mappe som et midlertidigt lagringssted til skabeloner, der kan redigeres ved hjælp af enten Microsoft Excel eller Word. Du skal konfigurere denne parameter, hvis du planlægger at bruge disse Office-skrivebordsprogrammer til redigering af skabeloner. Du kan finde flere oplysninger i [Redigere en skabelon i Office-skrivebordsprogrammet](#EditInOfficeDesktopApp). Du kan sørge for, at denne parameter er tom, hvis du planlægger at redigere skabelonen udelukkende ved hjælp af funktionaliteten i Office 365. Du kan finde flere oplysninger i [Redigere en skabelon i Office 365](#EditInOffice365).
+> Parameteren **SharePoint-dokumenttype** definerer en SharePoint-mappe som et midlertidigt lagringssted til skabeloner, der kan redigeres ved hjælp af enten Microsoft Excel eller Word. Du skal konfigurere denne parameter, hvis du planlægger at bruge disse Office-skrivebordsprogrammer til redigering af skabeloner. Du kan finde flere oplysninger i [Redigere en skabelon i Office-skrivebordsprogrammet](#EditInOfficeDesktopApp). Du kan sørge for, at denne parameter er tom, hvis du planlægger at redigere skabelonen udelukkende ved hjælp af funktionaliteten i Microsoft 365. Du kan finde flere oplysninger i [Redigere en skabelon i Microsoft 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurere adgangstilladelser
 
@@ -295,13 +295,13 @@ Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-for
 
 5. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
-Siden **BDM-skabeloneditor** åbnes. Den valgte skabelon er tilgængelig for online redigering ved hjælp af Office 365.
+Siden **BDM-skabeloneditor** åbnes. Den valgte skabelon er tilgængelig for online redigering ved hjælp af Microsoft 365.
 
 ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Redigere en skabelon i Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Redigere en skabelon i Microsoft 365</a>
 
-Du kan redigere skabelonen ved hjælp af Office 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard Azure Blob Storage). Dette er konfigureret for ER-strukturen.
+Du kan redigere skabelonen ved hjælp af Microsoft 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard Azure Blob Storage). Dette er konfigureret for ER-strukturen.
 
 ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Når du redigerer skabelonen fra et ER-format, der ejes af den aktuelle aktive u
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations, blev jeg sendt til Office 365-websiden.
-Dette er et kendt problem med Office 365-omdirigeringen. Dette sker, når du logger på Office 365 første gang. Du kan løse dette problem ved at vælge knappen **Tilbage** i din browser for at gå tilbage.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations, blev jeg sendt til Microsoft 365-websiden.
+Dette er et kendt problem med Microsoft 365-omdirigeringen. Dette sker, når du logger på Microsoft 365 første gang. Du kan løse dette problem ved at vælge knappen **Tilbage** i din browser for at gå tilbage.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår, hvordan jeg kan redigere en skabelon ved at bruge Office 365 i den første programsession, og hvordan jeg kan bruge skabelonen i den anden programsession, der justerer skabelonen, for at se, hvordan mine ændringer påvirker det genererede forretningsdokument. Kan jeg gøre dette ved hjælp af Office-skrivebordsprogrammet?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår, hvordan jeg kan redigere en skabelon ved at bruge Microsoft 365 i den første programsession, og hvordan jeg kan bruge skabelonen i den anden programsession, der justerer skabelonen, for at se, hvordan mine ændringer påvirker det genererede forretningsdokument. Kan jeg gøre dette ved hjælp af Office-skrivebordsprogrammet?
 Ja, det kan du. Vælg **Åbn i skrivebordsapp** i den første programsession. Skabelonen gemmes i det midlertidige fillager og åbnes i Office-skrivebordsprogrammet. Udfør derefter følgende trin for at se dine skabelonændringer i det genererede forretningsdokument:
 
 1. Foretag ændringer i skabelonen ved hjælp af Office-skrivebordsprogrammet.

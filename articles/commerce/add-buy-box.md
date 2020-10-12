@@ -3,7 +3,7 @@ title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761291"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817079"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -75,9 +75,12 @@ De følgende indstillinger for købefeltmoduler kan konfigureres under **Indstil
 - **Lager** – Du finder oplysninger om, hvordan du anvender lagerindstillinger, under [Anvendelse af lagerindstillinger](inventory-settings.md).
 - **Føj til indkøbsvogn** – Denne egenskab bruges til at angive proceduren, når en vare er føjet til indkøbsvognen. De mulige værdier er **Naviger til indkøbsvogn**, **Naviger ikke til indkøbsvogn** og **Vis beskeder**. Når værdien er angivet til **Naviger til indkøbsvogn**, sendes brugeren til indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Naviger ikke til indkøbsvogn**, sendes brugeren ikke til siden med indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Vis beskeder**, får brugerne vist en bekræftelsesmeddelelse og kan fortsætte med at søge på siden produktdetaljer. 
 
-    Det følgende billede viser et eksempel på en besked med bekræftelse af handlingen "Føjet til indkøbsvogn" på Fabrikam-webstedet.
+> [!IMPORTANT]
+> Indstillingerne for webstedet **Føj til indkøbskurv** er tilgængelige i Dynamics 365 Commerce version 10.0.11. Hvis du opdaterer fra en ældre version af Dynamics 365 Commerce, skal du opdatere filen appsettings.json manuelt. Oplysninger om opdatering af filen appsettings.json finder du under [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Eksempel på et beskedmodul](./media/ecommerce-addtocart-notifications.PNG)
+Det følgende billede viser et eksempel på en besked med bekræftelse af handlingen "Føjet til indkøbsvogn" på Fabrikam-webstedet.
+
+![Eksempel på et beskedmodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 
@@ -111,7 +114,7 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over startsæt](starter-kit-overview.md)
+[Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Butiksvælgermodul](store-selector.md)
 
@@ -129,6 +132,8 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 [Sidefodsmodul](author-footer-module.md)
 
-[Modulet Social deling](social-share-module.md)
+[Modul til deling på sociale medier](social-share-module.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
+
+[Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)

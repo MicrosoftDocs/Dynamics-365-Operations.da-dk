@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4acde9703c721ab7c20d1603299a10dda91b23c4
-ms.sourcegitcommit: b8f8ccab2cd9d848e5ecd71caaf0a63237e2236b
+ms.openlocfilehash: 015b595f85397fc1cf2c0368814ddc0369176f82
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957057"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893189"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>Ny brugergrænseflade i dokumenter i styring af forretningsdokumenter
 
 [!include [banner](../includes/banner.md)]
 
-Styring af forretningsdokumenter gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner ved at bruge en Microsoft Office 365-tjeneste eller det relevante Microsoft Office-skrivebordsprogram. Redigeringer kan omfatte designændringer eller nye installationer, eller brugerne kan tilføje pladsholdere for at medtage yderligere data uden at skulle ændre kildekoden. Du kan finde flere oplysninger om, hvordan du arbejder med Styring af forretningsdokumenter, i [Oversigt over styring af forretningsdokumenter](er-business-document-management.md).
+Styring af forretningsdokumenter gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner ved at bruge en Microsoft 365-tjeneste eller det relevante Microsoft Office-skrivebordsprogram. Redigeringer kan omfatte designændringer eller nye installationer, eller brugerne kan tilføje pladsholdere for at medtage yderligere data uden at skulle ændre kildekoden. Du kan finde flere oplysninger om, hvordan du arbejder med Styring af forretningsdokumenter, i [Oversigt over styring af forretningsdokumenter](er-business-document-management.md).
 
 Den nye brugergrænseflade i dokumentet er klarere og mere praktisk at bruge. Området **Forretningsdokument** viser kun de skabeloner, der er tilgængelige for den aktuelle udbyder.
 

@@ -3,7 +3,7 @@ title: Gavekortmodul
 description: I dette emne dækkes gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4cc947b9d6f3cfa51bce2155170c49e9529d0f7d
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: fc47d590789c79c08af7555222aa7cc9409da23c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761075"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817420"
 ---
 # <a name="gift-card-module"></a>Gavekortmodul
 
@@ -35,10 +35,16 @@ I dette emne dækkes gavekortmoduler, og det beskriver, hvordan du kan føje dem
 
 Gavekortmoduler kan bruges i betalingsmoduler til at acceptere gavekort og er en almindelig betalingsform i e-handelstransaktioner. Gavekortmodulet understøtter Dynamics 365-, SVS- og Givex-gavekort. SVS- og Givex-gavekort indløses via betalingsudbyderen Adyen. Du kan se flere oplysninger om understøttelse af eksterne gavekort som f.eks. SVS og Givex i emnet [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md).
 
+> [!NOTE]
+> Understøttelse til indløsning af SVS- og Givex-gavekort i betalingsprocessen er tilgængelig i Dynamics 365 Commerce version 10.0.11. 
+
 Der er to tilgængelige gavekortmoduler:
 
 - **Gavekort** - Dette modul kan bruges på en betalingsside til at indløse et gavekort som betalingsmiddel. 
 - **Saldokontrol af gavekort** – Dette modul kan bruges på en hvilken som helst side til at kontrollere saldoen på et gavekort. Dette modul er tilgængeligt i Commerce version 10.0.14 og nyere.
+
+> [!NOTE]
+> Understøttelse af saldokontrolmodulet til gavekort er tilgængelig i Dynamics 365 Commerce version 10.0.14.
 
 Det følgende billede viser et eksempel på et gavekortmodul på en betalingsside.
 
@@ -61,6 +67,9 @@ I Commerce-webstedsgenerator under **Indstillinger for websted \> Udvidelser**er
 - **SVS- og Givex-gavekort** – Når denne indstilling er valgt, tillader gavekortmodulet kun indløsningen af SVS- og Givex-gavekort. Denne indstilling understøttes for anonyme brugere og brugere, der er logget på e-handelswebstedet.
 - **Dynamics 365-, SVS- og Givex-gavekort** – Når denne indstilling er valgt, tillader gavekortmodulet indløsningen af Dynamics 365-, Givex- og SVS-gavekort. Denne indstilling understøttes kun for brugere, der er logget på e-handelswebstedet.
 
+> [!IMPORTANT]
+> Disse indstillinger er tilgængelige i Dynamics 365 Commerce version 10.0.11 og er kun nødvendige, hvis du har brug for understøttelse af SVS- eller Givex-gavekort. Hvis du opdaterer fra en ældre version af Dynamics 365 Commerce, skal du opdatere filen appsettings.json manuelt. Oplysninger om opdatering af filen appsettings.json finder du under [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+
 ## <a name="add-a-gift-card-module-to-a-page"></a>Føje et gavekortmodul til en side
 
 Du kan få flere oplysninger om, hvordan du føjer et gavekortmodul til en betalingsside og angiver de påkrævede egenskaber, i [Betalingsmodul](add-checkout-module.md).
@@ -82,3 +91,5 @@ Du kan få flere oplysninger om, hvordan du føjer et gavekortmodul til en betal
 [Ordredetaljer-modul](order-confirmation-module.md)
 
 [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md)
+
+[Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
