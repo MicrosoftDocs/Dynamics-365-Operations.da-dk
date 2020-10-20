@@ -1,6 +1,6 @@
 ---
 title: Globaliseringsressourcer
-description: Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande-/områdespecifikke funktioner og tilbud.
+description: Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande/områdespecifikke funktioner og tilbud.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/02/2019
@@ -14,15 +14,15 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89c38b354bbca022e80ace4aa8d0b947cfe67f3e
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 0d81471036d88e4faaf2cae4f3cc25d1eeaaa821
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598175"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979298"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressourcer
 
@@ -38,15 +38,15 @@ Hvis de regler, der er påbudt af myndighederne, kræver, at data lagres eller s
 Finance and Operations-apps indeholder funktioner til de lande/områder, der er beskrevet i [vejledningen til produktlokalisering og -oversættelse](https://aka.ms/dynamics_365_international_availability_deck). Denne funktion er aktiveret på basis af den primære adresse for den aktive juridiske enhed. 
 
 Dette emne indeholder oversigter over ressourcer, der kan hjælpe dig med at gøre følgende: 
-- Få mere at vide om udvikling af lande-/regionsspecifikke løsninger.
-- Få lande-/områdespecifikke opdateringer.
+- Få mere at vide om udvikling af lande/områdespecifikke løsninger.
+- Få lande/områdespecifikke opdateringer.
 - Indsende og gennemse lovpligtige påmindelser.
-- Lære, hvordan du bruger lande-/områdespecifikke funktioner.
+- Lære, hvordan du bruger lande/områdespecifikke funktioner.
 
 ### <a name="developing-localized-solutions"></a>Udvikling af oversatte løsninger
-Følgende ressourcer indeholder vejledning og oplysninger, der kan hjælpe udviklere og ISV'er, der opretter lande-/områdespecifikke tilpasninger eller opretter en løsning til et land, som Microsoft ikke understøtter.
+Følgende ressourcer indeholder vejledning og oplysninger, der kan hjælpe udviklere og ISV'er, der opretter lande/områdespecifikke tilpasninger eller opretter en løsning til et land/område, som Microsoft ikke understøtter.
 -   [Separation af lokaliseringsmodeller](separate-localization-models.md)
--   [Anvende lande/-områdekontekst](apply-country-context.md)
+-   [Anvende lande/områdekontekst](apply-country-context.md)
 -   [Lovpligtige certificeringsoplysninger i funktionstitler](regulatory-certifications.md)
 -   [Klassifikation af lokaliseringsfunktioner](classify-localization-features.md)
 -   [Landekoder - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
@@ -61,7 +61,7 @@ Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfun
 
 #### <a name="communication-and-alerts"></a>Kommunikation og påmindelser
 -   [Lovpligtig kontrol og kommunikation om lovmæssige opdateringer](regulatory-watch-communication.md)
--   [Sende påmindelser om lande-/områdespecifikke lovmæssige funktioner](submit-localization-alerts.md)
+-   [Sende påmindelser om lande/områdespecifikke lovmæssige funktioner](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365-frigivelsesplaner
 [Dynamics 365-frigivelsesplanerne](https://docs.microsoft.com/business-applications-release-notes/) indeholder beskrivelser af de nye og forbedrede funktioner, der er planlagt til Dynamics 365-virksomhedsprogrammer og -programplatforme. 

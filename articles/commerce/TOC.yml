@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-apps i Frankrig
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Få support til Dynamics 365 Commerce
-              href: retail-support.md
+            - name: Få support
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Opgradering og N-1 support
               items:
                 - name: Understøttelse af opgradering og N-1 for Commerce
@@ -92,6 +92,8 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.15 (januar 2021)
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (november 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
@@ -274,6 +276,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
                 - name: Flytte LCS-implementeringsprojekter til forskellige Azure AD-lejere
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Flyt LCS-implementeringsprojekter fra det lokale miljø til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Flere LCS-projekter og produktionsmiljøer på én Azure AD-lejer
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementere Finance and Operations Commerce-projekter
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: Hybride kundeordrer
                   href: hybrid-customer-orders.md
+                - name: Handling for tilbagekaldsordre i POS
+                  href: enhancedorderrecall.md
             - name: Salgsordrer
               items:
                 - name: Oprette en callcenter-ordre
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: Forbedret håndtering af batchsporede varer
               href: batch.md
-            - name: 'Konfigurere Commerce-parametre, som påvirker opgørelser'
-              href: tasks/parameter-configurations-retail-statements.md
             - name: 'Konfigurere indstillinger for betalingsmetode, som påvirker detailopgørelser'
               href: tasks/payment-configurations-retail-statements.md
             - name: Konfigurere og køre et job for at beregne opgørelser
@@ -868,6 +872,8 @@
                   href: document-states-overview.md
                 - name: Arbejde med publiceringsgrupper
                   href: publish-groups.md
+                - name: Aktivere og bruge deling på tværs af kanaler
+                  href: cross-channel-sharing.md
                 - name: 'Indsætte dit eget websted, og tilføje butiksoplysninger'
                   items:
                     - name: Tilføje et logo
@@ -1048,6 +1054,24 @@
               items:
                 - name: Generere onlinekanalrapporter
                   href: generate-reports.md
+            - name: Eksperimenter
+              items:
+                - name: Eksperimenter i Dynamics 365 Commerce
+                  href: experimentation-overview.md
+                - name: Identificere en hypotese og fastslå målepunkter for et eksperiment
+                  href: experimentation-identify.md
+                - name: Opsætning af et eksperiment
+                  href: experimentation-setup.md
+                - name: Oprette forbindelse til og redigere et eksperiment
+                  href: experimentation-connect-edit.md
+                - name: Gennemse og publicere et eksperiment
+                  href: experimentation-preview-publish.md
+                - name: Køre og overvåge et eksperiment
+                  href: experimentation-run-monitor.md
+                - name: Hæv en variation og fuldfører et eksperiment
+                  href: experimentation-review-complete.md
+                - name: Gennemgå status for et eksperiment
+                  href: experimentation-status.md
             - name: Fejlhåndtering
               items:
                 - name: Bygge brugerdefinerede svarsider for 4xx/5xx statuskodefejl
@@ -1076,13 +1100,19 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Konfigurere regnskabsintegration for Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Brugerdefinerede certifikatprofiler til detailbutikker
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Østrig
               items:
                 - name: Eksempel på integration af regnskabsregistreringstjeneste i Østrig
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brasilien
+              items:
+                - name: Commerce-lokalisering for Brasilien
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Østeuropa
               items:
-                - name: Almindeligt
+                - name: Fælles
                   items:
                     - name: Fakturaer for forskudsbetaling til Commerce til Østeuropa
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
@@ -1166,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Organisationsuddannelse
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Detailkanalperformance '
+                - name: Ydeevne af detailkanal
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
             - name: Analytiske arbejdsområder
               items:
@@ -2052,6 +2082,8 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Udvide et tema fra et basistema
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Føje brugerdefinerede ressourcer til tilpasningskoden
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Indsætte script
                   items:
                     - name: Script-injektorer
@@ -2164,6 +2196,8 @@
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: Bruge Retail Server-API'er i eksterne applikationer
+                  href: dev-itpro/consume-retail-server-api
             - name: Commerce Runtime (CRT)-udvidelsesmuligheder
               items:
                 - name: CRT-arkitektur og -konfiguration

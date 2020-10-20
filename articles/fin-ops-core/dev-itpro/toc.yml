@@ -14,6 +14,8 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til 10.0.15 (januar 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platformopdateringer til 10.0.14 (november 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platformopdateringer til 10.0.13 (oktober 2020)
@@ -236,6 +238,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Generel fejlfinding
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Ofte stillede spørgsmål om dobbeltskrivning
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integration med Power Platform
                       items:
                         - name: Konfigurere et kundeemne til kontanter-scenarie
@@ -386,13 +390,15 @@
           items:
             - name: Oversigt
               href: database/dbmovement-operations.md
+            - name: Toolkit til databasebevægelse
+              href: database/database-movement-toolkit.md
             - name: Hurtige introduktioner
               items:
-                - name: Opdatere database
+                - name: Opdater database
                   href: database/database-refresh.md
-                - name: Eksportere en database
+                - name: Eksporter en database
                   href: database/export-database.md
-                - name: Importere en database
+                - name: Importer en database
                   href: database/import-database.md
                 - name: Tidsbestemt gendannelse af database
                   href: database/database-point-in-time-restore.md
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Opgradering til AX 2012 – Kontrolliste før opgradering af data
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012-opgradering – Dataopgradering i sandkassemiljøer vha. DACPAC-proces
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Opgradering til AX 2012 – Dataopgradering i sandkassemiljøer
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: Opgradering til AX 2012 – Lokale miljøer
