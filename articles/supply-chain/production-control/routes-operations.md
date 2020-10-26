@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895371"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989235"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -37,10 +37,10 @@ Dette emne indeholder en beskrivelse af ruter og operationer. En rute definerer 
 
 En rute beskriver rækkefølgen af operationer, der kræves for at producere et produkt eller en produktvariant. For hver operation definerer ruten også de operationsressourcer, der skal bruges, den tid, der kræves for at opsætte og udføre operationen, og hvordan omkostningerne skal beregnes. Du kan bruge den samme rute til at producere flere produkter, eller du kan definere en entydig rute for hvert produkt eller produktvariant. Du kan også have flere ruter til samme produkt. I dette tilfælde varierer den rute, der bruges, afhængigt af faktorer som det antal, der skal produceres. Definitionen af en rute i Supply Chain Management består af fire separate elementer, der tilsammen beskriver produktionsprocessen:
 
--   **Rute** – En rute, der definerer strukturen i produktionsprocessen. Med andre ord, definerer den rækkefølgen af operationer.
--   **Operation** – En operation identificerer et navngivet trin i en rute, f.eks. **Montage**. Den samme operation kan forekomme i flere ruter og kan have forskellige operationsnumre.
--   **Operationsrelation** – En operationsrelation definerer operationelle egenskaber for en operation, f.eks. opstillingstid og procestid, omkostningskategorier, forbrugsparametre og ressourcekrav. Operationsrelationen gør det muligt, at de operationelle egenskaber for en operation varierer, afhængigt af den rute, der skal bruges i operationen, eller de produkter, der produceres.
--   **Ruteversion** – En ruteversion, der definerer den rute, der bruges til at producere et produkt eller en produktvariant. Ruteversioner giver mulighed for, at ruter kan genbruges på tværs af produkter eller ændres med tiden. De kan også aktivere forskellige ruter til at blive brugt til at fremstille det samme produkt. I dette tilfælde afhænger den rute, der bruges, af faktorer som lokalitet eller det antal, der skal produceres.
+- **Rute** – En rute, der definerer strukturen i produktionsprocessen. Med andre ord, definerer den rækkefølgen af operationer.
+- **Operation** – En operation identificerer et navngivet trin i en rute, f.eks. **Montage**. Den samme operation kan forekomme i flere ruter og kan have forskellige operationsnumre.
+- **Operationsrelation** – En operationsrelation definerer operationelle egenskaber for en operation, f.eks. opstillingstid og procestid, omkostningskategorier, forbrugsparametre og ressourcekrav. Operationsrelationen gør det muligt, at de operationelle egenskaber for en operation varierer, afhængigt af den rute, der skal bruges i operationen, eller de produkter, der produceres.
+- **Ruteversion** – En ruteversion, der definerer den rute, der bruges til at producere et produkt eller en produktvariant. Ruteversioner giver mulighed for, at ruter kan genbruges på tværs af produkter eller ændres med tiden. De kan også aktivere forskellige ruter til at blive brugt til at fremstille det samme produkt. I dette tilfælde afhænger den rute, der bruges, af faktorer som lokalitet eller det antal, der skal produceres.
 
 ## <a name="routes"></a>Ruter
 En rute beskriver rækkefølgen af operationer, der bruges for at producere et produkt eller en produktvariant. Hver operation er tildelt et operationsnummer og en efterfølgende operation. Rækkefølgen af operationer udgør et rutenetværk, der kan repræsenteres af et styret diagram, der har et eller flere startpunkter og et enkelt slutpunkt. I Supply Chain Management adskiller ruter sig på grundlag af typen af struktur. De to typer ruter er simple ruter og rutenetværk. I produktionsstyringsparametrene kan du angive, om kun simple ruter kan bruges, eller om der kan bruges mere komplekse rutenetværk.
@@ -60,9 +60,9 @@ Hvis du aktiverer de mere komplekse rutenetværk i produktionsstyringsparametren
 [![Rutenetværk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Hver operation kan kun have en efterfølgende operation, og hele ruten skal afsluttes med en fælles operation.
-> -   Dette er ingen sikkerhed for, at flere operationer, der har samme efterfølgende operation (f.eks. operationerne 30 og 40 i den foregående illustration), faktisk køres parallelt. Tilgængeligheden og kapaciteten af ressourcerne kan lægge begrænsninger på den måde, operationerne planlægges.
-> -   Du kan ikke bruge 0 (nul) som operationsnummeret. Dette nummer er reserveret og bruges til at angive, at den sidste operation i ruten ikke har nogen efterfølgende operation.
+> - Hver operation kan kun have en efterfølgende operation, og hele ruten skal afsluttes med en fælles operation.
+> - Dette er ingen sikkerhed for, at flere operationer, der har samme efterfølgende operation (f.eks. operationerne 30 og 40 i den foregående illustration), faktisk køres parallelt. Tilgængeligheden og kapaciteten af ressourcerne kan lægge begrænsninger på den måde, operationerne planlægges.
+> - Du kan ikke bruge 0 (nul) som operationsnummeret. Dette nummer er reserveret og bruges til at angive, at den sidste operation i ruten ikke har nogen efterfølgende operation.
 
 ### <a name="parallel-operations"></a>Parallelle operationer
 
@@ -99,12 +99,12 @@ Operationsegenskaberne for operationen, f.eks. opstillingstid og procestid, ress
 ## <a name="operation-relations"></a>Operationsrelationer
 Følgende operationelle egenskaber for en operation vedligeholdes på operationsrelationen:
 
--   Omkostningskategorier
--   Forbrugsparametre
--   Behandlingstider
--   Behandlingsmængder
--   Ressourcebehov
--   Noter og instruktioner
+- Omkostningskategorier
+- Forbrugsparametre
+- Behandlingstider
+- Behandlingsmængder
+- Ressourcebehov
+- Noter og instruktioner
 
 Du kan definere flere operationsrelationer for den samme operation. Hver operationsrelation gælder dog kun for én operation og indeholder egenskaber, der er specifikke for en rute, en frigivet produkt eller et sæt frigivne produkter, der er knyttet til en varegruppe. Derfor kan den samme operation bruges i flere ruter, der har forskellige operationelle egenskaber. Desuden kan du lettere vedligeholde dine stamdata, hvis du bruger standardoperationer, der har samme operationelle egenskaber, uanset den rute, der bruges, og det produkt, der fremstilles. Anvendelsesområdet for operationsrelationen er defineret via egenskaberne **Varekode**, **Varerelation**, **Rutekode** og **Ruterelation**, som vist i følgende tabel.
 
@@ -166,12 +166,13 @@ Når Supply Chain Management søger efter den mest relevante operationsrelation 
 En operation bør derfor kun anvendes én gang for hver rute. Hvis operationen forekommer flere gange på den samme rute, har alle forekomster af denne operation samme operationsrelationen, og du kan ikke have andre egenskaber (for eksempel procestider) for hver forekomst.
 
 ## <a name="route-versions"></a>Ruteversioner
+
 Ruteversioner bruges til at tage hensyn til afvigelser i produktionen af produkter eller til at give dig større kontrol over produktionsprocessen. De definerer, hvilken rute der skal bruges, når et bestemt frigivet produkt eller en bestemt frigiven produktvariant produceres. Du kan bruge følgende begrænsninger til at definere, hvilken rute der bruges til et frigivet produkt, :
 
--   Produktdimensioner (størrelse, farve, type eller konfiguration)
--   Produktionsmængde
--   Produktionssted
--   Produktionsdato
+- Produktdimensioner (størrelse, farve, type eller konfiguration)
+- Produktionsmængde
+- Produktionssted
+- Produktionsdato
 
 Når du producerer produktet på et bestemt sted, i en bestemt mængde eller i en bestemt periode, kan du angive en bestemt ruteversion som standardruteversionen. Bemærk dog, at kun én aktiv rute er tilladt for et bestemt frigivet produkt og et bestemt sæt begrænsninger.  
 
@@ -194,6 +195,7 @@ Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver
 Produktændringssagen til godkendelse og aktivering af nye eller ændrede ruter og ruteversioner giver dig på en nem måde en oversigt over ruteversionens begrænsninger. Du kan også godkende og aktivere alle ruter, der er relateret til en bestemt ændring i én operation og dokumentere resultaterne i produktændringssagen.
 
 ## <a name="maintaining-routes"></a>Vedligeholdelse af ruter
+
 Afhængigt af virksomhedens behov, kan du muligvis reducere det arbejde, der kræves for at bevare dine procesdefinitioner.
 
 ### <a name="making-routes-independent-of-resources"></a>Gør ruter uafhængige af ressourcer
@@ -224,19 +226,19 @@ Når du bruger denne metode, bliver siden **Operationsrelationer** din primære 
 
 Hvis du ikke angiver en operationsressource eller ressourcegruppe som en del af ressourcekravene for en operation, kan de relevante ressourcer fungere ved forskellige hastigheder. Den tid, der kræves for at behandle en operation, kan derfor variere. Du kan løse dette problem ved at bruge feltet **Formel** på operationsrelationen til at angive, hvordan procestiden beregnes. Følgende valgmuligheder er tilgængelige:
 
--   **Standard** – (standardindstilling) Beregningen bruger kun felterne fra operationsrelationen og ganger den angivne procestid med ordreantallet.
--   **Kapacitet** – Beregningen omfatter feltet **Kapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig. Den værdi, der er angivet på operationsressourcen, er kapacitet pr. time. **Procestid** beregnes som **Ordreantal** divideret med **Kapacitet**.
--   **Batch** – En batchkapacitet beregnes ved hjælp af oplysninger fra operationsrelationen. Antallet af batches, og derfor procestiden, kan beregnes baseret på ordreantallet.
--   **Ressourcebatch** – Denne indstilling er grundlæggende den samme som indstillingen **Batch**. Men beregningen omfatter feltet **Batchkapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig.
+- **Standard** – (standardindstilling) Beregningen bruger kun felterne fra operationsrelationen og ganger den angivne procestid med ordreantallet.
+- **Kapacitet** – Beregningen omfatter feltet **Kapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig. Den værdi, der er angivet på operationsressourcen, er kapacitet pr. time. **Procestid** beregnes som **Ordreantal** divideret med **Kapacitet**.
+- **Batch** – En batchkapacitet beregnes ved hjælp af oplysninger fra operationsrelationen. Antallet af batches, og derfor procestiden, kan beregnes baseret på ordreantallet.
+- **Ressourcebatch** – Denne indstilling er grundlæggende den samme som indstillingen **Batch**. Men beregningen omfatter feltet **Batchkapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig.
 
 ### <a name="set-up-route-groups"></a>Konfigurer rutegrupper
 
 Du kan definere rutegrupper og opsætningen for den hertil hørende rute eller jobtyperne under **Produktionskontrol > Opsætning > Ruter > Rutegrupper**. For hver rute/jobtype i rutegruppen kan du vælge eller nulstille følgende indstillinger:
 
-- **Aktivering** - Vælg denne indstilling for at aktivere beregninger for og planlægning af den valgte jobtype og for at modtage jobtilbagemelding, når du kører jobplanlægning. Du er nødt til at vælge denne indstilling for at aktivere jobtypen og dernæst vælge resten af indstillingerne for den pågældende jobtype. Hvis du ikke vælger at aktivere, vil den pågældende jobtype ikke blive slået til, uanset om du vælger de øvrige indstillinger. 
-- **Jobstyring** - Vælg denne indstilling for at medtage jobtypen i jobstyring, når du kører jobplanlægning. 
+- **Aktivering** - Vælg denne indstilling for at aktivere beregninger for og planlægning af den valgte jobtype og for at modtage jobtilbagemelding, når du kører finplanlægning. Du er nødt til at vælge denne indstilling for at aktivere jobtypen og dernæst vælge resten af indstillingerne for den pågældende jobtype. Hvis du ikke vælger at aktivere, vil den pågældende jobtype ikke blive slået til, uanset om du vælger de øvrige indstillinger. 
+- **Jobstyring** - Vælg denne indstilling for at medtage jobtypen i jobstyring, når du kører finplanlægning. 
 - **Arbejdstid** - Vælg denne indstilling for at planlægge jobtypen i henhold til arbejdstidskalenderen, der er defineret for operationsressourcen, ellers anvendes den gregorianske kalender. Arbejdstiden kan enten planlægges i henhold til den gregorianske kalender eller den angivne arbejdskalender. Hvis du markerer denne indstilling, bliver planlægningen baseret den angivne arbejdstidskalender. Derudover planlægges job af jobtypen fra midnat på den dato, der er angivet som jobbets startdato.
-- **Kapacitet** - Vælg denne indstilling for at reservere kapacitet til jobtypen, når du kører jobplanlægning. Hvis du vælger denne indstilling, reserveres der kapacitet, når der køres finplanlægning for den valgte jobtype. Det giver dig en oversigt over, hvilke jobtyper i hver rutegruppe der bruger operationsressourcer. Disse ressourcer skal eksempelvis være angivet som flaskehalse, såfremt der er tale om en situation, hvor tørreressourcer er flaskehalsressourcer. Tørreoperationer, der er tilknyttet jobtyper i køtid, vil reservere tørreressourcer. 
+- **Kapacitet** - Vælg denne indstilling for at reservere kapacitet til jobtypen, når du kører finplanlægning. Hvis du vælger denne indstilling, reserveres der kapacitet, når der køres finplanlægning for den valgte jobtype. Det giver dig en oversigt over, hvilke jobtyper i hver rutegruppe der bruger operationsressourcer. Disse ressourcer skal eksempelvis være angivet som flaskehalse, såfremt der er tale om en situation, hvor tørreressourcer er flaskehalsressourcer. Tørreoperationer, der er tilknyttet jobtyper i køtid, vil reservere tørreressourcer. 
 
 Du skal aktivere eller deaktivere det for hver jobtype. Når du deaktivere det, vil ingen andre elementer i opsætningen (jobstyring, arbejdstid og kapacitet) blive taget i betragtning, da jobtypen ikke er aktiv. 
 
