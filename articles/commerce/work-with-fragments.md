@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818344"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961652"
 ---
 # <a name="work-with-fragments"></a>Arbejde med fragmenter 
 
@@ -61,8 +61,8 @@ Du kan enten oprette et nyt fragment eller gemme en eksisterende modulkonfigurat
 Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan genbruges, skal du følge disse trin.
 
 1. Åbn en side eller skabelon, der indeholder det modul, du vil konvertere til et fragment.
-1. Vælg det tidligere konfigurerede modul i dispositionsruden til venstre eller direkte i hovedlærredet.
-1. Vælg ellipsen (**...**) ud for navnet på modulet i enten dispositionsruden eller på værktøjslinjen for det valgte modul på lærredet. 
+1. Vælg det tidligere konfigurerede modul i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
+1. Vælg ellipsen (**...**) ud for navnet på modulet i enten dispositionsruden eller på værktøjslinjen for det valgte modul i den visuelle sidegenerator. 
 1. Vælg **Del som sidefragment**. 
 1. I dialogboksen **Gem som sidefragment** skal du angive et navn til fragmentet.
 1. Vælg **OK** for at gemme modulkonfigurationen som et fragment, der kan føjes til andre sider.
@@ -94,8 +94,8 @@ I følgende procedurer beskrives, hvordan du kan tilføje, fjerne og redigere fr
 
 Følg disse trin for at føje et fragment til en side.
 
-1. Vælg en container eller en plads, som underordnede moduler kan føjes til, i dispositionsruden til venstre eller direkte i hovedlærredet.
-1. Vælg ellipsen (**...**) ud for navnet på containeren eller pladsen i onlineruden.  Hvis du bruger hovedlærredet, skal du vælge plussymbolet (**+**).  
+1. Vælg en container eller en plads, som underordnede moduler kan føjes til, i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
+1. Vælg ellipsen (**...**) ud for navnet på containeren eller pladsen i onlineruden.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet (**+**).  
 1. Vælg **Tilføj fragment**.
 
     ![Et skærmbillede af, hvordan du kan føje et eksisterende fragment til en plads eller en container](./media/add-fragment.png)
@@ -115,7 +115,7 @@ Følg disse trin for at føje et fragment til en side.
 
 Hvis du vil fjerne et fragment fra en plads eller container på en side, skal du følge disse trin.
 
-1. Vælg ellipseknappen (**...**) i dispositionsruden til venstre ud for navnet på det fragment, der skal fjernes, og vælg derefter symbolet med papirkurven.  Du kan også vælge fragmentet på lærredet og vælge symbolet for papirkurven på fragmentets værktøjslinje.
+1. Vælg ellipseknappen (**...**) i dispositionsruden til venstre ud for navnet på det fragment, der skal fjernes, og vælg derefter symbolet med papirkurven.  Du kan også vælge fragmentet i den visuelle sidegenerator og vælge symbolet for papirkurven på fragmentets værktøjslinje.
 1. Når du bliver bedt om at bekræfte, at du vil fjerne fragmentet, skal du vælge **OK**.
 
 > [!NOTE]

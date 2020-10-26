@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: baa8207f9f3a3de071033c4c70f60a339ec5e083
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
+ms.sourcegitcommit: 2bc8e760c7a82572c7eafd51f2e57ef11b4ca98b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677332"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900980"
 ---
 # <a name="shipment-auto-updates"></a>Automatiske opdateringer af forsendelser
 
@@ -39,7 +39,7 @@ Funktionaliteten til automatisk opdatering af forsendelser gælder for både sal
 
 Funktionen til automatisk opdatering af forsendelse afhænger primært af forsendelsesstatussen for at bestemme, om antallet på en lastlinje skal ændres, når der foretages en ændring på en salgsordrelinje eller flytteordrelinje. Den baseres også primært på forsendelsens status for at bestemme, hvornår der automatisk skal føjes en ny lastlinje til en eksisterende last. Når forsendelsesstatussen er **I bølge** eller højere, sker der ingen automatisk opdatering.
 
-Bølgestatus tages også i betragtning ved automatiske opdateringer. Når bølgen, der er relateret til lastlinjen har statussen **På hold**, **Udfører**, **Frigivet**, **Plukket** eller **Afsendt**, vises der følgende fejlmeddelelse, hvis en bruger forsøger at reducere antallet på en lastlinje (via en reduktion af antal på sagsordrelinjen eller flytteordrelinje): "Reservationer kan ikke fjernes, fordi der er oprettet arbejde, som er afhængigt af reservationerne". Hvis bølgen har en af de tidligere nævnte bølgestatusser, og en bruger forsøger indirekte at øge lastlinjens antal ved at reducere antallet på salgsordrelinjen eller flytteordrelinjen, vil antallet lastlinjen ikke automatisk blive øget. I dette tilfælde skal lastlinjen opdateres manuelt.
+Bølgestatus tages også i betragtning ved automatiske opdateringer. Når bølgen, der er relateret til lastlinjen har statussen **På hold**, **Udfører**, **Frigivet**, **Plukket** eller **Afsendt**, vises der følgende fejlmeddelelse, hvis en bruger forsøger at reducere antallet på en lastlinje (via en reduktion af antal på sagsordrelinjen eller flytteordrelinje): "Reservationer kan ikke fjernes, fordi der er oprettet arbejde, som er afhængigt af reservationerne". Hvis bølgen har en af de tidligere nævnte bølgestatusser, og en bruger forsøger indirekte at øge lastlinjens antal ved at øge antallet på salgsordrelinjen eller flytteordrelinjen, vil antallet på lastlinjen ikke automatisk blive øget. I dette tilfælde skal lastlinjen opdateres manuelt.
 
 ## <a name="scenarios"></a>Scenarier
 

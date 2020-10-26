@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269998"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961628"
 ---
 # <a name="modify-an-existing-site-page"></a>Redigere en eksisterende webstedsside
 
@@ -47,7 +47,7 @@ Det næste trin er at foretage de faktiske ændringer. Du skal ofte bruge sidens
 Men ændringen kan undertiden omfatte tilføjelse eller fjernelse af modeller eller fragmenter. Hvis du vil tilføje et fragment eller et modul, skal du bruge sidens dispositionstræ til at finde den plads, hvor du vil tilføje modulet eller fragmentet og derefter vælge ellipseknappen (**...**) for den pågældende plads. Der vises en menu, der indeholder kommandoer til tilføjelse af et modul eller fragment. Hvis du vil fjerne et modul eller fragment, skal du finde og markere det i sidedispositionstræet, vælge ellipseknappen og derefter vælge den kommando, der sletter modulet eller fragmentet.
 
 > [!TIP]
-> Du kan også få vist og redigere egenskaberne for et modul, der er synligt i forhåndsvisningen "what you see is what you get" (WYSIWYG), ved at vælge det direkte.
+> Du kan også se og redigere egenskaberne for et modul, der er synligt i eksempelvisningen i den visuelle sidegenerator ved at vælge det direkte.
 
 Når du er færdig med at foretage ændringer og se deres effekt, skal du tjekke siden ind ved at vælge **Afslut redigering** på kommandolinjen. 
 

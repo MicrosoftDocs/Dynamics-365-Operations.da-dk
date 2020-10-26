@@ -3,7 +3,7 @@ title: Oversigt over tilbudsanmodninger
 description: Emnet giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe.
 author: mkirknel
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eedf6b08ef9a4b7f164db60433dd16922a8ec807
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895614"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973494"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversigt over tilbudsanmodninger
 
@@ -34,23 +34,21 @@ Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. fors
 
 Tilbudsanmodningsprocessen består af følgende opgaver:
 
-1.  Oprette og sende en tilbudsanmodning til en eller flere leverandører.
-
-2.  Modtage og registrere bud (svar på tilbudsanmodninger)
-
-3.  Overføre bud, du accepterer, til en indkøbsordre, købsaftale eller indkøbsrekvisition.
+1. Oprette og sende en tilbudsanmodning til en eller flere leverandører.
+1. Modtage og registrere bud (svar på tilbudsanmodninger)
+1. Overføre bud, du accepterer, til en indkøbsordre, købsaftale eller indkøbsrekvisition.
 
 I følgende illustration vises en oversigt over processen for anmodninger om tilbud.
 
 [![RFQ-proces (Radio Frequency Identification-proces)](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
-Du kan oprette en sag for en tilbudsanmodning ud fra planlagte ordrer, en indkøbsrekvisition eller ved manuel indtastning. Tilbudsanmodningssagen er det grundlæggende dokument, du bruger til at udstede en tilbudsanmodning til hver kreditor.+
+Du kan oprette en sag for en tilbudsanmodning ud fra planlagte ordrer, en indkøbsrekvisition eller ved manuel indtastning. Tilbudsanmodningssagen er det grundlæggende dokument, du bruger til at udstede en tilbudsanmodning til hver kreditor.
 
 Når du forbereder tilbudsanmodningssagen og tilføjer kreditorer, skal du vælge **Send** (**Sende og udgiv** for offentlig sektor) for tilbudsanmodningssagen. Der oprettes en tilbudsanmodningskladde for hver leverandør, som du sendte tilbudsanmodningen til. Du kan konfigurere indstillingerne for Udskrivning for handlingen Send, så der enten udskrives en rapport for hver kreditor til et arkiv eller sendes en rapport til hver kreditors mailadresse. Du kan desuden bruge tilbudsanmodningskladden til hver leverandør til at generere en rapport, som du kan sende eller gensende til leverandøren senere. Du kan også konfigurere handlingen Send, så den opretter et svarark, som leverandøren kan udfylde.
 
 Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Supply Chain Management. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
 
-Hvis du skal ændre en tilbudsanmodning, når du har sendt den, kan du sende tilbudsanmodningen til kreditoren igen, når du er færdig, ved hjælp af to ændringshandlinger: Opret og Færdiggør.+
+Hvis du skal ændre en tilbudsanmodning, når du har sendt den, kan du sende tilbudsanmodningen til kreditoren igen, når du er færdig, ved hjælp af to ændringshandlinger: Opret og Færdiggør.
 
 Når du modtager bud pr e-mail, skal du håndtere disse bud fra siden **Tilbudsanmodning**.
 
@@ -68,15 +66,10 @@ Disse statusser beskrives mere detaljeret senere i dette emne.
 
 Før du kan oprette en tilbudsanmodningssag, skal du konfigurere oplysninger om tilbudsanmodningen på siden **Indkøbs- og forsyningsparametre**. Når du opretter en tilbudsanmodningssag, kan du angive standardværdier, der kopieres til tilbudsanmodningen. Du kan angive følgende standardværdier:
 
--   Indkøbstypen af nye tilbudsanmodninger: **Indkøbsordre** eller **Købsaftale**
-
--   Udløbsdato og -klokkeslæt for forskydningen fra den dag, hvor tilbudsanmodningssagen er oprettet
-
--   Anmodningstype, som kan fungere som standard for en bestemt vurderingsmetode for tilbudsanmodningssagen
-
--   Leveringsoplysninger og betalingsbetingelser
-
--   Felter, der skal medtages i buddet
+- Indkøbstypen af nye tilbudsanmodninger: **Indkøbsordre** eller **Købsaftale**
+- Udløbsdato og -klokkeslæt for forskydningen fra den dag, hvor tilbudsanmodningssagen er oprettet.
+- Anmodningstype, som kan fungere som standard for en bestemt vurderingsmetode for tilbudsanmodningssagen.
+- Leveringsoplysninger og betalingsbetingelser.
 
 Du kan tilsidesætte disse værdier for en bestemt tilbudsanmodningssag.
 
@@ -84,37 +77,25 @@ Du skal også konfigurere ændringsprocessen. Som en del af denne konfiguration 
 
 På siden **Indkøbs- og forsyningsparametre** kan du vælge, hvilken skabelon der skal bruges til den mailmeddelelse, der sendes til kreditorer. Når der oprettes en skabelon i **E-mail-skabeloner**, kan den indeholde følgende erstatningstokens:
 
--   %Tilbudsanmodningssag%
-
--   %Årsag til returnering af bud%
-
--   %Årsag til ændring%
-
--   %Ændring udarbejdet af%
-
--   %Firma%
-
--   %Navn på tilbudsanmodningssag%
-
--   %Udløbsdato og klokkeslæt%
-
--   %Dato%
+- %Tilbudsanmodningssag%
+- %Årsag til returnering af bud%
+- %Årsag til ændring%
+- %Ændring udarbejdet af%
+- %Firma%
+- %Navn på tilbudsanmodningssag%
+- %Udløbsdato og klokkeslæt%
+- %Dato%
 
 De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, der indkøberen kan skrive, når han eller hun afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Firma% hentes automatisk fra tilbudsanmodningen. %Dato%-tokenet erstattes af dags dato.
 
 Hvis du vil annullere en tilbudsanmodning, efter den er blevet sendt, kan du gøre dette fra tilbudsanmodningssagen. Til annulleringen kræves det, at der sendes en e-mail-skabelon for at sende besked om annulleringen til kreditorens kontaktpersoner. Skabelonen skal være markeret på siden **Indkøbs- og forsyningsparametre**. Når skabelonen er oprettet, kan den indeholde følgende erstatningstokens:
 
--   %Årsag til annullering%
-
--   %Tilbudsanmodningssag%
-
--   %Tilbudsanmodning annulleret af%
-
--   %Firma%
-
--   %Navn på tilbudsanmodningssag%
-
--   %Dato%
+- %Årsag til annullering%
+- %Tilbudsanmodningssag%
+- %Tilbudsanmodning annulleret af%
+- %Firma%
+- %Navn på tilbudsanmodningssag%
+- %Dato%
 
 Tokenet %Årsag til annullering% erstattes af tekst, som indkøberen kan angive i guiden **Annullering**. %Dato%-tokenet erstattes af dags dato.
 
@@ -130,6 +111,19 @@ Når du opretter en tilbudsanmodningssag af typen Indkøbsordre og føjer en lag
 
 Som indkøbschef eller -agent kan du oprette og vedligeholde anmodningstyper, der passer til indkøbskravene i din organisation. Hver anmodningstype kan knyttes til en scoremetode. Scoremetoder består af et sæt af kriterier, der kan bruges, når du scorer bud. Du skal oprette anmodningstyper, scoremetoder og scorekriterier på siderne den **Anmodningstype** og **Scoremetode**.
 
+## <a name="choose-default-fields-to-include-in-vendor-rfq-reply-forms"></a><a name="default-reply-fields"></a>Vælg standardfelter, der skal medtages i formularerne til svar på leverandørtilbudsanmodning
+
+Du kan angive bestemte typer af oplysninger, du ønsker at modtage fra leverandører, når de besvarer (byder på) en tilbudsanmodning. Felter, som du har markeret som standard, medtages i den onlineformular, der leveres til leverandørsamarbejde. Sådan foretager du disse indstillinger:
+
+1. Hvis du ikke allerede har gjort det, kan du bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere funktionen *Vælg tilbudsanmodning, der skal medtages i formularerne for svar på tilbudsanmodning*.
+1. Gå til **Indkøb og forsyning > Opsætning > Indkøbs- og forsyningsparametre**.
+1. Åbn fanen **Tilbudsanmodning**.
+1. Vælg linket **Standardanmodninger om tilbud** til svarfelter under overskriften **Angiv standardværdier for tilbudsanmodninger**.
+1. Dialogboksen **Standardfelter for svar på tilbudsanmodning** åbnes.
+1. Sektionen **Felter i tilbudsanmodningen, der er inkluderet i svarformularer for leverandørtilbudsanmodning**, indeholder en skyder for hvert felt, der er tilgængeligt for brug i svarformularer for tilbudsanmodninger. Felter, der er angivet til *Ja* i dette afsnit, medtages (sammen med deres værdier) i svarformularer for tilbudsanmodninger. Indstil skyderen til *Nej* for hvert felt, hvor du vil forhindre, at leverandører ser data, når de evaluerer bud. Det giver dig mulighed for at angive estimerede eller forventede værdier under indtastning af tilbudsanmodning til interne formål, uden at leverandøren kan se, hvad der er angivet.
+
+Du kan tilsidesætte disse indstillinger for de enkelte tilbudsanmodningssager efter behov.
+
 ## <a name="creating-and-sending-an-rfq"></a>Oprette og sende en tilbudsanmodning
 
 Du skal oprette en tilbudsanmodningssag, vælge de kreditorer, som skal byde på tilbudsanmodningenssagen, og derefter sende tilbudsanmodninger til kreditorerne. Du kan bruge indstillingerne for Udskrivning til at sende rapporten over tilbudsanmodningen og rapporterne med svarark til din foretrukne destination.
@@ -138,15 +132,13 @@ Du kan manuelt oprette en tilbudsanmodningssag af indkøbstypen **Indkøbsordre*
 
 Hvis tilbudsanmodningssagen er af typen **Indkøbsordre**, forekommer følgende funktionsmåde, der afviger fra andre typer tilbudsanmodningssager:
 
--   Når der oprettes linjer for en tilbudsanmodningssag, oprettes der lagertransaktioner med tilgangsstatussen **Tilbudstilgang**.
-
--   Når du accepterer et tilbud, genereres der en indkøbsordre.
+- Når der oprettes linjer for en tilbudsanmodningssag, oprettes der lagertransaktioner med tilgangsstatussen **Tilbudstilgang**.
+- Når du accepterer et tilbud, genereres der en indkøbsordre.
 
 Hvis tilbudsanmodningssagen er af typen **Købsaftale**, forekommer følgende funktionsmåde, der afviger fra andre typer tilbudsanmodningssager:
 
--   Tilbudsanmodningssagen bruges til en aftale om at købe et bestemt antal eller for en bestemt værdi af et produkt over tid. Du skal vælge det datointerval, der gælder for indkøbsaftalen, og navnet på den person, der håndterer indkøbsaftalen.
-
--   Når du accepterer et tilbud, genereres der en købsaftale.
+- Tilbudsanmodningssagen bruges til en aftale om at købe et bestemt antal eller for en bestemt værdi af et produkt over tid. Du skal vælge det datointerval, der gælder for indkøbsaftalen, og navnet på den person, der håndterer indkøbsaftalen.
+- Når du accepterer et tilbud, genereres der en købsaftale.
 
 Hvis tilbudsanmodningssagen oprettes ud fra en indkøbsrekvisition, tildeles typen **Indkøbsrekvisition** automatisk. Du kan manuelt oprette en tilbudsanmodningssag af typen **Indkøbsrekvisition**.
 
@@ -156,6 +148,7 @@ Når du opretter en tilbudsanmodningssag, kan du vælge en anmodningstype. Anmod
 
 Du kan føje et spørgeskema til en tilbudsanmodningssag. Dette spørgeskema vises derefter på alle svar på tilbudsanmodningen, når du har sendt den. Udfyldelse af spørgeskemaet er en obligatorisk opgave, før et bud kan sendes.
 
+Selvom der leveres standarder, kan du ændre indstillingerne af **Felter i tilbudsanmodningen, der er inkluderet i svarformularer for leverandørtilbudsanmodning** for hver enkelt sag i tilbudsanmodningen. Hvis du vil gøre dette, skal du oprette eller åbne en tilbudsanmodningssag. Åbn derefter fanen **Tilbud** i handlingsruden, og vælg **Angiv standardsvar for tilbudsanmodninger** i sektionen **Svar**. Dialogboksen **Standardfelter for svar på tilbudsanmodning** åbnes, der fungerer på samme måde, som når standardindstillingerne for formularerne til leverandørsvar på tilbudsanmodning angives, men dine ændringer her påvirker kun den aktuelle sag i tilbudsanmodningen. Du kan finde flere oplysninger om, hvordan du aktiverer denne funktion, og hvordan den fungerer, i [Vælge standardfelter, der skal medtages i formularen til svar på tilbudsanmodninger](#default-reply-fields).
 
 Du kan vælge kreditorerne, der skal føjes til en tilbudsanmodningssag, på tre måder:
 
@@ -166,7 +159,6 @@ Du kan vælge kreditorerne, der skal føjes til en tilbudsanmodningssag, på tre
 Når tilbudsanmodningssagen er klar, skal du vælge **Send**. Handlingen Send genererer kladder og rapporter, der udskrives, arkiveres og sendes i henhold til dine indstillinger for Udskrivning.
 
 Hvis du har indstillet **Brug kreditor til genberegning af priser** og **Brug kreditorspecifikke vareoplysninger** til **Ja** på siden **Sender tilbudsanmodning**, da du sendte tilbudsanmodningen til en kreditor, angives nogle af de kreditorspecifikke oplysninger automatisk i tilbudsanmodningssagen for den pågældende kreditor.
-
 
 ## <a name="amending-an-rfq-case"></a>Ændring af en tilbudsanmodningssag
 
@@ -179,7 +171,6 @@ Hvis du har konfigureret ændringsprocessen, så den er mindre restriktiv, behø
 Hvis kreditorer bruger grænsefladen til kreditorsamarbejde til at afgive bud, skal du altid bruge ændringsprocessen for at oplyse kreditorerne om ændringerne af tilbudsanmodningssagen. Denne proces hjælper med at forhindre en situation, hvor kreditorer byder på en forældet tilbudsanmodningssag, mens de har et igangværende bud. Du kan finde flere oplysninger om kreditorsamarbejde under [Kreditorsamarbejde med eksterne kreditorer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Hvis du vil invitere flere leverandører til at byde, og der ikke er foretaget nogen ændringer af tilbudsanmodningssagen, kan du bruge knappen **Send**. De leverandører, du har tilføjet, vises på siden **Send** og modtager e-mailinvitationen.
-
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Modtagelse og registrering af svar på tilbudsanmodningen
 
@@ -208,29 +199,20 @@ I svaret kan du tilføje en årsagskode for at forklare, hvorfor du har accepter
 
 Når du accepterer et bud af typen **Indkøbsrekvisition**, opdateres indkøbsrekvisitionens linjer med følgende oplysninger, som afspejler disse oplysninger fra det accepterede bud:
 
--   Enhedspris
-
--   Rabat %
-
--   Rabatbeløb
-
--   Indkøbsgebyrer
-
--   Linjetillæg
-
--   Leverandør
-
--  Eksternt nummer
-
--   Ekstern beskrivelse
-
+- Enhedspris
+- Rabat %
+- Rabatbeløb
+- Indkøbsgebyrer
+- Linjetillæg
+- Leverandør
+- Eksternt nummer
+- Ekstern beskrivelse
 
 I følgende tabel vises, hvordan status for tilbudsanmodningen ændres, efterhånden som du accepterer eller afviser bud fra kreditorer.
 
-<a name="statuses--highest-and-lowest"></a>Statusser – højeste og laveste
------------------------------
+## <a name="statuses--highest-and-lowest"></a>Statusser – højeste og laveste
 
-Under fanen Kreditor for tilbudsanmodningssagen kan du se linjerne med den højeste og laveste status for en bestemt kreditor. Når kreditoren tilføjes, og ingen linjer endnu er sendt, er den laveste og højeste status <strong>Oprettet</strong>. Når tilbudsanmodningen er sendt til kreditoren med alle linjer, vil statussen for de to linjer være <strong>Sendt</strong>. Hvis nogle af linjerne i et bud fra en kreditor, der er accepteret, mens andre er afvist, får de afviste linjer den laveste status, som er <strong>Afvist</strong>, og de accepterede linjer får den højeste status, som er <strong>Accepteret</strong>.
+Under fanen Kreditor for tilbudsanmodningssagen kan du se linjerne med den højeste og laveste status for en bestemt kreditor. Når leverandøren er tilføjet, og der endnu ikke er afsendt nogen linjer, bliver både den laveste og den højeste status <strong>Oprettet.</strong> Når tilbudsanmodningen sendes til leverandøren med alle linjer, vil status for de to linjer blive <strong>Sendt</strong>. Hvis nogle af linjerne i et bud fra en kreditor, der er accepteret, mens andre er afvist, får de afviste linjer den laveste status, som er <strong>Afvist</strong>, og de accepterede linjer får den højeste status, som er <strong>Accepteret</strong>.
 
 På linjerne i tilbudsanmodningssagen kan du se den højeste og laveste status pr. linje på tværs af alle kreditorer. Hvis du har sendt en linje til alle kreditorer i tilbudsanmodningssagen og ingen har svaret endnu, er både den laveste og højeste status **Sendt.** Når mindst én kreditor svarer, ændres den højeste status til **Modtaget**. Hvis du føjer en ny kreditor til sagen, ændres den laveste status til **Oprettet**
 
