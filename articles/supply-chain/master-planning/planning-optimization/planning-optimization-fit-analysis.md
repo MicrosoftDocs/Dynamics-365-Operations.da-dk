@@ -3,7 +3,7 @@ title: Analyse af om Planlægningsoptimering passer til
 description: Dette emne beskriver, hvordan du kan kontrollere den aktuelle opsætning og de nuværende data i forhold til funktionerne i funktionen Planlægningsoptimering.
 author: ChristianRytt
 manager: tfehr
-ms.date: 09/23/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 73549097eed6d9418d5ff73e108d1dbae7ed66b3
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887132"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973446"
 ---
-# <a name="planning-optimization-fit-analysis"></a>Analyse af om Planlægningsoptimering passer til
+# <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Hvis du vil se, hvordan din aktuelle opsætning og data er kompatibel med funktionen Planlægningsoptimering, skal du gå til **Varedisponering** \> **Opsætning** \> **Analyse af om Planlægninsoptimering passer til** og dernæst vælge **Kør analyse**. Hvis analysen finder nogen uoverensstemmelser, vises de på samme side. (Det kan tage et par minutter at køre analysen).
+Du skal analysere resultatet fra planlægningsoptimeringen og tilpasse analysen som en del af migreringsprocessen. Bemærk, at omfanget af planlægningsoptimering ikke er lig med den aktuelle indbyggede funktionalitet for varedisponering. Det anbefales, at du samarbejder med partneren og læser dokumentationen for at forberede migreringen. 
+
+Tilpasset analyse af planlægningsoptimering hjælper dig med at identificere, hvor resultatet kan være anderledes mellem det indbyggede varedisponeringsprogram og planlægningsoptimering. Denne analyse foretages på basis af den aktuelle opsætning og dine data. 
+
+Hvis du vil have vist analyseresultatet for tilpasning af planlægningsoptimering, skal du gå til **Varedisponering** \> **Konfiguration** \> **Analyse af tilpasning af planlægningsoptimering** og derefter vælge **Kør analyse**. Hvis analysen finder nogen uoverensstemmelser, vises de på samme side. (Det kan tage et par minutter at køre analysen).
 
 > [!NOTE]
 > Hvis der findes uoverensstemmelser, kan du stadig bruge Planlægningsoptimering. Resultaterne af tilpasningsanalysen viser kun de steder, hvor planlægningstjenesten ikke kan overholde din aktuelle opsætning. Det vil sige, at det vises de steder, hvor nogle processer muligvis bliver ignoreret eller ikke understøttes.
@@ -63,7 +67,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Autorisation | Behovsplaner med automatisk autorisation angivet: _\#_ | I version 10.0.7 og nyere understøttes automatisk autorisation som et separat autorisationsbatchjob, efter at varedisponering er fuldført (hvis funktionen _Automatisk autorisation med planlægningsoptimering_ er blevet aktiveret i [funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Bemærk, at automatisk autorisation med planlægningsoptimering er baseret på ordredatoen (startdato), og ikke behovsdatoen (slutdato). Denne funktionsmåde sikrer, at der sker en rettidig autorisation af ordreforslag, uden at leveringstiden i autorisationstidshorisonten skal medtages. | Understøttet |
 | FitAnalysisPlanningItems | Planlægningsvarer: _\#_ | Denne funktion afventer. I øjeblikket håndteres planlægningsvarer som almindelige varer, når planlægningsoptimering er aktiveret. | 2021. oktober |
 | Prognose | Disponeringsgrupper med "Medtag interne ordrer" aktiveret: _\#_ | Denne funktion afventer. Aktuelt medtager varedisponering ikke downstream-planlagt behov, når planlægningsoptimering er aktiveret, uanset denne indstilling. Bemærk, at frigivne/autoriserede ordrer stadig fungerer sammen med den almindelige interne funktion og vil omfatte de fleste scenarier. | 2020. oktober |
-| Prognose | Disponeringsgrupper med indstillingen "Reducer prognose med" indstillet til en anden værdi end "Ordrer": _\#_ | Planlægningsoptimering bruger som standard "Reducer prognose med" for ordrer, uanset denne indstilling. | 2020. oktober |
+| Prognose | Disponeringsgrupper med indstillingen "Reducer prognose med" indstillet til en anden værdi end "Ordrer": _\#_ | Planlægningsoptimering bruger som standard "Reducer prognose med" for ordrer, uanset denne indstilling. | November 2020 |
 | Prognose | Budgetmodeller med undermodeller: _\#_ | Denne funktion afventer. Aktuelt er budgetter, der bruger undermodeller, ikke understøttet, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | 2021. april |
 | Prognose | Behovsplaner med "Medtag forsyningsprognose" aktiveret: _\#_ | Denne funktion afventer. Aktuelt er forsyningsprognoser ikke understøttet, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | 2021. oktober |
 | Låsningstidshorisont | Disponeringsgrupper med låsningstidshorisont angivet: _\#_ | Låsningstidshorisont bruges ofte ikke, og der er i øjeblikket ingen planer om at medtage den i planlægningsoptimering. I øjeblikket ignoreres opsætningen af låsningstidshorisont, når planlægningsoptimering er aktiveret, uanset denne indstilling. | I/T |
@@ -72,7 +76,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Intern handel | Behovsplaner, der inkluderer planlagt downstream-efterspørgsel: _\#_ | Denne funktion afventer. Aktuelt medtager varedisponering ikke downstream-planlagt behov, når planlægningsoptimering er aktiveret, uanset denne indstilling. Bemærk, at frigivne/autoriserede ordrer stadig fungerer sammen med den normale interne funktion og vil omfatte de fleste scenarier. | 2020. oktober |
 | Kanban | Varedisponeringsposter med ordreforslagstypen kanban: _\#_ | Denne funktion afventer. Aktuelt vil varedisponering, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-ordreforslagstypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. | 2021. oktober |
 | Kanban | Varer med standardordretypen kanban: _\#_ | Aktuelt vil en standardordretype, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-standardordretypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. | 2021. oktober |
-| Status for produktlivscyklus   | Produktlivscyklustilstande er ikke aktive for disponering: _\#_ | Dette er en afventende funktion. Produktlivscyklustilstanden ignoreres i øjeblikket med Planlægningsoptimering aktiveret. Du kan justere produktfilteret på planlægningsniveau for at undgå at medtage produkter, hvor produktlivscyklustilstanden er deaktiveret for planlægning. | 2020. oktober |
+| Status for produktlivscyklus   | Produktlivscyklustilstande er ikke aktive for disponering: _\#_ | Dette er en afventende funktion. Produktlivscyklustilstanden ignoreres i øjeblikket med Planlægningsoptimering aktiveret. Du kan justere produktfilteret på planlægningsniveau for at undgå at medtage produkter, hvor produktlivscyklustilstanden er deaktiveret for planlægning. | November 2020 |
 | Produktion | Styklistelinjer med afrunding eller flere opsætninger: _\#_ | Denne funktion afventer. I øjeblikket ignoreres afrunding og flere opsætninger på styklistelinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2021. april |
 | Produktion | Stykliste/formellinjer med formelmåling: _\#_ | Denne funktion afventer. I øjeblikket ignoreres formelmål på styklister og formellinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2021. oktober |
 | Produktion | Stykliste/formellinjer med erstatningsvare (plangrupper): _\#_ | Denne funktion afventer. I øjeblikket ignoreres erstatningsvare (plangrupper) på styklister og formellinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2021. oktober |

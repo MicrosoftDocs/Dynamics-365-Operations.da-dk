@@ -1,9 +1,9 @@
 ---
 title: Administrere vurderinger og anmeldelser
-description: I dette emne beskrives, hvordan du kan administrere vurderinger og anmeldelser ved hjælp af Microsofts Dynamics 365 Commerce-vurderings- og anmeldelsesværktøj.
+description: I dette emne beskrives, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 01/30/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,38 +18,30 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
-ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027236"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974000"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan administrere vurderinger og anmeldelser ved hjælp af Microsofts Dynamics 365 Commerce-vurderings- og anmeldelsesværktøj.
+I dette emne beskrives, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
-Dynamics 365 Commerce bruger Microsoft Azure Cognitive Services til automatisk at moderere tekst i anmeldelser ved at bortredigere krænkende ord og udtryk. Derudover kan redaktører bruge redigeringsværktøjet til vurderinger og anmeldelser til følgende manuelle opgaver:
+Dynamics 365 Commerce bruger Microsoft Azure Cognitive Services til automatisk at moderere tekst i anmeldelser ved at bortredigere krænkende ord og udtryk. Derudover kan redaktører bruge Dynamics 365 Commerce-webstedsgenerator til at implementere følgende manuelle opgaver:
 
 - Moderere anmeldelser ved at reagere på dem eller fjerne dem.
 - Slette en kundes anmeldelser på kundens anmodning.
 - Masseimportere vurderings- og anmeldelsesdata for alle produkter i en Microsoft Power BI-skabelon, så tendenser for vurderinger og anmeldelser kan analyseres.
 
-## <a name="access-ratings-and-reviews-moderation-features"></a>Få adgang til ændringsfunktioner for vurderinger og anmeldelser
-
-Udfør følgende trin for at få adgang til ændringsfunktioner for vurderinger og anmeldelser i værktøjet til e-handelsadministration af websteder.
-
-1. Log på [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
-1. Åbn det projekt, der indeholder det miljø, hvor du vil initialisere e-handel.
-1. Vælg miljøet i sektionen **Miljøer**.
-1. Under **Miljøfunktioner** skal du vælge **Retail administration**.
-1. Under fanen **e-handel** skal du under **Links** vælge **Værktøj til administration af e-Commerce-websted**.
-
 ## <a name="read-a-review"></a>Læse en anmeldelse 
+
+Følg disse trin for at læse en anmeldelse i Commerce-webstedsgenerator.
 
 1. Gå til **Startside \> Anmeldelser \> Redigering**.
 1. Brug søgefeltet øverst til højre på siden til at filtrere de anmeldelser, der vises efter produkt-id, produktnavn eller anmeldelsestekst.
@@ -62,7 +54,7 @@ Yderligere filtre giver dig mulighed for at begrænse anmeldelserne efter status
 
 Kunder, der har købt et produkt, giver jævnligt udtryk for deres tilfredshed eller utilfredshed, eller angiver i nogle tilfælde, at de ikke forstår, hvordan produktet skal bruges. Som redaktør kan du sende et svar på en anmeldelse. Dette svar vises sammen med anmeldelsen på webstedet. 
 
-Benyt følgende fremgangsmåde for at besvare en anmeldelse.
+Følg disse trin for at reagere på en anmeldelse i Commerce-webstedsgenerator.
 
 1. Gå til **Startside \> Anmeldelser \> Redigering**.
 1. Find og vælg den anmeldelse, der kræver et svar.
@@ -76,20 +68,20 @@ Benyt følgende fremgangsmåde for at besvare en anmeldelse.
 
 Nogle gange kan redaktører være berettigede til at fjerne kunders anmeldelser af forretningsmæssige årsager. 
 
-Benyt følgende fremgangsmåde for at fjerne en anmeldelse.
+Følg disse trin for at fjerne en anmeldelse i Commerce-webstedsgenerator.
 
 1. Gå til **Startside \> Anmeldelser \> Redigering**.
 1. Find og vælg den anmeldelse, der skal fjernes.
-1. Vælg en årsag til fjernelsen i egenskabsruden til højre, og vælg derefter **Fjern**.
+1. Vælg en årsag til fjernelsen under **Fjern anmeldelse** i egenskabsruden til højre, og vælg derefter **Fjern**.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Slette en kundes anmeldelser på kundens anmodning 
 
 Nogle gange ønsker kunderne, at deres vurderings- og anmeldelsesdata slettes permanent fra et e-handelswebsted. En redaktør, der modtager en anmodning om fjernelse fra en kunde, kan fjerne kundens data ved hjælp af funktionen sletning af anmeldelser. Hvis du vil søge efter og slette en kundes data, skal redaktøren bruge den e-mailadresse, som kunden har brugt til at logge på og skrive anmeldelser. 
 
-Benyt følgende fremgangsmåde for at finde og slette kundedata.
+Hvis du vil finde og slette kundedata i Commerce-webstedsgenerator, skal du følge disse trin.
 
 1. Gå til **Startside \> Anmeldelser \> Slet**.
-1. Angiv kundens e-mailadresse i feltet **Søg efter brugere vha. e-mailadresse**, og vælg derefter **Søg**.
+1. Angiv kundens mailadresse i feltet **Søg efter brugere vha. mailadresse**, og vælg derefter **Søg**.
 1. Hvis kunden har anmeldelsesaktivitet (f.eks. indsendelse af anmeldelser, tilkendegivelser om nytten af andre kunders anmeldelser eller kommentarer til en anden kundes anmeldelse), vises resultaterne. Knappen **Slet** vises for hvert element.
 1. Vælg **Slet**for hvert element, der skal slettes. Når du bliver bedt om at bekræfte, skal du vælge **Ja**. 
     
@@ -101,9 +93,9 @@ Benyt følgende fremgangsmåde for at finde og slette kundedata.
 
 ## <a name="download-ratings-and-reviews-data"></a>Hente vurderings- og anmeldelsesdata
 
-Med redigeringsværktøjet til vurderinger og anmeldelser kan redaktører importere vurderings- og anmeldelsesdata samlet, så de kan analysere tendenser. En Power BI-skabelon, der indeholder grundlæggende metrikværdier, er tilgængelig. Redaktører kan bruge denne skabelon til at forbinde masseimporterede data med hinanden og få vist et dashboard. Det er ikke nødvendigt at oprette et brugerdefineret dashboard. Redaktører kan også tilpasse Power BI-skabelonen, så den opfylder deres specifikke behov. 
+Med Commerce-webstedsgenerator kan redaktører importere vurderings- og anmeldelsesdata samlet, så de kan analysere tendenser. En Power BI-skabelon, der indeholder grundlæggende metrikværdier, er tilgængelig. Redaktører kan bruge denne skabelon til at forbinde masseimporterede data med hinanden og få vist et dashboard. Det er ikke nødvendigt at oprette et brugerdefineret dashboard. Redaktører kan også tilpasse Power BI-skabelonen, så den opfylder deres specifikke behov. 
 
-Hvis du vil hente vurderings- og anmeldelsesdata, skal du følge disse trin.
+Hvis du vil downloade vurderings- og anmeldelsesdata i Commerce-webstedsgenerator, skal du følge disse trin.
 
 1. Gå til **Startside \> Anmeldelser \> Rapportering**.
 1. Vælg **Hent anmeldelsesdata** for at hente vurderings- og anmeldelsesdata samlet i CSV-format (semikolonseparerede værdier).
@@ -112,12 +104,12 @@ Hvis du vil hente vurderings- og anmeldelsesdata, skal du følge disse trin.
 
 Redaktører kan hente Power BI-skabelonen, så de kan få vist tendenser i et dashboard.
 
-Hvis du vil se vurderings- og anmeldelsestendenser, skal du følge disse trin.
+Hvis du vil se vurderings- og anmeldelsestendenser i Commerce-webstedsgenerator, skal du følge disse trin.
 
 1. Gå til **Startside \> Anmeldelser \> Rapportering**.
 1. Vælg **Power BI-skabelon** for at hente skabelonen.
 
-    ![Hente Power BI-skabelonen](media/rnr-moderation-reports.png) 
+    ![Hent Power BI-skabelonen](media/rnr-moderation-reports.png) 
 
 1. Åbn den hentede skabelon ved hjælp af Power BI-appen. Luk dialogboksen **Adgang til webindhold**, der vises, og luk derefter fejlmeddelelsen "Opdater", der vises.
 1. Gå til **Startside**, vælg **Rediger forespørgsler**, og vælg derefter **indstillinger for datakilde**.

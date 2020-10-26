@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269975"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961604"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Gemme, få vist og udgive en side
 
@@ -38,9 +38,9 @@ Når du gemmer en side, er ændringerne kun synlige for dig. Gemmehandlingen er 
 
 ## <a name="preview-a-page"></a>Se forhåndsvisning af en side
 
-Oprettelsesværktøjet indeholder to slags funktioner til forhåndsvisning: en "what you see is what you get"-eksempelrude (WYSIWYG) og et separat vindue.
+Oprettelsesværktøjet indeholder to slags funktioner til forhåndsvisning: den visuelle sidegenerator, som er en "what you see is what you get"-eksempelrude (WYSIWYG), og et separat eksempelvindue.
 
-Mens du bruger sideeditoren, er der en "what you see is what you get"-forhåndsvisning (WYSIWYG) i den midterste rude. Denne forhåndsvisning opdateres automatisk, hver gang du gemmer siden. Du kan også opdatere den manuelt ved at vælge **Opdater** på kommandolinjen. I WYSIWYG-forhåndsvisningen gengives siden, som webstedets brugere kan se den, men hjælpefunktioner vises oven på den.
+Mens du bruger sideeditoren, er der en "what you see is what you get"-forhåndsvisning (WYSIWYG) i den midterste rude. Denne forhåndsvisning opdateres automatisk, hver gang du gemmer siden. Du kan også opdatere den manuelt ved at vælge **Opdater** på kommandolinjen. I forhåndsvisningen gengives siden, som webstedets brugere kan se den, men hjælpefunktioner vises oven på den.
 
 Når du er færdig med at redigere siden, kan det være en god ide at se forhåndsvisningen for at se, hvad kunderne kan se. Hvis du vil se forhåndsvisningen, skal du vælge **Forhåndsvisning** på kommandolinjen. Forhåndsvisningen åbnes i et separat browservindue. Siden i vinduet med forhåndsvisning gengives på samme måde, som webstedets bruger kan se den. Du kan ændre størrelsen på vinduet for at sikre, at dynamiske moduler gengives korrekt i alle visninger.
 

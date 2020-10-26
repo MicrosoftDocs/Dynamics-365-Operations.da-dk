@@ -3,7 +3,7 @@ title: Ordliste til sidemodel
 description: I dette emne beskrives de forskellige elementer, der bruges på siderne på et Microsoft Dynamics 365 Commerce-websted.
 author: phinneyridge
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da41440581ad952540c7dcf3caa5e23582198a36
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 5c772a19958ebf0687d09af4c3055c733d99d750
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025988"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973903"
 ---
 # <a name="page-model-glossary"></a>Ordliste til sidemodel
 
@@ -53,7 +53,9 @@ Følgende tabel indeholder en oversigt over ord, som du skal være bekendt med, 
 
 [Dokumenttilstande og -livscyklus](document-states-overview.md)
 
-[Arbejd med publiceringsgrupper](publish-groups.md)
+[Arbejde med publiceringsgrupper](publish-groups.md)
+
+[Aktivere og bruge deling på tværs af kanaler](cross-channel-sharing.md)
 
 [Arbejde med moduler](work-with-modules.md)
 
