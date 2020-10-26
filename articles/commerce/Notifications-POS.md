@@ -14,15 +14,15 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: ShalabhjainMSFT
+ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 04dd57aabcbdf5291f06317800b69f29f15d2763
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e663a5dca76d570217b7e02444689a2e2d312c41
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021944"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975165"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
@@ -69,7 +69,7 @@ I følgende illustration vises indstillingerne for dynamisk indhold i knapgitter
 
 ![Indstillinger for dynamisk indhold i knapgitterdesigneren](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
 
-Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Edge-browseren, og gå til siden **Skærmlayout**, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og markér afkrydsningsfeltet **Aktivér dynamisk indhold**. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet.
+Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Microsoft Edge-browseren, og gå til siden **Skærmlayout**, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og markér afkrydsningsfeltet **Aktivér dynamisk indhold**. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet.
 
 
 ![Finde det skærmlayout, der bruges af POS](./media/Choose_screen_layout.png "Finde skærmlayoutet")

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e827ede0508d07b6800ecdc4cc99cb2b6a0bcc78
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124491"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975021"
 ---
 # <a name="sales-tax-overview"></a>Momsoversigt
 
@@ -77,7 +77,7 @@ Når momsen er blevet betalt, bør saldoen på momsafregningskontoen opvejes mod
 ## <a name="conditional-sales-tax"></a>Betinget moms
 Betinget moms er en moms, der betales proportionalt med det faktiske beløb, der betales på en faktura. Derimod beregnes standardmoms på faktureringstidspunktet. Betinget moms skal betales til skattemyndighederne, når betalingen bogføres, ikke når fakturaen bogføres. Når fakturaen bogføres, skal posteringen registreres i momsrapporten. Dog skal posteringen udelades fra momsafregningsrapporten. 
 
-Hvis du markerer afkrydsningsfeltet Betinget moms i formularen Finansparametre, kan der ikke fratrækkes moms, før du har betalt fakturaen. Dette er et lovkrav i nogle lande.
+Hvis du markerer afkrydsningsfeltet Betinget moms i formularen Finansparametre, kan der ikke fratrækkes moms, før du har betalt fakturaen. Dette er et lovkrav i visse lande/områder.
 
 > [!NOTE]
 > Når du markerer afkrydsningsfeltet Betinget moms, skal du konfigurere momskoder og momsgrupper samt oprette finanskonteringsgrupper til understøttelse af funktionaliteten. |
@@ -94,6 +94,6 @@ Hvis du imidlertid bruger en betinget moms, afregner du med skattemyndighederne,
 
 ### <a name="postdated-check"></a>Fremdateret check
 
-Hvis du bruger fremdateret check som betalingsmåde, når betalingen oprettes, cleares bankkontoen ikke. I nogle lande vil moms blive 'realiseret' passiv, når betalingen cleares i banken, hvilket betyder, at den fremdaterede check udlignes. Du kan aktivere den ved at vælge **Realiserer den betingede moms, når der trækkes fremdaterede checks** i **Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre > fremdaterede checks**
+Hvis du bruger fremdateret check som betalingsmåde, når betalingen oprettes, cleares bankkontoen ikke. I nogle lande/områder vil moms blive 'realiseret' passiv, når betalingen cleares i banken, hvilket betyder, at den fremdaterede check udlignes. Du kan aktivere den ved at vælge **Realiserer den betingede moms, når der trækkes fremdaterede checks** i **Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre > fremdaterede checks**
 
 Du kan finde flere oplysninger i [Konfigurere A-skat](tasks/set-up-withholding-tax.md).

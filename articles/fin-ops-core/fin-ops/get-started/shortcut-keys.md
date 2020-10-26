@@ -3,7 +3,7 @@ title: Tastaturgenveje
 description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finance and Operations-apps.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761615"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962514"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -32,6 +32,8 @@ Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste d
 
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
+
+Nogle af genvejene på denne side er *tasteakkorder*, hvilket betyder, at de kræver to på hinanden følgende sæt tastekombinationer (adskilt af komma), der skal trykkes på uafhængigt af hinanden for at udløse den påkrævede handling. F.eks. kræver genvejen "Alt + M, A", at brugeren først trykker på "Alt + M", slipper tasterne og trykker på "A". 
 
 ## <a name="finding-a-shortcut"></a>Søge efter en genvej
 
@@ -193,7 +195,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Gå til hovedsidens indhold (med fokus på en anden rude)                    | Alt+M, M                    |
 | Flytte til faktaboksruden (som kan inkludere at åbne den)                       | Alt+M, B eller Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>Tilpasning af genveje
+## <a name="personalization-shortcuts"></a>[Tilpasning](personalize-user-experience.md) af genveje 
 
 | Hvis du vil gøre dette                                                                                                             | Tryk på                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flytte en side op/ned i opslaget                                                                                       | Page up/Page down              |
 | Flytte til toppen/bunden af opslaget                                                                                    | Home/End                       |
 
+## <a name="task-recordershortcuts"></a>[Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)-genveje 
+
+| Hvis du vil gøre dette                                                                    | Tryk på                       |
+|-------------------------------------------------------------------------------|----------------------------|
+| Stoppe optagelsen (under optagelsen)                                          | Alt + R,S                    |
+| Skifte synligheden af ruden Arbejdsrutineoptager (under optagelsen)             | Alt + R,T                    |
+| Skifte skinnetilstand (under afspilning af en opgaveguide)                                | Alt + R,L                    |
+| Gå til det forrige trin (under afspilning af en opgaveguide)                          | Alt + R,P                    |
+| Gå til det næste trin (under afspilning af en opgaveguide)                              | Alt + R,N                    |
+| Skifte fokus mellem siden og den animerede pop op-prompt (under afspilning af en opgaveguide) | Alt + R,F               |
+| Udvide/skjule den animerede pop op-prompt (under afspilning af en opgaveguide)              | Alt + R,C                    |
+| Vise flere/færre oplysninger i den animerede pop op-prompt (under afspilning af en opgaveguide) | Alt + R,M                    |
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

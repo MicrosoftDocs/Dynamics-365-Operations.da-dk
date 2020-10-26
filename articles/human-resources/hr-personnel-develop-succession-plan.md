@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6cf056f9c8f1f24bb6eb0f619c476b1095a854bb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428633"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958837"
 ---
 # <a name="develop-succession-plan"></a>Udarbejd efterfølgerplan
 
@@ -38,7 +38,7 @@ Efterhånden som organisationen vokser, og du overveje planlægning af efterføl
 7. Klik på Person.
 8. Skriv et navn i feltet Person, eller vælg på rullelisten.  Eksempel: Camilla Hicks.
 9. Klik på OK.
-10. Udvid oversigtspanelet til certifikater for at få vist eller redigere de certifikater, der er inkluderet i kompetencesøgningen.
+10. Udvid oversigtspanelet til certifikater for at se eller redigere de certifikater, der er inkluderet i kompetencesøgningen.
 11. Udvid oversigtspanel Færdigheder for at få vist eller redigere de færdigheder, der skal inkluderes.
 12. Markér den første række på listen.  Eksempel: Regnskab
 13. Klik på afkrydsningsfeltet Valgfri.

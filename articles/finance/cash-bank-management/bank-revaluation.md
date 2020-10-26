@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d7e7006679757d7e779b86c58649cd3869e1c7d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188435"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976493"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Værdiregulering af udenlandsk valuta i bank
 
@@ -30,7 +30,7 @@ ms.locfileid: "2188435"
 
 Dette emne giver et overblik over processen med værdiregulering af udenlandsk valuta i banker. Emnet beskriver, hvordan du opsætter og kører processen samt tilvejebringer oplysninger om beregningerne til processen. Det beskriver endvidere, hvordan man tilbagefører værdireguleringstransaktioner, såfremt der er behov herfor.
 
-Regnskabsmæssige konventioner stiller krav om, at saldi for bankkonti i fremmede valutaer værdireguleres ved hjælp af forskellige valutakurstyper (aktuelle, historiske, gennemsnitlige osv.) som led i en periodeafslutning. Værdiregulering af udenlandsk valuta i banker-funktionen kan anvendes til at værdiregulere en eller flere bankkonti. Dette er endvidere en global funktion. Du kan med andre ord værdiregulere banker på tværs af alle de juridiske enheder, du har adgang til, fra den samme side.
+Regnskabsmæssige konventioner stiller krav om, at saldi for bankkonti i fremmedvalutaer værdireguleres ved hjælp af forskellige valutakurstyper (aktuelle, historiske, gennemsnitlige osv.) som led i en periodeafslutning. Værdiregulering af udenlandsk valuta i banker-funktionen kan anvendes til at værdiregulere en eller flere bankkonti. Dette er endvidere en global funktion. Du kan med andre ord værdiregulere banker på tværs af alle de juridiske enheder, du har adgang til, fra den samme side.
 
 > [!NOTE]
 > Når du kører processen til værdiregulering, bliver saldoen for hver bankkonto, der er bogført i udenlandsk valuta, værdireguleret. De transaktioner for ikke-realiseret gevinst eller tab, der oprettes under værdireguleringsprocessen, er genereret af systemet. Der kan oprettes to transaktioner – én for regnskabsvalutaen og én for rapporteringsvalutaen, såfremt rapporteringsvalutaen er relevant. Hver regnskabspost bogføres på kontoen for ikke-realiseret gevinst eller tab og den hovedkonto, der værdireguleres.

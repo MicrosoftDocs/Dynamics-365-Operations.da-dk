@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6710dcb1cb53e7221b03b35ceee5ac8e055b6dd2
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826400"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958735"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuel planlægning af lean manufacturing
 
@@ -61,7 +61,7 @@ Siden **Kanban-planlægningsområde** indeholder syv hovedelementer, som er vist
 
 ### <a name="view-the-time-scale"></a>Se tidsskalaen
 
-Området er opdelt i perioder, der hver især er repræsenteret som en node (4). Nodeperioderne er angivet på den lodrette akse, og den vandrette akse repræsenterer en tidsskala (7), der viser periodens længde. En periode har en længde på enten en dag eller en uge. Periodens længde bestemmes af konfigurationen af den arbejdscelle, der er valgt for Kanban planlægningsområdet (2). For hver periodenode angiver i kanban-planlægningsområdet, hvor meget de planlagte kanban-job belaster perioden. Der findes også en angivelse af det maksimale gennemløb for perioden. Hvis det planlagte gennemløb overstiger det maksimale gennemløb, betragtes perioden som overbelastet og vises med et rødt advarselssymbol. Et planlagt kanban-job vises i en periode med planlagte start- og sluttider (5). Længden af jobbet er lig med aktivitetstiden. Kanban-job vises som overlappende i en periode, hvis deres aktivitetstider overstiger arbejdscellens takttid.
+Området er opdelt i perioder, der hver især er repræsenteret som en node (4). Nodeperioderne er angivet på den lodrette akse, og den vandrette akse repræsenterer en tidsskala (7), der viser periodens længde. En periode har en længde på enten en dag eller en uge. Periodens længde bestemmes af konfigurationen af den arbejdscelle, der er valgt for Kanban planlægningsområdet (2). For hver periodenode angiver i kanban-planlægningsområdet, hvor meget de planlagte kanban-job belaster perioden. Der findes også en angivelse af det maksimale gennemløb for perioden. Hvis det planlagte gennemløb overstiger det maksimale gennemløb, betragtes perioden som overbelastet og vises med et rødt advarselssymbol. Et planlagt kanban-job vises i en periode med planlagte start- og sluttider (5). Længden af jobbet er lig med aktivitetstiden. Kanban-job vises som overlappende i en periode, hvis deres aktivitetstider overstiger arbejdscellens opgavetid.
 
 ### <a name="view-job-status"></a>Se jobstatus
 
