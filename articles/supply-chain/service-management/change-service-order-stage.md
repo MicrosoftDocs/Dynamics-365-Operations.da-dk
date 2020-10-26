@@ -15,29 +15,29 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45d4533211e7f64635c9523c177aa569b6a2f8a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 52a4082f6e201bcd2820f3d11a61929d8f906840
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202945"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977018"
 ---
-# <a name="change-the-service-order-stage"></a><span data-ttu-id="69d49-103">Ændre serviceordrestadiet</span><span class="sxs-lookup"><span data-stu-id="69d49-103">Change the service order stage</span></span> 
+# <a name="change-the-service-order-stage"></a><span data-ttu-id="89d31-103">Ændre serviceordrestadiet</span><span class="sxs-lookup"><span data-stu-id="89d31-103">Change the service order stage</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="69d49-104">Udfør disse trin for at flytte en serviceordre til næste trin i arbejdsgangen for serviceordren eller for at tilbageføre den til en tidligere fase.</span><span class="sxs-lookup"><span data-stu-id="69d49-104">Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.</span></span>
+<span data-ttu-id="89d31-104">Udfør disse trin for at flytte en serviceordre til næste trin i arbejdsgangen for serviceordren eller for at tilbageføre den til en tidligere fase.</span><span class="sxs-lookup"><span data-stu-id="89d31-104">Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.</span></span>
 
-1.  <span data-ttu-id="69d49-105">Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="69d49-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="89d31-105">Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="89d31-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="69d49-106">Vælg serviceordren, og klik derefter på fanen **Ekspedition**.</span><span class="sxs-lookup"><span data-stu-id="69d49-106">Select the service order, and then click the **Dispatch** tab.</span></span>
+2.  <span data-ttu-id="89d31-106">Vælg serviceordren, og klik derefter på fanen **Ekspedition**.</span><span class="sxs-lookup"><span data-stu-id="89d31-106">Select the service order, and then click the **Dispatch** tab.</span></span>
 
-3.  <span data-ttu-id="69d49-107">I **handlingsruden** skal du klikke på enten **Næste stadie** eller **Tidligere stadie**.</span><span class="sxs-lookup"><span data-stu-id="69d49-107">On the **Action Pane**, click either **Next stage** or **Previous stage**.</span></span>
+3.  <span data-ttu-id="89d31-107">I **handlingsruden** skal du klikke på enten **Næste stadie** eller **Tidligere stadie**.</span><span class="sxs-lookup"><span data-stu-id="89d31-107">On the **Action Pane**, click either **Next stage** or **Previous stage**.</span></span>
 
-4.  <span data-ttu-id="69d49-108">I formularen **Skift servicestadie** skal du vælge det relevante stadie.</span><span class="sxs-lookup"><span data-stu-id="69d49-108">In the **Change service stage** form, select the appropriate stage.</span></span>
+4.  <span data-ttu-id="89d31-108">I formularen **Skift servicestadie** skal du vælge det relevante stadie.</span><span class="sxs-lookup"><span data-stu-id="89d31-108">In the **Change service stage** form, select the appropriate stage.</span></span>
 
 
