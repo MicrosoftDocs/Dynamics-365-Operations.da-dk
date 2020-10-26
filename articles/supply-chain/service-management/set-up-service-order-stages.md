@@ -15,35 +15,35 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c7b632ea9c4574de8f9b0a128976429b2e2e786
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86d60a67b60b1bd3a13666b35f729f88ecfee3d3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206743"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984865"
 ---
-# <a name="set-up-service-order-stages"></a><span data-ttu-id="0426f-103">Konfigurer serviceordrestadier</span><span class="sxs-lookup"><span data-stu-id="0426f-103">Set up service order stages</span></span> 
+# <a name="set-up-service-order-stages"></a><span data-ttu-id="ba7b7-103">Konfigurer serviceordrestadier</span><span class="sxs-lookup"><span data-stu-id="ba7b7-103">Set up service order stages</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="0426f-104">Klik på **Servicestyring** \> **Opsætning** \> **Serviceordrer** \> **Servicestadier**.</span><span class="sxs-lookup"><span data-stu-id="0426f-104">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
+1.  <span data-ttu-id="ba7b7-104">Klik på **Servicestyring** \> **Opsætning** \> **Serviceordrer** \> **Servicestadier**.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-104">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
 
-2.  <span data-ttu-id="0426f-105">Tryk på Ctrl+N for at oprette en ny post.</span><span class="sxs-lookup"><span data-stu-id="0426f-105">Press CTRL+N to create a new record.</span></span>
+2.  <span data-ttu-id="ba7b7-105">Tryk på Ctrl+N for at oprette en ny post.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-105">Press CTRL+N to create a new record.</span></span>
 
-3.  <span data-ttu-id="0426f-106">Indtast et servicestadie-id og en beskrivelse i felterne **Servicestadie** og **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="0426f-106">In the **Service stage** and **Description** fields, specify a service stage ID and description.</span></span>
+3.  <span data-ttu-id="ba7b7-106">Indtast et servicestadie-id og en beskrivelse i felterne **Servicestadie** og **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-106">In the **Service stage** and **Description** fields, specify a service stage ID and description.</span></span>
 
-4.  <span data-ttu-id="0426f-107">Vælg de rette parametre for stadiet.</span><span class="sxs-lookup"><span data-stu-id="0426f-107">Select the appropriate parameters for the stage.</span></span>
+4.  <span data-ttu-id="ba7b7-107">Vælg de rette parametre for stadiet.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-107">Select the appropriate parameters for the stage.</span></span>
 
-5.  <span data-ttu-id="0426f-108">Vælg det overordnede stadie til det aktuelle stadie, eller lad feltet **Overordnet** være tomt, hvis stadiet er begyndelsesstadiet i stadieopsætningen.</span><span class="sxs-lookup"><span data-stu-id="0426f-108">Select the parent stage for the current stage or leave the **Parent** field blank if the stage is the initial stage in the stage setup.</span></span>
+5.  <span data-ttu-id="ba7b7-108">Vælg det overordnede stadie til det aktuelle stadie, eller lad feltet **Overordnet** være tomt, hvis stadiet er begyndelsesstadiet i stadieopsætningen.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-108">Select the parent stage for the current stage or leave the **Parent** field blank if the stage is the initial stage in the stage setup.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="0426f-109">Du kan ikke redigere feltet <STRONG>Overordnet</STRONG>, når du har gemt stadiet.</span><span class="sxs-lookup"><span data-stu-id="0426f-109">You cannot modify the <STRONG>Parent</STRONG> field after you save the stage.</span></span> <span data-ttu-id="0426f-110">I stedet kan du slette posten og oprette den igen med et andet valg i feltet <STRONG>Overordnet</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="0426f-110">Instead, you can delete the record and create the record again with a different selection in the <STRONG>Parent</STRONG> field.</span></span></P>
-> <P><span data-ttu-id="0426f-111">Du kan også kun oprette ét stadie med et tomt <STRONG>Overordnet</STRONG>-felt.</span><span class="sxs-lookup"><span data-stu-id="0426f-111">Also, you can only create one stage with a blank <STRONG>Parent</STRONG> field.</span></span> <span data-ttu-id="0426f-112">Det er altså kun tilladt at have ét begyndelsesstadie.</span><span class="sxs-lookup"><span data-stu-id="0426f-112">That is, only one initial stage is permitted.</span></span></P>
+> <P><span data-ttu-id="ba7b7-109">Du kan ikke redigere feltet <STRONG>Overordnet</STRONG>, når du har gemt stadiet.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-109">You cannot modify the <STRONG>Parent</STRONG> field after you save the stage.</span></span> <span data-ttu-id="ba7b7-110">I stedet kan du slette posten og oprette den igen med et andet valg i feltet <STRONG>Overordnet</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-110">Instead, you can delete the record and create the record again with a different selection in the <STRONG>Parent</STRONG> field.</span></span></P>
+> <P><span data-ttu-id="ba7b7-111">Du kan også kun oprette ét stadie med et tomt <STRONG>Overordnet</STRONG>-felt.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-111">Also, you can only create one stage with a blank <STRONG>Parent</STRONG> field.</span></span> <span data-ttu-id="ba7b7-112">Det er altså kun tilladt at have ét begyndelsesstadie.</span><span class="sxs-lookup"><span data-stu-id="ba7b7-112">That is, only one initial stage is permitted.</span></span></P>
 
 
   

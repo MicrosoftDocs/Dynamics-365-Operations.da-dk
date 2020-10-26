@@ -15,36 +15,36 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cfaee379f45c2516598089f29ed6235f9c5d11a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6df9f7cb6c5062841d5c9855833a58e11be690a4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206444"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987432"
 ---
-# <a name="view-compliance-with-service-level-agreements"></a><span data-ttu-id="4991f-103">Få vist overholdelse af serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="4991f-103">View compliance with service level agreements</span></span>    
+# <a name="view-compliance-with-service-level-agreements"></a><span data-ttu-id="b7482-103">Få vist overholdelse af serviceaftaler</span><span class="sxs-lookup"><span data-stu-id="b7482-103">View compliance with service level agreements</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-## <a name="view-compliance-with-a-service-level-agreement"></a><span data-ttu-id="4991f-104">Få vist overholdelse af en serviceniveauaftale</span><span class="sxs-lookup"><span data-stu-id="4991f-104">View compliance with a service level agreement</span></span>
+## <a name="view-compliance-with-a-service-level-agreement"></a><span data-ttu-id="b7482-104">Få vist overholdelse af en serviceniveauaftale</span><span class="sxs-lookup"><span data-stu-id="b7482-104">View compliance with a service level agreement</span></span>
 
-1.  <span data-ttu-id="4991f-105">Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="4991f-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="4991f-106">Vælg en serviceordre, og dobbeltklik for at åbne formen med oplysninger om ordren.</span><span class="sxs-lookup"><span data-stu-id="4991f-106">Select a service order and double-click to open the details form for the order.</span></span>
+1.  <span data-ttu-id="b7482-105">Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="b7482-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="b7482-106">Vælg en serviceordre, og dobbeltklik for at åbne formen med oplysninger om ordren.</span><span class="sxs-lookup"><span data-stu-id="b7482-106">Select a service order and double-click to open the details form for the order.</span></span>
 
-2.  <span data-ttu-id="4991f-107">Under fanen **Generelt** i feltet **Overholdelse** kan du se den tid, angivet i procent, der er brugt på serviceordren sammenlignet med den tidsramme, der er specificeret i serviceaftalen.</span><span class="sxs-lookup"><span data-stu-id="4991f-107">On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.</span></span>
+2.  <span data-ttu-id="b7482-107">Under fanen **Generelt** i feltet **Overholdelse** kan du se den tid, angivet i procent, der er brugt på serviceordren sammenlignet med den tidsramme, der er specificeret i serviceaftalen.</span><span class="sxs-lookup"><span data-stu-id="b7482-107">On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.</span></span>
 
 
 > [!TIP]
-> <span data-ttu-id="4991f-108">Hvis værdien i feltet <STRONG>Overholdelse</STRONG> er større end 100, er tidsgrænsen i serviceaftalen overskredet.</span><span class="sxs-lookup"><span data-stu-id="4991f-108">If the value in the <STRONG>Compliance</STRONG> field is larger than 100, the time limit of the service level agreement has been exceeded.</span></span>
+> <span data-ttu-id="b7482-108">Hvis værdien i feltet <STRONG>Overholdelse</STRONG> er større end 100, er tidsgrænsen i serviceaftalen overskredet.</span><span class="sxs-lookup"><span data-stu-id="b7482-108">If the value in the <STRONG>Compliance</STRONG> field is larger than 100, the time limit of the service level agreement has been exceeded.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4991f-109">Se også</span><span class="sxs-lookup"><span data-stu-id="4991f-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b7482-109">Se også</span><span class="sxs-lookup"><span data-stu-id="b7482-109">See also</span></span>
 
-[<span data-ttu-id="4991f-110">Oversigt over serviceniveauaftaler</span><span class="sxs-lookup"><span data-stu-id="4991f-110">Service level agreements overview</span></span>](service-level-agreements.md)
+[<span data-ttu-id="b7482-110">Oversigt over serviceniveauaftaler</span><span class="sxs-lookup"><span data-stu-id="b7482-110">Service level agreements overview</span></span>](service-level-agreements.md)
 
   
 
