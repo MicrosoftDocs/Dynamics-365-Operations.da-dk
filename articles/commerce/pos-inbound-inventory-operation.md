@@ -3,7 +3,7 @@ title: Indgående lagerhandling i POS
 description: I dette emne beskrives egenskaberne for den indgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 manager: annbe
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710303"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971491"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -133,6 +133,18 @@ Visningen **Modtager nu** giver brugerne en fokuseret mulighed for at få vist, 
 Valideringer sker under modtagelsesprocessen for dokumentlinjerne. De indeholder valideringer for overlevering. Hvis en bruger forsøger at modtage mere lager, end der blev bestilt på en indkøbsordre, men overlevering ikke er konfigureret, eller det modtagne beløb overskrider den tolerance for overlevering, der er konfigureret for indkøbsordrelinjen, modtager brugeren en fejl og det er ikke tilladt at modtage for stort et antal.
 
 Overmodtagelse er ikke tilladt for flytteordredokumenter. Brugere vil altid modtage fejl, hvis de forsøger at modtage mere end, der er leveret til flytteforslagslinjen.
+
+### <a name="close-purchase-order-lines"></a>Lukke indkøbsordrelinjer
+
+Du kan lukke det resterende antal på en indgående indkøbsordre under modtagelsesprocessen, hvis afsenderen har bekræftet, at vedkommende ikke kan afsende det samlede antal, der er anmodet om. Til det formål skal firmaet være konfigureret til at tillade underlevering af indkøbsordrer. Derudover skal der defineres en underleveringstoleranceprocent for indkøbsordrelinjen.
+
+Hvis du vil konfigurere firmaet til at tillade underlevering af indkøbsordrer, skal du i Commerce Headquarters gå til **Indkøb og forsyning** > **Konfiguration** > **Indkøbs- og forsyningsparametre**. Under fanen **Levering** skal du aktivere parameteren **Acceptér underlevering**. Kør distributionsplanjobbet **1070** (**Kanalkonfiguration**) for at synkronisere indstillingsændringerne til kanaler.
+
+Underleveringstoleranceprocenter for en indkøbsordrelinje kan foruddefineres for produkter som del af produktkonfigurationer i Commerce Headquarters. Alternativt kan de angives eller overskrives på en bestemt indkøbsordre i Commerce Headquarters.
+
+Når en organisation har afsluttet konfigurationer af indkøbsordrens underlevering, vil brugerne af POS få vist en ny indstilling **Luk restantal** i ruden **Detaljer**, når de vælger en indgående indkøbsordrelinje via funktionen **Indgående lager**. Hvis brugeren lukker restantallet, foretager POS en validering for at kontrollere, at det antal, der lukkes, er inden for den procentvise tolerance for underlevering, der er defineret på indkøbsordrelinjen. Hvis underleveringstolerancen overskrides, vises der en fejlmeddelelse, og brugeren kan ikke lukke det resterende antal, før det tidligere modtagne antal plus **Modtager nu**-antallet opfylder eller overstiger det minimale antal, der skal modtages, ud fra toleranceprocenten for underlevering. 
+
+Når indstillingen **Luk restantal** er aktiveret for en indkøbsordrelinje, når brugeren fuldfører kvitteringen ved at bruge handlingen **Afslut modtagelse**, sendes der også en afslutningsanmodning til Commerce Headquarters, og eventuelle ikke-modtagne antal for denne ordrelinje annulleres. På dette tidspunkt betragtes linjen som fuldt modtaget. 
 
 ### <a name="receiving-location-controlled-items"></a>Modtage placeringsstyrede varer
 

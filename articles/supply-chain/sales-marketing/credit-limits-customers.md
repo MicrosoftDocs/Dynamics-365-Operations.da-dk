@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b94d187458a903669d4ec988c7f83737b797b1f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210174"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978984"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditmaksimum for debitorer
 
@@ -133,7 +133,7 @@ Brug formularen **Debitorer** til at angive kreditmaksimumbeløbet for en bestem
 
 **Hvordan kontrollerer jeg manuelt kreditmaksimum i salgsordrer?**
 
-I visse tilfælde skal du kontrollere en debitors kreditmaksimum manuelt. Du kan f.eks. manuelt kontrollere en kundes kreditmaksimum, før du begynder at indtaste en salgsordre. Du kan bruge formularen **Salgsordre** til at kontrollere kreditmaksimum manuelt. Du skal være medlem af en sikkerhedsrolle, der er tildelt rettigheden Vedligehold salgsordre SalesOrderMaintain), for at foretage ændringer i denne form.
+I visse tilfælde skal du kontrollere en debitors kreditmaksimum manuelt. Du kan f.eks. manuelt kontrollere en kundes kreditmaksimum, før du begynder at indtaste en salgsordre. Du kan bruge formularen **Salgsordre** til at kontrollere kreditmaksimum manuelt. Du skal være medlem af en sikkerhedsrolle, der er tildelt rettigheden (Vedligehold salgsordre SalesOrderMaintain), for at foretage ændringer i denne form.
 
 1.  Klik på **Salg og marketing** \> **Generelt** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklik på en salgsordre.
 

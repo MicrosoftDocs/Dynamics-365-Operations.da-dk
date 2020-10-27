@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b663f63552f9de4dbafc0cb71b4381db6d8dc99a
-ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
+ms.openlocfilehash: 6a6f53007f8bd04724c43c518c5a9b10856b68d7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888150"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976713"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
@@ -43,7 +43,7 @@ Konfigurer kreditorgrupper, kreditorer, posteringsprofiler, forskellige betaling
 
 [Oversigt over konfiguration af kreditor](accounts-payable-overview.md)
 
-[Regnskabsfordelinger og reskontrokladdeposter til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
+[Regnskabsfordelinger og kladdepostering for reskontro til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
 [Værdiregulering af udenlandsk valuta for kreditor og debitor](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 

@@ -3,7 +3,7 @@ title: Opret påmindelsesregler
 description: Dette emne indeholder oplysninger om påmindelser og forklarer, hvordan du opretter en påmindelsesregel, så du får besked om hændelser, f.eks. en dato, der nærmer sig, eller en bestemt ændring, der opstår.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075918"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970673"
 ---
 # <a name="create-alert-rules"></a>Opret påmindelsesregler
 
@@ -92,3 +92,14 @@ Påmindelser kan sendes eksternt ved hjælp af rammen for forretningshændelser.
 7. I oversigtspanelet **Vis påmindelse med** i feltet **Emne** skal du acceptere standardemneoverskriften til mailen i feltet eller angive et nyt emne. Teksten bruges som emneoverskrift i den e-mail, du modtager, når påmindelsen udløses. Hvis du vil sende påmindelsen som en forretningshændelse, skal du angive **Send eksternt** til **Ja**.
 8. Skriv en meddelelse efter eget valg i feltet **Meddelelse**. Teksten bruges som den meddelelse, du modtager, når påmindelsen udløses.
 9. Vælg **OK** for at gemme indstillingerne og oprette påmindelsesreglen.
+
+## <a name="limitations-and-workarounds"></a>Begrænsninger og løsninger
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Løsning til oprettelse af påmindelser til sekundære datakilder i en formular
+Der kan ikke oprettes påmindelser for visse sekundære datakilder i formularer. Når du f.eks. opretter påmindelser i formularen debitor- eller kreditorposteringsprofiler, er det kun felterne i hovedet (CustLedger eller VendLedger), der er tilgængelige, og ikke dimensions kontiene. Løsningen på denne begrænsning er at bruge **SysTableBrowser** til at åbne den pågældende tabel som primær datakilde. 
+1. Åbn tabellen i formularen **SysTableBrowser**.
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Opret en påmindelse fra formularen SysTableBrowser.
+

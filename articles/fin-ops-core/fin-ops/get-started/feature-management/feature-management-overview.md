@@ -3,7 +3,7 @@ title: Oversigt over funktionsstyring
 description: Dette emne beskriver funktionen Administration af funktioner, og hvordan du kan bruge den.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
-ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
+ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3499613"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967328"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -179,3 +179,24 @@ Funktions-flights er til/fra-parametre i realtid, som Microsoft kontrollerer. De
 
 ### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Kan funktioner blive flighted off, uden at kunden kender til det? 
 Ja, hvis en funktion har indflydelse på funktionaliteten af et miljø, som ikke har en funktionel effekt, kan de som standard aktiveres.
+
+### <a name="how-can-feature-enablement-be-checked-in-code"></a>Hvordan kan funktionsaktivering kontrolleres i kode?
+Brug metoden **isFeatureEnabled** på klassen **FeatureStateProvider**, og giv den en forekomst af funktionsklassen. Eksempel: 
+
+    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+
+### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Hvordan kan funktionsaktivering kontrolleres i metadata?
+Egenskaben **FeatureClass** kan bruges til at angive, at visse metadata er knyttet til en funktion. Det klassenavn, der bruges til funktionen, skal bruges, f.eks. **BatchContentionPreventionFeature**. Disse metadata er kun synlige i denne funktion. Egenskaben **FeatureClass** er tilgængelig i menuer, menupunkter, fasttekstværdier og tabel-/visningsfelter.
+
+### <a name="what-is-a-feature-class"></a>Hvad er en funktionsklasse?
+Funktioner i funktionsstyring er defineret som *funktionsklasser*. En funktionsklasse **implementerer IFeatureMetadata** og bruger funktionsklasseattributten til at identificere sig selv i arbejdsområdet Funktionsstyring. Der findes mange eksempler på tilgængelige funktionsklasser, som kan kontrolleres for aktivering i kode ved hjælp af **FeatureStateProvider**-API og i metadata ved hjælp af egenskaben **FeatureClass**. Eksempel: 
+
+    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+    
+### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Hvad er IFeatureLifecycle, der er implementeret af nogle funktionsklasser?
+IFeatureLifecycle er en Microsoft-intern mekanisme til angivelse af fasen for funktionslivscyklussen. Funktioner kan være:
+- PrivatePreview - skal have flight for at være synlig.
+- PublicPreview – vises som standard, men med en advarsel om, at funktionen er en prøveversion.
+- Frigivet - fuldt frigivet.
+

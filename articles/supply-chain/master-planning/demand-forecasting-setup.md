@@ -16,15 +16,15 @@ ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52e5f42f41a95897003f707f408a9d325dc31470
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203865"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982863"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -57,7 +57,7 @@ Behovsprognoser kan bruges til at lave prognoser om både afhængigt og uafhæng
 
 Der findes to metoder til oprettelse af et prognosegrundlag. Du kan bruge prognosemodeller over på historiske data, eller du kan blot kopiere de historiske data til prognosen. Feltet **Strategi for generering af prognose** gør det muligt at vælge mellem disse to metoder. Hvis du vil bruge prognosemodeller, skal du vælge **Azure Machine Learning**. 
 
-Ved at klikke på **Prognosedimensioner** i venstre rude på siden **Parametre til behovsprognoser**, kan du også vælge sættet af prognosedimensioner, der skal bruges, når der oprettes behovsprognoser. En prognosedimension angiver det detaljeniveau, prognosen er defineret for. Firma, sted og varefordelingsnøgle er obligatoriske prognosedimensioner, men du kan også oprette prognoser ud fra lagersted, lagerstatus, debitorgruppe, debitorkonto, land, delstat og vare plus alle varedimensionsniveauer. 
+Ved at klikke på **Prognosedimensioner** i venstre rude på siden **Parametre til behovsprognoser**, kan du også vælge sættet af prognosedimensioner, der skal bruges, når der oprettes behovsprognoser. En prognosedimension angiver det detaljeniveau, prognosen er defineret for. Firma, sted og varefordelingsnøgle er obligatoriske prognosedimensioner, men du kan også oprette prognoser ud fra lagersted, lagerstatus, debitorgruppe, debitorkonto, land/område, delstat og vare plus alle varedimensionsniveauer. 
 
 Du kan når som helst tilføje prognosedimensioner til listen over dimensioner, der bruges til behovsprognoser. Du kan også fjerne prognosedimensioner fra listen. Manuelle justeringer går dog tabt, hvis du tilføjer eller fjerner en prognosedimension. 
 

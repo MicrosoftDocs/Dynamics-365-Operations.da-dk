@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 1e7775e797708668a339b6b02ed822261406c829
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323663"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958787"
 ---
 # <a name="set-up-master-planning"></a>Definere varedisponering
 
@@ -120,7 +120,7 @@ Finplanlægning er en mere detaljeret planlægningsmetode, hvor hver operation i
 For hver enkelt plan kan du vælge, hvor langt ud i fremtiden de forskellige krav og andre overvejelser skal beregnes af varedisponeringen. Perioden kaldes en *tidshorisont*. For at opnå den bedste ydeevne i varedisponeringen anbefales det, at du justerer de forskellige tidshorisonter for at opfylde virksomhedens behov. For hver plan kan du finde tidshorisonterne i oversigtspanelet **Tidshorisonter i dage** på siden **Behovsplaner** (**Varedisponering \> Opsætning \>Planer \>Behovsplaner**).
 
 > [!NOTE]
-> Tidshorisonenter angiver, hvor langt ud i fremtiden de forskellige krav og andre overvejelser beregnes af varedisponeringen. De tidshorisonter, der vælges på denne side, tilsidesætter de tidshorisonter, der er defineret i disponeringsgruppen. Det betyder, at indstillingen for en tidshorisont angives til ja, og definitionen af dage til tilsidesætte den tidshorisont, der er defineret i disponeringsgruppen. Når der angives til Nej, vil tidshorisonten blive defineret i disponeringsgruppen. Hvis du endeligt ikke ønsker eller skal bruge en indstilling (f.eks. hvis du ikke vil bruge handlingsmeddelelser), skal du angive den til **Ja**og derefter angive tidshorisonten til **0** (nul) dage.
+> Tidshorisonenter angiver, hvor langt ud i fremtiden de forskellige krav og andre overvejelser beregnes af varedisponeringen. De tidshorisonter, der vælges på denne side, tilsidesætter de tidshorisonter, der er defineret i disponeringsgruppen. Det betyder, at indstilling af en tidshorisont angives til ja og definitionen af dage vil tilsidesætte den tidshorisont, der er defineret i disponeringsgruppen. Når der angives til Nej, vil tidshorisonten blive defineret i disponeringsgruppen. Hvis du endeligt ikke ønsker eller skal bruge en indstilling (f.eks. hvis du ikke vil bruge handlingsmeddelelser), skal du angive den til **Ja**og derefter angive tidshorisonten til **0** (nul) dage.
 
 ### <a name="coverage"></a>Disponering
 

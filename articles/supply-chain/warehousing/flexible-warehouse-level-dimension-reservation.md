@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: d75e6a8b48447a33156e03d50e990b8514bacda9
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652173"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970697"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Reservationspolitik for fleksibel dimension for lagerstedsniveau
 
@@ -233,6 +233,9 @@ Hvis et lagersteds arbejdselement består af linjer, der svarer til en hel palle
 ![Menupunktet i mobilenheden, hvor indstillingen Håndter efter id er angivet til Ja](media/Handle-by-LP-menu-item.png)
 
 Da funktionen **Håndter efter id** ikke understøtter arbejde, der dækker flere paller, er det bedre at have et separat arbejdselement til forskellige id'er. Hvis du vil bruge denne fremgangsmåde, skal du tilføje feltet **Ordre bekræftet id** som en arbejdshovedpause på siden **Arbejdsskabelon**.
+
+> [!NOTE]
+> For den ordrebekræftede arbejdsoprettelsesproces tildeles en værdi for "ordrebekræftet lagerdimension" til pluklinjerne, og der vil ikke være mulighed for at få vist id-værdien direkte. Kun *Brugerstyret*-proces understøttes, når du konfigurerer et menupunkt i mobilenheder.
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Eksempel på scenario: oprette og behandle en ordrebekræftet id-reservation
 

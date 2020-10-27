@@ -3,7 +3,7 @@ title: Konsistenskontrol af detailtransaktion
 description: Dette emne beskriver funktionen konsistenskontrol af transaktion i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: eb5c7389ba29d50232f9321e40bccceecd5f5fc6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
+ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265612"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968766"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenskontrol af detailtransaktion
 
@@ -47,12 +47,12 @@ Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af Commer
 
 - **Debitorkonto** – validerer, at debitorkontoen i transaktionstabellerne findes i debitormasteren i hovedkontoret.
 - **Linjetæller** – validerer, at antallet af linjer, som er angivet i transaktionshovedtabellen, svarer til antallet af linjer i salgstransaktionstabellerne.
-- **Pris inkl. moms** – validerer, at parameteren **Pris inkl. moms** er konsistent på tværs af transaktionslinjer.
-- **Betalingsbeløb** - validerer, at betalingsposterne svarer til betalingsbeløbet i hovedet.
-- **Bruttobeløb** – validerer, at bruttobeløbet i hovedet er summen af nettobeløbene på linjerne plus momsbeløbet.
-- **Nettobeløb** – validerer, at nettobeløbet i hovedet er summen af nettobeløbene på linjerne.
-- **Under-/overbetaling** – validerer, at differencen mellem bruttobeløbet i hovedet og betalingsbeløbet ikke overskrider konfigurationen af den maksimalt tilladte underbetaling/overbetaling.
-- **Rabatbeløb** – validerer, at rabatbeløbet på rabattabellerne og rabatbeløbet i tabellerne for transaktionslinjer er konsistente, og at rabatbeløbet i hovedet er summen af rabatbeløbene på linjerne.
+- **Pris inkl. moms** – validerer, at parameteren **prisen inkluderer moms** er konsistent på tværs af posteringslinjer, og prisen på salgslinjen er i overensstemmelse med prisen og omfatter konfiguration af moms og se-nummer.
+- **Betalingsbeløb** – validerer, at betalingsposterne svarer til betalingsbeløbet i overskriften, mens den faktor, der er konfigureret til at afrundes i finans, også indregnes.
+- **Bruttobeløb** – validerer, at bruttobeløbet i overskriften er summen af nettobeløbene på linjerne plus momsbeløbet, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
+- **Nettobeløb** – validerer, at nettobeløbet i overskriften er summen af nettobeløbene på linjerne, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
+- **Under-/overbetaling** – validerer, at differencen mellem bruttobeløbet i overskriften og betalingsbeløbet ikke overskrider konfigurationen af den maksimalt tilladte underbetaling/overbetaling, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
+- **Rabatbeløb** – validerer, at rabatbeløbet på rabattabellerne og rabatbeløbet i tabellerne for detailtransaktionslinjer er konsistente, og at rabatbeløbet i hovedet er summen af rabatbeløbene på linjerne, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
 - **Linjerabat** – validerer, at linjerabatten på transaktionslinjen er summen af alle linjer i rabattabellen, der svarer til transaktionslinjen.
 - **Gavekortvare** – Commerce understøtter ikke returnering af gavekortvarer. Saldoen på et gavekort kan dog udbetales kontant. Alle gavekortvarer, der behandles som en returlinje i stedet for en udbetalingslinje, mislykkes i bogføringsprocessen for opgørelsen. Valideringsprocessen for gavekortvarer er garanti for, at de eneste returneringslinjer for gavekortvarer i transaktionstabellerne er udbetalingslinjer for gavekort.
 - **Negativ pris** – validerer, at der ikke er nogen negative pristransaktionslinjer.
@@ -61,6 +61,7 @@ Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af Commer
 - **Serienummer** - validerer, at serienummeret findes i posteringslinjerne for varer, der styres af serienummer.
 - **Fortegn** - validerer, at fortegnet på antallet og nettobeløbet er det samme i alle posteringslinjerne.
 - **Forretningsdato** - validerer, at de økonomiske perioder for alle forretningsdatoerne for transaktionerne er åbne.
+- **Gebyrer** – validerer, at overskriften og linjegebyrbeløbet er i overensstemmelse med prisen, inklusive konfigurationen af moms og se-nummer.
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurere konsistenskontrollen
 

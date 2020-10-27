@@ -3,7 +3,7 @@ title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828938"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3929987"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere anmodninger i Teams
 
@@ -171,6 +171,22 @@ Hvis du er chef med direkte underordnede, kan du få vist dit teams godkendte og
 I kalenderen vises dine direkte underordnedes godkendte og afventende fravær.
 
 ![Fraværskalender i Teams-appen Personale](./media/hr-teams-leave-app-calendar.png)
+
+## <a name="troubleshooting"></a>Fejlfinding
+
+Hvis du har problemer med at logge på eller bruge appen Human Resources Teams, kan du prøve at følge disse fejlfindingsinstruktioner. Hvis du stadig har problemer efter fejlfinding, skal du kontakte Support. Du kan finde flere oplysninger under [Få support](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Der kan ikke logge på appen Human Resources i Teams
+
+Hvis du ikke kan logge på appen, er det muligt, at den konto, du bruger til at logge på Microsoft Teams, ikke er knyttet til en medarbejderpost i Dynamics 365 Human Resources. Kontakt systemadministratoren for at sikre, at din medarbejderpost er tilknyttet korrekt.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Der opstod en fejl under godkendelse af orlovsanmodninger i appen Human Resources i Teams
+
+Hvis du modtager en fejl under forsøg på at godkende orlovsanmodninger i appen Teams, skal du udføre følgende fejlfindingstrin:
+
+1. Kontrollér, at den konto, du bruger til at logge på Microsoft Teams, er den samme, som du bruger til at få adgang til Dynamics 365 Human Resources.
+
+2. Kontrollér, at du er en gyldig godkender af anmodningen, ved at kontrollere indstillingerne af arbejdsproces for orlovsgodkendelse. Du kan finde flere oplysninger om orlovsarbejdsprocesser i [Oprette en arbejdsgang for orlovsanmodning](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 

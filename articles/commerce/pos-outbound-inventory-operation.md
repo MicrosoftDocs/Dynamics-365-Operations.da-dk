@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646153"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971539"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -164,7 +164,7 @@ Funktionen **Gennemse** validerer følgende problemer i et udgående dokument:
 - **Lokationen er ikke angivet** – lokationen er ikke angivet for en lokationsstyret vare, hvor blank lokation ikke er tilladt.
 - **Slettede linjer** – ordren indeholder linjer, der er slettet af Commerce Headquarters (HQ), og som ikke er kendt for POS-programmet.
 
-Hvis du angiver parameteren **Aktivér automatisk validering** til **Ja** i **Commerce-parametre** > **Lager** > **Butikslager**, udføres valideringen automatisk, når du vælger funktionen **Fuldfør opfyldelse**.
+Hvis du angiver parameteren **Aktivér automatisk validering** til **Ja** i **Commerce-parametre** > **Lager** > **Handlinger for butikslager**, udføres valideringen automatisk, når du vælger funktionen **Fuldfør opfyldelse**.
 
 ### <a name="finish-fulfillment"></a>Fuldfør opfyldelse
 

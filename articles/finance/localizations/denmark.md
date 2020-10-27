@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Denmark
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b92d8fa84e9944a4699b911513bba5feb77f3ae6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2d87694bdc0ae7e35427e692e7f70a479463c69a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183539"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981871"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 

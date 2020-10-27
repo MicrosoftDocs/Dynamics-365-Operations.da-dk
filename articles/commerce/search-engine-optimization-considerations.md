@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7c7afed8e4620d5fe49ead47eb6c17d97d7492ad
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002792"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961580"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Overvejelser om optimering af søgeprogram (SEO) for webstedet
 
@@ -47,7 +47,7 @@ For at optimere indekseringen af søgemaskiner bruger gengivelsesstrukturen begg
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Indstillinger for side-SEO til interne prøveversioner, begrænset målgruppe og alle målgrupper
 
-Da Dynamics 365 Commerce understøtter "what you see is what you get" (WYSIWYG) i godkendte prøveversioner, kan forfattere forberede deres sideindhold uden at være bange for, at oplysningerne bliver synlige for besøgende på webstedet. Hvis en side skal udgives, men eksponeringen skal være begrænset, skal den have metakoden **NOINDEX**, så den ikke vil blive indekseret af søgemaskiner. Når siden er klar til alle målgrupper, skal alle grundlæggende SEO-metadata være til stede for at maksimere effektiviteten af søgeprogrammers indeksering. Derudover bør metakoden **NOLIMIT** være fjernet.
+Da Dynamics 365 Commerce understøtter "what you see is what you get" (WYSIWYG) i godkendte eksempelvisninger i den visuelle sidegenerator, kan forfattere forberede deres sideindhold uden at være bange for, at oplysningerne bliver synlige for besøgende på webstedet. Hvis en side skal udgives, men eksponeringen skal være begrænset, skal den have metakoden **NOINDEX**, så den ikke vil blive indekseret af søgemaskiner. Når siden er klar til alle målgrupper, skal alle grundlæggende SEO-metadata være til stede for at maksimere effektiviteten af søgeprogrammers indeksering. Derudover bør metakoden **NOLIMIT** være fjernet.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

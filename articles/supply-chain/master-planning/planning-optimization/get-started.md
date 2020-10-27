@@ -3,7 +3,7 @@ title: Introduktion til Planlægningsoptimering
 description: I dette emne beskrives, hvordan du kommer i gang med at bruge funktionen Planlægningsoptimering.
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/06/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,20 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04b39469ccf4f088bb33bdfc73ce40eece6f5f2e
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887258"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973470"
 ---
-# <a name="get-started-with-planning-optimization"></a>Introduktion til Planlægningsoptimering
+# <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Funktionen Planlægningsoptimering understøtter i øjeblikket ikke alle de funktioner, der er tilgængelige i det planlægningsprogram, der er indbygget i Microsoft Dynamics 365 Supply Chain Management. Det er derfor vigtigt, at du evaluerer, om det funktionssæt, der aktuelt er tilgængeligt i Planlægningsoptimering, opfylder dine behov. Funktionen Planlægningsoptimering er som standard ikke slået til i Dynamics Lifecycle Services (LCS). Derfor har du mulighed for at foretage evalueringen, før den aktiveres.
+Som [tidligere annonceret](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) er planlægningsoptimering planlagt til at erstatte det eksisterende indbyggede varedisponeringsprogram.
 
-Til sidst erstatter Planlægningsoptimering det eksisterende indbyggede planlægningsprogram Supply Chain Management.
+Hvis du i øjeblikket bruger det indbyggede varedisponeringsprogram, skal du starte med at planlægge din migrering til planlægningsoptimering nu. Det er vigtigt at starte migreringsprocessen med det samme, fordi dine handlinger kan blive påvirket, når udfasning gennemtvinges. For at undgå problemer i sidste øjeblik, når udfasning gennemtvinges, anbefaler vi kraftigt, at du fuldfører migreringen før 1. december 2020. 
+
+Funktionen Planlægningsoptimering understøtter i øjeblikket ikke alle de funktioner, der er tilgængelige i det planlægningsprogram, der er indbygget i Supply Chain Management. Det er derfor vigtigt, at du evaluerer, om det funktionssæt, der aktuelt er tilgængeligt i Planlægningsoptimering, opfylder dine behov. Planlægningsoptimeringsfunktionen er i øjeblikket ikke aktiveret som standard i Dynamics Lifecycle Services (LCS), så du har mulighed for at foretage din evaluering, før funktionen er slået til.
+
+> [!NOTE]
+> Du skal anmode om en undtagelse fra migrering til planlægningsoptimering, hvis din varedisponeringsproces ikke omfatter produktion (varedisponeringsgenererede produktionsordreforslag), og du har brug for det indbyggede varedisponeringsprogram ud over version 10.0.15. Startende med version 10.0.16 vises der en fejl i miljøer, når der køres indbygget varedisponering uden generering af produktionsordreforslag. Planlægningsoptimering skal bruges til alle nye installationer, der ikke genererer produktionsordreforslag under varedisponering. Ejere af eksisterende miljøer, der kører det indbyggede varedisponeringsprogram uden generering af produktionsordreforslag, modtager en mail med detaljer om undtagelsesprocessen. Det anbefales, at du arbejder med en partner for at evaluere og planlægge migreringen til planlægningsoptimering.
 
 Før du slår Planlægningsoptimering til, anbefales det på det kraftigste, at du evaluerer resultaterne af analysen af om Planlægningsoptimering passer. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
 

@@ -3,7 +3,7 @@ title: Kom i gang med tilføjelsesprogrammet til elektronisk fakturering
 description: Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med tilføjelsesprogrammet til elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 61933bb846383932d7dd73e9c4d3c2db7a515a98
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835927"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971466"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Kom i gang med tilføjelsesprogrammet til elektronisk fakturering
 
@@ -62,7 +62,7 @@ Du kan bruge tilføjelsesprogrammet til elektronisk fakturering sammen med din a
 Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende forudsætninger er opfyldt:
 
 - Adgang til din LCS-konto.
-- Et LCS-implementeringsprojekt, der omfatter Finance eller Supply Chain Management version 10.0.12 eller nyere.
+- Et LCS-implementeringsprojekt, der omfatter Finance eller Supply Chain Management version 10.0.13 eller nyere.
 - Adgang til din RCS-konto.
 - Slå globaliseringsfunktionen for din RCS-konto til via modulet **Funktionsstyring**. Du kan finde flere oplysninger i [Regulatory Configuration Services (RCS) – globaliseringsfunktioner](rcs-globalization-feature.md)
 - Opret en Key Vault-ressource og en lagerkonto i Azure. Du kan finde flere oplysninger i [Oprette en Azure Storage-konto og Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -85,16 +85,18 @@ Følgende illustration viser de fem vigtigste trin, du skal fuldføre i dette em
 ## <a name="lcs-setup"></a>LCS-opsætning
 
 1. Log på din LCS-konto.
-2. Vælg LCS-implementeringsprojektet. Projektet skal køre, før du kan vælge det
-3. Vælg **Installér et nyt tilføjelsesprogram** i oversigtspanelet **Tilføjelsesprogrammer for miljø**.
-4. Vælg **Indsendelse af forretningsdokumenter**.
-5. I dialogboksen **Konfigurer tilføjelsesprogram** skal du angive **091c98b0-a1c9-4b02-b62c-7753395ccabe** i feltet **AAD-program-id**. Denne værdi er en fast værdi.
-6. Angiv id'et for din Azure-abonnementskonto i feltet **AAD-lejer-id**.
+2. Vælg feltet **Styring af prøveversionsfunktion**, og i **Funktioner i offentlige prøveversioner**-feltgruppen skal du vælge **BusinessDocumentSubmission**.
+3. Markér feltet **Prøveversionsfunktion aktiveret**.
+4. Vælg LCS-implementeringsprojektet. Projektet skal køre, før du kan vælge det
+5. Vælg **Installér et nyt tilføjelsesprogram** i oversigtspanelet **Tilføjelsesprogrammer for miljø**.
+6. Vælg **Indsendelse af forretningsdokumenter**.
+7. I dialogboksen **Konfigurer tilføjelsesprogram** skal du angive **091c98b0-a1c9-4b02-b62c-7753395ccabe** i feltet **AAD-program-id**. Denne værdi er en fast værdi.
+8. Angiv id'et for din Azure-abonnementskonto i feltet **AAD-lejer-id**.
 
     ![Dialogboksen Konfigurer tilføjelsesprogram i LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Markér afkrydsningsfeltet for at acceptere vilkår og betingelser.
-8. Vælg **Installer**.
+9. Markér afkrydsningsfeltet for at acceptere vilkår og betingelser.
+10. Vælg **Installer**.
 
 ## <a name="rcs-setup"></a>RCS-opsætning
 
@@ -124,7 +126,7 @@ Under RCS-opsætningen skal du udføre disse opgaver:
 
     ![Feltet URI for Key Vault](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. Vælg **Tilføj** i feltet **Certifikater** , og angiv navnene på de digitale certifikater og Key Vault-hemmelighederne. Begge værdisæt er konfigureret på Key Vault-ressourcen i Azure.
+7. I oversigtspanelet **Certifikater** skal du vælge **Tilføj** for at angive alle de digitale certifikatnavne og Key Vault-hemmeligheder, der skal bruges til at oprette forbindelser, der er tillid til. I kolonnen **Type** kan du angive, om den er et certifikat eller en hemmelighed. Begge værdisæt er konfigureret på Key Vault-ressourcen i Azure.
 
     ![Tilføje certifikater](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -132,9 +134,9 @@ Under RCS-opsætningen skal du udføre disse opgaver:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Konfigurere RCS-integrationen med serveren for tilføjelsesprogrammet til elektronisk fakturering
 
-1. Gå til arbejdsområdet **Globaliseringsfunktioner**, og vælg **Parametre til elektronisk rapportering** i sektionen **Relaterede links**.
+1. Gå til arbejdsområdet **Globaliseringsfunktioner**, og vælg **Parametre til elektronisk rapportering** i sektionen **Relaterede indstillinger**.
 2. Vælg **Klik her for at oprette forbindelse til Lifecycle Services**. Hvis du ikke vil oprette forbindelse til LCS, skal du vælge **Annuller**.
-3. På fanen **Tilføjelsesprogram til elektronisk fakturering** skal du angive `https://businessdocumentsubmission.us.operations365.dynamics.com/` i feltet **URI for tjenesteslutpunkt**.
+3. Under fanen **e-faktureringstjenester** skal du angive værdien i overensstemmelse med de tilgængelige geografiske områder i feltet **Serviceslutpunkt-URI**: `https://businessdocumentsubmission.us.operations365.dynamics.com/` eller `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. Kontrollér, at feltet **Program-id** viser id'et **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Denne værdi er en fast værdi.
 5. Angiv id'et for din LCS-abonnementskonto i feltet **LCS-miljø-id**.
 

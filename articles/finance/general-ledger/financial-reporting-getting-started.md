@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835104"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967252"
 ---
 # <a name="get-started-with-financial-reporting"></a>Introduktion til Financial Reporting 
 
@@ -149,7 +149,12 @@ Problem 1: Report Designer starter ikke, når du vælger **Ny** eller **Rediger*
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til. I området, der er angivet med Sikkerhedsniveau for denne zone, skal du ændre indstillingen til **Mellem-Lav**.
 * Deaktiver blokering af pop op-vinduer i din browser.
 * Der kræves arbejdsstationer for at installere Microsoft .NET Framework 4.6.2 eller nyere. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Hvis du ikke kan logge ind med Chrome, skal du prøve at følge de opsætningstrin, der er beskrevet i punkt 1 ved hjælp af Internet Explorer eller Edge. 
+* Hvis du bruger Microsoft Edge med Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. 
+     1. Åbn en ny browser i Microsoft Edge.
+     2. Angiv **edge://flags**, og vælg **Enter**.
+     3. Søg efter indstillingen **ClickOnce Support**, eller brug dette direkte link: **edge://flags/#edge-click-once**.
+     4. Angiv indstillingen i rullemenuen til **Aktiveret**.
+     5. Vælg **Genstart browser**.
 
 Problem 2: Brugeren har ikke fået tildelt de krævede tilladelser til at bruge Financial Reporting. 
 

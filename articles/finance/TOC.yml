@@ -70,6 +70,8 @@
                   items:
                     - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (januar 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (november 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (oktober 2020)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: Flytte LCS-implementeringsprojekter til forskellige Azure AD-lejere
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: Flyt LCS-implementeringsprojekter fra det lokale miljø til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: Flere LCS-projekter og produktionsmiljøer på én Azure AD-lejer
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Kreditor
@@ -224,9 +228,19 @@
               items:
                 - name: Oversigt over fakturasammenholdelse for kreditor
                   href: accounts-payable/accounts-payable-invoice-matching.md
-                - name: Konfigurere validering af fakturasammenholdelse
+                - name: Konfigurere validering af kreditorfakturasammenholdelse
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Regnskabsfordelinger og reskontrokladdeposter til kreditorfakturaer
+            - name: Automatisering af kreditorfaktura
+              items:
+                - name: Oversigtsprocesser for automatiseret kreditorfakturering
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Opsætningsindstillinger for automatisering af kreditorfaktura
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Sende fakturaer til arbejdsgangsystemet og sammenholde produktkvitteringslinjer
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Få vist resultater af automatisering af kreditorfaktura
+                  href: accounts-payable/view-automated-vendor-invoice.md
+            - name: Regnskabsfordelinger og kladdepostering for reskontro til kreditorfakturaer
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturasammenholdelse og interne indkøbsordrer
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: Arbejdsområde for kreditorsamarbejdsfakturering
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Automatisering af kreditorfaktura
+            - name: Fakturaautomatisering for scannede dokumenter
               href: accounts-payable/vendor-invoice-automation.md
             - name: Mæglerkontraktstyring
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Opsætte og generere aldersfordelte oplysninger om debitorer
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Aldersfordelt rapport for kunder
+              href: accounts-receivable/customer-aging.md
             - name: Oprette en afskrivningskladde for en debitor
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Administration af avancerede noter
@@ -792,6 +808,10 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Lineær afskrivning for levetiden
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Aktivleasing
+          items:
+            - name: Start her med aktivleasing
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Finans
           items:
             - name: Oversigt over finans
@@ -1884,7 +1904,7 @@
                   items:
                     - name: Oversigt over GST for Indien
                       href: localizations/apac-ind-gst.md
-                    - name: Nyheder eller ændringer i forbindelse med lokalisering af APAC GST for Indien
+                    - name: Nyheder eller ændringer i forbindelse med lokalisering af GST for Indien
                       items:
                         - name: Nyheder eller ændringer i 10.0.0
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,6 +1932,8 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Nyheder eller ændringer i 10.0.12
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: Nyheder eller ændringer i 10.0.13
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: Indiske GST-referencegrupper
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-integration for kasseapparater
@@ -2020,9 +2042,11 @@
                           href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                         - name: 'Eksportere tjenester, der er momsfrie'
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
-                    - name: Lagertransaktion
+                    - name: Lagerbeholdningstransaktion
                       items:
-                        - name: 'Lagerflytteordrer, der har moms på flytteprisen'
+                        - name: Ordrer til overførsler af lagerbeholdning
+                          href: localizations/apac-ind-stock-transfer.md
+                        - name: 'Flytteordrer til lagerbeholdning, der har moms på flytteprisen'
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Debitorbetalingstransaktion
                       items:
@@ -2076,8 +2100,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Ofte stillede spørgsmål om momsgrænser
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Lageroverførsler
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Italien
               items:
                 - name: Oversigt for Italien
@@ -2752,7 +2774,7 @@
               items:
                 - name: Oversigt for Thailand
                   href: localizations/thailand.md
-                - name: 'Lagerkort, rapporter'
+                - name: 'Lagerbeholdningskort, rapporter'
                   href: localizations/apac-tha-stock-card-reports.md
                 - name: Erstatnings-/korrektionsmomsfaktura
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
