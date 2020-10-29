@@ -238,8 +238,10 @@
                   href: accounts-payable/vnd-invoice-set-up-options.md
                 - name: Sende fakturaer til arbejdsgangsystemet og sammenholde produktkvitteringslinjer
                   href: accounts-payable/submit-invoice-workflow-automatically.md
-                - name: Få vist resultater af automatisering af kreditorfaktura
+                - name: Se resultater af automatisering af kreditorfaktura
                   href: accounts-payable/view-automated-vendor-invoice.md
+                - name: Arbejdsområde for kreditorfakturapost
+                  href: accounts-payable/vendor-invoices-workspace.md
             - name: Regnskabsfordelinger og kladdepostering for reskontro til kreditorfakturaer
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturasammenholdelse og interne indkøbsordrer
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Se kladdeposteringer og -transaktioner
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: Rapport over råbalance med transaktionsdetaljer
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Journalisere bogførte kladdeposter
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Værdiregulering af valuta i et konsolideret regnskab
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Oprette en avanceret finanspost i den offentlige sektor
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Rapport over råbalance med transaktionsdetaljer
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Bruge grænser for kontantstyring
                   href: public-sector/cash-control.md
                 - name: Årsafslutningen i den offentlige sektor
@@ -1398,6 +1400,8 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e-certifikater
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: NF-e-brugerdefineret certifikatvalidering
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'Konfigurere, importere og kontrollere NF-e-XML-dokumenter og DANFE'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: Konfigurere NF-e-parametre for forbund
@@ -2080,11 +2084,13 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Momsundersøgelse
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: Rydde op i TaxDocumentJSON-tabellen
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Momsprogram
                   items:
                     - name: Oversigt over momsprogram
                       href: general-ledger/tax-engine.md
-                    - name: Importér konfiguration
+                    - name: Importere konfiguration
                       href: general-ledger/tax-engine-import-configuration.md
                     - name: Avanceret formeldesigner
                       href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
@@ -2651,7 +2657,7 @@
                         - name: Oversigt over lagerprofil
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Konfigurere en lagerprofil
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Bruge en lagerprofil i dokumenter og forespørgsler
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering
