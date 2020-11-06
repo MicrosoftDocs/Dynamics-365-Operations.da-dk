@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96ed6d01e22ee2cbc5b3b2be8168fbb43904c89
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 07426eee2a79f21d7e91a82a1832cfdb35fd8683
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212704"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017338"
 ---
 # <a name="inventory-statuses"></a>Lagerstatusser
 
@@ -42,10 +42,10 @@ Her er nogle eksempler på måder, du kan bruge lagerstatusser på:
 
 En lagerstatus er en af dimensionerne i lagringsdimensionsgruppen. Lagerstatusser kan kategoriseres som disponible eller ikke-gængelige, og du kan bruge parameteren **Lagerspærring** til at spærre varer, der har en ikke-tilgængelig lagerstatus. Varer, der har status spærret, betragtes som fysiske lagervarer, og de kan ikke bruges i en produktionsordre, salgsordre, overflytningsordre eller udgående transaktion.
 
-Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder **Klar**, en ikke-tilgængelig status, som hedder **Beskadiget** og en spærret status, som hedder **Spærret**. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til **Beskadiget** på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til **Spærret**. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Supply Chain Management bruge placeringsinstruktioner og arbejdsskabeloner til at vise oplysninger om en passende placering eller en række placeringer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen **Reservation** på siden **Lagertransaktioner**.
+Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder **Klar** , en ikke-tilgængelig status, som hedder **Beskadiget** og en spærret status, som hedder **Spærret**. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til **Beskadiget** på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til **Spærret**. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Supply Chain Management bruge placeringsinstruktioner og arbejdsskabeloner til at vise oplysninger om en passende placering eller en række placeringer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen **Reservation** på siden **Lagertransaktioner**.
 
-Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med status **Ødelagt**, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
+Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med status **Ødelagt** , og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
 
 Når du har oprettet lagerstatusser, kan du angive standardlagerstatus for et sted, vare og lagersted. Du kan også angive en standardstatus for salg, overdragelse og indkøbsordrer. Standardstatus for salgsordrer og udgående overflytningsordre kan ikke have indstillingen **Lagerspærring** angivet til **Ja**. Lagerstatus, der er nedarvet fra standardindstillinger for et websted, lagersted, vare, indkøbsordre, flytteordre eller salgsordre, kan ændres ved hjælp af den mobile enhed, eller på indkøbsordren, salgsordren eller flytteforslagslinjen.
 
-For at planlægge dækningen for varer, der har status af disponibel lagerbeholdning, skal du vælge indstillingen **Disponer pr. dimension** for en lagerdimension på siden **Lagringsdimensionsgrupper**. Når du åbner guiden **Varedisponering**, vises varer med en disponibel status på siden **Status**. Du kan oprette disponeringsindstillinger for disse varer ved at vælge ID for lagerstatus for de disponible lagerstatusser. Baseret på disponeringsindstillingerne, kan du beregne varebehovene og budgettere udbud og efterspørgsel for tilgængelige varer under varedisponering. Du kan ikke oprette en opsætning af en varedisponering, der har spærret lagerstatus. Du kan også bruge siden **Varedisponering** til at oprette eller redigere disponeringsparametrene for varen.
+For at planlægge dækningen for varer, der har status af disponibel lagerbeholdning, skal du vælge indstillingen **Disponer pr. dimension** for en lagerdimension på siden **Lagringsdimensionsgrupper**. Når du åbner guiden **Varedisponering** , vises varer med en disponibel status på siden **Status**. Du kan oprette disponeringsindstillinger for disse varer ved at vælge ID for lagerstatus for de disponible lagerstatusser. Baseret på disponeringsindstillingerne, kan du beregne varebehovene og budgettere udbud og efterspørgsel for tilgængelige varer under varedisponering. Du kan ikke oprette en opsætning af en varedisponering, der har spærret lagerstatus. Du kan også bruge siden **Varedisponering** til at oprette eller redigere disponeringsparametrene for varen.

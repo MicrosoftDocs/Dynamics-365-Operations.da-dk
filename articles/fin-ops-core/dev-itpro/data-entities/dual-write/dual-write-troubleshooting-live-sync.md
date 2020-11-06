@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275411"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997296"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Fejlfinding i forbindelse med problemer med direkte synkronisering
 
@@ -82,7 +81,7 @@ For at løse problemet skal du tildele den korrekte sikkerhedsrolle til teamet f
 
     ![Organisationstilknytning](media/mapped_business_unit.png)
 
-2. Log på miljøet i den modelbaserede app i Dynamics 365, naviger til **Indstilling \> Sikkerhed**, og find teamet for den tilknyttede virksomhedsenhed.
+2. Log på miljøet i den modelbaserede app i Dynamics 365, naviger til **Indstilling \> Sikkerhed** , og find teamet for den tilknyttede virksomhedsenhed.
 
     ![Team for den tilknyttede virksomhedsenhed](media/setting_security_page.png)
 
@@ -98,7 +97,7 @@ For at løse problemet skal du tildele den korrekte sikkerhedsrolle til teamet f
 
 Du kan få vist følgende fejlmeddelelse, når du opretter data i en Finance and Operations-app:
 
-*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Der kunne ikke oprettes nyttedata for enheden CustCustomerV3Entity**", "logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Der opstod en fejl under oprettelse af nyttedata med følgende fejlmeddelelse om ugyldig URI: URI'en er tom".}\],"isErrorCountUpdated":true}*
+*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":" **Der kunne ikke oprettes nyttedata for enheden CustCustomerV3Entity** ", "logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Der opstod en fejl under oprettelse af nyttedata med følgende fejlmeddelelse om ugyldig URI: URI'en er tom".}\],"isErrorCountUpdated":true}*
 
 Sådan ser fejlen ud i den modelbaserede app i Dynamics 365:
 

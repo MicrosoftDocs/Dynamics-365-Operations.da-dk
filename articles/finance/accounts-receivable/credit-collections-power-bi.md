@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598052"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040047"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-indhold til styring af kredit og inkasso
 
@@ -51,6 +51,9 @@ Følgende konfiguration skal være fuldført for de data, der skal vises i **Kun
 3. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**.
 4. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
 5. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **CustCollectionsBIMeasurementsV2**.
+
+>[!NOTE] 
+> Definitioner af forældelsesperioder skal konfigureres i **Debitorparametre > Rykkere > Inkassostandarder** for at aktivere forældelsesdata i Power BI-indholdet.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 

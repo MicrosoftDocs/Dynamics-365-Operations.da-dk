@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c78752aa1544b12f61071fa06617af4ac2809233
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172986"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998102"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Installation med to skrivninger fra Lifecycle Services
 
@@ -50,7 +49,7 @@ Følg disse trin for at oprette forbindelsen med to skrivninger.
 3. Vælg versionen. 
 4. Vælg topologien. Hvis der kun er én tilgængelig topologi, vælges den automatisk.
 5. Afslut de første trin i guiden **Installationsindstillinger**.
-6. Udfør ét af følgende trin på fanen **Common Data Service**:
+6. Udfør ét af følgende trin på fanen **Common Data Service** :
 
     - Hvis der allerede er klargjort et Common Data Service-miljø til din lejer, kan du vælge det.
 
@@ -75,7 +74,7 @@ Følg disse trin for at oprette forbindelsen med to skrivninger.
         ![Common Data Service-fanen, når din lejer ikke allerede har et Common Data Service-miljø](../dual-write/media/lcs_setup_2.png)
 
 7. Afslut de resterende trin i guiden **Installationsindstillinger**.
-8. Når miljøet har status **Installeret**, skal du åbne siden med miljødetaljer. Afsnittet med **Common Data Service-miljøoplysninger** viser navnene på Finance and Operations-miljøet og det sammenkædede Common Data Service-miljø.
+8. Når miljøet har status **Installeret** , skal du åbne siden med miljødetaljer. Afsnittet med **Common Data Service-miljøoplysninger** viser navnene på Finance and Operations-miljøet og det sammenkædede Common Data Service-miljø.
 
     ![Afsnittet med Common Data Service-miljøoplysninger](../dual-write/media/lcs_setup_3.png)
 

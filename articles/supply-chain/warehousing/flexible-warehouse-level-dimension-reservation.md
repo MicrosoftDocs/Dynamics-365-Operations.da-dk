@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReservationHierarchy
+ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d75e6a8b48447a33156e03d50e990b8514bacda9
-ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
+ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970697"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017638"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Reservationspolitik for fleksibel dimension for lagerstedsniveau
 
@@ -70,9 +70,9 @@ Når niveauet **Batchnummer** i hierarkiet vælges, vil alle dimensioner over de
 >
 > **Batchnummer** og **id** er de eneste niveauer i hierarkiet, der er åbne for den fleksible reservationspolitik. Du kan med andre ord ikke markere afkrydsningsfeltet **Tillad reservation i behovsordre** for niveauet **Lokation** eller **Serienummer**.
 >
-> Hvis reservationshierarkiet indeholder serienummerdimensionen (der altid skal være under niveauet **Batchnummer**), og hvis du har aktiveret batchspecifik reservation for batchnummeret, fortsætter systemet med at håndtere serienummerreservation og plukoperationer baseret på de regler, der gælder for reservationspolitikken "Serie-under\[lokation\]".
+> Hvis reservationshierarkiet indeholder serienummerdimensionen (der altid skal være under niveauet **Batchnummer** ), og hvis du har aktiveret batchspecifik reservation for batchnummeret, fortsætter systemet med at håndtere serienummerreservation og plukoperationer baseret på de regler, der gælder for reservationspolitikken "Serie-under\[lokation\]".
 
-Du kan på et hvilket som helst tidspunkt tillade batchspecifik reservation for et eksisterende reservationshierarki af typen "Batch-under\[lokation\]" i din installation. Denne ændring påvirker ikke reservationer og åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre**, hvis der findes lagertransaktioner af afgangstypen **Reserveret bestilt**, **Reserveret fysisk** eller **Bestilt** for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
+Du kan på et hvilket som helst tidspunkt tillade batchspecifik reservation for et eksisterende reservationshierarki af typen "Batch-under\[lokation\]" i din installation. Denne ændring påvirker ikke reservationer og åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre** , hvis der findes lagertransaktioner af afgangstypen **Reserveret bestilt** , **Reserveret fysisk** eller **Bestilt** for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
 
 > [!NOTE]
 > Hvis en vares eksisterende reservationshierarki ikke tillader batchspecifikation i ordren, kan du igen tildele det til et reservationshierarki, der tillader batchspecifikation, forudsat at strukturen i hierarkiniveauet er den samme i begge hierarkier. Brug funktionen **Skift reservationshierarki til varer** til at udføre omfordelingen. Denne ændring kan være relevant, når du vil forhindre fleksibel batchreservation af et undersæt af batchsporede varer, men tillade den for resten af produktsortimentet.
@@ -102,8 +102,8 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
 1. Gå til **Lokationsstyring** \> **Opsætning** \> **Lager \> Reservationshierarki**.
 2. Vælg **Ny**.
-3. Angiv et navn i feltet **Navn** (f.eks. **Batchfleks**).
-4. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. **Batch under fleksibel**).
+3. Angiv et navn i feltet **Navn** (f.eks. **Batchfleks** ).
+4. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. **Batch under fleksibel** ).
 5. I feltet **Valgt** skal du vælge **Serienummer** og **Ejer** og derefter vælge den venstre pileknap for at flytte dem til feltet **Tilgængelig**.
 6. Vælg **OK**.
 7. I rækken med dimensionsniveau for **Batchnummer** skal du markere afkrydsningsfeltet **Tillad reservation i behovsordre**. Niveauerne **Nummerplade** og **Lokation** vælges automatisk, og du kan ikke fjerne markeringerne i afkrydsningsfelterne for dem.
@@ -132,21 +132,21 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 2. Vælg **Ny**.
 3. Angiv **US-003** i feltet **Debitorkonto** i salgsordrehovedet.
 4. Tilføj en linje for den nye vare, og angiv **10** som antal. Sørg for, at feltet **Lagersted** er angivet til **24**.
-5. Vælg **Lager** i oversigtspanelet **Salgsordrelinjer**, og vælg derefter **Batchreservation** i gruppen **Vedligehold**. På siden **Batchreservation** vises en liste over batches, der er tilgængelige til reservation for ordrelinjen. I dette eksempel vises antallet **20** for batchnummer **B11** og antallet **10** for batchnummer **B22**. Bemærk, at der ikke kan opnås adgang til siden **Batchreservation** fra en linje, hvis varen på linjen er tilknyttet reservationshierarkiet "Batch-under\[lokation\]", medmindre den er konfigureret til at tillade batchspecifik reservation.
+5. Vælg **Lager** i oversigtspanelet **Salgsordrelinjer** , og vælg derefter **Batchreservation** i gruppen **Vedligehold**. På siden **Batchreservation** vises en liste over batches, der er tilgængelige til reservation for ordrelinjen. I dette eksempel vises antallet **20** for batchnummer **B11** og antallet **10** for batchnummer **B22**. Bemærk, at der ikke kan opnås adgang til siden **Batchreservation** fra en linje, hvis varen på linjen er tilknyttet reservationshierarkiet "Batch-under\[lokation\]", medmindre den er konfigureret til at tillade batchspecifik reservation.
 
     > [!NOTE]
     > Hvis du vil reservere et bestemt batch til en salgsordre, skal du bruge siden **Batchreservation**.
     >
     > Hvis du angiver batchnummeret direkte på salgsordrelinjen, fungerer systemet, som om du har angivet en bestemt batchværdi for en vare, der er underlagt reservationspolitikken "Batch-under\[lokation\]". Når du gemmer linjen, vil du modtage en advarselsmeddelelse. Hvis du bekræfter, at batchnummeret skal angives direkte på ordrelinjen, håndteres linjen ikke af den almindelige lokationsstyringslogik.
     >
-    > Hvis du reserverer antallet fra siden **Reservation**, reserveres der ikke noget bestemt batch, og udførelsen af lagerdrift for linjen følger de regler, der gælder i henhold til reservationspolitikken "Batch-under\[lokation\]".
+    > Hvis du reserverer antallet fra siden **Reservation** , reserveres der ikke noget bestemt batch, og udførelsen af lagerdrift for linjen følger de regler, der gælder i henhold til reservationspolitikken "Batch-under\[lokation\]".
 
     Generelt er funktionen og interaktionen med denne side meget lig den måde, der arbejdes og interageres med varer, som har et tilknyttet reservationshierarki af typen "Batch-over\[lokation\]". Der gælder dog følgende undtagelser:
 
-    - Oversigtspanelet **Batchnumre bundet til kildelinje** viser de batchnumre, der er reserveret til ordrelinjen. Batchværdierne i gitteret vises under hele udførelsescyklussen for ordrelinjen, herunder lagerstedets behandlingsstadier. Derimod vises der i oversigtspanelet **Oversigt** en almindelig ordrelinjereservation (dvs. reservation, der udføres for dimensionerne over niveauet **Lokation**) i gitteret op til det punkt, hvor der oprettes lagerstedsarbejde. Arbejdsenheden overtager derefter linjereservationen, og linjereservationen vises ikke længere på siden. Oversigtspanelet **Batchnumre bundet til kildelinje** sikrer, at salgsordrebehandleren kan få vist de batchnumre, der er bundet til kundens ordre på et tidspunkt i løbet livscyklussen op til og med fakturering.
+    - Oversigtspanelet **Batchnumre bundet til kildelinje** viser de batchnumre, der er reserveret til ordrelinjen. Batchværdierne i gitteret vises under hele udførelsescyklussen for ordrelinjen, herunder lagerstedets behandlingsstadier. Derimod vises der i oversigtspanelet **Oversigt** en almindelig ordrelinjereservation (dvs. reservation, der udføres for dimensionerne over niveauet **Lokation** ) i gitteret op til det punkt, hvor der oprettes lagerstedsarbejde. Arbejdsenheden overtager derefter linjereservationen, og linjereservationen vises ikke længere på siden. Oversigtspanelet **Batchnumre bundet til kildelinje** sikrer, at salgsordrebehandleren kan få vist de batchnumre, der er bundet til kundens ordre på et tidspunkt i løbet livscyklussen op til og med fakturering.
     - Ud over at reservere en bestemt batch kan en bruger manuelt vælge batchens specifikke lokation og id i stedet for at lade systemet vælge dem automatisk. Denne funktion er relateret til designet af den ordrebekræftede batchreservationsmekanisme. Når et batchnummer reserveres for en vare i henhold til reservationspolitikken "Batch-under\[lokation\], skal systemet som tidligere nævnt reservere alle dimensioner til og med lokation. Lagerstedsarbejdet vil derfor indeholde de samme lagringsdimensioner, der blev reserveret af de brugere, der har arbejdet med ordrerne, og de repræsenterer muligvis ikke altid den varelagringsplacering, der er praktisk eller endda mulig for plukoperationer. Hvis ordrebehandlere er opmærksomme på lagerbegrænsningerne, kan det være en god ide manuelt at vælge de specifikke lokationer og id'er, når de reserverer en batch. I dette tilfælde skal brugeren bruge funktionen **Vis dimensioner** i sidehovedet og tilføje lokationen og id'et i gitteret i oversigtspanelet **Oversigt**.
 
-6. På siden **Batchreservation** skal du vælge linjen for batch **B11** og derefter vælge **Reserver linje**. Der er ingen foruddefineret logik ved tildeling af lokationer og id'er under automatisk reservation. Du kan angive antallet manuelt i feltet **Reservation**. Bemærk, at oversigtspanelet **Batchnumre bundet til kildelinje**, batch **B11** er vist som **Bindende**.
+6. På siden **Batchreservation** skal du vælge linjen for batch **B11** og derefter vælge **Reserver linje**. Der er ingen foruddefineret logik ved tildeling af lokationer og id'er under automatisk reservation. Du kan angive antallet manuelt i feltet **Reservation**. Bemærk, at oversigtspanelet **Batchnumre bundet til kildelinje** , batch **B11** er vist som **Bindende**.
 
     ![Tilknytning af et bestemt batchnummer til en salgsordrelinje på siden Batchreservation](media/Batch-reservation-form-with-order-committed-reservation.png)
 
@@ -161,8 +161,8 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
 8. Gennemse varens lagertransaktioner, der er relateret til reservationen af salgsordrelinjen.
 
-    - En transaktion, hvor feltet **Reference** er angivet til **Salgsordre**, og feltet **Afgang** er angivet til **Reserveret fysisk**, repræsenterer ordrelinjereservationen for lagerdimensionerne over niveauet **Lokation**. Ifølge varens lagerreservationshierarki er disse dimensioner lokation, lagersted og lagerstatus.
-    - En transaktion, hvor feltet **Reference** er angivet til **Ordrebekræftet reservation**, og feltet **Afgang** er angivet til **Reserveret fysisk**, repræsenterer ordrelinjereservationen for den specifikke batch og alle lagerdimensionerne over den. Ifølge varens lagerreservationshierarki er disse dimensioner batchnummer og lokation. I dette eksempel er lokationen **Bulk-001**.
+    - En transaktion, hvor feltet **Reference** er angivet til **Salgsordre** , og feltet **Afgang** er angivet til **Reserveret fysisk** , repræsenterer ordrelinjereservationen for lagerdimensionerne over niveauet **Lokation**. Ifølge varens lagerreservationshierarki er disse dimensioner lokation, lagersted og lagerstatus.
+    - En transaktion, hvor feltet **Reference** er angivet til **Ordrebekræftet reservation** , og feltet **Afgang** er angivet til **Reserveret fysisk** , repræsenterer ordrelinjereservationen for den specifikke batch og alle lagerdimensionerne over den. Ifølge varens lagerreservationshierarki er disse dimensioner batchnummer og lokation. I dette eksempel er lokationen **Bulk-001**.
 
 9. Vælg **Lagersted** \> **Handlinger** \> **Frigiv til lagersted** i salgsordrehovedet. Ordrelinjen er nu i bølge, og der oprettes en belastning og et arbejde.
 
@@ -177,7 +177,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
         ![Lagersteds lagertransaktion for arbejde, der stammer fra ordrebekræftet reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-    - Når arbejdet er oprettet, fjernes varens lagertransaktion, hvor feltet **Reference** er angivet til **Ordrebekræftet reservation**. Lagertransaktionen, hvor feltet **Reference** er angivet til **Arbejde**, indeholder nu den fysiske reservation af lagerdimensionerne for alle antal.
+    - Når arbejdet er oprettet, fjernes varens lagertransaktion, hvor feltet **Reference** er angivet til **Ordrebekræftet reservation**. Lagertransaktionen, hvor feltet **Reference** er angivet til **Arbejde** , indeholder nu den fysiske reservation af lagerdimensionerne for alle antal.
 
         Lagerdrift kan fortsætte med at håndtere udførelsen af arbejdet på sædvanlig vis. Vejledningen på mobilenheden giver dog arbejderen besked på at vælge et bestemt batchnummer. I lagermiljøer med id-styrede lokationer kan en arbejder, når vedkommende når en lokation, der gemmer samme batch med flere id'er, plukke fra et hvilket som helst id, der ikke allerede er reserveret (f.eks. af en anden ordrebekræftet reservation eller arbejde, der stammer fra en reservation af den pågældende type).
 
@@ -212,13 +212,13 @@ Hvis du vil aktivere reservation af id på en ordre, skal du markere afkrydsning
 
 ![Siden med lagerreservationshierarkier for et fleksibelt id-reservationshierarki](media/Flexible-LP-reservation-hierarchy.png)
 
-Du kan aktivere id-reservation på ordren på et hvilket som helst tidspunkt i din installation. Denne ændring påvirker ikke reservationer eller åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre**, hvis der findes åbne udgående lagertransaktioner med afgangsstatus *I bestilling*, *Reserveret bestilt* eller *Reserveret fysisk* for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
+Du kan aktivere id-reservation på ordren på et hvilket som helst tidspunkt i din installation. Denne ændring påvirker ikke reservationer eller åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre** , hvis der findes åbne udgående lagertransaktioner med afgangsstatus *I bestilling* , *Reserveret bestilt* eller *Reserveret fysisk* for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
 
-Selvom afkrydsningsfeltet **Tillad reservation ved behovsordre** er markeret for niveauet **Id**, er det stadig muligt *ikke* at reservere et bestemt id i ordren. I dette tilfælde gælder den standardlagerlogik for lagerstedsoperationer, der er gyldig for reservationshierarkiet.
+Selvom afkrydsningsfeltet **Tillad reservation ved behovsordre** er markeret for niveauet **Id** , er det stadig muligt *ikke* at reservere et bestemt id i ordren. I dette tilfælde gælder den standardlagerlogik for lagerstedsoperationer, der er gyldig for reservationshierarkiet.
 
 Hvis du vil reservere et bestemt id, skal du bruge en [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md)-proces. I programmet kan du foretage reservationen direkte fra en salgsordre ved at bruge indstillingen **Ordrebekræftede reservationer pr. id** for kommandoen **Åbn i Excel**. I de enhedsdata, der åbnes i tilføjelsesprogrammet til Excel, skal du angive følgende reservationsrelaterede data og derefter vælge **Publicer** for at sende dataene tilbage til Supply Chain Management:
 
-- Reference (kun *Salgsordre*-værdien understøttes).
+- Reference (kun *Salgsordre* -værdien understøttes).
 - Ordrenummer (værdien kan afledes af partiet).
 - Parti-id
 - Nummerplade
@@ -235,7 +235,7 @@ Hvis et lagersteds arbejdselement består af linjer, der svarer til en hel palle
 Da funktionen **Håndter efter id** ikke understøtter arbejde, der dækker flere paller, er det bedre at have et separat arbejdselement til forskellige id'er. Hvis du vil bruge denne fremgangsmåde, skal du tilføje feltet **Ordre bekræftet id** som en arbejdshovedpause på siden **Arbejdsskabelon**.
 
 > [!NOTE]
-> For den ordrebekræftede arbejdsoprettelsesproces tildeles en værdi for "ordrebekræftet lagerdimension" til pluklinjerne, og der vil ikke være mulighed for at få vist id-værdien direkte. Kun *Brugerstyret*-proces understøttes, når du konfigurerer et menupunkt i mobilenheder.
+> For den ordrebekræftede arbejdsoprettelsesproces tildeles en værdi for "ordrebekræftet lagerdimension" til pluklinjerne, og der vil ikke være mulighed for at få vist id-værdien direkte. Kun *Brugerstyret* -proces understøttes, når du konfigurerer et menupunkt i mobilenheder.
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Eksempel på scenario: oprette og behandle en ordrebekræftet id-reservation
 
@@ -243,15 +243,15 @@ Dette scenario viser, hvordan du kan oprette og behandle en ordrebekræftet id-r
 
 ### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Dette scenario indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er leveret til Supply Chain Management. Hvis du vil arbejde gennem scenariet ved hjælp af de værdier, der vises her, skal du arbejde på et miljø, hvor standarddemodata er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Dette scenario indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er leveret til Supply Chain Management. Hvis du vil arbejde gennem scenariet ved hjælp af de værdier, der vises her, skal du arbejde på et miljø, hvor standarddemodata er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
 
 ### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Oprette et hierarki for lagerreservationer, der giver mulighed for reservation af id
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Lager \> Reservationshierarki**.
 1. Vælg **Ny**.
-1. Angiv en værdi i feltet **Navn** (f.eks. *FleksibeltID*).
-1. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. *Fleksibel id-reservation*).
-1. Vælg **Batchnummer**, **Serienummer** og **Ejer** på listen **Valgte**.
+1. Angiv en værdi i feltet **Navn** (f.eks. *FleksibeltID* ).
+1. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. *Fleksibel id-reservation* ).
+1. Vælg **Batchnummer** , **Serienummer** og **Ejer** på listen **Valgte**.
 1. Vælg knappen **Fjern** ![bagudrettet pil](media/backward-button.png) for at flytte de valgte poster til listen **Tilgængelige**.
 1. Vælg **OK**.
 1. I rækken med dimensionsniveau for **Id** skal du markere afkrydsningsfeltet **Tillad reservation i behovsordre**. Niveauet **Lokation** vælges automatisk, og du kan ikke fjerne markeringerne i afkrydsningsfeltet for det.
@@ -261,7 +261,7 @@ Dette scenario indeholder referencer til værdier og poster, der er inkluderet i
 
 1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Nyt frigivet produkt**:
+1. Angiv følgende værdier i dialogboksen **Nyt frigivet produkt** :
 
     - **Produktnummer:** *Vare1*
     - **Varenummer:** *Vare1*
@@ -291,7 +291,7 @@ Dette scenario indeholder referencer til værdier og poster, der er inkluderet i
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-001*
     - **Lagersted:** *24*
@@ -308,26 +308,26 @@ Dette scenario indeholder referencer til værdier og poster, der er inkluderet i
     - **Antal:** *5*
 
 1. Vælg **Gem**.
-1. I oversigtspanelet **Linjedetaljer** skal du under fanen **Konfiguration** notere dig **Parti-id**-værdien for hver linje. Disse værdier skal angives under reservation af bestemte id'er.
+1. I oversigtspanelet **Linjedetaljer** skal du under fanen **Konfiguration** notere dig **Parti-id** -værdien for hver linje. Disse værdier skal angives under reservation af bestemte id'er.
 
     > [!NOTE]
     > Hvis du vil reservere et bestemt id, skal du bruge dataenheden **Ordrebekræftede reservationer pr. id**. Hvis du vil reservere et bestemt id for en vare med batchsporing, skal du bruge siden **Batchreservation** som beskrevet i afsnittet [Angive oplysninger om salgsordre](#sales-order-details).
     >
     > Hvis du angiver id'et direkte på salgsordrelinjen og bekræfter det på systemet, bruges behandlingen af lagerstyring ikke for linjen.
 
-1. Vælg **Åbn i Microsoft Office**, vælg **Ordrebekræftede reservationer pr. id**, og download filen.
+1. Vælg **Åbn i Microsoft Office** , vælg **Ordrebekræftede reservationer pr. id** , og download filen.
 1. Åbn den downloadede fil i Excel, og vælg **Aktivér redigering** for at aktivere Excel-tilføjelsesprogrammet til at køre.
 1. Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du vælge **Har tillid til dette tilføjelsesprogram**.
 1. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Supply Chain Management.
 1. Hvis du vil reservere en vare på et bestemt id, skal du vælge **Ny** i Excel-tilføjelsesprogrammet for at tilføje en reservationslinje og derefter angive følgende værdier:
 
-    - **Parti-id:** Angiv den **Parti-id**-værdi, du har fundet for salgsordrelinjen til *Vare1*.
+    - **Parti-id:** Angiv den **Parti-id** -værdi, du har fundet for salgsordrelinjen til *Vare1*.
     - **Id:** *LP02*
     - **ReservedInventoryQuantity:** *10*
 
 1. Vælg **Ny** for at tilføje en anden reservationslinje, og angiv følgende værdier på den:
 
-    - **Parti-id:** Angiv den **Parti-id**-værdi, du har fundet for salgsordrelinjen til *Vare2*.
+    - **Parti-id:** Angiv den **Parti-id** -værdi, du har fundet for salgsordrelinjen til *Vare2*.
     - **Id:** *LP02*
     - **ReservedInventoryQuantity:** *5*
 
@@ -338,21 +338,21 @@ Dette scenario indeholder referencer til værdier og poster, der er inkluderet i
 
 1. Gå tilbage til Supply Chain Management. 
 1. Hvis du vil gennemse varens reservation, skal du i oversigtspanelet **Salgsordrelinjer** i menuen **Lager** vælge **Vedligehold \> Reservation**. Bemærk, at for salgsordrelinjen til *Vare1* er lager *10* reserveret, og for salgsordrelinjen til *Vare2* er lager *5* reserveret.
-1. Hvis du vil gennemse lagertransaktioner, der er relateret til reservationen af salgsordrelinjen, skal du i oversigtspanelet **Salgsordrelinjer** i menuen **Lager** vælge **Vis \> Transaktioner**. Bemærk, at der er to transaktioner, der er relateret til reservationen: en, hvor **Reference**-feltet er angivet til *Salgsordre*, og en, hvor **Reference**-feltet er angivet til *Ordrebekræftet reservation*.
+1. Hvis du vil gennemse lagertransaktioner, der er relateret til reservationen af salgsordrelinjen, skal du i oversigtspanelet **Salgsordrelinjer** i menuen **Lager** vælge **Vis \> Transaktioner**. Bemærk, at der er to transaktioner, der er relateret til reservationen: en, hvor **Reference** -feltet er angivet til *Salgsordre* , og en, hvor **Reference** -feltet er angivet til *Ordrebekræftet reservation*.
 
     > [!NOTE]
-    > En transaktion, hvor feltet **Reference** er angivet til *Salgsordre* repræsenterer ordrelinjereservationen for lagerdimensionerne over niveauet **Lokation** (sted, lagersted og lagerstatus). En transaktion, hvor **Reference**-feltet er angivet til *Ordrebekræftet reservation*, repræsenterer ordrelinjereservationen for det specifikke id og den specifikke lokation.
+    > En transaktion, hvor feltet **Reference** er angivet til *Salgsordre* repræsenterer ordrelinjereservationen for lagerdimensionerne over niveauet **Lokation** (sted, lagersted og lagerstatus). En transaktion, hvor **Reference** -feltet er angivet til *Ordrebekræftet reservation* , repræsenterer ordrelinjereservationen for det specifikke id og den specifikke lokation.
 
-1. Frigiv salgsordren ved i handlingsruden at bruge fanen **Lager**, gruppen **Handlinger** og indstillingen **Frigiv til lagersted**.
+1. Frigiv salgsordren ved i handlingsruden at bruge fanen **Lager** , gruppen **Handlinger** og indstillingen **Frigiv til lagersted**.
 
 ### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Gennemgå og behandle lagerstedsarbejde med ordrebekræftede id'er, der er tildelt
 
-1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Arbejdsdetaljer** i menuen **Lagersted**.
+1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Arbejdsdetaljer** i menuen **Lagersted**.
 
     Når der foretages reservation for et bestemt batch, bruger systemet ikke lokationsdirektiver, når det opretter arbejdet for salgsordren, der bruger id-reservation. Da den ordrebekræftede reservation angiver alle lagerdimensioner, herunder lokationen, skal du ikke bruge lokationsdirektiver, da disse lagerdimensioner kun er angivet i arbejdet. De vises i afsnittet **Fra lagerdimensioner** på siden **Arbejdslagertransaktioner**.
 
     > [!NOTE]
-    > Når arbejdet er oprettet, fjernes varens lagertransaktion, hvor feltet **Reference** er angivet til *Ordrebekræftet reservation*. Lagertransaktionen, hvor feltet **Reference** er angivet til *Arbejde*, indeholder nu den fysiske reservation af lagerdimensionerne for alle antal.
+    > Når arbejdet er oprettet, fjernes varens lagertransaktion, hvor feltet **Reference** er angivet til *Ordrebekræftet reservation*. Lagertransaktionen, hvor feltet **Reference** er angivet til *Arbejde* , indeholder nu den fysiske reservation af lagerdimensionerne for alle antal.
 
 1. På mobilenheden skal du afslutte plukning og placere arbejdet ved hjælp af et menupunkt, hvor afkrydsningsfeltet **Håndter efter id** er markeret.
 
@@ -385,7 +385,7 @@ Følgende er resultatet af handlingen til fortrydelse af plukning:
 
 - Status for det tidligere lukkede arbejde angives til **Annulleret**.
 - Der oprettes nyt arbejde af typen **Lagerbevægelser** for det ikke-plukkede antal på **10** for batchnummer **B11**. Dette arbejde repræsenterer bevægelsen fra lokationen **Baydoor** til id **LP33** på lokation **FL-001**. Status er angivet til **Lukket**.
-- Systemet reserverer igen det batchnummer, der oprindeligt blev bestilt, og tildeler lokation og id'er. (Denne proces svarer til at køre funktionen **Reserver linje** for ordrelinjen for et bestemt batchnummer). Derfor vises **B11** som bekræftet i oversigtspanelet **Batchnumre bundet til kildelinje** på siden **Batchreservation**, og feltet **Reservation** indeholder antallet **10** for batchnummer **B11**. Desuden angives feltet **Lokation** til **FL-001**, og feltet **Nummerplade** angives til **LP11**. (Du kan føje disse felter til gitteret, hvis de ikke er synlige).
+- Systemet reserverer igen det batchnummer, der oprindeligt blev bestilt, og tildeler lokation og id'er. (Denne proces svarer til at køre funktionen **Reserver linje** for ordrelinjen for et bestemt batchnummer). Derfor vises **B11** som bekræftet i oversigtspanelet **Batchnumre bundet til kildelinje** på siden **Batchreservation** , og feltet **Reservation** indeholder antallet **10** for batchnummer **B11**. Desuden angives feltet **Lokation** til **FL-001** , og feltet **Nummerplade** angives til **LP11**. (Du kan føje disse felter til gitteret, hvis de ikke er synlige).
 
 Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndterer ordrebekræftet batchreservation for specifikke lagerstedshandlinger. Hvis du vil fortolke indholdet i tabellerne, skal du antage, at hver lagerstedshandling køres i konteksten af det eksisterende lagerarbejde, der stammer fra en ordrebekræftet batchreservation, eller at udførelsen af de enkelte lagerhandlinger påvirker arbejde af den pågældende type.
 
@@ -512,7 +512,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 #### <a name="move-an-item-within-a-warehouse"></a>Flyt en vare inden for et lagersted
 
 > [!NOTE]
-> Denne lagerstedshandling gælder kun for flytning af typen **Arbejdsoprettelsesproces**, ikke for bevægelse efter skabelon.
+> Denne lagerstedshandling gælder kun for flytning af typen **Arbejdsoprettelsesproces** , ikke for bevægelse efter skabelon.
 
 <table>
 <thead>

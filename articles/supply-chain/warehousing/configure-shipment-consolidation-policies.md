@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4df62d7b2c8b0463ca6e9564e167f9060e811a24
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975410"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016211"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere politikker for forsendelseskonsolidering
 
@@ -36,18 +36,18 @@ De scenarier, der vises i dette emne, viser, hvordan du konfigurerer standard- o
 > [!IMPORTANT]
 > I det [første scenarie](#scenario-1), der beskrives i dette emne, skal du først konfigurere et lagersted, så det bruger den tidligere funktion til forsendelseskonsolidering. Derefter gør du politikker for forsendelseskonsolidering tilgængelige. På denne måde kan du opleve, hvordan opgraderingsscenariet fungerer. Hvis du planlægger at bruge et demonstrationsdatamiljø til at gå gennem det første scenarie, skal du ikke aktivere funktionen, før du udfører scenariet.
 
-Før du kan bruge funktionen *Politikker for forsendelseskonsolidering*, skal du slå den til i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Politikker for forsendelseskonsolidering* , skal du slå den til i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Konsolider forsendelses*
 
 ## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Hvert scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
+Hvert scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF** , før du går i gang.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenarie 1: Konfigurer standardpolitikker for forsendelseskonsolidering
 
-Der er to situationer, hvor du skal konfigurere minimumantallet af standardpolitikker, når du har aktiveret funktionen *Politikker for forsendelseskonsolidering*:
+Der er to situationer, hvor du skal konfigurere minimumantallet af standardpolitikker, når du har aktiveret funktionen *Politikker for forsendelseskonsolidering* :
 
 - Du er ved at opgradere et miljø, der allerede indeholder data.
 - Du er ved at installere et helt nyt miljø.
@@ -59,26 +59,26 @@ Når du starter denne procedure, skal *Politikker for forsendelseskonsolidering*
 Benyt følgende fremgangsmåde for at oprette standardpolitikker for forsendelseskonsolidering i et miljø, hvor der allerede er konfigureret lagersteder til konsolidering på tværs af ordrer.
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
-1. Find og Åbn den ønskede lagerstedspost på listen (f.eks. lagersted *24* i **USMF**-demodataene).
+1. Find og Åbn den ønskede lagerstedspost på listen (f.eks. lagersted *24* i **USMF** -demodataene).
 1. Vælg **Rediger** i handlingsruden.
-1. Gå til oversigtspanelet **Lagersted**, og angiv indstillingen **Konsolider forsendelse ved frigivelse til lagersted** til *Ja*.
+1. Gå til oversigtspanelet **Lagersted** , og angiv indstillingen **Konsolider forsendelse ved frigivelse til lagersted** til *Ja*.
 1. Gentag trin 2 til 4 for alle andre lagersteder, hvor der kræves konsolidering.
 1. Luk siden.
 1. Brug [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at slå funktionen *Politikker for forsendelseskonsolidering* til. I arbejdsområdet **Funktionsstyring** hedder funktionen *Konsolider afsendelse*.
-1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**. Du skal muligvis opdatere browseren for at få vist det nye menupunkt **Politikker for forsendelseskonsolidering**, når du har aktiveret funktionen.
+1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**. Du skal muligvis opdatere browseren for at få vist det nye menupunkt **Politikker for forsendelseskonsolidering** , når du har aktiveret funktionen.
 1. Gå til handlingsruden, og vælg **Opret standardopsætning** for at oprette følgende politikker:
 
-    - En **Krydsordre**-politik for politiktypen *Salgsordrer* (hvis du har mindst ét lagersted, der er konfigureret til at bruge den tidligere konsolideringsfunktion)
-    - En **Standard**-politik for politiktypen *Salgsordrer*
-    - En **Standard**-politik for politiktypen *Flytteafgang*
-    - En **Krydsordre**-politik for politiktypen *Flytteafgang* (hvis du har mindst ét lagersted, der er konfigureret til at bruge den tidligere konsolideringsfunktion)
+    - En **Krydsordre** -politik for politiktypen *Salgsordrer* (hvis du har mindst ét lagersted, der er konfigureret til at bruge den tidligere konsolideringsfunktion)
+    - En **Standard** -politik for politiktypen *Salgsordrer*
+    - En **Standard** -politik for politiktypen *Flytteafgang*
+    - En **Krydsordre** -politik for politiktypen *Flytteafgang* (hvis du har mindst ét lagersted, der er konfigureret til at bruge den tidligere konsolideringsfunktion)
 
     > [!NOTE]
-    > - Begge **Krydsordre**-politikker tager højde for det samme sæt af felter som den tidligere logik, bortset fra feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. lagersted, leveringsmåde for transporten og adresse).
-    > - Begge **Standard**-politikker tager højde for det samme sæt af felter som den tidligere logik, herunder feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
+    > - Begge **Krydsordre** -politikker tager højde for det samme sæt af felter som den tidligere logik, bortset fra feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. lagersted, leveringsmåde for transporten og adresse).
+    > - Begge **Standard** -politikker tager højde for det samme sæt af felter som den tidligere logik, herunder feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
 
-1. Vælg **Krydsordre**-politik for politiktypen *Salgsordrer*, og vælg derefter **Rediger forespørgsel** i handlingsruden.
-1. Bemærk, at lagersteder, hvor indstillingen **Konsolider forsendelse ved frigivelse til lagersted** er angivet til *Ja*, vises i dialogboksen for forespørgselseditor. Derfor medtages de i forespørgslen.
+1. Vælg **Krydsordre** -politik for politiktypen *Salgsordrer* , og vælg derefter **Rediger forespørgsel** i handlingsruden.
+1. Bemærk, at lagersteder, hvor indstillingen **Konsolider forsendelse ved frigivelse til lagersted** er angivet til *Ja* , vises i dialogboksen for forespørgselseditor. Derfor medtages de i forespørgslen.
 
 ### <a name="create-default-policies-for-a-new-environment"></a>Oprette standardpolitikker til et nyt miljø
 
@@ -88,11 +88,11 @@ Udfør følgende trin for at oprette standardpolitikker for forsendelseskonsolid
 1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**.
 1. Gå til handlingsruden, og vælg **Opret standardopsætning** for at oprette følgende politikker:
 
-    - En **Standard**-politik for politiktypen *Salgsordrer*
-    - En **Standard**-politik for politiktypen *Flytteafgang*
+    - En **Standard** -politik for politiktypen *Salgsordrer*
+    - En **Standard** -politik for politiktypen *Flytteafgang*
 
     > [!NOTE]
-    > Begge **Standard**-politikker tager højde for det samme sæt af felter som den tidligere logik, herunder feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
+    > Begge **Standard** -politikker tager højde for det samme sæt af felter som den tidligere logik, herunder feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
 
 ## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scenarie 2: Konfigurer brugerdefinerede politikker for forsendelseskonsolidering
 
@@ -108,7 +108,7 @@ Du kan bruge funktionsstyringen til at aktivere funktionen, hvis du ikke allered
 
 #### <a name="create-two-new-product-filter-codes"></a>Oprette to nye produktfilterkoder
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> Produktfiltre \> Produktfiltre**, og tilføj to produktfiltre:
+1. Gå til **Lagerstedsstyring \> Opsætning \> Produktfiltre \> Produktfiltre** , og tilføj to produktfiltre:
 
     - Produktfilter 1:
 
@@ -121,11 +121,11 @@ Du kan bruge funktionsstyringen til at aktivere funktionen, hvis du ikke allered
         - **Filtertitel:** *Kode 4*
 
 1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
-1. Åbn det produkt, der har varenummeret *M9200*. (Det produkt, du vælger, skal være aktiveret for de avancerede \[WMS-\]-lagerstedsprocesser, og dette produkt er allerede aktiveret for WMS-processer i **USMF**-demodataene.)
-1. Gå til oversigtspanelet **Lagersted**, og indstil feltet **Kode 4** til *Brændbar*.
+1. Åbn det produkt, der har varenummeret *M9200*. (Det produkt, du vælger, skal være aktiveret for de avancerede \[WMS-\]-lagerstedsprocesser, og dette produkt er allerede aktiveret for WMS-processer i **USMF** -demodataene.)
+1. Gå til oversigtspanelet **Lagersted** , og indstil feltet **Kode 4** til *Brændbar*.
 1. Luk siden.
-1. Åbn det produkt, der har varenummeret *M9201*. (Dette produkt er også forhåndsaktiveret for WMS-processer i **USMF**-demodataene).
-1. Gå til oversigtspanelet **Lagersted**, og indstil feltet **Kode 4** til *Eksplosiv*.
+1. Åbn det produkt, der har varenummeret *M9201*. (Dette produkt er også forhåndsaktiveret for WMS-processer i **USMF** -demodataene).
+1. Gå til oversigtspanelet **Lagersted** , og indstil feltet **Kode 4** til *Eksplosiv*.
 1. Luk siden.
 
 #### <a name="create-a-new-transportation-mode-of-delivery"></a>Oprette en ny leveringsmåde for transport
@@ -159,14 +159,14 @@ Du kan bruge funktionsstyringen til at aktivere funktionen, hvis du ikke allered
 
 1. Gå til **Salg og marketing \> Kunder \> Alle kunder**.
 1. Åbn debitoren med kontonummer *US-003*.
-1. Gå til oversigtspanelet **Salgsordrestandarder**, og angiv feltet **Salgsordrepulje** til den ordrepulje, du lige har oprettet.
+1. Gå til oversigtspanelet **Salgsordrestandarder** , og angiv feltet **Salgsordrepulje** til den ordrepulje, du lige har oprettet.
 1. Luk siden, og gentag derefter trin 4 og 5 for debitoren, der har kontonummer *US-004*.
 
 ### <a name="create-example-policy-1"></a>Oprette eksempelpolitik 1
 
-I dette eksempel skal du oprette en *Debitor + tilstand*-politik, der kan bruges til følgende forretningseksempel:
+I dette eksempel skal du oprette en *Debitor + tilstand* -politik, der kan bruges til følgende forretningseksempel:
 
-- Politikken vil forespørge efter en bestemt debitorkonto (*US-001*) og en bestemt leveringsmåde (*Airwa-Air*).
+- Politikken vil forespørge efter en bestemt debitorkonto ( *US-001* ) og en bestemt leveringsmåde ( *Airwa-Air* ).
 - Konsolidering med åbne forsendelser er deaktiveret.
 - Konsolideringen foretages pr. ordre-id. (Det vil sige, at der vil være separate forsendelser pr. ordre, lagersted osv.)
 
@@ -181,10 +181,10 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
 1. Vælg **Gem** i handlingsruden.
-1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
+1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter** , vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
 1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
-1. Gå til dialogboksen for forespørgselseditor på fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Debitorkonto* i gitteret, indstil feltet **Kriterier** for den pågældende række til *US-001*.
+1. Gå til dialogboksen for forespørgselseditor på fanen **Område** , og find den række, hvor feltet **Felt** er indstillet til *Debitorkonto* i gitteret, indstil feltet **Kriterier** for den pågældende række til *US-001*.
 1. Vælg **Tilføj** for at føje en række, der har følgende indstillinger, til gitteret:
 
     - **Tabel:** *Ordrelinjer*
@@ -195,13 +195,13 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 1. Vælg **OK** for at lukke dialogboksen.
 
 > [!NOTE]
-> I dette forretningseksempel konsolideres ordrelinjer for debitor *US-001*, der bruger leveringsmåden *Airwa-Air*, ikke på tværs af ordrer. Denne politik er beregnet til først at blive brugt i en sekvens i tilfælde, hvor forsendelser for alle andre leveringsmåder er konsolideret for denne debitor.
+> I dette forretningseksempel konsolideres ordrelinjer for debitor *US-001* , der bruger leveringsmåden *Airwa-Air* , ikke på tværs af ordrer. Denne politik er beregnet til først at blive brugt i en sekvens i tilfælde, hvor forsendelser for alle andre leveringsmåder er konsolideret for denne debitor.
 
 ### <a name="create-example-policy-2"></a>Oprette eksempelpolitik 2
 
-I dette eksempel skal du oprette en *Farlige varer*-politik, der kan bruges til følgende forretningseksempel:
+I dette eksempel skal du oprette en *Farlige varer* -politik, der kan bruges til følgende forretningseksempel:
 
-- Politikken vil forespørge efter en bestemt filterkode (*farlig*) og en bestemt leveringsmåde (*Airwa-Air*).
+- Politikken vil forespørge efter en bestemt filterkode ( *farlig* ) og en bestemt leveringsmåde ( *Airwa-Air* ).
 - Konsolidering med åbne forsendelser er aktiveret.
 - Konsolideringen foretages på tværs af ordrer. (Med andre ord vil der være separate forsendelser pr. konto, lagersted osv., men kun i den varegruppe, der er angivet i forespørgslen).
 
@@ -216,13 +216,13 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 
 1. Angiv indstillingen **Konsolider med åbne forsendelser** til *Ja*.
 1. Vælg **Gem** i handlingsruden.
-1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
+1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter** , vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
 1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. I dialogboksen for forespørgselseditor skal du gå til fanen **Joins** og udvide og vælge **Tabeller \> Lastdetaljer** i træet.
 1. Vælg **Tilføj tabeljoin**.
-1. Find og markér den række, hvor feltet **Relation** er angivet til *Lagerstedsvarenummer (varenummer)*, i relationsgitteret, der vises og vælg derefter **Vælg**. 
-1. Gå til fanen **Område**, og vælg **Tilføj** for at tilføje en række, der har følgende indstillinger, til gitteret:
+1. Find og markér den række, hvor feltet **Relation** er angivet til *Lagerstedsvarenummer (varenummer)* , i relationsgitteret, der vises og vælg derefter **Vælg**. 
+1. Gå til fanen **Område** , og vælg **Tilføj** for at tilføje en række, der har følgende indstillinger, til gitteret:
 
     - **Tabel:** *Lagerstedsvarenummer*
     - **Afledt tabel:** *Lagerstedsvarenummer*
@@ -232,11 +232,11 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 1. Vælg **OK** for at lukke dialogboksen.
 
 > [!NOTE]
-> I dette forretningseksempel bliver alle ordrelinjer, hvor varer har en bestemt filterkode (dvs. den filterkode, hvor feltet **Kode 4** er indstillet til *Brændbar*) konsolideret med andre varer af samme type på tværs af ordrer. Hvis der er en åben forsendelse for samme konto, lagersted og gruppe af varer, knyttes de nye linjer til den.
+> I dette forretningseksempel bliver alle ordrelinjer, hvor varer har en bestemt filterkode (dvs. den filterkode, hvor feltet **Kode 4** er indstillet til *Brændbar* ) konsolideret med andre varer af samme type på tværs af ordrer. Hvis der er en åben forsendelse for samme konto, lagersted og gruppe af varer, knyttes de nye linjer til den.
 
 ### <a name="create-example-policy-3"></a>Oprette eksempelpolitik 3
 
-I dette eksempel skal du oprette en *Debitorkrav*-politik, der kan bruges til følgende forretningseksempel:
+I dette eksempel skal du oprette en *Debitorkrav* -politik, der kan bruges til følgende forretningseksempel:
 
 - Politikken vil forespørge om en bestemt debitorkonto.
 - Konsolidering med åbne forsendelser er aktiveret.
@@ -253,12 +253,12 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 
 1. Angiv indstillingen **Konsolider med åbne forsendelser** til *Ja*.
 1. Vælg **Gem** i handlingsruden.
-1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Debitorrekvisition*.
+1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter** , vælg række, hvor feltet **Feltnavn** er indstillet til *Debitorrekvisition*.
 1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
 1. På listen **Resterende felter** skal du vælge den række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
 1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
-1. Gå til dialogboksen for forespørgselseditor på fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Debitorkonto*, indstil feltet **Kriterier** for den pågældende række til *US-001*.
+1. Gå til dialogboksen for forespørgselseditor på fanen **Område** , og find den række, hvor feltet **Felt** er indstillet til *Debitorkonto* , indstil feltet **Kriterier** for den pågældende række til *US-001*.
 1. Vælg **OK** for at lukke dialogboksen.
 
 > [!NOTE]
@@ -266,11 +266,11 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 
 ### <a name="create-example-policy-4"></a>Oprette eksempelpolitik 4
 
-I dette eksempel skal du oprette en *Debitor tillader konsolidering*-politik, der kan bruges til følgende forretningseksempel:
+I dette eksempel skal du oprette en *Debitor tillader konsolidering* -politik, der kan bruges til følgende forretningseksempel:
 
 - Politikken vil forespørge efter en bestemt ordrepulje for at identificere debitorer, der accepterer konsoliderede forsendelser.
 - Konsolidering med åbne forsendelser er deaktiveret.
-- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted**).
+- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted** ).
 
 - Du kan tilsidesætte reglen på en salgsordre ved at vælge en anden ordrepulje.
 
@@ -285,7 +285,7 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
 1. Vælg **Gem** i handlingsruden.
-1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
+1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter** , vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
 1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. Gå til dialogboksen for forespørgselseditor, og vælg **Tilføj** på fanen **Område** for at tilføje en række, der har følgende indstillinger, til gitteret:
@@ -302,11 +302,11 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 
 ### <a name="create-example-policy-5"></a>Oprette eksempelpolitik 5
 
-I dette eksempel skal du oprette en *Lagersted tillader konsolidering*-politik, der kan bruges til følgende forretningseksempel:
+I dette eksempel skal du oprette en *Lagersted tillader konsolidering* -politik, der kan bruges til følgende forretningseksempel:
 
 - Politikken vil forespørge efter en bestemt ordrepulje for at identificere lagersteder, der kan konsolidere forsendelser.
 - Konsolidering med åbne forsendelser er deaktiveret.
-- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted**).
+- Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted** ).
 
 Dette forretningseksempel kan typisk håndteres ved hjælp af de standardpolitikker, du har oprettet i [scenarie 1](#scenario-1). Du kan dog også oprette ensartede politikker manuelt ved at følge disse trin.
 
@@ -319,10 +319,10 @@ Dette forretningseksempel kan typisk håndteres ved hjælp af de standardpolitik
 
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
 1. Vælg **Gem** i handlingsruden.
-1. Gå til oversigtspanelet **Konsolideringsfelter** i feltet **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
+1. Gå til oversigtspanelet **Konsolideringsfelter** i feltet **Resterende felter** , vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
 1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
-1. Gå til dialogboksen for forespørgselseditor på fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Lagersted*, og indstil feltet **Kriterier** for den pågældende række til *61, 63*.
+1. Gå til dialogboksen for forespørgselseditor på fanen **Område** , og find den række, hvor feltet **Felt** er indstillet til *Lagersted* , og indstil feltet **Kriterier** for den pågældende række til *61, 63*.
 1. Vælg **OK** for at lukke dialogboksen.
 
 ### <a name="set-the-order"></a>Angive ordre

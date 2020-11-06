@@ -1,6 +1,6 @@
 ---
-title: Opret et anlægsaktiv
-description: Denne opgaveguide anvender demofirmaet USMF.
+title: Oprette et anlægsaktiv
+description: Dette emne forklarer, hvordan du opretter en ny anlægsaktivpost fra listesiden med anlægsaktiver.
 author: saraschi2
 manager: AnnBe
 ms.date: 07/01/2019
@@ -16,27 +16,36 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db1a372414a38446b7e55d94a3e6a8a22a889d0a
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 2b7d65a047251fa036242fb456725bc8cba957b9
+ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142794"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4000237"
 ---
-# <a name="create-a-fixed-asset"></a>Opret et anlægsaktiv
+# <a name="create-a-fixed-asset"></a>Oprette et anlægsaktiv
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgaveguide anvender demofirmaet USMF.  Det opretter et nyt anlægsaktiv ved hjælp af listesiden Anlægsaktiv.
+Dette emne forklarer, hvordan du opretter en ny anlægsaktivpost fra listesiden **Anlægsaktiv**.
 
-1. Gå til **Navigationsrude > Moduler > Anlægsaktiver > Anlægsaktiver > Anlægsaktiver**.
-2. Klik på **Ny** i **handlingsruden**.
-3. Skriv eller vælg en værdi i feltet **Anlægsaktivgruppe**. Feltet **Nummer** bruges som standard, hvis du har aktiveret funktionen **Auto-nummerer anlægsaktiver** i **Anlægsaktivparametre** og **Anlægsaktivgruppe**.  Hvis ikke skal du angive et entydigt nummer, der identificerer anlægsaktivet.  
-4. Skriv en værdi i feltet **Navn**. Angiv yderligere oplysninger, som din virksomhed skal bruge til dette anlægsaktiv.  
-5. Klik på **Bøger** i **handlingsruden**.
+Systemet tildeler aktivnummeret på basis af den nummerserie, der er tildelt anlægsaktivgruppen. Hvis du bruger skabelonen for anlægsaktiver til at importere aktiver via Microsoft Excel-tilføjelsesprogrammet, eller hvis du bruger et andet importjob, opretter systemet automatisk anlægsaktivposter og øger aktivnummeret.
+
+Hvis du vil oprette en aktivpost manuelt, skal du følge disse trin.
+
+1. Gå til **Navigationsrude \> Moduler \> Anlægsaktiver \> Anlægsaktiver \> Anlægsaktiver**.
+2. Gå til **handlingsruden** , og vælg **Ny**.
+3. Skriv eller vælg en værdi i feltet **Anlægsaktivgruppe**. Feltet **Nummer** bruges som standard, hvis du har aktiveret funktionen **Auto-nummerer anlægsaktiver** i **Anlægsaktivparametre** og **Anlægsaktivgruppe**. Hvis ikke skal du angive et entydigt nummer, der identificerer anlægsaktivet.
+4. Angiv en værdi i feltet **Navn**. Angiv yderligere oplysninger, som din virksomhed skal bruge til dette anlægsaktiv.
+5. Vælg **Bøger** i **handlingsruden**.
 6. Angiv en dato i feltet **Anskaffelsesdato**.
 7. Angiv et tal i feltet **Anskaffelsespris**.
-    - Angiv yderligere oplysninger, som din virksomhed skal bruge til denne bog.  
-    - Angiv yderligere oplysninger, som din virksomhed skal bruge til resterende bøger.  
+
+    - Angiv yderligere oplysninger, som din virksomhed skal bruge til denne bog.
+    - Angiv yderligere oplysninger, som din virksomhed skal bruge til resterende bøger.
+
 8. Luk siden.
 
+Du kan også importere anlægsaktiver ved hjælp af Excel-tilføjelsesprogrammet eller ved at køre et importjob fra arbejdsområdet **Dataadministration**. Før du kører importen, skal du angive værdierne for obligatoriske felter i skabelonen.
+
+Hvis du ikke har defineret anlægsaktivnummeret i skabelonen for Excel-tilføjelsesprogrammet eller i Dataadministration, opretter systemet et anlægsaktivnummer for hvert importerede aktiv og øger automatisk nummerserien for hver enkelt. Men hvis du importerer aktiver og definerer aktivnumre i skabelonen, øger systemet **ikke** automatisk nummerserien. I dette tilfælde skal en administrator måske opdatere nummerserien manuelt. Hvis du har defineret anlægsaktivnummeret i skabelonen til Excel-tilføjelsesprogrammet, bruger systemet det definerede anlægsaktivnummer og øger nummerserien.

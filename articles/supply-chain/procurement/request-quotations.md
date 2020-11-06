@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ
+ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973494"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018393"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversigt over tilbudsanmodninger
 
@@ -44,7 +44,7 @@ I følgende illustration vises en oversigt over processen for anmodninger om til
 
 Du kan oprette en sag for en tilbudsanmodning ud fra planlagte ordrer, en indkøbsrekvisition eller ved manuel indtastning. Tilbudsanmodningssagen er det grundlæggende dokument, du bruger til at udstede en tilbudsanmodning til hver kreditor.
 
-Når du forbereder tilbudsanmodningssagen og tilføjer kreditorer, skal du vælge **Send** (**Sende og udgiv** for offentlig sektor) for tilbudsanmodningssagen. Der oprettes en tilbudsanmodningskladde for hver leverandør, som du sendte tilbudsanmodningen til. Du kan konfigurere indstillingerne for Udskrivning for handlingen Send, så der enten udskrives en rapport for hver kreditor til et arkiv eller sendes en rapport til hver kreditors mailadresse. Du kan desuden bruge tilbudsanmodningskladden til hver leverandør til at generere en rapport, som du kan sende eller gensende til leverandøren senere. Du kan også konfigurere handlingen Send, så den opretter et svarark, som leverandøren kan udfylde.
+Når du forbereder tilbudsanmodningssagen og tilføjer kreditorer, skal du vælge **Send** ( **Sende og udgiv** for offentlig sektor) for tilbudsanmodningssagen. Der oprettes en tilbudsanmodningskladde for hver leverandør, som du sendte tilbudsanmodningen til. Du kan konfigurere indstillingerne for Udskrivning for handlingen Send, så der enten udskrives en rapport for hver kreditor til et arkiv eller sendes en rapport til hver kreditors mailadresse. Du kan desuden bruge tilbudsanmodningskladden til hver leverandør til at generere en rapport, som du kan sende eller gensende til leverandøren senere. Du kan også konfigurere handlingen Send, så den opretter et svarark, som leverandøren kan udfylde.
 
 Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Supply Chain Management. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
 
@@ -58,7 +58,7 @@ Hvis du har føjet scorekriterier til din tilbudsanmodningssag, har tilbudsanmod
 
 Når du vælger et bud eller et antal linjer i et bud, kan du acceptere alle eller nogle linjer og afvise resten. Der oprettes acceptkladder, afvisningskladder og tilsvarende rapporter, som udskrives, arkiveres og sendes i henhold til dine indstillinger for Udskrivning. Når du accepterer et bud eller bestemte linjer i et bud, oprettes der enten en købsaftale eller indkøbsordre, eller en indkøbsrekvisition opdateres, afhængigt af indkøbstypen for tilbudsanmodningen. Du kan oprette en samhandelsaftale, der senere kan bruges til alle svarene, uanset om du har accepteret eller afvist dem.
 
-En tilbudsanmodningssag har to statusser: den laveste og den højeste. Du kan få vist status på listesiden for **Alle tilbudsanmodninger**. Den laveste status er det mindst fremskredne stadie for en linje i tilbudsanmodningssagen, mens den højeste status er det mest fremskredne stadie for en linje i tilbudsanmodningssagen. Antag f.eks., at en tilbudsanmodningssag med tre linjer sendes til to kreditorer, så der er to tilbudsanmodninger med tre linjer. Alle linjer er **Sendt**. Nu er der givet et bud fra en af kreditorerne, og linjerne i tilbudsanmodningen får statussen **Modtaget**. Det betyder, at ud af de tre linjer i tilbudsanmodningssagen er alle **Sendt** for en tilbudsanmodning og **Modtaget** for en anden tilbudsanmodning. Den laveste status bliver derefter **Sendt**, og den højeste status bliver **Modtaget.**
+En tilbudsanmodningssag har to statusser: den laveste og den højeste. Du kan få vist status på listesiden for **Alle tilbudsanmodninger**. Den laveste status er det mindst fremskredne stadie for en linje i tilbudsanmodningssagen, mens den højeste status er det mest fremskredne stadie for en linje i tilbudsanmodningssagen. Antag f.eks., at en tilbudsanmodningssag med tre linjer sendes til to kreditorer, så der er to tilbudsanmodninger med tre linjer. Alle linjer er **Sendt**. Nu er der givet et bud fra en af kreditorerne, og linjerne i tilbudsanmodningen får statussen **Modtaget**. Det betyder, at ud af de tre linjer i tilbudsanmodningssagen er alle **Sendt** for en tilbudsanmodning og **Modtaget** for en anden tilbudsanmodning. Den laveste status bliver derefter **Sendt** , og den højeste status bliver **Modtaget.**
 
 Disse statusser beskrives mere detaljeret senere i dette emne.
 
@@ -75,7 +75,7 @@ Du kan tilsidesætte disse værdier for en bestemt tilbudsanmodningssag.
 
 Du skal også konfigurere ændringsprocessen. Som en del af denne konfiguration kan du aktivere feltlåsning. Når feltlåsning er aktiveret, skal en indkøber, der ønsker at ændre en tilbudsanmodning, først klikke på **Opret** i sektionen **Ændring** under fanen **Tilbud** for tilbudsanmodningssagen. Når tilbudsanmodningen er blevet opdateret med ændringen, skal indkøberen derefter fuldføre processen ved at vælge **Færdiggør**. Handlingen Færdiggør genererer en e-mail, der giver besked til leverandørerne om den ændrede tilbudsanmodning.
 
-På siden **Indkøbs- og forsyningsparametre** kan du vælge, hvilken skabelon der skal bruges til den mailmeddelelse, der sendes til kreditorer. Når der oprettes en skabelon i **E-mail-skabeloner**, kan den indeholde følgende erstatningstokens:
+På siden **Indkøbs- og forsyningsparametre** kan du vælge, hvilken skabelon der skal bruges til den mailmeddelelse, der sendes til kreditorer. Når der oprettes en skabelon i **E-mail-skabeloner** , kan den indeholde følgende erstatningstokens:
 
 - %Tilbudsanmodningssag%
 - %Årsag til returnering af bud%
@@ -105,7 +105,7 @@ På siden **Formularopsætning** i Indkøb og forsyning kan du konfigurere udsee
 
 > [!NOTE]
 > For en konfigurationen til offentlige institutioner skal du bruge ændringsprocessen til at ændre en tilbudsanmodning, der er allerede blevet sendt. Når en tilbudsanmodning er sendt, er felter skrivebeskyttede.
-Når du vil foretage ændringer af tilbudsanmodningen, skal du derfor vælge **Opret** for at starte ændringsprocessen som beskrevet tidligere. Låsningsfunktionen styres af indstillingen **Lås tilbudsanmodninger, når de er sendt** på siden **Indkøbs- og forsyningsparametre**. Denne parameter er som standard indstillet til **Ja**, og for en konfiguration til den offentlige sektor kan standardindstillingen ikke ændres. Derfor selvom ændringsprocessen kan håndteres manuelt i en ikke-offentlig sektor-konfiguration, skal den bruges til en offentlig sektor-konfiguration.
+Når du vil foretage ændringer af tilbudsanmodningen, skal du derfor vælge **Opret** for at starte ændringsprocessen som beskrevet tidligere. Låsningsfunktionen styres af indstillingen **Lås tilbudsanmodninger, når de er sendt** på siden **Indkøbs- og forsyningsparametre**. Denne parameter er som standard indstillet til **Ja** , og for en konfiguration til den offentlige sektor kan standardindstillingen ikke ændres. Derfor selvom ændringsprocessen kan håndteres manuelt i en ikke-offentlig sektor-konfiguration, skal den bruges til en offentlig sektor-konfiguration.
 
 Når du opretter en tilbudsanmodningssag af typen Indkøbsordre og føjer en lagervare til tilbudsanmodningen, oprettes der en lagertransaktion med tilgangsstatussen **Tilbudstilgang**. Kun linjer i tilbudsanmodningssager med denne status kommer i betragtning når du bruger en behovsplan til beregning af forsyninger. Hvis du ønsker, at behovsplanen skal omfatte tilbudsanmodningssagens linjer som en forventet tilgang, skal du konfigurere denne funktionsmåde i opsætningen af varedisponeringen.
 
@@ -120,7 +120,7 @@ Du kan angive bestemte typer af oplysninger, du ønsker at modtage fra leverand�
 1. Åbn fanen **Tilbudsanmodning**.
 1. Vælg linket **Standardanmodninger om tilbud** til svarfelter under overskriften **Angiv standardværdier for tilbudsanmodninger**.
 1. Dialogboksen **Standardfelter for svar på tilbudsanmodning** åbnes.
-1. Sektionen **Felter i tilbudsanmodningen, der er inkluderet i svarformularer for leverandørtilbudsanmodning**, indeholder en skyder for hvert felt, der er tilgængeligt for brug i svarformularer for tilbudsanmodninger. Felter, der er angivet til *Ja* i dette afsnit, medtages (sammen med deres værdier) i svarformularer for tilbudsanmodninger. Indstil skyderen til *Nej* for hvert felt, hvor du vil forhindre, at leverandører ser data, når de evaluerer bud. Det giver dig mulighed for at angive estimerede eller forventede værdier under indtastning af tilbudsanmodning til interne formål, uden at leverandøren kan se, hvad der er angivet.
+1. Sektionen **Felter i tilbudsanmodningen, der er inkluderet i svarformularer for leverandørtilbudsanmodning** , indeholder en skyder for hvert felt, der er tilgængeligt for brug i svarformularer for tilbudsanmodninger. Felter, der er angivet til *Ja* i dette afsnit, medtages (sammen med deres værdier) i svarformularer for tilbudsanmodninger. Indstil skyderen til *Nej* for hvert felt, hvor du vil forhindre, at leverandører ser data, når de evaluerer bud. Det giver dig mulighed for at angive estimerede eller forventede værdier under indtastning af tilbudsanmodning til interne formål, uden at leverandøren kan se, hvad der er angivet.
 
 Du kan tilsidesætte disse indstillinger for de enkelte tilbudsanmodningssager efter behov.
 
@@ -130,19 +130,19 @@ Du skal oprette en tilbudsanmodningssag, vælge de kreditorer, som skal byde på
 
 Du kan manuelt oprette en tilbudsanmodningssag af indkøbstypen **Indkøbsordre** eller **Købsaftale**.
 
-Hvis tilbudsanmodningssagen er af typen **Indkøbsordre**, forekommer følgende funktionsmåde, der afviger fra andre typer tilbudsanmodningssager:
+Hvis tilbudsanmodningssagen er af typen **Indkøbsordre** , forekommer følgende funktionsmåde, der afviger fra andre typer tilbudsanmodningssager:
 
 - Når der oprettes linjer for en tilbudsanmodningssag, oprettes der lagertransaktioner med tilgangsstatussen **Tilbudstilgang**.
 - Når du accepterer et tilbud, genereres der en indkøbsordre.
 
-Hvis tilbudsanmodningssagen er af typen **Købsaftale**, forekommer følgende funktionsmåde, der afviger fra andre typer tilbudsanmodningssager:
+Hvis tilbudsanmodningssagen er af typen **Købsaftale** , forekommer følgende funktionsmåde, der afviger fra andre typer tilbudsanmodningssager:
 
 - Tilbudsanmodningssagen bruges til en aftale om at købe et bestemt antal eller for en bestemt værdi af et produkt over tid. Du skal vælge det datointerval, der gælder for indkøbsaftalen, og navnet på den person, der håndterer indkøbsaftalen.
 - Når du accepterer et tilbud, genereres der en købsaftale.
 
 Hvis tilbudsanmodningssagen oprettes ud fra en indkøbsrekvisition, tildeles typen **Indkøbsrekvisition** automatisk. Du kan manuelt oprette en tilbudsanmodningssag af typen **Indkøbsrekvisition**.
 
-Du kan kun oprette en tilbudsanmodningssag ud fra en indkøbsrekvisition, hvis status for indkøbsrekvisitionen er **Til gennemsyn**, og du er tildelt den næste opgave i arbejdsgangen. Linjerne i indkøbsrekvisitionen opdateres automatisk, når du accepterer linjer fra bud (svar på tilbudsanmodninger), som du har modtaget fra kreditorer. Du kan ikke fuldføre, afvise, godkende eller udføre andre handlinger i indkøbsrekvisitionen, indtil rekvisitionslinjen opdateres med en accepteret linje i tilbudsanmodningen eller tilbudsanmodningssagen annulleres.
+Du kan kun oprette en tilbudsanmodningssag ud fra en indkøbsrekvisition, hvis status for indkøbsrekvisitionen er **Til gennemsyn** , og du er tildelt den næste opgave i arbejdsgangen. Linjerne i indkøbsrekvisitionen opdateres automatisk, når du accepterer linjer fra bud (svar på tilbudsanmodninger), som du har modtaget fra kreditorer. Du kan ikke fuldføre, afvise, godkende eller udføre andre handlinger i indkøbsrekvisitionen, indtil rekvisitionslinjen opdateres med en accepteret linje i tilbudsanmodningen eller tilbudsanmodningssagen annulleres.
 
 Når du opretter en tilbudsanmodningssag, kan du vælge en anmodningstype. Anmodningstypen bestemmer det sæt scorekriterier, der bruges til at give scoresvar på tilbudsanmodningssagen.
 
@@ -158,7 +158,7 @@ Du kan vælge kreditorerne, der skal føjes til en tilbudsanmodningssag, på tre
 
 Når tilbudsanmodningssagen er klar, skal du vælge **Send**. Handlingen Send genererer kladder og rapporter, der udskrives, arkiveres og sendes i henhold til dine indstillinger for Udskrivning.
 
-Hvis du har indstillet **Brug kreditor til genberegning af priser** og **Brug kreditorspecifikke vareoplysninger** til **Ja** på siden **Sender tilbudsanmodning**, da du sendte tilbudsanmodningen til en kreditor, angives nogle af de kreditorspecifikke oplysninger automatisk i tilbudsanmodningssagen for den pågældende kreditor.
+Hvis du har indstillet **Brug kreditor til genberegning af priser** og **Brug kreditorspecifikke vareoplysninger** til **Ja** på siden **Sender tilbudsanmodning** , da du sendte tilbudsanmodningen til en kreditor, angives nogle af de kreditorspecifikke oplysninger automatisk i tilbudsanmodningssagen for den pågældende kreditor.
 
 ## <a name="amending-an-rfq-case"></a>Ændring af en tilbudsanmodningssag
 
@@ -166,7 +166,7 @@ Nogle gange skal du ændre en tilbudsanmodningssag, når du har sendt den. Du sk
 
 Hvis du har konfigureret ændringsprocessen, så den er mere restriktiv, skal du, før du kan ændre felterne i en tilbudsanmodningssag, der er allerede sendt, vælge **Opret** i tilbudsanmodningssagen for at starte en ændring. Når du har afsluttet dine ændringer, skal du vælge **Færdiggør**. Derefter føres du gennem processen med at tilføje oplysninger i den mail, der sendes for at give leverandørerne besked om ændringen. Den opdaterede tilbudsanmodningsrapport, som indeholder en ændringsnote, knyttes automatisk til e-mailen.
 
-Hvis du har konfigureret ændringsprocessen, så den er mindre restriktiv, behøver du ikke at vælge **Opret**, før du kan redigere felterne i en tilbudsanmodningssag, der allerede er sendt. Du skal dog manuelt føje en ændringsnote til tilbudsanmodningen og sende sagen igen. Vær opmærksom på, at denne fremgangsmåde kun kan bruges, hvis ingen af svarene (buddene) er blevet redigeret. Hvis du har angivet et svar, og det er i **Modtaget**-tilstand, er knappen **Send** ikke tilgængelig. I så fald skal du vælge **Opret** og derefter **Færdiggør**, som du skal gøre i den mere restriktive proces. Svaret nulstilles derefter for at afspejle ændringerne af tilbudsanmodningssagen.
+Hvis du har konfigureret ændringsprocessen, så den er mindre restriktiv, behøver du ikke at vælge **Opret** , før du kan redigere felterne i en tilbudsanmodningssag, der allerede er sendt. Du skal dog manuelt føje en ændringsnote til tilbudsanmodningen og sende sagen igen. Vær opmærksom på, at denne fremgangsmåde kun kan bruges, hvis ingen af svarene (buddene) er blevet redigeret. Hvis du har angivet et svar, og det er i **Modtaget** -tilstand, er knappen **Send** ikke tilgængelig. I så fald skal du vælge **Opret** og derefter **Færdiggør** , som du skal gøre i den mere restriktive proces. Svaret nulstilles derefter for at afspejle ændringerne af tilbudsanmodningssagen.
 
 Hvis kreditorer bruger grænsefladen til kreditorsamarbejde til at afgive bud, skal du altid bruge ændringsprocessen for at oplyse kreditorerne om ændringerne af tilbudsanmodningssagen. Denne proces hjælper med at forhindre en situation, hvor kreditorer byder på en forældet tilbudsanmodningssag, mens de har et igangværende bud. Du kan finde flere oplysninger om kreditorsamarbejde under [Kreditorsamarbejde med eksterne kreditorer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
@@ -174,7 +174,7 @@ Hvis du vil invitere flere leverandører til at byde, og der ikke er foretaget n
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Modtagelse og registrering af svar på tilbudsanmodningen
 
-Når du sender en tilbudsanmodning, oprettes der automatisk et svarark. Når du modtager bud på en tilbudsanmodning, skal du angive dem via siden **Tilbudsanmodning** ved at klikke på handlingen **Rediger svar på tilbudsanmodning**. Dette gør det muligt at angive budoplysninger i en dedikeret budformular. Først skal **Status for svar** være **Ikke startet**. Når du klikker på **Rediger svar på tilbudsanmodning** er statussen **Indkøber opdaterer**, indtil buddet er sendt. Klik på **Send** når du har angivet oplysningerne om buddet. Svarstatussen ændres til **Sendt af indkøber**. Når kreditorsamarbejde er aktiveret, opdateres **Status for svar**, når kreditoren interagerer med buddet. Status ændres derefter fra **Kreditor opdaterer** til **Sendt af kreditor**. Når der sendes et bud, oprettes der en kladde som **Modtaget**. Svaret (buddet) skal sendes for at blive registreret som modtaget, og derefter kan det kun behandles yderligere som accepteret eller afvist.
+Når du sender en tilbudsanmodning, oprettes der automatisk et svarark. Når du modtager bud på en tilbudsanmodning, skal du angive dem via siden **Tilbudsanmodning** ved at klikke på handlingen **Rediger svar på tilbudsanmodning**. Dette gør det muligt at angive budoplysninger i en dedikeret budformular. Først skal **Status for svar** være **Ikke startet**. Når du klikker på **Rediger svar på tilbudsanmodning** er statussen **Indkøber opdaterer** , indtil buddet er sendt. Klik på **Send** når du har angivet oplysningerne om buddet. Svarstatussen ændres til **Sendt af indkøber**. Når kreditorsamarbejde er aktiveret, opdateres **Status for svar** , når kreditoren interagerer med buddet. Status ændres derefter fra **Kreditor opdaterer** til **Sendt af kreditor**. Når der sendes et bud, oprettes der en kladde som **Modtaget**. Svaret (buddet) skal sendes for at blive registreret som modtaget, og derefter kan det kun behandles yderligere som accepteret eller afvist.
 
 Hvis du vil opdatere buddet, skal du gennemgå den samme proces som ovenfor og sende igen.
 
@@ -189,7 +189,7 @@ Du kan se en oversigt over alle tilbudsanmodninger og statusser: **Sendt, Modtag
 ### <a name="accepting-and-rejecting-bids-and-transferring-accepted-bids-to-downstream-documents"></a>Acceptere og afvise bud og overføre accepterede bud til downstream-dokumenter
 
 Når du har fundet det bedste bud, f.eks. buddet med den bedste samlede pris, kan du acceptere buddet. Du kan acceptere nogle af linjerne i et bud og afvise andre.
-Du kan også acceptere linjer fra forskellige leverandører. Vær opmærksom på, at hvis du accepterer nogle linjer, bliver du bedt om at afvise alle andre linjer. Så hvis du vil acceptere andre linjer, skal du vælge **Annuller**, når du bliver bedt om det. Status for svaret på tilbudsanmodningen for hver leverandør, du accepterer bud eller linjer fra, opdateres til **Godkendt**.
+Du kan også acceptere linjer fra forskellige leverandører. Vær opmærksom på, at hvis du accepterer nogle linjer, bliver du bedt om at afvise alle andre linjer. Så hvis du vil acceptere andre linjer, skal du vælge **Annuller** , når du bliver bedt om det. Status for svaret på tilbudsanmodningen for hver leverandør, du accepterer bud eller linjer fra, opdateres til **Godkendt**.
 
 Når du opretter indkøbsordren eller købsaftalen, og har brug for at tilføje en ekstra linje til tilbudsanmodningen, kan klikke på **Tilføj linje** i linjegitteret på siden **Tilbudsanmodning**. Du kan kun få vist og redigere denne linje på siden **Tilbudsanmodning**. Den kan ses på budsiden, når den accepteres.
 
@@ -197,7 +197,7 @@ Når du accepterer et bud eller en eller flere linjer i et bud, oprettes der aut
 
 I svaret kan du tilføje en årsagskode for at forklare, hvorfor du har accepteret eller afvist et bud.
 
-Når du accepterer et bud af typen **Indkøbsrekvisition**, opdateres indkøbsrekvisitionens linjer med følgende oplysninger, som afspejler disse oplysninger fra det accepterede bud:
+Når du accepterer et bud af typen **Indkøbsrekvisition** , opdateres indkøbsrekvisitionens linjer med følgende oplysninger, som afspejler disse oplysninger fra det accepterede bud:
 
 - Enhedspris
 - Rabat %

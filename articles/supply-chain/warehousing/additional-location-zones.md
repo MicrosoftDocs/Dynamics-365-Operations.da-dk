@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLocationBuild
+ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c0bed8c95760b3dee350048c5f824f974b784f26
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658328"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016296"
 ---
 # <a name="additional-location-zones"></a>Ekstra lokationszoner
 
@@ -35,7 +35,7 @@ Der kræves ikke yderligere konfiguration for at kunne bruge zonefelterne.
 
 ## <a name="turn-on-the-additional-location-zone-feature"></a>Aktivér funktionen Ekstra lokationszone
 
-Før du kan bruge funktionen *Ekstra lokationszone*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Ekstra lokationszone* , skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Flere lokationszoner*
@@ -46,15 +46,15 @@ Før du kan bruge funktionen *Ekstra lokationszone*, skal den være aktiveret i 
 2. Angiv følgende værdier:
 
     - Vælg _62_ i feltet **Lagersted**.
-    - Gå til feltet **Zone-id**, og vælg _PRODUKTION_.
-    - Gå til feltet **Ekstra zone 1**, og vælg _PLUKZONE1_.
-    - Gå til feltet **Ekstra zone 2**, og vælg _WEBBUTIK1_.
-    - Gå til feltet **Lokationsprofil-id**, og vælg _PRODUKTION_.
+    - Gå til feltet **Zone-id** , og vælg _PRODUKTION_.
+    - Gå til feltet **Ekstra zone 1** , og vælg _PLUKZONE1_.
+    - Gå til feltet **Ekstra zone 2** , og vælg _WEBBUTIK1_.
+    - Gå til feltet **Lokationsprofil-id** , og vælg _PRODUKTION_.
 
 3. Vælg linjen **Produktion**.
-4. Gå til feltet **Fra nummer**, og angiv _1_. Gå til feltet **Til nummer**, og angiv _3_.
+4. Gå til feltet **Fra nummer** , og angiv _1_. Gå til feltet **Til nummer** , og angiv _3_.
 5. Vælg linjen **Gang**.
-6. Gå til feltet **Fra nummer**, og angiv _1_. Gå til feltet **Til nummer**, og angiv _5_.
+6. Gå til feltet **Fra nummer** , og angiv _1_. Gå til feltet **Til nummer** , og angiv _5_.
 7. Vælg **Opret**.
 8. Du modtager meddelelser om, at der er tilføjet nye lokationer. Vælg knappen **Vis meddelelser** for at få vist meddelelserne.
 9. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lokationer**. De nye lokationer vises på listen, og alle zone felter er tilgængelige (dvs. det eksisterende zonefelt og de nye ekstra zonefelter).

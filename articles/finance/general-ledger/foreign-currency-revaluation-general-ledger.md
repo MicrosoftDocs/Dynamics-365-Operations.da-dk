@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf61aa839d4d59b2c93eee9931eef0e6c51d4ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176932"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006207"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
@@ -31,7 +31,7 @@ ms.locfileid: "2176932"
 
 Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt. 
 
-I en periodeafslutning kræver regnskabsmæssige konventioner finanskontosaldi i fremmede valutaer, der reguleres ved hjælp af forskellige valutakurstyper (aktuelle, historiske, gennemsnit, osv.). For eksempel kræver en regnskabskonvention, at aktiver og passiver værdiansættes på ny ved den aktuelle valutakurs, anlægsaktiver ved den historiske valutakurs og driftskonti på det månedlige gennemsnit. Værdiregulering af udenlandsk valuta i Finans kan bruges til at regulere balancen og resultatopgørelseskonti. 
+I en periodeafslutning kræver regnskabsmæssige konventioner finanskontosaldi i fremmedvalutaer, der reguleres ved hjælp af forskellige valutakurstyper (aktuelle, historiske, gennemsnit, osv.). For eksempel kræver en regnskabskonvention, at aktiver og passiver værdiansættes på ny ved den aktuelle valutakurs, anlægsaktiver ved den historiske valutakurs og driftskonti på det månedlige gennemsnit. Værdiregulering af udenlandsk valuta i Finans kan bruges til at regulere balancen og resultatopgørelseskonti. 
 
 > [!NOTE]
 > Værdiregulering af udenlandsk valuta er også tilgængelig i Debitor- og Kreditor-modulerne. Hvis du bruger disse moduler, bør de udestående transaktioner reguleres ved hjælp af værdireguleringen af udenlandsk valuta i disse moduler. Værdiregulering af udenlandsk valuta i Debitor og Kreditor opretter en regnskabspost i Finans for at afspejle urealiseret gevinst eller tab og sikre, at reskontroer og Finans kan afstemmes. Da værdireguleringen af udenlandsk valuta i Debitor og Kreditor opretter regnskabsposter i Finans, skal debitor- og kreditorhovedkonti udelukkes fra finansmodulets værdiregulering af udenlandsk valuta. 
@@ -41,15 +41,15 @@ Når du kører processen til værdiregulering, reguleres saldoen i hver hovedkon
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Klargøre kørsel af værdiregulering af udenlandsk valuta
 Før du kan køre processen til værdiregulering, kræves følgende konfiguration.
 
--   På siden **Hovedkonto**:
+-   På siden **Hovedkonto** :
 -   Vælg **Værdiregulering af udenlandsk valuta** i finans, hvis hovedkontoen skal værdireguleres. Hvis den primære konto ikke bør reguleres (f.eks. for Debitor og Kreditor, hvis den reguleres i reskontroer), skal du fjerne markeringen i afkrydsningsfeltet.
 -   Hvis hovedkontoen er markeret til værdiregulering, skal du angive den **valutakurstypen**. Denne valutakurstype bruges til regulering af hovedkontoen. Et særskilt felt **Valutakurstype for økonomirapportering** er tilgængeligt for økonomirapportering. De to felter holdes ikke synkroniseret, så der er mulighed for forskellige valutakurstyper til værdiregulering og økonomirapportering.
 
--   På siden **Finans**:
+-   På siden **Finans** :
 -   Angiv **valutakurstypen**. Hvis valutakurstypen ikke er defineret på hovedkontoen, bruges denne valutakurstype under værdiregulering af udenlandsk valuta.
 -   Angiv den realiserede gevinst, det realiserede tab og kontiene for ikke-realiseret tab for værdiregulering af valuta. Konti for realiseret gevinst og realiseret tab bruges til udligning af debitor- og kreditortransaktioner, og konti for ikke-realiseret gevinst og ikke-realiseret tab bruges til åbne transaktioner og finanshovedkonti.
 
--   På siden **Værdireguleringskonti for valuta**:
+-   På siden **Værdireguleringskonti for valuta** :
 -   Vælg forskellige konti til valutaværdiregulering for hver valuta og virksomhed. Hvis der ikke er defineret nogen konti, bruges kontiene på siden **Finans**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Behandle værdiregulering af udenlandsk valuta
@@ -67,7 +67,7 @@ Værdireguleringsprocessen kan køres for en eller flere juridiske enheder. Opsl
 
 Reguleringen kan køres i en eller flere udenlandske valutaer. Opslaget omfatter alle de valutaer, der er bogført inden for datointervallet, der er relevant for typen af hovedkonto (Balancen eller Drift), for de juridiske enheder, der er valgt til værdiregulering. Regnskabsvalutaen medtages på listen, men intet reguleres, hvis regnskabsvalutaen er valgt. 
 
-Indstil **Forhåndsvisning før bogføring** til **Ja**, hvis du vil have vist resultatet af værdireguleringen af Finans. Forhåndsvisningen i Finans er forskellig fra simuleringen i værdireguleringen af udenlandsk valuta i Debitor og Kreditor, hvor simuleringen er en rapport, men Finans har en forhåndsvisning, der kan bogføres uden at køre værdireguleringsprocessen igen.. Resultaterne af forhåndsvisningen kan eksporteres til Microsoft Excel for at bevare en oversigt over, hvordan beløbene er beregnet. Du kan ikke bruge batchbehandling, hvis du vil have en forhåndsvisning af resultaterne af reguleringen. I forhåndsvisningen har brugeren mulighed for at bogføre resultaterne af alle de juridiske enheder med knappen **Bogfør**. Hvis der er et problem med resultaterne for en juridisk enhed, har brugeren også mulighed for at bogføre et undersæt af de juridiske enheder ved hjælp af knappen **Vælg juridiske enheder, som skal bogføres**. 
+Indstil **Forhåndsvisning før bogføring** til **Ja** , hvis du vil have vist resultatet af værdireguleringen af Finans. Forhåndsvisningen i Finans er forskellig fra simuleringen i værdireguleringen af udenlandsk valuta i Debitor og Kreditor, hvor simuleringen er en rapport, men Finans har en forhåndsvisning, der kan bogføres uden at køre værdireguleringsprocessen igen.. Resultaterne af forhåndsvisningen kan eksporteres til Microsoft Excel for at bevare en oversigt over, hvordan beløbene er beregnet. Du kan ikke bruge batchbehandling, hvis du vil have en forhåndsvisning af resultaterne af reguleringen. I forhåndsvisningen har brugeren mulighed for at bogføre resultaterne af alle de juridiske enheder med knappen **Bogfør**. Hvis der er et problem med resultaterne for en juridisk enhed, har brugeren også mulighed for at bogføre et undersæt af de juridiske enheder ved hjælp af knappen **Vælg juridiske enheder, som skal bogføres**. 
 
 Når processen til værdiregulering af udenlandsk valuta er fuldført, oprettes der en post for at registrere historikken for hver kørsel.  Der oprettes en separat post for hver juridiske enhed og posteringslag.
 
@@ -76,38 +76,33 @@ Ikke-realiseret gevinst/tab-posteringer oprettes forskelligt mellem Finans-værd
 
 **Eksempel** Der findes følgende saldi for hovedkontoen 110110.
 
-|            |                    |                        |                       |
+| Dato   | Finanskonto| Transaktionsbeløb | Regnskabsbeløb |
 |------------|--------------------|------------------------|-----------------------|
-| **Dato**   | **Finanskonto** | **Transaktionsbeløb** | **Regnskabsbeløb** |
 | 20. januar | 110110 (Kontant)      | 500 EUR (Debet)        | 1000 USD (Debet)      |
 
 Hovedkontoen værdireguleres den 31 januar.  Ikke-realiseret gevinst eller tab beregnes på følgende måde.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuel saldo i transaktionsvaluta | Aktuel saldo i regnskabsvaluta | Valutakurs på værdiregulering | Nyt beløb i regnskabsvaluta | Ikke-realiseret gevinst/tab    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuel saldo i transaktionsvaluta** | **Aktuel saldo i regnskabsvaluta** | **Valutakurs på værdiregulering** | **Nyt beløb i regnskabsvaluta** | **Ikke-realiseret gevinst/tab**    |
 | 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 tab (833,33 – 1000) |
 
 Der oprettes følgende regnskabspost.
 
-|            |                          |           |            |
+| Dato   | Finanskonto       | Debet | Kredit |
 |------------|--------------------------|-----------|------------|
-| **Dato**   | **Finanskonto**       | **Debet** | **Kredit** |
 | 31. januar | 110110 (Kontant)            |           | 166.67     |
 | 31. januar | 801400 (Ikke-realiseret tab) | 166.67    |            |
 
 Ingen nye posteringer, der bogføres for februar måned.  Hovedkontoen værdireguleres den 28. februar.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuel saldo i transaktionsvaluta | Aktuel saldo i regnskabsvaluta | Valutakurs på værdiregulering | Nyt beløb i regnskabsvaluta | Ikke-realiseret gevinst/tab    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuel saldo i transaktionsvaluta** | **Aktuel saldo i regnskabsvaluta** | **Valutakurs på værdiregulering** | **Nyt beløb i regnskabsvaluta** | **Ikke-realiseret gevinst/tab**    |
 | 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | 416,67 gevinst (1250 – 833,33) |
 
 Der oprettes følgende regnskabspost.
 
-|             |                          |           |            |
+| Dato    | Finanskonto       | Debet | Kredit |
 |-------------|--------------------------|-----------|------------|
-| **Dato**    | **Finanskonto**       | **Debet** | **Kredit** |
 | 28. februar | 110110 (Kontant)            | 416.67    |            |
 | 28. februar | 801600 (Ikke-realiseret gevinst) |           | 416.67     |
 

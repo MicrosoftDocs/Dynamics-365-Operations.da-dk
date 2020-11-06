@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1eb5e4ea8d086baeee686ccb3d044b3ef9d2a4fa
-ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
+ms.openlocfilehash: 961e6a167d4fe48c96bffcff1e54acde0ad5d805
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3818566"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997418"
 ---
 # <a name="dual-write-overview"></a>Oversigt over dobbeltskrivning
 
@@ -34,13 +33,13 @@ ms.locfileid: "3818566"
 
 ## <a name="what-is-dual-write"></a>Hvad er dobbeltskrivning?
 
-Dobbeltskrivning er en brugsklar infrastruktur, der giver næsten realtidsinteraktion mellem Customer Engagement-apps og Finance and Operations-apps. Når data om kunder, produkter, personer og handlinger går ud over programgrænserne, styrkes alle afdelinger i en organisation.
+Dobbeltskrivning er en brugsklar infrastruktur, der giver næsten realtidsinteraktion mellem kundeengagementapps og Finance and Operations-apps. Når data om kunder, produkter, personer og handlinger går ud over programgrænserne, styrkes alle afdelinger i en organisation.
 
 Dobbeltskrivning giver en tæt kombineret, tovejsintegration mellem Finance and Operations-apps og Common Data Service. Alle dataændringer i Finance and Operations-apps forårsager ændringer i Common Data Service, og alle dataændringer i Common Data Service medfører ændringer i Finance and Operations-apps. Dette automatiserede dataflow giver en integreret brugeroplevelse på tværs af apps.
 
 ![Datarelation mellem apps](media/dual-write-overview.jpg)
 
-Dobbeltskrivning har to aspekter: et *infrastruktur*-aspekt og et *program*-aspekt.
+Dobbeltskrivning har to aspekter: et *infrastruktur* -aspekt og et *program* -aspekt.
 
 ### <a name="infrastructure"></a>Infrastruktur
 
@@ -59,7 +58,7 @@ Dobbeltskrivningsinfrastrukturen kan udvides og er pålidelig og indeholder føl
 
 ### <a name="application"></a>Applikation
 
-Dobbeltskrivning opretter en tilknytning mellem koncepter i Finance and Operations-apps og koncepter i Customer Engagement-apps. Denne integration understøtter følgende scenarier:
+Dobbeltskrivning opretter en tilknytning mellem koncepter i Finance and Operations-apps og koncepter i kundeengagementapps. Denne integration understøtter følgende scenarier:
 
 + Integreret kundemaster
 + Adgang til kundefordelskundekort og belønningspoint
@@ -90,9 +89,9 @@ Dobbeltskrivning giver dataintegration på tværs af Microsoft Dynamics 365-prog
 + Infrastrukturen med dobbeltskrivninger følger princippet om ingen kode/lav kode. Der kræves en minimal teknisk indsats for at udvide standard tabel-til-tabel-tilknytningerne og for at medtage brugerdefinerede kort.
 + Dobbeltskrivning understøtter både onlinetilstand og offlinetilstand. Microsoft er det eneste firma, der tilbyder support til online- og offline-tilstand.
 
-## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Hvad betyder dobbeltskrivning for udviklere og arkitekter af Customer Engagement-apps?
+## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Hvad betyder dobbeltskrivning for udviklere og arkitekter af kundeengagementapps?
 
-Dobbeltskrivning automatiserer datastrømmen mellem Finance and Operations-apps og Customer Engagement-apps. Dobbeltskrivning består af to AppSource-løsninger, der er installeret på Common Data Service. Løsningerne udvider enhedsskemaet, plug-ins og arbejdsprocesser på Common Data Service, så de kan skaleres til ERP-størrelse. For at opnå en vellykket implementering skal udviklere og arkitekter af Customer Engagement-apps forstå disse ændringer og samarbejde med deres kolleger på Finance and Operations-apps.
+Dobbeltskrivning automatiserer datastrømmen mellem Finance and Operations-apps og kundeengagementapps. Dobbeltskrivning består af to AppSource-løsninger, der er installeret på Common Data Service. Løsningerne udvider enhedsskemaet, plug-ins og arbejdsprocesser på Common Data Service, så de kan skaleres til ERP-størrelse. For at opnå en vellykket implementering skal udviklere og arkitekter af kundeengagementapps forstå disse ændringer og samarbejde med deres kolleger på Finance and Operations-apps.
 
 For at skabe paritet med Finance and Operations-programmer foretager dobbeltskrivning vigtige ændringer i Common Data Service-skemaet. Hvis du forstår planen, kan du slippe for at ændre noget design og udvikling fremover.
 
@@ -100,7 +99,7 @@ For at skabe paritet med Finance and Operations-programmer foretager dobbeltskri
 
 + Aktiviteter og noter samles og udvides til at understøtte både C1s (brugere af systemet) og C2s (systemkunder).
 
-+ Hvis du vil undgå tab af data i forbindelse med valutaoverførsel mellem Finance and Operations-apps og Common Data Service, kan du udvide antallet af decimaler i valutadatatypen for Customer Engagement-apps. Med denne funktion oversættes eksisterende poster automatisk til den nye udvidede tilstand på metadatalaget. I løbet af denne proces oversættes valutaværdien til decimaldata og ikke til pengedata, og valutaværdien understøtter 10 decimalpladser. Denne funktion er et tilvalg, og organisationer, der ikke har brug for mere end 4 decimaler, behøver ikke at tilmelde sig. Du kan finde flere oplysninger under [Migrering af valutadatatype til dobbeltskrivning](currrency-decimal-places.md).
++ Hvis du vil undgå tab af data i forbindelse med valutaoverførsel mellem Finance and Operations-apps og Common Data Service, kan du udvide antallet af decimaler i valutadatatypen for kundeengagementapps. Med denne funktion oversættes eksisterende poster automatisk til den nye udvidede tilstand på metadatalaget. I løbet af denne proces oversættes valutaværdien til decimaldata og ikke til pengedata, og valutaværdien understøtter 10 decimalpladser. Denne funktion er et tilvalg, og organisationer, der ikke har brug for mere end 4 decimaler, behøver ikke at tilmelde sig. Du kan finde flere oplysninger under [Migrering af valutadatatype til dobbeltskrivning](currrency-decimal-places.md).
 
 + [Gyldighedsdato](../../dev-tools/date-effectivity.md) vil blive føjet til Common Data Service. Den understøtter tidligere, nuværende og fremtidige data på samme enhed.
 

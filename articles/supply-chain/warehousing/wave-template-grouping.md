@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4dd188cbd17cfed372283ecb3389633b0c0021eb
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530460"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015820"
 ---
 # <a name="wave-template-grouping"></a>Bølgeskabelongruppering
 
@@ -33,7 +34,7 @@ Gruppering af bølgeskabeloner gør, at systemet kan bruge opsætninger af [bøg
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>Slå funktionen til gruppering af bølgeskabeloner til
 
-Før du kan bruge funktionen *Gruppering af bølgeskabeloner*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Gruppering af bølgeskabeloner* , skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Gruppering af bølgeskabeloner*
@@ -52,7 +53,7 @@ Hvis du vil gøre gruppering af bølgeskabeloner tilgængelig, skal du følge di
     - **Udfør behandling af bølgen ved frigivelse til lagerstedet:** *Nej*
 
 1. I handlingsruden skal du vælge **Rediger forespørgsel** for at åbne dialogboksen med forespørgslen.
-1. Gennemgå sorteringskriterierne under fanen sortering i dialogboksen **Forespørgsel**, og sørg for, at der findes en regel, der omfatter det felt, du vil bruge til at gruppere dine bølger.
+1. Gennemgå sorteringskriterierne under fanen sortering i dialogboksen **Forespørgsel** , og sørg for, at der findes en regel, der omfatter det felt, du vil bruge til at gruppere dine bølger.
 
     Hvis du forbereder at arbejde gennem scenariet med demonstrationsdata, skal du tilføje en række, der har følgende værdier:
 
@@ -78,7 +79,7 @@ Dette afsnit indeholder et script, som du kan arbejde med for at finde ud af, hv
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
 
 Du kan også bruge dette scenarie som vejledning til brug af funktionen, når du arbejder i et produktionssystem. Du skal dog i det tilfælde erstatte dine egne værdier, og du mangler muligvis nogle typer påkrævede poster, som standarddemodataene giver.
 
@@ -92,15 +93,15 @@ Før du går i gang, skal du forberede din bølgeskabelon som beskrevet i afsnit
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette en ny salgsordre.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
-    - Gå til oversigtspanelet **Kunde**, indstil feltet **Kundekonto** til *US-004*.
+    - Gå til oversigtspanelet **Kunde** , indstil feltet **Kundekonto** til *US-004*.
     - I oversigtspanelet **Generelt** skal du indstille **Lagersted** til *62*.
 
 1. Vælg **OK** for at oprette de nye salgsordrer og lukke dialogboksen **Opret salgsordrer**.
 1. Den nye salgsordre åbnes i visningen **Linjer**. Notér dig salgsordrenummeret.
 1. Skift til **overskriftsvisningen**.
-1. Gå til oversigtspanelet **Levering** i sektionen **Transport**, og angiv følgende værdier:
+1. Gå til oversigtspanelet **Levering** i sektionen **Transport** , og angiv følgende værdier:
 
     - **Fragtmand:** *Air Cargo*
     - **Fragttjeneste:** *Air*
@@ -129,15 +130,15 @@ Før du går i gang, skal du forberede din bølgeskabelon som beskrevet i afsnit
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette en ny salgsordre.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
-    - Gå til oversigtspanelet **Kunde**, indstil feltet **Kundekonto** til *US-005*.
+    - Gå til oversigtspanelet **Kunde** , indstil feltet **Kundekonto** til *US-005*.
     - I oversigtspanelet **Generelt** skal du indstille **Lagersted** til *62*.
 
 1. Vælg **OK** for at oprette de nye salgsordrer og lukke dialogboksen **Opret salgsordrer**.
 1. Den nye salgsordre åbnes i visningen **Linjer**. Notér dig salgsordrenummeret.
 1. Skift til **overskriftsvisningen**.
-1. Gå til oversigtspanelet **Levering** i sektionen **Transport**, og angiv følgende værdier:
+1. Gå til oversigtspanelet **Levering** i sektionen **Transport** , og angiv følgende værdier:
 
     - **Fragtmand:** *Flower moving*
     - **Fragttjeneste:** *Std*
@@ -168,15 +169,15 @@ Der blev oprettet en ny bølge til denne forsendelse, fordi den bruger en anden 
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette en ny salgsordre.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
-    - Gå til oversigtspanelet **Kunde**, indstil feltet **Kundekonto** til *US-006*.
+    - Gå til oversigtspanelet **Kunde** , indstil feltet **Kundekonto** til *US-006*.
     - I oversigtspanelet **Generelt** skal du indstille **Lagersted** til *62*.
 
 1. Vælg **OK** for at oprette de nye salgsordrer og lukke dialogboksen **Opret salgsordrer**.
 1. Den nye salgsordre åbnes i visningen **Linjer**. Notér dig salgsordrenummeret.
 1. Skift til **overskriftsvisningen**.
-1. Gå til oversigtspanelet **Levering** i sektionen **Transport**, og angiv følgende værdier:
+1. Gå til oversigtspanelet **Levering** i sektionen **Transport** , og angiv følgende værdier:
 
     - **Fragtmand:** *Air Cargo*
     - **Fragttjeneste:** *Air*

@@ -8,7 +8,7 @@ ms.topic: configure-wave-label-printing
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e3b04eea7bd7dd689f8a918820ffdb4a72d813dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986017"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016948"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Konfigurere og bruge bølgeetiketudskrivning
 
@@ -56,7 +56,7 @@ Disse forbedringer gør det mere effektivt at mærke kartoner før palletisering
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Slå funktionen til udskrivning af bølgeetiketter til
 
-Før du kan bruge funktionen *Udskrivning af bølgeetiketter*, skal den være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+Før du kan bruge funktionen *Udskrivning af bølgeetiketter* , skal den være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Udskrivning af bølgeetiketter*
@@ -134,7 +134,7 @@ Etiketlayoutet bestemmer, hvilke oplysninger der udskrives på etiketten, og hvo
 
 1. Hvis du vil have mulighed for at udskrive fragtseddel-id'et, skal du under fanen **Join-forbindelser** vælge tabellen **Arbejdslinje** og knytte tabellen **Forsendelser** til den.
 1. Luk dialogboksen for forespørgselseditoren.
-1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved**, **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
+1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved** , **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -234,7 +234,7 @@ Opret derefter en bølgeetiketskabelon til bølgeetikettypen.
     - **Kode for bølgetrin:** *UdskrivEtiket*
     - **Lagersted:** *62*
 
-1. Gå til oversigtspanelet **Generelt**, og indstil feltet **Bølgeetikettype**  til *Karton*.
+1. Gå til oversigtspanelet **Generelt** , og indstil feltet **Bølgeetikettype**  til *Karton*.
 1. I oversigtspanelet **Detaljer om bølgeetiketskabeloner** skal du tilføje en ny række, der har følgende indstillinger:
 
     - **Etiketlayout-id:** *karton*
@@ -242,7 +242,7 @@ Opret derefter en bølgeetiketskabelon til bølgeetikettypen.
     - **Kør forespørgsel:** *Ja* (denne indstilling er valgfri, men den anbefales for at opnå den optimale ydeevne).
 
 1. Vælg **Gem** i handlingsruden.
-1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner**, og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
+1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner** , og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
 
     - **Tabel:** *Forsendelser*
     - **Afledt tabel:** *Forsendelser*
@@ -305,7 +305,7 @@ Nummerserieudvidelser styrer GS1-overholdelse af specifikke nummerserier. Denne 
 
     - Systemet behandler den oprettede forsendelse ved hjælp af den skabelon, der indeholder trinnet til udskrivning af etiketter. Etiketlayoutet bruges til at definere etikettens format, og resultatet vil være en etiket, der udskrives på den printer, der er valgt i etiketskabelonen.
     - Der genereres og udskrives bølgeetiketter. Antallet af etiketter vil være lig med antallet af kartoner (i dette eksempel 376 boks-etiketter til linje 1 og 322 boks-etiketter til linje 2).
-    - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18**-nummerformatet. 
+    - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18** -nummerformatet. 
 
 Du kan få vist og udskrive bølgeetiketter fra følgende sider. Gå til handlingsruden på enhver side, og vælg **Bølgeetiketter** i gruppen **Relaterede oplysninger** under fanen **Forsendelser**.
 
@@ -391,7 +391,7 @@ Med bølgeskabeloner kan du knytte bestemte forekomster af bølgemetoder til en 
 
 1. Hvis du vil have mulighed for at udskrive fragtseddel-id'et, skal du under fanen **Join-forbindelser** vælge tabellen **Arbejdslinje** og knytte tabellen **Forsendelser** til den.
 1. Luk dialogboksen for forespørgselseditoren.
-1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved**, **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
+1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved** , **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -444,7 +444,7 @@ Din etiket er nu klar til brug.
     - **Kør forespørgsel:** *Ja* (denne indstilling er valgfri, men den anbefales for at opnå den optimale ydeevne).
 
 1. Vælg **Gem** i handlingsruden.
-1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner**, og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
+1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner** , og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
 
     - **Tabel:** *Forsendelser*
     - **Afledt tabel:** *Forsendelser*
@@ -503,7 +503,7 @@ Nummerserieudvidelser styrer GS1-overholdelse af specifikke nummerserier. Denne 
     Følgende hændelser forekommer:
 
     - Systemet behandler den oprettede forsendelse ved hjælp af den skabelon, der indeholder trinnet til udskrivning af etiketter. Etiketlayoutet bruges til at definere etikettens format, og slutresultatet vil være en etiket, der har fem linjer, og som udskrives på den printer, der er valgt i etiketskabelonen.
-    - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18**-nummerformatet. 
+    - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18** -nummerformatet. 
 
 Du kan udskrive disse bølgeetiketter igen ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Historik over bølgeetiketter**.
 
@@ -583,7 +583,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 1. Hvis du vil have mulighed for at udskrive fragtseddel-id'et, skal du under fanen **Join-forbindelser** vælge tabellen **Arbejdslinje** og knytte tabellen **Forsendelser** til den. 
 1. Luk dialogboksen for forespørgselseditoren.
-1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved**, **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
+1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved** , **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
 
 
     ```plaintext
@@ -695,7 +695,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 1. Hvis du vil have mulighed for at udskrive fragtseddel-id'et, skal du under fanen **Join-forbindelser** vælge tabellen **Arbejdslinje** og knytte tabellen **Forsendelser** til den.
 1. Luk dialogboksen for forespørgselseditoren.
-1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved**, **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
+1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved** , **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en kode for det påkrævede sidehoved. Hvis du f. eks. bruger Zebra-printere, kan du bruge følgende kode.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -733,7 +733,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
     - **Beskrivelse:** *Brudetiket*
 
 1. Vælg **Gem** i handlingsruden.
-1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved**, **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en ZPL-kode for det påkrævede sidehoved. Her er et eksempel.
+1. Oversigtspanelet **Layout af printertekst** indeholder tre sektioner, hvor du kan skrive printerkode: **Sidehoved** , **Brødtekst** og **Sidefod**. I sektionen **Sidehoved** skal du i feltet **Etiketsidehoved** angiv en ZPL-kode for det påkrævede sidehoved. Her er et eksempel.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -769,7 +769,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 ### <a name="set-up-unit-sequence-groups"></a>Konfigurer enhedsseriegrupper
 
 1. Gå til **Lokationsstyring \> Opsætning \> Lagersted \> Enhedsseriegrupper**.
-1. Vælg eller opret en **Hver boks PL**-gruppe.
+1. Vælg eller opret en **Hver boks PL** -gruppe.
 1. For linjen **Boks** skal du indstille feltet **Bølgeniveautype** til *Karton*.
 1. For linjen **PL** skal du indstille feltet **Bølgeniveautype** til *Palle*.
 
@@ -791,7 +791,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
     - **Kør forespørgsel:** *Ja* (denne indstilling er valgfri, men den anbefales for at opnå den optimale ydeevne).
 
 1. Vælg **Gem** i handlingsruden.
-1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner**, og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
+1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner** , og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
 
     - **Tabel:** *Forsendelser*
     - **Afledt tabel:** *Forsendelser*
@@ -818,13 +818,13 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 1. Vælg **OK** for at lukke dialogboksen for forespørgselseditoren.
 1. I en meddelelsesboks beder dig om at bekræfte nulstillingen af grupperingsfunktionen. Vælg **Ja** for at fortsætte.
 1. Gå til handlingsruden, og vælg **Gruppe af bølgeetiketskabeloner**.
-1. Gå til dialogboksen **Gruppe af bølgeetiketskabeloner**, og angiv følgende værdier for hver række i feltet **Referencefeltnavn**, der er angivet til *Forsendelses-id*:
+1. Gå til dialogboksen **Gruppe af bølgeetiketskabeloner** , og angiv følgende værdier for hver række i feltet **Referencefeltnavn** , der er angivet til *Forsendelses-id* :
 
     - **Udskriv brudetiket:** Markér dette afkrydsningsfelt.
-    - **Etiketlayout-id:** Vælg en brudetiket. (Du kan f.eks. vælge det etiketlayout for *Brud*, som du har oprettet tidligere i dette scenarie.)
+    - **Etiketlayout-id:** Vælg en brudetiket. (Du kan f.eks. vælge det etiketlayout for *Brud* , som du har oprettet tidligere i dette scenarie.)
     - **Printernavn:** Vælg printeren til brudetiketten. (Hvis du vil opdele etiketten, skal du son regel vælge den samme printer, som er valgt i oversigtspanelet **Detaljer om bølgetiketskabeloner**. Andre scenarier er dog mulige.)
 
-1. Når det gælder den række, hvor feltet **Referencefeltnavn** er indstillet til *Referencelastlinje-id*, skal du markere afkrydsningsfeltet **Etiket-build-id**.
+1. Når det gælder den række, hvor feltet **Referencefeltnavn** er indstillet til *Referencelastlinje-id* , skal du markere afkrydsningsfeltet **Etiket-build-id**.
 
     > [!NOTE]
     > Denne opsætning opretter en etiketserie ("karton 1 af X") pr. lastlinje i hele bølgen, uanset opsætningen af arbejdsgrupperingen. Denne etiketserie kan udskrives på et etiketlayout. Derudover vil etiketter til forskellige forsendelser blive adskilt af den valgte brudetiket.
@@ -845,7 +845,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
     - **Kør forespørgsel:** *Ja* (denne indstilling er valgfri, men den anbefales for at opnå den optimale ydeevne).
 
 1. Vælg **Gem** i handlingsruden.
-1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner**, og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
+1. Valgfrit: Hvis du konfigurerer et kundespecifikt etiketdesign, skal du oprette en forespørgsel for at finde kundens konto. Gå til oversigtspanelet **Detaljer om bølgeetiketskabeloner** , og vælg **Rediger forespørgsel**. I dialogboksen for forespørgselseditor skal du derefter under fanen **Område** tilføje en række, der har følgende indstillinger:
 
     - **Tabel:** *Forsendelser*
     - **Afledt tabel:** *Forsendelser*
@@ -872,13 +872,13 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 1. Vælg **OK** for at lukke dialogboksen for forespørgselseditoren.
 1. I en meddelelsesboks beder dig om at bekræfte nulstillingen af grupperingsfunktionen. Vælg **Ja** for at fortsætte.
 1. Gå til handlingsruden, og vælg **Gruppe af bølgeetiketskabeloner**.
-1. Gå til dialogboksen **Gruppe af bølgeetiketskabeloner**, og angiv følgende værdier for hver række i feltet **Referencefeltnavn**, der er angivet til *Forsendelses-id*:
+1. Gå til dialogboksen **Gruppe af bølgeetiketskabeloner** , og angiv følgende værdier for hver række i feltet **Referencefeltnavn** , der er angivet til *Forsendelses-id* :
 
     - **Udskriv brudetiket:** Markér dette afkrydsningsfelt.
-    - **Etiketlayout-id:** Vælg en brudetiket. (Du kan f.eks. vælge det etiketlayout for *Brud*, som du har oprettet tidligere i dette scenarie.)
+    - **Etiketlayout-id:** Vælg en brudetiket. (Du kan f.eks. vælge det etiketlayout for *Brud* , som du har oprettet tidligere i dette scenarie.)
     - **Printernavn:** Vælg printeren til brudetiketten. (Hvis du vil opdele etiketten, skal du son regel vælge den samme printer, som er valgt i oversigtspanelet **Detaljer om bølgetiketskabeloner**. Andre scenarier er dog mulige.)
 
-1. Når det gælder den række, hvor feltet **Referencefeltnavn** er indstillet til *Referencelastlinje-id*, skal du markere afkrydsningsfeltet **Etiket-build-id**.
+1. Når det gælder den række, hvor feltet **Referencefeltnavn** er indstillet til *Referencelastlinje-id* , skal du markere afkrydsningsfeltet **Etiket-build-id**.
 
     > [!NOTE]
     > Denne opsætning opretter en etiketserie ("karton 1 af X") pr. lastlinje i hele bølgen, uanset opsætningen af arbejdsgrupperingen. Denne etiketserie kan udskrives på et etiketlayout. Derudover vil etiketter til forskellige forsendelser blive adskilt af den valgte brudetiket.
@@ -921,7 +921,7 @@ Nummerserieudvidelser styrer GS1-overholdelse af specifikke nummerserier. Denne 
 
     - Systemet behandler den oprettede forsendelse ved hjælp af den skabelon, der indeholder trinnet til udskrivning af etiketter. Etiketlayoutet bruges til at definere etikettens format, og resultatet vil være en etiket, der udskrives på den printer, der er valgt i etiketskabelonen.
     - Der genereres og udskrives bølgeetiketter. Antallet af etiketter vil være lig med antallet af kartoner (i dette eksempel 376 boks-etiketter til linje 1, 322 boks-etiketter til linje 2, 47 palle-etiketter til linje 1, 47 palle-etiketter til linje 2 og to brudetiketter, der har forsendelses-id'et).
-    - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18**-nummerformatet. 
+    - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18** -nummerformatet. 
 
 Du kan få vist og udskrive bølgeetiketter fra følgende sider:
 

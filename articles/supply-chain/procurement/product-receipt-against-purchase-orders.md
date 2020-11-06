@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5868b9ef02bdbca33c9e155af3bf7540f0522f86
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208034"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018853"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produktkvittering sammenlignet med indkøbsordrer
 
@@ -34,7 +34,7 @@ I dette emne beskrives de forskellige indstillinger for registrering af produkte
 Produktkvittering er registreringen af, at der er modtaget bestilte produkter, så indkøbsordrelinjerne (IO) derefter kan behandles med henblik på fakturering. I nogle tilfælde gennemgår produkter forudregistrering, hvor yderligere oplysninger fra leverandøren registreres, før produkterne modtages. Når produkterne ankommer, skal de først er markeret som **Registreret**. Produkterne skal derefter muligvis igennem flere processer, som kvalitetsstyring, før de endelig markeres som **Modtaget**.
 
 ## <a name="preregistration-asn"></a>Forudregistrering (ASN)
-Leverandører kan dele oplysninger om produkter, der skal leveres. Du kan i dette tilfælde forudregistrere produkter for at registrere disse oplysninger, før produkterne modtages. Ved at forudregistrere produkter kan du reducere mængden af arbejde, der kræves under vareregistrering og modtagelse. Leverandører kan levere produktoplysninger elektronisk via ASN (Advance Shipment Notice), som derefter registreres automatisk i systemet. Oplysningerne i ASN omfatter antallet af produkter, der skal leveres, og den dato, hvor de skal afsendes. ASN kan også indeholde oplysninger som batch- eller serienumre. Registrering af ASN sker **Transportstyring**-modulet.
+Leverandører kan dele oplysninger om produkter, der skal leveres. Du kan i dette tilfælde forudregistrere produkter for at registrere disse oplysninger, før produkterne modtages. Ved at forudregistrere produkter kan du reducere mængden af arbejde, der kræves under vareregistrering og modtagelse. Leverandører kan levere produktoplysninger elektronisk via ASN (Advance Shipment Notice), som derefter registreres automatisk i systemet. Oplysningerne i ASN omfatter antallet af produkter, der skal leveres, og den dato, hvor de skal afsendes. ASN kan også indeholde oplysninger som batch- eller serienumre. Registrering af ASN sker **Transportstyring** -modulet.
 
 ## <a name="registration"></a>Registrering
 Produktregistrering sker ofte ved modtagelsesområdet på et lagersted. Den udføres ved hjælp af en håndholdt enhed eller ved hjælp af modtagelseskladder. Du kan også registrere produktkvittering manuelt ved hjælp af handlingen **Registrering** på siden **Indkøbsordre**. I begge tilfælde markeres produkterne som **Registreret**. Bemærk, at produkterne endnu ikke er markeret som **Modtaget**.  
@@ -42,7 +42,7 @@ Produktregistrering sker ofte ved modtagelsesområdet på et lagersted. Den udf�
 Produkter, der modtages på et lagersted, kan passere gennem kvalitetskontrol, før de lægges på lager. Enten kvalitetsordrer eller karantæneordrer kan bruges til at udføre kvalitetskontrol. Hvis der bruges kvalitetsordrer, kan du konfigurere processen for midlertidigt at blokere produkter via en reservation, mens de undersøges. Hvis der bruges karantæneordrer, flyttes produkter til et andet lagersted til inspektion. Dette lagersted er kendt som karantænelagerstedet. I begge kvalitetsinspektionsprocesser kan nogle af varerne kasseres, enten fordi de ikke lever op til kvalitetsforventningerne, eller fordi kvalitetsinspektionen indebærer destruktive test af en stikprøve af produktet.
 
 ## <a name="product-receipt"></a>Produktkvittering
-Oftest bruges handlingen **Produktkvittering** på siden **Indkøbsordrer** til at markere produkter som **Modtaget** på indkøbsordren. Siden **Konterer produktkvittering** har forskellige indstillinger for det antal, der er bogført som modtaget. For eksempel kan du indstille feltet **Antal** til **Bestilt antal** eller **Antal til modtagelse nu**. Alternativt, hvis der er brugt en lagersteds-modtagelsesproces, skal du ofte indstille feltet til **Registreret antal**. Du kan ændre antallet på hver ordrelinje, der skal markeres som **Modtaget**, for at tage højde for eventuelle uoverensstemmelser, som f.eks. underlevering og overlevering. Under produktkvitteringen skal du angive et produktkvitterings-id, som typisk er en reference til følgesedlen fra leverandøren. Dette id er påkrævet ved regnskabsføring, fordi det giver mulighed for kontrol eller revision af leverandørens følgesedler i forhold til, hvad der er modtaget, og de tilskrevne lager eller udgifter.  
+Oftest bruges handlingen **Produktkvittering** på siden **Indkøbsordrer** til at markere produkter som **Modtaget** på indkøbsordren. Siden **Konterer produktkvittering** har forskellige indstillinger for det antal, der er bogført som modtaget. For eksempel kan du indstille feltet **Antal** til **Bestilt antal** eller **Antal til modtagelse nu**. Alternativt, hvis der er brugt en lagersteds-modtagelsesproces, skal du ofte indstille feltet til **Registreret antal**. Du kan ændre antallet på hver ordrelinje, der skal markeres som **Modtaget** , for at tage højde for eventuelle uoverensstemmelser, som f.eks. underlevering og overlevering. Under produktkvitteringen skal du angive et produktkvitterings-id, som typisk er en reference til følgesedlen fra leverandøren. Dette id er påkrævet ved regnskabsføring, fordi det giver mulighed for kontrol eller revision af leverandørens følgesedler i forhold til, hvad der er modtaget, og de tilskrevne lager eller udgifter.  
 
 IO'er kan oprettes for produkter, der ikke er beregnet som lager, men betragtes som en udgift. Denne kategori omfatter ordrelinjer, hvor produkterne er markeret som **Ikke på lager** af deres lagermodelgruppe, og også linjer, der bruger indkøbskategorier. Varerne kan i så fald ikke passere gennem registrering ved ankomst og modtagelse på lagerstedet. I stedet for bruges handlingen **Produktkvittering** til at registrere modtagelsen direkte på indkøbsordren, og modtagelsen baseres på det bestilte antal og ikke et registreret antal.  
 

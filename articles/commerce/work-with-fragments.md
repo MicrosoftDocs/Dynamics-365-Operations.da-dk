@@ -3,7 +3,7 @@ title: Arbejde med fragmenter
 description: Dette emne beskriver, hvorfor, hvornår og hvordan du bruger fragmenter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961652"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019558"
 ---
 # <a name="work-with-fragments"></a>Arbejde med fragmenter 
 
@@ -58,31 +58,27 @@ Du kan enten oprette et nyt fragment eller gemme en eksisterende modulkonfigurat
 
 ### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Gemme en eksisterende modulkonfiguration som et fragment
 
-Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan genbruges, skal du følge disse trin.
+Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan genbruges, skal du følge disse trin i Commerce-webstedsgenerator.
 
 1. Åbn en side eller skabelon, der indeholder det modul, du vil konvertere til et fragment.
 1. Vælg det tidligere konfigurerede modul i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
-1. Vælg ellipsen (**...**) ud for navnet på modulet i enten dispositionsruden eller på værktøjslinjen for det valgte modul i den visuelle sidegenerator. 
-1. Vælg **Del som sidefragment**. 
-1. I dialogboksen **Gem som sidefragment** skal du angive et navn til fragmentet.
+1. Vælg ellipsen ( **...** ) ud for navnet på modulet i enten dispositionsruden eller på værktøjslinjen for det valgte modul i den visuelle sidegenerator. 
+1. Vælg **Del som fragment**. 
+1. I dialogboksen **Gem som fragment** skal du angive et navn til fragmentet.
 1. Vælg **OK** for at gemme modulkonfigurationen som et fragment, der kan føjes til andre sider.
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
-I følgende billede vises, hvordan du kan gemme en modulkonfiguration som et fragment.
+### <a name="create-a-new-fragment"></a>Opret et nyt fragment
 
-![Et skærmbillede af, hvordan en modulkonfiguration gemmes som et fragment](./media/save-as-fragment.png)
-
-### <a name="create-a-new-fragment"></a>Oprette et nyt fragment
-
-Følg disse trin for at oprette et nyt fragment.
+Udfør følgende trin for at oprette et nyt fragment i Commerce-webstedsgenerator.
 
 1. Vælg **Fragmenter** i navigationsruden til venstre.
-1. Vælg **Nyt sidefragment**. Der vises en dialogboks, hvor alle tilgængelige modultyper kan ses. Som tidligere nævnt kan fragmenter oprettes ud fra en hvilken som helst modultype.
+1. Vælg **Ny**. Der vises en **Nyt fragment** -dialogboks, hvor alle tilgængelige modultyper kan ses. Som tidligere nævnt kan fragmenter oprettes ud fra en hvilken som helst modultype.
 1. Vælg en modultype til dit fragment.
 
-Følgende billede viser, hvor du kan oprette et nyt fragment.
-
-![Et skærmbillede af, hvor der kan oprettes et nyt fragment](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Hvis du vælger en generisk containermodultype, får du størst fleksibilitet, når du skal opdatere og konfigurere dit fragment senere.
 
@@ -92,30 +88,28 @@ I følgende procedurer beskrives, hvordan du kan tilføje, fjerne og redigere fr
 
 ### <a name="add-a-fragment"></a>Tilføje et fragment
 
-Følg disse trin for at føje et fragment til en side.
+Udfør følgende trin for at tilføje et fragment på en side i Commerce-webstedsgenerator.
 
 1. Vælg en container eller en plads, som underordnede moduler kan føjes til, i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
-1. Vælg ellipsen (**...**) ud for navnet på containeren eller pladsen i onlineruden.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet (**+**).  
+1. Vælg ellipsen ( **...** ) ud for navnet på containeren eller pladsen.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet ( **+** ).  
 1. Vælg **Tilføj fragment**.
-
-    ![Et skærmbillede af, hvordan du kan føje et eksisterende fragment til en plads eller en container](./media/add-fragment.png)
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Hvis containeren eller pladsen ikke understøtter nye underordnede moduler, er indstillingen **Tilføj fragment** ikke tilgængelig.
     
-1. Søg efter og vælg et fragment, der skal tilføjes, i dialogboksen **Tilføj fragment**. Hvis der ikke vises nogen tilgængelige fragmenter, skal du muligvis først oprette et fragment ud fra en modultype, som den valgte container eller plads understøtter.
+1. Søg efter og vælg et fragment, der skal tilføjes, i dialogboksen **Vælg fragment**. Hvis der ikke vises nogen tilgængelige fragmenter, skal du muligvis først oprette et fragment ud fra en modultype, som den valgte container eller plads understøtter.
 1. Vælg det ønskede fragment for at føje det til containeren eller pladsen på siden.
-
-    ![Et skærmbillede af det modale vindue med fragmentvælger](./media/fragment-picker.png)
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > De moduler, der er tilladt i en container eller plads, defineres af sidens skabelon eller modulernes egne definitioner.
 
 ### <a name="remove-a-fragment"></a>Fjerne et fragment
 
-Hvis du vil fjerne et fragment fra en plads eller container på en side, skal du følge disse trin.
+Hvis du vil fjerne et fragment fra en plads eller en container på en side i Commerce-webstedsgenerator, skal du følge disse trin.
 
-1. Vælg ellipseknappen (**...**) i dispositionsruden til venstre ud for navnet på det fragment, der skal fjernes, og vælg derefter symbolet med papirkurven.  Du kan også vælge fragmentet i den visuelle sidegenerator og vælge symbolet for papirkurven på fragmentets værktøjslinje.
+1. Vælg ellipseknappen ( **...** ) i dispositionsruden til venstre ud for navnet på det fragment, der skal fjernes, og vælg derefter symbolet med papirkurven.  Du kan også vælge fragmentet i den visuelle sidegenerator og vælge symbolet for papirkurven på fragmentets værktøjslinje.
 1. Når du bliver bedt om at bekræfte, at du vil fjerne fragmentet, skal du vælge **OK**.
 
 > [!NOTE]
@@ -125,7 +119,7 @@ Hvis du vil fjerne et fragment fra en plads eller container på en side, skal du
 
 Hvis du vil redigere fragmenter, skal du bruge fragmenteditoren. Denne restriktion er tilsigtet. Det er med til at sikre, at forfatterne ikke forveksler redigering af modulerne for en bestemt side med processen til redigering af fragmenter, der kan deles på mange sider.
 
-Følg disse trin for at redigere et nyt fragment.
+Udfør følgende trin for at redigere et fragment i Commerce-webstedsgenerator.
 
 1. Vælg **Fragmenter** i navigationsruden til venstre.
 1. Vælg det fragment, du vil redigere, under **Fragmenter**.

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 251e9982451c888424589e0f0d6fce48aab42df1
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323571"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017799"
 ---
 # <a name="wave-step-codes"></a>Bølgetrinskoder
 
@@ -59,7 +59,7 @@ Under aktiveringen foretages valideringer under dataopgraderingen. Hvis opgrader
 
 Når du har løst eventuelle konflikter, der er identificeret under valideringerne, kan forsøge af aktivere funktionen igen.
 
-Når funktionen er aktiveret, bliver siden **Bølgetrinskoder** (**Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinskoder**) tilgængelig. Denne side viser de bølgetrinskoder, der blev opgraderet, da funktionen bølgetrinskoder for hele organisationen blev aktiveret.
+Når funktionen er aktiveret, bliver siden **Bølgetrinskoder** ( **Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinskoder** ) tilgængelig. Denne side viser de bølgetrinskoder, der blev opgraderet, da funktionen bølgetrinskoder for hele organisationen blev aktiveret.
 
 ### <a name="create-new-wave-step-codes"></a>Oprette nye bølgetrinskoder
 
@@ -85,11 +85,11 @@ Skabelonerne på denne liste anvendes, når der refereres til dem fra en bølgep
 
 Følgende procedure hjælper med at sikre, at den genopfyldningsskabelon, du har oprettet, anvendes på bølgeskabelonen.
 
-1. Gå ti **Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinskoder**, og opret en bølgetrinskode til typen **Genopfyldning**.
+1. Gå ti **Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinskoder** , og opret en bølgetrinskode til typen **Genopfyldning**.
 2. Gå til **Lokationsstyring \> Konfiguration \> Genopfyldning \> Genopfyldningsskabeloner** , og opret en genopfyldningsskabelon.
-3. Vælg den bølgetrinskode, du har oprettet til **Genopfyldning**-typen, i genopfyldningsskabelonen.
-4. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**, og vælg den bølgeskabelon, du vil bruge.
-5. Vælg **Genbestilling**-metoden i oversigtspanelet **Metoder** i skabelonen.
+3. Vælg den bølgetrinskode, du har oprettet til **Genopfyldning** -typen, i genopfyldningsskabelonen.
+4. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner** , og vælg den bølgeskabelon, du vil bruge.
+5. Vælg **Genbestilling** -metoden i oversigtspanelet **Metoder** i skabelonen.
 6. Vælg den bølgetrinskode, du har oprettet i genopfyldningsskabelonen, i feltet **Kode for bølgetrin**.
 
 Du udfører disse trin for hver juridisk enhed.

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e72249e26fb8f291f804cf5f2e4ce98bf88cd5bf
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596212"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017684"
 ---
 # <a name="outbound-sorting"></a>Udgående sortering
 
@@ -61,7 +62,7 @@ Pakkestationen betragtes som en lokation. De lagermedarbejdere, der logger på v
 1. I feltet **Arbejder** skal du vælge destinationsbrugeren på listen over medarbejdere.
 1. Vælg **Vælg**.
 1. Vælg **Gem** i handlingsruden.
-1. Gå til oversigtspanelet **Brugere**, og vælg **Ny** for at oprette en mobilenhedskonto, og angiv følgende værdier for den:
+1. Gå til oversigtspanelet **Brugere** , og vælg **Ny** for at oprette en mobilenhedskonto, og angiv følgende værdier for den:
 
     - **Bruger-id:** Angiv et entydigt id.
     - **Brugernavn:** Angiv et navn til id'et.
@@ -91,7 +92,7 @@ Pakkestationen betragtes som en lokation. De lagermedarbejdere, der logger på v
 ### <a name="set-up-warehouse-management-parameters"></a>Konfigurere parametre for lokationsstyring
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Parametre til lagerstedsstyring**.
-1. Gå til fanen **Generelt**, og angiv feltet **Sorteringslokationstype** til **SORTER** i oversigtspanelet *Lokationstyper*.
+1. Gå til fanen **Generelt** , og angiv feltet **Sorteringslokationstype** til **SORTER** i oversigtspanelet *Lokationstyper*.
 1. Vælg **Gem** i handlingsruden.
 
 ### <a name="set-up-a-location-profile"></a>Konfigurere en lokationsprofil
@@ -108,7 +109,7 @@ Pakkestationen betragtes som en lokation. De lagermedarbejdere, der logger på v
     - **Lokationsformat:** *ASRB* (gang – reol-hylde-beholder)
     - **Lokationstype:** *SORTER*
     - **Brug sporing af nummerplader:** *Ja*
-    - **Tillad blandede varer:** *Ja* (når du angiver denne indstilling til *Ja*, angives indstillingen **Tillad blandede lagerbatchnumre** automatisk til *Ja* og kan ikke ændres uafhængigt.)
+    - **Tillad blandede varer:** *Ja* (når du angiver denne indstilling til *Ja* , angives indstillingen **Tillad blandede lagerbatchnumre** automatisk til *Ja* og kan ikke ændres uafhængigt.)
 
 1. Vælg **Gem**.
 
@@ -145,11 +146,11 @@ I dette scenario skal du oprette en skabelon til udgående sortering for at opre
     - **Sorter verifikation:** *Positionsscanning*
     - **Opret arbejde lukning af position:** *Ja*
 
-        Hvis indstillingen er angivet til *Ja*, når positionen er lukket, oprettes arbejde for at flytte lageret til den endelige afsendelseslokation. Hvis den er indstillet til *Nej*, vil lageret straks blive plukket til ordren, når positionen er lukket.
+        Hvis indstillingen er angivet til *Ja* , når positionen er lukket, oprettes arbejde for at flytte lageret til den endelige afsendelseslokation. Hvis den er indstillet til *Nej* , vil lageret straks blive plukket til ordren, når positionen er lukket.
 
     - **Positiontildeling:** *Automatisk*
 
-        Hvis dette felt er indstillet til *Manuelt*, skal brugeren altid angive, hvilken position lageret skal sorteres til. Hvis det er indstillet til *Automatisk*, guider systemet automatisk lageret til en position, hvor det kan, baseret på sorteringsskabelonskiftene.
+        Hvis dette felt er indstillet til *Manuelt* , skal brugeren altid angive, hvilken position lageret skal sorteres til. Hvis det er indstillet til *Automatisk* , guider systemet automatisk lageret til en position, hvor det kan, baseret på sorteringsskabelonskiftene.
 
 1. Vælg **Gem** for at gøre knappen **Rediger forespørgsel** i handlingsruden tilgængelig.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
@@ -208,7 +209,7 @@ Opret en ny pakkeprofil, der skal bruges sammen med sorteringsfunktionen.
     - **Politik for containerpakning:** *Sorter*
     - **Container-id-tilstand:** *Auto*
     - **Containertype:** *Kasse-Stor*
-    - **Opret automatisk container ved containerlukning:** Ryddet (= *Nej*)
+    - **Opret automatisk container ved containerlukning:** Ryddet (= *Nej* )
 
 1. Vælg **Gem**.
 
@@ -244,11 +245,11 @@ Opret et menupunkt til mobilenhed for at opbygge paller under sortering.
 
     - **Aktivitetskode:** *Udgående sortering*
 
-        Når dette felt er angivet til *Udgående sortering*, vises feltet udgående **Skabelon-id for udgående sortering**.
+        Når dette felt er angivet til *Udgående sortering* , vises feltet udgående **Skabelon-id for udgående sortering**.
 
     - **Brug procesvejledning:** *Ja*
 
-        Når feltet **Aktivitetskode** er angivet til *Udgående sortering*, angives denne indstilling automatisk til *Ja*.
+        Når feltet **Aktivitetskode** er angivet til *Udgående sortering* , angives denne indstilling automatisk til *Ja*.
 
     - **Id for skabelon til udgående sortering:** *AutoArbejde*
 
@@ -324,7 +325,7 @@ Du skal nu føje de nye menupunkter til mobilenhedsmenuen.
 
 1. Vælg **Gem**.
 1. Vælg **Rediger forespørgsel** i oversigtspanelet **Handlinger for lokationsvejledninger**.
-1. Gå til forespørgselseditoren under fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Lokation*. Angiv feltet **Kriterier** for denne række til *Lagerport*.
+1. Gå til forespørgselseditoren under fanen **Område** , og find den række, hvor feltet **Felt** er indstillet til *Lokation*. Angiv feltet **Kriterier** for denne række til *Lagerport*.
 1. Vælg **OK** for at gemme dine indstillinger og lukke forespørgselseditoren.
 
 #### <a name="set-up-a-multiple-sku-directive"></a>Konfigurere vejledning for flere varenumre
@@ -359,7 +360,7 @@ Du skal nu føje de nye menupunkter til mobilenhedsmenuen.
 
 1. Vælg **Gem**.
 1. Vælg **Rediger forespørgsel** i oversigtspanelet **Handlinger for lokationsvejledninger**.
-1. Gå til forespørgselseditoren under fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Lokation*. Angiv feltet **Kriterier** for denne række til *Lagerport*.
+1. Gå til forespørgselseditoren under fanen **Område** , og find den række, hvor feltet **Felt** er indstillet til *Lokation*. Angiv feltet **Kriterier** for denne række til *Lagerport*.
 1. Vælg **OK** for at gemme dine indstillinger og lukke forespørgselseditoren.
 
 ### <a name="set-up-work-templates"></a>Konfigurer arbejdsskabeloner
@@ -374,7 +375,7 @@ Du skal nu føje de nye menupunkter til mobilenhedsmenuen.
     - **Beskrivelse af arbejdsskabelon:** *Sorter*
 
 1. Vælg **Gem** for at gøre oversigtspanelet **Arbejdsskabelondetaljer** tilgængeligt.
-1. Gå til oversigtspanelet **Arbejdsskabelondetaljer**, og vælg **Ny** for at tilføje en linje, og indstil derefter følgende værdier for den:
+1. Gå til oversigtspanelet **Arbejdsskabelondetaljer** , og vælg **Ny** for at tilføje en linje, og indstil derefter følgende værdier for den:
 
     - **Arbejdstype:** *Pluk*
     - **Arbejdsklasse-id:** *SORTER*
@@ -396,7 +397,7 @@ Dette scenarie simulerer en situation, hvor pakkede containere automatisk sorter
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-005*
     - **Lagersted:** *62*
@@ -406,19 +407,19 @@ Dette scenarie simulerer en situation, hvor pakkede containere automatisk sorter
     Den nye indkøbsordre åbnes.
 
 1. Skift til **overskriftsvisningen**.
-1. Gå til oversigtspanelet **Levering** i sektionen **Transport**, og angiv følgende værdier:
+1. Gå til oversigtspanelet **Levering** i sektionen **Transport** , og angiv følgende værdier:
 
     - **Fragtmand:** *Air Cargo*
     - **Fragttjeneste:** *Air*
 
 1. Skift til visningen **Linjer**.
-1. Hvis en ny tom linje ikke automatisk føjes til gitteret i oversigtspanelet **Salgsordrelinjer**, skal du vælge **Tilføj linje** for at tilføje en.
+1. Hvis en ny tom linje ikke automatisk føjes til gitteret i oversigtspanelet **Salgsordrelinjer** , skal du vælge **Tilføj linje** for at tilføje en.
 1. På den nye ordrelinje skal du angive følgende værdier:
 
     - **Varenummer:** *A0001*
     - **Antal:** *2*
 
-1. Mens den nye ordrelinje stadig er valgt i oversigtspanelet **Salgsordrelinjer**, skal du vælge **Reservation** i menuen **Lager** oven over gitteret.
+1. Mens den nye ordrelinje stadig er valgt i oversigtspanelet **Salgsordrelinjer** , skal du vælge **Reservation** i menuen **Lager** oven over gitteret.
 1. På siden **Reservation** skal du vælge **Reserver parti** for at reservere det fulde antal på den valgte linje på lagerstedet.
 1. Luk siden **Reservation** for at vende tilbage til salgsordren.
 1. Vælg **Frigiv til lagersted** i gruppen **Handlinger** under fanen **Lagersted** i handlingsruden.
@@ -428,7 +429,7 @@ Dette scenarie simulerer en situation, hvor pakkede containere automatisk sorter
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-006*
     - **Lagersted:** *62*
@@ -469,7 +470,7 @@ Fuldfør det oprettede arbejde ved at bruge mobilenheden til at flytte varerne t
 1. I menuen **Udgående** skal du vælge **Salgspluk**.
 1. I feltet **Id** skal du angive det arbejds-id, der er oprettet for salgsordre 1.
 1. Vælg **OK**.
-1. På siden **Salgsordrer – pluk** skal du angive et mål-NO, der blev oprettet til salgsordre 1. Bemærk, at pluklokation (*batch-001*), vare (*A0001*) og antal (*2 stk.*) vises.
+1. På siden **Salgsordrer – pluk** skal du angive et mål-NO, der blev oprettet til salgsordre 1. Bemærk, at pluklokation ( *batch-001* ), vare ( *A0001* ) og antal ( *2 stk.* ) vises.
 1. Vælg **OK**.
 1. Gennemse oplysningerne på siden **Salgsordrer – læg på lager**. Feltet **Lok** skal angive, at de plukkede varer skal placeres på lokationen *Pakke*.
 1. Vælg **OK**.
@@ -480,7 +481,7 @@ Fuldfør det oprettede arbejde ved at bruge mobilenheden til at flytte varerne t
 
 1. I feltet **Id** skal du angive det arbejds-id, der er oprettet for salgsordre 2, hvor linje 1 har varen *A0001*.
 1. Vælg **OK**.
-1. På siden **Salgsordrer – pluk** skal du angive en mål-NP. Bemærk, at pluklokation (*batch-001*), vare (*A0001*) og antal (*1 stk.*) vises.
+1. På siden **Salgsordrer – pluk** skal du angive en mål-NP. Bemærk, at pluklokation ( *batch-001* ), vare ( *A0001* ) og antal ( *1 stk.* ) vises.
 1. Vælg **OK**.
 1. Gennemse oplysningerne på siden **Salgsordrer – læg på lager**. Feltet **Lok** skal angive, at de plukkede varer skal placeres på lokationen *Pakke*.
 1. Vælg **OK**.
@@ -489,7 +490,7 @@ Fuldfør det oprettede arbejde ved at bruge mobilenheden til at flytte varerne t
 
 1. I feltet **Id** skal du angive det arbejds-id, der er oprettet for salgsordre 2, hvor linje 2 har varen *A0002*.
 1. Vælg **OK**.
-1. På siden **Salgsordrer – pluk** skal du angive en mål-NP. Bemærk, at pluklokation (*batch-002*), vare (*A0001*) og antal (*1 stk.*) vises.
+1. På siden **Salgsordrer – pluk** skal du angive en mål-NP. Bemærk, at pluklokation ( *batch-002* ), vare ( *A0001* ) og antal ( *1 stk.* ) vises.
 1. Vælg **OK**.
 1. Gennemse oplysningerne på siden **Salgsordrer – læg på lager**. Feltet **Lok** skal angive, at de plukkede varer skal placeres på lokationen *Pakke*.
 1. Vælg **OK**.
@@ -512,7 +513,7 @@ Fuldfør det oprettede arbejde ved at bruge mobilenheden til at flytte varerne t
     - **Pakkeprofil-id:** *Sorter*
 
 1. Vælg **OK** for at lukke dialogboksen.
-1. Gå til siden **Pakke**, og angiv mål-NP'en for salgsordre 1 i feltet **Nummerplade eller forsendelse**. Vælg derefter tasten **Tabulator** eller **Retur** på tastaturet for at gå ud af feltet.
+1. Gå til siden **Pakke** , og angiv mål-NP'en for salgsordre 1 i feltet **Nummerplade eller forsendelse**. Vælg derefter tasten **Tabulator** eller **Retur** på tastaturet for at gå ud af feltet.
 1. Gå til handlingsruden, og vælg **Ny container**.
 1. Accepter alle standardindstillinger, og vælg **OK**. Notér dig container-id'et.
 1. I oversigtspanelet **Varepakning** kan du angive følgende værdier:
@@ -537,7 +538,7 @@ Fuldfør det oprettede arbejde ved at bruge mobilenheden til at flytte varerne t
 
 #### <a name="pack-sales-order-2-into-containers"></a>Pakke salgsordre 2 i containere
 
-1. Gå til siden **Pakke**, og angiv mål-NP'en for linje 1 i salgsordre 2 i feltet **Nummerplade eller forsendelse**. Vælg derefter tasten **Tabulator** eller **Retur** på tastaturet for at gå ud af feltet.
+1. Gå til siden **Pakke** , og angiv mål-NP'en for linje 1 i salgsordre 2 i feltet **Nummerplade eller forsendelse**. Vælg derefter tasten **Tabulator** eller **Retur** på tastaturet for at gå ud af feltet.
 1. Gå til handlingsruden, og vælg **Ny container**.
 1. Accepter alle standardindstillinger, og vælg **OK**. Notér dig container-id'et.
 1. I oversigtspanelet **Varepakning** kan du angive følgende værdier:
@@ -577,7 +578,7 @@ Hvis du vil have vist containerdetaljerne, skal du gå til **Lokationsstyring \>
 1. Angiv det første container-id, der er knyttet til salgsordre 1, i feltet **NP/con**.
 1. Vælg **OK**.
 1. Da der ikke findes nogen sorteringspositioner i øjeblikket, skal du angive en. I feltet **Sorteringsposition-id** skal du angive *SP01*.
-1. Da der i øjeblikket ikke er knyttet en NP til sorteringsplaceringen *SP01*, skal du angive en. I feltet **NP** skal du angive *PLP01*.
+1. Da der i øjeblikket ikke er knyttet en NP til sorteringsplaceringen *SP01* , skal du angive en. I feltet **NP** skal du angive *PLP01*.
 1. Vælg **OK**.
 1. Da validering af sorteringsposition er slået til, skal du angive id'et for for sorteringspositionen igen. I feltet **Sorteringsposition-id** skal du angive *SP01*.
 1. Vælg **OK**.
@@ -602,14 +603,14 @@ Hvis du vil have vist containerdetaljerne, skal du gå til **Lokationsstyring \>
 
     Arbejdet er fuldført på den anden container fra salgsordre 1. Du skal nu sortere de øvrige containere fra salgsordre 2.
 
-1. Angiv container-id'et for containeren fra salgsordre 2, der indeholder vare **A0001**, i feltet *NP/con*. Da fragttjenesten er anderledes, bliver du bedt om at angive en ny sorteringsposition og tildele en NP til denne position. Brug sorteringsposition *SP02* og NP *PLP02*.
+1. Angiv container-id'et for containeren fra salgsordre 2, der indeholder vare **A0001** , i feltet *NP/con*. Da fragttjenesten er anderledes, bliver du bedt om at angive en ny sorteringsposition og tildele en NP til denne position. Brug sorteringsposition *SP02* og NP *PLP02*.
 1. Vælg **OK**.
 1. Bekræft sorteringspositionen ved at angive *SP02* i feltet **Sorteringsposition-id**.
 1. Vælg **OK**.
 
     Arbejdet på containeren er udført.
 
-1. Angiv container-id'et for den resterende container fra salgsordre 2, der indeholder vare **A0002**, i feltet *NP/con*. Da fragttjenesten er den samme som fragttjenesten for salgsordre 1, vil systemet vise den eksisterende sorteringsposition, der har de samme kriterier.
+1. Angiv container-id'et for den resterende container fra salgsordre 2, der indeholder vare **A0002** , i feltet *NP/con*. Da fragttjenesten er den samme som fragttjenesten for salgsordre 1, vil systemet vise den eksisterende sorteringsposition, der har de samme kriterier.
 1. Vælg **OK**.
 1. Bekræft sorteringspositionen ved at angive *SP01* i feltet **Sorteringsposition-id**.
 1. Vælg **OK**.
@@ -649,18 +650,18 @@ Du skal fuldføre arbejdet med sorteret lagerpluk. Når den er fuldført, plukke
 1. I menuen **Udgående** skal du vælge **Sortering efter last fra**.
 1. Angiv destinationens-NP-id fra den første sorteringsposition, *SP01*. Angiv feltet **Id** til *PLP01*.
 1. Vælg **OK**.
-1. Siden **Sorteret lagerpluk: pluk** viser det plukarbejde, der skal udføres. Pluk fra lokationen *SORTER* og mål-NP *PLP01*, der har flere varer og et antal på *3*.
+1. Siden **Sorteret lagerpluk: pluk** viser det plukarbejde, der skal udføres. Pluk fra lokationen *SORTER* og mål-NP *PLP01* , der har flere varer og et antal på *3*.
 1. Vælg **OK**.
-1. Siden **Sorteret lagerpluk: læg på lager** viser det læg på lager-arbejde, der skal udføres. Læg på lager til lokationen *Lagerport* og mål-NP *PLP01*, der har flere varer og et antal på *3*.
+1. Siden **Sorteret lagerpluk: læg på lager** viser det læg på lager-arbejde, der skal udføres. Læg på lager til lokationen *Lagerport* og mål-NP *PLP01* , der har flere varer og et antal på *3*.
 1. Vælg **OK**.
 
     Arbejde er fuldført.
 
 1. Angiv destinationsnummerplade-id'et fra den anden sorteringsposition, *SP02*. Angiv feltet **Id** til *PLP02*.
 1. Vælg **OK**.
-1. Siden **Sorteret lagerpluk: pluk** viser det plukarbejde, der skal udføres. Pluk fra lokationen *SORTER* og mål-NP *PLP02*, der har flere varer og et antal på *1*.
+1. Siden **Sorteret lagerpluk: pluk** viser det plukarbejde, der skal udføres. Pluk fra lokationen *SORTER* og mål-NP *PLP02* , der har flere varer og et antal på *1*.
 1. Vælg **OK**.
-1. Siden **Sorteret lagerpluk: læg på lager** viser det læg på lager-arbejde, der skal udføres. Læg på lager til lokationen *Lagerport* og mål-NP *PLP02*, der har flere varer og et antal på *1*.
+1. Siden **Sorteret lagerpluk: læg på lager** viser det læg på lager-arbejde, der skal udføres. Læg på lager til lokationen *Lagerport* og mål-NP *PLP02* , der har flere varer og et antal på *1*.
 1. Vælg **OK**.
 
     Arbejde er fuldført.

@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971466"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039840"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Kom i gang med tilføjelsesprogrammet til elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med tilføjelsesprogrammet til elektronisk fakturering. Det fører dig først gennem konfigurationstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Services (RCS) og Dynamics 365 Finance. Derefter beskrives processen til indsendelse af dokumenter via tjenesten ved hjælp af Dynamics 365 Finance eller Dynamics 365 Supply Chain Management. Du får også at vide, hvordan du fortolker indsendelsesloggene.
 
@@ -85,7 +84,7 @@ Følgende illustration viser de fem vigtigste trin, du skal fuldføre i dette em
 ## <a name="lcs-setup"></a>LCS-opsætning
 
 1. Log på din LCS-konto.
-2. Vælg feltet **Styring af prøveversionsfunktion**, og i **Funktioner i offentlige prøveversioner**-feltgruppen skal du vælge **BusinessDocumentSubmission**.
+2. Vælg feltet **Styring af prøveversionsfunktion** , og i **Funktioner i offentlige prøveversioner** -feltgruppen skal du vælge **BusinessDocumentSubmission**.
 3. Markér feltet **Prøveversionsfunktion aktiveret**.
 4. Vælg LCS-implementeringsprojektet. Projektet skal køre, før du kan vælge det
 5. Vælg **Installér et nyt tilføjelsesprogram** i oversigtspanelet **Tilføjelsesprogrammer for miljø**.
@@ -134,9 +133,9 @@ Under RCS-opsætningen skal du udføre disse opgaver:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Konfigurere RCS-integrationen med serveren for tilføjelsesprogrammet til elektronisk fakturering
 
-1. Gå til arbejdsområdet **Globaliseringsfunktioner**, og vælg **Parametre til elektronisk rapportering** i sektionen **Relaterede indstillinger**.
+1. Gå til arbejdsområdet **Globaliseringsfunktioner** , og vælg **Parametre til elektronisk rapportering** i sektionen **Relaterede indstillinger**.
 2. Vælg **Klik her for at oprette forbindelse til Lifecycle Services**. Hvis du ikke vil oprette forbindelse til LCS, skal du vælge **Annuller**.
-3. Under fanen **e-faktureringstjenester** skal du angive værdien i overensstemmelse med de tilgængelige geografiske områder i feltet **Serviceslutpunkt-URI**: `https://businessdocumentsubmission.us.operations365.dynamics.com/` eller `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
+3. Under fanen **e-faktureringstjenester** skal du angive værdien i overensstemmelse med de tilgængelige geografiske områder i feltet **Serviceslutpunkt-URI** : `https://businessdocumentsubmission.us.operations365.dynamics.com/` eller `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. Kontrollér, at feltet **Program-id** viser id'et **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Denne værdi er en fast værdi.
 5. Angiv id'et for din LCS-abonnementskonto i feltet **LCS-miljø-id**.
 
@@ -191,7 +190,7 @@ Funktionen til integration af elektroniske fakturaer er aktiveret via flighting.
 ### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Aktivere funktionen til integration af tilføjelsesprogrammet til elektronisk fakturering
 
 1. Log på Finance eller Supply Chain Management.
-2. Gå til arbejdsområdet **Funktionsstyring**, og søg efter den nye funktion **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering**. Hvis funktionen stadig ikke vises på siden Funktionsstyring, skal du køre funktionen **Søg efter opdateringer**.
+2. Gå til arbejdsområdet **Funktionsstyring** , og søg efter den nye funktion **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering**. Hvis funktionen stadig ikke vises på siden Funktionsstyring, skal du køre funktionen **Søg efter opdateringer**.
 3. Vælg funktionen, og vælg derefter **Aktivér nu**.
 
 ### <a name="set-up-the-service-endpoint-url"></a>Konfigurere URL-adressen til tjenesteslutpunkt
@@ -206,9 +205,9 @@ Funktionen til integration af elektroniske fakturaer er aktiveret via flighting.
 
 Hvis forretningsdata skal indsamles og sendes til tilføjelsesprogrammet til elektronisk fakturering, skal du importere ER-datamodellen og konfigurationen af ER-datamodellen, der er relateret til den lande-/områdespecifikke e-faktureringsfunktion, du vil bruge.
 
-1. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**. Kontrollér, at denne konfigurationsudbyder er angivet til **Aktiv**. Du kan finde flere oplysninger om, hvordan du angiver en udbyder til **Aktiv**, i [Oprette konfigurationsudbydere og markere dem som aktive](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+1. Gå til arbejdsområdet **Elektronisk rapportering** , og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**. Kontrollér, at denne konfigurationsudbyder er angivet til **Aktiv**. Du kan finde flere oplysninger om, hvordan du angiver en udbyder til **Aktiv** , i [Oprette konfigurationsudbydere og markere dem som aktive](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Vælg **Lagre**.
-4. Vælg **Global ressource**, og vælg derefter **Åben**.
+4. Vælg **Global ressource** , og vælg derefter **Åben**.
 5. Vælg **Klik her for at oprette forbindelse til Lifecycle Services** i dialogboksen **Opret forbindelse til Lifecycle Services**.
 6. Du skal importere den relevante datamodel, datamodeltilknytning og de relevante dataformater afhængigt af det land eller område, hvor du vil bruge e-faktureringsfunktionen. Du kan finde flere oplysninger om de ER-konfigurationer, du skal importere, i det lande-/områdespecifikke emne "Kom i gang med tilføjelsesprogrammet til elektronisk fakturering".
 7. Importér **Debitorfakturakontekstmodel**. Denne model indeholder yderligere parametre, der bl.a. beskriver det miljø i Finance, der bruges til tilføjelsesprogrammet til elektronisk fakturering, når der sendes forretningsdata.
@@ -229,10 +228,10 @@ Hvis du vil aktivere lande-/områdespecifikke e-faktureringsfunktioner, så de f
 
 Hvis det indsendte fakturadokument kræver en opdatering efter svaret på indsendelsen til de offentlige autorisationstjenester, skal du importere en speciel ER-datamodel og konfigurationer for at aktivere statussen på det fakturadokument eller de andre felter, der skal opdateres.
 
-1. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**.
+1. Gå til arbejdsområdet **Elektronisk rapportering** , og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**.
 2. Vælg **Lagre**.
-3. Vælg **Global ressource**, og vælg derefter **Åben**.
-4. Importér **Svarmeddelelsesmodel**, **Format til import af svarmeddelelse**, **Tilknytning af svarmeddelelsesmodel til destination**  og **Format til import af filindhold**.
+3. Vælg **Global ressource** , og vælg derefter **Åben**.
+4. Importér **Svarmeddelelsesmodel** , **Format til import af svarmeddelelse** , **Tilknytning af svarmeddelelsesmodel til destination**  og **Format til import af filindhold**.
 5. Gå til **Organisationsadministration \> Konfiguration \> Parametre for elektroniske dokumenter**.
 6. Vælg **Tilføj** på fanen **Elektronisk dokument** for at angive navnet på den tabel, der er relateret til det lande-/områdespecifikke fakturadokument. Du kan finde flere oplysninger om, hvilke tabelnavne du skal vælge, i det lande-/områdespecifikke emne "Kom i gang med tilføjelsesprogrammet til elektronisk fakturering".
 7. Vælg **Svartyper** for at konfigurere svartyperne. Du kan finde flere oplysninger om, hvilke tabelnavne du skal vælge, i det lande-/områdespecifikke emne "Kom i gang med tilføjelsesprogrammet til elektronisk fakturering".
@@ -278,13 +277,13 @@ Du kan sende forretningsdokumenter enten manuelt eller baseret på kravene for d
 
 1. Gå til **Organisationsadministration \> Periodisk \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
 2. Ved den første indsendelse af et dokument skal du altid angive indstillingen **Send dokumenter igen** til **Nej**. Hvis du skal sende et dokument igen via tjenesten, skal du angive denne indstilling til **Ja**.
-3. I oversigtspanelet **Poster, der skal indgå** skal du vælge **Filter** for at åbne dialogboksen **Forespørgsel**, hvor du kan oprette en forespørgsel for at vælge de dokumenter, der skal sendes.
+3. I oversigtspanelet **Poster, der skal indgå** skal du vælge **Filter** for at åbne dialogboksen **Forespørgsel** , hvor du kan oprette en forespørgsel for at vælge de dokumenter, der skal sendes.
 
 ![Dialogboksen Send elektroniske dokumenter](media/e-invoicing-services-get-started-submission-form.png)
 
 ### <a name="filter-query"></a>Filterforespørgsel
 
-1. I dialogboksen **Forespørgsel** skal du på fanen **Område** angive filterkriterierne via felterne **Tabel**, **Afledt tabel**, **Felt** og **Kriterier**.
+1. I dialogboksen **Forespørgsel** skal du på fanen **Område** angive filterkriterierne via felterne **Tabel** , **Afledt tabel** , **Felt** og **Kriterier**.
 2. Vælg **Tilføj** for at tilføje så mange yderligere kriterier, du skal bruge for at vælge forretningsdokumenterne.
 
     ![Konfigurere filterkriterier for indsendelse](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
@@ -325,7 +324,7 @@ I stedet for at sende dokumenter manuelt kan du automatisere indsendelsesprocess
     ![Vælge den dokumenttype, der skal vises indsendelseslogge for](media/e-invoicing-services-get-started-select-document-type-for-viewing-submission-log.png)
 
     > [!IMPORTANT]
-    > Den værdi, der vises i kolonnen **Indsendelsesstatus**, repræsenterer den status, der er relateret til fuldførelsen af selve indsendelsesprocessen. Den angiver, om flowet for handlinger, der er konfigureret i RCS, blev kørt indtil afslutningen, uanset om det elektroniske dokument er godkendt eller afvist. Den værdi, der vises i kolonnen **Indsendelsesstatus**, repræsenterer ikke status for det sendte dokument. Du kan få vist statussen for det sendte dokument (dvs. om dokumentet blev godkendt eller afvist) i oversigtspanelet **Handlingslog for behandling** i oplysningerne om indsendelseslog, som beskrevet herefter.
+    > Den værdi, der vises i kolonnen **Indsendelsesstatus** , repræsenterer den status, der er relateret til fuldførelsen af selve indsendelsesprocessen. Den angiver, om flowet for handlinger, der er konfigureret i RCS, blev kørt indtil afslutningen, uanset om det elektroniske dokument er godkendt eller afvist. Den værdi, der vises i kolonnen **Indsendelsesstatus** , repræsenterer ikke status for det sendte dokument. Du kan få vist statussen for det sendte dokument (dvs. om dokumentet blev godkendt eller afvist) i oversigtspanelet **Handlingslog for behandling** i oplysningerne om indsendelseslog, som beskrevet herefter.
 
 3. Vælg **Forespørgsler \> Indsendelsesoplysninger** i handlingsruden.
 4. Få vist logoplysningerne om indsendelse.

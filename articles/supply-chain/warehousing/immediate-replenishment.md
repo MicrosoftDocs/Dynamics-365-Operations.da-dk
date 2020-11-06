@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLocDirTable
+ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 911a1da7d762b25f637b7d3b4d3b6214023203f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205615"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017500"
 ---
 # <a name="immediate-replenishment"></a>Øjeblikkelig genopfyldning
 
@@ -47,7 +47,7 @@ I så fald kan du bruge øjeblikkelig genopfyldning. I lokationsvejledningen kan
 
 ## <a name="set-up-immediate-replenishment"></a>Konfigurere øjeblikkelig genopfyldning
 
-- Gå til **Lokationsstyring** \> **Opsætning** \> **Lokationsvejledning**, og klik derefter på fanen **Linjer** på listen **Skabelon for øjeblikkelig genopfyldning**, og vælg en genopfyldningsskabelon for bølgebehov.
+- Gå til **Lokationsstyring** \> **Opsætning** \> **Lokationsvejledning** , og klik derefter på fanen **Linjer** på listen **Skabelon for øjeblikkelig genopfyldning** , og vælg en genopfyldningsskabelon for bølgebehov.
 
 Genopfyldningsskabelonen anvendes, hvis lokationsvejledningslinjen ikke kan tildele en dedikeret måleenhed.
 

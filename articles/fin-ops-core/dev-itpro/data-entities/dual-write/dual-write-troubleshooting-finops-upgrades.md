@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275458"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997912"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Foretage fejlfinding af problemer i forbindelse med opgraderinger af Finance and Operations-apps
 
@@ -41,7 +40,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 **Påkrævet rolle for at rette fejlen:** Systemadministrator
 
-Du kan få vist en fejlmeddelelse, der ligner følgende eksempel, når du forsøger at bruge **DualWriteProjectConfiguration**-enheden til at opdatere en Finance and Operations-app til Platform Update 30.
+Du kan få vist en fejlmeddelelse, der ligner følgende eksempel, når du forsøger at bruge **DualWriteProjectConfiguration** -enheden til at opdatere en Finance and Operations-app til Platform Update 30.
 
 ```console
 Infolog diagnostic message: 'Cannot select a record in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -67,24 +66,24 @@ Følg disse trin for at løse dette problem.
 
 På siden **Dobbeltskrivning** kan du få vist en fejlmeddelelse, der ligner følgende eksempel:
 
-*Manglende kildefelt \<feltnavn\> i skemaet.*
+*Manglende kildefelt \<field name\> i skemaet.*
 
 ![Eksempel på fejlmeddelelsen om manglende kildefelt](media/error_missing_field.png)
 
 Hvis du vil løse problemet, skal du først følge disse trin for at sikre, at felterne findes i enheden.
 
 1. Log på den virtuelle maskine for Finance and Operations-appen.
-2. Gå til **Arbejdsområder \> Datastyring**, vælg feltet **Rammeparametre**, og vælg derefter **Enhedsindstillinger** under fanen **Opdater liste over enheder** for at opdatere enhederne.
-3. Gå til **Arbejdsområder \> Datastyring**, vælg fanen **Dataenheder**, og kontroller, at enheden er angivet. Hvis enheden ikke vises, skal du logge på den virtuelle maskine for Finance and Operations-appen og kontrollere, at enheden er tilgængelig.
+2. Gå til **Arbejdsområder \> Datastyring** , vælg feltet **Rammeparametre** , og vælg derefter **Enhedsindstillinger** under fanen **Opdater liste over enheder** for at opdatere enhederne.
+3. Gå til **Arbejdsområder \> Datastyring** , vælg fanen **Dataenheder** , og kontroller, at enheden er angivet. Hvis enheden ikke vises, skal du logge på den virtuelle maskine for Finance and Operations-appen og kontrollere, at enheden er tilgængelig.
 4. Åbn siden **Enhedstilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
-5. Vælg **Opdater liste over enheder**, så felterne i enhedstilknytninger automatisk udfyldes.
+5. Vælg **Opdater liste over enheder** , så felterne i enhedstilknytninger automatisk udfyldes.
 
 Hvis problemet stadig ikke er løst, skal du følge disse trin.
 
 > [!IMPORTANT]
 > Disse trin fører dig gennem processen til sletning af en enhed og derefter tilføjelse af den igen. Hvis du vil undgå problemer, skal du sørge for at følge trinene nøjagtigt.
 
-1. Gå i Finance and Operations-appen til **Arbejdsområder \> Datastyring**, og marker feltet **Dataenheder**.
+1. Gå i Finance and Operations-appen til **Arbejdsområder \> Datastyring** , og marker feltet **Dataenheder**.
 2. Find den enhed, der mangler attributten. Klik på **Rediger måltilknytning** på værktøjslinjen.
 3. Klik på **Generér tilknytning** i ruden **Knyt midlertidig placering til mål**.
 4. Åbn siden **Enhedstilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.

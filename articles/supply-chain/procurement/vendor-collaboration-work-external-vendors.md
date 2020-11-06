@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
+ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b4b3120001ecd5340c063f80ad7471050b437fd2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203429"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018738"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
@@ -60,8 +60,8 @@ En administrator konfigurerer de generelle indstillinger for kreditorsamarbejdet
 
 Før du kan oprette brugerkonti til en ekstern kreditor, skal du konfigurere en kreditorkonto, så kreditoren kan bruge kreditorsamarbejde. Indstil feltet **Aktivering af samarbejde** under fanen **Generelt** på siden **Kreditorer**. Følgende valgmuligheder er tilgængelige:
 
-- **Aktiv (IO bekræftes automatisk)**– Indkøbsordrer bekræftes automatisk, hvis kreditoren accepterer dem uden ændringer.
-- **Aktiv (IO bekræftes ikke automatisk)**– Din organisation skal manuelt bekræfte indkøbsordrer, når kreditoren har godkendt dem.
+- **Aktiv (IO bekræftes automatisk)** – Indkøbsordrer bekræftes automatisk, hvis kreditoren accepterer dem uden ændringer.
+- **Aktiv (IO bekræftes ikke automatisk)** – Din organisation skal manuelt bekræfte indkøbsordrer, når kreditoren har godkendt dem.
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Angivelse af, om kreditoren skal se prisoplysninger
 
@@ -71,7 +71,7 @@ Hvis du vil dele prisoplysninger for indkøbsordrer via grænsefladen for kredit
 
 ### <a name="sending-a-po-to-a-vendor"></a>Afsendelse af en indkøbsordre til en kreditor
 
-Indkøbsordrer forberedes i Supply Chain Management. Når en indkøbsordre har statussen **Godkendt**, sender du den til kreditoren ved at vælge **Send til bekræftelse** på siden **Indkøbsordre**. Indkøbsordrens status ændres derefter til **Til eksternt gennemsyn**. Når Indkøbsordren er sendt, kan kreditoren se den på siden **Indkøbsordrer til gennemsyn** i grænsefladen for kreditorsamarbejde. Kreditoren kan derefter acceptere indkøbsordren, afvise den eller foreslå ændringer til den. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail.
+Indkøbsordrer forberedes i Supply Chain Management. Når en indkøbsordre har statussen **Godkendt** , sender du den til kreditoren ved at vælge **Send til bekræftelse** på siden **Indkøbsordre**. Indkøbsordrens status ændres derefter til **Til eksternt gennemsyn**. Når Indkøbsordren er sendt, kan kreditoren se den på siden **Indkøbsordrer til gennemsyn** i grænsefladen for kreditorsamarbejde. Kreditoren kan derefter acceptere indkøbsordren, afvise den eller foreslå ændringer til den. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Bekræftelse og accept af en indkøbsordre hos en kreditor
 
@@ -120,7 +120,7 @@ Kreditoren kan ikke ændre oplysninger om pris og gebyrer. Kreditoren kan dog fo
 </tbody>
 </table>
 
-Du kan bruge arbejdsområdet **Klargøring af indkøbsordrer** til at overvåge, hvilke IO'er kreditoren har reageret på. Arbejdsområdet indeholder to lister, der indeholder indkøbsordrer, der har status **Til eksternt gennemsyn**:
+Du kan bruge arbejdsområdet **Klargøring af indkøbsordrer** til at overvåge, hvilke IO'er kreditoren har reageret på. Arbejdsområdet indeholder to lister, der indeholder indkøbsordrer, der har status **Til eksternt gennemsyn** :
 
 - Til eksternt gennemsyn kræver handling
 - Til ekstern gennemgang, venter på svar fra leverandør
@@ -168,7 +168,7 @@ Du kan opdatere en indkøbsordre ved at vælge **Udfør opdatering af indkøbsor
 
 Ikke alle foreslåede ændringer kan opdateres på en indkøbsordre. Det er kun opdateringer i hovedet og opdateringer af datoer og antal på linjerne, der kan opdateres automatisk på indkøbsordren. Andre ændringer skal du manuelt opdatere på indkøbsordren. I dette tilfælde er værdien i feltet **Er opdatering af indkøbsordre behandlet?** **Manuel opdatering**. F.eks. hvis en kreditor foreslår, at en linje skal opdeles i en tidsplan, skal denne ændring angives manuelt.
 
-Hver linje, der har statussen **Godkendt**, har en bekræftet leveringsdato. Når du kører handlingen **Udfør opdatering af indkøbsordre**, opdateres datoen på indkøbsordren. Noter og vedhæftede filer bliver ikke automatisk overført til den aktuelle indkøbsordre. Handelsaftaler bliver ikke vurderet på ny på linjerne i indkøbsordren, når du opdaterer den aktuelle indkøbsordre via handlingen **Udfør opdatering af indkøbsordre**.
+Hver linje, der har statussen **Godkendt** , har en bekræftet leveringsdato. Når du kører handlingen **Udfør opdatering af indkøbsordre** , opdateres datoen på indkøbsordren. Noter og vedhæftede filer bliver ikke automatisk overført til den aktuelle indkøbsordre. Handelsaftaler bliver ikke vurderet på ny på linjerne i indkøbsordren, når du opdaterer den aktuelle indkøbsordre via handlingen **Udfør opdatering af indkøbsordre**.
 
 ## <a name="po-statuses-and-versions"></a>Status for indkøbsordren og versioner
 
@@ -182,10 +182,10 @@ I nedenstående tabel vises et eksempel på ændringerne i status og version, so
 |--------|--------------------|
 | Den første version af indkøbsordren oprettes i Supply Chain Management. | Status er **Godkendt**. |
 | Indløbsordren sendes til kreditoren. | En version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
-| Kreditoren sender et **Accepteret med ændringer**-svar. | Status er stadig **Til eksternt gennemsyn**. |
+| Kreditoren sender et **Accepteret med ændringer** -svar. | Status er stadig **Til eksternt gennemsyn**. |
 | Du kan foretage nogle ændringer, som kreditoren har anmodet om. | Statussen ændres til **Godkendt**. |
 | Du kan sende den nye version af indkøbsordren til kreditoren. | En ny version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
-| Kreditoren accepterer den nye version af indkøbsordren. | Status er stadig **Til eksternt gennemsyn,** medmindre kreditorkontoen er konfigureret til automatisk at indstille indkøbsordrernes status til **Bekræftet**, når kreditoren accepterer dem. |
+| Kreditoren accepterer den nye version af indkøbsordren. | Status er stadig **Til eksternt gennemsyn,** medmindre kreditorkontoen er konfigureret til automatisk at indstille indkøbsordrernes status til **Bekræftet** , når kreditoren accepterer dem. |
 
 Kreditorer behøver ikke at bekræfte en indkøbsordre via grænsefladen for kreditorsamarbejde. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du manuelt bekræfte ordren. I dette tilfælde får du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser som en åben bekræftet ordre, som ikke har nogen svar. På dette tidspunkt har kreditoren ikke længere mulighed for at bekræfte eller afvise indkøbsordren.
 
@@ -201,10 +201,10 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 | Handling | Status og version |
 |--------|--------------------|
 | Den første version af indkøbsordren oprettes i Supply Chain Management. | Status er **Kladde**. |
-| Indkøbsordren sendes til godkendelsesprocessen. (Godkendelsesprocessen er en intern proces, som kreditoren ikke er involveret i). | Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke afvises under godkendelsesprocessen. Den godkendte indkøbsordre registreres som en version. | 
+| Indkøbsordren sendes til godkendelsesprocessen. (Godkendelsesprocessen er en intern proces, som kreditoren ikke er involveret i). | Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse** , hvis indkøbsordren ikke afvises under godkendelsesprocessen. Den godkendte indkøbsordre registreres som en version. | 
 | Indløbsordren sendes til kreditoren. | Versionen registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
 | Du kan foretage de ændringer, som kreditoren har anmodet om, enten manuelt eller ved hjælp af handlingen **Udfør opdatering af indkøbsordre** i svaret for at opdatere indkøbsordren. | Statussen ændres tilbage til **Kladde**. |
-| Indkøbsordren sendes igen til godkendelsesprocessen. | Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke afvises under godkendelsesprocessen. Systemet kan også konfigureres, så specifikke feltændringer ikke kræver fornyet godkendelse. I dette tilfælde ændres status først til **Kladde** og derefter opdateres automatisk til **Godkendt**. Den godkendte indkøbsordre registreres som en ny version. |
+| Indkøbsordren sendes igen til godkendelsesprocessen. | Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse** , hvis indkøbsordren ikke afvises under godkendelsesprocessen. Systemet kan også konfigureres, så specifikke feltændringer ikke kræver fornyet godkendelse. I dette tilfælde ændres status først til **Kladde** og derefter opdateres automatisk til **Godkendt**. Den godkendte indkøbsordre registreres som en ny version. |
 | Du kan sende den nye version af indkøbsordren til kreditoren. | Den nye version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**. |
 | Kreditoren godkender den nye version af IO'en. | Statussen ændres til **Bekræftet**. Det sker enten automatisk, eller når du modtager svar fra kreditoren og derefter bekræfter indkøbsordren. |
 
@@ -237,7 +237,7 @@ I dette afsnit beskrives interaktionerne mellem debitorer og kreditorer under ti
 
 ## <a name="public-sector-extensions"></a>Udvidelser til den offentlige sektor
 
-For den offentlige sektor muliggør de udvidede funktioner, at en tilbudsanmodningssag bliver sendt til kreditorer og publiceret. Når du udgiver en tilbudsanmodning, kan alle, der anmoder om oplysningerne, kan få vist det arbejde, der er i overensstemmelse med lovgivningen for den offentlige sektor. Alt arbejde, der er tilgængeligt, afspejles på listesiden **Åbne publicerede tilbudsanmodninger**, og de annullerede, ventende eller tildelte tilbudsanmodninger kan ses på listesiden **Lukkede publicerede tilbudsanmodninger**. Disse dokumenter kan også ses på et websted uden for Supply Chain Management gennem integration med følgende dataenheder:
+For den offentlige sektor muliggør de udvidede funktioner, at en tilbudsanmodningssag bliver sendt til kreditorer og publiceret. Når du udgiver en tilbudsanmodning, kan alle, der anmoder om oplysningerne, kan få vist det arbejde, der er i overensstemmelse med lovgivningen for den offentlige sektor. Alt arbejde, der er tilgængeligt, afspejles på listesiden **Åbne publicerede tilbudsanmodninger** , og de annullerede, ventende eller tildelte tilbudsanmodninger kan ses på listesiden **Lukkede publicerede tilbudsanmodninger**. Disse dokumenter kan også ses på et websted uden for Supply Chain Management gennem integration med følgende dataenheder:
 
 - Publicerede tilbudsanmodninger
 - Linje i publicerede tilbudsanmodninger

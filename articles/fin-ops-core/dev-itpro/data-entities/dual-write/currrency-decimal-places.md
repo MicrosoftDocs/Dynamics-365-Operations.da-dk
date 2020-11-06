@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456808"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997472"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering af valutadatatype til dobbeltskrivning
 
@@ -81,13 +80,13 @@ Der er nogle begrænsninger:
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Systemindstillinger: valutapræcision for prisfastsættelse
 
-Når migreringen er fuldført, kan administratorer angive valutapræcisionen. Gå til **Indstillinger \> Administration**, og vælg **Systemindstillinger**. Under fanen **Generelt** skal du ændre værdien af feltet **Vælg den valutapræcision, der bruges til prissætning i hele systemet**, som vist i følgende illustration.
+Når migreringen er fuldført, kan administratorer angive valutapræcisionen. Gå til **Indstillinger \> Administration** , og vælg **Systemindstillinger**. Under fanen **Generelt** skal du ændre værdien af feltet **Vælg den valutapræcision, der bruges til prissætning i hele systemet** , som vist i følgende illustration.
 
 ![Systemindstillinger for valuta](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Forretningsstyring: valutaer
 
-Hvis du kræver, at valutapræcisionen for en bestemt valuta er forskellig fra den valutapræcision, der bruges til prisfastsættelsen, kan du ændre den. Gå til **Indstillinger \> Forretningsstyring**, vælg **Valutaer**, og vælg den valuta, der skal ændres. Angiv derefter feltet **Valutapræcision** til det antal decimaler, du ønsker, som vist i følgende illustration.
+Hvis du kræver, at valutapræcisionen for en bestemt valuta er forskellig fra den valutapræcision, der bruges til prisfastsættelsen, kan du ændre den. Gå til **Indstillinger \> Forretningsstyring** , vælg **Valutaer** , og vælg den valuta, der skal ændres. Angiv derefter feltet **Valutapræcision** til det antal decimaler, du ønsker, som vist i følgende illustration.
 
 ![Valutaindstillinger for en bestemt landestandard](media/specific-currency.png)
 

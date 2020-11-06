@@ -3,7 +3,7 @@ title: Arbejdsområde for kreditorbetalinger
 description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorbetalinger. Arbejdsområdet Kreditorbetalinger viser oplysninger, der vedrører behandling af kreditorbetalinger.
 author: abruer
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598103"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022513"
 ---
 # <a name="vendor-payments-workspace"></a>Arbejdsområde for kreditorbetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Arbejdsområdet **Kreditorbetalinger** viser oplysninger, der vedrører behandling af kreditorbetalinger. Arbejdsområdet indeholder en **Mit arbejde**-visning og siden **Analyser**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. **Analyser**-siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører kreditorbetalinger.
+Arbejdsområdet **Kreditorbetalinger** viser oplysninger, der vedrører behandling af kreditorbetalinger. Arbejdsområdet indeholder en **Mit arbejde** -visning og siden **Analyser**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. **Analyser** -siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører kreditorbetalinger.
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Opsætning, der kræves for at se Power BI-indhold
 
@@ -49,7 +49,7 @@ Oplysningerne i sektionen **Oversigt** er for det firma, du er logget på.
 
 ### <a name="vendor-transactions-grids"></a>Gitre for kreditorposteringer
 
-Sektionen **Kreditorposteringer** indeholder gitre, der viser de fakturaer, der er forfaldne, og betalinger, der ikke er udlignet. I **Forfaldne fakturaer**-gitteret kan du se udligningshistorikken for den valgte faktura. I **Betalinger ikke udlignet**-gitteret kan du se udligningshistorikken for den valgte faktura og udligne en faktura.
+Sektionen **Kreditorposteringer** indeholder gitre, der viser de fakturaer, der er forfaldne, og betalinger, der ikke er udlignet. I **Forfaldne fakturaer** -gitteret kan du se udligningshistorikken for den valgte faktura. I **Betalinger ikke udlignet** -gitteret kan du se udligningshistorikken for den valgte faktura og udligne en faktura.
 
 Centrale medarbejdere kan bruge et filter, der vises øverst på hvert gitter, til at vælge et firma. Gitteret filtreres derefter, så det kun viser de firmaer, der er defineret i det organisationshierarki til centraliserede betalinger, som den centrale medarbejder har rettigheder til at få vist.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
+ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate, TMSRouteSchedule, TMSRouteRateDetail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b76a6530517ec9e2e513cda7477f271558632650
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 04346363070fff4dc3110a620c3d9bc9b1016d1e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206259"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017845"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planlæg fragttransportruter med flere stop
 
@@ -43,7 +43,7 @@ En ruteplan indeholder rutesegmenter, der indeholder oplysninger om de stop, der
 Hver ruteplan skal være tilknyttet en rutevejledning.
 
 ## <a name="route-guides"></a>Rutevejledninger
-En rutevejledning definerer kriterierne for at sammenholde en belastning med en bestemt ruteplan. Du kan f.eks. angive en oprindelseshub og en destinationshub, grænser for containervolumen eller vægt og en fragtmand, service eller gruppe. Rutevejledninger er tilgængelige på siden **Satsrutepanel**, hvor belastninger kan matches til ruter, enten manuelt eller automatisk. Hvis rutevejledningen er til en planlagt rute, er den også tilgængelig på siden **Lastopbygningspanel**.
+En rutevejledning definerer kriterierne for at sammenholde en belastning med en bestemt ruteplan. Du kan f.eks. angive en oprindelseshub og en destinationshub, grænser for containervolumen eller vægt og en fragtmand, service eller gruppe. Rutevejledninger er tilgængelige på siden **Satsrutepanel** , hvor belastninger kan matches til ruter, enten manuelt eller automatisk. Hvis rutevejledningen er til en planlagt rute, er den også tilgængelig på siden **Lastopbygningspanel**.
 
 ## <a name="scheduled-routes"></a>Planlagte ruter
 En planlagt rute er en foruddefineret ruteplan, der har en tidsplan for afsendelsesdatoerne. Planlagte ruter og ikke-planlagte ruter er forskellige i den måde, belastninger er knyttet til dem. Hvis du tildeler en ikke-planlagt rute ved hjælp af satsrutepanelet, valideres kun belastningen og rutevejledningen. Hvis du tildeler en planlagt rute, indgår også datoer og adresser fra ordrerne og hubberne og datoen på ruteplanen i betragtningerne. Du behøver ikke at bruge siden Satsrutepanel til manuelt at tildele belastninger til en planlagt rute. I stedet kan du bruge lastopbygningspanelet til at foreslå, at belastninger bygges baseret på kundeadresser og leveringsdatoer fra salgsordrer for en given planlagte rute. For planlagte ruter har ruteplanen faste oprindelses- og destinationshubs. Typisk er fragtmanden og servicen det samme for alle segmenter, men de kan være forskellige. Destinationshubberne oprettes ved hjælp af postnumre for de kunder, der besøges på ruten. Der kan defineres flere tidsplaner for ruten for én ruteplan. Ruteplanen skal være tilknyttet en rutevejledning. Men for planlagte ruter kan planen kun knyttes til én rutevejledning. Tidsplanen for ruten bruges kun til at oprette de faktiske ruter på siden **Ruteplan**. Du kan bruge standardlastskabelonen, når du foreslår belastninger i lastopbygningspanelet.

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46bbaca86f9113a3e4705e4f2c0f76590e62ec1
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338327"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018876"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Oversigt over indkøb og forsyning
 
@@ -35,13 +35,13 @@ Indkøb og forsyning dækker alle trin fra at identificere behov for produkter o
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identificere behov for produkter og tjenester
 
-Behovet for produkter eller tjenesteydelser kan opstå ud fra *rekvisitioner*, for eksempel, når en medarbejder rekvirerer et produkt. *Produktkataloger* kan være sat op til at vejlede i valget af tilgængelige produkter, der kan vælges mellem, eller anmodninger kan foretages for produkter, der ikke er endnu gjort tilgængelige i et katalog, så indkøbsafdelingen får mulighed for at overveje, hvordan produktet kan leveres.  
+Behovet for produkter eller tjenesteydelser kan opstå ud fra *rekvisitioner* , for eksempel, når en medarbejder rekvirerer et produkt. *Produktkataloger* kan være sat op til at vejlede i valget af tilgængelige produkter, der kan vælges mellem, eller anmodninger kan foretages for produkter, der ikke er endnu gjort tilgængelige i et katalog, så indkøbsafdelingen får mulighed for at overveje, hvordan produktet kan leveres.  
 
 *Forbrugsgrænser* kan bruges til at begrænse rekvisitionsforbruget, og *indkøbsarbejdsgangen* tilføjer mulighed for at kræve godkendelse, før bestilling sker. Det er også muligt at angive fordeling af budgetmidler, hvis det er nødvendigt.  
 
 Indkøbsafdelingen identificerer leverandører til påkrævede produkter og tjenester, og dette kan omfatte, at der sendes en *tilbudsanmodning* til flere potentielle leverandører. Det er muligt at dele specifikationerne for det produkt, der anmodes om, og potentielle leverandører kan se disse for at finde ud af, om de kan levere et produkt, der overholder dem. Kreditorer returnerer deres bud, som derefter gennemgås af indkøbsafdelingen, før de vælger den leverandør, de vil købe fra.  
 
-Indkøbsordrer omfatter en mulighed for at sende en *indkøbsforespørgsel* til leverandøren som et alternativ til en mere omfattende tilbudsanmodningsproces. Indkøbsforespørgslen kan bruges til at oprette betingelser som f.eks. priser, rabatter og leveringsdato for ordren. Hvis kreditorer er konfigureret til at bruge **Kreditor**-portalen, deaktiveres funktion til indkøbsforespørgsel. I stedet deles ordren på **kreditorportalenleverandør**, og når der er sendt en *bekræftelsesanmodning*, kan kreditoren sende ordren direkte.  
+Indkøbsordrer omfatter en mulighed for at sende en *indkøbsforespørgsel* til leverandøren som et alternativ til en mere omfattende tilbudsanmodningsproces. Indkøbsforespørgslen kan bruges til at oprette betingelser som f.eks. priser, rabatter og leveringsdato for ordren. Hvis kreditorer er konfigureret til at bruge **Kreditor** -portalen, deaktiveres funktion til indkøbsforespørgsel. I stedet deles ordren på **kreditorportalenleverandør** , og når der er sendt en *bekræftelsesanmodning* , kan kreditoren sende ordren direkte.  
 
 *Kreditorkataloger* kan bruges til at indsamle oplysninger om det produktudvalg, som kreditorerne kan levere. Kreditorer kan udgive deres eget katalog, så det er nemmere at holde kataloget opdateret. Det er muligt at vedhæfte en *godkendt kreditorliste* til et produkt, og dette kan være en hjælp under valg af kreditorer, når der åbnes nye indkøbsordrer, og forhindre brug af utilsigtede kreditorer.
 
@@ -54,7 +54,7 @@ Indkøbsordrer omfatter en mulighed for at sende en *indkøbsforespørgsel* til 
 - Via behandling af købsaftaler, hvor indkøbsordrer oprettes som frigivne ordrer fra aftalerne. Dette bruges normalt, når købsaftaler bruges til at repræsentere rammeordrer.
 - Manuelt, når den indkøbsordre, der er oprettet, ikke er baseret på et andet dokument.
 
-Indkøbsordrer, der er konfigureret med *købsgodkendelsesarbejdsgange*, kræver godkendelse, før de registreres som godkendt, og dette er påkrævet, før ordren kan behandles yderligere.
+Indkøbsordrer, der er konfigureret med *købsgodkendelsesarbejdsgange* , kræver godkendelse, før de registreres som godkendt, og dette er påkrævet, før ordren kan behandles yderligere.
 
 Købsordrer *bekræftes* for at angive, at der er oprettet en aftale med kreditoren. Indkøbsordren kommer derefter gradvist gennem forskellige statusser, indtil den til sidst bliver faktureret eller annulleret.  
 
@@ -66,7 +66,7 @@ Priser og rabatter Indeholder oplysninger om priser, rabatter og rabatbetingelse
 
 ### <a name="delivery-options"></a>Indstillinger for levering
 
-Der er forskellige muligheder for den leveringsproces, der er knyttet til en indkøbsordre. Bestilte produkter kan opdeles i *leveringsplaner*, hvor dele af det bestilte antal kan være planlagt til levering på forskellige datoer. Levering kan også omfatte *direkte levering*, der initieres fra en salgsordre, som automatiserer oprettelsen af følgesedlen for salgsordren, på samme tid som produktkvitteringen registreres på indkøbsordren. Indkøbsordrer kan også indgå i en *interne ordrekæde*, der også kaldes interne indkøbsordrer, hvor produkter bestilles fra en tilsvarende intern salgsordre. I denne situation er visse trin automatiseret på tværs af de to relaterede interne ordrer.
+Der er forskellige muligheder for den leveringsproces, der er knyttet til en indkøbsordre. Bestilte produkter kan opdeles i *leveringsplaner* , hvor dele af det bestilte antal kan være planlagt til levering på forskellige datoer. Levering kan også omfatte *direkte levering* , der initieres fra en salgsordre, som automatiserer oprettelsen af følgesedlen for salgsordren, på samme tid som produktkvitteringen registreres på indkøbsordren. Indkøbsordrer kan også indgå i en *interne ordrekæde* , der også kaldes interne indkøbsordrer, hvor produkter bestilles fra en tilsvarende intern salgsordre. I denne situation er visse trin automatiseret på tværs af de to relaterede interne ordrer.
 
 ### <a name="supplementary-items"></a>Supplerende varer
 
@@ -92,4 +92,4 @@ Fakturerede indkøbsordrer registrerer passivet på kreditorkontoen i kreditorer
 
 ## <a name="vendor-performance"></a>Leverandørperformance
 
-Ydeevne og gennemgang af indkøb understøttes via *indkøbs- og kreditorapporter*, som indeholder forbrugsanalyse og analyse af kreditorydeevne.
+Ydeevne og gennemgang af indkøb understøttes via *indkøbs- og kreditorapporter* , som indeholder forbrugsanalyse og analyse af kreditorydeevne.

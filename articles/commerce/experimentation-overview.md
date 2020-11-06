@@ -3,7 +3,7 @@ title: Eksperimenteren i Dynamics 365 Commerce
 description: Med eksperimenteren kan du oprette, redigere og administrere sidelayout og indholdsbehandlinger i webstedsgeneratoren. Understøttelse af eksperimenteren fra start til slut er aktiveret for e-handelssider og enheder på en side.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,26 +18,26 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b2e97167d12b8ceecf72af075ee0362101c4fa0
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930167"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097133"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimenteren i Dynamics 365 Commerce
 Brug eksperimenteren i Dynamics 365 Commerce til at validere hypoteser om effektiviteten af dine e-handelssider, og tag beslutninger med databaseret sikkerhed. Commerce understøtter A/B-test på sider, moduler og fragmenter og giver dig mulighed for at måle virkningen af foreslåede ændringer på dit websted.
 
-Du kan oprette, redigere og administrere behandlinger af sider og indhold, der kaldes **variationer**, i webstedsgeneratoren. Commerce kan integreres med tredjepartstjenester, som du kan bruge til at oprette eksperimenter og behandlingstildelinger. Hændelsesstrømme i realtid, der er registreret i Commerce, giver den analyse, der definerer eksperimenters resultater i tredjepartstjenesten. Du kan derefter udnytte analyserne til support eller afvise din hypotese.
+Du kan oprette, redigere og administrere behandlinger af sider og indhold, der kaldes **variationer** , i Commerce-webstedsgeneratoren. Commerce kan integreres med tredjepartstjenester, som du kan bruge til at oprette eksperimenter og behandlingstildelinger. Hændelsesstrømme i realtid, der er registreret i Commerce, giver den analyse, der definerer eksperimenters resultater i tredjepartstjenesten. Du kan derefter udnytte analyserne til support eller afvise din hypotese.
 
 ## <a name="set-up-prerequisites"></a> Angiv forudsætninger
 1. **Få den korrekte version af Commerce** – Opgrader dit modulbibliotek, SDK for onlinekanaludvidelser og Commerce Scale Unit til Commerce version 10.0.13 eller nyere.
 1. **Konfigurere en eksperimenteren-connector** - En eksperimenteren-connector giver mulighed for, at Commerce kan oprette forbindelse til tredjepartstjenester for at hente listen over eksperimenter og bestemme, hvornår et eksperiment skal vises for en bruger. Du kan købe en tredjeparts-connector fra [AppSource](https://appsource.microsoft.com). Følg de opsætningsinstruktioner, der er angivet af udgiveren. Du kan også bruge eksempeltest-connectoren fra Commerce til at teste arbejdsprocessen for eksperimenteren, uden at du behøver at konfigurere en ekstern tjeneste. Du kan finde flere oplysninger i [Konfigurere og aktivere connectorer](e-commerce-extensibility/connectors.md). 
 1. **Slå funktionsflagene for Eksperimenteren til i Commerce** - Du kan aktivere Eksperimenteren på lejerniveau ved at gå til **Lejerindstillinger > Funktioner** eller på webstedsniveau i **Webstedsindstillinger > Funktioner**.
-    - Aktivér **Eksperimenteren**-flaget for at oprette eksperimentvariationer af moduler på en side uden at påvirke eller kopiere andet indhold, der ikke er en del af eksperimentet. Dette sikrer, at løbende indholdsopdateringer uden for eksperimentet forbliver synkroniseret under eksperimentets livscyklus. Deaktivering af dette flag forhindrer alle eksperimenter i at blive vist for brugerne og fjerner alle redigeringsfunktioner i webstedsgeneratoren.
+    - Aktivér **Eksperimenteren** -flaget for at oprette eksperimentvariationer af moduler på en side uden at påvirke eller kopiere andet indhold, der ikke er en del af eksperimentet. Dette sikrer, at løbende indholdsopdateringer uden for eksperimentet forbliver synkroniseret under eksperimentets livscyklus. Deaktivering af dette flag forhindrer alle eksperimenter i at blive vist for brugerne og fjerner alle redigeringsfunktioner i webstedsgeneratoren.
     - Aktivér flaget **Eksperiment på sider eller fragmenter** for at udføre eksperimenter på en side eller et fragment. Derved oprettes en fuld forekomstkopi af hele siden eller fragmentet for alle moduler på siden eller fragmentet. Brug denne tilstand, når du vil teste omfattende ændringer af indholdet, eller hvor synkronisering af igangværende indholdsændringer på tværs af forekomster ikke er et problem. Deaktivering af dette flag forhindrer oprettelse og redigering af nye eksperimenter på sider og fragmenter.
     > [!NOTE]
-    > **Eksperimenteren**-flaget skal også være aktiveret for at få **Eksperiment på sider eller fragmenteringer**-funktionen til at fungere.
+    > **Eksperimenteren** -flaget skal også være aktiveret for at få **Eksperiment på sider eller fragmenteringer** -funktionen til at fungere.
     
 ## <a name="experimentation-lifecycle"></a>Eksperimenterens livscyklus
 Det er en iterativ proces at konfigurere et eksperiment, oprette variationer og køre et eksperiment. Nedenstående diagram viser livscyklussen for Eksperimenteren i Commerce og tredjepartstjenesten. 
@@ -46,14 +46,14 @@ Det er en iterativ proces at konfigurere et eksperiment, oprette variationer og 
 
 Du kan finde flere oplysninger om hvert trin i eksperimenteren-processen under følgende emner.
 - [Identificere en hypotese og fastslå målepunkter for et eksperiment](experimentation-identify.md)
-- [Konfigurere et eksperiment](experimentation-setup.md)
-- [Tilslutte og redigere et eksperiment](experimentation-connect-edit.md)
+- [Opsætning af et eksperiment](experimentation-setup.md)
+- [Oprette forbindelse til og redigere et eksperiment](experimentation-connect-edit.md)
 - [Gennemse og publicere et eksperiment](experimentation-preview-publish.md)
 - [Køre og overvåge et eksperiment](experimentation-run-monitor.md)
-- [Hæve en variation og fuldføre et eksperiment](experimentation-review-complete.md)
+- [Hæv en variation og fuldfører et eksperiment](experimentation-review-complete.md)
 
 > [!NOTE]
-> Hvis du vil vide, hvor et eksperiment er i livscyklussen, skal du gå til fanen **Eksperimenter** i webstedsgeneratoren. Der vises en liste over eksperimenter med status for hvert eksperiment i både Commerce og tredjepartstjenesten. Du kan finde flere oplysninger i [Gennemgå status for et eksperiment](experimentation-status.md).
+> Hvis du vil vide, hvor et eksperiment er i livscyklussen, skal du vælge **Eksperimenter** i venstre navigationsrude af webstedsgeneratoren. Der vises en liste over eksperimenter med status for hvert eksperiment i både Commerce og tredjepartstjenesten. Du kan finde flere oplysninger i [Gennemgå status for et eksperiment](experimentation-status.md).
 
 ## <a name="next-step"></a>Næste trin
 [Identificere en hypotese og fastslå succesmålepunkter for et eksperiment](experimentation-identify.md) 

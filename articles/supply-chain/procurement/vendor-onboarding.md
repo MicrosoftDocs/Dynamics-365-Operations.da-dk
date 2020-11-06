@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203405"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018646"
 ---
 # <a name="onboard-vendors"></a>Modtage kreditorer
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -111,7 +112,7 @@ Når den mulige kreditorbruger fuldfører kreditorregistreringsguiden, oprettes 
 
 En kreditoranmodning kan oprettes som en kladde og sendes manuelt til en arbejdsgang. Kreditoranmodningen kan også automatisk sendes til en arbejdsgang, når kreditorregistreringsguiden er fuldført. En anmodning kan sendes manuelt, hvis, f.eks. en anmoder ønsker at vurdere, om anmodningen skal dirigeres gennem en godkendelsesproces, før den sendes til arbejdsgangen.
 
-- Vælg **Indkøbs- og forsyningsparametre** &gt; **Kreditorsamarbejde**, og vælg derefter **Send automatisk registrering af mulig kreditor til arbejdsgang** for at konfigurere kreditoranmodningen, så den sendes automatisk til en arbejdsgang, når kreditorregistreringsguiden er fuldført.
+- Vælg **Indkøbs- og forsyningsparametre** &gt; **Kreditorsamarbejde** , og vælg derefter **Send automatisk registrering af mulig kreditor til arbejdsgang** for at konfigurere kreditoranmodningen, så den sendes automatisk til en arbejdsgang, når kreditorregistreringsguiden er fuldført.
 
 ## <a name="vendor-requests"></a>Kreditoranmodninger
 
@@ -143,7 +144,7 @@ Før du godkender en kreditoranmodning skal du på siden **Ny kreditor** i overs
 
 Hvis den mulige kreditorbruger skal have adgang til Supply Chain Management som en kreditorsamarbejdsbruger, der repræsenterer kreditoren, skal du indstille adgangsrettigheder for kreditorsamarbejde til **Ja**. Hvis du vil deaktivere den brugerkonto, som den mulige kreditor brugte til at blive registreret, skal du indstille denne rettighed til **Nej**.
 
-Hvis adgangstilladelsen for kreditorsamarbejdet er indstillet til **Ja**, sendes der en anmodning om at redigere brugerens roller, så brugeren har de roller, der er defineret for typen **Kreditor** i **Eksterne roller**, når kreditoranmodningen er godkendt. Hvis denne rettighed er indstillet til **Nej**, når kreditoranmodningen er godkendt, sendes der en anmodning til den inaktive bruger. I så fald skal arbejdsgangen om at deaktivere en brugeranmodning konfigureres.
+Hvis adgangstilladelsen for kreditorsamarbejdet er indstillet til **Ja** , sendes der en anmodning om at redigere brugerens roller, så brugeren har de roller, der er defineret for typen **Kreditor** i **Eksterne roller** , når kreditoranmodningen er godkendt. Hvis denne rettighed er indstillet til **Nej** , når kreditoranmodningen er godkendt, sendes der en anmodning til den inaktive bruger. I så fald skal arbejdsgangen om at deaktivere en brugeranmodning konfigureres.
 
 Hvis en kreditorkonto skal oprettes, når kreditoranmodningen er godkendt, skal nummerserien for oprettelse af kreditorer fra kreditoranmodninger indstilles til **Automatisk**.
 

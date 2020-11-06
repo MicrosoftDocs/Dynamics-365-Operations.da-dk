@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
-ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
+ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340924"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997248"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -43,7 +42,7 @@ Nogle versioner af Package Deployer-værktøjet er inkompatible med pakken til d
 
 Når du har installeret Package Deployer-værktøjet, skal du installere løsningspakken ved at følge disse trin.
 
-1. Hent den seneste fil med løsningspakken fra Yammer.com. Når zip-filen med pakken er hentet, skal du højreklikke på den og vælge **Egenskaber**. Markér afkrydsningsfeltet **Ophæv blokering**, og vælg derefter **Anvend**. Hvis du ikke kan se afkrydsningsfeltet **Ophæv blokering**, er blokeringen af zip-filen allerede fjernet, og du kan springe dette trin over.
+1. Hent den seneste fil med løsningspakken fra Yammer.com. Når zip-filen med pakken er hentet, skal du højreklikke på den og vælge **Egenskaber**. Markér afkrydsningsfeltet **Ophæv blokering** , og vælg derefter **Anvend**. Hvis du ikke kan se afkrydsningsfeltet **Ophæv blokering** , er blokeringen af zip-filen allerede fjernet, og du kan springe dette trin over.
 
     ![Dialogboksen Egenskaber](media/unblock_option.png)
 
@@ -62,25 +61,25 @@ Når du har installeret Package Deployer-værktøjet, skal du installere løsnin
 
 Udfør følgende trin for at aktivere sporingsloggen.
 
-1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
+1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger** , og vælg derefter **Administration** under **System**.
 2. På siden **Administration** skal du vælge **Systemindstillinger**.
 3. Under fanen **Tilpasning** i feltet **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
 
 
 Udfør følgende trin for at få vist sporingsloggen.
 
-1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
+1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger** , og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
 2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
+3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block** -teksten i oversigtspanelet **Udførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finance and Operations-apps
 
-**Påkrævet rolle for at få vist fejl**: Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Common Data Service, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
+**Påkrævet rolle for at få vist fejl** : Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Common Data Service, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
 
 1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i enheden **DualWriteProjectConfiguration**. Åbn enheden **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
 
     > [!TIP]
-    > En nem måde at åbne objektet på er at slå **Design**-tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
+    > En nem måde at åbne objektet på er at slå **Design** -tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
 
 2. Indstil egenskaben **IsDebugMode** til **Ja** for projektet.
 3. Kør det scenario, der genererer fejl.
@@ -105,7 +104,7 @@ Udfør følgende trin for at få vist sporingsloggen.
 **Påkrævet rolle for at fjerne miljøtilknytningen:** Systemadministrator for enten Finance and Operations-app eller Common Data Service.
 
 1. Log på Finance and Operations-appen.
-2. Gå til **Arbejdsområder \> Datastyring**, og vælg feltet **Dobbeltskrivning**.
+2. Gå til **Arbejdsområder \> Datastyring** , og vælg feltet **Dobbeltskrivning**.
 3. Vælg alle kørende tilknytninger, og vælg derefter **Stop**.
 4. Vælg **Ophæv sammenkædning af miljø**.
 5. Vælg **Ja** for at bekræfte operationen.
@@ -119,5 +118,5 @@ Når du opretter en salgsordre i Dynamics 365 Sales, kan klik på **+ Tilføj pr
 Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge disse trin:
 1. Naviger til objektet **Ordrelinje**.
 2. Find formularen **Oplysninger** under formularernoden. 
-3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**. 
+3. Vælg formularen **Oplysninger** , og klik på **Aktivér sikkerhedsroller**. 
 4. Ret sikkerhedsindstillingen til **Vis for alle**.

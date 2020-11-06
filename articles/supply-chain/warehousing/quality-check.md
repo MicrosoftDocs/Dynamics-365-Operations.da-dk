@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSQualityCheckTemplate,WHSWorkClass,WHSWorkTemplateTable.WHSLocDirTable
+ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a4694281f3dd53581c9d8245a0105b37b2b155
-ms.sourcegitcommit: 7dc2ff9461c310324937bea2fc160ff056fefd8a
+ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686351"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016625"
 ---
 # <a name="quality-check"></a>Kvalitetskontrol
 
@@ -44,7 +44,7 @@ Denne proces kan også konfigureres, så alle scannede id'er straks omdirigeres 
 
 ## <a name="turn-on-the-quality-check-feature"></a>Aktivere funktionen Kvalitetskontrol
 
-Før du kan bruge funktionen *Kvalitetskontrol*, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Kvalitetskontrol* , skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Kvalitetskontrol*
@@ -55,7 +55,7 @@ Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
 
 ### <a name="quality-check-template"></a><a name="quality-template"></a>Kvalitetskontrolskabelon
 
@@ -122,7 +122,7 @@ Arbejdsskabeloner gør det muligt at definere arbejdshandlinger, der skal udfør
 1. Indstil feltet **Arbejdsordretype** i overskriften til *Indkøbsordrer*.
 1. Vælg **Rediger** i handlingsruden.
 1. Vælg en arbejdsskabelon, der skal omfatte et kvalitetskontroltrin. Vælg **51 indkøbsordremodtagelse** i feltet **Arbejdsskabelon** i sektionen *Oversigt*.
-1. Bemærk, at gitteret indeholder to eksisterende linjer i sektionen **Arbejdsskabelondetaljer**: én til *Pluk* og én til *Læg på lager*.
+1. Bemærk, at gitteret indeholder to eksisterende linjer i sektionen **Arbejdsskabelondetaljer** : én til *Pluk* og én til *Læg på lager*.
 1. Vælg **Ny** i sektionen **Arbejdsskabelondetaljer** for at føje en række for kvalitetskontrol til gitteret. Bemærk, at feltet **Linjenummer** for den nye linje er angivet til *3*.
 1. Angiv følgende værdier på den nye linje. Acceptér standardværdierne for alle de andre felter.
 
@@ -134,12 +134,12 @@ Arbejdsskabeloner gør det muligt at definere arbejdshandlinger, der skal udfør
 
 1. Vælg **Gem** i handlingsruden for at gemme arbejdet indtil videre.
 
-    Du modtager en meddelelse med oplysningen "Ugyldig - Kvalitetskontrol skal følge lige efter et pluk". Derfor skal du ændre **Linjenummer**-værdien for den linje, du lige har tilføjet.
+    Du modtager en meddelelse med oplysningen "Ugyldig - Kvalitetskontrol skal følge lige efter et pluk". Derfor skal du ændre **Linjenummer** -værdien for den linje, du lige har tilføjet.
 
-1. Udfør følgende trin for at ændre **Linjenummer**-værdien for den nye linje:
+1. Udfør følgende trin for at ændre **Linjenummer** -værdien for den nye linje:
 
     1. Vælg den linje, hvor feltet **Arbejdstype** i sektionen **Arbejdsskabelondetaljer** er angivet til *Kvalitetskontrol*.
-    2. Vælg knappen **Flyt op** eller **Flyt ned** for at flytte *Kvalitetskontrol*-linjen, så den er efter *Pluk*-linjen.
+    2. Vælg knappen **Flyt op** eller **Flyt ned** for at flytte *Kvalitetskontrol* -linjen, så den er efter *Pluk* -linjen.
 
 1. Vælg **Gem** i handlingsruden.
 
@@ -158,7 +158,7 @@ Derefter skal du oprette en arbejdsskabelon til kvalitetskontrollen.
     - **Beskrivelse af arbejdsskabelon:** *51 Kvalitetskontrol*
 
 1. Vælg **Gem** i handlingsruden for at gøre sektionen **Arbejdsskabelondetaljer** tilgængelig.
-1. Mens den nye skabelon stadig er markeret i sektionen **Oversigt**, skal du vælge **Ny** i sektionen **Arbejdsskabelondetaljer** for at føje en række til gitteret der.
+1. Mens den nye skabelon stadig er markeret i sektionen **Oversigt** , skal du vælge **Ny** i sektionen **Arbejdsskabelondetaljer** for at føje en række til gitteret der.
 1. Angiv følgende værdier i den nye række:
 
     - **Arbejdstype:** *Pluk*
@@ -204,11 +204,11 @@ Lokationsvejledninger er regler, der hjælper med at identificere pluk og læg-l
     - **Til antal:** *1000000*
 
 1. Vælg **Gem** i handlingsruden for at gemme den nye linje og gøre oversigtspanelet **Handlinger for lokationsvejledninger** tilgængeligt.
-1. Mens den nye linje stadig er valgt i oversigtspanelet **Linjer**, skal du vælge **Ny** i oversigtspanelet **Handlinger for lokationsvejledninger** for at føje en række til gitteret der, så du kan oprette en handling for linjen.
+1. Mens den nye linje stadig er valgt i oversigtspanelet **Linjer** , skal du vælge **Ny** i oversigtspanelet **Handlinger for lokationsvejledninger** for at føje en række til gitteret der, så du kan oprette en handling for linjen.
 1. Angiv feltet **Navn** til *Kvalitet* i den nye række. Acceptér standardværdierne for alle de andre felter.
 1. Vælg **Gem** i handlingsruden for at gøre knappen **Rediger forespørgsel** tilgængelig i oversigtspanelet **Handlinger i lokationsvejledning**.
-1. Selvom den linje, du lige har tilføjet, stadig er valgt i oversigtspanelet **Handlinger for lokationsvejledninger**, skal du vælge **Rediger forespørgsel** for at åbne en dialogboks, hvor du kan redigere forespørgslen for handlingen.
-1. Gå til fanen **Interval**, og vælg **Tilføj** for at føje en række til forespørgslen.
+1. Selvom den linje, du lige har tilføjet, stadig er valgt i oversigtspanelet **Handlinger for lokationsvejledninger** , skal du vælge **Rediger forespørgsel** for at åbne en dialogboks, hvor du kan redigere forespørgslen for handlingen.
+1. Gå til fanen **Interval** , og vælg **Tilføj** for at føje en række til forespørgslen.
 1. Angiv følgende værdier i den nye række:
 
     - **Tabel:** *Lokationer*
@@ -219,7 +219,7 @@ Lokationsvejledninger er regler, der hjælper med at identificere pluk og læg-l
     Lokationen *QMS* er en lagerlokation til kvalitet.
 
 1. Vælg **OK** for at lukke dialogboksen.
-1. Nu skal du ændre rækkefølgen af de eksisterende lokationsvejledninger for lagersted *51*. Gem den nye lokationsvejledning *51 til kvalitet*, opdater siden, og vælg lokationsvejledningen på listen. Brug derefter knapperne **Flyt op** og **Flyt ned** i handlingsruden til at placere lokationsvejledningen for lagersted *51* i følgende rækkefølge. (Før du vælger **Flyt op** eller **Flyt ned**, skal du vælge en lokationsvejledning på listen).
+1. Nu skal du ændre rækkefølgen af de eksisterende lokationsvejledninger for lagersted *51*. Gem den nye lokationsvejledning *51 til kvalitet* , opdater siden, og vælg lokationsvejledningen på listen. Brug derefter knapperne **Flyt op** og **Flyt ned** i handlingsruden til at placere lokationsvejledningen for lagersted *51* i følgende rækkefølge. (Før du vælger **Flyt op** eller **Flyt ned** , skal du vælge en lokationsvejledning på listen).
 
     1. 51 til kvalitet
     2. 51 PO Direct
@@ -271,7 +271,7 @@ Konfigurere et menupunkt, så mobilenheder kan udføre funktionen **Kvalitetskon
 1. Vælg **Rediger** i handlingsruden.
 1. I kolonnen **Tilgængelig menuer og menupunkter** skal vælge menupunktet **Modtagelse af indkøbsordrelinje**.
 1. Vælg den højre piletast for at flytte **Modtagelse af indkøbsordrelinje** til kolonnen **Menustruktur**.
-1. Vælg **Modtagelse af indkøbsordrelinje** i kolonnen **Menustruktur**, og vælg derefter pil op eller pil ned for at flytte menupunktet til den ønskede placering i mobilenhedsmenuen.
+1. Vælg **Modtagelse af indkøbsordrelinje** i kolonnen **Menustruktur** , og vælg derefter pil op eller pil ned for at flytte menupunktet til den ønskede placering i mobilenhedsmenuen.
 1. Vælg **Gem** i handlingsruden.
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Eksempelscenario
@@ -282,7 +282,7 @@ Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfig
 
 1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre** :
 
     - **Kreditorkonto:** *104*
     - **Lagersted:** *51*
@@ -308,10 +308,10 @@ Når indkøbsordren er blevet oprettet, kan den modtages ved hjælp af menupunkt
 1. Bekræft indkøbsordrens nummer.
 1. Angiv linjenummeret fra den indkøbsordre, der modtages, i feltet **LINJENUM**. Da ordren kun har én linje i dette scenario, skal du skrive *1* i feltet **LINJENUM** for hvert modtagelsestrin.
 1. Bekræft linjenummeret.
-1. Angiv det antal, der skal modtages, i feltet **Antal**. Da indkøbsordren er for tre paller (*PL*) i dette scenario, og der er tre modtagelsestrin, skal du skrive *1* i feltet **Antal** for hvert modtagelsestrin.
+1. Angiv det antal, der skal modtages, i feltet **Antal**. Da indkøbsordren er for tre paller ( *PL* ) i dette scenario, og der er tre modtagelsestrin, skal du skrive *1* i feltet **Antal** for hvert modtagelsestrin.
 1. Bekræft antallet.
 
-    Siden **Kvalitetskontrol** vises uden postfelter. Den har kun bekræftelsesknappen (markering) nederst og menuknappen (**≡**) øverst. (Menuknappen kaldes undertiden hamburgeren eller hamburgerknappen). Når pallen passerer kvalitetskontrollen, bekræfter brugeren blot kvalitetskontrollen på siden **Kvalitetskontrol**.
+    Siden **Kvalitetskontrol** vises uden postfelter. Den har kun bekræftelsesknappen (markering) nederst og menuknappen ( **≡** ) øverst. (Menuknappen kaldes undertiden hamburgeren eller hamburgerknappen). Når pallen passerer kvalitetskontrollen, bekræfter brugeren blot kvalitetskontrollen på siden **Kvalitetskontrol**.
 
     ![Siden Kvalitetskontrol](media/quality-check.png "Siden Kvalitetskontrol")
 
@@ -337,13 +337,13 @@ Når indkøbsordren er blevet oprettet, kan den modtages ved hjælp af menupunkt
 
 I dette scenario vil palle 2 blive afvist.
 
-1. Angiv **1** i feltet *LINJENUM*, og bekræft linjenummeret.
-1. Feltet **Antal** er nu tilgængeligt. Angiv *1*, og bekræft antallet.
+1. Angiv **1** i feltet *LINJENUM* , og bekræft linjenummeret.
+1. Feltet **Antal** er nu tilgængeligt. Angiv *1* , og bekræft antallet.
 
-    Siden **Kvalitetskontrol** vises. I forbindelse med denne modtagelse vil pallen blive afvist for kvalitet, og den vil blive placeret i *QMS*-kvalitetslokationen.
+    Siden **Kvalitetskontrol** vises. I forbindelse med denne modtagelse vil pallen blive afvist for kvalitet, og den vil blive placeret i *QMS* -kvalitetslokationen.
 
-1. Vælg menuknappen (**≡**) øverst på siden, og vælg derefter **Afvis** i menuen.
-1. På den **Opgave**-side, der vises, skal du angive **QMS** som den *Læg på lager*-lokation, hvor pallen skal sendes til yderligere inspektion.
+1. Vælg menuknappen ( **≡** ) øverst på siden, og vælg derefter **Afvis** i menuen.
+1. På den **Opgave** -side, der vises, skal du angive **QMS** som den *Læg på lager* -lokation, hvor pallen skal sendes til yderligere inspektion.
 
     Siden **Kvalitet i kvalitetskontrol: læg på lager** viser oplysninger om læg på lager-arbejdet:
 
@@ -371,8 +371,8 @@ Du kan finde flere oplysninger om kvalitetsstyring under [Oversigt over kvalitet
 
 I dette scenario vil palle 3 blive accepteret.
 
-1. Angiv **1** i feltet *LINJENUM*, og bekræft linjenummeret.
-1. Feltet **Antal** er nu tilgængeligt. Angiv *1*, og bekræft antallet.
+1. Angiv **1** i feltet *LINJENUM* , og bekræft linjenummeret.
+1. Feltet **Antal** er nu tilgængeligt. Angiv *1* , og bekræft antallet.
 
     Siden **Kvalitetskontrol** vises. I forbindelse med denne modtagelse vil pallen blive accepteret for kvalitet, og den vil blive placeret i lokationen for masselæg på lager.
 
@@ -394,6 +394,6 @@ I dette scenario vil palle 3 blive accepteret.
 
     På siden **Opgave** for modtagelse af indkøbsordrelinje vises meddelelsen "Arbejde fuldført". Feltet **LINJENUM** er tilgængeligt, så du kan begynde at modtage den næste palle.
 
-1. Vælg menuknappen (**≡**) øverst på siden, og vælg derefter **Annuller** i menuen for at gå tilbage til menuen.
+1. Vælg menuknappen ( **≡** ) øverst på siden, og vælg derefter **Annuller** i menuen for at gå tilbage til menuen.
 
 Du kan nu lukke mobilappen.

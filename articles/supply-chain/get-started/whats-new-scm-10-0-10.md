@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 647c62c489e65596be87a658a3d53e74e53455d7
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652101"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012361"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.10. (maj 2020)
 
@@ -39,10 +39,15 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 - [Forbedring til brug af eksisterende fastvægtkoder med lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+
 - [Forbedringer af indgående belastningsstyring til lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Du finder flere oplysninger under [Lagerstedshåndtering af indgående laster til indkøbsordrer](../warehousing/inbound-load-handling.md).
+
 - [Forbedringer af etiketudskrivning i forbindelse med lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Yderligere oplysninger finder du i [Dokumentruteplanlægning for layout til id-etiketter](../warehousing/document-routing-layout-for-license-plates.md).
+
 - [Varedisponering omfatter varer med disponibel lagerbeholdning, når filtre til forhåndsbehandling er aktiveret](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+
 - [Nye dataenheder til produktionsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [Kvalitetsstyring for lagerstedsprocesser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Der er flere oplysninger under [Kvalitetsstyring for lagerstedsprocesser](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

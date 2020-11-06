@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 10eb32f75ccfe1521af9ebfe1e73ef08ea4238f7
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597531"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017822"
 ---
 # <a name="put-to-wall---put-to-store"></a>Sæt til væg – læg til butik
 
@@ -34,12 +35,12 @@ Denne lagerfunktion kaldes også for andre ting, f. eks. læg-på-let og brud å
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Aktivere funktionen for udgående sortering
 
-Før du kan bruge funktionaliteten *Sæt til væg – læg til butik*, skal funktionen *Udgående sortering* være aktiveret i systemet. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+Før du kan bruge funktionaliteten *Sæt til væg – læg til butik* , skal funktionen *Udgående sortering* være aktiveret i systemet. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Udgående sortering*
 
-Funktionen *Udgående sortering* kan bruges sammen med funktionen *Bølgetrinskode for hele organisationen*, hvis den er aktiveret. Du skal også aktivere denne funktion, hvis du vil bruge foruddefinerede koder, der er oprettet i bølgetrinskoder. I arbejdsområdet **Funktionsstyring** vises denne funktion på følgende måde:
+Funktionen *Udgående sortering* kan bruges sammen med funktionen *Bølgetrinskode for hele organisationen* , hvis den er aktiveret. Du skal også aktivere denne funktion, hvis du vil bruge foruddefinerede koder, der er oprettet i bølgetrinskoder. I arbejdsområdet **Funktionsstyring** vises denne funktion på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Organization wide wave step code*
@@ -62,7 +63,7 @@ I denne demonstration bruges standard-Contoso-data og lagerstedet *62*. Nogle ti
 ### <a name="warehouse-management-parameters"></a>Parametre til lokationsstyring
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Parametre til lagerstedsstyring**.
-1. Gå til fanen **Generelt**, og angiv feltet **Sorteringslokationstype** til **SORTER** i oversigtspanelet *Lokationstyper*.
+1. Gå til fanen **Generelt** , og angiv feltet **Sorteringslokationstype** til **SORTER** i oversigtspanelet *Lokationstyper*.
 1. Vælg **Gem**.
 
 ### <a name="location-profile"></a>Lokationsprofil
@@ -112,7 +113,7 @@ I denne demonstration bruges standard-Contoso-data og lagerstedet *62*. Nogle ti
 
 ### <a name="wave-step-codes"></a>Bølgetrinskoder
 
-Hvis du har aktiveret funktionen *Bølgetrinskode for hele organisationen*, skal du konfigurere følgende kode.
+Hvis du har aktiveret funktionen *Bølgetrinskode for hele organisationen* , skal du konfigurere følgende kode.
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinkoder**.
 1. I handlingsruden skal du vælge **Ny** og derefter indstille følgende værdier:
@@ -155,7 +156,7 @@ Sorteringsskabelonen styrer, om der oprettes sorteringspositioner, hvilke kriter
 
     - **Opret arbejde lukning af position:** *Ja*
 
-        Hvis indstillingen er angivet til *Ja*, når positionen er lukket, oprettes arbejde for at flytte lageret til den endelige afsendelseslokation. Hvis den er indstillet til *Nej*, vil lageret straks blive plukket til ordren, når positionen er lukket.
+        Hvis indstillingen er angivet til *Ja* , når positionen er lukket, oprettes arbejde for at flytte lageret til den endelige afsendelseslokation. Hvis den er indstillet til *Nej* , vil lageret straks blive plukket til ordren, når positionen er lukket.
 
     - **Positionstildeling:** *Manuel*
 
@@ -177,7 +178,7 @@ Sorteringsskabelonen styrer, om der oprettes sorteringspositioner, hvilke kriter
 
     - **Luk automatisk sorteringsposition:** *Ja*
 
-        Hvis denne indstilling er angivet til *Ja*, vil sorteringsplaceringen automatisk blive lukket, når alt det arbejde, der kommer til placeringen, er fuldført.
+        Hvis denne indstilling er angivet til *Ja* , vil sorteringsplaceringen automatisk blive lukket, når alt det arbejde, der kommer til placeringen, er fuldført.
 
     - **Antal sorteringspositioner:** *3*
 
@@ -189,7 +190,7 @@ Sorteringsskabelonen styrer, om der oprettes sorteringspositioner, hvilke kriter
 
     - **Luk automatisk pakningsposition:** *Ja*
 
-        Hvis denne indstilling er angivet til *Ja*, pakkes lageret på sorteringsplaceringen i en container, når placeringen lukkes.
+        Hvis denne indstilling er angivet til *Ja* , pakkes lageret på sorteringsplaceringen i en container, når placeringen lukkes.
 
     - **Pakkeprofil-id:** *Sorter*
 
@@ -235,7 +236,7 @@ Rediger den bølgeskabelon, der bruges til sortering af bølgebehov.
     - Angiv indstillingen **Udfør behandling af bølgen ved frigivelse til lagerstedet** til *Nej*.
     - Angiv indstillingen **Tildel til åbne bølger** til *Ja*.
 
-1. Gå til oversigtspanelet **Meoder**, og konfigurer metoden **Sortering**:
+1. Gå til oversigtspanelet **Meoder** , og konfigurer metoden **Sortering** :
 
     1. I gitteret **Resterende metoder** skal du vælge **Sortering**.
     2. Vælg knappen Højre pil for at flytte **sortering** til gitteret **Valgte metoder**.
@@ -268,7 +269,7 @@ Rediger den bølgeskabelon, der bruges til sortering af bølgebehov.
 1. Gå til **Lagerstedsstyring \> Opsætning \> Mobilenhed \> Mobilenhedsmenu**.
 1. Vælg **Udgående** på listen over menuer.
 1. Vælg **Rediger** i handlingsruden.
-1. I gitteret **Tilgængelig menuer og menupunkter** skal du finde og vælge menupunktet **Sorter**, du lige har oprettet.
+1. I gitteret **Tilgængelig menuer og menupunkter** skal du finde og vælge menupunktet **Sorter** , du lige har oprettet.
 1. Vælg den højre piletast for at flytte **Sorter** til gitteret **Menustruktur**. På denne måde føjer du det menupunktet til menuen **Udgående**.
 1. Vælg **Gem**.
 
@@ -307,7 +308,7 @@ Du skal oprette lokationsdirektiver for at styre det arbejde, der oprettes, efte
 
 1. Vælg **Gem** for at gøre knappen **Rediger forespørgsel** tilgængelig i oversigtspanelet **Handlinger i lokationsvejledning**.
 1. Vælg **Rediger forespørgsel** i oversigtspanelet **Handlinger for lokationsvejledninger**.
-1. Gå til dialogboksen til forespørgselseditoren under fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Lokation*. Angiv feltet **Kriterier** for denne række til *Lagerport*.
+1. Gå til dialogboksen til forespørgselseditoren under fanen **Område** , og find den række, hvor feltet **Felt** er indstillet til *Lokation*. Angiv feltet **Kriterier** for denne række til *Lagerport*.
 1. Vælg **OK** for at bekræfte redigering.
 
 ### <a name="work-classes"></a>Arbejdsklasser
@@ -329,8 +330,8 @@ Du skal oprette lokationsdirektiver for at styre det arbejde, der oprettes, efte
 1. I gitteret skal du vælge arbejdsskabelonen **62 Pluk til pakning**.
 1. Vælg **Arbejdshovedpauser** i handlingsruden.
 1. Vælg **Rediger** i handlingsruden.
-1. På den linje, hvor feltet **feltnavn** er angivet til *Forsendelses-id*, skal du rydde afkrydsningsfeltet **Gruppér efter dette felt**.
-1. Vælg **Gem**, og luk derefter dialogboksen **Arbejdshovedpauser**.
+1. På den linje, hvor feltet **feltnavn** er angivet til *Forsendelses-id* , skal du rydde afkrydsningsfeltet **Gruppér efter dette felt**.
+1. Vælg **Gem** , og luk derefter dialogboksen **Arbejdshovedpauser**.
 1. I feltet **Arbejdsordretype** skal du vælge *Sorteret lagerplukning*.
 1. Vælg **Ny** for at oprette en arbejdsskabelon.
 1. I sektionen **Oversigt** kan du angive følgende værdier. Accepter standardværdierne for alle de andre felter.
@@ -339,16 +340,16 @@ Du skal oprette lokationsdirektiver for at styre det arbejde, der oprettes, efte
     - **Beskrivelse af arbejdsskabelon:** *Sorteret pluk*
 
 1. Vælg **Gem** for at gøre sektionen **Arbejdsskabelondetaljer** tilgængelig.
-1. I sektionen **Arbejdsskabelondetaljer** skal du oprette to linjer. Vælg **Ny**, og vælg derefter følgende værdier for linje 1:
+1. I sektionen **Arbejdsskabelondetaljer** skal du oprette to linjer. Vælg **Ny** , og vælg derefter følgende værdier for linje 1:
 
     - **Arbejdstype:** *Pluk*
-    - **Obligatorisk:** Valgt (= *Ja*)
+    - **Obligatorisk:** Valgt (= *Ja* )
     - **Arbejdsklasse-id:** *Sortering*
 
 1. Vælg **Ny** igen, og vælg derefter følgende værdier for linje 2:
 
     - **Arbejdstype:** *Læg på lager*
-    - **Obligatorisk:** Valgt (= *Ja*)
+    - **Obligatorisk:** Valgt (= *Ja* )
     - **Arbejdsklasse-id:** *Sortering*
 
 1. Vælg **Gem**.
@@ -367,7 +368,7 @@ Før du opretter salgsordrer og forsendelser, skal du sikre, at pluklokationerne
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette en salgsordre for ordre 1.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Kunde:** *US-001*
     - **Lagersted:** *62*
@@ -385,12 +386,12 @@ Før du opretter salgsordrer og forsendelser, skal du sikre, at pluklokationerne
 
 1. Gentag følgende fremgangsmåde for hver salgslinje på ordren for at reservere lager for den:
 
-    1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Reservation** i menuen **Lager**.
+    1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Reservation** i menuen **Lager**.
     1. På siden **Reservation** skal du vælge **Reserver parti** og derefter lukke siden.
     1. Vælg **Gem**.
 
 1. Vælg **Ny** for at oprette en salgsordre for ordre 2.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Kunde:** *US-004*
     - **Lagersted:** *62*
@@ -408,12 +409,12 @@ Før du opretter salgsordrer og forsendelser, skal du sikre, at pluklokationerne
 
 1. Gentag følgende fremgangsmåde for hver salgslinje på ordren for at reservere lager for den:
 
-    1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Reservation** i menuen **Lager**.
+    1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Reservation** i menuen **Lager**.
     1. På siden **Reservation** skal du vælge **Reserver parti** og derefter lukke siden.
     1. Vælg **Gem**.
 
 1. Vælg **Ny** for at oprette en salgsordre for ordre 3.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Kunde:** *US-007*
     - **Lagersted:** *62*
@@ -426,7 +427,7 @@ Før du opretter salgsordrer og forsendelser, skal du sikre, at pluklokationerne
 
 1. Følg disse trin for at reservere lager for salgslinjen:
 
-    1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Reservation** i menuen **Lager**.
+    1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Reservation** i menuen **Lager**.
     1. På siden **Reservation** skal du vælge **Reserver parti** og derefter lukke siden.
     1. Vælg **Gem**.
 
@@ -460,7 +461,7 @@ Der er blevet oprettet et arbejds-id for at hente lageret fra pluklokationerne t
 1. Log på mobilappen som en arbejder på lagerstedet *62*.
 1. I hovedmenuen skal du vælge **Udgående**.
 1. I menuen **Udgående** skal du vælge **Salgspluk**.
-1. Vælg feltet **Id**, og angiv derefter arbejds-id'et fra bølgeprocessen.
+1. Vælg feltet **Id** , og angiv derefter arbejds-id'et fra bølgeprocessen.
 1. Bekræft indtastningen.
 
     Derefter bedes du angive en destinationsnummerplade (NP). Bemærk, at linje 1 fra salgsordre 1 er den, der skal plukkes og føjes til destinationsnummerpladen. Varenummeret, antallet, varebeskrivelsen og pluklokationen vises.
@@ -471,7 +472,7 @@ Der er blevet oprettet et arbejds-id for at hente lageret fra pluklokationerne t
 
 1. Bekræft indtastningen.
 
-    Mobilappen indeholder nu en serie af **Pluk**-sider, der peger på pluklokationen og på varen og det antal, der skal plukkes. Når den plukkede vare føjes til nummerpladen, skal du bekræfte plukarbejdet. Den sidste side er det arbejde, der skal placere de plukkede varer på sorteringslokationen.
+    Mobilappen indeholder nu en serie af **Pluk** -sider, der peger på pluklokationen og på varen og det antal, der skal plukkes. Når den plukkede vare føjes til nummerpladen, skal du bekræfte plukarbejdet. Den sidste side er det arbejde, der skal placere de plukkede varer på sorteringslokationen.
 
 1. Bekræft det første plukarbejde.
 1. Det næste plukarbejde vises. Bekræft plukningen.
@@ -493,7 +494,7 @@ Nu, hvor alt lager er blevet placeret på sorteringslokationen, og at det skal s
 1. Bekræft indtastningen.
 1. Angiv det varenummer, der skal sorteres først.
 1. Systemet bestemmer den første sorteringsposition, der skal vises. Bekræft sorteringspositionen.
-1. Du bliver bedt om at tildele en nummerplade til sorteringspositionen. Vælg feltet **NP**, angiv et id-nummer, og bekræft derefter indtastningen.
+1. Du bliver bedt om at tildele en nummerplade til sorteringspositionen. Vælg feltet **NP** , angiv et id-nummer, og bekræft derefter indtastningen.
 
     Da sorteringspositionen er relateret til forsendelses-id'et, sorterer du de plukkede varer til en nummerplade, der er specifik for den udgående leverance og salgsordre.
 
@@ -513,16 +514,16 @@ Nu, hvor alt lager er blevet placeret på sorteringslokationen, og at det skal s
     - Hvis positionerne lukkes automatisk, skal du vælge **Vis lukkede** for at få vist de lukkede positioner.
     - Bemærk, at transaktioner for sorteringspositioner vises. Varen og det antal, der er behandlet gennem positionen, vises.
 
-    Når du opretter skabelonen for udgående sortering, skal du angive indstillingen til **Luk sorteringsposition automatisk** til *Ja*. Derfor lukkes positionen automatisk, når den sidste forventede lagerbeholdning er sat til den. Sorteringspositionerne er i statussen **Lukket**, og der er oprettet arbejde for at flytte det sorterede lager til lokationen *Lagerport*.
+    Når du opretter skabelonen for udgående sortering, skal du angive indstillingen til **Luk sorteringsposition automatisk** til *Ja*. Derfor lukkes positionen automatisk, når den sidste forventede lagerbeholdning er sat til den. Sorteringspositionerne er i statussen **Lukket** , og der er oprettet arbejde for at flytte det sorterede lager til lokationen *Lagerport*.
 
 1. Fuldfør det sorterede lagerplukarbejde for at flytte lageret til afsendelsesstedet. Når lageret er klart, skal du sende og bekræfte det.
 
 > [!NOTE]
-> I forbindelse med sorteret lagerplukarbejde, der skal behandles korrekt, er der et menupunkt i mobilenheder, der har et arbejdsklasse-id, hvor feltet **Arbejdsordretype** er angivet til *Sorteret lagerpluk*, der skal bruges til flytnings- og læsningsprocessen.
+> I forbindelse med sorteret lagerplukarbejde, der skal behandles korrekt, er der et menupunkt i mobilenheder, der har et arbejdsklasse-id, hvor feltet **Arbejdsordretype** er angivet til *Sorteret lagerpluk* , der skal bruges til flytnings- og læsningsprocessen.
 
 ### <a name="manually-close-a-position-optional"></a>Lukke en position manuelt (valgfrit)
 
-Hvis sorteringspositionerne skal lukkes manuelt, skal indstillingen **Luk sorteringsposition automatisk** for skabelon til udgående sortering angives til *Nej*, og lukningen skal foretages, før lageret kan flyttes til lagerportområdet. Positioner kan lukkes på flere forskellige måder:
+Hvis sorteringspositionerne skal lukkes manuelt, skal indstillingen **Luk sorteringsposition automatisk** for skabelon til udgående sortering angives til *Nej* , og lukningen skal foretages, før lageret kan flyttes til lagerportområdet. Positioner kan lukkes på flere forskellige måder:
 
 - Via lagerstedsappen:
 

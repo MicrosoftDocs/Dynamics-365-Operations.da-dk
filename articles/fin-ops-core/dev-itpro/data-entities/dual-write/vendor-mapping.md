@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173102"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997641"
 ---
 # <a name="integrated-vendor-master"></a>Integreret kreditormaster
 
@@ -32,7 +31,7 @@ ms.locfileid: "3173102"
 
 
 
-Termen *Kreditor* henviser til en leverandørorganisation eller en solovirksomhed, der leverer varer eller ydelser til en virksomhed. Selvom *kreditor* er et etableret koncept i Microsoft Dynamics 365 Supply Chain Management, findes der ikke et kreditorkoncept i andre modelbaserede apps i Dynamics 365. Du kan dog også overbelaste **Konto/Kontaktperson**-enheden, når du vil gemme kreditoroplysninger. Den integrerede kreditormaster introducerer et eksplicit leverandørbegreb i modelbaserede apps i Dynamics 365. Du kan enten bruge det nye leverandørdesign eller gemme leverandørdata i enheden **Konto/Kontaktperson**. Dobbeltskrivning understøtter begge metoder.
+Termen *Kreditor* henviser til en leverandørorganisation eller en solovirksomhed, der leverer varer eller ydelser til en virksomhed. Selvom *kreditor* er et etableret koncept i Microsoft Dynamics 365 Supply Chain Management, findes der ikke et kreditorkoncept i andre modelbaserede apps i Dynamics 365. Du kan dog også overbelaste **Konto/Kontaktperson** -enheden, når du vil gemme kreditoroplysninger. Den integrerede kreditormaster introducerer et eksplicit leverandørbegreb i modelbaserede apps i Dynamics 365. Du kan enten bruge det nye leverandørdesign eller gemme leverandørdata i enheden **Konto/Kontaktperson**. Dobbeltskrivning understøtter begge metoder.
 
 I begge fremgangsmåder integreres leverandørdataene mellem Dynamics 365 Supply Chain Management-, Dynamics 365 Sales-, Dynamics 365 Field Service- og Power Apps-portaler. I Supply Chain Management er data tilgængelige i arbejdsgange, f.eks. indkøbsrekvisitioner og indkøbsordrer.
 
@@ -42,7 +41,7 @@ Hvis du ikke vil gemme leverandørdata i enheden **Konto/Kontaktperson** i Commo
 
 ![Kreditordataflow](media/dual-write-vendor-data-flow.png)
 
-Hvis du fortsat vil gemme leverandørdata i enheden **Konto/Kontaktperson**, kan du bruge det udvidede leverandørdesign. Hvis du vil bruge det udvidede leverandørdesign, skal du konfigurere leverandørarbejdsgangene i Dobbeltskrivnings-løsningspakken. Du kan finde flere oplysninger i [Skifte mellem kreditordesign](vendor-switch.md).
+Hvis du fortsat vil gemme leverandørdata i enheden **Konto/Kontaktperson** , kan du bruge det udvidede leverandørdesign. Hvis du vil bruge det udvidede leverandørdesign, skal du konfigurere leverandørarbejdsgangene i Dobbeltskrivnings-løsningspakken. Du kan finde flere oplysninger i [Skifte mellem kreditordesign](vendor-switch.md).
 
 ![Udvidet kreditordataflow](media/dual-write-vendor-detail.jpg)
 

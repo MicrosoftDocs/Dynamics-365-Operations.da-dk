@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 5052957a2f4e59791ef02c12bc2aef5ed36e95c7
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3816931"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022069"
 ---
 # <a name="social-share-module"></a>Modulet Social deling
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler moduler for social deling og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -54,7 +53,7 @@ I følgende illustration fremhæves et eksempel på et modul til social deling, 
 ## <a name="social-share-item-module-properties"></a>Egenskaber for elementmodul til social deling
 | Egenskabsbetegnelse             | Værdi                 | Beskrivelse |
 |---------------------------|-----------------------|-------------|
-| Sociale medier              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **Mail** | En rullemenu med en liste over sociale mediers platforme. |
+| Sociale medier              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **Mail** | En rullemenu med en liste over sociale mediers platforme. |
 | Ikon |Billede    | Dette er det billede, der vil blive vist for de respektive sociale medier. Som bedste fremgangsmåde kan du se sociale medieplatformes SDK for at få det anbefalede billede til hver platform. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Tilføje et modul til social deling i et købefeltmodul
@@ -62,18 +61,18 @@ I følgende illustration fremhæves et eksempel på et modul til social deling, 
 Følg disse trin for at tilføje et modul til social deling i et købefeltmodul.
 
 1. Vælg **Sider** på webstedet Fabrikam, og vælg derefter siden **DefaultPDP** for at åbne siden med produktdetaljer. 
-1. På pladsen **Købefelt (påkrævet)** skal du vælge ellipsen (**...**) og derefter vælge **Tilføj modul**.
+1. På pladsen **Købefelt (påkrævet)** skal du vælge ellipsen ( **...** ) og derefter vælge **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Social deling** og derefter **OK**.
-1. På pladsen **Social deling** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. På pladsen **Social deling** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **SocialShare** og derefter **OK**.
 1. Vælg **Vandret** under **Retning** i ruden Egenskaber for modulet **SocialShare**. Tilføj eventuelt en billedtekst.
-1. På pladsen **SocialShare** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. På pladsen **SocialShare** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **SocialShareItem** og derefter **OK**.
 1. I ruden Egenskaber for modulet **SocialShareItem** skal du under **Sociale medier** vælge **Facebook**.
 1. I ruden Egenskaber for modulet **SocialShareItem** skal du under **Ikon** vælge **+ Tilføj et billede**.
 1. I dialogboksen **Medievælger** skal du vælge Facebook-logobilledet og derefter **OK**. Hvis der ikke findes et Facebook-logo, skal du vælge **Upload nyt medieelement** for at uploade det.
-1. Tilføj og konfigurer yderligere **SocialShareItem**-moduler efter behov.
-1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Siden viser modulet til social deling.
+1. Tilføj og konfigurer yderligere **SocialShareItem** -moduler efter behov.
+1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden. Siden viser modulet til social deling.
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

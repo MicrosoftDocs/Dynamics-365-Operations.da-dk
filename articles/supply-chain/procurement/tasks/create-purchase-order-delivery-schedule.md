@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383245"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018230"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Oprette en indkøbsordre med en leveranceplan
 
@@ -46,7 +46,7 @@ Dette emne viser, hvordan du opretter en leveranceplan til en indkøbsordre. En 
 - Vælg en dato i feltet for leveringsdato, der er en uge efter datoen på den første leveringslinje.  
 - Du kan holde styr på det samlede antal, der er allokeret til linjerne i leveranceplanen, ved at se felterne **Total** og **Resterende**. Når det resterende antal er nul, er det fulde antal fra den oprindelige linje blevet allokeret til tidsplanen.  
 12. Udvid sektionen **Gebyrkonvertering**.
-- Disse indstillinger gør det muligt at styre, hvordan gebyrer skal fordeles på tværs af linjerne i leveranceplanen. Hvis du vælger **Kopiér bruttobeløb**, kopieres gebyrbeløbet på den oprindelige ordrelinje til hver leveringslinje. Indstillingen **Fordel på leveringslinjer** opdeler det oprindelige linjegebyr i overensstemmelse med antallet på hver leverancelinje.  
+- Disse indstillinger gør det muligt at styre, hvordan gebyrer skal fordeles på tværs af linjerne i leveranceplanen. Hvis du vælger **Kopiér bruttobeløb** , kopieres gebyrbeløbet på den oprindelige ordrelinje til hver leveringslinje. Indstillingen **Fordel på leveringslinjer** opdeler det oprindelige linjegebyr i overensstemmelse med antallet på hver leverancelinje.  
 13. Skjul sektionen **Gebyrkonvertering**.
 14. Vælg **OK**.
 - Leveranceplanen anvendes nu op ordren.  

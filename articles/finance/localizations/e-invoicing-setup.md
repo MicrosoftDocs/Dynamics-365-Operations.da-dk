@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835926"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039886"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Konfigurere tilføjelsesprogrammet til elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Funktionsopsætningen for tilføjelsesprogrammet til elektronisk fakturering er processen til oprettelse af den krævede konfiguration via RCS-miljøet (Regulatory Configuration Services) og udgivelse af denne konfiguration på serveren for tilføjelsesprogrammet til elektronisk fakturering. Konfigurationen gør det muligt at oprette de konfigurerbare regler, tilføjelsesprogrammet til elektronisk fakturering kan bruge en sikker protokol over internettet til at kommunikere og udveksle data med en tredjepartsenhed ved hjælp af webtjenester.
 
@@ -71,7 +71,7 @@ Følg nedenstående trin for at føje ER-formater til funktionen for tilføjelse
     > [!NOTE]
     > Når du opretter en funktion for tilføjelsesprogrammet til elektronisk fakturering fra bunden, skal du manuelt tilføje alle ER-filformatkonfigurationerne. Når du har afledt en funktion for tilføjelsesprogrammet til elektronisk fakturering fra en eksisterende funktion, oprettes ER-filformatkonfigurationerne automatisk, fordi de nedarves fra den oprindelige funktion for tilføjelsesprogrammet til elektronisk fakturering.
 
-2. Vælg **Rediger** for at åbne siden **Formatdesigner**, hvor du kan redigere ER-filformatkonfigurationer.
+2. Vælg **Rediger** for at åbne siden **Formatdesigner** , hvor du kan redigere ER-filformatkonfigurationer.
 
     ![Redigere konfigurationer af funktionen for tilføjelsesprogrammet til elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
@@ -160,7 +160,7 @@ De tilgængelige parametre varierer, afhængigt af den handling, der er valgt i 
 | Navn på det element, der skal underskrives               | Navnet på det XML-element i dokumentet, der skal underskrives ved hjælp af en elektronisk signatur. Hvis der ikke er angivet et element, underskrives roden af dokumentet. |
 | Navn på det element, hvor signaturen skal indsættes   | Navnet på det XML-element, hvor den oprettede digitale signatur skal indsættes. Hvis der ikke er angivet et element, indsættes signaturen i roden af dokumentet. |
 | XLST-fil med digest-transformation       | XSLT-filen (Extensible Stylesheet Language Transformations), der indeholder regler for digest-transformation til oprettelse af digest-strengen for en elektronisk signatur. |
-| Sti til indsættelse af digest-streng          | Stien, i formatet **\<elementName\>.\<Attribute.Path\>**, for den placering, hvor den oprettede digest-streng skal indsættes. |
+| Sti til indsættelse af digest-streng          | Stien, i formatet **\<elementName\>.\<Attribute.Path\>** , for den placering, hvor den oprettede digest-streng skal indsættes. |
 | Placering af certifikatnummer           | Navnet på det element og den attribut, hvor certifikatnummeret skal placeres. |
 | Placering af certifikatdata          | Navnet på det element og den attribut, hvor certifikatdataene (Base64) skal indsættes. |
 | Certifikatnummeret er i ASCII-format | En værdi, der angiver, om nummeret på certifikatet er kodet i ASCII-format. |
@@ -194,7 +194,7 @@ De tilgængelige parametre varierer, afhængigt af den handling, der er valgt i 
 |-----------------------------|-------------|
 | URL-adresse til webtjeneste             | Den URL-adresse, der skal sendes anmodninger til. |
 | Timeout for webanmodning         | Det maksimale tidsrum (i millisekunder), der skal ventes på et svar fra webtjenesten. |
-| Operationstype på anmodning      | Operationstypen på HTTP-anmodningen (f.eks. **GET**, **POST** eller **DELETE**). |
+| Operationstype på anmodning      | Operationstypen på HTTP-anmodningen (f.eks. **GET** , **POST** eller **DELETE** ). |
 | Certifikatnavne           | Certifikatnavnene. |
 | Kodning på svarets brødtekst      | Den forventede kodning på svarets HTTP-brødtekst, så det kan afkodes korrekt. |
 | Indholdstype for HTTP-anmodning   | Headerinput for indholdstypen på HTTP-anmodningen. |
@@ -338,7 +338,7 @@ Hvis du ikke længere vil dele funktionen for tilføjelsesprogrammet til elektro
 
 ## <a name="versions"></a>Versioner
 
-Versioner hjælper dig med at styre livscyklussen for funktionen for tilføjelsesprogrammet til elektronisk fakturering ved at administrere statussen. Du kan oprette en ny version af en eksisterende funktion for tilføjelsesprogrammet til elektronisk fakturering, eller du kan ændre funktionens status til **Fuldført** og derefter til **Publicer**, når alle konfigurationer for funktionen for tilføjelsesprogrammet til elektronisk fakturering er fuldført.
+Versioner hjælper dig med at styre livscyklussen for funktionen for tilføjelsesprogrammet til elektronisk fakturering ved at administrere statussen. Du kan oprette en ny version af en eksisterende funktion for tilføjelsesprogrammet til elektronisk fakturering, eller du kan ændre funktionens status til **Fuldført** og derefter til **Publicer** , når alle konfigurationer for funktionen for tilføjelsesprogrammet til elektronisk fakturering er fuldført.
 
 ### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Oprette en ny version af en eksisterende funktion for tilføjelsesprogrammet til elektronisk fakturering
 
@@ -350,14 +350,14 @@ Versioner hjælper dig med at styre livscyklussen for funktionen for tilføjelse
 Følg nedenstående trin for at administrere livscyklussen for funktionen for tilføjelsesprogrammet til elektronisk fakturering.
 
 1. På siden med **funktioner for tilføjelsesprogrammet til elektronisk fakturering** skal du på gitteret til venstre vælge funktionen for tilføjelsesprogrammet til elektronisk fakturering.
-2. Vælg **Skift status** på fanen **Versioner**, og skift derefter statussen fra **Kladde** til **Fuldført**.
+2. Vælg **Skift status** på fanen **Versioner** , og skift derefter statussen fra **Kladde** til **Fuldført**.
 3. Du bliver bedt om at bekræfte, at du vil fuldføre funktionen for tilføjelsesprogrammet til elektronisk fakturering og alle tilhørende komponenter. Vælg **Ja** for at bekræfte handlingen eller **Nej** for at annullere den.
 
     > [!NOTE]
-    > Når du vælger **Ja**, ændres statussen for konfigurationsversioner, der er komponenter i funktionen for tilføjelsesprogrammet til elektronisk fakturering, automatisk fra **Kladde** til **Fuldført**.
+    > Når du vælger **Ja** , ændres statussen for konfigurationsversioner, der er komponenter i funktionen for tilføjelsesprogrammet til elektronisk fakturering, automatisk fra **Kladde** til **Fuldført**.
 
-4. Vælg **Skift status**, og skift derefter statussen fra **Fuldført** til **Publicer**.
+4. Vælg **Skift status** , og skift derefter statussen fra **Fuldført** til **Publicer**.
 5. Du bliver bedt om at bekræfte, at du vil publicere funktionen for tilføjelsesprogrammet til elektronisk fakturering og alle tilhørende komponenter til det globale lager. Vælg **Ja** for at bekræfte handlingen eller **Nej** for at annullere den.
 
     > [!NOTE]
-    > Når du vælger **Ja**, ændres statussen for konfigurationsversioner automatisk fra **Fuldført** til **Delt**.
+    > Når du vælger **Ja** , ændres statussen for konfigurationsversioner automatisk fra **Fuldført** til **Delt**.

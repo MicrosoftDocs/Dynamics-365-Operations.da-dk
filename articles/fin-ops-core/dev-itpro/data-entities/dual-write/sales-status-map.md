@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829279"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997668"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Konfigurere tilknytningen af statusfelter for salgsordre
 
@@ -45,7 +44,7 @@ Fastteksten **Status** har følgende værdier:
 - Er faktureret
 - Annulleret
 
-Fastteksten **Dokumentstatus** angiver det seneste dokument, der blev genereret til ordren. Hvis ordren f.eks. er bekræftet, er dette dokument en salgsordrebekræftelse. Hvis en salgsordre er delvist faktureret, og den resterende linje er bekræftet, forbliver dokumentstatussen **Faktura**, fordi fakturaen genereres senere i processen.
+Fastteksten **Dokumentstatus** angiver det seneste dokument, der blev genereret til ordren. Hvis ordren f.eks. er bekræftet, er dette dokument en salgsordrebekræftelse. Hvis en salgsordre er delvist faktureret, og den resterende linje er bekræftet, forbliver dokumentstatussen **Faktura** , fordi fakturaen genereres senere i processen.
 
 Fastteksten **Dokumentstatus** har følgende værdier:
 
@@ -98,7 +97,7 @@ Følgende tabel viser tilknytningen af **Behandlingsstatus** mellem Salg og Supp
 
 Hvis du vil konfigurere tilknytningen af statusfelterne for salgsordre, skal du aktivere attributterne **IsSOPIntegrationEnabled** og **isIntegrationUser**.
 
-Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge disse trin.
+Hvis du vil aktivere attributten **IsSOPIntegrationEnabled** , skal du følge disse trin.
 
 1. Åbn en browser, og gå til `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Erstat **\<test-name\>** med dit firmas link til Salg.
 2. På den side, der åbnes, skal du søge efter **organizationid** og notere dig værdien.
@@ -128,9 +127,9 @@ Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge dis
 
     ![IsSOPIntegrationEnabled er angivet til true](media/sales-map-integration-enabled.png)
 
-Hvis du vil aktivere attributten **isIntegrationUser**, skal du følge disse trin.
+Hvis du vil aktivere attributten **isIntegrationUser** , skal du følge disse trin.
 
-1. Gå i Salg til **Indstilling \> Tilpasning \> Tilpas systemet**, vælg **Brugerenhed**, og åbn derefter **Formular \> Bruger**.
+1. Gå i Salg til **Indstilling \> Tilpasning \> Tilpas systemet** , vælg **Brugerenhed** , og åbn derefter **Formular \> Bruger**.
 
     ![Åbne brugerformularen](media/sales-map-user.png)
 
@@ -138,7 +137,7 @@ Hvis du vil aktivere attributten **isIntegrationUser**, skal du følge disse tri
 
     ![Tilføje feltet Integrationsbrugertilstand i formularen](media/sales-map-field-explorer.png)
 
-3. Gå i Salg til **Indstilling \> Sikkerhed \> Brugere**, og skift visningen fra **Aktiverede brugere** til **Programbrugere**.
+3. Gå i Salg til **Indstilling \> Sikkerhed \> Brugere** , og skift visningen fra **Aktiverede brugere** til **Programbrugere**.
 
     ![Ændre visningen fra Aktiverede brugere til Programbrugere](media/sales-map-enabled-users.png)
 

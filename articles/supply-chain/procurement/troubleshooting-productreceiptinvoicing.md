@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d86fa3df1de13cc0e0fb94449207a326069da25b
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834334"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018623"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Lokalisere fejl i produktkvitteringer og fakturering
 
@@ -38,7 +38,7 @@ Et antal skal angives, hvis du vil bogføre fakturaer. Hvis hele antallet på en
 
 Dette problem kan opstå på grund af inkonsistens i indkøbsordrefordeling.
 
-Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde*-tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde* -tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="i-cant-consolidate-multiple-product-receipts-into-a-single-purchase-order"></a>Jeg kan ikke konsolidere flere produktkvitteringer i en enkelt indkøbsordre.
 
@@ -101,7 +101,7 @@ Følgende procedurer viser en måde at genskabe problemet på.
 
 1. Vælg **Bekræft** i gruppen **Handling** under fanen **Indkøb** i handlingsruden.
 1. Gå til handlingsruden, og vælg **Produktkvittering** i gruppen **Generér** under fanen **Modtag**.
-1. Angiv et vilkårligt nummer i feltet **Produktkvittering** i dialogboksen **Konterer produktkvittering**, og vælg derefter **OK**.
+1. Angiv et vilkårligt nummer i feltet **Produktkvittering** i dialogboksen **Konterer produktkvittering** , og vælg derefter **OK**.
 1. Vælg **Faktura** i gruppen **Generér** under fanen **Faktura** i handlingsruden.
 1. Angiv et vilkårligt nummer som fakturanummer i feltet **Nummer**.
 1. Opdater status for sammenholdelse, og bogfør.

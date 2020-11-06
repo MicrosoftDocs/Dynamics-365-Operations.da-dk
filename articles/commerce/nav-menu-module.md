@@ -3,7 +3,7 @@ title: Navigationsmenumodul
 description: Dette emne omhandler navigationsmenumoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 91239bd1db3f5819b7ad8d45ccfd8ab0d88b1b41
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817868"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055731"
 ---
 # <a name="navigation-menu-module"></a>Navigationsmenumodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler navigationsmenumoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -45,9 +44,13 @@ I følgende illustration vises et eksempel på en navigationsmenu for Fabrikam-w
 
 | Egenskabsbetegnelse             | Værdi                 | Beskrivelse |
 |---------------------------|-----------------------|-------------|
-| Kildetekst                  | **Detail**, **Manuel oprettelse**, **Detail og manuel oprettelse** | **Detail**-værdien giver mulighed for at få vist kanalnavigationshierarkiet fra Commerce Headquarters i navigationsmenuen. Værdien af **Manuel oprettelse** tillader, at statiske menupunkter overvåges. Værdien af **Detail og manuel oprettelse** tillader en blanding af begge dele. |
+| Kildetekst                  | **Detail** , **Manuel oprettelse** , **Detail og manuel oprettelse** | **Detail** -værdien giver mulighed for at få vist kanalnavigationshierarkiet fra Commerce Headquarters i navigationsmenuen. Værdien af **Manuel oprettelse** tillader, at statiske menupunkter overvåges. Værdien af **Detail og manuel oprettelse** tillader en blanding af begge dele. |
 | Vise kategoribilleder | **Sand** eller **Falsk**    | Når denne egenskab er aktiveret, viser kategoribilleder i den navigationsmenu, som er defineret i Commerce Headquarters for hver kategori. Tilføjet i Commerce version 10.0.14. |
+| Aktivere navigationsmenu på flere niveauer | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan navigationsmenuen vise flere niveauer i navigationshierarkiet. Denne funktion er tilgængelig i version 10.0.15 af Dynamics 365 Commerce. |
+| Antal niveauer | heltal | Denne egenskab definerer antallet af niveauer, der skal vises, hvis egenskaben **Aktiver navigationsmenu på flere niveauer** er indstillet til **Sand**. |
 | Statisk menupunkt| Matrix af værdier| Statiske menupunkter, der knytter et menupunkts navn til et link til en statisk webside. Du kan oprette menupunkter under andre menupunkter. Som standard vises statiske menuer på rodniveau, og de føjes til kanalnavigationshierarkiet, hvis det findes. |
+| Vis rodmenu | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan navigationsmenuen defineres under en brugerdefineret rod (f.eks. **Køb nu** ). Denne funktion er tilgængelig i version 10.0.15 af Dynamics 365 Commerce. |
+| Rodmenu | streng | Denne egenskab kan bruges til at definere tekst for en brugerdefineret rod, hvis egenskaben **Vis rodmenu** er indstillet til **Sand**. |
 
 I følgende illustration vises et eksempel på et kategoribillede, der vises i navigationsmenuen for Fabrikam-webstedet.
 ![Eksempel på et navigationsmenumodul med kategoribilleder](./media/ecommerce-categoryimages.PNG)
@@ -58,7 +61,11 @@ Du kan finde flere oplysninger om, hvordan du føjer et navigationsmenumodul til
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over modulbibliotek](starter-kit-overview.md)
+[Modulbibliotek, oversigt](starter-kit-overview.md)
+
+[Brødkrummemodul](add-breadcrumb.md)
+
+[Webstedsvælgermodul](site-selector.md)
 
 [Boksmodul til køb](add-buy-box.md)
 

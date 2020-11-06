@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12f1c405566561661fe7c13db5bfca70114b1618
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988340"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016188"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
@@ -44,7 +44,7 @@ Når du vil oprettes et menupunkt for en aktivitet eller en undersøgelse, skal 
 > Flere felter kan være tilgængelige for menupunktet, afhængigt af den tilstand, du vælger for menupunktet, og om menupunktet bruges til at udføre eksisterende arbejde. Du kan finde oplysninger om valg af yderligere felter i afsnittet "Yderligere indstillinger for menupunkter" i dette emne.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menupunkter for aktiviteter og forespørgsler
-Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du oprette et menupunkt, der udfører en generel aktivitet eller forespørgsel, der ikke skaber arbejde. Af eksempler kan nævnes udskrivning af id-nummer og forespørgsler om varerne på en lokalitet. I følgende tabel vises de indstillinger, der er tilgængelige.
+Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte** , kan du oprette et menupunkt, der udfører en generel aktivitet eller forespørgsel, der ikke skaber arbejde. Af eksempler kan nævnes udskrivning af id-nummer og forespørgsler om varerne på en lokalitet. I følgende tabel vises de indstillinger, der er tilgængelige.
 
 | Indstilling | Beskrivelse |
 |---|---|
@@ -55,7 +55,7 @@ Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du o
 | Id-forespørgsel | Få vist antallet af varer på en nummerplade og placeringen af nummerpladen. |
 | Start produktionsordre | Start en produktionsordre. |
 | Produktionsspild | Angiv antallet af spild, som blev oprettet under produktionen for hver linje på styklisten. |
-| Sidste produktionspalle | Angiv, at den sidste palle af varer er fremstillet til en produktionsordre, og at status for produktionsordren skal opdateres til **Færdigmeldt**. Status for de råvarer, der ikke blev forbrugt under produktionen, ændres tilbage fra **Plukket** til **I bestilling**, og varerne kan returneres til lageret. |
+| Sidste produktionspalle | Angiv, at den sidste palle af varer er fremstillet til en produktionsordre, og at status for produktionsordren skal opdateres til **Færdigmeldt**. Status for de råvarer, der ikke blev forbrugt under produktionen, ændres tilbage fra **Plukket** til **I bestilling** , og varerne kan returneres til lageret. |
 | Vareforespørgsel | Scan en vare for at finde ud af, hvor det er på lager. Forespørgslen returnerer alle lokaliteter og antal for den scannede vare. |
 | Genudskriv etiket | Udskriv et id-nummer igen. |
 | Id-build | Opret et overordnet id-nummer ved at kombinere flere id-numre på den lokalitet. Denne indstilling er nyttig, hvis du flytter flere id-numre på samme tid. Når det overordnede id-nummer er flyttet, skal du udføre en id-nummerpause, før du kan plukke varer fra hvert id-nummer. <p></p>**Tip!** Hvis du vil flytte et overordnet id-nummer, skal du bruge en mobilenhed, der er konfigureret til at oprette arbejde til bevægelser. |
@@ -64,12 +64,12 @@ Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du o
 | Chaufførens check-ud | Registrer, at en chauffør har fuldført aftalen. |
 | Ryd cachen med nummerserie | Slet numre i nummerserier fra cachen med nummerserier. Denne aktivitet udføres typisk af en systemadministrator for at løse cachingproblemer, når der bruges mobilenheder. |
 | Skift batchdisposition | Tillad, at en arbejder kan angive en batchdispositionskode for en vare og batch. Denne indstilling opdaterer den dispositionskode, der er angivet for batchen. |
-| Vis oversigt over åbent arbejde | Vis en liste over tilgængeligt arbejde for en bestemt bruger. Brugeren kan derefter vælge arbejde, der skal udføres, og sendes videre til det. Denne liste er beregnet til at blive vist tabletenheder med en skærmstørrelse på 7 tommer eller derover. Når du vælger denne indstilling, bliver menupunkterne **Rediger forespørgsel** og **Feltliste** tilgængelige. På siden **Rediger forespørgsel** kan du angive kriterier for det arbejde, der vises på listen. På siden **Feltliste** kan du vælge, hvilke felter der skal vises på opgavelisten. Du kan f.eks. reducere antallet af felter, der vises, så brugeren hurtigere kan vælge den mest hensigtsmæssige workflowopgave. Du kan også vælge, hvor mange arbejdsposter der skal vises pr. side, i feltet **poster pr. side** i oversigtspanelet **Generelt**. Hvis indstillingen **Tillad, at brugere filtrerer arbejde efter transaktionstype** er markeret, inkluderer opgavelisten kontrolelementet **Filtrer arbejde**, så brugeren kan filtrere efter transaktionstype. Brugeren kan kun se arbejde på opgavelisten, som de har adgangstilladelse til. Du skal sikre, at brugere har tilladelse til en eller flere brugerstyrede menupunkter, der understøtter de specifikke opgaveklassetyper, som de skal have adgang til. Tilladelser kontrolleres, når en bruger forsøger at udføre arbejde på listen.|
-| Opret flytteordre fra id'er. | Giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra lagerstedsappen. Lagermedarbejderne starter ved at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er. Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](create-transfer-order-from-warehouse-app.md)
+| Vis oversigt over åbent arbejde | Vis en liste over tilgængeligt arbejde for en bestemt bruger. Brugeren kan derefter vælge arbejde, der skal udføres, og sendes videre til det. Denne liste er beregnet til at blive vist tabletenheder med en skærmstørrelse på 7 tommer eller derover. Når du vælger denne indstilling, bliver menupunkterne **Rediger forespørgsel** og **Feltliste** tilgængelige. På siden **Rediger forespørgsel** kan du angive kriterier for det arbejde, der vises på listen. På siden **Feltliste** kan du vælge, hvilke felter der skal vises på opgavelisten. Du kan f.eks. reducere antallet af felter, der vises, så brugeren hurtigere kan vælge den mest hensigtsmæssige workflowopgave. Du kan også vælge, hvor mange arbejdsposter der skal vises pr. side, i feltet **poster pr. side** i oversigtspanelet **Generelt**. Hvis indstillingen **Tillad, at brugere filtrerer arbejde efter transaktionstype** er markeret, inkluderer opgavelisten kontrolelementet **Filtrer arbejde** , så brugeren kan filtrere efter transaktionstype. Brugeren kan kun se arbejde på opgavelisten, som de har adgangstilladelse til. Du skal sikre, at brugere har tilladelse til en eller flere brugerstyrede menupunkter, der understøtter de specifikke opgaveklassetyper, som de skal have adgang til. Tilladelser kontrolleres, når en bruger forsøger at udføre arbejde på listen.|
+| Opret flytteordre fra id'er. | Giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra lagerstedsappen. Lagermedarbejderne starter ved at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen. Når lagermedarbejderen vælger **Fuldfør ordre** , opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er. Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurer menupunkter for at oprette arbejde for en anden arbejder eller proces
-Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, efter en indledende handling er udført på mobilenheden. Når én arbejder f.eks. bruger en mobilenhed til at modtage en vare, oprettes der læg på lager-arbejde for en anden arbejder. Hvis du vil konfigurere et menupunkt, der skaber arbejde, skal du gå til siden **Menupunkter i mobilenhed**, feltet **Tilstand** og vælge **Arbejde**. I følgende tabel er indstillingerne i feltet **Arbejdsoprettelsesproces** arrangeret efter arbejdsordretype.
+Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, efter en indledende handling er udført på mobilenheden. Når én arbejder f.eks. bruger en mobilenhed til at modtage en vare, oprettes der læg på lager-arbejde for en anden arbejder. Hvis du vil konfigurere et menupunkt, der skaber arbejde, skal du gå til siden **Menupunkter i mobilenhed** , feltet **Tilstand** og vælge **Arbejde**. I følgende tabel er indstillingerne i feltet **Arbejdsoprettelsesproces** arrangeret efter arbejdsordretype.
 
 
 <table>
@@ -207,7 +207,7 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurer menupunkter til behandling af eksisterende arbejde
-Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive menupunkter til behandling af arbejde, der allerede er oprettet. Angiv feltet **Tilstand** til **Arbejde**, og vælg indstillingen **Brug eksisterende arbejde**. Nogle yderligere indstillinger bliver derefter tilgængelige under fanen **Generelt**. Du kan styre adgangen til menupunktet ved at tildele en eller flere arbejdsklasser i oversigtspanelet **Arbejdsklasse**. Arbejdsklasserne definerer det arbejde, som menupunktet kan behandle. Arbejdsklassen kan også bruges til at give adgang til bestemte brugerroller eller til at adskille behandling for forskellige typer operationer. I følgende tabel forklares de indstillinger, der er tilgængelige. Indstillingen kan vælges under feltet **Ledet af** på siden **Menupunkter i mobilenhed**. 
+Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive menupunkter til behandling af arbejde, der allerede er oprettet. Angiv feltet **Tilstand** til **Arbejde** , og vælg indstillingen **Brug eksisterende arbejde**. Nogle yderligere indstillinger bliver derefter tilgængelige under fanen **Generelt**. Du kan styre adgangen til menupunktet ved at tildele en eller flere arbejdsklasser i oversigtspanelet **Arbejdsklasse**. Arbejdsklasserne definerer det arbejde, som menupunktet kan behandle. Arbejdsklassen kan også bruges til at give adgang til bestemte brugerroller eller til at adskille behandling for forskellige typer operationer. I følgende tabel forklares de indstillinger, der er tilgængelige. Indstillingen kan vælges under feltet **Ledet af** på siden **Menupunkter i mobilenhed**. 
 
 <table>
 

@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b3445157efce6349b3febafb6c860260052f7d6c
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835923"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039740"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Oversigt over tilføjelsesprogrammet til elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Tilføjelsesprogrammet til elektronisk fakturering til Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management er en hyperskalerbar tjeneste til flere lejere, der giver mulighed for konfigurerbar behandling af elektroniske fakturadokumenter og konfigurerbar dokumentudveksling. Reglerne for behandling og integration er fuldt konfigurerbare, og logikken køres uden for Finance og Supply Chain Management. Tjenesten er primært rettet mod e-fakturabehandling i virksomhed-til-myndighed-scenarier, men den kan tilpasses og konfigureres til andre formål.
 

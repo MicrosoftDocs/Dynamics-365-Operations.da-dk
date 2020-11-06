@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
-ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
+ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3962514"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013174"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -33,7 +33,7 @@ Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste d
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
-Nogle af genvejene på denne side er *tasteakkorder*, hvilket betyder, at de kræver to på hinanden følgende sæt tastekombinationer (adskilt af komma), der skal trykkes på uafhængigt af hinanden for at udløse den påkrævede handling. F.eks. kræver genvejen "Alt + M, A", at brugeren først trykker på "Alt + M", slipper tasterne og trykker på "A". 
+Nogle af genvejene på denne side er *tasteakkorder* , hvilket betyder, at de kræver to på hinanden følgende sæt tastekombinationer (adskilt af komma), der skal trykkes på uafhængigt af hinanden for at udløse den påkrævede handling. F.eks. kræver genvejen "Alt + M, A", at brugeren først trykker på "Alt + M", slipper tasterne og trykker på "A". 
 
 ## <a name="finding-a-shortcut"></a>Søge efter en genvej
 
@@ -239,7 +239,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flytte en side op/ned i opslaget                                                                                       | Page up/Page down              |
 | Flytte til toppen/bunden af opslaget                                                                                    | Home/End                       |
 
-## <a name="task-recordershortcuts"></a>[Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)-genveje 
+## <a name="task-recorder-shortcuts"></a>[Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)-genveje 
 
 | Hvis du vil gøre dette                                                                    | Tryk på                       |
 |-------------------------------------------------------------------------------|----------------------------|

@@ -3,7 +3,7 @@ title: Betalingsmodul
 description: Dette emne omhandler betalingsmodulet og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818320"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055375"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -42,6 +42,9 @@ Betalingsmodulet dækker alle ordregebyrer, der ikke allerede er dækket af ford
 
 Adyen-betalingsconnectoren understøtter også effektiv kundegodkendelse (SCA). En del af EU Payment Services-direktivet 2.0 (PSD 2.0) kræver, at onlinekunder godkendes uden for deres onlineindkøbsløsning, når de bruger en elektronisk betalingsmåde. Under betalingsprocessen omdirigeres kunderne til deres banks websted. Efter godkendelsen omdirigeres de derefter tilbage til flowet for Commerce-betalingen. Under denne omdirigering vil de oplysninger, som en kunde har angivet i betalingsflowet (f.eks. leveringsadresse, leveringsindstillinger, oplysninger om gavekort og fordelskundeoplysninger) blive bevaret. Før du kan aktivere denne funktion, skal betalingsconnectoren konfigureres til SCA i Commerce Headquarters. Du kan finde flere oplysninger i [Effektiv kundegodkendelse ved hjælp af Adyen](adyen_redirect.md).
 
+> [!NOTE]
+> Med Adyen-betalingsconnectoren kan iFrame-modulet i betalingsmodulet kun gengives, hvis du føjer URL-adressen til Adyen til listen på dit websted over tilladte websteder. Hvis du vil udføre dette trin, skal du tilføje **\*.adyen.com** til dit websteds **child-src** , **connect-src** , **img-src** , **script-src** og **style-src** direktiver for sikkerhedspolitik. Du kan finde flere oplysninger under [Administrere sikkerhedspolitik for indhold](manage-csp.md). 
+
 Følgende illustration viser et eksempel på moduler for gavekort, fordelskunde og betaling på en betalingsside.
 
 ![Eksempel på moduler for gavekort, fordelskunde og betaling på en betalingsside](./media/ecommerce-payments.PNG)
@@ -52,12 +55,12 @@ Følgende illustration viser et eksempel på moduler for gavekort, fordelskunde 
 |---------------|--------|-------------|
 | Overskrift | Overskriftstekst | En valgfri overskrift til betalingsmodulet. |
 | Højden på iFrame. | Pixels | Højden på iFrame i pixel. Højden kan dog justeres efter behov. |
-| Vis faktureringsadresse | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vil faktureringsadressen blive betjent af Adyen i betalingsmodulets iFrame. Hvis den er indstillet til **Falsk**, betjenes faktureringsadressen ikke af Adyen, og en Commerce-bruger skal konfigurere et modul, der viser faktureringsadressen på betalingssiden. |
+| Vis faktureringsadresse | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand** , vil faktureringsadressen blive betjent af Adyen i betalingsmodulets iFrame. Hvis den er indstillet til **Falsk** , betjenes faktureringsadressen ikke af Adyen, og en Commerce-bruger skal konfigurere et modul, der viser faktureringsadressen på betalingssiden. |
 | Tilsidesæt betalingstype | Kode for overlappende typografiark (CSS) | Da betalingsmodulet er knyttet til en iframe, er der begrænsede formateringsfunktioner. Du kan foretage en del formatering ved hjælp af denne egenskab. Hvis du vil tilsidesætte webstedets typografier, skal du indsætte CSS-koden som værdien for denne egenskab. Webstedsgeneratorens CSS-tilsidesættelser og -typografier gælder ikke for dette modul. |
 
 ## <a name="billing-address"></a>Faktureringsadresse
 
-Betalingsmodulet gør det muligt for kunderne at angive en faktureringsadresse til deres betalingsoplysninger. De kan også bruge deres leveringsadresse som faktureringsadresse, så betalingsflowet bliver lettere og hurtigere. Hvis egenskaben **Vis faktureringsadresse** er angivet til **Falsk**, skal betalingsmodulet konfigureres på betalingssiden.
+Betalingsmodulet gør det muligt for kunderne at angive en faktureringsadresse til deres betalingsoplysninger. De kan også bruge deres leveringsadresse som faktureringsadresse, så betalingsflowet bliver lettere og hurtigere. Hvis egenskaben **Vis faktureringsadresse** er angivet til **Falsk** , skal betalingsmodulet konfigureres på betalingssiden.
 
 ## <a name="add-a-payment-module-to-a-checkout-page-and-set-the-required-properties"></a>Føje et betalingsmodul til en betalingsside og angive de krævede egenskaber
 

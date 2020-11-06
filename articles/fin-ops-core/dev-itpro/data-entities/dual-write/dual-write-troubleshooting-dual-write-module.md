@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: f99f3760e75ec1bbf2ccdea497cf2eec3e28e233
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997368"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Fejlfinding i forbindelse med problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
 
@@ -37,7 +36,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan ikke indlæse dobbeltskrivningsmodulet i en Finance and Operations-app
 
-Hvis du ikke kan åbne **Dobbeltskrivning**-siden ved at vælge titlen **Dobbeltskrivning** i **Datastyring**-arbejdsområdet, er dataintegrationstjenesten sandsynligvis nede. Opret en supportanmodning for at anmode om genstart af dataintegrationstjenesten.
+Hvis du ikke kan åbne **Dobbeltskrivning** -siden ved at vælge titlen **Dobbeltskrivning** i **Datastyring** -arbejdsområdet, er dataintegrationstjenesten sandsynligvis nede. Opret en supportanmodning for at anmode om genstart af dataintegrationstjenesten.
 
 ## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Fejl, når du forsøger at oprette en ny enhedstilknytning
 
@@ -50,7 +49,7 @@ Du kan få vist følgende fejlmeddelelse, når du forsøger at konfigurere en ny
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fejl, når du åbner brugergrænsefladen til dobbeltskrivning
 
-Du kan få vist følgende fejlmeddelelse, når du forsøger at få adgang til dobbeltskrivning fra arbejdsområdet **Datastyring**:
+Du kan få vist følgende fejlmeddelelse, når du forsøger at få adgang til dobbeltskrivning fra arbejdsområdet **Datastyring** :
 
 *login.microsoftonline.com afviste at oprette forbindelse.*
 
@@ -62,7 +61,7 @@ Du kan løse problemet ved at logge på ved hjælp af et InPrivate-vindue i Micr
 
 Der kan opstå følgende fejl under sammenkædning eller oprettelse af tilknytninger:
 
-*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 403 (tokenexchange).<br> Sessions-id: \<dit sessions-id\><br> Rodaktivitets-id: \<dit rod-aktivitets-id\>*
+*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 403 (tokenexchange).<br> Sessions-id: \<your session id\><br> Rodaktivitets-id: \<your root activity id\>*
 
 Denne fejl kan forekomme, hvis du ikke har de nødvendige rettigheder til at sammenkæde dobbeltskrivning eller oprette tilknytninger. Denne fejl kan også opstå, hvis Common Data Service-miljøet blev nulstillet uden at fjerne tilknytningen til dobbeltskrivning. Enhver bruger med rollen Systemadministrator i både Finance and Operations-apps og Common Data Service kan sammenkæde miljøerne. Kun den bruger, der har konfigureret dobbeltskrivningsforbindelsen, kan tilføje nye enhedstilknytninger. Efter installationen kan enhver bruger med rollen Systemadministrator overvåge status og redigere tilknytningerne.
 
@@ -78,7 +77,7 @@ Du kan løse problemet ved at oprette en supportanmodning til dataintegrationste
 
 ## <a name="error-while-trying-to-start-an-entity-mapping"></a>Der opstod en fejl under forsøg på at starte en enhedstilknytning
 
-Du kan få vist en fejl som følgende, når du forsøger at angive denne tilstand for en tilknytning til **Kører**:
+Du kan få vist en fejl som følgende, når du forsøger at angive denne tilstand for en tilknytning til **Kører** :
 
 *Den indledende datasynkronisering kan ikke fuldføres. Fejl: dobbeltskrivningsfejl - plugin-registrering mislykkedes: Der kan ikke oprettes metadata til dobbeltskrivningsopslag. Objektreference er ikke indstillet til en forekomst af et objekt.*
 
