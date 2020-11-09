@@ -3,7 +3,7 @@ title: Indkøbsvognmodul
 description: Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818269"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055421"
 ---
 # <a name="cart-module"></a>Indkøbsvognmodul
 
@@ -34,7 +34,7 @@ Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem 
 
 Et indkøbsvognmodul viser de varer, der er føjet til indkøbsvognen, før kunden fortsætter med at betale. Modulet viser også en ordreoversigt, og kunden kan anvende eller fjerne kampagnekoder.
 
-Indkøbsvognmodulet understøtter udtjekning og udlevering via gæst. Den understøtter også et **Tilbage til indkøb**-link. Du kan konfigurere ruten for dette link på **Indstillinger for webside \> Udvidelser \> Ruter**.
+Indkøbsvognmodulet understøtter udtjekning og udlevering via gæst. Den understøtter også et **Tilbage til indkøb** -link. Du kan konfigurere ruten for dette link på **Indstillinger for webside \> Udvidelser \> Ruter**.
 
 I indkøbsvognmodulet gengives data baseret på indkøbsvogn-id'et, som er en browsercookie, der er tilgængelig på hele webstedet. 
 
@@ -50,9 +50,9 @@ Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabr
 
 | Egenskab | Værdier | Betegnelse |
 |----------------|--------|-------------|
-| Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En overskrift til vognen som f.eks. "Indkøbspose" eller "Varer i din indkøbsvogn". |
-| Vis fejl for ikke på lager | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vil der blive vist lagerrelaterede fejl på siden for indkøbsvogn. Det anbefales, at du angiver denne egenskab til **Sand**, hvis der anvendes lagerkontroller på lokationen. |
-| Vis forsendelsesgebyrer for linjeelementer | **Sand** eller **Falsk** | Hvis denne egenskab angives til **Sand**, vil linjeelementer i en indkøbsvogn vise forsendelsesgebyrer, hvis disse oplysninger er tilgængelige. Denne funktion understøttes ikke i Fabrikam-temaet, da brugere først vælger levering i betalingsflowet. Denne funktion kan dog aktiveres i andre arbejdsprocesser, hvis det er relevant. |
+| Overskrift | Overskriftstekst og en overskriftskode ( **H1** , **H2** , **H3** , **H4** , **H5** eller **H6** ) | En overskrift til vognen som f.eks. "Indkøbspose" eller "Varer i din indkøbsvogn". |
+| Vis fejl for ikke på lager | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand** , vil der blive vist lagerrelaterede fejl på siden for indkøbsvogn. Det anbefales, at du angiver denne egenskab til **Sand** , hvis der anvendes lagerkontroller på lokationen. |
+| Vis forsendelsesgebyrer for linjeelementer | **Sand** eller **Falsk** | Hvis denne egenskab angives til **Sand** , vil linjeelementer i en indkøbsvogn vise forsendelsesgebyrer, hvis disse oplysninger er tilgængelige. Denne funktion understøttes ikke i Fabrikam-temaet, da brugere først vælger levering i betalingsflowet. Denne funktion kan dog aktiveres i andre arbejdsprocesser, hvis det er relevant. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler, der kan bruges i et indkøbsvognmodul
 
@@ -61,11 +61,14 @@ Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabr
 
 ## <a name="module-properties"></a>Modulegenskaber
 
-De følgende indstillinger for indkøbsvognmodul kan konfigureres under **Indstillinger for websted \> Udvidelser**:
+De følgende indstillinger for indkøbsvognmodul kan konfigureres under **Indstillinger for websted \> Udvidelser** :
 
 - **Maks. antal** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
 - **Lager** – Du finder oplysninger om, hvordan du anvender lagerindstillinger, under [Anvendelse af lagerindstillinger](inventory-settings.md).
 - **Tilbage til indkøb** – Denne egenskab bruges til at angive ruten for linket **Tilbage til indkøb**. Ruten kan konfigureres på webstedsniveau, så detailhandlere kan føre kunden tilbage til startsiden eller en anden side på webstedet.
+
+> [!IMPORTANT]
+> I Dynamics 365 Commerce version 10.0.14 og senere samles varerne i indkøbsvognen ud fra de indstillinger, der er defineret i online funktionalitetsprofilen for onlinebutikken i Commerce Headquarters. Du kan finde flere oplysninger om, hvordan du opretter en online funktionalitetsprofil og angiver de egenskaber, der kræves til aggregering, i afsnittet [Oprette en online funktionalitetsprofil](online-functionality-profile.md).
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 
@@ -75,22 +78,22 @@ Indkøbsvognmodulet henter produktoplysninger vha. Commerce Scale Unit-API'er. I
 
 Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
+1. Gå til **Fragmenter** , og vælg **Nyt** for at oprette et nyt fragment.
 1. Vælg modulet **Indkøbsvogn** i dialogboksen **Nyt fragment**.
 1. Under **Fragmentnavn** skal du angive navnet **Indkøbsvognfragment** og derefter vælge **OK**.
-1. Vælg **Indkøbsvogn**-pladsen.
+1. Vælg **Indkøbsvogn** -pladsen.
 1. Vælg blyantsymbolet i ruden Egenskaber til højre. Skriv overskriften i feltet, og vælg derefter markeringssymbolet.
-1. På pladsen **Indkøbsvogn** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. På pladsen **Indkøbsvogn** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Butiksvælger** og derefter **OK**.
-1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
-1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
+1. Gå til **Skabeloner** , og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv et navn for skabelonen under **Skabelonnavn** i dialogboksen **Ny skabelon**.
-1. Vælg pladsen **Brødtekst** i dispositionstræet, vælg ellipsen (**...**), og vælg derefter **Tilføj fragment**.
+1. Vælg pladsen **Brødtekst** i dispositionstræet, vælg ellipsen ( **...** ), og vælg derefter **Tilføj fragment**.
 1. I dialogboksen **Vælg fragment** skal du vælge **Indkøbsvognfragment** og derefter **OK**.
-1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
-1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider** , og vælg **Ny** for at oprette en ny side.
 1. I dialogboksen **Vælg en skabelon** skal du vælge den skabelon, du har oprettet, angive et sidenavn og derefter vælge **OK**.
-1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
+1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden.
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
@@ -110,3 +113,5 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 [Gavekortsmodul](add-giftcard.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
+
+[Oprette en onlinefunktionalitetsprofil](online-functionality-profile.md)

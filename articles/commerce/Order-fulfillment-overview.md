@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975141"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107201"
 ---
 # <a name="store-order-fulfillment"></a>Butiksordreopfyldning
 
@@ -46,7 +46,7 @@ Ordrelinjer kan også blive afvist fra POS'et. Afvisning af en ordrelinje betyde
 
 ## <a name="order-fulfillment-operation-parameters"></a>Parametre for ordreopfyldningsoperation
 
-Ordreopfyldningen indeholder standardparametre, der kan anvendes på operationen, når den kaldes på POS'et. Når **Alle ordrer**-parameteren er konfigureret, vises alle ordrer, når operationen bruges. Parameteren **Ordrer, der skal afsendes** viser kun ordrer, der skal leveres fra butikken og **Ordrer, der skal afhentes** viser ordrer, der bliver afhentet i butikken.
+Ordreopfyldningen indeholder standardparametre, der kan anvendes på operationen, når den kaldes på POS'et. Når **Alle ordrer** -parameteren er konfigureret, vises alle ordrer, når operationen bruges. Parameteren **Ordrer, der skal afsendes** viser kun ordrer, der skal leveres fra butikken og **Ordrer, der skal afhentes** viser ordrer, der bliver afhentet i butikken.
 
 ## <a name="orders-for-fulfillment"></a>Ordrer til opfyldning
 
@@ -58,15 +58,15 @@ Linjer kan vælges ved hjælp af funktionen **Vælg** i handlingsruden. Når **V
 
 ## <a name="line-details"></a>Linjedetaljer
 
-Linjedetaljerne kan ses ved hjælp af pop op-menuen med linjedetaljer. Når denne menu bruges, findes der tre faner med yderligere oplysninger om den valgte linje. Den første fane, **Linjedetaljer**, indeholder oplysninger om selve linjen, f.eks. det bestilte og det resterende antal. Der vises yderligere oplysninger, herunder plukket, pakket og faktureret antal samt leveringsmåde og leveringsadresse. Fanen **Ordredetaljer** indeholder oplysningerne i ordrehovedet herunder kunde, kunde-id, ordrenummer, ordretotal og saldo. Fanen **Lager** indeholder oplysninger for den valgte linje i form af fysisk disponible lagerbeholdning, reserveret lagerbeholdning og bestilt lagerbeholdning.
+Linjedetaljerne kan ses ved hjælp af pop op-menuen med linjedetaljer. Når denne menu bruges, findes der tre faner med yderligere oplysninger om den valgte linje. Den første fane, **Linjedetaljer** , indeholder oplysninger om selve linjen, f.eks. det bestilte og det resterende antal. Der vises yderligere oplysninger, herunder plukket, pakket og faktureret antal samt leveringsmåde og leveringsadresse. Fanen **Ordredetaljer** indeholder oplysningerne i ordrehovedet herunder kunde, kunde-id, ordrenummer, ordretotal og saldo. Fanen **Lager** indeholder oplysninger for den valgte linje i form af fysisk disponible lagerbeholdning, reserveret lagerbeholdning og bestilt lagerbeholdning.
 
 Hvis flere linjer er markeret, angiver pop op-menuen med ordrelinjedetaljer kun, at der er valgt flere linjer. Ryd linjerne, indtil der kun én linje mangler, hvis du vil se detaljerne for en linje.
 
 ## <a name="pending-order-lines"></a>Ventende ordrelinjer
 
-Samlet ordreopfyldning omfatter muligheden for at acceptere ordrer manuelt. Som standard accepteres opfyldningsordrer allerede i butikken. Hvis forretningsprocesser angiver, at en arbejder på butiksniveau skal acceptere ordrer, kan manuel godkendelse dog aktiveres på detailbutiksniveau. Hvis du vil aktivere ordreaccept, skal du gå til **Retail og Commerce** \> **Kanaler** \> **Butikker** \> **Alle butikker**. Åbn den ønskede butik og under fanen **Generelt** skal du finde underoverskriften **Ordreopfyldning**. Denne underoverskrift har indstillingen **Manuel godkendelse**, der er angivet til **Nej** som standard. Ved at angive denne indstilling til **Ja** og synkronisere ændringerne til kanaldatabasen, kan ordrelinjer gå igennem godkendelsesprocessen.
+Samlet ordreopfyldning omfatter muligheden for at acceptere ordrer manuelt. Som standard accepteres opfyldningsordrer allerede i butikken. Hvis forretningsprocesser angiver, at en arbejder på butiksniveau skal acceptere ordrer, kan manuel godkendelse dog aktiveres på detailbutiksniveau. Hvis du vil aktivere ordreaccept, skal du gå til **Retail og Commerce** \> **Kanaler** \> **Butikker** \> **Alle butikker**. Åbn den ønskede butik og under fanen **Generelt** skal du finde underoverskriften **Ordreopfyldning**. Denne underoverskrift har indstillingen **Manuel godkendelse** , der er angivet til **Nej** som standard. Ved at angive denne indstilling til **Ja** og synkronisere ændringerne til kanaldatabasen, kan ordrelinjer gå igennem godkendelsesprocessen.
 
-Arbejdere med rettigheden **Tillad accept af ordre** kan åbne ordreopfyldning og vælge linjer for accept. Når linjer er blevet godkendt, ændres deres status fra **Afventer** til **Accepteret**, og resten af ordreopfyldningsprocessen kan fortsætte. Når **Manuel godkendelse** er aktiveret, bliver ordrer ikke behandlet, før de er blevet godkendt.
+Arbejdere med rettigheden **Tillad accept af ordre** kan åbne ordreopfyldning og vælge linjer for accept. Når linjer er blevet godkendt, ændres deres status fra **Afventer** til **Accepteret** , og resten af ordreopfyldningsprocessen kan fortsætte. Når **Manuel godkendelse** er aktiveret, bliver ordrer ikke behandlet, før de er blevet godkendt.
 
 Ordrer til afhentning i butikken har aldrig tilstanden **Venter**. Det er for at undgå et scenario, hvor en kunde ankommer til butikken, og hvor ordrelinjen ikke kan behandles, fordi en arbejder med de korrekte rettigheder ikke er tilgængelig.
 
@@ -105,13 +105,13 @@ Hvis der er valgt linjer, og der udskrives en plukliste for disse linjer, opdate
 - **Resultatstatus:** Plukket eller delvist plukket
 - **Resultatstatus for administration:** Plukket eller delvist plukket
 
-Når den fysiske plukproces er blevet udført, kan linjer markeres som **Plukket**. Hvis du vælger en linje og markere den som **Plukket**, udføres et realtidsopkald for at opdatere ordrelinjen. Når linjen er markeret som **Plukket**, opdateres status i administrationen på POS'et også til **Plukket**, og lagertransaktioner afspejler, at det angivne antal er reduceret.
+Når den fysiske plukproces er blevet udført, kan linjer markeres som **Plukket**. Hvis du vælger en linje og markere den som **Plukket** , udføres et realtidsopkald for at opdatere ordrelinjen. Når linjen er markeret som **Plukket** , opdateres status i administrationen på POS'et også til **Plukket** , og lagertransaktioner afspejler, at det angivne antal er reduceret.
 
-Med tiden kan delmængder af ordrer, der behandles, blive behandlet for en bestemt linje. Hvis der vælges en linje og handlingen **Markér som plukket**, og antallet er større end 1, bliver brugeren bedt om at angive antallet. Det resterende antal, der skal plukkes, udfyldes automatisk. Hvis et antal, der er mindre end det resterende antal, angives, bliver status for linjen **Delvist plukket**. Når ordrelinjen opdateres i administrationen, afspejler den også status som delvist plukket, og det antal, der er angivet af brugeren, bruges til opdatering af lageret.
+Med tiden kan delmængder af ordrer, der behandles, blive behandlet for en bestemt linje. Hvis der vælges en linje og handlingen **Markér som plukket** , og antallet er større end 1, bliver brugeren bedt om at angive antallet. Det resterende antal, der skal plukkes, udfyldes automatisk. Hvis et antal, der er mindre end det resterende antal, angives, bliver status for linjen **Delvist plukket**. Når ordrelinjen opdateres i administrationen, afspejler den også status som delvist plukket, og det antal, der er angivet af brugeren, bruges til opdatering af lageret.
 
 Hvis en ordrelinje plukkes ved en fejl, skal plukningsfortrydelsesprocessen udføres på ordrelinjen i administrationen. Der understøttes i øjeblikket ingen handling til fortrydelse af pluk på POS'et.
 
-Ordrelinjer fra forskellige ordrer kan vælges og markeres som **Pluk**, udskrives på samme plukliste eller markeres som **Plukket**.
+Ordrelinjer fra forskellige ordrer kan vælges og markeres som **Pluk** , udskrives på samme plukliste eller markeres som **Plukket**.
 
 ### <a name="pack"></a>Pakke
 
@@ -180,7 +180,7 @@ Linjer eller delvise linjer kan afvises. Dette gør muligt at omfordele dem fra 
 - **Resultatstatus:** Afvist
 - **Resultatstatus for administration:** Ingen ændring
 
-De afviste ordrelinjer kan ses i arbejdsområdet **Salgsordrebehandling og -forespørgsel**. Fjern personfilteret i arbejdsområdet for at få vist alle de afviste ordrelinjer på tværs af butikkerne. Fanen **Afviste ordrelinjer** under sektionen **Ordrer og foretrukne** viser ordrelinjeoplysningerne. Desuden kan brugerne klikke på knappen **Afviste ordrelinjer** under sektionen **Oversigt** for at navigere til en salgsordrevisning. Her vises alle de ordrer, der har en eller flere afviste ordrelinjer. Hvis distribueret ordrestyring (DOM) er aktiveret, omfordeles disse afviste ordrer automatisk til de relevante butikker for at blive opfyldt, men disse ordrelinjer kan også omfordeles manuelt. Hvis du vil gøre det, skal du markere linjen, der viser **Opfyldelsesstatus** **Afvist**, og ændre lokation/lagersted efter behov. Klik på rullemenuen **Opdater linje**, og klik på **Nulstil opfyldningsstatus** for at ændre opfyldningsstatus fra **Afvist** til **Accepteret** eller **Afventer**, afhængigt af opsætningen af ordreopfyldningen. Når opfyldningsstatussen er nulstillet, kan medarbejderne i butikken se ordrelinjerne på POS'et.
+De afviste ordrelinjer kan ses i arbejdsområdet **Salgsordrebehandling og -forespørgsel**. Fjern personfilteret i arbejdsområdet for at få vist alle de afviste ordrelinjer på tværs af butikkerne. Fanen **Afviste ordrelinjer** under sektionen **Ordrer og foretrukne** viser ordrelinjeoplysningerne. Desuden kan brugerne klikke på knappen **Afviste ordrelinjer** under sektionen **Oversigt** for at navigere til en salgsordrevisning. Her vises alle de ordrer, der har en eller flere afviste ordrelinjer. Hvis distribueret ordrestyring (DOM) er aktiveret, omfordeles disse afviste ordrer automatisk til de relevante butikker for at blive opfyldt, men disse ordrelinjer kan også omfordeles manuelt. Hvis du vil gøre det, skal du markere linjen, der viser **Opfyldelsesstatus** **Afvist** , og ændre lokation/lagersted efter behov. Klik på rullemenuen **Opdater linje** , og klik på **Nulstil opfyldningsstatus** for at ændre opfyldningsstatus fra **Afvist** til **Accepteret** eller **Afventer** , afhængigt af opsætningen af ordreopfyldningen. Når opfyldningsstatussen er nulstillet, kan medarbejderne i butikken se ordrelinjerne på POS'et.
 
 ## <a name="line-quantity-tracking"></a>Sporing af linjeantal
 
@@ -194,8 +194,8 @@ I eksemplet ovenfor, hvis 200 plader markeres som pakket, og levering er valgt, 
 
 Ordrelinjer på POS'et har flere statusser, som afspejler tilstanden for ordrelinjen. Statusser på POS'et og i administrationen er ikke ens i alle tilfælde. Status for ordrelinjen kan ses fra POS'et ved hjælp af ordreopfyldningsoperationerne. I administrationen fremgår ordrelinjerne af ordreoplysningerne. Der er adgang til ordreoplysningerne via **Retail og Commerce** \> **Kunder** \> **Alle kundeordrer**. Vælg **Ordre-id** for at se ordreoplysningerne. Fra ordreoplysningerne skal du vælge fanen **Salgsordre** og derefter vælge **Detaljeret status** under underoverskriften **Vis**.
 
-- **Afventer** – Ordrelinjer, der er tildelt til en butik, men som endnu ikke er accepteret, har status **Afventer**, når de vises på POS'et. Linjer, der afventer accept på POS'et, får status **Ordrebehandling** i administrationen.
-- **Accepteret** – Ordrelinjer, der er accepteret manuelt eller automatisk, har status **Accepteret**, når de vises på POS'et. Linjer med status **Accepteret** vises som **Ordrebehandling** i administrationen.
+- **Afventer** – Ordrelinjer, der er tildelt til en butik, men som endnu ikke er accepteret, har status **Afventer** , når de vises på POS'et. Linjer, der afventer accept på POS'et, får status **Ordrebehandling** i administrationen.
+- **Accepteret** – Ordrelinjer, der er accepteret manuelt eller automatisk, har status **Accepteret** , når de vises på POS'et. Linjer med status **Accepteret** vises som **Ordrebehandling** i administrationen.
 - **Pluk** – Linjer, der i øjeblikket plukkes på butiksniveau, har status **Pluk**. Når de samme linjer vises i administrationen, bliver de vist som **Ordrebehandling**.
 - **Plukket** og **Delvist plukket** – Linjer, der er plukket eller delvist plukket på POS'et får status **Plukket** eller **Delvist plukket**. De samme linjer i administrationen vises også som **Plukket** eller **Delvist plukket**.
 - **Pakket** og **Delvist pakket** – Linjer, der er pakket eller delvist pakket på POS'et får status **Pakket** eller **Delvist pakket**. De samme linjer i administrationen vises også som **Leveret** eller **Delvist leveret**.
@@ -204,7 +204,7 @@ Ordrelinjer på POS'et har flere statusser, som afspejler tilstanden for ordreli
 
 ## <a name="order-fulfillment-filtering"></a>Ordreopfyldningsfiltrering
 
-Ordreopfyldning på POS'et omfatter filtrering, så brugerne nemt kan finde det, de har brug for. Filtre kan ændres via handlingsruden nederst på skærmbilledet **POS**. Som standard anvendes et **Leveringstype**-filter, baseret på hvordan operationen er konfigureret. Hvis operationen er konfigureret med parameteren **Alle ordrer**, anvendes dette filter ved adgang til ordreopfyldning. Det samme gælder for parametrene **Afhentning i butik** og **Afsend fra butik**. Andre filtre, der kan anvendes til ordreopfyldningsvisningen, omfatter:
+Ordreopfyldning på POS'et omfatter filtrering, så brugerne nemt kan finde det, de har brug for. Filtre kan ændres via handlingsruden nederst på skærmbilledet **POS**. Som standard anvendes et **Leveringstype** -filter, baseret på hvordan operationen er konfigureret. Hvis operationen er konfigureret med parameteren **Alle ordrer** , anvendes dette filter ved adgang til ordreopfyldning. Det samme gælder for parametrene **Afhentning i butik** og **Afsend fra butik**. Andre filtre, der kan anvendes til ordreopfyldningsvisningen, omfatter:
 
 - Kundenummer
 - Kundenavn

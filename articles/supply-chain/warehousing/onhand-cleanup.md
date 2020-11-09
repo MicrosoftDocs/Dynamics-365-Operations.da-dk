@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f6d1f8a4c85c2161d1b79246d437bb3b4d223d1d
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410935"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015935"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Job til oprydning i disponible poster til lokationsstyring
 
@@ -30,7 +31,7 @@ Dette emne beskriver jobbet til oprydning i disponible poster, som sletter unød
 
 ## <a name="what-the-cleanup-job-does"></a>Dette gør oprydningsjobbet
 
-Jobbet til opryding i disponible poster sletter eventuelle poster i tabellen WHSInventReserve og InventSum, hvor alle feltværdier er *0* (nul). Disse poster kan slettes, fordi de ikke bidrager til oplysninger om den disponible lagerbeholdning. Jobbet sletter kun poster, der er under **Lokations**-niveauet.
+Jobbet til opryding i disponible poster sletter eventuelle poster i tabellen WHSInventReserve og InventSum, hvor alle feltværdier er *0* (nul). Disse poster kan slettes, fordi de ikke bidrager til oplysninger om den disponible lagerbeholdning. Jobbet sletter kun poster, der er under **Lokations** -niveauet.
 
 Hvis negativt fysisk lager er tilladt, kan oprydningsjobbet måske ikke slette alle de relevante poster. Grunden til denne begrænsning er, at jobbet skal tillade et særligt scenarie, hvor en nummerplade har flere serienumre, og et af disse serienumre er blevet negative. For eksempel vil systemet blive sat til nul disponibel på nummerpladeniveau, når en nummerplade har +1 stk. af serienummer 1 og -1 stk. af serienummer 2. I dette særlige scenarie foretager jobbet en bredde-først-sletning, hvor det forsøger at slette fra lavere niveauer først.
 
@@ -49,7 +50,7 @@ Når jobbet kører, har det en commit size (mængde af reserveret virtuel hukomm
 
 ## <a name="possible-user-impact"></a>Mulig brugereffekt
 
-Brugere kan blive påvirket, hvis jobbet til oprydning af disponible poster sletter alle poster for et givet niveau (f.eks. nummerpladeniveauet). I dette tilfælde kan det ske, at funktionaliteten til visning af dette lager, som tidligere var direkte tilgængelig på nummerpladen, ikke fungerer som forventet, da de relevante disponible poster ikke længere er tilgængelige. (Denne funktion kontrollerer betingelsen **Antal \<\> 0** i indstillingerne for **Dimensionsvisning**, når brugerne får vist oplysninger om den disponible beholdning.) Den forbedring af ydeevnen, som oprydningsjobbet skal give, skulle dog kompensere for dette mindre funktionalitetstab.
+Brugere kan blive påvirket, hvis jobbet til oprydning af disponible poster sletter alle poster for et givet niveau (f.eks. nummerpladeniveauet). I dette tilfælde kan det ske, at funktionaliteten til visning af dette lager, som tidligere var direkte tilgængelig på nummerpladen, ikke fungerer som forventet, da de relevante disponible poster ikke længere er tilgængelige. (Denne funktion kontrollerer betingelsen **Antal \<\> 0** i indstillingerne for **Dimensionsvisning** , når brugerne får vist oplysninger om den disponible beholdning.) Den forbedring af ydeevnen, som oprydningsjobbet skal give, skulle dog kompensere for dette mindre funktionalitetstab.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gøre indstillingen for den maksimale kørselstid tilgængelig
 

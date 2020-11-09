@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d274eae4ad3ba60eadb18ca8de22d4b2d10fe727
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205684"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016695"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Udskudt behandling af lagerstedsarbejde
 
@@ -44,7 +44,7 @@ Politikker konfigureres på siden **Politikker for arbejdsbehandling**. I følge
 | Navn på politik for arbejdsbehandling     | Navnet på arbejdsbehandlingspolitikken. |
 | Arbejdsordretype                 | Den arbejdsordretype, som politikken anvendes på. |
 | Handling                       | Den handling, der behandles ved hjælp af politikken. |
-| Arbejdsbehandlingsmetode          | Den metode, der bruges til at behandle arbejdslinjen. Hvis metoden er indstillet til **Øjeblikkelig**, ligner funktionsmåden den, der bruges, når ingen databehandlingspolitikker bruges til at behandle linjen. Hvis metoden er indstillet til **Udskudt**, bruges udskudt behandling, der bruger batchstrukturen. |
+| Arbejdsbehandlingsmetode          | Den metode, der bruges til at behandle arbejdslinjen. Hvis metoden er indstillet til **Øjeblikkelig** , ligner funktionsmåden den, der bruges, når ingen databehandlingspolitikker bruges til at behandle linjen. Hvis metoden er indstillet til **Udskudt** , bruges udskudt behandling, der bruger batchstrukturen. |
 | Tærskel for udskudt behandling   | En værdi på **0** (nul) angiver, at der ikke er en tærskel. I dette tilfælde bruges udskudt behandling, hvis den kan bruges. Hvis den specifikke tærskelberegning er under tærsklen, anvendes metoden Øjeblikkelig. Ellers bruges den udskudte metode, hvis den kan bruges. For salgs- og overførselsrelateret arbejde beregnes tærsklen som antallet af tilknyttede kildelastlinjer, der behandles for arbejdet. For genopfyldningsarbejde beregnes tærsklen som antallet af arbejdslinjer, der genopfyldes af arbejdet. Ved at sætte en tærskel på for eksempel **5** for salg, vil mindre arbejde, der har færre end fem oprindelige kildebelastningslinjer, ikke bruge udskudt behandling, men større arbejde vil bruge den. Tærsklen har kun virkning, hvis arbejdsbehandlingsmetoden er indstillet til **Udskudt.** |
 | Batchgruppe for udskudt behandling |Den batchgruppe, der bruges til behandling. |
 
@@ -68,7 +68,7 @@ Som standard vises de **fuldførte** opgaver.
 Her er en forklaring på mulige statustyper:
 
 - **Afventer** – Det relaterede batchjob afventer behandling på batchserveren.
-- **Lykkedes ikke** – Behandlingen mislykkedes. Opgaven kan behandles igen ved hjælp af handlingen **Start udskudt Læg på lager**, eller den kan annulleres ved hjælp af handlingen **Annuller udskudt Læg på lager**.
+- **Lykkedes ikke** – Behandlingen mislykkedes. Opgaven kan behandles igen ved hjælp af handlingen **Start udskudt Læg på lager** , eller den kan annulleres ved hjælp af handlingen **Annuller udskudt Læg på lager**.
 - **Fuldført** – Jobbet blev fuldført.
 
 ## <a name="impact-on-closed-work-dates"></a>Påvirkning af datoer for lukket arbejde
@@ -105,7 +105,7 @@ Der er flere scenarier, hvor udskudt læg på lager-behandling ikke anvendes, se
 Arbejdsområdet **Overvågning af udgående arbejde** har to felter, der hjælper dig med at overvåge udskudte læg på lager-behandlingsopgaver:
 
 - **Mislykkede udskudte læg på lager-behandlingsopgaver** – Dette felt viser antallet af mislykkede opgaver. Hvis der er mislykkede opgaver, skal lagerchefen enten genbehandle dem eller annullere dem, fordi de ikke vil blive genbehandlet automatisk.
-- **Afventer udskudte læg på lager-behandlingsopgaver** – Dette felt viser antallet af opgaver, der har været i **Afventer**-status i mere end 10 minutter. Hvis feltet viser et tal, kan det indikere, at der opstod et problem under batchprocessen. Du kan manuelt behandle de **afventende** opgaver. Hvis batchjobbet for en opgave behandles senere, mislykkes det bare, fordi det allerede er blevet behandlet. Der vil ikke være nogen effekt.
+- **Afventer udskudte læg på lager-behandlingsopgaver** – Dette felt viser antallet af opgaver, der har været i **Afventer** -status i mere end 10 minutter. Hvis feltet viser et tal, kan det indikere, at der opstod et problem under batchprocessen. Du kan manuelt behandle de **afventende** opgaver. Hvis batchjobbet for en opgave behandles senere, mislykkes det bare, fordi det allerede er blevet behandlet. Der vil ikke være nogen effekt.
 
 ## <a name="deleting-completed-tasks"></a>Sletning af fuldførte opgaver
 

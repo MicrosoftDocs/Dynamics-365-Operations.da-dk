@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0848b7556100fba38fcab0aa2a1a109e2e055fc9
-ms.sourcegitcommit: b89baab13e530b5b1f079231619c628309a4742d
+ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
+ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959569"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058148"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurere virtuelle enheder i Common Data Service
 
@@ -68,7 +68,7 @@ Først skal du registrere appen i Azure-portalen, så Microsoft-identitetsplatfo
 
 6. Vælg **Registrer**.
 
-7. Når registreringen er fuldført, viser Azure-portalen appregistreringens **Oversigt**-rude, som indeholder **Program-id (klient)**. Notér dig **Program-id (klient)** nu. Du skal angive disse oplysninger, når du [konfigurerer datakilden til den virtuelle enhed](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. Når registreringen er fuldført, viser Azure-portalen appregistreringens **Oversigt** -rude, som indeholder **Program-id (klient)**. Notér dig **Program-id (klient)** nu. Du skal angive disse oplysninger, når du [konfigurerer datakilden til den virtuelle enhed](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
 8. Vælg **Certifikater og hemmeligheder** i venstre navigationsrude.
 
@@ -93,7 +93,7 @@ Installer appen Dynamics 365 HR Virtual Entity i dit Power Apps-miljø for at ud
 
 4. Vælg handlingen **Installer app**.
 
-5. Vælg **Dynamics 365 HR Virtual Entity**, og vælg **Næste**.
+5. Vælg **Dynamics 365 HR Virtual Entity** , og vælg **Næste**.
 
 6. Gennemgå og markér, at du accepterer servicebetingelserne.
 
@@ -124,9 +124,9 @@ Det næste trin er at konfigurere datakilden til den virtuelle enhed i Power App
 8. Angiv de nødvendige oplysninger til datakildens konfiguration.
 
    - **Mål-URL-adresse** URL-adressen til dit Human Resources-navneområde.
-   - **Lejer-id**: Azure Active Directory-lejer-id (Azure AD).
-   - **AAD-program-id**: Det program-id (klient), der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-   - **AAD-programhemmelighed**: Den programklienthemmelighed, der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Lejer-id** : Azure Active Directory-lejer-id (Azure AD).
+   - **AAD-program-id** : Det program-id (klient), der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **AAD-programhemmelighed** : Den programklienthemmelighed, der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
 9. Vælg **Gem og luk**.
 
@@ -149,39 +149,40 @@ Give tilladelser til de to Azure AD-programmer i Human Resources:
 
 3. Vælg **Ny** for at oprette endnu en programpost:
 
-    - **Klient-id**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Navn**: Dynamics 365 HR Virtual Entity
+    - **Klient-id** : f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Navn** : Dynamics 365 HR Virtual Entity
     - I feltet **Bruger-id** skal du vælge bruger-id'et for en bruger med administratorrettigheder i Human Resources og Power Apps-miljøet.
 
 ## <a name="generate-virtual-entities"></a>Generere virtuelle enheder
 
 Når installationen er fuldført, kan du vælge de virtuelle enheder, du vil generere og aktivere i din Common Data Service-forekomst.
 
-1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com).
+1. I Human Resources skal du åbne siden **Common Data Service (CDS)-integration**.
 
-2. Vælg det Power Apps-miljø, der er knyttet til din forekomst af Human Resources, på listen over **Miljøer**.
-
-3. Vælg **URL-adressen til miljøet** i afsnittet **Detaljer** på siden.
-
-4. I **Løsningstilstandshub** skal du vælge ikonet **Avanceret søgning** øverst til højre på siden.
-
-5. Vælg **Tilgængelige HR-enheder** på rullelisten **Søg efter** på siden **Avanceret søgning**.
-
-6. Brug filterindstillingerne til at finde det eller de enheder, du vil aktivere.
-
-7. Vælg en enhed på listen.
-
-8. På enhedssiden skal du ændre egenskaben **Er genereret** til **Ja** for objektet.
-
-9. Gem og luk enhedssiden.
+2. Vælg fanen **Virtuelle enheder**.
 
 > [!NOTE]
-> Du kan oprette flere virtuelle enheder på én gang ved at bruge siden **Rediger flere poster**. Vælg flere poster på siden, og vælg **Rediger** på båndet. Du kan derefter ændre egenskaben **Er genereret** for alle valgte poster.
+> Til/fra-knappen **Aktivér den virtuelle enhed** indstilles til **Ja** automatisk, når alle nødvendige konfigurationer er fuldført. Hvis knappen er indstillet til **Nej** , skal du gennemgå trinnene i tidligere afsnit af dette dokument for at sikre, at alle forudsætninger for installationen er opfyldt.
 
-![Tilgængelige HR-enheder](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Vælg den enhed eller de enheder, du vil oprette i Common Data Service.
 
-> [!NOTE]
-> For at strømline processen til generering af virtuelle enheder i fremtidige versioner vil processen finde sted på en side i Human Resources.
+4. Vælg **Generer/Opdater**.
+
+![Common Data Service-integration](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## <a name="check-entity-generation-status"></a>Kontrollere status for oprettelse af enhed
+
+Virtuelle enheder genereres i Common Data Service via en asynkron baggrundsproces. Opdateringer af processen vises i handlingscenteret. Oplysninger om processen, herunder fejllogfiler, vises på siden **Procesautomatiseringer**.
+
+1. Åbn listesiden **Procesautomatiseringer** i Human Resources.
+
+2. Vælg fanen **Baggrundsprocesser**.
+
+3. Vælg **Baggrundsproces i asynkron handling for virtuel enhedsforespørgsel**.
+
+4. Vælg **Vis seneste resultater**.
+
+I slide-out-ruden vises de seneste udførelsesresultater for processen. Du kan se logfilen for processen, herunder eventuelle fejl, der returneres fra Common Data Service.
 
 ## <a name="see-also"></a>Se også
 

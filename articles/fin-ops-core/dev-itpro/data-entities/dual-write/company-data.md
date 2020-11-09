@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
-ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
+ms.openlocfilehash: 46a6ed9763781de8e05cff7adadf75fe2a931fdc
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3728407"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997520"
 ---
 # <a name="company-concept-in-common-data-service"></a>Firmakoncept i Common Data Service
 
@@ -33,7 +32,7 @@ ms.locfileid: "3728407"
 
 I Finance and Operations er konceptet et *firma* både en juridisk konstruktion og en forretningskonstruktion. Det er også en sikkerheds- og synlighedsgrænse for data. Brugere arbejder altid i konteksten af et enkelt firma, og de fleste data stripes (spredes) af firmaet.
 
-Common Data Service har ikke et tilsvarende koncept. Det tætteste koncept er *virksomhedsenhed*, som primært er en sikkerheds- og synlighedsgrænse for brugerdata. Dette koncept har ikke samme juridiske eller forretningsmæssige implikationer som firmakonceptet.
+Common Data Service har ikke et tilsvarende koncept. Det tætteste koncept er *virksomhedsenhed* , som primært er en sikkerheds- og synlighedsgrænse for brugerdata. Dette koncept har ikke samme juridiske eller forretningsmæssige implikationer som firmakonceptet.
 
 Da virksomhedsenhed og firma ikke er tilsvarende koncepter, er det ikke muligt at gennemtvinge en en-til-en (1:1) tilknytning mellem dem med henblik på Common Data Service-integration. Men da brugere som standard skal kunne se de samme poster i programmet og Common Data Service, har Microsoft introduceret en ny enhed i Common Data Service, der hedder cdm\_Company. Denne enhed svarer til enheden Firma i programmet. For at hjælpe med at sikre, at synlighed af poster som standard er ens mellem programmet og Common Data Service, anbefaler vi følgende opsætning af data i Common Data Service:
 
@@ -74,26 +73,26 @@ Common Data Service-integration giver firmaparitet ved at bruge en firmaidentifi
 + For eksisterende Common Data Service-data vil en administrativ bootstrapping-oplevelse snart være tilgængelig.
 
 
-## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Udfylde firmanavn automatisk i Customer Engagement-apps
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Udfylde firmanavn automatisk i kundeengagementapps
 
-Du kan automatisk udfylde firmanavnet i Customer Engagement-apps på flere måder.
+Du kan automatisk udfylde firmanavnet i kundeengagementapps på flere måder.
 
-+ Hvis du er systemadministrator, kan du angive standardfirmaet ved at navigere til **Avancerede indstillinger > System > Sikkerhed > Brugere**. Åbn formularen **Bruger**, og angiv i sektionen **Organisationsoplysninger** værdien **Firmastandard på formularer**.
++ Hvis du er systemadministrator, kan du angive standardfirmaet ved at navigere til **Avancerede indstillinger > System > Sikkerhed > Brugere**. Åbn formularen **Bruger** , og angiv i sektionen **Organisationsoplysninger** værdien **Firmastandard på formularer**.
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Angiv standardfirma i sektionen Organisationsoplysninger.":::
 
-+ Hvis du har **Skrive**-adgang til **SystemUser**-enheden for **Afdeling**-niveauet, kan du ændre standardfirmaet i en hvilken som helst formular ved at vælge et firma i rullemenuen **Firma**.
++ Hvis du har **Skrive** -adgang til **SystemUser** -enheden for **Afdeling** -niveauet, kan du ændre standardfirmaet i en hvilken som helst formular ved at vælge et firma i rullemenuen **Firma**.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Ændre firmanavnet på en ny konto.":::
 
-+ Hvis du har **Skrive**-adgang til data i mere end ét firma, kan du ændre standardfirmaet ved at vælge en post, der tilhører et andet firma.
++ Hvis du har **Skrive** -adgang til data i mere end ét firma, kan du ændre standardfirmaet ved at vælge en post, der tilhører et andet firma.
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Når du vælger en post, ændres standardfirmaet.":::
 
-+ Hvis du er systemkonfigurator eller -administrator, og du vil udfylde firmadata automatisk i en brugerdefineret formular, kan du bruge [formularhændelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Føj en JavaScript-reference til **msdyn_/DefaultCompany.js**, og brug følgende hændelser. Du kan bruge enhver standardformular, f.eks. formularen **Konto**.
++ Hvis du er systemkonfigurator eller -administrator, og du vil udfylde firmadata automatisk i en brugerdefineret formular, kan du bruge [formularhændelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Føj en JavaScript-reference til **msdyn_/DefaultCompany.js** , og brug følgende hændelser. Du kan bruge enhver standardformular, f.eks. formularen **Konto**.
 
     + Hændelsen **OnLoad** for formularen: Angiv feltet **defaultCompany**.
-    + Hændelsen **OnChange** for feltet **Firma**: Angiv feltet **updateDefaultCompany**.
+    + Hændelsen **OnChange** for feltet **Firma** : Angiv feltet **updateDefaultCompany**.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Anvende filtrering baseret på firmakontekst
 

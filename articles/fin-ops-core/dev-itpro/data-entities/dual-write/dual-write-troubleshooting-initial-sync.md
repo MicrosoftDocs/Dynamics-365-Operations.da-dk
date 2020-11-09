@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443843"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997320"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Foretage fejlfinding af problemer under den første synkronisering
 
@@ -37,7 +36,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Kontrollere, om der er fejl i første synkronisering i en Finance and Operations-app
 
-Når du har aktiveret tilknytningsskabelonerne, skal status for tilknytningerne være **Kører**. Hvis status er **Kører ikke**, er der opstået fejl under den første synkronisering. Hvis du vil have vist fejlene, skal du vælge fanen **Oplysninger om første synkronisering** på siden **Dobbeltskrivning**.
+Når du har aktiveret tilknytningsskabelonerne, skal status for tilknytningerne være **Kører**. Hvis status er **Kører ikke** , er der opstået fejl under den første synkronisering. Hvis du vil have vist fejlene, skal du vælge fanen **Oplysninger om første synkronisering** på siden **Dobbeltskrivning**.
 
 ![Fejl under fanen Oplysninger om første synkronisering](media/initial_sync_status.png)
 
@@ -84,7 +83,7 @@ Du kan få vist følgende fejlmeddelelse under første synkronisering:
 Følg disse trin for at løse dette problem.
 
 1. Log på Finance and Operations-appen.
-2. Slet **DtAppID**-klienten på siden **Azure Active Directory-programmer**, og tilføj den derefter igen.
+2. Slet **DtAppID** -klienten på siden **Azure Active Directory-programmer** , og tilføj den derefter igen.
 
 ![DtAppID-klient på listen over Azure AD-programmer](media/aad_applications.png)
 
@@ -97,7 +96,7 @@ Du kan få vist en fejlmeddelelse, hvis nogen af dine tilknytninger har selvrefe
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-entity-mapping"></a><a id="error-vendor-map"></a>Løse fejl i enhedstilknytning V2–to–msdyn_vendors for kreditorer
 
-Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V2** til **msdyn\_vendors**, hvis enhederne har eksisterende poster med værdier i felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**. Disse fejl skyldes, at **InvoiceVendorAccountNumber** er et selvrefererende felt, og at **PrimaryContactPersonId** er en cirkulær reference i kreditortilknytningen.
+Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V2** til **msdyn\_vendors** , hvis enhederne har eksisterende poster med værdier i felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**. Disse fejl skyldes, at **InvoiceVendorAccountNumber** er et selvrefererende felt, og at **PrimaryContactPersonId** er en cirkulær reference i kreditortilknytningen.
 
 De fejlmeddelelser, du modtager, har følgende form.
 
@@ -108,13 +107,13 @@ Her er nogle eksempler:
 - *GUID for feltet kunne ikke fortolkes: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Opslaget blev ikke fundet: 000056. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *GUID for feltet kunne ikke fortolkes: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Opslaget blev ikke fundet: V24-1. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Hvis der er poster i kreditorenheden med værdier i felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, skal du følge disse trin for at fuldføre den første synkronisering.
+Hvis der er poster i kreditorenheden med værdier i felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** , skal du følge disse trin for at fuldføre den første synkronisering.
 
 1. I Finance and Operations-appen skal du slette felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilknytningen og derefter gemme tilknytningen.
 
-    1. Gå til siden dobbeltskrivning-tilknytning for **Kreditorer V2 (msdyn\_vendors)**, og vælg fanen **Enhedstilknytninger**. I venstre filter skal du vælge **Finance and Operations apps.Vendors V2**. I højre filter skal du vælge **Sales.Vendor**.
+    1. Gå til siden dobbeltskrivning-tilknytning for **Kreditorer V2 (msdyn\_vendors)** , og vælg fanen **Enhedstilknytninger**. I venstre filter skal du vælge **Finance and Operations apps.Vendors V2**. I højre filter skal du vælge **Sales.Vendor**.
     2. Søg efter **primarycontactperson** for at finde kildefeltet **PrimaryContactPersonId**.
-    3. Vælg **Handlinger**, og vælg derefter **Slet**.
+    3. Vælg **Handlinger** , og vælg derefter **Slet**.
 
         ![Slette feltet PrimaryContactPersonId](media/vend_selfref3.png)
 
@@ -124,7 +123,7 @@ Hvis der er poster i kreditorenheden med værdier i felterne **PrimaryContactPer
 
     5. Gem ændringerne i tilknytningen.
 
-2. Slå ændringssporing fra for **Kreditorer V2**-enheden.
+2. Slå ændringssporing fra for **Kreditorer V2** -enheden.
 
     1. I arbejdsområdet **Datastyring** skal du markere feltet **Dataenheder**.
     2. Vælg enheden **Kreditorer V2**.
@@ -138,13 +137,13 @@ Hvis der er poster i kreditorenheden med værdier i felterne **PrimaryContactPer
 
 3. Kør den første synkronisering for tilknytningen **Kreditorer V2 (msdyn\_vendors)**. Den første synkronisering skal køres uden fejl.
 4. Kør den første synkronisering for tilknytningen **CDS kontakter V2 (kontakter)**. Du skal synkronisere denne tilknytning, hvis du vil synkronisere feltet for den primære kontakt på kreditorenheden, fordi den første synkronisering også skal udføres for kontaktposterne.
-5. Føj felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** tilbage til tilknytningen **Kreditorer V2 (msdyn\_vendors)**, og gem tilknytningen.
+5. Føj felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** tilbage til tilknytningen **Kreditorer V2 (msdyn\_vendors)** , og gem tilknytningen.
 6. Kør den første synkronisering igen for tilknytningen **Kreditorer V2 (msdyn\_vendors)**. Alle poster synkroniseres, fordi ændringssporing er deaktiveret.
-7. Slå ændringssporing til igen for **Kreditorer V2**-enheden.
+7. Slå ændringssporing til igen for **Kreditorer V2** -enheden.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-entity-mapping"></a><a id="error-customer-map"></a>Løse fejl i enhedstilknytning V3–to–Accounts for debitorer
 
-Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V3** til **Konti**, hvis enhederne har eksisterende poster med værdier i felterne **ContactPersonId** og **InvoiceAccount**. Disse fejl opstår, fordi **InvoiceAccount** er et selvrefererende felt, og at **ContactPersonID** er en cirkulær reference i kreditortilknytningen.
+Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V3** til **Konti** , hvis enhederne har eksisterende poster med værdier i felterne **ContactPersonId** og **InvoiceAccount**. Disse fejl opstår, fordi **InvoiceAccount** er et selvrefererende felt, og at **ContactPersonID** er en cirkulær reference i kreditortilknytningen.
 
 De fejlmeddelelser, du modtager, har følgende form.
 
@@ -155,13 +154,13 @@ Her er nogle eksempler:
 - *GUID for feltet kunne ikke fortolkes: primarycontactid.msdyn\_contactpersonid. Opslaget blev ikke fundet: 000056. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *GUID for feltet kunne ikke fortolkes: msdyn\_billingaccount.accountnumber. Opslaget blev ikke fundet: 1206-1. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Hvis der er poster i debitorenheden med værdier i felterne **ContactPersonID** og **InvoiceAccount**, skal du følge disse trin for at fuldføre den første synkronisering. Du kan bruge denne fremgangsmåde til alle indbyggede enheder, f.eks. **Konti** og **Kontakter**.
+Hvis der er poster i debitorenheden med værdier i felterne **ContactPersonID** og **InvoiceAccount** , skal du følge disse trin for at fuldføre den første synkronisering. Du kan bruge denne fremgangsmåde til alle indbyggede enheder, f.eks. **Konti** og **Kontakter**.
 
 1. I Finance and Operations-appen skal du slette felterne **ContactPersonID** og **InvoiceAccount** fra tilknytningen **Debitorer V3 (konti)** og derefter gemme tilknytningen.
 
-    1. Gå til siden med dobbeltskrivning-tilknytning for **Debitorer V3 (konti)**, og vælg fanen **Enhedstilknytninger**. I venstre filter skal du vælge **Finance and Operations apps.Customers V3**. I højre filter skal du vælge **Common Data Service.Account**.
+    1. Gå til siden med dobbeltskrivning-tilknytning for **Debitorer V3 (konti)** , og vælg fanen **Enhedstilknytninger**. I venstre filter skal du vælge **Finance and Operations apps.Customers V3**. I højre filter skal du vælge **Common Data Service.Account**.
     2. Søg efter **contactperson** for at finde kildefeltet **ContactPersonID**.
-    3. Vælg **Handlinger**, og vælg derefter **Slet**.
+    3. Vælg **Handlinger** , og vælg derefter **Slet**.
 
         ![Sletning af feltet ContactPersonID](media/cust_selfref3.png)
 
@@ -171,7 +170,7 @@ Hvis der er poster i debitorenheden med værdier i felterne **ContactPersonID** 
 
     5. Gem ændringerne i tilknytningen.
 
-2. Slå ændringssporing fra for **Debitorer V3**-enheden.
+2. Slå ændringssporing fra for **Debitorer V3** -enheden.
 
     1. I arbejdsområdet **Datastyring** skal du markere feltet **Dataenheder**.
     2. Vælg enheden **Debitorer V3**.
@@ -187,13 +186,13 @@ Hvis der er poster i debitorenheden med værdier i felterne **ContactPersonID** 
 4. Kør den første synkronisering for tilknytningen **CDS kontakter V2 (kontakter)**.
 
     > [!NOTE]
-    > Der er to tilknytninger med samme navn. Vælg tilknytningen med følgende beskrivelse under fanen **Detaljer**: **Dobbeltskrivningsskabelon for synkronisering mellem FO.CDS Kreditorkontakter V2 til CDS.Contacts. Kræver ny pakke \[Dynamics365SupplyChainExtended\].**
+    > Der er to tilknytninger med samme navn. Vælg tilknytningen med følgende beskrivelse under fanen **Detaljer** : **Dobbeltskrivningsskabelon for synkronisering mellem FO.CDS Kreditorkontakter V2 til CDS.Contacts. Kræver ny pakke \[Dynamics365SupplyChainExtended\].**
 
-5. Tilføj felterne **InvoiceAccount** og **ContactPersonId** igen i tilknytningen **Debitorer V3 (konti)**, og gem tilknytningen. Nu er både feltet **InvoiceAccount** og feltet **ContactPersonId** igen en del af den direkte synkroniseringstilstand. I det næste trin udfører du den første synkronisering for disse felter.
+5. Tilføj felterne **InvoiceAccount** og **ContactPersonId** igen i tilknytningen **Debitorer V3 (konti)** , og gem tilknytningen. Nu er både feltet **InvoiceAccount** og feltet **ContactPersonId** igen en del af den direkte synkroniseringstilstand. I det næste trin udfører du den første synkronisering for disse felter.
 6. Kør den første synkronisering igen for tilknytningen **Debitorer V3 (konti)**. Da ændringssporing er slået fra, bliver dataene for **InvoiceAccount** og **ContactPersonId** synkroniseret fra Finance and Operations-appen til Common Data Service.
 7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Common Data Service til Finance and Operations-appen, skal du bruge et dataintegrationsprojekt.
 
-    1. I Power Apps skal du oprette et dataintegrationsprojekt mellem **Sales.Account**- og **Finance and Operations apps.Customers V3**-enhederne. Dataretningen skal ligge fra Common Data Service til Finance and Operations-appen. Da **InvoiceAccount** er en ny attribut i dobbeltskrivning, kan det være en god idé at springe den første synkronisering over for den. Du kan finde flere oplysninger under [Integrere data i Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. I Power Apps skal du oprette et dataintegrationsprojekt mellem **Sales.Account** - og **Finance and Operations apps.Customers V3** -enhederne. Dataretningen skal ligge fra Common Data Service til Finance and Operations-appen. Da **InvoiceAccount** er en ny attribut i dobbeltskrivning, kan det være en god idé at springe den første synkronisering over for den. Du kan finde flere oplysninger under [Integrere data i Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
 
         Følgende illustration viser et projekt, der opdaterer **CustomerAccount** og **ContactPersonId**.
 
@@ -203,10 +202,10 @@ Hvis der er poster i debitorenheden med værdier i felterne **ContactPersonID** 
 
         > [BEMÆRK] Hvis filterknappen ikke er til stede, skal du oprette en supportanmodning for at bede dataintegrationsteamet om at aktivere filtreringsfunktionen på din lejer.
 
-        Hvis du ikke indtaster en filterforespørgsel for **\_msdyn\_company\_value**, synkroniseres alle poster.
+        Hvis du ikke indtaster en filterforespørgsel for **\_msdyn\_company\_value** , synkroniseres alle poster.
 
         ![Tilføjelse af en filterforespørgsel](media/cust_selfref7.png)
 
     Den første synkronisering af posterne er nu fuldført.
 
-8. Aktivér ændringssporing igen i Finance and Operations-appen for **Debitorer V3**-enheden.
+8. Aktivér ændringssporing igen i Finance and Operations-appen for **Debitorer V3** -enheden.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae6b36c40d2f2f9e5266dfb3e2d1cbbb57755222
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ad8b33633646f27bc368dc4bbedc1eb64c150a9f
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803085"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014929"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Installere tilføjelsesprogrammet IoT-viden i LCS
 
@@ -36,7 +36,7 @@ I dette emne forklares, hvordan du kan installere tilføjelsesprogrammet IoT-vid
 2. Rul til sektionen **Tilføjelsesprogrammer for miljø**.
 3. Vælg **Installér et nyt tilføjelsesprogram** for at få vist listen over de tilføjelsesprogrammer, der er aktiveret for miljøet.
 4. Vælg **IoT-viden** i dialogboksen **Vælg et tilføjelsesprogram, der skal installeres**.
-5. Gå til dialogboksen **Konfigurer tilføjelsesprogram**, og angiv detaljerne i din IoT-hub og Redis-cache. Du kan finde de nødvendige værdier i den key vault, du har oprettet under [Oprette Azure-ressourcer](iot-azure-setup.md).
+5. Gå til dialogboksen **Konfigurer tilføjelsesprogram** , og angiv detaljerne i din IoT-hub og Redis-cache. Du kan finde de nødvendige værdier i den key vault, du har oprettet under [Oprette Azure-ressourcer](iot-azure-setup.md).
 
     + **Lejer-id** – gå til key vault'en på Azure-portalen, og vælg derefter **Oversigt** i den venstre navigationsrude, kopiér værdien for **Mappe-id**. Indsæt den værdi i dialogboksen **Konfigurer tilføjelsesprogram**.
     + **URI-adresse til IoT Event Hub-kompatibel slutpunkts-key vault** – gå til key vault'en, vælg **Oversigt** i den venstre navigationsrude, og kopiér værdien for **DNS-navn**. Indsæt den værdi i dialogboksen **Konfigurer tilføjelsesprogram**.
@@ -52,7 +52,7 @@ LCS-opsætning er nu fuldført. I det næste trin skal du konfigurere [scenarier
 
 ## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>Fjern tilføjelsesprogrammet
 
-1. I Supply Chain Management skal du [deaktivere scenarierne](iot-scenario-setup.md#how-to-disable-a-scenario).
+1. I Supply Chain Management skal du [deaktivere scenarierne](iot-scenario-setup.md#disable-a-scenario).
 2. I LCS skal du gå til Supply Chain Management-miljødetaljerne.
 3. Rul til sektionen **Tilføjelsesprogrammer for miljø**.
 4. Vælg **Fjern** for tilføjelsesprogrammet IoT-viden.

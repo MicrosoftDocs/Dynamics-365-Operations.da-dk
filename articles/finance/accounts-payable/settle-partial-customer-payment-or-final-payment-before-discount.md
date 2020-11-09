@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c378a424d89a884d1f3f0f14e1d544b3af178b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177042"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006109"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udlign en delvis debitorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
 
@@ -48,7 +48,7 @@ Fra siden **Debitor** eller **Debitorposteringer** Arne kan åbne siden **Udlign
 
 Rabatoplysninger for den markerede faktura vises nederst på siden **Udlign posteringer**.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/09/2015 |
 | Kasserabatbeløb         | 10,00     |
@@ -71,7 +71,7 @@ Debitor 4028 sender en betaling på 500,00 den 1. juli. For at angive denne beta
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Delvis betaling ved hjælp af kladdelinjer
-I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan Arnie klikke på **Linjer** for at angive en betaling. Udbetalingskladden vises, og Arnie kan angive en linje for debitor 4028. Arnie åbner derefter siden **Udlign posteringer**, så han kan markere fakturaen til udligning. Arnie markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **500,00**. Han ser igen, at værdien i feltet **Kasserabatbeløb** er **10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**. Arnie udligner derfor 505,05 af denne faktura.
+I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan Arnie klikke på **Linjer** for at angive en betaling. Udbetalingskladden vises, og Arnie kan angive en linje for debitor 4028. Arnie åbner derefter siden **Udlign posteringer** , så han kan markere fakturaen til udligning. Arnie markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **500,00**. Han ser igen, at værdien i feltet **Kasserabatbeløb** er **10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**. Arnie udligner derfor 505,05 af denne faktura.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -79,7 +79,7 @@ I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan 
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/09/2015 |
 | Kasserabatbeløb         | 10,00     |
@@ -95,7 +95,7 @@ Hvis debitoren ønsker at udligne præcist halvdelen af fakturaen, indsender deb
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/09/2015 |
 | Kasserabatbeløb         | 10,00     |
@@ -112,9 +112,9 @@ Arnie lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 49
 | DISC-10010 |  Kasserabat   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betaling af det resterende beløb
-Debitor 4028 betaler resten af beløbet på 495,00 den 8. juli, som er inden for kasserabatperioden. Arnie opretter betalingskladden den 8. juli og markerer posteringen til udligning. Han ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **5,00**, fordi rabatten på 5,00 blev medtaget tidligere.
+Debitor 4028 betaler resten af beløbet på 495,00 den 8. juli, som er inden for kasserabatperioden. Arnie opretter betalingskladden den 8. juli og markerer posteringen til udligning. Han ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **5,00** , fordi rabatten på 5,00 blev medtaget tidligere.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Afmærket i alt            | 495,00 |
 | Forkalkuleret kasserabat | 5,00   |
@@ -127,7 +127,7 @@ Oplysninger om den markerede postering vises i gitteret på siden **Udlign åbne
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/09/2015 |
 | Kasserabatbeløb         | 10,00     |

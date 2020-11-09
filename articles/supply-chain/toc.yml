@@ -1729,12 +1729,14 @@
                   href: procurement/tasks/create-repeat-purchase-order.md
                 - name: Oprette en forbrugsrekvisition
                   href: procurement/tasks/create-requisition-consumption.md
-            - name: Priser og rabatter
+            - name: 'Priser, tilbud og rabatter'
               items:
                 - name: Købsaftaler
                   href: procurement/purchase-agreements.md
                 - name: Oprette en købsaftale
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Automatisk fordeling af gebyrer
+                  href: procurement/automatic-charges-allocation.md
                 - name: Kreditorrabatter
                   href: procurement/vendor-rebates.md
                 - name: 'Fejlfinde priser, nedsættelser, aftaler og rabatter'
@@ -2041,6 +2043,14 @@
                       href: production-control/release-production-orders.md
                     - name: Færdigmelde produktionsordrer
                       href: production-control/report-production-orders-as-finished.md
+                    - name: Konfigurere og bruge grænsefladen til kørsel af produktion
+                      items:
+                        - name: Konfigurere og bruge grænsefladen til kørsel af produktion
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Konfigurere en enhed til at bruge grænsefladen til kørsel af produktion
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Sådan anvendes grænsefladen til kørsel af produktion
+                          href: production-control/production-floor-execution-use.md
                     - name: Konfigurer jobkort for enheder
                       href: production-control/config-job-card-device.md
                     - name: Færdigmelde fra jobkortenheden
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Sende salgsordrer uden lagerstyring
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Automatisk fordeling af gebyrer
+                  href: procurement/automatic-charges-allocation.md
                 - name: Oprette en indkøbsordre fra en salgsordre
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Oprette salgsordrer
@@ -2661,10 +2673,8 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Aktivere udskrivning af id-etiket
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Opret flytteordrer fra lagerstedsappen
+                    - name: Oprette flytteordrer fra lagerstedsappen
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Hændelsesbehandling af lagerstedsapp
-                      href: warehousing/warehouse-app-events.md
                     - name: Bekræftelse af stykplukning
                       href: warehousing/piece-picking-confirmation.md
                     - name: Emballage og gebyrer
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurere mobilenheder til lagerstedsarbejde
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Hændelsesbehandling af lagerstedsapp
+                      href: warehousing/warehouse-app-events.md
                     - name: Modtage id med lagerstedsapp
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre

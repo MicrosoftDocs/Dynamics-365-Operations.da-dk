@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8320c8aab82a39a8a5565e6b3e805e1065c67453
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986809"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016810"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidere forsendelser ved hjælp af panelet for forsendelseskonsolidering
 
@@ -31,7 +31,7 @@ Dette emne viser et scenarie, hvor der frigives flere ordrer til lagerstedet, hv
 
 ## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
+Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF** , før du går i gang.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Konfigurere politikker for forsendelseskonsolidering og produktfiltre
 
@@ -39,18 +39,18 @@ I det scenarie, der beskrives her, antages det, at du allerede har aktiveret fun
 
 ## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Slå funktionen til manuel forsendelseskonsolidering til
 
-Før du kan bruge funktionen *Manuel forsendelseskonsolidering*, skal du slå den til i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Manuel forsendelseskonsolidering* , skal du slå den til i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Manuel forsendelseskonsolidering*
 
-Som det blev nævnt i [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md), skal du også aktivere funktionen *Konsolider forsendelse*, før du kan oprette politikker. Du skal dog allerede have fuldført dette trin.
+Som det blev nævnt i [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md), skal du også aktivere funktionen *Konsolider forsendelse* , før du kan oprette politikker. Du skal dog allerede have fuldført dette trin.
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Oprette salgsordrer til dette scenarie
 
 Start med at oprette en samling salgsordrer, som du kan arbejde med. Du skal arbejde med et lagersted, der er aktiveret til avancerede lagerstedsprocesser. Medmindre der udtrykkeligt er angivet et andet lagersted, skal det samme lagersted anvendes til hvert af følgende sæt ordrer.
 
-Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgsordrer, der har de indstillinger, der er beskrevet i følgende underafsnit.
+Gå til **Debitor \> Ordrer \> Alle salgsordrer** , og opret en samling af salgsordrer, der har de indstillinger, der er beskrevet i følgende underafsnit.
 
 ### <a name="create-order-set-1"></a>Opret ordresæt 1
 
@@ -63,10 +63,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 #### <a name="sales-order-1-3"></a>Salgsordre 1-3
 
@@ -77,17 +77,17 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 1. Tilføj en anden ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0002* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0002* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
     - **Leveringsmåde:** *Airwa-Air*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere den anden ordrelinje.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere den anden ordrelinje.
 
 ### <a name="create-order-set-2"></a>Opret ordresæt 2
 
@@ -100,17 +100,17 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *M9200* (en vare, hvor filtret **Kode 4** er indstillet til *Brændbar*)
+    - **Varenummer:** *M9200* (en vare, hvor filtret **Kode 4** er indstillet til *Brændbar* )
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 1. Tilføj en anden ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *M9201* (en vare, hvor filtret **Kode 4** er indstillet til *Eksplosiv*)
+    - **Varenummer:** *M9201* (en vare, hvor filtret **Kode 4** er indstillet til *Eksplosiv* )
     - **Antal:** *1.00*
     - **Leveringsmåde:** *Airwa-Air*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere den anden ordrelinje.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere den anden ordrelinje.
 
 ### <a name="create-order-set-3"></a>Opret ordresæt 3
 
@@ -123,10 +123,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 #### <a name="sales-orders-3-3-and-3-4"></a>Salgsordrer 3-3 og 3-4
 
@@ -137,10 +137,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 ### <a name="create-order-set-4"></a>Opret ordresæt 4
 
@@ -152,10 +152,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 #### <a name="sales-orders-4-3-and-4-4"></a>Salgsordrer 4-3 og 4-4
 
@@ -165,10 +165,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 #### <a name="sales-orders-4-5-and-4-6"></a>Salgsordrer 4-5 og 4-6
 
@@ -181,10 +181,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 #### <a name="sales-orders-4-7-and-4-8"></a>Salgsordrer 4-7 og 4-8
 
@@ -197,10 +197,10 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 ## <a name="release-the-orders-to-the-warehouse"></a>Frigive ordrerne til lagerstedet
 

@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c14fb92103fdd3c32ebc287a74a5dc4f4882b0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981939"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016487"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
 
@@ -56,12 +57,12 @@ I dette emne beskrives, hvordan du konfigurerer en enkel lokationsvejledning. De
     - Enhedsopdelt antal: Hele den mængde, der er blevet registreret.  
     - Resterende antal: Den mængde, der er endnu ikke er registreret fra indkøbsordrelinjen.  
     - Forventet mængde: Den samlede mængde, der er angivet på indkøbsordrelinjen.  
-6. Markér eller fjern markeringen af afkrydsningsfeltet **Begræns efter enhed**. Hvis du vælger denne indstilling og angiver enheden på siden **Begræns efter enhed**, kan kun varer med denne måleenhed placeres på lokaliteten. Hvis måleenheden f.eks. er PL (paller), kan kun elementer på paller placeres på en bestemt lokalitet.  
+6. Markér eller fjern markeringen af afkrydsningsfeltet **Begræns efter enhed**. Hvis du vælger denne indstilling og angiver enheden på siden **Begræns efter enhed** , kan kun varer med denne måleenhed placeres på lokaliteten. Hvis måleenheden f.eks. er PL (paller), kan kun elementer på paller placeres på en bestemt lokalitet.  
 7. Markér eller fjern markeringen af afkrydsningsfeltet **Tillad opdeling**. Dette muliggør, at vejledningen opdeler mængden på flere lokaliteter.  
 8. Vælg **Gem**.
 
 ## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Begræns vejledningslinjen til en bestemt enhed
-1. Vælg **Begræns efter enhed**. Denne knap er kun tilgængelig, når du trykker på **Gem**, efter at du har markeret afkrydsningsfeltet **Begræns efter enhed**.  
+1. Vælg **Begræns efter enhed**. Denne knap er kun tilgængelig, når du trykker på **Gem** , efter at du har markeret afkrydsningsfeltet **Begræns efter enhed**.  
 2. I feltet **Enhed** skal du angive en værdi.
 3. Luk siden.
 

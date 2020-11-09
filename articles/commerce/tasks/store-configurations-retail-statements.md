@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57081b9e737373641cd9d884919d03dcf62a2ffe
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140649"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107392"
 ---
 # <a name="store-configurations-for-retail-statements"></a>Gemme konfigurationer for detailopgørelser
 
@@ -30,13 +30,13 @@ ms.locfileid: "3140649"
 
 Denne procedure viser konfigurationer for butikken, der påvirker, hvordan Commerce-opgørelser oprettes og bogføres. Økonomiske dimensioner i butikker er omfattet af en anden procedure. Denne procedure bruger demofirmaet USRT.
 
-1. I **navigationsruden** skal du gå til **Moduler > Retail og Commerce > Kanaler > Butikker > Alle butikker**.
+1. Gå til **Moduler > Retail og Commerce > Kanaler > Butikker > Alle butikker** i **Navigationsrude**.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
 4. Klik på **Rediger**.
 5. Indstillingerne i oversigtspanelet **Opgørelse/ultimo** påvirker oprettelse, validering og bogføring af opgørelsen for butikken. Udvid oversigtspanelet **Opgørelse/ultimo**.  
 6. I feltet **Opgørelse/ultimo** skal du vælge den metode, du vil bruge til at gruppere linjerne i opgørelsen efter.  
-7. Vælg "Ja" i **Én opgørelse pr. dag**, hvis der kun skal oprettes én opgørelse pr. dag, når der oprettes opgørelser fra batchjobbet til oprettelse af opgørelser.  
+7. Vælg "Ja" i **Én opgørelse pr. dag** , hvis der kun skal oprettes én opgørelse pr. dag, når der oprettes opgørelser fra batchjobbet til oprettelse af opgørelser.  
 8. Feltet **Beregning af kasseoptælling** definerer, om kasseoptællinger skal lægges sammen, eller om den sidste skal bruges.  
 9. I feltet **Afrunding** skal du vælge finanskontoen, som afrundingsdifferencer skal bogføres på.  
 10. I feltet **Maksimal afrundingsdifference** skal du angive den afrundingsdifference, der maksimalt tillades.
@@ -45,7 +45,7 @@ Denne procedure viser konfigurationer for butikken, der påvirker, hvordan Comme
 13. I feltet **Transaktion** skal du angive den maksimale samlede difference på en linje i opgørelsen.  
 14. I feltet **Lukkemetode** skal du definere, om transaktioner, der skal medtages i en opgørelse, skal være en del af et lukket skift, eller om de kan være alle transaktioner inden for det definerede interval for dato/klokkeslæt.  
 15. I feltet **Afslutning på forretningsdag** skal du angive et tidspunkt, hvis transaktioner, der foregår efter midnat, skal bogføres med et tidspunkt den foregående dag.  
-16. Vælg "Ja" i **Bogfør som arbejdsdag**, hvis transaktioner, der foregår efter midnat, skal bogføres som en del af den foregående dag.  
-17. Vælg "Ja" i **Opdel efter opgørelsesmetode** for at få oprettet opgørelser for hver defineret opgørelsesmetoden. Dette kan være nyttigt, hvis bogføringens ydeevne skal forbedres for butikker med store transaktionsmængder, da den opretter mange mindre opgørelser, som kan behandles parallelt.  
+16. Vælg "Ja" i **Bogfør som arbejdsdag** , hvis transaktioner, der foregår efter midnat, skal bogføres som en del af den foregående dag.  
+17. Vælg "Ja" i **Opdel efter opgørelsesmetode** for at få oprettet opgørelser for hver defineret opgørelsesmetoden. Denne handling kan være nyttig, hvis bogføringens ydeevne skal forbedres for butikker med store transaktionsmængder, da den opretter mange mindre opgørelser, som kan behandles parallelt.  
 18. I feltet **Standardkunde** i oversigtspanelet **Generelt** skal du vælge den debitorkonto, der skal bruges til salg til kunder, der kommer ind fra gaden.  
 

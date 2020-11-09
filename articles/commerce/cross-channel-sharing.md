@@ -3,7 +3,7 @@ title: Aktivere og bruge deling på tværs af kanaler
 description: Dette emne beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5dad866250bc57a9b158ee73948da509ecccd52c
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974073"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019512"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruge deling på tværs af kanaler
 
@@ -59,7 +59,7 @@ Når du har aktiveret deling på tværs af kanaler, vises oplysninger om tværka
 
 ![Kanaloplysninger, der er synlige, efter at deling på tværs af kanaler er aktiveret](./media/channels-cross-channel.png)
 
-Når du har aktiveret deling via flere kanaler, vil feltet **Kanal** i øverste højre hjørne af Commerce-webstedsgenerator medtage en **Onlinebutik på tværs af kanaler**, som du kan bruge til at administrere krydskanalindhold som vist i følgende illustration.
+Når du har aktiveret deling via flere kanaler, vil feltet **Kanal** i øverste højre hjørne af Commerce-webstedsgenerator medtage en **Onlinebutik på tværs af kanaler** , som du kan bruge til at administrere krydskanalindhold som vist i følgende illustration.
 
 ![Indstillingen Onlinebutik på tværs af kanaler i feltet Kanaler, efter at deling på tværs af kanaler er aktiveret](./media/cross-channel-dropdown.png)
 
@@ -71,27 +71,27 @@ Du kan oprette og bruge indhold på tværs af kanaler på flere måder. Du kan f
 
 Udfør følgende trin for at oprette et krydskanalfragment i Commerce-webstedsgenerator.
 
-1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. Vælg modulet **Kampagnebanner** i dialogboksen **Nyt side fragment**, og angiv derefter et navn underside **Sidefragmentets navn** (f.eks. **Banner på tværs af kanaler**). Vælg derefter **OK**.
-1. Vælg **Tilføj meddelelse** i ruden Egenskaber i modulet **Kampagnebanner**, og vælg derefter **Meddelelse**.
-1. Angiv **Krydskanal** under **Tekst** i dialogboksen **Meddelelse**, og vælg **OK**. 
-1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Fragmenter** , og vælg **Nyt** for at oprette et nyt fragment.
+1. Vælg modulet **Kampagnebanner** i dialogboksen **Nyt fragment** , og angiv derefter et navn under **Fragmentnavn** (f.eks. **Banner på tværs af kanaler** ). Vælg derefter **OK**.
+1. Vælg **Tilføj meddelelse** i ruden Egenskaber i modulet **Kampagnebanner** , og vælg derefter **Meddelelse**.
+1. Angiv **Krydskanal** under **Tekst** i dialogboksen **Meddelelse** , og vælg **OK**. 
+1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 Dette krydskanalfragment kan bruges på krydskanal- eller kanalspecifikke sider, der oprettes på en webstedskanal.
 
 ### <a name="create-a-cross-channel-page-that-uses-cross-channel-content"></a>Oprette en side på tværs af kanaler, der bruger krydskanalindhold
 
-Sider på tværs af kanaler kan bruges på en hvilken som helst kanal på dit websted. Du kan derfor oprette en side med delt indhold én gang og foretage efterfølgende opdateringer på et enkelt sted. En side med **Vilkår og betingelser** for krydskanal , der har URL-adressen `/toc`, kan f.eks. deles mellem alle kanalerne på et websted. Hvis basis-URL-adresserne for stedkanalerne er `www.fabrikam.com/brand1` og `www.fabrikam.com/brand2`, vil den samme krydskanals delte **Vilkår og betingelser**-side være tilgængelige fra både URL-adresser på `www.fabrikam.com/brand1/toc` og `www.fabrikam.com/brand2/toc`. Hvis siden **Vilkår og betingelser** skal opdateres senere, skal du kun opdatere den ene delte side.
+Sider på tværs af kanaler kan bruges på en hvilken som helst kanal på dit websted. Du kan derfor oprette en side med delt indhold én gang og foretage efterfølgende opdateringer på et enkelt sted. En side med **Vilkår og betingelser** for krydskanal , der har URL-adressen `/toc`, kan f.eks. deles mellem alle kanalerne på et websted. Hvis basis-URL-adresserne for stedkanalerne er `www.fabrikam.com/brand1` og `www.fabrikam.com/brand2`, vil den samme krydskanals delte **Vilkår og betingelser** -side være tilgængelige fra både URL-adresser på `www.fabrikam.com/brand1/toc` og `www.fabrikam.com/brand2/toc`. Hvis siden **Vilkår og betingelser** skal opdateres senere, skal du kun opdatere den ene delte side.
 
 Hvis du vil oprette en side til flere kanaler i Commerce-webstedsgenerator, der bruger indhold på tværs af kanaler, skal du følge disse trin.
 
-1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. Gå til **Sider** , og vælg **Ny** for at oprette en ny side.
 1. I dialogboksen **Vælg en skabelon** skal du vælge en skabelon som f.eks. **Marketing**.
-1. Under **Sidenavn** skal du angive et sidenavn (f.eks. **Krydskanalside**).
-1. Angiv en URL-adresse til siden under **Sidens URL-adresse** (f.eks. **examplepage**), og vælg derefter **OK**.
-1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj fragment**.
-1. Vælg det krydskanalfragment, du har oprettet tidligere, og som har et kampagnebanner, i dialogboksen **Tilføj fragment**, og vælg derefter **OK**.
-1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Du skulle kunne se kampagnebanneret "Krydskanal".
+1. Under **Sidenavn** skal du angive et sidenavn (f.eks. **Krydskanalside** ).
+1. Angiv en URL-adresse til siden under **Sidens URL-adresse** (f.eks. **examplepage** ), og vælg derefter **OK**.
+1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen ( **...** ), og vælg derefter **Tilføj fragment**.
+1. Vælg det krydskanalfragment, du har oprettet tidligere, og som har et kampagnebanner, i dialogboksen **Tilføj fragment** , og vælg derefter **OK**.
+1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden. Du skulle kunne se kampagnebanneret "Krydskanal".
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ### <a name="create-a-channel-specific-page-that-uses-cross-channel-content"></a>Oprette en kanalspecifik side, der bruger krydskanalindhold
@@ -100,13 +100,13 @@ Ved at bruge krydskanalindhold på kanalspecifikke sider kan du oprette et delt 
 
 Hvis du vil oprette en kanalspecifik side i Commerce-webstedsgenerator, der bruger indhold på tværs af kanaler, skal du følge disse trin.
 
-1. I en bestemt kanal, f.eks. **Fabrikam-udvidet onlinebutik**, skal du gå til **Sider** og derefter vælge **Ny** for at oprette en ny side.
+1. I en bestemt kanal, f.eks. **Fabrikam-udvidet onlinebutik** , skal du gå til **Sider** og derefter vælge **Ny** for at oprette en ny side.
 1. I dialogboksen **Vælg en skabelon** skal du vælge en skabelon som f.eks. **Marketing**.
-1. Under **Sidenavn** skal du angive et sidenavn (f.eks. **Kanalspecifik side**).
-1. Angiv en URL-adresse til siden under **Sidens URL-adresse** (f.eks. **channelspecificpage**), og vælg derefter **OK**.
-1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj fragment**.
+1. Under **Sidenavn** skal du angive et sidenavn (f.eks. **Kanalspecifik side** ).
+1. Angiv en URL-adresse til siden under **Sidens URL-adresse** (f.eks. **channelspecificpage** ), og vælg derefter **OK**.
+1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen ( **...** ), og vælg derefter **Tilføj fragment**.
 1. Vælg **Onlinebutik på tværs af kanaler** under **Kanal** i dialogboksen **Tilføj fragment**. Det krydskanalfragment, du har oprettet tidligere, vises på listen. Vælg det, og vælg derefter **OK**.
-1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Du skulle kunne se kampagnebanneret "Krydskanal".
+1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden. Du skulle kunne se kampagnebanneret "Krydskanal".
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ### <a name="create-a-channel-specific-version-of-a-cross-channel-page"></a>Oprette en kanalspecifik version af en krydskanalside
@@ -119,11 +119,11 @@ Hvis du vil oprette en kanalspecifik version af en krydskanalside i Commerce-web
 1. Åbn den krydskanalside, du har oprettet tidligere.
 1. Vælg den kanal, der skal have specifikt indhold, i feltet **Kanal** øverst til højre. I sideeditoren vises en meddelelse, hvor du bliver bedt om at oprette en ny sidevariant.
 1. Vælg **Opret sidevariant**.
-1. På pladsen **Hoved** på sidevarianten skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. På pladsen **Hoved** på sidevarianten skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Kampagnebanner** og derefter **OK**.
-1. Vælg **Tilføj meddelelse** i ruden Egenskaber i modulet **Kampagnebanner**, og vælg derefter **Meddelelse**.
-1. Angiv **Kanalspecifik** under **Tekst** i dialogboksen **Meddelelse**, og vælg **OK**.
-1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden. Du skulle kunne se kampagnebanneret "Kanalspecifik".
+1. Vælg **Tilføj meddelelse** i ruden Egenskaber i modulet **Kampagnebanner** , og vælg derefter **Meddelelse**.
+1. Angiv **Kanalspecifik** under **Tekst** i dialogboksen **Meddelelse** , og vælg **OK**.
+1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden. Du skulle kunne se kampagnebanneret "Kanalspecifik".
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 Hvis du nu bruger kanalens grundlæggende URL-adresse og går til URL-adressen for krydskanalsiden på det pågældende websted, vises det kanalspecifikke indhold i stedet for krydskanalindholdet.

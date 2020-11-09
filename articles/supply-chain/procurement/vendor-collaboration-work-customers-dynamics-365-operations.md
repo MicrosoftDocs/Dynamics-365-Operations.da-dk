@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207341"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018143"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
@@ -40,9 +40,9 @@ Kreditorer kan også overvåge oplysninger om konsignationslager.
 
 ## <a name="working-with-pos-in-the-purchase-order-confirmation-workspace"></a>Arbejde med IO'er i arbejdsområdet Indkøbsordrebekræftelse
 
-I **Indkøbsordrebekræftelse**-arbejdsområdet kan du reagere på de indkøbsordrer, der er sendt til gennemsyn. Det gør det også muligt at få vist oplysninger om indkøbsordrer, der afventer handling fra kunden, og indkøbsordrer, der er blevet bekræftet, men stadig er åbne.
+I **Indkøbsordrebekræftelse** -arbejdsområdet kan du reagere på de indkøbsordrer, der er sendt til gennemsyn. Det gør det også muligt at få vist oplysninger om indkøbsordrer, der afventer handling fra kunden, og indkøbsordrer, der er blevet bekræftet, men stadig er åbne.
 
-Der findes tre lister i **Indkøbsordrebekræftelse**-arbejdsområdet:
+Der findes tre lister i **Indkøbsordrebekræftelse** -arbejdsområdet:
 
 - **Indkøbsordrer til gennemsyn** – Denne liste viser IO'er, der er blevet sendt til dig og afventer en reaktion fra dig. Når du har reageret, forsvinder IO'en fra listen. Hvis kunden sender dig en ny version af indkøbsordren, før du har reageret på den foregående, vises kun den nyeste version.
 - **Afventer kundehandling** – På denne liste kan du se alle indkøbsordrer, du har reageret på, men som kunden endnu ikke har bekræftet. Hvis du accepterer en indkøbsordre, kan du overvåge den på denne liste, indtil status er skiftet til **Bekræftet**. Hvis du afviser en indkøbsordre eller accepterer den med ændringer, kan du overvåge den her, indtil kunden sender en ny version.
@@ -59,11 +59,11 @@ Du kan bruge følgende sider til at arbejde med indkøbsordrer:
 
 De indkøbsordrer, som debitoren sender dig til gennemsyn, vises i arbejdsområdet **Indkøbsordrebekræftelse** og på siden **Indkøbsordrer til gennemsyn**. Når du åbner en indkøbsordre, kan du acceptere den, afvise den eller acceptere den med ændringer. Der kan evt. være vedhæftede filer på indkøbsordren eller på de enkelte linjer. Du kan også tilknytte oplysninger til dit svar i indkøbsordrens hoved eller på de enkelte linjer. For eksempel kan du foreslå en erstatningsvare for en eller flere linjer.
 
-Du kan se og udskrive indkøbsordren som en PDF-fil ved hjælp af **Vis/Udskriv**-indstillingen. Du kan også bruge handlingen **Vis dimensioner** til at skjule eller vise følgende dimensionskolonner: **Sted**, **Lagersted**, **Farve**, **Størrelse**, **Typografi** og **Konfiguration**. 
+Du kan se og udskrive indkøbsordren som en PDF-fil ved hjælp af **Vis/Udskriv** -indstillingen. Du kan også bruge handlingen **Vis dimensioner** til at skjule eller vise følgende dimensionskolonner: **Sted** , **Lagersted** , **Farve** , **Størrelse** , **Typografi** og **Konfiguration**. 
 
-Hvis du bruger muligheden **Acceptér med ændringer**, kan du acceptere eller afvise individuelle linjer. Du kan også foretage følgende ændringer af linjer:
+Hvis du bruger muligheden **Acceptér med ændringer** , kan du acceptere eller afvise individuelle linjer. Du kan også foretage følgende ændringer af linjer:
 
-- Ændre datoer eller antal. Hvis du vil opdatere den bekræftede leveringsdato på alle linjer, skal du bruge **Opdater leveringsdato**-indstillingen i indkøbsordrens hoved.
+- Ændre datoer eller antal. Hvis du vil opdatere den bekræftede leveringsdato på alle linjer, skal du bruge **Opdater leveringsdato** -indstillingen i indkøbsordrens hoved.
 - Opdel linjer for forskellige leveringsdatoer eller antal.
 - Erstat en vare. I sektionen **Linjedetaljer** kan du angive en varebeskrivelse og varenummeret i feltet **Ekstern**.
 
@@ -124,13 +124,13 @@ Personer, der arbejder i den offentlige sektor, kan åbne og se udløbne tilbuds
 - Vælg **Nulstil fra tilbudsanmodning** for at nulstille de data, du har angivet for et bud og vende tilbage til den oprindelige tilbudsanmodning. Du kan nulstille hovedet eller linjen.
 - Vælg **Tilføj alternativ** eller **Fjern alternativ** i linjegitteret for at arbejde med alternativer.
 
-    Nogle tilbudsanmodninger giver mulighed for alternative bud. Du kan kun angive alternative bud for linjer af typen **Kategori**, fordi bestemte varer ikke kan tilføjes som alternativer. 
+    Nogle tilbudsanmodninger giver mulighed for alternative bud. Du kan kun angive alternative bud for linjer af typen **Kategori** , fordi bestemte varer ikke kan tilføjes som alternativer. 
 
 - Vælg **Vedhæftet fil i tilbudsanmodning** eller **Tilbudsanmodningslinjer i vedhæftede filer** for at åbne en vedhæftet fil, som kunden har føjet til en tilbudsanmodning. Vælg **Bud i vedhæftede filer** eller **Budlinjer i vedhæftede filer** for at overføre vedhæftede filer sammen med buddet.
 
     Der kan være spørgeskemaer, som du skal besvare, før du kan sende et bud.
 
-- Vælg **Afvis**, hvis du ikke vil byde. Når du har valgt **Afvis**, kan du ikke tilbagekalde handlingen og afgive et bud.
+- Vælg **Afvis** , hvis du ikke vil byde. Når du har valgt **Afvis** , kan du ikke tilbagekalde handlingen og afgive et bud.
 
 Hvis en tilbudsanmodning ændres, skal du angive et nyt bud. Du kan finde oplysninger om ændringen under fanen **Ændringer** på siden Tilbudsanmodning. Ændrede tilbudsanmodninger vises på siden **Invitationer til nyt bud**.
 

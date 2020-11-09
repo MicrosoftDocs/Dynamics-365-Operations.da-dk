@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 336fb51dc5fb66dfbe14091d121e0a4471b9662b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978887"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006253"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -74,7 +74,7 @@ Du kan oprette et tilbud med følgende linjer:
 
 I følgende tabel vises tilbudslinjerne.
 
-|                            | Kalkulation                          | Resultat   |
+|    &nbsp;                  | Kalkulation                          | Resultat   |
 |----------------------------|--------------------------------------|----------|
 | Salgsantal             | 10 stk. + 12 stk.                  | 22 stk. |
 | Salgsværdi i USD         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
@@ -84,7 +84,7 @@ I følgende tabel vises tilbudslinjerne.
 
 Du kører en prissimulering og yder en samlet rabat på 15 procent på hele tilbuddet eller tilbudshovedet. I følgende tabel vises de nye samlede beløb for tilbuddet efter kørsel af prissimuleringen.
 
-|                                                      | Kalkulation                               | Resultat   |
+|     &nbsp;                                           | Kalkulation                               | Resultat   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | Salgsantal                                       | 10 stk. + 12 stk.                       | 22 stk. |
 | Oprindelig salgsværdi i USD                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
@@ -105,7 +105,7 @@ Du kan oprette et tilbud med følgende linjer:
 
 I følgende tabel vises tilbudslinjerne.
 
-|                                      | Kalkulation                          | Resultat   |
+|      &nbsp;                          | Kalkulation                          | Resultat   |
 |--------------------------------------|--------------------------------------|----------|
 | Salgsantal                       | 10 stk. + 12 stk.                  | 22 stk. |
 | Salgsværdi i USD for BR-12         | 10 × 15,32                           | 153,20   |
@@ -123,7 +123,7 @@ I følgende tabel vises tilbudslinjerne.
 
 Du kører en prissimulering og yder en samlet rabat på 10 procent på BR-12-enheder. I følgende tabel vises de nye samlede beløb for tilbuddet efter kørsel af prissimuleringen for det enkelte linjeelement.
 
-|                                                   | Kalkulation                             | Resultat   |
+|    &nbsp;                                         | Kalkulation                             | Resultat   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | Salgsantal                                    | 10 stk. + 12 stk.                     | 22 stk. |
 | Oprindelig salgsværdi i USD for BR-12                  | 10 × 15,32                              | 153,20   |

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCrossDockOpportunityPolicy
+ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c47cb24e8fb14a46ee663ab9cf75679acdb6384
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211555"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016833"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross-docking fra produktionsordrer til forsendelsesområder
 
@@ -86,7 +86,7 @@ I **politik for cross-docking** definerer du, hvilke dokumenttyper der kan anven
 
 ### <a name="cross-docking-policy"></a>Politik for cross-docking
 
-Politikken for cross-docking angiver også politikken for prioriteringen af flytteordrebehov. Hvis der findes flere flytteordrer for samme produkt, bestemmer den planlagte dato og klokkeslæt, der er angivet for belastningen, og som er knyttet til flytteordren, prioriteringen af ordrerne. Planlagt dato og klokkeslæt kan angives direkte på belastningen, eller det kan angives på en **aftaletidsplan**, der er tilknyttet belastningen. Prioriteringen bestemmes af den cross-docking-strategien. Der er i øjeblikket kun én strategi: **Dato og klokkeslæt**.
+Politikken for cross-docking angiver også politikken for prioriteringen af flytteordrebehov. Hvis der findes flere flytteordrer for samme produkt, bestemmer den planlagte dato og klokkeslæt, der er angivet for belastningen, og som er knyttet til flytteordren, prioriteringen af ordrerne. Planlagt dato og klokkeslæt kan angives direkte på belastningen, eller det kan angives på en **aftaletidsplan** , der er tilknyttet belastningen. Prioriteringen bestemmes af den cross-docking-strategien. Der er i øjeblikket kun én strategi: **Dato og klokkeslæt**.
 
 ### <a name="cross-docking-demand-requires-location"></a>Cross-docking-behov kræver lokation
 
@@ -96,14 +96,14 @@ I politikken for cross-docking kan du angive et kriterium, så flytteordrer skal
 
 Når et produkt er færdigmeldt på produktionslinjen, flyttes det til en lagerportplacering, hvor det lastes på en truck og overføres til et distributionscenter. Brug firma-USMF.
 
-1.  Aktivér en ny nummerserie til cross-docking. Gå til siden **Nummerserier**, og vælg knappen **Generér**. En guide hjælper dig gennem processen.
-2.  Opret en politik for cross-docking. Gå til siden **Politik for cross-docking**, og opret en ny politik med navnet **Cross-docking til flytteordre**. Bemærk, at den eneste arbejdsordretype, som du kan vælge, er **Flytteafgang**, og den eneste tilgængelige cross-docking-strategi er **Dato og klokkeslæt**.
-3.  Opret en arbejdspolitik. Gå til siden **Arbejdspolitikker**, og opret en ny arbejdspolitik med navnet **Direkte levering L0101**.
+1.  Aktivér en ny nummerserie til cross-docking. Gå til siden **Nummerserier** , og vælg knappen **Generér**. En guide hjælper dig gennem processen.
+2.  Opret en politik for cross-docking. Gå til siden **Politik for cross-docking** , og opret en ny politik med navnet **Cross-docking til flytteordre**. Bemærk, at den eneste arbejdsordretype, som du kan vælge, er **Flytteafgang** , og den eneste tilgængelige cross-docking-strategi er **Dato og klokkeslæt**.
+3.  Opret en arbejdspolitik. Gå til siden **Arbejdspolitikker** , og opret en ny arbejdspolitik med navnet **Direkte levering L0101**.
 4.  Konfigurer belastninger, så de oprettes automatisk for flytteordrer. Konfigurer belastninger i lagerstedsparametre, så de oprettes automatisk, når der oprettes flytteordrer. En belastning er en forudsætning for at gøre flytteordren berettiget til cross-docking.
-5.  Konfigurer tilknytningen af varelast. Gå til siden **Tilknytning af varelast**, og opret en standardbelastningsskabelon for varegruppen **CarAudio**. Denne tilknytning indsætter automatisk belastningsskabelonen på belastningen, når flytteordren er oprettet.
+5.  Konfigurer tilknytningen af varelast. Gå til siden **Tilknytning af varelast** , og opret en standardbelastningsskabelon for varegruppen **CarAudio**. Denne tilknytning indsætter automatisk belastningsskabelonen på belastningen, når flytteordren er oprettet.
 6.  Opret en flytteordre. Opret flytteordre for varenummer L0101. Antal = 20.
 7.  Frigiv flytteordren fra lastplanlægningspanelet. Under fanen **Send** skal du vælge menupunktet for lastplanlægningspanelet, og i menuen **Frigiv** på belastningslinjen skal du vælge **Frigiv til lagersted**. Der findes nu en åben bølgelinje af typen **Flytteafgang** for flytteordren.
-8.  Opret en produktionsordre. Gå til listesiden **Produktionsordren**, og opret en produktionsordre for produktet L0101. Antal = 20. Estimer og start produktionsordren. Bemærk, at feltet **Bogfør plukliste nu** forbliver indstillet til **Nej**.
+8.  Opret en produktionsordre. Gå til listesiden **Produktionsordren** , og opret en produktionsordre for produktet L0101. Antal = 20. Estimer og start produktionsordren. Bemærk, at feltet **Bogfør plukliste nu** forbliver indstillet til **Nej**.
 9.  Færdigmeld fra mobilenheden. Gå til mobilenhedsportalen, og vælg menupunktet **Færdigmeld, og læg på lager**. Færdigmeld nu L0101 fra den håndholdte enhed. Antal = 10. Bemærk, at læg på lager-lokationen er **BAYDOOR**. Denne placering findes i lokationsvejledningen **Flytteafgang** for arbejdsordretypen **Læg på lager**. Bemærk også arbejde af typen **Flytteafgang** er oprettet og fuldført. Gå til flytteordrens arbejdsdetaljer for at kontrollere arbejdet.
 10. Rapportér nu yderligere 10 styk fra mobileenheden. Bemærk, at læg på lager-lokationen igen er **BAYDOOR**. Bemærk også, at en ny arbejdstype **Flytteafgang** er oprettet for de 10 styk.
 11. Prøv nu at starte 20 styk yderligere på produktionsordren, og prøv derefter at færdigmelde 20 styk ved hjælp af den håndholdte enhed. Denne gang foreslås **LP-001** som læg på lager-sted. Denne placering kan findes i lokationsvejledningen for **Færdige varer, læg på lager**. Lokationsvejledningen bruges, fordi der ikke findes nogen mulighed for salgsmulighed. Flytteordren for LP-001 blev fuldstændig opfyldt i de to første cross-docking-aktiviter i trin 9 og 10. Bemærk, at arbejde af typen **Færdige varer, læg på lager** blev oprettet og behandlet.
@@ -117,7 +117,7 @@ Når et produkt er færdigmeldt på produktionslinjen, overføres det til en lag
 3.  Åbn **Panelet Lastplanlægning**.
 4.  Fra panelet Lastplanlægning skal du gå til afsnittet **Laster** og vælge **Aftaletidsplan** i menuen **Transport** for at oprette en ny aftaletidsplan. Bemærk, at aftaletidsplanen har en henvisning til flytteordren i feltet **Ordrenummer**. I feltet **Planlagt startdato/-klokkeslæt på lokationen** kan du angive dato og klokkeslæt for aftalen. Datoen og klokkeslættet bliver brugt, når cross-docking-behovet prioriteres under cross-docking-processen. Den dato og det klokkeslæt, du angiver i dette felt, opdaterer feltet **Dato og klokkeslæt for den planlagte forsendelse af lasten** på den tilsvarende belastning. Lokationen i oversigtspanelet **Forsendelsesdetaljer** bestemmer, hvilket sted flytteordren leveres på.
 5.  På **Panelet Lastplanlægning** frigivelse til lagerstedet.
-6.  Opret en produktionsordre for varenummer **L0101**, og indstil status til **Startet** med et antal på 20.
+6.  Opret en produktionsordre for varenummer **L0101** , og indstil status til **Startet** med et antal på 20.
 7.  Færdigmeld fra mobilenheden.
 8.  Gå til mobilenhedsportalen, og vælg menupunktet **Færdigmeld, og læg på lager**.
 9.  Færdigmeld varenummer **L0101** fra den håndholdte enhed. Bemærk, at læg på lager-lokationen nu er **BAYDOOR 2**. Denne placering findes i aftaletidsplanen i stedet for i lokationsvejledningen **Tilgang for overførsel**.

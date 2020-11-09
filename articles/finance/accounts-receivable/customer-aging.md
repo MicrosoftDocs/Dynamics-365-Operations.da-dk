@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974855"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013047"
 ---
 # <a name="customer-aging-report"></a>Aldersfordelt saldoliste for kunder 
 
@@ -115,8 +115,9 @@ Når du opretter denne rapport, vises følgende standardparametre. Du kan bruge 
 <tr class="even">
 <td><p><strong>Udskriftsretning</strong></p></td>
 <td><p>Vælg, om saldi skal beregnes, og forældelsesrapporten skal udskrives for tidligere eller fremtidige perioder. Datoerne evalueres i forhold til den dato, der er valgt i feltet <strong>Saldo som på</strong>. Vælg <strong>Bagud</strong> for at få vist oplysninger om tidligere perioder. Vælg <strong>Fremad</strong> for at få vist oplysninger om fremtidige perioder.</p>
-
-**Bemærk:** De oplysninger, du angiver i dette felt, bruges kun, hvis du ikke har valgt en definition for forældelsesperiode.</P>
+<div class="alert">
+  
+<STRONG>Bemærk:</STRONG> De oplysninger, du angiver i dette felt, bruges kun, hvis du ikke har valgt en definition for forældelsesperiode.</P>
 
 
 </div></td>

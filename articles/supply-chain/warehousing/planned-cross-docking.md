@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: ae805d9aac790a1a58478cf54d033ce758c5eca3
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530092"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017753"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -35,7 +36,7 @@ Før cross-docking kan køres, skal brugeren konfigurere en ny cross-docking/ska
 På tidspunktet for modtagelse af indgående ordrer identificerer opsætningen af cross-docking automatisk behovet for cross-docking og opretter bevægelsesarbejdet for den ønskede mængde på basis af opsætningen af lokationsvejledningen.
 
 > [!NOTE]
-> Registreringen af lagertransaktioner annulleres **ikke**, når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
+> Registreringen af lagertransaktioner annulleres **ikke** , når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
 
 ## <a name="turn-on-the-planned-cross-docking-feature"></a>Slå funktionen til planlagt cross-docking til
 
@@ -88,11 +89,11 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
     - **Valider ved modtagelse af forsyning:** *Nej*
 
-        Denne indstilling angiver, om forsyningen skal valideres igen under modtagelsen. Hvis denne indstilling er angivet til *Ja*, kontrolleres både det maksimale tidsinterval og udløbsintervallet i dage.
+        Denne indstilling angiver, om forsyningen skal valideres igen under modtagelsen. Hvis denne indstilling er angivet til *Ja* , kontrolleres både det maksimale tidsinterval og udløbsintervallet i dage.
 
     - **Valider tidsvindue:** *Ja*
 
-        Denne indstilling angiver, om det maksimale tidsvindue skal evalueres, når der er valgt en forsyningskilde. Hvis denne indstilling er angivet til *Ja*, bliver de felter, der er relateret til de maksimale og minimale tidsvinduer, tilgængelige.
+        Denne indstilling angiver, om det maksimale tidsvindue skal evalueres, når der er valgt en forsyningskilde. Hvis denne indstilling er angivet til *Ja* , bliver de felter, der er relateret til de maksimale og minimale tidsvinduer, tilgængelige.
 
     - **Maksimalt tidsvindue:** *5*
 
@@ -108,7 +109,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
         *FEFO-kriterier (First expiry first out):* Dette felt definerer det maksimale antal dage mellem udløbsdatoen for batchen med den første udløbsdato, der aktuelt findes på lagerstedet, og den batch, der modtages.
 
-1. I oversigtspanelet **Forsyningskilder** angiver du de typer forsyning, der er gældende for denne skabelon. Vælg **Ny**, og vælg derefter følgende værdier:
+1. I oversigtspanelet **Forsyningskilder** angiver du de typer forsyning, der er gældende for denne skabelon. Vælg **Ny** , og vælg derefter følgende værdier:
 
     - **Løbenummer:** *1*
     - **Forsyningskilde:** *Indkøbsordre*
@@ -135,7 +136,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Arbejdsskabelonbeskrivelse:** *51 Cross Dock*
 
 1. Vælg **Gem** for at gøre oversigtspanelet **Arbejdsskabelondetaljer** tilgængeligt.
-1. Gå til oversigtspanelet **Arbejdsskabelondetaljer**, og vælg **Ny** for at føje en linje til gitteret.
+1. Gå til oversigtspanelet **Arbejdsskabelondetaljer** , og vælg **Ny** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
     - **Arbejdstype:** *Pluk*
@@ -146,7 +147,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Arbejdstype:** *Læg på lager*
     - **Arbejdsklasse-id:** *CrossDock*
 
-1. Vælg **Gem**, og kontroller, at afkrydsningsfeltet **Gyldig** er markeret for skabelonen *51 Cross Dock*.
+1. Vælg **Gem** , og kontroller, at afkrydsningsfeltet **Gyldig** er markeret for skabelonen *51 Cross Dock*.
 
 > [!NOTE]
 > Arbejdsklasse-id'erne for arbejdstyperne *Pluk* og *Læg på lager* skal være ens.
@@ -179,7 +180,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
 1. Vælg **Gem** for at gøre knappen **Rediger forespørgsel** tilgængelig på værktøjslinjen **Handlinger i lokationsvejledning**.
 1. Vælg **Rediger forespørgsel** for at åbne forespørgselseditoren.
-1. Kontroller, at følgende to linjer er konfigureret under fanen **Område**:
+1. Kontroller, at følgende to linjer er konfigureret under fanen **Område** :
 
     - Linje 1:
 
@@ -202,7 +203,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 1. Gå til **Lagerstedsstyring \> Opsætning \> Mobilenhed \> Menupunkter i mobilenhed**.
 1. På listen over menupunkter i ruden til venstre skal du vælge **Læg indkøb på lager**.
 1. Vælg **Rediger**.
-1. Gå til oversigtspanelet **Arbejdsklasser**, og vælg **Ny** for at føje en linje til gitteret.
+1. Gå til oversigtspanelet **Arbejdsklasser** , og vælg **Ny** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
     - **Arbejdsklasse-id:** *CrossDock*
@@ -218,12 +219,12 @@ Udfør følgende trin for at oprette en indkøbsordre som en kilde til levering.
 
 1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre** :
 
     - **Kreditorkonto:** *104*
     - **Lagersted:** *51*
 
-1. Vælg **OK**, og noter ordrenummeret.
+1. Vælg **OK** , og noter ordrenummeret.
 1. Der føjes en ny linje til gitteret i oversigtspanelet **Indkøbsordrelinjer**. Angiv følgende værdier på denne linje:
 
     - **Varenummer:** *A0001*
@@ -235,7 +236,7 @@ Udfør følgende trin for at oprette en salgsordre som en kilde til efterspørgs
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-002*
     - **Lagersted:** *51*
@@ -256,7 +257,7 @@ Udfør følgende trin for at oprette planlagt cross-docking fra salgsordren.
     
     Du får en orienterende meddelelse. Du får også vist følgende advarselsmeddelelse: "Der blev ikke oprettet noget arbejde for bølge XXXX. Du kan finde flere oplysninger i logfilen over historik for oprettelse af arbejde." Denne funktionsmåde forventes, fordi der ikke er nogen lagerbeholdning på lagerstedet.
 
-1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Forsendelsesoplysninger** i menuen **Lagersted**.
+1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Forsendelsesoplysninger** i menuen **Lagersted**.
 
     Siden **Forsendelsesoplysninger** vises og viser den forsendelse, der er oprettet for salgsorden.
 
@@ -280,7 +281,7 @@ Det andet arbejds-id, der oprettes, har værdien **Indkøbsordrer** for *Arbejds
 1. Vælg **OK**.
 1. På næste side skal du angive feltet **Vare** til *A0001*.
 1. Vælg **OK**.
-1. På næste side skal du bekræfte værdierne for **IO-num**, **Vare** og **Antal** ved at vælge **OK**.
+1. På næste side skal du bekræfte værdierne for **IO-num** , **Vare** og **Antal** ved at vælge **OK**.
 
     Du modtager en meddelelse om arbejde fuldført.
 
@@ -293,7 +294,7 @@ I øjeblikket har begge arbejds-id'er samme målnummerplade. Hvis du vil udføre
 1. På mobilenheden skal du gå til **Indgående \> Læg køb på lager** og angive målnummerpladen fra arbejdet.
 1. I feltet **Id** skal du angive målnummerplade-id'et fra arbejdsdetaljerne.
 
-    Siden til plukning til cross-docking viser pluklokationen (*RECV*), målnummerpladen (*nummerplade*), varen (*A0001*) og antallet (*3*).
+    Siden til plukning til cross-docking viser pluklokationen ( *RECV* ), målnummerpladen ( *nummerplade* ), varen ( *A0001* ) og antallet ( *3* ).
 
 1. Vælg **OK**.
 1. I feltet **Mål-NP** skal du angive en målnummerplade for nummerplade-id'et, der skal lægges på lager (cross-docked) på forsendelseslokationen. Du kan vælge et hvilket som helst nummerplade-id efter eget valg.

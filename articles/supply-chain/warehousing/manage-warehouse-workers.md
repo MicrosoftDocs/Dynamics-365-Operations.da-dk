@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
+ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530023"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017074"
 ---
 # <a name="manage-warehouse-workers"></a>Styre lagerarbejdere
 
@@ -31,7 +31,7 @@ ms.locfileid: "3530023"
 
 I denne artikel beskrives, hvordan du kan bruge lagerstedsappen til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 
-Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
+Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder** -konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
 
 Hvis du vil oprette en ny arbejdsbruger skal du på siden **Arbejdere** under fanen **Generelt** klikke på **Arbejder** i sektionen **Lagersteder**. Du skal angive et bruger-id, et brugernavn, et standardlagersted og et menunavn. Denne menu er indlæst, når brugeren logger på Warehouse Mobile Device Portal, og gør det muligt at definere, hvilke menupunkter brugeren har adgang til. 
 
@@ -45,7 +45,7 @@ Hvis du vil aktivere de arbejdsstandarder, du har defineret, skal du vælge inds
 ## <a name="monitoring-and-controlling-warehouse-work"></a>Overvåge og styre lagerstedsarbejde
 Siden **Alt arbejde** gør det muligt at overvåge og vedligeholde alt arbejde, der er planlagt, igangsat og afsluttet. På denne side kan du opdatere forskellige processer som f.eks. lagerstedsarbejde, brugertildelinger og arbejdsprioritet. Du kan også gå længere ned i de oplysninger, der er relateret til arbejdshovedet og arbejdslinjerne, for at få en forståelse af de forventede eller fuldførte arbejdsprocesser. 
 
-Hvis du aktiverer indstillingen **Arbejdsstandarder**, kan du se den beregnede estimerede tid for arbejdet. Når arbejdet derefter er behandlet, vises den faktiske tid også for hver arbejdshandling. På denne måde kan du sammenligne estimerede tidsberegninger med den faktiske tid. 
+Hvis du aktiverer indstillingen **Arbejdsstandarder** , kan du se den beregnede estimerede tid for arbejdet. Når arbejdet derefter er behandlet, vises den faktiske tid også for hver arbejdshandling. På denne måde kan du sammenligne estimerede tidsberegninger med den faktiske tid. 
 
 Desuden kan du bruge den anslåede tid i reglerne til automatisk at opdele arbejde under arbejdsoprettelsen. På denne måde kan du afbalancere arbejdet ud fra tid, det forventes at fuldføre opgaverne. 
 

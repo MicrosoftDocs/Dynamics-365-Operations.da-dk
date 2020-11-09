@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5e4172a8d3f82e6eeb8868aac87abd183a94c088
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598779"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017178"
 ---
 # <a name="item-consolidation---location-utilization"></a>Udnyttelse af varekonsolideringslokation
 
@@ -30,7 +31,7 @@ Dette emne indeholder oplysninger om funktioner, der gør det nemt for lagerchef
 
 ## <a name="turn-on-the-features"></a>Slå funktionerne til
 
-Før du kan bruge de funktioner, der er beskrevet i dette emne, skal du aktivere dem i systemet. Administratorer kan bruge arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Slå begge af følgende funktioner til i den rækkefølge, de angives i. (Begge funktioner er til modulet **Lokationsstyring**).
+Før du kan bruge de funktioner, der er beskrevet i dette emne, skal du aktivere dem i systemet. Administratorer kan bruge arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Slå begge af følgende funktioner til i den rækkefølge, de angives i. (Begge funktioner er til modulet **Lokationsstyring** ).
 
 1. Placeringsstatus for lagersted
 2. Udnyttelse af varekonsolideringslokation
@@ -58,21 +59,21 @@ I dette afsnit beskrives, hvordan du forbereder dit system til at bruge varekons
 ### <a name="released-product"></a>Frigivet produkt
 
 1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
-1. Gå til feltet **Varenummer**, vælg *M9201*, og åbn detaljesiden.
+1. Gå til feltet **Varenummer** , vælg *M9201* , og åbn detaljesiden.
 1. I handlingsruden skal du under fanen **Styr lager** i gruppen **Lager** vælge **Fysiske dimensioner**.
-1. Gå til siden **Fysiske dimensioner**, og vælg **Ny** i handlingsruden.
+1. Gå til siden **Fysiske dimensioner** , og vælg **Ny** i handlingsruden.
 
     Der føjes en ny linje til gitteret. Feltet **Varenummer** er foruddefineret.
 
 1. Vælg **hver** i feltet *Enhed*. De resterende felter på linjen angives automatisk.
-1. Vælg **Gem**, og luk siden.
+1. Vælg **Gem** , og luk siden.
 
 ### <a name="location-profile"></a>Lokationsprofil
 
 1. Gå til **Lagerstedsstyring \> Konfiguration \> Lagersted \> Lokationsprofiler**.
 1. Vælg **PRODUKTION-05** på listen over lokationsprofiler.
 1. Vælg **Rediger** i handlingsruden.
-1. Gå til oversigtspaneletI **Generelt**, og sørg for, at følgende indstillinger er angivet til *Ja*:
+1. Gå til oversigtspaneletI **Generelt** , og sørg for, at følgende indstillinger er angivet til *Ja* :
 
     - Aktivér vare på placering
     - Aktivér placeringsstatus
@@ -80,10 +81,10 @@ I dette afsnit beskrives, hvordan du forbereder dit system til at bruge varekons
 1. Vælg **Gem**.
 
     > [!IMPORTANT]
-    > Hvis indstillingen **Aktivér vare på lokation** og **Indstillinger for lokationsstatus** allerede er angivet til *Ja*, skal du gå videre til instruktionerne for opsætning af oversigtspanelet **Dimensioner** i trin 10. Hvis indstillingerne ikke allerede er angivet til *Ja*, skal du udføre en konsistenskontrol for modulet **Lokationsstyring**, når du har angivet dem manuelt. I dette tilfælde skal du fortsætte til næste trin.
+    > Hvis indstillingen **Aktivér vare på lokation** og **Indstillinger for lokationsstatus** allerede er angivet til *Ja* , skal du gå videre til instruktionerne for opsætning af oversigtspanelet **Dimensioner** i trin 10. Hvis indstillingerne ikke allerede er angivet til *Ja* , skal du udføre en konsistenskontrol for modulet **Lokationsstyring** , når du har angivet dem manuelt. I dette tilfælde skal du fortsætte til næste trin.
 
 1. Hvis du vil køre konsistenskontrollen, skal du gå til **Systemadministration \> Periodiske opgaver \> Database \> Konsistenskontrol**.
-1. Angiv følgende værdier i dialogboksen **Konsistenskontrol**:
+1. Angiv følgende værdier i dialogboksen **Konsistenskontrol** :
 
     - **Modul:** *Lokationsstyring*
     - **Kontrollér/ret:** *Kontrol*
@@ -97,7 +98,7 @@ I dette afsnit beskrives, hvordan du forbereder dit system til at bruge varekons
     >
     > Hvis meddelelsen for konsistenskontrollen angive, at der er "fundet forkerte statusoplysninger for lokationen for lokation XXXX i lager XX", skal du køre konsistenskontrollen igen. Denne gang skal du angive feltet **Kontrollér/ret** til *Ret fejl*. Få vist meddelelserne for at sikre dig, at der ikke blev fundet fejl.
 
-1. Du skal nu afslutte konfigurationen af lokationsprofilen. Gå tilbage til **Lokationsstyring \> Konfiguration \> Lagersted \> Lokationsprofiler**, vælg lokationsprofilen **PRODUKTION-05**, og vælg derefter **Rediger** i handlingsruden.
+1. Du skal nu afslutte konfigurationen af lokationsprofilen. Gå tilbage til **Lokationsstyring \> Konfiguration \> Lagersted \> Lokationsprofiler** , vælg lokationsprofilen **PRODUKTION-05** , og vælg derefter **Rediger** i handlingsruden.
 1. I oversigtspanelet **Dimensioner** kan du angive følgende værdier:
 
     - **Volumenudnyttelse i procent:** *100*

@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661166"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015174"
 ---
 # <a name="order-details-module"></a>Modulet Ordredetaljer
 
@@ -38,7 +38,7 @@ Modulet Ordredetaljer bruges til at vise ordrebekræftelsesoplysningerne, når e
 
 | Egenskabsbetegnelse  | Værdier | Beskrivende tekst |
 |----------------|--------|-------------|
-| Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Ordredetaljemodulet kan have en overskrift. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
+| Overskrift        | Overskriftstekst og overskriftskode ( **H1** , **H2** , **H3** , **H4** , **H5** eller **H6** ) | Ordredetaljemodulet kan have en overskrift. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
 | Kontaktnummer | Text | Der kan angives et kontaktnummer for ordrerelaterede spørgsmål. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduler, der kan bruges på en side med ordredetaljer
@@ -52,21 +52,21 @@ Når du opretter en side med ordredetaljer, kan du tilføje andre relevante modu
 
 Hvis du vil føje et ordredetaljemodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
-1. Angiv navnet **Ordredetaljeskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
-1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. Gå til **Skabeloner** , og vælg **Ny** for at oprette en ny skabelon.
+1. Angiv navnet **Ordredetaljeskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon** , og vælg derefter **OK**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
-1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Ordredetaljer** og derefter **OK**.
 1. Vælg **Gem** og derefter **Vis** for at få vist skabelonen. Ordredetaljemodulet skal ikke gengives, fordi det kræver ordrebekræftelsesnummerets kontekst.
 1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
-1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. Gå til **Sider** , og vælg **Ny** for at oprette en ny side.
 1. I dialogboksen **Vælg en skabelon** skal du vælge **Ordredetaljeskabelon**. Under **Sidenavn** skal du angive **Ordredetaljeside** og derefter vælge **OK**.
-1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Ordredetaljer** og derefter **OK**.
 1. Vælg **Overskrift** ud for blyantsymbolet i egenskabsruden for ordredetaljemodulet.
-1. Angiv overskriftsteksten **Ordredetaljer** i feltet **Overskriftstekst** i dialogboksen **Overskrift**, og vælg derefter **OK**.
-1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
+1. Angiv overskriftsteksten **Ordredetaljer** i feltet **Overskriftstekst** i dialogboksen **Overskrift** , og vælg derefter **OK**.
+1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden.
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

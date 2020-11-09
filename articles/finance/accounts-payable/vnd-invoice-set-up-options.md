@@ -3,7 +3,7 @@ title: Konfigurere indstillinger for automatisering af kreditorfaktura (prøveve
 description: I dette emne beskrives de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer.
 author: abruer
 manager: AnnBe
-ms.date: 08/30/2020
+ms.date: 10/16/2020
 ms.topic: articl
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eedc5ae1ed20da4c506b3510eaeac32c0ada3b70
-ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.openlocfilehash: c3ee1112a409f87fdb433d5d43442a858dbd1798
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3905004"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022584"
 ---
-# <a name="setup-options-for-vendor-invoice-automation-preview"></a>Konfigurere indstillinger for automatisering af kreditorfaktura (prøveversion)
+# <a name="setup-options-for-vendor-invoice-automation"></a>Opsætningsindstillinger for automatisering af kreditorfaktura
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer. Funktioner til fakturaautomatisering bruger følgende typer opsætningsparametre:
 
@@ -40,27 +39,27 @@ Du skal konfigurere en arbejdsgang for kreditorfakturaer for at opnå en berøri
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parametre for afsendelse af importerede kreditorfakturaer til arbejdsprocessystemet
 
-Der bruges bestemte parametre for afsendelse af importerede kreditorfakturaer til arbejdsprocessystemet. Der bruges også parametre til at matche bogførte produktkvitteringslinjer med afventende kreditorfakturalinjer. De parametre, du skal angive, er fordelt mellem følgende afsnit under fanen **Automatisering af kreditorfaktura** på siden **Kreditorparametre**:
+Der bruges bestemte parametre for afsendelse af importerede kreditorfakturaer til arbejdsprocessystemet. Der bruges også parametre til at matche bogførte produktkvitteringslinjer med afventende kreditorfakturalinjer. De parametre, du skal angive, er fordelt mellem følgende afsnit under fanen **Automatisering af kreditorfaktura** på siden **Kreditorparametre** :
 
 - Arbejdsgang for kreditorfaktura
 - Afstem produktkvitteringer automatisk
 
 Følgende parametre er tilgængelige:
 
-- **Send automatisk importerede fakturaer til arbejdsgang** – Hvis du angiver denne indstilling til **Ja**, sendes importerede fakturaer automatisk til arbejdsprocessystemet. Hvis denne indstilling er angivet til **Nej**, skal fakturaer sendes manuelt. Hvis du angiver denne indstilling til **Ja**, aktiverer du en berøringsfri proces fra resultaterne af importen via bogføring.
+- **Send automatisk importerede fakturaer til arbejdsgang** – Hvis du angiver denne indstilling til **Ja** , sendes importerede fakturaer automatisk til arbejdsprocessystemet. Hvis denne indstilling er angivet til **Nej** , skal fakturaer sendes manuelt. Hvis du angiver denne indstilling til **Ja** , aktiverer du en berøringsfri proces fra resultaterne af importen via bogføring.
 
-    Du kan kun angive denne indstilling til **Ja**, hvis der er konfigureret en aktiv arbejdsgang for kreditorfakturaer for din juridiske enhed. Gå til **Kreditor \> Opsætning \> Kreditorarbejdsgange** for at konfigurere en arbejdsproces.
+    Du kan kun angive denne indstilling til **Ja** , hvis der er konfigureret en aktiv arbejdsgang for kreditorfakturaer for din juridiske enhed. Gå til **Kreditor \> Opsætning \> Kreditorarbejdsgange** for at konfigurere en arbejdsproces.
 
-- **Afstem produktkvitteringer med fakturalinjer, før de sendes automatisk** – Hvis du angiver denne indstilling til **Ja**, kan den importerede faktura ikke automatisk sendes til arbejdsprocessystemet, før det afstemte produktkvitteringsantal er lig med fakturaantallet. Hvis du angiver denne indstilling til **Ja**, aktiverer du automatisk afstemning af bogførte produktkvitteringer med fakturalinjer, som en trevejs-sammenholdelsespolitik er defineret for. Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet. På dette tidspunkt sendes fakturaen automatisk til arbejdsprocessystemet.
+- **Afstem produktkvitteringer med fakturalinjer, før de sendes automatisk** – Hvis du angiver denne indstilling til **Ja** , kan den importerede faktura ikke automatisk sendes til arbejdsprocessystemet, før det afstemte produktkvitteringsantal er lig med fakturaantallet. Hvis du angiver denne indstilling til **Ja** , aktiverer du automatisk afstemning af bogførte produktkvitteringer med fakturalinjer, som en trevejs-sammenholdelsespolitik er defineret for. Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet. På dette tidspunkt sendes fakturaen automatisk til arbejdsprocessystemet.
 
     Indstillingen 'Afstem produktkvitteringer med fakturalinjer, før de sendes automatisk' er kun tilgængelig, hvis indstillingen **Aktivér validering af fakturasammenholdelse** er valgt. Når denne indstilling er valgt, vælges automatisk indstillingen **Afstem automatisk produktkvitteringer med fakturalinjer**.
 
-- **Kræv, at de beregnede totaler er lig med de importerede totaler for automatisk afsendelse af arbejdsgang** – Hvis du angiver denne indstilling til **Ja**, kan fakturaen ikke automatisk sendes til arbejdsprocessystemet, før de totaler, der er beregnet for fakturaen, er lig med de importerede totaler. Hvis denne indstilling er angivet til **Nej**, kan fakturaen automatisk sendes til arbejdsprocessystemet, men den kan ikke bogføres, før de beregnede totaler er rettet, så de stemmer overens med de importerede totaler. Hvis du ikke importerer fakturabeløbet eller momsbeløbet, skal denne indstilling angives til **Nej**.
-- **Afstem automatisk produktkvitteringer med fakturalinjer** – Hvis du angiver denne indstilling til **Ja**, kan baggrundsbehandling bruges til at foretage automatisk sammenholdelse af bogførte produktkvitteringer for at fakturere linjer, som en trevejs-sammenholdelsespolitik er defineret for. Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet, eller indtil værdien af feltet **Antal gange, der skal forsøges automatisk afstemning** er nået. Processen kan køres, indtil fakturaen er sendt til arbejdsprocessystemet.
+- **Kræv, at de beregnede totaler er lig med de importerede totaler for automatisk afsendelse af arbejdsgang** – Hvis du angiver denne indstilling til **Ja** , kan fakturaen ikke automatisk sendes til arbejdsprocessystemet, før de totaler, der er beregnet for fakturaen, er lig med de importerede totaler. Hvis denne indstilling er angivet til **Nej** , kan fakturaen automatisk sendes til arbejdsprocessystemet, men den kan ikke bogføres, før de beregnede totaler er rettet, så de stemmer overens med de importerede totaler. Hvis du ikke importerer fakturabeløbet eller momsbeløbet, skal denne indstilling angives til **Nej**.
+- **Afstem automatisk produktkvitteringer med fakturalinjer** – Hvis du angiver denne indstilling til **Ja** , kan baggrundsbehandling bruges til at foretage automatisk sammenholdelse af bogførte produktkvitteringer for at fakturere linjer, som en trevejs-sammenholdelsespolitik er defineret for. Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet, eller indtil værdien af feltet **Antal gange, der skal forsøges automatisk afstemning** er nået. Processen kan køres, indtil fakturaen er sendt til arbejdsprocessystemet.
 
     Denne indstilling er kun tilgængelig, hvis indstillingen **Aktivér validering af fakturasammenholdelse** er valgt.
 
-    Hvis du indstiller **Afstem produktkvitteringer med fakturalinjer, før de afstemmes automatisk** til **Ja**, kan denne indstilling ikke angives til **Nej**. Hvis du vil angive denne indstilling til **Nej**, skal du først angive **Afstem produktkvitteringer med fakturalinjer, før de afstemmes automatisk** til **Nej**.
+    Hvis du indstiller **Afstem produktkvitteringer med fakturalinjer, før de afstemmes automatisk** til **Ja** , kan denne indstilling ikke angives til **Nej**. Hvis du vil angive denne indstilling til **Nej** , skal du først angive **Afstem produktkvitteringer med fakturalinjer, før de afstemmes automatisk** til **Nej**.
 
 - **Antal gange, der skal forsøges automatisk afstemning** – Vælg det antal gange, systemet skal forsøge at afstemme produktkvitteringer med en fakturalinje, før det konkluderer, at processen er mislykket. Når det angivne antal forsøg er nået, fjernes fakturaen fra automatisk behandling.
 - **Valider kun, når det afstemte antal på produktkvitteringen er lig med fakturaantallet** – Hvis du vælger denne indstilling, vil fakturaafstemning kun blive valideret, når det afstemte produktkvitteringsantal for fakturalinjen er lig med fakturaantallet på fakturalinjen. Hvis denne indstilling ikke er markeret, valideres fakturaafstemningen, hver gang der automatisk afstemmes en produktkvitteringslinje med en fakturalinje.

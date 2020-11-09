@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b7ac243a04309a41ab0e06c1b2d4843ae8ac0e22
-ms.sourcegitcommit: 7c32e4739c07d825a8562564ea9e78922db2ce38
+ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3406375"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016027"
 ---
 # <a name="system-directed-cluster-picking"></a>Systembaseret klyngepluk
 
@@ -69,9 +69,9 @@ Klyngeprofiler styrer, hvordan systemet opretter hver klynge. Hvis der kræves f
 5. I oversigtspanelet **Generelt** skal du angive følgende oplysninger:
 
     - **Generér klynge-ID** – Vælg **Ja**. Denne indstilling bestemmer, om klynge-ID'et oprettes automatisk af systemet, eller om brugeren skal oprette det i starten af pluk. 
-    - **Aktivér stillinger** – Vælg **Ja**. Denne indstilling bestemmer, om positions navnene genereres automatisk ud fra opsætningen af stillingsnavnet. Hvis denne indstilling er angivet til **Nej**, bruges nummerplade-ID'et for placeringen.
+    - **Aktivér stillinger** – Vælg **Ja**. Denne indstilling bestemmer, om positions navnene genereres automatisk ud fra opsætningen af stillingsnavnet. Hvis denne indstilling er angivet til **Nej** , bruges nummerplade-ID'et for placeringen.
     - **Antal stillinger:** – Vælg **2**. Dette felt angiver det maksimale antal stillinger, som klyngen kan have (det er det maksimale antal bokse, toter osv.).
-    - **Positionsnavn** – Vælg **Numerisk**, så positionerne navngives ved hjælp af fortløbende numre. Hvis du vælger **Alfabetisk**, er positionerne blevet navngivet i alfabetisk rækkefølge.
+    - **Positionsnavn** – Vælg **Numerisk** , så positionerne navngives ved hjælp af fortløbende numre. Hvis du vælger **Alfabetisk** , er positionerne blevet navngivet i alfabetisk rækkefølge.
     - **Bryd klynge på:** – Vælg **Læg på lager**. Dette felt bestemmer, hvornår klyngen er brudt. 
     - **Sorter verifikationstype** – Vælg **Positionsscanning**. Dette felt bestemmer, om læg-til-stilling-trinnet er verificeret.
         
@@ -125,13 +125,13 @@ Hvis du vil oprette et nyt menupunkt på mobilenheden til systembaseret klyngepl
 ### <a name="set-up-a-mobile-device-menu"></a>Opsætning af en mobilenhedsmenu
 
 1. Gå til **Lokalitetsstyring > Opsætning > Mobilenhed > Menu i mobilenhed.**.
-1. Tilføj menupunktet **SD-klynge**, som du lige har oprettet til en menu i mobilenheden.
+1. Tilføj menupunktet **SD-klynge** , som du lige har oprettet til en menu i mobilenheden.
 1. Vælg menuen **Udgående**.
 1. Vælg **Rediger** i handlingsruden.
 1. Rul, indtil du finder **SD-klynge**.
-1. Vælg **SD-klynge**. Pilen, der peger på listen **Menustruktur**, bliver aktiveret.
+1. Vælg **SD-klynge**. Pilen, der peger på listen **Menustruktur** , bliver aktiveret.
 1. Vælg **pileknappen** for at flytte menupunktet **SD-klynge** til menustrukturen **Udgående**.
-1. Vælg **SD-klynge** på listen **Menustruktur**, og vælg derefter pilene **OP** eller **NED** for at flytte menupunktet til den ønskede placering i menuen i mobilenheden.
+1. Vælg **SD-klynge** på listen **Menustruktur** , og vælg derefter pilene **OP** eller **NED** for at flytte menupunktet til den ønskede placering i menuen i mobilenheden.
 
 ## <a name="scenario"></a>Scenario
 
@@ -145,7 +145,7 @@ Før du kan konfigurere systembaseret klyngepluk, skal du oprette kvalificeret u
         - I oversigtspanelet **Debitor** skal du angive **Debitorkonto** - **US-004**.
         - I oversigtspanelet **Generelt** skal du angive **Lagersted** - **62**.
         - Vælg **OK** for at lukke menuen og oprette salgsordren..
-    - I oversigtstabellen **Salgsordrelinjer** skal du vælge **Tilføj linje**, hvis der ikke automatisk tilføjes en ny linje, og angive følgende:
+    - I oversigtstabellen **Salgsordrelinjer** skal du vælge **Tilføj linje** , hvis der ikke automatisk tilføjes en ny linje, og angive følgende:
         - **Varenummer** – A0001
         - **Antal** – 1
         - Vælg **Tilføj linje** for at tilføje en anden linje.
@@ -155,14 +155,14 @@ Før du kan konfigurere systembaseret klyngepluk, skal du oprette kvalificeret u
         - Vælg **Linje 1**.
         - I handlingsruden **Salgsordrelinjer** skal du vælge **Lager** og derefter **Reservation** på listen.
         - I formularen **Reservation** skal du vælge **Reserver parti** for at reservere lageret.
-        - Luk formularen **Reservation**, når reservationen er fuldført.
+        - Luk formularen **Reservation** , når reservationen er fuldført.
         - Gentag disse trin for at reservere lager for **linje 2**.
 1. Vælg **Ny** i handlingsruden, hvis du vil oprette den anden salgsordre
     - Menuen **Opret salgsordre** åbnes. Angiv følgende oplysninger:
         - I oversigtspanelet **Debitor** skal du angive **Debitorkonto** - **US-005**.
         - I oversigtspanelet **Generelt** skal du angive **Lagersted** - **62**.
         - Vælg **OK** for at lukke menuen og oprette salgsordren
-    - I oversigtstabellen **Salgsordrelinjer** skal du vælge **Tilføj linje**, hvis der ikke automatisk tilføjes en ny linje, og angive følgende oplysninger:
+    - I oversigtstabellen **Salgsordrelinjer** skal du vælge **Tilføj linje** , hvis der ikke automatisk tilføjes en ny linje, og angive følgende oplysninger:
         - **Varenummer** – A0001
         - **Antal** – 4
         - Vælg **Tilføj linje** for at tilføje en anden linje.
@@ -172,7 +172,7 @@ Før du kan konfigurere systembaseret klyngepluk, skal du oprette kvalificeret u
         - Vælg **Linje 1**.
         - I handlingsruden **Salgsordrelinjer** skal du vælge **Lager** og derefter **Reservation** på listen.
         - I formularen **Reservation** skal du vælge **Reserver parti** for at reservere lageret.
-        - Luk formularen **Reservation**, når reservationen er fuldført.
+        - Luk formularen **Reservation** , når reservationen er fuldført.
         - Gentag disse trin for at reservere lager for **linje 2**.
     - Luk salgsordren og gå tilbage til listesiden **Alle salgsordrer**.
 1. Find de to salgsordrer, du lige har oprettet (det kan være nødvendigt at opdatere siden). I tabellen skal du vælge begge salgsordrer ved hjælp af sektionmærket.
@@ -182,11 +182,11 @@ Før du kan konfigurere systembaseret klyngepluk, skal du oprette kvalificeret u
     - Der oprettes forsendelser for hver salgsordre.
     - Der oprettes en bølge, og begge forsendelser tildeles bølgen. Notér dig **Bølge-id**.
 1. Gå til **Lokationsstyring > Udgående bølger > Forsendelsesbølger > Alle bølger**.
-    - På listen **Alle bølger** skal du finde og vælge det **Bølge-id**, du oprettede i forrige trin.
-    - I handlingsruden skal du vælge fanen **Bølge**,
+    - På listen **Alle bølger** skal du finde og vælge det **Bølge-id** , du oprettede i forrige trin.
+    - I handlingsruden skal du vælge fanen **Bølge** ,
     - I gryppen **Bølge** skal du vælge **Proces** for at behandle bølgen og oprette **Arbejde**.
     - Der genereres oplysningsmeddelelser, når behandlingen er udført, hvilket angiver, at der er oprettet arbejde, og at bølgen er blevet bogført.
-1. **Valgfrit**: Gå til **Lokationsstyring > Arbejde > Arbejdsoplysninger** for at få vist det oprettede arbejde. Der oprettes to forskellige arbejds-ID'er. Hvert arbejds-ID har to pluklinjer.
+1. **Valgfrit** : Gå til **Lokationsstyring > Arbejde > Arbejdsoplysninger** for at få vist det oprettede arbejde. Der oprettes to forskellige arbejds-ID'er. Hvert arbejds-ID har to pluklinjer.
 
 ### <a name="run-the-mobile-device-flow"></a>Kør mobilenhedsprocessen
 

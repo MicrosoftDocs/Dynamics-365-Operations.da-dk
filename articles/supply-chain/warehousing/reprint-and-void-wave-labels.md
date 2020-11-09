@@ -6,7 +6,7 @@ manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: reprint-and-void-wave-labels
 ms.service: dynamics-ax-applications
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 0b831361631aa66712813706eaa4ff3339683868
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986641"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016648"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Genudskrive og annullere bølgeetiketter
 
@@ -118,7 +118,7 @@ Udfør følgende trin for at oprette en ny samling menupunkter til genudskrivnin
     - **Systemgrupperingsetiket:** *Forsendelses-id*
     - **Udskrivningstilstand:** *Optælling*
 
-1. I handlingsruden skal du vælge **Feltliste** og derefter bruge rullelisterne til at vælge de felter, der skal vises for at hjælpe arbejderne med at identificere den korrekte etiketrulle (for eksempel *EtiketVareId*, *EtiketVareNavn*, *LagerAntal*, *EtiketEnhedId* og *AntalEtiketter*).
+1. I handlingsruden skal du vælge **Feltliste** og derefter bruge rullelisterne til at vælge de felter, der skal vises for at hjælpe arbejderne med at identificere den korrekte etiketrulle (for eksempel *EtiketVareId* , *EtiketVareNavn* , *LagerAntal* , *EtiketEnhedId* og *AntalEtiketter* ).
 1. Luk siden.
 1. Opret et fjerde menupunkt, og angiv følgende værdier for det:
 
@@ -131,7 +131,7 @@ Udfør følgende trin for at oprette en ny samling menupunkter til genudskrivnin
     - **Systemgrupperingsetiket:** *Forsendelses-id*
     - **Udskrivningstilstand:** *Sidste gode bølgeetiket-id*
 
-1. I handlingsruden skal du vælge **Feltliste** og derefter bruge rullelisterne til at vælge de felter, der skal vises for at hjælpe arbejderne med at identificere den korrekte etiketrulle (for eksempel *EtiketVareId*, *EtiketVareNavn*, *LagerAntal*, *EtiketEnhedId* og *AntalEtiketter*).
+1. I handlingsruden skal du vælge **Feltliste** og derefter bruge rullelisterne til at vælge de felter, der skal vises for at hjælpe arbejderne med at identificere den korrekte etiketrulle (for eksempel *EtiketVareId* , *EtiketVareNavn* , *LagerAntal* , *EtiketEnhedId* og *AntalEtiketter* ).
 1. Luk siden.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Konfigurere mobilenhedsmenuen
@@ -217,4 +217,4 @@ Arbejdsundtagelser styrer funktionsmåden ved kort plukning. Følg disse trin fo
 1. Åbn en arbejdsbehandlingsproces for det salgsordrearbejde, der blev oprettet, da der oprindeligt blev udskrevet bølgeetiketter.
 1. Vælg **Kort pluk**.
 1. Vælg den arbejdsundtagelseskode, som du har oprettet til dette scenarie.
-1. Hvis du valgte den korrekte undtagelse, skal afkrydsningsfeltet **Annuller og udskriv igen** være tilgængeligt. Markér dette afkrydsningsfelt, og bekræft. Når det er bekræftet, genberegnes serien for etiketrulle, der er identificeret af feltet **Etiket-build-id**, på basis af det ændrede antal på arbejdslinje. Derefter udskrives den på den angivne printer.
+1. Hvis du valgte den korrekte undtagelse, skal afkrydsningsfeltet **Annuller og udskriv igen** være tilgængeligt. Markér dette afkrydsningsfelt, og bekræft. Når det er bekræftet, genberegnes serien for etiketrulle, der er identificeret af feltet **Etiket-build-id** , på basis af det ændrede antal på arbejdslinje. Derefter udskrives den på den angivne printer.

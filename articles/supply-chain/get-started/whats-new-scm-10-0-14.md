@@ -1,5 +1,5 @@
 ---
-title: Funktioner i prøveversion af Dynamics 365 Supply Chain Management 10.0.14 (oktober 2020)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.14 (oktober 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.14.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 22d0dfb44bb999f466eca216e7390488fef33618
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.openlocfilehash: 584ea00c64df5e31d47e40aa32d7b266ff842de6
+ms.sourcegitcommit: de159549da9ff8cbcdb69ae0e3131cd1726bc323
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763567"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4038103"
 ---
-# <a name="preview-features-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Funktioner i prøveversion af Dynamics 365 Supply Chain Management 10.0.14 (november 2020)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.14. november 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management foreløbig version 10.0.14. Denne version har et build-nummer på 10.0.605 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.14. Denne version har et build-nummer på 10.0.605 og er tilgængelig som følger:
 
 - **Frigivelse af prøveversion:** September 2020
 - **Generel tilgængelighed (selv-opdatering):** Oktober 2020

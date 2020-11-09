@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 2884c480d20090266f7cffb5e7d0aca58c1174f0
-ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
+ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "3534844"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017018"
 ---
 # <a name="system-directed-work-sequencing"></a>Systembaseret arbejdsrækkefølge
 
@@ -129,7 +130,7 @@ Hvis du vil arbejde gennem scenariet ved hjælp af de værdier, der vises i dett
     - **Kriterier:** *!STADIE*
 
         > [!IMPORTANT]
-        > Sørg for at medtage udråbstegnet (*!*) foran *STADIE*.
+        > Sørg for at medtage udråbstegnet ( *!* ) foran *STADIE*.
 
 1. Vælg **OK** for at gemme og lukke forespørgslen.
 1. Vælg **Gem**.
@@ -168,9 +169,9 @@ Du skal derefter frigive hver salgsordre til lagerstedet for at oprette det udg�
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** i handlingsruden for at oprette en salgsordre 1.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
-    - Gå til sektionen **Kunde**, indstil feltet **Debitorkonto** til *US-004*.
+    - Gå til sektionen **Kunde** , indstil feltet **Debitorkonto** til *US-004*.
     - I sektionen **Generelt** skal du indstille **Lagersted** til *51*.
 
 1. Vælg **OK** for at lukke dialogboksen. Notér dig salgsordrenummeret.
@@ -189,7 +190,7 @@ Du skal derefter frigive hver salgsordre til lagerstedet for at oprette det udg�
 #### <a name="sales-order-2"></a>Salgsordre 2
 
 1. Vælg **Ny** i handlingsruden for at oprette en salgsordre 2.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-007*
     - **Lagersted:** *51*
@@ -211,7 +212,7 @@ Du skal derefter frigive hver salgsordre til lagerstedet for at oprette det udg�
 #### <a name="sales-order-3"></a>Salgsordre 3
 
 1. Vælg **Ny** i handlingsruden for at oprette en salgsordre 3.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-009*
     - **Lagersted:** *51*
@@ -233,7 +234,7 @@ Du skal derefter frigive hver salgsordre til lagerstedet for at oprette det udg�
 #### <a name="sales-order-4"></a>Salgsordre 4
 
 1. Vælg **Ny** i handlingsruden for at oprette en salgsordre 4.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-010*
     - **Lagersted:** *51*
@@ -255,7 +256,7 @@ Du skal derefter frigive hver salgsordre til lagerstedet for at oprette det udg�
 ### <a name="get-work-ids-for-the-work-that-was-created"></a>Hent arbejds-id'er for det arbejde, der er oprettet
 
 1. Gå til **Lokationsstyring \> Arbejde \> Arbejdsdetaljer**.
-1. Filtrer på feltet **Lagersted**, så der kun vises arbejde for lagersted *51*.
+1. Filtrer på feltet **Lagersted** , så der kun vises arbejde for lagersted *51*.
 1. Der skal være oprettet fire arbejds-id'er. Noter arbejds-id'et for hver salgsordre.
 
     | Salgsordre-id | Arbejds-id | Arbejdsantal |
@@ -268,7 +269,7 @@ Du skal derefter frigive hver salgsordre til lagerstedet for at oprette det udg�
 Før du kører processen på mobilenheden, skal du sørge for, at kun det arbejde, du netop har oprettet, har statussen *Åben* for lagersted *51* og arbejdsordretypen *Salgsordre*. Ellers kan testresultaterne variere, fordi systembaseret plukning vil omfatte alt berettiget arbejde.
 
 1. Gå til **Lokationsstyring \> Arbejde \> Udgående \> Åbent salgsarbejde**.
-1. Gå til gitteret **Åbent salgsarbejde**, filtrer efter feltet **Lagersted**, så kun arbejde for lagersted *51* vises.
+1. Gå til gitteret **Åbent salgsarbejde** , filtrer efter feltet **Lagersted** , så kun arbejde for lagersted *51* vises.
 1. Bekræft, at det kun er de fire arbejds-id'er, du har oprettet tidligere, der vises.
 1. Luk siden **Arbejde**.
 
@@ -299,7 +300,7 @@ Husk, at denne opsætning vil hente alle de ressourcer, der har mindst én linje
 
 ## <a name="tips"></a>Tip!
 
-De systembaserede arbejdsrækkefølgeforespørgsler er *inklusive*. Det er vigtigt, at du husker dette i forbindelse med nogle af opsætningerne. Du ønsker f. eks., at et bestemt menupunkt kun skal behandle arbejde, hvor arbejdsenheden er *ea*, og du angiver denne begrænsning under fanen **Område** i forespørgslen. I dette tilfælde vil alle de opgaver, hvor mindst én arbejdslinje har arbejdsenheden indstillet til *ea*, blive overført til arbejderen. Dette arbejde kan derfor også omfatte arbejde, hvor arbejdslinjer har en anden arbejdsenhed end *ea* (f.eks. *kasse* eller *palle*). Forespørgslen udelader kun det arbejde, hvor ingen linjer for arbejdslinjen er angivet til *ea*.
+De systembaserede arbejdsrækkefølgeforespørgsler er *inklusive*. Det er vigtigt, at du husker dette i forbindelse med nogle af opsætningerne. Du ønsker f. eks., at et bestemt menupunkt kun skal behandle arbejde, hvor arbejdsenheden er *ea* , og du angiver denne begrænsning under fanen **Område** i forespørgslen. I dette tilfælde vil alle de opgaver, hvor mindst én arbejdslinje har arbejdsenheden indstillet til *ea* , blive overført til arbejderen. Dette arbejde kan derfor også omfatte arbejde, hvor arbejdslinjer har en anden arbejdsenhed end *ea* (f.eks. *kasse* eller *palle* ). Forespørgslen udelader kun det arbejde, hvor ingen linjer for arbejdslinjen er angivet til *ea*.
 
 I eksemplet med dette scenarie blev arbejds-id *4* derfor også hentet af forespørgslen. Da den blev oprettet, blev der tilføjet to linjer: en til 25 ea og en anden til 10 ea. Arbejdet blev stadig vist for brugeren, fordi mindst én arbejdslinje har et antal på mindre end 20 ea.
 

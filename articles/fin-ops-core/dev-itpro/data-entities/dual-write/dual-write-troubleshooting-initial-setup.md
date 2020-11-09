@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275435"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997344"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Foretage fejlfinding af problemer under den indledende opsætning
 
@@ -41,7 +40,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 **Påkrævet rolle for at konfigurere dobbeltskrivning:** Systemadministrator i Finance and Operations-apps og Common Data Service.
 
-Fejl på siden **Opsætning af sammenkædning til Common Data Service** er normalt forårsaget af ufuldstændige opsætnings- eller rettighedsproblemer. Kontroller, at hele tilstandskontrollen bliver gennemført tilfredsstillende på siden **Opsætning af sammenkædning til Common Data Service**, som vist i følgende illustration. Du kan ikke sammenkæde med Dobbeltskrivning, medmindre hele tilstandskontrollen gennemføres tilfredsstillende.
+Fejl på siden **Opsætning af sammenkædning til Common Data Service** er normalt forårsaget af ufuldstændige opsætnings- eller rettighedsproblemer. Kontroller, at hele tilstandskontrollen bliver gennemført tilfredsstillende på siden **Opsætning af sammenkædning til Common Data Service** , som vist i følgende illustration. Du kan ikke sammenkæde med Dobbeltskrivning, medmindre hele tilstandskontrollen gennemføres tilfredsstillende.
 
 ![Vellykket tilstandskontrol](media/health_check.png)
 
@@ -49,13 +48,13 @@ Du skal have rettigheder som Azure AD-lejeradministrator for at kunne sammenkæd
 
 ## <a name="error-when-you-open-the-link-to-common-data-service-page"></a>Fejl, når du åbner siden Sammenkædning med Common Data Service
 
-**Påkrævede legitimationsoplysninger for at løse problemet**: Azure AD-lejeradministrator
+**Påkrævede legitimationsoplysninger for at løse problemet** : Azure AD-lejeradministrator
 
 Du kan få vist følgende fejlmeddelelse, når du åbner **Sammenkædning med Common Data Service** i en Finance and Operations-app:
 
 *Svarstatuskoden tyder ikke på, at handlingen lykkedes: 404 (Ikke fundet).*
 
-Denne fejl opstår, når samtykketrinnet ikke blev fuldført. Hvis du vil validere, om samtykketrinnet er fuldført, skal du logge på portal.Azure.com ved hjælp af Azure AD-lejeradministratorkontoen og se, om den tredjepartsapp, der har id'et **33976c19-1db5-4c02-810e-c243db79efde**, vises på listen over Azure AD **virksomhedsprogrammer**. Hvis ikke, skal du give samtykke til appen.
+Denne fejl opstår, når samtykketrinnet ikke blev fuldført. Hvis du vil validere, om samtykketrinnet er fuldført, skal du logge på portal.Azure.com ved hjælp af Azure AD-lejeradministratorkontoen og se, om den tredjepartsapp, der har id'et **33976c19-1db5-4c02-810e-c243db79efde** , vises på listen over Azure AD **virksomhedsprogrammer**. Hvis ikke, skal du give samtykke til appen.
 
 Du kan give appsamtykke ved at følge disse trin.
 
@@ -76,7 +75,7 @@ For at sikre, at dobbeltskrivningen fungerer korrekt, oprettes de firmaer, du v�
 2. Vælg **Firma** på rullelisten.
 3. Vælg **Kør** for at få vist resultaterne.
 4. Vælg det regnskab, der blev sammenkædet, da du konfigurerede dobbelt skrivning.
-5. Kontroller, at der er en værdi i feltet **Standardejerteam**. I følgende illustration er **Standardejerteam**-feltet indstillet til **USMF Dual Write**.
+5. Kontroller, at der er en værdi i feltet **Standardejerteam**. I følgende illustration er **Standardejerteam** -feltet indstillet til **USMF Dual Write**.
 
     ![Kontrollere standardejerteamet](media/default_owning_team.png)
 

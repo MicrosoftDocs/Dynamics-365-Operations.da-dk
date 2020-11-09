@@ -19,17 +19,17 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834203"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022465"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurationer af POS-brugergrænseflade
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Brugergrænsefladen i Microsoft Dynamics 365 Commerce POS (Point Of Sale) kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og brugere. Dette emne indeholder oplysninger om disse konfigurationsvalg.
 
@@ -62,7 +62,7 @@ Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle element
 > [!NOTE]
 > Layoutet **Højre** og visningen af dato/klokkeslæt kan ikke anvendes på logonsiden i kompakt visning.
 
-Du skal køre distributionsplanjobbet **1090** (**Kasseapparater**) for at synkronisere de seneste visuelle profilkonfigurationer med kanaldatabasen.
+Du skal køre distributionsplanjobbet **1090** ( **Kasseapparater** ) for at synkronisere de seneste visuelle profilkonfigurationer med kanaldatabasen.
 
 ## <a name="screen-layouts"></a>Skærmlayout
 
@@ -78,13 +78,13 @@ Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placering
 
     ![POS-transaktionsskærm](../commerce/media/POS-Transaction-Screen.png)
 
-- **Standardstartskærmbillede** – Nogle detailhandlere foretrækker, at kasserere går direkte til skærmen **Transaktion**, når de logger på. Indstillingen **Standardstartskærmbillede** giver dig mulighed for at angive det standardskærmbillede, der vises efter logon for hvert skærmlayout.
+- **Standardstartskærmbillede** – Nogle detailhandlere foretrækker, at kasserere går direkte til skærmen **Transaktion** , når de logger på. Indstillingen **Standardstartskærmbillede** giver dig mulighed for at angive det standardskærmbillede, der vises efter logon for hvert skærmlayout.
 
 ### <a name="assignment"></a>Tilknytning
 
 Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparats- og butikstildelingerne, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butiksniveau. I tilfælde, hvor specifikke kasseapparater eller brugere kræver specialiserede layouts, kan disse layouts tildeles.
 
-Afhængigt af, hvilket niveau skærmlayoutet er tildelt, skal du køre distributionsplanjobbet **1070** (**Kanalkonfiguration**), **1090** (**Kasseapparater**) og/eller **1060** (**Personale**) for at synkronisere de seneste skærmlayoutkonfigurationer med kanaldatabasen.
+Afhængigt af, hvilket niveau skærmlayoutet er tildelt, skal du køre distributionsplanjobbet **1070** ( **Kanalkonfiguration** ), **1090** ( **Kasseapparater** ) og/eller **1060** ( **Personale** ) for at synkronisere de seneste skærmlayoutkonfigurationer med kanaldatabasen.
 
 ### <a name="layout-sizes"></a>Layoutstørrelser
 
@@ -192,8 +192,8 @@ Designeren til knapmatrix giver dig mulighed for at konfigurere knapmatricer, de
 
         ![POS-knapstørrelser i rækker og kolonner](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
-    - **Brugerdefineret skrifttype** – Når du markerer afkrydsningsfeltet **Aktivér brugerdefineret skrifttype til POS**, kan du angive en anden skrifttype end standardsystemskrifttypen for POS.
-    - **Brugerdefineret tema** – Som standard bruger POS-knapper markeringsfarven fra den visuelle profil. Når du markerer afkrydsningsfeltet **Brug brugerdefineret tema**, kan du angive flere farver.
+    - **Brugerdefineret skrifttype** – Når du markerer afkrydsningsfeltet **Aktivér brugerdefineret skrifttype til POS** , kan du angive en anden skrifttype end standardsystemskrifttypen for POS.
+    - **Brugerdefineret tema** – Som standard bruger POS-knapper markeringsfarven fra den visuelle profil. Når du markerer afkrydsningsfeltet **Brug brugerdefineret tema** , kan du angive flere farver.
 
         > [!NOTE]
         > Modern POS og Cloud POS bruger kun værdierne **Baggrundsfarve** og **Skriftfarve**.

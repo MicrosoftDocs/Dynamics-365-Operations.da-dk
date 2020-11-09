@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597452"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017408"
 ---
 # <a name="warehouse-slotting"></a>Lagerstedsallokering
 
 [!include [banner](../includes/banner.md)]
 
-Lagerstedsallokering gør det muligt at konsolidere efterspørgsel efter vare og måleenhed fra ordrer, der har statussen *bestilt*, *reserveret* eller *frigivet*. Genereret efterspørgsel kan derefter anvendes på lokationer, der skal bruges til plukning, baseret på antal, enhed, fysiske dimensioner, faste lokationer mv. Når allokeringsplanen er blevet oprettet, kan genopfyldningsarbejdet oprettes for at bringe den korrekte lagermængde til hver lokation.
+Lagerstedsallokering gør det muligt at konsolidere efterspørgsel efter vare og måleenhed fra ordrer, der har statussen *bestilt* , *reserveret* eller *frigivet*. Genereret efterspørgsel kan derefter anvendes på lokationer, der skal bruges til plukning, baseret på antal, enhed, fysiske dimensioner, faste lokationer mv. Når allokeringsplanen er blevet oprettet, kan genopfyldningsarbejdet oprettes for at bringe den korrekte lagermængde til hver lokation.
 
 Denne funktion gør det lettere for lagerchefer at planlægge pluklokationer på en intelligent måde, før de frigiver ordrerne til lageret og opretter plukarbejde.
 
@@ -53,7 +54,7 @@ Måleenhedsniveauerne gør det muligt at gruppere flere måleenheder med henblik
     - **Beskrivelse:** *Hver kassepalle*
 
 1. Vælg **Gem**.
-1. Gå til oversigtspanelet **Måleenheder**, og vælg **Ny** for at føje en linje til gitteret.
+1. Gå til oversigtspanelet **Måleenheder** , og vælg **Ny** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
     - **Enhed:** *Kasse*
@@ -120,7 +121,7 @@ Du kan også angive en forespørgsel for at indsnævre omfanget af den efterspø
 
 For hver skabelon, du opretter, skal du udføre disse trin for at tilføje en linje for hver allokeringsspecifikation.
 
-1. Gå til oversigtspanelet **Detaljer om allokeringsskabelon**, og vælg **Ny** for at oprette en skabelonlinje.
+1. Gå til oversigtspanelet **Detaljer om allokeringsskabelon** , og vælg **Ny** for at oprette en skabelonlinje.
 1. Angiv følgende værdier på den nye linje:
 
     - **Sekvens:** _1_
@@ -158,7 +159,7 @@ For hver skabelon, du opretter, skal du udføre disse trin for at tilføje en li
 
     - **Tillad brug:** _Ja_
 
-        Når denne indstilling er angivet til *Ja*, og hvis det ikke muligt allokere noget efterspørgsel, vil der blive oprettet bevægelsesarbejde for at fjerne lager fra lokationer, hvor der er lager, men hvor der ikke er sket nogen allokering. Skabelonen køres derefter igen. Denne gang ignoreres lageret på lokationerne. Denne funktion fungerer bedst, når feltet **Tildel allokeringskriterier** er indstillet til at _Overvej antal_.
+        Når denne indstilling er angivet til *Ja* , og hvis det ikke muligt allokere noget efterspørgsel, vil der blive oprettet bevægelsesarbejde for at fjerne lager fra lokationer, hvor der er lager, men hvor der ikke er sket nogen allokering. Skabelonen køres derefter igen. Denne gang ignoreres lageret på lokationerne. Denne funktion fungerer bedst, når feltet **Tildel allokeringskriterier** er indstillet til at _Overvej antal_.
 
     - **Brug af fast lokation:** _Kun faste lokationer til produktet_
 
@@ -188,7 +189,7 @@ For hver skabelon, du opretter, skal du udføre disse trin for at tilføje en li
 
 1. Vælg den linje, hvor feltet **Rækkefølge** er angivet til *2*.
 1. Vælg **Rediger forespørgsel**.
-1. Gå til fanen **Interval**, og vælg **Tilføj** for at føje en linje til gitteret.
+1. Gå til fanen **Interval** , og vælg **Tilføj** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
     - **Tabel:** *Lokationer*
@@ -241,7 +242,7 @@ Der skal oprettes mindst én lokationsvejledning, der understøtter allokeringsp
 ##### <a name="edit-the-query"></a>Rediger forespørgslen
 
 1. Vælg **Rediger forespørgsel** i oversigtspanelet **Handlinger for lokationsvejledninger**.
-1. Gå til fanen **Interval**, og vælg **Tilføj** for at føje en linje til gitteret.
+1. Gå til fanen **Interval** , og vælg **Tilføj** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
     - **Tabel:** *Lokationer*
@@ -259,7 +260,7 @@ I dette scenarie skal du bruge de indbyggede eksempeldata og oprette de poster, 
 
 #### <a name="use-the-usmf-sample-data"></a>Brug af USMF-eksempeldata
 
-Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
 
 #### <a name="create-demand"></a>Oprette efterspørgsel
 
@@ -267,7 +268,7 @@ Udfør følgende trin for at oprette den efterspørgsel, du vil anvende allokeri
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette en ny salgsordre.
-1. Gå til dialogboksen **Opret salgsordre**, og vælg **US-007** i feltet _Debitorkonto_.
+1. Gå til dialogboksen **Opret salgsordre** , og vælg **US-007** i feltet _Debitorkonto_.
 1. Vælg _61_ i feltet **Lagersted**.
 1. Vælg **OK**.
 1. Den nye indkøbsordre åbnes. Den indeholder en tom linje i oversigtspanelet **Salgsordrelinjer**. Angiv følgende værdier på denne linje:
@@ -282,7 +283,7 @@ Udfør følgende trin for at oprette den efterspørgsel, du vil anvende allokeri
 
 1. Vælg **Gem**.
 1. Vælg **Ny** for at oprette en anden salgsordre.
-1. Gå til dialogboksen **Opret salgsordre**, og vælg **US-008** i feltet _Debitorkonto_.
+1. Gå til dialogboksen **Opret salgsordre** , og vælg **US-008** i feltet _Debitorkonto_.
 1. Vælg _61_ i feltet **Lagersted**.
 1. Den nye indkøbsordre åbnes. Den indeholder en tom linje i oversigtspanelet **Salgsordrelinjer**. Angiv følgende værdier på denne linje:
 
@@ -297,7 +298,7 @@ Når alle de nødvendige elementer er på plads, som beskrevet i forrige afsnit,
 
 #### <a name="generate-demand"></a>Generér behov
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Genopfyldning \> Allokeringsskabeloner**, og vælg den allokeringsskabelon, du oprettede tidligere.
+1. Gå til **Lokationsstyring \> Konfiguration \> Genopfyldning \> Allokeringsskabeloner** , og vælg den allokeringsskabelon, du oprettede tidligere.
 1. Vælg **Opret efterspørgsel** i handlingsruden. Denne kommando evaluerer al efterspørgsel, der findes i systemet, og som svarer til allokeringsskabelonforespørgslen. Den samlede efterspørgsel i alle ordrer konsolideres derefter til én linje pr. antal/måleenhed. Der vises en orienterende meddelelse, når processen er fuldført.
 
 #### <a name="slotting-demand"></a>Allokeringsbehov
@@ -343,7 +344,7 @@ Når alle de påkrævede elementer er på plads, kan du konfigurere, at allokeri
     - Opret genopfyldningsarbejde
 
     > [!NOTE]
-    > Allokeringstrinnene er progressive. Hvis du vil vælge *Find efterspørgsel*, skal du først vælge *Opret efterspørgsel*.
+    > Allokeringstrinnene er progressive. Hvis du vil vælge *Find efterspørgsel* , skal du først vælge *Opret efterspørgsel*.
 
 1. Angiv den allokeringsskabelon, der skal bruges.
 1. Angiv, at gentagelsen skal køres automatisk, hvis du vil.

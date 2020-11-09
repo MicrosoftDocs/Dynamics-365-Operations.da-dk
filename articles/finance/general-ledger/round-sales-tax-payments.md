@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: yijialuan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275668"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014953"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsafregninger og afrundingsregler
 
@@ -54,7 +54,7 @@ Følgende tabel viser, hvordan et beløb på 98.765,43 afrundes ved hjælp af hv
 > Hvis afrundingsværdien er angivet til 0,00, gælder følgende:
 >
 > - Ved normal afrunding er afrundingsfunktionen den samme som for **Afrunding = 0,01**.
-> - I forbindelse med **Indstilling for afrundingsform**, **Nedad**, **Oprunding** og **Egen fordel** er funktionsmåden den samme som for **Afrunding = 1,00**.
+> - I forbindelse med **Indstilling for afrundingsform** , **Nedad** , **Oprunding** og **Egen fordel** er funktionsmåden den samme som for **Afrunding = 1,00**.
 
 | Indstilling for afrundingsform                | Afrundingsværdi = 0,01 | Afrundingsværdi = 0,10 | Afrundingsværdi = 1,00 | Afrundingsværdi = 100,00 | Afrundingsværdi = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

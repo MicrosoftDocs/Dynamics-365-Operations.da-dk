@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4afa037ce9e446402128e4908a61ed32a30ebd59
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f2e1bcd220f0cd94fb1515e42fd3f8250c1c621
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986944"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016349"
 ---
 # <a name="shipment-consolidation-policies"></a>Forsendelseskonsolideringspolitikker
 
-Processen til forsendelseskonsolidering, der bruger politikker for forsendelseskonsolidering, giver mulighed for automatiseret forsendelseskonsolidering og manuel frigivelse til lageret. Den automatiserede konsolidering, der var tilgængelig, før denne funktion blev introduceret, havde faste felter og var baseret på feltet **Konsolider forsendelse ved udlevering til lagersted**, der var angivet for et lagersted.
+Processen til forsendelseskonsolidering, der bruger politikker for forsendelseskonsolidering, giver mulighed for automatiseret forsendelseskonsolidering og manuel frigivelse til lageret. Den automatiserede konsolidering, der var tilgængelig, før denne funktion blev introduceret, havde faste felter og var baseret på feltet **Konsolider forsendelse ved udlevering til lagersted** , der var angivet for et lagersted.
 
 Der bruges politikker for forsendelseskonsolidering til følgende funktioner:
 
@@ -39,7 +39,7 @@ Før der blev introduceret politikker for forsendelseskonsolidering, var konsoli
 
 Forespørgsler bruges til at identificere den politik for forsendelseskonsolidering, der gælder, og derefter bestemmer et redigerbart sæt felter, hvordan lastlinjerne grupperes på forsendelsesniveau. (Dette mønster ligner det mønster, som bølgeskabeloner følger). Derudover er indstillingen **Konsolider med eksisterende forsendelser** føjet til hver politik. Når denne indstilling er aktiveret, finder proceduren *Frigiv til lagersted* forsendelser til konsolidering ved at søge blandt eksisterende forsendelser, der er blevet oprettet på baggrund af samme konsolideringspolitik. I dette tilfælde vil systemet vælge en eksisterende forsendelse eller last i stedet for at oprette en ny. Systemet vil dog kun konsolidere med eksisterende forsendelser, der har statussen *Åben*. Forsendelser, der tilhører en bølgefrigivelse med statussen *Frigivet* eller højere, betragtes ikke som mål for konsolideringen.
 
-Når politikkerne for forsendelseskonsolidering er gjort tilgængelige, skjules indstillingen **Konsolider forsendelse ved frigivelse til lagersted**, der tidligere var tilgængelig på siden **Lagersted**. For at hjælpe dig med at overføre til den nye funktion til konsolidering af forsendelser opretter en funktion på siden **Politikker for forsendelseskonsolidering** en standardpolitik, der automatisk medtager den gamle indstilling for eksisterende lagersteder. Når standardpolitikken er oprettet, tages der ikke længere højde for indstillingen **Konsolider forsendelse ved frigivelse til lagersted** på konfigurationssiden **Lagersteder**.
+Når politikkerne for forsendelseskonsolidering er gjort tilgængelige, skjules indstillingen **Konsolider forsendelse ved frigivelse til lagersted** , der tidligere var tilgængelig på siden **Lagersted**. For at hjælpe dig med at overføre til den nye funktion til konsolidering af forsendelser opretter en funktion på siden **Politikker for forsendelseskonsolidering** en standardpolitik, der automatisk medtager den gamle indstilling for eksisterende lagersteder. Når standardpolitikken er oprettet, tages der ikke længere højde for indstillingen **Konsolider forsendelse ved frigivelse til lagersted** på konfigurationssiden **Lagersteder**.
 
 Du kan bruge siden **Frigiv til lager** til manuelt at tilsidesætte den relevante konsolideringspolitik på samme måde, som du kan tilsidesætte opfyldningspolitikker.
 
@@ -55,7 +55,7 @@ I dette afsnit beskrives de sider, kommandoer og funktioner, der ændres eller t
 
 ### <a name="shipment-consolidation-policies-page"></a>Siden Politikker for forsendelseskonsolidering
 
-Politikker differentieres via typen af arbejdsordre. Typen **Salgsordrer** repræsenterer forsendelser af typen _Salesordre_, og**Flytteordrer** repræsenterer forsendelser af typen  _Flytteafgang_.
+Politikker differentieres via typen af arbejdsordre. Typen **Salgsordrer** repræsenterer forsendelser af typen _Salesordre_ , og **Flytteordrer** repræsenterer forsendelser af typen  _Flytteafgang_.
 
 Enhver politik for forsendelseskonsolidering har en forespørgsel, der definerer, hvornår den anvendes, og et sekvensnummer, der bestemmer udførelsesrækkefølgen. Konsolidering anvendes for hver entydig kombination af de valgte felter. En yderligere parameter, der angives, bruges til konsolidering med eksisterende (åbne) forsendelser. Politikkerne evalueres og anvendes, hver gang der oprettes en ny forsendelse (før bølgebehandling).
 
@@ -122,7 +122,7 @@ Følgende tabel viser en oversigt over, hvordan forsendelseskonsolidering funger
 | Uden politikker for forsendelseskonsolidering | Med politikker for forsendelseskonsolidering |
 |---|----|
 | Ikke relevant | Salgs- eller flytteforsendelser, der er valgt til konsolidering, skal have samme konsolideringspolitik som den forsendelse, der oprettes, eller de skal knyttes til en åben forsendelse (når indstillingen **Konsolider med eksisterende forsendelser** er aktiveret). |
-| Proceduren *Frigiv til lager* søger ikke mellem eksisterende forsendelser for at finde en forsendelse til konsolidering. Det er kun forsendelser, der oprettes af en aktuel forekomst af proceduren *Frigiv til lager*, der bruges til at finde en forsendelse til konsolidering. | Hvis indstillingen **Konsolider med eksisterende forsendelser** er aktiveret for en konsolideringspolitik, der bruges i øjeblikket, søger proceduren *Frigiv til lagersted* mellem eksisterende forsendelser, der er oprettet på basis af samme konsolideringspolitik, for at finde en forsendelse til konsolidering. Hvis du derfor har to politikker, vil en forsendelse, der oprettes på basis af politik 2, aldrig blive konsolideret med en forsendelse, der er oprettet på basis af politik 1. |
+| Proceduren *Frigiv til lager* søger ikke mellem eksisterende forsendelser for at finde en forsendelse til konsolidering. Det er kun forsendelser, der oprettes af en aktuel forekomst af proceduren *Frigiv til lager* , der bruges til at finde en forsendelse til konsolidering. | Hvis indstillingen **Konsolider med eksisterende forsendelser** er aktiveret for en konsolideringspolitik, der bruges i øjeblikket, søger proceduren *Frigiv til lagersted* mellem eksisterende forsendelser, der er oprettet på basis af samme konsolideringspolitik, for at finde en forsendelse til konsolidering. Hvis du derfor har to politikker, vil en forsendelse, der oprettes på basis af politik 2, aldrig blive konsolideret med en forsendelse, der er oprettet på basis af politik 1. |
 | Ikke relevant | Hvis en liste over felter til konsolideringspolitik er tom, eller hvis der ikke kan findes en politik, oprettes der en ny forsendelse for hver salgsordre- eller flytteordrelinje. |
 | Følgende konsolideringsfelt definerer den entydige kombination af værdier, der bruges til at konsolidere forsendelser for en *flyttelinje*. (De øvrige felter ignoreres.)<ul><li>Ordrenummer (OrderNum)</li></ul> | Følgende konsolideringsfelter definerer den entydige kombination af værdier, der bruges til at konsolidere forsendelser for en *flyttelinje*. (De øvrige felter ignoreres.)<ul><li>Ordrenummer (OrderNum)</li><li>Leveringsmodtager (DeliveryName)</li><li>Postadresse (DeliveryPostalAddress)</li><li>ISO-landekode (CountryRegionISOCode)</li><li>Adresse (Address)</li><li>Lokation (InventSiteId)</li><li>Lagersted (InventLocationId)</li><li>Fragtmand (CarrierCode)</li><li>Fragttjeneste (CarrierServiceCode)</li><li>Leveringsmåde (ModeCode)</li><li>Fragtgruppe (CarrierGroupCode)</li><li>Leveringsbetingelser (DlvTermId)</li></ul>Disse felter er de eneste felter, der er tilgængelige og initialiseret, når der oprettes en ny forsendelse. |
 | Følgende konsolideringsfelter definerer den entydige kombination af værdier, der bruges til at konsolidere forsendelser for en *salgslinje*. (De øvrige felter ignoreres.)<ul><li>Ordrenummer (OrderNum)</li><li>Kundereference (CustomerRef)</li><li>Debitorrekvisition (CustomerReq)</li><li>Leveringsbetingelser (DlvTermId)</li></ul> | Følgende konsolideringsfelter definerer den entydige kombination af værdier, der bruges til at konsolidere forsendelser for en *salgslinje*. (De øvrige felter ignoreres.)<ul><li>Ordrenummer (OrderNum)</li><li>Kontonummer (AccountNum)</li><li>Leveringsmodtager (DeliveryName)</li><li>Postadresse (DeliveryPostalAddress)</li><li>ISO-landekode (CountryRegionISOCode)</li><li>Adresse (Address)</li><li>Lokation (InventSiteId)</li><li>Lagersted (InventLocationId)</li><li>Fragtmand (CarrierCode)</li><li>Fragttjeneste (CarrierServiceCode)</li><li>Leveringsmåde (ModeCode)</li><li>Fragtgruppe (CarrierGroupCode)</li><li>Mægler-id (BrokerCode)</li><li>Retning (LoadDirection)</li><li>Leveringsbetingelser (DlvTermId)</li><li>Kundereference (CustomerRef)</li><li>Debitorrekvisition (CustomerReq)</li></ul>Disse felter er de eneste felter, der er tilgængelige og initialiseret, når der oprettes en ny forsendelse. |

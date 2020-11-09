@@ -2,7 +2,7 @@
 title: Angive parametre for administration af frynsegoder
 description: Konfigurere parametre for administration af frynsegoder i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: cb9dd6eb8ef840dab54eabab8526200a3a8e21f0
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599350"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057022"
 ---
 # <a name="set-benefits-management-parameters"></a>Angive parametre til administration af frynsegoder
 
@@ -33,7 +33,7 @@ Før du kan oprette orlovsplaner i Microsoft Dynamics 365 Human Resources, skal 
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Delte Human Resources-parametre** under **Konfiguration**.
 
-2. Angiv værdier for følgende felter under fanen **Generelt**:
+2. Angiv værdier for følgende felter under fanen **Generelt** :
 
    | Felt | Beskrivelse |
    | --- | --- |
@@ -56,9 +56,9 @@ Før du kan oprette orlovsplaner i Microsoft Dynamics 365 Human Resources, skal 
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Parametre for personale** under **Konfiguration**.
 
-2. Angiv værdier for følgende felter under fanen **Medarbejderselvbetjening**:
+2. Angiv værdier for følgende felter under fanen **Frynsegodeadministration** :
 
-   | Felt | Beskrivelse |
+   | Felt | Betegnelse |
    | --- | --- |
    | **Frynsegodebekræftelse** | Den kontroltekst, der skal bruges under betaling af selvbetjeningsfrynsegoder. |
    | **Vælg automatisk udpegede modtagere** | Angiver, om der automatisk skal vælges afhængige og modtagere baseret på deres berettigelse til planindstillinger. |

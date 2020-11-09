@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ab0a6e7de02b4b69d3f7a129392a1057482f0c26
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826329"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017224"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
@@ -46,7 +46,7 @@ Du kan se en hurtig demonstration af, hvordan du frigiver stykliste- og formelli
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigive stykliste- og formellinjer ved hjælp af et batchjob
 
-Batchjobbet **Automatisk frigivelse af stykliste og formellinjer** gennemgår valgte stykliste- og formellinjer, der har et restantal, der skal frigives. Batchjobbet finder kun ordrer, der har status **Frigivet**, **Startet** eller **Færdigmeldt**. Hvis der er et restantal, der skal frigives, for en stykliste- eller formellinje, frigiver jobbet op til det antal, der kan dækkes af det antal, der allerede er fysisk reserveret, og det antal, der er fysisk disponibelt.
+Batchjobbet **Automatisk frigivelse af stykliste og formellinjer** gennemgår valgte stykliste- og formellinjer, der har et restantal, der skal frigives. Batchjobbet finder kun ordrer, der har status **Frigivet** , **Startet** eller **Færdigmeldt**. Hvis der er et restantal, der skal frigives, for en stykliste- eller formellinje, frigiver jobbet op til det antal, der kan dækkes af det antal, der allerede er fysisk reserveret, og det antal, der er fysisk disponibelt.
 
 ### <a name="example-of-a-batch-job-release"></a>Eksempel på en batchjobfrigivelse
 
@@ -60,15 +60,15 @@ Batchjobbet **Automatisk frigivelse af stykliste og formellinjer** gennemgår va
 
 ### <a name="batch-job-setup"></a>Konfiguration af batchjob
 
-I forespørgslen for batchjobbet **Automatisk frigivelse af stykliste og formellinjer**, du kan angive et filterkriterium for at angive, hvor mange dage i forvejen jobbet skal søge efter linjer, der har ikke-frigivne antal. I forespørgslen for jobbet i feltet **Råvaredato** skal du bruge funktionen **(LessThanDate())** som et filterkriterium.
+I forespørgslen for batchjobbet **Automatisk frigivelse af stykliste og formellinjer** , du kan angive et filterkriterium for at angive, hvor mange dage i forvejen jobbet skal søge efter linjer, der har ikke-frigivne antal. I forespørgslen for jobbet i feltet **Råvaredato** skal du bruge funktionen **(LessThanDate())** som et filterkriterium.
 
-I følgende illustration vises en produktionsordre, der har to job, 10 og 20, der dækker samling og emballage for produktionsordren. Hvert job er konfigureret til at bruge en mængde materiale. I denne illustration er tidshorisonten for frigivelsen, som er angivet af den grønne pil under tidslinjen, lig med antallet af dage, der er angivet i kriteriet **(LessThanDate())**. F.eks. angiver **(LessThanDate(2))**, at jobbet skal søge efter ikke-frigivne mængder inden for en tidshorisont på to dage.
+I følgende illustration vises en produktionsordre, der har to job, 10 og 20, der dækker samling og emballage for produktionsordren. Hvert job er konfigureret til at bruge en mængde materiale. I denne illustration er tidshorisonten for frigivelsen, som er angivet af den grønne pil under tidslinjen, lig med antallet af dage, der er angivet i kriteriet **(LessThanDate())**. F.eks. angiver **(LessThanDate(2))** , at jobbet skal søge efter ikke-frigivne mængder inden for en tidshorisont på to dage.
 
 ![Eksempel på en produktionsordre, der har to batchjob](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frigive materiale pr. operationsnummer eller i forhold til antallet af færdigvarer
 
-Hvis du frigiver materialer ved hjælp af parameterindstillingen **Ved frigivelse af produktionsordre**, og du foretager en manuel frigivelse, har du to muligheder for at styre materialefrigivelsen:
+Hvis du frigiver materialer ved hjælp af parameterindstillingen **Ved frigivelse af produktionsordre** , og du foretager en manuel frigivelse, har du to muligheder for at styre materialefrigivelsen:
 
 - Frigive materiale pr. operationsnummer.
 - Frigive materiale i forhold til antallet af færdigvarer.
@@ -77,7 +77,7 @@ Hvis du frigiver materialer ved hjælp af parameterindstillingen **Ved frigivels
 
 Hvis du vil styre de operationer, som materialet skal frigives til, skal du bruge siden **Frigiv til lagersted**.
 
-- Vælg **Produktionsstyring** \> **Produktionsordrer** \> **Alle produktionsordrer**, vælg en produktionsordre, og vælg derefter **Frigiv til lagersted** under fanen **Lagersted**. Brug derefter **Fra opr.nr.** og **Til opr.nr.** til at angive rækken af operationsnumre.
+- Vælg **Produktionsstyring** \> **Produktionsordrer** \> **Alle produktionsordrer** , vælg en produktionsordre, og vælg derefter **Frigiv til lagersted** under fanen **Lagersted**. Brug derefter **Fra opr.nr.** og **Til opr.nr.** til at angive rækken af operationsnumre.
 
 I følgende illustration vises en produktionsordre, der har to operationer, 10 og 20. Hvis du i dette eksempel begrænser frigivelsen til operation 10, frigives kun materiale M9203.
 
@@ -89,11 +89,11 @@ For en hurtig demonstration af, hvordan du frigiver materiale i forhold til mæn
 
 Du kan frigive råvarer for en del af færdigvarerne eller i en bestemt enhed.
 
-- Hvis du vil frigive råvarer for en del af færdigvarerne, skal du vælge **Produktionsstyring** \> **Produktionsordrer** \> **Alle produktionsordrer**, vælge en produktionsordre og derefter vælge **Frigiv til lagersted** under fanen **Lagersted**. Derefter skal du angive et antal i feltet **Antal**.
+- Hvis du vil frigive råvarer for en del af færdigvarerne, skal du vælge **Produktionsstyring** \> **Produktionsordrer** \> **Alle produktionsordrer** , vælge en produktionsordre og derefter vælge **Frigiv til lagersted** under fanen **Lagersted**. Derefter skal du angive et antal i feltet **Antal**.
 
     F.eks. er der oprettet og planlagt en produktionsordre for 1.000 stk. Den tilsynsførende planlægger produktionen af 100 stk. for det næste skift og ønsker kun at frigive materialer til dette skift. I dette tilfælde kan den tilsynsførende bruge feltet **Antal** til at frigive materialer til de 100 stk., der er planlagt for det næste skift.
 
-- Hvis du vil frigive råvarer i en bestemt enhed, skal du vælge **Produktionsstyring** \> **Produktionsordrer** \> **Alle produktionsordrer**, vælge en produktionsordre og derefter vælge **Frigiv til lagersted** under fanen **Lagersted**. Brug derefter feltet **Enhed** til at vælge enheden for færdigvaren til at frigive materialet i.
+- Hvis du vil frigive råvarer i en bestemt enhed, skal du vælge **Produktionsstyring** \> **Produktionsordrer** \> **Alle produktionsordrer** , vælge en produktionsordre og derefter vælge **Frigiv til lagersted** under fanen **Lagersted**. Brug derefter feltet **Enhed** til at vælge enheden for færdigvaren til at frigive materialet i.
 
     De enheder, der er tilgængelige, defineres i enhedens seriegruppe-id for færdigvaren.
 

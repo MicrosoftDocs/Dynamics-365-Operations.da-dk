@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172917"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997570"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Ofte stillede spørgsmål om bootstraping med firmadata
  
@@ -37,7 +36,7 @@ Du har muligvis en eksisterende Common Data Service eller anden Dynamics 365-app
 ## <a name="when-should-i-use-bootstrapping"></a>Hvornår bør jeg bruge bootstrapping? 
 Du bør bruge bootstrapping, før du aktiverer enhedstilknytninger for dobbeltskrivning (under trin #5).  
 1. Hvis du vil konfigurere forbindelsen med dobbeltskrivning mellem forekomster af din Finance and Operations-app og Common Data Service- eller anden Dynamics 365-app, skal du logge på Finance and Operations-appen som administrator. 
-2. Gå til modulet **Datastyring**, og klik på knappen **Dobbeltskrivning-**. Derved startes **Data Integratoren**. 
+2. Gå til modulet **Datastyring** , og klik på knappen **Dobbeltskrivning-**. Derved startes **Data Integratoren**. 
 3. Opret forbindelsen med dobbeltskrivning for et eller flere firmaer.  
     > [!div class="mx-imgBorder"]
     > ![Opret forbindelsen med dobbeltskrivning](media/dual-write-boot-1.png)
@@ -54,14 +53,14 @@ Kodeeksemplet er et C#-program, du kan indlæse i Visual Studio. Det tager NuGet
 
 Når du har udpakket og åbnet løsningen i Visual Studio og gendannet NuGet-pakkerne, skal du søge efter **OPGAVE** i koden. Hver beslutning, du skal træffe, hvis du vil bootstrappe firmaoplysninger, noteres af **OPGAVE** med kodeeksemplet for en vedtaget implementering. 
 
-Kodeeksemplet viser kun en af de mange måder, du kan kategorisere enhedsposter efter firma på. Ved at ændre logikken i sektionerne **OPGAVE**, kan du oprette din egen brugerdefineret kategorisering. 
+Kodeeksemplet viser kun en af de mange måder, du kan kategorisere enhedsposter efter firma på. Ved at ændre logikken i sektionerne **OPGAVE** , kan du oprette din egen brugerdefineret kategorisering. 
  
 ## <a name="what-should-i-expect"></a>Hvad kan jeg forvente?
-Eksempelprogrammet giver dig som standard mulighed for at angive en ordbog over kodetilknytninger for virksomhedsenhed-til-firma. Alle de enheder, du bootstrapper med et **OwningBusinessUnit**-felt, angives automatisk til at bruge det angivne firma. En enhed uden et **OwningBusinessUnit**-felt, såsom et produkt, vil angive firmaet ud fra tilknytningen med en tom værdi for virksomhedsenhed.
+Eksempelprogrammet giver dig som standard mulighed for at angive en ordbog over kodetilknytninger for virksomhedsenhed-til-firma. Alle de enheder, du bootstrapper med et **OwningBusinessUnit** -felt, angives automatisk til at bruge det angivne firma. En enhed uden et **OwningBusinessUnit** -felt, såsom et produkt, vil angive firmaet ud fra tilknytningen med en tom værdi for virksomhedsenhed.
 
-Konsolprogrammet forventer ét parameter, enten **–simuler** eller **–anvend**. Hvis du bruger kommandolinjeparametret **–simuler** vil ingen data blive opdateret. Der genereres alene **simulering<entityname>.csv**-filer i samme mappe som værktøjet; et for hver enhed, der ville være blevet opdateret. Du kan gennemse disse filer gentagne gang, mens du arbejder, for at sikre dig, at koden opdaterer firmaværdierne som forventet. 
+Konsolprogrammet forventer ét parameter, enten **–simuler** eller **–anvend**. Hvis du bruger kommandolinjeparametret **–simuler** vil ingen data blive opdateret. Der genereres alene **simulering<entityname>.csv** -filer i samme mappe som værktøjet; et for hver enhed, der ville være blevet opdateret. Du kan gennemse disse filer gentagne gang, mens du arbejder, for at sikre dig, at koden opdaterer firmaværdierne som forventet. 
 
-Når du er færdig med de simulerede opdateringer, skal du bruge parametret **–anvend**. Derved opdateres alle poster, der aktuelt har en forkert firmaværdi, i batcher af 1000 poster ad gangen (som standard). Koden er idempotent som angivet, hvilket betyder, at du kan køre den igen, og kun de firmaer, der er tildelt forkert, vil blive opdateret. Når der køres med koden **–anvend**, vil koden generere CSV-filer med de ændringer, der er foretaget, hvilket vil blive benævnt **anvendt_<entityname>.csv**. 
+Når du er færdig med de simulerede opdateringer, skal du bruge parametret **–anvend**. Derved opdateres alle poster, der aktuelt har en forkert firmaværdi, i batcher af 1000 poster ad gangen (som standard). Koden er idempotent som angivet, hvilket betyder, at du kan køre den igen, og kun de firmaer, der er tildelt forkert, vil blive opdateret. Når der køres med koden **–anvend** , vil koden generere CSV-filer med de ændringer, der er foretaget, hvilket vil blive benævnt **anvendt_<entityname>.csv**. 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;

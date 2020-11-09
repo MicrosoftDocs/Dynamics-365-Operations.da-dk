@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383015"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016142"
 ---
 # <a name="define-cycle-counting"></a>Definere cyklusoptælling 
 
@@ -82,7 +83,7 @@ Cyklusoptælling er en lagerproces, du kan bruge til at overvåge disponible var
 8. Markér den valgte række på listen.
 9. Vælg en værdi i feltet **Kriterier**.
 10. Klik på **OK**.
-11. Skriv et tal i feltet **Dage mellem cyklusoptællinger**. Hvis f.eks. antallet i feltet **Dage mellem cyklusoptællinger**, er indstillet til 5, oprettes der cyklusoptællingsarbejde, hver gang der er gået fem dage. Men cyklusoptællingsarbejdet imidlertid behandles på dag tre, oprettes det næste cyklusoptællingsarbejde, fem dage efter at den seneste cyklusoptælling blev behandling, nemlig på dag 8.  
+11. Skriv et tal i feltet **Dage mellem cyklusoptællinger**. Hvis f.eks. antallet i feltet **Dage mellem cyklusoptællinger** , er indstillet til 5, oprettes der cyklusoptællingsarbejde, hver gang der er gået fem dage. Men cyklusoptællingsarbejdet imidlertid behandles på dag tre, oprettes det næste cyklusoptællingsarbejde, fem dage efter at den seneste cyklusoptælling blev behandling, nemlig på dag 8.  
 12. Klik på **Gem**.
 13. Klik på **Ny**.
 14. Indtast et tal i feltet **Serienummer**. Sorteringen udføres fra det mindste tal til det største tal. Værdien skal være større end 0 (nul).  

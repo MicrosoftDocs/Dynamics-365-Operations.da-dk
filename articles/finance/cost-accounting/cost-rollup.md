@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976373"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006160"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -76,7 +76,7 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 
 **Dimensionshierarki**
 
-|              | Intervaller for dimensionsmedlemmer |                     |
+|    &nbsp;    | Intervaller for dimensionsmedlemmer | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Noder**        | **Fra dimensionsmedlem**   | **Til dimensionsmedlem** |
 | Organisation |                         |                     |
@@ -97,7 +97,7 @@ Et dimensionshierarki, der opfylder kravene i politikken, kan konfigureres på f
 
 **Dimensionshierarki**
 
-|                         | Intervaller for dimensionsmedlemmer |                     |
+|      &nbsp;             | Intervaller for dimensionsmedlemmer |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Noder                   | Fra dimensionsmedlem   | Til dimensionsmedlem |
 | Driftsregnskab |                         |                     |
@@ -105,7 +105,7 @@ Et dimensionshierarki, der opfylder kravene i politikken, kan konfigureres på f
 
 Når finansposterne er behandlet, ser omkostningssaldoposten efter omkostningsobjekt sådan ud.
 
-|                      | **Omkostningsobjekt** |           |           |           | **Sum**     |
+|      &nbsp;          | **Omkostningsobjekt** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Sum**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Omkostningselement**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Elektricitet** | 100,00          | 200.00    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Hvis du vil vide, hvordan omkostninger flyder mellem bærerne i organisationen, 
 
 Dimensionsmedlemmer for omkostningselement kan konfigureres på følgende måde.
 
-| Omkostningselementer | Type          |               |
+| Omkostningselementer | Type          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Elektricitet   | Primær       |
 | 1002          | Lønninger      | Primær       |
@@ -179,14 +179,14 @@ Dimensionshierarkiet **Driftsregnskab** skal opdateres med de nye dimensionsmedl
 
 **Dimensionshierarki**
 
-|                         | Intervaller for dimensionsmedlemmer |                     |
+|      &nbsp;             | Intervaller for dimensionsmedlemmer |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Noder                   | Fra dimensionsmedlem   | Til dimensionsmedlem |
 | Driftsregnskab |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Primære omkostninger                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundære omkostninger                         | **SC-CC001**            | **SC-CC004**        |
 
-Opret en **Politik for omkostningstotaler**, hvor hver bærer er knyttet til et tilsvarende omkostningselement af typen **Sekundære**.
+Opret en **Politik for omkostningstotaler** , hvor hver bærer er knyttet til et tilsvarende omkostningselement af typen **Sekundære**.
 
 **Politikker for omkostningstotaler**
 
@@ -211,7 +211,7 @@ Opret en **Politik for omkostningstotaler**, hvor hver bærer er knyttet til et 
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Kladde for omkostningsfordeling | Regnskabsår                 | 2017    | 1. Periode | Beregning af fast omkostning / 02-01-2017 23:51:00 / Finans /2017 / periode 1 |
 
-Systemet anvender nu **Politik for omkostningstotaler**, når det opretter **Kladdeposteringer for omkostningsobjektsaldo**.
+Systemet anvender nu **Politik for omkostningstotaler** , når det opretter **Kladdeposteringer for omkostningsobjektsaldo**.
 
 **Kladdeposteringer for omkostningsobjektsaldo**
 
@@ -223,9 +223,9 @@ Systemet anvender nu **Politik for omkostningstotaler**, når det opretter **Kla
 | 01-31-2017      | CC004       | Emballage    | SC-CC004 | Emballage | 15.717,25 |
 
 > [!NOTE]
-> Kladdeposteringerne oprettes ud fra reglerne i **Politik for omkostningstotaler**, hvis der findes en politik. Saldoen, der vises, er saldoen for beregningen af faste omkostninger.
+> Kladdeposteringerne oprettes ud fra reglerne i **Politik for omkostningstotaler** , hvis der findes en politik. Saldoen, der vises, er saldoen for beregningen af faste omkostninger.
 
-Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt**, der åbnes fra kladdeposteringerne, viser, hvordan saldoen opnås.
+Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt** , der åbnes fra kladdeposteringerne, viser, hvordan saldoen opnås.
 
 **Eksempel: Kladdepostering for omkostningsobjekt CC002 Finans**
 
@@ -258,7 +258,7 @@ Dimensionshierarkierne gør det muligt at få vist data på forskellige aggreger
 
 Her er et eksempel på en Power Pivot-rapportering i Excel.
 
-| **Driftsregnskab** | **Omkostningsobjekt** |                |               |               |  **Sum**    |
+| **Driftsregnskab** | **Omkostningsobjekt** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Sum**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primære omkostninger**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -274,9 +274,9 @@ Her er et eksempel på en Power Pivot-rapportering i Excel.
 
 Ved hjælp af **Politik for omkostningstotaler** og **Omkostningselementer af typen Sekundær** kan du lade den primære omkostning pr. omkostningsobjekt til intern afrapportering være som den primære omkostning, der er tilbage efter **Beregning af fast omkostning**.
 
-Hvis det samme eksempel var foretaget uden at oprette **Politik for omkostningstotaler**, ville være rapporteringsresultatet være som vist nedenfor. Omkostningen flyder korrekt, men sporbarhed og indsigt i, hvordan omkostningen forløber mellem bærerne, går tabt.
+Hvis det samme eksempel var foretaget uden at oprette **Politik for omkostningstotaler** , ville være rapporteringsresultatet være som vist nedenfor. Omkostningen flyder korrekt, men sporbarhed og indsigt i, hvordan omkostningen forløber mellem bærerne, går tabt.
 
-| **Driftsregnskab** | **Omkostningsobjekt** |           |               |               |          **Sum**  |
+| **Driftsregnskab** | **Omkostningsobjekt** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Sum**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primære omkostninger**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

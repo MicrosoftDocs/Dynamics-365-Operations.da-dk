@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987112"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016856"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidere forsendelser, når de frigives til lagerstedet, ved hjælp af automatisk frigivelse af salgsordrer
 
@@ -33,7 +33,7 @@ I løbet af scenariet opretter du sæt af salgsordrer og frigiver hvert sæt til
 
 ## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
+Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF** , før du går i gang.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Konfigurere politikker for forsendelseskonsolidering og produktfiltre
 
@@ -43,7 +43,7 @@ I det scenarie, der beskrives her, antages det, at du allerede har aktiveret fun
 
 Start med at oprette en samling salgsordrer, som du kan arbejde med. Du skal arbejde med et lagersted, der er aktiveret til avancerede lagerstedsprocesser. Medmindre der udtrykkeligt er angivet et andet lagersted, skal det samme lagersted anvendes til hvert af følgende sæt ordrer.
 
-Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgsordrer, der har de indstillinger, der er beskrevet i følgende underafsnit.
+Gå til **Debitor \> Ordrer \> Alle salgsordrer** , og opret en samling af salgsordrer, der har de indstillinger, der er beskrevet i følgende underafsnit.
 
 ### <a name="create-order-set-1"></a>Opret ordresæt 1
 
@@ -56,7 +56,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 #### <a name="sales-order-1-2"></a>Salgsordre 1-2
@@ -68,7 +68,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 #### <a name="sales-order-1-3"></a>Salgsordre 1-3
@@ -80,12 +80,12 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 1. Tilføj en anden ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0002* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0002* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
     - **Leveringsmåde:** *Airwa-Air*
 
@@ -99,12 +99,12 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *M9200* (en vare, hvor filtret **Kode 4** er indstillet til *Brændbar*)
+    - **Varenummer:** *M9200* (en vare, hvor filtret **Kode 4** er indstillet til *Brændbar* )
     - **Antal:** *1.00*
 
 1. Tilføj en anden ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *M9201* (en vare, hvor filtret **Kode 4** er indstillet til *Eksplosiv*)
+    - **Varenummer:** *M9201* (en vare, hvor filtret **Kode 4** er indstillet til *Eksplosiv* )
     - **Antal:** *1.00*
     - **Leveringsmåde:** *Airwa-Air*
 
@@ -118,12 +118,12 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *M9200* (en vare, hvor filtret **Kode 4** er indstillet til *Brændbar*)
+    - **Varenummer:** *M9200* (en vare, hvor filtret **Kode 4** er indstillet til *Brændbar* )
     - **Antal:** *1.00*
 
 1. Tilføj en anden ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *M9201* (en vare, hvor filtret **Kode 4** er indstillet til *Eksplosiv*)
+    - **Varenummer:** *M9201* (en vare, hvor filtret **Kode 4** er indstillet til *Eksplosiv* )
     - **Antal:** *1.00*
     - **Leveringsmåde:** *Airwa-Air*
 
@@ -141,7 +141,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 ### <a name="create-order-set-5"></a>Opret ordresæt 5
@@ -155,7 +155,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 #### <a name="sales-order-5-3"></a>Salgsordre 5-3
@@ -167,7 +167,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 ### <a name="create-order-set-6"></a>Opret ordresæt 6
@@ -181,7 +181,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 #### <a name="sales-orders-6-3-and-6-4"></a>Salgsordrer 6-3 og 6-4
@@ -193,7 +193,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 #### <a name="sales-orders-6-5-and-6-6"></a>Salgsordrer 6-5 og 6-6
@@ -207,7 +207,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 #### <a name="sales-orders-6-7-and-6-8"></a>Salgsordrer 6-7 og 6-8
@@ -221,7 +221,7 @@ Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret en samling af salgso
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
     - **Antal:** *1.00*
 
 ## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a>Automatisk frigivelse af salgsordrer til lagerstedet
@@ -236,7 +236,7 @@ For hvert sæt af salgsordrer, du har oprettet tidligere, skal du fuldføre de t
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
 1. Indstil feltet **Bølgeskabelontype** til *Forsendelse*.
-1. Find og vælg den bølgeskabelon, der er knyttet til det lagersted, du har brugt i de ordresæt, du har oprettet for dette scenarie. Hvis du f.eks. brugte lagerstedet *24*, skal du vælge bølgeskabelonen **24 Standard for forsendelse**. Hvis du brugte lagerstedet *61*, skal du vælge bølgeskabelonen **61 Forsendelse**.
+1. Find og vælg den bølgeskabelon, der er knyttet til det lagersted, du har brugt i de ordresæt, du har oprettet for dette scenarie. Hvis du f.eks. brugte lagerstedet *24* , skal du vælge bølgeskabelonen **24 Standard for forsendelse**. Hvis du brugte lagerstedet *61* , skal du vælge bølgeskabelonen **61 Forsendelse**.
 1. Vælg **Rediger** i handlingsruden.
 1. Angiv indstillingen **Udfør behandling af bølgen ved frigivelse til lagerstedet** til *Nej*.
 
@@ -244,8 +244,8 @@ For hvert sæt af salgsordrer, du har oprettet tidligere, skal du fuldføre de t
 
 1. Gå til **Lagerstedsstyring \> Frigiv til lagersted \> Automatisk frigivelse af salgsordrer**.
 1. Angiv feltet **Antal til frigivelse** til *Alle*.
-1. Gå til oversigtspanelet **Poster, der skal indgå**, og vælg **Filter** for at åbne forespørgselsdialogboksen.
-1. Gå til fanen **Område**, og vælg **Tilføj** for at tilføje en række, der har følgende indstillinger, til gitteret:
+1. Gå til oversigtspanelet **Poster, der skal indgå** , og vælg **Filter** for at åbne forespørgselsdialogboksen.
+1. Gå til fanen **Område** , og vælg **Tilføj** for at tilføje en række, der har følgende indstillinger, til gitteret:
 
     - **Tabel:** *Salgsordre*
     - **Afledt tabel:** *Salgsordre*
@@ -292,7 +292,7 @@ Når du er færdig, burde du kunne se, at følgende handlinger er sket:
 
 Følg den [grundlæggende procedure for frigivelse til lager](#release-procedure) for at frigive salgsordrerne fra ordresæt 4.
 
-Når du er færdig, burde du kunne se, at en eksisterende forsendelse (hvor feltet **Debitorrekvisition** er angivet til *1*) blev opdateret. Der blev føjet en ny linje til den.
+Når du er færdig, burde du kunne se, at en eksisterende forsendelse (hvor feltet **Debitorrekvisition** er angivet til *1* ) blev opdateret. Der blev føjet en ny linje til den.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Frigiv salgsordrer fra ordresæt 5
 
@@ -300,7 +300,7 @@ Følg den [grundlæggende procedure for frigivelse til lager](#release-procedure
 
 Når du er færdig, burde du kunne se, at følgende handlinger er sket:
 
-- En eksisterende forsendelse (hvor feltet **Debitorrekvisition** er angivet til *1*) blev opdateret. En linje fra salgsordren 5-3 (hvor feltet **Debitorrekvisition** er angivet til *1*) blev føjet til den.
+- En eksisterende forsendelse (hvor feltet **Debitorrekvisition** er angivet til *1* ) blev opdateret. En linje fra salgsordren 5-3 (hvor feltet **Debitorrekvisition** er angivet til *1* ) blev føjet til den.
 - Der blev oprettet en ny forsendelse, hvor linjerne fra salgsordrerne 5-1 og 5-2 er grupperet i én forsendelse.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Frigiv salgsordrer fra ordresæt 6

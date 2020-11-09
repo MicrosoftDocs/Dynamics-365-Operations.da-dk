@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 816bfc8b93f52fe91192874bcc1c8e605e41b582
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7091e8ba7940e358d77c69c63e26c8f3d9337713
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021967"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107250"
 ---
 # <a name="call-center-sales-functionality"></a>Funktionalitet til callcenter-salg
 
@@ -35,7 +35,7 @@ I Dynamics 365 Commerce er et callcenter en type kanal, som kan defineres i prog
 
 Callcenterfunktioner omfatter avancerede priser og kampagner, kataloger, gavekort, loyalitetsprogrammer og kuponer. Callcenterordrer bruges også af POS-programmet til at understøtte ordreopfyldningsscenarier på tværs af kanaler.
 
-Det er vigtigt at bemærke, at mens callcentermodulet kan anvendes af andre brancher end Commerce, er den aktuelle version af callcenterprogrammet ikke optimeret til brug i B2B-ordrebehandlingsscenarier eller scenarier, hvor ordrer har en stor mængde salgslinjer. Det anbefales, at brugere, som vil udnytte callcenterfunktionerne til anden ordrebehandling end behandling af almindelige transaktioner direkte til forbrugeren, tager sig tid til at teste og validere, at aktivering af callcenterfunktionaliteten opfylder deres krav til funktion og ydeevne.
+Det er vigtigt at bemærke, at mens callcentermodulet kan anvendes af andre brancher end Commerce, er den aktuelle version af callcenterprogrammet ikke optimeret til brug i B2B-ordrebehandlingsscenarier eller scenarier, hvor ordrer har et stort antal salgslinjer. Det anbefales, at brugere, som vil udnytte callcenterfunktionerne til anden ordrebehandling end behandling af almindelige transaktioner direkte til forbrugeren, tager sig tid til at teste og validere, at aktivering af callcenterfunktionaliteten opfylder deres krav til funktion og ydeevne.
 
 Ud over at understøtte ordreoprettelsen indeholder callcentermodulet også et brugervenligt kundeserviceprogram, der gør det lettere for brugerne at finde debitorkonti og gennemse alle de relaterede kundeordredata og -attributter. Kundeserviceskærmbilledet er udviklet til at give brugerne hurtig adgang til ordrerelaterede data, som gør det muligt for dem at besvare de mest almindelige ordrerelaterede spørgsmål, der modtages fra debitorer.
 

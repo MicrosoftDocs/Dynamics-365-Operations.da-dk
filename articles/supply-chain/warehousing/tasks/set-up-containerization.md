@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454712"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017776"
 ---
 # <a name="set-up-containerization"></a>Konfigurere containerisering
 
@@ -75,7 +75,7 @@ Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lo
 5. Skriv en værdi i feltet **Kode for bølgetrin**.
 6. Markér afkrydsningsfeltet **Tillad opdeling af plukninger**.
 7. Vælg **Gem**.
-8. Vælg **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt**, når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
+8. Vælg **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt** , når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
 9. Vælg **Ny**.
 10. Vælg en indstilling i feltet **Tabel**.
 11. Indtast eller vælg en værdi i feltet **Valg af felt**.

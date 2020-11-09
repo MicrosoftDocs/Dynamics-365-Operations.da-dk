@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8d030afb568b158e6caf48b0044d595d6ec024f6
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802208"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016165"
 ---
 # <a name="cluster-position-full"></a>Klyngeplacering fuld
 
@@ -28,7 +29,7 @@ ms.locfileid: "3802208"
 
 Funktionen *Klyngeplacering fuld* er et alternativ til en mere stiv håndhævelse af regler for arbejdspause, når der bruges klyngepluk, da det giver mulighed for større fejlmargener i volumenbegrænsningerne af containere eller transport. I et almindeligt scenarie er det ikke alle varer på en arbejdsordre, der passer ind i en valgt container. Lagermedarbejdere, der udfører klyngepluk, har få valgmuligheder i dette scenario: De skal enten skifte til en større container eller arbejde sammen med deres overordnede for at kunne finde frem til en anden løsning.
 
-Denne funktion introducerer muligheden for at køre knappen **Fuld** knap på en af arbejdsenhederne i en klynge. I ældre versioner var denne indstilling kun tilgængelig ved almindeligt ordrepluk, ikke for klyngepluk. Men denne funktion adskiller sig fra standardknappen **Fuld**, da det resterende arbejde annulleres. Det foreslås ikke, at brugeren føjer en anden beholder til den samme klynge, og der oprettes ikke automatisk nyt arbejde.
+Denne funktion introducerer muligheden for at køre knappen **Fuld** knap på en af arbejdsenhederne i en klynge. I ældre versioner var denne indstilling kun tilgængelig ved almindeligt ordrepluk, ikke for klyngepluk. Men denne funktion adskiller sig fra standardknappen **Fuld** , da det resterende arbejde annulleres. Det foreslås ikke, at brugeren føjer en anden beholder til den samme klynge, og der oprettes ikke automatisk nyt arbejde.
 
 ## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivere funktionen Klyngeplacering fuld
 
@@ -43,7 +44,7 @@ Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
 
 Du kan også bruge dette eksempelscenarie som vejledning til brug af funktionen i et produktionssystem. I dette tilfælde skal du dog erstatte dine egne værdier for hver af de indstillinger, der beskrives her.
 
@@ -124,13 +125,13 @@ Du skal konfigurere et menupunkt på en mobilenhed til at bruge eksisterende arb
 
 ## <a name="create-picking-work"></a>Opret plukarbejde
 
-Før du kan starte klyngepluk, skal du oprette udgående arbejde. Den klyngeprofil, du oprettede tidligere, angiver to klyngeplaceringer. Derfor skal der oprettes mindst to arbejds-id'er til salgsordrepluk. I dette scenarie sker der transaktioner på lagersted *61*, og de bruger varerne *L0101* og *T0100*. Demodataene skal have en tilstrækkelig disponibel lagerbeholdning af disse varer. Kontrollér, at du har tilstrækkeligt lager til at fuldføre transaktionerne.
+Før du kan starte klyngepluk, skal du oprette udgående arbejde. Den klyngeprofil, du oprettede tidligere, angiver to klyngeplaceringer. Derfor skal der oprettes mindst to arbejds-id'er til salgsordrepluk. I dette scenarie sker der transaktioner på lagersted *61* , og de bruger varerne *L0101* og *T0100*. Demodataene skal have en tilstrækkelig disponibel lagerbeholdning af disse varer. Kontrollér, at du har tilstrækkeligt lager til at fuldføre transaktionerne.
 
 ### <a name="create-sales-order-1"></a>Opret salgsordre 1
 
 1. Gå til **Sales and MArketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette salgsordre 1.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-010*
     - **Lagersted:** *61*
@@ -151,7 +152,7 @@ Før du kan starte klyngepluk, skal du oprette udgående arbejde. Den klyngeprof
 1. Udfør følgende trin for hver linje, du netop har tilføjet, for at reservere lager:
 
     1. Markér den linje, du vil reservere.
-    2. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Lager \> Reservation**.
+    2. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Lager \> Reservation**.
     3. På siden **Reservation** skal du i handlingsruden vælge **Reserver parti** for at reservere lageret.
     4. Luk siden **Reservation**.
 
@@ -163,7 +164,7 @@ Før du kan starte klyngepluk, skal du oprette udgående arbejde. Den klyngeprof
 
 1. Gå til **Sales and MArketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette salgsordre 2.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
 
     - **Debitorkonto:** *US-011*
     - **Lagersted:** *61*
@@ -184,7 +185,7 @@ Før du kan starte klyngepluk, skal du oprette udgående arbejde. Den klyngeprof
 1. Udfør følgende trin for hver linje, du netop har tilføjet, for at reservere lager:
 
     1. Markér den linje, du vil reservere.
-    2. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Lager \> Reservation**.
+    2. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Lager \> Reservation**.
     3. På siden **Reservation** skal du i handlingsruden vælge **Reserver parti** for at reservere lageret.
     4. Luk siden **Reservation**.
 
@@ -198,11 +199,11 @@ Der skal være oprettet to arbejds-id'er, som hver især har to pluklinjer. Udf�
 
 1. Gå til **Lokationsstyring \> Arbejde \> Arbejdsdetaljer**.
 1. Søg i gitteret **Oversigt** efter de to salgsordrer, du netop har oprettet, i kolonnen **Ordrenummer**. Notér dig arbejds-id'et for hver salgsordre.
-1. Markér rækken for hver salgsordre for at få vist relaterede oplysninger i **Linjer**-gitteret. Notér dig den lokation, som de enkelte varer skal plukkes fra.
+1. Markér rækken for hver salgsordre for at få vist relaterede oplysninger i **Linjer** -gitteret. Notér dig den lokation, som de enkelte varer skal plukkes fra.
 1. Gå til **Lagerstyring \> Forespørgsler og rapporter \> Beholdningsliste**.
 1. I handlingsruden skal du vælge **Dimensioner** for at åbne dialogboksen **Dimensionsvisning**.
 1. Sørg for, at afkrydsningsfelterne **Id** **Lagersted** og **Varenummer** er markeret, og vælg derefter **OK**.
-1. I **Filter**-ruden skal du angive følgende filtre:
+1. I **Filter** -ruden skal du angive følgende filtre:
 
     - **Varenummer** – **er enten** – *L0101* eller *T100*
     - **Lagersted** – **begynder med** – *61*
@@ -229,17 +230,17 @@ Da klyngeprofilen angav antallet af placeringer til 2, vil systemet automatisk h
 
 Du kan når som helst under følgende trin vælge fanen **Detaljer** for at få vist flere oplysninger om opgaven, f.eks. plukpladsen.
 
-1. Angiv feltet **VARE** til *L0101*. Dette bekræfter det varenummer, der kræves til dette menupunkt (du har konfigureret dette tidligere ved at vælge **Konfiguration af arbejdsbekræftelse** på siden **Menupunkt på mobilenhed**, da du oprettede dette menupunkt).
+1. Angiv feltet **VARE** til *L0101*. Dette bekræfter det varenummer, der kræves til dette menupunkt (du har konfigureret dette tidligere ved at vælge **Konfiguration af arbejdsbekræftelse** på siden **Menupunkt på mobilenhed** , da du oprettede dette menupunkt).
 1. Angiv det id-nummer, der er knyttet til varen på den lokation, der plukkes fra. Du skal vælge to paller.
 1. Indstil feltet **LP** til *LP\_PICK\_01*.
 1. Vælg **OK** (markeringssymbol).
 
     Siden **OPGAVE: Sortér: Opret klyngepluk** vises. Her skal du sortere de to plukkede paller i en plukplacering. Denne placering kan være en transportkasse eller container, der bruges til at adskille det plukkede lager efter salgsordre.
 
-1. Se de detaljer, der vises for varen (*L0101*) og antal (*20* hver), som skal sorteres i position 1 (for salgsordre 1).
+1. Se de detaljer, der vises for varen ( *L0101* ) og antal ( *20* hver), som skal sorteres i position 1 (for salgsordre 1).
 1. Indstil feltet **POSITIONSNAVN** til *1*.
 1. Vælg **OK** (markeringssymbol).
-1. Se de detaljer, der vises for varen (*L0101*) og antal (*20* hver), som skal sorteres i position 2 (for salgsordre 2).
+1. Se de detaljer, der vises for varen ( *L0101* ) og antal ( *20* hver), som skal sorteres i position 2 (for salgsordre 2).
 1. Indstil feltet **POSITIONSNAVN** til *2*.
 1. Vælg **OK** (markeringssymbol).
 
@@ -258,10 +259,10 @@ I dette scenario kan position 1 ikke acceptere det fulde antal varer, der skal p
 1. Vælg **OK** (markeringssymbol).
 1. Angiv det id, som varen plukkes fra, ved at indstille feltet **LP** til *LPREPL04*.
 1. Vælg **OK** (markeringssymbol).
-1. Se de detaljer, der vises for varen (*T0100*) og antal (*2* hver), som skal sorteres i position 2 (for salgsordre 2).
+1. Se de detaljer, der vises for varen ( *T0100* ) og antal ( *2* hver), som skal sorteres i position 2 (for salgsordre 2).
 1. Indstil feltet **POSITIONSNAVN** til *2*.
 1. Vælg **OK** (markeringssymbol).
-1. Se de detaljer, der vises for varen (*T0100*) og antal (*2* hver), som skal sorteres i position 1 (for salgsordre 1).
+1. Se de detaljer, der vises for varen ( *T0100* ) og antal ( *2* hver), som skal sorteres i position 1 (for salgsordre 1).
 1. Indstil feltet **POSITIONSNAVN** til *1*.
 1. Vælg **OK** (markeringssymbol).
 

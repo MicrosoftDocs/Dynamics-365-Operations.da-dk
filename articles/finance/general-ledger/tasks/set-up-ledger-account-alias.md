@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2098ffed81ab3c18855363f0c3ef43dc1d11a77d
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: e1764f31c98039e9ea6f665dcb04a1cfd23c31dc
+ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138073"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998842"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Konfigurere et finanskontoalias
 
 [!include [banner](../../includes/banner.md)]
 
-I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer. Denne procedure bruger demodatafirmaet USMF.
+I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer. Proceduren bruger demodatafirmaet USMF.
 
 1. Gå til Finans > Kontoplan > Konti > Finanskontoalias.
 2. Klik på Ny.

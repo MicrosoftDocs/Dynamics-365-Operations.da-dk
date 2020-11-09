@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e55974f65577170880e60095f1ba74ea7366e592
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834332"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018554"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Lokalisere fejl i indkøbsordrer
 
@@ -34,13 +34,13 @@ Dette emne beskriver, hvordan du løser problemer, der kan opstå, når du arbej
 
 Dette problem kan opstå på grund af inkonsistens i indkøbsordrefordeling.
 
-Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde*-tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde* -tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="when-purchase-orders-are-imported-through-data-management-purchase-order-line-numbers-dont-follow-the-increment-that-defined-in-system-parameters"></a>Når indkøbsordrer importeres via datastyring, følger numrene på indkøbsordrelinjer ikke den forøgelse, der er defineret i systemparametrene.
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
-Automatisk genererede linjenumre for indkøbsordrelinjer, der er importeret via *Indkøbsordrelinjer V2*-dataenhed, bruger som standard ikke det stigende systemlinjenummer, der er angivet i systemparametrene. Hvis du opretter en indkøbsordre manuelt og tilføjer linjer via brugergrænsefladen, stiger linjenumrene korrekt. Men hvis du bruger datastyringsstrukturen (DMF - Data Management Framework), stiger de ikke korrekt.
+Automatisk genererede linjenumre for indkøbsordrelinjer, der er importeret via *Indkøbsordrelinjer V2* -dataenhed, bruger som standard ikke det stigende systemlinjenummer, der er angivet i systemparametrene. Hvis du opretter en indkøbsordre manuelt og tilføjer linjer via brugergrænsefladen, stiger linjenumrene korrekt. Men hvis du bruger datastyringsstrukturen (DMF - Data Management Framework), stiger de ikke korrekt.
 
 Dette problem opstår, fordi systemet bruger DMF-metoden til at tildele dem, når du importerer linjer via DMF, hvis de ikke allerede er tildelt i den importerede enhed. Metoden øger altid linjenumrene med én.
 
@@ -58,7 +58,7 @@ Denne funktionsmåde er tilsigtet. Standardværdierne for momsgruppen, kasseraba
 
 Dette problem kan opstå på grund af inkonsistens i indkøbsordrefordeling.
 
-Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde*-tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde* -tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="one-or-more-accounting-distributions-are-either-over-distributed-or-under-distributed"></a>En eller flere regnskabsfordelinger er enten overfordelt eller underfordelt.
 
@@ -70,7 +70,7 @@ Du får følgende fejl: "En eller flere regnskabsfordelinger er enten overfordel
 
 Dette problem kan opstå på grund af inkonsistens i indkøbsordrefordeling.
 
-Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde*-tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Hvis du vil løse dette problem og nulstille indkøbsordren til en *Kladde* -tilstand, skal du gå til **Indkøb og forsyning \> Periodiske opgaver \> Oprydning \> Nulstil indkøbsordrefordeling**. Du kan finde flere oplysninger i følgende blogindlæg: [Løse fejl i indkøbsordrefordeling i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="can-i-show-only-purchase-orders-that-i-created"></a>Kan jeg nøjes med at få vist de indkøbsordrer, jeg har oprettet?
 
@@ -118,7 +118,7 @@ Denne funktionsmåde er tilsigtet. På indkøbsordrer vises produktet altid på 
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
-Et produkt har en godkendt kreditor, der f.eks. har ikrafttrædelsesdatoen 11. januar 2018 (*01/11/2018*) og udløbsdatoen *Aldrig*. Hvis du forsøger at ændre ikrafttrædelsesdatoen til 10. januar 2018 (*01/10/2018*) eller 12. januar 2018 (*01/12/2018*), får du vist følgende fejl:
+Et produkt har en godkendt kreditor, der f.eks. har ikrafttrædelsesdatoen 11. januar 2018 ( *01/11/2018* ) og udløbsdatoen *Aldrig*. Hvis du forsøger at ændre ikrafttrædelsesdatoen til 10. januar 2018 ( *01/10/2018* ) eller 12. januar 2018 ( *01/12/2018* ), får du vist følgende fejl:
 
 > Der kan ikke oprettes en post på listen over godkendte kreditorer (PdsApproveVendorList). Værdien 'Udløb' skal være større end eller lig med værdien 'Gyldig fra'.
 
@@ -128,9 +128,9 @@ Du kan kun udvide den periode, som kreditoren er godkendt til. Der gælder følg
 
 - Hvis du vil ændre ikrafttrædelsesdatoen, så den er tidligere end nogen af de eksisterende poster (perioder) for varens leverandør, skal udløbsdatoen for den nye periode være før alle udløbsdatoerne i de eksisterende poster.
 - Hvis du vil ændre udløbsdatoen, så den er senere end nogen af de eksisterende perioder, skal ikrafttrædelsesdatoen være efter den seneste udløbsdato i en eksisterende post.
-- Hvis du vil reducere den overordnede periode, som kreditoren er godkendt for, skal du slette eller redigere eksisterende poster. Du kan også bruge **afkort**-parameteren under importen. Denne parameter sletter alle eksisterende poster i tabellen for godkendte kreditorer efter vare.
+- Hvis du vil reducere den overordnede periode, som kreditoren er godkendt for, skal du slette eller redigere eksisterende poster. Du kan også bruge **afkort** -parameteren under importen. Denne parameter sletter alle eksisterende poster i tabellen for godkendte kreditorer efter vare.
 
-I eksempelscenariet, der er beskrevet i problembeskrivelsen, hvor en post har ikrafttrædelsesdatoen *01/11/2018* og en udløbsdato på *Aldrig*, kan du importere en ny post, der har ikrafttrædelsesdatoen *01/10/2018* og en udløbsdato på *Aldrig*. Du kan dog ikke reducere perioden, så ikrafttrædelsesdatoen opdateres til *01/12/2018* via Dataadministration. Du skal foretage denne ændring via brugergrænsefladen.
+I eksempelscenariet, der er beskrevet i problembeskrivelsen, hvor en post har ikrafttrædelsesdatoen *01/11/2018* og en udløbsdato på *Aldrig* , kan du importere en ny post, der har ikrafttrædelsesdatoen *01/10/2018* og en udløbsdato på *Aldrig*. Du kan dog ikke reducere perioden, så ikrafttrædelsesdatoen opdateres til *01/12/2018* via Dataadministration. Du skal foretage denne ændring via brugergrænsefladen.
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Efter at jeg har ændret leveringsadressen på et indkøbsordrehoved, synkroniseres leveringsnavnet ikke.
 

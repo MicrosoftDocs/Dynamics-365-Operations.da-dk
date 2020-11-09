@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
-ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
+ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3693273"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016256"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -30,10 +30,10 @@ ms.locfileid: "3693273"
 
 ## <a name="feature-exposure"></a>Visning af funktioner
 
-Når du vil bruge lokationsstyring til at behandle fastvægtprodukter, skal du bruge en licenskonfigurationsnøgle til at aktivere funktionen. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**. Klik derefter på fanen **Konfigurationsnøgler**, udvid **Handel \> Lagersted- og transportstyring**, og marker afkrydsningsfeltet for **Fastvægt til lagersted**.
+Når du vil bruge lokationsstyring til at behandle fastvægtprodukter, skal du bruge en licenskonfigurationsnøgle til at aktivere funktionen. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**. Klik derefter på fanen **Konfigurationsnøgler** , udvid **Handel \> Lagersted- og transportstyring** , og marker afkrydsningsfeltet for **Fastvægt til lagersted**.
 
 > [!NOTE]
-> Både **Lagersted- og transportstyring**-licenskonfigurationsnøglen og **Procesdistribution \> Fastvægt**-licenskonfigurationsnøglerne skal være aktiveret. Hvis du vil angive konfigurationsnøgler for fastvægt, skal du også aktivere funktionen ved hjælp af arbejdsområdet **Funktionsstyring**. Den hovedfunktion, der skal slås til, er **Behandling af fastvægtprodukter med lokationsstyring**. To relaterede, men valgfrie funktioner, som du måske vil aktivere, er **Ændringer af lagerstatus for fangstvægtprodukter** og **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes**.
+> Både **Lagersted- og transportstyring** -licenskonfigurationsnøglen og **Procesdistribution \> Fastvægt** -licenskonfigurationsnøglerne skal være aktiveret. Hvis du vil angive konfigurationsnøgler for fastvægt, skal du også aktivere funktionen ved hjælp af arbejdsområdet **Funktionsstyring**. Den hovedfunktion, der skal slås til, er **Behandling af fastvægtprodukter med lokationsstyring**. To relaterede, men valgfrie funktioner, som du måske vil aktivere, er **Ændringer af lagerstatus for fangstvægtprodukter** og **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes**.
 
 Når licenskonfigurationsnøglen er aktiveret, og du opretter et frigivet produkt, kan du vælge **Fastvægt**. Du kan også knytte det frigivne produkt til en lagerdimensionsgruppe, som parameteren **Brug lokationsstyringsprocesser** er markeret for.
 
@@ -55,7 +55,7 @@ Da vægten af lagervaren, når den leveres på et lagersted, kan afvige fra væg
 
 **Eksempel 1**
 
-Under en **Færdigmelding**-produktionsproces registreres den indgående vægt af et id, der indeholder otte kasser med et fastvægtprodukt, som 80,1 kg. Id'et gemmes derefter i området for færdigvarer, og under oplagringsperioden går noget af vægten tabt.
+Under en **Færdigmelding** -produktionsproces registreres den indgående vægt af et id, der indeholder otte kasser med et fastvægtprodukt, som 80,1 kg. Id'et gemmes derefter i området for færdigvarer, og under oplagringsperioden går noget af vægten tabt.
 
 Vægten af det samme id registreres senere som 79,8 kg som en del af en salgsordreplukproces. Derfor har du nu i systemet en vægtdifference som en del af den fysiske dimensionsopsætning.
 
@@ -97,19 +97,19 @@ Processen til sporing af fastvægtkoder kan bruges til varer, der ikke ændrer v
 
 En anden vigtig parameter, der er relateret til behandlingen af fastvægtkoder, er **Sporingsmetode til dimensioner af fastvægtkode**. Koder kan være delvist eller fuldt sporet. Hvis en kode er delvist sporet, spores produktdimensioner, sporingsdimensioner og lagerstatus. Hvis en kode er fuldt sporet, spores produktdimensioner, sporingsdimensioner og **alle** lagerdimensioner.
 
-Når en vare kodespores, findes der desuden en parameter til **Registreringsmetode for udgående kode**. Du kan angive denne parameter, så du altid bliver bedt om at angive koden på udgående transaktioner fra mobilenheden. Du kan også angive parameteren, så du kun får besked om koder, når der er brug for dem. Der er f.eks. fem fanstvægtkoder på lageret på et givet id, og du har angivet, at du vil plukke alle fem koder fra id'et. Hvis parameteren for **Registreringsmetode for udgående kode** er angivet til **Spørg kun efter kode, når det er nødvendigt**, plukkes de fem koder automatisk. Du behøver ikke at scanne de enkelte koder. Hvis parameteren er angivet til **Bed altid om kode**, skal du scanne hver enkel kode, selvom alle fem koder plukkes.
+Når en vare kodespores, findes der desuden en parameter til **Registreringsmetode for udgående kode**. Du kan angive denne parameter, så du altid bliver bedt om at angive koden på udgående transaktioner fra mobilenheden. Du kan også angive parameteren, så du kun får besked om koder, når der er brug for dem. Der er f.eks. fem fanstvægtkoder på lageret på et givet id, og du har angivet, at du vil plukke alle fem koder fra id'et. Hvis parameteren for **Registreringsmetode for udgående kode** er angivet til **Spørg kun efter kode, når det er nødvendigt** , plukkes de fem koder automatisk. Du behøver ikke at scanne de enkelte koder. Hvis parameteren er angivet til **Bed altid om kode** , skal du scanne hver enkel kode, selvom alle fem koder plukkes.
 
 > [!NOTE]
 > Som regel registreres og opdateres koder kun fra menupunkterne i mobilenheden. Der er dog nogle få situationer, hvor koder registreres et andet sted (f.eks. fra den manuelle pakkestation). Generelt bør menupunkterne i mobilenheden dog bruges til al lageraktivitet, hvis der bruges koder.
 
 ### <a name="how-to-capture-catch-weight"></a>Sådan registreres fastvægt
 
-**Når der bruges sporing af fangstvægtkode**, skal der altid oprettes en kode for hver fastvægtenhed, der modtages, og alle koder skal altid være tilknyttet en vægt.
+**Når der bruges sporing af fangstvægtkode** , skal der altid oprettes en kode for hver fastvægtenhed, der modtages, og alle koder skal altid være tilknyttet en vægt.
 
 **Kasse** er f.eks. fastvægtenheden, og du modtager en palle med otte kasser. I dette tilfælde skal der oprettes otte entydige fastvægtkoder, og der skal knyttes en vægt til hver kode. Alt efter den indgående fastvægtkode kan vægten af alle de otte kasser registreres, og den gennemsnitlige vægt kan derefter distribueres til hver kasse, eller der kan registreres en entydig vægt for hver kasse.
 Når du bruger funktionen **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes** med den proces, der er aktiveret via et menupunkt i en mobil enhed, opdateres lageret på basis af eksisterende oplysninger om fangstvægtmærkatet. Derfor beder lagerstedsappen dig ikke om at registrere fangstvægtmærkatets data som del af en produktionsrapport som en færdigmeldt handling.
 
-**Når sporing af fastvægtkode ikke bruges**, kan vægten registreres for hver dimensionsopsætning (f.eks. for hvert id og sporingsdimension). Vægten kan også registreres på basis af et samlet niveau, f.eks. fem id-numre (paller).
+**Når sporing af fastvægtkode ikke bruges** , kan vægten registreres for hver dimensionsopsætning (f.eks. for hvert id og sporingsdimension). Vægten kan også registreres på basis af et samlet niveau, f.eks. fem id-numre (paller).
 
 For metoderne til registrering af udgående vægt giver indstillingen **Pr. fastvægtenhed** dig mulighed for at angive, at vejningen skal udføres for hver fastvægtenhed (f.eks. pr. boks). Med indstillingen **Pr. plukenhed** kan du angive, at vægten skal registreres ud fra det antal, der skal plukkes (f.eks. tre kasser). Bemærk, at hvis indstillingen **Ikke registreret** anvendes, vil den gennemsnitlige vægt for produktionslinjeplukprocesserne og processerne for de interne bevægelse finde anvendelse.
 
@@ -124,7 +124,7 @@ Der defineres metoder til hentning af flere vægter på politikken for håndteri
 | Registreringsmetode for optællingsvægt           | Tælling                                   |
 | Registreringsmetode for vægt af lagerstedsoverførsel | Overførsel af lagersted                         |
 
-Du kan bruge metoden for afvigelser i udgående vægt for at forhindre, at lokationsstyringsplukprocesserne registrerer vægte, der resulterer i reguleringer af overskud/underskud for fastvægt. Metoden til beregning af udgående vægt anvendes under følgende processer for mobilenheder: salgsplukning, flytteplukning, produktionsplukning, flytninger, optælling og lageroverførsler. Du kan bruge indstillingen **Begræns vægtafvigelse**, hvis vægten af fastvægtvaren ikke svinger under opbevaring i lageret, og hvis der ikke kræves regulering af fastvægtgevinst/tab. Du kan bruge indstillingen **Tillad vægtafvigelse**, hvis vægten kan svinge, og hvis der kræves justering af fastvægt for gevinst/tab, når der registreres vægtudsving.
+Du kan bruge metoden for afvigelser i udgående vægt for at forhindre, at lokationsstyringsplukprocesserne registrerer vægte, der resulterer i reguleringer af overskud/underskud for fastvægt. Metoden til beregning af udgående vægt anvendes under følgende processer for mobilenheder: salgsplukning, flytteplukning, produktionsplukning, flytninger, optælling og lageroverførsler. Du kan bruge indstillingen **Begræns vægtafvigelse** , hvis vægten af fastvægtvaren ikke svinger under opbevaring i lageret, og hvis der ikke kræves regulering af fastvægtgevinst/tab. Du kan bruge indstillingen **Tillad vægtafvigelse** , hvis vægten kan svinge, og hvis der kræves justering af fastvægt for gevinst/tab, når der registreres vægtudsving.
 
 ## <a name="unsupported-scenarios"></a>Ikke-understøttede scenarier
 
@@ -203,10 +203,10 @@ Ud over de begrænsninger, der gælder for fastvægtprodukter, har kodede fastv�
 - Du skal opdatere fastvægtkoder manuelt for at afspejle bevægelser i genopfyldningsarbejdet. Det skyldes, at systemet ikke kan registrere vægte under behandling af genopfyldningsarbejdet, og registrerer derfor den gennemsnitlige vægt i stedet.
 - Modtagelse af blandede id'er understøttes ikke i øjeblikket for aktiverede fastvægtvarer.
 - Behandlingen af modtagelse af salgsreturvareordre kan registrere fastvægtkoder. Processen kontrollerer dog ikke, at returkoden er den samme, som er den, der oprindeligt blev leveret til en salgsordre.
-- Menupunktet Mobilenhed, der har aktivitetskoden **Registrer materialeforbrug**, understøtter i øjeblikket ikke registrering af fastvægtkoder.
+- Menupunktet Mobilenhed, der har aktivitetskoden **Registrer materialeforbrug** , understøtter i øjeblikket ikke registrering af fastvægtkoder.
 - Selvom optællingsprocesser understøttes for kodede fastvægtvarer, er de begrænset. Du kan f.eks. bruge indstillingerne for mobilenheden til optælling af kodede fastvægtvarer, og den gennemsnitlige vægt anvendes. Fastvægtkoder opdateres dog ikke automatisk af optællingstransaktionen. Når optællingstransaktionen er fuldført, skal fanstvægtkoderne opdateres manuelt, så de afspejler lageret. Hvis varer, der ikke oprindeligt var på et sted, optælles på dete sted, bruges den nominelle vægt.
 - Konsolidering af id'er understøtter i øjeblikket ikke kodede fastvægtvarer.
 - Funktionen Tilbagefør arbejde understøttes ikke for fastvægtvarer, der er kodenummersporet.
 
 > [!NOTE]
-> Ovenstående oplysninger om fastvægtkoder er kun gyldige, hvis fastvægtproduktet har en metode til sporing af fastvægtkodedimensionering, der er fuldt sporet (dvs. hvis parameteren for **Metode for dimensionssporingsmetode** for håndteringspolitikken af fastvægtvarer er angivet til **Produktdimensioner, sporingsdimensioner og alle lagerdimensioner**). Hvis fastvægtvaren kun er delvist kodesporet (dvs. hvis parameteren for metoden for **Dimensionssporingsmetode for fastvægtvare** er angivet til **Produktdimensioner, sporingsdimensioner og lagerstatus**), gælder der yderligere begrænsninger. Da synligheden går tabt mellem koden og lageret i dette tilfælde, er der nogle yderligere scenarier, der ikke understøttes.
+> Ovenstående oplysninger om fastvægtkoder er kun gyldige, hvis fastvægtproduktet har en metode til sporing af fastvægtkodedimensionering, der er fuldt sporet (dvs. hvis parameteren for **Metode for dimensionssporingsmetode** for håndteringspolitikken af fastvægtvarer er angivet til **Produktdimensioner, sporingsdimensioner og alle lagerdimensioner** ). Hvis fastvægtvaren kun er delvist kodesporet (dvs. hvis parameteren for metoden for **Dimensionssporingsmetode for fastvægtvare** er angivet til **Produktdimensioner, sporingsdimensioner og lagerstatus** ), gælder der yderligere begrænsninger. Da synligheden går tabt mellem koden og lageret i dette tilfælde, er der nogle yderligere scenarier, der ikke understøttes.
