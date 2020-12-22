@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d81471036d88e4faaf2cae4f3cc25d1eeaaa821
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979298"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685047"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressourcer
 
 ## <a name="local-and-regional-deployments"></a>Lokale og regionale installationer
 Hvis de regler, der er påbudt af myndighederne, kræver, at data lagres eller serviceres på anden måde end det, der kræves for andre lande/områder, kan der være krav, som er knyttet til land/område, som du skal overveje under installationen. Overvej følgende ressourcer, der kan være relevante for dig:
 
-[Finance and Operations-apps styret af 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apps drevet af 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisering og lovpligtige funktioner
 
@@ -112,7 +111,7 @@ Du kan finde flere oplysninger i [Hjælp-systemet](../../fin-ops/get-started/hel
         - [Litauen](../../../finance/localizations/lithuania.md)
         - [Mexico](../../../finance/localizations/mexico.md)
         - [Malaysia](../../../finance/localizations/malaysia.md)
-        - [Holland](../../../finance/localizations/netherlands.md)
+        - [Nederlandene](../../../finance/localizations/netherlands.md)
         - [Norge](../../../finance/localizations/norway.md)
     :::column-end:::
     :::column:::

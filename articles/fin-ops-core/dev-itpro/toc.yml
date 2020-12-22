@@ -14,14 +14,12 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til 10.0.16 (februar 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Platformsopdateringer til 10.0.15 (januar 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platformopdateringer til 10.0.14 (november 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: Platformopdateringer til 10.0.13 (oktober 2020)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Platformopdateringer til 10.0.12 (august 2020)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede Platform-funktioner
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'AX 2012-funktioner, der er udsat'
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Forretningshændelser
@@ -162,6 +158,8 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                             - name: Konfigurere tilknytning af felter for salgsordrestatus
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrere interne ordrer for at undgå synkronisering af ordrer og ordrelinjer
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: Administrere dobbeltskrivning
                           items:
                             - name: Tilpasse enheds- og felttilknytninger
@@ -208,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integreret momsmaster
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Synkroniser med Dynamics 365 Supply Chain Management-prissætningsprogrammet efter behov
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Kundeemne til kontanter i dobbeltskrivning
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synkronisere med Dynamics 365 Supply Chain Management-prissætningsprogrammet efter behov
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Bruge Dynamics 365 Commerce-prissætningsprogrammet med Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: Interne aktiver til vedligeholdelse
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integreret arbejder, job og position'
@@ -500,11 +500,13 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: Krav til tilpasning af hardware
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Konfigurere og installere lokale miljøer
+                    - name: Godkendelse i Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/authentication-onprem.md
+                - name: Konfigurere og installere miljøer i det lokale miljø
                   items:
-                    - name: Konfigurere lokale projekter i LCS
+                    - name: Konfigurere projekter i det lokale miljø i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurere og installere lokale miljøer
+                    - name: Konfigurere og installere miljøer i det lokale miljø
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                       href: deployment/deploy-retail-onprem.md
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Oprette en LCS-forbindelse (Lifecycle Services) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Opdatere en ældre pipeline i Azure Pipelines
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: Eksempelprogram til flådeadministration
               items:
                 - name: Komplet scenarie for eksempelprogram til flådeadministration
@@ -766,6 +770,8 @@
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: Dataadgang ved hjælp af SysDa-API'et
                           href: dev-ref/sysda.md
+                        - name: Afhjælpe et SQL-injektionsangreb
+                          href: dev-ref/query-with-parameters.md
                     - name: X++-makroer
                       href: dev-ref/xpp-macros.md
                     - name: X++-attributklasser
@@ -1498,6 +1504,8 @@
                   href: sysadmin/security-reports.md
                 - name: Oprette nye brugere
                   href: sysadmin/tasks/create-new-users.md
+                - name: Sessionsstyring for bruger
+                  href: sysadmin/user-session-management.md
                 - name: Masseimportere brugere
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Konfigurere opdeling af opgaver
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Konfigurere klient til Azure Key Vault
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Oprydningsrutiner
+              href: sysadmin/cleanuproutines.md
         - name: 'Opgraderinger, opdateringer og hotfixes'
           items:
             - name: 'Ressourcer til opgraderinger, opdateringer og hotfixes'
@@ -1696,7 +1706,7 @@
                   href: user-interface/build-customer-form.md
                 - name: Opbygge navigation
                   href: user-interface/build-navigation.md
-                - name: Opbygge arbejdsområder
+                - name: Redigere et arbejdsområde
                   href: user-interface/build-workspace.md
             - name: Formularer
               items:

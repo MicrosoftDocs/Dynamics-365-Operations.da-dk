@@ -16,6 +16,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ofte stillede spørgsmål om One Version-tjenesteopdateringer
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Administrere opdateringer og livscyklus for brugerdefineret kode, herunder Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Livscykluspolitik for software – Sky
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Livscykluspolitik for software – I det lokale miljø
@@ -56,7 +58,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Købe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere lagersted for lokale installationer
+                - name: Konfigurere lagersted for installationer i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and Operations-apps drevet af 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
@@ -68,14 +70,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheder eller ændringer i Supply Chain Management
                   items:
-                    - name: Nyheder eller ændringer på Supply Chain Management-startsiden
+                    - name: Startside for nyheder eller ændringer i Supply Chain Management
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.15 (december 2020)
+                    - name: Supply Chain Management 10.0.16 (februar 2021)
+                      href: get-started/whats-new-scm-10-0-16.md
+                    - name: Supply Chain Management 10.0.15 (januar 2021)
                       href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (november 2020)
                       href: get-started/whats-new-scm-10-0-14.md
-                    - name: Supply Chain Management 10.0.13 (oktober 2020)
-                      href: get-started/whats-new-scm-10-0-13.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
@@ -84,8 +86,6 @@
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'AX 2012-funktioner, der er udsat'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsressourcer
@@ -142,7 +142,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere og filtrere arbejdsområder
                   href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vise sider side om side ved hjælp af Åbn i ny vinduesfunktion
+                - name: Vise sider side om side ved hjælp af funktionen Åbn i nyt vindue
                   href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tastaturgenveje
                   href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
@@ -216,12 +216,20 @@
                   items:
                     - name: Varer undervejs fra leverandør
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Cloud og edge
+          items:
+            - name: Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lokationsstyring
+              href: cloud-edge/cloud-edge-landing-page.md
+            - name: Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
+              href: cloud-edge/cloud-edge-workload-manufacturing.md
+            - name: Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
+              href: cloud-edge/cloud-edge-workload-warehousing.md
         - name: Aktivadministration
           items:
-            - name: Oversigt over aktivstyring
+            - name: Oversigt over aktivadministration
               href: asset-management/index.md
               items:
-                - name: Funktionelle placeringer og aktiver
+                - name: Arbejdssteder og aktiver
                   href: asset-management/overview/functional-locations-and-objects.md
                 - name: Aktiver og arbejdsordrer
                   href: asset-management/overview/objects-and-work-orders.md
@@ -230,9 +238,9 @@
                 - name: Livscyklustilstande for arbejdssted
                   href: asset-management/setup-for-functional-locations/functional-location-stages.md
                 - name: Vedligeholdelsesattributtyper
-                  href: asset-management/setup-for-functional-locations/functional-location-types.md
-                - name: Arbejdsstedstyper
                   href: asset-management/setup-for-functional-locations/specification-types.md
+                - name: Arbejdsstedstyper
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
             - name: Arbejdssteder
               items:
                 - name: Introduktion til arbejdssteder
@@ -633,6 +641,8 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: Power BI-indholdspakke til omkostningsstyring
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Fejlfinde i omkostningsstyring
+              href: cost-management/troubleshoot-costmanagement.md
         - name: Rapportering og Power BI-integration
           items:
             - name: Rapportering og analyser med Power BI
@@ -1327,6 +1337,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Spore løbende gennemsnitskostpris pr. lagerdimension
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Tilføjelsesprogram for indsigt i lagerbeholdning
+              href: inventory/inventory-visibility.md
         - name: IoT-intelligens
           items:
             - name: Startside for IoT-intelligens
@@ -1347,6 +1359,8 @@
           items:
             - name: Startside for varedisponering
               href: master-planning/master-planning-home-page.md
+            - name: Migrering til planlægningsoptimering for varedisponering
+              href: master-planning/new-master-planning-engine.md
             - name: Planlægningsoptimering
               items:
                 - name: Oversigt over planlægningsoptimering
@@ -1357,11 +1371,19 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Anvende filtre på en plan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Varedisponering med behovsprognose
+                  href: master-planning/planning-optimization/demand-forecast.md
                 - name: Varedisponering med samhandelsaftaler vedrørende indkøb
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Sikkerhedsmargener
                   href: master-planning/planning-optimization/safety-margins.md
-                - name: Godkend ordreforslag
+                - name: Lagermarkering med planlægningsoptimering
+                  href: master-planning/planning-optimization/marking.md
+                - name: Intern planlægning
+                  href: master-planning/planning-optimization/Intercompany-planning.md
+                - name: Udelukke produkter med visse produktlivscyklustilstande
+                  href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Godkende ordreforslag
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatisk autorisation med planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
@@ -1463,6 +1485,8 @@
                   href: master-planning/tasks/create-baseline-forecast.md
                 - name: Ændre en behovsprognose manuelt
                   href: master-planning/tasks/modify-demand-forecast-manually.md
+            - name: Fejlfinde varedisponering
+              href: master-planning/troubleshoot-masterplanning.md
         - name: Mobilapp
           items:
             - name: Mobilapp-startside
@@ -1895,6 +1919,8 @@
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: Styklistekalkulationer
                   href: cost-management/bom-calculations.md
+                - name: Fejlfinde produktoplysninger
+                  href: pim/troubleshooting-productinformation.md
             - name: Produktkonfiguration
               items:
                 - name: Oversigt over produktkonfiguration
@@ -1955,6 +1981,34 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Overføre data for produktmodeller
                       href: pim/tasks/transfer-data-product-models.md
+                - name: Fejlfinde variantstyring
+                  href: pim/troubleshooting-productconfigurator.md
+        - name: Styring af tekniske ændringer
+          items:
+            - name: Oversigt over styring af tekniske ændringer
+              href: engineering-change-management/product-engineering-overview.md
+            - name: Gennemgang af funktion for styring af tekniske ændringer
+              href: engineering-change-management/engineering-scenarios.md
+            - name: Parametre for styring af tekniske ændringer
+              href: engineering-change-management/engineering-parameters.md
+            - name: Fastlægge fælles værdier for styring af tekniske ændringer
+              href: engineering-change-management/engineering-change-management-setup.md
+            - name: Tekniske organisationer og regler for ejerskab af data
+              href: engineering-change-management/engineering-org-data-ownership-rules.md
+            - name: Produktejer
+              href: engineering-change-management/product-owner.md
+            - name: Tekniske attributter og søgning efter tekniske attributter
+              href: engineering-change-management/engineering-attributes-and-search.md
+            - name: Tekniske versioner og tekniske produktkategorier
+              href: engineering-change-management/engineering-versions-product-category.md
+            - name: Produktlivscyklustilstand og transaktioner
+              href: engineering-change-management/product-lifecycle-state-transactions.md
+            - name: Administrere ændringer af tekniske produkter
+              href: engineering-change-management/engineering-change-management.md
+            - name: Produktparathed
+              href: engineering-change-management/product-readiness.md
+            - name: Strukturen for frigivne produkter
+              href: engineering-change-management/release-product-structure.md
         - name: Produktionsstyring
           items:
             - name: Oversigt over produktionsproces
@@ -2043,11 +2097,13 @@
                       href: production-control/release-production-orders.md
                     - name: Færdigmelde produktionsordrer
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfigurere og bruge grænsefladen til kørsel af produktion
+                    - name: Konfigurere og bruge grænsefladen til produktionsudførelse
                       items:
-                        - name: Konfigurere og bruge grænsefladen til kørsel af produktion
+                        - name: Konfigurere grænsefladen til produktionsudførelse
                           href: production-control/production-floor-execution-configure.md
-                        - name: Konfigurere en enhed til at bruge grænsefladen til kørsel af produktion
+                        - name: Designe grænsefladen til produktionsudførelse
+                          href: production-control/production-floor-execution-tabs.md
+                        - name: Konfigurere en enhed til at bruge grænsefladen til produktionsudførelse
                           href: production-control/production-floor-execution-setup.md
                         - name: Sådan anvendes grænsefladen til kørsel af produktion
                           href: production-control/production-floor-execution-use.md
@@ -2089,7 +2145,7 @@
                       href: production-control/tasks/worker-mobile-job-device.md
                 - name: Administrere regnskaber i produktion
                   items:
-                    - name: Fordele tid til job i et jobbundt
+                    - name: Tildele tid til job i et jobbundt
                       href: production-control/allocate-time-jobs-job-bundle.md
                     - name: Beregne materialeforbrug
                       href: production-control/consumption.md
@@ -2105,6 +2161,8 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: Fleksgrupper
                       href: production-control/time-attendance-flex-groups.md
+                - name: Fejlfinde diskret produktion
+                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: Lean manufacturing
               items:
                 - name: Oversigt over lean manufacturing
@@ -2251,12 +2309,14 @@
                       href: production-control/time-attendance-registrations.md
                 - name: Administrere regnskaber i produktion
                   items:
-                    - name: Fordele tid til job i et jobbundt
+                    - name: Tildele tid til job i et jobbundt
                       href: production-control/allocate-time-jobs-job-bundle.md
                     - name: Beregne materialeforbrug
                       href: production-control/consumption.md
                     - name: Produktionsbogføring
                       href: cost-management/production-posting.md
+                - name: Fejlfinde procesproduktion
+                  href: production-control/troubleshoot-processmanufacturing.md
         - name: Salg og marketing
           items:
             - name: Oversigt over salg og marketing
@@ -2589,6 +2649,8 @@
               href: transportation/create-new-transportation-management-engine.md
             - name: Tilknytte et brændstofindeks med en fragtmand som tillægsgebyr
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: USMCA-certificering af oprindelse
+              href: transportation/usmca-certification-of-origin.md
             - name: Oprette en fragtseddel
               href: transportation/create-bill-of-lading.md
             - name: Planlægge fragttransportruter
@@ -2607,6 +2669,26 @@
               href: transportation/reconcile-freight-transportation-management.md
             - name: Registrere chaufførs ind- og udtjekning for en aftale
               href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Rabatter
+              href: transportation/transportation-management-discount.md
+            - name: Diverse gebyrer
+              href: transportation/transportation-management-misc-charge.md
+            - name: Tilstande og metoder
+              href: transportation/transportation-management-modes-methods.md
+            - name: Nummerserier
+              href: transportation/transportation-management-number-sequence.md
+            - name: Status
+              href: transportation/transportation-management-status.md
+            - name: Zonemaster
+              href: transportation/transportation-management-zone-master.md
+            - name: Fragtgrupper
+              href: transportation/tasks/carrier-groups.md
+            - name: Lastopbygningspanel
+              href: transportation/tasks/load-building-workbench.md
+            - name: Lastskabeloner
+              href: transportation/tasks/load-template.md
+            - name: Vurderingsprofiler
+              href: transportation/tasks/setup-a-rating-profile.md
             - name: Konfigurere et brændstofindeks for fragtmand
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Konfigurere et transporttilbud
@@ -2645,20 +2727,28 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Blanding af produktdimension for lokation
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Læg på lager-klynger
+                  href: warehousing/putaway-clusters.md
                 - name: Kvalitetskontrol
                   href: warehousing/quality-check.md
+                - name: Fejlfinde indgående lagerstedsoperationer
+                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Udgående lagerstedsoperationer
               items:
                 - name: Reservationer i lokationsstyring
                   items:
                     - name: Fleksibel reservationspolitik for dimension på lagerstedsniveau
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: Fejlfinde reservationer i lokationsstyring
+                      href: warehousing/troubleshoot-warehouse-reservations.md
                 - name: Delvis frigivelse og delvis forsendelse
                   items:
-                    - name: Delvis forsendelse af en transportlast
+                    - name: Delforsendelse af en transportlast
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Batch-udgivelse af delvist reserverede flytteordrer
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: Fejlfinde delvise frigivelser og delforsendelser
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: Pluk og pakning
                   items:
                     - name: Konfigurere klyngepluk
@@ -2695,9 +2785,13 @@
                       href: warehousing/location-directive-inventory-picking-aging.md
                     - name: Udgående sortering
                       href: warehousing/outbound-sorting.md
-                    - name: Sæt til væg - Læg til butik
+                    - name: Sæt til væg – læg til butik
                       href: warehousing/put-to-wall-put-to-store.md
-                - name: Opfyldning
+                    - name: Visualisering af udgående arbejdsbyrde
+                      href: warehousing/outbound-workload-visualization.md
+                    - name: Fejlfinde pluk og pakning
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
+                - name: Genopfyldning
                   items:
                     - name: Oversigt over genopfyldning
                       href: warehousing/replenishment.md
@@ -2709,13 +2803,17 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Tærskel for genopfyldning af zone
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Genopfyldningsstrategier
+                      href: warehousing/replenishment-strategies.md
                     - name: Genopfyldning over lokationskapacitet
                       href: warehousing/replenishment-over-location-capacity.md
+                    - name: Fejlfinde genopfyldning af lagersted
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
                 - name: Lastopbygning og forsendelser
                   items:
                     - name: Bekræfte og flytte
                       href: warehousing/confirm-and-transfer.md
-                    - name: Bekræft udgående forsendelser fra batchjob
+                    - name: Bekræfte udgående forsendelser fra batchjob
                       href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Avanceret lastopbygning under en bølge
                       href: warehousing/advanced-load-building-during-wave.md
@@ -2723,8 +2821,10 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Bølgeskabelongruppering
                       href: warehousing/wave-template-grouping.md
-                    - name: Udskriv og Afvis bølgeetiketter
+                    - name: Genudskrive bølgeetiketter og erklære bølgeetiketter ugyldige
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Fejlfinde lastopbygning og forsendelser
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Forsendelseskonsolideringspolitikker
                   items:
                     - name: Forsendelseskonsolideringspolitikker
@@ -2739,8 +2839,10 @@
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: Eksempel 4 - Konsolidere forsendelser ved hjælp af forsendelseskonsolideringpanelet
                       href: warehousing/consolidate-shipments-manual-workbench.md
-                    - name: Eksempel 5 - Konsolidere forsendelser manuelt ved hjælp af siden Konsolidere forsendelser
+                    - name: Eksempel 5 – Konsolidere forsendelser manuelt ved hjælp af siden Konsolidere forsendelser
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Fejlfinde udgående lagerstedsoperationer
+                  href: warehousing/troubleshoot-warehouse-outbound.md
             - name: På tværs af lagerstedsoperationer
               items:
                 - name: Politikker for lagerstedsarbejde
@@ -2795,8 +2897,12 @@
                       href: warehousing/location-license-plate-positioning.md
                     - name: Skift arbejdspulje på arbejde
                       href: warehousing/change-work-pool-on-work.md
-                    - name: Varekonsolidering - udnyttelse af lokation
+                    - name: Varekonsolidering – udnyttelse af lokation
                       href: warehousing/item-consolidation-location-utilization.md
+                    - name: Fejlfinde lagerstedsarbejde
+                      href: warehousing/troubleshoot-warehouse-work.md
+                    - name: Arbejdsopdeling
+                      href: warehousing/work-split.md
             - name: Opsætning af lagersted
               items:
                 - name: Konfiguration af lagersted
@@ -2807,8 +2913,10 @@
                       href: inventory/warehouse-template.md
                     - name: Kontrollere arbejde ved hjælp af arbejdsskabeloner og lokationsvejledninger
                       href: warehousing/control-warehouse-location-directives.md
-                    - name: Oprette lokalitetsvejledninger
+                    - name: Arbejde med lokationsdirektiver
                       href: warehousing/create-location-directive.md
+                    - name: Grænser for lokationslagring
+                      href: warehousing/location-stocking-limits.md
                     - name: Bølgetrinskoder
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurere behandling af bølge
@@ -2843,6 +2951,8 @@
                       href: warehousing/mobile-barcode-support.md
                     - name: Oprette lagersted for flytteordrer
                       href: warehousing/transfer-orders-warehouse.md
+                    - name: Fejlfinde konfiguration af lagersted
+                      href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Installere og konfigurere lagerstedsapp
                   items:
                     - name: Installere og tilslutte lagerstedsapp
@@ -2879,7 +2989,11 @@
                   items:
                     - name: Opgradere lokationsstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
-        - name: Udvikling af Supply Chain Management
+                    - name: Fejlfinde opgradering og migrering til avanceret lokationsstyring
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: Fejlfinde konfiguration af lagersted
+                  href: warehousing/troubleshoot-warehouse-setup.md
+        - name: Supply Chain Management-udvikling
           items:
             - name: Udviklingsvejledning til Gantt-kontrolelementer
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json

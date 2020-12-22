@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975262"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528539"
 ---
 # <a name="budgeting-home-page"></a>Startside for budgettering
 
@@ -64,7 +64,7 @@ Oplysninger om, hvordan du bringer planlægningsdata fra andre moduler til budge
 ## <a name="user-interface-and-reporting-capabilities"></a>Brugergrænseflade og rapporteringsværktøjer
 Brugere kan oprette budgetplaner enten direkte i klienten (ved hjælp af en konfigurerbar budgetplandokumentside) eller via Excel. Excel indeholder flere ekstra funktioner. Du kan for eksempel bruge eksterne data som en kilde til en budgetplan, udføre brugerdefinerede beregninger og bruge Microsoft-pivottabeller og -diagrammer. De fleste af variablerne i budgetplanlægningsprocessen kan konfigureres. 
 
-Du kan f.eks. definere, hvem der udfører budgettering, hvad der er budgetteret, og hvordan processen ser ud. Selvom du kan bruge Excel til budgetplanlægning, gemmes applikationen som en enkelt faktakilde og er med til at forhindre problemer med budgetstyring. Periodiske processer kan bruges til at overføre startdata for budgettering til budgetplanen. Til rapportering tilbyder applikationen et sæt standardundersøgelsessider, så du kan se og analysere data for budgettering. Budgetplandata kan åbnes via Management Reporter, og separate budgetplanscenarier kan vises som kolonner i rapporten Management Reporter.
+Du kan f.eks. definere, hvem der udfører budgettering, hvad der er budgetteret, og hvordan processen ser ud. Selvom du kan bruge Excel til budgetplanlægning, gemmes applikationen som en enkelt faktakilde og er med til at forhindre problemer med budgetstyring. Periodiske processer kan bruges til at overføre startdata for budgettering til budgetplanen. Til rapportering tilbyder applikationen et sæt standardundersøgelsessider, så du kan se og analysere data for budgettering. Budgetplandata kan åbnes via [Financial Reporting](../general-ledger/financial-reporting-getting-started.md), og separate budgetplanscenarier kan vises som kolonner i den økonomiske rapport.
 
 
 

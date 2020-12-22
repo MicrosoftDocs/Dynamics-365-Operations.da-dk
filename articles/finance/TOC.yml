@@ -16,6 +16,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Ofte stillede spørgsmål om One Version-tjenesteopdateringer
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
+                - name: 'Administrere opdateringer og livscyklus for brugerdefineret kode, herunder Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
                 - name: Livscykluspolitik for software – Sky
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
                 - name: Livscykluspolitik for software – I det lokale miljø
@@ -56,7 +58,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Købe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere lagersted for lokale installationer
+                - name: Konfigurere lagersted for installationer i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
                 - name: Finance and Operations-apps drevet af 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
@@ -70,14 +72,12 @@
                   items:
                     - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.16 (februar 2021)
+                      href: get-started/whats-new-changed-10-0-16.md
                     - name: Finance 10.0.15 (januar 2021)
                       href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (november 2020)
                       href: get-started/whats-new-changed-10-0-14.md
-                    - name: Finance 10.0.13 (oktober 2020)
-                      href: get-started/whats-new-changed-10-0-13.md
-                    - name: Finance 10.0.12 (august 2020)
-                      href: get-started/whats-new-changed-10-0-12.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner i Dynamics 365 Finance
@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
             - name: 'AX 2012-funktioner, der er udsat'
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
-              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
             - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsressourcer
@@ -144,7 +142,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere og filtrere arbejdsområder
                   href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/finance/toc.json
-                - name: Vise sider side om side ved hjælp af Åbn i ny vinduesfunktion
+                - name: Vise sider side om side ved hjælp af funktionen Åbn i nyt vindue
                   href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/finance/toc.json
                 - name: Tastaturgenveje
                   href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/finance/toc.json
@@ -724,6 +722,8 @@
               href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
             - name: Bogføre med afledte bøger
               href: fixed-assets/post-derived-value-models.md
+            - name: Antal bøger pr. kladde
+              href: fixed-assets/number-books-per-journal.md
             - name: Bogføre anlægsaktivposteringer i posteringslag
               href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: Posteringsindstillinger for anlægsaktiv
@@ -732,6 +732,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: Opdele et anlægsaktiv
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: Reducere saldoafskrivning efter en opdeling
+              href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: Konfigurere anlægsaktivgrupper
               href: fixed-assets/tasks/set-up-fixed-asset-groups.md
             - name: Ændre en anlægsaktivgruppe
@@ -812,8 +814,72 @@
                   href: fixed-assets/straight-line-service-life-depreciation.md
         - name: Aktivleasing
           items:
+            - name: Startside for aktivleasing
+              href: asset-leasing/asset-leasing-homepage.md
             - name: Start her med aktivleasing
               href: asset-leasing/asset-leasing-quick-start.md
+            - name: Konfiguration af aktivleasing
+              items:
+                - name: Konfigurere parametre for aktivleasing
+                  href: asset-leasing/config-lease-parameters.md
+                - name: Oprette leasingbøger
+                  href: asset-leasing/set-up-lease-books.md
+                - name: Oprette en leasinggruppe
+                  href: asset-leasing/create-lease-group.md
+                - name: Konfigurere indekssatser
+                  href: asset-leasing/set-up-index-rate-types.md
+                - name: Konfigurere udgiftstyper
+                  href: asset-leasing/set-up-expense-types.md
+                - name: Oprette leasingkladdenavne
+                  href: asset-leasing/set-up-lease-journal-names.md
+                - name: Angive leasingbogføringskonti
+                  href: asset-leasing/set-up-lease-posting-accts.md
+                - name: Tildele nummerserier
+                  href: asset-leasing/leasing-number-sequences.md
+                - name: Tildele brugerroller
+                  href: asset-leasing/lease-user-roles.md
+            - name: Administrere aktivleasing
+              items:
+                - name: Tilføje eller kopiere en leasing
+                  href: asset-leasing/add-lease.md
+                - name: Oprette en betalingsfaktura.
+                  href: asset-leasing/create-payment-invoice.md
+                - name: Registrere afskrivning af brugsretsaktiver
+                  href: asset-leasing/record-rou-asset-depreciation.md
+                - name: Tilbageføre bogførte leasingtransaktioner
+                  href: asset-leasing/reverse-posted-lease-trans.md
+                - name: Justere en leasing
+                  href: asset-leasing/adjust-lease.md
+                - name: Forringe et brugsretsaktiv
+                  href: asset-leasing/impair-rou-asset.md
+                - name: Knytte en leasing til et anlægsaktiv
+                  href: asset-leasing/associate-lease-with-fixed-asset.md
+                - name: Registrere leasinger i udenlandsk valuta
+                  href: asset-leasing/record-leases-foreign-currency.md
+                - name: 'Revaluere leasingbetalinger, der er knyttet til en indekssats'
+                  href: asset-leasing/revalue-payments-tied-2-index-rate.md
+                - name: Genklassificere kortfristet del af leasingforpligtelse
+                  href: asset-leasing/reclassify-st-lease-liability.md
+                - name: 'Få vist forpligtelses-, aktiv- og udgiftstransaktioner'
+                  href: asset-leasing/view-asset-transactions.md
+                - name: Sammensætte intervalfunktionalitet
+                  href: asset-leasing/compound-interval-functionality.md
+                - name: Bekræfte betalingsplaner i batch
+                  href: asset-leasing/confirm-payment-schedules-in-batch.md
+                - name: Oprette månedlige kladdeposteringer i batch
+                  href: asset-leasing/create-monthly-journals-batch.md
+                - name: Leasingbogføringstyper
+                  href: asset-leasing/lease-posting-types.md
+                - name: Dobbelt rapportering
+                  href: asset-leasing/dual-reporting.md
+                - name: Konfigurere en arbejdsgang for leasing
+                  href: asset-leasing/set-up-lease-wrkflw.md
+                - name: Bruge arbejdsgange for leasinggodkendelse
+                  href: asset-leasing/use-create-lease-wrkflw.md
+                - name: Administrere leasinger via struktur for leasingimport
+                  href: asset-leasing/manage-leases-thru-imprt-framewrk.md
+            - name: Aktivleasingrapporter
+              href: asset-leasing/asset-leasing-rprts.md
         - name: Finans
           items:
             - name: Oversigt over finans
@@ -908,9 +974,11 @@
                   href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                 - name: Finanskladdetyper
                   href: general-ledger/ledger-journal-types.md
+                - name: Konfigurere finans
+                  href: general-ledger/configure-ledger.md
                 - name: Oprette og kontrollere kladder
                   href: general-ledger/tasks/create-validate-journals.md
-                - name: Se kladdeposter eller -posteringer
+                - name: Se kladdeposteringer eller -transaktioner
                   href: general-ledger/tasks/view-journal-entries-or-transactions.md
                 - name: Vise et relateret internt bilag fra en kladde
                   href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
@@ -1002,6 +1070,44 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Definere revisionspolitikker for kildedokumenter
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Økonomisk indsigt
+          items:
+            - name: Startside for Økonomisk indsigt
+              href: finance-insights/finance-insights-home-page.md
+            - name: Konfiguration og administration
+              items:
+                - name: Konfigurere Økonomisk indsigt
+                  href: finance-insights/configure-for-fin-insites.md
+                - name: Aktivere forudsigelser om debitorbetalinger
+                  href: finance-insights/enable-cust-paymnt-prediction.md
+                - name: Aktivere likviditetsbudget
+                  href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Aktivere budgetforslag
+                  href: finance-insights/enable-budget-proposal.md
+                - name: Oprette dataintegratorprojekt
+                  href: finance-insights/create-data-integrate-project.md
+            - name: Bruge Økonomisk indsigt
+              items:
+                - name: Budgetforslag
+                  href: finance-insights/budget-proposals.md
+                - name: Likviditet
+                  href: finance-insights/cash-position.md
+                - name: Likviditetsbudget
+                  href: finance-insights/cash-flow-forecast-intro.md
+                - name: Bruge eksterne data i likviditetsbudgetter
+                  href: finance-insights/external-data-in-cash-flow.md
+                - name: Forudsigelser om debitorbetalinger
+                  href: finance-insights/payment-insights-overview.md
+                - name: Bruge forudsigelser om debitorbetalinger
+                  href: finance-insights/use-customer-payment-predictions.md
+                - name: Oversigt over øjebliksbilleder
+                  href: finance-insights/payment-snapshots.md
+                - name: Resultater fra modeller til maskinel indlæring
+                  href: finance-insights/confusion-matrix.md
+                - name: Evaluer den indledende forudsigelsesmodel for debitorbetalinger
+                  href: finance-insights/evaluate-payment-prediction.md
+                - name: Gøre forudsigelsesmodellen bedre
+                  href: finance-insights/improve-model.md
         - name: Projektstyring og regnskab
           items:
             - name: Oversigt over projektstyring og regnskab
@@ -1408,6 +1514,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Konfigurere NF-e-parametre for et skattekontor
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT 2019.001 – skat af frynsegoder og fritagelsesregler for NF-e/NFC-e
+                      href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf-momsangivelse
@@ -1690,7 +1798,7 @@
                   href: localizations/emea-invoice-processing.md
                 - name: Udstede et EU-indførselscertifikat
                   href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
-                - name: OIOUBL-standarder
+                - name: Understøttede standarder til elektronisk fakturering
                   href: localizations/emea-oioubl-standards-electronic-invoicing.md
                 - name: Original fakturareference (Østeuropa)
                   href: localizations/tasks/ee-00004-original-invoice-reference.md
@@ -1836,6 +1944,8 @@
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Momsangivelse for Tyskland
                   href: localizations/emea-de-vat-declaration.md
+                - name: Rapport om elektroniske fakturaer til kunder
+                  href: localizations/emea-deu-e-invoices.md
                 - name: Kladdelisterapport
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Konfigurere elektroniske momsangivelser
@@ -1938,6 +2048,8 @@
                           href: localizations/apac-ind-news-letter-10-0-12.md
                         - name: Nyheder eller ændringer i 10.0.13
                           href: localizations/ind-news-letter-10-0-13.md
+                        - name: Nyheder eller ændringer i 10.0.14
+                          href: localizations/apac-ind-news-letter-10-0-14.md
                     - name: Indiske GST-referencegrupper
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-integration for kasseapparater
@@ -2164,6 +2276,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektroniske fakturaer til kunder
                   href: localizations/emea-ita-e-invoices.md
+                - name: Årlig momsindberetning
+                  href: localizations/emea-ita-yearly-tax-communication.md
             - name: Japan
               items:
                 - name: Oversigt for Japan
@@ -2450,6 +2564,8 @@
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: Standardrevisionsfil for moms (SAF-T) for Norge
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
+                - name: Elektroniske fakturaer til kunder i Norge
+                  href: localizations/emea-nor-e-invoices.md
             - name: Polen
               items:
                 - name: Oversigt for Polen
@@ -2482,6 +2598,8 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Delt kreditor/debitor-kursdifference
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: 'Momsopgørelse med registre (JPK_V7M, VDEK)'
+                  href: localizations/emea-pol-vdek.md
             - name: Qatar
               items:
                 - name: Oversigt for Qatar
@@ -2716,11 +2834,13 @@
                   href: localizations/apac-sau-sales-tax.md
                 - name: Zakat-rapportering for Saudi-Arabien
                   href: localizations/emea-sau-zakat-reporting.md
+                - name: Tildele gebyrer for bankdokumenter til en forsendelse
+                  href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
             - name: Singapore
               items:
                 - name: Oversigt for Singapore
                   href: localizations/singapore.md
-                - name: Generere GST-05-rapporten
+                - name: Oprette GST-05-rapporten
                   href: localizations/apac-sgp-generate-gst-05-report.md
             - name: Spanien
               items:
@@ -2994,6 +3114,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Adgang til oplysninger og rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Muligheder for tilpasning med Power BI.com
+              items:
+                - name: 'Funktioner, der er tilgængelige via Power BI.com-integration'
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                - name: Fastgøre Power BI.com-indhold
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Vælge analytiske arbejdsområder fra Power BI.com
             - name: Muligheder for tilpasning med Power BI
               items:
                 - name: 'Funktioner, der er tilgængelige via Power BI-integration'
@@ -3112,7 +3239,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Føje økonomiske dimensioner til samlede målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Oprette analyserapporter ved hjælp af PowerBI Desktop
+                - name: Oprette analyserapporter ved hjælp af Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3532,11 +3659,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
                 - name: Design en ny ER-løsning til udskrivning af en brugerdefineret rapport
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
+                - name: Justere en ER-løsning for at oprette et brugerdefineret elektronisk dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/finance/toc.json
             - name: Selvstudier
               items:
                 - name: 'Få mere at vide om, hvordan du bruger datakilder'
                   items:
-                    - name: Bruge JOIN-forbindelse til at hente data fra flere tabeller
+                    - name: Bruge JOINFORBINDE til at hente data fra flere tabeller
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Bruge RAW XML til at tilføje indhold
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
@@ -3608,6 +3737,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                     - name: Komprimere store udgående dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+                - name: Kontrollere konfigurerede ER-komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
                 - name: Relativ sti i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
@@ -3662,24 +3793,36 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
                 - name: Spore kørsel af ER-formater til fejlfinding af problemer med ydeevnen
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                - name: Styring af forretningsdokumenter
+                - name: Styring af forretningsdokumenter (BDM)
                   items:
-                    - name: Oversigt over styring af forretningsdokumenter
+                    - name: BDM (fordelt ordrestyring)-oversigt
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Brugergrænseflade for nyt dokument i styring af forretningsdokumenter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
-                    - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Brugergrænseflade for nyt dokument i BDM
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+                    - name: Redigere forretningsdokumentskabeloner i BDM
+                      items:
+                        - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                        - name: Opdatere strukturen for en forretningsdokumentskabelon
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
             - name: API til ER-struktur
               items:
                 - name: Udvide listen over indbyggede funktioner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-                - name: API-ændringer til Application update 10.0.11
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                - name: API-ændringer til Application update 7.3
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                - name: API-ændringer
+                  items:
+                    - name: Application update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                    - name: Application update 10.0.11
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                  items:
+                    - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                    - name: Delegere oprettelsen af en ER-destination til en brugerdefineret destinationsfabrik
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                - name: Starte datakildeværdier for USER INPUT PARAMETER-typen fra kildekoden
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobilapp
           items:
             - name: Mobilapp-startside

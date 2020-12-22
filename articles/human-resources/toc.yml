@@ -5,7 +5,9 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
-        - name: 22. oktober 2002
+        - name: 2. december 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. oktober 2020
           href: hr-whats-new-2020-10-22.md
         - name: 6. oktober 2020
           href: hr-whats-new-2020-10-06.md
@@ -199,7 +201,7 @@
               href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
             - name: Konfigurere og filtrere arbejdsområder
               href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
-            - name: Vise sider side om side ved hjælp af Åbn i ny vinduesfunktion
+            - name: Vise sider side om side ved hjælp af funktionen Åbn i nyt vindue
               href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
             - name: Tastaturgenveje
               href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
@@ -471,12 +473,14 @@
               href: hr-personnel-jobs.md
             - name: Definere afdelinger
               href: hr-personnel-define-departments.md
-            - name: Tilføje en afdeling til et hierarki.
+            - name: Tilføje en afdeling til et hierarki
               href: hr-personnel-add-department-hierarchy.md
             - name: Definere job
               href: hr-personnel-define-jobs.md
             - name: Oprette en arbejdstidskalender
               href: hr-personnel-create-working-time-calendar.md
+            - name: Rekruttere jobkandidater
+              href: hr-personnel-recruit.md
             - name: Ofte stillede spørgsmål om personalehandlinger
               href: hr-personnel-actions-faq.md
             - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: Konfigurere administration af frynsegoder
                   items:
-                    - name: Angive parametre til administration af frynsegoder
+                    - name: Konfigurere parametre administration af frynsegoder pr. firma
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Angive parametre for administration af frynsegoder og medarbejderselvbetjening for alle firmaer
                       href: hr-benefits-setup-parameters.md
                     - name: Konfigurere berettigelsesregler og -indstillinger
                       href: hr-benefits-setup-eligibility-rules.md
