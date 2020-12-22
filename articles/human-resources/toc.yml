@@ -1,0 +1,695 @@
+- name: Dynamics 365 Human Resources
+  href: hr-welcome.md
+  items:
+    - name: Nyheder
+      items:
+        - name: Nyheder eller ændringer i Human Resources
+          href: hr-admin-whats-new.md
+        - name: 2. december 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. oktober 2020
+          href: hr-whats-new-2020-10-22.md
+        - name: 6. oktober 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26. september 2020
+          href: hr-whats-new-2020-09-26.md
+        - name: 16. september 2020
+          href: hr-whats-new-2020-09-16.md
+        - name: 3. september 2020
+          href: hr-whats-new-2020-09-03.md
+        - name: 20. august 2020
+          href: hr-whats-new-2020-08-20.md
+        - name: 6. august 2020
+          href: hr-whats-new-2020-08-06.md
+        - name: 23. juli 2020
+          href: hr-whats-new-2020-07-23.md
+        - name: 8. juli 2020
+          href: hr-whats-new-2020-07-08.md
+        - name: 25. juni 2020
+          href: hr-whats-new-2020-06-23.md
+        - name: 11. juni 2020
+          href: hr-whats-new-2020-06-11.md
+        - name: 28. maj 2020
+          href: hr-whats-new-2020-05-28.md
+        - name: 14. maj 2020
+          href: hr-whats-new-2020-05-14.md
+        - name: 1. maj 2020
+          href: hr-whats-new-2020-05-01.md
+        - name: Arkiver med nyheder 2020
+          items:
+            - name: 13. april 2020
+              href: hr-whats-new-2020-04-13.md
+            - name: 3. april 2020
+              href: hr-whats-new-2020-04-03.md
+            - name: 24. marts 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. marts 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. marts 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. marts 2020
+              href: hr-whats-new-2020-03-03.md
+            - name: 25. februar 2020
+              href: hr-whats-new-2020-02-25.md
+            - name: 18. februar 2020
+              href: hr-whats-new-2020-02-18.md
+            - name: 12. februar 2020
+              href: hr-whats-new-2020-02-12.md
+            - name: 7. februar 2020
+              href: hr-whats-new-2020-02-07.md
+            - name: 3. februar 2020
+              href: hr-whats-new-2020-02-03.md
+    - name: Vejledning for administrator
+      items:
+        - name: Oversigt
+          href: hr-admin-overview.md
+        - name: Systemkrav
+          href: hr-admin-system-requirements.md
+        - name: Konfigurere og administrere forekomster
+          items:
+            - name: Klargør Human Resources
+              href: hr-admin-setup-provision.md
+            - name: Kopiér en forekomst
+              href: hr-admin-setup-copy-instance.md
+            - name: Fjern en forekomst
+              href: hr-admin-setup-remove-instance.md
+            - name: Opdater proces
+              href: hr-admin-setup-update-process.md
+        - name: Konfigurer dataintegration
+          items:
+            - name: Vælg en dataintegrationsteknologi
+              href: hr-admin-integration-choose-technology.md
+            - name: Konfigurere Common Data Service-integration
+              href: hr-admin-integration-common-data-service.md
+            - name: Common Data Service-enheder
+              href: hr-developer-entities.md
+            - name: Konfigurere virtuelle Common Data Service-enheder
+              href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Konfigurere integration med Finance
+              href: hr-admin-integration-finance.md
+            - name: Konfigurere integration med Dayforce
+              href: hr-admin-integration-dayforce.md
+            - name: Oprette en app for tilbagevendende dataeksport
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Integrere med LinkedIn talent-hub
+              href: hr-admin-integration-linkedin.md
+            - name: Integrere med Office
+              items:
+                - name: Selvstudium til Office-integration
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opdatere enhedsdata i Excel
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette Åbn i Excel-oplevelser
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
+                - name: Fejlfinding af Office-integration
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Konfigurere datastyring
+          items:
+            - name: Oversigt over Data Management Framework
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Dataenheder
+              items:
+                - name: Oversigt over dataenheder
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdataprojekter
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kopiere konfigurationsdata mellem firmaer eller juridiske enheder
+                  items:
+                    - name: Oversigt over kopiering af konfigurationsdata
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatapakker
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatapakker (kun frigivelsen fra juli 2017)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdataskabeloner
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Spore ændringer i en enhed
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Finde oplysninger om standarddataenheder
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Dataskabeloner med flere regneark
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Aktivere ændringssporing for enheder
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsnøgler og dataenheder
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatapakker
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Dataimport- og -eksportjob
+              items:
+                - name: Oversigt over dataimport- og -eksportjob
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Udvikling for dataenheder
+              items:
+                - name: Principper for design og bedste praksis for dataenheder
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette nye dataenheder
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Egenskaber for dataenhed
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette beregnede kolonner og virtuelle felter
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adfærd på tværs af virksomhed
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Håndtering af lande/områdekoder:'
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Nedarvningsmønstre
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Regler for dataenhedsguide
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metadata-egenskaber
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Valideringer, standarder og ikke-tilknyttede felter'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sikkerhed og dataenheder
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bruge testværktøjer fra tredjepartstjenester
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Oprette skrivebeskyttede enheder, der viser økonomiske dimensioner'
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Brug din egen database
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimere BYOD-bartchjob
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Opdatering af automatiseret enhedslager
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Automatisering af dataopgave
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbejdsområdet Kontrolliste for datavalidering
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Fejlbeskrivelser til datastyring
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
+        - name: Administrere funktioner
+          href: hr-admin-manage-features.md
+        - name: Konfigurere og administrere databaselogning
+          href: hr-admin-database-logging.md
+        - name: Undersøge brugergrænsefladen
+          items:
+            - name: Brugergrænsefladeelementer
+              href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Funktioner til øget tilgængelighed
+              href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
+            - name: Oversigt over funktionsstyring
+              href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ofte stillede spørgsmål om klienter
+              href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
+            - name: Handlingssøgning
+              href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Avanceret filtrering og forespørgselssyntaks
+              href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere og filtrere arbejdsområder
+              href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
+            - name: Vise sider side om side ved hjælp af funktionen Åbn i nyt vindue
+              href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tastaturgenveje
+              href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ændre bannere eller logobilleder for juridiske enheder
+              href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
+            - name: Navigationssøgning
+              href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tilpasse brugeroplevelsen
+              href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
+            - name: Gemte visninger
+              href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
+            - name: Oprette og arbejde med brugerdefinerede felter
+              href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
+            - name: Integrere lærredsapps fra Power Apps
+              href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
+            - name: Finde oplysninger ved hjælp af opslag
+              href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ændre datoen for en session
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
+            - name: Indstille en brugers foretrukne tidszone
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
+            - name: Forstå Lifecycle Services
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources-app i Teams
+          href: hr-admin-teams-leave-app.md
+        - name: Forberede til udgivelse
+          href: hr-admin-go-live-prepare.md
+        - name: Ofte stillede spørgsmål om udgivelse
+          href: hr-admin-go-live-faq.md
+        - name: Dokumentationsressourcer
+          items:
+            - name: Hjælp-system
+              href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Oprette forbindelse til Hjælp-systemet
+              href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+            - name: Brugerdefineret oversigt over hjælp
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Se og eksportere feltbeskrivelser
+              href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbejdsrutineoptager
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+            - name: Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Fejlfinding af Human Resources
+          items:
+            - name: Få support
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimere ydeevnen ved at planlægge batchjob efter arbejdstid
+              href: hr-admin-troubleshooting-batch-jobs.md
+            - name: Optimere ydeevnen med automatiske oprydningsopgaver
+              href: hr-admin-troubleshooting-batch-history.md
+            - name: Analytiske rapporter opdateres ikke
+              href: hr-admin-troubleshooting-analytic-reports.md
+            - name: Kan ikke oprette et miljø i Power Apps Administration
+              href: hr-admin-troubleshooting-power-apps.md
+            - name: Klient afbryder forbindelsen
+              href: hr-admin-troubleshooting-disconnect.md
+            - name: Undgå afkortet tekst i stillingshierarki
+              href: hr-admin-troubleshooting-truncate.md
+            - name: Kør kompensationsprocessen
+              href: hr-admin-troubleshooting-compensation.md
+            - name: Gemme en opgaveguide i LCS
+              href: hr-admin-troubleshooting-task-guide.md
+            - name: Adgang til privatadresser efter sikkerhedsrolle
+              href: hr-admin-troubleshooting-private-addresses.md
+            - name: Human Resources vises ikke i Dynamics 365-apps
+              href: hr-admin-troubleshooting-not-in-apps.md
+            - name: Rapporteringsindstillinger
+              href: hr-admin-troubleshooting-reporting.md
+            - name: Ofte stillede spørgsmål til integration
+              href: hr-admin-troubleshooting-integration.md
+    - name: Vejledning for udvikler
+      items:
+        - name: Oversigt
+          href: hr-developer-overview.md
+        - name: Udvide med Power Apps og Power Automate
+          href: hr-developer-power-apps.md
+        - name: Common Data Service-enheder
+          href: hr-developer-entities.md
+        - name: Brugerdefinerede felter
+          href: hr-developer-custom-fields.md
+        - name: Konfigurer dataintegration
+          items:
+            - name: Vælg en dataintegrationsteknologi
+              href: hr-admin-integration-choose-technology.md
+            - name: Konfigurere Common Data Service-integration
+              href: hr-admin-integration-common-data-service.md
+            - name: Konfigurere integration med Finance
+              href: hr-admin-integration-finance.md
+            - name: Konfigurere integration med Dayforce
+              href: hr-admin-integration-dayforce.md
+            - name: Oprette en app for tilbagevendende dataeksport
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Integrere med Office
+              items:
+                - name: Selvstudium til Office-integration
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Opdatere enhedsdata i Excel
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Oprette Åbn i Excel-oplevelser
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Fejlfinding af Office-integration
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Enheds-API-reference
+          items:
+            - name: Godkendelse
+              href: hr-developer-api-authentication.md
+            - name: Enheder
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: Oversigt over MyLeaveRequests
+                      href: hr-developer-api-myleaverequests-overview.md
+                    - name: Sende en orlovsanmodning til arbejdsgang
+                      href: hr-developer-api-myleaverequests-submit.md
+    - name: Brugervejledning
+      items:
+        - name: Oversigt
+          href: hr-hrpro-overview.md
+        - name: Konfigurere Human Resources
+          items:
+            - name: Konfigurere Human Resources-parametre
+              href: hr-setup-parameters.md
+            - name: Konfigurere delte Human Resources-parametre
+              href: hr-setup-shared-parameters.md
+            - name: Forstå dato- og tidsfelter
+              href: hr-setup-date-time-fields.md
+        - name: Konfigurere organisationsindstillinger
+          items:
+            - name: Startside for organisationsadministration
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
+            - name: Nummerserier
+              items:
+                - name: Oversigt over nummerserier
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere individuelle nummerserier
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette nummerserier ved hjælp af en guide
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
+            - name: Organisationer og organisationshierarkier
+              items:
+                - name: Oversigt over organisationer og organisationshierarkier
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
+                - name: Planlægge dit organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette et organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette juridiske enheder
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette driftsenheder
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
+            - name: Globalt adressekartotek
+              items:
+                - name: Oversigt over globalt adressekartotek
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Planen for det globale adressekartotek og andre adressekartoteker
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere det globale adressekartotek
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ofte stillede spørgsmål om adressekartoteker
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere adressekartoteker
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbejdsgangssystem
+              items:
+                - name: Oversigt over arbejdsgangssystem
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arkitektur for arbejdsgangssystem
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbejdsgangselementer
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+                - name: Handlinger i arbejdsgange
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette arbejdsgange
+                  items:
+                    - name: Oversigt over oprettelse af arbejdsgange
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere egenskaber for arbejdsgange
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere manuelle opgaver
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere automatiserede opgaver
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere godkendelsesprocesser
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere godkendelsestrin
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere manuelle beslutninger
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere betingede beslutninger
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere parallelle aktiviteter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere parallelle grene
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurere arbejdsgange for linjeelementer
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+                - name: Uddelegere arbejdselementer i en arbejdsgang
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vise arbejdsgangs historik
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbejdsgangstyper
+                  items:
+                    - name: Oprettelse af en arbejdsgangstype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Kontrolliste til arbejdsgangstype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Oprette en arbejdsgangskategori
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Oprette en forespørgsel for en arbejdsgangstype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Oprette en ny arbejdsgangstype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Oprette en arbejdsgangsdokumentklasse
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Oprette en SubmitToWorkflow-klasse
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Tilknytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+                - name: Rapport om arbejdsgangstyper
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ofte stillede spørgsmål om arbejdsgang
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+            - name: Påmindelser
+              items:
+                - name: Oversigt over påmindelser
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette påmindelsesregler
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
+                - name: Batchbehandling af påmindelser
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
+                - name: Klientpåmindelsesbeskeder via mail
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
+            - name: Elektroniske signaturer
+              items:
+                - name: Oversigt over elektroniske signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere elektroniske signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
+            - name: Sagsstyring
+              items:
+                - name: Oversigt over sagsstyring
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Planlægge sagssikkerhed, -processer og -kategorier'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Postskabeloner
+              items:
+                - name: Oversigt over postskabeloner
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette en postskabelon
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bruge en postskabelon til at oprette en ny post
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere dokumentstyring
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere og sende mail
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
+            - name: Data om dato/klokkeslæt og tidszoner
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
+        - name: Administrere personale
+          items:
+            - name: Organisere dine medarbejdere
+              href: hr-personnel-departments-jobs-positions.md
+            - name: Konfigurere komponenterne i et job
+              href: hr-personnel-jobs.md
+            - name: Definere afdelinger
+              href: hr-personnel-define-departments.md
+            - name: Tilføje en afdeling til et hierarki
+              href: hr-personnel-add-department-hierarchy.md
+            - name: Definere job
+              href: hr-personnel-define-jobs.md
+            - name: Oprette en arbejdstidskalender
+              href: hr-personnel-create-working-time-calendar.md
+            - name: Rekruttere jobkandidater
+              href: hr-personnel-recruit.md
+            - name: Ofte stillede spørgsmål om personalehandlinger
+              href: hr-personnel-actions-faq.md
+            - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
+              href: hr-workflow-manage-employee-information.md
+            - name: Få vist og administrer adresseændringer
+              href: hr-personnel-view-address-changes.md
+            - name: Redigere rapporteringsrelationerne for en stilling
+              href: hr-personnel-modify-reporting-relationships-position.md
+            - name: Angive arbejderoplysninger
+              href: hr-personnel-enter-worker-information.md
+            - name: Låne varer til arbejdere
+              href: hr-personnel-loan-item-worker.md
+            - name: Oprettelse af udlånsemner
+              href: hr-personnel-create-loan-items.md
+            - name: Administrere udlånsemner
+              href: hr-personnel-loan-items.md
+            - name: Udarbejde en efterfølgerplan
+              href: hr-personnel-develop-succession-plan.md
+            - name: Masseansættelsesprojekter
+              href: hr-personnel-mass-hire-projects.md
+            - name: Oprette et masseansættelsesprojekt
+              href: hr-personnel-create-mass-hire-project.md
+            - name: Konfigurere stillinger
+              href: hr-personnel-set-up-positions.md
+            - name: Konfigurere oplysninger om skade og sygdom
+              href: hr-personnel-set-up-injury-illness-information.md
+            - name: Vedligeholde oplysninger om skade og sygdom for medarbejder
+              href: hr-personnel-maintain-employee-injury-illness-information.md
+        - name: Konfigurere lønstrukturer
+          items:
+            - name: Oversigt over lønstrukturer
+              href: hr-compensation-overview.md
+            - name: Konfigurere kompensationsgitre
+              href: hr-compensation-grids.md
+            - name: Udarbejde en kompensationsstruktur og -plan
+              href: hr-compensation-structure.md
+            - name: Oprette planer for fast løn
+              href: hr-compensation-fixed-plans.md
+            - name: Oprette planer for variabel kompensation
+              href: hr-compensation-variable-plans.md
+            - name: Tilmelde medarbejdere til en plan for fast løn
+              href: hr-compensation-enroll-employees-fixed.md
+            - name: Tilmelde medarbejdere til en variabel kompensationsplan
+              href: hr-compensation-enroll-employees-variable.md
+            - name: Definere kompensationsproces og beregne resultater
+              href: hr-compensation-define-process.md
+            - name: Behandle kompensationsplaner
+              href: hr-compensation-process.md
+        - name: Administrere frynsegoder
+          items:
+            - name: Frynsegodeadministration
+              items:
+                - name: Oversigt over administration af frynsegoder
+                  href: hr-benefits-management-overview.md
+                - name: Konfigurere administration af frynsegoder
+                  items:
+                    - name: Konfigurere parametre administration af frynsegoder pr. firma
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Angive parametre for administration af frynsegoder og medarbejderselvbetjening for alle firmaer
+                      href: hr-benefits-setup-parameters.md
+                    - name: Konfigurere berettigelsesregler og -indstillinger
+                      href: hr-benefits-setup-eligibility-rules.md
+                    - name: Konfigurere indstillinger for personlig kontaktberettigelse
+                      href: hr-benefits-setup-contact-eligibility-options.md
+                    - name: Oprette disponeringsindstillinger
+                      href: hr-benefits-setup-coverage-options.md
+                    - name: Konfigurere betalingshyppigheder
+                      href: hr-benefits-setup-payment-frequencies.md
+                    - name: Konfigurere livsbegivenhedstyper
+                      href: hr-benefits-setup-life-event-types.md
+                    - name: Oprette plantyper
+                      href: hr-benefits-setup-plan-types.md
+                    - name: Konfigurere årsagskoder
+                      href: hr-benefits-setup-reason-codes.md
+                    - name: Konfigurere niveaukoder
+                      href: hr-benefits-setup-tier-codes.md
+                    - name: Konfigurere satser
+                      href: hr-benefits-setup-rates.md
+                    - name: Konfigurere fradrag
+                      href: hr-benefits-setup-deductions.md
+                    - name: Konfigurere ventedage
+                      href: hr-benefits-setup-waiting-days.md
+                    - name: Konfigurere venteperioder
+                      href: hr-benefits-setup-waiting-periods.md
+                    - name: Konfigurere afrundingsregler
+                      href: hr-benefits-setup-rounding-rules.md
+                    - name: Oprette ansættelseskategorier
+                      href: hr-benefits-setup-employment-categories.md
+                    - name: Konfigurere ansættelsestyper
+                      href: hr-benefits-setup-employment-types.md
+                    - name: Konfigurere medarbejderselvbetjening
+                      href: hr-benefits-setup-employee-self-service.md
+                - name: Oprette frynsegodeplaner
+                  items:
+                    - name: Konfigurere frynsegodeplaner
+                      href: hr-benefits-plans-setup.md
+                    - name: Konfigurere flekskreditprogrammer
+                      href: hr-benefits-plans-flex-credit-programs.md
+                - name: Behandle frynsegodeplaner
+                  items:
+                    - name: Behandle berettigelse til tilmelding
+                      href: hr-benefits-process-enrollment-eligibility.md
+                    - name: Behandle livsbegivenheder
+                      href: hr-benefits-process-life-events.md
+                    - name: Behandle ændringer af livsbegivenheder
+                      href: hr-benefits-process-life-event-changes.md
+                    - name: Behandle berettigelse til livsbegivenheder
+                      href: hr-benefits-process-life-event-eligibility.md
+                    - name: Behandle satsændringer
+                      href: hr-benefits-process-rate-changes.md
+            - name: Definere og administrere et frynsegodeprogram
+              href: hr-benefits-manage-program.md
+            - name: Politikker for berettigelse til frynsegoder
+              href: hr-benefits-eligibility-policies.md
+            - name: Proces for frynsegodeberettigelse
+              href: hr-benefits-eligibility-process.md
+            - name: Definere regler og politikker for frynsegodeberettigelse
+              href: hr-benefits-define-eligibility-rules.md
+            - name: Levere et frynsegodeprogram for medarbejdere
+              href: hr-benefits-deliver-employee-benefits-program.md
+            - name: Oprette nye frynsegoder
+              href: hr-benefits-create.md
+            - name: Tilmelde arbejdere til frynsegoder
+              href: hr-benefits-enroll-workers.md
+            - name: Administrere frynsegoders udløbsdatoer
+              href: hr-benefits-expiration-dates.md
+            - name: Generere ACA-rapporter
+              href: hr-benefits-aca-reports.md
+        - name: Administrere orlov og fravær
+          items:
+            - name: Oversigt
+              href: hr-leave-and-absence-overview.md
+            - name: Konfigurere parametre for orlov og fravær
+              href: hr-leave-and-absence-parameters.md
+            - name: Oprette en arbejdstidskalender
+              href: hr-leave-and-absence-working-time-calendar.md
+            - name: Oprette en arbejdsgang for orlovsanmodning
+              href: hr-leave-and-absence-workflow.md
+            - name: Konfigurere orlovs- og fraværstyper
+              href: hr-leave-and-absence-types.md
+            - name: Oprette en plan for orlov og fravær
+              href: hr-leave-and-absence-plans.md
+            - name: Tildele arbejdere til en orlovsplan
+              href: hr-leave-and-absence-enroll.md
+            - name: Periodisere orlovs- og fraværsplaner
+              href: hr-leave-and-absence-accrue.md
+            - name: Stoppe orlov midlertidigt
+              href: hr-leave-and-absence-suspend-leave.md
+            - name: Orlovsanmodning
+              href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Administrere medarbejderorlov
+              href: hr-leave-and-absence-manage-employee-leave.md
+            - name: Vise analyse af orlov og fravær
+              href: hr-leave-and-absence-analytics.md
+            - name: Administrere anmodninger om orlov og fravær
+              href: hr-employee-self-service-manage-requests.md
+            - name: Anmode om fravær
+              href: hr-employee-self-service-request-time-off.md
+            - name: Vise team- og firmakalendere
+              href: hr-employee-self-service-calendar.md
+            - name: Administrere politikker for køb og salg af orlov
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Oprette arbejdsgange for køb og salg af orlov
+              href: hr-leave-and-absence-buy-sell-workflow.md
+            - name: Køb og sælg orlov
+              href: hr-employee-self-service-buy-sell-leave.md
+        - name: Administrere fraværsanmodninger i Teams
+          href: hr-teams-leave-app.md
+        - name: Udvikle medarbejdere
+          items:
+            - name: Oversigt over performancestyring
+              href: hr-develop-performance-management-overview.md
+            - name: Justere arbejdsstyrkens færdigheder
+              href: hr-develop-skills.md
+            - name: Tilføje til din performancekladde
+              href: hr-develop-add-performance-journal.md
+            - name: Oprette et mål
+              href: hr-develop-create-goal.md
+            - name: Oprette en performancegennemgang
+              href: hr-develop-create-performance-review.md
+        - name: Oprette kurser
+          items:
+            - name: Konfigurere kurser
+              href: hr-learning-courses.md
+            - name: Spørgeskemaoversigt
+              href: hr-learning-questionnaires.md
+            - name: Designe spørgeskemaer
+              href: hr-learning-design-questionnaires.md
+            - name: Udsende og planlægge spørgeskemaer
+              href: hr-learning-distribute-questionnaires.md
+            - name: Udsende spørgeskemaer ved hjælp af planlægning
+              href: hr-learning-distribute-questionnaires-scheduling.md
+            - name: Vis spørgeskemaresultater
+              href: hr-learning-evaluate-questionnaire-results.md
+            - name: Analysere spørgeskemaresultater
+              href: hr-learning-analyze-questionnaire-results.md
+            - name: Oprette et åbent spørgsmål
+              href: hr-learning-create-open-ended-question.md
+            - name: Oprette et lukket spørgsmål
+              href: hr-learning-create-closed-ended-question.md
+            - name: Oprette et afhængigt spørgsmål
+              href: hr-learning-depending-question.md
+        - name: Oprette medarbejder- og lederselvbetjening
+          items:
+            - name: Oversigt over medarbejder- og lederselvbetjening
+              href: hr-employee-manager-self-service-overview.md
+            - name: Oprette brugerdefinerede links i styring af selvbetjening
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: Ændre navn på arbejdsområdet Medarbejderselvbetjening
+              href: hr-employee-self-service-workspace-name.md
+            - name: Redigere personlige oplysninger
+              href: hr-employee-manager-self-service-edit-personal-information.md
