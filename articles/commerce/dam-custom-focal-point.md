@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af922e857e6bd7a58c0b9891939c8265568b549b
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269515"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594326"
 ---
 # <a name="customize-image-focal-points"></a>Tilpasse billedets fokuspunkter
 
@@ -39,22 +39,24 @@ Når et billede uploades til mediebiblioteket i Commerce-webstedsgenerator, fors
 
 Hvis du vil definere et brugerdefineret fokuspunkt for et billede, skal du følge disse trin.
 
-1. Vælg **Mediebibliotek**i venstre navigationsrude i Commerce-webstedgenerator.
+1. Vælg **Mediebibliotek** i venstre navigationsrude i Commerce-webstedgenerator.
 1. Vælg det billede, du vil redigere, i hovedvinduet.
 1. Vælg **Rediger** på kommandolinjen.
 1. Vælg billedet for at skifte til **Redigeringstilstand**.
 1. Vælg **Skift fokuspunkt** under **Redigeringstilstand**. Der vises et cirkulært fokuspunkt for billedet.
 1. Vælg kontrolelementet til fokuspunktet for at flytte det hen over det ønskede fokuspunkt.
-1. Når du er færdig, skal du vælge **Gem**på kommandolinjen og derefter vælge **Afslut redigering**.
+1. Når du er færdig, skal du vælge **Gem** på kommandolinjen og derefter vælge **Afslut redigering**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over digital aktivstyring](dam-overview.md)
+[Oversigt over styring af digitale aktiver](dam-overview.md)
 
-[Uploade billeder](dam-upload-images.md)
+[Overføre billeder](dam-upload-images.md)
 
-[Uploade video](dam-upload-video.md)
+[Overføre video](dam-upload-video.md)
 
 [Uploade filer](dam-upload-files.md)
 
 [Beskære billeder](dam-crop-images.md)
+
+[Overføre og håndtere statiske filer](upload-serve-static-files.md)

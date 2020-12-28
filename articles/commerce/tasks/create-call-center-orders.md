@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107346"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594230"
 ---
 # <a name="create-call-center-orders"></a>Oprette callcenter-ordrer
 
@@ -55,4 +55,10 @@ Denne procedure gennemgår søgning efter en kunde, oprettelse af en ny ordre, s
     * Til denne procedure skal du angive et beløb svarende til ordresaldoen, som kan ses på oversigtssiden Salgsordre til venstre for feltet Beløb. Denne handling giver dig mulighed for at fuldføre ordren som fuldt ud betalt.  
 17. Vælg **OK**.
 18. Vælg **Send**.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Tilpasse transaktionsmails efter leveringsmåde](../customize-email-delivery-mode.md)
+
+[Skifte leveringsmåde til i POS](../pos-change-delivery-mode.md)
 

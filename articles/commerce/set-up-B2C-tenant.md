@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1910563865a21dab3345a82711ead9b9e57b92fa
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980958"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517374"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -37,7 +37,7 @@ Dynamics 365 Commerce bruger Azure AD B2C til at understøtte brugerlegitimation
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Oprette eller sammenkæde med en eksisterende AAD B2C-lejer i Azure-portalen
 
 1. Log på [Azure-portalen](https://portal.azure.com/).
-1. Vælg **Opret en ressource**i Azure-portalmenuen. Sørg for at bruge det abonnement og den mappe, der er forbundet med dit Commerce-miljø.
+1. Vælg **Opret en ressource** i Azure-portalmenuen. Sørg for at bruge det abonnement og den mappe, der er forbundet med dit Commerce-miljø.
 
     ![Oprette en ressource i Azure-portalen](./media/B2CImage_1.png)
 
@@ -206,7 +206,7 @@ Før du kan tilføje en social identitetsudbyder til godkendelse, skal du gå ti
 
 Udfør følgende trin for at tilføje og konfigurere en social identitetsudbyder.  
 
-1. Naviger til **Identitetsudbydere**i Azure-portalen.
+1. Naviger til **Identitetsudbydere** i Azure-portalen.
 1. Vælg **Tilføj**. Skærmbilledet **Tilføj identitetsudbyder** vises.
 1. Angiv det navn, der skal vises for brugere på din login-skærm, under **Navn**.
 1. Vælg en identitetsudbyder på listen under **Type identitetsudbyder**.
@@ -345,15 +345,15 @@ Du kan tilføje en valgfri, sekundær administratorkonto under afsnittet **Bruge
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-[Masseoverføre omdirigeringer af URL-adresser](upload-bulk-redirects.md)
+[Masseoverføre omdirigeringer af URL-adresser](upload-bulk-redirects.md)Knyt et Dynamics 365 Commerce-websted til en onlinekanal
 
 [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 1e9f8d202fa81546a9f84af62824e6d8f620cf35
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: eaffe7821b60dd787a7d8b7533c1b8599033ba68
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975091"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594131"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Ændring af leveringsmetode i POS
 
@@ -40,4 +40,10 @@ Når denne funktion er konfigureret i POS, og du vælger **Skift leveringsmåde*
 
 Når du har valgt de linjer, du vil ændre, skal klikke på **Skift leveringsmåde** for at vælge indstillinger for leveringsmåde. Hvis du har valgt flere linjer, der skal ændres, vil POS kun vise leveringsmåder, der er konfigureret som tilladte for alle de valgte produkter. Leveringsmåder kan konfigureres til at understøtte specifikke produkter og leveringsadresser. Hvis der er en leveringsmåde, der er acceptabel for ét produkt og én adressekombination, men ikke er acceptabel for en anden valgt produkt- og adressekombination, er leveringsmåden ikke tilgængelig. Du skal muligvis vælge én linje ad gangen og ændre leveringsmåden for hver linje separat, hvis du vil vælge en leveringsmåde for ét produkt, der ikke understøttes af et andet produkt.  
 
-Når du har valgt den nye leveringsmåde, vises siden Transaktion. Hvis du vil have vist dine valg af nye leveringsmåder, skal du vælge fanen **Levering** på transaktionslisten.   
+Når du har valgt den nye leveringsmåde, vises siden Transaktion. Hvis du vil have vist dine valg af nye leveringsmåder, skal du vælge fanen **Levering** på transaktionslisten.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Oprette callcenter-ordrer](tasks/create-call-center-orders.md)
+
+[Tilpasse transaktionsmails efter leveringsmåde](customize-email-delivery-mode.md)

@@ -3,7 +3,7 @@ title: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa18e7446a72a907fcad70f92ea529088b6cecbd
-ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
+ms.openlocfilehash: 37b541ff5037a38b60dbfd6a6c071f55afcc1304
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "3539873"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689519"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 
@@ -35,6 +35,18 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.15-frigivelsen
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-understøttelse af Dynamics 365 udfases
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Microsoft Internet Explorer 11-understøttelsen af alle Dynamics 365-produkter udfases fra december 2020, og Internet Explorer 11 understøttes ikke efter august 2021.<br><br>Dette vil påvirke kunder, der bruger Dynamics 365-produkter, som er udviklet til brug via en Internet Explorer 11-grænseflade. Efter august 2021 er Internet Explorer 11 ikke understøttet for sådanne Dynamics 365-produkter. |
+| **Erstattet af en anden funktion?**   | Vi anbefaler, at kunderne overgår til Microsoft Edge.|
+| **Produktområder, der er berørt**         | Alle Dynamics 365-produkter |
+| **Installationsindstilling**              | Alt|
+| **Status**                         | Forældet. Internet Explorer 11 understøttes ikke efter august 2021.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.11-frigivelsen
 ### <a name="data-action-hooks"></a>Datahandlings-hooks

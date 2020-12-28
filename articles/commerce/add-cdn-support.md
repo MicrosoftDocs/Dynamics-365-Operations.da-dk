@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646033"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517202"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 
@@ -31,11 +31,11 @@ ms.locfileid: "3646033"
 
 Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Når du konfigurerer et e-handels-miljø i Dynamics 365 Commerce, kan du konfigurere det til at arbejde sammen med CDN-tjenesten. 
 
-Dit brugerdefinerede domæne kan aktiveres under klargøringsprocessen for e-handels-miljøet. Du kan også bruge en serviceanmodning til at konfigurere den, når klargøringsprocessen er fuldført. Klargøringsprocessen for e-handels miljøet genererer et værtsnavn, der er knyttet til miljøet. Dette værtsnavn har følgende format, hvor \<*e-commerce-tenant-name*\> er navnet på dit miljø:
+Dit brugerdefinerede domæne kan aktiveres under klargøringsprocessen for e-handels-miljøet. Du kan også bruge en serviceanmodning til at konfigurere den, når klargøringsprocessen er fuldført. Klargøringsprocessen for e-handelsmiljøet genererer et værtsnavn, der er knyttet til miljøet. Dette værtsnavn har følgende format, hvor \<*e-commerce-tenant-name*\> er navnet på dit miljø:
 
 &lt;e-handels-lejernavn&gt;.commerce.dynamics.com
 
@@ -97,8 +97,8 @@ Benyt følgende fremgangsmåde for at konfigurere en ruteplanlægningsregel i Az
 1. I feltet **Navn** skal du angive **standard**.
 1. I feltet **Accepteret protokol** skal du vælge **HTTP og HTTPS**.
 1. I feltet **Front-end-værter** skal du angive **dynamics-ecom-lejernavn.azurefd.net**.
-1. Under **Mønstre, der skal matche** skal du angive **/\*** i det øverste felt.
-1. Under **Rutedetaljer** skal du angive indstillingen **Rutetype** til **Fremad**.
+1. Under **Mønstre, der skal matche** skal du angive **/\** _ i det øverste felt.
+1. Under _*Rutedetaljer** skal du indstille **Rutetype** til **Fremad**.
 1. I feltet **Back-end-pulje** skal du vælge **ecom-back-end**.
 1. I feltgruppen **Videresendelsesprotokol** skal du vælge indstillingen **Match anmodning**. 
 1. Angiv indstillingen **URL Rewrite** til **Deaktiveret**.
@@ -110,8 +110,8 @@ Benyt følgende fremgangsmåde for at konfigurere en cachelagringsregel i Azure 
 1. I feltet **Navn** skal du angive **statiske filer**.
 1. I feltet **Accepteret protokol** skal du vælge **HTTP og HTTPS**.
 1. I feltet **Front-end-værter** skal du angive **dynamics-ecom-lejernavn.azurefd.net**.
-1. Under **Mønstre, der skal matche** skal du angive **/\_msdyn365/\_scnr/\*** i det øverste felt.
-1. Under **Rutedetaljer** skal du angive indstillingen **Rutetype** til **Fremad**.
+1. Under **Mønstre, der skal matche** skal du angive **/\_msdyn365/\_scnr/\** _ i det øverste felt.
+1. Under _*Rutedetaljer** skal du indstille **Rutetype** til **Fremad**.
 1. I feltet **Back-end-pulje** skal du vælge **ecom-back-end**.
 1. I feltgruppen **Videresendelsesprotokol** skal du vælge indstillingen **Match anmodning**.
 1. Angiv indstillingen **URL Rewrite** til **Deaktiveret**.
@@ -146,11 +146,11 @@ Dit CDN bør nu være korrekt konfigureret, så det kan bruges sammen med Commer
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 

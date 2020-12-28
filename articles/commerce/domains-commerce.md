@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3764995"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517349"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -34,7 +34,7 @@ Domæner er webadresser, der bruges til at navigere til Dynamics 365 Commerce-we
 
 ## <a name="provisioning-and-supported-host-names"></a>Klargøring og understøttede værtsnavne
 
-Når der klargøres et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), bruges feltet **Understøttede værtsnavne** på skærmen for klargøring af e-handel til at angive domæner, der knyttes til det udrullede Commerce-miljø. Disse domæner er kundeorienterede DNS-servernavne, som er vært for e-handels-websteder. Hvis du angiver et domæne på dette stadie, starter det ikke omdirigering af trafik for domænet til Dynamics 365 Commerce. Trafik for et domæne sendes kun til Commerce-slutpunktet, når DNS CNAME-posten opdateres til at bruge Commerce-slutpunktet sammen med domænet.
+Når der klargøres et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), bruges feltet **Understøttede værtsnavne** på skærmen for klargøring af e-handel til at angive domæner, der knyttes til det udrullede Commerce-miljø. Disse domæner er kundeorienterede DNS-servernavne, som er vært for e-handelswebsteder. Hvis du angiver et domæne på dette stadie, starter det ikke omdirigering af trafik for domænet til Dynamics 365 Commerce. Trafik for et domæne sendes kun til Commerce-slutpunktet, når DNS CNAME-posten opdateres til at bruge Commerce-slutpunktet sammen med domænet.
 
 > [!NOTE]
 > Der kan angives flere domæner i feltet **Understøttede værtsnavne** ved at adskille dem med semikoloner.
@@ -47,13 +47,13 @@ Du kan oprette en serviceanmodning for at føje flere domæner til et miljø, hv
 
 ## <a name="commerce-generated-urls"></a>Commerce-genererede URL-adresser
 
-Ved klargøring af et e-handels-miljø vil Commerce generere en URL-adresse, der er arbejdsadressen for miljøet. Der henvises til denne URL-adresse i linket til e-handel-webstedet, som vises i LCS, efter at miljøet er klargjort. En Commerce-genereret URL-adresse har formatet `https://<e-Commerce tenant name>.commerce.dynamics.com`, hvor navnet på e-handels-lejeren er det navn, der er angivet i LCS for Commerce-miljøet.
+Ved klargøring af et Dynamics 365 Commerce-e-handelsmiljø vil Commerce generere en URL-adresse, der er arbejdsadressen for miljøet. Der henvises til denne URL-adresse i linket til e-handelwebstedet, som vises i LCS, efter at miljøet er klargjort. En Commerce-genereret URL-adresse har formatet `https://<e-commerce tenant name>.commerce.dynamics.com`, hvor navnet på e-handelslejeren er det navn, der er angivet i LCS for Commerce-miljøet.
 
 Du kan også bruge værtsnavne for produktionswebsteder i et sandkassemiljø. Denne mulighed er ideel, når du kopierer et websted fra et sandkassemiljø til produktion.
 
 ## <a name="site-setup"></a>Webstedopsætning
 
-Når dit e-handels-miljø er klargjort, skal du konfigurere webstedet i Commerce-webstedsgeneratoren for at kunne knytte dit websted til URL-arbejdsadressen.
+Når dit e-handelsmiljø er klargjort, skal du konfigurere webstedet i Commerce-webstedsgeneratoren for at kunne knytte dit websted til URL-arbejdsadressen.
 
 Første gang du konfigurerer et websted i webstedsgeneratoren, vises dialogboksen **Konfigurer dit websted**.
 
@@ -68,7 +68,7 @@ Feltet **Sti** kan være tomt, eller der kan tilføjes en ekstra stistreng, som 
 > [!NOTE]
 > Stien kaldes også den **matchende sti**, når der tilføjes en kanal i konfigurationssektionen **Indstillinger for websted \> Kanaler** i webstedsgeneratoren.
 
-Hvis du f.eks. har et websted i webstedsgeneratoren kaldet "fabrikam" i en e-handels-lejer med navnet "xyz", og hvis du konfigurerer webstedet med en tom sti, vil du få adgang til det udgivne websteds indhold i en webbrowser ved at gå direkte til den Commerce-genererede URL-basisadresse:
+Hvis du f.eks. har et websted i webstedsgeneratoren kaldet "fabrikam" i en e-handelslejer med navnet "xyz", og hvis du konfigurerer webstedet med en tom sti, vil du få adgang til det udgivne websteds indhold i en webbrowser ved at gå direkte til den Commerce-genererede URL-basisadresse:
 
 `https://xyz.commerce.dynamics.com`
 
@@ -102,9 +102,9 @@ Når der ikke er angivet en domæneforespørgselsstreng i et miljø med flere do
 
 ## <a name="traffic-forwarding-in-production"></a>Videresendelse af trafik i produktion
 
-Du kan simulere flere domæner ved hjælp af parametre for domæneforespørgselsstrenge på selve commerce.dynamics.com slutpunktet. Men når du skal aktivere det i produktionen, skal du videresende trafikken for dit brugerdefinerede domæne til slutpunktet for `<e-Commerce tenant name>.commerce.dynamics.com`.
+Du kan simulere flere domæner ved hjælp af parametre for domæneforespørgselsstrenge på selve commerce.dynamics.com slutpunktet. Men når du skal aktivere det i produktionen, skal du videresende trafikken for dit brugerdefinerede domæne til slutpunktet for `<e-commerce tenant name>.commerce.dynamics.com`.
 
-Slutpunktet `<e-Commerce tenant name>.commerce.dynamics.com` understøtter ikke brugerdefinerede SSL'er (Secure Sockets Layer), så du skal konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller et Content Delivery Network (CDN). 
+Slutpunktet `<e-commerce tenant name>.commerce.dynamics.com` understøtter ikke brugerdefinerede SSL'er (Secure Sockets Layer), så du skal konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller et Content Delivery Network (CDN). 
 
 Hvis du vil konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller CDN, har du to muligheder:
 
@@ -115,7 +115,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer en CDN-tjeneste direkte, un
 
 Hvis du vil bruge den Commerce-leverede Azure Front Door forekomst, skal du oprette en serviceanmodning til CDN-opsætningen fra Commerce-onboarding-teamet. 
 
-- Du skal angive firmanavn, produktionsdomæne, miljø-id og produktionens e-handels-lejernavn. 
+- Du skal angive firmanavn, produktionsdomæne, miljø-id og produktionens e-handelslejernavn. 
 - Du skal bekræfte, om dette er et eksisterende domæne (bruges til et aktuelt aktivt websted) eller et nyt domæne. 
 - I forbindelse med et nyt domæne kan domænebekræftelse og SSL-certifikatet foretages i et enkelt trin. 
 - I forbindelse med et domæne, der betjener et eksisterende websted, kræves der en proces med flere trin for at fastlægge domænebekræftelse og SSL-certifikat. Denne proces har en 7-dages serviceniveauaftale (SLA) for et domæne, der skal være aktivt, fordi det omfatter flere sekventielle trin.
@@ -152,13 +152,13 @@ Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdom�
 
   ## <a name="additional-resources"></a>Yderligere ressourcer
 
-  [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+  [Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
   [Konfigurere en onlinebutikskanal](online-stores.md)
 
   [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-  [Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+  [Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
   [Administrere robots.txt-filer](manage-robots-txt-files.md)
 

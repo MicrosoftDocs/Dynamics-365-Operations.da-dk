@@ -3,7 +3,7 @@ title: Prisjusteringer og rabatter
 description: Denne artikel indeholder oplysninger om prisjusteringer og rabatter i Dynamics 365 Commerce.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022048"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584309"
 ---
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringer og rabatter
 
@@ -41,11 +41,13 @@ Prisjusteringer og rabatter kan anvendes på produkter, varianter eller kategori
 
 ## <a name="types-of-discounts"></a>Rabattyper
 
-Der findes fire typer rabatter:
+Der findes mange typer rabatter:
 
 - **Enkel rabat** – en enkelt procent eller beløb.
 - **Mængderabat** – En rabat, der anvendes, når to eller flere produkter købes.
 - **Mix og match-rabat** – En rabat, der anvendes, når der købes en specifik kombination af produkter.
 - **Tærskelrabat** – En rabat, der anvendes, når totalen for transaktionen er mere end et bestemt beløb.
+- **Betalingsmiddelbaserede rabatter** – En rabat, der anvendes, når totalen for transaktionen overstiger et angivet beløb, og når en bestemt betalingstype (f.eks. kontant, kredit- eller debetkort) bruges til betaling.
+- **Forsendelsesrabat** – En rabat, der anvendes, når totalen for transaktionen overstiger et angivet beløb, og når en bestemt leveringsmåde (f.eks. forsendelser over to dage eller samme dag) bruges i ordren.
 
 Både prisjusteringer og rabatter kan være knyttet til prisgrupper. Prisgrupper kan derefter tilknyttes kanaler, kataloger, tilhørsforhold og loyalitetsprogrammer.
