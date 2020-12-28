@@ -18,11 +18,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016281"
+ms.locfileid: "4424991"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Batch-udgivelse af delvist reserverede flytteordrer
 
@@ -47,7 +47,7 @@ Opfyldelsespolitikker for overførselsordrer og salgsordrer angives på firmaniv
 
 -   Hvis du vil oprette opfyldelsespolitikker for overførsels- og salgsordrer, skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Frigiv til lagersted** \> **Opfyldelsespolitik** og derefter oprette en opfyldelsespolitik ved at angive et navn og en beskrivelse.
 
--   Hvis du vil angive en opfyldelsessats, en værditype og den meddelelse, der vises, hvis opfyldelsespolitikken overtrædes, skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Frigiv til lagersted** \> **Opfyldelsespolitik** og derefter angive felterne **Opfyldelsessats** , **Værditype** og **Meddelelser om opfyldelsesovertrædelse**.
+-   Hvis du vil angive en opfyldelsessats, en værditype og den meddelelse, der vises, hvis opfyldelsespolitikken overtrædes, skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Frigiv til lagersted** \> **Opfyldelsespolitik** og derefter angive felterne **Opfyldelsessats**, **Værditype** og **Meddelelser om opfyldelsesovertrædelse**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Angive opfyldelsespolitikker for overførsels- og salgsordrer
 

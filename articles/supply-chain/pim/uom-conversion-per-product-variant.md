@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3382791"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424916"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måleenhedskonvertering pr. produktvariant
 
@@ -59,7 +59,7 @@ Udfør følgende trin for at konfigurere en produktmaster til at understøtte en
     - **Produkt** – hvis du vælger denne værdi, kan du konfigurere en enhedsomregning for produktmasteren. Denne enhedsomregning vil blive brugt som reserve for alle produktvarianter, der ikke er defineret en enhedsomregning for.
     - **Produktvariant** – hvis du vælger denne værdi, kan du konfigurere en enhedsomregning for en specifik produktvariant. Brug feltet **Produktvariant** til at vælge varianten.
 
-    ![Tilføje en ny enhedsomregning](media/uom-new-conversion.png "Tilføje en ny enhedsomregning")
+    ![![Tilføje en ny enhedsomregning](media/uom-new-conversion.png "Tilføje en ny enhedsomregning")](media/uom-new-conversion.png "Adding a new unit conversion")
 
 1. Brug de andre felter, der er angivet, til at konfigurere din enhedsomregning.
 1. Vælg **OK** for at gemme den nye enhedsomregning.

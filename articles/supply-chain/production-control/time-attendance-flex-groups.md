@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c71ebab0788b6c5d7466a5d71e3c72a7e86e41db
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826497"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424672"
 ---
 # <a name="flex-groups"></a>Fleksgrupper
 
@@ -38,7 +38,7 @@ Du kan bruge fleksgrupper til at angive følgende regler og principper for en ar
 
 ## <a name="set-up-flexible-working-hours-in-flex-groups"></a>Opsætning af fleksible arbejdstider i fleksgrupper
 
-- Vælg **Tid og fremmøde** \> **Opsætning** \> **Grupper** \> **Fleksgrupper**for at oprette fleksgrupper for flekstimer.
+- Vælg **Tid og fremmøde** \> **Opsætning** \> **Grupper** \> **Fleksgrupper** for at oprette fleksgrupper for flekstimer.
 
 ## <a name="associate-workers-with-flex-groups"></a>Tilknyt arbejdere til fleksgrupper
 
@@ -134,7 +134,7 @@ I så fald vil du kunne administrere arbejderens flekssaldo baseret på lønarte
 
 For at tage højde for flekstimerne skal du også definere en ny lønart. I dette scenarie hedder lønarten **FlexCnt**.
 
-| Lønart | Betegnelse  |
+| Lønart | Beskrivelse  |
 |----------|--------------|
 | FlexCnt  | Flekstidstæller |
 
@@ -145,7 +145,7 @@ Følg derefter disse trin for at konfigurere en lønart og tilføje linjer af de
 3. Vælg **Tid og fremmøde** \> **Opsætning** \> **Lønaftaler**, og vælg derefter **Aftalelinjer**.
 4. For **Mandag** for profiltypen **Fleks+** skal du tilføje følgende tre linjer.
 
-    | Lønart | Betegnelse  | Fra tidspunkt | Til klokken  | Minimum | Maksimum  | Faktor |
+    | Lønart | Beskrivelse  | Fra tidspunkt | Til klokken  | Minimum | Maksimum  | Faktor |
     |----------|--------------|-----------|----------|---------|---------|--------|
     | FlexCnt  | Flekstidstæller | 12:00  | 06:00 | 00:00   | 00:00   | 1,00   |
     | FlexCnt  | Flekstidstæller | 06:00  | 12:00 | 00:00   | 02,00   | 1.50   |

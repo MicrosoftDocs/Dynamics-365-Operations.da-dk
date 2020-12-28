@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211255"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424909"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialeforbrug ved hjælp af en mobilenhed
 
@@ -68,7 +68,7 @@ Derved føres materialet fra bulkvarelokationen til produktionsindlagringslokati
 
 Når produktionsordren er startet, kan du registrere materialeforbruget med arbejdsgangen for den håndholdte enhed. Lad os starte med at registrere forbruget på 25 kg af batch B1.
 
-6.  Vælg menupunktet **Registrer materiale** **forbrug** i menuen for den håndholdte enhed, og angiv følgende oplysninger: 
+6.  Vælg menupunktet  **Registrer materiale** **forbrug** i menuen for den håndholdte enhed, og angiv følgende oplysninger: 
 
 -    Produktionsordrenummeret. 
 -    Det sted, hvor materialet skal forbruges, i dette tilfælde PIL-01. 

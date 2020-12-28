@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014906"
+ms.locfileid: "4424942"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurere Azure-ressourcer til IoT-viden
 
@@ -61,8 +61,8 @@ Benyt følgende fremgangsmåde for at oprette en ny key vault-ressource.
 
 1. Opret eller gå til en ressourcegruppe i Azure-portalen.
 2. Vælg **Tilføj**.
-3. Gå til siden **Ny** , og angiv **Key vault** i søgefeltet. Vælg derefter **Opret**.
-4. Gå til siden **Opret key vault** , og angiv et navn i **Key vault-navn**.
+3. Gå til siden **Ny**, og angiv **Key vault** i søgefeltet. Vælg derefter **Opret**.
+4. Gå til siden **Opret key vault**, og angiv et navn i **Key vault-navn**.
 5. Gennemse standardværdierne, og vælg derefter **Gennemgå + Opret**.
 6. Vælg **Opret**.
 
@@ -74,7 +74,7 @@ Benyt følgende fremgangsmåde for at oprette en IoT Hub-ressource.
 
 1. Oprette eller gå til en ressourcegruppe.
 2. Vælg **Tilføj**.
-3. Gå til siden **Ny** , og angiv **Iot Hub** i søgefeltet. Vælg derefter **Opret**.
+3. Gå til siden **Ny**, og angiv **Iot Hub** i søgefeltet. Vælg derefter **Opret**.
 4. Angiv et navn i feltet **IoT Hub-navn**.
 5. Gennemse standardværdierne, og vælg derefter **Gennemgå + Opret**.
 6. Vælg **Opret**.
@@ -90,7 +90,7 @@ Benyt følgende fremgangsmåde for at oprette en Redis-cacheressource.
 
 1. Oprette eller gå til en ressourcegruppe.
 2. Vælg **Tilføj**.
-3. Gå til siden **Ny** , og angiv **Azure Cache for Redis** i søgefeltet. Vælg derefter **Opret**.
+3. Gå til siden **Ny**, og angiv **Azure Cache for Redis** i søgefeltet. Vælg derefter **Opret**.
 4. Indtast et navn i feltet **DNS-navn**.
 5. Gennemse standardværdierne, og vælg derefter **Opret**.
 
@@ -122,7 +122,7 @@ Benyt følgende fremgangsmåde for at konfigurere key vaulten.
 1. Vælg key vault-ressourcen i dine ressourcer.
 2. Vælg **Adgangspolitikker** i den venstre navigationsrude.
 3. Vælg **Tilføj en adgangspolitik**.
-4. Gå til siden **Tilføj adgangspolitik** , og vælg **Hent** og **Vis** i feltet **Hemmelige tilladelser**.
+4. Gå til siden **Tilføj adgangspolitik**, og vælg **Hent** og **Vis** i feltet **Hemmelige tilladelser**.
 5. Klik i feltet **Vælg hoved**.
 6. I dialogboksen **Principal** skal du søge efter og vælge **Microsoft Dynamics ERP Microservices**. Vælg derefter **Vælg**.
 7. Vælg **Tilføj**.

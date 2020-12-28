@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8778d6a4d834af2151e0bced0b0f27d98f088a34
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986992"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424565"
 ---
 # <a name="formula-designer"></a>Formeldesigner
 
@@ -101,7 +101,7 @@ Når du bruger formeldesigneren til at gennemgå eller redigere formler, der bes
 ## <a name="add-and-edit-formulas-and-formula-lines"></a>Tilføje og redigere formler og formellinjer
 Brug funktionerne **Styklistelinjer** eller **Formel** til at redigere formellinjerne eller formlen. Når du markerer en node i træet, bestemmer typen af noden, hvilke funktioner der er tilgængelige.
 
-| Funktion                            | Betegnelse                                                                                               | Nodetype og betingelser |
+| Funktion                            | Beskrivelse                                                                                               | Nodetype og betingelser |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------|
 | Styklistelinjer &gt; Rediger                 | Åbn en dialogboks, hvor du kan redigere attributterne for formellinjen.                                         | Denne funktion er tilgængelig, når der er valgt en formellinjenode. |
 | Styklistelinjer &gt; Slet               | Slet en formellinje fra den valgte formel.                                                          | Denne funktion er tilgængelig, når en formellinjenode er valgt og formlen ikke er låst til redigering. |
@@ -116,7 +116,7 @@ Brug funktionerne **Styklistelinjer** eller **Formel** til at redigere formellin
 Klik på **Opsætning** for at tilpasse de oplysninger, der vises i formeldesignerens træstruktur.
 
 
-| Feltgruppe |                                                                          Betegnelse                                                                          |
+| Feltgruppe |                                                                          Beskrivelse                                                                          |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     Stykliste     | Brug afkrydsningsfelterne til at vælge de kriterier, der vises i træstrukturen. De valgte kriterier vises nederst under begge faner i formeldesigneren. |
 |    Rute    |                                           Brug afkrydsningsfelterne til at vælge de kriterier, der vises for ruterne.                                           |

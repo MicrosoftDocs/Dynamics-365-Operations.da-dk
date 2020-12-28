@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973470"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4425074"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
@@ -67,6 +67,8 @@ Hvis du vil bruge Planlægningsoptimering, skal du installere tilføjelsesprogra
 1. I oversigtspanelet **Tilføjelsesprogrammer for miljø** kan du se, at Planlægningsoptimering er ved at blive installeret.
 1. Efter nogle minutter bør **Installerer** blive ændret til **Installeret** (du skal muligvis opdatere siden). Når den er installeret, er du klar til at aktivere Planlægningsoptimering i Dynamics 365 Supply Chain Management.
 
+Det vigtigste formål med at installere tilføjelsesprogrammet Planlægningsoptimering er at forbinde tjenesten og miljøet. Derfor skal du installere tilføjelsesprogrammet separat på hvert miljø, hvor du vil bruge Planlægningsoptimering, uanset hvilken kode der flyttes mellem miljøerne.
+
 ### <a name="planning-optimization-integration"></a>Integration af Planlægningsoptimering
 
 Hvis du vil konfigurere, om tilføjelsesprogrammet til Planlægningsoptimering skal bruges til varedisponering, skal du gå til **Varedisponering** \> **Opsætning** \> **Parametre for Planlægningsoptimering**.
@@ -95,7 +97,7 @@ Indstillingen af indstillingen **Brug Planlægningsoptimering** bestemmer, hvilk
 
 ### <a name="integration-with-the-setup"></a>Integration med opsætningen
 
-Hvis forhåndsvisningen af Planlægningsoptimering er aktiveret, foretages varedisponering ved hjælp af tilføjelsesprogrammet for Planlægningsoptimering. I dette tilfælde påvirkes resultaterne af og funktionerne for varedisponering.
+Hvis Planlægningsoptimering er aktiveret, foretages varedisponering ved hjælp af tilføjelsesprogrammet Planlægningsoptimering. I dette tilfælde påvirkes resultaterne af og funktionerne for varedisponering.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

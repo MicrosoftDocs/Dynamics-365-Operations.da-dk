@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017661"
+ms.locfileid: "4425039"
 ---
 # <a name="work-policies"></a>Arbejdspolitikker
 
@@ -113,7 +113,7 @@ Hvis du vil konfigurere et menupunkt for mobilenheden til at understøtte modtag
 
 ## <a name="example-scenario-warehouse-receiving"></a>Eksempelscenario: modtagelse på lagerstedet
 
-Alle produkter, der modtages af processen *Indkøbsordrevare til modtagelse (og læg på lager)* , skal være registreret i lokation *FL-001* , og de skal være tilgængelige på lagersted *24*. Der skal dog ikke oprettes arbejde. Produkter, der modtages af enhver anden proces (dvs. ved hjælp af andre menupunkter i mobilenheder), skal registreres på standardlagerstedets modtagelseslokation ( *RECV* ), og der skal oprettes arbejde som normalt. (Dette scenarie viser ikke den standardopsætning af modtagelse).
+Alle produkter, der modtages af processen *Indkøbsordrevare til modtagelse (og læg på lager)*, skal være registreret i lokation *FL-001*, og de skal være tilgængelige på lagersted *24*. Der skal dog ikke oprettes arbejde. Produkter, der modtages af enhver anden proces (dvs. ved hjælp af andre menupunkter i mobilenheder), skal registreres på standardlagerstedets modtagelseslokation (*RECV*), og der skal oprettes arbejde som normalt. (Dette scenarie viser ikke den standardopsætning af modtagelse).
 
 Dette scenario kræver følgende elementer:
 
@@ -171,7 +171,7 @@ I eksemplet i dette afsnit vises, hvordan du modtager en indkøbsordrevare, men 
 
 1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre** :
+1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre**:
 
     - **Kreditorkonto:** *US-101*
     - **Lokation:** *2*
@@ -201,19 +201,19 @@ Indkøbsordren er nu modtaget, men der er ikke knyttet noget arbejde til den. De
 
 ## <a name="example-scenario-manufacturing"></a>Eksempelscenario: produktion
 
-I følgende eksempel er der to produktionsordrer, *PRD-001* og *PRD-002*. Produktionsordre *PRD-001* er en handling, der hedder *Samling* , hvor produktet *SC1* færdigmeldes på lokation *001*. Produktionsordre *PRD-002* er en handling, der hedder *Maling* og forbruger produkt *SC1* fra lokation *001*. Produktionsordren *PRD-002* forbruger også råvare *RM1* fra lokation *001*. Råvare *RM1* opbevares på lagerlokation *BULK-001* og vil blive plukket til lokation *001* af lagerstedets arbejde til råvareplukning. Plukkearbejdet genereres, når produktionen *PRD-002* frigives.
+I følgende eksempel er der to produktionsordrer, *PRD-001* og *PRD-002*. Produktionsordre *PRD-001* er en handling, der hedder *Samling*, hvor produktet *SC1* færdigmeldes på lokation *001*. Produktionsordre *PRD-002* er en handling, der hedder *Maling* og forbruger produkt *SC1* fra lokation *001*. Produktionsordren *PRD-002* forbruger også råvare *RM1* fra lokation *001*. Råvare *RM1* opbevares på lagerlokation *BULK-001* og vil blive plukket til lokation *001* af lagerstedets arbejde til råvareplukning. Plukkearbejdet genereres, når produktionen *PRD-002* frigives.
 
 [![Politikker for lagerstedsarbejde](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Når du skal konfigurere lagerstedets arbejdspolitik for dette scenario, skal du overveje følgende oplysninger:
 
-- Lagerstedets arbejde for færdigvarer, der skal lægges på lager, er ikke påkrævet, når du færdigmelder produkt *SC1* fra produktionsordre *PRD-001* til lokation *001*. Dette skyldes, at *Maling* -handlingen for produktionsordre *PRD-002* forbruger produkt *SC1* på samme lokation.
+- Lagerstedets arbejde for færdigvarer, der skal lægges på lager, er ikke påkrævet, når du færdigmelder produkt *SC1* fra produktionsordre *PRD-001* til lokation *001*. Dette skyldes, at *Maling*-handlingen for produktionsordre *PRD-002* forbruger produkt *SC1* på samme lokation.
 - Lagerstedsarbejde til plukning af råvarer kræves for at flytte råvare *RM1* fra lagerlokation *BULK-001* til lokation *001*.
 
 Her er et eksempel på en politik for arbejde, du har angivet, ud fra disse overvejelser:
 
 - **Navn på arbejdspolitik:** *Intet læg på lager-arbejde*
-- **Arbejdsordretyper:** *Færdige varer, læg på lager* , og *Samprodukt og biprodukt, læg på lager*
+- **Arbejdsordretyper:** *Færdige varer, læg på lager*, og *Samprodukt og biprodukt, læg på lager*
 - **Lagerlokationer:** Lagersted *51* og lokation *001*
 - **Produkter:** *SC1*
 
@@ -283,7 +283,7 @@ Lagerstedsprocesser omfatter ikke altid lagerstedsarbejde. Ved at definere en ar
     Lad den nye produktionsordre forblive valgt.
 
 1. I handlingsruden under fanen **Produktionsordre** skal du i gruppen **Proces** vælge **Estimer**.
-1. Læs estimatet i dialogboksen **Estimat** , og vælg derefter **OK** for at lukke dialogboksen.
+1. Læs estimatet i dialogboksen **Estimat**, og vælg derefter **OK** for at lukke dialogboksen.
 1. I handlingsruden under fanen **Produktionsordre** skal du i gruppen **Proces** vælge **Start**.
 1. I dialogboksen **Start** skal du under fanen **Generelt** angive feltet **Automatisk styklisteforbrug** til *Aldrig*.
 1. Vælg **OK** for at gemme indstillingen og lukke dialogboksen.

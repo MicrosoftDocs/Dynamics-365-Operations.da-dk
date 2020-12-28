@@ -19,14 +19,16 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 259c9f07fb69b07f73baeb5ce94e0a7bc29bb2d6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984796"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529180"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,7 +87,7 @@ På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandøre
 | Felt | Tilhørende kundeoplysninger | Tilhørende leverandøroplysninger |
 |-------|------------------------------------|----------------------------------|
 | Eksternt varenummer | Debitorens varenummer | Leverandørens varenummer |
-| Betegnelse | Det navn, som kunden knytter til varen | Det navn, som leverandøren knytter til varen |
+| Beskrivelse | Det navn, som kunden knytter til varen | Det navn, som leverandøren knytter til varen |
 | Ekstern varetekst | Debitorens varebeskrivelse | Leverandørens varebeskrivelse |
 
 Hvis mange debitorer eller kreditorer bruge de samme varenumre (som det f.eks. er tilfældet i en indkøbssammenslutning eller en handelsgruppe), kan du oprette grupper af debitorer/kreditorer for at forenkle vedligeholdelse af eksterne produktoplysninger.

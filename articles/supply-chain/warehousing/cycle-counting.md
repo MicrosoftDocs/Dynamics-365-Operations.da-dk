@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015981"
+ms.locfileid: "4424967"
 ---
 # <a name="cycle-counting"></a>Cyklusoptælling
 
@@ -110,7 +110,7 @@ Cyklusoptællingsarbejde kan oprettes, når antallet af varer falder under en be
 Du kan lægge cyklusoptællingsplaner for at oprette cyklusoptællingsarbejde straks eller med jævne mellemrum. Når du konfigurerer cyklusoptællingsplaner, kan du styre den arbejdspulje, som cyklusoptællingsarbejdet er oprettet for, det maksimale antal cyklusoptællinger, der er oprettet for varer på forskellige lokaliteter, og antallet af dage, før en lagerlokation tælles igen. Eksempel: En vare er tilgængelige på tre lokaliteter på lageret, og det maksimale antal cyklusoptællinger er indstillet til **2**. I dette tilfælde oprettes to cyklusoptællinger for de to lokationer, hvor varen er, når du kører cyklusoptællingsplanen. Et andet eksempel: Du indstiller antallet af dage mellem cyklusoptællinger til **5**. I dette tilfælde oprettes cyklusoptællingsarbejdet hver femte dag. Men cyklusoptællingsarbejdet imidlertid behandles på dag 3, oprettes det næste cyklusoptællingsarbejde, fem dage efter at den seneste cyklusoptælling blev behandling, nemlig på dag 8.
 
 ## <a name="create-cycle-counting-work-manually"></a>Oprette cyklusoptællingsarbejde manuelt
-For at oprette en cyklusoptællingsarbejde manuelt kan du bruge siden **Cyklusoptællingsarbejde efter vare** eller **Cyklusoptællingsarbejde efter lokation**. Du kan angive det maks. antal cyklusoptællinger, der skal oprettes. For eksempel hvis lagerchefen angiver en værdi på **5** , oprettes der cyklusoptællingsarbejde for fem steder, selvom varen findes på 10 lokaliteter. Du kan også vælge et arbejdsgruppe-id, som de oprettede id'er for cyklusoptællingsarbejdet skal tildeles til. Når et arbejdspulje-id er behandlet for cyklusoptælling, behandles id'er for cyklusoptællingsarbejde, der er tildelt til arbejdspuljen, som en gruppe.
+For at oprette en cyklusoptællingsarbejde manuelt kan du bruge siden **Cyklusoptællingsarbejde efter vare** eller **Cyklusoptællingsarbejde efter lokation**. Du kan angive det maks. antal cyklusoptællinger, der skal oprettes. For eksempel hvis lagerchefen angiver en værdi på **5**, oprettes der cyklusoptællingsarbejde for fem steder, selvom varen findes på 10 lokaliteter. Du kan også vælge et arbejdsgruppe-id, som de oprettede id'er for cyklusoptællingsarbejdet skal tildeles til. Når et arbejdspulje-id er behandlet for cyklusoptælling, behandles id'er for cyklusoptællingsarbejde, der er tildelt til arbejdspuljen, som en gruppe.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Udføre en cyklusoptælling ved hjælp af en mobilenhed
 Der er flere metoder til behandling af cyklusoptællingsarbejde ved hjælp af Supply Chain Management på en mobilenhed:
@@ -124,7 +124,7 @@ Følgende er et eksempel på, hvordan du kan udføre spotcyklusoptælling ved hj
 
 1.  Vælg det menupunkt, der skal bruges til at behandle cyklusoptællingsarbejdet, på mobilenheden.
 2.  Registrer lokaliteten, der skal udføres spotcyklusoptælling for.
-3.  Register og bekræft varenummeret og antallet af optalte varer. **Bemærk!** Statussen for cyklusoptællingsarbejdet opdateres til **Afventer gennemsyn** eller **Lukket** på siden **Alt arbejde** , afhængigt af de parametre, der er angivet på siden **Arbejder**.
+3.  Register og bekræft varenummeret og antallet af optalte varer. **Bemærk!** Statussen for cyklusoptællingsarbejdet opdateres til **Afventer gennemsyn** eller **Lukket** på siden **Alt arbejde**, afhængigt af de parametre, der er angivet på siden **Arbejder**.
 4.  Valgfrit: Gentag trin 3 for de resterende varer på placeringen, og bekræft, at der ingen yderligere elementer er til optælling.
 
 ## <a name="resolve-cycle-counting-differences"></a>Løse cyklusoptællingsforskelle

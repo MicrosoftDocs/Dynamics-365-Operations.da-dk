@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979421"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666764"
 ---
 # <a name="order-promising"></a>Ordretilsagn
 
@@ -37,6 +37,12 @@ Ordretilsagn beregner tidligste afsendelses- og modtagelsesdatoer og er baseret 
 -   **DTT (disponibel til tilsagn)** – DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde på en bestemt dato. DTT-beregningen omfatter leveringstider, der ikke er bindende, planlagte tilgange og afgange.
 -   **DTT + Afgangsmargen**– Afsendelsesdatoen er den samme som DTT-datoen plus varens afgangsmargen. Afgangsmargenen er den tid, der kræves for at klargøre varerne til afsendelse.
 -   **LE (leveringsevne)**– Tilgængelighed beregnes via udfoldning.
+
+> [!NOTE]
+> Når en salgsordre opdateres, opdateres oplysningerne om ordretilsagn kun, hvis den eksisterende dato for ordretilsagn ikke kan opfyldes, som vist i følgende eksempler:
+> 
+> - **Eksempel 1**: Den aktuelle dato for ordretilsagn er 20. juli, men på grund af forøget antal vil du ikke være i stand til at levere før 25. juli. Da den aktuelle dato ikke længere kan opfyldes, udløses ordretilsagn.
+> -  **Eksempel 2**: Den aktuelle dato for ordretilsagn er 20. juli, men på grund af nedsat antal er det nu muligt at levere den 15. juli. Da den aktuelle dato stadig kan opfyldes, udløses der ikke ordretilsagn, og 20. juli forbliver datoen for ordretilsagn.
 
 ## <a name="atp-calculations"></a>DTT-beregninger
 DTT-antallet beregnes ved hjælp af metoden "kumulativ fremtidig DTT". Den største fordel ved denne metode til beregning af DTT er, at det kan håndtere de tilfælde, hvor summen af afgange mellem tilgange er mere end sidste tilgang (for eksempel når et antal fra en tidligere tilgang skal bruges til at imødekomme et behov). Metoden til beregning af "kumulativ fremtidig DTT" omfatter alle afgange, indtil det kumulative antal, der skal modtages, overstiger det kumulative antal af afgange. Derfor evaluerer DTT-beregningsmetoden, om nogle af antallet fra en tidligere periode kan bruges i en senere periode.  

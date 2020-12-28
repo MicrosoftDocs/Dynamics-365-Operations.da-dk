@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015123"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527380"
 ---
 # <a name="product-information-overview"></a>Oversigt over produktoplysninger
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emne indeholder oplysninger om administration af produktoplysninger. Administration af produktoplysninger fungerer sammen med en fælles produktdefinition, kategorisering og identifikatorer på tværs af alle juridiske enheder, og også med bestemte konfigurationer af et produkt, så det passer til forretningsprocesserne. 
 
@@ -72,7 +74,7 @@ En produktmaster er knyttet til en produktdimensionsgruppe og en konfigurationst
 Du kan vælge mellem tre konfigurationsteknologier:
 
 - De foruddefinerede varianter er defineret af foruddefinerede produktdimensioner. Variantdefinitionen omfatter definitionen af en bestemt, gyldig kombination af dimensioner, f.eks. farve, type og størrelse. Hver kombination resulterer i en specifik produktvariant.
-- Den dimensionsbaserede konfiguration bruges typisk i produktionsscenarier, og du kan bruge konfigurationsdimensionen i definitionen af styklister. Når du har valgt en bestemt konfiguration, bruges det undersæt af styklistelinjer, der gælder for konfigurationen, til planlægning og produktion. Dette begreb kaldes også for *global stykliste* , fordi der bruges én fælles stykliste til alle konfigurationer af et produkt.
+- Den dimensionsbaserede konfiguration bruges typisk i produktionsscenarier, og du kan bruge konfigurationsdimensionen i definitionen af styklister. Når du har valgt en bestemt konfiguration, bruges det undersæt af styklistelinjer, der gælder for konfigurationen, til planlægning og produktion. Dette begreb kaldes også for *global stykliste*, fordi der bruges én fælles stykliste til alle konfigurationer af et produkt.
 - Begrænsningsbaseret konfiguration bruger en produktkonfigurationsmodel til at beskrive alle mulige attributter og komponenter, der kræves for at beskrive alle mulige varianter af et produkt i en enkelt model. Begrænsningerne af attributkombinationer kan beskrives med regulære udtryk eller tabelbaserede begrænsninger. Produktkonfigurationsmodeller og -styringer bliver stadig vigtigere i administration af produktoplysninger og bruges på tværs af alle brancher.
 
 Når du planlægger implementeringen af Supply Chain Management, er det meget vigtigt, at du vælger den korrekte konfigurationsteknologi for en forretningsproces. Et produkt kan ikke konverteres fra én model til en anden efter implementeringen.
@@ -89,7 +91,7 @@ De produkter, der frigives til en bestemt juridisk enhed, kaldes *frigivne produ
 
 Du kan konfigurere arbejdsområdet **Vedligeholdelse af frigivet produkt** i menupunktet **Konfigurer mit arbejdsområde**. Vælg et kategorihierarki og en kategori, som du vil filtrere arbejdsområdet efter. Hvis du vil justere de relevante produktoplysninger i arbejdsområdet, du kan også definere, i dage, tidshorisonter for **Produkter, der er frigivet for nylig** og **Stoppede frigivne produkter**.
 
-Arbejdsområdet består af en oversigt over felter og to lister. Listen **Åbne sager** viser produktændringssager, der har produkter i det valgte produktkategorihierarki, som ikke er afsluttet og lukket. Listen **Frigivet for nylig** viser de produkter, der er udgivet inden for den tidshorisont, der er angivet i konfigurationen af arbejdsområdet. Valideringen udføres for hvert element på listen, og der vises en valideringsstatus. Denne status kan indikere, at den nødvendige konfiguration for den juridiske enhed ikke er fuldført. På listen har du direkte adgang til siderne **Frigivne produktdetaljer** , **Vedligeholdelse af produktattribut** , **Vedligeholdelse af produktkategori** , **Standardindstillinger for ordre** og **Oversættelser af tekst** for at fuldføre den påkrævede konfiguration af produktet.
+Arbejdsområdet består af en oversigt over felter og to lister. Listen **Åbne sager** viser produktændringssager, der har produkter i det valgte produktkategorihierarki, som ikke er afsluttet og lukket. Listen **Frigivet for nylig** viser de produkter, der er udgivet inden for den tidshorisont, der er angivet i konfigurationen af arbejdsområdet. Valideringen udføres for hvert element på listen, og der vises en valideringsstatus. Denne status kan indikere, at den nødvendige konfiguration for den juridiske enhed ikke er fuldført. På listen har du direkte adgang til siderne **Frigivne produktdetaljer**, **Vedligeholdelse af produktattribut**, **Vedligeholdelse af produktkategori**, **Standardindstillinger for ordre** og **Oversættelser af tekst** for at fuldføre den påkrævede konfiguration af produktet.
 
 ### <a name="manually-creating-a-new-released-product"></a>Manuel oprettelse af et nyt frigivet produkt
 

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
 ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017477"
+ms.locfileid: "4425010"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Oprette lagersteder for flytteordrer 
 
@@ -51,5 +51,5 @@ Du kan bruge lagerstedsniveauer til at oprette et hierarki, der understøtter fl
 Du skal også angive transportleveringstiden mellem lagerstederne på siden **Transportdage**. 
 1. Gå til **Lagerstyring > Opsætning > Distribution > Transportdage**.
 2. Vælg **lagersted** i feltet **Tilgangssted**.
-3. Vælg **Forsendelseslagersted** , **Tilgangslagersted** og **Transportdage**. 
+3. Vælg **Forsendelseslagersted**, **Tilgangslagersted** og **Transportdage**. 
 4. (Valgfrit) Du kan også angive transporttiden, afhængigt af leveringsmåden, under fanen **Transportdage pr. leveringsmåde**.

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015061"
+ms.locfileid: "4424941"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre planlægningsprogrammets ydeevne
 
@@ -180,7 +180,7 @@ Begrænsningsløseren er ikke klar over de specifikke oplysninger om planlægnin
 
 En stor del af begrænsningerne (interne) i programmet styrer en ressources arbejdstid og kapacitet. Opgaven er grundlæggende at føre arbejdstidsrummet for en ressource fra et givent sted i en given retning og finde et langt nok interval, hvor den krævede jobkapacitet (tid) kan være.
 
-Hvis du vil gøre det, skal programmet kende en ressources arbejdstider. Modsat hovedmodeldata bliver arbejdstiderne *gradvist indlæst* , hvilket betyder, at de indlæses i programmet efter behov. Årsagen til denne metode er, at der ofte er arbejdstider i Supply Chain Management for en kalender i en meget lang periode, og der findes typisk mange kalendere, så dataene bliver meget store at indlæse på forhånd.
+Hvis du vil gøre det, skal programmet kende en ressources arbejdstider. Modsat hovedmodeldata bliver arbejdstiderne *gradvist indlæst*, hvilket betyder, at de indlæses i programmet efter behov. Årsagen til denne metode er, at der ofte er arbejdstider i Supply Chain Management for en kalender i en meget lang periode, og der findes typisk mange kalendere, så dataene bliver meget store at indlæse på forhånd.
 
 Der anmodes om kalenderoplysninger af programmet i segmenter ved at kalde X++-klassemetoden `WrkCtrSchedulingInteropDataProvider.getWorkingTimes`. Anmodningen gælder for et bestemt kalender-id i et bestemt tidsinterval. Afhængigt af servercachens tilstand i Supply Chain Management kan hver enkelt af disse anmodninger ende med flere databasekald, hvilket tager lang tid (i forhold til den rene beregningstid). Hvis kalenderen desuden indeholder meget komplekse arbejdstidsdefinitioner med mange arbejdstidsintervaller pr. dag, giver det en længere indlæsningstid.
 
@@ -188,7 +188,7 @@ Når der indlæses arbejdstidsdata i planlægningsprogrammet, bevares de i dens 
 
 ### <a name="finite-capacity"></a>Kapacitetsbegrænsning
 
-Når der bruges kapacitetsbegrænsning, vil arbejdstiden fra kalenderen blive opdelt og reduceret ud fra de eksisterende kapacitetsreservationer. Disse reservationer hentes også via samme `WrkCtrSchedulingInteropDataProvider`-klasse som kalenderne, men i stedet bruges metoden `getCapacityReservations`. Når der planlægges under varedisponering, betragtes reservationerne for den specifikke behovsplan, og hvis den er aktiveret på siden **Varedisponeringsparametre** , medtages reservationer fra autoriserede produktionsordrer også. Når en produktionsordre planlægges, kan du også vælge at medtage reservationer fra eksisterende ordreforslag, selvom dette ikke er så almindeligt som den anden metode.
+Når der bruges kapacitetsbegrænsning, vil arbejdstiden fra kalenderen blive opdelt og reduceret ud fra de eksisterende kapacitetsreservationer. Disse reservationer hentes også via samme `WrkCtrSchedulingInteropDataProvider`-klasse som kalenderne, men i stedet bruges metoden `getCapacityReservations`. Når der planlægges under varedisponering, betragtes reservationerne for den specifikke behovsplan, og hvis den er aktiveret på siden **Varedisponeringsparametre**, medtages reservationer fra autoriserede produktionsordrer også. Når en produktionsordre planlægges, kan du også vælge at medtage reservationer fra eksisterende ordreforslag, selvom dette ikke er så almindeligt som den anden metode.
 
 Hvis du bruger kapacitetsbegrænsning, kan planlægningen tage længere tid af flere årsager:
 
@@ -305,7 +305,7 @@ Brug af kapacitetsbegrænsning kræver, at programmet indlæser kapacitetsoplysn
 
 ### <a name="setting-hard-links"></a>Indstilling af hårde links
 
-Rutens standardlinktype er *blød* , hvilket betyder, at der tillades et tidsinterval mellem sluttidspunktet for en operation og starten af den næste. Hvis du tillader dette, kan det have den uheldige virkning at, hvis der ikke er materialer eller kapacitet til rådighed for en af operationerne i meget lang tid, så kan produktionen være inaktiv i et langt tidsrum, hvilket vil sige en mulig forøgelse af igangværende arbejde. Dette sker ikke med hårde links, fordi afslutningen og starten skal justeres perfekt. Men hvis der angives hårde links, bliver planlægningsproblemet vanskeligere, fordi der skal beregnes arbejdstid og kapacitetsskæringspunkter for de to ressourcer til operationerne. Hvis der også er parallelle operationer, tilføjer dette betydelig beregningstid. Hvis ressourcerne i de to operationer har forskellige kalendere, der slet ikke overlapper, er problemet uløseligt.
+Rutens standardlinktype er *blød*, hvilket betyder, at der tillades et tidsinterval mellem sluttidspunktet for en operation og starten af den næste. Hvis du tillader dette, kan det have den uheldige virkning at, hvis der ikke er materialer eller kapacitet til rådighed for en af operationerne i meget lang tid, så kan produktionen være inaktiv i et langt tidsrum, hvilket vil sige en mulig forøgelse af igangværende arbejde. Dette sker ikke med hårde links, fordi afslutningen og starten skal justeres perfekt. Men hvis der angives hårde links, bliver planlægningsproblemet vanskeligere, fordi der skal beregnes arbejdstid og kapacitetsskæringspunkter for de to ressourcer til operationerne. Hvis der også er parallelle operationer, tilføjer dette betydelig beregningstid. Hvis ressourcerne i de to operationer har forskellige kalendere, der slet ikke overlapper, er problemet uløseligt.
 
 Det anbefales, at du kun bruger hårde links, når det er strengt nødvendigt, og nøje overvejer, om det er nødvendigt for hver operation i ruten.
 
@@ -321,7 +321,7 @@ Da programmet fungerer ved at undersøge tidsrubrikkers kapacitet én for én, e
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Store (eller ingen) planlægningstimeout
 
-Planlægningsprogrammets ydeevne kan optimeres ved hjælp af parametre, der findes på siden **Planlægningsparametre**. Indstillingerne **Timeout for planlægning er aktiveret** og **Timeout for planlægningsoptimering er aktiveret** skal altid angives til **Ja**. Hvis angivet til **Nej** , kan planlægningen muligvis løbe uendeligt, hvis der er oprettet en umulig rute med mange indstillinger.
+Planlægningsprogrammets ydeevne kan optimeres ved hjælp af parametre, der findes på siden **Planlægningsparametre**. Indstillingerne **Timeout for planlægning er aktiveret** og **Timeout for planlægningsoptimering er aktiveret** skal altid angives til **Ja**. Hvis angivet til **Nej**, kan planlægningen muligvis løbe uendeligt, hvis der er oprettet en umulig rute med mange indstillinger.
 
 Værdien for **Maksimal planlægningstid pr. sekvens** styrer, hvor mange sekunder der højst må bruges på at forsøge at finde en løsning for en enkelt sekvens (i de fleste tilfælde svarer en sekvens til en enkelt ordre). Den værdi, der skal bruges her, afhænger af kompleksiteten af ruten og indstillinger som kapacitetsbegrænsning, og maksimalt ca. 30 sekunder er et godt udgangspunkt.
 

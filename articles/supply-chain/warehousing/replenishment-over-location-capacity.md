@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016602"
+ms.locfileid: "4425018"
 ---
 # <a name="replenishment-over-location-capacity"></a>Genopfyldning over lokationskapacitet
 
@@ -44,7 +44,7 @@ Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan
 
 ### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
+Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="location-profile"></a>Lokationsprofil
 
@@ -63,13 +63,13 @@ Aktivér funktionen til genopfyldning over kapacitet på lokationsprofilen.
 
         Dette felt definerer den metode, der bruges til at bestemme, hvornår der skal frigives mere arbejde. Du kan frigive enten procentsats eller antal:
 
-        - *Procent* – Vælg denne indstilling for at bruge den procentvise kapacitet, der er baseret på lagergrænser eller volumenmålinger. Hvis du vælger denne indstilling , aktiveres feltet **Overløbsprocent** , og det deaktiverer de to relaterede felter af typen antal, **Overløbsantal** og **Overløbsenhed**.
+        - *Procent* – Vælg denne indstilling for at bruge den procentvise kapacitet, der er baseret på lagergrænser eller volumenmålinger. Hvis du vælger denne indstilling , aktiveres feltet **Overløbsprocent**, og det deaktiverer de to relaterede felter af typen antal, **Overløbsantal** og **Overløbsenhed**.
 
             Du kan bruge denne indstilling, hvis plukpladserne bruger volumenmålinger.
 
             Hvis denne indstilling er valgt, skal du angive feltet **Overløbsprocent** til den procentdel, hvor der skal være mere tilgængeligt genopfyldningsarbejde.
 
-        - *Antal* – Vælg denne indstilling for at bruge en bestemt antalsværdi. Hvis du vælger denne indstilling , deaktiveres feltet **Overløbsprocent** , og det aktiverer felterne **Overløbsantal** og **Overløbsenhed**.
+        - *Antal* – Vælg denne indstilling for at bruge en bestemt antalsværdi. Hvis du vælger denne indstilling , deaktiveres feltet **Overløbsprocent**, og det aktiverer felterne **Overløbsantal** og **Overløbsenhed**.
 
             Brug denne indstilling, når du ikke bruger volumenmålinger til de pladser, der genopfyldes, eller når du har ensartede mængder, der skal tilføres mere lager på pladsen.
 
@@ -98,7 +98,7 @@ Aktivér funktionen til genopfyldning over kapacitet på lokationsprofilen.
         Grænser for lokalitetslagring tages i betragtning ved beregning af arbejdsantallet i procent. Hvis der ikke er defineret grænser for lokationslagring, beregnes procenten af arbejdsmængden efter volumen, hvis der er defineret volumenbegrænsninger på lokationsprofilen.
 
 > [!IMPORTANT]
-> Hvis du bruger demodataene til den juridiske enhed **USMF** og tidligere har aktiveret funktionen *Placering af lokations-id* , skal du deaktivere indstillingen **Aktivér placering af id** for lokationsprofilen **MASSE-06** for at fuldføre de mobile trin i eksempelscenariet.
+> Hvis du bruger demodataene til den juridiske enhed **USMF** og tidligere har aktiveret funktionen *Placering af lokations-id*, skal du deaktivere indstillingen **Aktivér placering af id** for lokationsprofilen **MASSE-06** for at fuldføre de mobile trin i eksempelscenariet.
 
 ### <a name="wave-step-code"></a>Kode for bølgetrin
 
@@ -106,7 +106,7 @@ Aktivér funktionen til genopfyldning over kapacitet på lokationsprofilen.
 > Hvis du vil oprette en bølgetrinkode som beskrevet her, skal du muligvis først bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere funktionen med navnet *Bølgetrinkode for hele organisationen*.
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgetrinkoder**.
-1. Vælg **Ny** , og angiv derefter følgende værdier:
+1. Vælg **Ny**, og angiv derefter følgende værdier:
 
     - **Kode for bølgetrin:** *Genopfyld*
     - **Bølgetrinsbeskrivelse:** *Genopfyldning*
@@ -138,7 +138,7 @@ Genopfyldningsskabeloner er et sæt regler, der styrer, hvornår og hvordan en l
 
     Angiv denne indstilling til *Ja* for at oprette behovsbaseret genopfyldningsarbejde og frigive det automatisk. Du skal føje genbestillingsbølgemetoden til bølgeskabelonen og oprette en genbestillingsskabelon af typen **Bølgebehov**. Konfigurer en genopfyldningsskabelon på siden **Genopfyldningsskabeloner**. Hvis du vil konfigurere en genopfyldningsskabelon, skal du føje genopfyldningsmetoden til bølgeskabelonen.
 
-1. Find følgende linje i kolonnen **Valgte metoder** i oversigtspanelet **Metoder** :
+1. Find følgende linje i kolonnen **Valgte metoder** i oversigtspanelet **Metoder**:
 
     - **Metodenavn:** *Genopfyld*
     - **Navn:** *Genopfyldning*
@@ -167,7 +167,7 @@ Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfig
     - **Varenummer:** *T0100*
     - **Antal:** *40*
 
-1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Lager \> Reservation**.
+1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Lager \> Reservation**.
 1. På siden **Reservation** skal du vælge **Reservér parti**.
 1. Luk siden.
 1. Vælg **Frigør til lagersted** under fanen **Lagersted** i handlingsruden.
@@ -190,7 +190,7 @@ Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfig
     - **Varenummer:** *T0100*
     - **Antal:** *60*
 
-1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Lager \> Reservation**.
+1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Lager \> Reservation**.
 1. På siden **Reservation** skal du vælge **Reservér parti**.
 1. Luk siden.
 1. Vælg **Frigør til lagersted** under fanen **Lagersted** i handlingsruden.
@@ -213,7 +213,7 @@ Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfig
     - **Varenummer:** *T0100*
     - **Antal:** *30*
 
-1. Gå til oversigtspanelet **Salgsordrelinjer** , og vælg **Lager \> Reservation**.
+1. Gå til oversigtspanelet **Salgsordrelinjer**, og vælg **Lager \> Reservation**.
 1. På siden **Reservation** skal du vælge **Reservér parti**.
 1. Luk siden.
 1. Vælg **Frigør til lagersted** under fanen **Lagersted** i handlingsruden.
@@ -225,11 +225,11 @@ Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfig
 #### <a name="view-work-details"></a>Se arbejdsdetaljer
 
 1. Gå til **Lokationsstyring \> Arbejde \> Arbejdsdetaljer**.
-1. Filtrer **Lagersted** -kolonnen for lagerstedet **61** i sektionen *Oversigt*.
+1. Filtrer **Lagersted**-kolonnen for lagerstedet **61** i sektionen *Oversigt*.
 1. Du bør se, at der er oprettet syv arbejds-id'er for de tre behovssalgsordrer.
 
-    - Tre af de syv arbejds-id'er har en **Arbejdsordretype** -værdi for *Genopfyldning* , og fire har en **Arbejdsordretype** -værdi for *Salgsordrer*.
-    - Alle tre arbejds-id'er, der har **Arbejdsordretype** -værdien *Genopfyldning* , har samme *Pluk* og *Læg på lager* -placeringer i afsnittet **Linjer** :
+    - Tre af de syv arbejds-id'er har en **Arbejdsordretype**-værdi for *Genopfyldning*, og fire har en **Arbejdsordretype**-værdi for *Salgsordrer*.
+    - Alle tre arbejds-id'er, der har **Arbejdsordretype**-værdien *Genopfyldning*, har samme *Pluk* og *Læg på lager*-placeringer i afsnittet **Linjer**:
 
         - **Pluk:** *02A01R5S1B*
         - **Læg på lager:** *06A01R2S1B*
@@ -258,7 +258,7 @@ Du kan finde de id'er, du skal bruge, senere ved at følge disse trin.
 1. Vælg alle værdierne i sektionen **Lagringsdimensioner** i dialogboksen **Dimensionsvisning**.
 1. I afsnittet **Transaktioner** skal du vælge **Varenummer** og **Antal \<\> 0**.
 1. Når du er færdig, skal du vælge **OK** for at lukke dialogboksen.
-1. **Beholdning** -gitteret viser id-numrene for varen *T0100* på hver lokation. Notér dig det id, der findes på hver lokation, da du skal bruge disse oplysninger senere.
+1. **Beholdning**-gitteret viser id-numrene for varen *T0100* på hver lokation. Notér dig det id, der findes på hver lokation, da du skal bruge disse oplysninger senere.
 1. Luk siden.
 
 ### <a name="process-steps"></a>Procestrin
@@ -289,7 +289,7 @@ Du skal udføre genopfyldning af lagerstedet for de første to arbejds-id'er. Ar
 
 Når det andet genopfyldningsarbejde er fuldført, vises meddelelsen "Arbejde fuldført". Din mobilenhed informerer dig også om, at der ikke er noget arbejde tilgængeligt, også selvom noget genopfyldningsarbejde resterer. Dette problem opstår, fordi genopfyldningsarbejdet har tilgængelighedsstatussen *På hold* og derfor er markeret som **Blokeret**.
 
-*På hold* -status blev udløst, fordi lokationsprofilen for den plukplads, som arbejdet tildeles, har en **Overløbsantals** -værdi på *0,65 PL*. De to tidligere opgaver for genopfyldningsarbejde har udfyldt lokationen næsten til dens overløbsgrænse for vare *T0100*. (Enhedsomregningen for varen er *1 PL = 100 hver* ). Derfor vil det resterende genopfyldningsarbejde medføre, at lokationen overskrider dens overløbsgrænse.
+*På hold*-status blev udløst, fordi lokationsprofilen for den plukplads, som arbejdet tildeles, har en **Overløbsantals**-værdi på *0,65 PL*. De to tidligere opgaver for genopfyldningsarbejde har udfyldt lokationen næsten til dens overløbsgrænse for vare *T0100*. (Enhedsomregningen for varen er *1 PL = 100 hver*). Derfor vil det resterende genopfyldningsarbejde medføre, at lokationen overskrider dens overløbsgrænse.
 
 Indtil der er plukket tilstrækkeligt med lagervarer fra lokationen, så de kommer under grænsen for arbejdsfrigivelsen i menupunktet for mobilenheden, forbliver dette genopfyldningsarbejde blokeret.
 
@@ -315,7 +315,7 @@ Før den resterende genopfyldningsarbejdsopgave kan fuldføres, skal plukpladsen
 1. I feltet **LP** skal du angive id-nummeret for varen på den viste lokation.
 1. Vælg knappen **OK** (markeringssymbol).
 
-    **Salgsordrer: Læg på lager** -siden giver dig besked på at lægge begge fuldførte plukarbejder til den udgående lokation for midlertidig lagring.
+    **Salgsordrer: Læg på lager**-siden giver dig besked på at lægge begge fuldførte plukarbejder til den udgående lokation for midlertidig lagring.
 
 1. Vælg **OK**.
 
@@ -361,7 +361,7 @@ Salgsordre 2 er spærret for pluk, fordi genopfyldningsopgaven, som den er knytt
 
 Så snart summen af det disponible antal på plukpladsen og opfyldningsantallet er under grænsen, vil du kunne behandle det resterende genopfyldningsarbejde.
 
-Vend tilbage til siden **Arbejdsdetaljer** , og bemærk, at tilgængeligheden af genopfyldningsarbejde for det sidste stykke genopfyldning (for salgsordre 2) er *Åben* , fordi der nu er tilstrækkelig plads på lokationen til at acceptere genopfyldningen.
+Vend tilbage til siden **Arbejdsdetaljer**, og bemærk, at tilgængeligheden af genopfyldningsarbejde for det sidste stykke genopfyldning (for salgsordre 2) er *Åben*, fordi der nu er tilstrækkelig plads på lokationen til at acceptere genopfyldningen.
 
 Du kan nu behandle dette genopfyldningsarbejde via mobilenheden.
 
@@ -405,6 +405,6 @@ Du kan nu plukke salgsordre 2. Spærringen blev ophævet, da genopfyldningsarbej
 ## <a name="notes-and-tips"></a>Noter og tip
 
 - Denne funktionalitet fungerer sammen med alle former for genopfyldning: bølgebehov, minimum/maksimum, lastbaseret behov og allokering.
-- Du kan manuelt tilsidesætte genopfyldningsarbejdets tilgængelighed for hver arbejdsoverskrift fra siden **Arbejdsdetaljer** , hvis du ønsker det.
+- Du kan manuelt tilsidesætte genopfyldningsarbejdets tilgængelighed for hver arbejdsoverskrift fra siden **Arbejdsdetaljer**, hvis du ønsker det.
 - Når systemet angiver genopfyldningsarbejdets tilgængelighed, tages der højde for ethvert lager, der allerede findes på lokationen, før et arbejde fuldføres.
 - Hvert stykke af salgsordrearbejdet er knyttet til et bestemt genopfyldningsarbejde. Der findes ingen tilsvarende funktionalitet for tilgængeligt salgsarbejde.
