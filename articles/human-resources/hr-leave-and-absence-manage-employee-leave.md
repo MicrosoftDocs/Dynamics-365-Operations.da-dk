@@ -1,9 +1,9 @@
 ---
 title: Administrere medarbejderorlov
-description: Definer personaleparametre for orlov og fravær i Dynamics 365 Human Resources.
+description: Administrere medarbejderorlov i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/30/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c45d2c57d89929ac9c423ab58aee4cbfa213509
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712118"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417894"
 ---
 # <a name="manage-employee-leave"></a>Administrere medarbejderorlov
 
@@ -31,7 +31,7 @@ Du kan administrere en medarbejders orlov efter orlovstype. Dette omfatter regis
 
 ## <a name="adjust-leave-balances"></a>Reguler orlovssaldi
 
-1. Vælg **Orlov**i medarbejderens post.
+1. Vælg **Orlov** i medarbejderens post.
 
 2. Vælg **Orlovs- og fraværsopsætning**.
 
@@ -44,6 +44,13 @@ Du kan administrere en medarbejders orlov efter orlovstype. Dette omfatter regis
 6. Du kan eventuelt også vælge en **Dato**. 
 
 Du kan medtage en årsagskode og en kommentar, når du regulerer en medarbejders orlovssaldo. 
+
+>[!IMPORTANT]
+>Visning af yderligere oplysninger om orlovssaldi er i prøveversion. Du skal aktivere den i dit **Sandkasse**-miljø. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br>
+>Når du peger på en orlovssaldo, får du nu vist:<br>
+>- **Tilgængelig**: I alt i år - Afviklet i år
+>- **I alt i år**: Alle periodiseringer, reguleringer og overførsler for året
+>- **Afviklet i år**: Al godkendt fritid
 
 ## <a name="see-also"></a>Se også
 

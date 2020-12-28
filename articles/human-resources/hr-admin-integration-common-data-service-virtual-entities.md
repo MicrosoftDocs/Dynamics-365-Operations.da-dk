@@ -3,7 +3,7 @@ title: Konfigurere virtuelle enheder i Common Data Service
 description: I dette emne vises, hvordan du konfigurerer virtuelle enheder til Dynamics 365 Human Resources. Opret og opdater eksisterende virtuelle enheder, og analysér oprettede og tilgængelige enheder.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
-ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
+ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4058148"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645595"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurere virtuelle enheder i Common Data Service
 
-[!include [banner](includes/preview-feature.md)]
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources er en virtuel datakilde i Common Data Service. Den giver fuld adgang til at oprette, læse, opdatere og slette data fra Common Data Service og Microsoft Power Platform. Dataene for de virtuelle enheder gemmes ikke i Common Data Service, men i programdatabasen. 
 
@@ -50,11 +50,23 @@ Virtuelle enheder til Human Resources er ikke de samme som de fysiske Common Dat
 
 ## <a name="setup"></a>Konfiguration
 
-Følg disse installationstrin for at aktivere virtuelle enheder i dit miljø. 
+Følg disse installationstrin for at aktivere virtuelle enheder i dit miljø.
+
+### <a name="enable-virtual-entities-in-human-resources"></a>Aktivere virtuelle enheder i Human Resources
+
+Først skal du aktivere virtuelle enheder i arbejdsområdet **Funktionsstyring**.
+
+1. I Personale skal du vælge **Systemadministration**.
+
+2. Vælg felter **Funktionsstyring**.
+
+3. Vælg **Understøttelse af virtuelle enheder i HR/CDS**, og vælg derefter **Aktivér**.
+
+Du kan finde flere oplysninger om aktivering og deaktivering af funktioner i [Administrere funktioner](hr-admin-manage-features.md).
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrere appen i Microsoft Azure
 
-Først skal du registrere appen i Azure-portalen, så Microsoft-identitetsplatformen kan levere godkendelse og autorisationstjenester til appen og brugerne. Du kan finde flere oplysninger om registrering af apps i Azure under [Hurtig start: Registrere et program med platformen Microsoft-identitet](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Du skal registrere dine forekomst af Human Resources i Azure-portalen, så Microsoft-identitetsplatformen kan levere godkendelse og autorisationstjenester til appen og brugerne. Du kan finde flere oplysninger om registrering af apps i Azure under [Hurtig start: Registrere et program med platformen Microsoft-identitet](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Åbn [Microsoft Azure-portalen](https://portal.azure.com).
 
@@ -68,7 +80,7 @@ Først skal du registrere appen i Azure-portalen, så Microsoft-identitetsplatfo
 
 6. Vælg **Registrer**.
 
-7. Når registreringen er fuldført, viser Azure-portalen appregistreringens **Oversigt** -rude, som indeholder **Program-id (klient)**. Notér dig **Program-id (klient)** nu. Du skal angive disse oplysninger, når du [konfigurerer datakilden til den virtuelle enhed](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. Når registreringen er fuldført, viser Azure-portalen appregistreringens **Oversigt**-rude, som indeholder **Program-id (klient)**. Notér dig **Program-id (klient)** nu. Du skal angive disse oplysninger, når du [konfigurerer datakilden til den virtuelle enhed](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
 8. Vælg **Certifikater og hemmeligheder** i venstre navigationsrude.
 
@@ -93,7 +105,7 @@ Installer appen Dynamics 365 HR Virtual Entity i dit Power Apps-miljø for at ud
 
 4. Vælg handlingen **Installer app**.
 
-5. Vælg **Dynamics 365 HR Virtual Entity** , og vælg **Næste**.
+5. Vælg **Dynamics 365 HR Virtual Entity**, og vælg **Næste**.
 
 6. Gennemgå og markér, at du accepterer servicebetingelserne.
 
@@ -121,16 +133,28 @@ Det næste trin er at konfigurere datakilden til den virtuelle enhed i Power App
 
 7. Vælg posten **Microsoft HR-datakilde**.
 
-8. Angiv de nødvendige oplysninger til datakildens konfiguration.
+8. Angiv de nødvendige oplysninger til datakildens konfiguration:
 
-   - **Mål-URL-adresse** URL-adressen til dit Human Resources-navneområde.
-   - **Lejer-id** : Azure Active Directory-lejer-id (Azure AD).
-   - **AAD-program-id** : Det program-id (klient), der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-   - **AAD-programhemmelighed** : Den programklienthemmelighed, der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Mål-URL-adresse** URL-adressen til dit Human Resources-navneområde. Formatet for mål-URL-adressen er:
+     
+     https://\<hostname\>.hr.talent.dynamics.com/navneområder/\<namespaceID\>/
 
-9. Vælg **Gem og luk**.
+     F.eks.:
+     
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c/`
+
+     >[!NOTE]
+     >Husk at medtage "**/**"-tegnet i slutningen af URL-adressen for at undgå at modtage en fejlmeddelelse.
+
+   - **Lejer-id**: Azure Active Directory-lejer-id (Azure AD).
+
+   - **AAD-program-id**: Det program-id (klient), der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+
+   - **AAD-programhemmelighed**: Den programklienthemmelighed, der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    ![Microsoft HR-datakilde](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+
+9. Vælg **Gem og luk**.
 
 ### <a name="grant-app-permissions-in-human-resources"></a>Give app-tilladelser i Human Resources
 
@@ -149,8 +173,8 @@ Give tilladelser til de to Azure AD-programmer i Human Resources:
 
 3. Vælg **Ny** for at oprette endnu en programpost:
 
-    - **Klient-id** : f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Navn** : Dynamics 365 HR Virtual Entity
+    - **Klient-id**: f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Navn**: Dynamics 365 HR Virtual Entity
     - I feltet **Bruger-id** skal du vælge bruger-id'et for en bruger med administratorrettigheder i Human Resources og Power Apps-miljøet.
 
 ## <a name="generate-virtual-entities"></a>Generere virtuelle enheder
@@ -162,7 +186,7 @@ Når installationen er fuldført, kan du vælge de virtuelle enheder, du vil gen
 2. Vælg fanen **Virtuelle enheder**.
 
 > [!NOTE]
-> Til/fra-knappen **Aktivér den virtuelle enhed** indstilles til **Ja** automatisk, når alle nødvendige konfigurationer er fuldført. Hvis knappen er indstillet til **Nej** , skal du gennemgå trinnene i tidligere afsnit af dette dokument for at sikre, at alle forudsætninger for installationen er opfyldt.
+> Til/fra-knappen **Aktivér den virtuelle enhed** indstilles til **Ja** automatisk, når alle nødvendige konfigurationer er fuldført. Hvis knappen er indstillet til **Nej**, skal du gennemgå trinnene i tidligere afsnit af dette dokument for at sikre, at alle forudsætninger for installationen er opfyldt.
 
 3. Vælg den enhed eller de enheder, du vil oprette i Common Data Service.
 

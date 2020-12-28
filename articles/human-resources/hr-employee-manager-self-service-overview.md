@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
-ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
+ms.sourcegitcommit: 1fdca917e01470fbd5d3051adb85fd63e8624b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4057046"
+ms.locfileid: "4417886"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Oversigt over selvbetjening for medarbejdere og ledere
 
@@ -35,11 +35,11 @@ Hvis du vil tilføje eller ændre personlige oplysninger, skal du se under [Redi
 
 ## <a name="user-not-assigned-to-a-worker-record"></a>Brugeren er ikke tildelt en arbejderpost
 
-Hvis du ikke har knyttet din bruger til en **Arbejder** -post på siden **Brugere** , vises følgende meddelelse:
+Hvis du ikke har knyttet din bruger til en **Arbejder**-post på siden **Brugere**, vises følgende meddelelse:
 
 **Dit bruger-id er ikke tilknyttet til din medarbejderpost i systemet. Du kan ikke få vist eller opdatere dine oplysninger, før id'et er tilknyttet. Kontakt din chef eller dit supportteam for at få hjælp.**
 
-Hvis du vil knytte en bruger til en **Arbejder** -post, skal du navigere til **Brugere** og vælge brugeren. Vælg **Rediger** , tilføj den tilsvarende arbejder i feltet **Person** i formularen, og vælg **Gem**. Nu skulle du have adgang til Medarbejderselvbetjening.
+Hvis du vil knytte en bruger til en **Arbejder**-post, skal du navigere til **Brugere** og vælge brugeren. Vælg **Rediger**, tilføj den tilsvarende arbejder i feltet **Person** i formularen, og vælg **Gem**. Nu skulle du have adgang til Medarbejderselvbetjening.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sikkerhedskrav til medarbejder- og lederselvbetjeningstjeneste
 
@@ -72,15 +72,15 @@ Sektionen **Mine karriereoplysninger** i Medarbejderselvbetjening indeholder kor
 
 Kortet **Fritidssaldi** viser saldiene for alle tilmeldte planer. Dette kort viser din forventede saldo baseret på periodiseringsmetoden. Du kan angive og sende anmodninger om fritid, som derefter gennemgår en arbejdsgangsproces for godkendelse. Du kan finde flere oplysninger om orlov og fravær under [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md).
 
-På **Opgave** -kortet vises de opgaver, der er tildelt til dig, og du kan få dem vist og administrere dem.
+På **Opgave**-kortet vises de opgaver, der er tildelt til dig, og du kan få dem vist og administrere dem.
 
-Kortet **Næste registrerede kursus** viser det næste kursus, du er tilmeldt. Du kan se og tilmelde dig alle åbne kurser. Alle kurser, der er åbne for tilmelding, har status **Startet** , og der er muligt for medarbejderne selv at tilmelde sig på dette kort. Afhængigt af organisationens indstillinger skal din tilmelding til et kursus evt. gennemgå en godkendelsesproces.
+Kortet **Næste registrerede kursus** viser det næste kursus, du er tilmeldt. Du kan se og tilmelde dig alle åbne kurser. Alle kurser, der er åbne for tilmelding, har status **Startet**, og der er muligt for medarbejderne selv at tilmelde sig på dette kort. Afhængigt af organisationens indstillinger skal din tilmelding til et kursus evt. gennemgå en godkendelsesproces.
 
 På kortet **Certifikat** vises certifikatet og udløbsdatoen for det certifikat, der udløber tættest på dags dato. Du kan opdatere, tilføje eller fjerne certifikater. Afhængigt af organisationens indstillinger skal certifikatopdateringer evt. gennemgå en godkendelsesproces.
 
 Kortet **Næste planlagte gennemsyn** viser din næste performancegennemgang. Du kan starte en ny gennemgang fra dette kort. Din chef eller HR-medarbejder kan også starte gennemgang. Afhængigt af organisationens indstillinger kan du evt. også se, opdatere og sende afslutningsgennemgange fra dette kort.
 
-Du kan administrere dine mål med kortet **Performancemål**. Dette kort viser det antal mål, du har i hver status ( **Ikke startet** , **Holder tidsplanen** og **Skal forbedres** ). Du kan oprette, opdatere og fjerne mål, afhængigt af den tildelte rollebaserede sikkerhed. Hvis du vil, kan du tilføje nye mål fra grupper eller skabeloner. Ledere og HR-medarbejdere kan også oprette mål på vegne af medarbejdere og bestemme, hvor detaljerede de enkelte mål skal være. Ledere og medarbejdere kan samarbejde om mål og opdatere aktiviteter, målinger og status. Du kan også medtage vedhæftede filer.
+Du kan administrere dine mål med kortet **Performancemål**. Dette kort viser det antal mål, du har i hver status (**Ikke startet**, **Holder tidsplanen** og **Skal forbedres**). Du kan oprette, opdatere og fjerne mål, afhængigt af den tildelte rollebaserede sikkerhed. Hvis du vil, kan du tilføje nye mål fra grupper eller skabeloner. Ledere og HR-medarbejdere kan også oprette mål på vegne af medarbejdere og bestemme, hvor detaljerede de enkelte mål skal være. Ledere og medarbejdere kan samarbejde om mål og opdatere aktiviteter, målinger og status. Du kan også medtage vedhæftede filer.
 
 Du kan få vist dine eksisterende færdigheder på kortet **Færdigheder**. Du kan opdatere færdigheder, tilføje nye eller fjerne dem, der ikke længere er relevante. Afhængigt af organisationens indstillinger skal ændringer af dine færdigheder evt. gennemgå en godkendelsesproces.
 
@@ -96,7 +96,7 @@ Du kan tilmelde dig frynsegoder via linket **Frynsegoder**. Du kan finde flere o
 
 Under **Performance** kan du vælge **Performancekladder** for at oprette performancekladdeposter, der kan bruges til både performancemål og -gennemgange. Du kan vælge **Send tilbagemelding** for at give andre medarbejdere i organisationen en tilbagemelding. Afhængigt af organisationens indstillinger kan e-mails sendes til modtager, afsender og ledere. Du kan sende tilbagemeldinger til alle medarbejdere i organisationen. Afsendelse af tilbagemeldinger er ikke begrænset til firmaet.
 
-Under **Kompetencer** kan du foretage ændringer af **Kurser** , **Uddannelse** , **Tillidsposter** og **Erhvervserfaring**. Afhængigt af organisationens indstillinger skal opdateringer af disse kompetencer evt. gennemgå en godkendelsesproces.
+Under **Kompetencer** kan du foretage ændringer af **Kurser**, **Uddannelse**, **Tillidsposter** og **Erhvervserfaring**. Afhængigt af organisationens indstillinger skal opdateringer af disse kompetencer evt. gennemgå en godkendelsesproces.
 
 Du kan se jobdetaljer under **Organisation**. Jobdetaljer omfatter færdigheder, certifikater og ansvarsområder for din primære stilling. Du kan også se et udlånt udstyr, der er tjekket ud til dig. Afhængigt af organisationens indstillinger skal ændringer af lånt udstyr evt. gennemgå en godkendelsesproces.
 
@@ -112,7 +112,7 @@ Fanen **Mit team** indeholder følgende oplysninger for Chefselvbetjening. Kun l
 
 ### <a name="personnel-actions"></a>Personalehandlinger
 
-Personalehandlinger vises på basis af konfigurationsindstillinger i **Delte parametre for personale** og **Personaleparametre**. Når personalehandlinger er aktiveret for **Arbejdere** , aktiveres nye menuindstillinger, herunder:
+Personalehandlinger vises på basis af konfigurationsindstillinger i **Delte parametre for personale** og **Personaleparametre**. Når personalehandlinger er aktiveret for **Arbejdere**, aktiveres nye menuindstillinger, herunder:
 
 - **Anmod om ny medarbejder**
 - **Anmod om ny kontrahent**
@@ -122,7 +122,7 @@ Personalehandlinger vises på basis af konfigurationsindstillinger i **Delte par
 
 Du kan konfigurere disse indstillinger, så der udføres en valgfri gennemgangs- og godkendelsesarbejdsgang.
 
-Hvis du aktiverer **Stillingshandlinger** , aktiveres følgende indstillinger:
+Hvis du aktiverer **Stillingshandlinger**, aktiveres følgende indstillinger:
 
 - **Anmod om ny stilling**
 - **Anmod om ændring af stillingsdetaljer**
@@ -165,7 +165,7 @@ Mine teamoplysninger giver ledere mulighed for at få vist og opdatere direkte u
 
 Fanen **Resume** giver en hurtig visning af dine direkte underordnede. Hvis arbejdere rapporterer til en direkte underordnet, viser kortet antallet af direkte underordnede i den øverste sektion sammen med knappen **Vis team**. Indstillingerne over de enkelte kort gælder for den valgte medarbejder. Hvis du f.eks. vil angive en orlovsanmodning på vegne af en medarbejder, skal du vælge medarbejderen og derefter vælge **Anmod om fravær** over kortene. 
 
-Hvis du vælger knappen **Detaljer** , efter at du har valgt en medarbejder, vises følgende indstillinger:
+Hvis du vælger knappen **Detaljer**, efter at du har valgt en medarbejder, vises følgende indstillinger:
 
 - **Certifikater**
 - **Kompensation**
@@ -211,6 +211,6 @@ Ledere kan se alle mål for deres team via feltet **Mål for teamperformance** i
 
 #### <a name="reviews-tab"></a>Fanen Evalueringer
 
-Fanen **Evalueringer** opsummerer de vurderinger, medarbejderen har i de enkelte tilstande: **I gang** , **Klar til evaluering** og **Slutevaluering**. Hvis du vil have adgang til en medarbejders evaluering, skal du vælge knappen **Detaljer** og derefter vælge evalueringer, der kan samarbejdes om. Afhængigt af, hvor en evaluering er i arbejdsgangsprocessen, kan du se, om evalueringen er tilgængelig for opdatering. 
+Fanen **Evalueringer** opsummerer de vurderinger, medarbejderen har i de enkelte tilstande: **I gang**, **Klar til evaluering** og **Slutevaluering**. Hvis du vil have adgang til en medarbejders evaluering, skal du vælge knappen **Detaljer** og derefter vælge evalueringer, der kan samarbejdes om. Afhængigt af, hvor en evaluering er i arbejdsgangsprocessen, kan du se, om evalueringen er tilgængelig for opdatering. 
 
 Du kan se alle evalueringer for dit team via feltet **Evalueringer af teamperformance** i sektionen **Resume** i **Mit team**.

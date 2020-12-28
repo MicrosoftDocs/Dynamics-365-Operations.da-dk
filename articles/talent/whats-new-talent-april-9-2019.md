@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 0a4d4de6cf28e24d1265395d6440df85edf71a0d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460741"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-9-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (9. april 2019)
 
@@ -89,4 +89,4 @@ Sporing af medarbejdernes fridage og forståelse af, hvordan fridagene beregnes,
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. Dubletformularen åbner ikke automatisk for at undgå forstyrrelser i forbindelse med indtastning af data.
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
-Med Platform update 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk sender mailbeskeder til kontakter, når beskeder udløses af en hændelse. 
+Med platformsopdatering 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender mailbeskeder til kontaktpersoner, når de udløses af en hændelse. 

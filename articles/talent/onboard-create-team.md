@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897183"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460698"
 ---
 # <a name="create-a-hiring-team"></a>Oprette et ansættelsesteam
 
@@ -37,7 +37,7 @@ I Microsoft Dynamics 365 Talent: Onboard kan du oprette ansættelsesteam. Du kan
 
     ![[Oprettelse af et nyt team i Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
-4. Under **Vælg teammedlemmer**skal du angive navnet eller mailadressen på hvert teammedlem.
+4. Under **Vælg teammedlemmer** skal du angive navnet eller mailadressen på hvert teammedlem.
 
     Hvis du vil fjerne teammedlemmer, skal du vælge det **X**, der vises ud for vedkommendes navn under boksen.
 

@@ -2,8 +2,8 @@
 title: Oprette en teamkalender
 description: Få vist og opret teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 10/7/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd9a2a928e1f528065a00fecfb19a08edef86bf8
-ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
+ms.openlocfilehash: 2ec767a868d5c76b57465c451b8cc893b8b0a56b
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3968992"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417893"
 ---
 # <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
@@ -43,7 +43,7 @@ Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fri
 
 ## <a name="view-a-company-calendar"></a>Få vist en firmakalender
 
-Personer, der har HR-roller, kan få vist firmakalendere. I firmakalendere vises alle medarbejdere. Kalenderen viser som standard dags dato plus 28 dage, men du kan ændre datointervallet. Du kan også filtrere kalenderen efter **Navn**, **Personalenummer**og **Orlovstype.**
+Personer, der har HR-roller, kan få vist firmakalendere. I firmakalendere vises alle medarbejdere. Kalenderen viser som standard dags dato plus 28 dage, men du kan ændre datointervallet. Du kan også filtrere kalenderen efter **Navn**, **Personalenummer** og **Orlovstype.**
 
 1. Vælg **Links** i arbejdsområdet **Orlov og fravær**.
 
@@ -64,6 +64,11 @@ Kalenderne indeholder nu yderligere filtre og indstillinger. Alle kalendere inde
 Kalenderkonfiguration i orlovs- og fraværsparametre bestemmer tilgængelige visningsindstillinger.
 
 Du kan også filtrere kalendere efter leder eller afdeling. Den primære stillingstildeling bestemmer, hvilke medarbejdere der vises, når disse filtre angives. 
+
+>[!IMPORTANT]
+>Visning af orlov og fravær på tværs af firmaer er i øjeblikket i prøveversion. Du skal aktivere den i dit **Sandkasse**-miljø. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>
+>Derefter skal du aktivere funktionen i **Delte parametre for personale** for at få vist filteret for juridiske enheder i kalendere. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).<br><br>
+>Du kan filtrere kalenderen efter juridisk enhed. Hvis du vil se alle medarbejdere uanset juridisk enhed, skal du fjerne markeringen i filtreringsfeltet og vælge Angiv. 
 
 Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

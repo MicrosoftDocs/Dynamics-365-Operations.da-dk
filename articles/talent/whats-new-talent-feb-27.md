@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897666"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529132"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (27. februar 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 
@@ -98,19 +100,19 @@ Du kan opdatere den eksisterende skabelon ved at følge disse trin.
 
     - **Jobstillinger til stillinger:** Fjern denne tilknytning.
     - **Den overordnede tildelingsopgave Jobstillinger til stillinger:** Fjern denne tilknytning.
-    - **Jobstillinger til basisstilling:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Basisstilling**. Flyt den til position 7 i rækkefølgen.
+    - **Jobstillinger til basisstilling:** Tilføj en ny tilknytning fra enheden **Jobstillinger** til Common Data Service **Basisstilling** Finance and Operations-enheden. Flyt den til position 7 i rækkefølgen.
 
         [![Tilknytningen Jobstillinger til grundlæggende stilling](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Jobstillinger til stillingens detaljer:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingens detaljer**. Flyt den til position 8 i rækkefølgen.
+    - **Jobstillinger til stillingsoplysninger:** Tilføj en ny tilknytning fra enheden **Jobstillinger** til Common Data Service **Detaljer for stilling** Finance and Operations-enheden. Flyt den til position 8 i rækkefølgen.
 
         [![Tilknytningen Jobstillinger til stillingsoplysninger](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Jobstillinger til stillingens varighed:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingens varighed**.
+    - **Jobstillinger til Stillingsvarighed:** Tilføj en ny tilknytning fra enheden **Jobstillinger** til Common Data Service **Stillingsvarighed** Finance and Operations-enheden.
 
         [![Tilknytningen Jobstillinger til Stillingsvarighed](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Jobstillinger til stillingshierarkier:** Tilføj en ny tilknytning fra Common Data Service-enheden **Jobstillinger** til Finance and Operations-enheden **Stillingshierarkier**. Vælg **Avanceret forespørgsel** at gøre din avancerede forespørgsel tilgængelig for projektet.
+    - **Jobstillinger til Stillingshierarkier:** Tilføj en ny tilknytning fra enheden **Jobstillinger** til Common Data Service **Stillingshierarkier** Finance and Operations-enheden. Vælg **Avanceret forespørgsel** at gøre din avancerede forespørgsel tilgængelig for projektet.
 
        [![Knappen Avanceret forespørgsel](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Du kan opdatere den eksisterende skabelon ved at følge disse trin.
         [![Kommandoen Tilføj betinget kolonne](./media/Add-column.png)](./media/Add-column.png)
 
     6. I dialogboksen **Tilføj betinget kolonne** skal du angive **HIERARCHYTYPENAME** som navn på den nye kolonne.
-    7. I **Hvis**-delen af betingelsen skal du vælge et felt, bruge **lig med** som relationen og angive en værdi. I ***Så**- og **Ellers**-delen af betingelsen skal du angive, hvad standardværdien skal være. I dette tilfælde skal du angive **Linje** i begge dele.
+    7. I **Hvis**-delen af betingelsen skal du vælge et felt, bruge **lig med** som relationen og angive en værdi. I **_Så_* og **Ellers**-delene af betingelsen skal du angive, hvad standardværdien skal være. I dette tilfælde skal du angive **Linje** i begge dele.
 
         [![Dialogboksen Tilføj betinget kolonne](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

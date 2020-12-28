@@ -18,11 +18,11 @@ ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: b4ffed93100d28c0a62c49c932520b1436229ffd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174601"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407648"
 ---
 # <a name="maintain-general-budget-reservations"></a>Vedligehold generelle budgetreservationer
 

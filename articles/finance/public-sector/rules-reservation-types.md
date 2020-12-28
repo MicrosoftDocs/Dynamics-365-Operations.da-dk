@@ -18,11 +18,11 @@ ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 454d79d56801b1bff228e957b34807acc4fad684
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183505"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407647"
 ---
 # <a name="set-up-general-budget-reservation-rules-and-reservation-types"></a>Konfigurere regler for generel budgetreservation og reservationstyper
 

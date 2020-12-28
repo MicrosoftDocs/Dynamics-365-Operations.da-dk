@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.7
 ms.openlocfilehash: 586aa72808d51c800126e5189a0d7cbcd7789165
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984842"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407655"
 ---
 # <a name="set-up-and-run-the-cash-position-inquiry"></a>Konfigurer og køre forespørgslen Likviditet
 [!include [banner](../includes/banner.md)]

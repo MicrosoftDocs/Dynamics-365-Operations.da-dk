@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d27104a08cdc899f12942d80e693f3495d90a6ec
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040070"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527404"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (26. september 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources. Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -39,7 +41,7 @@ Denne udgivelse indeholder følgende nye funktioner og fejlrettelser. Ændringer
 
 Følgende funktion er generelt tilgængelig med denne udgivelse:
 
-- **Platform update 10.0.13 er nu tilgængelig** : Yderligere oplysninger om opdateringen finder du i [Platformsopdateringer til version 10.0.13 af Finance and Operations-apps (oktober 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+- **Platform update 10.0.13 er nu tilgængelig**: Yderligere oplysninger om opdateringen finder du i [Platformsopdateringer til version 10.0.13 af Finance and Operations-apps (oktober 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
@@ -51,7 +53,7 @@ Følgende fejlrettelser er inkluderet i denne version.
 | Fejlnummer | Fejl | Beskrivelse |
 | --- | --- | --- |
 | 469495 | Opdatere gitteret og dialogboksen for økonomiske standarddimensioner | Gitter og dialogboks for økonomiske dimensioner er opdateret overalt i Human Resources. |
-| 474887 | Workflowopgaven for orlovsanmodning åbner et forkert link i en manuel beslutning | Når en arbejdsproceskonfiguration indeholder en manuel beslutning, og du navigerer til orlovsanmodningen fra **Workflowopgaver, der er tildelt til mig** , åbnes det forkerte link, og der vises enten en tom formular eller en orlovsanmodning, der er oprettet af den aktuelle bruger, i stedet for den, der er tildelt brugeren til den manuelle beslutning. |
+| 474887 | Workflowopgaven for orlovsanmodning åbner et forkert link i en manuel beslutning | Når en arbejdsproceskonfiguration indeholder en manuel beslutning, og du navigerer til orlovsanmodningen fra **Workflowopgaver, der er tildelt til mig**, åbnes det forkerte link, og der vises enten en tom formular eller en orlovsanmodning, der er oprettet af den aktuelle bruger, i stedet for den, der er tildelt brugeren til den manuelle beslutning. |
 | 474962 | Enheden Parametre for orlov og fravær indeholder felter med flertydige navne | Enhedsnavnene i Parametre for orlov og fravær er blevet opdateret, så de er klarere. |
 | 481401 | Periodiseringsprocesser hænger, når grundlaget for periodiseringsdatoen ligger efter den periodiserede startdato og ved afslutningen af måneden | Periodiseringsprocesser er opdateret, så de ikke at have en forsinkelse, når periodiseringsdatogrundlaget er efter den periodiserede startdato og ved udgangen af måneden. |
 | 447167 | Lister over poster, der udløber, omfatter inaktive arbejdere | Fanen **Udløbende poster** i **Personalestyring** omfatter inaktive arbejdere. Nu omfatter den kun aktive arbejdere. |

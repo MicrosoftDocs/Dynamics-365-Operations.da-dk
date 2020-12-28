@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 2d87694bdc0ae7e35427e692e7f70a479463c69a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981871"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407671"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 

@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428656"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417825"
 ---
 # <a name="define-new-jobs"></a>Definere nye job
 
@@ -57,7 +57,7 @@ Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hj�
 21. Find og vælg den ønskede post på listen.
 22. Klik op linket i den valgte række på listen.
 23. Slå udvidelsen af sektionen Færdigheder til/fra.
-    * Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme. Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.   
+    * Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme. Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.   
 24. Klik på Gem.
 25. Klik på Kopiér fra.
 26. Klik på Kopiér fra skabelon.

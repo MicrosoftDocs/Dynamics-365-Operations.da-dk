@@ -17,11 +17,11 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 5126868038801091c7a9c17eee78e31db322cbb7
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138874"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407682"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Registrering af kreditors moms-id
 
@@ -29,7 +29,7 @@ ms.locfileid: "3138874"
 
 Denne fremgangsmåde viser, hvordan du tilføjer moms-registrerings-id'er og SE-nummer på en kreditorkonto. Denne proces er ens for juridiske enheder og kunder. 
 
-Før du kan udføre denne procedure, skal du konfigurere moms-id'er. Denne procedure gælder for alle europæiske lande. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland. Denne fremgangsmåde er beregnet til en datastyringsadministrator, en debitorchef eller en kreditorchef. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Før du kan udføre denne procedure, skal du konfigurere moms-id'er. Denne procedure gælder for alle europæiske lande/områder. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland. Denne fremgangsmåde er beregnet til en datastyringsadministrator, en debitorchef eller en kreditorchef. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 1. Gå til Kreditor > Kreditorer > Alle kreditorer.
 2. Find og vælg debitor DE-01001 på listen.

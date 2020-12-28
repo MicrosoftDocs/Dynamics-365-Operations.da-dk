@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f2ee23733d686480cd4323cab952ae12eceaf142
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20dc0768463d9a5d6762cb062deb0bdbe4d53fe3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897574"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528663"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (11. juni 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent.
 
@@ -56,11 +58,11 @@ De ændringer, der er beskrevet i dette afsnit, gælder for build-nummer 8.1.233
 
 ### <a name="platform-update-27-for-finance-and-operations"></a>Platform update 27 til Finance and Operations
 
-Du kan finde yderligere oplysninger om Platform update 27 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Du kan finde yderligere oplysninger om Platform update 27 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Funktionsstyringsarbejdsområde i Talent
 
-Arbejdsområdet **Administration af funktioner** i **Systemadministration** giver dig mulighed for at få vist, aktivere, deaktivere og planlægge funktioner, der er blevet leveret i hver version. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet **Administration af funktioner**til at aktivere dem og få vist dokumentationen til dem.
+Arbejdsområdet **Administration af funktioner** i **Systemadministration** giver dig mulighed for at få vist, aktivere, deaktivere og planlægge funktioner, der er blevet leveret i hver version. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet **Administration af funktioner** til at aktivere dem og få vist dokumentationen til dem.
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Understøttelse i Common Data Service-enheden af brugerdefinerede felter
 

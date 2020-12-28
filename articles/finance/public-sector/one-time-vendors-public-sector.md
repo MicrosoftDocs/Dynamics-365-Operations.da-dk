@@ -20,11 +20,11 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 93052a05f86c54ea9dfa8281c0766564063c718a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770248"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407691"
 ---
 # <a name="one-time-vendors-in-the-public-sector"></a>Engangsleverandører i den offentlige sektor
 

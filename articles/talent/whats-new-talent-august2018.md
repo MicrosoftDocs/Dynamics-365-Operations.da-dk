@@ -1,7 +1,7 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Talent - Core HR (august 2018)
-description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+description: Dette emne beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics 365 Talent - Core HR.
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 4f6d0a32807397d5f2c0892061e54c2fed24610b
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 30646de08bd5ea4b2da05bfc38da7edc320a3331
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897758"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690094"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-august-2018"></a>Nyheder eller ændringer i Dynamics 365 Talent - Core HR (august 2018)
 
@@ -33,7 +33,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Se udløbende poster i Selvbetjening for leder
 
-Du kan du se udløbende poster i Selvbetjening for leder. Med nye indstillinger er det muligt at konfigurere, hvilke oplysninger ledere kan få vist. Disse omfatter:
+Du kan du se udløbende poster i Selvbetjening for leder. Med nye indstillinger er det muligt at konfigurere, hvilke oplysninger ledere kan få vist. Disse indstillinger omfatter:
 
 -   Certifikater
 
@@ -51,7 +51,7 @@ Denne funktion giver dig også mulighed for at angive det interval af dage, hvor
 
 Du kan konfigurere de indstillinger efter rolle, der skal være tilgængelige, under angivelsen af en anmodning om dataoverførsel. Denne funktion giver ekstra fleksibilitet på tværs af rollerne i en organisation.
 
-For eksempel har ledere, der anmoder om medarbejderoverførsler, ikke nødvendigvis adgang til at foreslå eller angive kompensationsbeløb eller vælge den opgaveliste, der skal knyttes til anmodningen om overførslen. I dette tilfælde kan ledere oprette og sende anmodninger om overførsel, men kan ikke angive kompensations- eller opgavelistetildelinger. I denne samme konfiguration kan HR tildele de nye værdier for kompensation samt tilknytte eventuelle yderligere kontrollister, der skal fuldføres som følge af fuldførelsen af overførslen.
+For eksempel har ledere, der anmoder om medarbejderoverførsler, ikke nødvendigvis adgang til at foreslå eller angive kompensationsbeløb eller vælge den opgaveliste, der skal knyttes til anmodningen om overførslen. I dette tilfælde kan ledere oprette og sende anmodninger om overførsel, men kan ikke angive kompensations- eller opgavelistetildelinger. I denne samme konfiguration kan HR tildele de nye værdier for kompensation samt tilknytte eventuelle yderligere kontrollister, der skal fuldføres på grund af fuldførelsen af overførslen.
 
 De nye konfigurationsindstillinger er som standard indstillet til ikke at ændre egenskaberne før denne opdatering.
 
@@ -59,7 +59,7 @@ De nye konfigurationsindstillinger er som standard indstillet til ikke at ændre
 
 Der findes nu flere datofelter i Orlov og fravær.
 
-Med denne funktion kan du indstille grundlaget for periodiseringsperioder på planniveau til at bruge bestemte medarbejderdatoer. Dette giver mulighed for at bruge andre datoer end planstartdatoen under orlovsperiodiseringsprocessen. Indstillinger for bestemte datoer for medarbejdere omfatter følgende værdier:
+Med denne funktion kan du indstille grundlaget for periodiseringsperioder på planniveau til at bruge bestemte medarbejderdatoer. Andre datoer end planstartdatoen kan bruges under orlovsperiodiseringsprocessen. Indstillinger for bestemte datoer for medarbejdere omfatter følgende værdier:
 
 -   Brugerdefineret (tilgængelig før denne opdatering)
 

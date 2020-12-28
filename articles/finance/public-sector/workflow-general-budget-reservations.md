@@ -18,11 +18,11 @@ ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: d5b4d266c348d7703a44e0da47971e12f1994a7d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183496"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407695"
 ---
 # <a name="set-up-general-budget-reservations-and-submit-them-to-a-workflow"></a>Konfigurere generelle budgetreservationer og sende dem til en arbejdsgang
 
@@ -32,7 +32,7 @@ Når en generel budgetreservation er konfigureret til at bruge en arbejdsgang, s
 
 Følgende illustration viser, hvordan du konfigurerer en arbejdsgang til generelle budgetreservationer. Hvert nummereret trin svarer til et afsnit i dette emne.
 
-![Opsætning af en arbejdsgang for en generel budgetreservation](media/gbr-workflow-process.jpg "Opsætning af en arbejdsgang for en generel budgetreservation")
+![Konfiguration af en arbejdsgang for generel budgetreservation](media/gbr-workflow-process.jpg "Konfiguration af en arbejdsgang for generel budgetreservation")
 
 ## <a name="optional-set-up-reviewers-for-general-budget-reservations"></a>Valgfrit: Konfigurere validatorer til generelle budgetreservationer
 

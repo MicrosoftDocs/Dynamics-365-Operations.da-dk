@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
+ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930011"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476071"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Personale i Teams
 
@@ -86,7 +86,6 @@ Når du har aktiveret beskeder for Teams-appen Personale, kan du slå beskeder t
 
 | Udsted | Status |
 | --- | --- |
-| Vandret rulning fungerer ikke på Android-telefoner | Vandret rulning er ikke et problem på iOS-enheder eller stationære computere. Vi arbejder på at løse problemet for Android. |
 | Saldoen er forkert, når der angives fri for en fremtidig dato. | Prognosefunktion er ikke tilgængelig endnu. Saldoen viser den aktuelle dato. |
 | Kan ikke annullere en anmodning **Til gennemsyn**. | Denne funktionalitet understøttes ikke i øjeblikket, og den føjes til en fremtidig version. |
 | Saldooplysninger beregnes pr. dags dato. | Systemet viser i øjeblikket ikke saldi pr. periodiseringsperioden, også selvom det er konfigureret i orlovs- og fraværsparametre. |

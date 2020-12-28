@@ -18,11 +18,11 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: be5aab4984edd1ee930d1d0e6203c2b75c6bea26
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144583"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407684"
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a>Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 

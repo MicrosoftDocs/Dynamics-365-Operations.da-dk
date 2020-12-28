@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078037"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527687"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Rekrutter kandidater med talentpuljer i Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Rekrutteringsmedarbejdere og ansættelsesansvarlige kan organisere deres kandidater ved hjælp af funktionen Talentpuljer i Attract. Talentpuljer kan hjælpe dig med at holde styr på og kommunikere med alle de kandidater, der ansøger om en stilling i firmaet.
 
@@ -113,7 +115,7 @@ Alle brugere har en fælles oversigt over kandidatprofiler. Fanen **Profil** vis
 
 - Fanen **Dokumenter** viser eventuelle dokumenter, som kandidaten har tilføjet fra sin profil eller under jobansøgninger. Denne fane kan bruges til at administrere kandidatens cv, følgebreve, porteføljearbejde osv. Du kan også bruge denne fane til at tilføje dokumenter.
 
-    For at få vist et dokument skal du vælge dokumentnavnet på listen over dokumenter. Du kan få vist Microsoft Word-dokumenter i ansøgningen ved hjælp af Microsoft Office 365. Du kan også hente dokumenterne til din lokale computer ved hjælp af indstillingen **Hent** for hvert dokument.
+    For at få vist et dokument skal du vælge dokumentnavnet på listen over dokumenter. Du kan få vist Microsoft Word-dokumenter i ansøgningen ved hjælp af Microsoft 365. Du kan også hente dokumenterne til din lokale computer ved hjælp af indstillingen **Hent** for hvert dokument.
 
 - Fanen **LinkedIn** viser kandidatens LinkedIn-oplysninger. For at kunne bruge denne fane skal du oprette forbindelse til din LinkedIn-konto i brugerindstillingerne, og der skal oprettes forbindelse til dit miljøs LinkedIn Recruiter. Du kan finde flere oplysninger i [Rekrutter kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 

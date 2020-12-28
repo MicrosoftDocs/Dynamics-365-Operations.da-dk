@@ -20,12 +20,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fff04a8259165cdfb1bd6c56932f103a34881a68
-ms.sourcegitcommit: d6b17b9bafa84b574a597a560a80e6b7b1852b14
+ms.openlocfilehash: bc3f2cf1aec97fa7bb6505f3be721c56b20e9331
+ms.sourcegitcommit: ffe9ae98b347f78430926ca96c1061f25f698f53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "3799992"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4407725"
 ---
 # <a name="set-up-vendors-for-1099-reporting"></a>Konfigurere kreditorer til 1099-rapportering
 
@@ -72,7 +72,12 @@ Benyt følgende fremgangsmåde for at konfigurere kreditorer til 1099-rapporteri
 
 ## <a name="associate-a-1099-default-value-with-a-main-account"></a>Knytte en 1099-standardværdi til en hovedkonto
 
-Nogle af de fakturalinjer, der er identificeret for de føderale myndigheders 1099-rapportering, kan rapporteres for en anden 1099-rubrik end leverandørens standardrubrik. Da leverandører kan modtage betalinger, der korreleres med flere rubrikker i 1099, er det bedst at bruge en hovedkonto på en linje til en finansieringsfordeling. Denne fremgangsmåde sikrer ensartet rapportering af betalinger til en bestemt 1099-rubrik. Du kan nu genberegne værdierne for 1099-rubrikken for kreditorerne, så de akkumulerede saldi rapporteres metre præcist til det amerikanske skattevæsen (IRS).
+Nogle af de fakturalinjer, der er identificeret for de føderale myndigheders 1099-rapportering, kan rapporteres for en anden 1099-rubrik end leverandørens standardrubrik. 
+
+> [!Note]
+> Denne funktionalitet er kun tilgængelig, hvis du bruger offentlig sektor. 
+
+Da leverandører kan modtage betalinger, der korreleres med flere rubrikker i 1099, er det bedst at bruge en hovedkonto på en linje til en finansieringsfordeling. Denne fremgangsmåde sikrer ensartet rapportering af betalinger til en bestemt 1099-rubrik. Du kan nu genberegne værdierne for 1099-rubrikken for kreditorerne, så de akkumulerede saldi rapporteres metre præcist til det amerikanske skattevæsen (IRS).
 
 > [!NOTE]
 > 1099-rubrikken og beløbet kan kun udfyldes på fakturaen, hvis afkrydsningsfeltet **Rapport 1099** er markeret i oversigtspanelet **1099-skat** på siden kreditordetaljer.
@@ -85,6 +90,9 @@ Nogle af de fakturalinjer, der er identificeret for de føderale myndigheders 10
 ## <a name="update-1099-boxes-and-amounts"></a>Opdatere 1099-rubrikker og -beløb
 
 Du kan opdatere 1099-rapporteringers rubrikker og beløb for alle betalte fakturaer for et kalenderår på baggrund af den aktuelle tildeling af hovedkonti til 1099-rubrikker.
+
+> [!Note]
+> Denne funktionalitet er kun tilgængelig, hvis du bruger offentlig sektor. 
 
 1. Gå til **Kreditor \> Periodiske opgaver \> 1099-skat \> Opdater 1099-oplysninger efter hovedkonto**.
 2. Vælg et datointerval og en kreditor, og vælg derefter **OK**.

@@ -1,6 +1,6 @@
 ---
 title: Intrastat-oversigt
-description: Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
+description: Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/områder i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 07/25/2019
@@ -18,34 +18,34 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: a70108696d6187126c23eca1779553210cd4a9d6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175699"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407713"
 ---
 # <a name="intrastat-overview"></a>Intrastat-oversigt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
+Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/områder i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
 
-Intrastat er det system, der bruges til indsamling af oplysninger og generering af statistik over varehandel blandt lande/regioner i EU. Intrastat-rapportering er påkrævet, når et produkt krydser grænsen til et andet EU-land. I nogle lande/regioner gælder Intrastat-rapportering også for tjenester. Obligatoriske og fakultative elementer kan indsamles i Intrastat-rapportering. Følgende elementer er obligatoriske: momsnr. på den part, der er ansvarlig for at levere oplysninger, referenceperioden, strømmen (modtagelse eller forsendelse), den ottecifrede varekode, partnerens medlemsstat (afsendelsesmedlemsstaten på modtagelser) og bestemmelsesmedlemsstaten for forsendelser, varernes værdi, mængden af varer (nettomasse og supplerende enheder) og transaktionens art. Lande/regioner kan også indsamle valgfrie elementer i forskellige situationer. Nogle valgfrie elementer er land/region, leveringsbetingelserne, transportmåden, en mere detaljeret varekode end CN8, oprindelsesområdet for forsendelser og destinationsområdet for modtagelser, den statistiske procedure, den statistiske værdi, en beskrivelse af varerne og havn/lufthavn for lastning/losning.
+Intrastat er det system, der bruges til indsamling af oplysninger og generering af statistik over varehandel blandt lande/områder i EU. Intrastat-rapportering er påkrævet, når et produkt krydser grænsen til et andet EU-land/område. I nogle lande/områder gælder Intrastat-rapportering også for tjenester. Obligatoriske og fakultative elementer kan indsamles i Intrastat-rapportering. Følgende elementer er obligatoriske: momsnr. på den part, der er ansvarlig for at levere oplysninger, referenceperioden, strømmen (modtagelse eller forsendelse), den ottecifrede varekode, partnerens medlemsstat (afsendelsesmedlemsstaten på modtagelser) og bestemmelsesmedlemsstaten for forsendelser, varernes værdi, mængden af varer (nettomasse og supplerende enheder) og transaktionens art. Lande/regioner kan også indsamle valgfrie elementer i forskellige situationer. Nogle valgfrie elementer er land/region, leveringsbetingelserne, transportmåden, en mere detaljeret varekode end CN8, oprindelsesområdet for forsendelser og destinationsområdet for modtagelser, den statistiske procedure, den statistiske værdi, en beskrivelse af varerne og havn/lufthavn for lastning/losning.
 
 ## <a name="overview-of-the-intrastat-reporting-process"></a>Oversigt over Intrastat-rapporteringsprocessen
 I følgende afsnit beskrives den samlede strøm af oplysninger, der bruges til Intrastat-rapportering.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Angiv en transaktion, der krydser grænsen til et andet EU-land
+### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Angiv en transaktion, der krydser grænsen til et andet EU-land/område
 
 En debitorfaktura, fritekstfaktura, indkøbsordrefaktura, projektfaktura, følgeseddel for kunden og leverandørens produktkvittering eller overflytningsordre overføres til Intrastat-kladden, hvis landetypen for destination (på udførsel) eller forsendelse (på indførsel) er **EU**. Denne funktion blev udvidet til Microsoft Dynamics 365 for Operations (1611) og gør det muligt at angive fragtadresser for en transaktion inden for Fællesskabet. Hvis en fragtadresse afviger fra en leverandørs virksomhedsadresse (eller kundes virksomhedsadresse for returordre), bruges Intrastat-rapporteringen med disse oplysninger. Når du opretter en salgsordre, fritekstfaktura, indkøbsordre, kreditorfaktura, projektfaktura eller overflytningsordre, har nogle felter, der er relateret til udenrigshandel, standardværdier i dokumentets sidehoved eller på linjen. Standardkoden for transaktionen er taget fra det tilsvarende felt på siden **Udenrigshandelsparametre**. Standarden for varekode, oprindelsesland/-område og oprindelsesstat tages fra varen. Du kan ændre standardværdierne, og du kan også udfylde andre udenlandske handelsrelaterede oplysninger: den statistiske procedure, transportmåde og havn.
 
 ### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Brug denne Intrastat-kladde til at generere oplysninger om handel mellem lande/områder i EU.
 
-Til statistiske formål kan du generere oplysninger om handel mellem EU-lande hver måned. Du kan overføre posteringer fra en fritekstfaktura, debitorfaktura, debitors følgeseddel, kreditorfaktura, kreditor følgeseddel, projektfaktura eller overflytningsordre, på grundlag af kriterier for overførsel, der er angivet på siden **Udenrigshandelsparametre**. Du kan også angive transaktioner manuelt. Du kan manuelt opdatere overførte transaktioner i Intrastat-kladden, hvis opdateringer er påkrævet. Under bestemte betingelser, der er angivet på siden **Komprimering af Intrastat**, kan du komprimere transaktionerne i Intrastat-kladden. For nogle lande kan du anvende en tærskel på små transaktioner. Du kan rapportere transaktioner, der ligger under tærsklen, under den angivne varekode. Du kan opdatere varekoden på de tilsvarende Intrastat-kladdelinjer, baseret på indstillingen **Minimumsgrænse** på siden **Udenrigshandelsparametre**. Du kan også komprimere de transaktioner, der er baseret på indstillingen **Komprimering af Intrastat**. Du kan validere fuldstændigheden af transaktioner i Intrastat-kladden, baseret på indstillingen **Kontroller opsætning** på siden **Udenrigshandelsparametre**. Dataene i de tilsvarende felter kan valideres for nøjagtighed: land, stat eller provins, vægt, varekode, transaktionskode, supplerende enhed, havn, oprindelse, vilkår for levering, transportmåde og momsundtagelsesnummer. Transaktioner, der ikke er fuldført, markeres som ikke gyldig.
+Til statistiske formål kan du generere oplysninger om handel mellem EU-lande/områder hver måned. Du kan overføre posteringer fra en fritekstfaktura, debitorfaktura, debitors følgeseddel, kreditorfaktura, kreditor følgeseddel, projektfaktura eller overflytningsordre, på grundlag af kriterier for overførsel, der er angivet på siden **Udenrigshandelsparametre**. Du kan også angive transaktioner manuelt. Du kan manuelt opdatere overførte transaktioner i Intrastat-kladden, hvis opdateringer er påkrævet. Under bestemte betingelser, der er angivet på siden **Komprimering af Intrastat**, kan du komprimere transaktionerne i Intrastat-kladden. For nogle lande/områder kan du anvende en tærskel på små transaktioner. Du kan rapportere transaktioner, der ligger under tærsklen, under den angivne varekode. Du kan opdatere varekoden på de tilsvarende Intrastat-kladdelinjer, baseret på indstillingen **Minimumsgrænse** på siden **Udenrigshandelsparametre**. Du kan også komprimere de transaktioner, der er baseret på indstillingen **Komprimering af Intrastat**. Du kan validere fuldstændigheden af transaktioner i Intrastat-kladden, baseret på indstillingen **Kontroller opsætning** på siden **Udenrigshandelsparametre**. Dataene i de tilsvarende felter kan valideres for nøjagtighed: land/område, stat eller region, vægt, varekode, transaktionskode, supplerende enhed, havn, oprindelse, vilkår for levering, transportmåde og momsundtagelsesnummer. Transaktioner, der ikke er fuldført, markeres som ikke gyldig.
 
 ### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Brug denne Intrastat-kladde til at rapportere oplysninger om handel mellem lande/områder i EU.
 
-Til statistiske formål kan du rapportere oplysninger om handel mellem EU-lande hver måned. Du kan udskrive Intrastat-rapporten, baseret på indstillingen **Rapportformattilknytning** på siden **Udenrigshandelsparametre**. Du kan generere en elektronisk fil, baseret på indstillingen **Filformattilknytning** på siden **Udenrigshandelsparametre**. Se Opgaveregistrering for Intrastat-rapportering for at få yderligere oplysninger om Intrastat-rapportering, herunder de nødvendige forudsætninger.
+Til statistiske formål kan du rapportere oplysninger om handel mellem EU-lande/områder hver måned. Du kan udskrive Intrastat-rapporten, baseret på indstillingen **Rapportformattilknytning** på siden **Udenrigshandelsparametre**. Du kan generere en elektronisk fil, baseret på indstillingen **Filformattilknytning** på siden **Udenrigshandelsparametre**. Se Opgaveregistrering for Intrastat-rapportering for at få yderligere oplysninger om Intrastat-rapportering, herunder de nødvendige forudsætninger.
 
 -   Generere en EU Intrastat-opgørelse
 -   Overføre transaktioner til Intrastat
@@ -231,7 +231,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tr>
 <tr class="odd">
 <td>Egenskaber for land/område</td>
-<td>Angiv landet/området for den aktuelle juridiske enhed til <strong>Indland</strong>. Angiv land i EU-lande, der deltager i EU-handel med den aktuelle juridiske enhed til <strong>EU</strong>. For hvert land/område kan du også identificere lande-/områdekoden for formål med udenrigshandel.</td>
+<td>Angiv landet/området for den aktuelle juridiske enhed til <strong>Indland</strong>. Angiv land/område i EU-lande/områder, der deltager i EU-handel med den aktuelle juridiske enhed til <strong>EU</strong>. For hvert land/område kan du også identificere lande-/områdekoden for formål med udenrigshandel.</td>
 </tr>
 <tr class="even">
 <td>Nummerserie</td>

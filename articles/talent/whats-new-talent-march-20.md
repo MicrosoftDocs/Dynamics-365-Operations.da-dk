@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812689"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460675"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (20. marts 2019)
 
@@ -80,7 +80,7 @@ Der er foretaget ændringer for at løse et problem, som opstår i forbindelse m
 I mange organisationer har de ansvarlige for kompensationer og frynsegoder muligvis kun har adgang til visse kompensationsposter. Disse kan være til ledere eller medarbejdere i bestemte områder. Med denne ændring kan Personale administrere og vedligeholde kompensationsplaner for forskellige medarbejdergrupper i organisationen. Du kan tildele sikkerhedsroller til faste og variable planer, som bestemmer adgangen til planerne og medarbejderdata tilknyttet til planerne, såsom løn eller bonusposter. Alene roller med den godkendte adgang kan behandle kompensation for de pågældende medarbejdere.
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
-Med Platform update 24 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk udsender mailbeskeder til kontakter, når beskeder udløses af en hændelse.
+Med Platform update 24 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender mailbeskeder til kontaktpersoner, når de udløses af en hændelse.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Duplikerede medarbejderkontroller: ændringer i grænsefladen
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. For at undgå at forstyrre indtastningen af data åbner dubletformularen ikke automatisk.

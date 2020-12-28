@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "3688315"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417750"
 ---
 # <a name="view-and-manage-address-changes"></a>Få vist og administrere adresseændringer
 
@@ -64,7 +64,7 @@ Medarbejdere kan opdatere deres egen adresse i arbejdsområdet **Medarbejderselv
 
 8. Angiv **Gade**.
 
-9. Angiv **By**, **Stat**og **Region**. Disse felter angives typisk automatisk ud fra feltet **Postnummer**.
+9. Angiv **By**, **Stat** og **Region**. Disse felter angives typisk automatisk ud fra feltet **Postnummer**.
 
 10. Vælg eventuelt feltet **Primær** for at angive en primær adresse. Kun én adresse kan markeres som primær. Hvis en anden adresse allerede er markeret som den primære adresse, skal du bekræfte, at du vil bruge denne adresse som primær.
 
@@ -92,7 +92,7 @@ Du kan opdatere en adresse i arbejdsområdet **Personalestyring**. Benyt denne f
 
 8. Angiv **Gade**.
 
-9. Angiv **By**, **Stat**og **Region**. Disse felter angives typisk automatisk ud fra feltet **Postnummer**.
+9. Angiv **By**, **Stat** og **Region**. Disse felter angives typisk automatisk ud fra feltet **Postnummer**.
 
 10. Vælg eventuelt feltet **Primær** for at angive en primær adresse. Kun én adresse kan markeres som primær. Hvis en anden adresse allerede er markeret som den primære adresse, skal du bekræfte, at du vil bruge denne adresse som primær.
 

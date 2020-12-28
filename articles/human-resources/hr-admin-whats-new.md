@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d8f70e7aa7316241adbbde6c4188c2ae0e640633
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
+ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823521"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4669078"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheder eller ændringer i Human Resources
 
@@ -49,6 +49,8 @@ Du kan få yderligere oplysninger om kommende funktioner eller opdateringsproces
 
 Du kan få oplysninger om, hvad der er nyt eller ændret i hver 2-ugers frigivelse af Human Resources, i følgende artikler:
 
+[02. december 2020](hr-whats-new-2020-12-02.md)</br>
+[22. oktober 2020](hr-whats-new-2020-10-22.md)</br>
 [16. september 2020](hr-whats-new-2020-09-16.md)</br>
 [3. september 2020](hr-whats-new-2020-09-03.md)</br>
 [20. august 2020](hr-whats-new-2020-08-20.md)</br>
@@ -74,6 +76,6 @@ Du kan få oplysninger om, hvad der er nyt eller ændret i hver 2-ugers frigivel
 
 ## <a name="see-also"></a>Se også
 
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2020 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)

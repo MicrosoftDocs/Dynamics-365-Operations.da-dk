@@ -16,12 +16,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b69f470e34484d685fcb4f25755427146dceee56
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 267e2d4c0ed3ad5a60e08200d7be338bfab02c2e
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984839"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4407724"
 ---
 # <a name="cash-position-inquiry"></a>Forespørgsel på likviditet
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ Denne forespørgsel er entydig, da den giver brugerne mulighed for at tilpasse t
 
 6. I sektionerne **Kolonne seks** og **Kolonne syv**: 
 
-- Angiv en etiket for kolonne seks (f.eks. Generelle budgetreservationer eller Behæftelser") og kolonne syv (f.eks."Budgetreservationer").
+- Angiv en etiket for kolonne seks (f.eks. Generelle budgetreservationer eller Behæftelser") og kolonne syv (f.eks. "Budgetreservationer").
 - I begge kolonner kan du angive kontonumre for **Debet- og kredithovedkonti**, **Kun debethovedkonti** og **Kun kredithovedkonti**.
 
 7. Angiv en kolonneetiket i sektionen **Kolonne otte** (f.eks. "Ikke-behæftet saldo"). 

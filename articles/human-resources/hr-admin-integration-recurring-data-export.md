@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008444"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417846"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Opret en app til tilbagevendende dataeksport
 
@@ -104,7 +104,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
     3. Konfigurer en HTTP **POST**-anmodning for at kalde **ExportToPackage** DMF REST-API'en.
 
         - **Metode:** POST
-        - **URL-adresse for anmodning:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
+        - **URL-adresse for anmodning:** https://\<hostname\>/navneområder/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
         - **Indhold i anmodningen:**
 
             ```JSON
@@ -141,7 +141,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
         > I dette eksempel udføres der ikke fejlkontrol. **GetExecutionSummaryStatus**-API'en kan returnere ikke-gennemførte terminaltilstande (dvs. tilstande, der ikke er angivet til **Fuldført**). Yderligere oplysninger finder du i [API-dokumentation](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Metode:** POST
-        - **URL-adresse for anmodning:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
+        - **URL-adresse for anmodning:** https://\<hostname\>/navneområder/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
         - **Indhold i anmodningen:** body('Invoke\_an\_HTTP\_request')?['value']
 
             > [!NOTE]
@@ -159,7 +159,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
     - Tilføj en **Kald en HTTP-anmodning**-handling for at kalde [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST-API'en.
 
         - **Metode:** POST
-        - **URL-adresse for anmodning:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
+        - **URL-adresse for anmodning:** https://\<hostname\>/navneområder/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Indhold i anmodningen:** {"executionId": body('GetExportedPackageURL')?['value']}
 
         ![GetExportedPackageURL-handling](media/integration-logic-app-get-exported-package-step.png)

@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814714"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460732"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Se status for onboarding af medarbejdere og dine opgaver
 
@@ -33,12 +33,12 @@ Microsoft Dynamics 365 Talent: Onboard giver dig mulighed for at se de fremskrid
 
 1. Vælg **Guider** i menuen til venstre. Du får vist en oversigt over status for alle de onboardingguider, du har sendt.
 
-    ![[Visning af status for onboardingguider](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Se status for onboardingguides](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Hvis du vil foretage detailudledning, skal du vælge den guide, du vil se.
 3. Vælg fanen **Aktiviteter** for at se, hvilke aktiviteter den nyansatte har fuldført.
 
-    ![[Visning af aktiviteter, som den nyansatte har fuldført](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Få vist aktiviteter, som den nyansatte har fuldført](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Se onboardingopgaver, som du er tildelt
 

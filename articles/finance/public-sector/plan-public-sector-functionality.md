@@ -1,6 +1,6 @@
 ---
-title: Planlæg funktioner til den offentlige sektor
-description: I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
+title: Planlægge funktioner til den offentlige sektor
+description: I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a633548ceb0f27ee9249b20456bc4cabd0c044eb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 760bce7983e07e61940d5091049b1ad1ceee935b
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770246"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646298"
 ---
 # <a name="plan-for-public-sector-functionality"></a>Planlægge funktioner til den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
+I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
 
 <a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
 -----------------------
 
-Før du begynder at justere indstillingerne og angive dine data, bør du overveje, hvilke moduler du skal konfigurere til din offentlige organisation. Funktioner til den offentlige sektor er integreret med følgende Dynamics 365 Finance-moduler og Microsoft-produkter.
+Før du konfigurerer den offentlige sektor og begynder at tilføje dine data, bør du overveje, hvordan du vil bruge denne funktion. Din overvejelse skal identificere de moduler, der skal være indstillet til at bruge funktioner i den offentlige sektor. Den offentlige sektor integreres med følgende: 
 
 ### <a name="accounts-payable"></a>Kreditor
 
@@ -57,7 +57,7 @@ Budgetanalyse Budgetanalyse for reviderede budgetter Budgetanalyse for faktiske 
 -   Konfigurationsundernøglen **Franske myndighedskrav** er valgt.
 -   Indstillingen **Brug konteringsreglerne for den franske offentlige sektor** er valgt på siden **Budgetparametre**.
 
-Saldooversigt Tilsagn Tilsagn lukket Vedligehold mandats de paiement Vedligehold titres de recette Købsaftale, afdelingsadgang Købsaftaletræ Forbrugsgrænser efter kategori Hold-historik for kreditorfakturabetaling
+Saldooversigt Tilsagn lukket Vedligehold mandats de paiement Vedligehold titres de recette Købsaftale, afdelingsadgang Købsaftaletræ Forbrugsgrænser efter kategori Hold-historik for kreditorfakturabetaling
 
 ### <a name="general-ledger"></a>Finans
 

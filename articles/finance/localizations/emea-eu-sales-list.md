@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183537"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407678"
 ---
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
@@ -45,7 +45,7 @@ Du kan udføre følgende opgaver for rapportering i forbindelse med EU-listesyst
 
 -   Indsaml oplysninger om handelstransaktioner inden for fællesskabet. En handelstransaktion inden for fælleskabet kan være en salgsfaktura, fritekstfaktura, projektfaktura eller kreditorfaktura. En transaktion er identificeret ud fra modpartens land/område. Handelstransaktioner inden for fællesskabet af forskellige typer indsamles i EU-listesystemet, hvor de er repræsenteret i den almindelige form. Hver post i ESL-tabellen repræsenterer en enkelt transaktion og består af modpartens moms-id og den samlede værdi af varer og tjenesteydelser, der blev leveret.
 -   (Valgfrit) Se en forhåndsvisning af rapporten **EU-listesystemet**. Du kan gennemse og godkende rapporten **EU-listesystemet** for en given periode i form af en Microsoft Excel-projektmappe.
--   Generer rapporten **EU-listesystemet**. Rapporten **EU-listesystemet** genereres i form af en elektronisk fil med et bestemt format, der er specifik for hver EU-medlemsstat. Generelt indeholder en rapport for **EU-listesystemet** grundlæggende oplysninger om den rapporterende part og værdierne for levering af varer og tjenesteydelser. Oplysningerne er grupperet efter modpartens land og moms-id.
+-   Generer rapporten **EU-listesystemet**. Rapporten **EU-listesystemet** genereres i form af en elektronisk fil med et bestemt format, der er specifik for hver EU-medlemsstat. Generelt indeholder en rapport for **EU-listesystemet** grundlæggende oplysninger om den rapporterende part og værdierne for levering af varer og tjenesteydelser. Oplysningerne er grupperet efter modpartens land/område og moms-id.
 -   Luk EU-listesystemets rapporteringsperiode. Når rapporten **EU-listesystemet** er genereret og sendt til myndigheder, kan du markere posterne i ESL-tabellen som **Lukket**. Disse posteringer medtages ikke i flere rapporter.
 
 ## <a name="prerequisites"></a>Forudsætninger

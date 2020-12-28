@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006049"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460670"
 ---
 # <a name="talent-system-requirements"></a>Systemkrav for Talent
 
@@ -59,7 +59,7 @@ Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 
 ## <a name="regional-availability-languages-and-localization"></a>Regional tilgængelighed, sprog og lokalisering
 
-Du kan hente en PDF-fil over de lande, regioner og sprog, som Talent understøtter i [International tilgængelighed af Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
+Du kan hente en PDF-fil over de lande, områder og sprog, som Talent understøtter i [International tilgængelighed af Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
 
 > [!NOTE]
 > Mens brugergrænsefladen er lokaliseret til andre sprog, gemmes alle brugerdata på det sprog, de blev indtastet på. Du kan oprette mails og skabeloner på andre sprog, men data som f.eks. planlægningsoplysninger, er kun tilgængelige på engelsk på nuværende tidspunkt.

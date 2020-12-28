@@ -18,11 +18,11 @@ ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 3f376de75951e9468ce95a24e9393d9bdca66672
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183510"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407670"
 ---
 # <a name="project-accounting-with-general-budget-reservations"></a>Projektregnskab med generelle budgetreservationer
 

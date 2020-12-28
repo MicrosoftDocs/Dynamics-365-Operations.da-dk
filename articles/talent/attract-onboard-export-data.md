@@ -20,11 +20,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Talent October 2019 update
 ms.openlocfilehash: eb97a16c15476c2f34ec581a32a677fa6fee8739
-ms.sourcegitcommit: acdd93637385246f9c5c652cccdf2cbfb263cc33
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975928"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460631"
 ---
 # <a name="export-data-from-attract-and-onboard"></a>Eksportere data fra Attract og Onboard
 
@@ -106,9 +106,9 @@ Når du er klar, kan du downloade skabeloner, guider og kandidatdata fra Onboard
 
 Downloaden er en .zip-fil, der indeholder:
 
-- En **Skabelon**mappe, der indeholder dine indbyggede Onboard-skabeloner i Word-dokumentformat.
+- En **Skabelon** mappe, der indeholder dine indbyggede Onboard-skabeloner i Word-dokumentformat.
 
-- En **Guides**mappe, der indeholder dine indbyggede Onboard-guides i Word-dokumentformat.
+- En **Guides** mappe, der indeholder dine indbyggede Onboard-guides i Word-dokumentformat.
 
 ## <a name="see-also"></a>Se også
 

@@ -3,7 +3,7 @@ title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3929987"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4417892"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere anmodninger i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du hurtigt anmode om at få fri og se dine flekskontooplysninger direkte i Microsoft Teams. Du kan interagere med en robot for at anmode om oplysninger og starte en orlovsanmodning. Fanen **Fridage** giver mere detaljerede oplysninger. Du kan også sende personoplysninger om dine kommende fridage i teams og chatte uden for Human Resource-appen.
+Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du hurtigt anmode om at få fri og se dine flekskontooplysninger direkte i Microsoft Teams. Du kan interagere med en robot for at anmode om oplysninger og starte en orlovsanmodning. Fanen **Fridage** giver mere detaljerede oplysninger. Du kan også sende personer oplysninger om dine kommende fridage i teams og chatte uden for Human Resource-appen.
 
 ## <a name="install-the-app"></a>Installere appen
 
@@ -182,11 +182,25 @@ Hvis du ikke kan logge på appen, er det muligt, at den konto, du bruger til at 
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Der opstod en fejl under godkendelse af orlovsanmodninger i appen Human Resources i Teams
 
-Hvis du modtager en fejl under forsøg på at godkende orlovsanmodninger i appen Teams, skal du udføre følgende fejlfindingstrin:
+Hvis du modtager en fejl under forsøg på at godkende orlovsanmodninger i appen Teams, skal du prøve følgende fejlfindingstrin:
 
 1. Kontrollér, at den konto, du bruger til at logge på Microsoft Teams, er den samme, som du bruger til at få adgang til Dynamics 365 Human Resources.
 
 2. Kontrollér, at du er en gyldig godkender af anmodningen, ved at kontrollere indstillingerne af arbejdsproces for orlovsgodkendelse. Du kan finde flere oplysninger om orlovsarbejdsprocesser i [Oprette en arbejdsgang for orlovsanmodning](hr-leave-and-absence-workflow.md).
+
+## <a name="known-accessibility-issues"></a>Kendte problemer med tilgængelighed
+
+Human Resources-appen i Teams har følgende tilgængelighedsproblemer, som vi arbejder på at løse i fremtidige versioner.
+
+| Udsted | Løsning eller forklaring |
+| --- | --- |
+| Hvis du zoomer til 400 % på skrivebordet, skjules nogle af handlingsknapperne i visningen. | Vi anbefaler, at du bruger et forstørrelsesglas i stedet, indtil vi kan understøtte dette zoomniveau. |
+| Under fanen **Fridage** annoncerer VoiceOver en knaphandling under læsning af overskriften til gitteret for fridage. | Overskriften og elementerne i gitteret grupperes efter år, og de kan skjules. VoiceOver fortolker dette som et element, der kræver en handling, men det er ikke. |
+| Hvis du foretager en strygebevægelse, mens en pop op-menu er åben, ignorerer VoiceOver læsningen af pop op-menuen eller menuindholdet. | Udforsk indholdet ved hjælp af fingerscanning. |
+| Under fanen **Fridage** er der en ekstra strygebevægelse, når du navigerer til **Årsagskode** i en ny anmodning. | Der er ikke noget skjult kontrolelement, som strygenavigationen forsøger at få adgang til. |
+| Hvis du lave en strygebevægelser under fanen **Fridage**, mens kalenderen er åben, havner du uden for kontrolelementet i stedet for øverst i en ny anmodning, eller når du redigerer en anmodning. | Når du når **Gå til i dag**, skal du betragte det som slutningen af kontrolelementet og stryge i modsatte retning for at gå tilbage til toppen. |
+| VoiceOver kan ikke læse datoetiketterne. | De datoer, der optræder som par, er altid **Startdato** og **Slutdato**. |
+| Under fanen **Chat** springer fokus tilbage til toppen, når du angiver en dato, mens du bruger hjælpeværktøjet eller tastaturnavigation. | Tabulér, indtil du når til inputområdet igen. |
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 

@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
 ms.openlocfilehash: 22c62969a56f42b78a509b5477cfa595706ae23a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978251"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407692"
 ---
 # <a name="calculate-the-delivery-date-for-a-line-based-on-the-lead-time"></a>Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 
@@ -55,7 +55,7 @@ Du skal konfigurere muligheden for at beregne leveringsdatoer og den kalender, d
 4. Vælg den kalender, der angiver dagene for, hvornår kontoret er åbent, i feltet **Vælg kalender, der skal bestemme arbejdsdage**.
 5. Vælg **Gem** for at gemme ændringerne.
 
-Afsnittet **Leveringstid** vises nu på siderne **Indkøbsrekvisitioner**, **Indkøbsordre**og **Købsaftaler**.
+Afsnittet **Leveringstid** vises nu på siderne **Indkøbsrekvisitioner**, **Indkøbsordre** og **Købsaftaler**.
 
 ## <a name="edit-the-lead-time-for-a-line"></a>Redigere leveringstiden for en linje
 

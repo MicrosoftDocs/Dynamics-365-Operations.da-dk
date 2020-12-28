@@ -17,11 +17,11 @@ ms.author: v-kiarnd
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 3344ff472f1a844fe96953ff854e958316498339
-ms.sourcegitcommit: 49bee13f0df00e50b5a6c1a3d227246cb5cc50d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3827264"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407657"
 ---
 # <a name="use-cash-control-limits"></a>Bruge grænser for kontantstyring
 

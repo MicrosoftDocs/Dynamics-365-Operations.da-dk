@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: f68b8f642ada1345e7097b5e7220e222b132b1dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431147"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417838"
 ---
 # <a name="system-requirements"></a>Systemkrav
 
@@ -58,7 +58,7 @@ Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 
 ## <a name="regional-availability-languages-and-localization"></a>Regional tilgængelighed, sprog og lokalisering
 
-Du kan hente en PDF-fil over de lande, regioner og sprog, som Personale understøtter i [International tilgængelighed af Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
+Du kan hente en PDF-fil over de lande, områder og sprog, som Personale understøtter i [International tilgængelighed af Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
 
 > [!NOTE]
 > Mens brugergrænsefladen er lokaliseret til andre sprog, gemmes alle brugerdata på det sprog, de blev indtastet på. Du kan oprette mails og skabeloner på andre sprog, men data som f.eks. planlægningsoplysninger, er kun tilgængelige på engelsk på nuværende tidspunkt.

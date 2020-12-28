@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 109f0ac35fb0bea26eeec1052c165bf13653e8e7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985983"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407649"
 ---
 # <a name="forecast-position-distribution"></a>Distribution af budgetteret stilling 
 

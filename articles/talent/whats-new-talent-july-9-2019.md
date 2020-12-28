@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: feb39966d98fa7bde9a6bfad26b07fbd224da59b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897620"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528024"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (9. juli 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
@@ -49,7 +51,7 @@ Denne version indeholder rettelser af mindre fejl i Dynamics 365 Talent: Onboard
 
 ### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 til Finance and Operations
 
-Du kan finde yderligere oplysninger om Platform update 28 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations Platform update 28 (juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Du kan finde yderligere oplysninger om Platform update 28 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 Finance and Operations (28- juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Enhedsunderstøttelse i Common Data Service af brugerdefinerede felter 
 

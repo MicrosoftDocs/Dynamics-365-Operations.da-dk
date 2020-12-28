@@ -20,11 +20,11 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7622293340139c7f18354ecdc4b733edb602a2ce
-ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090602"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407690"
 ---
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 

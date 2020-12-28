@@ -3,7 +3,7 @@ title: Rekrutter kandidater med LinkedIn Recruiter i Attract
 description: Brug LinkedIn-integrationen leveret af Microsoft Dynamics 365 Talent - Attract til at rekruttere jobkandidater gennem LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 96e4660c4958bf5f2a0910bfad770e1e713f800f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833040"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528263"
 ---
 # <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Rekrutter kandidater med LinkedIn Recruiter i Attract
 
@@ -34,6 +34,9 @@ LinkedIn er verdens største professionelle onlinenetværk, der giver dig adgang
 
 Hvis du ikke ser ud til at have denne funktion, skal du kontakte din administrator. Før du kan drage fordel af LinkedIn Recruiter fra Attract, skal din administrator [konfigurere integration med LinkedIn](./attract-admin-linkedin.md). Du kan derefter konfigurere din forbindelse til LinkedIn Recruiter og begynde at finde kandidater.
 
+>[!IMPORTANT]
+>Fra og med 1. juli 2020 understøtter LinkedIn ikke længere Internet Explorer 11. Brugerne kan stadig få adgang til LinkedIn med Internet Explorer 11, men vil blive bedt om at opgradere eller bruge en anden browser. Yderligere oplysninger finder du under [Understøttede internetbrowsere til LinkedIn](https://www.linkedin.com/help/linkedin/answer/4135/supported-internet-browsers-for-linkedin).
+
 ## <a name="set-up-your-connection-with-linkedin-recruiter"></a>Konfigurere din forbindelse til LinkedIn Recruiter
 
 Før du kan begynde at arbejde med LinkedIn Recruiter gennem Attract, skal du konfigurere din forbindelse til LinkedIn Recruiter. Til dette trin har du brug for dine LinkedIn Recruiter-legitimationsoplysninger.
@@ -42,19 +45,35 @@ Før du kan begynde at arbejde med LinkedIn Recruiter gennem Attract, skal du ko
 2. Vælg **Brugerindstillinger**.
 3. Vælg **Tilslut** under fanen **Forbindelser** ved siden af **LinkedIn**. Følg instruktionerne fra LinkedIn.
 
-    ![[Konfigurere forbindelse til LinkedIn Recruiter fra Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[Konfigurer forbindelse til LinkedIn Recruiter fra Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## <a name="view-linkedin-candidates-in-attract"></a>Se LinkedIn-kandidater i Attract
 
 Når du er tilsluttet LinkedIn Recruiter, kan du se kandidaternes LinkedIn-profiler i Attract.
 
+>[!NOTE]
+>Hvis du har en rekrutteringslicens, der er tildelt til dig, kan du se alle kandidatens oplysninger.<br><br>
+>Hvis du har en licens som Ansvarlig for ansættelse eller ikke har fået tildelt en licens, skal du huske at logge af LinkedIn eller LinkedIn Recruiter, før du navigerer til fanen LinkedIn for en kandidat i Attract. Du vil kunne se de grundlæggende data i kandidatens offentlige profil, f.eks. for- og efternavn.
+
 1. I Attract skal du vælge **Job** eller **Talentpuljer** til venstre og derefter vælge en ansøger.
 
     ![[Se LinkedIn-kandidater i Attract](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
-2. I kandidatens profil skal du vælge **LinkedIn**-fanen. Du kan se kandidatens profil sammen med InMail-historik og LinkedIn-notehistorik.
+2. I kandidatens profil skal du vælge **LinkedIn**-fanen. Du kan se kandidatens profil og InMail-historik.
 
-Herfra kan du gemme kandidaten i et LinkedIn Recruiter-projekt, sende inMail eller bruge Opdater mig til at indstille en påmindelse i LinkedIn Recruiter.
+   ![Få vist en kandidats LinkedIn-oplysninger](./media/attract-candidate-linkedin-tab.png)
+
+Herfra kan du udføre følgende opgaver:
+
+- Vælg fanen **Rekrutteringsaktiviteter** for at få vist:
+   
+   - Rekrutteringsnoter (både offentlige og private). Noter er som standard private og kun synlige for ejeren af noterne.
+   - InMail-aktivitet (men ikke InMail-indholdet). Rul til bunden af siden for at få vist InMail-udvekslingen med dit kundeemne og få vist andre brugere i organisationen, der kommunikerer med dit kundeemne.
+   - Kandidatafvisningsaktivitet
+
+- Vælg **Send InMail** for at sende InMail uden at skulle forlade Attract.
+
+- Vælg **Gem i et job** for at gemme jobbet uden at forlade Attract.
 
 > [!NOTE]
 > En kandidats LinkedIn-profil vises i Attract, når kandidatens Attract-information matcher LinkedIn-oplysningerne. Her er de matchningsregler, der bruges:
@@ -87,7 +106,7 @@ I LinkedIn Recruiter kan du følge med i, om en kandidat har søgt andre job i o
     - **Interview Feedback** – Se feedback, som interviewerne har sendt i Attract.
     - **Noter** – Se eventuelle noter, der er indtastet for denne kandidat i Attract.
 
-    ![[Se Attract-oplysninger fra LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
+    ![[Vise Attract-oplysninger fra LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > Kandidat- og ansøgningsdata synkroniseres ikke med LinkedIn Recruiter, hvis kandidaten ikke har passeret stadiet Jobkandidat.

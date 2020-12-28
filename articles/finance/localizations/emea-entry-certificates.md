@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 46a4180163adea72e7d8712ed5ce6a3306e477c5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175704"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407693"
 ---
 # <a name="eu-entry-certificates"></a>EU-postcertifikater
 
@@ -32,7 +32,7 @@ Denne artikel indeholder oplysninger om postcertifikater i den Europæiske Union
 
 Du kan udføre følgende opgaver for et EU-posteringscertifikat:
 
--   Oprette og udstede et EU-posteringscertifikat sammen med en følgeseddel eller debitorfaktura for levering af varer eller tjenester til EU-lande/-regioner.
+-   Oprette og udstede et EU-posteringscertifikat sammen med en følgeseddel eller debitorfaktura for levering af varer eller tjenester til EU-lande/områder.
 -   Modtage EU-posteringscertifikatet, der er signeret af en EU-kunde.
 -   Overføre det signerede EU-posteringscertifikat, der er modtaget enten fra kunden eller fra en tredjepart, der er ansvarlig for levering af varer til kunden.
 -   Tilknytte det overførte EU-posteringscertifikat med en debitorfaktura.

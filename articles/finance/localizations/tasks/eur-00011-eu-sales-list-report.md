@@ -17,11 +17,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 37f1a6e3bf39e16702d1367a325134ec84369945
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144367"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407635"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Generere EU-listesystemrapporten
 
@@ -29,7 +29,7 @@ ms.locfileid: "3144367"
 
 Denne procedure fører dig gennem oprettelse af EU-salgslisterapporten. Dette omfatter overførsel af samhandelstransaktioner inden for Fællesskabet til EU-listesystemet og procestiden for rapporten. Denne procedure omfatter også oprettelse af en EU-samhandelstransaktion til demonstrationsformål. Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Hjælp.
 
-Denne procedure gælder for alle europæiske lande. Proceduren er oprettet i demodatafirmaet DEMF, og dermed bruges Tyskland som et eksempel på indenlandsk land/område. Proceduren bruger også Portugal som et eksempel EU-land/område. Før du kan fuldføre denne procedure, skal du konfigurere rapportering i EU-listesystem.
+Denne procedure gælder for alle europæiske lande/områder. Proceduren er oprettet i demodatafirmaet DEMF, og dermed bruges Tyskland som et eksempel på indenlandsk land/område. Proceduren bruger også Portugal som et eksempel EU-land/område. Før du kan fuldføre denne procedure, skal du konfigurere rapportering i EU-listesystem.
 
 Denne procedure er kun beregnet til bogholdere.
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 79bb8c0ed3c3f3bee62a8bc384a9d3a15cfe881a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: a3bb5792e6395e6fe593691f050cae03362cf659
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897597"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528615"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-14-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (14. marts 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Talent.
 
@@ -45,7 +47,7 @@ Der blev i forbindelse med denne udgivelse foretaget ændringer, som tillader re
 Med denne ændring er det muligt for dig at vælge flere medarbejder og bulktildele en eller flere kontrollister til de pågældende medarbejdere. 
 
 ### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 til Finance and Operations
-Yderligere oplysninger om Platform update 24 til Finance and Operations finder du under [Nyheder eller ændringer i Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Væsentlige ændringer i platform 24 omfatter: 
+Yderligere oplysninger om Platform update 24 til Finance and Operations finder du i [Nyheder eller ændringer i Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Væsentlige ændringer i platform 24 omfatter: 
 
 - Påmindelser er aktiveret i Talent.
 - Opdateringsnavigationslinjen er nu tilpasset overskriften i Office.
@@ -65,7 +67,7 @@ Common Data Service-enheder synkroniseres nu korrekt, når de opdateres via Comm
 I mange organisationer har de ansvarlige for kompensationer og frynsegoder muligvis kun har adgang til visse kompensationsposter. Disse kan være til ledere eller medarbejdere i bestemte områder. Med denne ændring kan Personale administrere og vedligeholde kompensationsplaner for forskellige medarbejdergrupper i organisationen. Du kan tildele sikkerhedsroller til faste og variable planer, som bestemmer adgangen til planerne og medarbejderdata tilknyttet til planerne, såsom løn eller bonusposter. Alene roller med den godkendte adgang kan behandle kompensation for de pågældende medarbejdere.
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
-Med Platform update 24 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk udsender mailbeskeder til kontakter, når beskeder udløses af en hændelse.
+Med Platform update 24 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender mailbeskeder til kontaktpersoner, når de udløses af en hændelse.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Duplikerede medarbejderkontroller: ændringer i grænsefladen
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over, hvor mange der blev fundet. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. For at undgå at forstyrre indtastningen af data åbner dubletformularen ikke automatisk.

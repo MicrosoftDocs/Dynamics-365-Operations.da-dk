@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896916"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528213"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Nyheder eller ændringer i Dynamics 365 Talent (2. april 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Talent.
 
@@ -55,7 +57,7 @@ I Attract og Onboard vil problemer, der bliver rapporteret af slutbrugere via fu
 Ændringer, der er beskrevet i dette afsnit, gælder for build-nummer 8.1.2216.
 
 ### <a name="platform-update-25-for-finance-and-operations"></a>Platform update 25 til Finance and Operations
-Du kan finde yderligere oplysninger om Platform update 25 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations Platform update 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+Du kan finde yderligere oplysninger om Platform update 25 til Finance and Operations under [Funktioner i prøveversionen af Dynamics 365 for Finance and Operations-platformsopdatering 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avanceret lønsikkerhed (fast og variabel)
 I mange organisationer har de ansvarlige for kompensationer og frynsegoder muligvis kun har adgang til visse kompensationsposter. Disse kan omfatte poster til ledere eller medarbejdere i bestemte områder. Denne ændring giver Personale mulighed for at administrere og vedligeholde kompensationsplaner for forskellige medarbejdergrupper i organisationen. Du kan tildele sikkerhedsroller til faste og variable planer. Disse sikkerhedsroller bestemmer adgangen til planer og hertil relaterede medarbejderdata, såsom løn eller bonusposter, således at alene de pågældende roller kan behandle kompensation for medarbejdergrupperne.
@@ -77,4 +79,4 @@ Organisationer kræver muligvis årsagskoder for specifikke orlovstyper, når me
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. Dubletformularen åbner ikke automatisk for at undgå forstyrrelser i forbindelse med indtastning af data.
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
-Med Platform update 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk sender mailbeskeder til kontakter, når beskeder udløses af en hændelse. 
+Med platformsopdatering 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender mailbeskeder til kontaktpersoner, når de udløses af en hændelse. 

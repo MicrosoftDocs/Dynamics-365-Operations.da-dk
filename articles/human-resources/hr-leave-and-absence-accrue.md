@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712153"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417864"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodiser orlovs- og fraværsplaner
 
@@ -51,7 +51,7 @@ Du kan periodisere orlov og fravær Dynamics 365 Human Resources for flere medar
 
 ## <a name="accrue-leave-and-absence-for-an-employee"></a>Periodisere orlov og fravær for en medarbejder
 
-1. Vælg **Orlov**i medarbejderens post.
+1. Vælg **Orlov** i medarbejderens post.
 
 2. Vælg **Periodiser orlovs- og fraværsplaner**.
 
@@ -87,7 +87,7 @@ Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Perio
 
 ## <a name="delete-leave-and-absence-accruals-for-a-single-employee"></a>Slette periodiseringer af orlov og fravær for en enkelt medarbejder
 
-1. Vælg **Orlov**i medarbejderens post.
+1. Vælg **Orlov** i medarbejderens post.
 
 2. Vælg **Slet periodiseringer af orlovs- og fraværsplaner**.
 

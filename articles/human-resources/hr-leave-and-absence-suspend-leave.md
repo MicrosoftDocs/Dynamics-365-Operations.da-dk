@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0a65eed44de41ae35bf241166ee22dd280ce5d7a
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712442"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417858"
 ---
 # <a name="suspend-leave"></a>Stop orlov midlertidigt
 
@@ -31,7 +31,7 @@ Du kan suspendere en medarbejders orlov for at stoppe med at lade periodiseringe
 
 ## <a name="suspend-leave-and-absence-for-an-employee"></a>Suspendere orlov og fravær for en medarbejder
 
-1. Vælg **Orlov**i medarbejderens post.
+1. Vælg **Orlov** i medarbejderens post.
 
 2. Vælg **Suspender orlov**.
 

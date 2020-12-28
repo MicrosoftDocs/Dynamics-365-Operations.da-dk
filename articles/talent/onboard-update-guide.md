@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460733"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Opdatere onboardingguider i Dynamics 365 Talent - Onboard
+# <a name="update-onboarding-guides"></a>Opdatere onboardingguider
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Hvis du skal foretage ændringer af onboardingguider i Microsoft Dynamics 365 Ta
 2. Vælg den guide, du vil redigere.
 3. Foretag alle de ønskede ændringer, og vælg derefter knappen **Gem** (disksymbolet).
 
-    ![[Lagring af ændringer til en onboardingguide](./media/onboard-save.png)](./media/onboard-save.png)
+    ![[Gemme ændringer i en onboardingguide](./media/onboard-save.png)](./media/onboard-save.png)
 
 Onboard vil automatisk tilsende den nyansatte en mail, der angiver, hvad ændringerne er. For nem identifikation vises der et rødt **Nyt**-mærke ved siden af hver ændring.
 

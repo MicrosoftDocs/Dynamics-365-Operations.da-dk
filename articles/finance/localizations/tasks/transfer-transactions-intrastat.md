@@ -17,11 +17,11 @@ ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9c47412c8ae68b396de41f04731b841f592dcba9
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830138"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407641"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Overføre posteringer til Intrastat
 
@@ -86,7 +86,7 @@ Denne procedure viser dig, hvordan du kan konfigurere Intrastat-parametre og ove
 14. Klik på **Ny**.
 15. Indtast eller vælg en værdi i feltet **Land/område**. Vælg for eksempel værdien **FRA**.  
 16. I feltet **Intrastat-kode** skal du angive ISO-koden for landet/området.  Skriv for eksempel **FR**.  
-17. Vælg **EU**i feltet **Lande-/områdetype**.
+17. Vælg **EU** i feltet **Lande-/områdetype**.
 18. Klik på fanen Nummerserier.
 
 ## <a name="set-up-modes-of-delivery-and-rules-for-including-charges-in-intrastat"></a>Konfigurere leveringsmåder og regler for at medtage gebyrer i Intrastat

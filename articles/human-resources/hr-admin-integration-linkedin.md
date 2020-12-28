@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056091"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527879"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrere med LinkedIn Talent Hub
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) er en platform med et ansøgersporingssystem (ATS). Her kan du rekruttere, administrere og ansætte medarbejdere på ét sted. Ved at integrere Microsoft Dynamics 365 Human Resources med LinkedIn Talent Hub kan du nemt oprette medarbejderposter i Human Resources for ansøgere, der er blevet ansat i en stilling.
 
@@ -45,7 +47,7 @@ En systemadministrator skal fuldføre installationsopgaverne, for at integration
 
 4. Vælg **Autoriser** for Microsoft Dynamics 365 Human Resources-integrationen.
 
-5. Vælg det miljø, som du vil knytte LinkedIn Talent Hub til, på siden **Dynamics 365 Human Resources** , og vælg derefter **Link**.
+5. Vælg det miljø, som du vil knytte LinkedIn Talent Hub til, på siden **Dynamics 365 Human Resources**, og vælg derefter **Link**.
 
     ![LinkedIn Talent Hub-onboarding](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
@@ -60,11 +62,11 @@ En systemadministrator skal fuldføre installationsopgaverne, for at integration
 
 3. Vælg **Indstillinger**.
 
-4. Udvid noden **Brugere + tilladelser** , og vælg **Sikkerhedsroller**.
+4. Udvid noden **Brugere + tilladelser**, og vælg **Sikkerhedsroller**.
 
 5. Vælg **Ny rolle** på værktøjslinjen på siden **Sikkerhedsroller**.
 
-6. Angiv et navn til rollen under fanen **Detaljer** , f.eks. **LinkedIn Talent Hub HRIS-integration**.
+6. Angiv et navn til rollen under fanen **Detaljer**, f.eks. **LinkedIn Talent Hub HRIS-integration**.
 
 7. Vælg tilladelse til at **Læse** på organisationsniveau under fanen **Tilpasning** for følgende enheder:
 
@@ -84,7 +86,7 @@ Der skal oprettes en applikationsbruger, hvis LinkedIn Talent Hub-adapteren skal
 
 3. Vælg **Indstillinger**.
 
-4. Udvid noden **Brugere + tilladelser** , og vælg **Brugere**.
+4. Udvid noden **Brugere + tilladelser**, og vælg **Brugere**.
 
 5. Vælg **Administrer brugere i Dynamics 365**.
 
@@ -99,7 +101,7 @@ Der skal oprettes en applikationsbruger, hvis LinkedIn Talent Hub-adapteren skal
     1. Ret værdien i feltet **Brugertype** til **Applikationsbruger**.
     2. Indstil feltet **Brugernavn** til **DYNAMICS365 HR LinkedIn HRIS-integration**.
     3. Indstil feltet **Program-id** til **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    4. Angiv en værdi i felterne **Fornavn** , **Efternavn** og **Primær mailadresse**.
+    4. Angiv en værdi i felterne **Fornavn**, **Efternavn** og **Primær mailadresse**.
     5. Vælg **Gem \& Luk** på værktøjslinjen.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Tildele en sikkerhedsrolle til den nye bruger
@@ -121,9 +123,9 @@ Når du har gemt og lukket den nye applikationsbruger i forrige afsnit, kommer d
 1. I Dynamics 365 Human Resources skal du åbne siden **Azure Active Directory-applikationer**.
 2. Føj en ny post til listen, og indstil følgende felter:
 
-    - **Klient-id** : Angiv **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    - **Navn** : Angiv navnet på den Power Apps-sikkerhedsrolle, du oprettede tidligere, f.eks. **LinkedIn Talent Hub HRIS-integration**.
-    - **Bruger-id** : Vælg en bruger, der har rettigheder til at skrive data i Personalestyring.
+    - **Klient-id**: Angiv **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
+    - **Navn**: Angiv navnet på den Power Apps-sikkerhedsrolle, du oprettede tidligere, f.eks. **LinkedIn Talent Hub HRIS-integration**.
+    - **Bruger-id**: Vælg en bruger, der har rettigheder til at skrive data i Personalestyring.
 
 ### <a name="create-the-entity-in-common-data-service"></a>Oprette enheden i Common Data Service
 
@@ -150,11 +152,11 @@ Når en ansøger har gennemgået rekrutteringsprocessen og er blevet ansat, kan 
 
 2. Vælg en kandidatpost.
 
-3. Vælg **Skift stadie** , og vælg derefter **Ansat**.
+3. Vælg **Skift stadie**, og vælg derefter **Ansat**.
 
-4. Vælg **Eksportér til HRIS** i ellipsemenuen ( **...** ) for kandidaten.
+4. Vælg **Eksportér til HRIS** i ellipsemenuen (**...**) for kandidaten.
 
-5. Angiv de oplysninger, der skal eksporteres, i ruden **Eksportér til HRIS** :
+5. Angiv de oplysninger, der skal eksporteres, i ruden **Eksportér til HRIS**:
 
     - I feltet **HRIS-udbyder** skal du vælge **Microsoft Dynamics 365 Human Resources**.
     - Vælg en startdato for den nye medarbejder i feltet **Startdato**.
@@ -172,7 +174,7 @@ Kandidatposter, der eksporteres fra LinkedIn Talent Hub til Human Resources, vis
 
 2. Vælg **Ansættelse** for den valgte kandidat i sektionen **Kandidater, der skal ansættes**.
 
-3. Gennemse posten i dialogboksen **Ansæt ny arbejder** , og tilføj evt. påkrævede oplysninger. Du kan også vælge det stillingsnummer, som kandidaten er ansat til.
+3. Gennemse posten i dialogboksen **Ansæt ny arbejder**, og tilføj evt. påkrævede oplysninger. Du kan også vælge det stillingsnummer, som kandidaten er ansat til.
 
 Når de nødvendige oplysninger er angivet, kan du fortsætte med dine standardprocesser til oprettelse af medarbejderposter og onboarding af medarbejdere.
 

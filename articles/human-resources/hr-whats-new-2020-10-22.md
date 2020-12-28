@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5c66d8695ee0ff41e81c699a5d5a37075470059
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107530"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529976"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 22. oktober 2020
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources. Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -56,14 +58,14 @@ Følgende fejlrettelser er inkluderet i denne version.
 | --- | --- | --- |
 | 437922 | Import af FMLA-timer ved hjælp af DMF-enheden resulterer i en skrivebeskyttelsesfejl. | Brug af FMLA-timerenheden til import af timer, der er knyttet til en FMLA-sag, mislykkedes. Vi har tilføjet logik for at sikre, at de importerede timer ikke overstiger de timer, der er tilbage i sagen. |
 | 512019 | Forkert beløb for **Sidste overførsel**. | Hvis du på siden **Fritid** ændrede **Pr. dato** til den første dag i næste regnskabsperiode, blev der vist et forkert beløb i **Sidste overførsel** for typen **Årlig orlov**. Det korrekte beløb vises nu. |
-| 458639 | Enheden **Arbejderkontakter** understøtter ikke ændringssporingstilstand. | Vi har opdateret enheden **Arbejderkontakter** , så du kan bruge den til dine egne database-scenarier (BYOD).|
+| 458639 | Enheden **Arbejderkontakter** understøtter ikke ændringssporingstilstand. | Vi har opdateret enheden **Arbejderkontakter**, så du kan bruge den til dine egne database-scenarier (BYOD).|
 | 505347 | Uddannelsesledere har kunnet sende en orlovsanmodning for en medarbejder, når den strømlinede arbejderfunktion var aktiveret. | Andre roller end personalemedarbejder og personalechef har ikke tilladelse til at sende time0off-anmodninger for medarbejdere. |
 | 513490 | Logføring af frynsegodeadministration: Tilføj logføring for planer uden disponeringsindstillinger. | Vi har aktiveret logføringsresultater for **Plan uden disponeringsindstillinger**. De vises nu i tabellen **Procesresultater** og sorteres korrekt, så de vises øverst. |
-| 517021 | Der kan ikke vælges flere planer med den samme **Plantype** -kode, hvis **Plantype** har én tilmelding pr. type. | Vi har ændret begrænsningerne for valg af planer, hvor kun én tilmelding er tilladt. Begrænsningerne er nu på **Kode for plantype** -niveau i stedet for **Plantype**. Denne ændring tillader planer som HSA og FSA, som har samme type, men du kan give dem en særskilt **Kode for plantype**. På denne måde kan du vælge dem begge til den samme tilmeldingsperiode. |
-| 444791 | Kompensation vises ikke i Employee Self-Service, når **Begrænset adgang** er slået til i kompensationsplanen. | I **Kompensation** -kortet i Employee Self-Service vises det aktuelle kompensationsbeløb og stigningsprocenten som "0", hvis medarbejderen er tilmeldt en plan, hvor **Begrænset adgang** er aktiveret og tildelt til bestemte roller. Vi har løst dette problem, så medarbejderen og lederen altid kan se kompensationsdetaljer for sig selv og deres direkte rapporter. |
+| 517021 | Der kan ikke vælges flere planer med den samme **Plantype**-kode, hvis **Plantype** har én tilmelding pr. type. | Vi har ændret begrænsningerne for valg af planer, hvor kun én tilmelding er tilladt. Begrænsningerne er nu på **Kode for plantype**-niveau i stedet for **Plantype**. Denne ændring tillader planer som HSA og FSA, som har samme type, men du kan give dem en særskilt **Kode for plantype**. På denne måde kan du vælge dem begge til den samme tilmeldingsperiode. |
+| 444791 | Kompensation vises ikke i Employee Self-Service, når **Begrænset adgang** er slået til i kompensationsplanen. | I **Kompensation**-kortet i Employee Self-Service vises det aktuelle kompensationsbeløb og stigningsprocenten som "0", hvis medarbejderen er tilmeldt en plan, hvor **Begrænset adgang** er aktiveret og tildelt til bestemte roller. Vi har løst dette problem, så medarbejderen og lederen altid kan se kompensationsdetaljer for sig selv og deres direkte rapporter. |
 | 457542 | Opdatering af kursusoplysninger, når kurset er afsluttet, opdaterer ikke de samme oplysninger for den medarbejder, der har udført kurset. | Medarbejderoplysningerne opdateres nu korrekt, når du ændrer kursusdetaljer, efter at et kursus er afsluttet og genåbnet. |
 | 515342 | Kan ikke indsætte data via **CDSLeaveRequestDetailEntity**. Firmaet blev ikke fundet eller findes ikke. | Du kan nu bruge **CDSLeaveRequestDetailEntity** til at indsætte data. |
-| 514743 | Fejl i **E-mailparameter** -formular ved brug af Microsoft Exchange. | Meddelelsen "Filer eller assembly kan ikke indlæses..." vises på siden **E-mailparametre** , når e-mailudbyderen er indstillet til **Exchange**. Denne rettelse bevirker også, at siden **E-mailparametre** kan indlæses og gemmes som forventet. |
+| 514743 | Fejl i **E-mailparameter**-formular ved brug af Microsoft Exchange. | Meddelelsen "Filer eller assembly kan ikke indlæses..." vises på siden **E-mailparametre**, når e-mailudbyderen er indstillet til **Exchange**. Denne rettelse bevirker også, at siden **E-mailparametre** kan indlæses og gemmes som forventet. |
 
 
 ## <a name="in-preview"></a>Som eksempel

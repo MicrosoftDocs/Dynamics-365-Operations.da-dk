@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897689"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529156"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Nyheder eller ændringer i Dynamics 365 Talent - Core HR (6. december 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Build 8.1.2071**
 
@@ -48,13 +50,13 @@ Tilpasningsværktøjslinjen har fået nyt udseende i Platform update 22 til Fina
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimeret "er en af" filtreringsoplevelserne
 
-"Er en af"-filtreringsoperatoren er tilgængelig for de fleste felter, når filterruden og gitteroverskrifternes rullelister bruges. Med denne operator kan en bruger filtrere et felt, baseret på flere værdier. Der findes en ny og forbedret brugeroplevelse af operatoren "er en af" i Platform update 22 til Finance and Operations. Du kan finde flere oplysninger i [Den optimerede filtreringsoplevelse "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+"Er en af"-filtreringsoperatoren er tilgængelig for de fleste felter, når filterruden og gitteroverskrifternes rullelister bruges. Med denne operator kan en bruger filtrere et felt, baseret på flere værdier. Der findes en ny og forbedret brugeroplevelse af operatoren "er en af" i platformsopdatering 22 til Finance and Operations. Du kan finde flere oplysninger i [Den optimerede filtreringsoplevelse "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Indsætte lister fra Excel i filterfelterne med operatoren "er en af"
 
 Brugere kan have en liste over værdier i Excel, som de vil bruge til at filtrere data i Talent, for bestemte opgaver. F.eks. kan en bruger i Personale have fundet en gruppe medarbejdere fra en rapport, der kræver yderligere undersøgelser i systemet, og det ville være ideelt for denne bruger at kunne kopiere listen direkte fra Excel til et filterfelt i Talent.
 
-Fra og med Platform update 22 til Finance and Operations genkender operatoren "er en af" i filterruden og gitterkolonnefiltreringen nu lister, der er kopieret fra Excel, så de kan indsættes direkte i et filtreringsfelt. Dette omfatter en samling af værdier, der er kopieret fra forskellige rækker og kolonner i Excel. Du kan finde flere oplysninger om denne funktion i [Indsætte lister fra Excel i filterfelterne med operatoren "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Fra og med platformsopdatering 22 til Finance and Operations genkender operatoren "er en af" i filterruden og gitterkolonnefiltreringen nu lister, der er kopieret fra Excel, så de kan indsættes direkte i et filtreringsfelt. Dette omfatter en samling af værdier, der er kopieret fra forskellige rækker og kolonner i Excel. Du kan finde flere oplysninger om denne funktion i [Indsætte lister fra Excel i filterfelterne med operatoren "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Som eksempel
 
@@ -133,7 +135,7 @@ I opgaven Arbejdere til arbejde skal følgende tilknytninger opdateres.
 
 Transformeringen af feltet Køn skal også opdateres. Vælg tilknytningstypen **fn** (funktion) for Køn, og opdater følgende værditilknytninger.
 
-| Common Data Service-værdi | Finance and Operations-værdi | | ------------|------------------ -----------| | 75440000    | Mand                         | | 75440001    | Kvinde                       | | 75440002    | Ingen                         | | 75440003    | Ikke-specifik                  |
+| Common Data Service Værdi   | Finance and Operations værdi | | ------------|------------------ -----------| | 75440000    | Mand                         | | 75440001    | Kvinde                       | | 75440002    | Ingen                         | | 75440003    | Ikke-specifik                  |
 
 De opdaterede tilknytninger skal se ud som dette.
 

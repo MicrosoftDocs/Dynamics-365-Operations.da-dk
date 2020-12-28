@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e88e9c4aa7824affcd1f603f246b208d8a4ecd9a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183533"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407712"
 ---
 # <a name="invoice-issue-deadline"></a>Deadline for fakturaudstedelse
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183533"
 
 Denne artikel forklarer, hvordan du konfigurerer parametre for at beregne forfaldsdatoerne for udstedelse af debitorfakturaer og kreditorfakturaer i Den Europæiske Union (EU).
 
-Den Europæiske Union (EU) direktiv 45/2010 og andre direktiver kræver, at forsendelser inden for EU (intra-EU-leverancer) skal faktureres på eller før den femtende dag i måneden, efter at leveringen har fundet sted. Hvert EU-land kan samtidig have forskellige faktureringsfrister for nationale leveringer. Funktionaliteten til forfaldsdato for fakturaudstedelse giver dig mulighed på at justere datointervallet efter type land/område. For alle forsendelse til og fra et land/område af en bestemt type til beregnes derefter forfaldsdato for fakturaudstedelse med brug af regler, der er angivet i det specificerede datointerval. Desuden kan du få alle følgesedler, der har en bestemt forfaldsdato for fakturaudstedelse, filtrere efter forfaldsdato for fakturaudstedelse under periodisk salgsfakturering og kontrollere udstedelsesdato for salgsfakturering under fakturabogføring. Du kan oprette en datointervalkode og derefter oprette en beregningsregel for fakturaudstedelsesdatoer ved at tildele datointervalkoden til en lande-/områdetype. Beregningsreglen bruges til at beregne forfaldsdatoen for udstedelse af fakturaer for følgende transaktioner:
+Den Europæiske Union (EU) direktiv 45/2010 og andre direktiver kræver, at forsendelser inden for EU (intra-EU-leverancer) skal faktureres på eller før den femtende dag i måneden, efter at leveringen har fundet sted. Hvert EU-land/område kan samtidig have forskellige faktureringsfrister for nationale leveringer. Funktionaliteten til forfaldsdato for fakturaudstedelse giver dig mulighed på at justere datointervallet efter type land/område. For alle forsendelse til og fra et land/område af en bestemt type til beregnes derefter forfaldsdato for fakturaudstedelse med brug af regler, der er angivet i det specificerede datointerval. Desuden kan du få alle følgesedler, der har en bestemt forfaldsdato for fakturaudstedelse, filtrere efter forfaldsdato for fakturaudstedelse under periodisk salgsfakturering og kontrollere udstedelsesdato for salgsfakturering under fakturabogføring. Du kan oprette en datointervalkode og derefter oprette en beregningsregel for fakturaudstedelsesdatoer ved at tildele datointervalkoden til en land/område-type. Beregningsreglen bruges til at beregne forfaldsdatoen for udstedelse af fakturaer for følgende transaktioner:
 
 -   Intra-EU-leverancer
 -   Indenlandske forsendelser inden for en EU-medlemsstat
@@ -43,10 +43,10 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du kan 
 | Kategori            | Forudsætning                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Land/område      | Den primære adresse for den juridiske skal enhed være i et EU-medlemsland.                                                                                                                                                                                                                                                                                                                    |
-| Relaterede opsætningsopgaver | På siden **Datointervaller** skal du definere et datointerval, der bruges til at beregne forfaldsdatoen for fakturaudstedelse. (Klik på **Finans** &gt; **Opsætning Finans** &gt; **Datointervaller**). På siden **Udenrigshandelsparametre** skal du konfigurere egenskaber for udenrigshandel for forskellige lande. (Klik på **Moms** &gt; **Opsætning** &gt; **Udenrigshandel** &gt; **Udenrigshandelsparametre**). |
+| Relaterede opsætningsopgaver | På siden **Datointervaller** skal du definere et datointerval, der bruges til at beregne forfaldsdatoen for fakturaudstedelse. (Klik på **Finans** &gt; **Opsætning Finans** &gt; **Datointervaller**). På siden **Udenrigshandelsparametre** skal du konfigurere egenskaber for udenrigshandel for forskellige lande/områder. (Klik på **Moms** &gt; **Opsætning** &gt; **Udenrigshandel** &gt; **Udenrigshandelsparametre**). |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Regel for beregning af forfaldsdato for fakturaudstedelse
-Brug siden **Konfigurer beregning af forfaldsdato for fakturaudstedelse** til at konfigurere en beregningsregel for forfaldsdato for fakturaudstedelse ved at tildele en datointervalkode til en lande-/områdetype.
+Brug siden **Konfigurer beregning af forfaldsdato for fakturaudstedelse** til at konfigurere en beregningsregel for forfaldsdato for fakturaudstedelse ved at tildele en datointervalkode til en land/område-type.
 
 ## <a name="date-control-parameters-for-customer-invoices-and-credit-notes"></a>Datokontrolparametre for debitorfakturaer og kreditnotaer
 Du kan også konfigurere datokontrolparametre for at sikre, at debitorfakturaer og kreditnotaer for debitorposteringer genereres inden for det angivne tidsrum, når leveringen har fundet sted. Du kan finde disse parametre i området **Datokontrol for faktura** på siden **Debitorparametre**.

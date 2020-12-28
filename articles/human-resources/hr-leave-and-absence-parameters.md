@@ -2,8 +2,8 @@
 title: Konfigurere parametre for orlov og fravær
 description: Definer personaleparametre for orlov og fravær i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712370"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417895"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere parametre for orlov og fravær
 
@@ -47,6 +47,19 @@ Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er de
 5. Under fanen **Medarbejderselvbetjening** skal du angive, om ledere kan angive orlovs- og fraværsanmodninger på vegne af deres medarbejdere.
 
 7. Vælg **Gem**.
+
+>[!IMPORTANT]
+>Visning af orlov og fravær på tværs af firmaer er i øjeblikket i prøveversion. Du skal aktivere det i dit **Sandkasse**-miljøet for at få vist indstillingen for orlov og fravær. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>Få vist og skift delte parametre for personale
+
+1. Vælg fanen **Links** på siden **Personalestyring**.
+
+2. Vælg **Delte parametre for personale** under **Konfiguration**.
+
+3. Vælg **Ja** under fanen **Forhåndsadgang** i **Visning af orlov på tværs af firmaet**, hvis du vil have, at orlov skal vises på tværs af firmaet.
+
+4. Vælg **Gem**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Få vist og ændre parametre for orlov og fravær
 

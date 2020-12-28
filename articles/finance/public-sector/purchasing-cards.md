@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
 ms.openlocfilehash: b057f5a66f7a52f3d2236d3a5c9273a5c3a926dd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978248"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407643"
 ---
 # <a name="purchasing-cards"></a>Indkøbskort
 
