@@ -1,0 +1,73 @@
+---
+title: Dele indhold med andre bidragydere i Dynamics 365 Talent - Onboard
+description: I dette emne forklares det, hvordan du deler onboardingguider og -skabeloner med andre bidragydere i appen Microsoft Dynamics 365 Talent - Onboard.
+author: andreabichsel
+manager: ''
+ms.date: 05/20/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Talent
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2019-05-06
+ms.dyn365.ops.version: Talent
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460734"
+---
+# <a name="share-content-with-other-contributors"></a><span data-ttu-id="eb86a-103">Dele indhold med andre bidragydere</span><span class="sxs-lookup"><span data-stu-id="eb86a-103">Share content with other contributors</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="eb86a-104">Microsoft Dynamics 365 Talent: Onboard giver dig mulighed for at dele onboardingguider og -skabeloner med andre bidragydere, så de kan gennemgå dokumenterne og foretage ændringer.</span><span class="sxs-lookup"><span data-stu-id="eb86a-104">Microsoft Dynamics 365 Talent: Onboard lets you share onboarding guides and templates with other contributors so that they can review the documents and make changes.</span></span>
+
+## <a name="share-an-onboarding-guide-with-other-contributors"></a><span data-ttu-id="eb86a-105">Dele en onboardingguide med andre bidragydere</span><span class="sxs-lookup"><span data-stu-id="eb86a-105">Share an onboarding guide with other contributors</span></span>
+
+1. <span data-ttu-id="eb86a-106">Vælg **Guider** i menuen til venstre, og vælg derefter den guide, du vil dele.</span><span class="sxs-lookup"><span data-stu-id="eb86a-106">On the left menu, select **Guides**, and then select the guide that you want to share.</span></span>
+2. <span data-ttu-id="eb86a-107">Vælg knappen **Mere** (tre lodrette prikker) i øverste højre hjørne af siden, og vælg dernæst **Del**.</span><span class="sxs-lookup"><span data-stu-id="eb86a-107">Select the **More** button (the three vertical dots) in the upper-right corner of the page, and then select **Share**.</span></span>
+
+    ![[<span data-ttu-id="eb86a-108">Deling af en onboardingguide med andre bidragydere</span><span class="sxs-lookup"><span data-stu-id="eb86a-108">Sharing an onboarding guide with other contributors</span></span>](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
+
+3. <span data-ttu-id="eb86a-109">Under **Del med** kan du angive indstillingen **Kan disse personer foretage ændringer?** til **Til**, hvis modtagerne skal kunne revidere guiden.</span><span class="sxs-lookup"><span data-stu-id="eb86a-109">Under **Share with**, if recipients should be able to revise the guide, set the **Can these people make edits?** option to **On**.</span></span> <span data-ttu-id="eb86a-110">Hvis modtagerne skal have besked via mail om, at du har delt guiden med dem, kan du angive indstillingen **Send mailbesked til modtagere** til **Til**.</span><span class="sxs-lookup"><span data-stu-id="eb86a-110">If recipients should be notified by email that you've shared the guide with them, set the **Send email notification to recipients** option to **On**.</span></span>
+
+    ![[<span data-ttu-id="eb86a-111">Indstille adgangs- og mailpræferencer for en onboardingguide</span><span class="sxs-lookup"><span data-stu-id="eb86a-111">Setting access and email preferences for an onboarding guide</span></span>](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+
+4. <span data-ttu-id="eb86a-112">Indtast et navn eller en mailadresse, og vælg den ønskede modtager på rullelisten.</span><span class="sxs-lookup"><span data-stu-id="eb86a-112">Enter a name or email address, and select the desired recipient in the drop-down list.</span></span>
+5. <span data-ttu-id="eb86a-113">Under fanen **Administrer adgang** kan du gennemse eller ændre, hvad modtagerne kan gøre med guiden.</span><span class="sxs-lookup"><span data-stu-id="eb86a-113">On the **Manage access** tab, you can review or change what recipients can do with the guide.</span></span> <span data-ttu-id="eb86a-114">Hvis du vil ændre en modtagers adgang, skal du på rullelisten ud for modtagerens navn vælge **Kan vise**, **Kan redigere** eller **Fjern**, når det er relevant.</span><span class="sxs-lookup"><span data-stu-id="eb86a-114">To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.</span></span>
+6. <span data-ttu-id="eb86a-115">Når du er færdig med at tilføje eller ændre modtagere, skal du vælge **Opdater**.</span><span class="sxs-lookup"><span data-stu-id="eb86a-115">When you've finished adding or modifying recipients, select **Update**.</span></span>
+
+## <a name="share-an-onboarding-template-with-other-contributors"></a><span data-ttu-id="eb86a-116">Dele en onboardingskabelon med andre bidragydere</span><span class="sxs-lookup"><span data-stu-id="eb86a-116">Share an onboarding template with other contributors</span></span>
+
+1. <span data-ttu-id="eb86a-117">Vælg **Skabeloner** i menuen til venstre.</span><span class="sxs-lookup"><span data-stu-id="eb86a-117">On the left menu, select **Templates**.</span></span>
+2. <span data-ttu-id="eb86a-118">Under **Mine skabeloner** skal du vælge knappen **Mere** (ellipsen \[**...**\]) i øverste højre hjørne af den skabelon, du vil dele, og derefter vælge **Del**.</span><span class="sxs-lookup"><span data-stu-id="eb86a-118">Under **My templates**, select the **More** button (the ellipsis \[**...**\]) in the upper-right corner of the template that you want to share, and then select **Share**.</span></span>
+
+    <span data-ttu-id="eb86a-119">[![Deling af en skabelon med andre bidragydere](./media/onboard-share-template.png)](./media/onboard-share-template.png)</span><span class="sxs-lookup"><span data-stu-id="eb86a-119">[![Sharing a template with other contributors](./media/onboard-share-template.png)](./media/onboard-share-template.png)</span></span>
+
+3. <span data-ttu-id="eb86a-120">Under **Modtager** kan du angive indstillingen **Kan disse personer foretage ændringer?** til **Til**, hvis modtagerne skal kunne revidere skabelonen.</span><span class="sxs-lookup"><span data-stu-id="eb86a-120">Under **Recipient**, if recipients should be able to revise the template, set the **Can these people make edits?** option to **On**.</span></span> <span data-ttu-id="eb86a-121">Hvis modtagerne skal have besked via mail om, at du har delt skabelonen med dem, kan du angive indstillingen **Send mailbesked til modtagere** til **Til**.</span><span class="sxs-lookup"><span data-stu-id="eb86a-121">If recipients should be notified by email that you've shared the template with them, set the **Send email notification to recipients** option to **On**.</span></span>
+
+    <span data-ttu-id="eb86a-122">[![Opsætning af adgangs- og e-mail-indstillinger for en skabelon](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)</span><span class="sxs-lookup"><span data-stu-id="eb86a-122">[![Setting access and email preferences for a template](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)</span></span>
+
+4. <span data-ttu-id="eb86a-123">Indtast et navn eller en mailadresse, og vælg den ønskede modtager på rullelisten.</span><span class="sxs-lookup"><span data-stu-id="eb86a-123">Enter a name or email address, and select the desired recipient in the drop-down list.</span></span>
+5. <span data-ttu-id="eb86a-124">Under fanen **Administrer adgang** kan du gennemse eller ændre, hvad modtagerne kan gøre med skabelonen.</span><span class="sxs-lookup"><span data-stu-id="eb86a-124">On the **Manage access** tab, you can review or change what recipients can do with the template.</span></span> <span data-ttu-id="eb86a-125">Hvis du vil ændre en modtagers adgang, skal du på rullelisten ud for modtagerens navn vælge **Kan vise**, **Kan redigere** eller **Fjern**, når det er relevant.</span><span class="sxs-lookup"><span data-stu-id="eb86a-125">To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.</span></span>
+6. <span data-ttu-id="eb86a-126">Når du er færdig med at tilføje eller ændre modtagere, skal du vælge **Opdater**.</span><span class="sxs-lookup"><span data-stu-id="eb86a-126">When you've finished adding or modifying recipients, select **Update**.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="eb86a-127">Næste trin</span><span class="sxs-lookup"><span data-stu-id="eb86a-127">Next steps</span></span>
+
+- [<span data-ttu-id="eb86a-128">Dele indhold med andre bidragydere</span><span class="sxs-lookup"><span data-stu-id="eb86a-128">Share content with other contributors</span></span>](./onboard-share-template.md)
+- [<span data-ttu-id="eb86a-129">Se status for opgaver og onboarding af medarbejdere</span><span class="sxs-lookup"><span data-stu-id="eb86a-129">View the status of tasks and onboarding employees</span></span>](./onboard-view-status.md)
+- [<span data-ttu-id="eb86a-130">Oprette ansættelsesteam i Onboard</span><span class="sxs-lookup"><span data-stu-id="eb86a-130">Create hiring teams in Onboard</span></span>](./onboard-create-team.md)
+
+### <a name="see-also"></a><span data-ttu-id="eb86a-131">Se også</span><span class="sxs-lookup"><span data-stu-id="eb86a-131">See also</span></span>
+
+- [<span data-ttu-id="eb86a-132">Prøve eller købe appen Onboard</span><span class="sxs-lookup"><span data-stu-id="eb86a-132">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
+- [<span data-ttu-id="eb86a-133">Nyheder eller ændringer i Dynamics 365 Talent</span><span class="sxs-lookup"><span data-stu-id="eb86a-133">What's new or changed in Dynamics 365 Talent</span></span>](./whats-new.md)
+- [<span data-ttu-id="eb86a-134">Frigivelsesplaner</span><span class="sxs-lookup"><span data-stu-id="eb86a-134">Release plans</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
+- [<span data-ttu-id="eb86a-135">Få support til Microsoft Dynamics 365 Talent</span><span class="sxs-lookup"><span data-stu-id="eb86a-135">Get support for Microsoft Dynamics 365 Talent</span></span>](./talent-support.md)
