@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411241"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411083"
 ---
 # <a name="work-with-css-override-files"></a>Arbejd med CSS-tilsidesættelsesfiler
 
@@ -68,7 +68,7 @@ Følg disse trin for at overføre en CSS-fil til dit websted i Commerce.
 
 Følg disse trin for at få vist en CSS-tilsidesættelsesfil, før du gør den aktiv på dit aktive websted.
 
-1. I navigationsruden til venstre skal du vælge **Design**og derefter på fanen **CSS-tilsidesættelse** under **Tilgængelige CSS-tilsidesættelser** finde den CSS-fil, du vil have vist.
+1. I navigationsruden til venstre skal du vælge **Design** og derefter på fanen **CSS-tilsidesættelse** under **Tilgængelige CSS-tilsidesættelser** finde den CSS-fil, du vil have vist.
 1. Ud for CSS-filnavnet skal du vælge **Vis websted**.
 1. I dialogboksen **Vælg en URL-adresse** skal du vælge URL-adressen for det websted, hvorpå du ønsker at se den anvendte tilsidesættelse, og derefter vælge **OK**.
 1. Hvis der er flere varianter for den valgte URL-adresse, skal du vælge den ønskede variant i den viste dialogboks **Se variationer**.
@@ -84,14 +84,14 @@ Når du har set og godkendt CSS-tilsidesættelsesfilen, kan du aktivere den på 
 
 Følg disse trin for at aktivere en CSS-tilsidesættelsesfil.
 
-1. I navigationsruden til venstre skal du vælge **Design**og derefter på fanen **CSS-tilsidesættelse** under **Tilgængelige CSS-tilsidesættelser** finde den CSS-fil, du vil aktivere.
+1. I navigationsruden til venstre skal du vælge **Design** og derefter på fanen **CSS-tilsidesættelse** under **Tilgængelige CSS-tilsidesættelser** finde den CSS-fil, du vil aktivere.
 1. Under CSS-filnavnet skal du vælge **Aktivér**. Tilsidesættelsesfilen bliver straks aktiveret på dit aktive websted.
 
 ## <a name="deactivate-a-css-override-file-on-your-live-site"></a>Deaktivér en CSS-tilsidesættelsesfil på dit aktive websted
 
 Følg disse trin for at deaktivere en CSS-tilsidesættelsesfil på dit websted.
 
-1. I navigationsruden til venstre skal du vælge **Design**og derefter på fanen **CSS-tilsidesættelse** under **Tilgængelige CSS-tilsidesættelser** finde den CSS-fil, du vil deaktivere.
+1. I navigationsruden til venstre skal du vælge **Design** og derefter på fanen **CSS-tilsidesættelse** under **Tilgængelige CSS-tilsidesættelser** finde den CSS-fil, du vil deaktivere.
 1. Under CSS-filnavnet skal du vælge **Deaktivér**. Tilsidesættelsesfilen bliver straks deaktiveret på dit aktive websted.
 
 > [!TIP]

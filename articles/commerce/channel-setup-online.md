@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107224"
+ms.locfileid: "4411231"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurere en onlinekanal
 
@@ -52,7 +52,7 @@ Følg disse trin for at oprette en ny onlinekanal.
 1. Vælg den relevante valuta i feltet **Valuta**.
 1. Angiv en gyldig standardkunde i feltet **Standardkunde**.
 1. Angiv et gyldigt adressekartotek i feltet **Kundeadressekartotek**.
-1. Vælg en funktionalitetsprofil i feltet **Funktionalitetsprofil** , hvis det er relevant.
+1. Vælg en funktionalitetsprofil i feltet **Funktionalitetsprofil**, hvis det er relevant.
 1. Angiv en gyldig mailbeskedprofil i feltet **Profil til e-mail-besked**.
 1. Gå til handlingsruden, og vælg **Gem**.
 
@@ -76,7 +76,7 @@ Du kan tilføje en tredjepartsbetalingsudbyder i sektionen **Betalingskonto**. D
 
 Yderligere opgaver, der kræves til konfiguration af onlinekanalen, omfatter konfiguration af betalingsmetoder, leveringsmetoder og gruppetildeling for opfyldelse.
 
-Følgende billede viser opsætningsindstillinger til **Leveringsmetoder** , **Betalingsmetoder** og **Gruppetildeling for opfyldelse** under fanen **Opsætning** .
+Følgende billede viser opsætningsindstillinger til **Leveringsmetoder**, **Betalingsmetoder** og **Gruppetildeling for opfyldelse** under fanen **Opsætning** .
 
 ![Yderligere handlinger til konfiguration af onlinekanal](media/channel-setup-online-3.png)
 
@@ -87,7 +87,7 @@ Hvis du vil oprette betalingsmetoder, skal du udføre disse trin for hver af de 
 1. Vælg fanen **Opsætning** i handlingsruden, og vælg derefter **Betalingsmetoder**.
 1. Gå til handlingsruden, og vælg **Ny**.
 1. Vælg den ønskede betalingsmetode i navigationsruden.
-1. Angiv et **Handlingsnavn** i sektionen **Generelt** , og konfigurer evt. andre ønskede indstillinger.
+1. Angiv et **Handlingsnavn** i sektionen **Generelt**, og konfigurer evt. andre ønskede indstillinger.
 1. Konfigurer eventuelle yderligere indstillinger, der kræves for betalingstypen.
 1. Gå til handlingsruden, og vælg **Gem**.
 
