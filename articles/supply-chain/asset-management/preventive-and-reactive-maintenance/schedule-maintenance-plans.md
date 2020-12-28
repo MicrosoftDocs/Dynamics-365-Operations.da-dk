@@ -1,0 +1,78 @@
+---
+title: Planlæg vedligeholdelsesplaner
+description: I dette emne beskrives tidsplaner for vedligeholdelse i Styring af aktiver.
+author: josaw1
+manager: tfehr
+ms.date: 08/27/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: df5bcd57c611ed5f77a417a28f28fca84057d734
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424741"
+---
+# <a name="schedule-maintenance-plans"></a><span data-ttu-id="47eab-103">Planlæg vedligeholdelsesplaner</span><span class="sxs-lookup"><span data-stu-id="47eab-103">Schedule maintenance plans</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+ 
+
+<span data-ttu-id="47eab-104">Forebyggende vedligeholdelsesplanlægning opretter kalenderposter for aktiver, baseret på de vedligeholdelsesplaner, der er konfigureret for aktiverne.</span><span class="sxs-lookup"><span data-stu-id="47eab-104">Preventive maintenance scheduling generates calendar entries on assets, based on the maintenance plans set up on the assets.</span></span> <span data-ttu-id="47eab-105">Du kan planlægge kalenderposter på basis af udvalgte vedligeholdelsesplaner, aktivtyper og aktiver.</span><span class="sxs-lookup"><span data-stu-id="47eab-105">You can schedule calendar entries based on selected maintenance plans, asset types, and assets.</span></span>
+
+1. <span data-ttu-id="47eab-106">Klik på **Styring af aktiver** > **Periodisk** > **Forebyggende vedligeholdelse** > **Planlægge vedligeholdelsesplaner**.</span><span class="sxs-lookup"><span data-stu-id="47eab-106">Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance plans**.</span></span>
+
+2. <span data-ttu-id="47eab-107">Du kan vælge et tidsinterval i felterne **Periode** og **Periodefrekvens**.</span><span class="sxs-lookup"><span data-stu-id="47eab-107">You can select a time interval in the **Period** and **Period frequency** fields.</span></span>
+
+>[!NOTE]
+><span data-ttu-id="47eab-108">Felterne **Periode** og **Periodefrekvens** angiver, hvor langt forud i tiden du ønsker, at der skal oprettes vedligeholdelsesplanlægningslinjer baseret på de vedligeholdelsesplaner, du har oprettet (tidsbaseret eller tællerbaseret).</span><span class="sxs-lookup"><span data-stu-id="47eab-108">The **Period** and **Period frequencey** fields indicate how far ahead in time you want maintenance schedule lines to be created, based on the maintenance plans you have created (time-based or counter-based).</span></span> <span data-ttu-id="47eab-109">I nedenstående figur oprettes vedligeholdelsesplanlægningslinjer (= arbejdsordreforslag) fra dags dato og tre måneder frem.</span><span class="sxs-lookup"><span data-stu-id="47eab-109">In the figure below, maintenance schedule lines (= work order proposals) are created from the current date and three months onwards.</span></span>
+
+3. <span data-ttu-id="47eab-110">Vælg "Ja" på til/fra-knappen **Opret automatisk, hvis det er angivet på linjen**, hvis der automatisk skal oprettes arbejdsordrer i henhold til vedligeholdelsesplanlinjen.</span><span class="sxs-lookup"><span data-stu-id="47eab-110">Select "Yes" on the **Auto create if specified in the line** toggle button if work orders should automatically be created according to the maintenance plan line.</span></span>
+
+>[!NOTE]
+><span data-ttu-id="47eab-111">Hvis denne til/fra-knap er indstillet til **ja**, og afkrydsningsfeltet til *automatisk oprettelse* også er markeret på vedligeholdelsesplanlinjer i **Vedligeholdelsesplaner**, oprettes arbejdsordrer baseret på vedligeholdelsesplanlinjerne, og der oprettes også vedligeholdelsestidsplanslinjer med status "Oprettet af arbejdsordre ".</span><span class="sxs-lookup"><span data-stu-id="47eab-111">If this toggle button is set to "Yes", *and* the **Auto create** check box is also selected on maintenance plan lines in **Maintenance plans**, work orders are created based on the maintenance plan lines, and maintenance schedule lines with status "Work order created" are also created.</span></span> <span data-ttu-id="47eab-112">Hvis der kun er valgt én indstilling (på knappen **Opret automatisk, hvis det er angivet på linjen** i denne dialogboks eller i afkrydsningsfeltet til **automatisk oprettelse** i formularen **Vedligeholdelsesplaner**), oprettes kun vedligeholdelsestidsplanslinjer med status "Oprettet".</span><span class="sxs-lookup"><span data-stu-id="47eab-112">If only one option is selected (**Auto create if specified in the line** toggle button in this dialog or **Auto create** check box in **Maintenance plans** form), only maintenance schedule lines are created with status "Created".</span></span> <span data-ttu-id="47eab-113">Hvis det er tilfældet, oprettes der ingen arbejdsordrer.</span><span class="sxs-lookup"><span data-stu-id="47eab-113">In that case, no work orders are created.</span></span>
+
+4. <span data-ttu-id="47eab-114">Det er muligt at generere kalenderposter, der er baseret på vedligeholdelsesplaner (tid eller tæller), aktiver, aktivtyper, arbejdssteder og arbejdsstedstyper.</span><span class="sxs-lookup"><span data-stu-id="47eab-114">It is possible to generate calendar entries based on maintenance plans (time or counter), assets, asset types, functional locations, and functional location types.</span></span> <span data-ttu-id="47eab-115">Klik på knappen **Filter**, og foretag dine valg, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="47eab-115">Click the **Filter** button and make your selections, if required.</span></span>
+
+- <span data-ttu-id="47eab-116">Med hensyn til planlægning af vedligeholdelsesplaner på arbejdssteder: Hvis du opdaterer opsætningen af aktivtyper, producenter og modeller på vedligeholdelsesplaner i **Alle arbejdssteder** >  oversigtspanelet **Vedligeholdelsesplaner**, når du har planlagt vedligeholdelsesplaner, bliver eksisterende poster i vedligeholdelsesplanen, der er relateret til dette arbejdssted, automatisk slettet.</span><span class="sxs-lookup"><span data-stu-id="47eab-116">Regarding scheduling of maintenance plans on functional locations: If you update the setup of asset types, manufacturers, and models on maintenance plans in **All functional locations** > **Maintenance plans** FastTab after you have scheduled maintenance plans, existing maintenance schedule entries related to that functional location are automatically deleted.</span></span> <span data-ttu-id="47eab-117">Hvis du vil oprette nye kalenderposter, der svarer til den opdaterede opsætning af vedligeholdelsesplanen på arbejdsstedet, skal du køre en ny tidsplan for vedligeholdelsesplanen for dette arbejdssted.</span><span class="sxs-lookup"><span data-stu-id="47eab-117">In order to create new calendar entries, which correspond with the updated maintenance plan setup on the functional location, you must run a new maintenance plan schedule for that functional location.</span></span> <span data-ttu-id="47eab-118">Du kan finde flere oplysninger om opsætning af aktivtyper, producenter og modeller i forbindelse med arbejdssteder i [Oprette arbejdssteder](../functional-locations/create-functional-locations.md).</span><span class="sxs-lookup"><span data-stu-id="47eab-118">Read more about the setup of asset types, manufacturers, and models on functional locations in [Create functional locations](../functional-locations/create-functional-locations.md).</span></span>
+
+><span data-ttu-id="47eab-119">*Eksempel:* Du vil oprette en vedligeholdelsesplan for et bestemt arbejdssted, hvilket betyder, at alle aktiver, der er konfigureret på dette arbejdssted på et givet tidspunkt, medtages, når du planlægger vedligeholdelsesplanen.</span><span class="sxs-lookup"><span data-stu-id="47eab-119">*Example:* You want to create a maintenance plan for a specific functional location, meaning all assets set up on that functional location at any given time will be included when you schedule the maintenance plan.</span></span> <span data-ttu-id="47eab-120">I dette tilfælde skal du oprette en vedligeholdelsesplan og vælge det specifikke arbejdssted, men du må IKKE tilføje nogen aktiver i vedligeholdelsesplanen.</span><span class="sxs-lookup"><span data-stu-id="47eab-120">In that case, you create a maintenance plan and select the specific functional location, but you do NOT add any assets in the maintenance plan.</span></span> <span data-ttu-id="47eab-121">Resultatet er, at når du planlægger denne vedligeholdelsesplan, oprettes der vedligeholdelsestidsplanslinjer for alle de aktiver, der er knyttet til arbejdsstedet på det pågældende tidspunkt.</span><span class="sxs-lookup"><span data-stu-id="47eab-121">The result is that when you schedule that maintenance plan, maintenance schedule lines will be created for all the assets related to the functional location at that time.</span></span>
+
+- <span data-ttu-id="47eab-122">Hvis du foretager ændringer af aktivtyper, producenter og modeller i **Aktivtyper**, påvirker disse ændringer kun nye aktiver, der bruger den opdaterede aktivtype.</span><span class="sxs-lookup"><span data-stu-id="47eab-122">If you make changes to asset types, manufacturers and models in **Asset types**, those changes only affect new assets that use the updated asset type.</span></span> <span data-ttu-id="47eab-123">Læs mere om opsætning af aktivtype under [Aktivtyper](../setup-for-objects/object-types.md).</span><span class="sxs-lookup"><span data-stu-id="47eab-123">Read more about asset type setup in [Asset types](../setup-for-objects/object-types.md).</span></span>  
+
+5. <span data-ttu-id="47eab-124">Klik på **OK** for at starte genereringen af poster i vedligeholdelsesplanen for aktiver.</span><span class="sxs-lookup"><span data-stu-id="47eab-124">Click **OK** to start the generation of maintenance schedule entries on assets.</span></span> <span data-ttu-id="47eab-125">De genererede poster bliver vist på listesiden **Alle vedligeholdelsestidsplaner**.</span><span class="sxs-lookup"><span data-stu-id="47eab-125">The generated entries will be shown in the **All maintenance schedule** list page.</span></span> <span data-ttu-id="47eab-126">I følgende illustration vises et eksempel på dialogboksen **Planlæg vedligeholdelsesplaner**.</span><span class="sxs-lookup"><span data-stu-id="47eab-126">The following illustration shows an example of the **Schedule maintenance plans** dialog.</span></span>
+
+![Figur 1](media/09-preventive-maintenance.png)
+
+- <span data-ttu-id="47eab-128">I dialogboksen **Planlæg vedligeholdelsesplaner** kan du definere batchjob, der skal køres i oversigtspanelet **Kør i baggrunden**, så der automatisk genereres kalenderposter med jævne mellemrum.</span><span class="sxs-lookup"><span data-stu-id="47eab-128">In the **Schedule maintenance plans** dialog, you can set up batch jobs on the **Run in the background** FastTab to automatically generate calendar entries at regular intervals.</span></span>  
+- <span data-ttu-id="47eab-129">Når du planlægger en forebyggende vedligeholdelse, oprettes der ikke vedligeholdelsestidsplanslinjer med forventet startdato og -klokkeslæt før systemdatoen og -klokkeslættet.</span><span class="sxs-lookup"><span data-stu-id="47eab-129">When you schedule preventive maintenance, maintenance schedule lines with expected start date and time earlier than the system date and time will not be created.</span></span>  
+
+<span data-ttu-id="47eab-130">I figuren nedenfor vises en grafisk illustration af en tidsbaseret beregning af vedligeholdelsesplanen.</span><span class="sxs-lookup"><span data-stu-id="47eab-130">The figure below provides a graphic illustration of a time-based maintenance plan calculation.</span></span>  
+
+![Figur 2](media/10-preventive-maintenance.jpg)
+
+<span data-ttu-id="47eab-132">Vedrørende tællerbaserede vedligeholdelsesplaner: I nedenstående figurer vises to forskellige cyklusser for tællerregistrering.</span><span class="sxs-lookup"><span data-stu-id="47eab-132">Regarding counter-based maintenance plans: In the figures below, two different counter registration cycles are shown.</span></span> <span data-ttu-id="47eab-133">De er baseret på en vedligeholdelsesplan, der er konfigureret for aktivet "V0001", og det forventes, at aktivet (en bil) kører ca. 2.000 km hver måned.</span><span class="sxs-lookup"><span data-stu-id="47eab-133">They are based on a maintenance plan set up for asset "V0001", expecting the asset (a car) to run approx. 2,000 km every month.</span></span>
+
+<span data-ttu-id="47eab-134">I det første eksempel nås de forventede 2.000 km ikke hver måned.</span><span class="sxs-lookup"><span data-stu-id="47eab-134">In the first example, the expected 2,000 km are not reached every month.</span></span> <span data-ttu-id="47eab-135">Ifølge den tællerbaserede vedligeholdelsesplan er grænsen 2.000 km, hvilket betyder, at når du kører en planlægning af en vedligeholdelsesplan, skal der oprettes en vedligeholdelsestidsplanslinje, hver gang grænsen på 2.000 kilometer nås.</span><span class="sxs-lookup"><span data-stu-id="47eab-135">According to the counter-based maintenance plan, the threshold is 2,000 km, meaning when you run a maintenance plan scheduling, a maintenance schedule line should be created each time the 2,000-kilometer threshold is reached.</span></span> <span data-ttu-id="47eab-136">I eksempel 1 er der fire registreringslinjer, men 2.000 kilometergrænsen nås kun én gang.</span><span class="sxs-lookup"><span data-stu-id="47eab-136">In example 1, there are 4 registration lines, but the 2,000-kilometer threshold is only reached once.</span></span> <span data-ttu-id="47eab-137">Det betyder, at når du kører planlægning af vedligeholdelsesplaner for dette aktiv, f.eks. i en periode på tre måneder, oprettes der kun én vedligeholdelsestidsplanslinje.</span><span class="sxs-lookup"><span data-stu-id="47eab-137">This means that when you run schedule maintenance plans this asset, for example for a 3-month period, only one maintenance schedule line will be created.</span></span>
+
+<span data-ttu-id="47eab-138">I den næste figur registreres 2.000 km eller mere hver måned.</span><span class="sxs-lookup"><span data-stu-id="47eab-138">In the next figure, 2,000 km or more are registered every month.</span></span> <span data-ttu-id="47eab-139">Derfor oprettes der tre vedligeholdelseslinjer, hvis du planlægger vedligeholdelsesplaner for dette aktiv for en 3-måneders periode.</span><span class="sxs-lookup"><span data-stu-id="47eab-139">Therefore, three maintenance lines would be created if you schedule maintenance plans for this asset for a 3-month period.</span></span> 
+
+<span data-ttu-id="47eab-140">De eksempler, der beskrives her, viser, at alle de tællerregistreringer, der udføres på et aktiv, viser en tendens, der beskriver slitagen på aktivet.</span><span class="sxs-lookup"><span data-stu-id="47eab-140">The examples described here show that all counter registrations made on an asset show a trend describing wear and tear on the asset.</span></span> <span data-ttu-id="47eab-141">Denne tendens bruges som beregningsgrundlag på tidspunktet for planlægningen af vedligeholdelsesplanen.</span><span class="sxs-lookup"><span data-stu-id="47eab-141">That trend is used as calculation basis at the time of maintenance plan scheduling.</span></span>
+
+![Figur 3](media/11-preventive-maintenance.png)
+
+![Figur 4](media/12-preventive-maintenance.png)
+

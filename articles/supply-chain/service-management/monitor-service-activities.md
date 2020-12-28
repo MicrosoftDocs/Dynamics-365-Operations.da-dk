@@ -1,0 +1,62 @@
+---
+title: Overvåge serviceaktiviteter
+description: Formularen Planlægningstavle giver dig en hurtig statusoversigt over de planlagte serviceaktiviteter og værktøjer til at spore det generelle serviceordreflow i firmaet.
+author: ShylaThompson
+manager: tfehr
+ms.date: 05/04/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: SMADispatchBoard
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b364c1f19888b711626312b77335b06ef3959886
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424542"
+---
+# <a name="monitor-service-activities"></a><span data-ttu-id="535e2-103">Overvåge serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="535e2-103">Monitor service activities</span></span> 
+
+[!include [banner](../includes/banner.md)]
+
+
+<span data-ttu-id="535e2-104">Formularen **Planlægningstavle** giver dig en hurtig statusoversigt over de planlagte serviceaktiviteter og værktøjer til at spore det generelle serviceordreflow i firmaet.</span><span class="sxs-lookup"><span data-stu-id="535e2-104">The **Dispatch board** form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.</span></span>
+
+
+> [!TIP]
+> <P><span data-ttu-id="535e2-105">For at få vist detaljerne om en serviceaktivitet skal du markere den i Gantt-diagrammet øverst i formularen <STRONG>Planlægningstavle</STRONG>, højreklikke og derefter klikke på <STRONG>Oplysninger</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="535e2-105">To view details about a service activity, select it in the Gantt chart at the top of the <STRONG>Dispatch board</STRONG> form, right-click, and then click <STRONG>Information</STRONG>.</span></span></P>
+
+
+<span data-ttu-id="535e2-106">Ved hjælp af værktøjerne i denne form kan du sortere serviceordrer efter dato, prioritet eller type af serviceaktivitet, få vist de prioritetsniveauer, der er tildelt serviceordrer, og gennemgå de aktiviteter, der er tildelt de enkelte serviceordrer.</span><span class="sxs-lookup"><span data-stu-id="535e2-106">By using the tools in this form, you can sort service orders by date, priority, or type of service activity, view the priority levels that are assigned to service orders, and review which activities are assigned to individual service orders.</span></span>
+
+<span data-ttu-id="535e2-107">Hvis du skal ændre fordelingen af serviceaktiviteter, kan du flytte den grafiske repræsentation af en serviceaktivitet for at tildele den til en anden medarbejder eller en anden dato og tid.</span><span class="sxs-lookup"><span data-stu-id="535e2-107">If you must redistribute service activity assignments, you can move the graphical representation of a service activity to assign it to a different employee or a different date and time.</span></span>
+
+## <a name="example"></a><span data-ttu-id="535e2-108">Eksempel</span><span class="sxs-lookup"><span data-stu-id="535e2-108">Example</span></span>
+
+<span data-ttu-id="535e2-109">Under kontrol af dagens serviceaktivitet bemærker du, at John, servicetekniker, er bagud med sine tildelte servicebesøg.</span><span class="sxs-lookup"><span data-stu-id="535e2-109">While monitoring the day's service activity, you notice that John, a service technician, is running behind schedule on assigned service calls.</span></span> <span data-ttu-id="535e2-110">Du bemærker også, at det sidste besøg på hans liste skal gennemføres inden fyraften for at opfylde kravene i serviceniveauaftalen.</span><span class="sxs-lookup"><span data-stu-id="535e2-110">You also notice that the last call in his list must be completed by the end of the day to meet service level agreement requirements.</span></span> <span data-ttu-id="535e2-111">Ved hjælp af træk-og-slip-funktionen i Gantt-diagrammet kan du flytte tildelingen af servicebesøget til Meg, der er blevet færdig med sine egne servicebesøg før tiden.</span><span class="sxs-lookup"><span data-stu-id="535e2-111">By using the drag-and-drop functionality of the Gantt chart, you can reassign that service call to Meg, who has completed her own service calls ahead of schedule.</span></span>
+
+## <a name="open-the-dispatch-board-form"></a><span data-ttu-id="535e2-112">Åbne formen Planlægningstavle</span><span class="sxs-lookup"><span data-stu-id="535e2-112">Open the Dispatch board form</span></span>
+
+<span data-ttu-id="535e2-113">Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.</span><span class="sxs-lookup"><span data-stu-id="535e2-113">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="535e2-114">Se også</span><span class="sxs-lookup"><span data-stu-id="535e2-114">See also</span></span>
+
+[<span data-ttu-id="535e2-115">Prioritere serviceordrer</span><span class="sxs-lookup"><span data-stu-id="535e2-115">Prioritize service orders</span></span>](prioritize-service-orders.md)
+
+[<span data-ttu-id="535e2-116">Få vist status for serviceordrer</span><span class="sxs-lookup"><span data-stu-id="535e2-116">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
+
+<span data-ttu-id="535e2-117">[Planlægningstavle (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="535e2-117">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
+
+  
+
+
