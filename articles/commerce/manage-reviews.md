@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974000"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411102"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
@@ -83,7 +83,7 @@ Hvis du vil finde og slette kundedata i Commerce-webstedsgenerator, skal du føl
 1. Gå til **Startside \> Anmeldelser \> Slet**.
 1. Angiv kundens mailadresse i feltet **Søg efter brugere vha. mailadresse**, og vælg derefter **Søg**.
 1. Hvis kunden har anmeldelsesaktivitet (f.eks. indsendelse af anmeldelser, tilkendegivelser om nytten af andre kunders anmeldelser eller kommentarer til en anden kundes anmeldelse), vises resultaterne. Knappen **Slet** vises for hvert element.
-1. Vælg **Slet**for hvert element, der skal slettes. Når du bliver bedt om at bekræfte, skal du vælge **Ja**. 
+1. Vælg **Slet** for hvert element, der skal slettes. Når du bliver bedt om at bekræfte, skal du vælge **Ja**. 
     
 ![Slette kundedata](media/rnr-moderation-delete-reviews.png) 
 

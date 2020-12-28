@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971491"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411107"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -208,7 +208,7 @@ Fra POS kan brugere oprette nye dokumenter fra flytteordren. Hvis du vil starte 
 
 Du kan angive værdier i felterne **Afsendelsesdato**, **Modtagelsesdato** og **Leveringsmåde**, som du har brug for. Du kan også tilføje en note, der skal gemmes sammen med overflytningsordreoverskriften, som en vedhæftet fil i dokumentet i Commerce Headquarters.
 
-Når oplysningerne i overskriften er oprettet, kan du føje produkter til flytteordren. Vælg **Tilføj produkt**for at starte processen med at tilføje varer og ønsket antal. I ruden **Detaljer** kan du også føje en linjespecifik bemærkning til kladdelinjerne. Disse noter gemmes som en linjevedhæftning.
+Når oplysningerne i overskriften er oprettet, kan du føje produkter til flytteordren. Vælg **Tilføj produkt** for at starte processen med at tilføje varer og ønsket antal. I ruden **Detaljer** kan du også føje en linjespecifik bemærkning til kladdelinjerne. Disse noter gemmes som en linjevedhæftning.
 
 Når linjerne er angivet på den indgående flytteordre, skal du vælge **Gem** for at gemme dokumentændringerne lokalt, eller **Send anmodning** for at indsende ordreoplysningerne til Commerce Headquarters til yderligere behandling. Hvis du vælger **Gem**, gemmes kladde dokumentet i kanaldatabasen, og det udgående lagersted kan ikke køre dokumentet, før det er blevet behandlet via **Indsend anmodning**. Du bør kun vælge **Gem**, hvis du ikke er klar til at bekræfte anmodningen til i Commerce Headquarters til behandling.
 

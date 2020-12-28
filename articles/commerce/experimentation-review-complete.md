@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: c7da601323663d4c1ea76f7cad7bdab8e7632d1c
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097087"
+ms.locfileid: "4411223"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Hæve en variation og fuldføre et eksperiment
 
@@ -41,7 +41,7 @@ Benyt følgende fremgangsmåde for at hæve den bedste variation:
 1. Vælg **Eksperimenter** i venstre navigationsrude af Commerce-webstedsgeneratoren, og vælg derefter eksperimentet.
 1. Vælg **Fuldfør eksperiment** på kommandolinjen.
 1. Vælg **Gennemse eksperimentdataene** i dialogmenuen **Fuldfør eksperimentet**. Tredjepartstjenesten åbner, hvor du kan validere målepunkterne og bestemme, hvilken variation der er udført bedst.
-1. Vælg den bedste variation i dialogboksen **Fuldfør eksperimentet** , og vælg derefter **Næste**.
+1. Vælg den bedste variation i dialogboksen **Fuldfør eksperimentet**, og vælg derefter **Næste**.
 1. Åbn tredjepartstjenesten, og stop eksperimentet.
 1. Vælg **Fuldfør** i webstedsgeneratoren for at overskrive den oprindelige aktive side og publicere den vindende variation, så den er tilgængelig for alle brugere på dit websted. 
 

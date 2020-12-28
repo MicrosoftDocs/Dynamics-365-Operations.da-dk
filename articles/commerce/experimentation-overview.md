@@ -19,25 +19,25 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097133"
+ms.locfileid: "4411219"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimenteren i Dynamics 365 Commerce
 Brug eksperimenteren i Dynamics 365 Commerce til at validere hypoteser om effektiviteten af dine e-handelssider, og tag beslutninger med databaseret sikkerhed. Commerce understøtter A/B-test på sider, moduler og fragmenter og giver dig mulighed for at måle virkningen af foreslåede ændringer på dit websted.
 
-Du kan oprette, redigere og administrere behandlinger af sider og indhold, der kaldes **variationer** , i Commerce-webstedsgeneratoren. Commerce kan integreres med tredjepartstjenester, som du kan bruge til at oprette eksperimenter og behandlingstildelinger. Hændelsesstrømme i realtid, der er registreret i Commerce, giver den analyse, der definerer eksperimenters resultater i tredjepartstjenesten. Du kan derefter udnytte analyserne til support eller afvise din hypotese.
+Du kan oprette, redigere og administrere behandlinger af sider og indhold, der kaldes **variationer**, i Commerce-webstedsgeneratoren. Commerce kan integreres med tredjepartstjenester, som du kan bruge til at oprette eksperimenter og behandlingstildelinger. Hændelsesstrømme i realtid, der er registreret i Commerce, giver den analyse, der definerer eksperimenters resultater i tredjepartstjenesten. Du kan derefter udnytte analyserne til support eller afvise din hypotese.
 
 ## <a name="set-up-prerequisites"></a> Angiv forudsætninger
 1. **Få den korrekte version af Commerce** – Opgrader dit modulbibliotek, SDK for onlinekanaludvidelser og Commerce Scale Unit til Commerce version 10.0.13 eller nyere.
 1. **Konfigurere en eksperimenteren-connector** - En eksperimenteren-connector giver mulighed for, at Commerce kan oprette forbindelse til tredjepartstjenester for at hente listen over eksperimenter og bestemme, hvornår et eksperiment skal vises for en bruger. Du kan købe en tredjeparts-connector fra [AppSource](https://appsource.microsoft.com). Følg de opsætningsinstruktioner, der er angivet af udgiveren. Du kan også bruge eksempeltest-connectoren fra Commerce til at teste arbejdsprocessen for eksperimenteren, uden at du behøver at konfigurere en ekstern tjeneste. Du kan finde flere oplysninger i [Konfigurere og aktivere connectorer](e-commerce-extensibility/connectors.md). 
 1. **Slå funktionsflagene for Eksperimenteren til i Commerce** - Du kan aktivere Eksperimenteren på lejerniveau ved at gå til **Lejerindstillinger > Funktioner** eller på webstedsniveau i **Webstedsindstillinger > Funktioner**.
-    - Aktivér **Eksperimenteren** -flaget for at oprette eksperimentvariationer af moduler på en side uden at påvirke eller kopiere andet indhold, der ikke er en del af eksperimentet. Dette sikrer, at løbende indholdsopdateringer uden for eksperimentet forbliver synkroniseret under eksperimentets livscyklus. Deaktivering af dette flag forhindrer alle eksperimenter i at blive vist for brugerne og fjerner alle redigeringsfunktioner i webstedsgeneratoren.
+    - Aktivér **Eksperimenteren**-flaget for at oprette eksperimentvariationer af moduler på en side uden at påvirke eller kopiere andet indhold, der ikke er en del af eksperimentet. Dette sikrer, at løbende indholdsopdateringer uden for eksperimentet forbliver synkroniseret under eksperimentets livscyklus. Deaktivering af dette flag forhindrer alle eksperimenter i at blive vist for brugerne og fjerner alle redigeringsfunktioner i webstedsgeneratoren.
     - Aktivér flaget **Eksperiment på sider eller fragmenter** for at udføre eksperimenter på en side eller et fragment. Derved oprettes en fuld forekomstkopi af hele siden eller fragmentet for alle moduler på siden eller fragmentet. Brug denne tilstand, når du vil teste omfattende ændringer af indholdet, eller hvor synkronisering af igangværende indholdsændringer på tværs af forekomster ikke er et problem. Deaktivering af dette flag forhindrer oprettelse og redigering af nye eksperimenter på sider og fragmenter.
     > [!NOTE]
-    > **Eksperimenteren** -flaget skal også være aktiveret for at få **Eksperiment på sider eller fragmenteringer** -funktionen til at fungere.
+    > **Eksperimenteren**-flaget skal også være aktiveret for at få **Eksperiment på sider eller fragmenteringer**-funktionen til at fungere.
     
 ## <a name="experimentation-lifecycle"></a>Eksperimenterens livscyklus
 Det er en iterativ proces at konfigurere et eksperiment, oprette variationer og køre et eksperiment. Nedenstående diagram viser livscyklussen for Eksperimenteren i Commerce og tredjepartstjenesten. 

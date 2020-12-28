@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019558"
+ms.locfileid: "4411208"
 ---
 # <a name="work-with-fragments"></a>Arbejde med fragmenter 
 
@@ -62,7 +62,7 @@ Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan 
 
 1. Åbn en side eller skabelon, der indeholder det modul, du vil konvertere til et fragment.
 1. Vælg det tidligere konfigurerede modul i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
-1. Vælg ellipsen ( **...** ) ud for navnet på modulet i enten dispositionsruden eller på værktøjslinjen for det valgte modul i den visuelle sidegenerator. 
+1. Vælg ellipsen (**...**) ud for navnet på modulet i enten dispositionsruden eller på værktøjslinjen for det valgte modul i den visuelle sidegenerator. 
 1. Vælg **Del som fragment**. 
 1. I dialogboksen **Gem som fragment** skal du angive et navn til fragmentet.
 1. Vælg **OK** for at gemme modulkonfigurationen som et fragment, der kan føjes til andre sider.
@@ -74,7 +74,7 @@ Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan 
 Udfør følgende trin for at oprette et nyt fragment i Commerce-webstedsgenerator.
 
 1. Vælg **Fragmenter** i navigationsruden til venstre.
-1. Vælg **Ny**. Der vises en **Nyt fragment** -dialogboks, hvor alle tilgængelige modultyper kan ses. Som tidligere nævnt kan fragmenter oprettes ud fra en hvilken som helst modultype.
+1. Vælg **Ny**. Der vises en **Nyt fragment**-dialogboks, hvor alle tilgængelige modultyper kan ses. Som tidligere nævnt kan fragmenter oprettes ud fra en hvilken som helst modultype.
 1. Vælg en modultype til dit fragment.
 
 <!-- The following image shows where to create a new fragment.-->
@@ -91,7 +91,7 @@ I følgende procedurer beskrives, hvordan du kan tilføje, fjerne og redigere fr
 Udfør følgende trin for at tilføje et fragment på en side i Commerce-webstedsgenerator.
 
 1. Vælg en container eller en plads, som underordnede moduler kan føjes til, i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
-1. Vælg ellipsen ( **...** ) ud for navnet på containeren eller pladsen.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet ( **+** ).  
+1. Vælg ellipsen (**...**) ud for navnet på containeren eller pladsen.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet (**+**).  
 1. Vælg **Tilføj fragment**.
     <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
@@ -109,7 +109,7 @@ Udfør følgende trin for at tilføje et fragment på en side i Commerce-websted
 
 Hvis du vil fjerne et fragment fra en plads eller en container på en side i Commerce-webstedsgenerator, skal du følge disse trin.
 
-1. Vælg ellipseknappen ( **...** ) i dispositionsruden til venstre ud for navnet på det fragment, der skal fjernes, og vælg derefter symbolet med papirkurven.  Du kan også vælge fragmentet i den visuelle sidegenerator og vælge symbolet for papirkurven på fragmentets værktøjslinje.
+1. Vælg ellipseknappen (**...**) i dispositionsruden til venstre ud for navnet på det fragment, der skal fjernes, og vælg derefter symbolet med papirkurven.  Du kan også vælge fragmentet i den visuelle sidegenerator og vælge symbolet for papirkurven på fragmentets værktøjslinje.
 1. Når du bliver bedt om at bekræfte, at du vil fjerne fragmentet, skal du vælge **OK**.
 
 > [!NOTE]

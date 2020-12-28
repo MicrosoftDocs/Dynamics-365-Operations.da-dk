@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817372"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411015"
 ---
 # <a name="text-block-module"></a>Tekstblokmodul
 
@@ -55,7 +55,7 @@ Det følgende billede viser et eksempel på et tekstblokmodul, der bruges på en
 |-------------------|--------------------------------------------------|-------------|
 | RTF         | RTF                                        | Afsnitstekst. Nogle grundlæggende RTF-funktioner understøttes, f. eks. fed, understreget og kursiv tekst. |
 | Brugerdefineret klassenavn | Klassenavn for overlappende typografiark (CSS)        | Navnet på en brugerdefineret CSS-klasse, som en udvikler leverer til at formatere dette modul. Klassenavnet skal defineres i temapakken. |
-| Skrifttypens størrelse         | **Lille**, **Mellem**, **Stor**eller **Ekstra stor** | Indholdets skriftstørrelse. |
+| Skrifttypens størrelse         | **Lille**, **Mellem**, **Stor** eller **Ekstra stor** | Indholdets skriftstørrelse. |
 
 ## <a name="add-a-text-block-module-to-a-page"></a>Føj et tekstblokmodul til en side
 
@@ -70,7 +70,7 @@ Hvis du vil føje et tekstblokmodul til en ny side og angive de påkrævede egen
 1. Vælg dialogboksen **Vælg en skabelon**, og vælg **Indholdsskabelon**. Under **Sidenavn** skal du angive **Indholdsside** og derefter vælge **OK**.
 1. På pladsen **Hoved** på den nye side skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
-1. Angiv egenskaben **Bredde** til **Fyld container**i egenskabsruden for containermodulet.
+1. Angiv egenskaben **Bredde** til **Fyld container** i egenskabsruden for containermodulet.
 1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Tekstblok** og derefter **OK**. 
 1. Føj tekst til **RTF-tekst**-feltet i egenskabsruden af tekstblokmodulet.

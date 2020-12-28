@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ab1609d332b96c0588b06aa086dd4fee944e5d9
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ebc5cfa490a4c8538fd081aced0844ed01d63a26
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055754"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4411239"
 ---
 # <a name="cart-icon-module"></a>Modulet Indkøbskurvikon
 
@@ -60,6 +60,8 @@ Hvis du vil tilføje et indkøbsvognikonmodul, skal du se [Overskriftsmodul](aut
 [Leveringsadressemodul](ship-address-module.md)
 
 [Leveringsindstillingsmodul](delivery-options-module.md)
+
+[Modul med afhentningsoplysninger](pickup-info-module.md)
 
 [Ordredetaljer-modul](order-confirmation-module.md)
 

@@ -18,11 +18,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 1cab31784db9f3242dce20e98762088436a5a8f8
-ms.sourcegitcommit: 80cbb7d22267aa6a0ae0568d0063fb95556958a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036826"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411143"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Oprette opgavelister og tilføje opgaver
 
@@ -43,7 +43,7 @@ Både ledere og arbejdere kan oprette opgavelister på Commerce-bagkontor og der
 Brug følgende trin for at oprette en opgaveliste.
 
 1. Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.
-1. Vælg **Ny**, og angiv derefter værdier i felterne **Navn**, **Beskrivelse**og **Ejer**.
+1. Vælg **Ny**, og angiv derefter værdier i felterne **Navn**, **Beskrivelse** og **Ejer**.
 1. Vælg **Gem**.
 
 ## <a name="add-tasks-to-a-task-list"></a>Føje opgaver til en opgaveliste

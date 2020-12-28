@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817248"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410995"
 ---
 # <a name="promo-banner-module"></a>Kampagnebannermodul
 
@@ -71,7 +71,7 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 
 1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv **Kampagnebannerskabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
-1. Under **Sidedisposition**kan du føje et **Standardside**modul til **Brødtekst**-pladsen. 
+1. Under **Sidedisposition** kan du føje et **Standardside** modul til **Brødtekst**-pladsen. 
 1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den. 
 1. Brug den skabelon, som du netop har oprettet, til at oprette en side med navnet **Kampangebannermodul**. 
 1. Tilføj et containermodul på pladsen **Hoved** på den nye side. 

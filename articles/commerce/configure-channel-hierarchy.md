@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002214"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410984"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Konfigurere en kanal for at bruge et navigationshierarki for en kanal
 
@@ -44,7 +44,7 @@ Du kan konfigurere en kanal for at bruge et navigationshierarki for en kanal ved
 1. I handlingsruden skal du vælge **Angiv attributmetadata**.
 1. På rullelisten **Kategorihierarki** skal du vælge det relevante kanalnavigationshierarki.
 1. Gå til handlingsruden, og vælg **Gem**.
-1. Under **Attributgruppe**skal du tilføje alle attributgrupper, der skal være globale attributter for alle noder.
+1. Under **Attributgruppe** skal du tilføje alle attributgrupper, der skal være globale attributter for alle noder.
 
 Følgende billede viser, hvordan du konfigurerer en kanal for at bruge et navigationshierarki for en kanal.
 
@@ -57,7 +57,7 @@ Angivelse af attributmetadataene giver mulighed for konfiguration af attributter
 Du kan angive attributmetadataene ved at følge disse trin.
 
 1. I handlingsruden skal du vælge **Angiv attributmetadata**.
-1. Vælg **Kanalproduktattributter**for hver node.
+1. Vælg **Kanalproduktattributter** for hver node.
 1. Angiv **Vis attribut på kanal** til **Ja** og **Kan redigeres** til **Ja**, hvis du vil aktivere afgrænsere på denne kanal.
 1. Når du har konfigureret hver enkelt node efter behov, skal du vælge knappen **Gem** i **handlingsruden**.
 1. Vælg **X** i øverste højre hjørne for at forlade dette skærmbillede og vende tilbage til siden **Kanalkategorier og produktattributter**.
@@ -72,7 +72,7 @@ Du skal publicere ændringerne, for at ændringerne træder i kraft.
 
 Følg disse trin for at publicere ændringer.
 
-1. Vælg **Publicer kanalopdateringer**i handlingsruden.
+1. Vælg **Publicer kanalopdateringer** i handlingsruden.
 1. Vælg **OK** i ruden **Publicer kanalopdateringer**.
 
 Følgende billede viser, hvordan du kan publicere kanalopdateringer.
