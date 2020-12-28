@@ -1,0 +1,117 @@
+---
+title: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
+description: Dette emne forklarer, hvordan du aktiverer og tester Azure Data Lake Storage for et Dynamics 365 Commerce-miljø, som er en forudsætning for, at du kan aktivere produktanbefalinger.
+author: bebeale
+manager: AnnBe
+ms.date: 04/13/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: ''
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: Retail, eCommerce
+ms.author: bebeale
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 27e4f1c751ee865b0df536f3c1912cb1d8946032
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410991"
+---
+# <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a><span data-ttu-id="d0c54-103">Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø</span><span class="sxs-lookup"><span data-stu-id="d0c54-103">Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="d0c54-104">Dette emne forklarer, hvordan du aktiverer og tester Azure Data Lake Storage for et Dynamics 365 Commerce-miljø, som er en forudsætning for, at du kan aktivere produktanbefalinger.</span><span class="sxs-lookup"><span data-stu-id="d0c54-104">This topic explains how to enable and test Azure Data Lake Storage for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="d0c54-105">Oversigt</span><span class="sxs-lookup"><span data-stu-id="d0c54-105">Overview</span></span>
+
+<span data-ttu-id="d0c54-106">I Dynamics 365 Commerce-løsningen spores alle produkt- og transaktionsoplysninger i miljøets enhedslager.</span><span class="sxs-lookup"><span data-stu-id="d0c54-106">In the Dynamics 365 Commerce solution, all product and transaction information is tracked in the environment's Entity store.</span></span> <span data-ttu-id="d0c54-107">For at gøre disse data tilgængelige for andre Dynamics 365-tjenester, f.eks. dataanalyse, business intelligence og personlige anbefalinger, er det nødvendigt at knytte miljøet til en kundeejet Azure Data Lake Storage Gen 2-løsning.</span><span class="sxs-lookup"><span data-stu-id="d0c54-107">To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, it is necessary to connect the environment to a customer-owned Azure Data Lake Storage Gen 2 solution.</span></span>
+
+<span data-ttu-id="d0c54-108">Da Azure Data Lake Storage er konfigureret i et miljø, spejles alle nødvendige data fra enhedslageret, mens de stadig er beskyttet og under kundens kontrol.</span><span class="sxs-lookup"><span data-stu-id="d0c54-108">As Azure Data Lake Storage is configured in an environment, all necessary data is mirrored from the Entity store while still being protected and under customer's control.</span></span>
+
+<span data-ttu-id="d0c54-109">Hvis produktanbefalinger eller personlige anbefalinger også er aktiveret i miljøet, vil stakken med produktanbefalinger blive tildelt adgang til den dedikerede mappe i Azure Data Lake Storage for at hente kundens data og beregne anbefalinger baseret på den.</span><span class="sxs-lookup"><span data-stu-id="d0c54-109">If product recommendations or personalized recommendations are also enabled in the environment, then the product recommendations stack will be granted access to the dedicated folder in Azure Data Lake Storage to retrieve the customer’s data and compute recommendations based on it.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="d0c54-110">Forudsætninger</span><span class="sxs-lookup"><span data-stu-id="d0c54-110">Prerequisites</span></span>
+
+<span data-ttu-id="d0c54-111">Kunderne skal have Azure Data Lake Storage konfigureret i et Azure-abonnement, som de ejer.</span><span class="sxs-lookup"><span data-stu-id="d0c54-111">Customers need to have Azure Data Lake Storage configured in an Azure subscription that they own.</span></span> <span data-ttu-id="d0c54-112">Dette emne dækker ikke købet af et Azure-abonnement eller opsætningen af en Azure Data Lake Storage-aktiveret lagerkonto.</span><span class="sxs-lookup"><span data-stu-id="d0c54-112">This topic does not cover the purchase of an Azure subscription or the setup of an Azure Data Lake Storage-enabled storage account.</span></span>
+
+<span data-ttu-id="d0c54-113">Du kan finde flere oplysninger om Azure Data Lake Storage i [den officielle dokumentation for Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).</span><span class="sxs-lookup"><span data-stu-id="d0c54-113">For more information about Azure Data Lake Storage, see [Azure Data Lake Storage Gen2 official documentation](https://azure.microsoft.com/pricing/details/storage/data-lake).</span></span>
+  
+## <a name="configuration-steps"></a><span data-ttu-id="d0c54-114">Konfigurationstrin</span><span class="sxs-lookup"><span data-stu-id="d0c54-114">Configuration steps</span></span>
+
+<span data-ttu-id="d0c54-115">I dette afsnit beskrives de konfigurationstrin, der er nødvendige for at aktivere Azure Data Lake Storage i et miljø, da det angår produktanbefalinger.</span><span class="sxs-lookup"><span data-stu-id="d0c54-115">This section covers the configuration steps necessary for enabling Azure Data Lake Storage in an environment as it relates to product recommendations.</span></span>
+<span data-ttu-id="d0c54-116">Du kan få en mere detaljeret oversigt over de trin, der er nødvendige for at aktivere Azure Data Lake Storage i [Gøre enhedslager tilgængelig som en Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).</span><span class="sxs-lookup"><span data-stu-id="d0c54-116">For a more in-depth overview of the steps required to enable Azure Data Lake Storage, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).</span></span>
+
+### <a name="enable-azure-data-lake-storage-in-the-environment"></a><span data-ttu-id="d0c54-117">Aktivér Azure Data Lake Storage i miljøet</span><span class="sxs-lookup"><span data-stu-id="d0c54-117">Enable Azure Data Lake Storage in the environment</span></span>
+
+1. <span data-ttu-id="d0c54-118">Log på miljøets administrationsportal.</span><span class="sxs-lookup"><span data-stu-id="d0c54-118">Log in to the environment's back office portal.</span></span>
+1. <span data-ttu-id="d0c54-119">Søg efter **Systemparametre**, og gå til fanen **Dataforbindelser**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-119">Search for **System Parameters** and navigate to the **Data connections** tab.</span></span> 
+1. <span data-ttu-id="d0c54-120">Angiv **Aktivér Data Lake-integration** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-120">Set **Enable Data Lake integration** to **Yes**.</span></span>
+1. <span data-ttu-id="d0c54-121">Angiv **Foretag sivende opdatering af Data Lake** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-121">Set **Trickle update Data Lake** to **Yes**.</span></span>
+1. <span data-ttu-id="d0c54-122">Angiv derefter følgende nødvendige oplysninger:</span><span class="sxs-lookup"><span data-stu-id="d0c54-122">Next, enter the following required information:</span></span>
+    1. <span data-ttu-id="d0c54-123">**Program-id** // **Programhemmelighed** // **DNS-navn** – Er nødvendig for oprette forbindelse til KeyVault, hvor Azure Data Lake Storage-hemmeligheden er gemt.</span><span class="sxs-lookup"><span data-stu-id="d0c54-123">**Application ID** // **Application Secret** // **DNS Name** - Needed to connect to KeyVault where the Azure Data Lake Storage secret is stored.</span></span>
+    1. <span data-ttu-id="d0c54-124">**Hemmeligt navn** – Det hemmelige navn, der er gemt i KeyVault, og som bruges til at godkende med Azure Data Lake Storage.</span><span class="sxs-lookup"><span data-stu-id="d0c54-124">**Secret name** - The secret name stored in KeyVault and used to authenticate with Azure Data Lake Storage.</span></span>
+1. <span data-ttu-id="d0c54-125">Gem ændringerne i øverste venstre hjørne af siden.</span><span class="sxs-lookup"><span data-stu-id="d0c54-125">Save your changes in the top left corner of the page.</span></span>
+
+<span data-ttu-id="d0c54-126">Følgende billede viser et eksempel på en Azure Data Lake Storage-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="d0c54-126">The following image shows an example Azure Data Lake Storage configuration.</span></span>
+
+![Eksempel på Azure Data Lake Storage-konfiguration](./media/exampleADLSConfig1.png)
+
+### <a name="test-the-azure-data-lake-storage-connection"></a><span data-ttu-id="d0c54-128">Test Azure Data Lake Storage-forbindelsen</span><span class="sxs-lookup"><span data-stu-id="d0c54-128">Test the Azure Data Lake Storage connection</span></span>
+
+1. <span data-ttu-id="d0c54-129">Test forbindelsen til KeyVault ved hjælp af linket **Test Azure Key Vault**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-129">Test the connection to KeyVault using the **Test Azure Key Vault** link.</span></span>
+1. <span data-ttu-id="d0c54-130">Test forbindelsen til Azure Data Lake Storage ved hjælp af linket **Test Azure Storage**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-130">Test the connection to Azure Data Lake Storage using the **Test Azure Storage** link.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d0c54-131">Hvis testene ikke lykkes, skal du dobbelttjekke, at alle KeyVault-oplysningerne, der er tilføjet ovenfor, er korrekte, og derefter prøve igen.</span><span class="sxs-lookup"><span data-stu-id="d0c54-131">If the tests fail, double-check that all of the KeyVault information added above is correct, then try again.</span></span>
+
+<span data-ttu-id="d0c54-132">Når test af forbindelsen er gennemført korrekt, skal du aktivere automatisk opdatering af enhedslageret.</span><span class="sxs-lookup"><span data-stu-id="d0c54-132">Once the connection tests are successful, you must enable automatic refresh for Entity store.</span></span>
+
+<span data-ttu-id="d0c54-133">Følg disse trin for at aktivere automatisk opdatering af enhedslager.</span><span class="sxs-lookup"><span data-stu-id="d0c54-133">To enable automatic refresh for Entity store, follow these steps.</span></span>
+
+1. <span data-ttu-id="d0c54-134">Søg efter **Enhedslager**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-134">Search for **Entity Store**.</span></span>
+1. <span data-ttu-id="d0c54-135">Gå til posten **RetailSales** på listen til venstre, og vælg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-135">In the list on the left, navigate to the **RetailSales** entry, and select **Edit**.</span></span>
+1. <span data-ttu-id="d0c54-136">Sørg for, at **Automatisk opdatering er aktiveret** er angivet til **Ja**, vælg **Opdater**, og vælg derefter **Gem**.</span><span class="sxs-lookup"><span data-stu-id="d0c54-136">Ensure that **Automatic Refresh Enabled** is set to **Yes**, select **Refresh**, and then select **Save**.</span></span>
+
+<span data-ttu-id="d0c54-137">Følgende billede viser et eksempel på enhedslager med automatisk opdatering aktiveret.</span><span class="sxs-lookup"><span data-stu-id="d0c54-137">The following image shows an example of Entity store with automatic refresh enabled.</span></span>
+
+![Eksempel på enhedslager med automatisk opdatering aktiveret](./media/exampleADLSConfig2.png)
+
+<span data-ttu-id="d0c54-139">Azure Data Lake Storage er nu konfigureret for miljøet.</span><span class="sxs-lookup"><span data-stu-id="d0c54-139">Azure Data Lake Storage is now configured for the environment.</span></span> 
+
+<span data-ttu-id="d0c54-140">Hvis det ikke allerede er fuldført, skal du følge trinnene for [aktivering af produktanbefalinger og tilpasning](enable-product-recommendations.md) for miljøet.</span><span class="sxs-lookup"><span data-stu-id="d0c54-140">If not completed already, follow the steps for [enabling product recommendations and personalization](enable-product-recommendations.md) for the environment.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="d0c54-141">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="d0c54-141">Additional resources</span></span>
+
+[<span data-ttu-id="d0c54-142">Gøre enhedslager tilgængelig som en data lake</span><span class="sxs-lookup"><span data-stu-id="d0c54-142">Make entity store available as a data lake</span></span>](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
+[<span data-ttu-id="d0c54-143">Oversigt over produktanbefalinger</span><span class="sxs-lookup"><span data-stu-id="d0c54-143">Product recommendations overview</span></span>](product-recommendations.md)
+
+[<span data-ttu-id="d0c54-144">Aktivér produktanbefalinger</span><span class="sxs-lookup"><span data-stu-id="d0c54-144">Enable product recommendations</span></span>](enable-product-recommendations.md)
+
+[<span data-ttu-id="d0c54-145">Aktivere tilpassede anbefalinger</span><span class="sxs-lookup"><span data-stu-id="d0c54-145">Enable personalized recommendations</span></span>](personalized-recommendations.md)
+
+[<span data-ttu-id="d0c54-146">Fravælge tilpassede anbefalinger</span><span class="sxs-lookup"><span data-stu-id="d0c54-146">Opt out of personalized recommendations</span></span>](personalization-gdpr.md)
+
+[<span data-ttu-id="d0c54-147">Aktivere anbefalinger af "Køb tilsvarende"</span><span class="sxs-lookup"><span data-stu-id="d0c54-147">Enable "shop similar looks" recommendations</span></span>](shop-similar-looks.md)
+
+[<span data-ttu-id="d0c54-148">Tilføje produktanbefalinger på POS</span><span class="sxs-lookup"><span data-stu-id="d0c54-148">Add product recommendations on POS</span></span>](product.md)
+
+[<span data-ttu-id="d0c54-149">Føje anbefalinger til transaktionsskærmen</span><span class="sxs-lookup"><span data-stu-id="d0c54-149">Add recommendations to the transaction screen</span></span>](add-recommendations-control-pos-screen.md)
+
+[<span data-ttu-id="d0c54-150">Justere resultater for AI-ML-anbefalinger</span><span class="sxs-lookup"><span data-stu-id="d0c54-150">Adjust AI-ML recommendations results</span></span>](modify-product-recommendation-results.md)
+
+[<span data-ttu-id="d0c54-151">Oprette overvågede anbefalinger manuelt</span><span class="sxs-lookup"><span data-stu-id="d0c54-151">Manually create curated recommendations</span></span>](create-editorial-recommendation-lists.md)
+
+[<span data-ttu-id="d0c54-152">Oprette anbefalinger med demonstrationsdata</span><span class="sxs-lookup"><span data-stu-id="d0c54-152">Create recommendations with demo data</span></span>](product-recommendations-demo-data.md)
+
+[<span data-ttu-id="d0c54-153">Ofte stillede spørgsmål om produktanbefalinger</span><span class="sxs-lookup"><span data-stu-id="d0c54-153">Product recommendations FAQ</span></span>](faq-recommendations.md)
