@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ce6b76d92526b9a353bda2524bdfd0f7f4a5f68e
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018830"
+ms.locfileid: "4424946"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -58,7 +58,7 @@ Hver linje i en købsaftale er en forpligtelse til at købe noget. Du kan bruge 
 -   **Værditilsagn** – Du køber for et bestemt valutabeløb af et hvilket som helst produkt eller i en hvilken som helst indkøbskategori.
 
 ## <a name="pricing-terms-for-purchase-agreements"></a>Prisvilkår for købsaftaler
-Prisvilkår kan variere alt efter forpligtelsestypen. Prisvilkårene fra købsaftaler tilsidesætter andre prisvilkår, der er oprettet i samhandelsaftaler. Følgende tabel indeholder en beskrivelse af de prisrelaterede felter, der påvirkes af hver enkelt forpligtelsestype. Felter, der indeholder **Ja** , kan opdateres på en ordrelinje.
+Prisvilkår kan variere alt efter forpligtelsestypen. Prisvilkårene fra købsaftaler tilsidesætter andre prisvilkår, der er oprettet i samhandelsaftaler. Følgende tabel indeholder en beskrivelse af de prisrelaterede felter, der påvirkes af hver enkelt forpligtelsestype. Felter, der indeholder **Ja**, kan opdateres på en ordrelinje.
 
 | Tilsagnstype                   | Enhedspris | Prisenhed | Rabatprocentdel | Kasserabatbeløb |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -93,7 +93,7 @@ Du kan kun vælge en købsaftale, når du opretter en indkøbsordre. Du kan ikke
 I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Supply Chain Management automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
 
 ## <a name="matching-policy-on-purchase-agreements"></a>Sammenholdelsespolitik for købsaftaler
-Du kan definere en sammenholdelsespolitik for en linje i overskriften til købsaftalen. Denne sammenholdelsespolitik for linjer vil respektere sammenholdelsespolitikken for kreditorparametrelinjer, når feltet **Tillad overskrivelse af sammenholdelsespolitik** på siden **Kreditorparametre** (i oversigtspanelet **Pris og antalssammenholdelse** ) angives til **Højere end firmapolitikken**. Dokumenter, der refererer til købsaftalen, bruger den sammenholdelsespolitik for linjer, der er defineret i overskriften for købsaftalen, medmindre andet er angivet i den tilsvarende vare-, vare- og leverandør- eller kategoriindkøbspolitik.
+Du kan definere en sammenholdelsespolitik for en linje i overskriften til købsaftalen. Denne sammenholdelsespolitik for linjer vil respektere sammenholdelsespolitikken for kreditorparametrelinjer, når feltet **Tillad overskrivelse af sammenholdelsespolitik** på siden **Kreditorparametre** (i oversigtspanelet **Pris og antalssammenholdelse**) angives til **Højere end firmapolitikken**. Dokumenter, der refererer til købsaftalen, bruger den sammenholdelsespolitik for linjer, der er defineret i overskriften for købsaftalen, medmindre andet er angivet i den tilsvarende vare-, vare- og leverandør- eller kategoriindkøbspolitik.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Købsaftaler og samhandel internt i firmaet
 Der kan oprettes interne handelsforhold mellem kreditorkonti og debitorkonto, som er i forskellige juridiske enheder. Når der oprettes en salgsordre eller indkøbsordre for en af parterne, oprettes en intern ordretilknytning. I ordretilknytningen oprettes salgsordren og indkøbsordren i de relevante juridiske enheder.  

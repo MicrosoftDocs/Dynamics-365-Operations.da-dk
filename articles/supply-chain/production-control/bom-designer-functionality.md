@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979496"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424674"
 ---
 # <a name="bom-designer-functionality"></a>Funktioner i styklistedesigneren
 
@@ -98,7 +98,7 @@ Når du bruger styklistedesigneren til at gennemgå eller redigere styklister, d
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Tilføje og redigere styklister og styklistelinjer
 Brug funktionerne **Styklistelinjer** eller **Stykliste** til at redigere styklistelinjer eller styklister. Når du markerer en node i træet, bestemmer typen af noden, hvilke funktioner der er tilgængelige.
 
-| Funktion                            | Betegnelse                                                                                               | Nodetype og betingelser                                                                                                                                                                                                                                                                       |
+| Funktion                            | Beskrivelse                                                                                               | Nodetype og betingelser                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Styklistelinjer &gt; Rediger                 | Åbn en dialogboks, hvor du kan redigere attributterne for styklistelinjen.                                             | Denne funktion er tilgængelig, når der er valgt en styklistelinjenode.                                                                                                                                                                                                                                   |
 | Styklistelinjer &gt; Slet               | Slet en styklistelinje fra den valgte stykliste.                                                                  | Denne funktion er tilgængelig, når en styklistelinjenode er valgt og styklisten ikke er låst til redigering.                                                                                                                                                                                             |

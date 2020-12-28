@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015889"
+ms.locfileid: "4425006"
 ---
 # <a name="work-line-details"></a>Arbejdslinjedetaljer
 
@@ -42,7 +42,7 @@ Hvis du vil have vist listen over oplysninger om arbejdslinjer, skal du gå til 
 
 - Brug feltet **Filtrer** til at søge efter linjer, der har en bestemt værdi, for alle tilgængelige parametre. (Tilgængelige parametre omfatter mange parametre, der ikke vises som kolonner i gitteret).
 - Brug afkrydsningsfeltet **Vis lukket** for at få vist eller skjule lukkede linjer.
-- Vælg **Vis dimensioner** for at åbne dialogboksen **Dimensionsvisning** , hvor du kan vælge at få vist eller skjule forskellige dimensionskolonner i gitteret.
+- Vælg **Vis dimensioner** for at åbne dialogboksen **Dimensionsvisning**, hvor du kan vælge at få vist eller skjule forskellige dimensionskolonner i gitteret.
 - Vælg en kolonneoverskrift for at åbne en menu, hvor du kan vælge at sortere eller filtrere listen efter værdier i den pågældende kolonne.
 - Vælg en arbejdslinje, og vælg derefter **Skift lokation** for at åbne en dialogboks, hvor du kan ændre placeringen for den pågældende arbejdslinje. Den lokation, du angiver, tilsidesætter opsætningen af lokationsvejledningen.
 - Vælg en arbejdslinje, og vælg derefter **Annuller arbejdslinje** for at åbne en dialogboks, hvor du helt eller delvist kan reducere antallet på den pågældende arbejdslinje.
@@ -55,20 +55,20 @@ Dette afsnit indeholder en demoversion i tre dele, der viser, hvordan du kan arb
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde gennem denne demo ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
+Hvis du vil arbejde gennem denne demo ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 Du kan også bruge denne demonstration som vejledning, når du arbejder i et produktionssystem. Du skal dog erstatte dine egne værdier, og du mangler muligvis nogle typer påkrævede poster, som standarddemodataene giver.
 
 ### <a name="verify-that-the-scenario-setup-includes-enough-available-inventory"></a>Kontroller, at scenarieopsætningen indeholder en tilstrækkelig disponibel lagerbeholdning
 
-Hvis du arbejder med **USMF** -demodataene, skal du først sikre dig, at systemet er konfigureret, så der er en tilstrækkelig lagerbeholdning på hver af de relevante pluklokationer. I denne demo er der en forventning om, at du har den følgende tilgængelige lagerbeholdning:
+Hvis du arbejder med **USMF**-demodataene, skal du først sikre dig, at systemet er konfigureret, så der er en tilstrækkelig lagerbeholdning på hver af de relevante pluklokationer. I denne demo er der en forventning om, at du har den følgende tilgængelige lagerbeholdning:
 
 - **Vare M9200:** 45 ea. (eller mere)
 - **Vare M9202:** 10 ea. (eller mere)
 
 Udfør følgende trin for at kontrollere, om der er tilstrækkelig lager til rådighed, og om det er nødvendigt at foretage justeringer.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Lokationsvejledninger** , og bestem, hvilke pluklokationer der bruges til plukning af salgsordre på lagersted 51. (Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokalitetsdirektiver](control-warehouse-location-directives.md).)
+1. Gå til **Lokationsstyring \> Konfiguration \> Lokationsvejledninger**, og bestem, hvilke pluklokationer der bruges til plukning af salgsordre på lagersted 51. (Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokalitetsdirektiver](control-warehouse-location-directives.md).)
 1. Kontrollér lagerniveauerne på de relevante lokationer.
 1. Regulere lagerbeholdning efter behov. Du kan oprette manuelle bevægelser, bruge genopfyldning eller anvende et andet flow til at regulere lagerbeholdningen.
 
@@ -80,9 +80,9 @@ Benyt følgende fremgangsmåde for at oprette noget plukarbejde.
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at åbne dialogboksen **Opret salgsordre**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
 
-    - Gå til oversigtspanelet **Kunde** , indstil feltet **Kundekonto** til _US-001_.
+    - Gå til oversigtspanelet **Kunde**, indstil feltet **Kundekonto** til _US-001_.
     - I oversigtspanelet **Generelt** skal du indstille **Lagersted** til _51_.
 
 1. Vælg **OK** for at oprette salgsordrerne og lukke dialogboksen.
@@ -98,8 +98,8 @@ Benyt følgende fremgangsmåde for at oprette noget plukarbejde.
 1. Vælg **Frigør til lagersted** under fanen **Lagersted** i handlingsruden. Systemet opretter en forsendelse, føjer den til en ny last og opretter det nødvendige arbejde.
 1. Opret endnu en salgsordre for den samme debitorkonto og det lagersted, som du brugte til den første ordre. Føj følgende to ordrelinjer til denne ordre:
 
-    - **Linje 1:** Indstil feltet **Varenummer** til _M9200_ , feltet **Antal** til _25_ og feltet **Enhed** til _EA_.
-    - **Linje 2:** Indstil feltet **Varenummer** til _M9202_ , feltet **Antal** til _10_ og feltet **Enhed** til _EA_.
+    - **Linje 1:** Indstil feltet **Varenummer** til _M9200_, feltet **Antal** til _25_ og feltet **Enhed** til _EA_.
+    - **Linje 2:** Indstil feltet **Varenummer** til _M9202_, feltet **Antal** til _10_ og feltet **Enhed** til _EA_.
 
 1. Gentag trin 6 til 8 for at reservere lageret for hver ordrelinje (en ad gangen), og gentag derefter trin 9 for at frigive ordren til lagerstedet.
 
@@ -108,7 +108,7 @@ Benyt følgende fremgangsmåde for at oprette noget plukarbejde.
 1. Gå til **Lagerstedsstyring \> Arbejde \> Oplysninger om arbejdslinje**.
 1. Find og vælg en af de arbejdslinjer, du har oprettet for denne demo.
 1. Vælg **Skift lokation** for at åbne dialogboksen **Vælg ny lokation**.
-1. Gå til dialogboksen **Vælg ny lokation** i feltet **Lokation** , og vælg en ny lokation for arbejdslinjen.
+1. Gå til dialogboksen **Vælg ny lokation** i feltet **Lokation**, og vælg en ny lokation for arbejdslinjen.
 1. Vælg **OK** for at anvende din ændring, og luk dialogboksen.
 
 > [!IMPORTANT]
@@ -121,7 +121,7 @@ Benyt følgende fremgangsmåde for at oprette noget plukarbejde.
 1. Vælg **Annuller arbejdslinje** for at åbne dialogboksen **Antal, der skal annulleres**.
 1. I dialogboksen **Antal, der skal annulleres** skal du ændre værdien i feltet **Antal** for at angive det antal, der skal *trækkes fra* det antal, der aktuelt er angivet for linjen. Feltet **Antal** viser som standard det samlede antal.
 
-    - Hvis du annullerer det samlede antal, ændres værdien for **Arbejdsstatus** til _Annulleret_ , men feltet **Arbejdsantal** vil stadig vise den oprindelige værdi.
+    - Hvis du annullerer det samlede antal, ændres værdien for **Arbejdsstatus** til _Annulleret_, men feltet **Arbejdsantal** vil stadig vise den oprindelige værdi.
     - Hvis du blot annuller en del af antallet, opdateres feltet **Arbejdsantal** for at vise den nye værdi, men værdien **Arbejdsstatus** ændres ikke.
 
 1. Vælg **OK** for at anvende din ændring, og luk dialogboksen.

@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017064"
+ms.locfileid: "4424944"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Genopfyldning med udbetalingskanbans
 
@@ -54,7 +54,7 @@ I dette scenario forbruger en produktionsproces (4) materiale fra en produktions
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurere lagerstedsarbejde for kanban-pluk til udbetalingskanban
 
-For at aktivere plukning af råvarer til udbetalingskanban skal du konfigurere bølgeskabeloner, arbejdsskabeloner og lokationsvejledninger for arbejdsordretypen **Kanban-pluk**. Denne arbejdsordretype understøtter ikke blot plukprocessen for udbetalingskanban. Den understøtter også plukprocessen til produktionskanban. Du kan dog konfigurere en separat plukproces for hver type kanban ved at adskille de bølgeskabelonerne, arbejdsskabelonerne og lokationsvejledninger. Hvis du vil adskille bølgeskabelonerne, arbejdsskabelonerne og lokationsvejledningerne, kan du angive kriterier for aktivitetstypen ( **Proces** eller **Overfør** ) i forespørgslerne til disse enheder.
+For at aktivere plukning af råvarer til udbetalingskanban skal du konfigurere bølgeskabeloner, arbejdsskabeloner og lokationsvejledninger for arbejdsordretypen **Kanban-pluk**. Denne arbejdsordretype understøtter ikke blot plukprocessen for udbetalingskanban. Den understøtter også plukprocessen til produktionskanban. Du kan dog konfigurere en separat plukproces for hver type kanban ved at adskille de bølgeskabelonerne, arbejdsskabelonerne og lokationsvejledninger. Hvis du vil adskille bølgeskabelonerne, arbejdsskabelonerne og lokationsvejledningerne, kan du angive kriterier for aktivitetstypen (**Proces** eller **Overfør**) i forespørgslerne til disse enheder.
 
 ## <a name="configure-the-withdrawal-kanban"></a>Konfigurere udbetalings-kanban
 

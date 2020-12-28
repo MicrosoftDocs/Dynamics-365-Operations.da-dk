@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 741c8af7eaabe23c03546daddd0a9a422146f575
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793557"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668975"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Undervisningskatalog til brugere af Dynamics 365 Supply Chain Management
 
@@ -50,6 +50,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | [Konfigurere og administrere produkter og lager i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Produktoplysninger er rygraden for supply chain- og detailprogrammer på tværs af alle brancher. I de forskellige moduler i en virksomhedsløsning kræves der produktspecifikke oplysninger og konfigurationer for at administrere de forretningsprocesser, der er relateret til bestemte produkter, produktfamilier, styklister og produktkategorier. Lagerrapporter viser på forskellige måder, hvor stor lagerbeholdning du har, og forklarer, hvordan du kan blive mere effektiv i dine lagerinvesteringer. Varedisponering hjælper med at strømline din planlægning på baggrund af foruddefinerede faktorer, så du effektivt kan planlægge, hvilke materialer der skal købes, overføres eller fremstilles. | Gratis onlinelæringssti i dit eget tempo | 14 timer |
 | [Konfigurere og administrere indkøb og leverandører i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Processen med at finde og samarbejde med leverandører, indkøbe produkter og sikre kvaliteten af varer og tjenester er alle vigtige faktorer, der har indflydelse på et firmas omdømme og succes. | Gratis onlinelæringssti i dit eget tempo | 14 timer |
 | [Konfigurere og administrere salg og kunder i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | Processen med at arbejde med kunder, forstå salgsprocessens livscyklus og oprette salgsaftaler er alle vigtige faktorer, der har indflydelse på et firmas succes. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
+| [Varedisponering i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/master-planning-supply-chain-management/) | Med Varedisponering kan virksomheder identificere og afbalancere deres fremtidige behov for råmaterialer og kapacitet. Varedisponering vurderer, hvilke råvarer og kapaciteter der i øjeblikket er tilgængelige, og hvilke råvarer og kapaciteter der kræves for at færdiggøre produktionen. F.eks. identificeres, hvad der skal fremstilles, købes, overføres eller sættes på sikkerhedslager, før du kan fuldføre produktionen. | Gratis onlinelæringssti i dit eget tempo | 5 timer |
 | [Konfigurere og arbejde med lokationsstyring i Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Lokationsstyring i Dynamics 365 Supply Chain Management gør det lettere at optimere og strømline lagerprocesser i henhold til individuelle behov og giver indblik i dit lager og de værktøjer, der er med til at øge kundetilfredsheden og reducere omkostningerne. | Gratis onlinelæringssti i dit eget tempo | 8.5 timer |
 | [Konfigurere og arbejde med transportstyring i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Modulet transportstyring i Dynamics 365 Supply Chain Management hjælper dig med at finde den mest effektive måde at levere varer til kunderne på. Transportstyring beregner den billigste og hurtigste måde at levere varer på og giver dig mulighed for at identificere leverandør- og ruteplanlægningsløsninger til indgående og udgående ordrer. | Gratis onlinelæringssti i dit eget tempo | 3 timer |
 | [Arbejde med aktivstyring for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Aktivstyring er et tilføjelsesprogram i Dynamics 365 Supply Chain Management, der bruges til at administrere aktiver, der bruges i virksomhedens daglige drift. Eksempler på disse typer aktiver er maskineri, produktionsudstyr og gaffeltrucks. | Gratis onlinelæringssti i dit eget tempo | 12.5 timer |

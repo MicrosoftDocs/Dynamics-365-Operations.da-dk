@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017707"
+ms.locfileid: "4424965"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutelayout for id-nummeretiketter
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Her er en beskrivelse af dette format:
 
-- `FieldName` er navnet på datafeltet (f.eks. **Antal** ).
+- `FieldName` er navnet på datafeltet (f.eks. **Antal**).
 - `FormatString` definerer, hvordan dataene skal udskrives.
 
-Følgende eksempler viser, hvordan du kan tilpasse feltet arbejdsantal ( **Antal** ):
+Følgende eksempler viser, hvordan du kan tilpasse feltet arbejdsantal (**Antal**):
 
 - Hvis du altid vil have vist fire cifre (ved hjælp af nuller som pladsholdere), skal du bruge `$Qty:0000$`. Hvis antallet f.eks. er 10, vil etiketten vise "0010".
 - Hvis du altid vil have vist to decimaler, skal du bruge `$Qty:0.00$`. Hvis antallet f.eks. er 10, vil etiketten vise "10,00".

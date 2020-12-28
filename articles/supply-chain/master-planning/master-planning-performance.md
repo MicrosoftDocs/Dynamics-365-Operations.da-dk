@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: fa8426c3a1f19f8607f45e9ac4d57300abddb161
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323640"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424846"
 ---
 # <a name="improve-master-planning-performance"></a>Forbedre ydeevne af varedisponering
 
@@ -56,7 +56,7 @@ Antallet af hjælpefunktioner, der bruges under varedisponering, skal være mind
 
 Ved at ændre indstillingen **Antal opgaver i bundt med hjælpefunktioner** (dvs. bundtets størrelse) kan du muligvis reducere kørselstiden. Denne indstilling styrer antallet af varer, der er planlagt sammen af en enkelt hjælpefunktion.
 
-Du kan indstille parameteren **Antal opgaver i bundt** i sektionen **Performance** under fanen **Generelt** på siden **Varedisponeringsparametre** (**Varedisponering \> Konfiguration \> Varedisponeringsparametre**). Den bedste værdi for denne parameter afhænger af dine data. Det anbefales derfor, at du starter med værdien **1**og derefter forsøger dig frem for at bestemme den bedste værdi for din konfiguration.
+Du kan indstille parameteren **Antal opgaver i bundt** i sektionen **Performance** under fanen **Generelt** på siden **Varedisponeringsparametre** (**Varedisponering \> Konfiguration \> Varedisponeringsparametre**). Den bedste værdi for denne parameter afhænger af dine data. Det anbefales derfor, at du starter med værdien **1** og derefter forsøger dig frem for at bestemme den bedste værdi for din konfiguration.
 
 Det anbefales generelt, at du øger antallet af opgaver, når antallet af elementer er meget stort (i hundredtusindvis). Ellers skal du reducere antallet af opgaver. For følgende specifikke industrier anbefales disse punkter:
 

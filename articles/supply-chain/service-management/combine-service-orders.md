@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 17fbed59b1fe7bec80f25f74451872efd61bed62
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976994"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424416"
 ---
 # <a name="combine-service-orders"></a>Kombinere serviceordrer   
 
@@ -57,7 +57,7 @@ Du opretter en serviceaftale med 31. marts 2007 som startdato. I feltet **Kombin
 <tr class="header">
 <th><p>Aftalelinjenummer</p></th>
 <th><p>Posteringstype</p></th>
-<th><p>Betegnelse</p></th>
+<th><p>Beskrivelse</p></th>
 <th><p>Interval</p></th>
 <th><p>Seriviceobjekt</p></th>
 <th><p>Igangsæt dato</p></th>

@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016879"
+ms.locfileid: "4424977"
 ---
 # <a name="batch-balancing"></a>Batchtilpasning
 
@@ -97,7 +97,7 @@ Stof B har basisattributten X og et målniveau på 30, og det medtages i en form
 
 ### <a name="none"></a>None
 
-Når du anvender batchtilpasningsprocessen, og stoftypen er **None** , er den forkalkulerede mængde og den tilpassede mængde på formellinjen i batchordren ens.
+Når du anvender batchtilpasningsprocessen, og stoftypen er **None**, er den forkalkulerede mængde og den tilpassede mængde på formellinjen i batchordren ens.
 
 **Eksempel**
 
@@ -115,7 +115,7 @@ Relationen mellem et aktivt stof og et supplerende stof konfigureres på siden *
 
 Benyt følgende fremgangsmåde for at konfigurere forhold mellem stoffer.
 
-1.  Vælg **Administration af produktoplysninger** \> **Styklister og formler** \> **Formler** , åbn en formellinje, og vælg derefter **Stoffer** for at åbne siden **Kompensationsprincip**.
+1.  Vælg **Administration af produktoplysninger** \> **Styklister og formler** \> **Formler**, åbn en formellinje, og vælg derefter **Stoffer** for at åbne siden **Kompensationsprincip**.
 
 2.  Vælg den linje, der repræsenterer et kompensationsprincip, og vælg derefter det aktive stof, der skal kompenseres.
 
@@ -147,7 +147,7 @@ Et *fyldstof* er et neutralt stof, der bruges til at nå den ønskede afgangsmæ
 
 **Eksempel**
 
-Du har udarbejdet et produkt, som indeholder ingredienser A, B, C og D for en formelstørrelse på 100 liter. Du har beregnet den tilpassede mængde af alle stoftyper undtagen stoftypen **Fyld** , som bruges på én linje.
+Du har udarbejdet et produkt, som indeholder ingredienser A, B, C og D for en formelstørrelse på 100 liter. Du har beregnet den tilpassede mængde af alle stoftyper undtagen stoftypen **Fyld**, som bruges på én linje.
 Den tilpassede mængde af fyldstoffet beregnes som forskellen mellem batchstørrelsen på 100 liter, og summen af stofferne A, B og C:
 
 100 - (20 + 25,71 + 14,72) = 39,57
@@ -156,7 +156,7 @@ Den tilpassede mængde af fyldstoffet beregnes som forskellen mellem batchstørr
 ---------------------------
 
 Batchtilpasningsprocessen udføres fra siden **Batchtilpasning**.
-Vælg **Omkostningsstyring** \> **Batchordrer** , og vælg derefter under fanen **Proces** **Batchtilpasning**. Batchtilpasning er tilgængelig for batchordrer, der har status **Startet**.
+Vælg **Omkostningsstyring** \> **Batchordrer**, og vælg derefter under fanen **Proces** **Batchtilpasning**. Batchtilpasning er tilgængelig for batchordrer, der har status **Startet**.
 
 Generelt kan batchtilpasning anvendes på batchordrer, hvis formlen har mindst én formellinje, hvor stoftypen er **Aktiv**. (Du kan se en undtagelse fra denne regel i afsnittet "Batch ordrer, der ikke kan anvendes til batchtilpasning" senere i dette emne).
 
@@ -171,7 +171,7 @@ Batchtilpasningsprocessen kan opdeles i to underprocesser:
 I underprocesserne til afstemning af batchstofferne beregnes mængden af stoffer, der skal bruges til et produktionsbatch, ud fra de valgte batchnumre, der har aktive stoffer. Som hovedregel kan beregningen kun fuldføres, hvis der er fuld dækning for alle stoffer. Du kan ikke kun tilpasse en del af det batch, som batchordren er konfigureret til at producere.
 
 [!NOTE]
-Du kan ikke gemme en beregning og derefter fuldføre kørslen af batchtilpasningsprocessen senere. Hvis du lukker siden **Batchtilpasning** , skal du gentage beregningen for at fuldføre processen.
+Du kan ikke gemme en beregning og derefter fuldføre kørslen af batchtilpasningsprocessen senere. Hvis du lukker siden **Batchtilpasning**, skal du gentage beregningen for at fuldføre processen.
 
 ### <a name="confirm-and-release-the-formula"></a>Bekræft og frigiv formlen
 

@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367286"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424667"
 ---
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbekræftelse for klyngepluk
 
@@ -39,6 +39,6 @@ Varekontrol for klyngepluk fungerer på samme måde, som når du kontrollerer va
 1. I menupunktet på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse: **Lokationsstyring** > **Lokationsstyring** > **Opsætning** > **Mobilenhed** > **Menupunkter i mobilenhed**.
 1. Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden.
 
-|        Indstilling        |                                    Betegnelse                                    |
+|        Indstilling        |                                    Beskrivelse                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Bekræftelse af produkt | Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes. |

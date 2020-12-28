@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988369"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424411"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Oprette flytteordrer fra lagerstedsappen
 
@@ -141,9 +141,9 @@ I dette afsnit forklares, hvordan du kan aktivere en arbejdsskabelon for automat
 1. I **Felt** på linjen, der er tilføjet, skal du vælge *Lagersted*.
 1. Vælg **51** i feltet *Kriterier*.
 1. Vælg fanen **Sortering**.
-1. Vælg **Tilføj**, og angiv **Felt** til *Fundet nummerplade-id*. Når du markerer dette felt, aktiveres værktøjslinjeknappen **Arbejdshovedpauser**.
+1. Vælg **Tilføj**, og angiv **Felt** til *Fundet nummerplade-id*. Når du markerer dette felt, aktiveres værktøjslinjeknappen **Opgaveoverskriften skifter**.
 1. Vælg **OK** efterfulgt af **Ja** for at nulstille grupperingen og vende tilbage til siden **Arbejdsskabeloner**.
-1. Vælg **Arbejdshovedpauser**, og aktivér **Gruppér efter dette felt** for dette **Fundne nummerplade-id**, og luk ruden.
+1. Vælg **Opgaveoverskriften skifter**, og aktivér **Gruppér efter dette felt** for dette **Fundne nummerplade-id**, og luk ruden.
 
 > [!NOTE]
 > Det er ikke alle opsætninger, der kan behandles automatisk, f.eks. fastvægtvarer og brugen af blandede sporingsdimensioner.

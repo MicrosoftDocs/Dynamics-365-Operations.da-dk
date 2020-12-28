@@ -18,11 +18,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 540ba2266ea74c36babce57670f84159c89018f1
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383412"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424881"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Overføre fysisk lager på lagersted
 
@@ -48,7 +48,7 @@ Denne procedure fører dig gennem processen med at oprette og bogføre en lagero
 8. Indtast eller vælg en værdi i feltet **Til lokalitet**. Hvis du bruger USMF, kan du vælge 'BULK-001'.  
 9. Angiv et tal i feltet **Antal**.
 10. Klik på fanen **Lagerdimensioner** i oversigtspanelet **Linjedetaljer**.
-11. I **Fra lagerdimensioner**skal du angive eller vælge en værdi i feltet **Id-nummer**. Hvis du bruger USMF, kan du vælge '24'.  
+11. I **Fra lagerdimensioner** skal du angive eller vælge en værdi i feltet **Id-nummer**. Hvis du bruger USMF, kan du vælge '24'.  
 12. Klik på **Gem**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Bogfør lageroverførselskladden

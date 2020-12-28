@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018347"
+ms.locfileid: "4425034"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Oprette en genopfyldningsordre til konsignation
 
@@ -33,7 +33,7 @@ Dette emne forklarer, hvordan du kan oprette en genopfyldningsordre til konsigna
 ## <a name="create-a-consignment-replenishment-order"></a>Oprette en genopfyldningsordre til konsignation
 1. Gå i navigationsruden til **Moduler > Indkøb og forsyning > Konsignation > Genopfyldningsordrer til konsignation**.
 2. Vælg **Ny**.
-3. I feltet **Kreditorkonto** skal du vælge kreditor **US-104** (du skal vælge en kreditor, der er registreret som ejer på siden **lagerejere** ). 
+3. I feltet **Kreditorkonto** skal du vælge kreditor **US-104** (du skal vælge en kreditor, der er registreret som ejer på siden **lagerejere**). 
 4. Vælg **OK**.
 5. Vælg **Tilføj linje**.
 6. I feltet **varenummer** skal du skrive `M9211CI` (du skal vælge en vare, der er oprettet til konsignationslager).
@@ -53,7 +53,7 @@ Dette emne forklarer, hvordan du kan oprette en genopfyldningsordre til konsigna
 ## <a name="receive-items"></a>Modtag varer
 1. Vælg **Produktkvittering**.
 2. Skriv en værdi i feltet **Ekstern produktkvittering**.
-3. Skriv et tal i feltet **Antal** , der er lavere end det tal, der vises der. 
+3. Skriv et tal i feltet **Antal**, der er lavere end det tal, der vises der. 
 4. Vælg **OK**.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontroller lagerbeholdningen

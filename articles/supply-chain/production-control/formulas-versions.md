@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986968"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424562"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler og formelversioner
 
@@ -41,7 +41,7 @@ Et eksempel på en formel er formlen for en cookie med chokoladestykker. Til ing
 
 Når du opretter en formellinje, kan du bruge linjetypen til at angive, hvordan systemet skal håndtere linjen, når du kører varedisponering og producerer batchordrer. Hver linjetype giver et forskelligt resultat. I nedenstående tabel beskrives de linjetyper, du kan vælge. 
 
-| Linjetype     | Betegnelse  |
+| Linjetype     | Beskrivelse  |
 |---------------|--------------|
 | Post          | Vælg **Vare**, når varen er en råvare eller et halvfabrikata, der plukkes fra lager, eller når varen er en service. |
 | Fantom       | Vælg **Fantom**, når du vil udfolde alle de lavere formelvareniveauer, der er indeholdt på formellinjer. Når du forkalkulerer batchordren, og formelvarerne nedbrydes, vises de indgående varer som formellinjer på batchordren. Desuden føjes de tilsvarende ruter til produktionsruten. Formelvarer udfoldes ved hjælp af den aktuelle konfiguration. Når du bruger linjetypen **Fantom**, kan du håndtere konfigurationer af produktion og måling, der opstår på forskellige formelniveauer. Hvis du vælger **Fantom** for et produkt på oversigtspanelet **Tekniker** på siden **Frigivne produktdetaljer** og derefter bruger dette produkt i en formel, ændres linjetypen for formellinjen til **Fantom**. Du kan ikke vælge **Fantom** for en fangstvægtvare eller for varer, hvor produktionstypen er **Samprodukt**, **Biprodukt** eller **Planlægningsvare**. |

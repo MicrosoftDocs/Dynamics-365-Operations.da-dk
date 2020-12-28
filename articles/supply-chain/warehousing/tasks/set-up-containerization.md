@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017776"
+ms.locfileid: "4424959"
 ---
 # <a name="set-up-containerization"></a>Konfigurere containerisering
 
@@ -75,7 +75,7 @@ Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lo
 5. Skriv en værdi i feltet **Kode for bølgetrin**.
 6. Markér afkrydsningsfeltet **Tillad opdeling af plukninger**.
 7. Vælg **Gem**.
-8. Vælg **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt** , når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
+8. Vælg **Begrænsninger i containerblanding**. Med pauser i blandingsregler kan du angive regler for fordelingslinjer for pakning i containere. Hvis du for eksempel tilføjer **Varenummerfelt**, når varer tildeles containerne, oprettes der en ny container, når der er et nyt varenummer. Dette er vil forhindre, at arbejdere pakker fordelingslinjer for to forskellige kunder i samme container.  
 9. Vælg **Ny**.
 10. Vælg en indstilling i feltet **Tabel**.
 11. Indtast eller vælg en værdi i feltet **Valg af felt**.

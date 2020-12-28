@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 206d6d6769d1dedcbfefa589fd72903e65a25ba6
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018784"
+ms.locfileid: "4424947"
 ---
 # <a name="create-purchase-orders"></a>Opret indkøbsordrer
 
@@ -42,7 +42,7 @@ Når du opretter en ny indkøbsordre, åbnes en dialogboks, hvor du kan indtaste
 
 Det første, du skal overveje, når du opretter en indkøbsordre, er ordretypen. Typen **Indkøbsordre** bruges oftest. Men hvis du har brug for en kreditfaktura, kan du bruge typen **Returneret ordre**.  
 
-Du skal angive leverandøren i feltet **Kreditorkonto**. Du kan søge på kontoen eller kreditornavnet for dette felt. Hvis en leverandør leverer fra flere steder, men bruger en enkelt fakturakonto, kan du vælge fakturakontoen i feltet **Fakturakonto** og derefter bruge kontoen sammen med forskellige kreditorkonti. Hvis du skal oprette en indkøbsordre for produkter, der ikke bestilles flere gange, kan du bruge indstillingen **Engangsleverandør**. Denne indstilling opretter automatisk en ny kreditorkonto, der er markeret som engangskonto, for at understøtte en senere oprydningsproces for engangskonti i **Kreditor** -modulet. Når du vælger en kreditorkonto, arver mange felter i indkøbsordrehovedet standardværdier fra de oplysninger, der er tilknyttet kreditorkontoen. For eksempel kopieres de standardlokationen for levering og lagersted fra kreditoroplysningerne. Du kan dog tilsidesætte disse standardværdier, hvis købet skal sendes til et andet sted.  
+Du skal angive leverandøren i feltet **Kreditorkonto**. Du kan søge på kontoen eller kreditornavnet for dette felt. Hvis en leverandør leverer fra flere steder, men bruger en enkelt fakturakonto, kan du vælge fakturakontoen i feltet **Fakturakonto** og derefter bruge kontoen sammen med forskellige kreditorkonti. Hvis du skal oprette en indkøbsordre for produkter, der ikke bestilles flere gange, kan du bruge indstillingen **Engangsleverandør**. Denne indstilling opretter automatisk en ny kreditorkonto, der er markeret som engangskonto, for at understøtte en senere oprydningsproces for engangskonti i **Kreditor**-modulet. Når du vælger en kreditorkonto, arver mange felter i indkøbsordrehovedet standardværdier fra de oplysninger, der er tilknyttet kreditorkontoen. For eksempel kopieres de standardlokationen for levering og lagersted fra kreditoroplysningerne. Du kan dog tilsidesætte disse standardværdier, hvis købet skal sendes til et andet sted.  
 
 Hvis leverandøren har angivet et referencenummer for ordren, kan du registrere oplysningerne i feltet **Leverandørreference**. For ordrer, der returneres, skal du angive en værdi i feltet **RMA** for at henvise til leverandørens tilladelse til at behandle returneringen.  
 
@@ -63,25 +63,25 @@ Du kan kontrollere detaljerne for lagerposteringsstatussen for produkter på lag
 
 En indkøbsordrelinje, der bruges til at returnere et produkt til leverandøren, har et negativt antal. Du kan vælge et bestemt parti, som skal returneres, ved hjælp af handlingen **Reservation**.  
 
-Nogle gange kan du opdele det antal, du har bestilt, så forskellige dele af det leveres på forskellige datoer. Du kan konfigurere disse leverancer ved hjælp af handlingen **Leveranceplan** , som er tilgængelig i menuen **Indkøbsordrelinje** i visningen **Linjer**.  
+Nogle gange kan du opdele det antal, du har bestilt, så forskellige dele af det leveres på forskellige datoer. Du kan konfigurere disse leverancer ved hjælp af handlingen **Leveranceplan**, som er tilgængelig i menuen **Indkøbsordrelinje** i visningen **Linjer**.  
 
 Gebyrer kan føjes automatisk til indkøbsordrelinjer, hvis der er oprettet automatiske gebyrer for kreditoren eller kreditorgebyrgruppen og for varen eller varegebyrgruppen. Dog mere typisk tilføjes gebyrer manuelt på ordrelinjeniveau. Når du vil tilføje et gebyr, skal du åbne siden **Vedligehold gebyrer** ved hjælp af handlingen **Vedligehold gebyrer** i menuen **Finans** i visningen **Linjer**. Fordelen ved at tilføje gebyrer direkte på ordrelinjeniveau er, at gebyret kan tildeles som en lageromkostning. Du kan konfigurere gebyrkoder til kontoproduktomkostninger ved at bruge debetindstillingen **Vare**. Disse typer af gebyrer, der skal fordeles fra indkøbsordrehovedets linjer, før ordren kan bekræftes. For eksempel kan du fordele gebyrer, der er baseret på antallet på hver linje. Gebyrkategorien påvirker også, hvordan gebyrer efterkalkuleres. For eksempel angiver faste gebyrer et fast beløb, og procentbaserede gebyrer beregnes som en procentdel af nettobeløbet for ordrelinjen. IO'er kan tildeles til en belastning, og belastningen kan indeholde et overslag over de forventede udgifter til transportomkostningerne. Du kan tildele denne udgift fra belastningen tilbage til IO-linjerne.
 
 ## <a name="purchase-order-actions"></a>Indkøbsordrehandlinger
 Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](../../fin-and-ops/get-started/action-search.md) til at finde det relevante menupunkt.  
 
-Du kan konfigurere produkter i ordren, så de får supplerende varer. Supplerende varer er varer, der skal eller kan købes sammen med andre produkter. Supplerende produkter kan tilføjes gratis, som ledsageprodukter, eller du vil muligvis kunne afgøre, om du vil føje til ordren eller ej. Når hver ordrelinje er tilføjet, kan du gennemse de supplerende varer. Dog vil det nok være mere praktisk at gennemgå og tilføje relevante supplerende varer til alle ordrelinjer ved hjælp af siden **Supplerende varer** , som du kan åbne fra handlingsruden.  
+Du kan konfigurere produkter i ordren, så de får supplerende varer. Supplerende varer er varer, der skal eller kan købes sammen med andre produkter. Supplerende produkter kan tilføjes gratis, som ledsageprodukter, eller du vil muligvis kunne afgøre, om du vil føje til ordren eller ej. Når hver ordrelinje er tilføjet, kan du gennemse de supplerende varer. Dog vil det nok være mere praktisk at gennemgå og tilføje relevante supplerende varer til alle ordrelinjer ved hjælp af siden **Supplerende varer**, som du kan åbne fra handlingsruden.  
 
 Rabatter føjes normalt til linjer, når de oprettes. Nogle rabatter gælder dog for hele ordren:
 
 -   Handlingen **Slutrabat** beregner en slutrabatprocent, som anvendes på hele ordren. Du må ikke forveksle denne rabat med kasserabatprocenten. Kasserabatter anvendes, når fakturaen er betalt, og de afhænger af, om betalingen sker på en bestemt dato.
 -   Hvis en samkøbsrabat gælder, skal du bruge handlingen **Samkøbsrabat** til at beregne og tildele den til ordren. Samkøbsrabatter er rabatter, der kan tilbydes, hvis en blanding af varer på ordren overstiger en fælles tærskel. Kun få virksomheder bruger denne type rabat.
 
-Gebyrer, der har en gebyrkode, der bruger debettypen **Vare** , skal være tildelt til linjeniveauet, før ordren kan bekræftes. Det kan være praktisk at tildele disse gebyrer på ordrehovedniveau, så du kan angive det samlede gebyrbeløb. Men i dette tilfælde skal gebyret derefter fordeles på hver linje, før ordren kan bekræftes. Du kan bruge handlingen **Fordel gebyrer** til at opdele beløb fra de gebyrer, der er tildelt på hovedniveau, på ordrelinjerne. Gebyrer kan opdeles i henhold til nettobeløbet for hver linje i overensstemmelse med det antal, der er bestilt, eller jævnt fordelt på ordrelinjerne. Når du har fordelt gebyrer på linjerne, fjernes gebyret fra ordrehovedet.  
+Gebyrer, der har en gebyrkode, der bruger debettypen **Vare**, skal være tildelt til linjeniveauet, før ordren kan bekræftes. Det kan være praktisk at tildele disse gebyrer på ordrehovedniveau, så du kan angive det samlede gebyrbeløb. Men i dette tilfælde skal gebyret derefter fordeles på hver linje, før ordren kan bekræftes. Du kan bruge handlingen **Fordel gebyrer** til at opdele beløb fra de gebyrer, der er tildelt på hovedniveau, på ordrelinjerne. Gebyrer kan opdeles i henhold til nettobeløbet for hver linje i overensstemmelse med det antal, der er bestilt, eller jævnt fordelt på ordrelinjerne. Når du har fordelt gebyrer på linjerne, fjernes gebyret fra ordrehovedet.  
 
 IO'er kan konfigureres til at kræve, at budgetmidler fordeles på ordren, før den kan behandles. I dette tilfælde kan du bruge handlingen **Budgetkontrol** til at fordele budgettet.  
 
-Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du kræve yderligere oplysninger om produkter eller ydelser, eller du skal muligvis have tilladelse til forbruget. Der er flere måder at holde en ordre tilbage. For eksempel kan du vente med at bekræfte ordren. Hvis en arbejdsgang til ændringsstyring anvendes, skal du ikke sende ordren til godkendelse. Hvis du må blokere alle ordrer for en bestemt kreditor, kan du også markere kreditoren som **På hold** , for at der kan udføres behandling på kreditormasteren. Der findes også tilfælde, der kan forhindre, at ordren behandles. Behandling kan for eksempel være forhindret, hvis kreditmaksimum er overskredet, eller hvis de krævede budgetmidler ikke er tilgængelige.
+Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du kræve yderligere oplysninger om produkter eller ydelser, eller du skal muligvis have tilladelse til forbruget. Der er flere måder at holde en ordre tilbage. For eksempel kan du vente med at bekræfte ordren. Hvis en arbejdsgang til ændringsstyring anvendes, skal du ikke sende ordren til godkendelse. Hvis du må blokere alle ordrer for en bestemt kreditor, kan du også markere kreditoren som **På hold**, for at der kan udføres behandling på kreditormasteren. Der findes også tilfælde, der kan forhindre, at ordren behandles. Behandling kan for eksempel være forhindret, hvis kreditmaksimum er overskredet, eller hvis de krævede budgetmidler ikke er tilgængelige.
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------

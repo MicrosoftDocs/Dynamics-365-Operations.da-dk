@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982251"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424443"
 ---
 # <a name="weighted-average-date"></a>Gennemsnitskostdato
 
@@ -38,7 +38,7 @@ Hvis der kun har været én tilgang til og med denne dato, er det ikke nødvendi
 
 Følgende formel bruges til at beregne det vægtede gennemsnit for datoefterkalkulationsmetoden: 
 
-Vægtet gennemsnit = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Vægtet gennemsnit = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
 
 Under lagerlukning udføres beregningen dagligt gennem lukningsperioden, som vist i nedenstående illustration. 
 
@@ -91,7 +91,7 @@ Følgende illustration viser disse posteringer:
 -   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Opsummeret udligning for gennemsnitskostdato, når indstillingen Medtag fysisk værdi ikke bruges
-Det vægtede gennemsnit er baseret på princippet om, at alle tilgange i en lukningsperiode opsummeres i en ny lageroverførselspost. Denne postering kaldes*Lagerlukning for vægtet gennemsnit*. Alle dagens tilgange udlignes mod afgangen i den nyoprettede lageroverførselspostering. Alle dagens afgange udlignes mod tilgangen i den nye lageroverførselspostering. Hvis den disponible lagerbeholdning er positiv efter lagerlukningen, opsummeres denne disponible lagerbeholdning og værdien af lageret i den nye lageroverførselsposteringstilgang. Hvis den disponible lagerbeholdning er negativ efter lagerlukningen, udgør den disponible lagerbeholdning og værdien af lageret summen af individuelle afgange, der ikke er blevet fuldt udlignet. 
+Det vægtede gennemsnit er baseret på princippet om, at alle tilgange i en lukningsperiode opsummeres i en ny lageroverførselspost. Denne postering kaldes *Lagerlukning for vægtet gennemsnit*. Alle dagens tilgange udlignes mod afgangen i den nyoprettede lageroverførselspostering. Alle dagens afgange udlignes mod tilgangen i den nye lageroverførselspostering. Hvis den disponible lagerbeholdning er positiv efter lagerlukningen, opsummeres denne disponible lagerbeholdning og værdien af lageret i den nye lageroverførselsposteringstilgang. Hvis den disponible lagerbeholdning er negativ efter lagerlukningen, udgør den disponible lagerbeholdning og værdien af lageret summen af individuelle afgange, der ikke er blevet fuldt udlignet. 
 
 I følgende scenarie er flere økonomisk opdaterede tilgange og afgange blevet bogført i perioden. Ved lagerlukningen evaluerer systemet hver enkelt dag for at bestemme, hvordan den enkelte dag skal behandles ved lukningen. 
 

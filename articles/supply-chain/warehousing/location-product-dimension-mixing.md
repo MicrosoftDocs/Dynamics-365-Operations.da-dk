@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017155"
+ms.locfileid: "4424951"
 ---
 # <a name="location-product-dimension-mixing"></a>Blanding af produktdimension for lokation
 
@@ -48,7 +48,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Aktivér specifik blanding af produktdimensioner på lokation** til *Ja*.
 
     > [!NOTE]
-    > Du kan kun angive denne indstilling til *Ja* , hvis indstillingen **Tillad blandede varer** er angivet til *Nej*.
+    > Du kan kun angive denne indstilling til *Ja*, hvis indstillingen **Tillad blandede varer** er angivet til *Nej*.
 
 1. I oversigtspanelet **Tilladt blanding af produktdimensioner** skal du angive **Størrelse** til *Ja*. I det scenarie, der beskrives i dette emne, kan der kun foretages blanding for produkter med forskellige **størrelsesdimensioner**. Der findes dog også andre indstillinger.
 1. Vælg **Gem**.
@@ -57,7 +57,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 
 1. Gå til **Administration af produktoplysninger \> Produkter \> Produktmastere**.
 1. Vælg **Ny** i handlingsruden for at oprette en produktmaster.
-1. Angiv følgende værdier i dialogboksen **Nyt produkt** :
+1. Angiv følgende værdier i dialogboksen **Nyt produkt**:
 
     - **Produkttype:** *Vare*
     - **Produktundertype:** *Produktmaster*
@@ -67,7 +67,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
     - **Konfigurationsteknologi:** *Foruddefineret variant*
 
 1. Vælg **OK**.
-1. Gå til siden **Produktdetaljer** i oversigtspanelet **Generelt** , og angiv følgende værdier:
+1. Gå til siden **Produktdetaljer** i oversigtspanelet **Generelt**, og angiv følgende værdier:
 
     - **Generér varianter automatisk:** *Ja*
     - **Størrelsesgruppe:** *CASUALDHIR*
@@ -79,16 +79,16 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 ### <a name="release-products-to-the-usmf-company"></a>Frigive produkter til USMF-firmaet
 
 1. Vælg **Frigiv produkter** i handlingsruden.
-1. På siden **Vælg produkter, der skal frigives** , skal du bekræfte, at produktnummeret *B0001* er på listen og derefter vælge **Næste**.
+1. På siden **Vælg produkter, der skal frigives**, skal du bekræfte, at produktnummeret *B0001* er på listen og derefter vælge **Næste**.
 1. Vælg **Næste** for at bekræfte de produktvarianter, der skal frigives.
-1. På siden **Vælg firmaer, der skal frigives til** , skal du vælge *USMF* og derefter vælge **Næste** for at bekræfte valget.
+1. På siden **Vælg firmaer, der skal frigives til**, skal du vælge *USMF* og derefter vælge **Næste** for at bekræfte valget.
 1. Klik på **Bekræft valg** skal du vælge **Udfør** for at fuldføre frigivelsen.
 
     Du får vist meddelelsen "Operationen er udført".
 
 ### <a name="update-a-released-product-in-the-usmf-company"></a>Opdatere et frigivet produkt i USMF-firmaet
 
-1. Kontroller, at du er logget på **USMF** -firmaet.
+1. Kontroller, at du er logget på **USMF**-firmaet.
 1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter** for at færdiggøre oprettelse af det frigivne produkt.
 1. Find og vælg varenummer *B0001* for at åbne siden **Frigivne produktdetaljer**.
 1. Vælg **Rediger** i handlingsruden.
@@ -101,7 +101,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 
 1. Vælg **OK**.
 1. Gå til handlingsruden, og vælg **Reservationshierarki** i gruppen **Opsætning** under fanen **Produkt**.
-1. Angiv feltet **Reservationshierarki** til *Standard* , og vælg derefter **OK**.
+1. Angiv feltet **Reservationshierarki** til *Standard*, og vælg derefter **OK**.
 1. I oversigtspanelet **Generelt** skal du i sektionen **Administration** bemærke, at dine valg er blevet opdateret.
 1. Angiv **10** i feltet **Pris** i oversigtspanelet *Køb*.
 1. På oversigtspanelet **Administrer omkostninger** skal du i feltet **Varegruppe** angive *Lyd*.
@@ -113,7 +113,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 
 1. Gå til **Lokationsstyring \> Opsætning \> Lokationsvejledninger**.
 1. I den venstre rude skal du i feltet **Arbejdsordretype** vælge *Indkøbsordrer*.
-1. Vælg den lokationsvejledning, der hedder *24 PO Direct* , på listen.
+1. Vælg den lokationsvejledning, der hedder *24 PO Direct*, på listen.
 1. Gå til oversigtspanelet **Handlinger i lokationsvejledning** og vælg **Ny** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
@@ -140,7 +140,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 1. Vælg **Gem** i handlingsruden på siden **Lokationsvejledninger**.
 
 > [!NOTE]
-> Hvis du i feltet **Strategi** i oversigtspanelet **Handlinger i lokationsvejledning** bruger lokationsstrategien *Konsolider* , vil opsætningen af oversigtspanelet **Tilladt blanding af produktdimensioner** på **Lokationsprofiler** blive tilsidesat, og varer lægges på lager på samme lokation, også selvom denne virkemåde ikke er tilladt af opsætningen.
+> Hvis du i feltet **Strategi** i oversigtspanelet **Handlinger i lokationsvejledning** bruger lokationsstrategien *Konsolider*, vil opsætningen af oversigtspanelet **Tilladt blanding af produktdimensioner** på **Lokationsprofiler** blive tilsidesat, og varer lægges på lager på samme lokation, også selvom denne virkemåde ikke er tilladt af opsætningen.
 
 ### <a name="create-a-mobile-device-menu-item"></a>Oprette et menupunkt på en mobilenhed
 
@@ -173,15 +173,15 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 
 Dette demonstrationsscenarie viser, hvordan to forskellige produktvarianter kan anbringes på samme lokation, når lokationsprofilen ikke tillader blandede varer, men funktionen *Blanding af produktdimensioner på lokation* er aktiveret. I dette tilfælde skal du bruge varianten **Størrelse** som kriterium.
 
-Før du går i gang, skal du sikre dig, at der er tomme lokationer på lagerstedet *24* , der bruger *MASSE* -lokationsprofilen.
+Før du går i gang, skal du sikre dig, at der er tomme lokationer på lagerstedet *24*, der bruger *MASSE*-lokationsprofilen.
 
 ### <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
 
-Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme produktnummer, men med forskellige varianter af **Størrelse** , og en tredje linje for et andet produkt, der ikke har nogen varianter.
+Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme produktnummer, men med forskellige varianter af **Størrelse**, og en tredje linje for et andet produkt, der ikke har nogen varianter.
 
 1. Gå til **Kreditor \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre** :
+1. Angiv følgende værdier i dialogboksen **Opret indkøbsordre**:
 
     - **Kreditorkonto:** *1001*
     - **Lagersted:** *24*
@@ -212,15 +212,15 @@ Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme
 1. Log på lagerstedsappen som en bruger, der er aktiveret til lagersted *24*.
 1. Vælg menuen **Indgående**.
 1. Vælg **Modtagelse af indkøbsordrelinje**.
-1. Vælg feltet **IO-num** , angiv derefter indkøbsordrenummeret.
+1. Vælg feltet **IO-num**, angiv derefter indkøbsordrenummeret.
 1. Bekræft angivelsen ved at vælge knappen Bekræft (✔) nederst på siden.
-1. Angiv linjenummeret fra den indkøbsordre, der modtages. Marker feltet **LINJENUM** , og brug derefter det numeriske tastatur til at angive *1*.
+1. Angiv linjenummeret fra den indkøbsordre, der modtages. Marker feltet **LINJENUM**, og brug derefter det numeriske tastatur til at angive *1*.
 1. Bekræft indtastningen.
-1. Angiv det antal, der skal modtages. Vælg knappen plustegn ( **+** ) to gange for at øge værdien i feltet **Antal** til *2*.
+1. Angiv det antal, der skal modtages. Vælg knappen plustegn (**+**) to gange for at øge værdien i feltet **Antal** til *2*.
 1. Registrer din indtastning ved at vælge knappen (✔) nederst på siden, og bekræft derefter angivelsen ved at vælge knappen (✔) igen.
 1. Få vist oplysningerne på siden **Indkøbsordrer: Læg på lager**. Denne side viser det arbejde, der er oprettet for læg på lager-handlingen (arbejde 1).
 
-    Den lokation, hvor den modtagne vare skal lægges på lager, nummerpladen, varen, størrelsen og antallet på den linje i opgaven **Modtagelse indkøbsordrelinje** , som modtager den opgave, du netop har udført, vises.
+    Den lokation, hvor den modtagne vare skal lægges på lager, nummerpladen, varen, størrelsen og antallet på den linje i opgaven **Modtagelse indkøbsordrelinje**, som modtager den opgave, du netop har udført, vises.
 
 1. Bekræft læg på lager-arbejdet.
 1. Gentag trin 4 til 11 for indkøbsordrelinje 2. I trin 8 skal du dog angive et antal på *1*.
@@ -229,7 +229,7 @@ Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme
 
 1. Gentag trin 4 til 11 igen for indkøbsordrelinje 2. I trin 8 skal du angive et resterende antal på *1*.
 
-    Der oprettes et nyt læg på lager-arbejde (arbejde 3) for samme lokation som arbejde 1 og 2. Dette virkemåde opstår, fordi lokationsvejledningen *Konsolider* bruges, og oversigtspanelet **Tilladt blanding af produktdimensioner** i *Masse* -opsætningen af **Lokationsprofiler** tillader, at varianten **Størrelse** kan blandes på en lokation.
+    Der oprettes et nyt læg på lager-arbejde (arbejde 3) for samme lokation som arbejde 1 og 2. Dette virkemåde opstår, fordi lokationsvejledningen *Konsolider* bruges, og oversigtspanelet **Tilladt blanding af produktdimensioner** i *Masse*-opsætningen af **Lokationsprofiler** tillader, at varianten **Størrelse** kan blandes på en lokation.
 
 1. Gentag trin 4 til 11 for indkøbsordrelinje 3. I trin 8 skal du angive et antal på *1* for varenummer *A0001*.
 
@@ -238,4 +238,4 @@ Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme
 1. Vælg menuknappen øverst på siden (kaldes også hamburger eller hamburgerknappen), og vælg derefter **Annuller** for at afslutte **Modtagelse af indkøbsordrelinjer**.
 
 > [!TIP]
-> Du kan gentage dette scenarie, men denne gang skal du angive **Størrelse** - *Nej* under oversigtspanelet **Tillad blanding af produktdimensioner** på *Masse* **Lokationsprofiler** , så ingen af produktdimensionerne kan blandes. Hvis du i dette tilfælde modtager indkøbsordren, vil de enkelte produktvarianter blive lagt på lager på en ny lokation.
+> Du kan gentage dette scenarie, men denne gang skal du angive **Størrelse** - *Nej* under oversigtspanelet **Tillad blanding af produktdimensioner** på *Masse* **Lokationsprofiler**, så ingen af produktdimensionerne kan blandes. Hvis du i dette tilfælde modtager indkøbsordren, vil de enkelte produktvarianter blive lagt på lager på en ny lokation.

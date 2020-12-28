@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215694"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424512"
 ---
 # <a name="packing-materials-and-fees"></a>Emballage og gebyrer
 
@@ -65,10 +65,10 @@ Før du kan beregne emballagevægt, emballagegebyrer eller begge dele, skal du a
             - **Alle** – Opret en tildeling for alle varer.
 
             > [!NOTE]
-            > Du bør normalt foretage alle dine tildelinger på samme niveau **(Tabel**, **Gruppe**eller **Alle**). Hvis du bruger mere end ét niveau, vil den mest specifikke matchende tildeling blive brugt for hver vare. (Niveauet **Tabel** har højere prioritet end niveauet **Gruppe**, og begge niveauer tilsidesætter niveauet **Alle**.)
+            > Du bør normalt foretage alle dine tildelinger på samme niveau **(Tabel**, **Gruppe** eller **Alle**). Hvis du bruger mere end ét niveau, vil den mest specifikke matchende tildeling blive brugt for hver vare. (Niveauet **Tabel** har højere prioritet end niveauet **Gruppe**, og begge niveauer tilsidesætter niveauet **Alle**.)
 
         - **Varerelation** – hvis du vil tildele en enkelt vare, skal du vælge varen. Hvis du vil tildele en gruppe varer, skal du vælge emballagegruppen. Hvis du vil tildele til alle varer, skal du lade feltet være tomt.
-        - **Konfiguration**, **Størrelse**, **Farve**og **Typografi** – Angiv værdier for disse dimensioner, som du har brug for, for yderligere at definere den vare, du vil tildele til.
+        - **Konfiguration**, **Størrelse**, **Farve** og **Typografi** – Angiv værdier for disse dimensioner, som du har brug for, for yderligere at definere den vare, du vil tildele til.
         - **Emballageenhed** – Vælg den enhed, som varen er emballeret i, når emballagen anvendes. Denne enhed kan være forskellig fra den enhed, som varen er købt og gemt i.
         - **Emballageenhedsfaktor** – Angiv den omregningsfaktor, der skal bruges til omregning fra lagerenheden til emballageenheden. (Omregningen bruger formlen *Emballageenheder* = *Vareenheder* x *Emballageenhedsfaktor*.)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6428981fcf560c541634d9466695be7bce4cb453
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.openlocfilehash: 2686dd6db032239e2a3aac03f3998cee055302f6
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888947"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4425078"
 ---
 # <a name="maintenance-forecasts"></a>Vedligeholdelsesbudgetter
 
@@ -57,7 +57,7 @@ Du kan muligvis føje prognoselinjer til en arbejdsordre eller slette dem fra en
 
 Du kan føje varer til en vedligeholdelsesprognose for en arbejdsordre på tre måder. Du kan oprette linjer for varer (reservedele), der ikke er medtaget på listen over reservedele eller aktivstyklisten, du kan vælge reservedele på listen over godkendte reservedele, og du kan vælge varer fra aktivstyklisten.
 
-- Vælg det arbejdsordrejob, hvor der skal tilføjes en prognose, på siden **Vedligeholdelsesprognose for arbejdsordre**.
+- Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.
 
 - I oversigtspanelet **Varer** kan du føje varer til vedligeholdelsesprognosen ved at bruge den relevante metode.
 

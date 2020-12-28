@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ec150adb35eb0600844245b14cbec9e9632ab337
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424685"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiver
 
@@ -59,7 +59,7 @@ Anvend funktionen **Flyt aktiv** for at flytte et aktiv til enten en anden aktiv
 Brug funktionen **Erstat aktiv** i forbindelse med reparationer, renovering eller permanent udskiftning af et udslidt aktiv med et nyt aktiv. Denne funktion bruges til at erstatte underordnede aktiver i en aktivstruktur. I forbindelse med overordnede aktiver (altså aktiver, der i øjeblikket ikke har et overordnet aktiv), udføres denne udskiftning på et arbejdssted. Du finder flere oplysninger om, hvordan du erstatter overordnede aktiver på et arbejdssted i [Installer aktiver på arbejdssteder](../functional-locations/install-objects-on-functional-locations.md).
 
 > [!NOTE]
-> Hvis et værksted er relateret til din produktionsafdeling, kan du oprette arbejdssteder såsom **Værksted**, **Skrot**og **Lager** til håndtering af reparationen og udskiftningen af aktiverne.
+> Hvis et værksted er relateret til din produktionsafdeling, kan du oprette arbejdssteder såsom **Værksted**, **Skrot** og **Lager** til håndtering af reparationen og udskiftningen af aktiverne.
 
 1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
 2. Du skal vælge det underordnede aktiv, der skal erstattes, på listen. Hvis aktivet har underordnede aktiver, erstatter du også disse aktiver.

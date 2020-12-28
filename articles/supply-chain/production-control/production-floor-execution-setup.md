@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012463"
+ms.locfileid: "4424937"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurere en enhed til at køre grænsefladen på produktionsudstyr
 
@@ -31,9 +31,9 @@ Grænsefladen til kørsel af produktionsudstyr konfigureres for alle enheder i p
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Indstille konfiguration og filtre for en bestemt enhed
 
-Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge på siden til **Kørsel af produktionsudstyr** ved hjælp af en konto med en sikkerhedsrolle, der omfatter pligten *Supervisor for vedligeholdelse af tid*. (Blandt de indbyggede sikkerhedsroller er det kun *Shop floor-supervisor* , der har denne pligt). Følg derefter disse trin.
+Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge på siden til **Kørsel af produktionsudstyr** ved hjælp af en konto med en sikkerhedsrolle, der omfatter pligten *Supervisor for vedligeholdelse af tid*. (Blandt de indbyggede sikkerhedsroller er det kun *Shop floor-supervisor*, der har denne pligt). Følg derefter disse trin.
 
-1. Gå til den enhed, du vil konfigurere, og log på Microsoft Dynamics 365 Supply Chain Management som shop floor-supervisor. (Brug en konto, der omfatter pligten *Supervisor for vedligeholdelse af tid* ).
+1. Gå til den enhed, du vil konfigurere, og log på Microsoft Dynamics 365 Supply Chain Management som shop floor-supervisor. (Brug en konto, der omfatter pligten *Supervisor for vedligeholdelse af tid*).
 1. Kontroller, at der er en konfiguration tilgængelig for den enhed, du konfigurerer. Hvis der ikke allerede findes en konfiguration, bliver der leveret en standardkonfiguration. Du kan finde flere oplysninger om, hvordan du kan konfigurere en konfiguration, under [Konfigurere grænsefladen til kørsel af produktionsudstyr](production-floor-execution-configure.md).
 1. Gå til **Produktionsstyring \> Produktionsudførelse \> Kørsel af produktionsudstyr**.
 
@@ -45,8 +45,8 @@ Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge p
 1. Vælg et eller flere filtre, der skal anvendes på den aktuelle enhed. Disse filtre vil være med til at sikre, at der kun vises relevante job på enheden. Hvis du vil angive et filter, skal du vælge filtertypen for at åbne en liste over værdier og derefter vælge den værdi, der skal filtreres efter. Følgende filtre er tilgængelige:
 
     - **Produktionsenhed** – Dette er filteret på højeste niveau. Det henviser typisk til et stort arbejdsområde med flere ressourcegrupper og individuelle ressourcer.
-    - **Ressourcegruppe** – Dette er et filter på mellemniveau. Det refererer typisk til en samling relaterede ressourcer i et begrænset område af arbejdsområdet. Hvis du vælger et **Produktionsenhed** -filter først, viser listen over ressourcegrupper kun grupper fra denne enhed. Ellers vises alle tilgængelige ressourcegrupper.
-    - **Ressource** – Dette er det mest specifikke filter. Den henviser typisk til en bestemt maskine eller en anden enkelt ressource. Hvis du vælger et **Ressourcegruppe** - og/eller et **Produktionsenhed** -filter først, viser listen over ressourcer kun ressourcer fra denne gruppe og/eller enhed. Ellers vises alle tilgængelige ressourcer.
+    - **Ressourcegruppe** – Dette er et filter på mellemniveau. Det refererer typisk til en samling relaterede ressourcer i et begrænset område af arbejdsområdet. Hvis du vælger et **Produktionsenhed**-filter først, viser listen over ressourcegrupper kun grupper fra denne enhed. Ellers vises alle tilgængelige ressourcegrupper.
+    - **Ressource** – Dette er det mest specifikke filter. Den henviser typisk til en bestemt maskine eller en anden enkelt ressource. Hvis du vælger et **Ressourcegruppe**- og/eller et **Produktionsenhed**-filter først, viser listen over ressourcer kun ressourcer fra denne gruppe og/eller enhed. Ellers vises alle tilgængelige ressourcer.
 
 1. Vælg **OK**.
 1. Logonsiden vises, og enheden er klar til brug.

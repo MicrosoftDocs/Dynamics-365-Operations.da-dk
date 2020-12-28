@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677404"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424395"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 
@@ -71,7 +71,7 @@ Hvis du vil bruge funktionen *Bekræft og overfør*, skal du slå aktivere den p
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Last \> Lastskabeloner**.
 1. Vælg **Rediger** i handlingsruden for at sætte siden i redigeringstilstand.
-1. Marker afkrydsningsfeltet **Tillad opdeling af last under bekræftelse af forsendelse** for hver eksisterende skabelon, hvor du vil aktivere funktionen. Du kan også vælge **Ny** for at oprette en ny skabelon og konfigurere den, som du har brug for. Alle laster, du opretter ved hjælp af denne skabelon, nedarver denne funktionalitet. (Hvis du arbejder med **USMF**-demodata, skal du aktivere funktionen for lastskabelonen **20 Container**.
+1. Marker afkrydsningsfeltet **Tillad opdeling af last under bekræftelse af forsendelse** for hver eksisterende skabelon, hvor du vil aktivere funktionen. Du kan også vælge **Ny** for at oprette en ny skabelon og konfigurere den, som du har brug for. Alle laster, du opretter ved hjælp af denne skabelon, nedarver denne funktionalitet. (Hvis du arbejder med **USMF**-demodata, skal du aktivere funktionen for lastskabelonen **20 Container**.)
 
 ### <a name="prepare-your-work-templates"></a>Forberede arbejdsskabeloner
 
@@ -90,7 +90,7 @@ Denne opsætning er ikke påkrævet i alle situationer. Det eksempel, der vises 
 
 1. Vælg **OK** for at gemme dine indstillinger, og luk dialogboksen **Salg**.
 1. Hvis du får vist en meddelelse om, at gruppering bliver nulstillet, skal du vælge **Ja** for at fortsætte.
-1. I gitteret på den øverste del af siden **Arbejdsskabeloner** skal du vælge den skabelon, du netop har redigeret, og derefter skal du vælge **Arbejdshovedpauser**.
+1. I gitteret på den øverste del af siden **Arbejdsskabeloner** skal du vælge den skabelon, du netop har redigeret, og derefter skal du vælge **Opgaveoverskriften skifter**.
 1. Vælg **Rediger** i handlingsruden for at sætte siden i redigeringstilstand.
 1. Angiv følgende værdier i gitteret:
 

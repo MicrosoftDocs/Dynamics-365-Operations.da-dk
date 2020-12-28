@@ -17,11 +17,11 @@ ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017385"
+ms.locfileid: "4425044"
 ---
 # <a name="inventory-on-hand-list"></a>Listen Disponibel lagerbeholdning
 
@@ -48,33 +48,33 @@ For hver tilsvarende vare indeholder gitteret **Beholdning** følgende kolonner 
 |---|---|
 | Fysisk lager | Den fysiske mængde, der er tilgængelig på lageret. |
 | Fysisk reserveret | Samlet antal, der er reserveret fysisk. |
-| Fysisk disponibelt | Den tilgængelige (ikke reserverede) mængde, der er tilgængelig på det fysiske lager.<p>**Fysisk disponibelt** er et beregnet felt. Værdien er lig med den **Fysiske lager** -værdi minus den **Fysisk reserverede** -værdi.</p> |
+| Fysisk disponibelt | Den tilgængelige (ikke reserverede) mængde, der er tilgængelig på det fysiske lager.<p>**Fysisk disponibelt** er et beregnet felt. Værdien er lig med den **Fysiske lager**-værdi minus den **Fysisk reserverede**-værdi.</p> |
 | Fysisk disponibelt på ekstra dimensioner | Det fysisk disponible antal for alle de dimensioner, der vises i gitteret. |
 | Bestilt i alt | Det samlede antal, der er medtaget i indgående ordrer, eller som har et positivt antal i forskellige lagerkladder. |
 | I bestilling | Det samlede antal, der er medtaget i udgående ordrer, eller som har et negativt antal i forskellige lagerkladder. |
 | Bestilt reserveret | Samlet antal, der er reserveret på bestilte tilgange. Værdien i dette felt repræsenterer det samlede antal varer i udgående transaktioner, der har status som _Bestilt reserveret_. Varer, der er reserveret som bestilt, er ikke fysisk disponible på lageret. Derfor kan de ikke plukkes og leveres direkte. |
-| Disponibel til reservation | Det totale antal disponibelt lager, der kan reserveres.<p>**Bemærk:** Hvis afkrydsningsfeltet **Reservér bestilte varer** er markeret på siden **Parametre for lager og lokalitetsstyring** , omfatter værdien i dette felt forventede tilgange. Hvis afkrydsningsfeltet ikke er markeret, omfatter værdien ikke forventede tilgange.</p> |
-| I alt disponibelt | Disponibelt antal i alt.<p>**I alt disponibelt** er et beregnet felt. Værdien er lig med den **Fysisk disponibelt** -værdi plus **Bestilt i alt** -værdi minus **I bestilling** -værdien.</p> |
+| Disponibel til reservation | Det totale antal disponibelt lager, der kan reserveres.<p>**Bemærk:** Hvis afkrydsningsfeltet **Reservér bestilte varer** er markeret på siden **Parametre for lager og lokalitetsstyring**, omfatter værdien i dette felt forventede tilgange. Hvis afkrydsningsfeltet ikke er markeret, omfatter værdien ikke forventede tilgange.</p> |
+| I alt disponibelt | Disponibelt antal i alt.<p>**I alt disponibelt** er et beregnet felt. Værdien er lig med den **Fysisk disponibelt**-værdi plus **Bestilt i alt**-værdi minus **I bestilling**-værdien.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Anvende filtre til at finde de poster, du søger efter
 
 Du kan bruge ruden **Filtre** til at filtrere den disponible lagerbeholdning, så den kun medtager poster, hvor feltværdierne svarer til filtreringskriterierne. Hvis du vil definere et filter, skal du udføre disse trin.
 
 1. Find det felt, du vil filtrere efter, i ruden **Filtre**.
-2. Vælg en logisk operator (f.eks. *starter med* , *er lig med* eller *er større end* ) i feltet under navnet på målfeltet.
+2. Vælg en logisk operator (f.eks. *starter med*, *er lig med* eller *er større end*) i feltet under navnet på målfeltet.
 3. Vælg eller indtast den værdi, du vil søge efter.
 
 > [!IMPORTANT]
 > Siden **Beholdningsliste** samles fra en detaljeret disponibel lagerbeholdningstabel, der omfatter alle tilgængelige dimensioner. Listen på denne side er dog en oversigt. Derfor kan den kombinere rækker fra kildetabellen ved at aggregere værdier i henhold til de viste dimensioner.
 >
-> De filtre, du definerer i ruden **Filtre** , gælder for kildetabellen, ikke den samlede liste. Denne funktionsmåde kan undertiden give uventede resultater. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
+> De filtre, du definerer i ruden **Filtre**, gælder for kildetabellen, ikke den samlede liste. Denne funktionsmåde kan undertiden give uventede resultater. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
 > 
 > De [filtre, der findes i gitteret](#grid-filters), *bliver* anvendt på den samlede liste. Disse filtre omfatter både QuickFilter øverst i gitteret og filteret for hver kolonneoverskrift.
 
-Du kan redigere det sæt filtre, der er tilgængeligt i ruden **Filtre** , ved at følge disse trin.
+Du kan redigere det sæt filtre, der er tilgængeligt i ruden **Filtre**, ved at følge disse trin.
 
-- Hvis du vil fjerne et filter fra ruden, skal du vælge dets **Luk** -knap ( **X** ).
-- Hvis du vil tilføje et filter, skal du vælge **Tilføj** øverst i **Filtre** -ruden. Dialogboksen **Tilføj filterfelter** , der vises, har en liste over de tilgængelige felter. Den indeholder også oplysninger om datatypen og tabellen for hvert felt. Brug kolonneoverskrifterne til at filtrere og sortere listen efter behov, og markér derefter afkrydsningsfeltet for hvert felt, du vil føje til **Filter** -ruden. Når du er færdig, skal du vælge **Indsæt** for at anvende ændringerne.
+- Hvis du vil fjerne et filter fra ruden, skal du vælge dets **Luk**-knap (**X**).
+- Hvis du vil tilføje et filter, skal du vælge **Tilføj** øverst i **Filtre**-ruden. Dialogboksen **Tilføj filterfelter**, der vises, har en liste over de tilgængelige felter. Den indeholder også oplysninger om datatypen og tabellen for hvert felt. Brug kolonneoverskrifterne til at filtrere og sortere listen efter behov, og markér derefter afkrydsningsfeltet for hvert felt, du vil føje til **Filter**-ruden. Når du er færdig, skal du vælge **Indsæt** for at anvende ændringerne.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Vælg, hvilke dimensioner der skal vises
 
@@ -87,7 +87,7 @@ Benyt følgende fremgangsmåde for at tilpasse det udvalg af lagerdimensioner, d
     Dialogboksen **Dimensionsvisning** vises med hver enkelt dimension.
 
 2. Markér afkrydsningsfeltet for hver dimension, der skal inkluderes i gitteret.
-3. Hvis du ønsker, at dit valg skal bruges som standard, næste gang du åbner siden **Beholdningsliste** , skal du angive indstillingen **Gem opsætning** til **Ja**. Hvis du angiver denne indstilling til **Nej** , vil dit valg kun blive brugt i den aktuelle session. Derfor bruges det aktuelle standardvalg, næste gang du åbner siden.
+3. Hvis du ønsker, at dit valg skal bruges som standard, næste gang du åbner siden **Beholdningsliste**, skal du angive indstillingen **Gem opsætning** til **Ja**. Hvis du angiver denne indstilling til **Nej**, vil dit valg kun blive brugt i den aktuelle session. Derfor bruges det aktuelle standardvalg, næste gang du åbner siden.
 4. Vælg **OK** for at anvende dine ændringer og lukke dialogboksen.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtrere på afgang fra lagerbeholdningslisten
@@ -145,4 +145,4 @@ Her vises resultatet.
 |---|---|---|---|
 | IA0001 | 1 | 2 | 2 |
 
-Bemærk, at indstillingerne i ruden **Filtre** gælder for den detaljerede (ikkesamlede) lagertabel, der vises i starten af dette afsnit. Derfor finder kriteriet **Fysisk disponibelt** \| **er mindre end eller lig med** \| _1_ to rækker fra den pågældende tabel (første og tredje række, der hver især viser en **Fysisk disponibelt** -værdi af _1_ ). Men i dette scenarie siden **Beholdningsliste** ikke konfigureret til at vise **Lagersted-** -dimensionen. Derfor samles de to oprindelige rækker i en enkelt resultatrække, da begge rækker har identiske værdier i alle de viste dimensioner. Denne række ser ud til at overtræde filtreringskriteriet, fordi **Fysisk disponibelt** -værdien vises som _2_. Resultatet er dog korrekt, da indstillingerne i ruden **Filtre** gælder for kildetabellen og ikke i den samlede tabel, der vises på siden **Beholdningsliste**.
+Bemærk, at indstillingerne i ruden **Filtre** gælder for den detaljerede (ikkesamlede) lagertabel, der vises i starten af dette afsnit. Derfor finder kriteriet **Fysisk disponibelt** \| **er mindre end eller lig med** \| _1_ to rækker fra den pågældende tabel (første og tredje række, der hver især viser en **Fysisk disponibelt**-værdi af _1_). Men i dette scenarie siden **Beholdningsliste** ikke konfigureret til at vise **Lagersted-**-dimensionen. Derfor samles de to oprindelige rækker i en enkelt resultatrække, da begge rækker har identiske værdier i alle de viste dimensioner. Denne række ser ud til at overtræde filtreringskriteriet, fordi **Fysisk disponibelt**-værdien vises som _2_. Resultatet er dog korrekt, da indstillingerne i ruden **Filtre** gælder for kildetabellen og ikke i den samlede tabel, der vises på siden **Beholdningsliste**.

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889835"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424735"
 ---
 # <a name="asset-management-parameters"></a>Parametre til aktivstyring
 
@@ -97,7 +97,7 @@ De felter, der er beskrevet i følgende liste, relaterer alle til beregnede rang
 
 **Startdato for medarbejder** - En rangeringsscore beregnet sammen med rangeringsscoreværdierne af **Ansvarlig arbejder**, **Foretrukken arbejder**, **Foretrukken arbejdergruppe**, **Aktivlokation** og **Startdato**. Dette felt angiver det daglige resultat som en negativ værdi og sammenlignes med feltet **Forventet start** på en arbejdsordre. Hvis værdien "10,00" er indsat i dette felt, og den forventede startdato for en arbejdsordre er i morgen, er rangeringsscoren minus 10,00.
 
-  - Hvis det antages, at der ikke er valgt en ansvarlig arbejder og en ansvarlig arbejdergruppe på en arbejdsordre, der skal planlægges, og du adderer og subtraherer overstående eksempelværdier af **Foretrukken arbejder**, **Foretrukken arbejdergruppe**, **Aktivplacering**og **Startdato**, får du i alt 3.010,00. Det betyder en høj score for den arbejder, der allerede er valgt som foretrukken arbejder, og som er medtaget i den foretrukne arbejdergruppe på arbejdsordren, og arbejderen er også placeret i samme facilitet som det aktiv, som et job skal planlægges for. Dette betyder, at der er en god chance for, at den pågældende arbejder vil blive valgt til at fuldføre jobbet under arbejdsordreplanlægning.  
+  - Hvis det antages, at der ikke er valgt en ansvarlig arbejder og en ansvarlig arbejdergruppe på en arbejdsordre, der skal planlægges, og du adderer og subtraherer overstående eksempelværdier af **Foretrukken arbejder**, **Foretrukken arbejdergruppe**, **Aktivplacering** og **Startdato**, får du i alt 3.010,00. Det betyder en høj score for den arbejder, der allerede er valgt som foretrukken arbejder, og som er medtaget i den foretrukne arbejdergruppe på arbejdsordren, og arbejderen er også placeret i samme facilitet som det aktiv, som et job skal planlægges for. Dette betyder, at der er en god chance for, at den pågældende arbejder vil blive valgt til at fuldføre jobbet under arbejdsordreplanlægning.  
   - Hvis værdien "0,00" er indsat i et af de otte felter ovenfor, vil rangeringsscoren ikke blive brugt under planlægningen af arbejdsordren.  
 
 **Dokumenttyper**-link

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888899"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424731"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
@@ -88,7 +88,7 @@ I eksemplerne nedenfor er kritikalitetsscoren "2", og serviceniveauscoren er "5"
 | AO-00010817   | To dage fra nu   | 2                      | 20              | (-2 \*10) + (2 \*2) + 5 / 20     | \- 15.75   |
 | AO-00010818   | To dage fra nu   | 3                      | 5               | (-2 \*10) + (2 \*3) + 5 / 5      | \- 13      |
 
-Arbejdsordrerne planlægges i følgende rækkefølge: AO-000108**16**, AO-000108**18**, AO-000108**17**.
+Arbejdsordrerne planlægges i følgende rækkefølge: AO-000108 **16**, AO-000108 **18**, AO-000108 **17**.
 
 **Eksempel 2:**
 
@@ -98,7 +98,7 @@ Arbejdsordrerne planlægges i følgende rækkefølge: AO-000108**16**, AO-000108
 | AO-00010817   | To dage fra nu   | 2                      | 20                  | (-2 \*10) + (2 \*2) + 100 / 20 | \- 11    |
 | AO-00010818   | To dage fra nu   | 3                      | 5                   | (-2 \*10) + (2 \*3) + 100 / 5  | 6        |
 
-Hvis scoren på serviceniveau øges til '100' i stedet for '5', vil planlægningsrækkefølgen være: AO-000108**18**, AO-000108**16**, AO-000108**17**.
+Hvis scoren på serviceniveau øges til '100' i stedet for '5', vil planlægningsrækkefølgen være: AO-000108 **18**, AO-000108 **16**, AO-000108 **17**.
 
 De rangeringsscorer, der vedrører beregning af, hvilke vedligeholdelsesarbejdere der skal arbejde på arbejdsordrerne, konfigureres alle som numre, der føjes til hver enkelt arbejderberegning under planlægningen af arbejdsordrer. Den vedligeholdelsesmedarbejder, der har den højeste score, vælges på arbejdsordren. Her er en kort beskrivelse af scorerne for vedligeholdelsesarbejdere:
 

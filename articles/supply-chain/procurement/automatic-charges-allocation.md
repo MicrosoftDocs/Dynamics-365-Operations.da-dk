@@ -16,11 +16,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998870"
+ms.locfileid: "4424928"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk fordeling af gebyrer
 
@@ -45,16 +45,16 @@ Hvis du vil tildele gebyrer, skal du først definere gebyrkoder.
     - **Gebyrkode** – Angiv en kode for gebyrerne.
     - **Beskrivelse** – Indtast en beskrivelse af gebyrerne.
     - **Varemomsgruppe** – Vælg en varemomsgruppe, hvis det er relevant.
-    - **Beregn forholdsmæssigt** – Angiv denne indstilling til *Ja* , hvis du vil beregne gebyrer forholdsmæssigt. Denne indstilling kan kun vælges for salgsordrer.
+    - **Beregn forholdsmæssigt** – Angiv denne indstilling til *Ja*, hvis du vil beregne gebyrer forholdsmæssigt. Denne indstilling kan kun vælges for salgsordrer.
     - **Maks. beløb** – Angiv det maksimale beløb, der er tilladt for gebyrkoden. Dette felt bruges til at validere gebyrer for kreditorfakturaer. Det er kun tilgængeligt for indkøbsordrer.
 
         > [!NOTE]
         > Hvis du vil aktivere funktionen til validering af gebyrer for indkøbsordrer, skal du gå til **Kreditor \> Konfiguration \> Kreditorparametre**. I oversigtspanelet **Fakturavalidering** skal du i sektionen **Fakturavalidering** angive indstillingen **Aktivér validering af fakturasammenholdelse** til *Ja*.
 
-1. Oversigtspanelet **Bogføring** indeholder **Debet** - og **Kredit** -sektioner. Angiv følgende felter afhængigt af, hvilken finanskonto gebyrerne skal bogføres på:
+1. Oversigtspanelet **Bogføring** indeholder **Debet**- og **Kredit**-sektioner. Angiv følgende felter afhængigt af, hvilken finanskonto gebyrerne skal bogføres på:
 
-    - **Type** – Vælg den kontotype, som du vil bogføre på ( *Finans* , *Debitor* eller *Vare* ).
-    - **Bogføring** – Vælg den type posteringer, der skal oprettes (f.eks. *Mæglergebyr* eller *Debitorudligning* ).
+    - **Type** – Vælg den kontotype, som du vil bogføre på (*Finans*, *Debitor* eller *Vare*).
+    - **Bogføring** – Vælg den type posteringer, der skal oprettes (f.eks. *Mæglergebyr* eller *Debitorudligning*).
     - **Konto** – Vælg den konto, gebyret skal bogføres for.
 
 1. Vælg **Gem** i handlingsruden.
@@ -74,7 +74,7 @@ Benyt følgende fremgangsmåde for at oprette gebyrgrupper for indkøbsordrer.
     - **Beskrivelse** – Indtast en beskrivelse af gebyrgruppen.
 
 1. Vælg **Gem** i handlingsruden.
-1. Gå til **Kreditor \> Kreditorer \> Alle kreditorer** , og åbn en eksisterende kreditor, eller opret en ny kreditor.
+1. Gå til **Kreditor \> Kreditorer \> Alle kreditorer**, og åbn en eksisterende kreditor, eller opret en ny kreditor.
 1. I oversigtspanelet **Indkøbsordrestandarder** i sektionen **Indkøbsordre** skal du angive feltet **Gebyrgruppe** til den gebyrgruppe, du netop har oprettet.
 
 ### <a name="charge-groups-for-sales-orders"></a>Gebyrgrupper for salgsordrer
@@ -88,7 +88,7 @@ Benyt følgende fremgangsmåde for at oprette gebyrgrupper for salgsordrer.
     - **Beskrivelse** – Indtast en beskrivelse af gebyrgruppen.
 
 1. Vælg **Gem** i handlingsruden.
-1. Gå til **Debitor \> Debitorer \> Alle debitorer** , og åbn en eksisterende debitor, eller opret en ny debitor.
+1. Gå til **Debitor \> Debitorer \> Alle debitorer**, og åbn en eksisterende debitor, eller opret en ny debitor.
 1. I oversigtspanelet **Indkøbsordrestandarder** i sektionen **Salgsordre** skal du angive feltet **Gebyrgruppe** til den gebyrgruppe, du netop har oprettet.
 
 ## <a name="define-auto-charges"></a>Definere automatiske gebyrer
@@ -112,21 +112,21 @@ Når gebyrkoderne er konfigureret, skal du udføre disse trin for at definere de
     - *Gruppe* – Tildel gebyrer til en blandet gebyrgruppe.
     - *Alle* – Tildel gebyrer til alle debitorer eller kreditorer.
 
-1. I feltet **Debitorrelation** eller **Kreditorrelation** skal du vælge en specifik debitor eller kreditor, hvis du angiver feltet **Kontokode** til *Tabel*. Hvis du har valgt **Gruppe** i feltet *Kontokode* , skal du vælge en gebyrgruppe for kreditorer eller debitorer.
+1. I feltet **Debitorrelation** eller **Kreditorrelation** skal du vælge en specifik debitor eller kreditor, hvis du angiver feltet **Kontokode** til *Tabel*. Hvis du har valgt **Gruppe** i feltet *Kontokode*, skal du vælge en gebyrgruppe for kreditorer eller debitorer.
 1. I feltet **Varekode** skal du vælge en af følgende værdier for at angive omfanget af de varer, der påvirkes: Du kan kun vælge en varekode, når du definerer automatiske gebyrer på linjeniveau.
 
     - *Tabel* – Tildel gebyrer til en bestemt vare.
     - *Gruppe* – Tildel gebyrer til en bestemt varegebyrgruppe.
     - *Alle* – Tildel gebyrer til alle varer.
 
-1. Hvis du vælger **Tabel** i feltet **Varekode** , skal du vælge en bestemt vare i feltet *Varerelation*. Hvis du har valgt **Gruppe** i feltet *Varekode* , skal du vælge en varegebyrgruppe.
+1. Hvis du vælger **Tabel** i feltet **Varekode**, skal du vælge en bestemt vare i feltet *Varerelation*. Hvis du har valgt **Gruppe** i feltet *Varekode*, skal du vælge en varegebyrgruppe.
 1. **Kun for salgsordrer:** I feltet **Kode for leveringsmåde** skal du vælge en af følgende værdier for at angive det omfang af leveringsmåder, der vil blive påvirket:
 
     - *Tabel* – Tildel gebyrer til en bestemt leveringsmåde.
     - *Gruppe* – Tildel gebyrer til en bestemt gruppe af leveringsmåder.
     - *Alle* – Tildel gebyrer til alle leveringsmåder.
 
-1. **Kun for salgsordrer:** Hvis du vælger **Tabel** i feltet **Kode for leveringsmåde** , skal du vælge en bestemt leveringsmåde i feltet *Leveringsmåderelation*. Hvis du vælger **Gruppe** i feltet *Kode for leveringsmåde* , skal du vælge en leveringsmådegruppe.
+1. **Kun for salgsordrer:** Hvis du vælger **Tabel** i feltet **Kode for leveringsmåde**, skal du vælge en bestemt leveringsmåde i feltet *Leveringsmåderelation*. Hvis du vælger **Gruppe** i feltet *Kode for leveringsmåde*, skal du vælge en leveringsmådegruppe.
 1. I oversigtspanelet **Linjer** skal du definere de gebyrer og gebyrsatser, der skal anvendes, når det aktuelle automatiske gebyr anvendes. Du kan bruge værktøjslinjen i dette oversigtspanel til at tilføje så mange linjer, du har brug for. For hver linje skal du angive følgende felter:
 
     - **Valuta** – Vælg den valuta, der skal bruges til beregning af gebyret.
@@ -171,9 +171,9 @@ Følgende fremgangsmåde viser, hvordan du kan tildele gebyrer på overskriftsni
     - **Fordel alt** – Markér dette afkrydsningsfelt for at fordele gebyrer til ordrelinjer, også selvom gebyrkoden har en anden debettype end *Vare*.
     - **Modtaget** – Markér dette afkrydsningsfelt for udelukkende at fordele gebyrer til modtagne ordrelinjer.
     - **Lagerført** – Markér dette afkrydsningsfelt for udelukkende at fordele gebyrer til lagerførte ordrelinjer.
-    - **Vis valg, og ryd bestemte linjer** – Markér dette afkrydsningsfelt for at udelukke bestemte linjer fra denne fordeling. Når du markerer dette afkrydsningsfelt, åbnes **Vælg linjer, der skal udelades fra fordeling** -gitteret. Gitteret indeholder kun de linjer, der opfylder kriterierne i felterne **Fordel gebyrer til linjer** og **Lagerført**. Hvis du f.eks. vælger **Positive linjer** i feltet *Fordel gebyrer til linjer* og vælger indstillingen **Lagerført** , vises kun linjer, som både er positive og lagerførte i gitteret. Desuden filtrerer gitteret automatisk de linjer fra, hvor hele antallet allerede er modtaget. Når gitteret er åbent, skal du fjerne markeringen i afkrydsningsfeltet **Medtag** for hver linje, der skal udelades fra tildelingen. 
+    - **Vis valg, og ryd bestemte linjer** – Markér dette afkrydsningsfelt for at udelukke bestemte linjer fra denne fordeling. Når du markerer dette afkrydsningsfelt, åbnes **Vælg linjer, der skal udelades fra fordeling**-gitteret. Gitteret indeholder kun de linjer, der opfylder kriterierne i felterne **Fordel gebyrer til linjer** og **Lagerført**. Hvis du f.eks. vælger **Positive linjer** i feltet *Fordel gebyrer til linjer* og vælger indstillingen **Lagerført**, vises kun linjer, som både er positive og lagerførte i gitteret. Desuden filtrerer gitteret automatisk de linjer fra, hvor hele antallet allerede er modtaget. Når gitteret er åbent, skal du fjerne markeringen i afkrydsningsfeltet **Medtag** for hver linje, der skal udelades fra tildelingen. 
 
         > [!IMPORTANT]
-        > Når du arbejder med **Vælg linjer, der skal udelades fra fordeling** -gitteret, skal du sørge for at lade gitteret være åbent, indtil du vælger **Alloker**. Hvis du lukker gitteret, før du vælger **Alloker** , går dine indstillinger i gitteret tabt. Derfor tildeles gebyrer ud fra de kriterier, du tidligere har defineret.
+        > Når du arbejder med **Vælg linjer, der skal udelades fra fordeling**-gitteret, skal du sørge for at lade gitteret være åbent, indtil du vælger **Alloker**. Hvis du lukker gitteret, før du vælger **Alloker**, går dine indstillinger i gitteret tabt. Derfor tildeles gebyrer ud fra de kriterier, du tidligere har defineret.
 
 1. Vælg **Alloker** for at anvende dine indstillinger og lukke dialogboksen.

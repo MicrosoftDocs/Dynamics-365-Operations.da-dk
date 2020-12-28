@@ -3,7 +3,7 @@ title: Levere Mixed-Reality-vejledninger til arbejdere i produktion
 description: Dette emne forklarer, hvordan du kan integrere modulet til produktionsstyring i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
 author: cabeln
 manager: tfehr
-ms.date: 09/29/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
-ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
+ms.openlocfilehash: 727a3bc50ea55259c7260a9d060dac59473ee3c1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000972"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645138"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Levere Mixed-Reality-vejledninger til arbejdere i produktion
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Arbejdere i produktionsprocesser vil nyde godt af relevante instruktioner, der er tilgængelige på det rette tidspunkt i forbindelse med deres arbejde. *Instruktioner* gælder i flere arbejdsdomæner, herunder: montage, service, drift, certificering og sikkerhed. Løbende uddannelsesinstruktioner kan gøre det lettere for medarbejderne at udrette mere og arbejde bedre på tværs af alle disse kernefunktioner i virksomheden.
 
@@ -112,8 +114,8 @@ Hvis du vil gøre funktionen tilgængelig på systemet, skal du aktivere dens ko
 
 1. Sæt systemet i vedligeholdelsestilstand som beskrevet i [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
-1. Udvid afsnittet **Mixed Reality** , og markér derefter afkrydsningsfeltet **Mixed Reality-guide**.
-1. Udvid afsnittet **Administration af produktion** , og markér derefter afkrydsningsfeltet **Produktionsinstruktioner**.
+1. Udvid afsnittet **Mixed Reality**, og markér derefter afkrydsningsfeltet **Mixed Reality-guide**.
+1. Udvid afsnittet **Administration af produktion**, og markér derefter afkrydsningsfeltet **Produktionsinstruktioner**.
 1. Slå vedligeholdelsestilstand fra som beskrevet i [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
   
 ## <a name="configure-how-guides-appear-on-the-shop-floor"></a>Konfigurere, hvordan guider vises i produktionen
@@ -124,10 +126,9 @@ Hvis du vil konfigurere, hvordan guider vises i produktionen, skal du gå til **
 
 Angiv følgende felter:
 
-- **Common Data Service-underdomæne** - I dette felt vises der allerede en værdi. Dette felt indeholder underdomænet for det Common Data Service-miljø, hvor du opretter dine guider. Underdomænet er den første del af URL-adressen og er typisk navngivet efter din organisation. Hvis din URL-adresse til Common Data Service f.eks. er "contoso.crm4.dynamics.com", skal du angive *contoso* her. Denne værdi bruges til at oprette adresser til dine guider og vil blive kodet i QR-koderne.
+- **Microsoft Dataverse-URL-adresse** - Angiv URL-adressen til det Microsoft Dataverse-miljø, hvor du opretter din Guides. Formatet er "contoso.crm4.dynamics.com", hvor den første del af URL-adressen typisk er navngivet efter din organisation (f.eks. "contoso."), den anden del er specifik for dit miljøs dataområde (som f.eks. "crm4"), og den sidste del er domænet (f.eks. "dynamics.com"). En måde at finde den rigtige URL-adresse på er at gå til [home.dynamics.com](https://home.dynamics.com/) og derefter åbne din Guides-app. Når Guides åbnes, kan du se URL-adressen på adresselinjen i din browser (tag kun basis-URL-adressen, som ligner det foregående eksempel). Denne værdi bruges til at oprette adresser til dine guider og vil blive kodet i QR-koderne."
 - **QR-kodestørrelse** - Angiv størrelsen på den gengivne QR-kode. Det anbefales, at du vælger en størrelse, der vil udfylde det meste af din skærm, men ikke mere. *15* er typisk en god værdi.
 - **Rettelsesniveau for QR-kodefejl** - Angiv QR-kodens granularitet. En højere granularitet kan hjælpe med at øge kodens pålidelighed, men **størrelsen på QR-koden** skal være stor nok til at understøtte det detaljeringsniveau, der kræves af det valgte rettelsesniveau.
-
 
 > [!TIP]
 > - QR-kodestørrelser, der er for store til skærmen, tager lidt længere tid at gengive og skal derefter skaleres ned, så de passer til skærmen. Disse giver ikke nogen fordel.
@@ -368,7 +369,7 @@ Sådan føjer du en guide til en ruteoperationsrelation:
 1. Åbn fanen **Rute** i handlingsruden, og vælg **Rutedetaljer** i gruppen **Vedligehold**.
 1. Siden **Rutedetaljer** åbnes for den valgte rute.
 1. Vælg den handling, du vil give vejledning til, i det øverste gitter.
-1. Vælg en specifik relation (eller den generiske **All** -relation) i nederste gitter.
+1. Vælg en specifik relation (eller den generiske **All**-relation) i nederste gitter.
     ![Vælge en operation og derefter en relation](media/instruction-guides-RouteOperationRelation.png "Vælge en operation og derefter en relation")
 1. Åbn fanen **Tilknyttede guider** oven over det nederste gitter. ![Fanen Tilknyttede guider](media/instruction-guides-RouteOperationRelation-AddGuide.png "Fanen Tilknyttede guider")
 1. Vælg **Tilføj** på værktøjslinjen øverst i det nederste gitter for at føje en ny linje til gitteret.
@@ -406,6 +407,6 @@ Når Supply Chain Management genererer jobbene til produktionen, vil det indsaml
 
 - Hvis du knytter en styklisteversion eller en formelversion til en rute eller produktionsordre, vises alle de guider, der er tilknyttet denne version, samt de guider, der er knyttet til den overordnede stykliste eller formel af denne version, i jobbet.
 - Hvis du knytter en ruteversion til en produktionsordre, vises alle de guider, der er tilknyttet denne version, samt de guider, der er knyttet til den overordnede rute af denne version, i jobbet.
-- Hvis du definerer flere ruteoperationsrelationer, der omfatter *Alle* -relationen, og tildeler dem guider, vises kun guiderne fra den mest specifikke relation for jobbet.  
+- Hvis du definerer flere ruteoperationsrelationer, der omfatter *Alle*-relationen, og tildeler dem guider, vises kun guiderne fra den mest specifikke relation for jobbet.  
 
 ![Diagram til fortolkning af relevante guider](media/instruction-guides-Resolve.png "Diagram til fortolkning af relevante guider")

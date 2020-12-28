@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987184"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4425068"
 ---
 # <a name="create-a-baseline-forecast"></a>Oprette en baselineprognose
 
@@ -43,7 +43,7 @@ En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognose
 7. Luk siden.
 8. Luk siden.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Konfigurer parametre til behovsprognoserne
+## <a name="set-up-the-demand-forecasting-parameters"></a>Konfigurere parametre til behovsprognoserne
 1. Gå til Overordnet planlægning > Opsætning > Behovsprognose > Parametre til behovsprognoser.
 2. Udvid sektionen Parametre til prognosealgoritme.
 3. Vælg "Kopiér over historisk efterspørgsel" i feltet Strategi for generering af prognose.

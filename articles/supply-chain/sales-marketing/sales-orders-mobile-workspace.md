@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212934"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424821"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Arbejdsområde for salgsordrer på mobilenheder
 
@@ -94,7 +94,7 @@ Hvis Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller ny
 <tr class="header">
 <th>Forudsætning</th>
 <th>Rolle</th>
-<th>Betegnelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>

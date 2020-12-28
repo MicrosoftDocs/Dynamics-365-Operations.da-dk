@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889069"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424610"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobfag og vedligeholdelsestjeklister
 
@@ -41,7 +41,7 @@ Vedligeholdelsesjobfag indeholder oplysninger om professionelle fag, f.eks. meka
 
 For hver vedligeholdelsesjobtype kan der oprettes variationer af vedligeholdelsesjobtypens opsætning. Hvis du f.eks. har en vedligeholdelsesjobtype, der hedder **Service**, kan du oprette følgende variationer for den pågældende vedligeholdelsesjobtype **Lastbiler 30.000 km**, **Personbiler 30.000 km** og **Varevogne 30.000 km**.
 
-Kategorier af vedligeholdelsesjobtyper bruges til at indsamle en gruppe vedligeholdelsesjobtyper til oversigtsformål. Eksempler på vedligeholdelsesjobtypers kategorier kan omfatte **Kalibrering**, **Inspektion**, **Eftersyn**og **Instrumentering.**
+Kategorier af vedligeholdelsesjobtyper bruges til at indsamle en gruppe vedligeholdelsesjobtyper til oversigtsformål. Eksempler på vedligeholdelsesjobtypers kategorier kan omfatte **Kalibrering**, **Inspektion**, **Eftersyn** og **Instrumentering.**
 
 Der bruges skabeloner for vedligeholdelsestjekliste og variabler for vedligeholdelsestjekliste til at oprette vedligeholdelsestjeklister. Vedligeholdelsestjeklister defineres for vedligeholdelsesjobtyper og bruges på arbejdsordrer.
 
@@ -182,7 +182,7 @@ Skabeloner til vedligeholdelsestjeklister kan bruges som et almindeligt sæt opg
 4. Vælg en vedligeholdelsesjobtype i feltet **Vedligeholdelsesjobtype**, hvis den ikke automatisk er valgt.
 5. I felterne **Vedligeholdelsesjobtypevariant** og **Fag** skal du vælge en variant for vedligeholdelsesjobtypen og et fag for vedligeholdelsesjobbet efter behov.
 6. Vælg **Budget**.
-7. På siden **Standardbudget for vedligeholdelsesjobtype** kan du oprette budgetter på timer, varer og udgifter. Vælg **Tilføj**under de relevante faner, og foretag valg for at oprette de nødvendige budgetter for typen af vedligeholdelsesjob.
+7. På siden **Standardbudget for vedligeholdelsesjobtype** kan du oprette budgetter på timer, varer og udgifter. Vælg **Tilføj** under de relevante faner, og foretag valg for at oprette de nødvendige budgetter for typen af vedligeholdelsesjob.
 8. Under fanen **Varebudget** kan du vælge de lagerdimensioner, der skal vises på varelinjen. Vælg **Lager** \> **Dimensioner**, vælg de dimensioner, der skal vises, angiv indstillingen **Gem opsætning** til **Ja**, og vælg derefter **OK**.
 9. Vælg **Hvor er varen brugt?** under fanen **Varebudget** for at se en oversigt over, hvor i Styring af aktiver varen på den valgte linje bruges i relation til aktiver, typestandard for vedligeholdelsesjob, reservedele og arbejdsordrer. 
 

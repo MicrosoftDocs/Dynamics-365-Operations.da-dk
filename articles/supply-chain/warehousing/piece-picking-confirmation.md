@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ed63245066799d7d8f14362ab6c9193c0cda7c4a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215580"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424507"
 ---
 # <a name="piece-picking-confirmation"></a>Bekræftelse af stykplukning
 
@@ -46,7 +46,7 @@ Stykpluk fungerer for alt optællingsarbejde og for det indledende pluk ved alle
 Følgende indstillinger kan vælges, når arbejdstype pluk eller optælling.
 
 
-|           Indstilling           |                                                                            Betegnelse                                                                            |
+|           Indstilling           |                                                                            Beskrivelse                                                                            |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Bekræftelse af stykplukning | Arbejdstyper, der kan vælges til pluk og optælling. Bekræftelse af produkt vælges automatisk. Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden. |
 |  Maksimalt antal stykker  |                   Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret. Angiver en grænse for det antal styk, du skal bekræfte.                   |

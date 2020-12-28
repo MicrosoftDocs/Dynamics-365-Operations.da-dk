@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413948"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527357"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruge debitorportalen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives de forskellige sider, der er tilgængelige i debitorportalen lige fra starten. Her forklares, hvad siderne gør, og hvordan du kan tilpasse dem.
 
 Debitorportalen indeholder nogle websider og handlinger lige fra starten. Følgende webstedkort giver et overblik over disse websider og handlinger samt de roller, der kan udføre handlingerne.
 
-![![Oversigt over kundeportalwebsted](media/customer-portal-site-map.png "Oversigt over kundeportalwebsted")](media/customer-portal-site-map.png "Customer portal site map")
+![Oversigt over kundeportalwebsted](media/customer-portal-site-map.png "Oversigt over kundeportalwebsted")
 
 ## <a name="typical-customizations"></a>Typiske tilpasninger
 
@@ -62,12 +64,12 @@ Her er standardtrinnene for afsendelse af en ordre fra debitorportalen.
     - **Rekvisitionsnummer** – Angiv ordrens rekvisitionsnummer. Dette felt er valgfrit.
     - **Levér til land/område** – Angiv det land eller det område, som varerne skal leveres til. Dette felt udfyldes automatisk for brugere, der ikke er administratorer.
 
-    ![![Siden Ordreoplysninger](media/customer-portal-order-information.png "Siden Ordreoplysninger")](media/customer-portal-order-information.png "Order Information page")
+    ![Siden Ordreoplysninger](media/customer-portal-order-information.png "Siden Ordreoplysninger")
 
 1. Vælg **Næste**.
 1. På siden **Varer** skal du vælge **Tilføj vare**.
 
-    ![![Siden varer](media/customer-portal-items.png "Siden varer")](media/customer-portal-items.png "Items page")
+    ![Siden varer](media/customer-portal-items.png "Siden varer")
 
 1. I dialogboksen **Vareoplysninger** indstilles følgende felter:
 
@@ -76,14 +78,14 @@ Her er standardtrinnene for afsendelse af en ordre fra debitorportalen.
     - **Enhed** – Angiv måleenheden (f.eks **ea**, **kg** eller **kasse**).
     - **Forkalkuleret nettobeløb** – Værdien beregnes som den forkalkulerede pris for varen × antallet for den valgte enhed.
 
-    ![![Dialogboksen Vareoplysninger](media/customer-portal-item-information.png "Dialogboksen Vareoplysninger")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Dialogboksen Vareoplysninger](media/customer-portal-item-information.png "Dialogboksen Vareoplysninger")
 
 1. Vælg **Send** for at føje varen til ordren.
 1. Gentag trin 4 til 6, indtil du har tilføjet alle de varer, du vil bestille.
 1. Vælg **Næste** på siden **Varer**, når du er færdig med at tilføje varer.
 1. Siden **Ordreoplysninger** viser en oversigt over ordren. Gennemse ordreindholdet og leveringsoplysningerne. Hvis alt ser korrekt ud, skal du vælge **Send** for at sende ordren.
 
-    ![![Siden Ordreoplysninger](media/customer-portal-order-submit.png "Siden Ordreoplysninger")](media/customer-portal-order-submit.png "Order Information page")
+    ![Siden Ordreoplysninger](media/customer-portal-order-submit.png "Siden Ordreoplysninger")
 
 ### <a name="standard-data-setup"></a>Opsætning af standarddata
 
@@ -148,19 +150,19 @@ Alle kontrolelementer i debitorportalen er indbyggede kontrolelementer i Power A
 
 Det eneste brugerdefinerede kontrolelement, der er medtaget i debitorportalskabelonen, bruges til at oprette felterne på startsiden.
 
-![![Felter på startsiden](media/customer-portal-home-page-tiles.png "Felter på startsiden")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![Felter på startsiden](media/customer-portal-home-page-tiles.png "Felter på startsiden")
 
 Følg disse trin for at ændre felterne.
 
 1. Åbn [Portal Management-appen](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
 1. Vælg **Sideskabeloner** i navigationsruden til venstre.
 
-    ![![Navigationsruden Portalstyring](media/customer-portal-nav.png "Navigationsruden Portalstyring")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![Navigationsruden Portalstyring](media/customer-portal-nav.png "Navigationsruden Portalstyring")
 
 1. Vælg den sideskabelon, der hedder **Start**.
 1. I feltet **Webskabelon** skal du vælge linket **Start** for at åbne kildekoden for denne side.
 
-    ![![Feltet Webskabelon](media/customer-portal-web-template.png "Feltet Webskabelon")](media/customer-portal-web-template.png "Web Template field")
+    ![Feltet Webskabelon](media/customer-portal-web-template.png "Feltet Webskabelon")
 
 1. Du kan nu se hele kildekoden for startsiden og ændre den efter behov.
 

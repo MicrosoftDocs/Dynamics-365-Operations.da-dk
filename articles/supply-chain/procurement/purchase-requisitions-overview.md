@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a14ae2771890085308b560cea59240556c6a55a3
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018669"
+ms.locfileid: "4425064"
 ---
 # <a name="purchase-requisition-overview"></a>Oversigt over indkøbsrekvisition
 
@@ -174,7 +174,7 @@ En konsolideringsmulighed er en gruppe af indkøbsrekvisitionslinjer, der er gru
 Efter du har føjet rekvisitionslinjerne til en konsolideringsmulighed og foretaget ændringer, der er behov for, kan du oprette en indkøbsordre for de konsoliderede indkøbsrekvisitionslinjer.  
 
 > [!NOTE]
-> Ændringer, du laver til en indkøbsrekvisitionslinje på siden **Konsolidering af indkøbsrekvisition** , afspejles på den indkøbsordre, du opretter. I indkøbsrekvisitionen forbliver linjen dog uændret, således at dens historik bevares.  
+> Ændringer, du laver til en indkøbsrekvisitionslinje på siden **Konsolidering af indkøbsrekvisition**, afspejles på den indkøbsordre, du opretter. I indkøbsrekvisitionen forbliver linjen dog uændret, således at dens historik bevares.  
 
 Du kan oprette en indkøbsordre for indkøbsrekvisitionslinjer, der ikke er berettiget til efterspørgselskonsolidering, eller som ikke er valgt til en konsolideringsmulighed, ved manuelt at behandle linjerne.
 

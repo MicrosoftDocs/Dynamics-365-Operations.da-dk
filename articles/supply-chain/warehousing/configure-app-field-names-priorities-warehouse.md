@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7a4cfe62aa50c423adfd116a81d7962c30b25fcf
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530483"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424551"
 ---
 # <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurere appfeltnavne i lagerstedsappen
 
@@ -47,7 +47,7 @@ Når du bruger Lagersted på din mobilenhed, kan du konfigurere, hvordan metadat
 <thead>
 <tr class="header">
 <th>Indstilling</th>
-<th>Betegnelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>

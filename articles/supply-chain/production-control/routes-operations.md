@@ -20,11 +20,11 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989235"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424439"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -87,7 +87,7 @@ Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du
 ## <a name="operations"></a>Operations
 En operation er trin i produktionsprocessen. Hver operation har et id og en kort beskrivelse. Følgende tabeller viser typiske eksempler på operationer fra en maskinfabrik.
 
-| Handling  | Betegnelse        |
+| Handling  | Beskrivelse        |
 |------------|--------------------|
 | PipeCut    | Rørskæring       |
 | TIGweld    | TIG-svejsning        |

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018508"
+ms.locfileid: "4425043"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
@@ -33,18 +33,18 @@ Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
 1. Gå til **Navigationsrude > Moduler > Debitor > Ordrer > Alle salgsordrer**.
 2. Vælg **Ny**.
 3. Indtast eller vælg en værdi i feltet **Kundekonto** og vælg **OK**.
-4. Angiv eller vælg værdier i felterne **Varenummer** og **Sted** , og vælg dernæst **Gem**.
+4. Angiv eller vælg værdier i felterne **Varenummer** og **Sted**, og vælg dernæst **Gem**.
 5. Derefter skal du vælge **Direkte levering** under fanen **Salgsordre** i Handlingsruden. Siden Opret levering indeholder alle åbne salgsordrelinjer som kopieret fra salgsordren. Du kan gennemse ordredetaljerne, og hvis det er nødvendigt, kan du ændre oplysninger som f.eks. købsmængde og prisvilkår, før du opretter en direkte levering.  
 6. Vælg **Ja** i feltet **Medtag alle**.
     - Hvis du vil generere en direkte levering for kun et undersæt af salgsordrelinjerne, skal du vælge disse individuelt.  
     - Feltet **Kreditorkonto** er muligvis allerede udfyldt med et leverandørnummer. Hvis standardkreditoren er konfigureret til produktet (på den tilknyttede varedisponering), kopieres denne kreditor til linjen. Ellers skal du angive en kreditor manuelt. I dette eksempel skal vi vælge en ny kreditor i det næste trin, selvom der allerede er angivet en.   
 7. Indtast eller vælg en værdi i feltet **Leverandørkonto** og vælg **OK**. Meddelelsen fortæller dig, at indkøbsordren er blevet oprettet.   
 8. Vis eller skjul sektionen **Linjedetaljer**.
-9. Vælg fanen **Levering** , og bekræft, at feltet **Direkte levering** er angivet til **Ja**.
+9. Vælg fanen **Levering**, og bekræft, at feltet **Direkte levering** er angivet til **Ja**.
 10. Vælg **Generelt** i handlingsruden.
 11. Vælg **Relaterede ordrer**.
 12. Vælg linket i feltet **Indkøbsordre**.
-13. Udvid sektionen **Linjedetaljer** , og vælg fanen **Adresse**.
+13. Udvid sektionen **Linjedetaljer**, og vælg fanen **Adresse**.
     - Leveringsadressen for denne indkøbsordrelinje er kundens leveringsadresse og ikke virksomhedens adresse.  
     - Hvis du ændrer leveringsadressen på salgsordrelinjen eller på den oprindelige salgsordrelinje, vil leveringsadressen på den tilsvarende ordrelinjen automatisk blive opdateret.  
 14. Vælg fanen **Levering**.
@@ -60,7 +60,7 @@ Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
 20. Skriv en værdi i feltet **Produktkvittering**.
 21. Vælg **OK**.
 22. Vælg **Generelt** i handlingsruden.
-23. Vælg **Relaterede ordrer** , og fremhæv den ønskede post.
+23. Vælg **Relaterede ordrer**, og fremhæv den ønskede post.
     - Når indkøbsordren er blevet opdateret som modtaget, eller med andre ord, når leverandøren har leveret varerne til kundens adresse, opdateres status for den oprindelige salgsordre automatisk til Leveret.  
     - Salgsordren kan nu faktureres.    
 24. Vælg **OK**.
@@ -72,7 +72,7 @@ Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
 2. Vælg **Ny**.
 3. Indtast eller vælg en værdi i feltet **Kundekonto** og vælg **OK**.
 4. Indtast eller vælg en værdi i felterne **Varenummer** og **sted**.
-5. Udvid sektionen **Linjedetaljer** , og vælg dernæst fanen **Levering**. I stedet for at oprette en direkte levering som en del af salgsordrebehandling som i den forrige procedure, kan du vælge at udlevere denne opgave til en indkøbsmedarbejder. Hvis du vil medtage salgsordrelinjen i den direkte leveringsproces, skal du markere linjen for direkte levering.  
+5. Udvid sektionen **Linjedetaljer**, og vælg dernæst fanen **Levering**. I stedet for at oprette en direkte levering som en del af salgsordrebehandling som i den forrige procedure, kan du vælge at udlevere denne opgave til en indkøbsmedarbejder. Hvis du vil medtage salgsordrelinjen i den direkte leveringsproces, skal du markere linjen for direkte levering.  
 6. Vælg **Ja** i feltet **Direkte levering**.
     - Hvis varen er allerede indstillet til direkte levering som standard, indstilles feltet automatisk til Ja ved ordrelinjeposteringen. Du kan angive en vare til direkte levering på masteren for Frigivet produkt ved at indstille Direkte levering til Ja og vælge et standardlagersted for direkte levering.  
     - Fordi indkøbsordren endnu ikke er oprettet, er status for den direkte levering indstillet til "Skal leveres direkte".   

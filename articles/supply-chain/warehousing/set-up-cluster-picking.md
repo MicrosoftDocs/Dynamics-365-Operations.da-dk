@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017569"
+ms.locfileid: "4425046"
 ---
 # <a name="set-up-cluster-picking"></a>Konfigurere klyngepluk
 
@@ -58,11 +58,11 @@ Du kan konfigurere en klyngeprofil på følgende måde:
 
 1. Klik på **Ny** for at oprette en ny profil.
 
-1. Klik på **Opret klynge** og under **Klyngesortering** , skal du klikke på **Ny** for at konfigurere sorteringskriterier for klyngen. Sorteringskriteriet styrer den rækkefølge, som arbejderen skal udføre plukkearbejdet i. Du kan tilføje lige så mange kriterier, der er behov for.
+1. Klik på **Opret klynge** og under **Klyngesortering**, skal du klikke på **Ny** for at konfigurere sorteringskriterier for klyngen. Sorteringskriteriet styrer den rækkefølge, som arbejderen skal udføre plukkearbejdet i. Du kan tilføje lige så mange kriterier, der er behov for.
 
 1. I feltet **Løbenummer** skal du angive et nummer for at definere den rækkefølge, som sorteringskriterierne behandles i.
 
-1. Vælg det felt, der skal bestemme sorteringen, i feltet **Feltnavn**. Hvis du f.eks. vælger **WMSLocationId** , sorteres arbejdet efter den lokation.
+1. Vælg det felt, der skal bestemme sorteringen, i feltet **Feltnavn**. Hvis du f.eks. vælger **WMSLocationId**, sorteres arbejdet efter den lokation.
 
 1. Vælg en af følgende indstillinger i feltet **Sortering**.
 

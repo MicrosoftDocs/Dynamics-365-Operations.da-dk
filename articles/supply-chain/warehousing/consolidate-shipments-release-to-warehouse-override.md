@@ -17,23 +17,23 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016787"
+ms.locfileid: "4424969"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolider forsendelser, når politikken for forsendelseskonsolidering tilsidesættes fra siden Frigiv til lager
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser et scenarie, hvor en eller flere salgslinjer skal frigives til lageret manuelt fra siden **Frigiv til lager** , og den systemdefinerede politik for forsendelseskonsolidering skal tilsidesættes før frigivelsen. Der kræves muligvis en tilsidesættelse af politikken for forsendelseskonsolidering, hvis f.eks. en ordre, der ikke normalt konsolideres med åbne forsendelser, skal konsolideres med åbne forsendelser.
+Dette emne viser et scenarie, hvor en eller flere salgslinjer skal frigives til lageret manuelt fra siden **Frigiv til lager**, og den systemdefinerede politik for forsendelseskonsolidering skal tilsidesættes før frigivelsen. Der kræves muligvis en tilsidesættelse af politikken for forsendelseskonsolidering, hvis f.eks. en ordre, der ikke normalt konsolideres med åbne forsendelser, skal konsolideres med åbne forsendelser.
 
 I løbet af scenariet opretter du et sæt salgsordrer og overskriver derefter standardpolitikken for konsolidering af forsendelser, før du frigiver ordrerne til lageret.
 
 ## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF** , før du går i gang.
+Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Konfigurere politikker for forsendelseskonsolidering og produktfiltre
 
@@ -41,16 +41,16 @@ I det scenarie, der beskrives her, antages det, at du allerede har aktiveret fun
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Oprette salgsordrer til dette scenarie
 
-1. Gå til **Debitor \> Ordrer \> Alle salgsordrer** , og opret tre identiske salgsordrer, der har følgende indstillinger:
+1. Gå til **Debitor \> Ordrer \> Alle salgsordrer**, og opret tre identiske salgsordrer, der har følgende indstillinger:
 
     - **Debitorkonto:** *US-002*
 
 1. Tilføj en ordrelinje, der har følgende indstillinger:
 
-    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4** -filter)
+    - **Varenummer:** *A0001* (en vare, der ikke er tildelt et **Kode 4**-filter)
     - **Antal:** *1.00*
 
-1. Vælg **Lager \> Reservation** ,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
+1. Vælg **Lager \> Reservation**,og vælg derefter **Reserver parti** i handlingsruden for at reservere ordrelinjen.
 
 ## <a name="release-the-sales-orders-from-the-release-to-warehouse-page"></a>Frigive salgsordrer fra siden Frigiv til lager
 
@@ -71,7 +71,7 @@ Udfør følgende trin for at tilsidesætte politikken for forsendelseskonsolider
 
 Der skal være oprettet to forsendelser:
 
-- Den første forsendelse indeholder to linjer og er oprettet ved hjælp af *Kundeordrenr.* -politikken for forsendelseskonsolidering.
+- Den første forsendelse indeholder to linjer og er oprettet ved hjælp af *Kundeordrenr.*-politikken for forsendelseskonsolidering.
 - Den anden forsendelse indeholder én linjer og er oprettet ved hjælp af *standardpolitikken* for forsendelseskonsolidering.
 
 Udfør følgende trin for at gennemse de forsendelser, der er oprettet.

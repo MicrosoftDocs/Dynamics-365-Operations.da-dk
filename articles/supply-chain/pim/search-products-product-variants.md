@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018324"
+ms.locfileid: "4425033"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Søge efter produkter og produktvarianter under ordreindtastning
 
@@ -52,7 +52,7 @@ Følgende eksempler bruger produkter og produktvarianter til at illustrere, hvor
 | Produktvariant  | Aktiv højttaler  | D0010:::Sort:         | D0010       | 000005        |
 | Produktvariant  | Aktiv højttaler  | D0010:::Hvid:         | D0010       | Hvid         |
 
-Hvis du skriver 'højt' i feltet **Varenummer** , får du alle de ovennævnte produkter som resultat i opslaget. Hvis du skriver 'sort' i feltet **Varenummer** , får du det andet produkt som resultat, fordi den har teksten 'sort' i det viste produktnummer. Disse to eksempler viser, at søgningen ikke kun er i starten af feltet. Der findes et match, selvom søgeteksten findes i den tilsvarende post i midten af en tekststreng.  
+Hvis du skriver 'højt' i feltet **Varenummer**, får du alle de ovennævnte produkter som resultat i opslaget. Hvis du skriver 'sort' i feltet **Varenummer**, får du det andet produkt som resultat, fordi den har teksten 'sort' i det viste produktnummer. Disse to eksempler viser, at søgningen ikke kun er i starten af feltet. Der findes et match, selvom søgeteksten findes i den tilsvarende post i midten af en tekststreng.  
 
 Hvis du skriver '05' får du kun den anden produktvariant, fordi den har '05' i konfigurationen. Dette viser, at søgningen er på tværs af alle aktiverede felter på siden **Søgekriterier**.  
 
@@ -65,15 +65,15 @@ Før du kan bruge produktets og produktvariantens søgefunktion, skal du følge 
 
 ### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Trin 1: Medtag alle de relevante produkt- og produktvariant-id'er og -dimensioner i søgekriterierne
 
-Eksempler på produkt- og produktvariant-id'er og -dimensioner, som du kan søge efter:  **produktnavn, varenummer** , **vist produktnummer, konfiguration, farve, størrelse, typografi, søgenavn, osv**.  
+Eksempler på produkt- og produktvariant-id'er og -dimensioner, som du kan søge efter: **produktnavn, varenummer**, **vist produktnummer, konfiguration, farve, størrelse, typografi, søgenavn, osv**.  
 
 Gå til siden **Salg og marketing &gt; Opsætning &gt; Søg &gt; Søgekriterier**. På siden **Søgekriterier,** kan du definere kriterier for søgning efter kunde, kundeemne og produkt. Sørg for at filtrere siden ved hjælp af søgekriterier for produktet. Du kan gøre dette ved at skifte til **Produkt** i sidens menu.  
 
-Klik på **Ny** i sidens menu for at tilføje det viste produktnummer i søgekriterierne Dette vil tilføje en ny post i gitteret **Søgekriterier**. Åbn **Feltnavn** -kolonneopslaget, og vælg **DisplayProductNumber**. For at tilføje produktets konfiguration i søgekriterierne skal du oprette en ny post i **Søgekriterier** -gitteret og vælge **configId** i kolonnen **Feltnavn**. På samme måde kan du oprette en post med **Feltnavn** **InventColorId** for farvedimensionen, **InventSizeId** for størrelsesdimensionen og **InventStyleId** for typedimensionen.
+Klik på **Ny** i sidens menu for at tilføje det viste produktnummer i søgekriterierne Dette vil tilføje en ny post i gitteret **Søgekriterier**. Åbn **Feltnavn**-kolonneopslaget, og vælg **DisplayProductNumber**. For at tilføje produktets konfiguration i søgekriterierne skal du oprette en ny post i **Søgekriterier**-gitteret og vælge **configId** i kolonnen **Feltnavn**. På samme måde kan du oprette en post med **Feltnavn** **InventColorId** for farvedimensionen, **InventSizeId** for størrelsesdimensionen og **InventStyleId** for typedimensionen.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Trin 2: Udfyld den databasetabel, som bruges til at søge efter produkt
 
-På siden **Søgekriterier** skal du klikke på knappen **Opdater søgedata**. I **Opdater søgedata** -dialogboksen skal du sikre dig, at  **Kilde** er angivet til **Produkt** , og klik derefter på **OK**. Systemet vil samle alle de valgte kriterier, der er angivet i trin 1, i én tabel. Hvis du har en masse produkter og produktvarianter, kan denne handling være temmelig langvarig, og der vises muligvis en advarsel. Vi anbefaler, at du planlægger udfyldning af søgetabellen på batchserveren på et tidspunkt, hvor serveren ikke er for optaget.  
+På siden **Søgekriterier** skal du klikke på knappen **Opdater søgedata**. I **Opdater søgedata**-dialogboksen skal du sikre dig, at  **Kilde** er angivet til **Produkt**, og klik derefter på **OK**. Systemet vil samle alle de valgte kriterier, der er angivet i trin 1, i én tabel. Hvis du har en masse produkter og produktvarianter, kan denne handling være temmelig langvarig, og der vises muligvis en advarsel. Vi anbefaler, at du planlægger udfyldning af søgetabellen på batchserveren på et tidspunkt, hvor serveren ikke er for optaget.  
 
 Indtil tabellen udfyldes, vil produktsøgning ikke give de korrekte resultater. Hvis du ikke får nogen søgeresultater, skal du kontrollere, at denne tabel er udfyldt.  
 
@@ -83,7 +83,7 @@ Tabellen skal kun udfyldes, når søgekriterierne er blevet ændret. Netop frigi
 
 Du kan aktivere denne funktionalitet ved at gå til **Salg og marketing &gt; Opsætning &gt; Søg &gt; Søgeparametre** og indstille **Aktivér opslag for produktsøgning** til **Ja** under fanen **Generelt**.  
 
-Til salgsordrelinjepost er standardfunktionsmåden at åbne siden **Produktsøgning** , når du begynder at skrive i feltet **Varenummer** og trykker på **tabulatortasten**. Siden **Produktsøgning** ændrer konteksten under oprettelse af ordrelinjer og kan betragtes som unødvendigt forstyrrende. Hvis du foretrækker at få søgeresultaterne i et opslag og ikke miste konteksten under indtastning af ordrelinje, kan du bruge søgeopslaget i stedet. Hvis du søger efter et produkt eller en produktvariant, men du ikke markerer noget i opslaget og trykker på **yabulatortasten** , vises siden **Produktsøgning**.
+Til salgsordrelinjepost er standardfunktionsmåden at åbne siden **Produktsøgning**, når du begynder at skrive i feltet **Varenummer** og trykker på **tabulatortasten**. Siden **Produktsøgning** ændrer konteksten under oprettelse af ordrelinjer og kan betragtes som unødvendigt forstyrrende. Hvis du foretrækker at få søgeresultaterne i et opslag og ikke miste konteksten under indtastning af ordrelinje, kan du bruge søgeopslaget i stedet. Hvis du søger efter et produkt eller en produktvariant, men du ikke markerer noget i opslaget og trykker på **yabulatortasten**, vises siden **Produktsøgning**.
 
 
 

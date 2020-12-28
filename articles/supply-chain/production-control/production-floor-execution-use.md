@@ -16,24 +16,24 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012461"
+ms.locfileid: "4424938"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Grænsefladen til kørsel af produktionsudstyr er blevet optimeret med berøringsinteraktion. Designet giver en visuel kontrast, der lever op til tilgængelighedskravene i produktionsmiljøer. Det har de samme funktionelle egenskaber som jobkortenheden. Det betyder imidlertid også, at flere job kan startes parallelt fra en jobliste. (Denne egenskab kaldes også *job i bundter* ). Arbejderne kan også på en jobliste åbne en guide, der er oprettet i vejledningen til Microsoft Dynamics 365. På denne måde kan de få visuelle instruktioner på en HoloLens.
+Grænsefladen til kørsel af produktionsudstyr er blevet optimeret med berøringsinteraktion. Designet giver en visuel kontrast, der lever op til tilgængelighedskravene i produktionsmiljøer. Det har de samme funktionelle egenskaber som jobkortenheden. Det betyder imidlertid også, at flere job kan startes parallelt fra en jobliste. (Denne egenskab kaldes også *job i bundter*). Arbejderne kan også på en jobliste åbne en guide, der er oprettet i vejledningen til Microsoft Dynamics 365. På denne måde kan de få visuelle instruktioner på en HoloLens.
 
 ## <a name="sign-in-to-the-production-floor-execution-interface-as-a-worker"></a>Logge på grænsefladen til kørsel af produktionsudstyr som arbejder
 
 Før arbejdere kan begynde at bruge enheden, skal en supervisor eller teknisk personale klargøre den og åbne den korrekte side i Dynamics 365 Supply Chain Management. Du kan finde flere oplysninger om, hvordan du konfigurerer enheden, under [Konfigurere en enhed til at køre grænsefladen på produktionsudstyr](production-floor-execution-setup.md).
 
-Når enheden er blevet forberedt, vises logonsiden. På denne side vises oplysninger om status for job i den lokale arbejdscelle. Disse oplysninger opdateres jævnligt. På siden bruger arbejderne deres badge-id'er, når de logger på. Selvom arbejderne ikke behøver at have en brugerkonto til Supply Chain Management, skal de have en *tidsregistreret arbejder* -konto, som de kan bruge, når de logger på.
+Når enheden er blevet forberedt, vises logonsiden. På denne side vises oplysninger om status for job i den lokale arbejdscelle. Disse oplysninger opdateres jævnligt. På siden bruger arbejderne deres badge-id'er, når de logger på. Selvom arbejderne ikke behøver at have en brugerkonto til Supply Chain Management, skal de have en *tidsregistreret arbejder*-konto, som de kan bruge, når de logger på.
 
 ![Logonside i grænseflade til kørsel af produktionsudstyr](media/pfei-sign-in-page.png "Logonside i grænseflade til kørsel af produktionsudstyr")
 
@@ -41,7 +41,7 @@ I de resterende afsnit af dette emne beskrives, hvordan arbejderne kan interager
 
 ## <a name="all-jobs-tab"></a>Fanen Alle job
 
-Under fanen **Alle job** kan du se en jobliste med alle de produktionsjob, der har statussen *Ikke startet* , *Stoppet* eller *Startet*.
+Under fanen **Alle job** kan du se en jobliste med alle de produktionsjob, der har statussen *Ikke startet*, *Stoppet* eller *Startet*.
 
 ![Fanen Alle job](media/pfei-all-jobs-tab.png "Fanen Alle job")
 
@@ -81,17 +81,17 @@ Arbejderne starter et produktionsjob ved at vælge et job under fanen **Alle job
 
 Arbejderne bruger dialogboksen **Start job** til at bekræfte produktionsantallet og derefter starte jobbet. De kan justere antallet ved at markere feltet **Antal** og derefter bruge det numeriske tastatur, der vises. De vælger derefter **Start** for at begynde at arbejde på jobbet. Dialogboksen **Start job** lukkes, og jobbet føjes til fanen **Aktive job**.
 
-Arbejderne kan starte et job med en hvilken som helst status. Når en arbejder starter et job, der har statussen *Ikke startet* , viser feltet **Antal** i dialogboksen **Start job** det samlede antal som udgangspunkt. Når en arbejder starter et job, der har statussen *Startet* eller **Stoppet** , viser feltet *Antal* som udgangspunkt det resterende antal.
+Arbejderne kan starte et job med en hvilken som helst status. Når en arbejder starter et job, der har statussen *Ikke startet*, viser feltet **Antal** i dialogboksen **Start job** det samlede antal som udgangspunkt. Når en arbejder starter et job, der har statussen *Startet* eller **Stoppet**, viser feltet *Antal* som udgangspunkt det resterende antal.
 
 ## <a name="reporting-good-quantities"></a>Rapportering af antal gode
 
-Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere antal gode, der er produceret, ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér status**. Derefter angiver arbejderen antallet af gode ved at bruge det numeriske tastatur i dialogboksen **Rapportér status**. Antallet er som standard tomt. Når der er angivet et antal, kan arbejderen opdatere status for jobbet til *I gang* , *Stoppet* eller *Fuldført*.
+Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere antal gode, der er produceret, ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér status**. Derefter angiver arbejderen antallet af gode ved at bruge det numeriske tastatur i dialogboksen **Rapportér status**. Antallet er som standard tomt. Når der er angivet et antal, kan arbejderen opdatere status for jobbet til *I gang*, *Stoppet* eller *Fuldført*.
 
 ![Dialogboksen Rapportér status](media/pfei-report-progress-dialog.png "Dialogboksen Rapportér status")
 
 ## <a name="reporting-scrap"></a>Rapportering af spild
 
-Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere spild ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér spild**. Derefter angiver arbejderen spildantallet ved at bruge det numeriske tastatur i dialogboksen **Rapportér spild**. Arbejderen vælger også en årsag ( *Ingen* , *Maskine* , *Operatør* eller *Materiale* ).
+Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere spild ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér spild**. Derefter angiver arbejderen spildantallet ved at bruge det numeriske tastatur i dialogboksen **Rapportér spild**. Arbejderen vælger også en årsag (*Ingen*, *Maskine*, *Operatør* eller *Materiale*).
 
 ![Dialogboksen Rapportér spild](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportér spild")
 
@@ -119,8 +119,8 @@ Indirekte aktiviteter er aktiviteter, der ikke er direkte relateret til en produ
 
 Shannon, som arbejder i produktionsanlægget hos Contoso, ønsker f.eks. at deltage i et firmamøde, og møder betragtes som en indirekte aktivitet. Et af følgende to scenarier er relevant:
 
-- **Shannon arbejder på et eller flere aktive job.** Hun vælger **Aktivitet** , identificerer aktiviteten (møde) og bekræfter sit valg. Der vises en meddelelse om, at hun har igangværende job. Fra meddelelsen kan hun vælge at fuldføre eller stoppe de job, som hun arbejder på, før hun går til mødet.
-- **Shannon har ingen aktive job.** Hun vælger **Aktivitet** , identificerer aktiviteten (møde) og bekræfter sit valg. Det er nu registreret, at hun er til møde.
+- **Shannon arbejder på et eller flere aktive job.** Hun vælger **Aktivitet**, identificerer aktiviteten (møde) og bekræfter sit valg. Der vises en meddelelse om, at hun har igangværende job. Fra meddelelsen kan hun vælge at fuldføre eller stoppe de job, som hun arbejder på, før hun går til mødet.
+- **Shannon har ingen aktive job.** Hun vælger **Aktivitet**, identificerer aktiviteten (møde) og bekræfter sit valg. Det er nu registreret, at hun er til møde.
 
 I begge scenarier, går Shannon, efter at have bekræftet sit valg, enten til logonsiden eller en side, hvor hun skal bekræfte, at hun er returneret, når hun er tilbage fra sin indirekte aktivitet. Hvilken side der vises afhænger af konfigurationen af grænsefladen til kørsel af produktionsudstyr. (Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](production-floor-execution-configure.md)).
 

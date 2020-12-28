@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017110"
+ms.locfileid: "4424950"
 ---
 # <a name="location-license-plate-positioning"></a>Placering af lokations-id
 
@@ -44,7 +44,7 @@ Før du kan bruge funktionen til placering af nummerplads på lokation, skal den
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde gennem dette scenarie ved hjælp af de værdier, der er foreslået, skal du arbejde på et system, hvor eksempeldata er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
+Hvis du vil arbejde gennem dette scenarie ved hjælp af de værdier, der er foreslået, skal du arbejde på et system, hvor eksempeldata er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>Konfigurer funktionen til dette scenarie
 
@@ -60,11 +60,11 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
 
     - **Aktiver nummerpladeplacering:** *Ja*
 
-        Når denne indstilling er angivet til *Ja* , bevares nummerpladeplaceringen for nummerplader på lokationen.
+        Når denne indstilling er angivet til *Ja*, bevares nummerpladeplaceringen for nummerplader på lokationen.
 
     - **Vis NP-position på mobilenhed:** *Ja*
 
-        Når denne indstilling er angivet til *Ja* , vises nummerpladens placering for brugere af mobilenheder under justering og optælling. Du kan kun ændre indstillingen af denne valgmulighed, når funktionen er slået til.
+        Når denne indstilling er angivet til *Ja*, vises nummerpladens placering for brugere af mobilenheder under justering og optælling. Du kan kun ændre indstillingen af denne valgmulighed, når funktionen er slået til.
 
 1. Vælg **Gem**.
 
@@ -86,7 +86,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
 1. Vælg forespørgselseditoren skal du vælge fanen **Joinforbindelser**.
 1. Udvid tabeljoinet **lokationer** for at få vist joinet med tabellen **Lagerdimensioner**.
 1. Udvid tabeljoinet **Lagerdimensioner** for at få vist joinet med tabellen **Disponibel lagerbeholdning**.
-1. Vælg **Lagerdimensioner** , og vælg derefter **Tilføj tabeljoin**.
+1. Vælg **Lagerdimensioner**, og vælg derefter **Tilføj tabeljoin**.
 1. På listen over tabeller, der vises, skal du i kolonnen **Relation** vælge **Nummerplade (nummerplade)**. Vælg derefter **Vælg** for at føje en **Nummerplade** til tabeljoinet **Lagerdimensioner**.
 1. Mens **Nummerplade** stadig er valgt, skal du vælge **Tilføj tabeljoin**.
 1. På listen over tabeller, der vises, skal du i kolonnen **Relation** vælge **Placering af nummerplade på lokation (nummerplade)**. Vælg derefter **Vælg** for at føje **Placering af nummerplads på lokation** til tabeljoinet **Lagerdimensioner**.
@@ -95,7 +95,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
 
 1. Vælg **OK** for at bekræfte de opdaterede joinforbundne tabeller og lukke forespørgselseditoren.
 1. I oversigtspanelet **Handlinger i lokationsvejledning** skal du vælge **Rediger forespørgsel** igen for at åbne forespørgselseditoren.
-1. Gå til fanen **Interval** , og vælg **Tilføj** for at føje en linje til gitteret.
+1. Gå til fanen **Interval**, og vælg **Tilføj** for at føje en linje til gitteret.
 1. Angiv følgende værdier på den nye linje:
 
     - **Tabel:** *Placering af nummerplade på lokation*
@@ -109,7 +109,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
 
 ### <a name="set-up-sample-data-for-this-scenario"></a>Konfigurer eksempeldata til dette scenarie
 
-I dette scenarie skal brugeren logge på den Warehouse Mobile App ved hjælp af en arbejder, der er konfigureret til lagersted *61* , for at udføre arbejde. Brugeren skal også fuldføre transaktioner.
+I dette scenarie skal brugeren logge på den Warehouse Mobile App ved hjælp af en arbejder, der er konfigureret til lagersted *61*, for at udføre arbejde. Brugeren skal også fuldføre transaktioner.
 
 Da funktionen *Placering af nummerplade på lokation* tilføjer et nyt id for nummerpladepositioner på en placering, skal du først oprette nogle data for at kunne understøtte scenariet.
 
@@ -195,7 +195,7 @@ Arbejde er nu fuldført.
 1. I gitteret skal du vælge det første arbejds-id for arbejdsordretypen *Cyklusoptælling*.
 1. Gå til handlingsrunde og vælg **Cyklusoptælling** i gruppen **Arbejde** under fanen **Arbejde**.
 
-    Der vises to linjer, én for hver vare og nummerplade. Værdierne i felterne **Optalt antal** , **Lokation** , **Nummerplade** og **Vare** skal svare til de optællingsposter, du har oprettet på mobilenheden. Hvis et eller flere af disse felter ikke er synlige, skal du vælge **Vis dimensioner** i handlingsruden for at føje dem til gitteret.
+    Der vises to linjer, én for hver vare og nummerplade. Værdierne i felterne **Optalt antal**, **Lokation**, **Nummerplade** og **Vare** skal svare til de optællingsposter, du har oprettet på mobilenheden. Hvis et eller flere af disse felter ikke er synlige, skal du vælge **Vis dimensioner** i handlingsruden for at føje dem til gitteret.
 
 1. Vælg begge linjer.
 1. Vælg **Accepter antal** i handlingsruden.
@@ -213,7 +213,7 @@ Arbejde er nu fuldført.
 1. På fanen **Oversigt** skal du vælge det andet arbejds-id for arbejdsordretypen *Cyklusoptælling*.
 1. Gå til handlingsrunde og vælg **Cyklusoptælling** i gruppen **Arbejde** under fanen **Arbejde**.
 
-    Der vises en linje for varen og nummerpladen. Værdierne i felterne **Optalt antal** , **Lokation** , **Nummerplade** og **Vare** skal svare til de optællingsposter, du har oprettet på mobilenheden.
+    Der vises en linje for varen og nummerpladen. Værdierne i felterne **Optalt antal**, **Lokation**, **Nummerplade** og **Vare** skal svare til de optællingsposter, du har oprettet på mobilenheden.
 
 1. Vælg linjen.
 1. Vælg **Accepter antal** i handlingsruden.
@@ -237,12 +237,12 @@ Arbejde er nu fuldført.
 
 1. Bemærk, at lokationen *01A01R1S1B* har to nummerplader:
 
-    - **A0001** , hvor feltet **NP-position** er indstillet til *1*
-    - **A0002** , hvor feltet **NP-position** er indstillet til *2*
+    - **A0001**, hvor feltet **NP-position** er indstillet til *1*
+    - **A0002**, hvor feltet **NP-position** er indstillet til *2*
 
 1. Bemærk, at lokationen *01A01R1S2B* har én nummerplade:
 
-    - **A0002** , hvor feltet **NP-position** er indstillet til *1*
+    - **A0002**, hvor feltet **NP-position** er indstillet til *1*
 
 ### <a name="sales-order-scenario"></a>Salgsordrescenarie
 
@@ -250,7 +250,7 @@ Nu, hvor funktionen *Placering af nummerplade på lokation* er oprettet, og lage
 
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
 
     - **Debitorkonto:** *US-004*
     - **Lagersted:** *61*
@@ -275,7 +275,7 @@ Nu, hvor funktionen *Placering af nummerplade på lokation* er oprettet, og lage
 
 1. Åbn mobilappen, og log på lagersted *61*.
 1. Gå til **Udgående \> Salgsplukning**.
-1. Vælg feltet **Id** på siden **Scan et arbejds-id/nummerplade-id** , og angiv derefter arbejds-id'et fra salgslinjen.
+1. Vælg feltet **Id** på siden **Scan et arbejds-id/nummerplade-id**, og angiv derefter arbejds-id'et fra salgslinjen.
 1. Bemærk, at plukarbejdet dirigerer dig til at plukke vare *A0002* fra lokation *01A01R1S2B*. Du modtager denne instruktion, fordi vare *A0002* er på en licensnummerplade i position *1* på den pågældende lokation.
 
     ![Placering 1-lokation](media/LocationLicensePlatePositioning.png "Placering 1-lokation")

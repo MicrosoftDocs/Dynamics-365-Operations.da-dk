@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978122"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424404"
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåge kørsel af en varedisponering
 
@@ -118,7 +118,7 @@ Farven vises kun på det laveste niveau i Gantt-diagrammet. Vælg **Udvid alle**
 
 ## <a name="run-master-planning-and-track-processing-time"></a>Kør varedisponering og registrer procestiden
 
-1. Vælg **Varedisponering**på standarddashboardet.
+1. Vælg **Varedisponering** på standarddashboardet.
 1. I feltet **Plan** indtastes eller vælges en værdi.
 1. Vælg **Kør**.
 1. Angiv indstillingen i **Registrer procestiden** til **Ja**.

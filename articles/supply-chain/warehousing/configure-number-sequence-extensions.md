@@ -4,7 +4,7 @@ description: Dette emne giver en oversigt over de funktioner, der omfatter numme
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016119"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4425070"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurere nummerserier til lagerstrømme
 
@@ -52,7 +52,7 @@ Før du kan bruge funktionen, skal den være slået til i dit system. Administra
 Hvis du vil konfigurere nummerserieudvidelser i systemet, skal du følge disse trin.
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Parametre til lagerstedsstyring**.
-1. Gå til fanen **Generelt** i feltet **GS1-firmapræfiks** , og indtast dit firmas GS1-præfiks. Denne værdi vil påvirke alle de nummerserier, hvor GS1-præfikset medtages som segment.
+1. Gå til fanen **Generelt** i feltet **GS1-firmapræfiks**, og indtast dit firmas GS1-præfiks. Denne værdi vil påvirke alle de nummerserier, hvor GS1-præfikset medtages som segment.
 1. Hvis du vil generere styklistenumre til bølgeetiketter, skal du på fanen **Rapporter** markere afkrydsningsfeltet **Generer styklistenummer ved udskrivning af bølgeetiketter**.
 
     > [!NOTE]
@@ -64,7 +64,7 @@ Hvis du vil konfigurere nummerserieudvidelser i systemet, skal du følge disse t
     Du kan finde flere oplysninger om, hvordan du tilpasser disse standardnummerserier og/eller tilføjer nye serier, i næste afsnit. Du kan også fjerne disse sekvenser, hvis du ikke har brug for dem.
 
 1. Gå tilbage **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**.
-1. Gå til fanen **Nummerserier** , og vælg en relevant nummerserieudvidelse, der skal bruges til at generere numre til dine id-numre, bølgeetiket-id'er, container-id'er (i dette tilfælde skal du vælge det relevante **SSCC-18-nummerserie** ) og/eller stykliste-id'er (i dette tilfælde skal du vælge **styklisteserien** ). Som standard understøttes kun nummerserieudvidelser for disse fire typer id'er.
+1. Gå til fanen **Nummerserier**, og vælg en relevant nummerserieudvidelse, der skal bruges til at generere numre til dine id-numre, bølgeetiket-id'er, container-id'er (i dette tilfælde skal du vælge det relevante **SSCC-18-nummerserie**) og/eller stykliste-id'er (i dette tilfælde skal du vælge **styklisteserien**). Som standard understøttes kun nummerserieudvidelser for disse fire typer id'er.
 
 Næste gang der genereres et nyt nummer for en af disse nummerserier, bruges den nye logik.
 
@@ -79,16 +79,16 @@ Benyt følgende fremgangsmåde for at oprette og redigere nummerserier.
 
 1. Gå til **Lokationsstyring** \> **Konfiguration** \> **Nummerserieudvidelser**.
 1. Gå til handlingsruden, og vælg **Ny**.
-1. Gå til feltet **Nummerserieudvidelse** , og angiv et navn til den nye serie. Indtast en beskrivelse i feltet **Beskrivelse**.
-1. Gå til oversigtspanelet **Segmenter** , og brug knapperne på værktøjslinjen til at samle nummereringsformatet ved at tilføje, slette og arrangere segmenter. I feltet **Segment** skal du for hver række tildele en segmenttype for at definere formålet med og indholdet af det pågældende segment. I følgende tabel forklares de typer af segmenter, der er tilgængelige.
+1. Gå til feltet **Nummerserieudvidelse**, og angiv et navn til den nye serie. Indtast en beskrivelse i feltet **Beskrivelse**.
+1. Gå til oversigtspanelet **Segmenter**, og brug knapperne på værktøjslinjen til at samle nummereringsformatet ved at tilføje, slette og arrangere segmenter. I feltet **Segment** skal du for hver række tildele en segmenttype for at definere formålet med og indholdet af det pågældende segment. I følgende tabel forklares de typer af segmenter, der er tilgængelige.
 
     | Segmenttype | Beskrivende tekst |
     |---|---|
     | Konstant | Denne segmenttype tilføjer den samme konstanttekst for hvert genereret nummer i serien. Angiv den krævede tekst i feltet **Værdi**. Feltet **Længde** opdateres automatisk til længden af den tekst, du har angivet i feltet **Værdi**. |
-    | Nummerserie | I feltet **Værdi** skal du angive et nummertegn ( *\#* ) for hvert tegn, der skal vises i den oprettede serie. Selve nummerserien kan f.eks. generere længere numre, men kun de tegnene længst til højre vil blive vist. Feltet **Længde** opdateres automatisk til antallet af nummertegn, som du har angivet i feltet **Værdi**.<p>Hvis du vil overholde GS1-kravene for SSCC-18-numre, skal du kontrollere, at længden på dette segment er 16 minus længden på GS1-præfikset.</p> |
-    | GS1-præfiks | Denne segmenttype tilføjer den værdi, der er angivet i feltet **GS1-firmapræfiks** på siden **Parametre for lokationsstyring**. Feltet **Værdi** viser den værdi, der er angivet på siden **Parametre for lokationsstyring** , og feltet **Længde** viser antallet af tegn i værdien. Både feltet **Værdi** og feltet **Længde** er skrivebeskyttet. |
+    | Nummerserie | I feltet **Værdi** skal du angive et nummertegn (*\#*) for hvert tegn, der skal vises i den oprettede serie. Selve nummerserien kan f.eks. generere længere numre, men kun de tegnene længst til højre vil blive vist. Feltet **Længde** opdateres automatisk til antallet af nummertegn, som du har angivet i feltet **Værdi**.<p>Hvis du vil overholde GS1-kravene for SSCC-18-numre, skal du kontrollere, at længden på dette segment er 16 minus længden på GS1-præfikset.</p> |
+    | GS1-præfiks | Denne segmenttype tilføjer den værdi, der er angivet i feltet **GS1-firmapræfiks** på siden **Parametre for lokationsstyring**. Feltet **Værdi** viser den værdi, der er angivet på siden **Parametre for lokationsstyring**, og feltet **Længde** viser antallet af tegn i værdien. Både feltet **Værdi** og feltet **Længde** er skrivebeskyttet. |
     | Programidentifikator | I feltet **Værdi** skal du angive et ansøgnings-id, som angivet i den relevante GS1-politik for denne type nummerserie. Skriv f.eks. *00* for SSCC eller *420* for stykliste. Feltet **Længde** opdateres automatisk til længden af det id, du har angivet i feltet **Værdi**. |
-    | Pakketype | For varer, der klart kan identificeres, tilføjer denne segmenttype en feltværdi fra den relevante enheds seriegruppe (fra siden **Enhedsseriegrupper** ). (Denne funktionsmåde svarer til den eksisterende logik for id-numre). For nummerplader, der omfatter flere lagerenheder, tilføjer denne segmenttype *0* (nul) som standard. For denne segmenttype indstilles feltet **Værdi** altid til *P* , og feltet **Længde** indstilles altid til *1*.|
-    | Kontroltal | Denne segmenttype tilføjer et kontrolciffer, som er en modulo 10-beregning. (Denne funktionsmåde svarer til den eksisterende logik for id-numre). For denne segmenttype angives feltet **Værdi** til et cirkumflekstegn ( *^* ), og feltet **Længde** indstilles altid til *1*. |
+    | Pakketype | For varer, der klart kan identificeres, tilføjer denne segmenttype en feltværdi fra den relevante enheds seriegruppe (fra siden **Enhedsseriegrupper**). (Denne funktionsmåde svarer til den eksisterende logik for id-numre). For nummerplader, der omfatter flere lagerenheder, tilføjer denne segmenttype *0* (nul) som standard. For denne segmenttype indstilles feltet **Værdi** altid til *P*, og feltet **Længde** indstilles altid til *1*.|
+    | Kontroltal | Denne segmenttype tilføjer et kontrolciffer, som er en modulo 10-beregning. (Denne funktionsmåde svarer til den eksisterende logik for id-numre). For denne segmenttype angives feltet **Værdi** til et cirkumflekstegn (*^*), og feltet **Længde** indstilles altid til *1*. |
 
 1. Hvis du vil have vist et eksempel på dit endelige talformat, skal du kontrollere feltet **Format** nederst i oversigtspanelet **Segmenter**.

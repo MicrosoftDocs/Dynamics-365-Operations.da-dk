@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: df34d1c0a57f8890dab83ad2284deb0514b128fb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212474"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424908"
 ---
 # <a name="registration-for-manufacturing-execution"></a>Registrering for produktionsudførelse
 
@@ -37,7 +37,7 @@ Produktionsudførelse er primært beregnet til brug i produktionsfirmaer. Arbejd
 ## <a name="manufacturing-execution-and-registration-terminology"></a>Produktionsudførelse og registreringsterminologi
 Følgende tabel indeholder udtryk, der vedrører produktionsudførelse og relaterede registreringsopgaver.
 
-| Periode                          | Betegnelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Periode                          | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Produktionsudførelse       | En funktion, der bruges til at registrere tid, materialeforbrug, omkostninger på produktionsjob, projekter og indirekte aktiviteter. Registrering foretages i en registreringsklient til produktionsudførelse.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Joboversigt                      | På siden **Jobregistrering** kan arbejderne se en liste over job, som de skal udføre på en specifik ressource som f.eks. en maskine. Arbejderne kan registrere tids- og vareforbrug for hvert job eller hver opgave i joboversigten.                                                                                                                                                                                                                                                                                                                                                                           |

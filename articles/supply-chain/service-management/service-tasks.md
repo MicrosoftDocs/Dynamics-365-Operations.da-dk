@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987299"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424310"
 ---
 # <a name="service-tasks-overview"></a>Oversigt over serviceopgaver
 
@@ -54,13 +54,13 @@ En tekniker skal udføre to job på en gearkasse (serviceobjekt GB-1234) hos en 
 
 ### <a name="service-agreement"></a>Serviceaftale
 
-| Project | Serviceaftale | Betegnelse                                  | Multi   |
+| Project | Serviceaftale | Beskrivelse                                  | Multi   |
 |---------|-------------------|----------------------------------------------|---------|
 | 9012    | 000008\_001       | Eftersyn og rutinemæssig udskiftning – GB-1234 | Løntillæg |
 
 ### <a name="service-agreement-lines"></a>Serviceaftalelinjer
 
-| Betegnelse             | Posteringstype | Seriviceobjekt | Serviceopgave |
+| Beskrivelse             | Posteringstype | Seriviceobjekt | Serviceopgave |
 |-------------------------|------------------|----------------|--------------|
 | Eftersyn og rensning | Time             | GB-1234        | I/C - GB1234 |
 | Transport                  | Expense          | GB-1234        | I/C - GB1234 |

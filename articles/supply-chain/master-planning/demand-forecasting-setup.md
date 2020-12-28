@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982863"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424872"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -84,7 +84,7 @@ Under fanen **Fordelingsnøgler** kan du angive **Parametre til prognosealgoritm
 - **Konfidensniveau i procent**: Et konfidensinterval består af en række værdier, der fungerer som gode estimater for behovsprognosen. En konfidensinternval på 95 % angiver, at der er 5 % risiko for, at det fremtidige behov falder uden for konfidensintervallet.
 - **Gennemtving sæsonudsving**: Angiver, om modellen skal tvinges til at bruge en bestemt type sæsonudsving. Dette gælder kun for ARIMA og ETS. Indstillinger: AUTO (standard), NONE, ADDITIVE, MULTIPLICATIVE.
 - **Prognosemodel**: Indstillinger: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. Du får den mest velegnede model, hvis du bruger **ALL**.
-- **Maks. budgetteret værdi**: Angiver den maksimale værdi, der skal bruges til forudsigelser. Format: + 1E [n] eller numerisk konstant.
+- **Maks. budgetteret værdi**: Angiver den maksimale værdi, der skal bruges til forudsigelser. Format: +1E[n] eller numerisk konstant.
 - **Min. budgetteret værdi**: Angiver den mindste værdi, der skal bruges til forudsigelser. Format: -1E[n] eller numerisk konstant.
 - **Erstatning af manglende værdi**: Angiver, hvordan huller i historiske data skal udfyldes. Indstillinger: numerisk værdi, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL.
 - **Erstatning af manglende værdi**: Angiver, om værdierstatningen kun gælder for dataområdet for hver enkelt granularitetsattribut eller for hele datasættet. Indstillinger: GRANULARITY_ATTRIBUTE (standard), GLOBAL.

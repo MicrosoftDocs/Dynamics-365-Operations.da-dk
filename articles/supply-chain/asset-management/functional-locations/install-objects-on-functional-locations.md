@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 85b9f473cc725896a00501510eea02d7cfb21782
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888865"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424520"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installation af aktiver på arbejdssteder
 
@@ -64,7 +64,7 @@ Når du har installeret aktiverne på et arbejdssted, kan du erstatte et overord
     > Hvis du vil ændre installationen af et aktiv ved at installere det på et nyt arbejdssted, skal du følge trin 1 til 6 i denne procedure. Når du installerer et aktiv på at nyt arbejdssted, afinstalleres aktivet automatisk på det forrige arbejdssted. Alle aktive vedligeholdelsesanmodninger eller arbejdsordrer, der blev oprettet for aktivet, før du installerede det på et nyt arbejdssted overføres **ikke** automatisk til det nye arbejdssted. Hvis disse vedligeholdelsesanmodninger og arbejdsordrer stadig er påkrævede for aktivet, skal du manuelt oprette dem igen, når aktivet er blevet installeret på det nye arbejdssted.
 
 7. Hvis du vil have vist en liste over alle de aktiver, herunder underaktiver, der er installeret på arbejdsstedet, skal du vælge arbejdsstedet på siden **Alle arbejdssteder** og dernæst vælge **Aktiver**.
-8. Hvis du vil have vist en liste over aktive vedligeholdelsesanmodninger, aktive arbejdsordrer eller fejlregistreringer, der er relateret til de aktiver, der er installeret på et arbejdssted, skal du vælge arbejdsstedet på siden **Alle arbejdssteder** og dernæst vælge **Anmodninger**, **Arbejdsordrer**eller **Fejl**.
+8. Hvis du vil have vist en liste over aktive vedligeholdelsesanmodninger, aktive arbejdsordrer eller fejlregistreringer, der er relateret til de aktiver, der er installeret på et arbejdssted, skal du vælge arbejdsstedet på siden **Alle arbejdssteder** og dernæst vælge **Anmodninger**, **Arbejdsordrer** eller **Fejl**.
 
 > [!NOTE]
 > Når data relateret til aktiver ændres, opdateres de automatisk på det arbejdssted, som aktivet er installeret på. Denne automatiske opdatering vedrører ændringer af vedligeholdelsesanmodninger, arbejdsordrer, registreringer af fejl for aktiver, registreringer af vedligeholdelsesnedetid og registreringer af måling af aktiver.

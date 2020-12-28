@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018899"
+ms.locfileid: "4424957"
 ---
 # <a name="procurement-catalogs-overview"></a>Oversigt over indkøbskataloger
 
@@ -66,7 +66,7 @@ Opdateringer publiceres enten automatisk eller manuelt, afhængigt af de indstil
 
 -   **Dynamisk** – Katalogerne opdateres automatisk, når der foretages ændringer.
 -   **Statisk** – Katalogerne skal opdateres manuelt.
--   **Begge** – Hvis kataloget indeholder produktkategorier, som har standardopdateringstypen **Statisk** , skal det opdateres, når disse kategorier opdateres. Hvis kataloget indeholder produktkategorier, der har standardopdateringstypen **Dynamisk** , opdateres det automatisk, når det ændres.
+-   **Begge** – Hvis kataloget indeholder produktkategorier, som har standardopdateringstypen **Statisk**, skal det opdateres, når disse kategorier opdateres. Hvis kataloget indeholder produktkategorier, der har standardopdateringstypen **Dynamisk**, opdateres det automatisk, når det ændres.
 
 
 <a name="additional-resources"></a>Yderligere ressourcer

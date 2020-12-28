@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ec91174f291bcfa7027a93ca344823561cc29e3f
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018142"
+ms.locfileid: "4425022"
 ---
 # <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
 
@@ -45,7 +45,7 @@ Dette emne viser, hvordan du opretter en indkøbsordre manuelt. Det er mere almi
 ## <a name="add-a-purchase-order-line"></a>Tilføje en indkøbsordrelinje
 1. Vælg **Indkøbsordrelinje**.
 2. Vælg **Dimensioner**. Produkter kan forekomme i varianter, der differentieres efter dimensioner som f.eks. farve, størrelse eller typografi. Produkter kan også konfigureres til at bruge lagringsdimensioner som f.eks. lokation og lagersted. Der er også valgfrie sporingsdimensioner som f.eks. batch- og serienumre. Du kan tilføje de dimensionsfelter, du bruger oftest, direkte til ordregitteret for at forbedre effektiviteten af ordreindtastningen.  
-3. Markér afkrydsningsfeltet **Farve**. Valgfrit: Hvis du vælger feltet **Gem opsætning** , vil de dimensioner, du har valgt, også blive vist på ordrelinjegitteret, næste gang du åbner siden Indkøbsordre.  
+3. Markér afkrydsningsfeltet **Farve**. Valgfrit: Hvis du vælger feltet **Gem opsætning**, vil de dimensioner, du har valgt, også blive vist på ordrelinjegitteret, næste gang du åbner siden Indkøbsordre.  
 4. Vælg **OK**.
 5. Vælg **T0004** i feltet **Varenummer**.
 
@@ -60,7 +60,7 @@ Dette emne viser, hvordan du opretter en indkøbsordre manuelt. Det er mere almi
     - Feltet **Enhedspris** indeholder typisk en værdi fra en købsaftale eller en samhandelsaftale. Det er muligt at ændre enhedsprisen på de enkelte ordrelinjer, f.eks. hvis der er forhandlet en særlig pris med kreditoren.  
     - Feltet **Rabat** repræsenterer et rabatbeløb pr. enhed. Denne rabat nedsætter derfor enhedsprisen med rabatten. Denne rabat gives normalt automatisk ud fra købsaftaler eller samhandelsaftaler, men det er muligt at tilsidesætte den på enkelte linjer, hvis der er forhandlet særlige rabatter med kreditoren.  
     - Der kan angives en rabatprocent, der reducerer nettobeløbet for linjen. Rabatprocenten gives ofte automatisk ud fra købsaftaler eller samhandelsaftaler, men det er muligt at tilsidesætte den på enkelte linjer, hvis der er forhandlet en særlig rabatprocent med kreditoren.  
-    - Værdien i feltet **Nettobeløb** beregnes ud fra de andre felter på linjen, herunder antal, enhedspris, rabat og rabatprocent. Det er muligt at ændre nettobeløbet, men felterne **Enhedspris** , **Rabat** og **Rabatprocent** vil være tomme, og når du bogfører linjen, vil det bogførte beløb være proportionalt med nettobeløbet. Feltet **Nettobeløb** bruges normalt kun til at få vist nettobeløbet for linjen.  
+    - Værdien i feltet **Nettobeløb** beregnes ud fra de andre felter på linjen, herunder antal, enhedspris, rabat og rabatprocent. Det er muligt at ændre nettobeløbet, men felterne **Enhedspris**, **Rabat** og **Rabatprocent** vil være tomme, og når du bogfører linjen, vil det bogførte beløb være proportionalt med nettobeløbet. Feltet **Nettobeløb** bruges normalt kun til at få vist nettobeløbet for linjen.  
 
 8. Vis eller skjul sektionen **Linjedetaljer**.
 9. Vælg fanen **Levering**. Der kan tildeles en entydig leveringsdato for hver ordrelinje. Datoen arves fra feltet i indkøbsordrehovedet, men du kan ændre den.  
@@ -68,7 +68,7 @@ Dette emne viser, hvordan du opretter en indkøbsordre manuelt. Det er mere almi
 ## <a name="review-order-totals"></a>Gennemse ordretotaler
 1. Vælg **Totaler**.
 
-    - Hvis du ikke kan se handlingen **Totaler** , skal du vælge fanen **Indkøbsordre** på handlingsruden.  
+    - Hvis du ikke kan se handlingen **Totaler**, skal du vælge fanen **Indkøbsordre** på handlingsruden.  
     - Denne dialogboks viser totaler for hele ordren.  
     - Med feltet **Valg** kan du ændre grundlaget for beregningen af totaler. For eksempel kan du vælge **Antal produktkvitteringer** for at få vist totaler, der relaterer til beløbet af produkt(er), der er modtaget, eller **Bestilt antal** for at få vist det produktantal, der er bestilt.  
 

@@ -1,9 +1,9 @@
 ---
-title: Oprette lokationsvejledninger
-description: Dette emne forklarer, hvordan du opretter lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
+title: Arbejde med lokationsvejledninger
+description: Dette emne beskriver, hvordan du kan arbejde med lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
 author: Mirzaab
 manager: tfehr
-ms.date: 07/28/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,20 +14,20 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-28
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 4f634b7f526fd198b394af6d3870c43ee560813e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.search.validFrom: 2020-11-13
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: f56257fd3f2f681bbd514843d8ddafa2395648d3
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016764"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517470"
 ---
-# <a name="create-location-directives"></a>Oprette lokationsvejledninger
+# <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du opretter lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser. I en salgsordretransaktion bestemmer en lokationsvejledning eksempelvis, hvor varerne plukkes, og hvor de plukkede varer skal lægges på lager.
+Lokationsvejledninger er regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser. I f.eks. en salgsordretransaktion bestemmer en lokationsvejledning, hvor varerne plukkes, og hvor de plukkede varer skal lægges på lager. Lokationsvejledninger består af en overskrift og tilknyttede linjer. De oprettes for bestemte *typer af arbejdsordrer*.
 
 > [!NOTE]
 > Dette emne gælder for funktioner i modulet **Lagerstedsstyring**. Det gælder ikke for funktioner i modulet [Lagerstyring](../inventory/inventory-home-page.md).
@@ -43,83 +43,218 @@ Du kan bruge lokationsvejledninger til at udføre følgende opgaver:
 
 Før du kan oprette en lokationsvejledning, skal du følge disse trin for at sikre, at forudsætningerne er på plads.
 
+1. Kontrollér, at den påkrævede licensnøgle er aktiveret. Gå til **Systemadministration \> Konfiguration \> Licenskonfiguration**, udvid licensnøglen **Handel**, og vælg derefter konfigurationsnøglen **Lagersteds- og transportstyring**. Bemærk, at der kræves administratoradgang til dette trin.
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
 1. Opret et lagersted.
 1. På oversigtspanelet **Lagersted** skal du for indstillingen **Brug lagerstedsstyringsprocesser** vælge *Ja*.
 1. Opret lokationer, lokationstyper, lokationsprofiler og lokationsformater. Yderligere oplysninger finder du i afsnittet [Konfigurere lokationer i et WMS-aktiveret lagersted](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 1. Opret steder, zoner og zonegrupper. Yderligere oplysninger finder du i [Konfigurere lagersted](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) og [Konfigurere lokationer i et WMS-aktiveret lagersted](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
-## <a name="setup"></a>Konfiguration
+## <a name="work-order-types-for-location-directives"></a>Arbejdsordretyper for lokationsvejledninger
 
-### <a name="create-location-directives"></a>Oprette lokationsvejledninger
+Mange af de felter, der kan angives for lokationsvejledninger, er fælles for alle typer af arbejdsordrer. Andre felter er dog specifikke for bestemte arbejdsordretyper.
 
-Udfør følgende trin for at oprette en lokationsvejledning:
+![Arbejdsordretyper for lokationsvejledninger](media/Location_Directives_Work_Order_Types.png "Arbejdsordretyper for lokationsvejledninger")
 
-1. Gå til **Lokationsstyring \> Opsætning \> Lokationsvejledninger**.
-1. I listeruden skal du angive feltet **Arbejdsordretype** til den type lagertransaktion, du opretter en lokationsvejledning for.
-1. Vælg **Ny** i handlingsruden for at oprette en lokationsvejledning.
-1. I forbindelse med den nye lokationsvejledningskal du angive felterne som beskrevet i følgende tabel.
+> [!NOTE]
+> To typer arbejdsordrer, *Annulleret arbejde* og *Cyklusoptælling*, bruges kun af systemet. Lokationsvejledninger kan ikke oprettes for disse arbejdsordretyper.
 
-    | Felt | Betegnelse |
-    |---|---|
-    | Løbenummer | Angiv et heltal for lokationsvejledningens placering i rækkefølgen. Placeringen i rækkefølgen bestemmer, hvornår den enkelte lokationsvejledning behandles for den valgte arbejdsordretype. |
-    | Navn | Angiv et navn til lokationsvejledningen. | 
-    | Arbejdstype | Vælg den arbejdstype, der skal udføres. Listen over værdier afhænger af den type lagertransaktion, som du har valgt i feltet **Arbejdsordretype**. Følgende værdier kan være tilgængelige:<ul><li>**Læg på lager** – Lokationsvejledningen vil forsøge at finde den bedste lokation til at placere eller finde lager, som tilføres systemet gennem modtagelse, produktion eller lagerreguleringer. Lokationsvejledningen bruges også til at definere læg på midlertidigt lager-lokationen eller afsendelsesstedet for den endelige lagerport i det udgående flow.</li><li>**Pluk** – Lokationsvejledningen vil forsøge at finde de bedste mulige lokationer til fysisk reservation af lager (oprette arbejde). Plukket kan fuldføres (og plukarbejdslinjen kan lukkes), selvom arbejdet ikke er fuldført. Brugeren kan fuldføre fysiske pluk. I systemet er denne handling et pluktrin. Brugeren kan derefter annullere fra mobilenheden og fuldføre arbejdet (f.eks. læg på lager) senere. Arbejdshovedet lukkes imidlertid først, når det endelige læg på lager er fuldført.</li><li>**Optælling** , **Reguleringer** , **Brugerdefineret** , **Ændring af lagerstatus** , **Id-opbygning** , **Udskrivning** , **Statusændring** og **Pak til indlejrede id'er** – Disse værdier kan ikke bruges i nogen opsætning af lokationsvejledning.</li></ul> |
-    | Lokation | Vælg det sted, hvor arbejdet skal udføres. |
-    | Lagersted | Vælg det lagersted, hvor arbejdet skal udføres. |
-    | Vejledningskode | Vælg en vejledningskode, der skal styre valget af lokationsvejledninger, som er relateret til arbejdsskabelonens læg på lager-linjer, hvor denne kode er tildelt. På siden **Vejledningskode** kan du oprette nye koder, som kan bruges til at oprette forbindelse mellem en arbejdsskabelon og en lokationsvejledning. Du kan også bruge den pågældende side til at oprette forbindelse mellem enhver arbejdsskabelonlinje og en lokationsvejledning (f.eks. lagerporten eller den midlertidige lagerlokation). Yderligere oplysninger om, hvordan du konfigurerer en vejledningskode med en arbejdsskabelon, finder du under [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md).<p>Hvis der er angivet en vejledningskode, når arbejde skal genereres, søger systemet i lokationsvejledninger ved hjælp af vejledningskoden i stedet for placering i rækkefølgen. På denne måde kan du være mere præcis om den lokationsskabelon, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.</p> |
-    | Dispositionskode | Vælg en vejledningskode for at omdirigere læg på lager for de varer, der modtages på en lokation. (Yderligere oplysninger finder du i [Konfigurere dispositionskoder](tasks/set-up-dispositions-codes.md) .) Dette felt er kun tilgængeligt, når feltet **Arbejdsordretype** er angivet til *Indkøbsordrer* , *Returvareordrer* eller *Færdige varer, læg på lager*. |
-    | Flere SKU'er | Angiv denne indstilling til *Ja* for at bruge flere lagerenheder (SKU'er) på en lokation. Denne indstilling skal f.eks. angives til *Ja* for lagerporten.<p>Hvis indstillingen **Flere SKU'er** er angivet til *Ja* , angives lagerlokationen til igangværende (som forventet). Lokationen kan dog kun håndtere flere varer, hvis arbejdet indeholder forskellige lagerenheder, der skal plukkes og lægges på lager, og ikke hvis arbejdet indeholder en enkelt SKU, der skal lægges på lager.</p><p>Hvis indstillingen **Flere SKU'er** er angivet til *Nej* , vil læg på lager-lokationen kun være angivet, hvis den kun har én type SKU.</p><p>Hvis du vil bruge begge fremgangsmåder, skal du angive to linjer med samme struktur og opsætning, men angiv indstillingen **Flere SKU'er** til *Ja* for en af linjerne og *Nej* for den anden. Med andre ord kræves der to identiske lokationsvejledninger til læg på lager-handlinger, selvom du ikke behøver skelne mellem enkelte og flere SKU'er i arbejds-id'et. Du skal også konfigurere en lokationsvejledning for lag på lager, hvis du har en ordre, som omfatter mere end én vare.</p><p>**Bemærk!** Hvis du angiver indstillingen **Flere SKU'er** til *Ja* til en lokationsvejledning af arbejdstypen *Læg på lager* , vil systemet altid vælge den første lokationsvejledningslinje uden hensyntagen til andre begrænsninger, der er oprettet i linjerne.</p> |
+I tabellerne i følgende underafsnit vises de fælles og arbejderordretypespecifikke felter, der er tilgængelige, når du konfigurerer en lokationsvejledning.
 
-1. Valgfrit: Vælg **Rediger forespørgsel** i handlingsfruden for at vælge lokationer, eller angiv eventuelle begrænsninger, der gælder, når du vælger en bestemt lokationsvejledning.
-1. I oversigtspanelet **LInjer** skal du oprette en eller flere linjer for at angive enheder og finde eller reservere antal på et lagersted.
-1. På hver ny linje skal du angive felterne som beskrevet i følgende tabel.
+### <a name="fields-that-are-common-to-all-work-order-types"></a>Felter, der er fælles for alle typer arbejdsordrer
 
-    | Felt | Betegnelse |
-    |---|---|
-    | Løbenummer | Angiv et heltal for lokationsvejledningens placering i rækkefølgen. Placeringen i rækkefølgen bestemmer, hvornår den enkelte lokationsvejledning behandles for den valgte arbejdstype. |
-    | Fra antal | Angiv starten på antalsintervallet for, hvornår den midterste gitterrækkefølge skal være valgt. Angiv antallet i den måleenhed, der er valgt i feltet **Enhed**. |
-    | Antal til | Angiv slutningen på antalsintervallet for, hvornår den midterste gitterrækkefølge skal være valgt. Angiv antallet i den måleenhed, der er valgt i feltet **Enhed**. |
-    | Enhed | Vælg måleenheden for varerne.<p>Du kan angive et minimumantal og et maksimumantal, som vejledningen skal gælde for. Du kan også angive, at vejledningen skal bruges til en bestemt lagerenhed. Feltet **Enhed** bruges kun til evaluering af antal.</p><p>Systemet evaluerer antallet ved hjælp af værdien **Enhed** , der er angivet på linjen, for at afgøre, om en lokationvejledningslinje gælder. Hver gang en lokationsvejledningslinje åbnes, forsøger systemet at konvertere efterspørgselsenheden til den enhed, der er angivet på linjen. Hvis enhedsomregningen ikke findes, vil systemet gå videre til næste linje.</p> |
-    | Angiv lokalitet for antal | Dette felt er kun gyldigt, når du forsøger at lægge eller finde et antal på lagerstedet. Med andre ord er det kun gyldig for *Læg på lager* -arbejde. Vælg den metode, der bruges til at evaluere, om mængden er inden for det område, der er angivet i felterne **Fra antal** og **Til antal**. Hvis lokationsvejledningen er for en indgående transaktion, kan du vælge en af følgende indstillinger:<ul><li>**Id-antal** – For at evaluere, om et antal er inden for målantalintervallet kan du anvende antallet på det id-nummer, der modtages.</li><li>**Enhedsopdelt antal** – For at evaluere, om et antal er inden for målantalintervallet, kan du anvende det antal, der enhedsopdeles under transaktionen. Hvis du for eksempel på et lagersted kan modtage et antal på 1.000 og bryde det op i 10 id-numre, som hver har et antal på 100, kan du bruge et antal på 1.000 varer i stedet for id'ets antal på 100.</li><li>**Resterende antal** – For at evaluere, om et antal er inden for målantalintervallet, kan du bruge det antal, som stadig ikke er modtaget for den indkøbsordrelinje, der i øjeblikket modtages.</li><li>**Forventet antal** – For at evaluere, om et antal er inden for målantalintervallet, kan du bruge det samlede antal på indkøbsordrelinjen, uanset hvilket antal, der allerede er modtaget.</li></ul> |
+Følgende tabel indeholder de felter, der er fælles for alle arbejdsordretyper.
 
-1. Valgfrit: På oversigtspanelet **Linjer** kan du angive følgende supplerende felter.
+| Oversigtspanel | Felt |
+|---|---|
+| Lokationsvejledninger | Arbejdstype |
+| Lokationsvejledninger | Lokation |
+| Lokationsvejledninger | Lagersted |
+| Lokationsvejledninger | Vejledningskode |
+| Lokationsvejledninger | Flere SKU'er |
+| Linjer | Løbenummer |
+| Linjer | Fra antal |
+| Linjer | Antal til |
+| Linjer | Enhed |
+| Linjer | Angiv lokalitet for antal |
+| Linjer | Begræns efter enhed |
+| Linjer | Rund op til enhed |
+| Linjer | Find emballagemængde |
+| Linjer | Tillad opdeling |
+| Handlinger i lokationsvejledning | Løbenummer |
+| Handlinger i lokationsvejledning | Navn |
+| Handlinger i lokationsvejledning | Anvendelse af fast lokation |
+| Handlinger i lokationsvejledning | Tillad negativ lagerbeholdning |
+| Handlinger i lokationsvejledning | Batchaktiveret |
+| Handlinger i lokationsvejledning | Strategi |
 
-    | Felt | Betegnelse |
-    |---|---|
-    | Begræns efter enhed | Markér dette afkrydsningsfelt for at begrænse de måleenheder, der betragtes som gyldige udvælgelseskriterier for lokationsvejledningslinjerne. Når måleenhederne er angivet, er det kun varer, hvor enheden svarer til mindst én enhed, der er defineret for enhedsseriegruppen, som betragtes som gyldige for linjevalget.<p>Enheden er f.eks. begrænset til paller, og varen er knyttet til en enhedsseriegruppe, der omfatter enheden *Paller*. I dette tilfælde anses varerne for at være en gyldig indstilling for lokationsvejledningen.</p><p>Afkrydsningsfeltet **Begræns efter enhed** bestemmer dog ikke, hvilken eller hvilke enheder der anvendes på arbejdslinjer. Enhedsbegrænsningen gælder kun for de enheder, der er tilgængelige via enhedsseriegruppen.</p><p>Eksempelvis en vare, der er tilknyttet en enhedsseriegruppe, der omfatter både enheden *Paller* og *stk.* Der er defineret en måleenhed, hvor 1 palle = 100 stk., og lokationsvejledningen kun bruger funktionen **Begræns pr . enhed** til paller. Desuden er der defineret en arbejdsskabelon, som begrænser oprettelsen af arbejdshoveder til 50 stk. I dette tilfælde oprettes der arbejdslinjer på 50 stk.</p><p>Benyt følgende fremgangsmåde for at angive måleenheden for begrænsning</p><ol><li>Vælg **Begræns pr. enhed** på oversigtspanelet **Linjer**. Denne knap bliver først tilgængelig, når du har markeret afkrydsningsfeltet **Begræns efter enhed** på linjen og derefter har valgt **Gem**.</li><li>I feltet **Enhed** skal du vælge den måleenhed for begrænsning for pluk og læg på lager-processer.</li></ol> |
-    | Rund op til enhed | Vælg denne indstilling for at angive, at plukning af råvarer bør rundes op til et multiplum af den håndteringsenhed, der er angivet i feltet **Begræns efter enhed**. Dette felt gælder kun for pluk af råvarer og lokationsvejledninger af typen *Pluk*. |
-    | Find emballagemængde | Markér dette afkrydsningsfelt, hvis en pakkeenheds antal er angivet på siden **Salgsordre**. Hvis du markerer dette afkrydsningsfelt, vælges kun de lokationer, der har med dette pakkeenhedsantal. |
-    | Tillad opdeling | Markér dette afkrydsningsfelt for at opdele antallet på tværs af flere lokationer. |
-    | Skabelon for øjeblikkelig genopfyldning. | Opret en forbindelse til en genopfyldningsskabelon, så opfyldningen startes, så snart varerne ikke er fordelt. Hvis du lader dette felt være tomt, starter varegenopfyldningen ikke, før alle linjer i lokationsvejledningen er blevet behandlet.<p>Dette felt er kun tilgængeligt for udvalgte arbejdsordretyper, hvor genopfyldning er tilladt, f.eks. *Salgsordrer* og *Råvarepluk*.</p> |
+### <a name="fields-that-are-specific-to-work-order-types"></a><a name="fields-specific-types"></a>Felter, der er specifikke for arbejdsordretyper
 
-1. I oversigtspanelet **Handlinger for lokationsvejledninger** skal du klikke på **Ny** for at vælge lokationen eller serien af lokationer.
-1. I feltet **Sekvensnummer** vises den rækkefølge, som lokationsvejledningen behandles i for den valgte arbejdstype. Du kan ændre rækkefølgen. Du skal dog være forsigtig med løbenumre til lokationsvejledningens handlinger, fordi locationsvejledningens handlinger altid køres i denne rækkefølge.
-1. Angiv navnet på lokationsvejledningens handling i feltet **Navn**. Vær specifik, så det er tydeligt, hvad handlingen er.
-1. Valgfrit: Vælg **Rediger forespørgsel** for at ændre lagerstederne og andre kriterier.
-1. Valgfrit: Du kan angive følgende supplerende felter i for en lokationsvejledning.
+Følgende tabel indeholder de felter, der er specifikke for bestemte arbejdsordretyper.
 
-    | Felt | Betegnelse |
-    |---|---|
-    | Anvendelse af fast lokation | Vælg, hvilke lokationer lokationsvejledningen skal tage i betragtning:<ul><li>**Faste og ikke-faste lokationer** – Lokationsvejledningen tager alle lokationer i betragtning.</li><li>**Kun faste lokationer for produktet** – Lokationsvejledningen tager kun faste lokationer for produkter i betragtning.</li><li>**Kun faste lokationer for produktvarianten** – Lokationsvejledningen tager kun faste lokationer for produktvarianter i betragtning.</li></ul> |
-    | Tillad negativ lagerbeholdning | Markér dette afkrydsningsfelt for at tillade negativt lager på den angivne lagerlokation. |
-    | Batchaktiveret | Marker dette afkrydsningsfelt for at bruge batchstrategier til de varer, der er batchaktiverede. Hvis dette afkrydsningsfelt er markeret, og feltet **Strategi** er angivet til *Ingen* , går systemet videre til den næste handlingslinje. |
-    | Strategi | Vælg den strategi, som lokationsvejledningen skal anvende:<ul><li>**Ingen** – Der anvendes ingen strategi.</li><li>**Match emballagemængde** – Denne strategi kontrollerer, om en pluklokation har den angivne emballagemængde. Denne strategi er kun gyldig, når feltet **Arbejdstype** er angivet til *Pluk*.</li><li>**Konsolider** – Denne strategi konsoliderer varer på en bestemt lokation, når tilsvarende varer allerede er tilgængelige. Denne strategi er kun gyldig, når feltet **Arbejdstype** er angivet til *Læg på lager*. I en typisk opsætning til læg på lager, forsøger systemet at konsolidere på den første handlingslinje og forsøger derefter at lægge på lager uden konsolidering på den anden aktionslinje. Konsolidering af varer gør senere pluk mere effektive.</li><li>**FEFO-batchreservation** – Denne strategi bruges, når lageret lokaliseres ved hjælp af en batchudløbsdato, og det tildeles en batchreservation. Batchreservationsstrategien First Expiry, First Out (FEFO) anvendes også, når lageret lokaliseres ved hjælp af en sidste holdbarhedsdato for batchet ud over udløbsdatoen. Du kan kun bruge denne strategi til batchaktiverede varer. Denne strategi er kun gyldig, når feltet **Arbejdstype** er angivet til *Pluk*. Når du vælger denne strategi, tilsidesætter du enhver forespørgselssortering for de batchnumre, der anvendes.</li><li>**Rund op til fuld LP** – Denne strategi runder op til lagerantallet, så det svarer til antallet af id-numre, som er tildelt de varer, der skal plukkes. Denne strategi kan kun bruges til genopfyldningstypen for lokationsvejledninger, og kun når feltet **Arbejdstype** er angivet til *Pluk*.</li><li>**Tom lokation uden indgående arbejde** – Denne strategi bruges til at finde tomme lokationer. En lokation anses som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Denne strategi er kun gyldig, når feltet **Arbejdstype** er angivet til *Læg på lager*.</li></ul> |
+| Oversigtspanel | Felt | Arbejdsordretype |
+|---|---|---|
+| Lokationsvejledninger | Find via | Indkøbsordrer |
+| Lokationsvejledninger | Gældende dispositionskode | Indkøbsordrer |
+| Lokationsvejledninger | Dispositionskode | Indkøbsordrer |
+| Lokationsvejledninger | Gældende dispositionskode | Færdige varer, læg på lager |
+| Lokationsvejledninger | Dispositionskode | Færdige varer, læg på lager |
+| Lokationsvejledninger | Gældende dispositionskode | Returordrer |
+| Lokationsvejledninger | Dispositionskode | Returordrer |
+| Lokationsvejledninger | Gældende dispositionskode | Kanban-læg på lager |
+| Lokationsvejledninger | Gældende dispositionskode | Kanban-pluk |
+| Linjer | Skabelon for øjeblikkelig genopfyldning. | Salgsordre |
+| Linjer | Skabelon for øjeblikkelig genopfyldning. | Råvarepluk |
+| Linjer | Skabelon for øjeblikkelig genopfyldning. | Flytteafgang |
+| Linjer | Skabelon for øjeblikkelig genopfyldning. | Kanban-pluk |
 
-## <a name="example-of-the-use-of-location-directives"></a>Eksempel på brug af lokationsvejledninger
+## <a name="open-the-location-directives-page"></a>Åbne siden Lokationsvejledninger
+
+Hvis du vil åbne siden **Lokationsvejledninger**, skal du gå til **Lokationsstyring \> Konfiguration \> Lokationsvejledninger**.
+
+Derfra kan du se, oprette og redigere lokationsvejledninger ved hjælp af kommandoerne i handlingsruden. Se de resterende afsnit i dette emne for at få oplysninger om, hvordan du bruger alle de felter, der er tilgængelige på siden.
+
+## <a name="action-pane"></a>Handlingsrude
+
+Handlingsruden på siden **Lokationsvejledninger** indeholder knapper, du kan bruge til at oprette, redigere og slette vejledninger (**Rediger**, **Ny** og **Slet**). Den indeholder også følgende knapper, du kan bruge til at justere den rækkefølge, som lokationsvejledningen behandles i, og konfigurere en forespørgsel, der definerer kriterierne for anvendelse af lokationsvejledningen:
+
+- **Flyt op** – Flyt den valgte lokationsvejledning op i rækkefølgen. Du kan f.eks. flytte den fra sekvensnummer 4 til sekvensnummer 3.
+- **Flyt ned** – Flyt den valgte lokationsvejledning ned i rækkefølgen. Du kan f.eks. flytte den fra sekvensnummer 4 til sekvensnummer 5.
+- **Rediger forespørgsel** – Åbn en dialogboks, hvor du kan definere de betingelser, som den valgte lokationsvejledning skal behandles under. Det kan f.eks. være, at du ønsker, at den kun gælder for et bestemt lagersted.
+
+## <a name="location-directives-header"></a>Overskrift til lokalitetsvejledninger
+
+Overskriften til lokationsvejledningen indeholder følgende felter for sekvensnummeret og sigende navn til lokationsvejledningen:
+
+- **Sekvensnummer** – Dette felt angiver den rækkefølge, som systemet prøver at anvende hver lokationsvejledning i for den valgte arbejdsordretype. Der anvendes lave numre først. Du kan ændre rækkefølgen ved hjælp af knapperne **Flyt op** og **Flyt ned** i handlingsruden.
+- **Navn** – Angiv et sigende navn for lokationsvejledningen. Dette navn skal hjælpe med at identificere det generelle formål med lokationsvejledningen. Du kan f.eks. angive *Salgsordrepluk på lagersted 24*.
+
+## <a name="location-directives-fasttab"></a>Oversigtspanelet Lokationsvejledninger
+
+Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbejdsordretype, der er valgt i feltet **Arbejdsordretype** i listeruden.
+
+- **Arbejdstype** – Vælg den arbejdstype, der skal udføres. De tilgængelige værdier afhænger af den type lagertransaktion, som du har valgt i feltet **Arbejdsordretype**. Vælg en af følgende værdier:
+
+    - **Læg på lager** – Lokationsvejledningen vil forsøge at finde den mest ideelle lokation til at placere eller finde lager, som tilføres systemet via modtagelse, produktion eller lagerreguleringer. Den kan også bruges til at definere Læg på stadie-lokationen eller en endelig lagerport som afsendelseslokation.
+    - **Pluk** – Lokationsvejledningen vil forsøge at finde de bedste lokationer til fysisk reservation af lager (dvs. oprette arbejde). Plukket kan fuldføres (og plukarbejdslinjen kan lukkes), selvom arbejdet ikke er fuldført. Brugeren kan fuldføre fysiske pluk. I systemet er denne handling et pluktrin. Brugeren kan derefter annullere fra mobilenheden og fuldføre arbejdet senere. Arbejdshovedet lukkes imidlertid først, når det endelige læg på lager er fuldført.
+
+    > [!IMPORTANT]
+    > De andre værdier i feltet **Arbejdstype** er ikke relevante for lokationsvejledninger. De vises kun, fordi feltet ikke er filtreret til at stemme overens med den valgte arbejdsordretype.
+
+- **Sted** – Det er et obligatorisk felt, fordi lokationsvejledningen skal bestemme det sted og lagersted, den gælder for.
+- **Lagersted** – Det er et obligatorisk felt, fordi lokationsvejledningen skal bestemme det sted og lagersted, den gælder for.
+- **Vejledningskode** – Vælg den vejledningskode, der skal knyttes til en arbejds- eller genopfyldningsskabelon. På siden **Vejledningskode** kan du oprette nye koder, som kan bruges til at oprette forbindelse mellem arbejdsskabeloner eller genopfyldningsskabeloner og lokationsvejledninger. Vejledningskoder kan også bruges til at oprette forbindelse mellem enhver arbejdsskabelonlinje og en lokationsvejledning (f.eks. lagerporten eller den midlertidige lagerlokation).
+
+    > [!TIP]
+    > Hvis der er angivet en vejledningskode, søger systemet ikke i lokationsvejledninger efter sekvensnummer, når der skal genereres arbejde. Det vil i stedet søge efter vejledningskode. På denne måde kan du være mere præcis om den lokationsskabelon, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.
+
+- **Flere SKU'er** – Angiv denne indstilling til *Ja* for at bruge flere lagerenheder (SKU'er) på en lokation. F.eks. skal flere SKU'er aktiveres for placeringen af lagerporten. Hvis du aktiverer flere SKU'er, vil læg på lager-lokationen blive angivet i arbejde som forventet. Men læg på lager-lokationen kan dog kun håndtere en læg-flere-varer-på-lager (hvis arbejde indeholder forskellige SKU'er, der skal plukkes og placeres). Den kan ikke håndtere en enkelt SKU-læg-på-lager. Hvis du angiver denne indstilling til *Nej*, angives lokationen kun, hvis dit læg-på-lager kun har én slags SKU.
+
+    > [!IMPORTANT]
+    > Hvis du vil kunne udføre SKU'er med både læg-flere-varer-på-lager læg-enkelt-vare-på-lager, skal du angive to linjer med samme struktur og opsætning, men du skal angive indstillingen **Flere SKU'er** til *Ja* for én linje og *Nej* for den anden. I forbindelse med læg på lager skal du derfor have to lokationsvejledninger, der er identiske, selvom du ikke skal skelne mellem enkelte og flere SKU'er på en arbejds-id. Hvis du ofte ikke konfigurerer begge disse lokationsvejledninger, kommer der uventede forretningsproceslokationer fra den anvendte lokationsvejledning. Du skal bruge en lignende opsætning til lokationsvejledninger, der har **Arbejdstypen** *Pluk*, hvis du skal behandle ordrer, der omfatter flere SKU'er.
+
+    Brug indstillingen **Flere SKU'er** for arbejdslinjer, der håndterer mere end ét varenummer. (Varenummeret vil være tomt i arbejdsdetaljerne, og det vil blive vist som **Flere** på behandlingssiderne i lagerstedsappen).
+
+    I et typisk eksempel scenario er der konfigureret en arbejdsskabelon, så den har mere end ét pluk/læg på lager-par. I dette tilfælde kan du søge efter en bestemt lokationen for midlertidig lagring til brug af linjer med **Arbejdstype** *Læg på lager*.
+
+    > [!NOTE]
+    > Hvis indstillingen **Flere SKU'er** er angivet til *Ja*, kan du ikke vælge **Rediger forespørgsel** i handlingsruden, fordi forespørgslen ikke kan evaluere på vareniveau, når der er flere varer. Hvis du vil sikre, at den ønskede lokationsvejledning er valgt, skal du bruge feltet **Vejledningskode** til at styre valget af den lokationsvejledning, der er knyttet til de læg på lager-linjer, hvor denne vejledningskode er tildelt i arbejdsskabelonen.
+
+    Medmindre du altid arbejder med handlinger til en enkelt vare eller en blandet vare, er det vigtigt, at du definerer to lokationsvejledninger for *Læg på lager*-arbejdstypen: Den ene, hvor indstillingen **Flere SKU'er** er angivet til *Ja*, og en anden, hvor den er angivet til *Nej*.
+
+- **Gældende dispositionskode** – Angiv, om lokationsvejledningens dispositionskode skal svare til den dispositionskode, der er anvendt ved modtagelse af varen, eller om lokationsvejledningen kan vælges på basis af en hvilken som helst dispositionskode. Hvis du vælger *Nøjagtigt match* og feltet **Dispositionskode** er tomt, er det kun tomme dispositionskoder, der tages i betragtning til lokalitetsvejledningen.
+
+    > [!NOTE]
+    > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types) tidligere i dette emne.
+
+- **Find efter** – Angiv, om læg på lager-antallet skal være hele antallet på id'er, eller om det skal være vare pr. vare. Brug dette felt som en hjælp til at sikre, at alt indholdet på et id lægges på én lokation, og at systemet ikke foreslår, at du opdeler indholdet på flere lokationer for **ASN** (id-modtagelse), **Blandet id**-modtagelse og **Klynge**-modtagelsesprocesser. (Processen til modtagelse af **Klynge** kræver, at funktionen for *læg på lager-klynge* er aktiveret). Funktionsmåden for lokationsvejledningsforespørgslen, linjerne og lokationsvejledningens handlinger varierer afhængigt af den værdi, du vælger. Oversigtspanelet **Linjer** bruges kun, når feltet **Find efter** er angivet til *Vare*.
+
+    > [!NOTE]
+    > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).
+
+- **Dispositionskode** – Dette felt bruges til lokationsvejledninger, der har arbejdsordretypen *Indkøbsordrer*, *Færdige varer, læg på lager* eller *Returordrer* og arbejdstypen *Læg på lager*. Brug den til at vejlede flowet, så det bruger en bestemt lokationsvejledning, afhængigt af den dispositionskode, som en arbejder har valgt i lagerstedsappen. Du kan f.eks. sende returvarer til et inspektionssted, før de returneres til lageret. En dispositionskode kan knyttes til en lagerstatus. På denne måde kan den bruges til at ændre lagerstatussen som en del af en modtagelsesproces. Du har f.eks. dispositionskoden *Karantæne*, der angiver lagerstatussen til *Karantæne*. Du kan derefter have en separat lokationsvejledning, der flytter den pågældende lagerbeholdning til en karantænelokation.
+
+    > [!NOTE]
+    > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).
+
+## <a name="lines-fasttab"></a>Oversigtspanelet Linjer
+
+Brug oversigtspanelet **Linjer** til at fastlægge betingelser for anvendelse af de relaterede handlinger, der er angivet i oversigtspanelet **Handlinger for lokationsvejledninger**. Du kan angive et minimumantal og et maksimumantal, som handlingerne skal gælde for, på hver linje. Du kan også angive, at handlinger skal bruges til en bestemt lagerenhed.
+
+- **Sekvensnummer** – Angiv den rækkefølge, som hver linje i lokationsvejledningen behandles i for den valgte arbejdstype. Du kan ændre rækkefølgen ved hjælp af knapperne **Flyt op** og **Flyt ned** på værktøjslinjen.
+- **Fra antal** – Angiv starten af det antalsinterval, som linjen gælder for. Angiv antallet i den måleenhed, der er valgt i feltet **Enhed**.
+- **Til antal** – Angiv slutningen af det antalsinterval, som linjen gælder for. Angiv antallet i den måleenhed, der er valgt i feltet **Enhed**.
+- **Enhed** – Vælg måleenheden for varerne. Du kan angive et minimumantal og et maksimumantal, som vejledningen skal gælde for, og du kan angive, at vejledningen skal gælde for en bestemt lagerenhed. Feltet **Enhed** bruges *kun* til evaluering af antal. Systemet bruger antallet i den enhed, der er angivet på linjen, for at afgøre, om en lokationvejledningslinjen gælder. Hver gang det når en lokationsvejledningslinje, forsøger systemet at konvertere efterspørgselsenheden til den enhed, der er angivet på linjen. Hvis konverteringen af måleenheden ikke findes, vil systemet gå videre til næste linje.
+- **Find antal** – Dette felt bruges kun under forsøg på at anbringe eller finde varer på lagerstedet. (Derfor gælder det kun, når feltet **Arbejdstype** er angivet til *Læg på lager*). Vælg en af følgende værdier for at angive det antal, der skal bruges til at evaluere, om et antal er inden for intervallet **Fra antal** og **Til antal**:
+
+    - **Id-antal** – Brug antallet på det id, der modtages.
+    - **Enhedsopdelt antal** – Brug det antal, der bruges i transaktionen. Du modtager f.eks. et antal på 1.000 på et lagersted og fordeler det på ti id'er, der hver har et antal på 100. I dette tilfælde kan du bruge et antal på 1.000 varer i stedet for id-antallet på 100.
+    - **Restantal** – Brug det antal, der stadig skal modtages, på den indkøbsordrelinje, der behandles.
+    - **Forventet antal** – Brug det samlede antal på indkøbsordrelinjen, uanset hvad der allerede er modtaget.
+
+- **Begræns pr. enhed** – Dette afkrydsningsfelt giver dig mulighed for at gøre lokalitetsvejledningslinjen specifik for en måleenhed eller flere måleenheder. Markér det for at begrænse de måleenheder, der betragtes som gyldige udvælgelseskriterier for lokationsvejledningslinjerne. Denne funktionalitet fungerer kun i forbindelse med lokalitetsvejledninger, hvor feltet **Arbejdstype** er angivet til *Pluk*.
+
+    Når du f.eks. reserverer antal, vil du kun reservere paller fra et bestemt sæt lokationer. I dette tilfælde vil linjerne begrænse rækkefølgen til paller på en sådan måde, at der ikke vælges et antal, der er mindre end en palle, til lokationsvejledningen.
+
+    Bemærk, at afkrydsningsfeltet **Begræns efter enhed** ikke bestemmer, hvilken eller hvilke enheder der anvendes på arbejdslinjer. Enhedsbegrænsningen gælder kun for de enheder, der er tilgængelige via enhedsseriegruppen. Eksempelvis en vare, der er tilknyttet en enhedsseriegruppe, der omfatter både enheden *paller* og *stk.* Der er defineret en måleenhed, hvor 1 palle = 100 stk., og lokationsvejledningen kun bruger funktionen **Begræns pr . enhed** til paller. Desuden er der defineret en arbejdsskabelon, som begrænser oprettelsen af arbejdshoveder til 50 stk. I dette tilfælde oprettes der arbejdslinjer på 50 stk. Benyt følgende fremgangsmåde for at angive måleenheden for begrænsning:
+
+    1. Vælg **Begræns efter enhed** på værktøjslinjen i oversigtspanelet **Linjer**. (Denne knap bliver først tilgængelig, når du har markeret afkrydsningsfeltet **Begræns efter enhed** på linjen og derefter har valgt **Gem**).
+    1. Vælg den måleenhed, du vil begrænse efter pluk- og læg på lager-processerne, i feltet **Enhed** på siden **Begræns efter enheder**.
+
+- **Rund op til enhed** – Dette felt bruges sammen med afkrydsningsfeltet **Begræns efter enhed**. Hvis f.eks. **Begræns efter enhed** og **Rund op til enhed** er valgt i lokationsvejledningslinjen, bliver det arbejde, der er genereret ud fra vejledningen til pluk af råvarer, afrundet til et multiplum af en håndteringsenheder, der er angivet på siden **Begræns efter enhed**.
+
+    > [!NOTE]
+    > Denne **Rund op til enhed**-opsætning fungerer kun for arbejdsordretypen *Råvarepluk* og kun for lokationsvejledninger, hvor feltet **Arbejdstype** er angivet til *Pluk*.
+
+- **Find pakkeantal** – Hvis du angiver et pakkeantal på en salgsordre, en flytteordre eller en produktionsordre, kan dette afkrydsningsfelt begrænse systemet, så det kun kan vælge lokationer, der mindst har denne pakkemængde.
+
+    > [!NOTE]
+    > Dette fungerer kun med lokationsvejledninger af typen *Pluk*.
+
+- **Tillad opdeling** – Angiver, om en lokationsvejledning må opdele det antal, der modtages eller reserveres på tværs af flere lokationer på lagerstedet, eller om hele antallet skal være placeret på eller reserveret fra en enkelt lokation for at kunne oprette arbejde.
+- **Skabelon for øjeblikkelig genopfyldning** – Brug dette felt til at oprette en forbindelse til en genopfyldningsskabelon, så opfyldningen startes, så snart varerne ikke er fordelt. Hvis du lader dette felt være tomt, starter varegenopfyldningen ikke, før alle linjer i lokationsvejledningen er blevet behandlet.
+
+    > [!NOTE]
+    > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).
+
+## <a name="location-directive-actions-fasttab"></a>Oversigtspanelet Handlinger for lokationsvejledninger
+
+Du kan definere flere handlinger i lokationsvejledning for hver linje. Igen, et løbenummer bruges til at bestemme den rækkefølge, handlingerne vurderes i. På dette niveau kan du oprette en forespørgsel for at definere, hvordan du finder den bedste lokation på lagerstedet. Du kan også bruge foruddefinerede værdier af **Strategi** for at finde en optimal placering.
+
+- **Sekvensnummer** – Dette felt viser den rækkefølge, som handlingerne behandles i for den valgte arbejdstype. Du kan ændre rækkefølgen ved hjælp af knapperne **Flyt op** og **Flyt ned** på værktøjslinjen.
+- **Navn** – Angiv navnet på lokationsvejledningens handling. Vær specifik, så den handling, der udføres, tydeligt fremgår af navnet.
+- **Anvendelse af fast lokation** – Angiv, hvilke lokaliteter lokationsvejledningen skal overveje. Vælg en af følgende værdier:
+
+    - **Faste og ikke-faste lokationer** – Lokationsvejledningen tager alle lokationer i betragtning.
+    - **Kun faste lokationer for produktet** – Lokationsvejledningen tager kun faste lokationer for produkter i betragtning.
+    - **Kun faste lokationer for produktvarianten** – Lokationsvejledningen tager kun faste lokationer for produktvarianter i betragtning.
+
+- **Tillad negativ lagerbeholdning** – Markér dette afkrydsningsfelt for at tillade negativt lager på den angivne lagerlokation i lokationsvejledninger.
+- **Batchaktiveret** – Markér dette afkrydsningsfelt for at bruge batchstrategier til de varer, der er batchaktiverede. Det er vigtigt, at du markerer dette afkrydsningsfelt for processer, der bruger lokationsvejledninger til at finde lokationer, hvor der skal plukkes batchnummersporede varer fra. På denne måde medtages søgning efter lokationer, der indeholder batchnummersporede varer. Hvis dette afkrydsningsfelt er markeret, og feltet **Strategi** er angivet til *Ingen*, går systemet videre til den næste handlingslinje.
+- **Strategi** – For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknyttet hver enkelt linje i en lokationsvejledning, skal du vælge en af de foruddefinerede strategier:
+
+    - **Ingen** – Der anvendes ingen strategi.
+    - **Match emballagemængde** – Denne strategi kontrollerer, om en pluklokation har den angivne emballagemængde. Denne strategi er kun gyldig, når feltet **Arbejdstype** er angivet til *Pluk*.
+    - **Konsolider** – Denne strategi konsoliderer varer på en bestemt lokation, når tilsvarende varer allerede er tilgængelige. Denne strategi er kun gyldig, når feltet **Arbejdstype** er angivet til *Læg på lager*. En typisk opsætning af læg på lager forsøger at konsolidere på den første handlingslinje og derefter at lægge på lager uden konsolidering på den anden linje. Konsolidering af varer gør senere pluk mere effektive.
+    - **FEFO-batchreservation** – Denne strategi bruger FEFO-batchreservationer (First Expiry, First Out). Brug den, når lageret lokaliseres ved hjælp af en batchudløbsdato og tildeles til batchreservation. Du kan kun bruge denne strategi til batchaktiverede varer. Den er kun gyldig, når feltet **Arbejdstype** er angivet til *Pluk*.
+    - **Rund op til fuld LP og FEFO-batch** – Denne strategi kombinerer elementerne i strategierne *FEFO-batchreservationen* og *Rund op til fuld LP*. Den er kun gyldig for batchaktiverede varer og lokationsvejledninger, hvor arbejdstypen er *Pluk*. Linjen skal være batchaktiveret, hvis du vil bruge *FEFO-batchreservation*-strategien, og *Rund op til fuld LP*-strategien kan kun bruges til genopfyldning. Hvis denne strategi konfigureres sammen med en lokationslagergrænse, kan den valgte læg på lager-arbejdslokation være overbelastet, og lagergrænser skal ignoreres.
+    - **Rund op til en fuld LP** – Denne strategi runder op til lagerantallet, så det svarer til antallet af id-numre, som er tildelt de varer, der skal plukkes. Du kan kun bruge denne strategi til genopfyldning for lokationsvejledninger af typen *Pluk*. Hvis denne strategi konfigureres sammen med en lokationslagergrænse, kan den valgte læg på lager-arbejdslokation være overbelastet, og lagergrænser skal ignoreres.
+    - **Nummerpladestyret** – Brug denne strategi, når du frigiver ordren til lagerstedet for at oprette pluk og læg-arbejdet. Du kan gøre dette for flere nummerplader. Denne strategi vil forsøge at reservere og oprette plukarbejde på de lokationer, hvor de anmodede nummerplader er knyttet til flytteordrelinjerne. Men hvis disse handlinger ikke kan fuldføres, men du stadig vil oprette plukarbejde, skal du gå tilbage til en anden strategi for handlinger i lokationsvejledningen. Afhængigt af dine krav til forretningsprocesser kan du også søge efter en lagerbeholdning i et andet område af lagerstedet.
+    - **Tom lokation uden indgående arbejde** – Brug denne strategi til at finde tomme lokationer. En lokation anses som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Du kan kun bruge denne strategi til lokationsvejledninger med arbejdstypen *Pluk*.
+    - **Lokation med aldersfordelt FIFO** – Brug strategien FIFO (First In, First Out) til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen ankom på lagerstedet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering. FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte dato, og fordeler så plukningen baseret på den pågældende aldersfordelte dato.
+    - **Lokation med aldersfordelt LIFO** – Brug strategien LIFO (Last In, First Out) til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen ankom på lagerstedet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering. LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte dato, og fordeler så plukningen baseret på den pågældende aldersfordelte dato.
+
+## <a name="example-using-location-directives"></a>Eksempel: Brug af lokationsvejledninger
 
 I dette eksempel ser vi på en indkøbsordreproces, hvor lokationsvejledningen skal finde ledig kapacitet inden for et lagersted for lagervarer, der netop er registreret i modtagelsesområdet. Du skal først prøve at finde ledig kapacitet på lagerstedet ved at konsolidere med eksisterende disponibel lagerbeholdning. Hvis konsolideringen ikke er muligt, skal du finde en tom lokation.
 
-I dette scenarie skal du definere to handlinger i lokationsvejledningen. Den første handling i rækken skal bruge strategien **Konsolider** , og den anden skal bruge strategien **Tom lokation uden indgående arbejde**. Medmindre du definerer en tredje handling for at håndtere et overløbsscenarie, er der to mulige udfald, når der ikke er mere kapacitet på lagerstedet. Arbejde kan oprettes, selvom ingen lokationer er defineret, eller processen til oprettelse af arbejde kan mislykkes. Resultatet bestemmes af opsætningen på siden **Fejl i lokationsvejledning** , hvor du kan beslutte, om du vil vælge indstillingen **Stop arbejdet ved fejl i lokationsvejledning** for hver arbejdsordretype.
+I dette scenarie skal du definere to handlinger i lokationsvejledningen. Den første handling i rækken skal bruge strategien *Konsolider*, og den anden skal bruge strategien *Tom lokation uden indgående arbejde*. Medmindre du definerer en tredje handling for at håndtere et overløbsscenarie, er der to mulige udfald, når der ikke er mere kapacitet på lagerstedet. Arbejde kan oprettes, selvom ingen lokationer er defineret, eller processen til oprettelse af arbejde kan mislykkes. Resultatet bestemmes af opsætningen på siden **Fejl i lokationsvejledning**, hvor du kan beslutte, om du vil vælge indstillingen **Stop arbejdet ved fejl i lokationsvejledning** for hver arbejdsordretype.
 
 ## <a name="next-step"></a>Næste trin
 
 Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til en arbejdsskabelonkode med henblik på arbejdsoprettelse. Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokationsvejledninger](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
-## <a name="technical-information-for-system-admins"></a>Tekniske oplysninger til systemadministratorer
+## <a name="additional-resources"></a>Yderligere ressourcer
 
-Hvis du ikke har adgang til de sider, der bruges til at fuldføre denne opgave, skal du kontakte din systemadministrator og angive de oplysninger, der vises i følgende tabel.
-
-| Kategori | Forudsætning |
-|---|---|
-| Konfigurationsnøgler | Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**. Udvid licensnøglen **Handel** , og vælg derefter konfigurationsnøglen **Lagersteds- og transportstyring**. |
+- Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Hjælp-emne: [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md)

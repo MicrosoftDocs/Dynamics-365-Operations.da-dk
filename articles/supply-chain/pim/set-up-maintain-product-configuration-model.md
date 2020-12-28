@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7af9aaa01d89da909f2b30089c17d67d377d9e78
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986569"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424730"
 ---
 # <a name="set-up-a-product-configuration-model"></a>Konfigurer en produktkonfigurationsmodel
 
@@ -32,7 +32,7 @@ ms.locfileid: "3986569"
 
 I denne artikel beskrives trinnene til oprettelse og oprettelse af en produktkonfigurationsmodel.
 
-| Opgave                                                        | Betegnelse                                                                                                                                                                                                                                                                                                                                                                                        |
+| Opgave                                                        | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opret en produktmaster.                                    | Opret en produktmaster fra listen **Produktmaster**. Frigiv produktmasteren til alle relevante firmaer. For en produktmaster, der bruges som en version til en produktkonfigurationsmodel eller som en underkomponent, skal **begrænsningsbaseret konfiguration** vælges som konfigurationsteknologi, og konfigurationsdimensionen må kun vælges for produktdimensionsgruppen. |
 | Opret komponenter.                                          | Opret komponenter på siden **Komponenter**. Komponenter er byggesten i en produktkonfigurationsmodel og kan genbruges i flere forskellige produktkonfigurationsmodeller.                                                                                                                                                                                                                      |

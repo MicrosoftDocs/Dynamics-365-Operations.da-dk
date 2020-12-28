@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645307"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528287"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I out-of-box-implementeringen er der ingen måde, hvorpå brugere kan registrere sig selv for websteder, der er oprettet ved hjælp af kundeportalen. Brugere skal inviteres af administratoren for at kunne logge på og bruge et websted. Microsoft har bevidst blokeret brugernes mulighed for at registrere sig selv.
 

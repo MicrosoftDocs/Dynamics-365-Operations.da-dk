@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018069"
+ms.locfileid: "4425004"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurer kreditorkonti
 
@@ -58,7 +58,7 @@ For hver kreditor kan du angive flere adresser, som bruges til forskellige form�
 ## <a name="vendor-contacts"></a>Kreditorkontakter
 Du kan gemme kontakter for en kreditor. Disse kontakter kan derefter bruges på dokumenter som indkøbsordrer eller anmodninger om tilbud (tilbudsanmodninger).  
 
-Hvis du vil føje kontakter til en kreditor, skal du åbne siden **Alle kreditorer** , fanen **Kreditor** i gruppen **Opsætning** og klikke på **Kontakter** &gt; **Tilføj kontakter**.  
+Hvis du vil føje kontakter til en kreditor, skal du åbne siden **Alle kreditorer**, fanen **Kreditor** i gruppen **Opsætning** og klikke på **Kontakter** &gt; **Tilføj kontakter**.  
 
 Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Supply Chain Management, og redigere oplysningerne, som du har brug for.  
 
@@ -97,7 +97,7 @@ Du kan ændre på hold-opdateringsstatus til **Alle** for alle kreditorer basere
 
 Følgende kriterier bruges til at medtage kreditorer, der har været inaktive i en periode, medtage eller udelade kreditorer, der er medarbejdere, og udelade kreditorer, der er underlagt en aktiveringsfrist før næste spærring.
 
-- Baseret på antallet af dage, du angiver i feltet **Inaktivitetsperiode** på siden **Deaktivering af kreditor** , beregner programmet den seneste dato, hvor kreditoren kan udføre enhver aktivitet, der betragtes som inaktiv. Det vil sige den aktuelle dato minus det antal dage, du angiver. Hvis der findes en eller flere fakturaer for kreditoren, hvor datoen ligger senere end den beregnede seneste dato, kreditoren udelades fra inaktiveringen. Dette valideres også, hvis kreditoren har betalinger efter denne dato, åbne indkøbsrekvisitioner, åbne indkøbsordrer, anmodninger om tilbud eller svar.
+- Baseret på antallet af dage, du angiver i feltet **Inaktivitetsperiode** på siden **Deaktivering af kreditor**, beregner programmet den seneste dato, hvor kreditoren kan udføre enhver aktivitet, der betragtes som inaktiv. Det vil sige den aktuelle dato minus det antal dage, du angiver. Hvis der findes en eller flere fakturaer for kreditoren, hvor datoen ligger senere end den beregnede seneste dato, kreditoren udelades fra inaktiveringen. Dette valideres også, hvis kreditoren har betalinger efter denne dato, åbne indkøbsrekvisitioner, åbne indkøbsordrer, anmodninger om tilbud eller svar.
 - Antallet af dage i feltet **Aktiveringsfrist før næste spærring** bruges til at beregne datoen for den sidste aktiveringsfrist. Det vil sige den aktuelle dato minus de dage, du angiver. Dette gælder kun for kreditorer, der tidligere er blevet deaktiveret. I tilfælde af en tidligere inaktivering, kontrollerer programmet historikken for andre forekomster af inaktivering for kreditoren og kontrollerer, om den seneste inaktivering fandt sted, før den datoen for sidste aktiveringsfrist. Hvis det er tilfældet, medtages kreditoren i inaktiveringsprocessen.
 - Parameteren **Medtag medarbejdere** refererer til kreditorer, der er knyttet til en medarbejder. Du kan angive, om du vil medtage disse medarbejdere.
 
@@ -114,7 +114,7 @@ Hvis du skal foretage betalinger til en kreditorbankkonto, kan du angive oplysni
 ## <a name="ledger-accounts"></a>Finanskonti
 Du kan angive standardkonti, som automatisk vises i fakturakladderne for den angivne kreditor. Denne funktion kan være nyttig, hvis du ofte betaler for den samme slags varer eller tjenester fra samme kreditorer over tid. Når du angiver en standardkonto, kan du hurtigt og nemt angive kladdeposter i fakturakladden. De standardkonti, du angiver, bruges ikke til indkøbsordrer eller til kreditorfakturaer, der er angivet på siden **Kreditorfaktura**.  
 
-Du vælger standardkontiene på siden **Standardkontoopsætning** , som du kan åbne fra fanen **Faktura** i kreditorregistreringen. De konti, du vælger her, vises på den filtrerede liste over konti for kreditorgruppen, når du angiver en kladdepost. Du kan angive en af kontiene som en standardkonto.
+Du vælger standardkontiene på siden **Standardkontoopsætning**, som du kan åbne fra fanen **Faktura** i kreditorregistreringen. De konti, du vælger her, vises på den filtrerede liste over konti for kreditorgruppen, når du angiver en kladdepost. Du kan angive en af kontiene som en standardkonto.
 
 
 

@@ -17,11 +17,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016142"
+ms.locfileid: "4424987"
 ---
 # <a name="define-cycle-counting"></a>Definere cyklusoptælling 
 
@@ -83,7 +83,7 @@ Cyklusoptælling er en lagerproces, du kan bruge til at overvåge disponible var
 8. Markér den valgte række på listen.
 9. Vælg en værdi i feltet **Kriterier**.
 10. Klik på **OK**.
-11. Skriv et tal i feltet **Dage mellem cyklusoptællinger**. Hvis f.eks. antallet i feltet **Dage mellem cyklusoptællinger** , er indstillet til 5, oprettes der cyklusoptællingsarbejde, hver gang der er gået fem dage. Men cyklusoptællingsarbejdet imidlertid behandles på dag tre, oprettes det næste cyklusoptællingsarbejde, fem dage efter at den seneste cyklusoptælling blev behandling, nemlig på dag 8.  
+11. Skriv et tal i feltet **Dage mellem cyklusoptællinger**. Hvis f.eks. antallet i feltet **Dage mellem cyklusoptællinger**, er indstillet til 5, oprettes der cyklusoptællingsarbejde, hver gang der er gået fem dage. Men cyklusoptællingsarbejdet imidlertid behandles på dag tre, oprettes det næste cyklusoptællingsarbejde, fem dage efter at den seneste cyklusoptælling blev behandling, nemlig på dag 8.  
 12. Klik på **Gem**.
 13. Klik på **Ny**.
 14. Indtast et tal i feltet **Serienummer**. Sorteringen udføres fra det mindste tal til det største tal. Værdien skal være større end 0 (nul).  

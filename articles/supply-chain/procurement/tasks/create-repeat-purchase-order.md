@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018023"
+ms.locfileid: "4424979"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Oprette en gentagen indkøbsordre
 
@@ -43,9 +43,9 @@ Dette emne viser, hvordan du opretter en gentagende indkøbsordre (IO) ved at ko
     - Feltet **Vend fortegn** understøtter også ændring af det bestilte antal ved at ændre fortegn for antallet af ordrelinjer, der er tilføjet. Dette kan være nyttigt, hvis du vil tilbageføre en postering ved at oprette ordrelinjer, der negerer transaktionen. Denne indstilling vælges automatisk, når siden åbnes fra handlingen **Opret kreditnota**.  
     - Med indstillingen **Kopiér gebyrer** kan du kopiere gebyrer til din nye ordre fra det dokument, du kopierer ordrelinjerne fra.  
     - Indstillingen **Genberegn priser** bruger de aktuelle priser og rabatter i stedet for at kopiere dem fra det dokument, du kopierer andre oplysninger fra.  
-    - Indstillingen **Kopiér præcis** opretter en nøjagtig kopi af værdierne i alle felter i ordredokumentets hoved og linjer. Hvis denne indstilling ikke er markeret, bruges standardværdierne for mange af de felter, der vedrører leverandøren og produkterne, som når du opretter den nye ordre manuelt. For eksempel hvis den ordre, du kopierer fra, havde tilsidesat standardfakturakontoen for leverandøren, ville den samme fakturakonto være blevet kopieret til din ordre. Hvis du ikke har markeret feltet **Kopiér præcis** , ville standardfakturakontoen for leverandøren blive brugt på din ordre i stedet.  
+    - Indstillingen **Kopiér præcis** opretter en nøjagtig kopi af værdierne i alle felter i ordredokumentets hoved og linjer. Hvis denne indstilling ikke er markeret, bruges standardværdierne for mange af de felter, der vedrører leverandøren og produkterne, som når du opretter den nye ordre manuelt. For eksempel hvis den ordre, du kopierer fra, havde tilsidesat standardfakturakontoen for leverandøren, ville den samme fakturakonto være blevet kopieret til din ordre. Hvis du ikke har markeret feltet **Kopiér præcis**, ville standardfakturakontoen for leverandøren blive brugt på din ordre i stedet.  
     - Indstillingen **Slet købslinjer** sletter alle indkøbsordrelinjer, der allerede findes på den indkøbsordre, du kopierer til, før du anvender de nye linjer. Brug denne indstilling med omhu, da det sletter alle eksisterende linjer uden yderligere varsel.  
-    - Hvis du bruger indstillingen **Kopiér ordrehoved** , behøver du ikke manuelt at oprette hovedoplysningerne på din nye ordre. Bemærk, at denne indstilling resulterer i standardværdier, der bruges til felter, som er knyttet til kreditoren. Hvis det dokument, du kopierer fra, har ikke-standardværdier, du vil kopiere, skal du også bruge indstillingen **Kopiér præcis**.   
+    - Hvis du bruger indstillingen **Kopiér ordrehoved**, behøver du ikke manuelt at oprette hovedoplysningerne på din nye ordre. Bemærk, at denne indstilling resulterer i standardværdier, der bruges til felter, som er knyttet til kreditoren. Hvis det dokument, du kopierer fra, har ikke-standardværdier, du vil kopiere, skal du også bruge indstillingen **Kopiér præcis**.   
     - Der er forskellige dokumentkilder, som du kan kopiere fra, og de har hver især et separat afsnit på denne side. I afsnittet **Indkøbsordrer** kan du f.eks. kopiere fra eksisterende indkøbsordrer.  
 
 8. Vælg de linjer, du vil kopiere til Udklipsholder, i sektionen **Indkøbsordrer**. Det er også muligt at vælge flere indkøbsordrelinjer fra andre indkøbsordrer og kopiere dem til din ordre. Du kan også tilføje linjer fra andre typer købsdokumenter. I de næste par trin gennemgås de forskellige muligheder.  

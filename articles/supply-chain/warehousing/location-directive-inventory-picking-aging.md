@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017128"
+ms.locfileid: "4424949"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling i lokalitetsvejledning til lagerpluk
 
@@ -53,7 +53,7 @@ Dette afsnit indeholder eksempler, der viser, hvordan du kan konfigurere og brug
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde gennem disse scenarier ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF** , før du starter.
+Hvis du vil arbejde gennem disse scenarier ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 Du kan også bruge disse scenarier som vejledning i at bruge funktionen i et produktionssystem. I dette tilfælde skal du dog erstatte dine egne værdier for hver af de indstillinger, der beskrives her.
 
@@ -70,7 +70,7 @@ Demodataene kræver opsætning og lagerreguleringer for at understøtte scenarie
 1. Gå til **Lokationsstyring \> Opsætning \> Lokationsvejledninger**.
 1. På listen over lokationsvejledninger skal du vælge **63 Pluk containerisering**.
 1. Vælg **Rediger** for at sætte siden i redigeringstilstand.
-1. Gå til oversigtspanelet **Handlinger i lokationsvejledning** , find den linje, hvor feltet **Løbenummer** er indstillet til *1* , og følg et af disse trin:
+1. Gå til oversigtspanelet **Handlinger i lokationsvejledning**, find den linje, hvor feltet **Løbenummer** er indstillet til *1*, og følg et af disse trin:
 
     - Hvis du konfigurerer et FIFO-scenarie, skal du ændre værdien i feltet **Strategi** til *Lokation med aldersfordelt FIFO*.
     - Hvis du konfigurerer et LIFO-scenarie, skal du ændre værdien i feltet **Strategi** til *Lokation med aldersfordelt LIFO*.
@@ -90,7 +90,7 @@ Demodataene kræver opsætning og lagerreguleringer for at understøtte scenarie
     1. Log på lagersted *63* ved at bruge det relevante bruger-id og den relevante adgangskode.
     1. Vælg **Kvalitet** i hovedmenuen.
     1. Vælg **Kasseres** i menuen **Kvalitetsstyring**.
-    1. Gå til siden **Kasseres** , vælg feltet **LOK/NP** , og angiv derefter *63\_1*.
+    1. Gå til siden **Kasseres**, vælg feltet **LOK/NP**, og angiv derefter *63\_1*.
     1. Vælg **Angiv** eller **OK**.
     1. Bekræft oplysningerne for **Kasseres** for **Regulering ud** ved at vælge **Angiv** eller **OK**.
 
@@ -98,7 +98,7 @@ Demodataene kræver opsætning og lagerreguleringer for at understøtte scenarie
 
     Disse trin afslutter lageret på to lokationer i demodataene. Hver lokation har en forskellig aldersfordelt dato. Lokation *PR-001* har en aldersfordelt dato den 15. april 2017, og lokation *PR-002* har en aldersfordelt dato den 29. januar 2017. Begge lokationer indeholder varen *A0001*.
 
-    Hvis du vil have vist disse oplysninger, skal du gå til **Lagerstyring \> Forespørgsler og rapporter \> Beholdningsliste** og derefter filtrere efter lagersted *63* og vare *A0001*. I de rækker, hvor feltet **Lokation** er angivet til *PR-001* eller *PR-002* , skal du vælge en linje med en positiv værdi for **Fysisk lager** og derefter vælge **Transaktioner** i handlingsruden. Feltet **Fysisk dato** viser en dato, der svarer til en af de tidligere nævnte aldersfordelte datoer.
+    Hvis du vil have vist disse oplysninger, skal du gå til **Lagerstyring \> Forespørgsler og rapporter \> Beholdningsliste** og derefter filtrere efter lagersted *63* og vare *A0001*. I de rækker, hvor feltet **Lokation** er angivet til *PR-001* eller *PR-002*, skal du vælge en linje med en positiv værdi for **Fysisk lager** og derefter vælge **Transaktioner** i handlingsruden. Feltet **Fysisk dato** viser en dato, der svarer til en af de tidligere nævnte aldersfordelte datoer.
 
 ### <a name="scenario-1-set-up-and-use-fifo-location-aging"></a><a name="fifo-demo"></a>Scenario 1: Konfigurere og bruge aldersfordelt FIFO-lokation
 
@@ -107,9 +107,9 @@ FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte d
 1. Hvis du ikke allerede har gjort det, skal du [forberede de eksempeldata](#demo-set-up), der kræves til dette scenarie.
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny**.
-1. Angiv følgende værdier i dialogboksen **Opret salgsordre** :
+1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
 
-    - Gå til oversigtspanelet **Kunde** , indstil feltet **Kundekonto** til *US-001*.
+    - Gå til oversigtspanelet **Kunde**, indstil feltet **Kundekonto** til *US-001*.
     - I oversigtspanelet **Generelt** skal du indstille **Lagersted** til *63*.
 
 1. Vælg **OK** for at oprette salgsordrerne og lukke dialogboksen.
@@ -117,17 +117,17 @@ FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte d
 1. Vælg **reservation** i menuen **Lager** oven over gitteret.
 1. På siden **Reservation** skal du i vælge **Reserver parti** for at reservere det bestilte antal fra lager på det valgte lagersted.
 1. Luk siden **Reservation**.
-1. Gå til siden **Salgsordre** , og vælg **Frigiv til lager** i gruppen **Handlinger** på fanen **Lager** i handlingsruden. Du får orienterende meddelelser. Systemet opretter en forsendelse, føjer den til en ny last og opretter det nødvendige arbejde.
-1. I oversigtspanelet **Salgsordrelinjer** i menuen **Lager** skal du vælge **Arbejdsdetaljer** for at åbne det arbejde, der er oprettet for denne salgsordre. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk* , viser en værdi for **Lokation** *PR-002*. Denne lokation indeholder den nummerplade, der har den ældste aldersfordelte dato (FIFO).
+1. Gå til siden **Salgsordre**, og vælg **Frigiv til lager** i gruppen **Handlinger** på fanen **Lager** i handlingsruden. Du får orienterende meddelelser. Systemet opretter en forsendelse, føjer den til en ny last og opretter det nødvendige arbejde.
+1. I oversigtspanelet **Salgsordrelinjer** i menuen **Lager** skal du vælge **Arbejdsdetaljer** for at åbne det arbejde, der er oprettet for denne salgsordre. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk*, viser en værdi for **Lokation** *PR-002*. Denne lokation indeholder den nummerplade, der har den ældste aldersfordelte dato (FIFO).
 1. Vælg **Lagersted \> Forsendelsesoplysninger**.
-1. Gå til oversigtspanelet **Generelt** , lav en note om bølge-id'et, så du kan bruge det i scenarie 2.
+1. Gå til oversigtspanelet **Generelt**, lav en note om bølge-id'et, så du kan bruge det i scenarie 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenarie 2: Konfigurere og bruge aldersfordelt LIFO-lokation
 
 LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte dato, og fordeler plukningen baseret på den pågældende aldersfordelte dato. I scenarie 2 skal du redigere opsætningen af scenari1 1 (FIFO) og genbruge den salgsordre og bølge, der blev oprettet i løbet af dette scenarie.
 
 1. Før du starter dette scenario, skal du konfigurere og fuldføre hele FIFO-scenariet som beskrevet i det [forrige afsnit](#fifo-demo). I dette scenarie kan du genbruge bølgen og det meste af den opsætning, der blev oprettet i det pågældende scenarie.
-1. Rediger lokalitetsvejledningen **63 Pluk containerisering** , så den bruger den strategi for *Aldersfordelt LIFO på lokation* , der er beskrevet i den første del af [proceduren for konfiguration af scenarier](#demo-set-up).
+1. Rediger lokalitetsvejledningen **63 Pluk containerisering**, så den bruger den strategi for *Aldersfordelt LIFO på lokation*, der er beskrevet i den første del af [proceduren for konfiguration af scenarier](#demo-set-up).
 
     Derefter skal du ændre den bølge, der er oprettet for salgsordren, i scenarie 1, så den bruger strategien *Aldersfordelt LIFO for lokation*.
 
@@ -137,6 +137,6 @@ LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte da
 1. I handlingsruden under fanen **Bølge** i gruppen **Bølge** skal du vælge **Udfør behandling**.
 1. Når behandlingen er fuldført, skal du i handlingsruden under **Bølge** i gruppen **Relaterede oplysninger** vælge **Arbejde** for at åbne det arbejde, der er oprettet for denne bølge.
 1. På fanen **Oversigt** på siden **Arbejde** skal der være to linjer. Vælg den linje, hvor feltet **Arbejdsstatus** er angivet til *Åben*.
-1. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk* , viser en værdi for **Lokation** *PR-001*. Denne lokation indeholder den nummerplade, der har den nyeste aldersfordelte dato (LIFO).
+1. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk*, viser en værdi for **Lokation** *PR-001*. Denne lokation indeholder den nummerplade, der har den nyeste aldersfordelte dato (LIFO).
 
 I disse scenarier har du set, hvordan aldersfordelt strategi dirigerer arbejdet til det lagersted, der enten har det ældste lager eller det nyeste lager, afhængigt af den valgte strategi.

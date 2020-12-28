@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018692"
+ms.locfileid: "4425027"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Oprette en indkøbsordre fra en salgsordre
 
@@ -63,7 +63,7 @@ Denne procedure viser, hvordan du kan oprette en indkøbsordre, der er baseret p
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Gennemse indkøbsordrer, der er oprettet ud fra salgsordrer
 1. Klik på **Generelt** i **handlingsruden**.
 2. Klik på **Relaterede ordrer**. Siden **Relaterede ordrer** indeholder en liste over alle de ordrer, der er oprettet fra salgsordren. I dette eksempel er der oprettet to indkøbsordrer for hver af to forskellige leverandører. 
-3. Klik for at følge linket i feltet **Indkøbsordre**. Hver indkøbsordrelinje er tilknyttet den salgsordrelinje, der har resulteret i købet. Relationen til salgsordren er angivet under fanen **Produkt** i oversigtspanelet **Linjedetaljer** , i felterne **Referencetype** , **Referencenummer** og **Referenceparti**.  
+3. Klik for at følge linket i feltet **Indkøbsordre**. Hver indkøbsordrelinje er tilknyttet den salgsordrelinje, der har resulteret i købet. Relationen til salgsordren er angivet under fanen **Produkt** i oversigtspanelet **Linjedetaljer**, i felterne **Referencetype**, **Referencenummer** og **Referenceparti**.  
 4. Udvid eller skjul sektionen **Linjedetaljer**.
 5. Klik på fanen **Produkt**.
     - **Referencepartiet** sikrer, at omkostningerne i forbindelse med det aktuelle indkøb debiteres den tilknyttede ordre.  

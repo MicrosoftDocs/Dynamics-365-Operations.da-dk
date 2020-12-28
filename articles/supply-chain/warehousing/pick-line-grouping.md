@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: b3497d43a500898207ed5154721ee0e3a327fb93
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017730"
+ms.locfileid: "4424962"
 ---
 # <a name="pick-line-grouping"></a>Pluklinjegruppering
 
@@ -35,7 +35,7 @@ I pluklinjegruppering kan flere arbejdslinjer, der har samme vare og lokation, k
 
 ### <a name="create-a-mobile-device-menu-item"></a>Oprette et menupunkt på en mobilenhed
 
-1. Gå til **Lokationsstyring \> Opsætning \> Mobilenhed \> Mobilenhedsmenupunkter** , og opret et nyt menupunkt kaldet **Salgsgruppelinjepluk – brugerstyret**.
+1. Gå til **Lokationsstyring \> Opsætning \> Mobilenhed \> Mobilenhedsmenupunkter**, og opret et nyt menupunkt kaldet **Salgsgruppelinjepluk – brugerstyret**.
 2. Under **Mobilenhedsmenupunkt** angives følgende værdier:
 
     - I feltet **Navn for menupunkt** indtastes **Salgspluk - gruppelinje**.
@@ -52,7 +52,7 @@ I pluklinjegruppering kan flere arbejdslinjer, der har samme vare og lokation, k
 4. I oversigtspanelet **Arbejdsklasser** skal du følge disse trin for at konfigurere de gyldige arbejdsklasser for menupunktet mobilenhed:
 
     1. Vælg **Ny**.
-    2. I feltet **Arbejdsklasse-ID** skal du vælge **Salg** eller **SO pluk** , afhængigt af det lagersted, du vil bruge.
+    2. I feltet **Arbejdsklasse-ID** skal du vælge **Salg** eller **SO pluk**, afhængigt af det lagersted, du vil bruge.
     3. I feltet **Arbejdsordretype** skal du vælge **Salgsordrer**.
 
 ### <a name="set-up-a-mobile-device-menu"></a>Opsætning af en mobilenhedsmenu
@@ -85,7 +85,7 @@ Før du kan konfigurere pluklinjegruppering, skal du oprette noget kvalificeret 
 2. Vælg **Ny** for at oprette en ny salgsordre. 
 3. Vælg en kunde i feltet **Kundekonto**. 
 4. I oversigtspanelet **Generelt** skal du i feltet **Lagersted** vælge **51**. Vælg derefter **OK**.
-5. Tilføj følgende seks linjer under **Salgsordrelinjer** :
+5. Tilføj følgende seks linjer under **Salgsordrelinjer**:
 
     - **Linje 1:** I feltet **Varenummer** skal du vælge **M9200**. Angiv **3** i feltet **Antal**.
     - **Linje 2:** I feltet **Varenummer** skal du vælge **M9201**. Angiv **3** i feltet **Antal**. 
@@ -106,7 +106,7 @@ Før du kan konfigurere pluklinjegruppering, skal du oprette noget kvalificeret 
 ### <a name="run-the-mobile-device-flow"></a>Kør mobilenhedsprocessen
 
 1. På mobilenheden skal du vælge den menu, der indeholder det nye mobilenhedsmenupunkt.
-1. Vælg menupunktet **Salgspluk – gruppelinje** , og påbegynd plukningen.
+1. Vælg menupunktet **Salgspluk – gruppelinje**, og påbegynd plukningen.
 
     Når du har valgt menuen og indtastet arbejds-ID'et, får du vist trinnet pluk, hvor alle pluklinjer for vare M9200 grupperes. Du modtager en instruktion om at plukke 7 hver af vare M9200.
 

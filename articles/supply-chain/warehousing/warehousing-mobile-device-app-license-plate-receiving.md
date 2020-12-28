@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
 ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016556"
+ms.locfileid: "4425011"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Modtagelse af nummerplade via lagerstedsappen
 
@@ -31,10 +31,10 @@ I dette emne beskrives, hvordan du konfigurerer lagerstedsappen, så den underst
 
 Du kan bruge denne funktion til hurtigt at registrere modtagelsen af det indgående lager, der er knyttet til en ASN (Advance Ship Notice). Systemet opretter automatisk en ASN, når der bruges lokationsstyringsprocesser til at levere en flytteordre. I forbindelse med indkøbsordreprocessen kan en ASN registreres manuelt, eller den kan importeres automatisk ved hjælp af en indgående ASN-dataenhedsproces.
 
-ASN-dataene er knyttet til laster og forsendelser via *pakkestrukturerne* , hvor paller (overordnede nummerplader) kan indeholde kasser (indlejrede nummerplader).
+ASN-dataene er knyttet til laster og forsendelser via *pakkestrukturerne*, hvor paller (overordnede nummerplader) kan indeholde kasser (indlejrede nummerplader).
 
 > [!NOTE]
-> Systemet registrerer den fysiske disponible lagerbeholdning på den overordnede nummerplade for at reducere antallet af lagertransaktioner, når der bruges pakkestrukturer med indlejrede nummerplader. Den mobile enhed skal angive et menupunkt, der er baseret på processerne til oprettelse af *Pak til indlejrede nummerplader* , for at udløse bevægelsen af den fysiske disponible lagerbeholdning fra den overordnede nummerplade til de indlejrede nummerplader baseret på pakkestrukturdataene.
+> Systemet registrerer den fysiske disponible lagerbeholdning på den overordnede nummerplade for at reducere antallet af lagertransaktioner, når der bruges pakkestrukturer med indlejrede nummerplader. Den mobile enhed skal angive et menupunkt, der er baseret på processerne til oprettelse af *Pak til indlejrede nummerplader*, for at udløse bevægelsen af den fysiske disponible lagerbeholdning fra den overordnede nummerplade til de indlejrede nummerplader baseret på pakkestrukturdataene.
 
 ## <a name="warehousing-mobile-device-app-processing"></a>Håndtering af mobilenheds-appen Lagersted
 
@@ -42,15 +42,15 @@ Når en arbejder scanner et indgående nummerplade-id, starter systemet en modta
 
 ## <a name="work-policies"></a>Arbejdspolitikker
 
-Som ved (f.eks.) processen i forbindelse med mobilenhedens menupunkit *Færdigmelding* , hvor modtagelsesprocessen for nummerpladen understøtter flere arbejdsgange baseret på den definerede opsætning.
+Som ved (f.eks.) processen i forbindelse med mobilenhedens menupunkit *Færdigmelding*, hvor modtagelsesprocessen for nummerpladen understøtter flere arbejdsgange baseret på den definerede opsætning.
 
 ### <a name="work-policies-with-work-creation"></a>Arbejdspolitikker med arbejdsoprettelse
 
-Når du registrerer indgående varer ved hjælp af en arbejdspolitik, der opretter arbejde, genererer og gemmer systemet læg-på-lager-arbejdsposter for hver registrering. Hvis du bruger arbejdsprocessen *Modtagelse af nummerplade og placering på lager* , håndteres registrering og læg-på-lager-aktiviteter som en enkelt operation ved hjælp af et enkelt menupunkt i en mobilenhed. Hvis du bruger processen *Nummerplade til modtagelse* , håndteres modtagelses- og læg-på-lager-processerne som to forskellige lagerstedsoperationer, der hver har deres eget menupunkt i mobilenheden.
+Når du registrerer indgående varer ved hjælp af en arbejdspolitik, der opretter arbejde, genererer og gemmer systemet læg-på-lager-arbejdsposter for hver registrering. Hvis du bruger arbejdsprocessen *Modtagelse af nummerplade og placering på lager*, håndteres registrering og læg-på-lager-aktiviteter som en enkelt operation ved hjælp af et enkelt menupunkt i en mobilenhed. Hvis du bruger processen *Nummerplade til modtagelse*, håndteres modtagelses- og læg-på-lager-processerne som to forskellige lagerstedsoperationer, der hver har deres eget menupunkt i mobilenheden.
 
 ### <a name="work-policies-without-work-creation"></a>Arbejdspolitikker uden arbejdsoprettelse
 
-Du kan bruge modtagelsesprocessen for nummerplader uden at oprette arbejde. Hvis du definerer arbejdspolitikker, der har en arbejdsordre af typen *Tilgang for overførsel* og/eller *Indkøbsordrer* , og du bruger processen til *Modtagelse af nummerplade (og placering på lager)* , vil de følgende to mobilapp-processer til lagersteder ikke oprette arbejde. De vil i stedet kun registrere det indgående fysiske lager på nummerpladen ved det indgående modtagelsesområde.
+Du kan bruge modtagelsesprocessen for nummerplader uden at oprette arbejde. Hvis du definerer arbejdspolitikker, der har en arbejdsordre af typen *Tilgang for overførsel* og/eller *Indkøbsordrer*, og du bruger processen til *Modtagelse af nummerplade (og placering på lager)*, vil de følgende to mobilapp-processer til lagersteder ikke oprette arbejde. De vil i stedet kun registrere det indgående fysiske lager på nummerpladen ved det indgående modtagelsesområde.
 
 - *Nummerplade til modtagelse*
 - *Modtagelse af nummerplade og placering på lager*
@@ -67,7 +67,7 @@ Det er muligt at bruge en lagerlokation, der er tildelt en lokationsprofil, selv
 
 ## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Tilføje menupunkter i mobilenheder for hver modtagelseslokalitet på et lagersted
 
-Med funktionen *Nummerplader, der modtager forbedringer* kan du på enhver lokation på et lagersted modtage ved at føje lokationsspecifikke menupunkter for nummerplademodtagelse (og læg på lager) til Warehousing Mobile App. Tidligere understøttede systemet kun modtagelse på den standardplacering, der er defineret for hvert lagersted. Men når denne funktion er slået til, vil menupunkterne i mobilenheden for nummerplademodtagelse (og lægge på lager) nu levere indstillingen **Brug standarddata** , så du kan vælge en brugerdefineret "til"-placering til hvert menupunkt. (Denne indstilling var allerede tilgængelig for andre typer menupunkter).
+Med funktionen *Nummerplader, der modtager forbedringer* kan du på enhver lokation på et lagersted modtage ved at føje lokationsspecifikke menupunkter for nummerplademodtagelse (og læg på lager) til Warehousing Mobile App. Tidligere understøttede systemet kun modtagelse på den standardplacering, der er defineret for hvert lagersted. Men når denne funktion er slået til, vil menupunkterne i mobilenheden for nummerplademodtagelse (og lægge på lager) nu levere indstillingen **Brug standarddata**, så du kan vælge en brugerdefineret "til"-placering til hvert menupunkt. (Denne indstilling var allerede tilgængelig for andre typer menupunkter).
 
 Hvis du vil gøre denne funktionalitet tilgængelig på systemet, skal du aktivere funktionen *Nummerplader, der modtager forbedringer* i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 

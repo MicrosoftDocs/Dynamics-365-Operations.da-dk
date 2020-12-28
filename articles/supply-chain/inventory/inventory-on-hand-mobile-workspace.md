@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 4a41f877816e331351a0950dcdc07ee07f643beb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212727"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424385"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Disponibelt lager i arbejdsområde til mobilenheder
 
@@ -69,7 +69,7 @@ Hvis Platform update 3 eller nyere er implementeret for organisationen, skal sys
 <tr class="header">
 <th>Forudsætning</th>
 <th>Rolle</th>
-<th>Betegnelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>

@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018646"
+ms.locfileid: "4425029"
 ---
 # <a name="onboard-vendors"></a>Modtage kreditorer
 
@@ -57,7 +57,7 @@ Registreringsanmodningen for den mulige kreditor er en enhed i Supply Chain Mana
 
 I følgende tabel vises de oplysninger, som denne enhed indeholder, og som kan importeres.
 
-| Felt                        | Betegnelse |
+| Felt                        | Beskrivelse |
 |------------------------------|-------------|
 | Navn på kreditor                  | Kreditorens navn. |
 | Forretningsberettigelse       | Årsagen eller årsagerne til kreditoranmodningen. |
@@ -96,7 +96,7 @@ Guiden afspejler konfigurationen af kreditoranmodningen. Det land eller område,
 
 Du kan finde flere oplysninger om opsætning af kreditoranmodningen under [Konfigurere og vedligeholde kreditorsamarbejde](set-up-maintain-vendor-collaboration.md). Følgende tabel indeholder en oversigt over siderne i guiden og formålet med hver side.
 
-| Side                       | Betegnelse |
+| Side                       | Beskrivelse |
 |----------------------------|-------------|
 | Land/område             | Landet eller området bestemmer den konfiguration af kreditoranmodninger, der anvendes på de resterende guidesider. Det bestemmer også værdierne i opslaget **Momstilstand**. |
 | Vilkår og betingelser       | Denne side kan være tilgængelige, afhængigt af konfigurationen af kreditoranmodningen. Hvis den er tilgængelig, skal brugeren acceptere vilkårene og betingelserne for at fortsætte. |
@@ -112,7 +112,7 @@ Når den mulige kreditorbruger fuldfører kreditorregistreringsguiden, oprettes 
 
 En kreditoranmodning kan oprettes som en kladde og sendes manuelt til en arbejdsgang. Kreditoranmodningen kan også automatisk sendes til en arbejdsgang, når kreditorregistreringsguiden er fuldført. En anmodning kan sendes manuelt, hvis, f.eks. en anmoder ønsker at vurdere, om anmodningen skal dirigeres gennem en godkendelsesproces, før den sendes til arbejdsgangen.
 
-- Vælg **Indkøbs- og forsyningsparametre** &gt; **Kreditorsamarbejde** , og vælg derefter **Send automatisk registrering af mulig kreditor til arbejdsgang** for at konfigurere kreditoranmodningen, så den sendes automatisk til en arbejdsgang, når kreditorregistreringsguiden er fuldført.
+- Vælg **Indkøbs- og forsyningsparametre** &gt; **Kreditorsamarbejde**, og vælg derefter **Send automatisk registrering af mulig kreditor til arbejdsgang** for at konfigurere kreditoranmodningen, så den sendes automatisk til en arbejdsgang, når kreditorregistreringsguiden er fuldført.
 
 ## <a name="vendor-requests"></a>Kreditoranmodninger
 
@@ -126,7 +126,7 @@ Kreditoranmodningen skal sendes til en arbejdsgang, og den skal sendes til de re
 
 Følgende tabel viser de statusser, som kreditoranmodninger kan have.
 
-| Status                     | Betegnelse |
+| Status                     | Beskrivelse |
 |----------------------------|-------------|
 | Udkast                      | Kreditoranmodningen er ikke endnu blevet afsendt. |
 | Anmodningen er sendt          | Kreditoranmodningen er sendt, og det første trin i arbejdsgangen behandles. |
@@ -144,7 +144,7 @@ Før du godkender en kreditoranmodning skal du på siden **Ny kreditor** i overs
 
 Hvis den mulige kreditorbruger skal have adgang til Supply Chain Management som en kreditorsamarbejdsbruger, der repræsenterer kreditoren, skal du indstille adgangsrettigheder for kreditorsamarbejde til **Ja**. Hvis du vil deaktivere den brugerkonto, som den mulige kreditor brugte til at blive registreret, skal du indstille denne rettighed til **Nej**.
 
-Hvis adgangstilladelsen for kreditorsamarbejdet er indstillet til **Ja** , sendes der en anmodning om at redigere brugerens roller, så brugeren har de roller, der er defineret for typen **Kreditor** i **Eksterne roller** , når kreditoranmodningen er godkendt. Hvis denne rettighed er indstillet til **Nej** , når kreditoranmodningen er godkendt, sendes der en anmodning til den inaktive bruger. I så fald skal arbejdsgangen om at deaktivere en brugeranmodning konfigureres.
+Hvis adgangstilladelsen for kreditorsamarbejdet er indstillet til **Ja**, sendes der en anmodning om at redigere brugerens roller, så brugeren har de roller, der er defineret for typen **Kreditor** i **Eksterne roller**, når kreditoranmodningen er godkendt. Hvis denne rettighed er indstillet til **Nej**, når kreditoranmodningen er godkendt, sendes der en anmodning til den inaktive bruger. I så fald skal arbejdsgangen om at deaktivere en brugeranmodning konfigureres.
 
 Hvis en kreditorkonto skal oprettes, når kreditoranmodningen er godkendt, skal nummerserien for oprettelse af kreditorer fra kreditoranmodninger indstilles til **Automatisk**.
 

@@ -1,5 +1,5 @@
 ---
-title: Automatisk autorisation med Planlægningsoptimering
+title: Automatisk autorisation med planlægningsoptimering
 description: Dette emne beskriver, hvordan du bruger automatisk autorisation med Planlægningsoptimering.
 author: ChristianRytt
 manager: tfehr
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383682"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594520"
 ---
-# <a name="auto-firming-with-planning-optimization"></a>Automatisk autorisation med Planlægningsoptimering
+# <a name="autofirming-with-planning-optimization"></a>Automatisk autorisation med planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,9 +35,9 @@ Ved automatisk autorisation kan du autorisere (dvs. frigive) ordreforslag som de
 > [!NOTE]
 > Auto-autorisation af et indkøbsordreforslag kan kun forekomme, hvis varen er knyttet til en kreditor.
 
-## <a name="turn-on-auto-firming"></a>Aktiver automatisk autorisation
+## <a name="turn-on-autofirming"></a>Aktivere automatisk autorisation
 
-Udfør følgende trin for at aktivere automatisk autorisation:
+Udfør følgende trin for at aktivere automatisk autorisation.
 
 1. I arbejdsområdet **Funktionsstyring** på fanen **Ny** skal du vælge **Auto-autorisering for Planlægningsoptimering** fra listen. Hvis funktionen ikke vises under den fanen **Ny**, skal du se på fanerne **Ikke aktiverede** og **Alle**.
 1. Vælg **Aktiver nu**. Du kan også vælge **Planlæg** og derefter vælge det tidspunkt, hvor funktionen skal aktiveres.
@@ -48,13 +48,13 @@ Autorisationstidshorisonten beregnes fremad fra datoen for kørslen af varedispo
 
 - Hvis du vil definere standardautorisationstidshorisonten for en disponeringsgruppe, skal du gå til **Varedisponering** \> **Opsætning** \> **Disponering** \> **Disponeringsgrupper** og vælge en disponeringsgruppe. Derefter skal du angive antallet af dage i oversigtspanelet **Andet** i feltet **Automatisk autorisationstidshorisont (dage)**.
 - Hvis du vil overskrive den autorisationstidshorisont, der er defineret for disponeringsgruppen for en bestemt vare, skal du gå til **Administration af produktinformation** \> **Frigivne produkter**, og dernæst i handlingsruden vælge **Plan** og derefter vælge **Varedisponering**. I fanen **Generelt** skal du vælge **Overskriv tidshorisont** og i feltet **Automatisk autorisationstidshorisont (dage)** skal du angive antallet af dage.
-- Hvis du vil overskrive den autorisationstidshorisont, der er defineret for disponeringsgruppen og varedisponeringen for en bestemt behovsplan, skal du gå til **Varedisponering** \> **Opsætning** \> **Behovsplan** og dernæst vælge en behovsplan. Derefter skal du i oversigtspanelet **Tidshorisont i dage** angive **Frys** til **Ja** samt angivet antallet af dage.
+- Hvis du vil overskrive den autorisationstidshorisont, der er defineret for disponeringsgruppen og varedisponeringen for en bestemt behovsplan, skal du gå til **Varedisponering** \> **Opsætning** \> **Behovsplan** og dernæst vælge en behovsplan. Derefter skal du i oversigtspanelet **Tidshorisont i dage** angive **Autorisation** til **Ja** og angivet antallet af dage.
 
 Hvis automatisk autorisation er aktiveret for en varedisponeringskørsel, der bruger Planlægningsoptimering, udføres den automatiske autorisationsproces i henhold til den automatiske autorisationsopsætning. Hvis automatisk autorisation ikke er slået til, eller hvis planlægningen startes fra siden **Nettokrav**, springes den automatiske autorisationsproces over.
 
 ## <a name="planning-optimization-vs-the-built-in-supply-chain-management-planning-engine"></a>Planlægsningsoptimering i forhold til det indbyggede planlægningsprogram for Supply Chain Management
 
-Både Planlægningsoptimering og planlægningsprogrammet, der er indbygget i Microsoft Dynamics 365 Supply Chain Management, kan bruges til auto-autorisation af ordreforslag. Der er dog nogle vigtige forskelle. I Planlægningsoptimering bruges ordredatoen (dvs. startdatoen) til at bestemme, hvilke ordreforslag der skal autoriseres, ved hjælp af behovsdatoen (dvs. slutdatoen) for det indbyggede planlægningsprogram for Supply Chain Management. Her vises en oversigt over forskellene.
+Både Planlægningsoptimering og planlægningsprogrammet, der er indbygget i Microsoft Dynamics 365 Supply Chain Management, kan bruges til automatisk autorisation af ordreforslag. Der er dog nogle vigtige forskelle. I Planlægningsoptimering bruges ordredatoen (dvs. startdatoen) til at bestemme, hvilke ordreforslag der skal autoriseres, ved hjælp af behovsdatoen (dvs. slutdatoen) for det indbyggede planlægningsprogram for Supply Chain Management. Her vises en oversigt over forskellene.
 
 **Planlægningsoptimering**
 

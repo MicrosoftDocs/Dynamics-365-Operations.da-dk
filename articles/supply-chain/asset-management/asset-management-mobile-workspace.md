@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
 ms.openlocfilehash: 525f21d076027f1bf339e59fd0e346706044839c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216499"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424456"
 ---
 # <a name="asset-management-mobile-workspace"></a>Arbejdsområdet Styring af aktiver på mobilenheder
 

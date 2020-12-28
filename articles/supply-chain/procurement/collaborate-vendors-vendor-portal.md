@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e451b419da59817ccf397fbb231a1cd112fd45ca
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018439"
+ms.locfileid: "4425060"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbejde med kreditorer ved hjælp af leverandørportalen
 
@@ -38,7 +38,7 @@ Kreditorportalen henvender sig til leverandører, der ikke har EDI-integration (
 Processen kan konfigureres, så en bekræftelse fra kreditoren automatisk bekræfter ordren. I dette tilfælde kræves der kun lejlighedsvis opfølgning, når en ordre afvises, eller hvis kreditorbekræftelse registreres som et svar, men statussen for Indkøbsordren ikke opdateres til **Bekræftet** på grund af et problem under bekræftelsesprocessen.
 
 ## <a name="po-confirmation-and-rejection"></a>Bekræftelse og afvisning af indkøbsordre
-IO'er oprettes i Dynamics AX. Når du har en IO, der har status som **Godkendt** , sender du den til leverandøren ved at generere en anmodning om bekræftelse. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail. IO'en vises i kreditorportalen med indstilling, som kreditoren kan bruge til at bekræfte eller afvise den. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en.  
+IO'er oprettes i Dynamics AX. Når du har en IO, der har status som **Godkendt**, sender du den til leverandøren ved at generere en anmodning om bekræftelse. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail. IO'en vises i kreditorportalen med indstilling, som kreditoren kan bruge til at bekræfte eller afvise den. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en.  
 
 Leverandøren kan se ordrelinjer på kreditorportalen. Disse linjer indeholder oplysninger som det eksterne produktnummer, dimensioner, prisoplysninger, mængde, leveringsdato og leveringsadresse. Leverandøren kan generere en rapport, der viser IO-oplysningerne og også den samlede pris. Gebyrer, der er relevante for kreditoren, vises, hvis leverandøren klikker på knappen **Gebyrer** i hovedet eller på linjerne. Kreditorer kan importere indkøbsordreoplysninger til deres eget system ved hjælp af funktionen **Eksportér til Excel**.  
 
@@ -46,9 +46,9 @@ Nedenstående tabel viser den typiske udveksling af oplysninger, afhængigt af h
 
 | Svartype                                                                                                  | Resultat                                                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kreditoren bekræfter ordren. Systemet er konfigureret til automatisk at bekræfte indkøbsordrer, når kreditoren bekræfter.    | Status for ordren opdateres til **Bekræftet**. Hvis noget forhindrer, at ordren opdateres, bliver kreditorens svar stadig registreret som **Bekræftet** , men indkøbsordrens status forbliver **Til eksternt gennemsyn**.                                                                       |
-| Kreditoren bekræfter ordren. Systemet er ikke konfigureret til automatisk at bekræfte indkøbsordrer, når kreditoren bekræfter. | Kreditorens svar registreres som **Bekræftet** , men indkøbsordrens status forbliver **Til eksternt gennemsyn**.                                                                                                                                                                                      |
-| Kreditoren afviser ordren.                                                                                     | Kreditorens svar registreres som **Afvist** , og indkøbsordrens status forbliver **Til eksternt gennemsyn**. Afslaget modtages sammen med årsagen og et ændringsforslag, f.eks. en alternativ leveringsdato. Du opdaterer indkøbsordren og sender derefter en ny version til bekræftelse. |
+| Kreditoren bekræfter ordren. Systemet er konfigureret til automatisk at bekræfte indkøbsordrer, når kreditoren bekræfter.    | Status for ordren opdateres til **Bekræftet**. Hvis noget forhindrer, at ordren opdateres, bliver kreditorens svar stadig registreret som **Bekræftet**, men indkøbsordrens status forbliver **Til eksternt gennemsyn**.                                                                       |
+| Kreditoren bekræfter ordren. Systemet er ikke konfigureret til automatisk at bekræfte indkøbsordrer, når kreditoren bekræfter. | Kreditorens svar registreres som **Bekræftet**, men indkøbsordrens status forbliver **Til eksternt gennemsyn**.                                                                                                                                                                                      |
+| Kreditoren afviser ordren.                                                                                     | Kreditorens svar registreres som **Afvist**, og indkøbsordrens status forbliver **Til eksternt gennemsyn**. Afslaget modtages sammen med årsagen og et ændringsforslag, f.eks. en alternativ leveringsdato. Du opdaterer indkøbsordren og sender derefter en ny version til bekræftelse. |
 
 ## <a name="changes-to-a-po"></a>Ændringer i en indkøbsordre
 Når du skal ændre en indkøbsordre, der allerede er blevet bekræftet, kan du sende en ny indkøbsordre til kreditoren via kreditorportalen. Den nye IO har et versionssuffiks, som angiver, at det er en ændret version af en tidligere indkøbsordre. På kreditorportalen kan kreditorer spore historikken for hver ordre. Den tidligere bekræftede version af indkøbsordren forbliver på listen over bekræftede IO'er, indtil den nye indkøbsordre er blevet bekræftet.  
@@ -56,7 +56,7 @@ Når du skal ændre en indkøbsordre, der allerede er blevet bekræftet, kan du 
 Når du annullerer en indkøbsordre, ændres statussen tilbage til **Godkendt**. Du skal sende IO'en tilbage til kreditoren via kreditorportalen, så kreditoren kan bekræfte eller afvise annulleringen. Når annulleringen bekræftes, vises indkøbsordren på kreditorens liste over bekræftede IO'er som **Annulleret**.
 
 ## <a name="versions-status-transitions-and-change-management"></a>Versioner, statusovergange og ændringsstyring
-Når en indkøbsordre sendes til kreditoren, registreres den i systemet som en bestemt version af indkøbsordren, og statussen ændres fra **Godkendt** til **Til eksternt gennemsyn**. Hvis indkøbsordren ændres senere, oprettes der en ny version af indkøbsordren, og statussen ændres til **Godkendt** (eller **Kladde** , hvis ændringsstyring er slået til).  
+Når en indkøbsordre sendes til kreditoren, registreres den i systemet som en bestemt version af indkøbsordren, og statussen ændres fra **Godkendt** til **Til eksternt gennemsyn**. Hvis indkøbsordren ændres senere, oprettes der en ny version af indkøbsordren, og statussen ændres til **Godkendt** (eller **Kladde**, hvis ændringsstyring er slået til).  
 
 I nedenstående tabel vises et eksempel på ændringerne i status og version, som en indkøbsordre kan gennemgå.
 
@@ -70,7 +70,7 @@ I nedenstående tabel vises et eksempel på ændringerne i status og version, so
 
 Hvis du vil se de versioner af indkøbsordren, der er sendt til kreditoren, og kreditorens svar, skal du klikke på **Kladder** &gt; **Anmodninger om bekræftelse** fra indkøbsordren.  
 
-Ordrer, der er sendt til kreditoren for et svar, og som har statussen **Til eksternt gennemsyn** , vises enten på listen **Indkøbsordrer, der er sendt til kreditorportal, afventer svar** eller listen **Indkøbsordrer, der er sendt til kreditorportal, kræver handling på svar**. Når du ændrer en ordre, der er sendt til kreditoren, så status ændres tilbage til **Godkendt** , vises ordren ikke længere på disse lister. Hvis du vil se, om der tidligere har været et svar til ordren fra leverandøren, skal du klikke på **Kladder** &gt; **Anmodninger om bekræftelse**.  
+Ordrer, der er sendt til kreditoren for et svar, og som har statussen **Til eksternt gennemsyn**, vises enten på listen **Indkøbsordrer, der er sendt til kreditorportal, afventer svar** eller listen **Indkøbsordrer, der er sendt til kreditorportal, kræver handling på svar**. Når du ændrer en ordre, der er sendt til kreditoren, så status ændres tilbage til **Godkendt**, vises ordren ikke længere på disse lister. Hvis du vil se, om der tidligere har været et svar til ordren fra leverandøren, skal du klikke på **Kladder** &gt; **Anmodninger om bekræftelse**.  
 
 Kreditorer behøver ikke at bekræfte indkøbsordren på kreditorportalen. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du bekræfte ordren manuelt i Dynamics AX. I dette tilfælde modtager du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser på kreditorportalen som en åben bekræftet ordre, som ikke har nogen svar. Desuden har kreditoren ikke længere mulighed for at bekræfte eller afvise indkøbsordren.  
 
