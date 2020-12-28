@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081333"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594107"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -196,7 +196,9 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 102 | Afvis produkt | Annuller det aktuelt valgte linjeelement fra transaktionen. | Ja | Ja | Nej | Ja | Nej |
 | 500 | Afvis transaktion | Annuller den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
 | 916 | Windows Workflow Foundation | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
-| 924 | X-rapport til bankkort | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ja |
+| 924 | X-rapport til bankkort | Denne handling understøttes ikke. | Ikke anvendelig | Ikke anvendelig | Ikke anvendelig | Ikke anvendelig | Ja |
+| 311 | Fjern systemrabatter fra transaktioner | Fjern alle de rabatter, der anvendes af systemet, inklusive kuponbaserede rabatter, fra transaktionen. Dette fjerner ikke manuelle rabatter. | Ja | Ja | Ja | Ja | Ingen |
+| 312 | Genanvend systemrabatter | Genanvend systemrabatter på transaktionen, hvis de blev fjernet ved hjælp af handlingen **Fjern systemrabatter fra transaktionen**. | Ja | Ja | Ja | Ja | Ingen |
 
 \* Handlingen er kun tilgængelig i offlinetilstand, når der oprettes en kundeordre eller et salgstilbud, og kun hvis offlineoprettelse af kundeordrer og salgstilbud er konfigureret i POS-funktionalitetsprofilen. Handlingen kan ikke udføres, når der oprettes ordrer ved hjælp af Real-time Service, eller når ordrer er tilbagekaldt eller redigeres.
 

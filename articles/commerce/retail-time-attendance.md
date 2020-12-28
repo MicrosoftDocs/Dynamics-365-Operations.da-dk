@@ -20,11 +20,11 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022026"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411198"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Tids- og fremmødestyring i Retail
 
@@ -48,7 +48,7 @@ Du kan finde oplysninger om konfigurationstrin under [Opsætning af tid og fremm
 ### <a name="commerce-specific-configuration"></a>Commerce-specifik konfiguration
 
 - Aktivér en funktionalitetsprofil til ur, for arbejdere, som du vil aktivere tidsregistreringer for. Klik på **POS-funktionalitetsprofiler** &gt; **Funktioner** &gt; **POS-tidsregistreringer** &gt; **Aktivér tidsregistreringer**.
-- Konfigurer POS-tilladelser for at aktivere tilladelsen Vis tidsursangivelser. Denne tilladelse lader en bruger at se tidsur-registreringer for andre arbejdere i butikken og fra alle de butikker, som brugeren er knyttet til, via adressekartoteket). Det kan være, at du vil aktivere denne tilladelse for en chefrolle, men ikke for en kasseassistentrolle. Klik på **POS-rettighedsgrupper** &gt; **Vis tidsursangivelser**.
+- Konfigurer POS-tilladelser for at aktivere tilladelsen Vis tidsursangivelser. Denne tilladelse lader en bruger at se tidsur-registreringer for andre arbejdere i butikken og fra alle de butikker, (som brugeren er knyttet til, via adressekartoteket). Det kan være, at du vil aktivere denne tilladelse for en chefrolle, men ikke for en kasseassistentrolle. Klik på **POS-rettighedsgrupper** &gt; **Vis tidsursangivelser**.
 
 ## <a name="register-time"></a>Registrer tid
 

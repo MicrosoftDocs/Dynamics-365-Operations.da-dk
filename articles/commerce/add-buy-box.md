@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022023"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517082"
 ---
 # <a name="buy-box-module"></a>Købefeltmodul
 
@@ -68,14 +68,14 @@ Temaer kan bruges til at fjerne eller ændre rækkefølgen af købsfeltets produ
 
 ## <a name="buy-box-module-settings"></a>Indstillinger for købefeltmodul
 
-De følgende indstillinger for købefeltmoduler kan konfigureres under **Indstillinger for websted \> Udvidelser** :
+De følgende indstillinger for købefeltmoduler kan konfigureres under **Indstillinger for websted \> Udvidelser**:
 
 - **Grænse for antal linjevarer i indkøbsvogn** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
 - **Lager** – Du finder oplysninger om, hvordan du anvender lagerindstillinger, under [Anvendelse af lagerindstillinger](inventory-settings.md).
-- **Føj til indkøbsvogn** – Denne egenskab bruges til at angive proceduren, når en vare er føjet til indkøbsvognen. De mulige værdier er **Naviger til indkøbsvogn** , **Naviger ikke til indkøbsvogn** og **Vis beskeder**. Når værdien er angivet til **Naviger til indkøbsvogn** , sendes brugeren til indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Naviger ikke til indkøbsvogn** , sendes brugeren ikke til siden med indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Vis beskeder** , får brugerne vist en bekræftelsesmeddelelse og kan fortsætte med at søge på siden produktdetaljer. 
+- **Føj produkt til indkøbsvogn** – Denne egenskab bruges til at angive proceduren, når en vare er føjet til indkøbsvognen. De mulige værdier er **Naviger til side for indkøbsvogn**, **Naviger ikke til side for indkøbsvogn** og **Vis besked**. Når værdien er angivet til **Naviger til side for indkøbsvogn**, sendes brugeren til indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Naviger ikke til side for indkøbsvogn**, sendes brugeren ikke til siden med indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Vis besked**, får brugerne vist en bekræftelsesmeddelelse og kan fortsætte med at søge på siden produktdetaljer. 
 
 > [!IMPORTANT]
-> Indstillingerne for webstedet **Føj til indkøbskurv** er tilgængelige i Dynamics 365 Commerce version 10.0.11. Hvis du opdaterer fra en ældre version af Dynamics 365 Commerce, skal du opdatere filen appsettings.json manuelt. Oplysninger om opdatering af filen appsettings.json finder du under [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Indstillingerne for webstedet **Føj produkt til indkøbskurv** er tilgængelige i Dynamics 365 Commerce version 10.0.11. Hvis du opdaterer fra en ældre version af Dynamics 365 Commerce, skal du opdatere filen appsettings.json manuelt. Oplysninger om opdatering af filen appsettings.json finder du under [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 Det følgende billede viser et eksempel på en besked med bekræftelse af handlingen "Føjet til indkøbsvogn" på Fabrikam-webstedet.
 
@@ -89,27 +89,27 @@ Købsfeltmodulet henter produktoplysninger ved hjælp af Commerce Scale Unit-API
 
 Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Fragmenter** , og vælg **Nyt** for at oprette et nyt fragment.
+1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
 1. Vælg modulet **Købefelt** i dialogboksen **Nyt fragment**.
 1. Under **Fragmentnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
-1. På pladsen **Media Gallery** i købefeltmodulet skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
+1. På pladsen **Media Gallery** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Media Gallery** og derefter **OK**.
-1. På pladsen **Butiksvælger** i købefeltmodulet skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
+1. På pladsen **Butiksvælger** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Butiksvælger** og derefter **OK**.
-1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
-1. Gå til **Skabeloner** , og vælg **Ny** for at oprette en ny skabelon.
-1. Angiv **PDP-skabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon** , og vælg derefter **OK**.
-1. På pladsen **Brødtekst** skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
+1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
+1. Angiv **PDP-skabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
+1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
-1. Vælg pladsen **Hoved** på standardsiden, vælg ellipsen ( **...** ) og derefter **Tilføj fragment**.
-1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment** , som du tidligere har valgt, og derefter vælge **OK**.
-1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
-1. Gå til **Sider** , og vælg **Ny** for at oprette en ny side.
-1. Vælg dialogboksen **Vælg en skabelon** , og vælg skabelonen **PDP-skabelon**. Under **Sidenavn** skal du angive **PDP-side** og derefter vælge **OK**.
-1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen ( **...** ), og vælg derefter **Tilføj fragment**.
-1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment** , som du tidligere har valgt, og derefter vælge **OK**.
+1. Vælg pladsen **Hoved** på standardsiden, vælg ellipsen (**...**) og derefter **Tilføj fragment**.
+1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
+1. Vælg dialogboksen **Vælg en skabelon**, og vælg skabelonen **PDP-skabelon**. Under **Sidenavn** skal du angive **PDP-side** og derefter vælge **OK**.
+1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj fragment**.
+1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Gem siden, og se en forhåndsvisning af den. Føj forespørgselsstrengparameteren **?productid=&lt;product id&gt;** til URL-adressen for eksempelsiden. På denne måde bruges produktkonteksten til at indlæse og gengive eksempelsiden.
-1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. Der vises et købefelt på siden med produktdetaljer.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. Der vises et købefelt på siden med produktdetaljer.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

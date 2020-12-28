@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817300"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517226"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -197,11 +197,11 @@ Når du har opdateret global.json-filen og publiceret dine ændringer, vises den
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 

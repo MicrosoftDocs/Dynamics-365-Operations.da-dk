@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f7a779d69bf49d3416de3e92d4414cfabf358eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983617"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517446"
 ---
 # <a name="manage-robotstxt-files"></a>Administrer robots.txt-filer
 
@@ -90,11 +90,11 @@ Følg disse trin for at slette en robots.txt-fil i Commerce.
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Masseoverføre omdirigeringer af URL-adresser](upload-bulk-redirects.md)
 

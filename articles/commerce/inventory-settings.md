@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817603"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517058"
 ---
 # <a name="apply-inventory-settings"></a>Anvendelse af lagerindstillinger
 
@@ -46,7 +46,7 @@ I Commerce Site Builder kan der defineres lagergrænseværdier og -intervaller f
 
 I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Udvidelser \> Lagerstyring** i webstedsgeneratoren. Der er fire lagerindstillinger, hvoraf en er forældet (frarådes):
 
-- **Aktivér lagerkontrol på app** – Denne indstilling slår kontrol af et produktlager til. Modulerne købefelt, indkøbsvogn og afhentning i butik kontrollerer derefter produktlageret og tillader kun, at der føjes et produkt til indkøbsvognen, hvis lageret er tilgængeligt.
+- **Aktivér kontrol af lagerbeholdning i app** – Denne indstilling slår kontrol af et produktlager til. Modulerne købefelt, indkøbsvogn og afhentning i butik kontrollerer derefter produktlageret og tillader kun, at der føjes et produkt til indkøbsvognen, hvis lageret er tilgængeligt.
 - **Lagerniveau baseret på** – Denne indstilling definerer, hvordan lagerniveauer beregnes. De tilgængelige værdier er **I alt disponibelt**, **Fysisk disponibelt** og **Grænse for udsolgt**. I Commerce kan der defineres lagergrænseværdier og -intervaller for de enkelte produkter eller kategorier. Lager-API'erne returnerer produktlageroplysninger for både egenskaben **I alt disponibelt** og egenskaben **Fysisk disponibelt**. Forhandleren bestemmer, om værdien for **I alt disponibelt** eller **Fysisk disponibelt** skal bruges til at bestemme lageroptællingen og de tilsvarende intervaller for statusserne på lager og udsolgt.
 
     Værdien **Grænse for udsolgt** for indstillingen **Lagerniveau baseret på** er en gammel (ældre), forældet værdi. Når den er valgt, bestemmes lageroptællingen ud fra resultaterne af værdien **Disponibelt i alt**, men grænsen defineres af den numeriske indstilling **Grænse for udsolgt**, der beskrives senere. Tærskelindstillingen gælder for alle produkter på tværs af et e-handelswebsted. Hvis lagerbeholdningen ligger under tærskelantallet, anses et produkt for at være udsolgt. Ellers betragtes det som værende på lager. Mulighederne for værdien **Grænse for udsolgt** er begrænsede, og det anbefales ikke, at du bruger værdien i version 10.0.12 og senere.

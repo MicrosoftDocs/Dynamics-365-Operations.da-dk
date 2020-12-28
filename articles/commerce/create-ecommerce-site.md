@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533430"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517178"
 ---
 # <a name="create-an-e-commerce-site"></a>Oprette et websted for e-handel
 
@@ -32,7 +32,7 @@ ms.locfileid: "3533430"
 
 I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 
-Når du licenserer funktionerne til e-handel, vil webstedsgeneratoren blive klargjort til et startsted, som du kan bruge som udgangspunkt for dit eget websted. Men hvis du vil starte fra bunden, eller hvis du vil oprette endnu et websted, skal du oprette et nyt websted i området til oprettelse af websted. 
+Når du licenserer Dynamics 365 Commerce-funktionerne til e-handel, vil webstedsgeneratoren blive klargjort til et startsted, som du kan bruge som udgangspunkt for dit eget websted. Men hvis du vil starte fra bunden, eller hvis du vil oprette endnu et websted, skal du oprette et nyt websted i området til oprettelse af websted. 
 
 ## <a name="set-up-your-site"></a>Konfigurere dit websted
 
@@ -58,9 +58,9 @@ Når webstedet er oprettet, kan du kontrollere, om det er knyttet til din online
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 

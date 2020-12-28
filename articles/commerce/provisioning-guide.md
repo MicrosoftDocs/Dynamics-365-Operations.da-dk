@@ -3,7 +3,7 @@ title: Klargøre et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du klargør et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599844"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4411235"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargøre et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -48,6 +48,7 @@ For yderligere oplysninger om, hvordan du konfigurerer dit Commerce-evalueringsm
 
 Følgende forudsætninger skal være på plads, før du kan klargør dit Commerce-evalueringsmiljø:
 
+- Du er registreret i evalueringsprogrammet og har fået tildelt kapacitet til et evalueringsmiljø.
 - Du har adgang til Microsoft Dynamics Lifecycle Services-portalen (LCS).
 - Du er en eksisterende Microsoft Dynamics 365-partner eller -kunde og kan oprette et Dynamics 365 Commerce-projekt.
 - Du har administratoradgang til dit Microsoft Azure-abonnement, eller du er i kontakt med en abonnementsadministrator, der kan hjælpe dig, hvis det er nødvendigt.
@@ -91,7 +92,7 @@ Følg disse trin for at installere miljøet.
 
 1. Vælg **Skybaserede miljøer** øverst i menuen.
 1. Vælg **Tilføj** for at tilføje et miljø.
-1. Vælg den seneste version i feltet **Programversion**. Hvis du har et specifikt behov for at vælge en anden programversion end den seneste version, skal du ikke vælge en version før **10.0.8**.
+1. Vælg den seneste version i feltet **Programversion**. Hvis du har et specifikt behov for at vælge en anden programversion end den seneste version, skal du ikke vælge en version før **10.0.14**.
 1. I feltet **Platformsversion** skal du bruge den platformsversion, der automatisk vælges for den programversion, du har valgt. 
 
     ![Valg af program- og platformsversioner](./media/project1.png)

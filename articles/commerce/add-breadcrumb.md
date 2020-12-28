@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055398"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517154"
 ---
 # <a name="breadcrumb-module"></a>Brødkrummemodul
 
@@ -46,7 +46,7 @@ Det følgende billede viser et eksempel på et brødkrummemodul, der viser kateg
 
 ## <a name="breadcrumb-module-settings"></a>Indstillinger for brødkrummemodul
 
-Brødkrummemodulet er afhængigt af indstillingen **Visningstype for brødkrumme på PDP** , som defineres i **Webstedsindstillinger \>Udvidelser** i webstedsgeneratoren. Denne indstilling har tre mulige værdier:
+Brødkrummemodulet er afhængigt af indstillingen **Visningstype for brødkrumme på PDP**, som defineres i **Webstedsindstillinger \> Udvidelser** i webstedsgeneratoren. Denne indstilling har tre mulige værdier:
 
 - **Vis kategorihierarki** – Når denne værdi er valgt, vil brødkrummemodulet vise hele kategorihierarkiet for det produkt, der ses på PDP'en.
 - **Vis tilbage til resultater** – Når denne værdi er valgt, vil brødkrummemodulet vise linket "Tilbage til resultater" på en PDP, hvis brugeren åbnede PDP'en fra et modul, der tillader linket "Tilbage til resultater". Denne funktionalitet er tilgængelig, når brugere navigerer fra listesider for kategorier, søgninger, lister og anbefalinger. For at understøtte denne funktion har moduler med produktsamlinger og søgeresultater en egenskab, der har fået navnet **Tillad tilbage til resultater på PDP**. Denne egenskab giver dig fleksibiliteten til at definere, hvilke moduler der skal understøtte linkfunktionen "Tilbage til resultater" på PDP'en. Hvis f.eks. **Vis tilbage til resultater** er valgt for indstillingen **Visningstype for brødkrumme på PDP** for brødkrummemodulet, og **Tillad tilbage til resultater på PDP** er valgt for søgesidens modul for søgeresultater, vises linket "Tilbage til resultater", når brugere går fra søgesiden til en PDP.
@@ -66,18 +66,18 @@ Brødkrummemodulet er afhængigt af indstillingen **Visningstype for brødkrumme
 
 Hvis du vil føje et brødkrummemodul til en PDP og angive de påkrævede egenskaber, skal du følge disse trin.
 
-1. Gå til **Indstillinger for websted /> Udvidelser** og derefter til **Visningstype for brødkrumme på PDP** , vælg **Vis kategorihierarki**.
-1. Gå til **Skabeloner** , og vælg PDP-skabelonen.
-1. På pladsen **Container** , der indeholder købefeltmodulet, skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
+1. Gå til **Indstillinger for websted \> Udvidelser** og derefter til **Visningstype for brødkrumme på PDP**, vælg **Vis kategorihierarki**.
+1. Gå til **Skabeloner**, og vælg PDP-skabelonen.
+1. På pladsen **Container**, der indeholder købefeltmodulet, skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Brødkrumme** og derefter **OK**.
-1. Vælg **Gem** , vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
-1. Gå til **Sider** , og åbn en PDP, der bruger PDP-skabelonen. Hvis der endnu ikke findes en PDP, skal du oprette en.
-1. På pladsen **Container** , der indeholder købefeltmodulet, skal du vælge ellipsen ( **...** ) og derefter **Tilføj modul**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider**, og åbn en PDP, der bruger PDP-skabelonen. Hvis der endnu ikke findes en PDP, skal du oprette en.
+1. På pladsen **Container**, der indeholder købefeltmodulet, skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
 1. I dialogboksen **Tilføj modul** skal du vælge modulet **Brødkrumme** og derefter **OK**.
 1. I egenskabsruden for pladsen **Brødkrumme** skal du under **Rod** vælge **Linktekst**.
 1. I dialogboksen **Linktekst** skal du skrive **Start** og derefter under **Linkdestination** vælge **Tilføj et link**.
 1. I dialogboksen **Tilføj et link** skal du vælge et link for brødkrummeroden og derefter vælge **OK**.
-1. Vælg **Gem** , og vælg derefter **Vis** for at få vist siden.
+1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
 1. Vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

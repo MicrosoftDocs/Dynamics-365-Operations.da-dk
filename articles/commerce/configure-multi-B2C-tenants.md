@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0b14e0c662af74464768b66c1c86d03d2944014
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976010"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517111"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurere flere B2C-lejere i et Commerce-miljø
 
@@ -114,11 +114,11 @@ Den nye Azure AD B2C-lejer vises nu på listen under **Administrer B2C-programme
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 

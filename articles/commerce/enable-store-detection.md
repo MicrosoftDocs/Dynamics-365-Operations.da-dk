@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533384"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517300"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere registrering af lokationsbaserede butikker
 
@@ -33,7 +33,7 @@ I dette emne beskrives, hvordan du aktiverer registrering af lokationsbaserede b
 
 ## <a name="overview"></a>Oversigt
 
-Med registrering af lokationsbaserede butikker i Commerce kan du levere relevant webstedsindhold til kunderne på baggrund af deres placering. Hvis registrering af lokationsbaserede butikker er slået til, bruger Commerce-gengivelsestjenesten lande-/områdeoplysningerne fra IP-adressen på kundens webbrowser til at dirigere kunden til den bedst mulige geografiske lokationskonfiguration.
+Med registrering af lokationsbaserede butikker i Commerce kan du levere relevant webstedsindhold til kunderne på baggrund af deres placering. Hvis registrering af lokationsbaserede butikker er slået til, bruger Commerce-gengivelsestjenesten land/område-oplysningerne fra IP-adressen på kundens webbrowser til at dirigere kunden til den bedst mulige geografiske lokationskonfiguration.
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 
@@ -52,11 +52,11 @@ Udfør følgende trin for at aktivere registrering af lokationsbaserede butikker
 
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
-[Implementere et nyt websted for e-handel](deploy-ecommerce-site.md)
+[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 

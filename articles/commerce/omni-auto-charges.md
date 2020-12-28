@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107369"
+ms.locfileid: "4411230"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
@@ -38,7 +38,7 @@ I versioner før Retail version 10.0 er konfigurationer af [automatiske gebyrer]
 
 I versioner før version 10.0 bliver POS-brugere bedt om at angive et forsendelsesgebyr manuelt under oprettelse af en "send alle" eller "send valgte" POS transaktion. Når gebyrfunktionerne i programmet bruges i forhold til, hvordan gebyrerne skrives til ordren, foretages der ingen systematisk beregning – beregningen til bestemmelse af værdien af gebyrerne er baseret på input fra brugeren. Gebyrerne kan kun tilføjes som en enkelt "forsendelse"-relaterede gebyrkode og kan kun dårligt redigeres eller ændres i POS, når de først er oprettet.
 
-Der bruges stadig manuelle prompts ved tilføjelse af forsendelsesgebyrer i version 10.0 og nyere. Hvis en organisation ikke aktiverer parameteren **Avancerede automatiske gebyrer** , forbliver POS-prompts om manuel angivelse af gebyrer uændret.
+Der bruges stadig manuelle prompts ved tilføjelse af forsendelsesgebyrer i version 10.0 og nyere. Hvis en organisation ikke aktiverer parameteren **Avancerede automatiske gebyrer**, forbliver POS-prompts om manuel angivelse af gebyrer uændret.
 
 Med den avancerede automatiske gebyrfunktion kan POS-brugere få systematiske beregninger for ethvert defineret gebyr baseret på tabeller til opsætning af automatiske gebyrer. Desuden får brugere mulighed for at tilføje eller redigere et ubegrænset antal ekstra gebyrer og gebyrer for enhver POS-salgstransaktion på hoved- eller linjeniveau (for en cash and carry- eller kundeordre).
 
@@ -67,7 +67,7 @@ Der findes følgende nye handlinger.
 
 Som med alle POS-handlinger kan sikkerhedskonfigurationer udføres, så det kræver godkendelse fra lederen at udføre handlingen.
 
-Det er vigtigt at bemærke, at de ovenfor angivne POS operationer også kan føjes til POS layout, selvom **Brug avancerede automatiske gebyrer** -parameteren er deaktiveret. I dette scenario får organisationer stadig fordelene ved at kunne få vist gebyrer, der er tilføjet manuelt, og redigere dem ved hjælp af handlingen **Administrer gebyrer**. Brugere kan også bruge handlingerne **Tilføj hovedgebyrer** og **Tilføj linjegebyrer** for POS-transaktioner, selv når **Brug avancerede automatiske gebyrer** -parameteren er deaktiveret. Handlingen **Genberegn gebyrer** har mindre funktionalitet, hvis den bruges, når **Brug avancerede automatiske gebyrer** er deaktiveret. I dette scenarie skal intet genberegnes, og eventuelle gebyrer, der er føjet til transaktionen manuelt, nulstilles blot til $0,00.
+Det er vigtigt at bemærke, at de ovenfor angivne POS operationer også kan føjes til POS layout, selvom **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. I dette scenario får organisationer stadig fordelene ved at kunne få vist gebyrer, der er tilføjet manuelt, og redigere dem ved hjælp af handlingen **Administrer gebyrer**. Brugere kan også bruge handlingerne **Tilføj hovedgebyrer** og **Tilføj linjegebyrer** for POS-transaktioner, selv når **Brug avancerede automatiske gebyrer**-parameteren er deaktiveret. Handlingen **Genberegn gebyrer** har mindre funktionalitet, hvis den bruges, når **Brug avancerede automatiske gebyrer** er deaktiveret. I dette scenarie skal intet genberegnes, og eventuelle gebyrer, der er føjet til transaktionen manuelt, nulstilles blot til $0,00.
 
 ## <a name="use-case-examples"></a>Eksempler på brugsmønstre
 
@@ -117,7 +117,7 @@ Dette scenario kræver konfiguration af én tabel for automatiske gebyrer på li
 
 Gå til **Debitor \> Konfiguration af gebyrer \> Automatiske gebyrer**.
 
-Indstil **Niveau** rullemenuen til **Linje** , og opret en ny post til automatiske gebyrer for alle kunder og for det specifikke produkt eller produktgruppe, hvor opsætningsgebyrerne bliver opkrævet.
+Indstil **Niveau** rullemenuen til **Linje**, og opret en ny post til automatiske gebyrer for alle kunder og for det specifikke produkt eller produktgruppe, hvor opsætningsgebyrerne bliver opkrævet.
 
 ![Eksempel på et tabel med automatiske tillæg på linjeniveau](media/linechargesexample.png)
 
@@ -171,9 +171,9 @@ Handlingen **Tilføj linjegebyrer** skal være konfigureret i dit [POS-skærmlay
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Salgsprocessen for det manuelle linjegebyr
 
-Du kan udføre scenariet i POS-programmet. POS-brugeren opretter salgstransaktionen som sædvanlig og tilføjer produkterne og eventuelle andre konfigurationer til salget. Før opkrævning af betaling, skal brugeren vælge den specifikke linje, hvor gebyret anvendes, fra visningen med POS-varelisten og udføre **Tilføj linjegebyr** -handlingen. Brugeren bliver bedt om at vælge en gebyrkode og angiv værdien af gebyret. Når brugeren har fuldført processen, knyttes gebyret til linjen og føjes til ordretotalen som et gebyr på linjeniveau. Brugeren kan gentage processen for at føje yderligere linjegebyrer til andre varelinjer i posteringen, hvis det er nødvendigt.
+Du kan udføre scenariet i POS-programmet. POS-brugeren opretter salgstransaktionen som sædvanlig og tilføjer produkterne og eventuelle andre konfigurationer til salget. Før opkrævning af betaling, skal brugeren vælge den specifikke linje, hvor gebyret anvendes, fra visningen med POS-varelisten og udføre **Tilføj linjegebyr**-handlingen. Brugeren bliver bedt om at vælge en gebyrkode og angiv værdien af gebyret. Når brugeren har fuldført processen, knyttes gebyret til linjen og føjes til ordretotalen som et gebyr på linjeniveau. Brugeren kan gentage processen for at føje yderligere linjegebyrer til andre varelinjer i posteringen, hvis det er nødvendigt.
 
-Den samme proces kan anvendes i callcenteret ved hjælp af funktionen "Vedligehold gebyrer", som du finder under **Regnskaber** -rullemenuen i **Salgsordrelinjer** sektionen på siden **Salgsordre**. Hvis du vælger denne indstilling, åbnes siden **Vedligehold gebyrer** , hvor brugeren kan tilføje et nyt linjespecifikt gebyr til transaktionen.
+Den samme proces kan anvendes i callcenteret ved hjælp af funktionen "Vedligehold gebyrer", som du finder under **Regnskaber**-rullemenuen i **Salgsordrelinjer** sektionen på siden **Salgsordre**. Hvis du vælger denne indstilling, åbnes siden **Vedligehold gebyrer**, hvor brugeren kan tilføje et nyt linjespecifikt gebyr til transaktionen.
 
 ## <a name="additional-features"></a>Yderligere funktioner
 
@@ -183,25 +183,25 @@ Handlingen **Administrer gebyrer** (142) skal føjes til [POS-skærmlayoutet](ht
 
 På siden **Administrer gebyrer** i POS kan brugeren kan få vist detaljer om gebyrer på både hoved- og linjeniveau. Brugeren kan anvende **Rediger** funktionen, der er tilgængelig på denne side, til at foretage ændringer af det beløb, der lægges til en linje for specifikke gebyrer. Når en linje for gebyrer overskrives manuelt, genberegnes den ikke systematisk, medmindre brugeren starter handlingen **Genberegn gebyrer**.
 
-Hvis **Årsagskode for tilsidesættelse af gebyr** er konfigureret på opsætningssiden **Commerce-parametre** , bliver brugeren bedt om at angive en årsagskode, når gebyrer er blevet ændret i POS-programmet.
+Hvis **Årsagskode for tilsidesættelse af gebyr** er konfigureret på opsætningssiden **Commerce-parametre**, bliver brugeren bedt om at angive en årsagskode, når gebyrer er blevet ændret i POS-programmet.
 
 Hvis der er hentet årsagskoder for tilsidesatte gebyrer, findes der også en ny rapport til gennemsyn og overvågning af disse tilsidesættelser. Rapporten findes i **Retail og Commerce \> Forespørgsler og rapporter \> Tilsidesættelseshistorik for gebyr**.
 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Tilbagebetaling af gebyrer på en POS-returtransaktion
 
-Hvis parameteren **Brug avancerede automatiske gebyrer** er indstillet til **Ja** , gælder den eksisterende Commerce-parameter for **Refunder forsendelsesgebyrer** ikke længere. Du kan angive, hvilke gebyrer der systematisk skal refunderes til en kunde, når der bruges avancerede automatiske gebyrer, skal du sikre, at koden for relaterede gebyrer er konfigureret som **Kan refunderes** på opsætningssiden **Gebyrkode**. Sørg for, at indstillingerne er synkroniseret med Commerce-kanalens databaser via behandling af distributionsplanen.
+Hvis parameteren **Brug avancerede automatiske gebyrer** er indstillet til **Ja**, gælder den eksisterende Commerce-parameter for **Refunder forsendelsesgebyrer** ikke længere. Du kan angive, hvilke gebyrer der systematisk skal refunderes til en kunde, når der bruges avancerede automatiske gebyrer, skal du sikre, at koden for relaterede gebyrer er konfigureret som **Kan refunderes** på opsætningssiden **Gebyrkode**. Sørg for, at indstillingerne er synkroniseret med Commerce-kanalens databaser via behandling af distributionsplanen.
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Tilbagebetaling af gebyrer på en returordretransaktion
 
-Gebyrer refunderes ikke systematisk til **Returordrer** , der er oprettet i Commerce. Brugerne skal vælge indstillingen **Kopiér gebyrer** , når de opretter deres **Returordre**. Hvis **Kopiér gebyrer** er ikke markeret, refunderes gebyrer fra den oprindelige salgstransaktion ikke automatisk. Hvis **Kopiér gebyrer** er markeret, kopieres alle gebyrer til returordren, og brugeren kan manuelt redigere eller fjerne eventuelle gebyrer, som de ikke vil have refunderet. Callcenterets returordreproces kan i øjeblikket ikke bekræfte flaget **Kan refunderes** i **Gebyrkode** -opsætningen.
+Gebyrer refunderes ikke systematisk til **Returordrer**, der er oprettet i Commerce. Brugerne skal vælge indstillingen **Kopiér gebyrer**, når de opretter deres **Returordre**. Hvis **Kopiér gebyrer** er ikke markeret, refunderes gebyrer fra den oprindelige salgstransaktion ikke automatisk. Hvis **Kopiér gebyrer** er markeret, kopieres alle gebyrer til returordren, og brugeren kan manuelt redigere eller fjerne eventuelle gebyrer, som de ikke vil have refunderet. Callcenterets returordreproces kan i øjeblikket ikke bekræfte flaget **Kan refunderes** i **Gebyrkode**-opsætningen.
 
 ### <a name="configuring-pos-receipts-to-show-charges"></a>Konfiguration af POS-kvitteringer til visning af gebyrer
 
 Der er tilføjet følgende kvitteringselementer til kvitteringslinjen og -sidefoden til understøttelse af den avancerede automatiske gebyrfunktion.
 
-- **Forsendelsesgebyrer for linje** – Dette element på linjeniveau kan bruges til at opsummere bestemt gebyrkoder, der er anvendt til salgslinjen. Kun gebyrkoder, der er blevet afmærket som **Forsendelse** -gebyrer på siden **Gebyrkode** , vises her.
+- **Forsendelsesgebyrer for linje** – Dette element på linjeniveau kan bruges til at opsummere bestemt gebyrkoder, der er anvendt til salgslinjen. Kun gebyrkoder, der er blevet afmærket som **Forsendelse**-gebyrer på siden **Gebyrkode**, vises her.
 - **Andre gebyrer for linje** – Dette element på linjeniveau kan bruges til at opsummere ikke-forsendelsesgebyrkoder, der er anvendt på salgslinjen. Disse er gebyrkoder, hvor flaget **Forsendelse** på siden **Gebyrkode** er ikke aktiveret.
-- **Oplysninger om forsendelsesgebyrer for ordre** – Dette element sidefodsniveau vises beskrivelserne af de gebyrkoder, der er anvendt på ordren, der er afmærket som **Forsendelse** -gebyr på opsætningssiden **Gebyrkode**.
+- **Oplysninger om forsendelsesgebyrer for ordre** – Dette element sidefodsniveau vises beskrivelserne af de gebyrkoder, der er anvendt på ordren, der er afmærket som **Forsendelse**-gebyr på opsætningssiden **Gebyrkode**.
 - **Forsendelsesgebyrer for ordre** – Dette element på sidefodsniveau vises værdien i dollar af de forsendelsesrelaterede gebyrer.
 - **Oplysninger om andre gebyrer for ordre** – Dette element sidefodsniveau vises beskrivelsen af de gebyrkoder, der er anvendt på ordren, der ikke er mærket som forsendelsesrelaterede gebyrer.
 - **Andre gebyrer for ordre** – Dette element på sidefodsniveau vises værdien i dollar af de andre gebyrer, der ikke er forsendelsesrelaterede.
@@ -210,7 +210,7 @@ Det anbefales, at organisationen også føjer fritekstfelter i kvitteringens sid
 
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Forhindre, at gebyrer beregnes, før POS-ordren er fuldført
 
-Visse organisationer kan foretrække at vente på, at brugeren er færdig med at tilføje alle salgslinjerne til POS transaktionen før beregning af gebyrer. For at forhindre beregning af gebyrer i takt med at varer føjes til POS-transaktionen, skal du slå parameteren **Beregning af manuelt gebyr** i den **Funktionalitetsprofil** , der bruges i butikken. Aktivering af denne parameter forudsætter, at POS-brugeren bruger handlingen **Beregn totaler** efter at have føjet produkterne til POS-transaktionen. Handlingen **Beregn totaler** udløser derefter beregningen af de automatiske gebyrer for det/de relevante ordrehoved eller -linjer.
+Visse organisationer kan foretrække at vente på, at brugeren er færdig med at tilføje alle salgslinjerne til POS transaktionen før beregning af gebyrer. For at forhindre beregning af gebyrer i takt med at varer føjes til POS-transaktionen, skal du slå parameteren **Beregning af manuelt gebyr** i den **Funktionalitetsprofil**, der bruges i butikken. Aktivering af denne parameter forudsætter, at POS-brugeren bruger handlingen **Beregn totaler** efter at have føjet produkterne til POS-transaktionen. Handlingen **Beregn totaler** udløser derefter beregningen af de automatiske gebyrer for det/de relevante ordrehoved eller -linjer.
 
 ### <a name="charges-override-reports"></a>Rapporter over gebyrtilsidesættelser
 

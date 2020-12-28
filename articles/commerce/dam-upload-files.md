@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fc0490e3532dcbb9c1e91101009b2d4605315416
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4acd3bec32cdfe627f6eb33dd5dc652f7cff74a8
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096988"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594206"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>Upload andre filer end billeder og videoer
 
@@ -89,10 +89,12 @@ Følg disse trin for at uploade en fil til Commerce-webstedsgenerator.
 
 [Oversigt over digital aktivstyring](dam-overview.md)
 
-[Uploade billeder](dam-upload-images.md)
+[Overføre billeder](dam-upload-images.md)
 
-[Uploade video](dam-upload-video.md)
+[Overføre video](dam-upload-video.md)
 
 [Beskære billeder](dam-crop-images.md)
 
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
+
+[Overføre og håndtere statiske filer](upload-serve-static-files.md)

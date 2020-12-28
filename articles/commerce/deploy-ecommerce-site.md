@@ -1,6 +1,6 @@
 ---
 title: Implementere en ny e-handelslejer
-description: I dette emne beskrives, hvordan du installerer en ny e-handelslejer ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
+description: I dette emne beskrives, hvordan du implementerer et nyt Dynamics 365 Commerce-e-handelswebsted ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533269"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517276"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
 
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du implementerer et nyt e-handelswebsted ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
+I dette emne beskrives, hvordan du implementerer et nyt Dynamics 365 Commerce-e-handelswebsted ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Microsoft Dynamics Lifecycle Services (LCS) er et skybaseret arbejdsområde til samarbejde, som partnere og kunder kan bruge til at styre deres projekter og miljøer, få vist de seneste oplysninger om Microsoft Dynamics-produkter og -funktioner og oprette, spore og gennemse supporthændelser. Funktioner til styring e-handel er integreret i LCS.
 
@@ -50,7 +50,7 @@ Du kan bruge denne procedure til at initialisere e-handelsfunktionen i et eksist
 Før du går i gang, skal du sikre dig, at du har følgende påkrævede oplysninger:
 
 - Den RCSU, der skal bruges.
-- Den Microsoft Azure Active Directory-sikkerhedsgruppe, der skal bruges til administratorer af e-handel-systemet.
+- Den Microsoft Azure Active Directory-sikkerhedsgruppe, der skal bruges til administratorer af e-handelssystemet.
 - Den Microsoft Azure Active Directory-sikkerhedsgruppe, der skal bruges til vurderings- og anmeldelsesredaktører.
 - De domæner, der skal knyttes til miljøet.
 
@@ -82,9 +82,9 @@ Når du har indsamlet de nødvendige oplysninger, skal du udføre disse trin for
     
 Når e-handel initialiseres fra LCS, klargør systemet flere komponenter, der kræves til e-handel, og knytter dem til miljøet. Når klargøringen er fuldført, opdateres fanen **e-handel** på siden **Detailstyring**, så den afspejler klargøringen. På siden vises de seneste tilpasningsinstallationer og status for eventuelle andre igangværende installationer. Siden indeholder også links til e-handelswebstedet og generatoren til e-handelswebsteder, hvor websteder oprettes.
 
-## <a name="access-site-builder"></a>Få adgang til webstedsgenerator
+## <a name="access-commerce-site-builder"></a>Få adgang til Commerce-webstedsgenerator
 
-Hvis du vil have adgang til webstedsgeneratoren, skal du gå til fanen **e-handel** på siden **Detailstyring** i LCS og vælge linket **Administrationsværktøj til websted for e-handel**. Landingssiden for webstedsgeneratoren viser en visning på lejerniveau. Fra denne side kan du:
+Hvis du vil have adgang til Commerce-webstedsgeneratoren, skal du gå til fanen **e-handel** på siden **Detailstyring** i LCS og vælge linket **Administrationsværktøj til websted for e-handel**. Landingssiden for webstedsgeneratoren viser en visning på lejerniveau. Fra denne side kan du:
 
 - Redigere indstillinger på lejerniveau.
 - Navigere til et websted, du har oprettet og har tilladelse til at få vist. 
@@ -97,7 +97,7 @@ Hvis du vil have adgang til webstedsgeneratoren, skal du gå til fanen **e-hande
 
 [Oprette et websted for e-handel](create-ecommerce-site.md)
 
-[Tilknytte et onlinewebsted til en kanal](associate-site-online-store.md)
+[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
