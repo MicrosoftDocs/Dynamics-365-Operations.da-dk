@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015037"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692960"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -92,7 +91,7 @@ Sommetider findes der en vigtig funktion, som skal slås til automatisk, når du
 
 Alle de funktioner, der føjes til dit miljø, er som standard slået fra. Du kan aktivere alle funktioner ved at vælge knappen **Aktivér alle**. 
 
-Når du vælger **Aktivér alle** , vises en indstilling, hvor du skal angive følgende oplysninger:
+Når du vælger **Aktivér alle**, vises en indstilling, hvor du skal angive følgende oplysninger:
 - En liste over alle funktioner, der kræver bekræftelse, før de kan aktiveres. Hvis du vil aktivere funktionerne på listen, skal du vælge **Ja** for knappen **Aktivér funktioner, der kræver bekræftelse**.
 - Der vises en liste over alle funktioner, der ikke kan aktiveres. Disse funktioner vil ikke blive aktiveret.
 
@@ -102,8 +101,8 @@ Alle funktioner, der kan aktiveres, vil blive aktiveret. Hvis en funktion allere
 
 Alle de funktioner, der føjes til dit miljø, er som standard slået fra, medmindre de er obligatoriske funktioner. Men hvis du automatisk vil aktivere alle nye funktioner, kan du bruge rullelisten under titlen på arbejdsområdet til at ændre, hvad der sker, når der tilføjes nye funktioner.
 
-- Vælg **Aktivér nye funktioner automatisk** , så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
-- Vælg **Aktivér ikke nye funktioner automatisk** , så alle nye funktioner som standard er slået fra, når de føjes til miljøet.
+- Vælg **Aktivér nye funktioner automatisk**, så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
+- Vælg **Aktivér ikke nye funktioner automatisk**, så alle nye funktioner som standard er slået fra, når de føjes til miljøet.
 
 
 Når du aktiverer alle funktionerne automatisk, aktiveres alle de funktioner, der vil blive aktiveret, når du klikker på knappen **Aktivér alle**. Det vil ikke aktivere de funktioner, der kræver bekræftelse, eller de funktioner, der ikke kan aktiveres, før en handling er udført.
@@ -126,16 +125,16 @@ Hvis du slår konfigurationsnøglen fra, fjernes den pågældende funktion ikke 
 
 ## <a name="data-entities"></a>Dataenheder
 
-Med dataenheden **Administration af funktioner** får du mulighed for at eksportere indstillingerne for administration af funktioner fra ét miljø og derefter importere dem til et andet miljø. Denne enhed opdaterer kun eksisterende funktioner. Forretningslogikken i enheden bidrager også til at garantere, at de samme regler, der bruges i arbejdsområdet til **Administration af funktioner** , anvendes, når importen udføres. Du kan f.eks. ikke tilsidesætte en obligatorisk funktionsindstilling ved at fjerne datoen under importen.
+Med dataenheden **Administration af funktioner** får du mulighed for at eksportere indstillingerne for administration af funktioner fra ét miljø og derefter importere dem til et andet miljø. Denne enhed opdaterer kun eksisterende funktioner. Forretningslogikken i enheden bidrager også til at garantere, at de samme regler, der bruges i arbejdsområdet til **Administration af funktioner**, anvendes, når importen udføres. Du kan f.eks. ikke tilsidesætte en obligatorisk funktionsindstilling ved at fjerne datoen under importen.
 
 Følgende eksempler beskriver, hvad der sker, når du bruger enheden **Administration af funktioner** til at importere data.
 
-- Hvis du ændrer værdien i feltet **Aktiveret** til **Ja** , slås funktionen til, og feltet **Aktiveringsdato** indstilles til dags dato.
+- Hvis du ændrer værdien i feltet **Aktiveret** til **Ja**, slås funktionen til, og feltet **Aktiveringsdato** indstilles til dags dato.
 - Hvis du ændrer værdien i feltet **Aktiveret** til **Nej** eller lader feltet **EnableDate** være tomt, slås funktionen fra, og feltet **Aktiveringsdato** ryddes. Du kan ikke deaktivere en funktion eller en funktion, der ikke kan slås fra, efter at den er slået til.
 - Hvis du ændrer værdien i feltet **EnableDate** til en fremtidig dato, bliver funktionen planlagt til den pågældende dato.
 - Hvis du ændrer værdien i feltet **Aktiveret** til **Ja** og ændrer værdien i feltet **EnableDate** til en fremtidig dato, planlægges funktionen til denne dato. 
 - Hvis du ændrer værdien i feltet **Aktiveret** til **Nej** og samtidig ændrer værdien i feltet **EnableDate** til en fremtidig dato, planlægges funktionen til denne dato.
-- Hvis en funktion er slået til, og du tilføjer et **EnableDate** -felt, der er angivet til en fremtidig dato, forbliver funktionen aktiveret. Hvis du vil planlægge denne funktion på ny, skal du ændre feltet **Aktiveret** til **Nej**.
+- Hvis en funktion er slået til, og du tilføjer et **EnableDate**-felt, der er angivet til en fremtidig dato, forbliver funktionen aktiveret. Hvis du vil planlægge denne funktion på ny, skal du ændre feltet **Aktiveret** til **Nej**.
 
 ## <a name="feature-management-and-flighting"></a>Administration af funktioner og flighting
 
@@ -181,7 +180,7 @@ Funktions-flights er til/fra-parametre i realtid, som Microsoft kontrollerer. De
 Ja, hvis en funktion har indflydelse på funktionaliteten af et miljø, som ikke har en funktionel effekt, kan de som standard aktiveres.
 
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Hvordan kan funktionsaktivering kontrolleres i kode?
-Brug metoden **isFeatureEnabled** på klassen **FeatureStateProvider** , og giv den en forekomst af funktionsklassen. Eksempel: 
+Brug metoden **isFeatureEnabled** på klassen **FeatureStateProvider**, og giv den en forekomst af funktionsklassen. Eksempel: 
 
 ```xpp
 if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
@@ -191,7 +190,7 @@ if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::ins
 Egenskaben **FeatureClass** kan bruges til at angive, at visse metadata er knyttet til en funktion. Det klassenavn, der bruges til funktionen, skal bruges, f.eks. **BatchContentionPreventionFeature**. Disse metadata er kun synlige i denne funktion. Egenskaben **FeatureClass** er tilgængelig i menuer, menupunkter, fasttekstværdier og tabel-/visningsfelter.
 
 ### <a name="what-is-a-feature-class"></a>Hvad er en funktionsklasse?
-Funktioner i funktionsstyring er defineret som *funktionsklasser*. En funktionsklasse **implementerer IFeatureMetadata** og bruger funktionsklasseattributten til at identificere sig selv i arbejdsområdet Funktionsstyring. Der findes mange eksempler på tilgængelige funktionsklasser, som kan kontrolleres for aktivering i kode ved hjælp af **FeatureStateProvider** -API og i metadata ved hjælp af egenskaben **FeatureClass**. Eksempel: 
+Funktioner i funktionsstyring er defineret som *funktionsklasser*. En funktionsklasse **implementerer IFeatureMetadata** og bruger funktionsklasseattributten til at identificere sig selv i arbejdsområdet Funktionsstyring. Der findes mange eksempler på tilgængelige funktionsklasser, som kan kontrolleres for aktivering i kode ved hjælp af **FeatureStateProvider**-API og i metadata ved hjælp af egenskaben **FeatureClass**. Eksempel: 
 
 ```xpp
 [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]

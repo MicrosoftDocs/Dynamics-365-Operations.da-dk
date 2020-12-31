@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811595"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695031"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Nye eller opdaterede opgaveguider (november 2016)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811595"
 
 I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (november 2016 – alle sprog) til Microsoft Dynamics 365 for Operations. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 
-APQC Unified-biblioteket (november 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til Microsoft Dynamics 365 for Operations, platformopdatering 3 til Microsoft Dynamics 365 for Operations (august 2), platformopdatering 2 til Microsoft Dynamics AX, opdateringen til Dynamics AX fra maj 2016 og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan finde flere oplysninger om disse udgivelser under [Nyheder eller ændringer i startsiden for Finance and Operations](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp-systemet](help-overview.md).
+APQC Unified-biblioteket (november 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til Microsoft Dynamics 365 for Operations, platformopdatering 3 til Microsoft Dynamics 365 for Operations (august 2), platformopdatering 2 til Microsoft Dynamics AX, opdateringen til Dynamics AX fra maj 2016 og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan finde flere oplysninger om disse frigivelser i [Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp-systemet](help-overview.md).
 
 > [!NOTE]
 > En stjerne (\*) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics 365 for Operations fra november 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
@@ -122,7 +121,7 @@ APQC Unified-biblioteket (november 2016 - alle sprog) indeholder de opgaveguider
 | Oprette omkostningselementer | Globalt         |
 | Oprette omkostningsobjekter  | Globalt         |
 
-### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
+### <a name="countryregion-functionality"></a>Land/område-funktionalitet
 
 | BPM-linje                                                                                                                         | Land/område                    |
 |----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|

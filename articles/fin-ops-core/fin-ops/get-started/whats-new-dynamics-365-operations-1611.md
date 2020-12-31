@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 03e7fcc2041363f9ddee8fdda9c4ea30bf89a9cb
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0b3ede085533fee1bb779ed9da899f509a77fc0c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812468"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693425"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -310,7 +309,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 </thead>
 <tbody>
 <tr>
-<td>Forskellige sprogversioner er tilgængelige for 18 lande:
+<td>Forskellige sprogversioner er tilgængelige for 18 lande/områder:
 <ul>
 <li>Østrig</li>
 <li>Belgien</li>
@@ -331,7 +330,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 <li>Schweiz</li>
 <li>Thailand</li>
 </ul>
-<p>Følgende lande kræver også detaillokalisering. Detaillokalisering for disse lande er ikke fuldført og er kun planlagt for H1 CY2017:</p>
+<p>Følgende lande/områder kræver også detaillokalisering. Detaillokalisering for disse lande/områder er ikke fuldført og er kun planlagt for H1 CY2017:</p>
 <ul>
 <li>Brasilien</li>
 <li>Tjekkiet</li>
@@ -344,7 +343,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 <li>Sverige</li>
 </ul>
 </td>
-<td>Dynamics 365 for Operations er tilgængelig i 18 lande yderligere. Lovpligtige elektroniske rapporteringsfunktioner er blevet konverteret til konfigurationer af elektronisk rapportering (ER) som en del af vores bestræbelser på at gøre lokalisering lettere og mere konfigurerbar, og nogle lovpligtige rapporter til Microsoft SQL Server Reporting Services (SSRS) er blevet konverteret til ER-konfigurationer, der bruger Excel-skabeloner. Disse konverterede funktioner er nævnt specifikt senere i denne tabel.</td>
+<td>Dynamics 365 for Operations er tilgængelig i 18 lande/områder yderligere. Lovpligtige elektroniske rapporteringsfunktioner er blevet konverteret til konfigurationer af elektronisk rapportering (ER) som en del af vores bestræbelser på at gøre lokalisering lettere og mere konfigurerbar, og nogle lovpligtige rapporter til Microsoft SQL Server Reporting Services (SSRS) er blevet konverteret til ER-konfigurationer, der bruger Excel-skabeloner. Disse konverterede funktioner er nævnt specifikt senere i denne tabel.</td>
 </tr>
 <tr>
 <td>Japan – Gruppere anlægsaktiver, når du udskriver form 26 og dens vedhæftede tabeller.</td>
@@ -611,7 +610,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 </tr>
 <tr>
 <td>Tyskland – Eksportér kreditorbetalinger i DTAZV-format</td>
-<td>Tyskland kræver behandling af DTAZV med fremmede formatangivelse, som repræsenterer en kreditoverførselsmeddelelse (kreditorbetaling) i overensstemmelse med specifikationen for betalinger på tværs af landegrænsen fra Tyskland til en konto i en udenlandsk bank eller til en indenlandsk bank i fremmed valuta.</td>
+<td>Tyskland kræver behandling af DTAZV med fremmed formatangivelse, som repræsenterer en kreditoverførselsmeddelelse (kreditorbetaling) i overensstemmelse med specifikationen for betalinger på tværs af landegrænsen fra Tyskland til en konto i en udenlandsk bank eller til en indenlandsk bank i fremmed valuta.</td>
 </tr>
 </tbody>
 </table>
@@ -945,4 +944,4 @@ Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program t
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Nyheder eller ændringer på startside for Finance and Operations](whats-new-changed.md)
+[Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 859e74b869fcf9b8a886f27f67f51bdf28819979
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: 1c9cecabb7923e86e8aa09eed7bd3b1ba5ee0bd8
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698237"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694855"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurere manuelle beslutninger i en arbejdsgang
 
@@ -267,7 +266,7 @@ Hvis en bruger ikke træffer beslutningen inden for den tildelte tid, er beslutn
     | 2        | Knyt til: Erik            |
     | 3        | Sluthandling: \[Valg 1\] |
 
-    I dette eksempel tildeles den forsinkede beslutning automatisk til Anna. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, tildeles beslutningen automatisk til Erik. Hvis Erik ikke træffer beslutningen inden for den tildelte tid, vælges **\[[Valg 1\]** automatisk som beslutning.
+    I dette eksempel tildeles den forsinkede beslutning automatisk til Anna. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, tildeles beslutningen automatisk til Erik. Hvis Erik ikke træffer beslutningen inden for den tildelte tid, vælges **\[Valg 1\]** automatisk som beslutning.
 
 3. Klik på **Tilføj eskalering** for at føje en bruger til eskaleringsstien. Vælg en af indstillingerne i følgende tabel, og udfør derefter de ekstra trin for den pågældende indstilling, før du går videre til trin 4.
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d9911c858d6832aa70378d37e0fd5cf7d7831b1b
-ms.sourcegitcommit: dce8c5d3b2fc4a752d676cf9ba91e0dea2fa80d8
+ms.openlocfilehash: 14eb8a59b64a49649768f93befdf8e6e8dcf8105
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "3257055"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685376"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Avanceret formeleditor til elektronisk rapportering
 
@@ -44,9 +43,9 @@ Udover den [elektroniske rapporterings](general-electronic-reporting.md) [formel
 
 Gennemfør følgende trin for at begynde at bruge den avancerede formeleditor i din forekomst af Microsoft Dynamics 365 Finance.
 
-1.  Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
-2.  På siden **Konfigurationer** i handlingsruden under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** skal du vælge **Brugerparametre**.
-3.  I dialogboksen **Brugerparametre** i sektionen **Kørselssporing** skal du angive parameteren **Aktiver avanceret formeleditor** til **Ja**.
+1.  Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2.  På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
+3.  I dialogboksen **Brugerparametre** i sektionen **Kørselssporing** skal du angive parameteren **Aktiver avanceret formeleditor** til **Ja**.
 
 [![Siden ER-konfigurationer](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 

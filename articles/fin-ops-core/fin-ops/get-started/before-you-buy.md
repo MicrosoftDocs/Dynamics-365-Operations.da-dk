@@ -3,25 +3,24 @@ title: Før du køber
 description: Trinvis vejledning, som du kan bruge, når du overvejer at købe Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 4619a359a352d702526c576d97b666439d71ed96
-ms.sourcegitcommit: 6aceca43c53c4dde46954c0b6b855d488eb44ed2
+ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027718"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694130"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -41,7 +40,7 @@ Der skal tages følgende overvejelser, når du vælger lokalt som installationsm
 
 - Lovmæssige og overholdelseskrav, der ikke findes i skycertificeringerne.
 - Der kræves afbrudte forretningsproces med uregelmæssig forbindelse til internettet for at få adgang til Microsoft Dynamics Lifecycle Services (LCS) til administration af programmets livscyklus.
-- [Funktioner, der endnu ikke er implementeret i lokale installationer](features-not-implemented-on-prem.md).
+- [Sammenligning af funktioner i skyen og i det lokale miljø](cloud-prem-comparison.md).
 - [Systemkrav til lokale installationer](system-requirements-on-prem.md).
 
 > [!IMPORTANT]

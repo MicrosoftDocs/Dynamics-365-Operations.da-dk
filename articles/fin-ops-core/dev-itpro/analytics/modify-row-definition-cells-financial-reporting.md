@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182985"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685853"
 ---
 # <a name="modify-row-definition-cells"></a>Redigere rækkedefinitionsceller
 
@@ -107,7 +106,7 @@ Cellen **Formatkode** indeholder forskellige forudformaterede muligheder med hen
     |-------------------------------|-----------------------------------|--------|
     | (Ingen)                        |                                   | Rydder cellen **Formatkode**. |
     | TOT                           | I alt                             | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Totaler indeholder enkle operatorer som f.eks. **+** eller **-**. |
-    | CAL                           | Kalkulation                       | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Beregningerne indeholder komplekse operatorer, f.eks. **+**, **-**, **\***, **/** og **IF/THEN/ELSE**-sætninger. |
+    | CAL                           | Kalkulation                       | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Beregningerne indeholder komplekse operatorer, f.eks. **+**, **-**, **\**_, _*/** og **IF/THEN/ELSE**-sætninger. |
     | DES                           | Betegnelse                       | Identificerer en overskriftslinje eller en tom linje i en rapport. |
     | LFT RGT CEN                   | Venstre Højre Centreret                 | Justerer rækkebeskrivelsesteksten på rapportsiden, uanset placeringen af teksten i kolonnedefinitionen. |
     | CBR                           | Rediger basisrække                   | Identificerer en række, der angiver basisrækken for kolonneberegninger. |
@@ -175,7 +174,7 @@ I kolonnen **Formatkode** i en rækkedefinition, anvender formatkoderne **DES**,
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Eksempel på at forhindre udskrivning af rækker
 
-I følgende eksempel ønsker Gitte at forhindre, at overskriften og understregningstegn i rækken **Total kontant** i sin rapport udskrives, fordi der ikke var aktivitet i nogen af kassekontiene. Derfor angiver hun i række 220 (der, som formatkoden **---** angiver, er en formateringsrække) i cellen **Relaterede formler/rækker/enheder** **250**, som er rækkekoden for den beløbsrække, hun ønsker at undertrykke.
+I følgende eksempel ønsker en bruger at forhindre, at overskriften og understregningstegn i rækken **Total kontant** i sin rapport udskrives, fordi der ikke var aktivitet i nogen af kassekontiene. Derfor angiver brugeren i række 220 (der, som formatkoden **---** angiver, er en formateringsrække) i cellen **Relaterede formler/rækker/enheder** **250**, som er rækkekoden for den beløbsrække, brugeren ønsker at undertrykke.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -416,7 +415,7 @@ Som standard udskriver rapportdesigneren ikke rækker, der ikke har en tilsvaren
 3. Gå til menuen **Filer**, og klik på **Gem** for at gemme ændringerne.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Bruge jokertegn og intervaller i en rækkedefinition
-Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\***, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som **60** og **600000**. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet.
+Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\**_, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som _* 60** og **600000**. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet.
 
 > [!NOTE]
 > Du bør undgå at bruge jokertegn for start- og slutkonti i intervaller. Hvis du bruger jokertegn i den første konto eller den sidste konto, får du måske uventede resultater.

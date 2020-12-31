@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181835"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688311"
 ---
 # <a name="generate-financial-reports"></a>Generere økonomiske rapporter
 
@@ -98,7 +97,7 @@ Hvis du vil slette en rapporttidsplan, skal du være ejer af rapporttidsplanen e
 
 Hvis du ikke angiver legitimationsoplysninger, der kræves for alle selskaber, der indgår i rapporterne, modtager du følgende meddelelse, når du gemmer rapporttidsplanen: "Du skal angive dine legitimationsoplysninger for de selskaber, der er indeholdt i denne rapporttidsplan. Vælg knappen Tilladelser for at indtaste dine legitimationsoplysninger."
 
-Phyllis logger f.eks. på firma A ved hjælp af sit brugernavn og sin adgangskode. Hun opretter en tidsplan for en rapport, der bruger en definition for et rapporteringstræ, for at indsamle data fra flere firmaer. Når denne rapporttidsplan er gemt, bliver Phyllis bedt om at indtaste legitimationsoplysninger for det andet firma, som er angivet i trædiagramdefinitionen. Når dine legitimationsoplysninger udløber, genereres de berørte rapporter i rapporttidsplanen ikke, før legitimationsoplysningerne er blevet opdateret. Der vises en meddelelse i rapporteringskøen for at angive, at tilladelser skal opdateres. Rapporttidsplanen mislykkes, hvis en af følgende situationer opstår (fordi de kræver legitimationsoplysninger):
+En bruger logger f.eks. på firma A ved hjælp af et brugernavn og en adgangskode. Brugeren opretter en tidsplan for en rapport, der bruger en definition for et rapporteringstræ, for at indsamle data fra flere firmaer. Når denne rapporttidsplan er gemt, bliver brugeren bedt om at indtaste legitimationsoplysninger for det andet firma, som er angivet i trædiagramdefinitionen. Når dine legitimationsoplysninger udløber, genereres de berørte rapporter i rapporttidsplanen ikke, før legitimationsoplysningerne er blevet opdateret. Der vises en meddelelse i rapporteringskøen for at angive, at tilladelser skal opdateres. Rapporttidsplanen mislykkes, hvis en af følgende situationer opstår (fordi de kræver legitimationsoplysninger):
 
 - En ny virksomhed er blevet føjet til en rapporttræ for en individuel rapport.
 - En rapport i en rapportgruppe er blevet ændret.

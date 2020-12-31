@@ -3,7 +3,7 @@ title: Identificere og installere kandidatudvælgelsesværktøjer
 description: Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besætte ledige stillinger, specielt når en stilling kræver et specielt sæt færdigheder.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143943"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693058"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identificere og installere kandidatudvælgelsesværktøjer
 
@@ -39,9 +38,9 @@ Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besæ
 7. Klik på Stilling.
 8. Indtast eller vælg en værdi i feltet Job.
 9. Klik på OK.
-10. Udvid oversigtspanelet for områder, og tilføj eventuelle yderligere oplysninger, f.eks. afdeling.
-11. Udvid oversigtspanelet for certifikater for at få vist eller redigere certifikaterne.
-12. Udvid oversigtspanel Færdigheder for at få vist eller rediger færdighederne.
+10. Udvid oversigtspanelet Område, og tilføj eventuelle yderligere oplysninger, f.eks. afdeling.
+11. Udvid oversigtspanelet Certifikater for at få vist eller redigere certifikaterne.
+12. Udvid oversigtspanel Færdigheder for at få vist eller redigere færdighederne.
 13. Udvid oversigtspanelet Uddannelse for at få vist eller redigere uddannelseskriterierne.
 14. Klik på Udfør.
 15. Klik på OK.
@@ -49,7 +48,7 @@ Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besæ
 17. Klik på Resultat.
 18. Klik på Fortsæt.
 19. Klik på Certifikater.
-    * Du kan analysere yderligere ned til hver person, der er angivet, og se detaljer om deres uddannelse, færdigheder, faglige erfaring osv.  
+    * Du kan analysere yderligere ned til hver person, der er angivet, og se detaljer om deres uddannelse, færdigheder og faglige erfaring.  
 20. Luk siden.
 21. Luk siden.
 22. Vælg resultatet igen.

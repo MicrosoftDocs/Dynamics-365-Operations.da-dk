@@ -3,7 +3,7 @@ title: Designe en konfiguration til generering af dokumenter i Excel-format
 description: Dette emne giver oplysninger om, hvordan du kan designe et ER-format (Electronic reporting) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e889b08f10c5d0c95fed7c9e422340706bdd154a
-ms.sourcegitcommit: 67ce81c57194afb26a04ae4c0b7509e0efa32afc
+ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3375807"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686532"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -165,6 +164,17 @@ Når du validerer et ER-format, der kan redigeres, sker der en konsistenskontrol
 
 ![Validering og fejlmeddelelse](./media/er-excel-format-validate.png)
 
+## <a name="control-the-calculation-of-excel-formulas"></a>Styre beregningen af Excel-formler
+
+Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan visse celler i dette dokument indeholde Excel-formler. Når funktionen **Aktivér brug af EPPlus-bibliotek i den elektroniske rapporteringsstruktur** er aktiveret, kan du styre, hvornår formlerne beregnes, ved at ændre værdien i [parameteren](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) **Beregningsindstillinger** i den Excel-skabelon, der bruges:
+
+- Vælg **Automatisk** for at genberegne alle afhængige formler, hver gang et genereret dokument føjes til nye områder, celler osv.
+    >[!NOTE]
+    > Dette kan forårsage et problem med ydeevnen for Excel-skabeloner, der indeholder flere relaterede formler.
+- Vælg **Manuel** for at undgå genberegning af formler, når der genereres et dokument.
+    >[!NOTE]
+    > Genberegning af formler gennemtvinges manuelt, når et genereret dokument åbnes med henblik på visning i Excel.
+    > Brug ikke denne indstilling, hvis du konfigurerer en ER-destination, der forudsætter brug af et genereret dokument uden visning i Excel (PDF-konvertering, afsendelse af mail osv.), da det genererede dokument muligvis ikke indeholder værdier i celler, der indeholder formler.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

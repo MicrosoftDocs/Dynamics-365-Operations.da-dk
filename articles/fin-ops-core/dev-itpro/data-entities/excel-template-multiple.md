@@ -1,6 +1,6 @@
 ---
 title: Importere data fra Excel-dataenhedsskabeloner, der har flere regneark
-description: I dette emne beskrives, hvordan du kan importere data ved hjælp af Excel-dataenhedsskabeloner i Finance and Operations.
+description: I dette emne beskrives, hvordan du kan importere data til Finance and Operations ved hjælp af Excel-dataenhedsskabeloner.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: e27b657d3d38ace158bcf4481d1445195147816b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181950"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688073"
 ---
 # <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importere data fra Excel-dataenhedsskabeloner, der har flere regneark
 

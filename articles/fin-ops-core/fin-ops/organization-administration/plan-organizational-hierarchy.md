@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177063"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694683"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlægge dit organisationshierarki
 
@@ -157,11 +156,11 @@ Hvis du udformer det regionale kontor som en driftsenhed, følger fakturaen og b
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Hvis organisationen er udformet som en juridisk enhed
 
-En juridisk enhed er underlagt myndighedernes skattelovgivning i det land/område, hvor den juridiske enhed er registreret. En juridisk enhed, der er registreret i Danmark, er f.eks. underlagt danske skattelove og bestemmelser. En juridisk enhed kan kun høre under ét land/område. Det land/område, du har valgt til den primære adresse for den juridiske enhed, bestemmer, hvilke lande-/områdespecifikke funktioner der er tilgængelige for den pågældende juridiske enhed. Hvis den juridiske enheds primære adresse f.eks. er i Danmark, bliver funktioner, der er relateret til danske skattelove og bestemmelser, tilgængelige. Hvis dine organisationer er i forskellige lande/områder og kræver forskellige lokale skatteindstillinger, skal du derfor konfigurere organisationerne som særskilte juridiske enheder.
+En juridisk enhed er underlagt myndighedernes skattelovgivning i det land/område, hvor den juridiske enhed er registreret. En juridisk enhed, der er registreret i Danmark, er f.eks. underlagt danske skattelove og bestemmelser. En juridisk enhed kan kun høre under ét land/område. Det land/område, du har valgt til den primære adresse for den juridiske enhed, bestemmer, hvilke land/område-specifikke funktioner der er tilgængelige for den pågældende juridiske enhed. Hvis den juridiske enheds primære adresse f.eks. er i Danmark, bliver funktioner, der er relateret til danske skattelove og bestemmelser, tilgængelige. Hvis dine organisationer er i forskellige lande/områder og kræver forskellige lokale skatteindstillinger, skal du derfor konfigurere organisationerne som særskilte juridiske enheder.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Hvis organisationen er udformet som en driftsenhed
 
-Driftsenheder hører under samme land/område som den overordnede juridiske enhed. Driftsenheder i samme juridiske enhed ikke kan have forskellige lande-/områdespecifikke krav. Hvis dine organisationer er i samme land/område og bruger de samme indstillinger for skat, kan du oprette dem som driftsenheder.
+Driftsenheder hører under samme land/område som den overordnede juridiske enhed. Driftsenheder i samme juridiske enhed ikke kan have forskellige land/område-specifikke krav. Hvis dine organisationer er i samme land/område og bruger de samme indstillinger for skat, kan du oprette dem som driftsenheder.
 
 ### <a name="statutory-reporting-for-a-countryregion"></a>Lovpligtig rapportering for et land/område
 

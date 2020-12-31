@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d01a784b0f0cbfce30f1197278f015b236ef0b8
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698138"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693276"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaber for arbejdsgang
 
@@ -37,7 +36,7 @@ Du kan konfigurere egenskaberne for en arbejdsgang ved at åbne arbejdsgangen i 
 Udfør følgende trin for at angive et navn på arbejdsgangen.
 
 1. Klik på **Grundlæggende indstillinger** i venstre rude.
-2. Angiv et entydigt navn til arbejdsgangen i feltet **Navn**. Hvis du f.eks. opretter en arbejdsgang for indkøbsrekvisitioner for hvert land eller område, du opererer i, kan du navngive arbejdsgangen for indkøbsrekvisitioner **Indkøbsrekvisitioner Danmark** eller **Indkøbsrekvisitioner Spanien**.
+2. Angiv et entydigt navn til arbejdsgangen i feltet **Navn**. Hvis du f.eks. opretter en arbejdsgang for indkøbsrekvisitioner for hvert land/område, du opererer i, kan du navngive arbejdsgangen for indkøbsrekvisitioner **Indkøbsrekvisitioner Danmark** eller **Indkøbsrekvisitioner Spanien**.
 
 ## <a name="specify-the-workflow-owner"></a>Angive ejer af arbejdsgang
 
@@ -79,7 +78,7 @@ Du kan angive instruktioner til brugere, der sender dokumenter til behandling og
 
 Du kan oprette flere arbejdsgange, der er baseret på samme arbejdsgangtype. Når der findes flere arbejdsgange, der er baseret på samme type, skal du angive, hvornår den enkelte arbejdsgang bruges vha. aktiveringsbetingelser. Hvis aktiveringsbetingelserne ikke er opfyldt, bruges standardarbejdsgangen. Hvis der kun er defineret én arbejdsgangskonfiguration for en arbejdsgangstype, vil den pågældende arbejdsgangskonfiguration også blive brugt uanset aktiveringsbetingelserne.
 
-Du kan f.eks. oprette en arbejdsgang for indkøbsrekvisitioner for hvert land eller område, som du opererer i, f.eks. Indkøbsrekvisitioner Danmark eller Indkøbsrekvisitioner Spanien, med følgende betingelser:
+Du kan f.eks. oprette en arbejdsgang for indkøbsrekvisitioner for hvert land/område, som du opererer i, f.eks. Indkøbsrekvisitioner Danmark eller Indkøbsrekvisitioner Spanien, med følgende betingelser:
 
 - Indkøbsrekvisitioner Danmark bruges når: land/område = DK
 - Indkøbsrekvisitioner Spanien bruges når: land/område = ES

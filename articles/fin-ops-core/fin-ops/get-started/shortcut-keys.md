@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.openlocfilehash: 2c5b25ea3bc91ac427d0d57db45fbc4169895d3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013174"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693719"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -33,7 +32,7 @@ Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste d
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
-Nogle af genvejene på denne side er *tasteakkorder* , hvilket betyder, at de kræver to på hinanden følgende sæt tastekombinationer (adskilt af komma), der skal trykkes på uafhængigt af hinanden for at udløse den påkrævede handling. F.eks. kræver genvejen "Alt + M, A", at brugeren først trykker på "Alt + M", slipper tasterne og trykker på "A". 
+Nogle af genvejene på denne side er *tasteakkorder*, hvilket betyder, at de kræver to på hinanden følgende sæt tastekombinationer (adskilt af komma), der skal trykkes på uafhængigt af hinanden for at udløse den påkrævede handling. F.eks. kræver genvejen "Alt + M, A", at brugeren først trykker på "Alt + M", slipper tasterne og trykker på "A". 
 
 ## <a name="finding-a-shortcut"></a>Søge efter en genvej
 

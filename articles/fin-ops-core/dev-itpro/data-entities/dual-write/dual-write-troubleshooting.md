@@ -1,6 +1,6 @@
 ---
 title: Generel fejlfinding
-description: Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Common Data Service.
+description: Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997248"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688253"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Common Data Service.
+
+Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
@@ -42,7 +44,7 @@ Nogle versioner af Package Deployer-værktøjet er inkompatible med pakken til d
 
 Når du har installeret Package Deployer-værktøjet, skal du installere løsningspakken ved at følge disse trin.
 
-1. Hent den seneste fil med løsningspakken fra Yammer.com. Når zip-filen med pakken er hentet, skal du højreklikke på den og vælge **Egenskaber**. Markér afkrydsningsfeltet **Ophæv blokering** , og vælg derefter **Anvend**. Hvis du ikke kan se afkrydsningsfeltet **Ophæv blokering** , er blokeringen af zip-filen allerede fjernet, og du kan springe dette trin over.
+1. Hent den seneste fil med løsningspakken fra Yammer.com. Når zip-filen med pakken er hentet, skal du højreklikke på den og vælge **Egenskaber**. Markér afkrydsningsfeltet **Ophæv blokering**, og vælg derefter **Anvend**. Hvis du ikke kan se afkrydsningsfeltet **Ophæv blokering**, er blokeringen af zip-filen allerede fjernet, og du kan springe dette trin over.
 
     ![Dialogboksen Egenskaber](media/unblock_option.png)
 
@@ -51,41 +53,41 @@ Når du har installeret Package Deployer-værktøjet, skal du installere løsnin
     ![Indhold af mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
 
 3. Indsæt alle de kopierede filer i mappen **Tools** i Package Deployer-værktøjet. 
-4. Kør **PackageDeployer.exe** for at vælge Common Data Service-miljøet og installere løsningerne.
+4. Kør **PackageDeployer.exe** for at vælge Dataverse-miljøet og installere løsningerne.
 
     ![Indhold af mappen Tools](media/paste_copied_files.png)
 
-## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Aktivere og åbne plug-in-sporingslogge i Common Data Service for at få vist oplysninger om fejl
+## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivere og åbne plug-in-sporingslogge i Dataverse for at få vist oplysninger om fejl
 
 **Følgende rolle er påkrævet for at kunne aktivere sporingsloggen og få vist fejl:** systemadministrator
 
 Udfør følgende trin for at aktivere sporingsloggen.
 
-1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger** , og vælg derefter **Administration** under **System**.
+1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
 2. På siden **Administration** skal du vælge **Systemindstillinger**.
 3. Under fanen **Tilpasning** i feltet **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
 
 
 Udfør følgende trin for at få vist sporingsloggen.
 
-1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger** , og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
+1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
 2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block** -teksten i oversigtspanelet **Udførelse**.
+3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finance and Operations-apps
 
-**Påkrævet rolle for at få vist fejl** : Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Common Data Service, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
+**Påkrævet rolle for at få vist fejl**: Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Dataverse, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
 
 1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i enheden **DualWriteProjectConfiguration**. Åbn enheden **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
 
     > [!TIP]
-    > En nem måde at åbne objektet på er at slå **Design** -tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
+    > En nem måde at åbne objektet på er at slå **Design**-tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
 
 2. Indstil egenskaben **IsDebugMode** til **Ja** for projektet.
 3. Kør det scenario, der genererer fejl.
 4. De detaljerede logfiler er tilgængelige i tabellen DualWriteErrorLog. Hvis du vil slå data op i tabelbrowseren, skal du bruge følgende URL-adresse (Erstat **XXX** efter behov):
 
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfejl på den virtuelle maskine for Finance and Operations-appen
 
@@ -99,12 +101,12 @@ Udfør følgende trin for at få vist sporingsloggen.
 6. Vælg **Logfiler for programmer og tjenester \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operationel**.
 7. Gennemse listen over seneste fejl.
 
-## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Fjerne sammenkædning og sammenkæde med et andet Common Data Service-miljø fra en Finance and Operations-app
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Fjerne sammenkædning og sammenkæde med et andet Dataverse-miljø fra en Finance and Operations-app
 
-**Påkrævet rolle for at fjerne miljøtilknytningen:** Systemadministrator for enten Finance and Operations-app eller Common Data Service.
+**Påkrævet rolle for at fjerne miljøtilknytningen:** Systemadministrator for enten Finance and Operations-app eller Dataverse.
 
 1. Log på Finance and Operations-appen.
-2. Gå til **Arbejdsområder \> Datastyring** , og vælg feltet **Dobbeltskrivning**.
+2. Gå til **Arbejdsområder \> Datastyring**, og vælg feltet **Dobbeltskrivning**.
 3. Vælg alle kørende tilknytninger, og vælg derefter **Stop**.
 4. Vælg **Ophæv sammenkædning af miljø**.
 5. Vælg **Ja** for at bekræfte operationen.
@@ -118,5 +120,5 @@ Når du opretter en salgsordre i Dynamics 365 Sales, kan klik på **+ Tilføj pr
 Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge disse trin:
 1. Naviger til objektet **Ordrelinje**.
 2. Find formularen **Oplysninger** under formularernoden. 
-3. Vælg formularen **Oplysninger** , og klik på **Aktivér sikkerhedsroller**. 
+3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**. 
 4. Ret sikkerhedsindstillingen til **Vis for alle**.

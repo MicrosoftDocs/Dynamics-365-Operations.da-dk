@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002537"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686239"
 ---
 # <a name="view-and-design-financial-reports"></a>Vise og designe økonomirapporter
 
@@ -164,7 +163,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du vil tilføj
 14. Luk **Konsolideret balance og resultatopgørelse side om side**.
 15. Luk **Report Designer**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Øvelse 5: Opret en side om side-afdelingsrapport
+## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Øvelse 5: Opret en afdelingsrapport side om side
 I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resultatopgørelse side om side. Du skal bruge en eksisterende rækkedefinition, men du kan oprette en ny rapportdefinition, og en ny kolonnedefinition, der bruger dimensionsfiltre. Vi starter fra listen over økonomiske rapporter.
 
 1. Gå til **Økonomirapporter** under Forespørgsler og rapporter i Finans.
@@ -195,6 +194,6 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Økonomirapportering](../../../finance/general-ledger/financial-reporting-getting-started.md)
 
-[Se økonomiske rapporter](../../../finance/general-ledger/view-financial-reports.md)
+[Vis økonomiske rapporter](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting-blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics 365 Finance-blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

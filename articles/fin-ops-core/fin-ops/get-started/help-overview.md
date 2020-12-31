@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367332"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695133"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -49,7 +48,7 @@ Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.mic
 
 Du kan finde indhold på docs.microsoft.com ved hjælp af en søgemaskine. For at få de bedste resultater anbefaler vi, at du bruger en webstedssøgning som f.eks. **site:docs.microsoft.com dynamics 365 "søgeord"**.
 
-### <a name="get-notified-about-changes-through-an-rss-feed"></a>Få besked om ændringer via et RSS-feed
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få besked om ændringer via et RSS-feed
 
 Hvis du vil abonnere på et RSS-feed (Really Simple Syndication) af alle opdateringer, der er til indholdet på docs.microsoft.com, skal du bruge følgende link:
 
@@ -68,7 +67,7 @@ Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til
 > [!NOTE]
 > Hvis du vil sende feedback om dokumentation, skal du logge på ved hjælp af en GitHub-konto. Få flere oplysninger i [Indstille og administrere din GitHub-profil](https://help.github.com/github/setting-up-and-managing-your-github-profile).
 
-### <a name="contribute-to-the-documentation"></a>Bidrag til dokumentationen
+## <a name="contribute-to-the-documentation"></a>Bidrag til dokumentationen
 
 Du kan bidrage til og foretage redigeringer til dokumentationen. For at komme i gang skal du vælge knappen **Rediger** (blyantsymbol) på et emne. Følgende video viser, hvordan du kan bidrage til vores dokumentation.
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 490a4f6d1bd9f3bdb0af09bd4e6f7f8fb2c92a1b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984268"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688228"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI-indhold til Salgs og rentabilitetsperformance
 
@@ -51,7 +50,7 @@ Rentabiliteten kan analyseres på disse måder:
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet **Salgs og rentabilitetsperformance** vises på siden **Salgs og rentabilitetsperformance** (**Salg og marketing** \> **Forespørgsler og rapporter** \> **Performanceanalyse for salg** \> **Salgs og rentabilitetsperformance**).
 
-## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indholdet
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indholdet
 Power BI-indholdet til **Salgs- og rentabilitetsperformance** omfatter en rapport, der består af et sæt nøgletal. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i indholdet.
 
 | Rapportside            | Diagrammer                                     | Felter                                                   |

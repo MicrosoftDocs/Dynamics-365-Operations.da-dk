@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 91243
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 5d72eaa28cfe3d114d2ab48cb1e477074a8bf739
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811476"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693252"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
@@ -162,7 +161,7 @@ Denne funktion fungerer uafhængigt af andre efterkalkulationsmetoder, der er kn
 <td>Få vist reguleringer af afslutningsark og ultimoposter i separate kolonner på <strong>Råbalance</strong> listesiden.</td>
 <td>Brugeren ser begge typer transaktioner i en enkelt kolonne.</td>
 <td>En ekstra parameter er føjet til <strong>Råbalance</strong> listesiden.</td>
-<td>Det giver mulighed for mere præcis analyse af data og er også nødvendig ved regulerende rapportering i nogle lande.</td>
+<td>Det giver mulighed for mere præcis analyse af data og er også nødvendig ved regulerende rapportering i nogle lande/områder.</td>
 </tr>
 <tr>
 <td>Bruge den nye <strong>Global finanskladde</strong> side.</td>
@@ -426,10 +425,10 @@ Der er ikke blevet tilføjet nye funktioner.
 </thead>
 <tbody>
 <tr>
-<td>Konfigurere og oprette elektroniske dokumenter for at opfylde de lovgivningsmæssige krav i forskellige lande.</td>
+<td>Konfigurere og oprette elektroniske dokumenter for at opfylde de lovgivningsmæssige krav i forskellige lande/områder.</td>
 <td>Elektroniske dokumenter er hard-coded i X ++ eller som XSLT (Extensible Stylesheet Language Transformations). Eventuelle formatreguleringer kræver udviklingsarbejde. Adgang til data og formatering er ikke isoleret. En justeret formatinstallation kræver en ny Microsoft Dynamics AX-hotfixpakke, der tilsidesætter det eksisterende format. Brugerdefinerede ændringer af hvert format skal overføres manuelt til kildekoden til en ny Microsoft Dynamics AX-hotfixpakke.</td>
 <td>Elektronisk rapportering (ER) er et nyt værktøj til konfiguration og generering af elektroniske dokumenter, der er målrettet en forretningsbruger i stedet for en udvikler. Med ER kan du oprette datamodeller, der er specifikke for domænet og uafhængigt af Microsoft Dynamics AX-databasen som datakilder for dokumentformater. En forretningsbruger kan konfigurere formaterne baseret på disse domænespecifikke datamodeller (f.eks. af betalinger, Intrastat-rapporter eller skatterapporter). Brugeren konfigurerer formaterne ved hjælp af enkle visuelle værktøjer, der svarer nogenlunde til Excel. ER understøtter på nuværende tidspunkt oprettelse af elektroniske dokumenter i tekst-, XML- og Excel-formater. Disse dokumenter kan oprettes samtidig og pakket i zip-filer. Datamodeller og formater understøtter versionering. Formatversioner kan have gyldighedsperioder. Hver datamodel eller formatversion gemmes i en separat konfiguration og distribueres til partnere og kunder via LCS. Partnere og kunder kan tilpasse Microsoft-datamodeller og -formater eller kan oprette deres egne. ER gemmer partner- og konfigurationsændringer, som deltaer til Microsoft-konfigurationer, hvilket forenkler opgraderinger til nye versioner af Microsoft-konfigurationer. Ved hjælp af LCS kan partnere også dele deres datamodel- og formatkonfigurationer med andre partnere og kunder, der kan tilpasse og dele dem. Deltatilpasning og nem opgradering understøttes gennem hele tilpasningskæden.</td>
-<td>ER forenkler oprettelse, vedligeholdelse og opgradering af elektroniske dokumentformater for at opfylde forskrifterne i forskellige lande. ER gør processen til oprettelse eller ændring af elektroniske dokumentformater hurtigere og nemmere. Disse ændringer kan foretages af forretningsbrugere i stedet for udviklere. ER gør det hurtigere og nemmere for partnere og kunder at opgradere deres formattilpasninger til nye versioner af formater, der er udgivet af Microsoft eller andre partnere. ER er én fælles måde (via LCS), som Microsoft og partnere kan distribuere elektroniske dokumentkonfigurationer til andre partnere og kunder. ER gør det også nemmere for partnere og kunder at tilpasse, opgradere og distribuere elektroniske dokumentformater for deres specifikke forretningskrav.</td>
+<td>ER forenkler oprettelse, vedligeholdelse og opgradering af elektroniske dokumentformater for at opfylde forskrifterne i forskellige lande/områder. ER gør processen til oprettelse eller ændring af elektroniske dokumentformater hurtigere og nemmere. Disse ændringer kan foretages af forretningsbrugere i stedet for udviklere. ER gør det hurtigere og nemmere for partnere og kunder at opgradere deres formattilpasninger til nye versioner af formater, der er udgivet af Microsoft eller andre partnere. ER er én fælles måde (via LCS), som Microsoft og partnere kan distribuere elektroniske dokumentkonfigurationer til andre partnere og kunder. ER gør det også nemmere for partnere og kunder at tilpasse, opgradere og distribuere elektroniske dokumentformater for deres specifikke forretningskrav.</td>
 </tr>
 <tr>
 <td>(MEX) Generere mexicanske lovpligtige momsrapporter.</td>
@@ -475,7 +474,7 @@ Der er ikke blevet tilføjet nye funktioner.
 </tr>
 <tr>
 <td>(EU) Konfigurere indstillinger for afrunding for EU-listesystemet.</td>
-<td>Afrundingsindstillinger for rapportering i EU-listesystemet for forskellige lande er hard-coded i X ++ eller XSLT'er (Extensible Stylesheet Language Transformations).</td>
+<td>Afrundingsindstillinger for rapportering i EU-listesystemet for forskellige lande/områder er hard-coded i X ++ eller XSLT'er (Extensible Stylesheet Language Transformations).</td>
 <td>Afrundingsindstillinger føjes til Udenrigshandelsparametre. Du kan konfigurere afrundingspræcision, afrundingsmetode, outputpræcision og funktionsmåden for beløb, der er mindre end afrundingspræcisionen.</td>
 <td>Dette samler og forenkler konfigurationen af rapporteringen i EU-listesystemet. Regulering af afrundingsindstillinger kræver ikke længere udviklingsarbejde.</td>
 </tr>
@@ -483,7 +482,7 @@ Der er ikke blevet tilføjet nye funktioner.
 <td>(EU) Konfigurere regler for anvendelse af modtagermoms.</td>
 <td>Anvendelighedsreglerne for modtagermoms er hard-coded til scenariet for indenlandsk modtagermoms. Tærsklen for anvendelighed kan konfigureres pr. varegruppe. Funktionaliteten er kun tilgængelige for Storbritannien.</td>
 <td>Du kan konfigurere anvendelighedsregler for modtagermoms pr. dokumenttype (købs-/salgsordre, kreditorfaktura, fritekstfaktura osv.) og en gruppe for modtagermoms, der kombinerer varer, varegrupper og købs-/salgskategorier. Anvendelighedsreglerne er for gældende dato. Du kan også markere enkelte momskoder i momsgrupper som gældende for modtagermoms. Salgsfakturarapporten justeres, så den repræsenterer oplysningerne om den anvendte modtagermoms. Funktionen er tilgængelig for alle europæiske lande/områder.</td>
-<td>Denne ændring ensretter konfigurationen af anvendelighedsreglerne for modtagermoms og understøtter anvendelsen af forordningerne for indenlandsk modtagermoms i europæiske lande.</td>
+<td>Denne ændring ensretter konfigurationen af anvendelighedsreglerne for modtagermoms og understøtter anvendelsen af forordningerne for indenlandsk modtagermoms i europæiske lande/områder.</td>
 </tr>
 <tr>
 <td>(DE) Generere den tyske revisionsfil - GDPdUGoBD</td>
@@ -505,7 +504,7 @@ Der er ikke blevet tilføjet nye funktioner.
 </tr>
 <tr>
 <td>(EU) Konfigurere indstillinger for afrunding for Intrastat.</td>
-<td>Afrundingsindstillinger for rapportering i Intrastat for forskellige lande er hard-coded i X ++ eller XSLT'er (Extensible Stylesheet Language Transformations).</td>
+<td>Afrundingsindstillinger for rapportering i Intrastat for forskellige lande/områder er hard-coded i X ++ eller XSLT'er (Extensible Stylesheet Language Transformations).</td>
 <td>Afrundingsindstillinger føjes til udenrigshandelsparametre. Du kan konfigurere afrundingspræcision, afrundingsmetode, outputpræcision og funktionsmåden for beløb, der er mindre end afrundingspræcisionen.</td>
 <td>Dette samler og forenkler konfigurationen af rapporteringen i Intrastat. Regulering af afrundingsindstillinger kræver ikke længere udviklingsarbejde.</td>
 </tr>
@@ -541,7 +540,7 @@ u<td>Intrastat-varekoder er en separat liste. Der er kategorihierarki af typen V
 | Hvad kan du gøre? | Dynamics AX 2012 |
 |------------------|------------------|
 | Udfør en kontrol af materialetilgængelighed til produktionsordrer på en separat side, der åbnes fra arbejdsområdet **Administration af produktion**. | Ikke tilgængelig |
-| Starte og rapportere status på produktionsjob ved hjælp af den nye side **Jobkortenhed**. | Formularen **Jobregistrering**er primært målrettet større terminalskærme, og der er typisk adgang til brugergrænsefladen via museklik. |
+| Starte og rapportere status på produktionsjob ved hjælp af den nye side **Jobkortenhed**. | Formularen **Jobregistrering** er primært målrettet større terminalskærme, og der er typisk adgang til brugergrænsefladen via museklik. |
 
 ## <a name="master-planning-and-forecasting"></a>Varedisponering og prognose
 
@@ -735,7 +734,7 @@ Retail Server og administration af data gør det muligt for forbrugere og virkso
 </tr>
 <tr>
 <td>Flytte data mellem Microsoft Dynamics AX-administration og kanaler ved hjælp af Commerce Data Exchange.</td>
-<td>Commerce Data Exchange er et system, som overfører data mellem Microsoft Dynamics AX og detailkanaler, som f.eks. onlinebutikker eller fysiske butikker. Du kan finde flere oplysninger i <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange er et system, som overfører data mellem Microsoft Dynamics AX og detailkanaler, som f.eks. onlinebutikker eller fysiske butikker. Du kan få flere oplysninger på <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Der er funktionel paritet med Microsoft Dynamics AX 2012 CU8. Men bemærk følgende oplysninger:
 <ul>
 <li>Commerce Data Exchange er blevet omarbejdet til skyen.</li>
@@ -839,7 +838,7 @@ Retail tilbyder fængslende mobiloplevelser hvor som helst, når som helst og p�
 <ul>
 <li>Enhedsaktivering ved hjælp af AAD</li>
 <li>Responsivt layoutdesign</li>
-<li>Understøttelse af Edge-, Internet Explorer- og Chrome-browsere.</li>
+<li>Understøttelse af Microsoft Edge-, Internet Explorer- og Chrome-browsere.</li>
 </ul></td>
 <td>Det giver en webapp-POS, der indeholder funktioner, der er kompatible med MPOS, og som kan bruges på tværs af platforme og browsere uden omkostninger til installation.</td>
 </tr>
@@ -1031,6 +1030,6 @@ Der er ikke blevet tilføjet nye funktioner.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Nyheder eller ændringer på startside for Finance and Operations](whats-new-changed.md)
+[Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)
 
 [Nye opgaveguider (februar 2016)](new-task-guides-available-february-2016.md)

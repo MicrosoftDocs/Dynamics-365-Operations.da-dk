@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248707"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695109"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Konfigurere og installere selvstudium til Regression Suite Automation Tool
 Dette emne er et selvstudium, der hjælper dig med konfigurere og komme i gang med RSAT og de værktøjer, der er knyttet til brugen af RSAT. 
@@ -387,7 +386,7 @@ Hvis du vil aktivere godkendelse, skal du generere og installere et certifikat p
 
     ![AOSService på listen over websteder](./media/setup_rsa_tool_49.png)
 
-3. Højreklik på **Stifinder** for at åbne mappen **\<Drev\>: \\AosService\\WebRoot**. Find filen **wif.config**.
+3. Højreklik på **Stifinder** for at åbne mappen **\<Drive\>: \\AosService\\WebRoot**. Find filen **wif.config**.
 
     ![Filen wif.config i mappen WebRoot](./media/setup_rsa_tool_50.png)
 
@@ -407,7 +406,7 @@ Hvis du vil aktivere godkendelse, skal du generere og installere et certifikat p
     ```
 
     > [!NOTE]
-    > Hvis flere brugere benytter samme program, skal hver bruger oprette separate aftryk, og hvert af disse aftryk skal tilføjes i sektionen **\<nøgler\>**.
+    > Hvis flere brugere benytter samme program, skal hver bruger oprette separate aftryk, og hvert af disse aftryk skal tilføjes i sektionen **\<keys\>**.
 
 5. Hvis der er mere end én AOS-computer, skal du gentage trin 3 til 4 for hver ekstra computer.
 
@@ -477,7 +476,7 @@ I ældre versioner af RSAT skulle du installere Selenium- og browserdrivere. Du 
 
     ![Knappen Tilføj eksisterende](./media/setup_rsa_tool_57.png)
 
-2. På siden **Føj testsager til pakke** skal du vælge **Kør forespørgsel**og derefter vælge den testsag, der skal føjes til testpakken. I dette selvstudium skal du vælge **Opret et nyt produkt** som testsag. Vælg derefter **Tilføj testsager** i nederste højre hjørne af siden (denne knap vises ikke i følgende illustration).
+2. På siden **Føj testsager til pakke** skal du vælge **Kør forespørgsel** og derefter vælge den testsag, der skal føjes til testpakken. I dette selvstudium skal du vælge **Opret et nyt produkt** som testsag. Vælg derefter **Tilføj testsager** i nederste højre hjørne af siden (denne knap vises ikke i følgende illustration).
 
     ![Knappen Kør forespørgsel](./media/setup_rsa_tool_58.png)
 
@@ -563,7 +562,7 @@ I ældre versioner af RSAT skulle du installere Selenium- og browserdrivere. Du 
 
     ![Skrivebordsopløsning angivet til 100 %](./media/setup_rsa_tool_68.png)
 
-6. Hvis browserdriverne ikke er installeret i systemet, får du vist en advarselsmeddelelse om, at "Denne handling kræver driveren \<browsernavn\>. Vil du downloade og installere den automatisk nu?" Vælg **Ja**.
+6. Hvis browserdriverne ikke er installeret i systemet, får du vist en advarselsmeddelelse om, at "Denne handling kræver driveren \<browser name\>. Vil du downloade og installere den automatisk nu?" Vælg **Ja**.
 
     ![Advarselsmeddelelse for Internet Explorer](./media/setup_rsa_tool_69.png)
 

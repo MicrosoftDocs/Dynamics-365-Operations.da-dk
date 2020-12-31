@@ -3,7 +3,7 @@ title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835080"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693768"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner, der kan bruges til at forbedre brugernes produktivitet, oprette mere interessante visninger af dine data og få meningsfuld indsigt i dine data. Denne artikel dækker følgende funktioner: 
 
@@ -95,21 +95,23 @@ Som en produktivitetsbooster kan brugerne indtaste matematiske formler i numeris
 Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Du kan få flere oplysninger om de understøttede operatorer og den understøttede syntaks i [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere data i tabelformat
-[!include [preview banner](../includes/preview-banner.md)]
+Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er offentligt tilgængelig i version 10.0.16/platformsopdatering 40 og afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
 
-Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **(Prøveversion) Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
-
-Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny **Gruppér efter kolonne** til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe: 
+Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny **Gruppér efter**-kolonne til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe: 
 -  Dataværdi for gruppen 
--  Kolonnenavn (disse oplysninger vil især være nyttige, når der understøttes grupper på flere niveauer).  
+-  Kolonnenavn (disse oplysninger vil især være nyttige, når du har flere grupperingsniveauer)  
 -  Antallet af datarækker i denne gruppe
 -  Subtotaler for enhver kolonne, der er konfigureret til at vise totaler
 
 Når [Gemte visninger](saved-views.md) er aktiveret, kan denne gruppering gemmes via tilpasning som del af en visning for at få hurtig adgang, når du næste gang besøger siden.  
 
-Hvis du vælger **Gruppér efter denne kolonne** for en anden kolonne, erstattes den oprindelige gruppering, da kun ét grupperingsniveau understøttes i version 10.0.9/Platform update 33.
+### <a name="multiple-levels-of-grouping"></a>Flere grupperingsniveauer
+Når du har grupperet data efter en enkelt kolonne, kan du gruppere dataene efter en anden kolonne ved at vælge **Gruppér efter denne kolonne** i den ønskede kolonne. Denne proces kan gentages, indtil du har fem indlejrede grupperingsniveauer, hvilket er den maksimalt understøttede dybde. Derefter kan du ikke længere gruppere efter yderligere kolonner.  
 
-Hvis du vil fortryde gruppering i et gitter, skal du højreklikke på grupperingskolonnen og vælge **Opdel gruppe**.  
+Du kan altid fjerne grupperingen efter en hvilken som helst kolonne ved at højreklikke på den pågældende kolonne og vælge **Opdel gruppe**. Du kan også fjerne grupperingen fra alle kolonner ved at vælge **Gitterindstillinger** og derefter **Opdele alle**.   
+
+Bemærk, at før version 10.0.16/platformsopdatering 40 understøttes der kun ét grupperingsniveau. Hvis dataene grupperes i disse versioner, og du vælger **Gruppér efter denne kolonne** for en anden kolonne, erstattes den oprindelige gruppe.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Udvide og skjule grupper
 Den oprindelige gruppering af data vil få alle grupper udvidet. Du kan oprette opsummerede visninger af dataene ved at skjule de enkelte grupper, eller du kan bruge gruppeudvidelse og skjulning som hjælp til at navigere gennem dataene. Hvis du vil udvide eller skjule en gruppe, skal du vælge knappen vinkeltegn (>) i den tilsvarende gruppeoverskriftsrække. Bemærk, at de enkelte gruppers udvidede/skjulte tilstand **ikke** gemmes i personlig tilpasning.
@@ -146,7 +148,7 @@ Funktionen **Nyt gitterkontrolelement** kan aktiveres i miljøer på niveau 1 (u
 
 Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktiveret.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde brug af det nye gitter for enkelte sider 
 Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API fra og med version 10.0.13/Platform update 37, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i `run()`-metoden for formularen.
 
  ```this.forceLegacyGrid();```
@@ -165,10 +167,26 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
     -  Der findes en grupperet kortliste på siden.
     -  En gitterkolonne med et ikke-reagerende kontrolelement, der kan udvides.
 
-    Når en bruger først støder på en af disse situationer, vises der en meddelelse om opdatering af siden. Når denne meddelelse vises, vil siden fortsat anvende det eksisterende gitter for alle brugere indtil den næste opdatering af produktversionen. En bedre håndtering af disse scenarier, så det nye gitter kan anvendes, vil blive betragtet som en fremtidig opdatering.     
+    Når en bruger først støder på en af disse situationer, vises der en meddelelse om opdatering af siden. Når denne meddelelse vises, vil siden fortsat anvende det eksisterende gitter for alle brugere indtil den næste opdatering af produktversionen. En bedre håndtering af disse scenarier, så det nye gitter kan anvendes, vil blive betragtet som en fremtidig opdatering.    
+    
+-  [KB 4582758] Poster er slørede, når du ændrer zoom fra 100 til en hvilken som helst anden procent
+    
+### <a name="fixed-as-part-of-10015"></a>Rettet i 10.0.15    
+
+-  [KB 4582723] Visningsindstillinger vises ikke, når det udføres senere i formularens livscyklus
+
+### <a name="fixed-as-part-of-10014"></a>Rettet i 10.0.14
+
+-  (Kvalitetsopdatering) [KB 4584752] Uventet klientfejl med siden med Projektfakturaforslag
 
 ### <a name="fixed-as-part-of-10013"></a>Rettet i 10.0.13
 
+-  (Kvalitetsopdatering) [KB 4583880] Regression Suite Automation Tool (RSAT) Test mislykkes på OpenLookup-handling med "Egenskaben RowIndex kan ikke læses af udefineret"
+-  (Kvalitetsopdatering) [KB 4583847] Uventet klientfejl ved navigering i opslag 
+-  (Kvalitetsopdatering) [Fejl 471777] Kan ikke vælge felter i et gitter for at redigere eller oprette en mobilapp
+-  [Fejl 474851] Hyperlinks i referencegruppekontrolelementer virker ikke 
+-  [Fejl 474848] Udvidede eksempler med gitre vises ikke
+-  [KB 4582726] Egenskaben RotateSign overholdes ikke  
 -  [Fejl 470173] Afkrydsningsfelter i inaktive rækker skifter, når der klikkes på blanktegnene i cellen
 -  [Fejl 474848] Udvidede eksempler med gitre vises ikke
 -  [Fejl 474851] Hyperlinks i referencegruppekontrolelementer virker ikke 
@@ -176,6 +194,7 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 -  [KB 4569441] Problemer med at gengive kortlister med flere kolonner, værktøjstip på billeder og visningsindstillinger på nogle felter
 -  [KB 4575279] Ikke alle markerede rækker slettes i finanskladden
 -  [KB 4575233] Visningsindstillinger gendannes ikke efter flytning til en anden række
+-  [Fejl 477884] Opslag returnerer den forkerte værdi/post, hvis det nye gitterkontrolelement er aktiveret
 -  [KB 4571095] Bogføring af produktkvittering sker ved utilsigtet tryk på Enter (korrekt håndtering af en sides standardhandling)
 -  [KB 4575437] Opslag med redigerbare kontrolelementer lukker uventet
 -  [KB 4569418] Dubleret linje oprettes i leveranceplanens formular
@@ -183,7 +202,7 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 -  [KB 4575434] Opslaget filtreres ikke, når feltet er blevet ændret
 -  [KB 4575430] Værdier i adgangskodefelter maskeres ikke i gitteret
 -  [KB 4569438] "Behandlingen er stoppet på grund af et valideringsproblem" vises efter afmærkningslinjer under udligning af leverandørtransaktioner
--  [KB 4569434] Når du opdaterer formularen juridiske enheder, er der færre poster
+-  [KB 4569434] Når du opdaterer formularen Juridiske enheder, er der færre poster
 -  [KB 4575297] Fokus bliver ved med at blive flyttet til ruden Arbejdsrutineoptager, når der redigeres og tabuleres gennem et gitter
 -  [KB 4566773] Korrektionstransaktioner vises ikke som negative på forespørgsel om bilagstransaktioner 
 -  [KB 4575288] Fokus nulstilles til den aktive række, når du markerer rammen mellem rækker på en simpel liste
@@ -198,22 +217,22 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 - [KB 4558572] Den formatering, der er knyttet til listepanelet **ExtendedStyle**, anvendes ikke.
 - [KB 4558573] Valideringsfejl kan ikke rettes, når den nødvendige ændring er uden for gitteret.
 - [KB 4558584] Negative tal gengives ikke korrekt.
-- [KB-4560726] Der opstår "en uventet klientfejl", efter at der er skiftet mellem lister ved hjælp af listevisningskontrol.
-- [KB-4562141] Gitterindeks er slået fra, efter at der er tilføjet en ny post.
+- [KB 4560726] Der opstår "en uventet klientfejl", efter at der er skiftet mellem lister ved hjælp af listevisningskontrol.
+- [KB 4562141] Gitterindeks er slået fra, efter at der er tilføjet en ny post.
 - [KB 4562151] Indstillingerne **Valider** og **Kopiér** i Arbejdsrutineoptager er ikke tilgængelige for dato- og nummerkontrolelementer. 
-- [KB-4562153] Afkrydsningsfelter med flere valg er ikke synlige på liste/kort-gitre.
+- [KB 4562153] Afkrydsningsfelter med flere valg er ikke synlige på liste/kort-gitre.
 - [KB 4562646] Undertiden kan du ikke klikke uden for gitteret, når du f.eks. vælger rækker i gitteret.
-- [KB-4562647] Fokus nulstilles til det første kontrolelement i dialogboksen **Publicer**, efter at der er tilføjet en ny række i sikkerhedsrollegitteret.
-- [KB-4563310] Den udvidede visning lukkes ikke, efter at en række er ændret.
-- [KB-4563313] Der opstår en "uventet klientfejl" i Internet Explorer, når der vælges en værdi i et opslag.
+- [KB 4562647] Fokus nulstilles til det første kontrolelement i dialogboksen **Publicer**, efter at der er tilføjet en ny række i sikkerhedsrollegitteret.
+- [KB 4563310] Den udvidede visning lukkes ikke, efter at en række er ændret.
+- [KB 4563313] Der opstår en "uventet klientfejl" i Internet Explorer, når der vælges en værdi i et opslag.
 - [KB 4564557] Opslag og rullemenuer åbnes ikke i Internet Explorer
-- [KB-4563324] Navigationen fungerer ikke, når arbejdsområdet **Personalestyring** er blevet åbnet.
+- [KB 4563324] Navigationen fungerer ikke, når arbejdsområdet **Personalestyring** er blevet åbnet.
 
 ### <a name="fixed-as-part-of-10011"></a>Rettet i 10.0.11
 
 - [Problem 432458] Tomme eller dublerede linjer vises i starten af nogle underordnede samlinger.
 - [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes korrekt, når det nye gitterkontrolelement er aktiveret.
-- [KB 4558374] Poster, der kræver dialogboks med polymorf vælger, kan ikke oprettes.
+- [KB 4558374] Poster, der kræver dialogboks med polymorfvælger, kan ikke oprettes.
 - [KB 4558375] Der vises ingen hjælpetekst på kolonner i det nye gitter.
 - [KB 4558376] Listepanelets gitre gengives ikke med den korrekte højde i Internet Explorer.
 - [KB 4558377] Kombinationsfeltkolonner, der har **SizeToAvailable**-bredde, gengives ikke på visse sider.
@@ -225,7 +244,7 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 - [KB 4558383] Kontrolelementer uden for gitteret opdateres ikke, når den sidste post er slettet.
 - [KB 4558587] Referencegrupper, der indeholder kombinationsbokse for erstatningsfelter, viser ikke værdier.
 - [KB 4562143] Felter opdateres ikke, når en rækkeændring/gitterbehandling sidder fast efter sletning af rækker.
-- [KB-4562645] Der opstår en undtagelse, når der åbnes et opslag, mens RSAT-test (Remote Server Administration Tools) kører.
+- [KB 4562645] Der opstår en undtagelse, når der åbnes et opslag, mens RSAT-test (Regression Suite Automation Tool) kører.
 
 ### <a name="fixed-as-part-of-10010"></a>Rettet i 10.0.10
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, ERParameters, ERMigrationCleanup
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 090badd48785dfacf5942426d0fe53629f3c0cda
-ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
+ms.openlocfilehash: edb60f247b2bd6cc4ecd514e3e85bafbb681788d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3321796"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686362"
 ---
 # <a name="er-migration-cleanup"></a>ER-overflytningsoprydning 
 
@@ -49,7 +48,7 @@ Gennemfør følgende trin for at løse problemer med ER-skabeloner, som du ikke 
 
 ## <a name="applicability"></a>Anvendelighed
 
-> (Vigtigt) Indstillingen **Overflytningsoprydning** er kun målrettet for ER-formatkonfigurationer, der indeholder ikke-tilgængelige ER-skabeloner. Når du sletter en ER-formatkonfiguration via indstillingen **Overflytningsoprydning**, sletter ER de skabeloner, der er relateret til konfigurationsartefakterne i den eneste programdatabase. Eksistensen af de relevante fysiske filer i blob-lageret kan ikke valideres. Det antages i stedet, at der ikke er nogen. Brug derfor ikke indstillingen **Overflytningsoprydning** som et alternativ til indstillingen for ER-konfigurationssletning på siden **Konfigurationer**. Brug kun indstillingen **Overflytningsoprydning**, når indstillingen for ER-konfigurationssletning på siden **Konfigurationer** mislykkedes.
+> [Vigtigt!] Indstillingen **Migreringsoprydning** er kun målrettet for ER-formatkonfigurationer, der indeholder ikke-tilgængelige ER-skabeloner. Når du sletter en ER-formatkonfiguration via indstillingen **Overflytningsoprydning**, sletter ER de skabeloner, der er relateret til konfigurationsartefakterne i den eneste programdatabase. Eksistensen af de relevante fysiske filer i blob-lageret kan ikke valideres. Det antages i stedet, at der ikke er nogen. Brug derfor ikke indstillingen **Overflytningsoprydning** som et alternativ til indstillingen for ER-konfigurationssletning på siden **Konfigurationer**. Brug kun indstillingen **Overflytningsoprydning**, når indstillingen for ER-konfigurationssletning på siden **Konfigurationer** mislykkedes.
 >
 > Hvis du bruger indstillingen **Overflytningsoprydning** til at slette en ER-formatkonfiguration, når skabelonen, der refereres til, er tilgængelig i blob-lageret, sletter du kun relaterede konfigurationsartefakter i programdatabasen. Den fysiske fil i skabelonen i blob-lageret slettes ikke. Filoverskrivning i blob-lageret er ikke længere tilladt. Du kan finde flere oplysninger i [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Derudover kan du ikke længere genimportere de konfigurationer, der er slettet, ved hjælp af overflytningsoprydningen i dette miljø. Du kan dette problem ved at finde den tilsvarende fil i blob-lageret og slette den manuelt.
 

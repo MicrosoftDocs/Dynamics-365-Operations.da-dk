@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 168cef1b5f5d48cb739b08fa395c1bcd62089494
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893357"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686717"
 ---
 # <a name="generate-printable-fti-forms"></a>Generere FTI-formularer, der kan udskrives
 
@@ -153,33 +152,33 @@ I øjeblikket understøtter dette ER-eksempelformat følgende funktioner til at 
 - Genererede fakturaer viser alle oplysninger om forudbetaling, der er tilgængelige for bogførte fakturaer.
 - Genererede fakturaformularer kan sendes til en fakturakunde som vedhæftet fil i en mail. Den korrekte ER-fildestination skal konfigureres til det ER-format, der bruges.
 
-### <a name="countryregion-specific-features"></a>Funktioner, der er specifikke for landet/området 
-De følgende lande-/områdespecifikke funktioner findes i ER-eksempelformatet for at vise, hvordan bestemte krav kan håndteres i ER-konfigurationer.
+### <a name="countryregion-specific-features"></a>Funktioner, der er land/område-specifikke 
+De følgende land/område-specifikke funktioner findes i ER-eksempelformatet for at vise, hvordan bestemte krav kan håndteres i ER-konfigurationer.
 
 #### <a name="norway"></a>Norge
 Termen Virksomhedsregister udskrives i overskriften på den genererede fakturaformular, når fakturaen behandles for en juridisk enhed, der er konfigureret på følgende måde:
 
-- Land/region-konteksten for Norge bruges.
+- Land/område-konteksten for Norge bruges.
 - Parameteren **Udskriv Foretaksregisteret** er aktiv på salgsdokumenter.
 
 #### <a name="spain"></a>Spanien
 Termen **Særlig ordning for kontantregnskabsmetode** udskrives i overskriften på den genererede fakturaformular, når fakturaen behandles for en juridisk enhed, der er konfigureret på følgende måde:
 
-- Land/region-konteksten for Spanien bruges.
+- Land/område-konteksten for Spanien bruges.
 - Den særlige ordning for kontantregnskabsmetoden er aktiveret på datoen for fakturabehandlingen.
 
 Når oplysningerne om kasserabat, f.eks. kasserabatbeløbet og nettobeløb for fakturalinje, er tilgængelige, præsenteres de i sektionen fakturatotaler i den genererede fakturaformular, når den behandles for en juridisk enhed, der er konfigureret på følgende måde:
 
-- Land/region-konteksten for Spanien bruges.
+- Land/område-konteksten for Spanien bruges.
 - **Der anvendes kasserabat på fakturaen** er aktiveret i faktureringsindstillingen (**Økonomiparametre** \> **Afsnittet Moms**).
 
 #### <a name="italy"></a>Italien
-Mærket for varerabat medtages på fakturalinjerne for den genererede faktura, når den behandles for en juridisk enhed, der er konfigureret ved hjælp af land/region-konteksten for Italien.
+Mærket for varerabat medtages på fakturalinjerne for den genererede faktura, når den behandles for en juridisk enhed, der er konfigureret ved hjælp af land/område-konteksten for Italien.
 
 #### <a name="finland"></a>Finland
 Ud over den genererede fakturaformular kan giroindbetalingskort genereres på følgende måde:
 
-- For den juridiske enhed, der bruger land/region-konteksten for Finland, og som har mindst én bankkonto, der er markeret som **Girokonto** og **Bankstregkode**. 
+- For den juridiske enhed, der bruger land/område-konteksten for Finland, og som har mindst én bankkonto, der er markeret som **Girokonto** og **Bankstregkode**. 
 - For en faktura, der er markeret som krævet til det tilknyttede **Finske** betalingsbilag.
 
 ![Girokort](media/FTIbyGER-GiroSlip.PNG)

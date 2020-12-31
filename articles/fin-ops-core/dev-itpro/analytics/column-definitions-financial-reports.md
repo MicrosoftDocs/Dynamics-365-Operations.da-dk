@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3a92970f2e3639090f51cf9e59ffcb148e210494
-ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
+ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4011627"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687224"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
 
@@ -38,7 +37,7 @@ En kolonnedefinition kan indeholde 2-255 kolonner.
 ### <a name="create-a-column-definition"></a>Oprette en kolonnedefinition
 
 1. Klik på **Kolonnedefinitioner** i navigationsruden i Report Designer.
-2. Klik på **Ny** i menuen **Filer** , og klik derefter på **Kolonnedefinition**.
+2. Klik på **Ny** i menuen **Filer**, og klik derefter på **Kolonnedefinition**.
 3. Tilføj indholdet af kolonnedefinitionen.
 
 ### <a name="open-a-column-definition"></a>Åbne en kolonnedefinition
@@ -112,11 +111,11 @@ I nedenstående tabel beskrives koderne for kolonnebegrænsning.
 
 | Kolonnebegrænsningskode | Beskrivelse |
 |-------------------------|-------------|
-| SU                      | Skjul understregning for en kolonne, hvor en kommando til understregning ( **---** ) eller en kommando til dobbelt understregning ( **===** ) er angivet i rækkedefinitionen. Du kan for eksempel ikke understrege beløb, der er produceret ved en procentberegning. |
+| SU                      | Skjul understregning for en kolonne, hvor en kommando til understregning (**---**) eller en kommando til dobbelt understregning (**===**) er angivet i rækkedefinitionen. Du kan for eksempel ikke understrege beløb, der er produceret ved en procentberegning. |
 | ST                      | Skjul totaler, så kun detaljer vises i kolonnen (for eksempel en statistisk kolonne). |
-| SD                      | Skjul detaljer, så kun **TOT** - og **CAL** -rækker (fra rækkedefinitionen) vises i kolonnen. |
-| DR                      | Begræns beløbene i en **FD** -kolonne til debetbeløb. |
-| CR                      | Begræns beløbene i en **FD** -kolonne til kreditbeløb. |
+| SD                      | Skjul detaljer, så kun **TOT**- og **CAL**-rækker (fra rækkedefinitionen) vises i kolonnen. |
+| DR                      | Begræns beløbene i en **FD**-kolonne til debetbeløb. |
+| CR                      | Begræns beløbene i en **FD**-kolonne til kreditbeløb. |
 | ADJ                     | Begræns beløbene i kolonnen til periodens reguleringsbeløb, hvis disse beløb er tilgængelige. |
 | XAD                     | Begræns beløbene i kolonnen, så periodens reguleringsbeløb udelades. |
 | PT                      | Begræns beløbene i kolonnen, så kun bogførte transaktioner medtages, hvis disse transaktioner er tilgængelige. |
@@ -170,10 +169,10 @@ Du kan bruge dialogboksen **Kolonneoverskrift** til at tilføje, redigere og sle
 
 ### <a name="create-an-automatically-generated-header"></a>Opret en automatisk genereret overskrift
 
-Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Autotekstkoder er variabler, der opdateres, hver gang der genereres en rapport. Alle kolonneoverskrifter kan indeholde disse koder for at angive rapportoplysninger, som kan variere, f.eks datoer eller perioder tal. Du kan derfor bruge en kolonnedefinitionen til flere rapportdefinitioner, tidsperioder og rapporteringstræer. Da autotekstkoder afhænger af kalenderoplysningerne fra detaljerækkerne i kolonnedefinitionen, understøttes de kun for kolonnerne **CALC** og **FD**. Den måde, en autotekstkode vises på i kolonneoverskriftscellen, påvirker, hvordan oplysningerne vises i rapporten. I dialogboksen **kolonneoverskrift** vises autotekstkoder i forskellige situationer. Derfor vises teksten i forskellige situationer i rapporten. I et standardkalenderår omdanner **\@CalMonthLong** f.eks. måned **7** til **juli**. Hvis navnet på måneden skal vises med store bogstaver (f.eks. **JULI** ), skal du angive autotekstkoden med store bogstaver i feltet **Tekst til kolonneoverskrift**. Du kan f.eks. skrive **\@CALMONTHLONG**. Du kan blande koder og tekst. Du kan for eksempel indtaste følgende overskriftstekst: **Periode \@FiscalPeriod-\@FiscalYear fra \@StartDate til \@EndDate**. Den rapportoverskrift, der genereres, ligner følgende tekst: **Periode 1-02 fra 01-01-02 til 01-31-02**.
+Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Autotekstkoder er variabler, der opdateres, hver gang der genereres en rapport. Alle kolonneoverskrifter kan indeholde disse koder for at angive rapportoplysninger, som kan variere, f.eks datoer eller perioder tal. Du kan derfor bruge en kolonnedefinitionen til flere rapportdefinitioner, tidsperioder og rapporteringstræer. Da autotekstkoder afhænger af kalenderoplysningerne fra detaljerækkerne i kolonnedefinitionen, understøttes de kun for kolonnerne **CALC** og **FD**. Den måde, en autotekstkode vises på i kolonneoverskriftscellen, påvirker, hvordan oplysningerne vises i rapporten. I dialogboksen **kolonneoverskrift** vises autotekstkoder i forskellige situationer. Derfor vises teksten i forskellige situationer i rapporten. I et standardkalenderår omdanner **\@CalMonthLong** f.eks. måned **7** til **juli**. Hvis navnet på måneden skal vises med store bogstaver (f.eks. **JULI**), skal du angive autotekstkoden med store bogstaver i feltet **Tekst til kolonneoverskrift**. Du kan f.eks. skrive **\@CALMONTHLONG**. Du kan blande koder og tekst. Du kan for eksempel indtaste følgende overskriftstekst: **Periode \@FiscalPeriod-\@FiscalYear fra \@StartDate til \@EndDate**. Den rapportoverskrift, der genereres, ligner følgende tekst: **Periode 1-02 fra 01-01-02 til 01-31-02**.
 
 > [!NOTE]
-> Formatet for noget af teksten, f.eks. den lange dato, afhænger af dine internationale indstillinger på serveren. Hvis du vil ændre disse indstillinger, skal du klikke på knappen **Start** , klikke på **Kontrolpanel** og derefter klikke på **Område og sprog**. I følgende tabel vises de tilgængelige indstillinger for autotekst til kolonneoverskrifter.
+> Formatet for noget af teksten, f.eks. den lange dato, afhænger af dine internationale indstillinger på serveren. Hvis du vil ændre disse indstillinger, skal du klikke på knappen **Start**, klikke på **Kontrolpanel** og derefter klikke på **Område og sprog**. I følgende tabel vises de tilgængelige indstillinger for autotekst til kolonneoverskrifter.
 
 
 | Indstilling og kode for autotekst                | Beskrivelse |
@@ -195,10 +194,10 @@ Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Au
 
 Betingede udbredelseshovedet spænder over flere kolonner, der er baseret på data for bestemte periode. Hvis du har en budgetrapport for regnskabsåret og ønsker at få vist de faktiske budgetter af forgangne måneder sammen med de forventede budgetter for de kommende måneder, kan du for eksempel bruge et betinget udbredelseshoved til at opdatere rapporthovedet automatisk. Vær opmærksom på følgende situationer, når du opretter en betinget spanning-overskrift:
 
-- Alle stopbetingelser (feltet **Opslag til** ), der er afstemt før startbetingelsen (feltet **Opslag fra** ) ignoreres. Eksempelvis har kolonne B defineret opslagsbetingelsen som BASE+ 1 til BASE, BASE er i kolonne C, og BASE+ 1 er i kolonne D. I dette tilfælde ignoreres stopbetingelsen i kolonne C, og udskrivningen af overskriften i kolonne D.
-- Hvis du angiver kolonneoverskrifter, der overlapper hinanden, overlapper de, når de udskrives på rapporten. Rapporten genereres, men følgende advarsel vises i feltet **Status for rapportkø** felt: "Kolonneoverskrifter, der anvender Base, overlapper andre kolonneoverskrifter og kan forårsage overlappende tekst". For eksempel er overskriftsdefinitionen på kolonne B B til BASE+1, og overskriftsdefinitionen i kolonne D er BASE+1 til F. I dette tilfælde udskrives overskrifter oven på hinanden og er ulæselige. Når BASE bruges i en definition af typen **Opslag fra/opslag til** , skal du sørge for at få vist den rapport, der er genereret, for at se, om overskrifterne overlapper hinanden.
-- Hvis du angiver BASE i definitionen af opslag i en kolonne, der ikke udskrives ( **NP** ), ignoreret det, uanset hvad der er defineret i kolonnedefinitionen. Dette scenario svarer i praksis til ikke at oprette en kolonneoverskriftsdefinition.
-- For betingede udskrivningskolonner ( **P &lt; B** , **P &gt; = B** ) opfører betingede udbredelseshoveder sig som almindelige kolonneoverskriftsdefinitioner. Hvis betingelsen for eksempel er falsk, starter alle efterfølgende kolonner, der matcher udbredelsesbetingelsen, udskrivningen af overskriften.
+- Alle stopbetingelser (feltet **Opslag til**), der er afstemt før startbetingelsen (feltet **Opslag fra**) ignoreres. Eksempelvis har kolonne B defineret opslagsbetingelsen som BASE+ 1 til BASE, BASE er i kolonne C, og BASE+ 1 er i kolonne D. I dette tilfælde ignoreres stopbetingelsen i kolonne C, og udskrivningen af overskriften i kolonne D.
+- Hvis du angiver kolonneoverskrifter, der overlapper hinanden, overlapper de, når de udskrives på rapporten. Rapporten genereres, men følgende advarsel vises i feltet **Status for rapportkø** felt: "Kolonneoverskrifter, der anvender Base, overlapper andre kolonneoverskrifter og kan forårsage overlappende tekst". For eksempel er overskriftsdefinitionen på kolonne B B til BASE+1, og overskriftsdefinitionen i kolonne D er BASE+1 til F. I dette tilfælde udskrives overskrifter oven på hinanden og er ulæselige. Når BASE bruges i en definition af typen **Opslag fra/opslag til**, skal du sørge for at få vist den rapport, der er genereret, for at se, om overskrifterne overlapper hinanden.
+- Hvis du angiver BASE i definitionen af opslag i en kolonne, der ikke udskrives (**NP**), ignoreret det, uanset hvad der er defineret i kolonnedefinitionen. Dette scenario svarer i praksis til ikke at oprette en kolonneoverskriftsdefinition.
+- For betingede udskrivningskolonner (**P &lt; B**, **P &gt; = B**) opfører betingede udbredelseshoveder sig som almindelige kolonneoverskriftsdefinitioner. Hvis betingelsen for eksempel er falsk, starter alle efterfølgende kolonner, der matcher udbredelsesbetingelsen, udskrivningen af overskriften.
 
 #### <a name="create-a-conditional-spanning-header"></a>Oprette et betinget udbredelseshoved
 
@@ -206,13 +205,13 @@ Betingede udbredelseshovedet spænder over flere kolonner, der er baseret på da
 2. Dobbeltklik på en overskriftscelle.
 3. I dialogboksen **kolonneoverskrift** skal du indtaste kolonneoverskriftsteksten. Du kan også klikke på **Indsæt autotekst** og vælge en indstilling.
 4. I feltet **Formateringsindstillinger** skal du vælge en formateringstypografi til overskriften.
-5. Angiv en periode i forhold til den basisperiode, der angives, når rapporten oprettes. I felterne **Opslag fra** og **Opslag til** skal du angive en af følgende værdier: **BASE** , **BASE-X** eller **BASE+X** , hvor X er antallet af perioder fra basisperioden. Hvis du for eksempel angiver **BASE** i feltet **Opslag fra** , starter overskriftsteksten i den betingede udbredelseskolonne i kolonneoverskriften, hvor rapportdefinitionens værdi **Basisperiode** svarer til kolonnedefinitionens værdi **BASE**. Den slutter i den kolonne, der er angivet i feltet **Opslag til**. Hvis opslaget er BASE til M, og rapportdefinitionens værdi for **Basisperiode** er **4** , starter overskriften i den kolonne, hvor perioden er angivet til **4** , og den slutter i kolonne M. Sidehoveder stopper og starter kun på udskrivningskolonner.
+5. Angiv en periode i forhold til den basisperiode, der angives, når rapporten oprettes. I felterne **Opslag fra** og **Opslag til** skal du angive en af følgende værdier: **BASE**, **BASE-X** eller **BASE+X**, hvor X er antallet af perioder fra basisperioden. Hvis du for eksempel angiver **BASE** i feltet **Opslag fra**, starter overskriftsteksten i den betingede udbredelseskolonne i kolonneoverskriften, hvor rapportdefinitionens værdi **Basisperiode** svarer til kolonnedefinitionens værdi **BASE**. Den slutter i den kolonne, der er angivet i feltet **Opslag til**. Hvis opslaget er BASE til M, og rapportdefinitionens værdi for **Basisperiode** er **4**, starter overskriften i den kolonne, hvor perioden er angivet til **4**, og den slutter i kolonne M. Sidehoveder stopper og starter kun på udskrivningskolonner.
 6. Under **Justering** skal du vælge, om kolonneoverskriftsteksten skal være venstrejusteret, centreret eller højrejusteret.
 7. Klik på **OK**.
 
 #### <a name="example-of-a-conditional-spanning-header"></a>Eksempel på et betinget udbredelseshoved
 
-Karina opretter en rapport til et dynamisk halvårligt budget. Hun vil have ordet "Faktisk" udskrevet over de kolonner, der indeholder faktiske data, og ordet "Budget" udskrevet over de kolonner, der indeholder budgetprognoser. Hver måned, hvor rapporten køres, er der én mere faktisk kolonne og én mindre budgetkolonne. Selvom Karina kan ændre kolonnedefinitionen manuelt, hver gang rapporten genereres, for at justere overskrifterne, beslutter hun for at spare tid og kræfter at oprette betingede udbredelseshoveder, der automatisk opretter overskrifter over de relevante kolonner, hver gang rapporten køres. Karina åbner Report Designer, klikker på **Kolonnedefinition** i navigationsruden og åbner kolonnedefinitionen for rapporten. Derefter indtaster hun følgende oplysninger. Basisperioden i rapportdefinitionen er 4.
+En bruger opretter en rapport til et dynamisk halvårligt budget. Brugeren vil have ordet "Faktisk" udskrevet over de kolonner, der indeholder faktiske data, og ordet "Budget" udskrevet over de kolonner, der indeholder budgetprognoser. Hver måned, hvor rapporten køres, er der én mere faktisk kolonne og én mindre budgetkolonne. Selvom brugeren kan ændre kolonnedefinitionen manuelt, hver gang rapporten genereres, for at justere overskrifterne, beslutter brugeren – for at spare tid og kræfter – sig for at oprette betingede udbredelseshoveder, der automatisk opretter overskrifter over de relevante kolonner, hver gang rapporten køres. Brugeren åbner Report Designer, klikker på **Kolonnedefinition** i navigationsruden og åbner kolonnedefinitionen for rapporten. Derefter indtaster brugeren følgende oplysninger. Basisperioden i rapportdefinitionen er 4.
 
 |      Formater         |  T   | B             | K             | N             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
@@ -227,7 +226,7 @@ Karina opretter en rapport til et dynamisk halvårligt budget. Hun vil have orde
 | Kolonnebredde        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Udskriftsstyring       |      | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        |
 
-Karina dobbeltklikker på en kolonneoverskriftscelle for at åbne dialogboksen **Kolonneoverskrift** , hvor hun skriver følgende oplysninger.
+Brugeren dobbeltklikker på en kolonneoverskriftscelle for at åbne dialogboksen **Kolonneoverskrift**, hvor brugeren skriver følgende oplysninger.
 
 | Felt              | Værdi                 |
 |--------------------|-----------------------|
@@ -239,7 +238,7 @@ Karina dobbeltklikker på en kolonneoverskriftscelle for at åbne dialogboksen *
 | Opslag til          | BASE                  |
 | Budgetoverskrift      | BASE+1 til slutkolonne  |
 
-Når Karina er færdig med at indtaste oplysninger, klikker hun på **OK**. Derefter dobbeltklikker hun på kolonneoverskriftscellen i kolonne C for at åbne dialogboksen **Kolonneoverskrift** , hvor hun skriver følgende oplysninger.
+Efter at have angivet oplysninger klikker brugeren på **OK**. Derefter dobbeltklikker brugeren på kolonneoverskriftscellen i kolonne C for at åbne dialogboksen **Kolonneoverskrift**, hvor brugeren skriver følgende oplysninger.
 
 | Felt              | Værdi                 |
 |--------------------|-----------------------|
@@ -265,7 +264,7 @@ Cellen **Justering** bruges til at anvende ændret formatering for en beskrivels
     - **Højre** – kolonnebeskrivelser højrejusteres.
 
 ## <a name="add-special-formatting-options"></a>Tilføje specielle formateringsindstillinger
-I kolonnedefinitionen anvender formateringskolonnedetaljerækkerne specialformatering for markerede kolonner. Selvom nogle af indstillingerne for **Udskriftsstyring** og **Kolonnebegrænsninger** er specifikke for **FD** -kolonner, gælder de fleste af indstillingerne for alle kolonnetyper. Den formatering, der er angivet i kolonnedefinitionen, tilsidesætter den formatering, der er angivet i rapportdefinitionen. Den formatering, der er angivet i rækkedefinitionen, tilsidesætter imidlertid den formatering, der er angivet i kolonnedefinitionen. Følgende rækker anses for at være formateringsrækker.
+I kolonnedefinitionen anvender formateringskolonnedetaljerækkerne specialformatering for markerede kolonner. Selvom nogle af indstillingerne for **Udskriftsstyring** og **Kolonnebegrænsninger** er specifikke for **FD**-kolonner, gælder de fleste af indstillingerne for alle kolonnetyper. Den formatering, der er angivet i kolonnedefinitionen, tilsidesætter den formatering, der er angivet i rapportdefinitionen. Den formatering, der er angivet i rækkedefinitionen, tilsidesætter imidlertid den formatering, der er angivet i kolonnedefinitionen. Følgende rækker anses for at være formateringsrækker.
 
 - Kolonnebredde
 - Ekstra mellemrum før kolonne
@@ -274,7 +273,7 @@ I kolonnedefinitionen anvender formateringskolonnedetaljerækkerne specialformat
 
 ### <a name="changing-the-column-width"></a>Ændre kolonnebredden
 
-Cellen **Kolonnebredde** angiver antallet af tegn, der skal bruges til bredden af kolonnen i den udskrevne rapport. Kolonnebredden er vigtig for kolonner, som indeholder beløb (kolonner af typen **CALC** , **WKS** eller **FD** ), beskrivelser (kolonner med den **DESC** type) eller fyld (kolonner af typen **FILL** ). Indstillingen **Autotilpas** er som standard valgt, så bredden af hver kolonne justeres automatisk, så den passer til indholdet.
+Cellen **Kolonnebredde** angiver antallet af tegn, der skal bruges til bredden af kolonnen i den udskrevne rapport. Kolonnebredden er vigtig for kolonner, som indeholder beløb (kolonner af typen **CALC**, **WKS** eller **FD**), beskrivelser (kolonner med den **DESC** type) eller fyld (kolonner af typen **FILL**). Indstillingen **Autotilpas** er som standard valgt, så bredden af hver kolonne justeres automatisk, så den passer til indholdet.
 
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>Angiv bredden på en kolonne i en rapport
 
@@ -309,11 +308,11 @@ Cellen **Udskriftsstyring** kan indeholde koder, der justerer visnings- eller ud
 | Kode til udskriftstyring | Oversættelse                                     | Beskrivelse |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Ingen udskrivning                                     | Beløbene i denne kolonne medtages ikke i beregninger og i rapporter, der udskrives. Hvis du vil medtage en kolonne, der ikke udskrives, i en beregning, skal du henvise direkte til kolonnen i formlen til beregning. Kolonnen C, der ikke udskrives, er for eksempel medtaget i følgende beregning: **B + C + D**. Derimod er kolonnen C, der ikke udskrives, ikke medtaget i følgende beregning: **B:D**. |
-| XCR                | Skift fortegn, hvis den typiske saldo for en række er et kreditbeløb | Opret et budget eller en sammenlignende rapport, hvor alle negative afvigelser (f.eks. en manko i omsætningen eller en overskridelse af en udgift) altid er negative. Anvend denne kode til en **CALC** -kolonne for at vende fortegnet på Kolonnebeløbet, hvis den normale saldo for en given række er et kreditbeløb (som angivet ved hjælp af et **C** i kolonnen **Normal saldo** i rækkedefinitionen).<p><strong>Bemærk:</strong> For <strong>TOT</strong>-rækker og </strong>CAL</strong>-rækker, der typisk har en kreditsaldo, skal du sørge for at angive et <strong>C</strong> i kolonnen <strong>Normal saldo</strong> i rækkedefinitionen.</p> |
-| X0                 | Skjul kolonne, hvis den kun indeholder nulværdier eller tomme værdier          | Medtag ikke en **FD** -kolonne i rapporten, hvis alle cellerne i denne kolonne enten er tomme eller indeholder nulværdiler. |
+| XCR                | Skift fortegn, hvis den typiske saldo for en række er et kreditbeløb | Opret et budget eller en sammenlignende rapport, hvor alle negative afvigelser (f.eks. en manko i omsætningen eller en overskridelse af en udgift) altid er negative. Anvend denne kode til en **CALC**-kolonne for at vende fortegnet på Kolonnebeløbet, hvis den normale saldo for en given række er et kreditbeløb (som angivet ved hjælp af et **C** i kolonnen **Normal saldo** i rækkedefinitionen).<p><strong>Bemærk:</strong> For <strong>TOT</strong>-rækker og </strong>CAL</strong>-rækker, der typisk har en kreditsaldo, skal du sørge for at angive et <strong>C</strong> i kolonnen <strong>Normal saldo</strong> i rækkedefinitionen.</p> |
+| X0                 | Skjul kolonne, hvis den kun indeholder nulværdier eller tomme værdier          | Medtag ikke en **FD**-kolonne i rapporten, hvis alle cellerne i denne kolonne enten er tomme eller indeholder nulværdiler. |
 | SR                 | Undertryk afrunding                               | Undgå, at beløbene i denne kolonne bliver afrundet. |
 | XR                 | Undertryk akkumulering                                 | Undertryk en akkumulering. Hvis rapporten bruger et rapporteringstræ, akkumuleres beløbene i denne kolonne ikke til efterfølgende overordnede noder. |
-| RP                 | Gentag kolonne på hver side                      | Gentag en bestemt kolonne på hver side i en rapport. Du kan for eksempel bruge koden **RP** for udskriftsstyring til at medtage en kolonne af typen **ROW** , der henter rækkekoder ind på hver side. |
+| RP                 | Gentag kolonne på hver side                      | Gentag en bestemt kolonne på hver side i en rapport. Du kan for eksempel bruge koden **RP** for udskriftsstyring til at medtage en kolonne af typen **ROW**, der henter rækkekoder ind på hver side. |
 | WT                 |  Ombryd tekst                                      |  Hvis teksten i en kolonne er for lang til at kunne være på den tilgængelige plads, kan du ombryde teksten for at beholde hele teksten i kolonnen. |
 
 #### <a name="conditional-print-control-codes"></a>Betingede koder til udskriftsstyring
@@ -339,7 +338,7 @@ Cellen **Udskriftsstyring** kan indeholde koder, der justerer visnings- eller ud
 > Du kan også angive udskriftskoderne direkte i cellen **Udskriftsstyring**. Adskil flere udskriftsstyringskoder med et komma.
 
 ## <a name="column-types"></a>Kolonnetyper
-Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med værdien i rækken **Kolonnetype** i kolonnedefinitionen. Hver kolonnedefinition skal indeholde mindst én beskrivelseskolonne ( **DESC** ) og en beløbskolonne ( **FD** , **WKS** eller **CALC** ).
+Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med værdien i rækken **Kolonnetype** i kolonnedefinitionen. Hver kolonnedefinition skal indeholde mindst én beskrivelseskolonne (**DESC**) og en beløbskolonne (**FD**, **WKS** eller **CALC**).
 
 > [!NOTE]
 > Koderne i kolonnetypen gælder ikke for alle regnskabssystemer. Hvis du vælger en type, der ikke er gyldig for dit regnskabssystem, er denne kolonne tom i rapporten.
@@ -441,7 +440,7 @@ Du kan gå ud over regnskabsårets grænser i en periodespecifikation, og du kan
 ### <a name="specify-the-periods-for-an-fd-column"></a>Angive perioderne for en FD-kolonne
 
 1. Åbn den kolonnedefinition, der skal redigeres, i Rapportdesigner.
-2. I en **FD** -kolonne skal du dobbeltklikke på cellen i rækken **Periode** og derefter vælge en indstilling på listen.
+2. I en **FD**-kolonne skal du dobbeltklikke på cellen i rækken **Periode** og derefter vælge en indstilling på listen.
 3. På formellinjen over navigationsruden eller i cellen **Periode** skal du udfylde formlen. Erstat et nummertegn (\#) med den relevante værdi.
 
 #### <a name="periods-covered-cell"></a>Cellen Perioder, der er omfattet
@@ -458,11 +457,11 @@ Cellen **Perioder, der er omfattet** angiver det beløb, som kolonnen skal vise.
 ### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a>Angive de perioder, der er omfattet for en FD-kolonne
 
 1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
-2. I en **FD** -kolonne skal du dobbeltklikke på cellen i rækken **Perioder, der er omfattet** og vælge en indstilling på listen.
+2. I en **FD**-kolonne skal du dobbeltklikke på cellen i rækken **Perioder, der er omfattet** og vælge en indstilling på listen.
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Filteret Attribut i en kolonnedefinition
 
-Attributter er økonomiske værdier, kan definerer en konto eller transaktion yderligere. Kontoattributterne omfatter **Aktiv** , **Passiv** , **Indtægt** og **Udgift**. Transaktionsattributterne omfatter **Beskrivelse af transaktionen** og **Dato for udførelse af transaktion**. Understøttelse af attributter kan variere fra et Microsoft Dynamics ERP-system til et andet. Cellen **Attributfilter** begrænser dataene i **FD** -kolonner til bestemte værdier eller intervaller for attributkategorier. Selvom denne funktion kan bruges sammen med en **ATTR** -kolonne, er **ATTR** -kolonne ikke påkrævet. I en **FD** -kolonne er der en grænse på de konti eller transaktioner, som rapporten medtager fra attributfilteret.
+Attributter er økonomiske værdier, kan definerer en konto eller transaktion yderligere. Kontoattributterne omfatter **Aktiv**, **Passiv**, **Indtægt** og **Udgift**. Transaktionsattributterne omfatter **Beskrivelse af transaktionen** og **Dato for udførelse af transaktion**. Understøttelse af attributter kan variere fra et Microsoft Dynamics ERP-system til et andet. Cellen **Attributfilter** begrænser dataene i **FD**-kolonner til bestemte værdier eller intervaller for attributkategorier. Selvom denne funktion kan bruges sammen med en **ATTR**-kolonne, er **ATTR**-kolonne ikke påkrævet. I en **FD**-kolonne er der en grænse på de konti eller transaktioner, som rapporten medtager fra attributfilteret.
 
 > [!NOTE]
 > For at se hvilke attributter dit ERP-system understøtter, skal du se integrationsvejledningen til dit system.
@@ -471,7 +470,7 @@ Attributter er økonomiske værdier, kan definerer en konto eller transaktion yd
 
 1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
 2. Dobbeltklik på cellen **Attributfilter** for en kolonne af typen **FD**.
-3. Dobbeltklik på en celle i kolonnen **Attribut** i dialogboksen **Attributfilter** , og vælg derefter filtertypen.
+3. Dobbeltklik på en celle i kolonnen **Attribut** i dialogboksen **Attributfilter**, og vælg derefter filtertypen.
 4. Du kan yderligere begrænse resultaterne ved at angive et interval i kolonnerne **Fra** og **Til**. Cellen **Fra** skal indeholde en værdi.
 5. Klik på **OK**.
 
@@ -493,7 +492,7 @@ Følgende eksempel viser en del af en beskrivelse af kolonne, der har en kontoat
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Filteret Dimension i en kolonnedefinition
 
-Et dimensionsfilter bruges til at begrænse **FD** -kolonnen til bestemte dimensionsværdier. Filteret kan omfatte en enkelt dimension, et interval af dimensioner eller en gruppe af dimensioner. Filteret kan også omfatte dimensionsværdigrupper. Eftersom dimensionsværdier kan variere, behøver et ..\\økonomiske dimensioner\\dimensionsbaseret system ikke at overholde en bestemt længde. Filteret anvendes, uanset om rapporten indeholder et rapporteringstræ. Du kan bruge jokertegn (\* eller ?) i en hvilken som helst placering. Når du angiver flere konti, skal du indsætte et komma mellem firmaer, som i følgende eksempel: +konto=\[1200\], +konto=\[1100\], afdeling=\[01?\] For at modtage alle afdelinger for en bestemt konto du kan udelukke afdelingsdimensionen fra dimensionsfilteret. De to følgende dimensionsfiltre håndteres for eksempel på samme måde:
+Et dimensionsfilter bruges til at begrænse **FD**-kolonnen til bestemte dimensionsværdier. Filteret kan omfatte en enkelt dimension, et interval af dimensioner eller en gruppe af dimensioner. Filteret kan også omfatte dimensionsværdigrupper. Eftersom dimensionsværdier kan variere, behøver et ..\\økonomiske dimensioner\\dimensionsbaseret system ikke at overholde en bestemt længde. Filteret anvendes, uanset om rapporten indeholder et rapporteringstræ. Du kan bruge jokertegn (\* eller ?) i en hvilken som helst placering. Når du angiver flere konti, skal du indsætte et komma mellem firmaer, som i følgende eksempel: +konto=\[1200\], +konto=\[1100\], afdeling=\[01?\] For at modtage alle afdelinger for en bestemt konto du kan udelukke afdelingsdimensionen fra dimensionsfilteret. De to følgende dimensionsfiltre håndteres for eksempel på samme måde:
 
 - +Konto = \[1100\], Afdeling
 - +Konto = \[1100\]
@@ -503,7 +502,7 @@ Du kan også bruge en kombination af alfanumeriske tegn for at opnå et nøjagti
 #### <a name="apply-a-dimension-filter-for-a-column-on-a-report"></a>Anvende et dimensionsfilter for en kolonne i en rapport
 
 1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
-2. Dobbeltklik på cellen **Dimensionsfilter** for en **FD** -kolonne.
+2. Dobbeltklik på cellen **Dimensionsfilter** for en **FD**-kolonne.
 3. I dialogboksen **Dimensioner** skal du angive de filtre, som skal anvendes.
 4. Klik på **OK**.
 
@@ -524,22 +523,22 @@ Benyt nedenstående fremgangsmåde for at bestemme en virksomheds regnskabsvalut
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Angiv valutaen i en rapport med flere valutaer
 
 1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
-2. Dobbeltklik på cellen **Visning af valuta** i den relevante **FD** -kolonne, og vælg derefter indstillingen for visning af valutaoplysninger: **Finansregnskabsvaluta** , **Valutaomregning** , posteringsvaluta eller vælg for at omregne til en anden rapporteringsvaluta.
-3. Dobbeltklik på cellen **Valutafilter** i den relevante **FD** -kolonne, og vælg derefter den relevante valutakode på listen. Det er kun transaktioner, der er angivet i denne valuta, der vises i rapporten.
+2. Dobbeltklik på cellen **Visning af valuta** i den relevante **FD**-kolonne, og vælg derefter indstillingen for visning af valutaoplysninger: **Finansregnskabsvaluta**, **Valutaomregning**, posteringsvaluta eller vælg for at omregne til en anden rapporteringsvaluta.
+3. Dobbeltklik på cellen **Valutafilter** i den relevante **FD**-kolonne, og vælg derefter den relevante valutakode på listen. Det er kun transaktioner, der er angivet i denne valuta, der vises i rapporten.
 
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Eksempel på cellerne Visning af valuta og Valutafilter
 
-Karina har foretaget følgende valg af valuta i sin definition af kolonne:
+En bruger har foretaget følgende valg af valuta i sin definition af kolonne:
 
 - **Valutafilter:** Yen
 - **Visning af valuta:** Regnskabsvaluta fra Finans (USD)
 
-På grund af det valutafilter, Karina har valgt, omfatter rapporten kun transaktioner, der er angivet i japanske yen (JPY). I rapporten vises Transaktionerne i regnskabsvalutaen, amerikanske dollar (USD), på grund af den visning af valuta, hun har valgt.
+På grund af det valutafilter, der er valgt, omfatter rapporten kun transaktioner, der er angivet i japanske yen (JPY). I rapporten vises transaktionerne i regnskabsvalutaen, amerikanske dollar (USD), på grund af den visning af valuta, der er valgt.
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinationer af Valutafilter og Visning af valuta
 
-Følgende tabel viser de rapportresultater, der kan forekomme ved forskellige kombinationer af indstillingerne i cellerne **Visning af valuta** og **Valutafilter** på grund af de valg, Karina har foretaget. Den funktionelle valuta er USD.
+Følgende tabel viser de rapportresultater, der kan forekomme ved forskellige kombinationer af indstillingerne i cellerne **Visning af valuta** og **Valutafilter** på grund af de valg, der er foretaget. Den funktionelle valuta er USD.
 
 
 | Cellen Visning af valuta                        | Cellen Valutafilter | Rapportresultat |
@@ -551,7 +550,7 @@ Følgende tabel viser de rapportresultater, der kan forekomme ved forskellige ko
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beregningskolonne i en kolonnedefinition
 
-Kolonnetypen **CALC** i en kolonnedefinition understøtter komplekse beregninger i cellen **Formel** og kan indeholde operatorerne **+** , **-** , **\*** og **/** og også **IF/THEN/ELSE** sætninger. En kolonne af typen beregning kan også henvise til en anden kolonne, endda efterfølgende kolonner. Desuden kan en beregningskolonne også omfatte regnskabsåret og -perioden til at understøtte kolonnens overskrifter. Beregningsformlen kan indeholde op til 1.024 alfanumeriske tegn. Hvis du vil udtrykke resultatet i procent, skal du bruge tilsidesættelse for specialformat.
+Kolonnetypen **CALC** i en kolonnedefinition understøtter komplekse beregninger i cellen **Formel** og kan indeholde operatorerne **+**, **-**, **\**_ og _*/** og også **IF/THEN/ELSE**-sætninger. En kolonne af typen beregning kan også henvise til en anden kolonne, endda efterfølgende kolonner. Desuden kan en beregningskolonne også omfatte regnskabsåret og -perioden til at understøtte kolonnens overskrifter. Beregningsformlen kan indeholde op til 1.024 alfanumeriske tegn. Hvis du vil udtrykke resultatet i procent, skal du bruge tilsidesættelse for specialformat.
 
 > [!NOTE]
 > Resultaterne af beregningsformlerne omfatter ikke værdierne i de kolonneområder, der ikke bliver udskrevet. For eksempel udskriver **A:D** **0** (nul), mens **A + B + C** for værdier, der ikke udskrives, beregner værdien.
@@ -571,7 +570,7 @@ Hvis du vil tilføje, fratrække, gange eller dividere kolonner, skal du angive 
 #### <a name="use-a-calculation-formula-in-a-column-definition"></a>Bruge en beregningsformel i en kolonnedefinition
 
 1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
-2. I den relevante **CALC** -kolonne skal du angive en formel i cellen **Formel**.
+2. I den relevante **CALC**-kolonne skal du angive en formel i cellen **Formel**.
 
 #### <a name="complex-calculations"></a>Komplekse beregninger
 
@@ -579,7 +578,7 @@ En kompleks beregning kan indeholde enhver kombination af cellereferencer, opera
 
 #### <a name="specify-report-cells-in-a-column-calculation"></a>Angive rapportceller i en kolonneberegning
 
-Du kan henvise til en bestemt rapportcelle ved at angive et kolonnebogstav og en rækkekode. For eksempel henviser **B.100** til rækkekode 100 i kolonne B. Du kan dividere en hel kolonne med et beløb i en bestemt rapportcelle i den samme kolonne. For eksempel angiver beregningen **B/B.100** , at beløbet i kolonne B skal divideres med værdien i rækkekode 100 i kolonne B. Hvis beregningen henviser til en kolonne, der afhænger af en anden kolonne, læses den afhængige kolonne først. Hvis du henviser en kolonne til en anden kolonne, der henviser til den første kolonne, opstår der en fejl på grund af en cirkulær reference.
+Du kan henvise til en bestemt rapportcelle ved at angive et kolonnebogstav og en rækkekode. For eksempel henviser **B.100** til rækkekode 100 i kolonne B. Du kan dividere en hel kolonne med et beløb i en bestemt rapportcelle i den samme kolonne. For eksempel angiver beregningen **B/B.100**, at beløbet i kolonne B skal divideres med værdien i rækkekode 100 i kolonne B. Hvis beregningen henviser til en kolonne, der afhænger af en anden kolonne, læses den afhængige kolonne først. Hvis du henviser en kolonne til en anden kolonne, der henviser til den første kolonne, opstår der en fejl på grund af en cirkulær reference.
 
 > [!NOTE]
 > Beregningen bliver måske forkert, hvis du ændrer rapportens beregningsprioritet. Du kan angive beregningsprioriteten på fanen **Indstillinger** i rapportdefinitionen.
