@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143309"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684274"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Oprette ER-krævede konfigurationer til at importere data fra en ekstern fil
 
@@ -84,7 +83,7 @@ Trinnene i denne underopgave viser, hvordan der kan oprettes en ny formatkonfigu
 3. Klik på Udvid/skjul.
 4. Klik på Udvid/skjul.
 
-    Det designede format repræsenterer den forventede struktur i den eksterne fil. Denne fil skal være i XML-format og have udligningsrodelementet. Hver kreditortransaktion er repræsenteret med det transaktionselement, der er defineret til at have en nul-til-mange multiplicitet. Dette betyder, at den indgående fil kan indeholde mellem nul og mange transaktioner. Indlejrede elementer i elementet "transaktion" repræsenterer attributter for en enkelt transaktion. Bemærk, at alle attributter, undtagen land, er markeret som obligatoriske, hvilket betyder, at de skal være i importfilen.   
+    Det designede format repræsenterer den forventede struktur i den eksterne fil. Denne fil skal være i XML-format og have udligningsrodelementet. Hver kreditortransaktion er repræsenteret med det transaktionselement, der er defineret til at have en nul-til-mange multiplicitet. Dette betyder, at den indgående fil kan indeholde mellem nul og mange transaktioner. Indlejrede elementer i elementet "transaktion" repræsenterer attributter for en enkelt transaktion. Bemærk, at alle attributter, undtagen land/område, er markeret som obligatoriske, hvilket betyder, at de skal være i importfilen.   
 
 ## <a name="review-the-settings-of-the-format-mapping-to-the-data-model"></a>Gennemse indstillingerne for formattilknytningen til datamodellen
 1. Klik på Knyt format til model.
@@ -98,11 +97,11 @@ Trinnene i denne underopgave viser, hvordan der kan oprettes en ny formatkonfigu
 
     Bemærk, at det designede format vises her som en datakildekomponent.  
 
-6. Udvid "format: Post\*udligning: XML-element 1..1 (udligning): Post" i træet.
-7. Udvid "format: Post\*udligning: XML-element 1..1 (udligning): Post\transaktion: XML-element 0..* (transaktion): Postliste" i træet.
-8. Udvid "format: Post\*udligning: XML-element 1..1 (udligning): Post\transaktion: XML-element 0..* (transaktion): Postliste\*kreditor: XML-element 1..1 (kreditor): Post" i træet.
-9. Udvid "format: Post\*udligning: XML-element 1..1 (udligning): Post\transaktion: XML-element 0..* (transaktion): Postliste\land: XML-element 0..1 (land): Post" i træet.
-10. Vælg "format: Post\*udligning: XML-element 1..1 (udligning): Post\transaktion: XML-element 0..* (transaktion): Postliste\*kreditor: XML-element 1..1 (kreditor): Post" i træet.
+6. Udvid `format: Record\*settlement: XML Element 1..1 (settlement): Record` i træet.
+7. Udvid `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list` i træet.
+8. Udvid `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` i træet.
+9. Udvid `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record` i træet.
+10. Vælg `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` i træet.
 
     Bemærk, at præsentationen af obligatoriske og valgfri formateringselementer er forskellig i den foruddefinerede "format"-datakildekomponent.  
 11. Udvid "Transaktioner: Postliste = format.settlement.'$enumerated" i træet.
@@ -142,7 +141,7 @@ Udfør denne formattilknytning af testformål. Brug filen 1099entries.xml, som d
 5. Udvid "model: Datamodel 1099-betalingsmodel" i træet.
 6. Udvid "model: Datamodel 1099-betalingsmodel\Transaktioner: Postliste" i træet.
 
-    Bemærk, at den designede model vises her som et datakildeelement. På kørselstidspunktet indeholder den de data, der importeres fra den eksterne fil. Der blev tilføjet flere tabeller som datakildeelementer for at sikre, at de importerede data er kompatible med dataene i det aktuelle program, herunder om kreditorkontoen for importtransaktionen er tilgængelig i systemet, om kombinationen af de importerende lande- og statskoder findes osv.  
+    Bemærk, at den designede model vises her som et datakildeelement. På kørselstidspunktet indeholder den de data, der importeres fra den eksterne fil. Der blev tilføjet flere tabeller som datakildeelementer for at sikre, at de importerede data er kompatible med dataene i det aktuelle program, herunder om kreditorkontoen for importtransaktionen er tilgængelig i systemet, om kombinationen af de importerende land/område- og statskoder findes osv.  
 
 7. Vælg "model: Datamodel 1099-betalingsmodel\Transaktioner: Postliste\$failed: Beregnet felt = IF(OR(ISEMPTY(model.Transactions.'$refs'.vendor), ISEMPTY(model.Transactions.'$refs'.vendor1099), ISEMPTY(model.Transactions.'$refs'.box1099), ISEMPTY(model.Transactions.'$refs'.country), ISEMPTY(model.Transactions.'$refs'.state), ISEMPTY(model.Transactions.'$refs'.location)), true, false): Boolean" i træet.
 8. Klik på Rediger.
@@ -237,7 +236,7 @@ Udfør denne formattilknytning af testformål. Brug filen 1099entries.xml, som d
 19. Luk siden.
 20. Klik på Rediger.
 
-    Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK modeltilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 Finance" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), skal du udføre næste trin "Slå flaget 'Standard for model-tilknytning' til" for den angivne formatkonfiguration. Ellers skal du springe næste trin over.  
+    Hvis du installerede hotfix "KB 4012871 Understøttelse af TYSK modeltilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), skal du udføre næste trin "Slå flaget 'Standard for model-tilknytning' til" for den angivne formatkonfiguration. Ellers skal du springe næste trin over.  
 
 21. Vælg Ja i feltet Standard for modeltilknytning.
 22. Vælg "1099-betalingsmodel" i træet.
@@ -245,7 +244,7 @@ Udfør denne formattilknytning af testformål. Brug filen 1099entries.xml, som d
 24. Klik på Tilknyt model til datakilde.
 25. Klik på Kør.
 
-    Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK model-tilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), skal du vælge den foretrukne modeltilknytning i opslagsfeltet. Hvis du endnu ikke har installeret hotfixet, skal du gå til næste trin, da tilknytningen allerede er valgt af definitionen af standardformatkonfigurationen.  
+    Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK modeltilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), skal du vælge den foretrukne modeltilknytning i opslagsfeltet. Hvis du endnu ikke har installeret hotfixet, skal du gå til næste trin, da tilknytningen allerede er valgt af definitionen af standardformatkonfigurationen.  
     
     Hvis du ikke har installeret hotfixet, KB 4012871, skal du være opmærksom på, at dialogboksen indeholder et yderligere spørgsmål om modeltilknytning, der bruges til at fortolke den fil, du importerer. Dataene overføres derefter fra dialogboksen til datamodellen. I øjeblikket kan du vælge, hvilken formattilknytning der skal anvendes, afhængigt af den filtype du vil importere.  
     

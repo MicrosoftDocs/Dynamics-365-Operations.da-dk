@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 0e87a3d645c19fab3bb0560ba5114d193e2d0be7
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997164"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683999"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interne aktiver til service
 
@@ -37,7 +37,7 @@ Du kan finde yderligere oplysninger i [Integrer Dynamics 365 Field Service og Su
 
 ## <a name="templates"></a>Skabeloner
 
-Interne aktiver indeholder en samling af centrale enhedstilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
+Interne aktiver indeholder en samling af centrale tabeltilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
 | Finance and Operations-apps | Modelstyrede apps i Dynamics 365 | Beskrivende tekst |
 |-----------------------------|-----------------------------------|-------------|

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 27a6745be62185b23a7e81c9aed78879e36b3a9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181720"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682715"
 ---
 # <a name="financial-report-components"></a>Komponenter i økonomisk rapport
 
@@ -58,7 +57,7 @@ Du kan bruge mapper til at organisere dine komponenter i Rapportdesigner. Alle m
 3. Når den nye mappe vises, skal du skrive navnet på den nye mappe, og derefter trykke på Enter.
 
 ## <a name="lock-a-building-block"></a>Låse en komponent
-Du kan oprette en adgangskode for at låse og hjælpe med at beskytte en dokumentkomponent. På denne måde kan du føje en grad af sikkerhed til en rapportkomponent, uden at hele systemet beskyttes. En adgangskode kan medvirke til at beskytte komponentoplysninger, der er vigtige for rapporteringsprocessen i forbindelse med månedsafslutningen. En bruger med en rolle kan låse en dokumentkomponent. Andre brugere har dog altid skrivebeskyttet adgang til en låst komponent. Brugere kan åbne, redigere og gemme den låste komponent under et nyt navn. En bruger med rollen administrator kan altid få adgang til og ændre en låst komponent.
+Du kan oprette en adgangskode for at låse og hjælpe med at beskytte en dokumentkomponent. På denne måde kan du føje en grad af sikkerhed til en rapportkomponent, uden at hele systemet beskyttes. En adgangskode kan medvirke til at beskytte komponentoplysninger, der er vigtige for rapporteringsprocessen i forbindelse med månedsafslutningen. En bruger med en hvilken som helst rolle kan låse en komponent. Andre brugere har dog altid skrivebeskyttet adgang til en låst komponent. Brugere kan åbne, redigere og gemme den låste komponent under et nyt navn. En bruger med rollen administrator kan altid få adgang til og ændre en låst komponent.
 
 1. Åbn den rapportkomponent, der skal låses, i Rapportdesigner, for eksempel en rækkedefinition, kolonnedefinition, rapportdefinition eller rapporteringstrædefinition.
 2. Klik på **Beskyt/Fjern beskyttelse** i menuen **Værktøjer**. Du kan også klikke på **Beskyt/Fjern beskyttelse** (låseikonet) på værktøjslinjen.
@@ -81,7 +80,7 @@ Du kan få vist alle de rapportkomponenter, der er knyttet til en rapportkompone
 
 ### <a name="export-a-building-block-group"></a>Eksportere en rapportkomponentgruppe
 
-Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe.Du kan bruge den eksporterede rapportkomponentgruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer.Rapportdesigner omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
+Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede komponentgruppe som sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer. Rapportdesigner omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
 
 1. Klik på **Komponentgrupper** i menuen **Regnskab** i Rapportdesigner.
 2. Markér den rapportkomponentgruppe, du vil eksportere, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Eksportér**.

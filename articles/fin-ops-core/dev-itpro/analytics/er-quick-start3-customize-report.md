@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c19fef3e62eec48e66f7cec824afee3ebb25209e
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088214"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683009"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurationer af elektroniske rapporter for at generere et elektronisk dokument
 
@@ -53,7 +52,7 @@ Procedurerne i dette emne forklarer, hvordan en bruger med rollen Systemadminist
 - [Anvend ændringerne på de nye versioner af ER-standardkonfigurationerne i dine brugerdefinerede ER-konfigurationer](#RebaseCustomERConfigurations).
 - [Tilføj, bogfør og send en debitorfaktura ved hjælp af nye versioner af brugerdefinerede ER-konfigurationer](#ProcessInvoice3).
 
-Alle disse procedurer kan udføres i **DEMF** -virksomheden.
+Alle disse procedurer kan udføres i **DEMF**-virksomheden.
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureER"></a>Konfigurere ER-strukturen
 
@@ -65,13 +64,13 @@ Som bruger af den elektroniske rapporteringskonsulent eller den elektroniske rap
 2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Parametre til elektronisk rapportering** i sektionen **Relaterede links**.
 3. På siden **Parametre til elektronisk rapportering** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktiver designtilstand** .
 4. Vælg **Fil** i feltet **Konfigurationer** under fanen **Vedhæftede filer**.
-5. I felterne **Jobarkiv** , **Midlertidig** , **Grundlag** og **Andre** skal du vælge typen **Fil**.
+5. I felterne **Jobarkiv**, **Midlertidig**, **Grundlag** og **Andre** skal du vælge typen **Fil**.
 
 Du kan finde flere oplysninger om ER-parametre under [Konfigurere ER-strukturen](electronic-reporting-er-configure-parameters.md).
 
 ### <a name="activate-an-er-configuration-provider"></a>Aktivere en udbyder af ER-konfigurationer
 
-Alle ER-konfigurationer, der tilføjes, er markeret som ejet af en udbyder af ER-konfigurationer. Den udbyder af ER-konfigurationer, der aktiveres i arbejdsområdet **Elektronisk rapportering** , bruges til dette formål. Du skal derfor aktivere en udbyder af ER-konfigurationer i arbejdsområdet **Elektronisk rapportering** , før du begynder at tilføje eller redigere ER-konfigurationer.
+Alle ER-konfigurationer, der tilføjes, er markeret som ejet af en udbyder af ER-konfigurationer. Den udbyder af ER-konfigurationer, der aktiveres i arbejdsområdet **Elektronisk rapportering**, bruges til dette formål. Du skal derfor aktivere en udbyder af ER-konfigurationer i arbejdsområdet **Elektronisk rapportering**, før du begynder at tilføje eller redigere ER-konfigurationer.
 
 > [!NOTE]
 > Det er kun ejeren af en ER-konfiguration, der kan redigere den. Før du kan redigere en ER-konfiguration, skal den relevante udbyder af ER-konfiguration aktiveres i arbejdsområdet **Elektronisk rapportering**.
@@ -94,7 +93,7 @@ Alle ER-konfigurationer, der tilføjes, er markeret som ejet af en udbyder af ER
 #### <a name="activate-an-er-configuration-provider"></a>Aktivere en udbyder af ER-konfigurationer
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. Gå til siden **Lokaliseringskonkfigurationer** , og vælg feltet **Litware, Inc.** i sektionen **Konfigurationsudbydere** , og vælg derefter **Angiv som aktive**.
+2. Gå til siden **Lokaliseringskonkfigurationer**, og vælg feltet **Litware, Inc.** i sektionen **Konfigurationsudbydere**, og vælg derefter **Angiv som aktive**.
 
 Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -104,7 +103,7 @@ Hvis du vil føje standard-ER-konfigurationerne til din aktuelle forekomst af Fi
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** skal du i sektionen **Konfigurationsudbydere** vælge feltet **Microsoft** og derefter vælge **Lagre** for at få vist listen over lagre for Microsoft-udbyderen.
-3. På siden **Konfigurationslagre** skal du vælge lageret for **Global** -typen og derefter vælge **Åbn**. Hvis du bliver bedt om at angive godkendelse for at oprette forbindelse til Regulatory Configuration Service, skal du følge godkendelsesvejledningen.
+3. På siden **Konfigurationslagre** skal du vælge lageret for **Global**-typen og derefter vælge **Åbn**. Hvis du bliver bedt om at angive godkendelse for at oprette forbindelse til Regulatory Configuration Service, skal du følge godkendelsesvejledningen.
 4. På siden **Konfigurationslager** skal du i konfigurationstræet i venstre rude vælge formatkonfigurationen **Peppol Salgsfaktura**.
 5. I oversigtspanelet **Versioner** skal du vælge version **11.2.2**.
 6. Vælg **Importér** for at downloade den valgte version fra det globale lager.
@@ -121,20 +120,20 @@ Hvis du vil føje standard-ER-konfigurationerne til din aktuelle forekomst af Fi
 3. På siden **Konfigurationer** skal du udvide oversigtspanelet **Konfigurationskomponenter**.
 4. I konfigurationstræet i venstre rude skal du udvide **Fakturamodel** og derefter udvide **UBL-salgsfaktura**.
 
-Bemærk, at der ud over det valgte **Peppol Salgsfaktura** -format, blev importeret andre påkrævede ER-konfigurationer. Da nye versioner af ER- konfigurationer løbende publiceres til det globale lager og LCS og for at holde de tilsvarende løsninger kompatible med de nye krav, blev de seneste versioner af konfigurationen af den påkrævede [datamodel](general-electronic-reporting.md#data-model-and-model-mapping-components) og den tilhørende [modeltilknytning](general-electronic-reporting.md#data-model-and-model-mapping-components) importeret.
+Bemærk, at der ud over det valgte **Peppol Salgsfaktura**-format, blev importeret andre påkrævede ER-konfigurationer. Da nye versioner af ER- konfigurationer løbende publiceres til det globale lager og LCS og for at holde de tilsvarende løsninger kompatible med de nye krav, blev de seneste versioner af konfigurationen af den påkrævede [datamodel](general-electronic-reporting.md#data-model-and-model-mapping-components) og den tilhørende [modeltilknytning](general-electronic-reporting.md#data-model-and-model-mapping-components) importeret.
 
 ![Siden Konfigurationer](./media/er-quick-start3-imported-solution1a.png)
 
 Hvis du vil simulere den tilstand, som ER-konfigurationer i den aktuelle Finance-forekomst ville være, hvis du har importeret version **11.2.2** af **Peppol Salgsfaktura** tidligere (f.eks. 7. august 2019), skal du følge disse trin.
 
-- I handlingsruden skal du vælge **Slet** for at slette alle de ER-konfigurationer, der er udgivet efter 7. august 2019. De eneste konfigurationer af **Fakturamodel** , **Fakturamodeltilknytning** (oprindeligt navngivet **Kundefakturamodeltilknytning** ), **UBL-salgsfaktura** og **Peppol Salgsfaktura** skal efterlades.
+- I handlingsruden skal du vælge **Slet** for at slette alle de ER-konfigurationer, der er udgivet efter 7. august 2019. De eneste konfigurationer af **Fakturamodel**, **Fakturamodeltilknytning** (oprindeligt navngivet **Kundefakturamodeltilknytning**), **UBL-salgsfaktura** og **Peppol Salgsfaktura** skal efterlades.
 - I oversigtspanelet **Versioner** skal du vælge **Slet** for at slette alle versioner af ER-konfigurationer, der er udgivet efter 7. august, 2019.
 
 Kontrollér derefter, at følgende ER-konfigurationer er tilgængelige i konfigurationstræet:
 
-- **Fakturamodel** som ER-datamodelkonfiguration (oprindeligt navngivet **Debitorfakturamodel** ):
+- **Fakturamodel** som ER-datamodelkonfiguration (oprindeligt navngivet **Debitorfakturamodel**):
 
-    - Version 11 indeholder version 10 af [datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components) som ER-komponent, der repræsenterer datastrukturen for domænet til fakturering. Denne ER-konfiguration er importeret som en forgænger til det ER-format for **Peppol Salgsfaktura** , der blev valgt til import.
+    - Version 11 indeholder version 10 af [datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components) som ER-komponent, der repræsenterer datastrukturen for domænet til fakturering. Denne ER-konfiguration er importeret som en forgænger til det ER-format for **Peppol Salgsfaktura**, der blev valgt til import.
     - Version 50 indeholder version 31 af ER-komponenten til datamodellen. Denne ER-konfiguration er importeret som en forgænger til versionen fra 7. august 2019 af ER-modeltilknytningskonfigurationen **Fakturamodeltilknytning**.
 
     ![Fakturamodel som ER-datamodelkonfiguration på siden Konfigurationer](./media/er-quick-start3-imported-solution1b1.png)
@@ -142,7 +141,7 @@ Kontrollér derefter, at følgende ER-konfigurationer er tilgængelige i konfigu
     > [!TIP]
     > Hvis du ikke kan se version 50 af denne datamodel, skal du åbne det globale lager og importere version 50.19 af ER-konfigurationen **Fakturamodeltilknytning**.
 
-- **Fakturamodeltilknytning** som ER-modeltilknytningskonfiguration (oprindeligt navngivet **Kundefakturamodeltilknytning** ):
+- **Fakturamodeltilknytning** som ER-modeltilknytningskonfiguration (oprindeligt navngivet **Kundefakturamodeltilknytning**):
 
     - Version 50.19 er blevet importeret som den seneste implementering af version 50 af **Fakturamodel** som ER-datamodelkonfigurationen. Den indeholder to [modeltilknytning](general-electronic-reporting.md#data-model-and-model-mapping-components)-ER-komponenter, der beskriver, hvordan datamodellen udfyldes med applikationsdata under kørslen.
 
@@ -153,7 +152,7 @@ Kontrollér derefter, at følgende ER-konfigurationer er tilgængelige i konfigu
 
 - **UBL-salgsfaktura** som ER-formatkonfiguration:
 
-    - Version 11.2 indeholder [format](general-electronic-reporting.md#FormatComponentOutbound) og formattilknytning som ER-komponenter. Formatkomponenten angiver rapportlayoutet. Komponenten til formattilknytning indeholder modeldatakilden og angiver, hvordan denne datakilde bruges til at udfylde rapportlayoutet på kørselstidspunktet. Dette Er-format blev konfigureret til at generere e-fakturaer i UBL-format (Universal Business Language). Det er importeret som overordnet til det ER-format for **Peppol Salgsfaktura** , der blev valgt til import.
+    - Version 11.2 indeholder [format](general-electronic-reporting.md#FormatComponentOutbound) og formattilknytning som ER-komponenter. Formatkomponenten angiver rapportlayoutet. Komponenten til formattilknytning indeholder modeldatakilden og angiver, hvordan denne datakilde bruges til at udfylde rapportlayoutet på kørselstidspunktet. Dette Er-format blev konfigureret til at generere e-fakturaer i UBL-format (Universal Business Language). Det er importeret som overordnet til det ER-format for **Peppol Salgsfaktura**, der blev valgt til import.
 
 - **Peppol Salgsfaktura** som ER-formatkonfiguration:
 
@@ -172,7 +171,7 @@ Kontrollér derefter, at følgende ER-konfigurationer er tilgængelige i konfigu
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>Konfigurere parametrene for den juridiske enhed
 
 1. Gå til **Organisationsadministration** \> **Organisationer** \> **Juridiske enheder**.
-2. Angiv **1234** i feltet **Registreringsnummer** i oversigtspanelet **Bankkontooplysninger** for det valgte **DEMF** -firma.
+2. Angiv **1234** i feltet **Registreringsnummer** i oversigtspanelet **Bankkontooplysninger** for det valgte **DEMF**-firma.
 3. Vælg **Gem**.
 4. Luk siden **Juridiske enheder**.
 
@@ -186,14 +185,14 @@ Kontrollér derefter, at følgende ER-konfigurationer er tilgængelige i konfigu
 1. Gå til **Debitor** \> **Kunder** \> **Alle kunder**.
 2. Vælg **Kontakter** i gruppen **Konti** under fanen **Debitor** i handlingsruden.
 3. Vælg **Tilføj kontakter**.
-4. Åbn opslaget i feltet **Fornavn** på siden **Kontakter** , vælg **Adam Carter** , og vælg derefter **Vælg** for at lukke opslaget.
+4. Åbn opslaget i feltet **Fornavn** på siden **Kontakter**, vælg **Adam Carter**, og vælg derefter **Vælg** for at lukke opslaget.
 5. Vælg **Gem**.
 6. Luk siden **Kontakter**.
 
 ### <a name="define-a-primary-contact"></a>Definere en primær kontakt
 
 1. Gå til **Debitor** \> **Kunder** \> **Alle kunder**.
-2. Gå til oversigtspanelet **Salgsdemografi** , og vælg **Adam Carter** i feltet **Primær kontakt**.
+2. Gå til oversigtspanelet **Salgsdemografi**, og vælg **Adam Carter** i feltet **Primær kontakt**.
 
 ### <a name="set-the-e-invoicing-option"></a>Angive indstillingen for e-fakturering
 
@@ -234,7 +233,7 @@ Du kan finde flere oplysninger i [Oprette en fritekstfaktura](../../../finance/a
 ### <a name="send-a-posted-invoice"></a>Sende en bogført faktura
 
 1. Gå til **Debitor** \> **Fakturaer** \> **Alle fritekstfakturaer**.
-2. Vælg **Send** \> **Original** i **Dokument** -gruppen i handlingsruden på siden **Fritekstfaktura**.
+2. Vælg **Send** \> **Original** i **Dokument**-gruppen i handlingsruden på siden **Fritekstfaktura**.
 
     ![Visning af originalfakturaen](./media/er-quick-start3-send-invoice.png)
 
@@ -249,7 +248,7 @@ Du kan finde flere oplysninger i [Oprette en fritekstfaktura](../../../finance/a
     ![Siden Elektroniske rapporteringsjob](./media/er-quick-start3-jobs-list.png)
 
 4. Vælg **Åbn** for at downloade den XML-fil, der er oprettet for e-fakturaen.
-5. Analysér XML-filen med e-fakturaen. Bemærk, at debitormomsskemaet i øjeblikket er repræsenteret af XML-attributterne **schemeID** og **schemeAgencyID**. Bemærk også, at **cbc:CustomizationID** -XML-elementet i øjeblikket indeholder følgende tekst: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
+5. Analysér XML-filen med e-fakturaen. Bemærk, at debitormomsskemaet i øjeblikket er repræsenteret af XML-attributterne **schemeID** og **schemeAgencyID**. Bemærk også, at **cbc:CustomizationID**-XML-elementet i øjeblikket indeholder følgende tekst: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
 
     ![Visning af den genererede XML-fil med e-faktura](./media/er-quick-start3-e-invoice1.png)
 
@@ -264,7 +263,7 @@ Udfør følgende trin for at foretage tilpasningen.
 
 1. Gå til **Debitor** \> **Kunder** \> **Alle kunder**.
 2. Vælg debitorkontolinket **DE-014** på siden **Alle kunder**.
-3. I oversigtspanelet **Generelt** skal du højreklikke i et tomt område under **Sprog** -feltet og derefter vælge **Tilpas: UpperGroup**.
+3. I oversigtspanelet **Generelt** skal du højreklikke i et tomt område under **Sprog**-feltet og derefter vælge **Tilpas: UpperGroup**.
 
     Indholdet af oversigtspanelet **Generelt** er fremhævet, og menuen **Tilpas** vises.
 
@@ -280,7 +279,7 @@ Udfør følgende trin for at foretage tilpasningen.
 9. Vælg **Tekst** i feltet **Type**.
 10. Angiv **20** i feltet **Længde**.
 11. Vælg **Gem**.
-12. Vælg **Ja** i den meddelelsesboks, der vises, for at bekræfte, at du vil oprette en ny **FederalTaxID** -feltpost for tabellen **Debitorer**.
+12. Vælg **Ja** i den meddelelsesboks, der vises, for at bekræfte, at du vil oprette en ny **FederalTaxID**-feltpost for tabellen **Debitorer**.
 13. Vælg **Indsæt** for at <a name="insert_custom_field"></a>tilføje feltet **FederalTaxID\_Brugerdefineret** på den aktuelle side.
 
     ![Siden Alle debitorer](./media/er-quick-start3-create-new-field.gif)
@@ -311,7 +310,7 @@ Som bruger i rollen Funktionel konsulent i elektronisk rapportering kan du desig
 5. Angiv **Fakturamodel (Litware)** i feltet **Navn**.
 6. Vælg **Opret konfiguration** for at tilføje den nye ER-konfiguration.
 
-Du kan nu bruge ER-datamodeldesigneren til at redigere version 50.1 af **Fakturamodel (Litware)** -ER-konfigurationen i **Kladde-**[status](general-electronic-reporting.md#component-versioning).
+Du kan nu bruge ER-datamodeldesigneren til at redigere version 50.1 af **Fakturamodel (Litware)**-ER-konfigurationen i **Kladde-**[status](general-electronic-reporting.md#component-versioning).
 
 ![Version 50.1 af den redigerbare ER-konfiguration på siden Konfigurationer](./media/er-quick-start3-added-custom-model.png)
 
@@ -327,7 +326,7 @@ Du skal redigere din brugerdefinerede datamodel ved at tilføje et nyt felt, hvi
 6. Acceptér standardværdien **Underordnet for en aktiv node** i feltet **Ny node** på rullelisten i dialogboksen.
 7. I feltet **Navn** skal du angive **FederalTaxID\_Litware**.
 8. Acceptér standardværdien **Streng** i feltet **Varetype**.
-9. Vælg **Tilføj** , og vælg derefter **Gem**.
+9. Vælg **Tilføj**, og vælg derefter **Gem**.
 
     ![Siden Datamodeldesigner](./media/er-quick-start3-add-data-model-field.png)
 
@@ -344,7 +343,7 @@ Du skal [fuldføre](general-electronic-reporting.md#component-versioning) dit ar
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Fakturamodel** og derefter vælge **Fakturamodel (Litware)**.
 3. I oversigtspanelet **Versioner** skal du vælge **Skift status** \> **Fuldfør** og derefter vælge **OK**.
 
-Statussen for version 50.1 ændres fra **Kladde** til **Fuldført** , og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 50.2, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-datamodelkonfiguration.
+Statussen for version 50.1 ændres fra **Kladde** til **Fuldført**, og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 50.2, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-datamodelkonfiguration.
 
 ![Version 50.1 fuldført på siden Konfigurationer](./media/er-quick-start3-completed-custom-model1.png)
 
@@ -380,11 +379,11 @@ Du skal redigere din brugerdefinerede modeltilknytning og angive, hvordan feltet
     ![Siden Tilknytning af model til datakilde](./media/er-quick-start3-select-customer-mapping.png)
 
 5. Vælg **Designer**.
-6. På siden **Modeltilknytningsdesigner** i ruden **Datakilder** skal du udvide den **CustInvoiceJour** -datakilde, der repræsenterer **CustInvoiceJour** -programtabellen.
+6. På siden **Modeltilknytningsdesigner** i ruden **Datakilder** skal du udvide den **CustInvoiceJour**-datakilde, der repræsenterer **CustInvoiceJour**-programtabellen.
 7. Under **CustInvoiceJour** skal du udvide **Relationer** for at gennemgå listen over relationer af typen mange til én (N:1) for tabellen **CustInvoiceJour**.
 8. Under **CustInvoiceJour** \> **Relationer** skal du udvide **Debitorer (CustTable)** for at få adgang til felterne og relationerne i tabellen **Debitorer (CustTable)**.
-9. Vælg det **FederalTaxID\_Brugerdefineret** -datakildefelt, som du har implementeret [tidligere](#insert_custom_field).
-10. Udvid **Kundeoplysninger (kunde)** i ruden **Datamodel** , og vælg **FederalTaxID\_Litware** -datamodelfeltet.
+9. Vælg det **FederalTaxID\_Brugerdefineret**-datakildefelt, som du har implementeret [tidligere](#insert_custom_field).
+10. Udvid **Kundeoplysninger (kunde)** i ruden **Datamodel**, og vælg **FederalTaxID\_Litware**-datamodelfeltet.
 11. Vælg **Bind**.
 
     ![Siden Modeltilknytningsdesigner](./media/er-quick-start3-customize-model-mapping.gif)
@@ -401,12 +400,12 @@ Du skal [fuldføre](general-electronic-reporting.md#component-versioning) dit ar
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Debitorfakturamodel** \> **Kundefakturamodeltilknytning** og vælge **Fakturamodeltilknytning (Litware)**.
 3. I oversigtspanelet **Versioner** skal du vælge **Skift status** \> **Fuldfør** og derefter vælge **OK**.
 
-Statussen for version 50.19.1 ændres fra **Kladde** til **Fuldført** , og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 50.19.2, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-modeltilknytningskonfiguration.
+Statussen for version 50.19.1 ændres fra **Kladde** til **Fuldført**, og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 50.19.2, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-modeltilknytningskonfiguration.
 
 ![Version 50.19.1 fuldført på siden Konfigurationer](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
-> Den understøttede konfigurations [livscyklus](general-electronic-reporting-manage-configuration-lifecycle.md) dækker ikke livscyklussen for databaseændringer. Hvis du eksporterer version 50.19.1 af **Fakturamodeltilknytning (Litware)** -konfigurationen fra den aktuelle Finance-forekomst og forsøger at importere den i en anden forekomst, der ikke indeholder feltet **FederalTaxID\_Brugerdefineret** i tabellen **CustTable** , opstår der en undtagelse. Undtagelsen vil angive, at den importerede ER-konfiguration ikke er kompatibel med metadataene i målforekomsten af Finance.
+> Den understøttede konfigurations [livscyklus](general-electronic-reporting-manage-configuration-lifecycle.md) dækker ikke livscyklussen for databaseændringer. Hvis du eksporterer version 50.19.1 af **Fakturamodeltilknytning (Litware)**-konfigurationen fra den aktuelle Finance-forekomst og forsøger at importere den i en anden forekomst, der ikke indeholder feltet **FederalTaxID\_Brugerdefineret** i tabellen **CustTable**, opstår der en undtagelse. Undtagelsen vil angive, at den importerede ER-konfiguration ikke er kompatibel med metadataene i målforekomsten af Finance.
 
 ### <a name="customize-the-format-configuration"></a>Tilpasse formatkonfigurationen
 
@@ -429,7 +428,7 @@ Som bruger i rollen Funktionel konsulent i elektronisk rapportering kan du desig
 
 ![Tilføjelse af en brugerdefineret formatkonfiguration på siden Konfigurationer](./media/er-quick-start3-adding-custom-format.png)
 
-Du kan nu bruge ER-operationsdesigner til at redigere version 11.2.2.1 af **Peppol Salgsfaktura (Litware)** -ER-konfigurationen i **Kladde-**[status](general-electronic-reporting.md#component-versioning).
+Du kan nu bruge ER-operationsdesigner til at redigere version 11.2.2.1 af **Peppol Salgsfaktura (Litware)**-ER-konfigurationen i **Kladde-**[status](general-electronic-reporting.md#component-versioning).
 
 ![Version 11.2.2.1 af den redigerbare ER-konfiguration på siden Konfigurationer](./media/er-quick-start3-added-custom-format.png)
 
@@ -441,9 +440,9 @@ Du skal redigere det brugerdefinerede format ved at tilføje et nyt formatelemen
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Debitorfakturamodel** \> **UBL-salgsfaktura** \> **Peppol Salgsfaktura** og vælge **Peppol Salgsfaktura (Litware)**.
 3. Vælg **Designer** i handlingsruden.
 4. I formattræet skal du udvide **XMLHeader** \> **Faktura** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** og vælge **cbc:ID**.
-5. Vælg **Tilføj** , og vælg derefter **XML** \> **Attribut**.
+5. Vælg **Tilføj**, og vælg derefter **XML** \> **Attribut**.
 6. I dialogboksen **Komponentegenskab** skal du i feltet **Navn** angive **FederalTaxID**.
-7. Vælg **OK** for at tilføje et nyt formatelement for at oprette en ny **FederalTaxID** -XML-attribut i en genereret XML-fil.
+7. Vælg **OK** for at tilføje et nyt formatelement for at oprette en ny **FederalTaxID**-XML-attribut i en genereret XML-fil.
 8. I formattræet skal du under **XMLHeader** \> **Faktura** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID** vælge **FederalTaxID**.
 9. Vælg **Flyt op**.
 
@@ -451,13 +450,13 @@ Du skal redigere det brugerdefinerede format ved at tilføje et nyt formatelemen
 
 #### <a name="configure-a-custom-format-mapping"></a>Konfigurere en brugerdefineret formattilknytning
 
-1. På siden **Formatdesigner** under fanen **Tilknytning** skal du udvide datakilden **Faktura** for **Model** -typen.
-2. Udvid **Kundeoplysninger (kunde)** under **Faktura** , og vælg **FederalTaxID\_Litware**.
+1. På siden **Formatdesigner** under fanen **Tilknytning** skal du udvide datakilden **Faktura** for **Model**-typen.
+2. Udvid **Kundeoplysninger (kunde)** under **Faktura**, og vælg **FederalTaxID\_Litware**.
 3. Vælg **Bind**.
 
     ![Siden Formatdesigner](./media/er-quick-start3-customized-format-mapping.png)
 
-4. Vælg **Faktura** som datakilde for typen **Model** , og vælg derefter **Rediger**.
+4. Vælg **Faktura** som datakilde for typen **Model**, og vælg derefter **Rediger**.
 5. I feltet **Version** skal du vælge version **1** af din brugerdefinerede datamodel og derefter vælge **OK**.
 6. Vælg **Gem**.
 7. Luk siden **Formatdesigner**.
@@ -470,7 +469,7 @@ Du skal [fuldføre](general-electronic-reporting.md#component-versioning) dit ar
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Debitorfakturamodel** \> **UBL-salgsfaktura** \> **Peppol Salgsfaktura** og vælge **Peppol Salgsfaktura (Litware)**.
 3. I oversigtspanelet **Versioner** skal du vælge **Skift status** \> **Fuldfør** og derefter vælge **OK**.
 
-Statussen for version 11.2.2.1 ændres fra **Kladde** til **Fuldført** , og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 11.2.2.2, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer i din brugerdefinerede ER-formatkonfiguration.
+Statussen for version 11.2.2.1 ændres fra **Kladde** til **Fuldført**, og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 11.2.2.2, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer i din brugerdefinerede ER-formatkonfiguration.
 
 ![Version 11.2.2.1 fuldført på siden Konfigurationer](./media/er-quick-start3-completed-custom-format1.png)
 
@@ -499,7 +498,7 @@ Statussen for version 11.2.2.1 ændres fra **Kladde** til **Fuldført** , og ver
 
 1. Gå til **Debitor** \> **Fakturaer** \> **Alle fritekstfakturaer**.
 2. På siden **Fritekstfaktura** skal du vælge den faktura, som du tidligere har tilføjet og bogført.
-3. Vælg **Send** \> **Original** i **Dokument** -gruppen i handlingsruden.
+3. Vælg **Send** \> **Original** i **Dokument**-gruppen i handlingsruden.
 4. Luk siden **Fritekstfaktura**.
 
 ### <a name="analyze-a-generated-e-invoice"></a>Analysere en genereret e-faktura
@@ -508,7 +507,7 @@ Statussen for version 11.2.2.1 ændres fra **Kladde** til **Fuldført** , og ver
 2. På siden **Elektroniske rapporteringsjob** skal du vælge den sidste post, der indeholder opgavebeskrivelsen **Send eFaktura-XML**.
 3. Vælg **Vis filer** for at få adgang til listen over genererede filer.
 4. Vælg **Åbn** for at downloade den XML-fil, der er oprettet for e-fakturaen.
-5. Analysér XML-filen med e-fakturaen. Bemærk, at i overensstemmelse med tilpasningen inkluderer kundemomsskemaet den brugerdefinerede **FederalTaxID** -XML-attribut ud over **schemeID** - og **schemeAgencyID** -XML-attributterne. Værdien af denne nye XML-attribut er angivet af det **LITWARE-6789** -moms-id, der blev angivet for en faktureret kunde.
+5. Analysér XML-filen med e-fakturaen. Bemærk, at i overensstemmelse med tilpasningen inkluderer kundemomsskemaet den brugerdefinerede **FederalTaxID**-XML-attribut ud over **schemeID**- og **schemeAgencyID**-XML-attributterne. Værdien af denne nye XML-attribut er angivet af det **LITWARE-6789**-moms-id, der blev angivet for en faktureret kunde.
 
     ![Visning af den genererede XML-fil med e-faktura og dine tilpasninger](./media/er-quick-start3-e-invoice2.png)
 
@@ -518,7 +517,7 @@ Hvis du vil bevare sættet med ER-standardkonfigurationer i din Finance-forekoms
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** skal du i sektionen **Konfigurationsudbydere** vælge feltet **Microsoft** og derefter vælge **Lagre** for at få vist listen over lagre for Microsoft-udbyderen.
-3. På siden **Konfigurationslagre** skal du vælge lageret for **Global** -typen og derefter vælge **Åbn**. Hvis du bliver bedt om at angive godkendelse for at oprette forbindelse til Regulatory Configuration Service, skal du følge godkendelsesvejledningen.
+3. På siden **Konfigurationslagre** skal du vælge lageret for **Global**-typen og derefter vælge **Åbn**. Hvis du bliver bedt om at angive godkendelse for at oprette forbindelse til Regulatory Configuration Service, skal du følge godkendelsesvejledningen.
 4. På siden **Konfigurationslager** skal du i konfigurationstræet i venstre rude vælge formatkonfigurationen **Peppol Salgsfaktura**.
 5. I oversigtspanelet **Versioner** skal du vælge version **32.6.7** af den valgte ER-formatkonfiguration, der er udgivet for at understøtte kunders elektroniske fakturaer i PEPPOL BIS 3-format. Du kan finde flere oplysninger i [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Vælg **Importér** for at hente den valgte version fra Global-lageret til den aktuelle Finans-forekomst.
@@ -536,7 +535,7 @@ Oplysninger om, hvordan denne proces kan automatiseres, finder du under [Importe
 5. Udvid **Fakturamodeltilknytning** i konfigurationstræet i ruden til venstre. Bemærk, at navnet **Kundefakturamodeltilknytning** er ændret til **Fakturamodeltilknytning** i en af de importerede konfigurationer af ER-modeltilknytning.
 6. Udvid **UBL-salgsfaktura** \> **Peppol Salgsfaktura**.
 
-Bemærk, at der ud over det valgte **Peppol Salgsfaktura** -format, blev de seneste versioner af andre påkrævede ER-konfigurationer også importeret. Da nye versioner af ER- konfigurationer løbende publiceres til det globale lager og LCS og for at holde de tilsvarende ER-løsninger kompatible med de nye krav, blev de seneste versioner af konfigurationen af den påkrævede datamodel og den tilhørende modeltilknytning importeret.
+Bemærk, at der ud over det valgte **Peppol Salgsfaktura**-format, blev de seneste versioner af andre påkrævede ER-konfigurationer også importeret. Da nye versioner af ER- konfigurationer løbende publiceres til det globale lager og LCS og for at holde de tilsvarende ER-løsninger kompatible med de nye krav, blev de seneste versioner af konfigurationen af den påkrævede datamodel og den tilhørende modeltilknytning importeret.
 
 Kontrollér, at følgende ER-konfigurationer er tilgængelige i konfigurationstræet:
 
@@ -554,7 +553,7 @@ Kontrollér, at følgende ER-konfigurationer er tilgængelige i konfigurationstr
 
 - **UBL-salgsfaktura** som ER-formatkonfiguration:
 
-    - Version 32.6 indeholder format og formattilknytning som ER-komponenter. Formatkomponenten angiver rapportlayoutet. Komponenten til formattilknytning indeholder modeldatakilden og angiver, hvordan denne datakilde bruges til at udfylde rapportlayoutet på kørselstidspunktet. Dette Er-format blev konfigureret til at generere e-fakturaer i UBL-format. Det er importeret som overordnet til det ER-format for **Peppol Salgsfaktura** , der blev valgt til import.
+    - Version 32.6 indeholder format og formattilknytning som ER-komponenter. Formatkomponenten angiver rapportlayoutet. Komponenten til formattilknytning indeholder modeldatakilden og angiver, hvordan denne datakilde bruges til at udfylde rapportlayoutet på kørselstidspunktet. Dette Er-format blev konfigureret til at generere e-fakturaer i UBL-format. Det er importeret som overordnet til det ER-format for **Peppol Salgsfaktura**, der blev valgt til import.
 
 - **Peppol Salgsfaktura** som ER-formatkonfiguration:
 
@@ -569,16 +568,16 @@ Kontrollér, at følgende ER-konfigurationer er tilgængelige i konfigurationstr
 1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Fakturamodel** og derefter vælge **Fakturamodel (Litware)**.
 3. I oversigtspanelet **Versioner** skal du for kladdeversion **50.2** af den valgte datamodelkonfiguration vælge **Rebasér**.
-4. Bekræft valget af version **206** af ER-basisdatamodelkonfiguration i feltet **Målversion** , og vælg derefter **OK**.
+4. Bekræft valget af version **206** af ER-basisdatamodelkonfiguration i feltet **Målversion**, og vælg derefter **OK**.
 
     Kladdeversionen af din brugerdefinerede ER-datamodelkonfiguration nummereres om fra **50.2** til **206.2** for at angive, at den nu indeholder din tilpasning, der er blevet flettet med ændringerne i den seneste version (206) af ER-basisdatamodelkonfigurationen.
 
     > [!NOTE]
-    > Rebaseringshandling kan fortrydes. Hvis du vil annullere denne rebasering, skal du vælge version **50.1** af modellen **Fakturamodel (Litware)** i oversigtspanelet **Versioner** og derefter vælge **Hent denne version**. Version 206.2 vil derefter blive nummereret tilbage til **50.2** , og indholdet af kladdeversion 50.2 vil svare til indholdet af version 50.1.
+    > Rebaseringshandling kan fortrydes. Hvis du vil annullere denne rebasering, skal du vælge version **50.1** af modellen **Fakturamodel (Litware)** i oversigtspanelet **Versioner** og derefter vælge **Hent denne version**. Version 206.2 vil derefter blive nummereret tilbage til **50.2**, og indholdet af kladdeversion 50.2 vil svare til indholdet af version 50.1.
 
 5. I oversigtspanelet **Versioner** skal du vælge **Skift status** \> **Fuldfør** og derefter vælge **OK**.
 
-Statussen for version 206.2 ændres fra **Kladde** til **Fuldført** , og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 206.3, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-datamodelkonfiguration.
+Statussen for version 206.2 ændres fra **Kladde** til **Fuldført**, og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 206.3, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-datamodelkonfiguration.
 
 ![Version 206.2 fuldført på siden Konfigurationer](./media/er-quick-start3-completed-custom-model2.png)
 
@@ -587,7 +586,7 @@ Statussen for version 206.2 ændres fra **Kladde** til **Fuldført** , og versio
 1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Fakturamodel** \> **Fakturamodeltilknytning** og vælge **Fakturamodeltilknytning (Litware)**.
 3. I oversigtspanelet **Versioner** skal du for kladdeversion **50.19.2** af den valgte modeltilknytningskonfiguration vælge **Rebasér**.
-4. Bekræft valget af version **206.132** af ER-basismodeltilknytningen i feltet **Målversion** , og vælg derefter **OK**.
+4. Bekræft valget af version **206.132** af ER-basismodeltilknytningen i feltet **Målversion**, og vælg derefter **OK**.
 
     Kladdeversionen af din brugerdefinerede ER-modelmodeltilknytningskonfiguration nummereres om fra **50.19.2** til **206.132.2** for at angive, at den nu indeholder din tilpasning, der er blevet flettet med ændringerne i den seneste version (206.132) af ER-basismodelmodeltilknytningens konfiguration.
 
@@ -596,21 +595,21 @@ Statussen for version 206.2 ændres fra **Kladde** til **Fuldført** , og versio
     ![Meddelelsen om rebaseringskonflikt på siden Konfigurationer](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. Vælg **Designer** i handlingsruden, og vælg derefter **Debitorfaktura** på listen over tilknytninger.
-6. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi** , da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
+6. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi**, da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
 
     ![Rebaseringskonflikter på siden for modeltilknytningsdesigneren](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
-7. Vælg **Gem** , og luk derefter siden **Modeltilknytningsdesigner**.
+7. Vælg **Gem**, og luk derefter siden **Modeltilknytningsdesigner**.
 8. Vælg **Projektfaktura** på listen over tilknytninger.
-9. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi** , da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
-10. Vælg **Gem** , og luk derefter siden **Modeltilknytninger**.
+9. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi**, da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
+10. Vælg **Gem**, og luk derefter siden **Modeltilknytninger**.
 
     > [!NOTE]
-    > Rebaseringshandling kan fortrydes. Hvis du vil annullere denne rebasering, skal du vælge version **50.19.1** af modeltilknytningen **Fakturamodeltilknytning (Litware)** i oversigtspanelet **Versioner** og derefter vælge **Hent denne version**. Version 206.132.2 vil derefter blive nummereret tilbage til **50.19.2** , og indholdet af kladdeversion 50.19.2 vil svare til indholdet af version 50.19.1.
+    > Rebaseringshandling kan fortrydes. Hvis du vil annullere denne rebasering, skal du vælge version **50.19.1** af modeltilknytningen **Fakturamodeltilknytning (Litware)** i oversigtspanelet **Versioner** og derefter vælge **Hent denne version**. Version 206.132.2 vil derefter blive nummereret tilbage til **50.19.2**, og indholdet af kladdeversion 50.19.2 vil svare til indholdet af version 50.19.1.
 
 11. I oversigtspanelet **Versioner** skal du vælge **Skift status** \> **Fuldfør** og derefter vælge **OK**.
 
-Statussen for version 206.132.2 ændres fra **Kladde** til **Fuldført** , og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 206.132.3, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-modeltilknytningskonfiguration.
+Statussen for version 206.132.2 ændres fra **Kladde** til **Fuldført**, og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 206.132.3, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer af din brugerdefinerede ER-modeltilknytningskonfiguration.
 
 ![Version 206.132.2 fuldført på siden Konfigurationer](./media/er-quick-start3-completed-custom-mapping2.png)
 
@@ -619,26 +618,26 @@ Statussen for version 206.132.2 ændres fra **Kladde** til **Fuldført** , og ve
 1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Fakturamodel** \> **UBL-salgsfaktura** \> **Peppol Salgsfaktura** og vælge **Peppol Salgsfaktura (Litware)**.
 3. I oversigtspanelet **Versioner** skal du for kladdeversion **11.2.2.2** af den valgte formatkonfiguration vælge **Rebasér**.
-4. Bekræft valget af version **32.6.7** af ER-basisformatkonfiguration i feltet **Målversion** , og vælg derefter **OK**.
+4. Bekræft valget af version **32.6.7** af ER-basisformatkonfiguration i feltet **Målversion**, og vælg derefter **OK**.
 
     Kladdeversionen af din brugerdefinerede ER-formatkonfiguration nummereres om fra **11.2.2.2** til **32.6.7.2** for at angive, at den nu indeholder din tilpasning, der er blevet flettet med ændringerne i den seneste version (32.6.7) af ER-basisformatkonfigurationen.
 
     Bemærk, at der er fundet nogle rebaseringskonflikter. Du skal nu løse disse konflikter manuelt.
 
 5. Vælg **Designer** i handlingsruden.
-6. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi** , da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
+6. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi**, da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
 7. Vælg **Gem**.
 8. Vælg **Faktura** som datakilde for typen **Model** under fanen **Tilknytning** , og vælg derefter **Rediger**.
 9. I feltet **Version** skal du vælge version **2** af din brugerdefinerede datamodel og derefter vælge **OK**.
 10. Vælg **Gem**.
 
     > [!NOTE]
-    > Rebaseringshandling kan fortrydes. Hvis du vil annullere denne rebasering, skal du vælge version **11.2.2.1** af formatet **Peppol Salgsfaktura (Litware)** i oversigtspanelet **Versioner** og derefter vælge **Hent denne version**. Version 32.6.7.2 vil derefter blive nummereret tilbage til **11.2.2.2** , og indholdet af kladdeversion 11.2.2.2 vil svare til indholdet af version 11.2.2.1.
+    > Rebaseringshandling kan fortrydes. Hvis du vil annullere denne rebasering, skal du vælge version **11.2.2.1** af formatet **Peppol Salgsfaktura (Litware)** i oversigtspanelet **Versioner** og derefter vælge **Hent denne version**. Version 32.6.7.2 vil derefter blive nummereret tilbage til **11.2.2.2**, og indholdet af kladdeversion 11.2.2.2 vil svare til indholdet af version 11.2.2.1.
 
 11. Luk siden **Formatdesigner**.
 12. I oversigtspanelet **Versioner** skal du vælge **Skift status** \> **Fuldfør** og derefter vælge **OK**.
 
-Statussen for version 32.6.7.2 ændres fra **Kladde** til **Fuldført** , og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 32.6.7.3, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer i din brugerdefinerede ER-formatkonfiguration.
+Statussen for version 32.6.7.2 ændres fra **Kladde** til **Fuldført**, og versionen bliver skrivebeskyttet. Der er tilføjet en ny redigerbar version, 32.6.7.3, som har status af **Kladde**. Du kan bruge denne version til at foretage yderligere ændringer i din brugerdefinerede ER-formatkonfiguration.
 
 ![Version 32.6.7.2 fuldført på siden Konfigurationer](./media/er-quick-start3-completed-custom-format2.png)
 
@@ -648,7 +647,7 @@ Statussen for version 32.6.7.2 ændres fra **Kladde** til **Fuldført** , og ver
 
 1. Gå til **Debitor** \> **Fakturaer** \> **Alle fritekstfakturaer**.
 2. På siden **Fritekstfaktura** skal du vælge den faktura, som du tidligere har tilføjet og bogført.
-3. Vælg **Send** \> **Original** i **Dokument** -gruppen i handlingsruden.
+3. Vælg **Send** \> **Original** i **Dokument**-gruppen i handlingsruden.
 
     > [!NOTE] 
     > Da du nu har to versioner af **Peppol Salgsfaktura (Litware)** som ER-formatkonfiguration, og ingen af versionerne har en værdi for [ikrafttrædelsesdato](general-electronic-reporting.md#component-date-effectivity), bruges den seneste version til at oprette en e-faktura.
@@ -661,7 +660,7 @@ Statussen for version 32.6.7.2 ændres fra **Kladde** til **Fuldført** , og ver
 2. På siden **Elektroniske rapporteringsjob** skal du vælge den nyeste post, der indeholder opgavebeskrivelsen **Send eFaktura-XML**.
 3. Vælg **Vis filer** for at få adgang til listen over genererede filer.
 4. Vælg **Åbn** for at downloade den XML-fil, der er oprettet for e-fakturaen.
-5. Analysér XML-filen med e-fakturaen. Bemærk, at i overensstemmelse med tilpasningen inkluderer kundemomsskemaet stadig den brugerdefinerede **FederalTaxID** -XML-attribut ud over **schemeID** - og **schemeAgencyID** -XML-attributterne. Desuden, fordi ændringerne i den nye version af basisformatet **UBL-salgsfaktura** blev flettet sammen med din tilpasning, er teksten i **cbc:CustomizationID** -XML-elementet ændret fra `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` til `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
+5. Analysér XML-filen med e-fakturaen. Bemærk, at i overensstemmelse med tilpasningen inkluderer kundemomsskemaet stadig den brugerdefinerede **FederalTaxID**-XML-attribut ud over **schemeID**- og **schemeAgencyID**-XML-attributterne. Desuden, fordi ændringerne i den nye version af basisformatet **UBL-salgsfaktura** blev flettet sammen med din tilpasning, er teksten i **cbc:CustomizationID**-XML-elementet ændret fra `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` til `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
 
     ![Visning af den genererede XML-fil med e-faktura med tilpasninger](./media/er-quick-start3-e-invoice3.png)
 

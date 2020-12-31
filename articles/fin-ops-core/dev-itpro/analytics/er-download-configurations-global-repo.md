@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ed31cdee74c9db26ba76ed263b5e0578cd04bc3d
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421696"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679552"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten
 
@@ -72,7 +71,7 @@ Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapp
 
 1. På siden **Konfigurationslagre** skal du i konfigurationstræet udvide oversigtspanelet **Filter**.
 2. I gitteret **Koder** skal du tilføje eventuelle koder, der skal bruges.
-3. I feltet **Land/område** skal du vælge de relevante lande-/områdekoder og derefter vælge **Anvend filter**.
+3. I feltet **Land/område** skal du vælge de relevante land/område-koder og derefter vælge **Anvend filter**.
 
     > [!NOTE]
     > Oversigtspanelet **Konfigurationer** viser alle de konfigurationer, der opfylder de angivne udvælgelsesbetingelser.

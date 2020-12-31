@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564161"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682667"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -76,7 +75,7 @@ Hvis du vil oprette et rapporteringstræ, skal du følge disse trin.
     | Medtag/tegnposition       | I dette afsnit vises de dimensioner, der er defineret i de økonomiske data, og antallet af tegn i den længste værdi, der er defineret for hver dimension. Marker afkrydsningsfeltet for en dimension for at medtage den i rapporteringstræhierarkiet. |
     | Hierarki og intervaller for segmenter     | I dette afsnit vises dimensionshierarkiet. Du kan flytte dimensionerne på listen for at ændre deres rapporteringsrækkefølge. I felterne **Fra dimension** og **Til dimension** kan angive et interval af værdier inden for hver dimension. Hvis du ikke angiver et interval, indsættes alle dimensionsværdier i rapporteringstræet.<blockquote>[!NOTE] Hvis du bruger mere end én dimension, er det kun kombinationer af de dimensioner, der er bogført til, som returneres i resultaterne.</blockquote> |
 
-    Et skærmbillede, der viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, finder du i afsnittet "Eksempel på dialogboksen Indsæt rapporteringsenheder fra dimensioner" senere i denne artikel.
+    Du kan finde et skærmbillede, der viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, i afsnittet "Eksempel på dialogboksen Indsæt rapporteringsenheder fra dimensioner" senere i denne artikel.
 
 5. Hvis du vil oprette flere segmenter (f.eks ved at opdele ét segment i to kortere segmenter), skal du klikke på den korrekte placering i et felt af typen **Tegnposition** og derefter klikke på **Opdel segmenter**.
 6. Hvis du vil flette to segmenter i ét segment, skal du klikke i en af boksene for segmentet, der skal flettes, og derefter klikke på **Kombiner segmenter**.
@@ -86,7 +85,7 @@ Hvis du vil oprette et rapporteringstræ, skal du følge disse trin.
     1. I feltet **Fra dimension** for den pågældende dimension skal du angive den første værdi i intervallet.
     2. I feltet **Til dimension** skal du angive den sidste værdi i intervallet.
 
-9. Gentag trin 7 til 8 for hver dimension i området **Segmenthierarki og -intervaller**.
+9. Gentag trin 7 og 8 for hver dimension i området **Segmenthierarki og -intervaller**.
 10. Når du er færdig med at definere, hvordan dine rapporteringsenheder skal hentes til det nye rapporteringstræ, skal du klikke på **OK**.
 11. Klik på **Filer** &gt; **Gem** for at gemme rapporteringstræet. Angiv et entydigt navn og en entydig beskrivelse for rapporteringstræet, og klik derefter på **OK**.
 
@@ -106,7 +105,7 @@ Når du bruger et rapporteringstræ, kan du indsamle beløb fra underordnede rap
     > Hvis du angiver dimensioner for både underordnede enheder og overordnede enheder, kan det medføre dubletter af data i rapporten.
 
 - Rapporteringsenheder, som indeholder dimensioner i rapporteringtræet, svarer til de dimensioner, der anvendes i række- og kolonnedefinitioner. Kombinationen af dimensioner bestemmer de beløb, der returneres for denne enhed. For eksempel, i eksempel 2 senere i denne artikel returnerer linje 6 og 7 kun værdier for henholdsvis afdeling 00 og 01.
-- Beløbene for overordnede rapporteringsenheder, der ikke indeholder dimensioner i rapporteringstræet, bestemmes på basis af rapporten for den underordnede rapport og akkumulerer beløbet til den angivne overordnede enhed. Hvis den overordnede enhed (se Contoso USA i eksempel 2 med eksempler på dataakkumulering) for eksempel har to underordnede enheder (022 og 023) og ikke indeholder dimensioner, genereres en rapport for hver underordnet og overordnet enhed. Den overordnede total er summen af de to underordnede beløb.
+- Beløbene for overordnede rapporteringsenheder, der ikke indeholder dimensioner i rapporteringstræet, bestemmes på basis af rapporten for den underordnede rapport og akkumulerer beløbet til den angivne overordnede enhed. Hvis den overordnede enhed (se Contoso USA i eksempel 2 med eksempler på dataakkumulering) for eksempel har to underordnede enheder (022 og 023) og ikke indeholder dimensioner, genereres der en rapport for hver underordnet og overordnet enhed. Den overordnede total er summen af de to underordnede beløb.
 
 ### <a name="manage-reporting-units"></a>Administrere rapporteringsenheder
 
@@ -165,9 +164,9 @@ Du kan forhindre bestemte brugere og grupper i at få adgang til en rapportering
 3. Marker et navn i dialogboksen **Sikkerhed for enhed**, og klik derefter på **Fjern**.
 4. Klik på **OK**.
 
-### <a name="link-toreports"></a>Link til rapporter
+### <a name="link-to-reports"></a>Link til rapporter
 
-Når du har oprettet en **rapport**-kolonne i rækkedefinitionen og har angivet den rapport, der skal medtages i rapporten, skal du opdatere rapporteringstræet med den tilknyttede kolonne og oplysningerne om rapporten. Der kan importeres en rapport til enhver enhed i rapporteringstræet.
+Når du har oprettet en **rapport**-kolonne i rækkedefinitionen og har angivet den rapport, der skal medtages i rapporten, skal du opdatere rapporteringstræet med den tilknyttede kolonne og oplysningerne om rapporten. Der kan importeres en rapport til enhver enhed i rapporteringstræet.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identificer rapporten i et rapporteringstræ
 

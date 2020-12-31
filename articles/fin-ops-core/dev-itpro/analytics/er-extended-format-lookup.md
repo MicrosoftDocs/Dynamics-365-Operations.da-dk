@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138854"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679480"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillad brugere at konfigurerer en ER-formatreference, der forespørger om et format fra den globale lagermappe
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.md) (ER) til at konfigurere [formater](general-electronic-reporting.md#FormatComponentOutbound) for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Du kan også bruge ER-strukturen til at konfigurere [formater](general-electronic-reporting.md#FormatComponentInbound) til parsing af indgående dokumenter og bruge oplysningerne fra disse dokumenter til at tilføje eller opdatere programdata. Hvert af disse formater kan bruges i din Dynamics 365 Finance-forekomst til at håndtere indgående eller udgående forretningsdokumenter som del af en bestemt forretningsproces. 
+Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.md) (ER) til at konfigurere [formater](general-electronic-reporting.md#FormatComponentOutbound) for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Du kan også bruge ER-strukturen til at konfigurere [formater](general-electronic-reporting.md#FormatComponentInbound) til parsing af indgående dokumenter og bruge oplysningerne fra disse dokumenter til at tilføje eller opdatere programdata. Hvert af disse formater kan bruges i din Dynamics 365 Finance-forekomst til at håndtere indgående eller udgående forretningsdokumenter som del af en bestemt forretningsproces.
 
 Normalt skal du angive, hvilket ER-format der skal bruges i en bestemt forretningsproces. Hvis du vil gøre det, skal du vælge ER-formatet i et opslagsfelt, der er konfigureret som en del af forretningsprocesspecifikke parametre. Disse opslagsfelter implementeres normalt ved hjælp af den relevante API i ER-strukturen. Du kan finde flere oplysninger i [API til ER-struktur – kode til visning af et formattilknytningopslag](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
@@ -45,7 +44,7 @@ Hvis den aktuelle Finance-forekomst indeholder Intrastat-forretningsprocesrelate
 
 Dette opslag indeholder kun de ER-formater, der allerede er importeret til den aktuelle Finance-forekomst. Hvis du vil [importere](./tasks/er-import-configuration-lifecycle-services.md) ER-løsninger til den aktuelle Finance-forekomst, skal du have rettigheder til at køre den relevante funktion i den ER-struktur, der understøtter [livscyklussen](general-electronic-reporting-manage-configuration-lifecycle.md) for ER-løsninger, der indeholder ER-formater.
 
-Fra og med Finance version 10.0.9 (april 2020 release) er brugergrænsefladen i det ER-formatopslag, der implementeres ved hjælp af API til ER-struktur, udvidet. Du kan stadig vælge de eksisterende ER-formater, som findes i oversigtspanelet **Vælg formatkonfiguration**. Derudover giver det udvidede opslag den nye indstilling til søgning i den globale lagermappe (GR) for at finde bestemte ER-formater. Alle ER-formaterne for GR vises i oversigtspanelet **Indlæs fra den globale lagermappe**.
+Fra og med Finance version 10.0.9 (april 2020 release) er brugergrænsefladen i det ER-formatopslag, der implementeres ved hjælp af API til ER-struktur, udvidet. Du kan stadig vælge de eksisterende ER-formater, som findes i oversigtspanelet **Vælg formatkonfiguration**. Derudover tilbyder det udvidede opslag den nye indstilling til søgning i den globale lagermappe (GR) for at finde bestemte ER-formater. Alle ER-formaterne for GR vises i oversigtspanelet **Indlæs fra den globale lagermappe**.
 
 [![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
@@ -55,13 +54,13 @@ Når du vælger et ER-format i oversigtspanelet **Indlæs fra den globale lagerm
 
 [![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Hvis importen fuldføres korrekt, gemmes referencen til det importerede ER-format i dette opslagsfelt. Bemærk, at når du åbner GR første gang, skal du følge linket for at tilmelde dig den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), der bruges til at administrere adgangen til GR-lageret.
+Hvis importen fuldføres korrekt, gemmes referencen til det importerede ER-format i dette opslagsfelt. Når du åbner GR første gang, skal du følge linket for at tilmelde dig den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), der bruges til at administrere adgangen til GR-lageret.
 
 [![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard viser oversigtspanelet **Indlæs fra den globale lagermappe** listen over ER-formater fra det midlertidige lager, der automatisk oprettes ud fra GR-indholdet for at forbedre ydeevnen. Dette sker, når oversigtspanelet **Indlæs fra den globale lagermappe** åbnes for første gang, hvilket kan tage et par sekunder.
 
-Hvis du ikke kan se det krævede ER-format i oversigtspanelet **Indlæs fra den globale lagermappe**, men du er sikker på, at dette ER-format er gemt i GR, skal du vælge indstillingen **Synkroniser**. Dette vil opdatere den midlertidige lagerplads og synkronisere den med det aktuelle indhold af GR.
+Hvis du ikke kan se det krævede ER-format i oversigtspanelet **Indlæs fra den globale lagermappe**, men du er sikker på, at dette ER-format er gemt i GR, skal du vælge indstillingen **Synkroniser**. Denne indstilling opdaterer det midlertidige lager og synkroniserer det med det aktuelle indhold af GR.
 
 ## <a name="feature-activation"></a>Funktionsaktivering
 

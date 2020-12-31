@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997393"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683641"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
@@ -56,15 +56,15 @@ I Supply Chain Management skal felterne **Websted** og **Lagersted** udfyldes fo
 
 Nummerserierne til Supply Chain Management og Sales forbindes ikke, når tilbud og ordrer oprettes og synkroniseres i Sales og Supply Chain Management. Hvis en salgsordre, der er oprettet i Sales, synkroniseres med Supply Chain Management, har den samme salgsordrenummer i Supply Chain Management. Du skal bruge forskellige nummerserie systemer i de to apps for at sikre, at salgsordrenummeret ikke er duplikeret.
 
-Hvis nummerserien i Supply Chain Management f.eks. er **1, 2, 3, 4, 5,...** , og nummerserien i Sales er **100, 99, 98,...**. Hvis du opretter 100 salgsordrer i Sales, vil der efterhånden blive genereret et ordrenummer, som allerede findes i Supply Chain Management. Med andre ord vil de to nummerserier senere overlappe, efterhånden som der oprettes salgsordrer i Supply Chain Management og Sales. Du kan i stedet bruge en nummerserie som f.eks. **F1, F2, F3,...** i Supply Chain Management og en nummerserie som f.eks. **C1, C2, C3,...** i Sales. Disse nummerserier medfører aldrig identiske salgsordrenumre.
+Hvis nummerserien i Supply Chain Management f.eks. er **1, 2, 3, 4, 5,...**, og nummerserien i Sales er **100, 99, 98,...**. Hvis du opretter 100 salgsordrer i Sales, vil der efterhånden blive genereret et ordrenummer, som allerede findes i Supply Chain Management. Med andre ord vil de to nummerserier senere overlappe, efterhånden som der oprettes salgsordrer i Supply Chain Management og Sales. Du kan i stedet bruge en nummerserie som f.eks. **F1, F2, F3,...** i Supply Chain Management og en nummerserie som f.eks. **C1, C2, C3,...** i Sales. Disse nummerserier medfører aldrig identiske salgsordrenumre.
 
 ## <a name="sales-quotations"></a>Salgstilbud
 
 Salgstilbud kan oprettes i Sales eller i Supply Chain Management. Hvis du opretter et tilbud i Sales, synkroniseres det med Supply Chain Management i realtid. Hvis du tilsvarende opretter et tilbud i Supply Chain Management, synkroniseres det med Sales i realtid. Vær opmærksom på følgende punkter:
 
-+ Du kan føje en rabat til produktet i tilbuddet. I dette tilfælde synkroniseres rabatten med Supply Chain Management. Felterne **Rabat** , **Gebyrer** og **Moms** i hovedet styres af en opsætning i Supply Chain Management. Denne opsætning understøtter ikke integrationstilknytning. I stedet administreres og håndteres felterne **Pris** , **Rabat** , **Tillæg** og **Moms** af Supply Chain Management.
-+ Felterne **Rabatprocent** , **Rabat** og **Fragtbeløb** i salgstilbuddets overskrift er skrivebeskyttede.
-+ Felterne **Fragtbetingelser** , **Leveringsbetingelser** , **Leveringsmetode** og **Leveringstilstand** er ikke del af standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
++ Du kan føje en rabat til produktet i tilbuddet. I dette tilfælde synkroniseres rabatten med Supply Chain Management. Felterne **Rabat**, **Gebyrer** og **Moms** i hovedet styres af en opsætning i Supply Chain Management. Denne opsætning understøtter ikke integrationstilknytning. I stedet administreres og håndteres felterne **Pris**, **Rabat**, **Tillæg** og **Moms** af Supply Chain Management.
++ Felterne **Rabatprocent**, **Rabat** og **Fragtbeløb** i salgstilbuddets overskrift er skrivebeskyttede.
++ Felterne **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke del af standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
 
 Hvis du også bruger løsningen Field Service, skal du sørge for at aktivere parameteren **Opret hurtigt tilbudslinjen** igen. Hvis du aktiverer parameteren igen, kan du fortsætte med at oprette tilbudslinjer ved hjælp af funktionen til hurtig oprettelse.
 1. Naviger til dit Dynamics 365 Sales-program.
@@ -72,7 +72,7 @@ Hvis du også bruger løsningen Field Service, skal du sørge for at aktivere pa
 3. Vælg **Avancerede indstillinger**.
 4. Vælg indstillingen **Tilpas systemet**.
 5. Vælg menupunktet **Tilbudslinje**.
-6. Gå til området **Datatjenester** , og markér afkrydsningsfeltet **Tillad hurtig oprettelse**.
+6. Gå til området **Datatjenester**, og markér afkrydsningsfeltet **Tillad hurtig oprettelse**.
 
 ## <a name="sales-orders"></a>Salgsordre
 
@@ -98,7 +98,7 @@ Hvis du synkroniserer fra Supply Chain Management til Sales, får du følgende r
 
 ## <a name="dual-write-solution-for-sales"></a>Løsning med to skrivninger til Sales
 
-Nye felter er føjet til enheden **Ordre** og vises på siden. De fleste af disse felter vises under fanen **Integration** i Sales. Yderligere oplysninger om, hvordan statusfelterne tilknyttes, finder du i dokumentationsemnet [Konfigurere tilknytningen af statusfelter for salgsordre](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
+Nye felter er føjet til enheden **Ordre** og vises på siden. De fleste af disse felter vises under fanen **Integration** i Sales. Yderligere oplysninger om, hvordan statusfelterne tilknyttes, finder du under [Konfigurere tilknytningen af statusfelter for salgsordre](sales-status-map.md).
 
 + Knapperne **Opret faktura** og **Annuller ordre** på siden **Salgsordre** er skjult i Sales.
 + Værdien **Salgsordrestatus** forbliver **Aktiv** for at sikre, at ændringer fra Supply Chain Management kan strømme til salgsordren i Sales. Standardværdien for **Statecode \[Status\]** skal angives til **Aktiv** for at styre denne funktion.
@@ -109,12 +109,12 @@ Salgsfakturaer oprettes i Supply Chain Management og synkroniseres til Sales. V�
 
 + Feltet **Fakturanummer** er føjet til enheden **Faktura** og vises på siden.
 + Knappen **Opret faktura** på siden **Salgsordre** er skjult, da fakturaer oprettes i Supply Chain Management og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres, fordi fakturaer synkroniseres fra Supply Chain Management.
-+ Værdien **Salgsordrestatus** ændres automatisk til **Faktureret** , når den relaterede faktura fra Supply Chain Management er blevet synkroniseret til Sales. Desuden tildeles ejeren af den salgsordre, hvorfra fakturaen blev oprettet, som ejer af fakturaen. Ejeren af salgsordren kan derfor få vist fakturaen.
-+ Felterne **Fragtvilkår** , **Leveringsbetingelser** og **Leveringstilstand** indgår ikke i standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
++ Værdien **Salgsordrestatus** ændres automatisk til **Faktureret**, når den relaterede faktura fra Supply Chain Management er blevet synkroniseret til Sales. Desuden tildeles ejeren af den salgsordre, hvorfra fakturaen blev oprettet, som ejer af fakturaen. Ejeren af salgsordren kan derfor få vist fakturaen.
++ Felterne **Fragtvilkår**, **Leveringsbetingelser** og **Leveringstilstand** indgår ikke i standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
 
 ## <a name="templates"></a>Skabeloner
 
-Kundeemne til kontant omfatter en samling af centrale enhedstilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
+Kundeemne til kontant omfatter en samling af centrale tabeltilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
 | Finance and Operations-apps | Modelstyrede apps i Dynamics 365 | Beskrivende tekst |
 |-----------------------------|-----------------------------------|-------------|
@@ -126,7 +126,7 @@ Kundeemne til kontant omfatter en samling af centrale enhedstilknytninger, der a
 | CDS-salgstilbudshoved  | pristilbud                            |             |
 | CDS-salgstilbudslinjer   | quotedetails                      |             |
 
-Her er de relaterede kerneenhedstilknytninger for kundeemne til kontant:
+Her er de relaterede kernetabeltilknytninger for kundeemne til kontant:
 
 + [Debitorer V3 til konti](customer-mapping.md#customers-v3-to-accounts)
 + [CDS kontakter V2 til kontakter](customer-mapping.md#cds-contacts-v2-to-contacts)

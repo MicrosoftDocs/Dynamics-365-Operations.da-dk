@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997912"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683593"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Foretage fejlfinding af problemer i forbindelse med opgraderinger af Finance and Operations-apps
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Common Data Service. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer relateret til opgraderinger af Finance and Operations-apps.
+
+Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer relateret til opgraderinger af Finance and Operations-apps.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
@@ -40,10 +42,10 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 **Påkrævet rolle for at rette fejlen:** Systemadministrator
 
-Du kan få vist en fejlmeddelelse, der ligner følgende eksempel, når du forsøger at bruge **DualWriteProjectConfiguration** -enheden til at opdatere en Finance and Operations-app til Platform Update 30.
+Du kan få vist en fejlmeddelelse, der ligner følgende eksempel, når du forsøger at bruge **DualWriteProjectConfiguration**-enheden til at opdatere en Finance and Operations-app til Platform Update 30.
 
 ```console
-Infolog diagnostic message: 'Cannot select a record in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
+Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
 10/28/2019 15:18:20: Application configuration sync failed.
 Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw exception(s), please investigate before synchronizing again: 'InfoException:Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN."
 ```
@@ -73,19 +75,19 @@ På siden **Dobbeltskrivning** kan du få vist en fejlmeddelelse, der ligner fø
 Hvis du vil løse problemet, skal du først følge disse trin for at sikre, at felterne findes i enheden.
 
 1. Log på den virtuelle maskine for Finance and Operations-appen.
-2. Gå til **Arbejdsområder \> Datastyring** , vælg feltet **Rammeparametre** , og vælg derefter **Enhedsindstillinger** under fanen **Opdater liste over enheder** for at opdatere enhederne.
-3. Gå til **Arbejdsområder \> Datastyring** , vælg fanen **Dataenheder** , og kontroller, at enheden er angivet. Hvis enheden ikke vises, skal du logge på den virtuelle maskine for Finance and Operations-appen og kontrollere, at enheden er tilgængelig.
-4. Åbn siden **Enhedstilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
-5. Vælg **Opdater liste over enheder** , så felterne i enhedstilknytninger automatisk udfyldes.
+2. Gå til **Arbejdsområder \> Datastyring**, vælg feltet **Rammeparametre**, og vælg derefter **Opdater liste over enheder** under fanen **Tabelindstillinger** for at opdatere tabellerne.
+3. Gå til **Arbejdsområder \> Datastyring**, vælg fanen **Datatabeller**, og kontrollér, at enheden er angivet. Hvis enheden ikke vises, skal du logge på den virtuelle maskine for Finance and Operations-appen og kontrollere, at enheden er tilgængelig.
+4. Åbn siden **Tabeltilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
+5. Vælg **Opdater liste over enheder**, så felterne i tabeltilknytninger automatisk udfyldes.
 
 Hvis problemet stadig ikke er løst, skal du følge disse trin.
 
 > [!IMPORTANT]
 > Disse trin fører dig gennem processen til sletning af en enhed og derefter tilføjelse af den igen. Hvis du vil undgå problemer, skal du sørge for at følge trinene nøjagtigt.
 
-1. Gå i Finance and Operations-appen til **Arbejdsområder \> Datastyring** , og marker feltet **Dataenheder**.
+1. Gå i Finance and Operations-appen til **Arbejdsområder \> Datastyring**, og markér feltet **Datatabeller**.
 2. Find den enhed, der mangler attributten. Klik på **Rediger måltilknytning** på værktøjslinjen.
 3. Klik på **Generér tilknytning** i ruden **Knyt midlertidig placering til mål**.
-4. Åbn siden **Enhedstilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
+4. Åbn siden **Tabeltilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
 5. Hvis attributten ikke udfyldes automatisk på tilknytningen, skal du tilføje den manuelt ved at klikke på knappen **Tilføj attribut** og derefter klikke på **Gem**. 
 6. Vælg tilknytningen, og klik på **Kør**.

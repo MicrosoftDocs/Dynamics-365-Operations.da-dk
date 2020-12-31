@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142449"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684541"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Redigere formater for at generere dokumenter, der har programdata
 
@@ -89,22 +88,23 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
 46. Klik på Bind.
 47. Udvid 'model' i træet.
 48. Udvid 'model\Transaktioner' i træet.
-49. Vælg 'Fil\Erklæring\Data\Element = model. Transaktioner\Varepost-id' i træet.
+49. Vælg 'Fil\Erklæring\Data\Element = model.Transaktioner\Varepost-id' i træet.
 50. Vælg 'model\Transaktioner\Varepost-id' i træet.
 51. Klik på Bind.
 52. Klik på Gem.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Ændre format for at huske rapporteringsoplysninger
+
 1. Klik på Knyt format til model.
 2. Klik på Ny.
 3. Angiv eller vælg rodelementet 'Til opdatering af programdata' i feltet Definition.
-    * Til opdatering af programdata  
+    * Til opdatering af programdata.
 4. Skriv 'Tilknytning for at opdatere data' i feltet Navn.
     * Tilknytning for at opdatere data  
 5. Klik på Gem.
-    * Denne tilknytning definerer, hvordan der indsamles oplysninger om Intrastat-rapporten i datamodellen, hvis struktur angives af det valgte rodelement 'Til opdatering af programdata'. Disse oplysninger, modeltilknytningen med rodelementet 'Til opdatering af programdata' og retningen 'Til destination' bruges til opdateringen af dataprogrammet. Opdateringen af programdataene starter umiddelbart efter, at den udgående Intrastat-rapport er oprettet. Bemærk, at opdateringen af programdataene kan springes over under kørslen, men datamodellen skal være tom (indeholde en liste over tomme poster).   
+    * Denne tilknytning definerer, hvordan der indsamles oplysninger om Intrastat-rapporten i datamodellen, hvis struktur angives af det valgte rodelement 'Til opdatering af programdata'. Disse oplysninger, modeltilknytningen med rodelementet 'Til opdatering af programdata' og retningen 'Til destination' bruges til opdateringen af dataprogrammet. Opdateringen af programdataene starter umiddelbart efter, at den udgående Intrastat-rapport er oprettet. Opdateringen af programdataene kan springes over under kørslen, men datamodellen skal være tom (indeholde en liste over tomme poster).
 6. Klik på Designer.
-    * Bemærk, at det udgående Intrastat-rapportformat som standard tilføjes som en datakilde til denne modeltilknytning.  
+    * Det udgående Intrastat-rapportformat tilføjes som standard som en datakilde til denne modeltilknytning.  
     * Bind elementer i den designede rapport (vist som datakilde) til elementer i datamodellen, der filtreres baseret på rodelementet for den valgte model.  
 7. Udvid 'Arkivér overskrift' i træet.
 8. Udvid 'Arkivér overskrift\Arkivér linjer' i træet.
@@ -120,8 +120,8 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
 18. Klik på Tilføj funktion.
 19. Udvid 'format' i træet.
 20. Udvid 'format\Erklæring: XML-Element(Erklæring)' i træet.
-21. Udvid 'format\Erklæring: XML-element(erklæring)\Data: XML-element 1..* (Data)' i træet.
-22. Vælg 'format\Erklæring: XML-element(erklæring)\Data: XML-element 1..* (Data)\Item: XML Element 0..* (element)' i træet.
+21. Udvid `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` i træet.
+22. Vælg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` i træet.
 23. Klik på Tilføj datakilde.
 24. Angiv 'COUNT(format.Declaration.Data.Item)' i feltet Formel.
     * COUNT(format. Declaration.Data.Item)  
@@ -130,23 +130,22 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
 27. Vælg 'Arkivér overskrift\Filnavn' i træet.
 28. Vælg 'format\Erklæring: XML Element(Erklæring)\Data: XML Element 1..* (Data)\Filnavn: Elementstreng(Filnavn)' i træet.
 29. Klik på Bind.
-30. Vælg 'format\Erklæring: XML-element(erklæring)\Data: XML-element 1..* (Data)\Element: XML Element 0..* (element)\Dim4:XML Element 1..1 (element)\nummer: Streng(nummer)' i træet.
+30. Vælg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)` i træet.
 31. Vælg 'Arkivér overskrift\Arkivér linjer\Varenummer' i træet.
 32. Klik på Bind.
-33. Vælg 'format\Erklæring: XML-element(erklæring)\Data: XML-element 1..* (Data)\Element: XML Element 0..* (element)\Dim3:XML Element 1..1 (beløb)\værdi: Numerisk realtal(værdi)' i træet.
+33. Vælg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)` i træet.
 34. Vælg 'Arkivér overskrift\Arkivér linjer\Beløb' i træet.
 35. Klik på Bind.
-36. Vælg 'format\Erklæring: XML Element(Erklæring)\Data: XML Element 1..* (Data)\Element: XML Element 0..* (Element)\Varepost-id: Element Int64(Varepost-id)'.
+36. Vælg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)` i træet.
 37. Vælg 'Arkivér overskrift\Arkivér linjer\Varepost-id' i træet.
 38. Klik på Bind.
 39. Vælg 'Arkivér overskrift\Arkivér linjer' i træet.
-40. Vælg 'format\Erklæring: XML-element(erklæring)\Data: XML-element 1..* (Data)\Item: XML Element 0..* (element)' i træet.
+40. Vælg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` i træet.
 41. Klik på Bind.
 42. Vælg 'Arkivér overskrift' i træet.
-43. Vælg 'format\Erklæring: XML Element(Erklæring)\Data: XML Element 1..* (Data)' i træet.
+43. Vælg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` i træet.
 44. Klik på Bind.
 45. Klik på Gem.
 46. Luk siden.
 47. Luk siden.
 48. Luk siden.
-

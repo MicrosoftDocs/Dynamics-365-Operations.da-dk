@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143093"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684373"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generere rapporter i Office-format, der har integrerede billeder
 
@@ -40,14 +39,14 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
     * Kør formatet til testformål.  
 6. Vælg Ja i feltet Omsætteligt checkformat.
 7. Klik på OK.
-    * Gennemse det oprettede output. Bemærk, at firmaets logo vises i rapporten sammen med den autoriserede persons signatur. Signaturbilledet hentes fra feltet af 'Container'-datatypen i den checklayoutpost, der er tilknyttet den valgte bankkonto.  
+    * Gennemse det oprettede output. Firmaets logo vises i rapporten sammen med den autoriserede persons signatur. Signaturbilledet hentes fra feltet af 'Container'-datatypen i den checklayoutpost, der er tilknyttet den valgte bankkonto.  
 8. Udvid sektionen Kopier.
 9. Klik på Rediger.
 10. Angiv 'Udskriv vandmærke som Ugyldig' i feltet Vandmærke.
     * Rediger indstillingen for vandmærkelayout, så den viser vandmærketeksten i dokumentoprettelse i et Excel-figurelement.  
 11. Klik på Udskriv prøve.
 12. Klik på OK.
-    * Gennemse det oprettede output. Bemærk, at vandmærket vises i den oprettede rapport i henhold til markeringsindstillingen.  
+    * Gennemse det oprettede output. Vandmærket vises i den oprettede rapport i henhold til markeringsindstillingen.  
 13. Luk siden.
 14. Klik på Administrer betalinger i handlingsruden.
 15. Klik på Checks.
@@ -56,7 +55,7 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
 18. Markér alle poster på listen.
 19. Klik på Udskriv checkkopi.
     * Kør formatet for at udskrive de valgte checks igen.  
-    * Gennemse det oprettede output. Bemærk, at de valgte checks er udskrevet igen. Firmaets logo og etiketter udskrives ikke, fordi de præsenteres i den fortrykte formular.  
+    * Gennemse det oprettede output. De valgte checks er udskrevet igen. Firmaets logo og etiketter udskrives ikke, fordi de præsenteres i den fortrykte formular.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Ændre tilknytningen af den importerede datamodel
 1. Luk siden.
@@ -91,7 +90,7 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
 4. Klik på Kontroller.
 5. Klik på Udskriv prøve.
 6. Klik på OK.
-    * Gennemse det oprettede output. Bemærk, at billedet fra den vedhæftede fil i Dokumentstyring vises som en autoriseret persons signatur.  
+    * Gennemse det oprettede output. Billedet fra den vedhæftede fil i Dokumentstyring vises som en autoriseret persons signatur.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Bruge MS Word-dokument som en skabelon i det importerede format
 1. Luk siden.
@@ -118,5 +117,5 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
 21. Klik på Kontroller.
 22. Klik på Udskriv prøve.
 23. Klik på OK.
-    * Gennemse det oprettede output. Bemærk, at outputtet er oprettet som et Microsoft Word-dokument med integrerede billeder, der viser firmaets logo, en autoriseret persons signatur og den markerede tekst i vandmærket.  
+    * Gennemse det oprettede output. Outputtet er oprettet som et Word-dokument med integrerede billeder, der viser firmaets logo, en autoriseret persons signatur og den markerede tekst i vandmærket.  
 

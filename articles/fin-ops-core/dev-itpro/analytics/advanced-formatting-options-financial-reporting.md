@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5dbc856f21b6398109ab1ac4da409252050385df
-ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
+ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4011573"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683157"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
@@ -195,11 +194,11 @@ Den celle til **kolonnebegrænsning** i en rækkedefinition har flere formål. A
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Bruge en beregningsformel i en rækkedefinition
 
-En beregningsformel i en rækkedefinition kan omfatte operatorerne **+** , **-** , **\*** og **/** og også **IF/THEN/ELSE** -sætninger. Desuden kan en beregning omfatte individuelle celler og absolutte beløb (faktiske tal, der indgår i formlen). Formlen kan indeholde op til 1.024 tegn. Beregninger kan ikke anvendes til rækker, der indeholder celler af typen **Link til økonomiske dimensioner** (FD). Du kan dog medtage beregninger på fortløbende rækker, undertrykke udskrivning af disse rækker og derefter lægge beregningsrækkerne sammen.
+En beregningsformel i en rækkedefinition kan omfatte operatorerne **+**, **-**, **\**_ og _*/** og også **IF/THEN/ELSE**-sætninger. Desuden kan en beregning omfatte individuelle celler og absolutte beløb (faktiske tal, der indgår i formlen). Formlen kan indeholde op til 1.024 tegn. Beregninger kan ikke anvendes til rækker, der indeholder celler af typen **Link til økonomiske dimensioner** (FD). Du kan dog medtage beregninger på fortløbende rækker, undertrykke udskrivning af disse rækker og derefter lægge beregningsrækkerne sammen.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatorer i en formel til beregning
 
-En formel til beregning bruger mere komplekse operatorer end en formel til sammenlægning af beløb i rækker. Du kan dog bruge operatorerne **\*** og **/** sammen med de ekstra operatorer, hvis du vil gange (\*) og dividere (/) beløb. Hvis du vil bruge et interval eller en sum i en formel til beregning, skal du bruge @-tegnet foran en rækkekode, medmindre du bruger en kolonne i rækkedefinitionen. Hvis du for eksempel vil lægge beløbet i række 100 sammen med beløbet i række 330, kan du bruge rækketotalformlen **100+330** eller beregningsformlen **@100+@330**.
+En formel til beregning bruger mere komplekse operatorer end en formel til sammenlægning af beløb i rækker. Du kan dog bruge operatorerne **\**_ og _*/** sammen med de ekstra operatorer, hvis du vil gange (\*) og dividere (/) beløb. Hvis du vil bruge et interval eller en sum i en formel til beregning, skal du bruge @-tegnet foran en rækkekode, medmindre du bruger en kolonne i rækkedefinitionen. Hvis du for eksempel vil lægge beløbet i række 100 sammen med beløbet i række 330, kan du bruge rækketotalformlen **100+330** eller beregningsformlen **@100+@330**.
 
 > [!NOTE]
 > Du skal @-tegnet før hver rækkekode, der bruges i en beregningsformel. I modsat fald læses tallet som et absolut beløb. Formlen **@100+330** føjer f.eks. 330 kr. til beløbet i række 100. Når du henviser til en kolonne i en beregningsformel, er tegnet (@) ikke påkrævet.
@@ -207,12 +206,12 @@ En formel til beregning bruger mere komplekse operatorer end en formel til samme
 ### <a name="create-a-calculation-formula"></a>Oprette en beregningsformel
 
 1. Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
-2. Dobbeltklik på cellen **formateringskode** , og vælg derefter **CAL**.
+2. Dobbeltklik på cellen **formateringskode**, og vælg derefter **CAL**.
 3. Angiv beregningsformlen i cellen **Relaterede formler/rækker/enheder**.
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Eksempel på en beregningsformel for bestemte rækker
 
-I dette eksempel betyder beregningsformlen **@100+@330** , at beløbet i række 100 lægges til beløbet i række 330. Rækketotalformlen **340 + 370** føjer beløbet i række 340 til beløbet i række 370. (Beløbet i række 370 er beløbet fra beregningsformlen).
+I dette eksempel betyder beregningsformlen **@100+@330**, at beløbet i række 100 lægges til beløbet i række 330. Rækketotalformlen **340 + 370** føjer beløbet i række 340 til beløbet i række 370. (Beløbet i række 370 er beløbet fra beregningsformlen).
 
 | Rækkekode | Beskrivelse                 | formateringskode | Relaterede formler/rækker/enhed | Udskriftsstyring | Rækkemodifikator | Link til økonomiske dimensioner |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
@@ -220,14 +219,14 @@ I dette eksempel betyder beregningsformlen **@100+@330** , at beløbet i række 
 | 370      | Likvid beholdning, starten af året   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Likvid beholdning - periodens start | TOT         | 340+370                    |               |              |                              |
 
-Når rækken i en rækkedefinition har formateringskoden **CAL** , og du indtaster en matematisk beregning i cellen **Relaterede formler/rækker/enheder** , skal du også angive bogstavet for den tilknyttede kolonne og række i rapporten. Angiv f.eks. **A.120** for at repræsentere kolonne A, række 120. Du kan også bruge et (@) tegn til at angive alle kolonnerne. Angiv f.eks. **@120** for at repræsentere alle kolonner i række 120. En matematisk beregning, der ikke har et kolonnebogstav eller et (@) tegn antages at være et reelt tal.
+Når rækken i en rækkedefinition har formateringskoden **CAL**, og du indtaster en matematisk beregning i cellen **Relaterede formler/rækker/enheder**, skal du også angive bogstavet for den tilknyttede kolonne og række i rapporten. Angiv f.eks. **A.120** for at repræsentere kolonne A, række 120. Du kan også bruge et (@) tegn til at angive alle kolonnerne. Angiv f.eks. **@120** for at repræsentere alle kolonner i række 120. En matematisk beregning, der ikke har et kolonnebogstav eller et (@) tegn antages at være et reelt tal.
 
 > [!NOTE]
-> Hvis du bruger en etiketrækkekode til at henvise til en række, skal du bruge et punktum (.) som separator mellem kolonnebogstavet og etiketten (for eksempel **A.GROSS\_MARGIN/A.SALES** ). Hvis du bruger et snabel-a (@), skal du ikke bruge et skilletegn, (f.eks. **\@GROSS\_MARGIN/@SALES** ).
+> Hvis du bruger en etiketrækkekode til at henvise til en række, skal du bruge et punktum (.) som separator mellem kolonnebogstavet og etiketten (for eksempel **A.GROSS\_MARGIN/A.SALES**). Hvis du bruger et snabel-a (@), skal du ikke bruge et skilletegn, (f.eks. **\@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Eksempel på en beregningsformel for en bestemt kolonne
 
-I dette eksempel betyder beregningsformlen **E=C.340** , at beregningen i cellen i kolonne C, række 340 kun udføres for kolonne E.
+I dette eksempel betyder beregningsformlen **E=C.340**, at beregningen i cellen i kolonne C, række 340 kun udføres for kolonne E.
 
 > [!NOTE]
 > Når du henviser til en kolonne i en beregningsformel, er tegnet (@) ikke påkrævet.
@@ -242,8 +241,8 @@ I dette eksempel betyder beregningsformlen **E=C.340** , at beregningen i cellen
 
 Når du ændrer et tal eller en beregning i en kolonne i en bestemt række men ikke vil påvirke andre kolonner i rapporten, kan du angive **CAL** (beregning) i kolonnen **Formateringskode** i rækkedefinitionen.
 
-- Hvis du vil udføre en beregning på alle rapportkolonner ( **FD** ), skal du ikke angive en kolonnetildeling.
-- Hvis du vil begrænse en formel til bestemte kolonner, skal du indtaste kolonnebogstavet, et lighedstegn ( **=** ) og derefter formlen.
+- Hvis du vil udføre en beregning på alle rapportkolonner (**FD**), skal du ikke angive en kolonnetildeling.
+- Hvis du vil begrænse en formel til bestemte kolonner, skal du indtaste kolonnebogstavet, et lighedstegn (**=**) og derefter formlen.
 - Du kan angive flere kolonner. Når du bruger et @-tegn med en bestemt kolonneplacering, er @-tegnet relateret til rækken.
 - Du kan angive flere kolonneformler i én række. Adskil formlerne med kommaer.
 
@@ -257,37 +256,37 @@ Når du ændrer et tal eller en beregning i en kolonne i en bestemt række men i
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>IF/THEN/ELSE-sætninger i en rækkedefinition
 
-**IF/THEN/ELSE** -sætninger kan føjes til en hvilken som helst gyldig beregning og bruges sammen med formatet **CAL**. Du indtaster **IF/THEN/ELSE** -beregningsformler i cellen i kolonnen **Relaterede formler/rækker/enheder**. **IF/THEN/ELSE** -beregningsformler bruger følgende format: IF &lt;sand/falsk-sætning&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; Delen **ELSE &lt;formel&gt;** af sætningen er valgfri.
+**IF/THEN/ELSE**-sætninger kan føjes til en hvilken som helst gyldig beregning og bruges sammen med formatet **CAL**. Du indtaster **IF/THEN/ELSE**-beregningsformler i cellen i kolonnen **Relaterede formler/rækker/enheder**. **IF/THEN/ELSE**-beregningsformler bruger følgende format: IF &lt;sand/falsk-sætning&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; Delen **ELSE &lt;formel&gt;** af sætningen er valgfri.
 
 #### <a name="if-statements"></a>IF-sætninger
 
-Den sætning, der følger efter **IF** -sætningen, kan være enhver sætning, der kan evalueres som sand eller falsk. Den sætning, der følger efter **IF** -sætningen, kan omfatte en enkel vurdering, eller det kan være en kompleks sætning, der kan indeholde flere udtryk. Her er nogle eksempler:
+Den sætning, der følger efter **IF**-sætningen, kan være enhver sætning, der kan evalueres som sand eller falsk. Den sætning, der følger efter **IF**-sætningen, kan omfatte en enkel vurdering, eller det kan være en kompleks sætning, der kan indeholde flere udtryk. Her er nogle eksempler:
 
 - **IF A.200&gt;0** (enkel evaluering)
 - **IF A.200&gt;0 AND A.200&lt;10,000** (kompleks sætning)
 - **IF A.200&gt;10000 OR ((A.340/B.1200)\*2 &lt;1200)** (kompleks sætning, der indeholder flere udtryk)
 
-Udtrykket **Perioder** i en **IF** -sætning angiver antallet af perioder for rapporten. Dette udtryk bruges typisk til at beregne et gennemsnit for år til dato. Når du for eksempel kører en rapport for perioden 7 år til dato, betyder sætningen **B.150/perioder** , at værdien i række 150 i kolonne B divideres med 7.
+Udtrykket **Perioder** i en **IF**-sætning angiver antallet af perioder for rapporten. Dette udtryk bruges typisk til at beregne et gennemsnit for år til dato. Når du for eksempel kører en rapport for perioden 7 år til dato, betyder sætningen **B.150/perioder**, at værdien i række 150 i kolonne B divideres med 7.
 
 #### <a name="then-and-else-formulas"></a>THEN- og ELSE-formler
 
-**THEN** - og **ELSE** -formler kan være en hvilken som helst gyldig beregning fra meget enkle værditildelinger til komplekse formler. Eksempelvis betyder sætningen **IF A.200&gt;0 THEN A=B.200** "hvis værdien i cellen i kolonne A i række 200 er større end 0 (nul), skal værdien i cellen i kolonne B i række 200 placeres i cellen i kolonne A i den aktuelle række." Den foregående **IF/THEN** -sætning anbringer en værdi i en kolonne i den aktuelle række. Du kan dog også bruge @-tegnet i sand/falsk-vurderinger eller formlen til at repræsentere alle kolonner. Her er nogle eksempler, der er beskrevet i følgende afsnit:
+**THEN**- og **ELSE**-formler kan være en hvilken som helst gyldig beregning fra meget enkle værditildelinger til komplekse formler. Eksempelvis betyder sætningen **IF A.200&gt;0 THEN A=B.200** "hvis værdien i cellen i kolonne A i række 200 er større end 0 (nul), skal værdien i cellen i kolonne B i række 200 placeres i cellen i kolonne A i den aktuelle række." Den foregående **IF/THEN**-sætning anbringer en værdi i en kolonne i den aktuelle række. Du kan dog også bruge @-tegnet i sand/falsk-vurderinger eller formlen til at repræsentere alle kolonner. Her er nogle eksempler, der er beskrevet i følgende afsnit:
 
-- **IF A.200 &gt;0 THEN B.200** : Hvis værdien i celle A.200 er positiv, anbringes værdien fra celle B.200 i hver kolonne i den aktuelle række.
-- **IF A.200 &gt;0 THEN @200** : Hvis værdien i celle A.200 er positiv, anbringes værdien fra hver kolonne i række 200 i den tilsvarende kolonne i den aktuelle række.
-- **IF @200 &gt;0 THEN @200** : Hvis værdien i række 200 i den aktuelle kolonne er positiv, anbringes værdien fra række 200 i den samme kolonne i den aktuelle række.
+- **IF A.200 &gt;0 THEN B.200**: Hvis værdien i celle A.200 er positiv, anbringes værdien fra celle B.200 i hver kolonne i den aktuelle række.
+- **IF A.200 &gt;0 THEN @200**: Hvis værdien i celle A.200 er positiv, anbringes værdien fra hver kolonne i række 200 i den tilsvarende kolonne i den aktuelle række.
+- **IF @200 &gt;0 THEN @200**: Hvis værdien i række 200 i den aktuelle kolonne er positiv, anbringes værdien fra række 200 i den samme kolonne i den aktuelle række.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begrænse en beregning til en rapporteringsenhed i en rækkedefinition
 
-For at begrænse en beregning til en enkelt rapporteringsenhed i et rapporteringstræ, så det beregnede beløb ikke akkumuleres til en enhed på et højere niveau, kan du bruge koden **@Unit** i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen. Koden **@Unit** er angivet i kolonne B i rapporteringstræet, **Enhedsnavn**. Når du bruger koden **@Unit** , akkumuleres værdierne ikke, men beregningen evalueres på hvert niveau i rapporteringstræet.
+For at begrænse en beregning til en enkelt rapporteringsenhed i et rapporteringstræ, så det beregnede beløb ikke akkumuleres til en enhed på et højere niveau, kan du bruge koden **\@Unit** i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen. Koden **\@Unit** er angivet i kolonne B i rapporteringstræet, **Enhedsnavn**. Når du bruger koden **\@Unit**, akkumuleres værdierne ikke, men beregningen evalueres på hvert niveau i rapporteringstræet.
 
 > [!NOTE]
 > Hvis du vil bruge denne funktion, skal der knyttes et rapporteringstræ til rækkedefinitionen.
 
-Beregningsrækken kan henvise til en beregningsrække eller en række med økonomiske data. Beregningen er registreret i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen og begrænsningen af typen økonomiske data. Beregningen skal bruge en betinget beregning, der starter med en **IF @Unit** -konstruktion. Her er et eksempel: IF @Unit(SALES) THEN @100 ELSE 0 Denne beregning medtager beløbet fra række 100 i hver kolonne i rapporten men kun for enheden SALG. Hvis flere enheder navngives SALG, vises beløbet i hver af disse enheder. Desuden kan række 100 være en række med økonomiske data række og kan defineres som en række, der ikke udskrives. I så fald forhindres beløbet i at blive vist i alle enheder i træet. Du kan også begrænse beløbet til en enkelt kolonne i rapporten, såsom kolonne H, ved hjælp af en kolonnebegrænsning, så værdien kun udskrives i den pågældende kolonne i rapporten. Du kan medtage **OR** -kombinationer i en **IF** -sætning. Her er et eksempel: IF @Unit(SALES) OR @Unit(SALESWEST) og THEN 5 ELSE @100 Du kan angive en enhed i en begrænsning af typen beregning på en af følgende måder:
+Beregningsrækken kan henvise til en beregningsrække eller en række med økonomiske data. Beregningen er registreret i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen og begrænsningen af typen økonomiske data. Beregningen skal bruge en betinget beregning, der starter med en **IF @Unit**-konstruktion. Her er et eksempel: IF @Unit(SALES) THEN @100 ELSE 0 Denne beregning medtager beløbet fra række 100 i hver kolonne i rapporten men kun for enheden SALG. Hvis flere enheder navngives SALG, vises beløbet i hver af disse enheder. Desuden kan række 100 være en række med økonomiske data række og kan defineres som en række, der ikke udskrives. I så fald forhindres beløbet i at blive vist i alle enheder i træet. Du kan også begrænse beløbet til en enkelt kolonne i rapporten, såsom kolonne H, ved hjælp af en kolonnebegrænsning, så værdien kun udskrives i den pågældende kolonne i rapporten. Du kan medtage **OR**-kombinationer i en **IF**-sætning. Her er et eksempel: IF @Unit(SALES) OR @Unit(SALESWEST) og THEN 5 ELSE @100 Du kan angive en enhed i en begrænsning af typen beregning på en af følgende måder:
 
 - Indtast et enhedsnavn for at medtage enheder, der matcher. For eksempel aktiverer **IF @Unit(SALES)** beregningen af enhver enhed med navnet SALG, selvom der er flere enheder med navnet SALG i rapporteringstræet.
-- Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel **IF @Unit(ACME:SALES** ) for at begrænse beregningen til enheder med navnet SALG i firmaet ACME.
+- Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel **IF @Unit(ACME:SALES**) for at begrænse beregningen til enheder med navnet SALG i firmaet ACME.
 - Angiv den fulde hierarkikode fra rapporteringstræet for at begrænse beregningen til en bestemt enhed. Angiv for eksempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -296,12 +295,12 @@ Beregningsrækken kan henvise til en beregningsrække eller en række med økono
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begrænse en beregning til en enhed i trædiagram
 
 1. Klik på **Rækkedefinitioner** i Rapportdesigner, og åbn derefter en rækkedefinition, der skal ændres.
-2. Dobbeltklik på cellen **formateringskode** , og vælg derefter **CAL**.
-3. Klik på cellen **Relaterede formler/rækker/enheder** , og angiv derefter en betinget beregning, der starter med en **IF @Unit** -konstruktion.
+2. Dobbeltklik på cellen **formateringskode**, og vælg derefter **CAL**.
+3. Klik på cellen **Relaterede formler/rækker/enheder**, og angiv derefter en betinget beregning, der starter med en **IF @Unit**-konstruktion.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-sætninger i en kolonnedefinition
 
-En **IF/THEN/ELSE** -sætning gør det muligt for enhver beregning at afhænge af resultaterne fra en anden kolonne. Du kan henvise til andre kolonner, men du kan ikke referere til en celle i rapporten i **IF** -sætningen. En beregning skal gælde for hele kolonnen. For eksempel betyder sætningen **IF B&gt;100 THEN B ELSE C\*1,25** betyder "Hvis beløbet i kolonne B er større end 100, placeres værdien fra kolonne B i kolonnen **CALC**. Hvis beløbet i kolonne B ikke er større end 100, ganges værdien i kolonne C med 1,25, og resultatet placeres i kolonnen **CALC**. " **IF** -sætningen skal altid ledsages af en logisk sætning, der kan evalueres som sand eller falsk. De formler, du bruger til både **THEN** -sætningen og **ELSE** -sætningen kan indeholde henvisninger til et vilkårligt antal kolonner, og disse formler kan være lige så komplekse, du ønsker.
+En **IF/THEN/ELSE**-sætning gør det muligt for enhver beregning at afhænge af resultaterne fra en anden kolonne. Du kan henvise til andre kolonner, men du kan ikke referere til en celle i rapporten i **IF**-sætningen. En beregning skal gælde for hele kolonnen. For eksempel betyder sætningen **IF B&gt;100 THEN B ELSE C\*1,25** betyder "Hvis beløbet i kolonne B er større end 100, placeres værdien fra kolonne B i kolonnen **CALC**. Hvis beløbet i kolonne B ikke er større end 100, ganges værdien i kolonne C med 1,25, og resultatet placeres i kolonnen **CALC**. " **IF**-sætningen skal altid ledsages af en logisk sætning, der kan evalueres som sand eller falsk. De formler, du bruger til både **THEN**-sætningen og **ELSE**-sætningen kan indeholde henvisninger til et vilkårligt antal kolonner, og disse formler kan være lige så komplekse, du ønsker.
 
 > [!NOTE]
 > Du kan ikke placere resultaterne af en beregning i en anden kolonne. Resultaterne skal være i den kolonne, der indeholder formlen.

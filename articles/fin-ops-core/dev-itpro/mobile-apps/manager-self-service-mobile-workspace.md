@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c2ad5f30ed0e69df1769eb0379b5da2865d4ce4f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005603"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680964"
 ---
 # <a name="my-team-mobile-workspace"></a>Arbejdsområdet Mit team til mobilenheder
 
@@ -84,16 +83,16 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 [![Træk for at opdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Få vist teammedlemmer ved hjælp af arbejdsområdet Mit team til mobilenheder
-1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som han eller hun har.
+1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som medlemmet har.
 2.  Vælg et teammedlem. Siden **Oversigt over teammedlem** vises. Oplysningerne på denne side indeholder teammedlemmets fødselsdato, anciennitetsdato, antal år i tjeneste, år i den aktuelle stilling og kompensationsoplysninger.
 
 ## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>Få vist udvidede teammedlemmer ved hjælp af arbejdsområdet Mit team til mobilenheder
-1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som han eller hun har.
+1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som medlemmet har.
 1.  Vælg linket **Direkte rapporter**. Der vises en oversigt over dit udvidede team.
 1.  Vælg et teammedlem. Siden **Oversigt over teammedlem** vises. Oplysningerne på denne side indeholder teammedlemmets fødselsdato, anciennitetsdato, antal år i tjeneste, år i den aktuelle stilling og kompensationsoplysninger.
 
 ## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>Sende ros om teammedlemmer ved hjælp af arbejdsområdet Mit team til mobilenheder
-1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som han eller hun har.
+1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som medlemmet har.
 1.  Vælg et teammedlem. Siden **Oversigt over teammedlem** vises.
 1.  Vælg **Send ros**. 
 1. Angiv teksten til den ros, du vil sende. 

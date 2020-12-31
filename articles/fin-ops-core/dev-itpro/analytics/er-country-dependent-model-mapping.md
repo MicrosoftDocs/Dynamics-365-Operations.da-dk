@@ -1,6 +1,6 @@
 ---
 title: Konfigurer ER-modeltilknytninger ud fra landeafhængighed
-description: Dette emne beskriver, hvordan du kan konfigurere ER-modeltilknytninger, så de afhænger af den juridiske enheds lande-/områdekontekst, der styrer brugen af dem.
+description: Dette emne beskriver, hvordan du kan konfigurere ER-modeltilknytninger, så de afhænger af den juridiske enheds land/område-kontekst, der styrer brugen af dem.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/11/2019
@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781139"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680869"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurer ER-modeltilknytninger ud fra landeafhængighed
 
 [!include[banner](../includes/banner.md)]
 
-Du kan konfigurere modeltilknytninger for Elektronisk rapportering (ER), så de implementerer en generisk ER-datamodel, men er specifikke for Dynamics 365 Finance. Dette emne beskriver, hvordan du kan designe flere ER-modeltilknytninger for en ER-datamodel til at styre, hvordan de bruges af tilsvarende ER-formater, der køres fra firmaer, der har forskellige lande-/områdekontekster.
+Du kan konfigurere modeltilknytninger for Elektronisk rapportering (ER), så de implementerer en generisk ER-datamodel, men er specifikke for Dynamics 365 Finance. Dette emne beskriver, hvordan du kan designe flere ER-modeltilknytninger for en ER-datamodel til at styre, hvordan de bruges af tilsvarende ER-formater, der køres fra firmaer, der har forskellige land/område-kontekster.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -45,7 +44,7 @@ Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-Visse trin i dette emne kræver kørsel af et ER-format. I nogle tilfælde påvirkes udførelsen af et ER-format af den lande-/områdekontekst, som det firma, du aktuelt er logget på. Du kan køre et ER-format i den aktuelle RCS-forekomst, hvis det firma, der har den krævede lande-/områdekontekst, er tilgængelig i RCS. Ellers skal du overføre en fuldført version af den ER-modeltilknytning og ER-format, der bruger ER-datamodellen, til din Finance-forekomst, og derefter køre ER-formatet i den pågældende Finance-forekomst. Du kan finde oplysninger om, hvordan du importerer konfigurationer, der er placeret i RCS, til en Finance-forekomst under [Importer konfigurationer fra RCS](rcs-download-configurations.md).
+Visse trin i dette emne kræver kørsel af et ER-format. I nogle tilfælde påvirkes udførelsen af et ER-format af den land/område-kontekst, som det firma, du aktuelt er logget på. Du kan køre et ER-format i den aktuelle RCS-forekomst, hvis det firma, der har den krævede land/område-kontekst, er tilgængelig i RCS. Ellers skal du overføre en fuldført version af den ER-modeltilknytning og ER-format, der bruger ER-datamodellen, til din Finance-forekomst, og derefter køre ER-formatet i den pågældende Finance-forekomst. Du kan finde oplysninger om, hvordan du importerer konfigurationer, der er placeret i RCS, til en Finance-forekomst under [Importer konfigurationer fra RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>En enkel modeltilknytningscase
 
@@ -102,7 +101,7 @@ Bemærk, at udførelsen af det valgte ER-format lykkedes. Webbrowseren tilbyder 
 
 Følg trinnene i [Bilag 3](#appendix3) i dette emne for at designe de påkrævede ER-komponenter. Du har nu konfigurationerne **Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Modeltilknytning (FR)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
 
-Bemærk, at version 1 af modeltilknytningskonfigurationen **Tilknytning (FR)** er konfigureret, så den kun gælder for ER-formater for **Model til at lære tilknytninger**, der køres i Finance-firmaer, som har fransk lande-/områdekontekst.
+Bemærk, at version 1 af modeltilknytningskonfigurationen **Tilknytning (FR)** er konfigureret, så den kun gælder for ER-formater for **Model til at lære tilknytninger**, der køres i Finance-firmaer, som har fransk land/område-kontekst.
 
 ![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
@@ -117,7 +116,7 @@ Bemærk, at udførelsen af det valgte ER-format lykkedes. Webbrowseren tilbyder 
 
 ### <a name="define-the-france-specific-mapping-configuration-as-the-default-configuration"></a>Definer den for Frankrig specifikke tilknytningskonfiguration som standardkonfiguration
 
-Udfør følgende trin for at definere den brugerdefinerede modeltilknytningskonfiguration for **Tilknytning (FR)** som standardkonfigurationen. Bemærk, at da denne tilknytning er specifik for Frankrig, vil den blive betragtet som standardtilknytning mellem alle de modeltilknytningskonfigurationer, der har landekoden **FR** angivet i feltet **ISO-lande-/områdekode**.
+Udfør følgende trin for at definere den brugerdefinerede modeltilknytningskonfiguration for **Tilknytning (FR)** som standardkonfigurationen. Bemærk, at da denne tilknytning er specifik for Frankrig, vil den blive betragtet som standardtilknytning mellem alle de modeltilknytningskonfigurationer, der har landekoden **FR** angivet i feltet **ISO-land/område-kode**.
 
 1.  På siden **Konfigurationer** skal du i konfigurationstræet vælge **Tilknytning (FR)**.
 2.  Vælg **Rediger** efter behov for at gøre den aktuelle side klar til redigering.
@@ -142,23 +141,23 @@ Bemærk, at udførelsen af det valgte ER-format lykkedes. Webbrowseren tilbyder 
 Som du har set, fungerer valget af en modeltilknytning til udførsel af et ER-format på følgende måde:
 
 - Den modeltilknytningsdefinition, som et ER-format bruger, er angivet (**Indgangspunkt 1** i eksemplerne i dette emne).
-- Alle tilknytningskonfigurationer, der indeholder en tilknytning, som har den angivne definition, og som opfylder eventuelle begrænsninger af lande-/områdekontekster, der er konfigureret, kan muligvis bruges til at køre ER-formatet (**Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Tilknytning (FR)** i eksemplerne i dette emne).
-- Enhver standardmodeltilknytning, der har begrænsninger for lande-/områdekontekst, har den højeste prioritet i forbindelse med udvælgelse (**Tilknytning (FR)** i eksemplerne i dette emne).
-- Enhver standardmodeltilknytning, der ikke har begrænsninger for lande-/områdekontekst, har den næsthøjeste prioritet i forbindelse med udvælgelse (**Tilpasset tilknytning (generel)** i eksemplerne i dette emne).
-- Enhver modeltilknytning, der har begrænsninger for lande-/områdekontekst, har højere prioritet i forbindelse med udvælgelse end en modeltilknytning, der ikke har begrænsninger for lande-/områdekontekst.
+- Alle tilknytningskonfigurationer, der indeholder en tilknytning, som har den angivne definition, og som opfylder eventuelle begrænsninger af land/område-kontekster, der er konfigureret, kan muligvis bruges til at køre ER-formatet (**Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Tilknytning (FR)** i eksemplerne i dette emne).
+- Enhver standardmodeltilknytning, der har begrænsninger for land/område-kontekst, har den højeste prioritet i forbindelse med udvælgelse (**Tilknytning (FR)** i eksemplerne i dette emne).
+- Enhver standardmodeltilknytning, der ikke har begrænsninger for land/område-kontekst, har den næsthøjeste prioritet i forbindelse med udvælgelse (**Tilpasset tilknytning (generel)** i eksemplerne i dette emne).
+- Enhver modeltilknytning, der har begrænsninger for land/område-kontekst, har højere prioritet i forbindelse med udvælgelse end en modeltilknytning, der ikke har begrænsninger for land/område-kontekst.
 
 Følgende tabel viser oplysninger om resultaterne af valg af modeltilknytning for alle mulige modeltilknytningindstillinger:
 
-- Kolonne 1 angiver, om den første modeltilknytning, der ikke har begrænsninger for lande-/områdekontekst (f.eks. hvis den delte tilknytning **Tilknytning (generel)**) vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
-- Kolonne 2 angiver, om den anden modeltilknytning, der ikke har begrænsninger for lande-/områdekontekst (f.eks. hvis den delte tilknytning **Tilpasset tilknytning (generel)**) vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
-- Kolonne 3 angiver, om den første modeltilknytning, der har begrænsninger for lande-/områdekontekst (f.eks. hvis den for Frankrig specifikke tilknytning **Tilknytning (FR)**) vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
-- Kolonne 4 angiver, om den anden modeltilknytning, der har begrænsninger for lande-/områdekontekst vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
+- Kolonne 1 angiver, om den første modeltilknytning, der ikke har begrænsninger for land/område-kontekst (f.eks. hvis den delte tilknytning **Tilknytning (generel)**) vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
+- Kolonne 2 angiver, om den anden modeltilknytning, der ikke har begrænsninger for land/område-kontekst (f.eks. hvis den delte tilknytning **Tilpasset tilknytning (generel)**) vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
+- Kolonne 3 angiver, om den første modeltilknytning, der har begrænsninger for land/område-kontekst (f.eks. hvis den for Frankrig specifikke tilknytning **Tilknytning (FR)**) vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
+- Kolonne 4 angiver, om den anden modeltilknytning, der har begrænsninger for land/område-kontekst vises, og i så fald, hvorvidt indstillingen **Standard for modeltilknytning** er angivet til **Ja** for den.
 - Kolonne 5 viser resultatet af en valgmulighed for modeltilknytning for udførelse af et ER-format i forbindelse med kontrol af et firma, der har et land/område som A-kontekst.
 - Kolonne 6 viser resultatet af en valgmulighed for modeltilknytning for udførelse af et ER-format i forbindelse med kontrol af et firma, der har et land/område som B-kontekst.
 
 Et plustegn (+) i tabellen angiver tilstedeværelsen af en modeltilknytningskonfiguration i den aktuelle forekomst af Microsoft Azure-tjenesten, der bruges til at køre et ER-format (enten Finance eller RCS).
 
-| Sag | Modeltilknytning 1 uden lande-/områdekontekst (MM1) | Modeltilknytning 2 uden lande-/områdekontekst (MM2) | Modeltilknytning 1 med A-kontekst for land/område (MM1A) | Modeltilknytning 2 med A-kontekst for land/område (MM2A) | Køres i forbindelse med kontrol af et firma, der har et land/område som en A-kontekst | Køres i forbindelse med kontrollen af et firma, der har et land/område som en B-kontekst |
+| Sag | Modeltilknytning 1 uden land/område-kontekst (MM1) | Modeltilknytning 2 uden land/område-kontekst (MM2) | Modeltilknytning 1 med A-kontekst for land/område (MM1A) | Modeltilknytning 2 med A-kontekst for land/område (MM2A) | Køres i forbindelse med kontrol af et firma, der har et land/område som en A-kontekst | Køres i forbindelse med kontrollen af et firma, der har et land/område som en B-kontekst |
 |---------|---------|---------|---------|---------|---------------------------|----------------------------|
 |         |     1   |     2   |    3    |    4    |           5               |            6               |
 |     1   |         |         |         |         | Fejl (manglende tilknytning)   | Fejl (manglende tilknytning)    |
@@ -202,7 +201,7 @@ Et plustegn (+) i tabellen angiver tilstedeværelsen af en modeltilknytningskonf
 
 Bemærk, at der er tilføjet en ny post til ER-fejlfindingsloggen for det udførte ER-format. Da feltet **Niveau** i denne post er angivet til **Info**, er posten blot til orientering. Da feltet til Formatkomponent er indstillet til **Tilknytningskonfiguration**, oplyser posten dig om en modeltilknytning, der blev brugt under udførelsen af ER-formatet **Format til at lære tilknytninger** (valgt i feltet **Konfigurationsnavn**). Indholdet i feltet **Genereret tekst** informerer dig om, at tilknytningskomponentet **Tilknytning (FR)**, der findes i konfigurationen **Tilknytning (FR)** er blevet brugt til at køre denne rapport.
 
-## <a name="appendix1"></a> Bilag 1
+## <a name="appendix-1"></a><a name="appendix1"></a> Bilag 1
 
 ### <a name="configure-a-sample-data-model"></a>Konfigurer en model til eksempeldata
 
@@ -212,7 +211,7 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
 
 #### <a name="create-an-er-data-model-configuration"></a>Opret en ER-datamodelkonfiguration
 
-1.  Vælg **Elektronisk rapportering**på standarddashboardet.
+1.  Vælg **Elektronisk rapportering** på standarddashboardet.
 2.  Vælg feltet **Rapporteringskonfigurationer**.
 3.  På siden **Konfigurationer** skal du vælge **Opret konfiguration**.
 4.  I feltet **Navn** i rulledialogboksen skal du angive **Model til at lære tilknytninger**.
@@ -343,7 +342,7 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 4.  Vælg **Gem**.
 5.  Luk siden.
 
-## <a name="appendix2"></a> Bilag 2
+## <a name="appendix-2"></a><a name="appendix2"></a> Bilag 2
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Konfigurer et eksempel på modeltilknytning til generel tilpasning
 
@@ -403,15 +402,15 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 
 Læg mærke til, at den konfiguration, der blev oprettet, gemmes som fuldført version 1.
 
-## <a name="appendix3"></a> Bilag 3
+## <a name="appendix-3"></a><a name="appendix3"></a> Bilag 3
 
-### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurer et eksempel på modeltilknytning til lande-/områdespecifik tilpasning
+### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurer et eksempel på modeltilknytning til land/område-specifik tilpasning
 
-For visse ER-formater kan der være lande-/områdespecifikke krav til dataforberedelse. I dette tilfælde kan du administrere en konfiguration for en separat ER-modeltilknytning og isolere implementeringen af disse lande-/områdespecifikke krav fra den generelle implementering. I procedurerne i dette bilag anvendes ER-formatet **Format til at lære tilknytninger** og krav specifikke for fransk som eksempel.
+For visse ER-formater kan der være land/område-specifikke krav til dataforberedelse. I dette tilfælde kan du administrere en konfiguration for en separat ER-modeltilknytning og isolere implementeringen af disse land/område-specifikke krav fra den generelle implementering. I procedurerne i dette bilag anvendes ER-formatet **Format til at lære tilknytninger** og krav specifikke for fransk som eksempel.
 
 #### <a name="create-an-er-model-mapping-configuration"></a>Opret en ER-modeltilknytningskonfiguration
 
-Først skal du oprette en ny konfiguration af ER-modeltilknytningen for at implementere de lande-/områdespecifikke krav. Brug din brugerdefinerede konfiguration for ER-modeltilknytning som basis.
+Først skal du oprette en ny konfiguration af ER-modeltilknytningen for at implementere de land/område-specifikke krav. Brug din brugerdefinerede konfiguration for ER-modeltilknytning som basis.
 
 1.  På siden **Konfigurationer** skal du i konfigurationstræet vælge **Tilpasset tilknytning (generel)**.
 2.  Vælg **Opret konfiguration**.
@@ -456,17 +455,17 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 
 20. Luk siden.
 
-#### <a name="specify-countryregion-context-restrictions-for-use"></a>Angiv brugen af lande-/områdekontekstbegrænsningerne
+#### <a name="specify-countryregion-context-restrictions-for-use"></a>Angiv brugen af land/område-kontekstbegrænsningerne
 
-1.  På siden **Konfigurationer** skal du i oversigtspanelet **ISO-lande-/områdekoder** vælge **Ny**.
+1.  På siden **Konfigurationer** skal du i oversigtspanelet **ISO-land/område-koder** vælge **Ny**.
 2.  I feltet **ISO** skal du vælge **FR**.
 3.  Vælg **Gem**.
 
-Bemærk, at du skal logge på et bestemt regnskab i Finance for at køre et ER-format. Derfor kan dette firma betragtes som part, der kontrollerer udførslen af begge ER-formater og valg af korrekt ER-modeltilknytning af den grundlæggende ER-datamodel. Hvis du tilføjer landekoden **FR**, angiver du, at denne modeltilknytning kun er tilgængelig for et ER-format af den grundlæggende datamodel, når det pågældende format køres i forbindelse med kontrol af et firma, der har fransk lande-/områdekontekst.
+Bemærk, at du skal logge på et bestemt regnskab i Finance for at køre et ER-format. Derfor kan dette firma betragtes som part, der kontrollerer udførslen af begge ER-formater og valg af korrekt ER-modeltilknytning af den grundlæggende ER-datamodel. Hvis du tilføjer landekoden **FR**, angiver du, at denne modeltilknytning kun er tilgængelig for et ER-format af den grundlæggende datamodel, når det pågældende format køres i forbindelse med kontrol af et firma, der har fransk land/område-kontekst.
 
-Du kan føje flere lande-/områdekoder til en enkelt version af en konfiguration af en ER-modeltilknytning. På denne måde kan modeltilknytninger, der findes i den pågældende konfiguration af en modeltilknytning, bruges af et ER-format, der køres i forbindelse med kontrol af firmaer, der har en anden lande-/områdekontekst.
+Du kan føje flere land/område-koder til en enkelt version af en konfiguration af en ER-modeltilknytning. På denne måde kan modeltilknytninger, der findes i den pågældende konfiguration af en modeltilknytning, bruges af et ER-format, der køres i forbindelse med kontrol af firmaer, der har en anden land/område-kontekst.
 
-Bemærk, at listen over lande-/områdekoder er angivet for hver version af en ER-modeltilknytningskonfiguration og kan variere fra version til version.
+Bemærk, at listen over land/område-koder er angivet for hver version af en ER-modeltilknytningskonfiguration og kan variere fra version til version.
 
 #### <a name="complete-the-modified-version-of-the-model-mapping-configuration"></a>Fuldfør den ændrede version af konfiguration af modeltilknytning
 
@@ -485,14 +484,14 @@ Læg mærke til, at den konfiguration, der blev oprettet, gemmes som fuldført v
 
 [Administrere ER-modeltilknytning i separate ER-konfigurationer](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 
-[Anvende lande/-områdekontekst](../lcs-solutions/apply-country-context.md)
+[Anvende land/område-kontekst](../lcs-solutions/apply-country-context.md)
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
 #### <a name="i-configured-two-shared-er-model-mapping-configurations-in-rcs-and-marked-one-of-them-as-the-default-model-mapping-configuration-i-successfully-ran-an-er-format-that-was-created-for-the-same-base-er-data-model-configuration-to-test-model-mappings-i-then-imported-the-whole-er-solution-er-data-model-two-er-model-mapping-configurations-and-er-format-configuration-into-finance-why-do-i-receive-an-error-message-when-i-try-to-run-the-same-er-format-in-finance"></a>Jeg har konfigureret to delte ER-modeltilknytningskonfigurationer i RCS og markeret en af dem som standardkonfigurationen for modeltilknytningen. Jeg har kørt et ER-format, der er oprettet til den samme grundlæggende ER-datamodelkonfiguration, for at teste modeltilknytningerne. Derefter importerede jeg hele ER-løsningen (ER-datamodel, to ER-modeltilknytningskonfigurationer og ER-formatkonfiguration) i Finance. Hvorfor får jeg vist en fejlmeddelelse, når jeg forsøger at køre samme ER-format i Finance?
 Standardindstillingen for modeltilknytning er miljøspecifik. Den er konfigureret i RCS, men eksporteres ikke til Finance. For at kunne køre dette ER-format, skal du også markere en af de ER-modeltilknytningskonfigurationer som standardmodeltilknytningskonfiguration i Finance.
 
-#### <a name="i-configured-one-model-mapping-as-a-shared-model-mapping-and-completed-the-draft-version-of-it-i-then-added-a-new-model-mapping-configuration-for-same-data-model-and-configured-it-as-french-specific-why-is-the-shared-model-mapping-selected-when-i-run-an-er-format-even-though-this-er-format-uses-the-correct-root-definition-and-execution-is-done-under-the-control-of-the-company-that-has-french-countryregion-context"></a>Jeg har konfigureret én modeltilknytning som en delt modeltilknytning og fuldført kladdeversionen af den. Derefter har jeg tilføjet en ny modeltilknytningskonfiguration for samme datamodel og konfigureret den specifikt for fransk. Hvorfor er den delte modeltilknytning markeret, når jeg kører et ER-format, selvom dette ER-format bruger den korrekte definition for rodobjekt og udførelse udføres i forbindelse med kontrollen af det firma, der har fransk lande-/områdekontekst?
+#### <a name="i-configured-one-model-mapping-as-a-shared-model-mapping-and-completed-the-draft-version-of-it-i-then-added-a-new-model-mapping-configuration-for-same-data-model-and-configured-it-as-french-specific-why-is-the-shared-model-mapping-selected-when-i-run-an-er-format-even-though-this-er-format-uses-the-correct-root-definition-and-execution-is-done-under-the-control-of-the-company-that-has-french-countryregion-context"></a>Jeg har konfigureret én modeltilknytning som en delt modeltilknytning og fuldført kladdeversionen af den. Derefter har jeg tilføjet en ny modeltilknytningskonfiguration for samme datamodel og konfigureret den specifikt for fransk. Hvorfor er den delte modeltilknytning markeret, når jeg kører et ER-format, selvom dette ER-format bruger den korrekte definition for rodobjekt og udførelse udføres i forbindelse med kontrollen af det firma, der har fransk land/område-kontekst?
 Sørg for, at den delte modeltilknytningskonfiguration ikke er markeret som standardmodeltilknytningskonfiguration. Ellers vil den have højere prioritet i forbindelse med udvælgelse af tilknytning. Kontroller også, at den for fransk specificerede modeltilknytningskonfiguration tages i betragtning, når der vælges en tilknytning under udførsel af ER-format. Konfiguration af en ER-modeltilknytning kan kun vælges, hvis mindst én af følgende betingelser er opfyldt:
 - Statussen for mindst én version af ER-modeltilknytningkonfiguration er **Fuldført** eller **Delt**. I dette tilfælde bruges den version, der indeholder det højeste versionsnummer, til udførsel af ER-format.
 - Indstillingen **Kør kladde** for ER-modeltilknytningkonfiguration er aktiveret. I dette tilfælde bruges den version, der har statussen **Kladde** til udførsel af ER-format.

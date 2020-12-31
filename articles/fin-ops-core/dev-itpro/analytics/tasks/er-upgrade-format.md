@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52bc276a4a88971a7214fa09087cb1323b91aaf5
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143264"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684253"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Opgradere dit format ved at bruge en ny basisversion af formatet
 
@@ -47,7 +46,7 @@ For at fuldføre denne fremgangsmåde, skal du først udføre trinnene i procedu
     Versionen af formatet med statussen Fuldført vil blive brugt af Proseware, Inc. til tilpasning.  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Oprette en ny konfiguration af det brugerdefinerede format for elektronisk dokument
-Proseware, Inc. modtog version 1.1 af BACS-konfigurationen (UK fiktiv), der indeholder det oprindelige format til oprettelse af elektroniske betalingsdokumenter fra Litware, Inc. i overensstemmelse med deres serviceabonnement. Proseware, Inc. ønsker at begynde at bruge det som en standard for deres land/område, men nogle tilpasninger er påkrævet for at understøtte specifikke regionale krav. Proseware, Inc. ønsker også at bevare muligheden for at opgradere et brugerdefineret format, så snart der kommer en ny version af det (med ændringer for at understøtte nye lande-/områdespecifikke krav) fra Litware, Inc., og de ønsker at udføre denne opgradering med de laveste omkostninger.  
+Proseware, Inc. modtog version 1.1 af BACS-konfigurationen (UK fiktiv), der indeholder det oprindelige format til oprettelse af elektroniske betalingsdokumenter fra Litware, Inc. i overensstemmelse med deres serviceabonnement. Proseware, Inc. ønsker at begynde at bruge det som en standard for deres land/område, men nogle tilpasninger er påkrævet for at understøtte specifikke regionale krav. Proseware, Inc. ønsker også at bevare muligheden for at opgradere et brugerdefineret format, så snart der kommer en ny version af det (med ændringer for at understøtte nye land/område-specifikke krav) fra Litware, Inc., og de ønsker at udføre denne opgradering med de laveste omkostninger.  
 
 For at kunne gøre dette skal Proseware, Inc. oprette en konfiguration og bruge BACS-konfigurationen af Litware, Inc. (UK fiktiv) som udgangspunkt.  
 
@@ -125,7 +124,7 @@ Skift status for den designede formatkonfiguration fra Kladde til Fuldført for 
 Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Finance and Operations-session. Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Opdatere den eksisterende landespecifikke konfiguration
-Litware, Inc. skal opdatere konfigurationen af BACS (UK fiktivt) og benytte nye lande/områdespecifikke krav til håndtering af formatet på det elektroniske dokument. Senere bliver det inkluderet i en ny version af denne konfiguration, som vil blive tilbudt til serviceabonnenter, herunder Proseware, Inc.  
+Litware, Inc. skal opdatere konfigurationen af BACS (UK fiktivt) og benytte nye land/område-specifikke krav til håndtering af formatet på det elektroniske dokument. Senere bliver det inkluderet i en ny version af denne konfiguration, som vil blive tilbudt til serviceabonnenter, herunder Proseware, Inc.  
 
 I processer, der er relateret til reelle tjenesteydelser, kan hver ny version af BACS (UK fiktivt) importeres af Proseware, Inc. fra Litware, Inc.-konfigurationers LCS-lager. I denne procedure vil vi simulere dette ved at opdatere BACS (UK fiktivt) på vegne af en serviceudbyder.  
 
@@ -136,14 +135,14 @@ I processer, der er relateret til reelle tjenesteydelser, kan hver ny version af
 5. Udvid 'Betalinger (forenklet model)' i træet.
 6. Vælg 'Betalinger (forenklet model)\BACS (UK fiktivt)' i træet.
 
-    Kladdeversionen, som ejes af BACS-udbyderen Litware, Inc. (UK fiktivt), er valgt til at sikre, at ændringer understøtter de nye lande/områdespecifikke krav.  
+    Kladdeversionen, som ejes af BACS-udbyderen Litware, Inc. (UK fiktivt), er valgt til at sikre, at ændringer understøtter de nye land/område-specifikke krav.  
 
 ## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalisere basisformatet for det elektroniske dokument
 Antag, at der er nye landespecifikke krav, der skal understøttes af Litware, Inc.:  
 
 - En værdi for kreditors banks SWIFT-kode i hver betalingstransaktion.
 - En grænse på 100 tegn for tekstlængden på kreditorens navn i en fil, der oprettes.  
-- Nye lande-/områdespecifikke krav  
+- Nye land/område-specifikke krav  
 - Vælg kladdeversionen af den ønskede konfiguration for at indføre de nødvendige ændringer.  
 
 
@@ -189,7 +188,7 @@ Skift status for den opdaterede basisformatkonfiguration fra Kladde til Fuldfør
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Ændre basisversionen af den brugerdefinerede formatkonfiguration
 
-Proseware, Inc. får besked om, at en ny version 1.2 af BACS-konfigurationen (UK fiktivt) er tilgængelig for oprettelse af elektroniske betalingsdokumenter i henhold til de nyligt annoncerede lande/områdespecifikke krav. Proseware, Inc. ønsker at begynde at bruge den som en standard for landet/området.  
+Proseware, Inc. får besked om, at en ny version 1.2 af BACS-konfigurationen (UK fiktivt) er tilgængelig for oprettelse af elektroniske betalingsdokumenter i henhold til de nyligt annoncerede land/område-specifikke krav. Proseware, Inc. ønsker at begynde at bruge den som en standard for landet/området.  
 
 For at kunne gøre dette skal Proseware, Inc. ændre basiskonfigurationsversionen af den brugerdefinerede BACS-konfigurationen (UK fiktivt brugerdefineret). Brug den nye version 1.2, i stedet for version 1.1 af BACS (UK fiktivt).  
 
@@ -216,7 +215,7 @@ For at kunne gøre dette skal Proseware, Inc. ændre basiskonfigurationsversione
 ## <a name="resolve-rebase-conflicts"></a>Løse rebaseringskonflikter
 1. Klik på Designer.
     
-    Bemærk, at ændringer af grænsen for tekstlængen på kreditorens navn ikke kunne løses automatisk. Dette vises derfor på en liste over konflikter. For hver konflikt af typen Opdatering er følgende indstillinger tilgængelige: - Anvend en tidligere basisværdi (knap oven på gitteret) for at overføre den tidligere basisversions værdi (0 i vores tilfælde).  - Anvend en basisværdi (knap oven på gitteret) for at overføre den nye basisversions værdi (100 i vores tilfælde).  - Bevar din egen (brugerdefineret) værdi (60 i dette tilfælde).  Klik på Anvend basisværdi for at anvende en lande/områdespecifik grænse på 100 tegn for tekstlængden på kreditorens navn.  
+    Bemærk, at ændringer af grænsen for tekstlængen på kreditorens navn ikke kunne løses automatisk. Dette vises derfor på en liste over konflikter. For hver konflikt af typen Opdatering er følgende indstillinger tilgængelige: - Anvend en tidligere basisværdi (knap oven på gitteret) for at overføre den tidligere basisversions værdi (0 i vores tilfælde).  - Anvend en basisværdi (knap oven på gitteret) for at overføre den nye basisversions værdi (100 i vores tilfælde).  - Bevar din egen (brugerdefineret) værdi (60 i dette tilfælde).  Klik på Anvend basisværdi for at anvende en land/område-specifik grænse på 100 tegn for tekstlængden på kreditorens navn.  
 
     Bemærk, at Proseware, Inc. og Litware, Inc. har brugerdefinerede og lokale versioner af dette format, som benytter IBAN- og SWIFT-koder med relaterede komponenter, der flettes automatisk i håndteringen af formatet.  
 

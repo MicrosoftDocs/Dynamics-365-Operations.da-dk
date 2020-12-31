@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2d31aaf14f6399baca8531707864c48cd2d56ac2
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769965"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680608"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Power BI-indhold til købsforbrugsanalyse
 
@@ -51,9 +50,9 @@ I nedenstående sektioner vises en oversigt over visualiseringerne.
 ### <a name="purchase-by-vendor-report-page"></a>Rapportsiden Indkøb efter leverandør
 **Diagrammer**
 - Top 10 leverandører efter indkøb (stablet liggende søjlediagram)
-- Samlet indkøb pr. leverandørgruppe/land/navn (cirkeldiagram)
-- Indkøb pr. leverandørgruppe/land/navn (søjlediagram)
-- Gennemsnitsindkøb pr. leverandørgruppe/land/navn (søjlediagram)
+- Samlet indkøb pr. leverandørgruppe/land/område/navn (cirkeldiagram)
+- Indkøb pr. leverandørgruppe/land/område/navn (søjlediagram)
+- Gennemsnitsindkøb pr. leverandørgruppe/land/område/navn (søjlediagram)
 
 **Felter**
 - Indkøb i alt
@@ -102,7 +101,7 @@ Denne side viser køb dette og sidste år, og vækst efter indkøbskategori.
 **Diagrammer**
 - Indkøb efter by
 - Indkøbsvækst år for år i %
-- Indkøb efter land
+- Indkøb efter land/område
 
 **Eksempel**
 <img src="media/purchByVendorLocation.png" alt="Purchase by Vendor Location">

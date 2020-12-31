@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d96fe041fd0ffb292909c1e724068efebe0184b9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002514"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682643"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -51,7 +50,7 @@ Du kan åbne siden **Formeldesigner**, når du udfører en af følgende handling
 - Definerer betingelserne for proceskontrolvalideringer.
 - Definerer meddelelsestekst for proceskontrolvalideringer.
 
-## <a name="Binding"></a>Databinding
+## <a name="data-binding"></a><a name="Binding"></a>Databinding
 
 ER-formeldesigneren kan bruges til at definere et udtryk, der transformerer data, der er modtaget fra datakilder, så data kan angives i dataforbrugeren på følgende måde på kørselstidspunktet:
 
@@ -69,7 +68,7 @@ I følgende illustration vises, hvordan et udtryk af denne type kan bruges. I de
 
 På kørselstidspunktet afrunder den designede formel `ROUND (Intrastat.AmountMST, 2)` værdien af feltet **AmountMST** for hver post i Intrastattabellen til to decimaler. Den indsætter derefter den afrundede værdi i komponenten **Transaction.InvoicedAmount** i datamodellen **Momsrapportering**.
 
-## <a name="Transformation"></a>Dataformatering
+## <a name="data-formatting"></a><a name="Transformation"></a>Dataformatering
 
 ER-formeldesigneren kan bruges til at definere et udtryk, der formaterer data, der er modtaget fra datakilder, så data kan sendes som en del af det genererende elektroniske dokument. Du har muligvis formatering, der skal anvendes som en typisk regel, der skal genbruges til et format. I så fald kan du introducere denne formatering én gang i formatkonfigurationen, som en navngivet transformering, der har et formateringsudtryk. Denne navngivne transformation kan sammenkædes med mange formatkomponenter, hvor outputtet skal været formateret i henhold til det formateringsudtryk, du oprettede.
 
@@ -87,7 +86,7 @@ Hvis du har en formatering, der skal anvendes individuelt, kan den indføres som
 
 [![Anvende formatering på en enkelt komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation"></a>Kontrol af procesforløb
+## <a name="process-flow-control"></a><a name="Validation"></a>Kontrol af procesforløb
 
 ER-formeldesigneren kan bruges til at definere udtryk, der styrer procesforløbet under generering af elektroniske dokumenter. Du kan udføre følgende opgaver:
 
@@ -112,7 +111,7 @@ ER-formeldesigneren bruges også til at generere et filnavn til et genererende e
 
 [![Kontrol af procesforløb](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled"></a>Kontrol af dokumentindhold
+## <a name="document-content-control"></a><a name="Enabled"></a>Kontrol af dokumentindhold
 
 ER-formeldesigneren kan bruges til at konfigurere udtryk, der styrer, hvilke data der indgår i genererede elektroniske dokumenter på kørselstidspunktet. Udtrykkene kan aktivere eller deaktivere outputtet af bestemte elementer i formatet, afhængigt af behandlingen af data og den konfigurerede logik. Disse udtryk kan angives for et enkelt formatelement i feltet **Aktiveret** under fanen **Tilknytning** på siden **Operationsdesigner**. Du kan angive udtrykkene som en logik betingelse, der returnerer en *Boolesk* værdi:
 
@@ -139,7 +138,7 @@ I følgende illustration vises udtryk af denne type. (Version 11.12.11 af format
 > 
 > Baseret på denne indstilling vil den genererede meddelelse for hver debitorbetaling, XML-elementet **Ustrd**, indeholde enten tekst med betalingsnoter eller, når denne tekst er tom, kommasepareret liste med fakturanumre, som bruges til at afstemme denne betaling.
 
-## <a name="TestFormula"></a>Validering af konfigurerede formler
+## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validering af konfigurerede formler
 
 På siden **Formeldesigner** skal du vælge **Test** for at validere, hvordan den konfigurerede formel fungerer.
 

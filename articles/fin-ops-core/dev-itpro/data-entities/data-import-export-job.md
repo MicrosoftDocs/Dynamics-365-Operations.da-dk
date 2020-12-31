@@ -3,24 +3,23 @@ title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278892"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684054"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -130,7 +129,7 @@ Et job kan sikres efter roller, brugere og juridisk enhed på samme tid.
 Du kan køre et job én gang ved at vælge knappen **Import** eller **Eksport**, når du har defineret jobbet. Du kan konfigurere et tilbagevendende job ved at vælge **Opret tilbagevendende datajob**.
 
 > [!NOTE]
-> Et import- eller eksportjob kan køres asynkront ved at vælge knappen **Importer** eller **Eksporter**. Asynkron kørsel bruger den asynkrone struktur, som er forskellig fra batchstrukturen. Dog kan den asynkrone struktur ligesom batchstrukturen underkastes begrænsning, og derfor bliver jobbet muligvis ikke udført straks. Job kan også køres synkront ved at vælge **Importer nu** eller **Eksporter nu**. Dette starter jobbet med det samme og er nyttigt, hvis asynkron kørsel eller et batch ikke starter på grund af begrænsning. Jobbene kan også udføres i et batch ved at vælge **Kør i batch**-indstillingen. Batchressourcer er omfattet af begrænsning, så batchjobbet starter muligvis ikke med det samme. Den asynkrone indstilling er nyttig, når brugere interagerer direkte med brugergrænsefladen og ikke er superbrugere, som kan forstå batchplanlægning. Brug af et batch er en anden mulighed, hvis store mængder skal eksporteres eller importeres. Batchjob kan planlægges til at køre på en bestemt batchgruppe, hvilket giver mulighed for større kontrol set fra et belastningsjusteringsperspektiv. Hvis asynkrone kørsler og batchkørsler begge underlægges begrænsning på grund af høj ressourceudnyttelse i systemet, kan den synkrone version af import/eksport bruges som en øjeblikkelig løsning. Den synkrone mulighed starter med det samme og blokerer brugergrænsefladen, fordi den kører synkront. Browservinduet skal forblive åbent, når der udføres synkrone handlinger.
+> Et import- eller eksportjob kan køres ved at vælge knappen **Importer** eller **Eksporter**. Dette planlægger, at et batchjob kun skal køres én gang. Jobbet kan muligvis ikke køres med det samme, hvis batchtjenesten begrænser det pga. belastningen af batchtjenesten. Job kan også køres synkront ved at vælge **Importer nu** eller **Eksporter nu**. Dette starter jobbet med det samme og er nyttigt, hvis et batch ikke starter på grund af begrænsning. Jobbene kan også planlægges til at blive kørt på et senere tidspunkt. Det kan du gøre ved at vælge indstillingen **Kør i batch**. Batchressourcer er omfattet af begrænsning, så batchjobbet starter muligvis ikke med det samme. Det anbefales, at du bruger en batch, fordi det også vil hjælpe med store mængder data, der skal importeres eller eksporteres. Batchjob kan planlægges til at køre på en bestemt batchgruppe, hvilket giver mulighed for større kontrol set fra et belastningsjusteringsperspektiv.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Kontroller, at jobbet kørte som forventet
 Jobhistorikken er tilgængelig i forbindelse med fejlfinding og undersøgelse på både import- og eksportjob. Kørsler af historiske job er organiseret efter tidsintervaller.
@@ -195,7 +194,7 @@ Funktionen til oprydning i jobhistorik i datastyring skal bruges til at planlæg
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Funktionaliteten skal være aktiveret i funktionsstyring, og derefter er der adgang til den fra **Datastyring \> Oprydning i jobhistorik**.
+Funktionen **Oprydning i kørselsoversigt** skal være aktiveret i funktionsstyring, og derefter er der adgang til den fra **Datastyring \> Oprydning i jobhistorik**.
 
 ### <a name="scheduling-parameters"></a>Planlægningsparametre
 
@@ -211,3 +210,36 @@ Når oprydningsprocessen planlægges, skal følgende parametre angives for at de
 
 > [!NOTE]
 > Hvis posterne i de midlertidige tabeller ikke er fuldstændig renset, skal du sikre dig, at oprydningsjobbet er planlagt til at skulle køre som en gentagelse. Som forklaret ovenfor vil jobbet i enhver oprydningskørsel alene fjerne så mange kørsels-id'er, som det er muligt inden for de opgivne maksimum timer. For at fortsætte oprydningen af eventuelle tilbageværende midlertidige poster, skal jobbet planlægges til at køre med jævne mellemrum.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Oprydning og arkivering i jobhistorik (tilgængelig til visning under Platform update 39 eller version 10.0.15)
+Funktionen til oprydning og arkivering af jobhistorik erstatter de tidligere versioner af oprydningsfunktionen. I dette afsnit forklares disse nye funktioner.
+
+En af de vigtigste ændringer i oprydningsfunktionen er brugen af systembatchjobbet til oprydning af historikken. Brugen af systembatchjobbet giver Finance and Operations-apps mulighed for automatisk planlægning og kørsel af oprydningsbatchjobbet, så snart systemet er klart. Det er ikke længere nødvendigt at planlægge batchjobbet manuelt. I denne standardkørselstilstand køres batchjobbet hver time fra og med kl. 12 midnat, og kørselshistorikken bevares for de seneste 7 dage. Den slettede oversigt arkiveres, så den kan hentes senere.
+
+> [!NOTE]
+> Da denne funktionalitet er i prøveversion, vil systembatchjobbet ikke slette nogen kørselshistorikker, før det aktiveres via flightet DMFEnableExecutionHistoryCleanupSystemJob. Når funktionen er offentligt tilgængelig i en fremtidig version, vil denne fligth ikke være nødvendig, og systembatchjobbet begynder at rydde og arkivere, når systemet er klart, afhængigt af den definerede plan, som forklaret ovenfor. 
+
+> [!NOTE]
+> I en fremtidig udgivelse fjernes de tidligere versioner af oprydningsfunktionen fra Finance and Operations-apps.
+
+Den anden ændring i oprydningsprocessen er arkiveringen af den slettede kørselshistorik. Oprydningsjobbet arkiverer de slettede poster i det blob-lager, som DIXF bruger til almindelige integrationer. Den arkiverede fil vil være i DIXF-pakkeformatet og vil være tilgængelig i 7 dage i blob'en, hvor den kan hentes. Standardvarigheden på 7 dage for den arkiverede fil kan ændres til højst 90 dage i parametrene.
+
+### <a name="changing-the-default-settings"></a>Ændre standardindstillingerne
+Denne funktionalitet er aktuelt i prøveversion og skal aktiveres eksplicit ved at aktivere flightet DMFEnableExecutionHistoryCleanupSystemJob. Funktionen til midlertidig oprydning skal også være aktiveret i funktionsstyring.
+
+Hvis du vil ændre standardindstillingen for varigheden for den arkiverede fil, skal du gå til arbejdsområdet Dataadministration og vælge **Oprydning i jobhistorik**. Angiv **Dage, som pakken skal bevares i blob** til en værdi mellem 7 og 90 (inklusive). Dette vil træde i kraft for de arkiver, der oprettes, efter at denne ændring blev foretaget.
+
+### <a name="downloading-the-archived-package"></a>Hente den arkiverede pakke
+Denne funktionalitet er aktuelt i prøveversion og skal aktiveres eksplicit ved at aktivere flightet DMFEnableExecutionHistoryCleanupSystemJob. Funktionen til midlertidig oprydning skal også være aktiveret i funktionsstyring.
+
+Hvis du vil hente den arkiverede kørselshistorik, skal du gå til arbejdsområdet Dataadministration og vælge **Oprydning i jobhistorik**. Vælg **Historik for sikkerhedskopiering af pakke** for at åbne historikformularen. I denne formular vises listen over alle arkiverede pakker. Du kan vælge og hente et arkiv ved at vælge **Download pakke**. Den hentede pakke vil være i DIXF-pakkeformat og indeholde følgende filer:
+
+-   Fil fra midlertidig enhedstabel
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678242"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680236"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
 
@@ -142,10 +141,10 @@ Som bruger i rollen Udvikler af elektronisk rapportering skal du konfigurere det
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Konfigurere ER-parametre
 
-1. Gå til **Virksomhedsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Parametre for elektronisk rapportering**.
-3. På siden **Parametre for elektronisk rapportering** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktivér designtilstand**.
-4. På fanen **Vedhæftede filer** kan du angive følgende parametre:
+1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+2. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Parametre til elektronisk rapportering**.
+3. På siden **Parametre til elektronisk rapportering** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktiver designtilstand** .
+4. På fanen **Vedhæftede filer** kan du angive følgende parametre:
 
     - Angiv feltet **Konfigurationer** til **Fil** for **USMF**-virksomheden.
     - Angiv felterne **Jobarkiv**, **Midlertidig**, **Grundlag** og **Andre** skal du vælge typen **Fil**.
@@ -161,28 +160,28 @@ Alle ER-konfigurationer er markeret som ejet af en udbyder af ER-konfigurationer
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Gennemse listen over udbydere af ER-konfigurationer
 
-1. Gå til **Virksomhedsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg **Konfigurationsudbydere** i sektionen **Relaterede links**.
 3. På siden **Konfigurationsudbydere** har hver udbyderpost et entydigt navn og en entydig URL-adresse. Gennemse indholdet af denne side. Hvis der allerede findes en post for **Litware, Inc.** (`https://www.litware.com`), skal du springe den næste procedure over, [Tilføje en ny udbyder af ER-konfigurationer](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Tilføje en ny udbyder af ER-konfigurationer
 
 1. På siden **Konfigurationsudbydere** skal du vælge **Ny**.
-2. I feltet **Navn** skal du angive **Litware, Inc.**
-3. I feltet **Internetadresse** skal du angive `https://www.litware.com`.
-4. Vælg **Gem**.
+2. I feltet **Navn** skal du angive **Litware, Inc.**
+3. I feltet **Internetadresse** skal du angive `https://www.litware.com`.
+4. Vælg **Gem**.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktivere en udbyder af ER-konfigurationer
 
-1. Gå til **Virksomhedsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. I arbejdsområdet **Elektronisk rapportering** skal du vælge konfigurationsudbyderen **Litware, Inc.**.
-3. Vælg **Angiv som aktiv**.
+3. Vælg **Angiv aktive**.
 
 Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Designe en domænespecifik datamodel
 
-Du skal oprette en ny ER-konfiguration, der indeholder en komponent til [datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components) til forretningsdomænet **Spørgeskema**. Denne datamodel vil senere blive brugt som en datakilde, når du designer et ER-format til at generere rapporten for **Spørgeskema**.
+Du skal oprette en ny ER-konfiguration, der indeholder en komponent til [datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components) til forretningsdomænet **Spørgeskema**. Denne datamodel vil senere blive brugt som en datakilde, når du designer et ER-format til at generere rapporten for **Spørgeskema**.
 
 Når du udfører fremgangsmåden i afsnittet [Importere en ny datamodelkonfiguration](#ImportDataModel), kan du importere den ønskede datamodel fra den angivne XML-fil. Du kan også udføre fremgangsmåden i afsnittet [Oprette en ny datamodelkonfiguration](#DesignDataModel) for at designe denne datamodel fra bunden.
 
@@ -811,7 +810,7 @@ Status for version 1.1 af denne konfiguration ændres fra **Kladde** til **Fuldf
 
 Som bruger i rollen Systemadministrator skal du udvikle ny logik, så det konfigurerede ER-format kan kaldes fra applikationens brugergrænseflade (UI) for at oprette den brugerdefinerede rapport. I øjeblikket giver ER ikke mulighed for at konfigurere denne type logik. Dette kræver derfor udviklingsarbejde. 
 
-Hvis du vil udvikle den nye logik, skal du installere en topologi, der understøtter fortløbende build. Du kan finde flere oplysninger under [Installere topologier, der understøtter fortløbende build og automatisering af test](../perf-test/continuous-build-test-automation.md). Du skal også have adgang til udviklingsmiljøet for denne topologi. Du kan finde flere oplysninger om den tilgængelige API for ER under [API for ER-struktur](er-apis-app73.md).
+Hvis du vil udvikle den nye logik, skal du installere en topologi, der understøtter fortløbende build. Du kan finde flere oplysninger under [Installere topologier, der understøtter fortløbende build og automatisering af test](../perf-test/continuous-build-test-automation.md). Du skal også have adgang til udviklingsmiljøet for denne topologi. Du kan finde flere oplysninger om den tilgængelige API for ER under [API for ER-struktur](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Ændre kildekode
 
@@ -1062,7 +1061,7 @@ Opbyg dit projekt for at gøre et nyt menupunkt tilgængeligt for brugerne.
 
     ![Angivelse af valgkriterierne i dialogboksen Elektronisk rapportering](./media/er-quick-start1-report-run-dialog-page.png)
 
-7. Gennemse den oprettede rapport.
+7. Gennemse den oprettede rapport.
 
 ## <a name="tune-a-designed-er-solution"></a><a name="TuneSolution"></a>Tilpasse en designet ER-løsning
 
@@ -1175,11 +1174,11 @@ Status for version 1.2 af denne konfiguration ændres fra **Kladde** til **Fuldf
 4. Konfigurer filtreringsindstillingen på oversigtspanelet **Poster, der skal medtages** i dialogboksen **ER-parametre**, så det kun er **SBCCrsExam**-spørgeskemaet, der inkluderes.
 5. Vælg **OK** for at bekræfte filtreringsindstillingen.
 6. Vælg **OK** for at køre rapporten.
-7. Gennemse den genererede rapport i Excel-format.
+7. Gennemse den oprettede rapport i Excel-format.
 
 Bemærk, at sidefoden i den oprettede rapport indeholder navnet på det ER-format, der blev brugt til at oprette den.
 
-![Genereret rapport i Excel-format.](./media/er-quick-start1-report4.png)
+![Genereret rapport i Excel-format](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Køre et format fra ER
 
@@ -1215,7 +1214,7 @@ Bemærk, at sidefoden i den oprettede rapport ikke indeholder navnet på det ER-
     ![Dialogboks for ER-rapportens kørsel, hvor du kan ændre den konfigurerede destination](./media/er-quick-start1-run-settings.png)
 
 6. Vælg **OK** for at køre rapporten.
-7. Gennemse den oprettede rapport i PDF-format.
+7. Gennemse den oprettede rapport i PDF-format.
 
     ![Eksempel på skærmen af den oprettede rapport i PDF-format.](./media/er-quick-start1-preview-PDF.png)
 

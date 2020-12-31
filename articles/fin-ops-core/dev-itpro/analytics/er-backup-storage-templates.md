@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 27621
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2e399290153c2c63ac1c02f0f9cdb956ff5031e5
-ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
+ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3321660"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681394"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhedskopilager til ER-skabeloner
 
 [!include [banner](../includes/banner.md)]
 
-[Oversigten over Elektronisk rapportering (ER)](general-electronic-reporting.md) gør det muligt for erhversbrugere at konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande og områder. Konfigurerede ER-formater kan bruge foruddefinerede skabeloner til at oprette udgående dokumenter i forskellige formater, f.eks. Microsoft Excel-projektmapper, Microsoft Word-dokumenter eller PDF-dokumenter. Skabelonerne er fyldt med data, som det konfigurerede dataflow til genererede dokumenter kræver.
+[Oversigten over Elektronisk rapportering (ER)](general-electronic-reporting.md) gør det muligt for erhversbrugere at konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Konfigurerede ER-formater kan bruge foruddefinerede skabeloner til at oprette udgående dokumenter i forskellige formater, f.eks. Microsoft Excel-projektmapper, Microsoft Word-dokumenter eller PDF-dokumenter. Skabelonerne er fyldt med data, som det konfigurerede dataflow til genererede dokumenter kræver.
 
 Hvert konfigureret format kan udgives som en del af en ER-løsning. Hver ER-løsning kan eksporteres fra én forekomst af Finance and Operations og importeres til en anden forekomst.
 

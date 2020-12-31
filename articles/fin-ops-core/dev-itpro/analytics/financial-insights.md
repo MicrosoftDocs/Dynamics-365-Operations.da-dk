@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181766"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682765"
 ---
 # <a name="financial-insights"></a>Økonomisk indsigt
 
@@ -88,7 +87,7 @@ På nuværende tidspunkt kan dataene i integrerede Power BI-rapporter ikke begr�
 | Vis økonomisk indsigt i hele firmaet   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne opgave ikke tildelt en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Økonomirapportering vs. Økonomisk indsigt
+## <a name="financial-reporting-vs-financial-insights"></a>Økonomirapportering vs. Økonomisk indsigt
 Selvom **Økonomisk indsigt** indeholder regnskaber, er det ikke en erstatning for Økonomirapportering i programmet. Standardregnskaberne i **Økonomisk indsigt** har begrænset omfang og omfatter ikke alle former for regnskaber. Økonomirapportering er stadig det primære værktøj til at designe, oprette og generere lovpligtige regnskaber.
 
 I følgende diagram til sammenligning får du hjælp til at skelne mellem de to indstillinger:
@@ -131,7 +130,7 @@ Brugere kan filtrere rapporten ved hjælp af ruden **Filter** til venstre. Denne
 - **Filtre på visuelt niveau** – Disse filtre anvendes kun på det valgte visuelle element. Disse filtre anvendes oven på filtrene på sideniveau.
 - **Detaljeadgangsfilter** – Dette filter filtrerer fra et visuelt "kilde"-element, som er tilknyttet det aktuelle visuelle element, når du foretager detaljeadgang fra det visuelle kildeelement til det aktuelle visuelle element.
 
-![Filtrér](./media/filter.png)
+![Filtreringsindstillinger](./media/filter.png)
 
 Vælg viskelædersymbolet ud for den for at fjerne en bestemt værdi. Fjern ikke et filter ved at vælge X. Hvis du vælger X, fjernes det felt, du filtrerer på, som en filtreringsindstilling. Hvis du ved et uheld fjerner et felt fra filteret, skal du lukke arbejdsområdet, og derefter åbne det igen. Standardindstillingerne for filter anvendes igen.
 
@@ -176,25 +175,25 @@ Forskellige niveauer af detailudledning er tilgængelig via Power BI. Hvert nive
 
 I følgende illustration er regnskabet **Råbalance** skjult i det højeste niveau i rækkehierarkiet, hovedkontotypen.
 
-![Råbalance](./media/trial-balance.png)
+![Råbalanceregnskab](./media/trial-balance.png)
 
 For at få vist næste niveau i hierarkiet, hovedkontokategorierne, kan du angive feltet **Detailudledning** til **Rækker** og derefter vælge knappen **Udvid** knap (den tredje knap efter feltet Detailudledning). Du kan nu se alle hovedkontokategorierne udvidet. I øjeblikket giver Power BI dig ikke mulighed for kun at udvide én række eller kolonne, men stadig se alle de andre rækker eller kolonner.
 
-![Råbalance](./media/trial-balance2.png)
+![Råbalance i detaljer på rækker](./media/trial-balance2.png)
 
 For at udvide til hovedkontiene for alle rækker, kan du igen bruge knappen **Udvid**. Men hvis du vil foretage detailudledning til hovedkontiene for kun én række, skal du først markere knappen **Detailudledning** (den enkelte nedadgående pil i højre side af vinduet), og derefter vælge rækken, der skal foretages detailudledning for. I følgende illustration vises resultatet, når rækken **Salg** er markeret, efter at knappen **Detailudledning** er valgt.
 
-![Råbalance](./media/trial-balance3.png)
+![Knappen til udvidelse af råbalance](./media/trial-balance3.png)
 
 Når du ruller ned på en enkelt række, kræves flere klik for at vende tilbage til den fulde råbalance. Knappen **Rul op** (den første knap efter **Detailudledning** på feltet) ruller kun op i forbindelse med kategorien **Salg**, som vist i følgende illustration.
 
-![Råbalance](./media/trial-balance4.png)
+![Knappen til oprulning af råbalance](./media/trial-balance4.png)
 
 Du kan fortsat bruge knappen **Rul op** for at vende tilbage til det højeste niveau af opsummering for rækkerne.
 
 Power BI har også en knap, hvor du kan gå til næste niveau i hierarkiet (den anden knap efter feltet **Detailudledning**). Virkningen af denne knap adskiller sig fra resultatet af knappen **Udvid** (den tredje knap efter feltet **Detailudledning**), som bruges til at udvide hierarkiet. Når du udvider hierarkiet, bevares hierarkiet i rapporten. Som det for eksempel blev vist tidligere, hvis du udvider på hovedkontotypen, kan du stadig se hovedkontotypen på rapporten. Men når du går videre til næste niveau i hierarkiet, viser rapporten ikke længere det overordnede element i hierarkiet, som vist i følgende illustration.
 
-![Råbalance](./media/trial-balance5.png)
+![Knappen til tilbagerulning af råbalance](./media/trial-balance5.png)
 
 For at få vist posteringsoplysningerne bag de opsummerede saldi, kan du vælge nogle beløb, der skal rulle tilbage i Financial and Operations.
 
@@ -217,14 +216,14 @@ Valgfrie felter til filtrering:
 
 Hvis du ikke udvider langt nok ned på en række, virker nedrulningen ikke. Hvis du f.eks. kun udvider ned til hovedkontokategorien, kan du ikke rulle ned i ASE på saldoen, fordi hovedkontoen er et obligatorisk felt til filtrering i ASE.
 
-Hvis du udvider for langt ned på en række, sendes de ekstra filtre i regnskaber ikke til ASE. Du kan derfor se en forskel på tallene. Hvis du f.eks. udvider ned til landet eller området på rækkerne i resultatopgørelsen ved regnskab for område, medtages land eller område ikke som et filter i ASE.
+Hvis du udvider for langt ned på en række, sendes de ekstra filtre i regnskaber ikke til ASE. Du kan derfor se en forskel på tallene. Hvis du f.eks. udvider ned til landet eller området på rækkerne i resultatopgørelsen ved regnskab for område, medtages land/område ikke som et filter i ASE.
 
 > [!NOTE]
 > Du kan rulle længere nede i regnskabsrækkerne eller -kolonnerne, end ASE understøtter i øjeblikket til filtrering. I nogle situationer vil summen af detaljerede posteringer i ASE derfor ikke svare til den saldo, som du ruller tilbage til. Denne funktion vil fortsat blive udvidet fremover.
 
 ## <a name="hierarchies"></a>Hierarkier
 
-Standardregnskaber bruger to hierarkier til at detailudlede og udvide på dataene. Der er ét hierarki for rækkerne og andet hierarki for kolonnerne. Begge hierarkier er foruddefineret i udformningen af regnskabet. I de fleste regnskaber er rækkehierarkiet **Hovedkontotype** \> **Hovedkontokategorier** \> **Hovedkonto**. Men nogle rapporter har flere felter, f.eks. Land og Område. De yderligere noder i hierarkiet er baseret på data for reskontro for hver transaktion.
+Standardregnskaber bruger to hierarkier til at detailudlede og udvide på dataene. Der er ét hierarki for rækkerne og andet hierarki for kolonnerne. Begge hierarkier er foruddefineret i udformningen af regnskabet. I de fleste regnskaber er rækkehierarkiet **Hovedkontotype** \> **Hovedkontokategorier** \> **Hovedkonto**. Men nogle rapporter har flere felter, f.eks. Land/område. De yderligere noder i hierarkiet er baseret på data for reskontro for hver transaktion.
 
 For kolonnerne fokuserer hierarkiet på de juridiske enheder og regnskabsperioderne. I de fleste regnskaber er kolonnehierarkiet **Juridisk enhed** \> **Regnskabskalender** \> **Regnskabsår** \> **Kvartal** \> **Periode**.
 
@@ -245,6 +244,6 @@ Power BI giver ikke mulighed for at vise og skjule tomme rækker. Hvis en række
 
 Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integrerede rapporter til arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk indsigt** i et produktionsmiljø. I stedet er de nyttige til udviklingsfelter, og hvis du vil integrere dine egne Power BI-rapporter.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Få adgang til analytiske arbejdsområder og rapporter i 1-box-miljøet](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

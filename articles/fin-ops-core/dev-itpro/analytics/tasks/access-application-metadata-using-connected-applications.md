@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28b8346b916729669af42ca47fe9a882e7a77bd0
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142195"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682135"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få adgang til programmetadata ved hjælp af tilsluttede programmer
 
@@ -54,7 +53,7 @@ Følgende trin beskriver, hvordan en Regulatory Configuration Service-bruger i r
 2. Luk siden. 
 3. Gå til **Alle arbejdsområder** > **Elektronisk rapportering**. 
 4. Klik på **Tilsluttede programmer**. 
-5. Sørg for, at det konfigurerede program er Azure-baseret og tilgængeligt for den aktuelle RCS-bruger. Det kræves også, at den aktuelle RCS-bruger har adgang til det valgte program og er registreret som bruger af dette program, der spiller en rolle, som giver adgangsrettigheder til programmets metadata. 
+5. Sørg for, at det konfigurerede program er Azure-baseret og tilgængeligt for den aktuelle RCS-bruger. Det kræves også, at den aktuelle RCS-bruger har adgang til det valgte program og er registreret som bruger af dette program og dermed får en rolle, som giver adgangsrettigheder til programmets metadata. 
 6. Klik på **Ny**. 
 7. Skriv 'MyConnectedApp' i feltet **Navn**. 
 8. I feltet **Program** skal du skrive 'https://mycompany.operations.dynamics.com'. 

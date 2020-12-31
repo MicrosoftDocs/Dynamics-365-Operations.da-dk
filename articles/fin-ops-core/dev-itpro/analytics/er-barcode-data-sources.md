@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088191"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681418"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Bruge stregkodedatakilder til at generere stregkodebilleder
 
@@ -36,14 +35,14 @@ Du kan bruge den [elektroniske rapporteringsstruktur (ER)](general-electronic-re
 
 De navngivne elementer bruges som pladsholdere for data, der er angivet i et genereret dokument, når der køres et ER-format. ER-formatelementer er knyttet til datakilder. Disse datakilder angiver de data, der skal indtastes i de genererede dokumenter på kørselstidspunktet. Du kan finde flere oplysninger under [Integrer billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md).
 
-ER understøtter nu datakildetypen **Stregkode**. Derfor kan du nu generere et billede, der repræsenterer stregkoden for angivet tekst. Når du konfigurerer et ER-format, kan du angive datakilderne for **Stregkode** -typen for at generere stregkodebilleder. Du kan derefter føje disse billeder til de genererede forretningsdokumenter, f.eks. ordrer, fakturaer, følgesedler og kvitteringer. Du kan også føje dem til forskellige typer etiketter, f.eks. produkt- og hyldelabels, emballage og forsendelsesetiketter.
+ER understøtter nu datakildetypen **Stregkode**. Derfor kan du nu generere et billede, der repræsenterer stregkoden for angivet tekst. Når du konfigurerer et ER-format, kan du angive datakilderne for **Stregkode**-typen for at generere stregkodebilleder. Du kan derefter føje disse billeder til de genererede forretningsdokumenter, f.eks. ordrer, fakturaer, følgesedler og kvitteringer. Du kan også føje dem til forskellige typer etiketter, f.eks. produkt- og hyldelabels, emballage og forsendelsesetiketter.
 
 Følgende pladsholdere kan bruges i rapportskabeloner til at angive stregkodebilleder:
 
 - Kontrolelement til [billedindhold](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) for Word
 - [Billede](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344)-objekt i Excel
 
-Ved at bruge en datakilde af **Stregkode** -typen kan du generere stregkoder i følgende formater:
+Ved at bruge en datakilde af **Stregkode**-typen kan du generere stregkoder i følgende formater:
 
 - Endimensionale stregkoder:
 
@@ -76,9 +75,9 @@ Når du konfigurerer en **Stregkode** som datakilde, kan du definere specifikke 
 - **Kodning** – Angiv den type tegn, der er kodet i det genererede stregkodebillede. Som standard bruges **UTF-8** som kodning.
 
 > [!IMPORTANT]
-> Når du tilføjer en ny **Stregkode** -datakilde, skal du placere den under et andet element (container) som et indlejret element.
+> Når du tilføjer en ny **Stregkode**-datakilde, skal du placere den under et andet element (container) som et indlejret element.
 >
-> Når du binder en **Stregkode** -datakilde til et celleelement i et format, og celleelementet repræsenterer enten et Word-indholdskontrolelement eller et Excel-billede, vises datakilden i denne binding som en funktion, der har en enkelt parameter af **Streng** -typen. Du skal bruge denne parameter til at angive den tekst, der skal omdannes til et stregkodebillede, og som læses, når en genereret stregkode scannes.
+> Når du binder en **Stregkode**-datakilde til et celleelement i et format, og celleelementet repræsenterer enten et Word-indholdskontrolelement eller et Excel-billede, vises datakilden i denne binding som en funktion, der har en enkelt parameter af **Streng**-typen. Du skal bruge denne parameter til at angive den tekst, der skal omdannes til et stregkodebillede, og som læses, når en genereret stregkode scannes.
 
 Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
 
@@ -142,12 +141,12 @@ Hent desuden følgende Excel-fil, der indeholder den ændrede skabelon for den l
 3. Hvis konfigurationen **Model til check** på siden **Konfigurationer** ikke er tilgængelig i konfigurationstræet, skal du følge disse trin for at importere ER-datamodelkonfigurationen:
 
     1. Vælg **Exchange** \> **Indlæs fra XML-fil** i handlingsruden.
-    2. Vælg **Gennemse** i dialogboksen, find og vælg filen **Model for cheques.xml** , og vælg derefter **OK**.
+    2. Vælg **Gennemse** i dialogboksen, find og vælg filen **Model for cheques.xml**, og vælg derefter **OK**.
 
 4. Hvis konfigurationen **Checkudskrivningsformat** ikke er tilgængelig i konfigurationstræet, skal du følge disse trin for at importere ER-formatkonfigurationen:
 
     1. Vælg **Exchange** \> **Indlæs fra XML-fil** i handlingsruden.
-    2. Vælg **Gennemse** i dialogboksen, find og vælg filen **Cheques printing format.xml** , og vælg derefter **OK**.
+    2. Vælg **Gennemse** i dialogboksen, find og vælg filen **Cheques printing format.xml**, og vælg derefter **OK**.
 
 5. Udvid **Model for checks** i konfigurationstræet.
 6. Gennemse listen over importerede ER-konfigurationer i konfigurationstræet.
@@ -159,7 +158,7 @@ Hent desuden følgende Excel-fil, der indeholder den ændrede skabelon for den l
 3. På siden med bankkontooplysninger i handlingsruden skal du under fanen **Opsætning** vælge **Check** i gruppen **Layout**.
 4. Vælg **Rediger** på siden **Checklayout**.
 5. Brug oversigtspanelet **Generelt** til at angive indstillingen **Generisk elektronisk eksportformat** til **Ja**.
-6. Vælg det **Checkudskrivningsformat** , som du tidligere har importeret, i feltet **Eksportér formatkonfiguration**.
+6. Vælg det **Checkudskrivningsformat**, som du tidligere har importeret, i feltet **Eksportér formatkonfiguration**.
 7. Vælg **Udskriv prøve** i handlingsruden.
 8. Angiv indstillingen af **Omsætteligt checkformat** til **Ja** i dialogboksen, og vælg derefter **OK**.
 
@@ -176,7 +175,7 @@ Hent desuden følgende Excel-fil, der indeholder den ændrede skabelon for den l
 
 #### <a name="apply-a-new-check-template"></a><a name="ExampleModifyFormatApplyTemplate"></a>Anvend en ny checkskabelon
 
-Du kan bruge det stationære Excel-program til at åbne filen **Checkskabelon Excel.xlsx** , som du tidligere har importeret. Bemærk, at denne skabelon adskiller sig fra den skabelon, du brugte til at generere en betalingscheck i den leverede ER-løsning. Desuden indeholder den et **AmountBarcode** -element til stregkodebilledet.
+Du kan bruge det stationære Excel-program til at åbne filen **Checkskabelon Excel.xlsx**, som du tidligere har importeret. Bemærk, at denne skabelon adskiller sig fra den skabelon, du brugte til at generere en betalingscheck i den leverede ER-løsning. Desuden indeholder den et **AmountBarcode**-element til stregkodebilledet.
 
 ![AmountBarcode-element i Excel-skabelonen](./media/er-barcode-data-source-cheque2.png)
 
@@ -192,20 +191,20 @@ Du skal nu redigere ER-løsningen og derefter [genanvende](modify-electronic-rep
     ![Binding af celleformatelementer til datakilder i ER-operationsdesigneren](./media/er-barcode-data-source-cells-bound.png)
 
 7. Vælg fanen **Format** i højre side af siden.
-8. Vælg ellipsen ( **...** ) i handlingsruden, og vælg derefter **Importér**.
-9. Vælg **Opdater fra Excel** i gruppen **Import** , og vælg derefter **Opdater skabelon**.
-10. Gå til filen **Checkskabelon Excel.xlsx** , der er gemt på din computer, i dialogboksen, markér den, og vælg derefter **OK** for at bekræfte, at den valgte skabelon skal anvendes.
+8. Vælg ellipsen (**...**) i handlingsruden, og vælg derefter **Importér**.
+9. Vælg **Opdater fra Excel** i gruppen **Import**, og vælg derefter **Opdater skabelon**.
+10. Gå til filen **Checkskabelon Excel.xlsx**, der er gemt på din computer, i dialogboksen, markér den, og vælg derefter **OK** for at bekræfte, at den valgte skabelon skal anvendes.
 11. Vælg fanen **Tilknytning** i højre side af siden og derefter **Udvid/skjul** i ruden med formattræ til venstre.
-12. Bemærk, at **AmountBarcode** -celleelementet er blevet føjet til formatet. Dette element er knyttet til det **AmountBarcode** -element, der er føjet til den ændrede Excel-skabelon som en pladsholder for et stregkodebillede.
+12. Bemærk, at **AmountBarcode**-celleelementet er blevet føjet til formatet. Dette element er knyttet til det **AmountBarcode**-element, der er føjet til den ændrede Excel-skabelon som en pladsholder for et stregkodebillede.
 
     ![AmountBarcode-celleelement er føjet til formatet i ER-operationsdesigneren](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Tilføj en ny stregkodedatakilde
 
-Derefter skal du tilføje en ny datakilde til **Stregkode** -typen.
+Derefter skal du tilføje en ny datakilde til **Stregkode**-typen.
 
 1. I ER-operationsdesigneren skal du under fanen **Tilknytning** i højre side af siden vælge datakilden **Udskriv**.
-2. Vælg **Tilføj** , og vælg derefter **Stregkode** som datakildetypen i gruppen **Funktioner**.
+2. Vælg **Tilføj**, og vælg derefter **Stregkode** som datakildetypen i gruppen **Funktioner**.
 
     ![Valg af stregkode som datakildetype](./media/er-barcode-data-source-add.png)
 
@@ -223,25 +222,25 @@ Derefter skal du binde det nye formatelement til den datakilde, du lige har tilf
 1. I ER-operationsdesigneren skal du under fanen **Tilknytning** i højre side af siden vælge datakilden **print\\barcode**.
 2. Vælg celleelementet **AmountBarcode** i ruden med formattræet til venstre , og vælg derefter **Bind**.
 3. Vælg **Vis detaljer** i handlingsruden.
-4. Bemærk, at fordi **Stregkode** -datakilden er repræsenteret i bindingen som en funktion, der indeholder en enkelt parameter, er navnet på det bundne formatelement automatisk blevet brugt som argument for parameteren.
+4. Bemærk, at fordi **Stregkode**-datakilden er repræsenteret i bindingen som en funktion, der indeholder en enkelt parameter, er navnet på det bundne formatelement automatisk blevet brugt som argument for parameteren.
 
     ![Oplysninger om stregkodedatakilden i ER-operationsdesigneren](./media/er-barcode-data-source-bind1.png)
 
 5. Vælg **Rediger formel** for at justere bindingen.
 
-    Du ønsker ikke, at navnet på celleelementet skal returneres. Derfor skal du konfigurere et udtryk, der returnerer tekst, der indeholder det betalingsbeløbet for den aktuelle check. Da det overordnede **ChequeLiness** -område er bundet til **model.cheques** -datakilden, er det skyldige beløb for den aktuelle check tilgængeligt i feltet **model.cheques.attributes.amount** for **Reel** -datatypen.
+    Du ønsker ikke, at navnet på celleelementet skal returneres. Derfor skal du konfigurere et udtryk, der returnerer tekst, der indeholder det betalingsbeløbet for den aktuelle check. Da det overordnede **ChequeLiness**-område er bundet til **model.cheques**-datakilden, er det skyldige beløb for den aktuelle check tilgængeligt i feltet **model.cheques.attributes.amount** for **Reel**-datatypen.
 
 6. I feltet **Formel** skal du angive **print.barcode(NUMBERFORMAT(@.attributes.amount, "F2"))**.
-7. Vælg **Gem** , og luk derefter [ER-formeldesigneren](general-electronic-reporting-formula-designer.md).
+7. Vælg **Gem**, og luk derefter [ER-formeldesigneren](general-electronic-reporting-formula-designer.md).
 8. Bemærk, at bindingen er blevet justeret.
 
     ![Reguleret binding i ER-operationsdesigneren](./media/er-barcode-data-source-bind2.png)
 
-9. Vælg **Gem** , og luk derefter ER-operationsdesigneren.
+9. Vælg **Gem**, og luk derefter ER-operationsdesigneren.
 
 #### <a name="make-the-modified-version-available-for-test-runs"></a><a name="ExampleModifyFormatMakeVersionAvailable"></a>Gør den ændrede version tilgængelig for testkørsler
 
-Som standard bruges de eneste versioner, der har statussen **Fuldført** og **Delt** , når du kører et ER-format.
+Som standard bruges de eneste versioner, der har statussen **Fuldført** og **Delt**, når du kører et ER-format.
 
 Hvis du har færdiggjort dine ændringer, kan du fuldføre arbejdet med den aktuelle kladdeversion og gøre dine ændringer tilgængelige til brug. Du kan finde instruktioner i afsnittet [Fuldfør den ændrede formatversion](#CompleteToRun) nedenfor.
 
@@ -253,10 +252,10 @@ Hvis du vil fortsætte med at arbejde med den aktuelle kladdeversion, men du ska
 2. På siden **Lokaliseringskonfigurationer** skal du vælge **Rapporteringskonfigurationer** i sektionen **Konfigurationer**.
 3. På siden **Konfigurationer** skal du i konfigurationstræet udvide **Model for checks** og vælge **Checkudskrivningsformat**.
 4. I oversigtspanelet **Versioner** skal du vælge den post, der har statussen **Kladde**.
-5. Vælg **Skift status** , og vælg derefter **Fuldført**.
+5. Vælg **Skift status**, og vælg derefter **Fuldført**.
 6. Vælg **OK** i dialogboksen.
 
-Status for den aktuelle version er ændret fra **Kladde** til **Fuldført** , og der oprettes en ny version med status **Kladde**. Du kan bruge denne nye kladdeversion til at anvende yderligere ændringer.
+Status for den aktuelle version er ændret fra **Kladde** til **Fuldført**, og der oprettes en ny version med status **Kladde**. Du kan bruge denne nye kladdeversion til at anvende yderligere ændringer.
 
 ##### <a name="make-the-draft-version-available-for-use"></a><a name="MarkToRun"></a>Gør kladdeversionen tilgængelig for brug
 
@@ -283,13 +282,13 @@ Kladdeversionen af det valgte format er markeret som tilgængelig til brug, når
     ![Genereret betalingscheck med stregkode i Excel](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
-> Der udløses en undtagelse, hvis argumentet for en **Stregkode** -datakilde ikke overholder de relevante krav, der er specifikke for stregkodeformatet. Når **Stregkode** -datakilden kaldes for at oprette en [EAN-8](https://wikipedia.org/wiki/EAN-8)-stregkode for den leverede tekst, udløses der f.eks. en undtagelse, hvis længden af teksten overstiger syv tegn.
+> Der udløses en undtagelse, hvis argumentet for en **Stregkode**-datakilde ikke overholder de relevante krav, der er specifikke for stregkodeformatet. Når **Stregkode**-datakilden kaldes for at oprette en [EAN-8](https://wikipedia.org/wiki/EAN-8)-stregkode for den leverede tekst, udløses der f.eks. en undtagelse, hvis længden af teksten overstiger syv tegn.
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>Konverter den genererede check til PDF
 
 Som beskrevet i emnet [Generere FTI-formularer, der kan udskrives](er-generate-printable-fti-forms.md#finland) kan du bruge en særlig skrifttype til oprettelse af stregkoder i et genereret dokument. I dette tilfælde kan yderligere transformationer af det genererede dokument afhænge af tilgængeligheden af den pågældende skrifttype i transformationsmiljøet. Hvis du f.eks. forsøger at konvertere et dokument til PDF-format eller se det i et miljø, hvor skrifttypen mangler, gengives stregkoderne ikke korrekt.
 
-Men når du bruger **Stregkode** -datakilden til at producere stregkoder, afhænger gengivelsen af disse stregkoder ikke af nogen skrifttyper. Derfor kan du nemt konvertere dokumenter, der indeholder stregkoderne, til PDF-format. I følgende illustration vises eksemplet på en genereret betalingscheck, der er [konverteret](electronic-reporting-destinations.md#OutputConversionToPDF) til et PDF-dokument baseret på indstillingen af den konfigurerede ER-[destination](electronic-reporting-destinations.md).
+Men når du bruger **Stregkode**-datakilden til at producere stregkoder, afhænger gengivelsen af disse stregkoder ikke af nogen skrifttyper. Derfor kan du nemt konvertere dokumenter, der indeholder stregkoderne, til PDF-format. I følgende illustration vises eksemplet på en genereret betalingscheck, der er [konverteret](electronic-reporting-destinations.md#OutputConversionToPDF) til et PDF-dokument baseret på indstillingen af den konfigurerede ER-[destination](electronic-reporting-destinations.md).
 
 ![Forhåndsvisning af PDF-dokument med betalingscheck](./media/er-barcode-data-source-cheque4.png)
 

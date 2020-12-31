@@ -10,26 +10,27 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040116"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679950"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
-> Dette emne opdateres ikke længere. Hvis du vil have vist en aktuel liste over funktioner, der er fjernet eller udfaset fra Finance and Operations-apps, skal du søge efter indhold i **Fjernede eller udfasede funktioner** , der er relateret til den app, du bruger.
+> Dette emne opdateres ikke længere. Hvis du vil have vist en aktuel liste over funktioner, der er fjernet eller udfaset fra Finance and Operations-apps, skal du søge efter indhold i **Fjernede eller udfasede funktioner**, der er relateret til den app, du bruger.
 
 I dette emne beskrives funktioner, der er blevet fjernet eller er udfaset fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 
@@ -79,7 +80,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Vi udfaser metoden **setUtcString ()** , fordi der findes en bedre erstatningsmetode. |
+| **Årsagen til forældelsen/fjernelsen** | Vi udfaser metoden **setUtcString ()**, fordi der findes en bedre erstatningsmetode. |
 | **Erstattet af en anden funktion?**   | Ja |
 | **Produktområder, der er berørt**         | Platform |
 | **Installationsindstilling**              | Alt |
@@ -137,7 +138,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Den **Franske FEC-revisionsfil** , som er erstattet af txt-format, er tilgængelig via **Finans** \> **Periodiske opgaver** \> **Dataeksport**.
+| **Årsagen til forældelsen/fjernelsen** | Den **Franske FEC-revisionsfil**, som er erstattet af txt-format, er tilgængelig via **Finans** \> **Periodiske opgaver** \> **Dataeksport**.
 | **Erstattet af en anden funktion?**   | Ja |
 | **Produktområder, der er berørt**         | Finans |
 | **Installationsindstilling**              | Alt |
@@ -185,7 +186,7 @@ Understøttelse til at oprette projektbaserede salgsordre i de tilfælde, hvor p
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Funktionen vil altid være aktiveret, når parametret fjernes. |
 | **Erstattet af en anden funktion?**   | Nr. Funktionen til at understøtte projektbaserede salgsordre med flere finansieringskilder vil altid være aktiveret.   |
-| **Produktområder, der er berørt**         |Parametret **Tillad salgsordre for projekter med flere finansieringskilder** bliver fjernet. Følgende metoder modificeres, når parametret er blevet fjernet: **ctrlSalesOrderTable** -metoden i **ProjStatusType** -klassen, **valideringsmetoden** for feltet **ProjId** og **kør** -metoden i formularen **SalescreateOrder**. Følgende metoder udfases, når parametret er blevet fjernet: **IsSalesOrderAllowedForMultipleFundingSources** i tabelfilen **ProjTable** , metoden **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** i tabelfilen **ProjTable** , datafeltet **AllowSalesOrdersForMultipleFundingSources** i formularen **ProjParameters** og filerne **ProjParameterEntity** samt den private metode **IsAssociatedToMultipleFundingSourcesContract** i tabelfilen **ProjTable**. |
+| **Produktområder, der er berørt**         |Parametret **Tillad salgsordre for projekter med flere finansieringskilder** bliver fjernet. Følgende metoder modificeres, når parametret er blevet fjernet: **ctrlSalesOrderTable**-metoden i **ProjStatusType**-klassen, **valideringsmetoden** for feltet **ProjId** og **kør**-metoden i formularen **SalescreateOrder**. Følgende metoder udfases, når parametret er blevet fjernet: **IsSalesOrderAllowedForMultipleFundingSources** i tabelfilen **ProjTable**, metoden **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** i tabelfilen **ProjTable**, datafeltet **AllowSalesOrdersForMultipleFundingSources** i formularen **ProjParameters** og filerne **ProjParameterEntity** samt den private metode **IsAssociatedToMultipleFundingSourcesContract** i tabelfilen **ProjTable**. |
 | **Installationsindstilling**              | Alt  |
 | **Status**                         | Udfasningen er planlagt til at finde sted sammen med frigivelsesbølgen i april 2020. |
 
@@ -266,7 +267,7 @@ Integrerede nøgletal (KPI'er) kan modelleres i Visual Studio af en udvikler og 
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Det er muligt for definitioner af tabelmetadata at have feltgrupper, der indeholder ugyldige referencer. Hvis pakken installeres, kan det medføre kørselsfejl i Økonomirapportering og SQL Server Reporting Services (SSRS). Dette problem kategoriseres i øjeblikket som en *kompileradvarsel* i stedet for en *fejl* , hvilket betyder, at oprettelsen af den installerbare pakke og installationen kan fortsætte, uden at problemet rettes. Sådan løser du problemet:<br><br>1. Fjern den ugyldige feltreference fra definitionen af tabelfeltgruppen.<br><br>2. Kompiler igen.<br><br>3. Kontroller, at eventuelle advarsler eller fejl er rettet. |
+| **Årsagen til forældelsen/fjernelsen** | Det er muligt for definitioner af tabelmetadata at have feltgrupper, der indeholder ugyldige referencer. Hvis pakken installeres, kan det medføre kørselsfejl i Økonomirapportering og SQL Server Reporting Services (SSRS). Dette problem kategoriseres i øjeblikket som en *kompileradvarsel* i stedet for en *fejl*, hvilket betyder, at oprettelsen af den installerbare pakke og installationen kan fortsætte, uden at problemet rettes. Sådan løser du problemet:<br><br>1. Fjern den ugyldige feltreference fra definitionen af tabelfeltgruppen.<br><br>2. Kompiler igen.<br><br>3. Kontroller, at eventuelle advarsler eller fejl er rettet. |
 | **Erstattet af en anden funktion?**   | Denne advarsel erstattes af en kompileringsfejlmeddelelse fremover. |
 | **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
 | **Installationsindstilling**              | Alt |
@@ -356,7 +357,7 @@ Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Kodeplomberingsinitiativ  |
-| **Erstattet af en anden funktion?**   | Ingen. Hver gang der kræves en ny indbygget funktion, skal en ny anmodning om forlængelse adresseres til ER-strukturteamet.<br><br>Som en midlertidig løsning, mens den anmodede funktion er under udvikling af ER-teamet, kan den logik, der kræves, programmeres som en metode til en brugerdefineret programklasse. Denne metode kan benyttes i ER-udtrykket som en egenskab for den tilføjede ER-datakilde til den **Program\klasse** -type, der refererer til den pågældende brugerdefinerede programklasse.  |
+| **Erstattet af en anden funktion?**   | Ingen. Hver gang der kræves en ny indbygget funktion, skal en ny anmodning om forlængelse adresseres til ER-strukturteamet.<br><br>Som en midlertidig løsning, mens den anmodede funktion er under udvikling af ER-teamet, kan den logik, der kræves, programmeres som en metode til en brugerdefineret programklasse. Denne metode kan benyttes i ER-udtrykket som en egenskab for den tilføjede ER-datakilde til den **Program\klasse**-type, der refererer til den pågældende brugerdefinerede programklasse.  |
 | **Produktområder, der er berørt**         | Elektronisk rapporteringsstruktur                                                      |
 | **Installationsindstilling**              | Alt                                                                                      |
 | **Status**                         | Fjernes fra og med Finance and Operations, Enterprise Edition 7.3.    |
@@ -374,12 +375,12 @@ Disse to rapporter understøttes ikke længere i Finance and Operations. I stede
 | **Status**                       | Forældet: Menupunkterne for de to rapporter er blevet fjernet i version 7.3. Koden for rapporterne forbliver dog i produktet. Planen er at fjerne koden i en senere version. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-indholdspakker, der er tilgængelige på AppSource
-Indholdspakkerne **Omkostningsstyring** , **Økonomisk performance** og **Retail Channel Performance** , der er tilgængelige på webstedet [Microsoft AppSource](https://appsource.microsoft.com), frarådes som følge af produktopdateringer i Microsoft Power BI. Systemadministrationsformularer, som bruges til at installere disse indholdspakker på PowerBI.com, udfases også i Finance and Operations.
+Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Retail Channel Performance**, der er tilgængelige på webstedet [Microsoft AppSource](https://appsource.microsoft.com), frarådes som følge af produktopdateringer i Microsoft Power BI. Systemadministrationsformularer, som bruges til at installere disse indholdspakker på PowerBI.com, udfases også i Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Produktopdateringer i Microsoft Power BI. |
-| **Erstattet af en anden funktion?**   | Indholdspakkerne **Omkostningsstyring** , **Økonomisk performance** og **Retail Channel Performance** , der er tilgængelige på webstedet [AppSource](https://appsource.microsoft.com), bliver erstattet af analyseprogrammer, som giver mulighed for integration af løsninger på databaseniveau. Du kan finde flere oplysninger om analyseprogrammer i [Integreret Power BI i arbejdsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Erstattet af en anden funktion?**   | Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Retail Channel Performance**, der er tilgængelige på webstedet [AppSource](https://appsource.microsoft.com), bliver erstattet af analyseprogrammer, som giver mulighed for integration af løsninger på databaseniveau. Du kan finde flere oplysninger om analyseprogrammer i [Integreret Power BI i arbejdsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Produktområder, der er berørt**         | Omkostningsstyring, Finans og Detail                                                                                               |
 | **Installationsindstilling**              | Kun skyen (Integration med PowerBI.com understøttes ikke i lokale installationer).                                                                                                            |
 | **Status**                         | Forældet: Måltidsrammen for fjernelse af funktioner er 2. kvartal 2018.    |
@@ -712,7 +713,7 @@ Lønoplysninger personale
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktionalitet er blevet erstattet af grundlæggende løn- og personalesider.  |
-| **Erstattet af en anden funktion?**   | **Frynsegoder** , **Indtjeninger** og andre relaterede sider, der tidligere var i amerikanske lønopgaver, er blevet ændret og er nu en del af den centrale personalekonfigurationen og støtter ekstern lønbehandling. Der opnås adgang til denne funktion ved hjælp af **Personale 1** \> **Løn** -konfigurationsnøglen. |
+| **Erstattet af en anden funktion?**   | **Frynsegoder**, **Indtjeninger** og andre relaterede sider, der tidligere var i amerikanske lønopgaver, er blevet ændret og er nu en del af den centrale personalekonfigurationen og støtter ekstern lønbehandling. Der opnås adgang til denne funktion ved hjælp af **Personale 1** \> **Løn**-konfigurationsnøglen. |
 | **Produktområder, der er berørt**         | Personale, Løn   |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations version 1611.    |
 
@@ -806,8 +807,8 @@ Der findes to formater til eksport af betalinger for Finland. LM02 (FI) bruges t
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Warehouse Management Solution II (WMS II), der er tilgængelig i modulet **Lagerstyring** , dublerer funktioner i det **Lagerstyring** -modul, der blev udgivet i Dynamics AX 2012 R3.                                                                         |
-| **Erstattet af en anden funktion?**   | **Lagerstyring** -modulet, der blev udgivet i AX 2012 R3, Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter funktionerne i Lagerstyring II. Det nye modul har mere avancerede funktioner og mere fleksible processer til styring af lagersted end dem, der blev tilbudt til Lagerstedsstyring II. |
+| **Årsagen til forældelsen/fjernelsen** | Warehouse Management Solution II (WMS II), der er tilgængelig i modulet **Lagerstyring**, dublerer funktioner i det **Lagerstyring**-modul, der blev udgivet i Dynamics AX 2012 R3.                                                                         |
+| **Erstattet af en anden funktion?**   | **Lagerstyring**-modulet, der blev udgivet i AX 2012 R3, Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter funktionerne i Lagerstyring II. Det nye modul har mere avancerede funktioner og mere fleksible processer til styring af lagersted end dem, der blev tilbudt til Lagerstedsstyring II. |
 | **Produktområder, der er berørt**         | Lagerstyring, salg og marketing, indkøb og forsyning   |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations version 1611.    |
 
@@ -847,7 +848,7 @@ En arbejdsgang til styring af oprettelse af medarbejdermål er et af flere arbej
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF, AxD og AxBC integrationer
 
-I Application Integration Framework (AIF) kan data udveksles med eksterne systemer via forretningslogik, der vises som tjenester. Dynamics AX indeholder tjenester, der er baseret på dokumenter og .NET Business Connector (AxBC). Der oprettes et dokument ved hjælp af XML. XML-filen indeholder hovedoplysninger, der er tilføjet for at oprette en *meddelelse* , der kan overføres til eller fra Dynamics AX. Eksempler på dokumenter omfatter salgsordrer og indkøbsordrer. Næsten enhver enhed, f.eks. en kunde, kan dog være repræsenteret af et dokument. Tjenester, der er baseret på dokumenter, bruger **Axd \<Document\>** -klasser.
+I Application Integration Framework (AIF) kan data udveksles med eksterne systemer via forretningslogik, der vises som tjenester. Dynamics AX indeholder tjenester, der er baseret på dokumenter og .NET Business Connector (AxBC). Der oprettes et dokument ved hjælp af XML. XML-filen indeholder hovedoplysninger, der er tilføjet for at oprette en *meddelelse*, der kan overføres til eller fra Dynamics AX. Eksempler på dokumenter omfatter salgsordrer og indkøbsordrer. Næsten enhver enhed, f.eks. en kunde, kan dog være repræsenteret af et dokument. Tjenester, der er baseret på dokumenter, bruger **Axd \<Document\>**-klasser.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -869,7 +870,7 @@ Faktureringsscripts blev anvendt til at beregne faktureringssatser for faktureri
 
 ### <a name="boms-without-bom-versions"></a>Styklister uden styklisteversioner
 
-Når **Styklisteversioner** -konfigurationsnøglen var deaktiveret, blev styklisteversioner skjult i alle formularer, og systemet ville gennemtvinge en 1:1 relation mellem frigivne produkter og styklister. **Styklisteversioner** -konfigurationsnøglen kan ikke være deaktiveret i den aktuelle version af Dynamics AX.
+Når **Styklisteversioner**-konfigurationsnøglen var deaktiveret, blev styklisteversioner skjult i alle formularer, og systemet ville gennemtvinge en 1:1 relation mellem frigivne produkter og styklister. **Styklisteversioner**-konfigurationsnøglen kan ikke være deaktiveret i den aktuelle version af Dynamics AX.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1157,7 +1158,7 @@ Oprettelsen af adviseringer kan ikke udføres ved hjælp af et batch, men kan st
 
 ### <a name="gl-ssrs-reports"></a>GL SSRS-rapporter
 
-Rapporter, der indeholder følgende menupunkter, er blevet fjernet: **Råbalanceoversigt** , **Detaljeret råbalance** , **Kontoplan** , **Revisionsspor** , **Saldi** og **Saldoliste**.
+Rapporter, der indeholder følgende menupunkter, er blevet fjernet: **Råbalanceoversigt**, **Detaljeret råbalance**, **Kontoplan**, **Revisionsspor**, **Saldi** og **Saldoliste**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1359,7 +1360,7 @@ Windows 8 tablet-appen leverede funktionalitet til udgiftsregistrering og -godke
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Lav belastning |
-| **Erstattet af en anden funktion?**   | Nej, men siden **Profilrelation** , som åbnes fra siden **Profilgrupper** , understøtter det samme forretningsscenario som den forældede **Arbejdsplanlægning** -side. |
+| **Erstattet af en anden funktion?**   | Nej, men siden **Profilrelation**, som åbnes fra siden **Profilgrupper**, understøtter det samme forretningsscenario som den forældede **Arbejdsplanlægning**-side. |
 | **Produktområder, der er berørt**         | Tid og Fremmøde     |
 | **Status**                         | Koden er ikke blevet fjernet. Formularen, JmgWorkPlanner, blev dog ikke flyttet.    |
 

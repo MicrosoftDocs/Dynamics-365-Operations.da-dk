@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143047"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684421"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Administrere ER-modeltilknytning i separate ER-konfigurationer
 
@@ -66,9 +65,9 @@ Da ER-konfigurationer deles af firmaer, kan du fuldføre denne opgaveguide ved h
     * Eksempeltilknytning  
 4. Klik på Opret konfiguration.
 5. Udvid eller skjul sektionen Forudsætninger.
-    * Bemærk, at forudsætningsgruppen 'Implementeringer' er tilføjet automatisk. Gruppen indeholder den påkrævede komponent, der refererer til den overordnede datamodelkonfiguration og er markeret som Implementering. Det betyder, at denne tilknytningskonfiguration for eksempeltilknytningsmodellen betragtes som implementeringen af datamodellen Eksempeldatamodel. Denne komponent tvinger derfor ER til at hente modeltilknytningskonfigurationen Eksempeltilknytning fra et ER-lager, når modelkonfigurationen Eksempeldatamodel hentes.   
+    * Forudsætningsgruppen Implementeringer er tilføjet automatisk. Gruppen indeholder den påkrævede komponent, der refererer til den overordnede datamodelkonfiguration og er markeret som Implementering. Det betyder, at denne tilknytningskonfiguration for eksempeltilknytningsmodellen betragtes som implementeringen af datamodellen Eksempeldatamodel. Denne komponent tvinger derfor ER til at hente modeltilknytningskonfigurationen Eksempeltilknytning fra et ER-lager, når modelkonfigurationen Eksempeldatamodel hentes.   
 6. Klik på Designer.
-    * Bemærk, at den oprettede modeltilknytningskonfiguration indeholder en ny tom tilknytning med samme navn som den oprettede konfiguration. Vær opmærksom på, når en valgt overordnet models konfiguration indeholder modeltilknytninger, kopieres de til en ny modeltilknytningskonfiguration.   
+    * Den oprettede modeltilknytningskonfiguration indeholder en ny tom tilknytning med samme navn som den oprettede konfiguration. Når en valgt overordnet models konfiguration indeholder modeltilknytninger, kopieres de til en ny modeltilknytningskonfiguration.   
 7. Klik på Designer.
 8. Vælg 'Dynamics 365 for Operations\Tabel' i træet.
 9. Klik på Tilføj rod.
@@ -112,7 +111,7 @@ Da ER-konfigurationer deles af firmaer, kan du fuldføre denne opgaveguide ved h
 16. Klik på Kør.
     * Klik på Kør i oversigtspanelet Versioner.  
 17. Klik på OK.
-    * Gennemse det output, der indeholder navnet på det firma, som den bruger, der kører denne formatkonfiguration, er logget på. Bemærk, at, den oprettede modeltilknytningskonfiguration bruges af denne formatkonfiguration, fordi der kun er én tilgængelig konfiguration, der indeholder de nødvendige modeltilknytninger.   
+    * Gennemse det output, der indeholder navnet på det firma, som den bruger, der kører denne formatkonfiguration, er logget på. Den oprettede modeltilknytningskonfiguration bruges af denne formatkonfiguration, fordi der kun er én tilgængelig konfiguration, der indeholder de nødvendige modeltilknytninger.   
 
 ## <a name="add-alternative-er-model-mapping-configuration"></a>Tilføje en alternativ ER-modeltilknytningskonfiguration
 1. Vælg 'Eksempeldatamodel' i træet.
@@ -150,15 +149,15 @@ Da ER-konfigurationer deles af firmaer, kan du fuldføre denne opgaveguide ved h
 28. Luk siden.
 29. Vælg Ja i feltet Udkast til kørsel.
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Du kan bruge en eksisterende ER-modeltilknytningskonfiguration
+## <a name="use-an-existing-er-model-mapping-configuration"></a>Bruge en eksisterende ER-modeltilknytningskonfiguration
 1. Vælg i træet 'Eksempeldatamodel\Eksempelformat'.
 2. Klik på Kør.
-    * Bemærk, at den valgte kladdeversion af ER-formatkonfigurationen ikke kan udføres, fordi der findes mere end én konfiguration af modeltilknytningen til den udefinerede datamodel, der er valgt som datakilde for det ER-format, der køres.   
+    * Den valgte kladdeversion af ER-formatkonfigurationen ikke kan udføres, fordi der findes mere end én konfiguration af modeltilknytningen til den udefinerede datamodel, der er valgt som datakilde for det ER-format, der køres.   
     * Som det næste skal du definere den alternative modeltilknytningskonfiguration som den, hvorfra modeltilknytninger bliver brugt som datakilder ved kørsel af ER-format.   
 3. Vælg i træet 'Eksempeldatamodel\Eksempeltilknytning (alternativ)'.
 4. Vælg Ja i feltet Standard for modeltilknytning.
 5. Vælg i træet 'Eksempeldatamodel\Eksempelformat'.
 6. Klik på Kør.
 7. Klik på OK.
-    * Bemærk, at standardkonfigurationen for modeltilknytningen bruges af denne formatkonfiguration til oprettelse af det elektroniske dokument (det oprettede output indeholder firmakoden).  
+    * Standardkonfigurationen for modeltilknytningen bruges af denne formatkonfiguration til oprettelse af det elektroniske dokument (det oprettede output indeholder firmakoden).  
 

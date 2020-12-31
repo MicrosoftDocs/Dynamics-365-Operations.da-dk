@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: ca837026f18034cddb34d7a2d5a62002ed69106a
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: b51a7ae8587a3cbb65efc4af574929efcbc8fbf8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042751"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681466"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Konfigurer parametrene for et ER-format for hver juridisk enhed
 
@@ -42,7 +41,7 @@ For at fuldføre eksemplerne i dette emne, skal du have adgang til Microsoft Dyn
 ## <a name="import-er-configurations"></a>Importér ER-konfigurationer
 
 1.  Log på dit miljø.
-2.  Vælg **Elektronisk rapportering**på standarddashboardet.
+2.  Vælg **Elektronisk rapportering** på standarddashboardet.
 3.  Vælg **Rapporteringskonfigurationer**.
 4.  Importerer de konfigurationer, du har eksporteret fra Regulatory Configuration Services (RCS), til den aktuelle forekomst af Finance, mens du fuldførte trinnene i emnet [Konfigurer ER-formater, så du kan bruge de parametre, der er angivet for hver juridiske enhed](er-app-specific-parameters-configure-format.md). Benyt følgende fremgangsmåde for hver enkelt konfiguration af Elektronisk rapportering (ER) i følgende rækkefølge: datamodel, modeltilknytning og formater.
 

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771438"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681442"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisere test med elektronisk rapportering
 
@@ -35,7 +34,7 @@ Du kan også tilpasse de enkelte Microsoft-komponenter og bruge dem som basis fo
 
 Du kan bruge tilpassede ER-formater til at behandle betalingsfiler, der genererer leverandørbetalinger, og som også skal behandle kontrolrapporter. Versionering understøttes i ER-komponenter. Microsoft kan derfor levere opdaterede versioner af ER-løsninger til behandling af kreditorbetalinger, og du kan automatisk flette den opdaterede version med den tilpassede komponent ved at rebasere den. Du skal dog teste den rebaserede version for at sikre, at den fungerer efter hensigten.
 
-ER-datamodeller og ER-modeltilknytninger er fælles for mange ER-formater, der bruges til at behandle betalinger af forskellige typer og til at oprette lande-/områdespecifikke betalingsdokumenter. Derfor er det meget ønskeligt at automatisere test af brugeraccept og integration, så det automatisk udføres i flere virksomheder, men som tager hensyn til lande-/områdekonteksten for hvert af de pågældende destinationsfirmaer, bruger forskellige datasæt osv.
+ER-datamodeller og ER-modeltilknytninger er fælles for mange ER-formater, der bruges til at behandle betalinger af forskellige typer og til at oprette land/område-specifikke betalingsdokumenter. Derfor er det meget ønskeligt at automatisere test af brugeraccept og integration, så det automatisk udføres i flere virksomheder, men som tager hensyn til land/område-konteksten for hvert af de pågældende destinationsfirmaer, bruger forskellige datasæt osv.
 
 Du kan finde flere oplysninger om, hvordan du opretter en tilpasset version af et format, der er baseret på det format, du har modtaget fra en konfigurationsudbyder, i [Opgradere dit ER-format ved at bruge en ny basisversion af formatet](./tasks/er-upgrade-format.md).
 
@@ -60,7 +59,7 @@ Funktionelle superbrugere kan køre test af brugeraccept og -integration.
 Før du kan fuldføre opgaverne i dette emne, skal du fuldføre følgende forudsætninger:
 
 - Implementer en topologi, der understøtter testautomatisering. Du skal have adgang til forekomsten af denne topologi for rollen **Systemadministrator**. Denne topologi skal indeholde de demodata, der vil blive brugt i dette eksempel. Du kan finde flere oplysninger under [Installer og anvend et miljø, som understøtter fortløbende build og automatisering af test](../perf-test/continuous-build-test-automation.md).
-- Hvis du vil køre test af brugergodkendelse og -integration automatisk, skal du installere RSAT i den topologi, du bruger, og konfigurere den på en passende måde. Du kan finde oplysninger om, hvordan du installerer og konfigurerer RSAT og konfigurerer det til at fungere sammen med Finance and Operations-apps og Azure DevOps, ved at se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Vær opmærksom på forudsætningerne for at bruge værktøjet. I følgende illustration vises et eksempel på RSAT-indstillingerne. Det blå rektangel omgiver de parametre, der er angivet for adgang til Azure DevOps. Det grønne rektangel omgiver de parametre, der angiver adgangen til forekomsten.
+- Hvis du vil køre test af brugergodkendelse og -integration automatisk, skal du installere RSAT i den topologi, du bruger, og konfigurere den på en passende måde. Du kan finde oplysninger om, hvordan du installerer og konfigurerer RSAT og konfigurerer den til at virke sammen Finance and Operations-apps og Azure DevOps, i [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Vær opmærksom på forudsætningerne for at bruge værktøjet. I følgende illustration vises et eksempel på RSAT-indstillingerne. Det blå rektangel omgiver de parametre, der er angivet for adgang til Azure DevOps. Det grønne rektangel omgiver de parametre, der angiver adgangen til forekomsten.
 
     ![RSAT-indstillinger](media/GER-Configure.png "Skærmbillede af dialogboksen RSAT-indstillinger")
 
@@ -83,7 +82,7 @@ Før du kan fuldføre opgaverne i dette emne, skal du fuldføre følgende foruds
 
     ![Konfigurationer for elektronisk rapportering](media/GER-Configurations.png "Skærmbillede af siden Konfigurationer i elektronisk rapportering")
 
-3. Vælg det **GBSI**-demodatafirma, som har en lande-/områdekontekst i Storbritannien.
+3. Vælg det **GBSI**-demodatafirma, som har en land/område-kontekst i Storbritannien.
 4. Konfigurer kreditorparametre:
 
     1. Gå til **Kreditor \> Opsætning af betaling \> Betalingsmåder**.

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea2bfd2514be666d05165410ca27041a86464715
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b591df3d384e8dc59646ebb9d0205001db040a55
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143217"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684181"
 ---
 # <a name="er-import-configurations-from-rcs"></a>(ER) Importere konfigurationer fra RCS
 
@@ -31,28 +30,28 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 
 1. Gå til **Organisationsadministration** > **Arbejdsområder** > **Elektronisk rapportering**. 
 2. Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som **Aktiv**. Hvis denne konfigurationsudbyder ikke vises, skal du fuldføre trinnene i emnet [Opret konfigurationsudbydere, og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). 
-3. Hvis du ikke har klargjort et RCS-miljø til dit firma, skal du klikke på det eksterne link **Regulatory services – konfiguration** og følge instruktionerne for at klargøre et RCS-miljø. 
-4. Klik på **Parametre til elektronisk rapportering**. 
-5. Klik på fanen **RCS**. 
+3. Hvis du ikke har klargjort et RCS-miljø til dit firma, skal du vælge det eksterne link **Regulatory services – konfiguration** og følge instruktionerne for at klargøre et RCS-miljø. 
+4. Vælg **Parametre til elektronisk rapportering**. 
+5. Vælg fanen **RCS**. 
 6. Hvis RCS-miljøet allerede er klargjort til dit firma, skal du anvende indstillingen for præsenteret på sidens URL-adresser for at få adgang til det. 
 7. Luk siden. 
 
 ## <a name="register-a-new-er-repository"></a>Registrere et nyt ER-lager. 
 1. Markér den valgte række på listen. 
 2. Vælg Litware, Inc.-udbyder 
-3. Klik på Lagre. 
-4. Klik på Tilføj for at åbne dialogboksen. 
+3. Vælg Lagre. 
+4. Vælg Tilføj for at åbne dialogboksen. 
 5. Skriv RCS i feltet Konfigurationslagertype. 
-6. Klik på Opretlager. 
+6. Vælg Opret lager. 
 7. Angiv eller vælg en værdi i feltet for vist navn for RCS-miljø. 
-8. Vælg det ønskede RCS-forekomst. Bemærk, at du kan have flere af dem. 
-9. Klik på OK. 
+8. Vælg det ønskede RCS-forekomst. Du kan have flere af dem. 
+9. Vælg OK. 
 
-## <a name="import-er-configurations-from-rcs-based-repository"></a>Hente ER-konfigurationer fra RCS-baseret lager
-1. Klik på **Vis filtre**. 
+## <a name="import-er-configurations-from-rcs-based-repository"></a>Importere ER-konfigurationer fra RCS-baseret lager
+1. Vælg **Vis filtre**. 
 2. Angiv filterværdien "RCS" i feltet **Navn** ved hjælp af filteroperatoren **begynder med**. 
-3. Når du åbner det valgte lagersted, skal du på siden **Forbind til Regulatory Configuration Services** klikke på linket **Klik her for at oprette forbindelse til Regulatory Configuration Services**. 
-4. Klik på **Åbn**. 
-5. Klik på **Luk**. 
-6. Vælg den ønskede version af ER-konfigurationen, og klik på **Importer** for at bringe den ind i den aktuelle forekomst.
+3. Når du åbner det valgte lagersted, skal du på siden **Forbind til Regulatory Configuration Services** vælge linket **Klik her for at oprette forbindelse til Regulatory Configuration Services**. 
+4. Vælg **Åbn**. 
+5. Vælg **Luk**. 
+6. Vælg den ønskede version af ER-konfigurationen, og vælg **Importér** for at overføre den til den aktuelle forekomst.
 

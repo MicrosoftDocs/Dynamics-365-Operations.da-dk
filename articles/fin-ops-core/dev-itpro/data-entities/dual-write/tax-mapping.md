@@ -1,6 +1,6 @@
 ---
 title: Integreret moms
-description: I dette emne beskrives integrationen af momsdata mellem Finance and Operations og Common Data Service.
+description: I dette emne beskrives integrationen af momsdata mellem Finance and Operations og Dataverse.
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 26818ceace7d2b7e7c3ed4d0bb0bd9ab2e884aba
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 14c22dd6602b5fbf866c8dc6b057f6c8acb1f48f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997594"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679290"
 ---
 # <a name="integrated-tax"></a>Integreret moms
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -35,7 +37,7 @@ Data vedrørende momsopsætning definerer opsætningen for både indirekte moms 
 
 ## <a name="templates"></a>Skabeloner
 
-Momsdata omfatter en samling af enhedstilknytninger, der arbejder sammen i forbindelse med datainteraktion, som vist i følgende tabel.
+Momsdata omfatter en samling af tabeltilknytninger, der arbejder sammen i forbindelse med datainteraktion, som vist i følgende tabel.
 
 Finance and Operations-apps | Modelstyrede apps i Dynamics 365 | Beskrivende tekst |
 -------------------------|---------------------------------|----|
