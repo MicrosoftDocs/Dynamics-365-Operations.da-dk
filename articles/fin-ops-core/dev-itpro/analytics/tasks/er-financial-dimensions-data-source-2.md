@@ -1,0 +1,149 @@
+---
+title: 'ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)'
+description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter.
+author: NickSelin
+manager: AnnBe
+ms.date: 05/27/2020
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
+audience: Application User
+ms.reviewer: kfend
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681679"
+---
+# <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a><span data-ttu-id="84faa-103">ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)</span><span class="sxs-lookup"><span data-stu-id="84faa-103">ER Use financial dimensions as a data source (Part 2 - Model mapping)</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="84faa-104">Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter.</span><span class="sxs-lookup"><span data-stu-id="84faa-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="84faa-105">Disse trin kan udføres i en hvilken som helst virksomhed.</span><span class="sxs-lookup"><span data-stu-id="84faa-105">These steps can be performed in any company.</span></span>
+
+<span data-ttu-id="84faa-106">For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER-brug af økonomiske dimensioner som datakilde (del 1: Design datamodel)".</span><span class="sxs-lookup"><span data-stu-id="84faa-106">To complete these steps, you must first complete the steps in the "ER Use financial dimensions as a data source (Part 1: Design data model" procedure.</span></span>
+
+
+## <a name="add-required-data-sources-to-model-mapping"></a><span data-ttu-id="84faa-107">Føj nødvendige datakilder til modeltilknytning</span><span class="sxs-lookup"><span data-stu-id="84faa-107">Add required data sources to model mapping</span></span>
+1. <span data-ttu-id="84faa-108">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="84faa-108">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="84faa-109">Vælg 'Eksempelmodel til økonomiske dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-109">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="84faa-110">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="84faa-110">Click Designer.</span></span>
+4. <span data-ttu-id="84faa-111">Klik på Tilknyt model til datakilde.</span><span class="sxs-lookup"><span data-stu-id="84faa-111">Click Map model to datasource.</span></span>
+5. <span data-ttu-id="84faa-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="84faa-112">Click New.</span></span>
+6. <span data-ttu-id="84faa-113">Vælg Post i feltet Definition.</span><span class="sxs-lookup"><span data-stu-id="84faa-113">In the Definition field, select Entry.</span></span>
+7. <span data-ttu-id="84faa-114">Skriv 'Datatilknytning for dimensioner' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="84faa-114">In the Name field, type 'Dimensions data mapping'.</span></span>
+8. <span data-ttu-id="84faa-115">Skriv 'Datatilknytning for dimensioner' i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="84faa-115">In the Description field, type 'Dimensions data mapping'.</span></span>
+9. <span data-ttu-id="84faa-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="84faa-116">Click Save.</span></span>
+10. <span data-ttu-id="84faa-117">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="84faa-117">Click Designer.</span></span>
+11. <span data-ttu-id="84faa-118">Vælg 'Dynamics 365 for Operations\Tabel' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-118">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+12. <span data-ttu-id="84faa-119">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="84faa-119">Click Add root.</span></span>
+13. <span data-ttu-id="84faa-120">Skriv "Firma" feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="84faa-120">In the Name field, type 'Company'.</span></span>
+14. <span data-ttu-id="84faa-121">Skriv "CompanyInfo" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="84faa-121">In the Table field, type 'CompanyInfo'.</span></span>
+15. <span data-ttu-id="84faa-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="84faa-122">Click OK.</span></span>
+16. <span data-ttu-id="84faa-123">Vælg 'Funktioner\Oplysninger om økonomiske dimensioner'.</span><span class="sxs-lookup"><span data-stu-id="84faa-123">In the tree, select 'Functions\Financial dimensions details'.</span></span>
+17. <span data-ttu-id="84faa-124">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="84faa-124">Click Add root.</span></span>
+    * <span data-ttu-id="84faa-125">Denne datakilde angiver, hvordan omfanget af økonomiske dimensioner defineres for en rapport, der bruger denne model som datakilde.</span><span class="sxs-lookup"><span data-stu-id="84faa-125">This data source specifies how the scope of financial dimensions will be defined for any report that will use this model as a data source.</span></span>  
+18. <span data-ttu-id="84faa-126">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="84faa-126">In the Name field, type a value.</span></span>
+19. <span data-ttu-id="84faa-127">Vælg Ja i feltet Spørg efter dimensioner.</span><span class="sxs-lookup"><span data-stu-id="84faa-127">Select Yes in the Ask for dimensions field.</span></span>
+    * <span data-ttu-id="84faa-128">Vælg Ja for at tillade brugeren at vælge dimensioner på kørselstidspunktet i formen Brugerdialogboks.</span><span class="sxs-lookup"><span data-stu-id="84faa-128">Select Yes to allow the user to select dimensions at run-time on the User dialog form.</span></span> <span data-ttu-id="84faa-129">Hvis indstillingen er angivet til Nej, bruges alle økonomiske dimensioner for den aktuelle forekomst som standard.</span><span class="sxs-lookup"><span data-stu-id="84faa-129">If set to No, all financial dimensions of the current instance will be used by default.</span></span>  
+20. <span data-ttu-id="84faa-130">Vælg 'Juridisk enhed' i feltet Valg af økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="84faa-130">In the Financial dimensions selection field, select 'Legal entity'.</span></span>
+    * <span data-ttu-id="84faa-131">Vælg Alle for at tillade brugeren at vælge de ønskede dimensioner for den aktuelle forekomst i opslagsfeltet.</span><span class="sxs-lookup"><span data-stu-id="84faa-131">Select All to allow the user to select desire dimensions for the current  instance in the Lookup field.</span></span>  <span data-ttu-id="84faa-132">Vælg Juridisk enhed for at tillade brugeren at vælge dimensioner for firmaet i opslagsfeltet.</span><span class="sxs-lookup"><span data-stu-id="84faa-132">Select Legal entity to allow the user to select dimensions for the company in the Lookup field.</span></span>  <span data-ttu-id="84faa-133">Vælg Dimension for at tillade brugeren at vælge dimensioner ved hjælp af et enkelt dimensionssæt.</span><span class="sxs-lookup"><span data-stu-id="84faa-133">Select Dimension to allow the user to select dimensions using a single dimension set.</span></span>  
+21. <span data-ttu-id="84faa-134">Vælg Ja i feltet Spørg efter hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="84faa-134">Select Yes in the Ask for main account field.</span></span>
+    * <span data-ttu-id="84faa-135">Angiv 'Spørg efter hovedkonto' til Ja for at tillade brugere at vælge hovedkontoen som en del af listen over dimensioner.</span><span class="sxs-lookup"><span data-stu-id="84faa-135">Set 'Ask for main account' to Yes to allow users to select the main account as part of the list of dimensions.</span></span>   <span data-ttu-id="84faa-136">Hvis indstillingen er angivet til Nej, inkluderes den primære konto ikke på listen over dimensioner, og indstillingen 'Er hovedkonto obligatorisk' er aktiveret.</span><span class="sxs-lookup"><span data-stu-id="84faa-136">If set to No, the main account will not be included to the list of dimensions and the 'Is main account mandatory' option is enabled.</span></span> <span data-ttu-id="84faa-137">Hvis "Er hovedkonto obligatorisk" er angivet til Ja, skal du inkludere hovedkontoen på listen over dimensioner, uanset brugerens valg.</span><span class="sxs-lookup"><span data-stu-id="84faa-137">If "Is main account mandatory' is set to Yes, include the main account in the list of dimensions regardless of the user's selection.</span></span>  
+22. <span data-ttu-id="84faa-138">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="84faa-138">Click OK.</span></span>
+<span data-ttu-id="84faa-139">![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping1.png)</span><span class="sxs-lookup"><span data-stu-id="84faa-139">![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping1.png)</span></span>
+23. <span data-ttu-id="84faa-140">Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-140">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+24. <span data-ttu-id="84faa-141">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="84faa-141">Click Add root.</span></span>
+25. <span data-ttu-id="84faa-142">Skriv "LedgerJournal" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="84faa-142">In the Name field, type 'LedgerJournal'.</span></span>
+26. <span data-ttu-id="84faa-143">Vælg Ja i feltet Spørg efter forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="84faa-143">Select Yes in the Ask for query field.</span></span>
+27. <span data-ttu-id="84faa-144">Skriv "LedgerJournalTable" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="84faa-144">In the Table field, type 'LedgerJournalTable'.</span></span>
+28. <span data-ttu-id="84faa-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="84faa-145">Click OK.</span></span>
+<span data-ttu-id="84faa-146">![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping2.png)</span><span class="sxs-lookup"><span data-stu-id="84faa-146">![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping2.png)</span></span>
+
+## <a name="map-data-model-elements-to-added-data-sources"></a><span data-ttu-id="84faa-147">Tilknyt datamodelelementer til tilføjede datakilder</span><span class="sxs-lookup"><span data-stu-id="84faa-147">Map data model elements to added data sources</span></span>
+1. <span data-ttu-id="84faa-148">Udvid 'Kladde' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-148">In the tree, expand 'Journal'.</span></span>
+2. <span data-ttu-id="84faa-149">Udvid 'Kladde\Transaktion' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-149">In the tree, expand 'Journal\Transaction'.</span></span>
+3. <span data-ttu-id="84faa-150">Udvid 'Kladde\Transaktion\Dimensionsdata' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-150">In the tree, expand 'Journal\Transaction\Dimensions data'.</span></span>
+4. <span data-ttu-id="84faa-151">Udvid eller skjul 'Dimensionsindstilling' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-151">In the tree, expand 'Dimensions setting'.</span></span>
+5. <span data-ttu-id="84faa-152">Udvid eller skjul 'LedgerJournal' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-152">In the tree, expand 'LedgerJournal'.</span></span>
+6. <span data-ttu-id="84faa-153">Udvid 'LedgerJournal\<Relations' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-153">In the tree, expand 'LedgerJournal\<Relations'.</span></span>
+7. <span data-ttu-id="84faa-154">Udvid 'LedgerJournal\<Relations\LedgerJournalTrans' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-154">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans'.</span></span>
+8. <span data-ttu-id="84faa-155">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Voucher' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-155">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Voucher'.</span></span>
+9. <span data-ttu-id="84faa-156">Vælg 'Journal\Transaction\Voucher' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-156">In the tree, select 'Journal\Transaction\Voucher'.</span></span>
+10. <span data-ttu-id="84faa-157">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-157">Click Bind.</span></span>
+11. <span data-ttu-id="84faa-158">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-158">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)'.</span></span>
+    * <span data-ttu-id="84faa-159">Bemærk, at for en hvilken som helst henvisning til økonomiske dimensioner, der f.eks. er angivet til LedgerDimension, er et tilsvarende datakildeelement tilgængeligt (LedgerDimension.Dimension).</span><span class="sxs-lookup"><span data-stu-id="84faa-159">Note that for any reference to financial dimensions that is set to, for instance, LedgerDimension, a corresponding data source item is available (LedgerDimension.Dimension).</span></span> <span data-ttu-id="84faa-160">Dette datakildeelement indeholder de økonomiske dimensioner for de dimensioner, der er angivet som postens liste.</span><span class="sxs-lookup"><span data-stu-id="84faa-160">This data source item offers the financial dimensions of that dimensions set as the record's list.</span></span>  
+12. <span data-ttu-id="84faa-161">Udvid 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-161">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)'.</span></span>
+13. <span data-ttu-id="84faa-162">Udvid 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-162">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.</span></span>
+14. <span data-ttu-id="84faa-163">Udvid 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner\Værdi' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-163">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value'.</span></span>
+15. <span data-ttu-id="84faa-164">Udvid 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner\Definition' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-164">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Definition'.</span></span>
+16. <span data-ttu-id="84faa-165">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner\Definition\Navn' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-165">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Definition\Name'.</span></span>
+17. <span data-ttu-id="84faa-166">Vælg 'Kladde\Transaktion\Dimensionsdata\Navn' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-166">In the tree, select 'Journal\Transaction\Dimensions data\Name'.</span></span>
+18. <span data-ttu-id="84faa-167">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-167">Click Bind.</span></span>
+19. <span data-ttu-id="84faa-168">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner\Værdi\Beskrivelse' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-168">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value\Description'.</span></span>
+20. <span data-ttu-id="84faa-169">Vælg 'Kladde\Transaktion\Dimensionsdata\Beskrivelse' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-169">In the tree, select 'Journal\Transaction\Dimensions data\Description'.</span></span>
+21. <span data-ttu-id="84faa-170">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-170">Click Bind.</span></span>
+22. <span data-ttu-id="84faa-171">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner\Værdi\Kode' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-171">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value\Code'.</span></span>
+23. <span data-ttu-id="84faa-172">Vælg 'Kladde\Transaktion\Dimensionsdata\Kode' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-172">In the tree, select 'Journal\Transaction\Dimensions data\Code'.</span></span>
+24. <span data-ttu-id="84faa-173">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-173">Click Bind.</span></span>
+25. <span data-ttu-id="84faa-174">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-174">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.</span></span>
+26. <span data-ttu-id="84faa-175">Vælg 'Kladde\Transaktion\Dimensionsdata' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-175">In the tree, select 'Journal\Transaction\Dimensions data'.</span></span>
+27. <span data-ttu-id="84faa-176">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-176">Click Bind.</span></span>
+<span data-ttu-id="84faa-177">![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping3.png)</span><span class="sxs-lookup"><span data-stu-id="84faa-177">![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping3.png)</span></span>
+28. <span data-ttu-id="84faa-178">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-178">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)'.</span></span>
+29. <span data-ttu-id="84faa-179">Vælg 'Journal\Transaction\Debit' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-179">In the tree, select 'Journal\Transaction\Debit'.</span></span>
+30. <span data-ttu-id="84faa-180">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-180">Click Bind.</span></span>
+31. <span data-ttu-id="84faa-181">Vælg 'LedgerJournal\\<Relations\LedgerJournalTrans\Date(TransDate)' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-181">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Date(TransDate)'.</span></span>
+32. <span data-ttu-id="84faa-182">Vælg 'Journal\Transaction\Date' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-182">In the tree, select 'Journal\Transaction\Date'.</span></span>
+33. <span data-ttu-id="84faa-183">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-183">Click Bind.</span></span>
+34. <span data-ttu-id="84faa-184">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Currency(CurrencyCode)' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-184">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Currency(CurrencyCode)'.</span></span>
+35. <span data-ttu-id="84faa-185">Vælg 'Journal\Transaction\Currency' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-185">In the tree, select 'Journal\Transaction\Currency'.</span></span>
+36. <span data-ttu-id="84faa-186">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-186">Click Bind.</span></span>
+37. <span data-ttu-id="84faa-187">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Credit(AmountCurCredit)' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-187">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Credit(AmountCurCredit)'.</span></span>
+38. <span data-ttu-id="84faa-188">Vælg 'Journal\Transaction\Credit' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-188">In the tree, select 'Journal\Transaction\Credit'.</span></span>
+39. <span data-ttu-id="84faa-189">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-189">Click Bind.</span></span>
+40. <span data-ttu-id="84faa-190">Vælg 'LedgerJournal\<Relations\LedgerJournalTrans' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-190">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans'.</span></span>
+41. <span data-ttu-id="84faa-191">Vælg 'Journal\Transaction' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-191">In the tree, select 'Journal\Transaction'.</span></span>
+42. <span data-ttu-id="84faa-192">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-192">Click Bind.</span></span>
+43. <span data-ttu-id="84faa-193">Vælg "LedgerJournal\Journalbatchnummer(JournalNum)" i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-193">In the tree, select 'LedgerJournal\Journal batch number(JournalNum)'.</span></span>
+44. <span data-ttu-id="84faa-194">Vælg 'Journal\Batch' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-194">In the tree, select 'Journal\Batch'.</span></span>
+45. <span data-ttu-id="84faa-195">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-195">Click Bind.</span></span>
+46. <span data-ttu-id="84faa-196">Vælg 'LedgerJournal' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-196">In the tree, select 'LedgerJournal'.</span></span>
+47. <span data-ttu-id="84faa-197">Vælg 'Journal' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-197">In the tree, select 'Journal'.</span></span>
+48. <span data-ttu-id="84faa-198">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-198">Click Bind.</span></span>
+49. <span data-ttu-id="84faa-199">Udvid 'Dimensions' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-199">In the tree, expand 'Dimensions'.</span></span>
+50. <span data-ttu-id="84faa-200">Udvid 'Dimensions\Hovedkonto og dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-200">In the tree, expand 'Dimensions\Main account and dimensions'.</span></span>
+51. <span data-ttu-id="84faa-201">Udvid 'Dimensions\Hovedkonto og dimensioner\Definition' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-201">In the tree, expand 'Dimensions\Main account and dimensions\Definition'.</span></span>
+52. <span data-ttu-id="84faa-202">Vælg 'Dimensions\Hovedkonto og dimensioner\Definition\Navn' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-202">In the tree, select 'Dimensions\Main account and dimensions\Definition\Name'.</span></span>
+53. <span data-ttu-id="84faa-203">Vælg 'Dimensionsindstilling\Kode' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-203">In the tree, select 'Dimensions setting\Code'.</span></span>
+54. <span data-ttu-id="84faa-204">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-204">Click Bind.</span></span>
+55. <span data-ttu-id="84faa-205">Vælg 'Dimensions\Hovedkonto og dimensioner\Definition\Navn på rapportkolonne' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-205">In the tree, select 'Dimensions\Main account and dimensions\Definition\Report column name'.</span></span>
+56. <span data-ttu-id="84faa-206">Vælg 'Dimensionsindstilling\Navn' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-206">In the tree, select 'Dimensions setting\Name'.</span></span>
+57. <span data-ttu-id="84faa-207">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-207">Click Bind.</span></span>
+58. <span data-ttu-id="84faa-208">Vælg 'Dimensions\Hovedkonto og dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-208">In the tree, select 'Dimensions\Main account and dimensions'.</span></span>
+59. <span data-ttu-id="84faa-209">Vælg 'Dimensionsindstilling' i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-209">In the tree, select 'Dimensions setting'.</span></span>
+60. <span data-ttu-id="84faa-210">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="84faa-210">Click Bind.</span></span>
+61. <span data-ttu-id="84faa-211">Vælg "Firma" i træet.</span><span class="sxs-lookup"><span data-stu-id="84faa-211">In the tree, select 'Company'.</span></span>
+62. <span data-ttu-id="84faa-212">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="84faa-212">Click Edit.</span></span>
+63. <span data-ttu-id="84faa-213">I feltet expressionAsStringText skal du skrive 'Company.'find()'.'name()''.</span><span class="sxs-lookup"><span data-stu-id="84faa-213">In the expressionAsStringText field, enter 'Company.'find()'.'name()''.</span></span>
+    * <span data-ttu-id="84faa-214">Company.'find()'.'name()'</span><span class="sxs-lookup"><span data-stu-id="84faa-214">Company.'find()'.'name()'</span></span>  
+64. <span data-ttu-id="84faa-215">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="84faa-215">Click Save.</span></span>
+<span data-ttu-id="84faa-216">![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping4.png)</span><span class="sxs-lookup"><span data-stu-id="84faa-216">![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping4.png)</span></span>
+65. <span data-ttu-id="84faa-217">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="84faa-217">Close the page.</span></span>
+66. <span data-ttu-id="84faa-218">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="84faa-218">Click Save.</span></span>
+67. <span data-ttu-id="84faa-219">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="84faa-219">Close the page.</span></span>
+
+## <a name="complete-this-draft-models-version"></a><span data-ttu-id="84faa-220">Fuldfør denne version af kladdemodellen</span><span class="sxs-lookup"><span data-stu-id="84faa-220">Complete this draft model's version</span></span>
+1. <span data-ttu-id="84faa-221">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="84faa-221">Close the page.</span></span>
+2. <span data-ttu-id="84faa-222">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="84faa-222">Close the page.</span></span>
+3. <span data-ttu-id="84faa-223">Klik på Skift status.</span><span class="sxs-lookup"><span data-stu-id="84faa-223">Click Change status.</span></span>
+4. <span data-ttu-id="84faa-224">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="84faa-224">Click Complete.</span></span>
+5. <span data-ttu-id="84faa-225">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="84faa-225">Click OK.</span></span>
+<span data-ttu-id="84faa-226">![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)</span><span class="sxs-lookup"><span data-stu-id="84faa-226">![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping5.png)</span></span>
