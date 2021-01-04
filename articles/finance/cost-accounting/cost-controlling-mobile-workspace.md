@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 22acdcfbecc1efe78a1b1be87e40b2e7d23506fc
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759442"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441782"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 
@@ -36,7 +36,7 @@ Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operatio
 ## <a name="overview"></a>Overblik
 Arbejdsområdet til **Omkostningsstyring** på mobilenheder giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan gå ned på detailniveau og se status for individuelle kostelementer.
 
-En medarbejder modtager f.eks. en invitation til en international konference, men organisationen skal dække alle rejseudgifter. Medarbejderen spørger sin chef, om han må deltage i konferencen. Chefen åbner arbejdsområdet til **Omkostningsstyring** på sin mobiltelefon for at se, om hun har budget til, at medarbejderen kan deltage i konferencen.
+En medarbejder modtager f.eks. en invitation til en international konference, men organisationen skal dække alle rejseudgifter. Medarbejdere spørger chefen, om de må deltage i konferencen. Chefen åbner arbejdsområdet til **Omkostningsstyring** på mobilenheden for at se, om der er budget til, at medarbejdere kan deltage i konferencen.
 
 ### <a name="data-security"></a>Datasikkerhed
 Dataene i arbejdsområdet til **Omkostningsstyring** er sikret via brugerlegitimationsoplysninger. Ledere af bærere kan kun se data for deres egen bærer. Sikkerheden på adgangsniveau administreres i modulet **Omkostningsregnskab**.
@@ -63,7 +63,7 @@ Arbejdsområdet **Omkostningsstyring** til mobilenheder indeholder følgende han
     -   Faktisk vs. budget (år til dato)
     -   Faktisk vs. revideret budget (år til dato)
 
-    På hvert kort vises følgende beløb: faktisk, budget, afvigelse og afvigelse i %.
+    På hvert kort vises følgende beløb: Faktisk, budget, afvigelse og afvigelse i %.
 
 -   **Links:**
 

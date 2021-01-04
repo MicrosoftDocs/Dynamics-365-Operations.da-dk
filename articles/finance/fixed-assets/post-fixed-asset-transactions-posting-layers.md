@@ -1,7 +1,7 @@
 ---
 title: Bogfør anlægsaktivposteringer i posteringslag
 description: Denne artikel giver et overblik over bogføringslagets funktionalitet for anlægsaktivposteringer.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770706"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493666"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Bogfør anlægsaktivposteringer i posteringslag
 
@@ -39,8 +39,11 @@ Anlægsaktivkladder defineres ved hjælp af siden Kladdenavne via Finans > Konfi
 
 Du kan angive finanskonti for anlægsaktivposter på siden Posteringsprofiler for anlægsaktiver. For hver posteringsprofil skal du vælge den relevante posteringstype og bog og derefter tildele finanskontiene. Opret en bogføringsprofilpost for hver bog, der skal bogføres i finansmodulet.
 
+Anlægsaktivet kan angives i dokumenter, der kun understøtter det **Aktuelle** posteringslag, f. eks. **Indkøbsordre**, **Ventende kreditorfaktura**, **Salgsordre** eller **Fritekstfaktura**. Når du vælger et anlægsaktiv-ID i et af disse dokumenter, filtreres anlægsaktivet til kartoteket med det **Aktuelle** posteringslag og udfyldes automatisk under bogføringen, når systemet kontrollerer, at posteringslaget for anlægsaktiver er **Aktuelt**. Hvis denne validering ikke kan fuldføres, vil bogføringsprocessen blive stoppet. 
+
 > [!NOTE] 
-> Hvis du bruger afledte bøger, kan du bogføre posteringer på forskellige posteringslag samtidig. Du kan oprette posteringer for den primære bog i en kladde med det posteringslag, der svarer til posteringslaget for bogen. Ved posteringen bogføres de afledte bogposteringer på deres respektive posteringslag.
+> Hvis du bruger afledte bøger, kan du bogføre posteringer på forskellige posteringslag samtidig. Transaktionerne for det primære kartotek oprettes i en kladde eller kildedokument, der svarer til posteringslaget for kartotekets posteringslag. Under posteringen bogføres de afledte bogposteringer på deres respektive posteringslag. 
+
 
 Yderligere oplysninger finder du i afsnittet [Afledte bøger](derived-books.md) og [Bogfør med afledte bøger](post-derived-value-models.md).
 

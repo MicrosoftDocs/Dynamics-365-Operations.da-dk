@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039763"
+ms.locfileid: "4441737"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Oprette en Azure Storage-konto og Key Vault
 
@@ -56,7 +56,7 @@ I dette emne skal du fuldføre to hovedtrin:
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Konfigurere Azure Storage-kontoen for at hente URI'en til lagerkontoen
 
 1. Åbn den lagerkonto, du planlægger at bruge sammen med tilføjelsesprogrammet til elektronisk fakturering.
-2. Gå til **Blob service** \> **Containere** , og opret en ny container.
+2. Gå til **Blob service** \> **Containere**, og opret en ny container.
 3. Angiv et navn til containeren, og angiv feltet **Offentlig adgangsniveau** til **Privat (ingen anonym adgang)**.
 4. Åbn containeren, og gå til **Indstillinger \> Adgangspolitik**.
 5. Vælg **Tilføj politik** for at tilføje en lagret adgangspolitik.
@@ -75,11 +75,11 @@ I dette emne skal du fuldføre to hovedtrin:
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Konfigurere Key Vault'en til opbevaring af URI'en for lagerkontoen
 
 1. Åbn den Key Vault, du vil bruge sammen med tilføjelsesprogrammet til elektronisk fakturering.
-2. Gå til **Indstillinger** \> **Hemmeligheder** , og vælg derefter **Generer/importer** for at oprette en ny hemmelighed.
+2. Gå til **Indstillinger** \> **Hemmeligheder**, og vælg derefter **Generer/importer** for at oprette en ny hemmelighed.
 3. På siden **Opret en hemmelighed** skal du vælge **Manuel** i feltet **Uploadindstillinger**.
 4. Angiv navnet på hemmeligheden. Dette navn bruges under konfigurationen af tjenesten i RCS (Regulatory Configuration Service) og vil blive henvist til som *det hemmelige Key Vault-navn*.
-5. Vælg **URI for delt adgangssignatur** i feltet **Værdi** , og vælg derefter **Opret**.
-6. Konfigurer adgangspolitikken for at tildele tilføjelsesprogrammet til elektronisk fakturering det korrekte niveau for sikker adgang til den hemmelighed, du har oprettet. Gå til **Indstillinger \> Adgangspolitik** , og vælg **Tilføj adgangspolitik**.
+5. Vælg **URI for delt adgangssignatur** i feltet **Værdi**, og vælg derefter **Opret**.
+6. Konfigurer adgangspolitikken for at tildele tilføjelsesprogrammet til elektronisk fakturering det korrekte niveau for sikker adgang til den hemmelighed, du har oprettet. Gå til **Indstillinger \> Adgangspolitik**, og vælg **Tilføj adgangspolitik**.
 7. Angiv de hemmelige tilladelser til handlingerne **Get** og **List**.
 
     ![Tildele tjenesteadgang](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
@@ -89,5 +89,5 @@ I dette emne skal du fuldføre to hovedtrin:
     ![Tildele certifikattilladelse](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. I dialogboksen **Sikkerhedskonto** skal du vælge sikkerhedskontoen ved at tilføje **Tilføjelsesprogram til elektronisk fakturering**.
-10. Vælg **Tilføj** , og vælg derefter **Gem Key Vault-ændringer**.
+10. Vælg **Tilføj**, og vælg derefter **Gem Key Vault-ændringer**.
 11. På siden **Oversigt** skal du kopiere værdien **DNS-navn** for Key Vault. Denne værdi vil blive brugt under konfigurationen af tjenesten i RCS og vil blive henvist til som *URI for Key Vault*.

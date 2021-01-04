@@ -3,7 +3,7 @@ title: Oversigt over økonomirapportering
 description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
-ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
+ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
+ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3999543"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672438"
 ---
 # <a name="get-started-with-financial-reporting"></a>Introduktion til Financial Reporting 
 
@@ -90,7 +90,7 @@ Brugere, der genererer en rapport, kan slette deres egne rapporter. Brugere med 
 Begrebet udløbsdato blev introduceret i version 10.0.8. En ny påkrævet funktion aktiveres på siden **Alle** i arbejdsområdet til administration af funktioner. Funktionen **Opbevaringspolitikker for økonomiske rapporter** indeholder følgende ændringer:
 * Nyligt genererede rapporter markeres automatisk som havende en udløbsdato på 90 dage fra det tidspunkt, hvor de genereres.
 * Alle eksisterende rapporter fra før funktionen blev installeret, får en udløbsperiode på 90 dage. Datoen kan blive vist som tom i en kort periode frem til tjenesten regnskabsrapportering kører, en rapport genereres, og tjenesten udfører opdateringen til eksisterende rapporter med en tom udløbsdato. 
-* Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter** , som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter** , vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder: 
+* Brugere med **Ajourføring af sikker økonomirapportering** har adgang til denne funktionalitet. Enhver bruger i pligten **Ajourføring af økonomiske rapporter**, som er blevet tildelt rettigheden **Ajourføring af udløb af økonomiske rapporter**, vil også have mulighed for at ændre udløbsperioden. I øjeblikket er der to tilbageholdelsesmuligheder: 
   * Et udløb på 90 dage.
   * En mulighed for at indstille, at rapporten aldrig skal udløbe.
   
@@ -114,22 +114,22 @@ Yderligere indstillinger vil blive medtaget i fremtidige funktioner. Udløbet p�
 | Balancen og resultatopgørelsen side om side – standard | Få vist organisationens økonomiske situation og indtjening for året ved siden af hinanden.                                                                                                                                                                                                                              |
 | Pengestrøm – projekt                                       | Få indblik i de kontanter, der går ind og ud af organisationen.                                                                                                                                                                                                                                   |
 | Detaljeret JE- og TB-revision – standard                      | Få vist startsaldo og aktivitetsoplysninger for alle konti.                                                                                                                                                                                                                                                      |
-| Detaljeret råbalance – standard                         | Få vist oplysninger om saldoen for alle konti, der har debet- og kreditsaldi, og nettobeløbet for disse saldi, sammen med transaktionsdato, bilag og beskrivelse af kladde.                                                                                                                                  |
+| [Detaljeret råbalance – standard](trial-balance-financial-reports.md)| Få vist oplysninger om saldoen for alle konti, der har debet- og kreditsaldi, og nettobeløbet for disse saldi, sammen med transaktionsdato, bilag og beskrivelse af kladde.                                                                                                                                  |
 | Tre år kvartalsvise tendens for udgifter – standard             | Få indblik i udgifter for de seneste 12 kvartaler i de foregående tre år.                                                                                                                                                                                                                                   |
 | Finansielle overskrifter JE- og TB-revision – standard            | Få vist en oversigt over finansielle overskrifter for saldi og aktivitet for aktivet, ansvar, ejerens egenkapital, indtægter, udgifter, gevinst eller tab.                                                                                                                                                                           |
-| Resultatopgørelse – standard                                | Få vist organisationens rentabilitet for den aktuelle periode og år til dato.                                                                                                                                                                                                                                   |
+| [Resultatopgørelse – standard](income-statement-financial-report.md)| Få vist organisationens rentabilitet for den aktuelle periode og år til dato.                                                                                                                                                                                                                                   |
 | Finansposteringsliste – standard                        | Få vist detaljerede saldooplysninger for alle konti. Denne rapport viser debet- og kreditsaldi sammen med t yderligere posteringsoplysninger såsom posteringsdato, kladdenummer, bilag, typen og sporingsnummer.                                                                            |
 | Nøgletal – standard                                          | Få vist soliditet, rentabilitet og efektivitetsnøgletal for organisationen for året.                                                                                                                                                                                                                           |
 | Rullende 12 måneders udgifter – standard                       | Få indblik i udgifter for hvert af de seneste 12 måneder. Disse 12 måneder kan spænde over mere end ét regnskabsår.                                                                                                                                                                                                       |
 | Rullende kvartal resultatopgørelse – standard               | Få vist organisationens rentabilitet på kvartalsvist grundlag for det seneste år og år til dato.                                                                                                                                                                                                                   |
 | Parallel balance – standard                      | Få vist organisationens økonomiske situation for året. Denne rapport viser aktiver og passiver og egenkapital ved siden af hinanden.                                                                                                                                                                                |
-| Råbalanceoversigt – standard                          | Få vist saldooplysninger for alle konti, der har start- og ultimosaldi og debet- og kreditsaldi sammen med nettoforskellen.                                                                                                                                                                  |
-| Årlig råbalanceoversigt – standard           | Få vist saldooplysninger for alle konti, der har start- og ultimosaldi og debet- og kreditsaldi sammen med nettoforskellen for det aktuelle år og det foregående år.                                                                                                                           |
+| [Råbalanceoversigt – standard](trial-balance-financial-reports.md)| Få vist saldooplysninger for alle konti, der har start- og ultimosaldi og debet- og kreditsaldi sammen med nettoforskellen.                                                                                                                                                                  |
+| [Årlig råbalanceoversigt – standard](trial-balance-financial-reports.md)| Få vist saldooplysninger for alle konti, der har start- og ultimosaldi og debet- og kreditsaldi sammen med nettoforskellen for det aktuelle år og det foregående år.                                                                                                                           |
 | Ugentligt salg og rabatter – standard                     | Få indblik i salg og rabatter for hver uge i en måned. Denne rapport omfatter fire uger totalt.                                                                                                                                                                                                              |
 | Tilgængelige budgetmidler - standard                         | Se en detaljeret sammenligning af det reviderede budget, faktiske udgifter, budgetreservationer og disponible budgetmidler for alle konti                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Startøkonomirapporter
-Når du vælger menuen **Financial Reporting** , vises listen over økonomiske standardrapporter for firmaet. Du kan derefter åbne eller redigere en rapport. Vælg navnet på rapporten for at åbne en af standardrapporterne. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2019, oprettes rapporten for 31. juli 2019. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
+Når du vælger menuen **Financial Reporting**, vises listen over økonomiske standardrapporter for firmaet. Du kan derefter åbne eller redigere en rapport. Vælg navnet på rapporten for at åbne en af standardrapporterne. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2019, oprettes rapporten for 31. juli 2019. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Oprettelse og redigering af økonomiske rapporter
 Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at vælge **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du bruger i Dynamics 365 Finance. 
@@ -149,10 +149,11 @@ Problem 1: Report Designer starter ikke, når du vælger **Ny** eller **Rediger*
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til. I området, der er angivet med Sikkerhedsniveau for denne zone, skal du ændre indstillingen til **Mellem-Lav**.
 * Deaktiver blokering af pop op-vinduer i din browser.
 * Der kræves arbejdsstationer for at installere Microsoft .NET Framework 4.6.2 eller nyere. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Hvis du bruger Microsoft Edge med Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. 
+* Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører Chrome i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan finde flere oplysninger om Chrome ClickOnce-udvidelsen i [Systemkrav til skyinstallationer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Hvis du bruger Microsoft Edge med en Chrome-browser, behøver du ikke installere en ClickOnce-udvidelse til Edge Chromium. Du skal dog aktivere ClickOnce-indstillingen for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand.
      1. Åbn en ny browser i Microsoft Edge.
-     2. Angiv **edge://flags** , og vælg **Enter**.
-     3. Søg efter indstillingen **ClickOnce Support** , eller brug dette direkte link: **edge://flags/#edge-click-once**.
+     2. Angiv **edge://flags**, og vælg **Enter**.
+     3. Søg efter indstillingen **ClickOnce Support**, eller brug dette direkte link: **edge://flags/#edge-click-once**.
      4. Angiv indstillingen i rullemenuen til **Aktiveret**.
      5. Vælg **Genstart browser**.
 

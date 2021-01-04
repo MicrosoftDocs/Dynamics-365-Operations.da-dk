@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 1ae10f406148e213fd0272d1387f15606233be27
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 7addb1f26a33db84d947e6fede876be648d2c654
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000441"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645164"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Overføre reskontro til Finans
 
@@ -31,7 +31,7 @@ ms.locfileid: "3000441"
 
 Dette emne indeholder en beskrivelse af de egenskaber i Microsoft Dynamics 365 Finance, der er knyttet til reglerne for overførsel af batches for kladdeposteringer af reskontro.
 
-I version 8.1 blev der foretaget ændringer for at tillade overførsel af regler, der udfasede den synkrone indstilling. Du kan finde flere oplysninger under [Fjernede eller udfasede funktioner for Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20).
+I version 8.1 blev der foretaget ændringer for at tillade overførsel af regler, der udfasede den **synkrone** indstilling. Du kan finde flere oplysninger under [Fjernede eller udfasede funktioner for Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20).
 
 Følgende indstillinger er tilgængelige for overførsel af reskontrobatches. 
 

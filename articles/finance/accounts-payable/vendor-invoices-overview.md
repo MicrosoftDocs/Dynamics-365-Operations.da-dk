@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb797af1ae14ebbb420a1b4a1591202c42bd8824
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249112"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701670"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
@@ -112,15 +112,18 @@ Du kan alene tilgå siden **Gendan kreditorfakturaer**, hvis du har fået tildel
 
 ## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Nulstille arbejdsgangsstatus for kreditorfakturaer fra Uoprettelig til Kladder
 
-En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsgang for en kreditorfaktura er **Uoprettelig**, kan du nulstille den til **Kladde** ved at vælge **Tilbagekald**. Du kan derefter redigere kreditorfakturaen. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for arbejdsgang for kreditorfakturaer** på siden **Administration af funktioner** er aktiveret.
+En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsgang for en kreditorfaktura er **Uoprettelig**, kan du nulstille den til **Kladde** ved at vælge **Tilbagekald**. Du kan derefter redigere kreditorfakturaen. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for leverandørfakturaer fra uoprettelig til kladder** på siden **Administration af funktioner** er aktiveret.
 
 Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Kreditorfaktura**  eller fra navigationen **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til kladde ved at vælge handlingen **Tilbagekald** på siden **Kreditorfaktura** eller **Afventende kreditorfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
+
+## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Se fakturatotalen på siden Ventende kreditorfakturaer.
+Du kan få vist fakturatotalen på siden **Ventende kreditorfakturaer** ved at aktivere parameteren **Vis fakturatotal på ventende kreditorfakturaer** på siden **kreditorparametre**. 
 
 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Konfigurere politikker for kreditorfakturaer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
+- [Konfigurer politikker for kreditorfakturaer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
 - [Vigtigste fakturadata i kreditorsystem, der bruger kreditorfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Indtaste fakturadata under kreditorer ved hjælp af en godkendelseskladde](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)

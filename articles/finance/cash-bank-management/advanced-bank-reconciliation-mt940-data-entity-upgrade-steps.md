@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899367"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441500"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avanceret bankafstemning MT940-import – opgraderingstrin for sammensat dataenhed
 
@@ -55,7 +55,7 @@ Brug følgende trin til at tilføje importenhed for bankkontoudtog, der underst�
             3.  Upload datafilen = ny version af SampleBankCompositeEntity.xml.
             4.  Klik på **Ja** for at overskrive den eksisterende fil.
             5.  Klik på **Ja** for at oprette en ny tilknytning.
-            6.  Kontrollér, at S**equenceNumber** er tilknyttet.
+            6.  Kontrollér, at S **equenceNumber** er tilknyttet.
                 -   Klik på **Vis tilknytning** på bankkontoudtogets enhed.
                 -   Kontrollér, at **SequenceNumber** er knyttet fra Kilde til Midlertidig.
 

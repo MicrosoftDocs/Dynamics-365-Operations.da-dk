@@ -1,7 +1,7 @@
 ---
 title: Oprette et anlægsaktiv
 description: Dette emne forklarer, hvordan du opretter en ny anlægsaktivpost fra listesiden med anlægsaktiver.
-author: saraschi2
+author: moaamer
 manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b7d65a047251fa036242fb456725bc8cba957b9
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
+ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000237"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4441788"
 ---
 # <a name="create-a-fixed-asset"></a>Oprette et anlægsaktiv
 
@@ -34,7 +34,7 @@ Systemet tildeler aktivnummeret på basis af den nummerserie, der er tildelt anl
 Hvis du vil oprette en aktivpost manuelt, skal du følge disse trin.
 
 1. Gå til **Navigationsrude \> Moduler \> Anlægsaktiver \> Anlægsaktiver \> Anlægsaktiver**.
-2. Gå til **handlingsruden** , og vælg **Ny**.
+2. Gå til **handlingsruden**, og vælg **Ny**.
 3. Skriv eller vælg en værdi i feltet **Anlægsaktivgruppe**. Feltet **Nummer** bruges som standard, hvis du har aktiveret funktionen **Auto-nummerer anlægsaktiver** i **Anlægsaktivparametre** og **Anlægsaktivgruppe**. Hvis ikke skal du angive et entydigt nummer, der identificerer anlægsaktivet.
 4. Angiv en værdi i feltet **Navn**. Angiv yderligere oplysninger, som din virksomhed skal bruge til dette anlægsaktiv.
 5. Vælg **Bøger** i **handlingsruden**.
@@ -49,3 +49,9 @@ Hvis du vil oprette en aktivpost manuelt, skal du følge disse trin.
 Du kan også importere anlægsaktiver ved hjælp af Excel-tilføjelsesprogrammet eller ved at køre et importjob fra arbejdsområdet **Dataadministration**. Før du kører importen, skal du angive værdierne for obligatoriske felter i skabelonen.
 
 Hvis du ikke har defineret anlægsaktivnummeret i skabelonen for Excel-tilføjelsesprogrammet eller i Dataadministration, opretter systemet et anlægsaktivnummer for hvert importerede aktiv og øger automatisk nummerserien for hver enkelt. Men hvis du importerer aktiver og definerer aktivnumre i skabelonen, øger systemet **ikke** automatisk nummerserien. I dette tilfælde skal en administrator måske opdatere nummerserien manuelt. Hvis du har defineret anlægsaktivnummeret i skabelonen til Excel-tilføjelsesprogrammet, bruger systemet det definerede anlægsaktivnummer og øger nummerserien.
+
+> [!NOTE]                                                                                                         
+> Når afskrivningen er bogført, låses felterne **Placeret i tjeneste** og **Afskrivningsdato** på siden **Kartotek**. Både feltet vil heller ikke blive opdateret fra dataenheden.
+
+> [!WARNING]
+> Anlægsaktivposten slettes ikke, hvis der er bogført posteringer i det tilknyttede kartotek, eller hvis det netop oprettede anlægsaktiv er angivet på en kladdelinje, men ikke bogført. 

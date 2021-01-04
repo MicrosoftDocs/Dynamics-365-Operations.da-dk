@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772093"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441686"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanlægningsskabeloner til Excel
 
@@ -67,7 +67,7 @@ Under fanen **Design** skal du klikke på **Tilføj** felter og derefter vælge 
 
 Peg med markøren på den ønskede placering i Excel-filen. Klik på **Tilføj etiket** for at føje feltetiketten til den valgte placering. Vælg **Tilføj værdi** for at føje værdifeltet til det valgte sted. Klik på **Udført** for at lukke designeren.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Vælg Tilføj Værdi](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Vælg Tilføj Værdi](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Tilføje en beregnet kolonne i skabelontabel til budgetplandokument
 --------------------------------------------------------------
@@ -120,7 +120,7 @@ Vi anbefaler at låse skabelonen for at forhindre brugere i at lukke den. Hvis d
 
 Klik på pilen for at åbne en ekstra menu. Vælg **Lås**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Vælg Lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Vælg Lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Er det muligt at bruge andre Excel-funktioner, som celleformatering, farver, betinget formatering og diagrammer med mine budgetplanskabeloner?
 

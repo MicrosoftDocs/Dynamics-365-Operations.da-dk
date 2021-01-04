@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 202d6e8b0933522c2faf5fb49291f11200e4754f
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006135"
+ms.locfileid: "4441722"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
 
@@ -64,7 +64,7 @@ April klikker på fanen **Kasserabat** for at få vist rabatbeløbet.
 | 25-7-2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Delvis betaling den 1. juli ved hjælp af siden Udlign posteringer
-April kan oprette en betalingskladde for denne betaling ved at åbne siden **Betalingskladde** under Kreditor. Hun opretter en ny kladde og indtaster en linje for kreditor 3064. Hun åbner derefter siden **Udlign posteringer** , så hun kan markere fakturaen til udligning. April markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **-500,00**. Hun ser, at værdien i feltet **Kasserabatbeløb** er **-10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **-5,05**. April udligner derfor -505,05 af denne faktura.
+April kan oprette en betalingskladde for denne betaling ved at åbne siden **Betalingskladde** under Kreditor. Hun opretter en ny kladde og indtaster en linje for kreditor 3064. Hun åbner derefter siden **Udlign posteringer**, så hun kan markere fakturaen til udligning. April markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **-500,00**. Hun ser, at værdien i feltet **Kasserabatbeløb** er **-10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **-5,05**. April udligner derfor -505,05 af denne faktura.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -105,7 +105,7 @@ April lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 49
 | DISC-10010 | Kasserabat    | 7/1/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>Restbeløbet betalt den 8. juli
-April betaler resten af fakturaen til kreditor 3064 den 8. juli, som er i perioden for kasserabatten. April opretter betalingskladden den 8. juli og markerer posteringen til udligning. Hun ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **-5,00** , fordi rabatten på 5,00 rabat blev trukket tidligere.
+April betaler resten af fakturaen til kreditor 3064 den 8. juli, som er i perioden for kasserabatten. April opretter betalingskladden den 8. juli og markerer posteringen til udligning. Hun ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **-5,00**, fordi rabatten på 5,00 rabat blev trukket tidligere.
 
 |  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|

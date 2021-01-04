@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: ec49a621e24b6373532497b499e8b9d45c9bed14
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022607"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4441731"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Få vist resultater af automatisering af kreditorfaktura
 
@@ -34,7 +34,7 @@ Før du kan redigere en faktura, der er sendt, skal du afbryde den automatisered
 
 Hvis en importeret faktura er underlagt afsendelse til arbejdsgang-processen, kan du få vist værdien af dens **Status for automatisering** på siden **Kreditorfakturaer**. Følgende statusangivelser registreres:
 
-- **Medtages** – De automatiserede processer, der er defineret på siden **Kreditorparametre** , kører korrekt, men er endnu ikke fuldført.
-- **Midlertidigt afbrudt** – De automatiserede processer, der er defineret på siden **Kreditorparametre** , er kørt, men mindst ét trin i processen mislykkedes. Statussen **Afbrudt midlertidigt** anvendes også, hvis feltet **Medtag i automatisk behandling** er angivet til **Nej**. Du kan få vist fejlene ved at vælge **Vis seneste resultater**.
+- **Medtages** – De automatiserede processer, der er defineret på siden **Kreditorparametre**, kører korrekt, men er endnu ikke fuldført.
+- **Midlertidigt afbrudt** – De automatiserede processer, der er defineret på siden **Kreditorparametre**, er kørt, men mindst ét trin i processen mislykkedes. Statussen **Afbrudt midlertidigt** anvendes også, hvis feltet **Medtag i automatisk behandling** er angivet til **Nej**. Du kan få vist fejlene ved at vælge **Vis seneste resultater**.
 - **I arbejdsgang** – Den importerede faktura er sendt til arbejdsgangssystemet enten af den automatiske afsendelse til arbejdsgang eller manuelt.
 - **Fuldført arbejdsgang** – Arbejdsgangsprocessen er fuldført for den importerede faktura.

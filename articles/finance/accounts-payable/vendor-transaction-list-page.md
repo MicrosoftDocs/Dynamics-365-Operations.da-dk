@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1534aab03ac35950e875a1384dfdf2a22bc22546
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 4f4535d08ff1bb6f83172efb4ceada5a7d02ebd4
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978001"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441787"
 ---
 # <a name="vendor-transactions-list-page"></a>Listeside med leverandørtransaktioner
 
@@ -48,7 +48,7 @@ Knappen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningsh
 
 ## <a name="global-transactions"></a>Globale transaktioner
 
-Knappen **Globale transaktioner** vises også på listesiden **Kreditorposteringer**. Med denne knap kan du få vist alle posteringer for en juridisk enhed på tværs af alle juridiske enheder. **Kreditorposteringer**-listesiden viser kun transaktioner for de juridiske enheder, som brugeren har adgang til, på basis af vedkommendes sikkerhedsindstillinger.
+Knappen **Globale transaktioner** vises også på listesiden **Kreditorposteringer**. Med denne knap kan du få vist alle posteringer for en juridisk enhed på tværs af alle juridiske enheder. **Kreditorposteringer**-listesiden viser kun transaktioner for de juridiske enheder, som brugeren har adgang til, på basis af deres sikkerhedsindstillinger.
 
 Listesiden viser alle transaktioner for leverandører, der har samme part-id som den leverandør, du startede med. Hvis leverandøren US-001 i én juridisk enhed har samme part-id som leverandøren DE-001 i en anden juridisk enhed, vises alle transaktioner for begge leverandør-id'er.
 

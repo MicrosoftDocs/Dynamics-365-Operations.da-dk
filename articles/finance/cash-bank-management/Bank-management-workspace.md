@@ -17,17 +17,17 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097180"
+ms.locfileid: "4441744"
 ---
 # <a name="bank-management-workspace"></a>Arbejdsområde for bankstyring
 
 [!include [banner](../includes/banner.md)]
 
-Arbejdsområdet **Bankstyring** viser oplysninger, der er relateret til firmaets bankkonti. Arbejdsområdet indeholder en **Oversigt** -visning og siden **Analyser**. **Oversigt** -visningen indeholder oversigtsfelter, bankkontooplysninger, et saldodiagram og relaterede oplysninger. **Analyse** -siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører bankkontosaldi.
+Arbejdsområdet **Bankstyring** viser oplysninger, der er relateret til firmaets bankkonti. Arbejdsområdet indeholder en **Oversigt**-visning og siden **Analyser**. **Oversigt**-visningen indeholder oversigtsfelter, bankkontooplysninger, et saldodiagram og relaterede oplysninger. **Analyse**-siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører bankkontosaldi.
 
 ## <a name="summary-view"></a>Oversigtsvisning
 
@@ -43,9 +43,9 @@ Kortet viser også, hvornår bankkontoen sidst blev afstemt. Disse oplysninger v
 
 ### <a name="balance"></a>Restværdi
 
-**Saldo** -diagrammet viser enten historiske saldooplysninger for den bankkonto, der er valgt i afsnittet **Bankkonti** , eller en oversigt over historiske saldooplysninger for alle bankkonti i den juridiske enhed. Disse oplysninger er tilgængelige for forskellige perioder: den aktuelle uge, den aktuelle måned, indeværende år, de sidste fem år og alle perioder (den fulde historik for bankkontoen). 
+**Saldo**-diagrammet viser enten historiske saldooplysninger for den bankkonto, der er valgt i afsnittet **Bankkonti**, eller en oversigt over historiske saldooplysninger for alle bankkonti i den juridiske enhed. Disse oplysninger er tilgængelige for forskellige perioder: den aktuelle uge, den aktuelle måned, indeværende år, de sidste fem år og alle perioder (den fulde historik for bankkontoen). 
 
-Hvis du får vist **Saldo** -diagrammet for en enkelt bankkonto, vises historiske saldi i bankkontoens valuta. Hvis du får vist diagrammet for alle bankkonti i den juridisk enhed, vises historiske saldi i regnskabsvalutaen.
+Hvis du får vist **Saldo**-diagrammet for en enkelt bankkonto, vises historiske saldi i bankkontoens valuta. Hvis du får vist diagrammet for alle bankkonti i den juridisk enhed, vises historiske saldi i regnskabsvalutaen.
 
 Oplysninger om, hvornår dataene sidst blev opdateret, vises øverst i diagrammet. Du kan opdatere dataene efter behov.
 

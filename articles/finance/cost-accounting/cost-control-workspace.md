@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38dc261a74eea9e45036961fdfecea1465b238de
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977689"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441783"
 ---
 # <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring 
 
@@ -145,7 +145,7 @@ Brugerne kan klikke på **Omkostningsposter** for at dykke ned i postens oplysni
 
 ![Omkostningsposter](./media/cost-entries.png)
 
-Leje er f.eks. en udgift, som fordeles til bærere. En bruger, der ønsker at forstå den lejeomkostning, som hans eller hendes bærer skal bære, skal dykke ned for at se, hvordan lejen er blevet beregnet.
+Leje er f.eks. en udgift, som fordeles til bærere. En bruger, der ønsker at forstå den lejeomkostning, som bæreren skal dække, kan undersøge, hvordan lejen er blevet beregnet.
 
 Hvis brugerne klikker på **Fordelingsgrundlag** på siden **Omkostningsposter**, vises en dialogboks. Brugerne kan derefter tildele fordelingsgrundlaget til reglen og få vist de tilsvarende statistiske mål, der er registreret for perioden.
 

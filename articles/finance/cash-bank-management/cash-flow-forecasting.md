@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653770"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645763"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
@@ -93,7 +93,12 @@ Budgetter, der er oprettet ud fra budgetmodeller, kan medtages i likviditetsbudg
 
 Lagerforsynings- og behovsbudgetter kan medtages i likviditetsbudgetter. Under fanen **Lagerstyring** på siden **Opsætning af likviditetsbudget** skal du vælge den budgetmodel, der skal medtages i likviditetsbudgettet. Inkludering i likviditetsbudgettering kan overskrives på individuelle forsynings- og behovsbudgetlinjer.
 
-### <a name="calculation"></a>Kalkulation
+### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Konfigurere dimensioner for likviditetsbudgettering
+En ny fane på siden **Konfiguration af likviditetsbudgettering** giver dig mulighed for at styre, hvilke økonomiske dimensioner der skal bruges til filtrering i arbejdsområdet **Likviditetsbudgettering**. Denne fane vises kun, når funktionen Likviditetsbudgetter er aktiveret. 
+
+Under fanen **Dimensioner** skal du vælge på den liste over dimensioner, der skal bruges til filtrering, og bruge piletasterne til at flytte dem til højre kolonne. Der kan kun vælges to dimensioner til filtrering af data i likviditetsbudgettet. 
+
+### <a name="calculation"></a>Udregning
 
 Før du kan få vist likviditetsbudgetteringsanalyser, skal du køre likviditetsberegningsprocessen. Beregningsprocessen kan beregne den fremtidige indvirkning af likvider, der er angivet.
 

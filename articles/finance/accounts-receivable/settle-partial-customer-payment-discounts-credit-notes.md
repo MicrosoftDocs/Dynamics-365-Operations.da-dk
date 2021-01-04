@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015001"
+ms.locfileid: "4441730"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Udlign en delvis debitorbetaling med rabatter på kreditnotaer
 
@@ -51,11 +51,11 @@ Fra siden **Kundetransaktioner** åbner Arnie siden **Udlign transaktioner**. Ha
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 
-- **Kasserabatdato** : 12-7-2015 
-- **Kasserabatbeløb** : -1,00     
-- **Anvend kasserabat** : Normal    
-- **Medtaget kasserabat** : 0,00      
-- **Kasserabatbeløb, der skal medtages** : -1,00     
+- **Kasserabatdato**: 12-7-2015 
+- **Kasserabatbeløb**: -1,00     
+- **Anvend kasserabat**: Normal    
+- **Medtaget kasserabat**: 0,00      
+- **Kasserabatbeløb, der skal medtages**: -1,00     
 
 Udligningen er på 100,00 og indeholder en betaling på 99,00 og en rabat på 1,00.
 

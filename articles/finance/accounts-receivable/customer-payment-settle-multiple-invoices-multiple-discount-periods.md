@@ -1,6 +1,6 @@
 ---
 title: Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder
-description: Dette emne viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i dennes artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
+description: Dette emne viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i denne artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c592034ca9c777bbc600c040c61937ad71b4e36d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177029"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441784"
 ---
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i dennes artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
+Dette emne viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i denne artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
 
 Fabrikam sælger varer til debitor 4032. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 

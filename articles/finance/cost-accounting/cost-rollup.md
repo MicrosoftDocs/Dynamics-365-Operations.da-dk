@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006160"
+ms.locfileid: "4441724"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -186,7 +186,7 @@ Dimensionshierarkiet **Driftsregnskab** skal opdateres med de nye dimensionsmedl
 | &nbsp;&nbsp;&nbsp;&nbsp;Primære omkostninger                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundære omkostninger                         | **SC-CC001**            | **SC-CC004**        |
 
-Opret en **Politik for omkostningstotaler** , hvor hver bærer er knyttet til et tilsvarende omkostningselement af typen **Sekundære**.
+Opret en **Politik for omkostningstotaler**, hvor hver bærer er knyttet til et tilsvarende omkostningselement af typen **Sekundære**.
 
 **Politikker for omkostningstotaler**
 
@@ -211,7 +211,7 @@ Opret en **Politik for omkostningstotaler** , hvor hver bærer er knyttet til et
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Kladde for omkostningsfordeling | Regnskabsår                 | 2017    | 1. Periode | Beregning af fast omkostning / 02-01-2017 23:51:00 / Finans /2017 / periode 1 |
 
-Systemet anvender nu **Politik for omkostningstotaler** , når det opretter **Kladdeposteringer for omkostningsobjektsaldo**.
+Systemet anvender nu **Politik for omkostningstotaler**, når det opretter **Kladdeposteringer for omkostningsobjektsaldo**.
 
 **Kladdeposteringer for omkostningsobjektsaldo**
 
@@ -223,9 +223,9 @@ Systemet anvender nu **Politik for omkostningstotaler** , når det opretter **Kl
 | 01-31-2017      | CC004       | Emballage    | SC-CC004 | Emballage | 15.717,25 |
 
 > [!NOTE]
-> Kladdeposteringerne oprettes ud fra reglerne i **Politik for omkostningstotaler** , hvis der findes en politik. Saldoen, der vises, er saldoen for beregningen af faste omkostninger.
+> Kladdeposteringerne oprettes ud fra reglerne i **Politik for omkostningstotaler**, hvis der findes en politik. Saldoen, der vises, er saldoen for beregningen af faste omkostninger.
 
-Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt** , der åbnes fra kladdeposteringerne, viser, hvordan saldoen opnås.
+Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt**, der åbnes fra kladdeposteringerne, viser, hvordan saldoen opnås.
 
 **Eksempel: Kladdepostering for omkostningsobjekt CC002 Finans**
 
@@ -274,7 +274,7 @@ Her er et eksempel på en Power Pivot-rapportering i Excel.
 
 Ved hjælp af **Politik for omkostningstotaler** og **Omkostningselementer af typen Sekundær** kan du lade den primære omkostning pr. omkostningsobjekt til intern afrapportering være som den primære omkostning, der er tilbage efter **Beregning af fast omkostning**.
 
-Hvis det samme eksempel var foretaget uden at oprette **Politik for omkostningstotaler** , ville være rapporteringsresultatet være som vist nedenfor. Omkostningen flyder korrekt, men sporbarhed og indsigt i, hvordan omkostningen forløber mellem bærerne, går tabt.
+Hvis det samme eksempel var foretaget uden at oprette **Politik for omkostningstotaler**, ville være rapporteringsresultatet være som vist nedenfor. Omkostningen flyder korrekt, men sporbarhed og indsigt i, hvordan omkostningen forløber mellem bærerne, går tabt.
 
 | **Driftsregnskab** | **Omkostningsobjekt** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Sum**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|

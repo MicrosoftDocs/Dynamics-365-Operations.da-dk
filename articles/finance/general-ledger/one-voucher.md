@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3058011"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441615"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -84,7 +84,7 @@ Baseret på samtaler med kunderne, har Microsoft samlet følgende liste over de 
 Følgende scenarier kan kun udføres ved hjælp af funktionen ét bilag. Hvis din organisation har et af disse scenarier, skal du aktivere flere transaktioner, der skal angives i et bilag, ved at ændre indstillingen af parameteren **Tillad flere transaktioner i ét bilag** på siden **Finansparametre**. Disse funktionsmæssige huller udfyldes via andre funktioner i senere versioner.
 
 > [!Note]
-> [For hver af følgende situationer skal **Tillad flere posteringer inden for ét bilagsfelt** være angivet til Ja i oversigtspanelet **Generelt** på siden **Finansparametre**.]
+> [For hver af følgende situationer skal feltet **Tillad flere posteringer inden for ét bilagsfelt** være indstillet til Ja på oversigtspanelet **Generelt** på siden **Finansparametre**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bogføre kreditor- eller debitorbetalinger i oversigtsform til en bankkonto
 

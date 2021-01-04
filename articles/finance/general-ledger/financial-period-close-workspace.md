@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d647dc41eb18d25101e66d3030327fc55b55a4d5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250322"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441785"
 ---
 # <a name="financial-period-close-workspace"></a>Arbejdsområde til afslutning på regnskabsperiode
 
@@ -52,7 +52,7 @@ To indikatorer bruges til opgaver:
 -   Et ikon med et udråbstegn angiver, at opgaven er forfalden. For opgaver, der er forfaldne, er forfaldsdatoen også fremhævet med rødt.
 -   Et hængelåsikon betyder, at opgaven afhænger af andre opgaver, der endnu ikke er fuldført. En opgave, der er blokeret af afhængigheder, kan ikke markeres som fuldført. Du kan angive afhængigheder for en opgave ved hjælp af handlingen **Indstil afhængighed**.
 
-Opgavenavnet er et hyperlink til siden , som brugeren skal gå til for at fuldføre arbejdet. Du kan angive dette hyperlink ved hjælp af feltet **Opgavelink**, når du redigerer eller opretter en opgave. 
+Opgavenavnet er et hyperlink til siden, som brugeren skal gå til for at fuldføre arbejdet. Du kan angive dette hyperlink ved hjælp af feltet **Opgavelink**, når du redigerer eller opretter en opgave. 
 
 Du kan vedhæfte filer, noter, billeder og URL-adresser til en opgave ved hjælp af handlingen **Vedhæftede filer**. Du kan for eksempel angive kladdenumre, som bruges som en del af en opgave, tilføje kommentarer til en bestemt opgave eller vedhæfte en rapportfil, der er blevet udskrevet for en opgave. Der vises et ikon i kolonnen **Vedhæftet fil** for opgaven, hvis der findes en vedhæftet fil. 
 
@@ -68,7 +68,7 @@ Før du kan bruge arbejdsområdet **Afslutning på regnskabsperiode**, skal du k
 
 Under fanen **Ressourcer** kan du definere de personer, der er involveret i de afsluttende processer. En medarbejder, der skal være ansvarlig for en afsluttende opgave, skal først tildeles her. Du skal også angive medarbejderens visning af arbejdsområdet. Følgende valgmuligheder er tilgængelige:
 
--   **Kun tildelte opgaver** – Brugeren ser kun de opgaver, der er tildelt ham eller hende.
+-   **Kun tildelte opgaver** – Brugeren ser kun de opgaver, der er tildelt brugeren.
 -   **Alle opgaver og statusser** – Brugeren får vist alle ultimoopgaver og status for den overordnede proces.
 
 Brugere, der kun har tilladelse til at få vist de tildelte opgaver, kan ikke føje opgaver til opgavelisten, redigere opgaver eller fjerne opgaver fra opgavelisten.

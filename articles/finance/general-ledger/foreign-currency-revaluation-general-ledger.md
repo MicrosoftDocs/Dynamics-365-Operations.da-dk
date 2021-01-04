@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006207"
+ms.locfileid: "4441726"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
@@ -41,15 +41,15 @@ Når du kører processen til værdiregulering, reguleres saldoen i hver hovedkon
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Klargøre kørsel af værdiregulering af udenlandsk valuta
 Før du kan køre processen til værdiregulering, kræves følgende konfiguration.
 
--   På siden **Hovedkonto** :
+-   På siden **Hovedkonto**:
 -   Vælg **Værdiregulering af udenlandsk valuta** i finans, hvis hovedkontoen skal værdireguleres. Hvis den primære konto ikke bør reguleres (f.eks. for Debitor og Kreditor, hvis den reguleres i reskontroer), skal du fjerne markeringen i afkrydsningsfeltet.
 -   Hvis hovedkontoen er markeret til værdiregulering, skal du angive den **valutakurstypen**. Denne valutakurstype bruges til regulering af hovedkontoen. Et særskilt felt **Valutakurstype for økonomirapportering** er tilgængeligt for økonomirapportering. De to felter holdes ikke synkroniseret, så der er mulighed for forskellige valutakurstyper til værdiregulering og økonomirapportering.
 
--   På siden **Finans** :
+-   På siden **Finans**:
 -   Angiv **valutakurstypen**. Hvis valutakurstypen ikke er defineret på hovedkontoen, bruges denne valutakurstype under værdiregulering af udenlandsk valuta.
 -   Angiv den realiserede gevinst, det realiserede tab og kontiene for ikke-realiseret tab for værdiregulering af valuta. Konti for realiseret gevinst og realiseret tab bruges til udligning af debitor- og kreditortransaktioner, og konti for ikke-realiseret gevinst og ikke-realiseret tab bruges til åbne transaktioner og finanshovedkonti.
 
--   På siden **Værdireguleringskonti for valuta** :
+-   På siden **Værdireguleringskonti for valuta**:
 -   Vælg forskellige konti til valutaværdiregulering for hver valuta og virksomhed. Hvis der ikke er defineret nogen konti, bruges kontiene på siden **Finans**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Behandle værdiregulering af udenlandsk valuta
@@ -67,7 +67,7 @@ Værdireguleringsprocessen kan køres for en eller flere juridiske enheder. Opsl
 
 Reguleringen kan køres i en eller flere udenlandske valutaer. Opslaget omfatter alle de valutaer, der er bogført inden for datointervallet, der er relevant for typen af hovedkonto (Balancen eller Drift), for de juridiske enheder, der er valgt til værdiregulering. Regnskabsvalutaen medtages på listen, men intet reguleres, hvis regnskabsvalutaen er valgt. 
 
-Indstil **Forhåndsvisning før bogføring** til **Ja** , hvis du vil have vist resultatet af værdireguleringen af Finans. Forhåndsvisningen i Finans er forskellig fra simuleringen i værdireguleringen af udenlandsk valuta i Debitor og Kreditor, hvor simuleringen er en rapport, men Finans har en forhåndsvisning, der kan bogføres uden at køre værdireguleringsprocessen igen.. Resultaterne af forhåndsvisningen kan eksporteres til Microsoft Excel for at bevare en oversigt over, hvordan beløbene er beregnet. Du kan ikke bruge batchbehandling, hvis du vil have en forhåndsvisning af resultaterne af reguleringen. I forhåndsvisningen har brugeren mulighed for at bogføre resultaterne af alle de juridiske enheder med knappen **Bogfør**. Hvis der er et problem med resultaterne for en juridisk enhed, har brugeren også mulighed for at bogføre et undersæt af de juridiske enheder ved hjælp af knappen **Vælg juridiske enheder, som skal bogføres**. 
+Indstil **Forhåndsvisning før bogføring** til **Ja**, hvis du vil have vist resultatet af værdireguleringen af Finans. Forhåndsvisningen i Finans er forskellig fra simuleringen i værdireguleringen af udenlandsk valuta i Debitor og Kreditor, hvor simuleringen er en rapport, men Finans har en forhåndsvisning, der kan bogføres uden at køre værdireguleringsprocessen igen.. Resultaterne af forhåndsvisningen kan eksporteres til Microsoft Excel for at bevare en oversigt over, hvordan beløbene er beregnet. Du kan ikke bruge batchbehandling, hvis du vil have en forhåndsvisning af resultaterne af reguleringen. I forhåndsvisningen har brugeren mulighed for at bogføre resultaterne af alle de juridiske enheder med knappen **Bogfør**. Hvis der er et problem med resultaterne for en juridisk enhed, har brugeren også mulighed for at bogføre et undersæt af de juridiske enheder ved hjælp af knappen **Vælg juridiske enheder, som skal bogføres**. 
 
 Når processen til værdiregulering af udenlandsk valuta er fuldført, oprettes der en post for at registrere historikken for hver kørsel.  Der oprettes en separat post for hver juridiske enhed og posteringslag.
 

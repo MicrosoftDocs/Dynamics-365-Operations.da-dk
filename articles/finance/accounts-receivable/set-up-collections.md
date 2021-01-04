@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 8f8e066b1df3eb3a26d488e1c014f4ae3f31395a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013157"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441780"
 ---
 # <a name="set-up-collections"></a>Konfigurere rykkere
 
@@ -96,7 +96,7 @@ Du kan bruge mail til at kommunikere med både kunder og sælgere om rykkerprobl
 ### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Angive e-mail- og adresseindstillinger for rykkerkontaktpersoner hos kunden
 Opret mailadresser for kundekontakter, hvis du vil sende mails til disse kontakter fra siden **Rykkere**. Rykkerkontakten bruges som standardkontaktperson i på siden **Rykkere**. Du kan angive en opgørelsesadresse til en kunde, hvis opgørelser skal sendes til en anden adresse end den primære adresse. 
 
-I oversigtspanelet **Kredit og inkasso** for en kunde skal du i feltet **Kontaktperson ved rykker** vælge den person i kundens virksomhed, der arbejder sammen med din inkassoagent. Denne person bruges som standardkontakt på siden **Rykkere** og e-mails sendes til ham eller hende. 
+I oversigtspanelet **Kredit og inkasso** for en kunde skal du i feltet **Kontaktperson ved rykker** vælge den person i kundens virksomhed, der arbejder sammen med din inkassoagent. Denne person bruges som standardkontakt på siden **Rykkere** og e-mails sendes til dem. 
 
 > [!NOTE] 
 > Hvis en rykkerkontaktperson ikke er angivet for en kunde, bruges den primære kontaktperson for kunden. Hvis en primær kontakt ikke er angivet, sendes mails til den første adresse, der vises på siden **Kontakter**.

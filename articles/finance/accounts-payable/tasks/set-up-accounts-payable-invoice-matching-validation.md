@@ -17,11 +17,11 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143782"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441501"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurere validering af fakturasammenholdelse for kreditor
 
@@ -52,7 +52,7 @@ Der findes fire forskellige typer sammenholdelsesvalideringer.
 8. I feltet **Sammenholdelsespolitik for linjer** skal du vælge en værdi, der skal bruges som standardpolitik for den juridiske enhed, du arbejder med. **Kræves ikke** betyder, at der ikke kræves nogen kontrol af individuelle priser på fakturalinjer i forhold til indkøbsordrepris eller fakturaantal i forhold til antal på følgesedlen. **Tovejssammenholdelse** betyder, at kontrol af fakturalinjerne er påkrævet, men at kun indkøbsordren og leverandørens fakturadokumenter er inddraget i kontrollen. Produktkvitteringen medtages ikke i valideringerne af sammenholdelse. **Trevejsafstemning** betyder, at nettoenhedsprisen på fakturaen sammenlignes med nettoenhedsprisen på indkøbsordren, og det tilsvarende antal på produktkvitteringen sammenlignes med antallet på fakturaen.
 9. Hvis der skal kunne anvendes et andet sammenholdelsesniveau for en vare, kreditor, kombination af kreditor og vare eller indkøbsordrelinje, skal du vælge en værdi i feltet **Tillad overstyring af sammenholdelsespolitik**. Sammenholdelsespolitikken for linjer for den juridiske enhed kan overstyres for en bestemt kreditor, vare og kombination af kreditor og vare på siden **Sammenholdelsespolitik**.
     * Hvis du bruger en sammenholdelsespolitik for linjer, som er tovejs-sammenholdelse eller trevejs-sammenholdelse, kan du konfigurere pristoleranceprocenter for din juridiske enhed, varer og kreditorer på siden med **pristolerance for varer**. Standardpristolerancen for den juridiske enhed angives til nul procent for tovejs- og trevejssammenholdelse. Når kreditorfakturaer sammenholdes med oplysningerne på indkøbsordrer, søges der efter den relevante pristoleranceprocent.   
-10. Hvis du vil sammenligne pristotaler for linjeelementer på fakturaer, skal du vælge en værdi i feltet **Afstem pristotaler**. Denne type sammenholdelse er nyttig, når leverandøren sender flere fakturaer for samme indkøbsordrelinje. Du kan sammenligne prisoplysninger for nettobeløbet på hver linje på fakturaen og alle ventende og tidligere bogførte fakturalinjer med nettobeløbet på den tilsvarende indkøbsordrelinje.  Indstillinger omfatter **Ingen**, **Procent**, **Beløb**eller **Procent og beløb**.
+10. Hvis du vil sammenligne pristotaler for linjeelementer på fakturaer, skal du vælge en værdi i feltet **Afstem pristotaler**. Denne type sammenholdelse er nyttig, når leverandøren sender flere fakturaer for samme indkøbsordrelinje. Du kan sammenligne prisoplysninger for nettobeløbet på hver linje på fakturaen og alle ventende og tidligere bogførte fakturalinjer med nettobeløbet på den tilsvarende indkøbsordrelinje.  Indstillinger omfatter **Ingen**, **Procent**, **Beløb** eller **Procent og beløb**.
 11. I feltet **Toleranceprocent for indkøbspristotaler** skal du angive en procentdel af den varians, du vil acceptere. Dette felt er tilgængeligt, når **Afstem pristotaler** er indstillet til **Procent** eller **Procent og beløb**.
 12. I feltet **Tolerance for indkøbspristotaler** skal du angive et beløb i regnskabsvalutaen. Dette felt er tilgængeligt, når **Afstem pristotaler** er indstillet til **Beløb** eller **Procent og beløb**.
 13. I feltet **Vis ikon for afstemning af pristotal** skal du vælge, hvornår der skal vises et ikon, hvis en uoverensstemmelse for fakturasammenholdelse overstiger tolerancen for nettoenhedsprisen. Ikonet kan blive vist, når en positiv uoverensstemmelse overstiger tolerancen, eller når enten en positiv eller en negativ uoverensstemmelse overstiger tolerancen.

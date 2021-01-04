@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3137940"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441639"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskabsåret
 
@@ -69,7 +69,7 @@ Denne procedure gennemgår processen for årsafslutning, som overfører saldi ti
 15. Klik på **OK**.
 16. Vælg 'Ja' eller 'Nej' i **Overfør balancedimensioner**.
 
-    Det er den bedste praksis at angive denne indstilling til Ja for statuskonti. Derved bevares de økonomiske dimensioner for bogførte posteringer, når der oprettes primosaldi for statuskonti. Til driftskonti kan du vælge at bevare de økonomiske dimensioner (Luk alle), når saldiene er flyttet til Overført resultat, eller du kan vælge at få de økonomiske dimensioner erstattet med en anden dimensionsværdi (Luk et enkelt. Hvis du vælger Luk et enkelt, kan du definere en bestemt dimensionsværdi for hver dimension eller vælge at lade det være tomt.  
+    Det er den bedste praksis at angive denne indstilling til Ja for statuskonti. Derved bevares de økonomiske dimensioner for bogførte posteringer, når der oprettes primosaldi for statuskonti. Til driftskonti kan du vælge at bevare de økonomiske dimensioner (Luk alle), når saldiene er flyttet til Overført resultat, eller du kan vælge at få de økonomiske dimensioner erstattet med en anden dimensionsværdi (Luk et enkelt). Hvis du vælger Luk et enkelt, kan du definere en bestemt dimensionsværdi for hver dimension eller vælge at lade det være tomt.  
 
 17. Klik på **Gem**.
 18. Start årsafslutningen ved at vælge **Kør regnskabsafslutning** i **handlingsruden**. Årsafslutningen køres for den valgte skabelon.  

@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039786"
+ms.locfileid: "4441738"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien
 
@@ -33,7 +33,7 @@ ms.locfileid: "4039786"
 > [!IMPORTANT]
 > Tilføjelsesprogrammet til elektronisk fakturering for Italien understøtter i øjeblikket muligvis ikke alle de funktioner, der er tilgængelige for elektroniske fakturaer i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
-Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien. Det fører dig gennem de konfigurationstrin, der er landeafhængige i Regulatory Configuration Services (RCS) og i Finance. Det fører dig også gennem processen til indsendelse af elektroniske fakturaer, der er oprettet i formatet **FatturaPA** , som er specifikt for Italien, og forklarer, hvordan du kan gennemgå resultaterne af behandlingen.
+Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien. Det fører dig gennem de konfigurationstrin, der er landeafhængige i Regulatory Configuration Services (RCS) og i Finance. Det fører dig også gennem processen til indsendelse af elektroniske fakturaer, der er oprettet i formatet **FatturaPA**, som er specifikt for Italien, og forklarer, hvordan du kan gennemgå resultaterne af behandlingen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -60,7 +60,7 @@ Under RCS-opsætningen skal du udføre disse opgaver:
     > [!NOTE]
     > Hvis du ikke kan se listen over tilgængelige funktioner, skal du vælge **Synkroniser**. 
 
-4. Vælg funktionen **Eksport af e-fakturaer (IT)** , og vælg derefter **Importér**.
+4. Vælg funktionen **Eksport af e-fakturaer (IT)**, og vælg derefter **Importér**.
 
 ![Importere funktionen Eksport af e-fakturaer (IT)](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
@@ -96,7 +96,7 @@ Når du importerer funktionen **Eksport af e-fakturaer (IT)** fra det globale la
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Administrere funktionsopsætninger for e-fakturering
 
-- På siden med **e-faktureringsfunktioner** på fanen **Konfigurationer** skal du vælge **Tilføj** , **Slet** eller **Rediger** for at administrere funktionsopsætningerne for e-fakturering.
+- På siden med **e-faktureringsfunktioner** på fanen **Konfigurationer** skal du vælge **Tilføj**, **Slet** eller **Rediger** for at administrere funktionsopsætningerne for e-fakturering.
 
 ![Administrere funktionsopsætninger for e-fakturering](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
@@ -127,7 +127,7 @@ I dette trin konfigurerer du de hændelser, der gælder for elektroniske faktura
 
 ### <a name="configure-the-project-invoice-feature-setup"></a>Konfigurere funktionsopsætningen for Projektfaktura 
 
-De trin og indstillinger, der kræves for at konfigurere funktionsopsætningen for **Projektfaktura** , minder meget om trinnene og indstillingerne for funktionsopsætningen for **Salgsfaktura**. Når du arbejder med projektfakturaer, kan du se procedurerne for salgsfakturaer.
+De trin og indstillinger, der kræves for at konfigurere funktionsopsætningen for **Projektfaktura**, minder meget om trinnene og indstillingerne for funktionsopsætningen for **Salgsfaktura**. Når du arbejder med projektfakturaer, kan du se procedurerne for salgsfakturaer.
 
 ## <a name="assign-the-e-invoicing-feature-to-the-environment"></a>Tildele e-faktureringsfunktionen til miljøet
 
@@ -166,7 +166,7 @@ Under opsætningen af Finance skal du udføre disse opgaver:
 1. I arbejdsområdet **Elektronisk rapportering** skal du kontrollere, at konfigurationsudbyderen **Business Document Service** er angivet til **Aktiv**.
 2. Vælg **Lagre**.
 3. Vælg **Globalt lager \> Åbn**.
-4. Importér **Fakturamodel** , **Fakturamodeltilknytning** og **Debitorfakturakontekstmodel**.
+4. Importér **Fakturamodel**, **Fakturamodeltilknytning** og **Debitorfakturakontekstmodel**.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Aktivere funktionen til eksport af elektroniske fakturaer til kunder for Italien
 
@@ -178,7 +178,7 @@ Under opsætningen af Finance skal du udføre disse opgaver:
 #### <a name="configure-electronic-documents"></a>Konfigurere elektroniske dokumenter
 
 1. Gå til **Organisationsadministration \> Konfiguration \> Parametre for elektroniske dokumenter**.
-2. Vælg **Tilføj** på fanen **Elektronisk dokument** , og angiv de tabeller, der skal bruges til oprettelse af italienske e-fakturaer:
+2. Vælg **Tilføj** på fanen **Elektronisk dokument**, og angiv de tabeller, der skal bruges til oprettelse af italienske e-fakturaer:
 
     - **Tabelnavn:** Debitorfakturajournal
     - **Tabelnavn:** Projektfaktura
@@ -199,7 +199,7 @@ Under behandlingen i Finance skal du udføre disse opgaver:
 
 ### <a name="generate-electronic-invoices"></a>Oprette elektroniske fakturaer
 
-Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering** og aktiverer funktionen **IT00036** , kan den gamle Finance-proces til oprettelse af italienske e-fakturaer ikke længere bruges. Den erstattes af den nye proces **Send elektroniske dokumenter**.
+Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering** og aktiverer funktionen **IT00036**, kan den gamle Finance-proces til oprettelse af italienske e-fakturaer ikke længere bruges. Den erstattes af den nye proces **Send elektroniske dokumenter**.
 
 Du kan sende dokumenterne manuelt baseret på dit behov for e-fakturadokumenter.
 
@@ -208,7 +208,7 @@ Du kan sende dokumenterne manuelt baseret på dit behov for e-fakturadokumenter.
 
 1. Gå til **Organisationsadministration \> Periodisk \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
 2. Ved den første indsendelse af et dokument skal du angive indstillingen **Send dokumenter igen** til **Nej**. Hvis du skal sende et dokument igen via tjenesten, skal du angive denne indstilling til **Ja**.
-3. I oversigtspanelet **Poster, der skal indgå** skal du vælge **Filter** for at åbne dialogboksen **Forespørgsel** , hvor du kan oprette en forespørgsel for at vælge de dokumenter, der skal sendes.
+3. I oversigtspanelet **Poster, der skal indgå** skal du vælge **Filter** for at åbne dialogboksen **Forespørgsel**, hvor du kan oprette en forespørgsel for at vælge de dokumenter, der skal sendes.
 
 ![Dialogboksen Send elektroniske dokumenter](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
@@ -221,7 +221,7 @@ Du kan sende dokumenterne manuelt baseret på dit behov for e-fakturadokumenter.
 2. Vælg **OK** for at lukke dialogboksen **Forespørgsel**.
 3. Vælg **OK** for at sende de valgte dokumenter.
 
-> [BEMÆRK!] I løbet af første forsøg på at sende et dokument via tjenesten bliver du bedt om at bekræfte forbindelsen med tilføjelsesprogrammet til elektronisk fakturering. Vælg **Klik her for at oprette forbindelse til tjenesten til indsendelse af elektroniske dokumenter**.
+> ![BEMÆRK] I løbet af første forsøg på at sende et dokument via tjenesten bliver du bedt om at bekræfte forbindelsen med tilføjelsesprogrammet til elektronisk fakturering. Vælg **Klik her for at oprette forbindelse til tjenesten til indsendelse af elektroniske dokumenter**.
 
 #### <a name="view-submission-logs"></a>Få vist indsendelseslogge
 
@@ -232,7 +232,7 @@ Du kan få vist indsendelseslogge for alle sendte dokumenter.
 
     ![Vælge en dokumenttype for at få vist indsendelseslogge](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
-    Den værdi, der vises i kolonnen **Indsendelsesstatus** , repræsenterer status for indsendelsesprocessen. Den angiver, om processen kørte som konfigureret, og om der skal udføres yderligere handlinger.
+    Den værdi, der vises i kolonnen **Indsendelsesstatus**, repræsenterer status for indsendelsesprocessen. Den angiver, om processen kørte som konfigureret, og om der skal udføres yderligere handlinger.
 
 3. Vælg **Forespørgsler \> Indsendelsesoplysninger** i handlingsruden for at få vist logoplysningerne for udførelse af indsendelsen.
 

@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a116164a31337013d34f963b549c394aade2de1c
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139986"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441463"
 ---
 # <a name="create-a-main-account"></a>Oprette en hovedkonto
 
@@ -47,7 +47,7 @@ Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende ko
 16. Markér eller fjern markeringen af afkrydsningsfeltet **Suspenderet**.
 17. Udvid sektionen **Økonomirapportering**.
 18. Klik på rullelisten i feltet **Valutakurstype** for at åbne opslaget.
-19. Vælg **Valutakurstypen for kontoen**på listen.
+19. Vælg **Valutakurstypen for kontoen** på listen.
 20. Klik op linket i den valgte række på listen.
 21. Vælg metoden til beregning af valutakurser for kontoen i feltet **Valutaomregningstype**.
 22. Luk siden.

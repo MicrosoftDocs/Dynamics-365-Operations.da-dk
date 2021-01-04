@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: a1e3305bff99fa39240176ac9fc7aaee84b98e6c
-ms.sourcegitcommit: be51e892003778e71b67fb409a8e16965c89b5ac
+ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618405"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441781"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisere kreditorbetalingsforslag
 
@@ -102,7 +102,7 @@ Når automatiseringsserien for kreditorbetalingsforslag er oprettet, vises hænd
 
 [![Ugentlig visning af procesautomatiseringer i arbejdsområdet kreditorbetalinger](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
-Den ugentlige visning af procesautomatiseringer i arbejdsområdet **Kreditorbetalinger** viser kun automatisering af kreditorbetalingsforslag. Den viser alle forekomster af betalinger for den aktuelle uge for alle juridiske enheder, som den bruger, der er logget på, har sikkerhedsrettigheder til. Hvis f.eks. medarbejderen for kreditorbetalinger er ansvarlig for betalinger i USMF- og USSI-virksomhederne, vil han eller hun se forekomsterne af automatisering af kreditorbetalingsforslag for disse to virksomheder, men ikke for andre virksomheder.
+Den ugentlige visning af procesautomatiseringer i arbejdsområdet **Kreditorbetalinger** viser kun automatisering af kreditorbetalingsforslag. Den viser alle forekomster af betalinger for den aktuelle uge for alle juridiske enheder, som den bruger, der er logget på, har sikkerhedsrettigheder til. Hvis f.eks. medarbejderen for kreditorbetalinger er ansvarlig for betalinger i USMF- og USSI-virksomhederne, vil de se forekomsterne af automatisering af kreditorbetalingsforslag for disse to virksomheder, men ikke for andre virksomheder.
 
 [![Ugentlig visning af procesautomatiseringer i USMF- og USSI-virksomheder](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
@@ -128,7 +128,7 @@ Når en betaling slettes, åbnes fakturaerne igen for betaling. Der kan derefter
 
 ## <a name="edit-a-vendor-payment-proposal-automation"></a>Redigere en automatisering af kreditorbetalingsforslag
 
-Via automatiseringsstrukturen Procews kan du redigere betalingen, serien og de forekomster, der er oprettet for betalingsforslaget. Serien kan redigeres enten fra siden **Procesautomatisering** eller i den ugentlige visning af procesautomatiseringer. Hvis kreditorchefen f.eks. beslutter at generere alle checds til indenlandske leverandører onsdag i stedet for mandag, kan vedkommende finde en forekomst i den ugentlige visning og vælge **Vis/rediger – serie**. Hvis du redigerer en serie, beder systemet dig om at angive, om ændringen skal foretages i alle eksisterende forekomster eller kun i nye forekomster. Historiske forekomster, der allerede har statussen **Udført**, eller som er afsluttet i en **fejl**-status, ændres ikke.
+Via automatiseringsstrukturen Procews kan du redigere betalingen, serien og de forekomster, der er oprettet for betalingsforslaget. Serien kan redigeres enten fra siden **Procesautomatisering** eller i den ugentlige visning af procesautomatiseringer. Hvis kreditorchefen f.eks. beslutter at generere alle checds til indenlandske leverandører onsdag i stedet for mandag, kan de finde en forekomst i den ugentlige visning og vælge **Vis/rediger – serie**. Hvis du redigerer en serie, beder systemet dig om at angive, om ændringen skal foretages i alle eksisterende forekomster eller kun i nye forekomster. Historiske forekomster, der allerede har statussen **Udført**, eller som er afsluttet i en **fejl**-status, ændres ikke.
 
 Du kan også tilføje en ny forekomst eller ændre en eksisterende forekomst. Den næste forekomst af betalingsforslag er f.eks. planlagt til at køre onsdag den 1. januar, men denne dato er en helligdag. Serien kan ændre forekomsterne fra enten den ugentlige visning af procesautomatiseringer eller siden **Procesautomatisering**. Der åbnes en side, som viser oplysninger om tidsplan og kriterier for betalingsforslag. Her kan du redigere den planlagte tid og dato. Du kan også redigere kriterierne for betalingsforslag, hvis der kræves ændringer. Hvis du f.eks. ændrer den planlagte dato for betaling fra 1. januar til 2. januar, kan du også ændre de tilhørende datoer for "til"-datoen.
 

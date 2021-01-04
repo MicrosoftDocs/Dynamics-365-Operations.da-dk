@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5277081d9f7adcc43c30d30208d13c7e39d76118
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f9f2cbe0c9d1609aa3713776f81bafa396fff301
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140369"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645275"
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Registrere en kreditorfaktura i fakturakladden
 
@@ -43,7 +43,9 @@ Denne opgaveguide viser, hvordan du kan registrere kreditorfakturaer, der ikke e
     * **Momsgruppe** hentes som standard fra kreditorkontoen.  
     * **Varemomsgruppen** hentes som standard fra den hovedkonto, der er angivet i feltet **Modkonto**.  
     * **Forfaldsdatoen** beregnes på basis af betalingsbetingelserne.  
-    * **Kasserabatten** hentes som standard fra kreditorkontoen.  
+    * **Kasserabatten** hentes som standard fra kreditorkontoen.
+12. Hvis du har aktiveret arbejdsgang for kreditorfakturakladde, skal du klikke på **Aarbejdsgang > Send**.
+    * Når din afsendelse er godkendt, vil datoen blive forskudt til den første dag i den næste åbne periode, hvis posteringsdatoen for bogføring ligger inden for en periode, der er sat i venteposition eller er lukket for finanskontering.
 12. Klik på **Bogfør**.
 13. Luk siden.
 

@@ -14,14 +14,16 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a1672654cb94796d637ef8c0264c448bc6bbbd57
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: e57c51011f1d93a6f62eb88c9cc45a38f2d0a5f3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793435"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528738"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Undervisningskatalog for Dynamics 365 Finance-udviklere
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Har du brug for at skrive kode for at integrere med andre datakilder, udvide kernesystemets funktionalitet eller oprette et komplekst program?
 

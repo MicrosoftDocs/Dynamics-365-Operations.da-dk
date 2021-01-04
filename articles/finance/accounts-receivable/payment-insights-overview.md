@@ -1,6 +1,6 @@
 ---
 title: Indsigt i debitorbetaling (prøveversion)
-description: I dette emne beskrives, hvordan indsigt i betalinger hjælper med at forbedre forståelsen af individuelle kunders typiske betalingspraksis og omstændigheder, der berettiger påbegyndelse af opkrævningsprocesser tidligere end du har gjort hidtil, identificeres.
+description: I dette emne beskrives muligheden for indsigt i betalinger, der hjælper med at forbedre forståelsen af individuelle kunders typiske betalingsmetoder. Funktionen kan hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end det, du måtte have udført.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773922"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644627"
 ---
 # <a name="customer-payment-insights-preview"></a>Indsigt i debitorbetaling (prøveversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne beskrives, hvordan indsigt i betalinger hjælper med at forbedre forståelsen af individuelle kunders typiske betalingspraksis og de omstændigheder, der berettiger påbegyndelse af opkrævningsprocesser tidligere end du måske har gjort hidtil, identificeres. 
+I dette emne beskrives muligheden for indsigt i betalinger, der hjælper med at forbedre forståelsen af individuelle kunders typiske betalingsmetoder. Funktionen kan hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end det, du måtte have udført. 
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
-Organisationer finde ofte svært for at forudsige, hvornår kunder betaler fakturaerne. Denne manglende indsigt fører til mindre præcise likviditetsbudgetter, opkrævningsprocesser, der indledes for sent, og ordrer, der er frigivet til kunder, som kan være bagud med deres betaling. Indsigt i kundebetaling (Forhåndsvisning) kan hjælpe organisationer med til at forudsige, hvornår en debitorfaktura bliver betalt, hvilket hjælper organisationen med at oprette opkrævningsstrategier, som kan forbedre sandsynligheden for, at der betales til tiden. 
+Det kan være svært at forudsige, hvornår kunder betaler fakturaerne. Denne manglende indsigt fører til mindre præcise likviditetsbudgetter, opkrævningsprocesser, der indledes for sent, og ordrer, der er frigivet til kunder, som kan være bagud med deres betaling. Indsigt i kundebetaling (prøveversion) hjælper organisationer med at forudsige, hvornår en kundefaktura betales. Disse oplysninger kan hjælpe organisationer med at oprette inkassostrategier, der forbedrer sandsynligheden for at de bliver betalt til tiden. 
 
 ## <a name="predictions"></a>Forudsigelser
 
@@ -42,13 +42,13 @@ Betalingsprognoser giver organisationer mulighed for at forbedre deres forretnin
 
 Ved hjælp af en model til maskinlæring, som udnytter historiske data for fakturaer, betalinger og kundedata, giver indsigt i debitorbetalinger (Forhåndsvisning) en mere præcis forudsigelse for, hvornår en kunde betaler en udestående faktura.
 
-For hver åben faktura forudsiger indsigt i kundebetaling (Forhåndsvisning) tre betalingssandsynligheder:
+For hver åben faktura forudsiger Customer payment insights (prøveversion) tre betalingssandsynligheder:
 
 -   Sandsynlighed for, at betaling sker til tiden 
 -   Sandsynlighed for, at der sker sen betaling
 -   Sandsynlighed for, at der sker stor forsinkelse med betalingen
 
-For at hjælpe organisationer med at forstå det samlede betalingsbeløb, de kan forvente indbetalt af en kunde i et af de tre grupper, Til tiden, Sen og Meget forsinket, giver indsigt i debitorbetaling også en samlet visning af forventede betalinger.
+Customer payment insights (prøveversion) giver desuden en samlet visning over forventede betalingsbeløb, der kan hjælpe organisationer med at forstå det samlede betalingsbeløb , der kan forventes fra en kunde i en af følgende tre grupper, Til tiden, Sent og Meget sent.
 
 [![Samlet visning af betalings forudsigelser](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -66,7 +66,7 @@ Det er svært at udvikle og installere en AI-løsning. Det kræver et team af da
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>Sådan får du indsigt i debitorbetaling (Forhåndsvisning)
 
-Hvis du er interesseret i at prøve indsigt debitorbetaling (Forhåndsvisning), skal du sende en mail til [Indsigt i debitorbetalinger (Forhåndsvisning)](mailto:fiap@microsoft.com).
+Send email til [Customer payment insights (prøveversion)](mailto:fiap@microsoft.com), hvis du er interesseret i at prøve Customer payment insights (prøveversion).
 
 ## <a name="privacy-notice"></a>Privatlivserklæring
 

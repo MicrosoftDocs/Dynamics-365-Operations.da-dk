@@ -3,7 +3,7 @@ title: Fjernede eller udfasede funktioner i Dynamics 365 Finance
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
-ms.date: 03/13/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175102"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689488"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -35,6 +35,40 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.16 udgaven
+
+### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"Eksportformat for finanspost (BE)" Elektronisk rapporteringsformat og tilsvarende "finanspost for eksport (BE)" model for Belgien
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet med nyt ER-format under "standardrevisionsfil (SAF-T)"-modellen.  |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet: Pr. 1. december 2021 planlægger vi ikke længere at understøtte "Finanspostens eksportformat (BE)" Elektronisk rapporteringsformat (ER) og de tilhørende "Eksport af finanstransaktioner (standard)". Et nyt format af typen "Dataeksport i Finans (standard)" sammen med "Tilknytning af finansdatamodel" introduceres i stedet for modellen "Standardrevisionsfilen (SAF-T)". |
+
+### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>"moms 100"-rapport the Storbritannien i SSRS-format
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af det nye ER-format – "momsopgørelse Excel (UK)" under "momsopgørelsesmodel".  |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet: Pr. 1. december 2021 planlægger vi ikke længere at understøtte "Moms 100-rapporten" i SSRS-format. Der blev introduceret et nyt format "momsopgørelses Excel (UK)" under "momsopgørelsesmodel" i [MTD Momsfunktionen](../localizations/emea-gbr-mtd-vat-integration.md). |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10015-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.15 udgaven
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-understøttelse af Dynamics 365 udfases
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Microsoft Internet Explorer 11-understøttelsen af alle Dynamics 365-produkter udfases fra december 2020, og Internet Explorer 11 understøttes ikke efter august 2021.<br><br>Dette vil påvirke kunder, der bruger Dynamics 365-produkter, som er udviklet til brug via en Internet Explorer 11-grænseflade. Efter august 2021 er Internet Explorer 11 ikke understøttet for sådanne Dynamics 365-produkter. |
+| **Erstattet af en anden funktion?**   | Vi anbefaler, at kunderne overgår til Microsoft Edge.|
+| **Produktområder, der er berørt**         | Alle Dynamics 365-produkter |
+| **Installationsindstilling**              | Alt|
+| **Status**                         | Forældet. Internet Explorer 11 understøttes ikke efter august 2021.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.12 udgaven
 

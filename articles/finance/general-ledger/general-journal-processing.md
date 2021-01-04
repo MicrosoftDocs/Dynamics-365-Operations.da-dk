@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771816"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441673"
 ---
 # <a name="general-journal-processing"></a>Finanskladdehåndtering
 
@@ -101,7 +101,7 @@ Du kan finde **Simuler bogføring** i menuen **Valider** til de fleste kladder. 
 Der er en knap tilgængelig på kladdesiden til at låse en kladde op, der har status "låst af system" angivet til Ja. Denne oplåsning kan udføres af en administrator af systemet, der har analyseret udførelsen af batchjob og bekræftet, at denne kladde ikke længere behandles af et batchjob. Denne knap aktiveres af funktionen ved navn **Lås kladde op-knap** på siden **Administration af funktioner**. 
 
 ## <a name="workflow-recall"></a>Tilbagekald af arbejdsgang 
-Muligheden for at tilbagekalde en kladde i en arbejdsgang, der har statussen "uoprettelig", aktiveres ved at bruge knappen**Arbejdsgang** på en kladde og på siden **Arbejdsgangshistorik**. Dette aktiveres af funktionen med navnet **Nulstilling af arbejdsgangsstatus for kladder** på siden **Administration af funktioner**.
+Muligheden for at tilbagekalde en kladde i en arbejdsgang, der har statussen "uoprettelig", aktiveres ved at bruge knappen **Arbejdsgang** på en kladde og på siden **Arbejdsgangshistorik**. Dette aktiveres af funktionen med navnet **Nulstilling af arbejdsgangsstatus for kladder** på siden **Administration af funktioner**.
 
 ## <a name="delete-journal-lines"></a>Slet kladdelinjer
 Muligheden for at slette alle kladdelinjer hurtigt aktiveres i en kladde under **Funktioner** > **Slet kladdelinjer**. Hvis du vil aktivere denne funktion, skal du under **Administration af funktioner** vælge **Slet kladdeoptimeringer for ydeevne**.
