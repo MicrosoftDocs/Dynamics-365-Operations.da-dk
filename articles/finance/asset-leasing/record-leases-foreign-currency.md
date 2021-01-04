@@ -1,0 +1,55 @@
+---
+title: Registrere leasingaftaler i udenlandsk valuta
+description: Dette emne forklarer, hvordan du registrerer leasingaftaler i andre valutaer end regnskabs- eller rapporteringsvalutaen.
+author: moaamer
+manager: Ann Beebe
+ms.date: 10/28/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
+ms.custom: 4464
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
+ms.search.region: Global
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 92177d4f808bfec88dabe9277c3d584ed02e401e
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441754"
+---
+# <a name="record-leases-in-foreign-currencies"></a><span data-ttu-id="478ec-103">Registrere leasingaftaler i udenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="478ec-103">Record leases in foreign currencies</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="478ec-104">Der oprettes aktivleasingkonti for leasingaftaler, der er i andre valutaer end regnskabsvalutaen eller rapporteringsvalutaen på siden **Opsætning af Finans**.</span><span class="sxs-lookup"><span data-stu-id="478ec-104">Asset leasing accounts for leases that are in currencies other than the accounting currency or the reporting currency are established on the **Ledger setup** page.</span></span> <span data-ttu-id="478ec-105">Alle rettigheder skal angives i transaktionsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="478ec-105">All leases should be entered in their transaction currency.</span></span> <span data-ttu-id="478ec-106">De skal med andre ord angives i den valuta, der er angivet i leasingkontrakten.</span><span class="sxs-lookup"><span data-stu-id="478ec-106">In other words, they should be entered in the currency that is specified in the lease contract.</span></span> <span data-ttu-id="478ec-107">Dette emne forklarer, hvordan du registrerer leasingaftaler i andre valutaer end regnskabs- eller rapporteringsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="478ec-107">This topic explains how to record leases in currencies other than the accounting or reporting currency.</span></span>
+
+<span data-ttu-id="478ec-108">Hvis du angiver en leasingaftale i en fremmed valuta, afskrives ROU-rettighedsaktivet i både regnskabsvalutaen og rapporteringsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="478ec-108">If you enter a lease in a foreign currency, the right-of-use (ROU) asset is depreciated in both the accounting currency and the reporting currency.</span></span> <span data-ttu-id="478ec-109">Disse valutaer konfigureres på siden **Opsætning af Finans**.</span><span class="sxs-lookup"><span data-stu-id="478ec-109">These currencies are configured on the **Ledger setup** page.</span></span> <span data-ttu-id="478ec-110">Denne funktionsmåde bruges også i anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="478ec-110">This behavior is also used in Fixed assets.</span></span> <span data-ttu-id="478ec-111">Når du opretter en leasingaftale i udenlandsk valuta, skal du vælge transaktionsvalutaen i feltet **Valuta**.</span><span class="sxs-lookup"><span data-stu-id="478ec-111">When you create a lease in a foreign currency, select the transaction currency in the **Currency** field.</span></span>
+
+<span data-ttu-id="478ec-112">Valutakursen for regnskabsvalutaen er standardværdien i feltet **Regnskabsvalutakurs**.</span><span class="sxs-lookup"><span data-stu-id="478ec-112">The exchange rate of the accounting currency is the default value in **Accounting currency exchange rate** field.</span></span> <span data-ttu-id="478ec-113">Valutakursen for rapporteringsvalutaen er standardværdien i feltet **Rapporteringsvalutakurs**.</span><span class="sxs-lookup"><span data-stu-id="478ec-113">The exchange rate of the reporting currency is the default value in the **Reporting currency exchange rate** field.</span></span> <span data-ttu-id="478ec-114">Disse valutakurser var gældende på ikrafttrædelsesdatoen for leasingaftalen.</span><span class="sxs-lookup"><span data-stu-id="478ec-114">These exchange rates were effective on the commencement date of the lease.</span></span> <span data-ttu-id="478ec-115">Felterne **Regnskabsvalutakurs** og **Valutakurs for rapportering** findes i oversigtspanelet **Finans- og rapportudvekslingsoplysninger** på siden **Leasingoplysninger**.</span><span class="sxs-lookup"><span data-stu-id="478ec-115">The **Accounting currency exchange rate** and **Reporting currency exchange rate** fields, are in the **Financial and reporting exchange information** FastTab, on the **Lease details** page.</span></span>
+
+1. <span data-ttu-id="478ec-116">Marker afkrydsningsfeltet **Fast kurs** for at tilsidesætte den valutakurs, der er angivet automatisk, og angiv derefter den nye sats.</span><span class="sxs-lookup"><span data-stu-id="478ec-116">Select the **Fixed rate** check box to override the exchange rate that was automatically entered, and then enter the new rate.</span></span>
+2. <span data-ttu-id="478ec-117">Angiv de oplysninger, der kræves til leasingaftalen, i de andre felter, og vælg derefter **Opret planer**.</span><span class="sxs-lookup"><span data-stu-id="478ec-117">In the other fields, enter the information that is required for the lease, and then select **Create schedules**.</span></span>
+3. <span data-ttu-id="478ec-118">På siden **Leasingdetaljer** skal du vælge **Kartoteker**.</span><span class="sxs-lookup"><span data-stu-id="478ec-118">On the new **Lease details** page, select **Books**.</span></span>
+4. <span data-ttu-id="478ec-119">På siden **Leasingkartotek** skal du under fanen **Finans-og rapporteringskursoplysninger** kontrollere værdierne i **Regnskabsvalutaens indledende brugsretsaktiv** og felterne **Rapporteringsvalutaens indledende brugsretsaktiv**.</span><span class="sxs-lookup"><span data-stu-id="478ec-119">On the **Lease book** page, on the **Financial and reporting exchange information** tab, verify the values of the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields.</span></span> <span data-ttu-id="478ec-120">Hvert af disse felter viser det oversatte ROU-aktivsaldo i den tilsvarende valuta.</span><span class="sxs-lookup"><span data-stu-id="478ec-120">Each of these fields shows the translated ROU asset balance in the corresponding currency.</span></span> <span data-ttu-id="478ec-121">Disse felter opdateres, når du ændrer økonomiske oplysninger.</span><span class="sxs-lookup"><span data-stu-id="478ec-121">These fields are updated whenever you change any financial information.</span></span> <span data-ttu-id="478ec-122">Vælg **Opret planer**, før du bekræfter betalingsplanen.</span><span class="sxs-lookup"><span data-stu-id="478ec-122">Select **Create schedules** before you confirm the payment schedule.</span></span>
+
+    <span data-ttu-id="478ec-123">Den oprindelige genkendelseskladdepostering registrerer det ROU-aktiv, der bruger de valutakurser, der er angivet for leasingaftalen.</span><span class="sxs-lookup"><span data-stu-id="478ec-123">The initial recognition journal entry records the ROU asset that uses the currency exchange rates that are listed on the lease.</span></span> <span data-ttu-id="478ec-124">Kladdeposten indeholder også værdierne fra felterne **Regnskabsvalutaen indledende brugsretsaktiv** og **Rapporteringsvalutaens indledende brugsretsaktiv**.</span><span class="sxs-lookup"><span data-stu-id="478ec-124">The journal entry also includes the values of the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields.</span></span>
+
+## <a name="subsequent-measurement-for-foreign-currency-leases"></a><span data-ttu-id="478ec-125">Efterfølgende måling af leasingaftaler med fremmed valuta</span><span class="sxs-lookup"><span data-stu-id="478ec-125">Subsequent measurement for foreign currency leases</span></span>
+
+<span data-ttu-id="478ec-126">Afskrivningsplanen viser de forventede afskrivningsudgiftsbeløb i rapporteringsvalutaen, regnskabsvalutaen og transaktionsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="478ec-126">The depreciation schedule shows the expected depreciation expense amounts in the reporting currency, the accounting currency, and the transaction currency.</span></span>
+
+<span data-ttu-id="478ec-127">Hvis du vil have vist ROU-aktivsaldi og afskrivningsbeløb i enten rapporteringsvalutaen eller regnskabsvalutaen, skal du åbne siden **Afskrivningsplan for aktiver** og markere afkrydsningsfeltet **Vis regnskabsvalutabeløb** eller **Vis rapporteringsvalutabeløb**.</span><span class="sxs-lookup"><span data-stu-id="478ec-127">To view the ROU asset balances and depreciation amounts in either the reporting currency or the accounting currency, open the **Asset depreciation schedule** page, and select the **Show accounting currency amounts** or **Show reporting currency amounts** check box.</span></span>
+
+<span data-ttu-id="478ec-128">Når du opretter afskrivningskladdeposteringerne i forhold til en leasingaftale, der er angivet i en fremmed valuta, bruger posten de valutakurser, der vises på leasingaftalen.</span><span class="sxs-lookup"><span data-stu-id="478ec-128">When you create the depreciation expense journal entries against a lease that is denominated in a foreign currency, the entry uses the exchange rates that are listed on the lease.</span></span> <span data-ttu-id="478ec-129">Den bruger også værdierne fra felterne **Regnskabsvalutaen indledende brugsretsaktiv** og **Rapporteringsvalutaens indledende brugsretsaktiv**.</span><span class="sxs-lookup"><span data-stu-id="478ec-129">It also uses the values of the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields.</span></span>
+
+<span data-ttu-id="478ec-130">Det endelige afskrivningsbeløb for udligningsudgifter kan beregnes ved hjælp af en lidt anden valutakurs, så ROU aktivet afskrives fuldt ud i regnskabsvalutaen og rapporteringsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="478ec-130">The final depreciation expense amount can be calculated by using a slightly different exchange rate, so that the ROU asset is fully depreciated in both the accounting currency and the reporting currency.</span></span>
+
+<span data-ttu-id="478ec-131">Hvis rettigheden er blevet genklassificeret som **Udskudt leje**, fjerner systemet automatisk valutakurserne for regnskabs- og rapporteringsvaluta, hvis de allerede er defineret.</span><span class="sxs-lookup"><span data-stu-id="478ec-131">If the lease has been reclassified as **Deferred rent**, the system automatically clears the exchange rates of the accounting and reporting currencies, if they have already been defined.</span></span>

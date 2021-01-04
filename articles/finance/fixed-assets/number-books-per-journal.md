@@ -1,0 +1,49 @@
+---
+title: Antal bøger pr. kladde
+description: Dette emne beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob. Du kan definere det maksimale antal kartoteker, der er inkluderet for hver anskaffelse, og til afskrivning.
+author: moaamer
+manager: Ann Beebe
+ms.date: 11/19/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
+ms.custom: 4464
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
+ms.search.region: Global
+ms.author: moaamer
+ms.search.validFrom: 2020-11-19
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
+ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4650652"
+---
+# <a name="number-of-books-per-journal"></a><span data-ttu-id="052e8-104">Antal bøger pr. kladde</span><span class="sxs-lookup"><span data-stu-id="052e8-104">Number of books per journal</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="052e8-105">Dette emne beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob.</span><span class="sxs-lookup"><span data-stu-id="052e8-105">This topic describes the relationship between journals and asset books when you create a fixed asset acquisition or depreciation proposal through a batch job.</span></span> <span data-ttu-id="052e8-106">Du kan definere det maksimale antal kartoteker, der er inkluderet for hver enkelt anskaffelse og for afskrivning ved hjælp af felterne i **Antal kartoteker pr. kladde** under fanen **Generelt** på siden **Parametre til anlægsaktiver** (**Anlægsaktiver \> Konfiguration \> Struktur for anlægsaktiver**).</span><span class="sxs-lookup"><span data-stu-id="052e8-106">You can define the maximum number of books that are included for each acquisition and for depreciation by using the fields in the **Number of books per journal** section on the **General** tab of the **Fixed assets parameters** page (**Fixed assets \> Setup \> Fixed assets parameters**).</span></span> <span data-ttu-id="052e8-107">Du kan bruge disse felter til at fordele antallet af anlægskartoteker pr. anskaffelseskladde og en afskrivningskladde.</span><span class="sxs-lookup"><span data-stu-id="052e8-107">These fields let you distribute the number of asset books per acquisition journal and depreciation journal.</span></span>
+
+<span data-ttu-id="052e8-108">I forbindelse med et anskaffelsesforslag er standardværdien mindst 10.000 bøger.</span><span class="sxs-lookup"><span data-stu-id="052e8-108">For an acquisition proposal, the default value is at least 10,000 books.</span></span> <span data-ttu-id="052e8-109">I forbindelse med et afskrivningsforslag er standardværdien mindst 2.000 kartoteker.</span><span class="sxs-lookup"><span data-stu-id="052e8-109">For a depreciation proposal, the default value is at least 2,000 books.</span></span>
+
+<span data-ttu-id="052e8-110">Hvis der f. eks. er 4.000 anlægsaktiver, og der er knyttet to kartoteker til hvert enkelt anlægsaktiv, bogføres det ene kartotek i det aktuelle lag, og det andet kartotek bogføres på momslaget.</span><span class="sxs-lookup"><span data-stu-id="052e8-110">For example, if there are 4,000 fixed assets, and two books are associated with each asset, one book will be posted to the current layer, and the other book will be posted to the tax layer.</span></span> <span data-ttu-id="052e8-111">Hvis du anskaffer 4.000 anlægsaktiver via batchafvikling, vil det batchjob, der opretter en anskaffelseskladde for anlægsaktiver, indeholde 4.000 anlægskartoteker.</span><span class="sxs-lookup"><span data-stu-id="052e8-111">If you acquire 4,000 fixed assets through batch processing, the batch job that creates one fixed asset acquisition journal will contain 4,000 asset books.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="052e8-112">Den kladde, der er oprettet, vil fortsat blive brugt, indtil kørslen er fuldført.</span><span class="sxs-lookup"><span data-stu-id="052e8-112">The journal that is created will continue to be used until the batch job is completed.</span></span>
+>
+> <span data-ttu-id="052e8-113">De afledte kartoteker indgår ikke i det maksimale antal kartoteker pr. kladde.</span><span class="sxs-lookup"><span data-stu-id="052e8-113">The derived books aren't included in the maximum number of books per journal.</span></span>
+
+<span data-ttu-id="052e8-114">Du kan bruge batchafvikling til at køre afskrivning for det samme sæt anskaffede aktiver.</span><span class="sxs-lookup"><span data-stu-id="052e8-114">You can use  batch processing to run depreciation for the same set of acquired assets.</span></span> <span data-ttu-id="052e8-115">Et batchjob opretter f. eks. to afskrivningskladder, der hver består af 2.000 anlægskartoteker.</span><span class="sxs-lookup"><span data-stu-id="052e8-115">For example, a batch job creates two depreciation journals, each of which consists of 2,000 asset books.</span></span> <span data-ttu-id="052e8-116">Den første kladde vil indeholde de kartoteker, der er knyttet til anlægsaktiverne med numrene 1 til 2.000.</span><span class="sxs-lookup"><span data-stu-id="052e8-116">The first journal will contain books that are associated with the fixed assets that are numbered 1 through 2,000.</span></span> <span data-ttu-id="052e8-117">Den anden kladde vil indeholde de kartoteker, der er knyttet til anlægsaktiverne med numrene 2.001 til 4.000.</span><span class="sxs-lookup"><span data-stu-id="052e8-117">The second journal will then contain books that are associated with the fixed assets that are numbered 2,001 through 4,000.</span></span>
+
+<span data-ttu-id="052e8-118">Batchafviklingsjobbet udelader lukkede kartoteker.</span><span class="sxs-lookup"><span data-stu-id="052e8-118">The batch processing job excludes closed books.</span></span> <span data-ttu-id="052e8-119">I et batchjob til afskrivning lukkes f. eks. 10 af de første 2.000 kartoteker.</span><span class="sxs-lookup"><span data-stu-id="052e8-119">For example, in a batch job for depreciation, 10 of the first 2,000 books are closed.</span></span> <span data-ttu-id="052e8-120">Den første kladde vil således indeholde de kartoteker, der er knyttet til anlægsaktiverne med numrene 1 til 2.011.</span><span class="sxs-lookup"><span data-stu-id="052e8-120">In this case, the first journal will contain books that are associated with the fixed assets that are numbered 1 through 2,011.</span></span> <span data-ttu-id="052e8-121">Den anden kladde vil indeholde de kartoteker, der er knyttet til anlægsaktiverne med numrene 2,012 til 4.000.</span><span class="sxs-lookup"><span data-stu-id="052e8-121">The second journal will then contain books that are associated with the fixed assets that are numbered 2,012 through 4,000.</span></span>
+
+<span data-ttu-id="052e8-122">Grænsen for antallet af kartoteker anvendes, hvis der ikke findes identiske anlægs-id'er i samme kladde.</span><span class="sxs-lookup"><span data-stu-id="052e8-122">The limit on the number of books is applied if duplicate asset IDs don't exist in the same journal.</span></span> <span data-ttu-id="052e8-123">Men hvis aktiv-id'et er det samme som det bogførte ID, kan antallet af kartoteker pr. kladde overskrides for at beholde aktiv-id'et i samme kladde.</span><span class="sxs-lookup"><span data-stu-id="052e8-123">However, if the asset ID is the same as the book ID, the number of books per journal can be exceeded to keep the asset ID in the same journal.</span></span>
+
+<span data-ttu-id="052e8-124">Der er f. eks. 5.001 anlægsaktiv-id'er, der knyttes tre kartoteker til hvert anlægsaktiv-ID, og hver enkelt anlægs model bogføres på samme posteringslag.</span><span class="sxs-lookup"><span data-stu-id="052e8-124">For example, there are 5,001 fixed asset IDs, three books are associated with each fixed asset ID, and each asset book is posted to the same posting layer.</span></span> <span data-ttu-id="052e8-125">Du kører afskrivning for tre på hinanden følgende måneder uden opsummering.</span><span class="sxs-lookup"><span data-stu-id="052e8-125">You run depreciation for three consecutive months, without summarization.</span></span> <span data-ttu-id="052e8-126">Afskrivningskladden oprettes via et batchjob, og der oprettes syv kladder med 667 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID.</span><span class="sxs-lookup"><span data-stu-id="052e8-126">The depreciation journal will be created through a batch job, and the system will create seven journals that have 667 fixed asset IDs and three books for each fixed asset ID.</span></span> <span data-ttu-id="052e8-127">Resultatet vil være 2.001 kartoteker.</span><span class="sxs-lookup"><span data-stu-id="052e8-127">The result will be 2,001 books.</span></span> <span data-ttu-id="052e8-128">I tre måneder vil der derfor være 6.003 kladdelinjer til at vedligeholde samme anlægs-id'er i samme kladde.</span><span class="sxs-lookup"><span data-stu-id="052e8-128">Therefore, in three months, there will be 6,003 journal lines to maintain the same asset IDs in the same journal.</span></span> <span data-ttu-id="052e8-129">Der oprettes også én kladde med 332 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID.</span><span class="sxs-lookup"><span data-stu-id="052e8-129">The system will also create one journal that has 332 fixed asset IDs and three books for each fixed asset ID.</span></span> <span data-ttu-id="052e8-130">Inden for tre måneder vil der være 2.988 linjer.</span><span class="sxs-lookup"><span data-stu-id="052e8-130">In three months, there will be 2,988 lines.</span></span>
