@@ -88,3 +88,6 @@ Følgende enheder blev brugt som grundlag for PowerBI.com-løsningen til **Drift
 - ChartofAccounts
 
 Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

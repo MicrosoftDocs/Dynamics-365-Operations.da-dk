@@ -52,3 +52,6 @@ Der er foretaget en ændring for at anvende standardkoden for "Årsag til fratr�
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Ny enhed, der er oprettet for jobkompensationsniveauer
 Et nyt datastyringsobjekt (DMF) er blevet oprettet. Objektet bruges til oprettelse og opdatering til kompensationsniveauer, markedsværdier og undersøgelsesoplysninger for hvert job, der er defineret i systemet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

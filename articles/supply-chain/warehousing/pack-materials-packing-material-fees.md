@@ -112,3 +112,6 @@ Du kan udskrive emballagevægten på en faktura og angive, hvem der skal betale 
 
 1. Gå til **Debitor \> Opsætning \> Debitorparametre**.
 1. Angiv indstillingen **Udskriv emballagevægt** til **Ja** i oversigtspanelet **Faktura** på fanen **Opdateringer**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

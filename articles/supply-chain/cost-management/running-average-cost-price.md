@@ -76,3 +76,6 @@ Husk også, at den maksimale modpostering i den fysiske lagerværdi er begrænse
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

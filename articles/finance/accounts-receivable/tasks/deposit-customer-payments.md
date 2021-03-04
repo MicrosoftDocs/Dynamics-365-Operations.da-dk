@@ -48,3 +48,6 @@ Deponer debitorbetalinger. Denne opgave bruger demofirmaet USMF.
 17. Vælg **OK**. Den første side bruges til at oprette et indbetalingsbilag.  
 18. Vælg **OK**. Det andet trin er at udskrive indbetalingsbilaget, men dette trin er ikke påkrævet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

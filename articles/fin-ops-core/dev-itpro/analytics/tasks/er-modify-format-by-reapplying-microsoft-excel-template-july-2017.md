@@ -83,3 +83,6 @@ Denne procedure beskriver, hvordan du ændrer en konfiguration af et elektronisk
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Bruge den ændrede kladdeversion af ER-formatet i behandling af betalingskladde
 
 Gennemse det oprettede regneark, inklusive nye betalingslinjeoplysninger – betalingsdato.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

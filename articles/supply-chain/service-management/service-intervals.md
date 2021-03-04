@@ -94,3 +94,6 @@ Der er oprettet tre serviceordrelinjer inden for den tidsramme, du har angivet i
 
 [Oprette serviceintervaller](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

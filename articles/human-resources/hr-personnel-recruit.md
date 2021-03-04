@@ -227,3 +227,5 @@ Hvis det er nødvendigt, kan du afvise en kandidat efter at have ansat vedkommen
 [Konfigurere Common Data Service virtuelle enheder](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organisere dine medarbejdere](hr-personnel-departments-jobs-positions.md)<br>
 [Konfigurere komponenterne i et job](hr-personnel-jobs.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Du kan finde flere oplysninger under følgende emner:
 [Oprette en bankfacilitetsaftale for en remburs](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

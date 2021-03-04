@@ -54,3 +54,6 @@ En fakturalinje vil blive udelukket fra den automatiske behandling, hvis en elle
 - Værdien for **Status for automatisk kvitteringsafstemning** på fakturalinjen er **Mislykket**.
 - Fakturaen er i brug.
 - Fakturaen er i arbejdsprocessystemet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

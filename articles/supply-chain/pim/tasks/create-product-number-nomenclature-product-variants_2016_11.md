@@ -102,3 +102,6 @@ Denne procedure viser, hvordan du konfigurerer en nomenklatur for produktnumre f
 43. Luk siden.
 44. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

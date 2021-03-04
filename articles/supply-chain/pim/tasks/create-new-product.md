@@ -43,3 +43,6 @@ Dette emne beskriver, hvordan et nyt delt produkt oprettes. Den udføres normalt
 3. Indtast eller vælg en værdi i feltet **Sporingsdimensionsgruppe**. Lagringsdimensionsgruppen bestemmer, hvilke sporingsdimensioner du skal angive for hver transaktion for produktet, og hvordan den håndteres på lageret.  
 4. Vælg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

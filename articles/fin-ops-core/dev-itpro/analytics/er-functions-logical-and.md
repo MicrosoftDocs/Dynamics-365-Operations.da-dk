@@ -65,3 +65,6 @@ I argumenterne for logiske funktioner kan du bruge datakildereferencer, numerisk
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Logiske funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

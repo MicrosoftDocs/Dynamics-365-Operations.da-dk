@@ -62,3 +62,6 @@ Når sivende feedbaseret bogføring bruges, så bogføringen af posteringer adsk
 Oplysninger om økonomisk afstemning for et skift synkroniseres til Commerce Headquarters ved hjælp af P-job.
 
 Økonomiske detailopgørelser i Commerce Headquarters beregner ikke totaler for at få vist detaljerne på opgørelseslinjerne. I stedet bruges de endelige beløb i POS-klienten til at oprette og bogføre økonomiske detailopgørelser.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Denne fremgangsmåde fokuserer på oprettelsen af en dispositionskode, der kan b
 6. Indtast en værdi i feltet Returdispositionskode.
     * Returdispositionskoden bestemmer resten af returordreprocessen for de varer, der er registreret. I dette eksempel bør debitoren modtage en kreditnota. Tilføj en returdispositionskode, der indeholder handlingen Kredit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

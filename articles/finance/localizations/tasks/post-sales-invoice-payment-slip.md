@@ -54,3 +54,6 @@ Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF. Denne funktion
     * Sørg for, at den tilknyttede betaling, der er knyttet til debitorfakturaen, er indstillet til FIK 751 eller FIK 752.  
 17. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

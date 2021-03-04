@@ -157,3 +157,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 71. Luk siden.
 72. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ I illustrationen herunder vises et eksempel på listesiden **Aktive vedligeholde
 
 Du kan finde en kort beskrivelse af knapperne på siden **Aktive vedligeholdelsesjob for arbejdsordre** under [Introduktion til arbejdsordrer](../work-orders/introduction-to-work-orders.md), hvor de samme knapper er beskrevet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

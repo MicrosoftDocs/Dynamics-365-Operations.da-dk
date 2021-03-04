@@ -89,3 +89,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 1.  I mobilappen skal du vælge mobilarbejdsområdet **Firmaadressekartotek**.
 2.  I feltet **Søg** skal du angive medarbejderens fornavn, efternavn, titel eller afdeling for at starte søgningen.
 3.  Vælg medarbejderen. Siden **Medarbejderprofil** vises. Oplysningerne på denne side omfatter medarbejderens fornavn, efternavn, titel og afdeling.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

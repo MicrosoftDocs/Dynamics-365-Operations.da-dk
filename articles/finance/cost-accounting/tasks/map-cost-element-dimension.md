@@ -44,3 +44,6 @@ En omkostningscontroller kan bruge denne procedure til at knytte en dimension fo
     * I dette eksempel skal du vælge dimensionsmedlem 6001004 Telefono.  
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -318,3 +318,6 @@ Når du er færdig, burde du kunne se, at der er oprettet fire forsendelser:
 
 - [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
 - [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

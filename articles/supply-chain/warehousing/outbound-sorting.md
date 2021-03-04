@@ -667,3 +667,6 @@ Du skal fuldføre arbejdet med sorteret lagerpluk. Når den er fuldført, plukke
     Arbejde er fuldført.
 
 Fra dette tidspunkt gælder alle andre lagerprocesser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

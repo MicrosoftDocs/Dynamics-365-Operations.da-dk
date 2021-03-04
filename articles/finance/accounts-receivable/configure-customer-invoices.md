@@ -167,3 +167,6 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

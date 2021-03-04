@@ -113,3 +113,6 @@ Hver formatversion kan konfigureres som tilgængelig for brug fra en bestemt dat
 1. Udvid sektionen ISO-land/område-koder.
     * Hver formatadgang kan begrænses ved at identificere bestemte lande/områder, hvori et format er gældende. Hvis listen over lande/områder for det pågældende format er tom, kan dette format bruges i ethvert firma. Når der indsættes nogle ISO-land/område-koder på denne liste over lande/områder, kan dette format kun bruges i firmaer, hvis den primære adresse er i landet/området.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, so
 14. Klik på OK.
 15. Opdater siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

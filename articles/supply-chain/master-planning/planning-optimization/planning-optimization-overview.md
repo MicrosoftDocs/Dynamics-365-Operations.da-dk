@@ -78,3 +78,6 @@ Følgende illustration viser dataflowet.
 [Anvend filtre på en plan](plan-filters.md)
 
 [Annullere et planlægningsjob](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

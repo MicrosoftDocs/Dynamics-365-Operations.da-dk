@@ -73,3 +73,6 @@ Følgende billede viser et eksempel på en størrelsesgruppe til "størrelser p�
 [Konfigurere detailprodukter](set-up-retail-products.md)
 
 [Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

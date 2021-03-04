@@ -169,3 +169,6 @@ Eksempelscenariet kræver, at du forbereder to lokationsprofiler.
 
 > [!NOTE]
 > Lokationsfelterne opdateres kun ved lagertransaktioner. Hvis du flytter lager ved hjælp af en kladde eller andre ikke-WHS-processer, opdateres felterne ikke.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

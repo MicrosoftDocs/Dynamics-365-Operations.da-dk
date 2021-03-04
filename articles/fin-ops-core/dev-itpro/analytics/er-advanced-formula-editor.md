@@ -171,3 +171,6 @@ Editoren understøttes i øjeblikket i følgende webbrowsere:
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 - [Monaco-editor](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ På siden **Vurderingsprofiler** kan du gennemse alle tilgængelige vurderingspr
 
 > [!NOTE]
 > Profiler, der oprettes på siden **Fragtmænd**, vises også på siden **Vurderingsprofiler**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

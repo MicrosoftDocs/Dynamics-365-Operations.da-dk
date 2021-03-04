@@ -102,3 +102,6 @@ Du kan oprette forsikringspolicer og garantier på siden **Alle kunder** (**Debi
     I dette tilfælde er den gældende kreditgrænse 125.000 (= A + \[B × C\]).
     
     Men hvis du markerer afkrydsningsfeltet **Medtaget i eksponering**, fjernes **Opdater kreditgrænse**-værdien på 50.000 (= 50,00 procent af 100.000), og eksponeringsværdien er 75.000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

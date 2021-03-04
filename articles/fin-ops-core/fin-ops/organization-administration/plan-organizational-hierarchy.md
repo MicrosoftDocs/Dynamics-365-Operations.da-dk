@@ -241,3 +241,6 @@ Overvej følgende bedste fremgangsmåder, når du implementerer et organisations
 - Før du modellerer større omstruktureringsscenarier, skal du bruge hierarkiets ikrafttrædelsesdatoer til at udføre en effektanalyse og en valideringstest.
 - Brug kladdetilstand til at ændre et hierarki, før du udgiver en ny version i et produktionsmiljø.
 - Begræns antallet af personer, der har rettigheder til at tilføje eller fjerne organisationer fra et hierarki i et produktionsmiljø. Et lavere antal reducerer risikoen for, at der kan forekomme dyre fejl, der kræver, at der gennemføres rettelser.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

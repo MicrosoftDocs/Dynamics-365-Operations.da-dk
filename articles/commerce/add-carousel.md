@@ -86,3 +86,6 @@ Hvis du vil føje et karruselmodul til en ny side og angive de påkrævede egens
 [Indholdsblokmodul](add-hero-module.md)
 
 [Videoafspillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

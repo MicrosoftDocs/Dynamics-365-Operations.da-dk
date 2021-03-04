@@ -68,3 +68,6 @@ Hvis du vil have vist effekterne af værdireguleringsprocessen af leasingaftalen
 Du kan få vist den nyligt genererede betalingsplan, der starter på værdireguleringsdatoen, og få vist det samlede opdaterede betalingsbeløb. Der er også oprettet en ny plan for betaling af ansvarsforsikring og en plan for aktivafskrivning for at afspejle den justerede betalingsplan.
 
 Kladdeposten har automatisk bogført reguleringskladdeposten på kontoen for ændringen i de leasingbetalinger, der er relateret til indeksværdireguleringen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

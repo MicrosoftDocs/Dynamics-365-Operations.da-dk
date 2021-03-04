@@ -74,3 +74,6 @@ Du vil oprette vores egen konfiguration af kundens fakturamodel, der er afledt a
 3. Skriv "Debitorfakturamodel (brugerdefineret)" i feltet Navn.
 4. Klik på Opret konfiguration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

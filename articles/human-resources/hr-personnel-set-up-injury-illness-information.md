@@ -65,3 +65,6 @@ Arbejdsgivere skal vide, når deres medarbejdere kommer til skade eller bliver s
     * Indberetningsorganer er de organer, som hændelsen skal rapporteres til. Markér afkrydsningsfeltet for det organ, der er standardorganet for indberetning af skader og sygdom.  
 23. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ Følg disse trin for at deaktivere en CSS-tilsidesættelsesfil på dit websted.
 [Føje sprog til webstedet](add-languages-to-site.md)
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -125,3 +125,6 @@ Denne funktionsmåde forventes. Da rekvisitioner ikke altid er godkendt, bør et
 
 Du kan oprette samhandelsaftaler som svar på en tilbudsanmodning, uanset om den er blevet accepteret eller afvist. Du kan finde flere oplysninger under [Oversigt over tilbudsanmodninger](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

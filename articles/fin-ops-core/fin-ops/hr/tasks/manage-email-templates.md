@@ -47,3 +47,6 @@ Du kan overføre oplysninger fra din organisations database til bogmærkerne i e
 8. Fortsæt med at skrive din e-mailmeddelelse, og indsæt bogmærkefelter, hvor du skal bruge dem.
 9. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

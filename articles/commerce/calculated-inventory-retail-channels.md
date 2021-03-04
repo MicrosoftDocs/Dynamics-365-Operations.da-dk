@@ -114,3 +114,6 @@ Det anbefales, at du ikke kører disse batchjob for ofte (med få minutters mell
 > Af hensyn til ydeevnen bruger beregningen en cache til at angive, om der er forløbet nok tid til at kunne begrunde at køre beregningslogikken igen, når der anvendes kanalsideberegninger til at beregne lagertilgængelighed til at foretage en anmodning om varetilgængelighed ved hjælp af beregninger af e-Commerce-API'erne eller den nye POS-kanalsidelagerlogik. Standardcachen er angivet til 60 sekunder. Du har f.eks. slået kanalsideberegningen til for din butik og har fået vist det disponible lager for et produkt på siden **Lagersøgning**. Hvis der derefter sælges en enhed af produktet, vil siden **Lagersøgning** ikke vise det reducerede lager, før cachen er blevet ryddet. Når brugere har bogført transaktioner i POS, bør de vente 60 sekunder, før de bekræfter, at det disponible lager er blevet reduceret.
 
 Hvis dit forretningsscenarie kræver en mindre cacheperiode, skal du kontakte produktsupportmedarbejderen for at få hjælp.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

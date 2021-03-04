@@ -238,3 +238,6 @@ Når en ordre med flere betalingsmidler og flere linjer afhentes, modtager kasse
 - [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

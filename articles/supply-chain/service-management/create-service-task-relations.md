@@ -75,3 +75,6 @@ Serviceopgaverelationer, der oprettes til en serviceordre, kan vælges i den spe
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

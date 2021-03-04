@@ -55,3 +55,6 @@ Når du har fuldført forudsætningerne, kan du oprette et sortiment og tildele 
 2. Vælg de kanaler eller grupper af kanaler på højeste niveau, som sortimentet gælder for.
 3. Føj produktkategorier, individuelle produkter eller produktvarianter til udvalget. Du kan inkludere alle produkter i en bestemt kategori, eller du kan udelukke markerede produkter fra en kategori, der er inkluderet i sortimentet.
 4. Udgiv udvalget. Sortimentsplanlæggeren kører automatisk, når du udgiver et udvalg. Denne proces opretter listen over produkter. Når denne proces er fuldført, bliver produkterne tilgængelige for de kanaler, som produktudvalget er tildelt. Hvis der foretages ændringer af et udvalg, der er udgivet, eller af kanaler, som udvalget er tildelt til, skal udvalget opdateres. Hvis du vil opdatere udvalget, når der er foretaget ændringer, kan du køre sortimentsplanlæggeren som et batchjob.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

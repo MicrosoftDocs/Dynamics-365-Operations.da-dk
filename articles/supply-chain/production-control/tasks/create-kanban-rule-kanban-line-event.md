@@ -69,3 +69,6 @@ Denne fremgangsmåde opretter en kanban-regel ved at bruge indstillingen for kan
     * Bemærk, at en kanban for 27 blev oprettet for at behandle aktiviteten ud fra den oprettede kanban-regel.  
     * Dette er det sidste trin.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

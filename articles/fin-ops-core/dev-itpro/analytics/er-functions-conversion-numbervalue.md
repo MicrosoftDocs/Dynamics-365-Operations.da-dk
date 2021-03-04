@@ -63,3 +63,6 @@ Den resulterende numeriske værdi.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Typekonverteringsfunktioner](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

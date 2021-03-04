@@ -78,3 +78,6 @@ Personale forbinder personer og driftsdata for at hjælpe dig med at optimere ud
 [Administrere orlov og fravær](hr-leave-and-absence-overview.md)</br>
 [Udvikle medarbejdere](hr-develop-performance-management-overview.md)</br>
 [Opret kurser](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

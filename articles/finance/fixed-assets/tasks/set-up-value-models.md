@@ -54,3 +54,6 @@ Denne procedure viser, hvordan du opretter et nyt anlægskartotek og knytter det
     * Bemærk, at Afskrivningsperioder beregnes efter angivelse af levetid.  
     * Du kan angive afskrivningsprincippet som påkrævet af skattemæssige årsager.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

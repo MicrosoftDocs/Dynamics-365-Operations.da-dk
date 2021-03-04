@@ -111,3 +111,6 @@ Du kan behandle NSF-betalinger ved at klikke på NFS-betaling på siden Rykkere.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

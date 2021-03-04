@@ -205,3 +205,6 @@ Opgørelser er visninger for de ledere, der er ansvarlige for styring af omkostn
 Versioner, der bruges til at simulere, se og sammenligne forskellige udfald. Som standard vises alle faktiske omkostninger i en grundlæggende version, der er kendt som *faktisk*. I budgetter og beregninger kan du arbejde med så mange versioner, som du har brug for. Du kan eksempelvis importere budgetdata i en oprindelig version og derefter ændre budgettet i en revideret version. Du kan oprette flere versioner for beregninger. Du kan derefter oprette beregninger ved hjælp af andre beregningsregler, der skal udlignes for omkostningstildeling i disse forskellige versioner.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

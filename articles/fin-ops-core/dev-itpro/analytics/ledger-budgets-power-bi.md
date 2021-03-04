@@ -57,3 +57,6 @@ Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelt
 | Finans                   | Finanskonti, der kan bruges til at filtrere rapporten til det aktuelle finansmodul              |
 | Budgetkoder              | Budgetkoder, som rapporter kan filtreres efter                                                |
 | Juridiske enheder            | Juridiske enheder, der kan bruges til at filtrere rapporten til den aktuelle juridisk enhed |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

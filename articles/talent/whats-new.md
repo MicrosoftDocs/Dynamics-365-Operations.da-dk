@@ -33,3 +33,6 @@ Hver uge er der nye frigivelser til Talent. Disse frigivelser er angivet i indho
 
 Indholdsfortegnelsen bliver løbende opdateret hver uge, så kom tilbage for at finde alle de nye funktioner og ændringer i de seneste frigivelser til Talent.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

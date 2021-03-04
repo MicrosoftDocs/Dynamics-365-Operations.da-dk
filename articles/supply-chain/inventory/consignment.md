@@ -103,3 +103,6 @@ Hvis dine kreditorer bruger leverandørsamarbejde som interface, kan de bruge de
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

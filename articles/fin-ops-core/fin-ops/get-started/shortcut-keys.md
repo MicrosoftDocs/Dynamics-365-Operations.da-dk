@@ -255,3 +255,6 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 [Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

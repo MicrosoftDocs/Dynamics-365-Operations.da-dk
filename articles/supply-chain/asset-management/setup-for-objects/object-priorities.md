@@ -53,3 +53,6 @@ Du finder flere oplysninger om den opsætning, der er relateret til beregningen 
 
 > [!NOTE]
 > Hvis du ændrer en registrering af tjenesteniveauet for aktivet på siden **Tjenesteniveauer for aktiv**, efter at du allerede har brugt den på en arbejdsordre, opdateres tjenesteniveauet på vedligeholdelsesanmodninger og arbejdsordrer ikke i overensstemmelse hermed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

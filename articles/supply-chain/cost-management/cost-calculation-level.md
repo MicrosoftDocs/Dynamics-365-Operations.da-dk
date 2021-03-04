@@ -57,3 +57,6 @@ Derefter oprettes der en produktionsordre til produkt C, og produkt A føjes til
     - **Produkt C:** 2
 
 Denne funktionsmåde sikrer, at ændringer i produktionsordrestyklister ikke påvirker de efterfølgende omkostningsberegninger.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

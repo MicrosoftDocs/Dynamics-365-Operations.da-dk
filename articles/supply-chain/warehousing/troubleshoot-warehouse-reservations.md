@@ -78,3 +78,6 @@ Men, hvis du bruger en vare, der har et "batch under"-reservationshierarki (hvor
 Denne funktionsmåde er tilsigtet. Hvis du placerer en dimension over **Lokation**-dimensionen i reservationshierarkiet, skal den angives før frigivelsen til lagerstedet. Microsoft har evalueret dette problem og har fastslået, at det er en funktionsbegrænsning under frigivelsen til lagerstedet fra lastplanlægningspanelet. Delmængder kan ikke frigives, hvis en eller flere dimensioner over **Lokation** ikke er angivet.
 
 Du kan finde flere oplysninger under [Fleksibel reservationspolitik for dimension på lagerstedsniveau](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

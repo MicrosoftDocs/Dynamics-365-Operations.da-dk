@@ -40,3 +40,6 @@ Afskrivningsprofiler bestemmer typen og hyppigheden af afskrivningen for et akti
 7. Vælg en indstilling i feltet **Periodefrekvens**.
 8. Luk formularen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

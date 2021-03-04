@@ -70,3 +70,6 @@ Hvis du vil bruge en bestemt [sideretning](electronic-reporting-destinations.md#
 
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

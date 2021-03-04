@@ -52,3 +52,6 @@ Denne procedure drejer sig om at forberede et kanban-procesjob, når visse mater
 6. Klik på Klargør.
     * Bemærk, at et ikon i Jobstatus angiver, at jobbet nu er klart.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

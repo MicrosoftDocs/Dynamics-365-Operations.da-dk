@@ -54,3 +54,6 @@ Du kan også angive en bekræftelsesmeddelelse, der bliver vist, når guiden er 
 4.  Åbn fanen **Lande/områder** for at vælge det land/område, som konfigurationen skal bruges til.
 5.  Fuldfør konfigurationen ved at følge retningslinjerne for standardkonfigurationen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

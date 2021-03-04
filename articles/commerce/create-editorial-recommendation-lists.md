@@ -75,3 +75,6 @@ Hvis du vil oprette en overvåget liste med produktanbefalinger, skal du følge 
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Konfigurationsversionen slettes, og der vises en bekræftelsesmeddelelse.
 > [!NOTE]
 > Der kan kun slettes konfigurationer af den konfigurationsudbyder, der har oprettet dem. Hvis konfigurationen er delt med en anden organisation, skal du fjerne delingen af konfigurationen, før du sletter den.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

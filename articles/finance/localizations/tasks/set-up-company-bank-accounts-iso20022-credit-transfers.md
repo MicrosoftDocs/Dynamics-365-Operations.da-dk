@@ -52,3 +52,6 @@ Det er den anden procedure af fem, der illustrerer kreditors betalingsproces ved
 4. Indtast eller vælg en værdi i feltet Bankkonto.
 5. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ I dette eksempel er brugt én ekstra efterkalkulationsversion til at administrer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

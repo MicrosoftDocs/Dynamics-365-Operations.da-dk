@@ -55,3 +55,6 @@ Når du klikker på knappen Kamera på kamerasiden, vises den nedtonet under for
 
 Når du holder kameraet over en stregkode, får du det bedste resultat, hvis stregkoden er justeret med parenteserne. Når en stregkode er blevet scannet, bliver resultatet behandlet, og du føres til næste trin. Hvis det næste trin indeholder endnu et inputfelt, hvor den foretrukne inputtilstand er indstillet til Scannes, starter kamerasiden igen. Hvis det næste trin ikke er et scanningsfelt, initieres kamerasiden ikke.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

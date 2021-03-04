@@ -41,3 +41,6 @@ Hvis du i versioner før 10.0.13 ikke bruger omkostningsforløbet for lean produ
 > Du er ved at udføre en lagerlukning med datoen %1. Der er ikke registreret nogen udførelse af beregning af efterkalkuleret varetræk med datoen %1 der matcher periodeafslutning. Husk at udføre beregning af efterkalkuleret varetræk med datoen %1 der matcher periodeafslutning. Værdiansættelsen af lagerbeholdning, vareforbrug og afvigelser er måske ikke korrekte i Reskontro eller Finans, før dette er udført.
 
 Dette problem er løst i version 10.0.13 og senere. Du kan finde flere oplysninger i [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

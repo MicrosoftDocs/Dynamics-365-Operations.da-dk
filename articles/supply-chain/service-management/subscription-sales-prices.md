@@ -380,3 +380,6 @@ I den første postering for abonnement 00020\_135 afledes salgsprisen på EUR 55
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

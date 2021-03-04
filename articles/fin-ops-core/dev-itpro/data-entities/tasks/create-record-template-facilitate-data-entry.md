@@ -43,3 +43,6 @@ Dette emne viser, hvordan du opretter en postskabelon, så feltværdier, som bru
 13. Vælg **OK**.
 14. Vælg **Luk**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

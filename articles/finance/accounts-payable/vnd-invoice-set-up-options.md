@@ -63,3 +63,6 @@ Følgende parametre er tilgængelige:
 
 - **Antal gange, der skal forsøges automatisk afstemning** – Vælg det antal gange, systemet skal forsøge at afstemme produktkvitteringer med en fakturalinje, før det konkluderer, at processen er mislykket. Når det angivne antal forsøg er nået, fjernes fakturaen fra automatisk behandling.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

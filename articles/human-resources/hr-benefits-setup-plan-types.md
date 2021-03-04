@@ -63,3 +63,6 @@ En plantype kan definere disponeringsindstillinger. Disponeringsindstillingerne 
    | **Rapporteringsvindue** | Angiver rapporteringsvinduet, i dage, for livshændelsen. **Bemærk!** Hvis du ikke indtaster et beløb, antager systemet, at rapporteringsvinduet skal være nul, og livshændelsen behandles ikke. |
 
 5. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

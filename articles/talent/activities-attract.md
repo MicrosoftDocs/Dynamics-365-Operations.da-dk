@@ -91,3 +91,6 @@ Ansættelsesprocesskabelonen kræver tilbudsaktiviteten. For at anvende den inte
 > Den integrerede Offer Management-app er kun tilgængelig sammen med tilføjelsesprogrammet Omfattende ansættelser. Yderligere oplysninger finder du under [Hvilken version af Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

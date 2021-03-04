@@ -53,3 +53,6 @@ Når brugere starter et tilbud i Sales, kopierer dobbeltskrivningsstrukturen til
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Kundeemner til kontanter og to skrivninger](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

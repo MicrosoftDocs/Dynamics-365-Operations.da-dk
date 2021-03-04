@@ -54,3 +54,6 @@ Udfør følgende trin, før du kører en standardomkostningskonvertering:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

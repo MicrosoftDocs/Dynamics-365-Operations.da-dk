@@ -78,3 +78,6 @@ Gennemse den genererede XML-fil.
 6. Luk siden.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Benyt følgende fremgangsmåde for at bekræfte flere betalingsplaner.
     - Hvis du vil bekræfte alle kartoteker, skal du aktivere parameteren **For alle kartoteker**.
 
 Oplysningerne for de senest bekræftede kartoteker vises på siden **Bekræftede kartoteker**. Når betalingsplanerne er bekræftet, kan de oprindelige genkendelseskladdeposteringer bogføres i forhold til rettighederne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

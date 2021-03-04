@@ -88,3 +88,6 @@ Du kan finde flere oplysninger i [Luk Finans ved periodeafslutning](close-genera
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

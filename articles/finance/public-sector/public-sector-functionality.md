@@ -72,3 +72,6 @@ Nedenstående tabel indeholder oplysninger om, hvordan denne konfigurationsnøgl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

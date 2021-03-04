@@ -87,3 +87,6 @@ Ved at føje fragmentet til sideskabeloner kan du sikre, at sidefoden gengives p
 [Sidehovedmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

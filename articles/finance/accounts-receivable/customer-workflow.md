@@ -60,3 +60,6 @@ Når du har mindst én foreslået ændring, vises der yderligere to menuer i han
     Status på siden ændres til **Ændringer, der afventer godkendelse**.
 
 Arbejdsgangen følger standardprocessen for arbejdsgang i applikationen. Godkenderen dirigeres til siden **Kunde**, hvor ændringerne kan gennemgås på siden **Forslag til ændringer**. Vælg derefter **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

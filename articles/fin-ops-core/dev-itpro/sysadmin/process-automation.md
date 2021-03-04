@@ -47,3 +47,6 @@ Hver forekomst kan redigeres uden at påvirke andre forekomster, der er definere
 ## <a name="developer-documentation"></a>Udviklerdokumentation
 
 Procesautomatiseringsstrukturen giver udviklere mulighed for at udvide procesautomatiseringsstrukturen. Dokumentation til [procesautomatiseringsstrukturen](../process-automation/process-automation-framework.md) indeholder oplysninger om, hvordan du kan oprette brugerdefinerede processer, som du skal køre på den batchserver, der er planlagt med guiden til procesautomatisering, og som automatisk vises i kalendervisningen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

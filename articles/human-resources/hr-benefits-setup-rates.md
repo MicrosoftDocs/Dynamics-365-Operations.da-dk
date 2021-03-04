@@ -93,3 +93,6 @@ Du kan også bruge dobbelte niveauer. Hvis du vælger **Dobbelt niveau** for væ
    | **Flekskreditsats for rygere** | Antallet af flekskreditter, som frynsegodet koster, baseret på den beregning, der er defineret for niveauet for rygere. |
 
 5. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

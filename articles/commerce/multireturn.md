@@ -54,3 +54,6 @@ Når ordrerne markeres, vises en liste over alle produkter, der kan returneres, 
 
 Hvis ordren returneres fuldt ud, er det beløb, der returneres til kunden, lig med det momsbeløb, der oprindeligt blev opkrævet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

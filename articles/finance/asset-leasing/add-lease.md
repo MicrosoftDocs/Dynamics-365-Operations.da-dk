@@ -89,3 +89,6 @@ Alle de kladdeposteringer, der er oprettet under Aktiv leasing, findes i Aktivle
 
 > [!NOTE]
 > Aktivleasingkladde kan ikke oprettes manuelt. Den oprettes automatisk, når der oprettes planlagte tidsplaner.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

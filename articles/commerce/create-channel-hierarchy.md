@@ -107,3 +107,6 @@ Følgende billede viser en eksempelnode med tilføjede produktattributgrupper.
 [Konfigurere udvalg](set-up-assortments.md)
 
 [Administrere attributter for attributgrupper](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

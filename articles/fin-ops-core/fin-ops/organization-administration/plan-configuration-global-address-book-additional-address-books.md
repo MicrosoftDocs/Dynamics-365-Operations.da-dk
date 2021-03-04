@@ -57,3 +57,6 @@ Når du opretter det globale adressekartotek, kan du oprette yderligere adressek
 **Beslutning:**
 
 - Hvor mange yderligere adressekartoteker vil du oprette?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

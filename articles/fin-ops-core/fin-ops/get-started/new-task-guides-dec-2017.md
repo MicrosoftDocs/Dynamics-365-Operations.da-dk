@@ -368,3 +368,6 @@ Når en BPM-linje slettes, slettes alle opgaveguider, der er knyttet til BPM-lin
 **Slettet BPM-linje**
 
 - Flytte planlagte kanban-job
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

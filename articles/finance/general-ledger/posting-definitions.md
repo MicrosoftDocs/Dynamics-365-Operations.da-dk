@@ -62,3 +62,6 @@ Der er følgende begrænsninger, når du opretter sammenkædninger i bogførings
 Yderligere oplysninger finder du i afsnittet [Eksempler på bogføringsdefinitioner](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

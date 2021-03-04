@@ -193,3 +193,6 @@ Fuldt afsendte flytteordrer flyttes til fanen **Fuldført** på dokumentlisten *
 ## <a name="related-topics"></a>Relaterede emner
 
 [Indgående lagerhandling i POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

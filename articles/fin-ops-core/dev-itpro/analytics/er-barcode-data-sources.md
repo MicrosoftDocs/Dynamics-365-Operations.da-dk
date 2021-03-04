@@ -303,3 +303,6 @@ Men når du bruger **Stregkode**-datakilden til at producere stregkoder, afhæng
 - [Destinationer for elektronisk rapportering](electronic-reporting-destinations.md)
 - [Formelsprog i elektronisk rapportering](er-formula-language.md)
 - [Funktionen NUMBERFORMAT](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Sådan klargør du Commerce-evalueringsmiljøet se [Klargøre et Commerce-evalue
 [Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)
 
 [Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

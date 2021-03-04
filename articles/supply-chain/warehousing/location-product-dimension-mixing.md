@@ -239,3 +239,5 @@ Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme
 
 > [!TIP]
 > Du kan gentage dette scenarie, men denne gang skal du angive **Størrelse** - *Nej* under oversigtspanelet **Tillad blanding af produktdimensioner** på *Masse* **Lokationsprofiler**, så ingen af produktdimensionerne kan blandes. Hvis du i dette tilfælde modtager indkøbsordren, vil de enkelte produktvarianter blive lagt på lager på en ny lokation.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

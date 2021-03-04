@@ -95,3 +95,6 @@ Når du foretager registreringer af forbrug, føjes økonomiske dimensioner, der
 >[!NOTE]
 >For alle tre registreringstyper valideres den økonomiske dimensionskombination, og ugyldige kombinationer står tomme. Det er standardkonfigurationen med andre Finance and Operations-apps.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

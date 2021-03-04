@@ -42,3 +42,6 @@ Denne procedure gælder for alle europæiske lande/områder. Denne procedure ble
 7. Klik på Søg.
     * Alle parter med dette registrerings-id vises.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

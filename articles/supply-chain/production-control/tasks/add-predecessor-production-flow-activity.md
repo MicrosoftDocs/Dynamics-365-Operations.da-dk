@@ -52,3 +52,6 @@ Du kan få mere at vide ved at læse hvidbogen "Production flows and activities 
     * Standardprocestidsforholdet for en aktivitetsrelation er 1. Dette forudsætter, at begge aktiviteter kører i samme tempo eller takttid. Hvis den foregående opgave kører i et højere tempo (lavere takttid), skal forholdet være mindre end 1, hvis den foregående opgave kører i et langsommere tempo (højere takttid) og procestidsforholdet er større end 1.  
 5. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

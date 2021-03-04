@@ -69,3 +69,6 @@ Hvis værdien af argumentet `starting position` overskrider længden af den angi
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Hvis du har problemer med at slå job op på LinkedIn, kan du finde hjælp i [Fe
 [Rekruttere kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Fejlfinding af integration med LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

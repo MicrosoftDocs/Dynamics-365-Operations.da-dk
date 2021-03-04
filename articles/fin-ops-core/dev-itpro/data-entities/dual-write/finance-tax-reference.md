@@ -37,3 +37,6 @@ Finans- og momsdata integreres ved hjælp af følgende tilknytninger:
 
 + [Integreret finans](ledger-mapping.md)
 + [Integreret momsmaster](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

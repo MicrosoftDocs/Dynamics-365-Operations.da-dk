@@ -70,3 +70,6 @@ Vær opmærksom på følgende punkter:
 
 - Du kan oprette tællere, der er relateret til en anden tæller. I dette tilfælde opdateres relaterede tællere automatisk, når en tæller opdateres. Du kan finde flere oplysninger om, hvordan du konfigurerer relaterede tællere, i [Tællere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -186,3 +186,6 @@ Hvis der skal foretages en korrektion af Debitor- eller Kreditorkontoen i Finans
 ### <a name="the-system-allows-it"></a>"Systemet tillader det"
 
 Organisationer bruger ofte udelukkende funktionen ét bilag, fordi systemet lader dem bruge den, uden at de forstår konsekvenserne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

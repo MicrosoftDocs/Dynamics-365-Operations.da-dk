@@ -60,3 +60,6 @@ Efterhånden som organisationen vokser, og du overveje planlægning af efterføl
 28. Klik på Rapport.
     * Rapporten viser de bedste forekomster øverst i rapporten.  Du kan se, at der er vist et kløftelement.  Det er forskellen mellem det niveau, der blev angivet i kompetencesøgningen, og niveauet for den færdighed, som er tildelt til personen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

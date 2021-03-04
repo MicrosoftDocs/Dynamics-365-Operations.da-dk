@@ -190,3 +190,6 @@ Du kan nu bruge **Common Data Service-id-enhed for produktenhed**, **Id-koder fo
 ## <a name="related-topic"></a>Relateret emne
 
 [Søge efter produkter og produktvarianter under ordreindtastning](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

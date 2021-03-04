@@ -36,3 +36,6 @@ En kreditnota indeholder en liste over produkterne, antal og aftalte priser for 
 
 -   Kreditnotaen viser "Kreditnota" som dokumentnavn i stedet for at vise "Faktura".
 -   Kreditnotaen indeholder felterne **Hovedfakturanr.** og **Årsag til rettelsen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

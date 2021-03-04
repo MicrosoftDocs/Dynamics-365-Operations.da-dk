@@ -49,3 +49,6 @@ Dette emne giver oplysninger om, hvordan du kan analysere og administrere krav t
     - Hvis **Rolle** er valgt, skal du vælge **Føj rolle til bruger**. Derved åbnes siden **Tildel brugere roller**. Du kan finde flere oplysninger på siden [Tildele brugere til sikkerhedsroller](assign-users-security-roles.md).
     - Hvis **Pligt** er valgt, skal du vælge **Føj pligt til rolle**, vælge de roller, som pligten skal føjes til, og derefter vælge **OK**.
     - Hvis **Rettighed** er valgt, skal du vælge **Føj rettighed til pligter**, vælge de roller, som pligten skal føjes til, og derefter vælge **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

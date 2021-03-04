@@ -134,3 +134,6 @@ Du kan gemme de aktuelle værdier som standardværdier. Der er to valgmuligheder
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -276,3 +276,6 @@ Hvis en bruger ikke håndterer et dokument inden for den tildelte tid, er dokume
 
 5. Gentag trin 3 til 4 for hvert bruger, der skal føjes til eskaleringsstien. Du kan ændre brugernes rækkefølge.
 6. Hvis brugerne i eskaleringsstien ikke reagerer inden for den tildelte tid, håndteres dokumentet automatisk af systemet. Hvis du vil angive den handling, som systemet skal udføre, skal du vælge rækken **Handling** og derefter vælge en handling på fanen **Sluthandling**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

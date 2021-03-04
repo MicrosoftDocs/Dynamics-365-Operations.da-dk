@@ -671,3 +671,6 @@ Statussen for version 32.6.7.2 ændres fra **Kladde** til **Fuldført**, og vers
 - [Hente ER/konfigurationer fra det globale lager til Konfigurationstjenesten](er-download-configurations-global-repo.md)
 - [Opret en fritekstfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Oprette og arbejde med brugerdefinerede felter](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

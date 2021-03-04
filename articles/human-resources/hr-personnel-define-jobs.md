@@ -71,3 +71,6 @@ Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hj�
 33. Slå udvidelsen af sektionen Uddannelse til/fra.
 34. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

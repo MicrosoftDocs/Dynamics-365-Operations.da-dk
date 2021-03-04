@@ -81,3 +81,6 @@ En operationsressource udfører aktiviteterne i et projekt eller en produktionsp
 4. Indtast eller vælg en værdi i feltet Indlagringslokalitet.
     * Angive lagerstedslokationen, som operationsressourcen forbruger materialer fra.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

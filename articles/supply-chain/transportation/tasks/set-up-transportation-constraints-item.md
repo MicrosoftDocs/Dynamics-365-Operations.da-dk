@@ -44,3 +44,6 @@ Denne procedure skal oprette en transportbegrænsning for at forhindre, at en va
 10. Klik på Gem.
 11. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Et batchjob renser regelmæssigt poster i referencetabellen for enheder, der ikk
 1. Vælg **Ryd op i klientkonfigurationer** i handlingsruden.
 1. I dialogboksen **Ryd op i klientkonfigurationer** skal du indstille feltet **Antal dage** til det antal dage uden aktivitet (før i dag), der skal tages i betragtning. Du vil fjerne alle konfigurationer og logonposter for enheder, der ikke har været aktive i den pågældende periode.
 1. Vælg **OK** for at rydde op i de relevante konfigurationer baseret på indstillingen **Antal dage**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

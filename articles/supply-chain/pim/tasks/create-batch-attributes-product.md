@@ -55,3 +55,6 @@ Denne fremgangsmåde viser, hvordan du opretter en batchattribut, tildeler stand
 22. Klik på Gem.
 23. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

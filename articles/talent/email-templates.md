@@ -81,3 +81,6 @@ Når ansættelsesteamet sender en mail, kan den bruge de skabeloner, der er opre
 
 > [!NOTE] 
 > Du kan oprette flere skabeloner til mails, der sendes automatisk. Kun én skabelon kan dog angives som den aktive skabelon. Da denne proces udløses af hændelser, er det kun administratoren, der kan bestemme, hvilken skabelon der skal bruges, på baggrund af kombinationen af **Standard**- og **Sendt automatisk**-kort i skabelonbiblioteket.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

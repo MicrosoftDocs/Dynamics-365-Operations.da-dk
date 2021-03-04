@@ -66,3 +66,6 @@ Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære ad
 16. Klik på Gem.
 17. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

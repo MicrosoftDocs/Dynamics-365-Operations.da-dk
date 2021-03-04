@@ -42,3 +42,6 @@ Frigivne produkter og varianter, hvor feltet **Produktets livscyklustilstand** e
 Yderligere oplysninger om produktlivscyklustilstand finder du under [Oversigt over produktlivscyklustilstand](../../pim/product-lifecycle.md).
 
 Du kan finde detaljerede oplysninger om, hvordan du kan bruge statusser for produktlivscyklus til at udelukke produkter fra varedisponering og beregning af styklisteniveau, under [Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering](../../pim/tasks/exclude-products-master-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

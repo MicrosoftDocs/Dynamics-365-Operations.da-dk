@@ -46,3 +46,6 @@ Denne procedure gennemgår definition af fordelskundebelønningspoint. Du bør d
 10. Vælg en indstilling i feltet Enhed for udløbstidspunkt.
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

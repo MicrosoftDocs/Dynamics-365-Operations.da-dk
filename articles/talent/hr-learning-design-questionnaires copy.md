@@ -246,3 +246,6 @@ Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Sva
 
 [Se og evaluere resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

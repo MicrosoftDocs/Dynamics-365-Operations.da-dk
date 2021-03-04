@@ -90,3 +90,6 @@ Metoden med 200 % saldoafskrivning dividerer de 200 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

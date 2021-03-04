@@ -87,3 +87,6 @@ Rettelsen til denne fejl afhænger af årsagen til fejlen:
 
 + Hvis tilknytningen har afhængige tilknytninger, skal du sørge for at aktivere de afhængige tilknytninger for denne tabeltilknytning.
 + Tilknytningen mangler muligvis kilde- eller destinationsfelter. Hvis der mangler et felt i Finance and Operations-appen, skal du følge trinnene i afsnittet [Problemer med manglende enhedsfelter i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Hvis der mangler et felt i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så felterne automatisk udfyldes i tilknytningen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

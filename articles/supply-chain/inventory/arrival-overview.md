@@ -121,3 +121,6 @@ Når alle varer er registreret, kan lagerchefen eller indkøbschefen opdaterer v
 
 ## <a name="summary"></a>Resume
 Siden **Modtagelsesoversigt** kan hjælpe lagerchefen og lagermedarbejdere med at få et overblik over det forventede arbejde, der skal udføres som en del af en indgående proces. Siden kan også bruges til at starte varemodtagelsesprocessen for at sikre, at varerne spores ved den første registrering på lagerstedet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

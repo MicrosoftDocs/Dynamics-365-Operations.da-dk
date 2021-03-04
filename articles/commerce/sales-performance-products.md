@@ -44,3 +44,6 @@ Til denne vurdering kan du bruge den færdiglavede rapport **Vigtigste produkter
 - Arbejdsområdet **Butiksstyring** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butiksstyring** &gt; **Rapporter** &gt; **Rapport over vigtigste produkter**
 - **Kategori og produktstyring**-arbejdsområdet &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
 - Sektionen **Forespørgsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over vigtige produkter**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

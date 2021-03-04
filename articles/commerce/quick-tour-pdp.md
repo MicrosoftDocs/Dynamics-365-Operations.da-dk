@@ -88,3 +88,6 @@ Hvis marketingindhold er entydigt for et bestemt produkt, kan der føjes et mark
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
 
 [Forbedre en side med produktdetaljer](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

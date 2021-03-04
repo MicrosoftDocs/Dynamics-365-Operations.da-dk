@@ -55,3 +55,6 @@ Denne procedure opretter variantregler, der kan bruges til dimensionsbaseret kon
     * Vælg det varenummer, der skal vælges eller fravælges afhængigt af den valgte metode.  
 18. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

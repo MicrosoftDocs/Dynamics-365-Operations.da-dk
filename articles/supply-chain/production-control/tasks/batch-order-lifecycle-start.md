@@ -92,3 +92,6 @@ Forudsætningerne for at køre proceduren med et andet datasæt er et frigivet p
 12. Luk siden.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

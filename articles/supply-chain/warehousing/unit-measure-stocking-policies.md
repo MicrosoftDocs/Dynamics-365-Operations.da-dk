@@ -50,3 +50,6 @@ Som en del af oprettelsen af frigivne produkter skal du vælge standardenhederne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

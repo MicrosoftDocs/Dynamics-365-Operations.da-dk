@@ -105,3 +105,6 @@ Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den *
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Andre (forretningsdomænespecifikke) funktioner](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Hvis du vil føje et ordrebekræftelsesmodul til en ny side og angive de påkræ
 [Modul med afhentningsoplysninger](pickup-info-module.md)
 
 [Gavekortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

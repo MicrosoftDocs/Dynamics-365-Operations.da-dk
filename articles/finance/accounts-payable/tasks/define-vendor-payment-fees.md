@@ -59,3 +59,6 @@ Konfigurer kreditorbetalingsgebyrer. Denne opgave bruger demofirmaet USMF.
     * Denne valuta er til gebyret. Betalingsvalutaen bruges til at definere, hvornår gebyrreglen bør pålignes vurderet ud fra betalingens valuta. Din bank kan for eksempel opkræve et gebyr, når der foretages en betaling i EUR, men alle andre betalinger pålignes ikke et gebyr.  
 18. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

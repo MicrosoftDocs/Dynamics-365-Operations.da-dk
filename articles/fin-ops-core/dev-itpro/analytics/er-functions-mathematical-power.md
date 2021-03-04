@@ -63,3 +63,6 @@ Den resulterende numeriske værdi.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Matematiske funktioner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

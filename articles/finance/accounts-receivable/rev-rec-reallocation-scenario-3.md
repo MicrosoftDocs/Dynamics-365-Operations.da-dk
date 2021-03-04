@@ -81,3 +81,6 @@ Salgsordren faktureres igen for den vare, der er tilføjet. Den samlede faktura,
 [![Siden Posteringer på bilag med den regnskabspost, der er bogført](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Da summen af omsætningen og salget er større end $319,50, bogføres differencen på $14,48. Dette beløb rydder saldoen fra kontoen til clearing for delfakturaomsætning. Den pågældende saldo blev opdateret bogføres i den nye regnskabspost, der blev bogført efter omfordelingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

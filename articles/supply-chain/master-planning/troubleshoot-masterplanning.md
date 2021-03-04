@@ -89,3 +89,6 @@ En måde at forbedre ydeevnen med det indbyggede varedisponeringsprogram på er 
 
 > [!NOTE]
 > Dette vil begrænse den periode for udfoldning, der udføres for denne behovsplan, til en enkelt dag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

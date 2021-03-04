@@ -47,3 +47,6 @@ Batchafviklingsjobbet udelader lukkede kartoteker. I et batchjob til afskrivning
 Grænsen for antallet af kartoteker anvendes, hvis der ikke findes identiske anlægs-id'er i samme kladde. Men hvis aktiv-id'et er det samme som det bogførte ID, kan antallet af kartoteker pr. kladde overskrides for at beholde aktiv-id'et i samme kladde.
 
 Der er f. eks. 5.001 anlægsaktiv-id'er, der knyttes tre kartoteker til hvert anlægsaktiv-ID, og hver enkelt anlægs model bogføres på samme posteringslag. Du kører afskrivning for tre på hinanden følgende måneder uden opsummering. Afskrivningskladden oprettes via et batchjob, og der oprettes syv kladder med 667 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID. Resultatet vil være 2.001 kartoteker. I tre måneder vil der derfor være 6.003 kladdelinjer til at vedligeholde samme anlægs-id'er i samme kladde. Der oprettes også én kladde med 332 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID. Inden for tre måneder vil der være 2.988 linjer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

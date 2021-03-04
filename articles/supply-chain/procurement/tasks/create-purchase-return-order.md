@@ -68,3 +68,6 @@ Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hj�
 4. Skriv en værdi i feltet **Produktkvittering**. Dette felt bruges til at angive en reference, der skal bruges som bilag for produktkvitteringskladden.  
 5. Klik på **OK**. Varerne er nu registreret som leveret på indkøbsreturordren, og der er oprettet en produktkvitteringskladde. Du kan bruge handlingen Produktkvittering til at gennemse de kladder, der er oprettet med indkøbsordren, og til at se, hvad der er modtaget eller returneret, og hvornår.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

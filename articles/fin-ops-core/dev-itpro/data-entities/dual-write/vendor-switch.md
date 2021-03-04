@@ -78,3 +78,6 @@ Følg disse trin for at oprette nye arbejdsgangsprocesser ved hjælp af arbejdsg
 4. Opret en ny arbejdsgangsproces for enheden **Kontaktperson**, og vælg skabelonen **Opdater kreditorer af typen Person i tabellen Kreditorer** for arbejdsgangsprocessen.
 5. Du kan konfigurere arbejdsprocesser som enten realtids- eller baggrundsarbejdsgange, afhængigt af dine krav. Hvis du vil konfigurere en arbejdsgang som en baggrundsarbejdsgang, skal du vælge **Konverter til en baggrundsarbejdsgang**.
 6. Aktiver de arbejdsgange, du har oprettet i tabellerne **Kontaktperson** og **Kreditor** for at påbegynde anvendelsen af enheden **Kontaktperson** til lagring af oplysninger til kreditorer af typen **Person**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

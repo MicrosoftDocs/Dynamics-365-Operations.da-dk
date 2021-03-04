@@ -197,3 +197,6 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 [Vis økonomiske rapporter](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance-blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

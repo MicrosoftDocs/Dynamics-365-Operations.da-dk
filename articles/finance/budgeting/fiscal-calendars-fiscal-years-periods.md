@@ -64,3 +64,6 @@ Du kan bruge siden Finanskalender til at få vist detaljer i regnskabskalenderen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Denne procedure viser, hvordan du opretter en ny stregkodedefinition, som dereft
 12. Klik på Gem.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

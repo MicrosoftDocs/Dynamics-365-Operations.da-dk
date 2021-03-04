@@ -67,3 +67,6 @@ Følgende billede viser et eksempel på en profil for onlinefunktionalitet.
 [Konfigurer en detailkanal](channel-setup-retail.md)
 
 [Konfigurere en callcenter-kanal](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

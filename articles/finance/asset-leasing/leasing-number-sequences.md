@@ -36,3 +36,6 @@ Dette emne forklarer, hvordan du opretter nummerserier til leasingaftale-id'er. 
 3. Vælg **Nummerserier** i sidelinjen.
 4. Vælg nummerserien for **Leasing-id**-referencen. Denne nummerserie vil blive brugt til at generere det entydige id for hver leasingaftale.
 5. Vælg nummerserien for **Proces-id**-referencen. Denne nummerserie vil blive brugt til at generere det entydige id for hver indeksværdireguleringsproces.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

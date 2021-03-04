@@ -56,3 +56,6 @@ LCS-opsætning er nu fuldført. I det næste trin skal du konfigurere [scenarier
 2. I LCS skal du gå til Supply Chain Management-miljødetaljerne.
 3. Rul til sektionen **Tilføjelsesprogrammer for miljø**.
 4. Vælg **Fjern** for tilføjelsesprogrammet IoT-viden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

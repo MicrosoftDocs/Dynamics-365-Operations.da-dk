@@ -153,3 +153,6 @@ Du kan få vist, om et frigivet produkt kan bruges som en komponent eller underk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

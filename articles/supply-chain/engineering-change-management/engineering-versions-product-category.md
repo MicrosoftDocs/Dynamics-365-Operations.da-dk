@@ -162,3 +162,6 @@ Der oprettes tekniske styklister og ruter ud fra den tekniske version, hvor de g
 For produkter, hvor du bruger produktdimensionen *version* (sammen med logistisk indflydelse på transaktionerne), føjes versionen også til styklisterne og ruterne. Denne funktionsmåde hjælper med at skelne mellem styklisterne og ruterne for fortløbende versioner uanset indstillingen af **Gennemtving gyldighed**.
 
 For produkter, hvor du ikke bruger produktdimensionen *version* (uden logistisk indflydelse på transaktionerne), føjes versionen ikke til styklisterne eller ruterne. Derfor vil der ikke være nogen forskel mellem styklisterne og ruterne i fortløbende versioner. I dette tilfælde anbefales det, at du angiver indstillingen **Gennemtving gyldighed** til *Ja*. På denne måde er du med til at forhindre, at tekniske versioner overlapper, og du kan også aktivere styklisten og ruten for en nyere version uden først at skulle deaktivere styklisten og ruten for den tidligere version. Hvis du angiver indstillingen **Gennemtving gyldighed** til *Ja* i dette tilfælde, skal du deaktivere styklisterne og ruterne i tidligere versioner manuelt, før du kan aktivere den seneste version.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

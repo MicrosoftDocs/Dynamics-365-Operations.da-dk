@@ -59,3 +59,6 @@ Denne fremgangsmåde viser, hvordan du opretter en kreditorkonto og tilføjer en
 7. Luk siden.
 8. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

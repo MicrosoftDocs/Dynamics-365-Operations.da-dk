@@ -116,3 +116,6 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

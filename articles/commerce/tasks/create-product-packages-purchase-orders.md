@@ -73,3 +73,6 @@ Denne procedure gennemgår oprettelse af en produktpakke og brugen af den i en i
 17. Klik på Opret.
 18. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

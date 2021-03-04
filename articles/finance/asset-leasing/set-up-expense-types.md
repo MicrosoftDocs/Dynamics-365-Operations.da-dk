@@ -59,3 +59,6 @@ Derefter skal du knytte konti til udgiftstyperne. Disse konti debiteres, når po
 7. I felterne skal du vælge hovedkontoen for finanskonto og hovedkonto for driftsleasingaftalen.
 
 Når du har gennemført disse trin, kan du tilføje udgifter via linjerne **Betalingsplan for udførelsesomkostninger** på siden **leasingaftaledetaljer** for den valgte leasingaftale. Du kan også tilføje udgifter, når du opretter en ny leasingaftale.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

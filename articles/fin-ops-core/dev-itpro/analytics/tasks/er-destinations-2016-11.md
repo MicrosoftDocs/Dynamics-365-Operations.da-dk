@@ -60,3 +60,6 @@ Det format, der bruges i dette eksempel, er ISO20022-kreditoverførsel, men du k
 21. Skriv en værdi i feltet Emne.
 22. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

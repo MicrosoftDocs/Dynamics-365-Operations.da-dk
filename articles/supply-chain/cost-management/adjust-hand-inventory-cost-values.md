@@ -44,3 +44,6 @@ Denne vare blev konfigureret med lagermodellen FIFO (First In, First Out), og la
 -   5. februar: en mængde på 1 til kr. 13,00
 
 Hvis du vil angive kostprisen for disse to varer til kr. 15,00, skal du bruge indstillingen Regulering af disponibel lagerbeholdning til at regulere de åbne disponible lagerantal med virkning fra den sidste lagerlukningsperiode. **Bemærk!** Bogføringsdatoen for reguleringen af den disponible lagerbeholdning vil være datoen for den sidste lagerlukning. Denne dato kan ikke redigeres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

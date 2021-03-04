@@ -69,3 +69,6 @@ Udfør følgende trin for at aktivere registrering af lokationsbaserede butikker
 [Konfigurere flere B2C-lejere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

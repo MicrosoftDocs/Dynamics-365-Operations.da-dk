@@ -137,3 +137,6 @@ Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

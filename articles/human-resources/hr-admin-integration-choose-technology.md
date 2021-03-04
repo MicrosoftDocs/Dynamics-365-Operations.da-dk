@@ -144,3 +144,6 @@ Med så mange forskellige integrationsteknologier, der er til rådighed, kan bes
 <sup>2</sup>Microsoft investerer meget for at øge datadækningen af Common Data Service-enheder. Vi anbefaler, at du bruger Common Data Service, når dækningen er tilgængelig. I øjeblikket er Common Data Service-datadækningen lav sammenlignet med DMF- og OData-aktiverede enheder.
 
 <sup>3</sup>SQL-database har programmeringsmæssig adgang.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

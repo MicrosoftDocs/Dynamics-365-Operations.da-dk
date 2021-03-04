@@ -57,3 +57,6 @@ Programdata bruges til at udfylde rapporterne i indholdspakken til organisatoris
 | Training\_Position        | Stilling, titel og tilsvarende fuld tid (fuldtidsansat)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Fornavn, efternavn og fulde navn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel og anciennitetsdato                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

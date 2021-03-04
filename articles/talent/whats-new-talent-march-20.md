@@ -86,3 +86,6 @@ Med Platform update 24 til Finance and Operations kan brugerne oprette påmindel
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. For at undgå at forstyrre indtastningen af data åbner dubletformularen ikke automatisk.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

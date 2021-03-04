@@ -67,3 +67,6 @@ Når tilbagevendende fakturaer bogføres, kan du udskrive fakturaer fra listesid
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

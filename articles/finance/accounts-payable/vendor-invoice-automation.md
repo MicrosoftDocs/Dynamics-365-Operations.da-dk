@@ -232,3 +232,6 @@ Følgende roller giver skrivebeskyttet adgang til fremviseren for disse handling
 + **Kreditorassistent** og **Kreditorchef** – Opgaven Vedligehold kreditorfakturaer er tildelt disse roller.
 
 Som standard, hvis brugerrollen giver redigeringsrettigheder på enhver side, skal brugeren også have redigeringsrettigheder til fremviseren af vedhæftede filer for fremhævnings-, blokerings- og anmærkningshandlinger. Hvis der er situationer, hvor en bestemt rolle skal have redigeringsrettigheder på siden, men ikke i fremviseren, kan der dog bruges de nødvendige rettigheder fra den foregående liste for at opfylde behovet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

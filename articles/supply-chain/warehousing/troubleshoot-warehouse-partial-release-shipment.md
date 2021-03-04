@@ -42,3 +42,6 @@ En salgsordre har f.eks. to varer: én til levering og én til afhentning. Både
 ### <a name="issue-resolution"></a>Problemløsning
 
 Frigivelsesstatussen gælder kun for de ordrelinjer, hvor varerne er aktiveret til lokationsstyring. Derfor forbliver frigivelsesstatus *Delvist frigivet* i dette scenario. Microsoft har evalueret dette problem og har fastslået, at det er en funktionsbegrænsning. En udvidelse kan tilføjes som en del af følgesedlen og faktureringsprocessen for at opdatere frigivelsesstatussen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

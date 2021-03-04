@@ -41,3 +41,6 @@ Brugerdefinerede felter til faktureringskoder gør det muligt at indsamle værdi
 7. Åbn referencesektionen Faktureringskode. Når du tildeler dette brugerdefinerede felt til en faktureringskode, vises den faktureringskoden her.
 8. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

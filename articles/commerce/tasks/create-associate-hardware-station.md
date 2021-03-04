@@ -58,3 +58,6 @@ Denne procedure gennemgår oprettelse af en ny hardwarestation. En ny hardwarepr
 23. Indtast en værdi i feltet Terminal-id for elektronisk pengeoverførsel.
 24. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

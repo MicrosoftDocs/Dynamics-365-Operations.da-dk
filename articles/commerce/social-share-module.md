@@ -82,3 +82,6 @@ Følg disse trin for at tilføje et modul til social deling i et købefeltmodul.
 [Boksmodul til køb](add-buy-box.md)
 
 [Cookieoverholdelse](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

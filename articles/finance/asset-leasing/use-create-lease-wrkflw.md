@@ -45,3 +45,6 @@ Før du bruger denne procedure, skal du kontrollere, at der er oprettet mindst e
 
 8. Hvis du vil standse en arbejdsproces, skal du vælge **Arbejdsproceshistorik** og **Tilbagekald**. I dialogboksen skal du angive en kommentar og derefter vælge **OK**.
 9. Hvis du vil deaktivere en arbejdsgang eller aktivere en arbejdsgang, der tidligere er oprettet, skal du gå til **Aktivleasing \> Opsætning \> Leasingarbejdsproces**. Derefter skal du vælge **Leasingarbejdsproces** og **Arbejdsproces \> Versioner**. Hvis du vil gøre en arbejdsproces inaktiv, skal du vælge den aktive leasingaftale i dialogboksen og derefter vælge **Gør inaktiv**. Hvis du vil aktivere en eksisterende arbejdsproces, skal du vælge arbejdsprocessen og derefter vælge **Gør aktiv**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Når du kører det konfigurerede ER-format, vil tekstværdien i feltet **EtiketT
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

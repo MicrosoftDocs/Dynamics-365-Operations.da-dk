@@ -74,3 +74,6 @@ Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette e
 2. Klik på Vis udligningstræ.
     * Bemærk, at der oprettes en kanban med den samme mængde som salgslinjen. Du kan også se de materialeproblemer, der er nødvendige for at producere L0050. Dette er det sidste trin i denne procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

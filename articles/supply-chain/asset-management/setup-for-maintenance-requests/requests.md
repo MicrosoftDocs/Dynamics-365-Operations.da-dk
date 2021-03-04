@@ -42,3 +42,6 @@ Du kan konfigurere forskellige typer anmodninger, der skal bruges i din virksomh
 I følgende illustration vises et eksempel på listesiden **Alle vedligeholdelsesanmodninger**.
 
 ![Listesiden Alle vedligeholdelsesanmodninger](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

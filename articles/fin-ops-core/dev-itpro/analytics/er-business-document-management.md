@@ -423,3 +423,6 @@ Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure 
 
 [Konfigurer Elektronisk rapportering (ER) for at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

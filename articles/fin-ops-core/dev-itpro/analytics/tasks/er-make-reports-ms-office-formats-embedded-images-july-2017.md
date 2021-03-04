@@ -90,3 +90,6 @@ For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren 
  30. Vælg Ja i feltet Tillad oprettelse af adviseringer for inaktive bankkonti:  
  31. Klik på Gem.  
  32. Luk siden.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

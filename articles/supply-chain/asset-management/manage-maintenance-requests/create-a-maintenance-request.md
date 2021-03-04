@@ -74,3 +74,6 @@ I detaljevisningen kan du opdatere forskellige oplysninger. Her er nogle eksempl
 
 > [!NOTE]
 > Hvis du vælger et aktiv, når du opretter en vedligeholdelsesanmodning, kan du føje én fejl til aktivet. Når vedligeholdelsesanmodningen er blevet oprettet, kan du tilføje flere fejl efter behov. Hvis du vil tilføje fejl, skal du vælge **Aktivfejl** på siden **Alle vedligeholdelsesanmodninger**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

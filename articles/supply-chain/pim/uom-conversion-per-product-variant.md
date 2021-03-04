@@ -107,3 +107,6 @@ Hvis du vil eksportere enhedsomregninger til Excel, skal du på siden **Enhedsom
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Administrere måleenhed](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

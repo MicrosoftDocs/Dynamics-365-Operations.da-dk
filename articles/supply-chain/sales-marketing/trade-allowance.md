@@ -200,3 +200,6 @@ For at få en mere analytisk oversigt over de forskellige performancemålinger f
 
 For at få en mere analytisk oversigt over de forskellige performancemålinger for kampagnen kan du bruge analysevisningen. Du kan gå til analysevisningen ved at klikke på **Salg og marketing** \> **Handelsrabatter** \> **Aftaler om handelsrabat**. Klik på fanen **Analyse** i handlingsruden. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

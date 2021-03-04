@@ -37,3 +37,6 @@ Denne fremgangsmåde viser, hvordan du konfigurerer de indstillinger for en buti
 4. Vælg en indstilling i feltet Spørg efter sælger.
 5. Vælg Ja i feltet Kræv sælger.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

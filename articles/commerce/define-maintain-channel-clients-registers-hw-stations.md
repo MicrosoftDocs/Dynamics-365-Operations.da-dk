@@ -205,3 +205,6 @@ Yderligere oplysninger i forbindelse med aktivering omfatter den medarbejder, de
 ### <a name="client-data-synchronization"></a>Synkronisering af klientdata
 
 Alle ændringer af POS-klienten med undtagelse af ændringer af enhedens aktiveringsstatus skal synkroniseres, for at kanaldatabasen kan træde i kraft. For at synkronisere ændringer med kanaldatabasen skal du gå til **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan** og køre den krævede distributionsplan. For klientændringer skal du køre distributionsplanerne **Kasseapparater** og **Kanalkonfiguration**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

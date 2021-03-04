@@ -117,3 +117,6 @@ De to illustrationer nedenfor viser et planlægningsjob i dialogboksen **Planlæ
 - Du kan oprette et batchjob i oversigtspanelet **Kør i baggrunden** for at planlægge runder med jævne mellemrum.  
 - Hvis en runde er medtaget i flere arbejdsordrepuljer (referer til [Arbejdsordrepuljer](../work-orders/work-order-pools.md)), vises der én post for hver pulje i **Åbne vedligeholdelsestidsplanspuljer**. Dette gøres for at optimere filtreringsindstillingerne for arbejdsordrepuljer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

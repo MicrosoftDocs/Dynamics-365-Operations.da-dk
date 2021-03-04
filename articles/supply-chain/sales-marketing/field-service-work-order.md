@@ -273,3 +273,6 @@ Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
 [![Skabelontilknytning i dataintegration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

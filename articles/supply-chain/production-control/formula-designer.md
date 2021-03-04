@@ -121,3 +121,6 @@ Klik på **Opsætning** for at tilpasse de oplysninger, der vises i formeldesign
 |     Stykliste     | Brug afkrydsningsfelterne til at vælge de kriterier, der vises i træstrukturen. De valgte kriterier vises nederst under begge faner i formeldesigneren. |
 |    Rute    |                                           Brug afkrydsningsfelterne til at vælge de kriterier, der vises for ruterne.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

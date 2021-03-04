@@ -56,3 +56,6 @@ Dette emne drejer sig om planlægning af en produktionsordre med grovplanlægnin
 6. Vælg **Produktionsordre** i handlingsruden.
 7. Vælg **Alle job**. Bemærk, at der baseret på den aktive rute oprettes fem jo med finplanlægning.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

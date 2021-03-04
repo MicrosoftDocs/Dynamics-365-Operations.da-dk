@@ -41,3 +41,6 @@ Momsmyndighederne er enheder, som opkrævet moms skal være indrapporteret og be
 10. Angiv et tal i feltet Afrunding.
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

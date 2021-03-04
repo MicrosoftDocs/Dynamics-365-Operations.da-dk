@@ -72,3 +72,6 @@ Et leveringsadressemodul kan kun føjes til et betalignsmodul. Du kan finde fler
 [Ordredetaljer-modul](order-confirmation-module.md)
 
 [Gavekortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

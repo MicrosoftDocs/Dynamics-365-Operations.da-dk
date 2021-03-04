@@ -56,3 +56,6 @@ Det er den første af seks opgaver, der viser processen til oprettelse af e-fakt
 17. Klik på Importer.
 18. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgan
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

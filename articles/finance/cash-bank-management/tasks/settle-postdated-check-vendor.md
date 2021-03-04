@@ -52,3 +52,6 @@ Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
 10. Klik på Bilag.
 11. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

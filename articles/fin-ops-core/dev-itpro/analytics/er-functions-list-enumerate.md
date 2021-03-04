@@ -72,3 +72,6 @@ I følgende illustration vises resultatet, når det designede format køres.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

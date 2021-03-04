@@ -78,3 +78,6 @@ Følgende tabel viser de visualiseringer, der er tilgængelig på hver rapportsi
 |    Kreditor til debitor-saldo     |                                                                                                                   <ul><li>Kreditor til debitor-saldo</li><li>Kreditor til debitor-saldo pr. firma</li><li>Detaljer om kreditor til debitor-saldo</li></ul>                                                                                                                    |
 |    Fakturaer med betaling på hold     |                                                                                         <ul><li>Fakturaer med betaling på hold</li><li>Detaljer om fakturaer med betaling på hold</li><li>Fakturaer med betaling på hold pr. firma</li><li>Fakturaer med betaling på hold pr. kreditorgruppe</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Denne opgaveguide fører gennem oprettelse og anskaffelse af et anlægsaktiv med
 17. Klik op linket i den valgte række på listen.
 18. Klik på **Bogfør**. Anlægsaktivet oprettes og anskaffes, når fakturaen bogføres.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

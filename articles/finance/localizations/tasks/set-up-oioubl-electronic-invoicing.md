@@ -78,3 +78,6 @@ Før du kan udføre denne opgave, skal du importere elektroniske rapporteringsko
     * Skriv f.eks. EA.  
 10. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

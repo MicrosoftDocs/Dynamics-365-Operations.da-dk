@@ -46,3 +46,6 @@ Denne procedure fører gennem oprettelse af poster for medarbejderorlov. Du kan 
     * For eksempel: Orlov på grund af adoption  
 12. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

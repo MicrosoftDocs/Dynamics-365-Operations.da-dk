@@ -60,3 +60,6 @@ Når du bruger publiceringsgrupper sammen med eksperimenter, er der nogle vigtig
 
 ## <a name="next-step"></a>Næste trin
 [Køre og overvåge et eksperiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

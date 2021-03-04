@@ -142,3 +142,6 @@ Hvis du vil føje et containermodul til en ny side og angive de påkrævede egen
 [Overskriftsmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

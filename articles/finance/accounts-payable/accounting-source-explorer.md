@@ -51,3 +51,6 @@ For disse dokumenter kan du også navigere til det faktiske kildedokument fra Sp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

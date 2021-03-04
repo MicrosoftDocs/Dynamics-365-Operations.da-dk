@@ -53,3 +53,6 @@ I følgende illustration vises den grundlæggende arkitektur af opgavestyring i 
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

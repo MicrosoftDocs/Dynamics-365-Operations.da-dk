@@ -54,3 +54,6 @@ Anlægsaktivet kan nu afskrives med standardafskrivningsfunktionen i anlægsakti
 
 > [!NOTE]
 > Hvis du knytter et anlægsaktiv til en leasingaftale, deaktiveres knapperne til **Afskrivning af aktiv** og **Værdiforringelse af leasingaftale**. Du kan se anlægsaktivafskrivninger og leasingaftalens værdiforringelsestransaktioner fra anlægsaktiver. Knappen **Aaktivtransaktioner**, der åbner en forespørgselsform, deaktiveres også. Du kan også åbne formularen **Aktivtransaktioner** i anlægsaktiver.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

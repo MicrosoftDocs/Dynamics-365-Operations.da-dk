@@ -57,3 +57,6 @@ Denne opgave opretter en bankfacilitetsaftale til behandling af garantien. Denne
 5. Klik på Gem.
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

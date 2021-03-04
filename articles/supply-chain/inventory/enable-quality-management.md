@@ -504,3 +504,6 @@ Du skal definere en kvalitetstilknytning for hver afvigelse i en forretningsproc
 [Håndtering af uoverensstemmelse](enable-nonconformance-management.md)
 
 [Kvalitetsstyring for lagerstedsprocesser.](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

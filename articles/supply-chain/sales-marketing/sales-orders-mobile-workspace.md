@@ -142,3 +142,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 4.  Vælg kunden.
 5.  Vælg **Kontaktoplysninger** eller **Salgsordrer**. Hvis du vælger **Salgsordrer**, vises der en liste over salgsordrer for kunden.
 6.  Vælg **Salgsordre**. Du kan nu få vist oplysninger om salgsordrelinjer, oplysninger om forsendelser, kundekontaktoplysninger og kontaktoplysninger for ordretageren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

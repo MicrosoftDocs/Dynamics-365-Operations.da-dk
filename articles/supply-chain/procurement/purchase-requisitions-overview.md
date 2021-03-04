@@ -202,3 +202,6 @@ Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

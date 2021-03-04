@@ -256,3 +256,6 @@ Her er nogle ting, du bør være opmærksom på, når du bruger DOM (fordelt ord
 - DOM (fordelt ordrestyring) ser i øjeblikket kun på ordrer, der er oprettet ud fra Commerce-kanaler. Salgsordrer identificeres som detailsalgsordrer, når indstillingen **Commerce-salg** er angivet til **Ja**.
 - Microsoft har ikke testet DOM (fordelt ordrestyring) med funktioner til avanceret lokationsstyring. Kunder og partnere skal være omhyggelige med at afgøre, om DOM (fordelt ordrestyring) er kompatibel med de funktioner og processer for avanceret lokationsstyring, der er relevante for dem.
 - DOM (fordelt ordrestyring) er kun tilgængelig i sky-versionen af Commerce. Funktionen understøttes ikke i lokale installationer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

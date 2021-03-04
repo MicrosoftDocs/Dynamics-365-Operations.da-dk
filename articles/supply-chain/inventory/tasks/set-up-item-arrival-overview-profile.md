@@ -54,3 +54,6 @@ Dette emne fokuserer på oprettelse af en modtagelsesoversigtsprofil. Profilen f
 17. Vælg **Gem**.
 18. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

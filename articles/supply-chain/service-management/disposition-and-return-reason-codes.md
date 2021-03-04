@@ -54,3 +54,6 @@ Tildel en dispositionskode, når varen er modtaget eller under den fysiske inspe
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

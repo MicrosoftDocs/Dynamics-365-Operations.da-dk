@@ -110,3 +110,6 @@ Du kan finde flere oplysninger under [Kredit og inkasso i debitorparametre](coll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

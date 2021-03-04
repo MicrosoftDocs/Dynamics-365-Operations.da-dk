@@ -67,3 +67,6 @@ For implementeringen af Lean Manufacturing skal du vælge et produktionsflow og 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Parameteren **Antal** angiver, om hele antallet skal frigives, eller om det fysi
 -   Hvis du vil angive parametrene **Antal** og **Tillad frigivelse af delvis frigivne ordrer** for flytteordrer, skal du klikke på **Lokationsstyring** \> **Frigiv til lagersted** \> **Frigiv flytteordrer automatisk**.
 
 -   Hvis du vil angive parametrene **Antal** og **Tillad frigivelse af delvis frigivne ordrer** for salgsordrer, skal du klikke på **Lokationsstyring** \> **Frigiv til lagersted** \> **Frigiv salgsordrer automatisk**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

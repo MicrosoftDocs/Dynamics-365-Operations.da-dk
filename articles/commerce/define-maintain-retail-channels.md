@@ -89,3 +89,6 @@ Commerce bruger organisationshierarkier til at strukturere kanaler. Organisation
 > [!NOTE]
 > Hvis du vil bruge funktionaliteten Commerce Sales, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af forskellige valideringer, som er baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

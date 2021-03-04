@@ -83,3 +83,6 @@ Når opsætningsdataene er tilgængelige, er du klar til at oprette et aktiv.
 1. På siden **alle arbejdssteder** skal du sikre dig, at arbejdsstedet, hvor aktivet skal oprettes automatisk, bruger den arbejdsstedstype, som du har oprettet til dette formål.
 2. Markér alle arbejdssteder på listen.
 3. Vælg **Opdater arbejdsstedstilstand**, og vælg dernæst den livscyklustilstand, du har oprettet til dette formål. Et aktiv installeres nu automatisk på arbejdsstedet. Dette aktiv får samme navn som arbejdsstedet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

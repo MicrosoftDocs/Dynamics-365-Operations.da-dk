@@ -55,3 +55,6 @@ Abonnementets basispris eller indeks er nu opdateret med den angivne værdi.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

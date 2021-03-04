@@ -45,3 +45,6 @@ I denne artikel kan du se, hvordan du kan konfigurere typer af personlige kontak
    | **Alder** | Den maksimale alder for en berettiget personlige kontaktperson for frynsegodeplanen. Dette felt er kun aktivt, hvis du vælger en relation. Denne alder sammenlignes med den beregnede alder for den personlige kontakt. Beregnet alder er: (dækningsdato – personlig kontakts fødselsdato/365). Dette tal er altid et heltal. |
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

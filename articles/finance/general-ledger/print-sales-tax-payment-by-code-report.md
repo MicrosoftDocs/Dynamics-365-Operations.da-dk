@@ -48,3 +48,6 @@ I arbejdsområdet **Funktionsstyring** skal du aktivere følgende funktion: **Ge
 I følgende illustration vises et eksempel på den rapport, der genereres. Rapporten viser, at rapporteringskode **101** har valutaen **EUR**, hvis feltet **Momsvaluta** er angivet til **EUR** for den momskode, som rapporteringskoden er tildelt.
 
 ![Eksempel på rapporten Momsbetaling efter kode](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

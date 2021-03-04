@@ -59,3 +59,6 @@ På siden **Planlagt ordre** under fanen **Forsinkelser** forefindes den **Ønsk
 --------
 
 [Disponeringsindstillinger](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

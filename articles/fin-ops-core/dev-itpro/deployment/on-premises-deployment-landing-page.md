@@ -72,3 +72,6 @@ Du kan installere Dynamics 365 Finance + Operations (i det lokale miljø). Når 
 - [Fjernede eller udfasede funktioner til Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Livscykluspolitik for software og lokale versioner](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

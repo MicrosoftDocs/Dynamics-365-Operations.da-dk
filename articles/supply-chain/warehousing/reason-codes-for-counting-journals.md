@@ -144,3 +144,6 @@ Følgende felter føjes til mobilenhedens menupunkt, når **Regulering ind** ell
 - Standardkode for optællingsårsag
 - Vis optællingsårsagskode
 - Rediger optællingsårsagskode
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Hvis fakturaen vil overskride grænsen for kontantstyring, og brugeren ikke har 
 - En bruger, der har tilsidesættende rettigheder, sender fakturaen igen
 - Fakturaen er ændret, så der bruges en anden kassekonto
 - Saldoen for kontantstyring er ændret
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Forlængelsen af tidsfristen er en undtagelse fra normen og tages i betragtning 
 [Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](cpe-bopis.md)
 
 [Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

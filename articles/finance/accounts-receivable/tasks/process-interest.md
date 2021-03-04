@@ -68,3 +68,6 @@ Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rentenotaer.
 5. Klik på **OK**.
 6. Vælg "Bogført" i feltet **Status**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

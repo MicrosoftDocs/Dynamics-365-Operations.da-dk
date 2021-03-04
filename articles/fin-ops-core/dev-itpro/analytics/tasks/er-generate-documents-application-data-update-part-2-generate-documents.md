@@ -58,3 +58,6 @@ Før du begynder, skal du ændre landekonteksten for DEMF firmaet fra DEU (Tyskl
 10. Luk siden.
 11. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

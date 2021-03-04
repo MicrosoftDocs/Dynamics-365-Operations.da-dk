@@ -47,3 +47,6 @@ Hvis du vil bruge automatisk afstemning, skal du angive tidsplanen for afstemnin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

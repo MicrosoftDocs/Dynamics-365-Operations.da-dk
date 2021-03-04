@@ -88,3 +88,6 @@ Når du har en rapport, der ikke svarer til det, du ville forvente i D365, kan d
 2.  Eksporter rapporten til Excel
 
 Du skal nu kunne kopiere data fra FR Excel-rapporten til rapporten D365 Råbalance og sammenligne kolonnerne med "Ultimosaldo".
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

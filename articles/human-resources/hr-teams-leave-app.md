@@ -229,3 +229,6 @@ Hvis du vil begrænse adgangen til Human Resources-appen i Microsoft Teams for d
 [Downloade og installere Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams Hjælp-center](https://support.office.com/teams)</br>
 [Human Resources-app i Teams](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

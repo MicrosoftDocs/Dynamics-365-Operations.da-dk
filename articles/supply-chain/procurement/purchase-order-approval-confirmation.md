@@ -99,3 +99,6 @@ Hvis en indkøbsordre er under ændringsstyring, skal enhver ændring, f.eks. an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

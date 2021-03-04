@@ -83,3 +83,6 @@ Opgaven fokuserer på den konfiguration, der er nødvendig for at oprette en kan
     * Bemærk den kanban, der er oprettet for at levere M0001 til den forkalkulerede produktionsordre.  
     * Dette er det sidste trin!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

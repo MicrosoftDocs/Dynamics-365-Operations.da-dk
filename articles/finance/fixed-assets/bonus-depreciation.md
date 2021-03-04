@@ -65,3 +65,6 @@ Straksafskrivningen angives som enten en procentsats eller et fast beløb. Når 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

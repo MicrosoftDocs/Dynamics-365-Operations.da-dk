@@ -76,3 +76,6 @@ Da omkostningselementer repræsenterer det laveste niveau af oplysninger om omko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

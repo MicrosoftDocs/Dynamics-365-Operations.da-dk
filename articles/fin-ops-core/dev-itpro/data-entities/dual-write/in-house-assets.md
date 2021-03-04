@@ -76,3 +76,6 @@ Interne aktiver indeholder en samling af centrale tabeltilknytninger, der arbejd
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

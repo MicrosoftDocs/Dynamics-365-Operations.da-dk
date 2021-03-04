@@ -250,3 +250,6 @@ Hvis kladdeposteringen for reskontroer er forkert, når du gennemser den før jo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

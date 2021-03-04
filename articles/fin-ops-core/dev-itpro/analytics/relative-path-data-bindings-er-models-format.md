@@ -57,3 +57,6 @@ Denne funktion bryder ikke bagud-kompatibiliteten for ER-strukturen. Alle tidlig
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [ER-formelsprog](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

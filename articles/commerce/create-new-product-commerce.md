@@ -115,3 +115,6 @@ Følgende billede viser et eksempel på konfiguration af et frigivet produkt.
 [Oprette juridiske enheder](channels-legal-entities.md)
 
 [Oprette en variantgruppe](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -211,3 +211,6 @@ Hvis der er rækker i debitorenheden med værdier i felterne **ContactPersonID**
     Den første synkronisering af rækkerne er nu fuldført.
 
 8. Aktivér ændringssporing igen i Finance and Operations-appen for **Debitorer V3**-enheden.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

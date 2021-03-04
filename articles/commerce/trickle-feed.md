@@ -54,3 +54,6 @@ Med den sivende feedbaseret ordreoprettelse der blev introduceret i Retail versi
 > Menupunkterne **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn opgørelser i batch** og **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør opgørelser i batch** fjernes med den nye funktion.
 
 Du kan også oprette forskellige typer af transaktions- og regnskabsopgørelser manuelt. Gå til **Retail og Commerce > Kanaler > Butikker**, og klik på **Opgørelser**. Klik på **Ny**, og vælg derefter den type opgørelse, du vil oprette. Felter på siden **Opgørelser** og handlinger under **Opgørelsesgruppe** på siden, viser relevante data og handlinger, der er baseret på den valgte opgørelsestype.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

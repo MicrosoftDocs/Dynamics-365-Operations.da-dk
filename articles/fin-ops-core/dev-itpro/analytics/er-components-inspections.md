@@ -813,3 +813,6 @@ Hvis du vil vide, hvordan formatstrukturen kan synkroniseres med en ER-skabelon 
 [Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 
 [Oversigt over styring af forretningsdokumenter](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

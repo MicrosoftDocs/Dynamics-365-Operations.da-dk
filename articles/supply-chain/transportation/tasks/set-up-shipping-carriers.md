@@ -73,3 +73,6 @@ I dette emne beskrives, hvordan du kan konfigurere en fragtmand og definere deta
 9. Vælg en indstilling på rullelisten i feltet **Program til transittid**.
 10. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

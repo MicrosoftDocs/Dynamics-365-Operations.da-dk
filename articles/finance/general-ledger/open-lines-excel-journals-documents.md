@@ -55,3 +55,6 @@ Hvis du vil føje økonomiske dimensioner til en skabelon, kræver det yderliger
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Denne procedure gennemgår oprettelse af et nyt produkt i Commerce-produkthierar
 8. Skriv en værdi i feltet Produktnummer.
 9. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

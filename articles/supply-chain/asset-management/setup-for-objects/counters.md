@@ -67,3 +67,6 @@ Når aktivtyper føjes til en tællertype i **Tællere**, føjes denne tæller a
 
 ![Figur 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

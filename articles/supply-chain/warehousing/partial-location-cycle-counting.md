@@ -62,3 +62,6 @@ I dette eksempel skal kun varenummer A0001 optælles på lagersted 61.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Cyklusoptælling](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

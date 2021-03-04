@@ -309,3 +309,6 @@ Aktivering af funktionen BR-00053 (NF-e-forbund) kan kræve, at der sendes begr�
 - [Oversigt over tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-service-overview.md)
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md)
 - [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -84,3 +84,6 @@ Du kan oprette varelinjer for aktiver manuelt.
 5. Hvis varen udløber, skal du angive en udløbsdato i feltet **Udløb**.
 6. Vælg varen i feltet **Varenummer**. Navnet indtastes automatisk i feltet **Produktnavn**.
 7. Angiv det forbrugte antal i feltet **Antal**. Feltet **Enhed** opdateres automatisk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

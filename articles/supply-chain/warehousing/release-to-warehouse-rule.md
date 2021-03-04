@@ -131,3 +131,6 @@ Dette scenarie viser, hvordan funktionen fungerer for lagersteder, der er angive
 
 > [!NOTE]
 > Det samme resultat forventes, når den anden linje er delvist reserveret. I dette tilfælde oprettes der arbejde for det reserverede linjeantal, men ikke for det ikke-reserverede antal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

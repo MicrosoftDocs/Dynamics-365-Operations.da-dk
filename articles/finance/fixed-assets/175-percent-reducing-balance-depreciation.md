@@ -88,3 +88,6 @@ Metoden med 175 % saldoafskrivning dividerer de 175 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

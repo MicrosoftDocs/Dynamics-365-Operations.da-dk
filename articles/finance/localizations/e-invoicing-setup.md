@@ -361,3 +361,6 @@ Følg nedenstående trin for at administrere livscyklussen for funktionen for ti
 
     > [!NOTE]
     > Når du vælger **Ja**, ændres statussen for konfigurationsversioner automatisk fra **Fuldført** til **Delt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ I Finance and Operations version 10.0.5 er funktionen Sikkerhedskopilager til ER
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

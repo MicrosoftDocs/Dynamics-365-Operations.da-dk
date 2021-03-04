@@ -80,3 +80,6 @@ Den øverste del af nedenstående illustration viser, hvordan grænsefladen ser 
 Som standard bliver grænsefladen til kørsel af produktionsudstyr automatisk logget af, hvis ingen bruger den i 12 timer. En bruger af Supply Chain Management skal derefter logge på igen. Du kan dog forlænge timeoutgrænsen til op til 90 dage.
 
 Hvis du vil forlænge grænsen for timeout, skal du logge på Supply Chain Management og gå til **Systemadministration \> Brugere \> Sessionsudvidelser**. Angiv den Supply Chain Management-brugerkonto, der bruges til at logge på enheden, og det antal timer, som sessionen skal være aktiv i.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

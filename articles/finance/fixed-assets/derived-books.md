@@ -48,3 +48,6 @@ Du kan finde flere oplysninger under [Bogfør med afledte bøger](post-derived-v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

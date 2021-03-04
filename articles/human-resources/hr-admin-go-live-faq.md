@@ -99,3 +99,6 @@ Hvis du vil rapportere en produktionsafbrydelse, skal du følge den proces, der 
  ## <a name="see-also"></a>Se også
 
  [Forberede til udgivelse](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

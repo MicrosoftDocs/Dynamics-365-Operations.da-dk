@@ -113,3 +113,6 @@ Følgende billede viser et eksempel på konfiguration af kunde.
 [Oversigt over kanaler](channels-overview.md)
 
 [Forudsætninger for konfiguration af kanal](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

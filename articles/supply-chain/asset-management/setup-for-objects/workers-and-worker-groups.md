@@ -64,3 +64,6 @@ Du kan også oprette vedligeholdelsesarbejdergrupper og knytte vedligeholdelsesa
 6. Hvis en ressourcegruppe skal relateres til den valgte vedligeholdelsesarbejdergruppe, skal du vælge **Kopiér fra ressourcegruppe**. Vælg den ressourcegruppe, du vil kopiere kalenderindstillinger fra, i feltet **Gruppe**. I feltet **Arbejdergruppe** skal du derefter vælge den arbejdergruppe, som ressourcegruppens kalenderindstillinger skal kopieres til. Dette trin er kun relevant, hvis du ønsker, at vedligeholdelsesarbejderne skal bruge den kalender, der er relateret til en ressource (arbejdscenter) under planlægningen af arbejdsordren.
 
     Feltet i oversigtspanelet **Detaljer** viser antallet af vedligeholdelsesarbejdere, som er blevet konfigureret for den valgte vedligeholdelsesarbejder.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

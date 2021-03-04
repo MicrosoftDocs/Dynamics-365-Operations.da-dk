@@ -37,3 +37,6 @@ Du kan bruge det nye **RAW XML**-formatelement til at designe ER-formater, der g
 > Vær opmærksom på, at strukturen ikke styrer, om XML-indholdet, der er placeret i det genererede dokument ved hjælp af **RAW XML**-formatelementet, er korrekt.
 
 Du kan finde flere oplysninger om denne funktion ved at afspiller opgaveguiderne **ER Bruge ubehandlede XML-data til at generere XML-rapporter (del 1: Designe datamodellen)** og **ER Bruge ubehandlede XML-data til at generere XML-rapporter (del 2: Designe og køre rapport)**, der er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde komponenter til it-servicer og -løsninger (10677)** og kan hentes fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Disse opgaveguider gennemgår, hvordan du konfigurerer et ER-format for at indsætte ubehandlede XML-data i genererede filer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

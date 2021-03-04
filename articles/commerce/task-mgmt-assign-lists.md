@@ -92,3 +92,6 @@ Hvis du vil følge spore status for opgavelister for alle opgaver, som er tildel
 [Oprette opgavelister og tilføje opgaver](task-mgmt-create-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

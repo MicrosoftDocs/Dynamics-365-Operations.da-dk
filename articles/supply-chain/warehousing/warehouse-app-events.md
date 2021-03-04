@@ -78,3 +78,6 @@ Sådan nulstiller du en mislykket hændelsesmeddelelse i lagerstedsappen:
 1. Fortsæt med at arbejde, indtil alle relevante meddelelser er nulstillet.
 
 Du kan også fjerne en **Mislykket** hændelsesmeddelelse ved hjælp af indstillingen **Slet** på værktøjslinjen **Hændelsesmeddelelser i lagerstedsapp**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

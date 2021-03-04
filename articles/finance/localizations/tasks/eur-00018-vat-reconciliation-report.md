@@ -41,3 +41,6 @@ Denne fremgangsmåde viser, hvordan du kan oprette rapporten over momsafstemning
 6. Vælg Ja i feltet Vis detaljer.
 7. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

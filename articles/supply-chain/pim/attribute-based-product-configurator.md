@@ -141,3 +141,6 @@ Det sidste trin er at angive attributbaserede salgspriser for produktmodelversio
 1. Åbn fanen **Model** i handlingsruden, og vælg **Versioner** i gruppen **Oplysninger om produktmodel**.
 1. Siden **Versioner** åbnes. Sørg for, at **Prissætningsmetode** er angivet til **Attributbaseret**.
     ![Angive pissætningsmetoden til attributbaseret](media/prod-config-versions.png "Angive pissætningsmetoden til attributbaseret")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Emnerne i dette afsnit indeholder en oversigt over forretningsprocesserne for ku
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

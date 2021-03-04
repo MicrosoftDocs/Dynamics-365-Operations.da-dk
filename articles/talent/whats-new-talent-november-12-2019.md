@@ -60,3 +60,6 @@ Alle nye funktioner vises i forhåndsvisning i mindst 30 dage og typisk 30-60 da
 På visse tidspunkter er en integreret funktion som standard slået til og kan ikke slås fra (f.eks. arbejdsområdet **Administration af funktioner**).
  
 Når en funktion er generelt tilgængelig, kan den slås til eller fra i produktionsmiljøer. Arbejdsområdet **Administration af funktioner** angiver, hvornår en visningsfunktion skal være obligatorisk. Denne dato er som regel den 1. oktober eller 1. april for at tilpasse det med de halvårlige frigivelsesplaner. Du kan ikke slå de obligatoriske funktioner fra. Indtil den bliver obligatorisk, kan du slå en funktion til og fra i alle miljøer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

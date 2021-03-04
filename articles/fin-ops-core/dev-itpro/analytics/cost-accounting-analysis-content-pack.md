@@ -123,3 +123,6 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
 | Regnskabsår                       | Kalenderår                                                                                                        |
 | Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

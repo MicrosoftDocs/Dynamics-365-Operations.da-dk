@@ -38,3 +38,6 @@ Hvis du indstiller **Aktiveret** til **Ja**, oprettes der et eksempel på output
 
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

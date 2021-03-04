@@ -89,3 +89,6 @@ Hvis du vil deltage i fordelskundesprogrammet, kan der oprettes en marketingside
 [Sidehovedmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

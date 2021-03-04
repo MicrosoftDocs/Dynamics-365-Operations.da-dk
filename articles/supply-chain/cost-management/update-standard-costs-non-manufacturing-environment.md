@@ -52,3 +52,6 @@ Hvis du vil rette, justere eller opdatere standardomkostningerne for nye varer, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

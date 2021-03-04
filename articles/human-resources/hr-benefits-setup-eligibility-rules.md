@@ -176,3 +176,6 @@ Programmer er et sæt frynsegodeplaner, der deler et fælles sæt berettigelsesr
    | **Berettigelsesregler** | Vælg de berettigelsesregler, der skal anvendes på frynsegodeprogrammet. Du kan definere berettigelsesreglerne under fanen **Berettigelsesregler** på denne side. |
    
 4. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

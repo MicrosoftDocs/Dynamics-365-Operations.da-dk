@@ -82,3 +82,6 @@ Med forbedret sortering i Dynamics 365 Commerce kan kunderne sortere, søge efte
 [Oversigt over standardlandingsside for kategori og side for søgeresultater](category-search-page-overview.md)
 
 [Administrere SEO-metadata](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

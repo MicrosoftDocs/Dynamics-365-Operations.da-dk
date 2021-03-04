@@ -64,3 +64,6 @@ Du kan også kopiere debitorer ved hjælp af søgefunktionen til SE-nummer, der 
 
 1. Indstillingen **Kopiér debitor** vises. Denne indstilling er som standard angivet til **Nej**. Hvis du vil kopiere debitoren til den aktuelle juridiske enhed, skal du angive indstillingen til **Ja**. 
 2. Vælg **Vælg**. Den nye debitor oprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

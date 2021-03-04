@@ -71,3 +71,6 @@ Denne procedure bruger malingsprodukter som et eksempel til at vise, hvordan du 
 8. Brug Quick Filter til at filtrere på feltet Varenummer med værdien 'P300'.
     * Bemærk, at ordrerne nu sorteres efter prioritet for farve og størrelse, og ordreforslagene begynder på den tidligste ordredato og leveringsdato. Validere kolonnen Ordredato eller Startdato i faktaboksen Planoplysninger.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

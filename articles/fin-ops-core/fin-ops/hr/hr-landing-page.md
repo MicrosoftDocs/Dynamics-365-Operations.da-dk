@@ -93,3 +93,6 @@ Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der b
 - [Designe spørgeskemaer](../../../talent/design-questionnaires.md)
 - [Udsende og planlægge spørgeskemaer](../../../talent/distribute-questionnaires.md)
 - [Se og evaluere resultaterne af spørgeskemaer](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

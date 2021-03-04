@@ -65,3 +65,6 @@ Følgende procedure beskriver relationen mellem aktiverne, arbejdsordrerne, arbe
 
 7. Hvis du vil have vist en oversigt over de projekter, der er knyttet til et anlægsaktiv, skal du vælge **Anlægsaktiver** > **Anlægsaktiver** > **Anlægsaktiver** og derefter bruge feltet **Nummer på anlægsaktiv** til at vælge linket for anlægsaktivet for at åbne detaljevisningen. Udvid ruden **Relaterede oplysninger** i højre side af siden, og vælg oversigtspanelet **Tilknyttede projekter**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

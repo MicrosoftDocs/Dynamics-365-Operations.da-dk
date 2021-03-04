@@ -72,3 +72,6 @@ I denne artikel beskrives, hvordan du få vist resultater af berettigelsesproces
    | **Resultatstatus** | Det vil være Berettiget eller Ikke-berettiget. Resultatstatussen vil være Ikke-berettiget, hvis arbejderen ikke opfylder kriterierne for berettigelsesreglen, hvis arbejderen mangler påkrævede oplysninger som f.eks. en betalingsfrekvens eller fast løn, eller hvis der mangler oplysninger i frynsegodeplanen, der forhindrer, at arbejdere kan tilmeldes. |
    | **Resultatmeddelelse** | Angiver, hvorfor en arbejder ikke er berettiget til en frynsegodeplan, eller hvis berettigelsesreglen er overført. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

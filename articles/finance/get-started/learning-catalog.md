@@ -179,3 +179,6 @@ Find det rigtige onlinekursus, personlige workshops og begivenheder for din roll
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 Når du har gennemført disse trin, kan du udvide det disponible lager gennem dataenhederne efter lokation og disponibelt lager ved at tilføje de nye felter. På denne måde sikrer du dig, at de udvidede felter genkendes og medtages under dataoverflytning, som bruger de pågældende dataenheder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

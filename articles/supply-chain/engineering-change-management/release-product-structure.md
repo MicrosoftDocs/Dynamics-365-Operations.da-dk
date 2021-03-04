@@ -160,3 +160,6 @@ Denne situation gælder kun, når et produkt er valgt direkte til frigivelse. Pr
 Produkt X tildeles f.eks. produktejergruppen *Design skabe*. Produkt X er også en del af styklisten for produkt Y, som er knyttet til produktejergruppen *Design højttalere*. Hvis en bruger fra *Design højttalere*-produktejergruppen frigiver produkt Y og dets stykliste, frigives produkt X sammen med produkt Y.
 
 Du kan finde flere oplysninger under [Produktejere](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

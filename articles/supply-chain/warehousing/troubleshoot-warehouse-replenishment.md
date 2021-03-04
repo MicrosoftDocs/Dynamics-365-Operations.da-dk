@@ -40,3 +40,6 @@ Pluk af arbejde blokeres på grund af afhængigt genopfyldningsarbejde.
 ### <a name="issue-resolution"></a>Problemløsning
 
 Når du bruger bølgeefterspørgsel til genopfyldning, opretter systemet både genopfyldningsarbejdet og plukarbejdet, hvis en plukplads skal genopfyldes for at opfylde kildeordrebehovet. Den blokerer dog plukarbejdet, indtil genopfyldningsarbejdet fuldføres. Denne funktionsmåde er bevidst, fordi plukpladsen ikke har nok lager, medmindre genopfyldningsarbejdet er fuldført. Fuldfør genopfyldningsarbejdet, og kør derefter plukarbejdet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

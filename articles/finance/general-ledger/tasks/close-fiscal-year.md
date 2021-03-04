@@ -83,3 +83,6 @@ Denne procedure gennemgår processen for årsafslutning, som overfører saldi ti
 23. Årsafslutningen køres som standarder i batch. Det er den bedste praksis for langvarige processer, der skal køres i batchtilstand. Det er typisk en af disse processer, hvilket er grunden til, at standarden er at bruge batchtilstand.  
 24. Klik på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

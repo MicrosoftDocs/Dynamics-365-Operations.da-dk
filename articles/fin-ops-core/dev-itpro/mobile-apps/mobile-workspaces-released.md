@@ -41,3 +41,6 @@ Dette emne indeholder de arbejdsområder til mobilenheder, der er tilgængelige 
 | [Salgsordrer](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde dig opdateret om salgsordrer.                                                                                                                          |  2017. januar                  |
 | [Kreditorsamarbejde](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Kreditorer kan holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner. |2017. januar    |
 | [Aktivadministration](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | I dette arbejdsområde kan brugerne se og oprette vedligeholdelsesanmodninger og arbejdsordrer. Brugere kan også få vist de tildelte job i arbejdsordrejob i en kalender- eller listevisning. Aktiver og arbejdssteder kan også ses og søges efter. |2019. oktober    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

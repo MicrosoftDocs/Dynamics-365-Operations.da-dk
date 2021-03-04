@@ -38,3 +38,6 @@ Kreditorpost bruger værdier fra standardengangskreditorkontoen. Du kan få vist
 5. Klik på Opret.
     * Siden Kreditorfaktura åbnes og viser oplysninger om kreditoren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

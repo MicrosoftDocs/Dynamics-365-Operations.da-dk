@@ -68,3 +68,6 @@ Købsprisposterne for varer bruges også kun som referenceoplysninger. Ved at æ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

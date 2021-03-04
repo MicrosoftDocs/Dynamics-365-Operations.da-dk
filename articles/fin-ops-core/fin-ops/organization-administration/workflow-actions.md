@@ -141,3 +141,6 @@ Når en godkender anmoder om en ændring i et dokument, sendes dokumentet tilbag
 For eksempel har Søren sendt en udgiftsrapport på kr. 12.000, og dette dokument er tildelt til Mette. Hvis Mette anmoder om en ændring, sendes dokumentet tilbage til Søren.
 
 Søren kan sende udgiftsrapporten igen. Han kan udføre de ønskede ændringer først, eller han kan sende den oprindelige version af udgiftsrapporten igen. Hvis Søren sender udgiftsrapporten igen, sendes den til Henrik til godkendelse, fordi Henrik er den første godkender i godkendelsesprocessen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

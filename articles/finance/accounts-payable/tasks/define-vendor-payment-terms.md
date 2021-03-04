@@ -47,3 +47,6 @@ I dette emne forklares, hvordan du konfigurerer betalingsbetingelser for kredito
 16. Angiv den hovedkonto, som kasserabatten skal bogføres på for debitorfakturaer, og angiv derefter den hovedkonto, som kasserabatten skal bogføres på for kreditorfakturaer. Hvis **Rabatmodkonti** er indstillet til **Brug hovedkonto til kreditorrabatter**, bruges hovedkontoen. Hvis indstillingen er angivet til **Konti på fakturalinjerne**, bogføres kasserabatten til aktiv/udgiftskonti på fakturalinjerne.  
 17. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -167,3 +167,6 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 [Tekniske oplysninger om FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) fokuserer på at levere teknisk dybde og bedste fremgangsmåder, der giver kunder og partnere detaljeret viden, der er specifik for emneområder.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Benyt følgende fremgangsmåde for at føje åbningstider til de udskrevne POS-k
 POS-kvitteringer viser nu åbningstiderne. Hvis der er helligdage i skabelonen, vises de på kvitteringen.
 
 ![Kvitteringseksempel](../dev-itpro/media/Storehours3.png "Kvitteringseksempel")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

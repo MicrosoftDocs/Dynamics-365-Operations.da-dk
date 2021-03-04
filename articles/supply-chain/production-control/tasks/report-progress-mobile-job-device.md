@@ -65,3 +65,6 @@ Rollen Systemadministratoren eller Maskinpasser skal være tilknyttet brugerkont
 29. Klik på OK.
 30. Vælg en årsag til, at du stempler ud tidligt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

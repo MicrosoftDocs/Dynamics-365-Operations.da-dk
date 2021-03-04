@@ -157,3 +157,6 @@ I følgende illustration vises virkningerne af at vælge lagermodellen for LIFO,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

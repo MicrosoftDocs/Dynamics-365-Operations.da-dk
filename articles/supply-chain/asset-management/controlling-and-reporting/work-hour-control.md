@@ -74,3 +74,6 @@ I skærmbilledet herunder vises et eksempel på en beregning af **Styring af akt
 Du kan også foretage en timeberegning ved at vælge flere aktiver i **Alle aktiver** eller **Aktive aktiver**. Derefter skal du klikke på knappen **Timestyring** i oversigtspanelet **Generelt**. De valgte anlægsaktiver indsættes automatisk i feltet **Aktiv** i oversigtspanelet **Poster, der skal indgå**. Klik på **OK** i dialogboksen **Styring af aktivtimer**, hvorefter beregningen for de valgte aktiver vises. Den samme procedure kan udføres for arbejdssteder i **Alle arbejdssteder** eller **Aktive arbejdssteder** og for arbejdsordrer i **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

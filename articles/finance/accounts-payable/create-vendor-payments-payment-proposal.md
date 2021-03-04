@@ -123,3 +123,6 @@ Du kan definere en standardbetalingskonto for debitering pr. metode til betaling
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

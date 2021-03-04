@@ -222,3 +222,6 @@ Hvis brugere tilsidesætter de beregnede gebyrer manuelt eller føjer et manuell
 
 [Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

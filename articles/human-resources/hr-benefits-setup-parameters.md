@@ -68,3 +68,6 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 3. Vælg **Gem**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

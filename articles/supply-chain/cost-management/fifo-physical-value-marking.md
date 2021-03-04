@@ -136,3 +136,6 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

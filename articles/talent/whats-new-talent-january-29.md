@@ -41,3 +41,6 @@ Der er føjet nye indstillinger til orlov og fravær (**Personale** parametre) f
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Arbejderansættelseshandlinger går i stå i "Arbejdsgang er fuldført"-tilstand
 Der er foretaget ændringer til løsningen af et problem, hvor et lille antal arbejdsgange sluttede med statussen "Arbejdsgang er fuldført". Nye arbejdsgange skal nu flyttes til tilstanden "Fuldført", når arbejdsgangen er fuldført. Arbejdsgange i en Arbejdsgang afsluttet-status, overflyttes til en fejlstatus for at tillade opdatering eller fjernelse, hvis det er nødvendigt. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organi
 5. Klik på Rediger filter.
     * Klik på Tilføj nye kriterier for at begynde at tilføje regler til filteret. Når du har tilføjet alle kriterierne, skal du klikke på Aktivér filter.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

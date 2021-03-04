@@ -59,3 +59,6 @@ Hvis serverens landestandard for Microsoft Dynamics 365 Finance-forekomsten er d
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

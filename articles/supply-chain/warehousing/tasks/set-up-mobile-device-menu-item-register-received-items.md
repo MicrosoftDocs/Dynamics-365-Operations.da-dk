@@ -60,3 +60,6 @@ Du kan bruge denne guide i USMF-demodatafirmaet. Denne procedure er beregnet til
 6. Vælg **Gem**.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Dette emne viser, hvordan du kan konfigurere og køre regler for overvågningspo
 57. Udvid sektionen **Tilknytninger**.
 58. Find og vælg den ønskede post på listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

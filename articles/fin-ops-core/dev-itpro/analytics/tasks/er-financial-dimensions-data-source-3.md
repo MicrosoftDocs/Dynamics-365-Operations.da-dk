@@ -145,3 +145,6 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 46. Luk siden.
 ![Side med ER-operationsdesigner](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

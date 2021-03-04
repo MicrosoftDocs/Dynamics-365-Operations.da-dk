@@ -111,3 +111,6 @@ Den korrigerede omkostning pr. time og jobtiden posteres i produktionskladden. *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

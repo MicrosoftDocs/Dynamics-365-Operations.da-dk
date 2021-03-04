@@ -148,3 +148,6 @@ De ekstra opsætningssider er organiseret efter funktioner.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indhold til **Lærin
 | Stilling         | Stilling, titel og tilsvarende fuld tid (fuldtidsansat)                  | Kursusagenda, kursusdeltagere |
 | Medarbejdernavn    | Fornavn, efternavn og fulde navn                             | Kursusdeltagere |
 | Medarbejdertitel   | Titel og anciennitetsdato                                         | Kursusdeltagere |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

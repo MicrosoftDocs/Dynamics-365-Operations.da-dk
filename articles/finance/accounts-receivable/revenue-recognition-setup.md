@@ -193,3 +193,6 @@ Indtægtsføring kan også anvendes for salgsordrer, der er oprettet via et Tid 
 
 - **Udskudt fakturaindtægt** (under **Indtægtskonti**) – Angiv hovedkontoen for den indtægtspris, der skal bogføres til udskudt indtægt (i stedet for indtægt). Indtægtsprisen udskydes, hvis salgsordrelinjen har en indtægtstidsplan.
 - **Udskudt omkostning** (under **Omkostningskonti**) – Angiv hovedkontoen for vareforbrugsbeløbet, der bogføres til udskudte omkostninger for varforbrug, hvis indtægten også er udskudt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

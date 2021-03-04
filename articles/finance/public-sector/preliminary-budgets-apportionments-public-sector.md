@@ -127,3 +127,6 @@ Du kan få vist budgetregisterposter til det oprindelige budget ved at vælge bu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

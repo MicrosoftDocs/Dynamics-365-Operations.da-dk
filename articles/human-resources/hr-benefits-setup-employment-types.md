@@ -41,3 +41,6 @@ Opret ansættelsestyper i Dynamics 365 Human Resources, så de svarer til medarb
    | **Beskrivelse** | En beskrivelse af ansættelsestypen. |
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

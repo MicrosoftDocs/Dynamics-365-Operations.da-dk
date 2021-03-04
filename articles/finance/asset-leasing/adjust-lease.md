@@ -82,3 +82,6 @@ Hvis en leasingaftale er blevet ændret, kan du få vist de forskellige versione
 
 2. Hvis du vil se historikplanerne, skal du åbne den ændrede leasingaftale fra siden **Leasingoversigt**, vælge det ønskede kartotek og derefter vælge **Versionshistorik for kartotek** i handlingsruden.
 3. Vælg den ønskede version og den plan, der skal vises, på siden **Bogversion**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner
     * Hvis Fast lønplan er en trinplan, skal du vælge det trin, der indeholder den korrekte lønsats for medarbejderen. Hvis Fast lønplan er en omfangs- eller klasseplan, skal du angive lønsatsen for medarbejderen. Lønsatsen valideres mod toleranceindstillingerne for planen og minimale og maksimale referencepunkter for jobbets kompensationsniveau.  
 8. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

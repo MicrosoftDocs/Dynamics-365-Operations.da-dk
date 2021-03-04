@@ -86,3 +86,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 7.  Vælg **Vedhæftede filer** for at få vist noter eller filer, der er tilknyttet fakturaen.
 8.  På siden **Fakturadetaljer** skal du vælge den relevante handling i arbejdsgangen for at fuldføre valideringsprocessen.
 9.  Vælg **Udført**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Når du vælger **Bilag**, viser fakturakladden den oprindelige regnskabspost. H
 Åbn derefter siden **Alle debitorer** (**Debitorer \> Kunder \> alle kunder**), vælg kunde **US\_SI\_0003**, og vælg derefter **Transaktioner**. Siden **Debitorposteringer** viser kun den oprindelige faktura (000008) sammen med den oprindelige regnskabspost. Da indstillingen **Bogfør fakturakorrektioner i Debitor** er angivet til **Nej** på siden **Finansparametre**, opdateres kun Finans. Derfor vises tilbageførsels- og opdaterede regnskabsposter ikke. Bemærk, at de omsætningsreguleringsposteringer, der blev oprettet i [senarie 3](rev-rec-reallocation-scenario-3.md), vises.
 
 [![Den oprindelige regnskabspost på siden Debitorposteringer](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -439,3 +439,6 @@ I følgende tabel beskrives de forskellige arbejdstyper, som du kan bruge sammen
 [Lagerstatusser](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

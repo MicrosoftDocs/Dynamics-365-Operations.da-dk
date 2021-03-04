@@ -88,3 +88,6 @@ Følgende billede viser en juridisk enhed, der er føjet til hierarkiroden, med 
 [Oversigt over kanaler](channels-overview.md)
 
 [Forudsætninger for konfiguration af kanal](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

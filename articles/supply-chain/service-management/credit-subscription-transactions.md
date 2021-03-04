@@ -56,3 +56,6 @@ Hvis feltet **Tilbagefør periodiseringer ved kreditering** i formularen **Param
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

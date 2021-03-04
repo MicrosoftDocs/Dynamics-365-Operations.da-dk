@@ -113,3 +113,6 @@ Følgende trin beskriver, hvordan en Regulatory Configuration Service-bruger i r
 11. Luk siden. 
 
 Når du har brug for at evaluere denne modeltilknytning ved hjælp af metadata for et andet versionsprogram, skal du registrere et andet tilknyttet program, tildele det denne modeltilknytning og validere det mod nye metadata.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

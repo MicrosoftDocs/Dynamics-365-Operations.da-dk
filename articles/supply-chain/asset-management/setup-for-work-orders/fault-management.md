@@ -133,3 +133,6 @@ Udfør følgende trin for at oprette en liste over forslag til rettelser og repa
 
 > [!NOTE]
 > Du kan ændre navnene på dine fejlsymptomer, -områder, -typer, -årsager og -rettelser efter behov. Navneændringerne afspejles automatisk i de relaterede fejlregistreringer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

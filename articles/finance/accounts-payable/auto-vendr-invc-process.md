@@ -69,3 +69,6 @@ Med arbejdsområdet **Kreditorfakturapostering** kan du fokusere på kreditorfak
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering af kreditorfaktura - Genoptag automatisk behandling af flere fakturaer
 Når en importeret faktura ikke sendes gennem en arbejdsgang via den automatiserede proces, fjernes den af yderligere automatisk behandling. En kreditorassistent kan gennemse og redigere fakturaen, før den automatiserede proces sender den til arbejdsgangen igen. Når en fejlårsag kan løses med samme rettelse for flere fakturaer, kan du genstarte den automatiserede proces på siden **Genoptag automatisk fakturabehandling**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

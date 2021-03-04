@@ -80,3 +80,6 @@ Hvis disse oplysninger ikke angives korrekt, du får vist en meddelelse, når du
 3. I feltet **Ordretype** skal du vælge **Planlagt og bekræftet**, **Planlagt** eller **Bekræftet** for at angive den type ordrer, der skal anslås i rapporten.
 4. I feltet **Lastningstype** skal du vælge en belastningstype for at angive, om arbejdsbyrdekapaciteten skal planlægges for paller, volumen eller vægt.
 5. I feltet **Arbejdsbyrdekapacitet** skal du vælge en arbejdsbyrdekapacitetsopsætning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

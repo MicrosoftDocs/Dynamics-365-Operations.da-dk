@@ -94,3 +94,6 @@ Ved hjælp af metadataene for konfigurationsnøglen, der er opbygget under opdat
 Når du opdaterer konfigurationsnøgler på enheds-, tabel-eller feltniveau, skal enhedslisten i datastyringen opdateres. Denne proces sikrer, at systemet henter de nyeste konfigurationsnøgleindstillinger. Indtil enhedslisten opdateres, vises følgende advarsel på enhedens listeside. De opdaterede konfigurationsnøgleændringer træder i kraft, umiddelbart efter, at enhedslisten opdateres. Det anbefales, at du validerer eksisterende dataprojekter og job for at sikre, at de fungerer som forventet, når ændringerne i konfigurationsnøglerne sættes i kraft.
 
 ![Målfelter](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

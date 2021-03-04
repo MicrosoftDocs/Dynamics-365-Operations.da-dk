@@ -199,3 +199,6 @@ Hvis importen gennemføres, modtager du en meddelelse om, at kontoudtoget blev i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

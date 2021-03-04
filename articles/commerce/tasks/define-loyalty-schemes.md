@@ -70,3 +70,6 @@ Denne procedure hjælper med at definere en fordelskundeplan. Fordelskundeplaner
 27. Klik på Gem.
     * Hver gang du skifter kanal for et fordelskundeprogram, skal du køre fordelskundeplaner. På den måde får kanalerne opdaterede fordelskundeplaner.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

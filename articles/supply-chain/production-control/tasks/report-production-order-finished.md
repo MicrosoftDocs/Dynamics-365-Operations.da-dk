@@ -52,3 +52,6 @@ Denne procedure viser, hvordan du færdigmelder en produktionsordre. Det demodat
 4. Klik op linket i den valgte række på listen.
     * Færdigmeldingskladden bogføres. Hvis du vil foretage ændringer i kladden, kan du oprette en ny kladde, hvor du kan foretage ændringer manuelt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Når du har fuldført vedligeholdelses-eller reparationsopgaven, kan du registre
 2. Vælg aktivet eller vedligeholdelsesanmodningen.
 3. Vælg **Levér aktiver**.
 4. Angiv datoen og tidspunktet i feltet **Leveret**. Vælg derefter **OK**. Posten blev fjernet fra listesiden **Udgående aktiver**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

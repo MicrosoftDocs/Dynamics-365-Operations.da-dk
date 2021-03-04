@@ -50,3 +50,6 @@ Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en ku
 15. Klik på Bogfør.
 16. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

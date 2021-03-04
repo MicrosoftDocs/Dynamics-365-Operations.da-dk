@@ -182,3 +182,6 @@ Her er nogle af de konsolideringsscenarier, som Økonomirapportering understøtt
 
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

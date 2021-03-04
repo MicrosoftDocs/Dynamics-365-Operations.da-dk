@@ -296,3 +296,6 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam West)    |              | 75,00         |
 | Forfalden fra Fabrikam East (Fabrikam West) | 25,00        |               |
 | Debitor (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

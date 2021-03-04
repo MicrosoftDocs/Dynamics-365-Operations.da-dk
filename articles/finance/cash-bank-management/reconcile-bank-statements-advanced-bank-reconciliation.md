@@ -96,3 +96,6 @@ Bankkontoudtogstransaktioner, du har markeret som **Ny** på afstemningsarbejdsa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

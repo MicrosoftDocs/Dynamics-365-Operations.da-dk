@@ -64,3 +64,6 @@ Du kan oprette dine egne attributtyper. Derudover kan du overføre produktdimens
 9. Gem posten.
 
     Feltet **Arbejdsstedstyper** viser antallet af arbejdssteder, der bruger attributtypen. Feltet **Aktivtyper** viser antallet af aktivtyper, der bruger det.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

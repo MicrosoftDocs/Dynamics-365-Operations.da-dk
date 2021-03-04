@@ -289,3 +289,6 @@ Når den konfigurerede datakilde køres, mens ER-udførelsen [spores](trace-exec
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Spore kørsel af ER-format for at foretage fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Den returnerede tekstværdi.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

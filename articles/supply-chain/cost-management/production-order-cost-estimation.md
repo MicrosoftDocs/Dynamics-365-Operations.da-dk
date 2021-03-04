@@ -65,3 +65,6 @@ En forkalkulation giver dig også følgende oplysninger:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

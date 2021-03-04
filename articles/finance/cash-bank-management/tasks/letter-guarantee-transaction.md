@@ -148,3 +148,6 @@ Denne procedure bruger demofirmaet USMF.
     * Kontrollér de bogførte kladdeposteringer.  
 16. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

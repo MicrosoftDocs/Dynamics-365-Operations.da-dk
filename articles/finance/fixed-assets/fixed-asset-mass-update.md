@@ -42,3 +42,6 @@ Når du har opdateret afskrivningsprincippet for aktiverne, kan du behandle afsk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

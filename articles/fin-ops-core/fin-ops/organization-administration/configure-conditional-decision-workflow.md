@@ -52,3 +52,6 @@ Systemet bestemmer, hvilken forgrening der skal bruges, ved at evaluere det send
     2. Vælg en post i området **Valider betingelse** i formen.
     3. Klik på **Test**. Systemet evaluerer den valgte post for at afgøre, om den opfylder de betingelser, du har defineret.
     4. Klik på **OK** eller **Annuller** for at vende tilbage til formen **Egenskaber**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

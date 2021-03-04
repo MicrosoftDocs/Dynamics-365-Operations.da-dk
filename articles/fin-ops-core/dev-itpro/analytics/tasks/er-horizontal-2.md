@@ -51,3 +51,6 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 8. Klik på OK.
     * Gennemse det genererede output. Bemærk, at den netop oprettede Excel-fil indeholder det samme antal kolonner, der er valgt for økonomiske dimensioner. Rapporthovedet i disse kolonner repræsenterer navnene på økonomiske dimensioner. Transaktionslinjerne i disse kolonner repræsenterer økonomiske dimensioner. Kør denne rapport, og vælg forskellige dimensioner for at se, at rapporten ikke er afhængig af antallet af valgte dimensioner eller antallet af dimensioner, der er konfigureret for denne forekomst.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

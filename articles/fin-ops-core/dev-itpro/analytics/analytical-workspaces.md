@@ -45,3 +45,6 @@ ms.locfileid: "4683132"
 - [Arbejdsområde for kreditorbetalinger](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-indhold til Lagerstedperformance](warehouse-power-bi-content.md)
 - [Power BI-indhold til Nøgletal for arbejdsstyrke](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Hvis du endnu ikke har afspillet følgende opgaveguide, [ER Oprette nødvendige 
 | Indholdsbeskrivelse    | Filer                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER-modelkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Du kan konfigurere batch- og id-bekræftelse fra mobilenhedens menupunkter.
 
 1. Angiv opsætningen af arbejdsbekræftelsen fra menupunkterne på mobilenheden.  
 1. Vælg indstillingen for batch- eller id-bekræftelse. Begge indstillinger er tilgængelige for pluk af arbejdstypen, hvor automatisk bekræftelse ikke er aktiveret.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

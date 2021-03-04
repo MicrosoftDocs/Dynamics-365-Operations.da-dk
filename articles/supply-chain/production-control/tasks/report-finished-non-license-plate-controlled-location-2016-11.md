@@ -62,3 +62,6 @@ Denne opgavevejledning viser et eksempel på færdigmedling til en lokation, der
 18. Klik på Arbejdsdetaljer.
     * Når produktionsordren er færdigmeldt, oprettes der intet arbejde for læg-på-lager. Dette skyldes, at der er defineret en arbejdspolitik, som forhindrer, at der genereres arbejde, når produktet L0101 rapporteres som færdigt på lokation 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

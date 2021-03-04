@@ -179,3 +179,6 @@ Hvis du vil angive kommentarer om de ændringer, du har foretaget i arbejdsgange
 2. I feltet **Angiv kommentarer om arbejdsgangen** skal du angive dine kommentarer.
 3. Gennemse kommentarer. Når du har tilføjet kommentarer, kan du ikke ændre dem.
 4. Klik på **Tilføj** til at tilføje dine kommentarer til området **Kommentarhistorik**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ Platform update 10.0.12 (36)
 [Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

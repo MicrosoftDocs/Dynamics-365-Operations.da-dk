@@ -207,3 +207,6 @@ Hvis du vil importere grundlagsindstillinger fra en XML-fil, der er gemt på Mic
 
 - [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md)
 - [Ressourcer til arbejdsrutineoptager](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

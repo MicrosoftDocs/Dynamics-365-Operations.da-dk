@@ -42,3 +42,6 @@ Dette emne viser, hvordan du kan sætte en periode på hold eller permanent lukk
 11. Vælg **Opdater periodestatus**, og angiv status til **På hold**, **Åben** eller **Permanent lukket**. **Åben** angiver, at der kan bogføres til perioden, hvis brugeren har adgang. **På hold** betyder, at der ikke kan bogføres på perioden, men perioden kan genåbnes. **Permanent lukket** betyder, at perioden er lukket og ikke kan åbnes. Reguleringer kan ikke bogføres. Det anbefales ikke at indstille en periode til **Permanent lukket**, før alle reguleringer og revisioner er afsluttet.  
 12. Vælg **Opdater**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

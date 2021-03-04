@@ -87,3 +87,6 @@ Hvis du vil eksportere en √∏konomisk rapport i handlingsruden, skal du klikke p√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

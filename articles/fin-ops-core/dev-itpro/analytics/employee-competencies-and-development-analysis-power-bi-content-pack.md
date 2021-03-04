@@ -69,3 +69,6 @@ Programdata bruges til at udfylde rapporterne i indholdspakken til medarbejderko
 | Workforce\_WorkerName             | Fornavn, efternavn og fulde navn                                                                       | |
 | Workforce\_WorkerTitle            | Titel og anciennitetsdato                                                                                   | |
 | Workorce\_WorkerTrend             | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

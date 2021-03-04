@@ -111,3 +111,6 @@ Arnie ændrer værdien i feltet **Anvend kasserabat** tilbage til **Normal**, da
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

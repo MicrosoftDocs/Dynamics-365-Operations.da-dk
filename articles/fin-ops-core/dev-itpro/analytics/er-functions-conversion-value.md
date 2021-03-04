@@ -63,3 +63,6 @@ Komma og punktum (.) betragtes som decimalseparator og en indledende bindestreg 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Typekonverteringsfunktioner](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

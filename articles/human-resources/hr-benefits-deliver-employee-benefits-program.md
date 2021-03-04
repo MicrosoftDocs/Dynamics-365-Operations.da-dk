@@ -68,3 +68,6 @@ Denne artikel viser dig, hvordan du kan oprette frynsegodeelementer, der skal br
 16. Vælg en indstilling i feltet Basis.
 17. Indtast et tal i feltet Beløb eller sats.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

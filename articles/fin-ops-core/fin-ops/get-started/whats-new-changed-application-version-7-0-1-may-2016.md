@@ -106,3 +106,6 @@ I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsof
 [Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)
 
 [Nye eller opdaterede opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Kuponfunktioner indeholder flere specifikke funktioner. Commerce Headquarters (H
 - **HQ opdateres delvist, men Commerce Scale Unit og POS opdateres ikke.** Under en opdatering af HQ opdateres kupon- og rabatsiderne, og handelsprisprogrammet opdateres også. Hvis kun en af disse to komponenter opdateres, vil nogle sider i Commerce ikke svare til prisberegningsdataene. Derfor kan der forekomme uventede rabatberegninger eller fejl under rabatberegninger.
 - **HQ opdateres, men Commerce Scale Unit og POS opdateres ikke (N-1).** Da ikke alle butikker kan opdateres på samme tid, anbefales det, at du opdaterer HQ, før du opdaterer butikkerne. I eksemplet N-1 er nye funktioner, der er relateret til kuponer, ikke tilgængelige i butikker, der endnu ikke er blevet opdateret. For eksempel introducerer kuponfunktionen "udelad"-linjer. Hvis du bruger udelad-linjer på en rabat, bliver de ikke anvendt i en butik, der kører en tidligere version.
 - **HQ opdateres ikke, men Commerce Scale Unit og POS opdateres (N+1).** Da det opdaterede prisprogram i Commerce Scale Unit kan håndtere ældre rabatkoder under prisberegninger, bør opdateringen ikke have nogen indflydelse på funktioner i dette scenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

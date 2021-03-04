@@ -230,3 +230,6 @@ Du kan også kontrollere, at posteringsrelationerne er blevet opdateret på føl
 - Indstillingen **Opdel antal til ny last** fungerer også, når nogle af de resterende arbejdsoverskrifter har statussen *Under behandling*. Du kan derfor stadig bruge funktionaliteten, selvom arbejdere allerede kører plukordrerne.
 - Hvis du vælger **Annuller ikke-opfyldt antal**, mens der er resterende arbejde med statussen *Åben* eller *Under behandling*, får du vist følgende fejlmeddelelse: "det er ikke muligt at annullere det resterende antal til last. Der findes arbejde til last."
 - Hvis du vælger **Annuller ikke-opfyldt antal**, når der ikke er noget resterende arbejde, men der er frigivne lastlinjer på lasten, får du vist følgende fejlmeddelelse: "Forsendelsen til last kunne ikke bekræftes, fordi antallet for varen overstiger den procentdel, der er defineret til underlevering". For at undgå denne fejl kan du angive procentdelen for **Underlevering** på den ikke-frigivne lastlinje til 100 %. Linjer, der ikke er frigivet, flyttes ikke til en ny last, men den aktuelle last bekræftes med underlevering. I dette tilfælde kan du ikke genudgive den oprindelige ordre. Derfor skal du håndtere den på en anden måde.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

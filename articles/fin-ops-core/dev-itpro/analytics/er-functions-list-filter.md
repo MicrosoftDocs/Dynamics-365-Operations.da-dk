@@ -73,3 +73,6 @@ Du indtaster datakilden **DS** af typen *Beregnet felt* og deri er indeholdt udt
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

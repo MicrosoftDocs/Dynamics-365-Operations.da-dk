@@ -69,3 +69,6 @@ Rentekoden kan indstilles på faktureringskoden, faktureringsklassifikationen el
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

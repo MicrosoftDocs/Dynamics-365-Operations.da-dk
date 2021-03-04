@@ -193,3 +193,6 @@ Der er én undtagelse til reglen om, at batchordrer kan anvendes til batchtilpas
 Hvis en formel indeholder et aktivt stof for et produkt, der er aktiveret til lokationsstyringsprocesser, men batchnummeret er under Placering i reservationshierarkiet, kan batchtilpasning ikke bruges på batchordren.
 
 En batchordre, der ikke er tilgængelig for batchtilpasning, gennemgår den almindelige procescyklus for batchordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

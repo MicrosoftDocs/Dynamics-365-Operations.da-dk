@@ -45,3 +45,6 @@ Hvis du har frivillige eller andre, der ikke er medarbejdere, kan det være en g
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Oversigt over medarbejderes og lederes selvbetjening](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

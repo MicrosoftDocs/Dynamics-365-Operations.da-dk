@@ -115,3 +115,6 @@ Følgende enheder aktiveres for brugerdefinerede felter i Common Data Service:
 - **Orlovstype**
 - **Arbejders bankkonto**
 - **Arbejdskalender**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

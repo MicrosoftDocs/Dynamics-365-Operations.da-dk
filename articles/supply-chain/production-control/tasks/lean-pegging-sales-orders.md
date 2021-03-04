@@ -57,3 +57,6 @@ Denne procedure fokuserer på validering af udligningstræet fra en salgslinje, 
 5. Vælg "Salgslinje 000832\Kanban 000558\Afgang for L0001\Kanban 000559" i træet.
     * Jobbet for den anden kanban er også planlagt, fordi hele udligningstræet er planlagt. Bemærk, at den pågældende kanbanjobstatus blev ændret fra Ikke planlagt til Planlagt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

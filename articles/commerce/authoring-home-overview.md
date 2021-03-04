@@ -122,3 +122,6 @@ Når oprettelsesværktøjet er indlæst, kan du vælge **Startside** for at vend
 [Overvejelser om optimering af søgeprogram (SEO) for webstedet](search-engine-optimization-considerations.md)
 
 [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

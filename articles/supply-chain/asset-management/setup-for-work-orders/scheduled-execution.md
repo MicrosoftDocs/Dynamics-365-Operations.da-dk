@@ -43,3 +43,6 @@ Opsætning af planlagt udførelse, der er relateret til arbejdsordrer, kan være
 6. Vælg **Gem**.
 
 ![Planlagt udførelse](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Dette emne forklarer, hvordan du kan godkende kreditorer for bestemte indkøbska
 13. Vælg **Nej** i feltet **Arv kreditorer fra overordnet kategori**.
 14. Vælg **Ja** i feltet **Arv kreditorer fra overordnet kategori**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

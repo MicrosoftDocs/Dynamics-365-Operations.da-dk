@@ -187,3 +187,6 @@ For at gøre det lettere at få vist de kolonner, du arbejder på i rækkedefini
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -263,3 +263,6 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsopdatering til 10.0.9/Platform update 33
 
 - [KB 4550367] Tidsværdier formateres ikke korrekt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

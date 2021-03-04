@@ -57,3 +57,6 @@ Før du kan bruge arbejdsområdet **Kontrolliste for datavalidering**, skal du k
 Du bruger opgaveområder til at gruppere datavalideringsopgaver i logiske ejerskabsområder i organisationen. Kreditor, Debitor eller Finans kan eksempelvis bruges som opgaveområder.
 
 **Menupunktnavn** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. F.eks. kan en datavalideringsopgave, der skal køre rapporten **Kreditor aldersfordelt** for Kreditor, knyttes til siden **Rapport over Kreditor aldersfordelt**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

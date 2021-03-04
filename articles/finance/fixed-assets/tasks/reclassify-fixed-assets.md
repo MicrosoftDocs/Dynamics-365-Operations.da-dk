@@ -46,3 +46,6 @@ Benyt følgende fremgangsmåde for at genklassificere et anlægsaktiv:
 5. Indtast en dato i feltet **Dato for genklassificering**.
 6. Indtast eller vælg en værdi i feltet **Bilagsserie**.
 7. Klik på **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

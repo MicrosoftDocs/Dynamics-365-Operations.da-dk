@@ -68,3 +68,6 @@ Denne opgaveguide beskriver fakturering af en salgsordre, herunder fletning af f
 10. Klik på **Annuller**.
 11. Klik på **Ja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

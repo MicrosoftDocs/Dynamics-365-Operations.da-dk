@@ -103,3 +103,6 @@ Denne fremgangsmåde beskriver, hvordan du opretter et enkelt frigivet produkt i
 12. Find og vælg den ønskede post på listen.
 13. Klik op linket i den valgte række på listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

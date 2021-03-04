@@ -103,3 +103,6 @@ Når brugerne er oprettet, skal du tildele dem roller på siden **Tildel brugere
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Følgende emner beskriver, hvordan planlægningssystemet fungerer, når der defi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter fø
 8. Skriv en værdi i feltet Koncernkonto.
 9. Skriv en værdi i feltet Navn på koncernkonto.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

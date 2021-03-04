@@ -62,3 +62,6 @@ Hvis et aktiv har relaterede underaktiver, kan du kun slette det, hvis der ikke 
 
 > [!NOTE]
 > Hvis du ikke kan slette et aktiv ved hjælp af denne procedure, er en anden måde at håndtere sletningen på at konfigurere en livscyklustilstand for et aktiv til dette formål. Du kan eksempelvis konfigurere en **Kasseret** eller **Slettet** livscyklustilstand på siden **Livscyklustilstand for aktiv**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ I dette emne beskrives, hvordan du konfigurerer aktivproducenter og relaterede m
 2. I kolonnen **Aktiv** skal du vælge linket til aktivet. Siden med **Detaljer** vises.
 3. Vælg **Rediger**.
 4. I oversigtspanelet **Generelt** skal du vælge værdier i felterne **Producent** og **model**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Brugeren skal i stedet at rydde værdien i opslagskontrolelementet, åbne opslag
 Når filteret er anvendt (se billedet nedenfor), kan brugeren som normalt finde og markere rækken.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

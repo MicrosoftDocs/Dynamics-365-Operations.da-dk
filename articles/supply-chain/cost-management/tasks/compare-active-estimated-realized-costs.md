@@ -40,3 +40,6 @@ Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsom
 6. Klik på Vis omkostningssammenligning.
 7. Klik på Luk.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

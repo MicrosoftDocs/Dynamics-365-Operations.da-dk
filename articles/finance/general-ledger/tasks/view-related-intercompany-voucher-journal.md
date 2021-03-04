@@ -54,3 +54,6 @@ Vinduet med relaterede bilag viser bilaget fra modkontoen, når du bogfører en 
 3. Markér den valgte række på listen.
 4. Klik på Bilag.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

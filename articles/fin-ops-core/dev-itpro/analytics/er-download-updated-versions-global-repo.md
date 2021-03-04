@@ -98,3 +98,6 @@ Dette emne forklarer, hvordan du kan importere ER-fra det globale lager til Konf
 
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

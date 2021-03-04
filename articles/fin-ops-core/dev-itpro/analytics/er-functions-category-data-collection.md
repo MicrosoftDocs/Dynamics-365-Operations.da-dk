@@ -48,3 +48,6 @@ Dataindsamlingsfunktionerne til elektronisk rapportering (ER) bruges til at tæl
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelsprog i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Du kan finde flere oplysninger under [Oversigt over fakturasammenholdelse for kr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

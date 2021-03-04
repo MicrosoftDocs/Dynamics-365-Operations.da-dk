@@ -62,3 +62,6 @@ Ved hjælp af kompetencesøgningsprofiler kan du finde aktuelle medarbejdere ell
 Du kan oprette en kompetenceprofilanalyse for at få vist en liste over en arbejders, ansøgers eller kontakts færdigheder pr. en bestemt dato. Oprette en analyse af kompetencekløft for at sammenligne en persons færdigheder med de færdigheder, der kræves til et bestemt job.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

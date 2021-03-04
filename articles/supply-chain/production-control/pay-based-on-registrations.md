@@ -599,3 +599,6 @@ Hvis arbejderen ikke møder på arbejde på en arbejdsdag, og der er ikke planla
 - Automatisk indsættelse af fravær
 
 Når de daglige registreringer beregnes for en arbejder, der er aktiveret til flekstimer, bruges den fraværskode, der er angivet i feltet **Automatisk indsættelse af fleks-**, som en standardfraværskode. Hvis arbejderen ikke er aktiveret til flekstimer, bruges den fraværskode, der er angivet i feltet **Automatisk indsættelse af fravær**. Hvis en virksomhed har en kombination af arbejdere, der er aktiveret til flekstimer, og arbejdere, der ikke er aktiveret til flekstid, skal begge parametre konfigureres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

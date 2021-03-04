@@ -53,3 +53,6 @@ Du kan oprette et nyt leasingkartotek ved at følge disse trin.
     | Kortsigtet grænse                     | Angiv det antal måneder, der skal bruges som tærskel for kortfristede leasingaftaler. Hvis leasingperioden er mindre end eller lig med det antal måneder, du angiver her, klassificerer systemet leasingaftalen som en kortfristet leasingaftale, og den udskudte lejebehandling anvendes. |
     | Grænseværdi for lav værdi                      | Angiv et beløb, der skal bruges som en tærskel for leasingaftaler med lav værdi. Hvis aktivets rimelige værdi er mindre end eller lig med den værdi, du angiver her, klassificerer systemet leasingaftalen som en lavværdileasingaftale, og den udskudte lejebehandling anvendes. |
     | Betal til kreditor                            | Angiv denne indstilling til **Ja** for at tillade, at leasingbetalinger bogføres som en faktura til den kreditorkonto, der er angivet for hver leasingaftale. Når en leasingbetaling bogføres, vil kreditorkontoen blive krediteret. Hvis denne indstilling er angivet til **Nej**, krediteres den konto, der er angivet for **Leasingbetaling**-bogføringstypen for siden **Leasingbogføringsparametre** i stedet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

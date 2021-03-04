@@ -305,3 +305,6 @@ De systembaserede arbejdsrækkefølgeforespørgsler er *inklusive*. Det er vigti
 I eksemplet med dette scenarie blev arbejds-id *4* derfor også hentet af forespørgslen. Da den blev oprettet, blev der tilføjet to linjer: en til 25 ea og en anden til 10 ea. Arbejdet blev stadig vist for brugeren, fordi mindst én arbejdslinje har et antal på mindre end 20 ea.
 
 Afhængigt af scenariet kan du forhindre dette ved at bruge arbejdspauser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, so
 | Medarbejderstatistikker | Udgiftsrapporter fordelt på omkostningstype            |
 |                     | Personlige udgifter                       |
 |                     | Udgiftsrapporter fordelt på statistikgrupper     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

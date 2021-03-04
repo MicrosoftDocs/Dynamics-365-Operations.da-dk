@@ -37,3 +37,6 @@ Hvis du vil oprette et batchjob eller behandle betalingsfakturaer, afskrivninger
 > Efterfølgende posteringer, f. eks. planer for amortisering af passiver, betalinger, afskrivning og udgifter, bogføres først, når den første godkendelse af de tilsvarende leasingaftaler er bogført.
 >
 > Kladdeposterne oprettes, men de bogføres ikke, før du vælger kommandoen **Kør**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

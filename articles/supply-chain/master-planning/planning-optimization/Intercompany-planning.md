@@ -88,3 +88,6 @@ I dette eksempel oprettes der et indkøbsordreforslag i USMF-firmaet, der dække
 I følgende illustration vises, hvordan dette eksempel kan se ud på siden **Udligning på flere niveauer** for den planlagte produktionsordre.
 
 ![Internt eksempel, der involverer tre firmaer](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

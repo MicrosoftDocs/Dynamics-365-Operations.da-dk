@@ -66,3 +66,6 @@ Dette emner beskriver, hvordan du opretter et indkøbskatalog. Denne opgave vil 
 7. Vælg **Tilføj til linjer**.
 8. Vælg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

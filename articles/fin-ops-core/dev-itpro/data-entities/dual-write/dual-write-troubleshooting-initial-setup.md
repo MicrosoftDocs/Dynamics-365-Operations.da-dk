@@ -88,3 +88,6 @@ Du kan få vist følgende fejlmeddelelse, når du forsøger at aktivere tilknytn
 *Fejl under dobbeltskrivning – plugin-registrering mislykkedes: \[(det er ikke muligt at hente partitionstilknytningen for projekt DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Fejl: Overstiger det maksimale antal partitioner, der er tilladt for tilknytning af DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], Der opstod en eller flere fejl.*
 
 Den aktuelle grænse, når du sammenkæder miljøerne, er ca. 40 juridiske tabeller. Denne fejl opstår, hvis du forsøger at aktivere tilknytninger, og mere end 40 juridiske tabeller sammenkædes mellem miljøerne.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

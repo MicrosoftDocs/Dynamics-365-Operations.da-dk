@@ -107,3 +107,6 @@ Følgende nøgledimensioner i salgskuben bruges som filtre til at skabe udsnit a
 | Datoer            | Datoer                                                |
 
 Som standard viser indholdet data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

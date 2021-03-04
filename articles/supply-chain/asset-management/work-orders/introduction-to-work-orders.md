@@ -119,3 +119,6 @@ Knapperne under i gruppen **Projekt** under fanen **Arbejdsordre** i handlingsru
 >[!NOTE]
 >Budgetter, der oprettes på en arbejdsordre, kan inkluderes, når du kører behovsplanlægning, ved hjælp af den budgetmodel, der er valgt på siden **Parametre til aktivstyring**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

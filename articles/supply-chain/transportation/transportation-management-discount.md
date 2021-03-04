@@ -33,3 +33,6 @@ Hvis du vil konfigurere rabatter for transportstyring, skal du gå til **Transpo
 Du kan vælge, om du vil overføre rabatten til kunden (ved at angive rabattypen for kunden) eller beholde den i virksomheden (ved at angive rabattypen til speditionsfirma). Dette giver dig mulighed for at definere en opsætning, hvor du tjener en avance på de beregnede fragtomkostninger.
 
 Du kan oprette flere kvalifikatorer for hver rabat, f.eks. fragtmand, fragtydelser, leveringsbetingelser, kunde, destination osv.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

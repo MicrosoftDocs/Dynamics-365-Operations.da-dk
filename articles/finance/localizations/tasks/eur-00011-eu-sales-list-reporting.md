@@ -129,3 +129,6 @@ Disse opgaver er beregnet til systemadministratorer.
 8. Skriv "PRT" i feltet Land/område.
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

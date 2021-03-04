@@ -69,3 +69,6 @@ Hvis du angiver datakilden **DS** af typen *Beregnet felt*, og den indeholder ud
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

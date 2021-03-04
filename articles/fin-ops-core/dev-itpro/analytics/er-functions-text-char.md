@@ -59,3 +59,6 @@ Den streng, som denne funktion returnerer, afhænger af den kodning, der er valg
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

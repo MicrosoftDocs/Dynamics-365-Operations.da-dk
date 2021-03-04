@@ -65,3 +65,6 @@ Benyt følgende fremgangsmåde for at forbedre en kategoriside.
 [Forbedre en produktside](enrich-product-page.md)
 
 [Bekræft tilgængelighed af sideindhold](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

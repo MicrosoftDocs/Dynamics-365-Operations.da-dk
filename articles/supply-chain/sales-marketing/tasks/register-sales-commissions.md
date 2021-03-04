@@ -71,3 +71,6 @@ Notér de kunde- og varenumre, du har valgt til provisionsprocessen, og brug dem
 3. Luk siden.
 4. Vælg **Bilag**. Du kan gennemgå bilagsposteringer for provisionsbeløb, der er bogført til de foruddefinerede provisionsudgifts- og -kreditorkonti.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

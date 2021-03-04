@@ -45,3 +45,6 @@ Antallet af containere, som skal bruges til en last beregnes på basis af vægte
 -   For at angive vægt og rumfang for en container skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Containere** \> **Containertyper**.
 
 -   For at angive containerudnyttelsen i procent skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Containere** \> **Containergrupper** og derefter angive en værdi i feltet **Containerudnyttelse i procent**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

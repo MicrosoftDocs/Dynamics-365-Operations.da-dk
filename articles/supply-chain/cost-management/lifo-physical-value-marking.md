@@ -151,3 +151,6 @@ I følgende illustration vises effekterne af LIFO-lagermodellen på denne række
 - Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
 - Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

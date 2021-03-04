@@ -99,3 +99,6 @@ Yderligere hjælp er tilgængelig som opgaveguider i Finance. Du kan få adgang 
 #### <a name="videos"></a>Videoer
 
 Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

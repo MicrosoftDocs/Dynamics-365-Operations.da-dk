@@ -43,3 +43,6 @@ Dette emne beskriver, hvordan du klassificerer et produkt ved hjælp af kategori
 11. Indtast eller vælg en værdi i feltet **Kategori**.
 12. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

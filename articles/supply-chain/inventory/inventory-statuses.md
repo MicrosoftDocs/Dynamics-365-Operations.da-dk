@@ -65,3 +65,6 @@ Du kan ændre lagerstatus enten ved hjælp af siden **Disponibel efter lokation*
 > - På siden **Disponibel efter lokation** kan du gruppere linjer baseret på de viste dimensioner ved hjælp af knappen **Vis dimensioner** og ændre status for de valgte linjer.
 > - På siden **Disponibel efter lokation** kan du vælge flere poster og derefter bruge knappen **Ændring af lagerstatus** til at ændre dem alle på én gang.
 > - I den periodiske opgave **Ændring af lagerstatus** kan du filtrere efter sporingsdimensioner.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

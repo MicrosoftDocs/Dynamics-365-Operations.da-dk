@@ -82,3 +82,6 @@ En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognose
 5. Klik på Prognoselinjedetaljer.
     * Du kan se de nøjagtige værdier, historisk efterspørgsel og prognose på denne side. Du kan også foretage ændringer af prognosen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

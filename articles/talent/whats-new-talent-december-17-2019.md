@@ -56,3 +56,6 @@ Denne uges ændringer korrigerer et problem, hvor kalenderdage ikke kunne genere
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Aktuel saldorapport i orlov-PBI fordobler medarbejdersaldo (385581)
 
 Denne ændring korrigerer den aktuelle saldorapport i dette scenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

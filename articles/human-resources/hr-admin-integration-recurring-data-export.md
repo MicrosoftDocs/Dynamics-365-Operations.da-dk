@@ -205,3 +205,6 @@ I følgende illustration vises det, hvordan Logic Apps Designer ser ud, når all
 I dette selvstudium lærte du, hvordan du kan bruge en logikapp til at eksportere data fra Personale og gemme de eksporterede i en OneDrive for Business-mappe. Du kan ændre trinene i dette selvstudium efter behov, så det passer til dine forretningsbehov.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

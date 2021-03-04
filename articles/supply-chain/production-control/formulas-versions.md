@@ -71,3 +71,6 @@ Funktionen Skalerbar er kun tilgængelig, hvis alle varekomponenter i formlen er
 
 ## <a name="use-step-consumption"></a>Brug af trinforbrug
 Trinforbrug fjerner kravet om, at du skal angive en mængde under fanen **Formellinje** for en ingrediens. I stedet er trinforbrug konfigureret, så det har en **Fra serie**-værdi og en **Mængde**-værdi. Oplysningerne fra trinforbruget pr. seriepost, der opfylder mængden på batchordren vælges. Trinforbrug er nyttigt, når forbrugsraten ikke er lineær i forhold til batchordrestørrelsen og kun øger behovet, når en bestemt mængdetærskel er opfyldt. For at aktivere denne funktion for en ny formel under gruppen **Forbrugsberegning** skal du ændre formelindstillingen for den relevante ingrediens fra **Standard** til **Trin**. Du kan angive denne forbrugsmetode under fanen **Konfiguration** på siden **Formellinje**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

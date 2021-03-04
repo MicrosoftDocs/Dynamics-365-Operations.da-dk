@@ -39,3 +39,6 @@ Før du kan bruge hubkonsolidering, skal du aktivere indstillingen **Planlægnin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Kladden **Ændring af beholdningsejerskab** bruges til at registrere overdragels
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbejde i konsignationsprocesser
 Hvis dine kreditorer bruger leverandørsamarbejde som interface, kan de bruge dette til at overvåge forbruget af lageret på dit sted. Yderligere oplysninger om opsætning af leverandører til at anvende leverandørsamarbejde findes i [Sikkerhed for bruger af leverandørportal](../procurement/configure-security-vendor-portal-users.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Hvis antallet af bilagslinjer er 100 linjer eller derunder, køres tilbageførse
 
 Transaktioner kan kun tilbageføres, hvis de opfylder forretningsreglerne for tilbageførsel af dem. Kreditorbetalinger kan ikke tilbageføres ved hjælp af den funktion, der er beskrevet i dette emne. Kreditorbetalinger skal tilbageføres ved at følge trinnene i [Tilbageføre en kreditorbetaling](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

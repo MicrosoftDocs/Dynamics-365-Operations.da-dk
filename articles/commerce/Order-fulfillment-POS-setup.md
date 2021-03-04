@@ -131,3 +131,6 @@ Ordreopfyldning på POS'et omfatter filtrering, så brugerne nemt kan finde det,
 - Oprettet dato
 - Leveringsdato
 - Modtagelsesdato
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

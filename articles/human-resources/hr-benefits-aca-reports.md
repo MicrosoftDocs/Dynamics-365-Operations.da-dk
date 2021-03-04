@@ -68,3 +68,6 @@ Du kan eksportere lister over medarbejdere, som er genereret ved hjælp af filtr
 Hvis du skal rapportere dækkede enkeltpersoner, fordi du som arbejdsgiver tilbyder sygesikring med egendækning, kan du også få vist alle afhængige, der er omfattet af frynsegodeplaner, der er markeret som **Skal indberettes til det amerikanske skattevæsen (ACA)**, ved at vælge handlingen Vis dækning af afhængig part i handlingsrudestriben.
 
 **Bemærk!** Kun frynsegoder, hvis plan er markeret som **Skal indberettes til det amerikanske skattevæsen (ACA)** vises i forespørgselsvinduet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

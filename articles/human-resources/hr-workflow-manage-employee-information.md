@@ -73,3 +73,6 @@ Følg disse trin for at konfigurere en grundlæggende arbejdsgang, der startes, 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

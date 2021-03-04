@@ -500,3 +500,6 @@ De forespørgsler, der vises i de foregående eksempler, kunne returnere et resu
 ```
 
 Bemærk, at antalsfelterne er struktureret som en ordbog med målinger og deres tilknyttede værdier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

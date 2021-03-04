@@ -59,3 +59,6 @@ Der oprettes et planfilter, der omfatter varer A, B og C. Varedisponering kører
 [Få vist planhistorik og planlægningslogs](plan-history-logs.md)
 
 [Annullere et planlægningsjob](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

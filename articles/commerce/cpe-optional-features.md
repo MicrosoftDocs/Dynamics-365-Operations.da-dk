@@ -187,3 +187,6 @@ For hvert produkt i ordren erstattes følgende tokens med værdier.
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

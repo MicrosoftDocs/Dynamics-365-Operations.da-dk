@@ -39,3 +39,6 @@ I illustrationen nedenfor vises en oversigt over arbejdsgangen fra oprettelse af
 
 ![Figur 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

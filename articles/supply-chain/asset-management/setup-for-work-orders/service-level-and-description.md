@@ -56,3 +56,6 @@ Når du opretter en arbejdsordre, kan det være en god ide at definere serviceni
 2. Vælg **Ny**.
 3. Indtast beskrivelsen i feltet **Beskrivelse**.
 4. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Før du kan konfigurere pluklinjegruppering, skal du oprette noget kvalificeret 
 >    - Arbejdslinjer, der har uafsluttede genopfyldningsarbejde.
 >    - Overplukning.
 >    - Kort plukning med vareomfordeling
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

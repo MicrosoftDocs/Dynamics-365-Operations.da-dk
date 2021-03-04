@@ -118,3 +118,6 @@ Denne funktion findes på nuværende tidspunkt i prøveversionen. Før du følge
 [Oprette, godkende og bogføre job i Attract](./creating-jobs-attract.md)
 
 [Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

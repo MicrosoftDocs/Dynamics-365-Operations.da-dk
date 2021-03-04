@@ -135,3 +135,6 @@ Følgende tabel viser en oversigt over, hvordan forsendelseskonsolidering funger
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

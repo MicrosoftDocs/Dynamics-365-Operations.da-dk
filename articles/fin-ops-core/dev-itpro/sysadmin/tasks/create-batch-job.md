@@ -54,3 +54,6 @@ Et batchjob er en gruppe opgaver, der sendes til en AOS-forekomst (applikationso
     - **Tilbagehold**: Angiv batchjobbet som **tilbageholdt**, så det tilbageholdes fra batchjobbets planlægger. Svarer til *stop*.
     - **Venter**: Angiv batchjobbet til **venter**, så det venter på at blive afhentet af batchjobbets planlægger. Svarer til *start*.
 5. Klik på **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

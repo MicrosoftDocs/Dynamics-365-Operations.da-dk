@@ -54,3 +54,6 @@ En kostprisgruppe kan tildeles en kostprisgruppetype og en funktionsmåde til fl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

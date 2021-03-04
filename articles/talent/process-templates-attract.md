@@ -71,3 +71,6 @@ Følg disse trin for at oprette en ansættelsesprocesskabelon.
     - Hvis du vil fjerne en aktivitet, skal du udvide den og derefter vælge papirkurvsknappen i overskriften til aktiviteten.
 
 8. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

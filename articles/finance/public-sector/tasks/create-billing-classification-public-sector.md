@@ -43,3 +43,6 @@ Offentlige institutioner kan bruge faktureringsklassifikationer til at administr
 10. På listen skal du klikke på en faktureringskode, der skal føjes til denne faktureringsklassifikation.
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

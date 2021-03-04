@@ -209,3 +209,6 @@ I guiden angives følgende værdier for Contoso Retailer:
     - **Svar:** "Ja, som defineret i denne behovsplan." **1 dag** indtastes.
 
     Contoso bruger de godkendte rekvisitioner fra sine butikker til at oprette indkøbsordreforslag for at genopfylde disse butikker. Da varedisponering køres hver dag, medtages rekvisitionerne fra den sidste dag i planlægningen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 5. Vælg **Luk**. 
 6. Vælg den ønskede version af ER-konfigurationen, og vælg **Importér** for at overføre den til den aktuelle forekomst.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

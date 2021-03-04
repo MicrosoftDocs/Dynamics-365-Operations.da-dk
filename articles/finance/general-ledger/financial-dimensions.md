@@ -140,3 +140,6 @@ Du kan finde flere oplysninger under følgende emner:
 
 - [Definere økonomiske dimensioner](tasks/define-financial-dimensions.md)
 - [Vedligeholde standardskabeloner for økonomiske dimensioner](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

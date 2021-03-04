@@ -301,3 +301,6 @@ Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Beta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

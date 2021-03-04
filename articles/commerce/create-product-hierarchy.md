@@ -80,3 +80,6 @@ Kategoriattributgrupper kan også tildeles til hver gruppe efter behov.
 [Administrere produktkategorier og -produkter ](category-management-product-creation.md)
 
 [Ændre sorteringsrækkefølgen for merchandisingenheder](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

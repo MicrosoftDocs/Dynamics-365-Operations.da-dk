@@ -62,3 +62,6 @@ Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæ
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

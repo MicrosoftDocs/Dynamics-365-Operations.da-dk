@@ -113,3 +113,6 @@ Du skal køre den oprettede modeltilknytning til testformål for at se, hvordan 
     * Vælg Gennemse, og vælg filen Response4.xml.
 16. Vælg OK.
     * Gennemse det genererede output. Svartypen nu er korrekt genkendt som ens med filen Response1.xml.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

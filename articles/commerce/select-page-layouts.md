@@ -78,3 +78,6 @@ Benyt følgende fremgangsmåde for at vælge et andet layout til en eksisterende
 
 [Bekræft tilgængelighed af sideindhold](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

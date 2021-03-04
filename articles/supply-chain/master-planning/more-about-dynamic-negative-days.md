@@ -251,3 +251,6 @@ Som en hjælp til at sikre, at der er angivet de korrekte værdier for din virks
 ## <a name="see-also"></a>Se også
 
 Få mere diskussion ved at se det oprindelige blogindlæg [Mere om (dynamiske) negative dage](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

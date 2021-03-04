@@ -109,3 +109,6 @@ Følgende tabel viser de listetyper, der kan vælges i dialogboksen **Vælg prod
 [Boksmodul til køb](add-buy-box.md)
 
 [Oversigt over produktanbefalinger](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

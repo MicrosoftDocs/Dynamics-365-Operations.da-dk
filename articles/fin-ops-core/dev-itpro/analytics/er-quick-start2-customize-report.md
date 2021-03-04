@@ -514,3 +514,6 @@ Hvis du vil begynde at bruge den nye funktionalitet i version 3.3 af formatet **
 - [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 - [Hente ER-konfigurationer fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Hente ER/konfigurationer fra det globale lager til Konfigurationstjenesten](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

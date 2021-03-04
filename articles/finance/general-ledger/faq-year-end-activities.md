@@ -137,3 +137,6 @@ Dynamics 365 Finance udskriver ikke 1096 Annual Summary and Transmittal of US In
 Der er tilføjet en ny funktion til den offentlige sektor, **Opdater 1099-oplysninger efter hovedkonto**, som du kan aktivere i arbejdsområdet til **Funktionsstyring**. Med denne funktion kan du tilknytte 1099-værdierne for en kreditor til hovedkontoen i regnskabsfordelingen og ikke standardkontoen i kreditorposten.
 
 Du kan finde flere oplysninger i [Konfigurere kreditorer til 1099-rapportering](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

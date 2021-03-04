@@ -41,3 +41,6 @@ Du kan sikre dig, at kun godkendte afdelinger kan få adgang til en købsaftale.
     * Tilføj flere afdelinger, indtil alle autoriserede afdelinger er føjet til købsaftalen.  
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

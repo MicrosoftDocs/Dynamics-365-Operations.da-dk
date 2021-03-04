@@ -64,3 +64,6 @@ Webstedsvælgermodulet kan føjes til [overskriftsmodulet](author-header-module.
 [Brødkrummemodul](add-breadcrumb.md)
 
 [Navigationsmenumodul](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

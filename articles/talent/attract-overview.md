@@ -49,3 +49,6 @@ Så snart kandidaten er føjet til et job, modtager vedkommende en mail med et l
 
 ## <a name="analytic-reports"></a>Analyserapporter
 Ansættelsesteam kan bruge nøglemålepunkter for ansættelsesprocesser til et enkelt job eller samlet på tværs af alle job med [analytiske rapporter i Attract](analytic-reports.md). Denne funktion er i øjeblikket tilgængelig i en [prøveversion](access-preview-feature.md) for kunder, der har [Hvilken version af Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Du kan frigive råvarer for en del af færdigvarerne eller i en bestemt enhed.
     De enheder, der er tilgængelige, defineres i enhedens seriegruppe-id for færdigvaren.
 
     F.eks. har en færdigvare følgende enhedsomregningen mellem kilo (kg) og palle (PL) følgende: 1 PL = 100 kg. Hvis du vil oprette en produktionsordre på 10.000 kg af færdigvaren, kan du frigive råvarer til antallet af paller, du planlægger at producere. Vælg **PL** som enhed, og vælg derefter et tilsvarende antal i feltet **Antal**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

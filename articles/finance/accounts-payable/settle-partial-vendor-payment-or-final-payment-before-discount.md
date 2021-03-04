@@ -142,3 +142,6 @@ April bogfører betalingskladden og gennemgår kreditorposteringerne på siden *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

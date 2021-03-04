@@ -71,3 +71,6 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

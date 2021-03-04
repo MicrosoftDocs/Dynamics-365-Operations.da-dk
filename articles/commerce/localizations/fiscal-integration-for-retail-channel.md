@@ -150,3 +150,6 @@ Følgende regnskabsintegrationsfunktioner er også tilgængelige i Retail SDK, m
 Følgende ældre finansintegrationsfunktioner, der er tilgængelige i Retail SDK, bruger ikke strukturen for finansintegration og vil blive udfaset i senere opdateringer:
 
 - [Eksempel på integration med kontrolenhed for Sverige (forældet)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

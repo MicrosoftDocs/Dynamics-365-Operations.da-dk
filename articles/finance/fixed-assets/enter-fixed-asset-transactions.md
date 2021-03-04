@@ -68,3 +68,6 @@ Alle posteringstyper for anlægsaktiver kan bogføres på siden Finanskladde. Du
 Afskrivningsperiodernes restværdi for anlægsaktivet opdateres ikke, når en afskrivningstransaktionstypes kladdelinje oprettes manuelt eller importeres via en dataenhed. Denne værdi opdateres, når afskrivningsforslagsprocessen bruges til at oprette kladdelinjen.
 
 Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

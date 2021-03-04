@@ -61,3 +61,6 @@ Denne opgaveguide gennemgår oprettelse af en kontostruktur. Der er brugt demoda
 29. Klik på **Aktivér** i **handlingsruden**.
 30. Klik på **Aktiver**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

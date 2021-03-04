@@ -73,3 +73,6 @@ Hvis du har angivet, at der kræves en årsagskode, skal du angive en årsagskod
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

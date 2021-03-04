@@ -111,3 +111,6 @@ Der oprettes en ny styklisteskabelon vha. de linjer, der svarer til linjerne i d
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

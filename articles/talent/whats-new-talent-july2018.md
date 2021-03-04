@@ -57,3 +57,6 @@ Titler er udvidet i denne opdatering. Feltet er nu 65 tegn. Denne ændring er im
 ## <a name="benefit-enrollment-status-report"></a>Statusrapport for tilmelding til frynsegode
 
 Indbygget rapportering om åben tilmelding til frynsegoder, hjælper dig med let at forstå, hvor medarbejderne er processen med åben tilmelding. Du kan se, hvor mange medarbejdere der har fuldført processen, i øjeblikket udfylder den og ikke er startet på den. Desuden kan du hurtigt få vist eventuelle problemer, der opstår under medarbejdertilmelding og en fuld log over alle afsendelser fra medarbejdere. Du kan derfor let kontrollere og overvåge medarbejderafsendelser.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

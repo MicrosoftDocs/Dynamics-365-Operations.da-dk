@@ -162,3 +162,6 @@ Hvis du ikke har adgang til de sider, der bruges til at fuldføre denne opgave, 
 |---------------------------|---------------------------------------------------------------|
 | Licenskonfigurationsnøgle | Offentlig sektor \> Generel budgetreservation                   |
 | Sikkerhedsroller            | Du skal være medlem af sikkerhedsrollen **Budgetchef**. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

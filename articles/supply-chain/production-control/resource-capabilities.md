@@ -58,3 +58,6 @@ Når du har operationsressourcer af typen **Personale**, der er knyttet til arbe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

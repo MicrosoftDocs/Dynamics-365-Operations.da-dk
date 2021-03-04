@@ -129,3 +129,6 @@ Planlægning af spørgeskemaet kan du planlægge og fordele spørgeskemaer til f
 2. Klik på Afslut.
 3. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

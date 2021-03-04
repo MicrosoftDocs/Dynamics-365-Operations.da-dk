@@ -145,3 +145,6 @@ Når du opretter denne rapport, vises følgende standardparametre. Du kan bruge 
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

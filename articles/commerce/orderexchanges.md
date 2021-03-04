@@ -50,3 +50,6 @@ For at give bedre indsigt i de forskellige beløb for indkøbsvognen er der blev
 - **Anvendt depositum** – Det indbetalingsbeløb, der anvendes på en transaktion, når brugeren udfører en kundeordreafhentning. Hvis der ikke er nogen tilsidesættelse af indbetalt beløb, og et depositum på 10 procent er konfigureret, er beløbet i dette felt 90 procent af det samlede beløb for kundeordren.
 - **Udførelsesbeløb** – Det samlede beløb for linjer, hvor leveringsmåden blev angivet til **Udfør**, da ordren blev oprettet eller redigeret, eller under en kundeordreudveksling. Beløbet i dette felt omfatter moms og gebyrer.
 - **Returbeløb** – Det samlede beløb for linjer med negative antal under kundeordreudvekslingen. Beløbet i dette felt omfatter moms og gebyrer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

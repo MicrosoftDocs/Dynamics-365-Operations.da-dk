@@ -56,3 +56,6 @@ Hvis en arbejdsordre skal planlægges på en bestemt dato *og* et bestemt klokke
 >[!NOTE]
 >Hvis du vil planlægge en vedligeholdelsesarbejder til arbejdsordren, skal denne arbejder være tilgængelig på den forventede startdato og -klokkeslæt. Arbejderes tilgængelighed konfigureres i [Arbejderens kalender](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md). 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

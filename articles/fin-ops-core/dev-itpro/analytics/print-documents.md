@@ -74,3 +74,6 @@ Følgende diagram viser de grundlæggende komponenter, der kan understøtte netv
 [![servicekomponenter-til-netværksudskrivning\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Bemærk, at en enkelt printer kan registreres med flere dokumentruteplanlægningsagenter. For at håndtere printerindstillingerne bruger den hostede tjeneste netværksstien, der entydigt identificerer hver netværksprinter. Når der registreres en printer af flere klienter, vises den således som et enkelt punkt på listen over printere, som er tilgængelige i programmer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -260,3 +260,6 @@ Derfor påvirker de øvrige indstillinger (jobstyring, arbejdstid og kapacitet) 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

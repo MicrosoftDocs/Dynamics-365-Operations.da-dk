@@ -79,3 +79,6 @@ Arbejdstidsskabeloner definerer arbejdstiderne i hele ugen og bruges til at gene
 3. Udvid afsnittet Søndag.
 4. Vælg Ja i feltet Lukket for afhentning.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

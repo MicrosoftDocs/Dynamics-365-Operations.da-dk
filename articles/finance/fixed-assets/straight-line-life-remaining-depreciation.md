@@ -80,3 +80,6 @@ Afskrivningsbeløbet er det samme hvert år: (Anskaffelsesomkostning – Restvæ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

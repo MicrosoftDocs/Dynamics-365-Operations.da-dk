@@ -70,3 +70,6 @@ I følgende illustration vises et eksempel på en e-handelsbetalingside, der ind
 [Ordrebekræftelsesmodul](order-confirmation-module.md)
 
 [Ordredetaljer-modul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

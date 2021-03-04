@@ -146,3 +146,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 5. Vælg den færdige version af den aktuelle konfiguration.
     * Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Følg disse trin for at oprette en transportmetode:
 1. Vælg **Ny** for at oprette en ny transportmetode.
 1. Angiv et entydigt id og et sigende navn for transportmetoden.
 1. Luk siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

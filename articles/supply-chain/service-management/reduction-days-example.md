@@ -121,3 +121,6 @@ Når posteringerne for marts 2011 faktureres, reduceres salgsprisen på EUR 200 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

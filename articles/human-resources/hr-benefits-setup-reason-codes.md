@@ -41,3 +41,6 @@ Dynamics 365 Human Resources bruger årsagskoder til at forklare, hvorfor en med
    | **Beskrivelse** | En beskrivelse af årsagskoden. |
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Dialogboksen returnerer DTT-oplysningerne fra Supply Chain Management. Disse opl
 - Tilgangsantal
 - Afgangsantal
 - Beholdningsantal
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

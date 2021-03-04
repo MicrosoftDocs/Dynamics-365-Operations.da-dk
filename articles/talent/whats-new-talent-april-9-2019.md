@@ -90,3 +90,6 @@ Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefe
 
 ###  <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
 Med platformsopdatering 25 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender mailbeskeder til kontaktpersoner, når de udløses af en hændelse. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

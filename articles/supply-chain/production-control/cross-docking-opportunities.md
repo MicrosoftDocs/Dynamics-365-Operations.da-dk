@@ -127,3 +127,6 @@ Når et produkt er færdigmeldt på produktionslinjen, overføres det til en lag
 -   Cross-docking-scenariet understøttes for batch- og seriekontrollerede varer, begge med de batch- og serienummerdimensioner, der er defineret over og under placeringen i reservationshierarkiet. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

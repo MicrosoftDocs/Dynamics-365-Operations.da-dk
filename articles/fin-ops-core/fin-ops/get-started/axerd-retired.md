@@ -35,3 +35,6 @@ HTML-siderne er i lageret på [https://github.com/Microsoft/ax-2012-doc-tools/tr
 Der findes en beskrivelse af, hvordan du opretter dine egne ERD'er på: [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
 Løsningen er i roden af mappen AxErd [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

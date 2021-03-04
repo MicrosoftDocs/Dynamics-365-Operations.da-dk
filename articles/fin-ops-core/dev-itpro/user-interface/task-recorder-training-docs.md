@@ -123,3 +123,6 @@ Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til di
 [Arbejdsrutineoptager](task-recorder.md)
 
 [Opret avancerede emner i Hjælp med Arbejdsrutineoptager (eksternt link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

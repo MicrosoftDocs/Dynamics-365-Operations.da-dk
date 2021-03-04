@@ -49,3 +49,6 @@ Du kan oprette frynsegodeplaner for arbejdere i Microsoft Dynamics 365 Human Res
    | Planer | Oversigtspanelet Planer indeholder de planer, der opfylder de angivne filterkriterier. De relevante konfigurationsindstillinger, der blev angivet af personalemedarbejdere, og de tilmeldingsvalg, der er valgt af medarbejdere, medtages på hver linje. Feltet Kvalificeret angiver, om der er en valideringskonflikt med den valgte plan. |
 
 4. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

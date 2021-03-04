@@ -932,3 +932,6 @@ Du kan få vist og udskrive bølgeetiketter fra følgende sider:
 - Historik for bølgelabel
 
 På de fleste af disse sider kan du finde den relevante funktion ved at vælge **Bølgeetiketter** i gruppen **Relaterede oplysninger** under fanen **Forsendelser** i handlingsruden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Følgende tabel viser de visualiseringer, der er tilgængelig på hver rapportsi
 | Vurderingstilknytninger        | Anlægsaktivoplysninger |
 
 For at få vist analyser med data skal du først opdatere den samlede måling af AssetTransactionMeasure på siden **Enhedslager**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

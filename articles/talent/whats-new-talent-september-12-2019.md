@@ -104,3 +104,6 @@ Denne version giver nu mulighed for at anvende kontrollister for medarbejdere, d
 Denne funktionalitet er nu tilgængelig i sandkassemiljøer. Hvis du vil aktivere funktionen, skal du gå til **Systemadministration > Links > Opsætning > Systemparametre > Funktioner i prøveversion**. Vælg **Udvidet arbejderform og navigation**. Dette aktiverer disse ændringer for alle brugere. Du kan deaktivere denne indstilling på et hvilket som helst tidspunkt.
 
 Du kan finde oplysninger under [Strømlinet medarbejderangivelse og navigation](./streamlined-employee-entry.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

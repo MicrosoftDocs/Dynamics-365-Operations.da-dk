@@ -41,3 +41,6 @@ For at afslutte gyldigheden og behandlingen af en version af produktionsflowet p
 6. Angiv dato og klokkeslæt i feltet Udløbsdato.
     * For udløbsdatoen starter der ikke eller deaktiveres der ikke en ny version. Det vil heller ikke længere være muligt at oprette eller starte job for denne produktionsflow. Du kan stadig fuldføre igangsatte job efter udløbsdatoen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

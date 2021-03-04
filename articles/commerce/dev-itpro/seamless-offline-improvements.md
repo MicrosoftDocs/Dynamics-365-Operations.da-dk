@@ -56,3 +56,6 @@ Commerce-parametrene lagres typisk i cachen. Når indstillingen af denne paramet
 
 - [Offline POS-funktionalitet (Point Of Sale)](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [POS-handlinger, online og offline](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

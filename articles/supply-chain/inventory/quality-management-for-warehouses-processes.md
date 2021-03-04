@@ -622,3 +622,6 @@ Du har konfigureret arbejds- og lokalitetsdataene for lagersted 51 for at sikre,
 
 > [!NOTE]
 > Overvej at føje kvalitet ud-posten til et menupunkt i en mobilenhed, hvor aktivitetskoden er *Vis åben arbejdsliste*. Du kan finde et eksempel i menupunktet på mobilenheden, der hedder **Opgaveliste** i demodataene. Du skal først føje arbejdsklassen *Kvalitetsordre* til et brugerstyret menupunkt, da denne arbejdsopgave er nødvendig, for at arbejdet kan vises på opgavelisten. Føj derefter klassen *Kvalitetsordre* til menupunktet **Arbejdsliste**. Brugere, der har adgang til opgavelisten, vil derefter kunne plukke og behandle det arbejde, der automatisk genereres af en kvalitetsordrevalidering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

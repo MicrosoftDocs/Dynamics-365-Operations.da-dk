@@ -64,3 +64,6 @@ Det demodatafirma, der bruges til at oprette denne post, er USRT. Denne registre
 5. Klik på Eksporter.
 6. Klik på PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

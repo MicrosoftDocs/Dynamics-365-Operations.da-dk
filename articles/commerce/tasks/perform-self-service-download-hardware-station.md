@@ -37,3 +37,6 @@ Denne procedure gennemgår download af en ny foruddefineret hardwarestation. Det
 5. Find og vælg den ønskede post på listen.
 6. Klik på Hent.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Når du vil aktivere prisrapporten, skal parameteren **Aktivér prisrapport for 
 | Vis produkter med prisændringer | Hvis du vælger **Ja** i denne indstilling, viser kun priserne for de datoer, hvor prisen er blevet ændret. Prisen for *én dag før* den valgte **Fra dato** vises altid, så butikschefen kan nemt identificere de produkter, der ikke har ændret pris i den samlede valgte varighed, og de kan også få vist den aktuelle pris. |
 
 Når rapporten er oprettes, kan Excel-filen hentes ved eventuelle yderligere behov for filtrering. Prisrapporten kan også bruges til at kontrollere historiske priser på varer for datoer i fortiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

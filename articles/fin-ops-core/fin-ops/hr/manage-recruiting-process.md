@@ -103,3 +103,6 @@ Hvis en ansøgning skal gennemses af flere arbejdere, kan du bruge siden **Ansø
 ## <a name="hiring-applicants"></a>Ansætte ansøgere
 
 Brug siden **Ansøgninger** til at ansætte en ansøger. Når du ansætter en ansøger, får ansøgerposten statussen **Ansat**, og ansøgerens personpost i det globale adressekartotek knyttes til den nye medarbejderpost. Ændringerne i oplysningerne i det globale adressekartotek for den nye medarbejderpost, vises også i ansøgerposten. Dette kan hjælpe med at reducere indtastning af data, hvis den nye medarbejder på et tidspunkt søger et andet job i din virksomhed. Hvis du vil ansætte en eksisterende arbejder til en ny stilling, skal du klikke på **Skift stilling** i rullemenuen **Ansøgningsstatus** for at starte overførslen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

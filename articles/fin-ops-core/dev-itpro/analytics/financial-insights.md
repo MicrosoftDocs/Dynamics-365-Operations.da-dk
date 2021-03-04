@@ -247,3 +247,6 @@ Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integ
 - [Få adgang til analytiske arbejdsområder og rapporter i 1-box-miljøet](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

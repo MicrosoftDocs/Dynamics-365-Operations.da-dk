@@ -249,3 +249,6 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 - [Konfigurere format for at udføre optælling og sammenlægning](./tasks/er-format-counting-summing-1.md)
 - [Spore kørsel af ER-format for at foretage fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 - [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

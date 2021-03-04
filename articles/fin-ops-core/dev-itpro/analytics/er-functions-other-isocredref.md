@@ -60,3 +60,6 @@ Den returnerede tekstværdi.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Andre (forretningsdomænespecifikke) funktioner](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

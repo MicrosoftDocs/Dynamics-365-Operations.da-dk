@@ -96,3 +96,6 @@ Under fanen **Valutaomregning** kan du definere den juridiske enhed, kontoen og 
 Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

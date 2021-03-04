@@ -56,3 +56,6 @@ Denne procedure viser, hvordan du planlægger produktionsordrer, der endnu ikke 
 4. Klik på Materialer.
     * På denne side kan du se det forkalkulerede materialeforbrug for operationer på produktionsordren og den aktuelle disponible beholdning.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

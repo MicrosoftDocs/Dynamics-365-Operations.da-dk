@@ -254,3 +254,6 @@ Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

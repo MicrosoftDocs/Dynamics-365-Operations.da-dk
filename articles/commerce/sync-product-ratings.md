@@ -135,3 +135,6 @@ I følgende illustration vises et eksempel på produktvurderinger i callcenter-k
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

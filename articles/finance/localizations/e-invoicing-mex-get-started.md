@@ -299,3 +299,6 @@ Aktivering af funktionerne MX-00010 og MX-00016 (CFDI-faktura og CFDI-annullerin
 - [Oversigt over tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-service-overview.md)
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md)
 - [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

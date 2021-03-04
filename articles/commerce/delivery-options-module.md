@@ -83,3 +83,6 @@ Et leveringsindstillingsmodul kan kun føjes til et betalignsmodul. Du kan finde
 [Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md)
 
 [Konfigurer leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

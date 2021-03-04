@@ -57,3 +57,6 @@ Derudover kan en markedsføringschef i den forbedrede struktur for produktkatego
 Du kan bruge den nye forbedrede struktur for produktegenskaber til at vælge, hvilke opdaterede produktegenskaber der skal anvendes til de tilknyttede produkter. På siden **Commerce-produkthierarki** i handlingsruden skal du vælge **Kategori**. Vælg derefter **Opdater produkter** for at åbne dialogboksen **Opdater produkter**.
 
 ![Dialogboksen Opdater produkter](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ I følgende tabel vises den generiske regel.
 | Indgående moms | Negativ              | Indgående momskonto | Negativ (kredit)  |
 | Udgående moms    | Positiv              | Udgående momskonto    | Negativ (kredit)  |
 | Udgående moms    | Negativ              | Udgående momskonto    | Positiv (debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

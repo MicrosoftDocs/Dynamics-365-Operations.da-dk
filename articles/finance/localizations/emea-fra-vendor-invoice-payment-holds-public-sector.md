@@ -72,3 +72,6 @@ Hvis du er tildelt til den samme brugerrolle som den bruger, der angav spærring
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

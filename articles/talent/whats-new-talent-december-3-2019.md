@@ -180,3 +180,6 @@ Prøveversionsfunktioner er kun tilgængelige i **Sandkasse**-miljøer.
 ### <a name="print-performance-reviews"></a>Udskiv performancegennemgange
 
 Se [Udskrive performancegennemgange](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) i Dynamics 365: 2019 frigivelsesbølge 2-plan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

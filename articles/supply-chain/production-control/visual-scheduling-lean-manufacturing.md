@@ -95,3 +95,6 @@ Du kan åbne kanban-planlægningsområdet ved hjælp af menupunktet på følgend
 
 [Tidsplanlægning af kanban-job for lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

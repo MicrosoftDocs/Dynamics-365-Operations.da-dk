@@ -123,3 +123,6 @@ I følgende illustration vises et eksempel på en e-handelsordre, hvor der er va
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Modul med afhentningsoplysninger](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

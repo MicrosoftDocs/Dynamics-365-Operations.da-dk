@@ -261,3 +261,6 @@ Der skal være oprettet fire forsendelser:
 
 - [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
 - [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

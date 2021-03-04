@@ -66,3 +66,6 @@ Følgende typer moduler findes i modulbiblioteket:
 [Sidehovedmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

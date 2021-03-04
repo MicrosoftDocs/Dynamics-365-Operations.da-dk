@@ -43,3 +43,6 @@ Kalendere beskriver kapacitet og arbejdstider for operationsressourcer. Denne ar
 12. Vælg **OK**.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

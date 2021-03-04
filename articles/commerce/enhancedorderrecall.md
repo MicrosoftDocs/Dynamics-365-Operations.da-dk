@@ -64,3 +64,6 @@ Fra applinjen kan en bruger vælge en operation. Afhængigt af status for ordren
 - **Rediger** – Giver brugerne mulighed for at foretage ændringer i den valgte kundeordre.
 
 - **Afhent** – Starter afhentningsflowet, hvilket giver brugeren mulighed for at vælge de produkter, der skal afhentes, og opretter salgsposteringen for afhentning.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

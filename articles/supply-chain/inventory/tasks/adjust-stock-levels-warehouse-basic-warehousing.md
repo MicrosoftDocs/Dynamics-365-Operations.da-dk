@@ -60,3 +60,6 @@ Denne fremgangsmåde fører dig gennem processen med at oprette og bogføre en l
 5. Luk formularen.
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

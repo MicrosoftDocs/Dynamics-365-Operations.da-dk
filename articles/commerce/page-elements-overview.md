@@ -64,3 +64,6 @@ Følgende tabel indeholder en oversigt over ord, som du skal være bekendt med, 
 [Oversigt over skabeloner og layout](templates-layouts-overview.md)
 
 [Tilpasse navigation på webstedet](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

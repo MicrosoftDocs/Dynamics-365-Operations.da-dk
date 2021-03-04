@@ -53,3 +53,6 @@ Hvis du vil redigere økonomiske dimensioner for detailtransaktioner i hovedkont
 [Oprette en Excel-projektmappe for at redigere detailtransaktioner](create-excel-edit.md)
 
 [Føje felter til en Excel-projektmappe for at redigere detailtransaktioner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

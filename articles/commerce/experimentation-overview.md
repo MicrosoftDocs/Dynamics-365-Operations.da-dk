@@ -57,3 +57,6 @@ Du kan finde flere oplysninger om hvert trin i eksperimenteren-processen under f
 
 ## <a name="next-step"></a>Næste trin
 [Identificere en hypotese og fastslå succesmålepunkter for et eksperiment](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

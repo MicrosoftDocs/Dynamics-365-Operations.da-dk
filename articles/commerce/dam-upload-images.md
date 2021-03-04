@@ -97,3 +97,6 @@ Følg disse trin for at masseuploade en mappe med billeder i webstedsgenerator.
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

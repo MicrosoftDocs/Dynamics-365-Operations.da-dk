@@ -185,3 +185,6 @@ De fleste af felterne på tekniske ændringsordrer er de samme som felterne for 
 | Miljø, sundhed og sikkerhed | Angiv, om miljøets tilstands- og sikkerhedsregler gælder for ændringen. Hvis de gør, kan du derefter vælge de relevante regler. |
 
 Du kan bruge knappen **Vedligehold/kopiér ændringsoplysninger** til at kopiere ændringsoplysninger mellem berørte produkter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

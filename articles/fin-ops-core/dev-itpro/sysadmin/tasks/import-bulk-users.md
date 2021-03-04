@@ -58,3 +58,6 @@ Når importen er fuldført, skal du tildele roller til brugere.
 ## <a name="run-in-a-sandbox-environment"></a>Køre i et sandkassemiljø
 1. Vælg **Batchimport**.
 2. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

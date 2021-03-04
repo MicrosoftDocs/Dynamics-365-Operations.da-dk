@@ -54,3 +54,6 @@ Denne fremgangsmåde viser, hvordan du opretter en tillægsmaster for en hub og 
 9. Klik på Gem.
 10. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

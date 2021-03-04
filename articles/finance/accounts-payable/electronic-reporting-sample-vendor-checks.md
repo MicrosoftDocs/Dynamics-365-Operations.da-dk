@@ -44,3 +44,6 @@ Microsoft Dynamics 365 Finance omfatter også et eksempelformat, hvor checken er
 - Når du genererer betalinger for den konfigurerede bankkonto i betalingskladden, udskrives checks ved hjælp af det angivne format.
 
 Du kan finde flere oplysninger under [Redigere et elektronisk rapporteringsformat](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

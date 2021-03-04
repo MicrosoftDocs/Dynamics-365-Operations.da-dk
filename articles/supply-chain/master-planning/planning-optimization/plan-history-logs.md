@@ -47,3 +47,6 @@ Ud over at se starttidspunkt og status for job, kan du få vist loggen for et be
 [Anvend filtre på en plan](plan-filters.md)
 
 [Annullere et planlægningsjob](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

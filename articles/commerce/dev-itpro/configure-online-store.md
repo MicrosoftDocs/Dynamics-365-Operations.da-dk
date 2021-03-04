@@ -62,3 +62,6 @@ Emnerne i følgende tabel kan hjælpe dig med at konfigurere Commerce-komponente
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

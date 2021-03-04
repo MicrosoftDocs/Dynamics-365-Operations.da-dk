@@ -57,3 +57,6 @@ Brugere, som manuelt tildeles sikkerhedsroller, skal også fjernes manuelt af ad
 2. Vælg en rolle i træet, og vælg **Tildel brugere roller/udeluk brugere fra roller manuelt** i menuen **Brugere, der er tildelt til rollen**.
 4. I **Tildel brugere til roller, eller udeluk brugere fra roller** vises de brugere, der ikke er tildelt til rollen, med **Tildelingstilstand** angivet til **Ingen**. Vælg en eller flere brugere, der skal have tildelt rollen.
 5. Vælg **Tildel til rolle** i **handlingsruden**. **Tildelingstilstand** opdateres til **Manuel**, og brugerne har nu fået tildelt en ny rolle.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

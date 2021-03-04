@@ -131,3 +131,6 @@ Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfylde
 Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

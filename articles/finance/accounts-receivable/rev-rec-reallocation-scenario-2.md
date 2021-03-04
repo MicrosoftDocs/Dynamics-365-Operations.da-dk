@@ -90,3 +90,6 @@ Den anden salgsordre er nu faktureret. Den samlede faktura, der vises til kunden
 [![Siden Posteringer på bilag med den regnskabspost, der er bogført](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Da summen af omsætningen og salget er større end $1.170,44, bogføres differencen på $-130,17. Dette beløb rydder saldoen fra kontoen til clearing for delfakturaomsætning. Den pågældende saldo bogføres i den nye regnskabspost efter omfordelingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

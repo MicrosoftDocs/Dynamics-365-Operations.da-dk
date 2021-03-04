@@ -93,3 +93,6 @@ Muligheden for at spor medarbejdernes fridage og forstå, hvordan fridagene bere
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Angive en forekomsttype under klargøring af Talent
 
 Når du klargør en ny forekomst af Talent, kan du angive, om forekomsttypen er **Produktion** eller **Sandkasse**, hvilket giver mulighed for tidlig test af nye funktioner. Alle eksisterende Talent-forekomster vil blive opdateret til Produktion-forekomsttypen. Hvis en af de eksisterende forekomster skal opdateres til Sandkasse-forekomsttypen, skal du kontakte Support for at starte ændringsanmodningen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

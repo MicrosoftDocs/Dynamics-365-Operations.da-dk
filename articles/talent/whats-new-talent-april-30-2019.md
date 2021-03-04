@@ -101,3 +101,6 @@ Muligheden for at spor medarbejdernes fridage og forstå, hvordan fridagene bere
 ### <a name="email-support-for-alerts"></a>E-mailunderstøttelse til påmindelser
 
 I platformsopdatering 26 til Finance and Operations kan brugerne oprette påmindelsesregler, som automatisk fremsender e-mailbeskeder til kontaktpersoner, når beskeder udløses af en hændelse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Denne guide hjælper dig med at oprette en definition af forældelsesperiode, al
 2. Vælg en kunde med en saldo.
 3. Udvid faktaboksen **Aldersfordeling** for at få vist de aldersfordelte saldi. Definitionen af forældelsesperioden for faktaboksen hentes fra den definition af standardforældelsesperiode, som er angivet i parametrene. Du kan ændre den ved hjælp af menuen Indsaml.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

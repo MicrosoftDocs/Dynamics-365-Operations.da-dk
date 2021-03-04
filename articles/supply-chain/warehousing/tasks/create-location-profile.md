@@ -43,3 +43,6 @@ Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Sup
 10. Vælg **Ja** i feltet **Tillad cyklusoptælling**.
 11. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

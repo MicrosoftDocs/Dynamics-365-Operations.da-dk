@@ -58,3 +58,6 @@ Du kan definere standardbeskrivelser af interne udligningsbilag. Standardbeskriv
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -344,3 +344,6 @@ De resultater, der vises i indsendelsesloggen, afhænger af, hvordan e-faktureri
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien](e-invoicing-ita-get-started.md)
 - [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

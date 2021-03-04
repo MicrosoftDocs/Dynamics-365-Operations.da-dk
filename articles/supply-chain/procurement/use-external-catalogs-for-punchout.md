@@ -55,3 +55,5 @@ Når indkøbsrekvisitionen er klar, kan du bruge handlingen **Arbejdsgang** > **
 
 - [Konfigurere et eksternt katalog til PunchOut e-indkøb](set-up-external-catalog-for-punchout.md)
 - [Forbedringer af indkøbs-cXML](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

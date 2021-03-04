@@ -98,3 +98,6 @@ Følg disse trin for at uploade en fil til Commerce-webstedsgenerator.
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

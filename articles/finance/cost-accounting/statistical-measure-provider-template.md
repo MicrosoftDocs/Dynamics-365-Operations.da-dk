@@ -346,3 +346,6 @@ Hvis elektricitetens foruddefinerede fordelingsbasis for dimensionsmedlemmer til
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Fordelingsgrundlag](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

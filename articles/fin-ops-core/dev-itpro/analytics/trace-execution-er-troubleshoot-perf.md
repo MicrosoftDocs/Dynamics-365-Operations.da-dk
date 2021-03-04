@@ -376,3 +376,6 @@ Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indehol
 
 - [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 - [Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

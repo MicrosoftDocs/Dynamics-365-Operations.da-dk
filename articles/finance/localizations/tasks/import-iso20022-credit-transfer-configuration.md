@@ -45,3 +45,6 @@ Det er den første af fem opgaver, der tilsammen illustrerer kreditors betalings
     * Hvis knappen Importer ikke er tilgængelig, betyder det, at denne konfiguration allerede er importeret.  
 9. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

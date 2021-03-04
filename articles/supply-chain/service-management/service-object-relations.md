@@ -78,3 +78,6 @@ Få adgang til styklistedesigneren ved brug af en serviceobjektrelation
 
 Hvis serviceordrer oprettes automatisk for en serviceaftale, oprettes serviceobjektrelationerne i aftalen også i serviceordrerne.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

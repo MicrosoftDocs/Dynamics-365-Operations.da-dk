@@ -46,3 +46,6 @@ En konsolideret batchordre kan indeholde enhver kombination af følgende ordrer:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

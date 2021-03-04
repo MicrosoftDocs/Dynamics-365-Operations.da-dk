@@ -149,3 +149,6 @@ Arnie bogfører denne betalingskladde og gennemgår debitorposteringerne på sid
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

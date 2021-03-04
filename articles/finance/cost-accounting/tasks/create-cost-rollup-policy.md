@@ -68,3 +68,6 @@ Denne procedure viser, hvordan du opretter en politik for omkostningstotaler og 
     * Fortsæt, indtil alle bærere er knyttet til de tilsvarende sekundære omkostningselementer.  
 16. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

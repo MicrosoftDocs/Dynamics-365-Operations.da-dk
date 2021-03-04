@@ -75,3 +75,6 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
     * Gennemse strukturen af det format, der bruges til at generere Intrastat-rapporten. Bemærk, at det er udviklet til at oprette en XML-fil ved at udfylde data fra den datamodel, der er baseret på rodelementet 'For udgående dokument'. Kontroller, at navnet på den genererede fil er defineret i brugerdialogboksformularen ('fn'-datakilden bruges til det).   
 30. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

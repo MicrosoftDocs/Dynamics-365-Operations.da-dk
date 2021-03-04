@@ -114,3 +114,6 @@ Følgende emner gennemgår forskellige scenarier for indtægtsføring:
 - [Omplacering af indtægtsføring – Eksempel 2](rev-rec-reallocation-scenario-2.md) - Der angives to salgsordrer, og kunden føjer en vare til kontrakten, efter at den første salgsordre er faktureret.
 - [Omplacering af indtægtsføring – Eksempel 3](rev-rec-reallocation-scenario-3.md) - Der føjes en ny linje til en eksisterende faktureret salgsordre.
 - [Omplacering af indtægtsføring - Eksempel 4](rev-rec-reallocation-scenario-4.md) - Der fjernes en linje fra en eksisterende delvist faktureret salgsordre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

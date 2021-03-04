@@ -49,3 +49,6 @@ Denne opgaveguide viser, hvordan du kan registrere kreditorfakturaer, der ikke e
 12. Klik på **Bogfør**.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

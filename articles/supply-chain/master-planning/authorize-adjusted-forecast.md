@@ -51,3 +51,6 @@ Det er meget vigtigt, at du forstår, hvordan afkrydsningsfeltet **Importér de 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

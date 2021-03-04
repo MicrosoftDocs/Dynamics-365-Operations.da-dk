@@ -94,3 +94,6 @@ Du skal angive den tekniske kategori, som produktet tilhører. Kategorien angive
 Du kan bruge teknisk attributsøgning til at finde produkter ved at søge efter deres tekniske attributters værdier. Derfor kan du nemt finde tekniske produkter baseret på deres egenskaber. Du kan søge i de produkter, der tilhører en teknisk produktkategori, eller du kan søge på tværs af alle tekniske produkter.
 
 Søgningen er tilgængelig på produkters masterdatasider og fra transaktionselementer i systemet, f.eks. salgsordrer. I forbindelse med et transaktionselement kan du bruge siden **Teknisk attributsøgning** til at søge efter et produkt. Du kan derefter bruge knappen **Tilføj som ny linje** til at føje produktet til salgsordrelinjerne. Produkter i søgeresultaterne kan også føjes direkte til ordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

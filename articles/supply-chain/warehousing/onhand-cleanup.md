@@ -58,3 +58,6 @@ Som standard er indstillingen for **Maksimal kørselstid** ikke tilgængelig. Hv
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Den maksimale kørselstid for job til oprydning i disponible poster til lokationsstyring*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

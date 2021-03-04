@@ -54,3 +54,6 @@ Denne procedure viser, hvordan du opretter et valgkriterium for salgspris til at
 4. Vælg Kundegruppe 10 i feltet Kriterier. 
 5. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

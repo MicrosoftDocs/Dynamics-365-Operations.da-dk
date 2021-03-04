@@ -78,3 +78,6 @@ Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

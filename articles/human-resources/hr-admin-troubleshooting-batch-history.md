@@ -64,3 +64,6 @@ Planlæg en automatisk opgave for at rydde op i historikken for batchjob. Vi anb
 
 8. Rediger andre parametre under **Kør i baggrunden** efter behov, og vælg derefter **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

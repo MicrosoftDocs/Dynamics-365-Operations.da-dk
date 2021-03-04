@@ -69,3 +69,6 @@ Når felterne i Sales er udfyldt, gælder følgende begrænsninger:
 + Opsætningen af gebyrer og gebyrtildelinger i Supply Chain Management replikeres ikke i Sales.
 + Prissætningen tager ikke hensyn til den særlige detailpris, der er angivet i feltet **Detailkanal** på siden med salgsordrelinjer i Supply Chain Management.
 + Rabatter, der er defineret i sektionen **Administration af handelstilladelse** i Supply Chain Management, tages ikke i betragtning.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

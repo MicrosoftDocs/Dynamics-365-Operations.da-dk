@@ -91,3 +91,6 @@ Hvis du vil føje en ny side til dit websted, skal du følge disse trin.
 [Forbedre en kategorilandingsside](enrich-category-page.md)
 
 [Bekræft tilgængelighed af sideindhold](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

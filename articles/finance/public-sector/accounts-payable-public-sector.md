@@ -115,3 +115,6 @@ Du kan finde flere oplysninger under følgende emner:
 [Importere og oprette flere engangskreditorer og fakturaer](tasks/import-multiple-one-time-vendors.md)
 
 [Konfigurer købsaftaleklassifikationer](tasks/set-up-purchase-agreement-classifications-public-sector.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

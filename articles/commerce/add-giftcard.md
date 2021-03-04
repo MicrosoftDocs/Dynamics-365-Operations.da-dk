@@ -94,3 +94,6 @@ Du kan få flere oplysninger om, hvordan du føjer et gavekortmodul til en betal
 [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md)
 
 [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

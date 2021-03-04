@@ -157,3 +157,6 @@ Til testformål skal du udføre formattilknytningen ved hjælp af filen SampleIn
 2. Klik på OK.
     * Gennemgå outputtet i XML-format, som viser de data, der er importeret fra den valgte fil og overført til datamodellen. Bemærk, at kun 3 linjer i den importerede TXT-fil blev behandlet. IBAN-koden på linje 4, der er ugyldig, blev sprunget over, og der findes en fejlmeddelelse i infologgen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

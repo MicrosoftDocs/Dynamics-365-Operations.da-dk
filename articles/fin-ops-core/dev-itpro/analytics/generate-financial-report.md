@@ -156,3 +156,6 @@ Når du kører en manglende kontoanalyse, er følgende tastaturgenveje tilgænge
 [Økonomirapportering](financial-reporting-intro.md)
 
 [Brugergrænseflade i Rapportdesigner](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Følgende PowerBI.com-løsninger er tilgængelige fra [Microsoft AppSource](http
 - Omkostningsstyring
 - [Driftsregnskab](financial-performance-power-bi-content-pack.md)
 - [Detailkanalperformance](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

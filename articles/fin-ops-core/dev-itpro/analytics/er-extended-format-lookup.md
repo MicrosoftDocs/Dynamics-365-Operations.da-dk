@@ -91,3 +91,6 @@ Hvis du har aktiveret funktionen **Udvidet opslag for ER-formatkonfigurationer m
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [API-struktur til elektronisk rapportering (ER)](er-apis-app73.md)
 - [Administrere livscyklus for konfigurationer af elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

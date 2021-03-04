@@ -48,3 +48,6 @@ I denne artikel beskrives, hvordan du kan køre processen til berettigelse til l
    4. Vælg **OK**. Processen køres med de parametre, du angiver.
 
 4. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

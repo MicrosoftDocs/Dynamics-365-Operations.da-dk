@@ -83,3 +83,6 @@ Hvis du vil konfigurere en URL-adresse, så den kan åbnes i POS, skal du udfør
 5. Vælg **Åbn URL** som handling.
 6. Angiv den URL-adresse, du vil bruge.
 7. Angiv, om URL-adressen skal åbnes i et nyt vindue.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

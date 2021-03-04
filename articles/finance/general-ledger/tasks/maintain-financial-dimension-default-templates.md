@@ -42,3 +42,6 @@ Dette emne viser, hvordan du konfigurerer standardskabeloner for økonomiske dim
 11. Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.
 12. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

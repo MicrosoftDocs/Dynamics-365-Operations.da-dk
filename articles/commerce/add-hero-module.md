@@ -107,3 +107,6 @@ Hvis du vil føje et hero-modul til en ny side og angive de påkrævede egenskab
 [Tekstblokmodul](add-content-rich-block.md)
 
 [Videoafspillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

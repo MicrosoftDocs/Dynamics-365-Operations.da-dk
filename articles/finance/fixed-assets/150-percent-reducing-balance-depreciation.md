@@ -88,3 +88,6 @@ Metoden med 150 % saldoafskrivning dividerer de 150 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

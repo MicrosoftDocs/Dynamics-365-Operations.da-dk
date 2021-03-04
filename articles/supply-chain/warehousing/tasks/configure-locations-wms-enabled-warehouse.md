@@ -175,3 +175,6 @@ Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt
 6. Klik op linket i den valgte række på listen.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

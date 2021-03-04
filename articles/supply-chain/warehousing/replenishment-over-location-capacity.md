@@ -408,3 +408,6 @@ Du kan nu plukke salgsordre 2. Spærringen blev ophævet, da genopfyldningsarbej
 - Du kan manuelt tilsidesætte genopfyldningsarbejdets tilgængelighed for hver arbejdsoverskrift fra siden **Arbejdsdetaljer**, hvis du ønsker det.
 - Når systemet angiver genopfyldningsarbejdets tilgængelighed, tages der højde for ethvert lager, der allerede findes på lokationen, før et arbejde fuldføres.
 - Hvert stykke af salgsordrearbejdet er knyttet til et bestemt genopfyldningsarbejde. Der findes ingen tilsvarende funktionalitet for tilgængeligt salgsarbejde.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

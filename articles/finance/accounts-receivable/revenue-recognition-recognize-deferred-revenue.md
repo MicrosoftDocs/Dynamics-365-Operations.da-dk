@@ -108,3 +108,6 @@ Kontraktændringerne har følgende indvirkninger på oplysningerne i indtægtsti
 - Hvis der er registreret indtægt for produktet, blev en del af indtægten fejlagtigt registreret, fordi registreringen blev baseret på den forkerte indtægtstidsplan. Disse linjer skal tilbageføres og registreres igen på baggrund af den nye tidsplan. I dette scenarie oprettes der nye indtægtstidsplanlinjer med negative beløb på den oprindelige registreringsdato. Der oprettes derefter nye linjer for at registrere beløbene ud fra den nye indtægtstidsplan. D. 8. august 2019 registrerede du f.eks. indtægt på 10,53 USD. Den 8. september 2019 registrerede du indtægt på 13,16 USD. Derfor oprettes der to nye linjer på samme dato. Én linje er for 10,53 USD, og den anden linje er for 13,16 USD. Der oprettes derefter fireogtyve nye linjer, og den samlede udskudte indtægt på 160,61 USD tildeles på tværs af dem. Du kan bogføre tilbageførselslinjerne ved at køre processen **Opret kladde**.
 
 [![Tidsplan for indtægtsføring](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Beregninger er ikke inkluderet i valideringen. Du skal teste produktkonfiguratio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

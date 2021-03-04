@@ -57,3 +57,6 @@ Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
 18. Klik på Gem.
 19. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

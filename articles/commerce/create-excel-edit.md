@@ -78,3 +78,6 @@ Hvis du vil oprette og konfigurere en Excel-projektmappe, så du kan redigere de
 [Redigere økonomiske dimensioner for detailtransaktioner](edit-financial-dim.md)
 
 [Føje felter til en Excel-projektmappe for at redigere detailtransaktioner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

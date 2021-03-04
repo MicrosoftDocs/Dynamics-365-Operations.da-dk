@@ -108,3 +108,6 @@ I skærmbilledet herunder vises et eksempel på beregningsresultater i **Datosty
 ![Eksempel på beregningsresultater i Datostyring af arbejdsordre](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

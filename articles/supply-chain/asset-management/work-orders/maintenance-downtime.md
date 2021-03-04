@@ -89,3 +89,6 @@ Klik på **Styring af aktiver** > **Forespørgsler** > **Vedligeholdelsesnedetid
 >[!NOTE]
 >Alle de kalendere, der bruges i modulet **Styring af aktiver**, konfigureres i **Virksomhedsadministration** > **Opsætning** > **Kalendere** > **Kalendere**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

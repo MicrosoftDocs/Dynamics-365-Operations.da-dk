@@ -46,3 +46,6 @@ Denne fremgangsmåde drejer sig om at definere en variantrute, der bestemmer den
 15. Klik op linket i den valgte række på listen.
 16. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

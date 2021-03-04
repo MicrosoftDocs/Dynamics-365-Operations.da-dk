@@ -84,3 +84,6 @@ Hvis du arbejder med materialebegrænsning, afhænger planlægningen også af ti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

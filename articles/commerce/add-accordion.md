@@ -87,3 +87,6 @@ Hvis du vil føje et harmonikamodul til en FAQ-side og angive dets egenskaber i 
 [Fanemodul](add-tab.md)
 
 [Tekstblokmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

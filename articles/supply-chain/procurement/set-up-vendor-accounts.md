@@ -118,3 +118,6 @@ Du vælger standardkontiene på siden **Standardkontoopsætning**, som du kan å
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

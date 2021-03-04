@@ -115,3 +115,6 @@ Hvis ikke der er lovmæssige krav, der foreskriver brug af fortløbende nummerse
 Hvis der opstår strømafbrydelse, programfejl eller anden uventet defekt, kan systemet ikke automatisk genbruge numre til fortløbende nummerserier. Du kan køre oprydningsprocessen manuelt eller automatisk for at finde de tabte numre.
 
 Husk at tage serverbelastningen i betragtning, når du planlægger oprydningsprocessen. Det anbefales, at du udfører oprydningen som et batchjob uden for spidsbelastningstidspunkter.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

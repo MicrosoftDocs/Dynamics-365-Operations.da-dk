@@ -41,3 +41,6 @@ Når du bliver bedt om at angive en årsagskode for at forklare, hvorfor du opda
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

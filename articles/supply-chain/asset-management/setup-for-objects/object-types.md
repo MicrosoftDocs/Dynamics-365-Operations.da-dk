@@ -97,3 +97,6 @@ På siden **Reservedele** kan du også oprette nye reservedele til eksisterende 
 
 Hvis du vil se, om reservedelen på den valgte linje bruges et sted i Styring af aktiver (f.eks. i relation til aktiver og arbejdsordrer), skal du vælge **Vare, hvor den bruges** til at åbne siden **Vare, hvor den bruges**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

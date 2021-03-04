@@ -88,3 +88,6 @@ Visningsrækkefølgen i navigationshierarkiet for kanal afspejles i hovedkontore
 
 > [!NOTE]
 > Funktionen for brugerdefineret sorteringsrækkefølge er som standard slået fra. Du kan få mere at vide om, hvordan du aktiverer denne og andre funktioner, under [Administration af funktioner](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

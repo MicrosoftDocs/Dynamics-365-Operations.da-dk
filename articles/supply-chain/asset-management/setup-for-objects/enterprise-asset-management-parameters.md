@@ -107,3 +107,6 @@ Vælg de dokumenttyper, der skal være tilgængelige for udskrivning af vedhæft
 **Nummerserier**-link
 
 Vælg de påkrævede nummerserier i dette afsnit. Der er to nummerserier for aktiver: én for manuelt oprettede aktiver og én for aktiver, som er oprettet via ventende aktiver.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Lokationsvejledninger bestemmer *, hvor* varer skal plukkes, og *hvor* de skal p
 
 - Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjælp-emne: [Oprette lokationsvejledninger](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

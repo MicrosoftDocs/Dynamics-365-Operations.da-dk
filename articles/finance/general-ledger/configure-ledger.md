@@ -82,3 +82,6 @@ Hvis du bruger to valutaer, eller hvis du bruger en enkelt valuta, men postering
 Realiserede gevinster og tab er fortjeneste og tab, der er foretaget fra afsluttede transaktioner. De registreres i driftsregnskabet. Ikke-realiserede gevinster og tab er fortjeneste og tab, der har materialiseret sig, men posteringen er ikke fuldført. Du har med andre ord f.eks. bogført en faktura, men fakturaen er endnu ikke udlignet og betalt. Ikke-realiserede gevinster og tab registreres i balancen.
 
 Yderligere oplysninger om hvordan du bruger to valutaer, finder du under [To valutaer](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

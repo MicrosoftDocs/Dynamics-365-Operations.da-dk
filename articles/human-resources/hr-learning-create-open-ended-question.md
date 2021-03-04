@@ -38,3 +38,6 @@ ms.locfileid: "4417871"
     * En inputtype for Tekst eller Notat bruges til et åbent spørgsmål.  
 6. Skriv dit spørgsmål i feltet Tekst.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

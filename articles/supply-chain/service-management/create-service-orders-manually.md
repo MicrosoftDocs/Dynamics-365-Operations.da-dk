@@ -102,3 +102,6 @@ Du kan oprette en serviceordre fra formularen **Salgsordrer** ved hjælp af guid
 
 [Opret serviceordrer (klasseform)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

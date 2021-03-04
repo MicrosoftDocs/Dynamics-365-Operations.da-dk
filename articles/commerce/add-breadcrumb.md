@@ -95,3 +95,6 @@ Hvis du vil føje et brødkrummemodul til en PDP og angive de påkrævede egensk
 [Boksmodul til køb](add-buy-box.md)
 
 [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

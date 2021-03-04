@@ -110,3 +110,6 @@ Hver råbalancerapport bruger en anden kolonnedefinition. Disse kolonnedefinitio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

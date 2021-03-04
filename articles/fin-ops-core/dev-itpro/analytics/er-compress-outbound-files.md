@@ -94,3 +94,6 @@ Du skal fuldføre følgende trin, før du kan fuldføre procedurerne i dette emn
 [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

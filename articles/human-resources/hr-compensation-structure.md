@@ -113,3 +113,6 @@ Du kan ikke tildele en fast lønstruktur til en medarbejder, før du definerer b
 
 8. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

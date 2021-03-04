@@ -122,3 +122,6 @@ Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge 
 2. Find formularen **Oplysninger** under formularernoden. 
 3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**. 
 4. Ret sikkerhedsindstillingen til **Vis for alle**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Al databehandling køres af job. Der oprettes en kladde for hvert job og datapro
     * Vælg regnskabsårets 2017 periode 9 i dette eksempel.  
 14. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

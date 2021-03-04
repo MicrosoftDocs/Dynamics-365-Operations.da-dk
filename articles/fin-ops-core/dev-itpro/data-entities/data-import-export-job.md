@@ -243,3 +243,6 @@ Hvis du vil hente den arkiverede kørselshistorik, skal du gå til arbejdsområd
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

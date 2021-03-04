@@ -144,3 +144,6 @@ Følgende opgaver og rettigheder er blevet tilføjet for automatiseringer af kre
 | Forespørgsel om tidsplanforekomster | Medearbejder for kreditorbetalinger, medarbejder for centraliseret kreditorbetaling | Denne pligt giver ret til at se forekomsterne af automatisering af betalingsforslag i kraft af følgende rettigheder:<ul><li>Få vist tidsplanforekomster</li><li>Få vist den ugentlige visning af forekomster</li></ul> |
 | Forespørge om tidsplansserier      | None                                                                       | Denne pligt giver ret til at se indstillingerne for serier og forekomster i kraft af følgende rettigheder:<ul><li>Få vist tidsplanforekomster</li><li>Få vist listesiden med forekomster</li><li>Få vist den ugentlige visning af forekomster</li></ul>|
 | Opretholde tidsplanforekomster     | None                                                                       | Denne pligt giver ret til at oprette og opretholde en forekomst i kraft af følgende rettigheder:<ul><li>Opretholde tidsplanforekomster</li><li>Få vist den ugentlige visning af forekomster</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

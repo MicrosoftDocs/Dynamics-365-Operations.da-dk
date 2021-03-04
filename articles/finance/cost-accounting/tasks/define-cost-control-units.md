@@ -41,3 +41,6 @@ Denne procedure viser, hvordan du definerer omkostningskontrolenheder i finanspo
 10. Indtast eller vælg en værdi i feltet Dimension.
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

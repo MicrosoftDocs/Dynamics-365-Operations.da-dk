@@ -163,3 +163,6 @@ Dit CDN bør nu være korrekt konfigureret, så det kan bruges sammen med Commer
 [Konfigurere flere B2C-lejere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ De matematiske funktioner til elektronisk indberetning (ER) kan bruges til at fo
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelsprog i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

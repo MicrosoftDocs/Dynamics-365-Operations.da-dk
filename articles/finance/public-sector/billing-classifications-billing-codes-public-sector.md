@@ -90,3 +90,6 @@ Nej, men der er en måde at få de resultater, du skal bruge, alligevel. Lad os 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

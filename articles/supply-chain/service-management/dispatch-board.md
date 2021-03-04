@@ -54,3 +54,6 @@ Oplysninger om, hvordan du udfører bestemte opgaver på en planlægningstavle, 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

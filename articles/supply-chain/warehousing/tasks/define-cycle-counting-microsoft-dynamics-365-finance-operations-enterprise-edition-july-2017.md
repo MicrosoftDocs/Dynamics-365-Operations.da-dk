@@ -96,3 +96,6 @@ Cyklusoptælling er en lagerproces, du kan bruge til at overvåge disponible var
 21. Klik på **OK**.
 22. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

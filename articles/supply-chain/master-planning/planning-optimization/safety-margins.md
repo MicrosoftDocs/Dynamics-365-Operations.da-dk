@@ -183,3 +183,6 @@ En vare har f.eks. en leveringstid på én dag og en modtagelsesmargen på tre d
 [Kom i gang med planlægningsoptimering](get-started.md)
 
 [Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Denne fremgangsmåde fokuserer på at oprette en formel, der indeholder de samme
 5. Klik på Vælg.
 6. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ For at undgå yderligere regnskabsposter, debet og kredit på den samme finansko
 
 -   Organisationer bruger ofte faste dimensioner til at udfylde en økonomisk dimension, der er ikke påkrævet, med nuller. Dette er ofte tilfældet for statuskonti, f.eks.debitor/kreditor. Kontostrukturer kan bruges til at spore økonomiske dimensioner, der typisk udfyldes med nuller.  Du kan fjerne den økonomiske dimension for statuskonti, så du ikke behøver at bruge faste dimensioner.
 -   Hvis organisationen kræver faste dimensioner på debitor-/kreditorhovedkontoen, skal du finde en måde at bruge den faste standarddimension på betalingen, så den faste dimensionsværdi gemmes på kreditorposteringen for betalingen. På denne måde kan systemet rekonstruere debitor-/kreditorhovedkontoen, så de faste dimensionsværdier medtages. Den faste værdi kan defineres som en standardværdi på kreditorer eller kladdenavnet for betalingskladden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

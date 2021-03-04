@@ -87,3 +87,6 @@ I følgende eksempel vises, hvordan du kan ændre startsiden ved at ændre den v
 [Forbedre en kategorilandingsside](enrich-category-page.md)
 
 [Bekræft tilgængelighed af sideindhold](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

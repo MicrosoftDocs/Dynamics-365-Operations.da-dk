@@ -75,3 +75,6 @@ På siden **Vedligeholdelsesbudgetlinjer** kan du manuelt tilføje en ny budgetl
 
 - Du ved, at der i øjeblikket planlægges fornyelse af udstyr for nogle aktiver, men at der endnu ikke er oprettet relaterede job i Styring af aktiver. Du vil dog gerne have, at budgetomkostninger for disse job skal indgå i vedligeholdelsesbudgettet.
 - Der er blevet oprettet nye aktiver eller aktivtyper, siden du lagde vedligeholdelsesbudgettet, men der er endnu ikke konfigureret vedligeholdelsesplaner for disse aktiver eller aktivtyper. Du vil dog gerne have, at budgetomkostninger for disse aktivtyper skal indgå i vedligeholdelsesbudgettet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

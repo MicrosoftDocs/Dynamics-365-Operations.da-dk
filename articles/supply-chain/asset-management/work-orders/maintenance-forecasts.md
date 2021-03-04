@@ -124,3 +124,6 @@ I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdso
 I illustrationen herunder vises et eksempel på dialogboksen **Opdater prognose for arbejdsordre**.
 
 ![Figur 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

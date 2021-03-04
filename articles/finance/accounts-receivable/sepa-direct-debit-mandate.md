@@ -54,3 +54,6 @@ Yderligere ressourcer
 
 [Oprette en ny bemyndigelse til direkte debitering til en debitor](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

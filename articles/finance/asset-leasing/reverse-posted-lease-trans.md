@@ -56,3 +56,6 @@ Udfør følgende trin for at annullere en tilbageført postering.
 Når du vælger **Tilbagefør sporing**, vises en dialogboks, der viser både de oprindelige posteringer og de tilbageførte posteringer sammen med et nummer, der kaldes et sporingsnummer.
 
 Du kan også spore annulleringer ved hjælp af den relevante **Tidsplan**-side. Feltet **Tilbagefør** fjernes, mens feltet **Kladde** er markeret. Derudover opdateres feltet **Seneste journalnummer** med kladdenummeret for den tilbagekaldte postering, og feltet **Kladdenummer** opdateres med kladdenummeret for tilbageførslen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

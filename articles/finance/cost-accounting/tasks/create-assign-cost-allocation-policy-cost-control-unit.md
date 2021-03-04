@@ -67,3 +67,6 @@ Du kan bruge denne procedure til at oprette og tildele en politik for omkostning
 5. Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.
 6. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

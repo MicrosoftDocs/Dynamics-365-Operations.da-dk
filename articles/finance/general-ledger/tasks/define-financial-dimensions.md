@@ -55,3 +55,6 @@ Denne opgave vejledning demonstrerer tilføjelse af en enhedsunderstøttet økon
 9. Skriv en værdi i feltet **Dimensionsværdi** for at beskrive din økonomiske dimensionsværdi.
 10. Skriv en beskrivelse i feltet **Beskrivelse**, som beskriver din økonomiske dimensionsværdi.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

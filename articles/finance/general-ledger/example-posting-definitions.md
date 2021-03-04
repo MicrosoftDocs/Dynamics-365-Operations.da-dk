@@ -128,3 +128,6 @@ I dette eksempel matcher enhver konto, der er del af Kontostruktur – drift kri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

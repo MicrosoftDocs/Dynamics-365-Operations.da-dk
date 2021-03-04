@@ -97,3 +97,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 1.  Vælg **Send ros**. 
 1. Angiv teksten til den ros, du vil sende. 
 1. Vælg **Udført**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

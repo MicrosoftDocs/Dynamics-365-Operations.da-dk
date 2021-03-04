@@ -138,3 +138,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 [Synkronisere kontakter direkte fra Sales med kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

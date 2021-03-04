@@ -206,3 +206,6 @@ Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at
 
 [Ændringer af API til ER-struktur for Application Update 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

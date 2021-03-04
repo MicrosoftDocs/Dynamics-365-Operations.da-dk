@@ -53,3 +53,6 @@ Denne registrering anvender demofirmaet USRT.
     * Vælg den konto, som deponeringer til pengeskab skal bogføres på.  
 8. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

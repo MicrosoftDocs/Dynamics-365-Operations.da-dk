@@ -53,3 +53,6 @@ Når du opretter en direkte levering, ankommer de varer, du sælger, aldrig fysi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

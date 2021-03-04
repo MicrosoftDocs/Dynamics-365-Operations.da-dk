@@ -71,3 +71,6 @@ På nedenstående skærmbillede kan du se et eksempel på en beregning af Hvor e
 
 ![Eksempel på beregning af, hvor en vare er brugt](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

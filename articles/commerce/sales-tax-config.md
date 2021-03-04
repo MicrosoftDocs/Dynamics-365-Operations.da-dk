@@ -83,3 +83,6 @@ For ordrelinjer, hvor der er angivet afhentning i butik eller ved fortovskant, a
 
 [Beregning af momsfritagelse](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

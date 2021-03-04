@@ -151,3 +151,6 @@ Reglen for oprettelse af indkøbsordre og efterspørgselskonsolidering definerer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

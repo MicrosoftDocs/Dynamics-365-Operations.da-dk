@@ -35,3 +35,6 @@ Følgende emne beskriver, hvordan en bruger i rollen Systemadministrator kan ind
 5. Vælg en indstilling på rullelisten i feltet **Tidszone**.
 6. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

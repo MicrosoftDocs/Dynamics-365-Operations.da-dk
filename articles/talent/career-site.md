@@ -142,3 +142,6 @@ Når kandidaterne har ansøgt om et eller flere job, kan de vælge **Ansøgninge
 ## <a name="internal-jobs"></a>Interne job
 
 Job, der er markeret som interne og opslået på Attract-karrierewebstedet, vises i øjeblikket ikke på karrierewebstedet. De er kun tilgængelige via en direkte **Ansøg** URL-adresse, der kan kopieres fra programmet Attract.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

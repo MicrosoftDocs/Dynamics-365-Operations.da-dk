@@ -46,3 +46,6 @@ Tilbagevendende fakturaer bruges til jævnlig fakturering af kunder for samme be
 6. Klik på Bogfør.
     * Bogfør de valgte fakturaer.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ I dette emne beskrives, hvordan du konfigurerer garantier for aktiver og aktivty
 
 > [!NOTE]
 > Når du opretter en arbejdsordre for et aktiv, der er dækket af en leverandørgaranti, modtager du en besked om garantiaftalen, hvis arbejdsordren har en forventet startdato i løbet af garantiperioden. Du kan derefter annullere arbejdsordren efter behov.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

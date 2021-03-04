@@ -53,3 +53,6 @@ Du kan få flere oplysninger om brugen af denne funktion i opgaveguiden [Brug ER
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dataindsamlingsfunktioner](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -342,3 +342,6 @@ Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af 
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
 - [Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder](er-calculated-field-ds-performance.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

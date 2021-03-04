@@ -57,3 +57,6 @@ Analyse af den tid, der bruges til at behandle arbejdselementer, kan forbedre la
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

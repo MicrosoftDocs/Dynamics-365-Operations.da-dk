@@ -100,3 +100,6 @@ Når du har aktiveret produktanbefalinger, skal du tilføje anbefalingspanelet p
 [Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
 
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ For yderligere oplysninger om konfiguration af vurderings- og anmeldelsesmoduler
 [Konfigurer vurderings- og anmeldelsesmoduler på sider med produktdetaljer](ratings-reviews-modules.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

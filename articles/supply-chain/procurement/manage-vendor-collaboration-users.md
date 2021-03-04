@@ -94,3 +94,6 @@ Sådan anmoder du om, at sikkerhedsrollerne ændres for en bruger:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -224,3 +224,6 @@ Udtrykket **Emailing.TxtToUse.Body** i eksempelformatet er konfigureret til de f
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

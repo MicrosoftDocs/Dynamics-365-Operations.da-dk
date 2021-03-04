@@ -83,3 +83,6 @@ Strukturen i denne liste består af et enkelt felt for **Beløb** af typen `Real
 [Listefunktioner](er-functions-category-list.md)
 
 [Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

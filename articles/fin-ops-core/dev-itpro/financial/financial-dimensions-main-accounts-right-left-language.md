@@ -38,3 +38,6 @@ I dette emne beskrives nogle af de implementeringsbeslutninger, der skal overvej
 - Undgå at bruge den valgte kontoplans afgrænser i den økonomiske dimension og hovedkontoværdier.
 
 Ved at følge disse anbefalinger kan du bedre sikre ensartet repræsentation af den brugerdefinerede rækkefølge i hele systemet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

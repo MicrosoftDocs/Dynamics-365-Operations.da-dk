@@ -38,3 +38,6 @@ En finanspost for omkostningsregnskab repræsenterer den overordnede rapporterin
 8. Indtast eller vælg en værdi i feltet Statistisk dimension.
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Denne procedure viser dig, hvordan du skal oprette en bankkonto for en leverand�
 25. Vælg den konto, du lige har oprettet, i feltet **Bankkonto**.
 26. Klik på **Gem**. Adressen kan være nedarvet fra bankgruppen, hvis der er angivet en, eller du kan tilføje den her.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

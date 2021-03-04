@@ -309,3 +309,6 @@ Du kan få mere at vide om konfigurationen af ER-formatet **Format til at lære,
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Konfigurer parametrene for et ER-format for hver juridisk enhed](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

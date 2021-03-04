@@ -46,3 +46,6 @@ Hvis du tildeler en bekræftende PO-kode til en indkøbsordre på oversigtspanel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

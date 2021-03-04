@@ -60,3 +60,6 @@ I figuren herunder vises et eksempel på udsendelsesvalg i dialogboksen **Planl�
 [!NOTE]
 Hvis du vil slette tidsplanen på en arbejdsordre, skal du vælge arbejdsordren i **Alle arbejdsordrer** og klikke på **Slet tidsplan** under fanen **Generelt**. Husk at opdatere arbejdsordrens livscyklustilstand manuelt, hvis du sletter tidsplanen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

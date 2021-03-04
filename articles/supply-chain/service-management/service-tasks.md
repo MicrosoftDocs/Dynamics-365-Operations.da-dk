@@ -90,3 +90,6 @@ Når der oprettes serviceordrer automatisk, kan du bruge serviceopgaver som grup
 2. Under fanen **Opsætning** skal du vælge **Efter serviceopgave** i feltet **Kombinere serviceordrer**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

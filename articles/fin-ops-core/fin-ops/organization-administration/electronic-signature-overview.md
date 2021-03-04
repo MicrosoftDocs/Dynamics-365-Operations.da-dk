@@ -109,3 +109,6 @@ Udfør disse trin for at angive godkendere.
 1. På siden **Indstillinger** under fanen **Konti** skal du klikke på **Angiv godkender**.
 2. Vælg id'et for den bruger, som skal signere for en anden brugers ændringer, i feltet **Bruger-id for godkender**.
 3. Vælg id'et for den bruger, hvis ændringer der skal signeres for, i feltet **Signer for bruger-id**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

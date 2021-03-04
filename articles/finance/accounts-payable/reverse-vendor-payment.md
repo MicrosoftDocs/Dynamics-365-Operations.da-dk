@@ -83,3 +83,6 @@ Hvis den tilbageførte check blev udstedt til en debitorrefusion, vil følgende 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

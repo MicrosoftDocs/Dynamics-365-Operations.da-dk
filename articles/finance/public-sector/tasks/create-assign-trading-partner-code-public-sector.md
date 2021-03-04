@@ -48,3 +48,6 @@ Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din o
 6. Vælg handelspartnerkoden for denne myndighed i feltet Handelspartnerkode.
 7. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Sendefunktionen Gebyr bruger følgende POS-handlinger: afsendelse af alle produk
 Muligheden for at vælge "levér til"-adresser forbliver uændret.
 
 De forsendelsesmetoder, der kan bruges til at opfylde ordrelinjen er baseret på konfigurationen af gyldige leveringsmåder for produkter og adresser. Da reglerne om gyldige leveringsmåder kun vedligeholdes i Headquarters (Hovedkontoret), foretager POS-klienten et realtidsopkald for at hente de gyldige leveringsmåder for en forsendelseslinje.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

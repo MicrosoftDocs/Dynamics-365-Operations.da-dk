@@ -47,3 +47,6 @@ Hvis du vil bogføre en overgangsjustering i overensstemmelse med de nye regnska
 
 5. Hvis du vil se kladdeposten, skal du vælge **Aktivleasingkladde**.
 6. Vælg den nye kladde, og vælg derefter **Bogfør**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

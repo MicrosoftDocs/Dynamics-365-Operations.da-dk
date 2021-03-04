@@ -112,3 +112,6 @@ Sådan gennemgår du arbejdsgangshistorikken for en kladde:
 1. Udvid i navigationsruden **Lagerstyring \> Kladdeposteringer \> Varer**, og vælg derefter en lagerkladdetype.
 1. Åbn den relevante kladde.
 1. Vælg knappen **Arbejdsproces** i handlingsruden for at åbne en rulleliste i en dialogboks. Vælg **Arbejdsgangshistorik**. Du kan finde flere oplysninger under [Vise arbejdsgangshistorik](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

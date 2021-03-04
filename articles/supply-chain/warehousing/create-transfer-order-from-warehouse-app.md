@@ -334,3 +334,6 @@ Flytteordrerne oprettes uden brug af funktionerne i **Leveringsdatokontrol**.
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Kan jeg bruge en nummerplade med fysisk negativ lagerbeholdning?
 
 Funktionen understøtter kun positive fysiske lagerbeholdninger. Sørg for, at der er positive fysiske lagerbeholdninger på lagersteds- og lagerstatusniveau, før du tildeler nummerplader til en flytteordre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

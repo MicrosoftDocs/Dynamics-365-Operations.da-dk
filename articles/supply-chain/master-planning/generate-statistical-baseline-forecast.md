@@ -78,3 +78,6 @@ Hvis prognosen ikke er oprettet for en lang r√¶kke varer, men for eksempel for √
 - [Foretage manuelle justeringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
 - [Autorisere en justeret prognose](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

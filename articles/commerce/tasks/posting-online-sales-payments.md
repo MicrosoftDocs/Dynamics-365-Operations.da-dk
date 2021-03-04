@@ -109,3 +109,6 @@ Denne procedure hjælper med at konfigurere og køre et tilbagevendende batchjob
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

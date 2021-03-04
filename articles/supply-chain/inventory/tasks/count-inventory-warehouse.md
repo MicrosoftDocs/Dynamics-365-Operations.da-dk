@@ -56,3 +56,6 @@ Dette emne fører dig gennem processen med at oprette og bogføre en lageroptæl
 1. Vælg **Lager**.
 2. Vælg **Transaktioner**. Her kan du se alle relaterede posteringer, der oprettes, når du bogfører din lageroptællingskladde.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

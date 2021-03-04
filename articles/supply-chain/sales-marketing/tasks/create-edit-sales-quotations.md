@@ -70,3 +70,6 @@ Denne procedure viser, hvordan du opretter og opdaterer et salgstilbud. Du kan k
 13. Klik på **Salgsordrer**.
 14. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

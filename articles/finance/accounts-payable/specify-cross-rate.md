@@ -44,3 +44,6 @@ For eksempel er regnskabsvalutaen i USD, fakturavalutaen er i CAD, og betalingsv
 3.  For en debitor skal du på listesiden **Alle debitorer** gå til **Indsaml > Udlign åbne posteringer**. For en kreditor skal du på listesiden **Alle kreditorer** gå til **Faktura > Udlign åbne posteringer**. 
 4.  Vælg den postering, der er den primære betaling, og klik derefter på **Marker betaling**. Afkrydsningsfeltet i kolonnen **Marker** markeres, og der vises et informationsikon i kolonnen **Primær betaling**. 
 5.  I feltet **Krydskurs** skal du angive fakturavalutaen og betalingsvalutaen pr. udligningsdatoen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

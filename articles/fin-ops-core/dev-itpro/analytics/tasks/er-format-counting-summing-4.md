@@ -103,3 +103,6 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 21. Klik på Åbn.
     * Gennemse den XML-fil, der indeholder optællings- og sammenlægningsdetaljer, der er indsamlet under kørsel af den valgte konfiguration.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Derudover skal du fuldføre opgaveguiden [Opret de krævede konfigurationer til 
 | Stilling                  | Filnavn |
 |------------------------|-----------|
 | ER-modelkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

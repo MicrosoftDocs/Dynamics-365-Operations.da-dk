@@ -51,3 +51,6 @@ Du vil gerne have, at dine ledige stillinger ses af så mange kvalificerede kand
 
 > [!NOTE]
 > Microsoft og Attract er ikke involveret i dannelsen og vedligeholdelsen af disse værdier. Det er dit ansvar at ajourføre dem i Attract og arbejde sammen med Broadbean om at løse alle problemer vedrørende dine legitimationsoplysninger.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

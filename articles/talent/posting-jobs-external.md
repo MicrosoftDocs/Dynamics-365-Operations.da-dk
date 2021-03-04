@@ -102,3 +102,6 @@ Hvis du har problemer med at slå et job op på Broadbean, kan du prøve disse t
 [Oprette, godkende og bogføre job i Attract](./creating-jobs-attract.md)
 
 [Aktivere Broadbean-integration i Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

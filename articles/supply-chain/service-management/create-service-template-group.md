@@ -39,3 +39,6 @@ Du kan sortere og filtrere serviceskabeloner ved at bruge serviceskabelongrupper
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

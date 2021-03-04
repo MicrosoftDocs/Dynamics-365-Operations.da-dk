@@ -58,3 +58,6 @@ Før du kan bruge funktionen *Ekstra lokationszone*, skal den være aktiveret i 
 7. Vælg **Opret**.
 8. Du modtager meddelelser om, at der er tilføjet nye lokationer. Vælg knappen **Vis meddelelser** for at få vist meddelelserne.
 9. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lokationer**. De nye lokationer vises på listen, og alle zone felter er tilgængelige (dvs. det eksisterende zonefelt og de nye ekstra zonefelter).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

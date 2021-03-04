@@ -258,3 +258,6 @@ Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til e
 
 - Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjælp-emne: [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

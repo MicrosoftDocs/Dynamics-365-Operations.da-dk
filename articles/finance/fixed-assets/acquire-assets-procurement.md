@@ -109,3 +109,6 @@ Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

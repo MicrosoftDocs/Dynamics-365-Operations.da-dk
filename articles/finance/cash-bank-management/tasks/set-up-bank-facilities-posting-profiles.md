@@ -78,3 +78,6 @@ Denne opgave bruger demofirmaet USMF.
 10. Klik på Gem.
 11. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

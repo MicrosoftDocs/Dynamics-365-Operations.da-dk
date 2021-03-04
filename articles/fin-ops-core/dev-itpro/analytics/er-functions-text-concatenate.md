@@ -63,3 +63,6 @@ Udtrykket `"abc" & "def"` returnerer også **"abcdef"**.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

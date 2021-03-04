@@ -112,3 +112,6 @@ Du kan finde flere oplysninger om behandling af registrerings-id'er, herunder nÃ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Både Planlægningsoptimering og planlægningsprogrammet, der er indbygget i Mic
 - Automatisk autorisation er baseret på behovsdatoen (slutdatoen).
 - For at sikre, at ordrer autoriseres rettidigt, skal autorisationstidshorisonten være længere end leveringstiden.
 - Hvis du vil autorisere alle ordrer, der skal starte i løbet af den aktuelle uge, skal autorisationstidshorisonten være leveringstiden plus én uge.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

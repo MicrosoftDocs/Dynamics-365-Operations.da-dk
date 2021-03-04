@@ -114,3 +114,6 @@ Følg disse trin for at angive en attribut for **Minimumsalder** for et videoakt
 [Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
 
 [Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

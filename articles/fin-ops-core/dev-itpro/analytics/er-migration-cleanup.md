@@ -57,3 +57,6 @@ Gennemfør følgende trin for at løse problemer med ER-skabeloner, som du ikke 
 Der kan opstå et lignende problem, hvis du overflytter din programforekomst til en anden placering, der er brugt som overflytningsdestination mere end én gang, og hvor blob-lageret allerede indeholder ER-skabelonfiler.
 
 Da du kan have flere ER-formatkonfigurationer, kan denne proces være tidskrævende. Det anbefales derfor at bruge funktionen [Sikkerhedskopilager til ER-skabeloner](er-backup-storage-templates.md) for automatisk at gendanne skabeloner med brudte referencer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

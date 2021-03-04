@@ -205,3 +205,6 @@ Designeren til knapmatrix giver dig mulighed for at konfigurere knapmatricer, de
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Installere layoutdesigneren til Retail POS](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

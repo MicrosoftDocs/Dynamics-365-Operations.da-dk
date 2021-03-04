@@ -107,3 +107,6 @@ Overvej følgende implementeringskrav, når du planlægger og administrerer sort
 - **Salg og returneringer uden for et sortiment** – Denne funktion hjælper detailhandlere med effektivt at styre deres sortimenter ved at lade dem med at begrænse antallet af tilgængelige produkter til produkter, der hører til den centrale produktsammensætning for butikken. Denne funktion hjælper også detailhandlere med at håndtere situationer, hvor et produkt ved en fejltagelse er udeladt fra et sortiment, eller hvor der blev returneret et produkt uden for ikrafttrædelsesdatoerne for sortimentet.
 
 Hvis produktdataene ikke findes i kanaldatabasen, foretager POS kald i realtid til hovedkontoret for at få de nødvendige oplysninger, så produktet kan blive solgt, returneret eller sættes på en debitorordre. Produktoplysninger, der hentes på denne måde, er kun tilgængelige for den pågældende transaktion. Produktet føjes ikke til sortimentsdefinitionen. Derfor vil efterfølgende kald i realtids blive foretaget efter behov.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

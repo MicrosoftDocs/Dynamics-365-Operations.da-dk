@@ -80,3 +80,6 @@ På listesiden **Alle aktiver** kan du udskrive en fejlrapport for aktiver, der 
 >[!NOTE]
 >Du kan udskrive en fejlrapport for flere aktiver eller aktivtyper ved at vælge **Styring af aktiver** > **Rapporter** > **Aktiver** > **Aktivfejl**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

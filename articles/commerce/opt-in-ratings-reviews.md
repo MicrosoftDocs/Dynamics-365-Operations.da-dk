@@ -64,3 +64,6 @@ Du kan tilvælge at bruge vurderinger og anmeldelser på dit websted ved at føl
 [Synkronisere produktvurderinger i Dynamics 365 Commerce](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

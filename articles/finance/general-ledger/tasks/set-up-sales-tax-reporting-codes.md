@@ -39,3 +39,6 @@ Denne registrering anvender demofirmaet DEMF.
 6. Angiv en beskrivelse til interne formål i feltet **Kort beskrivelse**.
 7. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

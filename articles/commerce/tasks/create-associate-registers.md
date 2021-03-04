@@ -44,3 +44,6 @@ Denne fremgangsmåde viser, hvordan du kan oprette en POS-kasse. Denne procedure
     * Autorisationskode – POS-kasseapparatnummer bruges til at informere betalingsprocessor om, hvilken betalingsterminal der sender anmodninger om godkendelse. Denne værdi kaldes ofte "Terminal-id" eller "TID". TID findes normalt på en mærkat på betalingsenheden.  
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

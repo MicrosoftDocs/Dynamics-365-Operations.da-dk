@@ -64,3 +64,6 @@ Demodatafirmaet USMF bruges til at oprette denne procedure.
 6. Vælg et **bruger-id** på listen. For eksempel 24.
 7. Udvid oversigtspanelet **Arbejde**.
 8. Vælg **Ja** i feltet **Tillad manuel vareomfordeling**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

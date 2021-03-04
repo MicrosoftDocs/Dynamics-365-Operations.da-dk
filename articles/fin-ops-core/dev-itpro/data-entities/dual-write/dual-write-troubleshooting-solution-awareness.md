@@ -45,3 +45,6 @@ På siden **Dobbeltskrivning** kan du få vist en fejlmeddelelse, der ligner fø
 *Enheden med navnet 'msdyn\_dualwriteentitymap' med namemapping='Logical' blev ikke fundet i MetadataCache*.
 
 Hvis du vil løse problemet, skal du sørge for, at Dobbeltskrivning-kerneløsningen er installeret i Dataverse. Dobbeltskrivning-kerneløsningen er en forudsætning for løsningsbevidsthed.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

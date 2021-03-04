@@ -46,3 +46,6 @@ Denne opgave bruger demofirmaet USMF.
 12. Luk siden.
 13. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ En vedligeholdelsesanmodningstype definerer tilknytningen til en vedligeholdelse
 I følgende illustration vises et eksempel på listesiden **Vedligeholdelsesanmodningstype**.
 
 ![Siden Vedligeholdelsesanmodningstyper](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

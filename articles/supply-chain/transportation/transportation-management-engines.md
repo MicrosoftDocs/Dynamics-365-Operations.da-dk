@@ -99,3 +99,6 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | 3        | Destination – startpostnummer | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 4        | Destination – slutpostnummer   | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 5        | Destinationsland           | Tilknytning | Streng    | Land/område |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

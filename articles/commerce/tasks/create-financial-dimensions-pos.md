@@ -48,3 +48,6 @@ Denne procedure hjælper med at oprette økonomiske dimensioner for POS-kasseapp
 17. Find og vælg på listen dimensionsværdien for kasseapparatet, der opdateres.
 18. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

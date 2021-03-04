@@ -59,3 +59,6 @@ Når du har importeret de historiske behovsdata, kan du generere en behovsprogno
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Generer et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

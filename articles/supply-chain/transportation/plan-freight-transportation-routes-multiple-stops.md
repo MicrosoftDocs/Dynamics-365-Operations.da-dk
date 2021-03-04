@@ -53,3 +53,6 @@ Lastopbygningspanelet bruger kundeadresser og leveringsdatoer fra salgsordrer, o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Følgende sider og menupunkter, der vedrører opsætningen af funktionen, er til
  - **Udenrigshandelsparametre** (**Moms** > **Opsætning** > **Moms** > **Udenrigshandel** > **Parametre for udenrigshandel**). Se [Konfigurere egenskaber for land/område](#Set-up-Country/region-properties).
 
 Afkrydsningsfeltet **Modtagermoms** er tilgængeligt på siderne **Momsgruppe** og **Bogført moms**. Du kan finde flere oplysninger i afsnittene, [Konfigurere momsgrupper og varemomsgrupper](#sales-tax-item-sales-tax-groups), [Modtagermoms på en salgsfaktura](#reverse-charge-sale) og [Modtagermoms på en købsfaktura](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opg
 26. I **Hovedkonto til kreditorrabatter** skal du angive den hovedkonto, som kasserabatten skal bogføres på for kreditorfakturaer.
 27. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

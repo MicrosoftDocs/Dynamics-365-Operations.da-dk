@@ -43,3 +43,6 @@ I følgende tabel vises det Power BI-indhold, som rapporterne kopieres fra, og d
 | [Salgs og rentabilitet](sales-profitability-performance-content-pack.md) | <ul><li>Indtægt pr. område</li><li>Top 10-kunder efter omsætning</li><li>Top 10-produkter efter omsætning</li></ul> |
 | [Styring af kredit og inkasso](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Forfalden debitor</li><li>Kunders over kreditmaksimum</li><li>Aldersfordelte saldi</li></ul> |
 | [Købsforbrugsanalyse](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Køb efter måned/dag</li><li>10 bedste leverandører efter indkøb</li><li>10 bedste leverandører efter indkøb</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

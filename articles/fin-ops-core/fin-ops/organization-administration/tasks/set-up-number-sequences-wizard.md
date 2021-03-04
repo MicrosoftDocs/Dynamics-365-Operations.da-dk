@@ -38,3 +38,6 @@ Nummerserier bruges til generering af læselige, entydige id'er for masterdatapo
 4. Vælg **Næste**.
 5. Vælg **Udfør**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

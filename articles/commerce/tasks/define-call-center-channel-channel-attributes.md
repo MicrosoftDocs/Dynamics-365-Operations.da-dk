@@ -100,3 +100,6 @@ Denne procedure gennemgår oprettelse af en ny handelskanal og definition af kan
 65. Klik på Gem.
 66. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -224,3 +224,6 @@ For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirappor
 Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

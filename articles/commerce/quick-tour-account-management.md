@@ -96,3 +96,6 @@ Yderligere oplysninger om kontostyringsmoduler, og hvordan de oprettes, finder d
 
 [Oversigt over sider til indkøbsvogn og betaling ved kassen](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

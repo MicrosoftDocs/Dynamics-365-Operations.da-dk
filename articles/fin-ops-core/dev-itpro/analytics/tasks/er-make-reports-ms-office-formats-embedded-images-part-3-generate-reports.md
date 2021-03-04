@@ -119,3 +119,6 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
 23. Klik på OK.
     * Gennemse det oprettede output. Outputtet er oprettet som et Word-dokument med integrerede billeder, der viser firmaets logo, en autoriseret persons signatur og den markerede tekst i vandmærket.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

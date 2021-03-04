@@ -121,3 +121,6 @@ Udfør følgende trin for manuelt at tilføje eller fjerne resultater for et opr
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

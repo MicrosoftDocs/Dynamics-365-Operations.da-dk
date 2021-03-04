@@ -68,3 +68,6 @@ I denne gennemgang skal du bruge USMF-demoregnskabet. Denne procedure er beregne
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Gemme en fritekstfaktura som en skabelon
 Du kan også gemme en eksisterende fritekstfaktura som en skabelon. Når du vælger Gem i skabelon under fanen faktura, kan du angive et navn og en beskrivelse af skabelonen. Hvis der findes allerede en skabelon med dette navn, vises en meddelelse om, at der allerede findes en skabelon med dette navn. Du kan stadig klikke på OK for at erstatte den. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

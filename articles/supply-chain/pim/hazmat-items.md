@@ -221,3 +221,6 @@ Udfør følgende trin for at køre kompatibilitetskontrollen.
 1. I handlingsruden under fanen **Laster** i gruppen **Handlinger** skal du vælge **Kompatibilitetskontrol**.
 
 Du får vist en meddelelse, der oplyser dig om resultatet af kontrollen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

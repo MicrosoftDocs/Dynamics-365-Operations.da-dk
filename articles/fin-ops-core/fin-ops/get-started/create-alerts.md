@@ -102,3 +102,6 @@ Der kan ikke oprettes påmindelser for visse sekundære datakilder i formularer.
     ```
 2. Opret en påmindelse fra formularen SysTableBrowser.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Hvis der er mere end en levering i lasten, kan du generere en hovedfragtseddel. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

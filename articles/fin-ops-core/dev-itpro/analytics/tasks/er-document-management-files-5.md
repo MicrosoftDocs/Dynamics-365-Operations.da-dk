@@ -96,3 +96,6 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 7. Klik på OK.
     * Gennemse det genererede output. Bemærk, at ud over fakturameddelelsen i XML-format er der oprettet en enkelt fil for hver vedhæftet fil. De vedhæftede filer er udfyldt med zip-outputtet i binært format.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

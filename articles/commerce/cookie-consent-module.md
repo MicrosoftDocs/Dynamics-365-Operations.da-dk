@@ -62,3 +62,6 @@ Yderligere oplysninger om sidehovedfragmenter og moduler finder du i [Sidehovedm
 [Overskriftsmodul](author-header-module.md) 
 
 [Cookieoverholdelse](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

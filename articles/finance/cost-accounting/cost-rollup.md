@@ -301,3 +301,6 @@ Den klare adskillelse mellem **Omkostningstildeling** og **Politikker for omkost
 -  [Dimensioner for omkostningselement](cost-elements.md)
 -  [Dimensionshierarki](dimension-hierarchy.md)
 -  [Beregning af faste omkostninger](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

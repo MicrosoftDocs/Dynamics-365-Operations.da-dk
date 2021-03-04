@@ -52,3 +52,6 @@ I dette emne beskrives, hvordan du opretter attributbaserede priser. Som en foru
 8. Skriv en værdi i feltet **Udtryk**. Skriv f.eks. `50`. 
 9. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

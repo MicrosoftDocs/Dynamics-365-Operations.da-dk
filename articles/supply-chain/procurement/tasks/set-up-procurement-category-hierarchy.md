@@ -45,3 +45,6 @@ Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorih
 4. Vælg de produkter, der skal føjes til indkøbskategorien.
 5. Vælg pilen for at tilføje produkter i tabellen **Valgte**.
 6. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

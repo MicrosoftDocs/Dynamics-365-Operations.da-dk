@@ -153,3 +153,6 @@ Denne fane viser resultatet af det valgte leveringsalternativ fremhævet. Hvis d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Du kan annullere en returordre i stedet for at slette den, hvis du vil gemme en 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

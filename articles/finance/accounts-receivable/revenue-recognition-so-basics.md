@@ -97,3 +97,6 @@ Knappen **Fordeling af indtægtspris** er stadig tilgængelig, så du kan se ber
 Den forventede tidsplan for indtægtsføring fjernes og erstattes af den endelige tidsplan for indtægtsføring. Oplysningerne om indtægtstidsplanen vedligeholdes for hver salgsordrelinje og bruges til at frigive den udskudte indtægt til faktisk indtægt, efterhånden som de kontraktmæssige forpligtelser opfyldes.
 
 [![Tidsplan for endelig indtægtsføring](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

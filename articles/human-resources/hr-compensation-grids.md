@@ -92,3 +92,6 @@ Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for f
 29. Markér eller fjern markeringen af alle rækker på listen.
 30. Klik på Anvend på gitter.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

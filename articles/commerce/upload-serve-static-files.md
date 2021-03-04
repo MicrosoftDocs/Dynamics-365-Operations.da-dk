@@ -107,3 +107,6 @@ Benyt følgende fremgangsmåde for at ændre URL-adressestien.
 [Beskære billeder](dam-crop-images.md)
 
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

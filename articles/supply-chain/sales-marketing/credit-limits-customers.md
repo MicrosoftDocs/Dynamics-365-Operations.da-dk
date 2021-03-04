@@ -138,3 +138,6 @@ I visse tilfælde skal du kontrollere en debitors kreditmaksimum manuelt. Du kan
 1.  Klik på **Salg og marketing** \> **Generelt** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklik på en salgsordre.
 
 2.  I formularen **Salgsordre** skal du i handlingsruden under fanen **Administrer** klikke på **Kontrollér kreditmaks.**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

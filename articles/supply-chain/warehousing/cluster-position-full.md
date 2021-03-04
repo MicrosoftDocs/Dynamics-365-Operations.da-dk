@@ -276,3 +276,6 @@ I dette scenario er klyngeplukket fuldført, og brugeren dirigeres til at lægge
     Du modtager en meddelelse om "Klynge er fuldført".
 
 Du kan nu bruge menupunktet **Salgspluk** til at plukke det resterende antal. Derefter kan du bruge menupunktet **Salgslastning** til at flytte varerne fra den midlertidige lagring til læsserampen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

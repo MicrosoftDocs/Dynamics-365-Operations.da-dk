@@ -87,3 +87,6 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 - Find alle planlagte og frigivne lovmæssige opdateringer på [Lifecycle Service - Problemløsning](https://lcs.dynamics.com/Logon/Index) (logon er påkrævet).
 - En liste over de oversættelser, der understøttes, finder du i [Vejledning til international tilgængelighed](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

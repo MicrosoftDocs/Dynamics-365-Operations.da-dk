@@ -142,3 +142,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 [Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

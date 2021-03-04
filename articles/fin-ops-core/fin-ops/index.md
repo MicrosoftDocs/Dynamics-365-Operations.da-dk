@@ -145,3 +145,6 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

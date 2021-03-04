@@ -110,3 +110,6 @@ Hvis du vil gennemgå historikken for de produktionsjob, der er behandlet på en
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobbet Meddelelsesprocessor for produktionshub til skalaenhed
 
 Jobbet _Meddelelsesprocessor for produktionshub til skalaenhed_ behandler data fra hubben til skalaenheden. Dette job startes automatisk, når arbejdsbyrden for produktionsudførelse udrulles. Du kan dog køre den manuelt på et hvilket som helst tidspunkt ved at gå til **Produktionsstyring \> Periodiske opgaver \> BackOffice-styring af arbejdsbyrder \> Meddelelsesprocessor for produktionshub til skalaenhed**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

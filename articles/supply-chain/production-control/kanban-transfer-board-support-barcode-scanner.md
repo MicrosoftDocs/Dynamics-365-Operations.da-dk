@@ -192,3 +192,6 @@ Status for det valgte job og status for udlignede job for hændelseskanbans best
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

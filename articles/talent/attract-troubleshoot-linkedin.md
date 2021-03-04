@@ -57,3 +57,6 @@ Hvis dit job ikke er vist på LinkedIn efter 24 timer, kan du prøve disse trin:
 [Oprette, godkende og bogføre job i Attract](./creating-jobs-attract.md)
 
 [Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

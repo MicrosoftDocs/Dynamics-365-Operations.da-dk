@@ -49,3 +49,6 @@ Kørsel af denne procedure kræver, at der er mindst én tilgængelig produktkon
     * Aktivér produktmodelversionen. Det er kun muligt at have ét aktivt produkt for en produktmodel ad gangen.  
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

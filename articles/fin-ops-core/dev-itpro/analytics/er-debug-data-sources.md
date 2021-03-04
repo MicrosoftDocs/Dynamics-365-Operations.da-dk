@@ -281,3 +281,6 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 6. Vælg **DEMF OPER** i feltet **Bankkonto**.
 7. Vælg **OK** i dialogboksen **Opret betalinger**.
 8. Vælg **OK** i dialogboksen **Elektroniske rapporteringsparametre**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

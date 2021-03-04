@@ -60,3 +60,6 @@ Det er den anden procedure af fem, der illustrerer kundens betalingsproces ved h
     * For eksempel: Vælg "DEMF OPER"-bankkonto.  
 6. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

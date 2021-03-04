@@ -230,3 +230,6 @@ I følgende diagram illustreres denne serie posteringer med virkningerne af at v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

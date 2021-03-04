@@ -56,3 +56,6 @@ I dette emne forklares, hvordan du kan føje økonomiske dimensioner til arbejds
 16. Opbyg projektet, og åbn derefter programmet for at se resultaterne.
 
     [![Fuldført arbejdsområde](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

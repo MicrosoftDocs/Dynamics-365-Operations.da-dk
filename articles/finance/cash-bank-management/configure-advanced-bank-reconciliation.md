@@ -61,3 +61,6 @@ Indstillingen **Afstem efter import** validerer automatisk bankkontoudtoget, opr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

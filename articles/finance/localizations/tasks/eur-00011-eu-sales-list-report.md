@@ -101,3 +101,6 @@ Denne procedure er kun beregnet til bogholdere.
 7. Klik på OK.
 8. Vælg Lukket i feltet Valg.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

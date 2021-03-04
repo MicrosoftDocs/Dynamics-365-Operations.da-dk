@@ -300,3 +300,6 @@ Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigura
 - [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 - [Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 - [Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

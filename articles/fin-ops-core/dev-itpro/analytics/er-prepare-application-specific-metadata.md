@@ -280,3 +280,6 @@ Når du skal evaluere denne modeltilknytning ved hjælp af metadata for en anden
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 Du kan også afspille opgaveguiden **Klargøre programmetadata, der kan bruges i RCS** i programmet samt opgaveguiderne **Få adgang til programmetadata ved hjælp af ER-konfiguration** og **Få adgang til programmetadata ved hjælp af tilsluttede programmer** i RCS. Disse opgaveguider kan downloades fra siden [Opgaveguider til elektronisk rapportering for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

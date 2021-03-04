@@ -79,3 +79,6 @@ Men `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` udløser en undtagelse f
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dato- og klokkeslætsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

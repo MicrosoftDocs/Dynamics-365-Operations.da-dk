@@ -108,3 +108,6 @@ Når du har ændret indstillingerne øverst på siden, skal du klikke på **Opda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

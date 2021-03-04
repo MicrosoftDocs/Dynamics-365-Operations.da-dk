@@ -123,3 +123,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 
 > [!NOTE]
 > Den samme fil er blevet importeret, da formatdesignet nu anser attributten "id" for elementet "Document" som valgfrit.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

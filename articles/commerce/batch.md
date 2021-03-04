@@ -45,3 +45,6 @@ Hvis du vil definere det standardbatch-id, der bruges til salgsordrefakturering 
 
 > [!NOTE]
 > Understøttelse af forbedret håndtering af batchsporede varer under opgørelsesbogføring af scenarier med ikke-avancerede lagerstyring blev introduceret i Retail version 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Retail version 10.0.3 og nyere indeholder også følgende egenskaber, der er rel
 - Under afstemningen skal brugeren angive en beskrivelse af årsagen til den manglende balance, hvis den valgte transaktion ikke stemmer. Brugerne kan vælge en enkelt transaktion og afstemme den med den relevante årsagsbeskrivelse efter behov.
 - Brugerne kan fortsætte med at afstemme og fjerne afstemning af transaktioner, indtil skiftet afsluttes. Når et skift er afsluttet, kan transaktionerne ikke være ikke-afstemte.
 - Når en bruger vælger at afslutte et skift, validerer Commerce, at der ikke er nogen ikke-afstemte transaktioner til likviditetsstyring i skiftet. Brugerne kan ikke afslutte et skift, hvis der er ikke-afstemte transaktioner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

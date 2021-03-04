@@ -56,3 +56,6 @@ Rollen for denne opgaveguide er Kasserer. Denne opgave bruger demofirmaet USMF.
 16. Luk siden.
 17. Klik på fanen Fremdaterede checks.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -384,3 +384,6 @@ Når alle de påkrævede elementer er på plads, kan du konfigurere, at allokeri
 1. Angiv, at gentagelsen skal køres automatisk, hvis du vil.
 
 Med hensyn til øvelserne i scenariet skal du **ikke** konfigurere automatisk allokering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

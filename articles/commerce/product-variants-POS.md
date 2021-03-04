@@ -115,3 +115,6 @@ Følgende tabel indeholder flere oplysninger om yderligere handlinger, der er ti
 | Tilgængelighed         | Vis DTT-oplysninger for den valgte variantkombination for den valgte lokation. |
 | Vis alle lokationer   | Skift til standardvisningen for lagersøgning, og fremhæv oplysninger om lagertilgængeligheden for varevarianten på tværs af alle butikker i butikssøgergruppen, og i distributionscentre af tyden **Standard**. |
 | Få vist produktdetaljer | Omdiriger brugeren til siden **Produktdetaljer** for den tilknyttede produktmaster. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

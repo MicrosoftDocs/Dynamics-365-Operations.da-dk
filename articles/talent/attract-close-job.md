@@ -62,3 +62,6 @@ Du kan lukke et job som **Stilling besat**, når mindst én jobkandidat har fuld
    > Du kan kun lukke et job som **Stilling besat**, når mindst én jobkandidat har fuldført tilbudsstadiet. Hvis **Tilbud accepteret** ikke er valgt for jobansøgningen, eller hvis ansøgningen ikke viser statussen **Accepteret** i tilbud, vises indstillingen **Stilling besat** ikke på rullelisten **Årsag**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ Følgende samlede nøglemålinger bruges som grundlag for indholdet.
 | Leveringsperformance        | Afsendt efter biprodukt                       | CustPackingSlipOnTimeStatus           | Tidligt, til tiden og for sent (se beskrivelserne tidligere i denne tabel). |
 | Leveringsperformance        | Afsendt efter kunder                      | CustPackingSlipOnTimeStatus           | Tidligt, til tiden og for sent (se beskrivelserne tidligere i denne tabel). |
 | Leveringsperformance        | Afsendt pr. websted/lagersted              | CustPackingSlipOnTimeStatus           | Tidligt, til tiden og for sent (se beskrivelserne tidligere i denne tabel). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

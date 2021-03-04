@@ -74,3 +74,6 @@ Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer
 10. Klik på følgeseddel.
 11. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

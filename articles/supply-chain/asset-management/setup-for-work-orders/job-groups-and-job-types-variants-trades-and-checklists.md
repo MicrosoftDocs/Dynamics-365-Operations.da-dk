@@ -267,3 +267,6 @@ I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i budgette
 2. I dialogboksen **Opdater budget for vedligeholdelsesjobtype** kan du i oversigtspanelet **Poster, der skal indgå** tilføje valg for bestemte typer af vedligeholdelsesjob efter behov. Vælg **Filter**, og vælg derefter **Vælg** for at foretage valgene.
 3. I oversigtspanelet **Kør i baggrunden** kan du konfigurere automatisk opdatering som et batchjob efter behov.
 4. Vælg **OK** for at starte budgetopdateringen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

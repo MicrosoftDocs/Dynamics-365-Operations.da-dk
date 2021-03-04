@@ -99,3 +99,6 @@ Den næste opgave er at oprette en tilbudsanmodning for at få tilbud på produk
 8. Vælg siden.
 9. Vælg Fuldfør.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Følg disse trin for at konfigurere en kalender:
 10. Vælg **Tildel til medarbejdere** i handlingsruden for at tildele medarbejdere en kalender. Vælg de medarbejdere, som du vil tildele denne kalender, og klik derefter på **Tildel**.
 
 Medarbejdere er ikke forpligtet til at have kalendere tildelt. Hvis en arbejdstidskalender er defineret, udelades fridage automatisk i anmodningen. Omfanget i timer eller dage bruger som standard de arbejdstider, der er defineret i kalenderen. Hvis medarbejderen ikke er tildelt en kalender, er alle dage tilgængelige for fravær, og længden af fraværet er ikke standard for anmodningen. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

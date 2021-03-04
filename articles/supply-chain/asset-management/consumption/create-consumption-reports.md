@@ -78,3 +78,6 @@ Når du har bogført forbrug på arbejdsordrer, kan du udskrive en forbrugsrappo
 >[!NOTE]
 >Du kan også oprette en [arbejdsordrerapport](../work-orders/work-order-report.md), der indeholder flere oplysninger om arbejdsordrer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

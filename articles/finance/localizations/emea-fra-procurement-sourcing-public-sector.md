@@ -62,3 +62,6 @@ Du kan oprette købsaftaleklassifikationer, der føjer administrative felter til
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

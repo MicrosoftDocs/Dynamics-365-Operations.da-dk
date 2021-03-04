@@ -130,3 +130,6 @@ Du kan også oprette og bruge pivottabeller og -diagrammer til supplerende grupp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

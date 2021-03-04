@@ -94,3 +94,6 @@ Hvis du vil deaktivere evalueringen af bestemte regler, skal du vælge den mulig
 [Oprette regler for optimeringsrådgiver](./create-rules-optimization-advisor.md)
 
 [Optimeringsrådgiver i Dynamics 365 for Finance and Operations (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

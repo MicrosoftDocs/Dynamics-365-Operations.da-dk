@@ -87,3 +87,6 @@ I følgende eksempel er overførselsaktiviteten for udbetalingskanban'en konfigu
 
 Når en kanban er forbrugt på produktionsindlagringslokationen, rapporteres den som tom, og der føjes en ny kanban til processen. Når den pågældende kanban oprettes, føjes en bølgelinje til en kanbanbølge. Når kanbanbølgen behandles, oprettes lagerstedsarbejde til kanbanpluk. Lagerstedsmedarbejderen behandler arbejdet til kanbanpluk og får under arbejdet anvisning på at plukke materialet til kanban'en på en lagerstedslokation. Når lagermedarbejderen bekræfter plukket, fuldføres kanban'en automatisk, og lagermedarbejderen modtager instruks om at placere materialet på produktionsindlagringslokationen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

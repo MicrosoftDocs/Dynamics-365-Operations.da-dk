@@ -159,3 +159,6 @@ Du kan angive en beskrivelse af planen for at hjælpe medarbejderne med at vælg
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
 2. Vælg **Flekskreditprogrammer**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

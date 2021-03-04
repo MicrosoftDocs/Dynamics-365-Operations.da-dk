@@ -529,3 +529,6 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

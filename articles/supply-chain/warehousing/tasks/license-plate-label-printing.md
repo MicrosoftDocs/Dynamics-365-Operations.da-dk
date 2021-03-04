@@ -101,3 +101,6 @@ Dette emne viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket 
 7. Vælg **Gem**.
 8. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

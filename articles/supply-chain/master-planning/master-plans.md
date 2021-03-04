@@ -57,3 +57,6 @@ Du kan også angive, at den dynamiske startplan skal opdateres med den nye behov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

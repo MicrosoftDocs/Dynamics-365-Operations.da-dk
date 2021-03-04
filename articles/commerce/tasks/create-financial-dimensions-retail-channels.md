@@ -55,3 +55,6 @@ Denne procedure fører dig gennem oprettelse af en handelskanals økonomiske dim
 24. Klik op linket i den valgte række på listen.
 25. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

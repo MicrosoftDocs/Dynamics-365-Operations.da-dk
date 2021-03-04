@@ -51,3 +51,6 @@ Når du opretter en oprindelig budgetpost og bruger budgetmodellen og dimensions
     * For at angive valgfrie indstillinger skal du klikke på ikonet til oplåsning øverst på siden.  
 18. Klik på Opdater.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

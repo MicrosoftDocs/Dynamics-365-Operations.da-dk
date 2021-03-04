@@ -143,3 +143,6 @@ De opdaterede tilknytninger skal se ud som dette.
 
 ![Transformering af feltet Køn](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

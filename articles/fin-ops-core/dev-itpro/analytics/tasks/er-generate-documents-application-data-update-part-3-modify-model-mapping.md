@@ -168,3 +168,6 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
 66. Luk siden.
 67. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

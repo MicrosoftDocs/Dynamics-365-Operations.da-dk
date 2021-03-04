@@ -78,3 +78,6 @@ Hvis der findes en valideringsfejl, er den eneste måde at rette fejlen på, at 
 
 > [!NOTE]
 > Der tilføjes yderligere valideringsregler for at understøtte flere scenarier i en senere version.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Dine saldi opdateres enten automatisk eller gennem en godkendelsesproces, inden 
 
 [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)</br>
 [Administrere politikker for køb og salg af orlov](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

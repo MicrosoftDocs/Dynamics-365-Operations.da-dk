@@ -195,3 +195,6 @@ For kunder, der endnu ikke har aktiveret funktionen [Gemte visninger](saved-view
 Når du tilpasser opsætningen af lagerdimensioner på en side, skal du overveje de indstillinger, der er oprettet ved hjælp af indstillingen **Vis dimension**. Du kan f.eks. bruge personlige indstillinger til at skjule en kolonne for batchnummer-lagerdimensionen, men kolonnen vises, næste gang siden åbnes. Dette sker, fordi indstillingen **Dimensionsvisning** styrer de lagerdimensionskolonner, der vises. Indstillingerne i **Dimensionsvisning** gælder på tværs af alle sider og tilsidesætter den tilpassede opsætning af lagerdimensionsfelter på individuelle sider.
 
 Hvis du derfor i det foregående eksempel ikke ønsker, at kolonnen for batchnummer-lagerdimensionen skal vises på en side, skal du rydde dimensionen som en del af indstillingen **Vis dimensioner** for denne side.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

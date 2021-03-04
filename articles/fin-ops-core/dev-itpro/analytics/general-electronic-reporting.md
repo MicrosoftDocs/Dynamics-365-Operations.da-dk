@@ -367,3 +367,6 @@ Med ER kan du automatisk implementere ændringer af den nyeste version af basisk
 
 - [Opret konfigurationer for Elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

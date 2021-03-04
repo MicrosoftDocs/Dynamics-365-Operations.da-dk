@@ -52,3 +52,6 @@ Du kan finde oplysninger om undervisning i funktioner, der deles med andre Finan
 | Indhold | Beskrivende tekst  | Formater   | Længde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurere og arbejde med e-handel i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Onlinekanalerne og e-handelsstedet for Dynamics 365 Commerce giver detailhandlere mulighed for at skabe en onlinetilstedeværelse af deres mærke. | Gratis onlinelæringssti i dit eget tempo | 4 timer   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

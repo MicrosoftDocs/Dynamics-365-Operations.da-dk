@@ -49,3 +49,6 @@ Du skal oprette et nyt menupunkt med tilstandsarbejde, der ikke bruger eksistere
 - Modtagelse af blandede id'er og placering på lager
 
 Indstillingerne til identifikation af kildedokumentlinjerne er indkøbsordrevare, indkøbsordrelinje, returordre, vare i flytteordre og flytteforslagslinje. Disse indstillinger kan ændre modtagelsesordren på et enkelt id. Den sidste indstilling er vare efter last. Du kan føje flere varer til et id, men du kan ikke skifte mellem flere laster.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

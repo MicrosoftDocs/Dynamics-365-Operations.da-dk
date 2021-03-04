@@ -61,3 +61,6 @@ Når du har mindst én foreslåede ændring, vises der to ekstra faner i handlin
     Status på siden ændres til **Ændringer, der afventer godkendelse**.
 
 Arbejdsgangen følger standardarbejdsgangsprocessen. Godkenderen dirigeres til siden **Kreditor**, hvor ændringerne kan gennemgås på siden **Forslag til ændringer**. Vælg derefter **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

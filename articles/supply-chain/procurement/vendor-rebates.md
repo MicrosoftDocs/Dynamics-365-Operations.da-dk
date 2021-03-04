@@ -167,3 +167,6 @@ Processen til håndtering af kreditorrabatter omfatter flere manuelle sporingsop
 - Generering af præcise rabatkrav
 - Periodisering af det forventede tilgodehavende og den midlertidige gevinst i Finans
 - Opdatering af kreditorsaldoen og resultatopgørelsen med den ydelse, der er forfaldent
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

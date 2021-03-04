@@ -43,3 +43,6 @@ Denne procedure viser, hvordan du kan bruge forespørgsler på bilagstransaktion
 12. Klik på **Originaldokument** i handlingsruden.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

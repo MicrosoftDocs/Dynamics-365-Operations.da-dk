@@ -72,3 +72,6 @@ Varebehov til serviceordrer behandles løbende igennem et projekt. Hvis du vil o
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -854,3 +854,6 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
     - Flytteordrer og pluk af råvarer
 
 - Der er begrænsninger for containerkonsolideringsreglen for pakning efter vejledningsenhed. I forbindelse med ordrebekræftede reservationer anbefales det, at du ikke bruger skabeloner til containerbuild, hvor feltet **Pakning efter vejledningsenhed** er aktiveret. I det aktuelle design bruges lokationsvejledninger ikke, når der oprettes lagerstedsarbejde. Derfor er det kun den laveste enhed i enhedsseriegruppen (lagerenheden), der anvendes under containeriseringsbølgetrinnet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

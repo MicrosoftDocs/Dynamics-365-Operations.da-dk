@@ -71,3 +71,6 @@ Servicestyring kan integreres med følgende moduler:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ Dynamics 365 Supply Chain Management-lagerstedsappen er blevet testet for scanni
 
 Det anbefales, at du som kunde tester appen til mobil scanning til lageret på udvalgt hardware, før du beslutter dig for den hardware, som du vil købe.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

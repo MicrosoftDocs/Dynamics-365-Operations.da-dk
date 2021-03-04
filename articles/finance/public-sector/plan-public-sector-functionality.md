@@ -76,3 +76,6 @@ Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

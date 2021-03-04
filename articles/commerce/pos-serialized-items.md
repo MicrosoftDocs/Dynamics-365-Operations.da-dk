@@ -95,3 +95,6 @@ Hvis du vil aktivere denne validering, skal du som en forudsætning planlægge f
 [Indgående lagerhandling i POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Udgående lagerhandling i POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

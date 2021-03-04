@@ -43,3 +43,6 @@ Serviceaftalegrupper er nyttige ved sortering og filtrering af serviceaftaler.
 ## <a name="related-topics"></a>Relaterede emner
 
 [Oversigt over serviceaftale](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

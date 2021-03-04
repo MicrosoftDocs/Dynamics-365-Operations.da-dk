@@ -62,3 +62,6 @@ Denne fremgangsmåde fokuserer på planlægning af kanban-procesjob for en beste
     * Bemærk, at begge job er føjet til den ønskede periode.  
     * Du kan se belastningen for hver periode i sektionen Periodekapacitet. Feltet Forbrug viser det planlagte forbrug i denne periode. Hvis det planlagte forbrug er højere end den tilgængelige kapacitet i denne periode, vælges det overbelastede forbrug.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

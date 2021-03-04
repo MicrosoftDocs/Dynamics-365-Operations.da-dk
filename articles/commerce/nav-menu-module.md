@@ -72,3 +72,6 @@ Du kan finde flere oplysninger om, hvordan du føjer et navigationsmenumodul til
 [Cookieoverholdelse](cookie-compliance.md)
 
 [Overskriftsmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

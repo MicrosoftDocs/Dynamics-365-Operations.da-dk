@@ -81,3 +81,6 @@ Når du opretter en ny serviceordre til en serviceaftale, som en SLA er tildelt 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

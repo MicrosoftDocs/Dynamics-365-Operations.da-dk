@@ -71,3 +71,6 @@ Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
 + [Konfigurere parallelle grene i en arbejdsgang](configure-parallel-branch-workflow.md)
 + [Konfigurere arbejdsgange for linjeelementer](configure-line-item-workflow.md)
 + [Ofte stillede spørgsmål om arbejdsgang](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

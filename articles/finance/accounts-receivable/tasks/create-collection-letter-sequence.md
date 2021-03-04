@@ -59,3 +59,6 @@ Brug denne opgaveguide til at oprette et rykkerforløb. Denne opgave bruger demo
 26. Udvid oversigtspanelet **Note**.
 27. Angiv den tekst, der skal vises i rykkeren for den valgte rykkerkode. Du kan oversætte denne tekst til flere sprog ved hjælp af menuen Oversættelser over notefeltet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

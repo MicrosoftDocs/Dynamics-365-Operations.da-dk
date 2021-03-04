@@ -110,3 +110,6 @@ Den fakturakladde, der oprettes, efter bogføringen er indtraf, omfatter ikke de
 Det er vigtigt, at fakturakladden ikke medtager den overordnede vare fra bundtet, da alle processer, der udføres, efter at fakturaen er bogført, er baseret på denne fakturajournal. Hvis du f.eks. opretter en kreditnota fra fanen **Sælg** i handlingsruden, omfatter den kreditnota, der oprettes, de indgående varer, men ikke den overordnede vare.
 
 [![Kreditnota, der viser komponentvarerne, men ikke den overordnede vare](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

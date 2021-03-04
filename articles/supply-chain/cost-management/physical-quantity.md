@@ -147,3 +147,6 @@ I følgende tabel vises resultatet af beregningen for et lagerobjekt. Du kan få
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

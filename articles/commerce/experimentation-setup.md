@@ -54,3 +54,6 @@ Benyt følgende fremgangsmåde for at konfigurere succesmålepunkter.
 
 ## <a name="next-step"></a>Næste trin
 [Tilslutte og redigere et eksperiment](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

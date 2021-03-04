@@ -86,3 +86,6 @@ Nedrulningsrapporten indeholder følgende oplysninger:
 - Debet-og kreditoplysninger for bilaget med faktiske oplysninger
 - Positive og negative beløb for budgettet, behæftelse og budgetreservationsbilaget
 - Åbne, afslutte og køre saldi for finanskontoen
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -243,3 +243,6 @@ Grundlaget føjes til til formatet **Format til at lære ER-grundlag**.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

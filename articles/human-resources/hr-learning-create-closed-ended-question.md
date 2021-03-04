@@ -68,3 +68,6 @@ Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen ka
 5. Indtast eller vælg en værdi i feltet Svarsamling.
 6. Skriv en værdi i feltet Tekst.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

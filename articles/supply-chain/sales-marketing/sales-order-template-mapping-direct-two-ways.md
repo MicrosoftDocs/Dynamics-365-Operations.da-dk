@@ -207,3 +207,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 ## <a name="related-topics"></a>Relaterede emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

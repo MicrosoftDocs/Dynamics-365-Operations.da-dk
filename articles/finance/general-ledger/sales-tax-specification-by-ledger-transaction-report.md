@@ -58,3 +58,6 @@ Når du opretter rapporten, er følgende standardfelter tilgængelige. Du kan br
 Hvis du kun vil have vist ikke-momskonti i rapporten, skal du konfigurere en filterbetingelse, f.eks. en stjerne (\*), som vist i følgende illustration.
 
 ![Rapport, der viser ikke-momskonti](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ En driftsenhed er en organisation, der bruges til at opdele administrationen af 
     + Angiv oplysninger om kommunikationsmåder, som f.eks. e-mail-adresser, URL-adresser og telefonnumre. Klik på Ny for at angive en ny kommunikationspost. Klik på **Flere indstillinger > Avanceret** for at ændre en eksisterende kommunikationspost.   
 6. Du kan evt. ændre **Driftsenhedsnummer**, hvis det er nødvendigt. Bemærk, at dette tal er en entydig idenitifikator for den tilsvarende **Part**-post og må ikke være det samme som en anden driftsenhed.
 7. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

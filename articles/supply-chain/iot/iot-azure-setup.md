@@ -162,3 +162,6 @@ Benyt følgende fremgangsmåde, hvis du vil gemme hemmeligheden for Redis-cachef
 > Når du opdaterer en af forbindelsesstrengene, skal du også opdatere de hemmelige værdier.
 
 Nu er du færdig med at klargøre de krævede Azure-ressourcer. Det næste skridt er at [installere tilføjelsesprogrammet IoT-viden i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

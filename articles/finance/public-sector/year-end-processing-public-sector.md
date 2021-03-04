@@ -60,3 +60,6 @@ Bogføringsdefinitioner styrer de regnskaber, der forekommer på ultimoposterne,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

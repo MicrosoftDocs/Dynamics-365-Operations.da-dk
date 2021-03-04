@@ -64,3 +64,6 @@ Du kan også kopiere kreditorer ved hjælp af søgefunktionen til SE-nummer, der
 
 1. Indstillingen **Kopiér kreditor** vises. Denne indstilling er som standard angivet til **Nej**. Hvis du vil kopiere kreditoren til den aktuelle juridiske enhed, skal du angive indstillingen til **Ja**.
 2. Vælg **Vælg**. Den nye kreditor oprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

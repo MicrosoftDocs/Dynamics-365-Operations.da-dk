@@ -45,3 +45,6 @@ Når du reserverer lager til et produkt på en salgsordrelinje, der er konfigure
 - Batchen har ikke tilstrækkelige hyldelevetidsdage tilbage baseret på udløbsdatoen og sidste holdbarhedsdato samt eventuelle salgbare dage for debitor.
 
 For varer, der er tilknyttet en lagringsdimensionsgruppe, som **Brug lagerstedsstyringsprocesser** er aktiveret for, kan du reservere specifikke batchnumre ved at bruge et reservationshierarki med det batchnummer for lagerdimensionen, der er defineret over lokationsdimensionen. På siden **Batchreservation** for salgs- og flytteordrelinjer kan du også vælge og reservere flere linjer på baggrund af de tilgængelige batchnumre. Du kan finde flere oplysninger om, hvad du skal gøre, hvis du bruger et reservationshierarki, der har batchnummerdimensionen under lokationen, i [Fleksibel reservationspolitik for dimension på lagerstedsniveau](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

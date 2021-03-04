@@ -86,3 +86,6 @@ Denne registrering anvender demofirmaet USMF. Rollen kreditorchef eller rollen r
 24. Luk siden.
 25. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

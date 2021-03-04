@@ -63,3 +63,6 @@ Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Impo
 2. Klik på Oprindelig.
     * Du kan kontrollere jobstatus og hente den faktiske fil på siden Elektroniske rapporteringsjob.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

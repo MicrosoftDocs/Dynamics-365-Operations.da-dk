@@ -62,3 +62,6 @@ Denne procedure gennemgår salg af et kontinuitetsprogram og behandling af relat
     * Angiv nummeret på salgsordren, du noterede tidligere i proceduren. Derved reduceres behandlingstiden til et minimum for denne procedure. Feltet Salgsordre er valgfrit – du kan behandle alle ordrer for alle ét program.  
 21. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

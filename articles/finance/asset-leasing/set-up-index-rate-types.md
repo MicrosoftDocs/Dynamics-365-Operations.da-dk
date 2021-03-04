@@ -43,3 +43,6 @@ Du skal vælge enten **Differenceværdi for indekssats** eller **Værdi for inde
 
 - Vælg metoden **Værdiforskel for indekssats** for at beregne en ny leasingbetaling, baseret på forskellen mellem indekssatsen på startdatoen og den seneste indekssats. Indekssatsen defineres i feltet **Indekssats (%)**.
 - Vælg metoden **Værdi af indekssats** for at beregne leasingbetaling ved hjælp af den procentdel, der er angivet i feltet **Indekssats (%)**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

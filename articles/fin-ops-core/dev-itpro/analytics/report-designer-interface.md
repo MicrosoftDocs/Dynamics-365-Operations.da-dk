@@ -227,3 +227,6 @@ Report Designer-værktøjslinjen giver hurtig adgang til kommandoer til navigeri
 [Økonomirapportering](financial-reporting-intro.md)
 
 [Generere økonomiske rapporter](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

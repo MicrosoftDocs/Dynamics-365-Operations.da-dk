@@ -41,3 +41,6 @@ Du kan konfigurere systemet til at sende e-mails til brugerne, når der opstår 
 
 > [!NOTE]
 > E-mailskabelonerne til arbejdsgangen leveres fra enten systemmailskabeloner eller virksomhedsmailskabeloner, afhængigt af om arbejdsgangen er på systemniveau (ikke firmaspecifik) eller på virksomhedsniveau (firmaspecifik).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

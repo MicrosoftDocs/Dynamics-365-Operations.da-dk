@@ -67,3 +67,6 @@ Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den
 3. Kør distributionsplanen 1070 for at synkronisere ændringerne til kanaldatabasen. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

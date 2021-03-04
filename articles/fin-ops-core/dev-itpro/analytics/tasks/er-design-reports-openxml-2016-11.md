@@ -150,3 +150,6 @@ Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og mark
 17. Skriv `GBSI OPER` i feltet **Bankkonto**.
 18. Vælg **OK**, og vælg derefter **OK** igen. Gennemse det oprettede regneark, herunder oplysninger om betalingslinjer samt totaler for hver valutakode, der bruges i denne betalingsmeddelelse.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

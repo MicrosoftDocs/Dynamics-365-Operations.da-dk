@@ -63,3 +63,6 @@ Inden et fuldt afskrevet aktiv opdeles, skal status for aktivbogen ændres manue
     - Der oprettes en anskaffelsespostering for det nye aktiv for det samme beløb.
 
 4. Vælg **Bogfør**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

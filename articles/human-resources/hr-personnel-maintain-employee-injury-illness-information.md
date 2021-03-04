@@ -93,3 +93,6 @@ Denne opgaveregistrering omfatter de grundlæggende trin til oprettelse af en sk
 36. Klik på Gem.
     * Sagsstatus kan altid opdateres.  Indstil sagen til Igangværende, hvis behandlingen af en skade eller sygdom er i gang.  Når du lukker hændelsen, kan du kun tilføje eller fjerne omkostninger, behandlinger eller registreringer, der er knyttet til hændelsen.  Hvis du vil ændre andre oplysninger, skal du genåbne sagen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

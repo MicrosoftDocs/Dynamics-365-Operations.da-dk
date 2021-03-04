@@ -106,3 +106,6 @@ Hvis du vil føje et videoafspillermodul til en ny side og angive de påkrævede
 [Tekstblokmodul](add-content-rich-block.md)
 
 [Indholdsblokmodul](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

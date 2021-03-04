@@ -46,3 +46,6 @@ I dette emne forklares, hvordan du kan oprette betalingsmåde til debitorbetalin
 15. Brug fanen **Betalingsattributter** til at definere, hvilke betalingsattributter du vil bruge til denne betalingsmåde.
 16. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

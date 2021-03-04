@@ -281,3 +281,6 @@ Nu, hvor funktionen *Placering af nummerplade på lokation* er oprettet, og lage
     ![Placering 1-lokation](media/LocationLicensePlatePositioning.png "Placering 1-lokation")
 
 1. Angiv det nummerplade-id, du har oprettet for lokationen, og følg derefter vejledningen for at plukke salgsordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

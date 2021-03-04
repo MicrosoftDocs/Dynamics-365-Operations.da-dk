@@ -46,3 +46,6 @@ Denne version indeholder flere supplerende fejlrettelser.
 ## <a name="known-issue"></a>Kendt problem
 
 -   **Problem:** Når du føjer en ny vedhæftet fil til en arbejder, bliver **Ny**- og **Rediger**-knapperne nedtonede. **Løsning:** Før du åbner siden Vedhæftet fil, skal du sørge for, at faktaboksene på siden **Arbejder** er lukkede. Hvis faktaboksene et lukkede, når siden **Arbejder** indlæses, vil Vedhæftede filer-knapperne blive aktiveret. (Dette problem vil blive løst i den næste platformsopdatering).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

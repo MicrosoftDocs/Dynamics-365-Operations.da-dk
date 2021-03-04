@@ -60,3 +60,6 @@ Den resulterende postværdi.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Postfunktioner](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

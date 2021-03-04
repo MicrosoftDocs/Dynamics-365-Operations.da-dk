@@ -104,3 +104,6 @@ Følg trinnene i et af følgende eksempler for at få vist de tilladte betalings
 
 
 ![Liste over betalingsmetoder](media/Return-policy-page5.PNG "Refusionstyper er tilladt")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

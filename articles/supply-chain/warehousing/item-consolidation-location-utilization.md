@@ -208,3 +208,6 @@ I følgende scenarie bruges lagerstedsappen på en mobilenhed, når der foretage
 
     > [!NOTE]
    > Systemet opretter et arbejds-id for hver flytning, der skal fuldføres. Hvis du angiver en lokation, der allerede indeholder lager, oprettes der kun ét arbejds-id. Hvis du angiver en ny lokation, oprettes der to arbejds-id'er.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

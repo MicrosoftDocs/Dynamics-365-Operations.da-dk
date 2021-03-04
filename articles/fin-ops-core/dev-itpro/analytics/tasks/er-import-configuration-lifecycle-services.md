@@ -103,3 +103,6 @@ I dette eksempel skal du vælge den ønskede version af ER-konfigurationen og im
     I dette eksempel skal du vælge den konfigurationsversion, der har statussen **Delt**.
 
     Bemærk, at den delte version 1 af den valgte datamodelkonfiguration nu også er tilgængelig.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Du kan konfigurere afrundingsregler i Dynamics 365 Human Resources for at imøde
 3. Angiv værdier for **Afrunding til nærmeste**, **Scenario** og **Afrundingsformular**.
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ I dette emne beskrives, hvordan du konfigurerer en enkel lokationsvejledning. De
 4. Skriv en værdi i feltet **Kriterier**.
 5. Vælg **OK**. Du kan fortsætte med at tilføje vejledningslinjer og vejledningshandlinger, indtil du har dækket alle de mulige scenarier på lagerstedet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Du kan finde flere oplysninger under følgende emner:
 [Oprette posteringsprofiler for bankfaciliteter til garanti](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

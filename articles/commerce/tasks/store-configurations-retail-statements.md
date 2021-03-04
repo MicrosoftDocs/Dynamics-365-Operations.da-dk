@@ -49,3 +49,6 @@ Denne procedure viser konfigurationer for butikken, der påvirker, hvordan Comme
 17. Vælg "Ja" i **Opdel efter opgørelsesmetode** for at få oprettet opgørelser for hver defineret opgørelsesmetoden. Denne handling kan være nyttig, hvis bogføringens ydeevne skal forbedres for butikker med store transaktionsmængder, da den opretter mange mindre opgørelser, som kan behandles parallelt.  
 18. I feltet **Standardkunde** i oversigtspanelet **Generelt** skal du vælge den debitorkonto, der skal bruges til salg til kunder, der kommer ind fra gaden.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

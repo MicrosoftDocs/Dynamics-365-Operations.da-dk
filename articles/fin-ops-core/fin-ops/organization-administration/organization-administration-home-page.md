@@ -101,3 +101,6 @@ Med postskabeloner kan du hurtigere oprette poster. Du kan oprette en postskabel
 - [Konfigurere dokumentstyring](configure-document-management.md)
 - [Konfigurere og sende mail](configure-email.md)
 - [Data om dato/klokkeslæt og tidszoner](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

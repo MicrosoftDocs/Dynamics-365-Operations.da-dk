@@ -75,3 +75,6 @@ Hvis værdien af argumentet `decimals` er mindre end 0 (nul), afrundes det angiv
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Matematiske funktioner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

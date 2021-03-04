@@ -39,3 +39,6 @@ Denne procedure viser, hvordan du opretter en indkøbsordre for en engangslevera
 5. Klik på OK.
     * Indkøbsordren kan nu udfyldes og behandles som enhver anden ordre. Der er ingen særlige kendetegn for, hvordan dette gøres. Fakturaen medregner en transaktion på den kreditorkonto, der blev oprettet til ordren, og betalingen vil derefter blive behandlet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

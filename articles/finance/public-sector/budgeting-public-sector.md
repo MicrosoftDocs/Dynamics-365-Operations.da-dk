@@ -69,3 +69,6 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

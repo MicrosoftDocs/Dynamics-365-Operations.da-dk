@@ -36,3 +36,6 @@ I transportstyring kan du opdele geografiske steder i zoner. Opdeling af steder 
 - **Optimere ruteplanlægning** – Ved at tildele bestemte ruteplaner i bestemte zoner.
 
 Du kan definere zoner på baggrund af metadatafeltværdier (f.eks. land/område, postnummer eller fragttjeneste), der skal kvalificere de enkelte zoner. Der kræves ikke zonedefinitioner, hvis din transportpris ikke anvender et zonebegreb.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

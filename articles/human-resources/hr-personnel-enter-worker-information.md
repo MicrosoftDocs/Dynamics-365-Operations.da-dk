@@ -45,3 +45,6 @@ Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og gen
 8. Fjern markeringen af den valgte række på listen.
     * Vælg det næste ansættelsesprojekt, og fortsæt med at indtaste arbejderoplysninger for hver person, du ansætter.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

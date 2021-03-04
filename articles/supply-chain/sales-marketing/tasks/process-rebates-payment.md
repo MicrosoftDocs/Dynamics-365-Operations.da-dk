@@ -51,3 +51,6 @@ Denne fremgangsmåde viser, hvordan godkendte og behandlede kunderabatter konver
     * Bemærk, at en transaktion for negative beløb, der repræsenterer det samlede rabatbeløb uden fakturareference, er blevet tilføjet debitorbalancen.   
 15. Klik på Annuller.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

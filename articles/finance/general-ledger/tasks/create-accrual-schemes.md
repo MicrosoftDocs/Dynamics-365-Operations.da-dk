@@ -41,3 +41,6 @@ Dette emne forklarer, hvordan du opretter et periodiseringsskema. Denne opgave b
 10. Angiv et tal i feltet **Antal forekomster pr. periode**.
 11. I feltet **Bogfør transaktioner** skal du vælge, hvornår transaktionerne skal bogføres, f.eks. **Månedligt**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

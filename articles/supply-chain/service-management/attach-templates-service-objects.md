@@ -55,3 +55,6 @@ En styklisteskabelon kan knyttes til en serviceobjektrelation. Serviceobjektrela
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

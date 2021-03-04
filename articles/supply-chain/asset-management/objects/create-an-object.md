@@ -116,3 +116,6 @@ I dette oversigtspanel kan du tilføje eller fjerne vedligeholdelsesrunder, der 
 ## <a name="financial-dimensions"></a>Økonomiske dimensioner
 
 Du kan vælge økonomiske dimensioner til aktivet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

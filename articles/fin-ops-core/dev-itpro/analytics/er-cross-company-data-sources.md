@@ -76,3 +76,6 @@ Hent følgende filer for at fuldføre opgaveguiden:
 
 - [ER-modelkonfiguration - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-formatkonfiguration - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

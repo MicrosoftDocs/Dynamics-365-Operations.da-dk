@@ -86,3 +86,6 @@ De momskoder, der er valgt for dimensionslinjen, er som følger, hvis posteringe
 |   Fond 101, division 121                  | Tax2, Tax3      |
 |   Fond 303, enhver division med undtagelse af 141         | Tax1, Tax2, Tax3|
 |   Fond 303, division 141                  | Tax1            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

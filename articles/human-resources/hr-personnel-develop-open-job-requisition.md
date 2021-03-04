@@ -66,3 +66,6 @@ Rekrutteringsprojekter hjælper dig med at administrere rekrutteringsprocessen. 
     * Status Påbegyndt betyder, at projektet er klar til at modtage ansøgninger.  
 33. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

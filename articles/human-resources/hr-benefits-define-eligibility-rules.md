@@ -69,3 +69,6 @@ Det demodatafirma, der bruges til at oprette denne post, er USMF.
 10. Klik på Gem.
 11. Luk formularen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

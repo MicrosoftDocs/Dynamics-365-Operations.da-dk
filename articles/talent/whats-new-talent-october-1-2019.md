@@ -84,3 +84,6 @@ I denne uges build vises beskrivelsen, når jobbet vælges på siden **Analyse a
 ### <a name="print-performance-reviews"></a>Udskiv performancegennemgange
 
 Medarbejdere, ledere og personalemedarbejdere kan udskrive en medarbejders performancegennemgang.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -242,3 +242,6 @@ Se tabellen i næste afsnit for at få flere oplysninger om datometoden <strong>
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

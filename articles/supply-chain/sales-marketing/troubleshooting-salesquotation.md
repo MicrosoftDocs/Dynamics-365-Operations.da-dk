@@ -40,3 +40,6 @@ Hvis du forsøger at angive et salgsantal (**SalesQty**-felt) for en vare af typ
 
 Du kan ikke angive et salgsantal for produkter, der er servicevarer. Hvis du f.eks. tilbyder en service til installation af en vare, giver det ikke mening at registrere et antal, da der ikke er nogen fysisk vare. Der er kun en tjeneste.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

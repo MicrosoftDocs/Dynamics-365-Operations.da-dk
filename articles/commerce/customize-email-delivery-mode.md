@@ -73,3 +73,6 @@ Hvis du vil konfigurere mailskabeloner for bestemte leveringsmåder i Commerce H
 [Oprette callcenter-ordrer](tasks/create-call-center-orders.md)
 
 [Skifte leveringsmåde til i POS](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -331,3 +331,6 @@ I dette eksempel oprettes returordrelinjen ved hjælp af funktionen **Find salgs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

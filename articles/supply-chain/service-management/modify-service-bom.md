@@ -72,3 +72,6 @@ Du kan registrere historikken for et element i en servicestykliste. Hver gang du
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

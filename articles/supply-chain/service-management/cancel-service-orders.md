@@ -78,3 +78,6 @@ De valgte serviceordrer annulleres, eller deres status **Annulleret** ændres ti
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Denne procedure viser, hvordan du opretter en tilbehørstildeling. Denne konfigu
 14. Angiv et tal i feltet Gebyr for tillæg.
 15. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

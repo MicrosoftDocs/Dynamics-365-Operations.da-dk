@@ -67,3 +67,6 @@ En positiv værdi for `days` leverer en fremtidig dato. En negativ værdi giver 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dato- og klokkeslætsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

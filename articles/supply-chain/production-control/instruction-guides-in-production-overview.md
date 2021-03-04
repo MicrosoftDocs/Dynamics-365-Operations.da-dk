@@ -410,3 +410,6 @@ Når Supply Chain Management genererer jobbene til produktionen, vil det indsaml
 - Hvis du definerer flere ruteoperationsrelationer, der omfatter *Alle*-relationen, og tildeler dem guider, vises kun guiderne fra den mest specifikke relation for jobbet.  
 
 ![Diagram til fortolkning af relevante guider](media/instruction-guides-Resolve.png "Diagram til fortolkning af relevante guider")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Når funktionen for farligt materiale er aktiveret i systemet, indeholder rappor
 ## <a name="packing-list-report"></a>Rapporten Plukliste
 
 Når funktionen for farligt materiale er aktiveret i systemet, indeholder pakkelister yderligere oplysninger vedrørende forsendelsesudskrivningsteksten for en vare. Denne rapport er tilgængelig på siden **Alle laster** som normalt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

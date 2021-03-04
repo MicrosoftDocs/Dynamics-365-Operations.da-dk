@@ -68,3 +68,6 @@ Dette emne beskriver, hvordan du kan bruge indgangsbogen til at oprette fakturae
 13. Vælg **Transaktioner**.
 14. Vælg den faktura, du oprettede. Periodiseringen af indgangsbogen blev tilbageført og bogført på den relevante udgiftskonto.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

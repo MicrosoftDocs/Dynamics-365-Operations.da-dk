@@ -169,3 +169,6 @@ Den ændrede skabelon bruges til at generere rapporten med fritekstfaktura for d
 [Oversigt over styring af forretningsdokumenter](er-business-document-management.md)
 
 [Designe en konfiguration til generering af rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

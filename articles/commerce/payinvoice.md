@@ -45,3 +45,6 @@ Hvis du vil aktivere disse scenarier, skal funktionalitetsprofilen for butikker 
 
 > [!NOTE]
 > Betaling eller udligning af delbeløb understøttes ikke endnu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

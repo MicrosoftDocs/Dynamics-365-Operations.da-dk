@@ -131,3 +131,6 @@ Du kan bruge følgende procedure til at oprette en kreditorfaktura for at regist
 11. Hvis du vil angive flere oplysninger om linjen, skal du vælge oversigtspanelet **Linjedetaljer** og angive oplysningerne.
 12. Valgfrit: Send fakturaen til arbejdsgangssystemet til gennemsyn og godkendelse, og bogfør derefter fakturaen.
 13. Hvis du vil gemme fakturaen uden at bogføre den, skal du lukke siden. Du kan se fakturaen på listesiden **Ventende kreditorfakturaer**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

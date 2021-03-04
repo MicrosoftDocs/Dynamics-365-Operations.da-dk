@@ -67,3 +67,6 @@ Dette emne forklarer, hvordan du udfører uoverensstemmelsesstyring baseret på 
 2. Vælg **Luk uoverensstemmelsen**.
 3. Vælg **Ja**.
 4. Luk siderne.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

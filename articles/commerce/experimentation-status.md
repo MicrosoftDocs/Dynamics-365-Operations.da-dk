@@ -45,3 +45,6 @@ På samme måde kan følgende værdier vises i kolonnen **tredjepartsstatus** fo
 I nedenstående diagram vises begge sæt statusser, og hvordan de er relateret til hinanden.
 
 [ ![Eksperimenterens statusser](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

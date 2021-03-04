@@ -104,3 +104,6 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

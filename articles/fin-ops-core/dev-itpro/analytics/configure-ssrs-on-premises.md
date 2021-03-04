@@ -93,3 +93,6 @@ Brug trinene i dette emne til at konfigurere SQL Server Reporting Services (SSRS
 13. Klik på **Afslut** for at lukke **Konfigurationsstyring til Reporting Services**.
 
     [![konfigurationsstyring til reporting services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

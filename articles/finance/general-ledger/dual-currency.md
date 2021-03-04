@@ -209,3 +209,6 @@ I finanskonsolidering er der tilføjet en ny indstilling til konsolidering af en
 -  Du kan nu vælge, om du vil bruge regnskabsvalutaen eller rapporteringsvalutaen fra kilderegnskabet som transaktionsvaluta i det konsoliderede regnskab.
 
 - Regnskabs- eller rapporteringsvalutabeløbene fra kildefirmaet bliver kopieret direkte til regnskabs- eller rapporteringsvalutabeløbene i det konsoliderede regnskab, hvis én af valutaerne er den samme. Regnskabs- og rapporteringsvalutabeløbene i det konsoliderede regnskab beregnes ved hjælp af valutakursen, hvis ingen af valutaerne er den samme.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Pakningsprocessen gør det muligt at validere og pakke af produkter i containere
 8. Indtast eller vælg en værdi i feltet Vægtenhed.
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

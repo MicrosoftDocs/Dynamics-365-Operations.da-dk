@@ -145,3 +145,6 @@ I følgende illustration vises processen, som beskrevet i dette emne, til gruppe
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

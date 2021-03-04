@@ -47,3 +47,6 @@ Denne procedure viser, hvordan du opretter og planlægger området for læsning.
 6. Klik på Gem.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

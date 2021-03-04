@@ -40,3 +40,6 @@ Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige 
 12. Indtast en værdi i feltet **Sikkerhedsmitigering**. Angiv en beskrivelse af de handlinger, du udfører for at reducere sikkerhedsrisikoen. Du kan f.eks. mindske risikoen ved at foretage en mere detaljeret gennemgang af processen, ved at gennemføre en månedlig evaluering på lederniveau eller ved at dele ressourcer med andre afdelinger.     
 13. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

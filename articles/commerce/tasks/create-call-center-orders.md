@@ -62,3 +62,6 @@ Denne procedure gennemgår søgning efter en kunde, oprettelse af en ny ordre, s
 
 [Skifte leveringsmåde til i POS](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

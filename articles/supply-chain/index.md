@@ -106,3 +106,6 @@ Der er mange emner om styring af produktionen og forsyningskæden i [Dynamics AX
 ## <a name="elearning-courses"></a>eLearning-kurser
 
 Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Supply Chain Management on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

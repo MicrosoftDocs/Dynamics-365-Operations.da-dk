@@ -80,3 +80,6 @@ Du kan ændre betalingsmåden for at annullere en kreditkortgodkendelse, til en 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

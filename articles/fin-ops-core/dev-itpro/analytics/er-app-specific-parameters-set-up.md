@@ -260,3 +260,6 @@ I det foregående eksempel fik du adgang til programspecifikke parametre for et 
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Konfigurer ER-formater for at bruge de parametre, der er angivet for den enkelte juridiske enhed](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

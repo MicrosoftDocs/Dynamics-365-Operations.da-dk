@@ -58,3 +58,6 @@ Du kan oprette omkostningselementer i omkostningsregnskab på flere måder. Denn
 1. Klik på Vis dimensionsmedlemmer.
     * Se de importerede finanskonti som omkostningselementer i din virksomhed, som omkostninger kan flyde til.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

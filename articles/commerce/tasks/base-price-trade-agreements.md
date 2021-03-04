@@ -70,3 +70,6 @@ Denne procedure gennemgår oprettelse af kanalspecifikke salgsprissamhandelsafta
 38. Klik på Sælg i **handlingsruden**.
 39. Klik på **Salgspris**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

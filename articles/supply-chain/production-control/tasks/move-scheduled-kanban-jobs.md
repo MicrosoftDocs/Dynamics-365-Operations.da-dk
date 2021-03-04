@@ -62,3 +62,6 @@ Denne fremgangsmåde fokuserer på flytning af planlagte kanban-procesjob til en
 2. Klik på **Fremad**. Bemærk, at jobbet er flyttet én linje ned på listen. 
 
 3. Klik på **Baglæns**. Bemærk, at jobbet er flyttet én linje op på listen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

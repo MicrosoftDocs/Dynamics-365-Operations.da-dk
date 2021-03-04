@@ -140,3 +140,6 @@ Du kan generere rapporten **Afsendt til kunder** for at identificere mængden af
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore samprodukter og biprodukter?
 Du kan spore samprodukter, men du kan ikke spore et biprodukt, da der typisk ikke tildeles sporingsdimensioner til biprodukter. Når du sporer en vare, omfatter sporingsdetaljerne alle relaterede samprodukter. En node, der indeholder et samprodukt, har ordet "samprodukter" med i detaljerne. Du kan også få vist detaljer om et samprodukt ved at vælge noden i sporingsdetaljerne og derefter klikke på oversigtspanelet **Produktion**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

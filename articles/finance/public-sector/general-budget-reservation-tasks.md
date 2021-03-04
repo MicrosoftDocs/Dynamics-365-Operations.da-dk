@@ -172,3 +172,6 @@ Det gælder for alle generelle budgetreservationer, som ikke er udløbet og stad
 Hvis du har aktiveret budgetstyring, kan du reducere det overførte budget for alle overførte generelle budgetreservationer, der er afsluttet og har en restsaldo. På denne måde kan du hjælpe med at garantere, at midler fra det forrige år ikke bruges på køb i det nye år.
 
 Hvis der er valgt **Ja** i indstillingen **Reducer overført budget** i den tilknyttede fonds- eller reservationstype, og du færdiggør dokumentet i det nye regnskabsår, bliver den resterende dokumentsaldo og et eventuelt resterende overført budget reduceret til 0 (nul).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

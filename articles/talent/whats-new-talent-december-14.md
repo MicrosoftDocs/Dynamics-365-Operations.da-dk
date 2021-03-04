@@ -151,3 +151,6 @@ De opdaterede tilknytninger skal se ud som på følgende billeder.
 ![Opgaven Arbejdere til arbejde](./media/WorkerMapping.png)
 
 ![Transformering af feltet Køn](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

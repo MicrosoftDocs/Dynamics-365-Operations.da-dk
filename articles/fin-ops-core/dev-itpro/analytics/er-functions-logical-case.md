@@ -83,3 +83,6 @@ Hvis den første resultatværdi og den *N*'te resultatværdi er værdier af data
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Logiske funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

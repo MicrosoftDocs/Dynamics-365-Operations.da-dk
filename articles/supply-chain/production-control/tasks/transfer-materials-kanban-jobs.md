@@ -66,3 +66,6 @@ Denne fremgangsmåde fokuserer på at udtrække et kanban-job for at overføre m
 2. Klik på Fuldført.
     * Dette fuldfører overførsel af begge job.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

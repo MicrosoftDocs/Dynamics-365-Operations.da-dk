@@ -49,3 +49,6 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 ![Siden ER-konfigurationer](../media/er-financial-dimensions-guides-run3.png)
     * Gennemse det genererede output. For hver transaktion for det markerede batch vises de økonomiske dimensioner fra det tilsvarende sæt dimensioner. Kør denne rapport, og vælg forskellige dimensioner for at se, at rapporten ikke er afhængig af antallet af valgte dimensioner eller antallet af dimensioner, der er konfigureret for denne forekomst.  
 ![Siden ER-konfigurationer](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

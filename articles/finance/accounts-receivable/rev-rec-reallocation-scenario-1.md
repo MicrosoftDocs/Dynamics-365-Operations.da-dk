@@ -58,3 +58,6 @@ Hvis du vil fuldføre omfordelingen, skal du vælge **Proces**. Du bliver bedt o
 > Hvis du vil give kontekst om, hvorfor disse yderligere elementer vises, kan du føje andre kolonner til gitteret, f.eks. **Genplacerings-id** og **Salgsordre**.
 > 
 > [![Yderligere kolonner på siden Indtægtsprisfordelinger](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

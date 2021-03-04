@@ -64,3 +64,6 @@ Denne procedure fører dig gennem processen med at oprette og bogføre en lagero
 2. Klik på Transaktioner.
     * Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

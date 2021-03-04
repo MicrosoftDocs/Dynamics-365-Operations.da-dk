@@ -42,3 +42,6 @@ Følgende indstillinger er tilgængelige for overførsel af reskontrobatches.
 I version 10.0.8 er der sket forbedringer af ydeevnen for indstillingen Asynkron. Denne funktion er aktiveret under funktionsnavnet **Overførsel af reskontro til Finans med performance-optimering**. 
  
 Denne funktionalitet forbedrer overførslen af data fra reskontro til Finans. Processen kan være mere effektiv, og den grupperer sæt med mindre transaktioner, der skal overføres. Det giver en mere effektiv brug af batchserveren. Denne funktionalitet kræver, at batchserveren konfigureres, er online og fungerer, for at den asynkrone overførselsindstilling kan fungere. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

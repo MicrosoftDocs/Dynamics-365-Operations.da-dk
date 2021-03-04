@@ -57,3 +57,6 @@ Denne procedure drejer sig om at udføre kanban-procesjob. Det første job er fu
 6. Indtast et tal i feltet Antal gode.
 7. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Følgende billede viser et eksempel på en indkøbsvogn, der viser en på lager-
 [Butiksvælgermodul](store-selector.md)
 
 [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

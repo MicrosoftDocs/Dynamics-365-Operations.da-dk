@@ -90,3 +90,6 @@ Ved at bruge indstillingen **Eksportér virksomhedssaldi** til at eksportere fra
 Du kan finde flere oplysninger under [Værdiregulering i et konsolideret regnskab](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

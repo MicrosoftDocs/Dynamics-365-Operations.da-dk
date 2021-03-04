@@ -81,3 +81,6 @@ Disse eksempler viser, hvordan du kan oprette forskellige typer betingelser for 
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

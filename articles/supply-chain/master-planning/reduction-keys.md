@@ -227,3 +227,6 @@ Når du vælger **Transaktioner - reduktionsnøgle** eller **Transaktioner - dyn
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over behovsplaner](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

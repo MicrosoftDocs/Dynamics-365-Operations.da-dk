@@ -46,3 +46,6 @@ Disse almindelige scenarier er tilgængelige for detailhandlere ved hjælp af Co
 + Hente produkter i den aktuelle butik eller en anden butik.
 + Annullere en ordre i den aktuelle butik eller en anden butik.
 + Returnere en ordre med eller uden kvitteringen i den aktuelle butik eller en anden butik.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Eksport af data til en produktkonfigurationsmodel kræver, at du har mindst én 
 5. Klik på Eksportér produktmodel.
     * Downloadfunktionsmåden varierer fra browser til browser, alt efter hvordan sikkerhedsindstillingerne er konfigureret.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

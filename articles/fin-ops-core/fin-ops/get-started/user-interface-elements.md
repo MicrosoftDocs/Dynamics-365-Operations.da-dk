@@ -86,3 +86,6 @@ En *værktøjslinje* indeholder værktøjer, du kan bruge til f.eks. at tilføje
 En *liste* er den betegnelse, der bruges om en samling poster, som du kan rulle gennem. Du kan placere disse poster på siden ved at markere dem. Ofte vil dette åbne et gitter.
 
 ![Følgende billede viser eksempler på værktøjslinjer, gitre og lister.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

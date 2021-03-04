@@ -73,3 +73,6 @@ Hvis du vil oprette eller kopiere en forretningsprocesskabelon eller starte en f
 
 For at få vist aktive processer og tilknyttede opgaver skal du åbne arbejdsområdet **Forretningsprocesser**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

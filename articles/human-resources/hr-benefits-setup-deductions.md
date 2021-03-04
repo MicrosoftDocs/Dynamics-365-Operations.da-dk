@@ -52,3 +52,6 @@ Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hv
 4. Hvis du vil spore og vedligeholde ændringer af opsætningen af frynsegodesatsen, skal du vælge **Handlinger** og derefter vælge **Vedligehold versioner**.
 
 5. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

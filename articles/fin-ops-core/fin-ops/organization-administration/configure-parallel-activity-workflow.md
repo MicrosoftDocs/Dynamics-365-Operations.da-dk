@@ -53,3 +53,6 @@ Udfør følgende trin for at tilføje og konfigurere grenene i den parallelle ak
     > Grenenes rækkefølge betyder ikke noget, fordi alle grenene i en parallel aktivitet kører samtidigt.
 
 3. Hvis du vil konfigurere hver gren, skal du se [Konfigurer parallelle grene i en arbejdsgang](configure-parallel-branch-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

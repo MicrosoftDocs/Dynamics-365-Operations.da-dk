@@ -69,3 +69,6 @@ Du kan også konfigurere indstillinger, der er relateret til kandidatoplevelsen.
 Du kan også angive og gennemtvinge en udløbsdato for tilbud. Hvis du vælger **Ja** i indstillingen **Kræv en udløbsdato for alle tilbud**, udløber tilbud efter det antal timer eller dage, du angiver.
 
 Du kan finde flere oplysninger om tilbudsstyring i [Konfigurere tilbudsstyring](./offer-setup.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

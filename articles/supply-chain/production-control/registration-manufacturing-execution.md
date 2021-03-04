@@ -62,3 +62,6 @@ Arbejderne kan foretage forskellige former for registreringer i produktionsudfø
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

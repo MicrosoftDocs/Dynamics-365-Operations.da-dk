@@ -38,3 +38,6 @@ Angiv **Aktiveret** til **Ja** for at bruge din ER-konfiguration til at arranger
 
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

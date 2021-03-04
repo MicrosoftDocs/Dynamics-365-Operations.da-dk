@@ -91,3 +91,6 @@ Hvis problemet stadig ikke er løst, skal du følge disse trin.
 4. Åbn siden **Tabeltilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
 5. Hvis attributten ikke udfyldes automatisk på tilknytningen, skal du tilføje den manuelt ved at klikke på knappen **Tilføj attribut** og derefter klikke på **Gem**. 
 6. Vælg tilknytningen, og klik på **Kør**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ I dette emne beskrives det, hvordan du kan bruge funktionerne i modulerne Servic
 [Oversigt over udvikling og udfyldelse af serviceaftaler](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

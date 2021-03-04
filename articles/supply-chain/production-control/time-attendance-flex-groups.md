@@ -185,3 +185,6 @@ Når du overfører registreringerne, vil du bemærke, at værdien for Fleks+ æn
 | 06:00 | 08:00 | 2    | 1.5       | 3            |
 | 08:00 | 09:00 | 1    | 2         | 2            |
 |          |          |      | **Total** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Desuden understøtter lean manufacturing indkøb og faktureringsprocesser for tj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

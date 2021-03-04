@@ -60,3 +60,6 @@ Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponi
 5. Klik på **OK**.
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Du kan finde flere oplysninger om, hvordan du administrerer webstedsindhold, i f
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
 
 [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

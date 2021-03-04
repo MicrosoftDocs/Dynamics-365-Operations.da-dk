@@ -55,3 +55,6 @@ Det nye felt og de tilhørende data burde nu kunne redigeres i Excel.
 [Redigere økonomiske dimensioner for detailtransaktioner](edit-financial-dim.md)
 
 [Oprette en Excel-projektmappe for at redigere detailtransaktioner](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

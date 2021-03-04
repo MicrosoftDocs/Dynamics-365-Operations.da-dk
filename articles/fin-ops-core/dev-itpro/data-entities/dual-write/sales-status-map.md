@@ -150,3 +150,6 @@ Hvis du vil aktivere attributten **isIntegrationUser**, skal du følge disse tri
     ![Ændre værdien i feltet Integrationsbrugertilstand](media/sales-map-user-mode-yes.png)
 
 Dine salgsordrer er nu tilknyttet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

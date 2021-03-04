@@ -118,3 +118,6 @@ Vælg linjetypen **Leverandør**, hvis der i produktionsprocessen gøres brug af
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

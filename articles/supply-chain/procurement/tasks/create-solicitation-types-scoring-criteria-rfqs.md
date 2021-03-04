@@ -52,3 +52,6 @@ Denne vejledning viser dig, hvordan du opretter en anmodningstype og knytter det
 8. Klik på OK.
 9. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

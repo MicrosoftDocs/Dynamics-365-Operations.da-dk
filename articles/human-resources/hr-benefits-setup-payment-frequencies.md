@@ -56,3 +56,6 @@ Felterne til omregningsfaktorer identificerer omregningsfaktoren fra betalingsfr
    | **Omregningsfaktor pr. time** | Den årlige omregningsfaktor for betalingsfrekvensen. Den årlige omregningsfaktor for den månedlige betalingsfrekvens er f.eks.: </br></br>(12 månedlige betalinger/2080 timer) = 0,005769
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

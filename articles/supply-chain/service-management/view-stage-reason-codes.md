@@ -45,3 +45,6 @@ Få vist og rediger listen over stadieårsager for en serviceordre. Brug stadie�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

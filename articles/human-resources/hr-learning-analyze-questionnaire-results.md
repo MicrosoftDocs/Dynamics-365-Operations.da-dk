@@ -69,3 +69,6 @@ Spørgeskemastatistik kan bruges til at beregne gennemsnit, totaler og procentde
 2. Klik på Resultat.
 3. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

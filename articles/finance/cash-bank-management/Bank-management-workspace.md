@@ -64,3 +64,6 @@ Siden **Analyser** giver vigtige oplysninger om bankkonti i det aktuelle firma. 
 -   Saldo pr. valuta
 
 Du kan få vist bankanalyser på tværs af alle regnskaber fra arbejdsområdet **Oversigt over kontanter - alle firmaer**. Du kan finde flere oplysninger i [Power BI-indhold for oversigt over kontanter](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

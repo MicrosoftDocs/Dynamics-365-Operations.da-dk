@@ -46,3 +46,6 @@ Denne procedure viser, hvordan du afslutter en produktionsordre. Det demodatafir
 1. Klik på Administrer omkostninger i handlingsruden.
 2. Klik på Vis omkostningssammenligning.
     * Når du har afsluttet produktionsordren, kan du sammenligne den forkalkulerede kostpris i forhold til den realiserede kostpris for at få et overblik over produktionsafvigelser.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ Et arbejdssted med relaterede underlokationer kan slettes, hvis der ikke er inst
 
 >[!NOTE]
 >Hvis du ikke kan slette et arbejdssted, kan du i stedet håndtere sletningen ved at konfigurere en livscyklustilstand for arbejdssted til dette formål. Du kan for eksempel oprette et "skrottet" eller "slettet" stadie, som ikke bør være et aktivt stadie, i formen **Livscyklustilstande for arbejdssted**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

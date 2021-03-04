@@ -119,3 +119,6 @@ Angiv følgende værdier for at definere en posteringsprofil
 | **Udligning** | Vælg denne indstilling for at kunne foretage automatisk udligning af poster med denne posteringsprofil. Hvis ikke denne indstilling vælges, skal posteringerne udlignes manuelt på siden **Udlign åbne posteringer**. |
 | **Annuller**     | Vælg denne indstilling, hvis du vil kunne annullere poster med denne posteringsprofil.                                                                                                               |
 | **Luk**      | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

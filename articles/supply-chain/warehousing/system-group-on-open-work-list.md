@@ -42,3 +42,6 @@ Brug disse trin til at konfigurere systemgruppering på en oversigt over åbent 
 | Systemgrupperingsfelt | Kun tilgængelig, hvis <strong>Tillad systemarbejde</strong> er angivet til <strong>Ja</strong>. Markér det felt, der bestemmer, hvordan plukkearbejde grupperes for arbejdere. Hvis du f.eks. vælger feltet <strong>ShipmentId</strong>, scanner arbejderen forsendelses-id for at gruppere plukkearbejdet. Alt arbejde for forsendelsen knyttes derefter til arbejderen. Dette felt kræver, at du opretter et menupunkt, der bruger eksisterende arbejde, der er grupperet af systemet. Brug feltet <strong>Systemgrupperingslabel</strong> til at informere arbejderen, hvad der skal scannes. |
 | Systemgrupperingslabel |                       Kun tilgængelig, hvis <strong>Tillad systemarbejde</strong> er angivet til <strong>Ja</strong>. Angiv oplysninger arbejderen om, hvad der skal scannes, når plukkearbejde er grupperet. Hvis du f.eks. bruger feltet <strong>ShipmentId</strong> til at gruppere plukkearbejde efter forsendelse, kan du skrive Forsendelses-id i feltet. Dette felt kræver, at du opretter et menupunkt, der bruger eksisterende arbejde, der er grupperet af systemet. Du skal også vælge det felt, der skal grupperes efter, i feltet <strong>Systemgruppering</strong>.                       |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -194,3 +194,6 @@ I følgende illustration vises et eksempel på vedligeholdelsesplaner på et akt
 
 ![Figur 7](media/08-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

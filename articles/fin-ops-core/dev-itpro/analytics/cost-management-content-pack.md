@@ -207,3 +207,6 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Juridiske enheder                                          | Navne på juridisk enhed                              |
 | Regnskabskalendere                                        | Regnskabskalender, År, Kvartal, Periode, Måned   |
 | Sted                                                    | Id, Navn, Adresse, Stat, Land/område               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

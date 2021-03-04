@@ -67,3 +67,6 @@ Du kan kassere lageret som en del af karantæneordreprocessen. Når du behandler
 --------
 
 [Lagerblokering](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

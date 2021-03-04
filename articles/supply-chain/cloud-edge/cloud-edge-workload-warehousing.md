@@ -245,3 +245,6 @@ På arbejdsbyrden i skalaenheder kan du administrere følgende to job i **Lokati
 
 - Behandle bølgetabelposter
 - Kontrollér overførselshændelser ved udførelse af bølgestyring
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

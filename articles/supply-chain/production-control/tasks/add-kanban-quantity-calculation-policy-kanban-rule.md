@@ -63,3 +63,6 @@ Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kan
 8. Klik op linket i den valgte række på listen.
     * Vælg politikken, Speaker2016, du lige har oprettet i forrige underopgave.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

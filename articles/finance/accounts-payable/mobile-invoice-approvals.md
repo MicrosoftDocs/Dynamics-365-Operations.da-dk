@@ -535,3 +535,6 @@ Kan du udføre følgende variationer i scenario 1, baseret på kravene til scena
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

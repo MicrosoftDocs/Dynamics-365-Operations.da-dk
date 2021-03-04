@@ -84,3 +84,6 @@ I henhold til begge SEPA-ordninger til direkte debitering har kunderne visse ref
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

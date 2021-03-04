@@ -50,3 +50,6 @@ Sporingsdimensionen **Ejer** mangler, når lagerstedsappen bruges til at foretag
 ### <a name="issue-resolution"></a>Problemløsning
 
 Microsoft har evalueret dette problem og har fastslået, at det er en funktionsbegrænsning. I øjeblikket understøtter lagerstyringsprocesser kun det lager, der ejes af den juridiske enhed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

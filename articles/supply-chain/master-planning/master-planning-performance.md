@@ -162,3 +162,6 @@ Før dækningstrinnet starter, er der et trin forud herfor, hvor varer, hvor dæ
 - **Én tung rutine ad gangen** – kør ikke varedisponering sammen med andre tunge rutiner.
 - **Gennemse sessionsloggen.**
 - **Filtrering af varer** – brug levetidstilstanden til at udelade varer fra varedisponeringskørslen. (Brug ikke varenumrene).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

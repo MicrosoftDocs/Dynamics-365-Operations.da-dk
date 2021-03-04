@@ -175,3 +175,6 @@ Hændelsen **AttachingFile()** udføres, når de følgende ER-destinationer beha
 
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startside for udvidelsesmuligheder](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

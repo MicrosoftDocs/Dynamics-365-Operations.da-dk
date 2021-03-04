@@ -149,3 +149,6 @@ Du kan bruge siden **Arbejdsdetaljer** til at få vist det arbejde, der er opret
 > Når dialogboksen **Skift arbejdspulje** vises, kan feltet **Arbejdspulje-id** være tomt som standard. Hvis feltet er tomt, når du vælger **OK** for at anvende ændringer, skal du fjerne arbejdspuljen helt fra arbejdet.
 >
 > Ud over at skifte arbejdspulje kan du bruge denne procedure til at føje en arbejdsgruppe til en arbejdsgang, der ikke har en, eller til at fjerne en arbejdspulje fra et arbejdselement, der har en.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

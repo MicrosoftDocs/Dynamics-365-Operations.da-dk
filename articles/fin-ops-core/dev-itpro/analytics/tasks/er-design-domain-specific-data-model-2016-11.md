@@ -187,3 +187,6 @@ Du er ved at oprette en ny datamodel for den valgte konfiguration. Denne konfigu
 65. Klik på Gem.
 66. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

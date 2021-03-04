@@ -173,3 +173,6 @@ Hvis du vil konfigurere et containermodul på en side, skal du følge disse trin
 
 [Arbejde med publiceringsgrupper](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

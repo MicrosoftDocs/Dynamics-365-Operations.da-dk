@@ -74,3 +74,6 @@ Der findes to måder at tilføje en ny relationstype på:
     3.  For at teste udfyldningen af den nye relationstype kan du oprette en klasse, der kan køres, og kalde DirDataPopulation::insertDirRelationshipTypes() i Main(). Den nye relationstype skulle nu vises i **DirRelationshipTypeTable**, og den nye relationstype er tilgængelig på siden **Relationstyper**.
 
         ![Kørbar klasse](media/Runnable.PNG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

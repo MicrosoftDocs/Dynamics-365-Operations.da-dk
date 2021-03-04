@@ -57,3 +57,6 @@ Når du bekræfter salgstilbud, viser de oprettede salgsordrer hele leverancepla
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

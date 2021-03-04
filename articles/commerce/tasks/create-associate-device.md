@@ -41,3 +41,6 @@ Denne procedure viser, hvordan du opretter en ny enhed og knytter den til et kas
 9. Klik op linket i den valgte række på listen.
 10. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

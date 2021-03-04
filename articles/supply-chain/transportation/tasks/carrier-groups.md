@@ -38,3 +38,6 @@ Når der findes flere fragtmænd og fragttjenester for samme rutesegment, kan du
 1. Angiv et sigende navn for gruppen i feltet **Navn**.
 1. Tilføj en række i oversigtspanelet **Detaljer**, og vælg en fragtmand og en fragttjeneste for den. Gentag dette trin, indtil du har tilføjet så mange fragtmænd, du skal bruge for gruppen.
 1. Luk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

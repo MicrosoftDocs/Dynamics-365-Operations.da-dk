@@ -72,3 +72,6 @@ Brug følgende trin til at oprette en serviceobjektrelation for en serviceordre:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

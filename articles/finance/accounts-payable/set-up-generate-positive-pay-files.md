@@ -165,3 +165,6 @@ Hvis du vil ændre en fil til positiv betaling, kan du tilbagekalde den. På sid
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

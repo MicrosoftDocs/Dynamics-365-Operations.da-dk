@@ -99,3 +99,6 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 
 - [Oversigt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

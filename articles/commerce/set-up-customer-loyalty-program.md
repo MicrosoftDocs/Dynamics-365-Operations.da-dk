@@ -151,3 +151,6 @@ Detailhandlere kan desuden definere grænsen for maksimalt antal kundefordelspoi
 
     > [!NOTE]
     > I modsætning til andre periodiske rabatter som antal, enkel, mix og match og tærskelrabatter, opretter leveringsrabatten ikke rabatlinjer, men redigerer snarere forsendelsesgebyret direkte og knytter navnet på rabatten til gebyrbeskrivelsen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

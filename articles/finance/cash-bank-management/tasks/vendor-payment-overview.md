@@ -63,3 +63,6 @@ Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at opret
 33. Klik på **OK** for at generere betalingerne.
 34. Klik på **Bogfør**, hvis alle betalingerne er godkendte og genererede. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

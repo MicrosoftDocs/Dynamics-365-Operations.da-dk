@@ -36,3 +36,6 @@ Opret ansættelseskategorier i Dynamics 365 Human Resources, så de svarer til m
 3. Angiv værdier for **Arbejdertype**, **Ansættelseskategori** og **Beskrivelse**.
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

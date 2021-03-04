@@ -39,3 +39,6 @@ I dette emne beskrives, hvordan du opretter en ny anlægsaktivgruppe. Den bruger
 8. Vælg en indstilling i feltet **Afskrivningsprincip**.
 9. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

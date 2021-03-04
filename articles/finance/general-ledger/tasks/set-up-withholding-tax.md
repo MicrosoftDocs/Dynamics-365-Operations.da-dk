@@ -49,3 +49,6 @@ Dette emne beskriver, hvordan du konfigurerer A-skat. *A-skat* er en skat på le
 18. Vælg **Gem**.
 19. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

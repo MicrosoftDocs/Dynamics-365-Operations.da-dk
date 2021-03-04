@@ -60,3 +60,5 @@ Når du har oprettet en orlovs- og fraværsplan i Dynamics 365 Human Resources, 
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Oprette en orlovs- og fraværsplan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

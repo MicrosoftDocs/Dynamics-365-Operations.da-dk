@@ -155,3 +155,6 @@ I dette eksempel på et glidende gennemsnit udskrives lagerværdirapporten for a
 
 > [!NOTE]
 > Du kan ikke afstemme finansmodulet med lager ved hjælp af indstillingen **Sortering af transaktionsklokkeslæt**. Rapporten skal udskrives ved hjælp af indstillingen **Bogføringsdato**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

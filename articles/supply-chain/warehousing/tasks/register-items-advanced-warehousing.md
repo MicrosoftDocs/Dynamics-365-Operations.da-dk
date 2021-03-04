@@ -76,3 +76,6 @@ Noter nummeret på den indkøbsordre, du opretter, og bemærk også varenummeret
     * Når du har klikket på OK, skal du tjekke meddelelseslinjen. Der bør være en meddelelse om, at handlingen er fuldført.  
 5. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

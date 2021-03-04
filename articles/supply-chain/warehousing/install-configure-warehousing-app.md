@@ -274,3 +274,6 @@ I tilfælde af en mistet eller beskadiget enhed skal du fjerne adgangen til Supp
 1. Kontroller, at klient-id'et for applikationen svarer til det klient-id, du har noteret dig i trin 2.
 1. Vælg **Slet** på værktøjslinjen.
 1. Vælg **Ja** i den bekræftelsesmeddelelsesboks, der vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

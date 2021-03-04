@@ -69,3 +69,6 @@ Hvis den første og den anden resultatværdi er værdier af datatypen *Container
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Logiske funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

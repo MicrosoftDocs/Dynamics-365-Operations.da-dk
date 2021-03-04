@@ -164,3 +164,6 @@ Nogle formler kan ikke testes på designtidspunktet. For eksempel kan en formel 
 
 - [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 - [Formelsprog i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

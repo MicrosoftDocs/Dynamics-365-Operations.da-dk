@@ -41,3 +41,6 @@ Du kan finde flere oplysninger under [Konfigurere hovedkontokategorier](tasks/se
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

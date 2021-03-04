@@ -151,3 +151,6 @@ Tabellen nedenfor indeholder links til ressourcer, der kan hjælpe dig med at im
 
 ## <a name="troubleshooting"></a>Fejlfinding
 [Ressourcer til mobilplatform](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

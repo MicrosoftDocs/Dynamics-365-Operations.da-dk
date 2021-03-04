@@ -46,3 +46,6 @@ Når du angiver en kladde, kan du klikke på **Finansperiodisering** i menuen **
 
 
 Yderligere oplysninger finder du i [Oprette periodiseringsskemaer](tasks/create-accrual-schemes.md) og [Oprette periodiseringsposteringer i finans](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

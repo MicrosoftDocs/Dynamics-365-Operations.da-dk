@@ -96,3 +96,6 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 [Indholdsblokmodul](add-hero-module.md)
 
 [Videoafspillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

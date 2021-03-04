@@ -42,3 +42,6 @@ Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.
     * Vedhæfte yderligere oplysninger til kladden.  
     * Du kan f.eks. vedhæfte et scannet billede af EU-posteringscertifikatet til kladden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

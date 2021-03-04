@@ -54,3 +54,6 @@ Platform update 18 til Finance and Operations er nu en del af Talent-udgivelsen.
 ## <a name="bug-fixes"></a>Fejlrettelser
 
 Denne version omfatter flere ekstra fejlrettelser, herunder at referencer til ACA, ADA og I9 nu kun er aktiveret i amerikanske firmaer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

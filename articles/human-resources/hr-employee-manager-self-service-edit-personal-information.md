@@ -72,3 +72,6 @@ Parametre, der angives i det globale adressekartotek, bestemmer, hvilke roller d
     - Hvis du vil overføre et billede, skal du vælge **Overfør nyt billede**.
     - Hvis du vil fjerne et billede, skal du markere billedet og derefter vælge **Fjern**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

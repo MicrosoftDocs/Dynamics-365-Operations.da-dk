@@ -139,3 +139,6 @@ Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-
 26. Udvid 'Eksempeldatamodel' i træet.
     * Bemærk, at tilknytningskonfigurationen 'Eksempeltilknytning' for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
     * Hvis du logger på Finance and Operations, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

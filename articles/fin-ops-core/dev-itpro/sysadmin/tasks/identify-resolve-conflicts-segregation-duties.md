@@ -43,3 +43,6 @@ Dette emne forklarer, hvordan du identificerer og løser konflikter i opdelingen
 1. Gå til **Navigationsrude > Moduler > Systemadministration > Sikkerhed > Opdeling af opgaver > Regler for opdeling af opgaver.** Vælg en regel.  
 2. Vælg **Bekræft opgaver og roller**. Hvis nogen eksisterende roller overtræder den valgte regel, vises en meddelelse, som indeholder navnet på rollen og navnene på de opgaver, der er i konflikt. Administratoren skal enten angive afhjælpningen af sikkerhedsrisikoen eller ændre rollen, så den ikke overtræder reglerne for opdeling af opgaver. Hvis ingen roller overtræder den valgte regel, angiver en meddelelse, at alle roller er i overensstemmelse.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ I dette emne beskrives, hvordan du konfigurerer hovedkontokategorier. Hovedkonto
 3. Markér eller fjern markeringen af indstillingen **Tilknyttet** for at vælge hovedkontiene.
 4. Vælg **OK**.
 5. Vælg **Ja**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

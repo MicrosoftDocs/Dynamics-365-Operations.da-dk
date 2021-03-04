@@ -134,3 +134,6 @@ Hvis du vil begrænse adgangen til Human Resources-appen i Microsoft Teams for d
 [Microsoft Teams Hjælp-center](https://support.office.com/teams)</br>
 [Administrere fraværsanmodninger i Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

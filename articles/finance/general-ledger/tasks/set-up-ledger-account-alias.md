@@ -41,3 +41,6 @@ I denne procedure vises det, hvordan du opretter et kontoalias, som giver en gen
 9. I feltet Startfokusering skal du vælge den dimension, der har fokus, når aliaset bruges.
     * Når du har indtastet genvejen, og kontoen og dimensionerne er udfyldt, flyttes markøren eller fokus til feltet Startfokusering.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

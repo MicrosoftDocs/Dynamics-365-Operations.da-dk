@@ -50,3 +50,6 @@ Organisationer i den offentlige sektor kan bruge avancerede finansposter til at 
     * Føj et debetbeløb eller kreditbeløb til linjen. Hvis det er nødvendigt, skal du klikke på Tilføj linje for at tilføje flere linjer.  
 17. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

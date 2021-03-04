@@ -101,3 +101,6 @@ Arnie kan se oplysningerne på siden **Debitorposteringer**.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

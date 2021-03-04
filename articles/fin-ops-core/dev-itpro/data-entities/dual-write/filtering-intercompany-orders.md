@@ -65,3 +65,6 @@ De enkelte Common Data Service-standardenheder udvides med referencer til feltet
 7. Når du har udvidet enheden **Tilbud**, skal du anvende et filter med `CUSTGROUP !=  "<company>"` som forespørgselsstreng.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Salgstilbudshoved, rediger forespørgsel":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

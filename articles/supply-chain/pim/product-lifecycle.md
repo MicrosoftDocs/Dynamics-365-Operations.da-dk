@@ -109,3 +109,6 @@ Brug følgende kriterier til at vælge og opdatere frigivne produkter og produkt
 - [Tildele en produktlivscyklustilstand til et frigivet produkt](tasks/product-lifecycle-state-released-product.md)
 - [Find forældede produktvarianter og tildel en livscyklustilstand for et produkt](tasks/obsolete-product-variants.md)
 - [Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

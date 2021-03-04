@@ -65,3 +65,6 @@ Særskilte rapporter indeholder oplysninger om de enkelte typer af posteringer. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

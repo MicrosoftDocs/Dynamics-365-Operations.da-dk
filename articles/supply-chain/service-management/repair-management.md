@@ -113,3 +113,6 @@ Når et reparationsproblem er blevet løst, kan du lukke reparationslinjen. Inds
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Reguleringer i land/område påvirker momsopsætning og andre områder af økono
 
 Funktionen til styring af forsyningskæden dækker dele af processen fra levering til betaling, der omfatter rekvisition, bestilling, modtagelse, fakturering og betaling af de varer og tjenester, som organisationen køber. Se [hjemmesiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for at få flere oplysninger om funktionerne til administration af indkøb, lager og produktion. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

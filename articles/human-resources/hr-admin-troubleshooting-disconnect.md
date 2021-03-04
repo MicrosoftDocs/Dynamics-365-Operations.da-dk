@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources afbryder brugerne, når to forskellige se
 Kontroller, at det kun ét miljø er åbent ad gangen for en bestemt browsertype. Brugerne kan åbne flere sessioner til det samme miljø (dvs. flere faner i den samme browser).
 
 Brugere, som vil springe mellem to miljøer på samme tid, skal åbne de enkelte miljøer i hver sin browsertyper. (F.eks. kan bruger A få vist miljø 1 i Chrome og miljø 2 i Microsoft Edge).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

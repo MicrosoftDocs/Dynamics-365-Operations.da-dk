@@ -92,3 +92,6 @@ Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Impo
 2. Klik på Vis filer.
 3. Klik på Åbn.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

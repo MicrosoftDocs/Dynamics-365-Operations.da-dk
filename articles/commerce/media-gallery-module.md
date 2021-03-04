@@ -104,3 +104,6 @@ Hvis du vil tilføje et mediegallerimodul på en marketingside, skal du følge d
 [Container-modul](add-container-module.md)
 
 [Overføre billeder](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

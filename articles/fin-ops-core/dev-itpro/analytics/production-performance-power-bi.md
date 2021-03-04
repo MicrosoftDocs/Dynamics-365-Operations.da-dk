@@ -128,3 +128,6 @@ Følgende tabel viser de nøgledimensioner, der bruges som filtre til at skabe u
 | Enheder                  | Id og navn                                                   |
 | Ressourcer                 | Ressource-id, ressourcenavn, ressourcetype og ressourcegruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-id og varegruppe         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

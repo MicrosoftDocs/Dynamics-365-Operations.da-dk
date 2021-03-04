@@ -50,3 +50,6 @@ Afskrivning uden afrunding er beregnet til 2.444,44. Som følgende tabel viser a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

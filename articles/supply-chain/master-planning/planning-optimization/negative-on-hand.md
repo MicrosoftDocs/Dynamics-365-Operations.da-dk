@@ -87,3 +87,6 @@ Resultatet er en planlagt ordre på 25 stk. (= 25 stk. &minus; 0 stk.) til påfy
 [Få vist planhistorik og planlægningslogs](plan-history-logs.md)
 
 [Annullere et planlægningsjob](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

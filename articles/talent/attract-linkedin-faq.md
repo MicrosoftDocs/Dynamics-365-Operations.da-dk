@@ -117,3 +117,6 @@ I følgende tabel beskrives de forskellige muligheder for jobopslag på LinkedIn
 [Rekrutter kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
 [Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

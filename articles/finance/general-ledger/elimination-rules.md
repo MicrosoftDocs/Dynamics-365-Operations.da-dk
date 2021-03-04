@@ -155,3 +155,6 @@ Vælg det regnskab, der er kilden til de konsoliderede data, og vælg derefter d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

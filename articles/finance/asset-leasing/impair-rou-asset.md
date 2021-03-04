@@ -102,3 +102,6 @@ Fanen **Generelt**
 7. Hvis du vil have vist nettoeffekten af værdiforringelsen, skal du gå til tabellerne for passiver og aktiver. Bemærk, at udgiften til værdiforringelsen har formindsket ROU-aktivet, men at der ikke er ændret et overførselsbeløb for leasingforpligtelsen.
 
 Værdiforringelsen har én anden effekt, du skal overveje. Da ROU-aktivbeløbet nu er meget mindre end leasingforpligtelsen, skal beløbet afskrives anderledes end før. Specielt afskrives aktivet nu i en lineær måde i løbet af de resterende 84 måneder af leasingaftalen med start på transaktionsdatoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Hvis du kræver, at valutapræcisionen for en bestemt valuta er forskellig fra d
 ### <a name="tables-currency-field"></a>tabeller: valutafelt
 
 Det antal decimaler, der kan konfigureres for bestemte valutafelter, er begrænset til fire.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

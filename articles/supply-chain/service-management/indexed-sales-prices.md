@@ -43,3 +43,6 @@ Hvis basisprisen f.eks. er 1.000 kr, og indekset er 110, bliver salgsprisen 1.10
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

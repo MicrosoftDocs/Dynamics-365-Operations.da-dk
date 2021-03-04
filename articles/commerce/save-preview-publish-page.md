@@ -100,3 +100,6 @@ Følg disse trin for at publicere en URL-adresse.
 [Forbedre en kategorilandingsside](enrich-category-page.md)
 
 [Bekræft tilgængelighed af sideindhold](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagne
 [Oversigt over sider til indkøbsvogn og betaling ved kassen](quick-tour-cart-checkout.md)
 
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

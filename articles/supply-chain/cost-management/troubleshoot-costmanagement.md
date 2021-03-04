@@ -62,3 +62,6 @@ Husk at udføre en lagerlukning pr. %3 (31-01-2019), der matcher en periodeafslu
 ## <a name="inventory-aging-report-discrepancies"></a>Afvigelser i rapport over aldersfordelt lager
 
 I **Rapporten Aldersfordelt lager** vises forskellige værdier, når du ser dem på forskellige lagerdimensioner (f.eks. lokation eller lagersted). Du kan finde flere oplysninger om rapporteringslogikken i [Eksempler og logik til rapport over aldersfordelt lager](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

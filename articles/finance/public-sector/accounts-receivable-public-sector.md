@@ -71,3 +71,6 @@ Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til ki
 [Oprette og tildele en handelspartnerkode](tasks/create-assign-trading-partner-code-public-sector.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

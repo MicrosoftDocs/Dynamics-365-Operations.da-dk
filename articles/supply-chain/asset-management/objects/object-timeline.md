@@ -49,3 +49,6 @@ Tidslinjen opdateres, hver gang siden åbnes. Den indeholder følgende informati
 - Arbejdsordrer, herunder bogførte varer og noter
 - Fejl
 - Tilstandsvurderinger
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

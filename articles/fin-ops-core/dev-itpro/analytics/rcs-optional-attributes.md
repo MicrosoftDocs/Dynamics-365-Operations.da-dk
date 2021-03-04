@@ -130,3 +130,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 3. Klik på **Gennemse**, og vælg filen **IncomingDocumentToLearnHowToHandleOptionalAttributes xml**.
 4. Klik på **OK**.
 5. Gennemse den genererede fil. Bemærk, at den samme fil er blevet importeret, da formatdesignet nu anser attributten "id" for elementet "dokument" som valgfrit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

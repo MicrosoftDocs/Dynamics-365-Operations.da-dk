@@ -98,3 +98,6 @@ Gå til **Kreditorer > Konfiguration > Konfiguration af fakturasammenholdelse > 
 
 1. Hvis du vil angive tolerancer for individuelle kreditorer, der tilsidesætter standardtolerancen, skal du vælge en **Kreditorkonto**.
 2. Angiv den afvigelsesprocent, som du kan acceptere for denne kreditor.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

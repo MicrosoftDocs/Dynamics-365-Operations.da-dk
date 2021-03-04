@@ -70,3 +70,6 @@ Du kan f.eks. definere, hvem der udfører budgetplanlægning, hvad der er budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

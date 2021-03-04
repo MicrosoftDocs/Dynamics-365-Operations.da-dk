@@ -496,3 +496,6 @@ Sørg for, at den delte modeltilknytningskonfiguration ikke er markeret som stan
 - Statussen for mindst én version af ER-modeltilknytningkonfiguration er **Fuldført** eller **Delt**. I dette tilfælde bruges den version, der indeholder det højeste versionsnummer, til udførsel af ER-format.
 - Indstillingen **Kør kladde** for ER-modeltilknytningkonfiguration er aktiveret. I dette tilfælde bruges den version, der har statussen **Kladde** til udførsel af ER-format.
 > Indstillingen **Kør kladde** er tilgængelig på siden **Konfigurationer** for hver enkelt ER-modeltilknytningskonfiguration, når **Indstillingen Kør** ER-brugerparameter er aktiveret.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

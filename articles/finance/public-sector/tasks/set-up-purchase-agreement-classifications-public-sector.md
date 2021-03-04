@@ -44,3 +44,6 @@ Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-
 8. Valgfrit: Vælg indstillingen Aktiviteter for at medtage oplysninger om opgaver og milepæle.
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

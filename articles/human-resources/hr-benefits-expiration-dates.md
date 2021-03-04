@@ -46,3 +46,6 @@ Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet ell
 15. Klik på Frynsegoder.
 16. Find frynsegodet og vælg posten på listen. Bemærk den nye disponeringsslutdato.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Følgende rapporter indeholder referenceoplysninger om objekterne:
 - [Rapport over licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server-rapporteringstjenesteer (SSRS)-rapporter, der er tilgængelige](SSRS-report.md)
 - [Rapport for arbejdsgangstyper](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

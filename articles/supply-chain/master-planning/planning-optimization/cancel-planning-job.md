@@ -60,3 +60,6 @@ Jobstatussen angives til **Annulleres** indtil planlægningsoptimeringstjenesten
 [Få vist planhistorik og planlægningslogs](plan-history-logs.md)
 
 [Anvend filtre på en plan](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

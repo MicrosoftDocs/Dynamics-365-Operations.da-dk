@@ -123,3 +123,6 @@ Benyt følgende fremgangsmåde, hvis du vil sende en generel budgetreservation t
     Efterhånden som reservationen bevæger sig gennem arbejdsgangen, afspejles reservationsstatussen og ændringen i statussen for arbejdsgangen i headeren til den generelle budgetreservation.
 
 7. Når arbejdsgangen er fuldført, og reservationens har status **Godkendt**, kan du bogføre dokumentet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

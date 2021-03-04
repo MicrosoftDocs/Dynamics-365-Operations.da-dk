@@ -166,3 +166,6 @@ Det er muligt at tilbageføre posteringer og angive dem igen. Hvis du vil tilbag
 2. Klik på **Ja**, når meddelelsen "Når du tilbagefører denne betalingsopgørelse, oprettes en tilbageførselsbetalingsopgørelse til modregning af betalingsopgørelsen. Ingen af betalingsopgørelserne kan redigeres. Vil du tilbageføre denne betalingsopgørelse?" vises. 
 
 Når du tilbagefører betalingsopgørelsen, kan du generere en ny betalingsopgørelse for arbejderen ud fra den lønopgørelse, du har oprettet tidligere. Sørg for at rette forkerte linjer på lønopgørelsen, før du genererer den nye betalingsopgørelse, og derefter genererer nye betalingsopgørelser med de korrekte beløb. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Du kan finde oplysninger om tildeling af en arbejder til et team under [Konfigur
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

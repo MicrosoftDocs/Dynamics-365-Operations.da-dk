@@ -107,3 +107,6 @@ Følgende tabel indeholder de forms, der understøtter forretningsproceskomponen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

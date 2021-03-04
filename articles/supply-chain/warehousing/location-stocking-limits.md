@@ -104,3 +104,6 @@ For at forklare denne tilsyneladende fejl skal du forstå udvælgelseskriteriern
 
 > [!NOTE]
 > Du kan ikke bruge grænser for lokalitetslagring til at styre f.eks. genopfyldning af varer, der har forskellige antal på samme lokation. I dette tilfælde skal du bruge en *genopfyldningsskabelon*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

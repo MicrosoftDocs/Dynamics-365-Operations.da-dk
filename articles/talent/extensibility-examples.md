@@ -79,3 +79,6 @@ Du kan downloade **appen Henvisning** ved at gå til [Dynamics 365 Talent-udvide
 
 [Klientens Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Overfør app mellem lejere og miljøer](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

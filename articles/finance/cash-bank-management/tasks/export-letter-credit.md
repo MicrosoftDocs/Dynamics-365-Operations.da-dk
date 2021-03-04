@@ -140,3 +140,6 @@ Kør proceduren "Konfigurere bankfaciliteter og posteringsprofiler" og "Remburs_
 3. Klik op linket i den valgte række på listen.
     * Kontroller Forsendelsesstatus = Betaling modtaget og saldobeløb = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

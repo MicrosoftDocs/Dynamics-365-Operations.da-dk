@@ -61,3 +61,6 @@ Udfør følgende trin for at slette et eksperiment i Commerce-webstedsgenerator.
 
 ## <a name="previous-step"></a>Forrige trin
 [Køre og overvåge et eksperiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

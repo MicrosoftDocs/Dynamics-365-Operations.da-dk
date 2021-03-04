@@ -60,3 +60,5 @@ Du kan downloade skabelonen **Power Automate – Forbindelse til SQL og udførel
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Klientens Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

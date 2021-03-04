@@ -154,3 +154,6 @@ Den konto, der er valgt for hver udgiftstype, debiteres, når der genereres en b
 
 > [!NOTE]
 > Modkontoen vælges på leasingniveau på linjerne for betalingsplanen for driftsomkostninger. Denne modkonto kan knyttes til kreditoren eller en finanskonto.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

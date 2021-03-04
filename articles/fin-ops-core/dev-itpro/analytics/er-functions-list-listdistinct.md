@@ -97,3 +97,6 @@ I følgende eksempel vises det, hvordan du kan få vist en liste over entydige k
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

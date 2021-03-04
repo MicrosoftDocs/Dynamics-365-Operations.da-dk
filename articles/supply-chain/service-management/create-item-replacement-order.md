@@ -68,3 +68,6 @@ Der oprettes normalt en genanskaffelsesordre for en vare, når et produkt er ret
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

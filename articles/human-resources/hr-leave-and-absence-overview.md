@@ -54,3 +54,6 @@ Dine medarbejdere kan sende anmodninger om fritid, og du kan administrere dem i 
 [Anmode om fravær](hr-employee-self-service-request-time-off.md)
 [Administrere anmodninger om orlov og fravær](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

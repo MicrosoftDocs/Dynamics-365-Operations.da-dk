@@ -119,3 +119,6 @@ For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknytt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

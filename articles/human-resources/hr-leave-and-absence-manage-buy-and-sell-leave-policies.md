@@ -80,3 +80,6 @@ Du kan give medarbejderne mulighed for at købe og sælge orlov ved at oprette e
 [Periodiser orlovs- og fraværsplaner](hr-leave-and-absence-accrue.md)</br>
 [Køb og sælg orlov](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

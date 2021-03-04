@@ -45,3 +45,6 @@ Denne procedure hjælper med at konfigurere og køre tilbagevendende batchjob fo
 11. Klik på OK.
 12. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

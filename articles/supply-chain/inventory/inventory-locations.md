@@ -66,3 +66,6 @@ Det er muligt at kopiere lokationer fra ét lagersted til et andet og oprette st
 --------
 
 [Oprette en ny lageropbygning](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

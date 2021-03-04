@@ -144,3 +144,6 @@ De resterende metadata, f.eks. placering, vises ikke på opgavesiden, men vises 
 --------
 
 [Oversigt over installation og konfiguration af lagerstedsappen](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Funktionen `DAYS` returnerer en positiv værdi, når den første dato er senere 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dato- og klokkeslætsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

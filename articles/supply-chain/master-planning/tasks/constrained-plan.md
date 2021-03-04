@@ -53,3 +53,6 @@ Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne pro
 3. Vælg **OK**.
 4. Vælg **Ordreforslag**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

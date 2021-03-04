@@ -57,3 +57,6 @@ Før du kan bruge denne funktion, skal du aktivere den i dit system. Administrat
     > Formularen omfatter ikke subtotaler, der er defineret i rapportlayoutet.
 
 Med dataenheden **Aldersfordelt lagerrapport** kan du eksportere outputtet fra rapporten **Lager for aldersfordelt lagerrapport** ved at anvende et filter i feltet **Procesindentifikator – Navn** for et hvilket som helst format, som Datastyring understøtter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

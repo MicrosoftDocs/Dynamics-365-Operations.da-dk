@@ -62,3 +62,6 @@ Du kan finde flere oplysninger om, hvordan du konfigurerer regler og værdier fo
 ## <a name="warehouse-management"></a>Lagerstedsstyring
 
 Når du forbereder en forsendelse i Lokationsstyring, kan du udskrive flere nye rapporter, der bruger de oplysninger, du har angivet i administration af produktoplysninger. Yderligere oplysninger om de tilgængelige rapporter og om, hvordan du bruger dem, finder du i [Forespørgsler og rapporter om farligt materiale](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

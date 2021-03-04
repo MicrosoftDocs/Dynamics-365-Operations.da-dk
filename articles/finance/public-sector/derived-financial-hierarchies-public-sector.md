@@ -50,3 +50,6 @@ En organisation har et medarbejdersundhedsprogram og et medarbejderuddannelsespr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -171,3 +171,6 @@ Du skal konfigurere følgende felter for denne kombination:
 
 > [!IMPORTANT]
 > Hvis DOM skal medtage disse omkostninger, når de køres, skal du føje omkostningsfaktoren til den relevante opfyldelsesprofil.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

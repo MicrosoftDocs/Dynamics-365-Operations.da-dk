@@ -114,3 +114,6 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 [Anvend filtre på en plan](plan-filters.md)
 
 [Annullere et planlægningsjob](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

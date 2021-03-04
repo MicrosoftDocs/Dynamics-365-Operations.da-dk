@@ -89,3 +89,6 @@ I dette tilfælde indgår de to elementer på lager i varenummer COMP. Men fordi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

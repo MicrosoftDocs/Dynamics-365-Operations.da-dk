@@ -46,3 +46,6 @@ Derfor kan du oprette separate budgetter for de væsentligste posteringskonti i 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

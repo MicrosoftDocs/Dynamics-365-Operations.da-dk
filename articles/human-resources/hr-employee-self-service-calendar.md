@@ -72,3 +72,6 @@ Du kan også filtrere kalendere efter leder eller afdeling. Den primære stillin
 
 Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

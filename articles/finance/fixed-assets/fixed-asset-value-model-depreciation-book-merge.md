@@ -71,3 +71,6 @@ Opgraderingsprocessen flytter din eksisterende installation og alle eksisterende
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

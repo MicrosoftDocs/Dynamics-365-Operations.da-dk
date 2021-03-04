@@ -48,3 +48,6 @@ Denne fremgangsmåde fører dig gennem processen med at oprette et masseansætte
     * Du kan eventuelt vælge afdeling for de nye stillinger.  
 13. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

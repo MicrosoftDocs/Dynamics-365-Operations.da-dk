@@ -140,3 +140,6 @@ Den 20. juli opretter April en endelig betaling på 200,00. Der medtages ingen k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

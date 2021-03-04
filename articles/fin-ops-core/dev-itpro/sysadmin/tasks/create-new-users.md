@@ -55,3 +55,6 @@ Brugere uden for den lejer, som miljøet blev implementeret i, skal repræsenter
 4. Vælg **Importer brugere**.
 5. Vælg **Luk**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

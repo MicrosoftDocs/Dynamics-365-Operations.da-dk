@@ -61,3 +61,6 @@ Følgende data er tilgængelige med procesovervågning.
 |Historik for jobansøgning | Jobansøgning (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Statusårsag (msdyn_statusreason) <br></br>Årsag til afvisning (msdyn_rejectionreason) |
 | Historik over jobmuligheder | Jobmulighed (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Statusårsag (msdyn_jobopeningstatusreason) |
 | Kandidathistorik | Kandidat (msdyn_CandidateId) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

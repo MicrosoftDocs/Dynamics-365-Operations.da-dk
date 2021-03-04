@@ -128,3 +128,6 @@ Du kan få vist fakturatotalen på siden **Ventende kreditorfakturaer** ved at a
 - [Indtaste fakturadata under kreditorer ved hjælp af en godkendelseskladde](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Registrere en kreditorfaktura i fakturakladden](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

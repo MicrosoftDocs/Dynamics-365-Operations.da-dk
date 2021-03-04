@@ -43,3 +43,6 @@ Middeltyper skal være oprettet, før du kan konfigurere midler. Hvert enkelt mi
 11. Hvis du angiver indstillingen Tilsidesæt valgte ultimoindstilling til Ja, skal du vælge en ultimoindstilling.
 12. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

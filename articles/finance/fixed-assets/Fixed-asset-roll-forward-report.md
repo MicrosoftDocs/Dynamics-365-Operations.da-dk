@@ -67,3 +67,6 @@ I følgende tabel forklares de felter, der er tilgængelige på rapporten.
 |           Kassationer: Scrapværdi            |                                                                                               Scrapværdien for anlægsaktivet med en kassation – scraptransaktion.                                                                                               |
 |           Kassationer: Gevinst/tab            |                                                                                 Gevinst- eller tabsværdien beregnes som en del af kassationsposteringen for anlægsaktivet.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

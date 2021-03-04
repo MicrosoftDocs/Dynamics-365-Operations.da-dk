@@ -41,3 +41,6 @@ Udfør følgende trin for at oprette og bogføre den kortfristede passiv-omposte
 4. Aktiver parameteren **Bogfør**. Alternativt, hvis posten skal oprettes men ikke bogføres, skal denne parameter være deaktiveret.
 5. Aktiver parameteren **Vis udskrift før bogføring** for at få vist posten, før den bogføres.
 6. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Aktuelt bruges Excel-dokumentet som en skabelon til at generere outputtet i OPEN
 16. Klik på **OK**.
 17. Klik på **OK**. Analysér det genererede output. Bemærk, at det oprettede output vises i Word-format og indeholder oplysninger om de behandlede betalinger.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

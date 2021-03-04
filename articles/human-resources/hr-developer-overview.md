@@ -62,3 +62,6 @@ Denne udviklervejledning indeholder en API og en reference til brugerdefinerede 
 - [Nyheder eller ændringer i Personale](hr-admin-whats-new.md)
 - [Administratorvejledning](hr-admin-overview.md)
 - [Brugervejledning](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

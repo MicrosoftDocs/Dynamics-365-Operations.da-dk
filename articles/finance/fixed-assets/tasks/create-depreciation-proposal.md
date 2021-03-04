@@ -48,3 +48,6 @@ Dette emne beskriver, hvordan batchafskrivningsforslag fungerer, og det forklare
 3. Vælg **Linjer**.
 4. Vælg **Bogfør**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

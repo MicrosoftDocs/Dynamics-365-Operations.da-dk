@@ -86,3 +86,6 @@ Følgende billede viser et eksempel på en juridisk enhed.
 [Oversigt over kanaler](channels-overview.md)
 
 [Forudsætninger for konfiguration af kanal](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

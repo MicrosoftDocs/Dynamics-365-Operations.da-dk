@@ -88,3 +88,6 @@ Når du bogfører en opgørelse, oprettes der salgsordrer og fakturaer for salg 
 - Salg, for hvilket der blev føjet en kunde til transaktionen i POS, genererer separate salgsordrer og fakturaer – én for hver entydig kunde.
 
 Der oprettes automatisk betalingskladder for betalingerne i opgørelsen, og lageret opdateres for POS-butikken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Når feltet er markeret, åbnes siden **Alle produktionsbølger**. Denne side fi
 Feltet **Åbent lagerstedsarbejde, der kræver opmærksomhed** viser det antal stykliste- og formellinjer, der er frigivet til lageret i ubehandlede bølger, og som har ubehandlet arbejde, der er tidligere end eller lig med datoen i arbejdsområdet. Linjerne skal også forbruges af en operationsressource, der gælder for filteret i arbejdsområdet.
 
 Når feltet er markeret, åbnes siden **Alt arbejde**. Denne side filtreres efter antallet af åbne arbejdsoverskrifter, der indeholder arbejdslinjer fra frigivne stykliste- og formellinjer, der opfylder kriterierne for feltet. Fra siden **Alt arbejde** kan du behandle arbejdet manuelt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -127,3 +127,6 @@ Når budgetstyring er slået til, får brugerne budgetstyringsadvarsels- og -fej
 Fra denne side kan brugerne analysere ned i siden **Statistik for budgetstyring fordelt på periode** for at få vist oplysninger om budgettilgængelighed og reservationer for en valgt dimensionskombination i budgetstyring. Brugere kan også analysere ned i siden **Statistik for budgetstyring** for at få vist tilgængeligheden af budgettet for alle kombinationer af økonomiske dimensioner, der bruges i budgetstyring. 
 
 Hvis budgetstyring er aktiveret for indkøbsordrer, kan budgetadministratoren bruge arbejdsområdet **Finansbudgetter og budgetter** til at gennemse køen af alle ikke-bekræftede indkøbsordrer med budgetkontroladvarsler og -fejl. Hvis budgetadministratoren har tilladelser til budgetoverskridelse, kan indkøbsordren bekræftes direkte i arbejdsområdet.    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

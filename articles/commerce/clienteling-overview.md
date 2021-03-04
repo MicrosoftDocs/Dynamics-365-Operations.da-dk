@@ -124,3 +124,6 @@ Følg disse trin for at konfigurere integrationen.
     4. Du kan have flere miljøer i Customer Insights, f.eks. test- og produktionsmiljøer. Angiv i feltet **ID for miljøforekomst** det relevante miljø.
     5. I feltet **Alternativt kunde-ID** skal du angive den egenskab i Customer Insights, der er knyttet til kundens kontonummer. (i Commerce er kundens kontonummer det samme som kundens id.)
     6. De resterende tre egenskaber er de målpunkter, der vil blive vist på kundekortet i klientbogen. Du kan vælge op til tre målpunkter, der skal vises på kundekortet. (Du behøver dog ikke at vælge nogen målpunkter.) Som tidligere nævnt, viser systemet disse værdier først, og derefter vises værdierne for attributgruppen for klientbogen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

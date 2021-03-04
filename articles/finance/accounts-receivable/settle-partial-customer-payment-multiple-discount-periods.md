@@ -98,3 +98,6 @@ Fakturasaldoen er nu 0,00. Arnie kan se oplysningerne på siden **Debitorposteri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

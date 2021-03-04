@@ -100,3 +100,6 @@ I illustrationen nedenfor vises et eksempel på siden **Indkøbsordre** med foku
 
 Hvis du vil se eller angive det aktivitetsnummer, der er knyttet til en indkøbsordres indkøbsrekvisition, skal du vælge indkøbsrekvisitionsposten på siden **Indkøbsrekvisition for arbejdsordre** og derefter vælge linket for indkøbsrekvisitionen i kolonnen **Indkøbsrekvisition**. Du kan finde feltet **Aktivitetsnummer** under fanen **Projekt** i oversigtspanelet **Linjedetaljer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

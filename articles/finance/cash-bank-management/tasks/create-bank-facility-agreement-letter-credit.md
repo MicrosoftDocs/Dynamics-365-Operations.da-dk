@@ -51,3 +51,6 @@ Denne opgave fører dig gennem oprettelse af en bankfacilitetsaftale til behandl
 18. Klik på Forlæng.
 19. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

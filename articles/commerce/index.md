@@ -56,3 +56,6 @@ Vælg et funktionsområde, du vil vide mere om.
 - [Administrere dit websted til e-handel](online-store-overview.md)
 - [Beskyttelse mod svindel](dev-itpro/DFP.md)
 - [Handelsudvikling og-udvidelse](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

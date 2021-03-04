@@ -63,3 +63,6 @@ Dette emne beskriver, hvordan du konfigurerer oplysninger om lokationer på et l
 7. Luk siden.
 8. Opdater siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

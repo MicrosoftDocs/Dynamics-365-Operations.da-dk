@@ -74,3 +74,6 @@ Disse opgaver bruger demofirmaet 'USMF'.
     * Denne konto debiteres, når startdepositummet bogføres, og krediteres, når betalingen bogføres.  
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -180,3 +180,6 @@ Følgende HR-ressourcer er tilgængelige i Common Data Service .
 
 [Vælg en dataintegrationsteknologi](hr-admin-integration-choose-technology.md)</br>
 [Konfigurere Common Data Service-integration](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Følgende indstillinger kan vælges, når arbejdstype pluk eller optælling.
 | Bekræftelse af stykplukning | Arbejdstyper, der kan vælges til pluk og optælling. Bekræftelse af produkt vælges automatisk. Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden. |
 |  Maksimalt antal stykker  |                   Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret. Angiver en grænse for det antal styk, du skal bekræfte.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -189,3 +189,6 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurer Elektronisk rapportering (ER) for at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

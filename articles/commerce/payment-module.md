@@ -118,3 +118,6 @@ Hvis der er brug for både Adyen- og PayPal-betalingsconnectorerne, skal du føj
 [Dynamics 365-betalingsconnector til PayPal](paypal.md)
 
 [Effektiv kundegodkendelse (SCA) ved hjælp af Adyen](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

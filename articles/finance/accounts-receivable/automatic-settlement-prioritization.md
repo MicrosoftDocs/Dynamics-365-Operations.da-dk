@@ -83,3 +83,6 @@ Hvis der ikke er en brugerdefineret udligningsprioritet, markeres posteringer au
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

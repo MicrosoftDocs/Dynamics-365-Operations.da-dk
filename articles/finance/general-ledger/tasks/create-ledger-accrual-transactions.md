@@ -49,3 +49,6 @@ Denne opgaveguide gennemgår oprettelse af posteringer til periodisering af fina
 17. Klik på OK.
 18. Klik på Bogfør.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

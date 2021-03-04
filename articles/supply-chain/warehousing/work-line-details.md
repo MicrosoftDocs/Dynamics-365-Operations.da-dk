@@ -128,3 +128,6 @@ Benyt følgende fremgangsmåde for at oprette noget plukarbejde.
 
 > [!IMPORTANT]
 > Hvis du kun vil annullere en del af antallet for en arbejdslinje, skal du også fjerne det forældede antal fra lastlinjen. Hvis ikke, medmindre underlevering er konfigureret korrekt, kan lastlinjen ikke leveres/bekræftes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

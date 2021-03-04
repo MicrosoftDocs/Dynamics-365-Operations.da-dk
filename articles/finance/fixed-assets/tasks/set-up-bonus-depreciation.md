@@ -49,3 +49,6 @@ Denne procedure viser, hvordan du opretter en særlig afskrivning og knytter den
     * Procentdel eller Beløb hentes som standard fra konfigurationen af særlig afskrivning.  
 8. Angiv et tal i feltet Prioritet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Som beskrevet i ovenstående afsnit kan du føje arbejdsordrer til en arbejdsord
 
 Hvis du vil fjerne en arbejdsordre fra en arbejdsordrepulje, skal du gentage disse trin, men vælge **Fjern** i trin 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

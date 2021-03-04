@@ -132,3 +132,6 @@ Hvis du vil se vurderings- og anmeldelsestendenser i Commerce-webstedsgenerator,
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

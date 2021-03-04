@@ -72,3 +72,6 @@ Du kan planlægge pladsudnyttelsen ved at generere rapporten **Lagerstedslastnin
 
 4. I feltet **Lastningstype** skal du vælge **Enhed** eller **Vægt** for at angive den lagerdriftsenhed, der skal anslås plads for.
 5. I feltet **Opsætning af pladsudnyttelse** skal du vælge den pladsudnyttelsesopsætning, som prognosen skal baseres på.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

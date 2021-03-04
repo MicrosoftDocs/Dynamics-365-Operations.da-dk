@@ -124,3 +124,6 @@ Til testformål skal du udføre formattilknytningen ved hjælp af filen 1099entr
     * Gennemgå outputtet i XML-format, som viser de data, der er importeret fra den valgte fil og overført til datamodellen. Bemærk, at alle 7 linjer i den importerede CSV-fil blev behandlet. Linje 1 i de indeholdte felters titel blev sprunget over, 4 transaktioner blev fortolket korrekt, og 2 transaktioner blev genkendt som ikke-gyldige.
 3. Luk siden.
 4. Luk siden.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

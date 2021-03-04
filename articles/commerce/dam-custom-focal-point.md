@@ -60,3 +60,6 @@ Hvis du vil definere et brugerdefineret fokuspunkt for et billede, skal du følg
 [Beskære billeder](dam-crop-images.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

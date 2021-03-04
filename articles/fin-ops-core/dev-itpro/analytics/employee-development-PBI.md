@@ -68,3 +68,6 @@ Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til
 | Analyse af medarbejderkompetencer  | Certificeret, niveau, niveaudato og færdighed                                                                    | Medarbejdernavn, færdighed |
 | Ydeevne              | Klassifikation, beskrivelse og klassifikationsmodel                                                                      | Aktuel medarbejder, aktuel stilling, medarbejdertendens, job foretrukne færdighed, tidligere stillingstildeling, stillingstendens, fratrådt medarbejder |
 | Færdighed                    | Færdighed, færdighedstype og klassifikation                                                                              | Analyse af medarbejderkompetencer, Job foretrukne færdighed |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

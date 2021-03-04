@@ -53,3 +53,6 @@ Med denne ændring er felterne **Prøvetid** og **Kalender** blevet føjet til s
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Platform update 23 til Finance and Operations
 Rettelser af mindre programfejl er inkluderet som en del af platformsopdatering 23 til Finance and Operations. Du kan finde flere oplysninger i [Nyheder eller ændringer i Dynamics 365 Finance and Operations platformsopdatering 23 (januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

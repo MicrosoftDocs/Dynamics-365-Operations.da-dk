@@ -157,3 +157,6 @@ Kandidater er personer, der er føjet til en talentpulje, men som ikke er tilkny
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil – detaljer om kandidat | Oprette, læse, opdatere og slette | Oprette, læse, opdatere og slette | Ingen adgang   |
 | Dokumenter                   | Oprette, læse, opdatere og slette | Oprette, læse, opdatere og slette | Ingen adgang   |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

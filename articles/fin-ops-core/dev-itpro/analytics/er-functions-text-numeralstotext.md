@@ -88,3 +88,6 @@ Valutakoden er valgfri. Hvis den er defineret som en tom streng, bruges firmaval
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Bemærk, at måleenheden for efterspørgselsprognose ikke har nogen specifik men
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Ifølge den amerikanske Immigration Reform and Control Act (IRCA) skal arbejdsgi
 22. Indtast eller vælg en værdi i feltet Dokumentnummer.
 23. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

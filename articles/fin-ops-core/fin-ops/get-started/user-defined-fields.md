@@ -162,3 +162,6 @@ Af ydelsesmæssige og tekniske årsager tillader kun tabeller, der opfylder føl
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jeg henvise til brugerdefinerede felter fra udviklingsværktøjerne?  
 
 Brugerdefinerede felter kan kun administreres via brugergrænsefladen, og der kan ikke henvises til dem ved hjælp af en kode. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Du skal også angive transportleveringstiden mellem lagerstederne på siden **Tr
 2. Vælg **lagersted** i feltet **Tilgangssted**.
 3. Vælg **Forsendelseslagersted**, **Tilgangslagersted** og **Transportdage**. 
 4. (Valgfrit) Du kan også angive transporttiden, afhængigt af leveringsmåden, under fanen **Transportdage pr. leveringsmåde**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

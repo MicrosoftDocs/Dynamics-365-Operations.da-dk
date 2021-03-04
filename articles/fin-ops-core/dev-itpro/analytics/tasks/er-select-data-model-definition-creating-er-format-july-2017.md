@@ -98,3 +98,6 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
     * Bemærk, at der nu kun findes ét rodelementet, som kan tilknyttes programdatakilderne. Når der introduceres mindst én modeltilknytning, er det kun modellens rodelementer, som er knyttet til programdatakilder, der kan vælges som modeldefinition, mens ER-formatet er tilføjet.   
 5. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

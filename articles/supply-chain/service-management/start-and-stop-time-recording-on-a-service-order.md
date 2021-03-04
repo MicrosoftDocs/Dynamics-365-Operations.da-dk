@@ -65,3 +65,6 @@ Brug denne procedure til at starte og stoppe tidsregistreringen for en serviceor
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

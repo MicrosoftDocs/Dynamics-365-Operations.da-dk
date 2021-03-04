@@ -84,3 +84,6 @@ Flere informationskilder kan angives, når du starter en styklistekalkulation. D
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

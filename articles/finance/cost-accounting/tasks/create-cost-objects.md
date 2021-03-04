@@ -51,3 +51,6 @@ Denne fremgangsmåde viser, hvordan du opretter omkostningsobjekter ved at impor
 ## <a name="view-the-imported-cost-centers"></a>Få vist de importerede bærere
 1. Klik på Vis dimensionsmedlemmer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Du vil se flere posteringer for rapporteringsvalutabeløbene.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

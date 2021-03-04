@@ -61,3 +61,6 @@ Når **Begræns for returneringer uden kvittering** er indstillet til **Ja**, er
 
 Hvis en transaktion har både en returnering med kvittering og en returnering uden kvittering, gennemtvinges begrænsningsbetingelserne ikke, fordi transaktionen bliver en returneringsarbejdsgang med en kvittering. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ I følgende eksempel vises, hvordan du kan eksportere en **lagerrapport over lag
 1. Siden **Udførelsesoversigt** åbnes, hvor du kan se status for eksportjobbet og en liste over de enheder, der er eksporteret. Vælg enheden **Lagerværdi** på listen i sektionen **Status for behandling af enhed**, og vælg derefter **Hent fil** for at hente de data, der er eksporteret fra den pågældende enhed.
 
 Du kan finde flere oplysninger om, hvordan du bruger datastyring til at eksportere data i [Oversigt over dataimport og eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Hvis du ikke specificerer et tidsvindue til en serviceaftalelinje, skal den serv
 
 [Oprette tidsvinduer](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

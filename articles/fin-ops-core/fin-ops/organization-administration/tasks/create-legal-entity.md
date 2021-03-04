@@ -45,3 +45,6 @@ En juridisk enhed er en organisation, der er identificeret ved at være registre
 15. Udvid sektionen **Momsregistrering**. Angiv de registreringsnumre, der bruges til rapportering til skattemyndigheder, i sektionen **Momsregistrering**.
 16. Udvid sektionen **1099-skat**. Angiv 1099-oplysninger for den juridiske enhed i sektionen **1099-skat**.  
 17. Klik på **Gem**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

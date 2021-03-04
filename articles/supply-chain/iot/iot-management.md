@@ -62,3 +62,6 @@ Du kan simulere fabriksmaskinsignaler. Du kan finde flere oplysninger i disse em
 + [Forbinde IoT DevKit AZ3166 til Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Forbinde Raspberry Pi-onlinesimulator til Azure IoT Hub (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Oversigt over løsningsaccelerator til enhedsimuleringer](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

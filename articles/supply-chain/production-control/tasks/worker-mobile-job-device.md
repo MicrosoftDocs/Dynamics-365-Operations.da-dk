@@ -68,3 +68,6 @@ I dette eksempel skal du kontrollere, at brugeren "SHANNON" er tildelt rollen ma
 6. Du kan angive standardfilteret for arbejderen i feltet **Produktionsenhed**. Dette sikrer, at kun produktionsjob for den valgte produktionsenhed vises, når arbejderen logger på enheden. Indtast den ønskede værdi.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

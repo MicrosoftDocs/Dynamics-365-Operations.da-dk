@@ -65,3 +65,6 @@ Denne liste er stillet tilrådighed, så du kan tage disse fjernelser og udfasni
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

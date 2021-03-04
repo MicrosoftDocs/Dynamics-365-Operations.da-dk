@@ -61,3 +61,6 @@ Denne fremgangsmåde viser, hvordan du manuelt vedligeholder oplysninger om ans�
 6. Klik på Gem.
     * Når du har gemt ansøgningen, kan du knytte dokumenter til den, herunder ansøgerens erfaring, priser og følgebrev.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ For at få vist forskellige versioner kan du bruge menupunktet **Pr. dato** til 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

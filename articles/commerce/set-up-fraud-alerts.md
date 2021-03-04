@@ -69,3 +69,6 @@ Ordren gemmes, men flaget **Udfør ikke behandling** er angivet for den. Dette f
 Du kan se og administrere de ordrer, der er på hold for kontrol af svindel, ved at gå til **Retail og Commerce** \> **Kunder** \> **Ordrer på hold**. På siden **Ordrer på hold** skal du vælge en post på listen og derefter klikke på **Ordre på hold** for at se en mere detaljeret visning, der omfatter oplysninger om årsagen til spærringen. I oversigtspanelet **Svindeldetaljer** kan du se de systematiske svindelkriterier, der er fundet som match for ordren, og de resultater, der er anvendt. Hvis ordren blev sat på hold manuelt, kan du gennemse eventuelle kommentarer, der er angivet af den bruger, der satte ordren på hold, ved at se i sektionen **Svindelnoter** i oversigtspanelet **Noter**.
 
 Du kan finde flere oplysninger om, hvordan du arbejder med ordrer på hold, under [Ordrer på hold](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

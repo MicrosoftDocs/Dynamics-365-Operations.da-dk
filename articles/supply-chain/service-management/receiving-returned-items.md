@@ -45,3 +45,6 @@ Afh√¶ngigt af firmaets politikker sendes varerne i returvareleverancen i karant√
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

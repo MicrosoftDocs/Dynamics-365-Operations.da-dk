@@ -56,3 +56,6 @@ Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapporteri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Værdien 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

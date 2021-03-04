@@ -163,3 +163,6 @@ Hvis konfigurationen skal udføres på et sted eller endda et firma, der afviger
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

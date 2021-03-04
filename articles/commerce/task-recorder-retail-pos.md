@@ -146,3 +146,6 @@ Når du klikker på en opgaveguide i søgeresultaterne, kan du enten få vist tr
 
 > [!NOTE]
 > Hjælp i Retail Modern POS og Cloud POS viser ikke opgavevejledninger i henhold til, hvilken form du er, eller operation, du foretager. Du skal skrive procesnavnet i søgefeltet og derefter klikke på **Søg**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

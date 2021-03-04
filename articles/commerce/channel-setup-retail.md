@@ -182,3 +182,6 @@ Gør følgende for at konfigurere pengeskabe.
 
 [Konfigurere en callcenter-kanal](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

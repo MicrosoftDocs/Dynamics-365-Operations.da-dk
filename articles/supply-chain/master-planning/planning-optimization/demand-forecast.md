@@ -274,3 +274,6 @@ Der skal tildeles en prognosereduktionsnøgle til elementets dækningsgruppe. F�
 ### <a name="reduce-a-forecast-by-transactions"></a>Reducer en prognose med transaktioner
 
 Når du vælger **Transaktioner - reduktionsnøgle** eller **Transaktioner - dynamisk periode** som en metode til at reducere prognosekrav, kan du præcisere de transaktioner, der skal reducere prognosen. I feltet **Reducer prognose med** i oversigtspanelet **Andre** på siden **Disponeringsgrupper** skal du vælge **Alle transaktioner**, hvis alle transaktioner skal reducere prognosen, eller **Ordrer**, hvis alene salgsordrer skal reducere prognosen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

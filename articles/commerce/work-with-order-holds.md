@@ -103,3 +103,6 @@ Hvis brugeren vil fjerne en spærring, men foretage flere ændringer af ordren, 
 ## <a name="reporting-options"></a>Rapporteringsindstillinger
 
 Gå til **Retail og Commerce** \> **Forespørgsler og rapporter** \> **Call center-rapporter** \> **Rapport over ordrer på hold** for at køre en rapport om ordrehold efter datointerval, holdkode eller andre relaterede kriterier.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsba
     * Angiv en beskrivelse af konfigurationen for at forklare, hvad den indeholder.  
 11. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

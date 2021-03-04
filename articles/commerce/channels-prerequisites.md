@@ -86,3 +86,6 @@ Før en Dynamics 365 Commerce-kanal kan oprettes, skal der udføres flere nødve
 [Konfigurer en detailkanal](channel-setup-retail.md)
     
 [Konfigurere en onlinekanal](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

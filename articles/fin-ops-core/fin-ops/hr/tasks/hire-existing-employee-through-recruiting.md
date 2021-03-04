@@ -40,3 +40,6 @@ Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbe
 9. Klik på Skift Stilling.
     * Du kan også ændre kompensationen på nuværende tidspunkt. Hvis du ikke tildeler kompensation på dette tidspunkt, kan du ændre den ved at gå til arbejderformen, vælge fanen Kompensation og vælge "Fast Plan". Når du vælger "Skift stilling", opdateres statussen på ansøgning til "Ansat".  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
