@@ -3,14 +3,13 @@ title: Fordelt ordrestyring (DOM)
 description: Dette emne beskriver funktionaliteten til fordelt ordrestyring (DOM) i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4458718"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982585"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -49,8 +48,12 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
     - **Aktivér fordelt ordrestyring** – Angiv denne indstilling til **Ja**.
     - **Bekræft brug af Bing Kort til DOM** – Angiv denne indstilling til **Ja**.
 
+
         > [!NOTE]
-        > Du kan kun angive denne indstilling **Ja**, hvis indstillingen **Aktivér Bing Kort** på fanen **Bing Kort** på siden **Delte Commerce-parametre** (**Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Delte Commerce-parametre**) også er angivet til **Ja**, og hvis en gyldig nøgle er angivet i feltet **Bing Kort-nøgle**.
+        > Du kan kun angive denne indstilling til **Ja**, hvis indstillingen **Aktivér Bing Kort** på fanen **Bing Kort** på siden **Delte Commerce-parametre** (**Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Delte Commerce-parametre**) også er angivet til **Ja**, og hvis en gyldig nøgle er angivet i feltet **Bing Kort-nøgle**.
+        >
+        > Portalen [Bing Kort Dev Center](https://www.bingmapsportal.com/) giver mulighed for at begrænse adgangen på Bing Kort API-nøgler til et sæt domæner, som du angiver. Med denne funktion kan kunder definere et strengt sæt med henviste værdier eller IP-adresseintervaller, som nøglen kan valideres op imod. De anmodninger, der stammer fra din liste over tilladte, behandles normalt, mens anmodninger, der ikke stammer fra listen, returnerer et svar med adgang nægtet. Tilføjelse af domænesikkerhed til din API-nøgle er valgfri, og nøgler, der efterlades, som de er, kan fortsat anvendes. Listen over tilladte nøgler er uafhængig af alle dine øvrige nøgler, hvilket gør det muligt at angive særskilte regler for de individuelle nøgler. Fordelt ordrestyring understøtter ikke konfiguration af domænehenviste egenskaber.
+
 
     - **Tilbageholdelsesperiode i dage** – Angiv, hvor længe de opfyldningsplaner, som DOM kører, beholdes i systemet. Batchjobbet **Opsætning af job til sletning af DOM-opfyldningsdata** sletter opfyldningsplanen, der er ældre end det antal dage, du angiver her.
     - **Afvisningsperiode (i dage)** – Angiv, hvor lang tid der skal gå, før en afvist ordrelinje kan tildeles til det samme sted.
@@ -62,14 +65,15 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
     - **Type af problemløser** – Vælg en værdi. To typer problemløsere frigives med Commerce: **Problemløser for produktion** og **Forenklet problemløser**. For alle computere, der skal køre DOM (dvs. alle servere, der tilhører gruppen DOMBatch), skal **Problemløser for produktion** være valgt. Problemløser for produktion kræver den særlige licensnøgle, der som standard er givet i licens og installeret i produktionsmiljøer. For ikke-produktionsmiljøer skal denne licensnøgle installeres manuelt. Du kan installere licensnøglen manuelt ved at gøre følgende:
 
         1. I Microsoft Dynamics Lifecycle Services skal du åbne det delte aktivbibliotek, vælge **Model** som aktivtype og downloade filen **DOM-licens**.
-        2. Start Microsoft Internet Information Services (IIS) Manager, højreklik på **AOS Service website**, og vælg derefter **Undersøg**. Et Windows Stifinder-vindue åbnes på **\<AOS service root\>\\-webrod**. Notér stien til \<AOS Service root\>, da du skal bruge den i næste trin.
-        3. Kopiér konfigurationsfilen i mappen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Gå til Headquarters-klienten, og åbn siden **DOM-parametre**. På fanen **Problemløser** i feltet **Type af problemløser** skal du vælge **Problemløser for produktion** og bekræfte, at der ikke vises nogen fejlmeddelelser.
+        1. Start Microsoft Internet Information Services (IIS) Manager, højreklik på **AOS Service website**, og vælg derefter **Undersøg**. Et Windows Stifinder-vindue åbnes på **\<AOS service root\>\\-webrod**. Notér stien til \<AOS Service root\>, da du skal bruge den i næste trin.
+        1. Kopiér konfigurationsfilen i mappen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        1. Gå til Headquarters-klienten, og åbn siden **DOM-parametre**. På fanen **Problemløser** i feltet **Type af problemløser** skal du vælge **Problemløser for produktion** og bekræfte, at der ikke vises nogen fejlmeddelelser.
+
 
         > [!NOTE]
         > Forenklet problemløser leveres, så detailhandlere kan afprøve DOM-funktionen uden at skulle installere den særlige licens. Organisationer bør ikke anvende Forenklet problemløser i produktionsmiljøer.
         >
-        > Selvom Forenklet problemløser giver det samme sæt egenskaber som Problemløser for produktion, er der begrænsninger for ydeevnen (det antal ordrer og ordrelinjer, der kan håndteres i en kørsel) og konvergens af resultater (et batch af ordrer giver muligvis ikke de bedste resultat i visse scenarier).
+        > Problemløser for produktion øger ydeevnen (f.eks. det antal ordrer og ordrelinjer, der kan håndteres i en kørsel) og konvergens af resultater (eftersom et batch af ordrer giver muligvis ikke de bedste resultat i visse scenarier). Visse regler som f.eks. reglerne **Delordrer** og **Maks. antal lokationer** kræver Problemløser for produktion.
      
 6. Gå tilbage til **Retail og Commerce \> Fordelt ordrestyring \> Opsætning \> DOM-parametre**.
 7. På fanen **Nummerserier** kan du tildele de nødvendige nummerserier til forskellige DOM-enheder.
@@ -121,7 +125,7 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
         \* Hvis **Opfyld delordrer** er angivet til **Nej**, betragtes **Udfyld dellinjer** altid som værende angivet til **Nej**, uanset hvordan indstillingen faktisk er angivet.
 
         > [!NOTE]
-        > I Retail version 10.0.5 blev parameteren **Opfyld ordren fra kun én lokation** ændret til **Maksimalt antal lokationer til opfyldelse**. I stedet for at give en bruger mulighed for at konfigurere, om ordrer kan opfyldes fra én lokation eller opfyldes fra så mange lokationer som muligt, kan brugerne nu angive, om opfyldelsen skal være fra et bestemt sæt lokationer (op til 5) eller fra så mange lokationer som muligt. Det giver større fleksibilitet i forhold til, hvor mange lokationer ordren kan opfyldes fra.
+        > I Retail version 10.0.5 blev parameteren **Opfyld ordren fra kun én lokation** ændret til **Maksimalt antal lokationer til opfyldelse**. I stedet for at give en bruger mulighed for at konfigurere, om ordrer kan opfyldes fra én lokation eller opfyldes fra så mange lokationer som muligt, kan brugerne nu angive, om opfyldelsen skal være fra et bestemt sæt lokationer (op til 5) eller fra så mange lokationer som muligt. Det giver større fleksibilitet i forhold til, hvor mange lokationer ordren kan opfyldes fra. Denne regel fungerer kun med Produktionsløser for produktion. 
 
    - **Offline opfyldelse af lokationsregel** – Denne regel giver organisationer mulighed for at angive en lokation eller en gruppe af lokationer som offline eller ikke er tilgængelige for DOM, så ordrer ikke kan tildeles til disse lokationer til opfyldelse.
     - **Regel for maksimalt antal afvisninger** – Denne regel giver organisationer mulighed for at definere en tærskel for antal afvisninger. Når grænsen nås, skal DOM-processoren markere en ordre eller en ordrelinje, som en undtagelse, og udelade den fra videre behandling.

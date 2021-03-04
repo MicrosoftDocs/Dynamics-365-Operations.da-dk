@@ -94,12 +94,12 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.17 (april 2021)
+                      href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (februar 2021)
                       href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (januar 2021)
                       href: get-started/whats-new-commerce-10-0-15.md
-                    - name: Commerce 10.0.14 (november 2020)
-                      href: get-started/whats-new-commerce-10-0-14.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner i Finance and Operations
@@ -190,6 +190,44 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: Forstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+            - name: Implementering af livscyklusstyring
+              items:
+                - name: Startside for implementering af livscyklusstyring
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Arkitektur for Finance and Operations-apps
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                - name: Onboarde et implementeringsprojekt
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Miljøplanlægning
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Forberede til udgivelse
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Ofte stillede spørgsmål om udgivelse
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Sende en serviceanmodning
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Ofte stillede spørgsmål om Abonnementer, LCS-projekter og Azure AD-lejere'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte miljøer mellem datacentre
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte licenser mellem aftaletyper
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte LCS-implementeringsprojekter til forskellige Azure AD-lejere
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Flyt LCS-implementeringsprojekter fra det lokale miljø til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Flere LCS-projekter og produktionsmiljøer på én Azure AD-lejer
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementere Finance and Operations Commerce-projekter
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Konfigurere nye miljøer, Azure DevOps og forgreninger for projekter'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Opdatere kode og miljøer for Commerce-projekter
+                  href: dev-itpro/updating-environments.md
+                - name: Problemer med test og ydeevne
+                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Arkitektonisk oversigt
           items:
             - name: Arkitektur
@@ -248,44 +286,6 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Initialisere oprindelsesdata i nye Commerce-miljøer
                   href: enable-configure-retail-functionality.md
-            - name: Implementering af livscyklusstyring
-              items:
-                - name: Startside for implementering af livscyklusstyring
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur for Finance and Operations-apps
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Onboarde et implementeringsprojekt
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-                - name: Miljøplanlægning
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Forberede til udgivelse
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Ofte stillede spørgsmål om udgivelse
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Sende en serviceanmodning
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Ofte stillede spørgsmål om Abonnementer, LCS-projekter og Azure AD-lejere'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte miljøer mellem datacentre
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte licenser mellem aftaletyper
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte LCS-implementeringsprojekter til forskellige Azure AD-lejere
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Flyt LCS-implementeringsprojekter fra det lokale miljø til skyen
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: Flere LCS-projekter og produktionsmiljøer på én Azure AD-lejer
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementere Finance and Operations Commerce-projekter
-                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-                - name: 'Oprette nye miljøer, Azure DevOps og forgreninger for Commerce-projekter'
-                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-                - name: Opdatere kode og miljøer for Commerce-projekter
-                  href: dev-itpro/updating-environments.md
-                - name: Problemer med test og ydeevne
-                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Konfigurere dine kanaler
           items:
             - name: Oversigt over kanaler
@@ -504,6 +504,8 @@
                       href: payment-methods.md
                     - name: Betalingsmetoder i callcentre
                       href: work-with-payments.md
+                    - name: Behandling af refundering i opkaldscentre
+                      href: call-center-refund-payments.md
                     - name: 'Opsætning, godkendelse og verifikation af kreditkort'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere kontantbeløbsangivelser for POS
@@ -648,6 +650,8 @@
                       href: personalization-gdpr.md
                 - name: Aktivér anbefalinger af "Køb tilsvarende"
                   href: shop-similar-looks.md
+                - name: Aktivér anbefalinger af "Køb tilsvarende beskrivelse"
+                  href: shop-similar-description.md
                 - name: POS-oplevelser
                   items:
                     - name: Tilføje produktanbefalinger på POS
@@ -712,7 +716,7 @@
           items:
             - name: Kundeordrer
               items:
-                - name: Kundeordrer på POS
+                - name: Kundeordrer i POS
                   href: customer-orders-overview.md
                 - name: Hybride kundeordrer
                   href: hybrid-customer-orders.md
@@ -720,6 +724,8 @@
                   href: enhancedorderrecall.md
                 - name: Aktivere flere leveringstilstande for afhentning
                   href: multiple-pickup-modes.md
+                - name: Behandle afhentning af en kundeordre i POS
+                  href: process-order-pickup-POS.md
             - name: Salgsordrer
               items:
                 - name: Oprette callcenter-ordrer
@@ -858,6 +864,10 @@
                   href: add-cdn-support.md
                 - name: Aktivere registrering af placeringsbaseret lager
                   href: enable-store-detection.md
+                - name: Digitale e-handelsgavekort
+                  href: digital-gift-cards.md
+                - name: Krav til browser for Dynamics 365 Commerce-websteder
+                  href: browser-requirements.md
             - name: Oversigt over eksempelwebsted
               items:
                 - name: Oversigt over startside
@@ -940,7 +950,7 @@
                       href: select-page-layouts.md
                     - name: Administrere SEO-metadata
                       href: manage-seo-metadata.md
-                    - name: 'Gemme, få vist og udgive en side'
+                    - name: 'Gemme, se prøveversion og udgive en side'
                       href: save-preview-publish-page.md
                     - name: Forbedre en produktside
                       href: enrich-product-page.md
@@ -948,6 +958,8 @@
                       href: enrich-category-page.md
                     - name: Bekræfte tilgængelighed af sideindhold
                       href: verify-accessibility.md
+                    - name: Oprette dynamiske e-handelssider baseret på URL-parametre
+                      href: create-dynamic-pages.md
                 - name: Navigation på websted
                   items:
                     - name: Tilpasse navigation på webstedet
@@ -1058,6 +1070,8 @@
                   items:
                     - name: Produktsamlingsmoduler
                       href: product-collection-module-overview.md
+                    - name: Modul til hurtig visning
+                      href: quick-view-module.md
                 - name: Navigationsmoduler
                   items:
                     - name: Brødkrummemodul
@@ -1066,6 +1080,10 @@
                       href: nav-menu-module.md
                     - name: Webstedsvælgermodul
                       href: site-selector.md
+                - name: Søg efter moduler
+                  items:
+                    - name: Modul til søgeresultater
+                      href: search-result-module.md
                 - name: Modul til overholdelse af angivne standarder
                   items:
                     - name: Modul til cookie-samtykke
@@ -1090,7 +1108,7 @@
                   href: experimentation-setup.md
                 - name: Oprette forbindelse til og redigere et eksperiment
                   href: experimentation-connect-edit.md
-                - name: Gennemse og publicere et eksperiment
+                - name: Se prøveversion og publicere et eksperiment
                   href: experimentation-preview-publish.md
                 - name: Køre og overvåge et eksperiment
                   href: experimentation-run-monitor.md
@@ -1106,6 +1124,18 @@
           items:
             - name: Dynamics 365 Fraud Protection-integration med Dynamics 365 Commerce
               href: dev-itpro/DFP.md
+        - name: B2B-e-handel
+          items:
+            - name: Oprette et B2B-e-handelswebsted
+              href: b2b/set-up-b2b-site.md
+            - name: Oprette organisationsmodelhierarkier for B2B-organisationer
+              href: b2b/org-model.md
+            - name: Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
+              href: b2b/manage-b2b-users.md
+            - name: Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
+              href: b2b/payment-method.md
+            - name: Angive produktantalsgrænser for B2B-e-handelswebsteder
+              href: b2b/quantity-limits.md
         - name: Overvågning og analyse
           items:
             - name: Overvåge salgs- og avanceudvikling
@@ -1268,7 +1298,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Brug din egen database
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
-                - name: Vise PDF-dokumenter ved hjælp af en PDF-fremviser
+                - name: Prøveversion af PDF-dokumenter ved hjælp af en PDF-fremviser
                   href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
             - name: Udviklingsværktøjer til oprettelse og udvidelse af løsninger
               items:
@@ -1784,7 +1814,7 @@
               items:
                 - name: Udvide listen over elektroniske rapporteringsfunktioner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Ændringer af API-struktur til elektronisk rapportering for Application update 7.3
+                - name: Ændringer af API-struktur til elektronisk rapportering for applikationsopdatering 7.3
                   href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
@@ -2038,7 +2068,7 @@
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Tilføje modulkonfigurationsfelter
                       href: e-commerce-extensibility/add-module-config-fields.md
-                    - name: Prøveversion og fejlfinde moduler
+                    - name: Se prøveversion og fejlfinde moduler
                       href: e-commerce-extensibility/test-module.md
                     - name: Teste moduler med modulmodeller
                       href: e-commerce-extensibility/test-module-mock.md
@@ -2066,6 +2096,8 @@
                       href: e-commerce-extensibility/interactive-components.md
                     - name: 'Modellering af den tilstand, der er logget på under lokal udvikling'
                       href: e-commerce-extensibility/mock-sign-in.md
+                    - name: 'Konfigurere modulegenskaber, der skal vises ud fra kontekst'
+                      href: e-commerce-extensibility/configure-properties-context.md
                     - name: Globalisere moduler ved hjælp af klassen CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Konfigurere Azure Key Vault til sikker nøgleadministration
@@ -2152,7 +2184,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Kommende ændringer i Retail SDK
                   href: dev-itpro/UpcomingSDKChanges.md
-                - name: Vigtige udviklings- og ALM-ændringer fra version 10.0.10 til 10.0.13
+                - name: Udviklings- og ALM-ændringer fra version 10.0.10 til 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
                 - name: Flette build-systemer for Commerce og Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2162,7 +2194,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Oprette installerbare pakker
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Udvikling i skybaserede udviklingsmiljøer uden administratoradgang
+                - name: Udvikling i skybaserede miljøer uden administratoradgang
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurere Commerce SDK-build pipeline
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2238,7 +2270,7 @@
               items:
                 - name: Kunde og forbruger-API'er for Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Opret ny udvidelses-API til Retail Server (Retail SDK version 10.0.11 og nyere)
+                - name: Opret udvidelses-API til Retail Server (Retail SDK version 10.0.11 og nyere)
                   href: dev-itpro/retail-server-icontroller-extension.md
                 - name: Opret ny udvidelses-API til Retail Server (Retail SDK version 10.0.11 og tidligere)
                   href: dev-itpro/retail-server-extension.md
@@ -2300,7 +2332,7 @@
                   href: payment-connector-data-fields.md
                 - name: Aktivere beskyttelse mod dubleret betaling for betalingsconnector
                   href: dev-itpro/duplicate-payments-protection.md
-                - name: Oprette betalingspakke til Application Explorer i Service Fabric-installationer
+                - name: Opret pakning af handelsbetaling til Finance and Operations-implementering
                   href: dev-itpro/payment-connector-package.md
             - name: Tredjepartsudvidelse for e-handel
               items:

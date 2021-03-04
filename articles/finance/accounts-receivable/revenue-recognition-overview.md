@@ -11,26 +11,27 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: a7e37a0800ec7909f79e5a2354f59c7450995641
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4458720"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995608"
 ---
 # <a name="revenue-recognition-overview"></a>Oversigt over indtægtsføring
 
 [!include [banner](../includes/banner.md)]
 
+Virksomheder i brancher, der sælger flere elementer, f. eks. produkter, tjenester, abonnementer osv., skal være i stand til at opdele ordrer med flere elementer, så omsætningen kan genkendes på grundlag af en række firmaspecifikke og branchespecifikke retningslinjer.
+
 > [!NOTE]
 > Funktionen Indtægtsføring kan ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
 
-Virksomheder i brancher, der sælger flere elementer, f. eks. produkter, tjenester, abonnementer osv., skal være i stand til at opdele ordrer med flere elementer, så omsætningen kan genkendes på grundlag af en række firmaspecifikke og branchespecifikke retningslinjer.
+> Indtægtsføring, herunder bundtfunktionalitet, understøttes ikke til brug i handelskanaler (e-handel, POS, callcenter). Varer, der er konfigureret med indtægtsføring, bør ikke føjes til ordrer eller transaktioner, der er oprettet i Commerce-kanaler.
 
 Generelt kan processen til indtægtsføring bruges til at udføre disse opgaver:
 
@@ -47,7 +48,7 @@ Frigivne produkter bruges til at understøtte indtægtsføring på salgsordredok
 
 Virksomheder kan bruge funktionen Indtægtstidsplan uden at bruge funktionen Indtægtspris. Derfor bruges prisen på salgsordrelinjerne som enten omsætning eller udskudt omsætning. Hvis der findes en indtægtstidsplan på salgsordrelinjen, udskydes prisen på salgsordrelinjen. Hvis der ikke findes en indtægtstidsplan på salgsordrelinjen, bogføres prisen på salgsordrelinjen på en indtægtskonto, når den faktureres.
 
-Indtægtsprisen beregnes enten, når salgsordren bekræftes, eller når fakturaen bogføres. Hvis du vil have vist indtægtsprisen, før fakturaen bogføres, skal du bekræfte salgsordren.
+Indtægtsprisen beregnes enten, når salgsordren bekræftes, eller når fakturaen bogføres. Hvis du vil se en prøveversion af indtægtsprisen, før fakturaen bogføres, skal du bekræfte salgsordren.
 
 Når salgsordren bekræftes, oprettes der også en forventet indtægtstidsplan, hvis nogen af salgsordrelinjerne indeholder en indtægtstidsplan. Når salgsordren faktureres, slettes den forventede indtægtstidsplan, og den forventede indtægtstidsplan erstattes af den faktiske indtægtsføringstidsplan.
 
