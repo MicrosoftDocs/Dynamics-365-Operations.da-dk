@@ -5,6 +5,10 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 28. januar 2021
+          href: hr-whats-new-2021-01-28.md
+        - name: 21. januar 2021
+          href: hr-whats-new-2021-01-21.md
         - name: 2. december 2020
           href: hr-whats-new-2020-12-02.md
         - name: 22. oktober 2020
@@ -79,12 +83,16 @@
           items:
             - name: Vælg en dataintegrationsteknologi
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurere Common Data Service-integration
+            - name: Ofte stillede spørgsmål om Begrænsning
+              href: hr-admin-integration-throttling-faq.md
+            - name: Konfigurere Dataverse-integration
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service-enheder
+            - name: Dataverse-tabeller
               href: hr-developer-entities.md
-            - name: Konfigurere virtuelle Common Data Service-enheder
+            - name: Konfigurere virtuelle Dataverse-enheder
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Ofte stillede spørgsmål om Human Resources virtuelle enheder
+              href: hr-admin-virtual-entity-faq.md
             - name: Konfigurere integration med Finance
               href: hr-admin-integration-finance.md
             - name: Konfigurere integration med Dayforce
@@ -279,7 +287,7 @@
           href: hr-developer-overview.md
         - name: Udvide med Power Apps og Power Automate
           href: hr-developer-power-apps.md
-        - name: Common Data Service-enheder
+        - name: Dataverse-tabeller
           href: hr-developer-entities.md
         - name: Brugerdefinerede felter
           href: hr-developer-custom-fields.md
@@ -287,7 +295,7 @@
           items:
             - name: Vælg en dataintegrationsteknologi
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurere Common Data Service-integration
+            - name: Konfigurere Dataverse-integration
               href: hr-admin-integration-common-data-service.md
             - name: Konfigurere integration med Finance
               href: hr-admin-integration-finance.md
@@ -317,6 +325,92 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: Sende en orlovsanmodning til arbejdsgang
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: ATS-integration API
+          items:
+            - name: Introduktion
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Rekrutteringsanmodning og relaterede enheder
+              items:
+                - name: Rekrutteringsanmodning
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Uddannelse i rekrutteringsanmodninger
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Lokation af rekrutteringsanmodning
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Stilling til rekrutteringsanmodning
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Rekrutteringsanmodningsfærdighed
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Eksempelforespørgsel til anmodning om rekruttering
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Uddannelse i indstillinger i rekrutteringsanmodninger
+              items:
+                - name: Status for jobfritagelse
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Stilling til rekrutteringsanmodningsstatus
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Rekrutteringsanmodningsstatus
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Kategori af lovpligtigt job
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Kandidat til ansættelse og relaterede enheder
+              items:
+                - name: 'Kandidat, der kan ansættes'
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Certifikattype
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Kontakt til part
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Person
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Personadresse
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Personcertifikat
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Personuddannelse
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: 'Numre, der identificerer person'
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Erhvervserfaring for person
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Personscreening
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Personkompetence
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Rangeringsniveau
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Screeningstyper
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Eksempelforespørgsel til ansøger til ansættelse
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Kandidatindstillingssæt
+              items:
+                - name: Resultat af ansøgerintegration
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Tomt ja-nej
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Status for færdiggørelse
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Kontakttype
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Uddannelseskreditgrundlag
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Køn
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Ægteskabelig status
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Måneder i året
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Nej-Ja
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Periodeenhed
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Screeningfrekvens
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Screeningfrekvensen genereres fra
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Færdighedsniveautype
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Brugervejledning
       items:
         - name: Oversigt
@@ -439,12 +533,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Klientpåmindelsesbeskeder via mail
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektroniske signaturer
-              items:
-                - name: Oversigt over elektroniske signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere elektroniske signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Sagsstyring
               items:
                 - name: Oversigt over sagsstyring
@@ -591,6 +679,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Behandle satsændringer
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA-rapportering
+                  href: hr-benefits-management-aca-reports.md
             - name: Definere og administrere et frynsegodeprogram
               href: hr-benefits-manage-program.md
             - name: Politikker for berettigelse til frynsegoder
