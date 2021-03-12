@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692960"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798346"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -101,8 +101,8 @@ Alle funktioner, der kan aktiveres, vil blive aktiveret. Hvis en funktion allere
 
 Alle de funktioner, der føjes til dit miljø, er som standard slået fra, medmindre de er obligatoriske funktioner. Men hvis du automatisk vil aktivere alle nye funktioner, kan du bruge rullelisten under titlen på arbejdsområdet til at ændre, hvad der sker, når der tilføjes nye funktioner.
 
-- Vælg **Aktivér nye funktioner automatisk**, så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
-- Vælg **Aktivér ikke nye funktioner automatisk**, så alle nye funktioner som standard er slået fra, når de føjes til miljøet.
+- Vælg `Enable new features automatically`, så alle nye funktioner automatisk aktiveres, når de føjes til miljøet.
+- Vælg `Do not enable new features automatically`, så alle nye funktioner som standard er slået fra, når de føjes til miljøet.
 
 
 Når du aktiverer alle funktionerne automatisk, aktiveres alle de funktioner, der vil blive aktiveret, når du klikker på knappen **Aktivér alle**. Det vil ikke aktivere de funktioner, der kræver bekræftelse, eller de funktioner, der ikke kan aktiveres, før en handling er udført.
@@ -138,7 +138,7 @@ Følgende eksempler beskriver, hvad der sker, når du bruger enheden **Administr
 
 ## <a name="feature-management-and-flighting"></a>Administration af funktioner og flighting
 
-Med Administration af funktioner kan du styre de funktioner, der leveres i hver udgave. Flighting gør det muligt for Microsoft Teams at frigive funktioner til et begrænset antal kunder, så disse funktioner kan testes og valideres, uden at det påvirker alle kunder. Administration af funktioner styrer ikke flighting af nogen funktioner.
+Med Administration af funktioner kan du styre de funktioner, der leveres i hver frigivelse. Flighting gør det muligt for Microsoft Teams at frigive funktioner til et begrænset antal kunder, så disse funktioner kan testes og valideres, uden at det påvirker alle kunder. Administration af funktioner styrer ikke flighting af nogen funktioner.
 
 ## <a name="new-features-are-optional-for-12-months"></a>Nye funktioner er valgfrie i 12 måneder
 
@@ -199,10 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Hvad er IFeatureLifecycle, der er implementeret af nogle funktionsklasser?
 IFeatureLifecycle er en Microsoft-intern mekanisme til angivelse af fasen for funktionslivscyklussen. Funktioner kan være:
-- PrivatePreview - skal have flight for at være synlig.
-- PublicPreview – vises som standard, men med en advarsel om, at funktionen er en prøveversion.
-- Frigivet - fuldt frigivet.
+- `PrivatePreview` - skal have flight for at være synlig.
+- `PublicPreview` – vises som standard, men med en advarsel om, at det er en prøveversionsfunktion.
+- `Released` – fuldt frigivet.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

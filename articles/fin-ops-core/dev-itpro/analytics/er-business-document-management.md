@@ -3,7 +3,7 @@ title: Oversigt over styring af forretningsdokumenter
 description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til styring af forretningsdokumenter i ER-strukturen.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e657ffbad88aeb9fd238112954f5555496ac329
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681298"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740950"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -41,26 +41,19 @@ I øjeblikket er funktionen til styring af forretningsdokumenter kun implementer
 
 ## <a name="supported-microsoft-office-applications"></a>Understøttede Microsoft Office-applikationer
 
-Hvis du vil bruge styring af forretningsdokumenter til redigering af skabeloner i Excel eller Word ved hjælp af Microsoft Office-skrivebordsprogrammer, skal du have Microsoft Office 2010 eller nyere installeret. Dette understøttes i skyinstallationen og lokale installationer.
+Hvis du vil bruge styring af forretningsdokumenter til redigering af skabeloner i Excel eller Word ved hjælp af Microsoft Office-skrivebordsprogrammer, skal du have Microsoft Office 2010 eller nyere installeret. Dette understøttes i skyinstallationen og installationer i det lokale miljø.
+
+Hvis du vil bruge styring af forretningsdokumenter til redigering af skabeloner i Excel eller Word ved hjælp af Microsoft 365-programmer, skal du have Microsoft 365 Office til webabonnementet. Dette understøttes af implementering i skyen.
 
 ## <a name="business-document-availability"></a>Tilgængelighed af forretningsdokument
 
-Følgende rapporter vil blive tilgængelige med Excel-baserede skabeloner med udgivelsen af den offentlige prøveversion:
+En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-**Debitor** (august 2019)
+En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2020, findes i [Konfigurerbare forretningsdokumenter – Word-skabeloner](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-- Faktura for salgsforskud
-- Salgsordrefølgeseddel
+Der vil være flere tilgængelige rapporter i fremtidige versioner. Der vil blive udsendt særlige beskeder om flere rapporter separat. Du kan få mere at vide om, hvordan du gennemser listen over aktuelt tilgængelige rapporter, i afsnittet [Liste over ER-konfigurationer, der er udgivet i Finans for at understøtte konfigurerbare forretningsdokumenter](#list-of-configurations-cbd) nedenfor.
 
-**Kreditor** (august 2019)
-
-- Indkøbsforskudsfaktura
-- Indkøbsordre
-- Følgeseddel til indkøbsordre
-
-Flere rapporter vil blive tilgængelige. Der vil blive udsendt særlige beskeder om flere rapporter separat. 
-
-En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
+Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametre
 
@@ -74,24 +67,24 @@ Eksempel på ER-konfigurationer bruges i eksemplet med denne procedure. Du skal 
 
 **Eksempelløsning til ER-debitorfakturering**
 
-| **Filer**                                  | **Indhold**                                |
-|-------------------------------------------|--------------------------------------------|
+| Filer                                      | Indhold |
+|-------------------------------------------|---------|
 | Debitorfaktureringsmodel.version.2.xml    | [ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | FTI-debitorrapport (GER).version.2.3.xml | [Konfiguration af ER-format til fritekstfaktura](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Eksempelløsning til ER-betalingscheck**
 
-| **Filer**                                  | **Indhold**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model for checks.version.10.xml          | [ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Checkudskrivningsformat.version.10.9.xml  | [ER-konfigurationsformat for betalingscheck](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Filer                                     | Indhold |
+|------------------------------------------|---------|
+| Model for checks.version.10.xml         | [ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Checkudskrivningsformat.version.10.9.xml | [ER-konfigurationsformat for betalingscheck](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Eksempelløsning til ER-udenrigshandel**
 
-| **Filer**                                  | **Indhold**                                |
-|-------------------------------------------|--------------------------------------------|
-| Intrastat-model.version.1.xml             | [ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Intrastat-rapport.version.1.9.xml          | [ER-formatkonfiguration af Intrastat-kontrolrapport](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Filer                             | Indhold |
+|----------------------------------|---------|
+| Intrastat-model.version.1.xml    | [ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat-rapport.version.1.9.xml | [ER-formatkonfiguration af Intrastat-kontrolrapport](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Benyt følgende fremgangsmåde for at importere de enkelte filer. Importér ER-konfigurationen af *datamodellen* for hver ER-løsning i tabellerne ovenfor, før du importerer den tilsvarende ER-*format*-konfiguration.
 
@@ -101,15 +94,13 @@ Benyt følgende fremgangsmåde for at importere de enkelte filer. Importér ER-k
 4. Vælg **Gennemse** for at indlæse den påkrævede XML-fil.
 5. Vælg **OK** for at bekræfte konfigurationens import.
 
-![Siden ER-konfigurationer](./media/BDM-Overview-ERSolutions.png)
-
+![Bekræftelse af konfigurationsimport på siden ER-konfigurationer](./media/BDM-Overview-ERSolutions.png)
 
 Du kan også importere de officielt publicerede ER-formatkonfigurationer fra Microsoft Dynamics Lifecycle service (LCS). Hvis du f.eks. vil fuldføre denne procedure, kan du importere den seneste version af ER-formatkonfigurationen **Fritekstfaktura (Excel)**. Varianter af den tilsvarende ER-datamodel og konfigurationer af ER-modeltilknytninger importeres automatisk.
 
 ![Indholdssiden for delt LCS-aktivbibliotek](./media/BDM-Overview-SharedAssetLibrary.png)
 
 Du kan finde flere oplysninger om import af ER-konfigurationer under [Administrere livscyklus for ER-konfiguration](general-electronic-reporting-manage-configuration-lifecycle.md).
-
 
 ## <a name="enable-business-document-management"></a>Aktivere styring af forretningsdokumenter
 
@@ -122,7 +113,7 @@ Benyt følgende fremgangsmåde for at aktivere funktionen til styring af forretn
 3. Vælg **Aktivér nu** for at aktivere den valgte funktion.
 4. Opdater siden for at få adgang til den nye funktion.
 
->[!NOTE]
+> [!NOTE]
 > Yderligere oplysninger om brug af den nye brugergrænseflade i dokumenter i Styring af forretningsdokumenter finder du i [Ny brugergrænseflade i dokumenter i Styring af forretningsdokumenter](er-business-document-management-new-template-ui.md).
 
 ![Arbejdsområdet Administration af funktioner](./media/BDM-Overview-FMEnabling.png)
@@ -134,21 +125,22 @@ Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt o
 Brug oplysningerne i følgende afsnit til at konfigurere de grundlæggende parametre for styring af forretningsdokumenter.
 
 ### <a name="prerequisites-for-parameter-setup"></a>Forudsætninger for parameteropsætning
+
 Før du kan konfigurere styring af forretningsdokumenter, skal du konfigurere den ønskede dokumenttype i dokumentstyringsstrukturen. Denne dokumenttype bruges til at angive en midlertidig lagring af dokumenter i Office-formater (Excel og Word), der bruges som skabeloner for ER-rapporter. Skabelonen til midlertidig lagring kan redigeres ved hjælp af Office-skrivebordsprogrammer.
 
 For denne dokumenttype skal følgende attributværdier vælges.
 
-| **Attributnavn**  | **Attributværdi**   |
-|---------------------|-----------------------|
-| Klasse               | Vedlæg fil           |
-| Multi               | Fil                  |
-| Adresse            | SharePoint            |
+| Attributnavn | Attributværdi |
+|----------------|-----------------|
+| Klasse          | Vedlæg fil     |
+| Multi          | Fil            |
+| Adresse       | SharePoint      |
 
 Du kan finde oplysninger om, hvordan du konfigurerer de påkrævede dokumentstyringsparametre og dokumenttyper, i [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Konfigurere dokumenttype til dokumentstyring](./media/BDM-Overview-DMSetting.png)
 
-### <a name=""></a><a name="SetupBdmParameters">Konfigurere parametre</a>
+### <a name="set-up-parameters"></a><a name="SetupBdmParameters"></a>Konfigurere parametre
 
 De grundlæggende parametre til styring af forretningsdokumenter kan konfigureres på siden **Parametre for forretningsdokument**. Det er kun specifikke brugere, der har adgang til siden. Det omfatter:
 
@@ -159,7 +151,7 @@ Benyt følgende fremgangsmåde til at konfigurere grundlæggende parametre for a
 
 1. Log på som bruger med adgang til siden **Parametre for forretningsdokument**.
 2. Gå til **Virksomhedsadministration** \> **Elektronisk rapportering** \> **Styring af forretningsdokumenter** \> **Parametre for forretningsdokument**.
-3.    På siden **Parametre for forretningsdokument** skal du under fanen **Vedhæftede filer** i feltet **SharePoint-dokumenttype** definere den dokumenttype, der skal bruges til midlertidig lagring af skabeloner i Office-formater, mens de redigeres ved hjælp af Office-skrivebordsprogrammer. 
+3. På siden **Parametre for forretningsdokument** skal du under fanen **Vedhæftede filer** i feltet **SharePoint-dokumenttype** definere den dokumenttype, der skal bruges til midlertidig lagring af skabeloner i Office-formater, mens de redigeres ved hjælp af Office-skrivebordsprogrammer. 
 
 > [!NOTE]
 > Det er kun de dokumenttyper, der er konfigureret ved hjælp af et SharePoint-sted, der er tilgængelige for denne parameter.
@@ -175,7 +167,7 @@ Den valgte dokumenttype er firmaspecifik og vil blive brugt, når brugeren arbej
 
 Når adgangsrettigheder til forretningsdokumentstyring ikke er aktiveret, kan alle brugere med adgang til arbejdsområdet for forretningsdokumentstyring som standard se alle de ER-løsningsskabeloner, der er tilgængelige. Arbejdsområdet til styring af forretningsdokumenter viser kun de skabeloner, der er placeret i ER-formatkonfigurationer, og som er markeret som **Forretningsdokumenttype**.
 
-![Siden ER-konfigurationer](./media/BDM-Overview-ERFormatTags.png)
+![Siden ER-konfigurationer med tag til forretningsdokumenttype](./media/BDM-Overview-ERFormatTags.png)
 
 Listen over skabeloner, der er tilgængelige i arbejdsområdet for styring af forretningsdokumenter, kan begrænses ved at konfigurere adgangsrettigheder. Det kan være vigtigt, når der bruges forskellige skabeloner til at fremstille forretningsdokumenter for forskellige virksomhedsdomæner (funktionsområder), og du vil give bestemte brugere adgang til forskellige skabeloner til redigering i arbejdsområdet for styring af forretningsdokumenter.
 
@@ -197,13 +189,13 @@ Benyt følgende fremgangsmåde til at konfigurere adgangstilladelser til styring
 
     I følgende illustration vises, hvad der er tilgængeligt i arbejdsområdet til forretningsdokumentstyring for brugere, der er tildelt rollen **Debitorassistent**. Med de aktuelle indstillinger af adgangsrettigheder kan brugeren redigere forretningsdokumentskabeloner fra forskellige funktionsområder, herunder fakturering, lovpligtig rapportering og betalinger.
 
-    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Side med arbejdsområde til forretningsdokumentstyring for debitorassistent](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Vælg **Indstillinger for adgangsrettigheder** på siden **Konfigurator for adgangstilladelser**.
 4. I dialogboksen **Indstillinger for adgangsrettigheder til redigering af skabeloner** skal du aktivere indstillingen **Anvend konfigurerede adgangsrettigheder**.
 5. Vælg **OK** for at bekræfte, at der er aktiveret adgangstilladelser til forretningsdokumentstyring.
 
-    ![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Bekræfte adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Vælg **Tilføj** for at angive en ny forretningsrolle, der skal have konfigureret adgangsrettigheder til skabeloner for forretningsdokumentstyring.
 7. I dialogboksen **Sikkerhedsroller** skal du vælge rollen **Debitorassistent** og derefter vælge **OK** for at bekræfte valget af rollen.
@@ -215,7 +207,7 @@ Benyt følgende fremgangsmåde til at konfigurere adgangstilladelser til styring
 
 11. Skift til ruden **Relaterede oplysninger** fra højre side af den aktuelle side. I ruden **Relaterede oplysninger** kan du se, hvordan de konfigurerede adgangsrettigheder anvendes, herunder hvilke ER-konfigurationsskabeloner der er tilgængelige for brugere, der er tildelt rollen **Debitorassistent**.
 
-    ![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Ruden Relaterede oplysninger på siden Konfigurator for adgangstilladelser](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Vælg **Tilføj** under fanen **Adgangsrettigheder pr. konfigurationer**.
 13. I dialogboksen **Vælg konfiguration** skal du markere **Intrastat-rapporten** som ER-formatkonfiguration.
@@ -226,11 +218,11 @@ Den aktuelle indstilling betyder, at for en hvilken som helst bruger, der er til
 - Skabeloner med værdien **Fakturering** for mærkatet **Funktionsområde**.
 - Skabeloner fra ER-formatkonfigurationer, der vises under fanen **Adgangsrettigheder pr. konfigurationer** (skabeloner fra formatkonfigurationen **Intrastat-rapport** for domænet **Lovpligtig rapportering** i dette eksempel).
 
-![Konfigurationsside for adgangsrettigheder til forretningsdokumentstyring](./media/BDM-Overview-TemplatesAccess4.png)
+![Oversigtspaneler for adgangsrettigheder på siden Konfigurator for adgangstilladelser](./media/BDM-Overview-TemplatesAccess4.png)
 
 I følgende illustration vises, hvad der er tilgængeligt i arbejdsområdet til forretningsdokumentstyring for en bruger, der er tildelt rollen **Debitorassistent**. Med den aktuelle indstilling af adgangsrettigheder til forretningsdokumentstyring kan brugeren redigere forretningsdokumentskabeloner fra **Fakturering**-domænet og **Intrastat-rapporten** som ER-formatkonfiguration. Skabeloner fra domænet **Betalinger** er ikke tilgængelige for rollen **Debitorassistent**.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-TemplatesForAlice2.png)
+![Redigering af skabeloner til forretningsdokumenter i arbejdsområdet Styring af forretningsdokumenter](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > Reglerne **Adgangsrettigheder pr. konfigurationer** gemmes ved hjælp af det entydige identifikations-id for en ER-formatkonfiguration. Dette betyder, at disse regler ikke slettes, når en ER-konfiguration, der refererer til dem, slettes. Når du importerer slettede konfigurationer tilbage til denne forekomst, refererer disse regler til dem igen. Det er ikke nødvendigt at konfigurere reglerne igen, når de slettede konfigurationer importeres igen.
@@ -252,7 +244,7 @@ Når funktionen **Office-lignende brugergrænsefladeoplevelse for styring af for
 - Skabeloner, som ejes af din ER-konfigurationsleverandør (dvs. den udbyder, der aktuelt er markeret som aktiv i arbejdsområdet **Elektronisk rapportering**). Når du har valgt en af disse skabeloner, kan du vælge **Rediger skabelon** for at starte eller fortsætte med at redigere den.
 - Skabeloner, der ejes af andre ER-konfigurationsudbydere. Når du har valgt en af disse skabeloner, kan du vælge **Nyt dokument** for at oprette en kopi af det, der ejes af din ER-konfigurationsudbyder, og derefter begynde at redigere kopien.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate1.png)
+![Skabelonliste på siden i arbejdsområdet Styring af forretningsdokument](./media/BDM-Overview-EditingTemplate1.png)
 
 Fanen **Skabelon** viser indholdet af den valgte skabelon. Vælg fanen **Detaljer** for at få vist oplysninger om den valgte skabelon samt detaljer om en ER-formatkonfiguration, som denne skabelon er placeret i. Bemærk, at alle skabelonerne har statussen **Udgivet** og ikke indeholder nogen detaljer i kolonnen **Revision**. Det betyder, at disse skabeloner ikke redigeres i øjeblikket.
 
@@ -265,7 +257,7 @@ Hvis du vil arbejde med skabeloner, der ejes af andre ER-konfigurationsudbydere,
 1. I arbejdsområdet til styring af forretningsdokumenter skal du vælge skabelonen **Checkudskrivningsformat** på listen.
 2. Vælg fanen **Detaljer**.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate2.png)
+![Side med arbejdsområde til styring af forretningsdokumenter, fanen Detaljer](./media/BDM-Overview-EditingTemplate2.png)
 
 Indstillingen **Rediger skabelon** er tilgængelig for den valgte skabelon. Denne indstilling er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der ejes af den aktive ER-konfigurationsudbyder **(Litware, Inc.** i dette eksempel). Når du vælger **Rediger skabelon**, vil den eksisterende skabelon fra kladdeversionen af den underliggende ER-formatkonfiguration være tilgængelig for redigering.
 
@@ -273,14 +265,14 @@ Indstillingen **Rediger skabelon** er tilgængelig for den valgte skabelon. Denn
 
 1. Vælg det dokument, du vil bruge som skabelon, i arbejdsområdet til Styring af forretningsdokumenter.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate3.png)
+    ![Vælge et dokument på siden i arbejdsområdet Styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Vælg **Nyt dokument**, og rediger titlen på den redigerbare skabelon i feltet **Titel**, hvis det er nødvendigt. Teksten vil blive brugt til at navngive den ER-formatkonfiguration, der oprettes automatisk. Bemærk, at kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**), der vil indeholde den redigerede skabelon, automatisk markeres til at køre dette ER-format for den aktuelle bruger. Samtidig bruges den ikke-redigerede oprindelige skabelon fra ER-basisformatkonfigurationen til at køre dette ER-format for enhver anden bruger.
-4. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
-5. I feltet **Kommentar** skal du ændre kommentaren til den automatisk oprettede revision af den redigerbare skabelon.
-6. Vælg **OK** for at bekræfte påbegyndelse af redigeringsprocessen
+2. Vælg **Nyt dokument**, og rediger titlen på den redigerbare skabelon i feltet **Titel**, hvis det er nødvendigt. Teksten vil blive brugt til at navngive den ER-formatkonfiguration, der oprettes automatisk. Bemærk, at kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**), der vil indeholde den redigerede skabelon, automatisk markeres til at køre dette ER-format for den aktuelle bruger. Samtidig bruges den ikke-redigerede oprindelige skabelon fra ER-basisformatkonfigurationen til at køre dette ER-format for enhver anden bruger.
+3. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
+4. I feltet **Kommentar** skal du ændre kommentaren til den automatisk oprettede revision af den redigerbare skabelon.
+5. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate4.png)
+![Bekræfte starten af redigeringsprocessen for at oprette en ny skabelon](./media/BDM-Overview-EditingTemplate4.png)
 
 Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der er leveret af den aktuelle udbyder og en anden udbyder (Microsoft i dette eksempel), som ikke har nogen revision. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
 
@@ -290,21 +282,21 @@ Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-for
 2. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
 3. I feltet **Kommentar** skal du ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
 
-    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate5.png)
+    ![Redigering af en skabelon på siden i arbejdsområdet Styring af forretningsdokument](./media/BDM-Overview-EditingTemplate5.png)
 
-5. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
+4. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
 Siden **BDM-skabeloneditor** åbnes. Den valgte skabelon er tilgængelig for online redigering ved hjælp af Microsoft 365.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout1.png)
+![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Redigere en skabelon i Microsoft 365</a>
+### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Redigere en skabelon i Microsoft 365
 
 Du kan redigere skabelonen ved hjælp af Microsoft 365. I Office Online kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften fra **Normal** til **Fed**. Disse ændringer gemmes automatisk i den redigerbare skabelon, der er gemt i den primære skabelons lager (som standard Azure Blob Storage). Dette er konfigureret for ER-strukturen.
 
-![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout2.png)
+![Ændring af skrifttypen til fed i skabelonhovedet på siden til skabeloneditoren til Forretningsdokumentstyring](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name=""></a><a name="EditInOfficeDesktopApp">Redigere en skabelon i Office-skrivebordsprogrammet</a>
+### <a name="edit-a-template-in-the-office-desktop-application"></a><a name="EditInOfficeDesktopApp"></a>Redigere en skabelon i Office-skrivebordsprogrammet
 
 > [!NOTE]
 > Denne funktion er kun tilgængelig, når parameteren **SharePoint-dokumenttype** er konfigureret korrekt. Du kan finde flere oplysninger i [Konfigurere parametre](#SetupBdmParameters).
@@ -312,15 +304,15 @@ Du kan redigere skabelonen ved hjælp af Microsoft 365. I Office Online kan du f
 1. Vælg indstillingen **Åbn i skrivebordsapp** for at ændre skabelonen ved hjælp af funktionerne i Office-skrivebordsprogrammet (Excel i dette eksempel). Den redigerbare skabelon kopieres fra det permanente lager til det midlertidige lager, der er konfigureret i parametrene for forretningsdokumentstyring, som en SharePoint-mappe.
 2. Bekræft, at du vil åbne skabelonen fra det midlertidige fillager i Office-skrivebordsprogrammet Excel.
 
-    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout3.png)
+    ![Skabelon, der åbnes i et Excel-skrivebordsprogram](./media/BDM-Overview-EditingLayout3.png)
 
 3. Rediger skabelonen. Du kan du f.eks. ændre skrifttypen i feltprompterne i skabelonoverskriften ved at opdatere farven fra **Sort** til **Blå**.
 
-    ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout4.png)
+    ![Redigere skriftfarven i skabelonhovedet ved hjælp af Excel-skrivebordsprogrammet](./media/BDM-Overview-EditingLayout4.png)
 
 4. Vælg **Gem** i Excel-skrivebordsprogrammet for at gemme skabelonændringerne i det midlertidige lager.
 
-    ![Side med skabeloneditor til styring af forretningsdokumenter](./media/BDM-Overview-EditingLayout5.png)
+    ![Gemme ændringer på siden til skabeloneditoren til Forretningsdokumentstyring ved hjælp af Excel-programmet](./media/BDM-Overview-EditingLayout5.png)
 
 5. Luk Excel-skrivebordsprogrammet.
 6. Vælg **Synkroniser gemt kopi** for at synkronisere det midlertidige skabelonlager med det permanente skabelonlager.
@@ -340,7 +332,7 @@ Du kan redigere skabelonen ved hjælp af Microsoft 365. I Office Online kan du f
 
 Den opdaterede skabelon vises under fanen **Skabelon**. Bemærk, at status for den redigerede skabelon nu er **Kladde**, og at den aktuelle revision ikke længere er tom. Det betyder, at processen for redigering af denne skabelon er startet.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-EditingTemplate5.png)
+![Se den opdaterede skabelon på siden i arbejdsområdet Styring af forretningsdokument](./media/BDM-Overview-EditingTemplate5.png)
 
 ### <a name="test-the-modified-template"></a>Teste den ændrede skabelon 
 
@@ -353,7 +345,7 @@ Den opdaterede skabelon vises under fanen **Skabelon**. Bemærk, at status for d
     ![Side med indstillinger for udskriftsstyring](./media/BDM-Overview-TestRun1.png)
 
 6. Tryk på **Escape** for at lukke den aktuelle side.
-7. Vælg **Udskriv**, og klik derefter på **Valgt**.
+7. Vælg **Udskriv**, og vælg derefter **Valgt**.
 8. Download dokumentet, og åbn det i Excel-skrivebordsprogrammet.
 
 ![Siden med fritekstfakturaer](./media/BDM-Overview-TestRun2.png)
@@ -367,7 +359,7 @@ Den ændrede skabelon bruges til at generere rapporten med fritekstfaktura for d
 3. Hvis det er nødvendigt, skal du ændre navnet på den anden revision i feltet **Navn** og basere den på den aktuelt aktive første revision.
 4. I feltet **Kommentar** skal du efter behov ændre bemærkningen til den automatisk oprettede revision af den redigerbare skabelon.
 
-    ![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-AddRevision.png)
+    ![Oprette revideringer af skabelonen på siden i arbejdsområdet Styring af forretningsdokument](./media/BDM-Overview-AddRevision.png)
 
     Du har oprettet en ny revision af skabelonen, der er gemt i den permanente skabelons lager. Nu kan du fortsætte med at redigere skabelonen for den anden revision, der aktuelt er valgt som aktiv.
 
@@ -385,22 +377,25 @@ Den ændrede skabelon bruges til at generere rapporten med fritekstfaktura for d
 
 Når du redigerer skabelonen fra et ER-format, der ejes af den aktuelle aktive udbyder, får du mulighed for at tilbagekalde ændringer, der er introduceret i skabelonen.
 
-![Side med arbejdsområde til styring af forretningsdokumenter](./media/BDM-Overview-RevokeChanges.png)
+![Afvise ændringer af skabelonen på siden i arbejdsområdet Styring af forretningsdokument](./media/BDM-Overview-RevokeChanges.png)
 
 1. Vælg fanen **Skabelon** på siden **BDM-skabeloneditor**.
 2. Vælg **Fortryd**.
 3. Hvis du vælger **OK** for at annullere de ændringer, der er introduceret for skabelonen, erstattes den ændrede skabelon med den oprindelige skabelon, og alle ændringer fjernes. Når du tilbagekalder ændringer til skabelonen, kan du slette skabelonen. Vælg **Annuller** for at se andre indstillinger.
 
 ### <a name="publish-a-modified-template"></a>Udgive en ændret skabelon
+
 1. Vælg fanen **Udgiv** under fanen **Skabelon** på siden **BDM-skabeloneditor**.
 2. Hvis du vælger **OK** for at bekræfte udgivelsen, markeres kladdeversionen af det afledte **FTI-debitorrapport (GER) Kopi**-ER-format, som indeholder den ændrede skabelon, som fuldført. Den ændrede skabelon bliver tilgængelig for andre brugere. De fuldførte versioner af dette ER-format bevarer kun den sidst aktive revision af skabelonen. Andre revisioner vil blive slettet. Vælg **Annuller** for at se andre indstillinger.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for at åbne siden **BDM-skabeloneditor** i Finance and Operations, blev jeg sendt til Microsoft 365-websiden.
-Dette er et kendt problem med Microsoft 365-omdirigeringen. Dette sker, når du logger på Microsoft 365 første gang. Du kan løse dette problem ved at vælge knappen **Tilbage** i din browser for at gå tilbage.
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>Jeg valgte Rediger dokument, men i stedet for at åbne siden BDM-skabeloneditor i Finans, blev jeg sendt til Microsoft 365-websiden.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår, hvordan jeg kan redigere en skabelon ved at bruge Microsoft 365 i den første programsession, og hvordan jeg kan bruge skabelonen i den anden programsession, der justerer skabelonen, for at se, hvordan mine ændringer påvirker det genererede forretningsdokument. Kan jeg gøre dette ved hjælp af Office-skrivebordsprogrammet?
+Dette er et kendt problem i Microsoft 365-omdirigeringen. Dette sker, når du logger på Microsoft 365 for første gang. Du kan løse dette problem ved at vælge **Tilbage** i browseren for at vende tilbage til forrige side.
+
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Jeg forstår, hvordan jeg kan redigere en skabelon ved at bruge Microsoft 365 i den første programsession, og hvordan jeg kan bruge skabelonen i den anden programsession og justere skabelonen for at se, hvordan mine ændringer påvirker det genererede forretningsdokument. Kan jeg bruge Office-skrivebordsapplikationen på samme måde?
+
 Ja, det kan du. Vælg **Åbn i skrivebordsapp** i den første programsession. Skabelonen gemmes i det midlertidige fillager og åbnes i Office-skrivebordsprogrammet. Udfør derefter følgende trin for at se dine skabelonændringer i det genererede forretningsdokument:
 
 1. Foretag ændringer i skabelonen ved hjælp af Office-skrivebordsprogrammet.
@@ -408,7 +403,8 @@ Ja, det kan du. Vælg **Åbn i skrivebordsapp** i den første programsession. Sk
 3. Vælg **Synkroniser gemt kopi** på siden **BDM-skabeloneditor** i den første programsession.
 4. Udfør dette skabelon-ER-format i den anden programsession.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jeg får vist fejlen 'Værdi kan ikke være NULL. Parameternavn: externalId', når jeg vælger **Åbn i skrivebordsapp**. Hvordan kan jeg undgå dette? 
+### <a name="when-i-select-open-in-desktop-app-i-receive-the-following-error-message-value-cannot-be-null-parameter-name-externalid-how-do-i-work-around-this-issue"></a>Når jeg vælger Åbn i skrivebordsapp, modtager jeg følgende fejlmeddelelse: "Værdien kan ikke være null. Parameternavn: externalId." Hvordan retter jeg denne fejl?
+
 Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure AD-domæne, der er forskelligt fra det Azure AD-domæne, der blev brugt til at installere denne forekomst. Da SharePoint-tjenesten, der bruges til at gemme skabeloner for at gøre dem tilgængelige for redigering ved hjælp af Office-skrivebordsprogrammer, tilhører det samme domæne, har vi ingen adgangsrettigheder til SharePoint-tjenesten. Du kan løse dette problem ved at logge på den aktuelle forekomst ved hjælp af legitimationsoplysningerne for en bruger med det korrekte Azure AD-domæne.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
@@ -421,8 +417,165 @@ Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure 
 
 [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurer Elektronisk rapportering (ER) for at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Konfigurere elektronisk rapportering (ER) for at trække data ind i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Liste over ER-konfigurationer, der er udgivet i Finans for at understøtte konfigurerbare forretningsdokumenter
 
+[Listen](general-electronic-reporting.md#list-of-configurations) over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale lager](er-download-configurations-global-repo.md) for at gennemgå listen over ER-konfigurationer, der understøttes i øjeblikket. Du kan [filtrere](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) det globale lager for at gennemgå listen over ER-konfigurationer, der bruges til at understøtte forretningsdokumenter, der kan konfigureres.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Filtrering af indholdet af det globale lager på siden Konfigurationslager](./media/bdm-overview-filterglobalrepo.gif)
+
+Følgende tabel viser listen over ER-konfigurationer, der understøtter konfigurerbare forretningsdokumenter, og som er frigivet i Finans indtil december 2020.
+
+| Datamodelkonfiguration    | Formatkonfigurationer                           |
+|-----------------------------|-------------------------------------------------|
+| Fragtseddelmodel        | Fragtseddel (Excel)                          |
+|                             | Fragtseddel (Word)                           |
+| Model for oprindelsescertifikat | Oprindelsescertifikat (Excel)                   |
+|                             | Oprindelsescertifikat (Word)                    |
+| Fakturamodel               | Kundedebetnota og kreditnota (Excel)          |
+|                             | Kundedebetnota og kreditnota (Word)           |
+|                             | Fritekstfaktura (Excel)                       |
+|                             | Fritekstfaktura (Excel) (BH)                  |
+|                             | Fritekstfaktura (FR) (Excel)                  |
+|                             | Fritekstfaktura (LT) (Excel)                  |
+|                             | Fritekstfaktura (LV) (Excel)                  |
+|                             | Fritekstfaktura (PL) (Excel)                  |
+|                             | Fritekstfaktura (CZ) (Excel)                  |
+|                             | Fritekstfaktura (EE) (Excel)                  |
+|                             | Fritekstfaktura (HU) (Excel)                  |
+|                             | Fritekstfaktura (TH) (Excel)                  |
+|                             | Fritekstfaktura (Word)                        |
+|                             | Linjeelementer i projektkontrakt (Excel)             |
+|                             | Linjeelementer i projektkontrakt (CZ) (Excel)        |
+|                             | Linjeelementer i projektkontrakt (Excel) (BH)        |
+|                             | Linjeelementer i projektkontrakt (HU) (Excel)        |
+|                             | Linjeelementer i projektkontrakt (LT) (Excel)        |
+|                             | Linjeelementer i projektkontrakt (PL) (Excel)        |
+|                             | Linjeelementer i projektkontrakt (Word)              |
+|                             | Frigivelse af tilbageholdelse af projektkunde (Excel)      |
+|                             | Frigivelse af tilbageholdelse af projektkunde (CZ) (Excel) |
+|                             | Frigivelse af tilbageholdelse af projektkunde (HU) (Excel) |
+|                             | Frigivelse af tilbageholdelse af projektkunde (LT) (Excel) |
+|                             | Frigivelse af tilbageholdelse af projektkunde (PL) (Excel) |
+|                             | Frigivelse af tilbageholdelse af projektkunde (TH) (Excel) |
+|                             | Frigivelse af tilbageholdelse af projektkunde (Word)       |
+|                             | Projektfaktura (Excel)                         |
+|                             | Projektfaktura (Word)                          |
+|                             | Projektfaktura (AE) (Excel)                    |
+|                             | Projektfaktura (CZ) (Excel)                    |
+|                             | Projektfaktura (Excel) (BH)                    |
+|                             | Projektfaktura (HU) (Excel)                    |
+|                             | Projektfaktura (JP) (Excel)                    |
+|                             | Projektfaktura (LT) (Excel)                    |
+|                             | Projektfaktura (PL) (Excel)                    |
+|                             | Projektfaktura (TH) (Excel)                    |
+|                             | Fuld projektfaktura (MY) (Excel)               |
+|                             | Simpel projektfaktura (MY) (Excel)             |
+|                             | Projektstyringsfaktura (Excel)                  |
+|                             | Projektstyringsfaktura (CZ) (Excel)             |
+|                             | Projektstyringsfaktura (Excel) (BH)             |
+|                             | Projektstyringsfaktura (HU) (Excel)             |
+|                             | Projektstyringsfaktura (JP) (Excel)             |
+|                             | Projektstyringsfaktura (LT) (Excel)             |
+|                             | Projektstyringsfaktura (PL) (Excel)             |
+|                             | Projektstyringsfaktura (Word)                   |
+|                             | Indkøbsforskudsfaktura (Excel)                |
+|                             | Indkøbsforskudsfaktura (Word)                 |
+|                             | Faktura for salgsforskud (Excel)                   |
+|                             | Faktura for salgsforskud (Word)                    |
+|                             | Faktura for salgsforskud (PL) (Excel)              |
+|                             | Salgsfaktura (Excel)                           |
+|                             | Salgsfaktura (Excel) (BH)                      |
+|                             | Salgsfaktura (Excel) (CZ)                      |
+|                             | Salgsfaktura (Excel) (EE)                      |
+|                             | Salgsfaktura (Excel) (FR)                      |
+|                             | Salgsfaktura (Excel) (HU)                      |
+|                             | Salgsfaktura (Excel) (IN)                      |
+|                             | Salgsfaktura (Excel) (LT)                      |
+|                             | Salgsfaktura (Excel) (LV)                      |
+|                             | Salgsfaktura (Excel) (PL)                      |
+|                             | Salgsfaktura (Excel) (TH)                      |
+|                             | Salgsfaktura (Word)                            |
+|                             | TMS-handelsfaktura (Excel)                  |
+|                             | TMS-handelsfaktura (Word)                   |
+|                             | Dokument til kreditorfaktura (Excel)                 |
+|                             | Dokument til kreditorfaktura (CZ) (Excel)            |
+|                             | Dokument til kreditorfaktura (HU) (Excel)            |
+|                             | Dokument til kreditorfaktura (IN) (Excel)            |
+|                             | Dokument til kreditorfaktura (LT) (Excel)            |
+|                             | Dokument til kreditorfaktura (LV) (Excel)            |
+|                             | Dokument til kreditorfaktura (MY) (Excel)            |
+|                             | Dokument til kreditorfaktura (Word)                  |
+| Ordremodel                 | Aftalebekræftelse (Excel)                  |
+|                             | Aftalebekræftelse (Word)                   |
+|                             | Købsaftalebekræftelse (Excel)         |
+|                             | Købsaftalebekræftelse (Word)          |
+|                             | Indkøbsordre (Excel)                          |
+|                             | Indkøbsordre (CZ) (Excel)                     |
+|                             | Forespørgsel på indkøbsordre (CZ) (Excel)             |
+|                             | Indkøbsordre (HU) (Excel)                     |
+|                             | Forespørgsel på indkøbsordre (HU) (Excel)             |
+|                             | Indkøbsordre (Word)                           |
+|                             | Forespørgsel på indkøbsordre (Excel)                  |
+|                             | Forespørgsel på indkøbsordre (Word)                   |
+|                             | Salgsordrebekræftelse (Excel)                |
+|                             | Salgsordrebekræftelse (CZ) (Excel)           |
+|                             | Salgsordrebekræftelse (HU) (Excel)           |
+|                             | Salgsordrebekræftelse (Word)                 |
+| Pakkelistemodel          | Containerindhold (Excel)                      |
+|                             | Containerindhold (Word)                       |
+|                             | Lastliste (Excel)                               |
+|                             | Lastliste (Word)                                |
+|                             | Plukliste (Excel)                            |
+|                             | Plukliste (CZ) (Excel)                       |
+|                             | Plukliste (Word)                             |
+|                             | Produktionsplukliste (Excel)                    |
+|                             | Produktionsplukliste (Word)                     |
+|                             | Plukliste til forsendelse af last (Excel)             |
+|                             | Plukliste til forsendelse af last (Word)              |
+|                             | Plukliste til forsendelse (Excel)         |
+|                             | Plukliste til forsendelse (Word)          |
+|                             | Plukliste til forsendelse af bølge (Excel)             |
+|                             | Plukliste til forsendelse af bølge (Word)              |
+| Betalingsmodel               | Debitorbetalingsvejledning (Excel)                 |
+|                             | Debitorbetalingsvejledning (Word)                  |
+|                             | Kreditorbetalingsvejledning (Excel)                   |
+|                             | Kreditorbetalingsvejledning (Word)                    |
+| Tilbudsmodel             | Projekttilbud (Excel)                       |
+|                             | Projekttilbud (Word)                        |
+|                             | Tilbudsanmodning (Excel)                   |
+|                             | Tilbudsanmodning (acceptér) (Excel)          |
+|                             | Tilbudsanmodning (acceptér) (Word)           |
+|                             | Tilbudsanmodning (afvis) (Excel)          |
+|                             | Tilbudsanmodning (afvis) (Word)           |
+|                             | Tilbudsanmodning (returner) (Excel)          |
+|                             | Tilbudsanmodning (returner) (Word)           |
+|                             | Tilbudsanmodning (Word)                    |
+|                             | Salgstilbud (Excel)                         |
+|                             | Salgstilbud (CZ) (Excel)                    |
+|                             | Salgstilbud (HU) (Excel)                    |
+|                             | Salgstilbud (Word)                          |
+|                             | Bekræftelse af salgstilbud (Excel)            |
+|                             | Bekræftelse af salgstilbud (Word)             |
+| Afstemningsmodel        | Kundekontoudtog, eksternt (Excel)             |
+|                             | Kundekontoudtog, eksternt (CN) (Excel)        |
+|                             | Kundekontoudtog, eksternt (Word)              |
+|                             | Kundekontoudtog, Frankrig (Excel)          |
+| Påmindelsesmodel              | Rykkernota (Excel)                  |
+|                             | Rykkernota (CN) (Excel)             |
+|                             | Rykkernota (Word)                   |
+|                             | Debitorrentenota (Excel)                  |
+|                             | Debitorrentenota (Word)                   |
+| Fragtbrevmodel               | Lasttilbud (Excel)                             |
+|                             | Lasttilbud (Word)                              |
+|                             | Følgeseddel til indkøbsordre (Excel)             |
+|                             | Følgeseddel til indkøbsordre (CZ) (Excel)        |
+|                             | Følgeseddel til indkøbsordre (Word)              |
+|                             | Rute (Excel)                                   |
+|                             | Rute (Word)                                    |
+|                             | Salgsordrefølgeseddel (Excel)                |
+|                             | Salgsordrefølgeseddel (CZ) (Excel)           |
+|                             | Salgsordrefølgeseddel (LT) (Excel)           |
+|                             | Salgsordrefølgeseddel (PL) (Excel)           |
+|                             | Salgsordrefølgeseddel (Word)                 |

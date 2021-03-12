@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681322"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728083"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Opdatere strukturen for en forretningsdokumentskabelon 
 
@@ -56,7 +56,7 @@ Gennemfør følgende procedurer i [Oversigt over styring af forretningsdokumente
 5. Vælg **OK** for at oprette den nye skabelon.
 
     > [!NOTE]
-    > Hvis du endnu ikke er logget på Office Online, bliver du [omdirigeret til Office 365-logonsiden](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Hvis du vil vende tilbage til Finans-miljøet, skal du vælge knappen **Tilbage** i browseren.
+    > Hvis du endnu ikke er logget på Office Online, bliver du [omdirigeret til Office 365-logonsiden](er-business-document-management.md#frequently-asked-questions). Hvis du vil vende tilbage til Finans-miljøet, skal du vælge knappen **Tilbage** i browseren.
 
     Den nye skabelon åbnes til redigering i det integrerede Excel Online-kontrolelement på editorsiden for skabelonen.
 
@@ -106,6 +106,3 @@ Gennemfør følgende procedurer i [Oversigt over styring af forretningsdokumente
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Oversigt over styring af forretningsdokumenter](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

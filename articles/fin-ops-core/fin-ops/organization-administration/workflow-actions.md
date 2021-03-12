@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694281"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797596"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Handlinger i godkendelsesprocesser i arbejdsgang
 
@@ -141,6 +141,3 @@ Når en godkender anmoder om en ændring i et dokument, sendes dokumentet tilbag
 For eksempel har Søren sendt en udgiftsrapport på kr. 12.000, og dette dokument er tildelt til Mette. Hvis Mette anmoder om en ændring, sendes dokumentet tilbage til Søren.
 
 Søren kan sende udgiftsrapporten igen. Han kan udføre de ønskede ændringer først, eller han kan sende den oprindelige version af udgiftsrapporten igen. Hvis Søren sender udgiftsrapporten igen, sendes den til Henrik til godkendelse, fordi Henrik er den første godkender i godkendelsesprocessen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

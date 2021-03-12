@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0b55046e6c523398b4a30e674dc9f77bb6fedf3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ca9ddaed0c4aad6aeb3877384778d33f83e6e4aa
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693202"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796844"
 ---
 # <a name="record-templates-overview"></a>Oversigt over postskabeloner
 
@@ -37,6 +37,3 @@ Forestil dig f.eks., at du indtaster lejeoplysninger for et biludlejningsfirma, 
 > Du kan kun anvende skabeloner i de områder, du har adgang til. Men du får vist alle skabelontitler, der er synlige, når du opretter en ny post, og det samme gør andre brugere, hvis du opretter skabeloner, der er tilgængelige for alle brugere. Det bør du have med i dine overvejelser, når du navngiver skabeloner. Undgå f.eks. at bruge navne, der indeholder ord som "provision", hvis det er fortroligt, at nogle medarbejdere i virksomheden, har provisionsbaseret løn.
 
 Når en eller flere skabeloner, som du har adgang til, findes til en bestemt form, og du forsøger at oprette en ny post i formen, vises siden **Vælg en skabelon til**. Når du vælger en skabelon på listen, oprettes den nye post, som indeholder standardoplysninger, der er baseret på den skabelon, du har valgt. Hvis du ikke vil bruge skabeloner, når du opretter nye poster, skal du markere afkrydsningsfeltet **Spørg ikke igen** på siden **Vælg en skabelon for**. Hvis du vil have vist dialogboksen til valg af skabeloner igen, skal du højreklikke på en post, klikke på **Postoplysninger** og derefter klikke på **Vis skabelonvalg**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

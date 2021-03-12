@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53a2abad03ab9349834aaafbec572d17d96df9c1
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: b91963b9ccb5fb339b3c0fc41e8483628135c4c8
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693996"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797016"
 ---
 # <a name="organization-administration-home-page"></a>Startside for organisationsadministration
 
@@ -101,6 +101,3 @@ Med postskabeloner kan du hurtigere oprette poster. Du kan oprette en postskabel
 - [Konfigurere dokumentstyring](configure-document-management.md)
 - [Konfigurere og sende mail](configure-email.md)
 - [Data om dato/klokkeslæt og tidszoner](date-time-zones.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

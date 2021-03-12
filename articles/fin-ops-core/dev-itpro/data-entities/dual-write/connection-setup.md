@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 47c07dd0e2f311b61297340a48a5a31cb1de3903
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685659"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744847"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Vejledning i opsætning af dobbeltskrivning
 
@@ -36,7 +36,7 @@ ms.locfileid: "4685659"
 Du kan oprette en forbindelse med to skrivninger mellem et Finance and Operations-miljø og et Dataverse-miljø.
 
 + Et **Finance and Operations-miljø** leverer den underliggende platform for **Finance and Operations-apps** (f.eks Microsoft Dynamics 365 Finance. Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources).
-+ Et **Dataverse-miljø** giver den underliggende platform for **kundeengagementapps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing og Dynamics 365 Project Service Automation).
++ Et **Dataverse-miljø** giver den underliggende platform for **modelbaserede apps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing og Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
 > Modulet Human Resources i Dynamics 365 Finance understøtter dobbeltskrivningsforbindelser, men Dynamics 365 Human Resources-appen gør ikke.
@@ -138,6 +138,3 @@ Du kan finde links til et eksempel og en alternativ fremgangsmåde i afsnittet [
 Du kan finde et eksempel under [Aktivering af Debitorer V3 – tabeltilknytningen Kontakter](enable-entity-map.md#enable-table-map)
 
 Du kan finde en alternativ fremgangsmåde, der er baseret på datamængder i de enkelte enheder, der skal køre den første synkronisering, under [Overvejelser ved første synkronisering](initial-sync-guidance.md).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

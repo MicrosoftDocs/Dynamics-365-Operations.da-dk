@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5d2e678b01f052db29d5a1c47eae27d27cd04f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694182"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798641"
 ---
 # <a name="action-search"></a>Handlingssøgning
 
@@ -35,7 +35,7 @@ Sider viser primært kommandoer i handlingsruder, både standardhandlingsruden, 
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-De vigtigste tip er ikke længere tilgængelige, men er blevet erstattet af handlingssøgningsfunktionen. Med denne nye funktion kan du hurtigt søge efter og køre en knap fra alle synlige handlingsruder.
+De vigtigste tip er ikke længere tilgængelige, men er blevet erstattet af handlingssøgefunktionen. Med denne nye funktion kan du hurtigt søge efter og køre en knap fra alle synlige handlingsruder.
 
 ## <a name="using-action-search"></a>Brug af handlingssøgning
 
@@ -53,7 +53,7 @@ Du kan også starte handlingssøgning ved at trykke på Ctrl+/ eller Alt+Q. Tryk
 
 ## <a name="understanding-the-results-list"></a>Om listen over resultater
 
-Ofte skal du kende både placeringen af en knap og dens sammenhæng for fuldt ud at forstå formålet med denne knap. Derfor vises yderligere oplysninger for hvert element på listen over resultater for at hjælpe dig med at forstå, præcis hvilke knapper der vises på listen. Især vises knappens "sti". Stien kan indeholde etiketter til de følgende elementer i brugergrænsefladen, alt efter hvad der er relevant:
+Ofte skal du kende både placeringen af en knap og dens sammenhæng for fuldt ud at forstå formålet med denne knap. Derfor vises yderligere oplysninger på listen over resultater for at hjælpe dig med at forstå, præcist hvilke knapper der vises på listen. Især vises knappens "sti". Stien kan indeholde etiketter til de følgende elementer i brugergrænsefladen, alt efter hvad der er relevant:
 
 - Fanen Handlingsrude
 - Knapgruppe
@@ -75,6 +75,3 @@ I det forrige eksempel viste handlingssøgning resultater fra standardhandlingsr
 ## <a name="action-search-vs-navigation-search"></a>Handlingssøgning vs. navigationsøgning
 
 Hvor handlingssøgning har til formål at finde og udføre handlinger på en side, er der en separat søgemekanisme til at søge efter og navigere til sider. Du kan få flere oplysninger om denne funktion i artiklen [Navigationssøgning](navigation-search.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

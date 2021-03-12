@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688253"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744535"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -65,23 +65,23 @@ Udfør følgende trin for at aktivere sporingsloggen.
 
 1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
 2. På siden **Administration** skal du vælge **Systemindstillinger**.
-3. Under fanen **Tilpasning** i feltet **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
+3. Under fanen **Tilpasning** i kolonnen **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
 
 
 Udfør følgende trin for at få vist sporingsloggen.
 
 1. Log på den modeldrevede app i Dynamics 365, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
-2. Find sporingslogfilerne, hvor feltet **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+2. Find sporingslogfilerne, hvor kolonnen **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finance and Operations-apps
 
 **Påkrævet rolle for at få vist fejl**: Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Dataverse, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
 
-1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i enheden **DualWriteProjectConfiguration**. Åbn enheden **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
+1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i tabellen **DualWriteProjectConfiguration**. Åbn tabellen **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
 
     > [!TIP]
-    > En nem måde at åbne objektet på er at slå **Design**-tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
+    > Du kan nemt åbne tabellen ved at slå **Design**-tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne tabeldata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
 
 2. Indstil egenskaben **IsDebugMode** til **Ja** for projektet.
 3. Kør det scenario, der genererer fejl.
@@ -118,10 +118,7 @@ Nu kan du sammenkæde et nyt miljø.
 Når du opretter en salgsordre i Dynamics 365 Sales, kan klik på **+ Tilføj produkter** omdirigere dig til ordrelinjeformen i Dynamics 365 Project Operations. Du kan ikke få vist formularen for salgsordrelinjens **Oplysninger** på denne måde. Indstillingen for **Oplysninger** vises ikke på rullelisten under **Ny ordrelinje**. Dette sker, fordi Project Operations er installeret i dit miljø.
 
 Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge disse trin:
-1. Naviger til objektet **Ordrelinje**.
+1. Naviger til tabellen **Ordrelinje**.
 2. Find formularen **Oplysninger** under formularernoden. 
 3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**. 
 4. Ret sikkerhedsindstillingen til **Vis for alle**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

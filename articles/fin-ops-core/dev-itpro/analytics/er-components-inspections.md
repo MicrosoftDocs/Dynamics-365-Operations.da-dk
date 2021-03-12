@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688561"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797335"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
 [!include[banner](../includes/banner.md)]
 
-Alle konfigurerede komponenter i [ER-[format](general-electronic-reporting.md#FormatComponentOutbound) (elektronisk rapportering)](general-electronic-reporting.md) og [modeltilknytnings](general-electronic-reporting.md#data-model-and-model-mapping-components)komponenter kan [valideres ](er-fillable-excel.md#validate-an-er-format)på designtidspunktet. Under denne validering foretages en konsistenskontrol for at forhindre kørselsproblemer, der kan opstå, f.eks. kørselsfejl og reduktion af ydeevnen. For hvert enkelt problem, der findes, angives stien til et problematisk element. I forbindelse med nogle problemer findes der en automatisk rettelse.
+Alle konfigurerede komponenter i ER-[format](general-electronic-reporting.md#FormatComponentOutbound) [(elektronisk rapportering)](general-electronic-reporting.md) og [modeltilknytnings](general-electronic-reporting.md#data-model-and-model-mapping-components)komponenter kan [valideres ](er-fillable-excel.md#validate-an-er-format)på designtidspunktet. Under denne validering foretages en konsistenskontrol for at forhindre kørselsproblemer, der kan opstå, f.eks. kørselsfejl og reduktion af ydeevnen. For hvert enkelt problem, der findes, angiver kontrollen stien til et problematisk element. I forbindelse med nogle problemer findes der en automatisk rettelse.
 
 Som standard anvendes valideringen automatisk i følgende tilfælde for en ER-konfiguration, der indeholder de tidligere nævnte ER-komponenter:
 
@@ -69,7 +68,7 @@ Hvis du vil springe valideringen over, når konfigurationen importeres, skal du 
 2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
 3. Angiv indstillingen **Valider konfiguration efter import** til **Nej**.
 
-Hvis du vil springe valideringen over, når versions status ændres eller rebaseres, skal du følge disse trin.
+Hvis du vil springe valideringen over, når du ændrer eller rebaserer versions status, skal du følge disse trin.
 
 1. Gå til **Virksomhedsadministration \> Elektronisk rapportering \> Konfigurationer**.
 2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
@@ -101,7 +100,7 @@ I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du ka
 <td>Fejl</td>
 <td>
 <p>Et udtryk af typen &lt;type&gt; kan ikke konverteres til et felt af typen &lt;type&gt;.</p>
-<p><b>Kørselsfejl:</b> Undtagelsestype</p>
+<p><b>Kørselsfejl:</b> Undtagelse for type</p>
 </td>
 </tr>
 <tr>
@@ -278,7 +277,7 @@ Det er ikke muligt at løse dette problem automatisk.
 
 #### <a name="option-1"></a>Indstilling 1
 
-Opdater formatstrukturen ved at ændre datatypen for formatelementet **Numerisk**, så den svarer til datatypen for det udtryk, der er konfigureret til bindingen af det pågældende element. I det foregående eksempel skal værdien **Numerisk type** for formatelementet **X** ændres tilbage til **Heltal**.
+Opdater formatstrukturen ved at ændre datatypen for formatelementet **Numerisk**, så den svarer til datatypen for det udtryk, du har konfigureret til bindingen af det pågældende element. I det foregående eksempel skal værdien **Numerisk type** for formatelementet **X** ændres tilbage til **Heltal**.
 
 #### <a name="option-2"></a>Indstilling 2
 
@@ -454,7 +453,7 @@ Skift udtrykket for datakilden **Vendor.FilteredTrans** fra `WHERE(Trans, Trans.
 
 #### <a name="option-2"></a>Indstilling 2
 
-Rediger værdien i feltet **Udfør** for datakilden **JoinedList** fra **Forespørgsel** til **I hukommelsen**. Det anbefales ikke, at du ændrer værdien for en tabel, der har en stor mængde data (transaktionstabel), fordi alle poster hentes, og joinforbindelse sker i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne. Der vises en valideringsadvarsel, som oplyser dig om denne risiko.
+Rediger værdien i feltet **Udfør** for datakilden **JoinedList** fra **Forespørgsel** til **I hukommelsen**. Det anbefales ikke, at du ændrer værdien for en tabel, der har en stor mængde data (transaktionstabel), fordi alle poster hentes, og joinforbindelse foregår i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne. Der vises en valideringsadvarsel, som oplyser dig om denne risiko.
 
 ## <a name="preferability-of-filter-vs-where-function"></a><a id="i7"></a>Funktionen FILTER foretrækkes frem for WHERE
 
@@ -489,11 +488,11 @@ Du kan også vælge rækken for en enkelt advarsel i gitteret og derefter vælge
 
 ### <a name="manual-resolution"></a>Manuel løsning
 
-Du kan manuelt justere udtrykkene for alle de datakilder, der nævnes i valideringsgitteret, ved at erstatte funktionen **WHERE** med funktionen **FILTER**.
+Du kan manuelt justere udtrykkene for alle datakilderne i valideringsgitteret ved at erstatte funktionen **WHERE** med funktionen **FILTER**.
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>Funktionen ALLITEMSQUERY foretrækkes frem for ALLITEMS
 
-De indbyggede ER-funktioner [ALLITEMS](er-functions-list-allitems.md) og [ALLITEMSQUERY](er-functions-list-allitemsquery.md) bruges til at hente en flad værdi i **Postliste**, der består af en liste over poster, som repræsenterer alle elementer, som svarer til den angivne sti. ER kontrollerer, om der kan oprettes et direkte SQL-kald til en datakilde, der refereres til i **ALLITEMS**-funktionen. Hvis der ikke kan oprettes et direkte kald, vises der en valideringsadvarsel i ER-modeltilknytningsdesigneren. Den meddelelse, du modtager, anbefaler, at du bruger funktionen **ALLITEMSQUERY** i stedet for funktionen **ALLITEMS** for at øge effektiviteten.
+De indbyggede ER-funktioner [ALLITEMS](er-functions-list-allitems.md) og [ALLITEMSQUERY](er-functions-list-allitemsquery.md) returnerer en flad værdi i **Postliste**, der består af en liste over poster, som repræsenterer alle elementer, som svarer til den angivne sti. ER kontrollerer, om der kan oprettes et direkte SQL-kald til en datakilde, der refereres til i **ALLITEMS**-funktionen. Hvis der ikke kan oprettes et direkte kald, vises der en valideringsadvarsel i ER-modeltilknytningsdesigneren. Den meddelelse, du modtager, anbefaler, at du bruger funktionen **ALLITEMSQUERY** i stedet for funktionen **ALLITEMS** for at øge effektiviteten.
 
 Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
@@ -573,11 +572,11 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
     ![Validere de formatelementer, du har bundet til datakilder på siden Formatdesigner](./media/er-components-inspections-09c.png)
 
-16. Bemærk, at der opstår en valideringsfejl. Meddelelsen angiver, at der muligvis udløses en fejl for de konfigurerede formatkomponenter **Sætning\\Part\\Name** og **Sætning\\Part\\AccountNum** på kørselstidspunktet, hvis listen **model.Kreditor** er tom.
+16. Bemærk, at der opstår en valideringsfejl. Meddelelsen angiver, at der muligvis udløses en fejl for de konfigurerede formatkomponenter **Sætning\\Part\\Name** og **Sætning\\Part\\AccountNum** på kørselstidspunktet, hvis listen `model.Vendor` er tom.
 
     ![Valideringsfejl, der giver besked om en mulig fejl i de konfigurerede formatkompontenter](./media/er-components-inspections-09d.png)
 
-I følgende illustration vises den kørselsfejl, der opstår, hvis du ignorerer advarslen. Vælg **Kør** for at køre formatet, og vælg kontonummeret for en kreditor, der ikke findes. Da den ønskede kreditor ikke findes, vil liste **model.Vendor** være tom (dvs. at den ikke indeholder nogen poster).
+I følgende illustration vises den kørselsfejl, der opstår, hvis du ignorerer advarslen. Vælg **Kør** for at køre formatet, og vælg kontonummeret for en kreditor, der ikke findes. Da den ønskede kreditor ikke findes, vil listen `model.Vendor` være tom (dvs. at den ikke indeholder nogen poster).
 
 ![Kørselsfejl, fordi det opstod under kørsel af formattilknytningen](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ Du kan vælge **Ophæv binding** for den valgte række i gitteret under fanen **
 
 #### <a name="option-1"></a>Indstilling 1
 
-Du kan binde formatelementet **Sætning\\Part\\Name** til datakildeelementet **model.Vendor**. På kørselstidspunktet kalder denne binding først datakilden **model.Vendor**. Når **model.Vendor** returnerer en tom postliste, køres de indlejrede formatelementer ikke. Derfor forekommer der ingen valideringsadvarsler for denne formatkonfiguration.
+Du kan binde formatelementet **Sætning\\Part\\Name** til datakildeelementet `model.Vendor`. På kørselstidspunktet kalder denne binding først datakilden `model.Vendor`. Når `model.Vendor` returnerer en tom postliste, køres de indlejrede formatelementer ikke. Derfor forekommer der ingen valideringsadvarsler for denne formatkonfiguration.
 
 ![Binde formatelementet til datakildeelementet på siden Formatdesigner](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Indstilling 2
 
-Skift bindingen for formatelementet **Sætning\\Part\\Name** fra `model.Vendor.Name` til `FIRSTORNULL(model.Vendor).Name`. Den opdaterede binding konverterer betinget den første post i datakilden **model.Vendor** typen **Postliste** til en ny datakilde af typen **Post**. Den nye datakilde indeholder det samme sæt felter.
+Skift bindingen for formatelementet **Sætning\\Part\\Name** fra `model.Vendor.Name` til `FIRSTORNULL(model.Vendor).Name`. Den opdaterede binding konverterer betinget den første post i datakilden `model.Vendor` typen **Postliste** til en ny datakilde af typen **Post**. Den nye datakilde indeholder det samme sæt felter.
 
-- Hvis mindst én post er tilgængelig i datakilden **model.Vendor**, udfyldes felterne i den pågældende post med værdierne fra felterne i den første post i datakilden **model.Vendor**. I dette tilfælde returnerer den opdaterede binding kreditorens navn.
+- Hvis mindst én post er tilgængelig i datakilden `model.Vendor`, udfyldes felterne i den pågældende post med værdierne fra felterne i den første post i datakilden `model.Vendor`. I dette tilfælde returnerer den opdaterede binding kreditorens navn.
 - Ellers udfyldes alle felter i den post, der oprettes, med standardværdien for datatypen i det pågældende felt. I dette tilfælde returneres den tomme streng som standardværdi for datatypen **Streng**.
 
 Derfor forekommer der ingen valideringsadvarsler for **Sætning\\Part\\Name**, når det er bundet til udtrykket `FIRSTORNULL(model.Vendor).Name`.
@@ -606,13 +605,13 @@ Derfor forekommer der ingen valideringsadvarsler for **Sætning\\Part\\Name**, n
 
 #### <a name="option-3"></a>Indstilling 3
 
-Hvis du eksplicit vil angive de data, der er angivet i et genereret dokument, når datakilden **model.Vendor** af typen **Postliste** ikke returnerer poster (teksten **Ikke tilgængelig** i dette eksempel), skal du ændre bindingen for formatelementet **Sætning\\Part\\Name** fra `model.Vendor.Name` til `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Du kan også bruge udtrykket `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
+Hvis du eksplicit vil angive de data, der er angivet i et genereret dokument, når datakilden `model.Vendor` af typen **Postliste** ikke returnerer poster (teksten **Ikke tilgængelig** i dette eksempel), skal du ændre bindingen af formatelementet **Sætning\\Part\\Name** fra `model.Vendor.Name` til `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Du kan også bruge udtrykket `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>Yderligere overvejelser
 
-I inspektionen får du også en advarsel om et andet potentielt problem. Efterhånden som du binder formatelementerne **Sætning\\Part\\Name** og **Sætning\\Part\\AccountNum** til de rette felter for datakilden **model.Vendor** af typen **Postliste**, køres disse bindinger og henter værdierne for de rette felter for den første i datakilden **model.Vendor**, hvis denne liste ikke er tom.
+I inspektionen får du også en advarsel om et andet potentielt problem. Efterhånden som du binder formatelementerne **Sætning\\Part\\Name** og **Sætning\\Part\\AccountNum** til de rette felter for datakilden `model.Vendor` af typen **Postliste**, køres disse bindinger og henter værdierne for de rette felter for den første i datakilden `model.Vendor`, hvis denne liste ikke er tom.
 
-Da du ikke har bundet formatelementet **Sætning\\Part** til datakilden **model.Vendor**, vil elementet **Sætning\\Part** ikke blive gentager for hver post i datakilden **model.Vendor** under formatudførelse. Et genereret dokument vil i stedet kun blive udfyldt med oplysninger fra den første post på listen over poster, hvis den pågældende liste indeholder flere poster. Der kan derfor være et problem, hvis formatet er beregnet til at udfylde et genereret dokument med oplysninger om alle kreditorer fra datakilden **model.Vendor**. Du kan løse dette problem ved at binde elementet **Sætning\\Part** til datakilden **model.Vendor**.
+Da du ikke har bundet formatelementet **Sætning\\Part** til datakilden `model.Vendor`, vil elementet **Sætning\\Part** ikke blive gentager for hver post i datakilden `model.Vendor` under formatudførelse. Et genereret dokument vil i stedet kun blive udfyldt med oplysninger fra den første post på listen over poster, hvis den pågældende liste indeholder flere poster. Der kan derfor være et problem, hvis formatet er beregnet til at udfylde et genereret dokument med oplysninger om alle kreditorer fra datakilden `model.Vendor`. Du kan løse dette problem ved at binde elementet **Sætning\\Part** til datakilden `model.Vendor`.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>Mulighed for udførelse af et udtryk med FILTER-funktion (cachelagring)
 
@@ -699,7 +698,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
 14. Bind formatelementerne til de angivne datakilder på følgende måde:
 
-    - Bind formatelementet **Sætning\\Part** til datakildeelementet **model.Vendor**.
+    - Bind formatelementet **Sætning\\Part** til datakildeelementet `model.Vendor`.
     - Bind formatelementet **Sætning\\Part\\Name** til datakildefeltet **model.Vendor.Name**.
     - Bind formatelementet **Sætning\\Part\\AccountNum** til datakildefeltet **model.Vendor.AccountNumber**.
 
@@ -813,6 +812,3 @@ Hvis du vil vide, hvordan formatstrukturen kan synkroniseres med en ER-skabelon 
 [Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 
 [Oversigt over styring af forretningsdokumenter](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

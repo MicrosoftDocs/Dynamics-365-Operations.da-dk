@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df30e403c4b1c7d3abc88ae98c73d797bceef02
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693106"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797253"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Ansætte eksisterende medarbejdere gennem rekruttering
 
@@ -40,6 +40,3 @@ Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbe
 9. Klik på Skift Stilling.
     * Du kan også ændre kompensationen på nuværende tidspunkt. Hvis du ikke tildeler kompensation på dette tidspunkt, kan du ændre den ved at gå til arbejderformen, vælge fanen Kompensation og vælge "Fast Plan". Når du vælger "Skift stilling", opdateres statussen på ansøgning til "Ansat".  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

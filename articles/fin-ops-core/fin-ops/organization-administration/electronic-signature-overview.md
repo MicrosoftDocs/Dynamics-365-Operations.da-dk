@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df7f842477ddfb88662f37ae311215f08c6b0173
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 051bb023d3456dae0be30de3897b282c2d50c5af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693178"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797622"
 ---
 # <a name="electronic-signatures-overview"></a>Oversigt over elektroniske signaturer
 
@@ -109,6 +109,3 @@ Udfør disse trin for at angive godkendere.
 1. På siden **Indstillinger** under fanen **Konti** skal du klikke på **Angiv godkender**.
 2. Vælg id'et for den bruger, som skal signere for en anden brugers ændringer, i feltet **Bruger-id for godkender**.
 3. Vælg id'et for den bruger, hvis ændringer der skal signeres for, i feltet **Signer for bruger-id**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1925c23891a637ba9e9666538323274819692a06
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6fe6da2575b7de866de614ad399c8ad5c0110d9a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692912"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798493"
 ---
 # <a name="client-faq"></a>Ofte stillede spørgsmål om klienter
 
@@ -54,6 +54,3 @@ Indstillingen **Vis detaljer** er tilgængelig på flere måder:
 
 - Hvis et kontrolelement har funktionaliteten **Vis detaljer**, og hvis kontrolelementet har en værdi, vises denne værdi som et hyperlink. Du kan klikke på hyperlinket for at åbne en side, der indeholder yderligere oplysninger.
 - **Vis detaljer** er også en indstilling i genvejsmenuer. Du kan finde flere oplysninger om, hvornår genvejsmenuer vises, når du højreklikker, i det forrige afsnit.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

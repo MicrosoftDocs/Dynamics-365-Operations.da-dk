@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 61c286391d83d70036dbed7eae6755cdefce5f2e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693661"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798064"
 ---
 # <a name="change-the-banner-or-logo"></a>Skifte banner eller logo
 
@@ -39,6 +39,3 @@ Følgende procedure viser de trin, som systemadministratorer kan bruge til at op
 6. Gå til **Navigationsrude > Moduler > Generelt > Generelt > Standarddashboard**. Du kan se det nye bannerbillede eller logobillede på dashboardet.  
     
     Du skal muligvis ændre dit firma ved hjælp af firmavælgeren til det firma, du har overført banneret til.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

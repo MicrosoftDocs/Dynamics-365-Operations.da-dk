@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f2fc88ed0c0f4dbec55f8ca251cca3d071760b55
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685479"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744509"
 ---
 # <a name="integrated-vendor-master"></a>Integreret kreditormaster
 
@@ -33,17 +33,17 @@ ms.locfileid: "4685479"
 
 
 
-Termen *Kreditor* henviser til en leverandørorganisation eller en solovirksomhed, der leverer varer eller ydelser til en virksomhed. Selvom *kreditor* er et etableret koncept i Microsoft Dynamics 365 Supply Chain Management, findes der ikke et kreditorkoncept i andre modelbaserede apps i Dynamics 365. Du kan dog også overbelaste **Konto/Kontaktperson**-enheden, når du vil gemme kreditoroplysninger. Den integrerede kreditormaster introducerer et eksplicit leverandørbegreb i modelbaserede apps i Dynamics 365. Du kan enten bruge det nye leverandørdesign eller gemme leverandørdata i enheden **Konto/Kontaktperson**. Dobbeltskrivning understøtter begge metoder.
+Termen *Kreditor* henviser til en leverandørorganisation eller en solovirksomhed, der leverer varer eller ydelser til en virksomhed. Selvom *kreditor* er et etableret koncept i Microsoft Dynamics 365 Supply Chain Management, findes der ikke et kreditorkoncept i andre modelbaserede apps i Dynamics 365. Du kan dog også overbelaste tabellen **Konto/Kontaktperson**, når du vil gemme kreditoroplysninger. Den integrerede kreditormaster introducerer et eksplicit leverandørbegreb i modelbaserede apps i Dynamics 365. Du kan enten bruge det nye kreditordesign eller gemme kreditordata i tabellen **Konto/Kontaktperson**. Dobbeltskrivning understøtter begge metoder.
 
 I begge fremgangsmåder integreres leverandørdataene mellem Dynamics 365 Supply Chain Management-, Dynamics 365 Sales-, Dynamics 365 Field Service- og Power Apps-portaler. I Supply Chain Management er data tilgængelige i arbejdsgange, f.eks. indkøbsrekvisitioner og indkøbsordrer.
 
 ## <a name="vendor-data-flow"></a>Kreditordataflow
 
-Hvis du ikke vil gemme leverandørdata i enheden **Konto/Kontaktperson** i Dataverse, kan du bruge det nye leverandørdesign.
+Hvis du ikke vil gemme kreditordata i tabellen **Konto/Kontaktperson** i Dataverse, kan du bruge det nye kreditordesign.
 
 ![Kreditordataflow](media/dual-write-vendor-data-flow.png)
 
-Hvis du fortsat vil gemme leverandørdata i enheden **Konto/Kontaktperson**, kan du bruge det udvidede leverandørdesign. Hvis du vil bruge det udvidede leverandørdesign, skal du konfigurere leverandørarbejdsgangene i Dobbeltskrivnings-løsningspakken. Du kan finde flere oplysninger i [Skifte mellem kreditordesign](vendor-switch.md).
+Hvis du fortsat vil gemme kreditordata i tabellen **Konto/Kontaktperson**, kan du bruge det udvidede kreditordesign. Hvis du vil bruge det udvidede leverandørdesign, skal du konfigurere leverandørarbejdsgangene i Dobbeltskrivnings-løsningspakken. Du kan finde flere oplysninger i [Skifte mellem kreditordesign](vendor-switch.md).
 
 ![Udvidet kreditordataflow](media/dual-write-vendor-detail.jpg)
 
@@ -54,9 +54,9 @@ Hvis du fortsat vil gemme leverandørdata i enheden **Konto/Kontaktperson**, kan
 
 Kreditordata indeholder alle oplysninger om kreditoren, f.eks kreditorens gruppe, adresser, kontaktoplysninger, betalingsprofil og fakturaprofil. En samling af tabeltilknytninger arbejder sammen under interaktion med kreditordata, som vist i følgende tabel.
 
-Finance and Operations-apps | Andre Dynamics 365-apps     | Beskrivelse
+Finance and Operations-apps | Andre Dynamics 365-apps     | Betegnelse
 ----------------------------|-----------------------------|------------
-Kreditor V2                   | Konto                     | Virksomheder, der bruger kontoenheden til at gemme kreditoroplysninger, kan fortsætte med at bruge den på samme måde. De kan også drage fordel af den eksplicitte kreditorfunktionalitet, der leveres med integrationen af Finance and Operations-apps.
+Kreditor V2                   | Konto                     | Virksomheder, der bruger tabellen Konto til at gemme kreditoroplysninger, kan fortsætte med at bruge den på samme måde. De kan også drage fordel af den eksplicitte kreditorfunktionalitet, der leveres med integrationen af Finance and Operations-apps.
 Kreditor V2                   | Msdyn\_vendors              | Virksomheder, der bruger en tilpasset løsning til kreditorer, kan drage fordel af det standardkoncept for kreditorer, der introduceres i Dataverse, på grund af integrationen af Finance and Operations-apps. 
 Kreditorgrupper               | msdyn\_vendorgroups         | Denne skabelon synkroniserer oplysninger om leverandørgrupper.
 Kreditorbetalingsmetode       | msdyn\_vendorpaymentmethods | Denne skabelon synkroniserer oplysninger om leverandørers betalingsmetoder.
@@ -75,6 +75,3 @@ Foranstillede navne                | msdyn\_nameaffixes          | Denne [skabel
 [!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
 
 [!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

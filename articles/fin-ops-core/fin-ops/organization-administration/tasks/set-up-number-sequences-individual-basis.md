@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf06046c772cd128f5600ed319cc3d0d4457b07f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694709"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796624"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere individuelle nummerserier
 
@@ -40,6 +40,3 @@ Dette emne beskriver, hvordan du konfigurerer nummerserier på individuel basis.
 8. Udvid sektionen **Generelt**. Angiv, om nummerserien er manuel, og om den er fortløbende eller ej, i oversigtspanelet Generelt. Angiv dernæst det laveste og det højeste nummer, der kan bruges i nummerserien. Det anbefales, at man ikke ændrer en ikke-fortløbende nummerserie til en fortløbende nummerserie. Nummerserien vil ikke blive reelt kontinuerlig. Denne ændring kan også medføre fejl med dubletnøgler i databasen. Fortløbende nummerserier har desuden en større effekt på ydeevnen.   
 9. Klik på **Gem**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

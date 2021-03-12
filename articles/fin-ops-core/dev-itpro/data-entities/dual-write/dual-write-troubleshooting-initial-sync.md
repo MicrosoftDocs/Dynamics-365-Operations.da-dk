@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683547"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744631"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Foretage fejlfinding af problemer under den første synkronisering
 
@@ -98,7 +98,7 @@ Du kan få vist en fejlmeddelelse, hvis nogen af dine tilknytninger har selvrefe
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Løse fejl i tabeltilknytningen V2–to–msdyn_vendors for kreditorer
 
-Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V2** til **msdyn\_vendors**, hvis tabellerne har eksisterende rækker med værdier i felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**. Disse fejl skyldes, at **InvoiceVendorAccountNumber** er et selvrefererende felt, og at **PrimaryContactPersonId** er en cirkulær reference i kreditortilknytningen.
+Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V2** til **msdyn\_vendors**, hvis tabellerne har eksisterende rækker med værdier i kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**. Disse fejl skyldes, at **InvoiceVendorAccountNumber** er en selvrefererende kolonne, og at **PrimaryContactPersonId** er en cirkulær reference i kreditortilknytningen.
 
 De fejlmeddelelser, du modtager, har følgende form.
 
@@ -109,26 +109,26 @@ Her er nogle eksempler:
 - *GUID for feltet kunne ikke fortolkes: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Opslaget blev ikke fundet: 000056. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *GUID for feltet kunne ikke fortolkes: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Opslaget blev ikke fundet: V24-1. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Hvis der er rækker i kreditorenheden med værdier i felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, skal du følge disse trin for at fuldføre den første synkronisering.
+Hvis der er rækker i kreditortabellen med værdier i kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, skal du følge disse trin for at fuldføre den første synkronisering.
 
-1. I Finance and Operations-appen skal du slette felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilknytningen og derefter gemme tilknytningen.
+1. I Finance and Operations-appen skal du slette kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilknytningen og derefter gemme tilknytningen.
 
     1. Gå til siden dobbeltskrivning-tilknytning for **Kreditorer V2 (msdyn\_vendors)**, og vælg fanen **Tabeltilknytninger**. I venstre filter skal du vælge **Finance and Operations apps.Vendors V2**. I højre filter skal du vælge **Sales.Vendor**.
-    2. Søg efter **primarycontactperson** for at finde kildefeltet **PrimaryContactPersonId**.
+    2. Søg efter **primarycontactperson** for at finde kildekolonnen **PrimaryContactPersonId**.
     3. Vælg **Handlinger**, og vælg derefter **Slet**.
 
-        ![Slette feltet PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Sletning af kolonnen PrimaryContactPersonId](media/vend_selfref3.png)
 
-    4. Gentag disse trin for at slette feltet **InvoiceVendorAccountNumber**.
+    4. Gentag disse trin for at slette kolonnen **InvoiceVendorAccountNumber**.
 
-        ![Sletning af feltet InvoiceVendorAccountNumber.](media/vend-selfref4.png)
+        ![Sletning af kolonnen InvoiceVendorAccountNumber](media/vend-selfref4.png)
 
     5. Gem ændringerne i tilknytningen.
 
-2. Slå ændringssporing fra for **Kreditorer V2**-enheden.
+2. Slå ændringssporing fra for tabellen **Kreditorer V2**.
 
     1. I arbejdsområdet **Datastyring** skal du markere feltet **Datatabeller**.
-    2. Vælg enheden **Kreditorer V2**.
+    2. Vælg tabellen **Kreditorer V2**.
     3. I handlingsruden skal du vælge **Indstillinger** og derefter vælge **Ændringssporing**.
 
         ![Valg af indstillingen Ændringssporing](media/selfref_options.png)
@@ -138,14 +138,14 @@ Hvis der er rækker i kreditorenheden med værdier i felterne **PrimaryContactPe
         ![Valg af Deaktiver ændringssporing](media/selfref_tracking.png)
 
 3. Kør den første synkronisering for tilknytningen **Kreditorer V2 (msdyn\_vendors)**. Den første synkronisering skal køres uden fejl.
-4. Kør den første synkronisering for tilknytningen **CDS kontakter V2 (kontakter)**. Du skal synkronisere denne tilknytning, hvis du vil synkronisere feltet for den primære kontakt på kreditorenheden, fordi den første synkronisering også skal udføres for kontaktrækkerne.
-5. Føj felterne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** tilbage til tilknytningen **Kreditorer V2 (msdyn\_vendors)**, og gem tilknytningen.
+4. Kør den første synkronisering for tilknytningen **CDS kontakter V2 (kontakter)**. Du skal synkronisere denne tilknytning, hvis du vil synkronisere kolonnen med den primære kontakt i kreditortabellen, fordi den første synkronisering også skal udføres for kontaktrækkerne.
+5. Føj kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** tilbage til tilknytningen **Kreditorer V2 (msdyn\_vendors)**, og gem tilknytningen.
 6. Kør den første synkronisering igen for tilknytningen **Kreditorer V2 (msdyn\_vendors)**. Alle rækker synkroniseres, fordi ændringssporing er deaktiveret.
-7. Slå ændringssporing til igen for **Kreditorer V2**-enheden.
+7. Slå ændringssporing til igen for tabellen **Kreditorer V2**.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Løse fejl i tabeltilknytningen V3–to–Accounts for debitorer
 
-Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V3** til **Konti**, hvis tabellerne har eksisterende rækker med værdier i felterne **ContactPersonId** og **InvoiceAccount**. Disse fejl opstår, fordi **InvoiceAccount** er et selvrefererende felt, og at **ContactPersonID** er en cirkulær reference i kreditortilknytningen.
+Du kan støde ind i indledende synkroniseringsfejl for tilknytning af **Kreditorer V3** til **Konti**, hvis tabellerne har eksisterende rækker med værdier i kolonnerne **ContactPersonId** og **InvoiceAccount**. Disse fejl opstår, fordi **InvoiceAccount** er en selvrefererende kolonne, og **ContactPersonID** er en cirkulær reference i kreditortilknytningen.
 
 De fejlmeddelelser, du modtager, har følgende form.
 
@@ -156,26 +156,26 @@ Her er nogle eksempler:
 - *GUID for feltet kunne ikke fortolkes: primarycontactid.msdyn\_contactpersonid. Opslaget blev ikke fundet: 000056. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *GUID for feltet kunne ikke fortolkes: msdyn\_billingaccount.accountnumber. Opslaget blev ikke fundet: 1206-1. Prøv følgende URL-adresse(r) for at kontrollere, om referencedataene findes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Hvis der er rækker i debitorenheden med værdier i felterne **ContactPersonID** og **InvoiceAccount**, skal du følge disse trin for at fuldføre den første synkronisering. Du kan bruge denne fremgangsmåde til alle indbyggede tabeller, f.eks. **Konti** og **Kontakter**.
+Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonID** og **InvoiceAccount**, skal du følge disse trin for at fuldføre den første synkronisering. Du kan bruge denne fremgangsmåde til alle indbyggede tabeller, f.eks. **Konti** og **Kontakter**.
 
-1. I Finance and Operations-appen skal du slette felterne **ContactPersonID** og **InvoiceAccount** fra tilknytningen **Debitorer V3 (konti)** og derefter gemme tilknytningen.
+1. I Finance and Operations-appen skal du slette kolonnerne **ContactPersonID** og **InvoiceAccount** fra tilknytningen **Debitorer V3 (konti)** og derefter gemme tilknytningen.
 
     1. Gå til siden med dobbeltskrivning-tilknytning for **Debitorer V3 (konti)**, og vælg fanen **Tabeltilknytninger**. I venstre filter skal du vælge **Finance and Operations apps.Customers V3**. I højre filter skal du vælge **Dataverse.Account**.
-    2. Søg efter **contactperson** for at finde kildefeltet **ContactPersonID**.
+    2. Søg efter **contactperson** for at finde kildekolonnen **ContactPersonID**.
     3. Vælg **Handlinger**, og vælg derefter **Slet**.
 
-        ![Sletning af feltet ContactPersonID](media/cust_selfref3.png)
+        ![Sletning af kolonnen ContactPersonID](media/cust_selfref3.png)
 
-    4. Gentag disse trin for at slette feltet **InvoiceAccount**.
+    4. Gentag disse trin for at slette kolonnen **InvoiceAccount**.
 
-        ![Sletning af feltet InvoiceAccount](media/cust_selfref4.png)
+        ![Sletning af kolonnen InvoiceAccount](media/cust_selfref4.png)
 
     5. Gem ændringerne i tilknytningen.
 
-2. Slå ændringssporing fra for **Debitorer V3**-enheden.
+2. Slå ændringssporing fra for tabellen **Debitorer V3**.
 
     1. I arbejdsområdet **Datastyring** skal du markere feltet **Datatabeller**.
-    2. Vælg enheden **Debitorer V3**.
+    2. Vælg tabellen **Debitorer V3**.
     3. I handlingsruden skal du vælge **Indstillinger** og derefter vælge **Ændringssporing**.
 
         ![Valg af indstillingen Ændringssporing](media/selfref_options.png)
@@ -190,7 +190,7 @@ Hvis der er rækker i debitorenheden med værdier i felterne **ContactPersonID**
     > [!NOTE]
     > Der er to tilknytninger med samme navn. Vælg tilknytningen med følgende beskrivelse under fanen **Detaljer**: **Dobbeltskrivningsskabelon for synkronisering mellem FO.CDS Kreditorkontakter V2 til CDS.Contacts. Kræver ny pakke \[Dynamics365SupplyChainExtended\].**
 
-5. Tilføj felterne **InvoiceAccount** og **ContactPersonId** igen i tilknytningen **Debitorer V3 (konti)**, og gem tilknytningen. Nu er både feltet **InvoiceAccount** og feltet **ContactPersonId** igen en del af den direkte synkroniseringstilstand. I det næste trin udfører du den første synkronisering for disse felter.
+5. Tilføj kolonnerne **InvoiceAccount** og **ContactPersonId** igen i tilknytningen **Debitorer V3 (konti)**, og gem tilknytningen. Nu er både kolonnen **InvoiceAccount** og kolonnen **ContactPersonId** igen en del af den direkte synkroniseringstilstand. I det næste trin udfører du den første synkronisering for disse kolonner.
 6. Kør den første synkronisering igen for tilknytningen **Debitorer V3 (konti)**. Da ændringssporing er slået fra, bliver dataene for **InvoiceAccount** og **ContactPersonId** synkroniseret fra Finance and Operations-appen til Dataverse.
 7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til Finance and Operations-appen, skal du bruge et dataintegrationsprojekt.
 
@@ -210,7 +210,4 @@ Hvis der er rækker i debitorenheden med værdier i felterne **ContactPersonID**
 
     Den første synkronisering af rækkerne er nu fuldført.
 
-8. Aktivér ændringssporing igen i Finance and Operations-appen for **Debitorer V3**-enheden.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. Aktivér ændringssporing igen i Finance and Operations-appen for tabellen **Debitorer V3**.

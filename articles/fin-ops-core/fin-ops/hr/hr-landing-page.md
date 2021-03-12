@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2eb131db8e167868913f036149779133c1d46ed
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: b2c23cda87060ecb129befcc67c5b54f2f062bb3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694932"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797811"
 ---
 # <a name="human-resources-overview"></a>Oversigt over personale
 
@@ -93,6 +93,3 @@ Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der b
 - [Designe spørgeskemaer](../../../talent/design-questionnaires.md)
 - [Udsende og planlægge spørgeskemaer](../../../talent/distribute-questionnaires.md)
 - [Se og evaluere resultaterne af spørgeskemaer](../../../talent/evaluate-questionnaire-results.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

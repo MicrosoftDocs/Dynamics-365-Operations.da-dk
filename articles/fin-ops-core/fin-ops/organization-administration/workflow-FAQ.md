@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 785b14d20a647ea2187f311f1cd056b8181d4849
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694050"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797385"
 ---
 # <a name="workflow-faq"></a>Ofte stillede spørgsmål om arbejdsgang
 
@@ -59,6 +59,3 @@ Standardfeltværdien for **Antal af arbejdsgangsvarer pr. batch** på siden **Ar
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Hvad er den arbejdsgangsforbedrede fejlfunktion?
 Den arbejdsgangsforbedrede fejlfunktion i version 10.0.13 tilføjer fejlkoder for at differentiere forskellige klasser af arbejdsgangsfejl. De rapporterede fejlmeddelelser er overvejende ens med mindre forskelle for at gøre dem tydeligere.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

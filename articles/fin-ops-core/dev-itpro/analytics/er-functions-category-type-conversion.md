@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686068"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740802"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Liste over ER-funktioner af kategorien typekonvertering
 
@@ -38,6 +38,14 @@ Typekonverteringsfunktioner til elektronisk rapportering (ER) kan bruges til at 
 | [IntValue](er-functions-conversion-intvalue.md)       | Denne funktion returnerer en *Int*-værdi, der repræsenterer den angivne streng. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Denne funktion returnerer en *Reel* værdi, der konverteres fra den angivne *Streng*-værdi. Under konverteringen tages de specificerede decimal- og ciffergrupperingsseparatorer i betragtning. |
 | [Værdi](er-functions-conversion-value.md)             | Denne funktion returnerer en *Reel* værdi, der konverteres fra den angivne *Streng*-værdi. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>Typekonverteringsfunktioner i containerkategorien
+
+I følgende tabel beskrives typekonverteringsfunktionerne i kategorien [container](er-functions-category-container.md).
+
+| Funktion | Betegnelse |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Denne funktion konverterer det angivne input af typen *Streng* til et dataelement af typen *Container*. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Typekonverteringsfunktioner i kategorien dato og klokkeslæt
 
@@ -79,6 +87,3 @@ I følgende tabel beskrives typekonverteringsfunktionerne i [tekstkategorien](er
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelsprog i elektronisk rapportering](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

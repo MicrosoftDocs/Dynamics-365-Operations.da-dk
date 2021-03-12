@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693396"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797778"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Angive primosaldi for løn
 
@@ -166,6 +166,3 @@ Det er muligt at tilbageføre posteringer og angive dem igen. Hvis du vil tilbag
 2. Klik på **Ja**, når meddelelsen "Når du tilbagefører denne betalingsopgørelse, oprettes en tilbageførselsbetalingsopgørelse til modregning af betalingsopgørelsen. Ingen af betalingsopgørelserne kan redigeres. Vil du tilbageføre denne betalingsopgørelse?" vises. 
 
 Når du tilbagefører betalingsopgørelsen, kan du generere en ny betalingsopgørelse for arbejderen ud fra den lønopgørelse, du har oprettet tidligere. Sørg for at rette forkerte linjer på lønopgørelsen, før du genererer den nye betalingsopgørelse, og derefter genererer nye betalingsopgørelser med de korrekte beløb. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

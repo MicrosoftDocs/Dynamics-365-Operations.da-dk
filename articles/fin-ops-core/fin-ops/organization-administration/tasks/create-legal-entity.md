@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54e3176ccf4bc3218afdf085f910e6d2a9c1b9ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694831"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796748"
 ---
 # <a name="create-a-legal-entity"></a>Oprette en juridisk enhed
 
@@ -45,6 +45,3 @@ En juridisk enhed er en organisation, der er identificeret ved at være registre
 15. Udvid sektionen **Momsregistrering**. Angiv de registreringsnumre, der bruges til rapportering til skattemyndigheder, i sektionen **Momsregistrering**.
 16. Udvid sektionen **1099-skat**. Angiv 1099-oplysninger for den juridiske enhed i sektionen **1099-skat**.  
 17. Klik på **Gem**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

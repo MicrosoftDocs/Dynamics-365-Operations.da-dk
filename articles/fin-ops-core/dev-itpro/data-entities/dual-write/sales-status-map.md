@@ -1,6 +1,6 @@
 ---
-title: Konfigurere tilknytningen af statusfelter for salgsordre
-description: Dette emne forklarer, hvordan du kan konfigurere statusfelterne for salgsordre til dobbeltskrivning.
+title: Konfigurere tilknytning af kolonnerne for salgsordrestatus
+description: Dette emne forklarer, hvordan du kan konfigurere statuskolonnerne for salgsordre til dobbeltskrivning.
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4450941"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744293"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Konfigurere tilknytningen af statusfelter for salgsordre
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Konfigurere tilknytning af kolonnerne for salgsordrestatus
 
 [!include [banner](../../includes/banner.md)]
 
-De felter, der angiver status for salgsordrer, har forskellige fasttekstværdier i Microsoft Dynamics 365 Supply Chain Management og Dynamics 365 Sales. Der kræves yderligere opsætning for at knytte disse felter til dobbeltskrivning.
+De kolonner, der angiver status for salgsordrer, har forskellige fasttekstværdier i Microsoft Dynamics 365 Supply Chain Management og Dynamics 365 Sales. Der kræves yderligere opsætning for at knytte disse kolonner til dobbeltskrivning.
 
-## <a name="fields-in-supply-chain-management"></a>Felter i Supply Chain Management
+## <a name="columns-in-supply-chain-management"></a>kolonner i Supply Chain Management
 
-I Supply Chain Management afspejler to felter status for salgsordren. De felter, du skal tilknytte, er **Status** og **Dokumentstatus**.
+I Supply Chain Management afspejler to kolonner status for salgsordren. De kolonner, du skal tilknytte, er **Status** og **Dokumentstatus**.
 
 Fastteksten **Status** angiver ordrens overordnede status. Denne status vises i ordrehovedet.
 
@@ -53,9 +53,9 @@ Fastteksten **Dokumentstatus** har følgende værdier:
 - Følgeseddel
 - Fakturaer
 
-## <a name="fields-in-sales"></a>Felter i Salg
+## <a name="columns-in-sales"></a>kolonner i Salg
 
-I Salg angiver to felter status for ordren. De felter, du skal tilknytte, er **Status** og **Behandlingsstatus**.
+I Salg angiver to kolonner status for ordren. De kolonner, du skal tilknytte, er **Status** og **Behandlingsstatus**.
 
 Fastteksten **Status** angiver ordrens overordnede status. Den har følgende værdier:
 
@@ -95,7 +95,7 @@ Følgende tabel viser tilknytningen af **Behandlingsstatus** mellem Salg og Supp
 
 ## <a name="setup"></a>Konfiguration
 
-Hvis du vil konfigurere tilknytningen af statusfelterne for salgsordre, skal du aktivere attributterne **IsSOPIntegrationEnabled** og **isIntegrationUser**.
+Hvis du vil konfigurere tilknytningen af statuskolonnerne for salgsordre, skal du aktivere attributterne **IsSOPIntegrationEnabled** og **isIntegrationUser**.
 
 Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge disse trin.
 
@@ -110,14 +110,14 @@ Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge dis
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge dis
 
 Hvis du vil aktivere attributten **isIntegrationUser**, skal du følge disse trin.
 
-1. Gå i Salg til **Indstilling \> Tilpasning \> Tilpas systemet**, vælg **Brugerenhed**, og åbn derefter **Formular \> Bruger**.
+1. Gå i Salg til **Indstilling \> Tilpasning \> Tilpas systemet**, vælg **Brugertabel**, og åbn derefter **Formular \> Bruger**.
 
     ![Åbne brugerformularen](media/sales-map-user.png)
 
 2. I Feltoversigt skal du finde **Integrationsbrugertilstand** og dobbeltklikke på den for at føje den til formularen. Gem ændringerne.
 
-    ![Tilføje feltet Integrationsbrugertilstand i formularen](media/sales-map-field-explorer.png)
+    ![Tilføje kolonnen Integrationsbrugertilstand i formularen](media/sales-map-field-explorer.png)
 
 3. Gå i Salg til **Indstilling \> Sikkerhed \> Brugere**, og skift visningen fra **Aktiverede brugere** til **Programbrugere**.
 
@@ -145,11 +145,8 @@ Hvis du vil aktivere attributten **isIntegrationUser**, skal du følge disse tri
 
     ![Liste over programbrugere](media/sales-map-user-mode.png)
 
-5. Ret værdien i feltet **Integrationsbrugertilstand** til **Ja**.
+5. Ret værdien i kolonnen **Integrationsbrugertilstand** til **Ja**.
 
-    ![Ændre værdien i feltet Integrationsbrugertilstand](media/sales-map-user-mode-yes.png)
+    ![Ændre værdien i kolonnen Integrationsbrugertilstand](media/sales-map-user-mode-yes.png)
 
 Dine salgsordrer er nu tilknyttet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
