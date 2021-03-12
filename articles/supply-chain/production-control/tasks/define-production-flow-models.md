@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424329"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977857"
 ---
 # <a name="define-production-flow-models"></a>Definere produktionsflowmodeller
 
@@ -46,6 +45,3 @@ Produktionsflowmodeller beskriver, hvordan kapaciteten af lean manufacturing-arb
 8. Vælg en indstilling i feltet Reaktion på manglende kapacitet.
     * Indstillingerne omfatter: Udskyd - Udskydelse af det fulde behov for planlægningshændelsen på den næste tilgængelige produktionsdag, med tilgængeligt gennemløb. Annuller - Afslutte den automatiske planlægning for planlægningshændelsen og ikke planlægge de relaterede job.   Føj til den ønskede dag – Planlægge de job, der blev anmodet om i den ønskede periode. Dette overbelaster cellen for den pågældende dag, og kræver planlæggerens gennemgang og manuelle indgriben.   Distribuere til tilgængelige perioder – Fordele de forskellige job i planlægningshændelsen på alle tilgængelige produktionsdage med start fra den første tilgængelige dag. Fordel til tilgængelige perioder – Fordel de forskellige job i planlægningshændelsen på alle tilgængelige produktionsdage med start fra den første tilgængelige dag Mimimumdistributionsmængden er kanban-jobmængden. Fordelingen tildeler minimumplanlægningsantal (kanban-mængde) til hver dag med tilstrækkeligt tilgængeligt gennemløb.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

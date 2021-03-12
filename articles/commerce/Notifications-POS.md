@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e663a5dca76d570217b7e02444689a2e2d312c41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c3b8e2774a189f2afefa757e7c4f3885b674918c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410989"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976782"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
@@ -77,6 +76,3 @@ Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at de
 I følgende illustration viser effekten af at vælge **Øverst til højre** og **Centreret** i feltet **Justering af indhold** for knapper i forskellige størrelser.
 
 ![Dynamisk indhold på POS-knapper](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

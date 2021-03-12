@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c42522f69ecf2eb25d8d9384737115826ff4cda
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441712"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978505"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurere anlægsaktiver
 
@@ -84,6 +83,3 @@ Du kan konfigurere årsagskoder, så de er nødvendige for ændringer af et anl�
 Endelig kan du under fanen **Nummerserier** definere nummerserier for anlægsaktiver. Nummerserien for **anlægsaktiver** kan tilsidesættes af nummerserien for **anlægsaktivgruppen**, hvis den er angivet.
 
 Du kan finde flere oplysninger under [Oprette et anlægsaktiv](tasks/create-fixed-asset.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
