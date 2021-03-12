@@ -11,78 +11,77 @@ ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 995d68f6224b6dfbb1928c907ad991b86fc47668
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 727676d060b77633d4ff4f31dabbd7825ca19aca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441503"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971772"
 ---
-# <a name="research-or-resolve-exceptions"></a><span data-ttu-id="ed552-103">Undersøge eller løse undtagelser</span><span class="sxs-lookup"><span data-stu-id="ed552-103">Research or resolve exceptions</span></span>
+# <a name="research-or-resolve-exceptions"></a><span data-ttu-id="2b159-103">Undersøge eller løse undtagelser</span><span class="sxs-lookup"><span data-stu-id="2b159-103">Research or resolve exceptions</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ed552-104">Du kan køre kreditorfakturapolitikker, når du bogfører en kreditorfaktura ved hjælp af siden Kreditorfaktura, og når du åbner siden Overtrædelser af politik til kreditorfaktura.</span><span class="sxs-lookup"><span data-stu-id="ed552-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="ed552-105">Du kan også konfigurere arbejdsgangen for kreditorfakturaer til at køre politikker for kreditorfakturaer, hver gang du sender en faktura videre i arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="ed552-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
+<span data-ttu-id="2b159-104">Du kan køre kreditorfakturapolitikker, når du bogfører en kreditorfaktura ved hjælp af siden Kreditorfaktura, og når du åbner siden Overtrædelser af politik til kreditorfaktura.</span><span class="sxs-lookup"><span data-stu-id="2b159-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="2b159-105">Du kan også konfigurere arbejdsgangen for kreditorfakturaer til at køre politikker for kreditorfakturaer, hver gang du sender en faktura videre i arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="2b159-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
 
-<span data-ttu-id="ed552-106">Kreditorfakturapolitikker gælder ikke for fakturaer, der er oprettet i indgangsbogen eller i fakturajournalen.</span><span class="sxs-lookup"><span data-stu-id="ed552-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
+<span data-ttu-id="2b159-106">Kreditorfakturapolitikker gælder ikke for fakturaer, der er oprettet i indgangsbogen eller i fakturajournalen.</span><span class="sxs-lookup"><span data-stu-id="2b159-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
 
-<span data-ttu-id="ed552-107">Kreditorfakturapolitikker benyttes ikke til validering af fakturasammenholdelse, men er i stedet konfigureret på siden Kreditorparametre.</span><span class="sxs-lookup"><span data-stu-id="ed552-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
+<span data-ttu-id="2b159-107">Kreditorfakturapolitikker benyttes ikke til validering af fakturasammenholdelse, men er i stedet konfigureret på siden Kreditorparametre.</span><span class="sxs-lookup"><span data-stu-id="2b159-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
 
-<span data-ttu-id="ed552-108">Denne registrering anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="ed552-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="ed552-109">Rollen kreditorchef eller rollen regnskabschef skal udføre disse trin.</span><span class="sxs-lookup"><span data-stu-id="ed552-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="ed552-110">Inden du begynder, skal du kontrollere, at konfigurationsnøglen til fakturasammenholdelse er valgt.</span><span class="sxs-lookup"><span data-stu-id="ed552-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
+<span data-ttu-id="2b159-108">Denne registrering anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="2b159-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="2b159-109">Rollen kreditorchef eller rollen regnskabschef skal udføre disse trin.</span><span class="sxs-lookup"><span data-stu-id="2b159-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="2b159-110">Inden du begynder, skal du kontrollere, at konfigurationsnøglen til fakturasammenholdelse er valgt.</span><span class="sxs-lookup"><span data-stu-id="2b159-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
 
 
-## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="ed552-111">Forberede oprettelse af politikker for kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="ed552-111">Prepare to create vendor invoice policies</span></span>
-1. <span data-ttu-id="ed552-112">Gå til Kreditor > Opsætning > Kreditorparametre.</span><span class="sxs-lookup"><span data-stu-id="ed552-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
-2. <span data-ttu-id="ed552-113">Klik på fanen Fakturavalidering.</span><span class="sxs-lookup"><span data-stu-id="ed552-113">Click the Invoice validation tab.</span></span>
-3. <span data-ttu-id="ed552-114">Markér eller fjern markeringen af afkrydsningsfeltet Opdater status for fakturahoved automatisk.</span><span class="sxs-lookup"><span data-stu-id="ed552-114">Select or clear the Automatically update invoice header status check box.</span></span>
-4. <span data-ttu-id="ed552-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ed552-115">Click OK.</span></span>
-5. <span data-ttu-id="ed552-116">Vælg en indstilling i feltet Bogfør faktura med uoverensstemmelser.</span><span class="sxs-lookup"><span data-stu-id="ed552-116">In the Post invoice with discrepancies field, select an option.</span></span>
-6. <span data-ttu-id="ed552-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ed552-117">Close the page.</span></span>
-7. <span data-ttu-id="ed552-118">Gå til Kreditor > Konfiguration af politik > Politikker for kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="ed552-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-8. <span data-ttu-id="ed552-119">Klik på Parametre.</span><span class="sxs-lookup"><span data-stu-id="ed552-119">Click Parameters.</span></span>
-9. <span data-ttu-id="ed552-120">Klik på btnAdd.</span><span class="sxs-lookup"><span data-stu-id="ed552-120">Click btnAdd.</span></span>
-10. <span data-ttu-id="ed552-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ed552-121">Close the page.</span></span>
+## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="2b159-111">Forberede oprettelse af politikker for kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="2b159-111">Prepare to create vendor invoice policies</span></span>
+1. <span data-ttu-id="2b159-112">Gå til Kreditor > Opsætning > Kreditorparametre.</span><span class="sxs-lookup"><span data-stu-id="2b159-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="2b159-113">Klik på fanen Fakturavalidering.</span><span class="sxs-lookup"><span data-stu-id="2b159-113">Click the Invoice validation tab.</span></span>
+3. <span data-ttu-id="2b159-114">Markér eller fjern markeringen af afkrydsningsfeltet Opdater status for fakturahoved automatisk.</span><span class="sxs-lookup"><span data-stu-id="2b159-114">Select or clear the Automatically update invoice header status check box.</span></span>
+4. <span data-ttu-id="2b159-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="2b159-115">Click OK.</span></span>
+5. <span data-ttu-id="2b159-116">Vælg en indstilling i feltet Bogfør faktura med uoverensstemmelser.</span><span class="sxs-lookup"><span data-stu-id="2b159-116">In the Post invoice with discrepancies field, select an option.</span></span>
+6. <span data-ttu-id="2b159-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b159-117">Close the page.</span></span>
+7. <span data-ttu-id="2b159-118">Gå til Kreditor > Konfiguration af politik > Politikker for kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="2b159-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+8. <span data-ttu-id="2b159-119">Klik på Parametre.</span><span class="sxs-lookup"><span data-stu-id="2b159-119">Click Parameters.</span></span>
+9. <span data-ttu-id="2b159-120">Klik på btnAdd.</span><span class="sxs-lookup"><span data-stu-id="2b159-120">Click btnAdd.</span></span>
+10. <span data-ttu-id="2b159-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b159-121">Close the page.</span></span>
 
-## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="ed552-122">Oprette politikregeltyper for kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="ed552-122">Create policy rule types for vendor invoices</span></span>
-1. <span data-ttu-id="ed552-123">Gå til Kreditor > Konfiguration af politik > Regeltyper til politik for kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="ed552-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
-2. <span data-ttu-id="ed552-124">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ed552-124">Click New.</span></span>
-3. <span data-ttu-id="ed552-125">Skriv en værdi i feltet Regelnavn.</span><span class="sxs-lookup"><span data-stu-id="ed552-125">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="ed552-126">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="ed552-126">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="ed552-127">Klik på rullelisten i feltet Forespørgselsnavn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ed552-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="ed552-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ed552-128">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="ed552-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ed552-129">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="ed552-130">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ed552-130">Click Save.</span></span>
-9. <span data-ttu-id="ed552-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ed552-131">Close the page.</span></span>
+## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="2b159-122">Oprette politikregeltyper for kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="2b159-122">Create policy rule types for vendor invoices</span></span>
+1. <span data-ttu-id="2b159-123">Gå til Kreditor > Konfiguration af politik > Regeltyper til politik for kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="2b159-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
+2. <span data-ttu-id="2b159-124">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2b159-124">Click New.</span></span>
+3. <span data-ttu-id="2b159-125">Skriv en værdi i feltet Regelnavn.</span><span class="sxs-lookup"><span data-stu-id="2b159-125">In the Rule name field, type a value.</span></span>
+4. <span data-ttu-id="2b159-126">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="2b159-126">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="2b159-127">Klik på rullelisten i feltet Forespørgselsnavn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="2b159-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="2b159-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="2b159-128">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="2b159-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2b159-129">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="2b159-130">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2b159-130">Click Save.</span></span>
+9. <span data-ttu-id="2b159-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b159-131">Close the page.</span></span>
 
-## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="ed552-132">Definere en politik for kreditorfaktura</span><span class="sxs-lookup"><span data-stu-id="ed552-132">Define a vendor invoice policy</span></span>
-1. <span data-ttu-id="ed552-133">Gå til Kreditor > Konfiguration af politik > Politikker for kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="ed552-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-2. <span data-ttu-id="ed552-134">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ed552-134">Click New.</span></span>
-3. <span data-ttu-id="ed552-135">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="ed552-135">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="ed552-136">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="ed552-136">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="ed552-137">Udvid eller skjul sektionen Politikorganisationer.</span><span class="sxs-lookup"><span data-stu-id="ed552-137">Expand or collapse the Policy organizations section.</span></span>
-6. <span data-ttu-id="ed552-138">Vælg "Contoso Entertainment System USA" i træet.</span><span class="sxs-lookup"><span data-stu-id="ed552-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
-7. <span data-ttu-id="ed552-139">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="ed552-139">Click Add.</span></span>
-8. <span data-ttu-id="ed552-140">Udvid eller skjul sektionen Politikregler.</span><span class="sxs-lookup"><span data-stu-id="ed552-140">Expand or collapse the Policy rules section.</span></span>
-9. <span data-ttu-id="ed552-141">Klik på Opret politikregel.</span><span class="sxs-lookup"><span data-stu-id="ed552-141">Click Create policy rule.</span></span>
-10. <span data-ttu-id="ed552-142">Skriv en værdi i feltet Beskrivelse af politikregel.</span><span class="sxs-lookup"><span data-stu-id="ed552-142">In the Policy rule description field, type a value.</span></span>
-11. <span data-ttu-id="ed552-143">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="ed552-143">Click Filter.</span></span>
-12. <span data-ttu-id="ed552-144">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="ed552-144">Click Add.</span></span>
-13. <span data-ttu-id="ed552-145">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ed552-145">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="ed552-146">Klik på rullelisten i feltet Tabel for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ed552-146">In the Table field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="ed552-147">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ed552-147">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="ed552-148">Klik på rullelisten i feltet Afledt tabel for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ed552-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="ed552-149">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ed552-149">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="ed552-150">Klik på rullelisten i feltet Felt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ed552-150">In the Field field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="ed552-151">Skriv en værdi i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="ed552-151">In the Field field, type a value.</span></span>
-20. <span data-ttu-id="ed552-152">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ed552-152">Close the page.</span></span>
-21. <span data-ttu-id="ed552-153">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="ed552-153">In the Criteria field, type a value.</span></span>
-22. <span data-ttu-id="ed552-154">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ed552-154">Click OK.</span></span>
-23. <span data-ttu-id="ed552-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ed552-155">Click OK.</span></span>
-24. <span data-ttu-id="ed552-156">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ed552-156">Close the page.</span></span>
-25. <span data-ttu-id="ed552-157">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ed552-157">Close the page.</span></span>
+## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="2b159-132">Definere en politik for kreditorfaktura</span><span class="sxs-lookup"><span data-stu-id="2b159-132">Define a vendor invoice policy</span></span>
+1. <span data-ttu-id="2b159-133">Gå til Kreditor > Konfiguration af politik > Politikker for kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="2b159-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+2. <span data-ttu-id="2b159-134">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="2b159-134">Click New.</span></span>
+3. <span data-ttu-id="2b159-135">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="2b159-135">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="2b159-136">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="2b159-136">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="2b159-137">Udvid eller skjul sektionen Politikorganisationer.</span><span class="sxs-lookup"><span data-stu-id="2b159-137">Expand or collapse the Policy organizations section.</span></span>
+6. <span data-ttu-id="2b159-138">Vælg "Contoso Entertainment System USA" i træet.</span><span class="sxs-lookup"><span data-stu-id="2b159-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
+7. <span data-ttu-id="2b159-139">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="2b159-139">Click Add.</span></span>
+8. <span data-ttu-id="2b159-140">Udvid eller skjul sektionen Politikregler.</span><span class="sxs-lookup"><span data-stu-id="2b159-140">Expand or collapse the Policy rules section.</span></span>
+9. <span data-ttu-id="2b159-141">Klik på Opret politikregel.</span><span class="sxs-lookup"><span data-stu-id="2b159-141">Click Create policy rule.</span></span>
+10. <span data-ttu-id="2b159-142">Skriv en værdi i feltet Beskrivelse af politikregel.</span><span class="sxs-lookup"><span data-stu-id="2b159-142">In the Policy rule description field, type a value.</span></span>
+11. <span data-ttu-id="2b159-143">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="2b159-143">Click Filter.</span></span>
+12. <span data-ttu-id="2b159-144">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="2b159-144">Click Add.</span></span>
+13. <span data-ttu-id="2b159-145">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2b159-145">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="2b159-146">Klik på rullelisten i feltet Tabel for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="2b159-146">In the Table field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="2b159-147">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2b159-147">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="2b159-148">Klik på rullelisten i feltet Afledt tabel for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="2b159-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="2b159-149">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2b159-149">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="2b159-150">Klik på rullelisten i feltet Felt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="2b159-150">In the Field field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="2b159-151">Skriv en værdi i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="2b159-151">In the Field field, type a value.</span></span>
+20. <span data-ttu-id="2b159-152">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b159-152">Close the page.</span></span>
+21. <span data-ttu-id="2b159-153">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="2b159-153">In the Criteria field, type a value.</span></span>
+22. <span data-ttu-id="2b159-154">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="2b159-154">Click OK.</span></span>
+23. <span data-ttu-id="2b159-155">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="2b159-155">Click OK.</span></span>
+24. <span data-ttu-id="2b159-156">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b159-156">Close the page.</span></span>
+25. <span data-ttu-id="2b159-157">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b159-157">Close the page.</span></span>
 
