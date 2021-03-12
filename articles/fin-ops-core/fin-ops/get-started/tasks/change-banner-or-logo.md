@@ -15,27 +15,27 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 61c286391d83d70036dbed7eae6755cdefce5f2e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693661"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798064"
 ---
-# <a name="change-the-banner-or-logo"></a><span data-ttu-id="a7620-103">Skifte banner eller logo</span><span class="sxs-lookup"><span data-stu-id="a7620-103">Change the banner or logo</span></span>
+# <a name="change-the-banner-or-logo"></a><span data-ttu-id="72d38-103">Skifte banner eller logo</span><span class="sxs-lookup"><span data-stu-id="72d38-103">Change the banner or logo</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a7620-104">Følgende procedure viser de trin, som systemadministratorer kan bruge til at opdatere banneret eller logo-billedet, der vises for en juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="a7620-104">The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity.</span></span> <span data-ttu-id="a7620-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="a7620-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="72d38-104">Følgende procedure viser de trin, som systemadministratorer kan bruge til at opdatere banneret eller logo-billedet, der vises for en juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="72d38-104">The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity.</span></span> <span data-ttu-id="72d38-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="72d38-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="a7620-106">Gå til **Navigationsrude > Moduler > Virksomhedsadministration > Organisationer > Juridiske enheder**.</span><span class="sxs-lookup"><span data-stu-id="a7620-106">Go to **Navigation pane > Modules > Organization administration > Organizations > Legal entities**.</span></span>
-2. <span data-ttu-id="a7620-107">Vælg den juridiske enhed, du vil opdatere banneret eller logoet for, på listen til venstre.</span><span class="sxs-lookup"><span data-stu-id="a7620-107">In the list on the left, select the legal entity for which you want to update the banner or logo.</span></span> <span data-ttu-id="a7620-108">Hvis det allerede er valgt, skal du gå til næste trin.</span><span class="sxs-lookup"><span data-stu-id="a7620-108">If it is already selected, go to the next step.</span></span>
-3. <span data-ttu-id="a7620-109">Udvid fanen **Dashboardbillede**.</span><span class="sxs-lookup"><span data-stu-id="a7620-109">Expand **Dashboard image** tab.</span></span>
-4. <span data-ttu-id="a7620-110">Vælg **Skift**.</span><span class="sxs-lookup"><span data-stu-id="a7620-110">Select **Change**.</span></span>
+1. <span data-ttu-id="72d38-106">Gå til **Navigationsrude > Moduler > Virksomhedsadministration > Organisationer > Juridiske enheder**.</span><span class="sxs-lookup"><span data-stu-id="72d38-106">Go to **Navigation pane > Modules > Organization administration > Organizations > Legal entities**.</span></span>
+2. <span data-ttu-id="72d38-107">Vælg den juridiske enhed, du vil opdatere banneret eller logoet for, på listen til venstre.</span><span class="sxs-lookup"><span data-stu-id="72d38-107">In the list on the left, select the legal entity for which you want to update the banner or logo.</span></span> <span data-ttu-id="72d38-108">Hvis det allerede er valgt, skal du gå til næste trin.</span><span class="sxs-lookup"><span data-stu-id="72d38-108">If it is already selected, go to the next step.</span></span>
+3. <span data-ttu-id="72d38-109">Udvid fanen **Dashboardbillede**.</span><span class="sxs-lookup"><span data-stu-id="72d38-109">Expand **Dashboard image** tab.</span></span>
+4. <span data-ttu-id="72d38-110">Vælg **Skift**.</span><span class="sxs-lookup"><span data-stu-id="72d38-110">Select **Change**.</span></span>
     
-    <span data-ttu-id="a7620-111">Den ideelle opløsning for et bannerbillede er 1920 x 281 pixel.</span><span class="sxs-lookup"><span data-stu-id="a7620-111">The ideal resolution for a banner image is 1920 x 281 pixels.</span></span> <span data-ttu-id="a7620-112">Den ideelle bredde for et logobillede er 350 pixel.</span><span class="sxs-lookup"><span data-stu-id="a7620-112">The ideal width for a logo image is 350 pixels.</span></span>
+    <span data-ttu-id="72d38-111">Den ideelle opløsning for et bannerbillede er 1920 x 281 pixel.</span><span class="sxs-lookup"><span data-stu-id="72d38-111">The ideal resolution for a banner image is 1920 x 281 pixels.</span></span> <span data-ttu-id="72d38-112">Den ideelle bredde for et logobillede er 350 pixel.</span><span class="sxs-lookup"><span data-stu-id="72d38-112">The ideal width for a logo image is 350 pixels.</span></span>
     
-5. <span data-ttu-id="a7620-113">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="a7620-113">Select **Save**.</span></span>
-6. <span data-ttu-id="a7620-114">Gå til **Navigationsrude > Moduler > Generelt > Generelt > Standarddashboard**.</span><span class="sxs-lookup"><span data-stu-id="a7620-114">Go to **Navigation pane > Modules > Common > Common > Default dashboard**.</span></span> <span data-ttu-id="a7620-115">Du kan se det nye bannerbillede eller logobillede på dashboardet.</span><span class="sxs-lookup"><span data-stu-id="a7620-115">You should see the new banner or logo image on the dashboard.</span></span>  
+5. <span data-ttu-id="72d38-113">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="72d38-113">Select **Save**.</span></span>
+6. <span data-ttu-id="72d38-114">Gå til **Navigationsrude > Moduler > Generelt > Generelt > Standarddashboard**.</span><span class="sxs-lookup"><span data-stu-id="72d38-114">Go to **Navigation pane > Modules > Common > Common > Default dashboard**.</span></span> <span data-ttu-id="72d38-115">Du kan se det nye bannerbillede eller logobillede på dashboardet.</span><span class="sxs-lookup"><span data-stu-id="72d38-115">You should see the new banner or logo image on the dashboard.</span></span>  
     
-    <span data-ttu-id="a7620-116">Du skal muligvis ændre dit firma ved hjælp af firmavælgeren til det firma, du har overført banneret til.</span><span class="sxs-lookup"><span data-stu-id="a7620-116">You may need to change your company, using the company picker, to the one you uploaded the banner for.</span></span>  
+    <span data-ttu-id="72d38-116">Du skal muligvis ændre dit firma ved hjælp af firmavælgeren til det firma, du har overført banneret til.</span><span class="sxs-lookup"><span data-stu-id="72d38-116">You may need to change your company, using the company picker, to the one you uploaded the banner for.</span></span>  
