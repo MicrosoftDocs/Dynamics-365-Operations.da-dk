@@ -10,18 +10,17 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e880305d02fd9f10464fe3f65a2774a44da258c6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411145"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006229"
 ---
 # <a name="configure-task-management"></a>Konfigurer opgavestyring
 
@@ -69,7 +68,7 @@ Før medarbejderne kan bruge POS-klienter, skal rettighederne distribueres og sy
 Udfør følgende trin for at distribuere rettigheder til POS-klienter:
 
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**.
-1. Vælg distributionsplanen **1060** (**Personale**), og vælg derefter **Kør nu**.
+1. Vælg distributionsplanen **1060** (**Human Resources**), og vælg derefter **Kør nu**.
 1. Vælg distributionsplanen **1070** (**Kanalkonfiguration**), og vælg derefter **Kør nu**.
 
 ## <a name="configure-pos-notifications-for-tasks"></a>Konfigurere POS-beskeder for opgaver
@@ -111,6 +110,3 @@ Følgende illustration viser et eksempel på et **Opgave**-felt på en POS-start
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

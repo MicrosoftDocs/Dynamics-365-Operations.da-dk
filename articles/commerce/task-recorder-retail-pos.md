@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0a5ca1e116e931ba992eab51a06dae9fdf92756
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411141"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006129"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Arbejdsrutineoptager og Hjælp til Retail Modern POS (MPOS) og Cloud POS
 
@@ -34,7 +33,7 @@ Dette emne beskriver, hvordan du bruger Arbejdsrutineoptager i Retail Modern POS
 
 ## <a name="overview"></a>Overblik
 
-Arbejdsrutineoptager i Retail Modern POS eller Cloud POS er en ny løsning, der er bygget med fokus på høj tilgængelighed. Den indeholder en fleksibel API (brugergrænseflade til program) til udvidelse og problemfri integration for forbrugere af registreringer af forretningsprocesser. Derudover er integrationen af Arbejdsrutineoptager med værktøjet Forretningsprocesmodel (BPM) i Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) blevet overført. Brugerne kan derfor fortsætte med at producere omfattende forretningsprocesdiagrammer fra registreringer, så de kan analysere og designe deres programmer.
+Arbejdsrutineoptager i Retail Modern POS eller Cloud POS er en ny løsning, der er bygget med fokus på høj tilgængelighed. Den indeholder en fleksibel API (brugergrænseflade til program) til udvidelse og problemfri integration for forbrugere af registreringer af forretningsprocesser. Derudover er integrationen af Arbejdsrutineoptager med værktøjet Forretningsprocesmodel (BPM) i Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) blevet overført. Brugerne kan derfor fortsætte med at producere omfattende forretningsprocesdiagrammer fra registreringer, så de kan analysere og designe deres programmer.
 
 ## <a name="architecture"></a>Arkitektur
 
@@ -146,6 +145,3 @@ Når du klikker på en opgaveguide i søgeresultaterne, kan du enten få vist tr
 
 > [!NOTE]
 > Hjælp i Retail Modern POS og Cloud POS viser ikke opgavevejledninger i henhold til, hvilken form du er, eller operation, du foretager. Du skal skrive procesnavnet i søgefeltet og derefter klikke på **Søg**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

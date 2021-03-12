@@ -10,18 +10,17 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee924f5bf95d47814e7ca09b392a3d10b5e9b9dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411146"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006254"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tildeling af opgavelister til butikker eller medarbejdere
 
@@ -92,6 +91,3 @@ Hvis du vil følge spore status for opgavelister for alle opgaver, som er tildel
 [Oprette opgavelister og tilføje opgaver](task-mgmt-create-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
