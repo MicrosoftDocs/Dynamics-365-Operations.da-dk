@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7fde19ad1a58616672de72fb5e5cbeea39138b46
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441477"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995184"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -81,7 +80,7 @@ Et dimensionshierarki oprettes som en træstruktur, der har node- og bladnoderel
 
 ### <a name="example"></a>Eksempel
 
-Et lille firma har følgende organisationsstruktur, hvor Finans og Personale er afdelinger under Administration, og Samling og Emballage er afdelinger under Produktion.
+Et lille firma har følgende organisationsstruktur, hvor Finans og Human Resources er afdelinger under Administration, og Samling og Emballage er afdelinger under Produktion.
 
 ![Eksempel på en organisationsstruktur](./media/dimension-hierarchy-org.png)
 
@@ -94,7 +93,7 @@ Den omkostningsobjektdimension, der repræsenterer alle bærerne, kan konfigurer
 
 | Bærere | Betegnelse |
 |--------------|-------------|
-| CC001        | Personale          |
+| CC001        | HR          |
 | CC002        | Finans     |
 | CC003        | Skat         |
 | CC007        | Kreditor/Debitor       |
@@ -132,7 +131,7 @@ Dimensionshierarkiet til rapportering kan konfigureres som vist her.
 | &nbsp;&nbsp;Administration         |                           |                         |
 |&nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | CC001                     | CC001                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Emballage | CC005                     | CC005                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling  | CC006                     | CC006                   |
@@ -208,7 +207,7 @@ Følgende eksempel viser, hvordan et dimensionshierarki kan se ud i rapportering
 | Organisation                              | Administration                                     | Finans                                   | CC002                                     |                                            |
 | Organisation                              | Administration                                     | Finans                                   | CC003                                     |                                            |
 | Organisation                              | Administration                                     | Finans                                   | CC007                                     |                                            |
-| Organisation                              | Administration                                     | Personale                                        | CC001                                     |                                            |
+| Organisation                              | Administration                                     | HR                                        | CC001                                     |                                            |
 | Organisation                              | Produktion                                | Emballage                                 | CC005                                     |                                            |
 | Organisation                              | Produktion                                | Samling                                  | CC006                                     |                                            |
 
@@ -305,7 +304,7 @@ Et nyt oversigtspanel **Brugere** er tilgængeligt i hierarkidesigneren. Her kan
 | &nbsp;&nbsp;Administration         | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Alicia           | CC002                     | CC003                   |
 |                 |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | Arnie            | CC001                     | CC001                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;HR        | Arnie            | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    | David            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Emballage | Ellen            | CC005                     | CC005                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling  | Chris            | CC006                     | CC006                   |
@@ -333,6 +332,3 @@ Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der 
 > [!NOTE] 
 > - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Adgangslistehierarkiet bidrager ikke til at beskytte eksport af data til Excel. Derfor skal dette rapporteringsværktøjet kun bruges af bogholdere og ledere, der skal have fuld adgang til at se dataene.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

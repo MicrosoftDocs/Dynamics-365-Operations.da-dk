@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3302738a05852dfb37f8266074386d9f2998994d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbee870848010f2dce9b6a5e2c6179849191f9cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441559"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995259"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Konfigurere sammenholdningsregler for bankafstemning
 
@@ -49,6 +48,3 @@ Sammenholdningsregler vil som standard matche det første bankdokument, der opfy
 | **Sammenhold med bankdokument**       | Opret kriterier for at angive, hvordan bankdokumenter og kontoudtogslinjer sammenholdes, når sammenholdningsreglen køres fra siden **Bankafstemningsarbejdsark**. Posteringslinjerne vælges efter de yderligere kriterier, der er angivet i oversigtspanelerne.                                | **Trin 1: Angiv sammenholdningsreglen** – Vælg kriterier for at angive, hvilke bankkontoudtog der skal sammenholdes med Finance-banktransaktioner. **Trin 2 (valgfrit): Vælg de opgørelseslinjer, som sammenholdningsregler skal køres mod:**  Anvend et filter for de opgørelseslinjer, som reglerne skal køres mod.                                                                                                                                                                                                                                                                                                               |
 | **Ryd opgørelseslinjer til tilbageførsel** | Opret kriterier for at angive, hvordan opgørelseslinjer til tilbageførsel skal fjernes fra siden **Bankafstemningsarbejdsark**, når sammenholdningsreglen køres. Denne indstilling bruges, når en bankfejl medfører, at der er angivet to kontoudtogslinjer i det importerede kontoudtog, og linjerne skal afstemmes. | **Trin 1**: **Finde opgørelseslinjer til tilbageførsel** – Tilføj udvælgelseskriterier for at vælge tilbageførselslinjer for bankkontoudtog. Hvis du f.eks. kun vil vælge checks, skal du markere **Banktransaktionskode** i feltet Felt, vælge plustegnet (+) i feltet **Operatør** og derefter angive **Checks** i feltet Værdi. **Trin 2: Søg efter oprindelige opgørelseslinjer** – Du kan tilføje kriterier til sammenholdning af bankdokumentlinjer med kontoudtogslinjer. **Trin 3: Søg efter Finance-banktransaktioner** – Du kan tilføje kriterier til sammenholdning af Finance-banktransaktioner med bankkontoudtogslinjer. |
 | **Markér nye transaktioner**          | Opret kriterier for at angive, hvordan nye transaktioner skal markeres på siden **Bankafstemningsarbejdsark**, når sammenholdningsreglen køres.                                                                                                                                                                 | **Trin 1: Søg efter opgørelseslinjer**– Tilføj markerede felter for at angive, hvilken kontoudtogslinjer der skal vælges fra siden **Bankafstemningsregneark**. **Trin 2: Søg efter Finance and Operations** – Du kan tilføje udvælgelseskriterier for at søge efter bankdokumentlinjer. Hvis der ikke findes noget bankdokument, markeres en opgørelseslinje som en ny postering.                                                                                                                                                                                                                                             |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

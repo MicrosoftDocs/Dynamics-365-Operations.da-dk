@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d37b2b785dd29850dcd02d0905e5872445384990
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411058"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993722"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Aktivere og konfigurere automatiske gebyrer efter kanal
 
@@ -77,7 +76,7 @@ Når du har slået funktionen **Aktivér filtrering af automatiske gebyrer efter
 
 Hvis du vil definere automatiske gebyrer efter kanal i Commerce, skal du følge disse trin.
 
-1. Gå til  **Debitor \> Konfiguration af gebyrer \> Automatiske gebyrer**.
+1. Gå til **Debitor \> Konfiguration af gebyrer \> Automatiske gebyrer**.
 1. Vælg **Overskrift** eller **Linje** i feltet **Niveau** i ruden til venstre, afhængigt af firmaets krav.
 1. Vælg den relevante kanalkode (f.eks. **Tabel** eller **Gruppe**) i feltet **Detailkanalkode**. Hvis standardindstillingen **Alle** bruges, anvendes gebyrreglerne på alle kanaler.
 
@@ -128,6 +127,3 @@ Når du vælger **Transaktionsindstillinger \> Gebyrer \> Administrer gebyrer** 
 [Avancerede automatiske gebyrer for omni-kanal](omni-auto-charges.md)
 
 [Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

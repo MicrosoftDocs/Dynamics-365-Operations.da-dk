@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Denmark
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2d87694bdc0ae7e35427e692e7f70a479463c69a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc8b92e6bd4442d25d4b5e4272dad2cb3f46c275
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994277"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 
@@ -40,6 +39,3 @@ Dette emne indeholder links til dokumentationsressourcer for Danmark.
 - [Konfigurere debitorkonti til elektronisk OIOUBL-fakturering](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Konfigurere elektronisk OIOUBL-fakturering](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Konfigurere indbetalingskortformat](tasks/set-up-payment-slip-format.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

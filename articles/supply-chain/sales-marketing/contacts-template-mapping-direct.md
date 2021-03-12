@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 8cbc2909c3f4533b4ea68e522f0874873989f3ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528943"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994038"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisere kontakter direkte fra Sales med kontakter eller kunder i Supply Chain Management
 
@@ -33,9 +32,9 @@ ms.locfileid: "4528943"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere enhederne Kontakt (kontakter) og Kontakt (kunder) direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere tabellerne Kontakt (kontakter) og Kontakt (kunder) direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 
@@ -47,7 +46,7 @@ Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkr
 
 For at få adgang til de tilgængelige skabeloner skal du åbne [PowerApps Administration](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
 
-Følgende skabeloner og underliggende opgaver bruges til at synkronisere enhederne Kontakt (kontakter) i Sales med enhederne Kontakt (kunder) i Supply Chain Management:
+Følgende skabeloner og underliggende opgaver bruges til at synkronisere tabellerne Kontakt (kontakter) i Sales med tabellerne Kontakt (kunder) i Supply Chain Management:
 
 - **Navne på skabeloner i dataintegration:**
 
@@ -63,10 +62,10 @@ Følgende synkroniseringsopgave skal udføres før synkronisering af kontakter k
 
 ## <a name="entity-sets"></a>Enhedssæt
 
-| Salg    | Supply Chain Management |
+| Sales    | Supply Chain Management |
 |----------|------------------------|
-| Kontaktpersoner | CDS kontakter           |
-| Kontaktpersoner | Debitorer V2           |
+| Kontakter | Dataverse-kontakter           |
+| Kontakter | Debitorer V2           |
 
 ## <a name="entity-flow"></a>Enhedsflow
 
@@ -79,13 +78,13 @@ En kontakt i Sales kan enten blive en kontakt eller en kunde i Supply Chain Mana
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemne til kontantløsning for Sales
 
-Et nyt felt **Er aktiv kunde** er føjet til kontakten. Dette felt bruges til at skelne mellem kontakter, der har salgsaktivitet, og kontakter, der ikke har en salgsaktivitet. **Er aktiv kunde** er kun indstillet til **Ja** for kontakter, der har relaterede tilbud, ordrer eller fakturaer. Kun disse kontakter synkroniseres med Supply Chain Management som kunder.
+Den nye kolonne **Er aktiv kunde** er føjet til kontakten. Denne kolonne bruges til at skelne mellem kontakter, der har salgsaktivitet, og kontakter, der ikke har en salgsaktivitet. **Er aktiv kunde** er kun indstillet til **Ja** for kontakter, der har relaterede tilbud, ordrer eller fakturaer. Kun disse kontakter synkroniseres med Supply Chain Management som kunder.
 
-Et nyt felt **IsCompanyAnAccount** er føjet til kontakten. Dette felt angiver, om en kontakt er tilknyttet et firma (overordnet konto/kontakt) af typen **Konto**. Disse oplysninger bruges til at identificere kontakter, der skal synkroniseres med Supply Chain Management som kontakter.
+Den nye kolonne **IsCompanyAnAccount** er føjet til kontakten. Denne kolonne angiver, om en kontakt er tilknyttet et firma (overordnet konto/kontakt) af typen **Konto**. Disse oplysninger bruges til at identificere kontakter, der skal synkroniseres med Supply Chain Management som kontakter.
 
-Et nyt felt, **Kontaktnummer**, er føjet til kontakten for at sikre en naturlig og entydig nøgle til integrationen. Når der oprettes en ny kontakt, genereres der automatisk en værdi for **Kontaktnummer** ved hjælp af en nummerserie. Værdien består af **CON** efterfulgt af en stigende nummerserie og et suffiks på seks tegn. Her er et eksempel: **CON-01000-BVRCPS**
+Den nye kolonne **Kontaktnummer** er føjet til kontakten for at sikre en naturlig og entydig nøgle til integrationen. Når der oprettes en ny kontakt, genereres der automatisk en værdi for **Kontaktnummer** ved hjælp af en nummerserie. Værdien består af **CON** efterfulgt af en stigende nummerserie og et suffiks på seks tegn. Her er et eksempel: **CON-01000-BVRCPS**
 
-Når integrationsløsningen for Sales anvendes, indstiller et opgraderingsscript feltet **Kontaktnummer** for eksisterende kontakter ved hjælp af den nummerserie, der blev omtalt tidligere. Opgraderingsscriptet indstiller også feltet **Er aktiv kunde** til **Ja** for alle kontakter, der har salgsaktivitet.
+Når integrationsløsningen for Sales anvendes, indstiller et opgraderingsscript kolonnen **Kontaktnummer** for eksisterende kontakter ved hjælp af den nummerserie, der blev omtalt tidligere. Opgraderingsscriptet indstiller også kolonnen **Er aktiv kunde** til **Ja** for alle kontakter, der har salgsaktivitet.
 
 ## <a name="in-supply-chain-management"></a>I Supply Chain Management
 
@@ -95,7 +94,7 @@ Kontaktpersoner mærkes ved hjælp af egenskaben **IsContactPersonExternallyMain
 
 ### <a name="contact-to-customer"></a>Kontakt til kunde
 
-- **CustomerGroup** er påkrævet i Supply Chain Management. For at hjælpe med til at undgå synkroniseringsfejl kan du angive en standardværdi i tilknytningen. Denne standardværdi bruges derefter, hvis feltet er tomt, i Sales.
+- **CustomerGroup** er påkrævet i Supply Chain Management. For at hjælpe med til at undgå synkroniseringsfejl kan du angive en standardværdi i tilknytningen. Denne standardværdi bruges derefter, hvis kolonnen er tom i Sales.
 
     Standardskabelonværdien er **10**.
 
@@ -118,7 +117,7 @@ Kontaktpersoner mærkes ved hjælp af egenskaben **IsContactPersonExternallyMain
 Følgende illustration viser et eksempel på en skabelontilknytning i dataintegration. 
 
 > [!NOTE]
-> Tilknytningen viser, hvilke oplysninger der synkroniseres fra Sales til Supply Chain Management.
+> Tilknytningen viser, hvilke kolonneoplysninger der synkroniseres fra Sales til Supply Chain Management.
 
 ### <a name="contact-to-contact"></a>Kontakt til kontakt
 
@@ -142,6 +141,3 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 [Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

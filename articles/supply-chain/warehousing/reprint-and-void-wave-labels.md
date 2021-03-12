@@ -9,17 +9,16 @@ ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: cc76a3915d6a1e58a71eb997b5af58941905e879
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4425071"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996042"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Genudskrive og annullere bølgeetiketter
 
@@ -218,6 +217,3 @@ Arbejdsundtagelser styrer funktionsmåden ved kort plukning. Følg disse trin fo
 1. Vælg **Kort pluk**.
 1. Vælg den arbejdsundtagelseskode, som du har oprettet til dette scenarie.
 1. Hvis du valgte den korrekte undtagelse, skal afkrydsningsfeltet **Annuller og udskriv igen** være tilgængeligt. Markér dette afkrydsningsfelt, og bekræft. Når det er bekræftet, genberegnes serien for etiketrulle, der er identificeret af feltet **Etiket-build-id**, på basis af det ændrede antal på arbejdslinje. Derefter udskrives den på den angivne printer.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

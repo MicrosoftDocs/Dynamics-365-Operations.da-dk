@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68fa26daac055cd0fd72035683f05ed36052b3a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411067"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995814"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregning af lagertilgængelighed for detailkanaler
 
@@ -114,6 +113,3 @@ Det anbefales, at du ikke kører disse batchjob for ofte (med få minutters mell
 > Af hensyn til ydeevnen bruger beregningen en cache til at angive, om der er forløbet nok tid til at kunne begrunde at køre beregningslogikken igen, når der anvendes kanalsideberegninger til at beregne lagertilgængelighed til at foretage en anmodning om varetilgængelighed ved hjælp af beregninger af e-Commerce-API'erne eller den nye POS-kanalsidelagerlogik. Standardcachen er angivet til 60 sekunder. Du har f.eks. slået kanalsideberegningen til for din butik og har fået vist det disponible lager for et produkt på siden **Lagersøgning**. Hvis der derefter sælges en enhed af produktet, vil siden **Lagersøgning** ikke vise det reducerede lager, før cachen er blevet ryddet. Når brugere har bogført transaktioner i POS, bør de vente 60 sekunder, før de bekræfter, at det disponible lager er blevet reduceret.
 
 Hvis dit forretningsscenarie kræver en mindre cacheperiode, skal du kontakte produktsupportmedarbejderen for at få hjælp.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

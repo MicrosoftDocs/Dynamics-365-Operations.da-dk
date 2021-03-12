@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b82cc7e4077a1bd50eab30f234c2f63c79e81d84
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441639"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994684"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskabsåret
 
@@ -83,6 +82,3 @@ Denne procedure gennemgår processen for årsafslutning, som overfører saldi ti
 23. Årsafslutningen køres som standarder i batch. Det er den bedste praksis for langvarige processer, der skal køres i batchtilstand. Det er typisk en af disse processer, hvilket er grunden til, at standarden er at bruge batchtilstand.  
 24. Klik på **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
