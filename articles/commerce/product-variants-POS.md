@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 1d6133d80d7674a1d896bc19a743a6bd4d0fb40f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f08906c14f80b07368d88d820acae83cf1157e6c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411191"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969945"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersøgning i POS
 
@@ -115,6 +114,3 @@ Følgende tabel indeholder flere oplysninger om yderligere handlinger, der er ti
 | Tilgængelighed         | Vis DTT-oplysninger for den valgte variantkombination for den valgte lokation. |
 | Vis alle lokationer   | Skift til standardvisningen for lagersøgning, og fremhæv oplysninger om lagertilgængeligheden for varevarianten på tværs af alle butikker i butikssøgergruppen, og i distributionscentre af tyden **Standard**. |
 | Få vist produktdetaljer | Omdiriger brugeren til siden **Produktdetaljer** for den tilknyttede produktmaster. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

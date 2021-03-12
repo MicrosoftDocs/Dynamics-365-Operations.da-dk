@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968998"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Lineær afskrivning for den resterende levetid
 
@@ -38,7 +37,7 @@ Du kan vælge enten **Kalender** eller **Regnskabsår** i feltet **Afskrivnings�
 
 ### <a name="calendar"></a>Kalender
 
-Hvis du vælger **Kalender** i feltet ***Afskrivningsår***, vises der som standard et år fra d. 1. januar til d. 31. december, også selvom du har defineret regnskabsåret anderledes. Indstillingen **Kalender** opdaterer afskrivningsgrundlaget d. 1. januar hvert år. Afskrivningsgrundlaget er typisk den bogførte nettoværdi minus restværdien. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
+Hvis du vælger **Kalender** i **_Afskrivningsår_*_ feltet, vises der som udgangspunkt et år fra d. 1. januar til og med 31. december, selvom du har defineret regnskabsåret anderledes. Indstillingen _* Kalender** opdaterer afskrivningsgrundlaget pr. 1. januar hvert år. Afskrivningsgrundlaget er typisk den bogførte nettoværdi minus restværdien. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
 -   **Årligt** bogfører et beløb d. 31. december.
 -   **Månedligt** bogfører et månedligt beløb sidst i hver kalendermåned.
@@ -80,6 +79,3 @@ Afskrivningsbeløbet er det samme hvert år: (Anskaffelsesomkostning – Restvæ
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26614d319453041177e8072793f09f52ebfd51fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411179"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969820"
 ---
 # <a name="set-up-assortments"></a>Konfigurere udvalg
 
@@ -55,6 +54,3 @@ Når du har fuldført forudsætningerne, kan du oprette et sortiment og tildele 
 2. Vælg de kanaler eller grupper af kanaler på højeste niveau, som sortimentet gælder for.
 3. Føj produktkategorier, individuelle produkter eller produktvarianter til udvalget. Du kan inkludere alle produkter i en bestemt kategori, eller du kan udelukke markerede produkter fra en kategori, der er inkluderet i sortimentet.
 4. Udgiv udvalget. Sortimentsplanlæggeren kører automatisk, når du udgiver et udvalg. Denne proces opretter listen over produkter. Når denne proces er fuldført, bliver produkterne tilgængelige for de kanaler, som produktudvalget er tildelt. Hvis der foretages ændringer af et udvalg, der er udgivet, eller af kanaler, som udvalget er tildelt til, skal udvalget opdateres. Hvis du vil opdatere udvalget, når der er foretaget ændringer, kan du køre sortimentsplanlæggeren som et batchjob.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

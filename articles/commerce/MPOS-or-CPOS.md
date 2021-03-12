@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410988"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970097"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Vælge mellem Modern POS (MPOS) og Cloud POS
 
@@ -105,6 +104,3 @@ Når du planlægger POS-implementeringen i dine butikker, skal du overveje følg
 - **Hardwareenheder/eksterne enheder/** – Et vigtigt aspekt ved et Retail POS-system er dets evne til at bruge eksterne POS-enheder som printere, pengeskuffer og betalingsterminaler. Selvom alle de tilgængelige POS-muligheder kan bruge eksterne enheder, er det kun MPOS for Windows der understøtter dem direkte. Alle andre programmer kræver en eller flere hardwarestationer. Selvom denne metode giver fleksibilitet, skal yderligere komponenter installeres, konfigureres og serviceres.
 - **Systemkrav** – Systemkravene til POS-programmet varierer. Sørg for at se de seneste oplysninger, før du foretager dit valg. For eksempel kører CPOS i en browser og understøtter derfor flere operativsystemer. Du kan finde flere oplysninger om systemkrav i [Systemkrav til skyinstallationer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Installation og vedligeholdelse** – Kompleksiteten i installations- og vedligeholdelseskrav kan variere, afhængigt af program- og installationsvalg. En skybaseret CPOS-installation kræver f.eks. ikke, at du installerer og opdaterer på hver enhed. Denne metode reducerer derfor kompleksitet og omkostninger meget. Men hvis du installerer MPOS på hvert kasseapparat og aktiverer offlinetilstand og også installerer delte hardwarestationer, øger du antallet af slutpunkter, der skal administreres, meget.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

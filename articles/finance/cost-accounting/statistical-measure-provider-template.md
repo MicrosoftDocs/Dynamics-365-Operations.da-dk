@@ -1,5 +1,5 @@
 ---
-title: Skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger
+title: Levere skabeloner for statistiske dimensionsmedlemmer og målinger
 description: Dette emne indeholder oplysninger om skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger. Statistiske dimensionsmedlemmer kan bruges som fordelingsbasis i politikker som f.eks. omkostningsdistribution og omkostningsfordeling. De kan også bruges til at rapportere forbrug af ikke-pengemæssige omkostninger.
 author: AndersGirke
 manager: AnnBe
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +18,14 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ec8ec7bc7785b1ddec58b78bd14ce164ad1ce032
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 79e8bf0714871ffd342bb6053153e6e4d0f5c668
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441669"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969447"
 ---
-# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger
+# <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Levere skabeloner for statistiske dimensionsmedlemmer og målinger
 
 [!include [banner](../includes/banner.md)]
 
@@ -96,7 +95,7 @@ Her er et eksempel på medarbejdere i HcmEmployment-tabellen.
 
 | Navn       | Bærer | Beskrivelse   | Medarbejdertype |
 |------------|-------------|----|-------------|
-| Medarbejder 1 | CC001       | Personale | Medarbejder    |
+| Medarbejder 1 | CC001       | Human Resources | Medarbejder    |
 | Medarbejder 2 | CC002       | FI | Medarbejder    |
 | Medarbejder 3 | CC002       | FI | Medarbejder    |
 | Medarbejder 4 | CC003       | LO | Medarbejder    |
@@ -165,7 +164,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende sta
 
 | Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |  Beskrivelse        | Størrelsesorden |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
-| CC001       | Personale | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 1,00      |
+| CC001       | Human Resources | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 1,00      |
 | CC002       | FI | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 2.00      |
 | CC003       | LO | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 2.00      |
 
@@ -173,7 +172,7 @@ Hvis de fuldtidsansattes foruddefinerede fordelingsbasis for dimensionsmedlemmer
 
 | Omkostningsobjekt | Beskrivelse    | Størrelsesorden | Fordelingsfaktor |
 |-------------|----|-----------|-------------------|
-| CC001       | Personale | 1,00      | (1/5) × beløb    |
+| CC001       | Human Resources | 1,00      | (1/5) × beløb    |
 | CC002       | FI | 2.00      | (2/5) × beløb    |
 | CC003       | LO | 2.00      | (2/5) × beløb    |
 
@@ -331,7 +330,7 @@ Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Admin
 
 | Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |      Beskrivelse                   | Størrelsesorden  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
-| CC001       | Personale | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00   |
+| CC001       | Human Resources | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00   |
 | CC003       | LO | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 15.000,00  |
 
@@ -339,13 +338,10 @@ Hvis elektricitetens foruddefinerede fordelingsbasis for dimensionsmedlemmer til
 
 | Omkostningsobjekt |    | Størrelsesorden | Fordelingsfaktor          |
 |-------------|----|-----------|----------------------------|
-| CC001       | Personale | 2,450.00  | (2.450 ÷ 21.550) × beløb  |
+| CC001       | Human Resources | 2,450.00  | (2.450 ÷ 21.550) × beløb  |
 | CC002       | FI | 4,100.00  | (4.100 ÷ 21.550) × beløb  |
 | CC003       | LO | 15.000,00 | (15.000 ÷ 21.550) × beløb |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Fordelingsgrundlag](allocation-bases.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

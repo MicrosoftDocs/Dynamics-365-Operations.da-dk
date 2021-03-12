@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f50ee568df492bcd811d2fefb1784bb55b50384b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad18063e0a66a4aac0ebef7f0ce45c73137abcc7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441489"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968523"
 ---
 # <a name="journalize-posted-journal-entries"></a>Journalisere bogførte kladdeposter
 
@@ -40,6 +39,3 @@ Denne procedure viser, hvordan du journaliserer bogførte kladdeposter. Procedur
 9. Klik på **OK** for at lukke filtreringssiden.
 10. Klik på **OK** for at starte journaliseringsprocessen. Der genereres en rapport, når processen er fuldført.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

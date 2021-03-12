@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f721a05c8b74f1cfcf43177b73129751483650e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99d157e82f8451e2c8f0bc7946ba30ca48e99add
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441586"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968498"
 ---
 # <a name="post-periodic-journals"></a>Bogføre periodiske kladder
 
@@ -58,6 +57,3 @@ Periodiske kladder kaldes også gentagelseskladder, da beløb, tekst og andre op
 27. Skriv eller vælg en værdi i feltet **Nummer på periodisk kladde**.
 28. Klik op linket i den valgte række på listen.
 29. Klik på **OK**. Periodisk kladde kan nu gennemgås, godkendes eller bogføres afhængigt af krav og konfiguration.   
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

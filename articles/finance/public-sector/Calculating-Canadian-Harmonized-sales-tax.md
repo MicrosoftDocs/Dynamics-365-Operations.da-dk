@@ -12,7 +12,6 @@ ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: ''
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.tgt_pltfrm: ''
 ms.custom: ''
 ms.search.region: Global
@@ -20,12 +19,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 777429c616c7c198f60eec2475012fe831fd26fe
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9fce946fd997b0f6b3a86ff4e990700e23b54247
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407664"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968238"
 ---
 # <a name="calculating-canadian-harmonized-sales-tax"></a>Beregning af canadisk harmoniseret moms
 
@@ -86,6 +85,3 @@ De momskoder, der er valgt for dimensionslinjen, er som følger, hvis posteringe
 |   Fond 101, division 121                  | Tax2, Tax3      |
 |   Fond 303, enhver division med undtagelse af 141         | Tax1, Tax2, Tax3|
 |   Fond 303, division 141                  | Tax1            |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

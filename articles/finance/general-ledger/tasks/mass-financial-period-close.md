@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a149b35c6964166207effc799a02cd4c59bbb843
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 598c28c2fb3dd6a13f96df81189b46c4e228da7a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441487"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968723"
 ---
 # <a name="mass-financial-period-close"></a>Masseafslutning af regnskabsperiode
 
@@ -42,6 +41,3 @@ Dette emne viser, hvordan du kan sætte en periode på hold eller permanent lukk
 11. Vælg **Opdater periodestatus**, og angiv status til **På hold**, **Åben** eller **Permanent lukket**. **Åben** angiver, at der kan bogføres til perioden, hvis brugeren har adgang. **På hold** betyder, at der ikke kan bogføres på perioden, men perioden kan genåbnes. **Permanent lukket** betyder, at perioden er lukket og ikke kan åbnes. Reguleringer kan ikke bogføres. Det anbefales ikke at indstille en periode til **Permanent lukket**, før alle reguleringer og revisioner er afsluttet.  
 12. Vælg **Opdater**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
