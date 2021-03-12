@@ -10,33 +10,32 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Denmark
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2d87694bdc0ae7e35427e692e7f70a479463c69a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc8b92e6bd4442d25d4b5e4272dad2cb3f46c275
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994277"
 ---
-# <a name="denmark-overview"></a><span data-ttu-id="0cf40-103">Oversigt for Danmark</span><span class="sxs-lookup"><span data-stu-id="0cf40-103">Denmark overview</span></span>
+# <a name="denmark-overview"></a><span data-ttu-id="3ee50-103">Oversigt for Danmark</span><span class="sxs-lookup"><span data-stu-id="3ee50-103">Denmark overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0cf40-104">Dette emne indeholder links til dokumentationsressourcer for Danmark.</span><span class="sxs-lookup"><span data-stu-id="0cf40-104">This topic provides links to documentation resources for Denmark.</span></span> 
+<span data-ttu-id="3ee50-104">Dette emne indeholder links til dokumentationsressourcer for Danmark.</span><span class="sxs-lookup"><span data-stu-id="3ee50-104">This topic provides links to documentation resources for Denmark.</span></span> 
 
-- [<span data-ttu-id="0cf40-105">Tildele et indbetalingskortformat til en debitorkonto</span><span class="sxs-lookup"><span data-stu-id="0cf40-105">Assign a payment slip format to a customer account</span></span>](tasks/assign-payment-slip-format-customer-account.md)
-- [<span data-ttu-id="0cf40-106">Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="0cf40-106">Create and post a customer invoice for a public sector customer</span></span>](tasks/create-post-customer-invoice-public-sector-customer.md)
-- [<span data-ttu-id="0cf40-107">Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="0cf40-107">Create and post a free text invoice for a public sector customer</span></span>](tasks/create-post-free-text-invoice-public-sector-customer.md)
-- [<span data-ttu-id="0cf40-108">Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="0cf40-108">Create and post a project invoice for a public sector customer</span></span>](tasks/create-post-project-invoice-public-sector-customer.md)
-- [<span data-ttu-id="0cf40-109">Importere konfigurationer for elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="0cf40-109">Import OIOUBL electronic invoicing configurations</span></span>](tasks/import-oioubl-electronic-invoicing-configurations.md)
-- [<span data-ttu-id="0cf40-110">Bogføre en fritekstfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="0cf40-110">Post a free text invoice with a payment slip</span></span>](tasks/post-free-text-invoice-payment-slip.md)
-- [<span data-ttu-id="0cf40-111">Bogføre en projektfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="0cf40-111">Post a project invoice with a payment slip</span></span>](tasks/post-project-invoice-payment-slip.md)
-- [<span data-ttu-id="0cf40-112">Bogføre en salgsfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="0cf40-112">Post a sales invoice with a payment slip</span></span>](tasks/post-sales-invoice-payment-slip.md)
-- [<span data-ttu-id="0cf40-113">Konfigurere debitorkonti til elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="0cf40-113">Set up customer accounts for OIOUBL electronic invoicing</span></span>](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
-- [<span data-ttu-id="0cf40-114">Konfigurere elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="0cf40-114">Set up OIOUBL electronic invoicing</span></span>](tasks/set-up-oioubl-electronic-invoicing.md)
-- [<span data-ttu-id="0cf40-115">Konfigurere indbetalingskortformat</span><span class="sxs-lookup"><span data-stu-id="0cf40-115">Set up payment slip format</span></span>](tasks/set-up-payment-slip-format.md)
+- [<span data-ttu-id="3ee50-105">Tildele et indbetalingskortformat til en debitorkonto</span><span class="sxs-lookup"><span data-stu-id="3ee50-105">Assign a payment slip format to a customer account</span></span>](tasks/assign-payment-slip-format-customer-account.md)
+- [<span data-ttu-id="3ee50-106">Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="3ee50-106">Create and post a customer invoice for a public sector customer</span></span>](tasks/create-post-customer-invoice-public-sector-customer.md)
+- [<span data-ttu-id="3ee50-107">Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="3ee50-107">Create and post a free text invoice for a public sector customer</span></span>](tasks/create-post-free-text-invoice-public-sector-customer.md)
+- [<span data-ttu-id="3ee50-108">Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="3ee50-108">Create and post a project invoice for a public sector customer</span></span>](tasks/create-post-project-invoice-public-sector-customer.md)
+- [<span data-ttu-id="3ee50-109">Importere konfigurationer for elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="3ee50-109">Import OIOUBL electronic invoicing configurations</span></span>](tasks/import-oioubl-electronic-invoicing-configurations.md)
+- [<span data-ttu-id="3ee50-110">Bogføre en fritekstfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="3ee50-110">Post a free text invoice with a payment slip</span></span>](tasks/post-free-text-invoice-payment-slip.md)
+- [<span data-ttu-id="3ee50-111">Bogføre en projektfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="3ee50-111">Post a project invoice with a payment slip</span></span>](tasks/post-project-invoice-payment-slip.md)
+- [<span data-ttu-id="3ee50-112">Bogføre en salgsfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="3ee50-112">Post a sales invoice with a payment slip</span></span>](tasks/post-sales-invoice-payment-slip.md)
+- [<span data-ttu-id="3ee50-113">Konfigurere debitorkonti til elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="3ee50-113">Set up customer accounts for OIOUBL electronic invoicing</span></span>](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
+- [<span data-ttu-id="3ee50-114">Konfigurere elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="3ee50-114">Set up OIOUBL electronic invoicing</span></span>](tasks/set-up-oioubl-electronic-invoicing.md)
+- [<span data-ttu-id="3ee50-115">Konfigurere indbetalingskortformat</span><span class="sxs-lookup"><span data-stu-id="3ee50-115">Set up payment slip format</span></span>](tasks/set-up-payment-slip-format.md)
