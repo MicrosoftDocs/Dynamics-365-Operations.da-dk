@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 001bdd61f9266798dadae2ac7c96a4f4c19dbb94
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2415945c5a8f73e095627d638fcc572c50ffe8ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411139"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964889"
 ---
 # <a name="create-and-associate-registers"></a> Oprette og tilknytte registre
 
@@ -44,6 +43,3 @@ Denne fremgangsmåde viser, hvordan du kan oprette en POS-kasse. Denne procedure
     * Autorisationskode – POS-kasseapparatnummer bruges til at informere betalingsprocessor om, hvilken betalingsterminal der sender anmodninger om godkendelse. Denne værdi kaldes ofte "Terminal-id" eller "TID". TID findes normalt på en mærkat på betalingsenheden.  
 9. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

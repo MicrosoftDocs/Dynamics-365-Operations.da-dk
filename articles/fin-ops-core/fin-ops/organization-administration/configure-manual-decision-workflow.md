@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c9cecabb7923e86e8aa09eed7bd3b1ba5ee0bd8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d351facbce02355ddb4bdf91d43d9df561e4f3b5
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694855"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798846"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurere manuelle beslutninger i en arbejdsgang
 
@@ -350,6 +350,3 @@ Udfør følgende trin, hvis beslutningen skal træffes inden en bestemt tidsgræ
     - **År** – Vælg den dag, uge og måned, hvor beslutningen senest skal være truffet. Det kan være, at beslutningen f.eks. skal være truffet senest fredag i den tredje uge i december.
 
 4. Hvis tidsfristen overskrides, træffes beslutningen automatisk af systemet. Vælg den indstilling, som systemet skal vælge, på listen **Handling**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

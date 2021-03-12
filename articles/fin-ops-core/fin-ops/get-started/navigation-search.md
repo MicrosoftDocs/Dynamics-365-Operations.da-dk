@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b68182ff7da07f350e2eacaf569089e0fdf44a8d
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695055"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799089"
 ---
 # <a name="navigation-search"></a>Navigationssøgning
 
@@ -62,6 +62,3 @@ Listen over søgeresultater er begrænset til 10 elementer. Hvis du ikke kan fin
 ## <a name="development"></a>Udvikling
 
 Fra et udviklingsperspektiv er funktionen til navigationssøgning meget nem at udnytte, fordi der praktisk talt ikke er nogen forsinkelse mellem implementering af menupunkter og deres evne til at blive vist i søgeresultater. Så længe menupunkterne er tilknyttet fra navigationsruden eller dashboardet, bliver det automatisk muligt at søge i dem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAdjInventOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc97db0f0b637e27ece904fe24e91a92044bc17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a702a083d60bdb289712027fbaee5c0a72e60cb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424836"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963832"
 ---
 # <a name="adjust-on-hand-inventory-cost-values"></a>Få vist omkostningsværdier for disponibel lagerbeholdning
 
@@ -44,6 +43,3 @@ Denne vare blev konfigureret med lagermodellen FIFO (First In, First Out), og la
 -   5. februar: en mængde på 1 til kr. 13,00
 
 Hvis du vil angive kostprisen for disse to varer til kr. 15,00, skal du bruge indstillingen Regulering af disponibel lagerbeholdning til at regulere de åbne disponible lagerantal med virkning fra den sidste lagerlukningsperiode. **Bemærk!** Bogføringsdatoen for reguleringen af den disponible lagerbeholdning vil være datoen for den sidste lagerlukning. Denne dato kan ikke redigeres.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

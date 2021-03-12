@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustGroup, CustTradingPartnerCode, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 95f6f31906539abfd7935274484d1ca8cf288d0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0aea4ac41774ec0568a3c9e0a141dd07066a4e7d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407708"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962464"
 ---
 # <a name="create-and-assign-a-trading-partner-code-in-the-public-sector"></a>Oprette og tildele en handelspartnerkode i den offentlige sektor
 
@@ -48,6 +47,3 @@ Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din o
 6. Vælg handelspartnerkoden for denne myndighed i feltet Handelspartnerkode.
 7. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

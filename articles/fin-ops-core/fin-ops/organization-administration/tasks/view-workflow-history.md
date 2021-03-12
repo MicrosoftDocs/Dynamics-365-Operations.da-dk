@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d7118e85ff56f8c935c24a91dc84c6cc09641e0
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 325478ed89b9c650899001dd08d1c98550fce520
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694305"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798974"
 ---
 # <a name="view-workflow-history"></a>Vise arbejdsgangshistorik
 
@@ -46,6 +46,3 @@ Dette emne beskriver fremgangsmåden for at få vist statussen for et dokument, 
     - Knappen **Tildel igen** åbner en dialogboks, hvor du igen kan tildele et arbejdselement til en anden bruger.  
     - Sørg for, at sektionen **Sporingsdetaljer** er udvidet. I denne sektion kan du få vist arbejdsgangshistorikken for det valgte dokument.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

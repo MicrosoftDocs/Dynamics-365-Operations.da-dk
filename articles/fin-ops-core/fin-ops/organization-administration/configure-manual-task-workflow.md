@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 109c047a35154f6d4c0ebcd71e1c72990d0f4971
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f61e0f7ee16519767192fb379f20c1ed20b69caa
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693372"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798799"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurere manuelle opgave i en arbejdsgang
 
@@ -381,6 +381,3 @@ Når den manuelle opgave tildeles en bruger, skal vedkommende håndtere opgaven.
 5. Markér afkrydsningsfeltet **Deleger**, hvis brugeren skal kunne tildele denne opgave til en anden bruger.
 6. Markér afkrydsningsfeltet **Tildel igen**, hvis brugeren skal kunne tildele denne opgave til en anden bruger i workflowopgavekøen.
 7. Markér afkrydsningsfeltet **Frigiv**, hvis brugeren skal kunne tildele denne opgave til workflowopgavekøen. Derefter kan en anden bruger fuldføre opgaven.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

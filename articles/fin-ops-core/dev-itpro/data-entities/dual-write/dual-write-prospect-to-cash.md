@@ -3,7 +3,7 @@ title: Kundeemner til kontanter og to skrivninger
 description: I dette emne får dig oplysninger om kundeemner til kontanter og to skrivninger.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683641"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959595"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
@@ -37,6 +37,11 @@ I-app-grænsefladerne kan du få adgang til behandlingsstatus og fakturaoplysnin
 
 ![Dataflow med to skrivninger til kundeemner til kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+Du kan finde oplysninger om integration af kunder og kontakter i [Integreret kundemaster](customer-mapping.md). Du kan finde oplysninger om produktintegration i [Samlet produktoplevelse](product-mapping.md).
+
+> [!NOTE]
+> I Dynamics 365 Sales refererer både kundeemne og kunde til en post i tabellen **Konto**, hvor kolonnen **RelationshipType** er enten **Kundeemne** eller **Kunde**. Hvis din forretningslogik omfatter en **Konto**-kvalificeringsproces, hvor posten **Konto** oprettes og kvalificeres som et kundeemne først og derefter som en kunde, synkroniseres denne post kun til Finance and Operations-appen, når den er en kunde (`RelationshipType=Customer`). Hvis rækken **Konto** skal synkroniseres som et kundeemne, skal du have en brugerdefineret tilknytning til integration af kundeemnedataene.
+
 ## <a name="prerequisites-and-mapping-setup"></a>Forudsætninger og tilknytningsopsætning
 
 Før du kan synkronisere salgstilbud, skal du opdatere følgende indstillinger.
@@ -46,11 +51,11 @@ Før du kan synkronisere salgstilbud, skal du opdatere følgende indstillinger.
 Gå til **Indstillinger \> Administration \> Systemindstillinger \> Salg** i Sales, og sørg for, at der bruges til følgende indstillinger:
 
 - Systemindstillingen **Brug systemets prisberegningssystem** er angivet til **Ja**.
-- Feltet **Rabatberegningsmetode** er angivet til **Linjeelement**.
+- Kolonnen **Rabatberegningsmetode** er angivet til **Linjeelement**.
 
 ### <a name="sites-and-warehouses"></a>Websteder og lagersteder
 
-I Supply Chain Management skal felterne **Websted** og **Lagersted** udfyldes for tilbudslinjer og ordrelinjer. Hvis du angiver webstedet og lagerstedet i standardordreindstillingerne, angives disse felter automatisk, når du føjer et produkt til en tilbudslinje eller en ordrelinje. 
+I Supply Chain Management skal kolonnerne **Lokation** og **Lagersted** udfyldes for tilbudslinjer og ordrelinjer. Hvis du angiver lokationen og lagerstedet i standardordreindstillingerne, angives disse kolonner automatisk, når du føjer et produkt til en tilbudslinje eller en ordrelinje. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Nummerserier til tilbud og ordrer
 
@@ -62,9 +67,9 @@ Hvis nummerserien i Supply Chain Management f.eks. er **1, 2, 3, 4, 5,...**, og 
 
 Salgstilbud kan oprettes i Sales eller i Supply Chain Management. Hvis du opretter et tilbud i Sales, synkroniseres det med Supply Chain Management i realtid. Hvis du tilsvarende opretter et tilbud i Supply Chain Management, synkroniseres det med Sales i realtid. Vær opmærksom på følgende punkter:
 
-+ Du kan føje en rabat til produktet i tilbuddet. I dette tilfælde synkroniseres rabatten med Supply Chain Management. Felterne **Rabat**, **Gebyrer** og **Moms** i hovedet styres af en opsætning i Supply Chain Management. Denne opsætning understøtter ikke integrationstilknytning. I stedet administreres og håndteres felterne **Pris**, **Rabat**, **Tillæg** og **Moms** af Supply Chain Management.
-+ Felterne **Rabatprocent**, **Rabat** og **Fragtbeløb** i salgstilbuddets overskrift er skrivebeskyttede.
-+ Felterne **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke del af standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
++ Du kan føje en rabat til produktet i tilbuddet. I dette tilfælde synkroniseres rabatten med Supply Chain Management. Kolonnerne **Rabat**, **Gebyrer** og **Moms** i hovedet styres af en opsætning i Supply Chain Management. Denne opsætning understøtter ikke integrationstilknytning. I stedet administreres og håndteres kolonnerne **Pris**, **Rabat**, **Gebyr** og **Moms** af Supply Chain Management.
++ Kolonnerne **Rabatprocent**, **Rabat** og **Fragtbeløb** i salgstilbuddets overskrift er skrivebeskyttede kolonner.
++ Kolonnerne **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke del af standardtilknytningerne. Hvis du vil tilknytte disse kolonner, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som tabellen synkroniseres mellem.
 
 Hvis du også bruger løsningen Field Service, skal du sørge for at aktivere parameteren **Opret hurtigt tilbudslinjen** igen. Hvis du aktiverer parameteren igen, kan du fortsætte med at oprette tilbudslinjer ved hjælp af funktionen til hurtig oprettelse.
 1. Naviger til dit Dynamics 365 Sales-program.
@@ -82,7 +87,7 @@ Salgstilbud kan oprettes i Sales eller i Supply Chain Management. Hvis du oprett
 + Beregning og afrunding af rabat:
 
     - Rabatberegningsmodellen i Sales adskiller sig fra rabatberegningsmodellen i Supply Chain Management. I Supply Chain Management kan det endelige rabatbeløb på en salgslinje være resultatet af en kombination af rabatbeløb og rabatprocenter. Hvis dette endelige rabatbeløb divideres med antallet på linjen, kan afrunding forekomme. Denne afrunding tages imidlertid ikke i betragtning, hvis et afrundet rabatbeløb pr. enhed synkroniseres med Sales. Det fulde beløb skal synkroniseres uden at blive divideret med linjeantallet for at sikre, at det fulde rabatbeløb fra en salgslinje i Supply Chain Management synkroniseres korrekt til Sales. Derfor skal du definere rabatberegningsmetoden som **Linjeelement** i Sales.
-    - Når en salgsordrelinje synkroniseres fra Sales til Supply Chain Management, bruges hele linjerabatbeløbet. Da Supply Chain Management ikke har noget felt, der kan gemme det fulde rabatbeløb for en linje, divideres beløbet med antallet og gemmes i feltet **Linjerabat**. En eventuel afrunding, der opstår under denne division, gemmes i feltet **Salgsgebyrer** på salgslinjen.
+    - Når en salgsordrelinje synkroniseres fra Sales til Supply Chain Management, bruges hele linjerabatbeløbet. Da Supply Chain Management ikke har nogen kolonne, der kan gemme det fulde rabatbeløb for en linje, divideres beløbet med antallet og gemmes i kolonnen **Linjerabat**. En eventuel afrunding, der opstår under denne division, gemmes i kolonnen **Salgsgebyrer** på salgslinjen.
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>Eksempel: Synkronisering fra Sales til Supply Chain Management
 
@@ -98,7 +103,7 @@ Hvis du synkroniserer fra Supply Chain Management til Sales, får du følgende r
 
 ## <a name="dual-write-solution-for-sales"></a>Løsning med to skrivninger til Sales
 
-Nye felter er føjet til enheden **Ordre** og vises på siden. De fleste af disse felter vises under fanen **Integration** i Sales. Yderligere oplysninger om, hvordan statusfelterne tilknyttes, finder du under [Konfigurere tilknytningen af statusfelter for salgsordre](sales-status-map.md).
+Nye kolonner er føjet til tabellen **Ordre** og vises på siden. De fleste af disse kolonner vises under fanen **Integration** i Sales. Yderligere oplysninger om, hvordan statuskolonnerne tilknyttes, finder du under [Konfigurere tilknytningen af statuskolonner for salgsordre](sales-status-map.md).
 
 + Knapperne **Opret faktura** og **Annuller ordre** på siden **Salgsordre** er skjult i Sales.
 + Værdien **Salgsordrestatus** forbliver **Aktiv** for at sikre, at ændringer fra Supply Chain Management kan strømme til salgsordren i Sales. Standardværdien for **Statecode \[Status\]** skal angives til **Aktiv** for at styre denne funktion.
@@ -107,18 +112,18 @@ Nye felter er føjet til enheden **Ordre** og vises på siden. De fleste af diss
 
 Salgsfakturaer oprettes i Supply Chain Management og synkroniseres til Sales. Vær opmærksom på følgende punkter:
 
-+ Feltet **Fakturanummer** er føjet til enheden **Faktura** og vises på siden.
++ Kolonnen **Fakturanummer** er føjet til tabellen **Faktura** og vises på siden.
 + Knappen **Opret faktura** på siden **Salgsordre** er skjult, da fakturaer oprettes i Supply Chain Management og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres, fordi fakturaer synkroniseres fra Supply Chain Management.
 + Værdien **Salgsordrestatus** ændres automatisk til **Faktureret**, når den relaterede faktura fra Supply Chain Management er blevet synkroniseret til Sales. Desuden tildeles ejeren af den salgsordre, hvorfra fakturaen blev oprettet, som ejer af fakturaen. Ejeren af salgsordren kan derfor få vist fakturaen.
-+ Felterne **Fragtvilkår**, **Leveringsbetingelser** og **Leveringstilstand** indgår ikke i standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
++ Kolonnerne **Fragtvilkår**, **Leveringsbetingelser** og **Leveringstilstand** indgår ikke i standardtilknytningerne. Hvis du vil tilknytte disse kolonner, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som tabellen synkroniseres mellem.
 
 ## <a name="templates"></a>Skabeloner
 
 Kundeemne til kontant omfatter en samling af centrale tabeltilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
-| Finance and Operations-apps | Modelstyrede apps i Dynamics 365 | Beskrivende tekst |
+| Finance and Operations-apps | Kundeengagementapps | Betegnelse |
 |-----------------------------|-----------------------------------|-------------|
-| Salgsfakturahoveder V2    | fakturaer                          |             |
+| Salgsfakturahoveder V2    | fakturaer                          | Tabellen Salgsfakturahoveder V2 i Finance and Operations-appen indeholder fakturaer for salgsordrer og fritekstfakturaer. Der anvendes et filter i Dataverse for dobbeltskrivning, der filtrerer alle dokumenter med fritekstfakturaer ud. |
 | Salgsfakturalinjer V2      | invoicedetails                    |             |
 | CDS-salgsordrehoveder     | salesorders                       |             |
 | CDS-salgsordrelinjer       | salesorderdetails                 |             |
@@ -135,6 +140,11 @@ Her er de relaterede kernetabeltilknytninger for kundeemne til kontant:
 + [Alle produkter til msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Prisliste](product-mapping.md)
 
+## <a name="limitations"></a>Begrænsninger
+- Returordrer understøttes ikke.
+- Kreditnotaer understøttes ikke.
+- Økonomiske dimensioner skal angives for masterdata, f.eks. debitor og kreditor. Når en kunde føjes til et tilbud eller en salgsordre, flyttes de økonomiske dimensioner, der er knyttet til kundeposten, automatisk til ordren. Aktuelt omfatter dobbeltskrivning ikke økonomiske dimensionsdata for masterdata. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Her er de relaterede kernetabeltilknytninger for kundeemne til kontant:
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

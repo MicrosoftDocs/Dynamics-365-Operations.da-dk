@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21f1b0a34205e192957405bc9d298c45c8bb4d25
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ef31bc02fe1761a587ff6bcbecf4a0f34daea9b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411134"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964864"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Oprette, beregne og bogføre opgørelser for en detailbutik
 
@@ -48,6 +47,3 @@ Dette emne gennemgår de manuelle trin til oprettelse, beregning og bogføring a
 12. Vælg **Butiksregnskab** på startsiden.
 13. Vælg fanen **Bogførte opgørelser**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

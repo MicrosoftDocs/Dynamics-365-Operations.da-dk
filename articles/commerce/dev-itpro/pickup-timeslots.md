@@ -3,7 +3,7 @@ title: Oprette og opdatere tidsintervaller for kundeafhentning
 description: I dette emne beskrives, hvordan du opretter, konfigurerer og opdaterer tidsintervaller for kundeafhentning i Commerce Headquarters.
 author: anupamar-ms
 manager: AnnBe
-ms.date: 11/06/2020
+ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: f86eb47ec64dff230223ed0ecbe792373aca649f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
+ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681536"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "4828205"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Oprette og opdatere tidsintervaller for kundeafhentning
 
@@ -49,17 +49,15 @@ Et tidsinterval defineres ved hjælp af følgende egenskaber:
 
     Egenskaben **Minimum dage** sikrer, at der er tilstrækkelig tid til, at forhandleren kan behandle ordren, før den er klar til afhentning. Egenskaben **Maksimum dage** sikrer, at brugeren ikke kan vælge en dato, der ligger for langt ude i fremtiden. Hvis minimumværdien f.eks. er **1**, og der afgives en ordre den 20. september, er den tidligste dag, hvor ordren vil være tilgængelig for afhentning, den næste dag, der kan vælges (21. september). På samme måde kan du definere det maksimale antal dage, en ordre kan afhentes, ved at angive en maksimumværdi. Når der er defineret minimum- og maksimumværdier, kan webstedets brugere kun se og vælge et bestemt interval af dage under betalingen.
 
-    Du kan indstille minimumværdien til en decimalværdi, der er mindre end 1. Hvis f.eks. afhentning er tilgængelig i fire timer, efter at en ordre er afgivet, skal du indstille minimumværdien til **0,17** (= 4 ÷ 24, rundet op til to decimaler). Hvis du indstiller minimumværdien til en decimalværdi, der er større end 1, afrundes den dog altid til det nærmeste hele tal (op eller ned).
-
-    Hvis du indstiller maksimumværdien til en decimalværdi, rundes den altid op. En værdi på **1,2** rundes f.eks. op til **2**.
+    Du kan indstille minimumværdien til en decimalværdi, der er mindre end 1. Hvis f.eks. afhentning er tilgængelig i fire timer, efter at en ordre er afgivet, skal du indstille minimumværdien til **0,17** (= 4 ÷ 24, rundet op til to decimaler). Hvis du indstiller minimumværdien til en decimalværdi, der er større end 1, afrundes den dog altid op til det nærmeste hele tal. En værdi på **1,2** rundes f.eks. op til **2**. Hvis du tilsvarende indstiller maksimumværdien til en decimalværdi, afrundes den dog altid op til det nærmeste hele tal. 
 
 - **Startdato** og **Slutdato** – Angiv start- og slutdatoer for tidsintervallet. Hvert tidsinterval har en startdato og en slutdato. Det gør det muligt for dig at tilføje forskellige tidsintervaller i løbet af hele året (f.eks. afhentning i løbet af ferier). Hvis start- og slutdatoer for et tidsinterval ændres, efter at en ordre er afgivet, gælder ændringerne ikke for den pågældende ordre. Når du definerer start-og slutdatoer, skal du overveje at gemme lukkedatoer (f.eks. juledag) og sikre, at der ikke defineres tidsintervaller for disse dage.
-- **Aktive leveringstimer** – Angiv den periode, hvor afhentning er tilladt. Afhentningstiden kan f.eks. være mellem kl. 14 og 17 hver dag. Med denne egenskab kan afhentningstiden være uafhængig af butikkens åbningstider. Derfor kan forhandleren konfigurere afhentningstider, der opfylder butikkens specifikke krav. Når du definerer de aktive timer for afhentning, skal du overveje at gemme tiderne og sikre, at der ikke defineres afhentningstider, når butikken er lukket.
+- **Aktive afhentningstimer** – Angiv den periode, hvor afhentning er tilladt. Afhentningstiden kan f.eks. være mellem kl. 14 og 17 hver dag. Med denne egenskab kan afhentningstiden være uafhængig af butikkens åbningstider. Derfor kan forhandleren konfigurere afhentningstider, der opfylder butikkens specifikke krav. Når du definerer de aktive timer for afhentning, skal du overveje at gemme tiderne og sikre, at der ikke defineres afhentningstider, når butikken er lukket.
 
     > [!NOTE]
     > Tiderne for afhentning i butikken skal defineres i tidszonen for den relevante butik.
 
-- **Tidsinterval** – Angiv den varighed, der kan tildeles til hvert tidsinterval. Varigheden af hver tidsinterval kan f.eks. angives i trin på 15 minutter, 30 minutter eller en time.
+- **Tidsinterval** – Angiv den varighed, der kan tildeles til hvert tidsinterval. Varigheden af hver tidsinterval kan f.eks. angives i trin på 15 minutter, 30 minutter eller en time. Hvis værdien for tidsinterval er 0, er tidsinterval tilgængeligt for hele varigheden mellem start- og sluttid.
 - **Slots pr. interval** – Angiv det antal kunder eller ordrer, der kan betjenes ved afhentning i løbet af hvert tidsinterval. Du kan f.eks. angive **1,** **2**, **3** eller et andet helt tal.
 - **Aktive dage** – Angiv de ugedage, hvor tidsintervaller for afhentning er aktive. Denne egenskab gør det muligt for forhandleren at definere de dage, hvor afhentning af ordrer kan understøttes.
 - **Detailkanaler** – Angiv detailkanalerne. Hvert tidsinterval kan knyttes til en eller flere detailbutikker. Afhængigt af en butiks åbningstider, kan der oprettes en eller flere tidsintervalposter, som kan knyttes til en kanal. 
@@ -84,7 +82,7 @@ Følg disse trin for at konfigurere tidsintervalfunktionen i Commerce Headquarte
 1. Vælg **Tilføj** i oversigtspanelet **Ordreafhentning - Tidsindstillinger**.
 1. I dialogboksen **Ordreafhentning - Tidsindstillinger** skal du definere datointervallet, leveringsmåde, aktive leveringstimer, antal aktive dage, tidsinterval, slots pr. interval og andre indstillinger.
 
-    Hvis tidsintervaller er statiske i en overskuelig fremtid, skal du lade feltet **Slutdato** være tomt.
+    Hvis tidsintervaller er statiske i en overskuelig fremtid, skal du indstille feltet **Slutdato** til **Aldrig**.
 
     > [!NOTE]
     > Du kan oprette flere skabeloner, men kun én skabelon kan knyttes til en enkelt kanal eller butik.
@@ -120,9 +118,12 @@ I følgende illustration vises et eksempel på en e-handelsordre, hvor der er va
 
 ![Eksempel på en e-handelsordre, hvor der er valgt et tidsinterval for afhentning](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
+## <a name="time-slot-selection-for-call-center-orders"></a>Valg af tidsinterval for callcenter-ordrer
+
+I callcenter-appen kan callcenter-medarbejdere vælge afhentningsbutik eller lokalitet samt en dato og et tidsrum, som er markeret i følgende illustration.
+
+![Eksempel på en callcenter-ordre, hvor der er valgt et tidsinterval for afhentning](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Modul med afhentningsoplysninger](../pickup-info-module.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: ER-funktionen DATEFORMAT
 description: Dette emne indeholder oplysninger om, hvordan funktionen DATEFORMAT til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
 manager: kfend
-ms.date: 12/03/2019
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa6bdef2168112aeb17e0edb9f9a6d1b3bd45c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cdc1671f818bc2c4d8a78d0a35337298e83c5060
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684925"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4826005"
 ---
 # <a name="dateformat-er-function"></a>ER-funktionen DATEFORMAT
 
@@ -52,6 +52,9 @@ En datoværdi, der repræsenterer den dato, der skal formateres.
 
 Outputstrengens format.
 
+> [!NOTE]
+> Der skelnes mellem store og små bogstaver i formatstrengen, når du enten bruger et standardformat eller et brugerdefineret format. F.eks. returnerer [standardformatet](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) "d" datoen ved at bruge det korte datomønster, mens standardformatet "D" returnerer datoen ved at bruge det lange datomønster. Desuden returnerer det [brugerdefinerede](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) "M"-format måneden fra 1 til 12, mens det brugerdefinerede "m"-format returnerer minuttallet fra 0 til og med 59.
+
 `culture`: *Streng*
 
 Den kultur, du vil bruge til formatering.
@@ -64,7 +67,7 @@ Den resulterende strengværdi.
 
 ## <a name="usage-notes"></a>Bemærkninger til brug
 
-Når kulturen ikke er defineret som et argument for den kaldte funktion, er værdien af `culture` defineret af den kaldende kontekst. For eksempel, hvis funktionen `DATEFORMAT` kaldes ved hjælp af syntaks 1 i et elektronisk rapporteringsformat (ER) for et **FIL**-element, der er konfigureret til at bruge den tyske kultur, vil konverteringen ske ved hjælp af den tyske kultur. Standardværdien for `culture` er **EN-US**.
+Hvis kulturen ikke er defineret som et argument for den kaldte funktion, er værdien af `culture` defineret af den kaldende kontekst. For eksempel, hvis funktionen `DATEFORMAT` kaldes ved hjælp af syntaks 1 i et elektronisk rapporteringsformat (ER) for et **FIL**-element, der er konfigureret til at bruge den tyske kultur, vil konverteringen ske ved hjælp af den tyske kultur. Standardværdien for `culture` er **EN-US**.
 
 ## <a name="example-1"></a>Eksempel 1
 
@@ -77,6 +80,3 @@ Når kulturen ikke er defineret som et argument for den kaldte funktion, er vær
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dato- og klokkeslætsfunktioner](er-functions-category-datetime.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Konfigurer opdeling af opgaver
 description: Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige brugere.
 author: peakerbl
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57c7c436c91ab11404cac3ea056b028023a0617a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bcbd32131f9980a4f55e91b9d7ad48171069f72e
+ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688167"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "4826388"
 ---
 # <a name="set-up-segregation-of-duties"></a>Konfigurer opdeling af opgaver
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige brugere. Dette begreb kaldes opdeling af opgaver. Du ønsker f.eks. ikke, at den samme person både skal bekræfte modtagelsen af varer og behandle betalingen til kreditoren. Opdeling af opgaver hjælper dig med at mindske risikoen for svig og også med at registrere fejl eller uregelmæssigheder. Du kan også bruge opdeling af opgaver til at gennemtvinge politikker for intern kontrol. Fuldfør følgende procedure for at oprette en regel. Du skal være systemadministrator for at kunne fuldføre proceduren. Det demodatafirma, der bruges til at oprette denne procedure, er DAT. 
+Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige brugere. Dette begreb kaldes opdeling af opgaver. Du ønsker f.eks. ikke, at den samme person både skal bekræfte modtagelsen af varer og behandle betalingen til kreditoren. Opdeling af opgaver hjælper dig med at mindske risikoen for svig og også med at registrere fejl eller uregelmæssigheder. Du kan også bruge opdeling af opgaver til at gennemtvinge politikker for intern kontrol. Fuldfør følgende procedure for at oprette en regel. Du skal være systemadministrator for at kunne fuldføre proceduren.
 
-1. Gå til **Navigationsrude > Moduler > Systemadministration > Sikkerhed > Opdeling af opgaver > Regler for opdeling af opgaver.**
+1. Gå til **Systemadministration** > **Sikkerhed** > **Opdeling af opgaver** > **Regler for opdeling af opgaver**.
 2. Klik på **Ny**.
 3. Skriv en værdi for reglen i feltet **Navn**.
 4. Klik på rullelisten i feltet **Første pligt** for at åbne opslaget.
@@ -40,6 +40,5 @@ Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige 
 12. Indtast en værdi i feltet **Sikkerhedsmitigering**. Angiv en beskrivelse af de handlinger, du udfører for at reducere sikkerhedsrisikoen. Du kan f.eks. mindske risikoen ved at foretage en mere detaljeret gennemgang af processen, ved at gennemføre en månedlig evaluering på lederniveau eller ved at dele ressourcer med andre afdelinger.     
 13. Klik på **Gem**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+> [!IMPORTANT] 
+> Overholdelse af reglerne for opdeling af opgaver kontrolleres ikke, når du opretter en regel. Du kan oprette en regel, der skaber en konflikt for eksisterende roller. Eksisterende brugerrolletildelinger kan også være i konflikt med den nye regel. Du skal validere overholdelsen af angivne standarder, når du har oprettet eller redigeret en regel. Yderligere oplysninger finder du i [Identificere og løse konflikter i opdeling af opgaver](identify-resolve-conflicts-segregation-duties.md)

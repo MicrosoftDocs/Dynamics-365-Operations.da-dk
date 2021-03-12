@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, HcmJob
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ffc64fd39a390af3ca7110178ef0999527106dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ac03e1bfb7a2463b31feca0a4303c182a00ad259
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411130"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964814"
 ---
 # <a name="create-pos-permission-groups"></a>Oprette POS-rettighedsgrupper
 
@@ -41,13 +40,10 @@ Dette emner beskriver, hvordan du opretter en POS-rettighedsgruppe. Det demodata
 9. Vælg **Ja** i feltet **Tillad ændring af adgangskode**.
 10. Vælg **Ja** i feltet **Tillad lukning uden kontrol**.
 11. Vælg **Gem**. Når dine ændringer er gemt, skal du køre planen til medarbejderdistribution for at overføre ændringerne til handelskanalerne. 
-12. Gå i navigationsruden til **Moduler > Personale > Job > Job**.
+12. Gå i navigationsruden til **Moduler > Human resources > Job > Job**.
 13. Dernæst vil vi tildele POS-rettighedsgruppen til et Job. Find og vælg den ønskede post på listen.
 14. Vælg **Rediger**.
 15. Udvid sektionen **Jobklassificering**.
 16. Indtast eller vælg en værdi i feltet POS-rettighedsgruppe. Alle arbejdere i positioner for dette job vil bruge indstillinger for denne POS-rettighedsgruppe, medmindre arbejdernes POS-rettigheder er blevet tilsidesat på deres positionsniveau.  
 17. Vælg **Gem**. Når dine ændringer er gemt, skal du køre planen til medarbejderdistribution for at overføre ændringerne til kanalerne.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

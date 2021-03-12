@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410985"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963104"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
@@ -95,6 +94,3 @@ Du kan også knytte en fremskyndelseskode til en leveringsmåde, som du konfigur
 Ved der for eksempel skal leveres med fly næste arbejdsdag, skal pluk udføres på lagerstedet inden kl. 13 hver dag. I så fald kan der oprettes en fremskyndelseskode, som kan knyttes til enhver leveringsmåde for næste arbejdsdag, der er konfigureret i systemet. Når lagerstedet opretter sin plukbølge, kan den relevante fremskyndelseskode i feltet **Fremskynd** bruges som et filter, så pluk kun køres for ordrer, der har de leveringsmåder, der er knyttet til koden.
 
 Desuden, når der angives en callcenterordre, kan en fremskyndelseskode manuelt anvendes på salgsordrehovedet eller på en enkelt salgsordrelinje. Koden kan igen bruges til sorterings- eller rapporteringsformål. Nogle gange skal en ordre håndteres omhyggeligt på grund af et kundeserviceproblem. I dette tilfælde kan der anvendes en bestemt fremskyndelseskode på ordrehovedet eller -linjerne for at identificere og prioritere ordren under ordreopfyldningsprocessen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

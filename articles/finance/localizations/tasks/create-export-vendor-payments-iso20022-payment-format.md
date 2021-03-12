@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff8a2858bfa96eb1d4b0afa1e48ebd1b578a4431
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441659"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964535"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Oprette og eksportere kreditorbetalinger ved hjælp af ISO20022-betalingsformat
 
@@ -50,6 +49,3 @@ Det er den femte procedure af fem, der illustrerer kreditors betalingsproces ved
     3.    Skriv en værdi i feltet **Filnavn**. I dette eksempel bliver den oprettede fil SEPA-kompatibel på grund af indbetalingen i EUR. ISO20022-pengeoverførsel samt andre formater for kreditorbetalinger kan også bruges til oprettelse af betalinger i andre valutaer.
     4.    Indtast eller vælg en værdi i feltet **Bankkonto**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

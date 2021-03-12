@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LedgerFund
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fa99c179d69a01289532ed9590e6e17098b1d2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a2a226568d8b0adc0f64ded9595949dc214647a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407640"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962460"
 ---
 # <a name="set-up-a-fund-in-the-public-sector"></a>Konfigurere en finansieringskilde i den offentlige sektor
 
@@ -43,6 +42,3 @@ Middeltyper skal være oprettet, før du kan konfigurere midler. Hvert enkelt mi
 11. Hvis du angiver indstillingen Tilsidesæt valgte ultimoindstilling til Ja, skal du vælge en ultimoindstilling.
 12. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

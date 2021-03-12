@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a72719c9fd03f73b69b558fc0f08eed91ea94ee1
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c19693151399fc02ea9562757af7fc24124c9b6c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694353"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798823"
 ---
 # <a name="configure-line-item-workflows"></a>Konfigurere arbejdsgange for linjeelementer
 
@@ -54,6 +54,3 @@ Udfør følgende trin for at angive, om samme arbejdsgang bruges til at behandle
     6. Hvis du vil kontrollere, om det sæt betingelser, du har angivet, er konfigureret korrekt, skal du klikke på **Test**. På siden **Test betingelse for arbejdsgang** i området **Valider betingelse** skal du vælge en post og derefter klikke på **Test**. Systemet evaluerer den valgte post for at afgøre, om den opfylder de betingelser, du har defineret. Klik på **OK** eller **Annuller** for at vende tilbage til siden **Egenskaber**.
 
     Under fanen **Arbejdsgang** skal du vælge den arbejdsgang, der skal bruges til at behandle de linjeelementer, der opfylder et sæt betingelser, du har defineret.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

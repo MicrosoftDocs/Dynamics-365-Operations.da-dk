@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
-ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692691"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4962434"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Angive parametre for frynsegodeadministration og Employee Self-Service for alle firmaer
 
@@ -68,6 +68,3 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 3. Vælg **Gem**.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

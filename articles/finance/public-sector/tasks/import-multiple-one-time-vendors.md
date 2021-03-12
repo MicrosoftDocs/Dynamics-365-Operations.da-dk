@@ -1,6 +1,6 @@
 ---
 title: Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
-description: Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du oprette en faktura for en ny kreditor, som du ikke har nogen regelmæssige relationer med, samtidig med at du opretter en post for kreditoren.
+description: Dette emne indeholder oplysninger om, hvordan du samtidigt opretter en faktura og registrerer en ny kreditor, når der ikke kræves en indkøbsordre.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: VendImportOneTimeVendFileUpload_PSN
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d608d01a291d4b0f0aab62b129b27a0a071aa59
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed14eeda8ecbfde256b1f132d39b8bdefdb564d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407703"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962455"
 ---
 # <a name="import-and-create-multiple-one-time-vendors-and-invoices-in-the-public-sector"></a>Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
 
@@ -40,6 +39,3 @@ Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, ka
     * Der søges efter dublerede kreditornavne eller Federal Tax Id.  Vigtigt! Hvis du vælger ikke at behandle dublerede kreditorer, behandles de relaterede fakturaer heller ikke. Du kan manuelt oprette en faktura ved hjælp af oplysningerne i CSV-filen.    
 7. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
