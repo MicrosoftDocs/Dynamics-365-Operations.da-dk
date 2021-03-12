@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410956"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972449"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -240,6 +239,3 @@ Programmet til prissætning understøtter desuden **kun** følgende prisfunktion
 Prisen er en af de vigtigste faktorer, der styrer mange kunders indkøbsbeslutninger, og mange kunder sammenligner priserne på forskellige websteder, før de foretager et køb. For at hjælpe med at sikre, at de har konkurrencedygtige priser, holder detailhandlerne nøje øje med konkurrenterne og kører ofte kampagner. For at hjælpe disse forhandlere med at tiltrække kunder er det vigtigt at produktsøgning, gennemsynsfunktion, lister og siden med produktdetaljer viser de mest nøjagtige priser.
 
 I en kommende version af Commerce returnerer **GetActivePrices**-API'en (Application Programming Interface) priser, der omfatter simple rabatter (f.eks. en enkeltlinjerabatter, der ikke er baseret på andre varer i indkøbsvognen). På denne måde er de priser, der vises, tæt på det faktiske beløb, som kunderne skal betale for varerne. Denne API indeholder alle typer simple rabatter: tilknytningsbaserede, loyalitetsbaserede, katalogbaserede og kanalbaserede rabatter. Derudover returnerer API'en navnene og gyldighedsoplysningerne for de anvendte rabatter, så detailhandlerne kan give en mere detaljeret beskrivelse af prisen og skabe en oplevelse af, at det haster, hvis rabatten udløber snart.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

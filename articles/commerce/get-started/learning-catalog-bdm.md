@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4402759b3bf0cc61fded697c66eab6dc6b429664
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65b7286ff7cfc9eb0d3f5f76ac94470bd964ab3d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411104"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972856"
 ---
 # <a name="learning-catalog-for-business-and-technical-decision-makers-considering-dynamics-365-commerce"></a>Undervisningskatalog til forretningsmæssige og tekniske beslutningstagere, der overvejer Dynamics 365 Commerce
 
@@ -36,6 +35,3 @@ Du kan finde oplysninger om undervisning i funktioner, der deles med andre Finan
 | [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Denne læringsoplevelse fører dig på en rejse, der begynder med at vise dig, hvordan digital omdannelse og styrken ved forretningsprogrammer kan transformere din virksomhed. Vi dækker, hvordan Dynamics 365 og Power Platform hjælper dig med at træffe velovervejede beslutninger på baggrund af din organisations behov og mål, via fire byggestene af digital transformation – moderne, ensartet, intelligent og fleksibel.                  | Gratis onlinelæringssti i dit eget tempo                                          | 6.5 timer   |
 | [Kom i gang med Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)                                                       | Dynamics 365 Commerce, der bygger på de gennemprøvede Dynamics 365 Retail-funktioner, leverer en omfattende flerkanalsløsning, der forener administrations-, butiks-, callcenter- og digitale erfaringer. Dynamics 365 Commerce giver dig mulighed for at opbygge varemærkeloyalitet gennem personlige kundeaftaler, øge indtjeningen med forbedret medarbejderproduktivitet, optimere operationer for at reducere omkostninger og fremme effektivitet i forsyningskæden og i sidste ende levere bedre virksomhedsresultater. | Gratis onlinelæringssti i dit eget tempo                                          | 2 timer   |
 | [Kom i gang med Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybaseret løsning, der er udviklet til e-handel, fysiske butikker og omnikanal-forhandlere for at beskytte deres indtægt og omdømme ved at levere værktøjer og funktioner til at mindske bedrageri og misbrug, reducere driftsudgifterne og øge acceptraterne og samtidig beskytte brugerkonti mod eksponering for bedrageri. | Gratis onlinelæringssti i dit eget tempo | 35 minutter |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

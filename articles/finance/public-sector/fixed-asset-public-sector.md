@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: AssetTransfer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 20891
 ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd706ca48b718f2737de404c4ae0b25ba7458cf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c1d227689fd96a296ee1b0f06a94153647ab87d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407652"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971166"
 ---
 # <a name="fixed-assets-in-the-public-sector"></a>Anlægsaktiver i den offentlige sektor
 
@@ -51,6 +50,3 @@ Du kan få flere oplysninger i [Midler i den offentlige sektor](funds-public-sec
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

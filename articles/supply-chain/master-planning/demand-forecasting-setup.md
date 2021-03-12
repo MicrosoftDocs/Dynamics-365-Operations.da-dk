@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7b0976494a8bb128ae6bb40cbcdf7c691185f23
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424872"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970500"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -84,7 +83,7 @@ Under fanen **Fordelingsnøgler** kan du angive **Parametre til prognosealgoritm
 - **Konfidensniveau i procent**: Et konfidensinterval består af en række værdier, der fungerer som gode estimater for behovsprognosen. En konfidensinternval på 95 % angiver, at der er 5 % risiko for, at det fremtidige behov falder uden for konfidensintervallet.
 - **Gennemtving sæsonudsving**: Angiver, om modellen skal tvinges til at bruge en bestemt type sæsonudsving. Dette gælder kun for ARIMA og ETS. Indstillinger: AUTO (standard), NONE, ADDITIVE, MULTIPLICATIVE.
 - **Prognosemodel**: Indstillinger: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. Du får den mest velegnede model, hvis du bruger **ALL**.
-- **Maks. budgetteret værdi**: Angiver den maksimale værdi, der skal bruges til forudsigelser. Format: +1E[n] eller numerisk konstant.
+- **Maks. budgetteret værdi**: Angiver den maksimale værdi, der skal bruges til forudsigelser. Format: + 1E [n] eller numerisk konstant.
 - **Min. budgetteret værdi**: Angiver den mindste værdi, der skal bruges til forudsigelser. Format: -1E[n] eller numerisk konstant.
 - **Erstatning af manglende værdi**: Angiver, hvordan huller i historiske data skal udfyldes. Indstillinger: numerisk værdi, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL.
 - **Erstatning af manglende værdi**: Angiver, om værdierstatningen kun gælder for dataområdet for hver enkelt granularitetsattribut eller for hele datasættet. Indstillinger: GRANULARITY_ATTRIBUTE (standard), GLOBAL.
@@ -102,6 +101,3 @@ Under fanen **Fordelingsnøgler** kan du angive **Parametre til prognosealgoritm
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

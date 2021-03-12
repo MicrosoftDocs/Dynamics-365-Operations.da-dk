@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 123be2430f910dfbea438cb6a51be7203eb39fc8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424290"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970275"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Opgradere lokationsstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management 
 
@@ -83,6 +82,3 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 6.  På siden **Ændre lagringsdimensionsgruppen for varer** skal du tilføje varenumre, lagringsdimensionsgrupper og enhedsseriegrupper. Du kan udføre dette trin direkte på siden, ved at bruge Microsoft Office-integration eller ved hjælp af dataenhedsprocessen i [Datastyring](../../dev-itpro/data-entities/data-entities.md).
 7.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 8.  Få behandlet ændringerne. En opdatering af alle lagerdimensionerne kan tage et stykke tid. Du kan overvåge status ved hjælp af batchjobopgaverne.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

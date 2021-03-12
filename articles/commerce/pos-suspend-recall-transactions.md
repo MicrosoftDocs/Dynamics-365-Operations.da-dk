@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f513e2d857908f2b95d27bf48ff1e826724d7cbf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 823d538bea481aef4f3657fe0ae1ebb3b0cf759c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411164"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972524"
 ---
 # <a name="suspend-and-resume-a-transaction-in-the-point-of-sale-pos"></a>Afbryde og genoptage en transaktion i POS
 
@@ -82,6 +81,3 @@ Du kan hurtigt og nemt kalde en afbrudt transaktion frem igen ved at scanne stre
 ### <a name="void-a-suspended-transaction"></a>Annullere en afbrudt transaktion
 
 Du kan annullere afbrudte transaktioner enten ved at genkalde transaktionen og derefter udføre handlingen **Afvis transaktion** eller ved at markere transaktionen på listen **Hent transaktion igen** og vælge **Afvist** på applinjen. Butikken kan også konfigureres til at bede brugerne om at annullere afbrudte transaktioner, når de afslutter deres skift.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

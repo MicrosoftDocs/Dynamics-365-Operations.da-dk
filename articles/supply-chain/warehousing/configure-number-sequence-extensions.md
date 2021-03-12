@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: fa4074c23baa74983f4922d2d09d7da81c943bfe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4425070"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973829"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurere nummerserier til lagerstrømme
 
@@ -92,6 +91,3 @@ Benyt følgende fremgangsmåde for at oprette og redigere nummerserier.
     | Kontroltal | Denne segmenttype tilføjer et kontrolciffer, som er en modulo 10-beregning. (Denne funktionsmåde svarer til den eksisterende logik for id-numre). For denne segmenttype angives feltet **Værdi** til et cirkumflekstegn (*^*), og feltet **Længde** indstilles altid til *1*. |
 
 1. Hvis du vil have vist et eksempel på dit endelige talformat, skal du kontrollere feltet **Format** nederst i oversigtspanelet **Segmenter**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

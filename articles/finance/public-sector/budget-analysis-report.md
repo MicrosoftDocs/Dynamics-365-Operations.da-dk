@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 9f243340da5d93182a3f42132018b3428a03a03d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98f49088ef71d597db7a67e959d6fad830199094
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407660"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971191"
 ---
 # <a name="budget-analysis-report"></a>Budgetanalyserapport
 
@@ -86,6 +85,3 @@ Nedrulningsrapporten indeholder følgende oplysninger:
 - Debet-og kreditoplysninger for bilaget med faktiske oplysninger
 - Positive og negative beløb for budgettet, behæftelse og budgetreservationsbilaget
 - Åbne, afslutte og køre saldi for finanskontoen
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWorker
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2aee3af8da6610c16fc2d98091bfa3f01f1bd0f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e7d0cdace306e6f266dd690db2c9855ea75009e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424592"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970325"
 ---
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Flytning af lager med tilknyttet arbejde i Lokationsstyring
 
@@ -59,6 +58,3 @@ For den medarbejder, der skal have rettighed til at flytte reserveret lager, ska
 Denne funktion er også blevet overført til Microsoft Dynamics AX 2012 R3 og kan bruges som en del af CU12.
 Den kan også hentes særskilt via KB-nummer 3192548. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
