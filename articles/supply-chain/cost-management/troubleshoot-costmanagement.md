@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e84bb167395c06295b0e8ef8b9fd98aa4bc0cc14
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b8c527e578fee6abfeeade99fba8070365c020bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4425073"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983844"
 ---
 # <a name="troubleshoot-cost-management"></a>Foretage fejlfinding af omkostningsstyring
 
@@ -63,5 +62,22 @@ Husk at udføre en lagerlukning pr. %3 (31-01-2019), der matcher en periodeafslu
 
 I **Rapporten Aldersfordelt lager** vises forskellige værdier, når du ser dem på forskellige lagerdimensioner (f.eks. lokation eller lagersted). Du kan finde flere oplysninger om rapporteringslogikken i [Eksempler og logik til rapport over aldersfordelt lager](inventory-aging-report.md).
 
+## <a name="an-update-conflict-occurs-when-the-inventory-valuation-method-is-either-standard-cost-or-moving-average"></a>Der opstår en opdateringskonflikt, når lagervurderingsmetoden er Standardomkostning eller Glidende gennemsnit
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Når du bogfører dokumenter som lagerkladder, indkøbsordrefakturaer eller salgsordrefakturaer parallelt med hensyn til skalerbarhed og ydeevne, modtager du måske en fejlmeddelelse om en opdateringskonflikt, og nogle af dokumenterne vil muligvis ikke blive bogført. Dette problem kan opstå, når lagervurderingsmetoden er *Standardomkostning* eller *Glidende gennemsnit*. Begge disse metoder er permanente kalkulationsmetoder. Det vil sige, at den endelige omkostning fastsættes på bogføringstidspunktet.
+
+Hvis du bruger metoden *Glidende gennemsnit*, ligner fejlmeddelelsen dette eksempel:
+
+> Lagerværdien xx.xx forventes ikke efter beregningen af den proportionale udgift
+
+Hvis du bruger metoden *Standardomkostning*, ligner fejlmeddelelsen dette eksempel:
+
+> Standardomkostningen stemmer ikke overens med den økonomiske lagerværdi efter opdateringen. Værdi = xx.xx, Antal = yy.yy, Standardomkostning = zz.zz
+
+Indtil Microsoft frigiver en løsning for at løse problemet, kan du overveje at bruge følgende løsningsforslag som en hjælp til at undgå eller reducere disse fejl:
+
+- Bogfør de mislykkede dokumenter igen.
+- Opret dokumenter med færre linjer.
+- Undgå decimalværdier i standardomkostningen. Prøv at definere standardomkostningen, så feltet **Prisantal** angives til *1*. Hvis du skal angive en værdi for **Prisantal** på mere end *1*, kan du forsøge at minimere antallet af decimaler i standardomkostningen for enheden. (Ideelt set skal der være mindre end to decimaler). Undgå f.eks. at definere standardomkostningsindstillinger som **Pris** = *10* og **Prisantal** = *3*, da de giver en standardomkostning pr. enhed på 3,333333 (hvor decimalværdien gentages).
+- I de fleste dokumenter skal du undgå at have flere linjer med samme kombination af produkt- og økonomiske lagerdimensioner.
+- Reducer graden af parallelisering. (I dette tilfælde kan systemet blive hurtigere, fordi der opstår færre opdateringskonflikter og forsøg).

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd6b4b0c30a8a4cb36955e9b131c937c4db80772
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424904"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983719"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerstedsprocesser.
 
@@ -622,6 +621,3 @@ Du har konfigureret arbejds- og lokalitetsdataene for lagersted 51 for at sikre,
 
 > [!NOTE]
 > Overvej at føje kvalitet ud-posten til et menupunkt i en mobilenhed, hvor aktivitetskoden er *Vis åben arbejdsliste*. Du kan finde et eksempel i menupunktet på mobilenheden, der hedder **Opgaveliste** i demodataene. Du skal først føje arbejdsklassen *Kvalitetsordre* til et brugerstyret menupunkt, da denne arbejdsopgave er nødvendig, for at arbejdet kan vises på opgavelisten. Føj derefter klassen *Kvalitetsordre* til menupunktet **Arbejdsliste**. Brugere, der har adgang til opgavelisten, vil derefter kunne plukke og behandle det arbejde, der automatisk genereres af en kvalitetsordrevalidering.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

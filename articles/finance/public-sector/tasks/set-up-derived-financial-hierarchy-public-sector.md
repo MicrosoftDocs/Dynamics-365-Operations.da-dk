@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et afledt finansielt hierarki i den offentlige sektor
-description: For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier.
+description: Dette emne indeholder oplysninger om brug af afledte finansielle hierarkier til at indsamle og analysere data for bogførte transaktioner for bestemte tal i hovedkonto, fuld kontonumre og økonomiske dimensionsværdier.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchyLegalEntities, LedgerDerivedFinHierarchies
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6749d87e1c31761587049f562e03fe68fa3def52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da386d77fd467e3d400925d6f3d00015e8305ed7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407718"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984670"
 ---
 # <a name="set-up-a-derived-financial-hierarchy-in-the-public-sector"></a>Konfigurere et afledt finansielt hierarki i den offentlige sektor
 
@@ -71,6 +70,3 @@ For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organi
 5. Klik på Rediger filter.
     * Klik på Tilføj nye kriterier for at begynde at tilføje regler til filteret. Når du har tilføjet alle kriterierne, skal du klikke på Aktivér filter.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: dd02e521c74888b81ae0d0b5f1a2fe3abdfce2dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6ab44b7ddcbb3b7d3c394695e54398029654f78
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407698"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982032"
 ---
 # <a name="set-up-interest-distribution-for-cash-accounts"></a>Konfigurere rentefordeling for kontantkonti
 
@@ -81,6 +80,3 @@ Rentefordelingsprocessen omfatter nogle beregnede beløb.
 | Samlet daglig gennemsnit   | Summen af alle daglige saldi i gennemsnit, undtagen negative beløb for kontantkonti, der ikke tillader negative rente- og kontantkonti, som ikke er en del af en rentefordeling. |
 | Procent af total      | Det gennemsnitlige daglige saldobeløb divideret med det samlede daglige gennemsnitlige beløb for hver kombination af en kontantkonto og en bonus. |
 | Fordelt rente    | Den samlede rente på siden **Rentefordelingsparametre** ganget med procentdelen af det samlede beløb for kontantkontoen. Renter overføres ikke til kontantkonti, der har negative beløb, og som ikke tillader negativ rente. Renter distribueres heller ikke til kontantkonti, der ikke indgår i rentefordeling. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ConfigGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 77b156a4710fd574b939a1e930fbb8ac38acde15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 44847f128796691a6695e74a0376442a6fe660fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424616"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983241"
 ---
 # <a name="define-configuration-groups"></a>Definere variantgrupper
 
@@ -40,6 +39,3 @@ Denne fremgangsmåde viser, hvordan du definerer konfigurationen af produktgrupp
 7. Skriv en værdi i feltet Navn.
 8. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
