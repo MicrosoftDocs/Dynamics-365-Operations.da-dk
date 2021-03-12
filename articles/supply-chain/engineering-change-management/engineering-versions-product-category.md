@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4425075"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987473"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versioner og tekniske produktkategorier
 
@@ -162,6 +161,3 @@ Der oprettes tekniske styklister og ruter ud fra den tekniske version, hvor de g
 For produkter, hvor du bruger produktdimensionen *version* (sammen med logistisk indflydelse på transaktionerne), føjes versionen også til styklisterne og ruterne. Denne funktionsmåde hjælper med at skelne mellem styklisterne og ruterne for fortløbende versioner uanset indstillingen af **Gennemtving gyldighed**.
 
 For produkter, hvor du ikke bruger produktdimensionen *version* (uden logistisk indflydelse på transaktionerne), føjes versionen ikke til styklisterne eller ruterne. Derfor vil der ikke være nogen forskel mellem styklisterne og ruterne i fortløbende versioner. I dette tilfælde anbefales det, at du angiver indstillingen **Gennemtving gyldighed** til *Ja*. På denne måde er du med til at forhindre, at tekniske versioner overlapper, og du kan også aktivere styklisten og ruten for en nyere version uden først at skulle deaktivere styklisten og ruten for den tidligere version. Hvis du angiver indstillingen **Gennemtving gyldighed** til *Ja* i dette tilfælde, skal du deaktivere styklisterne og ruterne i tidligere versioner manuelt, før du kan aktivere den seneste version.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

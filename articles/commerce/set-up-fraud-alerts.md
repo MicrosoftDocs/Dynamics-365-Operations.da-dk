@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15950edd142b222a90bee7876718f4fc5c607468
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411159"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985780"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurere og arbejde med advarsler om svindel i callcentre
 
@@ -69,6 +68,3 @@ Ordren gemmes, men flaget **Udfør ikke behandling** er angivet for den. Dette f
 Du kan se og administrere de ordrer, der er på hold for kontrol af svindel, ved at gå til **Retail og Commerce** \> **Kunder** \> **Ordrer på hold**. På siden **Ordrer på hold** skal du vælge en post på listen og derefter klikke på **Ordre på hold** for at se en mere detaljeret visning, der omfatter oplysninger om årsagen til spærringen. I oversigtspanelet **Svindeldetaljer** kan du se de systematiske svindelkriterier, der er fundet som match for ordren, og de resultater, der er anvendt. Hvis ordren blev sat på hold manuelt, kan du gennemse eventuelle kommentarer, der er angivet af den bruger, der satte ordren på hold, ved at se i sektionen **Svindelnoter** i oversigtspanelet **Noter**.
 
 Du kan finde flere oplysninger om, hvordan du arbejder med ordrer på hold, under [Ordrer på hold](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

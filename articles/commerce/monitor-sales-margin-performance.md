@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailSales
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a7b2b6ba8115b43ef2e52e934bf8364e6f4044e7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51dc7c4b62a497e3dc9279b3c5a616057316c106
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411013"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985880"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>Overvåge salgs- og avanceudvikling
 
@@ -39,7 +38,7 @@ I Commerce kan brugerne overvåge salgs- og avanceudvikling i realtid på tværs
 - Rabatter
 - År som periode
 - Registre/terminaler
-- Personale/medarbejdere
+- Human Resources/medarbejdere
 - Debitorer
 - Driftsenheder
 
@@ -49,6 +48,3 @@ Desuden kan brugerne med to entydige rapporter, der udnytter strukturering af hi
 - **Kategori og produktstyring**-arbejdsområdet &gt; **Retail og Commerce** &gt; **Produkt og kategorier** &gt; **Butiksstyring** &gt; **Rapporter**
 - **Styring af prissætning og rabatter**-arbejdsområdet &gt; **Retail og Commerce** &gt; **Priser og rabatter** &gt; **Butiksstyring** &gt; **Rapporter**
 - Sektionen **Forespørgsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: 75bd907b44ee320ae2d3c31193ae2f6143514c50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668975"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987448"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Undervisningskatalog til brugere af Dynamics 365 Supply Chain Management
 
@@ -69,6 +68,3 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | Indhold | Beskrivende tekst  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grundlæggende funktioner i Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevis, at du forstår Microsoft Dynamics 365, Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder. | Eksamen, hvor omkostning varierer alt efter region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
