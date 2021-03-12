@@ -11,43 +11,42 @@ ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13191
 ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee35db478663f3a5ab114ec133115eccc40b143c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4b926c429305e278b4873fec72f2eadaab00d78e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441674"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975602"
 ---
-# <a name="general-ledger-account-balances"></a><span data-ttu-id="b7415-104">Kontosaldi i Finans</span><span class="sxs-lookup"><span data-stu-id="b7415-104">General ledger account balances</span></span>
+# <a name="general-ledger-account-balances"></a><span data-ttu-id="3bfd4-104">Kontosaldi i Finans</span><span class="sxs-lookup"><span data-stu-id="3bfd4-104">General ledger account balances</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b7415-105">I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter.</span><span class="sxs-lookup"><span data-stu-id="b7415-105">This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports.</span></span> <span data-ttu-id="b7415-106">Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.</span><span class="sxs-lookup"><span data-stu-id="b7415-106">It also discusses how to update dimension set balances.</span></span>
+<span data-ttu-id="3bfd4-105">I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-105">This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports.</span></span> <span data-ttu-id="3bfd4-106">Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-106">It also discusses how to update dimension set balances.</span></span>
 
-<span data-ttu-id="b7415-107">Der er en række måder, som brugerne kan få vist saldi i Finans på.</span><span class="sxs-lookup"><span data-stu-id="b7415-107">There are a variety of ways users can view balances in the general ledger.</span></span> <span data-ttu-id="b7415-108">Nogle af de mest almindelige muligheder er:</span><span class="sxs-lookup"><span data-stu-id="b7415-108">Some of the most common options are:</span></span>
+<span data-ttu-id="3bfd4-107">Der er en række måder, som brugerne kan få vist saldi i Finans på.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-107">There are a variety of ways users can view balances in the general ledger.</span></span> <span data-ttu-id="3bfd4-108">Nogle af de mest almindelige muligheder er:</span><span class="sxs-lookup"><span data-stu-id="3bfd4-108">Some of the most common options are:</span></span>
 
--   <span data-ttu-id="b7415-109">Råbalance</span><span class="sxs-lookup"><span data-stu-id="b7415-109">Trial balance</span></span>
--   <span data-ttu-id="b7415-110">Økonomirapporter</span><span class="sxs-lookup"><span data-stu-id="b7415-110">Financial reports</span></span>
--   <span data-ttu-id="b7415-111">Bilagstransaktioner</span><span class="sxs-lookup"><span data-stu-id="b7415-111">Voucher transactions</span></span>
--   <span data-ttu-id="b7415-112">Finansrapporter</span><span class="sxs-lookup"><span data-stu-id="b7415-112">Ledger reports</span></span>
+-   <span data-ttu-id="3bfd4-109">Råbalance</span><span class="sxs-lookup"><span data-stu-id="3bfd4-109">Trial balance</span></span>
+-   <span data-ttu-id="3bfd4-110">Økonomirapporter</span><span class="sxs-lookup"><span data-stu-id="3bfd4-110">Financial reports</span></span>
+-   <span data-ttu-id="3bfd4-111">Bilagstransaktioner</span><span class="sxs-lookup"><span data-stu-id="3bfd4-111">Voucher transactions</span></span>
+-   <span data-ttu-id="3bfd4-112">Finansrapporter</span><span class="sxs-lookup"><span data-stu-id="3bfd4-112">Ledger reports</span></span>
 
-<span data-ttu-id="b7415-113">De mest almindelige måder er listesiden råbalance og økonomiske rapporter.</span><span class="sxs-lookup"><span data-stu-id="b7415-113">The most common ways are the trial balance list page and financial reports.</span></span>
+<span data-ttu-id="3bfd4-113">De mest almindelige måder er listesiden råbalance og økonomiske rapporter.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-113">The most common ways are the trial balance list page and financial reports.</span></span>
 
-## <a name="trial-balance"></a><span data-ttu-id="b7415-114">Råbalance</span><span class="sxs-lookup"><span data-stu-id="b7415-114">Trial balance</span></span>
-<span data-ttu-id="b7415-115">Råbalancen er en listeside, der viser alle saldi for en konto og/eller dimensioner i en given periode.</span><span class="sxs-lookup"><span data-stu-id="b7415-115">The trial balance is a list page that shows all of the balances of an account and/or dimensions for a given period of time.</span></span> <span data-ttu-id="b7415-116">Når råbalancen åbnes for første gang, opdaterer den med saldi for de datoer og egenskaber, der er angivet i parametrene.</span><span class="sxs-lookup"><span data-stu-id="b7415-116">When the trial balance is first opened it refreshes with the balances for the dates and properties that are set in the Parameters.</span></span> <span data-ttu-id="b7415-117">Egenskaber, der kan ændres i Parametre, er datoer, posteringslag, hvordan startsaldi skal vises, og hvilke ultimotransaktionstyper der skal vises.</span><span class="sxs-lookup"><span data-stu-id="b7415-117">Properties that can be changed in Parameters are the dates, posting layer, how they want opening balances to appear, and what closing transaction types to show.</span></span> 
+## <a name="trial-balance"></a><span data-ttu-id="3bfd4-114">Råbalance</span><span class="sxs-lookup"><span data-stu-id="3bfd4-114">Trial balance</span></span>
+<span data-ttu-id="3bfd4-115">Råbalancen er en listeside, der viser alle saldi for en konto og/eller dimensioner i en given periode.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-115">The trial balance is a list page that shows all of the balances of an account and/or dimensions for a given period of time.</span></span> <span data-ttu-id="3bfd4-116">Når råbalancen åbnes for første gang, opdaterer den med saldi for de datoer og egenskaber, der er angivet i parametrene.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-116">When the trial balance is first opened it refreshes with the balances for the dates and properties that are set in the Parameters.</span></span> <span data-ttu-id="3bfd4-117">Egenskaber, der kan ændres i Parametre, er datoer, posteringslag, hvordan startsaldi skal vises, og hvilke ultimotransaktionstyper der skal vises.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-117">Properties that can be changed in Parameters are the dates, posting layer, how they want opening balances to appear, and what closing transaction types to show.</span></span> 
 
-<span data-ttu-id="b7415-118">Når en bruger ændrer parametrene, opdateres saldiene.</span><span class="sxs-lookup"><span data-stu-id="b7415-118">When a user changes the parameters the balances are refreshed.</span></span> <span data-ttu-id="b7415-119">Brugeren kan også vælge, hvilken dimension de vil have vist saldi for, og om hver af dimensionerne skal vises i separate kolonner.</span><span class="sxs-lookup"><span data-stu-id="b7415-119">The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns.</span></span> 
+<span data-ttu-id="3bfd4-118">Når en bruger ændrer parametrene, opdateres saldiene.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-118">When a user changes the parameters the balances are refreshed.</span></span> <span data-ttu-id="3bfd4-119">Brugeren kan også vælge, hvilken dimension de vil have vist saldi for, og om hver af dimensionerne skal vises i separate kolonner.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-119">The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns.</span></span> 
 
-<span data-ttu-id="b7415-120">Brugere kan foretage detailudledning fra saldi for at få vist de transaktioner, der indgår i saldoen.</span><span class="sxs-lookup"><span data-stu-id="b7415-120">Users can drill down on the balances to view the transactions that make up the balance.</span></span>    
+<span data-ttu-id="3bfd4-120">Brugere kan foretage detailudledning fra saldi for at få vist de transaktioner, der indgår i saldoen.</span><span class="sxs-lookup"><span data-stu-id="3bfd4-120">Users can drill down on the balances to view the transactions that make up the balance.</span></span>    
 
-<span data-ttu-id="b7415-121">Du kan finde flere oplysninger i [Vis økonomirapporter](view-financial-reports.md).</span><span class="sxs-lookup"><span data-stu-id="b7415-121">For more information, see [View financial reports](view-financial-reports.md).</span></span>
+<span data-ttu-id="3bfd4-121">Du kan finde flere oplysninger i [Vis økonomirapporter](view-financial-reports.md).</span><span class="sxs-lookup"><span data-stu-id="3bfd4-121">For more information, see [View financial reports](view-financial-reports.md).</span></span>
 
 
 
