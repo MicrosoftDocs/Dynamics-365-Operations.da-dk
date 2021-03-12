@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5bf6fe6926a7cc1aecb1f0a2bb7f3c47cc8828e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8d164386d43a7d181efed9b701ee4e28f62114e9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407680"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975216"
 ---
 # <a name="eur-00015-set-up-vat-id"></a>EUR 00015 Konfigurere moms-id
 
@@ -61,6 +60,3 @@ Oplysningerne her gælder for alle europæiske lande/områder. Denne opgave blev
     * Tildel den registreringstype, som du har oprettet, til en foruddefineret registreringskategori.  
 22. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

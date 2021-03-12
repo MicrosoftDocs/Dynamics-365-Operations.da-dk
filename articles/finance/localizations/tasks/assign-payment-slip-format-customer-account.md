@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6130a20fb68664ee5905de8e2a2c28bb8ec26174
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2ec327f9c3cc62fe9a3085ebc1625bd24169ae5f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407637"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975335"
 ---
 # <a name="assign-a-payment-slip-format-to-a-customer-account"></a>Tildele et indbetalingskortformat til en debitorkonto
 
@@ -52,6 +51,3 @@ Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære ad
     * Ingen – Udskriv ikke et indbetalingskort. Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).   FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.   FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.     
 12. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

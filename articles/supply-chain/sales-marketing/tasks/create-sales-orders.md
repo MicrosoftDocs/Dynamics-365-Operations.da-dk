@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424432"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974804"
 ---
 # <a name="create-sales-orders"></a>Opret salgsordrer
 
@@ -68,6 +67,3 @@ De produkter, der sælges af organisationen, kan findes i varianter, der er diff
     Siden **Totaler** viser oplysninger om hele ordren. Dette omfatter subtotalbeløb, som er summen af alle linjenettobeløb justeret for eventuelle linjerabatter, det samlede fakturabeløb, som er et subtotalbeløb justeret for eventuel rabat på ordreniveau, afgifter og moms, kundens kreditmaksimum og andet. Fakturabeløbet er det beløb, der skal vises på kundens fakturadokument.  
     
 3. Vælg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

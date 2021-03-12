@@ -10,7 +10,6 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbd364978f2d204dafc25e14c55073fe2591b82f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424821"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974954"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Arbejdsområde for salgsordrer på mobilenheder
 
@@ -142,6 +141,3 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 4.  Vælg kunden.
 5.  Vælg **Kontaktoplysninger** eller **Salgsordrer**. Hvis du vælger **Salgsordrer**, vises der en liste over salgsordrer for kunden.
 6.  Vælg **Salgsordre**. Du kan nu få vist oplysninger om salgsordrelinjer, oplysninger om forsendelser, kundekontaktoplysninger og kontaktoplysninger for ordretageren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

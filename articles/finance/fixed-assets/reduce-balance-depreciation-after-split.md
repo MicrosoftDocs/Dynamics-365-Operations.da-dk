@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 615d17c71b904d426081d4c57492ba7e95c2c749
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: ea89d54b9b8287d9c81b75a99c5808b5deb05cef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650653"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976084"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Reducere saldoafskrivning efter en opdeling
 
@@ -45,6 +44,3 @@ Følgende betingelser gælder f. eks.:
 Det beløb, der skal afskrives for det oprindelige anlæg, er $1.822,25. Dette beløb er lig med NBV, før den opdelte transaktion bogføres ($9.111,25), plus den anskaffelsesregulering, der genereres under bogføring af den opdelte transaktion (-$8.000), plus den afskrivningsregulering, der genereres under den opdelte transaktion ($711). Derfor er afskrivningen for det andet år (1.822,25 × 18 procent) ÷ 12 = $27,33.
 
 Det beløb, der skal afskrives for det nye anlægsaktiv i det første år, er (8.000 × 18 procent) ÷ 12 = $120.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

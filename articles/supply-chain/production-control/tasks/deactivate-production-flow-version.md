@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e818d3d75be8b24531afc6280ae0c37eca4de23
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0664dd40464000abef0041ef32863a3c9494d9b8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424334"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975129"
 ---
 # <a name="deactivate-a-production-flow-version"></a>Deaktivere en produktionsflowversion
 
@@ -46,6 +45,3 @@ I denne procedure skal du bruge en produktionsflow med en version, der kan deakt
     * Fortsæt ikke, hvis du ikke er 100 % sikker på, at denne version af produktionsflowet er forældet. Hvis du klikker på OK, udløber alle aktive kanban-regler, og alle produktions- og genopfyldningsaktiviteter for denne version af produktionsflowet standser øjeblikkeligt.  
 6. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

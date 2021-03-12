@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424822"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974979"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at køre synkronisering af salgsordrer direkte mellem Dynamics 365 Sales og Dynamics 365 Supply Chain Management.
 
@@ -62,10 +63,10 @@ Følgende synkroniseringsopgaver kræves, før salgsfakturahoveder og -linjer ka
 
 ## <a name="entity-set"></a>Enhedssæt
 
-| Supply Chain Management  | Salg             |
+| Supply Chain Management  | Sales             |
 |-------------------------|-------------------|
-| CDS-salgsordrehoveder | SalesOrders       |
-| CDS-salgsordrelinjer   | SalesOrderDetails |
+| Dataverse-salgsordrehoveder | SalesOrders       |
+| Dataverse-salgsordrelinjer   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Enhedsflow
 
@@ -75,7 +76,7 @@ Du behøver ikke at oprette ordrer i Sales. Du kan oprette nye salgsordrer i Sup
 
 I Supply Chain Management er filtre i skabelonen med til at sikre, at kun de relevante salgsordrer medtages i synkroniseringen:
 
-- På salgsordren skal både bestillings- og faktureringskunden stamme fra Sales for at blive inkluderet i synkroniseringen. I Supply Chain Management bruges felterne **OrderingCustomerIsExternallyMaintained** og **InvoiceCustomerIsExternallyMaintained** til at filtrere salgsordrer fra dataenhederne.
+- På salgsordren skal både bestillings- og faktureringskunden stamme fra Sales for at blive inkluderet i synkroniseringen. I Supply Chain Management bruges kolonnerne **OrderingCustomerIsExternallyMaintained** og **InvoiceCustomerIsExternallyMaintained** til at filtrere salgsordrer fra datatabellerne.
 - Salgsordren i Supply Chain Management skal bekræftes. Det er kun de bekræftede salgsordrer eller salgsordrer, der har en højere behandlingsstatus, f.eks. status som **Leveret** eller **Faktureret**, der synkroniseres til Sales.
 - Når en salgsordre oprettes eller redigeres, skal batchkørslen **Beregn salgstotaler** i Supply Chain Management udføres. Kun salgsordrer, hvor salgstotaler er beregnet, synkroniseres med Sales.
 
@@ -103,10 +104,10 @@ Når en salgsordrelinje synkroniseres fra Sales til Supply Chain Management, bru
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemne til kontantløsning for Sales
 
-Nye felter er føjet til enheden **Ordre** og vises på siden:
+Nye kolonner er føjet til tabellen **Ordre** og vises på siden:
 
 - **Vedligeholdes eksternt** - Angiv denne indstilling til **Ja**, når ordren kommer fra Supply Chain Management.
-- **Behandlingsstatus** – Dette felt viser behandlingsstatussen for ordren i Supply Chain Management. Følgende værdier er tilgængelige:
+- **Behandlingsstatus** – Denne kolonne viser behandlingsstatussen for ordren i Supply Chain Management. Følgende værdier er tilgængelige:
 
     - **Kladde** – Den første status, når en ordre oprettes i Sales. I Sales kan kun ordrer med denne behandlingsstatus redigeres.
     - **Aktiv** – Status, når ordren er blevet aktiveret i Sales ved hjælp af knappen **Aktiver**.
@@ -141,7 +142,7 @@ Før du synkroniserer salgsordrer, er det vigtigt, at du opdaterer følgende ind
 - Gå til **Indstillinger** &gt; **Administration** &gt; **Systemindstillinger** &gt; **Sales**, og sørg for, at der bruges til følgende indstillinger:
 
     - Indstillingen **Brug systemets prisberegningssystem** er angivet til **Ja**.
-    - Feltet **Rabatberegningsmetode** er angivet til **Linjeelement**.
+    - Kolonnen **Rabatberegningsmetode** er angivet til **Linjeelement**.
 
 ### <a name="setup-in-supply-chain-management"></a>Opsætning i Supply Chain Management
 
@@ -151,10 +152,10 @@ Hvis du også bruger arbejdsordreintegration, skal du konfigurere salgets oprind
 
 1. Gå til **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Salgsoprindelse**.
 2. Vælg **Ny** for at oprette en ny salgsoprindelse.
-3. I feltet **Salgsoprindelse** skal du angive et navn til salgsoprindelsen, f.eks. **Salgsordre**.
-4. Angiv en beskrivelse i feltet **Beskrivelse** som f.eks. **Salgsordre fra Sales**.
+3. I kolonnen **Salgsoprindelse** skal du angive et navn til salgsoprindelsen, f.eks. **Salgsordre**.
+4. Angiv en beskrivelse i kolonnen **Beskrivelse** som f.eks. **Salgsordre fra Sales**.
 5. Markér afkrydsningsfeltet **Tildeling af oprindelsestype**.
-6. Angiv feltet **Salgsoprindelsestype** til **Salgsordreintegration**.
+6. Angiv kolonnen **Salgsoprindelsestype** til **Salgsordreintegration**.
 7. Vælg **Gem**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Opsætning i salgsordrer (Sales til Supply Chain Management) – Direkte dataintegrationsprojekt
@@ -181,12 +182,12 @@ Hvis du også bruger arbejdsordreintegration, skal du konfigurere salgets oprind
 ## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
 
 > [!NOTE]
-> Felterne **Betalingsbetingelser**, **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke en del af standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
+> Kolonnerne **Betalingsbetingelser**, **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke en del af standardtilknytningerne. Hvis du vil tilknytte disse kolonner, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som tabellen synkroniseres mellem.
 
 Følgende illustration viser et eksempel på en skabelontilknytning i dataintegration.
 
 > [!NOTE]
-> Tilknytningen viser, hvilke feltoplysninger der synkroniseres fra Sales til Supply Chain Management, eller fra Supply Chain Management til Sales.
+> Tilknytningen viser, hvilke kolonneoplysninger der synkroniseres fra Sales til Supply Chain Management, eller fra Supply Chain Management til Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Salgsordrer (Supply Chain Management til Sales) - Direkte: OrderHeader
 
@@ -207,6 +208,3 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 ## <a name="related-topics"></a>Relaterede emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
