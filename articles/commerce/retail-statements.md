@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9162bb9b56432dbeb4638e0598dcbf436ab0b1b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989495"
 ---
 # <a name="retail-statements"></a>Detailopgørelser
 
@@ -59,7 +58,7 @@ Når du beregner en opgørelse, omfatter beregningen følgende opgaver:
 - Beregn de samlede beløb, der blev tilbudt i de valgte transaktioner. Resultaterne vises i opgørelseslinjerne afhængigt af opgørelsesmetoden:
 
     - Hvis opgørelsesmetoden er **Sum**, oprettes der en linje for hver betalingsmetode i de valgte transaktioner.
-    - Hvis opgørelsesmetoden er **Personale**, oprettes der en linje for hver betalingsmetode i transaktioner, der er udført af den valgte medarbejder.
+    - Hvis opgørelsesmetoden er **Human Resources**, oprettes der en linje for hver betalingsmetode i transaktioner, der er udført af den valgte medarbejder.
     - Hvis opgørelsesmetoden er **POS-klient**, oprettes der en linje for hver betalingsmetode i transaktioner, der blev udført i det valgte register.
     - Hvis opgørelsesmetoden er **Skift**, oprettes der en linje for hver betalingsmetode i transaktioner, der blev udført under et skift.
 
@@ -88,6 +87,3 @@ Når du bogfører en opgørelse, oprettes der salgsordrer og fakturaer for salg 
 - Salg, for hvilket der blev føjet en kunde til transaktionen i POS, genererer separate salgsordrer og fakturaer – én for hver entydig kunde.
 
 Der oprettes automatisk betalingskladder for betalingerne i opgørelsen, og lageret opdateres for POS-butikken.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

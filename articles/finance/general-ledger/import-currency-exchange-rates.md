@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 74acfab28d45fc75c4ecd595aeba1fb1e13bbcff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a5dbe0d822f7bdb1a62a99c43ef9f7170c889676
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441642"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988871"
 ---
 # <a name="import-currency-exchange-rates"></a>Importere valutakurser
 
@@ -56,6 +55,3 @@ Du kan importere valutakurser fra valutakursudbyderkilden og tilføje dem på si
 | **Ignorer eksisterende valutakurser**   | Dette afkrydsningsfelt styrer opdatering af den eksisterende valutakurs for et valutapar, når valutakursen for en bestemt dato allerede findes. Hvis du ikke markerer dette afkrydsningsfelt, bliver valutakursen for de bestemte datoer ikke importeret, hvis der allerede findes en anden valutakurs.                                                                                       |
 | **Undgå import på helligdag** | Dette afkrydsningsfelt styrer importen af valutakursen for en dato, der er en helligdag. For eksempel, hvis du markerer dette afkrydsningsfelt og bruger den Europæiske Centralbank som valutakursudbyder, opdaterer systemet ikke valutakursen på en helligdag, der er relateret til den aktuelle juridiske enhed. Denne indstilling er muligvis ikke tilgængelige for alle udbydere. |
 | **Kurs fra den forrige dag** | Dette afkrydsningsfelt er tilgængeligt, hvis du aktiverer funktonen **ECB-import på den aktuelle eller tidligere dato** på siden **Administration af funktioner**. Dette afkrydsningsfelt er kun tilgængeligt for udbyderen *Den Europæiske Centralbank*. Markér dette afkrydsningsfelt for at importere den valutakurs, der udgives af Den Europæiske Centralbank, den forrige arbejdsdag kl. ca. 16:00 CET. Afkrydsningsfeltet er som standard markeret. Fjern markeringen i dette afkrydsningsfelt for at importere den valutakurs, der er udgivet den samme arbejdsdag.  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

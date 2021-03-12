@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5cf1ac4de07cb6357493a0b2c84f6a6ee591d4bc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645884"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990557"
 ---
 # <a name="cash-position-preview"></a>Likviditet (prøveversion)
 
@@ -34,7 +33,7 @@ Likviditeten er den projektion af likviditeten, der er prognose for den nærmest
 
 Når systemet forudsiger debitorbetalinger, bruger det betalingsforudsigelserne fra funktionen til forudsigelse af debitorbetaling. Uden betalingsforudsigelser bruges den gennemsnitlige tid, der kræves for at konvertere en debitorfaktura til en betaling for hver debitor, til beregning af en betalingsdato. Ved åbne kundeordrer beregner systemet fakturadatoen ved hjælp af det gennemsnitlige antal dage til ordrelinjerne pr. kunde, der skal faktureres. Derefter bruger programmet fakturadatoen som et input til funktionen til betalingsforudsigelse. Funktionaliteten til forudsigelse af debitorbetaling beregner en betalingsdato for hver ordrelinje. 
 
-<*Du skal bruge tekst fra Jarek eller Dave angående, hvordan betalingsforudsigelser konverteres til en dato*> Betalingsdatoen for udestående fakturaer er cirka [*forkalkuleret*] fra betalingsforudsigelser ved at vælge en dato, der svarer til halvtredsindtyvende percentil for den kumulative fordelingsfunktion, der er opnået fra det forudsigede filsæts sandsynligheder.
+<*Du skal bruge tekst fra Jarek eller Dave angående, hvordan betalingsforudsigelser konverteres til en dato*> Betalingsdatoen for udestående fakturaer er cirka [*estimeret*] fra betalingsforudsigelser ved at vælge en dato, der svarer til halvtredsindtyvende percentil for den kumulative fordelingsfunktion, der er opnået fra det forudsagte filsæts sandsynligheder.
 
 En lignende fremgangsmåde bruges til at forudsige betalinger til kreditorer. For hver leverandør beregner systemet den gennemsnitlige tid, der kræves for at konvertere en kreditorfaktura til en betaling. Dette antal dage anvendes derefter til at beregne betalingsdatoen. I forbindelse med åbne kreditorordrer beregner systemet fakturadatoen ved at overveje det gennemsnitlige antal dage, der kræves for at konvertere ordrelinjer til en faktura for hver kreditor. Systemet beregner derefter betalingsdatoen ved at anvende den gennemsnitlige tid, der kræves for at konvertere en kreditorfaktura til en betaling for hver kreditor.
 
@@ -51,6 +50,3 @@ Hvis du vil gemme og redigere likviditeten, skal du oprette et snapshot. Du kan 
 
 #### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

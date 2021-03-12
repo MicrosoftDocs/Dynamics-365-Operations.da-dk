@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441600"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990233"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Undervisningskatalog til brugere af Dynamics 365 Finance
 
@@ -54,12 +53,10 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | [Konfigurere og bruge budgettering i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Hver eneste private eller offentlige organisation sætter økonomiske og driftsmæssige mål ved oprettelse af budgetter. Med den koordinerende og processtyrede art af budgetplanlægning kan du gøre budgetprocessen mere effektiv. | Gratis onlinelæringssti i dit eget tempo | 3.5 timer |
 | [Konfigurere og styre anlægsaktiver i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere dem ved at afskrive dem og angive en grænse for kapitalisering. Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land eller område. | Gratis onlinelæringssti i dit eget tempo | 4.5 timer |
 | [Introduktion til omkostningsregnskab for forsyningskæder i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | I omkostningsregnskabet kan du indsamle data fra forskellige kilder, f.eks. finans, underfinanskonti, budgetter og statistiske oplysninger. Du kan derefter analysere, opsummere og evaluere omkostningsdata, så ledelsen kan tage de bedst mulige beslutninger om prisopdateringer, budgetter, omkostningsstyring og så videre.  | Gratis onlinelæringssti i dit eget tempo | 1 time  |
+| [Arbejde med udgiftsstyring i Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maksimere rentabiliteten, og minimere omkostningerne med nøjagtige funktioner til udgiftsstyring i Dynamics 365 Project Operations. Lær, hvordan du konfigurerer systemet og opretter og godkender udgiftsrapporter. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer  |
 
 ## <a name="exam"></a>Eksamen<a name="exam"></a>
 
-| Indhold | Beskrivende tekst  | Formater  |
+| Indhold | Betegnelse  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grundlæggende funktioner i Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Bevis, at du forstår Microsoft Dynamics 365. Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder. | Eksamen, hvor omkostning varierer alt efter region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

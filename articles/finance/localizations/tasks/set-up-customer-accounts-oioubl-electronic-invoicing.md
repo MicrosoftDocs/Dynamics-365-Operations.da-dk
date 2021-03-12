@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, RegNumTaxIdLookup, smmContactPerson, DirPartyLookup, ContactPersonLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ecb922c2e02d3d9d20b0795ad98399b38d1fb38d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a05eefbb942a6f4a1bb96fb6c716250ccff9601b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407666"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988156"
 ---
 # <a name="set-up-customer-accounts-for-oioubl-electronic-invoicing"></a>Konfigurere debitorkonti til elektronisk OIOUBL-fakturering
 
@@ -50,6 +49,3 @@ Det er den tredje af seks procedurer, der viser processen til oprettelse af e-fa
 
 ## <a name="set-up-contact-information-for-a-customer"></a>Konfigurer kontaktoplysninger for en kunde
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
