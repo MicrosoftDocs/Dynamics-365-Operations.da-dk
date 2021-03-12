@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441512"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979581"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
@@ -75,7 +74,7 @@ Hvis din organisation kræver, at fakturaforslag gennemgås, før de bogføres, 
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Se tilskudsoplysninger på sider med projektfakturalister
 
-Brugere af den offentlige sektor kan føje **Tilskuds-id** og **Tilskudsnavn** til listesiderne **Projektfakturaforslag** og **Projektfakturaer**. Disse kolonner er aktiveret ved hjælp af funktionen **Tilføj tilskudsoplysninger på projektfakturalistesider**. Denne funktion er som standard deaktiveret og kan aktiveres i **Arbejdsområder > Administration af funktioner**. Kontakt systemadministratoren for at få hjælp til at aktivere denne funktion.
+Brugere af den offentlige sektor kan føje **Tilskuds-id** og **Tilskudsnavn** til listesiderne **Projektfakturaforslag** og **Projektfakturaer**. Disse kolonner er aktiveret ved hjælp af funktionen **Tilføj tilskudsoplysninger på projektfakturalistesider**. Denne funktion er som standard deaktiveret og kan aktiveres i **Arbejdsområder > Administration af funktioner**. Kontakt systemadministratoren for at få hjælp til at aktivere denne funktion.
 
 ## <a name="on-account-invoicing"></a>Acontofakturering
 Det beløb, du angiver for et projekt på en acontofaktura for et projekt, er baseret på timingen, færdiggørelsesgraden og andre faktureringsbetingelser, der er angivet i den relaterede projektkontrakt. Beløbet beregnes ikke ud fra timer, varer, udgifter eller gebyrer, der er bogført til projektet. 
@@ -132,6 +131,3 @@ Du kan oprette en faktura, der har et negativt beløb, som bliver en faktura, de
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

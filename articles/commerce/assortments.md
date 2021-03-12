@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411006"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979992"
 ---
 # <a name="assortment-management"></a>Sortimentsstyring
 
@@ -107,6 +106,3 @@ Overvej følgende implementeringskrav, når du planlægger og administrerer sort
 - **Salg og returneringer uden for et sortiment** – Denne funktion hjælper detailhandlere med effektivt at styre deres sortimenter ved at lade dem med at begrænse antallet af tilgængelige produkter til produkter, der hører til den centrale produktsammensætning for butikken. Denne funktion hjælper også detailhandlere med at håndtere situationer, hvor et produkt ved en fejltagelse er udeladt fra et sortiment, eller hvor der blev returneret et produkt uden for ikrafttrædelsesdatoerne for sortimentet.
 
 Hvis produktdataene ikke findes i kanaldatabasen, foretager POS kald i realtid til hovedkontoret for at få de nødvendige oplysninger, så produktet kan blive solgt, returneret eller sættes på en debitorordre. Produktoplysninger, der hentes på denne måde, er kun tilgængelige for den pågældende transaktion. Produktet føjes ikke til sortimentsdefinitionen. Derfor vil efterfølgende kald i realtids blive foretaget efter behov.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

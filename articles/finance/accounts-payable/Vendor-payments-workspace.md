@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
-ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
+ms.openlocfilehash: 34f4e22f571569a6276f8a801d33c6afef8480dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4441732"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979557"
 ---
 # <a name="vendor-payments-workspace"></a>Arbejdsområde for kreditorbetalinger
 
@@ -78,6 +77,3 @@ Følgende tabel viser de visualiseringer, der er tilgængelig på hver rapportsi
 |    Kreditor til debitor-saldo     |                                                                                                                   <ul><li>Kreditor til debitor-saldo</li><li>Kreditor til debitor-saldo pr. firma</li><li>Detaljer om kreditor til debitor-saldo</li></ul>                                                                                                                    |
 |    Fakturaer med betaling på hold     |                                                                                         <ul><li>Fakturaer med betaling på hold</li><li>Detaljer om fakturaer med betaling på hold</li><li>Fakturaer med betaling på hold pr. firma</li><li>Fakturaer med betaling på hold pr. kreditorgruppe</li></ul>                                                                                          |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

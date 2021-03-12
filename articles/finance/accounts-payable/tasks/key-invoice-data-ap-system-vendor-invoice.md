@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines, VendEditInvoice, InventItemIdLookupSimple, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f80c88b7fb3542f624d233f670cd7cd6ccd48b94
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74065fa3177c8add29e64ce0f77461df036c8fe5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441397"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979307"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Vigtigste fakturadata i kreditor, der bruger en kreditorfaktura
 
@@ -73,6 +72,3 @@ Denne opgaveguide hjælper dig med at oprette en kreditorfaktura fra en indkøbs
 19. Klik på **Bogfør**.
 20. Luk formularen. Bemærk, at indkøbsordren ikke længere er angivet som modtaget, men ikke faktureret.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

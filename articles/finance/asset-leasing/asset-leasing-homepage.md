@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
-ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
+ms.openlocfilehash: 944139a8b3d7d549bd7be83918bd680717e6fdf0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4441776"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979033"
 ---
 # <a name="asset-leasing-home-page"></a>Hjemmeside for aktivleasing
 
@@ -46,7 +45,7 @@ Følgende emne kan hjælpe dig med at konfigurere og bruge aktivleasing.
   - [Oprette en leasinggruppe](create-lease-group.md)
   - [Konfigurere indekssatser](set-up-index-rate-types.md)
   - [Konfigurere udgiftstyper](set-up-expense-types.md)
-  - [Konfigurere leasingkladdenavne](set-up-lease-journal-names.md)
+  - [Oprette leasingkladdenavne](set-up-lease-journal-names.md)
   - [Konfigurere leasingbogføringskonti](set-up-lease-posting-accts.md)
   - [Tildele nummerserier](leasing-number-sequences.md)
   - [Tildel brugerroller](lease-user-roles.md)
@@ -96,6 +95,3 @@ Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bl
 ### <a name="videos"></a>Videoer
 
 Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 662b080a0e87ae6ce7d89ffa848579517dd9b6a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441501"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979232"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurere validering af fakturasammenholdelse for kreditor
 
@@ -98,6 +97,3 @@ Gå til **Kreditorer > Konfiguration > Konfiguration af fakturasammenholdelse > 
 
 1. Hvis du vil angive tolerancer for individuelle kreditorer, der tilsidesætter standardtolerancen, skal du vælge en **Kreditorkonto**.
 2. Angiv den afvigelsesprocent, som du kan acceptere for denne kreditor.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 427e82ab75ba16076a3f99ef7df28e9b419d2e7b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411001"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980575"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funktioner og egenskaber til øget tilgængelighed
 
@@ -114,6 +113,3 @@ Følg disse trin for at angive en attribut for **Minimumsalder** for et videoakt
 [Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
 
 [Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247193732a49cf0d26f0437f57f3ed66061a118
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9c29529aa57eb7685e36f5407f4279544fdb701
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441514"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979532"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forudbetalingsfakturaer vs. forudbetalinger
 
@@ -51,7 +50,7 @@ I mange lande/områder er det regnskabspraksis, at forudbetalinger fra en debito
 3.  Opret en betalingskladde, og opret derefter en ny betaling.
 4.  Du kan markere betalingen som forudbetaling. Hvis en betaling er markeret som en forudbetaling, er betalingen bogført på finanskonti, der er defineret på den posteringsprofil, du har oprettet i trin 1 og 2. Og hvis betalingen er markeret som en forudbetaling, beregnes der moms. Nogle regeringer kræver, at momsen betales, når der registreres en forudbetaling, selvom der ikke er en faktura.
 5.  Bogfør forudbetalingen.
-6.  Valgfrit: Du kan udligne forudbetaling på indkøbsordren eller salgsordren, før du opretter fakturaen.På siden for salgsordren eller indkøbsordren i handlingsruden skal du bruge **Udlign transaktioner**.
+6.  Valgfrit: Du kan udligne forudbetaling på indkøbsordren eller salgsordren, før du opretter fakturaen. På siden for salgsordren eller indkøbsordren i handlingsruden skal du bruge **Udlign transaktioner**.
 7.  Når kreditoren leverer varerne eller tjenesterne, kan du registrere fakturaen. Hvis du har udlignet forudbetaling mod indkøbsordren eller salgsordren i trin 6, udlignes forudbetalingen automatisk mod den faktura, du har oprettet. Hvis du ikke har udlignet forudbetaling mod indkøbsordren eller salgsordren, kan du manuelt udligne den mod fakturaen ved hjælp af **Udlign transaktioner** på debitor- eller kreditorsider. Forudbetalingsbeløbet tilbageføres derefter fra den midlertidige debitor- eller kreditorfinanskonto. Og hvis der blev beregnet moms, ændres de, da fakturaen indeholder de faktiske momsafgifter.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Oversigt over processen for forudbetalingsfakturering
@@ -66,6 +65,3 @@ Forudbetalingsfakturaer er en del af almindelig forretningspraksis. En kreditor 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7242ed830d09a29a4b01e20ce5070c3aaeca62b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411012"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979708"
 ---
 # <a name="reset-receipt-numbers"></a>Nulstille kvitteringsnumre 
 
@@ -68,6 +67,3 @@ Du kan bruge funktionen **Ryd nulstillingsdato** til at rydde fremtidige nulstil
 
 > [!NOTE]
 > Afhængigt af, hvilken nulstillingsdato du har valgt og kvitteringsformatet, kan du have dublerede kvitteringsnumre. Selvom POS-systemet kan håndtere disse situationer, øger de den tid, der kræves for at behandle returneringer, da salgsmedarbejderne skal vælge blandt de dublerede kvitteringer. Andre komplikationer, der er relateret til dataoprydning, kan forekomme, hvis de dublerede kvitteringer ikke var en planlagt konsekvens. Det anbefales derfor, at du bruger dynamiske datotegn (f.eks **ddd**, **MM**, **DD** og **YY**) for at forhindre dublerede kvitteringsnumre efter nulstilling.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
