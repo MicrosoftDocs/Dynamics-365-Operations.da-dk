@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 08b40c076e288592f6a4cd628b9acd8a2eaedb7e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4425037"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998397"
 ---
 # <a name="wave-step-codes"></a>Bølgetrinskoder
 
@@ -93,6 +92,3 @@ Følgende procedure hjælper med at sikre, at den genopfyldningsskabelon, du har
 6. Vælg den bølgetrinskode, du har oprettet i genopfyldningsskabelonen, i feltet **Kode for bølgetrin**.
 
 Du udfører disse trin for hver juridisk enhed.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

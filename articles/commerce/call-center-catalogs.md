@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 259b68aa28aa0c84699fc6d2e691bae0af135ab7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4411227"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997794"
 ---
 # <a name="call-center-catalogs"></a>Callcenter-kataloger
 
@@ -101,6 +100,3 @@ Under fanen **Kataloger** findes også indstillinger til konfiguration af en **B
 ## <a name="additional-notes"></a>Yderligere bemærkninger
 
 Når et kildekode-id i øjeblikket anvendes på en salgsordre i callcenteret, bruges det til at vise priser, kampagner, scripts og mersalg eller tillægssalg, der gælder for et bestemt katalog. Systemet kan ikke forbyde eller forhindre, at et produkt, ikke der findes i kataloget, kan bestilles på salgsordren. Hvis en vare, der ikke indgår i kataloget, bestilles, bruger systemet først den **Prisgruppe**, der er defineret i callcenterkanalen (**Retail og Commerce** \> **Kanaler** \> **Call centers** \> **Alle call centers**) til varepris eller kampagner. Hvis der ikke findes en bestemt kanalpris, bruges basissalgsprisen for varen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

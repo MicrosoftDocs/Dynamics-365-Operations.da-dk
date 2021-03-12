@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424395"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996320"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 
@@ -230,6 +229,3 @@ Du kan også kontrollere, at posteringsrelationerne er blevet opdateret på føl
 - Indstillingen **Opdel antal til ny last** fungerer også, når nogle af de resterende arbejdsoverskrifter har statussen *Under behandling*. Du kan derfor stadig bruge funktionaliteten, selvom arbejdere allerede kører plukordrerne.
 - Hvis du vælger **Annuller ikke-opfyldt antal**, mens der er resterende arbejde med statussen *Åben* eller *Under behandling*, får du vist følgende fejlmeddelelse: "det er ikke muligt at annullere det resterende antal til last. Der findes arbejde til last."
 - Hvis du vælger **Annuller ikke-opfyldt antal**, når der ikke er noget resterende arbejde, men der er frigivne lastlinjer på lasten, får du vist følgende fejlmeddelelse: "Forsendelsen til last kunne ikke bekræftes, fordi antallet for varen overstiger den procentdel, der er defineret til underlevering". For at undgå denne fejl kan du angive procentdelen for **Underlevering** på den ikke-frigivne lastlinje til 100 %. Linjer, der ikke er frigivet, flyttes ikke til en ny last, men den aktuelle last bekræftes med underlevering. I dette tilfælde kan du ikke genudgive den oprindelige ordre. Derfor skal du håndtere den på en anden måde.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

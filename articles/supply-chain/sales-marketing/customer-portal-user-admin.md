@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528287"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996770"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
 
@@ -39,11 +38,11 @@ Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https:
 
 ## <a name="prerequisite-setup"></a>Forudsætninger for opsætning
 
-Kontaktpersoner i Power Apps-portaler gemmes som poster i enheden **Kontaktpersoner** i Common Data Service. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
+Kontakter i Power Apps-portaler gemmes som poster i tabellen **Kontakter** i Microsoft Dataverse. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
 
 ![Systemdiagram for kundeportal-kontaktpersoner](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
 
-Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret enhedstilknytningen **Kontakt** i dobbeltskrivning.
+Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret tabeltilknytningen **Kontakt** i dobbeltskrivning.
 
 ## <a name="the-invitation-process"></a>Invitationsprocessen
 
@@ -58,15 +57,15 @@ Når en kontakt er oprettet, skal du kunne se den i Supply Chain Management.
 
 Du kan finde flere oplysninger under [Konfigurere en kontaktperson til brug på en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentationen for Power Apps-portaler.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Out-of-box-webroller og enhedstilladelser
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Køreklare webroller og tabeltilladelser
 
-Brugerroller i Power Apps-portaler defineres af [webroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [enhedstilladelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Der er defineret nogle få roller for kundeportalen lige fra starten. Du kan oprette nye roller, og du kan redigere eller fjerne eksisterende roller.
+Brugerroller i Power Apps-portaler defineres af [webroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [tabeltilladelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Der er defineret nogle få roller for kundeportalen lige fra starten. Du kan oprette nye roller, og du kan redigere eller fjerne eksisterende roller.
 
 ### <a name="out-of-box-web-roles"></a>Out-of-box-webroller
 
 I dette afsnit beskrives de webroller, der leveres sammen med kundeportalen.
 
-Du kan finde flere oplysninger om, hvordan du redigerer out-of-box-brugerrollerne under [Oprette webroller til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [Tilføje postbaseret sikkerhed ved at bruge enhedstilladelser til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen for Power Apps-portaler.
+Du kan finde flere oplysninger om, hvordan du redigerer køreklare brugerroller, under [Oprette webroller til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [Tilføje postbaseret sikkerhed ved at bruge tabeltilladelser til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen for Power Apps-portaler.
 
 #### <a name="administrator"></a>Administrator
 
@@ -96,6 +95,3 @@ Følgende tabel viser, hvilke salgsordrer brugerne i de enkelte webroller kan se
 
 > [!NOTE]
 > Selvom både Sam og Jane er kontaktpersoner, der arbejder for kunde X, kan de kun se de ordrer, de selv har afgivet, og intet andet. Selvom May har en ordre i systemet, kan hun ikke se den pågældende ordre i kundeportalen, fordi hun er en uautoriseret bruger. (Desuden må hun have afgivet ordren via en anden kanal end kundeportalen).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
