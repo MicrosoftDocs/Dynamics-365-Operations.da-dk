@@ -11,78 +11,77 @@ ms.technology: ''
 ms.search.form: CAMCostBehaviorRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfdff9b1af9183d21e988dd53559e749eed077eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 110ab87586c926d719537d2c30225d1630ce7710
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441493"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969297"
 ---
-# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="d1170-103">Oprette og tildele politik for omkostningsfunktionalitet til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="d1170-103">Create and assign a cost behavior policy to a cost control unit</span></span>
+# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="e23a4-103">Oprette og tildele politik for omkostningsfunktionalitet til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="e23a4-103">Create and assign a cost behavior policy to a cost control unit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d1170-104">Omkostningsfunktionalitet er klassificeringen af omkostninger som enten faste eller variable.</span><span class="sxs-lookup"><span data-stu-id="d1170-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="d1170-105">En politik og de tilsvarende regler skal tildeles til en omkostningskontrolenhed, hvis politikken skal træde i kraft.</span><span class="sxs-lookup"><span data-stu-id="d1170-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="d1170-106">Du kan bruge denne procedure til at oprette en politik og derefter tildele politikken til en omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="d1170-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
+<span data-ttu-id="e23a4-104">Omkostningsfunktionalitet er klassificeringen af omkostninger som enten faste eller variable.</span><span class="sxs-lookup"><span data-stu-id="e23a4-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="e23a4-105">En politik og de tilsvarende regler skal tildeles til en omkostningskontrolenhed, hvis politikken skal træde i kraft.</span><span class="sxs-lookup"><span data-stu-id="e23a4-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="e23a4-106">Du kan bruge denne procedure til at oprette en politik og derefter tildele politikken til en omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="e23a4-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
 
 
-## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="d1170-107">Oprette et hierarki for omkostningsfunktionalitet</span><span class="sxs-lookup"><span data-stu-id="d1170-107">Create a cost behavior hierarchy</span></span>
-1. <span data-ttu-id="d1170-108">Gå til Omkostningsregnskab > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="d1170-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="d1170-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-109">Click New.</span></span>
-3. <span data-ttu-id="d1170-110">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="d1170-110">Click Create.</span></span>
-4. <span data-ttu-id="d1170-111">Skriv 'Hierarki for omkostningsfunktionalitet' i feltet Dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="d1170-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
-5. <span data-ttu-id="d1170-112">Indtast eller vælg en værdi i feltet Dimension.</span><span class="sxs-lookup"><span data-stu-id="d1170-112">In the Dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-113">Vælg Omkostningselementer.</span><span class="sxs-lookup"><span data-stu-id="d1170-113">Select Cost elements.</span></span>  
-6. <span data-ttu-id="d1170-114">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d1170-114">Click Save.</span></span>
-7. <span data-ttu-id="d1170-115">Klik på Vis hierarki.</span><span class="sxs-lookup"><span data-stu-id="d1170-115">Click View hierarchy.</span></span>
-8. <span data-ttu-id="d1170-116">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-116">Click New.</span></span>
-9. <span data-ttu-id="d1170-117">Angiv en værdi i feltet Node.</span><span class="sxs-lookup"><span data-stu-id="d1170-117">In the Node name field, type a value.</span></span>
-    * <span data-ttu-id="d1170-118">Skriv Fast omkostning.</span><span class="sxs-lookup"><span data-stu-id="d1170-118">Enter Fixed cost.</span></span>  
-10. <span data-ttu-id="d1170-119">Vælg 'Hierarki for omkostningsfunktionalitet' i træet.</span><span class="sxs-lookup"><span data-stu-id="d1170-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
-11. <span data-ttu-id="d1170-120">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-120">Click New.</span></span>
-12. <span data-ttu-id="d1170-121">Angiv en værdi i feltet Node.</span><span class="sxs-lookup"><span data-stu-id="d1170-121">In the Node name field, type a value.</span></span>
-    * <span data-ttu-id="d1170-122">Angiv Variabel omkostning.</span><span class="sxs-lookup"><span data-stu-id="d1170-122">Enter Variable cost.</span></span>  
-13. <span data-ttu-id="d1170-123">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d1170-123">Click Save.</span></span>
-14. <span data-ttu-id="d1170-124">Vælg 'Hierarki for omkostningsfunktionalitet\Fast omkostning' i træet.</span><span class="sxs-lookup"><span data-stu-id="d1170-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
-15. <span data-ttu-id="d1170-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-125">Click New.</span></span>
-16. <span data-ttu-id="d1170-126">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1170-126">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="d1170-127">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="d1170-127">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-128">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="d1170-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-18. <span data-ttu-id="d1170-129">Indtast eller vælg en værdi i feltet Til dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="d1170-129">In the To dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-130">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="d1170-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-19. <span data-ttu-id="d1170-131">Vælg 'Hierarki for omkostningsfunktionalitet\Variabel omkostning' i træet.</span><span class="sxs-lookup"><span data-stu-id="d1170-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
-20. <span data-ttu-id="d1170-132">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-132">Click New.</span></span>
-21. <span data-ttu-id="d1170-133">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1170-133">In the list, mark the selected row.</span></span>
-22. <span data-ttu-id="d1170-134">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="d1170-134">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-135">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="d1170-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-23. <span data-ttu-id="d1170-136">Indtast eller vælg en værdi i feltet Til dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="d1170-136">In the To dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-137">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="d1170-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-24. <span data-ttu-id="d1170-138">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d1170-138">Click Save.</span></span>
+## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="e23a4-107">Oprette et hierarki for omkostningsfunktionalitet</span><span class="sxs-lookup"><span data-stu-id="e23a4-107">Create a cost behavior hierarchy</span></span>
+1. <span data-ttu-id="e23a4-108">Gå til Omkostningsregnskab > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="e23a4-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="e23a4-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-109">Click New.</span></span>
+3. <span data-ttu-id="e23a4-110">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="e23a4-110">Click Create.</span></span>
+4. <span data-ttu-id="e23a4-111">Skriv 'Hierarki for omkostningsfunktionalitet' i feltet Dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="e23a4-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
+5. <span data-ttu-id="e23a4-112">Indtast eller vælg en værdi i feltet Dimension.</span><span class="sxs-lookup"><span data-stu-id="e23a4-112">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-113">Vælg Omkostningselementer.</span><span class="sxs-lookup"><span data-stu-id="e23a4-113">Select Cost elements.</span></span>  
+6. <span data-ttu-id="e23a4-114">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-114">Click Save.</span></span>
+7. <span data-ttu-id="e23a4-115">Klik på Vis hierarki.</span><span class="sxs-lookup"><span data-stu-id="e23a4-115">Click View hierarchy.</span></span>
+8. <span data-ttu-id="e23a4-116">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-116">Click New.</span></span>
+9. <span data-ttu-id="e23a4-117">Angiv en værdi i feltet Node.</span><span class="sxs-lookup"><span data-stu-id="e23a4-117">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="e23a4-118">Skriv Fast omkostning.</span><span class="sxs-lookup"><span data-stu-id="e23a4-118">Enter Fixed cost.</span></span>  
+10. <span data-ttu-id="e23a4-119">Vælg 'Hierarki for omkostningsfunktionalitet' i træet.</span><span class="sxs-lookup"><span data-stu-id="e23a4-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
+11. <span data-ttu-id="e23a4-120">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-120">Click New.</span></span>
+12. <span data-ttu-id="e23a4-121">Angiv en værdi i feltet Node.</span><span class="sxs-lookup"><span data-stu-id="e23a4-121">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="e23a4-122">Angiv Variabel omkostning.</span><span class="sxs-lookup"><span data-stu-id="e23a4-122">Enter Variable cost.</span></span>  
+13. <span data-ttu-id="e23a4-123">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-123">Click Save.</span></span>
+14. <span data-ttu-id="e23a4-124">Vælg 'Hierarki for omkostningsfunktionalitet\Fast omkostning' i træet.</span><span class="sxs-lookup"><span data-stu-id="e23a4-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
+15. <span data-ttu-id="e23a4-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-125">Click New.</span></span>
+16. <span data-ttu-id="e23a4-126">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e23a4-126">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="e23a4-127">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-127">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-128">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="e23a4-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+18. <span data-ttu-id="e23a4-129">Indtast eller vælg en værdi i feltet Til dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-129">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-130">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="e23a4-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+19. <span data-ttu-id="e23a4-131">Vælg 'Hierarki for omkostningsfunktionalitet\Variabel omkostning' i træet.</span><span class="sxs-lookup"><span data-stu-id="e23a4-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
+20. <span data-ttu-id="e23a4-132">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-132">Click New.</span></span>
+21. <span data-ttu-id="e23a4-133">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e23a4-133">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="e23a4-134">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-134">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-135">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="e23a4-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+23. <span data-ttu-id="e23a4-136">Indtast eller vælg en værdi i feltet Til dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-136">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-137">Der må gerne være mellemrum mellem dimensionsmedlemmer, men medlemmerne må ikke overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="e23a4-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+24. <span data-ttu-id="e23a4-138">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-138">Click Save.</span></span>
 
-## <a name="create-the-policy-and-rules"></a><span data-ttu-id="d1170-139">Oprette politikken og reglerne</span><span class="sxs-lookup"><span data-stu-id="d1170-139">Create the policy and rules</span></span>
-1. <span data-ttu-id="d1170-140">Gå til Omkostningsregnskab > Politikker > Politikker for funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="d1170-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
-2. <span data-ttu-id="d1170-141">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-141">Click New.</span></span>
-3. <span data-ttu-id="d1170-142">Angiv en værdi i feltet Navn på politik.</span><span class="sxs-lookup"><span data-stu-id="d1170-142">In the Policy name field, type a value.</span></span>
-4. <span data-ttu-id="d1170-143">Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningselement.</span><span class="sxs-lookup"><span data-stu-id="d1170-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-144">Vælg det politikhierarki, du netop har oprettet.</span><span class="sxs-lookup"><span data-stu-id="d1170-144">Select the policy hierarchy that you just created.</span></span>  
-5. <span data-ttu-id="d1170-145">Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="d1170-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-146">Vælg organisation.</span><span class="sxs-lookup"><span data-stu-id="d1170-146">Select Organization.</span></span>  
-6. <span data-ttu-id="d1170-147">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d1170-147">Click Save.</span></span>
-7. <span data-ttu-id="d1170-148">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-148">Click New.</span></span>
-8. <span data-ttu-id="d1170-149">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1170-149">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="d1170-150">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningselement.</span><span class="sxs-lookup"><span data-stu-id="d1170-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-151">Udvid hierarkiet ved at vælge Variabel omkostning.</span><span class="sxs-lookup"><span data-stu-id="d1170-151">Expand the hierarchy to select Variable cost.</span></span>  
-10. <span data-ttu-id="d1170-152">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="d1170-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="d1170-153">Som standard er den variable procentdel 100 %.</span><span class="sxs-lookup"><span data-stu-id="d1170-153">By default, the variable percentage is 100 percent.</span></span>  
-11. <span data-ttu-id="d1170-154">Klik på Politiktildelinger for omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="d1170-154">Click Policy assignments for cost control unit.</span></span>
-12. <span data-ttu-id="d1170-155">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1170-155">Click New.</span></span>
-13. <span data-ttu-id="d1170-156">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1170-156">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="d1170-157">Indtast en dato i feltet Gyldig fra regnskabsdato.</span><span class="sxs-lookup"><span data-stu-id="d1170-157">In the Valid from accounting date field, enter a date.</span></span>
-    * <span data-ttu-id="d1170-158">Reglerne er datorelaterede, og en bruger eller systemet kan lade en regel udløbe, hvis der oprettes en nyere version.</span><span class="sxs-lookup"><span data-stu-id="d1170-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
-15. <span data-ttu-id="d1170-159">Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="d1170-159">In the Cost control unit field, enter or select a value.</span></span>
-16. <span data-ttu-id="d1170-160">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d1170-160">Click Save.</span></span>
+## <a name="create-the-policy-and-rules"></a><span data-ttu-id="e23a4-139">Oprette politikken og reglerne</span><span class="sxs-lookup"><span data-stu-id="e23a4-139">Create the policy and rules</span></span>
+1. <span data-ttu-id="e23a4-140">Gå til Omkostningsregnskab > Politikker > Politikker for funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="e23a4-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
+2. <span data-ttu-id="e23a4-141">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-141">Click New.</span></span>
+3. <span data-ttu-id="e23a4-142">Angiv en værdi i feltet Navn på politik.</span><span class="sxs-lookup"><span data-stu-id="e23a4-142">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="e23a4-143">Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningselement.</span><span class="sxs-lookup"><span data-stu-id="e23a4-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-144">Vælg det politikhierarki, du netop har oprettet.</span><span class="sxs-lookup"><span data-stu-id="e23a4-144">Select the policy hierarchy that you just created.</span></span>  
+5. <span data-ttu-id="e23a4-145">Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="e23a4-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-146">Vælg organisation.</span><span class="sxs-lookup"><span data-stu-id="e23a4-146">Select Organization.</span></span>  
+6. <span data-ttu-id="e23a4-147">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-147">Click Save.</span></span>
+7. <span data-ttu-id="e23a4-148">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-148">Click New.</span></span>
+8. <span data-ttu-id="e23a4-149">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e23a4-149">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="e23a4-150">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningselement.</span><span class="sxs-lookup"><span data-stu-id="e23a4-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-151">Udvid hierarkiet ved at vælge Variabel omkostning.</span><span class="sxs-lookup"><span data-stu-id="e23a4-151">Expand the hierarchy to select Variable cost.</span></span>  
+10. <span data-ttu-id="e23a4-152">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="e23a4-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="e23a4-153">Som standard er den variable procentdel 100 %.</span><span class="sxs-lookup"><span data-stu-id="e23a4-153">By default, the variable percentage is 100 percent.</span></span>  
+11. <span data-ttu-id="e23a4-154">Klik på Politiktildelinger for omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="e23a4-154">Click Policy assignments for cost control unit.</span></span>
+12. <span data-ttu-id="e23a4-155">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e23a4-155">Click New.</span></span>
+13. <span data-ttu-id="e23a4-156">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e23a4-156">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="e23a4-157">Indtast en dato i feltet Gyldig fra regnskabsdato.</span><span class="sxs-lookup"><span data-stu-id="e23a4-157">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="e23a4-158">Reglerne er datorelaterede, og en bruger eller systemet kan lade en regel udløbe, hvis der oprettes en nyere version.</span><span class="sxs-lookup"><span data-stu-id="e23a4-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
+15. <span data-ttu-id="e23a4-159">Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="e23a4-159">In the Cost control unit field, enter or select a value.</span></span>
+16. <span data-ttu-id="e23a4-160">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e23a4-160">Click Save.</span></span>
 

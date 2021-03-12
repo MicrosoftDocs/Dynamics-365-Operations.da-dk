@@ -10,62 +10,61 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4b50782c7a1b69b6953c65d6df155f003028333
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 88d6208e867bd322ddfc4e599856b1905fa8e19b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441709"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969372"
 ---
-# <a name="configure-access-rights-for-a-cost-object-controller"></a><span data-ttu-id="cb5e4-103">Konfigurere adgangsrettigheder for en controller for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="cb5e4-103">Configure access rights for a cost object controller</span></span>
+# <a name="configure-access-rights-for-a-cost-object-controller"></a><span data-ttu-id="b7af1-103">Konfigurere adgangsrettigheder for en controller for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="b7af1-103">Configure access rights for a cost object controller</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="cb5e4-104">Brug denne procedure til at konfigurere adgangsrettigheder for en omkostningsobjektcontroller.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-104">Use this procedure to configure access rights for a cost object controller.</span></span> <span data-ttu-id="cb5e4-105">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-105">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="b7af1-104">Brug denne procedure til at konfigurere adgangsrettigheder for en omkostningsobjektcontroller.</span><span class="sxs-lookup"><span data-stu-id="b7af1-104">Use this procedure to configure access rights for a cost object controller.</span></span> <span data-ttu-id="b7af1-105">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="b7af1-105">This recording uses the USP2 demo data company.</span></span>
 
 
-## <a name="assign-the-cost-object-controller-role"></a><span data-ttu-id="cb5e4-106">Tildele rollen Controller til omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="cb5e4-106">Assign the cost object controller role</span></span>
-1. <span data-ttu-id="cb5e4-107">Gå til Systemadministration > Brugere > Brugere.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-107">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="cb5e4-108">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="cb5e4-109">For eksempel kan du filtrere på værdien 'alicia' i feltet Brugernavn.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-109">For example, filter on the User name field with a value of 'alicia'.</span></span>
-3. <span data-ttu-id="cb5e4-110">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-110">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="cb5e4-111">Klik på Tildel roller.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-111">Click Assign roles.</span></span>
-5. <span data-ttu-id="cb5e4-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-112">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="cb5e4-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-113">Click OK.</span></span>
+## <a name="assign-the-cost-object-controller-role"></a><span data-ttu-id="b7af1-106">Tildele rollen Controller til omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="b7af1-106">Assign the cost object controller role</span></span>
+1. <span data-ttu-id="b7af1-107">Gå til Systemadministration > Brugere > Brugere.</span><span class="sxs-lookup"><span data-stu-id="b7af1-107">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="b7af1-108">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="b7af1-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="b7af1-109">For eksempel kan du filtrere på værdien 'alicia' i feltet Brugernavn.</span><span class="sxs-lookup"><span data-stu-id="b7af1-109">For example, filter on the User name field with a value of 'alicia'.</span></span>
+3. <span data-ttu-id="b7af1-110">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b7af1-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="b7af1-111">Klik på Tildel roller.</span><span class="sxs-lookup"><span data-stu-id="b7af1-111">Click Assign roles.</span></span>
+5. <span data-ttu-id="b7af1-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="b7af1-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="b7af1-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b7af1-113">Click OK.</span></span>
 
-## <a name="enable-access-list-security"></a><span data-ttu-id="cb5e4-114">Aktivere sikkerhed for adgangsliste</span><span class="sxs-lookup"><span data-stu-id="cb5e4-114">Enable access list security</span></span>
-1. <span data-ttu-id="cb5e4-115">Gå til Omkostningsregnskab > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-115">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="cb5e4-116">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-116">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="cb5e4-117">Vælg organisation.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-117">Select Organization.</span></span>  
-3. <span data-ttu-id="cb5e4-118">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-118">Click Edit.</span></span>
-4. <span data-ttu-id="cb5e4-119">Vælg Ja i feltet Adgangslistehierarki.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-119">Select Yes in the Access list hierarchy field.</span></span>
-5. <span data-ttu-id="cb5e4-120">Klik på Vis hierarki.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-120">Click View hierarchy.</span></span>
+## <a name="enable-access-list-security"></a><span data-ttu-id="b7af1-114">Aktivere sikkerhed for adgangsliste</span><span class="sxs-lookup"><span data-stu-id="b7af1-114">Enable access list security</span></span>
+1. <span data-ttu-id="b7af1-115">Gå til Omkostningsregnskab > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="b7af1-115">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="b7af1-116">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="b7af1-116">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b7af1-117">Vælg organisation.</span><span class="sxs-lookup"><span data-stu-id="b7af1-117">Select Organization.</span></span>  
+3. <span data-ttu-id="b7af1-118">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="b7af1-118">Click Edit.</span></span>
+4. <span data-ttu-id="b7af1-119">Vælg Ja i feltet Adgangslistehierarki.</span><span class="sxs-lookup"><span data-stu-id="b7af1-119">Select Yes in the Access list hierarchy field.</span></span>
+5. <span data-ttu-id="b7af1-120">Klik på Vis hierarki.</span><span class="sxs-lookup"><span data-stu-id="b7af1-120">Click View hierarchy.</span></span>
 
-## <a name="assign-access-rights-to-user"></a><span data-ttu-id="cb5e4-121">Tildele adgangsrettigheder til bruger</span><span class="sxs-lookup"><span data-stu-id="cb5e4-121">Assign access rights to user</span></span>
-1. <span data-ttu-id="cb5e4-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-122">Click New.</span></span>
-2. <span data-ttu-id="cb5e4-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-123">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="cb5e4-124">Indtast eller vælg en værdi i feltet Bruger-id.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-124">In the User ID field, enter or select a value.</span></span>
-    * <span data-ttu-id="cb5e4-125">Vælg administrator.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-125">Select Admin.</span></span>  
-4. <span data-ttu-id="cb5e4-126">Vælg 'Organisation\Administrerende direktør\Administrerende direktør\FIM'.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-126">In the tree, select 'Organization\CEO\CFO\FIM'.</span></span>
-5. <span data-ttu-id="cb5e4-127">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-127">Click New.</span></span>
-6. <span data-ttu-id="cb5e4-128">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-128">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="cb5e4-129">Indtast eller vælg en værdi i feltet Bruger-id.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-129">In the User ID field, enter or select a value.</span></span>
-    * <span data-ttu-id="cb5e4-130">Vælg Alicia.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-130">Select Alicia.</span></span>  
-8. <span data-ttu-id="cb5e4-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-131">Click Save.</span></span>
+## <a name="assign-access-rights-to-user"></a><span data-ttu-id="b7af1-121">Tildele adgangsrettigheder til bruger</span><span class="sxs-lookup"><span data-stu-id="b7af1-121">Assign access rights to user</span></span>
+1. <span data-ttu-id="b7af1-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="b7af1-122">Click New.</span></span>
+2. <span data-ttu-id="b7af1-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b7af1-123">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="b7af1-124">Indtast eller vælg en værdi i feltet Bruger-id.</span><span class="sxs-lookup"><span data-stu-id="b7af1-124">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="b7af1-125">Vælg administrator.</span><span class="sxs-lookup"><span data-stu-id="b7af1-125">Select Admin.</span></span>  
+4. <span data-ttu-id="b7af1-126">Vælg 'Organisation\Administrerende direktør\Administrerende direktør\FIM'.</span><span class="sxs-lookup"><span data-stu-id="b7af1-126">In the tree, select 'Organization\CEO\CFO\FIM'.</span></span>
+5. <span data-ttu-id="b7af1-127">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="b7af1-127">Click New.</span></span>
+6. <span data-ttu-id="b7af1-128">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b7af1-128">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="b7af1-129">Indtast eller vælg en værdi i feltet Bruger-id.</span><span class="sxs-lookup"><span data-stu-id="b7af1-129">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="b7af1-130">Vælg Alicia.</span><span class="sxs-lookup"><span data-stu-id="b7af1-130">Select Alicia.</span></span>  
+8. <span data-ttu-id="b7af1-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="b7af1-131">Click Save.</span></span>
 
-## <a name="enable-access-rights-in-cost-accounting"></a><span data-ttu-id="cb5e4-132">Aktivere adgangsrettigheder i omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="cb5e4-132">Enable access rights in Cost accounting</span></span>
-1. <span data-ttu-id="cb5e4-133">Gå til Omkostningsregnskab > Opsætning > Parametre.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-133">Go to Cost accounting > Setup > Parameters.</span></span>
-2. <span data-ttu-id="cb5e4-134">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-134">Click the General tab.</span></span>
-3. <span data-ttu-id="cb5e4-135">Vælg Ja i feltet Aktivér læseadgang for dimensionsmedlemmer for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-135">Select Yes in the Enable view access for cost object dimension members field.</span></span>
-4. <span data-ttu-id="cb5e4-136">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-136">Click Save.</span></span>
-5. <span data-ttu-id="cb5e4-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-137">Close the page.</span></span>
-6. <span data-ttu-id="cb5e4-138">Gå til Omkostningsregnskab > Opsætning > Konfiguration af arbejdsområde for omkostningsstyring.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-138">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
-7. <span data-ttu-id="cb5e4-139">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-139">Click Edit.</span></span>
-8. <span data-ttu-id="cb5e4-140">Vælg Ja i feltet Publiceret.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-140">Select Yes in the Published field.</span></span>
-    * <span data-ttu-id="cb5e4-141">Hvis du vælger Ja, kan en bruger, der er tildelt en af følgende fire roller, se rapporterne i arbejdsområdet Omkostningsstyring: regnskabschef, bogholder, bogholderimedarbejder og omkostningsobjektcontroller.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-141">If you select Yes, a user who is assigned one of the following four roles can see the reports in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, and cost object controller.</span></span> <span data-ttu-id="cb5e4-142">Hvis du vælger Nej, er det kun en bruger, der er tildelt en af følgende roller, der kan se rapporterne: regnskabschef, bogholder og bogholderimedarbejder.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-142">If you select No, only a user who is assigned one of the following roles can see the reports: cost accounting manager, cost accountant, and cost accountant clerk.</span></span>    
-9. <span data-ttu-id="cb5e4-143">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="cb5e4-143">Click Save.</span></span>
+## <a name="enable-access-rights-in-cost-accounting"></a><span data-ttu-id="b7af1-132">Aktivere adgangsrettigheder i omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="b7af1-132">Enable access rights in Cost accounting</span></span>
+1. <span data-ttu-id="b7af1-133">Gå til Omkostningsregnskab > Opsætning > Parametre.</span><span class="sxs-lookup"><span data-stu-id="b7af1-133">Go to Cost accounting > Setup > Parameters.</span></span>
+2. <span data-ttu-id="b7af1-134">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="b7af1-134">Click the General tab.</span></span>
+3. <span data-ttu-id="b7af1-135">Vælg Ja i feltet Aktivér læseadgang for dimensionsmedlemmer for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="b7af1-135">Select Yes in the Enable view access for cost object dimension members field.</span></span>
+4. <span data-ttu-id="b7af1-136">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="b7af1-136">Click Save.</span></span>
+5. <span data-ttu-id="b7af1-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="b7af1-137">Close the page.</span></span>
+6. <span data-ttu-id="b7af1-138">Gå til Omkostningsregnskab > Opsætning > Konfiguration af arbejdsområde for omkostningsstyring.</span><span class="sxs-lookup"><span data-stu-id="b7af1-138">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
+7. <span data-ttu-id="b7af1-139">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="b7af1-139">Click Edit.</span></span>
+8. <span data-ttu-id="b7af1-140">Vælg Ja i feltet Publiceret.</span><span class="sxs-lookup"><span data-stu-id="b7af1-140">Select Yes in the Published field.</span></span>
+    * <span data-ttu-id="b7af1-141">Hvis du vælger Ja, kan en bruger, der er tildelt en af følgende fire roller, se rapporterne i arbejdsområdet Omkostningsstyring: regnskabschef, bogholder, bogholderimedarbejder og omkostningsobjektcontroller.</span><span class="sxs-lookup"><span data-stu-id="b7af1-141">If you select Yes, a user who is assigned one of the following four roles can see the reports in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, and cost object controller.</span></span> <span data-ttu-id="b7af1-142">Hvis du vælger Nej, er det kun en bruger, der er tildelt en af følgende roller, der kan se rapporterne: regnskabschef, bogholder og bogholderimedarbejder.</span><span class="sxs-lookup"><span data-stu-id="b7af1-142">If you select No, only a user who is assigned one of the following roles can see the reports: cost accounting manager, cost accountant, and cost accountant clerk.</span></span>    
+9. <span data-ttu-id="b7af1-143">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="b7af1-143">Click Save.</span></span>
 
