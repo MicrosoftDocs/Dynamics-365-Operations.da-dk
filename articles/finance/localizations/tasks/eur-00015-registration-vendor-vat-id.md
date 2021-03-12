@@ -11,56 +11,55 @@ ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5126868038801091c7a9c17eee78e31db322cbb7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb8e5ea8a7a8360155c9eb30eaa85004483950e2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407682"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984757"
 ---
-# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="6856d-103">EUR-00015 Registrering af kreditors moms-id</span><span class="sxs-lookup"><span data-stu-id="6856d-103">EUR-00015 Registration of vendor VAT ID</span></span>
+# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="02c3c-103">EUR-00015 Registrering af kreditors moms-id</span><span class="sxs-lookup"><span data-stu-id="02c3c-103">EUR-00015 Registration of vendor VAT ID</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6856d-104">Denne fremgangsmåde viser, hvordan du tilføjer moms-registrerings-id'er og SE-nummer på en kreditorkonto.</span><span class="sxs-lookup"><span data-stu-id="6856d-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="6856d-105">Denne proces er ens for juridiske enheder og kunder.</span><span class="sxs-lookup"><span data-stu-id="6856d-105">This process is similar for legal entities and customers.</span></span> 
+<span data-ttu-id="02c3c-104">Denne fremgangsmåde viser, hvordan du tilføjer moms-registrerings-id'er og SE-nummer på en kreditorkonto.</span><span class="sxs-lookup"><span data-stu-id="02c3c-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="02c3c-105">Denne proces er ens for juridiske enheder og kunder.</span><span class="sxs-lookup"><span data-stu-id="02c3c-105">This process is similar for legal entities and customers.</span></span> 
 
-<span data-ttu-id="6856d-106">Før du kan udføre denne procedure, skal du konfigurere moms-id'er.</span><span class="sxs-lookup"><span data-stu-id="6856d-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="6856d-107">Denne procedure gælder for alle europæiske lande/områder.</span><span class="sxs-lookup"><span data-stu-id="6856d-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="6856d-108">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland.</span><span class="sxs-lookup"><span data-stu-id="6856d-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="6856d-109">Denne fremgangsmåde er beregnet til en datastyringsadministrator, en debitorchef eller en kreditorchef.</span><span class="sxs-lookup"><span data-stu-id="6856d-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="6856d-110">Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="6856d-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="02c3c-106">Før du kan udføre denne procedure, skal du konfigurere moms-id'er.</span><span class="sxs-lookup"><span data-stu-id="02c3c-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="02c3c-107">Denne procedure gælder for alle europæiske lande/områder.</span><span class="sxs-lookup"><span data-stu-id="02c3c-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="02c3c-108">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland.</span><span class="sxs-lookup"><span data-stu-id="02c3c-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="02c3c-109">Denne fremgangsmåde er beregnet til en datastyringsadministrator, en debitorchef eller en kreditorchef.</span><span class="sxs-lookup"><span data-stu-id="02c3c-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="02c3c-110">Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="02c3c-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. <span data-ttu-id="6856d-111">Gå til Kreditor > Kreditorer > Alle kreditorer.</span><span class="sxs-lookup"><span data-stu-id="6856d-111">Go to Accounts payable > Vendors > All vendors.</span></span>
-2. <span data-ttu-id="6856d-112">Find og vælg debitor DE-01001 på listen.</span><span class="sxs-lookup"><span data-stu-id="6856d-112">In the list find and select vendor DE-01001</span></span>
-3. <span data-ttu-id="6856d-113">Klik på Registrerings-id'er.</span><span class="sxs-lookup"><span data-stu-id="6856d-113">Click Registration IDs.</span></span>
-4. <span data-ttu-id="6856d-114">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6856d-114">Click Add.</span></span>
-5. <span data-ttu-id="6856d-115">Vælg moms-id.</span><span class="sxs-lookup"><span data-stu-id="6856d-115">Select VAT ID.</span></span>
-6. <span data-ttu-id="6856d-116">Skriv en værdi i feltet Registreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="6856d-116">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="6856d-117">Angiv et moms-id i Tyskland for den valgte kreditor.</span><span class="sxs-lookup"><span data-stu-id="6856d-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="6856d-118">Id'et skal svare til det angivne format for registreringstype.</span><span class="sxs-lookup"><span data-stu-id="6856d-118">The ID must match the specified format of the registration type.</span></span>  
-7. <span data-ttu-id="6856d-119">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="6856d-119">Click the General tab.</span></span>
-8. <span data-ttu-id="6856d-120">Angiv en dato i feltet Gældende.</span><span class="sxs-lookup"><span data-stu-id="6856d-120">In the Effective field, enter a date.</span></span>
-9. <span data-ttu-id="6856d-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6856d-121">Click Save.</span></span>
-10. <span data-ttu-id="6856d-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6856d-122">Click New.</span></span>
-11. <span data-ttu-id="6856d-123">Skriv en værdi i feltet Navn eller beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="6856d-123">In the Name or description field, type a value.</span></span>
-    * <span data-ttu-id="6856d-124">Angiv for eksempel ITA.</span><span class="sxs-lookup"><span data-stu-id="6856d-124">For example, enter ITA.</span></span>  
-12. <span data-ttu-id="6856d-125">Indtast eller vælg en værdi i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="6856d-125">In the Country/region field, enter or select a value.</span></span>
-    * <span data-ttu-id="6856d-126">Vælg for eksempel ITA.</span><span class="sxs-lookup"><span data-stu-id="6856d-126">For example, select ITA.</span></span>  
-13. <span data-ttu-id="6856d-127">Vælg Ja i feltet Primært til land/område.</span><span class="sxs-lookup"><span data-stu-id="6856d-127">Select Yes in the Primary for country field.</span></span>
-14. <span data-ttu-id="6856d-128">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6856d-128">Click Save.</span></span>
-15. <span data-ttu-id="6856d-129">Klik på fanen Oversigt.</span><span class="sxs-lookup"><span data-stu-id="6856d-129">Click the Overview tab.</span></span>
-16. <span data-ttu-id="6856d-130">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="6856d-130">Click Add.</span></span>
-17. <span data-ttu-id="6856d-131">Indtast eller vælg en værdi i feltet Registreringstype.</span><span class="sxs-lookup"><span data-stu-id="6856d-131">In the Registration type field, enter or select a value.</span></span>
-    * <span data-ttu-id="6856d-132">Vælg f.eks. Moms-id.</span><span class="sxs-lookup"><span data-stu-id="6856d-132">For example, select VAT ID.</span></span>  
-18. <span data-ttu-id="6856d-133">Skriv en værdi i feltet Registreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="6856d-133">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="6856d-134">Du kan f.eks. angive et moms-id i Italien.</span><span class="sxs-lookup"><span data-stu-id="6856d-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="6856d-135">Id'et skal have samme format som registreringstypen.</span><span class="sxs-lookup"><span data-stu-id="6856d-135">The ID must have the same format as the registration type.</span></span>  
-19. <span data-ttu-id="6856d-136">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6856d-136">Click Save.</span></span>
-20. <span data-ttu-id="6856d-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="6856d-137">Close the page.</span></span>
-21. <span data-ttu-id="6856d-138">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6856d-138">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="6856d-139">Vælg f.eks. DE-01001.</span><span class="sxs-lookup"><span data-stu-id="6856d-139">For example, select DE-01001.</span></span>  
-22. <span data-ttu-id="6856d-140">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6856d-140">In the list, click the link in the selected row.</span></span>
-23. <span data-ttu-id="6856d-141">Udvid sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="6856d-141">Expand the Invoice and delivery section.</span></span>
-24. <span data-ttu-id="6856d-142">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="6856d-142">Click Edit.</span></span>
-25. <span data-ttu-id="6856d-143">Indtast eller vælg en værdi i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="6856d-143">In the Tax exempt number field, enter or select a value.</span></span>
-26. <span data-ttu-id="6856d-144">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6856d-144">Click Save.</span></span>
+1. <span data-ttu-id="02c3c-111">Gå til Kreditor > Kreditorer > Alle kreditorer.</span><span class="sxs-lookup"><span data-stu-id="02c3c-111">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="02c3c-112">Find og vælg debitor DE-01001 på listen.</span><span class="sxs-lookup"><span data-stu-id="02c3c-112">In the list find and select vendor DE-01001</span></span>
+3. <span data-ttu-id="02c3c-113">Klik på Registrerings-id'er.</span><span class="sxs-lookup"><span data-stu-id="02c3c-113">Click Registration IDs.</span></span>
+4. <span data-ttu-id="02c3c-114">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="02c3c-114">Click Add.</span></span>
+5. <span data-ttu-id="02c3c-115">Vælg moms-id.</span><span class="sxs-lookup"><span data-stu-id="02c3c-115">Select VAT ID.</span></span>
+6. <span data-ttu-id="02c3c-116">Skriv en værdi i feltet Registreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="02c3c-116">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="02c3c-117">Angiv et moms-id i Tyskland for den valgte kreditor.</span><span class="sxs-lookup"><span data-stu-id="02c3c-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="02c3c-118">Id'et skal svare til det angivne format for registreringstype.</span><span class="sxs-lookup"><span data-stu-id="02c3c-118">The ID must match the specified format of the registration type.</span></span>  
+7. <span data-ttu-id="02c3c-119">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="02c3c-119">Click the General tab.</span></span>
+8. <span data-ttu-id="02c3c-120">Angiv en dato i feltet Gældende.</span><span class="sxs-lookup"><span data-stu-id="02c3c-120">In the Effective field, enter a date.</span></span>
+9. <span data-ttu-id="02c3c-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="02c3c-121">Click Save.</span></span>
+10. <span data-ttu-id="02c3c-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="02c3c-122">Click New.</span></span>
+11. <span data-ttu-id="02c3c-123">Skriv en værdi i feltet Navn eller beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="02c3c-123">In the Name or description field, type a value.</span></span>
+    * <span data-ttu-id="02c3c-124">Angiv for eksempel ITA.</span><span class="sxs-lookup"><span data-stu-id="02c3c-124">For example, enter ITA.</span></span>  
+12. <span data-ttu-id="02c3c-125">Indtast eller vælg en værdi i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="02c3c-125">In the Country/region field, enter or select a value.</span></span>
+    * <span data-ttu-id="02c3c-126">Vælg for eksempel ITA.</span><span class="sxs-lookup"><span data-stu-id="02c3c-126">For example, select ITA.</span></span>  
+13. <span data-ttu-id="02c3c-127">Vælg Ja i feltet Primært til land/område.</span><span class="sxs-lookup"><span data-stu-id="02c3c-127">Select Yes in the Primary for country field.</span></span>
+14. <span data-ttu-id="02c3c-128">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="02c3c-128">Click Save.</span></span>
+15. <span data-ttu-id="02c3c-129">Klik på fanen Oversigt.</span><span class="sxs-lookup"><span data-stu-id="02c3c-129">Click the Overview tab.</span></span>
+16. <span data-ttu-id="02c3c-130">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="02c3c-130">Click Add.</span></span>
+17. <span data-ttu-id="02c3c-131">Indtast eller vælg en værdi i feltet Registreringstype.</span><span class="sxs-lookup"><span data-stu-id="02c3c-131">In the Registration type field, enter or select a value.</span></span>
+    * <span data-ttu-id="02c3c-132">Vælg f.eks. Moms-id.</span><span class="sxs-lookup"><span data-stu-id="02c3c-132">For example, select VAT ID.</span></span>  
+18. <span data-ttu-id="02c3c-133">Skriv en værdi i feltet Registreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="02c3c-133">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="02c3c-134">Du kan f.eks. angive et moms-id i Italien.</span><span class="sxs-lookup"><span data-stu-id="02c3c-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="02c3c-135">Id'et skal have samme format som registreringstypen.</span><span class="sxs-lookup"><span data-stu-id="02c3c-135">The ID must have the same format as the registration type.</span></span>  
+19. <span data-ttu-id="02c3c-136">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="02c3c-136">Click Save.</span></span>
+20. <span data-ttu-id="02c3c-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="02c3c-137">Close the page.</span></span>
+21. <span data-ttu-id="02c3c-138">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="02c3c-138">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="02c3c-139">Vælg f.eks. DE-01001.</span><span class="sxs-lookup"><span data-stu-id="02c3c-139">For example, select DE-01001.</span></span>  
+22. <span data-ttu-id="02c3c-140">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="02c3c-140">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="02c3c-141">Udvid sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="02c3c-141">Expand the Invoice and delivery section.</span></span>
+24. <span data-ttu-id="02c3c-142">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="02c3c-142">Click Edit.</span></span>
+25. <span data-ttu-id="02c3c-143">Indtast eller vælg en værdi i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="02c3c-143">In the Tax exempt number field, enter or select a value.</span></span>
+26. <span data-ttu-id="02c3c-144">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="02c3c-144">Click Save.</span></span>
 
