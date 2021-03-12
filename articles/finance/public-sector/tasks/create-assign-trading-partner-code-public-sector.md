@@ -11,40 +11,39 @@ ms.technology: ''
 ms.search.form: CustGroup, CustTradingPartnerCode, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 95f6f31906539abfd7935274484d1ca8cf288d0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0aea4ac41774ec0568a3c9e0a141dd07066a4e7d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407708"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962464"
 ---
-# <a name="create-and-assign-a-trading-partner-code-in-the-public-sector"></a><span data-ttu-id="6c614-103">Oprette og tildele en handelspartnerkode i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="6c614-103">Create and assign a trading partner code in the public sector</span></span>
+# <a name="create-and-assign-a-trading-partner-code-in-the-public-sector"></a><span data-ttu-id="a1325-103">Oprette og tildele en handelspartnerkode i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a1325-103">Create and assign a trading partner code in the public sector</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6c614-104">Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din organisation handler med.</span><span class="sxs-lookup"><span data-stu-id="6c614-104">Create a trading partner code and assign it to a government agency that your organization does business with.</span></span> <span data-ttu-id="6c614-105">Kundeposten for agenturet skal være oprettet, før du kan udføre denne opgave.</span><span class="sxs-lookup"><span data-stu-id="6c614-105">The customer record for the agency must exist before you can perform this task.</span></span> <span data-ttu-id="6c614-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="6c614-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="a1325-104">Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din organisation handler med.</span><span class="sxs-lookup"><span data-stu-id="a1325-104">Create a trading partner code and assign it to a government agency that your organization does business with.</span></span> <span data-ttu-id="a1325-105">Kundeposten for agenturet skal være oprettet, før du kan udføre denne opgave.</span><span class="sxs-lookup"><span data-stu-id="a1325-105">The customer record for the agency must exist before you can perform this task.</span></span> <span data-ttu-id="a1325-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="a1325-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
 
-## <a name="create-a-trading-partner-code"></a><span data-ttu-id="6c614-107">Oprette en handelspartnerkode</span><span class="sxs-lookup"><span data-stu-id="6c614-107">Create a trading partner code</span></span>
-1. <span data-ttu-id="6c614-108">Gå til Debitor > Opsætning > Handelspartnerkoder.</span><span class="sxs-lookup"><span data-stu-id="6c614-108">Go to Accounts receivable > Setup > Trading partner codes.</span></span>
-2. <span data-ttu-id="6c614-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6c614-109">Click New.</span></span>
-3. <span data-ttu-id="6c614-110">Indtast en værdi i feltet Handelspartnerkode.</span><span class="sxs-lookup"><span data-stu-id="6c614-110">In the Trading partner code field, type a value.</span></span>
-    * <span data-ttu-id="6c614-111">Handelspartnerkoder for regeringskontorer defineres af det amerikanske finans- og skatteministerium.</span><span class="sxs-lookup"><span data-stu-id="6c614-111">The trading partner codes for government agencies are defined by the United States Department of the Treasury.</span></span>  
-4. <span data-ttu-id="6c614-112">Skriv navnet på den myndighed, der bruger denne kode, i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="6c614-112">In the Description field, type the name of the agency that uses this code..</span></span>
-5. <span data-ttu-id="6c614-113">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6c614-113">Click Save.</span></span>
+## <a name="create-a-trading-partner-code"></a><span data-ttu-id="a1325-107">Oprette en handelspartnerkode</span><span class="sxs-lookup"><span data-stu-id="a1325-107">Create a trading partner code</span></span>
+1. <span data-ttu-id="a1325-108">Gå til Debitor > Opsætning > Handelspartnerkoder.</span><span class="sxs-lookup"><span data-stu-id="a1325-108">Go to Accounts receivable > Setup > Trading partner codes.</span></span>
+2. <span data-ttu-id="a1325-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="a1325-109">Click New.</span></span>
+3. <span data-ttu-id="a1325-110">Indtast en værdi i feltet Handelspartnerkode.</span><span class="sxs-lookup"><span data-stu-id="a1325-110">In the Trading partner code field, type a value.</span></span>
+    * <span data-ttu-id="a1325-111">Handelspartnerkoder for regeringskontorer defineres af det amerikanske finans- og skatteministerium.</span><span class="sxs-lookup"><span data-stu-id="a1325-111">The trading partner codes for government agencies are defined by the United States Department of the Treasury.</span></span>  
+4. <span data-ttu-id="a1325-112">Skriv navnet på den myndighed, der bruger denne kode, i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a1325-112">In the Description field, type the name of the agency that uses this code..</span></span>
+5. <span data-ttu-id="a1325-113">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="a1325-113">Click Save.</span></span>
 
-## <a name="assign-a-trading-partner-code"></a><span data-ttu-id="6c614-114">Tildele en handelspartnerkode</span><span class="sxs-lookup"><span data-stu-id="6c614-114">Assign a trading partner code</span></span>
-1. <span data-ttu-id="6c614-115">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="6c614-115">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="6c614-116">Find og vælg den myndighed, en handelspartnerkode skal tildeles til, på listen.</span><span class="sxs-lookup"><span data-stu-id="6c614-116">In the list, find and select the agency to assign a trading partner code to.</span></span>
-3. <span data-ttu-id="6c614-117">Klik for at følge linket i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="6c614-117">Click to follow the link in the Name field.</span></span>
-4. <span data-ttu-id="6c614-118">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="6c614-118">Click Edit.</span></span>
-5. <span data-ttu-id="6c614-119">Vis eller skjul sektionen Diverse detaljer.</span><span class="sxs-lookup"><span data-stu-id="6c614-119">Expand the Miscellaneous details section.</span></span>
-6. <span data-ttu-id="6c614-120">Vælg handelspartnerkoden for denne myndighed i feltet Handelspartnerkode.</span><span class="sxs-lookup"><span data-stu-id="6c614-120">In the Trading partner code field, select the trading partner code for this agency..</span></span>
-7. <span data-ttu-id="6c614-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6c614-121">Click Save.</span></span>
+## <a name="assign-a-trading-partner-code"></a><span data-ttu-id="a1325-114">Tildele en handelspartnerkode</span><span class="sxs-lookup"><span data-stu-id="a1325-114">Assign a trading partner code</span></span>
+1. <span data-ttu-id="a1325-115">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="a1325-115">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="a1325-116">Find og vælg den myndighed, en handelspartnerkode skal tildeles til, på listen.</span><span class="sxs-lookup"><span data-stu-id="a1325-116">In the list, find and select the agency to assign a trading partner code to.</span></span>
+3. <span data-ttu-id="a1325-117">Klik for at følge linket i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="a1325-117">Click to follow the link in the Name field.</span></span>
+4. <span data-ttu-id="a1325-118">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="a1325-118">Click Edit.</span></span>
+5. <span data-ttu-id="a1325-119">Vis eller skjul sektionen Diverse detaljer.</span><span class="sxs-lookup"><span data-stu-id="a1325-119">Expand the Miscellaneous details section.</span></span>
+6. <span data-ttu-id="a1325-120">Vælg handelspartnerkoden for denne myndighed i feltet Handelspartnerkode.</span><span class="sxs-lookup"><span data-stu-id="a1325-120">In the Trading partner code field, select the trading partner code for this agency..</span></span>
+7. <span data-ttu-id="a1325-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="a1325-121">Click Save.</span></span>
 
