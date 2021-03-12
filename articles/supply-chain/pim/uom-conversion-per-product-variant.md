@@ -12,17 +12,16 @@ ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f327d1d0b38ad724da6a302cefc115262317812
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424916"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001693"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måleenhedskonvertering pr. produktvariant
 
@@ -59,7 +58,7 @@ Udfør følgende trin for at konfigurere en produktmaster til at understøtte en
     - **Produkt** – hvis du vælger denne værdi, kan du konfigurere en enhedsomregning for produktmasteren. Denne enhedsomregning vil blive brugt som reserve for alle produktvarianter, der ikke er defineret en enhedsomregning for.
     - **Produktvariant** – hvis du vælger denne værdi, kan du konfigurere en enhedsomregning for en specifik produktvariant. Brug feltet **Produktvariant** til at vælge varianten.
 
-    ![![Tilføje en ny enhedsomregning](media/uom-new-conversion.png "Tilføje en ny enhedsomregning")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Tilføje en ny enhedsomregning](media/uom-new-conversion.png "Tilføje en ny enhedsomregning")
 
 1. Brug de andre felter, der er angivet, til at konfigurere din enhedsomregning.
 1. Vælg **OK** for at gemme den nye enhedsomregning.
@@ -107,6 +106,3 @@ Hvis du vil eksportere enhedsomregninger til Excel, skal du på siden **Enhedsom
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Administrere måleenhed](tasks/manage-unit-measure.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

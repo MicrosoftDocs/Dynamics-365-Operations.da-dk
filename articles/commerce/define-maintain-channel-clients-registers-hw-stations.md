@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc043208362137d337f91745d2de357388510005
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410999"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000894"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Tilslutte ydre enheder til POS
 
@@ -205,6 +204,3 @@ Yderligere oplysninger i forbindelse med aktivering omfatter den medarbejder, de
 ### <a name="client-data-synchronization"></a>Synkronisering af klientdata
 
 Alle ændringer af POS-klienten med undtagelse af ændringer af enhedens aktiveringsstatus skal synkroniseres, for at kanaldatabasen kan træde i kraft. For at synkronisere ændringer med kanaldatabasen skal du gå til **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan** og køre den krævede distributionsplan. For klientændringer skal du køre distributionsplanerne **Kasseapparater** og **Kanalkonfiguration**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

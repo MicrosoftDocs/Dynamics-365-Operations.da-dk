@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fb1f9e017de71d01fbf7a05b579d68b702aa7c9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4425041"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001493"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Reserver den samme batch til en salgsordre
 
@@ -45,6 +44,3 @@ Når du reserverer lager til et produkt på en salgsordrelinje, der er konfigure
 - Batchen har ikke tilstrækkelige hyldelevetidsdage tilbage baseret på udløbsdatoen og sidste holdbarhedsdato samt eventuelle salgbare dage for debitor.
 
 For varer, der er tilknyttet en lagringsdimensionsgruppe, som **Brug lagerstedsstyringsprocesser** er aktiveret for, kan du reservere specifikke batchnumre ved at bruge et reservationshierarki med det batchnummer for lagerdimensionen, der er defineret over lokationsdimensionen. På siden **Batchreservation** for salgs- og flytteordrelinjer kan du også vælge og reservere flere linjer på baggrund af de tilgængelige batchnumre. Du kan finde flere oplysninger om, hvad du skal gøre, hvis du bruger et reservationshierarki, der har batchnummerdimensionen under lokationen, i [Fleksibel reservationspolitik for dimension på lagerstedsniveau](../warehousing/flexible-warehouse-level-dimension-reservation.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

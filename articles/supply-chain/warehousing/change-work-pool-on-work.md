@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66d110c3235e8a87b64bf160bdad8524fad6abe5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424666"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001143"
 ---
 # <a name="change-work-pool-on-work"></a>Skift arbejdspulje på arbejde
 
@@ -149,6 +148,3 @@ Du kan bruge siden **Arbejdsdetaljer** til at få vist det arbejde, der er opret
 > Når dialogboksen **Skift arbejdspulje** vises, kan feltet **Arbejdspulje-id** være tomt som standard. Hvis feltet er tomt, når du vælger **OK** for at anvende ændringer, skal du fjerne arbejdspuljen helt fra arbejdet.
 >
 > Ud over at skifte arbejdspulje kan du bruge denne procedure til at føje en arbejdsgruppe til en arbejdsgang, der ikke har en, eller til at fjerne en arbejdspulje fra et arbejdselement, der har en.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
