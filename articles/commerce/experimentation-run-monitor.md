@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ee86a6761b27f3c08a65a2e250659cdcfd71db44
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: ba6fb94033e227790e01676819308bb4f0cd6868
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4411224"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965202"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Køre og overvåge et eksperiment
 
@@ -53,6 +52,3 @@ Hvis du af en eller anden grund har brug for at ændre dine variationer, skal du
 
 ## <a name="next-step"></a>Næste trin
 [Hæve en variation og fuldføre et eksperiment](experimentation-review-complete.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

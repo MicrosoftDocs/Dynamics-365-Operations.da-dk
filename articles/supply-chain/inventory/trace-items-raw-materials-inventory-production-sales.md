@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa1be4970f1106bf4b87eeaa428bac07c645b4f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9293578144c51baef34204a2b592d517baa3b0dd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424882"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967174"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing af varer og råvarer i lager, produktion og salg
 
@@ -140,6 +139,3 @@ Du kan generere rapporten **Afsendt til kunder** for at identificere mængden af
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore samprodukter og biprodukter?
 Du kan spore samprodukter, men du kan ikke spore et biprodukt, da der typisk ikke tildeles sporingsdimensioner til biprodukter. Når du sporer en vare, omfatter sporingsdetaljerne alle relaterede samprodukter. En node, der indeholder et samprodukt, har ordet "samprodukter" med i detaljerne. Du kan også få vist detaljer om et samprodukt ved at vælge noden i sporingsdetaljerne og derefter klikke på oversigtspanelet **Produktion**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

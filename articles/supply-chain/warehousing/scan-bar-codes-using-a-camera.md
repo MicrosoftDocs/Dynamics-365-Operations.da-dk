@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71ec15b2568eefd8bea99e64c258a65461a7ad95
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424421"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965625"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>Scanne stregkoder med et kamera i lagerstedsappen
 
@@ -55,6 +54,3 @@ Når du klikker på knappen Kamera på kamerasiden, vises den nedtonet under for
 
 Når du holder kameraet over en stregkode, får du det bedste resultat, hvis stregkoden er justeret med parenteserne. Når en stregkode er blevet scannet, bliver resultatet behandlet, og du føres til næste trin. Hvis det næste trin indeholder endnu et inputfelt, hvor den foretrukne inputtilstand er indstillet til Scannes, starter kamerasiden igen. Hvis det næste trin ikke er et scanningsfelt, initieres kamerasiden ikke.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

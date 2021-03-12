@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 58b5a35800ab464f25868c6756b16f25d14d8d78
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4425084"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967252"
 ---
 # <a name="product-readiness"></a>Produktparathed
 
@@ -148,6 +147,3 @@ For hver række, du tilføjer, skal du angive følgende felter.
 | Spørgeskema | Vælg det spørgeskema, der skal bruges til kontrollisten. Kontrollisten er en lokal kontrolliste i det firma, hvor parathedskontrollen udføres. Systemet skal kunne evaluere, om kontrollisten er besvaret korrekt. Derfor skal kontrollisten konfigureres, så der udføres en evaluering ud fra korrekte svar. Yderligere oplysninger om, hvordan du opretter spørgeskemaer, finder du i [Bruge spørgeskemaer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) og relaterede emner. |
 | Automatisk godkendelse | Poster til parathedskontrol omfatter et **Godkendt**-afkrydsningsfelt, der angiver godkendelsesstatus. Markér afkrydsningsfeltet **Automatisk godkendelse** for kontroller, der skal godkendes, umiddelbart efter at den tildelte bruger har afsluttet dem. Fjern markeringen i dette afkrydsningsfelt for at kræve udtrykkelig godkendelse som et ekstra trin. |
 | Obligatorisk | Markér dette afkrydsningsfelt for de kontroller, der skal udføres af den tildelte bruger. Obligatoriske kontroller kan ikke springes over. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
