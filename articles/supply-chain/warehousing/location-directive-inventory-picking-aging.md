@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004621"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling i lokalitetsvejledning til lagerpluk
 
@@ -120,7 +119,7 @@ FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte d
 1. Gå til siden **Salgsordre**, og vælg **Frigiv til lager** i gruppen **Handlinger** på fanen **Lager** i handlingsruden. Du får orienterende meddelelser. Systemet opretter en forsendelse, føjer den til en ny last og opretter det nødvendige arbejde.
 1. I oversigtspanelet **Salgsordrelinjer** i menuen **Lager** skal du vælge **Arbejdsdetaljer** for at åbne det arbejde, der er oprettet for denne salgsordre. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk*, viser en værdi for **Lokation** *PR-002*. Denne lokation indeholder den nummerplade, der har den ældste aldersfordelte dato (FIFO).
 1. Vælg **Lagersted \> Forsendelsesoplysninger**.
-1. Gå til oversigtspanelet **Generelt**, lav en note om bølge-id'et, så du kan bruge det i scenarie 2.
+1. Gå til oversigtspanelet **_Generelt_**, lav en note om bølge-id'et, så du kan bruge det i scenarie 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenarie 2: Konfigurere og bruge aldersfordelt LIFO-lokation
 
@@ -140,6 +139,3 @@ LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte da
 1. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk*, viser en værdi for **Lokation** *PR-001*. Denne lokation indeholder den nummerplade, der har den nyeste aldersfordelte dato (LIFO).
 
 I disse scenarier har du set, hvordan aldersfordelt strategi dirigerer arbejdet til det lagersted, der enten har det ældste lager eller det nyeste lager, afhængigt af den valgte strategi.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

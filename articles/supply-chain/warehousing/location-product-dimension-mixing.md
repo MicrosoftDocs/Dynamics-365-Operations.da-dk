@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c4e42864bfde9ed0650a88961b5a71b33b34c89d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424951"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004596"
 ---
 # <a name="location-product-dimension-mixing"></a>Blanding af produktdimension for lokation
 
@@ -239,5 +238,3 @@ Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme
 
 > [!TIP]
 > Du kan gentage dette scenarie, men denne gang skal du angive **Størrelse** - *Nej* under oversigtspanelet **Tillad blanding af produktdimensioner** på *Masse* **Lokationsprofiler**, så ingen af produktdimensionerne kan blandes. Hvis du i dette tilfælde modtager indkøbsordren, vil de enkelte produktvarianter blive lagt på lager på en ny lokation.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

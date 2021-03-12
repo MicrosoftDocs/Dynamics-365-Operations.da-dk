@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: e049af5e83343459546e1c3715415e9d7ffa9cab
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 315b8e872e206d0f371ed35e6cddbc8f1ecb18b2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424540"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005546"
 ---
 # <a name="cost-accounting-service-home-page-private-preview"></a>Startside for omkostningsregnskabstjeneste (privat visning)
 
@@ -37,6 +36,3 @@ Tilføjelsesprogrammet for omkostningsregnskabstjenesten til Microsoft Dynamics 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 
 [Introduktion til omkostningsregnskabstjenesten](cost-accounting-service-get-started.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

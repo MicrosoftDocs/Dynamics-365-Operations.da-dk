@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 22c62969a56f42b78a509b5477cfa595706ae23a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0c6dd317f0f630afd938cd02790e7559c1decfe6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407692"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002641"
 ---
 # <a name="calculate-the-delivery-date-for-a-line-based-on-the-lead-time"></a>Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 
@@ -102,6 +101,3 @@ De leveringstidsoplysninger, som du angiver for en linje på siden **Købsaftale
 
 > [!NOTE]
 > I forbindelse med frigivne varer kan du vælge en leveringstid for købet. Købets leveringstiden beregner automatisk leveringsdatoen, når der oprettes en indkøbsordre. Leveringsdatoen genberegnes ikke, hvis leveringstiden på indkøbsordrelinjen er 0 (nul).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

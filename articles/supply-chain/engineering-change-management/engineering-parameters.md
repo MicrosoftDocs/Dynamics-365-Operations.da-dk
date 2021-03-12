@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: dee5429c31bfc872afedfa76ced89633b4b72c96
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4425081"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005371"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametre for styring af teknisk ændring
 
@@ -57,6 +56,3 @@ I følgende tabel beskrives de felter, der er tilgængelige under fanen **Teknis
 | Regel for alvorsgrad | Vælg, hvordan graden af en teknisk ændringsordre skal fastlægges. Vælg *Manuel*, hvis brugeren forventes at angive en værdi i feltet **Alvorsgrad**. Vælg *Beregn* for at få systemet til at beregne værdien af feltet **Alvorsgrad**, når du vælger **Beregn alvorsgrad** i handlingsruden i den tekniske ændringsordre. I dette tilfælde vil systemet bruge de alvorlighedsregler, der er defineret på siden **Regelsæt for alvorsgrad**. Vælg *Beregn automatisk*, hvis værdien i feltet **Alvorsgrad** automatisk skal beregnes og udfyldes i overensstemmelse med regelsæt for alvorsgrad. |
 | Frigiv påvirkede produkter igen | Dette felt kan anvendes ved ny frigivelse af produkter via en teknisk ændringsordre. Du kan vælge, om alle produkter eller kun de berørte produkter skal foreslås, i dialogboksen **Frigivelser**. |
 | Styklisteniveauer, der skal frigives | Dybden af det styklisteniveau, der skal frigives. Hvis styklisten har flere niveauer (dvs. hvis den er dybere) end den værdi, der er angivet her, vil kun de niveauer, der ligger højere gennem den angivne værdi, blive frigivet. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

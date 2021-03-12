@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysLookupMultiSelectGrid, CustRecurrenceInvoiceGroup, CustFreeInvoice, CustRecurrenceInvoiceTotals
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3b31dbf296a06ea6253a8ae71bfea6193a1e03e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c89247c870ef3edcaaa30831efaef9b03a9bc166
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441549"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003200"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generere og bogføre tilbagevendende fritekstfakturaer
 
@@ -46,6 +45,3 @@ Tilbagevendende fakturaer bruges til jævnlig fakturering af kunder for samme be
 6. Klik på Bogfør.
     * Bogfør de valgte fakturaer.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

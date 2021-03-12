@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4425080"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005321"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktlivscyklustilstande og transaktioner
 
@@ -76,6 +75,3 @@ Følgende felter er tilgængelige for hver proces, der vises i oversigtspanelet 
 | Police | Vælg en af følgende værdier for at kontrollere, om og hvordan den aktuelle proces tillades for produkter, der er i denne livscyklustilstand:<ul><li>**Aktiveret** – Forretningsprocessen er tilladt.</li><li>**Blokeret** – Processen er ikke tilladt. Hvis en bruger forsøger at bruge processen på et produkt, der er i denne livscyklustilstand, vil systemet blokere forsøget og vise en fejl i stedet. Du kan f.eks. blokere for, at produkter bliver købt efter afslutning af deres levetid.</li><li>**Aktiveret med advarsel** – Processen er tilladt, men der vises en advarsel. Du kan f.eks. vælge, at et prototypeprodukt skal lægges på en produktionsordre, der er oprettet af afdelingen for forskning og udvikling. Andre afdelinger skal dog være opmærksomme på, at de ikke bør producere produktet endnu.</li></ul> |
 
 Hvis du tilføjer flere regler for livscyklustilstand som en tilpasning, kan du få vist disse regler i brugergrænsefladen ved at vælge **Opdater processer** i den øverste rude. Knappen **Opdater processer** er kun tilgængelig for administratorer.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

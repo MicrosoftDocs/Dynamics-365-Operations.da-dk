@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424651"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001793"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og varedisponering
 
@@ -143,6 +142,3 @@ Med hensyn til kalendere for disponeringsgrupper er det vigtigt at tænke på, a
 
 ### <a name="updating-scm-related-calendars"></a>Opdatering af SCM-relaterede kalendere
 Det er vigtigt, at alle relevante kalendere tildeles på deres respektive sted (leverandør, kunde, lagersted, leveringsmåde eller disponeringsgruppe), men det er samtidig lige så vigtigt at opdatere dem, så de afspejler ændringerne. Systemet definerer produktions-, overførsels-, købs- og salgsordredatoerne afhængigt af kombinationen af de tildelte kalendere. Det er den bedste fremgangsmåde at tydeliggøre, hvem der har ansvaret for at tildele og opdatere kalenderne i deres tilsvarende områder. I tilfælde af nedbrud eller andre usædvanlige ændringer i arbejdsdagene er det vigtigt at opdatere kalenderne i henhold til den. Alle opgaver, der afhænger af kalendere, f.eks. varedisponering og planlægning af produktionen, skal køres igen, når kalendere opdateres. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

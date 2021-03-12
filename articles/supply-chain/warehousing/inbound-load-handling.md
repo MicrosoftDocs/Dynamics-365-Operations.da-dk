@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424954"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004821"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
 
@@ -478,6 +477,3 @@ I dette scenarie vil den modtagende medarbejder registrere et indgående antal, 
     - **Antal** – Angiv _7_, der er det resterende antal, som kreditoren har tilladelse til at levere som en del af det samlede indkøbsordreantal på 12 (hvor 10 er det oprindelige ordreantal, og 2 er det tilladte antal for overlevering på 20 %). Husk, at 5 stk. allerede er registreret i forhold til den første last.
 
 Den anden last er nu opdateret med antallet af 7 og kan være produktkvitteringsopdateret baseret på dette antal.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

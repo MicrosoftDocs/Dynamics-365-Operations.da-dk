@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2b703d770c7f9ea684716368cf1e7dbe5fec8710
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: cb503072fb76e04aa01ff2d231c756eeb244c65a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4425098"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004695"
 ---
 # <a name="transportation-management-miscellaneous-charges"></a>Tillæg i transportstyring
 
@@ -31,6 +30,3 @@ Som med alle tillæg skal transportgenererede gebyrer knyttes til en gebyrkode. 
 Gå til **Transportstyring > Opsætning > Vurdering > Tillæg** for at definere de kvalifikationskriterier, der bestemmer, hvornår en bestemt **Gebyrkode** anvendes på et gebyr.
 
 Der skal være mindst én opsætning for hver relevante **Gebyrmodul**-indstilling (*Debitor* og *Kreditor*), hvor **Tillægstype** angives til *Ingen*. Hvis dette mangler, føjes tillægget *ikke* til ordren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
