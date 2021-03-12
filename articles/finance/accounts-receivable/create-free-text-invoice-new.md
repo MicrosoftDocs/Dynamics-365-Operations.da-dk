@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441427"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991111"
 ---
 # <a name="create-a-free-text-invoice"></a>Oprette en fritekstfaktura
 
@@ -30,7 +29,7 @@ Dette emne forklarer, hvordan du opretter fritekstfakturaer. I proceduren skal d
 
 ## <a name="create-a-free-text-invoice"></a>Opret en fritekstfaktura
 
-1. Gå til **Debitor \> Fakturaer \> Alle fritekstfakturaer**.
+1. Gå til **Debitor (eller salgsfinanskonto) \> Fakturaer \> Alle fritekstfakturaer**.
 2. Vælg **Ny**.
 3. Vælg en værdi i feltet **Debitorkonto**.
 
@@ -85,6 +84,3 @@ Når du har kopieret linjerne, kan du derefter redigere oplysningerne efter beho
 Du kan oprette en fritekstfaktura fra en skabelon. Når du vælger **Ny ud fra skabelon** under fanen **Faktura**, kan du vælge et skabelonnavn og debitorkontoen for den nye fritekstfaktura. Standardværdier, f.eks. betalingsbetingelserne og betalingsmåden, kan udfyldes automatisk fra debitoren, eller du kan bruge de værdier, der blev gemt i skabelonen.
 
 Der oprettes en ny fritekstfaktura, og du kan redigere værdierne efter behov.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

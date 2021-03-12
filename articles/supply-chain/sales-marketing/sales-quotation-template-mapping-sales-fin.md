@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527332"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991859"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Supply Chain Management
 
@@ -35,7 +34,7 @@ ms.locfileid: "4527332"
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgstilbudshoveder og -linjer direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
-> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 
@@ -61,10 +60,10 @@ Følgende synkroniseringsopgaver kræves, før salgstilbudshoveder og -linjer ka
 
 ## <a name="entity-set"></a>Enhedssæt
 
-| Salg        | Supply Chain Management     |
+| Sales        | Supply Chain Management     |
 |--------------|----------------------------|
-| Citater       | CDS-salgstilbudshoved |
-| QuoteDetails | CDS-salgstilbudslinjer  |
+| Citater       | Dataverse-salgstilbudshoved |
+| QuoteDetails | Dataverse-salgstilbudslinjer  |
 
 ## <a name="entity-flow"></a>Enhedsflow
 
@@ -143,6 +142,3 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

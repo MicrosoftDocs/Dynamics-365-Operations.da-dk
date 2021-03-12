@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PurchRFQVendQuestionAnswer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: kamaybac
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: d0c53a626cb2a727c6578b306ba0d7ab2f612dba
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: 2f56d34a06a207767214204f79e9da0bafdd93d7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654327"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992105"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 
@@ -105,6 +104,3 @@ I forbindelse med publicerede tilbudsanmodninger skal du redigere en tilbudsanmo
 
 > [!IMPORTANT]
 > Hvis du ændrer en eksisterende tilbudsanmodning med det formål at tillade leverandørspørgsmål, rydder systemet alle eksisterende svar, når du sender tilbudsanmodningen igen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
