@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 923e6e38a664e17ec3349d839c4b77ec903c5dc2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d60248f2bd6774b2e9afdb3632b6eb31d67349ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441670"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009512"
 ---
 # <a name="overhead-calculation"></a>Beregning af fast omkostning
 
@@ -209,7 +208,7 @@ I et finansregnskab registreres elektricitetsomkostninger ofte som et engangsbel
 <tbody>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>1.000</td>
 </tr>
 <tr>
@@ -239,7 +238,7 @@ Tabellen nedenfor viser resultatet, når elforbrug anvendes som en fordelingsgru
 <tbody>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>1.000</td>
 <td>(1.000 ÷ 7.000) × 9.000,00</td>
 <td>1,285.71</td>
@@ -276,7 +275,7 @@ De faste omkostninger skal fordeles jævnt til de enkelte omkostningsobjekter, d
 <tbody>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>(1,000 &gt; 0,00)</td>
 <td>1</td>
 <td>(1 ÷ 2) × 1.000,00</td>
@@ -382,7 +381,7 @@ De faste omkostninger skal fordeles jævnt til de enkelte omkostningsobjekter, d
 </tr>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Fast omkostning</td>
@@ -409,7 +408,7 @@ De faste omkostninger skal fordeles jævnt til de enkelte omkostningsobjekter, d
 </tr>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Variabel omkostning</td>
@@ -436,7 +435,7 @@ Satsen for faste omkostninger bruges til at lægge gebyr på et eller flere spec
 
 #### <a name="define-the-overhead-rate"></a>Definere satsen for faste omkostninger
 
-Omkostningsobjektet CC001 Personale bidrager til en række interne projekter. Et statistisk dimensionsmedlem med navnet Personaleprojekter oprettes for at måle den anvendte mængde.
+Omkostningsobjektet CC001 Human Resources bidrager til en række interne projekter. Et statistisk dimensionsmedlem med navnet Human Resourcesprojekter oprettes for at måle den anvendte mængde.
 
 <table>
 <thead>
@@ -474,7 +473,7 @@ En foruddefineret omkostningssats for de omkostningsprojektbidrag, der er define
 <tbody>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Variabel omkostning</td>
 <td>1</td>
@@ -579,7 +578,7 @@ Tabellen nedenfor viser resultatet, når personaleprojekterne anvendes som forde
 <tbody>
 <tr>
 <td>CC0001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Variabel omkostning</td>
@@ -597,7 +596,7 @@ Tabellen nedenfor viser resultatet, når personaleprojekterne anvendes som forde
 </tr>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Variabel omkostning</td>
@@ -626,13 +625,13 @@ Fordeling bruges til at fordele saldoen for et omkostningsobjekt til andre omkos
 
 #### <a name="define-the-cost-allocation"></a>Definere omkostningstildelingen
 
-Her er et enkelt eksempel, der forklarer, hvordan du kan spore strømmen af omkostninger. Omkostningsobjektet CC001 personale bidrager til flere omkostningsobjekter. Et statistisk dimensionsmedlem med navnet Personale-tjenester oprettes for at måle den anvendte mængde.
+Her er et enkelt eksempel, der forklarer, hvordan du kan spore strømmen af omkostninger. Omkostningsobjektet CC001 personale bidrager til flere omkostningsobjekter. Et statistisk dimensionsmedlem med navnet Human Resources-tjenester oprettes for at måle den anvendte mængde.
 
 <table>
 <thead>
 <tr>
 <th colspan="2">Omkostningsobjekt</th>
-<th>Personale-tjenester</th>
+<th>Human Resources-tjenester</th>
 </tr>
 </thead>
 <tbody>
@@ -971,7 +970,7 @@ Tabellen nedenfor viser resultatet, når Emballage-tjenester anvendes som fordel
 <tr>
 <td>31. januar 2017</td>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Fast omkostning</td>
@@ -980,7 +979,7 @@ Tabellen nedenfor viser resultatet, når Emballage-tjenester anvendes som fordel
 <tr>
 <td>31. januar 2017</td>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Variabel omkostning</td>
@@ -1094,7 +1093,7 @@ Tabellen nedenfor viser resultatet, når Emballage-tjenester anvendes som fordel
 <tbody>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Fast omkostning</td>
@@ -1130,7 +1129,7 @@ Tabellen nedenfor viser resultatet, når Emballage-tjenester anvendes som fordel
 </tr>
 <tr>
 <td>CC001</td>
-<td>Personale</td>
+<td>Human Resources</td>
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Variabel omkostning</td>
@@ -1415,6 +1414,3 @@ I Finansregnskab bogføres en omkostning på 10.000,00 for elektricitet til et d
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

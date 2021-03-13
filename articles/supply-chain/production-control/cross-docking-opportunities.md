@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c408c0b0c32292c074bcabf3822a50a24bbdd301
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424976"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007285"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross-docking fra produktionsordrer til forsendelsesområder
 
@@ -38,7 +37,7 @@ Direkte levering fra produktion til et forsendelsesområde er relevant for produ
 
 Hvis der ikke er et umiddelbart behov for et produkt, skal det lægges på lager på lagerlokationer på produktionsstedet. Denne proces kaldes også *mulighed for cross-docking* og angiver, at hvis der er et behov for levering af produktet, skal denne mulighed bruges i stedet for at lægge produktet på lager til intern opbevaring.
 
-I følgende eksempel vises tre varianter af en proces, der starter i slutningen af produktionslinjen (2).
+I følgende eksempel vises tre varianter af et flow, der starter i slutningen af produktionslinjen (2).
 
 Et produkt er færdigmeldt til produktionsforsendelsesstedet (3), og en truck afhenter pallen på dette sted (3).
 
@@ -104,7 +103,7 @@ Når et produkt er færdigmeldt på produktionslinjen, flyttes det til en lagerp
 6.  Opret en flytteordre. Opret flytteordre for varenummer L0101. Antal = 20.
 7.  Frigiv flytteordren fra lastplanlægningspanelet. Under fanen **Send** skal du vælge menupunktet for lastplanlægningspanelet, og i menuen **Frigiv** på belastningslinjen skal du vælge **Frigiv til lagersted**. Der findes nu en åben bølgelinje af typen **Flytteafgang** for flytteordren.
 8.  Opret en produktionsordre. Gå til listesiden **Produktionsordren**, og opret en produktionsordre for produktet L0101. Antal = 20. Estimer og start produktionsordren. Bemærk, at feltet **Bogfør plukliste nu** forbliver indstillet til **Nej**.
-9.  Færdigmeld fra mobilenheden. Gå til mobilenhedsportalen, og vælg menupunktet **Færdigmeld, og læg på lager**. Færdigmeld nu L0101 fra den håndholdte enhed. Antal = 10. Bemærk, at læg på lager-lokationen er **BAYDOOR**. Denne placering findes i lokationsvejledningen **Flytteafgang** for arbejdsordretypen **Læg på lager**. Bemærk også arbejde af typen **Flytteafgang** er oprettet og fuldført. Gå til flytteordrens arbejdsdetaljer for at kontrollere arbejdet.
+9.  Færdigmeld fra mobilenheden. Gå til mobilenhedsportalen, og vælg menupunktet **Færdigmeld, og læg på lager**. Færdigmeld nu L0101 fra den håndholdte enhed. Antal = 10. Bemærk, at læg på lager-lokationen er **BAYDOOR**. Denne placering findes i lokationsvejledningen **Flytteafgang** for arbejdsordretypen **Læg på lager**. Bemærk også, at arbejde af typen **Flytteafgang** er oprettet og fuldført. Gå til flytteordrens arbejdsdetaljer for at kontrollere arbejdet.
 10. Rapportér nu yderligere 10 styk fra mobileenheden. Bemærk, at læg på lager-lokationen igen er **BAYDOOR**. Bemærk også, at en ny arbejdstype **Flytteafgang** er oprettet for de 10 styk.
 11. Prøv nu at starte 20 styk yderligere på produktionsordren, og prøv derefter at færdigmelde 20 styk ved hjælp af den håndholdte enhed. Denne gang foreslås **LP-001** som læg på lager-sted. Denne placering kan findes i lokationsvejledningen for **Færdige varer, læg på lager**. Lokationsvejledningen bruges, fordi der ikke findes nogen mulighed for salgsmulighed. Flytteordren for LP-001 blev fuldstændig opfyldt i de to første cross-docking-aktiviter i trin 9 og 10. Bemærk, at arbejde af typen **Færdige varer, læg på lager** blev oprettet og behandlet.
 
@@ -127,6 +126,3 @@ Når et produkt er færdigmeldt på produktionslinjen, overføres det til en lag
 -   Cross-docking-scenariet understøttes for batch- og seriekontrollerede varer, begge med de batch- og serienummerdimensioner, der er defineret over og under placeringen i reservationshierarkiet. 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

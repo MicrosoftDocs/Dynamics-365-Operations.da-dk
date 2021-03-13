@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 87b04998889b86a79fd8dabde422147c5494b003
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 4c505ccfd1998acd40dbae715c7fa572e315af2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516753"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007510"
 ---
 # <a name="troubleshoot-product-information"></a>Foretage fejlfinding af produktoplysninger
 
@@ -152,6 +151,3 @@ Hvis en produktvariant allerede er frigivet i firma A, og du forsøger at frigiv
 Knappen **Ny** på siden **Frigivne produktvarianter** opretter varianten og frigiver den i firmaets kontekst. Hvis varianten allerede er oprettet, kan du ikke bruge knappen **Ny** til at frigive den i et andet firma.
 
 Du kan løse problemet ved at åbne **Produktmaster**-siden og vælge **Frigiv produkt** for at frigive den eksisterende variant i det ønskede firma.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

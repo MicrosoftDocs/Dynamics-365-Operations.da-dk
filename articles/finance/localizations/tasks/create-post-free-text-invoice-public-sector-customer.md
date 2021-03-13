@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, ContactPersonLookup, CustPostInvoiceJob
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 35e515bb5b95e88f821996b5940d48512f83cb00
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f2725bd3f65d11172aaf5d77c3d536d557b7c816
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407715"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009113"
 ---
 # <a name="create-and-post-a-free-text-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor
 
@@ -63,6 +62,3 @@ Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Impo
 2. Klik på Oprindelig.
     * Du kan kontrollere jobstatus og hente den faktiske fil på siden Elektroniske rapporteringsjob.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

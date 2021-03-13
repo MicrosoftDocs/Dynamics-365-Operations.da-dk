@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e10aa9342ec9f089ef8ecec5e1221a31c580fc87
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 584c1af5f9252a4b8c88a8866a64184bd0595b2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644987"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009412"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Aktivere forudsigelser om debitorbetalinger (prøveversion)
 
@@ -91,6 +90,3 @@ De offentlige prøveversionsfunktioner kan og bør kun aktiveres i sandkasse mil
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 
 Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

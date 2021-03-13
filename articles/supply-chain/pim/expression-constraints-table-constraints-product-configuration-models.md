@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424826"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007693"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller
 
@@ -117,7 +116,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </ul></td>
 </tr>
 <tr class="even">
-<td>And</td>
+<td>Og</td>
 <td>Dette gælder kun, hvis alle betingelser er opfyldt. Hvis antallet af betingelser er 0 (nul), returneres <strong>True</strong>.</td>
 <td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
@@ -126,7 +125,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Or</td>
+<td>Eller</td>
 <td>Dette er tilfældet, hvis en betingelse er sand. Hvis antallet af betingelser er 0 (nul), returneres <strong>False</strong>.</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
@@ -159,7 +158,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 <td><strong>Operator:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
-<td>Times</td>
+<td>Tider</td>
 <td>Herefter tages produktet af dens betingelser. Hvis antallet af betingelser er 0 (nul), returneres <strong>1</strong>.</td>
 <td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
@@ -168,7 +167,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </ul></td>
 </tr>
 <tr class="even">
-<td>Power</td>
+<td>Strøm</td>
 <td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Det er med andre ord en højre-association). Derfor svarer <strong>Power[a, b, c]</strong> til <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
@@ -177,19 +176,19 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Maks</td>
+<td>Maks.</td>
 <td>Dette giver den største tilstand. Hvis antallet af betingelser er 0 (nul), returneres <strong>Infinity</strong>.</td>
 <td>Max[args]</td>
 <td><strong>Operator:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
-<td>Min</td>
+<td>Min.</td>
 <td>Dette giver den mindste tilstand. Hvis antallet af betingelser er 0 (nul), returneres <strong>Infinity</strong>.</td>
 <td>Min[args]</td>
 <td><strong>Operator:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
-<td>Not</td>
+<td>Negeret</td>
 <td>Dette giver den logiske inverse af tilstanden. Det skal have præcis én betingelse.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
@@ -222,7 +221,7 @@ Eksemplerne i næste tabel viser, hvordan du skriver en infix-anmærkning.
 |        (x)        |                           Parentes tilsidesætter standardprioritering.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres mine udtryksbegrænsninger ikke korrekt?
-Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel.Her er en liste over de reserverede nøgleord, som du kan bruge:
+Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel. Her er en liste over de reserverede nøgleord, som du kan bruge:
 
 -   Loft
 -   Element
@@ -254,6 +253,3 @@ Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter,
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

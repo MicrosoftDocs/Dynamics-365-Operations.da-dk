@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646073"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009362"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Gøre forudsigelsesmodellen bedre (prøveversion)
 
@@ -42,19 +41,19 @@ Hvis din organisation kun kræver to udfald, skal du ændre tærsklen **Sent** o
 
 ## <a name="select-fields"></a>Vælg felter
 
-Når du vælger felter, der skal medtages i modellen, skal du være opmærksom på, at listen indeholder alle tilgængelige felter i den Common Data Service-enhed, der er knyttet til dataene i Azure Data Lake. Nogle af disse felter skal **ikke** markeres. De felter, der ikke skal vælges, falder i en af tre kategorier:
+Når du vælger felter, der skal medtages i modellen, skal du være opmærksom på, at listen indeholder alle tilgængelige felter i den Microsoft Dataverse-tabel, der er knyttet til data i Azure Data Lake. Nogle af disse felter skal **ikke** markeres. De felter, der ikke skal vælges, falder i en af tre kategorier:
 
-- Feltet er obligatorisk for Common Data Service-enheden, men der er ingen sikkerhedskopi af dataen i Data Lake.
+- Feltet er obligatorisk for Dataverse-tabellen, men der er ingen sikkerhedskopi af data i Data Lake.
 - Feltet er et id og giver derfor ikke mening for en maskinel indlæringsfunktion.
 - Feltet viser oplysninger, der ikke vil være tilgængelige i forbindelse med forudsigelse.
 
 Følgende afsnit viser de felter, der er tilgængelige for faktura- og kundeenhederne, og viser de felter, der **ikke** skal vælges til uddannelse. Den kategori, der er angivet for hvert af disse felter, refererer til kategorierne på den foregående liste.
  
-### <a name="invoice-common-data-model-entity"></a>Enhed til fælles datamodel for faktura
+### <a name="invoice-dataverse-table"></a>Dataverse-fakturatabel
 
-Følgende illustration viser de felter, der er tilgængelige til fakturaenheden.
+Følgende illustration viser de felter, der er tilgængelige til fakturatabellen.
 
-[![Tilgængelige felter til fakturaenheden](./media/available-fields.png)](./media/available-fields.png)
+[![Tilgængelige felter til fakturatabellen](./media/available-fields.png)](./media/available-fields.png)
 
 Følgende felter skal ikke vælges til oplæring:
 
@@ -65,11 +64,11 @@ Følgende felter skal ikke vælges til oplæring:
 - **Kilde-post** (kategori 2)
 - **Kildetabel** (kategori 2)
 
-### <a name="customer-common-data-model-entity"></a>Enhed til fælles datamodel for kunde
+### <a name="customer-dataverse-table"></a>Dataverse-kundetabel
 
-Følgende illustration viser de felter, der er tilgængelige til kundeenheden.
+Følgende illustration viser de felter, der er tilgængelige til kundetabellen.
 
-[![Tilgængelige felter til kundeenheden](./media/related-entities.png)](./media/related-entities.png)
+[![Tilgængelige felter til kundetabellen](./media/related-entities.png)](./media/related-entities.png)
 
 Følgende felt skal ikke vælges til oplæring:
 
@@ -83,6 +82,3 @@ Filtrene understøtter i øjeblikket ikke scenariet med debitorbetalingsprognose
 
 #### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
