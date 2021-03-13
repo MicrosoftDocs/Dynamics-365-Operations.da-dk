@@ -10,20 +10,19 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a3c9ae7f9347aedc9dfba669a788b93f339e9fe8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e13536f1d3393aea4d7a973b96d8eac57f666345
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424461"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008140"
 ---
-# <a name="learning-catalog-for-dynamics-365-supply-chain-management"></a><span data-ttu-id="9ddfb-103">Undervisningskatalog til Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="9ddfb-103">Learning catalog for Dynamics 365 Supply Chain Management</span></span>
+# <a name="learning-catalog-for-dynamics-365-supply-chain-management"></a><span data-ttu-id="71098-103">Undervisningskatalog til Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="71098-103">Learning catalog for Dynamics 365 Supply Chain Management</span></span>
 
-<span data-ttu-id="9ddfb-104">Find det rigtige onlinekursus, personlige workshops og begivenheder for din rolle som bruger af Dynamics 365 Supply Chain-programmet.</span><span class="sxs-lookup"><span data-stu-id="9ddfb-104">Find the right online training, in person workshops, and events for your role as a user of the Dynamics 365 Supply Chain application.</span></span>
+<span data-ttu-id="71098-104">Find det rigtige onlinekursus, personlige workshops og begivenheder for din rolle som bruger af Dynamics 365 Supply Chain-programmet.</span><span class="sxs-lookup"><span data-stu-id="71098-104">Find the right online training, in person workshops, and events for your role as a user of the Dynamics 365 Supply Chain application.</span></span>
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -31,159 +30,159 @@ ms.locfileid: "4424461"
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="9ddfb-105">Forretningsmæssige og tekniske beslutningstagere</span><span class="sxs-lookup"><span data-stu-id="9ddfb-105">Business and Technical Decision Makers</span></span>
+    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="71098-105">Forretningsmæssige og tekniske beslutningstagere</span><span class="sxs-lookup"><span data-stu-id="71098-105">Business and Technical Decision Makers</span></span>
 
-    <span data-ttu-id="9ddfb-106">Træffer du beslutning om, hvorvidt du vil investere i nye teknologier?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-106">Do you decide whether to invest in new technologies?</span></span> 
+    <span data-ttu-id="71098-106">Træffer du beslutning om, hvorvidt du vil investere i nye teknologier?</span><span class="sxs-lookup"><span data-stu-id="71098-106">Do you decide whether to invest in new technologies?</span></span> 
 
-    [<span data-ttu-id="9ddfb-107">Undervisningskatalog til forretningsmæssige og tekniske beslutningstagere</span><span class="sxs-lookup"><span data-stu-id="9ddfb-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
+    [<span data-ttu-id="71098-107">Undervisningskatalog til forretningsmæssige og tekniske beslutningstagere</span><span class="sxs-lookup"><span data-stu-id="71098-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
 
-    [<span data-ttu-id="9ddfb-108">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
+    [<span data-ttu-id="71098-108">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
 
-    [<span data-ttu-id="9ddfb-109">Eksamen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-109">Exam</span></span>](learning-catalog-bdm.md#exam)
+    [<span data-ttu-id="71098-109">Eksamen</span><span class="sxs-lookup"><span data-stu-id="71098-109">Exam</span></span>](learning-catalog-bdm.md#exam)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="business-users"></a><span data-ttu-id="9ddfb-110">Forretningsbrugere</span><span class="sxs-lookup"><span data-stu-id="9ddfb-110">Business users</span></span>
+    ### <a name="business-users"></a><span data-ttu-id="71098-110">Forretningsbrugere</span><span class="sxs-lookup"><span data-stu-id="71098-110">Business users</span></span>
 
-    <span data-ttu-id="9ddfb-111">Har du netop fået et nyt program, du skal til at bruge?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-111">Did you just get a new application to use?</span></span> 
+    <span data-ttu-id="71098-111">Har du netop fået et nyt program, du skal til at bruge?</span><span class="sxs-lookup"><span data-stu-id="71098-111">Did you just get a new application to use?</span></span> 
 
-    [<span data-ttu-id="9ddfb-112">Undervisningskatalog til virksomhedsbrugere</span><span class="sxs-lookup"><span data-stu-id="9ddfb-112">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
+    [<span data-ttu-id="71098-112">Undervisningskatalog til virksomhedsbrugere</span><span class="sxs-lookup"><span data-stu-id="71098-112">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
 
-    [<span data-ttu-id="9ddfb-113">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-113">Get Started</span></span>](learning-catalog-business-user.md#get-started)
+    [<span data-ttu-id="71098-113">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-113">Get Started</span></span>](learning-catalog-business-user.md#get-started)
 
-    [<span data-ttu-id="9ddfb-114">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-114">Core platform knowledge</span></span>](learning-catalog-business-user.md#core-platform-knowledge)
+    [<span data-ttu-id="71098-114">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="71098-114">Core platform knowledge</span></span>](learning-catalog-business-user.md#core-platform-knowledge)
 
-    [<span data-ttu-id="9ddfb-115">Styring af forsyningskæde</span><span class="sxs-lookup"><span data-stu-id="9ddfb-115">Supply chain management</span></span>](learning-catalog-business-user.md#supply-chain-management)
+    [<span data-ttu-id="71098-115">Styring af forsyningskæde</span><span class="sxs-lookup"><span data-stu-id="71098-115">Supply chain management</span></span>](learning-catalog-business-user.md#supply-chain-management)
 
-    [<span data-ttu-id="9ddfb-116">Produktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-116">Manufacturing</span></span>](learning-catalog-business-user.md#manufacturing)
+    [<span data-ttu-id="71098-116">Produktion</span><span class="sxs-lookup"><span data-stu-id="71098-116">Manufacturing</span></span>](learning-catalog-business-user.md#manufacturing)
 
-    [<span data-ttu-id="9ddfb-117">Eksamen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-117">Exam</span></span>](learning-catalog-business-user.md#exam)
+    [<span data-ttu-id="71098-117">Eksamen</span><span class="sxs-lookup"><span data-stu-id="71098-117">Exam</span></span>](learning-catalog-business-user.md#exam)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="implementation-project-managers"></a><span data-ttu-id="9ddfb-118">Projektledere for implementering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-118">Implementation Project Managers</span></span>
+    ### <a name="implementation-project-managers"></a><span data-ttu-id="71098-118">Projektledere for implementering</span><span class="sxs-lookup"><span data-stu-id="71098-118">Implementation Project Managers</span></span>
 
-    <span data-ttu-id="9ddfb-119">Er du ansvarlig for at sikre, at din virksomhedsimplementering går glat?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-119">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
+    <span data-ttu-id="71098-119">Er du ansvarlig for at sikre, at din virksomhedsimplementering går glat?</span><span class="sxs-lookup"><span data-stu-id="71098-119">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
 
-    [<span data-ttu-id="9ddfb-120">Undervisningskatalog for projektlederens implementering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-120">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
+    [<span data-ttu-id="71098-120">Undervisningskatalog for projektlederens implementering</span><span class="sxs-lookup"><span data-stu-id="71098-120">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
 
-    [<span data-ttu-id="9ddfb-121">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-121">Get started</span></span>](learning-catalog-project-manager.md#get-started)
+    [<span data-ttu-id="71098-121">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-121">Get started</span></span>](learning-catalog-project-manager.md#get-started)
 
-    [<span data-ttu-id="9ddfb-122">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-122">Core platform knowledge</span></span>](learning-catalog-project-manager.md#core-platform-knowledge)
+    [<span data-ttu-id="71098-122">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="71098-122">Core platform knowledge</span></span>](learning-catalog-project-manager.md#core-platform-knowledge)
 
-    [<span data-ttu-id="9ddfb-123">Styring af forsyningskæde</span><span class="sxs-lookup"><span data-stu-id="9ddfb-123">Supply chain management</span></span>](learning-catalog-project-manager.md#supply-chain-management)
+    [<span data-ttu-id="71098-123">Styring af forsyningskæde</span><span class="sxs-lookup"><span data-stu-id="71098-123">Supply chain management</span></span>](learning-catalog-project-manager.md#supply-chain-management)
 
-    [<span data-ttu-id="9ddfb-124">Produktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-124">Manufacturing</span></span>](learning-catalog-project-manager.md#manufacturing)
+    [<span data-ttu-id="71098-124">Produktion</span><span class="sxs-lookup"><span data-stu-id="71098-124">Manufacturing</span></span>](learning-catalog-project-manager.md#manufacturing)
 
-    [<span data-ttu-id="9ddfb-125">Eksamener</span><span class="sxs-lookup"><span data-stu-id="9ddfb-125">Exams</span></span>](learning-catalog-project-manager.md#exams)
+    [<span data-ttu-id="71098-125">Eksamener</span><span class="sxs-lookup"><span data-stu-id="71098-125">Exams</span></span>](learning-catalog-project-manager.md#exams)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="administrators"></a><span data-ttu-id="9ddfb-126">Administratorer</span><span class="sxs-lookup"><span data-stu-id="9ddfb-126">Administrators</span></span>
+    ### <a name="administrators"></a><span data-ttu-id="71098-126">Administratorer</span><span class="sxs-lookup"><span data-stu-id="71098-126">Administrators</span></span>
 
-    <span data-ttu-id="9ddfb-127">Har du brug for at holde systemer og data kørende, klargjorte og sikre døgnet rundt?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-127">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
+    <span data-ttu-id="71098-127">Har du brug for at holde systemer og data kørende, klargjorte og sikre døgnet rundt?</span><span class="sxs-lookup"><span data-stu-id="71098-127">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
 
-    [<span data-ttu-id="9ddfb-128">Undervisningskatalog til administratorer</span><span class="sxs-lookup"><span data-stu-id="9ddfb-128">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
+    [<span data-ttu-id="71098-128">Undervisningskatalog til administratorer</span><span class="sxs-lookup"><span data-stu-id="71098-128">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
 
-    [<span data-ttu-id="9ddfb-129">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-129">Get started</span></span>](learning-catalog-administrator.md#get-started)
+    [<span data-ttu-id="71098-129">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-129">Get started</span></span>](learning-catalog-administrator.md#get-started)
 
-    [<span data-ttu-id="9ddfb-130">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-130">Core platform knowledge</span></span>](learning-catalog-administrator.md#core-platform-knowledge)
+    [<span data-ttu-id="71098-130">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="71098-130">Core platform knowledge</span></span>](learning-catalog-administrator.md#core-platform-knowledge)
 
-    [<span data-ttu-id="9ddfb-131">Kerneudvikling</span><span class="sxs-lookup"><span data-stu-id="9ddfb-131">Core development</span></span>](learning-catalog-administrator.md#core-development)
+    [<span data-ttu-id="71098-131">Kerneudvikling</span><span class="sxs-lookup"><span data-stu-id="71098-131">Core development</span></span>](learning-catalog-administrator.md#core-development)
 
-    [<span data-ttu-id="9ddfb-132">Overførsel og opgradering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-132">Migration and upgrade</span></span>](learning-catalog-administrator.md#migration-and-upgrade)
+    [<span data-ttu-id="71098-132">Overførsel og opgradering</span><span class="sxs-lookup"><span data-stu-id="71098-132">Migration and upgrade</span></span>](learning-catalog-administrator.md#migration-and-upgrade)
 
-    [<span data-ttu-id="9ddfb-133">Servicering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-133">Servicing</span></span>](learning-catalog-administrator.md#servicing)
+    [<span data-ttu-id="71098-133">Servicering</span><span class="sxs-lookup"><span data-stu-id="71098-133">Servicing</span></span>](learning-catalog-administrator.md#servicing)
 
-    [<span data-ttu-id="9ddfb-134">Tester</span><span class="sxs-lookup"><span data-stu-id="9ddfb-134">Testing</span></span>](learning-catalog-administrator.md#testing)
+    [<span data-ttu-id="71098-134">Tester</span><span class="sxs-lookup"><span data-stu-id="71098-134">Testing</span></span>](learning-catalog-administrator.md#testing)
 
-    [<span data-ttu-id="9ddfb-135">Eksamen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-135">Exam</span></span>](learning-catalog-administrator.md#exam)
+    [<span data-ttu-id="71098-135">Eksamen</span><span class="sxs-lookup"><span data-stu-id="71098-135">Exam</span></span>](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="developers"></a><span data-ttu-id="9ddfb-136">Udviklere</span><span class="sxs-lookup"><span data-stu-id="9ddfb-136">Developers</span></span>
+    ### <a name="developers"></a><span data-ttu-id="71098-136">Udviklere</span><span class="sxs-lookup"><span data-stu-id="71098-136">Developers</span></span>
 
-    <span data-ttu-id="9ddfb-137">Har du brug for at skrive kode for at integrere med andre datakilder, udvide kernesystemets funktionalitet eller oprette et komplekst program?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-137">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
+    <span data-ttu-id="71098-137">Har du brug for at skrive kode for at integrere med andre datakilder, udvide kernesystemets funktionalitet eller oprette et komplekst program?</span><span class="sxs-lookup"><span data-stu-id="71098-137">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
 
-    [<span data-ttu-id="9ddfb-138">Læringskatalog for udviklere</span><span class="sxs-lookup"><span data-stu-id="9ddfb-138">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
+    [<span data-ttu-id="71098-138">Læringskatalog for udviklere</span><span class="sxs-lookup"><span data-stu-id="71098-138">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
 
-    [<span data-ttu-id="9ddfb-139">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-139">Get started</span></span>](learning-catalog-developer.md#get-started)
+    [<span data-ttu-id="71098-139">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-139">Get started</span></span>](learning-catalog-developer.md#get-started)
 
-    [<span data-ttu-id="9ddfb-140">Kerneudviklingskoncepter</span><span class="sxs-lookup"><span data-stu-id="9ddfb-140">Core development concepts</span></span>](learning-catalog-developer.md#core-development-concepts)
+    [<span data-ttu-id="71098-140">Kerneudviklingskoncepter</span><span class="sxs-lookup"><span data-stu-id="71098-140">Core development concepts</span></span>](learning-catalog-developer.md#core-development-concepts)
 
-    [<span data-ttu-id="9ddfb-141">Servicering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-141">Servicing</span></span>](learning-catalog-developer.md#servicing)
+    [<span data-ttu-id="71098-141">Servicering</span><span class="sxs-lookup"><span data-stu-id="71098-141">Servicing</span></span>](learning-catalog-developer.md#servicing)
 
-    [<span data-ttu-id="9ddfb-142">Overførsel og opgradering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-142">Migration and upgrade</span></span>](learning-catalog-developer.md#migration-and-upgrade)
+    [<span data-ttu-id="71098-142">Overførsel og opgradering</span><span class="sxs-lookup"><span data-stu-id="71098-142">Migration and upgrade</span></span>](learning-catalog-developer.md#migration-and-upgrade)
 
-    [<span data-ttu-id="9ddfb-143">Tester</span><span class="sxs-lookup"><span data-stu-id="9ddfb-143">Testing</span></span>](learning-catalog-developer.md#testing)
+    [<span data-ttu-id="71098-143">Tester</span><span class="sxs-lookup"><span data-stu-id="71098-143">Testing</span></span>](learning-catalog-developer.md#testing)
 
-    [<span data-ttu-id="9ddfb-144">Eksamen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-144">Exam</span></span>](learning-catalog-developer.md#exam)
+    [<span data-ttu-id="71098-144">Eksamen</span><span class="sxs-lookup"><span data-stu-id="71098-144">Exam</span></span>](learning-catalog-developer.md#exam)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="functional-consultants"></a><span data-ttu-id="9ddfb-145">Funktionelle konsulenter</span><span class="sxs-lookup"><span data-stu-id="9ddfb-145">Functional consultants</span></span>
+    ### <a name="functional-consultants"></a><span data-ttu-id="71098-145">Funktionelle konsulenter</span><span class="sxs-lookup"><span data-stu-id="71098-145">Functional consultants</span></span>
 
-    <span data-ttu-id="9ddfb-146">Er du en implementeringsekspert for et virksomhedsdomæne?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-146">Are you an implementation expert for a business domain?</span></span> 
+    <span data-ttu-id="71098-146">Er du en implementeringsekspert for et virksomhedsdomæne?</span><span class="sxs-lookup"><span data-stu-id="71098-146">Are you an implementation expert for a business domain?</span></span> 
 
-    [<span data-ttu-id="9ddfb-147">Undervisningskatalog til funktionel programkonsulent</span><span class="sxs-lookup"><span data-stu-id="9ddfb-147">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
+    [<span data-ttu-id="71098-147">Undervisningskatalog til funktionel programkonsulent</span><span class="sxs-lookup"><span data-stu-id="71098-147">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
 
-    [<span data-ttu-id="9ddfb-148">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-148">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
+    [<span data-ttu-id="71098-148">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-148">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
 
-    [<span data-ttu-id="9ddfb-149">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-149">Core platform knowledge</span></span>](learning-catalog-functional-consultant.md#core-platform-knowledge)
+    [<span data-ttu-id="71098-149">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="71098-149">Core platform knowledge</span></span>](learning-catalog-functional-consultant.md#core-platform-knowledge)
 
-    [<span data-ttu-id="9ddfb-150">Produktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-150">Manufacturing</span></span>](learning-catalog-functional-consultant.md#manufacturing)
+    [<span data-ttu-id="71098-150">Produktion</span><span class="sxs-lookup"><span data-stu-id="71098-150">Manufacturing</span></span>](learning-catalog-functional-consultant.md#manufacturing)
 
-    [<span data-ttu-id="9ddfb-151">Styring af forsyningskæde</span><span class="sxs-lookup"><span data-stu-id="9ddfb-151">Supply chain management</span></span>](learning-catalog-functional-consultant.md#supply-chain-management)
+    [<span data-ttu-id="71098-151">Styring af forsyningskæde</span><span class="sxs-lookup"><span data-stu-id="71098-151">Supply chain management</span></span>](learning-catalog-functional-consultant.md#supply-chain-management)
 
-    [<span data-ttu-id="9ddfb-152">Eksamener</span><span class="sxs-lookup"><span data-stu-id="9ddfb-152">Exams</span></span>](learning-catalog-functional-consultant.md#exams)
+    [<span data-ttu-id="71098-152">Eksamener</span><span class="sxs-lookup"><span data-stu-id="71098-152">Exams</span></span>](learning-catalog-functional-consultant.md#exams)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="9ddfb-153">Partnersalg og marketing</span><span class="sxs-lookup"><span data-stu-id="9ddfb-153">Partner Sales and Marketing</span></span>
+    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="71098-153">Partnersalg og marketing</span><span class="sxs-lookup"><span data-stu-id="71098-153">Partner Sales and Marketing</span></span>
 
-    <span data-ttu-id="9ddfb-154">Er du ansvarlig for at hjælpe dine kunder med at købe den rigtige løsning?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-154">Are you responsible for helping your customers buy the right solution?</span></span> 
+    <span data-ttu-id="71098-154">Er du ansvarlig for at hjælpe dine kunder med at købe den rigtige løsning?</span><span class="sxs-lookup"><span data-stu-id="71098-154">Are you responsible for helping your customers buy the right solution?</span></span> 
 
-    [<span data-ttu-id="9ddfb-155">Undervisningskatalog til Microsoft Partner Sales and Marketing</span><span class="sxs-lookup"><span data-stu-id="9ddfb-155">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
+    [<span data-ttu-id="71098-155">Undervisningskatalog til Microsoft Partner Sales and Marketing</span><span class="sxs-lookup"><span data-stu-id="71098-155">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
 
-    [<span data-ttu-id="9ddfb-156">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-156">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
+    [<span data-ttu-id="71098-156">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-156">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
 
-    [<span data-ttu-id="9ddfb-157">Eksamen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-157">Exam</span></span>](learning-catalog-partner-sales.md#exam)
+    [<span data-ttu-id="71098-157">Eksamen</span><span class="sxs-lookup"><span data-stu-id="71098-157">Exam</span></span>](learning-catalog-partner-sales.md#exam)
 
     :::column-end:::
 
     :::column:::
 
-    ### <a name="solution-architects"></a><span data-ttu-id="9ddfb-158">Løsningsarkitekter</span><span class="sxs-lookup"><span data-stu-id="9ddfb-158">Solution architects</span></span>
+    ### <a name="solution-architects"></a><span data-ttu-id="71098-158">Løsningsarkitekter</span><span class="sxs-lookup"><span data-stu-id="71098-158">Solution architects</span></span>
 
-    <span data-ttu-id="9ddfb-159">Designer du løsninger, der opfylder dine kunders behov og budgetter?</span><span class="sxs-lookup"><span data-stu-id="9ddfb-159">Do you design solutions that meet your customers' needs and budgets?</span></span>
+    <span data-ttu-id="71098-159">Designer du løsninger, der opfylder dine kunders behov og budgetter?</span><span class="sxs-lookup"><span data-stu-id="71098-159">Do you design solutions that meet your customers' needs and budgets?</span></span>
 
-    [<span data-ttu-id="9ddfb-160">Undervisningskatalog til løsningsarkitekt</span><span class="sxs-lookup"><span data-stu-id="9ddfb-160">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
+    [<span data-ttu-id="71098-160">Undervisningskatalog til løsningsarkitekt</span><span class="sxs-lookup"><span data-stu-id="71098-160">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
 
-    [<span data-ttu-id="9ddfb-161">Introduktion</span><span class="sxs-lookup"><span data-stu-id="9ddfb-161">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
+    [<span data-ttu-id="71098-161">Introduktion</span><span class="sxs-lookup"><span data-stu-id="71098-161">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
 
-    [<span data-ttu-id="9ddfb-162">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-162">Core platform knowledge</span></span>](learning-catalog-solution-architect.md#core-platform-knowledge)
+    [<span data-ttu-id="71098-162">Viden om kerneplatformen</span><span class="sxs-lookup"><span data-stu-id="71098-162">Core platform knowledge</span></span>](learning-catalog-solution-architect.md#core-platform-knowledge)
 
-    [<span data-ttu-id="9ddfb-163">Kerneudviklingskoncepter</span><span class="sxs-lookup"><span data-stu-id="9ddfb-163">Core development concepts</span></span>](learning-catalog-solution-architect.md#core-development-concepts)
+    [<span data-ttu-id="71098-163">Kerneudviklingskoncepter</span><span class="sxs-lookup"><span data-stu-id="71098-163">Core development concepts</span></span>](learning-catalog-solution-architect.md#core-development-concepts)
 
-    [<span data-ttu-id="9ddfb-164">Overførsel og opgradering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-164">Migration and upgrade</span></span>](learning-catalog-solution-architect.md#migration-and-upgrade)
+    [<span data-ttu-id="71098-164">Overførsel og opgradering</span><span class="sxs-lookup"><span data-stu-id="71098-164">Migration and upgrade</span></span>](learning-catalog-solution-architect.md#migration-and-upgrade)
 
-    [<span data-ttu-id="9ddfb-165">Servicering</span><span class="sxs-lookup"><span data-stu-id="9ddfb-165">Servicing</span></span>](learning-catalog-solution-architect.md#servicing)
+    [<span data-ttu-id="71098-165">Servicering</span><span class="sxs-lookup"><span data-stu-id="71098-165">Servicing</span></span>](learning-catalog-solution-architect.md#servicing)
 
-    [<span data-ttu-id="9ddfb-166">Tester</span><span class="sxs-lookup"><span data-stu-id="9ddfb-166">Testing</span></span>](learning-catalog-solution-architect.md#testing)
+    [<span data-ttu-id="71098-166">Tester</span><span class="sxs-lookup"><span data-stu-id="71098-166">Testing</span></span>](learning-catalog-solution-architect.md#testing)
 
-    [<span data-ttu-id="9ddfb-167">Eksamen</span><span class="sxs-lookup"><span data-stu-id="9ddfb-167">Exam</span></span>](learning-catalog-solution-architect.md#exam)
+    [<span data-ttu-id="71098-167">Eksamen</span><span class="sxs-lookup"><span data-stu-id="71098-167">Exam</span></span>](learning-catalog-solution-architect.md#exam)
 
     :::column-end:::
 :::row-end:::
